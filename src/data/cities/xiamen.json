@@ -1,0 +1,2109 @@
+{
+  "slug": "xiamen",
+  "name": "厦门",
+  "nameEn": "Xiamen",
+  "country": "China",
+  "population": "5.3 million",
+  "coordinates": {
+    "lat": 24.4798,
+    "lng": 118.0894
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Xiamen, a coastal city in Fujian Province, is known as the '海上花园' (Garden on the Sea). With its blend of colonial architecture, traditional Minnan culture, and modern development, it offers a unique mix of East and West. The city features beautiful beaches, the UNESCO-listed Gulangyu Island, Buddhist temples, and world-class cuisine.",
+  "coverImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200",
+  "highlights": [
+    "Gulangyu Island - UNESCO World Heritage colonial island",
+    "Nanputuo Temple - Sacred Buddhist mountain temple",
+    "Xiamen University - China's most beautiful campus",
+    "Huandao Road - Scenic coastal boulevard",
+    "Zhongshan Road - Historic shopping street"
+  ],
+  "climate": {
+    "type": "Subtropical Maritime",
+    "bestMonths": [
+      "October",
+      "November",
+      "March",
+      "April",
+      "May"
+    ],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "13C (55F)",
+    "tips": "Best visited in spring (March-May) or autumn (October-November) for pleasant weather. Summers are hot and humid with frequent typhoons. Winters are mild but can be rainy. Bring rain gear year-round and sunscreen in summer."
+  },
+  "attractions": [
+    {
+      "id": "gulangyu-island",
+      "name": "鼓浪屿",
+      "nameEn": "Gulangyu Island",
+      "category": "cultural",
+      "description": "A UNESCO World Heritage island known for its colonial architecture, piano museum, and car-free streets. Features over 1,000 historical buildings and stunning ocean views.",
+      "address": "Gulangyu Island, Siming District",
+      "coordinates": {
+        "lat": 24.4455,
+        "lng": 118.0719
+      },
+      "openingHours": "Open 24 hours (ferry 7:10-17:30)",
+      "ticketPrice": "Free (ferry 35-50 CNY round trip, attractions separate)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Piano Museum",
+        "Shuzhuang Garden",
+        "Sunlight Rock",
+        "Colonial architecture"
+      ],
+      "tips": "Book ferry tickets in advance during holidays. Rent an audio guide at the pier. Best explored on foot - no cars allowed. Visit in early morning for fewer crowds."
+    },
+    {
+      "id": "nanputuo-temple",
+      "name": "南普陀寺",
+      "nameEn": "Nanputuo Temple",
+      "category": "cultural",
+      "description": "One of the most important Buddhist temples in Fujian, set against the backdrop of Five Old Men Peak. Known for vegetarian restaurant and beautiful architecture.",
+      "address": "515 Siming Road, Siming District",
+      "coordinates": {
+        "lat": 24.4377,
+        "lng": 118.0937
+      },
+      "openingHours": "03:00-18:00 ( temple), 08:30-17:00 (mountain)",
+      "ticketPrice": "Free (mountain 10 CNY)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Mahavira Hall",
+        "Five Old Men Peak",
+        "Buddhist College",
+        "Vegetarian restaurant"
+      ],
+      "tips": "Climb the mountain for panoramic city views. Don't miss the vegetarian noodles at the temple restaurant. Respect Buddhist customs - dress modestly."
+    },
+    {
+      "id": "xiamen-university",
+      "name": "厦门大学",
+      "nameEn": "Xiamen University",
+      "category": "cultural",
+      "description": "Known as China's most beautiful university campus, featuring unique闽南建筑 (Minnan architecture), lakes, and palm-lined streets. Founded by Tan Kah Kee in 1921.",
+      "address": "422 Siming South Road, Siming District",
+      "coordinates": {
+        "lat": 24.4346,
+        "lng": 118.1025
+      },
+      "openingHours": "Campus: Open 24 hours (ID required), Main Buildings: 08:00-17:00",
+      "ticketPrice": "Free (advance booking required)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Furong Lake",
+        "Tan Kah Kee Memorial Hall",
+        "Minnan architecture",
+        "Buddhist seminary"
+      ],
+      "tips": "Book through XMU service app. Visit Furong Lake and the tunnel with student murals. The campus is stunning at sunset. Nearby Zengcuo'an for snacks."
+    },
+    {
+      "id": "huandao-road",
+      "name": "环岛路",
+      "nameEn": "Huandao Road (Island Ring Road)",
+      "category": "natural",
+      "description": "A scenic 31km coastal road offering beautiful sea views, beaches, and parks. Perfect for cycling, jogging, or leisurely drives with stops at various beach areas.",
+      "address": "Coastal road from Huli District to Xiang'an District",
+      "coordinates": {
+        "lat": 24.4612,
+        "lng": 118.1056
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "Huli Mountain Park",
+        "Jimei School Village",
+        "Gulangyu view",
+        "Suning Bay"
+      ],
+      "tips": "Rent a bicycle at many rental points. Best visited at sunset. Combine with nearby attractions. Morning runs are popular with locals."
+    },
+    {
+      "id": "zhongshan-road",
+      "name": "中山路步行街",
+      "nameEn": "Zhongshan Road Pedestrian Street",
+      "category": "modern",
+      "description": "Xiamen's premier shopping street featuring arcade buildings with diverse architectural styles, local snacks, and international brands. The heart of downtown Xiamen.",
+      "address": "Zhongshan Road, Siming District",
+      "coordinates": {
+        "lat": 24.4545,
+        "lng": 118.0837
+      },
+      "openingHours": "Open 24 hours (shops 09:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Arcade buildings",
+        "Guji arcade",
+        "Fujian cuisine",
+        "Night lighting"
+      ],
+      "tips": "Explore side alleys for hidden temples and old houses. Try local snacks along the street. Best evening visit when buildings are illuminated."
+    },
+    {
+      "id": "jimei-school-village",
+      "name": "集美学村",
+      "nameEn": "Jimei School Village",
+      "category": "cultural",
+      "description": "A unique educational complex founded by philanthropist Tan Kah Kee, featuring Austro-Hungarian architecture, beautiful gardens, and several colleges.",
+      "address": "Jimei District",
+      "coordinates": {
+        "lat": 24.4408,
+        "lng": 118.0578
+      },
+      "openingHours": "Open 24 hours (buildings 08:00-17:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Jimei Middle School",
+        "Ao Yuan Garden",
+        "Chengyi Park",
+        "Austro-Hungarian buildings"
+      ],
+      "tips": "Combine with Huandao Road cycling. Visit the turtle-shaped Jimei Middle School. The illuminated buildings at night are magical."
+    },
+    {
+      "id": "shapowei",
+      "name": "沙坡尾",
+      "nameEn": "Shapowei (Sand Wave)",
+      "category": "cultural",
+      "description": "The oldest fishing harbor in Xiamen, now transformed into a trendy art and dining district while retaining its traditional fishing village character.",
+      "address": "Shapowei, Siming District",
+      "coordinates": {
+        "lat": 24.4412,
+        "lng": 118.0832
+      },
+      "openingHours": "Open 24 hours (shops/restaurants 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Fishing boats",
+        "Art districts",
+        "Waterfront bars",
+        "Traditional vs modern contrast"
+      ],
+      "tips": "Best during blue hour for photos. Explore the art spaces and galleries. Fresh seafood available from local vendors. Evening atmosphere is fantastic."
+    },
+    {
+      "id": "zengcuoan",
+      "name": "曾厝垵",
+      "nameEn": "Zengcuo'an",
+      "category": "cultural",
+      "description": "A former fishing village turned bustling tourist town famous for its maze-like alleys, local snacks, handcraft shops, and vibrant nightlife.",
+      "address": "Zengcuo'an, Siming District",
+      "coordinates": {
+        "lat": 24.4402,
+        "lng": 118.1092
+      },
+      "openingHours": "Open 24 hours (shops 09:00-23:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "Wenyu Ferry",
+        "Local snacks",
+        "Handcraft shops",
+        "Temple of Tianzhu"
+      ],
+      "tips": "Get lost in the alleys intentionally. Try local snacks like土笋冻 and沙茶面. Night market atmosphere after sunset. Can be very crowded during holidays."
+    },
+    {
+      "id": "xiamen-underwater-world",
+      "name": "厦门海底世界",
+      "nameEn": "Xiamen Underwater World",
+      "category": "modern",
+      "description": "One of the largest underwater exhibitions in Asia, featuring a 15-meter underwater tunnel and diverse marine life including sharks, sea turtles, and colorful fish.",
+      "address": "2 Luling Road, Gulangyu Island",
+      "coordinates": {
+        "lat": 24.4425,
+        "lng": 118.0708
+      },
+      "openingHours": "08:00-18:00 (summer), 08:30-17:30 (winter)",
+      "ticketPrice": "90 CNY",
+      "recommendedVisitTime": "1.5-2 hours",
+      "highlights": [
+        "15m underwater tunnel",
+        "Giant sea turtles",
+        "Shark feeding",
+        "Dolphin show"
+      ],
+      "tips": "Go early to avoid school groups. Allow time for dolphin show schedule. Combine with other Gulangyu attractions. Air-conditioned - good escape from summer heat."
+    },
+    {
+      "id": "piano-museum",
+      "name": "钢琴博物馆",
+      "nameEn": "Piano Museum (Gulangyu)",
+      "category": "cultural",
+      "description": "Houses over 40 antique pianos from different eras, including a rare 1796 grand piano. Located in Shuzhuang Garden on Gulangyu Island.",
+      "address": "Shuzhuang Garden, Gulangyu Island",
+      "coordinates": {
+        "lat": 24.4438,
+        "lng": 118.0685
+      },
+      "openingHours": "08:15-17:00",
+      "ticketPrice": "Included in Shuzhuang Garden ticket (30 CNY)",
+      "recommendedVisitTime": "45 minutes",
+      "highlights": [
+        "Antique piano collection",
+        "Automatic piano performances",
+        "19th century instruments",
+        "Piano history displays"
+      ],
+      "tips": "Check timing for automatic piano performances. Photography allowed without flash. Combine with Shuzhuang Garden visit. Audio guide recommended."
+    },
+    {
+      "id": "sunlight-rock",
+      "name": "日光岩",
+      "nameEn": "Sunlight Rock (Riguang Yan)",
+      "category": "natural",
+      "description": "The highest point on Gulangyu Island offering 360-degree panoramic views of Xiamen Bay and the surrounding area. Features ancient rock inscriptions and a small temple.",
+      "address": "Sunlight Rock, Gulangyu Island",
+      "coordinates": {
+        "lat": 24.4472,
+        "lng": 118.0642
+      },
+      "openingHours": "06:30-18:00 (summer), 07:00-17:30 (winter)",
+      "ticketPrice": "50 CNY (combined ticket with Shuzhuang Garden 90 CNY)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "360-degree views",
+        "Sunrise views",
+        "Ancient inscriptions",
+        "Haiheng Temple"
+      ],
+      "tips": "Go at sunrise for fewer crowds and magical views. Climbed 100 steps - wear comfortable shoes. Morning visit recommended to avoid afternoon heat."
+    },
+    {
+      "id": "shuzhuang-garden",
+      "name": "菽庄花园",
+      "nameEn": "Shuzhuang Garden",
+      "category": "cultural",
+      "description": "A beautiful seaside garden featuring traditional Chinese architecture, a piano museum, and stunning coastal views. Built in 1913 by wealthy Taiwanese businessman.",
+      "address": "Gulangyu Island",
+      "coordinates": {
+        "lat": 24.4435,
+        "lng": 118.0685
+      },
+      "openingHours": "07:00-18:30 (summer), 07:30-17:30 (winter)",
+      "ticketPrice": "30 CNY (combined with Sunlight Rock 90 CNY)",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Garden by the sea",
+        "Piano Museum",
+        "42 Bridge",
+        "Fujianese architecture"
+      ],
+      "tips": "Best photography in morning light. The 42-bridge path is unique. Combine with Sunlight Rock for full experience. Beautiful at high tide."
+    },
+    {
+      "id": "xiamen-haiceng-park",
+      "name": "海沧湾公园",
+      "nameEn": "Haicheng Park",
+      "category": "natural",
+      "description": "A waterfront park along Haicang Bay featuring the iconic marriage witness sculpture, sunset views, and pleasant walking paths.",
+      "address": "Haicang Avenue, Haicang District",
+      "coordinates": {
+        "lat": 24.4525,
+        "lng": 118.0238
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Marriage witness sculpture",
+        "Sunset views",
+        "Haicang Bridge",
+        "Night illumination"
+      ],
+      "tips": "Best visited at sunset for beautiful views. Evening light show at 19:30. Less touristy than other spots. Great for evening strolls."
+    },
+    {
+      "id": "tianzhushan-forest-park",
+      "name": "天竺山森林公园",
+      "nameEn": "Tianzhu Mountain Forest Park",
+      "category": "natural",
+      "description": "A pristine forest park with hiking trails, waterfalls, and Buddhist temples. Known for its oxygen-rich environment and scenic mountain scenery.",
+      "address": "Tianzhu Mountain, Haicang District",
+      "coordinates": {
+        "lat": 24.4892,
+        "lng": 117.9642
+      },
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "35 CNY (park), 120 CNY (including cable car)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Forest trails",
+        "Baijian Waterfall",
+        "Tianzhu Temple",
+        "Tea plantations"
+      ],
+      "tips": "Wear hiking shoes for forest trails. Bring water and snacks. Cable car offers great views. Best in spring for flowers or autumn for foliage."
+    },
+    {
+      "id": "xiamen-amusement-center",
+      "name": "厦门游乐园",
+      "nameEn": "Xiamen Amusement Center",
+      "category": "modern",
+      "description": "A family-friendly amusement park with roller coasters, bumper cars, and various rides. Features both thrill rides and children's attractions.",
+      "address": "101 Songhuei Road, Haicang District",
+      "coordinates": {
+        "lat": 24.4538,
+        "lng": 118.0132
+      },
+      "openingHours": "09:30-17:30",
+      "ticketPrice": "35 CNY (entry), rides additional",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Flying coaster",
+        "Bumper cars",
+        "Carousel",
+        "Haicang Bridge view"
+      ],
+      "tips": "Go on weekdays to avoid crowds. Fast pass available. Combined ticket better value. Great for families with children."
+    },
+    {
+      "id": "xiamen-botanical-garden",
+      "name": "厦门园林植物园",
+      "nameEn": "Xiamen Botanical Garden",
+      "category": "natural",
+      "description": "A vast botanical garden featuring tropical plants, succulent collections, and famous rock formations. Known for the tropical rain forest trail.",
+      "address": "25 Huyuan Road, Siming District",
+      "coordinates": {
+        "lat": 24.4345,
+        "lng": 118.0835
+      },
+      "openingHours": "06:30-18:00 (summer), 06:30-17:30 (winter)",
+      "ticketPrice": "30 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Tropical rainforest",
+        "Succulent garden",
+        "Pine forest",
+        "Waterfall"
+      ],
+      "tips": "Start early to experience misty rainforest atmosphere. Take the观光车 (tour bus) to save time. Insect repellent recommended. Bring water."
+    },
+    {
+      "id": "dadeng-island",
+      "name": "大嶝岛",
+      "nameEn": "Dadeng Island",
+      "category": "cultural",
+      "description": "A small island known for its traditional闽南 customs, coastal scenery, and historical sites related to the 1949 bombardment. Connected to mainland by bridge.",
+      "address": "Dadeng Island, Xiang'an District",
+      "coordinates": {
+        "lat": 24.5325,
+        "lng": 118.1425
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (taiji house 30 CNY)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Mazu Temple",
+        "Coastal scenery",
+        "Old streets",
+        "Taiwan commodity city"
+      ],
+      "tips": "Rent electric cart to explore. Fresh seafood at local restaurants. Combine with Xiang'an for day trip. Traditional architecture preserved."
+    },
+    {
+      "id": "fujian-mazu-temple",
+      "name": "福建妈祖庙",
+      "nameEn": "Mazu Temple (Xiamen)",
+      "category": "cultural",
+      "description": "The largest Mazu temple in Fujian, dedicated to the sea goddess worshipped by millions of overseas Chinese. Features intricate carvings and cultural exhibitions.",
+      "address": "62 Daxue Road, Siming District",
+      "coordinates": {
+        "lat": 24.4452,
+        "lng": 118.0812
+      },
+      "openingHours": "08:00-20:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Mazu statue",
+        "Cultural hall",
+        "Ancient banyan tree",
+        "Oceanographic museum"
+      ],
+      "tips": "Learn about Mazu culture and folklore. Attend temple ceremonies if lucky. Near Zhongshan Road. The architecture is impressive."
+    },
+    {
+      "id": "huoshao-island",
+      "name": "火烧屿",
+      "nameEn": "Huoshao Island",
+      "category": "natural",
+      "description": "An uninhabited island nature reserve known for its unique geological formations, hiking trails, and bird watching opportunities.",
+      "address": "Haicang Strait",
+      "coordinates": {
+        "lat": 24.4592,
+        "lng": 118.0135
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "50 CNY (including boat)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Geological wonders",
+        "Bird watching",
+        "Hiking trails",
+        "Secluded beaches"
+      ],
+      "tips": "Book boat tour in advance. Bring sunscreen and water. Limited facilities on island. Best for nature lovers and photographers."
+    },
+    {
+      "id": "xiamen-science-center",
+      "name": "厦门科技馆",
+      "nameEn": "Xiamen Science Center",
+      "category": "modern",
+      "description": "A modern science museum with interactive exhibits covering physics, astronomy, and technology. Features an IMAX dome theater and hands-on experiments.",
+      "address": "95-97 Zhanjiang Road, Huli District",
+      "coordinates": {
+        "lat": 24.4952,
+        "lng": 118.0925
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "70 CNY (exhibits), 40 CNY (IMAX)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "IMAX dome theater",
+        "Robot exhibition",
+        "Physics experiments",
+        "4D motion theater"
+      ],
+      "tips": "Allow full day for all attractions. Book IMAX tickets separately. Great for families and curious minds. Air-conditioned."
+    },
+    {
+      "id": "xiamen-golf-course",
+      "name": "厦门高尔夫球场",
+      "nameEn": "Xiamen Golf Club",
+      "category": "modern",
+      "description": "An 18-hole championship golf course near the coast, offering beautiful sea views and professional facilities for golf enthusiasts.",
+      "address": "999 Haicang Avenue, Haicang District",
+      "coordinates": {
+        "lat": 24.4652,
+        "lng": 118.0325
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "1000-2000 CNY (weekday/weekend)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Sea view holes",
+        "Professional coaching",
+        "Club rental",
+        "Restaurant"
+      ],
+      "tips": "Book tee times in advance. Non-members welcome. Golf equipment rental available. Beautiful at sunset."
+    },
+    {
+      "id": "xiamen-hulii-beach",
+      "name": "胡里山炮台",
+      "nameEn": "Xiamen Hulishan Cannon Fort",
+      "category": "historical",
+      "description": "Historical fort built in 1894 during Qing Dynasty, featuring the world's largest surviving coastal artillery gun. Regular cannon firing demonstrations.",
+      "address": "2 Haian Road, Siming District",
+      "coordinates": {
+        "lat": 24.4322,
+        "lng": 118.1125
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "25 CNY",
+      "recommendedVisitTime": "1.5-2 hours",
+      "highlights": [
+        "Giant cannon",
+        "Historical bunkers",
+        "Cannon firing show",
+        "Coastal views"
+      ],
+      "tips": "Watch the cannon firing demonstration at scheduled times. Combine with nearby beaches. Great for history enthusiasts."
+    },
+    {
+      "id": "xiamen-ronghua-shan",
+      "name": "厦门岛内山",
+      "nameEn": "Ronghua Mountain",
+      "category": "nature",
+      "description": "A hidden gem mountain trail with panoramic views of Xiamen Bay and Gulangyu Island. Less crowded than other attractions.",
+      "address": "Huli District",
+      "coordinates": {
+        "lat": 24.4755,
+        "lng": 118.1025
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Sunrise views",
+        "Forest trails",
+        "City panorama",
+        "Bird watching"
+      ],
+      "tips": "Best visited at dawn for sunrise. Wear comfortable hiking shoes. Bring water. Less known by tourists."
+    },
+    {
+      "id": "xiamen-yuqingshan",
+      "name": "厦门园林博览苑",
+      "nameEn": "Xiamen Garden Expo",
+      "category": "cultural",
+      "description": "A vast park featuring traditional Chinese gardens from different regions, plus a large lake and beautiful floral displays.",
+      "address": "Jimei District",
+      "coordinates": {
+        "lat": 24.4525,
+        "lng": 118.0525
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "60 CNY (includes boat)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Regional gardens",
+        "Floating bridge",
+        "Lotus flowers",
+        "Boat tours"
+      ],
+      "tips": "Best in spring for flowers. Take the boat for scenic views. Can spend half a day here. Great for photography."
+    },
+    {
+      "id": "xiamen-furong-tunnel",
+      "name": "厦门芙蓉隧道",
+      "nameEn": "Furong Tunnel",
+      "category": "cultural",
+      "description": "Famous student art tunnel at Xiamen University, featuring colorful murals and graffiti created by students over the years.",
+      "address": "Xiamen University Campus",
+      "coordinates": {
+        "lat": 24.4338,
+        "lng": 118.1015
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "Student murals",
+        "Colorful artwork",
+        "Creative expressions",
+        "University culture"
+      ],
+      "tips": "Combine with XMU campus visit. Don't touch or damage the artwork. Best visited on foot."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "xiamen-1",
+      "name": "厦门润丰吉祥石亭",
+      "nameEn": "Jixiang Shiting",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Fujian",
+      "avgPrice": 800,
+      "rating": 4.8,
+      "address": "1 Floor, Luxury Hotel, 16 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4552,
+        "lng": 118.0815
+      },
+      "phone": "+86 592 202 3333",
+      "hours": "11:30-14:00, 17:30-22:00",
+      "description": "One Michelin-starred restaurant offering refined Fujian cuisine with stunning views of Lujiang Bay.",
+      "dishHighlights": [
+        "Braised abalone with oyster sauce",
+        "Steamed sea bass with preserved vegetables",
+        "Mazu-style prawns"
+      ],
+      "tags": [
+        "fine-dining",
+        "fujian-cuisine",
+        "view"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-2",
+      "name": "xm-s的优点",
+      "nameEn": "ISO",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Contemporary",
+      "avgPrice": 1200,
+      "rating": 4.9,
+      "address": "99 Hexagon Bay, Songzai Road, Siming District",
+      "coordinates": {
+        "lat": 24.4512,
+        "lng": 118.0945
+      },
+      "phone": "+86 592 268 8888",
+      "hours": "18:00-22:00 (Closed Sunday)",
+      "description": "Innovative modern Chinese cuisine with molecular gastronomy techniques by chef Jiro Zhang.",
+      "dishHighlights": [
+        "Deconstructed oyster pancake",
+        "Smoked duck with osmanthus",
+        "Seafood symphony"
+      ],
+      "tags": [
+        "fine-dining",
+        "innovative",
+        "chef-table"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-3",
+      "name": "xm-yuxi",
+      "nameEn": "Yu Xi",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Fujian",
+      "avgPrice": 500,
+      "rating": 4.7,
+      "address": "3 Floor, Xinghua Building, 88 Hubin South Road",
+      "coordinates": {
+        "lat": 24.4532,
+        "lng": 118.1055
+      },
+      "phone": "+86 592 539 9999",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "Two-diamond Black Pearl restaurant specializing in traditional Minnan cuisine with modern presentation.",
+      "dishHighlights": [
+        "Buddha jumps over the wall",
+        "Xiamen-style lobster",
+        "Seafood congee"
+      ],
+      "tags": [
+        "black-pearl",
+        "minnan",
+        "seafood"
+      ],
+      "star": 0
+    },
+    {
+      "id": "xiamen-4",
+      "name": "xm-jianong",
+      "nameEn": "Jianong",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Vegetarian",
+      "avgPrice": 300,
+      "rating": 4.6,
+      "address": "25 Huyuan Road, near Botanical Garden",
+      "coordinates": {
+        "lat": 24.4352,
+        "lng": 118.0825
+      },
+      "phone": "+86 592 202 8888",
+      "hours": "10:30-21:00",
+      "description": "One-diamond vegetarian restaurant using organic ingredients from own farm. Buddhist-inspired cuisine.",
+      "dishHighlights": [
+        "Vegetarian Buddha Jumps Over the Wall",
+        "Lotus leaf rice",
+        "Mushroom hot pot"
+      ],
+      "tags": [
+        "vegetarian",
+        "organic",
+        "buddhist"
+      ],
+      "star": 0
+    },
+    {
+      "id": "xiamen-5",
+      "name": "xm-yuehua",
+      "nameEn": "Yuehua",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Cantonese",
+      "avgPrice": 400,
+      "rating": 4.5,
+      "address": "Xiamen Airport Hotel, 88 Lujiang Road",
+      "coordinates": {
+        "lat": 24.4582,
+        "lng": 118.0765
+      },
+      "phone": "+86 592 573 0888",
+      "hours": "11:00-14:30, 17:00-22:00",
+      "description": "One-diamond Cantonese restaurant known for authentic dim sum and premium seafood dishes.",
+      "dishHighlights": [
+        "Steamed shrimp dumplings",
+        "Roasted suckling pig",
+        "Braised sea cucumber"
+      ],
+      "tags": [
+        "cantonese",
+        "dim-sum",
+        "hotel-dining"
+      ],
+      "star": 0
+    },
+    {
+      "id": "xiamen-6",
+      "name": "xm-naianza",
+      "nameEn": "Nai An Zhai",
+      "type": "local",
+      "cuisine": "Xiamen Local",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "123 Zhongshan Road, Siming District",
+      "coordinates": {
+        "lat": 24.4542,
+        "lng": 118.0845
+      },
+      "phone": "+86 592 212 8888",
+      "hours": "07:00-21:00",
+      "description": "Famous local chain for authentic Xiamen breakfast and traditional snacks since 1935.",
+      "dishHighlights": [
+        "Peanut soup",
+        "Oyster omelette",
+        "Seafood noodles",
+        "Glutinous rice rolls"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-7",
+      "name": "xm-haizheng",
+      "nameEn": "Hai Zheng",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "8 Zengcuo'an, Siming District",
+      "coordinates": {
+        "lat": 24.4405,
+        "lng": 118.1095
+      },
+      "phone": "+86 592 251 8888",
+      "hours": "10:00-23:00",
+      "description": "Popular seafood restaurant in Zengcuo'an known for fresh catches and local favorites.",
+      "dishHighlights": [
+        "Fried squid",
+        " steamed clams",
+        "Xiamen-style crab",
+        "Salt and pepper shrimp"
+      ],
+      "tags": [
+        "seafood",
+        "local",
+        "tourist-favorite"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-8",
+      "name": "xm-shaxian",
+      "nameEn": "Sha Xian",
+      "type": "local",
+      "cuisine": "Fujian Snacks",
+      "avgPrice": 50,
+      "rating": 4.4,
+      "address": "Shapowei, near fishing harbor",
+      "coordinates": {
+        "lat": 24.4415,
+        "lng": 118.0835
+      },
+      "phone": "+86 592 208 8888",
+      "hours": "06:00-22:00",
+      "description": "Traditional Fujian snack shop famous for沙茶面 and various闽南小食.",
+      "dishHighlights": [
+        "Satay noodles",
+        "Sea worm jelly",
+        "Meat dumplings",
+        "Taro balls"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "cheap-eats"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-9",
+      "name": "xm-laomeng",
+      "nameEn": "Lao Meng",
+      "type": "local",
+      "cuisine": "Xiamen Local",
+      "avgPrice": 60,
+      "rating": 4.3,
+      "address": "66 Huandao Road, Siming District",
+      "coordinates": {
+        "lat": 24.4525,
+        "lng": 118.1025
+      },
+      "phone": "+86 592 235 8888",
+      "hours": "07:00-19:00",
+      "description": "Old establishment known for traditional peanut soup and local breakfast items.",
+      "dishHighlights": [
+        "Sweet peanut soup",
+        "Fried dough sticks",
+        "Rice dumplings"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "historic"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-10",
+      "name": "xm-dagu",
+      "nameEn": "Da Gu",
+      "type": "local",
+      "cuisine": "Duck",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Near Zhongshan Road",
+      "coordinates": {
+        "lat": 24.4555,
+        "lng": 118.0855
+      },
+      "phone": "+86 592 210 8888",
+      "hours": "10:30-21:30",
+      "description": "Specialized duck restaurant with traditional姜母鸭 (ginger duck) and various duck dishes.",
+      "dishHighlights": [
+        "Ginger duck",
+        "Duck blood soup",
+        "Spicy duck neck"
+      ],
+      "tags": [
+        "local",
+        "duck",
+        "specialty"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-11",
+      "name": "xm-hongxia",
+      "nameEn": "Hong Xia",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 200,
+      "rating": 4.7,
+      "address": "8 Siming Road, Siming District",
+      "coordinates": {
+        "lat": 24.4485,
+        "lng": 118.0895
+      },
+      "phone": "+86 592 228 8888",
+      "hours": "11:00-14:00, 17:00-22:00",
+      "description": "Local institution for fresh seafood since 1980s. Known for its open kitchen and reasonable prices.",
+      "dishHighlights": [
+        "Steam fresh fish",
+        "Garlic lobster",
+        "Spicy crab",
+        "Clams with basil"
+      ],
+      "tags": [
+        "seafood",
+        "local",
+        "fresh"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-12",
+      "name": "xm-shenxin",
+      "nameEn": "Shen Xin",
+      "type": "local",
+      "cuisine": "Noodles",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "Near Xiamen University",
+      "coordinates": {
+        "lat": 24.4365,
+        "lng": 118.1015
+      },
+      "phone": "+86 592 218 8888",
+      "hours": "07:00-20:00",
+      "description": "Famous noodle shop near XMU, serving large portions of authentic闽南面食.",
+      "dishHighlights": [
+        "Beef offal noodles",
+        "Pork knuckle rice",
+        "Spring rolls"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "cheap-eats"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-13",
+      "name": "xm-tingyigu",
+      "nameEn": "Ting Yi Gu",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Fujian",
+      "avgPrice": 600,
+      "rating": 4.8,
+      "address": "77 Lujiang Road, near Ferry Terminal",
+      "coordinates": {
+        "lat": 24.4565,
+        "lng": 118.0785
+      },
+      "phone": "+86 592 212 3333",
+      "hours": "11:00-14:00, 17:30-22:00",
+      "description": "Michelin-starred restaurant offering elevated traditional dishes with Gulangyu views.",
+      "dishHighlights": [
+        "Braised sea cucumber",
+        "Mazu-style prawns",
+        "Seafood soup dumplings"
+      ],
+      "tags": [
+        "fine-dining",
+        "fujian",
+        "view"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-14",
+      "name": "xm-xianlu",
+      "nameEn": "Xian Lu",
+      "type": "local",
+      "cuisine": "Hotpot",
+      "avgPrice": 120,
+      "rating": 4.5,
+      "address": "Jimei District, near School Village",
+      "coordinates": {
+        "lat": 24.4425,
+        "lng": 118.0565
+      },
+      "phone": "+86 592 668 8888",
+      "hours": "11:00-23:00",
+      "description": "Popular hotpot chain with fresh seafood and local ingredients. Known for fish head hotpot.",
+      "dishHighlights": [
+        "Fish head hotpot",
+        "Beef slices",
+        "Fresh vegetables",
+        "Handmade meatballs"
+      ],
+      "tags": [
+        "hotpot",
+        "seafood",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-15",
+      "name": "xm-xinyuan",
+      "nameEn": "Xin Yuan",
+      "type": "local",
+      "cuisine": "Fujian",
+      "avgPrice": 80,
+      "rating": 4.3,
+      "address": "Near Nanputuo Temple",
+      "coordinates": {
+        "lat": 24.4385,
+        "lng": 118.0925
+      },
+      "phone": "+86 592 208 9999",
+      "hours": "10:00-21:00",
+      "description": "Local restaurant near temple, known for vegetarian options and Buddhist-style dishes.",
+      "dishHighlights": [
+        "Buddha-style hot pot",
+        "Fried vegetables",
+        "Rice with toppings"
+      ],
+      "tags": [
+        "local",
+        "vegetarian",
+        "near-temple"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-16",
+      "name": "xm-longde",
+      "nameEn": "Long De",
+      "type": "local",
+      "cuisine": "Fujian",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "Zhongshan Road arcade building",
+      "coordinates": {
+        "lat": 24.4548,
+        "lng": 118.0838
+      },
+      "phone": "+86 592 213 8888",
+      "hours": "11:00-21:30",
+      "description": "Established restaurant in arcade building serving traditional闽南菜 since 1920s.",
+      "dishHighlights": [
+        "Oyster omelette",
+        "Spring rolls",
+        "Braised pork belly",
+        "Seafood congee"
+      ],
+      "tags": [
+        "historic",
+        "minnan",
+        "central"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-17",
+      "name": "xm-zhaole",
+      "nameEn": "Zhao Le",
+      "type": "local",
+      "cuisine": "Teochew",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Hubin South Road",
+      "coordinates": {
+        "lat": 24.4505,
+        "lng": 118.1085
+      },
+      "phone": "+86 592 539 8888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Chaozhou-style restaurant known for precise cooking techniques and fresh ingredients.",
+      "dishHighlights": [
+        "Steamed fish",
+        "Braised goose",
+        "Shark fin soup",
+        "Tofu dishes"
+      ],
+      "tags": [
+        "teochew",
+        "seafood",
+        "refined"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-18",
+      "name": "xm-chengyi",
+      "nameEn": "Cheng Yi",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Fusion",
+      "avgPrice": 450,
+      "rating": 4.7,
+      "address": "Jimei New Town, Chengyi Park",
+      "coordinates": {
+        "lat": 24.4385,
+        "lng": 118.0545
+      },
+      "phone": "+86 592 619 8888",
+      "hours": "11:00-14:00, 17:30-22:00",
+      "description": "Two-diamond restaurant combining Fujian ingredients with international cooking techniques.",
+      "dishHighlights": [
+        "Truffle chicken",
+        "Saffron seafood soup",
+        "Chocolate prawns"
+      ],
+      "tags": [
+        "fusion",
+        "creative",
+        "elegant"
+      ],
+      "star": 0
+    },
+    {
+      "id": "xiamen-19",
+      "name": "xm-furong",
+      "nameEn": "Fu Rong",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 180,
+      "rating": 4.5,
+      "address": "Gulangyu Island, near Piano Museum",
+      "coordinates": {
+        "lat": 24.4432,
+        "lng": 118.0695
+      },
+      "phone": "+86 592 206 8888",
+      "hours": "10:30-21:00",
+      "description": "Seafood restaurant on Gulangyu with local fish and traditional preparation methods.",
+      "dishHighlights": [
+        "Fried squid",
+        "Steamed fish of the day",
+        "Seaweed soup",
+        "Oyster omelette"
+      ],
+      "tags": [
+        "seafood",
+        "gulangyu",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-20",
+      "name": "xm-sanyu",
+      "nameEn": "San Yu",
+      "type": "local",
+      "cuisine": "BBQ",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Near Zengcuo'an",
+      "coordinates": {
+        "lat": 24.4415,
+        "lng": 118.1085
+      },
+      "phone": "+86 592 251 9999",
+      "hours": "17:00-02:00",
+      "description": "Popular late-night BBQ spot near Zengcuo'an, known for grilled seafood and skewers.",
+      "dishHighlights": [
+        "Grilled scallops",
+        "Lamb skewers",
+        "Squid rings",
+        "Cold beer"
+      ],
+      "tags": [
+        "bbq",
+        "nightlife",
+        "seafood"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-21",
+      "name": "xm-baocheng",
+      "nameEn": "Bao Cheng",
+      "type": "local",
+      "cuisine": "Dim Sum",
+      "avgPrice": 70,
+      "rating": 4.3,
+      "address": "Jimei School Village",
+      "coordinates": {
+        "lat": 24.4412,
+        "lng": 118.0575
+      },
+      "phone": "+86 592 618 8888",
+      "hours": "07:00-14:00",
+      "description": "Local dim sum shop popular with students and locals for breakfast and lunch.",
+      "dishHighlights": [
+        "Shrimp dumplings",
+        "Pork buns",
+        "Taro dumplings",
+        "Rice rolls"
+      ],
+      "tags": [
+        "dim-sum",
+        "breakfast",
+        "cheap"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-22",
+      "name": "xm-shengsheng",
+      "nameEn": "Sheng Sheng",
+      "type": "local",
+      "cuisine": "Noodles",
+      "avgPrice": 35,
+      "rating": 4.2,
+      "address": "Siming District, near Ferry",
+      "coordinates": {
+        "lat": 24.4485,
+        "lng": 118.0855
+      },
+      "phone": "+86 592 212 7777",
+      "hours": "06:00-15:00",
+      "description": "Famous for authentic土笋冻 (sea worm jelly) and other traditional snacks.",
+      "dishHighlights": [
+        "Sea worm jelly",
+        "Oyster vermicelli",
+        "Pork rice noodles",
+        "Fried taro"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-23",
+      "name": "厦门海底世界酒楼",
+      "nameEn": "Hai Di World Restaurant",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 200,
+      "rating": 4.4,
+      "address": "Gulangyu Island, near Underwater World",
+      "coordinates": {
+        "lat": 24.4435,
+        "lng": 118.0708
+      },
+      "phone": "+86 592 206 6888",
+      "hours": "10:30-21:00",
+      "description": "Seafood restaurant on Gulangyu with fresh catches and beautiful bay views.",
+      "dishHighlights": [
+        "Steamed groupers",
+        "Spicy crab",
+        "Garlic prawns",
+        "Seafood hotpot"
+      ],
+      "tags": [
+        "seafood",
+        "gulangyu",
+        "view"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-24",
+      "name": "阿杰土笋冻",
+      "nameEn": "A Jie Sea Worm Jelly",
+      "type": "local",
+      "cuisine": "Snacks",
+      "avgPrice": 25,
+      "rating": 4.6,
+      "address": "Zengcuo'an Main Street",
+      "coordinates": {
+        "lat": 24.4408,
+        "lng": 118.1092
+      },
+      "phone": "+86 592 251 8888",
+      "hours": "09:00-22:00",
+      "description": "Famous local shop specializing in authentic土笋冻 from Zhangzhou.",
+      "dishHighlights": [
+        "Sea worm jelly",
+        "Oyster omelette",
+        "Spring rolls",
+        "Grass jelly"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "xiamen-25",
+      "name": "集美学村大排档",
+      "nameEn": "Jimei Night Market",
+      "type": "local",
+      "cuisine": "Street Food",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "Jimei District, near University Town",
+      "coordinates": {
+        "lat": 24.4418,
+        "lng": 118.0585
+      },
+      "phone": "",
+      "hours": "17:00-02:00",
+      "description": "Popular night market food street near Jimei University, famous for cheap and tasty snacks.",
+      "dishHighlights": [
+        "Grilled skewers",
+        "Fried rice noodles",
+        "Stinky tofu",
+        "Bubble tea"
+      ],
+      "tags": [
+        "night-market",
+        "street-food",
+        "student-area"
+      ],
+      "star": 0,
+      "diamond": 0
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major international airports (Singapore, Tokyo, Seoul, Bangkok)",
+        "to": "Xiamen Gaoqi International Airport (XMN)",
+        "duration": "3-6 hours from Asia, 8-12 hours from Europe/Americas",
+        "price": "800-5000 CNY",
+        "frequency": "Multiple daily international flights, extensive domestic network",
+        "tips": "Gaoqi Airport is close to city center (15 minutes). Use official taxi queue or Didi. Metro Line 2 connects to city."
+      },
+      {
+        "type": "train",
+        "from": "Fuzhou (1.5h), Quanzhou (1h), Zhangzhou (30min)",
+        "to": "Xiamen Railway Station / Xiamen North Railway Station",
+        "duration": "30min-1.5 hours",
+        "price": "50-150 CNY",
+        "frequency": "Multiple daily high-speed trains",
+        "tips": "Xiamen North is for high-speed trains. Xiamen Station is closer to center. Book through 12306 app."
+      },
+      {
+        "type": "train",
+        "from": "Shanghai (6h), Shenzhen (3h), Hangzhou (4h)",
+        "to": "Xiamen North Railway Station",
+        "duration": "3-6 hours",
+        "price": "200-500 CNY",
+        "frequency": "Multiple daily departures",
+        "tips": "High-speed trains are comfortable. scenic route along coast. Book seats on right side for ocean views."
+      }
+    ],
+    "local": {
+      "metro": [
+        "Metro Line 1: Railway Station to Amphitheater (Coastal scenic route)",
+        "Metro Line 2: Jiahe Road to Tianzhou Road (connects airport)",
+        "Metro Line 3: Handan Road to Songbai Road (connects Xiang'an)",
+        "Single ride: 2-8 CNY depending on distance",
+        "First train: 06:30, Last train: 23:00",
+        "Peak hours: 07:00-09:00, 17:00-19:00 - expect crowds"
+      ],
+      "bus": [
+        "Extensive network covering all areas",
+        "Single ride: 1-2 CNY (flat fee or distance-based)",
+        "BRT (Bus Rapid Transit): dedicated lanes, faster travel",
+        "Tourist Bus 29: links major attractions around Island Ring",
+        "Airport bus: 10-30 CNY to city center",
+        "Night bus routes available for late-night travel"
+      ],
+      "taxi": [
+        "Starting fare: 10 CNY (first 3km)",
+        "Waiting: 0.5 CNY per minute",
+        "Night surcharge: 10% extra (23:00-06:00)",
+        "Always insist on meter use",
+        "Didi app recommended - English interface available",
+        "Airport/large hotels have taxi stands with queue system"
+      ],
+      "bike": [
+        "Mobike, Hello bikes, and other shared bikes widely available",
+        "Unlock: 1-2 CNY, then 0.5-1.5 CNY per 15-30 minutes",
+        "Designated bike lanes on Huandao Road",
+        "Electric bikes available for longer distances",
+        "Must park at designated spots in some areas"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "厦门安达仕酒店",
+      "nameEn": "Andaz Xiamen",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "No.88 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4558,
+        "lng": 118.0788
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Harbour views",
+        "Stylish design",
+        "Central location",
+        "Rooftop bar"
+      ],
+      "bookingTips": "Book direct for best rates. Weekend packages available. Sea-view rooms worth the premium."
+    },
+    {
+      "name": "厦门华尔道夫酒店",
+      "nameEn": "Waldorf Astoria Xiamen",
+      "budget": "luxury",
+      "priceRange": "2000-4000 CNY/night",
+      "address": "No.16 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4552,
+        "lng": 118.0792
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Luxury spa",
+        "Multiple fine dining",
+        "Butler service",
+        "Prime waterfront location"
+      ],
+      "bookingTips": "Book 2+ weeks ahead for best availability. Consider breakfast-inclusive packages."
+    },
+    {
+      "name": "厦门康莱德酒店",
+      "nameEn": "Conrad Xiamen",
+      "budget": "luxury",
+      "priceRange": "1200-2500 CNY/night",
+      "address": "188 Jiahe Road, Siming District",
+      "coordinates": {
+        "lat": 24.4612,
+        "lng": 118.0895
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Floor-to-ceiling views",
+        "Infinity pool",
+        "Great breakfast",
+        "Near Hubin Road"
+      ],
+      "bookingTips": "Request high floor for best views. Hotel buffet is excellent. Good value at weekends."
+    },
+    {
+      "name": "厦门香格里拉大酒店",
+      "nameEn": "Shangri-La Xiamen",
+      "budget": "luxury",
+      "priceRange": "1000-2000 CNY/night",
+      "address": "84 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4555,
+        "lng": 118.0785
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Garden setting",
+        "Good service",
+        "Close to ferry terminal",
+        "Spacious rooms"
+      ],
+      "bookingTips": "Club rooms offer good value with benefits. Ask for renovated rooms."
+    },
+    {
+      "name": "厦门海景千禧大酒店",
+      "nameEn": "Millennium Harbourview Hotel Xiamen",
+      "budget": "mid",
+      "priceRange": "600-1200 CNY/night",
+      "address": "12 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4558,
+        "lng": 118.0782
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Seaview rooms",
+        "Central location",
+        "Good breakfast",
+        "Walk to attractions"
+      ],
+      "bookingTips": "Seaview rooms recommended. Book on travel platforms for discounts."
+    },
+    {
+      "name": "厦门牡丹万鹏宾馆",
+      "nameEn": "Peony Wanpeng Hotel",
+      "budget": "mid",
+      "priceRange": "400-800 CNY/night",
+      "address": "No.17 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4552,
+        "lng": 118.0778
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Zhongshan Road",
+        "Good location",
+        "Comfortable rooms",
+        "Chinese restaurant"
+      ],
+      "bookingTips": "Best location for shopping and sightseeing. Check packages for breakfast."
+    },
+    {
+      "name": "厦门京闽中心酒店",
+      "nameEn": "Jingmin Central Hotel",
+      "budget": "mid",
+      "priceRange": "400-700 CNY/night",
+      "address": "68 Hubin South Road, Siming District",
+      "coordinates": {
+        "lat": 24.4512,
+        "lng": 118.1045
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near shopping district",
+        "Good facilities",
+        "Multiple restaurants",
+        "Metro access"
+      ],
+      "bookingTips": "Weekend rates significantly lower. Good for business travelers."
+    },
+    {
+      "name": "厦门航空金雁酒店",
+      "nameEn": "Xiamen Air Galaxy Hotel",
+      "budget": "mid",
+      "priceRange": "350-600 CNY/night",
+      "address": "84 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4548,
+        "lng": 118.0785
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Airport shuttle",
+        "Flight display in lobby",
+        "Comfortable beds",
+        "Value for money"
+      ],
+      "bookingTips": "Great for early flights. Free airport transfer. Request quiet rooms."
+    },
+    {
+      "name": "厦门鹭江宾馆",
+      "nameEn": "Lujiang Hotel",
+      "budget": "mid",
+      "priceRange": "300-600 CNY/night",
+      "address": "23 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4562,
+        "lng": 118.0795
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Historic building",
+        "Central location",
+        "Traditional decor",
+        "Good service"
+      ],
+      "bookingTips": "Book historical wing for unique experience. Walking distance to ferry."
+    },
+    {
+      "name": "厦门华侨大厦",
+      "nameEn": "Overseas Chinese Hotel",
+      "budget": "budget",
+      "priceRange": "200-400 CNY/night",
+      "address": "1-6 Lujiang Road, Siming District",
+      "coordinates": {
+        "lat": 24.4565,
+        "lng": 118.0798
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Excellent location",
+        "Budget-friendly",
+        "Basic amenities",
+        "Central to attractions"
+      ],
+      "bookingTips": "Best value in prime location. Simple but clean rooms. No views but great location."
+    },
+    {
+      "name": "厦门七斗星商旅酒店",
+      "nameEn": "Seven Star Business Hotel",
+      "budget": "budget",
+      "priceRange": "150-350 CNY/night",
+      "address": "158 Hubin South Road, Siming District",
+      "coordinates": {
+        "lat": 24.4505,
+        "lng": 118.1035
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Near shopping mall",
+        "Metro nearby",
+        "Free breakfast",
+        "Modern decor"
+      ],
+      "bookingTips": "Breakfast included makes great value. Good metro connections. Clean and functional."
+    },
+    {
+      "name": "厦门如家酒店",
+      "nameEn": "Home Inn Plus",
+      "budget": "budget",
+      "priceRange": "120-250 CNY/night",
+      "address": "35-1 Siming Road, Siming District",
+      "coordinates": {
+        "lat": 24.4475,
+        "lng": 118.0905
+      },
+      "rating": 4.0,
+      "highlights": [
+        "Near Nanputuo Temple",
+        "Home Inn quality",
+        "Consistent standards",
+        "Good service"
+      ],
+      "bookingTips": "Reliable chain with consistent quality. Book ahead during holidays."
+    },
+    {
+      "name": "鼓浪屿红堂酒店",
+      "nameEn": "Red Hall Hotel Gulangyu",
+      "budget": "mid",
+      "priceRange": "500-900 CNY/night",
+      "address": "Gulangyu Island, near Shuzhuang Garden",
+      "coordinates": {
+        "lat": 24.4438,
+        "lng": 118.0685
+      },
+      "rating": 4.6,
+      "highlights": [
+        "On Gulangyu Island",
+        "Historic building",
+        "Garden setting",
+        "Quiet location"
+      ],
+      "bookingTips": "Book early - only hotel on Gulangyu with character. Stay on island for sunrise access."
+    },
+    {
+      "name": "鼓浪屿磐石酒店",
+      "nameEn": "Panshi Hotel Gulangyu",
+      "budget": "luxury",
+      "priceRange": "800-1500 CNY/night",
+      "address": "Gulangyu Island, near Sunlight Rock",
+      "coordinates": {
+        "lat": 24.4468,
+        "lng": 118.0652
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Seaview",
+        "Historic mansion",
+        "Good restaurant",
+        "Close to attractions"
+      ],
+      "bookingTips": "Best location on Gulangyu for first-time visitors. Reserve seaview rooms."
+    },
+    {
+      "name": "集美湖酒店",
+      "nameEn": "Jimei Lake Hotel",
+      "budget": "mid",
+      "priceRange": "300-600 CNY/night",
+      "address": "Jimei District, near Chengyi Park",
+      "coordinates": {
+        "lat": 24.4375,
+        "lng": 118.0535
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Jimei School Village",
+        "Lake views",
+        "New facilities",
+        "Good for families"
+      ],
+      "bookingTips": "Best for exploring Jimei area. Good restaurant. Free parking."
+    },
+    {
+      "name": "厦门海沧希尔顿花园酒店",
+      "nameEn": "Hilton Garden Inn Xiamen Haicang",
+      "budget": "mid",
+      "priceRange": "350-650 CNY/night",
+      "address": "68 Haicang Avenue, Haicang District",
+      "coordinates": {
+        "lat": 24.4595,
+        "lng": 118.0255
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near Haicang Port",
+        "Modern facilities",
+        "Good breakfast",
+        "Value for money"
+      ],
+      "bookingTips": "Great for business travelers. Clean and comfortable. Free WiFi. Good location."
+    },
+    {
+      "name": "厦门国际会议中心酒店",
+      "nameEn": "Xiamen International Conference Hotel",
+      "budget": "luxury",
+      "priceRange": "800-1500 CNY/night",
+      "address": "110 Lulin Road, Siming District",
+      "coordinates": {
+        "lat": 24.4635,
+        "lng": 118.0785
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Ocean view",
+        "Conference facilities",
+        "Luxury spa",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Book sea-view rooms. Great for MICE travelers. Excellent service. Beautiful grounds."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Most widely accepted mobile payment in Xiamen",
+      "howToUse": [
+        "Download Alipay app before arrival",
+        "Link international credit card (Visa/Mastercard accepted at many merchants)",
+        "QR code payment at most merchants, supermarkets, and restaurants",
+        "Use for metro, bus, taxis, and rideshare"
+      ],
+      "tips": [
+        "Nearly all merchants in Xiamen accept Alipay",
+        "Blue code (international version) available for foreign cards",
+        "Download before arrival as app stores may not have it",
+        "Keep some cash as backup in rural areas"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Second most popular payment method, integrated with social app",
+      "howToUse": [
+        "WeChat app required",
+        "Link international card through WeChat Pay",
+        "Scan QR code to pay at merchants",
+        "Use for small purchases and tipping"
+      ],
+      "tips": [
+        "English interface available in settings",
+        "Most locals prefer WeChat Pay for peer-to-peer",
+        "Both Alipay and WeChat work at most merchants",
+        "Useful for ordering at some restaurants"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Still accepted everywhere, essential for local markets and small vendors",
+      "howToUse": [
+        "Exchange at airport bank or ATM",
+        "ICBC and Bank of China ATMs widely available",
+        "500 CNY, 100 CNY, 50 CNY notes most useful",
+        "Small vendors at markets prefer cash"
+      ],
+      "tips": [
+        "Keep 100-200 CNY in cash for markets",
+        "ATMs at Metro stations convenient for cash",
+        "Xiamen is mostly cashless - only rural markets need cash",
+        "ATMs charge 10-20 CNY fee for foreign cards"
+      ]
+    },
+    {
+      "method": "International Credit Cards",
+      "icon": "card",
+      "description": "Accepted at hotels, large restaurants, and international chains",
+      "howToUse": [
+        "Visa and Mastercard accepted at upscale venues",
+        "May require passport verification",
+        "Look for card logos at store entrances"
+      ],
+      "tips": [
+        "Call your bank before travel to enable international use",
+        "Some places add 2-3% foreign transaction fee",
+        "Best used at hotels and modern shopping malls",
+        "Smaller shops and restaurants often don't accept cards"
+      ]
+    },
+    {
+      "method": "China UnionPay",
+      "icon": "unionpay",
+      "description": "Domestic bank cards - widely accepted across China",
+      "howToUse": [
+        "ATM cards from Chinese banks work everywhere",
+        "Can withdraw cash from ICBC, CCB, BOC ATMs",
+        "Some merchants prefer domestic cards"
+      ],
+      "tips": [
+        "If you have Chinese bank account, this works like debit",
+        "Lower fees than international cards at ATMs",
+        "Ask hotel to help open temporary account if needed"
+      ]
+    },
+    {
+      "method": "Mobile Payment via Digital Wallet",
+      "icon": "wallet",
+      "description": "Digital wallets like Apple Pay, Samsung Pay increasingly accepted",
+      "howToUse": [
+        "Link international card to Apple Pay/Google Pay",
+        "Tap to pay at terminals with contactless symbol",
+        "Available at modern stores and hotels"
+      ],
+      "tips": [
+        "Limited acceptance compared to Alipay/WeChat",
+        "Useful if you have foreign card linked",
+        "Works at 7-Eleven and some modern chains",
+        "Best as backup to Alipay/WeChat"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "greeting",
+      "title": "Min Nan Dialect Greetings",
+      "content": "Learn a few闽南话 phrases: 'Li ho' (hello), 'Zuo zai' (thank you), 'Cheh beh' (not good). Locals appreciate the effort even if pronunciation isn't perfect.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Seafood Ordering Etiquette",
+      "content": "At seafood restaurants, prices are often 'per jin' (500g). Confirm total price before ordering. Watch the scale when selecting live seafood. Don't hesitate to negotiate at wet markets.",
+      "importance": "high"
+    },
+    {
+      "category": "dining",
+      "title": "Tea Culture",
+      "content": "Xiamen is famous for tea (mikong tea/功夫茶). When invited to someone's home, expect tea service. Turn the cup with both hands when receiving tea as a sign of respect.",
+      "importance": "high"
+    },
+    {
+      "category": "dining",
+      "title": "Chopstick customs",
+      "content": "Don't stick chopsticks vertically in rice - it resembles incense for the dead. Don't point with chopsticks. Don't pass food directly from chopstick to chopstick.",
+      "importance": "medium"
+    },
+    {
+      "category": "social",
+      "title": "Gulangyu Island Courtesy",
+      "content": "Gulangyu is a residential island with many elderly residents. Keep noise levels down, especially near the piano museum and residential areas. No cars are allowed - respect the peaceful atmosphere.",
+      "importance": "high"
+    },
+    {
+      "category": "social",
+      "title": "Temple Respect",
+      "content": "At Nanputuo Temple, dress modestly covering shoulders and knees. Remove sunglasses and hats when entering halls. Don't take photos where prohibited. Walk clockwise around Buddhist halls.",
+      "importance": "high"
+    },
+    {
+      "category": "photography",
+      "title": "Photography at Fishing Harbor",
+      "content": "At Shapowei and fishing harbors, ask before photographing fishermen or their catches. Some may ask for small payment (5-10 CNY) for photos of them or their boats.",
+      "importance": "low"
+    },
+    {
+      "category": "photography",
+      "title": "Sunrise and Sunset Etiquette",
+      "content": "Popular sunrise spots (Huandao Road, Gulangyu) get crowded. Don't block others' views or set up tripods for long periods. Be mindful of passing cyclists on Huandao Road.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Bargaining in Xiamen",
+      "content": "Bargaining expected at Zhongshan Road stalls, Zengcuo'an shops, and markets. Start at 40-50% of asking price. Be friendly - it's part of the experience. Walk away if you can't agree.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Local Products to Buy",
+      "content": "Famous Xiamen products:桂圆干 (dried longan), 金门高粱酒 (Kinmen Kaoliang wine), 闽南特产 (Minnan specialties), 茶叶 (tea), 馅饼 (pastries). Buy from reputable shops near Zhongshan Road.",
+      "importance": "low"
+    },
+    {
+      "category": "social",
+      "title": "Beach Culture",
+      "content": "Xiamen beaches (Hulhi Beach, Jimei Beach) can get crowded. Don't swim at unguarded beaches. Watch for jellyfish in summer. Clean up after yourself.",
+      "importance": "medium"
+    },
+    {
+      "category": "social",
+      "title": "Respecting Elders",
+      "content": "In Minnan culture, show respect to elders by addressing them first, offering seats, and not starting eating before older people at the table.",
+      "importance": "medium"
+    },
+    {
+      "category": "photography",
+      "title": "University Etiquette",
+      "content": "When visiting Xiamen University, be respectful of students studying. Don't wander into classroom buildings. The campus is private property - follow all rules.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Market haggling",
+      "content": "At local wet markets, prices are often fixed for locals but negotiable for tourists. Start lower, meet in middle. Bring small bills. Fresh seafood markets are open early morning.",
+      "importance": "low"
+    },
+    {
+      "category": "dining",
+      "title": "Tipping Culture",
+      "content": "Tipping is not expected or common in Xiamen. High-end restaurants may add service charge. Good service is considered standard - a small tip (10-20 CNY) for exceptional service at nice restaurants is appreciated.",
+      "importance": "low"
+    },
+    {
+      "category": "social",
+      "title": "Dancing in Parks",
+      "content": "Early morning park dancing (广场舞) is popular. Don't interrupt or photograph without permission. Some groups may welcome foreigners to join.",
+      "importance": "low"
+    },
+    {
+      "category": "dining",
+      "title": "Xiamen Snacks to Try",
+      "content": "Must-try snacks: 土笋冻 (sea worm jelly), 沙茶面 (satay noodles), 烧肉粽 (braised rice dumplings), 花生汤 (peanut soup), 馅饼 (pastries). Buy from local shops in Zhongshan Road or Zengcuo'an.",
+      "importance": "high"
+    },
+    {
+      "category": "social",
+      "title": "Gambling Culture",
+      "content": "Mahjong is popular social activity in Xiamen. You may hear mahjong tiles clicking in tea houses or parks. It's a social game, not gambling in the Western sense - tourists are welcome to watch or learn.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "Taiwan Products",
+      "content": "Due to proximity to Taiwan, Xiamen has many Taiwan products: Kinmen Kaoliang wine, Taiwan pineapple cakes, dried seafood, and Taiwan-style snacks. Taiwan Commodity City (大嶝小镇) offers duty-free shopping.",
+      "importance": "medium"
+    },
+    {
+      "category": "social",
+      "title": "Teahouse Etiquette",
+      "content": "Xiamen has many traditional teahouses. When receiving tea, tap two fingers on the table as thanks - this gesture shows respect to the host. Don't pour tea for yourself first; pour for others before yourself.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "厦门急救中心",
+      "nameEn": "Xiamen Emergency Center",
+      "phone": "120",
+      "address": "Various locations citywide",
+      "notes": "English operators may be limited. Ask for 'ying yu' (English) operator."
+    },
+    {
+      "type": "police",
+      "name": "厦门市公安局",
+      "nameEn": "Xiamen Public Security Bureau",
+      "phone": "110",
+      "address": "Xiamen City Center",
+      "notes": "Tourist police stations at major attractions and Gulangyu Ferry Terminal"
+    },
+    {
+      "type": "fire",
+      "name": "厦门消防",
+      "nameEn": "Xiamen Fire Brigade",
+      "phone": "119",
+      "address": "Various stations citywide",
+      "notes": "Also handles rescue operations and accidents"
+    },
+    {
+      "type": "hospital",
+      "name": "厦门大学附属第一医院",
+      "nameEn": "The First Affiliated Hospital of Xiamen University",
+      "phone": "+86 592 213 2227",
+      "address": "55 Zhenhai Road, Siming District",
+      "coordinates": {
+        "lat": 24.4592,
+        "lng": 118.0885
+      },
+      "notes": "Large public hospital, 24-hour emergency. English interpretation available."
+    },
+    {
+      "type": "hospital",
+      "name": "厦门市中医院",
+      "nameEn": "Xiamen Traditional Chinese Medicine Hospital",
+      "phone": "+86 592 202 5209",
+      "address": "16 Jiahe Road, Siming District",
+      "coordinates": {
+        "lat": 24.4615,
+        "lng": 118.0915
+      },
+      "notes": "Good for traditional Chinese medicine treatments. Emergency services available."
+    },
+    {
+      "type": "hospital",
+      "name": "厦门长庚医院",
+      "nameEn": "Xiamen Chang Gung Hospital",
+      "phone": "+86 592 620 3456",
+      "address": "123 Changle Road, Haicang District",
+      "coordinates": {
+        "lat": 24.4525,
+        "lng": 118.0385
+      },
+      "notes": "Taiwanese-run hospital, English-speaking staff, accepts international insurance"
+    },
+    {
+      "type": "embassy",
+      "name": "新加坡驻厦门总领事馆",
+      "nameEn": "Consulate-General of Singapore in Xiamen",
+      "phone": "+86 592 268 8691",
+      "address": "Xiamen Center, 95 Lujiang Road",
+      "coordinates": {
+        "lat": 24.4555,
+        "lng": 118.0795
+      },
+      "notes": "For Singapore citizens only. Check hours before visiting."
+    },
+    {
+      "type": "embassy",
+      "name": "马来西亚驻厦门总领事馆",
+      "nameEn": "Consulate-General of Malaysia in Xiamen",
+      "phone": "+86 592 202 7984",
+      "address": "Xiamen International Bank Building, 50 Lujiang Road",
+      "coordinates": {
+        "lat": 24.4558,
+        "lng": 118.0785
+      },
+      "notes": "For Malaysian citizens. Monday-Friday 09:00-12:00, 14:00-17:00."
+    },
+    {
+      "type": "police",
+      "name": "厦门出入境管理局",
+      "nameEn": "Xiamen Exit-Entry Administration",
+      "phone": "+86 592 202 2020",
+      "address": "28-32 Hubin North Road, Siming District",
+      "coordinates": {
+        "lat": 24.4552,
+        "lng": 118.0985
+      },
+      "notes": "For visa extensions, passport issues, and residency permits"
+    },
+    {
+      "type": "hospital",
+      "name": "厦门大学医院",
+      "nameEn": "Xiamen University Hospital",
+      "phone": "+86 592 218 0120",
+      "address": "422 Siming South Road, Siming District",
+      "coordinates": {
+        "lat": 24.4345,
+        "lng": 118.1025
+      },
+      "notes": "On XMU campus, good for minor ailments and health checks"
+    },
+    {
+      "type": "hospital",
+      "name": "厦门眼科中心",
+      "nameEn": "Xiamen Eye Center",
+      "phone": "+86 592 210 9898",
+      "address": "336 Xiahe Road, Siming District",
+      "coordinates": {
+        "lat": 24.4522,
+        "lng": 118.0912
+      },
+      "notes": "Specialized eye hospital, 24-hour emergency for eye injuries"
+    },
+    {
+      "type": "tourist-complaint",
+      "name": "厦门旅游投诉热线",
+      "nameEn": "Xiamen Tourism Complaint Hotline",
+      "phone": "12345",
+      "address": "Citywide",
+      "notes": "Report travel scams, price disputes, or service issues"
+    },
+    {
+      "type": "coast-guard",
+      "name": "厦门海上搜救中心",
+      "nameEn": "Xiamen Maritime Rescue Center",
+      "phone": "12395",
+      "address": "Xiamen Port",
+      "notes": "For maritime emergencies, drowning, or boat accidents"
+    },
+    {
+      "type": "tourist-police",
+      "name": "厦门旅游警察",
+      "nameEn": "Xiamen Tourist Police",
+      "phone": "+86 592 202 2020",
+      "address": "Near major attractions",
+      "coordinates": {
+        "lat": 24.4455,
+        "lng": 118.0719
+      },
+      "notes": "Tourist police station at Gulangyu Ferry Terminal"
+    },
+    {
+      "type": "foreign-affairs",
+      "name": "厦门市人民政府外事办公室",
+      "nameEn": "Xiamen Foreign Affairs Office",
+      "phone": "+86 592 285 8888",
+      "address": "11 Xiamen Government Building",
+      "coordinates": {
+        "lat": 24.4582,
+        "lng": 118.0865
+      },
+      "notes": "Assistance for foreign nationals in Xiamen"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese (Simplified), Minnan dialect widely spoken",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa (L-tourist, M-business, V-entry). 72-hour transit visa available for some nationalities at XMN.",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs (same as US/Japan two-pin or China three-pin)",
+    "water": "Tap water not recommended for drinking. Bottled water widely available (2-5 CNY).",
+    "bestTimeToVisit": "March-May for flowers, October-November for weather, avoid July-September for typhoons"
+  }
+}

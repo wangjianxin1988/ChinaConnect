@@ -1,0 +1,1832 @@
+{
+  "slug": "hulunbuir",
+  "name": "呼伦贝尔",
+  "nameEn": "Hulunbuir",
+  "country": "China",
+  "population": "2.25 million",
+  "coordinates": {
+    "lat": 49.2122,
+    "lng": 119.7656
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Hulunbuir, located in northeastern Inner Mongolia, is a vast grassland paradise featuring the legendary Horqin Sand Beach, historic Russian-style buildings, and the pristine Dahur lakes. Experience authentic Mongolian culture, horseback riding across endless grasslands, and stays in traditional Mongolian yurts under star-filled skies.",
+  "coverImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200",
+  "highlights": [
+    "Hulunbuir Grassland - Vast prairie views",
+    "Russian-style Architecture in Manzhouli",
+    "Horqin Sand Beach - Desert meets grassland",
+    " Dahur Lakes - Pristine natural beauty",
+    "Genghis Khan's Statue - Mongolian heritage"
+  ],
+  "climate": {
+    "type": "Continental monsoon",
+    "bestMonths": [
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "avgSummerTemp": "20°C (68°F)",
+    "avgWinterTemp": "-25°C (-13°F)",
+    "tips": "Best visited in summer (June-August) for grassland scenery. Fall offers golden colors. Winters are extremely cold. Pack layers even in summer as temperatures vary greatly between day and night."
+  },
+  "attractions": [
+    {
+      "id": "hulunbuir-grassland",
+      "name": "呼伦贝尔大草原",
+      "nameEn": "Hulunbuir Grand Grassland",
+      "category": "natural",
+      "description": "One of China's largest grasslands offering endless prairie views, traditional Mongolian yurt stays, horseback riding, and authentic cultural experiences.",
+      "address": "Hulunbuir Grassland, Various Locations",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (yurt stays 200-500 CNY/night)",
+      "recommendedVisitTime": "2-3 days",
+      "highlights": [
+        "Endless prairie views",
+        "Mongolian yurt stays",
+        "Horseback riding",
+        "Traditional Mongolian singing"
+      ],
+      "tips": "Stay overnight in a yurt for authentic experience. Arrive early morning for best photos. Hire local guide for grassland activities."
+    },
+    {
+      "id": "manzhouli",
+      "name": "满洲里",
+      "nameEn": "Manzhouli",
+      "category": "cultural",
+      "description": "Border city with stunning Russian-style architecture, matryoshka doll factories, and the world's largest Genghis Khan statue.",
+      "address": "Manzhouli City",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "openingHours": "City open 24 hours",
+      "ticketPrice": "Free (statue 50 CNY)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Russian architecture",
+        "Matryoshka doll shopping",
+        "Genghis Khan statue",
+        "Border market"
+      ],
+      "tips": "Great for Russian souvenirs. The statue complex takes 2-3 hours. Combine with nearby Hulunbuir grassland."
+    },
+    {
+      "id": "horqin-sand",
+      "name": "科尔沁沙地",
+      "nameEn": "Horqin Sand Beach",
+      "category": "natural",
+      "description": "Unique desert grassland area where sand dunes meet prairie, offering camel rides, dune activities, and spectacular sunset views.",
+      "address": "Horqin Banner, Eastern Inner Mongolia",
+      "coordinates": {
+        "lat": 44.9122,
+        "lng": 120.8656
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "80 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Desert oasis",
+        "Camel rides",
+        "Dune activities",
+        "Sunset views"
+      ],
+      "tips": "Best at sunset. Wear sunglasses and sunscreen. Combine with nearby grassland tours."
+    },
+    {
+      "id": "dahur-lakes",
+      "name": "达赉湖",
+      "nameEn": "Dahur Lakes (Laifa)",
+      "category": "natural",
+      "description": "Pristine cluster of lakes with wetland ecosystems, diverse birdlife, and peaceful natural surroundings away from crowds.",
+      "address": "Zhalantun, Hulunbuir",
+      "coordinates": {
+        "lat": 48.2122,
+        "lng": 118.2656
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "40 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Wetland scenery",
+        "Bird watching",
+        "Fishing villages",
+        "Peaceful atmosphere"
+      ],
+      "tips": "Best for nature lovers. Morning visits for bird watching. Bring binoculars for bird watching."
+    },
+    {
+      "id": "genghis-khan-statue",
+      "name": "成吉思汗陵",
+      "nameEn": "Genghis Khan Statue Complex",
+      "category": "historical",
+      "description": "World's largest Genghis Khan statue at 46 meters tall, with museum, cultural exhibits, and Mongolian ceremonial experiences.",
+      "address": "Ordos City, Inner Mongolia",
+      "coordinates": {
+        "lat": 39.6122,
+        "lng": 109.8656
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "90 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "46m statue",
+        "Mongolian history museum",
+        "Ceremonial performances",
+        "Cultural exhibits"
+      ],
+      "tips": "Arrive early for ceremonial show. Allow half day. Combine with nearby Ordos museum."
+    },
+    {
+      "id": "ergenekon",
+      "name": "额尔古纳",
+      "nameEn": "Eerguna",
+      "category": "cultural",
+      "description": "Border town with Russian influences, access to primeval forest, and gateway to northern grassland scenic areas.",
+      "address": "Eerguna City",
+      "coordinates": {
+        "lat": 50.2422,
+        "lng": 120.1656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Russian border town",
+        "Primeval forest",
+        " birch forests",
+        "Russian food"
+      ],
+      "tips": "Good base for exploring northern areas. Try Russian-Mongolian fusion cuisine. Hire car for scenic drives."
+    },
+    {
+      "id": "zhalantun",
+      "name": "扎兰屯",
+      "nameEn": "Zhalantun",
+      "category": "natural",
+      "description": "Beautiful valley city known for peaks, weaver villages, and the famous Zhalantun Dahur cultural heritage.",
+      "address": "Zhalantun City",
+      "coordinates": {
+        "lat": 48.0422,
+        "lng": 122.7656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Valley scenery",
+        "Dahur culture",
+        "Peaks and forests",
+        "Hot springs"
+      ],
+      "tips": "Visit in fall for golden birch forests. The Dahur ethnic group culture is unique. Good hiking opportunities."
+    },
+    {
+      "id": "moerdaoga",
+      "name": "莫尔道嘎",
+      "nameEn": "Moerdaoga",
+      "category": "natural",
+      "description": "Primeval forest area with ancient trees, diverse wildlife, and scenic drives through Russia's border region.",
+      "address": "Moerdaoga Forest Region",
+      "coordinates": {
+        "lat": 51.5422,
+        "lng": 120.7656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (forest park 60 CNY)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Primeval forest",
+        "Wildlife",
+        "Autumn colors",
+        "Scenic drives"
+      ],
+      "tips": "Best in September for autumn foliage. Early morning for misty forest views. Stay in forest lodge."
+    },
+    {
+      "id": "arxan",
+      "name": "阿尔山",
+      "nameEn": "Arxan",
+      "category": "natural",
+      "description": "Volcanic landscape with granite pillars, mineral pools, and pristine forest, plus Russia's border mountain views.",
+      "address": "Arxan City",
+      "coordinates": {
+        "lat": 47.5422,
+        "lng": 119.9656
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "180 CNY (includes multiple attractions)",
+      "recommendedVisitTime": "2-3 days",
+      "highlights": [
+        "Volcanic rock formations",
+        "Arxan Hot Springs",
+        "Tianchi (Heavenly Lake)",
+        "Primeval forest"
+      ],
+      "tips": "Stay overnight to explore fully. Hot springs are excellent. Fall foliage is spectacular. Book lodging in advance."
+    },
+    {
+      "id": "ulanchap",
+      "name": "乌兰毛都",
+      "nameEn": "Ulan Modu",
+      "category": "natural",
+      "description": "Unspoiled grassland with rolling hills, traditional Mongolian villages, and authentic nomadic experiences.",
+      "address": "Ulan Modu Grassland",
+      "coordinates": {
+        "lat": 46.0422,
+        "lng": 121.8656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (yurt stay 300-600 CNY)",
+      "recommendedVisitTime": "2-3 days",
+      "highlights": [
+        "Unspoiled grassland",
+        "Nomadic culture",
+        "Horseback riding",
+        "Starry skies"
+      ],
+      "tips": "Less developed than main grassland areas. More authentic experience. Stay in yurt camps. Great for photographers."
+    },
+    {
+      "id": "heishui",
+      "name": "黑山头",
+      "nameEn": "Heishuitou",
+      "category": "natural",
+      "description": "Border grassland area with Russia visible across the river, famous for sunset views and traditional horse culture.",
+      "address": "Heishuitou Town",
+      "coordinates": {
+        "lat": 50.2422,
+        "lng": 119.3656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Border grassland",
+        "Sunset views",
+        "Horse culture",
+        "River views"
+      ],
+      "tips": "Best at sunset for golden prairie views. Horse riding is excellent here. Traditional horse performances available."
+    },
+    {
+      "id": "bayan",
+      "name": "巴彦呼硕",
+      "nameEn": "Bayan Hushuo",
+      "category": "cultural",
+      "description": "Traditional Mongolian grassland area known for the famous Mongolian song 'My Motherland is Like a Garden' originating here.",
+      "address": "Bayan Hushuo Grassland",
+      "coordinates": {
+        "lat": 48.6422,
+        "lng": 119.4656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (yurt stay 250-500 CNY)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Traditional songs",
+        "Genghis Khan folklore",
+        "Horse culture",
+        "Authentic nomads"
+      ],
+      "tips": "The song 'My Motherland is Like a Garden' was composed here. Traditional Mongolian hospitality. Try air-dried beef."
+    },
+    {
+      "id": "wudalianchi",
+      "name": "五大连池",
+      "nameEn": "Wudalianchi",
+      "category": "natural",
+      "description": "UNESCO site with five volcanic crater lakes, black volcanic rock, mineral springs, and unique geological formations.",
+      "address": "Wudalianchi City, Heilongjiang",
+      "coordinates": {
+        "lat": 48.8122,
+        "lng": 126.1656
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "80 CNY (combined ticket)",
+      "recommendedVisitTime": "2-3 days",
+      "highlights": [
+        "Volcanic crater lakes",
+        "Black volcanic rock",
+        "Mineral springs",
+        "Old volcanic cones"
+      ],
+      "tips": "Old and new craters offer different scenery. The mineral water is famous. Combine with nearby forest areas."
+    },
+    {
+      "id": "yakeshi",
+      "name": "牙克石",
+      "nameEn": "Yakeshi",
+      "category": "natural",
+      "description": "Forest city on the edge of the Greater Khingan Range, known for ski resorts and snow-covered winter landscapes.",
+      "address": "Yakeshi City",
+      "coordinates": {
+        "lat": 49.2922,
+        "lng": 120.7656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (ski resort extra)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Greater Khingan forest",
+        "Winter sports",
+        "Snow scenery",
+        " Birch forests"
+      ],
+      "tips": "Winter sports destination. Combined with Greater Khingan Range tours. Excellent for snow photography."
+    },
+    {
+      "id": "zhalaid",
+      "name": "扎赉特",
+      "nameEn": "Zhalate",
+      "category": "natural",
+      "description": "Rice paddies meet grassland at this transitional zone, offering unique agricultural landscapes and Dahur ethnic experiences.",
+      "address": "Zhalate Banner",
+      "coordinates": {
+        "lat": 46.7422,
+        "lng": 122.9656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 day",
+      "highlights": [
+        "Rice paddy views",
+        "Grassland edge",
+        "Dahur culture",
+        "Sunrise scenery"
+      ],
+      "tips": "Best in summer for green paddies, fall for golden harvest. Unique transition zone scenery. Excellent for photography."
+    },
+    {
+      "id": "xinbaer",
+      "name": "新巴尔虎左旗",
+      "nameEn": "Xin Balin Left Banner",
+      "category": "cultural",
+      "description": "Traditional Mongolian grassland area with authentic nomadic lifestyle, horse breeding, and cultural preservation.",
+      "address": "Xin Balin Left Banner",
+      "coordinates": {
+        "lat": 48.2422,
+        "lng": 118.2656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Traditional nomads",
+        "Horse breeding",
+        "Grassland culture",
+        "Authentic experience"
+      ],
+      "tips": "Authentic Mongolian experience without tourist crowds. Local families welcome visitors. Try traditional dairy products."
+    },
+    {
+      "id": "xinbaer-right",
+      "name": "新巴尔虎右旗",
+      "nameEn": "Xin Balin Right Banner",
+      "category": "natural",
+      "description": "Western grassland area with large-scale ranching operations, beautiful sunset views, and traditional Mongolian culture.",
+      "address": "Xin Balin Right Banner",
+      "coordinates": {
+        "lat": 48.6422,
+        "lng": 116.8656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Large ranches",
+        "Grassland sunsets",
+        "Livestock culture",
+        "Starry nights"
+      ],
+      "tips": "Excellent for night sky photography. Traditional large-scale herding culture. Combine with Manzhouli visit."
+    },
+    {
+      "id": "mozhong",
+      "name": "莫尔格勒河",
+      "nameEn": "Mogul River",
+      "category": "natural",
+      "description": "Winding river creating mesmerizing curves across the grassland, offering iconic prairie photography opportunities.",
+      "address": "Near Balin Right Banner",
+      "coordinates": {
+        "lat": 49.3422,
+        "lng": 119.8656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Winding river curves",
+        "Prairie views",
+        "Photography",
+        "Rolling hills"
+      ],
+      "tips": "Best photographed from elevated viewpoints. Early morning for mist. The winding patterns are most visible from above."
+    },
+    {
+      "id": "genhe",
+      "name": "根河",
+      "nameEn": "Genhe",
+      "category": "natural",
+      "description": "China's 'cold pole' with extreme winter temperatures, reindeer herding communities, and pristine forest scenery.",
+      "address": "Genhe City",
+      "coordinates": {
+        "lat": 50.8122,
+        "lng": 121.5656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (reindeer park 80 CNY)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "China's cold pole",
+        "Reindeer communities",
+        "Pristine forests",
+        "Winter extreme"
+      ],
+      "tips": "Extremely cold in winter. Reindeer herding is unique to this area. The '-58°C record is celebrated here. Best for adventure seekers."
+    },
+    {
+      "id": "shuanghe",
+      "name": "双合",
+      "nameEn": "Shuanghe",
+      "category": "natural",
+      "description": "Ecosystem research station turned scenic area with virgin forest, rare birds, and pristine natural environment.",
+      "address": "Shuanghe, Genhe",
+      "coordinates": {
+        "lat": 51.0422,
+        "lng": 121.7656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 day",
+      "highlights": [
+        "Virgin forest",
+        "Rare birds",
+        "Clean air",
+        "Nature trails"
+      ],
+      "tips": "Excellent for forest bathing and nature observation. The 'natural oxygen bar' is real. Great for hiking and wildlife watching."
+    },
+    {
+      "id": "yichun-forest",
+      "name": "伊春森林",
+      "nameEn": "Yichun Forest",
+      "category": "natural",
+      "description": "Part of the Greater Khingan Range with ancient trees, diverse wildlife, and beautiful autumn foliage.",
+      "address": "Yichun City, Heilongjiang",
+      "coordinates": {
+        "lat": 47.7422,
+        "lng": 128.8656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (parks vary 40-100 CNY)",
+      "recommendedVisitTime": "2-3 days",
+      "highlights": [
+        "Ancient trees",
+        "Autumn foliage",
+        "Wildlife",
+        "Forest trails"
+      ],
+      "tips": "Best in September-October for fall colors. The '#1 pine tree is famous. Great for camping and hiking."
+    },
+    {
+      "id": "aershan",
+      "name": "阿尔山国家森林公园",
+      "nameEn": "Arxan National Forest Park",
+      "category": "natural",
+      "description": "Volcanic landscape with crater lakes, hot springs, and granite formations creating unique natural scenery.",
+      "address": "Arxan National Forest Park",
+      "coordinates": {
+        "lat": 47.5422,
+        "lng": 119.9656
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "180 CNY",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Tianchi (Heavenly Lake)",
+        "Arxan Hot Springs",
+        "Granite pillars",
+        "Ancient pine forests"
+      ],
+      "tips": "Stay in Arxan town overnight. Early entry recommended. The hot springs are excellent after hiking. Combined ticket is good value."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "hulun-1",
+      "name": "蒙古族手把肉",
+      "nameEn": "Mongolian Hand-Grabbable Meat",
+      "type": "local",
+      "cuisine": "Mongolian",
+      "avgPrice": 80,
+      "rating": 4.7,
+      "address": "Grassland Yurt Camps",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "hours": "12:00-22:00",
+      "description": "Traditional Mongolian boiled lamb, served with hands. The signature grassland dish, tender and juicy.",
+      "dishHighlights": [
+        "Hand-grabbed lamb",
+        "Mongolian BBQ",
+        "Lamb soup"
+      ],
+      "tags": [
+        "local",
+        "mongolian",
+        "traditional",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-2",
+      "name": "诺尔塔奶茶馆",
+      "nameEn": "Nuortaa Milk Tea House",
+      "type": "local",
+      "cuisine": "Mongolian Dairy",
+      "avgPrice": 45,
+      "rating": 4.6,
+      "address": "Manzhouli Russian Street",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "hours": "08:00-20:00",
+      "description": "Authentic Mongolian milk tea and dairy products in traditional setting with Russian influences.",
+      "dishHighlights": [
+        "Mongolian milk tea",
+        "Air-dried beef",
+        "Dairy snacks"
+      ],
+      "tags": [
+        "local",
+        "mongolian",
+        "traditional",
+        "dairy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-3",
+      "name": "草原情奶茶馆",
+      "nameEn": "Grassland Love Milk Tea",
+      "type": "local",
+      "cuisine": "Mongolian",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Eerguna Old Town",
+      "coordinates": {
+        "lat": 50.2422,
+        "lng": 120.1656
+      },
+      "hours": "07:00-19:00",
+      "description": "Family-run milk tea shop serving traditional Mongolian dairy drinks and snacks.",
+      "dishHighlights": [
+        "Salt milk tea",
+        "Mongolian pastry",
+        "Dried dairy"
+      ],
+      "tags": [
+        "local",
+        "traditional",
+        "dairy",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-4",
+      "name": "满洲里俄式餐厅",
+      "nameEn": "Manzhouli Russian Restaurant",
+      "type": "local",
+      "cuisine": "Russian-Mongolian Fusion",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Manzhouli Central Avenue",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "hours": "10:00-22:00",
+      "description": "Russian-style restaurant with matryoshka dolls decorating walls, serving Russian-Mongolian fusion dishes.",
+      "dishHighlights": [
+        "Russian borscht",
+        "Beef stroganoff",
+        "Dumplings"
+      ],
+      "tags": [
+        "russian",
+        "fusion",
+        "cultural",
+        "scenic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-5",
+      "name": "蒙古族涮羊肉",
+      "nameEn": "Mongolian Lamb Hotpot",
+      "type": "local",
+      "cuisine": "Mongolian Hotpot",
+      "avgPrice": 90,
+      "rating": 4.7,
+      "address": "Hulunbuir City Center",
+      "coordinates": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      },
+      "hours": "11:00-23:00",
+      "description": "Northern-style lamb hotpot with thin slices, perfect for cold grassland evenings.",
+      "dishHighlights": [
+        "Thin-sliced lamb",
+        "Grassland vegetables",
+        "Bone broth"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "lamb",
+        "warm"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-6",
+      "name": "蒙古族馅饼",
+      "nameEn": "Mongolian Meat Pies",
+      "type": "local",
+      "cuisine": "Mongolian Snacks",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "Various Locations",
+      "coordinates": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      },
+      "hours": "06:00-18:00",
+      "description": "Traditional pan-fried meat pies with flaky crust and savory fillings, popular breakfast item.",
+      "dishHighlights": [
+        "Lamb pies",
+        "Vegetable pies",
+        "Mongolian pastries"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "breakfast",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-7",
+      "name": "铁山笨蛋",
+      "nameEn": "Tieshan Egg",
+      "type": "local",
+      "cuisine": "Mongolian Home Style",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "Near Arxan",
+      "coordinates": {
+        "lat": 47.5422,
+        "lng": 119.9656
+      },
+      "hours": "10:00-21:00",
+      "description": "Rustic restaurant famous for mountain eggs from free-range chickens and forest mushrooms.",
+      "dishHighlights": [
+        "Mountain eggs",
+        "Forest mushrooms",
+        "Wild vegetables"
+      ],
+      "tags": [
+        "local",
+        "organic",
+        "mountain",
+        "rustic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-8",
+      "name": "蒙古族烤肉串",
+      "nameEn": "Mongolian Lamb Skewers",
+      "type": "local",
+      "cuisine": "Mongolian BBQ",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "Grassland Tourist Area",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "hours": "17:00-24:00",
+      "description": "Night market BBQ stalls serving authentic Mongolian lamb skewers grilled over open flame.",
+      "dishHighlights": [
+        "Lamb skewers",
+        "Beef skewers",
+        "Lamb chops"
+      ],
+      "tags": [
+        "local",
+        "bbq",
+        "night-market",
+        "street-food"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-9",
+      "name": "根河山珍",
+      "nameEn": "Genhe Mountain Delicacies",
+      "type": "local",
+      "cuisine": "Forest Cuisine",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Genhe City",
+      "coordinates": {
+        "lat": 50.8122,
+        "lng": 121.5656
+      },
+      "hours": "10:00-22:00",
+      "description": "Restaurant specializing in forest mushrooms, wild herbs, and game meat from Greater Khingan region.",
+      "dishHighlights": [
+        "Pine mushrooms",
+        "Wild boar",
+        "Deer meat"
+      ],
+      "tags": [
+        "local",
+        "forest",
+        "game",
+        "mountain"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-10",
+      "name": "五大连池矿泉鱼",
+      "nameEn": "Wudalianchi Mineral Fish",
+      "type": "local",
+      "cuisine": "Local Fish",
+      "avgPrice": 70,
+      "rating": 4.6,
+      "address": "Wudalianchi",
+      "coordinates": {
+        "lat": 48.8122,
+        "lng": 126.1656
+      },
+      "hours": "10:00-21:00",
+      "description": "Fresh fish from volcanic crater lakes, cooked with mineral water for unique flavor.",
+      "dishHighlights": [
+        "Mineral water fish",
+        "Grilled fish",
+        "Fish soup"
+      ],
+      "tags": [
+        "local",
+        "fish",
+        "mineral-water",
+        "volcanic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-11",
+      "name": "蒙古族奶酪",
+      "nameEn": "Mongolian Cheese (Hurus)",
+      "type": "local",
+      "cuisine": "Mongolian Dairy",
+      "avgPrice": 35,
+      "rating": 4.5,
+      "address": "Eerguna",
+      "coordinates": {
+        "lat": 50.2422,
+        "lng": 120.1656
+      },
+      "hours": "08:00-18:00",
+      "description": "Traditional dairy shop making various Mongolian cheese products from yak and cow milk.",
+      "dishHighlights": [
+        "Dried cheese",
+        "Fresh cheese",
+        "Milk products"
+      ],
+      "tags": [
+        "local",
+        "dairy",
+        "traditional",
+        "snacks"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-12",
+      "name": "俄式列巴房",
+      "nameEn": "Russian Bread House",
+      "type": "local",
+      "cuisine": "Russian",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "Manzhouli",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "hours": "07:00-19:00",
+      "description": "Bakery making traditional Russian bread (khleb) and pastries with Russian-Mongolian influences.",
+      "dishHighlights": [
+        "Russian bread",
+        "Sweet pastries",
+        "Black bread"
+      ],
+      "tags": [
+        "russian",
+        "bakery",
+        "local",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-13",
+      "name": "草原风干肉",
+      "nameEn": "Grassland Air-Dried Meat",
+      "type": "local",
+      "cuisine": "Mongolian Preserved",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Grassland Yurt Camps",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "hours": "By reservation",
+      "description": "Traditional air-dried beef and lamb, aged in the dry grassland air for intense flavor.",
+      "dishHighlights": [
+        "Air-dried beef",
+        "Air-dried lamb",
+        "Dried meat slices"
+      ],
+      "tags": [
+        "local",
+        "traditional",
+        "mongolian",
+        "preserved"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-14",
+      "name": "阿尔山野菜馆",
+      "nameEn": "Arxan Wild Vegetable Restaurant",
+      "type": "local",
+      "cuisine": "Forest Greens",
+      "avgPrice": 65,
+      "rating": 4.5,
+      "address": "Arxan Town",
+      "coordinates": {
+        "lat": 47.5422,
+        "lng": 119.9656
+      },
+      "hours": "10:00-21:00",
+      "description": "Restaurant serving dishes made with wild vegetables and herbs foraged from Arxan's volcanic landscape.",
+      "dishHighlights": [
+        "Wild ferns",
+        "Mountain vegetables",
+        "Herbal soups"
+      ],
+      "tags": [
+        "local",
+        "organic",
+        "forest",
+        "healthy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-15",
+      "name": "满洲里大饭店",
+      "nameEn": "Manzhouli Grand Hotel",
+      "type": "fine",
+      "cuisine": "Russian-Chinese",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "Manzhouli City Center",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "phone": "+86 470 622 2999",
+      "hours": "10:00-22:00",
+      "description": "Upscale restaurant in historic Russian-style building serving refined Russian-Chinese fusion cuisine.",
+      "dishHighlights": [
+        "Russian roast lamb",
+        "Borscht",
+        "Caviar"
+      ],
+      "tags": [
+        "fine-dining",
+        "russian",
+        "historic",
+        "special-occasion"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "hulun-16",
+      "name": "蒙古族奶茶早餐",
+      "nameEn": "Mongolian Milk Tea Breakfast",
+      "type": "local",
+      "cuisine": "Mongolian Breakfast",
+      "avgPrice": 25,
+      "rating": 4.4,
+      "address": "Yurt Camps",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "hours": "06:00-09:00",
+      "description": "Traditional Mongolian breakfast served in yurt camps with milk tea, fried dough, and dairy products.",
+      "dishHighlights": [
+        "Salt milk tea",
+        "Fried dough twists",
+        "Dried cheese"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "mongolian",
+        "authentic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-17",
+      "name": "羊肉烧麦",
+      "nameEn": "Lamb Shaomai",
+      "type": "local",
+      "cuisine": "Mongolian Dim Sum",
+      "avgPrice": 35,
+      "rating": 4.6,
+      "address": "Hulunbuir City",
+      "coordinates": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      },
+      "hours": "06:00-14:00",
+      "description": "Popular breakfast spot serving lamb shaomai (dumplings) with rich broth, local specialty.",
+      "dishHighlights": [
+        "Lamb shaomai",
+        "Lamb soup",
+        "Soy milk"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "dumplings",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-18",
+      "name": "俄罗斯糖果屋",
+      "nameEn": "Russian Candy House",
+      "type": "local",
+      "cuisine": "Russian Sweets",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "Manzhouli Russian Street",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "hours": "09:00-21:00",
+      "description": "Sweet shop with wide variety of Russian chocolates, candies, and pastries imported from Russia.",
+      "dishHighlights": [
+        "Russian chocolate",
+        "Caramel candies",
+        "Russian pastries"
+      ],
+      "tags": [
+        "russian",
+        "sweets",
+        "souvenir",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-19",
+      "name": "牛头宴",
+      "nameEn": "Cow Head Banquet",
+      "type": "local",
+      "cuisine": "Mongolian Traditional",
+      "avgPrice": 500,
+      "rating": 4.8,
+      "address": "Grassland Resort",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "hours": "By reservation only",
+      "description": "Traditional Mongolian feast featuring whole cow head, served for special occasions and ceremonies.",
+      "dishHighlights": [
+        "Cow head",
+        "Traditional ceremony",
+        "Lamb platter"
+      ],
+      "tags": [
+        "local",
+        "traditional",
+        "ceremony",
+        "special-occasion"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-20",
+      "name": "蒙古族酸奶",
+      "nameEn": "Mongolian Yogurt",
+      "type": "local",
+      "cuisine": "Mongolian Dairy",
+      "avgPrice": 20,
+      "rating": 4.5,
+      "address": "Various Locations",
+      "coordinates": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      },
+      "hours": "全天",
+      "description": "Fresh yak yogurt and cow milk yogurt, served with honey and graham for authentic taste.",
+      "dishHighlights": [
+        "Yak yogurt",
+        "Honey yogurt",
+        "Fresh milk"
+      ],
+      "tags": [
+        "local",
+        "dairy",
+        "healthy",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-21",
+      "name": "火锅鱼头",
+      "nameEn": "Fish Head Hotpot",
+      "type": "local",
+      "cuisine": "Local Hotpot",
+      "avgPrice": 85,
+      "rating": 4.5,
+      "address": "Zhalantun",
+      "coordinates": {
+        "lat": 48.0422,
+        "lng": 122.7656
+      },
+      "hours": "11:00-23:00",
+      "description": "Local fish head hotpot with fresh river fish from nearby water systems, rich and flavorful broth.",
+      "dishHighlights": [
+        "Fish head hotpot",
+        "River fish",
+        "Vegetable plate"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "fish",
+        "warm"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-22",
+      "name": "奶酪披萨",
+      "nameEn": "Cheese Pizza",
+      "type": "local",
+      "cuisine": "Russian Fusion",
+      "avgPrice": 55,
+      "rating": 4.3,
+      "address": "Manzhouli",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "hours": "10:00-22:00",
+      "description": "Russian-Mongolian fusion pizza with generous cheese and local meat toppings.",
+      "dishHighlights": [
+        "Mongolian cheese pizza",
+        "Lamb pizza",
+        "Russian sausage"
+      ],
+      "tags": [
+        "fusion",
+        "russian",
+        "pizza",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-23",
+      "name": "马奶酒",
+      "nameEn": "Mare's Milk Wine",
+      "type": "local",
+      "cuisine": "Mongolian Drinks",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "Grassland Yurt Camps",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "hours": "Evening service",
+      "description": "Traditional fermented mare's milk alcoholic drink, a cultural experience in Mongolian grassland.",
+      "dishHighlights": [
+        "Mare's milk wine",
+        "Airag (fermented mare's milk)",
+        "Mongolian tea"
+      ],
+      "tags": [
+        "local",
+        "mongolian",
+        "traditional",
+        "drink"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-24",
+      "name": "松茸炖鸡",
+      "nameEn": "Matsutake Chicken Soup",
+      "type": "local",
+      "cuisine": "Forest Cuisine",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "Yichun",
+      "coordinates": {
+        "lat": 47.7422,
+        "lng": 128.8656
+      },
+      "hours": "10:00-21:00",
+      "description": "Premium matsutake mushrooms from Greater Khingan cooked with free-range chicken in clear broth.",
+      "dishHighlights": [
+        "Matsutake mushrooms",
+        "Free-range chicken",
+        "Forest herbs"
+      ],
+      "tags": [
+        "local",
+        "premium",
+        "forest",
+        "soup"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "hulun-25",
+      "name": "蒙古包子",
+      "nameEn": "Mongolian Baozi",
+      "type": "local",
+      "cuisine": "Mongolian Snacks",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "Hulunbuir City",
+      "coordinates": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      },
+      "hours": "06:00-18:00",
+      "description": "Steamed buns stuffed with lamb and vegetables, a hearty Mongolian breakfast staple.",
+      "dishHighlights": [
+        "Lamb baozi",
+        "Vegetable baozi",
+        "Mongolian pastries"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "baozi",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Hulunbuir Dongshan International Airport (HLD)",
+        "duration": "2-4 hours",
+        "price": "800-2000 CNY",
+        "frequency": "Daily flights from Beijing, Hohhot, Harbin",
+        "tips": "Airport 10km from city center. Airport bus or taxi to city. Best connection via Beijing or Harbin."
+      },
+      {
+        "type": "train",
+        "from": "Hohhot (12h), Harbin (10h), Beijing (24h+)",
+        "to": "Hulunbuir Railway Station",
+        "duration": "10-24 hours",
+        "price": "200-600 CNY",
+        "frequency": "Daily trains from major cities",
+        "tips": "Train is scenic but long. Sleeper berths recommended. Best for those who enjoy train travel."
+      }
+    ],
+    "local": {
+      "metro": [
+        "No metro system",
+        "Taxi is main urban transport",
+        "Car rental recommended for sightseeing"
+      ],
+      "bus": [
+        "City buses available",
+        "2 CNY standard fare",
+        "Limited English signage"
+      ],
+      "taxi": [
+        "Starting fare: 8 CNY",
+        "Didi works in city",
+        "Negotiate for grassland trips"
+      ],
+      "bike": [
+        "Limited bike sharing",
+        "Grassland areas not suitable",
+        "Car is essential for grassland"
+      ],
+      "walking": [
+        "City areas walkable",
+        "Grassland requires vehicle",
+        "Boardwalks at scenic areas"
+      ],
+      "rental": [
+        "Car rental recommended",
+        "Driver with car is better option",
+        "4WD needed for grassland roads"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "呼伦贝尔天骄酒店",
+      "nameEn": "Hulunbuir Tianjiao Hotel",
+      "budget": "luxury",
+      "priceRange": "800-1500 CNY/night",
+      "address": "Hulunbuir City Center",
+      "coordinates": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central location",
+        "Modern facilities",
+        "Good service",
+        "Russian-Mongolian decor"
+      ],
+      "bookingTips": "Best luxury option in city. Book during grassland peak season (July-August) well ahead."
+    },
+    {
+      "name": "满洲里香格里拉大酒店",
+      "nameEn": "Manzhouli Shangri-La",
+      "budget": "luxury",
+      "priceRange": "600-1200 CNY/night",
+      "address": "Manzhouli City Center",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Russian architecture style",
+        "Central location",
+        "Luxury facilities",
+        "View of border city"
+      ],
+      "bookingTips": "Best base for Manzhouli sightseeing. Russian-style building. Book city view rooms."
+    },
+    {
+      "name": "蒙古包度假酒店",
+      "nameEn": "Mongolian Yurt Resort",
+      "budget": "mid",
+      "priceRange": "400-800 CNY/night",
+      "address": "Hulunbuir Grassland",
+      "coordinates": {
+        "lat": 49.3122,
+        "lng": 119.8656
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Authentic yurt experience",
+        "Grassland views",
+        "Mongolian culture",
+        "Horse riding available"
+      ],
+      "bookingTips": "Book yurt stay for authentic experience. Advance booking essential in summer. Some yurts have private bathroom."
+    },
+    {
+      "name": "根河生态酒店",
+      "nameEn": "Genhe Eco Hotel",
+      "budget": "mid",
+      "priceRange": "300-600 CNY/night",
+      "address": "Genhe City",
+      "coordinates": {
+        "lat": 50.8122,
+        "lng": 121.5656
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Forest location",
+        "Clean air",
+        "Nature theme",
+        "Reindeer culture"
+      ],
+      "bookingTips": "Good base for cold pole exploration. Ask about reindeer herding experiences. Heating available."
+    },
+    {
+      "name": "阿尔山温泉宾馆",
+      "nameEn": "Arxan Hot Spring Hotel",
+      "budget": "mid",
+      "priceRange": "400-900 CNY/night",
+      "address": "Arxan Town",
+      "coordinates": {
+        "lat": 47.5422,
+        "lng": 119.9656
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Hot spring access",
+        "Forest location",
+        "Volcanic scenery",
+        "Spa facilities"
+      ],
+      "bookingTips": "Perfect after hiking Arxan parks. Hot spring included in some packages. Book spa treatments ahead."
+    },
+    {
+      "name": "满洲里青年旅舍",
+      "nameEn": "Manzhouli Youth Hostel",
+      "budget": "budget",
+      "priceRange": "80-200 CNY/night",
+      "address": "Manzhouli Russian Street",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Russian Street location",
+        "Budget-friendly",
+        "Social atmosphere",
+        "Russian speaking staff"
+      ],
+      "bookingTips": "Best for backpackers. Great location for Russian souvenirs. Book during Russian New Year for festivities."
+    },
+    {
+      "name": "五大连池火山温泉酒店",
+      "nameEn": "Wudalianchi Volcanic Hot Spring Hotel",
+      "budget": "mid",
+      "priceRange": "350-700 CNY/night",
+      "address": "Wudalianchi",
+      "coordinates": {
+        "lat": 48.8122,
+        "lng": 126.1656
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Volcanic landscape",
+        "Mineral hot springs",
+        "Crater lake views",
+        "Wellness focus"
+      ],
+      "bookingTips": "Stay overnight for full volcanic park experience. Hot springs are highlight. Combined tickets available."
+    },
+    {
+      "name": "额尔古纳俄罗斯民族乡",
+      "nameEn": "Eerguna Russian Ethnic Village",
+      "budget": "budget",
+      "priceRange": "150-400 CNY/night",
+      "address": "Eerguna",
+      "coordinates": {
+        "lat": 50.2422,
+        "lng": 120.1656
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Russian ethnic culture",
+        "Traditional houses",
+        "Border location",
+        "Cultural experience"
+      ],
+      "bookingTips": "Stay with local Russian-Mongolian families. Authentic cross-border cultural experience. Good base for birch forest."
+    },
+    {
+      "name": "呼伦贝尔草原星空营地",
+      "nameEn": "Hulunbuir Grassland Star Camp",
+      "budget": "mid",
+      "priceRange": "500-900 CNY/night",
+      "address": "Remote Grassland",
+      "coordinates": {
+        "lat": 49.4122,
+        "lng": 119.7656
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Starry night views",
+        "Remote location",
+        "Luxury yurt",
+        "Photography paradise"
+      ],
+      "bookingTips": "Best for photographers and stargazers. No light pollution. Book clear weather nights. Photography tour packages available."
+    },
+    {
+      "name": "牙克石滑雪度假村",
+      "nameEn": "Yakeshi Ski Resort",
+      "budget": "mid",
+      "priceRange": "400-800 CNY/night",
+      "address": "Yakeshi",
+      "coordinates": {
+        "lat": 49.2922,
+        "lng": 120.7656
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Ski slopes",
+        "Winter sports",
+        "Snow scenery",
+        "Forest location"
+      ],
+      "bookingTips": "Best for winter visitors. Ski season December-March. Snow scenery is beautiful year-round."
+    },
+    {
+      "name": "扎兰屯宾馆",
+      "nameEn": "Zhalantun Hotel",
+      "budget": "budget",
+      "priceRange": "200-400 CNY/night",
+      "address": "Zhalantun City",
+      "coordinates": {
+        "lat": 48.0422,
+        "lng": 122.7656
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Valley location",
+        "Central",
+        "Value",
+        "Clean"
+      ],
+      "bookingTips": "Good base for exploring eastern Hulunbuir. Room rates very reasonable. Simple but clean."
+    },
+    {
+      "name": "新巴尔虎左旗草原民宿",
+      "nameEn": "Xin Balin Left Banner Grassland Homestay",
+      "budget": "budget",
+      "priceRange": "150-350 CNY/night",
+      "address": "Grassland Area",
+      "coordinates": {
+        "lat": 48.2422,
+        "lng": 118.2656
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Authentic nomads",
+        "Horse culture",
+        "Grassland stays",
+        "Local families"
+      ],
+      "bookingTips": "Most authentic grassland experience. Stay with local Mongolian families. Limited English. Bring gifts from your city."
+    },
+    {
+      "name": "伊春森林度假酒店",
+      "nameEn": "Yichun Forest Resort Hotel",
+      "budget": "mid",
+      "priceRange": "350-700 CNY/night",
+      "address": "Yichun",
+      "coordinates": {
+        "lat": 47.7422,
+        "lng": 128.8656
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Forest location",
+        "Nature theme",
+        "Clean air",
+        "Hiking trails"
+      ],
+      "bookingTips": "Base for Greater Khingan exploration. Great for autumn foliage season. Fall package deals available."
+    },
+    {
+      "name": "莫尔道嘎林家乐",
+      "nameEn": "Moerdaoga Forest Lodge",
+      "budget": "budget",
+      "priceRange": "150-300 CNY/night",
+      "address": "Moerdaoga",
+      "coordinates": {
+        "lat": 51.5422,
+        "lng": 120.7656
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Forest setting",
+        "Local family",
+        "Wildlife nearby",
+        "Authentic"
+      ],
+      "bookingTips": "Stay in local forest lodge. Excellent for primeval forest exploration. Simple but charming accommodation."
+    },
+    {
+      "name": "满洲里套娃酒店",
+      "nameEn": "Manzhouli Matryoshka Hotel",
+      "budget": "mid",
+      "priceRange": "350-650 CNY/night",
+      "address": "Manzhouli",
+      "coordinates": {
+        "lat": 49.5922,
+        "lng": 117.4656
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Matryoshka doll theme",
+        "Russian style",
+        "Unique decor",
+        "Good location"
+      ],
+      "bookingTips": "Fun themed hotel for families. Great for matryoshka doll photos. Central location for shopping."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Accepted in cities and towns",
+      "howToUse": [
+        "Download before arrival",
+        "Link card or add cash"
+      ],
+      "tips": [
+        "Works in most locations",
+        "May not work in remote yurts"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Common in urban areas",
+      "howToUse": [
+        "WeChat required",
+        "International version available"
+      ],
+      "tips": [
+        "Rural areas may prefer cash",
+        "Essential for bike sharing"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Essential for grassland",
+      "howToUse": [
+        "ATM in cities",
+        "Bring sufficient cash to grassland"
+      ],
+      "tips": [
+        "Yurt camps require cash",
+        "Traditional markets prefer cash"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "culture",
+      "title": "Mongolian Hospitality",
+      "content": "Mongolians greet guests with hada (ceremonial silk scarf) and offer milk tea. Accepting hospitality shows respect. Refusing food or drink can offend hosts.",
+      "importance": "high"
+    },
+    {
+      "category": "culture",
+      "title": "Yurt Culture",
+      "content": "The yurt (ger) is traditional Mongolian home. The north side is the most honored position. Never step on the threshold or point feet at the central fire.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Mongolian Diet",
+      "content": "Mongolian cuisine centers on lamb, beef, dairy, and grains. Hand-grabbed lamb and milk tea are staples. Traditional dishes reflect nomadic lifestyle and harsh climate.",
+      "importance": "high"
+    },
+    {
+      "category": "etiquette",
+      "title": "Toasting Etiquette",
+      "content": "When offered milk tea, receive with both hands. It's polite to drink at least a little. Snuff (powdered tobacco) may be offered instead - decline politely if not desired.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Horse Culture",
+      "content": "Horses are central to Mongolian identity. Never hit or abuse horses. When riding, follow local guide's instructions. Horse shows demonstrate traditional equestrian skills.",
+      "importance": "medium"
+    },
+    {
+      "category": "religion",
+      "title": "Shamanism and Buddhism",
+      "content": "Mongolians practice a blend of shamanism and Tibetan Buddhism. Prayer flags, shamanic ceremonies, and Buddhist shrines coexist. Show respect at religious sites.",
+      "importance": "medium"
+    },
+    {
+      "category": "nature",
+      "title": "Grassland Protection",
+      "content": "The grassland ecosystem is fragile. Stay on designated paths, don't disturb wildlife, and minimize plastic use. Support sustainable tourism practices.",
+      "importance": "high"
+    },
+    {
+      "category": "culture",
+      "title": "Nadam Festival",
+      "content": "The traditional Mongolian 'Three Manly Games' - wrestling, horse racing, and archery - are showcased at Nadam festivals held during summer months.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Dairy Products",
+      "content": "Mongolians produce various dairy: milk, yogurt, cheese, air-dried curd (hurung), and mare's milk (airag). These are important nutritional sources and cultural items.",
+      "importance": "medium"
+    },
+    {
+      "category": "clothing",
+      "title": "Traditional Dress",
+      "content": "The Mongolian deel is traditional clothing worn for festivals. Modern Mongolians wear it on special occasions. Visitors welcome to try deel for photos.",
+      "importance": "low"
+    },
+    {
+      "category": "culture",
+      "title": "Russian Influence",
+      "content": "Manzhouli and Eerguna have strong Russian influences from historic trade. Russian architecture, food, and culture are visible. Matryoshka dolls are popular souvenirs.",
+      "importance": "medium"
+    },
+    {
+      "category": "music",
+      "title": "Mongolian Throat Singing",
+      "content": "Khoomei (throat singing) is a traditional art where singers produce multiple tones simultaneously. Performances are magical experiences of human vocal capability.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Gift Giving",
+      "content": "When visiting Mongolian families, bring small gifts (candy, tea, fruit). It shows respect. Gifts are received with both hands. Avoid giving knives or scissors.",
+      "importance": "medium"
+    },
+    {
+      "category": "nature",
+      "title": "Starry Nights",
+      "content": "Remote grassland areas have minimal light pollution, offering spectacular views of the Milky Way. Summer nights are best for stargazing. Bring warm layers.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Nomadic Lifestyle",
+      "content": "Traditional Mongolians still practice seasonal migration with their livestock. Some families offer homestays for visitors to experience authentic nomadic life.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "呼伦贝尔急救中心",
+      "nameEn": "Hulunbuir Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals in city centers have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "呼伦贝尔市公安局",
+      "nameEn": "Hulunbuir Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major scenic areas"
+    },
+    {
+      "type": "hospital",
+      "name": "呼伦贝尔市人民医院",
+      "nameEn": "Hulunbuir People's Hospital",
+      "phone": "+86 470 399 7123",
+      "address": "Hulunbuir City Center",
+      "coordinates": {
+        "lat": 49.2122,
+        "lng": 119.7656
+      },
+      "notes": "English-speaking staff may be limited"
+    },
+    {
+      "type": "fire",
+      "name": "消防",
+      "nameEn": "Fire Department",
+      "phone": "119",
+      "notes": "For grassland fire emergencies"
+    },
+    {
+      "type": "tourist-police",
+      "name": "呼伦贝尔旅游警察",
+      "nameEn": "Hulunbuir Tourist Police",
+      "phone": "+86 470 822 6909",
+      "notes": "English-speaking tourist police at major attractions"
+    },
+    {
+      "type": "embassy",
+      "name": "俄罗斯驻呼和浩特总领事馆",
+      "nameEn": "Russia Consulate General Hohhot",
+      "phone": "+86 471 651 2014",
+      "address": "Hohhot (nearest consular services)",
+      "notes": "For Russian citizens in Hulunbuir region"
+    },
+    {
+      "type": "embassy",
+      "name": "蒙古国驻呼和浩特总领事馆",
+      "nameEn": "Mongolia Consulate General Hohhot",
+      "phone": "+86 471 651 2014",
+      "address": "Hohhot",
+      "notes": "For Mongolian consular services"
+    },
+    {
+      "type": "road",
+      "name": "内蒙古路政",
+      "nameEn": "Inner Mongolia Road Administration",
+      "phone": "12122",
+      "notes": "For grassland road conditions and emergencies"
+    },
+    {
+      "type": "weather",
+      "name": "呼伦贝尔气象服务",
+      "nameEn": "Hulunbuir Weather Service",
+      "phone": "12121",
+      "notes": "For grassland weather updates"
+    },
+    {
+      "type": "forest",
+      "name": "大兴安岭森林防火",
+      "nameEn": "Greater Khingan Forest Fire Prevention",
+      "phone": "12119",
+      "notes": "Forest fire reporting and emergencies"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Mongolian (Mongolian script), Russian (in border areas)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

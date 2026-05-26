@@ -1,0 +1,93 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { citiesMeta } from "@/data/cities/index";
+
+const pageTitle = "Top Attractions in China - ChinaConnect";
+const pageDescription = "Discover top-rated attractions across China with opening hours, tickets, and local tips";
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: ['China attractions', 'tourist spots', 'things to do', 'sightseeing'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">Top Attractions in China</h1>
+      <p class="text-gray-600">Discover the most amazing attractions across 12 Chinese cities</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {citiesMeta.map((city) => (
+        <a
+          href={`/city/${city.slug}#attractions`}
+          class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            <div class={`w-10 h-10 rounded-lg bg-gradient-to-br ${
+              city.slug === 'beijing' ? 'from-blue-500 to-purple-600' :
+              city.slug === 'shanghai' ? 'from-purple-500 to-pink-600' :
+              city.slug === 'xian' ? 'from-orange-500 to-red-600' :
+              'from-green-500 to-teal-600'
+            } flex items-center justify-center text-white font-bold`}>
+              {city.nameZh[0]}
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                {city.name}
+              </h3>
+              <p class="text-sm text-gray-500">{city.nameZh}</p>
+            </div>
+          </div>
+          <p class="text-gray-600 text-sm">{city.description}</p>
+          <div class="mt-4 flex items-center text-blue-600 text-sm font-medium">
+            <span>View Attractions</span>
+            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-12 bg-blue-50 rounded-xl p-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Popular Attractions by City</h2>
+      <div class="grid md:grid-cols-2 gap-4 text-sm">
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Beijing</h3>
+          <ul class="space-y-1 text-gray-600">
+            <li>• Forbidden City - Imperial palace complex</li>
+            <li>• Great Wall - Iconic ancient fortification</li>
+            <li>• Temple of Heaven - UNESCO heritage site</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Shanghai</h3>
+          <ul class="space-y-1 text-gray-600">
+            <li>• The Bund - Historic waterfront promenade</li>
+            <li>• Yu Garden - Classical Chinese garden</li>
+            <li>• Shanghai Tower - World's fastest elevator</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Xi'an</h3>
+          <ul class="space-y-1 text-gray-600">
+            <li>• Terracotta Warriors - Ancient army statue</li>
+            <li>• City Wall - Best-preserved city walls</li>
+            <li>• Muslim Quarter - Street food paradise</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Chengdu</h3>
+          <ul class="space-y-1 text-gray-600">
+            <li>• Giant Panda Base - Panda conservation</li>
+            <li>• Jinli Street - Traditional shopping street</li>
+            <li>• Leshan Giant Buddha - UNESCO heritage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

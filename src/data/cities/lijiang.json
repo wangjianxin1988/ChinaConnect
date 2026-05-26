@@ -1,0 +1,2943 @@
+{
+  "slug": "lijiang",
+  "name": "丽江",
+  "nameEn": "Lijiang",
+  "country": "China",
+  "population": "1.28 million",
+  "coordinates": {
+    "lat": 26.8721,
+    "lng": 100.2295
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Lijiang is a picturesque city in northwestern Yunnan province, famous for the UNESCO World Heritage-listed Lijiang Old Town with its Naxi architecture and canal system. Nestled between the Himalayas and Yunnan-Guizhou Plateau, it offers stunning natural scenery including Jade Dragon Snow Mountain and the peaceful beauty of Lugu Lake. Home to the Naxi, Bai, Yi, and other ethnic minorities with rich cultural traditions.",
+  "coverImage": "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200",
+  "highlights": [
+    "Lijiang Old Town - UNESCO World Heritage",
+    "Jade Dragon Snow Mountain - Stunning peaks",
+    "Lugu Lake - Pristine alpine lake",
+    "Tiger Leaping Gorge - Dramatic canyon",
+    "Shaxi Ancient Town - Authentic Naxi culture"
+  ],
+  "climate": {
+    "type": "Subtropical plateau monsoon",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "15-25C (59-77F)",
+    "avgWinterTemp": "4-15C (39-59F)",
+    "tips": "Spring and autumn are best with mild weather and clear skies. Summer is rainy but lush green. Winter is dry and sunny but cold at night. UV is very strong year-round due to altitude. Jade Dragon Snow Mountain is cold even in summer - bring layers."
+  },
+  "attractions": [
+    {
+      "id": "lijiang-old-town",
+      "name": "丽江古城",
+      "nameEn": "Lijiang Old Town",
+      "category": "cultural",
+      "description": "UNESCO World Heritage site featuring 800 years of Naxi culture, intricate water system with bridges and canals, and traditional wooden architecture.",
+      "address": "Lijiang Old Town, Gucheng District",
+      "coordinates": {
+        "lat": 26.8753,
+        "lng": 100.2356
+      },
+      "openingHours": "Open 24 hours (commercial areas 08:00-22:00)",
+      "ticketPrice": "Free (50 CNY reconstruction fee for some areas)",
+      "recommendedVisitTime": "Half to full day",
+      "highlights": [
+        "Mufu Palace",
+        "Four Heroes Hall",
+        "Sifang Street (Square Street)",
+        "Wangu Tower views"
+      ],
+      "tips": "Stay overnight to experience magical atmosphere. Arrive early morning before shops open for photos. Explore side alleys for authentic Naxi life. The old town is huge - get lost and explore. November-March is less crowded.",
+      "imageUrl": "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200"
+    },
+    {
+      "id": "jade-dragon-snow-mountain",
+      "name": "玉龙雪山",
+      "nameEn": "Jade Dragon Snow Mountain",
+      "category": "natural",
+      "description": "Sacred mountain of the Naxi people with 13 peaks, the highest at 5,596m. Features glaciers, alpine meadows, and stunning views visible from Lijiang.",
+      "address": "Jade Dragon Snow Mountain Scenic Area, 15km north of Lijiang",
+      "coordinates": {
+        "lat": 27.0891,
+        "lng": 100.1753
+      },
+      "openingHours": "06:30-18:00 (varies by season)",
+      "ticketPrice": "100 CNY ( 进山费) + cable car fees (140-180 CNY)",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Jade Dragon Summit (牦牛坪)",
+        "Blue Moon Valley",
+        "Glacier Park cable car",
+        "Yunshan Springs"
+      ],
+      "tips": "Buy oxygen in town before going - expensive on mountain. Altitude sickness is real - take it slow. Book cable car tickets in advance. Go early to avoid clouds. Bring warm clothes even in summer.",
+      "imageUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1200"
+    },
+    {
+      "id": "lugu-lake",
+      "name": "泸沽湖",
+      "nameEn": "Lugu Lake",
+      "category": "natural",
+      "description": "Pristine alpine lake on the border of Yunnan and Sichuan, sacred to the Mosuo and Yi peoples. Known for its tranquil beauty and unique matriarchal culture.",
+      "address": "Lugu Lake, Yunnan's northeastern border",
+      "coordinates": {
+        "lat": 27.6856,
+        "lng": 100.7989
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "100 CNY",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Mosuo cultural villages",
+        "Deer Island",
+        "Piger Island",
+        "Sunrise over lake"
+      ],
+      "tips": "Stay overnight at lakeside guesthouse. Take boat tour at sunrise. Experience Mosuo 'walking marriage' culture. The road is winding - 4 hours from Lijiang. Best seasons: spring and autumn.",
+      "imageUrl": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200"
+    },
+    {
+      "id": "tiger-leaping-gorge",
+      "name": "虎跳峡",
+      "nameEn": "Tiger Leaping Gorge",
+      "category": "natural",
+      "description": "One of the world's deepest river canyons with dramatic 3,900m vertical drop, thundering Yangtze River, and legendary tiger-leaping rock.",
+      "address": "Tiger Leaping Gorge, 60km north of Lijiang",
+      "coordinates": {
+        "lat": 27.2358,
+        "lng": 100.1283
+      },
+      "openingHours": "Open 24 hours (Upper Gorge 07:00-18:00)",
+      "ticketPrice": "45 CNY (Upper Gorge), 65 CNY (both sections)",
+      "recommendedVisitTime": "1-2 days for hiking",
+      "highlights": [
+        "Tiger Leaping Stone",
+        "28 bends viewpoint",
+        "Hiking trails along gorge",
+        "Viewing platform"
+      ],
+      "tips": "The hike is strenuous - fitness required. Best visited April-June and Sept-Nov. The road is dangerous - avoid cycling if inexperienced. Stay at guesthouses along the trail. Local guides recommended.",
+      "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
+    },
+    {
+      "id": "shaxi-ancient-town",
+      "name": "束河古镇",
+      "nameEn": "Shaxi Ancient Town",
+      "category": "cultural",
+      "description": "Less touristy Naxi town compared to Lijiang Old Town, preserving authentic Naxi architecture and traditional way of life. Also called 'Three Lanes' town.",
+      "address": "Shaxi Town, 8km north of Lijiang",
+      "coordinates": {
+        "lat": 26.9083,
+        "lng": 100.1928
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "青龙桥 (Black Dragon Bridge)",
+        "Naxi architecture",
+        "Tea House Square",
+        "Horse caravan history"
+      ],
+      "tips": "Visit in early morning or evening to avoid day-trippers. The tea house culture is authentic. Good for buying Naxi handicrafts without tourist markups. Combine with nearby Jade Dragon Snow Mountain.",
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200"
+    },
+    {
+      "id": "black-dragon-pool",
+      "name": "黑龙潭",
+      "nameEn": "Black Dragon Pool",
+      "category": "cultural",
+      "description": "Historic Naxi garden with the iconic view of Jade Dragon Snow Mountain reflected in the pond. Features traditional Naxi architecture and cultural performances.",
+      "address": "Black Dragon Pool Park, Lijiang",
+      "coordinates": {
+        "lat": 26.8783,
+        "lng": 100.2283
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Reflection of Jade Dragon Mountain",
+        "Five Phoenix Bridge",
+        "Naxi music performances",
+        "Ancient Deyi Hall"
+      ],
+      "tips": "Best photo spot in Lijiang at sunrise when mountain reflection is clear. Naxi ancient music show at 13:30-14:30 and 15:30-16:30 (weather permitting). Bring ID for free entry.",
+      "imageUrl": "https://images.unsplash.com/photo-1586528106954-bce7e51f0d97?w=1200"
+    },
+    {
+      "id": "mufu-palace",
+      "name": "木府",
+      "nameEn": "Mufu Palace",
+      "category": "cultural",
+      "description": "The former residence of the Naxi overlords who ruled Lijiang for 470 years. Known as the 'Mini Forbidden City' for its imperial-style architecture.",
+      "address": "Mufu Lane, Lijiang Old Town",
+      "coordinates": {
+        "lat": 26.8758,
+        "lng": 100.2328
+      },
+      "openingHours": "08:30-18:00",
+      "ticketPrice": "40 CNY (includes guide)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Three Sections layout",
+        "Stone Lion Hall",
+        "Naxi royal history",
+        "360-degree views from roof"
+      ],
+      "tips": "Arrive early to avoid tour groups. The audio guide is worth it for history. The roof offers best Old Town views. Allow time for the whole compound.",
+      "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200"
+    },
+    {
+      "id": "wangchu-lake",
+      "name": "望楚湖",
+      "nameEn": "Wangchu Lake",
+      "category": "natural",
+      "description": "A scenic plateau lake near Lijiang offering serene views of surrounding mountains, less crowded alternative to major attractions.",
+      "address": "Wangchu Lake, Yushu Prefecture",
+      "coordinates": {
+        "lat": 27.1528,
+        "lng": 100.3589
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Lake reflection views",
+        "Yak pastures",
+        "Plateau scenery",
+        "Tibetan villages nearby"
+      ],
+      "tips": "Less visited by tourists. Road is rough - 4WD recommended. Best in autumn. High altitude - take precautions. Authentic Tibetan culture experience.",
+      "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200"
+    },
+    {
+      "id": "lijiang-emblem-photo-spot",
+      "name": "丽江标点观景台",
+      "nameEn": "Lijiang Emblem Photo Spot",
+      "category": "cultural",
+      "description": "The most famous photo location in Lijiang Old Town featuring the emblem with traditional Naxi architecture and Jade Dragon Mountain backdrop.",
+      "address": "Tuo Shui Lane, Lijiang Old Town",
+      "coordinates": {
+        "lat": 26.8739,
+        "lng": 100.2314
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "Classic Naxi architecture photo",
+        "Jade Dragon Mountain backdrop",
+        "Stream and bridges",
+        "Sunrise photos"
+      ],
+      "tips": "Best at sunrise before crowds. Bring tripod for night shots. The spot is small - patience needed for photos without people.",
+      "imageUrl": "https://images.unsplash.com/photo-1526704005302-d05f33e13f31?w=1200"
+    },
+    {
+      "id": "blue-moon-valley",
+      "name": "蓝月谷",
+      "nameEn": "Blue Moon Valley",
+      "category": "natural",
+      "description": "A beautiful glacial valley with bright turquoise waters originating from Jade Dragon Snow Mountain's melting glaciers.",
+      "address": "Blue Moon Valley, Jade Dragon Snow Mountain Scenic Area",
+      "coordinates": {
+        "lat": 27.0856,
+        "lng": 100.1628
+      },
+      "openingHours": "06:30-18:00",
+      "ticketPrice": "Included with Snow Mountain ticket (100 CNY)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Crystal clear blue water",
+        "Waterfall views",
+        "Forest hiking",
+        "Mirror-like reflections"
+      ],
+      "tips": "Electric car from Glacier Park to Blue Moon Valley included. The water is freezing cold - don't wade in. Best photos from the bridge. Combine with Snow Mountain in same day.",
+      "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200"
+    },
+    {
+      "id": "yak-meadow",
+      "name": "牦牛坪",
+      "nameEn": "Yak Meadow",
+      "category": "natural",
+      "description": "High altitude meadow at 3,600m offering closest views of Jade Dragon Snow Mountain peaks and Tibetan yak grazing pastures.",
+      "address": "Yak Meadow, Jade Dragon Snow Mountain",
+      "coordinates": {
+        "lat": 27.1017,
+        "lng": 100.1589
+      },
+      "openingHours": "06:30-18:00",
+      "ticketPrice": "65 CNY (cable car included)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Closest view of peaks",
+        "Tibetan yak herds",
+        "Alpine meadow",
+        "Prayer flags"
+      ],
+      "tips": "Higher altitude than Glacier Park - more oxygen. Yak are large but usually docile. Respect local Tibetan culture. Morning visits have clearer skies.",
+      "imageUrl": "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?w=1200"
+    },
+    {
+      "id": "lijiang-old-town-canals",
+      "name": "丽江古城水系",
+      "nameEn": "Lijiang Old Town Canal System",
+      "category": "cultural",
+      "description": "The ancient water system that gives Lijiang its nickname 'Venice of the East' with streams running through the entire old town.",
+      "address": "Throughout Lijiang Old Town",
+      "coordinates": {
+        "lat": 26.8742,
+        "lng": 100.2333
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours walking",
+      "highlights": [
+        "Sifang Street canals",
+        "Ancient bridges",
+        "Naxi life along water",
+        "Lantern-lit nights"
+      ],
+      "tips": "The water comes from Jade Dragon Mountain. Take a boat tour (50-100 CNY) for different perspective. The streams freeze in winter - charming sight. Don't swim or wash in canals.",
+      "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200"
+    },
+    {
+      "id": "lijiang-ancient-music",
+      "name": "纳西古乐会",
+      "nameEn": "Naxi Ancient Music Performance",
+      "category": "cultural",
+      "description": "Traditional Naxi ancient music performances, some said to date back 1,000 years, performed by elderly musicians in historic venues.",
+      "address": "Various venues in Old Town",
+      "coordinates": {
+        "lat": 26.8756,
+        "lng": 100.2344
+      },
+      "openingHours": "Shows at 20:00 nightly",
+      "ticketPrice": "100-160 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Ancient Naxi instruments",
+        "Traditional melodies",
+        "Elderly musicians",
+        "Historic venues"
+      ],
+      "tips": "Book through hotel or directly at venue. The show in Black Dragon Pool area is most famous. Performances are cultural, not entertainment. Arrive early.",
+      "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=1200"
+    },
+    {
+      "id": "lijiang-needle-peak",
+      "name": "文笔峰",
+      "nameEn": "Lijiang Needle Peak",
+      "category": "natural",
+      "description": "A dramatic limestone peak visible from Lijiang, sacred to local Naxi and Tibetan peoples with ancient temples at its base.",
+      "address": "15km southeast of Lijiang",
+      "coordinates": {
+        "lat": 26.8058,
+        "lng": 100.3589
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Towering needle peak",
+        "Base temples",
+        "Trekking trails",
+        "Valley views"
+      ],
+      "tips": "Less visited by tourists. The temples at base are authentic. Trekking is moderate difficulty. Go with local guide. Best light for photos in morning.",
+      "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
+    },
+    {
+      "id": "shimmering-lake",
+      "name": "拉市海",
+      "nameEn": "Lashi Sea (Shimmering Lake)",
+      "category": "natural",
+      "description": "A scenic highland lake and wetland reserve popular for horse riding, boat tours, and bird watching, with Naxi and Yi villages nearby.",
+      "address": "Lashi Sea, 15km west of Lijiang",
+      "coordinates": {
+        "lat": 26.8189,
+        "lng": 100.1089
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30 CNY (lake),骑马另计",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Horse riding through villages",
+        "Wetland bird watching",
+        "Boat tours on lake",
+        "Tea garden visits"
+      ],
+      "tips": "Be careful of overcharging by horse guides - bargain hard. The horse ride through Yi villages is unique. Winter brings migratory birds. The boat tour is relaxing.",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200"
+    },
+    {
+      "id": "yuhu-village",
+      "name": "玉湖村",
+      "nameEn": "Yuhu Village",
+      "category": "cultural",
+      "description": "Traditional Naxi village at foot of Jade Dragon Snow Mountain, known for its stone houses, trout fishing, and Joseph Rock's former residence.",
+      "address": "Yuhu Village, 15km north of Lijiang",
+      "coordinates": {
+        "lat": 26.9956,
+        "lng": 100.2028
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some attractions may charge)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Traditional stone houses",
+        "Joseph Rock's house",
+        "Trout fishing",
+        "Mountain views"
+      ],
+      "tips": "Quiet village escape from old town crowds. Joseph Rock was a famous botanist who lived here. Try local trout dish. The stone houses are unique.",
+      "imageUrl": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=1200"
+    },
+    {
+      "id": "dongba-valley",
+      "name": "东巴谷",
+      "nameEn": "Dongba Valley",
+      "category": "cultural",
+      "description": "Cultural theme park showcasing Naxi Dongba culture, including traditional crafts, calligraphy, and the only surviving pictographic writing system.",
+      "address": "Dongba Valley, 15km north of Lijiang",
+      "coordinates": {
+        "lat": 26.9822,
+        "lng": 100.1839
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "60 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Dongba pictographic writing",
+        "Traditional crafts workshops",
+        "Ethnic performances",
+        "Naxi wedding ceremonies"
+      ],
+      "tips": "Morning visits for live performances. Try writing your name in Dongba script. The wedding show is popular. Good for learning about Naxi culture.",
+      "imageUrl": "https://images.unsplash.com/photo-1535347660746-2d30b20c8e08?w=1200"
+    },
+    {
+      "id": "yongling-ancient-city",
+      "name": "永灵古城镇",
+      "nameEn": "Yongling Ancient City",
+      "category": "cultural",
+      "description": "An ancient city with over 1,500 years of history, featuring well-preserved architecture from Tang, Song, and Ming dynasties.",
+      "address": "Yongling County, 80km from Lijiang",
+      "coordinates": {
+        "lat": 26.4856,
+        "lng": 100.7528
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Ancient Tang architecture",
+        "Ming Dynasty temples",
+        "Local markets",
+        "Traditional crafts"
+      ],
+      "tips": "Off the beaten path - few tourists. Combine with road trip. The local market is colorful on 3rd, 8th, 13th, 18th, 23rd, 28th of lunar month. Authentic ancient China experience.",
+      "imageUrl": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1200"
+    },
+    {
+      "id": "shaxi-huangshan",
+      "name": "沙溪黄山路",
+      "nameEn": "Shaxi Huangshan Road",
+      "category": "cultural",
+      "description": "A historic tea-horse road route near Shaxi featuring ancient bridges, temples, and landscapes unchanged for centuries.",
+      "address": "Shaxi Ancient Town area",
+      "coordinates": {
+        "lat": 26.9122,
+        "lng": 100.1856
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient tea horse road",
+        "Stone bridges",
+        "Mountain scenery",
+        "Tibetan villages"
+      ],
+      "tips": "The tea horse road history is fascinating. Cycling is the best way to explore. The road connects Shaxi to Lijiang historically. Bring snacks and water.",
+      "imageUrl": "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=1200"
+    },
+    {
+      "id": "zhong-ji-meadow",
+      "name": "终极牧场",
+      "nameEn": "Zhongji Meadow",
+      "category": "natural",
+      "description": "A pristine alpine meadow near Lugu Lake offering stunning views, Tibetan nomad experiences, and star-filled night skies.",
+      "address": "Zhongji, near Lugu Lake",
+      "coordinates": {
+        "lat": 27.7256,
+        "lng": 100.8189
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "Alpine meadow views",
+        "Tibetan nomad camps",
+        "Stargazing at night",
+        "Wildflower fields"
+      ],
+      "tips": "High altitude - bring oxygen. Stay overnight for star experiences. The nomad camps offer authentic homestays. Best accessed by local guide. Summer has wildflowers.",
+      "imageUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200"
+    },
+    {
+      "id": "lijiang-we步行街",
+      "name": "五一街",
+      "nameEn": "Wuyi Street (Walking Street)",
+      "category": "cultural",
+      "description": "The main pedestrian street in Lijiang Old Town with shops, restaurants, bars, and traditional Naxi architecture.",
+      "address": "Wuyi Street, Lijiang Old Town",
+      "coordinates": {
+        "lat": 26.8761,
+        "lng": 100.2339
+      },
+      "openingHours": "Shops 09:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional Naxi shops",
+        "Local snack vendors",
+        "Nightlife scene",
+        "Street performances"
+      ],
+      "tips": "Great for evening strolls. Try local snacks like rose cake and yak meat. The bars have live music. Compare prices before buying. Negotiate at smaller shops.",
+      "imageUrl": "https://images.unsplash.com/photo-1555992336-03a23c7b20ee?w=1200"
+    },
+    {
+      "id": "lijiang-impression-show",
+      "name": "印象丽江",
+      "nameEn": "Impression Lijiang Show",
+      "category": "cultural",
+      "description": "Epic outdoor performance directed by Zhang Yimou at the foot of Jade Dragon Snow Mountain, featuring 500 local actors and ethnic culture.",
+      "address": "Ganzi Village, near Jade Dragon Snow Mountain",
+      "coordinates": {
+        "lat": 27.0722,
+        "lng": 100.1628
+      },
+      "openingHours": "Shows at 14:00 and 16:30 (weather permitting)",
+      "ticketPrice": "280-350 CNY (includes transport)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Zhang Yimou directed",
+        "Mountain backdrop",
+        "500 performers",
+        "Ethnic music and dance"
+      ],
+      "tips": "Book through hotel or tour desk. Weather dependent - may cancel in rain. Bring jacket even in summer. Arrive 30 min early.",
+      "imageUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1200"
+    },
+    {
+      "id": "fangguang-ancient-town",
+      "name": "方广古镇",
+      "nameEn": "Fanguang Ancient Town",
+      "category": "cultural",
+      "description": "Well-preserved ancient town from the Tang Dynasty featuring Buddhist temples, old bridges, and traditional architecture.",
+      "address": "Fanguang Town, 50km from Lijiang",
+      "coordinates": {
+        "lat": 26.7533,
+        "lng": 100.4128
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Tang Dynasty architecture",
+        "Buddhist temples",
+        "Ancient bridges",
+        "Local markets"
+      ],
+      "tips": "Off the beaten path. The temple is active with monks. Combine with nearby hot spring. Authentic ancient China feel.",
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200"
+    },
+    {
+      "id": "shahe-wine-town",
+      "name": "沙河酒庄",
+      "nameEn": "Shahe Wine Village",
+      "category": "cultural",
+      "description": "Mountain village famous for producing Yunnan highland wine, with vineyards, traditional wine cellars, and tasting experiences.",
+      "address": "Shahe Village, 30km from Lijiang",
+      "coordinates": {
+        "lat": 26.9256,
+        "lng": 100.1856
+      },
+      "openingHours": "09:00-18:00 (tasting by appointment)",
+      "ticketPrice": "Free (wine tasting extra)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Yunnan highland wine",
+        "Traditional cellars",
+        "Vineyard views",
+        "Wine tasting"
+      ],
+      "tips": "Best for wine enthusiasts. Book tasting in advance. The wine is unique - fruity and smooth. Buy some to take home.",
+      "imageUrl": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200"
+    },
+    {
+      "id": "heilong-temple",
+      "name": "黑龙古寺",
+      "nameEn": "Heilong Ancient Temple",
+      "category": "cultural",
+      "description": "Ancient Naxi Buddhist temple perched on a hill with panoramic views of Lijiang Old Town and Jade Dragon Mountain.",
+      "address": "Heilong Temple Hill, Lijiang",
+      "coordinates": {
+        "lat": 26.8822,
+        "lng": 100.2417
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "15 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Old town views",
+        "Naxi Buddhist art",
+        "Peaceful location",
+        "Ancient cypress trees"
+      ],
+      "tips": "Best at sunrise when mountain is visible. The climb takes 15 minutes. Ancient trees are impressive. Very quiet mornings.",
+      "imageUrl": "https://images.unsplash.com/photo-1564493678336-c27c16e0c9d1?w=1200"
+    },
+    {
+      "id": "lijiang-art-museum",
+      "name": "丽江古乐团",
+      "nameEn": "Lijiang Naxi Ancient Music Orchestra",
+      "category": "cultural",
+      "description": "Famous performance venue for traditional Naxi ancient music, featuring musicians some over 80 years old.",
+      "address": "Muo's House, Lijiang Old Town",
+      "coordinates": {
+        "lat": 26.8756,
+        "lng": 100.2356
+      },
+      "openingHours": "Shows at 20:00 nightly",
+      "ticketPrice": "100-160 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Ancient instruments",
+        "800-year-old music",
+        "Elderly musicians",
+        "Historic venue"
+      ],
+      "tips": "Book at hotel or directly. The music is ancient - expect traditional sounds. Arrive early for good seats. Cultural experience.",
+      "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=1200"
+    },
+    {
+      "id": "baba-hiking-trail",
+      "name": "巴巴藏族古道",
+      "nameEn": "Baba Tibetan Trail",
+      "category": "natural",
+      "description": "Ancient hiking trail connecting Tibetan villages with stunning mountain views, prayer flags, and authentic culture.",
+      "address": "Baba Village area, 40km from Lijiang",
+      "coordinates": {
+        "lat": 27.0656,
+        "lng": 100.2989
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Mountain views",
+        "Prayer flags",
+        "Tibetan villages",
+        "Traditional culture"
+      ],
+      "tips": "Hiking experience required. Local guide recommended. Bring water and snacks. Best in autumn. The trail is ancient.",
+      "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
+    },
+    {
+      "id": "lijiang-silk-museum",
+      "name": "纳西扎染博物馆",
+      "nameEn": "Naxi Tie-Dye Museum",
+      "category": "cultural",
+      "description": "Museum and workshop showcasing traditional Naxi tie-dye techniques with hands-on experience opportunities.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8742,
+        "lng": 100.2317
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "50 CNY (includes workshop)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional tie-dye",
+        "Hands-on workshop",
+        "Naxi patterns",
+        "Souvenir making"
+      ],
+      "tips": "Book ahead for workshop. Make your own tie-dye item to take home. The patterns are traditional Naxi designs. Good activity for rainy days.",
+      "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "naxi-family-dinner",
+      "name": "纳西妈妈家",
+      "nameEn": "Naxi Family Kitchen",
+      "cuisine": "Naxi",
+      "priceRange": "50-100 CNY",
+      "description": "Traditional Naxi family-run restaurant with authentic home-cooked dishes and warm atmosphere in old town alley.",
+      "address": "M Street, Lijiang Old Town",
+      "coordinates": {
+        "lat": 26.8756,
+        "lng": 100.2342
+      },
+      "hours": "10:00-22:00",
+      "highlights": [
+        "Naxi family recipes",
+        "Home atmosphere",
+        "Rose cake",
+        "Maqia (焖鸡)"
+      ],
+      "tips": "Best for authentic Naxi food experience. The family is very welcoming. Try the 'Naxi combo' set meal. Arrive before 7pm for dinner.",
+      "dishHighlights": [
+        "Naxi family recipes",
+        "Home atmosphere",
+        "Rose cake"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=800"
+    },
+    {
+      "id": "yak-meat-restaurant",
+      "name": "牦牛肉火锅城",
+      "nameEn": "Yak Meat Hotpot City",
+      "cuisine": "Yak",
+      "priceRange": "80-150 CNY",
+      "description": "Famous restaurant specializing in yak meat hotpot and grilled yak meat dishes, using local highland yaks.",
+      "address": "New City Area, Lijiang",
+      "coordinates": {
+        "lat": 26.8833,
+        "lng": 100.2389
+      },
+      "hours": "10:30-22:00",
+      "highlights": [
+        "Fresh yak meat hotpot",
+        "Grilled yak meat",
+        "Yak sausage",
+        "Highland vegetables"
+      ],
+      "tips": "Yak meat is lean and healthy. The hotpot broth is delicious. Share a hotpot between two people. Reservation recommended for dinner.",
+      "dishHighlights": [
+        "Fresh yak meat hotpot",
+        "Grilled yak meat",
+        "Yak sausage"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a3936d?w=800"
+    },
+    {
+      "id": "old-town-snacks",
+      "name": "古城小吃街",
+      "nameEn": "Old Town Snacks",
+      "cuisine": "Street Food",
+      "priceRange": "20-50 CNY",
+      "description": "Night market in old town with various Yunnan and Lijiang local snacks including grilled meats, noodles, and sweets.",
+      "address": "Near Sifang Street, Lijiang Old Town",
+      "coordinates": {
+        "lat": 26.8744,
+        "lng": 100.2339
+      },
+      "hours": "17:00-23:00",
+      "highlights": [
+        "Rose cake (鲜花饼)",
+        "Yak meat skewers",
+        "Rice cakes",
+        "Fresh fruit juice"
+      ],
+      "tips": "Great for trying variety of snacks. Sample a bit of everything. Bring tissue - no napkins often. Watch hygiene - pick stalls with locals. Cash preferred.",
+      "dishHighlights": [
+        "Rose cake (鲜花饼)",
+        "Yak meat skewers",
+        "Rice cakes"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 20,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"
+    },
+    {
+      "id": "lijiang-chicken",
+      "name": "腊排骨火锅",
+      "nameEn": "Lijiang Cured Pork Ribs Hotpot",
+      "cuisine": "Naxi",
+      "priceRange": "60-100 CNY",
+      "description": "Iconic Lijiang dish featuring fermented pork ribs (腊排骨) slow-cooked in broth with local vegetables.",
+      "address": "Old Town and New Town locations",
+      "coordinates": {
+        "lat": 26.8783,
+        "lng": 100.2356
+      },
+      "hours": "10:00-22:00",
+      "highlights": [
+        "Cured pork ribs",
+        "Slow-cooked broth",
+        "Local mushrooms",
+        "Tofu skin"
+      ],
+      "tips": "The signature Lijiang dish - must try. Many restaurants serve it - ask locals for recommendations. The broth is salty - dilute with water. Feeds 2-3 people per pot.",
+      "dishHighlights": [
+        "Cured pork ribs",
+        "Slow-cooked broth",
+        "Local mushrooms"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+    },
+    {
+      "id": "highland-barley",
+      "name": "高原青稞屋",
+      "nameEn": "Highland Barley House",
+      "cuisine": "Tibetan",
+      "priceRange": "50-90 CNY",
+      "description": "Tibetan restaurant serving highland barley noodles, yak butter tea, and traditional Tibetan dishes in cozy atmosphere.",
+      "address": "Near Black Dragon Pool, Lijiang",
+      "coordinates": {
+        "lat": 26.8778,
+        "lng": 100.2294
+      },
+      "hours": "09:00-21:00",
+      "highlights": [
+        "Barley noodles",
+        "Yak butter tea",
+        "Tsampa (青稞糌粑)",
+        "Mongolian hotpot"
+      ],
+      "tips": "Good introduction to Tibetan cuisine. The butter tea is an acquired taste - try it. The hotpot is milder than Sichuan style. Good for cold nights.",
+      "dishHighlights": [
+        "Barley noodles",
+        "Yak butter tea",
+        "Tsampa (青稞糌粑)"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800"
+    },
+    {
+      "id": "naxi-ancient-music-dinner",
+      "name": "纳西古乐宴",
+      "nameEn": "Naxi Ancient Music Dinner Show",
+      "cuisine": "Naxi + Performance",
+      "priceRange": "150-250 CNY",
+      "description": "Dinner with traditional Naxi ancient music performance, combining authentic local cuisine with cultural experience.",
+      "address": "Old Town venues",
+      "coordinates": {
+        "lat": 26.8758,
+        "lng": 100.2344
+      },
+      "hours": "Dinner show at 18:30",
+      "highlights": [
+        "Traditional music",
+        "Naxi cuisine set meal",
+        "Cultural performance",
+        "Historic venue"
+      ],
+      "tips": "Book through hotel or tourist info. More expensive than regular dining but includes show. Arrive on time for performance. Good for first-time visitors.",
+      "dishHighlights": [
+        "Traditional music",
+        "Naxi cuisine set meal",
+        "Cultural performance"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 150,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800"
+    },
+    {
+      "id": "flower-bird-market",
+      "name": "花鸟市场小吃",
+      "nameEn": "Flower and Bird Market Snacks",
+      "cuisine": "Local",
+      "priceRange": "10-30 CNY",
+      "description": "Local market serving authentic Lijiang breakfast foods and snacks, popular with locals since dawn.",
+      "address": "Flower and Bird Market, New City",
+      "coordinates": {
+        "lat": 26.8822,
+        "lng": 100.2417
+      },
+      "hours": "06:00-12:00",
+      "highlights": [
+        "Soy milk and油条",
+        "Naxi pastries",
+        "Fresh flowers",
+        "Local atmosphere"
+      ],
+      "tips": "Best for breakfast. Arrive before 9am for freshest items. Very local - English menu unlikely. Great photo opportunities of market life.",
+      "dishHighlights": [
+        "Soy milk and油条",
+        "Naxi pastries",
+        "Fresh flowers"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 10,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800"
+    },
+    {
+      "id": "cafe-lijiang",
+      "name": "丽江咖啡馆",
+      "nameEn": "Cafe Lijiang",
+      "cuisine": "Western/Cafe",
+      "priceRange": "30-60 CNY",
+      "description": "Western-style cafe near old town serving coffee, pastries, and light meals. Popular with expats and tourists.",
+      "address": "Wuyi Street, Lijiang",
+      "coordinates": {
+        "lat": 26.8761,
+        "lng": 100.2339
+      },
+      "hours": "08:00-23:00",
+      "highlights": [
+        "Fresh coffee",
+        "Apple pie",
+        "Western breakfast",
+        "WiFi available"
+      ],
+      "tips": "Good for breakfast when tired of Chinese food. The apple pie is excellent. WiFi and charging available. Popular with digital nomads.",
+      "dishHighlights": [
+        "Fresh coffee",
+        "Apple pie",
+        "Western breakfast"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 30,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800"
+    },
+    {
+      "id": "mushroom-hotpot-lijiang",
+      "name": "野生菌火锅",
+      "nameEn": "Wild Mushroom Hotpot",
+      "cuisine": "Yunnan Mushroom",
+      "priceRange": "100-200 CNY",
+      "description": "Premium wild mushroom hotpot using seasonal varieties from Yunnan highlands, served with safety certification.",
+      "address": "New City, Lijiang",
+      "coordinates": {
+        "lat": 26.8856,
+        "lng": 100.2422
+      },
+      "hours": "11:00-22:00",
+      "highlights": [
+        "Seasonal wild mushrooms",
+        "Safety certified",
+        "Hotpot set meals",
+        "Matsutake (when available)"
+      ],
+      "tips": "Only during mushroom season (June-Nov). Price varies by mushroom type. The restaurant verifies mushroom safety. Reservation required.",
+      "dishHighlights": [
+        "Seasonal wild mushrooms",
+        "Safety certified",
+        "Hotpot set meals"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 100,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800"
+    },
+    {
+      "id": "naxi-pavilion",
+      "name": "纳西阁",
+      "nameEn": "Naxi Pavilion",
+      "cuisine": "Naxi Fine Dining",
+      "priceRange": "80-150 CNY",
+      "description": "Upscale Naxi restaurant in traditional courtyard setting serving refined local cuisine with elegant presentation.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8767,
+        "lng": 100.2356
+      },
+      "hours": "10:30-21:30",
+      "highlights": [
+        "Courtyard dining",
+        "Refined Naxi dishes",
+        "Traditional atmosphere",
+        "Evening cultural show"
+      ],
+      "tips": "Best for special occasions. The courtyard setting is beautiful. Book window seats for atmosphere. Good wine selection.",
+      "dishHighlights": [
+        "Courtyard dining",
+        "Refined Naxi dishes",
+        "Traditional atmosphere"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800"
+    },
+    {
+      "id": "bridge-noodle",
+      "name": "桥头米线",
+      "nameEn": "Bridge Noodles",
+      "cuisine": "Yunnan Noodles",
+      "priceRange": "20-40 CNY",
+      "description": "Local favorite for rice noodles (米线) in rich broth, famous in Lijiang for generous portions and fresh ingredients.",
+      "address": "Near Black Dragon Bridge, Old Town",
+      "coordinates": {
+        "lat": 26.8767,
+        "lng": 100.2306
+      },
+      "hours": "07:00-14:00",
+      "highlights": [
+        "Fast service",
+        "Rich broth",
+        "Fresh ingredients",
+        "Local breakfast spot"
+      ],
+      "tips": "Popular with locals - line up at lunch. Quick and cheap. The beef noodle is good. Open only until 2pm - plan accordingly.",
+      "dishHighlights": [
+        "Fast service",
+        "Rich broth",
+        "Fresh ingredients"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 20,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800"
+    },
+    {
+      "id": "lijiang-bbq-street",
+      "name": "丽江烧烤一条街",
+      "nameEn": "Lijiang BBQ Street",
+      "cuisine": "BBQ",
+      "priceRange": "40-80 CNY",
+      "description": "Street lined with BBQ vendors serving grilled meats, vegetables, and skewers in casual outdoor setting.",
+      "address": "Near New City, Lijiang",
+      "coordinates": {
+        "lat": 26.8833,
+        "lng": 100.2406
+      },
+      "hours": "18:00-02:00",
+      "highlights": [
+        "Grilled lamb skewers",
+        "Yak meat BBQ",
+        "Local beer",
+        "Street atmosphere"
+      ],
+      "tips": "Best after dark. Try various skewers - order small amounts. Local Lijiang beer (丽江啤酒) is good. Informal and fun atmosphere.",
+      "dishHighlights": [
+        "Grilled lamb skewers",
+        "Yak meat BBQ",
+        "Local beer"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 40,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800"
+    },
+    {
+      "id": "silk-road-restaurant",
+      "name": "丝绸之路餐厅",
+      "nameEn": "Silk Road Restaurant",
+      "cuisine": "Muslim/Northwest Chinese",
+      "priceRange": "50-90 CNY",
+      "description": "Restaurant serving Muslim-influenced cuisine from China's northwest, including hand-pulled noodles and lamb dishes.",
+      "address": "New City, Lijiang",
+      "coordinates": {
+        "lat": 26.8844,
+        "lng": 100.2378
+      },
+      "hours": "10:00-22:00",
+      "highlights": [
+        "Hand-pulled noodles",
+        "Lamb kebabs",
+        "Dried beef",
+        "Muslim-style flatbread"
+      ],
+      "tips": "Good alternative to Yunnan food. The hand-pulled noodles are freshly made. No pork - Muslim restaurant. Large portions.",
+      "dishHighlights": [
+        "Hand-pulled noodles",
+        "Lamb kebabs",
+        "Dried beef"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
+    },
+    {
+      "id": "cloud-dining",
+      "name": "云雪岭餐厅",
+      "nameEn": "Cloud Dining",
+      "cuisine": "Yunnan Fusion",
+      "priceRange": "80-150 CNY",
+      "description": "Modern Yunnan fusion restaurant using local ingredients with contemporary cooking techniques in elegant setting.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8758,
+        "lng": 100.2361
+      },
+      "hours": "11:00-21:30",
+      "highlights": [
+        "Fusion presentations",
+        "Local ingredients",
+        "Creative dishes",
+        "Rooftop seating"
+      ],
+      "tips": "Good when seeking refined dining. The presentations are Instagram-worthy. Book rooftop tables for old town views. Pricey but quality.",
+      "dishHighlights": [
+        "Fusion presentations",
+        "Local ingredients",
+        "Creative dishes"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800"
+    },
+    {
+      "id": "jade-dragon-restaurant",
+      "name": "玉龙山脚下农家乐",
+      "nameEn": "Jade Dragon Mountain Farmhouse",
+      "cuisine": "Farm-to-table",
+      "priceRange": "50-80 CNY",
+      "description": "Farm restaurant at foot of Jade Dragon Mountain serving fresh vegetables, free-range chickens, and local specialties.",
+      "address": "Near Jade Dragon Snow Mountain",
+      "coordinates": {
+        "lat": 27.0622,
+        "lng": 100.1689
+      },
+      "hours": "10:00-20:00",
+      "highlights": [
+        "Fresh farm vegetables",
+        "Free-range chicken",
+        "Mountain views",
+        "Rustic atmosphere"
+      ],
+      "tips": "Best combined with mountain visit. The chicken is excellent. The view of mountain from table is special. Ask locally for directions.",
+      "dishHighlights": [
+        "Fresh farm vegetables",
+        "Free-range chicken",
+        "Mountain views"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=800"
+    },
+    {
+      "id": "materestaurant",
+      "name": "妈妈餐厅",
+      "nameEn": "Mama's Restaurant",
+      "cuisine": "Home Style",
+      "priceRange": "40-70 CNY",
+      "description": "Simple home-style restaurant run by local Naxi family, serving honest home-cooked food without tourist markups.",
+      "address": "Old Town alley, Lijiang",
+      "coordinates": {
+        "lat": 26.8744,
+        "lng": 100.2358
+      },
+      "hours": "10:00-21:00",
+      "highlights": [
+        "Home cooking",
+        "Local family",
+        "Honest prices",
+        "Naxi dishes"
+      ],
+      "tips": "Hidden in old town alleys - explore to find. The family doesn't speak much English. Point at what others are eating. Authentic local experience.",
+      "dishHighlights": [
+        "Home cooking",
+        "Local family",
+        "Honest prices"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 40,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1537021097268-08df5db09d34?w=800"
+    },
+    {
+      "id": "lijiang-hotpot-king",
+      "name": "丽江火锅王",
+      "nameEn": "Lijiang Hotpot King",
+      "cuisine": "Sichuan/Lijiang Hotpot",
+      "priceRange": "70-120 CNY",
+      "description": "Popular hotpot restaurant combining Sichuan-style and local Lijiang broths with quality meat and vegetable selections.",
+      "address": "New City Area",
+      "coordinates": {
+        "lat": 26.8844,
+        "lng": 100.2417
+      },
+      "hours": "10:00-23:00",
+      "highlights": [
+        "Dual-flavor pot",
+        "Quality beef slices",
+        "All-you-can-eat options",
+        "Self-mixing sauces"
+      ],
+      "tips": "Very popular with locals. All-you-can-eat is good value on weekends. The dual-flavor pot is recommended. Bring appetite.",
+      "dishHighlights": [
+        "Dual-flavor pot",
+        "Quality beef slices",
+        "All-you-can-eat options"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 70,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?w=800"
+    },
+    {
+      "id": "old-town-teahouse",
+      "name": "古城茶馆",
+      "nameEn": "Old Town Teahouse",
+      "cuisine": "Tea House",
+      "priceRange": "20-50 CNY",
+      "description": "Traditional Naxi teahouse in old town courtyard serving Yunnan pu'er tea, flower tea, and light snacks.",
+      "address": "Old Town courtyard",
+      "coordinates": {
+        "lat": 26.8761,
+        "lng": 100.2339
+      },
+      "hours": "09:00-22:00",
+      "highlights": [
+        "Pu'er tea",
+        "Rose flower tea",
+        "Traditional setting",
+        "Naxi architecture"
+      ],
+      "tips": "Good for afternoon rest. The pu'er is authentic Yunnan tea. Sit in courtyard for atmosphere. Ask for tea tasting flight.",
+      "dishHighlights": [
+        "Pu'er tea",
+        "Rose flower tea",
+        "Traditional setting"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 20,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800"
+    },
+    {
+      "id": "tibetan-restaurant-lijiang",
+      "name": "藏民人家",
+      "nameEn": "Tibetan Family",
+      "cuisine": "Tibetan",
+      "priceRange": "50-90 CNY",
+      "description": "Authentic Tibetan-run restaurant serving highland cuisine including tsampa, yak meat, and barley wine.",
+      "address": "Near Jade Dragon Mountain",
+      "coordinates": {
+        "lat": 27.0556,
+        "lng": 100.1789
+      },
+      "hours": "10:00-21:00",
+      "highlights": [
+        "Yak meat dishes",
+        "Tsampa (青稞粉)",
+        "Tibetan hospitality",
+        "Mountain views"
+      ],
+      "tips": "Best after Snow Mountain visit. The Tibetan family is very welcoming. Try tsampa with yak butter. The yak meat stew is hearty.",
+      "dishHighlights": [
+        "Yak meat dishes",
+        "Tsampa (青稞粉)",
+        "Tibetan hospitality"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800"
+    },
+    {
+      "id": "lijiang-pork-ribs-king",
+      "name": "丽江腊排骨大王",
+      "nameEn": "Lijiang Cured Pork Ribs King",
+      "cuisine": "Naxi",
+      "priceRange": "60-100 CNY",
+      "description": "The most famous restaurant for Lijiang's signature cured pork ribs hotpot, known for authentic recipe and quality ingredients.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8747,
+        "lng": 100.2344
+      },
+      "hours": "10:30-22:00",
+      "highlights": [
+        "Original cured pork ribs",
+        "Traditional recipe",
+        "Local favorite",
+        "Rich broth"
+      ],
+      "tips": "Best known for cured pork ribs hotpot. The broth is salty - dilute with water. Share pot between 2-3 people. Arrive early to avoid queues.",
+      "dishHighlights": [
+        "Cured pork ribs hotpot",
+        "Local mushrooms",
+        "Tofu skin"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4.5,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800"
+    },
+    {
+      "id": "lijiang-mushroom-garden",
+      "name": "丽江菌菇苑",
+      "nameEn": "Lijiang Mushroom Garden",
+      "cuisine": "Wild Mushroom",
+      "priceRange": "100-200 CNY",
+      "description": "Premium wild mushroom hotpot restaurant with seasonal varieties from Yunnan highlands, safety-certified and quality guaranteed.",
+      "address": "New City, Lijiang",
+      "coordinates": {
+        "lat": 26.8847,
+        "lng": 100.2417
+      },
+      "hours": "11:00-22:00 (seasonal: Jun-Nov)",
+      "highlights": [
+        "Seasonal wild mushrooms",
+        "Safety certified",
+        "Premium hotpot sets",
+        "Matsutake when available"
+      ],
+      "tips": "Only open during mushroom season. Book in advance. Ask about today's mushroom selection. Price varies by mushroom type.",
+      "dishHighlights": [
+        "Matsutake hotpot",
+        "Porcini mushroom",
+        "Seasonal variety"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4.5,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 120,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800"
+    },
+    {
+      "id": "lijiang-rooftop-cafe",
+      "name": "丽江天台咖啡馆",
+      "nameEn": "Lijiang Rooftop Cafe",
+      "cuisine": "Western/Cafe",
+      "priceRange": "30-60 CNY",
+      "description": "Popular cafe with rooftop views of Lijiang Old Town and Jade Dragon Mountain, serving coffee, Western food, and cocktails.",
+      "address": "Old Town rooftops, Lijiang",
+      "coordinates": {
+        "lat": 26.8761,
+        "lng": 100.2333
+      },
+      "hours": "09:00-23:00",
+      "highlights": [
+        "Rooftop views",
+        "Mountain backdrop",
+        "Good coffee",
+        "Western breakfast"
+      ],
+      "tips": "Best for sunset views. Arrive early to claim rooftop seats. Good WiFi for digital nomads. Popular with expats and tourists.",
+      "dishHighlights": [
+        "Cappuccino",
+        "Apple crumble",
+        "Western breakfast set"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 35,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
+    },
+    {
+      "id": "lijiang-yak-butter-tea",
+      "name": "酥油茶馆",
+      "nameEn": "Yak Butter Tea House",
+      "cuisine": "Tibetan",
+      "priceRange": "20-50 CNY",
+      "description": "Authentic Tibetan teahouse serving yak butter tea, tsampa, and traditional Tibetan snacks in traditional setting.",
+      "address": "Near Black Dragon Pool, Lijiang",
+      "coordinates": {
+        "lat": 26.8783,
+        "lng": 100.2289
+      },
+      "hours": "09:00-21:00",
+      "highlights": [
+        "Yak butter tea",
+        "Tsampa (青稞粉)",
+        "Tibetan atmosphere",
+        "Traditional setting"
+      ],
+      "tips": "Good introduction to Tibetan culture. The butter tea is salty - acquired taste. Try tsampa with honey. Very authentic experience.",
+      "dishHighlights": [
+        "Yak butter tea",
+        "Tsampa",
+        "Tibetan barley cakes"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 25,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800"
+    },
+    {
+      "id": "old-town-breakfast",
+      "name": "古城早餐店",
+      "nameEn": "Old Town Breakfast Shop",
+      "cuisine": "Local Breakfast",
+      "priceRange": "10-30 CNY",
+      "description": "Local breakfast spot serving authentic Naxi morning dishes including soybean milk, fried dough sticks, and steamed buns.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8758,
+        "lng": 100.2356
+      },
+      "hours": "06:00-11:00",
+      "highlights": [
+        "Soybean milk",
+        "Fried dough sticks",
+        "Steamed buns",
+        "Local atmosphere"
+      ],
+      "tips": "Best breakfast in old town. Opens very early. Very local - English menu unlikely. Great for authentic local experience.",
+      "dishHighlights": [
+        "Soybean milk with fried dough",
+        "Steamed buns with lotus paste",
+        "Naxi pastries"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 15,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1570014623631-5d3c83b91f58?w=800"
+    },
+    {
+      "id": "naxi-grandma-kitchen",
+      "name": "纳西婆婆厨房",
+      "nameEn": "Naxi Grandma Kitchen",
+      "cuisine": "Naxi Home Style",
+      "priceRange": "40-80 CNY",
+      "description": "Family-run restaurant with grandmother cooking traditional Naxi dishes using recipes passed down through generations.",
+      "address": "Old Town alley, Lijiang",
+      "coordinates": {
+        "lat": 26.8753,
+        "lng": 100.2328
+      },
+      "hours": "10:30-21:00",
+      "highlights": [
+        "Grandmother's recipes",
+        "Home atmosphere",
+        "Traditional cooking",
+        "Authentic Naxi food"
+      ],
+      "tips": "Hidden gem in old town. The grandmother cooks everything herself. No English menu - point at what others are eating. Very authentic.",
+      "dishHighlights": [
+        "Naxi braised pork",
+        "Home-style vegetables",
+        "Traditional soup"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4.5,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 45,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1553899860-3d2b46c6f0c7?w=800"
+    },
+    {
+      "id": "snow-mountain-view-restaurant",
+      "name": "雪山观景餐厅",
+      "nameEn": "Snow Mountain View Restaurant",
+      "cuisine": "Yunnan",
+      "priceRange": "80-150 CNY",
+      "description": "Restaurant at foot of Jade Dragon Snow Mountain with stunning mountain views from large windows, serving local cuisine.",
+      "address": "Yuhu Village, near Jade Dragon",
+      "coordinates": {
+        "lat": 26.9944,
+        "lng": 100.2044
+      },
+      "hours": "10:00-20:00",
+      "highlights": [
+        "Mountain views",
+        "Local cuisine",
+        "Fresh ingredients",
+        "Scenic dining"
+      ],
+      "tips": "Best combined with snow mountain visit. Book window table for views. The view while eating is unforgettable. Prices are touristy.",
+      "dishHighlights": [
+        "Trout from local stream",
+        "Free-range chicken",
+        "Wild vegetable dishes"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800"
+    },
+    {
+      "id": "lijiang-martial-arts",
+      "name": "丽江武林食府",
+      "nameEn": "Lijiang Martial Arts Restaurant",
+      "cuisine": "Yunnan",
+      "priceRange": "60-120 CNY",
+      "description": "Themed restaurant with martial arts decor serving Yunnan cuisine, known for creative dishes and traditional atmosphere.",
+      "address": "New City, Lijiang",
+      "coordinates": {
+        "lat": 26.8833,
+        "lng": 100.2394
+      },
+      "hours": "10:30-22:00",
+      "highlights": [
+        "Martial arts theme",
+        "Creative dishes",
+        "Traditional setting",
+        "Performance shows"
+      ],
+      "tips": "Fun atmosphere with martial arts theme. Good for families. The performances are entertaining. Book in advance for shows.",
+      "dishHighlights": [
+        "Wuxia-style presentation",
+        "Traditional Yunnan dishes",
+        "Specialty soups"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 70,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800"
+    },
+    {
+      "id": "old-town-wine-bar",
+      "name": "古城红酒坊",
+      "nameEn": "Old Town Wine Bar",
+      "cuisine": "Wine Bar",
+      "priceRange": "50-100 CNY",
+      "description": "Cozy wine bar in old town courtyard serving Yunnan highland wines, imported wines, and light Western food.",
+      "address": "Old Town courtyard, Lijiang",
+      "coordinates": {
+        "lat": 26.8761,
+        "lng": 100.2339
+      },
+      "hours": "14:00-24:00",
+      "highlights": [
+        "Yunnan wines",
+        "Imported selection",
+        "Courtyard atmosphere",
+        "Light food menu"
+      ],
+      "tips": "Great for evening relaxation. The Yunnan wines are unique. Try the highland wine tasting flight. Very romantic atmosphere.",
+      "dishHighlights": [
+        "Yunnan highland wine",
+        "Cheese platter",
+        "Western appetizers"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=800"
+    }
+  ],
+  "hotels": [
+    {
+      "id": "ancient-town-hotel",
+      "name": "丽江古城客栈",
+      "nameEn": "Ancient Town Hotel",
+      "category": "luxury",
+      "priceRange": "800-1500 CNY/night",
+      "description": "Luxury boutique hotel in restored Naxi courtyard with elegant rooms, private gardens, and premium service.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8756,
+        "lng": 100.2347
+      },
+      "highlights": [
+        "Naxi courtyard design",
+        "Private garden",
+        "Rooftop views",
+        "Cultural experiences"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Spa",
+        "Free WiFi",
+        "Airport Shuttle",
+        "Garden",
+        "Room Service"
+      ],
+      "tips": "Book months ahead for peak season. The courtyard design is unique. Some rooms have Jade Dragon Mountain views. Excellent service.",
+      "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+    },
+    {
+      "id": "bookman-boutique",
+      "name": "书蔓精品酒店",
+      "nameEn": "Bookman Boutique Hotel",
+      "category": "boutique",
+      "priceRange": "500-900 CNY/night",
+      "description": "Stylish boutique hotel near old town with modern design mixed with Naxi elements and thoughtful amenities.",
+      "address": "Near Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8789,
+        "lng": 100.2367
+      },
+      "highlights": [
+        "Modern Naxi design",
+        "Rooftop cafe",
+        "Central location",
+        "Good breakfast"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Cafe",
+        "Free WiFi",
+        "Tour Desk",
+        "Airport Shuttle"
+      ],
+      "tips": "Popular with young travelers. The rooftop is great for drinks. Book direct for discount. Good balance of modern and traditional.",
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+    },
+    {
+      "id": "jade-dragon-resort",
+      "name": "玉龙雪山度假酒店",
+      "nameEn": "Jade Dragon Snow Mountain Resort",
+      "category": "resort",
+      "priceRange": "600-1200 CNY/night",
+      "description": "Upscale resort at foot of Jade Dragon Mountain with stunning peak views, spa, and nature experiences.",
+      "address": "Yuhu Village, near Snow Mountain",
+      "coordinates": {
+        "lat": 26.9933,
+        "lng": 100.2056
+      },
+      "highlights": [
+        "Mountain views",
+        "Luxury spa",
+        "Nature trails",
+        "Trout fishing"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Spa",
+        "Free WiFi",
+        "Parking",
+        "Garden",
+        "Room Service"
+      ],
+      "tips": "Best for nature lovers. Rent a car recommended. The mountain views from room are unforgettable. Quieter than old town.",
+      "imageUrl": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=800"
+    },
+    {
+      "id": "lijiang-inn",
+      "name": "丽江客栈",
+      "nameEn": "Lijiang Inn",
+      "category": "mid-range",
+      "priceRange": "280-500 CNY/night",
+      "description": "Charming mid-range hotel in old town with traditional Naxi architecture, comfortable rooms, and local character.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8758,
+        "lng": 100.2353
+      },
+      "highlights": [
+        "Central old town",
+        "Naxi architecture",
+        "Courtyard setting",
+        "Local breakfast"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Tour Desk",
+        "Luggage Storage"
+      ],
+      "tips": "Best location in old town. The courtyard is charming. Some noise from street at night. Book river-view rooms.",
+      "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800"
+    },
+    {
+      "id": "lugu-lake-resort",
+      "name": "泸沽湖度假酒店",
+      "nameEn": "Lugu Lake Resort",
+      "category": "resort",
+      "priceRange": "500-1000 CNY/night",
+      "description": "Lakeside resort overlooking Lugu Lake with traditional Mosuo architecture, serene atmosphere, and cultural experiences.",
+      "address": "Lugu Lake shoreline",
+      "coordinates": {
+        "lat": 27.6833,
+        "lng": 100.8017
+      },
+      "highlights": [
+        "Lake views",
+        "Mosuo architecture",
+        "Boat tours",
+        "Cultural experiences"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Boat Rental",
+        "Tour Desk",
+        "Airport Shuttle"
+      ],
+      "tips": "Stay overnight - day trip is too short. Book lake-view rooms. The sunrise is magical. Mosquitoes in summer.",
+      "imageUrl": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800"
+    },
+    {
+      "id": "shaxi-inn",
+      "name": "束河古镇客栈",
+      "nameEn": "Shaxi Inn",
+      "category": "mid-range",
+      "priceRange": "200-400 CNY/night",
+      "description": "Authentic Naxi inn in quieter Shaxi Ancient Town, offering peaceful atmosphere and traditional accommodation experience.",
+      "address": "Shaxi Ancient Town",
+      "coordinates": {
+        "lat": 26.9083,
+        "lng": 100.1928
+      },
+      "highlights": [
+        "Quiet town",
+        "Naxi style rooms",
+        "Local atmosphere",
+        "Near Jade Dragon"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Bicycle Rental",
+        "Tour Desk"
+      ],
+      "tips": "Best for escaping old town crowds. Book directly for best rates. The innkeepers are very friendly. Explore town after day-trippers leave.",
+      "imageUrl": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=800"
+    },
+    {
+      "id": "new-city-hotel",
+      "name": "丽江新城酒店",
+      "nameEn": "New City Hotel",
+      "category": "mid-range",
+      "priceRange": "220-380 CNY/night",
+      "description": "Modern mid-range hotel in new city area with comfortable rooms, reliable service, and good breakfast.",
+      "address": "New City, Lijiang",
+      "coordinates": {
+        "lat": 26.8844,
+        "lng": 100.2394
+      },
+      "highlights": [
+        "Modern facilities",
+        "Good breakfast",
+        "Central location",
+        "Reliable WiFi"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Gym",
+        "Room Service"
+      ],
+      "tips": "Good option if old town noise is concern. Near markets and restaurants. Parking available. Weekend discounts.",
+      "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "id": "lijiang-youth-hostel",
+      "name": "丽江青年旅舍",
+      "nameEn": "Lijiang Backpacker Hostel",
+      "category": "hostel",
+      "priceRange": "50-120 CNY/night",
+      "description": "Popular backpacker hostel in old town with dorms, private rooms, rooftop bar, and social atmosphere.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8747,
+        "lng": 100.2342
+      },
+      "highlights": [
+        "Rooftop bar",
+        "Social atmosphere",
+        "Dorm beds",
+        "Tour booking"
+      ],
+      "amenities": [
+        "Dorms",
+        "Private Rooms",
+        "Bar",
+        "Free WiFi",
+        "Kitchen",
+        "Tour Desk"
+      ],
+      "tips": "Best for solo travelers. The rooftop bar is famous. Evening social events. Book dorms well ahead in peak season.",
+      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800"
+    },
+    {
+      "id": "tiger-leaping-guesthouse",
+      "name": "虎跳峡客栈",
+      "nameEn": "Tiger Leaping Gorge Guesthouse",
+      "category": "guesthouse",
+      "priceRange": "150-300 CNY/night",
+      "description": "Mountain guesthouse along Tiger Leaping Gorge hiking trail with basic but comfortable rooms and mountain views.",
+      "address": "Tiger Leaping Gorge, along hiking trail",
+      "coordinates": {
+        "lat": 27.2358,
+        "lng": 100.1283
+      },
+      "highlights": [
+        "Mountain views",
+        "Hiking access",
+        "Local food",
+        "Quiet location"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Luggage Transfer"
+      ],
+      "tips": "Book during hiking season (Apr-Jun, Sep-Nov). The views are stunning. Basic but clean. Hiking experience essential.",
+      "imageUrl": "https://images.unsplash.com/photo-1561842437-5d70e8a8a0b1?w=800"
+    },
+    {
+      "id": "lashi-sea-hotel",
+      "name": "拉市海酒店",
+      "nameEn": "Lashi Sea Hotel",
+      "category": "mid-range",
+      "priceRange": "250-450 CNY/night",
+      "description": "Lakefront hotel near Lashi Sea with scenic views, horse riding services, and nature experiences.",
+      "address": "Lashi Sea, 15km from Lijiang",
+      "coordinates": {
+        "lat": 26.8189,
+        "lng": 100.1089
+      },
+      "highlights": [
+        "Lake views",
+        "Horse riding",
+        "Bird watching",
+        "Peaceful setting"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Bicycle Rental",
+        "Tour Desk"
+      ],
+      "tips": "Combine with Lashi Sea activities. The lake is beautiful at sunset. Stay overnight for bird watching. Mosquitoes in summer.",
+      "imageUrl": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800"
+    },
+    {
+      "id": "naxi-boutique-lijiang",
+      "name": "纳西小筑",
+      "nameEn": "Naxi Boutique House",
+      "category": "boutique",
+      "priceRange": "400-700 CNY/night",
+      "description": "Elegant boutique hotel in restored Naxi heritage building with artistic decor and personalized service.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8761,
+        "lng": 100.2358
+      },
+      "highlights": [
+        "Heritage building",
+        "Artistic design",
+        "Courtyard garden",
+        "Cultural activities"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Garden",
+        "Tour Desk",
+        "Cultural Activities"
+      ],
+      "tips": "The building itself is a reason to stay. The art collection is impressive. Staff can arrange cultural experiences. Book early.",
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+    },
+    {
+      "id": "blue-moon-valley-hotel",
+      "name": "蓝月谷酒店",
+      "nameEn": "Blue Moon Valley Hotel",
+      "category": "upscale",
+      "priceRange": "500-900 CNY/night",
+      "description": "Upscale hotel near Blue Moon Valley with modern amenities and views of the glacial valley and surrounding mountains.",
+      "address": "Jade Dragon Snow Mountain Scenic Area",
+      "coordinates": {
+        "lat": 27.0856,
+        "lng": 100.1628
+      },
+      "highlights": [
+        "Valley views",
+        "Modern rooms",
+        "Good restaurant",
+        "Close to attractions"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Room Service",
+        "Heating"
+      ],
+      "tips": "Best location for Blue Moon Valley and Snow Mountain. Heated rooms for cold mountain nights. Book with snow mountain tour packages.",
+      "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+    },
+    {
+      "id": "lijiang-airport-hotel",
+      "name": "丽江机场酒店",
+      "nameEn": "Lijiang Airport Hotel",
+      "category": "airport",
+      "priceRange": "280-450 CNY/night",
+      "description": "Convenient hotel directly at Lijiang Sanyi Airport, ideal for early morning flights or late arrivals.",
+      "address": "Inside Lijiang Airport",
+      "coordinates": {
+        "lat": 26.6867,
+        "lng": 100.2458
+      },
+      "highlights": [
+        "Airport connected",
+        "24-hour check-in",
+        "Quiet rooms",
+        "Free airport shuttle"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Airport Shuttle",
+        "Luggage Storage"
+      ],
+      "tips": "Best for transit passengers. Book directly with hotel. Early morning flights - stay here night before. Simple but convenient.",
+      "imageUrl": "https://images.unsplash.com/photo-1595576508898-0bb5b64bd566?w=800"
+    },
+    {
+      "id": "lijiang-grand-hotel",
+      "name": "丽江大饭店",
+      "nameEn": "Lijiang Grand Hotel",
+      "category": "upscale",
+      "priceRange": "450-800 CNY/night",
+      "description": "Large upscale hotel in new city with comprehensive facilities, multiple restaurants, and professional service.",
+      "address": "New City Center, Lijiang",
+      "coordinates": {
+        "lat": 26.8867,
+        "lng": 100.2422
+      },
+      "highlights": [
+        "Full facilities",
+        "Multiple restaurants",
+        "Central location",
+        "Reliable service"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Gym",
+        "Business Center",
+        "Free WiFi",
+        "Parking",
+        "Room Service"
+      ],
+      "tips": "Good for business travelers. The buffet breakfast is excellent. Weekend discounts available. Modern and reliable.",
+      "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+    },
+    {
+      "id": "lijiang-garden-hotel",
+      "name": "丽江花园酒店",
+      "nameEn": "Lijiang Garden Hotel",
+      "category": "mid-range",
+      "priceRange": "280-450 CNY/night",
+      "description": "Quiet garden hotel near old town with beautiful courtyard, Naxi style rooms, and peaceful atmosphere.",
+      "address": "Near Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8783,
+        "lng": 100.2372
+      },
+      "highlights": [
+        "Garden setting",
+        "Naxi style rooms",
+        "Quiet location",
+        "Near old town"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Garden",
+        "Tour Desk",
+        "Parking"
+      ],
+      "tips": "Good alternative if old town is too noisy. The garden is beautiful. Walk to old town in 10 minutes. Best value in area.",
+      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800"
+    },
+    {
+      "id": "naxi-heritage-hotel",
+      "name": "纳西文化酒店",
+      "nameEn": "Naxi Heritage Hotel",
+      "category": "boutique",
+      "priceRange": "500-900 CNY/night",
+      "description": "Heritage hotel in restored Naxi compound featuring authentic architecture, cultural activities, and traditional atmosphere.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8758,
+        "lng": 100.2339
+      },
+      "highlights": [
+        "Heritage building",
+        "Cultural activities",
+        "Traditional Naxi",
+        "Courtyard setting"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Cultural Activities",
+        "Tour Desk",
+        "Garden"
+      ],
+      "tips": "Stay overnight to experience Naxi culture. The courtyard is beautiful. Staff can arrange cultural experiences. Book months ahead.",
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+    },
+    {
+      "id": "snow-mountain-hut",
+      "name": "雪山脚下客栈",
+      "nameEn": "Snow Mountain Foot Inn",
+      "category": "guesthouse",
+      "priceRange": "150-300 CNY/night",
+      "description": "Simple guesthouse at foot of Jade Dragon Snow Mountain with basic rooms, mountain views, and local character.",
+      "address": "Near Jade Dragon Snow Mountain",
+      "coordinates": {
+        "lat": 27.0556,
+        "lng": 100.1733
+      },
+      "highlights": [
+        "Mountain views",
+        "Local atmosphere",
+        "Simple but clean",
+        "Near cable car"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Heating"
+      ],
+      "tips": "Best for budget travelers visiting snow mountain. Basic but clean. Mountain views from room. Book early for peak season.",
+      "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+    },
+    {
+      "id": "lijiang-palace-hotel",
+      "name": "丽江王府酒店",
+      "nameEn": "Lijiang Palace Hotel",
+      "category": "luxury",
+      "priceRange": "800-1500 CNY/night",
+      "description": "Luxury hotel modeled after Mufu Palace architecture with premium rooms, spa, and cultural experiences.",
+      "address": "Old Town, Lijiang",
+      "coordinates": {
+        "lat": 26.8753,
+        "lng": 100.2333
+      },
+      "highlights": [
+        "Mufu-style design",
+        "Luxury amenities",
+        "Cultural experiences",
+        "Rooftop views"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Spa",
+        "Free WiFi",
+        "Airport Shuttle",
+        "Garden",
+        "Room Service"
+      ],
+      "tips": "Best luxury option in old town. The architecture is impressive. Book direct for discounts. Excellent service and location.",
+      "imageUrl": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=800"
+    },
+    {
+      "id": "lijiang-minzu-hotel",
+      "name": "丽江民族酒店",
+      "nameEn": "Lijiang Ethnic Hotel",
+      "category": "mid-range",
+      "priceRange": "250-420 CNY/night",
+      "description": "Ethnic-themed hotel with minority cultural decorations, offering unique Yunnan minority experience.",
+      "address": "New City, Lijiang",
+      "coordinates": {
+        "lat": 26.8828,
+        "lng": 100.2389
+      },
+      "highlights": [
+        "Ethnic decoration",
+        "Cultural theme",
+        "Modern rooms",
+        "Good value"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Tour Desk"
+      ],
+      "tips": "Good balance of ethnic character and modern comfort. The decoration is interesting. Good breakfast included. Best value.",
+      "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800"
+    },
+    {
+      "id": "shaxi-boutique-inn",
+      "name": "束河精品客栈",
+      "nameEn": "Shaxi Boutique Inn",
+      "category": "boutique",
+      "priceRange": "350-600 CNY/night",
+      "description": "Charming boutique inn in Shaxi Ancient Town with Naxi architecture, peaceful atmosphere, and personalized service.",
+      "address": "Shaxi Ancient Town",
+      "coordinates": {
+        "lat": 26.9083,
+        "lng": 100.1928
+      },
+      "highlights": [
+        "Shaxi quiet town",
+        "Naxi style",
+        "Peaceful atmosphere",
+        "Personalized service"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Bicycle Rental",
+        "Tour Desk"
+      ],
+      "tips": "Best for escaping old town crowds. The innkeepers are very welcoming. Explore town after day-trippers leave. Book directly.",
+      "imageUrl": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800"
+    },
+    {
+      "id": "lugu-lake-peninsula-hotel",
+      "name": "泸沽湖半岛酒店",
+      "nameEn": "Lugu Lake Peninsula Hotel",
+      "category": "resort",
+      "priceRange": "600-1200 CNY/night",
+      "description": "Upscale lakeside hotel on a peninsula offering stunning lake views, Mosuo architecture, and serene atmosphere.",
+      "address": "Lugu Lake Peninsula",
+      "coordinates": {
+        "lat": 27.6856,
+        "lng": 100.8056
+      },
+      "highlights": [
+        "Lake views",
+        "Mosuo architecture",
+        "Peninsula location",
+        "Tranquil setting"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Boat Rental",
+        "Tour Desk",
+        "Parking"
+      ],
+      "tips": "Best location at Lugu Lake. The sunrise views are magical. Stay overnight minimum. Book lake-view rooms. Mosquitoes in summer.",
+      "imageUrl": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=800"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "id": "police",
+      "name": "丽江市公安局",
+      "nameEn": "Lijiang Police Bureau",
+      "phone": "0888-110",
+      "type": "police",
+      "description": "Lijiang city police emergency hotline",
+      "address": "Lijiang City Center"
+    },
+    {
+      "id": "fire",
+      "name": "丽江市消防支队",
+      "nameEn": "Lijiang Fire Department",
+      "phone": "0888-119",
+      "type": "fire",
+      "description": "Fire and rescue emergency",
+      "address": "Lijiang City"
+    },
+    {
+      "id": "ambulance",
+      "name": "丽江市急救中心",
+      "nameEn": "Lijiang Emergency Medical Center",
+      "phone": "0888-120",
+      "type": "medical",
+      "description": "Medical emergency and ambulance service",
+      "address": "Lijiang City"
+    },
+    {
+      "id": "tourism-hotline",
+      "name": "丽江市旅游投诉热线",
+      "nameEn": "Lijiang Tourism Complaint Hotline",
+      "phone": "0888-12345",
+      "type": "tourism",
+      "description": "Tourism complaints and tourist assistance",
+      "address": "Lijiang City"
+    },
+    {
+      "id": "tourism-bureau",
+      "name": "丽江市旅游执法支队",
+      "nameEn": "Lijiang Tourism Enforcement",
+      "phone": "0888-5122927",
+      "type": "tourism",
+      "description": "Report illegal tourism activities, price disputes",
+      "address": "Lijiang Old Town"
+    },
+    {
+      "id": "gucheng-police",
+      "name": "古城区公安分局",
+      "nameEn": "Gucheng District Police Station",
+      "phone": "0888-5158110",
+      "type": "police",
+      "description": "Old Town area police station",
+      "address": "Gucheng District, Lijiang"
+    },
+    {
+      "id": "medical-advice",
+      "name": "丽江市人民医院急诊",
+      "nameEn": "Lijiang People's Hospital Emergency",
+      "phone": "0888-5160120",
+      "type": "medical",
+      "description": "Main hospital emergency department",
+      "address": "Xin Dayan Road, Lijiang"
+    },
+    {
+      "id": "high-altitude-rescue",
+      "name": "丽江高山救援",
+      "nameEn": "Lijiang High Altitude Rescue",
+      "phone": "0888-5168110",
+      "type": "rescue",
+      "description": "Mountain rescue for Jade Dragon Snow Mountain and hiking areas",
+      "address": "Jade Dragon Snow Mountain area"
+    },
+    {
+      "id": "weather",
+      "name": "丽江市气象局",
+      "nameEn": "Lijiang Meteorological Bureau",
+      "phone": "12121",
+      "type": "weather",
+      "description": "Weather forecasts and mountain weather specifically",
+      "address": "Lijiang City"
+    },
+    {
+      "id": "forestry-fire",
+      "name": "丽江森林防火指挥部",
+      "nameEn": "Lijiang Forest Fire Prevention",
+      "phone": "0888-12119",
+      "type": "emergency",
+      "description": "Forest fire reporting for Lijiang area",
+      "address": "Lijiang City"
+    },
+    {
+      "id": "province-emergency",
+      "name": "云南省应急管理厅",
+      "nameEn": "Yunnan Provincial Emergency",
+      "phone": "0871-12350",
+      "type": "emergency",
+      "description": "Provincial emergency coordination",
+      "address": "Kunming (provincial)"
+    },
+    {
+      "id": "lugu-lake-police",
+      "name": "泸沽湖派出所",
+      "nameEn": "Lugu Lake Police Station",
+      "phone": "0888-5881110",
+      "type": "police",
+      "description": "Police coverage for Lugu Lake area",
+      "address": "Lugu Lake area"
+    },
+    {
+      "id": "tiger-leaping-gorge-rescue",
+      "name": "虎跳峡救援",
+      "nameEn": "Tiger Leaping Gorge Rescue",
+      "phone": "0888-5166110",
+      "type": "rescue",
+      "description": "Rescue services for Tiger Leaping Gorge hiking area",
+      "address": "Tiger Leaping Gorge area"
+    },
+    {
+      "id": "road-emergency",
+      "name": "丽江道路救援",
+      "nameEn": "Lijiang Road Emergency",
+      "phone": "0888-12122",
+      "type": "road",
+      "description": "Roadside assistance and traffic emergencies",
+      "address": "Lijiang area roads"
+    },
+    {
+      "id": "lijiang-railway",
+      "name": "丽江火车站服务",
+      "nameEn": "Lijiang Railway Station",
+      "phone": "0888-5129352",
+      "type": "transport",
+      "description": "Railway ticket inquiries and station services",
+      "address": "Lijiang Railway Station"
+    },
+    {
+      "id": "national-tourism-lijiang",
+      "name": "全国旅游投诉热线",
+      "nameEn": "National Tourism Complaint Hotline",
+      "phone": "12301",
+      "type": "tourism",
+      "description": "National tourism complaints hotline",
+      "address": "Nationwide"
+    },
+    {
+      "id": "lijiang-consumer-complaint",
+      "name": "丽江市消费者协会",
+      "nameEn": "Lijiang Consumer Association",
+      "phone": "0888-12315",
+      "type": "consumer",
+      "description": "Consumer rights protection and complaints",
+      "address": "Lijiang City"
+    },
+    {
+      "id": "lijiang-water-emergency",
+      "name": "丽江市自来水公司",
+      "nameEn": "Lijiang Water Supply Company",
+      "phone": "0888-96106",
+      "type": "utility",
+      "description": "Water supply emergencies and leaks",
+      "address": "Lijiang City"
+    },
+    {
+      "id": "lijiang-electricity-emergency",
+      "name": "丽江供电局",
+      "nameEn": "Lijiang Power Supply Bureau",
+      "phone": "95598",
+      "type": "utility",
+      "description": "Power outage and electrical emergencies",
+      "address": "Lijiang City"
+    }
+  ],
+  "culturalTips": [
+    {
+      "id": "naxi-culture",
+      "title": "纳西族文化",
+      "content": "丽江是纳西族聚居地，他们有独特的东巴文化，包括世界上唯一仍在使用的象形文字。东巴文化强调人与自然和谐相处。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "mosuo-traditions",
+      "title": "摩梭人走婚文化",
+      "content": "泸沽湖地区居住着摩梭人，他们保留着母系社会的'走婚'传统。游客应尊重这一文化，不应以猎奇心态看待。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "old-town-etiquette",
+      "title": "古城游览礼仪",
+      "content": "丽江古城是UNESCO遗产，游览时请保持安静，不要在室内吸烟。古城木质结构多，防火意识要强。部分区域需要购票进入。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "jade-mountain-sacred",
+      "title": "玉龙雪山圣山",
+      "content": "玉龙雪山是纳西族神山，被视为天堂的阶梯。请尊重当地宗教信仰，不要在山上大声喧哗或做出不敬行为。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "tiger-leaping-gorge-hiking",
+      "title": "虎跳峡徒步礼仪",
+      "content": "虎跳峡是世界上最深的峡谷之一，徒步时请走指定步道，不要离开步道进入未开发区域。注意落石标志，安全第一。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "dongba-script",
+      "title": "东巴文字",
+      "content": "东巴文是目前世界上唯一广泛使用的象形文字，可以学习写自己的名字作为纪念。在古城很多地方可以找到东巴文化体验。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-music",
+      "title": "纳西古乐",
+      "content": "纳西古乐已有上千年历史，演奏者是当地老人。演出每晚在古城举行，是了解纳西文化的好机会。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "yunnan's-uv",
+      "title": "高原紫外线",
+      "content": "丽江海拔2400米，紫外线强烈。即使阴天也要涂防晒霜，戴太阳镜和帽子。高原干燥，多喝水。",
+      "category": "health",
+      "importance": "medium"
+    },
+    {
+      "id": "altitude-consideration-lijiang",
+      "title": "高原反应预防",
+      "content": "丽江海拔较高（2400米），初到可能会有轻微高原反应。多休息，少运动，多喝水。前往雪山时反应可能更明显。",
+      "category": "health",
+      "importance": "medium"
+    },
+    {
+      "id": "tea-horse-road",
+      "title": "茶马古道",
+      "content": "丽江曾是茶马古道的重要枢纽，马帮从这里前往西藏和东南亚。古城里可以看到当年马帮文化的遗迹。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-cuisine",
+      "title": "纳西饮食文化",
+      "content": "纳西菜口味偏辣，常用腌制食品。腊排骨是丽江名菜，米灌肠也很特色。不要错过当地的野生菌火锅（雨季）。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "photography-respects",
+      "title": "摄影礼仪",
+      "content": "拍摄当地人或民族服饰前请先征得同意。纳西老人有时不喜欢被拍照，尤其是东巴祭司。山上的经幡和白塔也要先问再拍。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "old-town-water-system",
+      "title": "古城水系",
+      "content": "丽江古城水系从玉龙雪山引水，穿城而过。游客不应在河沟里洗东西或丢弃杂物。冬天水会结冰，是别样风景。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-barriers",
+      "title": "纳西族禁忌",
+      "content": "纳西族有一些传统禁忌：不要用脚踏锅灶，不要在产妇房前逗留，不要在家中唱纳西情歌。这些禁忌正在逐渐淡化，但尊重仍是必要的。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "haggling-culture",
+      "title": "购物还价",
+      "content": "在古城购物还价是文化的一部分。通常可以还到标价的40-60%。从友善的交谈开始，保持微笑，以建立良好关系。",
+      "category": "shopping",
+      "importance": "medium"
+    },
+    {
+      "id": "tibetan-culture-lijiang",
+      "title": "藏族文化影响",
+      "content": "丽江靠近藏区，受藏族文化影响显著。玉龙雪山周边有藏传佛教寺庙和转经筒，请保持安静和尊重。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-nights",
+      "title": "丽江夜生活",
+      "content": "古城夜晚有酒吧街，但晚上10点后请降低音量，不要影响古城居民休息。纳西老人需要早睡早起的生活。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-dongba-religion",
+      "title": "东巴教信仰",
+      "content": "纳西族信奉东巴教，这是以自然崇拜为核心的宗教。请尊重东巴祭司，他们在古城进行宗教活动时请不要打扰。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "old-town-water-system-history",
+      "title": "古城水系历史",
+      "content": "丽江古城水系从玉龙雪山引水，由明代木氏土司设计。水系有灌溉、防火、生活三重功能，体现了纳西人的智慧。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-harness-culture",
+      "title": "纳西织锦文化",
+      "content": "纳西族有精湛的织锦传统，纳西女性的披星戴月服饰是著名标志。购买织锦产品时可以还价，但请尊重手工艺价值。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "mosuo-matrilineal-society",
+      "title": "摩梭母系社会",
+      "content": "泸沽湖摩梭人保留母系社会制度，家庭以女性为中心。走婚制度下，男方夜间来访天亮离开，孩子由女方家庭抚养。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-rose-products",
+      "title": "丽江玫瑰产业",
+      "content": "丽江玫瑰产业发达，玫瑰饼、玫瑰糖、玫瑰酒都是特色产品。食用玫瑰种植在玉龙雪山脚下，品质优良。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "jade-dragon-mountain-sacred",
+      "title": "玉龙雪山宗教意义",
+      "content": "玉龙雪山在纳西语中意为'天山'，是纳西族保护神三多的化身。山上有藏传佛教寺庙，转经筒和经幡是常见元素。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "tiger-leaping-gorge-hiking-safety",
+      "title": "虎跳峡徒步安全",
+      "content": "虎跳峡徒步有一定风险，7-8月雨季可能有泥石流。徒步时请走正规步道，不要离开步道进入未开发区域。建议雇当地向导。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-handicraft-souvenirs",
+      "title": "纳西手工艺品",
+      "content": "纳西扎染、东巴木雕、银饰是主要手工艺品。购买时请认准手工艺人作品，避免买到机器批量生产的产品。",
+      "category": "shopping",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-pork-ribs-tradition",
+      "title": "腊排骨腌制传统",
+      "content": "腊排骨是丽江名菜，猪排骨用盐和香料腌制后风干。传统做法需要腌制一个月以上，才能形成独特的风味。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-ancient-music-preservation",
+      "title": "纳西古乐保护",
+      "content": "纳西古乐是联合国非物质文化遗产，由纳西老人传承演奏。这些乐曲源自唐代，有些已失传于中原，在丽江保存下来。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-altitude-health",
+      "title": "丽江高原健康",
+      "content": "丽江海拔2400米，部分游客可能有高原反应。多喝水，避免剧烈运动，如有严重头疼或呼吸困难请立即就医。",
+      "category": "health",
+      "importance": "medium"
+    },
+    {
+      "id": "tea-horse-road-history",
+      "title": "茶马古道商贸",
+      "content": "丽江曾是茶马古道重要枢纽，马帮从这里前往西藏和东南亚。古城的四方街就是当年马帮交易的市场。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-silk-history",
+      "title": "纳西丝绸传统",
+      "content": "纳西族有养蚕织绸的传统，纳西服饰中的'披星戴月'七星披肩就是用自织布料制成。现在这种传统技艺正在复兴。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "mosuo-boat-culture",
+      "title": "摩梭猪槽船",
+      "content": "泸沽湖的猪槽船是摩梭人传统水上交通工具，用整根木头凿成。乘船游湖是体验泸沽湖的最佳方式。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-mountain-photo-ethics",
+      "title": "雪山摄影礼仪",
+      "content": "拍摄玉龙雪山最好在清晨，这时云雾少，能看到山峰全貌。山顶经常有云雾遮挡，请耐心等待。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-rose-cake-history",
+      "title": "鲜花饼的由来",
+      "content": "鲜花饼是丽江特色小吃，用新鲜玫瑰花瓣和面粉制成。清乾隆年间开始流行，是茶马古道马帮的便携干粮。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-family-structure",
+      "title": "纳西族家庭结构",
+      "content": "传统纳西族家庭以女性为主，家务和农活主要由女性承担。男性负责手工艺和赶马帮，这种分工延续至今。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-impression-show-history",
+      "title": "印象丽江创作",
+      "content": "《印象丽江》由著名导演张艺谋执导，在玉龙雪山脚下实景演出。500名演员都是当地纳西族和少数民族。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-medicinal-herbs",
+      "title": "丽江药材文化",
+      "content": "丽江是云南重要药材产地，天麻、三七、虫草等都有出产。购买药材请到正规店铺，注意辨别真伪。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-barbecue-tradition",
+      "title": "纳西烤肉传统",
+      "content": "纳西烤肉用炭火烤制猪肉条，是下酒好菜。传统做法要在野外用松木炭火慢烤，现在古城餐馆都有供应。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "old-town-architecture-protection",
+      "title": "古城建筑保护",
+      "content": "丽江古城建筑是木质结构，部分建筑已有数百年历史。请不要在古建筑内使用明火，不要吸烟，共同保护这一世界遗产。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-tsampa-culture",
+      "title": "青稞糌粑文化",
+      "content": "糌粑是藏族和纳西族的主食，用青稞炒熟后磨成面粉。吃法是将糌粑粉加入酥油茶中搅拌，是高原地区的高热量食物。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "mosuo-female-power",
+      "title": "摩梭女性地位",
+      "content": "摩梭社会以女性为核心，家庭财产由女性继承。家中最年长的女性掌管家庭事务，男性是舅舅角色协助抚养外甥。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-yak-meat-tradition",
+      "title": "牦牛肉饮食",
+      "content": "丽江周边高原牧区养牦牛，牦牛肉是当地特色。高原牦牛生长缓慢，肉质紧实，富含蛋白质，是健康食材。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "naxi-writing-system",
+      "title": "纳西东巴文",
+      "content": "东巴文是世界上唯一仍在使用的象形文字，目前有1400多个字符。在古城可以学习写东巴文，制作专属纪念品。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "lijiang-weather-tips",
+      "title": "丽江天气建议",
+      "content": "丽江天气变化快，一天内可能有四季。雨季(6-8月)常有大雨，雪季(12-2月)玉龙雪山有积雪。出行前查看天气预报。",
+      "category": "practical",
+      "importance": "medium"
+    }
+  ],
+  "payment": [
+    {
+      "id": "alipay",
+      "name": "支付宝",
+      "nameEn": "Alipay",
+      "type": "mobile-payment",
+      "description": "Most widely accepted mobile payment in Lijiang",
+      "popularity": "Very High",
+      "tips": [
+        "Works at almost all hotels, restaurants, and shops in Lijiang. Download and link card before arrival. Some small vendors may prefer WeChat."
+      ],
+      "howToUse": [
+        "Works at almost all hotels, restaurants, and shops in Lijiang. Download and link card before arrival. Some small vendors may prefer WeChat."
+      ]
+    },
+    {
+      "id": "wechat-pay",
+      "name": "微信支付",
+      "nameEn": "WeChat Pay",
+      "type": "mobile-payment",
+      "description": "Essential for communication and payment, accepted everywhere Alipay is",
+      "popularity": "Very High",
+      "tips": [
+        "WeChat is more than payment - it's how people communicate. WeChat Pay works at most merchants. Both are equally accepted."
+      ],
+      "howToUse": [
+        "WeChat is more than payment - it's how people communicate. WeChat Pay works at most merchants. Both are equally accepted."
+      ]
+    },
+    {
+      "id": "cash",
+      "name": "现金",
+      "nameEn": "Cash (RMB)",
+      "type": "cash",
+      "description": "Still needed for small vendors, markets, and some remote areas",
+      "popularity": "Medium",
+      "tips": [
+        "Carry 300-500 CNY for markets, small shops, and tips. ATMs are available in old town and new city. Lugu Lake and Tiger Leaping Gorge may require cash."
+      ],
+      "howToUse": [
+        "Carry 300-500 CNY for markets, small shops, and tips. ATMs are available in old town and new city. Lugu Lake and Tiger Leaping Gorge may require cash."
+      ]
+    },
+    {
+      "id": "unionpay",
+      "name": "银联卡",
+      "nameEn": "UnionPay",
+      "type": "card",
+      "description": "Accepted at banks, large hotels, and some restaurants",
+      "popularity": "High",
+      "tips": [
+        "ATMs accepting foreign cards available at Agricultural Bank and Bank of China in new city. Inform your bank of travel plans first."
+      ],
+      "howToUse": [
+        "ATMs accepting foreign cards available at Agricultural Bank and Bank of China in new city. Inform your bank of travel plans first."
+      ]
+    },
+    {
+      "id": "visa-mastercard",
+      "name": "Visa/Mastercard",
+      "nameEn": "Visa/Mastercard",
+      "type": "card",
+      "description": "Only accepted at large international hotels and some upscale restaurants",
+      "popularity": "Low",
+      "tips": [
+        "Don't rely on international cards in Lijiang. Some high-end hotels may accept them. Carry sufficient mobile payment or cash instead."
+      ],
+      "howToUse": [
+        "Don't rely on international cards in Lijiang. Some high-end hotels may accept them. Carry sufficient mobile payment or cash instead."
+      ]
+    },
+    {
+      "id": "travelers-cheques",
+      "name": "旅行支票",
+      "nameEn": "Traveler's Cheques",
+      "type": "other",
+      "description": "Rarely accepted anywhere in Lijiang",
+      "popularity": "Very Low",
+      "tips": [
+        "Traveler's cheques are not practical in Lijiang. Avoid bringing them. If you have some, exchange at Bank of China in new city."
+      ],
+      "howToUse": [
+        "Traveler's cheques are not practical in Lijiang. Avoid bringing them. If you have some, exchange at Bank of China in new city."
+      ]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "airport",
+        "name": "丽江三义国际机场",
+        "nameEn": "Lijiang Sanyi International Airport",
+        "code": "LJG",
+        "description": "Main airport serving Lijiang, located 28km from city center in Yunnan's mountainous region",
+        "toCityCenter": "Airport bus (25 CNY, 40-60 min) or taxi (120-150 CNY, 40 min)",
+        "highlights": [
+          "Flights to Beijing, Shanghai, Guangzhou, Chengdu",
+          "Seasonal flights to Southeast Asia",
+          "Airport bus to old town",
+          "Taxi stands outside terminal"
+        ]
+      },
+      {
+        "type": "train",
+        "name": "丽江站",
+        "nameEn": "Lijiang Railway Station",
+        "description": "Main railway station for high-speed trains connecting to Dali, Kunming, and other destinations",
+        "toCityCenter": "Bus 4 or 18 (2 CNY, 30 min) or taxi (30-50 CNY, 20 min)",
+        "highlights": [
+          "High-speed trains to Dali (2h 20min)",
+          "Trains to Kunming (3h 20min)",
+          "Old town is nearby",
+          "Bus connections available"
+        ]
+      },
+      {
+        "type": "bus",
+        "name": "丽江客运站",
+        "nameEn": "Lijiang Bus Station",
+        "description": "Main bus station for long-distance buses to destinations around Yunnan",
+        "toCityCenter": "Walking distance to old town (15 min) or taxi (15 CNY)",
+        "highlights": [
+          "Buses to Dali (3.5h, 100-130 CNY)",
+          "Buses to Kunming (4h, 130-160 CNY)",
+          "Buses to Lugu Lake (4h, 80-100 CNY)",
+          "Buses to Tiger Leaping Gorge (1.5h, 30-50 CNY)"
+        ]
+      },
+      {
+        "type": "bus",
+        "name": "丽江高快客运站",
+        "nameEn": "Lijiang Express Bus Station",
+        "description": "Express bus station for comfortable long-distance travel",
+        "toCityCenter": "Taxi to old town (20-30 CNY)",
+        "highlights": [
+          "Comfortable sleeper buses",
+          "To Kunming (4h)",
+          "To Shangri-La (4h)",
+          "Pre-booking recommended"
+        ]
+      }
+    ],
+    "local": {
+      "bus": [
+        "Bus network connecting old town, new city, and surrounding areas"
+      ],
+      "taxi": [
+        [
+          "Short rides around old town 10-20 CNY",
+          "To Jade Dragon Snow Mountain 80-120 CNY",
+          "Didi works in Lijiang for English users",
+          "Negotiate if no meter in rural areas"
+        ]
+      ],
+      "rental": [
+        [
+          "Old town has electric cart system",
+          "To Jade Dragon Snow Mountain scenic area",
+          "Useful for those with luggage to railway station",
+          "Can be shared"
+        ],
+        [
+          "To Jade Dragon Snow Mountain (package deals available)",
+          "To Lugu Lake (often overnight packages)",
+          "To Tiger Leaping Gorge",
+          "Book through hotel or tour desk"
+        ]
+      ],
+      "bike": [
+        [
+          "Good for Shaxi Ancient Town area",
+          "Beware of traffic on main roads",
+          "Mountain bikes for trails",
+          "Helmet recommended"
+        ]
+      ],
+      "metro": [],
+      "walking": []
+    }
+  },
+  "quickFacts": {
+    "language": "Mandarin Chinese (Simplified)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa (L-tourist, M-business)",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water is boiled before drinking; bottled water widely available"
+  }
+}

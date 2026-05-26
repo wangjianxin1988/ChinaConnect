@@ -1,9 +1,14 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { citiesMeta } from "@/data/cities/index";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const pathname = Astro.url.pathname;
+const lang = getLangFromUrl(Astro.url);
+
 const pageTitle = "ChinaConnect - Your AI Guide to Exploring China";
 const pageDescription =
-  "Discover China with AI-powered city guides. Find the best restaurants (Michelin & Black Pearl), attractions, transport info, and emergency contacts in Beijing, Shanghai, Guangzhou, Xi'an, Chengdu, and Guilin.";
+  "Discover China with AI-powered city guides. Find the best restaurants (Michelin & Black Pearl), attractions, transport info, and emergency contacts in 12 major Chinese cities including Beijing, Shanghai, Guangzhou, Xi'an, Chengdu, and more.";
 const pageKeywords = [
   "China travel guide",
   "China AI assistant",
@@ -95,13 +100,13 @@ const pageKeywords = [
 
     <div class="container-custom py-16 md:py-24 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" data-i18n="home.heroTitle">
           Explore China with AI
         </h1>
-        <p class="text-xl md:text-2xl text-blue-100 mb-4">
+        <p class="text-xl md:text-2xl text-blue-100 mb-4" data-i18n="home.heroSubtitle">
           Your trusted guide to China's best cities
         </p>
-        <p class="text-lg text-blue-200 mb-10 max-w-2xl mx-auto">
+        <p class="text-lg text-blue-200 mb-10 max-w-2xl mx-auto" data-i18n="home.heroDesc">
           Discover restaurants (Michelin & Black Pearl), attractions, transport tips, and emergency info - all powered by AI and curated by locals.
         </p>
 
@@ -111,10 +116,10 @@ const pageKeywords = [
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
             </svg>
-            Ask AI for Trip Advice
+            <span data-i18n="home.heroCTA">Ask AI for Trip Advice</span>
           </a>
           <a href="#cities" class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
-            <span>Explore Cities</span>
+            <span data-i18n="home.exploreCities">Explore Cities</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
@@ -124,20 +129,20 @@ const pageKeywords = [
         <!-- Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
-            <div class="text-3xl font-bold mb-1">6</div>
-            <div class="text-sm text-blue-200">Cities Covered</div>
+            <div class="text-3xl font-bold mb-1">12</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsCities">Cities Covered</div>
           </div>
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
             <div class="text-3xl font-bold mb-1">30+</div>
-            <div class="text-sm text-blue-200">Michelin Restaurants</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsRestaurants">Michelin Restaurants</div>
           </div>
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
-            <div class="text-3xl font-bold mb-1">50+</div>
-            <div class="text-sm text-blue-200">Top Attractions</div>
+            <div class="text-3xl font-bold mb-1">100+</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsAttractions">Top Attractions</div>
           </div>
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
             <div class="text-3xl font-bold mb-1">24/7</div>
-            <div class="text-sm text-blue-200">AI Assistance</div>
+            <div class="text-sm text-blue-200" data-i18n="home.statsAI">AI Assistance</div>
           </div>
         </div>
       </div>
@@ -161,16 +166,16 @@ const pageKeywords = [
   <section id="cities" class="py-16">
     <div class="container-custom">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-i18n="home.citiesTitle">
           Explore Our Cities
         </h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-i18n="home.citiesSubtitle">
           From ancient capitals to modern metropolises, discover the best of China with our comprehensive city guides.
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {citiesMeta.map((city, index) => (
+        {citiesMeta.slice(0, 8).map((city, index) => (
           <a
             href={`/city/${city.slug}`}
             class={`group relative overflow-hidden rounded-2xl card-hover ${
@@ -183,7 +188,9 @@ const pageKeywords = [
               index === 2 ? 'from-orange-500 to-red-600' :
               index === 3 ? 'from-green-500 to-teal-600' :
               index === 4 ? 'from-red-500 to-orange-600' :
-              'from-teal-500 to-blue-600'
+              index === 5 ? 'from-teal-500 to-blue-600' :
+              index === 6 ? 'from-pink-500 to-purple-600' :
+              'from-yellow-500 to-orange-600'
             } ${index === 0 ? 'h-80 lg:h-full min-h-[320px]' : 'h-56'} flex items-center justify-center`}>
               <span class="text-white/30 text-9xl font-bold">{city.name[0]}</span>
             </div>
@@ -199,7 +206,7 @@ const pageKeywords = [
                 {city.description}
               </p>
               <div class="flex items-center text-white text-sm font-medium">
-                <span>Explore Guide</span>
+                <span data-i18n="home.exploreGuide">Explore Guide</span>
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
@@ -208,6 +215,16 @@ const pageKeywords = [
           </a>
         ))}
       </div>
+      {citiesMeta.length > 8 && (
+        <div class="text-center mt-8">
+          <a href="/cities" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
+            <span data-i18n="home.viewAllCities">View All {citiesMeta.length} Cities</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      )}
     </div>
   </section>
 
@@ -215,95 +232,95 @@ const pageKeywords = [
   <section id="features" class="py-16 bg-gray-50">
     <div class="container-custom">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-i18n="home.featuresTitle">
           Everything You Need for Your China Trip
         </h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-i18n="home.featuresSubtitle">
           Comprehensive guides for every aspect of your journey
         </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/food" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">Restaurant Guide</h3>
-          <p class="text-gray-600 text-sm">Michelin stars, Black Pearl rankings, and local favorites with detailed reviews</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.restaurantGuide">Restaurant Guide</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.restaurantGuideDesc">Michelin stars, Black Pearl rankings, and local favorites with detailed reviews</p>
+        </a>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/guide/attractions" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">Attractions</h3>
-          <p class="text-gray-600 text-sm">Top-rated attractions with opening hours, tickets, and local tips</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.attractions">Attractions</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.attractionsDesc">Top-rated attractions with opening hours, tickets, and local tips</p>
+        </a>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/guide/transport" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">Transport</h3>
-          <p class="text-gray-600 text-sm">How to get there and around - flights, trains, metro, and local tips</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.transport">Transport</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.transportDesc">How to get there and around - flights, trains, metro, and local tips</p>
+        </a>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/emergency" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">Emergency</h3>
-          <p class="text-gray-600 text-sm">Hospital, police, embassy contacts and important phone numbers</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.emergency">Emergency</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.emergencyDesc">Hospital, police, embassy contacts and important phone numbers</p>
+        </a>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/guide/payment" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">Payment Guide</h3>
-          <p class="text-gray-600 text-sm">Alipay, WeChat Pay, cash tips, and card acceptance info</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.payment">Payment Guide</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.paymentDesc">Alipay, WeChat Pay, cash tips, and card acceptance info</p>
+        </a>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/guide/accommodation" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">Accommodation</h3>
-          <p class="text-gray-600 text-sm">Hotel recommendations for every budget from luxury to budget</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.accommodation">Accommodation</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.accommodationDesc">Hotel recommendations for every budget from luxury to budget</p>
+        </a>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/guide/cultural-warnings" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m13-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">Cultural Tips</h3>
-          <p class="text-gray-600 text-sm">Local customs, etiquette, and cultural insights for each city</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.culturalTips">Cultural Tips</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.culturalTipsDesc">Local customs, etiquette, and cultural insights for each city</p>
+        </a>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <a href="/ai" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow block">
           <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
             </svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2">AI Assistant</h3>
-          <p class="text-gray-600 text-sm">Ask questions in English, get instant answers about China travel</p>
-        </div>
+          <h3 class="text-lg font-semibold mb-2" data-i18n="features.aiAssistant">AI Assistant</h3>
+          <p class="text-gray-600 text-sm" data-i18n="features.aiAssistantDesc">Ask questions in English, get instant answers about China travel</p>
+        </a>
       </div>
     </div>
   </section>
@@ -324,21 +341,21 @@ const pageKeywords = [
   <section class="py-16">
     <div class="container-custom">
       <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-center text-white">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="home.ctaTitle">
           Ready to Explore China?
         </h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto" data-i18n="home.ctaSubtitle">
           Start planning your trip with AI-powered recommendations and insider tips from local experts.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="/city/beijing" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all">
-            Explore Beijing
+            <span data-i18n="home.exploreBeijing">Explore Beijing</span>
           </a>
           <a href="/ai" class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
             </svg>
-            Chat with AI
+            <span data-i18n="home.chatWithAI">Chat with AI</span>
           </a>
         </div>
       </div>
@@ -378,9 +395,10 @@ const pageKeywords = [
         };
       }
 
-      // Recommended for You (popular cities)
+      // Recommended for You (popular cities from real data)
       var recGrid = document.getElementById('recommended-grid');
       if (recGrid) {
+        // Use first 3 cities from citiesMeta for recommendations
         var recommended = [
           { slug: 'shanghai', name: 'Shanghai', nameZh: '上海', desc: 'Modern metropolis where East meets West', color: 'from-purple-500 to-pink-600' },
           { slug: 'chengdu', name: 'Chengdu', nameZh: '成都', desc: 'Giant pandas and spicy Sichuan cuisine', color: 'from-red-500 to-orange-600' },

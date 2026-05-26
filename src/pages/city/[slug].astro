@@ -6,6 +6,11 @@ import { WeatherWidget } from "@/components/city/WeatherWidget";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { CityMap } from "@/components/city/CityMap";
+import { getLangFromUrl } from "@/i18n/utils";
+import { AttractionsSection } from "@/components/city/AttractionsSection";
+import { RestaurantsSection } from "@/components/city/RestaurantsSection";
+import { CulturalSection } from "@/components/city/CulturalSection";
+import { EmergencySection } from "@/components/city/EmergencySection";
 
 export function getStaticPaths() {
   return citySlugs.map((slug) => ({ params: { slug } }));
@@ -13,6 +18,7 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const city = getCityBySlug(slug as string);
+const lang = getLangFromUrl(Astro.url);
 
 if (!city) {
   return Astro.redirect("/404");
@@ -232,6 +238,7 @@ const mapMarkers = [
     keywords,
     canonicalUrl: `https://chinaconnect.com/city/${city.slug}`,
   }}
+  lang={lang}
 >
   <!-- SEO: JSON-LD Schemas -->
   <script type="application/ld+json" set:html={JSON.stringify(citySchema)} />
@@ -350,7 +357,7 @@ const mapMarkers = [
 
           <!-- Interactive City Map -->
           <div class="mb-6">
-            <CityMap city={city} activeTab="overview" height="400px" client:only="react" />
+            <CityMap city={city} activeTab="overview" height="400px" client:visible />
           </div>
 
           <!-- Best Time to Visit -->
@@ -427,40 +434,20 @@ const mapMarkers = [
           </div>
         </section>
 
-        <!-- Attractions Section -->
+        <!-- Attractions Section (Lazy loaded with infinite scroll) -->
         <section id="attractions" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">🏛️</span> Must-Visit Attractions
+            <span class="text-sm font-normal text-gray-500 ml-2">({city.attractions.length} places)</span>
           </h2>
           <p class="section-subtitle">Discover the best attractions in {city.nameEn}</p>
 
-          <!-- Attractions Map -->
-          <div class="mb-6">
-            <CityMap city={city} activeTab="attractions" height="350px" client:only="react" />
-          </div>
-
-          <div class="space-y-5">
-            {city.attractions.map((attraction, index) => (
-              <AttractionCard
-                attraction={{
-                  id: attraction.id,
-                  name: attraction.name,
-                  nameEn: attraction.nameEn,
-                  category: attraction.category as any,
-                  description: attraction.description,
-                  address: attraction.address,
-                  coordinates: attraction.coordinates,
-                  openingHours: attraction.openingHours,
-                  ticketPrice: attraction.ticketPrice,
-                  recommendedVisitTime: attraction.recommendedVisitTime,
-                  highlights: attraction.highlights,
-                  tips: attraction.tips,
-                }}
-                index={index}
-                client:load
-              />
-            ))}
-          </div>
+          <AttractionsSection
+            attractions={city.attractions}
+            citySlug={city.slug}
+            cityName={city.nameEn}
+            client:visible
+          />
         </section>
 
         <!-- Food Section -->
@@ -472,7 +459,7 @@ const mapMarkers = [
 
           <!-- Food Map -->
           <div class="mb-6">
-            <CityMap city={city} activeTab="food" height="350px" client:only="react" />
+            <CityMap city={city} activeTab="food" height="350px" client:visible />
           </div>
 
           <!-- View Full Food Map CTA -->
@@ -510,31 +497,12 @@ const mapMarkers = [
             </div>
           </div>
 
-          <div class="space-y-5">
-            {city.restaurants.map(restaurant => (
-              <RestaurantCard
-                restaurant={{
-                  id: restaurant.id,
-                  name: restaurant.name,
-                  nameEn: restaurant.nameEn,
-                  type: restaurant.type as any,
-                  star: restaurant.star,
-                  diamond: restaurant.diamond,
-                  cuisine: restaurant.cuisine,
-                  avgPrice: restaurant.avgPrice,
-                  rating: restaurant.rating,
-                  address: restaurant.address,
-                  coordinates: restaurant.coordinates,
-                  phone: restaurant.phone,
-                  hours: restaurant.hours,
-                  description: restaurant.description,
-                  dishHighlights: restaurant.dishHighlights,
-                  tags: restaurant.tags,
-                }}
-                client:load
-              />
-            ))}
-          </div>
+          <RestaurantsSection
+            restaurants={city.restaurants}
+            citySlug={city.slug}
+            cityName={city.nameEn}
+            client:visible
+          />
         </section>
 
         <!-- Transport Section -->
@@ -588,7 +556,7 @@ const mapMarkers = [
                   <span>🚇</span> Metro
                 </h4>
                 <ul class="space-y-2 text-sm text-gray-600">
-                  {city.transport.local.metro.map(item => (
+                  {(city.transport.local.metro || []).map(item => (
                     <li class="flex items-start gap-2">
                       <span class="text-blue-500">•</span>
                       <span>{item}</span>
@@ -602,7 +570,7 @@ const mapMarkers = [
                   <span>🚌</span> Bus
                 </h4>
                 <ul class="space-y-2 text-sm text-gray-600">
-                  {city.transport.local.bus.map(item => (
+                  {(city.transport.local.bus || []).map(item => (
                     <li class="flex items-start gap-2">
                       <span class="text-green-500">•</span>
                       <span>{item}</span>
@@ -616,7 +584,7 @@ const mapMarkers = [
                   <span>🚕</span> Taxi
                 </h4>
                 <ul class="space-y-2 text-sm text-gray-600">
-                  {city.transport.local.taxi.map(item => (
+                  {(city.transport.local.taxi || []).map(item => (
                     <li class="flex items-start gap-2">
                       <span class="text-orange-500">•</span>
                       <span>{item}</span>
@@ -764,106 +732,26 @@ const mapMarkers = [
           </div>
         </section>
 
-        <!-- Culture Section -->
+        <!-- Culture Section (Lazy loaded with infinite scroll) -->
         <section id="culture" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">🎎</span> Cultural Tips
+            <span class="text-sm font-normal text-gray-500 ml-2">({city.culturalTips.length} tips)</span>
           </h2>
           <p class="section-subtitle">Essential cultural knowledge for {city.nameEn}</p>
 
-          <div class="space-y-4">
-            {city.culturalTips.map(tip => (
-              <div class="bg-white border rounded-xl p-6">
-                <div class="flex items-center justify-between mb-3">
-                  <h3 class="text-lg font-semibold">{tip.title}</h3>
-                  <span class={`px-2 py-1 rounded text-xs font-medium ${
-                    tip.importance === 'high' ? 'bg-red-100 text-red-700' :
-                    tip.importance === 'medium' ? 'bg-amber-100 text-amber-700' :
-                    'bg-gray-100 text-gray-700'
-                  }`}>
-                    {tip.importance} priority
-                  </span>
-                </div>
-                <p class="text-gray-600">{tip.content}</p>
-              </div>
-            ))}
-          </div>
+          <CulturalSection culturalTips={city.culturalTips} client:visible />
         </section>
 
-        <!-- Emergency Section -->
+        <!-- Emergency Section (Lazy loaded with infinite scroll) -->
         <section id="emergency" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">🚨</span> Emergency Contacts
+            <span class="text-sm font-normal text-gray-500 ml-2">({city.emergencyContacts.length} contacts)</span>
           </h2>
           <p class="section-subtitle">Important phone numbers in {city.nameEn}</p>
 
-          <!-- Emergency Map -->
-          <div class="mb-6">
-            <CityMap city={city} activeTab="emergency" height="350px" client:only="react" />
-          </div>
-
-          <div class="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
-            <p class="text-red-800 font-medium">
-              ⚠️ In case of emergency, call the appropriate number immediately. English operators may be available.
-            </p>
-          </div>
-
-          <!-- Quick Dial Grid -->
-          <div class="mb-8">
-            <h3 class="text-base font-bold text-gray-800 mb-4">Quick Dial</h3>
-            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-4 border border-red-100 mb-4">
-              <p class="text-sm text-red-800">
-                <span class="font-bold">Note:</span> The <span class="font-semibold text-red-600">SOS button</span> in the bottom-right corner of any page provides instant access to emergency services with translation and GPS location sharing.
-              </p>
-            </div>
-            <QuickDialGrid
-              showAmbulance={true}
-              showPolice={true}
-              showFire={true}
-              showTraffic={false}
-              client:load
-            />
-          </div>
-
-          <!-- Grouped Emergency Contacts -->
-          <div class="space-y-6">
-            {hospitals.length > 0 && (
-              <div>
-                <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3 flex items-center gap-2">
-                  <span>🏥</span> Hospitals
-                </h3>
-                <div class="space-y-3">
-                  {hospitals.map(h => (
-                    <EmergencyCard contact={h as any} client:load />
-                  ))}
-                </div>
-              </div>
-            )}
-            {embassies.length > 0 && (
-              <div>
-                <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3 flex items-center gap-2">
-                  <span>🏛️</span> Embassies &amp; Consulates
-                </h3>
-                <div class="space-y-3">
-                  {embassies.map(e => (
-                    <EmergencyCard contact={e as any} client:load />
-                  ))}
-                </div>
-              </div>
-            )}
-            {emergencyOthers.length > 0 && (
-              <div>
-                <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3 flex items-center gap-2">
-                  <span>📞</span> Other Emergency Numbers
-                </h3>
-                <div class="space-y-3">
-                  {emergencyOthers.map(o => (
-                    <EmergencyCard contact={o as any} client:load />
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+          <EmergencySection contacts={city.emergencyContacts} city={city} client:visible />
         </section>
       </div>
 

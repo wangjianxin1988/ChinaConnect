@@ -1,0 +1,2326 @@
+{
+  "slug": "changsha",
+  "name": "长沙",
+  "nameEn": "Changsha",
+  "country": "China",
+  "population": "10.4 million",
+  "coordinates": {
+    "lat": 28.2282,
+    "lng": 112.9388
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Changsha, the capital of Hunan Province, is a vibrant city where ancient history meets modern dynamism. Known as the 'Xiang River City' for its location on the banks of the湘江, Changsha is famous for its spicy Hunan cuisine, revolutionary heritage, and thriving entertainment scene. The city offers a unique blend of traditional culture, natural scenery, and contemporary youth culture, making it one of China's most lively provincial capitals.",
+  "coverImage": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200",
+  "highlights": [
+    "Yuelu Mountain - Scenic mountain with ancient academy",
+    "Orange Island - Xiang River island with Chairman Mao statue",
+    "Hunan Provincial Museum - Ancient treasures and Mawangdui",
+    "Tianxin Pavilion - Historic city landmark",
+    "Huangxing Road步行街 - Bustling shopping district"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "29C (84F)",
+    "avgWinterTemp": "5C (41F)",
+    "tips": "Summers are hot and humid with temperatures often exceeding 35C. Winters are cold and damp. Spring and autumn offer the most pleasant weather. Summer is also the season for spicy crayfish. Pack layers for variable temperatures."
+  },
+  "attractions": [
+    {
+      "id": "yuelu-mountain",
+      "name": "岳麓山",
+      "nameEn": "Yuelu Mountain",
+      "category": "nature",
+      "description": "A scenic mountain on the west bank of Xiang River, home to the famous Yuelu Academy and numerous historical sites. One of Changsha's most beloved natural and cultural attractions.",
+      "address": "岳麓区岳麓山",
+      "coordinates": {
+        "lat": 28.2018,
+        "lng": 112.9444
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "Free (some attractions within require tickets)",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Yuelu Academy",
+        "Ancient telegrap tower",
+        "Arhat Temple",
+        "Cloud Platform"
+      ],
+      "tips": "Take the scenic cable car to the top for panoramic views. Best visited in early morning. Combine with a walk along Yuelu Academy's grounds."
+    },
+    {
+      "id": "yuelu-academy",
+      "name": "岳麓书院",
+      "nameEn": "Yuelu Academy",
+      "category": "cultural",
+      "description": "One of China's four most famous ancient academies, founded in 976 AD. A stunning example of traditional Chinese architecture and academic heritage.",
+      "address": "岳麓区麓山路38号",
+      "coordinates": {
+        "lat": 28.2018,
+        "lng": 112.9388
+      },
+      "openingHours": "07:30-18:00 (Summer), 08:00-17:30 (Winter)",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Teaching Hall",
+        "Book Collection Pavilion",
+        "Surrounding mountains",
+        "Ancient magnolia tree"
+      ],
+      "tips": "Arrive early to avoid tour groups. Audio guides available. The nearby Yuelu Mountain is connected and can be explored together."
+    },
+    {
+      "id": "orange-island",
+      "name": "橘子洲",
+      "nameEn": "Orange Island",
+      "category": "nature",
+      "description": "A large island in the middle of Xiang River, famous for the massive statue of Chairman Mao and beautiful scenery. A symbol of Changsha and revolutionary history.",
+      "address": "岳麓区橘子洲头",
+      "coordinates": {
+        "lat": 28.2266,
+        "lng": 112.9511
+      },
+      "openingHours": "07:00-22:00",
+      "ticketPrice": "Free (metro train 20 CNY)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Chairman Mao statue",
+        "Orange orchards",
+        "River views",
+        "Night fountain show"
+      ],
+      "tips": "Take the scenic train to explore the island. Best at sunset for photos. The fountain show on weekends is spectacular. Wear comfortable walking shoes."
+    },
+    {
+      "id": "hunan-provincial-museum",
+      "name": "湖南省博物馆",
+      "nameEn": "Hunan Provincial Museum",
+      "category": "cultural",
+      "description": "One of China's finest provincial museums, featuring the famous Mawangdui Han Dynasty tombs and artifacts. Home to the best preserved ancient corpses in China.",
+      "address": "开福区东风路50号",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9855
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (timed entry required)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Mawangdui Han Tombs",
+        "Ancient silk artifacts",
+        "Bronze ware collection",
+        "Xiang River civilization"
+      ],
+      "tips": "Book tickets online days in advance as they sell out quickly. The museum is often fully booked during holidays. Allocate at least 3 hours."
+    },
+    {
+      "id": "tianxin-pavilion",
+      "name": "天心阁",
+      "nameEn": "Tianxin Pavilion",
+      "category": "historical",
+      "description": "An iconic historical landmark in the center of Changsha, offering views of the ancient city walls and modern city skyline. One of the few remaining ancient pavilions in Hunan.",
+      "address": "天心区天心路17号",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9711
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "32 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient city wall",
+        "Pavilion architecture",
+        "Ginkgo trees",
+        "City views"
+      ],
+      "tips": "Best visited in autumn when the ginkgo trees turn golden. The surrounding Tianxin Park is free to enter. Nice evening walk along the ancient walls."
+    },
+    {
+      "id": "huangxing-road",
+      "name": "黄兴路步行街",
+      "nameEn": "Huangxing Road Pedestrian Street",
+      "category": "shopping",
+      "description": "Changsha's most famous shopping and entertainment district, featuring a mix of modern malls, traditional shops, and local street food. A vibrant pedestrian area full of energy.",
+      "address": "芙蓉区黄兴路",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "openingHours": "24 hours (shops typically 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Street food stalls",
+        "Historic shops",
+        "潮流购物",
+        "Architecture mix"
+      ],
+      "tips": "Best visited in the evening when illuminated. Try local snacks from street vendors. Connected to other shopping areas nearby."
+    },
+    {
+      "id": "huogong-temple",
+      "name": "火宫殿",
+      "nameEn": "Huogong Temple",
+      "category": "culture",
+      "description": "A historic temple dedicated to the fire god and now a famous food complex serving authentic Hunan cuisine. A must-visit for understanding Changsha's food culture.",
+      "address": "天心区坡子街127号",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9677
+      },
+      "openingHours": "10:00-21:00",
+      "ticketPrice": "Free (food separate)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Fire god temple",
+        "Hunan snacks",
+        "Traditional performances",
+        "Ancient architecture"
+      ],
+      "tips": "Come hungry to sample the many Hunan snacks. The temple itself is interesting but the food is the main attraction. Try the stinky tofu here."
+    },
+    {
+      "id": "taiping-street",
+      "name": "太平街",
+      "nameEn": "Taiping Street",
+      "category": "culture",
+      "description": "A historic street preserving traditional architecture with modern shops and cafes. One of Changsha's most charming cultural districts with preserved Ming-Qing style buildings.",
+      "address": "天心区太平街",
+      "coordinates": {
+        "lat": 28.2266,
+        "lng": 112.9655
+      },
+      "openingHours": "24 hours (shops typically 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional architecture",
+        "Local crafts",
+        "Cafes and bars",
+        "Jiangliang ancestral hall"
+      ],
+      "tips": "Best explored on foot to appreciate the preserved buildings. Visit in late afternoon and stay for evening ambiance. Good for souvenirs and local crafts."
+    },
+    {
+      "id": "pozijie",
+      "name": "坡子街",
+      "nameEn": "Pozi Street",
+      "category": "culture",
+      "description": "One of Changsha's oldest streets, famous for traditional Hunan food and local snacks. The street has over 300 years of history and is a food lover's paradise.",
+      "address": "天心区坡子街",
+      "coordinates": {
+        "lat": 28.225,
+        "lng": 112.9677
+      },
+      "openingHours": "24 hours (shops typically 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Old street atmosphere",
+        "Food stalls",
+        "Traditional medicine shops",
+        "Fire god temple nearby"
+      ],
+      "tips": "Join the locals for evening food tours. Try 老字号 shops for authentic taste. Connected to Taiping Street and Huogong Temple."
+    },
+    {
+      "id": "mawangdui",
+      "name": "马王堆汉墓",
+      "nameEn": "Mawangdui Han Tombs",
+      "category": "historical",
+      "description": "The archaeological site of Mawangdui, where three Han dynasty tombs were discovered with incredibly well-preserved artifacts including the world's oldest silk map and the Lady of Dai.",
+      "address": "芙蓉区古汉路89号",
+      "coordinates": {
+        "lat": 28.2133,
+        "lng": 112.9855
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "Free (included with Provincial Museum ticket)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient tomb site",
+        "Well-preserved artifacts",
+        "Silk artifacts",
+        "Ancient medical texts"
+      ],
+      "tips": "Often visited together with Hunan Provincial Museum. The tomb pits are fascinating. The site shows what archaeological work looks like."
+    },
+    {
+      "id": "hanjiang possibility",
+      "name": "汉墓遗址",
+      "nameEn": "Mawangdui Archaeological Site",
+      "category": "historical",
+      "description": "The excavation site of the Mawangdui tombs, offering insight into Han dynasty burial practices and the lives of the aristocracy over 2,000 years ago.",
+      "address": "芙蓉区古汉路",
+      "coordinates": {
+        "lat": 28.2133,
+        "lng": 112.9855
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Tomb number 1, 2, 3",
+        "Excavation site",
+        "Ancient artifacts display",
+        "Educational exhibits"
+      ],
+      "tips": "Visit after the Provincial Museum for a complete picture. The tomb pits are open for viewing. Excellent for history enthusiasts."
+    },
+    {
+      "id": "meitan lake",
+      "name": "梅溪湖",
+      "nameEn": "Meitan Lake",
+      "category": "nature",
+      "description": "A beautiful artificial lake in the Yuelu district with surrounding parks, art centers, and the famous Meitan Lake Grand Theatre. A modern cultural and recreational area.",
+      "address": "岳麓区梅溪湖",
+      "coordinates": {
+        "lat": 28.1818,
+        "lng": 112.9111
+      },
+      "openingHours": "24 hours (buildings vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Grand Theatre",
+        "Musical fountain",
+        "Island attractions",
+        "Art galleries"
+      ],
+      "tips": "Best visited in the evening for the fountain show. The walking path around the lake is pleasant. Combine with nearby Yuelu Mountain."
+    },
+    {
+      "id": "dufu-pavilion",
+      "name": "杜甫江阁",
+      "nameEn": "Du Fu Pavilion",
+      "category": "historical",
+      "description": "A pavilion built in memory of the famous Tang dynasty poet Du Fu, who lived in Changsha. Offers beautiful views of Xiang River and the city skyline.",
+      "address": "天心区白沙路",
+      "coordinates": {
+        "lat": 28.2288,
+        "lng": 112.9588
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "15 CNY",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Poetry inscriptions",
+        "River views",
+        "Du Fu history",
+        "Night illumination"
+      ],
+      "tips": "Best visited at sunset or at night when illuminated. The surrounding area has good walking paths along the river. Nice for photography."
+    },
+    {
+      "id": "yunong-guzhen",
+      "name": "云拢古村",
+      "nameEn": "Yunong Ancient Village",
+      "category": "culture",
+      "description": "A well-preserved ancient village near Changsha with traditional architecture, folk customs, and rural scenery. Offers an escape from the modern city.",
+      "address": "望城区云拢镇",
+      "coordinates": {
+        "lat": 28.3211,
+        "lng": 112.8511
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Ancient architecture",
+        "Folk performances",
+        "Rural scenery",
+        "Traditional crafts"
+      ],
+      "tips": "Good for a day trip from the city. Arrive early for folk performances. Wear comfortable shoes for walking on uneven paths."
+    },
+    {
+      "id": "shijin-hutong",
+      "name": "石井胡同",
+      "nameEn": "Shijing Hutong",
+      "category": "culture",
+      "description": "A restored historic hutong (alley) area showcasing traditional Changsha architecture and lifestyle. Now houses boutique shops and cafes.",
+      "address": "天心区",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9694
+      },
+      "openingHours": "24 hours (shops vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional architecture",
+        "Boutique shops",
+        "Local art",
+        "Photo opportunities"
+      ],
+      "tips": "Best for photography enthusiasts. The restored buildings are beautiful. Visit in good weather for best photos."
+    },
+    {
+      "id": "changsha-aquarium",
+      "name": "长沙海底世界",
+      "nameEn": "Changsha Aquarium",
+      "category": "entertainment",
+      "description": "A large aquarium with diverse marine life, dolphin shows, and interactive exhibits. Popular with families and children.",
+      "address": "开福区319国道",
+      "coordinates": {
+        "lat": 28.2511,
+        "lng": 112.9211
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "150 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Dolphin shows",
+        "Shark tanks",
+        "Reef tunnel",
+        "Seal performances"
+      ],
+      "tips": "Check show times when you arrive. Weekends are crowded. Combine with nearby Furong Ancient Town."
+    },
+    {
+      "id": "furong-ancient-town",
+      "name": "芙蓉古镇",
+      "nameEn": "Furong Ancient Town",
+      "category": "culture",
+      "description": "A scenic ancient town built around a waterfall, known as the '挂在瀑布上的千年古镇'. Famous for its unique architecture and Hakka culture.",
+      "address": "永定区 (near Changsha)",
+      "coordinates": {
+        "lat": 28.5511,
+        "lng": 112.8811
+      },
+      "openingHours": "全天",
+      "ticketPrice": "100 CNY",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "Waterfall through town",
+        "Hakka architecture",
+        "Traditional performances",
+        "Night views"
+      ],
+      "tips": "About 2 hours from Changsha. Stay overnight for the illuminated waterfall. Try local Hakka dishes. Best in dry season (autumn)."
+    },
+    {
+      "id": "hunan-martyrs-park",
+      "name": "湖南烈士公园",
+      "nameEn": "Hunan Martyrs Park",
+      "category": "nature",
+      "description": "Changsha's largest park featuring a memorial tower, beautiful gardens, and a large lake. A peaceful retreat in the heart of the city.",
+      "address": "开福区营盘东路",
+      "coordinates": {
+        "lat": 28.2355,
+        "lng": 112.9755
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Martyrs Tower",
+        "Peony garden",
+        "Lake boating",
+        "Morning tai chi"
+      ],
+      "tips": "Join locals doing tai chi in the early morning. The memorial tower is impressive. Great for a morning walk or afternoon relaxation."
+    },
+    {
+      "id": "xihu Scenic",
+      "name": "西湖公园",
+      "nameEn": "Xihu Park",
+      "category": "nature",
+      "description": "A scenic urban park with beautiful lake, gardens, and modern amenities. Popular with locals for morning exercise and evening strolls.",
+      "address": "岳麓区西湖公园",
+      "coordinates": {
+        "lat": 28.2188,
+        "lng": 112.9255
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lake views",
+        "Garden landscapes",
+        "Fountain show",
+        "Cafes nearby"
+      ],
+      "tips": "Good for a quiet morning or evening walk. The surrounding area has good cafes. Less crowded than Martyrs Park."
+    },
+    {
+      "id": "lushan-national-forest",
+      "name": "芦山国家森林公园",
+      "nameEn": "Lushan National Forest Park",
+      "category": "nature",
+      "description": "A scenic forest area near Changsha with hiking trails, ancient temples, and beautiful natural scenery. Good for day trips and outdoor activities.",
+      "address": "长沙县江背镇",
+      "coordinates": {
+        "lat": 28.3511,
+        "lng": 113.0511
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Forest trails",
+        "Ancient temple",
+        "Fresh air",
+        "Wildlife"
+      ],
+      "tips": "Wear hiking shoes. Bring water and snacks. Best visited in spring for flowers or autumn for foliage."
+    },
+    {
+      "id": "changsha-window-world",
+      "name": "长沙世界之窗",
+      "nameEn": "Changsha Window of the World",
+      "category": "entertainment",
+      "description": "A theme park featuring miniature world landmarks, thrilling rides, and cultural performances. Popular family entertainment destination.",
+      "address": "开福区三一大道485号",
+      "coordinates": {
+        "lat": 28.2511,
+        "lng": 112.9455
+      },
+      "openingHours": "09:00-22:00 (seasonal)",
+      "ticketPrice": "130 CNY",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Miniature world landmarks",
+        "Thrilling rides",
+        "Evening shows",
+        "Water park"
+      ],
+      "tips": "Book tickets online. Best visited in spring and autumn. Evening shows are spectacular. Combine with nearby Hunan Martyrs Park."
+    },
+    {
+      "id": "changsha-yuelu-shan-science",
+      "name": "岳麓山索道",
+      "nameEn": "Yuelu Mountain Cable Car",
+      "category": "nature",
+      "description": "Scenic cable car ride offering panoramic views of Changsha and Yuelu Mountain. A popular way to reach the mountain summit.",
+      "address": "岳麓区岳麓山",
+      "coordinates": {
+        "lat": 28.2018,
+        "lng": 112.9444
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "30 CNY (one way), 50 CNY (round trip)",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "Panoramic views",
+        "Aerial scenery",
+        "Mountain summit access",
+        "Photo opportunities"
+      ],
+      "tips": "Combine with Yuelu Mountain visit. Best on clear days. Morning rides have less fog. Can walk down for different views."
+    },
+    {
+      "id": "changsha-bamboo-lake",
+      "name": "湘江竹江",
+      "nameEn": "Xiang River Bamboo Grove",
+      "category": "nature",
+      "description": "A scenic riverside area with bamboo groves along the Xiang River, offering peaceful walking paths and beautiful river views.",
+      "address": "岳麓区潇湘大道",
+      "coordinates": {
+        "lat": 28.2111,
+        "lng": 112.9511
+      },
+      "openingHours": "24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Bamboo paths",
+        "River views",
+        "Sunset scenery",
+        "Quiet atmosphere"
+      ],
+      "tips": "Best at sunset. The bamboo grove creates a peaceful atmosphere. Good for photography and morning walks. Connected to Yuelu Mountain area."
+    },
+    {
+      "id": "changsha-cultural-art",
+      "name": "谢子龙影像艺术馆",
+      "nameEn": "Xie Zilong Photography Museum",
+      "category": "cultural",
+      "description": "A modern photography museum showcasing Chinese photography history and contemporary works. The building itself is architecturally significant.",
+      "address": "岳麓区潇湘南路",
+      "coordinates": {
+        "lat": 28.1811,
+        "lng": 112.9088
+      },
+      "openingHours": "10:00-18:00 (Closed Monday)",
+      "ticketPrice": "80 CNY (exhibitions vary)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Photography exhibitions",
+        "Modern architecture",
+        "Art books cafe",
+        "Photography archives"
+      ],
+      "tips": "Check exhibition schedule online. The exterior is great for photos. Near Meitan Lake. Combine with Meitan Lake Grand Theatre."
+    },
+    {
+      "id": "changsha-ifc-tower",
+      "name": "长沙IFS国金中心",
+      "nameEn": "Changsha IFS Tower",
+      "category": "shopping",
+      "description": "Changsha's tallest building and premier luxury shopping destination with international brands, rooftop observation deck, and art installations.",
+      "address": "芙蓉区解放西路",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9388
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free (observation deck 100 CNY)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Observation deck views",
+        "Luxury brands",
+        "KAWS art installation",
+        "Rooftop bar"
+      ],
+      "tips": "Book observation deck tickets online. The KAWS statue on the roof is iconic. Best at sunset or night. Great for luxury shopping."
+    },
+    {
+      "id": "changsha-grand-theatre",
+      "name": "梅溪湖大剧院",
+      "nameEn": "Meitan Lake Grand Theatre",
+      "category": "cultural",
+      "description": "A stunning architectural landmark designed by Zaha Hadid, hosting world-class performances and cultural events.",
+      "address": "岳麓区梅溪湖",
+      "coordinates": {
+        "lat": 28.1818,
+        "lng": 112.9111
+      },
+      "openingHours": "09:00-20:00 (performances vary)",
+      "ticketPrice": "Performance tickets vary (100-500 CNY)",
+      "recommendedVisitTime": "2-3 hours (for performance)",
+      "highlights": [
+        "Zaha Hadid architecture",
+        "World-class performances",
+        "Musical fountain",
+        "Evening lighting"
+      ],
+      "tips": "Book tickets in advance for popular shows. The building is impressive even without attending a performance. Combine with Meitan Lake walk."
+    },
+    {
+      "id": "changsha-wangcheng",
+      "name": "望城古镇",
+      "nameEn": "Wangcheng Ancient Town",
+      "category": "culture",
+      "description": "A historic town with well-preserved Qing dynasty architecture, traditional crafts, and authentic Hunan rural culture.",
+      "address": "望城区靖港镇",
+      "coordinates": {
+        "lat": 28.3511,
+        "lng": 112.7511
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Ancient architecture",
+        "Traditional crafts",
+        "Local snacks",
+        "River views"
+      ],
+      "tips": "About 1 hour from Changsha city. Try local snacks. Best on weekdays. Combine with nearby Tongguan for a full day trip."
+    },
+    {
+      "id": "changsha-baisha-shuyuan",
+      "name": "白沙古井",
+      "nameEn": "Baisha Ancient Well",
+      "category": "cultural",
+      "description": "A historic well that has been providing water to Changsha for over 1000 years, surrounded by traditional temples and tea houses.",
+      "address": "天心区白沙路",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9555
+      },
+      "openingHours": "24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "Ancient well",
+        "Traditional temples",
+        "Tea houses",
+        "Local residents"
+      ],
+      "tips": "Part of local daily life - locals still collect water here. Near Du Fu Pavilion. Good for cultural immersion. Best in morning."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "changsha-1",
+      "name": "火宫殿",
+      "nameEn": "Huogong Temple",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "坡子街127号, 天心区",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9677
+      },
+      "phone": "+86 731 8581 8528",
+      "hours": "10:00-21:00",
+      "description": "The most famous Hunan cuisine restaurant complex in Changsha.",
+      "dishHighlights": [
+        "Stinky tofu",
+        "Spicy fried rice",
+        "Chairman Mao's favorite red-braised pork"
+      ],
+      "tags": [
+        "hunan",
+        "iconic",
+        "must-visit"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-2",
+      "name": "老许家肉炒肉",
+      "nameEn": "Lao Xujia Meat Stir-fry",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 60,
+      "rating": 4.7,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8555 5555",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Legendary restaurant famous for its pork dishes.",
+      "dishHighlights": [
+        "Meat stir-fried with meat",
+        "Spicy pork",
+        "Home-style dishes"
+      ],
+      "tags": [
+        "local",
+        "pork",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-3",
+      "name": "一盏灯",
+      "nameEn": "Yi Deng Deng",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 70,
+      "rating": 4.6,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8888 8888",
+      "hours": "11:00-21:00",
+      "description": "Popular Hunan restaurant chain known for authentic spicy dishes.",
+      "dishHighlights": [
+        "Spicy chicken",
+        "Buddha jumps over the wall",
+        "Mao's braised pork"
+      ],
+      "tags": [
+        "hunan",
+        "spicy",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-4",
+      "name": "黑色经典",
+      "nameEn": "Black Classic",
+      "type": "local",
+      "cuisine": "Hunan Snacks",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "坡子街店, 天心区",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9677
+      },
+      "phone": "N/A",
+      "hours": "10:00-22:00",
+      "description": "Famous for stinky tofu and traditional Hunan snacks.",
+      "dishHighlights": [
+        "Stinky tofu",
+        "Fried rice noodles",
+        "Glutinous rice balls"
+      ],
+      "tags": [
+        "street-food",
+        "snacks",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-5",
+      "name": "茶颜悦色",
+      "nameEn": "Sexy Tea",
+      "type": "local",
+      "cuisine": "Milk Tea",
+      "avgPrice": 25,
+      "rating": 4.8,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "N/A",
+      "hours": "10:00-22:00",
+      "description": "Changsha's beloved local milk tea chain with Chinese styling.",
+      "dishHighlights": [
+        "，声声乌龙",
+        "幽兰拿铁",
+        "筝筝纸鸢"
+      ],
+      "tags": [
+        "milk-tea",
+        "local",
+        "iconic"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-6",
+      "name": "文和友",
+      "nameEn": "Wenheyou",
+      "type": "local",
+      "cuisine": "Hunan Fast Food",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8888 8888",
+      "hours": "11:00-03:00",
+      "description": "Popular chain with retro Changsha atmosphere and local snacks.",
+      "dishHighlights": [
+        "Big oil-stained shrimp",
+        "Stinky tofu",
+        "Chili crabs"
+      ],
+      "tags": [
+        "retro",
+        "local",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-7",
+      "name": "盟重烧烤",
+      "nameEn": "Mengzhong BBQ",
+      "type": "local",
+      "cuisine": "Hunan BBQ",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "多条分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8555 8888",
+      "hours": "17:00-02:00",
+      "description": "Famous grilled skewer restaurant popular with locals.",
+      "dishHighlights": [
+        "Grilled skewers",
+        "Spicy octopus",
+        "Lamb kebabs"
+      ],
+      "tags": [
+        "bbq",
+        "nightlife",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-8",
+      "name": "辣椒炒肉",
+      "nameEn": "Chili and Pork",
+      "type": "local",
+      "cuisine": "Hunan Home Style",
+      "avgPrice": 50,
+      "rating": 4.4,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8585 8585",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Simple but beloved local chain for authentic home-style cooking.",
+      "dishHighlights": [
+        "Chili stir-fried pork",
+        "Egg dishes",
+        "Vegetable dishes"
+      ],
+      "tags": [
+        "home-style",
+        "affordable",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-9",
+      "name": "徐记虾尾",
+      "nameEn": "Xuji Shrimp",
+      "type": "local",
+      "cuisine": "Crayfish",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8888 6666",
+      "hours": "16:00-02:00",
+      "description": "Premium crayfish restaurant famous in Changsha.",
+      "dishHighlights": [
+        "Spicy crayfish",
+        "Crayfish noodles",
+        "Garlic crayfish"
+      ],
+      "tags": [
+        "crayfish",
+        "summer",
+        "premium"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-10",
+      "name": "桂林路卤味",
+      "nameEn": "Guilin Road Braised Food",
+      "type": "local",
+      "cuisine": "Braised Snacks",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "天心区桂林路",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9688
+      },
+      "phone": "N/A",
+      "hours": "全天",
+      "description": "Legendary late-night braised food stall.",
+      "dishHighlights": [
+        "Braised chicken feet",
+        "Braised tofu",
+        "Spicy octopus"
+      ],
+      "tags": [
+        "late-night",
+        "braised",
+        "street-food"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-11",
+      "name": "龙颜家",
+      "nameEn": "Longyanjia",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8585 8585",
+      "hours": "11:00-21:30",
+      "description": "Popular chain restaurant with consistently good Hunan food.",
+      "dishHighlights": [
+        "Spicy crab",
+        "Fish head with pickled cabbage",
+        "Spicy chicken"
+      ],
+      "tags": [
+        "hunan",
+        "chain",
+        "reliable"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-12",
+      "name": "渔湘汇",
+      "nameEn": "Yuxiang Hui",
+      "type": "local",
+      "cuisine": "Hunan Seafood",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "开福区湘江中路",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9611
+      },
+      "phone": "+86 731 8988 8888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Popular seafood restaurant with Xiang River views.",
+      "dishHighlights": [
+        "Spicy lobster",
+        "Steamed fish",
+        "Crab dishes"
+      ],
+      "tags": [
+        "seafood",
+        "river-view",
+        "upscale"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-13",
+      "name": "壹德壹",
+      "nameEn": "Yideyi",
+      "type": "local",
+      "cuisine": "Rice Noodles",
+      "avgPrice": 25,
+      "rating": 4.6,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8555 8888",
+      "hours": "06:00-20:00",
+      "description": "Famous for rice noodles and Hunan breakfast items.",
+      "dishHighlights": [
+        "Rice noodles",
+        "Steamed dumplings",
+        "Soy milk"
+      ],
+      "tags": [
+        "breakfast",
+        "noodles",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-14",
+      "name": "米粉研究所",
+      "nameEn": "Rice Noodle Research Institute",
+      "type": "local",
+      "cuisine": "Rice Noodles",
+      "avgPrice": 35,
+      "rating": 4.5,
+      "address": "岳麓区麓山南路",
+      "coordinates": {
+        "lat": 28.1988,
+        "lng": 112.9388
+      },
+      "phone": "N/A",
+      "hours": "07:00-20:00",
+      "description": "Trendy rice noodle restaurant popular with students.",
+      "dishHighlights": [
+        "Signature rice noodles",
+        "Spicy beef noodles",
+        "Clear soup noodles"
+      ],
+      "tags": [
+        "noodles",
+        "trendy",
+        "student"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-15",
+      "name": "昱匠",
+      "nameEn": "Yujiang",
+      "type": "local",
+      "cuisine": "Japanese",
+      "avgPrice": 300,
+      "rating": 4.7,
+      "address": "IFS国金中心",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8888 9999",
+      "hours": "11:30-14:00, 17:30-22:00",
+      "description": "High-end Japanese sushi restaurant in the IFC mall.",
+      "dishHighlights": [
+        "Omakase course",
+        "Fresh sashimi",
+        "Wagyu beef"
+      ],
+      "tags": [
+        "japanese",
+        "sushi",
+        "premium"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-16",
+      "name": "王品牛排",
+      "nameEn": "Wang Steak",
+      "type": "international",
+      "cuisine": "Western Steakhouse",
+      "avgPrice": 250,
+      "rating": 4.5,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 400 888 8888",
+      "hours": "11:00-22:00",
+      "description": "Popular steakhouse chain with consistent quality.",
+      "dishHighlights": [
+        "Grilled ribeye",
+        "Seafood platter",
+        "Tiramisu"
+      ],
+      "tags": [
+        "steakhouse",
+        "western",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-17",
+      "name": "亚马逊海鲜自助",
+      "nameEn": "Amazon Seafood Buffet",
+      "type": "international",
+      "cuisine": "Seafood Buffet",
+      "avgPrice": 200,
+      "rating": 4.3,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8585 8585",
+      "hours": "11:00-15:00, 17:00-21:00",
+      "description": "Popular all-you-can-eat seafood buffet.",
+      "dishHighlights": [
+        "Crab legs",
+        "Shrimp",
+        "Sushi",
+        "Desserts"
+      ],
+      "tags": [
+        "buffet",
+        "seafood",
+        "family"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-18",
+      "name": "海底捞火锅",
+      "nameEn": "Haidilao Hot Pot",
+      "type": "chain",
+      "cuisine": "Hot Pot",
+      "avgPrice": 150,
+      "rating": 4.8,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "95027",
+      "hours": "24 hours",
+      "description": "World-famous hot pot chain with exceptional service.",
+      "dishHighlights": [
+        "Self-service hot pot",
+        "Hand-pulled noodles",
+        "Free manicure"
+      ],
+      "tags": [
+        "hot-pot",
+        "service",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-19",
+      "name": "炊烟时代",
+      "nameEn": "Chuiyan Era",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8555 6666",
+      "hours": "11:00-21:00",
+      "description": "Popular Hunan chain known for classic dishes.",
+      "dishHighlights": [
+        "Braised pork with preserved vegetables",
+        "Spicy lotus root",
+        "Chairman Mao's pork"
+      ],
+      "tags": [
+        "hunan",
+        "chain",
+        "classic"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-20",
+      "name": "鲁重酒店",
+      "nameEn": "Luzhong Hotel",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "开福区湘江中路112号",
+      "coordinates": {
+        "lat": 28.2355,
+        "lng": 112.9588
+      },
+      "phone": "+86 731 8888 8888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "High-end Hunan restaurant with elegant atmosphere.",
+      "dishHighlights": [
+        "Braised shark fin",
+        "Bird's nest",
+        "Premium seafood"
+      ],
+      "tags": [
+        "upscale",
+        "hunan",
+        "business"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-21",
+      "name": "披萨马上诺",
+      "nameEn": "Pizza Marano",
+      "type": "international",
+      "cuisine": "Italian",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 400 888 8888",
+      "hours": "10:00-22:00",
+      "description": "Popular Italian pizzeria chain.",
+      "dishHighlights": [
+        "Wood-fired pizza",
+        "Pasta",
+        "Tiramisu"
+      ],
+      "tags": [
+        "italian",
+        "pizza",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-22",
+      "name": "星巴克",
+      "nameEn": "Starbucks",
+      "type": "cafe",
+      "cuisine": "Coffee",
+      "avgPrice": 45,
+      "rating": 4.2,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "N/A",
+      "hours": "07:00-22:00",
+      "description": "International coffee chain with comfortable seating.",
+      "dishHighlights": [
+        "Caramel macchiato",
+        "Matcha latte",
+        "Cold brew"
+      ],
+      "tags": [
+        "coffee",
+        "cafe",
+        "workspace"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-23",
+      "name": "客串出品",
+      "nameEn": "Kechuan Products",
+      "type": "local",
+      "cuisine": "Hunan BBQ",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "天心区太平街",
+      "coordinates": {
+        "lat": 28.2266,
+        "lng": 112.9655
+      },
+      "phone": "+86 731 8222 8888",
+      "hours": "17:00-02:00",
+      "description": "Popular grilled skewer restaurant with retro Changsha atmosphere.",
+      "dishHighlights": [
+        "Lamb kebabs",
+        "Grilled squid",
+        "Spicy skewers"
+      ],
+      "tags": [
+        "bbq",
+        "late-night",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-24",
+      "name": "德仁聚",
+      "nameEn": "Derenju",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 70,
+      "rating": 4.4,
+      "address": "开福区湘江中路",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9588
+      },
+      "phone": "+86 731 8988 6666",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Popular riverside restaurant with authentic Hunan home-style dishes.",
+      "dishHighlights": [
+        "Chairman Mao's pork",
+        "Spicy fish head",
+        "Braised pork"
+      ],
+      "tags": [
+        "hunan",
+        "home-style",
+        "river-view"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-25",
+      "name": "壹德壹粉店",
+      "nameEn": "Yideyi Rice Noodles",
+      "type": "local",
+      "cuisine": "Rice Noodles",
+      "avgPrice": 25,
+      "rating": 4.6,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8555 8888",
+      "hours": "06:00-20:00",
+      "description": "Famous rice noodle chain with authentic Hunan-style breakfast.",
+      "dishHighlights": [
+        "Steamed rice noodles",
+        "Spicy beef noodles",
+        "Soy milk"
+      ],
+      "tags": [
+        "breakfast",
+        "noodles",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-26",
+      "name": "坛宗剁椒鱼头",
+      "nameEn": "Tanzong Chopped Chili Fish Head",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "开福区泊富国际",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9711
+      },
+      "phone": "+86 731 8992 9999",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Famous for their signature chopped chili fish head, a must-try Hunan dish.",
+      "dishHighlights": [
+        "Chopped chili fish head",
+        "Spicy shrimp",
+        "Steamed fish"
+      ],
+      "tags": [
+        "hunan",
+        "signature-dish",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-27",
+      "name": "费大厨辣椒炒肉",
+      "nameEn": "Fei Da Chu Chili Pork",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 60,
+      "rating": 4.8,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8555 5555",
+      "hours": "11:00-21:00",
+      "description": "Most popular Hunan chain known for their iconic chili pork dish.",
+      "dishHighlights": [
+        "Chili stir-fried pork",
+        "Chairman Mao's pork",
+        "Steamed fish"
+      ],
+      "tags": [
+        "hunan",
+        "chain",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-28",
+      "name": "蛙来哒",
+      "nameEn": "Wulaida",
+      "type": "local",
+      "cuisine": "Frog Hot Pot",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8222 8888",
+      "hours": "11:00-23:00",
+      "description": "Popular frog hot pot chain with various flavor options.",
+      "dishHighlights": [
+        "Spicy frog hot pot",
+        "Sichuan style frog",
+        "Clear soup frog"
+      ],
+      "tags": [
+        "frog",
+        "hot-pot",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-29",
+      "name": "北二楼大碗先生",
+      "nameEn": "Beier Lou Dawansheng",
+      "type": "local",
+      "cuisine": "Hunan Home Style",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "岳麓区麓山南路",
+      "coordinates": {
+        "lat": 28.1988,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8888 5555",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Popular student-friendly restaurant with generous portions and great value.",
+      "dishHighlights": [
+        "Big bowl rice dishes",
+        "Spicy chicken",
+        "Home-style vegetables"
+      ],
+      "tags": [
+        "student",
+        "affordable",
+        "home-style"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "changsha-30",
+      "name": "味上湘菜馆",
+      "nameEn": "Weishang Hunan",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 70,
+      "rating": 4.4,
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "phone": "+86 731 8998 8888",
+      "hours": "11:00-21:00",
+      "description": "Reliable Hunan chain restaurant with consistent quality and good service.",
+      "dishHighlights": [
+        "Spicy crab",
+        "Braised pork",
+        "Steamed fish"
+      ],
+      "tags": [
+        "hunan",
+        "chain",
+        "reliable"
+      ],
+      "star": 0,
+      "diamond": 0
+    }
+  ],
+  "hotels": [
+    {
+      "name": "长沙瑞吉酒店",
+      "nameEn": "The St. Regis Changsha",
+      "budget": "luxury",
+      "priceRange": "1800-4000 CNY/night",
+      "address": "开福区湘江北路308号",
+      "coordinates": {
+        "lat": 28.2355,
+        "lng": 112.9555
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Xiang River views",
+        "Luxurious spa",
+        "Multiple restaurants",
+        "Butler service"
+      ],
+      "bookingTips": "Request river-view rooms for best scenery. The St. Regis Butler service is excellent."
+    },
+    {
+      "name": "长沙尼依格罗酒店",
+      "nameEn": "Niccolo Changsha",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "芙蓉区IFS国金中心",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9388
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Top of IFS building",
+        "Panoramic city views",
+        "Modern luxury",
+        "Fashion location"
+      ],
+      "bookingTips": "Highest hotel in Changsha with best views. Book sky lobby rooms for experience."
+    },
+    {
+      "name": "长沙万达文华酒店",
+      "nameEn": "Wanda Vista Changsha",
+      "budget": "luxury",
+      "priceRange": "1200-2500 CNY/night",
+      "address": "开福区湘江中路300号",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9588
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Riverfront location",
+        "Elegant decor",
+        "Good breakfast",
+        "Central location"
+      ],
+      "bookingTips": "Great location for exploring the riverfront. Good for both business and leisure."
+    },
+    {
+      "name": "长沙香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Changsha",
+      "budget": "luxury",
+      "priceRange": "1000-2000 CNY/night",
+      "address": "雨花区韶山中路",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9211
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location",
+        "Famous Sunday brunch",
+        "Large pool",
+        "Executive lounge"
+      ],
+      "bookingTips": "Shangri-La会员 gets better rates. Weekend brunch is famous citywide."
+    },
+    {
+      "name": "长沙北辰洲际酒店",
+      "nameEn": "InterContinental Changsha",
+      "budget": "luxury",
+      "priceRange": "900-1800 CNY/night",
+      "address": "开福区北辰三角洲",
+      "coordinates": {
+        "lat": 28.2511,
+        "lng": 112.9388
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near Xiang River",
+        "Modern facilities",
+        "Good for business",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Newer hotel with modern amenities. Good for riverfront walks."
+    },
+    {
+      "name": "长沙华天大酒店",
+      "nameEn": "Huatian Hotel Changsha",
+      "budget": "mid",
+      "priceRange": "500-1000 CNY/night",
+      "address": "芙蓉区解放东路",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9255
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Long history",
+        "Good service",
+        "Reliable quality"
+      ],
+      "bookingTips": "Long-standing Changsha brand. Weekend rates often lower."
+    },
+    {
+      "name": "长沙通程国际大酒店",
+      "nameEn": "Tongcheng International Hotel",
+      "budget": "mid",
+      "priceRange": "500-900 CNY/night",
+      "address": "芙蓉区韶山北路",
+      "coordinates": {
+        "lat": 28.2288,
+        "lng": 112.9211
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near railway station",
+        "Business facilities",
+        "Good breakfast",
+        "Spacious rooms"
+      ],
+      "bookingTips": "Convenient for train travelers. Good value for the location."
+    },
+    {
+      "name": "长沙世纪金源大酒店",
+      "nameEn": "Millennium Hotel Changsha",
+      "budget": "mid",
+      "priceRange": "450-800 CNY/night",
+      "address": "开福区金霞区",
+      "coordinates": {
+        "lat": 28.2455,
+        "lng": 112.9188
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near railway",
+        "Large property",
+        "Good facilities",
+        "Value for money"
+      ],
+      "bookingTips": "Good for train station access. Often has weekend discounts."
+    },
+    {
+      "name": "长沙觅你酒店",
+      "nameEn": "Mínǐ Hotel",
+      "budget": "budget",
+      "priceRange": "250-450 CNY/night",
+      "address": "天心区黄兴路",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9411
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Boutique style",
+        "Near shopping",
+        "Modern decor"
+      ],
+      "bookingTips": "Perfect location for shopping and food. Book early for best rates."
+    },
+    {
+      "name": "长沙凡响酒店",
+      "nameEn": "FANXiang Hotel",
+      "budget": "budget",
+      "priceRange": "200-400 CNY/night",
+      "address": "岳麓区麓山南路",
+      "coordinates": {
+        "lat": 28.2018,
+        "lng": 112.9388
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near Yuelu Mountain",
+        "University area",
+        "Good value",
+        "Helpful staff"
+      ],
+      "bookingTips": "Great for exploring Yuelu Mountain and Yuelu Academy. Student-friendly area."
+    },
+    {
+      "name": "长沙神农大酒店",
+      "nameEn": "Shennong Hotel",
+      "budget": "mid",
+      "priceRange": "400-700 CNY/night",
+      "address": "雨花区芙蓉中路",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9255
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Central business district",
+        "Good breakfast",
+        "Reliable service",
+        "Convenient transport"
+      ],
+      "bookingTips": "Good balance of price and location. Near metro station."
+    },
+    {
+      "name": "长沙异风印象酒店",
+      "nameEn": "Yifeng Impression Hotel",
+      "budget": "budget",
+      "priceRange": "200-350 CNY/night",
+      "address": "天心区太平街",
+      "coordinates": {
+        "lat": 28.2266,
+        "lng": 112.9655
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Historic area",
+        "Boutique decor",
+        "Near attractions",
+        "Good service"
+      ],
+      "bookingTips": "Perfect for exploring Taiping Street and Pozi Street. Great location."
+    },
+    {
+      "name": "长沙延年酒店",
+      "nameEn": "Yannian Hotel",
+      "budget": "mid",
+      "priceRange": "350-600 CNY/night",
+      "address": "开福区营盘东路",
+      "coordinates": {
+        "lat": 28.2355,
+        "lng": 112.9755
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Martyrs Park",
+        "Quiet location",
+        "Good rooms",
+        "Affordable"
+      ],
+      "bookingTips": "Good for morning walks in Martyrs Park. Quieter area of the city."
+    },
+    {
+      "name": "长沙雅致酒店",
+      "nameEn": "Yazhi Hotel",
+      "budget": "budget",
+      "priceRange": "200-400 CNY/night",
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Multiple locations",
+        "Clean and modern",
+        "Affordable",
+        "Consistent quality"
+      ],
+      "bookingTips": "Reliable budget option. Many locations near metro stations."
+    },
+    {
+      "name": "长沙如家快捷酒店",
+      "nameEn": "Home Inn Changsha",
+      "budget": "budget",
+      "priceRange": "120-250 CNY/night",
+      "address": "多家分店",
+      "coordinates": {
+        "lat": 28.2282,
+        "lng": 112.9388
+      },
+      "rating": 4.0,
+      "highlights": [
+        "Extensive locations",
+        "Consistent quality",
+        "Basic amenities",
+        "Affordable"
+      ],
+      "bookingTips": "Reliable budget option. Many locations near metro stations."
+    },
+    {
+      "name": "长沙茉莉花国际酒店",
+      "nameEn": "Jasmin Garden International Hotel",
+      "budget": "luxury",
+      "priceRange": "800-1500 CNY/night",
+      "address": "开福区湘江中路",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9588
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Riverside location",
+        "Modern facilities",
+        "Multiple restaurants",
+        "Spa services"
+      ],
+      "bookingTips": "Request river-view rooms for best scenery. Great location for exploring riverfront attractions."
+    },
+    {
+      "name": "长沙皇冠假日酒店",
+      "nameEn": "Crowne Plaza Changsha",
+      "budget": "mid",
+      "priceRange": "600-1000 CNY/night",
+      "address": "芙蓉区五一大道",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9355
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Business facilities",
+        "Good breakfast",
+        "Reliable service"
+      ],
+      "bookingTips": "Excellent location near major shopping areas. Weekend rates often lower. Good for both business and leisure."
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major international airports via Beijing, Shanghai, Guangzhou",
+        "to": "Changsha Huanghua International Airport (CSX)",
+        "duration": "Varies by origin (1.5-3 hours from major Chinese cities)",
+        "price": "400-2500 CNY",
+        "frequency": "Multiple daily flights",
+        "tips": "Airport is 25km from city center. Metro Line 6 connects to city (5-7 CNY, 45 minutes). Airport express bus also available."
+      },
+      {
+        "type": "train",
+        "from": "Shanghai (4h), Beijing (5.5h), Guangzhou (2.5h), Shenzhen (3h), Wuhan (1.5h)",
+        "to": "Changsha Station / Changsha South Station / Changsha East Station",
+        "duration": "1.5-6 hours depending on origin",
+        "price": "200-800 CNY",
+        "frequency": "Multiple daily high-speed departures",
+        "tips": "Changsha South Station is for high-speed trains. Changsha Station is for regular trains. All stations have metro connections."
+      }
+    ],
+    "local": {
+      "metro": [
+        "6 lines covering major districts",
+        "Single ride: 2-7 CNY depending on distance",
+        "Peak hours: 07:30-09:00, 17:30-19:00 - expect crowds",
+        "Metro maps in English via app",
+        "Line 1 (north-south): Connects railway stations",
+        "Line 2 (main east-west): Major tourist areas",
+        "Line 4 (scenic): Connects to Yuelu Mountain area",
+        "Airport Line: Line 6 to Huanghua Airport",
+        "First train: 06:30, Last train: 23:00 (varies by line)",
+        "Women-only cars available on some lines during peak"
+      ],
+      "bus": [
+        "Extensive network covering all areas",
+        "Single ride: 2 CNY (regular buses)",
+        "Air-conditioned buses: 2-3 CNY",
+        "BRT (Bus Rapid Transit): Available on major routes",
+        "Night buses: Limited but available on key routes",
+        "Download Changsha Transit app for real-time info",
+        "Tips: Have exact change ready, or use transit card"
+      ],
+      "taxi": [
+        "Starting fare: 8 CNY (first 2km)",
+        "Waiting: 0.5 CNY per minute",
+        "Night surcharge: 20% extra (22:00-06:00)",
+        "Always insist on meter use",
+        "Didi app highly recommended (English interface available)",
+        "Long distance trips: 1.8 CNY per km after 10km",
+        "Airport to city center: 80-120 CNY by taxi"
+      ],
+      "bike": [
+        "Mobike, Hello bikes, and Meituan bikes widely available",
+        "Unlock: 1-2 CNY, then 0.5-1 CNY per 15 minutes",
+        "Bike lanes on major roads",
+        "Designated parking zones for shared bikes",
+        "Electric bikes available (check license requirements)",
+        "Caution: Traffic can be chaotic, stay alert",
+        "Great for short trips between shopping areas"
+      ],
+      "walking": [
+        "Central Changsha is walkable between attractions",
+        "Huangxing Road, Taiping Street, and Pozi Street are pedestrian-friendly",
+        "Use underground passages at major intersections",
+        "Walk on right side of sidewalks",
+        "Cross at designated crosswalks"
+      ],
+      "rental": [
+        "Electric scooters: Require helmet and license by law",
+        "Car rental: International license accepted with translation",
+        "Driver with car: Popular option for day trips to nearby attractions"
+      ]
+    }
+  },
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Most widely accepted mobile payment in Changsha",
+      "howToUse": [
+        "Download Alipay app before arrival",
+        "Link international credit card",
+        "QR code payment at most merchants"
+      ],
+      "tips": [
+        "Most vendors use Alipay exclusively",
+        "Download before arrival",
+        "Keep some cash as backup"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Second most popular payment method in Changsha",
+      "howToUse": [
+        "WeChat app required",
+        "Link international card through WeChat Pay",
+        "Scan QR code to pay"
+      ],
+      "tips": [
+        "Essential for local services",
+        "Many vendors prefer WeChat"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Still accepted everywhere, essential for street vendors",
+      "howToUse": [
+        "Exchange at airport or bank",
+        "ATMs widely available",
+        "100 CNY notes most common"
+      ],
+      "tips": [
+        "Keep small bills for small purchases",
+        "Bank of China and ICBC ATMs accept foreign cards"
+      ]
+    },
+    {
+      "method": "International Credit Cards",
+      "icon": "card",
+      "description": "Accepted at hotels, large restaurants, and international chains",
+      "howToUse": [
+        "Visa and Mastercard widely accepted at upscale venues",
+        "May require passport verification"
+      ],
+      "tips": [
+        "Call your bank to enable international transactions",
+        "Some places add foreign transaction fees"
+      ]
+    },
+    {
+      "method": "Changsha Tong Card",
+      "icon": "card",
+      "description": "Stored-value card for metro and bus rides",
+      "howToUse": [
+        "Purchase at any metro station",
+        "Top up at stations or convenience stores",
+        "Tap to pay on metro and buses"
+      ],
+      "tips": [
+        "Saves time buying metro tickets",
+        "Discount on bus fares",
+        "Refundable deposit"
+      ]
+    },
+    {
+      "method": "UnionPay",
+      "icon": "unionpay",
+      "description": "China's domestic card network, widely accepted",
+      "howToUse": [
+        "ATMs accepting UnionPay are widely available",
+        "Many POS terminals accept UnionPay cards"
+      ],
+      "tips": [
+        "Works at most ATMs in China",
+        "Some international cards may work as UnionPay"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "language",
+      "title": "Xiang Dialect",
+      "content": "The Changsha dialect (长沙话) is part of the Xiang dialect group. locals appreciate visitors who try simple phrases. '吃了没' (have you eaten?) is a common casual greeting.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Hunan Spice Culture",
+      "content": "Hunan cuisine is famous for its use of chili peppers - '辣' (spicy) is the defining characteristic. The phrase '不怕辣，辣不怕，怕不辣' captures the Hunan relationship with spice.",
+      "importance": "high"
+    },
+    {
+      "category": "dining",
+      "title": "Stinky Tofu",
+      "content": "臭豆腐 (stinky tofu) is Changsha's iconic street food. The fermented tofu has a strong smell but delicious taste when deep-fried. Try it at Huogong Temple or street vendors.",
+      "importance": "high"
+    },
+    {
+      "category": "dining",
+      "title": "Tea Culture",
+      "content": "Changsha has a strong tea culture. 茶颜悦色 (Sexy Tea) is the beloved local milk tea chain. Traditional teahouses also offer authentic Hunan tea experiences.",
+      "importance": "medium"
+    },
+    {
+      "category": "seasonal",
+      "title": "Summer Crayfish",
+      "content": "夏天吃虾 (summer crayfish) is a major Changsha tradition. From May to September, crayfish restaurants are packed. '口味虾' (spicy crayfish) is the local favorite.",
+      "importance": "medium"
+    },
+    {
+      "category": "greeting",
+      "title": "Local Greetings",
+      "content": "Changsha people are known for their directness. '吃了没' is a common greeting. '要得不' (is that ok?) is frequently used. The phrase '哦岳' is a common expression.",
+      "importance": "low"
+    },
+    {
+      "category": "revolutionary",
+      "title": "Revolutionary Heritage",
+      "content": "Changsha was Chairman Mao's hometown province and a center of revolutionary activity. The Orange Island statue and various museums commemorate this history.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Rice Noodles Culture",
+      "content": "米粉 (rice noodles) is a breakfast staple in Changsha. 壹德壹 and 米粉研究所 are popular spots. The rice noodles here are typically round and served in clear broth.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Shopping Districts",
+      "content": "黄兴路 and 坡子街 are major shopping and eating areas. 太平街 is for souvenirs and crafts. IFS is for luxury brands. These areas are all walkable from each other.",
+      "importance": "medium"
+    },
+    {
+      "category": "taboo",
+      "title": "Number Taboos",
+      "content": "The number 4 is unlucky (sounds like 'death'). The number 8 is very lucky. Phone numbers or car plates with multiple 8s can be valuable.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Chopstick Etiquette",
+      "content": "Never stick chopsticks vertically in rice. This resembles funeral incense. Also, don't point with chopsticks or wave them around while eating.",
+      "importance": "medium"
+    },
+    {
+      "category": "travel",
+      "title": "Metro Etiquette",
+      "content": "Give seats to elderly, pregnant women, and people with children. Don't eat or drink on metro. Keep phone calls brief.",
+      "importance": "medium"
+    },
+    {
+      "category": "cultural",
+      "title": "Xiang River Culture",
+      "content": "湘江 (Xiang River) is central to Changsha's identity. The river is visible from many parts of the city, and Orange Island sits in the middle of it.",
+      "importance": "low"
+    },
+    {
+      "category": "weather",
+      "title": "Summer Heat",
+      "content": "Changsha summers are extremely hot and humid (often 35C+). Stay hydrated, use sun protection, and take breaks in air-conditioned spaces.",
+      "importance": "high"
+    },
+    {
+      "category": "weather",
+      "title": "Winter Cold",
+      "content": "Changsha winters are damp and cold (0-10C) without central heating. Dress in layers and expect indoor temperatures similar to outdoors.",
+      "importance": "medium"
+    },
+    {
+      "category": "entertainment",
+      "title": "Nightlife Culture",
+      "content": "Changsha has a vibrant nightlife with 盟重烧烤 and 文和友 being popular late-night spots. The city comes alive after dark.",
+      "importance": "medium"
+    },
+    {
+      "category": "cultural",
+      "title": "Mawangdui Legacy",
+      "content": "The Mawangdui Han tombs nearby revealed incredible artifacts including ancient silk and the world's oldest preserved cheese. The Hunan Provincial Museum houses these treasures.",
+      "importance": "medium"
+    },
+    {
+      "category": "entertainment",
+      "title": "Changsha Entertainment Industry",
+      "content": "Changsha is known as China's 'Entertainment Capital' with many TV shows filmed here. The TV station district and entertainment companies are part of local culture. Fans often spot celebrities around town.",
+      "importance": "low"
+    },
+    {
+      "category": "dining",
+      "title": "Spicy Food Culture",
+      "content": "Changsha cuisine is known for being '一辣到底' (spicy throughout). Even breakfast items like rice noodles come with chili. Visitors unaccustomed to spice should ask for '微辣' (mild) or '不辣' (no spice).",
+      "importance": "high"
+    },
+    {
+      "category": "cultural",
+      "title": "Xiang River (湘江) Culture",
+      "content": "湘江 (Xiang River) is central to Changsha's identity. The river is visible from many parts of the city, and Orange Island sits in the middle of it. Sunset walks along the riverbank are a local favorite.",
+      "importance": "medium"
+    },
+    {
+      "category": "seasonal",
+      "title": "Summer Heat and Humidity",
+      "content": "Changsha summers are extremely hot and humid (often 35C+). The '火炉城市' (furnace city) nickname is well-deserved. Stay hydrated, use sun protection, and seek air-conditioned spaces.",
+      "importance": "high"
+    },
+    {
+      "category": "shopping",
+      "title": "IFS and Luxury Shopping",
+      "content": "长沙IFS (International Finance Square) is Changsha's premier luxury shopping destination with international brands. The famous KAWS sculpture on the rooftop is a popular photo spot.",
+      "importance": "medium"
+    },
+    {
+      "category": "cultural",
+      "title": "Modern Art Scene",
+      "content": "The Meitan Lake area has become Changsha's cultural hub with the Grand Theatre, Photography Museum, and Art Gallery. The area showcases Changsha's modern cultural ambitions.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "长沙急救中心",
+      "nameEn": "Changsha Emergency Center",
+      "phone": "120",
+      "address": "Various locations citywide",
+      "notes": "English operators may be limited"
+    },
+    {
+      "type": "police",
+      "name": "长沙市公安局",
+      "nameEn": "Changsha Public Security Bureau",
+      "phone": "110",
+      "address": "Police headquarters in Yuhua District",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "fire",
+      "name": "长沙消防",
+      "nameEn": "Changsha Fire Brigade",
+      "phone": "119",
+      "address": "Various stations",
+      "notes": "Also handles rescue operations"
+    },
+    {
+      "type": "hospital",
+      "name": "中南大学湘雅医院",
+      "nameEn": "Xiangya Hospital",
+      "phone": "+86 731 8975 2999",
+      "address": "88 Xiangya Rd, Changsha",
+      "coordinates": {
+        "lat": 28.2188,
+        "lng": 112.9311
+      },
+      "notes": "One of China's top hospitals, English-speaking staff available"
+    },
+    {
+      "type": "hospital",
+      "name": "湖南省人民医院",
+      "nameEn": "Hunan Provincial People's Hospital",
+      "phone": "+86 731 8227 8000",
+      "address": "89 Wangfujing Rd, Changsha",
+      "coordinates": {
+        "lat": 28.2288,
+        "lng": 112.9488
+      },
+      "notes": "Large general hospital with international patient services"
+    },
+    {
+      "type": "hospital",
+      "name": "长沙市中心医院",
+      "nameEn": "Changsha Central Hospital",
+      "phone": "+86 731 8566 7952",
+      "address": "Sanyi Rd, Tianxin District",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9611
+      },
+      "notes": "Another top hospital in the city center"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻广州总领事馆",
+      "nameEn": "US Consulate General Guangzhou",
+      "phone": "+86 20 3814 5775",
+      "address": "Guangzhou (closest US consulate)",
+      "coordinates": {
+        "lat": 23.1291,
+        "lng": 113.2644
+      },
+      "notes": "For US citizens in Hunan - nearest consulate is Guangzhou"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻广州总领事馆",
+      "nameEn": "UK Consulate General Guangzhou",
+      "phone": "+86 20 8314 2368",
+      "address": "Guangzhou (nearest UK consulate)",
+      "coordinates": {
+        "lat": 23.1291,
+        "lng": 113.2644
+      },
+      "notes": "For UK citizens - nearest consulate is Guangzhou"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻广州总领事馆",
+      "nameEn": "Japan Consulate General Guangzhou",
+      "phone": "+86 20 8334 3009",
+      "address": "Guangzhou",
+      "coordinates": {
+        "lat": 23.1291,
+        "lng": 113.2644
+      },
+      "notes": "For Japanese citizens in Hunan - nearest consulate is Guangzhou"
+    },
+    {
+      "type": "tourist",
+      "name": "长沙旅游投诉热线",
+      "nameEn": "Changsha Tourist Complaint Hotline",
+      "phone": "+86 731 8581 0101",
+      "address": "Citywide",
+      "notes": "For tourist complaints and assistance"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻广州总领事馆",
+      "nameEn": "French Consulate Guangzhou",
+      "phone": "+86 20 2829 2000",
+      "address": "Guangzhou",
+      "coordinates": {
+        "lat": 23.1291,
+        "lng": 113.2644
+      },
+      "notes": "For French citizens - nearest consulate is Guangzhou"
+    },
+    {
+      "type": "hospital",
+      "name": "长沙市第一医院",
+      "nameEn": "Changsha First Hospital",
+      "phone": "+86 731 8466 7635",
+      "address": "1st Section, Wangfujing Rd, Changsha",
+      "coordinates": {
+        "lat": 28.2311,
+        "lng": 112.9455
+      },
+      "notes": "Major hospital with 24-hour emergency services"
+    },
+    {
+      "type": "hospital",
+      "name": "长沙市中心医院",
+      "nameEn": "Changsha Central Hospital",
+      "phone": "+86 731 8566 7952",
+      "address": "Sanyi Rd, Tianxin District",
+      "coordinates": {
+        "lat": 28.2255,
+        "lng": 112.9611
+      },
+      "notes": "Another top hospital with international patient services"
+    },
+    {
+      "type": "emergency",
+      "name": "长沙市自来水公司",
+      "nameEn": "Changsha Water Company",
+      "phone": "96510",
+      "address": "Citywide",
+      "notes": "For water supply emergencies"
+    },
+    {
+      "type": "emergency",
+      "name": "长沙燃气公司",
+      "nameEn": "Changsha Gas Company",
+      "phone": "95007",
+      "address": "Citywide",
+      "notes": "For gas leaks and emergencies (24-hour)"
+    },
+    {
+      "type": "emergency",
+      "name": "国家电网长沙供电公司",
+      "nameEn": "State Grid Changsha Power Supply",
+      "phone": "95598",
+      "address": "Citywide",
+      "notes": "For power outages and electrical emergencies"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese (Simplified)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa (L-tourist, M-business)",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water is boiled before drinking; bottled water widely available"
+  }
+}

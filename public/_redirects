@@ -1,0 +1,23 @@
+# ChinaConnect Cloudflare Pages Redirects
+# Redirect non-trailing slash URLs to trailing slash versions
+
+/emergency /emergency/ 301
+/community /community/ 301
+/guide /guide/ 301
+/ai /ai/ 301
+/food /food/ 301
+/auth /auth/ 301
+/cities /cities/ 301
+
+# City pages
+/city/:slug /city/:slug/ 301
+
+# Guide subpages
+/guide/:section /guide/:section/ 301
+/guide/business/:page /guide/business/:page/ 301
+
+# Food detail pages
+/food/:id /food/:id/ 301
+
+# User pages
+/user/:id /user/:id/ 301

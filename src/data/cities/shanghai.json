@@ -4,7 +4,10 @@
   "nameEn": "Shanghai",
   "country": "China",
   "population": "24.87 million",
-  "coordinates": { "lat": 31.2304, "lng": 121.4737 },
+  "coordinates": {
+    "lat": 31.2304,
+    "lng": 121.4737
+  },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Shanghai, China's economic powerhouse, is a dazzling metropolis where Art Deco architecture meets futuristic skyscrapers. Known as the 'Pearl of the Orient', it offers world-class dining, shopping on Nanjing Road, the historic Bund waterfront, and a vibrant nightlife scene. The city seamlessly blends Eastern and Western influences, creating a unique cosmopolitan atmosphere.",
   "coverImage": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=1200",
@@ -15,15 +18,19 @@
     "Nanjing Road - Premier shopping street",
     "Xintiandi - Historic shikumen houses"
   ],
-
   "climate": {
     "type": "Humid subtropical",
-    "bestMonths": ["March", "April", "May", "October", "November"],
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
     "tips": "Spring and autumn offer the most comfortable weather. Summers are hot and humid with frequent rain. Winters are cold but rarely snowy. Typhoon season is July-September. Pack layers and an umbrella."
   },
-
   "attractions": [
     {
       "id": "the-bund",
@@ -32,7 +39,10 @@
       "category": "historical",
       "description": "Shanghai's most iconic waterfront boulevard lined with 52 Gothic, Renaissance, and Art Deco buildings from the colonial era.",
       "address": "Zhongshan East One Rd, Huangpu District",
-      "coordinates": { "lat": 31.2408, "lng": 121.49 },
+      "coordinates": {
+        "lat": 31.2408,
+        "lng": 121.49
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
@@ -51,7 +61,10 @@
       "category": "modern",
       "description": "The world's busiest shopping street, stretching 1.3km from People's Square to the Bund.",
       "address": "Nanjing East Rd, Huangpu District",
-      "coordinates": { "lat": 31.235, "lng": 121.478 },
+      "coordinates": {
+        "lat": 31.235,
+        "lng": 121.478
+      },
       "openingHours": "Open 24 hours (shops 10:00-22:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
@@ -70,7 +83,10 @@
       "category": "cultural",
       "description": "A classical Chinese garden dating from the Ming dynasty with pavilions, halls, rockeries, and ponds.",
       "address": "218 Anren St, Huangpu District",
-      "coordinates": { "lat": 31.2277, "lng": 121.4858 },
+      "coordinates": {
+        "lat": 31.2277,
+        "lng": 121.4858
+      },
       "openingHours": "09:00-17:00 (Garden), shops until 22:00",
       "ticketPrice": "30 CNY (garden only), 50 CNY (with City God Temple)",
       "recommendedVisitTime": "2 hours",
@@ -89,7 +105,10 @@
       "category": "modern",
       "description": "China's tallest building and the world's second tallest, with a 118th floor observation deck offering panoramic city views.",
       "address": "501 Yincheng Middle Rd, Pudong",
-      "coordinates": { "lat": 31.235, "lng": 121.5018 },
+      "coordinates": {
+        "lat": 31.235,
+        "lng": 121.5018
+      },
       "openingHours": "08:30-22:00",
       "ticketPrice": "180 CNY (upper floors), 120 CNY (94F)",
       "recommendedVisitTime": "1 hour",
@@ -108,7 +127,10 @@
       "category": "cultural",
       "description": "A trendy entertainment district featuring restored shikumen (stone gate) houses, upscale restaurants, bars, and boutique shops.",
       "address": "Xintiandi, Huangpi District",
-      "coordinates": { "lat": 31.223, "lng": 121.4725 },
+      "coordinates": {
+        "lat": 31.223,
+        "lng": 121.4725
+      },
       "openingHours": "Shops and restaurants 10:00-02:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
@@ -127,7 +149,10 @@
       "category": "modern",
       "description": "Shanghai's most recognizable landmark with observation decks, a rotating restaurant, and glass-bottomed skywalk.",
       "address": "1 Century Ave, Pudong",
-      "coordinates": { "lat": 31.2397, "lng": 121.4999 },
+      "coordinates": {
+        "lat": 31.2397,
+        "lng": 121.4999
+      },
       "openingHours": "08:00-22:00",
       "ticketPrice": "220 CNY (all decks), 180 CNY (upper spheres)",
       "recommendedVisitTime": "2-3 hours",
@@ -146,7 +171,10 @@
       "category": "cultural",
       "description": "Tree-lined streets, historic European architecture, trendy cafes, and boutiques in the former French settlement.",
       "address": "Former French Concession area, Xuhui District",
-      "coordinates": { "lat": 31.213, "lng": 121.443 },
+      "coordinates": {
+        "lat": 31.213,
+        "lng": 121.443
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "3-4 hours",
@@ -165,7 +193,10 @@
       "category": "cultural",
       "description": "One of China's best museums with a world-class collection of ancient Chinese art, including bronzes, ceramics, and calligraphy.",
       "address": "201 Renmin Ave, Huangpu District",
-      "coordinates": { "lat": 31.2303, "lng": 121.4736 },
+      "coordinates": {
+        "lat": 31.2303,
+        "lng": 121.4736
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free (ID required)",
       "recommendedVisitTime": "2-3 hours",
@@ -184,7 +215,10 @@
       "category": "modern",
       "description": "China's first Disney park with the world's largest castle, innovative rides, and Chinese-themed attractions.",
       "address": "Disney Resort Rd, Pudong",
-      "coordinates": { "lat": 31.1412, "lng": 121.657 },
+      "coordinates": {
+        "lat": 31.1412,
+        "lng": 121.657
+      },
       "openingHours": "09:00-21:00 (varies by season)",
       "ticketPrice": "435 CNY (weekday), 545 CNY (weekend/holiday)",
       "recommendedVisitTime": "Full day",
@@ -203,7 +237,10 @@
       "category": "modern",
       "description": "The world's fastest commercial magnetic levitation train, reaching 431 km/h on the 30km airport link.",
       "address": "Longyang Rd Station, Pudong",
-      "coordinates": { "lat": 31.2068, "lng": 121.558 },
+      "coordinates": {
+        "lat": 31.2068,
+        "lng": 121.558
+      },
       "openingHours": "06:45-21:40",
       "ticketPrice": "50 CNY (single ride), 80 CNY (round trip including metro)",
       "recommendedVisitTime": "15 minutes",
@@ -222,7 +259,10 @@
       "category": "cultural",
       "description": "A massive interactive science museum with IMAX Dome Theater and hands-on exhibits for all ages.",
       "address": "2000 Century Ave, Pudong",
-      "coordinates": { "lat": 31.218, "lng": 121.543 },
+      "coordinates": {
+        "lat": 31.218,
+        "lng": 121.543
+      },
       "openingHours": "09:00-17:15 (Closed Monday)",
       "ticketPrice": "45 CNY (basic), 120 CNY (with IMAX)",
       "recommendedVisitTime": "3-4 hours",
@@ -233,9 +273,338 @@
         "Space exploration"
       ],
       "tips": "Great for families. Allow at least 3 hours. IMAX show highly recommended. Book tickets online."
+    },
+    {
+      "id": "jinguan-temple",
+      "name": "静安寺",
+      "nameEn": "Jing'an Temple",
+      "category": "cultural",
+      "description": "One of Shanghai's most important Buddhist temples, located in the heart of the city with a golden facade.",
+      "address": "1686 Nanjing West Rd, Jing'an District",
+      "coordinates": {
+        "lat": 31.2238,
+        "lng": 121.4455
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Golden Buddhist statues",
+        "Huge bell tower",
+        "Central city location",
+        "Bamboo Garden"
+      ],
+      "tips": "One of the few temples that charges entry. Audio guides available. Nearby Jing'an Kerry Centre for shopping."
+    },
+    {
+      "id": "tianzifang",
+      "name": "田子坊",
+      "nameEn": "Tianzifang",
+      "category": "cultural",
+      "description": "A maze of narrow alleyways filled with boutique shops, art studios, cafes, and bars in a historic shikumen neighborhood.",
+      "address": "210 Taikang Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.218,
+        "lng": 121.47
+      },
+      "openingHours": "10:00-23:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Boutique art galleries",
+        "Local crafts",
+        "Café culture",
+        "Hidden courtyards"
+      ],
+      "tips": "Get lost in the alleys. Best visited on weekdays. Great for finding unique souvenirs. Many shops close by 9pm."
+    },
+    {
+      "id": "natural-history-museum",
+      "name": "上海自然博物馆",
+      "nameEn": "Shanghai Natural History Museum",
+      "category": "cultural",
+      "description": "A stunning modern museum housing over 30,000 specimens including dinosaur fossils, whale skeletons, and interactive exhibits.",
+      "address": "1 Shiji Ave, Pudong",
+      "coordinates": {
+        "lat": 31.2197,
+        "lng": 121.5535
+      },
+      "openingHours": "09:00-17:15 (Closed Monday)",
+      "ticketPrice": "30 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Massive dinosaur skeletons",
+        "Evolution of life exhibits",
+        "Whale gallery",
+        "Interactive displays"
+      ],
+      "tips": "Buy tickets online in advance. Located near Shanghai Science and Technology Museum. Great for children."
+    },
+    {
+      "id": "urban-planning-exhibition",
+      "name": "上海城市规划展示馆",
+      "nameEn": "Shanghai Urban Planning Exhibition Center",
+      "category": "cultural",
+      "description": "A museum showcasing Shanghai's past, present, and future urban development with detailed scale models of the city.",
+      "address": "100 People's Ave, Huangpu District",
+      "coordinates": {
+        "lat": 31.2295,
+        "lng": 121.4745
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "30 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Massive Shanghai model",
+        "Future city visions",
+        "Historical photographs",
+        "Architecture displays"
+      ],
+      "tips": "The third floor model of Shanghai is impressive. Located near People's Square metro station."
+    },
+    {
+      "id": "happy-valley",
+      "name": "上海欢乐谷",
+      "nameEn": "Happy Valley Shanghai",
+      "category": "modern",
+      "description": "A large amusement park with roller coasters, water rides, and family attractions for all ages.",
+      "address": "888 Linhu Rd, Songjiang District",
+      "coordinates": {
+        "lat": 31.0585,
+        "lng": 121.2155
+      },
+      "openingHours": "09:00-17:30 (longer on weekends)",
+      "ticketPrice": "200 CNY",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Golden Samba coaster",
+        "Forest leap water ride",
+        "Family entertainment",
+        "Evening performances"
+      ],
+      "tips": "Arrive early. Wear comfortable shoes. Single-day passport available. Take metro line 9 to Songjiang direction."
+    },
+    {
+      "id": "china-art-museum",
+      "name": "中华艺术宫",
+      "nameEn": "China Art Museum",
+      "category": "cultural",
+      "description": "The largest museum of art in China, housed in the former Expo 2010 China Pavilion with massive displays of Chinese art.",
+      "address": "205 Shangnan Rd, Pudong",
+      "coordinates": {
+        "lat": 31.1845,
+        "lng": 121.539
+      },
+      "openingHours": "10:00-18:00 (Closed Monday)",
+      "ticketPrice": "Free (special exhibitions may charge)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Massive oil paintings",
+        "Chinese calligraphy",
+        "Sculpture garden",
+        "Expo legacy art"
+      ],
+      "tips": "Free entry but need to reserve online. The building itself is impressive. Combine with Expo Park walk."
+    },
+    {
+      "id": "m50-creative-park",
+      "name": "M50创意园",
+      "nameEn": "M50 Creative Park",
+      "category": "cultural",
+      "description": "A former factory complex turned into an art district featuring galleries, studios, and creative boutiques.",
+      "address": "50 Moganshan Rd, Putuo District",
+      "coordinates": {
+        "lat": 31.251,
+        "lng": 121.435
+      },
+      "openingHours": "10:00-18:00 (galleries vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Contemporary art galleries",
+        "Artist studios",
+        "Creative workshops",
+        "Industrial architecture"
+      ],
+      "tips": "Many galleries close on Mondays. Great for modern Chinese art. Nearby Suzhou Creek area has cafes."
+    },
+    {
+      "id": "huangpu-river-cruise",
+      "name": "黄浦江游览",
+      "nameEn": "Huangpu River Cruise",
+      "category": "modern",
+      "description": "A scenic boat tour along the Huangpu River offering the best views of both the historic Bund and modern Pudong skyline.",
+      "address": "Ferry Terminals at Bund and Pudong",
+      "coordinates": {
+        "lat": 31.235,
+        "lng": 121.49
+      },
+      "openingHours": "11:00-21:30 (multiple departures)",
+      "ticketPrice": "120-180 CNY",
+      "recommendedVisitTime": "45-60 minutes",
+      "highlights": [
+        "Bund architecture views",
+        "Pudong skyline at night",
+        "Historical commentary",
+        "Photo opportunities"
+      ],
+      "tips": "Book evening cruise for illuminated skyline. Bring jacket as it's cold on the water. Combine with Bund walk."
+    },
+    {
+      "id": "1933-old-millfun",
+      "name": "1933老场坊",
+      "nameEn": "1933 Old Mill Fun",
+      "category": "cultural",
+      "description": "A historic slaughterhouse turned creative space with unique spiral staircases, bridges, and European architecture.",
+      "address": "10 Shajing Rd, Hongkou District",
+      "coordinates": {
+        "lat": 31.258,
+        "lng": 121.4865
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Spiral staircases",
+        "European industrial design",
+        "Film location history",
+        "Creative retail"
+      ],
+      "tips": "The architecture is the main draw. Great for photography. Nearby Duolun Road for more art galleries."
+    },
+    {
+      "id": "hengshan-road",
+      "name": "衡山路",
+      "nameEn": "Hengshan Road",
+      "category": "cultural",
+      "description": "A tree-lined boulevard in the former French Concession with historic villas, bars, and restaurants.",
+      "address": "Hengshan Rd, Xuhui District",
+      "coordinates": {
+        "lat": 31.208,
+        "lng": 121.455
+      },
+      "openingHours": "Open 24 hours (venues vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Tree-lined boulevard",
+        "Historic villas",
+        "Cocktail bars",
+        "Nightlife scene"
+      ],
+      "tips": "Great for evening stroll. Many bars and restaurants open late. Connected to Wukang Rd area."
+    },
+    {
+      "id": "world-expo-museum",
+      "name": "世博会博物馆",
+      "nameEn": "World Expo Museum",
+      "category": "cultural",
+      "description": "The only museum in the world dedicated to the World Expo, showcasing the history and legacy of world's fairs.",
+      "address": "1918 Panlong Rd, Changning District",
+      "coordinates": {
+        "lat": 31.194,
+        "lng": 121.3985
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Expo history displays",
+        "Interactive exhibits",
+        "2010 Shanghai Expo artifacts",
+        "International pavilions"
+      ],
+      "tips": "Free entry with reservation. Nearby Hongqiao area. Great for understanding Shanghai's development."
+    },
+    {
+      "id": "qibao-ancient",
+      "name": "七宝古镇",
+      "nameEn": "Qibao Ancient Town",
+      "category": "cultural",
+      "description": "A historic water town with traditional architecture, street food, and crafts just 30 minutes from central Shanghai.",
+      "address": "Qibao Town, Minhang District",
+      "coordinates": {
+        "lat": 31.168,
+        "lng": 121.3445
+      },
+      "openingHours": "全天 ( shops 09:00-21:00)",
+      "ticketPrice": "Free (some attractions may charge)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Historic streets",
+        "Qibao noodles",
+        "Traditional crafts",
+        "Waterfront views"
+      ],
+      "tips": "Take Metro Line 9 to Qibao. Famous for Qibao noodles and traditional snacks. Great for a half-day trip."
+    },
+    {
+      "id": "shanghai-oceanarium",
+      "name": "上海海洋水族馆",
+      "nameEn": "Shanghai Ocean Aquarium",
+      "category": "cultural",
+      "description": "One of the largest aquariums in the world with over 400 species of marine life and a 155-meter underwater tunnel.",
+      "address": "1388 Yincheng Middle Rd, Pudong",
+      "coordinates": {
+        "lat": 31.2412,
+        "lng": 121.5435
+      },
+      "openingHours": "09:00-17:30",
+      "ticketPrice": "180 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Underwater tunnel",
+        "Amazon exhibit",
+        "Beluga whale viewing",
+        "Jellyfish gallery"
+      ],
+      "tips": "Located next to Oriental Pearl Tower. Great for families. Book tickets online for discounts."
+    },
+    {
+      "id": "waigaoqiao-free",
+      "name": "外高桥自由贸易试验区",
+      "nameEn": "Waigaoqiao Free Trade Zone",
+      "category": "modern",
+      "description": "China's first free trade zone with international shopping centers and import goods at duty-free prices.",
+      "address": "Waigaoqiao, Pudong",
+      "coordinates": {
+        "lat": 31.3185,
+        "lng": 121.5785
+      },
+      "openingHours": "Shops 09:00-20:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Imported goods",
+        "Electronics shopping",
+        "Wine and cosmetics",
+        "Duty-free prices"
+      ],
+      "tips": "Take Metro Line 6 to Waigaoqiao South. Good for electronics and imported goods. Bring passport."
+    },
+    {
+      "id": "changning-longhua",
+      "name": "龙华古寺",
+      "nameEn": "Longhua Temple",
+      "category": "cultural",
+      "description": "Shanghai's largest and most authentic Buddhist temple, dating back to the Three Kingdoms period.",
+      "address": "2853 Longhua Rd, Xuhui District",
+      "coordinates": {
+        "lat": 31.1825,
+        "lng": 121.4485
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "10 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Five-story pagoda",
+        "2,000 Buddhist statues",
+        "Bamboo grove",
+        "Bonsai garden"
+      ],
+      "tips": "One of Shanghai's oldest temples. Metro Line 11 to Longhua station. Beautiful at cherry blossom season."
     }
   ],
-
   "restaurants": [
     {
       "id": "shanghai-1",
@@ -247,12 +616,24 @@
       "avgPrice": 6000,
       "rating": 4.9,
       "address": "6th Floor, 20 Huangpu Rd, near Bund",
-      "coordinates": { "lat": 31.238, "lng": 121.4895 },
+      "coordinates": {
+        "lat": 31.238,
+        "lng": 121.4895
+      },
       "phone": "+86 21 6328 9897",
       "hours": "Only dinner, by reservation",
       "description": "Three Michelin star immersive dining experience by Chef Paul Pairet. 20 courses over 4 hours in a multi-sensory room.",
-      "dishHighlights": ["A la候爵的鹅肝", "Sensory dessert", "The olive"],
-      "tags": ["fine-dining", "unique-experience", "reservation-months-ahead"]
+      "dishHighlights": [
+        "A la候爵的鹅肝",
+        "Sensory dessert",
+        "The olive"
+      ],
+      "tags": [
+        "fine-dining",
+        "unique-experience",
+        "reservation-months-ahead"
+      ],
+      "diamond": 0
     },
     {
       "id": "shanghai-2",
@@ -264,7 +645,10 @@
       "avgPrice": 800,
       "rating": 4.8,
       "address": "New Hastings Hotel, 88 East Nanjing Rd, Huangpu",
-      "coordinates": { "lat": 31.234, "lng": 121.4775 },
+      "coordinates": {
+        "lat": 31.234,
+        "lng": 121.4775
+      },
       "phone": "+86 21 6323 7788",
       "hours": "11:30-14:30, 18:00-22:00",
       "description": "Two Michelin star Cantonese restaurant with impeccable dim sum and refined Shanghai cuisine.",
@@ -273,7 +657,12 @@
         "Braised abalone with mushroom",
         "Egg white with crab roe"
       ],
-      "tags": ["cantonese", "fine-dining", "business-dining"]
+      "tags": [
+        "cantonese",
+        "fine-dining",
+        "business-dining"
+      ],
+      "diamond": 0
     },
     {
       "id": "shanghai-3",
@@ -285,12 +674,24 @@
       "avgPrice": 1500,
       "rating": 4.8,
       "address": "6th Floor, 182 Wukang Rd, Xuhui",
-      "coordinates": { "lat": 31.217, "lng": 121.4505 },
+      "coordinates": {
+        "lat": 31.217,
+        "lng": 121.4505
+      },
       "phone": "+86 21 3330 0888",
       "hours": "12:00-14:00, 18:00-21:00",
       "description": "Two Michelin star modern Chinese restaurant by Chef Eric Wang, showcasing creative fusion of regional cuisines.",
-      "dishHighlights": ["Salted egg yolk chicken", "Squirrel fish", "Red-braised pork"],
-      "tags": ["fine-dining", "modern-chinese", "romantic"]
+      "dishHighlights": [
+        "Salted egg yolk chicken",
+        "Squirrel fish",
+        "Red-braised pork"
+      ],
+      "tags": [
+        "fine-dining",
+        "modern-chinese",
+        "romantic"
+      ],
+      "diamond": 0
     },
     {
       "id": "shanghai-4",
@@ -302,12 +703,24 @@
       "avgPrice": 500,
       "rating": 4.7,
       "address": "ifc Mall, 8 Century Ave, Pudong",
-      "coordinates": { "lat": 31.238, "lng": 121.5005 },
+      "coordinates": {
+        "lat": 31.238,
+        "lng": 121.5005
+      },
       "phone": "+86 21 5012 0668",
       "hours": "11:00-15:00, 18:00-22:00",
       "description": "Three diamond Black Pearl Cantonese restaurant with exceptional dim sum and premium seafood.",
-      "dishHighlights": ["Crispy suckling pig", "Steamed dim sum", "Braised seafood"],
-      "tags": ["cantonese", "dim-sum", "luxury"]
+      "dishHighlights": [
+        "Crispy suckling pig",
+        "Steamed dim sum",
+        "Braised seafood"
+      ],
+      "tags": [
+        "cantonese",
+        "dim-sum",
+        "luxury"
+      ],
+      "star": 0
     },
     {
       "id": "shanghai-5",
@@ -318,14 +731,25 @@
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Near Yuyuan Garden",
-      "coordinates": { "lat": 31.2267, "lng": 121.4848 },
+      "coordinates": {
+        "lat": 31.2267,
+        "lng": 121.4848
+      },
       "description": "Legendary restaurant serving authentic Shanghainese cuisine for over 40 years.",
       "dishHighlights": [
         "Braised pork belly",
         "Wonton soup",
         "Braised pork belly with brown sauce"
       ],
-      "tags": ["local", "shanghai-cuisine", "traditional"]
+      "tags": [
+        "local",
+        "shanghai-cuisine",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": ""
     },
     {
       "id": "shanghai-6",
@@ -336,11 +760,26 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Yuyuan Bazaar, 88 Anren St, Huangpu",
-      "coordinates": { "lat": 31.2273, "lng": 121.4853 },
+      "coordinates": {
+        "lat": 31.2273,
+        "lng": 121.4853
+      },
       "hours": "10:00-21:00",
       "description": "Famous for authentic nanxiang xiaolongbao (steamed soup dumplings) in business since 1900.",
-      "dishHighlights": ["Soup dumplings (xiaolongbao)", "Crab roe xiaolongbao", "Pan-fried buns"],
-      "tags": ["local", "dim-sum", "historic", "must-try"]
+      "dishHighlights": [
+        "Soup dumplings (xiaolongbao)",
+        "Crab roe xiaolongbao",
+        "Pan-fried buns"
+      ],
+      "tags": [
+        "local",
+        "dim-sum",
+        "historic",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "shanghai-7",
@@ -351,7 +790,10 @@
       "avgPrice": 150,
       "rating": 4.6,
       "address": "Yuyuan Bazaar, 59 Anren St, Huangpu",
-      "coordinates": { "lat": 31.227, "lng": 121.4845 },
+      "coordinates": {
+        "lat": 31.227,
+        "lng": 121.4845
+      },
       "phone": "+86 21 6328 0602",
       "hours": "11:00-13:30, 17:00-20:30",
       "description": "Historic restaurant in Yuyuan since 1940s, known for refined Shanghai snacks and Empress Dowager's favorite dishes.",
@@ -360,7 +802,14 @@
         "Yam paste with egg white",
         "Delicate pastries"
       ],
-      "tags": ["local", "historic", "shanghai-cuisine", "location"]
+      "tags": [
+        "local",
+        "historic",
+        "shanghai-cuisine",
+        "location"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "shanghai-8",
@@ -371,10 +820,26 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "22 Chengdu North Rd, Huangpu",
-      "coordinates": { "lat": 31.2355, "lng": 121.473 },
+      "coordinates": {
+        "lat": 31.2355,
+        "lng": 121.473
+      },
       "description": "Popular local spot always packed with locals for authentic Shanghai dishes and legendary fresh mooncakes.",
-      "dishHighlights": ["Fresh mooncakes", "Braised pork belly", "Steamed fish head"],
-      "tags": ["local", "shanghai-cuisine", "popular", "no-reservation"]
+      "dishHighlights": [
+        "Fresh mooncakes",
+        "Braised pork belly",
+        "Steamed fish head"
+      ],
+      "tags": [
+        "local",
+        "shanghai-cuisine",
+        "popular",
+        "no-reservation"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": ""
     },
     {
       "id": "shanghai-9",
@@ -386,7 +851,10 @@
       "avgPrice": 1000,
       "rating": 4.8,
       "address": "Langham Hotel, 99 Madang Rd, Huangpu",
-      "coordinates": { "lat": 31.2225, "lng": 121.4725 },
+      "coordinates": {
+        "lat": 31.2225,
+        "lng": 121.4725
+      },
       "phone": "+86 21 6888 3888",
       "hours": "11:30-14:30, 18:00-22:00",
       "description": "Two Michelin star Cantonese restaurant with stunning Bund views and exquisite dim sum.",
@@ -395,7 +863,13 @@
         "Wagyu beef with black pepper",
         "Bird's nest dessert"
       ],
-      "tags": ["fine-dining", "cantonese", "bund-views", "business"]
+      "tags": [
+        "fine-dining",
+        "cantonese",
+        "bund-views",
+        "business"
+      ],
+      "diamond": 0
     },
     {
       "id": "shanghai-10",
@@ -407,7 +881,10 @@
       "avgPrice": 800,
       "rating": 4.8,
       "address": "Waldorf Astoria Shanghai, 20 Wuchang Rd, Huangpu",
-      "coordinates": { "lat": 31.2358, "lng": 121.4835 },
+      "coordinates": {
+        "lat": 31.2358,
+        "lng": 121.4835
+      },
       "phone": "+86 21 6328 9898",
       "hours": "11:30-14:00, 18:00-21:30",
       "description": "One Michelin star restaurant serving refined Shanghai cuisine in the historic Waldorf Astoria building.",
@@ -416,10 +893,467 @@
         "Braised hairy crab",
         "Red wine braised short rib"
       ],
-      "tags": ["fine-dining", "shanghai-cuisine", "historic", "romantic"]
+      "tags": [
+        "fine-dining",
+        "shanghai-cuisine",
+        "historic",
+        "romantic"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-11",
+      "name": "老吉士酒家",
+      "nameEn": "Lao Ji Shi",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "45 Tianzifang, Taikang Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.2175,
+        "lng": 121.4695
+      },
+      "phone": "+86 21 6308 5138",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "A beloved local institution famous for authentic Shanghai home-style cooking in a cozy atmosphere.",
+      "dishHighlights": [
+        "Red-braised pork",
+        "Steamed fish",
+        "Shanghai-style crabs"
+      ],
+      "tags": [
+        "local",
+        "shanghai-cuisine",
+        "cozy",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-12",
+      "name": "苏浙总会",
+      "nameEn": "Su Zhe Hui",
+      "type": "blackpearl",
+      "diamond": 3,
+      "cuisine": "Jiangzhe",
+      "avgPrice": 400,
+      "rating": 4.7,
+      "address": "Bund Center, 500 Nanjing East Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.237,
+        "lng": 121.4815
+      },
+      "phone": "+86 21 6329 0818",
+      "hours": "11:00-14:30, 17:00-22:00",
+      "description": "Three diamond Black Pearl restaurant serving refined Jiangsu and Zhejiang cuisine with excellent seafood.",
+      "dishHighlights": [
+        "Braised pork belly",
+        "Squirrel fish",
+        "Yangzhou fried rice"
+      ],
+      "tags": [
+        "fine-dining",
+        "jiangzhe-cuisine",
+        "bund-area",
+        "business"
+      ],
+      "star": 0
+    },
+    {
+      "id": "shanghai-13",
+      "name": "大壶春",
+      "nameEn": "Da Hu Chun",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "17 Jiangning Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.229,
+        "lng": 121.465
+      },
+      "phone": "+86 21 6253 5069",
+      "hours": "06:30-19:30",
+      "description": "Legendary spot for Shanghai's finest Shengjian bao (pan-fried pork soup dumplings) since 1937.",
+      "dishHighlights": [
+        "Shengjian bao",
+        "Congee",
+        "Soy milk"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "historic",
+        "must-try",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-14",
+      "name": "功德林",
+      "nameEn": "Gong De Lin",
+      "type": "local",
+      "cuisine": "Vegetarian",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "169 Nanjing West Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.233,
+        "lng": 121.469
+      },
+      "phone": "+86 21 6327 0222",
+      "hours": "10:30-21:30",
+      "description": "Famous Buddhist vegetarian restaurant serving plant-based versions of traditional Shanghai dishes since 1922.",
+      "dishHighlights": [
+        "Vegetarian xiaolongbao",
+        "Buddhist chicken",
+        "Meat analogs"
+      ],
+      "tags": [
+        "vegetarian",
+        "historic",
+        "shanghai-cuisine",
+        "unique"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-15",
+      "name": "王家沙点心",
+      "nameEn": "Wangjia Sha",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "445 Nanjing West Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.237,
+        "lng": 121.455
+      },
+      "phone": "+86 21 6258 0165",
+      "hours": "07:00-20:00",
+      "description": "Popular century-old restaurant known for authentic Shanghai snacks and traditional pastries.",
+      "dishHighlights": [
+        "Sara noodles",
+        "Steamed soup dumplings",
+        "Moon cakes"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "historic",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-16",
+      "name": "鲜墙房",
+      "nameEn": "Xian Qiang Fang",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 200,
+      "rating": 4.7,
+      "address": "396 Changle Rd, Xuhui",
+      "coordinates": {
+        "lat": 31.212,
+        "lng": 121.451
+      },
+      "phone": "+86 21 6472 5218",
+      "hours": "11:00-14:00, 17:00-22:00",
+      "description": "Upscale local restaurant in a historic villa serving refined Shanghai cuisine with modern touches.",
+      "dishHighlights": [
+        "Braised pork belly",
+        "Steamed fish",
+        "Hairyi crab"
+      ],
+      "tags": [
+        "local",
+        "shanghai-cuisine",
+        "historic-villa",
+        "romantic"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-17",
+      "name": "外滩18号",
+      "nameEn": "Bund 18",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "French",
+      "avgPrice": 600,
+      "rating": 4.7,
+      "address": "18 Zhongshan Dong Yi Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.2385,
+        "lng": 121.488
+      },
+      "phone": "+86 21 6323 9898",
+      "hours": "11:30-14:30, 18:00-23:00",
+      "description": "One Michelin star French restaurant in a restored colonial building with stunning Bund views.",
+      "dishHighlights": [
+        "French tasting menu",
+        "Wine pairing",
+        "Dessert trolley"
+      ],
+      "tags": [
+        "fine-dining",
+        "french",
+        "bund-views",
+        "historic"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-18",
+      "name": "新荣记",
+      "nameEn": "Xin Rong Ji",
+      "type": "blackpearl",
+      "diamond": 3,
+      "cuisine": "Tailand-inspired Chinese",
+      "avgPrice": 600,
+      "rating": 4.8,
+      "address": "98 Huaihai Middle Rd, Xuhui",
+      "coordinates": {
+        "lat": 31.218,
+        "lng": 121.461
+      },
+      "phone": "+86 21 3330 3330",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "Three diamond Black Pearl restaurant famous for high-quality ingredients and refined cooking.",
+      "dishHighlights": [
+        "Braised seafood",
+        "Premium crab dishes",
+        "Signature tofu"
+      ],
+      "tags": [
+        "fine-dining",
+        "seafood",
+        "quality-ingredients",
+        "popular"
+      ],
+      "star": 0
+    },
+    {
+      "id": "shanghai-19",
+      "name": "上海1号私房菜",
+      "nameEn": "Shanghai No.1 Private Kitchen",
+      "type": "local",
+      "cuisine": "Shanghainese",
+      "avgPrice": 300,
+      "rating": 4.6,
+      "address": "99 Changsha Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.222,
+        "lng": 121.482
+      },
+      "phone": "+86 21 6311 1919",
+      "hours": "11:00-14:00, 17:00-22:00",
+      "description": "Hidden gem serving home-style Shanghainese dishes in a traditional setting without pretension.",
+      "dishHighlights": [
+        "Braised pork belly",
+        "Wonton soup",
+        "Sweet and sour ribs"
+      ],
+      "tags": [
+        "local",
+        "shanghai-cuisine",
+        "hidden-gem",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-20",
+      "name": "福1088",
+      "nameEn": "Fu 1088",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 250,
+      "rating": 4.7,
+      "address": "1088 Changle Rd, Xuhui",
+      "coordinates": {
+        "lat": 31.208,
+        "lng": 121.448
+      },
+      "phone": "+86 21 6472 0888",
+      "hours": "11:00-14:00, 17:00-22:00",
+      "description": "Popular local restaurant in a lovely garden setting serving classic Shanghai comfort food.",
+      "dishHighlights": [
+        "Red-braised pork",
+        "Fried rice",
+        "Seasonal vegetables"
+      ],
+      "tags": [
+        "local",
+        "shanghai-cuisine",
+        "garden-setting",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-21",
+      "name": "失重餐厅",
+      "nameEn": "Space Loss Restaurant",
+      "type": "modern",
+      "cuisine": "International",
+      "avgPrice": 200,
+      "rating": 4.5,
+      "address": "116 Dadu Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.231,
+        "lng": 121.452
+      },
+      "phone": "+86 21 6288 6118",
+      "hours": "11:00-23:00",
+      "description": "Futuristic restaurant where food arrives via flying trays on rail system, fun for families.",
+      "dishHighlights": [
+        "Flying food delivery system",
+        "Burgers",
+        "Pasta"
+      ],
+      "tags": [
+        "family",
+        "fun",
+        "modern",
+        "international"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-22",
+      "name": "荷唐·铜锣湾",
+      "nameEn": "He Tang Tong Luo Wan",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 200,
+      "rating": 4.6,
+      "address": "66 Changle Rd, Xuhui District",
+      "coordinates": {
+        "lat": 31.213,
+        "lng": 121.452
+      },
+      "phone": "+86 21 6433 5577",
+      "hours": "11:00-14:30, 17:00-22:00",
+      "description": "Popular spot serving authentic Cantonese dim sum and seafood in a modern setting.",
+      "dishHighlights": [
+        "Steamed dumplings",
+        "Egg tarts",
+        "Shark fin soup"
+      ],
+      "tags": [
+        "cantonese",
+        "dim-sum",
+        "casual",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-23",
+      "name": "阿娘面馆",
+      "nameEn": "A Niang Noodles",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 40,
+      "rating": 4.6,
+      "address": "137 Huangpu Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.233,
+        "lng": 121.482
+      },
+      "phone": "+86 21 6320 4428",
+      "hours": "11:00-20:00",
+      "description": "Legendary hole-in-the-wall spot for Shanghai-style large intestines stew noodles since 1970s.",
+      "dishHighlights": [
+        "Large intestines stew noodles",
+        "Fried noodles",
+        "Soy braised pork"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "historic",
+        "must-try",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-24",
+      "name": "上海老站",
+      "nameEn": "Shanghai Lao Zhan",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "560 Yangzhou Rd, Hongkou District",
+      "coordinates": {
+        "lat": 31.258,
+        "lng": 121.469
+      },
+      "phone": "+86 21 6543 2978",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Historic rotary restaurant in a converted train station serving authentic Shanghai cuisine.",
+      "dishHighlights": [
+        "Braised pork belly",
+        "Steamed fish",
+        "Red wine chicken"
+      ],
+      "tags": [
+        "local",
+        "shanghai-cuisine",
+        "historic",
+        "unique"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shanghai-25",
+      "name": "福和慧",
+      "nameEn": "Fu He Hui",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Vegetarian",
+      "avgPrice": 600,
+      "rating": 4.8,
+      "address": "1 Y，立兴大楼, 172 Fuxing Middle Rd, Xuhui",
+      "coordinates": {
+        "lat": 31.215,
+        "lng": 121.447
+      },
+      "phone": "+86 21 6073 2220",
+      "hours": "11:00-14:00, 18:00-21:00",
+      "description": "One Michelin star vegetarian restaurant offering creative plant-based fine dining.",
+      "dishHighlights": [
+        "Seasonal vegetable tasting menu",
+        "Buddhist cuisine",
+        "Artful presentations"
+      ],
+      "tags": [
+        "fine-dining",
+        "vegetarian",
+        "creative",
+        "healthy"
+      ],
+      "diamond": 0
     }
   ],
-
   "transport": {
     "arrival": [
       {
@@ -467,7 +1401,6 @@
       ]
     }
   },
-
   "hotels": [
     {
       "name": "上海半岛酒店",
@@ -475,7 +1408,10 @@
       "budget": "luxury",
       "priceRange": "3000-6000 CNY/night",
       "address": "32 The Bund, 32 Zhongshan Dong Yi Rd, Huangpu",
-      "coordinates": { "lat": 31.2385, "lng": 121.4885 },
+      "coordinates": {
+        "lat": 31.2385,
+        "lng": 121.4885
+      },
       "rating": 4.9,
       "highlights": [
         "Historic Bund location",
@@ -491,7 +1427,10 @@
       "budget": "luxury",
       "priceRange": "2800-5000 CNY/night",
       "address": "2 The Bund, 20 Zhongshan Dong Yi Rd, Huangpu",
-      "coordinates": { "lat": 31.239, "lng": 121.489 },
+      "coordinates": {
+        "lat": 31.239,
+        "lng": 121.489
+      },
       "rating": 4.8,
       "highlights": [
         "Heritage building connected to new tower",
@@ -506,9 +1445,16 @@
       "budget": "mid",
       "priceRange": "1200-2000 CNY/night",
       "address": "88 Jinjiang Rd, Pudong",
-      "coordinates": { "lat": 31.221, "lng": 121.5025 },
+      "coordinates": {
+        "lat": 31.221,
+        "lng": 121.5025
+      },
       "rating": 4.6,
-      "highlights": ["Sky Lobby on 54th floor", "Amazing city views", "Connected to IFC mall"],
+      "highlights": [
+        "Sky Lobby on 54th floor",
+        "Amazing city views",
+        "Connected to IFC mall"
+      ],
       "bookingTips": "Higher floors offer better views. Check for weekend packages."
     },
     {
@@ -517,9 +1463,16 @@
       "budget": "mid",
       "priceRange": "900-1500 CNY/night",
       "address": "1 Fatherland Rd, Huangpu",
-      "coordinates": { "lat": 31.2285, "lng": 121.4805 },
+      "coordinates": {
+        "lat": 31.2285,
+        "lng": 121.4805
+      },
       "rating": 4.5,
-      "highlights": ["Near People's Square and metro", "Good breakfast buffet", "Reliable brand"],
+      "highlights": [
+        "Near People's Square and metro",
+        "Good breakfast buffet",
+        "Reliable brand"
+      ],
       "bookingTips": "Good central location for first-time visitors."
     },
     {
@@ -528,13 +1481,237 @@
       "budget": "mid",
       "priceRange": "1500-2500 CNY/night",
       "address": "199 Nanjing Rd East, Huangpu",
-      "coordinates": { "lat": 31.231, "lng": 121.4815 },
+      "coordinates": {
+        "lat": 31.231,
+        "lng": 121.4815
+      },
       "rating": 4.7,
-      "highlights": ["Trendy design", "Excellent rooftop bar", "Central location"],
+      "highlights": [
+        "Trendy design",
+        "Excellent rooftop bar",
+        "Central location"
+      ],
       "bookingTips": "Rooftop bar is popular - book ahead."
+    },
+    {
+      "name": "上海璞丽酒店",
+      "nameEn": "The Puli Hotel & Spa",
+      "budget": "luxury",
+      "priceRange": "2500-4500 CNY/night",
+      "address": "1 Xiushan Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.224,
+        "lng": 121.448
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Urban resort feel",
+        "Excellent spa",
+        "Central location"
+      ],
+      "bookingTips": "Weekend packages offer better value."
+    },
+    {
+      "name": "上海静安香格里拉大酒店",
+      "nameEn": "Jing'an Shangri-La",
+      "budget": "luxury",
+      "priceRange": "2200-4000 CNY/night",
+      "address": "1218 Middle Ring Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.228,
+        "lng": 121.447
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Tallest hotel in Jing'an",
+        "Great views",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Higher floors have best views. Breakfast worth the upgrade."
+    },
+    {
+      "name": "上海镛舍",
+      "nameEn": "The Middle House",
+      "budget": "luxury",
+      "priceRange": "1800-3000 CNY/night",
+      "address": "333 Chengdu North Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.235,
+        "lng": 121.459
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Modern design",
+        "Spa and pool",
+        "Trendy location"
+      ],
+      "bookingTips": "Connected to HKRI Taikoo Hui mall."
+    },
+    {
+      "name": "上海宝格丽酒店",
+      "nameEn": "Bulgari Hotel Shanghai",
+      "budget": "luxury",
+      "priceRange": "4000-8000 CNY/night",
+      "address": "88 Middle Henan Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.238,
+        "lng": 121.485
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Italian luxury",
+        "Stunning Bund views",
+        "Michelin restaurant"
+      ],
+      "bookingTips": "Bund view suites are exceptional. Book restaurant in advance."
+    },
+    {
+      "name": "上海和平饭店",
+      "nameEn": "Fairmont Peace Hotel",
+      "budget": "luxury",
+      "priceRange": "2500-5000 CNY/night",
+      "address": "20 Nanjing East Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.237,
+        "lng": 121.484
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Historic Art Deco landmark",
+        "Jazz bar",
+        "Iconic location"
+      ],
+      "bookingTips": "Request renovated rooms in the south building. Sunday jazz brunch is legendary."
+    },
+    {
+      "name": "上海浦东香格里拉大酒店",
+      "nameEn": "Shangri-La Pudong",
+      "budget": "luxury",
+      "priceRange": "2000-3500 CNY/night",
+      "address": "33 Fu Cheng Rd, Pudong",
+      "coordinates": {
+        "lat": 31.238,
+        "lng": 121.499
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Largest Shangri-La in China",
+        "Great Bund views",
+        "Multiple pools"
+      ],
+      "bookingTips": "Horizon Club rooms offer better views. Airport transfer recommended."
+    },
+    {
+      "name": "上海素凯泰酒店",
+      "nameEn": "The Sukhothai Shanghai",
+      "budget": "luxury",
+      "priceRange": "1800-2800 CNY/night",
+      "address": "380 Shaanxi North Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.234,
+        "lng": 121.454
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Thai-inspired design",
+        "Excellent service",
+        "Central location"
+      ],
+      "bookingTips": "Spa treatments highly recommended. Good for business travelers."
+    },
+    {
+      "name": "上海瑞吉酒店",
+      "nameEn": "The St. Regis Shanghai",
+      "budget": "luxury",
+      "priceRange": "2200-4000 CNY/night",
+      "address": "368 Jian Guo Liu Rd, Huangpu",
+      "coordinates": {
+        "lat": 31.221,
+        "lng": 121.465
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Classic luxury",
+        "Butler service",
+        "Multiple dining options"
+      ],
+      "bookingTips": "Butler service is exceptional. Ask for renovated rooms."
+    },
+    {
+      "name": "上海安曼酒店",
+      "nameEn": "Aman Bund",
+      "budget": "luxury",
+      "priceRange": "5000-10000 CNY/night",
+      "address": "Conrad Hotel, 500 Yincheng Middle Rd, Pudong",
+      "coordinates": {
+        "lat": 31.238,
+        "lng": 121.502
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Minimalist luxury",
+        "Private club feel",
+        "Aman service"
+      ],
+      "bookingTips": "Only 28 rooms ensure exclusivity. Book well in advance."
+    },
+    {
+      "name": "上海锦江饭店",
+      "nameEn": "Jinjiang Hotel",
+      "budget": "mid",
+      "priceRange": "800-1500 CNY/night",
+      "address": "59 Changle Rd, Xuhui",
+      "coordinates": {
+        "lat": 31.214,
+        "lng": 121.453
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Historic landmark",
+        "Large gardens",
+        "French Concession location"
+      ],
+      "bookingTips": "Meijing building has been renovated. Great for history buffs."
+    },
+    {
+      "name": "上海外滩悦榕庄",
+      "nameEn": "Banyan Tree Shanghai On The Bund",
+      "budget": "luxury",
+      "priceRange": "3500-6000 CNY/night",
+      "address": "20 Funing Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.242,
+        "lng": 121.496
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Riverside location",
+        "Chinese-inspired design",
+        "Rooftop bar",
+        "Luxurious spa"
+      ],
+      "bookingTips": "Request river-view rooms. Best for romantic getaways."
+    },
+    {
+      "name": "上海新天地安达仕酒店",
+      "nameEn": "Andaz Shanghai Xintiandi",
+      "budget": "mid",
+      "priceRange": "1200-2000 CNY/night",
+      "address": "88 Taicang Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.224,
+        "lng": 121.471
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Xintiandi location",
+        "Modern design",
+        "Rooftop bar",
+        "Central location"
+      ],
+      "bookingTips": "Great for nightlife. Book weekend packages."
     }
   ],
-
   "payment": [
     {
       "method": "Alipay",
@@ -570,8 +1747,14 @@
       "method": "Cash (RMB)",
       "icon": "cash",
       "description": "Accepted but increasingly rare in Shanghai",
-      "howToUse": ["ATMs at every bank", "ICBC, HSBC, Standard Chartered have English interfaces"],
-      "tips": ["Keep 200-500 CNY as backup", "Bank cards generally work at any ATM"]
+      "howToUse": [
+        "ATMs at every bank",
+        "ICBC, HSBC, Standard Chartered have English interfaces"
+      ],
+      "tips": [
+        "Keep 200-500 CNY as backup",
+        "Bank cards generally work at any ATM"
+      ]
     },
     {
       "method": "Apple Pay / Contactless",
@@ -581,10 +1764,42 @@
         "Works at 7-Eleven, FamilyMart, some Starbucks",
         "Add international card to Apple Wallet"
       ],
-      "tips": ["Convenient for quick purchases", "Not universal but growing acceptance"]
+      "tips": [
+        "Convenient for quick purchases",
+        "Not universal but growing acceptance"
+      ]
+    },
+    {
+      "method": "UnionPay",
+      "icon": "unionpay",
+      "description": "China's domestic card network, essential for ATM withdrawals and widely accepted",
+      "howToUse": [
+        "Works at all UnionPay ATMs",
+        "Accepted at most merchants in Shanghai",
+        "International cards with UnionPay logo work"
+      ],
+      "tips": [
+        "Best for withdrawing RMB with lower fees",
+        "Widely available at all banks and ATMs",
+        "Works at supermarkets and convenience stores"
+      ]
+    },
+    {
+      "method": "Apple Pay / Google Pay",
+      "icon": "applepay",
+      "description": "Increasingly accepted at modern venues, convenience stores, and international chains",
+      "howToUse": [
+        "Works at 7-Eleven, FamilyMart, all major convenience stores",
+        "Works at Starbucks, some restaurants",
+        "Add international card to Apple Wallet"
+      ],
+      "tips": [
+        "Most reliable foreign payment option after cards",
+        "Works offline which is helpful",
+        "Not universal but growing rapidly"
+      ]
     }
   ],
-
   "culturalTips": [
     {
       "category": "language",
@@ -615,9 +1830,128 @@
       "title": "Social Customs",
       "content": "Punctuality valued in business. Tipping not expected but appreciated in upscale establishments. Business cards exchanged with both hands.",
       "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Haipai Culture",
+      "content": "Haipai (海派) refers to Shanghai's unique blend of Eastern and Western cultures. This cosmopolitan style influences everything from architecture to cuisine, characterized by openness, innovation, and elegance.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Shikumen Architecture",
+      "content": "Shikumen (石库门) are historic townhouses with distinctive stone gate entrances that blend Chinese and Western elements. Many have been preserved in Xintiandi and Tianzifang as cultural heritage sites.",
+      "importance": "high"
+    },
+    {
+      "category": "fashion",
+      "title": "Qipao and Fashion",
+      "content": "The iconic qipao (旗袍) was refined in Shanghai during the 1920s-30s. Today, Shanghai remains China's fashion capital with designers blending traditional elements with modern styles.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Nightlife Culture",
+      "content": "Shanghai is China's nightlife capital with bars, clubs, and entertainment venues that stay open until dawn. Popular areas include Xintiandi, Former French Concession, and Jing'an.",
+      "importance": "medium"
+    },
+    {
+      "category": "cafe",
+      "title": "Café Culture",
+      "content": "Following European traditions, Shanghai has a strong café culture especially in the Former French Concession. Sunday brunch is a beloved local tradition with friends and family.",
+      "importance": "medium"
+    },
+    {
+      "category": "arts",
+      "title": "Arts Scene",
+      "content": "Shanghai hosts world-class museums, galleries, and cultural venues. M50 and 1933 Old Mill Fun are creative hubs, while West Bund Cultural Center is the newest arts district.",
+      "importance": "medium"
+    },
+    {
+      "category": "history",
+      "title": "Historical Layers",
+      "content": "Shanghai evolved from a fishing village to a treaty port with international concessions, creating layers of history reflected in its diverse architecture from colonial mansions to modern skyscrapers.",
+      "importance": "high"
+    },
+    {
+      "category": "cuisine",
+      "title": "Benbang Cuisine",
+      "content": "Benbang (本帮) cuisine refers to traditional Shanghai-style cooking characterized by sweetness, careful use of soy sauce, and emphasis on fresh ingredients. Signature dishes include braised pork belly and hairy crabs.",
+      "importance": "high"
+    },
+    {
+      "category": "dialect",
+      "title": "Shanghainese Language",
+      "content": "Shanghainese (上海话) is a Wu Chinese dialect quite different from Mandarin. While Mandarin is universally understood, locals appreciate visitors learning basic Shanghainese phrases.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Dining Etiquette",
+      "content": "Chopsticks should not be stuck vertically in rice. Wait for the host to start eating. Turn the bowl when finished to show you've eaten. Tea is usually served automatically.",
+      "importance": "medium"
+    },
+    {
+      "category": "transportation",
+      "title": "Metro Culture",
+      "content": "Shanghai's metro is one of the world's largest and most efficient. During rush hours (8-9am, 6-7pm), expect crowded cars. Give up seats for elderly, pregnant women, and those with children.",
+      "importance": "high"
+    },
+    {
+      "category": "language",
+      "title": "Wu Dialect Family",
+      "content": "Shanghainese belongs to the Wu dialect family, significantly different from Mandarin. Common phrases: 'ni' (你) = you, 'wo' (我) = I, 'na' (那) = that. Tone differences make it almost unintelligible to non-speakers.",
+      "importance": "medium"
+    },
+    {
+      "category": "fashion",
+      "title": "Haipai Fashion",
+      "content": "Shanghai pioneered the modern qipao (旗袍) in the 1920s-30s. Today, the city remains China's fashion capital, with Shanghai Fashion Week and numerous designers blending Eastern and Western styles.",
+      "importance": "medium"
+    },
+    {
+      "category": "environment",
+      "title": "Air Quality",
+      "content": "Air quality can be poor, especially in winter. Check AQI before outdoor activities. Major international hotels have air purifiers. Masks recommended during heavy pollution.",
+      "importance": "high"
+    },
+    {
+      "category": "language",
+      "title": "Wu Dialect Family",
+      "content": "Shanghainese belongs to the Wu dialect family, significantly different from Mandarin. Common phrases: 'ni' (你) = you, 'wo' (我) = I, 'na' (那) = that. Tone differences make it almost unintelligible to non-speakers.",
+      "importance": "medium"
+    },
+    {
+      "category": "fashion",
+      "title": "Haipai Fashion",
+      "content": "Shanghai pioneered the modern qipao (旗袍) in the 1920s-30s. Today, the city remains China's fashion capital, with Shanghai Fashion Week and numerous designers blending Eastern and Western styles.",
+      "importance": "medium"
+    },
+    {
+      "category": "environment",
+      "title": "Air Quality",
+      "content": "Air quality can be poor, especially in winter. Check AQI before outdoor activities. Major international hotels have air purifiers. Masks recommended during heavy pollution.",
+      "importance": "high"
+    },
+    {
+      "category": "greeting",
+      "title": "Shanghai Greetings",
+      "content": "While Mandarin 'ni hao' is universal, Shanghainese greeting 'nong hao' (侬好) means 'hello' in the local dialect. Locals appreciate when visitors try local phrases.",
+      "importance": "low"
+    },
+    {
+      "category": "dining",
+      "title": "Dim Sum Culture",
+      "content": "Shanghai dim sum differs from Cantonese style. Try local specialties like shengjian bao (pan-fried soup dumplings), xiaolongbao, and crab roe dishes.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Art Deco Legacy",
+      "content": "Shanghai has one of the world's largest collections of Art Deco architecture, second only to Miami. Many buildings along the Bund feature this 1920s-30s style.",
+      "importance": "medium"
     }
   ],
-
   "emergencyContacts": [
     {
       "type": "ambulance",
@@ -641,7 +1975,10 @@
       "nameEn": "Shanghai United Family Hospital",
       "phone": "+86 21 2216 3999",
       "address": "Shanghai Centre, 1376 Nanjing West Rd, Jing'an",
-      "coordinates": { "lat": 31.225, "lng": 121.4495 },
+      "coordinates": {
+        "lat": 31.225,
+        "lng": 121.4495
+      },
       "notes": "English-speaking, accepts international insurance"
     },
     {
@@ -650,7 +1987,10 @@
       "nameEn": "Ruijin Hospital",
       "phone": "+86 21 6437 0045",
       "address": "197 Ruijin Er Rd, Huangpu District",
-      "coordinates": { "lat": 31.214, "lng": 121.4675 },
+      "coordinates": {
+        "lat": 31.214,
+        "lng": 121.4675
+      },
       "notes": "Top public hospital, ER available"
     },
     {
@@ -659,11 +1999,109 @@
       "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
       "address": "Westgate Mall, 8 Century Ave, Pudong",
-      "coordinates": { "lat": 31.2385, "lng": 121.5005 },
+      "coordinates": {
+        "lat": 31.2385,
+        "lng": 121.5005
+      },
       "notes": "ACS: +86 21 8011 2400"
+    },
+    {
+      "type": "fire",
+      "name": "上海消防救援",
+      "nameEn": "Shanghai Fire Department",
+      "phone": "119",
+      "address": "Citywide coverage",
+      "notes": "Fire and rescue emergencies"
+    },
+    {
+      "type": "tourist-helpline",
+      "name": "上海旅游咨询中心",
+      "nameEn": "Shanghai Tourist Hotline",
+      "phone": "962020",
+      "address": "Citywide coverage",
+      "notes": "English service available. Tourist complaints, inquiries, emergency assistance."
+    },
+    {
+      "type": "consumer-protection",
+      "name": "上海市消费者权益保护",
+      "nameEn": "Shanghai Consumer Rights Protection",
+      "phone": "12315",
+      "address": "Citywide coverage",
+      "notes": "Consumer complaints, fraud reports, refund disputes"
+    },
+    {
+      "type": "information",
+      "name": "上海市民服务热线",
+      "nameEn": "Shanghai City Service Hotline",
+      "phone": "12345",
+      "address": "Citywide coverage",
+      "notes": "Government services, non-emergency municipal issues, complaints"
+    },
+    {
+      "type": "traffic-accident",
+      "name": "交通事故报警",
+      "nameEn": "Traffic Accident Emergency",
+      "phone": "122",
+      "address": "Citywide coverage",
+      "notes": "Traffic accidents, road emergencies"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻上海总领事馆",
+      "nameEn": "UK Consulate General Shanghai",
+      "phone": "+86 21 6279 7650",
+      "address": "20/F, Westgate Mall, 8 Century Ave, Pudong",
+      "coordinates": {
+        "lat": 31.2385,
+        "lng": 121.5005
+      },
+      "notes": "For UK citizens: 24h consular emergency line"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻上海总领事馆",
+      "nameEn": "Japan Consulate General Shanghai",
+      "phone": "+86 21 6278 0980",
+      "address": "8 Wanzheng Rd, Hongkou District",
+      "coordinates": {
+        "lat": 31.252,
+        "lng": 121.4725
+      },
+      "notes": "Japanese citizens: emergency line +86 21 6278 8830"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻上海总领事馆",
+      "nameEn": "Korea Consulate General Shanghai",
+      "phone": "+86 21 6212 2080",
+      "address": "458 West Nanjing Rd, Jing'an",
+      "coordinates": {
+        "lat": 31.237,
+        "lng": 121.4585
+      },
+      "notes": "For Korean citizens: consular services and emergency assistance"
+    },
+    {
+      "type": "hospital",
+      "name": "上海华山医院",
+      "nameEn": "Huashan Hospital",
+      "phone": "+86 21 5288 9999",
+      "address": "12 Middle Wulumuqi Rd, Jing'an District",
+      "coordinates": {
+        "lat": 31.228,
+        "lng": 121.4455
+      },
+      "notes": "Top neurology and neurosurgery hospital in China"
+    },
+    {
+      "type": "tourist-helpline",
+      "name": "旅游紧急求助",
+      "nameEn": "Tourist Emergency Assistance",
+      "phone": "12308",
+      "address": "Citywide coverage",
+      "notes": "24h tourist emergency hotline for foreign visitors"
     }
   ],
-
   "quickFacts": {
     "language": "Mandarin Chinese + Shanghainese dialect",
     "currency": "Chinese Yuan (CNY/RMB)",

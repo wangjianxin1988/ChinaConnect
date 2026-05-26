@@ -4,7 +4,10 @@
   "nameEn": "Shenzhen",
   "country": "China",
   "population": "17.56 million",
-  "coordinates": { "lat": 22.5431, "lng": 114.0579 },
+  "coordinates": {
+    "lat": 22.5431,
+    "lng": 114.0579
+  },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Shenzhen is China's first Special Economic Zone and a global tech hub. A modern megacity that transformed from a fishing village to one of the world's fastest-growing cities in just 40 years. Home to tech giants like Tencent, Huawei, and BYD. Features innovative architecture, theme parks, and easy access to Hong Kong.",
   "coverImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200",
@@ -17,7 +20,13 @@
   ],
   "climate": {
     "type": "Subtropical monsoon",
-    "bestMonths": ["November", "December", "January", "February", "March"],
+    "bestMonths": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "15C (59F)",
     "tips": "Best visited in winter (Nov-Feb) when weather is mild and pleasant. Summer is hot, humid with frequent typhoons. Spring is rainy. Always bring sunscreen and hydration."
@@ -30,7 +39,10 @@
       "category": "theme-park",
       "description": "Theme park featuring miniature replicas of famous world landmarks including Eiffel Tower, pyramids, and Taj Mahal.",
       "address": "9037 Huaqiaocheng, Nanshan District",
-      "coordinates": { "lat": 22.5322, "lng": 113.9272 },
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9272
+      },
       "openingHours": "09:00-22:00",
       "ticketPrice": "220 CNY (adult), 110 CNY (children)",
       "recommendedVisitTime": "4-6 hours",
@@ -49,11 +61,19 @@
       "category": "cultural",
       "description": "Former industrial complex converted into vibrant arts and design hub with galleries, boutiques, cafes, and creative studios.",
       "address": "North Area of OCT, Nanshan District",
-      "coordinates": { "lat": 22.5322, "lng": 113.9572 },
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9572
+      },
       "openingHours": "Open 24 hours (shops 10:00-21:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Art galleries", "Design shops", "Coffee houses", "Live music venues"],
+      "highlights": [
+        "Art galleries",
+        "Design shops",
+        "Coffee houses",
+        "Live music venues"
+      ],
       "tips": "Best on weekends for markets and events. The area transforms during Chinese New Year with art exhibitions."
     },
     {
@@ -63,7 +83,10 @@
       "category": "cultural",
       "description": "The world's largest oil painting production base, where millions of replicas of famous artworks are painted. Now also an art destination.",
       "address": "Dafen Village, Longgang District",
-      "coordinates": { "lat": 22.6522, "lng": 114.2472 },
+      "coordinates": {
+        "lat": 22.6522,
+        "lng": 114.2472
+      },
       "openingHours": "Open 24 hours (galleries 09:00-18:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
@@ -82,11 +105,19 @@
       "category": "natural",
       "description": "Coastal park along Shenzhen Bay with scenic waterfront, mangroves, bird watching, and Hong Kong skyline views.",
       "address": "Shenzhen Bay, Nanshan District",
-      "coordinates": { "lat": 22.4822, "lng": 113.8972 },
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 113.8972
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Hong Kong skyline view", "Bird watching", "Coastal trail", "Sunrise point"],
+      "highlights": [
+        "Hong Kong skyline view",
+        "Bird watching",
+        "Coastal trail",
+        "Sunrise point"
+      ],
       "tips": "Best at sunset for Hong Kong skyline photos. Morning for bird watching. Bring binoculars."
     },
     {
@@ -96,7 +127,10 @@
       "category": "cultural",
       "description": "Italian-themed waterfront complex centered on a historic Italian cruise ship, featuring restaurants, bars, and entertainment.",
       "address": "Mizuki Piazza, Shekou, Nanshan District",
-      "coordinates": { "lat": 22.4822, "lng": 113.9172 },
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 113.9172
+      },
       "openingHours": "Open 24 hours (restaurants 11:00-02:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
@@ -115,11 +149,19 @@
       "category": "theme-park",
       "description": "Large amusement park with roller coasters, water rides, and performances for all ages.",
       "address": "Overseas Chinese Town, Nanshan District",
-      "coordinates": { "lat": 22.5422, "lng": 113.9672 },
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 113.9672
+      },
       "openingHours": "09:30-22:00 (varies by season)",
       "ticketPrice": "260 CNY (full day)",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Mountain Flying coaster", "Swing carousel", "Water slides", "Evening shows"],
+      "highlights": [
+        "Mountain Flying coaster",
+        "Swing carousel",
+        "Water slides",
+        "Evening shows"
+      ],
       "tips": "Weekday visits avoid crowds. Height restrictions on rides. Re-entry allowed with hand stamp."
     },
     {
@@ -129,11 +171,19 @@
       "category": "modern",
       "description": "The second tallest building in China with observation deck offering panoramic city views from 542 meters.",
       "address": "5033 Yitian Road, Futian District",
-      "coordinates": { "lat": 22.5222, "lng": 114.0572 },
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
       "openingHours": "09:00-21:00",
       "ticketPrice": "180 CNY (observation deck)",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["540m height", "360-degree views", "Sky anchors", "Glass floor"],
+      "highlights": [
+        "540m height",
+        "360-degree views",
+        "Sky anchors",
+        "Glass floor"
+      ],
       "tips": "Book tickets online to avoid queues. Go at sunset for day and night views. Avoid foggy days."
     },
     {
@@ -143,12 +193,283 @@
       "category": "shopping",
       "description": "Large waterfront shopping complex with international brands, restaurants, and entertainment in Nanshan.",
       "address": "Wenwei Road, Nanshan District",
-      "coordinates": { "lat": 22.5122, "lng": 113.9272 },
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9272
+      },
       "openingHours": "10:00-22:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["International brands", "Food court", "Cinema", "Waterfront views"],
+      "highlights": [
+        "International brands",
+        "Food court",
+        "Cinema",
+        "Waterfront views"
+      ],
       "tips": "Good for rainy days. Connected to Metro. Excellent restaurants on upper floors."
+    },
+    {
+      "id": "oct-eastern",
+      "name": "东部华侨城",
+      "nameEn": "OCT Eastern",
+      "category": "theme-park",
+      "description": "Large ecological tourism zone with茶溪谷 theme park,大侠谷云海谷, and hot springs. Combines natural scenery with entertainment.",
+      "address": "Yangtai Mountain, Yantian District",
+      "coordinates": {
+        "lat": 22.6022,
+        "lng": 114.2572
+      },
+      "openingHours": "09:30-18:00",
+      "ticketPrice": "200 CNY (one park), 300 CNY (two parks)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Tea Stream Valley",
+        "Grand Canyon",
+        "Hot spring resort",
+        "Mountaintop monastery"
+      ],
+      "tips": "Stay overnight at the resort hotel for full experience. Wear comfortable shoes for hiking."
+    },
+    {
+      "id": "dameisha",
+      "name": "大梅沙海滨公园",
+      "nameEn": "Dameisha Beach Park",
+      "category": "beach",
+      "description": "Popular sandy beach with clear waters and scenic coastline. Free entry public beach with facilities.",
+      "address": "Dameisha, Yantian District",
+      "coordinates": {
+        "lat": 22.5922,
+        "lng": 114.2872
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-5 hours",
+      "highlights": [
+        "Golden sand beach",
+        "Swimming area",
+        "Sculpture park",
+        "Coastal promenade"
+      ],
+      "tips": "Arrive early on weekends to avoid crowds. No outside food allowed. Rent umbrella and chair on-site."
+    },
+    {
+      "id": "xiaomeisha",
+      "name": "小梅沙海洋世界",
+      "nameEn": "Xiaomeisha Sea World",
+      "category": "aquarium",
+      "description": "Marine aquarium with dolphin shows, polar exhibits, and underwater tunnels. Great for families.",
+      "address": "Xiaomeisha, Yantian District",
+      "coordinates": {
+        "lat": 22.5822,
+        "lng": 114.2972
+      },
+      "openingHours": "09:30-17:30",
+      "ticketPrice": "170 CNY (adult), 85 CNY (children)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Dolphin performances",
+        "Polar bear exhibit",
+        "Underwater tunnel",
+        "Shark tank"
+      ],
+      "tips": "Shows at scheduled times, check schedule on arrival. Good for rainy days."
+    },
+    {
+      "id": "dutch-flower-town",
+      "name": "荷兰花卉小镇",
+      "nameEn": "Dutch Flower Town",
+      "category": "cultural",
+      "description": "European-style flower market with Dutch architecture, flower shops, and cafes. Free entry.",
+      "address": "Qianhai Road, Nanshan District",
+      "coordinates": {
+        "lat": 22.5022,
+        "lng": 113.8972
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Dutch windmill",
+        "Flower markets",
+        "European architecture",
+        "Coffee shops"
+      ],
+      "tips": "Best in spring for flower displays. Popular for wedding photos. Great for Instagram shots."
+    },
+    {
+      "id": "ganjia-ancient-town",
+      "name": "甘坑古镇",
+      "nameEn": "Ganjia Ancient Town",
+      "category": "cultural",
+      "description": "Historical Hakka village with traditional architecture, museums, and local snacks. Evening lighting spectacular.",
+      "address": "Ganjia Village, Longgang District",
+      "coordinates": {
+        "lat": 22.6822,
+        "lng": 114.2672
+      },
+      "openingHours": "09:00-22:00",
+      "ticketPrice": "Free (some attractions inside)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Traditional Hakka houses",
+        "Ancient wells",
+        "Folk museums",
+        "Local snacks"
+      ],
+      "tips": "Visit in late afternoon to see both day and night scenes. Try Hakka specialties."
+    },
+    {
+      "id": "guanlan-art-village",
+      "name": "观澜版画村",
+      "nameEn": "Guanlan Original Art Village",
+      "category": "cultural",
+      "description": "Traditional Hakka village turned artist colony. Known for printmaking and traditional buildings.",
+      "address": "Guanlan, Longhua District",
+      "coordinates": {
+        "lat": 22.7222,
+        "lng": 114.0572
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Woodblock printing workshops",
+        "Hakka architecture",
+        "Rice paddies",
+        "Art galleries"
+      ],
+      "tips": "Combine with nearby Guanlan Hot Spring. Morning visits best for photos."
+    },
+    {
+      "id": "dapeng-fort",
+      "name": "大鹏所城",
+      "nameEn": "Dapeng Ancient Fortress",
+      "category": "historical",
+      "description": "600-year-old Ming Dynasty coastal fortress. Birthplace of China's modern navy and Hakka culture.",
+      "address": "Dapeng Peninsula, Longgang District",
+      "coordinates": {
+        "lat": 22.5822,
+        "lng": 114.4972
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ming walls",
+        "Hakka ancestral halls",
+        "Coastal views",
+        "Historical museums"
+      ],
+      "tips": "Combine with nearby beaches. Try Dapeng cuisine. Half-day trip recommended."
+    },
+    {
+      "id": "jiaochangwei-beach",
+      "name": "较场尾海滩",
+      "nameEn": "Jiaochangwei Beach",
+      "category": "beach",
+      "description": "Popular beach destination known for surfing, beach bars, and colorful seaside cabins.",
+      "address": "Dapeng Peninsula, Longgang District",
+      "coordinates": {
+        "lat": 22.5722,
+        "lng": 114.4872
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Half-day to full day",
+      "highlights": [
+        "Surfing schools",
+        "Beach bars",
+        "Colorful cabins",
+        "Sunrise views"
+      ],
+      "tips": "Known as 'Shenzhen's Bali'. Stay overnight for beach party atmosphere. Try fresh seafood."
+    },
+    {
+      "id": "mission-hills",
+      "name": "观澜湖高尔夫",
+      "nameEn": "Mission Hills Golf Club",
+      "category": "sports",
+      "description": "World's largest golf club with 12 courses. Hosts international tournaments.",
+      "address": "Mission Hills, Longhua District",
+      "coordinates": {
+        "lat": 22.7522,
+        "lng": 114.0672
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "800-2000 CNY per round",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "12 signature courses",
+        "Spafirst-class spa",
+        "Tennis center",
+        "Wildlife zone"
+      ],
+      "tips": "Book in advance. Non-golfers can enjoy spa and restaurants. Stay at resort hotel."
+    },
+    {
+      "id": "shenzhen-museum",
+      "name": "深圳博物馆",
+      "nameEn": "Shenzhen Museum",
+      "category": "museum",
+      "description": "Modern museum showcasing Shenzhen's history from fishing village to megacity. Free entry.",
+      "address": "市民中心, 福田区",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0472
+      },
+      "openingHours": "10:00-18:00 (closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Shenzhen history exhibits",
+        "Special exhibitions",
+        "Free guided tours",
+        "Cultural programs"
+      ],
+      "tips": "Combine with nearby Shenzhen Convention Center. Good for rainy days."
+    },
+    {
+      "id": "chunjee-festival",
+      "name": "春 节",
+      "nameEn": "Chinese New Year in Shenzhen",
+      "category": "festival",
+      "description": "Major citywide celebrations during Chinese New Year with flowers, lights, and cultural events.",
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      "openingHours": "Varies by event",
+      "ticketPrice": "Varies",
+      "recommendedVisitTime": "1-3 days",
+      "highlights": [
+        "Lianhua Hill flower display",
+        "Happy Valley CNY events",
+        "Cultural performances",
+        "Light festivals"
+      ],
+      "tips": "Book hotels early. City empties after 3rd day. Good time to visit theme parks without crowds."
+    },
+    {
+      "id": "shenzhen-20",
+      "name": "大梅沙海滨公园",
+      "nameEn": " Dameisha Coastal Park",
+      "category": "natural",
+      "description": "Popular coastal park with sandy beach and recreational facilities.",
+      "address": "Dameisha, Yantian District",
+      "coordinates": {
+        "lat": 22.5889,
+        "lng": 114.2822
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Beach",
+        "Swimming",
+        "Coastal views"
+      ],
+      "tips": "Best on weekdays to avoid crowds. Take sun protection."
     }
   ],
   "restaurants": [
@@ -162,12 +483,25 @@
       "avgPrice": 500,
       "rating": 4.7,
       "address": "2F, Shenzhen Times Square, Luobao Road, Luohu",
-      "coordinates": { "lat": 22.5422, "lng": 114.0872 },
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0872
+      },
       "phone": "+86 755 8268 0888",
       "hours": "11:00-15:00, 17:30-22:00",
       "description": "Two Michelin-starred Cantonese fine dining with exceptional dim sum and premium seafood.",
-      "dishHighlights": ["Steamed shrimp dumplings", "Braised abalone", "Roasted suckling pig"],
-      "tags": ["fine-dining", "cantonese", "dim-sum", "business"]
+      "dishHighlights": [
+        "Steamed shrimp dumplings",
+        "Braised abalone",
+        "Roasted suckling pig"
+      ],
+      "tags": [
+        "fine-dining",
+        "cantonese",
+        "dim-sum",
+        "business"
+      ],
+      "diamond": 0
     },
     {
       "id": "shenzhen-2",
@@ -179,12 +513,24 @@
       "avgPrice": 300,
       "rating": 4.6,
       "address": "2F, Park 'N Shop Center, Jintian Road, Futian",
-      "coordinates": { "lat": 22.5222, "lng": 114.0572 },
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
       "phone": "+86 755 8250 8888",
       "hours": "11:00-14:30, 17:30-22:00",
       "description": "Two-diamond Black Pearl restaurant specializing in authentic Cantonese cuisine with elegant setting.",
-      "dishHighlights": ["Steamed fish", "White salted chicken", "Bird's nest dessert"],
-      "tags": ["cantonese", "fine-dining", "celebration"]
+      "dishHighlights": [
+        "Steamed fish",
+        "White salted chicken",
+        "Bird's nest dessert"
+      ],
+      "tags": [
+        "cantonese",
+        "fine-dining",
+        "celebration"
+      ],
+      "star": 0
     },
     {
       "id": "shenzhen-3",
@@ -195,12 +541,26 @@
       "avgPrice": 150,
       "rating": 4.8,
       "address": "Nanshan District (multiple locations)",
-      "coordinates": { "lat": 22.5122, "lng": 113.9272 },
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9272
+      },
       "phone": "+86 755 8623 8888",
       "hours": "11:00-22:00",
       "description": "Famous for tender coconut chicken hot pot, a favorite among locals for healthy and delicious dining.",
-      "dishHighlights": ["Coconut chicken", "Fresh vegetables", "Taro balls"],
-      "tags": ["local", "hot-pot", "healthy", "family-friendly"]
+      "dishHighlights": [
+        "Coconut chicken",
+        "Fresh vegetables",
+        "Taro balls"
+      ],
+      "tags": [
+        "local",
+        "hot-pot",
+        "healthy",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "shenzhen-4",
@@ -211,11 +571,26 @@
       "avgPrice": 100,
       "rating": 4.5,
       "address": "Fuming Road, Futian District",
-      "coordinates": { "lat": 22.5322, "lng": 114.0472 },
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0472
+      },
       "hours": "17:00-03:00",
       "description": "Popular late-night spot for thick Cantonese congee and fresh seafood dishes.",
-      "dishHighlights": ["Seafood congee", "Steamed scallops", "Fried dough sticks"],
-      "tags": ["local", "late-night", "congee", "seafood"]
+      "dishHighlights": [
+        "Seafood congee",
+        "Steamed scallops",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "late-night",
+        "congee",
+        "seafood"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "shenzhen-5",
@@ -226,11 +601,26 @@
       "avgPrice": 50,
       "rating": 4.3,
       "address": "Huaqiangbei Road, Futian District",
-      "coordinates": { "lat": 22.5522, "lng": 114.0672 },
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0672
+      },
       "hours": "10:00-23:00",
       "description": "Bustling street food area near electronics market with variety of local snacks and quick bites.",
-      "dishHighlights": ["Grilled skewers", "Stir-fried noodles", "Bubble tea"],
-      "tags": ["local", "street-food", "budget", "late-night"]
+      "dishHighlights": [
+        "Grilled skewers",
+        "Stir-fried noodles",
+        "Bubble tea"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "budget",
+        "late-night"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "shenzhen-6",
@@ -242,12 +632,24 @@
       "avgPrice": 200,
       "rating": 4.6,
       "address": "MixC Mall, Kouan Road, Luohu",
-      "coordinates": { "lat": 22.5422, "lng": 114.0972 },
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0972
+      },
       "phone": "+86 755 8266 8888",
       "hours": "10:00-22:00",
       "description": "Michelin-starred dim sum by celebrity chef Chua Lam. Modern presentation with traditional flavors.",
-      "dishHighlights": ["Crystal shrimp dumplings", "Baked char siu buns", "Pan-fried noodles"],
-      "tags": ["fine-dining", "dim-sum", "celebrity-chef"]
+      "dishHighlights": [
+        "Crystal shrimp dumplings",
+        "Baked char siu buns",
+        "Pan-fried noodles"
+      ],
+      "tags": [
+        "fine-dining",
+        "dim-sum",
+        "celebrity-chef"
+      ],
+      "diamond": 0
     },
     {
       "id": "shenzhen-7",
@@ -258,12 +660,26 @@
       "avgPrice": 120,
       "rating": 4.7,
       "address": "Nanshan District (multiple locations)",
-      "coordinates": { "lat": 22.5122, "lng": 113.9472 },
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9472
+      },
       "phone": "+86 755 2640 8888",
       "hours": "11:00-14:30, 17:00-21:30",
       "description": "Famous for salt-baked goose and traditional Chaozhou dishes. Local favorite with honest pricing.",
-      "dishHighlights": ["Salt-baked goose", "Goose meatballs", "Preserved vegetables"],
-      "tags": ["local", "chaozhou", "specialty", "value"]
+      "dishHighlights": [
+        "Salt-baked goose",
+        "Goose meatballs",
+        "Preserved vegetables"
+      ],
+      "tags": [
+        "local",
+        "chaozhou",
+        "specialty",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "shenzhen-8",
@@ -274,7 +690,10 @@
       "avgPrice": 100,
       "rating": 4.5,
       "address": "COCO Park, Fuhua Road, Futian",
-      "coordinates": { "lat": 22.5322, "lng": 114.0372 },
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0372
+      },
       "hours": "11:00-23:00",
       "description": "Popular chain known for creatively grilled fish dishes with Sichuan spices and local flavors.",
       "dishHighlights": [
@@ -282,7 +701,387 @@
         "Dan dan noodles",
         "Chengdu style skewers"
       ],
-      "tags": ["local", "fish", "creative", "casual"]
+      "tags": [
+        "local",
+        "fish",
+        "creative",
+        "casual"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "shenzhen-9",
+      "name": "点都德",
+      "nameEn": "Dian Dou De",
+      "type": "local",
+      "cuisine": "Cantonese Dim Sum",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Various locations including Dongmen and Futian",
+      "coordinates": {
+        "lat": 22.5622,
+        "lng": 114.1072
+      },
+      "phone": "+86 755 2222 8888",
+      "hours": "07:00-22:00",
+      "description": "Popular dim sum chain known for traditional recipes and all-day dining. Great for breakfast and brunch.",
+      "dishHighlights": [
+        "Pork shu mai",
+        "Egg tarts",
+        "Spring rolls",
+        "Congee"
+      ],
+      "tags": [
+        "dim-sum",
+        "breakfast",
+        "all-day",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shenzhen-10",
+      "name": "陶陶居",
+      "nameEn": "Tao Tao Ju",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Cantonese",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "MixC Mall, Kouan Road, Luohu",
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0972
+      },
+      "phone": "+86 755 8266 8888",
+      "hours": "11:00-14:30, 17:00-22:00",
+      "description": "Historic Cantonese restaurant established in 1880. Known for authentic old-style dim sum and traditional dishes.",
+      "dishHighlights": [
+        "Steamed spareribs",
+        "Baked crab shells",
+        "Phoenix claws",
+        "Bird's nest soup"
+      ],
+      "tags": [
+        "cantonese",
+        "historic",
+        "dim-sum",
+        "traditional"
+      ],
+      "star": 0
+    },
+    {
+      "id": "shenzhen-11",
+      "name": "广州酒家",
+      "nameEn": "Guangzhou Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 120,
+      "rating": 4.4,
+      "address": "Shennan Avenue, Futian District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0472
+      },
+      "hours": "07:00-22:00",
+      "description": "Famous chain for Cantonese cuisine and yum cha. Known for moon cakes and holiday specialties.",
+      "dishHighlights": [
+        "Dim sum basket",
+        "Roast duck",
+        "Steamed fish",
+        "Moon cakes"
+      ],
+      "tags": [
+        "cantonese",
+        "yum-cha",
+        "chain",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "shenzhen-12",
+      "name": "胜记酒家",
+      "nameEn": "Sheng Ji Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 200,
+      "rating": 4.7,
+      "address": "Shennan Avenue, Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0972
+      },
+      "phone": "+86 755 8222 8888",
+      "hours": "11:00-14:30, 17:30-22:00",
+      "description": "Legendary Cantonese restaurant with 40+ years history. Known for premium seafood and traditional recipes.",
+      "dishHighlights": [
+        "Braised shark fin",
+        "Steamed crab",
+        "Roasted suckling pig",
+        "Bird's nest"
+      ],
+      "tags": [
+        "cantonese",
+        "historic",
+        "seafood",
+        "fine-dining"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shenzhen-13",
+      "name": "潮江春",
+      "nameEn": "Chao Jiang Chun",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Chaozhou",
+      "avgPrice": 180,
+      "rating": 4.5,
+      "address": "Futian District (multiple locations)",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
+      "phone": "+86 755 8250 8888",
+      "hours": "11:00-14:30, 17:30-22:00",
+      "description": "Elegant Chaozhou restaurant known for精致潮州菜 and superior service.",
+      "dishHighlights": [
+        "Cold crab",
+        "Braised goose",
+        "Steamed fish",
+        "Chaozhou noodles"
+      ],
+      "tags": [
+        "chaozhou",
+        "fine-dining",
+        "seafood",
+        "elegant"
+      ],
+      "star": 0
+    },
+    {
+      "id": "shenzhen-14",
+      "name": "丹桂轩",
+      "nameEn": "Dan Gui Xuan",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Nanshan District (multiple locations)",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9272
+      },
+      "hours": "07:00-22:00",
+      "description": "Popular for all-day dim sum and Cantonese comfort food. Local favorite with consistent quality.",
+      "dishHighlights": [
+        "Shrimp dumplings",
+        "Char siu bao",
+        "Rice rolls",
+        "Taro balls"
+      ],
+      "tags": [
+        "dim-sum",
+        "cantonese",
+        "all-day",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "shenzhen-15",
+      "name": "海港大酒楼",
+      "nameEn": "Hai Gang Da Jiu Lou",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.1072
+      },
+      "phone": "+86 755 8225 8888",
+      "hours": "07:00-14:30, 17:30-22:00",
+      "description": "Large traditional Cantonese restaurant famous for wedding banquets and yum cha.",
+      "dishHighlights": [
+        "Dim sum variety",
+        "Braised chicken",
+        "Seafood",
+        "Sweet desserts"
+      ],
+      "tags": [
+        "cantonese",
+        "yum-cha",
+        "banquet",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "shenzhen-16",
+      "name": "凤凰楼",
+      "nameEn": "Feng Huang Lou",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 80,
+      "rating": 4.3,
+      "address": "Dongmen, Luohu District",
+      "coordinates": {
+        "lat": 22.5622,
+        "lng": 114.1172
+      },
+      "hours": "07:00-22:00",
+      "description": "Classic dim sum restaurant in historic Dongmen area. Known for affordable and authentic yum cha.",
+      "dishHighlights": [
+        "Egg rolls",
+        "Steamed dumplings",
+        "Congee",
+        "Rice noodles"
+      ],
+      "tags": [
+        "dim-sum",
+        "budget",
+        "local",
+        "historic-area"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "shenzhen-17",
+      "name": "大名酒家",
+      "nameEn": "Da Ming Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Nanshan District",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9372
+      },
+      "hours": "07:00-22:00",
+      "description": "Neighborhood favorite for traditional Cantonese breakfast and dim sum. Local crowd only.",
+      "dishHighlights": [
+        "Morning dim sum",
+        "Egg sandwiches",
+        "Congee",
+        "Hong Kong style milk tea"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "dim-sum",
+        "neighborhood"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "shenzhen-18",
+      "name": "老广酒家",
+      "nameEn": "Lao Guang Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "Futian District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0372
+      },
+      "hours": "06:30-22:00",
+      "description": "Known for authentic old Guangzhou style dim sum. Opens early for breakfast lovers.",
+      "dishHighlights": [
+        "Early morning dim sum",
+        "Steamed sponges",
+        "Radish cake",
+        "Sesame balls"
+      ],
+      "tags": [
+        "cantonese",
+        "early-breakfast",
+        "traditional",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "shenzhen-19",
+      "name": "波士顿龙虾餐厅",
+      "nameEn": "Boston Lobster Restaurant",
+      "type": "local",
+      "cuisine": "Seafood/International",
+      "avgPrice": 400,
+      "rating": 4.6,
+      "address": "Shekou, Nanshan District",
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 113.9172
+      },
+      "hours": "11:00-14:30, 17:00-22:00",
+      "description": "Premium seafood restaurant famous for live tanks with lobster, crab, and fish.",
+      "dishHighlights": [
+        "Boston lobster",
+        "Stone crab",
+        "Live fish",
+        "Abalone"
+      ],
+      "tags": [
+        "seafood",
+        "premium",
+        "live-tank",
+        "celebration"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "shenzhen-20",
+      "name": " BBQ韩国烤肉",
+      "nameEn": "Korean BBQ Restaurant",
+      "type": "local",
+      "cuisine": "Korean",
+      "avgPrice": 150,
+      "rating": 4.4,
+      "address": "Coco Park, Futian District",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0372
+      },
+      "hours": "11:00-23:00",
+      "description": "Popular Korean BBQ with premium meat selection and authentic Korean side dishes.",
+      "dishHighlights": [
+        "Hanwoo beef",
+        "Pork belly",
+        "Kimchi jjigae",
+        "Korean cold noodles"
+      ],
+      "tags": [
+        "korean",
+        "bbq",
+        "meat",
+        "fun"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     }
   ],
   "transport": {
@@ -339,9 +1138,17 @@
       "budget": "luxury",
       "priceRange": "1500-3000 CNY/night",
       "address": "9009 Shennan Avenue, Overseas Chinese Town",
-      "coordinates": { "lat": 22.5322, "lng": 113.9672 },
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9672
+      },
       "rating": 4.7,
-      "highlights": ["Near Happy Valley", "Large pool", "Multiple restaurants", "Garden setting"],
+      "highlights": [
+        "Near Happy Valley",
+        "Large pool",
+        "Multiple restaurants",
+        "Garden setting"
+      ],
       "bookingTips": "Weekend packages good value. Check for OCT discounts."
     },
     {
@@ -350,9 +1157,17 @@
       "budget": "luxury",
       "priceRange": "2000-4000 CNY/night",
       "address": "5016 Jintian Road, Futian District",
-      "coordinates": { "lat": 22.5222, "lng": 114.0572 },
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
       "rating": 4.6,
-      "highlights": ["Central location", "High-rise views", "Butler service", "Luxury spa"],
+      "highlights": [
+        "Central location",
+        "High-rise views",
+        "Butler service",
+        "Luxury spa"
+      ],
       "bookingTips": "Club rooms worth upgrade for privileges. Book direct for benefits."
     },
     {
@@ -361,9 +1176,17 @@
       "budget": "luxury",
       "priceRange": "1200-2500 CNY/night",
       "address": "1002 Jianshe Road, Luohu District",
-      "coordinates": { "lat": 22.5522, "lng": 114.0972 },
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0972
+      },
       "rating": 4.5,
-      "highlights": ["Near Luohu border", "Luohu Park views", "Business center", "Multiple dining"],
+      "highlights": [
+        "Near Luohu border",
+        "Luohu Park views",
+        "Business center",
+        "Multiple dining"
+      ],
       "bookingTips": "Best for those entering from Hong Kong. Good for transit."
     },
     {
@@ -372,9 +1195,16 @@
       "budget": "mid",
       "priceRange": "600-1200 CNY/night",
       "address": "88 Fuhua Road, Futian District",
-      "coordinates": { "lat": 22.5322, "lng": 114.0472 },
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0472
+      },
       "rating": 4.4,
-      "highlights": ["Near Convention Center", "Good value", "Reliable service"],
+      "highlights": [
+        "Near Convention Center",
+        "Good value",
+        "Reliable service"
+      ],
       "bookingTips": "Check weekend rates. Book early during conventions."
     },
     {
@@ -383,10 +1213,258 @@
       "budget": "budget",
       "priceRange": "300-600 CNY/night",
       "address": "2008 Chunhui Road, Luohu",
-      "coordinates": { "lat": 22.5622, "lng": 114.1072 },
+      "coordinates": {
+        "lat": 22.5622,
+        "lng": 114.1072
+      },
       "rating": 4.2,
-      "highlights": ["Near Dongmen shopping", "Metro access", "Budget-friendly"],
+      "highlights": [
+        "Near Dongmen shopping",
+        "Metro access",
+        "Budget-friendly"
+      ],
       "bookingTips": "Great for shopping tourists. Basic but clean."
+    },
+    {
+      "name": "深圳jw万豪酒店",
+      "nameEn": "JW Marriott Hotel Shenzhen",
+      "budget": "luxury",
+      "priceRange": "1800-3500 CNY/night",
+      "address": "6001 Shennan Avenue, Futian District",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0672
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Modern luxury",
+        "Multiple award-winning restaurants",
+        "Rooftop bar",
+        "Executive lounge"
+      ],
+      "bookingTips": "Book via Marriott app for member benefits. Club lounge access worth it."
+    },
+    {
+      "name": "深圳大中华希尔顿酒店",
+      "nameEn": "Hilton Shenzhen Grand World",
+      "budget": "luxury",
+      "priceRange": "1200-2200 CNY/night",
+      "address": "Great China Financial Center, Futian",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0772
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Iconic tower",
+        "Sky lobby",
+        "Central location",
+        "Reliable brand"
+      ],
+      "bookingTips": "Higher floors offer better views. Weekend deals available."
+    },
+    {
+      "name": "深圳威尼斯睿途酒店",
+      "nameEn": "The Venice Raytour Hotel",
+      "budget": "mid",
+      "priceRange": "800-1500 CNY/night",
+      "address": "9028-1 Shennan Avenue, Overseas Chinese Town",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9572
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Venetian canal theme",
+        "Near Window of the World",
+        "Unique architecture",
+        "Good breakfast"
+      ],
+      "bookingTips": "Request canal-view rooms. Good for families with kids."
+    },
+    {
+      "name": "深圳求山水皇冠假日酒店",
+      "nameEn": "Crowne Plaza Shenzhen",
+      "budget": "mid",
+      "priceRange": "700-1300 CNY/night",
+      "address": "143 Yi Tian Road, Futian District",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0272
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Shenzhen Convention Center",
+        "Comfortable beds",
+        "Good service"
+      ],
+      "bookingTips": "Book during conventions in Futian for convenience."
+    },
+    {
+      "name": "深圳海德酒店",
+      "nameEn": "Shenzhen Hai Dei Hotel",
+      "budget": "mid",
+      "priceRange": "600-1100 CNY/night",
+      "address": "1002 Nanshan Avenue, Nanshan District",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9372
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Nanshan business district",
+        "Modern rooms",
+        "Good restaurant"
+      ],
+      "bookingTips": "Good for tech company visitors. Check corporate rates."
+    },
+    {
+      "name": "深圳艺尚商务酒店",
+      "nameEn": "Shenzhen Yishang Business Hotel",
+      "budget": "budget",
+      "priceRange": "350-650 CNY/night",
+      "address": "3031 Shennan Avenue, Futian",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0372
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Central location",
+        "Clean rooms",
+        "Metro nearby"
+      ],
+      "bookingTips": "Best value in Futian. Good for short business trips."
+    },
+    {
+      "name": "深圳凯宾斯基酒店",
+      "nameEn": "Kempinski Hotel Shenzhen",
+      "budget": "luxury",
+      "priceRange": "1500-2800 CNY/night",
+      "address": "Haide Yi Dao, Nanshan District",
+      "coordinates": {
+        "lat": 22.5022,
+        "lng": 113.9272
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Sea view rooms",
+        "European brand",
+        "Award-winning spa",
+        "Fine dining"
+      ],
+      "bookingTips": "Sea-view rooms worth premium. Book direct for better rates."
+    },
+    {
+      "name": "深圳马哥孛罗酒店",
+      "nameEn": "Marco Polo Shenzhen",
+      "budget": "mid",
+      "priceRange": "800-1400 CNY/night",
+      "address": "1692 Jianshe Road, Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.1072
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Luohu border",
+        "Shopping mall attached",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Great for cross-border travelers. Connected to mall."
+    },
+    {
+      "name": "深圳深业上城民宿",
+      "nameEn": "Shenzhen Upper Hill Residence",
+      "budget": "mid",
+      "priceRange": "500-900 CNY/night",
+      "address": "Mid-Level, Upper Hill, Futian",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0572
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Apartment-style",
+        "Kitchen facilities",
+        "City views",
+        "Quiet location"
+      ],
+      "bookingTips": "Good for extended stays. Request higher floors."
+    },
+    {
+      "name": "深圳北站铂尔曼酒店",
+      "nameEn": "Pullman Shenzhen North Station",
+      "budget": "mid",
+      "priceRange": "550-1000 CNY/night",
+      "address": "North Railway Station, Longhua District",
+      "coordinates": {
+        "lat": 22.6522,
+        "lng": 114.0272
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near high-speed rail",
+        "Modern design",
+        "Good for transit"
+      ],
+      "bookingTips": "Perfect for arriving by train. Easy metro connection."
+    },
+    {
+      "name": "深圳雅诗阁服务公寓",
+      "nameEn": "Ascott Serviced Residence Shenzhen",
+      "budget": "mid",
+      "priceRange": "700-1200 CNY/night",
+      "address": "888 Shennan Avenue, Futian",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0472
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Serviced apartments",
+        "Full kitchen",
+        "Long-stay suitable",
+        "Gym and pool"
+      ],
+      "bookingTips": "Best for business travelers staying a week or more."
+    },
+    {
+      "name": "深圳中洲圣廷苑酒店",
+      "nameEn": "The Pavilion Hotel Shenzhen",
+      "budget": "mid",
+      "priceRange": "650-1100 CNY/night",
+      "address": "2001 Jiabin Road, Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0972
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Dasha River",
+        "Quiet area",
+        "Good breakfast"
+      ],
+      "bookingTips": "Good balance of price and location. Weekend discounts."
+    },
+    {
+      "name": "深圳东部华侨城茵特拉根酒店",
+      "nameEn": "Interlaken OCT Hotel",
+      "budget": "luxury",
+      "priceRange": "1400-2600 CNY/night",
+      "address": "OCT Eastern, Yantian District",
+      "coordinates": {
+        "lat": 22.6022,
+        "lng": 114.2572
+      },
+      "rating": 4.6,
+      "highlights": [
+        "European alpine theme",
+        "Hot spring access",
+        "Nature setting",
+        "Near theme parks"
+      ],
+      "bookingTips": "Include hot spring in your booking. Great for weekend getaways."
     }
   ],
   "payment": [
@@ -394,22 +1472,41 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal payment throughout Shenzhen",
-      "howToUse": ["Download before arrival", "Link card or Chinese account"],
-      "tips": ["Works at all merchants", "English available", "Required for tech experiences"]
+      "howToUse": [
+        "Download before arrival",
+        "Link card or Chinese account"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available",
+        "Required for tech experiences"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere in Shenzhen",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Required for shared bikes"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Required for shared bikes"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at traditional markets only",
-      "howToUse": ["ATM at every bank", "Currency exchange at banks"],
-      "tips": ["Only needed for small vendors", "Most places accept cards"]
+      "howToUse": [
+        "ATM at every bank",
+        "Currency exchange at banks"
+      ],
+      "tips": [
+        "Only needed for small vendors",
+        "Most places accept cards"
+      ]
     }
   ],
   "culturalTips": [
@@ -436,6 +1533,102 @@
       "title": "Language",
       "content": "Mandarin is primary. Cantonese widely spoken in Luohu and traditional areas. English more common in tourist areas.",
       "importance": "low"
+    },
+    {
+      "category": "tech",
+      "title": "Huaqiangbei Electronics Market",
+      "content": "The world's largest electronics market at Huaqiangbei. Bargain hard, check quality carefully, and verify specifications before purchase. Bring your laptop to test components.",
+      "importance": "high"
+    },
+    {
+      "category": "startup",
+      "title": "Startup Ecosystem",
+      "content": "Shenzhen is home to Tencent, Huawei, BYD, and DJI. Visit Tencent's headquarters in Nanshan. The city has a unique entrepreneurial spirit born from reform and opening.",
+      "importance": "medium"
+    },
+    {
+      "category": "cashless",
+      "title": "Cashless Society",
+      "content": "Mobile payment is universal in Shenzhen. Alipay and WeChat Pay are used for everything from street food to taxis. Bring a phone with these apps installed.",
+      "importance": "high"
+    },
+    {
+      "category": "beach",
+      "title": "Beach Culture",
+      "content": "Shenzhen has beautiful beaches (Dameisha, Xiaomeisha, Jiaochangwei). Arrive early on weekends as they get crowded. Bring sunscreen - shade is limited.",
+      "importance": "medium"
+    },
+    {
+      "category": "cantonese",
+      "title": "Cantonese Influence",
+      "content": "While Mandarin dominates, Cantonese is still widely spoken in Luohu, Dongmen, and traditional Hakka areas. Locals appreciate when visitors try basic phrases.",
+      "importance": "medium"
+    },
+    {
+      "category": "hk-access",
+      "title": "Hong Kong Access",
+      "content": "Shenzhen is gateway to Hong Kong via Luohu or Futian Checkpoint. Consider a day trip to Hong Kong or use Shenzhen as base for Pearl River Delta exploration.",
+      "importance": "high"
+    },
+    {
+      "category": "theme-parks",
+      "title": "Theme Park Culture",
+      "content": "Shenzhen has major theme parks (Window of the World, Happy Valley, OCT Eastern). Book tickets online for discounts. Weekdays are less crowded.",
+      "importance": "medium"
+    },
+    {
+      "category": "fashion",
+      "title": "Fashion and Design",
+      "content": "OCT-LOFT and Dapeng Fortress host creative festivals. Shenzhen Fashion Week showcases local designers. The city blends innovation with manufacturing.",
+      "importance": "low"
+    },
+    {
+      "category": " hukou",
+      "title": "Reform History",
+      "content": "Shenzhen was a fishing village in 1980. Now it's 17+ million people. Visit Shenzhen Museum to understand this remarkable transformation.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Teochew Dialect",
+      "content": "Shenzhen has large Teochew (潮州) population from Chaoshan. Their cuisine and culture influence local dining. Try Chaoshan beef hot pot.",
+      "importance": "low"
+    },
+    {
+      "category": "seafood",
+      "title": "Seafood Dining",
+      "content": "Coastal location means fresh seafood is abundant. Shekou and Dapeng have excellent seafood restaurants. Live tanks are common - pick your own.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Nightlife Scene",
+      "content": "Sea World (海上世界) in Shekou has vibrant nightlife with international bars. Coastal City and COCO Park also have good evening options.",
+      "importance": "medium"
+    },
+    {
+      "category": "art",
+      "title": "Art Scene",
+      "content": "Dafen Oil Painting Village creates 60% of world's oil paintings. OCT-LOFT hosts indie music and design events. Art is big business here.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Typhoon Season",
+      "content": "Shenzhen typhoon season is July-September. Check weather before beach trips. Major typhoons cause transit shutdowns - stay indoors.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Modern Architecture",
+      "content": "Shenzhen has iconic modern architecture: Ping An Finance Center (599m), Shenzhen Civic Center by Mario Botta. Architecture tours are popular.",
+      "importance": "low"
+    },
+    {
+      "category": "business",
+      "title": "Business Hub",
+      "content": "Shenzhen is China's Silicon Valley. Many tech companies recruit internationally. Business culture is fast-paced and efficiency-focused.",
+      "importance": "medium"
     }
   ],
   "emergencyContacts": [
@@ -459,7 +1652,10 @@
       "nameEn": "Peking University Shenzhen Hospital",
       "phone": "+86 755 8392 3333",
       "address": "1120 Lianhua Road, Futian",
-      "coordinates": { "lat": 22.5422, "lng": 114.0672 },
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0672
+      },
       "notes": "English-speaking staff, accepts international insurance"
     },
     {
@@ -469,6 +1665,89 @@
       "phone": "+86 20 3814 5775",
       "address": "Guangzhou (nearest US consular services)",
       "notes": "For US citizens in Shenzhen region"
+    },
+    {
+      "type": "fire",
+      "name": "深圳消防支队",
+      "nameEn": "Shenzhen Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue emergency"
+    },
+    {
+      "type": "hospital",
+      "name": "深圳市第二人民医院",
+      "nameEn": "Shenzhen Second People's Hospital",
+      "phone": "+86 755 8336 6388",
+      "address": "3002 Sungang Road, Futian",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0772
+      },
+      "notes": "Trauma center, 24h emergency"
+    },
+    {
+      "type": "hospital",
+      "name": "深圳华侨城医院",
+      "nameEn": "Shenzhen Overseas Chinese Town Hospital",
+      "phone": "+86 755 2660 2011",
+      "address": "9011 Shennan Avenue, Nanshan",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9672
+      },
+      "notes": "Near OCT area, good for tourists"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻广州总领事馆",
+      "nameEn": "UK Consulate General Guangzhou",
+      "phone": "+86 20 8314 3000",
+      "address": "Guangzhou",
+      "notes": "For UK citizens in Shenzhen region"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻广州总领事馆",
+      "nameEn": "German Consulate General Guangzhou",
+      "phone": "+86 20 8313 0000",
+      "address": "Guangzhou",
+      "notes": "For German citizens in Shenzhen region"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻广州总领事馆",
+      "nameEn": "French Consulate General Guangzhou",
+      "phone": "+86 20 2829 2000",
+      "address": "Guangzhou",
+      "notes": "For French citizens in Shenzhen region"
+    },
+    {
+      "type": "hospital",
+      "name": "南方医科大学深圳医院",
+      "nameEn": "Southern Medical University Shenzhen Hospital",
+      "phone": "+86 755 2336 0000",
+      "address": "1333 New Lake Road, Bao'an",
+      "coordinates": {
+        "lat": 22.5822,
+        "lng": 113.8972
+      },
+      "notes": "Modern hospital, near airport"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻广州总领事馆",
+      "nameEn": "Japanese Consulate General Guangzhou",
+      "phone": "+86 20 8334 3009",
+      "address": "Guangzhou",
+      "notes": "For Japanese citizens in Shenzhen region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻广州总领事馆",
+      "nameEn": "Korean Consulate General Guangzhou",
+      "phone": "+86 20 3885 0927",
+      "address": "Guangzhou",
+      "notes": "For Korean citizens in Shenzhen region"
     }
   ],
   "quickFacts": {

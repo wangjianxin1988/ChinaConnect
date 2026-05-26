@@ -1,7 +1,7 @@
 /**
  * Weather API Service
- * Fetches current weather and 5-day forecast from OpenWeatherMap
- * Falls back to static mock data when API key is not configured
+ * Fetches current weather and 5-day forecast from OpenMeteo (primary, free) or OpenWeatherMap (backup)
+ * Falls back to static mock data when API is unavailable
  */
 
 export type TempUnit = "celsius" | "fahrenheit";
@@ -12,7 +12,7 @@ export interface CurrentWeather {
   humidity: number;
   windSpeed: number;
   description: string;
-  icon: string; // openweather icon code e.g. "01d"
+  icon: string; // icon code e.g. "01d"
   main: string; // e.g. "Clear", "Clouds"
   pressure: number;
   visibility: number;
@@ -154,7 +154,7 @@ function setCached(city: string, data: WeatherData): void {
 }
 
 /**
- * Fetch weather for a city. Uses API if OWM_API_KEY is set, else mock data.
+ * Fetch weather for a city. Uses OpenMeteo (free, no API key) or OpenWeatherMap (requires key).
  */
 export async function fetchWeather(
   city: string,
@@ -166,29 +166,30 @@ export async function fetchWeather(
   const cached = getCached(normalizedCity);
   if (cached) return cached;
 
-  const apiKey = import.meta.env.PUBLIC_OWM_API_KEY;
-
-  if (apiKey && lat !== undefined && lng !== undefined) {
+  // Try OpenMeteo first (free, no API key)
+  if (lat !== undefined && lng !== undefined) {
     try {
-      const [currentRes, forecastRes] = await Promise.all([
-        fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${apiKey}`,
-        ),
-        fetch(
-          `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&units=metric&cnt=24&appid=${apiKey}`,
-        ),
-      ]);
-
-      if (currentRes.ok && forecastRes.ok) {
-        const current = await currentRes.json();
-        const forecast = await forecastRes.json();
-
-        const result = buildWeatherData(city, current, forecast, "api");
+      const result = await fetchFromOpenMeteo(city, lat, lng);
+      if (result) {
         setCached(normalizedCity, result);
         return result;
       }
     } catch {
-      // Fall through to mock
+      // Fall through to next option
+    }
+
+    // Try OpenWeatherMap if API key is set
+    const apiKey = import.meta.env.PUBLIC_OWM_API_KEY;
+    if (apiKey) {
+      try {
+        const result = await fetchFromOpenWeatherMap(city, lat, lng, apiKey);
+        if (result) {
+          setCached(normalizedCity, result);
+          return result;
+        }
+      } catch {
+        // Fall through to mock
+      }
     }
   }
 
@@ -200,6 +201,175 @@ export async function fetchWeather(
   const result = { ...mock, city };
   setCached(normalizedCity, result);
   return result;
+}
+
+/**
+ * Fetch weather from OpenMeteo API (free, no API key required)
+ */
+async function fetchFromOpenMeteo(
+  city: string,
+  lat: number,
+  lng: number,
+): Promise<WeatherData | null> {
+  const [weatherRes, forecastRes] = await Promise.all([
+    fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m,surface_pressure&timezone=auto`,
+    ),
+    fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto&forecast_days=4`,
+    ),
+  ]);
+
+  if (!weatherRes.ok || !forecastRes.ok) return null;
+
+  const weather = await weatherRes.json();
+  const forecast = await forecastRes.json();
+
+  return buildWeatherDataFromOpenMeteo(city, weather, forecast);
+}
+
+function buildWeatherDataFromOpenMeteo(
+  city: string,
+  current: Record<string, unknown>,
+  forecast: Record<string, unknown>,
+): WeatherData {
+  const currentData = current.current as Record<string, unknown>;
+  const dailyData = forecast.daily as Record<string, unknown>;
+
+  // Map weather codes to icon codes
+  const weatherCode = currentData.weather_code as number;
+  const icon = mapOpenMeteoToIcon(weatherCode);
+
+  // Build forecast days
+  const times = dailyData.time as string[];
+  const forecastDays: ForecastDay[] = times.slice(1, 4).map((date, i) => ({
+    date,
+    dayName: new Date(date).toLocaleDateString("en-US", { weekday: "short" }),
+    tempMin: Math.round((dailyData.temperature_2m_min as number[])[i + 1]),
+    tempMax: Math.round((dailyData.temperature_2m_max as number[])[i + 1]),
+    main: getWeatherMain(weatherCode),
+    description: getWeatherDescription(weatherCode),
+    icon: mapOpenMeteoToIcon((dailyData.weather_code as number[])[i + 1]),
+    humidity: currentData.relative_humidity_2m as number,
+    pop: ((dailyData.precipitation_probability_max as number[])[i + 1] || 0) / 100,
+  }));
+
+  return {
+    city,
+    current: {
+      temp: Math.round(currentData.temperature_2m as number),
+      feelsLike: Math.round(currentData.apparent_temperature as number),
+      humidity: currentData.relative_humidity_2m as number,
+      windSpeed: currentData.wind_speed_10m as number,
+      description: getWeatherDescription(weatherCode),
+      icon,
+      main: getWeatherMain(weatherCode),
+      pressure: currentData.surface_pressure as number,
+      visibility: 10000,
+      sunrise: 0,
+      sunset: 0,
+    },
+    forecast: forecastDays,
+    source: "api",
+    fetchedAt: Date.now(),
+  };
+}
+
+function mapOpenMeteoToIcon(code: number): string {
+  // Map OpenMeteo weather codes to OpenWeatherMap-style icon codes
+  const mapping: Record<number, string> = {
+    0: "01d", // Clear sky
+    1: "02d", // Mainly clear
+    2: "03d", // Partly cloudy
+    3: "04d", // Overcast
+    45: "50d", // Fog
+    48: "50d", // Depositing rime fog
+    51: "09d", // Light drizzle
+    53: "09d", // Moderate drizzle
+    55: "09d", // Dense drizzle
+    61: "10d", // Slight rain
+    63: "10d", // Moderate rain
+    65: "10d", // Heavy rain
+    71: "13d", // Slight snow
+    73: "13d", // Moderate snow
+    75: "13d", // Heavy snow
+    77: "13d", // Snow grains
+    80: "09d", // Slight rain showers
+    81: "09d", // Moderate rain showers
+    82: "09d", // Violent rain showers
+    85: "13d", // Slight snow showers
+    86: "13d", // Heavy snow showers
+    95: "11d", // Thunderstorm
+    96: "11d", // Thunderstorm with slight hail
+    99: "11d", // Thunderstorm with heavy hail
+  };
+  return mapping[code] || "01d";
+}
+
+function getWeatherMain(code: number): string {
+  if (code === 0) return "Clear";
+  if (code >= 1 && code <= 3) return "Clouds";
+  if (code >= 45 && code <= 48) return "Fog";
+  if (code >= 51 && code <= 67) return "Rain";
+  if (code >= 71 && code <= 86) return "Snow";
+  if (code >= 95) return "Thunderstorm";
+  return "Clear";
+}
+
+function getWeatherDescription(code: number): string {
+  const descriptions: Record<number, string> = {
+    0: "clear sky",
+    1: "mainly clear",
+    2: "partly cloudy",
+    3: "overcast",
+    45: "fog",
+    48: "depositing rime fog",
+    51: "light drizzle",
+    53: "moderate drizzle",
+    55: "dense drizzle",
+    61: "slight rain",
+    63: "moderate rain",
+    65: "heavy rain",
+    71: "slight snow",
+    73: "moderate snow",
+    75: "heavy snow",
+    77: "snow grains",
+    80: "slight rain showers",
+    81: "moderate rain showers",
+    82: "violent rain showers",
+    85: "slight snow showers",
+    86: "heavy snow showers",
+    95: "thunderstorm",
+    96: "thunderstorm with slight hail",
+    99: "thunderstorm with heavy hail",
+  };
+  return descriptions[code] || "clear";
+}
+
+/**
+ * Fetch weather from OpenWeatherMap API (requires API key)
+ */
+async function fetchFromOpenWeatherMap(
+  city: string,
+  lat: number,
+  lng: number,
+  apiKey: string,
+): Promise<WeatherData | null> {
+  const [currentRes, forecastRes] = await Promise.all([
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${apiKey}`,
+    ),
+    fetch(
+      `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&units=metric&cnt=24&appid=${apiKey}`,
+    ),
+  ]);
+
+  if (!currentRes.ok || !forecastRes.ok) return null;
+
+  const current = await currentRes.json();
+  const forecast = await forecastRes.json();
+
+  return buildWeatherData(city, current, forecast, "api");
 }
 
 function buildWeatherData(

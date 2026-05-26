@@ -7,13 +7,14 @@
 
 -- Enable required extensions
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 CREATE EXTENSION IF NOT EXISTS "postgis";
 
 -- ============================================================
 -- PROFILES TABLE
 -- ============================================================
-CREATE TABLE profiles (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS profiles (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID UNIQUE NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     display_name TEXT,
     avatar_url TEXT,
@@ -30,8 +31,8 @@ CREATE TABLE profiles (
 -- ============================================================
 -- CITIES TABLE
 -- ============================================================
-CREATE TABLE cities (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS cities (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     name_en TEXT NOT NULL,
     name_zh TEXT NOT NULL,
     slug TEXT UNIQUE NOT NULL,
@@ -57,8 +58,8 @@ CREATE TABLE cities (
 -- ============================================================
 -- ATTRACTIONS TABLE
 -- ============================================================
-CREATE TABLE attractions (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS attractions (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     city_id UUID NOT NULL REFERENCES cities(id) ON DELETE CASCADE,
     name_en TEXT NOT NULL,
     name_zh TEXT NOT NULL,
@@ -92,8 +93,8 @@ CREATE TABLE attractions (
 -- ============================================================
 -- RESTAURANTS TABLE
 -- ============================================================
-CREATE TABLE restaurants (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS restaurants (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     city_id UUID NOT NULL REFERENCES cities(id) ON DELETE CASCADE,
     name_en TEXT NOT NULL,
     name_zh TEXT NOT NULL,
@@ -127,8 +128,8 @@ CREATE TABLE restaurants (
 -- ============================================================
 -- ITINERARIES TABLE
 -- ============================================================
-CREATE TABLE itineraries (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS itineraries (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     title TEXT NOT NULL,
     title_zh TEXT,
@@ -153,8 +154,8 @@ CREATE TABLE itineraries (
 -- ============================================================
 -- ITINERARY DAYS TABLE
 -- ============================================================
-CREATE TABLE itinerary_days (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS itinerary_days (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     itinerary_id UUID NOT NULL REFERENCES itineraries(id) ON DELETE CASCADE,
     day_number INTEGER NOT NULL CHECK (day_number > 0),
     city_id UUID REFERENCES cities(id),
@@ -173,8 +174,8 @@ CREATE TABLE itinerary_days (
 -- ============================================================
 -- COMMUNITY POSTS TABLE
 -- ============================================================
-CREATE TABLE community_posts (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS community_posts (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     city_id UUID REFERENCES cities(id),
     type TEXT NOT NULL CHECK (type IN ('diary', 'tip', 'question', 'review', 'announcement')),
@@ -193,8 +194,8 @@ CREATE TABLE community_posts (
 -- ============================================================
 -- COMMENTS TABLE
 -- ============================================================
-CREATE TABLE post_comments (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS post_comments (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     post_id UUID NOT NULL REFERENCES community_posts(id) ON DELETE CASCADE,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     parent_id UUID REFERENCES post_comments(id) ON DELETE CASCADE,
@@ -207,8 +208,8 @@ CREATE TABLE post_comments (
 -- ============================================================
 -- POST LIKES TABLE
 -- ============================================================
-CREATE TABLE post_likes (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS post_likes (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     post_id UUID NOT NULL REFERENCES community_posts(id) ON DELETE CASCADE,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -218,8 +219,8 @@ CREATE TABLE post_likes (
 -- ============================================================
 -- CHECK-INS TABLE
 -- ============================================================
-CREATE TABLE check_ins (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS check_ins (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     city_id UUID REFERENCES cities(id),
     attraction_id UUID REFERENCES attractions(id),
@@ -236,8 +237,8 @@ CREATE TABLE check_ins (
 -- ============================================================
 -- SCAM REPORTS TABLE
 -- ============================================================
-CREATE TABLE scam_reports (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS scam_reports (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     city_id UUID NOT NULL REFERENCES cities(id) ON DELETE CASCADE,
     user_id UUID REFERENCES auth.users(id) ON DELETE SET NULL,
     type TEXT NOT NULL CHECK (type IN ('taxi', 'market', 'restaurant', 'pickpocket', 'fake_product', 'scam_call', 'other')),
@@ -259,8 +260,8 @@ CREATE TABLE scam_reports (
 -- ============================================================
 -- EMERGENCY INFO TABLE
 -- ============================================================
-CREATE TABLE emergency_info (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS emergency_info (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     city_id UUID NOT NULL REFERENCES cities(id) ON DELETE CASCADE,
     type TEXT NOT NULL CHECK (type IN ('police', 'hospital', 'ambulance', 'fire', 'embassy', 'tourist_police', 'other')),
     name TEXT NOT NULL,
@@ -283,8 +284,8 @@ CREATE TABLE emergency_info (
 -- ============================================================
 -- BLOGGER RESTAURANTS TABLE
 -- ============================================================
-CREATE TABLE blogger_restaurants (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS blogger_restaurants (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     restaurant_id UUID REFERENCES restaurants(id) ON DELETE SET NULL,
     city_id UUID NOT NULL REFERENCES cities(id) ON DELETE CASCADE,
     platform TEXT NOT NULL CHECK (platform IN ('douyin', 'bilibili', 'xiaohongshu', 'wechat', 'weibo', 'other')),
@@ -306,8 +307,8 @@ CREATE TABLE blogger_restaurants (
 -- ============================================================
 -- PRICE REFERENCES TABLE
 -- ============================================================
-CREATE TABLE price_references (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS price_references (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     city_id UUID NOT NULL REFERENCES cities(id) ON DELETE CASCADE,
     item_type TEXT NOT NULL CHECK (item_type IN ('food', 'transport', 'accommodation', 'attraction', 'shopping', 'service', 'other')),
     item_name TEXT NOT NULL,
@@ -327,8 +328,8 @@ CREATE TABLE price_references (
 -- ============================================================
 -- BOOKMARKS TABLE
 -- ============================================================
-CREATE TABLE bookmarks (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS bookmarks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     bookmark_type TEXT NOT NULL CHECK (bookmark_type IN ('attraction', 'restaurant', 'itinerary', 'post')),
     reference_id UUID NOT NULL,
@@ -341,8 +342,8 @@ CREATE TABLE bookmarks (
 -- ============================================================
 -- USER FOLLOWERS TABLE
 -- ============================================================
-CREATE TABLE user_follows (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS user_follows (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     follower_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     following_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -352,8 +353,8 @@ CREATE TABLE user_follows (
 -- ============================================================
 -- NOTIFICATIONS TABLE
 -- ============================================================
-CREATE TABLE notifications (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS notifications (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     type TEXT NOT NULL CHECK (type IN ('like', 'comment', 'follow', 'mention', 'system', 'achievement')),
     title TEXT NOT NULL,
@@ -366,8 +367,8 @@ CREATE TABLE notifications (
 -- ============================================================
 -- AI CONVERSATIONS TABLE
 -- ============================================================
-CREATE TABLE ai_conversations (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS ai_conversations (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     city_id UUID REFERENCES cities(id),
     title TEXT,
@@ -377,8 +378,8 @@ CREATE TABLE ai_conversations (
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
-CREATE TABLE ai_messages (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS ai_messages (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     conversation_id UUID NOT NULL REFERENCES ai_conversations(id) ON DELETE CASCADE,
     role TEXT NOT NULL CHECK (role IN ('user', 'assistant', 'system')),
     content TEXT NOT NULL,
@@ -390,8 +391,8 @@ CREATE TABLE ai_messages (
 -- ============================================================
 -- CITY METRICS TABLE (for analytics)
 -- ============================================================
-CREATE TABLE city_metrics (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS city_metrics (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     city_id UUID NOT NULL REFERENCES cities(id) ON DELETE CASCADE,
     date DATE NOT NULL,
     check_ins_count INTEGER DEFAULT 0,
@@ -407,96 +408,96 @@ CREATE TABLE city_metrics (
 -- ============================================================
 
 -- Profiles
-CREATE INDEX idx_profiles_user_id ON profiles(user_id);
+CREATE INDEX IF NOT EXISTS idx_profiles_user_id ON profiles(user_id);
 
 -- Cities
-CREATE INDEX idx_cities_slug ON cities(slug);
-CREATE INDEX idx_cities_country ON cities(country);
-CREATE INDEX idx_cities_location ON cities(lat, lng);
+CREATE INDEX IF NOT EXISTS idx_cities_slug ON cities(slug);
+CREATE INDEX IF NOT EXISTS idx_cities_country ON cities(country);
+CREATE INDEX IF NOT EXISTS idx_cities_location ON cities(lat, lng);
 
 -- Attractions
-CREATE INDEX idx_attractions_city_id ON attractions(city_id);
-CREATE INDEX idx_attractions_type ON attractions(type);
-CREATE INDEX idx_attractions_rating ON attractions(rating DESC);
-CREATE INDEX idx_attractions_location ON attractions(lat, lng);
+CREATE INDEX IF NOT EXISTS idx_attractions_city_id ON attractions(city_id);
+CREATE INDEX IF NOT EXISTS idx_attractions_type ON attractions(type);
+CREATE INDEX IF NOT EXISTS idx_attractions_rating ON attractions(rating DESC);
+CREATE INDEX IF NOT EXISTS idx_attractions_location ON attractions(lat, lng);
 
 -- Restaurants
-CREATE INDEX idx_restaurants_city_id ON restaurants(city_id);
-CREATE INDEX idx_restaurants_cuisine ON restaurants(cuisine);
-CREATE INDEX idx_restaurants_price_range ON restaurants(price_range);
-CREATE INDEX idx_restaurants_location ON restaurants(lat, lng);
-CREATE INDEX idx_restaurants_michelin ON restaurants(michelin_stars) WHERE michelin_stars > 0;
+CREATE INDEX IF NOT EXISTS idx_restaurants_city_id ON restaurants(city_id);
+CREATE INDEX IF NOT EXISTS idx_restaurants_cuisine ON restaurants(cuisine);
+CREATE INDEX IF NOT EXISTS idx_restaurants_price_range ON restaurants(price_range);
+CREATE INDEX IF NOT EXISTS idx_restaurants_location ON restaurants(lat, lng);
+CREATE INDEX IF NOT EXISTS idx_restaurants_michelin ON restaurants(michelin_stars) WHERE michelin_stars > 0;
 
 -- Itineraries
-CREATE INDEX idx_itineraries_user_id ON itineraries(user_id);
-CREATE INDEX idx_itineraries_public ON itineraries(is_public) WHERE is_public = true;
-CREATE INDEX idx_itineraries_type ON itineraries(type);
-CREATE INDEX idx_itineraries_created ON itineraries(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_itineraries_user_id ON itineraries(user_id);
+CREATE INDEX IF NOT EXISTS idx_itineraries_public ON itineraries(is_public) WHERE is_public = true;
+CREATE INDEX IF NOT EXISTS idx_itineraries_type ON itineraries(type);
+CREATE INDEX IF NOT EXISTS idx_itineraries_created ON itineraries(created_at DESC);
 
 -- Itinerary days
-CREATE INDEX idx_itinerary_days_itinerary_id ON itinerary_days(itinerary_id);
+CREATE INDEX IF NOT EXISTS idx_itinerary_days_itinerary_id ON itinerary_days(itinerary_id);
 
 -- Community posts
-CREATE INDEX idx_community_posts_user_id ON community_posts(user_id);
-CREATE INDEX idx_community_posts_city_id ON community_posts(city_id);
-CREATE INDEX idx_community_posts_type ON community_posts(type);
-CREATE INDEX idx_community_posts_created ON community_posts(created_at DESC);
-CREATE INDEX idx_community_posts_featured ON community_posts(is_featured) WHERE is_featured = true;
+CREATE INDEX IF NOT EXISTS idx_community_posts_user_id ON community_posts(user_id);
+CREATE INDEX IF NOT EXISTS idx_community_posts_city_id ON community_posts(city_id);
+CREATE INDEX IF NOT EXISTS idx_community_posts_type ON community_posts(type);
+CREATE INDEX IF NOT EXISTS idx_community_posts_created ON community_posts(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_community_posts_featured ON community_posts(is_featured) WHERE is_featured = true;
 
 -- Post comments
-CREATE INDEX idx_post_comments_post_id ON post_comments(post_id);
-CREATE INDEX idx_post_comments_user_id ON post_comments(user_id);
+CREATE INDEX IF NOT EXISTS idx_post_comments_post_id ON post_comments(post_id);
+CREATE INDEX IF NOT EXISTS idx_post_comments_user_id ON post_comments(user_id);
 
 -- Post likes
-CREATE INDEX idx_post_likes_post_id ON post_likes(post_id);
-CREATE INDEX idx_post_likes_user_id ON post_likes(user_id);
+CREATE INDEX IF NOT EXISTS idx_post_likes_post_id ON post_likes(post_id);
+CREATE INDEX IF NOT EXISTS idx_post_likes_user_id ON post_likes(user_id);
 
 -- Check-ins
-CREATE INDEX idx_check_ins_user_id ON check_ins(user_id);
-CREATE INDEX idx_check_ins_city_id ON check_ins(city_id);
-CREATE INDEX idx_check_ins_created ON check_ins(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_check_ins_user_id ON check_ins(user_id);
+CREATE INDEX IF NOT EXISTS idx_check_ins_city_id ON check_ins(city_id);
+CREATE INDEX IF NOT EXISTS idx_check_ins_created ON check_ins(created_at DESC);
 
 -- Scam reports
-CREATE INDEX idx_scam_reports_city_id ON scam_reports(city_id);
-CREATE INDEX idx_scam_reports_type ON scam_reports(type);
-CREATE INDEX idx_scam_reports_severity ON scam_reports(severity);
-CREATE INDEX idx_scam_reports_status ON scam_reports(status);
+CREATE INDEX IF NOT EXISTS idx_scam_reports_city_id ON scam_reports(city_id);
+CREATE INDEX IF NOT EXISTS idx_scam_reports_type ON scam_reports(type);
+CREATE INDEX IF NOT EXISTS idx_scam_reports_severity ON scam_reports(severity);
+CREATE INDEX IF NOT EXISTS idx_scam_reports_status ON scam_reports(status);
 
 -- Emergency info
-CREATE INDEX idx_emergency_city_id ON emergency_info(city_id);
-CREATE INDEX idx_emergency_type ON emergency_info(type);
-CREATE INDEX idx_emergency_location ON emergency_info(lat, lng);
+CREATE INDEX IF NOT EXISTS idx_emergency_city_id ON emergency_info(city_id);
+CREATE INDEX IF NOT EXISTS idx_emergency_type ON emergency_info(type);
+CREATE INDEX IF NOT EXISTS idx_emergency_location ON emergency_info(lat, lng);
 
 -- Blogger restaurants
-CREATE INDEX idx_blogger_restaurants_restaurant_id ON blogger_restaurants(restaurant_id);
-CREATE INDEX idx_blogger_restaurants_city_id ON blogger_restaurants(city_id);
-CREATE INDEX idx_blogger_restaurants_platform ON blogger_restaurants(platform);
+CREATE INDEX IF NOT EXISTS idx_blogger_restaurants_restaurant_id ON blogger_restaurants(restaurant_id);
+CREATE INDEX IF NOT EXISTS idx_blogger_restaurants_city_id ON blogger_restaurants(city_id);
+CREATE INDEX IF NOT EXISTS idx_blogger_restaurants_platform ON blogger_restaurants(platform);
 
 -- Price references
-CREATE INDEX idx_price_references_city_id ON price_references(city_id);
-CREATE INDEX idx_price_references_item_type ON price_references(item_type);
+CREATE INDEX IF NOT EXISTS idx_price_references_city_id ON price_references(city_id);
+CREATE INDEX IF NOT EXISTS idx_price_references_item_type ON price_references(item_type);
 
 -- Bookmarks
-CREATE INDEX idx_bookmarks_user_id ON bookmarks(user_id);
-CREATE INDEX idx_bookmarks_type ON bookmarks(bookmark_type);
+CREATE INDEX IF NOT EXISTS idx_bookmarks_user_id ON bookmarks(user_id);
+CREATE INDEX IF NOT EXISTS idx_bookmarks_type ON bookmarks(bookmark_type);
 
 -- User follows
-CREATE INDEX idx_user_follows_follower ON user_follows(follower_id);
-CREATE INDEX idx_user_follows_following ON user_follows(following_id);
+CREATE INDEX IF NOT EXISTS idx_user_follows_follower ON user_follows(follower_id);
+CREATE INDEX IF NOT EXISTS idx_user_follows_following ON user_follows(following_id);
 
 -- Notifications
-CREATE INDEX idx_notifications_user_id ON notifications(user_id);
-CREATE INDEX idx_notifications_unread ON notifications(user_id, is_read) WHERE is_read = false;
+CREATE INDEX IF NOT EXISTS idx_notifications_user_id ON notifications(user_id);
+CREATE INDEX IF NOT EXISTS idx_notifications_unread ON notifications(user_id, is_read) WHERE is_read = false;
 
 -- AI conversations
-CREATE INDEX idx_ai_conversations_user_id ON ai_conversations(user_id);
+CREATE INDEX IF NOT EXISTS idx_ai_conversations_user_id ON ai_conversations(user_id);
 
 -- AI messages
-CREATE INDEX idx_ai_messages_conversation_id ON ai_messages(conversation_id);
+CREATE INDEX IF NOT EXISTS idx_ai_messages_conversation_id ON ai_messages(conversation_id);
 
 -- City metrics
-CREATE INDEX idx_city_metrics_city_id ON city_metrics(city_id);
-CREATE INDEX idx_city_metrics_date ON city_metrics(date);
+CREATE INDEX IF NOT EXISTS idx_city_metrics_city_id ON city_metrics(city_id);
+CREATE INDEX IF NOT EXISTS idx_city_metrics_date ON city_metrics(date);
 
 -- ============================================================
 -- ROW LEVEL SECURITY (RLS) POLICIES
@@ -912,7 +913,7 @@ ALTER TABLE community_posts ADD COLUMN IF NOT EXISTS fts tsvector
     ) STORED;
 
 -- FTS indexes
-CREATE INDEX idx_cities_fts ON cities USING GIN(fts);
-CREATE INDEX idx_attractions_fts ON attractions USING GIN(fts);
-CREATE INDEX idx_restaurants_fts ON restaurants USING GIN(fts);
-CREATE INDEX idx_community_posts_fts ON community_posts USING GIN(fts);
+CREATE INDEX IF NOT EXISTS idx_cities_fts ON cities USING GIN(fts);
+CREATE INDEX IF NOT EXISTS idx_attractions_fts ON attractions USING GIN(fts);
+CREATE INDEX IF NOT EXISTS idx_restaurants_fts ON restaurants USING GIN(fts);
+CREATE INDEX IF NOT EXISTS idx_community_posts_fts ON community_posts USING GIN(fts);

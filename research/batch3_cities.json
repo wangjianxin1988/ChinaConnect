@@ -1,0 +1,552 @@
+{
+  "cities": [
+    {
+      "slug": "beijing",
+      "name": "北京",
+      "nameEn": "Beijing",
+      "population": "21.54 million",
+      "coordinates": {"lat": 39.9042, "lng": 116.4074},
+      "timezone": "Asia/Shanghai",
+      "description": "China's ancient capital, home to the Forbidden City, Great Wall, and imperial treasures. Modern metropolis blending 3,000 years of history with cutting-edge culture.",
+      "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200"
+    },
+    {
+      "slug": "shanghai",
+      "name": "上海",
+      "nameEn": "Shanghai",
+      "population": "24.87 million",
+      "coordinates": {"lat": 31.2304, "lng": 121.4737},
+      "timezone": "Asia/Shanghai",
+      "description": "China's financial hub and most international city. Skyline views, historic Bund, and vibrant arts scene where East meets West.",
+      "coverImage": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=1200"
+    },
+    {
+      "slug": "guangzhou",
+      "name": "广州",
+      "nameEn": "Guangzhou",
+      "population": "15.30 million",
+      "coordinates": {"lat": 23.1291, "lng": 113.2644},
+      "timezone": "Asia/Shanghai",
+      "description": "Cantonese culture heartland, famous for dim sum, Cantonese opera, and the Pearl River. Major trade port with colonial heritage.",
+      "coverImage": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200"
+    },
+    {
+      "slug": "xian",
+      "name": "西安",
+      "nameEn": "Xi'an",
+      "population": "12.95 million",
+      "coordinates": {"lat": 34.3416, "lng": 108.9398},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient capital of 13 dynasties, home to the Terracotta Warriors and starting point of the Silk Road. Rich Tang dynasty heritage.",
+      "coverImage": "https://images.unsplash.com/photo-1566830998096-8e8e7b50d9be?w=1200"
+    },
+    {
+      "slug": "chengdu",
+      "name": "成都",
+      "nameEn": "Chengdu",
+      "population": "21.19 million",
+      "coordinates": {"lat": 30.5728, "lng": 104.0668},
+      "timezone": "Asia/Shanghai",
+      "description": "Capital of Sichuan, home to giant pandas and legendary spicy cuisine. Laid-back lifestyle and beautiful nearby nature reserves.",
+      "coverImage": "https://images.unsplash.com/photo-1559650656-5a93e6a55bcc?w=1200"
+    },
+    {
+      "slug": "guilin",
+      "name": "桂林",
+      "nameEn": "Guilin",
+      "population": "4.95 million",
+      "coordinates": {"lat": 25.2744, "lng": 110.2990},
+      "timezone": "Asia/Shanghai",
+      "description": "World-famous for stunning karst landscapes rising from the Li River. UNESCO site with ancient villages and outdoor adventures.",
+      "coverImage": "https://images.unsplash.com/photo-1529921879218-f99546d03a9e?w=1200"
+    },
+    {
+      "slug": "hangzhou",
+      "name": "杭州",
+      "nameEn": "Hangzhou",
+      "population": "12.20 million",
+      "coordinates": {"lat": 30.2741, "lng": 120.1551},
+      "timezone": "Asia/Shanghai",
+      "description": "Home of West Lake, a UNESCO World Heritage site. Known for Longjing tea, silk, and as headquarters of Alibaba.",
+      "coverImage": "https://images.unsplash.com/photo-1593085260701-3f4e4c5d8e13?w=1200"
+    },
+    {
+      "slug": "chongqing",
+      "name": "重庆",
+      "nameEn": "Chongqing",
+      "population": "32.09 million",
+      "coordinates": {"lat": 29.4316, "lng": 106.9123},
+      "timezone": "Asia/Shanghai",
+      "description": "Mountain city famous for hot pot and Yangtze River cruises. Largest city by population with stunning architecture and fog.",
+      "coverImage": "https://images.unsplash.com/photo-1584452550537-58b5c4c06e5c?w=1200"
+    },
+    {
+      "slug": "dali",
+      "name": "大理",
+      "nameEn": "Dali",
+      "population": "2.10 million",
+      "coordinates": {"lat": 25.6065, "lng": 100.2679},
+      "timezone": "Asia/Shanghai",
+      "description": "Bai minority culture hub on Erhai Lake. Cycling paradise with ancient town, temples, and relaxed backpacker atmosphere.",
+      "coverImage": "https://images.unsplash.com/photo-1598010677887-1f6bf3c1c52f?w=1200"
+    },
+    {
+      "slug": "nanjing",
+      "name": "南京",
+      "nameEn": "Nanjing",
+      "population": "9.50 million",
+      "coordinates": {"lat": 32.0603, "lng": 118.7969},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient capital of six dynasties. UNESCO Ming Xiaoling Tomb, Purple Mountain, and tragic history museum.",
+      "coverImage": "https://images.unsplash.com/photo-1543198945-bab47f76a8e6?w=1200"
+    },
+    {
+      "slug": "suzhou",
+      "name": "苏州",
+      "nameEn": "Suzhou",
+      "population": "12.70 million",
+      "coordinates": {"lat": 31.2989, "lng": 120.5853},
+      "timezone": "Asia/Shanghai",
+      "description": "Venice of the East with UNESCO classical gardens. Silk capital with canals, canals, canals, and refined Jiangnan culture.",
+      "coverImage": "https://images.unsplash.com/photo-1539145565267-d6d4a7e3d57b?w=1200"
+    },
+    {
+      "slug": "shenzhen",
+      "name": "深圳",
+      "nameEn": "Shenzhen",
+      "population": "17.68 million",
+      "coordinates": {"lat": 22.5431, "lng": 114.0579},
+      "timezone": "Asia/Shanghai",
+      "description": "China's tech hub and fastest-growing city. Theme parks, shopping, and gateway to Hong Kong.",
+      "coverImage": "https://images.unsplash.com/photo-1598266663439-95c5e1c0f8dc?w=1200"
+    },
+    {
+      "slug": "xiamen",
+      "name": "厦门",
+      "nameEn": "Xiamen",
+      "population": "5.28 million",
+      "coordinates": {"lat": 24.4798, "lng": 118.0894},
+      "timezone": "Asia/Shanghai",
+      "description": "Coastal beauty with Gulangyu Island, a UNESCO site. Amoy cuisine, colonial architecture, and overseas Chinese heritage.",
+      "coverImage": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200"
+    },
+    {
+      "slug": "qingdao",
+      "name": "青岛",
+      "nameEn": "Qingdao",
+      "population": "10.07 million",
+      "coordinates": {"lat": 36.0671, "lng": 120.3826},
+      "timezone": "Asia/Shanghai",
+      "description": "German colonial heritage, Tsingtao brewery, and stunning coastal scenery. Clean beaches and Germanic architecture.",
+      "coverImage": "https://images.unsplash.com/photo-1590650154239-e7c69c6b7b35?w=1200"
+    },
+    {
+      "slug": "kunming",
+      "name": "昆明",
+      "nameEn": "Kunming",
+      "population": "8.67 million",
+      "coordinates": {"lat": 25.0389, "lng": 102.7183},
+      "timezone": "Asia/Shanghai",
+      "description": "Spring City with year-round mild climate. Gateway to Yunnan with Stone Forest UNESCO site and minority cultures.",
+      "coverImage": "https://images.unsplash.com/photo-1588189287986-9dae0f43f9cd?w=1200"
+    },
+    {
+      "slug": "lijiang",
+      "name": "丽江",
+      "nameEn": "Lijiang",
+      "population": "1.29 million",
+      "coordinates": {"lat": 26.8751, "lng": 100.2297},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient Naxi kingdom with UNESCO Old Town. Jade Dragon Snow Mountain backdrop and traditional Dongba culture.",
+      "coverImage": "https://images.unsplash.com/photo-1559656916-24f9db9d1d1c?w=1200"
+    },
+    {
+      "slug": "zhangjiajie",
+      "name": "张家界",
+      "nameEn": "Zhangjiajie",
+      "population": "1.52 million",
+      "coordinates": {"lat": 29.1170, "lng": 110.4794},
+      "timezone": "Asia/Shanghai",
+      "description": "UNESCO forest parks with towering sandstone pillars. Avatar Hallelujah Mountains inspiration, glass bridges, and hiking trails.",
+      "coverImage": "https://images.unsplash.com/photo-1566438480900-0609be27a4fb?w=1200"
+    },
+    {
+      "slug": "sanya",
+      "name": "三亚",
+      "nameEn": "Sanya",
+      "population": "1.03 million",
+      "coordinates": {"lat": 18.2528, "lng": 109.5119},
+      "timezone": "Asia/Shanghai",
+      "description": "Tropical paradise on Hainan Island. Pristine beaches, diving, Wuzhizhou Island, and year-round warm weather.",
+      "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200"
+    },
+    {
+      "slug": "wuhan",
+      "name": "武汉",
+      "nameEn": "Wuhan",
+      "population": "13.65 million",
+      "coordinates": {"lat": 30.5928, "lng": 114.3055},
+      "timezone": "Asia/Shanghai",
+      "description": "Central China hub at Yangtze River junction. Cherry blossoms at East Lake, Yangtze bridges, and hot dry noodles.",
+      "coverImage": "https://images.unsplash.com/photo-1584611024262-ced0a92a38bb?w=1200"
+    },
+    {
+      "slug": "changsha",
+      "name": "长沙",
+      "nameEn": "Changsha",
+      "population": "10.36 million",
+      "coordinates": {"lat": 28.2282, "lng": 112.9388},
+      "timezone": "Asia/Shanghai",
+      "description": "Hunan Province capital with Orange Island on Xiang River. Spicy Hunan cuisine, ancestral home of Chairman Mao, and cultural scene.",
+      "coverImage": "https://images.unsplash.com/photo-1588146862313-2b8e60c06111?w=1200"
+    },
+    {
+      "slug": "tianjin",
+      "name": "天津",
+      "nameEn": "Tianjin",
+      "population": "13.87 million",
+      "coordinates": {"lat": 39.3434, "lng": 117.3616},
+      "timezone": "Asia/Shanghai",
+      "description": "Port city near Beijing with colonial concessions. Italian Architecture Zone, ancient food street, and modern skyline.",
+      "coverImage": "https://images.unsplash.com/photo-1568730662056-30a857c1e38c?w=1200"
+    },
+    {
+      "slug": "harbin",
+      "name": "哈尔滨",
+      "nameEn": "Harbin",
+      "population": "10.90 million",
+      "coordinates": {"lat": 45.8038, "lng": 126.5340},
+      "timezone": "Asia/Shanghai",
+      "description": "Ice and snow capital with world-famous Ice Snow Festival. Russian architecture, ice sculptures, and freezing winters.",
+      "coverImage": "https://images.unsplash.com/photo-1569434583408-a17f2c5fd33c?w=1200"
+    },
+    {
+      "slug": "dalian",
+      "name": "大连",
+      "nameEn": "Dalian",
+      "population": "7.45 million",
+      "coordinates": {"lat": 38.9140, "lng": 121.6147},
+      "timezone": "Asia/Shanghai",
+      "description": "Coastal gem with Russian and Japanese colonial heritage. Clean beaches, Xinghai Square, and seafood capital.",
+      "coverImage": "https://images.unsplash.com/photo-1569336415962-f34515f4e6d8?w=1200"
+    },
+    {
+      "slug": "ningbo",
+      "name": "宁波",
+      "nameEn": "Ningbo",
+      "population": "8.54 million",
+      "coordinates": {"lat": 29.8683, "lng": 121.5440},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient port city and home of Tianyi Pavilion. Modern skyline, Putuo Buddhist temple, and maritime heritage.",
+      "coverImage": "https://images.unsplash.com/photo-1580477371194-d30ebf3f7e79?w=1200"
+    },
+    {
+      "slug": "chengde",
+      "name": "承德",
+      "nameEn": "Chengde",
+      "population": "3.35 million",
+      "coordinates": {"lat": 40.9512, "lng": 117.9634},
+      "timezone": "Asia/Shanghai",
+      "description": "Summer resort of Qing emperors. Mountain summer palace, imperial temples, and nearby grasslands.",
+      "coverImage": "https://images.unsplash.com/photo-1596436889106-be35e843f974?w=1200"
+    },
+    {
+      "slug": "zhengzhou",
+      "name": "郑州",
+      "nameEn": "Zhengzhou",
+      "population": "10.28 million",
+      "coordinates": {"lat": 34.7466, "lng": 113.6253},
+      "timezone": "Asia/Shanghai",
+      "description": "Capital of Henan and ancient Shang dynasty center. Railway hub, Yellow River proximity, and Shaolin nearby.",
+      "coverImage": "https://images.unsplash.com/photo-1570992983632-7dc06ba4b9b6?w=1200"
+    },
+    {
+      "slug": "luoyang",
+      "name": "洛阳",
+      "nameEn": "Luoyang",
+      "population": "7.05 million",
+      "coordinates": {"lat": 34.6197, "lng": 112.4540},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient capital of 13 dynasties. Longmen Grottoes UNESCO site, Shaolin Temple, and peony flowers.",
+      "coverImage": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200"
+    },
+    {
+      "slug": "kaifeng",
+      "name": "开封",
+      "nameEn": "Kaifeng",
+      "population": "5.35 million",
+      "coordinates": {"lat": 34.7971, "lng": 114.3075},
+      "timezone": "Asia/Shanghai",
+      "description": "Northern Song dynasty capital. Famous Night Market, Millennium City Park, and well-preserved Song dynasty walls.",
+      "coverImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200"
+    },
+    {
+      "slug": "pingyao",
+      "name": "平遥",
+      "nameEn": "Pingyao",
+      "population": "0.48 million",
+      "coordinates": {"lat": 37.2086, "lng": 112.1577},
+      "timezone": "Asia/Shanghai",
+      "description": "UNESCO preserved ancient walled city. Best-preserved Ming-Qing era city walls, banking heritage, and traditional atmosphere.",
+      "coverImage": "https://images.unsplash.com/photo-1548690596-11e0d4eae9b9?w=1200"
+    },
+    {
+      "slug": "huangshan",
+      "name": "黄山",
+      "nameEn": "Huangshan",
+      "population": "1.50 million",
+      "coordinates": {"lat": 29.7146, "lng": 118.3376},
+      "timezone": "Asia/Shanghai",
+      "description": "UNESCO Yellow Mountain with dramatic rock formations and sea of clouds. Ancient villages of Hongcun and Xidi.",
+      "coverImage": "https://images.unsplash.com/photo-1541562232579-512a213f1b94?w=1200"
+    },
+    {
+      "slug": "yangzhou",
+      "name": "扬州",
+      "nameEn": "Yangzhou",
+      "population": "4.53 million",
+      "coordinates": {"lat": 32.3912, "lng": 119.4213},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient canal city of Yangtze Delta. Slender West Lake, traditional breakfast culture, and refined Jiangnan elegance.",
+      "coverImage": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=1200"
+    },
+    {
+      "slug": "taiyuan",
+      "name": "太原",
+      "nameEn": "Taiyuan",
+      "population": "5.43 million",
+      "coordinates": {"lat": 37.8706, "lng": 112.5489},
+      "timezone": "Asia/Shanghai",
+      "description": "Capital of Shanxi Province. Coal industry center, Jinci Temple, and gateway to Pingyao.",
+      "coverImage": "https://images.unsplash.com/photo-1590650171454-f1d3c5c5c7f9?w=1200"
+    },
+    {
+      "slug": "jinan",
+      "name": "济南",
+      "nameEn": "Jinan",
+      "population": "9.20 million",
+      "coordinates": {"lat": 36.6512, "lng": 117.1200},
+      "timezone": "Asia/Shanghai",
+      "description": "City of springs with 72 famous springs. Home of Daming Lake, Black Tiger Spring, and Confucius birthplace nearby.",
+      "coverImage": "https://images.unsplash.com/photo-1593001872141-3d8c6f14c5c4?w=1200"
+    },
+    {
+      "slug": "yantai",
+      "name": "烟台",
+      "nameEn": "Yantai",
+      "population": "7.12 million",
+      "coordinates": {"lat": 37.4638, "lng": 121.4478},
+      "timezone": "Asia/Shanghai",
+      "description": "Coastal wine-making city. French spring water, penglai fairy island legends, and apple orchards.",
+      "coverImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
+    },
+    {
+      "slug": "weihai",
+      "name": "威海",
+      "nameEn": "Weihai",
+      "population": "2.91 million",
+      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "timezone": "Asia/Shanghai",
+      "description": "Clean coastal city near Korea. Sandy beaches, summer resorts, and gateway to Liu Gongdao.",
+      "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200"
+    },
+    {
+      "slug": "fuzhou",
+      "name": "福州",
+      "nameEn": "Fuzhou",
+      "population": "8.29 million",
+      "coordinates": {"lat": 26.0745, "lng": 119.2965},
+      "timezone": "Asia/Shanghai",
+      "description": "Capital of Fujian Province. Fuzhou-style fried rice noodles, pagodas, and ancient Sanfang Qixiang neighborhood.",
+      "coverImage": "https://images.unsplash.com/photo-1543832923-1b4a6f5e5e0a?w=1200"
+    },
+    {
+      "slug": "quanzhou",
+      "name": "泉州",
+      "nameEn": "Quanzhou",
+      "population": "8.78 million",
+      "coordinates": {"lat": 24.8739, "lng": 118.6756},
+      "timezone": "Asia/Shanghai",
+      "description": "Maritime Silk Road starting point. UNESCO site with diverse religions, Fujian's cultural heartland.",
+      "coverImage": "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=1200"
+    },
+    {
+      "slug": "nanchang",
+      "name": "南昌",
+      "nameEn": "Nanchang",
+      "population": "6.25 million",
+      "coordinates": {"lat": 28.6829, "lng": 115.8579},
+      "timezone": "Asia/Shanghai",
+      "description": "Capital of Jiangxi Province. Poyang Lake, Tengwang Pavilion, and revolutionary heritage.",
+      "coverImage": "https://images.unsplash.com/photo-1598257006458-087169e55b27?w=1200"
+    },
+    {
+      "slug": "jiujiang",
+      "name": "九江",
+      "nameEn": "Jiujiang",
+      "population": "4.80 million",
+      "coordinates": {"lat": 29.7050, "lng": 116.0018},
+      "timezone": "Asia/Shanghai",
+      "description": "Gateway to Lushan Mountain. Poyang Lake, Yangtze River port, and climbing at Lushan UNESCO.",
+      "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200"
+    },
+    {
+      "slug": "shijiazhuang",
+      "name": "石家庄",
+      "nameEn": "Shijiazhuang",
+      "population": "11.24 million",
+      "coordinates": {"lat": 38.0428, "lng": 114.5149},
+      "timezone": "Asia/Shanghai",
+      "description": "Capital of Hebei Province. Railway hub, normal college heritage, and base for Zhaozhou Bridge visits.",
+      "coverImage": "https://images.unsplash.com/photo-1543158181-e6f9f6708f0c?w=1200"
+    },
+    {
+      "slug": "yichang",
+      "name": "宜昌",
+      "nameEn": "Yichang",
+      "population": "3.83 million",
+      "coordinates": {"lat": 30.6918, "lng": 111.2862},
+      "timezone": "Asia/Shanghai",
+      "description": "Yangtze River cruise starting point. Three Gorges Dam, Xiling Gorge, and scenic river gorges.",
+      "coverImage": "https://images.unsplash.com/photo-1599507593499-a3f7d7d80567?w=1200"
+    },
+    {
+      "slug": "yueyang",
+      "name": "岳阳",
+      "nameEn": "Yueyang",
+      "population": "5.03 million",
+      "coordinates": {"lat": 29.3786, "lng": 113.1288},
+      "timezone": "Asia/Shanghai",
+      "description": "Dongting Lake city with ancient Yueyang Tower. Stunning lake views and migratory bird sanctuary.",
+      "coverImage": "https://images.unsplash.com/photo-1598257006458-087169e55b27?w=1200"
+    },
+    {
+      "slug": "shenyang",
+      "name": "沈阳",
+      "nameEn": "Shenyang",
+      "population": "9.02 million",
+      "coordinates": {"lat": 41.8057, "lng": 123.4315},
+      "timezone": "Asia/Shanghai",
+      "description": "Manchurian imperial capital. Imperial palace, former Japanese concession, and heavy industry heritage.",
+      "coverImage": "https://images.unsplash.com/photo-1569434583408-a17f2c5fd33c?w=1200"
+    },
+    {
+      "slug": "dandong",
+      "name": "丹东",
+      "nameEn": "Dandong",
+      "population": "2.18 million",
+      "coordinates": {"lat": 40.1290, "lng": 124.3941},
+      "timezone": "Asia/Shanghai",
+      "description": "Border city with North Korea. Yalu River, Dandong Bridge, and one-day Korea tours.",
+      "coverImage": "https://images.unsplash.com/photo-1568730662056-30a857c1e38c?w=1200"
+    },
+    {
+      "slug": "hulunbuir",
+      "name": "呼伦贝尔",
+      "nameEn": "Hulunbuir",
+      "population": "2.56 million",
+      "coordinates": {"lat": 49.2122, "lng": 119.7655},
+      "timezone": "Asia/Shanghai",
+      "description": "Vast grasslands of Inner Mongolia. Traditional Mongolian culture, horse riding, and pristine natural beauty.",
+      "coverImage": "https://images.unsplash.com/photo-1548771022-3387c1f28b21?w=1200"
+    },
+    {
+      "slug": "xining",
+      "name": "西宁",
+      "nameEn": "Xining",
+      "population": "2.48 million",
+      "coordinates": {"lat": 36.6171, "lng": 101.7782},
+      "timezone": "Asia/Shanghai",
+      "description": "Gateway to Qinghai-Tibet Plateau. Kumbum Monastery, taoist temple, and plateau travel base.",
+      "coverImage": "https://images.unsplash.com/photo-1548690596-11e0d4eae9b9?w=1200"
+    },
+    {
+      "slug": "lanzhou",
+      "name": "兰州",
+      "nameEn": "Lanzhou",
+      "population": "4.36 million",
+      "coordinates": {"lat": 36.0611, "lng": 103.8343},
+      "timezone": "Asia/Shanghai",
+      "description": "Yellow River flows through. Beef noodles capital, Silk Road gateway, and ancient mother river.",
+      "coverImage": "https://images.unsplash.com/photo-1570992983632-7dc06ba4b9b6?w=1200"
+    },
+    {
+      "slug": "dunhuang",
+      "name": "敦煌",
+      "nameEn": "Dunhuang",
+      "population": "0.43 million",
+      "coordinates": {"lat": 40.1421, "lng": 94.6620},
+      "timezone": "Asia/Shanghai",
+      "description": "Silk Road oasis. Mogao Caves UNESCO site, Singing Sand Dune, and Crescent Lake.",
+      "coverImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200"
+    },
+    {
+      "slug": "urumqi",
+      "name": "乌鲁木齐",
+      "nameEn": "Urumqi",
+      "population": "4.05 million",
+      "coordinates": {"lat": 43.8256, "lng": 87.6168},
+      "timezone": "Asia/Shanghai",
+      "description": "Capital of Xinjiang. Heavenly South Mountain, Uygur culture, and gateway to Central Asia.",
+      "coverImage": "https://images.unsplash.com/photo-1541562232579-512a213f1b94?w=1200"
+    },
+    {
+      "slug": "kashgar",
+      "name": "喀什",
+      "nameEn": "Kashgar",
+      "population": "0.51 million",
+      "coordinates": {"lat": 39.4677, "lng": 75.9937},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient Silk Road trading hub. Sunday Grand Bazaar, Old Town, and Uygur culture heartland.",
+      "coverImage": "https://images.unsplash.com/photo-1588189287986-9dae0f43f9cd?w=1200"
+    },
+    {
+      "slug": "yulin",
+      "name": "榆林",
+      "nameEn": "Yulin",
+      "population": "3.40 million",
+      "coordinates": {"lat": 38.2852, "lng": 109.7352},
+      "timezone": "Asia/Shanghai",
+      "description": "Gateway to the Gobi Desert. Ancient Great Wall forts, desert scenery, and Red Stone Gorge.",
+      "coverImage": "https://images.unsplash.com/photo-1590650171454-f1d3c5c5c7f9?w=1200"
+    },
+    {
+      "slug": "xianyang",
+      "name": "咸阳",
+      "nameEn": "Xianyang",
+      "population": "4.36 million",
+      "coordinates": {"lat": 34.3296, "lng": 108.7094},
+      "timezone": "Asia/Shanghai",
+      "description": "Ancient Qin capital neighbor. Imperial tombs, airport hub, and Terracotta Warriors location.",
+      "coverImage": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200"
+    },
+    {
+      "slug": "taipei",
+      "name": "台北",
+      "nameEn": "Taipei",
+      "population": "2.64 million",
+      "coordinates": {"lat": 25.0330, "lng": 121.5654},
+      "timezone": "Asia/Taipei",
+      "description": "Taiwan's capital. Night markets, Taipei 101, National Palace Museum, and vibrant street food culture.",
+      "coverImage": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=1200"
+    }
+  ],
+  "metadata": {
+    "totalCities": 50,
+    "batches": [
+      {"name": "Batch 1", "slugs": ["beijing", "shanghai", "guangzhou", "xian", "chengdu", "guilin"], "count": 6},
+      {"name": "Batch 2", "slugs": ["hangzhou", "chongqing", "dali", "nanjing", "suzhou", "shenzhen"], "count": 6},
+      {"name": "Batch 3", "slugs": ["xiamen", "qingdao", "kunming", "lijiang", "zhangjiajie", "sanya", "wuhan", "changsha"], "count": 8},
+      {"name": "Batch 4", "slugs": ["tianjin", "harbin", "dalian", "ningbo", "chengde", "zhengzhou", "luoyang", "kaifeng", "pingyao", "huangshan", "yangzhou", "taiyuan"], "count": 12},
+      {"name": "Batch 5", "slugs": ["jinan", "yantai", "weihai", "fuzhou", "quanzhou", "nanchang", "jiujiang", "shijiazhuang", "yichang", "yueyang", "shenyang", "dandong"], "count": 12},
+      {"name": "Batch 6", "slugs": ["hulunbuir", "xining", "lanzhou", "dunhuang", "urumqi", "kashgar", "yulin", "xianyang", "taipei"], "count": 9}
+    ],
+    "sources": [
+      "Existing city data from src/data/cities/*.json",
+      "ChinaConnect project index.ts",
+      "Public population statistics and geographic coordinates"
+    ],
+    "dateGenerated": "2026-05-27",
+    "note": "All cities have basic info (slug, name, nameEn, population, coordinates, timezone, description). Cover images use placeholder Unsplash URLs that should be replaced with city-specific photos."
+  }
+}

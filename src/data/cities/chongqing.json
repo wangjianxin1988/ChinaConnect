@@ -20,7 +20,13 @@
   ],
   "climate": {
     "type": "Subtropical monsoon",
-    "bestMonths": ["March", "April", "May", "October", "November"],
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
     "avgSummerTemp": "28-35C (82-95F)",
     "avgWinterTemp": "6-10C (43-50F)",
     "tips": "Summers are extremely hot and humid (40C possible). Winters are damp and cold. Best in spring and autumn. Always carry water in summer. Fog is common year-round."
@@ -84,7 +90,12 @@
       "openingHours": "Open 24 hours (shops 09:00-20:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Ancient streets", "Ma's Workshop", "Local snacks", "Bamboo weaving"],
+      "highlights": [
+        "Ancient streets",
+        "Ma's Workshop",
+        "Local snacks",
+        "Bamboo weaving"
+      ],
       "tips": "Weekday mornings for fewer crowds. Try Chongqing noodles and Ma yogurt. Avoid peak holidays."
     },
     {
@@ -145,7 +156,11 @@
       "openingHours": "08:30-17:00",
       "ticketPrice": "70-300 CNY depending on attractions",
       "recommendedVisitTime": "Full day",
-      "highlights": ["Three Natural Bridges", "Furong Cave", "Longgong Redwood Forest"],
+      "highlights": [
+        "Three Natural Bridges",
+        "Furong Cave",
+        "Longgong Redwood Forest"
+      ],
       "tips": "Day trip from Chongqing possible but early start needed. Bring jacket - caves are cold. Film location for 'Curse of the Golden Flower'."
     },
     {
@@ -162,7 +177,12 @@
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Historic steps", "Traditional shops", "Local tea houses", "City views"],
+      "highlights": [
+        "Historic steps",
+        "Traditional shops",
+        "Local tea houses",
+        "City views"
+      ],
       "tips": "Best early morning. Combine with Jiefangbei walk. Great for photos of old Chongqing."
     },
     {
@@ -179,8 +199,409 @@
       "openingHours": "06:30-18:00",
       "ticketPrice": "120 CNY",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Sunset temple", "Poetry corridor", "Yangtze views", "Ancient gate"],
+      "highlights": [
+        "Sunset temple",
+        "Poetry corridor",
+        "Yangtze views",
+        "Ancient gate"
+      ],
       "tips": "Combine with Three Gorges cruise. Named after Liu Bei's 'White Emperor' legend."
+    },
+    {
+      "id": "yangtze-cableway",
+      "name": "长江索道",
+      "nameEn": "Yangtze River Cableway",
+      "category": "cultural",
+      "description": "Iconic cable car system crossing the Yangtze River, offering spectacular views of the city skyline and river confluence.",
+      "address": "Xiaoaoshi, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5982
+      },
+      "openingHours": "07:30-22:00",
+      "ticketPrice": "20 CNY (single), 30 CNY (round trip)",
+      "recommendedVisitTime": "30-45 minutes",
+      "highlights": [
+        "Aerial city views",
+        "Yangtze crossing",
+        "Unique transportation",
+        "Night scenery"
+      ],
+      "tips": "Go early morning or late evening to avoid crowds. Best during sunset for day/night views."
+    },
+    {
+      "id": "liziba-metro",
+      "name": "李子坝轻轨穿楼",
+      "nameEn": "Liziba Metro Through Building",
+      "category": "cultural",
+      "description": "World-famous metro station built through a residential building, a unique example of Chongqing's innovative urban design.",
+      "address": "Liziba, Liangjiang New Area",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5282
+      },
+      "openingHours": "Metro: 06:30-23:00",
+      "ticketPrice": "Free (metro fare separate)",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "Metro through building",
+        "Viewing platform",
+        "Photo opportunities",
+        "Liangshan Chicken nearby"
+      ],
+      "tips": "Best viewed from the dedicated viewing platform across the street. Ride the metro through the building for the full experience."
+    },
+    {
+      "id": "eling-park",
+      "name": "鹅岭公园",
+      "nameEn": "Eling Park",
+      "category": "cultural",
+      "description": "One of Chongqing's oldest and most beautiful parks, featuring traditional Chinese gardens, tea houses, and panoramic city views.",
+      "address": "Eling, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5682
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Garden landscapes",
+        "Plaza tea house",
+        "City overlook",
+        "Historic pavilions"
+      ],
+      "tips": "Visit at sunrise for peaceful atmosphere. The park connects to Jiaotong University campus."
+    },
+    {
+      "id": "zhazidong",
+      "name": "渣子洞",
+      "nameEn": "Zhazidong",
+      "category": "historical",
+      "description": "Former prison where revolutionary prisoners were held during the 1940s, now a museum honoring those who fought for freedom.",
+      "address": "Saojiaoshan, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5982
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Prison cells",
+        "Revolutionary history",
+        "Memorial hall",
+        "Cave structures"
+      ],
+      "tips": "Combine with White Manor nearby. Allow 2 hours for both sites. Book in advance during peak season."
+    },
+    {
+      "id": "white-manor",
+      "name": "白公馆",
+      "nameEn": "White Manor",
+      "category": "historical",
+      "description": "Historic villa turned prison during the 1940s, site of significant events in Chinese revolutionary history.",
+      "address": "Saojiaoshan, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5982
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Historic villa",
+        "Revolutionary exhibits",
+        "Garden grounds",
+        "Memorial statues"
+      ],
+      "tips": "Part of the Red Cliff scenic area with Zhazidong. Morning recommended to avoid afternoon crowds."
+    },
+    {
+      "id": "chongqing-zoo",
+      "name": "重庆动物园",
+      "nameEn": "Chongqing Zoo",
+      "category": "family",
+      "description": "Large zoological park home to giant pandas, golden monkeys, and over 300 species of animals in natural habitats.",
+      "address": "Yangjiaping, Jiulongpo District",
+      "coordinates": {
+        "lat": 29.5022,
+        "lng": 106.5182
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "25 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Giant pandas",
+        "Golden snub-nosed monkeys",
+        "Elephant show",
+        "Aquarium"
+      ],
+      "tips": "Arrive early at 08:00 to see pandas when most active. Giant panda exhibition fee separate."
+    },
+    {
+      "id": "people-park",
+      "name": "人民公园",
+      "nameEn": "People's Park",
+      "category": "cultural",
+      "description": "Urban park in the heart of the city with tea houses, gardens, and historical monuments, popular with locals.",
+      "address": "Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Morning tai chi",
+        "Tea houses",
+        "Flower displays",
+        "Fountain square"
+      ],
+      "tips": "Best in early morning to see locals practicing tai chi. Traditional tea service available."
+    },
+    {
+      "id": "expo-garden",
+      "name": "重庆园博园",
+      "nameEn": "Chongqing Expo Garden",
+      "category": "cultural",
+      "description": "Massive botanical garden featuring regional gardens from across China and international themes with beautiful landscapes.",
+      "address": "Yubei District",
+      "coordinates": {
+        "lat": 29.6222,
+        "lng": 106.5382
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "45 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Regional gardens",
+        "International pavilions",
+        "Lake scenery",
+        "Bridge collection"
+      ],
+      "tips": "Rent a golf cart for easier navigation. Spring for flower exhibitions. Take metro Line 3."
+    },
+    {
+      "id": "happy-valley",
+      "name": "重庆欢乐谷",
+      "nameEn": "Chongqing Happy Valley",
+      "category": "family",
+      "description": "Large amusement park with thrilling rides, water park, and entertainment shows for all ages.",
+      "address": "Yuzhong District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.5182
+      },
+      "openingHours": "10:00-18:00 (extended in summer)",
+      "ticketPrice": "180 CNY (full day), 260 CNY (includes water park)",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Drop tower",
+        "Roller coasters",
+        "Water park",
+        "Live shows"
+      ],
+      "tips": "Weekdays less crowded. Summer for water park. Express passes available. Lockers for bags."
+    },
+    {
+      "id": "caribbean-water",
+      "name": "海昌加勒比水世界",
+      "nameEn": "Caribbean Water World",
+      "category": "family",
+      "description": "Large water park with Caribbean-themed rides, wave pools, and slides for summer fun.",
+      "address": "Nanshan, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.6282
+      },
+      "openingHours": "10:00-22:00 (summer only)",
+      "ticketPrice": "180 CNY",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Wave pool",
+        "Latex slides",
+        "Lazy river",
+        "Beach area"
+      ],
+      "tips": "Go early to avoid lines. Bring sunscreen. Lockers required. Food inside expensive."
+    },
+    {
+      "id": "science-museum",
+      "name": "重庆科技馆",
+      "nameEn": "Chongqing Science Museum",
+      "category": "family",
+      "description": "Modern science museum with interactive exhibits on physics, technology, and natural history.",
+      "address": "Jiangbei District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.5782
+      },
+      "openingHours": "09:30-17:00 (Closed Monday)",
+      "ticketPrice": "Free (some exhibitions extra)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "IMAX theater",
+        "4D simulator",
+        "Children's zone",
+        "Space exhibit"
+      ],
+      "tips": "Best for families with children. Book IMAX tickets online. Allow half day."
+    },
+    {
+      "id": "three-gorges-museum",
+      "name": "三峡博物馆",
+      "nameEn": "Three Gorges Museum",
+      "category": "cultural",
+      "description": "National museum showcasing the history and culture of the Three Gorges region and ancient Ba-Yu civilization.",
+      "address": "People's Square, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Three Gorges history",
+        "Ancient artifacts",
+        "Dinosaur fossils",
+        "Interactive exhibits"
+      ],
+      "tips": "Combine with People's Park and People's Hall nearby. Audio guides available. Photography restricted."
+    },
+    {
+      "id": "wulong-furong-caves",
+      "name": "武隆芙蓉洞",
+      "nameEn": "Wulong Furong Cave",
+      "category": "natural",
+      "description": "One of the largest and most beautiful karst caves in China, featuring spectacular stalactites, stalagmites, and underground rivers.",
+      "address": "Wulong County, 200km from Chongqing",
+      "coordinates": {
+        "lat": 29.3322,
+        "lng": 107.9282
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "120 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Massive cave chambers",
+        "Colorful formations",
+        "Underground river",
+        "Crystal formations"
+      ],
+      "tips": "Bring a light jacket - cave temperature is cool. Photography allowed but no flash. Combine with Three Natural Bridges visit."
+    },
+    {
+      "id": "fusheng-teahouse",
+      "name": "福盛茶馆",
+      "nameEn": "Fusheng Teahouse",
+      "category": "cultural",
+      "description": "Traditional Chongqing teahouse dating back to Qing Dynasty, offering authentic tea service and mahjong in historic setting.",
+      "address": "Near People's Park, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "openingHours": "08:00-22:00",
+      "ticketPrice": "30 CNY (includes tea)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional atmosphere",
+        "Mahjong tables",
+        "Various teas",
+        "Old Chongqing style"
+      ],
+      "tips": "Best experienced in the morning. Try local Sichuan tea. Join locals for mahjong if you know the game. Budget for tipping."
+    },
+    {
+      "id": "changshou-lake",
+      "name": "长寿湖",
+      "nameEn": "Changshou Lake",
+      "category": "natural",
+      "description": "Large freshwater lake known for its beautiful sunset views, island-hopping, and fresh fish cuisine. About 2 hours from Chongqing.",
+      "address": "Changshou District, 80km from Chongqing",
+      "coordinates": {
+        "lat": 29.8522,
+        "lng": 107.1282
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (boat tours extra)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Sunset views",
+        "Island hopping",
+        "Fresh fish",
+        "Water activities"
+      ],
+      "tips": "Best visited as a weekend getaway. Take a boat tour around the islands. Try the famous Changshou lake fish hot pot. Stay overnight at lakeside hotel."
+    },
+    {
+      "id": "heishijiao",
+      "name": "黑石板",
+      "nameEn": "Heishijiao Black Stone Board",
+      "category": "cultural",
+      "description": "Historic black stone board street with traditional Chongqing architecture, local snacks, and cultural heritage.",
+      "address": "Yuzhong District, near Jiefangbei",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Black stone road",
+        "Old buildings",
+        "Local snacks",
+        "Photo location"
+      ],
+      "tips": "Best in early morning. Combine with Jiefangbei walk. Try local breakfast. Great for photography."
+    },
+    {
+      "id": "guanyinqiao-pedestrian",
+      "name": "观音桥步行街",
+      "nameEn": "Guanyinqiao Pedestrian Street",
+      "category": "modern",
+      "description": "Modern commercial district in Jiangbei with shopping centers, restaurants, and entertainment. Chongqing's second major business district.",
+      "address": "Guanyinqiao, Jiangbei District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5582
+      },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Shopping centers",
+        "Night views",
+        "Food streets",
+        "Entertainment"
+      ],
+      "tips": "Great for evening strolls. Try the night food street. Metro Line 3 directly connects. Modern alternative to Jiefangbei."
+    },
+    {
+      "id": "tongluxia",
+      "name": "铜锣峡",
+      "nameEn": "Tongluxia Gorge",
+      "category": "natural",
+      "description": "Scenic gorge on the Yangtze River featuring dramatic cliffs, ancient temples, and natural beauty. Historic military defense point.",
+      "address": "Fushun County, east of Chongqing",
+      "coordinates": {
+        "lat": 29.6322,
+        "lng": 107.3282
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "30 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Dramatic gorge",
+        "Ancient temple",
+        "River views",
+        "Hiking trails"
+      ],
+      "tips": "Best combined with cruise on Yangtze. Ancient military fortifications visible. Bring hiking shoes. Cooler temperature by river."
     }
   ],
   "restaurants": [
@@ -200,8 +621,20 @@
       "phone": "+86 23 6777 8888",
       "hours": "11:00-02:00",
       "description": "Legendary hot pot chain with original family recipe. Known for authentic Chongqing numbing-spicy broth.",
-      "dishHighlights": ["Mala hot pot", "Fresh beef", "Lotus root", "Tofu skin"],
-      "tags": ["hot-pot", "local", "spicy", "famous"]
+      "dishHighlights": [
+        "Mala hot pot",
+        "Fresh beef",
+        "Lotus root",
+        "Tofu skin"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "spicy",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "chongqing-2",
@@ -219,8 +652,19 @@
       "phone": "+86 23 6382 8888",
       "hours": "11:00-23:00",
       "description": "Famous for signature kidney slices cut paper-thin and hot pot with traditional broth.",
-      "dishHighlights": ["Giant knife kidney slices", "Traditional broth", "Beef tripe"],
-      "tags": ["hot-pot", "specialty", "local", "famous"]
+      "dishHighlights": [
+        "Giant knife kidney slices",
+        "Traditional broth",
+        "Beef tripe"
+      ],
+      "tags": [
+        "hot-pot",
+        "specialty",
+        "local",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "chongqing-3",
@@ -239,8 +683,17 @@
       "phone": "+86 23 6379 8888",
       "hours": "11:00-22:00",
       "description": "One-diamond Black Pearl hot pot restaurant, pioneer of modern Chongqing hot pot chain.",
-      "dishHighlights": ["Butterfly shrimp", "Hand-cut beef", "Vegetable platter"],
-      "tags": ["hot-pot", "black-pearl", "chain"]
+      "dishHighlights": [
+        "Butterfly shrimp",
+        "Hand-cut beef",
+        "Vegetable platter"
+      ],
+      "tags": [
+        "hot-pot",
+        "black-pearl",
+        "chain"
+      ],
+      "star": 0
     },
     {
       "id": "chongqing-4",
@@ -257,8 +710,21 @@
       },
       "hours": "06:00-14:00",
       "description": "Essential Chongqing breakfast - spicy noodles with peanut powder, pickles, and Sichuan pepper.",
-      "dishHighlights": ["Spicy noodles", "Peanut powder", "Mustard greens", "Chili oil"],
-      "tags": ["local", "noodles", "breakfast", "budget"]
+      "dishHighlights": [
+        "Spicy noodles",
+        "Peanut powder",
+        "Mustard greens",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "chongqing-5",
@@ -275,8 +741,19 @@
       },
       "hours": "12:00-02:00",
       "description": "Popular late-night snack spot famous for tender braised chicken claws in various flavors.",
-      "dishHighlights": ["Braised chicken claws", "Spicy version", "Tomato version"],
-      "tags": ["local", "snacks", "late-night"]
+      "dishHighlights": [
+        "Braised chicken claws",
+        "Spicy version",
+        "Tomato version"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "late-night"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "chongqing-6",
@@ -294,8 +771,19 @@
       "phone": "+86 23 6888 8888",
       "hours": "11:00-21:00",
       "description": "Famous for cilantro-heavy chicken hot pot, a unique Chongqing specialty near the metro station.",
-      "dishHighlights": ["Cilantro chicken", "Potatoes", "Lotus root"],
-      "tags": ["local", "specialty", "famous", "chicken"]
+      "dishHighlights": [
+        "Cilantro chicken",
+        "Potatoes",
+        "Lotus root"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "famous",
+        "chicken"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "chongqing-7",
@@ -312,8 +800,20 @@
       },
       "hours": "10:00-22:00",
       "description": "Iconic sour and spicy potato noodles, a beloved Chongqing street food.",
-      "dishHighlights": ["Sour spicy noodles", "Pickled vegetables", "Chili oil"],
-      "tags": ["local", "street-food", "budget", "noodles"]
+      "dishHighlights": [
+        "Sour spicy noodles",
+        "Pickled vegetables",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "budget",
+        "noodles"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "chongqing-8",
@@ -330,8 +830,393 @@
       },
       "hours": "11:00-02:00",
       "description": "Traditional Chongqing hot pot in river view setting. Authentic local favorite.",
-      "dishHighlights": ["Mala broth", "Beef tripe", "Vegetable plate", "River views"],
-      "tags": ["hot-pot", "local", "scenic", "late-night"]
+      "dishHighlights": [
+        "Mala broth",
+        "Beef tripe",
+        "Vegetable plate",
+        "River views"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "scenic",
+        "late-night"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-9",
+      "name": "石灰寺火锅",
+      "nameEn": "Shihui Si Hot Pot",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 110,
+      "rating": 4.7,
+      "address": "Shihui Si, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "phone": "+86 23 6789 8888",
+      "hours": "11:00-02:00",
+      "description": "Popular local hot pot restaurant near 18梯, known for authentic broth and fresh ingredients.",
+      "dishHighlights": [
+        "Mala broth",
+        "Fresh beef",
+        "Lotus root",
+        "Potatoes"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "spicy",
+        "night-life"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "chongqing-10",
+      "name": "枇杷园火锅",
+      "nameEn": "Pipa Yuan Hot Pot",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 130,
+      "rating": 4.8,
+      "address": "Nanshan, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.6182
+      },
+      "phone": "+86 23 6288 8888",
+      "hours": "11:00-22:00",
+      "description": "Famous hillside hot pot restaurant with stunning views of the city lights at night.",
+      "dishHighlights": [
+        "Spicy broth",
+        "Beef tripe",
+        "Mushrooms",
+        "Night view"
+      ],
+      "tags": [
+        "hot-pot",
+        "scenic",
+        "local",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "chongqing-11",
+      "name": "秦妈火锅",
+      "nameEn": "Qin Ma Hot Pot",
+      "type": "chain",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "phone": "+86 400 888 8888",
+      "hours": "11:00-23:00",
+      "description": "Well-known hot pot chain with consistent quality and many branch locations.",
+      "dishHighlights": [
+        "Mala broth",
+        "Shrimp paste",
+        "Bean products",
+        "Vegetables"
+      ],
+      "tags": [
+        "hot-pot",
+        "chain",
+        "reliable",
+        "spicy"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "chongqing-12",
+      "name": "大龙火锅",
+      "nameEn": "Da Long Hot Pot",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Shapingba District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.4582
+      },
+      "hours": "11:00-02:00",
+      "description": "Legendary late-night hot pot spot popular with students and night owls.",
+      "dishHighlights": [
+        "Spicy broth",
+        "Beef tripe",
+        "Duck blood",
+        "Late night"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "late-night",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-13",
+      "name": "刘一手火锅",
+      "nameEn": "Liu Yi Shou Hot Pot",
+      "type": "chain",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 85,
+      "rating": 4.4,
+      "address": "Multiple locations citywide",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "phone": "+86 23 6888 8888",
+      "hours": "11:00-23:00",
+      "description": "Popular hot pot chain offering reliable Chongqing-style hot pot with various broth options.",
+      "dishHighlights": [
+        "Half-half pot",
+        "Fresh beef",
+        "Shrimp",
+        "Tofu skin"
+      ],
+      "tags": [
+        "hot-pot",
+        "chain",
+        "family",
+        "spicy"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "chongqing-14",
+      "name": "遇见老小面",
+      "nameEn": "Yujian Lao Xiao Mian",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "Jiefangbei area, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "06:00-15:00",
+      "description": "Popular breakfast spot famous for authentic Chongqing xiao mian with perfect spice balance.",
+      "dishHighlights": [
+        "Spicy noodles",
+        "Peanuts",
+        "Pickled vegetables",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-15",
+      "name": "张记面庄",
+      "nameEn": "Zhang Ji Mian Zhuang",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 28,
+      "rating": 4.6,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5682
+      },
+      "hours": "06:30-14:00",
+      "description": "Local favorite for Chongqing xiao mian with rich, numbing-spicy flavor profile.",
+      "dishHighlights": [
+        "Mala noodles",
+        "Ground pork",
+        "Coriander",
+        "Scallions"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "spicy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-16",
+      "name": "梯坎面",
+      "nameEn": "Ti Kan Mian",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 22,
+      "rating": 4.5,
+      "address": "Near Shibati, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5882
+      },
+      "hours": "07:00-14:00",
+      "description": "Famous for noodles served on the steps, a unique Chongqing dining experience.",
+      "dishHighlights": [
+        "Spicy noodles",
+        "Peanuts",
+        "Mustard greens",
+        "Steps seating"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "unique",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-17",
+      "name": "花市豌杂面",
+      "nameEn": "Hua Shi Wan Za Mian",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 30,
+      "rating": 4.8,
+      "address": "Hua Shi Street, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "hours": "06:30-15:00",
+      "description": "Legendary noodle shop with creamy pea sauce noodles, a Chongqing specialty not to miss.",
+      "dishHighlights": [
+        "Pea sauce",
+        "Spicy oil",
+        "Ground pork",
+        "Peanuts"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "famous",
+        "breakfast"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-18",
+      "name": "九园包子",
+      "nameEn": "Jiu Yuan Bao Zi",
+      "type": "local",
+      "cuisine": "Chongqing Dim Sum",
+      "avgPrice": 35,
+      "rating": 4.6,
+      "address": "Shapingba District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.4582
+      },
+      "hours": "06:00-12:00",
+      "description": "Historic Chongqing breakfast spot famous for steamed buns with various fillings.",
+      "dishHighlights": [
+        "Pork buns",
+        "Vegetable buns",
+        "Soy milk",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "buns",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-19",
+      "name": "吴抄手",
+      "nameEn": "Wu Chao Shou",
+      "type": "local",
+      "cuisine": "Chongqing Dumplings",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Jiefangbei, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "10:00-21:00",
+      "description": "Famous for hand-made dumplings with Chongqing-style spicy dipping sauce.",
+      "dishHighlights": [
+        "Dumplings",
+        "Spicy sauce",
+        "Wontons",
+        "Szechuan pepper"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "spicy",
+        "lunch"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "chongqing-20",
+      "name": "过道豆花",
+      "nameEn": "Guo Dao Dou Hua",
+      "type": "local",
+      "cuisine": "Chongqing Tofu",
+      "avgPrice": 35,
+      "rating": 4.7,
+      "address": "Near Jiefangbei, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "11:00-21:00",
+      "description": "Popular tofu pudding restaurant with savory and sweet options, a local comfort food favorite.",
+      "dishHighlights": [
+        "Tofu pudding",
+        "Savory sauce",
+        "Peking duck",
+        "Rice dishes"
+      ],
+      "tags": [
+        "local",
+        "tofu",
+        "comfort-food",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     }
   ],
   "transport": {
@@ -399,7 +1284,12 @@
         "lng": 106.5882
       },
       "rating": 4.8,
-      "highlights": ["New landmark towers", "River views", "Infinity pool", "Central location"],
+      "highlights": [
+        "New landmark towers",
+        "River views",
+        "Infinity pool",
+        "Central location"
+      ],
       "bookingTips": "Book river view rooms. The building itself is architectural marvel."
     },
     {
@@ -413,7 +1303,12 @@
         "lng": 106.5782
       },
       "rating": 4.6,
-      "highlights": ["Jiefangbei location", "Sky lobby", "Modern rooms", "Multiple dining"],
+      "highlights": [
+        "Jiefangbei location",
+        "Sky lobby",
+        "Modern rooms",
+        "Multiple dining"
+      ],
       "bookingTips": "Best location for shopping and food. Weekend rates lower."
     },
     {
@@ -427,7 +1322,11 @@
         "lng": 106.5682
       },
       "rating": 4.4,
-      "highlights": ["Near Jiefangbei", "Yangtze views", "Good service"],
+      "highlights": [
+        "Near Jiefangbei",
+        "Yangtze views",
+        "Good service"
+      ],
       "bookingTips": "Book river view. Good for first-time visitors."
     },
     {
@@ -441,7 +1340,11 @@
         "lng": 106.5782
       },
       "rating": 4.3,
-      "highlights": ["River views", "Good value", "Near Jialing River"],
+      "highlights": [
+        "River views",
+        "Good value",
+        "Near Jialing River"
+      ],
       "bookingTips": "Better rates on weekdays. Ask for river view room."
     },
     {
@@ -462,6 +1365,196 @@
         "Unique experience"
       ],
       "bookingTips": "Book 3+ months ahead for peak season. Window cabins worth premium."
+    },
+    {
+      "name": "重庆JW万豪酒店",
+      "nameEn": "JW Marriott Hotel Chongqing",
+      "budget": "luxury",
+      "priceRange": "1200-2500 CNY/night",
+      "address": "168 Jiefangbei Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central business district",
+        "Premium service",
+        "Multiple restaurants",
+        "River views"
+      ],
+      "bookingTips": "Best location for tourists. Book club rooms for better service."
+    },
+    {
+      "name": "重庆喜来登酒店",
+      "nameEn": "Sheraton Chongqing Hotel",
+      "budget": "mid",
+      "priceRange": "800-1500 CNY/night",
+      "address": "16 Nan'an Binjiang Road, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5882
+      },
+      "rating": 4.5,
+      "highlights": [
+        "River view",
+        "Near Hongyadong",
+        "Modern facilities",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best river view rooms. Walking distance to attractions."
+    },
+    {
+      "name": "重庆解放碑美居酒店",
+      "nameEn": "Mercure Chongqing Jiefangbei",
+      "budget": "mid",
+      "priceRange": "400-800 CNY/night",
+      "address": "68 Jiutional Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Clean rooms",
+        "Good value",
+        "Close to metro"
+      ],
+      "bookingTips": "Best budget option near Jiefangbei. Book direct."
+    },
+    {
+      "name": "重庆万豪酒店",
+      "nameEn": "Marriott Hotel Chongqing",
+      "budget": "luxury",
+      "priceRange": "1000-2000 CNY/night",
+      "address": "55 Jiangbei Main Street, Jiangbei District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5682
+      },
+      "rating": 4.5,
+      "highlights": [
+        "City center location",
+        "Premium facilities",
+        "Multiple dining",
+        "Business center"
+      ],
+      "bookingTips": "Good for both business and leisure. Weekend rates available."
+    },
+    {
+      "name": "重庆雅诗特酒店",
+      "nameEn": "Yaste Hotel Chongqing",
+      "budget": "mid",
+      "priceRange": "500-1000 CNY/night",
+      "address": "88 Stomatic Street, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5882
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Hongyadong",
+        "River views",
+        "Modern decoration",
+        "Good location"
+      ],
+      "bookingTips": "Book river view rooms. Great for night photography."
+    },
+    {
+      "name": "重庆国贸格兰维酒店",
+      "nameEn": "Glenview Premier Hotel",
+      "budget": "mid",
+      "priceRange": "600-1100 CNY/night",
+      "address": "36 Jiuthor Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near People's Square",
+        "Good service",
+        "Clean rooms",
+        "Metro access"
+      ],
+      "bookingTips": "Combine with Three Gorges Museum visit. Good breakfast."
+    },
+    {
+      "name": "重庆丽笙世嘉酒店",
+      "nameEn": "Radisson Blu Hotel Chongqing",
+      "budget": "mid",
+      "priceRange": "700-1200 CNY/night",
+      "address": "22 Nan'an Binjiang Road, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5922
+      },
+      "rating": 4.5,
+      "highlights": [
+        "River view rooms",
+        "Near Hongyadong",
+        "Modern facilities",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best for night views. Book high floor rooms."
+    },
+    {
+      "name": "重庆万达文华酒店",
+      "nameEn": "Wanda Vista Hotel Chongqing",
+      "budget": "luxury",
+      "priceRange": "1200-2200 CNY/night",
+      "address": "88 Jiatong Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5782
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Luxury facilities",
+        "Central location",
+        "Good service",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Book club rooms. Weekend rates available."
+    },
+    {
+      "name": "重庆典雅戴斯酒店",
+      "nameEn": "Days Hotel & Suites Chongqing",
+      "budget": "budget",
+      "priceRange": "300-600 CNY/night",
+      "address": "168 Jiefangbei Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Budget option",
+        "Central location",
+        "Clean rooms",
+        "Good value"
+      ],
+      "bookingTips": "Best budget near Jiefangbei. Book early for discounts."
+    },
+    {
+      "name": "重庆雾都宾馆",
+      "nameEn": "Chongqing Mist City Hotel",
+      "budget": "mid",
+      "priceRange": "400-800 CNY/night",
+      "address": "68 Chengjung Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Traditional style",
+        "Near Jiefangbei",
+        "Local atmosphere",
+        "Good service"
+      ],
+      "bookingTips": "Experience local culture. Good for first-time visitors."
     }
   ],
   "payment": [
@@ -469,22 +1562,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Chongqing",
-      "howToUse": ["Download before arrival", "Link card or Chinese account"],
-      "tips": ["Works at all hot pot restaurants", "English available"]
+      "howToUse": [
+        "Download before arrival",
+        "Link card or Chinese account"
+      ],
+      "tips": [
+        "Works at all hot pot restaurants",
+        "English available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Required for street food"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Required for street food"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Still common at traditional markets",
-      "howToUse": ["ATM at every corner", "Banks for exchange"],
-      "tips": ["Small vendors prefer cash", "Keep 100 CNY for emergencies"]
+      "howToUse": [
+        "ATM at every corner",
+        "Banks for exchange"
+      ],
+      "tips": [
+        "Small vendors prefer cash",
+        "Keep 100 CNY for emergencies"
+      ]
     }
   ],
   "culturalTips": [
@@ -511,6 +1622,132 @@
       "title": "Hot Pot Culture",
       "content": "Hot pot is Chongqing's signature. 'Gongbao' and 'MaLa' are the main styles. Dip ingredients in egg yolk for tenderness. Try the dipping sauce combinations locals use.",
       "importance": "high"
+    },
+    {
+      "category": "pier-culture",
+      "title": "Pier Culture",
+      "content": "Chongqing's location at the confluence of Yangtze and Jialing Rivers gave rise to a rich pier culture. '码头工人' (pier workers) shaped the city's work ethic. Many local dishes originated from food served at piers. The 'Lao Ma Tou' (Old Pier) areas preserve this heritage.",
+      "importance": "medium"
+    },
+    {
+      "category": "pepper-culture",
+      "title": "Chili and Sichuan Pepper Culture",
+      "content": "Chongqing cuisine features two distinctive sensations: '辣' (spicy/hot from chili) and '麻' (numbing from Sichuan pepper). The combination '麻辣' defines the flavor profile. Locals believe it helps combat the humid climate and stimulates appetite in summer.",
+      "importance": "high"
+    },
+    {
+      "category": "fog-climate",
+      "title": "Fog and Damp Climate",
+      "content": "Chongqing is called 'Fog City' (雾都) due to its humid climate. The fog is most prevalent in spring and winter. Locals adapted by eating spicy food to ward off dampness and by building homes on hills for better ventilation.",
+      "importance": "medium"
+    },
+    {
+      "category": "terrain-life",
+      "title": "Life on Steep Terrain",
+      "content": "The mountain terrain means locals use more stairs than anywhere else in China. Buildings have multiple levels connected by escalators. The phrase '爬坡上坎' (climbing slopes and crossing steps) describes daily life. Wear comfortable shoes.",
+      "importance": "high"
+    },
+    {
+      "category": "night-life",
+      "title": "Night Food Culture",
+      "content": "Chongqing has vibrant night food culture. Hot pot restaurants stay open until 2-3 AM. Street vendors and night markets peak after 9 PM. '深夜食堂' (late-night canteens) are an essential part of social life.",
+      "importance": "medium"
+    },
+    {
+      "category": "tea-culture",
+      "title": "Traditional Tea House Culture",
+      "content": "Traditional tea houses (茶馆) are social hubs where locals drink tea, play mahjong, and socialize. '喝茶' (drinking tea) is a daily ritual. Popular types include '碧螺春' and '普洱'. Tea houses in People's Park and Eling Park are authentic experiences.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialects",
+      "title": "Sichuan Dialect",
+      "content": "The Chongqing dialect (重庆话) is part of the Sichuanese Mandarin family. It's known for being more direct and forceful than Beijing Mandarin. '要得' (yes), '哈子' (foolish), and '雄起' (go for it) are common expressions.",
+      "importance": "low"
+    },
+    {
+      "category": "river-commerce",
+      "title": "River Commerce Heritage",
+      "content": "Historically, Chongqing was a major river port for the Three Gorges trade. The city's wealth and architecture reflect its commercial past. '棒棒军' (porter groups) still exist, carrying goods up the steep streets.",
+      "importance": "medium"
+    },
+    {
+      "category": "summer-heat",
+      "title": "Extreme Summer Heat",
+      "content": "Chongqing is one of China's ' furnaces' (火炉城市). Summer temperatures regularly exceed 40C with high humidity. Locals escape to air-conditioned malls and night markets. Drink plenty of water and take afternoon breaks.",
+      "importance": "high"
+    },
+    {
+      "category": " WWII-history",
+      "title": "Wartime Capital Heritage",
+      "content": "During WWII, Chongqing served as China's wartime capital (陪都). Many buildings, museums, and historical sites preserve this period. The city was heavily bombed but rebuilt. '抗战遗址' (war heritage sites) are important cultural landmarks.",
+      "importance": "medium"
+    },
+    {
+      "category": "mahjong-culture",
+      "title": "Mahjong Social Culture",
+      "content": "Mahjong (麻将) is the quintessential Chongqing social activity. Locals play in tea houses, homes, and dedicated parlors. Games often last hours with betting. '血战到底' (Fight to the End) is the popular local rule variant.",
+      "importance": "low"
+    },
+    {
+      "category": "bamboo-carriers",
+      "title": "Bamboo Carrier Tradition",
+      "content": "The '棒棒军' (bamboo carrier army) emerged from Chongqing's hilly terrain. Carriers use bamboo poles to carry goods up and down steep streets. While less common today, they remain a symbol of Chongqing's working-class spirit.",
+      "importance": "low"
+    },
+    {
+      "category": "crosstalk",
+      "title": "Chongqing Crosstalk",
+      "content": "Chongqing has a vibrant traditional comedy scene with '相声' (crosstalk) performances. Local dialect comedians perform in teahouses and theaters. It's an excellent way to experience local humor and language.",
+      "importance": "low"
+    },
+    {
+      "category": "ba-yu-culture",
+      "title": "Ancient Ba-Yu Culture",
+      "content": "Chongqing is the heart of ancient Ba-Yu culture (巴渝文化), one of China's oldest regional cultures dating back 3,000 years. The Ba people were known for their boat-making, stone carving, and distinctive folk songs. Many traditions survive in local customs.",
+      "importance": "medium"
+    },
+    {
+      "category": "stilted-houses",
+      "title": "Stilted House Architecture",
+      "content": "Chongqing's iconic stilted houses (吊脚楼) were built on cliffs and riverbanks to maximize space on hilly terrain. Hongyadong recreates this traditional architecture. The houses feature wooden structures with multiple levels.",
+      "importance": "high"
+    },
+    {
+      "category": "boat-culture",
+      "title": "River Boat Culture",
+      "content": "Boats have been central to Chongqing life for centuries. '川江号子' (Sichuan river songs) were work songs chanted by boatmen. Yangtze cruises and river ferries continue this tradition. Evening boat tours offer beautiful city views.",
+      "importance": "medium"
+    },
+    {
+      "category": "bridges",
+      "title": "Bridge Engineering Marvel",
+      "content": "Chongqing has more bridges than any other Chinese city due to its river and mountain terrain. The Egongyan Bridge and Caiyuanba Bridge are engineering wonders. The cable car and light rail through buildings showcase innovative urban design.",
+      "importance": "medium"
+    },
+    {
+      "category": "giant-panda",
+      "title": "Giant Panda Connection",
+      "content": "Chongqing Zoo is one of the best places in China to see giant pandas. The city is close to Sichuan's panda reserves. Pandas are native to the mountain bamboo forests of the region. Conservation efforts are strong locally.",
+      "importance": "medium"
+    },
+    {
+      "category": "red-culture",
+      "title": "Revolutionary Red Tourism",
+      "content": "Chongqing's Red Cliff (红岩) area preserves revolutionary history. Zhazidong and Bai Gongguan museums commemorate revolutionary prisoners. The city was a key location during the Chinese Revolution and WWII.",
+      "importance": "medium"
+    },
+    {
+      "category": "river-noodles",
+      "title": "Yangtze River Noodle Culture",
+      "content": "Chongqing's '码头文化' (pier culture) influenced its cuisine. '重庆小面' (spicy noodles) was originally food for boatmen and laborers. The quick-cooking, heavily seasoned noodles remain the city's most popular breakfast.",
+      "importance": "high"
+    },
+    {
+      "category": "yi-niang-culture",
+      "title": "Yi Niang Culture",
+      "content": "'Yi Niang' (幺令) is a distinctive Chongqing expression meaning 'one' and used as a general exclamation. The local dialect uses '儿化' (r-dropping) extensively. '老汉儿' (father) and '婆娘' (wife) are typical local terms.",
+      "importance": "low"
     }
   ],
   "emergencyContacts": [
@@ -547,6 +1784,79 @@
       "phone": "+86 28 8558 3992",
       "address": "Chengdu (nearest US consular services)",
       "notes": "For US citizens in Chongqing region"
+    },
+    {
+      "type": "fire",
+      "name": "重庆市消防救援支队",
+      "nameEn": "Chongqing Fire Department",
+      "phone": "119",
+      "notes": "For fire emergencies and rescue operations"
+    },
+    {
+      "type": "tourist-info",
+      "name": "重庆旅游咨询服务中心",
+      "nameEn": "Chongqing Tourist Information Center",
+      "phone": "023-12345",
+      "notes": "Tourist complaints and information service"
+    },
+    {
+      "type": "police-special",
+      "name": "重庆旅游警察",
+      "nameEn": "Chongqing Tourist Police",
+      "phone": "023-63751110",
+      "address": "Jiefangbei Police Station, Yuzhong District",
+      "notes": "24-hour tourist police service"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻重庆总领事馆",
+      "nameEn": "British Consulate General Chongqing",
+      "phone": "+86 23 6389 3625",
+      "address": "Chongqing (only UK consular office in city)",
+      "notes": "For UK citizens in Chongqing region"
+    },
+    {
+      "type": "embassy",
+      "name": "日本国驻重庆总领事馆",
+      "nameEn": "Japanese Consulate General Chongqing",
+      "phone": "+86 23 6311 6111",
+      "address": "Chongqing (only Japanese consular office in city)",
+      "notes": "For Japanese citizens in Chongqing region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻重庆总领事馆",
+      "nameEn": "Korean Consulate General Chongqing",
+      "phone": "+86 23 6380 0921",
+      "address": "Chongqing",
+      "notes": "For Korean citizens in Chongqing region"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻成都总领事馆",
+      "nameEn": "French Consulate General Chengdu",
+      "phone": "+86 28 6636 8001",
+      "address": "Chengdu",
+      "notes": "For French citizens in Chongqing region"
+    },
+    {
+      "type": "hospital",
+      "name": "重庆医科大学附属第二医院",
+      "nameEn": "Second Affiliated Hospital of Chongqing Medical University",
+      "phone": "+86 23 6289 3109",
+      "address": "74 Linjiang Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5882
+      },
+      "notes": "Quality international medical services"
+    },
+    {
+      "type": "hotel-booking",
+      "name": "重庆旅游投诉热线",
+      "nameEn": "Chongqing Tourism Complaint Hotline",
+      "phone": "023-12345",
+      "notes": "For complaints about tourism services"
     }
   ],
   "quickFacts": {

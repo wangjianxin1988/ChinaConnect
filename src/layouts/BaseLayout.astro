@@ -5,6 +5,7 @@ import { ViewTransitions } from "astro:transitions";
 import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
 import CulturalWarningTrigger from "@/components/Guide/CulturalWarningTrigger";
 import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
+import { SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
 
 interface Props {
   title: string;
@@ -33,21 +34,12 @@ const canonicalUrl = meta.canonicalUrl || Astro.url.href;
 const fullOgImage = ogImage || `${SITE_URL}/og-image.png`;
 const pathname = Astro.url.pathname;
 
-// Generate hreflang URLs - use simple string operations to avoid regex issues in Astro template
-const cleanPath = pathname.replace(/^\//, "").replace(/\/$/, "");
-const enUrl = `${SITE_URL}/${cleanPath}`;
-const zhPath = pathname.startsWith("/zh/") ? pathname.replace("/zh/", "/") : `/zh${pathname}`;
-const zhUrl = `${SITE_URL}${zhPath}`;
-
-const hreflangs: HreflangUrl[] = [
-  { hreflang: "en", href: enUrl },
-  { hreflang: "zh-CN", href: zhUrl },
-  { hreflang: "x-default", href: canonicalUrl },
-];
+// Serialize translations for client-side use
+const translationsJson = JSON.stringify(translations);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,11 +58,8 @@ const hreflangs: HreflangUrl[] = [
       <meta name="robots" content="index, follow" />
     )}
 
-    <!-- Canonical & Hreflang -->
+    <!-- Canonical -->
     <link rel="canonical" href={canonicalUrl} />
-    {hreflangs.map(({ hreflang, href }) => (
-      <link rel="alternate" hreflang={hreflang} href={href} />
-    ))}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -96,6 +85,129 @@ const hreflangs: HreflangUrl[] = [
 
     <title>{title}</title>
     <ViewTransitions />
+
+    <!-- Inline translations for client-side i18n -->
+    <script is:inline define:vars={{ translationsJson, SUPPORTED_LANGUAGES }}>
+      (function() {
+        var STORAGE_KEY = 'chinaconnect_language';
+        var translations = JSON.parse(translationsJson);
+        var languages = SUPPORTED_LANGUAGES;
+
+        // Get current language from localStorage or browser
+        function getCurrentLang() {
+          var stored = localStorage.getItem(STORAGE_KEY);
+          if (stored && translations[stored]) return stored;
+
+          var browserLang = navigator.language;
+          if (browserLang.startsWith('ja')) return 'ja';
+          if (browserLang.startsWith('ko')) return 'ko';
+          if (browserLang.startsWith('zh')) return browserLang.includes('TW') || browserLang.includes('HK') ? 'zh-TW' : 'zh-CN';
+          if (browserLang.startsWith('th')) return 'th';
+          if (browserLang.startsWith('vi')) return 'vi';
+          if (browserLang.startsWith('ru')) return 'ru';
+          if (browserLang.startsWith('ar')) return 'ar';
+          if (browserLang.startsWith('fa')) return 'fa';
+          if (browserLang.startsWith('de')) return 'de';
+          if (browserLang.startsWith('fr')) return 'fr';
+          return 'en';
+        }
+
+        var currentLang = getCurrentLang();
+
+        // Apply translations to elements
+        function applyTranslations(lang) {
+          var t = translations[lang] || translations['en'];
+          if (!t) return;
+
+          document.querySelectorAll('[data-i18n]').forEach(function(el) {
+            var key = el.getAttribute('data-i18n');
+            var keys = key.split('.');
+            var value = t;
+            for (var i = 0; i < keys.length; i++) {
+              value = value && value[keys[i]];
+            }
+            if (typeof value === 'string') {
+              el.textContent = value;
+            }
+          });
+
+          document.documentElement.lang = lang;
+          document.documentElement.dir = (lang === 'ar' || lang === 'fa') ? 'rtl' : 'ltr';
+
+          var langLabel = document.getElementById('lang-current');
+          if (langLabel) {
+            var langInfo = languages.find(function(l) { return l.code === lang; });
+            if (langInfo) {
+              langLabel.textContent = langInfo.code.toUpperCase().split('-')[0];
+            }
+          }
+        }
+
+        // Build language menu
+        function buildLangMenu() {
+          var list = document.getElementById('lang-list');
+          if (!list) return;
+          list.innerHTML = '';
+
+          languages.forEach(function(lang) {
+            var li = document.createElement('li');
+            var btn = document.createElement('button');
+            btn.className = 'w-full text-left px-3 py-2 text-sm hover:bg-gray-50 flex items-center justify-between gap-2';
+            if (lang.code === currentLang) {
+              btn.classList.add('bg-blue-50', 'text-blue-600');
+            }
+            btn.setAttribute('data-lang', lang.code);
+            btn.innerHTML = '<span class="flex items-center gap-2"><span class="text-base">' +
+              (lang.code === 'zh-CN' ? '简' : lang.code === 'zh-TW' ? '繁' : lang.code === 'en' ? 'EN' : lang.code.toUpperCase()) +
+              '</span><span>' + lang.nativeName + '</span></span>' +
+              (lang.code === currentLang ? '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>' : '');
+            btn.onclick = function() { switchLanguage(lang.code); };
+            li.appendChild(btn);
+            list.appendChild(li);
+          });
+        }
+
+        window.toggleLanguageMenu = function() {
+          var menu = document.getElementById('lang-menu');
+          if (menu) menu.classList.toggle('hidden');
+        };
+
+        window.switchLanguage = function(lang) {
+          localStorage.setItem(STORAGE_KEY, lang);
+          currentLang = lang;
+          applyTranslations(lang);
+          buildLangMenu();
+          toggleLanguageMenu();
+          window.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
+        };
+
+        document.addEventListener('click', function(e) {
+          var container = document.getElementById('lang-switcher-container');
+          var menu = document.getElementById('lang-menu');
+          if (container && !container.contains(e.target) && menu) {
+            menu.classList.add('hidden');
+          }
+        });
+
+        // Initialize translations
+        function initI18n() {
+          currentLang = getCurrentLang();
+          buildLangMenu();
+          applyTranslations(currentLang);
+        }
+
+        // Run on initial load
+        initI18n();
+
+        // Handle ViewTransitions - use both events to ensure we catch all navigations
+        document.addEventListener('astro:after-swap', function() {
+          setTimeout(initI18n, 0);
+        });
+        document.addEventListener('astro:page-load', function() {
+          setTimeout(initI18n, 0);
+        });
+      })();
+    </script>
   </head>
   <body class="min-h-screen bg-background text-foreground antialiased">
     <!-- Navigation -->
@@ -109,64 +221,250 @@ const hreflangs: HreflangUrl[] = [
             </div>
             <div>
               <span class="font-semibold text-lg text-gray-900">ChinaConnect</span>
-              <span class="block text-xs text-gray-500">Explore China with AI</span>
+              <span class="block text-xs text-gray-500" data-i18n="nav.tagline">Explore China with AI</span>
             </div>
           </a>
 
           <!-- Desktop Nav -->
           <div class="hidden md:flex items-center gap-6">
-            <a href="/" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Home</a>
-            <a href="/city/beijing" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Cities</a>
-            <a href="/food" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Restaurants</a>
+            <a href="/" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.home">Home</a>
+            <a href="/cities" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.cities">Cities</a>
+            <a href="/food" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.restaurants">Restaurants</a>
             <a href="/ai" class="text-purple-600 hover:text-purple-700 font-medium transition-colors flex items-center gap-1">
-              <span>AI Chat</span>
+              <span data-i18n="nav.aiChat">AI Chat</span>
             </a>
-            <a href="/guide/business" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Business Express</a>
-            <a href="/community" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Community</a>
+            <a href="/guide/business" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.business">Business Express</a>
+            <a href="/community" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.community">Community</a>
           </div>
 
           <!-- CTA -->
           <div class="flex items-center gap-3">
             <!-- Language Switcher -->
-            <button
-              id="lang-switcher"
-              class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-600 text-sm font-medium hover:bg-blue-100 transition-colors"
-              onclick="toggleLanguage()"
-              title="Switch Language / 切换语言"
-            >
-              <span id="lang-current">EN</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-              </svg>
-            </button>
+            <div class="relative" id="lang-switcher-container">
+              <button
+                id="lang-switcher"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-600 text-sm font-medium hover:bg-blue-100 transition-colors"
+                onclick="toggleLanguageMenu()"
+                title="Switch Language"
+              >
+                <span id="lang-current">EN</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                </svg>
+              </button>
+              <div id="lang-menu" class="hidden absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50 max-h-80 overflow-y-auto">
+                <div class="px-3 py-2 text-xs text-gray-500 border-b border-gray-100">Select Language</div>
+                <ul id="lang-list" class="py-2">
+                  <!-- Populated by JS -->
+                </ul>
+              </div>
+            </div>
             <a href="/food" class="hidden sm:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
-              Explore Restaurants
+              <span data-i18n="nav.explore">Explore Restaurants</span>
             </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <script is:inline define:vars={{}}>
-      // Language toggle functionality
-      function toggleLanguage() {
-        const current = document.documentElement.lang || 'en';
-        const next = current === 'en' ? 'zh' : 'en';
-        document.documentElement.lang = next;
-        document.getElementById('lang-current').textContent = next === 'en' ? 'EN' : '中';
-        localStorage.setItem('chinaconnect_language', next);
-        // Reload to apply translations
-        window.location.reload();
-      }
+    <script is:inline>
+      (function() {
+        var STORAGE_KEY = 'chinaconnect_language';
+        var translations = window.__I18N__.translations;
+        var languages = window.__I18N__.languages;
 
-      // Initialize language from localStorage
-      document.addEventListener('DOMContentLoaded', function() {
-        const saved = localStorage.getItem('chinaconnect_language');
-        if (saved === 'zh') {
-          document.documentElement.lang = 'zh';
-          document.getElementById('lang-current').textContent = '中';
+        // Get current language
+        function getCurrentLang() {
+          // First check localStorage
+          var stored = localStorage.getItem(STORAGE_KEY);
+          if (stored) return stored;
+
+          // Fallback to browser language detection
+          var browserLang = navigator.language;
+          if (browserLang.startsWith('ja')) return 'ja';
+          if (browserLang.startsWith('ko')) return 'ko';
+          if (browserLang.startsWith('zh')) return browserLang.includes('TW') || browserLang.includes('HK') ? 'zh-TW' : 'zh-CN';
+          if (browserLang.startsWith('th')) return 'th';
+          if (browserLang.startsWith('vi')) return 'vi';
+          if (browserLang.startsWith('ru')) return 'ru';
+          if (browserLang.startsWith('ar')) return 'ar';
+          if (browserLang.startsWith('fa')) return 'fa';
+          if (browserLang.startsWith('de')) return 'de';
+          if (browserLang.startsWith('fr')) return 'fr';
+          return 'en';
         }
-      });
+
+        var currentLang = getCurrentLang();
+
+        // Apply translations to elements
+        function applyTranslations(lang) {
+          var t = translations[lang];
+          if (!t) {
+            // Fallback to English if language not found
+            t = translations['en'];
+            if (!t) return;
+            lang = 'en';
+          }
+
+          document.querySelectorAll('[data-i18n]').forEach(function(el) {
+            var key = el.getAttribute('data-i18n');
+            var keys = key.split('.');
+            var value = t;
+            for (var i = 0; i < keys.length; i++) {
+              value = value && value[keys[i]];
+            }
+            if (typeof value === 'string') {
+              el.textContent = value;
+            }
+          });
+
+          // Update HTML attributes
+          document.documentElement.lang = lang;
+          document.documentElement.dir = (lang === 'ar' || lang === 'fa') ? 'rtl' : 'ltr';
+
+          // Update page title if there's a translation
+          if (t.nav && t.nav.home) {
+            var langLabel = document.getElementById('lang-current');
+            if (langLabel) {
+              var langInfo = languages.find(function(l) { return l.code === lang; });
+              if (langInfo) {
+                langLabel.textContent = langInfo.code.toUpperCase().split('-')[0];
+              }
+            }
+          }
+        }
+
+        // Build language menu
+        function buildLangMenu() {
+          var list = document.getElementById('lang-list');
+          if (!list) return;
+          list.innerHTML = '';
+
+          languages.forEach(function(lang) {
+            var li = document.createElement('li');
+            var btn = document.createElement('button');
+            btn.className = 'w-full text-left px-3 py-2 text-sm hover:bg-gray-50 flex items-center justify-between gap-2';
+            if (lang.code === currentLang) {
+              btn.classList.add('bg-blue-50', 'text-blue-600');
+            }
+            btn.setAttribute('data-lang', lang.code);
+            btn.innerHTML = '<span class="flex items-center gap-2"><span class="text-base">' +
+              (lang.code === 'zh-CN' ? '简' : lang.code === 'zh-TW' ? '繁' : lang.code === 'en' ? 'EN' : lang.code.toUpperCase()) +
+              '</span><span>' + lang.nativeName + '</span></span>' +
+              (lang.code === currentLang ? '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>' : '');
+            btn.onclick = function() { switchLanguage(lang.code); };
+            li.appendChild(btn);
+            list.appendChild(li);
+          });
+        }
+
+        // Toggle language menu
+        window.toggleLanguageMenu = function() {
+          var menu = document.getElementById('lang-menu');
+          menu.classList.toggle('hidden');
+        };
+
+        // Switch language
+        window.switchLanguage = function(lang) {
+          localStorage.setItem(STORAGE_KEY, lang);
+          currentLang = lang;
+          applyTranslations(lang);
+          buildLangMenu();
+          toggleLanguageMenu();
+          // Dispatch event for other components
+          window.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
+        };
+
+        // Close menu on outside click
+        document.addEventListener('click', function(e) {
+          var container = document.getElementById('lang-switcher-container');
+          var menu = document.getElementById('lang-menu');
+          if (container && !container.contains(e.target)) {
+            menu.classList.add('hidden');
+          }
+        });
+
+        // Initialize translations
+        function initI18n() {
+          // Re-read translations from window in case they changed
+          var trans = window.__I18N__.translations;
+          var langs = window.__I18N__.languages;
+
+          currentLang = getCurrentLang();
+
+          // Build language menu
+          var list = document.getElementById('lang-list');
+          if (list) {
+            list.innerHTML = '';
+            langs.forEach(function(lang) {
+              var li = document.createElement('li');
+              var btn = document.createElement('button');
+              btn.className = 'w-full text-left px-3 py-2 text-sm hover:bg-gray-50 flex items-center justify-between gap-2';
+              if (lang.code === currentLang) {
+                btn.classList.add('bg-blue-50', 'text-blue-600');
+              }
+              btn.setAttribute('data-lang', lang.code);
+              btn.innerHTML = '<span class="flex items-center gap-2"><span class="text-base">' +
+                (lang.code === 'zh-CN' ? '简' : lang.code === 'zh-TW' ? '繁' : lang.code === 'en' ? 'EN' : lang.code.toUpperCase()) +
+                '</span><span>' + lang.nativeName + '</span></span>' +
+                (lang.code === currentLang ? '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>' : '');
+              btn.onclick = function() { switchLanguage(lang.code); };
+              li.appendChild(btn);
+              list.appendChild(li);
+            });
+          }
+
+          // Apply translations
+          var t = trans[currentLang];
+          if (!t) t = trans['en'];
+
+          document.querySelectorAll('[data-i18n]').forEach(function(el) {
+            var key = el.getAttribute('data-i18n');
+            var keys = key.split('.');
+            var value = t;
+            for (var i = 0; i < keys.length; i++) {
+              value = value && value[keys[i]];
+            }
+            if (typeof value === 'string') {
+              el.textContent = value;
+            }
+          });
+
+          // Update HTML attributes
+          document.documentElement.lang = currentLang;
+          document.documentElement.dir = (currentLang === 'ar' || currentLang === 'fa') ? 'rtl' : 'ltr';
+
+          // Update language button label
+          var langLabel = document.getElementById('lang-current');
+          if (langLabel) {
+            var langInfo = langs.find(function(l) { return l.code === currentLang; });
+            if (langInfo) {
+              langLabel.textContent = langInfo.code.toUpperCase().split('-')[0];
+            }
+          }
+        }
+
+        // Initialize on DOM ready
+        document.addEventListener('DOMContentLoaded', function() {
+          initI18n();
+        });
+
+        // Also run immediately in case DOMContentLoaded already fired
+        if (document.readyState !== 'loading') {
+          initI18n();
+        }
+
+        // Handle ViewTransitions (client-side navigation)
+        // astro:after-swap fires right after DOM swap, before resources load
+        document.addEventListener('astro:after-swap', function() {
+          // Small delay to ensure DOM is ready
+          setTimeout(initI18n, 10);
+        });
+        // Also handle astro:page-load for fallback
+        document.addEventListener('astro:page-load', function() {
+          setTimeout(initI18n, 50);
+        });
+      })();
     </script>
 
     <!-- Main Content -->
@@ -196,41 +494,54 @@ const hreflangs: HreflangUrl[] = [
     <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-16">
       <div class="container-custom py-12">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
           <!-- Brand -->
-          <div class="md:col-span-2">
+          <div class="md:col-span-1">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
                 CC
               </div>
               <span class="font-semibold text-lg">ChinaConnect</span>
             </div>
-            <p class="text-gray-400 max-w-md">
+            <p class="text-gray-400 max-w-md" data-i18n="footer.description">
               Your trusted guide to exploring China. AI-powered restaurant recommendations, city guides, and travel tips.
             </p>
           </div>
 
           <!-- Quick Links -->
           <div>
-            <h4 class="font-semibold mb-4">Cities</h4>
+            <h4 class="font-semibold mb-4" data-i18n="footer.cities">Cities</h4>
             <ul class="space-y-2 text-sm text-gray-400">
               <li><a href="/city/beijing" class="hover:text-white transition-colors">Beijing</a></li>
               <li><a href="/city/shanghai" class="hover:text-white transition-colors">Shanghai</a></li>
               <li><a href="/city/guangzhou" class="hover:text-white transition-colors">Guangzhou</a></li>
               <li><a href="/city/xian" class="hover:text-white transition-colors">Xi'an</a></li>
               <li><a href="/city/chengdu" class="hover:text-white transition-colors">Chengdu</a></li>
-              <li><a href="/city/guilin" class="hover:text-white transition-colors">Guilin</a></li>
+              <li><a href="/cities" class="hover:text-white transition-colors" data-i18n="footer.viewAllCities">View All Cities</a></li>
             </ul>
           </div>
 
           <!-- Resources -->
           <div>
-            <h4 class="font-semibold mb-4">Resources</h4>
+            <h4 class="font-semibold mb-4" data-i18n="footer.resources">Resources</h4>
             <ul class="space-y-2 text-sm text-gray-400">
-              <li><a href="/food" class="hover:text-white transition-colors">Restaurants</a></li>
-              <li><a href="/emergency" class="hover:text-white transition-colors">Emergency Contacts</a></li>
-              <li><a href="/faq" class="hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/food" class="hover:text-white transition-colors" data-i18n="footer.restaurants">Restaurants</a></li>
+              <li><a href="/guide/transport" class="hover:text-white transition-colors" data-i18n="footer.transport">Transport</a></li>
+              <li><a href="/guide/accommodation" class="hover:text-white transition-colors" data-i18n="footer.accommodation">Accommodation</a></li>
+              <li><a href="/guide/payment" class="hover:text-white transition-colors" data-i18n="footer.payment">Payment</a></li>
+              <li><a href="/emergency" class="hover:text-white transition-colors" data-i18n="footer.emergency">Emergency Contacts</a></li>
+            </ul>
+          </div>
+
+          <!-- Guides -->
+          <div>
+            <h4 class="font-semibold mb-4" data-i18n="footer.guides">Travel Guides</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="/guide/visa" class="hover:text-white transition-colors">Visa Guide</a></li>
+              <li><a href="/guide/dining" class="hover:text-white transition-colors">Dining Guide</a></li>
+              <li><a href="/guide/cultural-warnings" class="hover:text-white transition-colors" data-i18n="footer.culturalTips">Cultural Tips</a></li>
+              <li><a href="/ai" class="hover:text-white transition-colors" data-i18n="footer.aiAssistant">AI Assistant</a></li>
+              <li><a href="/community" class="hover:text-white transition-colors">Community</a></li>
             </ul>
           </div>
         </div>

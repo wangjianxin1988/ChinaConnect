@@ -4,7 +4,10 @@
   "nameEn": "Beijing",
   "country": "China",
   "population": "21.54 million",
-  "coordinates": { "lat": 39.9042, "lng": 116.4074 },
+  "coordinates": {
+    "lat": 39.9042,
+    "lng": 116.4074
+  },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Beijing, the capital of China, is a city where ancient history meets modern dynamism. Home to the Forbidden City, Great Wall, and countless imperial treasures, it offers an unparalleled journey through 3,000 years of Chinese civilization. Today, Beijing blends traditional hutong neighborhoods with gleaming skyscrapers, world-class cuisine, and a thriving arts scene.",
   "coverImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200",
@@ -15,15 +18,18 @@
     "Summer Palace - Imperial garden retreat",
     "798 Art District - Contemporary art hub"
   ],
-
   "climate": {
     "type": "Temperate continental",
-    "bestMonths": ["April", "May", "September", "October"],
+    "bestMonths": [
+      "April",
+      "May",
+      "September",
+      "October"
+    ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "-2C (28F)",
     "tips": "Best visited in spring (April-May) or autumn (September-October) for pleasant weather. Summers are hot and humid, winters cold and dry. Spring often sees sandstorms. Pack layers for variable temperatures."
   },
-
   "attractions": [
     {
       "id": "forbidden-city",
@@ -32,7 +38,10 @@
       "category": "historical",
       "description": "The former imperial palace complex, home to 24 emperors over 500 years. Contains 980 buildings and over 1 million cultural artifacts.",
       "address": "4 Jingshan Front St, Dongcheng District",
-      "coordinates": { "lat": 39.9163, "lng": 116.3972 },
+      "coordinates": {
+        "lat": 39.9163,
+        "lng": 116.3972
+      },
       "openingHours": "08:30-17:00 (Closed Monday)",
       "ticketPrice": "60 CNY (peak), 40 CNY (off-peak)",
       "recommendedVisitTime": "3-4 hours",
@@ -51,11 +60,18 @@
       "category": "historical",
       "description": "The most visited section of the Great Wall, offering spectacular views and well-preserved fortifications.",
       "address": "Yanqing District, 60km north of Beijing",
-      "coordinates": { "lat": 40.3651, "lng": 116.0066 },
+      "coordinates": {
+        "lat": 40.3651,
+        "lng": 116.0066
+      },
       "openingHours": "07:00-18:00 (Summer), 08:00-17:00 (Winter)",
       "ticketPrice": "40 CNY (off-season), 45 CNY (peak season)",
       "recommendedVisitTime": "Half day",
-      "highlights": ["Cable car ride", "Badgeong platform", "360 observation deck"],
+      "highlights": [
+        "Cable car ride",
+        "Badgeong platform",
+        "360 observation deck"
+      ],
       "tips": "Avoid weekends if possible. Take a guided tour for better historical context. Bring water and snacks. The wall is steep - wear good walking shoes."
     },
     {
@@ -65,7 +81,10 @@
       "category": "cultural",
       "description": "A Ming dynasty religious complex where emperors prayed for good harvests. UNESCO World Heritage site with stunning circular architecture.",
       "address": "1 Tiantan Rd, Dongcheng District",
-      "coordinates": { "lat": 39.8829, "lng": 116.4067 },
+      "coordinates": {
+        "lat": 39.8829,
+        "lng": 116.4067
+      },
       "openingHours": "06:00-22:00",
       "ticketPrice": "34 CNY",
       "recommendedVisitTime": "2 hours",
@@ -84,11 +103,19 @@
       "category": "cultural",
       "description": "The largest royal garden in the world, featuring the stunning Kunming Lake and Long Corridor with painted scenes.",
       "address": "19 Junshan Gonglu Rd, Haidian District",
-      "coordinates": { "lat": 39.9996, "lng": 116.4669 },
+      "coordinates": {
+        "lat": 39.9996,
+        "lng": 116.4669
+      },
       "openingHours": "06:30-20:00 (Apr-Oct), 07:00-19:00 (Nov-Mar)",
       "ticketPrice": "30 CNY (park), 60 CNY (full ticket with attractions)",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Kunming Lake", "Long Corridor", "Marble Boat", "Suzhou Street"],
+      "highlights": [
+        "Kunming Lake",
+        "Long Corridor",
+        "Marble Boat",
+        "Suzhou Street"
+      ],
       "tips": "Rent a boat on the lake for a different perspective. The Long Corridor has over 14,000 paintings. Visit the tea house for authentic Chinese tea experience."
     },
     {
@@ -98,7 +125,10 @@
       "category": "historical",
       "description": "The world's largest public square, surrounded by important government buildings and cultural monuments.",
       "address": "Xicheng District",
-      "coordinates": { "lat": 39.9056, "lng": 116.3972 },
+      "coordinates": {
+        "lat": 39.9056,
+        "lng": 116.3972
+      },
       "openingHours": "Open 24 hours (security check required)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
@@ -117,7 +147,10 @@
       "category": "cultural",
       "description": "A former military factory turned into Beijing's premier contemporary art hub, featuring galleries, studios, cafes, and street art.",
       "address": "2 Jiuxianqiao Rd, Chaoyang District",
-      "coordinates": { "lat": 39.9833, "lng": 116.4958 },
+      "coordinates": {
+        "lat": 39.9833,
+        "lng": 116.4958
+      },
       "openingHours": "Open 24 hours (galleries 10:00-18:00)",
       "ticketPrice": "Free (some galleries may charge)",
       "recommendedVisitTime": "2-3 hours",
@@ -136,7 +169,10 @@
       "category": "cultural",
       "description": "The largest and most well-preserved Tibetan Buddhist temple in Beijing, with stunning architecture and 18-meter Buddha statue.",
       "address": "12 Yonghegong St, Dongcheng District",
-      "coordinates": { "lat": 39.9479, "lng": 116.4186 },
+      "coordinates": {
+        "lat": 39.9479,
+        "lng": 116.4186
+      },
       "openingHours": "09:00-17:00",
       "ticketPrice": "25 CNY",
       "recommendedVisitTime": "1.5 hours",
@@ -155,11 +191,19 @@
       "category": "cultural",
       "description": "A historic imperial garden featuring the iconic White Dagoba, beautiful lakes, and traditional pavilions.",
       "address": "1 Wenjin St, Xicheng District",
-      "coordinates": { "lat": 39.9276, "lng": 116.3914 },
+      "coordinates": {
+        "lat": 39.9276,
+        "lng": 116.3914
+      },
       "openingHours": "06:00-21:00",
       "ticketPrice": "10 CNY (park), 20 CNY (Jade Island)",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["White Pagoda", "Five-Dragon Pavilions", "Nine-Dragon Wall", "Circular City"],
+      "highlights": [
+        "White Pagoda",
+        "Five-Dragon Pavilions",
+        "Nine-Dragon Wall",
+        "Circular City"
+      ],
       "tips": "Walk around the lake and up to the White Pagoda for classic Beijing views. Combine with nearby Houhai bar area."
     },
     {
@@ -169,7 +213,10 @@
       "category": "historical",
       "description": "A fully restored section with 22 watchtowers, offering a less crowded alternative to Badaling with cable car access.",
       "address": "Mutianyu Village, Huairou District, 70km north",
-      "coordinates": { "lat": 40.4316, "lng": 116.5669 },
+      "coordinates": {
+        "lat": 40.4316,
+        "lng": 116.5669
+      },
       "openingHours": "07:30-18:30 (Summer), 08:30-17:00 (Winter)",
       "ticketPrice": "40 CNY (wall), 100 CNY (cable car round trip)",
       "recommendedVisitTime": "Half day",
@@ -188,7 +235,10 @@
       "category": "cultural",
       "description": "Experience traditional Chinese opera with face-changing, martial arts, and singing at this dedicated theater.",
       "address": "Hepingli, Dongcheng District",
-      "coordinates": { "lat": 39.9426, "lng": 116.4268 },
+      "coordinates": {
+        "lat": 39.9426,
+        "lng": 116.4268
+      },
       "openingHours": "Shows at 19:30 nightly",
       "ticketPrice": "200-380 CNY",
       "recommendedVisitTime": "1.5 hours",
@@ -207,7 +257,10 @@
       "category": "cultural",
       "description": "A historic hutong alley with trendy shops, street food, bars, and traditional courtyard residences.",
       "address": "Nanluoguxiang, Dongcheng District",
-      "coordinates": { "lat": 39.9368, "lng": 116.4036 },
+      "coordinates": {
+        "lat": 39.9368,
+        "lng": 116.4036
+      },
       "openingHours": "Open 24 hours (shops 10:00-22:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
@@ -218,9 +271,366 @@
         "Hidden temple courtyards"
       ],
       "tips": "Visit in the evening for atmosphere. Explore side alleys for authentic hutong life. Try fried rice cake and sugar paintings."
+    },
+    {
+      "id": "national-museum",
+      "name": "中国国家博物馆",
+      "nameEn": "National Museum of China",
+      "category": "cultural",
+      "description": "The largest museum in China, showcasing 3,000 years of Chinese civilization with over 1.5 million cultural artifacts.",
+      "address": "16 East Chang'an Ave, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9056,
+        "lng": 116.4012
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (book in advance)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient Bronze Vessels",
+        "Ming and Qing Dynasties Artifacts",
+        "Terracotta Warriors Exhibition",
+        "Interactive Digital Exhibits"
+      ],
+      "tips": "Book tickets online 1 week in advance. Arrive early. Best combined with Tiananmen Square visit."
+    },
+    {
+      "id": "zhongshan-park",
+      "name": "中山公园",
+      "nameEn": "Zhongshan Park",
+      "category": "cultural",
+      "description": "A historic imperial garden turned public park, featuring ancient cypress trees, traditional pavilions, and seasonal flower displays.",
+      "address": "West of Tiananmen Square, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9076,
+        "lng": 116.3962
+      },
+      "openingHours": "06:00-21:00",
+      "ticketPrice": "3 CNY",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Ancient Cypress Garden",
+        "Zhongshan Pavilion",
+        "Cherry Blossom Avenue",
+        "Rose Garden"
+      ],
+      "tips": "Best visited in spring for cherry blossoms and roses. Great for morning tai chi practice."
+    },
+    {
+      "id": "working-peoples-cultural-palace",
+      "name": "劳动人民文化宫",
+      "nameEn": "Working People's Cultural Palace",
+      "category": "cultural",
+      "description": "Former imperial temple dedicated to Confucius and the god of literature, now a cultural venue for workers.",
+      "address": "East of Tiananmen Square, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9076,
+        "lng": 116.4032
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "2 CNY",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Confucius Temple",
+        "Great Hall",
+        "Traditional Music Performances",
+        "Calligraphy Exhibits"
+      ],
+      "tips": "Less crowded than major attractions. Combine with a visit to the nearby National Museum."
+    },
+    {
+      "id": "jingshan-park",
+      "name": "景山公园",
+      "nameEn": "Jingshan Park",
+      "category": "cultural",
+      "description": "A 45-meter artificial hill offering the best panoramic views of the Forbidden City and central Beijing.",
+      "address": "44 Jingshan Front St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9212,
+        "lng": 116.3972
+      },
+      "openingHours": "06:00-21:00",
+      "ticketPrice": "2 CNY",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Panoramic View of Forbidden City",
+        "Five Pavilions",
+        "Century-old Cypress Trees",
+        "Sunrise Viewing Spot"
+      ],
+      "tips": "Visit at sunrise or sunset for stunning photos. The hill is steep but short - climb to the top for the best views."
+    },
+    {
+      "id": "prince-gongs-mansion",
+      "name": "恭王府",
+      "nameEn": "Prince Gong's Mansion",
+      "category": "historical",
+      "description": "The largest surviving princely mansion in Beijing, featuring traditional Chinese architecture, beautiful gardens, and Qing dynasty artifacts.",
+      "address": "17 Qianmen Front St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9346,
+        "lng": 116.3932
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "40 CNY (peak), 30 CNY (off-peak)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Hou Garden",
+        "Waterfall Rockery",
+        "Zhaoxian Gate",
+        "Traditional Courtyards"
+      ],
+      "tips": "Book tickets online. Audio guide included. Allow time to explore both the mansion and the garden."
+    },
+    {
+      "id": "shichahai",
+      "name": "什刹海",
+      "nameEn": "Shichahai",
+      "category": "cultural",
+      "description": "A scenic area of lakes, hutongs, and historic sites including Prince Gong's Mansion. Popular for cycling, boat rides, and exploring traditional Beijing life.",
+      "address": "Xicheng District (around Qianmen area)",
+      "coordinates": {
+        "lat": 39.9356,
+        "lng": 116.3932
+      },
+      "openingHours": "Open 24 hours (bars 18:00-02:00)",
+      "ticketPrice": "Free (individual attractions may charge)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Qianhai Lake",
+        "Houhai Lake",
+        "Drum Tower",
+        "Hutong Cycling",
+        "Lake-side Bars"
+      ],
+      "tips": "Best in late afternoon and evening. Rent a bike to explore the hutongs. Visit the bar street after dark."
+    },
+    {
+      "id": "bell-drum-towers",
+      "name": "钟鼓楼",
+      "nameEn": "Bell and Drum Towers",
+      "category": "historical",
+      "description": "Medieval timekeeping towers that once governed daily life in Beijing with bell strikes and drum beats marking the hours.",
+      "address": "73 Guloudajie St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9342,
+        "lng": 116.4032
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "20 CNY (both towers)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Bronze Bell from Ming Dynasty",
+        "Traditional Drum Performance",
+        "Panoramic Views",
+        "Drum Tower Square"
+      ],
+      "tips": "Watch the drum performance at the top of each hour. Combine with a hutong walk afterward."
+    },
+    {
+      "id": "dashilan",
+      "name": "大栅栏",
+      "nameEn": "Dashilan",
+      "category": "cultural",
+      "description": "A historic commercial district with traditional Beijing architecture, famous brand shops, and local snacks.",
+      "address": "Xicheng District (south of Tiananmen)",
+      "coordinates": {
+        "lat": 39.9002,
+        "lng": 116.4012
+      },
+      "openingHours": "Shops 10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Traditional Pharmacy",
+        "First Chocolate Shop",
+        "Ladies Street",
+        "Traditional Crafts",
+        "Peking Opera Masks"
+      ],
+      "tips": "Great for souvenir shopping. Try traditional snacks like laoming damand and sugar-flour paintings. Walk to nearby Qianmen afterward."
+    },
+    {
+      "id": "beijing-happy-valley",
+      "name": "北京欢乐谷",
+      "nameEn": "Beijing Happy Valley",
+      "category": "entertainment",
+      "description": "A large amusement park with roller coasters, water rides, and family-friendly attractions.",
+      "address": "Xiaowuji, Chaoyang District",
+      "coordinates": {
+        "lat": 39.8652,
+        "lng": 116.5072
+      },
+      "openingHours": "09:00-22:00 (hours vary by season)",
+      "ticketPrice": "260 CNY (full day), 200 CNY (evening)",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "Odyssey Roller Coaster",
+        "Family Zone",
+        "Water Park",
+        "Night Parades",
+        "Live Shows"
+      ],
+      "tips": "Weekdays are less crowded. Wear comfortable shoes. Bring sunscreen in summer. Lockers available for rent."
+    },
+    {
+      "id": "olympic-park",
+      "name": "奥林匹克公园",
+      "nameEn": "Olympic Park",
+      "category": "cultural",
+      "description": "The main venue of the 2008 Beijing Olympics, featuring the Bird's Nest, Water Cube, and beautiful gardens.",
+      "address": "Chaoyang District (north of city center)",
+      "coordinates": {
+        "lat": 39.9432,
+        "lng": 116.3912
+      },
+      "openingHours": "Open 24 hours (attractions vary)",
+      "ticketPrice": "Free (Bird's Nest 80 CNY, Water Cube 80 CNY)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Bird's Nest Stadium",
+        "Water Cube",
+        "Olympic Torch",
+        "Beautiful Night Lighting",
+        "Science Center"
+      ],
+      "tips": "Best visited at night for spectacular lighting. Watch the light show at Water Cube. Combine with nearby national conventions."
+    },
+    {
+      "id": "summer-palace-old-summer",
+      "name": "圆明园",
+      "nameEn": "Old Summer Palace",
+      "category": "historical",
+      "description": "The ruins of the Old Summer Palace, destroyed in 1860, now a memorial park with historic foundations and lakes.",
+      "address": "28 Yiheyuan Rd, Haidian District",
+      "coordinates": {
+        "lat": 39.9892,
+        "lng": 116.4532
+      },
+      "openingHours": "07:00-20:30 (Summer), 07:00-19:30 (Winter)",
+      "ticketPrice": "10 CNY (park), 25 CNY (full including西洋楼遗址)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Western Mansions Ruins",
+        "Grand Waterworks",
+        "Famous Stone Arch",
+        "Large Lake",
+        "Wild deer"
+      ],
+      "tips": "Allow 3 hours to explore. Visit the smaller but significant exhibitions about history. Wear walking shoes."
+    },
+    {
+      "id": "beijing-natural-history-museum",
+      "name": "北京自然博物馆",
+      "nameEn": "Beijing Natural History Museum",
+      "category": "cultural",
+      "description": "Popular natural science museum with dinosaur fossils, wildlife exhibits, and interactive science displays.",
+      "address": "126 Tiananmen St, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9026,
+        "lng": 116.4072
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (book in advance)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Dinosaur Hall",
+        "Ancient Mammal Exhibits",
+        "Bird Diversity",
+        "Human Evolution",
+        "Butterfly Collection"
+      ],
+      "tips": "Very popular with families. Book tickets online. Best for children interested in dinosaurs and nature."
+    },
+    {
+      "id": "louvre-abroad",
+      "name": "中国电影博物馆",
+      "nameEn": "China National Film Museum",
+      "category": "cultural",
+      "description": "The world's largest film museum with extensive exhibits on Chinese cinema history and interactive displays.",
+      "address": "9 Hua Jia Di Village, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9712,
+        "lng": 116.5312
+      },
+      "openingHours": "09:00-16:30 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Film history exhibits",
+        "IMAX Theater",
+        "Film equipment collection",
+        "Interactive displays"
+      ],
+      "tips": "One of the largest film museums globally. Great for film enthusiasts. Free entry but registration required."
+    },
+    {
+      "id": "western-yuanming",
+      "name": "西洋楼遗址",
+      "nameEn": "Western Mansions Ruins",
+      "category": "historical",
+      "description": "The iconic ruins of the Old Summer Palace's European-style palaces, built for Emperor Qianlong by Jesuit missionaries.",
+      "address": "Yiheyuan Rd, Haidian District",
+      "coordinates": {
+        "lat": 39.9882,
+        "lng": 116.4552
+      },
+      "openingHours": "07:00-20:30",
+      "ticketPrice": "Included in Old Summer Palace ticket (25 CNY full)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Famous Marble Boat foundations",
+        "European fountains",
+        "Aqueduct ruins",
+        "Photo spot"
+      ],
+      "tips": "The most photographed part of Old Summer Palace. The marble boat (Hanhuachi) is the most famous ruin."
+    },
+    {
+      "id": "milu-park",
+      "name": "麋鹿苑",
+      "nameEn": "Milu Park (Milu Deer Park)",
+      "category": "nature",
+      "description": "A nature reserve and conservation center for the milu deer (Pere David's deer), featuring observation platforms and educational exhibits.",
+      "address": "Yuanmingyuan, Haidian District",
+      "coordinates": {
+        "lat": 40.0052,
+        "lng": 116.2852
+      },
+      "openingHours": "09:00-16:00",
+      "ticketPrice": "30 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Milu deer watching",
+        "Wetland ecosystem",
+        "Bird observation",
+        "Ecological education"
+      ],
+      "tips": "Bring binoculars for wildlife viewing. Best in early morning. Located south of Old Summer Palace."
+    },
+    {
+      "id": "beijing-university",
+      "name": "北京大学",
+      "nameEn": "Peking University",
+      "category": "cultural",
+      "description": "China's first modern national university, known for its beautiful campus with traditional Chinese architecture and lakes.",
+      "address": "5 Yiheyuan Rd, Haidian District",
+      "coordinates": {
+        "lat": 39.9882,
+        "lng": 116.4712
+      },
+      "openingHours": "Usually open to visitors (ID required)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Weiming Lake",
+        "Tsinghua-Peking historical sites",
+        "Traditional pavilions",
+        "Cherry blossom avenue"
+      ],
+      "tips": "Arrive early. Weekend visits recommended. Combine with a visit to Tsinghua University nearby."
     }
   ],
-
   "restaurants": [
     {
       "id": "beijing-1",
@@ -232,7 +642,10 @@
       "avgPrice": 800,
       "rating": 4.9,
       "address": "4/F, Building 2, Guanghua Lu, Chaoyang District",
-      "coordinates": { "lat": 39.9175, "lng": 116.4567 },
+      "coordinates": {
+        "lat": 39.9175,
+        "lng": 116.4567
+      },
       "phone": "+86 10 6500 6688",
       "hours": "11:30-14:30, 17:30-22:00",
       "description": "Three Michelin-starred restaurant specializing in Zhejiang cuisine with exceptional seafood dishes.",
@@ -241,7 +654,12 @@
         "Steamed crab with aged Shaoxing wine",
         "Squirrel-shaped Mandarin fish"
       ],
-      "tags": ["fine-dining", "seafood", "business-dining"]
+      "tags": [
+        "fine-dining",
+        "seafood",
+        "business-dining"
+      ],
+      "diamond": 0
     },
     {
       "id": "beijing-2",
@@ -253,7 +671,10 @@
       "avgPrice": 600,
       "rating": 4.8,
       "address": "3rd Floor, 3rd Building, Sanlitun Bar St, Chaoyang District",
-      "coordinates": { "lat": 39.9217, "lng": 116.4493 },
+      "coordinates": {
+        "lat": 39.9217,
+        "lng": 116.4493
+      },
       "phone": "+86 10 6469 0888",
       "hours": "11:30-14:00, 17:30-22:00",
       "description": "Modern Chinese fine dining with creative presentation and traditional flavors.",
@@ -262,7 +683,12 @@
         "Bamboo pith with matsutake",
         "Steamed egg with caviar"
       ],
-      "tags": ["fine-dining", "creative", "romantic"]
+      "tags": [
+        "fine-dining",
+        "creative",
+        "romantic"
+      ],
+      "diamond": 0
     },
     {
       "id": "beijing-3",
@@ -274,12 +700,24 @@
       "avgPrice": 1500,
       "rating": 4.9,
       "address": "1-3/F, Zhao Fang Building, 8 Xinyuanli, Chaoyang District",
-      "coordinates": { "lat": 39.9292, "lng": 116.4535 },
+      "coordinates": {
+        "lat": 39.9292,
+        "lng": 116.4535
+      },
       "phone": "+86 10 8454 0888",
       "hours": "18:00-23:00 (Closed Sun-Mon)",
       "description": "One Michelin star Taiwanese cuisine with avant-garde presentation by Chef Jason Wang.",
-      "dishHighlights": ["Crystal chicken", "Clam soup with basil", "Fried rice with truffle"],
-      "tags": ["fine-dining", "taiwanese", "reservation-required"]
+      "dishHighlights": [
+        "Crystal chicken",
+        "Clam soup with basil",
+        "Fried rice with truffle"
+      ],
+      "tags": [
+        "fine-dining",
+        "taiwanese",
+        "reservation-required"
+      ],
+      "diamond": 0
     },
     {
       "id": "beijing-4",
@@ -291,12 +729,24 @@
       "avgPrice": 400,
       "rating": 4.7,
       "address": "China World Mall, 1 Jianguomenwai Dajie, Chaoyang District",
-      "coordinates": { "lat": 39.9094, "lng": 116.4595 },
+      "coordinates": {
+        "lat": 39.9094,
+        "lng": 116.4595
+      },
       "phone": "+86 10 6505 2888",
       "hours": "11:00-15:00, 17:00-22:00",
       "description": "Three-diamond Black Pearl Cantonese restaurant with exquisite dim sum and premium seafood.",
-      "dishHighlights": ["Steamed shrimp dumplings", "Roasted goose", "Braised abalone"],
-      "tags": ["cantonese", "dim-sum", "business-dining"]
+      "dishHighlights": [
+        "Steamed shrimp dumplings",
+        "Roasted goose",
+        "Braised abalone"
+      ],
+      "tags": [
+        "cantonese",
+        "dim-sum",
+        "business-dining"
+      ],
+      "star": 0
     },
     {
       "id": "beijing-5",
@@ -307,10 +757,25 @@
       "avgPrice": 150,
       "rating": 4.5,
       "address": "Various locations",
-      "coordinates": { "lat": 39.9042, "lng": 116.4074 },
+      "coordinates": {
+        "lat": 39.9042,
+        "lng": 116.4074
+      },
       "description": "Popular local spot for authentic Beijing cuisine, especially duck.",
-      "dishHighlights": ["Peking duck", "Fried bean curd", "Lamb hot pot"],
-      "tags": ["local", "beijing-cuisine", "casual"]
+      "dishHighlights": [
+        "Peking duck",
+        "Fried bean curd",
+        "Lamb hot pot"
+      ],
+      "tags": [
+        "local",
+        "beijing-cuisine",
+        "casual"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": ""
     },
     {
       "id": "beijing-6",
@@ -321,7 +786,10 @@
       "avgPrice": 200,
       "rating": 4.4,
       "address": "14 Qianmen St, Xicheng District",
-      "coordinates": { "lat": 39.9016, "lng": 116.3996 },
+      "coordinates": {
+        "lat": 39.9016,
+        "lng": 116.3996
+      },
       "phone": "+86 10 6511 2418",
       "hours": "10:30-14:00, 17:00-21:30",
       "description": "Legendary Peking duck restaurant established in 1864. The definitive Beijing duck experience.",
@@ -330,7 +798,13 @@
         "Crispy skin with sugar",
         "Duck soup"
       ],
-      "tags": ["historic", "peking-duck", "traditional"]
+      "tags": [
+        "historic",
+        "peking-duck",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "beijing-7",
@@ -342,12 +816,24 @@
       "avgPrice": 180,
       "rating": 4.6,
       "address": "18 Qianmen St, Xicheng District",
-      "coordinates": { "lat": 39.9012, "lng": 116.3992 },
+      "coordinates": {
+        "lat": 39.9012,
+        "lng": 116.3992
+      },
       "phone": "+86 10 6702 5508",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Oldest Peking duck restaurant (established 1855) with traditional hang-roasting method.",
-      "dishHighlights": ["Hang-roasted duck", "Sweet bean sauce", "Traditional accompaniments"],
-      "tags": ["historic", "peking-duck", "black-pearl"]
+      "dishHighlights": [
+        "Hang-roasted duck",
+        "Sweet bean sauce",
+        "Traditional accompaniments"
+      ],
+      "tags": [
+        "historic",
+        "peking-duck",
+        "black-pearl"
+      ],
+      "star": 0
     },
     {
       "id": "beijing-8",
@@ -358,10 +844,26 @@
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Various locations including Wangfujing",
-      "coordinates": { "lat": 39.9122, "lng": 116.4126 },
+      "coordinates": {
+        "lat": 39.9122,
+        "lng": 116.4126
+      },
       "description": "Popular chain serving authentic Beijing home-style dishes in traditional atmosphere.",
-      "dishHighlights": ["Fried sauce noodles", "Pea green cake", "Urgu mian"],
-      "tags": ["local", "beijing-cuisine", "casual", "family-friendly"]
+      "dishHighlights": [
+        "Fried sauce noodles",
+        "Pea green cake",
+        "Urgu mian"
+      ],
+      "tags": [
+        "local",
+        "beijing-cuisine",
+        "casual",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": ""
     },
     {
       "id": "beijing-9",
@@ -372,11 +874,25 @@
       "avgPrice": 100,
       "rating": 4.4,
       "address": "8 Dongzhimen South St, Dongcheng District",
-      "coordinates": { "lat": 39.9252, "lng": 116.4152 },
+      "coordinates": {
+        "lat": 39.9252,
+        "lng": 116.4152
+      },
       "hours": "10:00-22:00",
       "description": "Historic restaurant in a converted courtyard, known for imperial-style dishes.",
-      "dishHighlights": ["Candied hawthorn", "Steamed crab with chive", "Mongolian hot pot"],
-      "tags": ["local", "historic", "courtyard-dining"]
+      "dishHighlights": [
+        "Candied hawthorn",
+        "Steamed crab with chive",
+        "Mongolian hot pot"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "courtyard-dining"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "beijing-10",
@@ -387,11 +903,26 @@
       "avgPrice": 150,
       "rating": 4.7,
       "address": "11 Qianmen St, Xicheng District",
-      "coordinates": { "lat": 39.9008, "lng": 116.3978 },
+      "coordinates": {
+        "lat": 39.9008,
+        "lng": 116.3978
+      },
       "phone": "+86 10 6303 0623",
       "description": "Famous hole-in-the-wall Peking duck restaurant favored by celebrities, no-frills authentic experience.",
-      "dishHighlights": ["Wood-roasted duck", "Handmade pancakes", "Authentic sauce"],
-      "tags": ["local", "peking-duck", "famous", "no-reservation"]
+      "dishHighlights": [
+        "Wood-roasted duck",
+        "Handmade pancakes",
+        "Authentic sauce"
+      ],
+      "tags": [
+        "local",
+        "peking-duck",
+        "famous",
+        "no-reservation"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00"
     },
     {
       "id": "beijing-11",
@@ -403,15 +934,519 @@
       "avgPrice": 400,
       "rating": 4.7,
       "address": "3rd Floor, Jinbau Center, 88 Jinbao St, Dongcheng",
-      "coordinates": { "lat": 39.9148, "lng": 116.4188 },
+      "coordinates": {
+        "lat": 39.9148,
+        "lng": 116.4188
+      },
       "phone": "+86 10 8522 8812",
       "hours": "11:00-14:30, 17:00-22:00",
       "description": "Michelin-starred restaurant revolutionizing Peking duck with modern techniques and lighter, crispier skin.",
-      "dishHighlights": ["Da Dong roast duck", "Seasonal tasting menu", "Innovative presentation"],
-      "tags": ["fine-dining", "modern-chinese", "innovative"]
+      "dishHighlights": [
+        "Da Dong roast duck",
+        "Seasonal tasting menu",
+        "Innovative presentation"
+      ],
+      "tags": [
+        "fine-dining",
+        "modern-chinese",
+        "innovative"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "beijing-12",
+      "name": "聚宝源",
+      "nameEn": "Ju Bao Yuan",
+      "type": "local",
+      "cuisine": "Beijing Hotpot",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "19 Gongrentiyuchang Hutong, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9352,
+        "lng": 116.4032
+      },
+      "phone": "+86 10 6601 6526",
+      "hours": "10:30-14:00, 17:00-22:00",
+      "description": "Famous Muslim-style hotpot restaurant known for hand-cut lamb and traditional copper hotpot.",
+      "dishHighlights": [
+        "Hand-cut Lamb Slices",
+        "Beef Tripe",
+        "Seasonal Vegetables",
+        "Signature Sesame Sauce"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "historic",
+        "queue-usually"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-13",
+      "name": "东来顺",
+      "nameEn": "Dong Lai Shun",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Hotpot",
+      "avgPrice": 200,
+      "rating": 4.5,
+      "address": "193 Wangfujing St, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9122,
+        "lng": 116.4112
+      },
+      "phone": "+86 10 6513 9661",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "Legendary hotpot chain established in 1903, known for premium lamb and traditional铜锅涮肉.",
+      "dishHighlights": [
+        "Premium Lamb Slices",
+        "Beef Tenderloin",
+        "Handmade Meatballs",
+        "Traditional Broth"
+      ],
+      "tags": [
+        "historic",
+        "hotpot",
+        "black-pearl",
+        "business-dining"
+      ],
+      "star": 0
+    },
+    {
+      "id": "beijing-14",
+      "name": "旺顺阁鱼头泡饼",
+      "nameEn": "Wang Shun Ge",
+      "type": "local",
+      "cuisine": "Beijing",
+      "avgPrice": 180,
+      "rating": 4.7,
+      "address": "18 Yuyuan Rd, Xicheng District",
+      "coordinates": {
+        "lat": 39.9022,
+        "lng": 116.3952
+      },
+      "phone": "+86 10 8352 0888",
+      "hours": "10:30-14:00, 17:00-21:30",
+      "description": "Famous for fish head stew with crispy flatbread. A must-try for authentic Beijing flavor.",
+      "dishHighlights": [
+        "Fish Head with Tofu",
+        "Crispy Flatbread",
+        "Slow-cooked broth",
+        "Seasonal Fish Dishes"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "fish",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-15",
+      "name": "那家小馆",
+      "nameEn": "Na Jia Xiao Guan",
+      "type": "local",
+      "cuisine": "Imperial",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "6 Gongti North Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9352,
+        "lng": 116.4492
+      },
+      "phone": "+86 10 6417 6688",
+      "hours": "11:00-14:00, 17:00-22:00",
+      "description": "Popular restaurant servingManchu and Han imperial cuisine in a traditional courtyard setting.",
+      "dishHighlights": [
+        "Braised Pork in Brown Sauce",
+        "Fried Lamb Chops",
+        "Pea Puree",
+        "Eight Treasures Tea"
+      ],
+      "tags": [
+        "local",
+        "imperial-cuisine",
+        "courtyard",
+        "historic"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-16",
+      "name": "四季民福",
+      "nameEn": "Si Ji Min Fu",
+      "type": "local",
+      "cuisine": "Beijing",
+      "avgPrice": 130,
+      "rating": 4.7,
+      "address": "11 Qianmen St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9012,
+        "lng": 116.3992
+      },
+      "phone": "+86 10 6302 6226",
+      "hours": "09:30-14:00, 16:30-21:30",
+      "description": "Modern interpretation of classic Beijing cuisine with elegant atmosphere and great views of Qianmen.",
+      "dishHighlights": [
+        "Peking Duck",
+        "Fried Bean Curd",
+        "Braised Pork Belly",
+        "Bubble Lamp Dessert"
+      ],
+      "tags": [
+        "local",
+        "peking-duck",
+        "modern",
+        "view"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-17",
+      "name": "南门涮肉",
+      "nameEn": "Nan Men Shuan Rou",
+      "type": "local",
+      "cuisine": "Hotpot",
+      "avgPrice": 120,
+      "rating": 4.5,
+      "address": "6 Yonghegong St, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9482,
+        "lng": 116.4192
+      },
+      "phone": "+86 10 8413 1888",
+      "hours": "10:30-22:00",
+      "description": "Popular hotpot spot near Yonghe Temple, known for fresh lamb and traditional recipe.",
+      "dishHighlights": [
+        "Thin Lamb Slices",
+        "Beef Shank",
+        "Seasonal Vegetables",
+        "Sesame Paste"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "casual",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-18",
+      "name": "丰泽园",
+      "nameEn": "Feng Ze Yuan",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Shandong",
+      "avgPrice": 200,
+      "rating": 4.6,
+      "address": "88 Fangqian Lane, Xicheng District",
+      "coordinates": {
+        "lat": 39.9222,
+        "lng": 116.3852
+      },
+      "phone": "+86 10 6318 1515",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "Legendary Shandong cuisine restaurant established in 1930, known for excellent seafood and traditional dishes.",
+      "dishHighlights": [
+        "Braised Abalone",
+        "Sweet and Sour Carp",
+        "Scallion Lobster",
+        "Shandong Noodles"
+      ],
+      "tags": [
+        "historic",
+        "shandong",
+        "seafood",
+        "black-pearl"
+      ],
+      "star": 0
+    },
+    {
+      "id": "beijing-19",
+      "name": "淮扬府",
+      "nameEn": "Huai Yang Fu",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Huaiyang",
+      "avgPrice": 350,
+      "rating": 4.7,
+      "address": "2/F, Henderson Center, 18 Jianguomenwai Dajie, Chaoyang",
+      "coordinates": {
+        "lat": 39.9082,
+        "lng": 116.4582
+      },
+      "phone": "+86 10 6568 8882",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "Michelin-starred Huaiyang cuisine offering refined dishes from the Yangtze River Delta region.",
+      "dishHighlights": [
+        "Steamed Sturgeon",
+        "Braised Pork Belly",
+        "Crystal Shrimp",
+        "Soup Dumplings"
+      ],
+      "tags": [
+        "fine-dining",
+        "huaiyang",
+        "elegant",
+        "business-dining"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "beijing-20",
+      "name": "1949-全鸭季",
+      "nameEn": "1949 - Golden Goose",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Modern Chinese",
+      "avgPrice": 500,
+      "rating": 4.8,
+      "address": "1/F, 1949 Park, 23 Qianmen East St, Dongcheng",
+      "coordinates": {
+        "lat": 39.9032,
+        "lng": 116.4082
+      },
+      "phone": "+86 10 6526 8882",
+      "hours": "11:30-14:30, 17:30-22:00",
+      "description": "Upscale modern Chinese restaurant in a converted factory, famous for innovative Peking duck preparations.",
+      "dishHighlights": [
+        "Smoked Duck",
+        "Truffle Roast Duck",
+        "Chef's Tasting Menu",
+        "Artisan Cocktails"
+      ],
+      "tags": [
+        "fine-dining",
+        "modern-chinese",
+        "trendy",
+        "romantic"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "beijing-21",
+      "name": "老吉堂",
+      "nameEn": "Lao Ji Tang",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 140,
+      "rating": 4.5,
+      "address": "16 Gongti North Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9352,
+        "lng": 116.4482
+      },
+      "phone": "+86 10 6417 8882",
+      "hours": "11:00-14:00, 17:00-22:00",
+      "description": "Popular Shanghai cuisine restaurant known for comfort food and excellent xiaolongbao.",
+      "dishHighlights": [
+        "Soup Dumplings",
+        "Shanghai Braised Pork",
+        "Fried Pork Lunch",
+        "Hairyi Fish"
+      ],
+      "tags": [
+        "local",
+        "shanghai",
+        "casual",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-22",
+      "name": "松鹤楼",
+      "nameEn": "Song He Lou",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Suzhou",
+      "avgPrice": 250,
+      "rating": 4.6,
+      "address": "8/F, China World Mall, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9094,
+        "lng": 116.4595
+      },
+      "phone": "+86 10 6505 2838",
+      "hours": "11:00-15:00, 17:00-21:30",
+      "description": "Legendary Suzhou cuisine restaurant established in 1737, known for exquisite desserts and classical dishes.",
+      "dishHighlights": [
+        "Suzhou-style Crab",
+        "Crystal Shrimp",
+        "Sweet and Sour Mandarin Fish",
+        "Mouse-shaped Buns"
+      ],
+      "tags": [
+        "historic",
+        "suzhou",
+        "elegant",
+        "black-pearl"
+      ],
+      "star": 0
+    },
+    {
+      "id": "beijing-23",
+      "name": "利苑酒家",
+      "nameEn": "Lei Garden",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Cantonese",
+      "avgPrice": 400,
+      "rating": 4.7,
+      "address": "3/F, Beijing Ap Hotel, 1 Jiukeshu Ave, Chaoyang",
+      "coordinates": {
+        "lat": 39.9222,
+        "lng": 116.4692
+      },
+      "phone": "+86 10 6581 8383",
+      "hours": "11:00-15:00, 17:30-22:00",
+      "description": "Michelin-starred Cantonese restaurant known for premium dim sum and refined seafood dishes.",
+      "dishHighlights": [
+        "Steamed Shrimp Dumplings",
+        "Roasted Suckling Pig",
+        "Braised Bird's Nest",
+        "Egg Tarts"
+      ],
+      "tags": [
+        "fine-dining",
+        "cantonese",
+        "dim-sum",
+        "business-dining"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "beijing-24",
+      "name": "京季",
+      "nameEn": "Jing Ji",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Modern Chinese",
+      "avgPrice": 800,
+      "rating": 4.8,
+      "address": "2/F, Parkview Green, 20 Fangyuan East Rd, Chaoyang",
+      "coordinates": {
+        "lat": 39.9422,
+        "lng": 116.4682
+      },
+      "phone": "+86 10 6502 8801",
+      "hours": "11:30-14:30, 18:00-22:00",
+      "description": "Two Michelin starred restaurant by Chef Wang Xing offering innovative Shandong cuisine.",
+      "dishHighlights": [
+        "Braised sea cucumber",
+        "Fried sweet and sour ribs",
+        "Crystal shrimp dumplings"
+      ],
+      "tags": [
+        "fine-dining",
+        "shandong",
+        "innovative",
+        "romantic"
+      ],
+      "diamond": 0
+    },
+    {
+      "id": "beijing-25",
+      "name": "拾城一味",
+      "nameEn": "Shi Cheng Yi Wei",
+      "type": "local",
+      "cuisine": "Beijing",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "28 Sanlitun Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9342,
+        "lng": 116.4462
+      },
+      "phone": "+86 10 6417 8811",
+      "hours": "11:00-22:00",
+      "description": "Popular local spot for authentic Beijing home-style dishes with modern decor.",
+      "dishHighlights": [
+        "Fried sauce noodles",
+        "Pea green cake",
+        "Bubble lamp dessert"
+      ],
+      "tags": [
+        "local",
+        "beijing-cuisine",
+        "casual",
+        "modern"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-26",
+      "name": "都式烧麦馆",
+      "nameEn": "Du Shi Shaomai Guan",
+      "type": "local",
+      "cuisine": "Beijing",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "58 Xinjiekou Dajie, Xicheng District",
+      "coordinates": {
+        "lat": 39.9382,
+        "lng": 116.3782
+      },
+      "phone": "+86 10 6616 8831",
+      "hours": "06:30-14:00, 17:00-20:00",
+      "description": "Legendary spot for Beijing-style shaomai (steamed dumplings) since 1920s.",
+      "dishHighlights": [
+        "Pork shaomai",
+        "Vegetarian shaomai",
+        "Soy milk"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "historic",
+        "must-try",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "beijing-27",
+      "name": "宫宴",
+      "nameEn": "Gong Yan",
+      "type": "local",
+      "cuisine": "Imperial",
+      "avgPrice": 350,
+      "rating": 4.7,
+      "address": "1/F, Nanhuachi, 1 Nanluoguxiang, Dongcheng",
+      "coordinates": {
+        "lat": 39.9372,
+        "lng": 116.4042
+      },
+      "phone": "+86 10 6405 8832",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Upscale restaurant offering imperial court cuisine with traditional music performances.",
+      "dishHighlights": [
+        "Imperial feast",
+        "Manchu-Han banquet",
+        "Traditional pastries"
+      ],
+      "tags": [
+        "imperial",
+        "cultural",
+        "performance",
+        "romantic"
+      ],
+      "star": 0,
+      "diamond": 0
     }
   ],
-
   "transport": {
     "arrival": [
       {
@@ -438,30 +1473,60 @@
         "27 lines covering all major attractions",
         "Single ride: 3-10 CNY depending on distance",
         "Peak hours: 7:00-9:00, 17:00-19:00 - expect crowds",
-        "Metro maps available in English at stations"
+        "Metro maps available in English at stations",
+        "Line 1 (red): Runs east-west through city center",
+        "Line 2 (blue): Circular line passing major sites",
+        "Line 5 (orange): Connects southern districts",
+        "Line 10 (purple): Major cross-district line",
+        "Airport Express Line: Connects city center to PEK (25 CNY)",
+        "Daxing Line: Connects to new Daxing Airport (25 CNY)",
+        "First train: 05:00, Last train: 23:00 (varies by line)",
+        "Women-only cars available on some lines during peak"
       ],
       "bus": [
         "Extensive network covering areas not served by metro",
-        "Single ride: 2 CNY (flat fee)",
-        "Some air-conditioned buses cost more",
-        "Download Beijing Transport app for real-time info"
+        "Single ride: 2 CNY (flat fee for regular buses)",
+        "Air-conditioned buses: 3 CNY",
+        "Night buses (夜班): 2-5 CNY depending on distance",
+        "Download Beijing Transport app for real-time info",
+        "Route numbers: 1-99 for main lines, 100+ for secondary",
+        "Elderly/disabled: Free with proper ID",
+        "Tips: Have exact change ready, or use transit card"
       ],
       "taxi": [
         "Starting fare: 13 CNY (first 3km)",
         "Waiting: 0.8 CNY per minute",
         "Night surcharge: 20% extra (23:00-05:00)",
         "Always insist on meter use",
-        "Didi app works well for English speakers"
+        "Didi app works well for English speakers",
+        "Long distance trips: 2.3 CNY per km after 15km",
+        "Congestion fee: May apply during rush hours in central area",
+        "Electric taxis increasingly common (same rates)",
+        "Airport to city center: 100-150 CNY by taxi"
       ],
       "bike": [
         "Mobike, Hello bikes widely available",
         "Unlock: 1-2 CNY, then 0.5-1 CNY per 15 minutes",
         "Bike lanes common, follow traffic rules",
-        "International credit cards work with Alipay/WeChat"
+        "International credit cards work with Alipay/WeChat",
+        "Designated parking zones required for shared bikes",
+        "Electric bikes available (need license plate)",
+        "Caution: Traffic can be chaotic, stay alert"
+      ],
+      "walking": [
+        "Central Beijing is walkable between major attractions",
+        "Use underground passages at major intersections",
+        "Walk on right side of sidewalks",
+        "Cross at designated crosswalks - jaywalking fines exist",
+        "Hutong areas best explored on foot"
+      ],
+      "rental": [
+        "Electric scooters: Require license and helmet by law",
+        "Car rental: International license accepted with translation",
+        "Driver with car: Popular option for day trips (500-800 CNY/day)"
       ]
     }
   },
-
   "hotels": [
     {
       "name": "北京华尔道夫酒店",
@@ -469,7 +1534,10 @@
       "budget": "luxury",
       "priceRange": "2500-5000 CNY/night",
       "address": "8 Xinyuanli, Chaoyang District",
-      "coordinates": { "lat": 39.9292, "lng": 116.4535 },
+      "coordinates": {
+        "lat": 39.9292,
+        "lng": 116.4535
+      },
       "rating": 4.8,
       "highlights": [
         "Prime location near Sanlitun",
@@ -485,7 +1553,10 @@
       "budget": "luxury",
       "priceRange": "2000-4000 CNY/night",
       "address": "8 Jinyu Hutong, Wangfujing",
-      "coordinates": { "lat": 39.9142, "lng": 116.4135 },
+      "coordinates": {
+        "lat": 39.9142,
+        "lng": 116.4135
+      },
       "rating": 4.7,
       "highlights": [
         "Historic location near Forbidden City",
@@ -500,9 +1571,16 @@
       "budget": "mid",
       "priceRange": "800-1500 CNY/night",
       "address": "Fortune Plaza, 7 Dongsanhuan Zhonglu, Chaoyang",
-      "coordinates": { "lat": 39.9142, "lng": 116.4645 },
+      "coordinates": {
+        "lat": 39.9142,
+        "lng": 116.4645
+      },
       "rating": 4.5,
-      "highlights": ["Central location", "Good business facilities", "Varied breakfast options"],
+      "highlights": [
+        "Central location",
+        "Good business facilities",
+        "Varied breakfast options"
+      ],
       "bookingTips": "Weekend rates often lower. Check travel sites for deals."
     },
     {
@@ -511,9 +1589,16 @@
       "budget": "mid",
       "priceRange": "700-1200 CNY/night",
       "address": "1 Dongfang Rd, Chaoyang District",
-      "coordinates": { "lat": 39.9392, "lng": 116.4545 },
+      "coordinates": {
+        "lat": 39.9392,
+        "lng": 116.4545
+      },
       "rating": 4.4,
-      "highlights": ["Near Workers Stadium", "Good gym facilities", "Reliable service"],
+      "highlights": [
+        "Near Workers Stadium",
+        "Good gym facilities",
+        "Reliable service"
+      ],
       "bookingTips": "Hilton Honors members get better deals."
     },
     {
@@ -522,13 +1607,266 @@
       "budget": "budget",
       "priceRange": "300-600 CNY/night",
       "address": "16 Liangmaqiao Rd, Chaoyang District",
-      "coordinates": { "lat": 39.9492, "lng": 116.4645 },
+      "coordinates": {
+        "lat": 39.9492,
+        "lng": 116.4645
+      },
       "rating": 4.2,
-      "highlights": ["Near Embassy District", "Convenient metro access", "Good value"],
+      "highlights": [
+        "Near Embassy District",
+        "Convenient metro access",
+        "Good value"
+      ],
       "bookingTips": "Chinese travel apps often have good deals."
+    },
+    {
+      "name": "北京瑜舍",
+      "nameEn": "The Opposite House",
+      "budget": "luxury",
+      "priceRange": "2000-4000 CNY/night",
+      "address": "11 Sanlitun Road, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9352,
+        "lng": 116.4512
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Modern design by隈研吾",
+        "Trendy Sanlitun location",
+        "Excellent Asian cuisine",
+        "Rooftop bar"
+      ],
+      "bookingTips": "Popular with design-conscious travelers. Great for nightlife."
+    },
+    {
+      "name": "北京瑞吉酒店",
+      "nameEn": "The St. Regis Beijing",
+      "budget": "luxury",
+      "priceRange": "1800-3500 CNY/night",
+      "address": "21 Jianguomenwai Dajie, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9092,
+        "lng": 116.4532
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Classic elegance near CBD",
+        "24-hour butler service",
+        "Award-winning spa",
+        "Fine dining restaurants"
+      ],
+      "bookingTips": "Marriott Bonvoy members get better rates. Good for business travelers."
+    },
+    {
+      "name": "北京香格里拉饭店",
+      "nameEn": "Shangri-La Hotel Beijing",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "29 Zizhuyuan Rd, Haidian District",
+      "coordinates": {
+        "lat": 39.9392,
+        "lng": 116.4832
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Riverside location",
+        "Beautiful gardens",
+        "Excellent Chinese restaurant",
+        "Large pool"
+      ],
+      "bookingTips": "Best value in the luxury category. Good for tourists visiting Summer Palace."
+    },
+    {
+      "name": "北京JW万豪酒店",
+      "nameEn": "JW Marriott Hotel Beijing",
+      "budget": "luxury",
+      "priceRange": "1400-2800 CNY/night",
+      "address": "83 Jianguo Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9252,
+        "lng": 116.4682
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Modern luxury in CBD",
+        "Multiple restaurants",
+        "Large fitness center",
+        "Executive lounge"
+      ],
+      "bookingTips": "Book directly for weekend packages. Good for combining business and leisure."
+    },
+    {
+      "name": "北京丽晶酒店",
+      "nameEn": "Regent Hotel Beijing",
+      "budget": "luxury",
+      "priceRange": "1600-3200 CNY/night",
+      "address": "99 Jinbao St, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9162,
+        "lng": 116.4212
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Walking distance to Forbidden City",
+        "Traditional Chinese decor",
+        "Excellent afternoon tea",
+        "Butler service"
+      ],
+      "bookingTips": "Best location for first-time visitors. Book rooms with city view."
+    },
+    {
+      "name": "北京粤财jw万豪酒店",
+      "nameEn": "JW Marriott Hotel Beijing Central",
+      "budget": "mid",
+      "priceRange": "900-1800 CNY/night",
+      "address": "18 Xuanwumenwai St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9172,
+        "lng": 116.3812
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near subway station",
+        "Modern facilities",
+        "Good breakfast buffet",
+        "Business center"
+      ],
+      "bookingTips": "Good value for the location. Check for weekend specials."
+    },
+    {
+      "name": "北京长城饭店",
+      "nameEn": "Great Wall Hotel Beijing",
+      "budget": "mid",
+      "priceRange": "700-1400 CNY/night",
+      "address": "10 Liangmaqiao Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9482,
+        "lng": 116.4622
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Embassy District",
+        "Multiple dining options",
+        "Large conference facilities",
+        "Outdoor garden"
+      ],
+      "bookingTips": "Popular with tour groups. Good for longer stays."
+    },
+    {
+      "name": "北京希尔顿逸林酒店",
+      "nameEn": "DoubleTree by Hilton Beijing",
+      "budget": "mid",
+      "priceRange": "600-1200 CNY/night",
+      "address": "1 Wangjing Dongyi Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9782,
+        "lng": 116.4852
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near 798 Art District",
+        "Free cookies at check-in",
+        "Good breakfast",
+        "Modern rooms"
+      ],
+      "bookingTips": "Good base for visiting 798. Hilton Honors members save more."
+    },
+    {
+      "name": "北京金茂万丽酒店",
+      "nameEn": "Renaissance Beijing Wangfujing",
+      "budget": "mid",
+      "priceRange": "800-1600 CNY/night",
+      "address": "57 Wangfujing St, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9132,
+        "lng": 116.4132
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Prime Wangfujing location",
+        "Rooftop bar with views",
+        "Modern design",
+        "Near shopping"
+      ],
+      "bookingTips": "Great for shoppers. Book terrace rooms for views."
+    },
+    {
+      "name": "北京新侨诺富特饭店",
+      "nameEn": "Novotel Beijing Xinqiao",
+      "budget": "mid",
+      "priceRange": "550-1000 CNY/night",
+      "address": "1 Chongwenmenwai Dajie, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9022,
+        "lng": 116.4272
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Railway Station",
+        "Multiple restaurants",
+        "Underground parking",
+        "Clean and modern"
+      ],
+      "bookingTips": "Best for train travelers. Good value for business."
+    },
+    {
+      "name": "北京燕翔酒店",
+      "nameEn": "Beijing Howard Johnson Paragon",
+      "budget": "budget",
+      "priceRange": "350-700 CNY/night",
+      "address": "18 North Liulubao Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9422,
+        "lng": 116.4552
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near Workers Stadium",
+        "Affordable dining",
+        "Metro access",
+        "Good for short stays"
+      ],
+      "bookingTips": "Best value near the center. Check apps for deals."
+    },
+    {
+      "name": "北京前门建国饭店",
+      "nameEn": "Qianmen Hotel Beijing",
+      "budget": "budget",
+      "priceRange": "300-600 CNY/night",
+      "address": "175 Qianmen St, Xicheng District",
+      "coordinates": {
+        "lat": 39.8982,
+        "lng": 116.3952
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Historic building",
+        "Near Tiananmen",
+        "Traditional Chinese style",
+        "Affordable"
+      ],
+      "bookingTips": "Book early for best rates. Great location for tourists."
+    },
+    {
+      "name": "北京柏悦酒店",
+      "nameEn": "Park Hyatt Beijing",
+      "budget": "luxury",
+      "priceRange": "1800-3500 CNY/night",
+      "address": "2 Jianguomenwai Dajie, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9092,
+        "lng": 116.4572
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Sky lobby on 59th floor",
+        "Stunning views",
+        "Central location",
+        "Modern luxury"
+      ],
+      "bookingTips": "Request upper floors for best views. Good for business travelers."
     }
   ],
-
   "payment": [
     {
       "method": "Alipay",
@@ -592,9 +1930,38 @@
         "Notify them of travel plans to avoid fraud alerts",
         "Some places add foreign transaction fees"
       ]
+    },
+    {
+      "method": "UnionPay",
+      "icon": "unionpay",
+      "description": "China's domestic card network, widely accepted at ATMs and merchants",
+      "howToUse": [
+        "Works at any ATM accepting UnionPay cards",
+        "Accepted at most stores, hotels, and restaurants",
+        "International cards often work with UnionPay terminals"
+      ],
+      "tips": [
+        "Can withdraw RMB directly from international cards",
+        "Widely accepted at all banks",
+        "Lower fees than credit cards for cash withdrawals"
+      ]
+    },
+    {
+      "method": "Foreign Exchange",
+      "icon": "exchange",
+      "description": "Currency exchange at banks and exchange offices",
+      "howToUse": [
+        "Official exchange counters at airports",
+        "Bank branches with exchange services",
+        "Major hotels often have exchange services"
+      ],
+      "tips": [
+        "Airport exchange counters offer poor rates",
+        "Bank of China and ICBC give better rates",
+        "Bring passport for all exchanges"
+      ]
     }
   ],
-
   "culturalTips": [
     {
       "category": "greeting",
@@ -625,9 +1992,170 @@
       "title": "Bargaining",
       "content": "Bargaining is expected at markets and small shops. Start at 30-50% of the asking price. Be friendly - it's a social activity. Walk away if you can't agree.",
       "importance": "medium"
+    },
+    {
+      "category": "taboo",
+      "title": "Number Taboos",
+      "content": "The number 4 is considered extremely unlucky (sounds like 'death'). Avoid giving gifts in sets of 4. The number 8 is very lucky (sounds like 'prosperity'). 6 signifies smoothness. 9 signifies forever.",
+      "importance": "high"
+    },
+    {
+      "category": "taboo",
+      "title": "Color Symbolism",
+      "content": "White and black represent mourning/death - avoid wearing to celebrations. Red represents luck and joy - appropriate for festive occasions. Yellow was imperial color - wear respectfully.",
+      "importance": "high"
+    },
+    {
+      "category": "taboo",
+      "title": "Gift Giving Taboos",
+      "content": "Avoid giving clocks (sounds like 'death'), scissors (cutting ties), or pears (sounds like 'separation'). Umbrellas sound like 'scattering'. Wrap gifts in red - avoid white or black wrapping for celebrations.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Chopstick Etiquette",
+      "content": "Never stick chopsticks vertically in rice (funeral ritual). Don't point with chopsticks or wave them around. Don't pass food directly chopstick-to-chopstick (used in funeral rites).",
+      "importance": "high"
+    },
+    {
+      "category": "dining",
+      "title": "Seating Arrangements",
+      "content": "The host faces the door; most honored guest sits to the left of host. Wait for 'please eat' before starting. The guest of honor will be offered the first serve. Leave some food to show you're satisfied.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Toasting Etiquette",
+      "content": "Toast with both hands and lower your glass than elders/seniors. When clinking glasses, aim to be lower than those of higher rank. Finish your drink when toasting with seniors.",
+      "importance": "medium"
+    },
+    {
+      "category": "social",
+      "title": "Personal Space",
+      "content": "Chinese people may stand closer than Western norms. Physical contact between same genders is common and not awkward. Avoid prolonged eye contact with strangers.",
+      "importance": "low"
+    },
+    {
+      "category": "social",
+      "title": "Addressing People",
+      "content": "Use full name + title for formal situations. First name alone is for close friends. 'Lao' (old) before surname shows respect for older people. 'Xiao' (little) before surname for younger people.",
+      "importance": "medium"
+    },
+    {
+      "category": "business",
+      "title": "Business Meeting Etiquette",
+      "content": "Arrive on time or slightly early. Exchange business cards with both hands, receive with both hands and study before putting away. Allow senior members to speak first. Avoid direct 'no' - say 'we will consider' instead.",
+      "importance": "high"
+    },
+    {
+      "category": "business",
+      "title": "Guanxi (Relationships)",
+      "content": "Business in China is relationship-driven. Building trust takes time through dining, tea, and social activities. Maintaining guanxi is essential for long-term success.",
+      "importance": "high"
+    },
+    {
+      "category": "travel",
+      "title": "Queue Culture",
+      "content": "Lines may seem chaotic but people generally respect turns. Push ahead politely but firmly. In crowded places, state your destination clearly: 'Mai dan' (I'm paying) at restaurants, or 'Pao zhou' (noodles) at food stalls.",
+      "importance": "low"
+    },
+    {
+      "category": "travel",
+      "title": "Public Transport Etiquette",
+      "content": "Give seats to elderly, pregnant women, and people with children. Don't eat or drink on metro. Keep phone calls brief or on silent. Stand on right side of escalator, walk on left.",
+      "importance": "medium"
+    },
+    {
+      "category": "travel",
+      "title": "Temple Etiquette",
+      "content": "Walk clockwise around Buddhist temples. Don't touch Buddha statues or point at them. Light incense with both hands and bow three times. Don't take photos where prohibited. Remove hats and sunglasses in temple halls.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Market Shopping Tips",
+      "content": "Bring your own shopping bag (eco-friendly). Test electronics carefully. Check electronics carefully - ask to try before buying. Negotiate confidently but pleasantly. Many markets have wholesale minimums.",
+      "importance": "medium"
+    },
+    {
+      "category": "communication",
+      "title": "Language Tips",
+      "content": "Learning a few Mandarin phrases is appreciated. 'Bu hao yi si' (不好意思) is useful for apologies. 'Dui bu qi' (对不起) is more formal. 'Ke yi' (可以) means 'may I?' - polite way to get attention. Use 'Zai jian' (再见) when leaving.",
+      "importance": "medium"
+    },
+    {
+      "category": "greeting",
+      "title": "Beijing Dialect",
+      "content": "The Beijing dialect (北京话) has distinct pronunciation and many colloquial expressions. 'Ye' (也) and 'zai' (再) are pronounced with a trailing 'r' sound. Learning basic phrases is appreciated.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Sandstorm Season",
+      "content": "Beijing experiences sandstorms in spring (March-April). Check air quality indices (AQI) before going outside. Wear masks outdoors and keep windows closed during heavy sandstorms.",
+      "importance": "high"
+    },
+    {
+      "category": "communication",
+      "title": "English Accessibility",
+      "content": "English signage is common at major tourist attractions and hotels. However, at local markets, small restaurants, and public transport, English may be limited. Translation apps are helpful.",
+      "importance": "medium"
+    },
+    {
+      "category": "greeting",
+      "title": "Beijing Dialect",
+      "content": "The Beijing dialect (北京话) has distinct pronunciation and many colloquial expressions. 'Ye' (也) and 'zai' (再) are pronounced with a trailing 'r' sound. Learning basic phrases is appreciated.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Sandstorm Season",
+      "content": "Beijing experiences sandstorms in spring (March-April). Check air quality indices (AQI) before going outside. Wear masks outdoors and keep windows closed during heavy sandstorms.",
+      "importance": "high"
+    },
+    {
+      "category": "communication",
+      "title": "English Accessibility",
+      "content": "English signage is common at major tourist attractions and hotels. However, at local markets, small restaurants, and public transport, English may be limited. Translation apps are helpful.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Beijing Roast Duck Culture",
+      "content": "Peking duck is Beijing's most famous dish. Popular restaurants include Quanjude (est. 1864), Bianyifang (est. 1855), and Da Dong. Each has its own preparation style.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Hutong Heritage",
+      "content": "Hutongs (胡同) are traditional alleyways forming historic Beijing neighborhoods. Walking or cycling through hutongs offers insight into traditional Beijing life.",
+      "importance": "high"
+    },
+    {
+      "category": "taboo",
+      "title": "Censorship Awareness",
+      "content": "Internet access in Beijing is restricted. VPNs are commonly used but may be unreliable. Plan accordingly for accessing international services.",
+      "importance": "high"
+    },
+    {
+      "category": "shopping",
+      "title": "Silk Market Culture",
+      "content": "The Silk Market (Xizhushui) and other markets offer bargaining opportunities. Start at 30-50% of asking price. Quality varies - check carefully before purchasing.",
+      "importance": "medium"
+    },
+    {
+      "category": "transportation",
+      "title": "Peak Hours",
+      "content": "Beijing traffic peaks 7-9am and 5-8pm. Public transport is recommended. Metro Line 1, 2, and 10 are most useful for tourists.",
+      "importance": "medium"
+    },
+    {
+      "category": "greeting",
+      "title": "Beijing Nicknames",
+      "content": "Locals may use Beijing-specific terms like 'dageda' (大哥大) for older men or 'jie jie' (姐姐) for women. 'Er' suffix is common: 'Beijing'er'.",
+      "importance": "low"
     }
   ],
-
   "emergencyContacts": [
     {
       "type": "ambulance",
@@ -659,7 +2187,10 @@
       "nameEn": "Beijing United Family Hospital",
       "phone": "+86 10 5927 7120",
       "address": "2 Xiangjiang Mid Rd, Chaoyang District",
-      "coordinates": { "lat": 39.9492, "lng": 116.4745 },
+      "coordinates": {
+        "lat": 39.9492,
+        "lng": 116.4745
+      },
       "notes": "English-speaking staff, accepts international insurance"
     },
     {
@@ -668,7 +2199,10 @@
       "nameEn": "Peking Union Medical College Hospital",
       "phone": "+86 10 6915 6114",
       "address": "1 Shuaifuyuan, Dongcheng District",
-      "coordinates": { "lat": 39.9142, "lng": 116.4235 },
+      "coordinates": {
+        "lat": 39.9142,
+        "lng": 116.4235
+      },
       "notes": "Best public hospital for complex cases"
     },
     {
@@ -677,11 +2211,149 @@
       "nameEn": "US Embassy Beijing",
       "phone": "+86 10 8531 3000 (emergency)",
       "address": "55 Anjialou Rd, Chaoyang District",
-      "coordinates": { "lat": 39.9542, "lng": 116.4445 },
+      "coordinates": {
+        "lat": 39.9542,
+        "lng": 116.4445
+      },
       "notes": "For US citizens: 24h line +86 10 8531 3000"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻华大使馆",
+      "nameEn": "UK Embassy Beijing",
+      "phone": "+86 10 8529 6600 (emergency)",
+      "address": "11 Guanghua Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9482,
+        "lng": 116.4532
+      },
+      "notes": "For UK citizens: 24h consular emergency line"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻华大使馆",
+      "nameEn": "Japan Embassy Beijing",
+      "phone": "+86 10 8561 3000",
+      "address": "1 Liangmaqiao Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9512,
+        "lng": 116.4622
+      },
+      "notes": "Japanese citizens can also use +86 10 8561 3119 for emergencies"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻华大使馆",
+      "nameEn": "Australian Embassy Beijing",
+      "phone": "+86 10 8529 6800",
+      "address": "21 Dongzhimenwai St, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9492,
+        "lng": 116.4452
+      },
+      "notes": "24h emergency line for Australian citizens"
+    },
+    {
+      "type": "hospital",
+      "name": "北京友谊医院",
+      "nameEn": "Beijing Friendship Hospital",
+      "phone": "+86 10 6301 4441",
+      "address": "95 Yong'an Rd, Xicheng District",
+      "coordinates": {
+        "lat": 39.9252,
+        "lng": 116.3792
+      },
+      "notes": "Well-known for tropical medicine and liver diseases"
+    },
+    {
+      "type": "hospital",
+      "name": "北京天坛医院",
+      "nameEn": "Beijing Tiantan Hospital",
+      "phone": "+86 10 6709 6656",
+      "address": "119 West Rd, Fengtai District",
+      "coordinates": {
+        "lat": 39.8792,
+        "lng": 116.4032
+      },
+      "notes": "Famous for neurosurgery and neurology"
+    },
+    {
+      "type": "police",
+      "name": "北京旅游警察",
+      "nameEn": "Beijing Tourist Police",
+      "phone": "010-65150118",
+      "address": "Various locations at major attractions",
+      "notes": "English-speaking officers at key tourist areas including Tiananmen, Qianmen, and Badaling Great Wall"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻华大使馆",
+      "nameEn": "German Embassy Beijing",
+      "phone": "+86 10 8532 9000",
+      "address": "9 Sanlitun Dongzhimenwai Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9532,
+        "lng": 116.4492
+      },
+      "notes": "For German citizens: 24h emergency line available"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻华大使馆",
+      "nameEn": "French Embassy Beijing",
+      "phone": "+86 10 8532 8000",
+      "address": "60 Tianzelu Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9542,
+        "lng": 116.4552
+      },
+      "notes": "For French citizens: consular services and emergency assistance"
+    },
+    {
+      "type": "embassy",
+      "name": "加拿大驻华大使馆",
+      "nameEn": "Canadian Embassy Beijing",
+      "phone": "+86 10 5139 4000",
+      "address": "10 Chaoyangmenwai Dajie, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9512,
+        "lng": 116.4412
+      },
+      "notes": "24h emergency line for Canadian citizens"
+    },
+    {
+      "type": "tourist-helpline",
+      "name": "北京旅游投诉热线",
+      "nameEn": "Beijing Tourist Complaint Hotline",
+      "phone": "12345",
+      "address": "Citywide coverage",
+      "notes": "For tourist complaints, refunds, and emergency assistance"
+    },
+    {
+      "type": "embassy",
+      "name": "俄罗斯驻华大使馆",
+      "nameEn": "Russian Embassy Beijing",
+      "phone": "+86 10 6532 2000",
+      "address": "4 Dongzhimen Beizhan, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9532,
+        "lng": 116.4292
+      },
+      "notes": "For Russian citizens: consular services available"
+    },
+    {
+      "type": "embassy",
+      "name": "意大利驻华大使馆",
+      "nameEn": "Italian Embassy Beijing",
+      "phone": "+86 10 8532 7600",
+      "address": "1 Sanlitun Dongzhimenwai Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9522,
+        "lng": 116.4492
+      },
+      "notes": "For Italian citizens: emergency assistance available"
     }
   ],
-
   "quickFacts": {
     "language": "Mandarin Chinese (Simplified)",
     "currency": "Chinese Yuan (CNY/RMB)",

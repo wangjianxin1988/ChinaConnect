@@ -20,7 +20,13 @@
   ],
   "climate": {
     "type": "Subtropical highland",
-    "bestMonths": ["March", "April", "May", "September", "October"],
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October"
+    ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
     "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
@@ -200,6 +206,314 @@
         "Ancient trees"
       ],
       "tips": "Best in April-May when actual butterflies appear. Combine with Xizhou and Erhai Lake cycling. Performance times: 9:30, 11:00, 14:00, 15:30."
+    },
+    {
+      "id": "zhoucheng-tiedye",
+      "name": "周城扎染",
+      "nameEn": "Zhoucheng Tie-dye Village",
+      "category": "cultural",
+      "description": "The largest Bai ethnic village famous for traditional tie-dye crafts. Over 90% of residents are involved in tie-dye production.",
+      "address": "Zhoucheng Village, Dali County",
+      "coordinates": {
+        "lat": 25.8022,
+        "lng": 100.0872
+      },
+      "openingHours": "08:00-19:00",
+      "ticketPrice": "Free (workshops extra)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Tie-dye workshops",
+        "Bai folk performances",
+        "Ancient architecture",
+        "Miao-Hua marriage market"
+      ],
+      "tips": "Visit morning market on weekends. Try DIY tie-dye experience. Best light for photos in early morning."
+    },
+    {
+      "id": "weishan-ancient",
+      "name": "巍山古城",
+      "nameEn": "Weishan Ancient Town",
+      "category": "cultural",
+      "description": "A perfectly preserved ancient city and the birthplace of the Nanzhao Kingdom. Less touristy than Dali Old Town with authentic local life.",
+      "address": "Weishan County, Dali",
+      "coordinates": {
+        "lat": 25.2322,
+        "lng": 100.3072
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (巍山文庙 20 CNY)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Nanzhao culture",
+        "Ancient city walls",
+        "Tuojiang Temple",
+        "Weishan snacks"
+      ],
+      "tips": "Come for the torch festival (July-August). Try Weishan's famous Nanjiang rice noodles. Start from the south gate."
+    },
+    {
+      "id": "nanzhao-island",
+      "name": "南诏风情岛",
+      "nameEn": "Nanzhao Fengqing Island",
+      "category": "cultural",
+      "description": "A small island in Erhai Lake showcasing Nanzhao Kingdom culture with statues, temples, and traditional Bai architecture.",
+      "address": "Erhai Lake, near Shuanglang",
+      "coordinates": {
+        "lat": 25.8722,
+        "lng": 100.1672
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50 CNY (includes boat)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Nanzhao King statue",
+        "Bai architecture",
+        "Buddhist temple",
+        "Lake views"
+      ],
+      "tips": "Combine with Shuanglang visit. Take the boat to the island. Best visited in morning."
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "小普陀",
+      "nameEn": "Xiaoputuo",
+      "category": "cultural",
+      "description": "A tiny island temple in Erhai Lake with a small pagoda, one of the most photographed spots in Dali.",
+      "address": "Erhai Lake, eastern shore",
+      "coordinates": {
+        "lat": 25.9022,
+        "lng": 100.1772
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30 CNY (boat extra)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Island pagoda",
+        "Fisherman's temple",
+        "Sunrise views",
+        "Boat ride"
+      ],
+      "tips": "Best at sunrise for photography. Can feed seagulls from the boat. Combine with cycling the eastern shore."
+    },
+    {
+      "id": "ximatian",
+      "name": "洗马潭",
+      "nameEn": "Ximatian",
+      "category": "natural",
+      "description": "A high-altitude alpine meadow and marsh at Cangshan Mountain, accessible by cable car with stunning views.",
+      "address": "Cangshan Mountain, highest point",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.0872
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "100 CNY (cable car included)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Alpine meadow",
+        "Mountain marsh",
+        "Panoramic views",
+        "Wildflowers"
+      ],
+      "tips": "Take the cable car up. Weather changes rapidly - bring warm layers. Best visited in summer for wildflowers."
+    },
+    {
+      "id": "tianlongcave",
+      "name": "天龙洞",
+      "nameEn": "Tianlong Cave",
+      "category": "cultural",
+      "description": "Ancient Buddhist cave temple with colorful statues and carvings dating back to the Nanzhao Kingdom period.",
+      "address": "Cangshan Mountain, lower slope",
+      "coordinates": {
+        "lat": 25.6822,
+        "lng": 100.1172
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "60 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Buddhist statues",
+        "Ancient carvings",
+        "Cave exploration",
+        "Mountain scenery"
+      ],
+      "tips": "Combine with Cangshan hike. The cave is smaller than it looks from outside. Good for shelter if raining."
+    },
+    {
+      "id": "erhai-westlake",
+      "name": "洱源西湖",
+      "nameEn": "Erhai West Lake",
+      "category": "natural",
+      "description": "A beautiful lake area with wetland scenery, lotus fields, and traditional Bai fishing villages. Less crowded than Erhai Lake.",
+      "address": "Eryuan County, Dali",
+      "coordinates": {
+        "lat": 26.0522,
+        "lng": 100.0872
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (boat tours extra)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Lotus fields",
+        "Wetland scenery",
+        "Fishing villages",
+        "Bird watching"
+      ],
+      "tips": "Best in summer for lotus. Take a boat tour through the waterways. Good for cycling combined with nearby temples."
+    },
+    {
+      "id": "xizhou-haishe",
+      "name": "喜洲海舌生态公园",
+      "nameEn": "Xizhou Haishe Eco Park",
+      "category": "natural",
+      "description": "A peninsula extending into Erhai Lake, offering 180-degree views of the lake and Cangshan Mountains.",
+      "address": "Near Xizhou Ancient Town",
+      "coordinates": {
+        "lat": 25.7722,
+        "lng": 100.1172
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Peninsula viewpoint",
+        "Lake and mountain views",
+        "Photography spot",
+        "Shoreline walks"
+      ],
+      "tips": "Best at sunrise or sunset. Very crowded on weekends. Combine with Xizhou Baba tour."
+    },
+    {
+      "id": "dali-museum",
+      "name": "大理州博物馆",
+      "nameEn": "Dali Prefecture Museum",
+      "category": "cultural",
+      "description": "A modern museum showcasing Dali's history from Nanzhao Kingdom to present, with artifacts and interactive exhibits.",
+      "address": "Dali City, near Erhai Lake",
+      "coordinates": {
+        "lat": 25.6622,
+        "lng": 100.1772
+      },
+      "openingHours": "09:00-17:00 (closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Nanzhao Kingdom artifacts",
+        "Bai ethnic culture",
+        "Buddhist art",
+        "Interactive exhibits"
+      ],
+      "tips": "Good for rainy days. English descriptions available. Combine with nearby Erhai Lake walk."
+    },
+    {
+      "id": "jizhao-temple",
+      "name": "寂照庵",
+      "nameEn": "Jizhao Temple",
+      "category": "cultural",
+      "description": "A serene Buddhist temple famous for its thousands of potted flowers and peaceful atmosphere.",
+      "address": "Cangshan Mountain slope",
+      "coordinates": {
+        "lat": 25.6722,
+        "lng": 100.1272
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "Free (donations welcome)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Flower gardens",
+        "Zen atmosphere",
+        "Vegetarian tea",
+        "Mountain location"
+      ],
+      "tips": "Try the vegetarian food. Very peaceful. Wear comfortable shoes for the walk up. Bring cash for donations."
+    },
+    {
+      "id": "zhang-garden",
+      "name": "张家花园",
+      "nameEn": "Zhang's Garden",
+      "category": "cultural",
+      "description": "A restored Bai courtyard garden showcasing traditional Bai architecture, with tea tasting and cultural performances.",
+      "address": "Near Dali Old Town",
+      "coordinates": {
+        "lat": 25.7022,
+        "lng": 100.1572
+      },
+      "openingHours": "08:30-18:00",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Bai architecture",
+        "Garden scenery",
+        "Tea ceremony",
+        "Cultural shows"
+      ],
+      "tips": "Book tickets online for discounts. Combine tea tasting and performance. Good for learning about Bai culture."
+    },
+    {
+      "id": "lover-dam",
+      "name": "大理学院情人坝",
+      "nameEn": "Dali University Lover's Dam",
+      "category": "natural",
+      "description": "A scenic embankment near Dali University popular with students and couples, offering beautiful Erhai Lake views.",
+      "address": "Near Dali University",
+      "coordinates": {
+        "lat": 25.6822,
+        "lng": 100.1872
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Sunset views",
+        "Local atmosphere",
+        "Lake scenery",
+        "Student cafes"
+      ],
+      "tips": "Best at sunset. Nearby small restaurants and cafes. Popular with local students."
+    },
+    {
+      "id": "luwo-mountain",
+      "name": "鹿卧山",
+      "nameEn": "Luwo Mountain",
+      "category": "natural",
+      "description": "Hillside viewpoint between Dali Old Town and Erhai Lake, offering scenic views of both.",
+      "address": "Between Dali Old Town and Erhai",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1772
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Dual views",
+        "Photography",
+        "Popular spot",
+        "Sunset views"
+      ],
+      "tips": "Best at sunset for photos with both town and lake. Can be crowded on weekends."
+    },
+    {
+      "id": "wulongba",
+      "name": "乌龙坝草甸",
+      "nameEn": "Wulongba Grassland",
+      "category": "natural",
+      "description": "Highland grassland area with windmills, offering scenic views and photography opportunities.",
+      "address": "North of Dali",
+      "coordinates": {
+        "lat": 25.9022,
+        "lng": 100.0672
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Grassland views",
+        "Windmills",
+        "Photography",
+        "Off-the-beaten-path"
+      ],
+      "tips": "Less visited, great for escaping crowds. Bring food and water. Best in spring and summer."
     }
   ],
   "restaurants": [
@@ -224,7 +538,15 @@
         "Mountain vegetables",
         "Rice porridge"
       ],
-      "tags": ["local", "vegetarian", "buddhist", "budget"]
+      "tags": [
+        "local",
+        "vegetarian",
+        "buddhist",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "dali-2",
@@ -241,8 +563,20 @@
       },
       "hours": "07:00-19:00",
       "description": "Legendary local spot famous for cold chicken rice noodles - a Dali specialty with tangy sauce and fresh ingredients.",
-      "dishHighlights": ["Cold chicken rice noodles", "Pickled vegetables", "Bai style sauce"],
-      "tags": ["local", "bai-cuisine", "famous", "budget"]
+      "dishHighlights": [
+        "Cold chicken rice noodles",
+        "Pickled vegetables",
+        "Bai style sauce"
+      ],
+      "tags": [
+        "local",
+        "bai-cuisine",
+        "famous",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "dali-3",
@@ -265,7 +599,15 @@
         "Herbal teas",
         "Home-style cooking"
       ],
-      "tags": ["local", "vegetarian", "organic", "healthy"]
+      "tags": [
+        "local",
+        "vegetarian",
+        "organic",
+        "healthy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "dali-4",
@@ -283,8 +625,20 @@
       "phone": "+86 872 246 8888",
       "hours": "10:00-22:00",
       "description": "Lakeside restaurant with Erhai views, serving fresh fish from the lake and Yunnan specialties.",
-      "dishHighlights": ["Erhai lake fish", "Bai style pork", "Wild mushrooms", "Lake views"],
-      "tags": ["local", "scenic", "seafood", "yunnan'style"]
+      "dishHighlights": [
+        "Erhai lake fish",
+        "Bai style pork",
+        "Wild mushrooms",
+        "Lake views"
+      ],
+      "tags": [
+        "local",
+        "scenic",
+        "seafood",
+        "yunnan'style"
+      ],
+      "star": 0,
+      "diamond": 0
     },
     {
       "id": "dali-5",
@@ -301,8 +655,20 @@
       },
       "hours": "08:00-20:00",
       "description": "Famous for Yunnan ham and leg meat, a local specialty snack perfect for quick lunch or snack.",
-      "dishHighlights": ["Smoked ham leg", "Bai sausage", "Grilled meat skewers"],
-      "tags": ["local", "specialty", "snacks", "budget"]
+      "dishHighlights": [
+        "Smoked ham leg",
+        "Bai sausage",
+        "Grilled meat skewers"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "snacks",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "dali-6",
@@ -319,8 +685,21 @@
       },
       "hours": "08:00-23:00",
       "description": "Lively cafe in the old town serving Yunnan coffee, Western breakfasts, and fusion dishes popular with expats.",
-      "dishHighlights": ["Yunnan coffee", "Pancakes", "Muesli breakfast", "Fresh fruit shakes"],
-      "tags": ["local", "cafe", "western", "cozy"]
+      "dishHighlights": [
+        "Yunnan coffee",
+        "Pancakes",
+        "Muesli breakfast",
+        "Fresh fruit shakes"
+      ],
+      "tags": [
+        "local",
+        "cafe",
+        "western",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "dali-7",
@@ -337,8 +716,20 @@
       },
       "hours": "07:00-18:00",
       "description": "Famous street food - crispy Baba flatbread with sweet or savory fillings, a Bai specialty.",
-      "dishHighlights": ["Sweet Baba (玫瑰糖)", "Savory Baba (鲜肉)", "Egg Baba"],
-      "tags": ["local", "street-food", "bai", "must-try"]
+      "dishHighlights": [
+        "Sweet Baba (玫瑰糖)",
+        "Savory Baba (鲜肉)",
+        "Egg Baba"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "bai",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     },
     {
       "id": "dali-8",
@@ -361,7 +752,759 @@
         "Organic vegetables",
         "Lake view dining"
       ],
-      "tags": ["local", "scenic", "romantic", "yunnan'style"]
+      "tags": [
+        "local",
+        "scenic",
+        "romantic",
+        "yunnan'style"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-9",
+      "name": "白族菜馆",
+      "nameEn": "Bai Cuisine Restaurant",
+      "type": "local",
+      "cuisine": "Bai Specialty",
+      "avgPrice": 60,
+      "rating": 4.6,
+      "address": "Yeyou Road, Dali Old Town",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "10:00-22:00",
+      "description": "Authentic Bai cuisine restaurant serving traditional dishes like Bender (Bai cold chicken), Rushan cheese, and Sai ao (rice noodle rolls).",
+      "dishHighlights": [
+        "Bender (cold chicken)",
+        "Rushan cheese",
+        "Sai ao",
+        "Bai style pork"
+      ],
+      "tags": [
+        "local",
+        "bai-cuisine",
+        "traditional",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-10",
+      "name": "饵丝飘香",
+      "nameEn": "Ersi Delight",
+      "type": "local",
+      "cuisine": "Bai Specialty",
+      "avgPrice": 20,
+      "rating": 4.7,
+      "address": "Fuxing Road, Dali Old Town",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "07:00-19:00",
+      "description": "Famous local spot for Ersi (rice noodle strips) in savory soup, a Dali breakfast staple.",
+      "dishHighlights": [
+        "Beef ersi",
+        "Pork ersi",
+        "Pickled vegetables",
+        "Bai style broth"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "bai-cuisine",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-11",
+      "name": "酸菜鱼庄",
+      "nameEn": "Sour Cabbage Fish Restaurant",
+      "type": "local",
+      "cuisine": "Yunnan Specialty",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Erhai Lake area, near Caicun",
+      "coordinates": {
+        "lat": 25.7222,
+        "lng": 100.1672
+      },
+      "hours": "10:00-21:00",
+      "description": "Popular restaurant specializing in sour cabbage fish hotpot made with fresh Erhai Lake fish and homemade pickled cabbage.",
+      "dishHighlights": [
+        "Sour cabbage fish",
+        "Fish hotpot",
+        "Fresh lake fish",
+        "Spicy dipping sauce"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "hotpot",
+        "yunnan'style"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-12",
+      "name": "乳扇烧烤摊",
+      "nameEn": "Rushan BBQ Stall",
+      "type": "street",
+      "cuisine": "Bai Street Food",
+      "avgPrice": 15,
+      "rating": 4.6,
+      "address": "Foreigners Street, Dali Old Town",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "17:00-23:00",
+      "description": "Famous street food stall serving grilled Rushan (Bai milk cheese) skewers, a must-try Dali snack.",
+      "dishHighlights": [
+        "Grilled Rushan",
+        "Sweet version",
+        "Savory version",
+        "Rose syrup Rushan"
+      ],
+      "tags": [
+        "street-food",
+        "bai",
+        "snacks",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-13",
+      "name": "鲜花饼总店",
+      "nameEn": "Flower Cake Headquarters",
+      "type": "local",
+      "cuisine": "Yunnan Pastry",
+      "avgPrice": 30,
+      "rating": 4.8,
+      "address": "Fuxing Road, Dali Old Town",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "08:00-20:00",
+      "description": "Famous bakery specializing in flower cakes - delicate pastries filled with fresh rose and other edible flowers.",
+      "dishHighlights": [
+        "Rose flower cake",
+        "Lavender cake",
+        "Osmanthus cake",
+        "Gift boxes"
+      ],
+      "tags": [
+        "local",
+        "pastry",
+        "souvenir",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-14",
+      "name": "米凉虾小馆",
+      "nameEn": "Mi Liangxia Shop",
+      "type": "street",
+      "cuisine": "Bai Dessert",
+      "avgPrice": 10,
+      "rating": 4.5,
+      "address": "Dali Old Town alley",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "10:00-18:00",
+      "description": "Local dessert shop serving Mi Liangxia - shrimp-shaped rice jelly in sweet osmanthus syrup, a Dali specialty.",
+      "dishHighlights": [
+        "Mi Liangxia",
+        "Sweet osmanthus syrup",
+        "Red sugar version",
+        "Ice cold version"
+      ],
+      "tags": [
+        "street-food",
+        "dessert",
+        "bai",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-15",
+      "name": "野生菌火锅",
+      "nameEn": "Wild Mushroom Hotpot",
+      "type": "local",
+      "cuisine": "Yunnan Specialty",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "Dali City, near old town",
+      "coordinates": {
+        "lat": 25.6822,
+        "lng": 100.1572
+      },
+      "hours": "11:00-22:00",
+      "description": "Premium hotpot restaurant featuring fresh wild mushrooms from Yunnan mountains, served in nourishing broth.",
+      "dishHighlights": [
+        "Matsutake mushroom",
+        "Chicken thigh mushroom",
+        "Bolete mushroom",
+        "Wild herb dipping sauce"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "premium",
+        "yunnan'style"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-16",
+      "name": "洱海鱼村",
+      "nameEn": "Erhai Fish Village",
+      "type": "local",
+      "cuisine": "Yunnan/Seafood",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Caicun Village, Erhai Lake",
+      "coordinates": {
+        "lat": 25.7222,
+        "lng": 100.1672
+      },
+      "hours": "10:00-21:00",
+      "description": "Riverside restaurant in fishing village serving fresh Erhai Lake fish prepared in various styles.",
+      "dishHighlights": [
+        "Braised Erhai fish",
+        "Fish soup",
+        "Steamed fish",
+        "Lake shrimp"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "scenic",
+        "fresh"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-17",
+      "name": "白族三道茶茶馆",
+      "nameEn": "Bai Three Tea House",
+      "type": "local",
+      "cuisine": "Tea House",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "Xizhou Ancient Town",
+      "coordinates": {
+        "lat": 25.7622,
+        "lng": 100.1272
+      },
+      "hours": "09:00-18:00",
+      "description": "Traditional tea house offering authentic Bai Three Tea Ceremony - bitter tea, sweet tea, and aftertaste tea.",
+      "dishHighlights": [
+        "Bitter tea",
+        "Sweet tea",
+        "Aftertaste tea",
+        "Bai tea ceremony"
+      ],
+      "tags": [
+        "local",
+        "tea",
+        "cultural",
+        "bai-culture"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-18",
+      "name": "青梅酒铺",
+      "nameEn": "Plum Wine Shop",
+      "type": "local",
+      "cuisine": "Bai Bar",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Foreigners Street, Dali Old Town",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "14:00-24:00",
+      "description": "Cozy bar specializing in local plum wine and fruit wines made from Yunnan's fresh fruits.",
+      "dishHighlights": [
+        "Plum wine",
+        "Raspberry wine",
+        "Rose wine",
+        "Local craft beer"
+      ],
+      "tags": [
+        "local",
+        "bar",
+        "wine",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-19",
+      "name": "当地烧烤一条街",
+      "nameEn": "Local BBQ Street",
+      "type": "street",
+      "cuisine": "BBQ",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "Dali Old Town, south gate area",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "18:00-02:00",
+      "description": "Famous BBQ street with multiple stalls serving Yunnan-style grilled meat, mushrooms, and vegetables.",
+      "dishHighlights": [
+        "Grilled lamb skewers",
+        "Mushroom BBQ",
+        "Eggplant with garlic",
+        "Yunnan sausage"
+      ],
+      "tags": [
+        "street-food",
+        "bbq",
+        "nightlife",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-20",
+      "name": "巍山一根面",
+      "nameEn": "Weishan Single Noodle",
+      "type": "local",
+      "cuisine": "Yunnan Noodles",
+      "avgPrice": 25,
+      "rating": 4.8,
+      "address": "Weishan Ancient Town",
+      "coordinates": {
+        "lat": 25.2322,
+        "lng": 100.3072
+      },
+      "hours": "07:00-14:00",
+      "description": "Legendary noodle shop famous for One Strand Noodles - a single kilometer-long noodle served in one bowl.",
+      "dishHighlights": [
+        "One strand noodle",
+        "Hot and sour broth",
+        "Braised pork topping",
+        "Hand-pulled noodles"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "famous",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-21",
+      "name": "白族特色凉拌菜",
+      "nameEn": "Bai Cold Salad",
+      "type": "local",
+      "cuisine": "Bai Specialty",
+      "avgPrice": 35,
+      "rating": 4.5,
+      "address": "Xizhou Market",
+      "coordinates": {
+        "lat": 25.7622,
+        "lng": 100.1272
+      },
+      "hours": "08:00-18:00",
+      "description": "Local specialty shop at Xizhou market serving various Bai-style cold salads with fresh vegetables and herbs.",
+      "dishHighlights": [
+        "Cold radish salad",
+        "Bai style potato salad",
+        "Pickled cucumber",
+        "Herb salad"
+      ],
+      "tags": [
+        "local",
+        "vegetarian",
+        "market",
+        "healthy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-22",
+      "name": "烤全羊",
+      "nameEn": "Roast Whole Lamb",
+      "type": "local",
+      "cuisine": "Yunnan BBQ",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Dali Countryside, near Cangshan",
+      "coordinates": {
+        "lat": 25.6722,
+        "lng": 100.1172
+      },
+      "hours": "11:00-22:00",
+      "description": "Traditional whole lamb roasting experience in scenic countryside setting, perfect for groups.",
+      "dishHighlights": [
+        "Roast whole lamb",
+        "Mutton soup",
+        "Grilled lamb chops",
+        "Countryside scenery"
+      ],
+      "tags": [
+        "local",
+        "bbq",
+        "group",
+        "specialty"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-23",
+      "name": "银桥米线馆",
+      "nameEn": "Yinqiao Rice Noodle Shop",
+      "type": "local",
+      "cuisine": "Yunnan Rice Noodles",
+      "avgPrice": 20,
+      "rating": 4.5,
+      "address": "Yinqiao Town, Dali",
+      "coordinates": {
+        "lat": 25.7222,
+        "lng": 100.0872
+      },
+      "hours": "07:00-15:00",
+      "description": "Local spot famous for rice noodles in rich broth, popular with locals and in-the-know travelers.",
+      "dishHighlights": [
+        "Beef rice noodles",
+        "Pork rice noodles",
+        "Pickled vegetables",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "budget",
+        "breakfast"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-24",
+      "name": "双廊咖啡馆",
+      "nameEn": "Shuanglang Lakeside Cafe",
+      "type": "cafe",
+      "cuisine": "Western/Yunnan Fusion",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "Shuanglang Waterfront",
+      "coordinates": {
+        "lat": 25.8822,
+        "lng": 100.1572
+      },
+      "hours": "08:00-22:00",
+      "description": "Cozy lakeside cafe with Erhai views, serving Yunnan coffee, Western breakfasts, and homemade pastries.",
+      "dishHighlights": [
+        "Yunnan coffee",
+        "Pancakes with fruit",
+        "Fresh smoothies",
+        "Cheesecake"
+      ],
+      "tags": [
+        "cafe",
+        "scenic",
+        "western",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-25",
+      "name": "大理壹号院",
+      "nameEn": "Dali No.1 Courtyard",
+      "type": "local",
+      "cuisine": "Bai Fine Dining",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Dali Old Town, West Gate",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1472
+      },
+      "phone": "+86 872 267 8888",
+      "hours": "11:00-22:00",
+      "description": "Upscale Bai cuisine restaurant in a traditional courtyard, offering refined local specialties with elegant presentation.",
+      "dishHighlights": [
+        "Bai style fish",
+        "Mushroom hotpot",
+        "Bender cold chicken",
+        "Seasonal vegetables"
+      ],
+      "tags": [
+        "fine-dining",
+        "bai-cuisine",
+        "courtyard",
+        "special-occasion"
+      ],
+      "star": 0,
+      "diamond": 0
+    },
+    {
+      "id": "dali-26",
+      "name": "小邑庄白族菜",
+      "nameEn": "Xiaoyi Zhuang Bai Cuisine",
+      "type": "local",
+      "cuisine": "Bai Home Style",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Xiaoyi Village, near Dali Old Town",
+      "coordinates": {
+        "lat": 25.7022,
+        "lng": 100.1772
+      },
+      "hours": "10:00-21:00",
+      "description": "Local family-run restaurant serving authentic Bai home-style dishes in a traditional courtyard.",
+      "dishHighlights": [
+        "Braised pork",
+        "Steam egg",
+        "Pickled vegetables",
+        "Rice cakes"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "family-run",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-27",
+      "name": "巍山老街面馆",
+      "nameEn": "Weishan Old Street Noodles",
+      "type": "local",
+      "cuisine": "Yunnan Noodles",
+      "avgPrice": 25,
+      "rating": 4.8,
+      "address": "Weishan Ancient Town",
+      "coordinates": {
+        "lat": 25.2322,
+        "lng": 100.3072
+      },
+      "hours": "07:00-14:00",
+      "description": "Legendary single-noodle shop famous for one long strand noodle in rich broth, a must-try in Weishan.",
+      "dishHighlights": [
+        "Single strand noodle",
+        "Hot and sour broth",
+        "Braised pork topping",
+        "Hand-pulled noodles"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "noodles",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-28",
+      "name": "才村湖景餐厅",
+      "nameEn": "Caicun Lake View Restaurant",
+      "type": "local",
+      "cuisine": "Yunnan/Seafood",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Caicun Village, Erhai Lake",
+      "coordinates": {
+        "lat": 25.7222,
+        "lng": 100.1672
+      },
+      "hours": "10:00-21:00",
+      "description": "Lakeside restaurant with Erhai views, serving fresh fish from the lake and Yunnan specialties.",
+      "dishHighlights": [
+        "Erhai lake fish",
+        "Sour cabbage fish",
+        "Lake shrimp",
+        "Bai style pork"
+      ],
+      "tags": [
+        "local",
+        "scenic",
+        "seafood",
+        "lake-view"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-29",
+      "name": "桃溪牧场",
+      "nameEn": "Taoxi Pasture",
+      "type": "local",
+      "cuisine": "Yunnan BBQ/Grill",
+      "avgPrice": 100,
+      "rating": 4.7,
+      "address": "Dali Countryside,桃溪",
+      "coordinates": {
+        "lat": 25.6522,
+        "lng": 100.1072
+      },
+      "hours": "11:00-22:00",
+      "description": "Countryside restaurant specializing in grilled meats and fresh vegetables in scenic mountain setting.",
+      "dishHighlights": [
+        "Grilled lamb",
+        "Wild mushroom BBQ",
+        "Fresh vegetables",
+        "Mountain stream fish"
+      ],
+      "tags": [
+        "local",
+        "countryside",
+        "bbq",
+        "scenic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-30",
+      "name": "床山咖啡",
+      "nameEn": "Cangshan Coffee",
+      "type": "cafe",
+      "cuisine": "Specialty Coffee",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Dali Old Town, Renmin Road",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "08:00-20:00",
+      "description": "Specialty coffee shop serving Yunnan beans, pour-overs, and espresso drinks in cozy atmosphere.",
+      "dishHighlights": [
+        "Yunnan pour-over",
+        "Cappuccino",
+        "Affogato",
+        "Homemade cake"
+      ],
+      "tags": [
+        "cafe",
+        "coffee",
+        "specialty",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-31",
+      "name": "喜洲甜品店",
+      "nameEn": "Xizhou Sweet Shop",
+      "type": "local",
+      "cuisine": "Bai Desserts",
+      "avgPrice": 20,
+      "rating": 4.6,
+      "address": "Xizhou Ancient Town",
+      "coordinates": {
+        "lat": 25.7622,
+        "lng": 100.1272
+      },
+      "hours": "09:00-18:00",
+      "description": "Local sweet shop famous for rice-based desserts, sweet rice balls, and traditional Bai snacks.",
+      "dishHighlights": [
+        "Sweet rice balls",
+        "Rose glutinous rice",
+        "Bai Style donuts",
+        "Sweet soup"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "sweet",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dali-32",
+      "name": "下关沱茶馆",
+      "nameEn": "Xiaguan Tuo Tea House",
+      "type": "local",
+      "cuisine": "Tea House",
+      "avgPrice": 60,
+      "rating": 4.7,
+      "address": "Dali Old Town,复兴路",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "hours": "09:00-21:00",
+      "description": "Traditional tea house specializing in Yunnan Pu'er tea with tea tasting and purchase options.",
+      "dishHighlights": [
+        "Aged Pu'er",
+        "Raw Pu'er",
+        "Ripe Pu'er",
+        "Tea ceremony"
+      ],
+      "tags": [
+        "local",
+        "tea",
+        "cultural",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
     }
   ],
   "transport": {
@@ -419,7 +1562,10 @@
         "80-150 CNY per day",
         "Need to recharge for long trips"
       ],
-      "metro": ["No metro system in Dali old town", "Bus connections available"],
+      "metro": [
+        "No metro system in Dali old town",
+        "Bus connections available"
+      ],
       "bike": [
         "Bike rental shops in Dali old town",
         "Electric bikes recommended for Erhai cycling",
@@ -439,7 +1585,12 @@
         "lng": 100.1572
       },
       "rating": 4.6,
-      "highlights": ["Old town location", "Erhai views", "Bai architecture", "Rooftop cafe"],
+      "highlights": [
+        "Old town location",
+        "Erhai views",
+        "Bai architecture",
+        "Rooftop cafe"
+      ],
       "bookingTips": "Book well ahead in peak season. Request lake view room."
     },
     {
@@ -453,7 +1604,12 @@
         "lng": 100.1572
       },
       "rating": 4.8,
-      "highlights": ["Lake front location", "Sunset views", "Boutique design", "Private balconies"],
+      "highlights": [
+        "Lake front location",
+        "Sunset views",
+        "Boutique design",
+        "Private balconies"
+      ],
       "bookingTips": "The best lakeside area in Dali. Premium for Nantian views."
     },
     {
@@ -467,7 +1623,12 @@
         "lng": 100.1572
       },
       "rating": 4.5,
-      "highlights": ["Central location", "Traditional courtyard", "Quiet atmosphere", "Bai style"],
+      "highlights": [
+        "Central location",
+        "Traditional courtyard",
+        "Quiet atmosphere",
+        "Bai style"
+      ],
       "bookingTips": "Good value in old town. Book inner courtyard rooms for quiet."
     },
     {
@@ -481,7 +1642,12 @@
         "lng": 100.1672
       },
       "rating": 4.4,
-      "highlights": ["Lake access", "Bike rental", "Local family-run", "Peaceful"],
+      "highlights": [
+        "Lake access",
+        "Bike rental",
+        "Local family-run",
+        "Peaceful"
+      ],
       "bookingTips": "Great for cyclists. Families run many guesthouses here."
     },
     {
@@ -495,8 +1661,260 @@
         "lng": 100.1672
       },
       "rating": 4.5,
-      "highlights": ["Modern facilities", "Lake views", "Multiple restaurants", "Pool"],
+      "highlights": [
+        "Modern facilities",
+        "Lake views",
+        "Multiple restaurants",
+        "Pool"
+      ],
       "bookingTips": "Best for comfort seekers. Good location between old town and lake."
+    },
+    {
+      "name": "大理古城兰陵阁",
+      "nameEn": "Dali Old Town Lanlingge",
+      "budget": "mid",
+      "priceRange": "350-700 CNY/night",
+      "address": "Within Dali Old Town",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Traditional courtyard",
+        "Central location",
+        "Rooftop views",
+        "Bai architecture"
+      ],
+      "bookingTips": "Book inner rooms for quiet. Good value for location."
+    },
+    {
+      "name": "双廊湖思茶屋",
+      "nameEn": "Shuanglang Lake Thoughts",
+      "budget": "luxury",
+      "priceRange": "600-1500 CNY/night",
+      "address": "Shuanglang, Erhai Lake",
+      "coordinates": {
+        "lat": 25.8822,
+        "lng": 100.1572
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Lake front",
+        "Design hotel",
+        "Sunset views",
+        "Tea house"
+      ],
+      "bookingTips": "Premium lakeside location. Book well ahead in peak season."
+    },
+    {
+      "name": "才村民宿",
+      "nameEn": "Caicun Village Homestay",
+      "budget": "budget",
+      "priceRange": "150-400 CNY/night",
+      "address": "Caicun Village, Erhai",
+      "coordinates": {
+        "lat": 25.7222,
+        "lng": 100.1672
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Lake access",
+        "Family-run",
+        "Bike rental",
+        "Local experience"
+      ],
+      "bookingTips": "Great for cyclists. Locals are very friendly."
+    },
+    {
+      "name": "大理风花雪月酒店",
+      "nameEn": "Dali Wind Flower Snow Moon Hotel",
+      "budget": "mid",
+      "priceRange": "400-800 CNY/night",
+      "address": "Dali City, near old town",
+      "coordinates": {
+        "lat": 25.6822,
+        "lng": 100.1572
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Modern rooms",
+        "Good service",
+        "Value"
+      ],
+      "bookingTips": "Good balance of comfort and location."
+    },
+    {
+      "name": "喜洲杨家拼图",
+      "nameEn": "Xizhou Yang's Courtyard",
+      "budget": "mid",
+      "priceRange": "300-600 CNY/night",
+      "address": "Xizhou Ancient Town",
+      "coordinates": {
+        "lat": 25.7622,
+        "lng": 100.1272
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Historic Bai courtyard",
+        "Near Baba shops",
+        "Authentic decor",
+        "Quiet"
+      ],
+      "bookingTips": "Experience traditional Bai living. Book during market day."
+    },
+    {
+      "name": "大理背包客青年旅舍",
+      "nameEn": "Dali Backpacker Youth Hostel",
+      "budget": "budget",
+      "priceRange": "60-150 CNY/night",
+      "address": "Dali Old Town",
+      "coordinates": {
+        "lat": 25.6922,
+        "lng": 100.1572
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Social atmosphere",
+        "Budget-friendly",
+        "Central location",
+        "Bike rental"
+      ],
+      "bookingTips": "Great for solo travelers. Evening pub crawls organized."
+    },
+    {
+      "name": "双廊晴天见",
+      "nameEn": "Shuanglang Clear Sky",
+      "budget": "luxury",
+      "priceRange": "800-1800 CNY/night",
+      "address": "Shuanglang, eastern shore",
+      "coordinates": {
+        "lat": 25.8822,
+        "lng": 100.1572
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Beachfront location",
+        "Boutique design",
+        "Sunrise views",
+        "Private balcony"
+      ],
+      "bookingTips": "Best sunrise location in Shuanglang. Book months ahead."
+    },
+    {
+      "name": "挖色洱海客栈",
+      "nameEn": "Wase Erhai Inn",
+      "budget": "mid",
+      "priceRange": "250-500 CNY/night",
+      "address": "Wase Town, Erhai",
+      "coordinates": {
+        "lat": 25.9222,
+        "lng": 100.1872
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Quiet location",
+        "Lake views",
+        "Local family",
+        "Off-the-beaten-path"
+      ],
+      "bookingTips": "Good alternative to Shuanglang. Very peaceful."
+    },
+    {
+      "name": "大理苍山饭店",
+      "nameEn": "Dali Cangshan Hotel",
+      "budget": "mid",
+      "priceRange": "400-700 CNY/night",
+      "address": "Dali City",
+      "coordinates": {
+        "lat": 25.6822,
+        "lng": 100.1672
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near old town",
+        "Mountain views",
+        "Comfortable",
+        "Good breakfast"
+      ],
+      "bookingTips": "Good base for exploring. Request mountain view rooms."
+    },
+    {
+      "name": "三塔寺周边民宿",
+      "nameEn": "Three Pagodas Area Homestay",
+      "budget": "budget",
+      "priceRange": "120-300 CNY/night",
+      "address": "Near Three Pagodas",
+      "coordinates": {
+        "lat": 25.6722,
+        "lng": 100.1572
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Quiet area",
+        "Near temples",
+        "Family-run",
+        "Value"
+      ],
+      "bookingTips": "Good for temple visitors. Very peaceful mornings."
+    },
+    {
+      "name": "银桥花语客栈",
+      "nameEn": "Yinqiao Flower Language Inn",
+      "budget": "budget",
+      "priceRange": "150-350 CNY/night",
+      "address": "Yinqiao Town",
+      "coordinates": {
+        "lat": 25.7222,
+        "lng": 100.0872
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near flower fields",
+        "Countryside setting",
+        "Quiet",
+        "Bike friendly"
+      ],
+      "bookingTips": "Great for photographers. Perfect for flower season."
+    },
+    {
+      "name": "周城白族客栈",
+      "nameEn": "Zhoucheng Bai Homestay",
+      "budget": "budget",
+      "priceRange": "100-280 CNY/night",
+      "address": "Zhoucheng Village",
+      "coordinates": {
+        "lat": 25.8022,
+        "lng": 100.0872
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Authentic Bai village",
+        "Tie-dye workshops",
+        "Local family",
+        "Cultural immersion"
+      ],
+      "bookingTips": "Best for culture seekers. Morning market is walking distance."
+    },
+    {
+      "name": "巍山古城客栈",
+      "nameEn": "Weishan Ancient Town Inn",
+      "budget": "mid",
+      "priceRange": "200-450 CNY/night",
+      "address": "Weishan Ancient Town",
+      "coordinates": {
+        "lat": 25.2322,
+        "lng": 100.3072
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Historic town",
+        "Traditional courtyard",
+        "Authentic",
+        "Quiet"
+      ],
+      "bookingTips": "Perfect for escaping tourism. Nanzhao Kingdom atmosphere."
     }
   ],
   "payment": [
@@ -504,22 +1922,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Works in most Dali establishments",
-      "howToUse": ["Download before arrival", "Link international card"],
-      "tips": ["Common in tourist areas", "May not work in remote villages"]
+      "howToUse": [
+        "Download before arrival",
+        "Link international card"
+      ],
+      "tips": [
+        "Common in tourist areas",
+        "May not work in remote villages"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted in most places",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Useful in villages"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Useful in villages"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Essential for markets and remote areas",
-      "howToUse": ["ATM in Dali Old Town", "Banks in city"],
-      "tips": ["Bring 500+ CNY for Erhai cycling", "Some guesthouses prefer cash"]
+      "howToUse": [
+        "ATM in Dali Old Town",
+        "Banks in city"
+      ],
+      "tips": [
+        "Bring 500+ CNY for Erhai cycling",
+        "Some guesthouses prefer cash"
+      ]
     }
   ],
   "culturalTips": [
@@ -546,6 +1982,144 @@
       "title": "Temple Etiquette",
       "content": "When visiting Three Pagodas and temples, dress modestly covering shoulders and knees. Remove hats in temples. Don't point feet at Buddha images. Walk clockwise around pagodas.",
       "importance": "medium"
+    },
+    {
+      "category": "tiedye",
+      "title": "Bai Tie-dye Culture",
+      "content": "The Bai are famous for traditional tie-dye (扎染), using natural plant dyes on cotton fabric. Each pattern has symbolic meaning. Zhoucheng village is the center of this craft. Look for butterfly, fish, and flower patterns.",
+      "importance": "high"
+    },
+    {
+      "category": "tea",
+      "title": "Yunnan Tea Culture",
+      "content": "Yunnan is famous for Pu'er tea. Dali has tea houses where you can experience tea ceremony. The Bai Three Tea Ceremony (三道茶) represents life flavors: bitter, sweet, and aftertaste. Tea is an important part of local social life.",
+      "importance": "medium"
+    },
+    {
+      "category": "festivals",
+      "title": "Bai Festivals",
+      "content": "Major Bai festivals include: March Fair (三月街) - horse trading and trading fair in Dali; Rao San Ling (绕三灵) - pilgrimage to Three Sacred Places; Torch Festival (火把节) - lighting torches to ward off pests. Summer and early autumn are festival seasons.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Bai Architecture",
+      "content": "Bai houses feature white walls, grey tiles, and horse-head roofs. Three-in-one courtyards (三坊一照壁) are typical. Look for the精美的门楼 (ornate gate towers) and paintings on walls inside courtyards.",
+      "importance": "medium"
+    },
+    {
+      "category": "clothing",
+      "title": "Bai Traditional Clothing",
+      "content": "Bai women wear 'Three-Angel' costumes (三道茶) with white jackets, blue belts, and embroidered shoes. The famous 'Phoenix Crown' headdress symbolizes the phoenix. You can rent costumes for photos in tourist areas.",
+      "importance": "medium"
+    },
+    {
+      "category": "religion",
+      "title": "Bai Religion",
+      "content": "The Bai follow a mix of Buddhism, Taoism, and Benzhu (本主) worship - worship of local deities. Every village has a Benzhu temple. The Three Pagodas are important Buddhist sites. Be respectful when observing rituals.",
+      "importance": "low"
+    },
+    {
+      "category": "music",
+      "title": "Bai Music",
+      "content": "Bai opera (白剧) combines singing, dancing, and acting. Traditional instruments include the Sanxian (三弦) and Horse-head fiddle. You can catch performances at Dali Ancient Town or during festivals.",
+      "importance": "low"
+    },
+    {
+      "category": "food",
+      "title": "Bai Food Culture",
+      "content": "Bai cuisine features fresh vegetables, mushrooms, and fish. Rushan (乳扇) is stretched milk cheese. Bender (凉鸡) is cold chicken. Try local specialties at markets: Baba (粑粑) flatbread, Ersi (饵丝) rice noodles, and Mi Liangxia (米凉虾) shrimp-shaped jelly dessert.",
+      "importance": "high"
+    },
+    {
+      "category": "crafts",
+      "title": "Bai Silver Crafts",
+      "content": "Bai silver smithing is famous for intricate jewelry and decorative items. Silver is believed to have health benefits. Popular items include silver bracelets, hair ornaments, and tea accessories. Authentic silver has high purity.",
+      "importance": "low"
+    },
+    {
+      "category": "wedding",
+      "title": "Bai Wedding Customs",
+      "content": "Bai weddings feature unique customs including the 'Jiao Zhai' (咬嫁) ritual where the bride bites the groom's ear. Wedding feasts are elaborate multi-course affairs. The bride changes into multiple costumes during the ceremony.",
+      "importance": "low"
+    },
+    {
+      "category": "fishing",
+      "title": "Erhai Fishing Culture",
+      "content": "Fishing has been central to Erhai life for centuries. Traditional fishing methods include using cormorants (鸬鹚). Some fishing villages still practice these methods. Fish dishes are staples of local cuisine.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Bai Language",
+      "content": "The Bai language (白语) is tonal and completely different from Mandarin. Many locals speak both Bai and Mandarin. Learning a few Bai phrases like 'Ni hao' (hello) and ' Xie xie' (thank you) in Bai will be appreciated.",
+      "importance": "low"
+    },
+    {
+      "category": "photography",
+      "title": "Photography Tips",
+      "content": "Dali offers excellent photography opportunities: sunrise at Erhai Lake, the pink wall in Xizhou, Cangshan Mountain reflections, and Bai people in traditional clothing. The best light is early morning and late afternoon. Bring a tripod for night shots of the Three Pagodas.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Dali Shopping",
+      "content": "Dali is famous for tie-dye products, silver jewelry, tea (especially Pu'er), and marble. The best shopping is at the morning market in Xizhou and Zhoucheng for tie-dye, and the Foreigners Street in Dali Old Town for silver and souvenirs. Bargaining is expected in markets.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "Altitude and Health",
+      "content": "Dali sits at about 1972m elevation. Some visitors may experience mild altitude sickness. Stay hydrated, avoid strenuous activity on arrival, and eat lightly. The medical facilities in Dali are adequate for basic health issues.",
+      "importance": "medium"
+    },
+    {
+      "category": "language",
+      "title": "English in Dali",
+      "content": "English is limited in Dali outside tourist areas. Learning a few Mandarin phrases helps. Many young people in Dali Old Town and Shuanglang speak basic English. Translation apps are helpful for communicating with older locals.",
+      "importance": "medium"
+    },
+    {
+      "category": "sustainability",
+      "title": "Environmental Awareness",
+      "content": "Erhai Lake's ecosystem is fragile. Avoid single-use plastics, don't swim in restricted areas, and use eco-friendly transportation. Several initiatives promote lake protection. Be a responsible tourist.",
+      "importance": "high"
+    },
+    {
+      "category": "nanzhao",
+      "title": "Nanzhao Kingdom Heritage",
+      "content": "Dali was the capital of the Nanzhao Kingdom (738-902 AD), one of the longest-ruling dynasties in Chinese history. The Three Pagodas, Nanzhao Island, and Weishan Ancient Town reflect this heritage. Understanding this history enriches the visit.",
+      "importance": "medium"
+    },
+    {
+      "category": "coffee",
+      "title": "Yunnan Coffee Culture",
+      "content": "Yunnan produces some of China's best coffee. Dali has several specialty coffee shops using locally grown beans. Try the Yunnan pour-over at cafes on Foreigners Street. Coffee plantations are nearby and offer tours.",
+      "importance": "low"
+    },
+    {
+      "category": "gay-friendly",
+      "title": "LGBTQ+ Friendly Destination",
+      "content": "Dali has a reputation as one of China's more LGBTQ+ friendly destinations, with a relatively open atmosphere and welcoming vibe. Several bars and cafes cater to the community. The laid-back atmosphere is generally accepting.",
+      "importance": "medium"
+    },
+    {
+      "category": "digital-nomad",
+      "title": "Digital Nomad Hub",
+      "content": "Dali has become a popular base for digital nomads and remote workers. Many cafes offer fast WiFi and quiet workspaces. Monthly apartment rentals are affordable. Coworking spaces are available in Dali Old Town.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Dali Nightlife",
+      "content": "Dali has a vibrant nightlife scene around Foreigners Street with bars, live music, and clubs. Shuanglang has a more relaxed evening atmosphere with lake-view bars. Most nightlife closes by midnight on weekdays.",
+      "importance": "low"
+    },
+    {
+      "category": "weather",
+      "title": "Best Time to Visit",
+      "content": "The best times to visit Dali are March-May (spring flower season) and September-November (clear skies, autumn colors). Summer (June-August) is rainy but green. Winter is dry and sunny but cold. Avoid Chinese holidays when tourist sites are crowded.",
+      "importance": "high"
     }
   ],
   "emergencyContacts": [
@@ -582,6 +2156,88 @@
       "phone": "+86 871 6364 1057",
       "address": "Kunming (nearest US consular services)",
       "notes": "For US citizens in Dali region"
+    },
+    {
+      "type": "hospital",
+      "name": "大理州人民医院",
+      "nameEn": "Dali Prefecture People's Hospital",
+      "phone": "+86 872 212 5075",
+      "address": "Yeyou Road, Dali City",
+      "coordinates": {
+        "lat": 25.6822,
+        "lng": 100.1572
+      },
+      "notes": "Another major hospital with emergency services"
+    },
+    {
+      "type": "tourist-police",
+      "name": "大理旅游警察",
+      "nameEn": "Dali Tourist Police",
+      "phone": "+86 872 267 4110",
+      "notes": "Tourist police station in Dali Old Town"
+    },
+    {
+      "type": "fire",
+      "name": "大理消防",
+      "nameEn": "Dali Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻昆明总领事馆",
+      "nameEn": "UK Consulate Kunming",
+      "phone": "+86 871 6564 6689",
+      "address": "Kunming",
+      "notes": "For UK citizens in Dali region"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻昆明总领事馆",
+      "nameEn": "Australia Consulate Kunming",
+      "phone": "+86 871 6856 2100",
+      "address": "Kunming",
+      "notes": "For Australian citizens in Dali region"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻昆明总领事馆",
+      "nameEn": "Japan Consulate Kunming",
+      "phone": "+86 871 6314 8288",
+      "address": "Kunming",
+      "notes": "For Japanese citizens in Dali region"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻昆明总领事馆",
+      "nameEn": "France Consulate Kunming",
+      "phone": "+86 871 6331 5889",
+      "address": "Kunming",
+      "notes": "For French citizens in Dali region"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻昆明总领事馆",
+      "nameEn": "Germany Consulate Kunming",
+      "phone": "+86 871 6312 5555",
+      "address": "Kunming",
+      "notes": "For German citizens in Dali region"
+    },
+    {
+      "type": "embassy",
+      "name": "加拿大驻广州总领事馆",
+      "nameEn": "Canada Consulate Guangzhou",
+      "phone": "+86 20 3888 0400",
+      "address": "Guangzhou",
+      "notes": "For Canadian citizens in Dali region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻昆明总领事馆",
+      "nameEn": "South Korea Consulate Kunming",
+      "phone": "+86 871 6566 2115",
+      "address": "Kunming",
+      "notes": "For Korean citizens in Dali region"
     }
   ],
   "quickFacts": {
