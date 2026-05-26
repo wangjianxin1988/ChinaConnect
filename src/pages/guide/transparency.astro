@@ -1,0 +1,18 @@
+---
+import PriceTransparencyClient from "@/components/Guide/PriceTransparencyClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Price Transparency - ChinaConnect">
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a href="/" class="text-primary hover:underline mb-4 inline-block">← Back to Home</a>
+      <h1 class="text-4xl font-bold text-foreground">Price Transparency Guide</h1>
+      <p class="text-muted-foreground mt-2 text-lg">
+        价格透明指南 - Know the fair prices, avoid being overcharged
+      </p>
+    </div>
+
+    <PriceTransparencyClient client:load />
+  </main>
+</BaseLayout>

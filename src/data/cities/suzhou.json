@@ -1,0 +1,569 @@
+{
+  "slug": "suzhou",
+  "name": "苏州",
+  "nameEn": "Suzhou",
+  "country": "China",
+  "population": "10.7 million",
+  "coordinates": {
+    "lat": 31.2989,
+    "lng": 120.5853
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Suzhou is a paradise of elegant gardens, silk production, and classical Chinese culture. Known as 'Venice of the East' for its canals and water towns. Home to UNESCO World Heritage classical gardens, intricate silk embroidery, and 2,500 years of history. A cultural gem between Shanghai and Nanjing.",
+  "coverImage": "https://images.unsplash.com/photo-1537531383496-f4749bce9441?w=1200",
+  "highlights": [
+    "Humble Administrator's Garden - UNESCO",
+    "Lingering Garden - Ming dynasty masterpiece",
+    "Tiger Hill - Ancient pagoda and hill",
+    "Shantang Street - Classic canal street",
+    "Zhouzhuang - Water town Venice"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": ["April", "May", "September", "October", "November"],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "5C (41F)",
+    "tips": "Best in spring (April-May) for garden flowers or autumn (Sept-Nov) for pleasant weather. Summer is hot and humid. Winter is cold but gardens are beautiful in snow. Plum blossoms in winter."
+  },
+  "attractions": [
+    {
+      "id": "humble-administrator",
+      "name": "拙政园",
+      "nameEn": "Humble Administrator's Garden",
+      "category": "cultural",
+      "description": "The largest and most famous classical Chinese garden, a UNESCO World Heritage site representing garden art at its peak.",
+      "address": "178 Northeast Street, Gusu District",
+      "coordinates": {
+        "lat": 31.3222,
+        "lng": 120.6372
+      },
+      "openingHours": "07:30-17:30 (Summer), 08:00-17:00 (Winter)",
+      "ticketPrice": "70 CNY (peak), 50 CNY (off-peak)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": ["Peony garden", "Lotus pond", "Hall of Distingushed Fishing", "Autumn colors"],
+      "tips": "Arrive before 8am to avoid tour groups. Audio guide essential. Combine with nearby Suzhou Museum. Best in early morning or late afternoon."
+    },
+    {
+      "id": "lingering-garden",
+      "name": "留园",
+      "nameEn": "Lingering Garden",
+      "category": "cultural",
+      "description": "A masterpiece of Ming dynasty garden design, UNESCO World Heritage site known for its sophisticated architecture and layout.",
+      "address": "338 Lingering Garden Lane, Gusu District",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "openingHours": "07:30-17:30",
+      "ticketPrice": "45 CNY",
+      "recommendedVisitTime": "1.5-2 hours",
+      "highlights": ["Peak Hall", "Lion Grove", "Eight-patterned walkway", "Magnificent pavilion"],
+      "tips": "Smaller than Humble Administrator but considered more refined. Morning visits best for light. Excellent details in rock arrangements."
+    },
+    {
+      "id": "tiger-hill",
+      "name": "虎丘",
+      "nameEn": "Tiger Hill",
+      "category": "cultural",
+      "description": "An ancient hilltop with the famous Leaning Pagoda, historic temples, and legendary tombs dating back 2,500 years.",
+      "address": "88 Tiger Hill Road, Suzhou",
+      "coordinates": {
+        "lat": 31.3322,
+        "lng": 120.5872
+      },
+      "openingHours": "07:30-17:30",
+      "ticketPrice": "80 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Leaning Pagoda (Yunyan Pagoda)",
+        "Sword Pool",
+        "Crouching Tiger Temple",
+        "Thousand-man Rock"
+      ],
+      "tips": "Legend says buried treasures under the pagoda. Walk to the top for views. Spring for flowers. Can be combined with Shantang Street."
+    },
+    {
+      "id": "shantang-street",
+      "name": "山塘街",
+      "nameEn": "Shantang Street",
+      "category": "cultural",
+      "description": "A classic 1,200-year-old canal street with traditional shops, teahouses, and beautiful night views.",
+      "address": "Shantang Street, Gusu District",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6072
+      },
+      "openingHours": "Open 24 hours (shops 09:00-22:00)",
+      "ticketPrice": "Free (some attractions charge)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": ["Canal boat rides", "Night lighting", "Traditional snacks", "Ancient bridges"],
+      "tips": "Best at night when illuminated. Take a boat ride. Try local snacks. Less crowded than Pingjiang Road."
+    },
+    {
+      "id": "pingjiang-road",
+      "name": "平江路",
+      "nameEn": "Pingjiang Road",
+      "category": "cultural",
+      "description": "A preserved historic district with canal views, traditional residences, and charming shops along 1.6km of waterways.",
+      "address": "Pingjiang Road, Gusu District",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Canal-side walking",
+        "Traditional architecture",
+        "Handcraft shops",
+        "Local snacks"
+      ],
+      "tips": "Less commercialized than Shantang. Combine with nearby Humble Administrator's Garden. Morning for photography, evening for atmosphere."
+    },
+    {
+      "id": "suzhou-museum",
+      "name": "苏州博物馆",
+      "nameEn": "Suzhou Museum",
+      "category": "cultural",
+      "description": "A modern architectural masterpiece by I.M. Pei showcasing Suzhou's 2,500-year history and culture.",
+      "address": "204 Northeast Street, Gusu District",
+      "coordinates": {
+        "lat": 31.3222,
+        "lng": 120.6372
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1.5-2 hours",
+      "highlights": [
+        "IM Pei architecture",
+        "Ancient artifacts",
+        " calligraphy exhibition",
+        "Garden setting"
+      ],
+      "tips": "Free but need to book online. Book 2+ days ahead on official WeChat. Combine with Humble Administrator's Garden which is across the street."
+    },
+    {
+      "id": "zhouzhuang",
+      "name": "周庄",
+      "nameEn": "Zhouzhuang",
+      "category": "cultural",
+      "description": "A famous water town with 900 years of history, featuring ancient bridges, canal boat rides, and preserved Ming/Qing architecture.",
+      "address": "Zhouzhuang Town, 30km from Suzhou",
+      "coordinates": {
+        "lat": 31.1122,
+        "lng": 120.8472
+      },
+      "openingHours": "08:00-16:00 (夜游 available)",
+      "ticketPrice": "100 CNY (day), 80 CNY (night)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": ["Twin Bridges", "Former residence", "Canal boat ride", "Night views"],
+      "tips": "Visit early morning before tour buses. Stay for night lighting. Buy tickets at tourism center. Combine with Tongli water town."
+    },
+    {
+      "id": "tongli",
+      "name": "同里",
+      "nameEn": "Tongli",
+      "category": "cultural",
+      "description": "A peaceful water town with 15 canals, 49 ancient bridges, and 67 heritage gardens and residences.",
+      "address": "Tongli Town, 30km from Suzhou",
+      "coordinates": {
+        "lat": 31.1522,
+        "lng": 120.7172
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "100 CNY (includes attractions)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": ["Tuisi Garden", "Ancient bridges", "Ming residences", "Water views"],
+      "tips": "Less crowded than Zhouzhuang. Start at Tuisi Garden. Evening is peaceful. Can cycle between water towns."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "suzhou-1",
+      "name": "得月楼",
+      "nameEn": "Deyue Lou",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Suzhou",
+      "avgPrice": 200,
+      "rating": 4.6,
+      "address": "197 Guanqian Street, Gusu District",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "phone": "+86 512 6727 8588",
+      "hours": "11:00-13:30, 17:00-20:30",
+      "description": "Legendary restaurant established 1779 serving authentic Suzhou cuisine with classic dishes.",
+      "dishHighlights": [
+        "Song Shu (Squirrel-shaped mandarin fish)",
+        "Wusong duck",
+        "Suzhou-style pork"
+      ],
+      "tags": ["historic", "suzhou-cuisine", "fine-dining"]
+    },
+    {
+      "id": "suzhou-2",
+      "name": "松鹤楼",
+      "nameEn": "Songhelou",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Suzhou",
+      "avgPrice": 180,
+      "rating": 4.5,
+      "address": "88 Shantang Street, Gusu District",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6072
+      },
+      "phone": "+86 512 6728 0093",
+      "hours": "11:00-13:30, 17:00-20:30",
+      "description": "Historic restaurant established 1871, famous for traditional Suzhou cuisine and cooking demonstrations.",
+      "dishHighlights": ["Song Shu (Squirrel-shaped mandarin fish)", "Steamed shad", "Crab dishes"],
+      "tags": ["historic", "suzhou-cuisine", "scenic"]
+    },
+    {
+      "id": "suzhou-3",
+      "name": "协和菜馆",
+      "nameEn": "Xiehe Restaurant",
+      "type": "local",
+      "cuisine": "Suzhou Home-style",
+      "avgPrice": 80,
+      "rating": 4.7,
+      "address": "160 Xiao Xiang Lane, Pingjiang Road",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "phone": "+86 512 6728 0883",
+      "hours": "10:30-14:00, 16:30-20:00",
+      "description": "Local favorite for authentic Suzhou home cooking in traditional courtyard setting.",
+      "dishHighlights": ["Sweet and sour mandarin fish", "Braised pork belly", "Wonton soup"],
+      "tags": ["local", "home-style", "courtyard", "value"]
+    },
+    {
+      "id": "suzhou-4",
+      "name": "老苏州茶楼",
+      "nameEn": "Old Suzhou Teahouse",
+      "type": "local",
+      "cuisine": "Suzhou Snacks",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Pingjiang Road",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "hours": "08:00-22:00",
+      "description": "Traditional teahouse serving authentic Suzhou breakfast snacks and local tea in classic setting.",
+      "dishHighlights": ["Suzhou-style dim sum", "Wonton", "Ginger tea", "Green tea"],
+      "tags": ["local", "teahouse", "breakfast", "traditional"]
+    },
+    {
+      "id": "suzhou-5",
+      "name": "同得兴",
+      "nameEn": "Tong De Xing",
+      "type": "local",
+      "cuisine": "Suzhou Noodles",
+      "avgPrice": 40,
+      "rating": 4.8,
+      "address": "72 Shantang Street",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6072
+      },
+      "hours": "06:00-14:00",
+      "description": "Legendary noodle shop serving classic Suzhou-style noodles with fresh ingredients.",
+      "dishHighlights": ["Clear soup noodles", "Fried shrimp noodles", "Pork liver noodles"],
+      "tags": ["local", "noodles", "breakfast", "famous"]
+    },
+    {
+      "id": "suzhou-6",
+      "name": "绿杨馄饨",
+      "nameEn": "Lv Yang Wonton",
+      "type": "local",
+      "cuisine": "Suzhou Snacks",
+      "avgPrice": 30,
+      "rating": 4.6,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 31.3222,
+        "lng": 120.6372
+      },
+      "hours": "06:00-19:00",
+      "description": "Famous for delicate Suzhou-style wonton dumplings in light broth, a local institution.",
+      "dishHighlights": ["Wonton soup", "Fried wontons", "Pork buns"],
+      "tags": ["local", "snacks", "breakfast", "budget"]
+    },
+    {
+      "id": "suzhou-7",
+      "name": "平江路小吃",
+      "nameEn": "Pingjiang Road Snacks",
+      "type": "local",
+      "cuisine": "Street Food",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "Pingjiang Road",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "hours": "10:00-22:00",
+      "description": "Various street food vendors along historic Pingjiang Road serving local snacks and treats.",
+      "dishHighlights": ["Sugar-coated hawthorn", "Traditional pastries", "Fried rice cakes"],
+      "tags": ["local", "street-food", "snacks", "budget"]
+    },
+    {
+      "id": "suzhou-8",
+      "name": "悬慈巷蟹粉小笼",
+      "nameEn": "Xuanci Lane Crab Soup Dumplings",
+      "type": "local",
+      "cuisine": "Jiangnan Dim Sum",
+      "avgPrice": 60,
+      "rating": 4.7,
+      "address": "Near Shantang Street",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6072
+      },
+      "hours": "07:00-14:00",
+      "description": "Popular local spot famous for crab roe xiaolongbao and authentic Suzhou dim sum.",
+      "dishHighlights": ["Crab roe xiaolongbao", "Shrimp dumplings", "Suzhou-style cakes"],
+      "tags": ["local", "dim-sum", "famous", "breakfast"]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "train",
+        "from": "Shanghai Hongqiao (30min), Shanghai South (45min), Beijing (4.5h)",
+        "to": "Suzhou Railway Station / Suzhou North Station / Suzhou Park Station",
+        "duration": "25min-4.5h depending on origin",
+        "price": "50-600 CNY",
+        "frequency": "Multiple high-speed trains daily",
+        "tips": "High-speed from Shanghai is fastest. Suzhou Station is closest to old town. Suzhou North is for some high-speed trains."
+      },
+      {
+        "type": "bus",
+        "from": "Shanghai (1.5h), Hangzhou (2h)",
+        "to": "Suzhou Bus Station",
+        "duration": "1.5-2 hours",
+        "price": "50-80 CNY",
+        "frequency": "Frequent buses from major cities",
+        "tips": "Buses from Shanghai's Hongqiao and Puma are comfortable. Bus Station is near old town."
+      }
+    ],
+    "local": {
+      "metro": [
+        "5 lines operational",
+        "Single ride: 2-8 CNY",
+        "Line 1, 2 for tourist areas",
+        "Connects to railway stations"
+      ],
+      "bus": [
+        "Extensive city network",
+        "Single ride: 2 CNY",
+        "Tourist areas well served",
+        "Google Maps works for navigation"
+      ],
+      "taxi": [
+        "Starting fare: 14 CNY (first 3km)",
+        "Night surcharge: 20% extra",
+        "Within old town: 20-40 CNY",
+        "Didi recommended for English"
+      ],
+      "boat": [
+        "Shantang Street boat: 50-120 CNY",
+        "Canal tours available",
+        "Pingjiang Road boat rides",
+        "Good way to see water towns"
+      ],
+      "bike": [
+        "Shared bikes widely available",
+        "Mobike, Ofo, and Hello Bike apps work",
+        "Flat terrain ideal for cycling"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "苏州老城墙饭店",
+      "nameEn": "Suzhou Old City Wall Hotel",
+      "budget": "luxury",
+      "priceRange": "800-2000 CNY/night",
+      "address": "88 Pingjiang Road",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Canal location",
+        "Traditional architecture",
+        "Central location",
+        "Garden views"
+      ],
+      "bookingTips": "Book well ahead. Request canal view room."
+    },
+    {
+      "name": "苏州香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Suzhou",
+      "budget": "luxury",
+      "priceRange": "1200-2500 CNY/night",
+      "address": "168 Tao River Road",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6172
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Canal views",
+        "Central location",
+        "Multiple restaurants",
+        "Luxury facilities"
+      ],
+      "bookingTips": "Best location for first-time visitors. Check weekend rates."
+    },
+    {
+      "name": "苏州南园宾馆",
+      "nameEn": "Suzhou Nan Yuan Hotel",
+      "budget": "mid",
+      "priceRange": "500-1200 CNY/night",
+      "address": "343 Xiangmen Road",
+      "coordinates": {
+        "lat": 31.3222,
+        "lng": 120.6272
+      },
+      "rating": 4.5,
+      "highlights": ["Garden setting", "Near museum", "Traditional atmosphere", "Good value"],
+      "bookingTips": "Former residence of Chiang Kai-shek. Book garden view rooms."
+    },
+    {
+      "name": "平江府酒店",
+      "nameEn": "Pingjiang Fu Hotel",
+      "budget": "luxury",
+      "priceRange": "1000-2500 CNY/night",
+      "address": "77 Pingjiang Road",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Canal location",
+        "Boutique luxury",
+        "Traditional courtyard",
+        "Prime location"
+      ],
+      "bookingTips": "Renovated historical building. Best for romantic getaways."
+    },
+    {
+      "name": "观前街酒店",
+      "nameEn": "Guanqian Street Hotel",
+      "budget": "budget",
+      "priceRange": "200-500 CNY/night",
+      "address": "Guanqian Street area",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6272
+      },
+      "rating": 4.2,
+      "highlights": ["Shopping location", "Metro access", "Budget-friendly", "Central"],
+      "bookingTips": "Great for shoppers. Many chain hotels available."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Suzhou",
+      "howToUse": ["Download before arrival", "Link card or account"],
+      "tips": ["Works at all restaurants and shops", "English available"]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": ["WeChat required", "International cards work"],
+      "tips": ["Set to English", "Required for small vendors"]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at traditional markets",
+      "howToUse": ["ATM widely available", "Banks in city"],
+      "tips": ["Keep 200 CNY for markets", "Most restaurants accept cards"]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "gardens",
+      "title": "Garden Etiquette",
+      "content": "Suzhou's classical gardens are UNESCO sites. Walk quietly, don't touch plants. Morning visits offer best photos and fewer crowds. Each garden tells a philosophical story.",
+      "importance": "high"
+    },
+    {
+      "category": "silk",
+      "title": "Silk Culture",
+      "content": "Suzhou is famous for silk production. Visit silk factory to see weaving demonstrations. Real silk costs more - bargain at markets. Embroidery is another famous craft.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Suzhou Cuisine",
+      "content": "Suzhou food is lighter and sweeter than Shanghai. Must-try: Song Shu (squirrel-shaped mandarin fish), Wusong duck, and crab dishes in season. Eat breakfast at traditional teahouses.",
+      "importance": "high"
+    },
+    {
+      "category": "water-towns",
+      "title": "Water Town Visits",
+      "content": "Zhouzhuang and Tongli are the main water towns. Zhouzhuang is more famous but crowded. Tongli is quieter. Go early morning. Combine two in one day is rushed.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "苏州急救中心",
+      "nameEn": "Suzhou Emergency Center",
+      "phone": "120",
+      "notes": "Suzhou Hospital has English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "苏州市公安局",
+      "nameEn": "Suzhou Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "hospital",
+      "name": "苏州大学附属第一医院",
+      "nameEn": "First Affiliated Hospital of Soochow University",
+      "phone": "+86 512 6522 3637",
+      "address": "188 Shantang Street",
+      "coordinates": {
+        "lat": 31.3122,
+        "lng": 120.6072
+      },
+      "notes": "English-speaking staff available"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻上海总领事馆",
+      "nameEn": "US Consulate General Shanghai",
+      "phone": "+86 21 8011 2400",
+      "address": "Shanghai (nearest US consular services)",
+      "notes": "For US citizens in Suzhou region"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Suzhou dialect (soft)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

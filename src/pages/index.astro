@@ -1,0 +1,400 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { citiesMeta } from "@/data/cities/index";
+const pageTitle = "ChinaConnect - Your AI Guide to Exploring China";
+const pageDescription =
+  "Discover China with AI-powered city guides. Find the best restaurants (Michelin & Black Pearl), attractions, transport info, and emergency contacts in Beijing, Shanghai, Guangzhou, Xi'an, Chengdu, and Guilin.";
+const pageKeywords = [
+  "China travel guide",
+  "China AI assistant",
+  "China city guide",
+  "Michelin restaurants China",
+  "Black Pearl restaurants China",
+  "China travel tips",
+  "Beijing guide",
+  "Shanghai guide",
+  "Guangzhou guide",
+  "Xi'an guide",
+  "Chengdu guide",
+  "Guilin guide",
+  "China food guide",
+  "China restaurants",
+  "China attractions",
+  "China emergency contacts",
+  "explore China with AI",
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: pageKeywords,
+  }}
+>
+  <!-- Onboarding Modal (first-time users) -->
+  <div id="onboarding-root"></div>
+
+  <script is:inline>
+    // Check if first-time user and show onboarding
+    if (!localStorage.getItem('chinaconnect_onboarding_complete')) {
+      var root = document.getElementById('onboarding-root');
+      if (root) {
+        root.innerHTML = '<div id="onboarding-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;"><div style="background:white;border-radius:1.5rem;max-width:28rem;width:100%;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.25);animation:slideUp 0.3s ease"><style>@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}</style><div style="display:flex;justify-content:flex-end;padding:1rem 1rem 0;"><button id="onboarding-skip" style="padding:0.375rem 0.75rem;background:transparent;color:#6b7280;border:none;border-radius:0.375rem;font-size:0.875rem;cursor:pointer;">Skip</button></div><div style="padding:1.5rem 2rem 2rem;text-align:center;"><div id="onboarding-icon" style="width:5rem;height:5rem;margin:0 auto 1.5rem;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#8b5cf6);display:flex;align-items:center;justify-content:center;color:white;"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:2.5rem;height:2.5rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"/></svg></div><h2 id="onboarding-title" style="font-size:1.5rem;font-weight:700;color:#111827;margin:0 0 0.75rem;">Discover Great Food</h2><p id="onboarding-desc" style="font-size:1rem;color:#6b7280;line-height:1.6;margin:0;">Find Michelin-starred and Black Pearl restaurants in 12 Chinese cities.</p></div><div style="padding:1.5rem 2rem;border-top:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;"><div id="onboarding-dots" style="display:flex;gap:0.5rem;"><button id="dot0" style="width:1.5rem;height:0.5rem;border-radius:9999px;background:#3b82f6;border:none;padding:0;cursor:pointer;"></button><button id="dot1" style="width:0.5rem;height:0.5rem;border-radius:50%;background:#d1d5db;border:none;padding:0;cursor:pointer;"></button><button id="dot2" style="width:0.5rem;height:0.5rem;border-radius:50%;background:#d1d5db;border:none;padding:0;cursor:pointer;"></button></div><button id="onboarding-next" style="display:flex;align-items:center;gap:0.5rem;padding:0.625rem 1.25rem;background:#3b82f6;color:white;border:none;border-radius:0.5rem;font-size:0.875rem;font-weight:600;cursor:pointer;">Next <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button></div></div></div>';
+
+        var steps = [
+          { title: 'Discover Great Food', desc: 'Find Michelin-starred and Black Pearl restaurants in 12 Chinese cities.' },
+          { title: 'AI-Powered Tips', desc: 'Get personalized recommendations and insider knowledge from our AI assistant.' },
+          { title: 'Travel with Confidence', desc: 'Access emergency contacts, transport info, and cultural tips all in one place.' },
+        ];
+        var currentStep = 0;
+
+        window.goToStep = function(idx) {
+          currentStep = idx;
+          for (var i = 0; i < 3; i++) {
+            var dot = document.getElementById('dot' + i);
+            if (i === idx) {
+              dot.style.width = '1.5rem';
+              dot.style.borderRadius = '9999px';
+              dot.style.background = '#3b82f6';
+            } else {
+              dot.style.width = '0.5rem';
+              dot.style.borderRadius = '50%';
+              dot.style.background = '#d1d5db';
+            }
+          }
+          document.getElementById('onboarding-title').textContent = steps[idx].title;
+          document.getElementById('onboarding-desc').textContent = steps[idx].desc;
+          document.getElementById('onboarding-next').innerHTML = idx === 2
+            ? 'Get Started <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>'
+            : 'Next <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:1.25rem;height:1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>';
+        };
+
+        document.getElementById('onboarding-next').onclick = function() {
+          if (currentStep < 2) { currentStep++; window.goToStep(currentStep); }
+          else { completeOnboarding(); }
+        };
+        document.getElementById('onboarding-skip').onclick = completeOnboarding;
+        document.getElementById('dot1').onclick = function() { window.goToStep(1); };
+        document.getElementById('dot2').onclick = function() { window.goToStep(2); };
+
+        function completeOnboarding() {
+          localStorage.setItem('chinaconnect_onboarding_complete', 'true');
+          document.getElementById('onboarding-overlay').remove();
+        }
+      }
+    }
+  </script>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container-custom py-16 md:py-24 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Explore China with AI
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-100 mb-4">
+          Your trusted guide to China's best cities
+        </p>
+        <p class="text-lg text-blue-200 mb-10 max-w-2xl mx-auto">
+          Discover restaurants (Michelin & Black Pearl), attractions, transport tips, and emergency info - all powered by AI and curated by locals.
+        </p>
+
+        <!-- AI Chat CTA -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <a href="/ai" class="flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+            Ask AI for Trip Advice
+          </a>
+          <a href="#cities" class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
+            <span>Explore Cities</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">6</div>
+            <div class="text-sm text-blue-200">Cities Covered</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">30+</div>
+            <div class="text-sm text-blue-200">Michelin Restaurants</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">50+</div>
+            <div class="text-sm text-blue-200">Top Attractions</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+            <div class="text-3xl font-bold mb-1">24/7</div>
+            <div class="text-sm text-blue-200">AI Assistance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recently Viewed / Recommended Section -->
+  <section id="recents-section" class="py-8 border-b border-gray-100" style="display:none;">
+    <div class="container-custom">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-semibold text-gray-900">Recently Viewed</h2>
+        <button id="clear-recents" class="text-sm text-gray-500 hover:text-gray-700 transition-colors">Clear History</button>
+      </div>
+      <div id="recents-grid" class="flex gap-3 overflow-x-auto pb-2 -mx-2 px-2">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cities Grid -->
+  <section id="cities" class="py-16">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Explore Our Cities
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          From ancient capitals to modern metropolises, discover the best of China with our comprehensive city guides.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {citiesMeta.map((city, index) => (
+          <a
+            href={`/city/${city.slug}`}
+            class={`group relative overflow-hidden rounded-2xl card-hover ${
+              index === 0 ? 'md:col-span-2 lg:col-span-1 lg:row-span-2' : ''
+            }`}
+          >
+            <div class={`bg-gradient-to-br ${
+              index === 0 ? 'from-blue-500 to-purple-600' :
+              index === 1 ? 'from-purple-500 to-pink-600' :
+              index === 2 ? 'from-orange-500 to-red-600' :
+              index === 3 ? 'from-green-500 to-teal-600' :
+              index === 4 ? 'from-red-500 to-orange-600' :
+              'from-teal-500 to-blue-600'
+            } ${index === 0 ? 'h-80 lg:h-full min-h-[320px]' : 'h-56'} flex items-center justify-center`}>
+              <span class="text-white/30 text-9xl font-bold">{city.name[0]}</span>
+            </div>
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+              <div class="mb-2">
+                <span class="text-blue-300 text-sm font-medium">{city.nameZh}</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                {city.name}
+              </h3>
+              <p class="text-gray-300 text-sm mb-4 line-clamp-2">
+                {city.description}
+              </p>
+              <div class="flex items-center text-white text-sm font-medium">
+                <span>Explore Guide</span>
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-gray-50">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Everything You Need for Your China Trip
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Comprehensive guides for every aspect of your journey
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Restaurant Guide</h3>
+          <p class="text-gray-600 text-sm">Michelin stars, Black Pearl rankings, and local favorites with detailed reviews</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Attractions</h3>
+          <p class="text-gray-600 text-sm">Top-rated attractions with opening hours, tickets, and local tips</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Transport</h3>
+          <p class="text-gray-600 text-sm">How to get there and around - flights, trains, metro, and local tips</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Emergency</h3>
+          <p class="text-gray-600 text-sm">Hospital, police, embassy contacts and important phone numbers</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Payment Guide</h3>
+          <p class="text-gray-600 text-sm">Alipay, WeChat Pay, cash tips, and card acceptance info</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Accommodation</h3>
+          <p class="text-gray-600 text-sm">Hotel recommendations for every budget from luxury to budget</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m13-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Cultural Tips</h3>
+          <p class="text-gray-600 text-sm">Local customs, etiquette, and cultural insights for each city</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">AI Assistant</h3>
+          <p class="text-gray-600 text-sm">Ask questions in English, get instant answers about China travel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended for You -->
+  <section id="recommended-section" class="py-12">
+    <div class="container-custom">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Recommended for You</h2>
+        <p class="text-gray-600">Based on popular destinations</p>
+      </div>
+      <div id="recommended-grid" class="grid md:grid-cols-3 gap-6">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16">
+    <div class="container-custom">
+      <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Ready to Explore China?
+        </h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          Start planning your trip with AI-powered recommendations and insider tips from local experts.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/city/beijing" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all">
+            Explore Beijing
+          </a>
+          <a href="/ai" class="flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+            Chat with AI
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    // Recently Viewed functionality
+    (function() {
+      var STORAGE_KEY = 'chinaconnect_recent_views';
+      var recents = [];
+      try {
+        recents = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+      } catch(e) { recents = []; }
+
+      var section = document.getElementById('recents-section');
+      var grid = document.getElementById('recents-grid');
+      var clearBtn = document.getElementById('clear-recents');
+
+      if (section && grid && recents.length > 0) {
+        section.style.display = 'block';
+        var lang = document.documentElement.lang || 'en';
+        recents.slice(0, 6).forEach(function(item) {
+          var div = document.createElement('a');
+          div.href = item.type === 'city' ? '/city/' + item.id : '/food#' + item.id;
+          div.className = 'flex-shrink-0 flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-gray-50 transition-colors min-w-[5rem]';
+          var initial = lang === 'zh' ? item.name[0] : (item.nameEn ? item.nameEn[0] : item.name[0]);
+          var bgColors = ['from-blue-400 to-blue-600','from-purple-400 to-purple-600','from-pink-400 to-pink-600','from-green-400 to-green-600','from-orange-400 to-orange-600'];
+          var color = bgColors[item.id.charCodeAt(0) % bgColors.length];
+          div.innerHTML = '<div class="w-14 h-14 rounded-xl bg-gradient-to-br ' + color + ' flex items-center justify-center text-white font-bold text-xl">' + initial + '</div><span class="text-xs text-gray-600 text-center">' + (lang === 'zh' ? item.name : item.nameEn) + '</span>';
+          grid.appendChild(div);
+        });
+
+        clearBtn.onclick = function() {
+          localStorage.removeItem(STORAGE_KEY);
+          section.style.display = 'none';
+        };
+      }
+
+      // Recommended for You (popular cities)
+      var recGrid = document.getElementById('recommended-grid');
+      if (recGrid) {
+        var recommended = [
+          { slug: 'shanghai', name: 'Shanghai', nameZh: '上海', desc: 'Modern metropolis where East meets West', color: 'from-purple-500 to-pink-600' },
+          { slug: 'chengdu', name: 'Chengdu', nameZh: '成都', desc: 'Giant pandas and spicy Sichuan cuisine', color: 'from-red-500 to-orange-600' },
+          { slug: 'xian', name: "Xi'an", nameZh: '西安', desc: 'Terracotta Warriors and Silk Road heritage', color: 'from-amber-500 to-orange-600' },
+        ];
+        var lang2 = document.documentElement.lang || 'en';
+        recommended.forEach(function(city) {
+          var div = document.createElement('a');
+          div.href = '/city/' + city.slug;
+          div.className = 'group relative overflow-hidden rounded-2xl card-hover block';
+          div.innerHTML = '<div class="bg-gradient-to-br ' + city.color + ' h-48 flex items-center justify-center"><span class="text-white/30 text-8xl font-bold">' + (lang2 === 'zh' ? city.nameZh[0] : city.name[0]) + '</span></div><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-5"><h3 class="text-xl font-bold text-white mb-1 group-hover:text-blue-300 transition-colors">' + (lang2 === 'zh' ? city.nameZh : city.name) + '</h3><p class="text-gray-300 text-sm">' + city.desc + '</p></div>';
+          recGrid.appendChild(div);
+        });
+      }
+    })();
+  </script>
+</BaseLayout>

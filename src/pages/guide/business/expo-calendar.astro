@@ -1,0 +1,36 @@
+---
+import ExpoCalendarClient from "@/components/Guide/ExpoCalendarClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="China Expo Calendar - ChinaConnect"
+  description="Complete calendar of major trade fairs and exhibitions in China including Canton Fair, auto shows, and industry events. Plan your business trip around key events."
+  meta={{
+    keywords: ['China expo calendar', 'Canton Fair dates', '广交会', 'China trade shows 2026', '中国展会日历'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a href="/guide" class="text-primary hover:underline mb-4 inline-block flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Business Express / 商务快车道
+      </a>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-4xl">📅</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground">Expo & Event Calendar</h1>
+          <p class="text-muted-foreground text-lg">展会与活动日历</p>
+        </div>
+      </div>
+      <p class="text-muted-foreground max-w-2xl">
+        Plan your business visits around China&apos;s most important trade shows.
+        From the Canton Fair to industry-specific exhibitions across major cities.
+      </p>
+    </div>
+
+    <ExpoCalendarClient client:load />
+  </main>
+</BaseLayout>

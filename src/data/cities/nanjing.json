@@ -1,0 +1,479 @@
+{
+  "slug": "nanjing",
+  "name": "南京",
+  "nameEn": "Nanjing",
+  "country": "China",
+  "population": "8.5 million",
+  "coordinates": { "lat": 32.0603, "lng": 118.7969 },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Nanjing, ancient capital of six dynasties and capital of the Republic of China, is a city of profound historical significance. Home to the Sun Yat-sen Mausoleum, Ming Xiaoling Tomb (UNESCO), and theMemorial Hall of the Victims in Nanjing Massacre. A cultural crossroads between north and south China.",
+  "coverImage": "https://images.unsplash.com/photo-1598001725608-9c77cf5fd730?w=1200",
+  "highlights": [
+    "Sun Yat-sen Mausoleum - Purple Mountain",
+    "Ming Xiaoling Tomb - UNESCO World Heritage",
+    "Nanjing Massacre Memorial Hall",
+    "Presidential Palace - ROC history",
+    "Fuzi Temple - Ancient commerce district"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": ["March", "April", "May", "September", "October", "November"],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "4C (39F)",
+    "tips": "Best in spring for flowers or autumn for foliage. Summers hot and humid. Winters cold with occasional snow. Spring plum blossoms and fall gingko are spectacular."
+  },
+  "attractions": [
+    {
+      "id": "sun-yat-sen-mausoleum",
+      "name": "中山陵",
+      "nameEn": "Sun Yat-sen Mausoleum",
+      "category": "historical",
+      "description": "Magnificent mausoleum honoring Dr. Sun Yat-sen, founder of the Republic of China, on Purple Mountain with 392 steps.",
+      "address": "Zhongshan Mountain, Purple Mountain",
+      "coordinates": { "lat": 32.0622, "lng": 118.8572 },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "Free (park 70 CNY)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": ["392 steps climb", "Blue tile roof", "Panoramic views", "Bai Chong"],
+      "tips": "Arrive early to avoid crowds. Wear comfortable shoes. Combine with Ming Xiaoling Tomb nearby."
+    },
+    {
+      "id": "ming-xiaoling",
+      "name": "明孝陵",
+      "nameEn": "Ming Xiaoling Tomb",
+      "category": "historical",
+      "description": "UNESCO World Heritage site - the tomb of Emperor Hongwu, founder of the Ming Dynasty, with spectacular Avenue of Stone Animals.",
+      "address": "Ming Xiaoling, Purple Mountain",
+      "coordinates": { "lat": 32.0722, "lng": 118.8472 },
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "70 CNY (includes Ming Xiaoling and Music Square)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Avenue of Stone Animals",
+        "Ming palace ruins",
+        "Wenwu Temple",
+        "Autumn colors"
+      ],
+      "tips": "Walk the 600-year-old avenue at sunrise for magical light. Best in autumn for golden gingko. Combine with nearby Purple Mountain."
+    },
+    {
+      "id": "nanjing-massacre",
+      "name": "南京大屠杀纪念馆",
+      "nameEn": "Memorial Hall of the Victims in Nanjing Massacre",
+      "category": "historical",
+      "description": "A powerful memorial to the 300,000 victims of the 1937 Nanjing Massacre, with exhibits and pilgrimage hall.",
+      "address": "418 Shuige Road, Jianye District",
+      "coordinates": { "lat": 32.0422, "lng": 118.7472 },
+      "openingHours": "08:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": ["Memorial Hall", "Exhibition halls", "Peace plaza", "Historical documents"],
+      "tips": "Bring tissues. Audio guide available. Allow time for reflection. Combine with nearby Fuzi Temple."
+    },
+    {
+      "id": "presidential-palace",
+      "name": "总统府",
+      "nameEn": "Presidential Palace",
+      "category": "historical",
+      "description": "The presidential office of Sun Yat-sen and later Chiang Kai-shek, now a museum showcasing 600 years of history.",
+      "address": "292 Changjiang Road, Xuanwu District",
+      "coordinates": { "lat": 32.0322, "lng": 118.7972 },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "40 CNY",
+      "recommendedVisitTime": "2 hours",
+      "highlights": ["Zhonghua Gate", "Office buildings", "Garden", "Exhibitions"],
+      "tips": "Good audio guide. Large complex with much history. Morning visits recommended."
+    },
+    {
+      "id": "fuzi-temple",
+      "name": "夫子庙",
+      "nameEn": "Confucius Temple (Fuzi Temple)",
+      "category": "cultural",
+      "description": "Ancient temple complex with traditional architecture, markets, and boat rides on the Qinhuai River.",
+      "address": "Fuzi Temple, Qinhuai District",
+      "coordinates": { "lat": 32.0122, "lng": 118.7872 },
+      "openingHours": "09:00-21:00 (some areas open later)",
+      "ticketPrice": "Free (some attractions charge)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": ["Confucius Temple", "Qinhuai River boats", "Night lighting", "Street food"],
+      "tips": "Best at night when illuminated. Try local snacks from vendors. Take boat ride on river."
+    },
+    {
+      "id": "purple-mountain",
+      "name": "紫金山",
+      "nameEn": "Purple Mountain",
+      "category": "natural",
+      "description": "A 450-meter mountain south of the Ming Xiaoling with hiking trails, ancient temples, and panoramic city views.",
+      "address": "Purple Mountain, Xuanwu District",
+      "coordinates": { "lat": 32.0822, "lng": 118.8272 },
+      "openingHours": "Open 24 hours (attractions vary)",
+      "ticketPrice": "Free (individual attractions charge)",
+      "recommendedVisitTime": "Half to full day",
+      "highlights": ["Sun Yat-sen Mausoleum", "Ming Xiaoling", "Music台", "Peak views"],
+      "tips": "Plan full day to cover major sites. Take cable car up, walk down. Combine multiple attractions."
+    },
+    {
+      "id": "xuanwu-lake",
+      "name": "玄武湖",
+      "nameEn": "Xuanwu Lake",
+      "category": "natural",
+      "description": "A beautiful urban lake with parks, gardens, and the ancient Ming city wall views, perfect for cycling and walking.",
+      "address": "Xuanwu Lake, Xuanwu District",
+      "coordinates": { "lat": 32.0822, "lng": 118.7772 },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": ["Lake cycling", "Five islands", "City wall views", "Cherry blossoms"],
+      "tips": "Rent bikes around the lake. Combine with nearby Purple Mountain. Beautiful at sunset."
+    },
+    {
+      "id": "laochengli",
+      "name": "老门东",
+      "nameEn": "Laochengli",
+      "category": "cultural",
+      "description": "Restored historic district near Fuzi Temple with traditional architecture, crafts, and local snacks.",
+      "address": "Laochengli, Qinhuai District",
+      "coordinates": { "lat": 32.0122, "lng": 118.7972 },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional architecture",
+        "Handcraft shops",
+        "Nanjing snacks",
+        "Photography"
+      ],
+      "tips": "Best evening with lighting. Try duck blood soup and small sesame balls. Less crowded than Fuzi Temple area."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "nanjing-1",
+      "name": "南京大牌档",
+      "nameEn": "Nanjing Da Pai Dang",
+      "type": "local",
+      "cuisine": "Nanjing",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Multiple locations including Xuanwu and Fuzi Temple",
+      "coordinates": { "lat": 32.0222, "lng": 118.7972 },
+      "phone": "+86 25 5226 8888",
+      "hours": "11:00-22:00",
+      "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
+      "dishHighlights": ["Duck blood soup", "Salt Duck", "Steamed dumplings", "Qinhuai snacks"],
+      "tags": ["local", "nanjing-cuisine", "traditional", "chain"]
+    },
+    {
+      "id": "nanjing-2",
+      "name": "狮子桥",
+      "nameEn": "Shizi Qiao",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Jiangsu",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "73 Guangdong Road, Gulou District",
+      "coordinates": { "lat": 32.0422, "lng": 118.7772 },
+      "phone": "+86 25 8330 0888",
+      "hours": "10:30-21:30",
+      "description": "One-diamond Black Pearl restaurant known for refined Jiangsu cuisine and elegant dining.",
+      "dishHighlights": [
+        "Steamed mantou with crab roe",
+        "Braised pork belly",
+        "Sweet and sour mandarin fish"
+      ],
+      "tags": ["fine-dining", "jiangsu-cuisine", "elegant"]
+    },
+    {
+      "id": "nanjing-3",
+      "name": "尹氏鸡汁汤包",
+      "nameEn": "Yin Shi Chicken Soup Dumplings",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 40,
+      "rating": 4.9,
+      "address": "28 Zhuangyuan Kitchen (near Fuzi Temple)",
+      "coordinates": { "lat": 32.0122, "lng": 118.7872 },
+      "hours": "07:00-19:00",
+      "description": "Legendary tiny soup dumplings in rich chicken broth, a Nanjing institution since 1920s.",
+      "dishHighlights": ["Chicken soup dumplings", "Duck blood soup", "Fried rice noodles"],
+      "tags": ["local", "famous", "snacks", "must-try"]
+    },
+    {
+      "id": "nanjing-4",
+      "name": "回味鸭血粉丝汤",
+      "nameEn": "Huiwei Duck Blood Noodle Soup",
+      "type": "local",
+      "cuisine": "Nanjing",
+      "avgPrice": 35,
+      "rating": 4.7,
+      "address": "Multiple locations",
+      "coordinates": { "lat": 32.0222, "lng": 118.7972 },
+      "hours": "06:00-22:00",
+      "description": "Popular chain famous for duck blood noodle soup, a quintessential Nanjing breakfast.",
+      "dishHighlights": ["Duck blood soup", "Duck liver", "Tofu knots", "Fried dough sticks"],
+      "tags": ["local", "nanjing-cuisine", "breakfast", "value"]
+    },
+    {
+      "id": "nanjing-5",
+      "name": "咸亨酒店",
+      "nameEn": "Xian Heng Hotel",
+      "type": "local",
+      "cuisine": "Shaoxing/Nanjing",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Near Fuzi Temple",
+      "coordinates": { "lat": 32.0122, "lng": 118.7872 },
+      "hours": "10:00-22:00",
+      "description": "Historic restaurant inspired by Lu Xun's famous work, serving Shaoxing wine and traditional dishes.",
+      "dishHighlights": ["Drunken chicken", "Braised pork belly", "Stinky tofu"],
+      "tags": ["historic", "lu-xun", "traditional", "cultural"]
+    },
+    {
+      "id": "nanjing-6",
+      "name": "绿柳居",
+      "nameEn": "Lv Liu Ju",
+      "type": "local",
+      "cuisine": "Nanjing Vegetarian",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Near Fuzi Temple",
+      "coordinates": { "lat": 32.0122, "lng": 118.7872 },
+      "hours": "07:00-20:00",
+      "description": "Famous vegetarian restaurant established 1912, known for meat substitutes and Buddhist cuisine.",
+      "dishHighlights": ["Vegetarian duck", "Buddhist vegetables", "Rice rolls"],
+      "tags": ["local", "vegetarian", "historic", "buddhist"]
+    },
+    {
+      "id": "nanjing-7",
+      "name": "小笼包店",
+      "nameEn": "Nanjing Soup Dumplings",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 30,
+      "rating": 4.6,
+      "address": "Various locations",
+      "coordinates": { "lat": 32.0222, "lng": 118.7872 },
+      "hours": "06:00-14:00",
+      "description": "Local breakfast spots serving Nanjing-style soup dumplings and congee.",
+      "dishHighlights": ["Soup dumplings", "Congee", "Fried dough sticks"],
+      "tags": ["local", "breakfast", "budget", "snacks"]
+    },
+    {
+      "id": "nanjing-8",
+      "name": "秦淮人家",
+      "nameEn": "Qinhuai Renjia",
+      "type": "local",
+      "cuisine": "Nanjing",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Near Qinhuai River, Fuzi Temple",
+      "coordinates": { "lat": 32.0122, "lng": 118.7872 },
+      "phone": "+86 25 5220 8888",
+      "hours": "11:00-21:30",
+      "description": "Riverside restaurant serving quality Nanjing cuisine with evening boat ride option.",
+      "dishHighlights": ["Nanjing salt duck", "Steamed fish", "Qinhuai snacks", "River views"],
+      "tags": ["local", "scenic", "nanjing-cuisine", "romantic"]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Nanjing Lukou International Airport (NKG)",
+        "duration": "Varies (1.5h from Beijing, 2h from Guangzhou)",
+        "price": "600-2000 CNY",
+        "frequency": "Daily flights from major cities",
+        "tips": "Airport 40km from city center. Airport bus to city (5 CNY) or taxi (150 CNY). Metro LineS1 to downtown."
+      },
+      {
+        "type": "train",
+        "from": "Shanghai (1h), Beijing (3.5h), Hangzhou (2.5h)",
+        "to": "Nanjing Railway Station / Nanjing South Station",
+        "duration": "1-3.5 hours",
+        "price": "150-800 CNY",
+        "frequency": "Multiple high-speed trains daily",
+        "tips": "Nanjing South for high-speed from Shanghai/Hangzhou. Nanjing Station for Beijing/Shanghai slow trains. Both have metro."
+      }
+    ],
+    "local": {
+      "metro": [
+        "12 lines operational",
+        "Single ride: 2-8 CNY",
+        "Line 1, 2 for most tourist sites",
+        "Connects to both stations and airport"
+      ],
+      "bus": [
+        "Extensive network",
+        "Single ride: 2 CNY",
+        "Tourist areas well connected",
+        "Google Maps works for routes"
+      ],
+      "taxi": [
+        "Starting fare: 11 CNY (first 3km)",
+        "Night surcharge: 20% extra",
+        "Most attractions 20-50 CNY",
+        "Didi recommended for English"
+      ],
+      "bike": [
+        "Mobike, Meituan bikes abundant",
+        "Unlock: 1 CNY, then 0.5-1 CNY per 30 min",
+        "Great for Xuanwu Lake area",
+        "Lake path perfect for cycling"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "南京金陵饭店",
+      "nameEn": "Jinling Hotel Nanjing",
+      "budget": "luxury",
+      "priceRange": "1200-2500 CNY/night",
+      "address": "2 Hanzhong Road, Xuanwu",
+      "coordinates": { "lat": 32.0222, "lng": 118.7872 },
+      "rating": 4.6,
+      "highlights": ["Central location", "Historic luxury", "Xuanwu Lake views", "Multiple dining"],
+      "bookingTips": "Book well ahead. The original 5-star in Nanjing. Sunday brunch is famous."
+    },
+    {
+      "name": "南京香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Nanjing",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "329 Guangzhou Road, Gulou",
+      "coordinates": { "lat": 32.0422, "lng": 118.7772 },
+      "rating": 4.7,
+      "highlights": [
+        "Near Purple Mountain",
+        "Luxury facilities",
+        "Great service",
+        "Central location"
+      ],
+      "bookingTips": "Best for first-time visitors. Book river view rooms."
+    },
+    {
+      "name": "南京绿地洲际酒店",
+      "nameEn": "InterContinental Nanjing",
+      "budget": "luxury",
+      "priceRange": "1000-2200 CNY/night",
+      "address": "1 Yingtian Street, Jianye",
+      "coordinates": { "lat": 32.0422, "lng": 118.7572 },
+      "rating": 4.6,
+      "highlights": ["Modern luxury", "Qinhuai River views", "High-rise", "Excellent dining"],
+      "bookingTips": "Newer property with best views. Great for business travelers."
+    },
+    {
+      "name": "状元楼酒店",
+      "nameEn": "Zhuangyuan Lou Hotel",
+      "budget": "mid",
+      "priceRange": "500-1000 CNY/night",
+      "address": "Near Fuzi Temple",
+      "coordinates": { "lat": 32.0122, "lng": 118.7872 },
+      "rating": 4.4,
+      "highlights": ["Near Fuzi Temple", "Historic building", "Good location", "Value"],
+      "bookingTips": "Best for sightseeing. Book during off-peak season."
+    },
+    {
+      "name": "南京国际青年旅舍",
+      "nameEn": "Nanjing International Youth Hostel",
+      "budget": "budget",
+      "priceRange": "100-300 CNY/night",
+      "address": "Near Xuanwu Lake",
+      "coordinates": { "lat": 32.0222, "lng": 118.7672 },
+      "rating": 4.3,
+      "highlights": ["Lake location", "Budget-friendly", "Social atmosphere", "Bike rental"],
+      "bookingTips": "Great for backpackers. English speaking staff."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Nanjing",
+      "howToUse": ["Download before arrival", "Link card"],
+      "tips": ["Works at all merchants", "English available"]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": ["WeChat required", "International cards accepted"],
+      "tips": ["Set to English mode", "Needed for shared bikes"]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at traditional markets",
+      "howToUse": ["ATM everywhere", "Banks along main streets"],
+      "tips": ["Keep 200 CNY for markets", "Most restaurants accept cards"]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "history",
+      "title": "Memorial Culture",
+      "content": "Nanjing is deeply connected to Chinese modern history. Visit the Massacre Memorial Hall for reflection. The Sun Yat-sen Mausoleum represents founding of modern China. Presidential Palace shows ROC era.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Nanjing Cuisine",
+      "content": "Nanjing food is savory and slightly oily. Must-try: duck blood soup, salt duck, soup dumplings. The city's cuisine reflects its position as 'the home of Jinling cuisine'.",
+      "importance": "high"
+    },
+    {
+      "category": "timing",
+      "title": "Avoiding Crowds",
+      "content": "Nanjing's attractions can be very crowded. Visit Sun Yat-sen Mausoleum and Ming Xiaoling early morning. Fuzi Temple is best at night. Weekdays are quieter.",
+      "importance": "medium"
+    },
+    {
+      "category": "gingko",
+      "title": "Seasonal Highlights",
+      "content": "Nanjing's gingko trees are legendary. The turn color in mid-November along银杏大道. Cherry blossoms at Xuanwu Lake in spring. Plum blossoms in winter.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "南京急救中心",
+      "nameEn": "Nanjing Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "南京市公安局",
+      "nameEn": "Nanjing Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "hospital",
+      "name": "南京鼓楼医院",
+      "nameEn": "Nanjing Drum Tower Hospital",
+      "phone": "+86 25 8310 6666",
+      "address": "321 Zhongshan Road",
+      "coordinates": { "lat": 32.0222, "lng": 118.7872 },
+      "notes": "English-speaking staff available"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻上海总领事馆",
+      "nameEn": "US Consulate General Shanghai",
+      "phone": "+86 21 8011 2400",
+      "address": "Shanghai (nearest US consular services)",
+      "notes": "For US citizens in Nanjing region"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Nanjing dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

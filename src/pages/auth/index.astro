@@ -1,0 +1,12 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { AuthPage } from '@/components/auth/AuthPage';
+---
+
+<BaseLayout title="Login / Register - ChinaConnect">
+  <main class="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <AuthPage client:load />
+    </div>
+  </main>
+</BaseLayout>

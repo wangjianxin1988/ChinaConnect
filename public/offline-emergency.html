@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency - Offline | ChinaConnect</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: white;
+    }
+    .container {
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .phone-numbers {
+      background: rgba(255,255,255,0.2);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .phone-number {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      margin: 12px 0;
+      background: rgba(255,255,255,0.15);
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      transition: background 0.2s;
+    }
+    .phone-number:hover {
+      background: rgba(255,255,255,0.25);
+    }
+    .phone-number span:first-child {
+      font-size: 1.5rem;
+    }
+    .phone-number .number {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .phrases {
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: left;
+    }
+    .phrase {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .phrase:last-child { border-bottom: none; }
+    .phrase-en { font-weight: 600; }
+    .phrase-cn { color: #fca5a5; font-size: 1.1rem; }
+    .phrase-py { color: #fecaca; font-size: 0.85rem; font-style: italic; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Emergency Numbers</h1>
+    <p style="opacity: 0.9">Works offline - No internet needed</p>
+
+    <div class="phone-numbers">
+      <a href="tel:110" class="phone-number">
+        <span>🚔</span>
+        <div>
+          <div>Police / 警察</div>
+          <div class="number">110</div>
+        </div>
+      </a>
+      <a href="tel:120" class="phone-number">
+        <span>🚑</span>
+        <div>
+          <div>Ambulance / 救护车</div>
+          <div class="number">120</div>
+        </div>
+      </a>
+      <a href="tel:119" class="phone-number">
+        <span>🚒</span>
+        <div>
+          <div>Fire / 消防</div>
+          <div class="number">119</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="phrases">
+      <h2 style="margin-bottom: 12px;">Emergency Phrases</h2>
+      <div class="phrase">
+        <div class="phrase-en">Help!</div>
+        <div class="phrase-cn">救命!</div>
+        <div class="phrase-py">Jiùmìng!</div>
+      </div>
+      <div class="phrase">
+        <div class="phrase-en">I need an ambulance</div>
+        <div class="phrase-cn">我需要救护车</div>
+        <div class="phrase-py">Wǒ xūyào jiùhù chē</div>
+      </div>
+      <div class="phrase">
+        <div class="phrase-en">Call the police!</div>
+        <div class="phrase-cn">叫警察!</div>
+        <div class="phrase-py">Jiào jǐngchá!</div>
+      </div>
+      <div class="phrase">
+        <div class="phrase-en">I was robbed</div>
+        <div class="phrase-cn">我被抢劫了</div>
+        <div class="phrase-py">Wǒ bèi qiǎngjié le</div>
+      </div>
+      <div class="phrase">
+        <div class="phrase-en">Where is the hospital?</div>
+        <div class="phrase-cn">医院在哪里?</div>
+        <div class="phrase-py">Yīyuàn zài nǎlǐ?</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,820 @@
+{
+  "slug": "guangzhou",
+  "name": "广州",
+  "nameEn": "Guangzhou",
+  "country": "China",
+  "population": "18.67 million",
+  "coordinates": {
+    "lat": 23.1291,
+    "lng": 113.2644
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Guangzhou, the capital of Guangdong province, is a historic trading port and the birthplace of Cantonese culture. Known as 'Canton', it offers world-renowned dim sum, fascinating food markets, and the iconic Canton Tower. The city blends Southern Chinese traditions with modern architecture, and serves as the gateway to Hong Kong and Macau.",
+  "coverImage": "https://images.unsplash.com/photo-1549576492-b40f6a0b4e5c?w=1200",
+  "highlights": [
+    "Canton Tower - Iconic LED-lit tower",
+    "Chen Clan Ancestral Hall - Traditional Cantonese architecture",
+    "Beijing Rd Pedestrian Street - Historic shopping district",
+    "Shamian Island - Colonial architecture",
+    "Baiyun Mountain - City views and tea houses"
+  ],
+  "climate": {
+    "type": "Subtropical humid",
+    "bestMonths": [
+      "October",
+      "November",
+      "December",
+      "March",
+      "April"
+    ],
+    "avgSummerTemp": "30C (86F)",
+    "avgWinterTemp": "13C (55F)",
+    "tips": "Best visited in autumn and early spring. Summers are hot, humid, and rainy (May-September). Typhoon season is July-September. Light clothing most of the year. Mosquitoes common in summer."
+  },
+  "attractions": [
+    {
+      "id": "canton-tower",
+      "name": "广州塔",
+      "nameEn": "Canton Tower",
+      "category": "modern",
+      "description": "The iconic TV tower with a unique 'fish belly' design, offering panoramic city views and the world's highest Skywalk.",
+      "address": "222 Yuejiang West Rd, Haizhu District",
+      "coordinates": {
+        "lat": 23.1185,
+        "lng": 113.3185
+      },
+      "openingHours": "09:30-22:00",
+      "ticketPrice": "150 CNY (normal), 228 CNY (with all attractions)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "488m outdoor observation deck",
+        "Highest skywalk in the world",
+        "Rotating restaurant",
+        "Ferris wheel at top"
+      ],
+      "tips": "Book evening tickets for best views and light show. Sunset timing is magical. Lower decks less crowded."
+    },
+    {
+      "id": "chen-clan",
+      "name": "陈家祠",
+      "nameEn": "Chen Clan Ancestral Hall",
+      "category": "cultural",
+      "description": "A meticulously preserved traditional Cantonese building complex with intricate woodcarvings and stone sculptures.",
+      "address": "34 Enlong Rd, Liwan District",
+      "coordinates": {
+        "lat": 23.1314,
+        "lng": 113.2555
+      },
+      "openingHours": "09:00-17:30 (Closed Monday)",
+      "ticketPrice": "8 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Traditional door gods",
+        "Intricate carvings",
+        "Guangdong Folk Art Museum",
+        "Rooted vegetable carving"
+      ],
+      "tips": "Arrive early on weekdays. Excellent traditional crafts inside. Combined with Shamian Island walk."
+    },
+    {
+      "id": "shamian",
+      "name": "沙面",
+      "nameEn": "Shamian Island",
+      "category": "historical",
+      "description": "A former foreign concession with beautiful European architecture, tree-lined streets, and colonial-era buildings.",
+      "address": "Shamian Island, Liwan District",
+      "coordinates": {
+        "lat": 23.1235,
+        "lng": 113.2505
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Victorian architecture",
+        "Holy Trinity Church",
+        "British Consulate building",
+        "Shamian Museum"
+      ],
+      "tips": "Best in afternoon for photos. Combine with nearby Huangshatang food street. Great for wedding photos."
+    },
+    {
+      "id": "baiyun",
+      "name": "白云山",
+      "nameEn": "Baiyun Mountain",
+      "category": "natural",
+      "description": "A city park with peaks offering respite from the urban bustle and panoramic views of Guangzhou.",
+      "address": "Baiyun District",
+      "coordinates": {
+        "lat": 23.1865,
+        "lng": 113.2745
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "5 CNY (park), 10 CNY (peak area)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Moxing Peak",
+        "Mingzhu Peak",
+        "Tea plantations",
+        "Cable car ride"
+      ],
+      "tips": "Take the cable car up, walk down for different views. Bring water and snacks. Morning visits cooler."
+    },
+    {
+      "id": "pearl-river",
+      "name": "珠江夜游",
+      "nameEn": "Pearl River Night Cruise",
+      "category": "cultural",
+      "description": "A scenic cruise along the Pearl River showcasing Guangzhou's illuminated skyline and historic bridges.",
+      "address": "N/A - departs from multiple docks",
+      "coordinates": {
+        "lat": 23.1185,
+        "lng": 113.3245
+      },
+      "openingHours": "19:00-22:00 (cruises)",
+      "ticketPrice": "68-138 CNY depending on vessel",
+      "recommendedVisitTime": "1-1.5 hours",
+      "highlights": [
+        "Canton Tower illumination",
+        "Haixia Bridge lights",
+        "Erta ancient island",
+        "Night skyline views"
+      ],
+      "tips": "Book through hotel concierge. Outdoor decks colder in winter. Best in clear weather."
+    },
+    {
+      "id": "baihe-temple",
+      "name": "六榕寺",
+      "nameEn": "Liurong Temple (Six Banyan Temple)",
+      "category": "cultural",
+      "description": "A famous Buddhist temple dating from 537 AD with an iconic 9-story pagoda and ancient banyan tree.",
+      "address": "87 Huifu Rd West, Yuexiu District",
+      "coordinates": {
+        "lat": 23.1345,
+        "lng": 113.2585
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "15 CNY",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Six Banyan Tree",
+        "9-story Huaidian Pagoda",
+        "Mahavira Hall",
+        "Kong Huo Temple"
+      ],
+      "tips": "One of Guangzhou's oldest temples. The pagoda offers views over the city. Best in morning for fewer worshippers."
+    },
+    {
+      "id": "guangzhou-opera",
+      "name": "广州大剧院",
+      "nameEn": "Guangzhou Opera House",
+      "category": "modern",
+      "description": "Zaha Hadid's masterpiece of curved concrete and glass on the Pearl River, a world-class performing arts venue.",
+      "address": "1 Zhujiang Rd, Tianhe District",
+      "coordinates": {
+        "lat": 23.1175,
+        "lng": 113.3215
+      },
+      "openingHours": "09:00-21:00 (guided tours available)",
+      "ticketPrice": "Free (exterior), 30 CNY (interior tour)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Double pebble design",
+        "Pearl River views",
+        "World-class acoustics",
+        "Café with river views"
+      ],
+      "tips": "Best photographed from across the river at night. Book a show for the full experience. Combine with Canton Tower visit."
+    },
+    {
+      "id": "dongshan",
+      "name": "东山口",
+      "nameEn": "Dongshan Area",
+      "category": "cultural",
+      "description": "Historic Cantonese neighborhood with European-style villas, art galleries, trendy cafes, and tree-lined streets.",
+      "address": "Dongshan area, Yuexiu District",
+      "coordinates": {
+        "lat": 23.1265,
+        "lng": 113.2945
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "European villas",
+        "Art galleries",
+        "Trendy cafes",
+        "Oldmoney neighborhood"
+      ],
+      "tips": "Best explored on foot. Great for brunch and coffee. Combine with nearby Taojiang Rd for art galleries."
+    },
+    {
+      "id": "whale-island",
+      "name": "海珠湿地公园",
+      "nameEn": "Haizhu Wetland Park",
+      "category": "natural",
+      "description": "A beautiful wetland park in the heart of the city with water channels, lotus ponds, and bird-watching opportunities.",
+      "address": "Haizhu District",
+      "coordinates": {
+        "lat": 23.0635,
+        "lng": 113.3135
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "20 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Lotus flowers",
+        "Water channels",
+        "Bird watching",
+        "Ancient village"
+      ],
+      "tips": "Best in lotus season (June-August). Wear comfortable shoes for walking. Great escape from city bustle."
+    },
+    {
+      "id": "huangpu-ancient",
+      "name": "黄埔古港",
+      "nameEn": "Huangpu Ancient Harbor",
+      "category": "historical",
+      "description": "The historic departure point of China's maritime Silk Road, with traditional architecture and Cantonese food stalls.",
+      "address": "Huangpu District",
+      "coordinates": {
+        "lat": 23.0945,
+        "lng": 113.4245
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Haiyi Museum",
+        "Ancient navigation exhibits",
+        "Street food stalls",
+        "Wangtang seafood village"
+      ],
+      "tips": "Try the famous ginger milk pudding (姜撞奶) here. Combine with nearby Whampoa Military Academy."
+    },
+    {
+      "id": "yuexiu-park",
+      "name": "越秀公园",
+      "nameEn": "Yuexiu Park",
+      "category": "cultural",
+      "description": "Guangzhou's largest park featuring the ancient Zhenhai Tower, beautiful gardens, and the iconic Five Goat Statue.",
+      "address": "988 Jiefang North Rd, Yuexiu District",
+      "coordinates": {
+        "lat": 23.1455,
+        "lng": 113.2685
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Five Goat Statue (city emblem)",
+        "Zhenhai Tower (5-story pagoda)",
+        "Lake and gardens",
+        "Ancient city wall remnants"
+      ],
+      "tips": "Start here for history and city views. Take the cable car for panoramic views. Best in early morning."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "guangzhou-1",
+      "name": "御宝轩",
+      "nameEn": "Imperial Treasure",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 600,
+      "rating": 4.8,
+      "address": "IFC Mall, 5 Zhujiang West Rd, Tianhe District",
+      "coordinates": {
+        "lat": 23.1195,
+        "lng": 113.3245
+      },
+      "phone": "+86 20 8883 0128",
+      "hours": "11:00-15:00, 18:00-22:00",
+      "description": "Two Michelin star Cantonese fine dining with exceptional dim sum and sophisticated ambiance.",
+      "dishHighlights": [
+        "Braised goose web",
+        "Steamed grouper",
+        "Crispy chicken"
+      ],
+      "tags": [
+        "fine-dining",
+        "cantonese",
+        "business"
+      ]
+    },
+    {
+      "id": "guangzhou-2",
+      "name": "江- by Chef Fei",
+      "nameEn": "Jiang - by Chef Fei",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 800,
+      "rating": 4.9,
+      "address": "3rd Floor, Teemall, 1 Zhongshan Rd, Tianhe",
+      "coordinates": {
+        "lat": 23.1355,
+        "lng": 113.3445
+      },
+      "phone": "+86 20 3847 0888",
+      "hours": "11:30-14:30, 18:00-21:30",
+      "description": "Two Michelin star restaurant by celebrity Chef Fei with innovative take on classic Cantonese dishes.",
+      "dishHighlights": [
+        "Braised fish maw",
+        "Steamed razor clam",
+        "Squirrel fish"
+      ],
+      "tags": [
+        "fine-dining",
+        "chef-table",
+        "innovative"
+      ]
+    },
+    {
+      "id": "guangzhou-3",
+      "name": "利苑酒家",
+      "nameEn": "Lei Garden Restaurant",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 350,
+      "rating": 4.7,
+      "address": "Various locations including Tianhe and Zhujiang New Town",
+      "coordinates": {
+        "lat": 23.1205,
+        "lng": 113.3345
+      },
+      "description": "Two diamond Black Pearl with legendary dim sum and consistent quality over decades.",
+      "dishHighlights": [
+        "Baked pork ribs",
+        "Steamed scallop dumplings",
+        "Egg tarts"
+      ],
+      "tags": [
+        "cantonese",
+        "dim-sum",
+        "reliable"
+      ]
+    },
+    {
+      "id": "guangzhou-4",
+      "name": "陶陶居",
+      "nameEn": "Tao Tao Ju",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Various locations including Beijing Rd and Shangxiajiu",
+      "coordinates": {
+        "lat": 23.1255,
+        "lng": 113.2695
+      },
+      "description": "Legendary Cantonese restaurant established in 1880, famous for dim sum and traditional dishes.",
+      "dishHighlights": [
+        "Steamed shrimp dumplings",
+        "Phoenix claws",
+        "Cantonese congee"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "dim-sum"
+      ]
+    },
+    {
+      "id": "guangzhou-5",
+      "name": "点都德",
+      "nameEn": "Dim Sum Do",
+      "type": "local",
+      "cuisine": "Cantonese dim sum",
+      "avgPrice": 80,
+      "rating": 4.4,
+      "address": "Multiple locations citywide",
+      "coordinates": {
+        "lat": 23.1215,
+        "lng": 113.3245
+      },
+      "description": "Popular chain serving authentic dim sum in modern surroundings.",
+      "dishHighlights": [
+        "Prawn dumplings",
+        "Char siu bao",
+        "Cheung fun"
+      ],
+      "tags": [
+        "local",
+        "dim-sum",
+        "casual"
+      ]
+    },
+    {
+      "id": "guangzhou-6",
+      "name": "白天鹅宾馆",
+      "nameEn": "White Swan Hotel",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 400,
+      "rating": 4.8,
+      "address": "1 Shamian St, Liwan District",
+      "coordinates": {
+        "lat": 23.1205,
+        "lng": 113.2465
+      },
+      "phone": "+86 20 8188 6968",
+      "hours": "06:30-10:30, 11:30-14:30, 18:00-22:00",
+      "description": "Two diamond Black Pearl in historic hotel, serving Cantonese dim sum with Shamian Island views.",
+      "dishHighlights": [
+        "Shrimp dumplings",
+        "Crispy lobster",
+        "Sweet and sour pork"
+      ],
+      "tags": [
+        "black-pearl",
+        "cantonese",
+        "historic-hotel",
+        "dim-sum"
+      ]
+    },
+    {
+      "id": "guangzhou-7",
+      "name": "莲香楼",
+      "nameEn": "Lin Heung Lou",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 80,
+      "rating": 4.4,
+      "address": "268 Beijing Rd, Yuexiu District",
+      "coordinates": {
+        "lat": 23.1295,
+        "lng": 113.2645
+      },
+      "hours": "07:00-22:00",
+      "description": "Legendary Cantonese teahouse established in 1889, famous for mooncakes and dim sum.",
+      "dishHighlights": [
+        "Steamed spare ribs",
+        "Lotus seed paste mooncakes",
+        "Rice rolls"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "teahouse",
+        "dim-sum"
+      ]
+    },
+    {
+      "id": "guangzhou-8",
+      "name": "惠食佳",
+      "nameEn": "Hui Shi Jia",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Cantonese",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Various locations including Dongshan",
+      "coordinates": {
+        "lat": 23.1295,
+        "lng": 113.2945
+      },
+      "phone": "+86 20 8760 0888",
+      "hours": "11:00-14:00, 17:00-22:00",
+      "description": "One diamond Black Pearl famous for clay pot cooking and high-quality fresh dishes.",
+      "dishHighlights": [
+        "Clay pot fish",
+        "Steamed grouper",
+        "Cantonese hot pot"
+      ],
+      "tags": [
+        "black-pearl",
+        "cantonese",
+        "clay-pot",
+        "seafood"
+      ]
+    },
+    {
+      "id": "guangzhou-9",
+      "name": "虾饺妹",
+      "nameEn": "Xia Jiao Mei",
+      "type": "local",
+      "cuisine": "Cantonese dim sum",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Multiple locations in Tianhe District",
+      "coordinates": {
+        "lat": 23.1335,
+        "lng": 113.3345
+      },
+      "description": "Popular casual dim sum chain with fresh, quality ingredients at reasonable prices.",
+      "dishHighlights": [
+        "Crystal shrimp dumplings",
+        "Beef offal",
+        "Tofu skin roll"
+      ],
+      "tags": [
+        "local",
+        "dim-sum",
+        "casual",
+        "popular"
+      ]
+    },
+    {
+      "id": "guangzhou-10",
+      "name": "广州酒家",
+      "nameEn": "Guangzhou Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 90,
+      "rating": 4.4,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 23.1315,
+        "lng": 113.2745
+      },
+      "phone": "+86 20 8138 0188",
+      "hours": "07:00-22:00",
+      "description": "Popular Cantonese restaurant chain established in 1935, known for quality dim sum and banquet dishes.",
+      "dishHighlights": [
+        "Char siu (roast pork)",
+        "Steamed fish",
+        "Egg tarts"
+      ],
+      "tags": [
+        "local",
+        "cantonese",
+        "historic",
+        "dim-sum"
+      ]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major international airports",
+        "to": "Guangzhou Baiyun International Airport (CAN)",
+        "duration": "Varies (10-13 hours from Europe/Americas)",
+        "price": "1000-7000 CNY",
+        "frequency": "Multiple daily flights",
+        "tips": "Second busiest airport in China. Metro Line 3 connects to city center. High-speed rail station nearby."
+      },
+      {
+        "type": "train",
+        "from": "Shenzhen (35min), Hong Kong (1h), Beijing (8h)",
+        "to": "Guangzhou South Railway Station / Guangzhou Railway Station",
+        "duration": "35min-8h depending on origin",
+        "price": "150-900 CNY",
+        "frequency": "Frequent departures",
+        "tips": "High-speed rail very convenient. Guangzhou South is for high-speed, Guangzhou for conventional trains."
+      }
+    ],
+    "local": {
+      "metro": [
+        "18 lines covering city and suburbs",
+        "Single ride: 2-16 CNY depending on distance",
+        "English announcements at major stations",
+        "Line 3 very crowded during peak hours"
+      ],
+      "bus": [
+        "Extensive network but complex to navigate",
+        "Buses marked with numbers and pinyin",
+        "Guangzhou Bus app available"
+      ],
+      "taxi": [
+        "Starting fare: 10 CNY (first 2.5km)",
+        "Waiting: 0.4 CNY per minute",
+        "Didi app fully English-friendly in Guangzhou",
+        "Electric taxis becoming common"
+      ],
+      "bike": [
+        "Hellobike, Mobike available",
+        "Unlock: 1 CNY, then 0.15 CNY per 15 min",
+        "Bike lanes improving",
+        "Electric bikes require local registration"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "广州四季酒店",
+      "nameEn": "Four Seasons Hotel Guangzhou",
+      "budget": "luxury",
+      "priceRange": "2000-4000 CNY/night",
+      "address": "3F, IFZ Tower 2, 5 Zhujiang West Rd, Tianhe",
+      "coordinates": {
+        "lat": 23.1185,
+        "lng": 113.3265
+      },
+      "rating": 4.9,
+      "highlights": [
+        "99th floor infinity pool",
+        "Canton Tower views",
+        "Premium service"
+      ],
+      "bookingTips": "Request tower-view rooms. Very popular for special occasions."
+    },
+    {
+      "name": "广州香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Guangzhou",
+      "budget": "luxury",
+      "priceRange": "1800-3500 CNY/night",
+      "address": "1 Hua Cheng Da Dao, Tianhe District",
+      "coordinates": {
+        "lat": 23.1235,
+        "lng": 113.3145
+      },
+      "rating": 4.7,
+      "highlights": [
+        "River views",
+        "Large pool and spa",
+        "Central location"
+      ],
+      "bookingTips": "Riverside rooms worth the extra cost."
+    },
+    {
+      "name": "广州粤海喜来登酒店",
+      "nameEn": "Sheraton Guangzhou Hotel",
+      "budget": "mid",
+      "priceRange": "900-1500 CNY/night",
+      "address": "208 Tianhe Rd, Tianhe District",
+      "coordinates": {
+        "lat": 23.1345,
+        "lng": 113.3345
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location near Grandview Mall",
+        "Reliable brand",
+        "Good breakfast"
+      ],
+      "bookingTips": "Weekend rates often lower."
+    },
+    {
+      "name": "广州希尔顿逸林酒店",
+      "nameEn": "DoubleTree by Hilton Guangzhou",
+      "budget": "mid",
+      "priceRange": "700-1200 CNY/night",
+      "address": "1 Fortune Rd, Tianhe District",
+      "coordinates": {
+        "lat": 23.1405,
+        "lng": 113.3395
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near metro station",
+        "Consistent quality",
+        "Good value"
+      ],
+      "bookingTips": "Book directly for best rates."
+    },
+    {
+      "name": "广州白天鹅宾馆",
+      "nameEn": "White Swan Hotel",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "1 Shamian St, Liwan District",
+      "coordinates": {
+        "lat": 23.1205,
+        "lng": 113.2465
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Historic Shamian Island location",
+        "Best dim sum in Guangzhou",
+        "Cultural heritage"
+      ],
+      "bookingTips": "Request rooms with river views. Famous for breakfast dim sum."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Dominant payment in Guangzhou, accepted everywhere",
+      "howToUse": [
+        "Download before arrival",
+        "Bind international card",
+        "QR code payment"
+      ],
+      "tips": [
+        "Guangzhou is modern - foreign cards work at many places",
+        "Still download Alipay as backup",
+        "Local vendors mostly use Alipay"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Essential for local transactions",
+      "howToUse": [
+        "WeChat app required",
+        "Link card in app settings",
+        "QR scan payment"
+      ],
+      "tips": [
+        "Didi taxi requires WeChat",
+        "Even locals prefer Alipay for larger payments"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Still useful for traditional markets and small vendors",
+      "howToUse": [
+        "ATMs widely available",
+        "Keep 100-200 CNY small bills"
+      ],
+      "tips": [
+        "Most modern places accept cards",
+        "Food markets still prefer cash"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "food",
+      "title": "Cantonese Food Culture",
+      "content": "Guangzhou is the birthplace of dim sum. Try morning tea (yum cha) culture - it's a social ritual. Fresh and light flavors are prized.",
+      "importance": "high"
+    },
+    {
+      "category": "language",
+      "title": "Cantonese vs Mandarin",
+      "content": "Guangzhou locals speak Cantonese (广东话) natively, though Mandarin is also understood. English more commonly spoken here than in northern cities.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Humid Weather Adaptation",
+      "content": "Guangzhou is very humid year-round. Stay hydrated, use sun protection, and acclimatize to the warmth.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Cantonese Breakfast",
+      "content": "Guangzhou locals enjoy '早茶' (morning tea) as a social ritual. Arrive at dim sum restaurants around 9-10am. It's normal to spend 2+ hours finishing multiple courses of dumplings, buns, and rice rolls.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "广州急救中心",
+      "nameEn": "Guangzhou Emergency Center",
+      "phone": "120",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "police",
+      "name": "广州市公安局",
+      "nameEn": "Guangzhou Public Security Bureau",
+      "phone": "110",
+      "address": "Various locations"
+    },
+    {
+      "type": "hospital",
+      "name": "广州和睦家医院",
+      "nameEn": "Guangzhou United Family Hospital",
+      "phone": "+86 20 8710 6088",
+      "address": "3 Yanqiao Rd, Tianhe District",
+      "coordinates": {
+        "lat": 23.1285,
+        "lng": 113.3285
+      },
+      "notes": "English-speaking, accepts international insurance"
+    },
+    {
+      "type": "hospital",
+      "name": "中山大学附属第一医院",
+      "nameEn": "First Affiliated Hospital of Sun Yat-sen University",
+      "phone": "+86 20 8776 6623",
+      "address": "58 Zhongshan Rd II, Yuexiu District",
+      "coordinates": {
+        "lat": 23.1285,
+        "lng": 113.2645
+      },
+      "notes": "Top public hospital, excellent ER"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻广州总领事馆",
+      "nameEn": "US Consulate General Guangzhou",
+      "phone": "+86 20 3814 5575",
+      "address": "26th Floor, Maybin Tower, 99 Linhe Rd, Tianhe",
+      "coordinates": {
+        "lat": 23.1355,
+        "lng": 113.3445
+      },
+      "notes": "Emergency: +86 20 3814 5575"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese + Cantonese",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa. 144h transit visa available.",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water boiled or use bottled water"
+  }
+}

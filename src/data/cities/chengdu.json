@@ -1,0 +1,811 @@
+{
+  "slug": "chengdu",
+  "name": "成都",
+  "nameEn": "Chengdu",
+  "country": "China",
+  "population": "21.24 million",
+  "coordinates": {
+    "lat": 30.6587,
+    "lng": 104.0658
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Chengdu, the capital of Sichuan province, is known as the 'City of Revelry' for its laid-back lifestyle, spicy cuisine, and the giant pandas. Home to ancient Shu culture, it offers relaxing tea houses, spicy hot pot, the historic Jinli Street, and proximity to the scenic Jiuzhaigou and Leshan Giant Buddha.",
+  "coverImage": "https://images.unsplash.com/photo-1584634731339-252e581abfc5?w=1200",
+  "highlights": [
+    "Giant Panda Base - Home to adorable pandas",
+    "Jinli Street - Ancient Shu culture and snacks",
+    "People's Park - Tea houses and pandas",
+    "Mount Emei - Buddhist mountain retreat",
+    "Sichuan Opera - Traditional face-changing show"
+  ],
+  "climate": {
+    "type": "Subtropical humid",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "26C (79F)",
+    "avgWinterTemp": "6C (43F)",
+    "tips": "Best visited in spring and autumn. Summers hot and humid but indoor AC everywhere. Winters mild but foggy. Rain common year-round. Bring umbrella."
+  },
+  "attractions": [
+    {
+      "id": "panda-base",
+      "name": "成都大熊猫繁育研究基地",
+      "nameEn": "Chengdu Research Base of Giant Panda Breeding",
+      "category": "cultural",
+      "description": "The world's largest giant panda breeding center with over 80 pandas in natural habitat settings.",
+      "address": "26 Panda Road, Chenghua District",
+      "coordinates": {
+        "lat": 30.7385,
+        "lng": 104.1445
+      },
+      "openingHours": "07:30-18:00 (Summer), 08:00-17:30 (Winter)",
+      "ticketPrice": "55 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Baby panda nursery",
+        "Red panda area",
+        "Panda theater",
+        "Release training center"
+      ],
+      "tips": "Arrive at opening to catch pandas most active in morning. Visit in summer for cubs. Allow 3+ hours for full visit. Shuttle bus from Tianfu Square."
+    },
+    {
+      "id": "jinli-street",
+      "name": "锦里古街",
+      "nameEn": "Jinli Ancient Street",
+      "category": "cultural",
+      "description": "A reconstructed ancient street showcasing Shu culture with traditional architecture, street food, tea houses, and shops.",
+      "address": "Near Wuhou Temple, Wuhou District",
+      "coordinates": {
+        "lat": 30.6515,
+        "lng": 104.0555
+      },
+      "openingHours": "Open 24 hours (shops 09:00-23:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Traditional snacks",
+        "Sichuan opera masks",
+        "Traditional crafts",
+        "Red lanterns at night"
+      ],
+      "tips": "Best in evening when lit. Try stinky tofu and sugar paintings. Combine with Wuhou Temple nearby."
+    },
+    {
+      "id": "wuhou-temple",
+      "name": "武侯祠",
+      "nameEn": "Wuhou Temple",
+      "category": "historical",
+      "description": "China's most famous memorial temple dedicated to Liu Bei and Zhuge Liang of the Three Kingdoms period.",
+      "address": "231 Wuhou Temple St, Wuhou District",
+      "coordinates": {
+        "lat": 30.6525,
+        "lng": 104.0565
+      },
+      "openingHours": "08:00-20:00 (Mar-Oct), 08:00-18:30 (Nov-Feb)",
+      "ticketPrice": "60 CNY",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Sanhui Hall",
+        "Six-Chariot Pavilion",
+        "Romance of Three Kingdoms theme"
+      ],
+      "tips": "Combined ticket with Jinli Street available. Morning visits cooler. Combine with Jinli Street."
+    },
+    {
+      "id": "dujiangyan",
+      "name": "都江堰",
+      "nameEn": "Dujiangyan Irrigation System",
+      "category": "cultural",
+      "description": "UNESCO World Heritage site - the world's oldest functional irrigation system still in use today, built in 256 BC.",
+      "address": "Dujiangyan City, 50km from Chengdu",
+      "coordinates": {
+        "lat": 30.9965,
+        "lng": 103.6105
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "80 CNY",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Fish Mouth Levee",
+        "Baopeng Tower",
+        "Anlan Bridge",
+        "Mountain views"
+      ],
+      "tips": "Combine with nearby Qingcheng Mountain day trip. Take early bus from Chengdu for full day."
+    },
+    {
+      "id": "sichuan-opera",
+      "name": "川剧变脸秀",
+      "nameEn": "Sichuan Opera",
+      "category": "cultural",
+      "description": "Traditional Sichuan opera featuring the famous face-changing (bianlian) technique where actors change masks in seconds.",
+      "address": "Various venues including Shufeng Yayun",
+      "coordinates": {
+        "lat": 30.6585,
+        "lng": 104.0425
+      },
+      "openingHours": "Shows at 20:00 daily",
+      "ticketPrice": "200-400 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Face changing",
+        "Fire breathing",
+        "Teapot juggling",
+        "Earring pulling"
+      ],
+      "tips": "Book through hotel concierge. Tea included in price. Photography restricted during show. Best experience of traditional art."
+    },
+    {
+      "id": "qingchengshan",
+      "name": "青城山",
+      "nameEn": "Qingchengshan (Mount Qingcheng)",
+      "category": "cultural",
+      "description": "A Taoist mountain with ancient temples, forest trails, and the birthplace of China's Taoist culture. UNESCO World Heritage.",
+      "address": "Qingchengshan Town, Dujiangyan, 70km from Chengdu",
+      "coordinates": {
+        "lat": 30.8975,
+        "lng": 103.5335
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "60 CNY (front mountain), 20 CNY (back mountain)",
+      "recommendedVisitTime": "4-6 hours",
+      "highlights": [
+        "Tian师祖洞",
+        "Shangqing Temple",
+        "Natural oxygen forest",
+        "Taoist tea houses"
+      ],
+      "tips": "Combine with Dujiangyan. Take high-speed train from Chengdu. Wear hiking shoes. Take cable car up, walk down."
+    },
+    {
+      "id": "peoples-park",
+      "name": "人民公园",
+      "nameEn": "People's Park",
+      "category": "cultural",
+      "description": "The heart of Chengdu's tea house culture with traditional teahouses, matchmaking corner, and tai chi areas.",
+      "address": "12 Remin Rd, Qingyang District",
+      "coordinates": {
+        "lat": 30.6575,
+        "lng": 104.0665
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Classic tea houses",
+        "Matchmaking corner (相亲角)",
+        "Golf putting green",
+        "People's Massacre Memorial"
+      ],
+      "tips": "Try a traditional tea ceremony. The park comes alive on weekends. Best to experience authentic Chengdu lifestyle."
+    },
+    {
+      "id": "jinsha",
+      "name": "金沙遗址博物馆",
+      "nameEn": "Jinsha Site Museum",
+      "category": "historical",
+      "description": "A major archaeological site dating to the Shu Kingdom (1250-650 BC) with a modern museum showcasing gold relics.",
+      "address": "227 Qingyayi Rd, Qingyang District",
+      "coordinates": {
+        "lat": 30.6915,
+        "lng": 104.0445
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "70 CNY",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Gold Sun and Moon emblem",
+        "Ivory relics",
+        "Jade artifacts",
+        "Ancient Shu civilization"
+      ],
+      "tips": "Less crowded than other museums. Audio guide essential for context. Combine with nearby Temple of Marquis."
+    },
+    {
+      "id": "leshan-giant-buddha",
+      "name": "乐山大佛",
+      "nameEn": "Leshan Giant Buddha",
+      "category": "historical",
+      "description": "The world's largest stone Buddha statue (71m tall) carved into a cliff at the confluence of three rivers.",
+      "address": "Leshan City, 150km from Chengdu",
+      "coordinates": {
+        "lat": 29.5465,
+        "lng": 103.7675
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "80 CNY (peak season), 10 CNY (off-peak, boat only)",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "71m Buddha head carved into cliff",
+        "Linggang Platform views",
+        "Thousand Buddha Cliff",
+        "Baidu River cruise"
+      ],
+      "tips": "Day trip from Chengdu recommended. Book a tour or take high-speed train. Best viewed from boat for full perspective."
+    },
+    {
+      "id": "tianfu-square",
+      "name": "天府广场",
+      "nameEn": "Tianfu Square",
+      "category": "modern",
+      "description": "Chengdu's central square and transportation hub with the iconic Sichuan Museum and philosophy statues.",
+      "address": "Tianfu Square, Jinjiang District",
+      "coordinates": {
+        "lat": 30.6615,
+        "lng": 104.0665
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Sichuan Museum",
+        "Mao Zedong statue",
+        "City hub for metro",
+        "Philosophy pillars"
+      ],
+      "tips": "Good starting point for city exploration. Metro lines 1 and 2 connect here. Sichuan Museum free entry with ID."
+    },
+    {
+      "id": "sanxingdui",
+      "name": "三星堆博物馆",
+      "nameEn": "Sanxingdui Museum",
+      "category": "historical",
+      "description": "A mysterious ancient civilization site with extraordinary bronze masks and gold artifacts predating the Han dynasty.",
+      "address": "Sanxingdui Town, Guanghan, 40km from Chengdu",
+      "coordinates": {
+        "lat": 30.9875,
+        "lng": 104.2045
+      },
+      "openingHours": "08:30-18:00",
+      "ticketPrice": "72 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Bronze mask with protruding eyes",
+        "Golden scepter",
+        "Standing bronze figure (2.6m)",
+        "Jade artifacts"
+      ],
+      "tips": "One of China's greatest archaeological discoveries. Audio guide highly recommended. Take bus from Chengdu's east station."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "chengdu-1",
+      "name": "松云泽",
+      "nameEn": "Song Yun Ze",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Sichuan",
+      "avgPrice": 800,
+      "rating": 4.9,
+      "address": "6-7 Jinli West First Rd, Wuhou District",
+      "coordinates": {
+        "lat": 30.6505,
+        "lng": 104.0545
+      },
+      "phone": "+86 28 8611 9888",
+      "hours": "11:30-14:00, 17:30-21:00",
+      "description": "Two Michelin star Sichuan cuisine restaurant showcasing authentic flavors with modern presentation.",
+      "dishHighlights": [
+        "Water-boiled fish",
+        "Mapo tofu",
+        "Spicy chicken"
+      ],
+      "tags": [
+        "fine-dining",
+        "sichuan",
+        "business"
+      ]
+    },
+    {
+      "id": "chengdu-2",
+      "name": "廊桥遗风",
+      "nameEn": "Langqiao Yifeng",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Sichuan",
+      "avgPrice": 600,
+      "rating": 4.8,
+      "address": "No. 9 Jiangnan Rd, Chengdu",
+      "coordinates": {
+        "lat": 30.6485,
+        "lng": 104.0735
+      },
+      "phone": "+86 28 8553 9999",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "One Michelin star restaurant with stunning river views and refined Sichuan cuisine.",
+      "dishHighlights": [
+        "Yu Xiang pork",
+        "Dan Dan noodles",
+        "Sichuan cold noodles"
+      ],
+      "tags": [
+        "fine-dining",
+        "sichuan",
+        "scenic"
+      ]
+    },
+    {
+      "id": "chengdu-3",
+      "name": "大妙火锅",
+      "nameEn": "Da Miao Hotpot",
+      "type": "local",
+      "cuisine": "Sichuan hot pot",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Various locations including near Jinli",
+      "coordinates": {
+        "lat": 30.6515,
+        "lng": 104.0555
+      },
+      "description": "Famous hot pot chain with excellent dipping sauces and quality ingredients.",
+      "dishHighlights": [
+        "Spicy and mild broths",
+        "Beef slices",
+        "Mushrooms"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "sichuan"
+      ]
+    },
+    {
+      "id": "chengdu-4",
+      "name": "蜀大侠",
+      "nameEn": "Shu Daxia",
+      "type": "local",
+      "cuisine": "Sichuan hot pot",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 30.6595,
+        "lng": 104.0615
+      },
+      "description": "Popular hot pot chain known for quality meat and reasonable prices.",
+      "dishHighlights": [
+        "Tianlu duck blood",
+        "Green vegetables",
+        "Hand-cut beef"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "casual"
+      ]
+    },
+    {
+      "id": "chengdu-5",
+      "name": "龙抄手",
+      "nameEn": "Long Chaoshou",
+      "type": "local",
+      "cuisine": "Sichuan",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Near Chunxi Road",
+      "coordinates": {
+        "lat": 30.6635,
+        "lng": 104.0765
+      },
+      "description": "Legendary restaurant specializing in wontons (chaoshou) and Sichuan snacks.",
+      "dishHighlights": [
+        "Red oil wontons",
+        "Sichuan noodles",
+        "Sweet and sour duck"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "historic"
+      ]
+    },
+    {
+      "id": "chengdu-6",
+      "name": "玉林串串香",
+      "nameEn": "Yulin Chuan Chuan Xiang",
+      "type": "local",
+      "cuisine": "Sichuan",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Yulin Area, Wuhou District",
+      "coordinates": {
+        "lat": 30.6435,
+        "lng": 104.0585
+      },
+      "description": "The legendary inventor of chuan chuan (skewer hot pot), still the most famous branch.",
+      "dishHighlights": [
+        "Various skewers in broth",
+        "Spicy and mild options",
+        "Affordable"
+      ],
+      "tags": [
+        "local",
+        "chuan-chuan",
+        "casual",
+        "invented-here"
+      ]
+    },
+    {
+      "id": "chengdu-7",
+      "name": "夫妻肺片",
+      "nameEn": "Fu Qi Fei Pian",
+      "type": "local",
+      "cuisine": "Sichuan cold dishes",
+      "avgPrice": 60,
+      "rating": 4.6,
+      "address": "2 Xihuashi St, Qingyang District",
+      "coordinates": {
+        "lat": 30.6535,
+        "lng": 104.0545
+      },
+      "hours": "08:30-20:00",
+      "description": "Legendary restaurant famous for its namesake dish - husband and wife lung slices (cold beef offal in chili oil).",
+      "dishHighlights": [
+        "Fu Qi Fei Pian (cold beef offal)",
+        "Spicy cucumber",
+        "Sichuan cold noodles"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "cold-dishes",
+        "must-try"
+      ]
+    },
+    {
+      "id": "chengdu-8",
+      "name": "鹤鸣茶社",
+      "nameEn": "He Ming Tea House",
+      "type": "local",
+      "cuisine": "Sichuan tea",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "People's Park, Qingyang District",
+      "coordinates": {
+        "lat": 30.6575,
+        "lng": 104.0665
+      },
+      "description": "Chengdu's most famous traditional tea house in People's Park, operating since 1923.",
+      "dishHighlights": [
+        "Traditional tea ceremony",
+        "Ear cleaning service",
+        "Mahjong available"
+      ],
+      "tags": [
+        "local",
+        "tea-house",
+        "traditional",
+        "culture"
+      ]
+    },
+    {
+      "id": "chengdu-9",
+      "name": "马旺子川小馆",
+      "nameEn": "Ma Wang Zi",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Sichuan",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "No. 2 Gaopeng Rd, Chengdu",
+      "coordinates": {
+        "lat": 30.6525,
+        "lng": 104.0705
+      },
+      "phone": "+86 28 8535 1888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "One diamond Black Pearl restaurant serving refined Sichuan home-style dishes in a beautiful courtyard setting.",
+      "dishHighlights": [
+        "Braised pork in soy sauce",
+        "Spicy sliced beef",
+        "Sichuan classics"
+      ],
+      "tags": [
+        "black-pearl",
+        "sichuan",
+        "courtyard",
+        "quality"
+      ]
+    },
+    {
+      "id": "chengdu-10",
+      "name": "听香餐馆",
+      "nameEn": "Ting Xiang",
+      "type": "local",
+      "cuisine": "Sichuan",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "2nd Floor, 8 Hongzhuan Rd, Chengdu",
+      "coordinates": {
+        "lat": 30.6545,
+        "lng": 104.0765
+      },
+      "description": "Popular upscale casual spot known for innovative Sichuan dishes without losing traditional soul.",
+      "dishHighlights": [
+        "Braised eggplant",
+        "Mouth-watering chicken",
+        "Refined mapo tofu"
+      ],
+      "tags": [
+        "local",
+        "sichuan",
+        "casual",
+        "popular"
+      ]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major international airports, many domestic connections",
+        "to": "Chengdu Tianfu International Airport (TFU)",
+        "duration": "Varies (10-14 hours from Europe/Americas)",
+        "price": "1000-8000 CNY",
+        "frequency": "Multiple daily flights",
+        "tips": "New airport (TFU) opened 2021 with metro connection. Also old Shuangliu Airport for some flights."
+      },
+      {
+        "type": "train",
+        "from": "Beijing (7.5h), Shanghai (10h), Xian (3h)",
+        "to": "Chengdu East Railway Station / Chengdu Station",
+        "duration": "3-10 hours",
+        "price": "350-900 CNY",
+        "frequency": "Frequent departures",
+        "tips": "High-speed rail network well-connected. Book early for popular routes."
+      }
+    ],
+    "local": {
+      "metro": [
+        "12 lines covering city and suburbs",
+        "Single ride: 2-10 CNY",
+        "English signage improving",
+        "Line 1 to Panda Base, line 2 to Jinli"
+      ],
+      "bus": [
+        "Extensive network",
+        "Bamboo bikes (zhongbao) useful for short trips",
+        "Download app for English navigation"
+      ],
+      "taxi": [
+        "Starting fare: 8 CNY (first 2km)",
+        "Didi fully functional in English",
+        "Airport taxi official counters reliable"
+      ],
+      "bike": [
+        "Hellobike, Mobike, Meituan bikes available",
+        "Unlock: 1.5 CNY",
+        "Good for short trips in center",
+        "Many dedicated bike lanes"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "成都瑞吉酒店",
+      "nameEn": "The St. Regis Chengdu",
+      "budget": "luxury",
+      "priceRange": "1800-3500 CNY/night",
+      "address": "88 Tianhua Middle Rd, Jinjiang District",
+      "coordinates": {
+        "lat": 30.6555,
+        "lng": 104.0815
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Prime location near Chunxi Road",
+        "Luxurious spa",
+        "Excellent service"
+      ],
+      "bookingTips": "Request higher floors for views."
+    },
+    {
+      "name": "成都博舍",
+      "nameEn": "The Temple House",
+      "budget": "luxury",
+      "priceRange": "2000-4000 CNY/night",
+      "address": "81 Bitieshi Rd, Jinjiang District",
+      "coordinates": {
+        "lat": 30.6585,
+        "lng": 104.0665
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Modern design in historic area",
+        "Outstanding service",
+        "Great dining"
+      ],
+      "bookingTips": "One of Chengdu's best hotels. Book far ahead."
+    },
+    {
+      "name": "成都香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Chengdu",
+      "budget": "mid",
+      "priceRange": "900-1800 CNY/night",
+      "address": "9 Binjiang East Rd, Jinjiang District",
+      "coordinates": {
+        "lat": 30.6535,
+        "lng": 104.0875
+      },
+      "rating": 4.6,
+      "highlights": [
+        "River views",
+        "Central location",
+        "Good facilities"
+      ],
+      "bookingTips": "River-view rooms worth extra."
+    },
+    {
+      "name": "成都希尔顿酒店",
+      "nameEn": "Hilton Chengdu",
+      "budget": "mid",
+      "priceRange": "600-1200 CNY/night",
+      "address": "666 Tianfu Avenue, High-Tech Zone",
+      "coordinates": {
+        "lat": 30.6435,
+        "lng": 104.0615
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near High-Tech Zone",
+        "Good for business",
+        "Modern facilities"
+      ],
+      "bookingTips": "Good value for business travelers."
+    },
+    {
+      "name": "成都太古里春熙亚朵酒店",
+      "nameEn": "Atour Hotel Chunxi Road",
+      "budget": "budget",
+      "priceRange": "400-800 CNY/night",
+      "address": "99 Baihua Rd, Jinjiang District",
+      "coordinates": {
+        "lat": 30.6595,
+        "lng": 104.0795
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near Taikoo Li and Chunxi Road",
+        "Great value",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best budget option near major shopping."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Standard payment, accepted everywhere",
+      "howToUse": [
+        "Download before arrival",
+        "Bind international card",
+        "QR code payment"
+      ],
+      "tips": [
+        "Chengdu is modern city - most places accept cards",
+        "But download Alipay for markets and street food"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Common in Chengdu",
+      "howToUse": [
+        "WeChat app required",
+        "Link card"
+      ],
+      "tips": [
+        "Didi打车 requires WeChat",
+        "Both apps equally important"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Useful for traditional teahouses and small vendors",
+      "howToUse": [
+        "Keep 100-200 CNY for emergencies",
+        "ATMs at every corner"
+      ],
+      "tips": [
+        "Traditional teahouses mostly cash",
+        "Most modern places accept cards"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "lifestyle",
+      "title": "Chengdu Lifestyle",
+      "content": "Chengdu people are known for laid-back lifestyle (mafan). Teahouse culture is important - people spend hours drinking tea and playing mahjong. Spicy food and chill vibe define the city.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Sichuan Cuisine",
+      "content": "Sichuan cuisine (川菜) known for numbing spice (ma la). Key dishes: hot pot, mapo tofu, dan dan noodles. Tea with food is common for digestion of spice.",
+      "importance": "high"
+    },
+    {
+      "category": "pandas",
+      "title": "Panda Conservation",
+      "content": "Giant pandas are endangered species and national treasure. Chengdu's Panda Base is leading conservation efforts. Respect the animals' welfare guidelines.",
+      "importance": "medium"
+    },
+    {
+      "category": "tea",
+      "title": "Tea Culture",
+      "content": "Chengdu is famous for its tea houses. Try a traditional bamboo-chair tea session in People Park. The city consumes more tea than any other city in China. Sichuan opera shows are also a must-see evening entertainment.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "成都急救中心",
+      "nameEn": "Chengdu Emergency Center",
+      "phone": "120",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "police",
+      "name": "成都市公安局",
+      "nameEn": "Chengdu Public Security Bureau",
+      "phone": "110",
+      "address": "Various locations"
+    },
+    {
+      "type": "hospital",
+      "name": "成都新世纪妇女儿童医院",
+      "nameEn": "Chengdu New Century Women & Children's Hospital",
+      "phone": "+86 28 6533 1666",
+      "address": "99 Xiandong Rd, Chengdu",
+      "coordinates": {
+        "lat": 30.6455,
+        "lng": 104.0565
+      },
+      "notes": "English-speaking, accepts international insurance"
+    },
+    {
+      "type": "hospital",
+      "name": "四川大学华西医院",
+      "nameEn": "West China Hospital, Sichuan University",
+      "phone": "+86 28 8542 2114",
+      "address": "37 Guo Xue Xiang, Wuhou District",
+      "coordinates": {
+        "lat": 30.6385,
+        "lng": 104.0745
+      },
+      "notes": "Best public hospital in western China, excellent for complex cases"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻成都总领事馆",
+      "nameEn": "US Consulate General Chengdu",
+      "phone": "+86 28 8558 3992",
+      "address": "IFS Tower 2, 1 Middle Section of Hong Kong Rd, Jinjiang",
+      "coordinates": {
+        "lat": 30.6545,
+        "lng": 104.0705
+      },
+      "notes": "Emergency: +86 28 8558 3992"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese + Sichuan dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa. 144h transit visa available at airport for eligible nationalities.",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe but use bottled water"
+  }
+}

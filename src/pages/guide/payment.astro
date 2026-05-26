@@ -1,0 +1,48 @@
+---
+import PaymentGuideClient from "@/components/Guide/PaymentGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Payment Guide - ChinaConnect"
+  description="Complete payment guide for China travel. Alipay, WeChat Pay, cash, tax refunds, and shopping tips with practical instructions."
+  meta={{
+    keywords: ['China payment guide', 'Alipay', 'WeChat Pay', 'China cash', 'tax refund China', 'China shopping'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium">Payment Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">💳</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground">Payment Guide</h1>
+          <p class="text-muted-foreground text-lg">支付指南 - Complete guide for payments in China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">💰</span>
+        <div>
+          <h2 class="font-semibold">Stages 2 & 10: Payment Systems & Shopping</h2>
+          <p class="text-sm text-muted-foreground">Set up payment methods and learn shopping tips in China</p>
+        </div>
+      </div>
+    </div>
+
+    <PaymentGuideClient client:load />
+  </main>
+</BaseLayout>

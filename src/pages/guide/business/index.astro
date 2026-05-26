@@ -1,0 +1,226 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Business Express - ChinaConnect"
+  description="Everything you need to do business in China. Invitation letter templates, expo calendar, company registration guide, business etiquette, and translation services."
+  meta={{
+    keywords: ['China business guide', '商务快车道', 'China business visa', '中国商务指南', 'business etiquette China'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Header -->
+    <div class="mb-10">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-5xl">🚀</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground">Business Express</h1>
+          <p class="text-muted-foreground text-lg">商务快车道</p>
+        </div>
+      </div>
+      <p class="text-muted-foreground max-w-2xl text-lg">
+        Everything you need to navigate business in China — from visa invitation letters to cultural etiquette.
+        Five essential tools for foreign professionals.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Invitation Letter -->
+      <a href="/guide/business/invitation-letter" class="group bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 h-32 flex items-center justify-center">
+          <span class="text-7xl opacity-90">✉️</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-medium">Visa Support</span>
+          </div>
+          <h2 class="text-xl font-bold mb-1 group-hover:text-blue-600 transition-colors">
+            Invitation Letter Templates
+          </h2>
+          <p class="text-muted-foreground text-sm mb-3">商务邀请函模板</p>
+          <p class="text-sm text-muted-foreground">
+            Download ready-to-use bilingual invitation letters for visa applications. Bilingual, English, and urgent formats.
+          </p>
+          <div class="mt-4 text-blue-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Use Template
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Expo Calendar -->
+      <a href="/guide/business/expo-calendar" class="group bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 h-32 flex items-center justify-center">
+          <span class="text-7xl opacity-90">📅</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded text-xs font-medium">12 Events</span>
+          </div>
+          <h2 class="text-xl font-bold mb-1 group-hover:text-indigo-600 transition-colors">
+            Expo & Event Calendar
+          </h2>
+          <p class="text-muted-foreground text-sm mb-3">展会与活动日历</p>
+          <p class="text-sm text-muted-foreground">
+            Plan your trips around China&apos;s top trade shows. Canton Fair, industry events, auto shows — all dates in one place.
+          </p>
+          <div class="mt-4 text-indigo-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            View Calendar
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Company Registration -->
+      <a href="/guide/business/company-registration" class="group bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="bg-gradient-to-br from-orange-500 to-amber-600 p-6 h-32 flex items-center justify-center">
+          <span class="text-7xl opacity-90">🏢</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-orange-100 text-orange-700 px-2 py-0.5 rounded text-xs font-medium">Entity Setup</span>
+          </div>
+          <h2 class="text-xl font-bold mb-1 group-hover:text-orange-600 transition-colors">
+            Company Registration Guide
+          </h2>
+          <p class="text-muted-foreground text-sm mb-3">工商注册指南</p>
+          <p class="text-sm text-muted-foreground">
+            Step-by-step guide for WFOE, Representative Office, and other entities. Timelines, costs, and document checklists.
+          </p>
+          <div class="mt-4 text-orange-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Start Registration
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Business Etiquette -->
+      <a href="/guide/business/etiquette" class="group bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 h-32 flex items-center justify-center">
+          <span class="text-7xl opacity-90">🎯</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded text-xs font-medium">Cultural Mastery</span>
+          </div>
+          <h2 class="text-xl font-bold mb-1 group-hover:text-emerald-600 transition-colors">
+            Business Etiquette Essentials
+          </h2>
+          <p class="text-muted-foreground text-sm mb-3">商务礼仪速成</p>
+          <p class="text-sm text-muted-foreground">
+            Master Chinese business culture. Business card exchange, dining etiquette, meeting protocols, and gift giving — with do&apos;s and don&apos;ts.
+          </p>
+          <div class="mt-4 text-emerald-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Learn Etiquette
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Translation Service -->
+      <a href="/guide/business/translation" class="group bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1">
+        <div class="bg-gradient-to-br from-violet-500 to-purple-600 p-6 h-32 flex items-center justify-center">
+          <span class="text-7xl opacity-90">🌍</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-violet-100 text-violet-700 px-2 py-0.5 rounded text-xs font-medium">Book Now</span>
+          </div>
+          <h2 class="text-xl font-bold mb-1 group-hover:text-violet-600 transition-colors">
+            Translation & Interpreting
+          </h2>
+          <p class="text-muted-foreground text-sm mb-3">翻译服务预约</p>
+          <p class="text-sm text-muted-foreground">
+            Professional interpreters and translators for business visits. Consecutive &amp; simultaneous interpreting, document translation, and certified services.
+          </p>
+          <div class="mt-4 text-violet-600 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            Book a Translator
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Quick Stats Banner -->
+      <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 text-white flex flex-col justify-center">
+        <h3 class="text-xl font-bold mb-4">Business Express Stats</h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-slate-300">Invitation Templates</span>
+            <span class="font-bold text-2xl">3</span>
+          </div>
+          <div class="w-full bg-slate-700 rounded-full h-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-300">Trade Events Listed</span>
+            <span class="font-bold text-2xl">12</span>
+          </div>
+          <div class="w-full bg-slate-700 rounded-full h-2">
+            <div class="bg-indigo-500 h-2 rounded-full" style="width: 100%"></div>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-300">Registration Entity Types</span>
+            <span class="font-bold text-2xl">3</span>
+          </div>
+          <div class="w-full bg-slate-700 rounded-full h-2">
+            <div class="bg-orange-500 h-2 rounded-full" style="width: 60%"></div>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-slate-300">Etiquette Rules Covered</span>
+            <span class="font-bold text-2xl">17</span>
+          </div>
+          <div class="w-full bg-slate-700 rounded-full h-2">
+            <div class="bg-emerald-500 h-2 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Start Guide -->
+    <div class="mt-12 bg-slate-50 rounded-2xl p-8">
+      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+        <span>🚀</span> Quick Start: Your First China Business Trip
+      </h2>
+      <div class="grid md:grid-cols-5 gap-4">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">1</div>
+          <h3 class="font-semibold text-sm mb-1">Get Invitation Letter</h3>
+          <p class="text-xs text-muted-foreground">Download template and get company seal</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">2</div>
+          <h3 class="font-semibold text-sm mb-1">Apply for Visa</h3>
+          <p class="text-xs text-muted-foreground">M visa for business, 30-90 days</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-violet-100 text-violet-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">3</div>
+          <h3 class="font-semibold text-sm mb-1">Book Translator</h3>
+          <p class="text-xs text-muted-foreground">Arrange interpreting if needed</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">4</div>
+          <h3 class="font-semibold text-sm mb-1">Learn Etiquette</h3>
+          <p class="text-xs text-muted-foreground">Quick reference for business cards &amp; dining</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">5</div>
+          <h3 class="font-semibold text-sm mb-1">Plan Expo Visit</h3>
+          <p class="text-xs text-muted-foreground">Align with key trade events if relevant</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

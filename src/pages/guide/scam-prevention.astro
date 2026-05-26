@@ -1,0 +1,18 @@
+---
+import ScamPreventionClient from "@/components/Guide/ScamPreventionClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Scam Prevention Guide - ChinaConnect">
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a href="/" class="text-primary hover:underline mb-4 inline-block">← Back to Home</a>
+      <h1 class="text-4xl font-bold text-foreground">Scam Prevention Guide</h1>
+      <p class="text-muted-foreground mt-2 text-lg">
+        诈骗防范指南 - Protect yourself from common scams in China
+      </p>
+    </div>
+
+    <ScamPreventionClient client:load />
+  </main>
+</BaseLayout>

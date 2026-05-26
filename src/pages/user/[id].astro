@@ -1,0 +1,29 @@
+---
+import UserProfilePage from "@/components/user/UserProfilePage";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+// Mock user IDs for static generation
+export function getStaticPaths() {
+  return [
+    { params: { id: "mock-user-1" } },
+    { params: { id: "mock-user-2" } },
+    { params: { id: "mock-user-3" } },
+    { params: { id: "mock-user-4" } },
+    { params: { id: "mock-user-5" } },
+  ];
+}
+
+const { id } = Astro.params;
+
+if (!id) {
+  return Astro.redirect("/404");
+}
+
+// Check if this is a mock user (for demo)
+const isMockUser = id.startsWith("mock-user-");
+---
+
+<BaseLayout title={`User Profile - ChinaConnect`}>
+  <main class="container mx-auto px-4 py-8">
+    <UserProfilePage userId={id} isOwnProfile={isMockUser} client:load />
+  </main>
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Signing in...">
+  <div class="min-h-screen flex items-center justify-center bg-gray-50">
+    <div class="text-center">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+      <p class="text-gray-500">Signing you in...</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { supabase } from '@/supabase/config';
+
+  // Handle OAuth callback
+  supabase.auth.onAuthStateChange((event, session) => {
+    if (event === 'SIGNED_IN' && session) {
+      window.location.href = '/';
+    }
+  });
+
+  // Also try to get the session immediately in case the event already fired
+  supabase.auth.getSession().then(({ data: { session } }) => {
+    if (session) {
+      window.location.href = '/';
+    }
+  });
+</script>

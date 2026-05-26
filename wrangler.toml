@@ -1,0 +1,10 @@
+name = "chinaconnect"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Uncomment for SSR pages
+# [assets]
+# include_prefix = "assets/"
+
+# For Astro static output
+# Build output is in dist/_worker.js

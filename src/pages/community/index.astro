@@ -1,0 +1,10 @@
+---
+import { CommunityHub } from "@/components/community/CommunityHub";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Community - ChinaConnect">
+  <main class="container mx-auto px-4 py-8">
+    <CommunityHub client:load />
+  </main>
+</BaseLayout>

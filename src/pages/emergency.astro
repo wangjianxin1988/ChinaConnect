@@ -1,0 +1,365 @@
+---
+import { QuickDial, EmergencyCard, GPSLocator, EmbassyLocator } from "@/components/Emergency";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+const pageTitle = "Emergency Contacts & Phrases - ChinaConnect";
+const pageDescription =
+  "Essential emergency contacts and translation phrases for travelers in China. Includes police, ambulance, fire, embassy info, GPS location, and offline emergency phrases.";
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: ['emergency china', 'china emergency contacts', 'police china', 'ambulance china', 'emergency phrases china', 'embassy beijing', 'SOS china', 'GPS location china'],
+  }}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-red-600 to-red-800 text-white py-16">
+    <div class="container-custom">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-5xl">🚨</span>
+        <div>
+          <h1 class="text-4xl font-bold mb-2">Emergency Contacts & Help</h1>
+          <p class="text-red-100 text-lg">Essential phone numbers, phrases, and tools for your safety in China</p>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">110</div>
+          <div class="text-sm text-red-100">Police</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">120</div>
+          <div class="text-sm text-red-100">Ambulance</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">119</div>
+          <div class="text-sm text-red-100">Fire</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl font-bold">122</div>
+          <div class="text-sm text-red-100">Traffic</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Dial Section -->
+  <section class="py-8 bg-red-50 border-b border-red-200">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold text-red-800 mb-4 flex items-center gap-2">
+        <span>📞</span> One-Tap Emergency Calls
+      </h2>
+      <p class="text-red-700 mb-6">Tap any number to call immediately. Works with any phone - no app needed.</p>
+      <QuickDial client:load />
+    </div>
+  </section>
+
+  <!-- Emergency Translation Card -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>📋</span> Emergency Translation Phrases
+      </h2>
+      <p class="text-gray-600 mb-6">Tap any phrase to hear the pronunciation. This card works offline.</p>
+      <EmergencyCard client:load />
+    </div>
+  </section>
+
+  <!-- GPS Location Section -->
+  <section class="py-8 bg-gradient-to-br from-green-50 to-teal-50">
+    <div class="container-custom">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+            <span>📍</span> GPS Location Share
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Get your current location and share it with emergency services. The system also helps you find nearby hospitals, pharmacies, and police stations.
+          </p>
+          <GPSLocator client:load />
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+            <span>👥</span> Emergency Contacts
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Save your hotel, tour guide, or family contacts for quick access during emergencies.
+          </p>
+          <!-- Preset contacts will be rendered client-side via the SOSButton in BaseLayout -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span>💡</span> How to save contacts
+            </h3>
+            <ol class="space-y-2 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0">1</span>
+                <span>Look for the red SOS button in the bottom-right corner of any page</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0">2</span>
+                <span>Tap the menu button (☰) to open the emergency menu</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-medium flex-shrink-0">3</span>
+                <span>Go to the "Contacts" tab and add your emergency contacts</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby Services -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>🏥</span> Finding Help Nearby
+      </h2>
+      <p class="text-gray-600 mb-6">Use these tips to find medical help, pharmacies, and police quickly.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <span>🏥</span> Hospitals
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500">•</span>
+              <span>Search "医院" in any map app</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500">•</span>
+              <span>International hospitals recommended for foreigners</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500">•</span>
+              <span>Common: Peking Union Medical College Hospital, Beijing United Family</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <span>💊</span> Pharmacies
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-green-500">•</span>
+              <span>Look for green cross "绿十字" symbol</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500">•</span>
+              <span>Large chains: Guoji Yiyao, Lianhua, Yixinke</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500">•</span>
+              <span>Many medications available without prescription</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <span>🚔</span> Police Stations
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-blue-500">•</span>
+              <span>Search "派出所" for local police stations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-500">•</span>
+              <span>English-speaking officers available at major stations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-blue-500">•</span>
+              <span>Foreign Affairs Police can help foreigners</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Embassy Section -->
+  <section class="py-8 bg-blue-50">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>🏛️</span> Embassy & Consulate Information
+      </h2>
+      <p class="text-gray-600 mb-6">Find your embassy for passport replacement, emergency assistance, and legal help.</p>
+      <EmbassyLocator client:load showAll={true} />
+    </div>
+  </section>
+
+  <!-- Offline & Preparedness -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>📱</span> SOS Button - Available on Every Page
+      </h2>
+      <p class="text-gray-600 mb-6">The emergency SOS button is always available in the bottom-right corner of every page.</p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-4 flex items-center gap-2">
+            <span>🆘</span> How to Use SOS
+          </h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">1.</span>
+              <span>Tap the red SOS button to immediately call police (110)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">2.</span>
+              <span>Tap the menu button (☰) to open emergency options</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">3.</span>
+              <span>Choose from: Translation Card, GPS Location, Embassy Finder</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">4.</span>
+              <span>Long-press or right-click for quick menu access</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-4 flex items-center gap-2 text-red-800">
+            <span>💡</span> Offline Available
+          </h3>
+          <ul class="space-y-3 text-red-700">
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span>SOS button works without internet</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span>Translation phrases cached for offline use</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span>Emergency numbers (110, 120, 119, 122) always accessible</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span>Download offline maps for better preparedness</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Tips -->
+  <section class="py-8 bg-gray-50">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>🛡️</span> Safety Tips for Travelers
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6">
+          <h3 class="font-semibold mb-4">Keep Documents Safe</h3>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li>• Scan passport and keep digital copy</li>
+            <li>• Keep physical copy separate from original</li>
+            <li>• Store embassy contact info in phone</li>
+            <li>• Note down local emergency numbers</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6">
+          <h3 class="font-semibold mb-4">Emergency Preparedness</h3>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li>• Save emergency numbers in phone contacts</li>
+            <li>• Download offline maps (Google Maps)</li>
+            <li>• Keep power bank charged</li>
+            <li>• Save hotel address in Chinese</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border rounded-xl p-6">
+          <h3 class="font-semibold mb-4">Communication Tips</h3>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li>• Learn basic Mandarin phrases</li>
+            <li>• Use translation apps when needed</li>
+            <li>• Download emergency phrase cards</li>
+            <li>• Save your nationality in phone notes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lost Passport Guide -->
+  <section class="py-8">
+    <div class="container-custom">
+      <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+        <span>📘</span> Lost Passport? Here's What to Do
+      </h2>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+              <span>🇨🇳</span> In China
+            </h3>
+            <ol class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+                <div>
+                  <div class="font-medium">Report to Police</div>
+                  <div class="text-sm text-gray-600">Go to nearest police station and get a police report (报案证明)</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+                <div>
+                  <div class="font-medium">Contact Embassy</div>
+                  <div class="text-sm text-gray-600">Call your embassy for emergency travel document</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+                <div>
+                  <div class="font-medium">Visit Embassy</div>
+                  <div class="text-sm text-gray-600">Bring police report, photos, and ID to get emergency passport</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+              <span>💡</span> Important Tips
+            </h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span>Keep digital copies of passport in cloud storage</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span>Emergency passport is usually valid for limited time</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span>Your embassy can contact family if needed</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500">•</span>
+                <span>Keep hotel card with Chinese address</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

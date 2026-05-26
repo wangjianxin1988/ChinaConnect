@@ -1,0 +1,126 @@
+---
+import "@/styles/global.css";
+import { cities } from "@/data/food/cities";
+import { restaurants } from "@/data/food/restaurants";
+import LayerToggle from "@/components/food/LayerToggle";
+import FoodMap from "@/components/food/FoodMap";
+import RestaurantListClient from "@/components/food/RestaurantListClient";
+import RestaurantFilter from "@/components/food/RestaurantFilter";
+import DishAssistant from "@/components/food/DishAssistant";
+
+let selectedCity = Astro.url.searchParams.get("city") || "shanghai";
+if (!cities.find((c) => c.id === selectedCity)) selectedCity = "shanghai";
+
+const cityRestaurants = restaurants.filter((r) => r.city === selectedCity);
+const allCuisines = [...new Set(cityRestaurants.map((r) => r.cuisine))];
+const currentCity = cities.find((c) => c.id === selectedCity)!;
+const typeCounts = {
+  michelin: cityRestaurants.filter((r) => r.type === "michelin").length,
+  blackpearl: cityRestaurants.filter((r) => r.type === "blackpearl").length,
+  local: cityRestaurants.filter((r) => r.type === "local").length,
+};
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ChinaConnect 美食推荐 - 发现米其林、黑珍珠与本地美食" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>美食推荐 - ChinaConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body class="min-h-screen bg-gray-50 font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm">CC</div>
+            <div>
+              <span class="font-semibold text-gray-900">ChinaConnect</span>
+              <span class="block text-xs text-gray-500">美食推荐</span>
+            </div>
+          </a>
+          <div class="flex items-center gap-4">
+            <select id="city-select" class="px-3 py-1.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+              {cities.map(city => (
+                <option value={city.id} selected={city.id === selectedCity}>{city.nameZh}</option>
+              ))}
+            </select>
+            <a href="/" class="text-sm text-gray-600 hover:text-gray-900">首页</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-6">
+      <div class="mb-6">
+        <h1 class="text-2xl font-bold text-gray-900">美食推荐</h1>
+        <p class="text-sm text-gray-500 mt-1">
+          发现 {currentCity.nameZh} 的米其林、黑珍珠与本地美食（{cityRestaurants.length} 家餐厅）
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Main Content -->
+        <div class="lg:col-span-2 space-y-6">
+          <!-- Layer Toggle (三合一地图系统) -->
+          <LayerToggle counts={typeCounts} client:only="react" />
+
+          <!-- Map -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden" style="height:450px">
+            <FoodMap
+              restaurants={cityRestaurants}
+              center={[currentCity.lat, currentCity.lng]}
+              zoom={12}
+              client:only="react"
+            />
+          </div>
+
+          <!-- Restaurant List (filtered by layers + sidebar filters) -->
+          <div class="bg-white rounded-xl shadow-md p-4">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-lg font-bold text-gray-900">餐厅列表 <span class="text-sm font-normal text-gray-500">(<span id="filtered-count">{cityRestaurants.length}</span>)</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="restaurant-list">
+              <RestaurantListClient restaurants={cityRestaurants} client:only="react" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-6">
+          <RestaurantFilter cuisines={allCuisines} client:only="react" />
+          <DishAssistant cityName={currentCity.nameZh} client:only="react" />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+        <p>ChinaConnect 美食推荐 · 米其林指南 · 黑珍珠榜单 · 本地人真心推荐</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  // City select handler
+  document.getElementById('city-select')?.addEventListener('change', (e) => {
+    window.location.href = '/food?city=' + (e.target as HTMLSelectElement).value;
+  });
+</script>
+
+<style is:global>
+  body {
+    font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>

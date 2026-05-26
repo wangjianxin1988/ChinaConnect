@@ -1,0 +1,48 @@
+---
+import DiningGuideClient from "@/components/Guide/DiningGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Dining Guide - ChinaConnect"
+  description="Complete dining guide for China. Local cuisines, ordering tips, food safety, and essential phrases for eating in China."
+  meta={{
+    keywords: ['China dining guide', 'Chinese food guide', 'China cuisine', 'Sichuan food', 'Cantonese food', 'Chinese dining etiquette'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium">Dining Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">🍜</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground">Dining Guide</h1>
+          <p class="text-muted-foreground text-lg">餐饮指南 - Complete guide for eating in China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🍽️</span>
+        <div>
+          <h2 class="font-semibold">Stage 8: Dining & Food Guide</h2>
+          <p class="text-sm text-muted-foreground">Local cuisines, ordering tips, and food safety in China</p>
+        </div>
+      </div>
+    </div>
+
+    <DiningGuideClient client:load />
+  </main>
+</BaseLayout>

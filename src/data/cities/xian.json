@@ -1,0 +1,809 @@
+{
+  "slug": "xian",
+  "name": "西安",
+  "nameEn": "Xi'an",
+  "country": "China",
+  "population": "13 million",
+  "coordinates": {
+    "lat": 34.3416,
+    "lng": 108.9398
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Xi'an, the ancient capital of China and starting point of the Silk Road, is home to one of the world's greatest archaeological finds - the Terracotta Army. With 3,100 years of history, it offers ancient city walls, the Muslim Quarter's vibrant street food, the Big Wild Goose Pagoda, and access to the western region's stunning landscapes.",
+  "coverImage": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200",
+  "highlights": [
+    "Terracotta Army - 2,000 year old warriors",
+    "Ancient City Wall - Best preserved in China",
+    "Big Wild Goose Pagoda - Tang dynasty landmark",
+    "Muslim Quarter - Street food paradise",
+    "Shaanxi History Museum - National treasures"
+  ],
+  "climate": {
+    "type": "Semi-arid continental",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "26C (79F)",
+    "avgWinterTemp": "1C (34F)",
+    "tips": "Best visited in spring and autumn. Summers hot but less humid than coastal cities. Winters cold but dry with occasional snow. Sandstorms possible in spring. Dress in layers."
+  },
+  "attractions": [
+    {
+      "id": "terracotta-army",
+      "name": "秦始皇兵马俑",
+      "nameEn": "Terracotta Army",
+      "category": "historical",
+      "description": "The massive underground army of over 8,000 life-sized terracotta warriors buried to protect China's first emperor in his afterlife.",
+      "address": "Lintong District, 35km east of Xi'an",
+      "coordinates": {
+        "lat": 34.3847,
+        "lng": 109.2785
+      },
+      "openingHours": "08:30-18:30 (Mar-Nov), 08:00-18:00 (Dec-Feb)",
+      "ticketPrice": "120 CNY (peak), 80 CNY (off-peak)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Pit 1 - largest army display",
+        "Pit 2 - complex formations",
+        "Pit 3 - command center",
+        "Bronze chariots exhibition"
+      ],
+      "tips": "Arrive early to avoid crowds. Take official shuttle bus from train station. Audio guide essential for history. Combine with Huaqing Hot Springs."
+    },
+    {
+      "id": "city-wall",
+      "name": "西安城墙",
+      "nameEn": "Xi'an City Wall",
+      "category": "historical",
+      "description": "The most complete ancient city wall in China, dating from the Ming dynasty. Walk or bike the full 14km circuit.",
+      "address": "South Gate, Xi'an",
+      "coordinates": {
+        "lat": 34.2655,
+        "lng": 108.9485
+      },
+      "openingHours": "08:00-22:00 (South Gate section)",
+      "ticketPrice": "54 CNY (walking), 100 CNY (bike rental)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "South Gate gatehouse",
+        "North Gate tower",
+        "City views",
+        "Watchtower museums"
+      ],
+      "tips": "Bike rental at multiple gates. Start from South Gate for best photos. Best at sunset for city views."
+    },
+    {
+      "id": "big-wild-goose-pagoda",
+      "name": "大雁塔",
+      "nameEn": "Big Wild Goose Pagoda",
+      "category": "cultural",
+      "description": "The iconic Buddhist pagoda built in 652 AD to hold Buddhist scriptures brought from India by the monk Xuanzang.",
+      "address": "Near Southern University, Yanta District",
+      "coordinates": {
+        "lat": 34.2185,
+        "lng": 108.9595
+      },
+      "openingHours": "08:00-18:30 (Mar-Nov), 08:00-18:00 (Dec-Feb)",
+      "ticketPrice": "25 CNY (entrance), 40 CNY (climbing)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Seven-story pagoda",
+        "Da Ci'en Temple",
+        "Musical fountain show",
+        "Tang Dynasty architecture"
+      ],
+      "tips": "Evening fountain shows spectacular (20:30). Combined with nearby Qinling Mountains day trip."
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街",
+      "nameEn": "Xi'an Muslim Quarter",
+      "category": "cultural",
+      "description": "A vibrant neighborhood of Hui Muslims featuring ancient mosques, traditional architecture, and famous street food.",
+      "address": "North of Bell Tower, Xi'an",
+      "coordinates": {
+        "lat": 34.2615,
+        "lng": 108.9435
+      },
+      "openingHours": "Open 24 hours, shops 09:00-23:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Great Mosque of Xi'an",
+        "Bai Ta Si food street",
+        "Hui architecture",
+        "Silver jewelry markets"
+      ],
+      "tips": "Try biangbiang面, roujiamo, and persimmon cakes. Walk through early morning or evening. Cameras welcome except in mosque."
+    },
+    {
+      "id": "shaanxi-museum",
+      "name": "陕西历史博物馆",
+      "nameEn": "Shaanxi History Museum",
+      "category": "cultural",
+      "description": "One of China's best provincial museums housing artifacts from the Zhou to Tang dynasties, including the earliest Chinese civilization finds.",
+      "address": "91 Xiaozhai Rd, Yanta District",
+      "coordinates": {
+        "lat": 34.2295,
+        "lng": 108.9585
+      },
+      "openingHours": "08:30-18:00 (Closed Monday)",
+      "ticketPrice": "Free (requires reservation)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Zhou dynasty bronzes",
+        "Tang dynasty gold artifacts",
+        "Ming dynasty porcelain",
+        "Mongolian artifacts"
+      ],
+      "tips": "Reserve tickets weeks ahead on official app. Free audio guides limited. Morning visits better."
+    },
+    {
+      "id": "huaqing-hot-springs",
+      "name": "华清池",
+      "nameEn": "Huaqing Hot Springs",
+      "category": "historical",
+      "description": "An imperial hot spring resort famous for the love story of Emperor Xuanzong and Yang Guifei, with Tang dynasty palace ruins.",
+      "address": "Huaqing Rd, Lintong District, 30km from Xi'an",
+      "coordinates": {
+        "lat": 34.3585,
+        "lng": 109.2095
+      },
+      "openingHours": "07:30-19:00",
+      "ticketPrice": "120 CNY (includes Emperor's Pool)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Nine Dragon Spring",
+        "Tang dynasty palace ruins",
+        "Emperor's personal pool",
+        "The Romance of Two Emperors show"
+      ],
+      "tips": "Combine with Terracotta Army day trip. Evening 'The Long Song' show spectacular. Best in spring."
+    },
+    {
+      "id": "bell-tower",
+      "name": "钟楼",
+      "nameEn": "Xi'an Bell Tower",
+      "category": "historical",
+      "description": "The largest and most intact bell tower in China, built in 1384 during the Ming dynasty.",
+      "address": "West Avenue, Xincheng District",
+      "coordinates": {
+        "lat": 34.2625,
+        "lng": 108.9445
+      },
+      "openingHours": "08:30-20:00",
+      "ticketPrice": "35 CNY (tower only), 50 CNY (combined with Drum Tower)",
+      "recommendedVisitTime": "45 minutes",
+      "highlights": [
+        "Zhongyue Temple Bell",
+        "Panoramic city views",
+        "Traditional architectural details",
+        "Night illuminations"
+      ],
+      "tips": "Best viewed from outside at night. Combined ticket with Drum Tower saves money. Metro access convenient."
+    },
+    {
+      "id": "small-wild-goose-pagoda",
+      "name": "小雁塔",
+      "nameEn": "Small Wild Goose Pagoda",
+      "category": "historical",
+      "description": "A 15-story Tang dynasty pagoda built in 706 AD, surviving multiple earthquakes. Adjacent to the Xi'an Museum.",
+      "address": "72 Youyi Rd, Beilin District",
+      "coordinates": {
+        "lat": 34.2315,
+        "lng": 108.9355
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "Free with Xi'an Museum reservation",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "15-story pagoda",
+        "Ancient zhouzhi well",
+        "Xi'an Museum",
+        "Peaceful temple grounds"
+      ],
+      "tips": "Less crowded than Big Wild Goose Pagoda. Great photos from the courtyard. Free entry with museum reservation."
+    },
+    {
+      "id": "tomb-of-emperor-jingdi",
+      "name": "汉阳陵",
+      "nameEn": "Tomb of Emperor Jingdi",
+      "category": "historical",
+      "description": "The tomb complex of Emperor Jingdi of the Han dynasty with remarkable underground museum displaying hundreds of figurines.",
+      "address": "Xianyang, 20km north of Xi'an",
+      "coordinates": {
+        "lat": 34.4355,
+        "lng": 108.9435
+      },
+      "openingHours": "08:30-18:30",
+      "ticketPrice": "90 CNY",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Underground excavation museum",
+        "Terracotta servants without armor",
+        "Han dynasty artifacts",
+        "Narrow gauge railway"
+      ],
+      "tips": "Less famous than Terracotta Army but equally impressive. Take bus 4 from Xi'an. Great for understanding Han dynasty."
+    },
+    {
+      "id": "drum-tower",
+      "name": "鼓楼",
+      "nameEn": "Xi'an Drum Tower",
+      "category": "historical",
+      "description": "The historic drum tower opposite the Bell Tower, marking the center of the old city with nightly percussion performances.",
+      "address": "West Avenue, Xincheng District",
+      "coordinates": {
+        "lat": 34.2615,
+        "lng": 108.9415
+      },
+      "openingHours": "08:30-20:00",
+      "ticketPrice": "35 CNY (tower only), 50 CNY (combined with Bell Tower)",
+      "recommendedVisitTime": "45 minutes",
+      "highlights": [
+        "Giant water drum",
+        "Night performance shows",
+        "City views",
+        "Traditional drum museum"
+      ],
+      "tips": "Combined ticket with Bell Tower recommended. Evening drum show at 20:30. Great location near Muslim Quarter."
+    },
+    {
+      "id": "Mount-hua",
+      "name": "华山",
+      "nameEn": "Mount Hua",
+      "category": "natural",
+      "description": "One of China's Five Great Mountains, famous for its dangerous plank walk along narrow ledges and dramatic peaks. A test of courage.",
+      "address": "Huashan County, 120km east of Xi'an",
+      "coordinates": {
+        "lat": 34.4805,
+        "lng": 110.0815
+      },
+      "openingHours": "07:00-19:00 (hours vary by season)",
+      "ticketPrice": "160 CNY (peak), 100 CNY (off-peak) + cable cars extra",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Plank walk (Changmen)",
+        "Five peaks of the mountain",
+        "Sunrise from East Peak",
+        "North Peak cable car"
+      ],
+      "tips": "Take high-speed train from Xi'an North Station. Stay overnight for sunrise. Physical fitness required. Arrive early."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "xian-1",
+      "name": "长安大牌档",
+      "nameEn": "Chang'an Pai Tang",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Shaanxi",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Various locations including Wanda Plaza",
+      "coordinates": {
+        "lat": 34.2315,
+        "lng": 108.8935
+      },
+      "phone": "+86 29 6568 9666",
+      "hours": "11:00-22:00",
+      "description": "One Michelin star restaurant serving excellent Shaanxi cuisine with traditional atmosphere and folk performances.",
+      "dishHighlights": [
+        "Biangbiang面",
+        "Lamb paomo",
+        "Qin cuisine platters"
+      ],
+      "tags": [
+        "michelin",
+        "shaanxi-cuisine",
+        "cultural"
+      ]
+    },
+    {
+      "id": "xian-2",
+      "name": "遇见长安",
+      "nameEn": "Meet Chang'an",
+      "type": "local",
+      "cuisine": "Shaanxi",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Xiaozai Junction, Yanta District",
+      "coordinates": {
+        "lat": 34.2255,
+        "lng": 108.9535
+      },
+      "hours": "10:30-21:30",
+      "description": "Highly-rated Shaanxi restaurant with authentic flavors and local specialties.",
+      "dishHighlights": [
+        "Cold noodles",
+        "Sauted noodles",
+        "Dumplings"
+      ],
+      "tags": [
+        "local",
+        "shaanxi-cuisine",
+        "popular"
+      ]
+    },
+    {
+      "id": "xian-3",
+      "name": "老孙家",
+      "nameEn": "Lao Sun Jia",
+      "type": "local",
+      "cuisine": "Hui Muslim",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Near Bell Tower",
+      "coordinates": {
+        "lat": 34.2635,
+        "lng": 108.9455
+      },
+      "description": "Legendary Muslim restaurant known for excellent lamb dishes and roujiamo.",
+      "dishHighlights": [
+        "Roujiamo (Chinese hamburger)",
+        "Lamb skewers",
+        "Biangbiang面"
+      ],
+      "tags": [
+        "local",
+        "muslim-cuisine",
+        "historic"
+      ]
+    },
+    {
+      "id": "xian-4",
+      "name": "德发长",
+      "nameEn": "De Fa Chang",
+      "type": "local",
+      "cuisine": "Dumplings",
+      "avgPrice": 80,
+      "rating": 4.4,
+      "address": "Sanjin Street, Beilin District",
+      "coordinates": {
+        "lat": 34.2585,
+        "lng": 108.9425
+      },
+      "description": "Famous for making over 100 varieties of dumplings for centuries.",
+      "dishHighlights": [
+        "Dumpling varieties",
+        "Crystal shrimp dumplings",
+        "Vegetable dumplings"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "historic"
+      ]
+    },
+    {
+      "id": "xian-5",
+      "name": "春发生",
+      "nameEn": "Chun Fa Sheng",
+      "type": "local",
+      "cuisine": "Shaanxi",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "Near Drum Tower",
+      "coordinates": {
+        "lat": 34.2625,
+        "lng": 108.9415
+      },
+      "description": "Historic restaurant serving traditional Xi'an breakfast and offal dishes.",
+      "dishHighlights": [
+        "Lamb soup with pancakes",
+        "Blood sausage",
+        "Traditional breakfast"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "traditional"
+      ]
+    },
+    {
+      "id": "xian-6",
+      "name": "花腰崽",
+      "nameEn": "Hua Yao Zai",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Shaanxi",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "No. 88 South Avenue, Yanta District",
+      "coordinates": {
+        "lat": 34.2205,
+        "lng": 108.9465
+      },
+      "phone": "+86 29 8525 2888",
+      "hours": "11:00-21:00",
+      "description": "One diamond Black Pearl restaurant serving refined Shaanxi cuisine in elegant Tang dynasty styled interior.",
+      "dishHighlights": [
+        "Xi'an dumplings",
+        "Braised pork with lotus leaf",
+        "Golden shrimp with egg"
+      ],
+      "tags": [
+        "black-pearl",
+        "shaanxi-cuisine",
+        "tang-style"
+      ]
+    },
+    {
+      "id": "xian-7",
+      "name": "贾三清真灌汤包",
+      "nameEn": "Jia San Halal Soup Dumplings",
+      "type": "local",
+      "cuisine": "Hui Muslim",
+      "avgPrice": 40,
+      "rating": 4.6,
+      "address": "Muslim Quarter, West Avenue",
+      "coordinates": {
+        "lat": 34.2605,
+        "lng": 108.9425
+      },
+      "hours": "08:00-22:00",
+      "description": "The most famous soup dumpling (xiaolongbao) place in the Muslim Quarter, always packed.",
+      "dishHighlights": [
+        "Beef soup dumplings",
+        "Lamb dumplings",
+        "Sesame oil cake"
+      ],
+      "tags": [
+        "local",
+        "muslim-cuisine",
+        "soup-dumplings",
+        "famous"
+      ]
+    },
+    {
+      "id": "xian-8",
+      "name": "老刘家泡馍",
+      "nameEn": "Lao Liu Jia Pao Mo",
+      "type": "local",
+      "cuisine": "Hui Muslim",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "Near Bell Tower",
+      "coordinates": {
+        "lat": 34.2635,
+        "lng": 108.9455
+      },
+      "description": "Legendary restaurant for authentic Yangrou Pao Mo - hand-torn flatbread in lamb broth.",
+      "dishHighlights": [
+        "Yangrou pao mo (lamb broth with torn bread)",
+        "Pickled garlic",
+        "Lamb tripe"
+      ],
+      "tags": [
+        "local",
+        "muslim-cuisine",
+        "pao-mo",
+        "must-try"
+      ]
+    },
+    {
+      "id": "xian-9",
+      "name": "biangbiang面",
+      "nameEn": "Zhongda Biangbiang Mian",
+      "type": "local",
+      "cuisine": "Shaanxi",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "Near South Shaanxi Normal University",
+      "coordinates": {
+        "lat": 34.2315,
+        "lng": 108.9345
+      },
+      "description": "Student-favorite spot serving the famous wide belt noodles with spicy sauce, cheap and authentic.",
+      "dishHighlights": [
+        "Biangbiang面 (wide belt noodles)",
+        "Spicy and sour noodles",
+        "Qin cuisine set meals"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "budget",
+        "student-area"
+      ]
+    },
+    {
+      "id": "xian-10",
+      "name": "东南亚甑糕",
+      "nameEn": "Dongnanya Jing Gao",
+      "type": "local",
+      "cuisine": "Shaanxi dessert",
+      "avgPrice": 15,
+      "rating": 4.6,
+      "address": "Muslim Quarter",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.943
+      },
+      "description": "Famous Muslim Quarter dessert vendor selling jing gao (steamed glutinous rice with red beans and dates) for decades.",
+      "dishHighlights": [
+        "Jing gao (steamed sweet rice)",
+        "Rice wine",
+        "Sesame seed cake"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "muslim-cuisine",
+        "street-food"
+      ]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major domestic airports, growing international routes",
+        "to": "Xi'an Xianyang International Airport (XIY)",
+        "duration": "Varies by origin",
+        "price": "500-3000 CNY",
+        "frequency": "Multiple daily flights",
+        "tips": "Airport metro line connects to city center. Consider high-speed trains from many cities - often more convenient."
+      },
+      {
+        "type": "train",
+        "from": "Beijing (4h), Shanghai (6h), Chengdu (3h)",
+        "to": "Xi'an North Railway Station",
+        "duration": "3-6 hours",
+        "price": "300-800 CNY",
+        "frequency": "Frequent high-speed departures",
+        "tips": "High-speed trains fastest and most comfortable. Xi'an has multiple stations - check destination carefully."
+      }
+    ],
+    "local": {
+      "metro": [
+        "9 lines covering major attractions",
+        "Single ride: 2-9 CNY",
+        "English signage at major stations",
+        "Lines 2 and 4 most useful for tourists"
+      ],
+      "bus": [
+        "Extensive network but crowded",
+        "Route numbers in Arabic numerals",
+        "Download 'Xi'an Metro' app for English info"
+      ],
+      "taxi": [
+        "Starting fare: 8.5 CNY (first 2km)",
+        "Didi app works well in English",
+        "Airport taxi counters official and reliable"
+      ],
+      "bike": [
+        "Hellobike and Mobike available",
+        "Unlock: 1 CNY",
+        "Not as common as coastal cities",
+        "Bike lanes improving"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "西安香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Xi'an",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "38 Fen Xiang, Beilin District",
+      "coordinates": {
+        "lat": 34.2525,
+        "lng": 108.9455
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Central location near Bell Tower",
+        "Excellent service",
+        "Good breakfast"
+      ],
+      "bookingTips": "Request higher floors for city views."
+    },
+    {
+      "name": "西安丽思卡尔顿酒店",
+      "nameEn": "The Ritz-Carlton Xi'an",
+      "budget": "luxury",
+      "priceRange": "1800-3500 CNY/night",
+      "address": "Yanta District",
+      "coordinates": {
+        "lat": 34.2295,
+        "lng": 108.8985
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Modern luxury",
+        "Excellent spa",
+        "Premium dining"
+      ],
+      "bookingTips": "Best for business travelers, slightly removed from old town."
+    },
+    {
+      "name": "西安喜来登大酒店",
+      "nameEn": "Sheraton Xi'an Hotel",
+      "budget": "mid",
+      "priceRange": "600-1200 CNY/night",
+      "address": "No. 12, Feng Hao Rd, Xincheng District",
+      "coordinates": {
+        "lat": 34.2665,
+        "lng": 108.9395
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near city wall",
+        "Good location",
+        "Reliable brand"
+      ],
+      "bookingTips": "Weekend rates often lower."
+    },
+    {
+      "name": "西安钟楼饭店",
+      "nameEn": "Xi'an Bell Tower Hotel",
+      "budget": "mid",
+      "priceRange": "400-800 CNY/night",
+      "address": "3 Nan Da Jie, Beilin District",
+      "coordinates": {
+        "lat": 34.2615,
+        "lng": 108.9445
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Prime city center location",
+        "Walking distance to attractions",
+        "Good value"
+      ],
+      "bookingTips": "Best location for first-time visitors."
+    },
+    {
+      "name": "西安印家花园酒店",
+      "nameEn": "Yin Jia Garden Hotel",
+      "budget": "budget",
+      "priceRange": "250-500 CNY/night",
+      "address": "Near South Gate",
+      "coordinates": {
+        "lat": 34.2565,
+        "lng": 108.9475
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near city wall South Gate",
+        "Traditional courtyard",
+        "Good value"
+      ],
+      "bookingTips": "Book courtyard rooms for unique experience."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Standard payment method, widely accepted",
+      "howToUse": [
+        "Download before arrival",
+        "Bind international card",
+        "QR code payment"
+      ],
+      "tips": [
+        "Xi'an is tourist-friendly - many places accept cards",
+        "But Alipay still essential for markets and small vendors"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Commonly used alongside Alipay",
+      "howToUse": [
+        "WeChat app required",
+        "Link card in settings"
+      ],
+      "tips": [
+        "Both apps equally useful in Xi'an",
+        "Didi requires WeChat"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Useful for traditional markets and small vendors",
+      "howToUse": [
+        "Keep small bills for street food",
+        "ATMs at every bank"
+      ],
+      "tips": [
+        "Muslim Quarter vendors mostly cash",
+        "Tourist sites have official price boards"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "food",
+      "title": "Shaanxi Cuisine",
+      "content": "Xi'an is the birthplace of many famous Chinese foods including biangbiang面, roujiamo, and lamb paomo. Muslim Quarter offers unique Hui (Chinese Muslim) cuisine.",
+      "importance": "high"
+    },
+    {
+      "category": "dress",
+      "title": "Modest Dress for Relics",
+      "content": "When visiting religious sites and Terracotta Army, dress modestly and respectfully. Shoulders and knees covered.",
+      "importance": "medium"
+    },
+    {
+      "category": "history",
+      "title": "Historical Context Matters",
+      "content": "Xi'an has been capital of multiple dynasties. Understanding Chinese history enhances the experience. Audio guides recommended.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Night at the Wall",
+      "content": "Xian's city wall is spectacular at night with the giant music fountain show at the South Gate. The nearby Muslim Quarter comes alive in the evening with hundreds of food stalls selling roujiamo, lamb skewers, and biangbiang noodles.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "西安急救中心",
+      "nameEn": "Xi'an Emergency Center",
+      "phone": "120",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "police",
+      "name": "西安市公安局",
+      "nameEn": "Xi'an Public Security Bureau",
+      "phone": "110",
+      "address": "Various locations"
+    },
+    {
+      "type": "hospital",
+      "name": "西安国际医学中心",
+      "nameEn": "Xi'an International Medical Center",
+      "phone": "+86 29 969 99",
+      "address": "Gaoxin District",
+      "coordinates": {
+        "lat": 34.2245,
+        "lng": 108.8845
+      },
+      "notes": "English-speaking staff, modern facilities"
+    },
+    {
+      "type": "hospital",
+      "name": "西安交通大学第一附属医院",
+      "nameEn": "First Affiliated Hospital of Xi'an Jiaotong University",
+      "phone": "+86 29 8532 3314",
+      "address": "277 Yanta West Rd, Yanta District",
+      "coordinates": {
+        "lat": 34.2395,
+        "lng": 108.9345
+      },
+      "notes": "Top public hospital, excellent for complex cases"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻西安总领事馆",
+      "nameEn": "US Consulate General Xi'an",
+      "phone": "+86 29 8723 0666",
+      "address": "1st Floor, Sheraton Xi'an Hotel, 12 Feng Hao Rd",
+      "coordinates": {
+        "lat": 34.2665,
+        "lng": 108.9395
+      },
+      "notes": "Limited consular services - may need to travel to Beijing or Shanghai"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa. 72h transit visa available at airport for eligible nationalities.",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe but use bottled for taste"
+  }
+}

@@ -1,0 +1,36 @@
+---
+import InvitationLetterClient from "@/components/Guide/InvitationLetterClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Business Invitation Letter Templates - ChinaConnect"
+  description="Download ready-to-use bilingual invitation letter templates for China visa applications and business visits. Fill in the fields and download instantly."
+  meta={{
+    keywords: ['China business visa invitation letter', 'Chinese invitation letter template', '广交会邀请函', 'visa invitation China'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a href="/guide" class="text-primary hover:underline mb-4 inline-block flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Business Express / 商务快车道
+      </a>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-4xl">✉️</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground">Business Invitation Letters</h1>
+          <p class="text-muted-foreground text-lg">商务邀请函模板</p>
+        </div>
+      </div>
+      <p class="text-muted-foreground max-w-2xl">
+        Ready-to-use invitation letter templates for visa applications, trade visits, and business meetings.
+        Available in bilingual, English-only, and simplified formats.
+      </p>
+    </div>
+
+    <InvitationLetterClient client:load />
+  </main>
+</BaseLayout>

@@ -1,0 +1,48 @@
+---
+import EmergencyGuideClient from "@/components/Guide/EmergencyGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Emergency Procedures - ChinaConnect"
+  description="Complete emergency guide for China travel. Lost passport, medical emergency, theft, scams, embassy contacts, and important phone numbers."
+  meta={{
+    keywords: ['China emergency', 'lost passport China', 'China embassy', 'China medical emergency', 'China police', '110 China'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium">Emergency Procedures</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">🚨</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground">Emergency Procedures</h1>
+          <p class="text-muted-foreground text-lg">紧急情况处理 - What to do in emergencies in China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🏥</span>
+        <div>
+          <h2 class="font-semibold">Stage 11: Emergency Response</h2>
+          <p class="text-sm text-muted-foreground">Lost passport, medical emergency, theft, scams, and crisis management</p>
+        </div>
+      </div>
+    </div>
+
+    <EmergencyGuideClient client:load />
+  </main>
+</BaseLayout>

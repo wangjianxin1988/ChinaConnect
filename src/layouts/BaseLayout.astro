@@ -1,0 +1,251 @@
+---
+import "@/styles/global.css";
+import "@/styles/tailwind.css";
+import { ViewTransitions } from "astro:transitions";
+import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
+import CulturalWarningTrigger from "@/components/Guide/CulturalWarningTrigger";
+import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
+
+interface Props {
+  title: string;
+  description?: string;
+  meta?: Partial<SEOPageMeta>;
+  ogImage?: string;
+}
+
+const SITE_URL = "https://chinaconnect.com";
+const SITE_NAME = "ChinaConnect";
+
+const {
+  title,
+  description = "ChinaConnect - Connecting China with the World through culinary experiences",
+  meta = {},
+  ogImage,
+} = Astro.props;
+
+const pageMeta: SEOPageMeta = {
+  title,
+  description,
+  ...meta,
+};
+
+const canonicalUrl = meta.canonicalUrl || Astro.url.href;
+const fullOgImage = ogImage || `${SITE_URL}/og-image.png`;
+const pathname = Astro.url.pathname;
+
+// Generate hreflang URLs - use simple string operations to avoid regex issues in Astro template
+const cleanPath = pathname.replace(/^\//, "").replace(/\/$/, "");
+const enUrl = `${SITE_URL}/${cleanPath}`;
+const zhPath = pathname.startsWith("/zh/") ? pathname.replace("/zh/", "/") : `/zh${pathname}`;
+const zhUrl = `${SITE_URL}${zhPath}`;
+
+const hreflangs: HreflangUrl[] = [
+  { hreflang: "en", href: enUrl },
+  { hreflang: "zh-CN", href: zhUrl },
+  { hreflang: "x-default", href: canonicalUrl },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Primary Meta Tags -->
+    <title>{pageMeta.title}</title>
+    <meta name="description" content={pageMeta.description} />
+    {pageMeta.keywords && pageMeta.keywords.length > 0 && (
+      <meta name="keywords" content={pageMeta.keywords.join(', ')} />
+    )}
+    {pageMeta.noIndex ? (
+      <meta name="robots" content="noindex, nofollow" />
+    ) : (
+      <meta name="robots" content="index, follow" />
+    )}
+
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href={canonicalUrl} />
+    {hreflangs.map(({ hreflang, href }) => (
+      <link rel="alternate" hreflang={hreflang} href={href} />
+    ))}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={pageMeta.title} />
+    <meta property="og:description" content={pageMeta.description} />
+    <meta property="og:image" content={fullOgImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageMeta.title} />
+    <meta name="twitter:description" content={pageMeta.description} />
+    <meta name="twitter:image" content={fullOgImage} />
+    <meta name="twitter:site" content="@chinaconnect" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3b82f6" />
+
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="min-h-screen bg-background text-foreground antialiased">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+      <div class="container-custom">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
+              CC
+            </div>
+            <div>
+              <span class="font-semibold text-lg text-gray-900">ChinaConnect</span>
+              <span class="block text-xs text-gray-500">Explore China with AI</span>
+            </div>
+          </a>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center gap-6">
+            <a href="/" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Home</a>
+            <a href="/city/beijing" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Cities</a>
+            <a href="/food" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Restaurants</a>
+            <a href="/ai" class="text-purple-600 hover:text-purple-700 font-medium transition-colors flex items-center gap-1">
+              <span>AI Chat</span>
+            </a>
+            <a href="/guide/business" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Business Express</a>
+            <a href="/community" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">Community</a>
+          </div>
+
+          <!-- CTA -->
+          <div class="flex items-center gap-3">
+            <!-- Language Switcher -->
+            <button
+              id="lang-switcher"
+              class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 text-blue-600 text-sm font-medium hover:bg-blue-100 transition-colors"
+              onclick="toggleLanguage()"
+              title="Switch Language / 切换语言"
+            >
+              <span id="lang-current">EN</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+              </svg>
+            </button>
+            <a href="/food" class="hidden sm:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+              Explore Restaurants
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script is:inline define:vars={{}}>
+      // Language toggle functionality
+      function toggleLanguage() {
+        const current = document.documentElement.lang || 'en';
+        const next = current === 'en' ? 'zh' : 'en';
+        document.documentElement.lang = next;
+        document.getElementById('lang-current').textContent = next === 'en' ? 'EN' : '中';
+        localStorage.setItem('chinaconnect_language', next);
+        // Reload to apply translations
+        window.location.reload();
+      }
+
+      // Initialize language from localStorage
+      document.addEventListener('DOMContentLoaded', function() {
+        const saved = localStorage.getItem('chinaconnect_language');
+        if (saved === 'zh') {
+          document.documentElement.lang = 'zh';
+          document.getElementById('lang-current').textContent = '中';
+        }
+      });
+    </script>
+
+    <!-- Main Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- SOS Emergency Button and Cultural Warnings -->
+    <EmergencyWrapper client:load />
+    <CulturalWarningTrigger client:load />
+
+    <!-- Service Worker Registration for Offline Emergency -->
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered:', registration.scope);
+            })
+            .catch((error) => {
+              console.log('SW registration failed:', error);
+            });
+        });
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+      <div class="container-custom py-12">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <!-- Brand -->
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
+                CC
+              </div>
+              <span class="font-semibold text-lg">ChinaConnect</span>
+            </div>
+            <p class="text-gray-400 max-w-md">
+              Your trusted guide to exploring China. AI-powered restaurant recommendations, city guides, and travel tips.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-semibold mb-4">Cities</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="/city/beijing" class="hover:text-white transition-colors">Beijing</a></li>
+              <li><a href="/city/shanghai" class="hover:text-white transition-colors">Shanghai</a></li>
+              <li><a href="/city/guangzhou" class="hover:text-white transition-colors">Guangzhou</a></li>
+              <li><a href="/city/xian" class="hover:text-white transition-colors">Xi'an</a></li>
+              <li><a href="/city/chengdu" class="hover:text-white transition-colors">Chengdu</a></li>
+              <li><a href="/city/guilin" class="hover:text-white transition-colors">Guilin</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div>
+            <h4 class="font-semibold mb-4">Resources</h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li><a href="/food" class="hover:text-white transition-colors">Restaurants</a></li>
+              <li><a href="/emergency" class="hover:text-white transition-colors">Emergency Contacts</a></li>
+              <li><a href="/faq" class="hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="/about" class="hover:text-white transition-colors">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="text-sm text-gray-500">
+            &copy; 2026 ChinaConnect. All rights reserved.
+          </p>
+          <div class="flex items-center gap-4 text-sm text-gray-500">
+            <a href="/privacy" class="hover:text-white transition-colors">Privacy</a>
+            <a href="/terms" class="hover:text-white transition-colors">Terms</a>
+            <a href="/contact" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

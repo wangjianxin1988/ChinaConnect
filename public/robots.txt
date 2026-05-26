@@ -1,0 +1,56 @@
+# ChinaConnect robots.txt
+# SEO/GEO optimization - AI crawler friendly
+
+# All bots
+User-agent: *
+Allow: /
+
+# AI crawlers - explicit allow for SEO optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Sitemap
+Sitemap: https://chinaconnect.com/sitemap.xml
+Sitemap: https://chinaconnect.com/sitemap-baidu.xml
+
+# Crawl delay for polite bots (optional)
+Crawl-delay: 1

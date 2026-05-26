@@ -1,0 +1,675 @@
+{
+  "slug": "shanghai",
+  "name": "上海",
+  "nameEn": "Shanghai",
+  "country": "China",
+  "population": "24.87 million",
+  "coordinates": { "lat": 31.2304, "lng": 121.4737 },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Shanghai, China's economic powerhouse, is a dazzling metropolis where Art Deco architecture meets futuristic skyscrapers. Known as the 'Pearl of the Orient', it offers world-class dining, shopping on Nanjing Road, the historic Bund waterfront, and a vibrant nightlife scene. The city seamlessly blends Eastern and Western influences, creating a unique cosmopolitan atmosphere.",
+  "coverImage": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=1200",
+  "highlights": [
+    "The Bund - Historic waterfront boulevard",
+    "Oriental Pearl Tower - Iconic skyline landmark",
+    "Yu Garden - Classical Chinese garden",
+    "Nanjing Road - Premier shopping street",
+    "Xintiandi - Historic shikumen houses"
+  ],
+
+  "climate": {
+    "type": "Humid subtropical",
+    "bestMonths": ["March", "April", "May", "October", "November"],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "4C (39F)",
+    "tips": "Spring and autumn offer the most comfortable weather. Summers are hot and humid with frequent rain. Winters are cold but rarely snowy. Typhoon season is July-September. Pack layers and an umbrella."
+  },
+
+  "attractions": [
+    {
+      "id": "the-bund",
+      "name": "外滩",
+      "nameEn": "The Bund",
+      "category": "historical",
+      "description": "Shanghai's most iconic waterfront boulevard lined with 52 Gothic, Renaissance, and Art Deco buildings from the colonial era.",
+      "address": "Zhongshan East One Rd, Huangpu District",
+      "coordinates": { "lat": 31.2408, "lng": 121.49 },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Huangpu River views",
+        "Peace Hotel",
+        "Customs House clock tower",
+        "Night illuminations"
+      ],
+      "tips": "Best visited at sunset for golden hour photos. Walk from the Bund to Nanjing Road pedestrian street. Evening light show on the river."
+    },
+    {
+      "id": "nanjing-road",
+      "name": "南京路步行街",
+      "nameEn": "Nanjing Road Pedestrian Street",
+      "category": "modern",
+      "description": "The world's busiest shopping street, stretching 1.3km from People's Square to the Bund.",
+      "address": "Nanjing East Rd, Huangpu District",
+      "coordinates": { "lat": 31.235, "lng": 121.478 },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Modern shopping malls",
+        "Historic shops",
+        "Century-old brands",
+        "Street performers"
+      ],
+      "tips": "Start at People's Square and walk to the Bund. Look for Century 21 and Shein flagship stores."
+    },
+    {
+      "id": "yu-garden",
+      "name": "豫园",
+      "nameEn": "Yu Garden (Yuyuan)",
+      "category": "cultural",
+      "description": "A classical Chinese garden dating from the Ming dynasty with pavilions, halls, rockeries, and ponds.",
+      "address": "218 Anren St, Huangpu District",
+      "coordinates": { "lat": 31.2277, "lng": 121.4858 },
+      "openingHours": "09:00-17:00 (Garden), shops until 22:00",
+      "ticketPrice": "30 CNY (garden only), 50 CNY (with City God Temple)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Grand Rockery",
+        "Huge Jade Stone",
+        "Moon-viewing Pavilion",
+        "Old City God Temple"
+      ],
+      "tips": "Arrive early to avoid crowds. The surrounding Yuyuan Bazaar is great for souvenirs and local snacks."
+    },
+    {
+      "id": "shanghai-tower",
+      "name": "上海中心大厦",
+      "nameEn": "Shanghai Tower",
+      "category": "modern",
+      "description": "China's tallest building and the world's second tallest, with a 118th floor observation deck offering panoramic city views.",
+      "address": "501 Yincheng Middle Rd, Pudong",
+      "coordinates": { "lat": 31.235, "lng": 121.5018 },
+      "openingHours": "08:30-22:00",
+      "ticketPrice": "180 CNY (upper floors), 120 CNY (94F)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Seated cable cars inside",
+        "Sky Lobby",
+        "360 city views",
+        "Cloud technology exhibition"
+      ],
+      "tips": "Book online to avoid queues. Best time is sunset. Combine with visit to nearby Shanghai World Financial Center."
+    },
+    {
+      "id": "xintiandi",
+      "name": "新天地",
+      "nameEn": "Xintiandi",
+      "category": "cultural",
+      "description": "A trendy entertainment district featuring restored shikumen (stone gate) houses, upscale restaurants, bars, and boutique shops.",
+      "address": "Xintiandi, Huangpi District",
+      "coordinates": { "lat": 31.223, "lng": 121.4725 },
+      "openingHours": "Shops and restaurants 10:00-02:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Shikumen architecture",
+        "International restaurants",
+        "Nightlife",
+        "Shanghai Shikumen Museum"
+      ],
+      "tips": "Great for evening dining. The area has both upscale and casual options. Photogenic for sunset shots."
+    },
+    {
+      "id": "oriental-pearl",
+      "name": "东方明珠塔",
+      "nameEn": "Oriental Pearl Tower",
+      "category": "modern",
+      "description": "Shanghai's most recognizable landmark with observation decks, a rotating restaurant, and glass-bottomed skywalk.",
+      "address": "1 Century Ave, Pudong",
+      "coordinates": { "lat": 31.2397, "lng": 121.4999 },
+      "openingHours": "08:00-22:00",
+      "ticketPrice": "220 CNY (all decks), 180 CNY (upper spheres)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "351m observation deck",
+        "Space Module glass floor",
+        "Rotating restaurant",
+        "Shanghai history museum"
+      ],
+      "tips": "Evening tickets for best city lights. Combine with walk along the Bund for iconic skyline photos."
+    },
+    {
+      "id": "french-concession",
+      "name": "徐家汇/法租界",
+      "nameEn": "Former French Concession",
+      "category": "cultural",
+      "description": "Tree-lined streets, historic European architecture, trendy cafes, and boutiques in the former French settlement.",
+      "address": "Former French Concession area, Xuhui District",
+      "coordinates": { "lat": 31.213, "lng": 121.443 },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Wukang Rd historic buildings",
+        "Café culture",
+        "Boutique shopping",
+        "Tree-lined boulevards"
+      ],
+      "tips": "Best explored on foot or by bike. Visit on weekends for the Sunday brunch culture. Great area for photography."
+    },
+    {
+      "id": "shanghai-museum",
+      "name": "上海博物馆",
+      "nameEn": "Shanghai Museum",
+      "category": "cultural",
+      "description": "One of China's best museums with a world-class collection of ancient Chinese art, including bronzes, ceramics, and calligraphy.",
+      "address": "201 Renmin Ave, Huangpu District",
+      "coordinates": { "lat": 31.2303, "lng": 121.4736 },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient bronze collections",
+        "Ming and Qing ceramics",
+        "Chinese calligraphy",
+        "Jade exhibits"
+      ],
+      "tips": "Arrive early. Audio guides available. Combine with People's Square. Free entry but donation box welcomed."
+    },
+    {
+      "id": "disneyland",
+      "name": "上海迪士尼乐园",
+      "nameEn": "Shanghai Disneyland",
+      "category": "modern",
+      "description": "China's first Disney park with the world's largest castle, innovative rides, and Chinese-themed attractions.",
+      "address": "Disney Resort Rd, Pudong",
+      "coordinates": { "lat": 31.1412, "lng": 121.657 },
+      "openingHours": "09:00-21:00 (varies by season)",
+      "ticketPrice": "435 CNY (weekday), 545 CNY (weekend/holiday)",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Treasure Cove",
+        "TRON Lightcycle Power Run",
+        "Seven Dwarfs Mine Train",
+        "Evening fireworks"
+      ],
+      "tips": "Download the Shanghai Disneyland app. Arrive 30 min before opening. Buy Quick Pass for popular rides. Wear comfortable shoes."
+    },
+    {
+      "id": "maglev",
+      "name": "磁悬浮列车",
+      "nameEn": "Maglev Train Experience",
+      "category": "modern",
+      "description": "The world's fastest commercial magnetic levitation train, reaching 431 km/h on the 30km airport link.",
+      "address": "Longyang Rd Station, Pudong",
+      "coordinates": { "lat": 31.2068, "lng": 121.558 },
+      "openingHours": "06:45-21:40",
+      "ticketPrice": "50 CNY (single ride), 80 CNY (round trip including metro)",
+      "recommendedVisitTime": "15 minutes",
+      "highlights": [
+        "431 km/h top speed",
+        "Sleek futuristic design",
+        "Airport connection",
+        "Science exhibit at station"
+      ],
+      "tips": "Worth taking just for the experience even if not going to the airport. The 8-minute ride is thrilling."
+    },
+    {
+      "id": "china-science",
+      "name": "上海科技馆",
+      "nameEn": "Shanghai Science and Technology Museum",
+      "category": "cultural",
+      "description": "A massive interactive science museum with IMAX Dome Theater and hands-on exhibits for all ages.",
+      "address": "2000 Century Ave, Pudong",
+      "coordinates": { "lat": 31.218, "lng": 121.543 },
+      "openingHours": "09:00-17:15 (Closed Monday)",
+      "ticketPrice": "45 CNY (basic), 120 CNY (with IMAX)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "IMAX Dome Theater",
+        "Human Body exhibition",
+        "Robotics zone",
+        "Space exploration"
+      ],
+      "tips": "Great for families. Allow at least 3 hours. IMAX show highly recommended. Book tickets online."
+    }
+  ],
+
+  "restaurants": [
+    {
+      "id": "shanghai-1",
+      "name": "Ultraviolet by Paul Pairet",
+      "nameEn": "Ultraviolet",
+      "type": "michelin",
+      "star": 3,
+      "cuisine": "Avant-garde French",
+      "avgPrice": 6000,
+      "rating": 4.9,
+      "address": "6th Floor, 20 Huangpu Rd, near Bund",
+      "coordinates": { "lat": 31.238, "lng": 121.4895 },
+      "phone": "+86 21 6328 9897",
+      "hours": "Only dinner, by reservation",
+      "description": "Three Michelin star immersive dining experience by Chef Paul Pairet. 20 courses over 4 hours in a multi-sensory room.",
+      "dishHighlights": ["A la候爵的鹅肝", "Sensory dessert", "The olive"],
+      "tags": ["fine-dining", "unique-experience", "reservation-months-ahead"]
+    },
+    {
+      "id": "shanghai-2",
+      "name": "唐阁",
+      "nameEn": "Tong Court",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 800,
+      "rating": 4.8,
+      "address": "New Hastings Hotel, 88 East Nanjing Rd, Huangpu",
+      "coordinates": { "lat": 31.234, "lng": 121.4775 },
+      "phone": "+86 21 6323 7788",
+      "hours": "11:30-14:30, 18:00-22:00",
+      "description": "Two Michelin star Cantonese restaurant with impeccable dim sum and refined Shanghai cuisine.",
+      "dishHighlights": [
+        "Steamed spotted garoupa",
+        "Braised abalone with mushroom",
+        "Egg white with crab roe"
+      ],
+      "tags": ["cantonese", "fine-dining", "business-dining"]
+    },
+    {
+      "id": "shanghai-3",
+      "name": "吉品轩",
+      "nameEn": "Ji Pin Xuan",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Modern Chinese",
+      "avgPrice": 1500,
+      "rating": 4.8,
+      "address": "6th Floor, 182 Wukang Rd, Xuhui",
+      "coordinates": { "lat": 31.217, "lng": 121.4505 },
+      "phone": "+86 21 3330 0888",
+      "hours": "12:00-14:00, 18:00-21:00",
+      "description": "Two Michelin star modern Chinese restaurant by Chef Eric Wang, showcasing creative fusion of regional cuisines.",
+      "dishHighlights": ["Salted egg yolk chicken", "Squirrel fish", "Red-braised pork"],
+      "tags": ["fine-dining", "modern-chinese", "romantic"]
+    },
+    {
+      "id": "shanghai-4",
+      "name": "御宝轩",
+      "nameEn": "Imperial Treasure",
+      "type": "blackpearl",
+      "diamond": 3,
+      "cuisine": "Cantonese",
+      "avgPrice": 500,
+      "rating": 4.7,
+      "address": "ifc Mall, 8 Century Ave, Pudong",
+      "coordinates": { "lat": 31.238, "lng": 121.5005 },
+      "phone": "+86 21 5012 0668",
+      "hours": "11:00-15:00, 18:00-22:00",
+      "description": "Three diamond Black Pearl Cantonese restaurant with exceptional dim sum and premium seafood.",
+      "dishHighlights": ["Crispy suckling pig", "Steamed dim sum", "Braised seafood"],
+      "tags": ["cantonese", "dim-sum", "luxury"]
+    },
+    {
+      "id": "shanghai-5",
+      "name": "上海老饭店",
+      "nameEn": "Shanghai Lao Fan Dian",
+      "type": "local",
+      "cuisine": "Shanghainese",
+      "avgPrice": 120,
+      "rating": 4.5,
+      "address": "Near Yuyuan Garden",
+      "coordinates": { "lat": 31.2267, "lng": 121.4848 },
+      "description": "Legendary restaurant serving authentic Shanghainese cuisine for over 40 years.",
+      "dishHighlights": [
+        "Braised pork belly",
+        "Wonton soup",
+        "Braised pork belly with brown sauce"
+      ],
+      "tags": ["local", "shanghai-cuisine", "traditional"]
+    },
+    {
+      "id": "shanghai-6",
+      "name": "南翔小笼",
+      "nameEn": "Nanxiang Steamed Bun Restaurant",
+      "type": "local",
+      "cuisine": "Shanghainese",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Yuyuan Bazaar, 88 Anren St, Huangpu",
+      "coordinates": { "lat": 31.2273, "lng": 121.4853 },
+      "hours": "10:00-21:00",
+      "description": "Famous for authentic nanxiang xiaolongbao (steamed soup dumplings) in business since 1900.",
+      "dishHighlights": ["Soup dumplings (xiaolongbao)", "Crab roe xiaolongbao", "Pan-fried buns"],
+      "tags": ["local", "dim-sum", "historic", "must-try"]
+    },
+    {
+      "id": "shanghai-7",
+      "name": "绿波廊",
+      "nameEn": "Lu Bo Lang",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "Yuyuan Bazaar, 59 Anren St, Huangpu",
+      "coordinates": { "lat": 31.227, "lng": 121.4845 },
+      "phone": "+86 21 6328 0602",
+      "hours": "11:00-13:30, 17:00-20:30",
+      "description": "Historic restaurant in Yuyuan since 1940s, known for refined Shanghai snacks and Empress Dowager's favorite dishes.",
+      "dishHighlights": [
+        "Sweet and sour spare ribs",
+        "Yam paste with egg white",
+        "Delicate pastries"
+      ],
+      "tags": ["local", "historic", "shanghai-cuisine", "location"]
+    },
+    {
+      "id": "shanghai-8",
+      "name": "光明邨大酒家",
+      "nameEn": "Guangming Village",
+      "type": "local",
+      "cuisine": "Shanghai",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "22 Chengdu North Rd, Huangpu",
+      "coordinates": { "lat": 31.2355, "lng": 121.473 },
+      "description": "Popular local spot always packed with locals for authentic Shanghai dishes and legendary fresh mooncakes.",
+      "dishHighlights": ["Fresh mooncakes", "Braised pork belly", "Steamed fish head"],
+      "tags": ["local", "shanghai-cuisine", "popular", "no-reservation"]
+    },
+    {
+      "id": "shanghai-9",
+      "name": "新天地朗廷酒店唐阁",
+      "nameEn": "Tin Lung Heen",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 1000,
+      "rating": 4.8,
+      "address": "Langham Hotel, 99 Madang Rd, Huangpu",
+      "coordinates": { "lat": 31.2225, "lng": 121.4725 },
+      "phone": "+86 21 6888 3888",
+      "hours": "11:30-14:30, 18:00-22:00",
+      "description": "Two Michelin star Cantonese restaurant with stunning Bund views and exquisite dim sum.",
+      "dishHighlights": [
+        "Abalone with dried scallop",
+        "Wagyu beef with black pepper",
+        "Bird's nest dessert"
+      ],
+      "tags": ["fine-dining", "cantonese", "bund-views", "business"]
+    },
+    {
+      "id": "shanghai-10",
+      "name": "夜上海",
+      "nameEn": "Yi Long Court",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Shanghai",
+      "avgPrice": 800,
+      "rating": 4.8,
+      "address": "Waldorf Astoria Shanghai, 20 Wuchang Rd, Huangpu",
+      "coordinates": { "lat": 31.2358, "lng": 121.4835 },
+      "phone": "+86 21 6328 9898",
+      "hours": "11:30-14:00, 18:00-21:30",
+      "description": "One Michelin star restaurant serving refined Shanghai cuisine in the historic Waldorf Astoria building.",
+      "dishHighlights": [
+        "Steamed crab with egg white",
+        "Braised hairy crab",
+        "Red wine braised short rib"
+      ],
+      "tags": ["fine-dining", "shanghai-cuisine", "historic", "romantic"]
+    }
+  ],
+
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major international airports worldwide",
+        "to": "Shanghai Pudong International Airport (PVG) / Hongqiao Airport (SHA)",
+        "duration": "Varies (10-14 hours from Europe/Americas)",
+        "price": "1200-9000 CNY",
+        "frequency": "Multiple daily flights",
+        "tips": "PVG handles international flights, SHA mainly domestic. Maglev train from PVG reaches 430km/h."
+      },
+      {
+        "type": "train",
+        "from": "Beijing (4.5h), Hangzhou (1h), Suzhou (0.5h)",
+        "to": "Shanghai Hongqiao Railway Station / Shanghai Railway Station",
+        "duration": "0.5-4.5 hours",
+        "price": "200-900 CNY",
+        "frequency": "Multiple daily departures",
+        "tips": "High-speed trains extremely punctual. Hongqiao station connects to metro and airports."
+      }
+    ],
+    "local": {
+      "metro": [
+        "19 lines covering all major areas",
+        "Single ride: 3-10 CNY depending on distance",
+        "Longest automatic driverless system globally",
+        "English signage at major stations"
+      ],
+      "bus": [
+        "Extensive network, less tourist-friendly",
+        "Most routes operate 05:00-23:00",
+        "Use Moovit app for navigation"
+      ],
+      "taxi": [
+        "Starting fare: 14 CNY (first 3km)",
+        "Waiting: 0.8 CNY per minute",
+        "Didi app preferred for non-Chinese speakers",
+        "Van option available for groups"
+      ],
+      "bike": [
+        "Hellobike, Mobike widely available",
+        "Unlock: 1 CNY, then 0.15 CNY per minute",
+        "Designated bike lanes on major roads",
+        "Electric bikes popular but require license"
+      ]
+    }
+  },
+
+  "hotels": [
+    {
+      "name": "上海半岛酒店",
+      "nameEn": "The Peninsula Shanghai",
+      "budget": "luxury",
+      "priceRange": "3000-6000 CNY/night",
+      "address": "32 The Bund, 32 Zhongshan Dong Yi Rd, Huangpu",
+      "coordinates": { "lat": 31.2385, "lng": 121.4885 },
+      "rating": 4.9,
+      "highlights": [
+        "Historic Bund location",
+        "Best afternoon tea in Shanghai",
+        "Indoor pool with Bund views",
+        "Yacht tours available"
+      ],
+      "bookingTips": "Request Bund-view rooms. Best deals through hotel loyalty programs."
+    },
+    {
+      "name": "上海外滩华尔道夫酒店",
+      "nameEn": "Waldorf Astoria Shanghai",
+      "budget": "luxury",
+      "priceRange": "2800-5000 CNY/night",
+      "address": "2 The Bund, 20 Zhongshan Dong Yi Rd, Huangpu",
+      "coordinates": { "lat": 31.239, "lng": 121.489 },
+      "rating": 4.8,
+      "highlights": [
+        "Heritage building connected to new tower",
+        "Charming Long Bar",
+        "Central location"
+      ],
+      "bookingTips": "Long Bar for cocktails is legendary. Book bar seats in advance."
+    },
+    {
+      "name": "上海金茂君悦大酒店",
+      "nameEn": "Grand Hyatt Shanghai",
+      "budget": "mid",
+      "priceRange": "1200-2000 CNY/night",
+      "address": "88 Jinjiang Rd, Pudong",
+      "coordinates": { "lat": 31.221, "lng": 121.5025 },
+      "rating": 4.6,
+      "highlights": ["Sky Lobby on 54th floor", "Amazing city views", "Connected to IFC mall"],
+      "bookingTips": "Higher floors offer better views. Check for weekend packages."
+    },
+    {
+      "name": "上海希尔顿酒店",
+      "nameEn": "Hilton Shanghai",
+      "budget": "mid",
+      "priceRange": "900-1500 CNY/night",
+      "address": "1 Fatherland Rd, Huangpu",
+      "coordinates": { "lat": 31.2285, "lng": 121.4805 },
+      "rating": 4.5,
+      "highlights": ["Near People's Square and metro", "Good breakfast buffet", "Reliable brand"],
+      "bookingTips": "Good central location for first-time visitors."
+    },
+    {
+      "name": "上海艾迪逊酒店",
+      "nameEn": "The Shanghai EDITION",
+      "budget": "mid",
+      "priceRange": "1500-2500 CNY/night",
+      "address": "199 Nanjing Rd East, Huangpu",
+      "coordinates": { "lat": 31.231, "lng": 121.4815 },
+      "rating": 4.7,
+      "highlights": ["Trendy design", "Excellent rooftop bar", "Central location"],
+      "bookingTips": "Rooftop bar is popular - book ahead."
+    }
+  ],
+
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Dominant payment method in Shanghai, accepted everywhere",
+      "howToUse": [
+        "Download Alipay before arrival",
+        "Bind international credit card or open local bank account",
+        "Scan merchant QR code to pay"
+      ],
+      "tips": [
+        "Most modern city - foreign cards work at more places",
+        "Still download for backup",
+        "Some small vendors may only accept local cards"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Essential for local transactions and WeChat services",
+      "howToUse": [
+        "WeChat app required",
+        "Link card through WeChat Pay in settings",
+        "QR code scanning for payments"
+      ],
+      "tips": [
+        "English version available in settings",
+        "Required for Didi打车",
+        "Good for group payments"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Accepted but increasingly rare in Shanghai",
+      "howToUse": ["ATMs at every bank", "ICBC, HSBC, Standard Chartered have English interfaces"],
+      "tips": ["Keep 200-500 CNY as backup", "Bank cards generally work at any ATM"]
+    },
+    {
+      "method": "Apple Pay / Contactless",
+      "icon": "applepay",
+      "description": "Increasingly accepted at international venues and convenience stores",
+      "howToUse": [
+        "Works at 7-Eleven, FamilyMart, some Starbucks",
+        "Add international card to Apple Wallet"
+      ],
+      "tips": ["Convenient for quick purchases", "Not universal but growing acceptance"]
+    }
+  ],
+
+  "culturalTips": [
+    {
+      "category": "language",
+      "title": "Shanghainese Dialect",
+      "content": "While Mandarin is universally understood, Shanghainese (上海话) is the local dialect. Many locals appreciate when visitors try a few phrases.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Dining Scene",
+      "content": "Shanghai is China's culinary capital with incredible diversity. Reservations essential for popular restaurants. Peak dining is 7-8pm.",
+      "importance": "high"
+    },
+    {
+      "category": "fashion",
+      "title": "Dress Code",
+      "content": "Shanghai is fashion-forward. Smart casual is standard for restaurants and bars. Some upscale venues have dress codes.",
+      "importance": "medium"
+    },
+    {
+      "category": "timing",
+      "title": "City Rhythm",
+      "content": "Shanghai is a 24-hour city. Shops often open late, and many restaurants take last orders at 9-10pm. Night markets come alive after 8pm.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Social Customs",
+      "content": "Punctuality valued in business. Tipping not expected but appreciated in upscale establishments. Business cards exchanged with both hands.",
+      "importance": "medium"
+    }
+  ],
+
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "上海急救中心",
+      "nameEn": "Shanghai Emergency Center",
+      "phone": "120",
+      "address": "Citywide coverage",
+      "notes": "English support improving"
+    },
+    {
+      "type": "police",
+      "name": "上海市公安局",
+      "nameEn": "Shanghai Public Security Bureau",
+      "phone": "110",
+      "address": "Various locations",
+      "notes": "Tourist Police: 63268823"
+    },
+    {
+      "type": "hospital",
+      "name": "上海和睦家医院",
+      "nameEn": "Shanghai United Family Hospital",
+      "phone": "+86 21 2216 3999",
+      "address": "Shanghai Centre, 1376 Nanjing West Rd, Jing'an",
+      "coordinates": { "lat": 31.225, "lng": 121.4495 },
+      "notes": "English-speaking, accepts international insurance"
+    },
+    {
+      "type": "hospital",
+      "name": "上海瑞金医院",
+      "nameEn": "Ruijin Hospital",
+      "phone": "+86 21 6437 0045",
+      "address": "197 Ruijin Er Rd, Huangpu District",
+      "coordinates": { "lat": 31.214, "lng": 121.4675 },
+      "notes": "Top public hospital, ER available"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻上海总领事馆",
+      "nameEn": "US Consulate General Shanghai",
+      "phone": "+86 21 8011 2400",
+      "address": "Westgate Mall, 8 Century Ave, Pudong",
+      "coordinates": { "lat": 31.2385, "lng": 121.5005 },
+      "notes": "ACS: +86 21 8011 2400"
+    }
+  ],
+
+  "quickFacts": {
+    "language": "Mandarin Chinese + Shanghainese dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa (144h transit visa available at airport for eligible nationalities)",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/C/I plugs",
+    "water": "Tap water safe but recommended to use filtered or bottled"
+  }
+}

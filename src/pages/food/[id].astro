@@ -1,0 +1,115 @@
+---
+import RestaurantDetail from "@/components/food/RestaurantDetail";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { cities } from "@/data/food/cities";
+import { getRestaurantById, restaurants } from "@/data/food/restaurants";
+
+export function getStaticPaths() {
+  return restaurants.map((r) => ({
+    params: { id: r.id },
+  }));
+}
+
+const { id } = Astro.params;
+const restaurant = getRestaurantById(id as string);
+
+if (!restaurant) {
+  return Astro.redirect("/food");
+}
+
+const city = cities.find((c) => c.id === restaurant.city);
+const sameCityRestaurants = restaurants
+  .filter((r) => r.city === restaurant.city && r.id !== restaurant.id)
+  .slice(0, 4);
+
+const TYPE_CONFIG = {
+  michelin: { label: "米其林", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
+  blackpearl: {
+    label: "黑珍珠",
+    icon: "💎",
+    diamonds: restaurant.diamond,
+    color: "text-[#2D1B4E]",
+  },
+  local: { label: "本地推荐", icon: "🔥", color: "text-[#B8383D]" },
+};
+
+const config = TYPE_CONFIG[restaurant.type];
+
+// Convert to RestaurantDetail-compatible format
+const restaurantDetail = {
+  id: restaurant.id,
+  name: restaurant.name,
+  name_en: restaurant.nameEn,
+  cuisine: restaurant.cuisine,
+  rating: restaurant.rating,
+  review_count: 0,
+  avg_cost: restaurant.avgPrice,
+  address: restaurant.address,
+  address_zh: restaurant.addressEn,
+  images: restaurant.imageUrl ? [restaurant.imageUrl] : [],
+  tags: restaurant.tags || [],
+  michelin_stars: restaurant.star,
+  heizhenzhu_rank: restaurant.diamond,
+  blogger_recommended: !!restaurant.bloggerName,
+  blogger_name: restaurant.bloggerName,
+  opening_hours: restaurant.hours ? { regular: restaurant.hours } : undefined,
+  avg_meal_duration: 60,
+  booking_required: false,
+  phone: restaurant.phone,
+  description: restaurant.description,
+  description_zh: restaurant.descriptionEn,
+};
+---
+
+<BaseLayout title={`${restaurant.name} - 美食推荐`}>
+  <div class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-4xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href={`/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
+            <span>←</span>
+            <span>返回</span>
+          </a>
+          <span class={`text-sm font-medium ${config.color}`}>
+            {config.icon} {config.label}
+            {restaurant.type === 'michelin' && restaurant.star && `${restaurant.star}星`}
+            {restaurant.type === 'blackpearl' && restaurant.diamond && `${restaurant.diamond}钻`}
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-6">
+      <!-- Restaurant Detail with Favorites and Reviews -->
+      <RestaurantDetail restaurant={restaurantDetail} client:load />
+
+      {/* Similar Restaurants */}
+      {sameCityRestaurants.length > 0 && (
+        <div class="bg-white rounded-xl shadow-md p-6 mt-6">
+          <h2 class="text-lg font-bold text-gray-900 mb-4">附近其他餐厅</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {sameCityRestaurants.map(r => (
+              <a href={`/food/${r.id}`} class="block group">
+                {r.imageUrl && (
+                  <div class="h-24 rounded-lg overflow-hidden mb-2">
+                    <img src={r.imageUrl} alt={r.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  </div>
+                )}
+                <p class="font-medium text-gray-900 text-sm line-clamp-1">{r.name}</p>
+                <p class="text-xs text-gray-500">{r.cuisine}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </main>
+
+    {/* Footer */}
+    <footer class="bg-white border-t border-gray-200 mt-12">
+      <div class="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+        <p>ChinaConnect 美食推荐</p>
+      </div>
+    </footer>
+  </div>
+</BaseLayout>

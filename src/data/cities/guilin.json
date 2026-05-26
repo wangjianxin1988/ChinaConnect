@@ -1,0 +1,801 @@
+{
+  "slug": "guilin",
+  "name": "桂林",
+  "nameEn": "Guilin",
+  "country": "China",
+  "population": "5.3 million",
+  "coordinates": {
+    "lat": 25.2744,
+    "lng": 110.29
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Guilin, 'Forest of Osmanthus', is famous for its stunning karst landscape of limestone peaks rising from the Li River. The city has been inspiring Chinese painters and poets for centuries with its ethereal scenery. Besides natural beauty, it offers cave explorations, cycling along the river, bamboo raft trips, and the vibrant Sun and Moon Pagodas.",
+  "coverImage": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=1200",
+  "highlights": [
+    "Li River Cruise - Karst landscape from water",
+    "Elephant Trunk Hill - City landmark",
+    "Reed Flute Cave - Rainbow-lit underground wonder",
+    "Longji Rice Terraces - Dragons backbone terraces",
+    "Yangshuo - Cycling and bamboo rafting"
+  ],
+  "climate": {
+    "type": "Subtropical humid",
+    "bestMonths": [
+      "April",
+      "May",
+      "June",
+      "September",
+      "October"
+    ],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "9C (48F)",
+    "tips": "Best visited in spring and autumn. Summer is hot and humid with occasional flooding. Winter mild but can be foggy. 'Guilin rain' - frequent afternoon showers create misty scenery. Pack rain gear."
+  },
+  "attractions": [
+    {
+      "id": "elephant-trunk-hill",
+      "name": "象鼻山",
+      "nameEn": "Elephant Trunk Hill",
+      "category": "natural",
+      "description": "The iconic karst formation resembling an elephant drinking from the river, Guilin's symbol.",
+      "address": "Shanxian Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2635,
+        "lng": 110.2975
+      },
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "55 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Water moon cave",
+        "Pine and stone viewing",
+        "Sunrise views"
+      ],
+      "tips": "Best viewed from water at sunset. Many photographers shoot from the island park opposite. Free viewing outside park."
+    },
+    {
+      "id": "li-river-cruise",
+      "name": "漓江漂流",
+      "nameEn": "Li River Cruise",
+      "category": "natural",
+      "description": "The legendary cruise through the most beautiful section of the Li River, featuring 20 RMB note scenic spots.",
+      "address": "Zhujiang Port, 70km from Guilin",
+      "coordinates": {
+        "lat": 25.1835,
+        "lng": 110.4275
+      },
+      "openingHours": "Departs 08:00-09:00 daily",
+      "ticketPrice": "210-450 CNY (4-5 hours to Yangshuo)",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "Nine Horse Mural",
+        "Yellow布袍Mountain",
+        "Old fisherman with cormorants",
+        "Villages along river"
+      ],
+      "tips": "Book through hotel. Lower deck cheaper but upper deck for photos. Combine with Yangshuo stay. Misty mornings most beautiful."
+    },
+    {
+      "id": "reed-flute-cave",
+      "name": "芦笛岩",
+      "nameEn": "Reed Flute Cave",
+      "category": "natural",
+      "description": "A massive cave system with illuminated stalactites and stalagmites in rainbow colors, 240 meters deep.",
+      "address": "Insect Mountain, Guilin",
+      "coordinates": {
+        "lat": 25.3135,
+        "lng": 110.3535
+      },
+      "openingHours": "07:30-17:30",
+      "ticketPrice": "100 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Crystal Palace",
+        "Dragon Column",
+        "Vegetable field",
+        "Colorful lighting"
+      ],
+      "tips": "Audio guide essential. The cave is massive - allow time. Combine with nearby Panda Garden."
+    },
+    {
+      "id": "longji-terraces",
+      "name": "龙脊梯田",
+      "nameEn": "Longji Rice Terraces",
+      "category": "natural",
+      "description": "The 'Dragon's Backbone' terraced fields spanning 66 sq km, built over 600 years by local Zhuang and Yao people.",
+      "address": "Longsheng County, 100km from Guilin",
+      "coordinates": {
+        "lat": 25.7835,
+        "lng": 110.1135
+      },
+      "openingHours": "Open 24 hours (villages have check points)",
+      "ticketPrice": "80 CNY (Ping'an), 110 CNY (Jinkeng)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Ping'an Zhuang Village",
+        "Jinkeng Yao Village",
+        "Golden Sunrise",
+        "Terrace views"
+      ],
+      "tips": "Stay overnight for sunrise. Walking between villages is magical. Best visited May-June for water, Sep-Oct for harvest."
+    },
+    {
+      "id": "yangshuo",
+      "name": "阳朔",
+      "nameEn": "Yangshuo",
+      "category": "cultural",
+      "description": "A charming town famous for cycling, bamboo rafting, rock climbing, and West Street's international vibe.",
+      "address": "Yangshuo County, 65km from Guilin",
+      "coordinates": {
+        "lat": 24.7795,
+        "lng": 110.4935
+      },
+      "openingHours": "Always open",
+      "ticketPrice": "Varies by attraction",
+      "recommendedVisitTime": "2-3 days",
+      "highlights": [
+        "West Street (Xi Street)",
+        "Bike to Jiuzhou",
+        "River bamboo rafting",
+        "Impression Liu Sanjie show"
+      ],
+      "tips": "Best town to rent e-bikes. Choose bamboo raft over motor boats for Li River. Evening light show is spectacular."
+    },
+    {
+      "id": "fubo-rock",
+      "name": "伏波山",
+      "nameEn": "Fubo (Wave-Subduing) Hill",
+      "category": "natural",
+      "description": "A karst peak near the city center with a Buddhist temple carved into the rock and excellent city views.",
+      "address": "1 Fubo Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2945
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "30 CNY",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Buddhist caves",
+        "1000 Buddha Cliff",
+        "City panoramic views",
+        "Hole through the mountain"
+      ],
+      "tips": "Good alternative if you don't want to pay for Elephant Trunk Hill. Easy to combine with Diecai Mountain walk."
+    },
+    {
+      "id": "diecai-mountain",
+      "name": "叠彩山",
+      "nameEn": "Diecai (Folded Brocade) Mountain",
+      "category": "natural",
+      "description": "A hill in northern Guilin with excellent views over the city, named for its layers of colored rock resembling folded silk.",
+      "address": "Diecai Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2915,
+        "lng": 110.2845
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "35 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Chen Xian Pavilion at peak",
+        "Wind Cave",
+        "City and river views",
+        "Ancient banyan trees"
+      ],
+      "tips": "Combine with Fubo Hill for a morning tour. Wear comfortable shoes. Best visited at sunrise for city views."
+    },
+    {
+      "id": "sun-moon-pagodas",
+      "name": "日月双塔",
+      "nameEn": "Sun and Moon Pagodas",
+      "category": "cultural",
+      "description": "Two illuminated pagodas on a lake in the city center, one gold (sun) and one silver (moon), beautiful at night.",
+      "address": "Shanhu Lake, Guilin",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2895
+      },
+      "openingHours": "Open 24 hours (illuminated 18:00-22:00)",
+      "ticketPrice": "Free (viewing), 35 CNY (entering pagodas)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Golden Sun Pagoda (41m)",
+        "Silver Moon Pagoda (35m)",
+        "Night illuminations",
+        "Lakeside promenade"
+      ],
+      "tips": "Best viewed at night when illuminated. The reflection on the lake is magical. Great for photography."
+    },
+    {
+      "id": "silver-cave",
+      "name": "银子岩",
+      "nameEn": "Silver Cave (Yinzhu Cave)",
+      "category": "natural",
+      "description": "A spectacular karst cave in Yangshuo with thousands of stalactites and stalagmites, earning its name from their silver-like shimmer.",
+      "address": "Maling Village, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7535,
+        "lng": 110.4935
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "80 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Silver waterfall",
+        "Snow Mountain waterfall",
+        "Guangxi's largest cave",
+        "Colorful lighting"
+      ],
+      "tips": "Less crowded than Reed Flute Cave. Best visited in afternoon. Take bus from Yangshuo bus station."
+    },
+    {
+      "id": "impression-sanmei",
+      "name": "印象刘三姐",
+      "nameEn": "Impression Liu Sanjie",
+      "category": "cultural",
+      "description": "Zhang Yimou's spectacular outdoor musical set on the Li River in Yangshuo, featuring 600+ performers.",
+      "address": "Yangshuo County, Guilin",
+      "coordinates": {
+        "lat": 24.7645,
+        "lng": 110.4955
+      },
+      "openingHours": "Shows at 20:00 nightly (weather permitting)",
+      "ticketPrice": "198-680 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "600+ performers on water",
+        "Zhang Yimou directed",
+        "Mountain backdrop",
+        "Fireworks finale"
+      ],
+      "tips": "Book through hotel or online. Rain ponchos provided. Best seats are center-front. Book one day ahead minimum."
+    },
+    {
+      "id": "guilin-measurement",
+      "name": "桂林两江四湖",
+      "nameEn": "Guangxi Two Rivers and Four Lakes",
+      "category": "natural",
+      "description": "A boat tour through Guilin's interconnected lakes and rivers, passing under 19 ancient bridges illuminated at night.",
+      "address": "Departs from various docks",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2895
+      },
+      "openingHours": "Day cruises 09:00-17:00, Night cruises 18:30-22:00",
+      "ticketPrice": "90 CNY (day), 210 CNY (night)",
+      "recommendedVisitTime": "1.5-2 hours",
+      "highlights": [
+        "19 ancient bridges",
+        "Night illuminations",
+        "Ancient watergates",
+        "City views from water"
+      ],
+      "tips": "Night cruise more scenic. Combine with Elephant Trunk Hill if time-limited. Book through hotel for pickup."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "guilin-1",
+      "name": "椿记烧鹅",
+      "nameEn": "Chun Ji Roast Goose",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "20 Diecai Rd, Diecai District",
+      "coordinates": {
+        "lat": 25.2855,
+        "lng": 110.2875
+      },
+      "phone": "+86 773 280 8888",
+      "hours": "11:00-14:30, 17:00-21:30",
+      "description": "Popular local restaurant famous for roast goose and excellent Guangxi cuisine.",
+      "dishHighlights": [
+        "Roast goose",
+        "Beer fish",
+        "Oils duck"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "popular"
+      ]
+    },
+    {
+      "id": "guilin-2",
+      "name": "阿甘酒家",
+      "nameEn": "Gan Restaurant",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Near Elephant Trunk Hill",
+      "coordinates": {
+        "lat": 25.2635,
+        "lng": 110.2975
+      },
+      "hours": "10:30-21:30",
+      "description": "Popular restaurant with good views and authentic local dishes.",
+      "dishHighlights": [
+        "Beer fish",
+        "Guilin rice noodles",
+        "Stir-fried vegetables"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "scenic"
+      ]
+    },
+    {
+      "id": "guilin-3",
+      "name": "老东江米粉",
+      "nameEn": "Lao Dongjiang Rice Noodles",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 20,
+      "rating": 4.7,
+      "address": "2 Diecai Rd, near Diecai Pavilion",
+      "coordinates": {
+        "lat": 25.2895,
+        "lng": 110.2865
+      },
+      "description": "Legendary rice noodle shop (since 1977) - locals line up daily for breakfast.",
+      "dishHighlights": [
+        "Guilin rice noodles",
+        "Slow-cooked soup base",
+        "Variety of toppings"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "breakfast"
+      ]
+    },
+    {
+      "id": "guilin-4",
+      "name": "啤酒鱼",
+      "nameEn": "Guilin Beer Fish Restaurants",
+      "type": "local",
+      "cuisine": "Beer fish",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Various locations in Guilin and Yangshuo",
+      "coordinates": {
+        "lat": 25.2735,
+        "lng": 110.2935
+      },
+      "description": "Yangshuo specialty - fish cooked in beer sauce, found everywhere in area.",
+      "dishHighlights": [
+        "Beer fish",
+        "Pepper chicken",
+        "Local specialties"
+      ],
+      "tags": [
+        "local",
+        "yangshuo-specialty",
+        "casual"
+      ]
+    },
+    {
+      "id": "guilin-5",
+      "name": "芒果帮",
+      "nameEn": "Mango Bang",
+      "type": "local",
+      "cuisine": "Mango specialty",
+      "avgPrice": 30,
+      "rating": 4.4,
+      "address": "Near Elephant Trunk Hill",
+      "coordinates": {
+        "lat": 25.2625,
+        "lng": 110.2985
+      },
+      "description": "Popular mango juice and dessert shop using Guilin's famous mangoes.",
+      "dishHighlights": [
+        "Mango juice",
+        "Mango pudding",
+        "Mango ice cream"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "refreshing"
+      ]
+    },
+    {
+      "id": "guilin-6",
+      "name": "小南国家宴",
+      "nameEn": "Xiao Nan Guo Jia Yan",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "6 Chengzhong Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2765,
+        "lng": 110.2915
+      },
+      "phone": "+86 773 583 2888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Popular restaurant serving authentic Guangxi cuisine with beautiful riverside setting.",
+      "dishHighlights": [
+        "Guilin rice noodles",
+        "Bamboo rice",
+        "Local specialty stew"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "river-view"
+      ]
+    },
+    {
+      "id": "guilin-7",
+      "name": "米粉自助",
+      "nameEn": "Guilin Rice Noodle Buffet",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Diecai District",
+      "coordinates": {
+        "lat": 25.2835,
+        "lng": 110.2855
+      },
+      "description": "Budget self-service rice noodle restaurant popular with locals. Unlimited toppings.",
+      "dishHighlights": [
+        "DIY rice noodles",
+        "Various broths",
+        "All-you-can-add toppings"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "budget",
+        "DIY"
+      ]
+    },
+    {
+      "id": "guilin-8",
+      "name": "阳朔西街餐厅",
+      "nameEn": "West Street Restaurants",
+      "type": "local",
+      "cuisine": "International/Local",
+      "avgPrice": 60,
+      "rating": 4.2,
+      "address": "West Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7805,
+        "lng": 110.4965
+      },
+      "description": "Yangshuo's famous pedestrian street with hundreds of restaurants serving both local and international cuisine.",
+      "dishHighlights": [
+        "Yangshuo beer fish",
+        "Fresh fruit shakes",
+        "Western food options"
+      ],
+      "tags": [
+        "local",
+        "yangshuo",
+        "international",
+        "busy"
+      ]
+    },
+    {
+      "id": "guilin-9",
+      "name": "荔浦芋",
+      "nameEn": "Lipu Taro Specialties",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 25.2735,
+        "lng": 110.2945
+      },
+      "description": "Specialty restaurants featuring Lipu taro dishes - a famous Guangxi ingredient.",
+      "dishHighlights": [
+        "Lipu taro pork belly",
+        "Fried taro slices",
+        "Taro hot pot"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "specialty"
+      ]
+    },
+    {
+      "id": "guilin-10",
+      "name": "桂花糕",
+      "nameEn": "Osmanthus Cake Vendors",
+      "type": "local",
+      "cuisine": "Guilin dessert",
+      "avgPrice": 10,
+      "rating": 4.3,
+      "address": "Night markets and food streets",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2905
+      },
+      "description": "Traditional osmanthus cakes and pastries - Guilin's signature sweet, made with osmanthus flowers.",
+      "dishHighlights": [
+        "Osmanthus cake",
+        "Osmanthus wine",
+        "Sweet osmanthus rice balls"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "guilin-specialty",
+        "street-food"
+      ]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major domestic airports, growing international routes",
+        "to": "Guilin Liangjiang International Airport (KWL)",
+        "duration": "Varies by origin",
+        "price": "600-3000 CNY",
+        "frequency": "Multiple daily flights",
+        "tips": "Airport 28km from city center. Airport bus (hourly, 20 CNY) to downtown. Taxis available."
+      },
+      {
+        "type": "train",
+        "from": "Guangzhou (2.5h), Shenzhen (3h), Beijing (10h)",
+        "to": "Guilin Railway Station / Guilin North Station",
+        "duration": "2.5-10 hours",
+        "price": "200-600 CNY",
+        "frequency": "Several daily departures",
+        "tips": "Guilin North for high-speed trains to/from Guangzhou, Shenzhen. Old station for trains to/from Beijing."
+      }
+    ],
+    "local": {
+      "metro": [
+        "Currently 2 lines being expanded",
+        "English signage limited",
+        "Bus network extensive"
+      ],
+      "bus": [
+        "Good bus connections between scenic areas",
+        "Tourist bus to Yangshuo and Longji",
+        "Local buses numbered"
+      ],
+      "taxi": [
+        "Starting fare: 7 CNY",
+        "Didi works but less common than cities",
+        "Negotiate price for tourist areas"
+      ],
+      "bike": [
+        "E-bikes widely available for rent",
+        "30-50 CNY per day in Yangshuo",
+        "Best way to explore karst scenery",
+        "Helmet recommended but not always provided"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "桂林香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Guilin",
+      "budget": "luxury",
+      "priceRange": "800-1800 CNY/night",
+      "address": "1 Shanmeng Rd, Diecai District",
+      "coordinates": {
+        "lat": 25.2915,
+        "lng": 110.2895
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Riverside location",
+        "Great views of karst",
+        "Spacious rooms"
+      ],
+      "bookingTips": "Request river-view rooms for best scenery."
+    },
+    {
+      "name": "桂林Club Med地中海俱乐部",
+      "nameEn": "Club Med Guilin",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "Lijiang National Park, Yanshan Town",
+      "coordinates": {
+        "lat": 25.1835,
+        "lng": 110.3535
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Karst surroundings",
+        "All-inclusive resort",
+        "Activities for all ages"
+      ],
+      "bookingTips": "Good for families. Book directly for best rates."
+    },
+    {
+      "name": "桂林喜来登饭店",
+      "nameEn": "Sheraton Guilin Hotel",
+      "budget": "mid",
+      "priceRange": "500-1000 CNY/night",
+      "address": "1 Binjiang Rd, Xiufeng District",
+      "coordinates": {
+        "lat": 25.2785,
+        "lng": 110.2875
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location on river",
+        "Walking distance to attractions",
+        "Good breakfast"
+      ],
+      "bookingTips": "Weekend rates often lower."
+    },
+    {
+      "name": "阳朔悦榕庄",
+      "nameEn": "Banyan Tree Yangshuo",
+      "budget": "luxury",
+      "priceRange": "2000-4500 CNY/night",
+      "address": "Yi Lu, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7635,
+        "lng": 110.4915
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Stunning karst views",
+        "Luxury spa",
+        "Private pool villas"
+      ],
+      "bookingTips": "Best luxury stay in the area. Book spa in advance."
+    },
+    {
+      "name": "阳朔花梦居客栈",
+      "nameEn": "Flowerdream Inn",
+      "budget": "budget",
+      "priceRange": "200-500 CNY/night",
+      "address": "Xi Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7815,
+        "lng": 110.4955
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central Xi Street location",
+        "Rooftop terrace",
+        "Friendly owners"
+      ],
+      "bookingTips": "Book ahead during peak season. Great for budget travelers."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Standard payment, accepted at most modern venues",
+      "howToUse": [
+        "Download before arrival",
+        "Bind international card",
+        "QR code payment"
+      ],
+      "tips": [
+        "Guilin less developed - some places only accept cash",
+        "Rural areas (Longji, Yangshuo) mostly cash",
+        "Download both Alipay and WeChat as backup"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Important in Guilin",
+      "howToUse": [
+        "WeChat app required",
+        "Link card"
+      ],
+      "tips": [
+        "Didi requires WeChat",
+        "Both apps useful"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Essential in Guilin - many local restaurants and vendors only accept cash",
+      "howToUse": [
+        "Keep 500-1000 CNY cash for rural areas",
+        "ATMs available but rural area access limited",
+        "Bamboo raft operators usually cash only"
+      ],
+      "tips": [
+        "Longji Rice Terraces area mostly cash",
+        "Yangshuo market vendors cash only",
+        "Exchange before heading to rural areas"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "ethnic",
+      "title": "Minority Cultures",
+      "content": "Guilin area home to Zhuang, Yao, and other minority groups. Longji Rice Terraces are farmed by Zhuang and Yao people. Respect local customs when visiting villages.",
+      "importance": "medium"
+    },
+    {
+      "category": "scenery",
+      "title": "Weather and Photography",
+      "content": "Misty weather creates the classic Guilin scenery - don't be disappointed by 'bad' weather. Early morning and evening light most magical. Rain creates mist and reflections.",
+      "importance": "medium"
+    },
+    {
+      "category": "cycling",
+      "title": "Yangshuo Cycling",
+      "content": "Cycling is the best way to explore Yangshuo's countryside. Rent e-bikes (50 CNY/day) and explore back roads. Follow rice paddies and karst peaks. Return before dark.",
+      "importance": "medium"
+    },
+    {
+      "category": "yangshuo",
+      "title": "Yangshuo Escape",
+      "content": "The Li River cruise to Yangshuo is magical but crowded. Consider staying overnight in Yangshuo and exploring by bike. The Western Street comes alive at night with hundreds of food stalls. Travelers from around the world gather here.",
+      "importance": "high"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "桂林急救中心",
+      "nameEn": "Guilin Emergency Center",
+      "phone": "120",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "police",
+      "name": "桂林市公安局",
+      "nameEn": "Guilin Public Security Bureau",
+      "phone": "110",
+      "address": "Various locations"
+    },
+    {
+      "type": "hospital",
+      "name": "桂林市人民医院",
+      "nameEn": "Guilin People's Hospital",
+      "phone": "+86 773 282 2410",
+      "address": "12 Wenming Rd, Diecai District",
+      "coordinates": {
+        "lat": 25.2905,
+        "lng": 110.2845
+      },
+      "notes": "Best public hospital in Guilin"
+    },
+    {
+      "type": "hospital",
+      "name": "阳朔县人民医院",
+      "nameEn": "Yangshuo County People's Hospital",
+      "phone": "+86 773 882 2450",
+      "address": "Chengzhong Rd, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7785,
+        "lng": 110.4945
+      },
+      "notes": "For emergencies in Yangshuo"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻广州总领事馆",
+      "nameEn": "Australian Consulate General Guangzhou",
+      "phone": "+86 20 3814 0128",
+      "address": "Guangzhou (nearest consular services for Guilin)",
+      "notes": "Nearest consular services - some countries may not have representation in Guilin"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese + local dialects",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa. 144h transit visa available at airport.",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Use bottled water - local water may upset stomach"
+  }
+}

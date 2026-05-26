@@ -1,0 +1,238 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+const guides = [
+  {
+    title: "Visa Guide",
+    titleCn: "签证指南",
+    icon: "📋",
+    description:
+      "Visa requirements, application process, and essential documents for entering China",
+    href: "/guide/visa",
+    stage: "Stage 1",
+    stageDescription: "Pre-departure Preparation",
+    color: "blue",
+  },
+  {
+    title: "Payment Guide",
+    titleCn: "支付指南",
+    icon: "💳",
+    description: "Alipay, WeChat Pay, cash, and tax refund procedures in China",
+    href: "/guide/payment",
+    stage: "Stages 2 & 10",
+    stageDescription: "Payment & Shopping",
+    color: "green",
+  },
+  {
+    title: "Communication Guide",
+    titleCn: "通讯指南",
+    icon: "📱",
+    description: "SIM/eSIM options, VPN setup, and essential apps for staying connected",
+    href: "/guide/communication",
+    stage: "Stage 3",
+    stageDescription: "Communication Setup",
+    color: "purple",
+  },
+  {
+    title: "Transport Guide",
+    titleCn: "交通指南",
+    icon: "🚄",
+    description: "Airport arrival, metro, bus, taxi, and inter-city transport options",
+    href: "/guide/transport",
+    stage: "Stages 4-7",
+    stageDescription: "Arrival to Inter-city",
+    color: "orange",
+  },
+  {
+    title: "Accommodation Guide",
+    titleCn: "住宿指南",
+    icon: "🏨",
+    description: "Hotel types, booking tips, check-in process, and staying comfortably",
+    href: "/guide/accommodation",
+    stage: "Stage 9",
+    stageDescription: "Accommodation",
+    color: "pink",
+  },
+  {
+    title: "Emergency Procedures",
+    titleCn: "紧急情况处理",
+    icon: "🚨",
+    description: "Lost passport, medical emergency, theft, scams, and embassy contacts",
+    href: "/guide/emergency-procedures",
+    stage: "Stage 11",
+    stageDescription: "Emergency Response",
+    color: "red",
+  },
+  {
+    title: "Departure Guide",
+    titleCn: "离境指南",
+    icon: "✈️",
+    description: "Tax refunds, airport transport, duty-free shopping, and departure checklist",
+    href: "/guide/departure",
+    stage: "Stage 12",
+    stageDescription: "Leaving China",
+    color: "indigo",
+  },
+  {
+    title: "Dining Guide",
+    titleCn: "餐饮指南",
+    icon: "🍜",
+    description: "Local cuisines, ordering tips, food safety, and dining etiquette in China",
+    href: "/guide/dining",
+    stage: "Stage 8",
+    stageDescription: "Food & Restaurants",
+    color: "teal",
+  },
+];
+
+const colorClasses = {
+  blue: "from-blue-500 to-blue-600",
+  green: "from-green-500 to-green-600",
+  purple: "from-purple-500 to-purple-600",
+  orange: "from-orange-500 to-orange-600",
+  pink: "from-pink-500 to-pink-600",
+  red: "from-red-500 to-red-600",
+  indigo: "from-indigo-500 to-indigo-600",
+  teal: "from-teal-500 to-teal-600",
+};
+---
+
+<BaseLayout
+  title="Travel Guide - ChinaConnect"
+  description="Complete 12-stage travel guide for China. From visa application to departure - covering payment, transport, accommodation, and emergency procedures."
+  meta={{
+    keywords: ['China travel guide', 'China guide', 'travel China', 'China tips', 'China preparation'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        Complete Travel Guide to China
+      </h1>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        完整的12阶段中国旅行指南 - From pre-departure preparation to departure, covering every aspect of your journey
+      </p>
+    </div>
+
+    <!-- Journey Overview -->
+    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 mb-12 text-white">
+      <h2 class="text-2xl font-bold mb-6">Your 12-Stage Journey</h2>
+      <div class="grid md:grid-cols-4 gap-4">
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">📋</div>
+          <div class="font-semibold">Stages 1-3</div>
+          <div class="text-sm text-blue-200">Preparation</div>
+          <div class="text-xs mt-1">Visa, Payment, Communication</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">🛬</div>
+          <div class="font-semibold">Stages 4-7</div>
+          <div class="text-sm text-blue-200">Arrival & Transport</div>
+          <div class="text-xs mt-1">Airport, Local, Inter-city</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">🏨</div>
+          <div class="font-semibold">Stages 8-10</div>
+          <div class="text-sm text-blue-200">Living in China</div>
+          <div class="text-xs mt-1">Food, Stay, Shopping</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+          <div class="text-3xl mb-2">🛫</div>
+          <div class="font-semibold">Stages 11-12</div>
+          <div class="text-sm text-blue-200">Safety & Departure</div>
+          <div class="text-xs mt-1">Emergency, Tax Refund</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guide Cards -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {guides.map((guide, index) => (
+        <a
+          href={guide.href}
+          class={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${colorClasses[guide.color as keyof typeof colorClasses]} p-6 text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-1`}
+        >
+          <div class="absolute top-4 right-4 text-white/30 text-6xl font-bold">
+            {index + 1}
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-4xl">{guide.icon}</span>
+            <div>
+              <h3 class="text-xl font-bold">{guide.title}</h3>
+              <p class="text-white/80">{guide.titleCn}</p>
+            </div>
+          </div>
+          <p class="text-white/90 text-sm mb-4">{guide.description}</p>
+          <div class="absolute bottom-4 left-6 right-6">
+            <div class="flex items-center justify-between">
+              <span class="text-xs bg-white/20 px-3 py-1 rounded-full">
+                {guide.stage}
+              </span>
+              <span class="text-sm font-medium group-hover:translate-x-1 transition-transform">
+                Learn More →
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Quick Links -->
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <a href="/city/beijing" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">🏯</span>
+          <h3 class="font-semibold text-lg group-hover:text-primary transition-colors">Beijing</h3>
+        </div>
+        <p class="text-sm text-muted-foreground">Explore China's capital with our comprehensive city guide</p>
+      </a>
+      <a href="/food" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">🍜</span>
+          <h3 class="font-semibold text-lg group-hover:text-primary transition-colors">Food Guide</h3>
+        </div>
+        <p class="text-sm text-muted-foreground">Michelin stars, Black Pearl restaurants, and local favorites</p>
+      </a>
+      <a href="/guide/scam-prevention" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-3xl">🛡️</span>
+          <h3 class="font-semibold text-lg group-hover:text-primary transition-colors">Scam Prevention</h3>
+        </div>
+        <p class="text-sm text-muted-foreground">Protect yourself from common scams and tourist traps</p>
+      </a>
+    </div>
+
+    <!-- Emergency Reminder -->
+    <div class="mt-12 bg-red-50 border border-red-200 rounded-xl p-6">
+      <div class="flex items-start gap-4">
+        <span class="text-4xl">🚨</span>
+        <div>
+          <h3 class="font-semibold text-lg text-red-800">Emergency Contacts - Save These Numbers</h3>
+          <div class="grid md:grid-cols-4 gap-4 mt-4">
+            <div class="bg-white rounded-lg p-4 text-center">
+              <div class="text-2xl font-bold text-red-600">110</div>
+              <div class="text-sm text-muted-foreground">Police</div>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-center">
+              <div class="text-2xl font-bold text-red-600">120</div>
+              <div class="text-sm text-muted-foreground">Ambulance</div>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-center">
+              <div class="text-2xl font-bold text-red-600">119</div>
+              <div class="text-sm text-muted-foreground">Fire</div>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-center">
+              <div class="text-2xl font-bold text-red-600">12301</div>
+              <div class="text-sm text-muted-foreground">Tourism Hot</div>
+            </div>
+          </div>
+          <a
+            href="/guide/emergency-procedures"
+            class="inline-block mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
+          >
+            View Full Emergency Guide →
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

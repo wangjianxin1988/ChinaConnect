@@ -1,0 +1,48 @@
+---
+import TransportGuideClient from "@/components/Guide/TransportGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Transport Guide - ChinaConnect"
+  description="Complete transport guide for traveling in China. Airport arrival, metro, bus, taxi, high-speed rail, and inter-city transport with step-by-step instructions."
+  meta={{
+    keywords: ['China transport guide', 'China metro', 'China taxi', 'high speed rail China', 'Didi China', '12306'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium">Transport Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">🚄</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground">Transport Guide</h1>
+          <p class="text-muted-foreground text-lg">交通指南 - Complete guide for getting around China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🛬</span>
+        <div>
+          <h2 class="font-semibold">Stages 4-7: Arrival to Inter-city Transport</h2>
+          <p class="text-sm text-muted-foreground">Airport arrival, local transport, and inter-city travel options</p>
+        </div>
+      </div>
+    </div>
+
+    <TransportGuideClient client:load />
+  </main>
+</BaseLayout>

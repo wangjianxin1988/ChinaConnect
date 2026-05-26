@@ -1,0 +1,320 @@
+import React, { useState, useCallback, useEffect } from "react";
+
+interface UserLocation {
+  lat: number;
+  lng: number;
+  accuracy?: number;
+  timestamp?: number;
+}
+
+interface GPSLocatorProps {
+  className?: string;
+}
+
+interface NearbyPlace {
+  name: string;
+  type: "hospital" | "pharmacy" | "police";
+  distance: number;
+  address?: string;
+  lat?: number;
+  lng?: number;
+  icon: string;
+}
+
+export function GPSLocator({ className = "" }: GPSLocatorProps) {
+  const [location, setLocation] = useState<UserLocation | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [nearbyPlaces, setNearbyPlaces] = useState<NearbyPlace[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const getLocation = useCallback(async () => {
+    if (!("geolocation" in navigator)) {
+      setError("Geolocation is not supported by your browser");
+      return;
+    }
+
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const position = await new Promise<GeolocationPosition>((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject, {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 60000,
+        });
+      });
+
+      const newLocation: UserLocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+        accuracy: position.coords.accuracy,
+        timestamp: position.timestamp,
+      };
+
+      setLocation(newLocation);
+    } catch (err) {
+      const geolocationError = err as GeolocationPositionError;
+      switch (geolocationError.code) {
+        case geolocationError.PERMISSION_DENIED:
+          setError(
+            "Location permission denied. Please enable location access in your browser settings.",
+          );
+          break;
+        case geolocationError.POSITION_UNAVAILABLE:
+          setError("Location information is currently unavailable.");
+          break;
+        case geolocationError.TIMEOUT:
+          setError("Location request timed out. Please try again.");
+          break;
+        default:
+          setError("An unknown error occurred while getting your location.");
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  const searchNearby = useCallback(async () => {
+    if (!location) return;
+
+    setIsSearching(true);
+    try {
+      const places: NearbyPlace[] = [];
+      const queries: Array<{ type: "hospital" | "pharmacy" | "police"; query: string }> = [
+        { type: "hospital", query: "hospital" },
+        { type: "pharmacy", query: "pharmacy" },
+        { type: "police", query: "police" },
+      ];
+
+      for (const { type, query } of queries) {
+        const response = await fetch(
+          `https://nominatim.openstreetmap.org/search?` +
+            `q=${encodeURIComponent(query)}&` +
+            `lat=${location.lat}&` +
+            `lon=${location.lng}&` +
+            `radius=5000&` +
+            `format=json&` +
+            `limit=5`,
+          {
+            headers: {
+              "Accept-Language": "en,zh",
+            },
+          },
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          for (const item of data.slice(0, 3)) {
+            const distance = calculateDistance(
+              location.lat,
+              location.lng,
+              Number.parseFloat(item.lat),
+              Number.parseFloat(item.lon),
+            );
+            places.push({
+              name: item.display_name.split(",")[0],
+              type,
+              distance,
+              address: item.display_name,
+              lat: Number.parseFloat(item.lat),
+              lng: Number.parseFloat(item.lon),
+              icon: type === "hospital" ? "🏥" : type === "pharmacy" ? "💊" : "🚔",
+            });
+          }
+        }
+      }
+
+      places.sort((a, b) => a.distance - b.distance);
+      setNearbyPlaces(places.slice(0, 9));
+    } catch (err) {
+      console.error("Failed to search nearby places:", err);
+    } finally {
+      setIsSearching(false);
+    }
+  }, [location]);
+
+  const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
+    const R = 6371;
+    const dLat = toRad(lat2 - lat1);
+    const dLon = toRad(lon2 - lon1);
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return Math.round(R * c * 1000) / 1000;
+  };
+
+  const toRad = (deg: number): number => (deg * Math.PI) / 180;
+
+  const copyLocation = useCallback(() => {
+    if (!location) return;
+
+    const text = `My location: ${location.lat.toFixed(6)}, ${location.lng.toFixed(6)}
+Address: Please provide your address
+City: Please provide your city
+
+(Generated by ChinaConnect Emergency)`;
+
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }, [location]);
+
+  const openInMaps = useCallback(() => {
+    if (!location) return;
+    // Try Google Maps first
+    window.open(`https://www.google.com/maps?q=${location.lat},${location.lng}`, "_blank");
+  }, [location]);
+
+  useEffect(() => {
+    getLocation();
+  }, [getLocation]);
+
+  return (
+    <div className={`bg-white rounded-xl shadow-lg overflow-hidden ${className}`}>
+      {/* Header */}
+      <div className="bg-gradient-to-r from-green-600 to-teal-600 text-white p-4">
+        <h2 className="text-lg font-bold flex items-center gap-2">
+          <span>📍</span> GPS Location
+        </h2>
+        <p className="text-sm opacity-90 mt-1">Share your location with emergency services</p>
+      </div>
+
+      <div className="p-4 space-y-4">
+        {/* Get Location Button */}
+        <button
+          onClick={getLocation}
+          disabled={isLoading}
+          className="w-full bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white py-3 rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
+        >
+          {isLoading ? (
+            <>
+              <span className="animate-spin">⏳</span>
+              <span>Getting location...</span>
+            </>
+          ) : (
+            <>
+              <span>📡</span>
+              <span>{location ? "Refresh Location" : "Get My Location"}</span>
+            </>
+          )}
+        </button>
+
+        {/* Location Display */}
+        {error && (
+          <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-700 text-sm">
+            <span className="font-semibold">Error:</span> {error}
+          </div>
+        )}
+
+        {location && (
+          <>
+            <div className="bg-slate-50 rounded-xl p-4 space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">Latitude</span>
+                <span className="font-mono text-sm">{location.lat.toFixed(6)}</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">Longitude</span>
+                <span className="font-mono text-sm">{location.lng.toFixed(6)}</span>
+              </div>
+              {location.accuracy && (
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600">Accuracy</span>
+                  <span className="text-sm">{Math.round(location.accuracy)}m</span>
+                </div>
+              )}
+            </div>
+
+            {/* Actions */}
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                onClick={copyLocation}
+                className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
+              >
+                {copied ? (
+                  <>
+                    <span>✓</span>
+                    <span>Copied!</span>
+                  </>
+                ) : (
+                  <>
+                    <span>📋</span>
+                    <span>Copy Location</span>
+                  </>
+                )}
+              </button>
+              <button
+                onClick={openInMaps}
+                className="bg-gray-600 hover:bg-gray-700 text-white py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
+              >
+                <span>🗺️</span>
+                <span>Open in Maps</span>
+              </button>
+            </div>
+
+            {/* Search Nearby */}
+            <button
+              onClick={searchNearby}
+              disabled={isSearching}
+              className="w-full bg-teal-600 hover:bg-teal-700 disabled:bg-gray-400 text-white py-3 rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
+            >
+              {isSearching ? (
+                <>
+                  <span className="animate-spin">⏳</span>
+                  <span>Searching...</span>
+                </>
+              ) : (
+                <>
+                  <span>🔍</span>
+                  <span>Find Nearby Services</span>
+                </>
+              )}
+            </button>
+
+            {/* Nearby Places */}
+            {nearbyPlaces.length > 0 && (
+              <div className="space-y-2">
+                <h3 className="font-semibold text-sm text-gray-700 flex items-center gap-2">
+                  <span>🏥</span> Nearby Services
+                </h3>
+                <div className="space-y-2 max-h-64 overflow-y-auto">
+                  {nearbyPlaces.map((place, idx) => (
+                    <div key={idx} className="bg-slate-50 rounded-lg p-3 flex items-start gap-3">
+                      <span className="text-xl">{place.icon}</span>
+                      <div className="flex-1 min-w-0">
+                        <div className="font-medium text-sm truncate">{place.name}</div>
+                        <div className="text-xs text-gray-500 mt-1">
+                          {place.distance < 1
+                            ? `${Math.round(place.distance * 1000)}m`
+                            : `${place.distance.toFixed(1)}km`}
+                        </div>
+                        {place.address && (
+                          <div className="text-xs text-gray-400 mt-1 truncate">{place.address}</div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
+        )}
+
+        {/* Offline Notice */}
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-800 flex items-center gap-2">
+          <span>💡</span>
+          <span>
+            This feature requires internet. Download offline maps for better preparedness.
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default GPSLocator;

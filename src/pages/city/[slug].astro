@@ -1,0 +1,975 @@
+---
+import { AttractionCard } from "@/components/city/AttractionCard";
+import { RestaurantCard } from "@/components/city/RestaurantCard";
+import { EmergencyCard, QuickDialGrid } from "@/components/city/EmergencyCard";
+import { WeatherWidget } from "@/components/city/WeatherWidget";
+import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { CityMap } from "@/components/city/CityMap";
+
+export function getStaticPaths() {
+  return citySlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const city = getCityBySlug(slug as string);
+
+if (!city) {
+  return Astro.redirect("/404");
+}
+
+const { prev, next } = getAdjacentCities(slug as string);
+
+const pageTitle = `${city.nameEn} Travel Guide - ChinaConnect`;
+const pageDescription = `Complete travel guide for ${city.nameEn}, ${city.name}. Attractions, restaurants (Michelin & Black Pearl), transport, hotels, and emergency contacts.`;
+
+// SEO keywords
+const keywords = [
+  city.nameEn,
+  city.name,
+  `${city.nameEn} travel guide`,
+  `${city.nameEn} attractions`,
+  `${city.nameEn} restaurants`,
+  `${city.nameEn} hotels`,
+  `${city.nameEn} food`,
+  `travel to ${city.nameEn}`,
+  `China travel`,
+  `${city.attractions[0]?.nameEn || ""}`,
+  `${city.restaurants[0]?.nameEn || ""}`,
+].filter(Boolean);
+
+// City Schema.org JSON-LD
+const citySchema = {
+  "@context": "https://schema.org",
+  "@type": "City",
+  name: city.nameEn,
+  alternateName: city.name,
+  description: city.description,
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: city.coordinates.lat.toString(),
+    longitude: city.coordinates.lng.toString(),
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "CN",
+    addressRegion: city.name,
+  },
+  population: city.population,
+  url: `https://chinaconnect.com/city/${city.slug}`,
+  photo: city.coverImage,
+  aggregateRating:
+    city.restaurants.length > 0
+      ? {
+          "@type": "AggregateRating",
+          ratingValue: (
+            city.restaurants.reduce((sum, r) => sum + r.rating, 0) / city.restaurants.length
+          ).toFixed(1),
+          reviewCount: city.restaurants.length,
+        }
+      : undefined,
+  mainEntity: {
+    "@type": "TravelAction",
+    name: `Visit ${city.nameEn}`,
+    location: {
+      "@type": "City",
+      name: city.nameEn,
+    },
+  },
+};
+
+// Tourist attractions as part of the city
+const attractionSchemas = city.attractions.slice(0, 5).map((attraction, index) => ({
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  name: attraction.nameEn,
+  alternateName: attraction.name,
+  description: attraction.description,
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: attraction.coordinates.lat.toString(),
+    longitude: attraction.coordinates.lng.toString(),
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: attraction.address,
+    addressCountry: "CN",
+    addressRegion: city.name,
+  },
+  openingHours: attraction.openingHours,
+  touristType: attraction.category,
+  isPartOf: {
+    "@type": "City",
+    name: city.nameEn,
+  },
+}));
+
+// Restaurant schemas
+const restaurantSchemas = city.restaurants.slice(0, 5).map((restaurant) => ({
+  "@context": "https://schema.org",
+  "@type": restaurant.type === "michelin" ? "Restaurant" : "Restaurant",
+  name: restaurant.nameEn,
+  alternateName: restaurant.name,
+  description: restaurant.description,
+  servesCuisine: restaurant.cuisine,
+  priceRange: `$${Math.round(restaurant.avgPrice / 2)} - $${Math.round(restaurant.avgPrice * 1.5)}`,
+  aggregateRating: restaurant.rating
+    ? {
+        "@type": "AggregateRating",
+        ratingValue: restaurant.rating.toString(),
+        reviewCount: "100",
+      }
+    : undefined,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: restaurant.address,
+    addressCountry: "CN",
+    addressRegion: city.name,
+  },
+  geo: restaurant.coordinates
+    ? {
+        "@type": "GeoCoordinates",
+        latitude: restaurant.coordinates.lat.toString(),
+        longitude: restaurant.coordinates.lng.toString(),
+      }
+    : undefined,
+  telephone: restaurant.phone,
+  openingHoursSpecification: restaurant.hours
+    ? {
+        "@type": "OpeningHoursSpecification",
+        description: restaurant.hours,
+      }
+    : undefined,
+  starRating: restaurant.star
+    ? {
+        "@type": "Rating",
+        ratingValue: restaurant.star.toString(),
+        bestRating: "3",
+      }
+    : undefined,
+  isPartOf: {
+    "@type": "City",
+    name: city.nameEn,
+  },
+}));
+
+// BreadcrumbList schema for SEO
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://chinaconnect.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Cities",
+      item: "https://chinaconnect.com/#cities",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: city.nameEn,
+      item: `https://chinaconnect.com/city/${city.slug}`,
+    },
+  ],
+};
+
+// hreflang URLs for this city page
+const SITE_URL = "https://chinaconnect.com";
+const enCityUrl = `${SITE_URL}/city/${city.slug}`;
+const zhCityUrl = `${SITE_URL}/zh/city/${city.slug}`;
+
+const modules = [
+  { id: "overview", label: "Overview", icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
+  { id: "attractions", label: "Attractions", icon: "🏛️", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
+  { id: "food", label: "Food", icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
+  { id: "transport", label: "Transport", icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
+  { id: "accommodation", label: "Stay", icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
+  { id: "payment", label: "Payment", icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
+  { id: "culture", label: "Culture", icon: "🎎", colorClass: "bg-pink-50 text-pink-700 hover:bg-pink-100" },
+  { id: "emergency", label: "Emergency", icon: "🚨", colorClass: "bg-red-50 text-red-700 hover:bg-red-100" },
+];
+
+function getBadgeClass(type: string) {
+  if (type === "michelin") return "badge-michelin";
+  if (type === "blackpearl") return "badge-blackpearl";
+  return "badge-local";
+}
+
+// Derived data for template use
+const hospitals = city.emergencyContacts.filter((c) => c.type === "hospital");
+const embassies = city.emergencyContacts.filter((c) => c.type === "embassy");
+const emergencyOthers = city.emergencyContacts.filter(
+  (c) => c.type !== "hospital" && c.type !== "embassy",
+);
+
+const budgetStyles: Record<string, string> = {
+  luxury: "bg-purple-100 text-purple-700",
+  mid: "bg-blue-100 text-blue-700",
+  budget: "bg-green-100 text-green-700",
+};
+
+const mapMarkers = [
+  { lat: city.coordinates.lat, lng: city.coordinates.lng, name: city.nameEn },
+  ...city.attractions
+    .filter((a: any) => a.coordinates)
+    .map((a: any) => ({ lat: a.coordinates.lat, lng: a.coordinates.lng, name: a.nameEn })),
+  ...city.restaurants
+    .filter((r: any) => r.coordinates)
+    .map((r: any) => ({ lat: r.coordinates.lat, lng: r.coordinates.lng, name: r.nameEn })),
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords,
+    canonicalUrl: `https://chinaconnect.com/city/${city.slug}`,
+  }}
+>
+  <!-- SEO: JSON-LD Schemas -->
+  <script type="application/ld+json" set:html={JSON.stringify(citySchema)} />
+  {attractionSchemas.map(schema => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+  {restaurantSchemas.map(schema => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- SEO: hreflang for multi-language support -->
+  <link rel="alternate" hreflang="en" href={enCityUrl} />
+  <link rel="alternate" hreflang="zh-CN" href={zhCityUrl} />
+  <link rel="alternate" hreflang="x-default" href={enCityUrl} />
+  <!-- Hero Section -->
+  <section class="relative h-80 md:h-96 bg-gradient-to-br from-blue-600 to-purple-600">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+    <div class="container-custom relative h-full flex flex-col justify-end pb-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-4">
+        <a href="/" class="text-blue-200 hover:text-white transition-colors">Home</a>
+        <span class="text-blue-300 mx-2">/</span>
+        <a href="/#cities" class="text-blue-200 hover:text-white transition-colors">Cities</a>
+        <span class="text-blue-300 mx-2">/</span>
+        <span class="text-white">{city.nameEn}</span>
+      </nav>
+
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">{city.nameEn}</h1>
+      <p class="text-xl text-blue-200 mb-4">{city.name}</p>
+      <p class="text-gray-300 max-w-2xl">{city.description}</p>
+    </div>
+  </section>
+
+  <!-- Quick Stats + Weather Bar -->
+  <section class="bg-white border-b">
+    <div class="container-custom py-6">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div class="text-center">
+          <div class="text-2xl font-bold text-gray-900">{city.population}</div>
+          <div class="text-sm text-gray-500">Population</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-gray-900">{city.climate.type}</div>
+          <div class="text-sm text-gray-500">Climate</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-gray-900">{city.attractions.length}</div>
+          <div class="text-sm text-gray-500">Attractions</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-gray-900">{city.restaurants.length}</div>
+          <div class="text-sm text-gray-500">Restaurants</div>
+        </div>
+        <div class="text-center col-span-2 md:col-span-1">
+          <WeatherWidget
+            city={city.nameEn}
+            lat={city.coordinates.lat}
+            lng={city.coordinates.lng}
+            client:only="react"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Tabs -->
+  <nav class="sticky top-16 z-40 bg-white border-b shadow-sm">
+    <div class="container-custom">
+      <div class="flex overflow-x-auto py-2 gap-1 md:gap-2">
+        {modules.map(mod => (
+          <a
+            href={`#${mod.id}`}
+            class={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${mod.colorClass}`}
+          >
+            <span>{mod.icon}</span>
+            <span>{mod.label}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container-custom py-8">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Main Column -->
+      <div class="lg:col-span-2 space-y-12">
+        <!-- Overview Section -->
+        <section id="overview" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">📍</span> Overview
+          </h2>
+
+          <!-- Hero Image -->
+          <div class="rounded-2xl overflow-hidden mb-6 relative group">
+            <img
+              src={city.coverImage}
+              alt={`${city.nameEn} cityscape`}
+              class="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="eager"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            <div class="absolute bottom-4 left-4 right-4">
+              <div class="flex flex-wrap gap-2">
+                {city.highlights.slice(0, 3).map(h => (
+                  <span class="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-medium text-gray-800">
+                    {h.split(' - ')[0]}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive City Map -->
+          <div class="mb-6">
+            <CityMap city={city} activeTab="overview" height="400px" client:only="react" />
+          </div>
+
+          <!-- Best Time to Visit -->
+          <div class="bg-blue-50 rounded-xl p-6 mb-6">
+            <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+              <span>🌤️</span> Best Time to Visit
+            </h3>
+            <p class="text-gray-700 mb-3">{city.climate.tips}</p>
+            <div class="flex flex-wrap gap-2">
+              {city.climate.bestMonths.map(month => (
+                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                  {month}
+                </span>
+              ))}
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
+              <div>
+                <span class="font-medium text-gray-700">Summer:</span>
+                <span class="text-gray-600 ml-2">{city.climate.avgSummerTemp}</span>
+              </div>
+              <div>
+                <span class="font-medium text-gray-700">Winter:</span>
+                <span class="text-gray-600 ml-2">{city.climate.avgWinterTemp}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlights -->
+          <div class="bg-gray-50 rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">Top Highlights</h3>
+            <div class="grid md:grid-cols-2 gap-3">
+              {city.highlights.map(h => (
+                <div class="flex items-start gap-2">
+                  <span class="text-blue-500 mt-1">✓</span>
+                  <span class="text-gray-700">{h}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Quick Facts -->
+          <div class="bg-white border rounded-xl p-6 mt-6">
+            <h3 class="text-lg font-semibold mb-4">Quick Facts</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🗣️</span>
+                <div>
+                  <div class="text-sm text-gray-500">Language</div>
+                  <div class="font-medium">{city.quickFacts.language}</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">💰</span>
+                <div>
+                  <div class="text-sm text-gray-500">Currency</div>
+                  <div class="font-medium">{city.quickFacts.currency}</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🛂</span>
+                <div>
+                  <div class="text-sm text-gray-500">Visa</div>
+                  <div class="font-medium">{city.quickFacts.visa}</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">⚡</span>
+                <div>
+                  <div class="text-sm text-gray-500">Electricity</div>
+                  <div class="font-medium">{city.quickFacts.electricity}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">🏛️</span> Must-Visit Attractions
+          </h2>
+          <p class="section-subtitle">Discover the best attractions in {city.nameEn}</p>
+
+          <!-- Attractions Map -->
+          <div class="mb-6">
+            <CityMap city={city} activeTab="attractions" height="350px" client:only="react" />
+          </div>
+
+          <div class="space-y-5">
+            {city.attractions.map((attraction, index) => (
+              <AttractionCard
+                attraction={{
+                  id: attraction.id,
+                  name: attraction.name,
+                  nameEn: attraction.nameEn,
+                  category: attraction.category as any,
+                  description: attraction.description,
+                  address: attraction.address,
+                  coordinates: attraction.coordinates,
+                  openingHours: attraction.openingHours,
+                  ticketPrice: attraction.ticketPrice,
+                  recommendedVisitTime: attraction.recommendedVisitTime,
+                  highlights: attraction.highlights,
+                  tips: attraction.tips,
+                }}
+                index={index}
+                client:load
+              />
+            ))}
+          </div>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">🍜</span> Food & Restaurants
+          </h2>
+          <p class="section-subtitle">Michelin stars, Black Pearl rankings, and local favorites</p>
+
+          <!-- Food Map -->
+          <div class="mb-6">
+            <CityMap city={city} activeTab="food" height="350px" client:only="react" />
+          </div>
+
+          <!-- View Full Food Map CTA -->
+          <div class="mb-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-4 flex items-center justify-between gap-4 border border-orange-100">
+            <div>
+              <h3 class="font-semibold text-gray-800 flex items-center gap-2">
+                <span>🗺️</span> Three-in-One Food Map
+              </h3>
+              <p class="text-sm text-gray-600 mt-0.5">Layer controls: Michelin stars, Black Pearl rankings, and local recommendations</p>
+            </div>
+            <a
+              href={`/food?city=${city.slug}`}
+              class="shrink-0 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold text-sm hover:from-orange-600 hover:to-red-600 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
+            >
+              <span>Open Full Map</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Legend -->
+          <div class="flex flex-wrap gap-4 mb-6">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-1 bg-amber-100 text-amber-800 rounded text-sm">⭐ Michelin</span>
+              <span class="text-gray-500 text-sm">Fine dining</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-1 bg-slate-800 text-slate-200 rounded text-sm">💎 Black Pearl</span>
+              <span class="text-gray-500 text-sm">Premium dining</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-sm">🔥 Local</span>
+              <span class="text-gray-500 text-sm">Local favorites</span>
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            {city.restaurants.map(restaurant => (
+              <RestaurantCard
+                restaurant={{
+                  id: restaurant.id,
+                  name: restaurant.name,
+                  nameEn: restaurant.nameEn,
+                  type: restaurant.type as any,
+                  star: restaurant.star,
+                  diamond: restaurant.diamond,
+                  cuisine: restaurant.cuisine,
+                  avgPrice: restaurant.avgPrice,
+                  rating: restaurant.rating,
+                  address: restaurant.address,
+                  coordinates: restaurant.coordinates,
+                  phone: restaurant.phone,
+                  hours: restaurant.hours,
+                  description: restaurant.description,
+                  dishHighlights: restaurant.dishHighlights,
+                  tags: restaurant.tags,
+                }}
+                client:load
+              />
+            ))}
+          </div>
+        </section>
+
+        <!-- Transport Section -->
+        <section id="transport" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">🚇</span> Transport Guide
+          </h2>
+          <p class="section-subtitle">Getting to and around {city.nameEn}</p>
+
+          <!-- Getting There -->
+          <div class="mb-8">
+            <h3 class="text-lg font-semibold mb-4">Getting to {city.nameEn}</h3>
+            <div class="space-y-4">
+              {city.transport.arrival.map(option => (
+                <div class="bg-white border rounded-xl p-6">
+                  <div class="flex items-center gap-3 mb-3">
+                    <span class="text-2xl">{option.type === 'air' ? '✈️' : option.type === 'train' ? '🚄' : '🚌'}</span>
+                    <span class="font-semibold capitalize">{option.type}</span>
+                  </div>
+                  <p class="text-gray-600 mb-2">{option.from}</p>
+                  <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div>
+                      <span class="text-gray-500">Duration:</span>
+                      <span class="ml-2 font-medium">{option.duration}</span>
+                    </div>
+                    <div>
+                      <span class="text-gray-500">Price:</span>
+                      <span class="ml-2 font-medium">{option.price}</span>
+                    </div>
+                    <div>
+                      <span class="text-gray-500">Frequency:</span>
+                      <span class="ml-2 font-medium">{option.frequency}</span>
+                    </div>
+                  </div>
+                  {option.tips && (
+                    <p class="mt-3 text-sm text-gray-600 bg-blue-50 p-3 rounded">
+                      💡 {option.tips}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Getting Around -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Getting Around</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-white border rounded-xl p-6">
+                <h4 class="font-medium mb-4 flex items-center gap-2">
+                  <span>🚇</span> Metro
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  {city.transport.local.metro.map(item => (
+                    <li class="flex items-start gap-2">
+                      <span class="text-blue-500">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="bg-white border rounded-xl p-6">
+                <h4 class="font-medium mb-4 flex items-center gap-2">
+                  <span>🚌</span> Bus
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  {city.transport.local.bus.map(item => (
+                    <li class="flex items-start gap-2">
+                      <span class="text-green-500">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="bg-white border rounded-xl p-6">
+                <h4 class="font-medium mb-4 flex items-center gap-2">
+                  <span>🚕</span> Taxi
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  {city.transport.local.taxi.map(item => (
+                    <li class="flex items-start gap-2">
+                      <span class="text-orange-500">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div class="bg-white border rounded-xl p-6">
+                <h4 class="font-medium mb-4 flex items-center gap-2">
+                  <span>🚴</span> Bike
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  {(city.transport.local.bike || []).map(item => (
+                    <li class="flex items-start gap-2">
+                      <span class="text-purple-500">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Accommodation Section -->
+        <section id="accommodation" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">🏨</span> Where to Stay
+          </h2>
+          <p class="section-subtitle">Hotels for every budget in {city.nameEn}</p>
+
+          <!-- Budget Filter -->
+          <div class="flex flex-wrap gap-2 mb-6" id="budget-filter">
+            {(['all', 'luxury', 'mid', 'budget'] as const).map(b => (
+              <button
+                data-budget={b}
+                class={`filter-btn px-4 py-2 rounded-lg text-sm font-semibold border transition-all
+                  ${b === 'all' ? 'bg-blue-50 text-blue-700 border-blue-200' : ''}
+                  ${b === 'luxury' ? 'bg-white text-gray-500 border-gray-200 hover:border-purple-400 hover:text-purple-700' : ''}
+                  ${b === 'mid' ? 'bg-white text-gray-500 border-gray-200 hover:border-blue-400 hover:text-blue-700' : ''}
+                  ${b === 'budget' ? 'bg-white text-gray-500 border-gray-200 hover:border-green-400 hover:text-green-700' : ''}
+                `}
+              >
+                {b === 'all' ? 'All' : b.charAt(0).toUpperCase() + b.slice(1)}
+              </button>
+            ))}
+          </div>
+
+          <div id="hotel-list" class="space-y-4">
+            {city.hotels.map(hotel => (
+              <div
+                class="hotel-card bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-lg transition-all"
+                data-budget={hotel.budget}
+              >
+                <div class="flex items-start justify-between mb-4 gap-3">
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-lg font-bold text-gray-900 leading-tight">{hotel.nameEn}</h3>
+                    <p class="text-gray-500 text-sm">{hotel.name}</p>
+                  </div>
+                  <div class="flex flex-col items-end gap-2 shrink-0">
+                    <span class={`px-3 py-1 rounded-full text-xs font-semibold border ${budgetStyles[hotel.budget] || 'bg-gray-100 text-gray-700'}`}>
+                      {hotel.budget}
+                    </span>
+                    <div class="text-yellow-500 font-bold text-sm">★ {hotel.rating}</div>
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-3 mb-4">
+                  <div class="bg-blue-50 rounded-xl p-3">
+                    <div class="text-blue-600 text-xs font-medium uppercase tracking-wide mb-0.5">Price Range</div>
+                    <div class="text-lg font-bold text-blue-900">{hotel.priceRange}</div>
+                  </div>
+                  <div class="bg-gray-50 rounded-xl p-3">
+                    <div class="text-gray-500 text-xs font-medium uppercase tracking-wide mb-0.5">Address</div>
+                    <div class="text-sm font-medium text-gray-800 truncate">{hotel.address}</div>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                  {hotel.highlights.map(h => (
+                    <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-xs font-medium border border-gray-100">
+                      {h}
+                    </span>
+                  ))}
+                </div>
+
+                {hotel.bookingTips && (
+                  <p class="text-sm text-gray-700 bg-amber-50 p-3 rounded-xl border border-amber-100 flex items-start gap-2">
+                    <span class="text-amber-500 shrink-0 mt-0.5">💡</span>
+                    <span>{hotel.bookingTips}</span>
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payment" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">💳</span> Payment Guide
+          </h2>
+          <p class="section-subtitle">How to pay in {city.nameEn}</p>
+
+          <div class="space-y-6">
+            {city.payment.map(method => (
+              <div class="bg-white border rounded-xl p-6">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl">
+                    {method.method === 'Alipay' ? '💙' : method.method === 'WeChat Pay' ? '💚' : method.method === 'Cash' ? '💵' : '💳'}
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold">{method.method}</h3>
+                    <p class="text-gray-500">{method.description}</p>
+                  </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 class="text-sm font-semibold text-gray-700 mb-2">How to Use:</h4>
+                    <ul class="space-y-2">
+                      {method.howToUse.map(step => (
+                        <li class="flex items-start gap-2 text-sm">
+                          <span class="text-blue-500">1.</span>
+                          <span class="text-gray-600">{step}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-gray-700 mb-2">Tips:</h4>
+                    <ul class="space-y-2">
+                      {method.tips.map(tip => (
+                        <li class="flex items-start gap-2 text-sm">
+                          <span class="text-amber-500">•</span>
+                          <span class="text-gray-600">{tip}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section id="culture" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">🎎</span> Cultural Tips
+          </h2>
+          <p class="section-subtitle">Essential cultural knowledge for {city.nameEn}</p>
+
+          <div class="space-y-4">
+            {city.culturalTips.map(tip => (
+              <div class="bg-white border rounded-xl p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="text-lg font-semibold">{tip.title}</h3>
+                  <span class={`px-2 py-1 rounded text-xs font-medium ${
+                    tip.importance === 'high' ? 'bg-red-100 text-red-700' :
+                    tip.importance === 'medium' ? 'bg-amber-100 text-amber-700' :
+                    'bg-gray-100 text-gray-700'
+                  }`}>
+                    {tip.importance} priority
+                  </span>
+                </div>
+                <p class="text-gray-600">{tip.content}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Emergency Section -->
+        <section id="emergency" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">🚨</span> Emergency Contacts
+          </h2>
+          <p class="section-subtitle">Important phone numbers in {city.nameEn}</p>
+
+          <!-- Emergency Map -->
+          <div class="mb-6">
+            <CityMap city={city} activeTab="emergency" height="350px" client:only="react" />
+          </div>
+
+          <div class="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
+            <p class="text-red-800 font-medium">
+              ⚠️ In case of emergency, call the appropriate number immediately. English operators may be available.
+            </p>
+          </div>
+
+          <!-- Quick Dial Grid -->
+          <div class="mb-8">
+            <h3 class="text-base font-bold text-gray-800 mb-4">Quick Dial</h3>
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-4 border border-red-100 mb-4">
+              <p class="text-sm text-red-800">
+                <span class="font-bold">Note:</span> The <span class="font-semibold text-red-600">SOS button</span> in the bottom-right corner of any page provides instant access to emergency services with translation and GPS location sharing.
+              </p>
+            </div>
+            <QuickDialGrid
+              showAmbulance={true}
+              showPolice={true}
+              showFire={true}
+              showTraffic={false}
+              client:load
+            />
+          </div>
+
+          <!-- Grouped Emergency Contacts -->
+          <div class="space-y-6">
+            {hospitals.length > 0 && (
+              <div>
+                <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+                  <span>🏥</span> Hospitals
+                </h3>
+                <div class="space-y-3">
+                  {hospitals.map(h => (
+                    <EmergencyCard contact={h as any} client:load />
+                  ))}
+                </div>
+              </div>
+            )}
+            {embassies.length > 0 && (
+              <div>
+                <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+                  <span>🏛️</span> Embassies &amp; Consulates
+                </h3>
+                <div class="space-y-3">
+                  {embassies.map(e => (
+                    <EmergencyCard contact={e as any} client:load />
+                  ))}
+                </div>
+              </div>
+            )}
+            {emergencyOthers.length > 0 && (
+              <div>
+                <h3 class="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+                  <span>📞</span> Other Emergency Numbers
+                </h3>
+                <div class="space-y-3">
+                  {emergencyOthers.map(o => (
+                    <EmergencyCard contact={o as any} client:load />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="sticky top-32 space-y-6">
+          <!-- Quick Navigation -->
+          <div class="bg-white border rounded-xl p-6">
+            <h3 class="font-semibold mb-4">Quick Navigation</h3>
+            <nav class="space-y-2">
+              {modules.map(mod => (
+                <a
+                  href={`#${mod.id}`}
+                  class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                >
+                  <span>{mod.icon}</span>
+                  <span class="text-gray-700">{mod.label}</span>
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          <!-- City Navigation -->
+          <div class="bg-white border rounded-xl p-6">
+            <h3 class="font-semibold mb-4">Explore More Cities</h3>
+            <div class="space-y-2">
+              {prev && (
+                <a href={`/city/${prev.slug}`} class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                  <span class="text-gray-400">←</span>
+                  <div>
+                    <div class="font-medium text-gray-700">Previous</div>
+                    <div class="text-sm text-gray-500">{prev.nameEn}</div>
+                  </div>
+                </a>
+              )}
+              {next && (
+                <a href={`/city/${next.slug}`} class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                  <div class="text-right flex-1">
+                    <div class="font-medium text-gray-700">Next</div>
+                    <div class="text-sm text-gray-500">{next.nameEn}</div>
+                  </div>
+                  <span class="text-gray-400">→</span>
+                </a>
+              )}
+            </div>
+          </div>
+
+          <!-- AI Chat Widget -->
+          <div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 text-white">
+            <h3 class="font-semibold mb-2">Need Help?</h3>
+            <p class="text-blue-100 text-sm mb-4">
+              Ask our AI assistant for personalized recommendations and travel tips.
+            </p>
+            <button class="w-full bg-white text-blue-600 px-4 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+              Chat with AI
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+// Hotel budget filter
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const budget = btn.dataset.budget;
+
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-50', 'text-blue-700', 'border-blue-200');
+      b.classList.add('bg-white', 'text-gray-500', 'border-gray-200');
+    });
+    btn.classList.remove('bg-white', 'text-gray-500', 'border-gray-200');
+    btn.classList.add('ring-2', 'ring-blue-500', 'bg-blue-50', 'text-blue-700', 'border-blue-200');
+
+    document.querySelectorAll('.hotel-card').forEach(card => {
+      if (budget === 'all' || card.dataset.budget === budget) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Real-time weather widget via OpenMeteo (free, no API key needed)
+document.querySelectorAll('[id^="weather-widget-"]').forEach(widget => {
+  const el = widget;
+  const lat = el.dataset.lat;
+  const lng = el.dataset.lng;
+  if (!lat || !lng) return;
+
+  const API = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true&temperature_unit=fahrenheit`;
+  fetch(API)
+    .then(r => r.json())
+    .then(data => {
+      if (!data.current_weather) return;
+      const w = data.current_weather;
+      const tempC = Math.round((w.temperature - 32) * 5 / 9);
+      const codes = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌦️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'🌨️',80:'🌦️',81:'🌦️',82:'⛈️',95:'⛈️',96:'⛈️',99:'⛈️'};
+      const icon = codes[w.weathercode] || '🌡️';
+      el.innerHTML = `<div class="text-2xl font-bold text-gray-900">${tempC}°C</div><div class="text-sm text-gray-500">${icon} Now</div>`;
+    })
+    .catch(() => {
+      el.innerHTML = `<div class="text-gray-400 text-sm">Weather N/A</div>`;
+    });
+});
+</script>

@@ -1,0 +1,48 @@
+---
+import DepartureGuideClient from "@/components/Guide/DepartureGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Departure Guide - ChinaConnect"
+  description="Complete departure guide for leaving China. Tax refunds, airport transport, duty-free shopping, and departure checklist."
+  meta={{
+    keywords: ['China departure', 'China tax refund', 'China airport', 'duty free China', 'leaving China', 'VAT refund China'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium">Departure Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">✈️</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground">Departure Guide</h1>
+          <p class="text-muted-foreground text-lg">离境指南 - Complete guide for leaving China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🛫</span>
+        <div>
+          <h2 class="font-semibold">Stage 12: Leaving China</h2>
+          <p class="text-sm text-muted-foreground">Departure steps, tax refunds, airport info, and collecting memories</p>
+        </div>
+      </div>
+    </div>
+
+    <DepartureGuideClient client:load />
+  </main>
+</BaseLayout>

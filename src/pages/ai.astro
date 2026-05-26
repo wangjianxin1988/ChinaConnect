@@ -1,0 +1,18 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AIChatPage from '@/components/AIChatPage';
+
+const pageTitle = "AI Travel Assistant - ChinaConnect";
+const pageDescription =
+  "Get personalized travel advice for China from our AI assistant. Plan your perfect trip with recommendations for restaurants, attractions, transport, and more.";
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    noIndex: false,
+  }}
+>
+  <AIChatPage client:only="react" />
+</BaseLayout>

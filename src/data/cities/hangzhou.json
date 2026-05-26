@@ -1,0 +1,548 @@
+{
+  "slug": "hangzhou",
+  "name": "杭州",
+  "nameEn": "Hangzhou",
+  "country": "China",
+  "population": "12.2 million",
+  "coordinates": { "lat": 30.2741, "lng": 120.1551 },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Hangzhou, the capital of Zhejiang Province, is famous for its natural beauty and historical culture. Home to West Lake, a UNESCO World Heritage site, and the ancient water town ambiance of the Grand Canal. Known as 'Paradise on Earth' for its mild climate, lush greenery, and elegant gardens. A leading tech hub as headquarters of Alibaba.",
+  "coverImage": "https://images.unsplash.com/photo-1598001725608-9c77cf5fd730?w=1200",
+  "highlights": [
+    "West Lake - UNESCO World Heritage",
+    "Xianghu Lake - New scenic area",
+    "Hefang Street - Historic shopping street",
+    "Lingyin Temple - Ancient Buddhist temple",
+    "Xixi Wetland - Largest urban wetland"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": ["March", "April", "May", "October", "November"],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "4C (39F)",
+    "tips": "Best visited in spring for flowers or autumn for golden foliage. Summer is hot and humid with frequent rain. Spring rainy season (Meiyu) in June. Wear comfortable shoes for walking around West Lake."
+  },
+  "attractions": [
+    {
+      "id": "west-lake",
+      "name": "西湖",
+      "nameEn": "West Lake",
+      "category": "natural",
+      "description": "A UNESCO World Heritage site and the iconic heart of Hangzhou. A freshwater lake with surrounding gardens, pagodas, and causeways creating stunning landscapes.",
+      "address": "West Lake Scenic Area, Xihu District",
+      "coordinates": { "lat": 30.2468, "lng": 120.1488 },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some attractions within require tickets)",
+      "recommendedVisitTime": "Half to full day",
+      "highlights": [
+        "Leifeng Pagoda",
+        "Three Pools Mirroring the Moon",
+        "Broken Bridge",
+        "Su Causeway",
+        "Lingyin Temple nearby"
+      ],
+      "tips": "Rent a bike to circle the lake. Take a boat ride to see the Three Pools. Visit Leifeng Pagoda at sunset. Spring for peach blossoms, autumn for lotus."
+    },
+    {
+      "id": "xixi-wetland",
+      "name": "西溪国家湿地公园",
+      "nameEn": "Xixi National Wetland Park",
+      "category": "natural",
+      "description": "The largest urban wetland in China with unique ecosystem, traditional fishing villages, and serene natural beauty.",
+      "address": "Xixi National Wetland Park, Xihu District",
+      "coordinates": { "lat": 30.3028, "lng": 120.0652 },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "80 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": ["Gaoxin Bridge", "Xixi Village", "Magua Lake", "Luo Yang Thatched Cottage"],
+      "tips": "Take the boat tour for best experience. Visit in early morning for fewer crowds. Combine with nearby West Lake."
+    },
+    {
+      "id": "lingyin-temple",
+      "name": "灵隐寺",
+      "nameEn": "Lingyin Temple",
+      "category": "cultural",
+      "description": "One of the oldest and most famous Buddhist temples in China, dating back to 326 AD, with stunning architecture and rock carvings.",
+      "address": "1 Lingyin Road, Xihu District",
+      "coordinates": { "lat": 30.2372, "lng": 120.1022 },
+      "openingHours": "06:30-17:30 (Summer), 07:00-17:30 (Winter)",
+      "ticketPrice": "45 CNY (temple), additional 55 CNY for Feilai Feng peak",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Feilai Feng peak",
+        "Hall of the Heavenly Kings",
+        "Mahavira Hall",
+        "Cave of the 500 Arhats"
+      ],
+      "tips": "Arrive early to avoid tour groups. The temple is at the foot of Feilai Feng. Wear modest clothing covering shoulders and knees."
+    },
+    {
+      "id": "hefang-street",
+      "name": "河坊街",
+      "nameEn": "Hefang Street",
+      "category": "cultural",
+      "description": "A historic pedestrian street in Hangzhou with traditional Chinese architecture, local snacks, tea houses, and souvenir shops.",
+      "address": "Hefang Street, Shangcheng District",
+      "coordinates": { "lat": 30.2482, "lng": 120.1652 },
+      "openingHours": "Open 24 hours (shops 09:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional medicine shops",
+        "Local snacks",
+        "Craft stores",
+        "Hu Xueyan Residence"
+      ],
+      "tips": "Best visited in the evening when illuminated. Try Hangzhou local snacks like lotus root powder and steamed dumplings. Compare prices before buying souvenirs."
+    },
+    {
+      "id": "grand-canal",
+      "name": "京杭大运河",
+      "nameEn": "Grand Canal",
+      "category": "historical",
+      "description": "The longest ancient canal in the world, stretching 1794km from Beijing to Hangzhou. Hangzhou's section offers boat tours through historic water towns.",
+      "address": "Canal Scenic Area, Gongshu District",
+      "coordinates": { "lat": 30.3152, "lng": 120.1322 },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "60 CNY (boat tour additional)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Xiangji Temple",
+        "Huangchang River",
+        "Gongchen Bridge",
+        "Ancient water towns"
+      ],
+      "tips": "Take an evening boat tour for romantic scenery. The bridge views are particularly beautiful at night."
+    },
+    {
+      "id": "songcheng",
+      "name": "宋城",
+      "nameEn": "Songcheng",
+      "category": "cultural",
+      "description": "A theme park recreating Song Dynasty culture with performances, traditional architecture, and interactive experiences.",
+      "address": "5 Songqiao Road,西湖区",
+      "coordinates": { "lat": 30.1322, "lng": 120.0252 },
+      "openingHours": "09:30-21:00 (show times vary)",
+      "ticketPrice": "300 CNY (includes show)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Wanghou Battle Show",
+        "Legend of the Flying Nymphs",
+        "Baohe's Wedding",
+        "Medieval幻境"
+      ],
+      "tips": "Book tickets online in advance. The 'Legend of the Flying Nymphs' is spectacular. Arrive 30 minutes early for good seats."
+    },
+    {
+      "id": "longjing",
+      "name": "龙井村",
+      "nameEn": "Longjing Tea Village",
+      "category": "cultural",
+      "description": "Famous for Longjing (Dragon Well) tea, one of China's most prized green teas. Scenic tea plantations and traditional tea houses.",
+      "address": "Longjing Village, Xihu District",
+      "coordinates": { "lat": 30.2022, "lng": 120.0922 },
+      "openingHours": "Open 24 hours (shops 08:00-18:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Tea plantations",
+        "Tea picking experience",
+        "Traditional tea houses",
+        "Mei Jia Wu Village"
+      ],
+      "tips": "Visit in early April for tea picking season. Buy tea directly from farmers for authenticity. The village is very peaceful in early morning."
+    },
+    {
+      "id": "qiantang-river",
+      "name": "钱塘江",
+      "nameEn": "Qiantang River",
+      "category": "natural",
+      "description": "Famous for the world's largest tidal bore, with monthly tidal waves reaching up to 9 meters during the Mid-Autumn Festival.",
+      "address": "Qiantang River, Shangcheng District",
+      "coordinates": { "lat": 30.2452, "lng": 120.2122 },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (observation decks may charge)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Bingjiang Avenue",
+        "Six Harmonies Pagoda",
+        "Qiantang Bridge",
+        "Moon observation platform"
+      ],
+      "tips": "Best viewed during Mid-Autumn Festival (September-October) for the famous tidal bore. The bridge lighting at night is spectacular."
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "hangzhou-1",
+      "name": "金沙厅",
+      "nameEn": "Jin Sha Ting",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Zhejiang",
+      "avgPrice": 600,
+      "rating": 4.8,
+      "address": "4/F, Four Seasons Hotel Hangzhou, 5 Lingjia Lane, Hubin Road",
+      "coordinates": { "lat": 30.2422, "lng": 120.1522 },
+      "phone": "+86 571 8689 0123",
+      "hours": "11:30-14:30, 17:30-22:00",
+      "description": "One Michelin-starred Zhejiang cuisine with stunning West Lake views. Exceptional seafood and traditional Hangzhou dishes.",
+      "dishHighlights": [
+        "Braised abalone with goose oil",
+        "Steamed Hangzhou crab",
+        "West Lake gold fish in soup"
+      ],
+      "tags": ["fine-dining", "lake-view", "zhejiang-cuisine"]
+    },
+    {
+      "id": "hangzhou-2",
+      "name": "外婆家",
+      "nameEn": "Waipo Jia",
+      "type": "local",
+      "cuisine": "Zhejiang Home-style",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Multiple locations including Hangzhou Tower",
+      "coordinates": { "lat": 30.2522, "lng": 120.1622 },
+      "phone": "+86 571 8500 1234",
+      "hours": "10:30-21:30",
+      "description": "Popular chain serving authentic Zhejiang home-style dishes at affordable prices. Great for trying local favorites.",
+      "dishHighlights": ["Dongpo pork", "West Lake vinegar fish", "Braised pork belly"],
+      "tags": ["local", "casual", "family-friendly", "value"]
+    },
+    {
+      "id": "hangzhou-3",
+      "name": "知味观",
+      "nameEn": "Zhi Wei Guan",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Hangzhou",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "2 Gaoyin Road, Shangcheng District",
+      "coordinates": { "lat": 30.2482, "lng": 120.1722 },
+      "phone": "+86 571 8706 5523",
+      "hours": "07:00-21:00",
+      "description": "Historic restaurant established in 1913, famous for Hangzhou cuisine and traditional dim sum.",
+      "dishHighlights": [
+        "Lion head meatballs",
+        "Hangzhou-style noodles",
+        "Sweet vinegar pork ribs"
+      ],
+      "tags": ["historic", "hangzhou-cuisine", "dim-sum"]
+    },
+    {
+      "id": "hangzhou-4",
+      "name": "绿茶餐厅",
+      "nameEn": "Green Tea Restaurant",
+      "type": "local",
+      "cuisine": "Zhejiang",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Multiple locations",
+      "coordinates": { "lat": 30.2522, "lng": 120.1552 },
+      "hours": "10:30-22:00",
+      "description": "Trendy restaurant chain known for fresh ingredients and creative Zhejiang dishes in modern atmosphere.",
+      "dishHighlights": ["Green tea flour ball", "Braised chicken", "Fresh vegetables"],
+      "tags": ["local", "modern", "casual"]
+    },
+    {
+      "id": "hangzhou-5",
+      "name": "奎元馆",
+      "nameEn": "Kui Yuan Guan",
+      "type": "local",
+      "cuisine": "Hangzhou Noodles",
+      "avgPrice": 50,
+      "rating": 4.7,
+      "address": "86 Gaoyin Road, Shangcheng District",
+      "coordinates": { "lat": 30.2482, "lng": 120.1732 },
+      "phone": "+86 571 8780 0788",
+      "hours": "06:30-20:00",
+      "description": "Legendary noodle house established in 1867, serving authentic Hangzhou style noodles with rich broth.",
+      "dishHighlights": [
+        "Shrimp noodles",
+        "Vegetable and mushroom noodles",
+        "Red-braised pork noodles"
+      ],
+      "tags": ["historic", "noodles", "local", "breakfast"]
+    },
+    {
+      "id": "hangzhou-6",
+      "name": "楼外楼",
+      "nameEn": "Lou Wai Lou",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Hangzhou",
+      "avgPrice": 200,
+      "rating": 4.5,
+      "address": "No. 30, Gushan Road, Xihu District",
+      "coordinates": { "lat": 30.2422, "lng": 120.1488 },
+      "phone": "+86 571 8796 9082",
+      "hours": "10:30-21:00",
+      "description": "Historic restaurant on the shore of West Lake, established 1848. Famous for view dining and traditional dishes.",
+      "dishHighlights": [
+        "West Lake fish in vinegar sauce",
+        "Beggar's chicken",
+        "Lion head meatballs"
+      ],
+      "tags": ["historic", "lake-view", "hangzhou-cuisine"]
+    },
+    {
+      "id": "hangzhou-7",
+      "name": "龙井菜馆",
+      "nameEn": "Longjing Caiguan",
+      "type": "local",
+      "cuisine": "Tea Cuisine",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "Longjing Village, Xihu District",
+      "coordinates": { "lat": 30.2022, "lng": 120.0922 },
+      "phone": "+86 571 8797 1234",
+      "hours": "10:00-22:00",
+      "description": "Traditional restaurant in tea country specializing in Longjing tea-infused dishes and organic local ingredients.",
+      "dishHighlights": ["Longjing shrimp", "Tea-smoked duck", "Dragon well tea fried rice"],
+      "tags": ["local", "tea-cuisine", "scenic"]
+    },
+    {
+      "id": "hangzhou-8",
+      "name": "弄堂里",
+      "nameEn": "Long Tang Li",
+      "type": "local",
+      "cuisine": "Zhejiang Home-style",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Multiple locations",
+      "coordinates": { "lat": 30.2622, "lng": 120.1722 },
+      "hours": "10:00-22:00",
+      "description": "Popular local chain known for authentic Zhejiang home cooking and comfortable dining environment.",
+      "dishHighlights": [
+        "Fried sweet rice cake",
+        "Braised pork with taro",
+        "Hangzhou style cold noodles"
+      ],
+      "tags": ["local", "casual", "family-friendly"]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major international airports (Shanghai, Beijing, Hong Kong)",
+        "to": "Hangzhou Xiaoshan International Airport (HGH)",
+        "duration": "Varies by origin (2-3 hours from Shanghai, 12+ from Europe)",
+        "price": "800-3000 CNY",
+        "frequency": "Daily international flights from Seoul, Tokyo, Singapore, Bangkok",
+        "tips": "Hangzhou Airport is 27km from city center. Airport shuttle bus to East Railway Station and West Lake area. High-speed rail from Shanghai is faster."
+      },
+      {
+        "type": "train",
+        "from": "Shanghai (45min-1h), Nanjing (1h), Beijing (4.5h)",
+        "to": "Hangzhou East Railway Station / Hangzhou Railway Station",
+        "duration": "45min-5 hours depending on origin",
+        "price": "150-600 CNY",
+        "frequency": "Multiple high-speed trains daily",
+        "tips": "High-speed train from Shanghai is fastest and most convenient. Hangzhou East is near shopping districts. Hangzhou Station is closer to West Lake."
+      }
+    ],
+    "local": {
+      "metro": [
+        "12 lines covering city center and suburbs",
+        "Single ride: 2-9 CNY depending on distance",
+        "Line 1 connects East Railway Station",
+        "West Lake area served by Lines 1, 2, 10"
+      ],
+      "bus": [
+        "Extensive network covering areas not served by metro",
+        "Single ride: 2 CNY (basic), higher for air-conditioned",
+        "Buses to West Lake from main tourist areas"
+      ],
+      "taxi": [
+        "Starting fare: 11 CNY (first 3km)",
+        "Waiting: 0.05 CNY per minute",
+        "Night surcharge: 20% extra (23:00-05:00)",
+        "Didi app recommended for English speakers"
+      ],
+      "bike": [
+        "Hellobike, Meituan bikes widely available",
+        "Unlock: 1-2 CNY, then 0.5-1.5 CNY per 30 minutes",
+        "Designated bike lanes on West Lake surrounding roads",
+        "Scenic bike paths around West Lake"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "杭州四季酒店",
+      "nameEn": "Four Seasons Hotel Hangzhou",
+      "budget": "luxury",
+      "priceRange": "3500-8000 CNY/night",
+      "address": "5 Lingjia Lane, Hubin Road",
+      "coordinates": { "lat": 30.2422, "lng": 120.1522 },
+      "rating": 4.9,
+      "highlights": [
+        "Prime lakeside location",
+        "Jin Sha Ting restaurant",
+        "Luxurious spa",
+        "Garden courtyard"
+      ],
+      "bookingTips": "Book lakeside rooms for West Lake views. Restaurant reservations essential."
+    },
+    {
+      "name": "杭州西子湖四季酒店",
+      "nameEn": "Four Seasons Resort Hangzhou at West Lake",
+      "budget": "luxury",
+      "priceRange": "5000-12000 CNY/night",
+      "address": "5 Xinghua Road, Xihu District",
+      "coordinates": { "lat": 30.2522, "lng": 120.1382 },
+      "rating": 4.9,
+      "highlights": [
+        "Historic garden setting",
+        "Private villa accommodations",
+        "Boat dining",
+        "Traditional Chinese architecture"
+      ],
+      "bookingTips": "Exclusive resort experience. Book months ahead for holidays."
+    },
+    {
+      "name": "杭州香格里拉酒店",
+      "nameEn": "Shangri-La Hotel Hangzhou",
+      "budget": "luxury",
+      "priceRange": "1500-3000 CNY/night",
+      "address": "78 Beishan Road",
+      "coordinates": { "lat": 30.2622, "lng": 120.1482 },
+      "rating": 4.6,
+      "highlights": [
+        "North Shore location",
+        "Garden with lake views",
+        "Multiple restaurants",
+        "Business facilities"
+      ],
+      "bookingTips": "Great location near West Lake. Weekend packages available."
+    },
+    {
+      "name": "杭州君悦酒店",
+      "nameEn": "Grand Hyatt Hangzhou",
+      "budget": "mid",
+      "priceRange": "1200-2500 CNY/night",
+      "address": "28 Hubin Road",
+      "coordinates": { "lat": 30.2522, "lng": 120.1622 },
+      "rating": 4.5,
+      "highlights": [
+        "Central business district",
+        "Direct access to Hubin shopping",
+        "Modern facilities",
+        "Good service"
+      ],
+      "bookingTips": "Best for business travelers. Check weekend rates."
+    },
+    {
+      "name": "杭州西湖饭店",
+      "nameEn": "Hangzhou West Lake Hotel",
+      "budget": "mid",
+      "priceRange": "500-1000 CNY/night",
+      "address": "101-1 Xiling Road",
+      "coordinates": { "lat": 30.2522, "lng": 120.1522 },
+      "rating": 4.4,
+      "highlights": ["Walking distance to West Lake", "Historic property", "Good value"],
+      "bookingTips": "Book well in advance during peak season."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal payment method throughout Hangzhou",
+      "howToUse": [
+        "Download app before arrival",
+        "Link international credit card or open Chinese account",
+        "QR code scanning"
+      ],
+      "tips": [
+        "Required for most transactions",
+        "Works at all restaurants and shops",
+        "English interface available"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Secondary popular payment method",
+      "howToUse": ["WeChat app required", "Link international card through WeChat Pay"],
+      "tips": ["Accepted almost everywhere Alipay is", "English version available"]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Still useful at traditional markets and small vendors",
+      "howToUse": ["ATMs widely available", "Exchange at banks or airport"],
+      "tips": ["Keep small bills for markets", "Most upscale restaurants accept cards"]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "tea",
+      "title": "Tea Culture",
+      "content": "Hangzhou is famous for Longjing (Dragon Well) tea. Visit a tea house for authentic tea ceremony. Spring tea picking (April) is a special experience.",
+      "importance": "high"
+    },
+    {
+      "category": "dining",
+      "title": "Dining Etiquette",
+      "content": "West Lake vinegar fish and Dongpo pork are local specialties. Tipping is not expected. Restaurant service may be casual.",
+      "importance": "high"
+    },
+    {
+      "category": "dressing",
+      "title": "Clothing",
+      "content": "Comfortable walking shoes essential for West Lake. Dress modestly for temple visits. Light layers for variable weather.",
+      "importance": "medium"
+    },
+    {
+      "category": "timing",
+      "title": "Best Times",
+      "content": "Visit West Lake early morning or late evening to avoid crowds. Weekdays are less crowded than weekends. Spring (April-May) for flowers, autumn for foliage.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "杭州急救中心",
+      "nameEn": "Hangzhou Emergency Center",
+      "phone": "120",
+      "notes": "English interpretation available at major hospitals"
+    },
+    {
+      "type": "police",
+      "name": "杭州市公安局",
+      "nameEn": "Hangzhou Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at West Lake area"
+    },
+    {
+      "type": "hospital",
+      "name": "浙江大学医学院附属第一医院",
+      "nameEn": "First Affiliated Hospital of Zhejiang University",
+      "phone": "+86 571 8723 6000",
+      "address": "79 Qingchun Road",
+      "coordinates": { "lat": 30.2522, "lng": 120.1922 },
+      "notes": "English-speaking staff, accepts international insurance"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻上海总领事馆",
+      "nameEn": "US Consulate General Shanghai",
+      "phone": "+86 21 8011 2400",
+      "address": "Shanghai (nearest US consular services for Hangzhou)",
+      "notes": "For US citizens in Hangzhou region"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese (Simplified)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

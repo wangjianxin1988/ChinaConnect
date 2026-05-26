@@ -1,0 +1,48 @@
+---
+import AccommodationGuideClient from "@/components/Guide/AccommodationGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Accommodation Guide - ChinaConnect"
+  description="Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay."
+  meta={{
+    keywords: ['China hotel guide', 'China accommodation', 'China booking', 'Chinese hotel tips', 'China hostel'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium">Accommodation Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">🏨</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground">Accommodation Guide</h1>
+          <p class="text-muted-foreground text-lg">住宿指南 - Complete guide for staying in China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🛏️</span>
+        <div>
+          <h2 class="font-semibold">Stage 9: Accommodation Guide</h2>
+          <p class="text-sm text-muted-foreground">Hotels, hostels, and vacation rentals in China</p>
+        </div>
+      </div>
+    </div>
+
+    <AccommodationGuideClient client:load />
+  </main>
+</BaseLayout>

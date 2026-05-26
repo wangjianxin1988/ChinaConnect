@@ -1,0 +1,686 @@
+# ChinaConnect AI Agent Workflow - Dify Configuration
+# Version: 1.0.0
+# Description: 8-step AI-powered China travel planning workflow
+
+version: "1.0"
+
+variables:
+  user_input:
+    type: text
+    description: "User's natural language request"
+  user_context:
+    type: object
+    description: "User profile and preferences"
+    properties:
+      user_id: { type: string }
+      language: { type: string, default: "en" }
+      budget_level: { type: string, enum: ["budget", "medium", "luxury"] }
+      travel_style: { type: array, items: { type: string } }
+  intent:
+    type: string
+    description: "Recognized user intent"
+    enum: ["travel_planning", "business_arrangement", "food_recommendation", "emergency_help", "life_consultation", "casual_chat"]
+  extracted_params:
+    type: object
+    description: "Extracted travel parameters"
+    properties:
+      destination: { type: string }
+      days: { type: number }
+      budget: { type: number }
+      group_size: { type: number }
+      preferences: { type: array, items: { type: string } }
+      special_needs: { type: array, items: { type: string } }
+  city_data:
+    type: object
+    description: "City anchor data"
+  itinerary:
+    type: object
+    description: "Generated travel itinerary"
+
+nodes:
+  # ============================================
+  # Step 1: Intent Recognition
+  # ============================================
+  - id: intent_recognition
+    name: "Intent Recognition"
+    type: "llm"
+    position: [0, 0]
+    model:
+      provider: "siliconflow" # Domestic route - Tongyi
+      model: "qwen-plus"
+      # For overseas, use:
+      # provider: "anthropic"
+      # model: "claude-3-5-sonnet-20241022"
+    prompt: |
+      ## Role
+      You are a professional intent classifier for China travel assistance.
+
+      ## Task
+      Analyze the user's message and classify their primary intent.
+
+      ## Intent Categories
+      1. **travel_planning** - User wants to plan a trip in China (itinerary, attractions, transport)
+      2. **business_arrangement** - User needs business-related assistance (visa, meetings, venues)
+      3. **food_recommendation** - User is looking for food/restaurant recommendations
+      4. **emergency_help** - User has urgent issues (medical, safety, lost items)
+      5. **life_consultation** - User needs daily life help (SIM card, payment, transport)
+      6. **casual_chat** - User is just chatting or asking general questions
+
+      ## Input
+      User Message: {{user_input}}
+
+      ## Output Format
+      Return ONLY a JSON object:
+      ```json
+      {
+        "intent": "intent_category",
+        "confidence": 0.95,
+        "secondary_intents": ["other_relevant_intents"],
+        "reasoning": "Brief explanation"
+      }
+      ```
+
+      ## Rules
+      - Choose the most specific intent that matches
+      - Confidence below 0.7 should include secondary_intents
+      - For mixed requests, primary_intent is the main need
+    output: intent
+
+  # ============================================
+  # Step 2: Parameter Extraction
+  # ============================================
+  - id: parameter_extraction
+    name: "Parameter Extraction"
+    type: "llm"
+    position: [1, 0]
+    model:
+      provider: "siliconflow"
+      model: "qwen-plus"
+    prompt: |
+      ## Role
+      You are an expert at extracting structured information from natural language.
+
+      ## Task
+      Extract travel-related parameters from the user's message.
+
+      ## Required Parameters
+      - **destination**: City or region in China (e.g., "Shanghai", "Beijing", "Zhangjiajie")
+      - **days**: Number of days for the trip (integer)
+      - **budget**: Estimated budget in CNY (integer)
+      - **group_size**: Number of people (integer, default: 1)
+      - **preferences**: Array of interests (e.g., ["food", "history", "nature", "photography"])
+      - **special_needs**: Array of special requirements (e.g., ["wheelchair", "vegetarian", "allergies"])
+
+      ## Optional Parameters
+      - **travel_dates**: Specific dates if mentioned
+      - **transport_preference**: Preferred transport (e.g., ["high_speed_train", "flight", "bus"])
+      - **accommodation_style**: Preferred hotels (e.g., ["boutique", "luxury", "hostel"])
+
+      ## Input
+      User Message: {{user_input}}
+      Recognized Intent: {{intent.intent}}
+
+      ## Output Format
+      Return ONLY a JSON object:
+      ```json
+      {
+        "destination": "extracted or null",
+        "days": number or null,
+        "budget": number or null,
+        "group_size": number or 1,
+        "preferences": ["extracted_array"] or [],
+        "special_needs": ["extracted_array"] or [],
+        "travel_dates": "dates or null",
+        "transport_preference": ["extracted"] or [],
+        "accommodation_style": ["extracted"] or [],
+        "missing_params": ["list of params user didn't specify"],
+        "confidence": 0.9
+      }
+      ```
+
+      ## Rules
+      - Be conservative, only extract what is explicitly stated
+      - Use "missing_params" to list what user didn't provide
+      - Default group_size to 1 if not specified
+    output: extracted_params
+    condition: "{{intent.intent}} in ['travel_planning', 'business_arrangement']"
+
+  # ============================================
+  # Step 3: City Matching
+  # ============================================
+  - id: city_matching
+    name: "City Matching"
+    type: "http"
+    position: [2, 0]
+    method: "POST"
+    url: "{{env.CITY_SERVICE_URL}}/api/v1/cities/match"
+    headers:
+      Authorization: "Bearer {{env.CITY_SERVICE_API_KEY}}"
+      Content-Type: "application/json"
+    body: |
+      {
+        "query": "{{extracted_params.destination}}",
+        "language": "{{user_context.language}}"
+      }
+    output: city_data
+    condition: "{{extracted_params.destination}} != null"
+
+  # ============================================
+  # Step 4: Route Generation
+  # ============================================
+  - id: route_generation
+    name: "Route Generation"
+    type: "llm"
+    position: [3, 0]
+    model:
+      provider: "siliconflow"
+      model: "qwen-plus"
+    prompt: |
+      ## Role
+      You are an expert China travel planner with comprehensive knowledge of:
+      - Chinese tourist attractions and their characteristics
+      - High-speed rail network and schedules
+      - Domestic flight schedules and prices
+      - Hotel recommendations for all budgets
+      - Local food specialties
+
+      ## Task
+      Generate a day-by-day travel itinerary based on the parameters.
+
+      ## Input Data
+      - Destination: {{extracted_params.destination}}
+      - Days: {{extracted_params.days}}
+      - Budget Level: {{user_context.budget_level}}
+      - Group Size: {{extracted_params.group_size}}
+      - Preferences: {{extracted_params.preferences}}
+      - Special Needs: {{extracted_params.special_needs}}
+      - City Data: {{city_data}}
+
+      ## Output Format
+      Return a structured itinerary:
+      ```json
+      {
+        "summary": {
+          "destination": "City Name",
+          "total_days": number,
+          "best_season": "recommended travel time",
+          "estimated_cost": number,
+          "highlights": ["top 3 highlights"]
+        },
+        "daily_itinerary": [
+          {
+            "day": 1,
+            "theme": "Day theme (e.g., Historical Exploration)",
+            "locations": [
+              {
+                "name": "Attraction Name",
+                "duration_hours": 2.5,
+                "best_time": "9:00 AM - 11:30 AM",
+                "ticket_info": "CNY 60 (booking recommended)",
+                "highlights": ["must-see points"],
+                "tips": ["practical advice"]
+              }
+            ],
+            "meals": {
+              "breakfast": {"name": "Restaurant", "cuisine": "type", "budget": "CNY 30"},
+              "lunch": {"name": "Restaurant", "cuisine": "type", "budget": "CNY 80"},
+              "dinner": {"name": "Restaurant", "cuisine": "type", "budget": "CNY 120"}
+            },
+            "transportation": {
+              "type": "high_speed_train/flight/metro/taxi",
+              "details": "G1234 10:00-14:30 or Metro Line 2"
+            },
+            "accommodation": {
+              "name": "Hotel Name",
+              "stars": 4,
+              "price_per_night": "CNY 450",
+              "location": "Near attractions/district name"
+            },
+            "estimated_cost": number
+          }
+        ],
+        "recommended_routes": {
+          "efficient": "description of most time-efficient route",
+          "scenic": "description of most scenic route"
+        }
+      }
+      ```
+
+      ## Generation Rules
+      - Plan realistic daily schedules (6-8 hours of activities)
+      - Include travel time between locations (use real transport schedules)
+      - Balance popular attractions with hidden gems
+      - Consider opening hours and crowd levels
+      - Prioritize user's stated preferences
+      - Include both famous landmarks and local experiences
+    output: itinerary
+    condition: "{{intent.intent}} == 'travel_planning'"
+
+  # ============================================
+  # Step 5: Content Enrichment
+  # ============================================
+  - id: content_enrichment
+    name: "Content Enrichment"
+    type: "llm"
+    position: [4, 0]
+    model:
+      provider: "siliconflow"
+      model: "qwen-plus"
+    prompt: |
+      ## Role
+      You are a content enrichment specialist for China travel.
+
+      ## Task
+      Enrich the itinerary with detailed practical information for each location.
+
+      ## Input
+      Basic Itinerary: {{itinerary}}
+
+      ## Enrichment Requirements
+      For each location in the itinerary, add:
+
+      ### Attraction Details
+      - **history**: Brief historical/cultural background (2-3 sentences)
+      - **architecture**: Notable architectural features
+      - **cultural_significance**: Why this place matters to Chinese culture
+
+      ### Practical Information
+      - **crowd_level**: Expected crowd by time (low/moderate/high)
+      - **photography_spots**: Best photo spots within the attraction
+      - **accessibility**: Wheelchair access, stairs, walking distance
+      - **facilities**: Available facilities (restrooms, restaurants, gift shops)
+
+      ### Budget Breakdown
+      - **ticket_price**: Exact ticket price in CNY
+      - **student_discount**: If discounts available
+      - **combined_pass**: Any combined tickets or passes
+
+      ### Local Tips
+      - **insider_tip**: Little-known fact or local recommendation
+      - **common_mistakes**: What tourists usually get wrong
+      - **alternative_times**: Better times to visit if applicable
+
+      ## Output Format
+      Return enriched itinerary maintaining the same structure with added fields.
+    output: enriched_itinerary
+
+  # ============================================
+  # Step 6: Practical Information Injection
+  # ============================================
+  - id: practical_info_injection
+    name: "Practical Information Injection"
+    type: "llm"
+    position: [5, 0]
+    model:
+      provider: "siliconflow"
+      model: "qwen-plus"
+    prompt: |
+      ## Role
+      You are a China travel practical information expert.
+
+      ## Task
+      Inject essential practical information that every foreign traveler needs.
+
+      ## Required Information Categories
+
+      ### 1. Visa Requirements
+      - Visa type needed for user's nationality
+      - Application process and documents required
+      - Processing time and fees
+      - Port of entry restrictions
+      - Visa-free transit options (72/144 hour)
+
+      ### 2. Payment Guide
+      - WeChat Pay setup for foreigners
+      - Alipay international version
+      - Cash withdrawal locations
+      - Credit card acceptance
+      - Currency exchange tips
+
+      ### 3. SIM Card & Connectivity
+      - Best SIM cards for tourists (China Unicom, China Mobile)
+      - Where to buy (airport, convenience stores)
+      - VPN recommendation (required for many apps)
+      - Free WiFi locations
+
+      ### 4. Transportation Cards
+      - Shanghai Metro card (most useful)
+      - Regional cards (Beijing, Guangdong, etc.)
+      - How to purchase and recharge
+
+      ### 5. Cultural Tips
+      - Tipping culture (not expected)
+      - Bargaining in markets
+      - Toilet etiquette
+      - Photography restrictions
+      - Temple etiquette
+
+      ### 6. Emergency Contacts
+      - Police: 110
+      - Ambulance: 120
+      - Fire: 119
+      - Foreigner emergency hotline: 12308
+
+      ## Input
+      Destination: {{extracted_params.destination}}
+      Nationality hint from language: {{user_context.language}}
+
+      ## Output Format
+      ```json
+      {
+        "visa": {
+          "type": "description",
+          "requirements": ["list"],
+          "processing_time": "duration",
+          "tips": ["advice"]
+        },
+        "payment": {
+          "recommended_apps": ["WeChat Pay", "Alipay"],
+          "cash_tips": ["tips"],
+          "card_usage": ["where cards work"]
+        },
+        "connectivity": {
+          "sim_recommendation": "best option",
+          "purchase_location": "where to buy",
+          "price_range": "CNY xxx",
+          "vpn_required": true/false,
+          "vpn_recommendations": ["apps"]
+        },
+        "transportation": {
+          "recommended_cards": ["cards to get"],
+          "how_to_purchase": "instructions"
+        },
+        "cultural_tips": ["array of tips"],
+        "emergency_contacts": {
+          "police": "110",
+          "ambulance": "120",
+          "foreigner_hotline": "12308"
+        }
+      }
+      ```
+    output: practical_info
+
+  # ============================================
+  # Step 7: Output Formatting
+  # ============================================
+  - id: output_formatting
+    name: "Output Formatting"
+    type: "llm"
+    position: [6, 0]
+    model:
+      provider: "siliconflow"
+      model: "qwen-plus"
+    prompt: |
+      ## Role
+      You are a travel content formatter specializing in user-friendly presentations.
+
+      ## Task
+      Format the enriched itinerary into a beautiful, structured output.
+
+      ## Input Components
+      - Intent: {{intent.intent}}
+      - Extracted Parameters: {{extracted_params}}
+      - Itinerary: {{enriched_itinerary}}
+      - Practical Info: {{practical_info}}
+
+      ## Output Format (Markdown)
+
+      ```markdown
+      # 🗺️ {{destination}} Travel Itinerary ({{days}} Days)
+
+      ## 📊 Trip Summary
+      | Item | Details |
+      |------|---------|
+      | Destination | {{destination}} |
+      | Duration | {{days}} days |
+      | Budget Level | {{budget_level}} |
+      | Group Size | {{group_size}} |
+      | Est. Total Cost | CNY {{estimated_total}} |
+
+      ## 🌟 Top Highlights
+      {% for highlight in highlights %}
+      - {{highlight}}
+      {% endfor %}
+
+      ---
+
+      {% for day in daily_itinerary %}
+      ## Day {{day.day}}: {{day.theme}}
+
+      ### 🏛️ Attractions
+      {% for location in day.locations %}
+      **{{location.name}}** ({{location.duration_hours}}h)
+      - 📍 Best time: {{location.best_time}}
+      - 🎫 Ticket: {{location.ticket_info}}
+      - 📸 Photo spots: {{location.photography_spots}}
+      - 💡 Tip: {{location.tips}}
+      {% endfor %}
+
+      ### 🍜 Dining
+      - Breakfast: {{day.meals.breakfast.name}} ({{day.meals.breakfast.cuisine}}) - {{day.meals.breakfast.budget}}
+      - Lunch: {{day.meals.lunch.name}} ({{day.meals.lunch.cuisine}}) - {{day.meals.lunch.budget}}
+      - Dinner: {{day.meals.dinner.name}} ({{day.meals.dinner.cuisine}}) - {{day.meals.dinner.budget}}
+
+      ### 🚇 Transportation
+      {{day.transportation.details}}
+
+      ### 🏨 Accommodation
+      {{day.accommodation.name}} ({{day.accommodation.stars}}⭐)
+      - Price: {{day.accommodation.price_per_night}}
+      - Location: {{day.accommodation.location}}
+
+      ### 💰 Daily Cost: CNY {{day.estimated_cost}}
+      {% endfor %}
+
+      ---
+
+      ## 📋 Essential Information
+
+      ### 📝 Visa
+      {{practical_info.visa.type}}
+      - Requirements: {{practical_info.visa.requirements}}
+
+      ### 💳 Payment
+      - Download: WeChat Pay & Alipay (international versions)
+      - Cash: Available at banks and ATMs
+
+      ### 📱 SIM Card
+      - Recommendation: {{practical_info.connectivity.sim_recommendation}}
+      - Where to buy: {{practical_info.connectivity.purchase_location}}
+      - Price: {{practical_info.connectivity.price_range}}
+
+      ### � VPN
+      ⚠️ Required for: Google, YouTube, Facebook, Instagram, WhatsApp...
+      Recommended: {{practical_info.connectivity.vpn_recommendations}}
+
+      ### 🚇 Transport Card
+      Get a transportation card for convenient metro/bus travel.
+
+      ### ⚠️ Cultural Tips
+      {% for tip in practical_info.cultural_tips %}
+      - {{tip}}
+      {% endfor %}
+
+      ### 🆘 Emergency
+      | Service | Number |
+      |---------|--------|
+      | Police | 110 |
+      | Ambulance | 120 |
+      | Fire | 119 |
+      | Foreigner Hotline | 12308 |
+
+      ---
+
+      ## ✅ Travel Checklist
+      - [ ] Valid passport
+      - [ ] Visa (if required)
+      - [ ] WeChat Pay / Alipay installed
+      - [ ] SIM card / roaming plan
+      - [ ] VPN installed
+      - [ ] Transportation card
+      - [ ] Cash (CNY)
+      - [ ] Power adapter (Type A/B/C)
+
+      *Generated by ChinaConnect AI* 🇨🇳
+      ```
+
+      ## User Language
+      Detect and format in user's language ({{user_context.language}}):
+      - "en" → English
+      - "zh" → Chinese (中文)
+      - "ja" → Japanese
+      - "ko" → Korean
+    output: formatted_output
+
+  # ============================================
+  # Step 8: Save & Iterate
+  # ============================================
+  - id: save_iterate
+    name: "Save & Iterate"
+    type: "http"
+    position: [7, 0]
+    method: "POST"
+    url: "{{env.STORAGE_SERVICE_URL}}/api/v1/itineraries"
+    headers:
+      Authorization: "Bearer {{user_context.user_id}}"
+      Content-Type: "application/json"
+    body: |
+      {
+        "user_id": "{{user_context.user_id}}",
+        "destination": "{{extracted_params.destination}}",
+        "days": "{{extracted_params.days}}",
+        "itinerary_data": {{enriched_itinerary}},
+        "practical_info": {{practical_info}},
+        "created_at": "{{timestamp}}"
+      }
+    output: saved_itinerary
+    condition: "{{intent.intent}} == 'travel_planning'"
+
+# ============================================
+# Tools Definition
+# ============================================
+tools:
+  - name: "city_database"
+    type: "http"
+    description: "Query city information, attractions, and local data"
+    endpoint: "{{env.CITY_SERVICE_URL}}/api/v1/cities"
+    method: "GET"
+    parameters:
+      - name: "city_name"
+        type: "string"
+        required: true
+      - name: "language"
+        type: "string"
+        default: "en"
+
+  - name: "weather_api"
+    type: "http"
+    description: "Get weather forecast for planning outdoor activities"
+    endpoint: "{{env.WEATHER_SERVICE_URL}}/api/v1/weather"
+    method: "GET"
+    parameters:
+      - name: "city"
+        type: "string"
+        required: true
+      - name: "date"
+        type: "string"
+        required: false
+
+  - name: "hotel_search"
+    type: "http"
+    description: "Search hotels by location, price, rating"
+    endpoint: "{{env.HOTEL_SERVICE_URL}}/api/v1/hotels/search"
+    method: "POST"
+    parameters:
+      - name: "city"
+        type: "string"
+        required: true
+      - name: "check_in"
+        type: "string"
+        required: false
+      - name: "check_out"
+        type: "string"
+        required: false
+      - name: "price_range"
+        type: "object"
+        required: false
+      - name: "rating"
+        type: "number"
+        required: false
+
+  - name: "transport_search"
+    type: "http"
+    description: "Search high-speed trains and flights"
+    endpoint: "{{env.TRANSPORT_SERVICE_URL}}/api/v1/search"
+    method: "POST"
+    parameters:
+      - name: "from_city"
+        type: "string"
+        required: true
+      - name: "to_city"
+        type: "string"
+        required: true
+      - name: "date"
+        type: "string"
+        required: true
+      - name: "transport_type"
+        type: "string"
+        enum: ["train", "flight", "all"]
+        default: "all"
+
+  - name: "translation_api"
+    type: "http"
+    description: "Translate text between languages"
+    endpoint: "{{env.TRANSLATION_SERVICE_URL}}/api/v1/translate"
+    method: "POST"
+    parameters:
+      - name: "text"
+        type: "string"
+        required: true
+      - name: "source_lang"
+        type: "string"
+        default: "auto"
+      - name: "target_lang"
+        type: "string"
+        required: true
+
+  - name: "map_service"
+    type: "http"
+    description: "Get map coordinates and route visualization"
+    endpoint: "{{env.MAP_SERVICE_URL}}/api/v1/locations"
+    method: "POST"
+    parameters:
+      - name: "locations"
+        type: "array"
+        required: true
+      - name: "format"
+        type: "string"
+        default: "coordinates"
+
+# ============================================
+# Routing Configuration
+# ============================================
+routing:
+  domestic:
+    # China mainland - use Tongyi (SiliconFlow)
+    enabled: true
+    model: "qwen-plus"
+    provider: "siliconflow"
+
+  overseas:
+    # Outside China - use Claude
+    enabled: true
+    model: "claude-3-5-sonnet-20241022"
+    provider: "anthropic"
+
+  intent_routing:
+    # Different models for different intents
+    casual_chat:
+      model: "qwen-plus"
+      provider: "siliconflow"
+    emergency_help:
+      model: "qwen-plus"
+      provider: "siliconflow"
+    travel_planning:
+      model: "qwen-plus"
+      provider: "siliconflow"

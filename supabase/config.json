@@ -1,0 +1,320 @@
+{
+  "$schema": "https://json.schemastore.org/supabase",
+  "version": "1.0.0",
+  "projectId": "chinaconnect",
+  "title": "ChinaConnect Database",
+  "description": "Foreigners in China one-stop service platform - Supabase PostgreSQL schema",
+  "tables": [
+    {
+      "name": "profiles",
+      "description": "User profile extension with travel gamification",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "display_name", "type": "text" },
+        { "name": "avatar_url", "type": "text" },
+        { "name": "nationality", "type": "text" },
+        { "name": "native_language", "type": "text" },
+        { "name": "travel_level", "type": "integer" },
+        { "name": "points", "type": "integer" },
+        { "name": "badges", "type": "text[]" },
+        { "name": "preferences", "type": "jsonb" },
+        { "name": "created_at", "type": "timestamptz" },
+        { "name": "updated_at", "type": "timestamptz" }
+      ]
+    },
+    {
+      "name": "cities",
+      "description": "China cities with geographic and travel data",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "name_en", "type": "text" },
+        { "name": "name_zh", "type": "text" },
+        { "name": "slug", "type": "text" },
+        { "name": "country", "type": "text" },
+        { "name": "province", "type": "text" },
+        { "name": "lat", "type": "decimal" },
+        { "name": "lng", "type": "decimal" },
+        { "name": "population", "type": "integer" },
+        { "name": "timezone", "type": "text" },
+        { "name": "description", "type": "text" },
+        { "name": "description_zh", "type": "text" },
+        { "name": "cover_image_url", "type": "text" },
+        { "name": "climate", "type": "text" },
+        { "name": "best_season", "type": "text[]" },
+        { "name": "cost_level", "type": "integer" },
+        { "name": "airport_code", "type": "text" },
+        { "name": "high_speed_rail_available", "type": "boolean" }
+      ]
+    },
+    {
+      "name": "attractions",
+      "description": "Tourist attractions and points of interest",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "name_en", "type": "text" },
+        { "name": "name_zh", "type": "text" },
+        { "name": "slug", "type": "text" },
+        { "name": "type", "type": "text" },
+        { "name": "lat", "type": "decimal" },
+        { "name": "lng", "type": "decimal" },
+        { "name": "rating", "type": "decimal" },
+        { "name": "price_min", "type": "decimal" },
+        { "name": "price_max", "type": "decimal" },
+        { "name": "opening_hours", "type": "jsonb" },
+        { "name": "avg_visit_duration", "type": "integer" }
+      ]
+    },
+    {
+      "name": "restaurants",
+      "description": "Restaurants with cuisine and pricing info",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "name_en", "type": "text" },
+        { "name": "name_zh", "type": "text" },
+        { "name": "cuisine", "type": "text" },
+        { "name": "price_range", "type": "integer" },
+        { "name": "lat", "type": "decimal" },
+        { "name": "lng", "type": "decimal" },
+        { "name": "michelin_stars", "type": "integer" },
+        { "name": "heizhenzhu_rank", "type": "integer" },
+        { "name": "blogger_recommended", "type": "boolean" },
+        { "name": "rating", "type": "decimal" },
+        { "name": "avg_cost", "type": "decimal" }
+      ]
+    },
+    {
+      "name": "itineraries",
+      "description": "User-created travel itineraries",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "title", "type": "text" },
+        { "name": "days", "type": "integer" },
+        { "name": "budget_level", "type": "integer" },
+        { "name": "type", "type": "text" },
+        { "name": "is_public", "type": "boolean" },
+        { "name": "is_featured", "type": "boolean" },
+        { "name": "likes_count", "type": "integer" },
+        { "name": "views_count", "type": "integer" },
+        { "name": "status", "type": "text" }
+      ]
+    },
+    {
+      "name": "itinerary_days",
+      "description": "Daily breakdown of itinerary activities",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "itinerary_id", "type": "uuid", "references": "itineraries" },
+        { "name": "day_number", "type": "integer" },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "activities", "type": "jsonb" },
+        { "name": "transport_notes", "type": "text" },
+        { "name": "accommodation", "type": "text" },
+        { "name": "estimated_cost", "type": "decimal" }
+      ]
+    },
+    {
+      "name": "community_posts",
+      "description": "User-generated travel diaries, tips, and questions",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "type", "type": "text" },
+        { "name": "title", "type": "text" },
+        { "name": "content", "type": "text" },
+        { "name": "images", "type": "text[]" },
+        { "name": "likes_count", "type": "integer" },
+        { "name": "comments_count", "type": "integer" },
+        { "name": "is_pinned", "type": "boolean" },
+        { "name": "is_featured", "type": "boolean" }
+      ]
+    },
+    {
+      "name": "post_comments",
+      "description": "Comments on community posts",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "post_id", "type": "uuid", "references": "community_posts" },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "parent_id", "type": "uuid", "references": "post_comments" },
+        { "name": "content", "type": "text" },
+        { "name": "likes_count", "type": "integer" }
+      ]
+    },
+    {
+      "name": "post_likes",
+      "description": "Likes on community posts",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "post_id", "type": "uuid", "references": "community_posts" },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" }
+      ]
+    },
+    {
+      "name": "check_ins",
+      "description": "User location check-ins at attractions/restaurants",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "attraction_id", "type": "uuid", "references": "attractions" },
+        { "name": "restaurant_id", "type": "uuid", "references": "restaurants" },
+        { "name": "lat", "type": "decimal" },
+        { "name": "lng", "type": "decimal" },
+        { "name": "photo_url", "type": "text" },
+        { "name": "note", "type": "text" },
+        { "name": "rating", "type": "decimal" },
+        { "name": "visibility", "type": "text" }
+      ]
+    },
+    {
+      "name": "scam_reports",
+      "description": "Community-reported scams and safety warnings",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "type", "type": "text" },
+        { "name": "title", "type": "text" },
+        { "name": "description", "type": "text" },
+        { "name": "severity", "type": "text" },
+        { "name": "location_lat", "type": "decimal" },
+        { "name": "location_lng", "type": "decimal" },
+        { "name": "is_verified", "type": "boolean" },
+        { "name": "upvotes", "type": "integer" },
+        { "name": "status", "type": "text" }
+      ]
+    },
+    {
+      "name": "emergency_info",
+      "description": "Emergency contact information by city",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "type", "type": "text" },
+        { "name": "name", "type": "text" },
+        { "name": "name_zh", "type": "text" },
+        { "name": "phone", "type": "text" },
+        { "name": "phone_international", "type": "text" },
+        { "name": "address", "type": "text" },
+        { "name": "address_zh", "type": "text" },
+        { "name": "lat", "type": "decimal" },
+        { "name": "lng", "type": "decimal" },
+        { "name": "is_24h", "type": "boolean" }
+      ]
+    },
+    {
+      "name": "blogger_restaurants",
+      "description": "Social media restaurant recommendations from bloggers",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "restaurant_id", "type": "uuid", "references": "restaurants" },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "platform", "type": "text" },
+        { "name": "blogger_name", "type": "text" },
+        { "name": "video_url", "type": "text" },
+        { "name": "quote", "type": "text" },
+        { "name": "likes_count", "type": "integer" }
+      ]
+    },
+    {
+      "name": "price_references",
+      "description": "Cost of living data for tourists vs locals",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "item_type", "type": "text" },
+        { "name": "item_name", "type": "text" },
+        { "name": "item_name_zh", "type": "text" },
+        { "name": "local_price_min", "type": "decimal" },
+        { "name": "local_price_max", "type": "decimal" },
+        { "name": "tourist_price_min", "type": "decimal" },
+        { "name": "tourist_price_max", "type": "decimal" },
+        { "name": "currency", "type": "text" },
+        { "name": "unit", "type": "text" }
+      ]
+    },
+    {
+      "name": "bookmarks",
+      "description": "User bookmarks for attractions, restaurants, itineraries",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "bookmark_type", "type": "text" },
+        { "name": "reference_id", "type": "uuid" },
+        { "name": "note", "type": "text" },
+        { "name": "tags", "type": "text[]" }
+      ]
+    },
+    {
+      "name": "user_follows",
+      "description": "User following relationships",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "follower_id", "type": "uuid", "references": "auth.users" },
+        { "name": "following_id", "type": "uuid", "references": "auth.users" }
+      ]
+    },
+    {
+      "name": "notifications",
+      "description": "User notifications",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "type", "type": "text" },
+        { "name": "title", "type": "text" },
+        { "name": "content", "type": "text" },
+        { "name": "data", "type": "jsonb" },
+        { "name": "is_read", "type": "boolean" }
+      ]
+    },
+    {
+      "name": "ai_conversations",
+      "description": "AI travel assistant conversation history",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "user_id", "type": "uuid", "references": "auth.users" },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "title", "type": "text" },
+        { "name": "context", "type": "jsonb" },
+        { "name": "message_count", "type": "integer" }
+      ]
+    },
+    {
+      "name": "ai_messages",
+      "description": "Individual AI conversation messages",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "conversation_id", "type": "uuid", "references": "ai_conversations" },
+        { "name": "role", "type": "text" },
+        { "name": "content", "type": "text" },
+        { "name": "tokens_used", "type": "integer" },
+        { "name": "metadata", "type": "jsonb" }
+      ]
+    },
+    {
+      "name": "city_metrics",
+      "description": "Daily city analytics for trending/popularity",
+      "fields": [
+        { "name": "id", "type": "uuid", "primaryKey": true },
+        { "name": "city_id", "type": "uuid", "references": "cities" },
+        { "name": "date", "type": "date" },
+        { "name": "check_ins_count", "type": "integer" },
+        { "name": "posts_count", "type": "integer" },
+        { "name": "searches_count", "type": "integer" },
+        { "name": "avg_sentiment", "type": "decimal" }
+      ]
+    }
+  ],
+  "typeOverrides": {
+    "uuid": "string",
+    "decimal": "number",
+    "timestamptz": "string",
+    "text[]": "string[]",
+    "uuid[]": "string[]"
+  }
+}
