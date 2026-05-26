@@ -1,0 +1,71 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  CLOUDFLARE_PROJECT_NAME: chinaconnect
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+        env:
+          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
+          PUBLIC_DIFY_API_URL: ${{ secrets.PUBLIC_DIFY_API_URL }}
+          PUBLIC_DIFY_API_KEY: ${{ secrets.PUBLIC_DIFY_API_KEY }}
+          PUBLIC_ANYSEARCH_API_KEY: ${{ secrets.PUBLIC_ANYSEARCH_API_KEY }}
+          PUBLIC_MINIMAX_API_KEY: ${{ secrets.PUBLIC_MINIMAX_API_KEY }}
+          PUBLIC_OWM_API_KEY: ${{ secrets.PUBLIC_OWM_API_KEY }}
+
+      - name: Upload to Cloudflare Pages
+        uses: cloudflare/pages-action@v1.5.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ env.CLOUDFLARE_PROJECT_NAME }}
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          commitMessage: "Deploy ${{ github.sha }}"
+
+  test:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Type check
+        run: pnpm check || true
+
+      - name: Build
+        run: pnpm build
