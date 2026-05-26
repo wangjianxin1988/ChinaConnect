@@ -129,7 +129,7 @@ const pageKeywords = [
         <!-- Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
-            <div class="text-3xl font-bold mb-1">12</div>
+            <div class="text-3xl font-bold mb-1">35</div>
             <div class="text-sm text-blue-200" data-i18n="home.statsCities">Cities Covered</div>
           </div>
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
@@ -174,8 +174,8 @@ const pageKeywords = [
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {citiesMeta.slice(0, 8).map((city, index) => (
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {citiesMeta.slice(0, 11).map((city, index) => (
           <a
             href={`/city/${city.slug}`}
             class={`group relative overflow-hidden rounded-2xl card-hover ${
@@ -190,8 +190,11 @@ const pageKeywords = [
               index === 4 ? 'from-red-500 to-orange-600' :
               index === 5 ? 'from-teal-500 to-blue-600' :
               index === 6 ? 'from-pink-500 to-purple-600' :
-              'from-yellow-500 to-orange-600'
-            } ${index === 0 ? 'h-80 lg:h-full min-h-[320px]' : 'h-56'} flex items-center justify-center`}>
+              index === 7 ? 'from-yellow-500 to-orange-600' :
+              index === 8 ? 'from-cyan-500 to-blue-600' :
+              index === 9 ? 'from-indigo-500 to-purple-600' :
+              'from-emerald-500 to-teal-600'
+            } ${index === 0 ? 'h-80 lg:h-full min-h-[320px]' : 'h-48'} flex items-center justify-center`}>
               <span class="text-white/30 text-9xl font-bold">{city.name[0]}</span>
             </div>
 
