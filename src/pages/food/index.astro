@@ -1,5 +1,7 @@
 ---
 import "@/styles/global.css";
+import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
+import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
 import { cities, citiesMeta } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -145,6 +147,32 @@ const totalLocal = citiesWithFoodStats.reduce((sum, c) => sum + c.localCount, 0)
         <span>从上海开始</span>
         <span>→</span>
       </a>
+    </section>
+
+    <!-- Food Apps Section -->
+    <section class="mt-16 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+        <span>🍜</span> Essential Food Apps
+      </h2>
+      <p class="text-gray-600 mb-6">
+        Download these apps to order food delivery and discover local restaurants with English menus
+      </p>
+
+      <InlineAppPillsGroup
+        apps={getAppsForSection(["food"])}
+      />
+
+      <div class="mt-6 bg-white rounded-xl p-4 border border-orange-100">
+        <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+          <span>💡</span> Pro Tips for Food Apps
+        </h3>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>• <strong>Meituan</strong> has English menu translation for many restaurants</li>
+          <li>• <strong>Dianping</strong> is great for finding local favorites with English reviews</li>
+          <li>• <strong>Ele.me</strong> offers the widest delivery coverage but may default to Chinese</li>
+          <li>• Link your foreign card to Alipay/WeChat Pay before ordering</li>
+        </ul>
+      </div>
     </section>
   </main>
 </BaseLayout>

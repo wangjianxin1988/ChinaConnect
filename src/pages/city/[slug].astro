@@ -1,5 +1,7 @@
 ---
 import { BudgetHotelSection } from "@/components/accommodation/BudgetHotelSection";
+import { AppRecommendationsSection } from "@/components/apps/AppRecommendationsSection";
+import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
 import { AttractionCard } from "@/components/city/AttractionCard";
 import { AttractionsSection } from "@/components/city/AttractionsSection";
 import { CityFoodNav } from "@/components/city/CityFoodNav";
@@ -12,7 +14,6 @@ import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
 import { RestaurantCard } from "@/components/city/RestaurantCard";
 import { RestaurantsSection } from "@/components/city/RestaurantsSection";
 import { WeatherWidget } from "@/components/city/WeatherWidget";
-import { AppRecommendationsSection } from "@/components/apps/AppRecommendationsSection";
 import { getBudgetHotelsByCity } from "@/data/accommodation/cities-budget-hotels";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import { S_TIER_CITIES } from "@/data/cities/tier-data";
@@ -207,7 +208,8 @@ const modules = [
   { id: "transport", label: "Transport", icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
   { id: "accommodation", label: "Stay", icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
   { id: "payment", label: "Payment", icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
-  { id: "apps", label: "Apps", icon: "📱", colorClass: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100" },
+  { id: "connectivity", label: "SIM/eSIM", icon: "📶", colorClass: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100" },
+  { id: "apps", label: "Apps", icon: "📱", colorClass: "bg-gray-50 text-gray-700 hover:bg-gray-100" },
   { id: "culture", label: "Culture", icon: "🎎", colorClass: "bg-pink-50 text-pink-700 hover:bg-pink-100" },
   { id: "emergency", label: "Emergency", icon: "🚨", colorClass: "bg-red-50 text-red-700 hover:bg-red-100" },
 ];
@@ -542,6 +544,20 @@ const mapMarkers = [
             cityName={city.nameEn}
             client:visible
           />
+
+          {/* Food Delivery Apps */}
+          <div class="mt-6 pt-6 border-t border-gray-200">
+            <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center gap-2">
+              <span>🍜</span> Food Delivery & Review Apps
+            </h4>
+            <InlineAppPillsGroup
+              client:visible
+              apps={getAppsForSection(["food"])}
+            />
+            <p class="text-xs text-gray-500 mt-2">
+              💡 Use Meituan or Dianping to browse English menus and find local favorites. Ele.me may default to Chinese - switch to English in settings.
+            </p>
+          </div>
         </section>
 
         <!-- Transport Section -->
@@ -602,6 +618,15 @@ const mapMarkers = [
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              {/* Transport Apps */}
+              <div class="mt-4 pt-4 border-t border-gray-100">
+                <InlineAppPillsGroup
+                  client:visible
+                  apps={getAppsForSection(["transport"])}
+                  title="Recommended Transport Apps"
+                />
               </div>
 
               <div class="bg-white border rounded-xl p-6">
@@ -789,6 +814,54 @@ const mapMarkers = [
                 </div>
               </div>
             ))}
+
+            {/* Payment Apps */}
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <h4 class="text-sm font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                <span>💳</span> Recommended Payment Apps
+              </h4>
+              <InlineAppPillsGroup
+                client:visible
+                apps={getAppsForSection(["payment"])}
+              />
+              <p class="text-xs text-gray-500 mt-2">
+                💡 Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SIM/eSIM & Connectivity Section -->
+        <section id="connectivity" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">📶</span> SIM Cards & eSIM
+          </h2>
+          <p class="section-subtitle">Stay connected in China with the best data options</p>
+
+          <div class="space-y-4">
+            <div class="bg-white border rounded-xl p-6">
+              <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                <span>📱</span> eSIM (Recommended)
+              </h3>
+              <p class="text-gray-600 mb-4">
+                eSIM is the easiest way to get data in China. No physical SIM needed - activate instantly on arrival.
+              </p>
+              <InlineAppPillsGroup
+                client:visible
+                apps={getAppsForSection(["connectivity"])}
+              />
+            </div>
+
+            <div class="bg-blue-50 border border-blue-100 rounded-xl p-4">
+              <h4 class="font-semibold text-blue-800 mb-2 flex items-center gap-2">
+                <span>💡</span> Pro Tips
+              </h4>
+              <ul class="text-sm text-blue-700 space-y-1">
+                <li>• eSIM works best if your phone supports it (iPhone XS+ and most Android flagships)</li>
+                <li>• Download eSIM apps before arriving in China</li>
+                <li>• Airalo and Holafly offer China-specific plans with unlimited data options</li>
+              </ul>
+            </div>
           </div>
         </section>
 

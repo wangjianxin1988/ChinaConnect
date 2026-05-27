@@ -185,14 +185,15 @@ function getBadgeLabel(type: Restaurant["type"]) {
   <div class="container-custom py-8">
     <!-- Filter Navigation -->
     <div class="mb-8">
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap gap-2" id="filter-buttons">
         {filterGroups.map((group) => {
           const isActive = group.id === currentFilter.id;
           return (
-            <a
-              href={`/city/${city.slug}/food?filter=${group.id}`}
+            <button
+              data-filter={group.id}
+              data-city-slug={city.slug}
               class={`
-                flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all
+                flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all filter-btn
                 ${isActive
                   ? `${group.colorClass} ring-2 ring-offset-1 ${group.id === "blackpearl" ? "ring-slate-400" : "ring-orange-300"}`
                   : "bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
@@ -204,7 +205,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
               <span class={`text-xs rounded-full px-2 py-0.5 ${isActive ? "bg-white/40" : "bg-gray-100"}`}>
                 {group.restaurants.length}
               </span>
-            </a>
+            </button>
           );
         })}
       </div>
@@ -212,12 +213,14 @@ function getBadgeLabel(type: Restaurant["type"]) {
       <!-- Current filter info -->
       <div class="mt-4 flex items-center justify-between">
         <p class="text-gray-600 text-sm">
-          <span class="font-semibold text-gray-900">{currentFilter.restaurants.length}</span> 家餐厅
-          {currentFilter.id !== "all" && (
-            <span class="ml-2">
-              — 筛选: <span class="font-medium text-orange-600">{currentFilter.icon} {currentFilter.labelZh}</span>
-            </span>
-          )}
+          <span class="font-semibold text-gray-900" id="restaurant-count">{currentFilter.restaurants.length}</span> 家餐厅
+          <span id="filter-info" class="ml-2">
+            {currentFilter.id !== "all" && (
+              <span>
+                — 筛选: <span class="font-medium text-orange-600">{currentFilter.icon} {currentFilter.labelZh}</span>
+              </span>
+            )}
+          </span>
         </p>
         <a
           href={`/city/${city.slug}`}
@@ -229,39 +232,41 @@ function getBadgeLabel(type: Restaurant["type"]) {
     </div>
 
     <!-- Restaurant Grid -->
-    {currentFilter.restaurants.length > 0 ? (
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {currentFilter.restaurants.map((restaurant) => (
-          <a
-            href={`/food/${restaurant.id}`}
-            class="block bg-white border border-gray-100 rounded-xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all group"
+    {allRestaurants.length > 0 ? (
+      <div id="restaurant-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" data-current-filter="all">
+        {allRestaurants.map((restaurant) => (
+          <div
+            data-filter-category={getHighlightCategory(restaurant)}
+            class="bg-white border border-gray-100 rounded-xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all group restaurant-card"
           >
-            {/* Header */}
-            <div class="flex items-start justify-between gap-2 mb-3">
-              <div class="flex-1 min-w-0">
-                <h3 class="text-lg font-semibold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">
-                  {restaurant.nameEn}
-                </h3>
-                <p class="text-gray-500 text-sm truncate">{restaurant.name}</p>
+            {/* Header - clickable link to detail */}
+            <a href={`/food/${restaurant.id}`} class="block mb-3">
+              <div class="flex items-start justify-between gap-2">
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-lg font-semibold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">
+                    {restaurant.nameEn}
+                  </h3>
+                  <p class="text-gray-500 text-sm truncate">{restaurant.name}</p>
+                </div>
+                {/* Highlight badges */}
+                <div class="shrink-0 flex flex-col gap-1 items-end">
+                  {restaurant.type === "michelin" && restaurant.star && (
+                    <div class="flex items-center gap-0.5">
+                      {Array.from({ length: restaurant.star }).map((_, i) => (
+                        <span key={i} class="text-amber-400 text-sm">★</span>
+                      ))}
+                    </div>
+                  )}
+                  {restaurant.type === "blackpearl" && restaurant.diamond && (
+                    <div class="flex items-center gap-0.5">
+                      {Array.from({ length: restaurant.diamond }).map((_, i) => (
+                        <span key={i} class="text-gray-400 text-sm">◆</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
-              {/* Highlight badges */}
-              <div class="shrink-0 flex flex-col gap-1 items-end">
-                {restaurant.type === "michelin" && restaurant.star && (
-                  <div class="flex items-center gap-0.5">
-                    {Array.from({ length: restaurant.star }).map((_, i) => (
-                      <span key={i} class="text-amber-400 text-sm">★</span>
-                    ))}
-                  </div>
-                )}
-                {restaurant.type === "blackpearl" && restaurant.diamond && (
-                  <div class="flex items-center gap-0.5">
-                    {Array.from({ length: restaurant.diamond }).map((_, i) => (
-                      <span key={i} class="text-gray-400 text-sm">◆</span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
+            </a>
 
             {/* Type badge */}
             <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -323,25 +328,23 @@ function getBadgeLabel(type: Restaurant["type"]) {
               </div>
             )}
 
-            {/* Action row */}
+            {/* Action row - phone and map buttons now properly inside card */}
             <div class="flex items-center gap-2 pt-3 border-t border-gray-100 flex-wrap">
               {restaurant.phone && (
                 <a
                   href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
                   class="flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors shrink-0"
-                  onclick="event.stopPropagation()"
                 >
                   <span>📞</span>
                   <span>拨打电话</span>
                 </a>
               )}
-              {restaurant.coordinates && (
+              {restaurant.lat && restaurant.lng && (
                 <a
-                  href={`https://maps.google.com/maps?search=${restaurant.coordinates.lat},${restaurant.coordinates.lng}`}
+                  href={`https://maps.google.com/maps?search=${restaurant.lat},${restaurant.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-700 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors shrink-0"
-                  onclick="event.stopPropagation()"
                 >
                   <span>📍</span>
                   <span>导航</span>
@@ -351,21 +354,22 @@ function getBadgeLabel(type: Restaurant["type"]) {
                 {restaurant.address}
               </span>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     ) : (
       <!-- Empty state -->
-      <div class="text-center py-16">
+      <div id="empty-state" class="text-center py-16">
         <div class="text-6xl mb-4">🍽️</div>
         <h3 class="text-xl font-bold text-gray-900 mb-2">暂无餐厅</h3>
         <p class="text-gray-500 mb-6">该分类下暂无餐厅，请选择其他分类</p>
-        <a
-          href={`/city/${city.slug}/food?filter=all`}
-          class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors"
+        <button
+          data-filter="all"
+          data-city-slug={city.slug}
+          class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors filter-btn"
         >
           查看全部餐厅
-        </a>
+        </button>
       </div>
     )}
 
@@ -401,4 +405,130 @@ function getBadgeLabel(type: Restaurant["type"]) {
       </div>
     </div>
   </div>
+
+  <script>
+    // Client-side filter handling for food page
+    (function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const restaurantGrid = document.getElementById('restaurant-grid');
+      const restaurantCount = document.getElementById('restaurant-count');
+      const filterInfo = document.getElementById('filter-info');
+      const emptyState = document.getElementById('empty-state');
+
+      // Filter metadata for display
+      const filterMeta: Record<string, { icon: string; labelZh: string }> = {
+        'all': { icon: '🍽️', labelZh: '全部' },
+        'local_recommend': { icon: '❤️', labelZh: '本地人推荐' },
+        'michelin': { icon: '⭐', labelZh: '米其林' },
+        'blackpearl': { icon: '💎', labelZh: '黑珍珠' },
+        'affordable': { icon: '💙', labelZh: '平价美食' },
+        'street_food': { icon: '🔥', labelZh: '苍蝇馆子' },
+      };
+
+      // Get initial filter from URL
+      function getInitialFilter(): string {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('filter') || 'all';
+      }
+
+      // Update URL without page reload
+      function updateURL(filter: string, citySlug: string) {
+        const url = new URL(window.location.href);
+        if (filter === 'all') {
+          url.searchParams.delete('filter');
+        } else {
+          url.searchParams.set('filter', filter);
+        }
+        history.pushState({ filter }, '', url.toString());
+      }
+
+      // Apply filter to restaurant cards
+      function applyFilter(filter: string) {
+        if (!restaurantGrid) return;
+
+        const cards = restaurantGrid.querySelectorAll('.restaurant-card');
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const cardEl = card as HTMLElement;
+          const category = cardEl.dataset.filterCategory;
+
+          if (filter === 'all' || category === filter) {
+            cardEl.style.display = '';
+            visibleCount++;
+          } else {
+            cardEl.style.display = 'none';
+          }
+        });
+
+        // Update count display
+        if (restaurantCount) {
+          restaurantCount.textContent = visibleCount.toString();
+        }
+
+        // Update filter info
+        if (filterInfo) {
+          if (filter === 'all') {
+            filterInfo.innerHTML = '';
+          } else {
+            const meta = filterMeta[filter];
+            if (meta) {
+              filterInfo.innerHTML = `— 筛选: <span class="font-medium text-orange-600">${meta.icon} ${meta.labelZh}</span>`;
+            }
+          }
+        }
+
+        // Show/hide empty state
+        if (emptyState) {
+          emptyState.style.display = visibleCount === 0 ? '' : 'none';
+        }
+        if (restaurantGrid) {
+          restaurantGrid.style.display = visibleCount === 0 ? 'none' : '';
+        }
+
+        // Update active button state
+        filterButtons.forEach((btn) => {
+          const btnEl = btn as HTMLElement;
+          const btnFilter = btnEl.dataset.filter;
+          const isActive = btnFilter === filter;
+
+          // Update classes based on active state
+          if (isActive) {
+            btnEl.classList.add('ring-2', 'ring-offset-1');
+            if (filter === 'blackpearl') {
+              btnEl.classList.add('ring-slate-400');
+            } else {
+              btnEl.classList.add('ring-orange-300');
+            }
+          } else {
+            btnEl.classList.remove('ring-2', 'ring-offset-1', 'ring-slate-400', 'ring-orange-300');
+          }
+        });
+      }
+
+      // Initialize
+      const initialFilter = getInitialFilter();
+      applyFilter(initialFilter);
+
+      // Add click handlers to filter buttons
+      filterButtons.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          const btnEl = e.currentTarget as HTMLElement;
+          const filter = btnEl.dataset.filter;
+          const citySlug = btnEl.dataset.citySlug;
+
+          if (filter) {
+            updateURL(filter, citySlug || '');
+            applyFilter(filter);
+          }
+        });
+      });
+
+      // Handle browser back/forward
+      window.addEventListener('popstate', () => {
+        const filter = getInitialFilter();
+        applyFilter(filter);
+      });
+    })();
+  </script>
 </BaseLayout>
