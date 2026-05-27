@@ -1,5 +1,6 @@
 import type { Database } from "@/types/database";
 import { createClient } from "@supabase/supabase-js";
+import WebSocket from "ws";
 
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
@@ -15,9 +16,10 @@ export const supabase = createClient<Database>(
   supabaseUrl || "https://placeholder.supabase.co",
   supabaseAnonKey || "placeholder-key",
   {
-    // Disable realtime to prevent WebSocket connection issues during SSR/build
+    // Provide ws transport for Node.js environments (GitHub Actions CI)
     realtime: {
-      enabled: false,
+      enabled: true,
+      transport: WebSocket,
     },
   },
 );
