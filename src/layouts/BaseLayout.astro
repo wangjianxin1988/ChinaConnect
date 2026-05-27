@@ -140,6 +140,12 @@ const translationsJson = JSON.stringify(translations);
         var translations = JSON.parse(translationsJson);
         var languages = SUPPORTED_LANGUAGES;
 
+        // Expose translations and languages globally for other scripts
+        window.__I18N__ = {
+          translations: translations,
+          languages: languages
+        };
+
         // Get current language from localStorage or browser
         function getCurrentLang() {
           var stored = localStorage.getItem(STORAGE_KEY);
