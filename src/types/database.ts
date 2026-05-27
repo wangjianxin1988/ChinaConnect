@@ -1135,6 +1135,190 @@ export type Database = {
           created_at?: string;
         };
       };
+      city_scores: {
+        Row: {
+          id: string;
+          city_id: string;
+          composite_score: number;
+          economy_score: number;
+          international_score: number;
+          tourism_score: number;
+          livability_score: number;
+          tier: "S" | "A" | "B" | "C" | "D";
+          overall_rank: number | null;
+          score_breakdown: Json;
+          calculated_at: string;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          city_id: string;
+          composite_score: number;
+          economy_score: number;
+          international_score: number;
+          tourism_score: number;
+          livability_score: number;
+          tier: "S" | "A" | "B" | "C" | "D";
+          overall_rank?: number | null;
+          score_breakdown?: Json;
+          calculated_at?: string;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          city_id?: string;
+          composite_score?: number;
+          economy_score?: number;
+          international_score?: number;
+          tourism_score?: number;
+          livability_score?: number;
+          tier?: "S" | "A" | "B" | "C" | "D";
+          overall_rank?: number | null;
+          score_breakdown?: Json;
+          calculated_at?: string;
+          created_at?: string;
+        };
+      };
+      city_score_history: {
+        Row: {
+          id: string;
+          city_id: string;
+          composite_score: number;
+          economy_score: number;
+          international_score: number;
+          tourism_score: number;
+          livability_score: number;
+          tier: "S" | "A" | "B" | "C" | "D";
+          recorded_at: string;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          city_id: string;
+          composite_score: number;
+          economy_score: number;
+          international_score: number;
+          tourism_score: number;
+          livability_score: number;
+          tier: "S" | "A" | "B" | "C" | "D";
+          recorded_at: string;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          city_id?: string;
+          composite_score?: number;
+          economy_score?: number;
+          international_score?: number;
+          tourism_score?: number;
+          livability_score?: number;
+          tier?: "S" | "A" | "B" | "C" | "D";
+          recorded_at?: string;
+          created_at?: string;
+        };
+      };
+      city_images: {
+        Row: {
+          id: string;
+          city_id: string;
+          image_url: string;
+          image_type: "cover" | "hero" | "gallery" | "attraction";
+          is_primary: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          city_id: string;
+          image_url: string;
+          image_type: "cover" | "hero" | "gallery" | "attraction";
+          is_primary?: boolean;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          city_id?: string;
+          image_url?: string;
+          image_type?: "cover" | "hero" | "gallery" | "attraction";
+          is_primary?: boolean;
+          created_at?: string;
+        };
+      };
+      score_update_logs: {
+        Row: {
+          id: string;
+          run_id: string;
+          status: "running" | "success" | "failed" | "partial";
+          cities_updated: number | null;
+          calculation_duration_ms: number | null;
+          error_message: string | null;
+          started_at: string;
+          completed_at: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          run_id: string;
+          status?: "running" | "success" | "failed" | "partial";
+          cities_updated?: number | null;
+          calculation_duration_ms?: number | null;
+          error_message?: string | null;
+          started_at?: string;
+          completed_at?: string | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          run_id?: string;
+          status?: "running" | "success" | "failed" | "partial";
+          cities_updated?: number | null;
+          calculation_duration_ms?: number | null;
+          error_message?: string | null;
+          started_at?: string;
+          completed_at?: string | null;
+          created_at?: string;
+        };
+      };
+      data_source_configs: {
+        Row: {
+          id: string;
+          source_name: string;
+          source_type: string;
+          base_url: string | null;
+          api_key: string | null;
+          last_fetch_at: string | null;
+          fetch_interval_hours: number;
+          is_active: boolean;
+          config: Json;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          source_name: string;
+          source_type: string;
+          base_url?: string | null;
+          api_key?: string | null;
+          last_fetch_at?: string | null;
+          fetch_interval_hours?: number;
+          is_active?: boolean;
+          config?: Json;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          source_name?: string;
+          source_type?: string;
+          base_url?: string | null;
+          api_key?: string | null;
+          last_fetch_at?: string | null;
+          fetch_interval_hours?: number;
+          is_active?: boolean;
+          config?: Json;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
     };
     Views: {
       leaderboard_view: {
@@ -1200,6 +1384,12 @@ export type AIConversation = Database["public"]["Tables"]["ai_conversations"]["R
 export type AIMessage = Database["public"]["Tables"]["ai_messages"]["Row"];
 
 export type CityMetric = Database["public"]["Tables"]["city_metrics"]["Row"];
+
+export type CityScore = Database["public"]["Tables"]["city_scores"]["Row"];
+export type CityScoreHistory = Database["public"]["Tables"]["city_score_history"]["Row"];
+export type CityImage = Database["public"]["Tables"]["city_images"]["Row"];
+export type ScoreUpdateLog = Database["public"]["Tables"]["score_update_logs"]["Row"];
+export type DataSourceConfig = Database["public"]["Tables"]["data_source_configs"]["Row"];
 
 export type LeaderboardEntry = Database["public"]["Views"]["leaderboard_view"]["Row"];
 

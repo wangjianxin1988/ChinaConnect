@@ -3,7 +3,8 @@
 import { S_TIER_CITIES, TIER_CONFIG } from "@/data/cities/tier-data";
 import type { CityTier } from "@/data/cities/types";
 import type { City } from "@/data/cities/types";
-import React, { useState, useMemo } from "react";
+import { type CityScoreDisplay, fetchCityScores } from "@/lib/city-sources/city-scores-api";
+import React, { useState, useMemo, useEffect } from "react";
 import { CityTierBadge } from "./CityTierBadge";
 import { CityTierFilter, CityTierSortDropdown, type TierSortOption } from "./CityTierFilter";
 
@@ -21,22 +22,54 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
   const [selectedTiers, setSelectedTiers] = useState<CityTier[]>(["S", "A", "D"]);
   const [sortBy, setSortBy] = useState<TierSortOption>("priority");
   const [searchQuery, setSearchQuery] = useState("");
+  const [cityScores, setCityScores] = useState<Record<string, CityScoreDisplay>>({});
+  const [scoresLoading, setScoresLoading] = useState(true);
 
-  // Build city data with tier info
+  // Fetch city scores from Supabase on mount
+  useEffect(() => {
+    async function loadScores() {
+      try {
+        const scores = await fetchCityScores();
+        const scoresMap: Record<string, CityScoreDisplay> = {};
+        for (const score of scores) {
+          scoresMap[score.slug] = score;
+        }
+        setCityScores(scoresMap);
+      } catch (error) {
+        console.error("Failed to fetch city scores:", error);
+      } finally {
+        setScoresLoading(false);
+      }
+    }
+    loadScores();
+  }, []);
+
+  // Build city data with tier info, cover images, and scores from Supabase
   const citiesWithTier = useMemo(() => {
     return citiesMeta.map((meta) => {
       const tierMeta = S_TIER_CITIES[meta.slug];
-      // Note: citiesData is available for future enrichment but tier metadata is sufficient for now
-      const _cityData = citiesData.find((c) => c.slug === meta.slug);
+      const cityData = citiesData.find((c) => c.slug === meta.slug);
+      const dbScore = cityScores[meta.slug];
+
+      // Use score from Supabase if available, otherwise fall back to tier-data
       return {
         ...meta,
-        tier: tierMeta?.tier || ("D" as CityTier),
+        tier: dbScore?.tier || tierMeta?.tier || ("D" as CityTier),
         priority: tierMeta?.priority || 999,
         region: tierMeta?.region || "Other",
         tags: tierMeta?.tags || [],
+        coverImage: cityData?.coverImage,
+        // Prefer Supabase score over static data
+        compositeScore: dbScore?.compositeScore ?? tierMeta?.compositeScore,
+        overallRank: dbScore?.rank ?? tierMeta?.overallRank,
+        // Also store dimension scores if available
+        economyScore: dbScore?.economyScore,
+        internationalScore: dbScore?.internationalScore,
+        tourismScore: dbScore?.tourismScore,
+        livabilityScore: dbScore?.livabilityScore,
       };
     });
-  }, [citiesMeta, citiesData]);
+  }, [citiesMeta, citiesData, cityScores]);
 
   // Filter cities
   const filteredCities = useMemo(() => {
@@ -94,12 +127,14 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
   const tierCounts = useMemo(() => {
     const counts: Record<CityTier, number> = { S: 0, A: 0, D: 0 };
     for (const city of citiesWithTier) {
-      counts[city.tier]++;
+      if (city.tier in counts) {
+        counts[city.tier as CityTier]++;
+      }
     }
     return counts;
   }, [citiesWithTier]);
 
-  // Get gradient colors for tier
+  // Get gradient colors for tier fallback
   const getGradient = (tier: CityTier, index: number): string => {
     const gradients: Record<CityTier, string[]> = {
       S: [
@@ -112,6 +147,16 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
     };
     const tierGradients = gradients[tier];
     return tierGradients[index % tierGradients.length];
+  };
+
+  // Get tier badge color scheme
+  const getTierColorScheme = (tier: CityTier): { bg: string; text: string } => {
+    const schemes: Record<CityTier, { bg: string; text: string }> = {
+      S: { bg: "bg-amber-500", text: "text-amber-500" },
+      A: { bg: "bg-blue-500", text: "text-blue-500" },
+      D: { bg: "bg-gray-400", text: "text-gray-400" },
+    };
+    return schemes[tier];
   };
 
   return (
@@ -188,23 +233,59 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
                 : ""
             }`}
           >
-            {/* Gradient Background */}
-            <div
-              className={`bg-gradient-to-br ${getGradient(city.tier, index)} ${
-                index === 0 && selectedTiers.includes("S") ? "h-80 lg:h-full min-h-[320px]" : "h-48"
-              } flex items-center justify-center relative`}
-            >
-              {/* Large letter watermark */}
-              <span className="text-white/20 text-8xl font-bold absolute">{city.name[0]}</span>
-
-              {/* Tier Badge */}
-              <div className="absolute top-3 right-3">
-                <CityTierBadge tier={city.tier} size="sm" />
+            {/* Background Image or Gradient Fallback */}
+            {city.coverImage ? (
+              /* Real city image */
+              <div
+                className={`relative ${index === 0 && selectedTiers.includes("S") ? "h-80 lg:h-full min-h-[320px]" : "h-48"}`}
+              >
+                <img
+                  src={city.coverImage}
+                  alt={`${city.name} cityscape`}
+                  className="w-full h-full object-cover"
+                  loading={index < 6 ? "eager" : "lazy"}
+                />
+                {/* Dark overlay for readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
               </div>
+            ) : (
+              /* Gradient fallback when no image */
+              <div
+                className={`bg-gradient-to-br ${getGradient(city.tier, index)} ${
+                  index === 0 && selectedTiers.includes("S")
+                    ? "h-80 lg:h-full min-h-[320px]"
+                    : "h-48"
+                } flex items-center justify-center relative`}
+              >
+                {/* Large letter watermark */}
+                <span className="text-white/20 text-8xl font-bold absolute">{city.name[0]}</span>
+              </div>
+            )}
+
+            {/* Tier Badge - positioned top right */}
+            <div className="absolute top-3 right-3 z-10">
+              <CityTierBadge tier={city.tier} size="sm" />
             </div>
 
+            {/* Score Badge - positioned top left if available */}
+            {city.compositeScore !== undefined && (
+              <div className="absolute top-3 left-3 z-10">
+                <div
+                  className={`px-2 py-1 rounded-md text-xs font-semibold text-white backdrop-blur-sm ${
+                    city.tier === "S"
+                      ? "bg-amber-500/80"
+                      : city.tier === "A"
+                        ? "bg-blue-500/80"
+                        : "bg-gray-500/80"
+                  }`}
+                >
+                  {city.compositeScore.toFixed(0)}
+                </div>
+              </div>
+            )}
+
             {/* Content Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
+            <div className="absolute inset-0 flex flex-col justify-end p-6">
               <div className="mb-2">
                 <span className="text-blue-300 text-sm font-medium">{city.nameZh}</span>
               </div>

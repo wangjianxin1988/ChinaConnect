@@ -15,6 +15,8 @@ export interface CityTierMeta {
   priority?: number; // Display priority within tier (1 = highest)
   region?: string; // e.g., "长三角", "珠三角", etc.
   tags?: string[]; // e.g., ["UNESCO", "Business Hub", "Coastal"]
+  compositeScore?: number; // City scoring from multi-source data
+  overallRank?: number | null; // Overall ranking by composite score
 }
 
 export interface Coordinates {

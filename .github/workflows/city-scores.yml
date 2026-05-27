@@ -1,0 +1,43 @@
+name: City Scores Update
+
+on:
+  schedule:
+    # Run weekly on Sunday at 00:00 UTC
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    # Allow manual trigger
+    inputs:
+      force:
+        description: "Force full recalculation"
+        required: false
+        default: "false"
+
+jobs:
+  update-scores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run city score calculation
+        run: pnpm exec tsx src/scripts/update-city-scores.ts
+        env:
+          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Log update result
+        run: |
+          echo "City scores updated successfully"
+          echo "Timestamp: $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
