@@ -1,4 +1,4 @@
-import path from "path";
+import path from "node:path";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
@@ -9,6 +9,7 @@ export default defineConfig({
     include: [
       "tests/unit/**/*.{test,spec}.{ts,tsx}",
       "tests/integration/**/*.{test,spec}.{ts,tsx}",
+      "src/__tests__/unit/**/*.{test,spec}.{ts,tsx}",
     ],
     exclude: ["tests/e2e/**/*"],
     coverage: {

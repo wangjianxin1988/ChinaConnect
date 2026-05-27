@@ -10,5 +10,7 @@
       "@data/*": ["src/data/*"],
       "@types/*": ["src/types/*"]
     }
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["public/**/*", "node_modules", ".astro"]
 }

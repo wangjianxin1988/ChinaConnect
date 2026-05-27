@@ -1,0 +1,533 @@
+{
+  "description": "China emergency contacts database - 35 major cities with police, ambulance, and fire emergency numbers",
+  "lastUpdated": "2026-01-15",
+  "version": "1.0",
+  "cities": [
+    {
+      "id": "beijing",
+      "name": "Beijing",
+      "nameCn": "北京",
+      "province": "Beijing",
+      "population": 21540000,
+      "area": "Northern China",
+      "emergencies": {
+        "police": {
+          "number": "110",
+          "name": "Beijing Police",
+          "nameCn": "北京警察",
+          "lat": 39.9042,
+          "lng": 116.4074
+        },
+        "ambulance": {
+          "number": "120",
+          "name": "Beijing Emergency",
+          "nameCn": "北京急救",
+          "lat": 39.9042,
+          "lng": 116.4074
+        },
+        "fire": {
+          "number": "119",
+          "name": "Beijing Fire",
+          "nameCn": "北京消防",
+          "lat": 39.9042,
+          "lng": 116.4074
+        }
+      },
+      "additionalServices": {
+        "traffic": "122",
+        "info": "010-110"
+      }
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "nameCn": "上海",
+      "province": "Shanghai",
+      "population": 24870000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Shanghai Police", "nameCn": "上海警察", "lat": 31.2304, "lng": 121.4737 },
+        "ambulance": { "number": "120", "name": "Shanghai Emergency", "nameCn": "上海急救", "lat": 31.2304, "lng": 121.4737 },
+        "fire": { "number": "119", "name": "Shanghai Fire", "nameCn": "上海消防", "lat": 31.2304, "lng": 121.4737 }
+      },
+      "additionalServices": { "traffic": "122", "info": "021-110" }
+    },
+    {
+      "id": "guangzhou",
+      "name": "Guangzhou",
+      "nameCn": "广州",
+      "province": "Guangdong",
+      "population": 15300000,
+      "area": "Southern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Guangzhou Police", "nameCn": "广州警察", "lat": 23.1291, "lng": 113.2644 },
+        "ambulance": { "number": "120", "name": "Guangzhou Emergency", "nameCn": "广州急救", "lat": 23.1291, "lng": 113.2644 },
+        "fire": { "number": "119", "name": "Guangzhou Fire", "nameCn": "广州消防", "lat": 23.1291, "lng": 113.2644 }
+      },
+      "additionalServices": { "traffic": "122", "info": "020-110" }
+    },
+    {
+      "id": "shenzhen",
+      "name": "Shenzhen",
+      "nameCn": "深圳",
+      "province": "Guangdong",
+      "population": 12528000,
+      "area": "Southern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Shenzhen Police", "nameCn": "深圳警察", "lat": 22.5431, "lng": 114.0579 },
+        "ambulance": { "number": "120", "name": "Shenzhen Emergency", "nameCn": "深圳急救", "lat": 22.5431, "lng": 114.0579 },
+        "fire": { "number": "119", "name": "Shenzhen Fire", "nameCn": "深圳消防", "lat": 22.5431, "lng": 114.0579 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0755-110" }
+    },
+    {
+      "id": "chengdu",
+      "name": "Chengdu",
+      "nameCn": "成都",
+      "province": "Sichuan",
+      "population": 21403000,
+      "area": "Southwestern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Chengdu Police", "nameCn": "成都警察", "lat": 30.5728, "lng": 104.0668 },
+        "ambulance": { "number": "120", "name": "Chengdu Emergency", "nameCn": "成都急救", "lat": 30.5728, "lng": 104.0668 },
+        "fire": { "number": "119", "name": "Chengdu Fire", "nameCn": "成都消防", "lat": 30.5728, "lng": 104.0668 }
+      },
+      "additionalServices": { "traffic": "122", "info": "028-110" }
+    },
+    {
+      "id": "xian",
+      "name": "Xi'an",
+      "nameCn": "西安",
+      "province": "Shaanxi",
+      "population": 13160000,
+      "area": "Northwestern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Xi'an Police", "nameCn": "西安警察", "lat": 34.3416, "lng": 108.9398 },
+        "ambulance": { "number": "120", "name": "Xi'an Emergency", "nameCn": "西安急救", "lat": 34.3416, "lng": 108.9398 },
+        "fire": { "number": "119", "name": "Xi'an Fire", "nameCn": "西安消防", "lat": 34.3416, "lng": 108.9398 }
+      },
+      "additionalServices": { "traffic": "122", "info": "029-110" }
+    },
+    {
+      "id": "hangzhou",
+      "name": "Hangzhou",
+      "nameCn": "杭州",
+      "province": "Zhejiang",
+      "population": 12335000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Hangzhou Police", "nameCn": "杭州警察", "lat": 30.2741, "lng": 120.1551 },
+        "ambulance": { "number": "120", "name": "Hangzhou Emergency", "nameCn": "杭州急救", "lat": 30.2741, "lng": 120.1551 },
+        "fire": { "number": "119", "name": "Hangzhou Fire", "nameCn": "杭州消防", "lat": 30.2741, "lng": 120.1551 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0571-110" }
+    },
+    {
+      "id": "nanjing",
+      "name": "Nanjing",
+      "nameCn": "南京",
+      "province": "Jiangsu",
+      "population": 9350000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Nanjing Police", "nameCn": "南京警察", "lat": 32.0603, "lng": 118.7969 },
+        "ambulance": { "number": "120", "name": "Nanjing Emergency", "nameCn": "南京急救", "lat": 32.0603, "lng": 118.7969 },
+        "fire": { "number": "119", "name": "Nanjing Fire", "nameCn": "南京消防", "lat": 32.0603, "lng": 118.7969 }
+      },
+      "additionalServices": { "traffic": "122", "info": "025-110" }
+    },
+    {
+      "id": "wuhan",
+      "name": "Wuhan",
+      "nameCn": "武汉",
+      "province": "Hubei",
+      "population": 12326000,
+      "area": "Central China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Wuhan Police", "nameCn": "武汉警察", "lat": 30.5928, "lng": 114.3055 },
+        "ambulance": { "number": "120", "name": "Wuhan Emergency", "nameCn": "武汉急救", "lat": 30.5928, "lng": 114.3055 },
+        "fire": { "number": "119", "name": "Wuhan Fire", "nameCn": "武汉消防", "lat": 30.5928, "lng": 114.3055 }
+      },
+      "additionalServices": { "traffic": "122", "info": "027-110" }
+    },
+    {
+      "id": "chongqing",
+      "name": "Chongqing",
+      "nameCn": "重庆",
+      "province": "Chongqing",
+      "population": 32054000,
+      "area": "Southwestern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Chongqing Police", "nameCn": "重庆警察", "lat": 29.4316, "lng": 106.9123 },
+        "ambulance": { "number": "120", "name": "Chongqing Emergency", "nameCn": "重庆急救", "lat": 29.4316, "lng": 106.9123 },
+        "fire": { "number": "119", "name": "Chongqing Fire", "nameCn": "重庆消防", "lat": 29.4316, "lng": 106.9123 }
+      },
+      "additionalServices": { "traffic": "122", "info": "023-110" }
+    },
+    {
+      "id": "tianjin",
+      "name": "Tianjin",
+      "nameCn": "天津",
+      "province": "Tianjin",
+      "population": 13866000,
+      "area": "Northern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Tianjin Police", "nameCn": "天津警察", "lat": 39.3434, "lng": 117.3616 },
+        "ambulance": { "number": "120", "name": "Tianjin Emergency", "nameCn": "天津急救", "lat": 39.3434, "lng": 117.3616 },
+        "fire": { "number": "119", "name": "Tianjin Fire", "nameCn": "天津消防", "lat": 39.3434, "lng": 117.3616 }
+      },
+      "additionalServices": { "traffic": "122", "info": "022-110" }
+    },
+    {
+      "id": "suzhou",
+      "name": "Suzhou",
+      "nameCn": "苏州",
+      "province": "Jiangsu",
+      "population": 10750000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Suzhou Police", "nameCn": "苏州警察", "lat": 31.2989, "lng": 120.5853 },
+        "ambulance": { "number": "120", "name": "Suzhou Emergency", "nameCn": "苏州急救", "lat": 31.2989, "lng": 120.5853 },
+        "fire": { "number": "119", "name": "Suzhou Fire", "nameCn": "苏州消防", "lat": 31.2989, "lng": 120.5853 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0512-110" }
+    },
+    {
+      "id": "kunming",
+      "name": "Kunming",
+      "nameCn": "昆明",
+      "province": "Yunnan",
+      "population": 8680000,
+      "area": "Southwestern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Kunming Police", "nameCn": "昆明警察", "lat": 25.0406, "lng": 102.7129 },
+        "ambulance": { "number": "120", "name": "Kunming Emergency", "nameCn": "昆明急救", "lat": 25.0406, "lng": 102.7129 },
+        "fire": { "number": "119", "name": "Kunming Fire", "nameCn": "昆明消防", "lat": 25.0406, "lng": 102.7129 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0871-110" }
+    },
+    {
+      "id": "dalian",
+      "name": "Dalian",
+      "nameCn": "大连",
+      "province": "Liaoning",
+      "population": 7450000,
+      "area": "Northeastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Dalian Police", "nameCn": "大连警察", "lat": 38.9140, "lng": 121.6147 },
+        "ambulance": { "number": "120", "name": "Dalian Emergency", "nameCn": "大连急救", "lat": 38.9140, "lng": 121.6147 },
+        "fire": { "number": "119", "name": "Dalian Fire", "nameCn": "大连消防", "lat": 38.9140, "lng": 121.6147 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0411-110" }
+    },
+    {
+      "id": "harbin",
+      "name": "Harbin",
+      "nameCn": "哈尔滨",
+      "province": "Heilongjiang",
+      "population": 10930000,
+      "area": "Northeastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Harbin Police", "nameCn": "哈尔滨警察", "lat": 45.8038, "lng": 126.5340 },
+        "ambulance": { "number": "120", "name": "Harbin Emergency", "nameCn": "哈尔滨急救", "lat": 45.8038, "lng": 126.5340 },
+        "fire": { "number": "119", "name": "Harbin Fire", "nameCn": "哈尔滨消防", "lat": 45.8038, "lng": 126.5340 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0451-110" }
+    },
+    {
+      "id": "qingdao",
+      "name": "Qingdao",
+      "nameCn": "青岛",
+      "province": "Shandong",
+      "population": 10170000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Qingdao Police", "nameCn": "青岛警察", "lat": 36.0671, "lng": 120.3826 },
+        "ambulance": { "number": "120", "name": "Qingdao Emergency", "nameCn": "青岛急救", "lat": 36.0671, "lng": 120.3826 },
+        "fire": { "number": "119", "name": "Qingdao Fire", "nameCn": "青岛消防", "lat": 36.0671, "lng": 120.3826 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0532-110" }
+    },
+    {
+      "id": "changsha",
+      "name": "Changsha",
+      "nameCn": "长沙",
+      "province": "Hunan",
+      "population": 8155000,
+      "area": "Central China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Changsha Police", "nameCn": "长沙警察", "lat": 28.2282, "lng": 112.9388 },
+        "ambulance": { "number": "120", "name": "Changsha Emergency", "nameCn": "长沙急救", "lat": 28.2282, "lng": 112.9388 },
+        "fire": { "number": "119", "name": "Changsha Fire", "nameCn": "长沙消防", "lat": 28.2282, "lng": 112.9388 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0731-110" }
+    },
+    {
+      "id": "xiamen",
+      "name": "Xiamen",
+      "nameCn": "厦门",
+      "province": "Fujian",
+      "population": 5300000,
+      "area": "Southeastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Xiamen Police", "nameCn": "厦门警察", "lat": 24.4798, "lng": 118.0894 },
+        "ambulance": { "number": "120", "name": "Xiamen Emergency", "nameCn": "厦门急救", "lat": 24.4798, "lng": 118.0894 },
+        "fire": { "number": "119", "name": "Xiamen Fire", "nameCn": "厦门消防", "lat": 24.4798, "lng": 118.0894 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0592-110" }
+    },
+    {
+      "id": "ningbo",
+      "name": "Ningbo",
+      "nameCn": "宁波",
+      "province": "Zhejiang",
+      "population": 8730000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Ningbo Police", "nameCn": "宁波警察", "lat": 29.8683, "lng": 121.5440 },
+        "ambulance": { "number": "120", "name": "Ningbo Emergency", "nameCn": "宁波急救", "lat": 29.8683, "lng": 121.5440 },
+        "fire": { "number": "119", "name": "Ningbo Fire", "nameCn": "宁波消防", "lat": 29.8683, "lng": 121.5440 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0574-110" }
+    },
+    {
+      "id": "fuzhou",
+      "name": "Fuzhou",
+      "nameCn": "福州",
+      "province": "Fujian",
+      "population": 8290000,
+      "area": "Southeastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Fuzhou Police", "nameCn": "福州警察", "lat": 26.0753, "lng": 119.2965 },
+        "ambulance": { "number": "120", "name": "Fuzhou Emergency", "nameCn": "福州急救", "lat": 26.0753, "lng": 119.2965 },
+        "fire": { "number": "119", "name": "Fuzhou Fire", "nameCn": "福州消防", "lat": 26.0753, "lng": 119.2965 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0591-110" }
+    },
+    {
+      "id": "wuxi",
+      "name": "Wuxi",
+      "nameCn": "无锡",
+      "province": "Jiangsu",
+      "population": 7460000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Wuxi Police", "nameCn": "无锡警察", "lat": 31.5747, "lng": 120.2923 },
+        "ambulance": { "number": "120", "name": "Wuxi Emergency", "nameCn": "无锡急救", "lat": 31.5747, "lng": 120.2923 },
+        "fire": { "number": "119", "name": "Wuxi Fire", "nameCn": "无锡消防", "lat": 31.5747, "lng": 120.2923 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0510-110" }
+    },
+    {
+      "id": "foshan",
+      "name": "Foshan",
+      "nameCn": "佛山",
+      "province": "Guangdong",
+      "population": 9499000,
+      "area": "Southern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Foshan Police", "nameCn": "佛山警察", "lat": 23.0218, "lng": 113.1219 },
+        "ambulance": { "number": "120", "name": "Foshan Emergency", "nameCn": "佛山急救", "lat": 23.0218, "lng": 113.1219 },
+        "fire": { "number": "119", "name": "Foshan Fire", "nameCn": "佛山消防", "lat": 23.0218, "lng": 113.1219 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0757-110" }
+    },
+    {
+      "id": "zhengzhou",
+      "name": "Zhengzhou",
+      "nameCn": "郑州",
+      "province": "Henan",
+      "population": 10350000,
+      "area": "Central China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Zhengzhou Police", "nameCn": "郑州警察", "lat": 34.7466, "lng": 113.6253 },
+        "ambulance": { "number": "120", "name": "Zhengzhou Emergency", "nameCn": "郑州急救", "lat": 34.7466, "lng": 113.6253 },
+        "fire": { "number": "119", "name": "Zhengzhou Fire", "nameCn": "郑州消防", "lat": 34.7466, "lng": 113.6253 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0371-110" }
+    },
+    {
+      "id": "jinan",
+      "name": "Jinan",
+      "nameCn": "济南",
+      "province": "Shandong",
+      "population": 9200000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Jinan Police", "nameCn": "济南警察", "lat": 36.6512, "lng": 117.1201 },
+        "ambulance": { "number": "120", "name": "Jinan Emergency", "nameCn": "济南急救", "lat": 36.6512, "lng": 117.1201 },
+        "fire": { "number": "119", "name": "Jinan Fire", "nameCn": "济南消防", "lat": 36.6512, "lng": 117.1201 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0531-110" }
+    },
+    {
+      "id": "dongguan",
+      "name": "Dongguan",
+      "nameCn": "东莞",
+      "province": "Guangdong",
+      "population": 10484000,
+      "area": "Southern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Dongguan Police", "nameCn": "东莞警察", "lat": 23.0430, "lng": 113.7633 },
+        "ambulance": { "number": "120", "name": "Dongguan Emergency", "nameCn": "东莞急救", "lat": 23.0430, "lng": 113.7633 },
+        "fire": { "number": "119", "name": "Dongguan Fire", "nameCn": "东莞消防", "lat": 23.0430, "lng": 113.7633 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0769-110" }
+    },
+    {
+      "id": "shenyang",
+      "name": "Shenyang",
+      "nameCn": "沈阳",
+      "province": "Liaoning",
+      "population": 9070000,
+      "area": "Northeastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Shenyang Police", "nameCn": "沈阳警察", "lat": 41.8057, "lng": 123.4328 },
+        "ambulance": { "number": "120", "name": "Shenyang Emergency", "nameCn": "沈阳急救", "lat": 41.8057, "lng": 123.4328 },
+        "fire": { "number": "119", "name": "Shenyang Fire", "nameCn": "沈阳消防", "lat": 41.8057, "lng": 123.4328 }
+      },
+      "additionalServices": { "traffic": "122", "info": "024-110" }
+    },
+    {
+      "id": "changchun",
+      "name": "Changchun",
+      "nameCn": "长春",
+      "province": "Jilin",
+      "population": 7670000,
+      "area": "Northeastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Changchun Police", "nameCn": "长春警察", "lat": 43.8171, "lng": 125.3235 },
+        "ambulance": { "number": "120", "name": "Changchun Emergency", "nameCn": "长春急救", "lat": 43.8171, "lng": 125.3235 },
+        "fire": { "number": "119", "name": "Changchun Fire", "nameCn": "长春消防", "lat": 43.8171, "lng": 125.3235 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0431-110" }
+    },
+    {
+      "id": "zhangjiakou",
+      "name": "Zhangjiakou",
+      "nameCn": "张家口",
+      "province": "Hebei",
+      "population": 4400000,
+      "area": "Northern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Zhangjiakou Police", "nameCn": "张家口警察", "lat": 40.7677, "lng": 114.8863 },
+        "ambulance": { "number": "120", "name": "Zhangjiakou Emergency", "nameCn": "张家口急救", "lat": 40.7677, "lng": 114.8863 },
+        "fire": { "number": "119", "name": "Zhangjiakou Fire", "nameCn": "张家口消防", "lat": 40.7677, "lng": 114.8863 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0313-110" }
+    },
+    {
+      "id": "lijiang",
+      "name": "Lijiang",
+      "nameCn": "丽江",
+      "province": "Yunnan",
+      "population": 1285000,
+      "area": "Southwestern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Lijiang Police", "nameCn": "丽江警察", "lat": 26.8721, "lng": 100.2299 },
+        "ambulance": { "number": "120", "name": "Lijiang Emergency", "nameCn": "丽江急救", "lat": 26.8721, "lng": 100.2299 },
+        "fire": { "number": "119", "name": "Lijiang Fire", "nameCn": "丽江消防", "lat": 26.8721, "lng": 100.2299 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0888-110" }
+    },
+    {
+      "id": "guilin",
+      "name": "Guilin",
+      "nameCn": "桂林",
+      "province": "Guangxi",
+      "population": 5300000,
+      "area": "Southern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Guilin Police", "nameCn": "桂林警察", "lat": 25.2742, "lng": 110.2990 },
+        "ambulance": { "number": "120", "name": "Guilin Emergency", "nameCn": "桂林急救", "lat": 25.2742, "lng": 110.2990 },
+        "fire": { "number": "119", "name": "Guilin Fire", "nameCn": "桂林消防", "lat": 25.2742, "lng": 110.2990 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0773-110" }
+    },
+    {
+      "id": "xining",
+      "name": "Xining",
+      "nameCn": "西宁",
+      "province": "Qinghai",
+      "population": 2466000,
+      "area": "Northwestern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Xining Police", "nameCn": "西宁警察", "lat": 36.6171, "lng": 101.7782 },
+        "ambulance": { "number": "120", "name": "Xining Emergency", "nameCn": "西宁急救", "lat": 36.6171, "lng": 101.7782 },
+        "fire": { "number": "119", "name": "Xining Fire", "nameCn": "西宁消防", "lat": 36.6171, "lng": 101.7782 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0971-110" }
+    },
+    {
+      "id": "yantai",
+      "name": "Yantai",
+      "nameCn": "烟台",
+      "province": "Shandong",
+      "population": 7050000,
+      "area": "Eastern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Yantai Police", "nameCn": "烟台警察", "lat": 37.5365, "lng": 121.3914 },
+        "ambulance": { "number": "120", "name": "Yantai Emergency", "nameCn": "烟台急救", "lat": 37.5365, "lng": 121.3914 },
+        "fire": { "number": "119", "name": "Yantai Fire", "nameCn": "烟台消防", "lat": 37.5365, "lng": 121.3914 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0535-110" }
+    },
+    {
+      "id": "luoyang",
+      "name": "Luoyang",
+      "nameCn": "洛阳",
+      "province": "Henan",
+      "population": 7050000,
+      "area": "Central China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Luoyang Police", "nameCn": "洛阳警察", "lat": 34.6197, "lng": 112.4540 },
+        "ambulance": { "number": "120", "name": "Luoyang Emergency", "nameCn": "洛阳急救", "lat": 34.6197, "lng": 112.4540 },
+        "fire": { "number": "119", "name": "Luoyang Fire", "nameCn": "洛阳消防", "lat": 34.6197, "lng": 112.4540 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0379-110" }
+    },
+    {
+      "id": "haikou",
+      "name": "Haikou",
+      "nameCn": "海口",
+      "province": "Hainan",
+      "population": 2870000,
+      "area": "Southern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Haikou Police", "nameCn": "海口警察", "lat": 20.0444, "lng": 110.3497 },
+        "ambulance": { "number": "120", "name": "Haikou Emergency", "nameCn": "海口急救", "lat": 20.0444, "lng": 110.3497 },
+        "fire": { "number": "119", "name": "Haikou Fire", "nameCn": "海口消防", "lat": 20.0444, "lng": 110.3497 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0898-110" }
+    },
+    {
+      "id": "sanya",
+      "name": "Sanya",
+      "nameCn": "三亚",
+      "province": "Hainan",
+      "population": 1031000,
+      "area": "Southern China",
+      "emergencies": {
+        "police": { "number": "110", "name": "Sanya Police", "nameCn": "三亚警察", "lat": 18.2528, "lng": 109.5119 },
+        "ambulance": { "number": "120", "name": "Sanya Emergency", "nameCn": "三亚急救", "lat": 18.2528, "lng": 109.5119 },
+        "fire": { "number": "119", "name": "Sanya Fire", "nameCn": "三亚消防", "lat": 18.2528, "lng": 109.5119 }
+      },
+      "additionalServices": { "traffic": "122", "info": "0898-110" }
+    }
+  ],
+  "national": {
+    "police": "110",
+    "ambulance": "120",
+    "fire": "119",
+    "traffic": "122",
+    "consumerRights": "12315",
+    "forestryFire": "12119"
+  },
+  "notes": [
+    "All emergency numbers work nationwide without area codes",
+    "Police (110) handles: crime, public safety, emergencies",
+    "Ambulance (120) handles: medical emergencies, injuries",
+    "Fire (119) handles: fires, rescues, hazardous materials",
+    "Traffic (122) handles: traffic accidents only"
+  ]
+}

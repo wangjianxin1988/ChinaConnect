@@ -36,6 +36,12 @@
       "formatter": {
         "enabled": false
       }
+    },
+    {
+      "include": ["**/*.json"],
+      "formatter": {
+        "enabled": false
+      }
     }
   ]
 }

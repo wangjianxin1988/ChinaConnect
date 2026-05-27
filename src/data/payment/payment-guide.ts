@@ -1,0 +1,679 @@
+// City Payment Coverage Data for ChinaConnect
+import type { CityPaymentCoverage, PaymentMethod, ATMInfo } from "@/types/payment";
+
+// Payment Methods with detailed setup and usage info
+export const PAYMENT_METHODS_DETAILED: PaymentMethod[] = [
+  {
+    id: "alipay",
+    method: "Alipay (支付宝)",
+    icon: "💙",
+    colorClass: "bg-blue-50 text-blue-700 border-blue-200",
+    description:
+      "China's dominant mobile payment platform with 98%+ merchant acceptance. Offers English interface, instant currency conversion, and robust security.",
+    descriptionCn: "中国主要的移动支付平台，商户覆盖率98%+。提供英文界面、即时货币换算和强大的安全保障。",
+    howToSetup: [
+      "Download Alipay app from App Store or Google Play",
+      "Select country/region during registration (not China mainland)",
+      "Enter foreign phone number and verify with SMS",
+      "Upload passport for identity verification (Traveler mode)",
+      "Link international Visa, Mastercard, or compatible credit card",
+      "Set 6-digit payment password",
+      "Enable Face++ biometric for large transactions",
+    ],
+    howToSetupCn: [
+      "从App Store或Google Play下载支付宝",
+      "注册时选择国家/地区（非中国大陆）",
+      "输入国外手机号并通过短信验证",
+      "上传护照进行身份验证（旅客模式）",
+      "绑定国际Visa、万事达或兼容信用卡",
+      "设置6位支付密码",
+      "启用刷脸进行大额交易",
+    ],
+    usage: [
+      "Open Alipay and tap 'Scan' to scan merchant QR code",
+      "Enter amount manually or let merchant input",
+      "Confirm with payment password or biometrics",
+      "Show personal QR code for merchant to scan (tap 'Pay')",
+      "Use in offline mode with stored payment codes",
+    ],
+    usageCn: [
+      "打开支付宝，点击扫一扫扫描商家二维码",
+      "手动输入金额或让商家输入",
+      "用支付密码或生物识别确认",
+      "点击付款展示个人二维码让商家扫描",
+      "使用离线模式存储付款码",
+    ],
+    tips: [
+      "Use 'Traveler Mode' for easier setup without Chinese bank account",
+      "Daily limit: 50,000 CNY for foreign cards",
+      "Check exchange rate before payment in settings",
+      "Keep some cash as backup for emergencies",
+      "Verify final amount before confirming",
+    ],
+    tipsCn: [
+      "使用旅客模式无需中国银行账户即可轻松设置",
+      "每日限额：国外卡50,000元人民币",
+      "在设置中查看支付时的汇率",
+      "保留一些现金以备不时之需",
+      "确认前核实最终金额",
+    ],
+    pros: [
+      "98%+ merchants accept Alipay",
+      "English interface available",
+      "Instant multi-currency conversion",
+      "Strong buyer protection",
+      "Convenient for online shopping",
+    ],
+    cons: [
+      "Some features require Chinese bank account",
+      "Foreign cards may be declined at some merchants",
+      "Setup process can be complex",
+      "May require VPN for app download",
+    ],
+    limits: {
+      daily: "50,000 CNY",
+      perTransaction: "10,000 CNY",
+      notes: "Limits vary by card type and verification level",
+    },
+  },
+  {
+    id: "wechat-pay",
+    method: "WeChat Pay (微信支付)",
+    icon: "💚",
+    colorClass: "bg-green-50 text-green-700 border-green-200",
+    description:
+      "Integrated with WeChat messaging app, second most popular payment method. Excellent for peer-to-peer transfers and group payments.",
+    descriptionCn: "集成在微信通讯应用中，第二大支付方式。非常适合个人转账和群收款。",
+    howToSetup: [
+      "Download WeChat app and register with foreign phone number",
+      "Go to Me tab > Pay > Add Card",
+      "Complete identity verification with passport",
+      "Link Visa, Mastercard, or compatible card",
+      "Set payment password (6 digits)",
+      "Enable payments in WeChat settings",
+    ],
+    howToSetupCn: [
+      "下载微信应用并用国外手机号注册",
+      "进入我 > 支付 > 钱包 > 银行卡",
+      "用护照完成身份验证",
+      "绑定Visa、万事达或兼容卡",
+      "设置支付密码（6位）",
+      "在微信设置中启用支付功能",
+    ],
+    usage: [
+      "Open WeChat > Tap '+' > Scan QR code",
+      "Or show payment code: Me > Pay > Money Code",
+      "For merchants: let them scan your code",
+      "Use 'Collection' for receiving payments",
+      "Send red packets (hongbao) to friends",
+    ],
+    usageCn: [
+      "打开微信 > 点击右上角+ > 扫一扫",
+      "或展示付款码：我 > 支付 > 收付款",
+      "商家扫描你的付款码",
+      "使用收款功能接收付款",
+      "给朋友发红包",
+    ],
+    tips: [
+      "WeChat has better English translation than Alipay",
+      "Connect credit card for automatic currency conversion",
+      "Keep balance low, reload as needed",
+      "WeChat required for Didi ride-hailing",
+      "Most vendors accept both Alipay and WeChat",
+    ],
+    tipsCn: [
+      "微信翻译比支付宝更好",
+      "连接信用卡自动换汇",
+      "余额保持低位，需要时充值",
+      "微信是滴滴打车的必需应用",
+      "大多数商家同时支持支付宝和微信",
+    ],
+    pros: [
+      "Built into WeChat messaging super app",
+      "Better customer support for foreigners",
+      "Easy peer-to-peer payments",
+      "Integrated with many lifestyle apps",
+      "Good English interface",
+    ],
+    cons: [
+      "Slightly less acceptance than Alipay",
+      "Lower transaction limits for foreign cards",
+      "Verification process takes longer",
+    ],
+    limits: {
+      daily: "30,000 CNY",
+      perTransaction: "5,000 CNY",
+      notes: "Limits depend on verification level and card type",
+    },
+  },
+  {
+    id: "unionpay",
+    method: "UnionPay (银联)",
+    icon: "💳",
+    colorClass: "bg-red-50 text-red-700 border-red-200",
+    description:
+      "China's domestic card network, widely accepted at ATMs and POS terminals. Best for cash withdrawals and card payments.",
+    descriptionCn: "中国的本土银行卡网络，在ATM和POS终端广泛接受。最适合取款和刷卡消费。",
+    howToSetup: [
+      "No app needed - works with any UnionPay card",
+      "Ensure your bank card has UnionPay logo",
+      "International cards with UnionPay work at compatible ATMs",
+      "Set daily withdrawal limits with your bank",
+      "Inform your bank of travel plans to avoid blocks",
+    ],
+    howToSetupCn: [
+      "无需APP - 任何银联卡都可以使用",
+      "确保您的银行卡有银联标志",
+      "带银联标志的国际卡可在兼容ATM使用",
+      "在银行设置每日取款限额",
+      "告知银行旅行计划以避免卡片被锁",
+    ],
+    usage: [
+      "Insert or tap card at POS terminal",
+      "Enter PIN for verification",
+      "For ATMs: select UnionPay network",
+      "Request amount in CNY for best rate",
+      "Some terminals support contactless via Apple/Google Pay",
+    ],
+    usageCn: [
+      "在POS终端插入或拍卡",
+      "输入PIN码验证",
+      "在ATM上：选择银联网络",
+      "取款时选择人民币以获得最佳汇率",
+      "部分终端支持Apple/Google Pay非接触式支付",
+    ],
+    tips: [
+      "ICBC, BOC, ABC ATMs have best rates for foreign cards",
+      "Request CNY not USD at ATMs for better rates",
+      "Some ATMs limit foreign card withdrawals to 2000 CNY",
+      "Use bank ATMs not independent ones for security",
+      "Check with your bank about international fees",
+    ],
+    tipsCn: [
+      "工行、中行、农行ATM对国外卡汇率最好",
+      "ATM取款时选择人民币而非美元以获得更好汇率",
+      "部分ATM限制国外卡取款2000元",
+      "为安全起见使用银行ATM而非独立ATM",
+      "咨询银行关于国际手续费",
+    ],
+    pros: [
+      "Works at most ATMs in China",
+      "Direct currency conversion",
+      "No need for smartphone or app",
+      "Good for large purchases",
+      "Widely accepted at hotels and restaurants",
+    ],
+    cons: [
+      "ATM withdrawal fees apply",
+      "May not work at small vendors",
+      "Some terminals charge extra for foreign cards",
+    ],
+    limits: {
+      daily: "Varies by card issuer",
+      perTransaction: "Usually 2,000-5,000 CNY per ATM withdrawal",
+      notes: "Check with your card issuer for specific limits",
+    },
+  },
+  {
+    id: "cash",
+    method: "Cash (现金)",
+    icon: "💵",
+    colorClass: "bg-amber-50 text-amber-700 border-amber-200",
+    description:
+      "Still essential for small vendors, markets, rural areas, and emergencies. RMB cash is widely accepted.",
+    descriptionCn: "对小商贩、市场、农村地区和紧急情况仍然必不可少。人民币现金被广泛接受。",
+    howToSetup: [
+      "Withdraw from ATMs on arrival at airport",
+      "Exchange currency at bank counters (not street exchange)",
+      "Use bank-operated exchange services",
+      "Keep small bills (10, 20, 50 CNY) for small purchases",
+      "Store larger bills in hotel safe",
+    ],
+    howToSetupCn: [
+      "到达机场后从ATM取款",
+      "在银行柜台兑换货币（非街头兑换）",
+      "使用银行提供的兑换服务",
+      "保留小额钞票（10、20、50元）用于小额购买",
+      "将大额钞票存放在酒店保险箱",
+    ],
+    usage: [
+      "Count bills before handing over",
+      "Check for counterfeit notes (water mark, raised ink)",
+      "Negotiate prices in cash at markets",
+      "Keep emergency cash separate",
+      "Exchange at bank counters with passport",
+    ],
+    usageCn: [
+      "交钱前数清楚",
+      "检查假钞（水印、凹凸感）",
+      "在市场用现金砍价",
+      "将应急现金分开存放",
+      "凭护照在银行柜台兑换",
+    ],
+    tips: [
+      "ATMs available everywhere with international fees",
+      "ICBC, BOC, ABC have best exchange rates",
+      "Avoid street exchange - scam risk is high",
+      "Keep 500-1000 CNY emergency cash",
+      "Small bills essential for buses, markets, tips",
+    ],
+    tipsCn: [
+      "ATM到处都有，会有国际手续费",
+      "工行、中行、农行汇率最好",
+      "避免街头兑换 - 诈骗风险高",
+      "保留500-1000元应急现金",
+      "小额钞票对公交、市场、小费很重要",
+    ],
+    pros: [
+      "Universal acceptance everywhere",
+      "No technology required",
+      "Best for bargaining at markets",
+      "Essential backup when cards fail",
+      "Required for some small vendors",
+    ],
+    cons: [
+      "Risk of theft or loss",
+      "Counterfeit money risk",
+      "No transaction record",
+      "Inconvenient for large amounts",
+    ],
+  },
+  {
+    id: "tourist-card",
+    method: "Tourist Card (旅客卡)",
+    icon: "🎴",
+    colorClass: "bg-purple-50 text-purple-700 border-purple-200",
+    description:
+      "Prepaid cards designed for tourists (e.g., TourCard, Wise, Revolut). Easy setup without Chinese bank account.",
+    descriptionCn: "为游客设计的预付卡（如TourCard、Wise、Revolut）。无需中国银行账户即可轻松设置。",
+    howToSetup: [
+      "Order online before travel from provider website",
+      "Receive card by mail or at airport pickup point",
+      "Download provider app and activate",
+      "Upload passport for identity verification",
+      "Load money in your home currency or CNY",
+      "Set PIN for ATM withdrawals",
+      "Add to Apple/Google Pay for contactless",
+    ],
+    howToSetupCn: [
+      "旅行前从供应商网站在线订购",
+      "通过邮寄或机场领取获得卡片",
+      "下载供应商APP并激活",
+      "上传护照进行身份验证",
+      "用本国货币或人民币充值",
+      "设置ATM取款密码",
+      "添加到Apple/Google Pay用于非接触式支付",
+    ],
+    usage: [
+      "Use as regular credit card at POS terminals",
+      "Tap for NFC payments with Apple/Google Pay",
+      "Withdraw cash at compatible ATMs",
+      "Pay online with card details",
+      "Manage card and check balance via app",
+    ],
+    usageCn: [
+      "在POS终端作为普通信用卡使用",
+      "通过Apple/Google Pay拍卡支付",
+      "在兼容ATM取现金",
+      "用卡信息在线支付",
+      "通过APP管理卡片和查看余额",
+    ],
+    tips: [
+      "Best option without Chinese bank account",
+      "Compare exchange rates and fees between providers",
+      "Widely accepted at major card terminals",
+      "ATM withdrawal fees apply (usually 100-200 CNY)",
+      "Check for refund policies and customer support",
+    ],
+    tipsCn: [
+      "没有中国银行账户的最佳选择",
+      "比较供应商之间的汇率和费用",
+      "在主要刷卡终端广泛接受",
+      "ATM取款收取手续费（通常100-200元）",
+      "查看退款政策和客户支持",
+    ],
+    pros: [
+      "No Chinese bank account needed",
+      "Easy online management",
+      "Transparent fees (usually listed upfront)",
+      "Works globally including China",
+      "Good for budget control",
+    ],
+    cons: [
+      "ATM withdrawal fees are high",
+      "Not accepted at some small vendors",
+      "Limited refund options",
+      "Setup requires online verification",
+    ],
+  },
+];
+
+// ATM Information
+export const ATM_INFORMATION: ATMInfo[] = [
+  {
+    bank: "ICBC (Industrial and Commercial Bank of China)",
+    icon: "🏦",
+    notes: "Most ATMs nationwide, best for international cards",
+    notesCn: "全国ATM最多，对国际卡最友好",
+  },
+  {
+    bank: "Bank of China (BOC)",
+    icon: "🏦",
+    notes: "Wide coverage, good exchange rates",
+    notesCn: "覆盖面广，汇率好",
+  },
+  {
+    bank: "China Construction Bank (CCB)",
+    icon: "🏦",
+    notes: "Good for Visa and Mastercard",
+    notesCn: "对Visa和万事达卡友好",
+  },
+  {
+    bank: "HSBC China",
+    icon: "🏦",
+    notes: "Best service for foreign cardholders, English support",
+    notesCn: "对外籍持卡人服务最好，有英文支持",
+  },
+  {
+    bank: "Standard Chartered",
+    icon: "🏦",
+    notes: "Competitive exchange rates",
+    notesCn: "汇率有竞争力",
+  },
+  {
+    bank: "Citibank China",
+    icon: "🏦",
+    notes: "Good for international transfers",
+    notesCn: "适合国际转账",
+  },
+];
+
+// City Payment Coverage Data
+export const CITY_PAYMENT_COVERAGE: CityPaymentCoverage[] = [
+  {
+    citySlug: "beijing",
+    cityName: "Beijing",
+    cityNameCn: "北京",
+    coverage: [
+      { method: "Alipay", acceptance: 99, reliability: "high", notes: "Universal acceptance", notesCn: "全面普及" },
+      { method: "WeChat Pay", acceptance: 98, reliability: "high", notes: "Universal acceptance", notesCn: "全面普及" },
+      { method: "UnionPay", acceptance: 95, reliability: "high", notes: "ATMs everywhere, cards at major merchants", notesCn: "ATM到处都有，主要商户可刷卡" },
+      { method: "Cash", acceptance: 70, reliability: "high", notes: "Small vendors and markets", notesCn: "小商贩和市场" },
+      { method: "Tourist Card", acceptance: 60, reliability: "medium", notes: "Major hotels and restaurants", notesCn: "主要酒店和餐厅" },
+    ],
+    specialFeatures: ["NFC payment supported at metro", "Apple/Google Pay accepted at most terminals"],
+    specialFeaturesCn: ["地铁支持NFC支付", "大多数终端支持Apple/Google Pay"],
+  },
+  {
+    citySlug: "shanghai",
+    cityName: "Shanghai",
+    cityNameCn: "上海",
+    coverage: [
+      { method: "Alipay", acceptance: 99, reliability: "high", notes: "Universal acceptance", notesCn: "全面普及" },
+      { method: "WeChat Pay", acceptance: 99, reliability: "high", notes: "Universal acceptance", notesCn: "全面普及" },
+      { method: "UnionPay", acceptance: 97, reliability: "high", notes: "Excellent ATM network", notesCn: "ATM网络完善" },
+      { method: "Cash", acceptance: 65, reliability: "high", notes: "Still useful at markets", notesCn: "在市场仍然有用" },
+      { method: "Tourist Card", acceptance: 70, reliability: "medium", notes: "Shopping malls and hotels", notesCn: "商场和酒店" },
+    ],
+    specialFeatures: ["Contactless payment very common", "Metro accepts mobile pay directly"],
+    specialFeaturesCn: ["非接触式支付非常普遍", "地铁直接支持手机支付"],
+  },
+  {
+    citySlug: "guangzhou",
+    cityName: "Guangzhou",
+    cityNameCn: "广州",
+    coverage: [
+      { method: "Alipay", acceptance: 98, reliability: "high", notes: "Universal acceptance", notesCn: "全面普及" },
+      { method: "WeChat Pay", acceptance: 97, reliability: "high", notes: "Universal acceptance", notesCn: "全面普及" },
+      { method: "UnionPay", acceptance: 90, reliability: "high", notes: "Good ATM coverage", notesCn: "ATM覆盖良好" },
+      { method: "Cash", acceptance: 75, reliability: "high", notes: "Important for local markets", notesCn: "对本地市场重要" },
+      { method: "Tourist Card", acceptance: 55, reliability: "medium", notes: "Some international hotels", notesCn: "部分国际酒店" },
+    ],
+    specialFeatures: ["Cantonese merchants prefer cash sometimes", "HK/Macau travelers find familiar services"],
+    specialFeaturesCn: ["说粤语的商家有时更喜欢现金", "港澳旅客能找到熟悉的服务"],
+  },
+  {
+    citySlug: "shenzhen",
+    cityName: "Shenzhen",
+    cityNameCn: "深圳",
+    coverage: [
+      { method: "Alipay", acceptance: 99, reliability: "high", notes: "Universal acceptance in tech hub", notesCn: "科技之城全面普及" },
+      { method: "WeChat Pay", acceptance: 99, reliability: "high", notes: "WeChat HQ city - extra smooth", notesCn: "微信总部城市 - 特别流畅" },
+      { method: "UnionPay", acceptance: 92, reliability: "high", notes: "Many Hong Kong visitors", notesCn: "很多香港游客" },
+      { method: "Cash", acceptance: 50, reliability: "high", notes: "Tech-forward city, less cash needed", notesCn: "科技前沿城市，现金需求较少" },
+      { method: "Tourist Card", acceptance: 65, reliability: "medium", notes: "Shopping centers andtheme parks", notesCn: "购物中心和主题公园" },
+    ],
+    specialFeatures: ["Digital RMB pilot city", "Many tech company offices accept only mobile pay"],
+    specialFeaturesCn: ["数字人民币试点城市", "很多科技公司只接受手机支付"],
+  },
+  {
+    citySlug: "chengdu",
+    cityName: "Chengdu",
+    cityNameCn: "成都",
+    coverage: [
+      { method: "Alipay", acceptance: 96, reliability: "high", notes: "Wide acceptance", notesCn: "广泛普及" },
+      { method: "WeChat Pay", acceptance: 95, reliability: "high", notes: "Wide acceptance", notesCn: "广泛普及" },
+      { method: "UnionPay", acceptance: 88, reliability: "high", notes: "Good coverage", notesCn: "覆盖良好" },
+      { method: "Cash", acceptance: 80, reliability: "high", notes: "Traditional markets still common", notesCn: "传统市场仍然普遍" },
+      { method: "Tourist Card", acceptance: 50, reliability: "medium", notes: "Major tourist areas", notesCn: "主要旅游区域" },
+    ],
+    specialFeatures: ["Panda-themed payment cards available", "Spicy street food vendors prefer cash"],
+    specialFeaturesCn: ["有熊猫主题支付卡", "麻辣街边小吃商家更喜欢现金"],
+  },
+  {
+    citySlug: "hangzhou",
+    cityName: "Hangzhou",
+    cityNameCn: "杭州",
+    coverage: [
+      { method: "Alipay", acceptance: 99, reliability: "high", notes: "Alipay HQ - pioneering city", notesCn: "支付宝总部所在地 - 先锋城市" },
+      { method: "WeChat Pay", acceptance: 97, reliability: "high", notes: "Wide acceptance", notesCn: "广泛普及" },
+      { method: "UnionPay", acceptance: 90, reliability: "high", notes: "Good ATM network", notesCn: "ATM网络良好" },
+      { method: "Cash", acceptance: 60, reliability: "high", notes: "Tech-forward city", notesCn: "科技前沿城市" },
+      { method: "Tourist Card", acceptance: 65, reliability: "medium", notes: "West Lake area hotels", notesCn: "西湖区域酒店" },
+    ],
+    specialFeatures: ["Alipay's hometown - many experimental features", "Metro supports all mobile payments"],
+    specialFeaturesCn: ["支付宝家乡 - 许多实验性功能", "地铁支持所有手机支付"],
+  },
+  {
+    citySlug: "xian",
+    cityName: "Xi'an",
+    cityNameCn: "西安",
+    coverage: [
+      { method: "Alipay", acceptance: 94, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "WeChat Pay", acceptance: 93, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "UnionPay", acceptance: 85, reliability: "high", notes: "Tourist area ATMs common", notesCn: "旅游区ATM常见" },
+      { method: "Cash", acceptance: 85, reliability: "high", notes: "Important for markets and street food", notesCn: "对市场和小吃重要" },
+      { method: "Tourist Card", acceptance: 45, reliability: "medium", notes: "Major attractions", notesCn: "主要景点" },
+    ],
+    specialFeatures: ["Ancient city walls area has more cash vendors", "Terracotta Army site has card facilities"],
+    specialFeaturesCn: ["古城墙区域更多现金商贩", "兵马俑景点有刷卡设施"],
+  },
+  {
+    citySlug: "chongqing",
+    cityName: "Chongqing",
+    cityNameCn: "重庆",
+    coverage: [
+      { method: "Alipay", acceptance: 95, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "WeChat Pay", acceptance: 94, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "UnionPay", acceptance: 85, reliability: "high", notes: "ATMs near tourist spots", notesCn: "景点附近有ATM" },
+      { method: "Cash", acceptance: 82, reliability: "high", notes: "Hot pot restaurants often cash only", notesCn: "火锅店常只收现金" },
+      { method: "Tourist Card", acceptance: 48, reliability: "medium", notes: "Jiefangbei area", notesCn: "解放碑区域" },
+    ],
+    specialFeatures: ["Hot pot restaurants often cash only", "Yangtze River cruise terminals accept cards"],
+    specialFeaturesCn: ["火锅店常只收现金", "长江游轮码头接受刷卡"],
+  },
+  {
+    citySlug: "wuhan",
+    cityName: "Wuhan",
+    cityNameCn: "武汉",
+    coverage: [
+      { method: "Alipay", acceptance: 93, reliability: "high", notes: "Wide acceptance", notesCn: "广泛普及" },
+      { method: "WeChat Pay", acceptance: 92, reliability: "high", notes: "Wide acceptance", notesCn: "广泛普及" },
+      { method: "UnionPay", acceptance: 85, reliability: "high", notes: "Good coverage", notesCn: "覆盖良好" },
+      { method: "Cash", acceptance: 78, reliability: "high", notes: "Traditional markets", notesCn: "传统市场" },
+      { method: "Tourist Card", acceptance: 50, reliability: "medium", notes: "Optical Valley area", notesCn: "光谷区域" },
+    ],
+    specialFeatures: ["Rebuilt after 2020, modern payment infrastructure", "Metro accepts all mobile payments"],
+    specialFeaturesCn: ["2020年后重建，现代支付基础设施", "地铁支持所有手机支付"],
+  },
+  {
+    citySlug: "nanjing",
+    cityName: "Nanjing",
+    cityNameCn: "南京",
+    coverage: [
+      { method: "Alipay", acceptance: 95, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "WeChat Pay", acceptance: 94, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "UnionPay", acceptance: 88, reliability: "high", notes: "ATMs widely available", notesCn: "ATM随处可见" },
+      { method: "Cash", acceptance: 75, reliability: "high", notes: "Confucius Temple area markets", notesCn: "夫子庙区域市场" },
+      { method: "Tourist Card", acceptance: 55, reliability: "medium", notes: "Historic sites", notesCn: "历史遗迹" },
+    ],
+    specialFeatures: ["Ancient capital, mix of modern and traditional", "Sun Yat-sen Mausoleum area has card facilities"],
+    specialFeaturesCn: ["古都，现代与传统交融", "中山陵区域有刷卡设施"],
+  },
+  {
+    citySlug: "suzhou",
+    cityName: "Suzhou",
+    cityNameCn: "苏州",
+    coverage: [
+      { method: "Alipay", acceptance: 96, reliability: "high", notes: "Near Shanghai, similar acceptance", notesCn: "靠近上海，接受度类似" },
+      { method: "WeChat Pay", acceptance: 95, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "UnionPay", acceptance: 87, reliability: "high", notes: "Gardens and tourist areas", notesCn: "园林和旅游区" },
+      { method: "Cash", acceptance: 72, reliability: "high", notes: "Traditional water towns", notesCn: "传统水乡" },
+      { method: "Tourist Card", acceptance: 52, reliability: "medium", notes: "Hanshan Temple area", notesCn: "寒山寺区域" },
+    ],
+    specialFeatures: ["Garden admittance often card accepted", "Water towns may prefer cash"],
+    specialFeaturesCn: ["园林门票常可刷卡", "水乡可能更喜欢现金"],
+  },
+  {
+    citySlug: "harbin",
+    cityName: "Harbin",
+    cityNameCn: "哈尔滨",
+    coverage: [
+      { method: "Alipay", acceptance: 92, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "WeChat Pay", acceptance: 90, reliability: "high", notes: "Good acceptance", notesCn: "接受度良好" },
+      { method: "UnionPay", acceptance: 85, reliability: "high", notes: "Cold weather ATMs indoor", notesCn: "寒冷天气ATM在室内" },
+      { method: "Cash", acceptance: 85, reliability: "high", notes: "Ice Festival vendors mostly cash", notesCn: "冰灯节商家多收现金" },
+      { method: "Tourist Card", acceptance: 45, reliability: "medium", notes: "Central avenue area", notesCn: "中央大街区域" },
+    ],
+    specialFeatures: ["Winter tourism payments work well", "Some Russian-border vendors accept rubles"],
+    specialFeaturesCn: ["冬季旅游支付顺畅", "部分俄边境商家接受卢布"],
+  },
+  {
+    citySlug: "dali",
+    cityName: "Dali",
+    cityNameCn: "大理",
+    coverage: [
+      { method: "Alipay", acceptance: 88, reliability: "high", notes: "Tourist-oriented businesses", notesCn: "旅游相关商家" },
+      { method: "WeChat Pay", acceptance: 87, reliability: "high", notes: "Tourist-oriented businesses", notesCn: "旅游相关商家" },
+      { method: "UnionPay", acceptance: 70, reliability: "medium", notes: "ATMs in old town", notesCn: "古城有ATM" },
+      { method: "Cash", acceptance: 90, reliability: "high", notes: "Minority vendors prefer cash", notesCn: "少数民族商家更喜欢现金" },
+      { method: "Tourist Card", acceptance: 35, reliability: "low", notes: "Limited availability", notesCn: "接受有限" },
+    ],
+    specialFeatures: ["Bai minority communities may prefer cash", "Erhai Lake area has good coverage"],
+    specialFeaturesCn: ["白族社区可能更喜欢现金", "洱海区域覆盖良好"],
+  },
+  {
+    citySlug: "lijiang",
+    cityName: "Lijiang",
+    cityNameCn: "丽江",
+    coverage: [
+      { method: "Alipay", acceptance: 85, reliability: "high", notes: "Old town businesses", notesCn: "古城商家" },
+      { method: "WeChat Pay", acceptance: 84, reliability: "high", notes: "Old town businesses", notesCn: "古城商家" },
+      { method: "UnionPay", acceptance: 65, reliability: "medium", notes: "Limited ATMs in old town", notesCn: "古城ATM有限" },
+      { method: "Cash", acceptance: 92, reliability: "high", notes: "Naxi minority markets cash preferred", notesCn: "纳西族市场更喜欢现金" },
+      { method: "Tourist Card", acceptance: 30, reliability: "low", notes: "Limited availability", notesCn: "接受有限" },
+    ],
+    specialFeatures: ["Old town is traditional - more cash", "Credit cards at high-end hotels only"],
+    specialFeaturesCn: ["古城传统 - 现金更多", "只有高档酒店可刷卡"],
+  },
+  {
+    citySlug: "sanya",
+    cityName: "Sanya",
+    cityNameCn: "三亚",
+    coverage: [
+      { method: "Alipay", acceptance: 95, reliability: "high", notes: "Resort areas well covered", notesCn: "度假区覆盖良好" },
+      { method: "WeChat Pay", acceptance: 94, reliability: "high", notes: "Resort areas well covered", notesCn: "度假区覆盖良好" },
+      { method: "UnionPay", acceptance: 88, reliability: "high", notes: "ATMs at resorts", notesCn: "度假区有ATM" },
+      { method: "Cash", acceptance: 65, reliability: "high", notes: "Beach vendors vary", notesCn: "海滩商家不一" },
+      { method: "Tourist Card", acceptance: 60, reliability: "medium", notes: "Resort hotels", notesCn: "度假酒店" },
+    ],
+    specialFeatures: ["Hainan resort island has duty-free shops", "International credit cards more accepted"],
+    specialFeaturesCn: ["海南度假岛有免税店", "国际信用卡更被接受"],
+  },
+];
+
+// Helper function to get coverage for a city
+export function getCityPaymentCoverage(citySlug: string): CityPaymentCoverage | undefined {
+  return CITY_PAYMENT_COVERAGE.find((c) => c.citySlug === citySlug);
+}
+
+// Payment FAQs
+export const PAYMENT_FAQS = [
+  {
+    question: "Do I need a Chinese bank account for mobile payments?",
+    questionCn: "我需要中国银行账户才能使用移动支付吗？",
+    answer:
+      "Foreign credit cards now work with Alipay and WeChat Pay through their international versions. However, for full features and higher limits, a Chinese bank account is helpful but not always required. Tourist Mode in Alipay allows binding foreign cards without a Chinese account.",
+    answerCn:
+      "国外信用卡现在可以通过支付宝和微信支付的国际版使用。但是，为了完整功能更高限额，中国银行账户有帮助但不是必须的。支付宝的旅客模式允许不需中国账户即可绑定国外卡。",
+  },
+  {
+    question: "What payment method is most reliable for foreigners?",
+    questionCn: "对外国人来说最可靠的支付方式是什么？",
+    answer:
+      "Alipay's Traveler Mode is currently the most foreigner-friendly option with English interface, easy setup with foreign phone number and passport, and acceptance at 98%+ merchants. WeChat Pay is a close second with similar acceptance. For cash, use bank ATMs (ICBC, BOC) to avoid high fees.",
+    answerCn:
+      "支付宝的旅客模式是目前对外国人最友好的选项，有英文界面，用国外手机号和护照轻松设置，98%+商户接受。微信支付紧随其后接受度相似。对于现金，使用银行ATM（工行、中行）以避免高额手续费。",
+  },
+  {
+    question: "Is mobile payment safe in China?",
+    questionCn: "在中国使用移动支付安全吗？",
+    answer:
+      "Yes, mobile payments in China are very secure. Alipay and WeChat Pay have millions of users with strong security measures including encryption, biometric verification, and fraud detection. Use biometric verification (Face++ or fingerprint) for large transactions. Never share your password or verification codes with anyone.",
+    answerCn:
+      "是的，中国的移动支付非常安全。支付宝和微信支付有数亿用户，具有强大的安全措施，包括加密、生物识别和欺诈检测。大额交易使用生物识别验证（刷脸或指纹）。不要与任何人分享您的密码或验证码。",
+  },
+  {
+    question: "What if my foreign card is declined?",
+    questionCn: "如果我的国外卡被拒怎么办？",
+    answer:
+      "Try these solutions: 1) Ensure international transactions are enabled with your bank before travel. 2) Try a different card (Visa sometimes works when Mastercard doesn't and vice versa). 3) Use ATM for cash withdrawal. 4) Use a tourist card like TourCard or Wise. 5) Check if the merchant accepts your specific card type.",
+    answerCn:
+      "尝试以下解决方案：1）旅行前确保在银行启用了国际交易。2）尝试不同的卡（Visa有时万事达不行，反之亦然）。3）使用ATM取现金。4）使用TourCard或Wise等游客卡。5）查看商家是否接受您的特定卡类型。",
+  },
+  {
+    question: "How much cash should I bring?",
+    questionCn: "我应该带多少现金？",
+    answer:
+      "For most major cities (Beijing, Shanghai, Shenzhen, Guangzhou), 500-1000 CNY equivalent is sufficient as emergency backup. For smaller cities and rural areas, carry 1000-2000 CNY. Markets, street food, and small vendors in traditional areas often prefer or require cash. Always keep some small bills (10, 20, 50 CNY) for small purchases.",
+    answerCn:
+      "对于大多数主要城市（北京、上海、深圳、广州），500-1000元人民币等值的现金作为应急备用就够了。对于小城市和农村地区，携带1000-2000元。市场、街边小吃和传统地区的小商贩通常更喜欢或要求现金。始终保留一些小额钞票（10、20、50元）用于小额购买。",
+  },
+  {
+    question: "Can I get a refund if I pay with mobile and need to return goods?",
+    questionCn: "如果我用手机支付后需要退货，能退款吗？",
+    answer:
+      "Yes, refunds go back to the original payment method (Alipay, WeChat Pay, or card). The process typically takes 3-7 business days. Keep your receipt (fapiao) and communicate in Chinese if possible. Some stores may require the refund to go to the same payment account. Contact the merchant first to initiate the return process.",
+    answerCn:
+      "是的，退款会退回原始支付方式（支付宝、微信支付或银行卡）。这个过程通常需要3-7个工作日。保留您的收据（发票），如果可能的话用中文沟通。一些商店可能要求退款退回同一支付账户。先联系商家启动退货流程。",
+  },
+  {
+    question: "Are Apple Pay and Google Pay accepted in China?",
+    questionCn: "Apple Pay和Google Pay在中国可以接受吗？",
+    answer:
+      "Apple Pay works through UnionPay network and is accepted at many terminals in major cities. Google Pay is less commonly supported. For best results, add your international card to Apple Pay and use it at terminals with contactless symbol. Some older terminals may not support it. Alipay and WeChat Pay remain more universally accepted.",
+    answerCn:
+      "Apple Pay通过银联网络工作，在主要城市的许多终端被接受。Google Pay支持较少。为获得最佳效果，将您的国际卡添加到Apple Pay并在有非接触式标志的终端使用。一些较旧的终端可能不支持。支付宝和微信支付仍然更普遍被接受。",
+  },
+];
+
+// ATM Tips
+export const ATM_TIPS = [
+  { tip: "Use ATMs inside bank branches, not independent ones on streets", tipCn: "使用银行分行内的ATM，而不是街边的独立ATM" },
+  { tip: "Request CNY (not USD) for better exchange rates", tipCn: "取款时选择人民币（而非美元）以获得更好汇率" },
+  { tip: "Some ATMs limit foreign cards to 2000 CNY per withdrawal", tipCn: "部分ATM限制国外卡每次取款2000元" },
+  { tip: "Check with your home bank about international withdrawal fees (often 1-3%)", tipCn: "咨询您的国内银行关于国际取款手续费（通常1-3%）" },
+  { tip: "ATM fees are usually 100-200 CNY per transaction for foreign cards", tipCn: "ATM手续费对国外卡通常每笔100-200元" },
+  { tip: "HSBC and Standard Chartered ATMs often have better rates", tipCn: "汇丰和渣打银行ATM通常有更好的汇率" },
+  { tip: "ATMs at airports and hotels often have worse rates - use city ATMs", tipCn: "机场和酒店的ATM汇率通常较差 - 使用市区ATM" },
+];

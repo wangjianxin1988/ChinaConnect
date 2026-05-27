@@ -299,6 +299,7 @@ export const AIChat: React.FC<AIChatProps> = ({
     conversationHistory,
     currentItinerary,
     isMCPAvailable,
+    isMiniMaxAvailable,
     sendMessage,
     clearConversation,
     saveCurrentItinerary,
@@ -402,8 +403,8 @@ export const AIChat: React.FC<AIChatProps> = ({
           history: "历史",
           newChat: "新建对话",
           savedItineraries: "已保存的行程",
-          mcpOnline: "实时搜索已启用",
-          mcpOffline: "离线模式",
+          mcpOnline: "AI 在线",
+          mcpOffline: "AI 离线",
         }
       : {
           placeholder: "Ask about your China trip...",
@@ -411,8 +412,8 @@ export const AIChat: React.FC<AIChatProps> = ({
           history: "History",
           newChat: "New Chat",
           savedItineraries: "Saved Itineraries",
-          mcpOnline: "Real-time search enabled",
-          mcpOffline: "Offline mode",
+          mcpOnline: "AI Online",
+          mcpOffline: "AI Offline",
         };
 
   return (
@@ -476,12 +477,12 @@ export const AIChat: React.FC<AIChatProps> = ({
               <h2 className="font-semibold text-gray-800">ChinaConnect AI</h2>
               <div className="flex items-center gap-2 text-xs">
                 <span
-                  className={`inline-flex items-center gap-1 ${isMCPAvailable ? "text-green-600" : "text-gray-400"}`}
+                  className={`inline-flex items-center gap-1 ${isMiniMaxAvailable ? "text-green-600" : "text-gray-400"}`}
                 >
                   <span
-                    className={`w-2 h-2 rounded-full ${isMCPAvailable ? "bg-green-500 animate-pulse" : "bg-gray-300"}`}
+                    className={`w-2 h-2 rounded-full ${isMiniMaxAvailable ? "bg-green-500 animate-pulse" : "bg-gray-300"}`}
                   />
-                  {isMCPAvailable ? LABELS.mcpOnline : LABELS.mcpOffline}
+                  {isMiniMaxAvailable ? LABELS.mcpOnline : LABELS.mcpOffline}
                 </span>
               </div>
             </div>

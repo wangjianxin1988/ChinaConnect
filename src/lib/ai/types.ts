@@ -50,6 +50,20 @@ export interface WorkflowProgress {
 // ============================================
 
 export type ToolName =
+  | "CitySearch"
+  | "AttractionSearch"
+  | "FoodSearch"
+  | "HotelSearch"
+  | "TransportSearch"
+  | "WeatherSearch"
+  | "EmergencyContact"
+  | "PaymentGuide"
+  | "VisaCheck"
+  | "SIMCard"
+  | "TranslationService"
+  | "EmergencySOS"
+  | "WebSearch"
+  | "LocalExpert"
   | "city_database"
   | "weather_api"
   | "hotel_search"

@@ -1,20 +1,115 @@
-export type RestaurantType = "michelin" | "blackpearl" | "local";
+/**
+ * Food Tier System Types
+ * S = Michelin (米其林)
+ * A = Black Pearl (黑珍珠)
+ * B = Local Blogger (本地博主)
+ */
 
+// Food Tier Classification
+export type FoodTier = "S" | "A" | "B";
+
+// Restaurant Tier mapping
+export type RestaurantTier = "michelin" | "blackpearl" | "local";
+
+export interface FoodTierInfo {
+  tier: FoodTier;
+  label: string;
+  labelZh: string;
+  source: string;
+  sourceUrl?: string;
+  color: {
+    bg: string;
+    text: string;
+    border: string;
+  };
+}
+
+// Tier to RestaurantType mapping
+export const tierToRestaurantType: Record<FoodTier, RestaurantTier> = {
+  S: "michelin",
+  A: "blackpearl",
+  B: "local",
+};
+
+export const restaurantTypeToTier: Record<RestaurantTier, FoodTier> = {
+  michelin: "S",
+  blackpearl: "A",
+  local: "B",
+};
+
+// Food Tier configurations
+export const FOOD_TIER_CONFIG: Record<FoodTier, FoodTierInfo> = {
+  S: {
+    tier: "S",
+    label: "Michelin",
+    labelZh: "米其林",
+    source: "Michelin Guide China",
+    color: {
+      bg: "bg-amber-50",
+      text: "text-amber-800",
+      border: "border-amber-200",
+    },
+  },
+  A: {
+    tier: "A",
+    label: "Black Pearl",
+    labelZh: "黑珍珠",
+    source: "Dianping Black Pearl",
+    color: {
+      bg: "bg-slate-800",
+      text: "text-slate-200",
+      border: "border-slate-600",
+    },
+  },
+  B: {
+    tier: "B",
+    label: "Local Favorite",
+    labelZh: "本地博主",
+    source: "Local Bloggers",
+    color: {
+      bg: "bg-orange-50",
+      text: "text-orange-800",
+      border: "border-orange-200",
+    },
+  },
+};
+
+// Blogger Platform
 export type BloggerPlatform = "douyin" | "xiaohongshu" | "bilibili" | "weibo";
 
+export const BLOGGER_PLATFORM_LABELS: Record<BloggerPlatform, string> = {
+  douyin: "抖音",
+  xiaohongshu: "小红书",
+  bilibili: "B站",
+  weibo: "微博",
+};
+
+// Rating source
+export type RatingSource = "michelin" | "dianping" | "ctrip" | "blogger";
+
+export interface FoodRating {
+  source: RatingSource;
+  score: number;
+  maxScore: number;
+  reviewCount?: number;
+  lastUpdated: string;
+}
+
+// Restaurant interface aligned with three-tier system
 export interface Restaurant {
   id: string;
   name: string;
   nameEn?: string;
-  type: RestaurantType;
-  // Michelin specific
+  tier: FoodTier;
+  // Michelin specific (tier S)
   star?: 1 | 2 | 3;
-  // Black Pearl specific
+  // Black Pearl specific (tier A)
   diamond?: 1 | 2 | 3;
   // Base info
   cuisine: string;
   avgPrice: number;
-  rating: number;
+  rating?: number;
+  ratings?: FoodRating[];
   address: string;
   addressEn?: string;
   city: string;
@@ -25,23 +120,22 @@ export interface Restaurant {
   phone?: string;
   hours?: string;
   hoursEn?: string;
-  // Local recommendation / blogger fields
+  // Local blogger fields (tier B)
   bloggerName?: string;
   bloggerPlatform?: BloggerPlatform;
-  bloggerReason?: string; // 博主推荐理由
-  videoUrl?: string; // 视频链接
+  bloggerReason?: string;
+  videoUrl?: string;
   // Common
   tags: string[];
   imageUrl?: string;
   description?: string;
   descriptionEn?: string;
   // Price transparency
-  touristPrice?: number; // 老外价
-  localPrice?: number; // 本地价
+  touristPrice?: number;
+  localPrice?: number;
   // Menu
   menuUrl?: string;
   recommendedDishes?: RecommendedDish[];
-  // Dish highlights for local recommendations
   dishHighlights?: string[];
   // Accessibility
   foreignerFriendly: boolean;
@@ -58,7 +152,8 @@ export interface RecommendedDish {
   description?: string;
 }
 
-export interface City {
+// City with restaurants
+export interface FoodCity {
   id: string;
   name: string;
   nameZh: string;
@@ -67,24 +162,36 @@ export interface City {
   restaurants: Restaurant[];
 }
 
-export interface FilterState {
+// Filter state for food search
+export interface FoodFilterState {
   cuisines: string[];
   priceRange: [number, number] | null;
   distance: number | null;
   minRating: number | null;
-  types: RestaurantType[];
+  tiers: FoodTier[];
   foreignerFriendly: boolean;
   hasEnglishMenu: boolean;
   hasPictureMenu: boolean;
+  hasBloggerVideo: boolean;
 }
 
-export interface MapLayerState {
-  michelin: boolean;
-  blackpearl: boolean;
-  local: boolean;
+// Map layer state
+export interface FoodMapLayerState {
+  S: boolean;
+  A: boolean;
+  B: boolean;
 }
 
-export interface UserLocation {
-  lat: number;
-  lng: number;
+// Review interface for blogger recommendations
+export interface BloggerReview {
+  id: string;
+  platform: BloggerPlatform;
+  authorName: string;
+  authorAvatar?: string;
+  content: string;
+  rating?: number;
+  publishDate: string;
+  likes?: number;
+  videoUrl?: string;
+  images?: string[];
 }

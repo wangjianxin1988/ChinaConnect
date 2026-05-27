@@ -6,6 +6,7 @@ export type { MapMarker, MapProvider, MapLayer, MapViewState, MapBounds } from "
 
 // Re-export the DynamicMap wrapper which handles SSR
 export { DynamicMap } from "./DynamicMap";
+export { ClientOnlyMap } from "./ClientOnlyMap";
 
 // Export types for location objects
 export interface DualMapLocation {
@@ -13,3 +14,7 @@ export interface DualMapLocation {
   lng: number;
   name?: string;
 }
+
+// Note: DualMap, GoogleTileLayer, AmapTileLayer, and MapToggle
+// are loaded dynamically via DynamicMap to avoid SSR issues with Leaflet
+// Do NOT add them to this barrel export

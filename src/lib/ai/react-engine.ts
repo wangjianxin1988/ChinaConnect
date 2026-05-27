@@ -529,38 +529,47 @@ function selectTools(intent: IntentResult, params: ExtractedParams): ToolName[] 
 
   switch (intent.intent) {
     case "travel_planning":
-      tools.push("city_database");
+      tools.push("CitySearch");
       if (params.destination) {
-        tools.push("weather_api");
-        tools.push("hotel_search");
-        tools.push("transport_search");
+        tools.push("WeatherSearch");
+        tools.push("HotelSearch");
+        tools.push("TransportSearch");
+        tools.push("AttractionSearch");
+        tools.push("FoodSearch");
       }
       break;
 
     case "food_recommendation":
-      tools.push("city_database");
-      tools.push("translation_api");
+      tools.push("CitySearch");
+      tools.push("FoodSearch");
+      tools.push("TranslationService");
       break;
 
     case "life_consultation":
-      if (params.destination) tools.push("transport_search");
-      tools.push("translation_api");
-      tools.push("map_service");
+      tools.push("PaymentGuide");
+      tools.push("SIMCard");
+      if (params.destination) {
+        tools.push("TransportSearch");
+        tools.push("LocalExpert");
+      }
       break;
 
     case "emergency_help":
-      tools.push("map_service");
-      tools.push("translation_api");
+      tools.push("EmergencySOS");
+      tools.push("EmergencyContact");
+      tools.push("TranslationService");
       break;
 
     case "business_arrangement":
-      tools.push("city_database");
-      tools.push("transport_search");
+      tools.push("CitySearch");
+      tools.push("VisaCheck");
+      tools.push("TransportSearch");
       break;
 
     case "casual_chat":
     default:
-      tools.push("anysearch");
+      tools.push("WebSearch");
+      tools.push("LocalExpert");
       break;
   }
 
@@ -776,7 +785,7 @@ export class ReActEngine {
     toolCallsOut: ToolCall[],
   ): Promise<{ step: ReActStep; toolResult: unknown }> {
     // Select the next tool based on thought
-    const tool = selectedTools[Math.min(stepNum - 1, selectedTools.length - 1)] || "city_database";
+    const tool = selectedTools[Math.min(stepNum - 1, selectedTools.length - 1)] || "CitySearch";
 
     const toolCall: ToolCall = {
       name: tool,
@@ -789,32 +798,68 @@ export class ReActEngine {
     let result: unknown = null;
 
     switch (tool) {
+      case "CitySearch":
+        result = city ? this.getCityData(city) : { error: "No city matched" };
+        break;
+
+      case "AttractionSearch":
+        result = city ? this.getCityData(city) : { error: "No city matched" };
+        break;
+
+      case "FoodSearch":
+        result = city ? this.getCityData(city) : { error: "No city matched" };
+        break;
+
+      case "WeatherSearch":
+        result = this.getWeatherData(params.destination);
+        break;
+
+      case "HotelSearch":
+        result = this.getHotelRecommendations(city, params.budgetLevel);
+        break;
+
+      case "TransportSearch":
+        result = this.getTransportInfo(params.destination);
+        break;
+
+      case "TranslationService":
+        result = { status: "available", note: "Translation service ready" };
+        break;
+
+      case "EmergencyContact":
+        result = { status: "available", note: "Emergency contacts ready" };
+        break;
+
+      case "EmergencySOS":
+        result = { status: "available", note: "Emergency SOS ready" };
+        break;
+
+      case "PaymentGuide":
+        result = { status: "available", note: "Payment guide ready" };
+        break;
+
+      case "VisaCheck":
+        result = { status: "available", note: "Visa check ready" };
+        break;
+
+      case "SIMCard":
+        result = { status: "available", note: "SIM card info ready" };
+        break;
+
+      case "WebSearch":
+        result = { status: "search_available", note: "Real-time search ready" };
+        break;
+
+      case "LocalExpert":
+        result = { status: "available", note: "Local expert ready" };
+        break;
+
       case "city_database":
         result = city ? this.getCityData(city) : { error: "No city matched" };
         break;
 
-      case "weather_api":
-        result = this.getWeatherData(params.destination);
-        break;
-
-      case "hotel_search":
-        result = this.getHotelRecommendations(city, params.budgetLevel);
-        break;
-
-      case "transport_search":
-        result = this.getTransportInfo(params.destination);
-        break;
-
-      case "translation_api":
-        result = { status: "available", note: "Translation service ready" };
-        break;
-
       case "map_service":
         result = city ? this.getMapData(city) : { error: "No city for map" };
-        break;
-
-      case "anysearch":
-        result = { status: "search_available", note: "Real-time search ready" };
         break;
 
       default:
@@ -845,6 +890,54 @@ export class ReActEngine {
     city: City | null,
   ): Record<string, unknown> {
     switch (tool) {
+      case "CitySearch":
+      case "AttractionSearch":
+      case "FoodSearch":
+        return {
+          city: params.destination || city?.nameEn || "Beijing",
+          language: params.language,
+        };
+
+      case "WeatherSearch":
+        return { city: params.destination || city?.nameEn || "Beijing", days: params.days || 5 };
+
+      case "HotelSearch":
+        return {
+          city: params.destination || city?.nameEn || "Beijing",
+          budget_level: params.budgetLevel,
+          user_rating_min: 4.0,
+        };
+
+      case "TransportSearch":
+        return {
+          destination: params.destination || city?.nameEn || "Beijing",
+          transport_type: params.transportPreference || "any",
+        };
+
+      case "TranslationService":
+        return { target_lang: params.language, note: "Translation API available" };
+
+      case "EmergencyContact":
+        return { city: params.destination, language: params.language };
+
+      case "EmergencySOS":
+        return { city: params.destination, language: params.language };
+
+      case "PaymentGuide":
+        return { city: params.destination, language: params.language };
+
+      case "VisaCheck":
+        return { nationality: "United States", purpose: intent.intent, language: params.language };
+
+      case "SIMCard":
+        return { city: params.destination, language: params.language };
+
+      case "WebSearch":
+        return { query: params.destination || "China travel", language: params.language };
+
+      case "LocalExpert":
+        return { city: params.destination, specialty: "general", language: params.language };
+
       case "city_database":
         return {
           city_name: params.destination || city?.nameEn || "Beijing",

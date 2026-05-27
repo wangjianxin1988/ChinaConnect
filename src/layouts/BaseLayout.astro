@@ -4,14 +4,18 @@ import "@/styles/tailwind.css";
 import { ViewTransitions } from "astro:transitions";
 import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
 import CulturalWarningTrigger from "@/components/Guide/CulturalWarningTrigger";
+import InstallPrompt from "@/components/pwa/InstallPrompt";
+import OfflineIndicator from "@/components/pwa/OfflineIndicator";
 import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
-import { SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
+import { SUPPORTED_LANGUAGES, translations, type Language } from "@/i18n/translations";
+import { generateHreflangUrlsWithDefault } from "@/lib/hreflang";
 
 interface Props {
   title: string;
   description?: string;
   meta?: Partial<SEOPageMeta>;
   ogImage?: string;
+  lang?: Language;
 }
 
 const SITE_URL = "https://chinaconnect.com";
@@ -22,6 +26,7 @@ const {
   description = "ChinaConnect - Connecting China with the World through culinary experiences",
   meta = {},
   ogImage,
+  lang = "en",
 } = Astro.props;
 
 const pageMeta: SEOPageMeta = {
@@ -34,17 +39,47 @@ const canonicalUrl = meta.canonicalUrl || Astro.url.href;
 const fullOgImage = ogImage || `${SITE_URL}/og-image.png`;
 const pathname = Astro.url.pathname;
 
+// Generate hreflang tags for all 12 languages
+const hreflangUrls = generateHreflangUrlsWithDefault(pathname, SITE_URL);
+
+// Map language to Open Graph locale
+const ogLocaleMap: Record<Language, string> = {
+  en: "en_US",
+  ja: "ja_JP",
+  ko: "ko_KR",
+  "zh-CN": "zh_CN",
+  "zh-TW": "zh_TW",
+  th: "th_TH",
+  vi: "vi_VN",
+  ru: "ru_RU",
+  fr: "fr_FR",
+  de: "de_DE",
+  ar: "ar_AR",
+  fa: "fa_IR",
+};
+const currentOgLocale = ogLocaleMap[lang] || "en_US";
+
 // Serialize translations for client-side use
 const translationsJson = JSON.stringify(translations);
 ---
 
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang={lang} dir={lang === "ar" || lang === "fa" ? "rtl" : "ltr"}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- PWA / Theme Color -->
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="ChinaConnect" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Primary Meta Tags -->
     <title>{pageMeta.title}</title>
@@ -58,8 +93,18 @@ const translationsJson = JSON.stringify(translations);
       <meta name="robots" content="index, follow" />
     )}
 
+    <!-- AI Crawler Meta (allow AI bots to crawl) -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+
     <!-- Canonical -->
     <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Hreflang Tags for 12 Languages -->
+    {hreflangUrls.map(({ hreflang, href }) => (
+      <link rel="alternate" hreflang={hreflang} href={href} />
+    ))}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -70,8 +115,10 @@ const translationsJson = JSON.stringify(translations);
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content={SITE_NAME} />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale" content={currentOgLocale} />
+    {SUPPORTED_LANGUAGES.filter(l => l.code !== lang).slice(0, 5).map(l => (
+      <meta property="og:locale:alternate" content={ogLocaleMap[l.code]} />
+    ))}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -476,19 +523,77 @@ const translationsJson = JSON.stringify(translations);
     <EmergencyWrapper client:load />
     <CulturalWarningTrigger client:load />
 
-    <!-- Service Worker Registration for Offline Emergency -->
+    <!-- PWA Components -->
+    <InstallPrompt client:load />
+    <OfflineIndicator client:load />
+
+    <!-- Service Worker Registration for Offline -->
     <script is:inline>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('SW registered:', registration.scope);
-            })
-            .catch((error) => {
-              console.log('SW registration failed:', error);
+      (function() {
+        'use strict';
+
+        // PWA Service Worker Registration
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js')
+              .then(function(registration) {
+                console.log('[PWA] Service Worker registered:', registration.scope);
+
+                // Check for updates
+                registration.addEventListener('updatefound', function() {
+                  var newWorker = registration.installing;
+                  if (newWorker) {
+                    newWorker.addEventListener('statechange', function() {
+                      if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        console.log('[PWA] New content available, refresh to update');
+                        window.dispatchEvent(new CustomEvent('pwa-update-available'));
+                      }
+                    });
+                  }
+                });
+              })
+              .catch(function(error) {
+                console.log('[PWA] Service Worker registration failed:', error);
+              });
+
+            // Handle controller change (new SW activated)
+            navigator.serviceWorker.addEventListener('controllerchange', function() {
+              console.log('[PWA] Service Worker controller changed');
+              window.dispatchEvent(new CustomEvent('pwa-controller-change'));
             });
-        });
-      }
+          });
+
+          // Request background sync support
+          window.addEventListener('online', function() {
+            console.log('[PWA] Back online');
+            window.dispatchEvent(new CustomEvent('pwa-online'));
+            if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+              navigator.serviceWorker.controller.postMessage({ type: 'SYNC_FAVORITES' });
+            }
+          });
+
+          window.addEventListener('offline', function() {
+            console.log('[PWA] Gone offline');
+            window.dispatchEvent(new CustomEvent('pwa-offline'));
+          });
+        }
+
+        // Expose PWA functions globally
+        window.ChinaConnectPWA = {
+          isOnline: function() { return navigator.onLine; },
+          isInstalled: function() {
+            return window.matchMedia('(display-mode: standalone)').matches ||
+                   window.navigator.standalone === true;
+          },
+          requestUpdate: function() {
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.getRegistration().then(function(registration) {
+                if (registration) registration.update();
+              });
+            }
+          }
+        };
+      })();
     </script>
 
     <!-- Footer -->

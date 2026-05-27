@@ -403,7 +403,7 @@ Remember:
       isMiniMaxAvailable,
       getMiniMaxResponse,
       budgetLevel,
-      messages.length,
+      messages,
       currentItinerary,
     ],
   );

@@ -1,0 +1,35 @@
+/*
+ChinaConnect PWA Icons
+
+This directory should contain the following icon files:
+
+Required icons (all should be PNG format with transparency):
+- icon-72.png (72x72)
+- icon-96.png (96x96)
+- icon-128.png (128x128)
+- icon-144.png (144x144)
+- icon-152.png (152x152)
+- icon-192.png (192x192) - Primary icon
+- icon-384.png (384x384)
+- icon-512.png (512x512) - Main icon
+
+Shortcuts icons:
+- shortcut-ai.png (96x96)
+- shortcut-emergency.png (96x96)
+- shortcut-cities.png (96x96)
+
+Badge icon:
+- badge-72.png (72x72)
+
+A favicon.svg is already in the public root directory.
+
+To generate icons, you can use the SVG icon-512.svg as a source.
+Tools like:
+- https://realfavicongenerator.net/
+- https://www.favicon-generator.org/
+- ImageMagick: convert icon.svg -resize 192x192 icon-192.png
+*/
+
+.placeholder {
+  /* This file is a placeholder reminder */
+}

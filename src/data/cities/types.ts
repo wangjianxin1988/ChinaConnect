@@ -1,4 +1,22 @@
 // City data types - mirrors the JSON structure in src/data/cities/*.json
+
+// City tier classification
+export type CityTier = "S" | "A" | "D";
+
+// S-tier: Premium cities with full detailed data (35 cities)
+// A-tier: Semi-premium cities with moderate data (200-300 cities)
+// D-tier: On-demand cities with generated data (2900+ cities)
+
+export interface CityTierMeta {
+  tier: CityTier;
+  // S-tier cities are manually curated premium destinations
+  // A-tier cities have significant tourism value but less detailed coverage
+  // D-tier cities are generated on-demand from templates
+  priority?: number; // Display priority within tier (1 = highest)
+  region?: string; // e.g., "长三角", "珠三角", etc.
+  tags?: string[]; // e.g., ["UNESCO", "Business Hub", "Coastal"]
+}
+
 export interface Coordinates {
   lat: number;
   lng: number;
@@ -122,4 +140,6 @@ export interface City {
     highlights?: string[];
     bookingTips?: string;
   }>;
+  // Tier classification for city prioritization
+  tier?: CityTier;
 }

@@ -15,6 +15,22 @@ interface SEOHeadProps {
 const SITE_URL = "https://chinaconnect.com";
 const SITE_NAME = "ChinaConnect";
 
+// Supported languages for hreflang
+const SUPPORTED_HREFLANGS = [
+  "en",
+  "ja",
+  "ko",
+  "zh-CN",
+  "zh-TW",
+  "th",
+  "vi",
+  "ru",
+  "fr",
+  "de",
+  "ar",
+  "fa",
+];
+
 export function SEOHead({
   meta,
   ogImage,
@@ -90,74 +106,57 @@ export function SEOHead({
     }
     canonicalLink.href = canonicalUrl;
 
-    // Update hreflang links
-    const path = window.location.pathname;
-    const hreflangs = [
-      { hreflang: "en", href: `${siteUrl}${path.replace(/^\/(zh\//, "/")}` },
-      { hreflang: "zh-CN", href: `${siteUrl}/zh${path.replace(/^\/(en\//, "/")}` },
-      { hreflang: "x-default", href: canonicalUrl },
-    ];
+    // Update hreflang links - build proper hreflangs for all 12 languages
+    const path = window.location.pathname.replace(/\/$/, "");
 
     // Remove existing hreflang links
-    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
+    const existingHreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]');
+    for (const el of existingHreflangs) {
+      el.remove();
+    }
 
-    // Add new hreflang links
-    hreflangs.forEach(({ hreflang, href }) => {
+    // Add new hreflang links for all supported languages
+    for (const lang of SUPPORTED_HREFLANGS) {
+      let href: string;
+      if (lang === "en") {
+        // English is default - no prefix
+        href = `${siteUrl}${path || "/"}`;
+      } else {
+        href = `${siteUrl}/${lang}${path || "/"}`;
+      }
+
       const link = document.createElement("link");
       link.rel = "alternate";
-      link.hreflang = hreflang;
+      link.hreflang = lang;
       link.href = href;
       document.head.appendChild(link);
-    });
+    }
+
+    // Add x-default
+    const xDefaultLink = document.createElement("link");
+    xDefaultLink.rel = "alternate";
+    xDefaultLink.hreflang = "x-default";
+    xDefaultLink.href = `${siteUrl}${path || "/"}`;
+    document.head.appendChild(xDefaultLink);
 
     // Inject JSON-LD schemas
     const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
-    existingScripts.forEach((script) => script.remove());
+    for (const script of existingScripts) {
+      script.remove();
+    }
 
-    schemas.forEach((schema) => {
+    for (const schema of schemas) {
       const script = document.createElement("script");
       script.type = "application/ld+json";
       script.textContent = JSON.stringify(schema);
       document.head.appendChild(script);
-    });
+    }
+
+    // Cleanup function
+    return () => {
+      // Don't remove on unmount as other components may need the SEO data
+    };
   }, [meta, ogImage, defaultOgImage, siteUrl, siteName, schemas]);
 
   return null;
-}
-
-// Helper component to inject a single JSON-LD script
-export function JsonLd({ schema }: { schema: Record<string, unknown> }) {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-
-    return () => {
-      const existing = document.head.querySelector('script[type="application/ld+json"]');
-      if (existing && existing.textContent === JSON.stringify(schema)) {
-        existing.remove();
-      }
-    };
-  }, [schema]);
-
-  return null;
-}
-
-// Component for FAQPage schema
-export function FAQJsonLd({ items }: { items: Array<{ question: string; answer: string }> }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: items.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
-
-  return <JsonLd schema={schema} />;
 }
