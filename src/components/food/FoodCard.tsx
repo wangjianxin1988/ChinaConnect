@@ -2,15 +2,19 @@
  * FoodCard Component
  * Restaurant card with tier badge and rating display
  * Supports all three tiers: S (Michelin), A (Black Pearl), B (Local)
+ * Also supports new types: budget_local, hole_in_wall, night_market
  */
 
 import type { Restaurant } from "@/types/food";
+import { RESTAURANT_TYPE_CONFIG } from "@/types/food";
 import React from "react";
 import {
   BloggerBadge,
+  BudgetTypeBadge,
   FoodTierBadge,
   PriceRangeBadge,
   RatingBadge,
+  RestaurantTypeBadge,
   TierStarsBadge,
 } from "./FoodTierBadge";
 
@@ -30,6 +34,7 @@ export function FoodCard({
   className = "",
 }: FoodCardProps) {
   const isLocalBlogger = restaurant.tier === "B";
+  const isNewType = ["budget_local", "hole_in_wall", "night_market"].includes(restaurant.type);
 
   return (
     <div className={`bg-white border border-gray-100 rounded-xl p-5 card-hover ${className}`}>
@@ -42,19 +47,30 @@ export function FoodCard({
           {restaurant.nameEn && <p className="text-gray-500 text-sm">{restaurant.name}</p>}
         </div>
 
-        {/* Stars / Diamonds for tier S and A */}
+        {/* Stars / Diamonds for tier S and A, or Type icon for new types */}
         <div className="flex items-center gap-1 shrink-0">
-          <TierStarsBadge
-            tier={restaurant.tier}
-            starCount={restaurant.star}
-            diamondCount={restaurant.diamond}
-          />
+          {isNewType ? (
+            <BudgetTypeBadge
+              type={restaurant.type as "budget_local" | "hole_in_wall" | "night_market"}
+              size="sm"
+            />
+          ) : (
+            <TierStarsBadge
+              tier={restaurant.tier}
+              starCount={restaurant.star}
+              diamondCount={restaurant.diamond}
+            />
+          )}
         </div>
       </div>
 
       {/* Tier Badge row */}
       <div className="flex flex-wrap items-center gap-2 mb-3">
-        <FoodTierBadge tier={restaurant.tier} size="sm" showSource />
+        {isNewType ? (
+          <RestaurantTypeBadge type={restaurant.type} size="sm" />
+        ) : (
+          <FoodTierBadge tier={restaurant.tier} size="sm" showSource />
+        )}
         <span className="text-gray-500 text-sm">{restaurant.cuisine}</span>
         {restaurant.hours && (
           <>
@@ -109,13 +125,20 @@ export function FoodCard({
 
       {/* Price & Rating */}
       <div className="flex items-center gap-4 mb-3 text-sm">
-        <div>
-          <span className="text-gray-500">Avg. </span>
+        <div className="flex items-center gap-2">
+          <span className="text-gray-500">人均 </span>
           <PriceRangeBadge
             avgPrice={restaurant.avgPrice}
             localPrice={restaurant.localPrice}
             touristPrice={restaurant.touristPrice}
+            showRange
           />
+          {isNewType && (
+            <span className="text-xs text-gray-400">
+              ({RESTAURANT_TYPE_CONFIG[restaurant.type]?.priceRange.min}-
+              {RESTAURANT_TYPE_CONFIG[restaurant.type]?.priceRange.max}元)
+            </span>
+          )}
         </div>
         {restaurant.rating && <RatingBadge rating={restaurant.rating} source="评分" />}
       </div>
@@ -126,7 +149,7 @@ export function FoodCard({
       )}
 
       {/* Signature dishes */}
-      {restaurant.dishHighlights.length > 0 && !compact && (
+      {restaurant.dishHighlights && restaurant.dishHighlights.length > 0 && !compact && (
         <div className="mb-3">
           <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
             Signature Dishes

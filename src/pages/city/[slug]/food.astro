@@ -1,0 +1,404 @@
+---
+import "@/styles/global.css";
+import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
+import type { Restaurant } from "@/data/cities/types";
+import { getLangFromUrl } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return citySlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const city = getCityBySlug(slug as string);
+const lang = getLangFromUrl(Astro.url);
+
+if (!city) {
+  return Astro.redirect("/404");
+}
+
+const { prev, next } = getAdjacentCities(slug as string);
+
+// Three-level filter from URL param
+const filterParam = Astro.url.searchParams.get("filter") || "all";
+
+// Categorize restaurants
+const LOCAL_RECOMMEND_THRESHOLD = 150;
+const AFFORDABLE_MAX_PRICE = 100;
+const STREET_FOOD_MAX_PRICE = 80;
+
+function getHighlightCategory(r: Restaurant): string {
+  if (r.type === "local") {
+    const tags = r.tags || [];
+    if (tags.some(t => t.includes("苍蝇馆子") || t.includes("street"))) {
+      return "street_food";
+    }
+    if (r.avgPrice <= AFFORDABLE_MAX_PRICE) {
+      return "affordable";
+    }
+    if (r.avgPrice <= LOCAL_RECOMMEND_THRESHOLD) {
+      return "local_recommend";
+    }
+  }
+  if (r.type === "michelin") return "michelin";
+  if (r.type === "blackpearl") return "blackpearl";
+  return "local_recommend";
+}
+
+interface FilterGroup {
+  id: string;
+  label: string;
+  labelZh: string;
+  icon: string;
+  colorClass: string;
+  restaurants: Restaurant[];
+}
+
+const allRestaurants = city.restaurants;
+
+const michelinRestaurants = allRestaurants.filter(r => r.type === "michelin");
+const blackpearlRestaurants = allRestaurants.filter(r => r.type === "blackpearl");
+const localRestaurants = allRestaurants.filter(r => r.type === "local");
+
+const localRecommendRestaurants = allRestaurants.filter(r => getHighlightCategory(r) === "local_recommend");
+const affordableRestaurants = allRestaurants.filter(r => getHighlightCategory(r) === "affordable");
+const streetFoodRestaurants = allRestaurants.filter(r => getHighlightCategory(r) === "street_food");
+
+const filterGroups: FilterGroup[] = [
+  {
+    id: "all",
+    label: "All",
+    labelZh: "全部",
+    icon: "🍽️",
+    colorClass: "bg-gray-50 border-gray-200 text-gray-700",
+    restaurants: allRestaurants,
+  },
+  {
+    id: "local_recommend",
+    label: "Local Recommend",
+    labelZh: "本地人推荐",
+    icon: "❤️",
+    colorClass: "bg-red-50 border-red-200 text-red-700",
+    restaurants: localRecommendRestaurants,
+  },
+  {
+    id: "michelin",
+    label: "Michelin",
+    labelZh: "米其林",
+    icon: "⭐",
+    colorClass: "bg-amber-50 border-amber-200 text-amber-700",
+    restaurants: michelinRestaurants,
+  },
+  {
+    id: "blackpearl",
+    label: "Black Pearl",
+    labelZh: "黑珍珠",
+    icon: "💎",
+    colorClass: "bg-slate-800 border-slate-600 text-slate-200",
+    restaurants: blackpearlRestaurants,
+  },
+  {
+    id: "affordable",
+    label: "Affordable",
+    labelZh: "平价美食",
+    icon: "💙",
+    colorClass: "bg-blue-50 border-blue-200 text-blue-700",
+    restaurants: affordableRestaurants,
+  },
+  {
+    id: "street_food",
+    label: "Street Food",
+    labelZh: "苍蝇馆子",
+    icon: "🔥",
+    colorClass: "bg-orange-50 border-orange-200 text-orange-700",
+    restaurants: streetFoodRestaurants,
+  },
+];
+
+const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
+
+const pageTitle = `${city.nameEn} 美食 - ChinaConnect`;
+const pageDescription = `${city.nameEn} (${city.name}) 美食指南：米其林、黑珍珠、本地推荐餐厅完整列表`;
+
+function getBadgeClass(type: Restaurant["type"]) {
+  if (type === "michelin") return "badge-michelin";
+  if (type === "blackpearl") return "badge-blackpearl";
+  return "badge-local";
+}
+
+function getBadgeLabel(type: Restaurant["type"]) {
+  if (type === "michelin") return "Michelin";
+  if (type === "blackpearl") return "Black Pearl";
+  return "Local Favorite";
+}
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: [city.nameEn, city.name, `${city.nameEn} food`, `${city.nameEn} restaurants`, "米其林", "黑珍珠", "本地美食"],
+  }}
+  lang={lang}
+>
+  <!-- Hero Section -->
+  <section class="relative h-64 bg-gradient-to-br from-orange-500 to-red-600">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+    <div class="container-custom relative h-full flex flex-col justify-end pb-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-4">
+        <a href="/" class="text-orange-200 hover:text-white transition-colors">Home</a>
+        <span class="text-orange-300 mx-2">/</span>
+        <a href={`/city/${city.slug}`} class="text-orange-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <span class="text-orange-300 mx-2">/</span>
+        <span class="text-white">美食</span>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
+        <span>🍜</span> {city.nameEn} 美食
+      </h1>
+      <p class="text-orange-100">发现{city.name}的米其林、黑珍珠与本地人真心推荐</p>
+
+      <!-- Quick stats -->
+      <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-orange-100">
+        <span class="flex items-center gap-1">
+          <span>⭐</span> {michelinRestaurants.length} 米其林
+        </span>
+        <span class="flex items-center gap-1">
+          <span>💎</span> {blackpearlRestaurants.length} 黑珍珠
+        </span>
+        <span class="flex items-center gap-1">
+          <span>🔥</span> {localRestaurants.length} 本地推荐
+        </span>
+        <span class="flex items-center gap-1">
+          <span>💙</span> {affordableRestaurants.length} 平价美食
+        </span>
+        <span class="flex items-center gap-1">
+          <span>❤️</span> {localRecommendRestaurants.length} 本地人推荐
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-custom py-8">
+    <!-- Filter Navigation -->
+    <div class="mb-8">
+      <div class="flex flex-wrap gap-2">
+        {filterGroups.map((group) => {
+          const isActive = group.id === currentFilter.id;
+          return (
+            <a
+              href={`/city/${city.slug}/food?filter=${group.id}`}
+              class={`
+                flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all
+                ${isActive
+                  ? `${group.colorClass} ring-2 ring-offset-1 ${group.id === "blackpearl" ? "ring-slate-400" : "ring-orange-300"}`
+                  : "bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                }
+              `}
+            >
+              <span>{group.icon}</span>
+              <span>{group.labelZh}</span>
+              <span class={`text-xs rounded-full px-2 py-0.5 ${isActive ? "bg-white/40" : "bg-gray-100"}`}>
+                {group.restaurants.length}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+
+      <!-- Current filter info -->
+      <div class="mt-4 flex items-center justify-between">
+        <p class="text-gray-600 text-sm">
+          <span class="font-semibold text-gray-900">{currentFilter.restaurants.length}</span> 家餐厅
+          {currentFilter.id !== "all" && (
+            <span class="ml-2">
+              — 筛选: <span class="font-medium text-orange-600">{currentFilter.icon} {currentFilter.labelZh}</span>
+            </span>
+          )}
+        </p>
+        <a
+          href={`/city/${city.slug}`}
+          class="text-sm text-blue-600 hover:text-blue-700 font-medium hover:underline flex items-center gap-1"
+        >
+          <span>←</span> 返回{city.nameEn}主页
+        </a>
+      </div>
+    </div>
+
+    <!-- Restaurant Grid -->
+    {currentFilter.restaurants.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {currentFilter.restaurants.map((restaurant) => (
+          <a
+            href={`/food/${restaurant.id}`}
+            class="block bg-white border border-gray-100 rounded-xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all group"
+          >
+            {/* Header */}
+            <div class="flex items-start justify-between gap-2 mb-3">
+              <div class="flex-1 min-w-0">
+                <h3 class="text-lg font-semibold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">
+                  {restaurant.nameEn}
+                </h3>
+                <p class="text-gray-500 text-sm truncate">{restaurant.name}</p>
+              </div>
+              {/* Highlight badges */}
+              <div class="shrink-0 flex flex-col gap-1 items-end">
+                {restaurant.type === "michelin" && restaurant.star && (
+                  <div class="flex items-center gap-0.5">
+                    {Array.from({ length: restaurant.star }).map((_, i) => (
+                      <span key={i} class="text-amber-400 text-sm">★</span>
+                    ))}
+                  </div>
+                )}
+                {restaurant.type === "blackpearl" && restaurant.diamond && (
+                  <div class="flex items-center gap-0.5">
+                    {Array.from({ length: restaurant.diamond }).map((_, i) => (
+                      <span key={i} class="text-gray-400 text-sm">◆</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Type badge */}
+            <div class="flex flex-wrap items-center gap-2 mb-3">
+              <span class={`px-2.5 py-0.5 rounded-full text-xs font-semibold border ${getBadgeClass(restaurant.type)}`}>
+                {getBadgeLabel(restaurant.type)}
+                {restaurant.type === "michelin" && restaurant.star ? `${restaurant.star}星` : ""}
+                {restaurant.type === "blackpearl" && restaurant.diamond ? `${restaurant.diamond}钻` : ""}
+              </span>
+              <span class="text-gray-500 text-sm">{restaurant.cuisine}</span>
+              {restaurant.hours && (
+                <>
+                  <span class="text-gray-300">|</span>
+                  <span class="text-gray-500 text-sm">{restaurant.hours}</span>
+                </>
+              )}
+            </div>
+
+            {/* Price & Rating */}
+            <div class="flex items-center gap-4 mb-3 text-sm">
+              <div>
+                <span class="text-gray-500">¥</span>
+                <span class="font-semibold text-gray-900">{restaurant.avgPrice}</span>
+                <span class="text-gray-400">/人</span>
+              </div>
+              {restaurant.rating && (
+                <div class="text-yellow-500 font-medium">★ {restaurant.rating}</div>
+              )}
+            </div>
+
+            {/* Description */}
+            {restaurant.description && (
+              <p class="text-gray-600 text-sm leading-relaxed mb-3 line-clamp-2">
+                {restaurant.description}
+              </p>
+            )}
+
+            {/* Signature dishes */}
+            {restaurant.dishHighlights && restaurant.dishHighlights.length > 0 && (
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                {restaurant.dishHighlights.slice(0, 3).map((dish, i) => (
+                  <span
+                    key={i}
+                    class="px-2.5 py-1 bg-red-50 text-red-700 rounded-full text-xs font-medium"
+                  >
+                    {dish}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Tags */}
+            {restaurant.tags && restaurant.tags.length > 0 && (
+              <div class="flex flex-wrap gap-1 mb-3">
+                {restaurant.tags.slice(0, 4).map((tag) => (
+                  <span key={tag} class="px-2 py-0.5 bg-gray-50 text-gray-600 rounded text-xs">
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Action row */}
+            <div class="flex items-center gap-2 pt-3 border-t border-gray-100 flex-wrap">
+              {restaurant.phone && (
+                <a
+                  href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
+                  class="flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors shrink-0"
+                  onclick="event.stopPropagation()"
+                >
+                  <span>📞</span>
+                  <span>拨打电话</span>
+                </a>
+              )}
+              {restaurant.coordinates && (
+                <a
+                  href={`https://maps.google.com/maps?search=${restaurant.coordinates.lat},${restaurant.coordinates.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-700 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors shrink-0"
+                  onclick="event.stopPropagation()"
+                >
+                  <span>📍</span>
+                  <span>导航</span>
+                </a>
+              )}
+              <span class="text-xs text-gray-400 truncate max-w-[200px]" title={restaurant.address}>
+                {restaurant.address}
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <!-- Empty state -->
+      <div class="text-center py-16">
+        <div class="text-6xl mb-4">🍽️</div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">暂无餐厅</h3>
+        <p class="text-gray-500 mb-6">该分类下暂无餐厅，请选择其他分类</p>
+        <a
+          href={`/city/${city.slug}/food?filter=all`}
+          class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors"
+        >
+          查看全部餐厅
+        </a>
+      </div>
+    )}
+
+    <!-- Navigation -->
+    <div class="mt-12 flex items-center justify-between border-t border-gray-100 pt-8">
+      <div>
+        {prev && (
+          <a
+            href={`/city/${prev.slug}/food`}
+            class="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-all"
+          >
+            <span class="text-gray-400">←</span>
+            <div>
+              <div class="text-xs text-gray-500">上一个城市</div>
+              <div class="font-semibold text-gray-700">{prev.nameEn} 美食</div>
+            </div>
+          </a>
+        )}
+      </div>
+      <div>
+        {next && (
+          <a
+            href={`/city/${next.slug}/food`}
+            class="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-orange-300 hover:bg-orange-50 transition-all"
+          >
+            <div class="text-right">
+              <div class="text-xs text-gray-500">下一个城市</div>
+              <div class="font-semibold text-gray-700">{next.nameEn} 美食</div>
+            </div>
+            <span class="text-gray-400">→</span>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

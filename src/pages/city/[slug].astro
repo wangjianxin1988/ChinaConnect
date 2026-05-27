@@ -1,18 +1,23 @@
 ---
+import { BudgetHotelSection } from "@/components/accommodation/BudgetHotelSection";
 import { AttractionCard } from "@/components/city/AttractionCard";
-import { RestaurantCard } from "@/components/city/RestaurantCard";
-import { EmergencyCard, QuickDialGrid } from "@/components/city/EmergencyCard";
-import { WeatherWidget } from "@/components/city/WeatherWidget";
-import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import { CityMap } from "@/components/city/CityMap";
-import { getLangFromUrl } from "@/i18n/utils";
 import { AttractionsSection } from "@/components/city/AttractionsSection";
-import { RestaurantsSection } from "@/components/city/RestaurantsSection";
-import { CulturalSection } from "@/components/city/CulturalSection";
-import { EmergencySection } from "@/components/city/EmergencySection";
+import { CityFoodNav } from "@/components/city/CityFoodNav";
+import { CityMap } from "@/components/city/CityMap";
 import { CityTierBadge } from "@/components/city/CityTierBadge";
+import { CulturalSection } from "@/components/city/CulturalSection";
+import { EmergencyCard, QuickDialGrid } from "@/components/city/EmergencyCard";
+import { EmergencySection } from "@/components/city/EmergencySection";
+import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
+import { RestaurantCard } from "@/components/city/RestaurantCard";
+import { RestaurantsSection } from "@/components/city/RestaurantsSection";
+import { WeatherWidget } from "@/components/city/WeatherWidget";
+import { AppRecommendationsSection } from "@/components/apps/AppRecommendationsSection";
+import { getBudgetHotelsByCity } from "@/data/accommodation/cities-budget-hotels";
+import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import { S_TIER_CITIES } from "@/data/cities/tier-data";
+import { getLangFromUrl } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export function getStaticPaths() {
   return citySlugs.map((slug) => ({ params: { slug } }));
@@ -25,6 +30,9 @@ const lang = getLangFromUrl(Astro.url);
 if (!city) {
   return Astro.redirect("/404");
 }
+
+// Get budget hotels for this city
+const budgetHotels = getBudgetHotelsByCity(slug as string);
 
 const { prev, next } = getAdjacentCities(slug as string);
 
@@ -194,11 +202,12 @@ const zhCityUrl = `${SITE_URL}/zh/city/${city.slug}`;
 
 const modules = [
   { id: "overview", label: "Overview", icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
+  { id: "food-highlights", label: "Food", icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
   { id: "attractions", label: "Attractions", icon: "🏛️", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
-  { id: "food", label: "Food", icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
   { id: "transport", label: "Transport", icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
   { id: "accommodation", label: "Stay", icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
   { id: "payment", label: "Payment", icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
+  { id: "apps", label: "Apps", icon: "📱", colorClass: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100" },
   { id: "culture", label: "Culture", icon: "🎎", colorClass: "bg-pink-50 text-pink-700 hover:bg-pink-100" },
   { id: "emergency", label: "Emergency", icon: "🚨", colorClass: "bg-red-50 text-red-700 hover:bg-red-100" },
 ];
@@ -439,6 +448,22 @@ const mapMarkers = [
           </div>
         </section>
 
+        <!-- Food Highlights Section (High Priority - Before Attractions) -->
+        <section id="food-highlights" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">🍜</span> 美食亮点
+            <span class="text-sm font-normal text-gray-500 ml-2">本地人真心推荐</span>
+          </h2>
+          <p class="section-subtitle">Discover local food highlights in {city.nameEn}</p>
+
+          <FoodHighlightsSection
+            restaurants={city.restaurants}
+            citySlug={city.slug}
+            cityName={city.nameEn}
+            client:visible
+          />
+        </section>
+
         <!-- Attractions Section (Lazy loaded with infinite scroll) -->
         <section id="attractions" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
@@ -500,6 +525,15 @@ const mapMarkers = [
               <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-sm">🔥 Local</span>
               <span class="text-gray-500 text-sm">Local favorites</span>
             </div>
+          </div>
+
+          <!-- Quick Filter Navigation -->
+          <div class="mb-6">
+            <CityFoodNav
+              restaurants={city.restaurants}
+              citySlug={city.slug}
+              client:load
+            />
           </div>
 
           <RestaurantsSection
@@ -686,6 +720,27 @@ const mapMarkers = [
               </div>
             ))}
           </div>
+
+          {/* Budget Hotels Section */}
+          {budgetHotels.length > 0 && (
+            <div class="mt-8 pt-8 border-t border-gray-200">
+              <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+                  <span>🎯</span>
+                  <span>Budget Hotels (¥100-300)</span>
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Affordable, foreigner-friendly options near metro stations
+                </p>
+              </div>
+              <BudgetHotelSection
+                hotels={budgetHotels}
+                citySlug={city.slug}
+                cityName={city.nameEn}
+                client:visible
+              />
+            </div>
+          )}
         </section>
 
         <!-- Payment Section -->
@@ -735,6 +790,16 @@ const mapMarkers = [
               </div>
             ))}
           </div>
+        </section>
+
+        <!-- Apps Section -->
+        <section id="apps" class="scroll-mt-32">
+          <h2 class="section-title flex items-center gap-3">
+            <span class="text-2xl">📱</span> Essential Apps
+          </h2>
+          <p class="section-subtitle">Download these apps before arriving in China</p>
+
+          <AppRecommendationsSection client:visible />
         </section>
 
         <!-- Culture Section (Lazy loaded with infinite scroll) -->

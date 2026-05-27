@@ -8,8 +8,17 @@
 // Food Tier Classification
 export type FoodTier = "S" | "A" | "B";
 
-// Restaurant Tier mapping
-export type RestaurantTier = "michelin" | "blackpearl" | "local";
+// Restaurant Type - expanded with new categories
+export type RestaurantType =
+  | "michelin"
+  | "blackpearl"
+  | "local"
+  | "budget_local"
+  | "hole_in_wall"
+  | "night_market";
+
+// Legacy alias for backward compatibility
+export type RestaurantTier = RestaurantType;
 
 export interface FoodTierInfo {
   tier: FoodTier;
@@ -25,16 +34,22 @@ export interface FoodTierInfo {
 }
 
 // Tier to RestaurantType mapping
-export const tierToRestaurantType: Record<FoodTier, RestaurantTier> = {
+// S = Michelin (fine dining)
+// A = Black Pearl (premium dining)
+// B = Local blogger recommended (includes budget_local, hole_in_wall, night_market)
+export const tierToRestaurantType: Record<FoodTier, RestaurantType> = {
   S: "michelin",
   A: "blackpearl",
   B: "local",
 };
 
-export const restaurantTypeToTier: Record<RestaurantTier, FoodTier> = {
+export const restaurantTypeToTier: Record<RestaurantType, FoodTier> = {
   michelin: "S",
   blackpearl: "A",
   local: "B",
+  budget_local: "B",
+  hole_in_wall: "B",
+  night_market: "B",
 };
 
 // Food Tier configurations
@@ -74,6 +89,110 @@ export const FOOD_TIER_CONFIG: Record<FoodTier, FoodTierInfo> = {
   },
 };
 
+// Restaurant Type configurations for new food categories
+export interface RestaurantTypeInfo {
+  type: RestaurantType;
+  label: string;
+  labelZh: string;
+  description: string;
+  icon: string;
+  color: {
+    bg: string;
+    text: string;
+    border: string;
+  };
+  priceRange: {
+    min: number;
+    max: number;
+  };
+}
+
+export const RESTAURANT_TYPE_CONFIG: Record<RestaurantType, RestaurantTypeInfo> = {
+  michelin: {
+    type: "michelin",
+    label: "Michelin",
+    labelZh: "米其林",
+    description: "Fine dining with Michelin star ratings",
+    icon: "⭐",
+    color: {
+      bg: "bg-amber-50",
+      text: "text-amber-800",
+      border: "border-amber-200",
+    },
+    priceRange: { min: 300, max: 5000 },
+  },
+  blackpearl: {
+    type: "blackpearl",
+    label: "Black Pearl",
+    labelZh: "黑珍珠",
+    description: "Premium dining selected by Dianping Black Pearl",
+    icon: "💎",
+    color: {
+      bg: "bg-slate-800",
+      text: "text-slate-200",
+      border: "border-slate-600",
+    },
+    priceRange: { min: 150, max: 1500 },
+  },
+  local: {
+    type: "local",
+    label: "Local",
+    labelZh: "本地推荐",
+    description: "Local blogger recommended restaurants",
+    icon: "🔥",
+    color: {
+      bg: "bg-orange-50",
+      text: "text-orange-800",
+      border: "border-orange-200",
+    },
+    priceRange: { min: 50, max: 200 },
+  },
+  budget_local: {
+    type: "budget_local",
+    label: "Budget Local",
+    labelZh: "本地人推荐",
+    description: "Affordable local favorites recommended by residents (avg 50-150 yuan)",
+    icon: "🍜",
+    color: {
+      bg: "bg-green-50",
+      text: "text-green-800",
+      border: "border-green-200",
+    },
+    priceRange: { min: 50, max: 150 },
+  },
+  hole_in_wall: {
+    type: "hole_in_wall",
+    label: "Hole in the Wall",
+    labelZh: "苍蝇馆子",
+    description: "No-frills eateries with amazing food (avg 20-80 yuan)",
+    icon: "🦐",
+    color: {
+      bg: "bg-yellow-50",
+      text: "text-yellow-800",
+      border: "border-yellow-200",
+    },
+    priceRange: { min: 20, max: 80 },
+  },
+  night_market: {
+    type: "night_market",
+    label: "Night Market",
+    labelZh: "夜市摊位",
+    description: "Street food stalls at night markets (avg 10-50 yuan)",
+    icon: "🌙",
+    color: {
+      bg: "bg-indigo-50",
+      text: "text-indigo-800",
+      border: "border-indigo-200",
+    },
+    priceRange: { min: 10, max: 50 },
+  },
+};
+
+// Helper to get restaurant type label
+export const getRestaurantTypeLabel = (type: RestaurantType): string => {
+  return RESTAURANT_TYPE_CONFIG[type]?.labelZh ?? type;
+};
+
 // Blogger Platform
 export type BloggerPlatform = "douyin" | "xiaohongshu" | "bilibili" | "weibo";
 
@@ -101,6 +220,8 @@ export interface Restaurant {
   name: string;
   nameEn?: string;
   tier: FoodTier;
+  // Restaurant type for filtering (expanded categories)
+  type: RestaurantType;
   // Michelin specific (tier S)
   star?: 1 | 2 | 3;
   // Black Pearl specific (tier A)

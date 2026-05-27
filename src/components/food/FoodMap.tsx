@@ -1,5 +1,3 @@
-import { foodFilterStore } from "@/lib/food-context";
-import type { Restaurant, RestaurantType } from "@/types/food";
 import { useEffect, useRef, useState } from "react";
 
 interface FoodMapProps {
@@ -22,7 +20,7 @@ const TYPE_COLORS: Record<RestaurantType, string> = {
 };
 
 export default function FoodMap({
-  restaurants,
+  restaurants = [],
   center = [31.2304, 121.4737],
   zoom = 12,
   onRestaurantClick,
@@ -31,9 +29,7 @@ export default function FoodMap({
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<any[]>([]);
   const [mapLoaded, setMapLoaded] = useState(false);
-  const [selectedTypes, setSelectedTypes] = useState<RestaurantType[]>(
-    foodFilterStore.getState().selectedTypes,
-  );
+  const [selectedTypes, setSelectedTypes] = useState<RestaurantType[]>(["michelin", "blackpearl", "local"]);
 
   useEffect(() => {
     if (!mapRef.current || typeof window === "undefined") return;
@@ -69,14 +65,6 @@ export default function FoodMap({
       }
     };
   }, [center, zoom]);
-
-  // Subscribe to layer changes
-  useEffect(() => {
-    const unsubscribe = foodFilterStore.subscribe((state) => {
-      setSelectedTypes(state.selectedTypes);
-    });
-    return unsubscribe;
-  }, []);
 
   useEffect(() => {
     if (!mapLoaded || !mapInstanceRef.current) return;

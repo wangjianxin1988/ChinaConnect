@@ -1,82 +1,150 @@
 ---
 import "@/styles/global.css";
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import { cities } from "@/data/food/cities";
-import { restaurants } from "@/data/food/restaurants";
-import LayerToggle from "@/components/food/LayerToggle";
-import FoodMap from "@/components/food/FoodMap";
-import RestaurantListClient from "@/components/food/RestaurantListClient";
-import RestaurantFilter from "@/components/food/RestaurantFilter";
-import DishAssistant from "@/components/food/DishAssistant";
+import { cities, citiesMeta } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
-let selectedCity = Astro.url.searchParams.get("city") || "shanghai";
-if (!cities.find((c) => c.id === selectedCity)) selectedCity = "shanghai";
+// Calculate food statistics per city from city JSON data
+const citiesWithFoodStats = cities.map((city) => {
+  const restaurants = city.restaurants || [];
+  const michelinCount = restaurants.filter((r) => r.type === "michelin").length;
+  const blackpearlCount = restaurants.filter((r) => r.type === "blackpearl").length;
+  const localCount = restaurants.filter((r) => r.type === "local").length;
+  const meta = citiesMeta.find((m) => m.slug === city.slug);
 
-const cityRestaurants = restaurants.filter((r) => r.city === selectedCity);
-const allCuisines = [...new Set(cityRestaurants.map((r) => r.cuisine))];
-const currentCity = cities.find((c) => c.id === selectedCity)!;
-const typeCounts = {
-  michelin: cityRestaurants.filter((r) => r.type === "michelin").length,
-  blackpearl: cityRestaurants.filter((r) => r.type === "blackpearl").length,
-  local: cityRestaurants.filter((r) => r.type === "local").length,
-};
+  return {
+    slug: city.slug,
+    name: city.name,
+    nameEn: city.nameEn,
+    nameZh: meta?.nameZh || city.name,
+    coverImage: city.coverImage,
+    totalRestaurants: restaurants.length,
+    michelinCount,
+    blackpearlCount,
+    localCount,
+  };
+});
+
+// Sort by total restaurant count
+citiesWithFoodStats.sort((a, b) => b.totalRestaurants - a.totalRestaurants);
+
+const totalMichelin = citiesWithFoodStats.reduce((sum, c) => sum + c.michelinCount, 0);
+const totalBlackpearl = citiesWithFoodStats.reduce((sum, c) => sum + c.blackpearlCount, 0);
+const totalLocal = citiesWithFoodStats.reduce((sum, c) => sum + c.localCount, 0);
 ---
 
 <BaseLayout
   title="美食推荐 - ChinaConnect"
-  description="发现中国的米其林餐厅、黑珍珠榜单与本地人真心推荐"
+  description="发现中国35城的米其林餐厅、黑珍珠榜单与本地人真心推荐"
   meta={{
-    keywords: ['中国美食', '米其林餐厅', '黑珍珠', '本地美食', 'China food guide'],
+    keywords: ['中国美食', '米其林餐厅', '黑珍珠', '本地美食', '城市美食攻略'],
   }}
   lang={lang}
 >
-  <main class="container mx-auto px-4 py-6">
-    <div class="mb-6">
-      <h1 class="text-2xl font-bold text-gray-900">美食推荐</h1>
-      <p class="text-sm text-gray-500 mt-1">
-        发现 {currentCity.nameZh} 的米其林、黑珍珠与本地美食（{cityRestaurants.length} 家餐厅）
+  <main class="container mx-auto px-4 py-8">
+    <!-- Hero Section -->
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">🍜 中国美食地图</h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        探索35个城市的美食宝藏，从米其林星级餐厅到本地人私藏的苍蝇馆子
       </p>
-    </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <!-- Main Content -->
-      <div class="lg:col-span-2 space-y-6">
-        <!-- Layer Toggle (三合一地图系统) -->
-        <LayerToggle counts={typeCounts} client:only="react" />
-
-        <!-- Map -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden" style="height:450px">
-          <FoodMap
-            restaurants={cityRestaurants}
-            center={[currentCity.lat, currentCity.lng]}
-            zoom={12}
-            client:only="react"
-          />
+      <!-- Stats -->
+      <div class="flex flex-wrap justify-center gap-6 mt-8">
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-amber-600">{totalMichelin}</div>
+          <div class="text-sm text-amber-700">米其林餐厅</div>
         </div>
-
-        <!-- Restaurant List (filtered by layers + sidebar filters) -->
-        <div class="bg-white rounded-xl shadow-md p-4">
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="text-lg font-bold text-gray-900">餐厅列表 <span class="text-sm font-normal text-gray-500">(<span id="filtered-count">{cityRestaurants.length}</span>)</span></h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="restaurant-list">
-            <RestaurantListClient restaurants={cityRestaurants} client:only="react" />
-          </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-slate-700">{totalBlackpearl}</div>
+          <div class="text-sm text-slate-600">黑珍珠餐厅</div>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-red-600">{totalLocal}</div>
+          <div class="text-sm text-red-700">本地人推荐</div>
         </div>
       </div>
+    </section>
 
-      <!-- Sidebar -->
-      <div class="space-y-6">
-        <RestaurantFilter cuisines={allCuisines} client:only="react" />
-        <DishAssistant cityName={currentCity.nameZh} client:only="react" />
+    <!-- City Grid -->
+    <section>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {citiesWithFoodStats.map((city) => (
+          <a
+            href={`/city/${city.slug}/food`}
+            class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+          >
+            <!-- Cover Image -->
+            <div class="aspect-video bg-gray-200 overflow-hidden relative">
+              {city.coverImage ? (
+                <img
+                  src={city.coverImage}
+                  alt={city.nameZh}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              ) : (
+                <div class="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                  <span class="text-4xl">🏙️</span>
+                </div>
+              )}
+              <!-- Gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <!-- City name on image -->
+              <div class="absolute bottom-3 left-4 text-white">
+                <h3 class="text-xl font-bold">{city.nameZh}</h3>
+                <p class="text-sm opacity-90">{city.nameEn}</p>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="p-4">
+              <div class="flex items-center justify-between text-sm">
+                <span class="text-gray-500">{city.totalRestaurants} 家餐厅</span>
+                <div class="flex items-center gap-3">
+                  {city.michelinCount > 0 && (
+                    <span class="flex items-center gap-1 text-amber-600" title="米其林">
+                      ⭐ {city.michelinCount}
+                    </span>
+                  )}
+                  {city.blackpearlCount > 0 && (
+                    <span class="flex items-center gap-1 text-slate-600" title="黑珍珠">
+                      💎 {city.blackpearlCount}
+                    </span>
+                  )}
+                  {city.localCount > 0 && (
+                    <span class="flex items-center gap-1 text-red-600" title="本地人推荐">
+                      🔥 {city.localCount}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="mt-3 flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-700">
+                <span>探索美食</span>
+                <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
-    </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="mt-16 text-center bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">找不到想去的城市？</h2>
+      <p class="text-gray-600 mb-6">
+        浏览我们的城市列表，探索更多中国目的地
+      </p>
+      <a
+        href="/city/shanghai"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors"
+      >
+        <span>从上海开始</span>
+        <span>→</span>
+      </a>
+    </section>
   </main>
 </BaseLayout>
-
-<script>
-  // City select handler - this is handled in the RestaurantFilter component now
-</script>

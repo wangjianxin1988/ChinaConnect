@@ -27,10 +27,14 @@
   },
   "overrides": [
     {
-      "include": [".astro/**", "node_modules/**", "dist/**"],
+      "include": ["**/*.astro", "node_modules/**", "dist/**"],
       "linter": {
         "rules": {
-          "recommended": false
+          "recommended": false,
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          }
         }
       },
       "formatter": {

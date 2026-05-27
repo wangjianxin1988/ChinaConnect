@@ -2,10 +2,11 @@
  * FoodTierBadge Component
  * Displays tier badge (S/A/B) with appropriate styling
  * S = Michelin (⭐), A = Black Pearl (💎), B = Local (🔥)
+ * Also supports new types: budget_local, hole_in_wall, night_market
  */
 
-import type { BloggerPlatform, FoodTier } from "@/types/food";
-import { BLOGGER_PLATFORM_LABELS, FOOD_TIER_CONFIG } from "@/types/food";
+import type { BloggerPlatform, FoodTier, RestaurantType } from "@/types/food";
+import { BLOGGER_PLATFORM_LABELS, FOOD_TIER_CONFIG, RESTAURANT_TYPE_CONFIG } from "@/types/food";
 import React from "react";
 
 interface FoodTierBadgeProps {
@@ -148,6 +149,7 @@ interface PriceRangeBadgeProps {
   avgPrice: number;
   localPrice?: number;
   touristPrice?: number;
+  showRange?: boolean;
   className?: string;
 }
 
@@ -155,14 +157,116 @@ export function PriceRangeBadge({
   avgPrice,
   localPrice,
   touristPrice,
+  showRange = false,
   className = "",
 }: PriceRangeBadgeProps) {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <span className="text-gray-900 font-semibold">¥{avgPrice}</span>
+      {showRange && <span className="text-xs text-gray-400">/人</span>}
       {(localPrice || touristPrice) && (
         <span className="text-xs text-gray-400">(本地价: ¥{localPrice || avgPrice})</span>
       )}
     </div>
+  );
+}
+
+// Restaurant Type Badge - for displaying new food categories
+interface RestaurantTypeBadgeProps {
+  type: RestaurantType;
+  showLabel?: boolean;
+  size?: "sm" | "md" | "lg";
+  className?: string;
+}
+
+export function RestaurantTypeBadge({
+  type,
+  showLabel = true,
+  size = "md",
+  className = "",
+}: RestaurantTypeBadgeProps) {
+  const config = RESTAURANT_TYPE_CONFIG[type];
+
+  const sizeClasses = {
+    sm: "px-2 py-0.5 text-xs",
+    md: "px-2.5 py-1 text-sm",
+    lg: "px-3 py-1.5 text-base",
+  };
+
+  return (
+    <div className={`inline-flex items-center gap-1.5 ${className}`}>
+      <span
+        className={`
+          inline-flex items-center justify-center rounded-full font-bold
+          ${config.color.bg} ${config.color.text} ${config.color.border} border
+          ${sizeClasses[size]}
+        `}
+      >
+        <span className={size === "sm" ? "text-xs" : size === "md" ? "text-sm" : "text-base"}>
+          {config.icon}
+        </span>
+        {showLabel && <span className="ml-1 font-semibold">{config.labelZh}</span>}
+      </span>
+    </div>
+  );
+}
+
+// Budget Type Badge - specific badge for budget-friendly categories
+interface BudgetTypeBadgeProps {
+  type: "budget_local" | "hole_in_wall" | "night_market";
+  size?: "sm" | "md" | "lg";
+  className?: string;
+}
+
+const BUDGET_TYPE_CONFIG = {
+  budget_local: {
+    label: "本地人推荐",
+    icon: "🍜",
+    color: {
+      bg: "bg-green-50",
+      text: "text-green-800",
+      border: "border-green-200",
+    },
+  },
+  hole_in_wall: {
+    label: "苍蝇馆子",
+    icon: "🦐",
+    color: {
+      bg: "bg-yellow-50",
+      text: "text-yellow-800",
+      border: "border-yellow-200",
+    },
+  },
+  night_market: {
+    label: "夜市摊位",
+    icon: "🌙",
+    color: {
+      bg: "bg-indigo-50",
+      text: "text-indigo-800",
+      border: "border-indigo-200",
+    },
+  },
+};
+
+export function BudgetTypeBadge({ type, size = "md", className = "" }: BudgetTypeBadgeProps) {
+  const config = BUDGET_TYPE_CONFIG[type];
+
+  const sizeClasses = {
+    sm: "px-2 py-0.5 text-xs",
+    md: "px-2.5 py-1 text-sm",
+    lg: "px-3 py-1.5 text-base",
+  };
+
+  return (
+    <span
+      className={`
+        inline-flex items-center justify-center rounded-full font-bold
+        ${config.color.bg} ${config.color.text} ${config.color.border} border
+        ${sizeClasses[size]} ${className}
+      `}
+    >
+      <span>{config.icon}</span>
+      <span className="ml-1 font-semibold">{config.label}</span>
+    </span>
   );
 }

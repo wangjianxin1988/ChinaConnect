@@ -47,7 +47,7 @@ export interface Restaurant {
   id: string;
   name: string;
   nameEn: string;
-  type: string;
+  type: "michelin" | "blackpearl" | "local";
   cuisine: string;
   avgPrice: number;
   rating: number;
@@ -60,7 +60,11 @@ export interface Restaurant {
   tags?: string[];
   star?: number;
   diamond?: number;
+  /** Special highlight tags for city page display */
+  highlightTags?: RestaurantHighlightTag[];
 }
+
+export type RestaurantHighlightTag = "local_recommend" | "affordable" | "street_food";
 
 export interface EmergencyContact {
   type: string;
