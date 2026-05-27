@@ -14,6 +14,12 @@ if (!supabaseUrl || !supabaseAnonKey) {
 export const supabase = createClient<Database>(
   supabaseUrl || "https://placeholder.supabase.co",
   supabaseAnonKey || "placeholder-key",
+  {
+    // Disable realtime to prevent WebSocket connection issues during SSR/build
+    realtime: {
+      enabled: false,
+    },
+  },
 );
 
 export type { Database };
