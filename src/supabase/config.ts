@@ -1,22 +1,37 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || "";
 const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "";
 
-// Conditionally configure realtime based on environment
-// During SSR/build (typeof window === 'undefined'), we disable realtime to prevent
-// WebSocket connection issues. The ws package is Node.js only and won't work in V8 isolates.
-const isServerSide = typeof window === "undefined";
+// During SSR in Node.js < 22, the Supabase realtime client throws because there's no native WebSocket.
+// We patch the WebSocketFactory to not throw during SSR.
+if (typeof window === "undefined" && typeof globalThis !== "undefined") {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { WebSocketFactory } = require("@supabase/realtime-js");
+    if (WebSocketFactory && WebSocketFactory.getWebSocketConstructor) {
+      // Store original method
+      const originalGetWebSocketConstructor = WebSocketFactory.getWebSocketConstructor.bind(WebSocketFactory);
+      // Replace with version that returns undefined instead of throwing
+      WebSocketFactory.getWebSocketConstructor = () => {
+        try {
+          return originalGetWebSocketConstructor();
+        } catch {
+          // Return undefined during SSR - realtime will be disabled
+          return undefined;
+        }
+      };
+    }
+  } catch {
+    // Patching failed, continue anyway
+  }
+}
 
-export const supabase = createClient(supabaseUrl, supabaseKey, {
-  realtime: {
-    // Only enable realtime on the client side where WebSocket is available
-    enabled: !isServerSide,
-  },
-});
+// Create the Supabase client - now should not throw during SSR
+export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey);
 
 export async function signOut() {
-  await supabase.auth.signOut();
+  return supabase.auth.signOut();
 }
 
 export async function signInWithEmail(email: string, password: string) {

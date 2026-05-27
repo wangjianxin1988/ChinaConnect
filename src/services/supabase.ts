@@ -11,45 +11,34 @@ if (!supabaseUrl || !supabaseAnonKey) {
   );
 }
 
-// During SSR/build, the Supabase client throws an error because Node.js < 22 doesn't have
-// native WebSocket support. We MUST NOT call createClient during SSR.
-// The client variable itself is undefined during SSR - it will be initialized on client side.
-let supabaseInstance: SupabaseClient<Database> | undefined;
-
-export function getSupabaseClient(): SupabaseClient<Database> {
-  if (typeof window === "undefined") {
-    // This should never be called during SSR, but if it is, create a temporary client
-    // Note: This may still throw, so ideally this function should not be called during SSR
-    console.warn("getSupabaseClient called during SSR - this should not happen");
-    throw new Error("Supabase client should not be accessed during SSR");
+// During SSR in Node.js < 22, the Supabase realtime client throws because there's no native WebSocket.
+// We patch the WebSocketFactory to not throw during SSR.
+if (typeof window === "undefined" && typeof globalThis !== "undefined") {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { WebSocketFactory } = require("@supabase/realtime-js");
+    if (WebSocketFactory && WebSocketFactory.getWebSocketConstructor) {
+      // Store original method
+      const originalGetWebSocketConstructor = WebSocketFactory.getWebSocketConstructor.bind(WebSocketFactory);
+      // Replace with version that returns undefined instead of throwing
+      WebSocketFactory.getWebSocketConstructor = () => {
+        try {
+          return originalGetWebSocketConstructor();
+        } catch {
+          // Return undefined during SSR - realtime will be disabled
+          return undefined;
+        }
+      };
+    }
+  } catch {
+    // Patching failed, continue anyway
   }
-
-  if (!supabaseInstance) {
-    supabaseInstance = createClient<Database>(
-      supabaseUrl || "https://placeholder.supabase.co",
-      supabaseAnonKey || "placeholder-key",
-    );
-  }
-  return supabaseInstance;
 }
 
-// Export a proxy that ensures client is only accessed on client side
-export const supabase = new Proxy({} as SupabaseClient<Database>, {
-  get(_target, prop) {
-    if (typeof window === "undefined") {
-      // Return a no-op function during SSR to prevent errors
-      const noop = () => {
-        console.warn(`Supabase.${String(prop)} called during SSR - returning no-op`);
-      };
-      return prop === "then" ? undefined : noop;
-    }
-    const client = getSupabaseClient();
-    const value = client[prop as keyof SupabaseClient<Database>];
-    if (typeof value === "function") {
-      return value.bind(client);
-    }
-    return value;
-  },
-});
+// Create the Supabase client - now should not throw during SSR
+export const supabase = createClient<Database>(
+  supabaseUrl || "https://placeholder.supabase.co",
+  supabaseAnonKey || "placeholder-key",
+);
 
 export type { Database };
