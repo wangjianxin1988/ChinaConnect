@@ -4,26 +4,40 @@ const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || "";
 const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "";
 
 // During SSR in Node.js < 22, the Supabase realtime client throws because there's no native WebSocket.
-// We patch the WebSocketFactory to not throw during SSR.
+// We provide a dummy WebSocket class to prevent the error.
+// This is only used during SSR - in the browser, the real WebSocket is available.
 if (typeof window === "undefined" && typeof globalThis !== "undefined") {
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { WebSocketFactory } = require("@supabase/realtime-js");
-    if (WebSocketFactory && WebSocketFactory.getWebSocketConstructor) {
-      // Store original method
-      const originalGetWebSocketConstructor = WebSocketFactory.getWebSocketConstructor.bind(WebSocketFactory);
-      // Replace with version that returns undefined instead of throwing
-      WebSocketFactory.getWebSocketConstructor = () => {
-        try {
-          return originalGetWebSocketConstructor();
-        } catch {
-          // Return undefined during SSR - realtime will be disabled
-          return undefined;
-        }
-      };
+  // Check if WebSocket is not already available
+  if (typeof (globalThis as unknown as { WebSocket?: unknown }).WebSocket === "undefined") {
+    // Create a dummy WebSocket class that won't throw
+    class DummyWebSocket {
+      constructor(_url: string, _protocols?: string | string[]) {
+        // Do nothing - this is just to satisfy the WebSocketFactory check
+      }
+      close(): void {
+        // Do nothing
+      }
+      send(_data: string | ArrayBuffer | Blob): void {
+        // Do nothing
+      }
+      addEventListener(): void {
+        // Do nothing
+      }
+      removeEventListener(): void {
+        // Do nothing
+      }
+      onopen: null | (() => void) = null;
+      onclose: null | (() => void) = null;
+      onerror: null | ((event: unknown) => void) = null;
+      onmessage: null | ((event: unknown) => void) = null;
+      readyState = 0;
+      CONNECTING = 0;
+      OPEN = 1;
+      CLOSING = 2;
+      CLOSED = 3;
     }
-  } catch {
-    // Patching failed, continue anyway
+    // Make the dummy WebSocket available globally so WebSocketFactory.detectEnvironment() finds it
+    (globalThis as unknown as { WebSocket: typeof DummyWebSocket }).WebSocket = DummyWebSocket;
   }
 }
 
