@@ -29,7 +29,11 @@ export default function FoodMap({
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<any[]>([]);
   const [mapLoaded, setMapLoaded] = useState(false);
-  const [selectedTypes, setSelectedTypes] = useState<RestaurantType[]>(["michelin", "blackpearl", "local"]);
+  const [selectedTypes, _setSelectedTypes] = useState<RestaurantType[]>([
+    "michelin",
+    "blackpearl",
+    "local",
+  ]);
 
   useEffect(() => {
     if (!mapRef.current || typeof window === "undefined") return;

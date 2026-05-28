@@ -3,7 +3,12 @@
  * Supports Celsius/Fahrenheit toggle and falls back to mock data
  */
 
-import { fetchWeather, toFahrenheit, getWeatherIconUrl, getWeatherEmoji } from "@/services/weather-api";
+import {
+  fetchWeather,
+  getWeatherEmoji,
+  getWeatherIconUrl,
+  toFahrenheit,
+} from "@/services/weather-api";
 import type { TempUnit } from "@/services/weather-api";
 import { useEffect, useState } from "react";
 
@@ -48,7 +53,9 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
 
   if (loading) {
     return (
-      <div className={`bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-100 dark:border-gray-700 ${className}`}>
+      <div
+        className={`bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-100 dark:border-gray-700 ${className}`}
+      >
         <div className="flex items-center gap-3">
           <div className="animate-pulse w-10 h-10 bg-gray-200 dark:bg-gray-600 rounded-full" />
           <div className="flex-1 space-y-2">
@@ -58,7 +65,10 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
         </div>
         <div className="mt-3 flex gap-2">
           {[1, 2, 3].map((i) => (
-            <div key={i} className="flex-1 animate-pulse h-16 bg-gray-100 dark:bg-gray-700 rounded-lg" />
+            <div
+              key={i}
+              className="flex-1 animate-pulse h-16 bg-gray-100 dark:bg-gray-700 rounded-lg"
+            />
           ))}
         </div>
       </div>
@@ -70,11 +80,12 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
   }
 
   const { current, forecast } = weather;
-  const displayTemp = (c: number) =>
-    unit === "celsius" ? `${c}°C` : `${toFahrenheit(c)}°F`;
+  const displayTemp = (c: number) => (unit === "celsius" ? `${c}°C` : `${toFahrenheit(c)}°F`);
 
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-100 dark:border-gray-700 ${className}`}>
+    <div
+      className={`bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm border border-gray-100 dark:border-gray-700 ${className}`}
+    >
       {/* Header with unit toggle */}
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
@@ -98,9 +109,13 @@ export function WeatherWidget({ city, lat, lng, className = "" }: WeatherWidgetP
           className="flex items-center gap-1 text-xs bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full px-2 py-1 transition-colors"
           title="Toggle temperature unit"
         >
-          <span className={unit === "celsius" ? "font-bold text-blue-600" : "text-gray-400"}>°C</span>
+          <span className={unit === "celsius" ? "font-bold text-blue-600" : "text-gray-400"}>
+            °C
+          </span>
           <span className="text-gray-300">/</span>
-          <span className={unit === "fahrenheit" ? "font-bold text-orange-600" : "text-gray-400"}>°F</span>
+          <span className={unit === "fahrenheit" ? "font-bold text-orange-600" : "text-gray-400"}>
+            °F
+          </span>
         </button>
       </div>
 

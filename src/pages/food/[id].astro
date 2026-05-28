@@ -1,8 +1,8 @@
 ---
 import RestaurantDetail from "@/components/food/RestaurantDetail";
-import BaseLayout from "@/layouts/BaseLayout.astro";
 import { cities } from "@/data/food/cities";
 import { getRestaurantById, restaurants } from "@/data/food/restaurants";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export function getStaticPaths() {
   return restaurants.map((r) => ({

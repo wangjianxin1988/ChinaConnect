@@ -27,7 +27,7 @@ export interface SearchResponse {
 // MCP mode requires the server to be running with specific protocol
 // Note: This is a placeholder that always returns null to use fallback
 // The actual MCP implementation would require a running MCP server
-export async function callMCPAnySearch(query: string): Promise<SearchResponse | null> {
+export async function callMCPAnySearch(_query: string): Promise<SearchResponse | null> {
   // MCP is not reliably available in all deployment environments
   // Return null to always use the fallback search method
   return null;
@@ -209,7 +209,7 @@ export class AnySearchService {
 // ============================================
 
 export const SEARCH_TEMPLATES = {
-  weather: (city: string, date?: string) => `weather forecast ${city}${date ? " " + date : ""}`,
+  weather: (city: string, date?: string) => `weather forecast ${city}${date ? ` ${date}` : ""}`,
 
   attractions: (city: string) => `top tourist attractions ${city} 2026`,
 

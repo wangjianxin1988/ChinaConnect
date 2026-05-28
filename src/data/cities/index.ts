@@ -8,40 +8,40 @@ import guilin from "@/data/cities/guilin.json";
 import shanghai from "@/data/cities/shanghai.json";
 import xian from "@/data/cities/xian.json";
 
-// Batch 2 (Extended 6 cities)
-import hangzhou from "@/data/cities/hangzhou.json";
 import chongqing from "@/data/cities/chongqing.json";
 import dali from "@/data/cities/dali.json";
+// Batch 2 (Extended 6 cities)
+import hangzhou from "@/data/cities/hangzhou.json";
 import nanjing from "@/data/cities/nanjing.json";
-import suzhou from "@/data/cities/suzhou.json";
 import shenzhen from "@/data/cities/shenzhen.json";
+import suzhou from "@/data/cities/suzhou.json";
 
-// Batch 3 (New 8 cities)
-import xiamen from "@/data/cities/xiamen.json";
-import qingdao from "@/data/cities/qingdao.json";
+import changsha from "@/data/cities/changsha.json";
 import kunming from "@/data/cities/kunming.json";
 import lijiang from "@/data/cities/lijiang.json";
-import zhangjiajie from "@/data/cities/zhangjiajie.json";
+import qingdao from "@/data/cities/qingdao.json";
 import sanya from "@/data/cities/sanya.json";
 import wuhan from "@/data/cities/wuhan.json";
-import changsha from "@/data/cities/changsha.json";
+// Batch 3 (New 8 cities)
+import xiamen from "@/data/cities/xiamen.json";
+import zhangjiajie from "@/data/cities/zhangjiajie.json";
 
+import chengde from "@/data/cities/chengde.json";
+import dalian from "@/data/cities/dalian.json";
+import dunhuang from "@/data/cities/dunhuang.json";
+import fuzhou from "@/data/cities/fuzhou.json";
+import harbin from "@/data/cities/harbin.json";
+import hulunbuir from "@/data/cities/hulunbuir.json";
+import jinan from "@/data/cities/jinan.json";
+import lanzhou from "@/data/cities/lanzhou.json";
+import luoyang from "@/data/cities/luoyang.json";
+import ningbo from "@/data/cities/ningbo.json";
+import quanzhou from "@/data/cities/quanzhou.json";
 // Batch 4 (Available cities)
 import tianjin from "@/data/cities/tianjin.json";
-import harbin from "@/data/cities/harbin.json";
-import dalian from "@/data/cities/dalian.json";
-import ningbo from "@/data/cities/ningbo.json";
-import chengde from "@/data/cities/chengde.json";
-import luoyang from "@/data/cities/luoyang.json";
-import jinan from "@/data/cities/jinan.json";
-import yantai from "@/data/cities/yantai.json";
 import weihai from "@/data/cities/weihai.json";
-import fuzhou from "@/data/cities/fuzhou.json";
-import quanzhou from "@/data/cities/quanzhou.json";
-import hulunbuir from "@/data/cities/hulunbuir.json";
 import xining from "@/data/cities/xining.json";
-import lanzhou from "@/data/cities/lanzhou.json";
-import dunhuang from "@/data/cities/dunhuang.json";
+import yantai from "@/data/cities/yantai.json";
 
 export const cities: City[] = [
   // Batch 1 - Original MVP cities

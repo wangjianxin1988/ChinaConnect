@@ -8,7 +8,7 @@ interface RestaurantListClientProps {
 
 export default function RestaurantListClient({ restaurants }: RestaurantListClientProps) {
   const [filtered, setFiltered] = useState<Restaurant[]>(restaurants);
-  const [stateVersion, setStateVersion] = useState(0);
+  const [_stateVersion, setStateVersion] = useState(0);
 
   useEffect(() => {
     const unsubscribe = foodFilterStore.subscribe(() => {

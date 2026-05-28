@@ -5,7 +5,6 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { POINTS } from "@/types/database";
 
 const CHECKIN_HISTORY_KEY = "chinaconnect-checkin-history";
 const MAX_ACCURACY_METERS = 5000; // 5km radius
@@ -59,7 +58,12 @@ export interface UseCheckInReturn {
   /** Request GPS and prepare for check-in */
   requestLocation: () => void;
   /** Submit a check-in at the current location */
-  submitCheckIn: (data: { placeName: string; city: string; note?: string; rating?: number }) => Promise<CheckInEntry | null>;
+  submitCheckIn: (data: {
+    placeName: string;
+    city: string;
+    note?: string;
+    rating?: number;
+  }) => Promise<CheckInEntry | null>;
   /** Check if user is within radius of target */
   isWithinRange: boolean;
   /** Clear any error state */
@@ -67,20 +71,13 @@ export interface UseCheckInReturn {
 }
 
 // Haversine formula - distance in meters between two coordinates
-function haversineDistance(
-  lat1: number,
-  lng1: number,
-  lat2: number,
-  lng2: number,
-): number {
+function haversineDistance(lat1: number, lng1: number, lat2: number, lng2: number): number {
   const R = 6371000; // Earth radius in meters
   const dLat = ((lat2 - lat1) * Math.PI) / 180;
   const dLng = ((lng2 - lng1) * Math.PI) / 180;
   const a =
     Math.sin(dLat / 2) ** 2 +
-    Math.cos((lat1 * Math.PI) / 180) *
-      Math.cos((lat2 * Math.PI) / 180) *
-      Math.sin(dLng / 2) ** 2;
+    Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return R * c;
 }
@@ -105,11 +102,7 @@ function saveHistory(history: CheckInEntry[]): void {
 }
 
 export function useCheckIn(options: UseCheckInOptions = {}): UseCheckInReturn {
-  const {
-    targetCoords,
-    radiusMeters = MAX_ACCURACY_METERS,
-    onCheckIn,
-  } = options;
+  const { targetCoords, radiusMeters = MAX_ACCURACY_METERS, onCheckIn } = options;
 
   const [status, setStatus] = useState<CheckInStatus>("idle");
   const [location, setLocation] = useState<CheckInLocation | null>(null);
@@ -165,17 +158,14 @@ export function useCheckIn(options: UseCheckInOptions = {}): UseCheckInReturn {
 
         let dist: number | null = null;
         if (targetCoords) {
-          dist = haversineDistance(
-            loc.lat,
-            loc.lng,
-            targetCoords.lat,
-            targetCoords.lng,
-          );
+          dist = haversineDistance(loc.lat, loc.lng, targetCoords.lat, targetCoords.lng);
           setDistanceMeters(dist);
 
           if (dist > radiusMeters + (loc.accuracy || 0)) {
             setStatus("out_of_range");
-            setError(`You are approximately ${Math.round(dist / 1000)} km away from the check-in location.`);
+            setError(
+              `You are approximately ${Math.round(dist / 1000)} km away from the check-in location.`,
+            );
           } else {
             setStatus("ready");
           }

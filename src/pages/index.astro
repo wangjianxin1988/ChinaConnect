@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
+import SchemaOrg from "@/components/Seo/SchemaOrg.astro";
 import { citiesMeta } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
-import SchemaOrg from "@/components/Seo/SchemaOrg.astro";
-import { generateWebsiteSchema, generateOrganizationSchema, generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateBreadcrumbSchema, generateJsonLdScript, generateOrganizationSchema, generateWebsiteSchema } from "@/lib/seo/schema-org";
 
 const pathname = Astro.url.pathname;
 const lang = getLangFromUrl(Astro.url);

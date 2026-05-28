@@ -1,5 +1,5 @@
-import React from "react";
 import { InfiniteList } from "@/components/ui/InfiniteList";
+import React from "react";
 
 interface CulturalTip {
   id: string;

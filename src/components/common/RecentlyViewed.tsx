@@ -1,16 +1,16 @@
+import { type Language, translations } from "@/i18n/translations";
 // Recently Viewed Component
-import { useState, useEffect } from 'react';
-import { translations, type Language } from '@/i18n/translations';
-import './RecentlyViewed.css';
+import { useEffect, useState } from "react";
+import "./RecentlyViewed.css";
 
-const STORAGE_KEY = 'chinaconnect_recent_views';
+const STORAGE_KEY = "chinaconnect_recent_views";
 const MAX_ITEMS = 6;
 
 interface ViewedItem {
   id: string;
   name: string;
   nameEn: string;
-  type: 'city' | 'restaurant' | 'attraction';
+  type: "city" | "restaurant" | "attraction";
   image?: string;
   timestamp: number;
 }
@@ -20,9 +20,9 @@ interface Props {
   onItemClick?: (item: ViewedItem) => void;
 }
 
-export function RecentlyViewed({ lang = 'en', onItemClick }: Props) {
+export function RecentlyViewed({ lang = "en", onItemClick }: Props) {
   const [items, setItems] = useState<ViewedItem[]>([]);
-  const [isVisible, setIsVisible] = useState(false);
+  const [_isVisible, setIsVisible] = useState(false);
   const t = translations[lang];
 
   useEffect(() => {
@@ -56,23 +56,17 @@ export function RecentlyViewed({ lang = 'en', onItemClick }: Props) {
       </div>
       <div class="recently-viewed-grid">
         {items.slice(0, MAX_ITEMS).map((item) => (
-          <button
-            key={item.id}
-            class="recently-viewed-item"
-            onClick={() => onItemClick?.(item)}
-          >
+          <button key={item.id} class="recently-viewed-item" onClick={() => onItemClick?.(item)}>
             <div class="recently-viewed-img">
               {item.image ? (
-                <img src={item.image} alt={lang === 'zh' ? item.name : item.nameEn} />
+                <img src={item.image} alt={lang === "zh" ? item.name : item.nameEn} />
               ) : (
                 <div class="recently-viewed-placeholder">
-                  {(lang === 'zh' ? item.name : item.nameEn)[0]}
+                  {(lang === "zh" ? item.name : item.nameEn)[0]}
                 </div>
               )}
             </div>
-            <span class="recently-viewed-name">
-              {lang === 'zh' ? item.name : item.nameEn}
-            </span>
+            <span class="recently-viewed-name">{lang === "zh" ? item.name : item.nameEn}</span>
           </button>
         ))}
       </div>
@@ -81,8 +75,8 @@ export function RecentlyViewed({ lang = 'en', onItemClick }: Props) {
 }
 
 // Utility function to track a viewed item (can be called from other components)
-export function trackView(item: Omit<ViewedItem, 'timestamp'>) {
-  if (typeof window === 'undefined') return;
+export function trackView(item: Omit<ViewedItem, "timestamp">) {
+  if (typeof window === "undefined") return;
 
   const stored = localStorage.getItem(STORAGE_KEY);
   let items: ViewedItem[] = [];
@@ -95,7 +89,7 @@ export function trackView(item: Omit<ViewedItem, 'timestamp'>) {
   }
 
   // Remove existing entry with same id
-  items = items.filter(i => i.id !== item.id);
+  items = items.filter((i) => i.id !== item.id);
 
   // Add to front
   items.unshift({ ...item, timestamp: Date.now() });

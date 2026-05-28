@@ -53,7 +53,7 @@ function buildLetterHTML(template: (typeof INVITATION_TEMPLATES)[0], values: For
     );
   html += `<div class="print-footer"><div></div><div class="print-signature">${closing.replace(/\n/g, "<br>")}</div></div>`;
 
-  html += `</div>`;
+  html += "</div>";
   return html;
 }
 
@@ -63,7 +63,7 @@ export function InvitationLetterClient() {
   const [previewMode, setPreviewMode] = useState(false);
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
   const printRef = useRef<HTMLDivElement>(null);
-  const [previewHTML, setPreviewHTML] = useState("");
+  const [_previewHTML, setPreviewHTML] = useState("");
 
   const currentTemplate =
     INVITATION_TEMPLATES.find((t) => t.id === selectedTemplate) || INVITATION_TEMPLATES[0];

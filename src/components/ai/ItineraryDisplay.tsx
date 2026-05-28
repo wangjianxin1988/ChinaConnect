@@ -78,7 +78,7 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
 }) => {
   const labels = LABEL[language] || LABEL.en;
   const [activeTab, setActiveTab] = useState<"overview" | "daily" | "practical">("overview");
-  const [isEditing, setIsEditing] = useState(false);
+  const [_isEditing, _setIsEditing] = useState(false);
   const [editName, setEditName] = useState("");
   const [showSaveDialog, setShowSaveDialog] = useState(false);
 
@@ -404,7 +404,6 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
               onChange={(e) => setEditName(e.target.value)}
               placeholder="Itinerary name"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              autoFocus
             />
             <div className="flex gap-3">
               <button

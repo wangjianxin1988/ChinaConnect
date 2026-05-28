@@ -3,7 +3,7 @@
 // Supports all 12 languages: en, ja, ko, zh-CN, zh-TW, th, vi, ru, fr, de, ar, fa
 
 import type { Language } from "@/i18n/translations";
-import { SUPPORTED_LANGUAGES, RTL_LANGUAGES } from "@/i18n/translations";
+import { RTL_LANGUAGES, SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { HreflangUrl } from "@/types/seo";
 
 const SITE_URL = "https://chinaconnect.com";
@@ -49,10 +49,7 @@ function normalizePath(path: string): string {
 /**
  * Generate hreflang URLs for a given path
  */
-export function generateHreflangUrls(
-  path: string,
-  baseUrl: string = SITE_URL,
-): HreflangUrl[] {
+export function generateHreflangUrls(path: string, baseUrl: string = SITE_URL): HreflangUrl[] {
   const normalizedPath = normalizePath(path);
 
   return SUPPORTED_LANGUAGES.map((locale) => {
@@ -67,11 +64,7 @@ export function generateHreflangUrls(
 /**
  * Build URL for a specific locale
  */
-function buildLocaleUrl(
-  path: string,
-  locale: Language,
-  baseUrl: string = SITE_URL,
-): string {
+function buildLocaleUrl(path: string, locale: Language, baseUrl: string = SITE_URL): string {
   const normalizedPath = path.replace(/^\/|\/$/g, "");
   const cleanPath = normalizedPath ? `/${normalizedPath}` : "";
 
@@ -124,7 +117,7 @@ export function generateCityHreflangUrls(
  */
 export function generateRestaurantHreflangUrls(
   restaurantId: string,
-  citySlug: string,
+  _citySlug: string,
   baseUrl: string = SITE_URL,
 ): HreflangUrl[] {
   return SUPPORTED_LANGUAGES.map((locale) => ({
@@ -136,10 +129,7 @@ export function generateRestaurantHreflangUrls(
 /**
  * Get canonical URL based on current locale
  */
-export function getCanonicalUrl(
-  path: string,
-  locale: Language = DEFAULT_LOCALE,
-): string {
+export function getCanonicalUrl(path: string, locale: Language = DEFAULT_LOCALE): string {
   const normalizedPath = normalizePath(path);
   return buildLocaleUrl(normalizedPath, locale);
 }
@@ -157,10 +147,7 @@ export function isCanonicalUrl(url: string): boolean {
 /**
  * Generate alternate link tags for HTML head
  */
-export function generateAlternateLinkTags(
-  path: string,
-  baseUrl: string = SITE_URL,
-): string {
+export function generateAlternateLinkTags(path: string, baseUrl: string = SITE_URL): string {
   const hreflangs = generateHreflangUrlsWithDefault(path, baseUrl);
 
   return hreflangs
@@ -175,9 +162,7 @@ export function generateAlternateLinkTags(
  * Get locale from URL path
  */
 export function getLocaleFromPath(path: string): Language {
-  const match = path.match(
-    /^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?:\/|$)/,
-  );
+  const match = path.match(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?:\/|$)/);
   return (match?.[1] as Language) || DEFAULT_LOCALE;
 }
 
@@ -185,10 +170,7 @@ export function getLocaleFromPath(path: string): Language {
  * Get path without locale prefix
  */
 export function getPathWithoutLocale(path: string): string {
-  return path.replace(
-    /^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)\//,
-    "/",
-  );
+  return path.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)\//, "/");
 }
 
 /**
@@ -241,12 +223,14 @@ export function generatePageHreflangs(
 /**
  * Get locale metadata
  */
-export function getLocaleMetadata(locale: Language): {
-  name: string;
-  nativeName: string;
-  hreflang: string;
-  dir: "ltr" | "rtl";
-} | undefined {
+export function getLocaleMetadata(locale: Language):
+  | {
+      name: string;
+      nativeName: string;
+      hreflang: string;
+      dir: "ltr" | "rtl";
+    }
+  | undefined {
   const meta = SUPPORTED_LANGUAGES.find((l) => l.code === locale);
   if (!meta) return undefined;
   return {
@@ -260,10 +244,7 @@ export function getLocaleMetadata(locale: Language): {
 /**
  * Build canonical URL considering current path and locale
  */
-export function buildCanonicalUrl(
-  pathname: string,
-  siteUrl: string = SITE_URL,
-): string {
+export function buildCanonicalUrl(pathname: string, siteUrl: string = SITE_URL): string {
   // Remove any existing locale prefix
   const pathWithoutLocale = getPathWithoutLocale(pathname);
   return `${siteUrl}${pathWithoutLocale || "/"}`;

@@ -1,5 +1,5 @@
-import { useMap } from "@/hooks/useMap";
 import { useGeoLocation } from "@/hooks/useGeoLocation";
+import { useMap } from "@/hooks/useMap";
 import type { MapLayer, MapMarker } from "@/lib/map-types";
 import React, { useState, useCallback, useMemo, useEffect } from "react";
 import { LeafletMap } from "./LeafletMap";
@@ -110,7 +110,7 @@ export function DualMap({
   }, [provider]);
 
   // Determine which provider to highlight based on geo detection
-  const effectiveProvider = geoDetectedProvider ?? provider;
+  const _effectiveProvider = geoDetectedProvider ?? provider;
 
   return (
     <div
@@ -125,7 +125,8 @@ export function DualMap({
             <p className="text-sm text-gray-500">Detecting location and region...</p>
             {geoDetectedProvider && (
               <p className="text-xs text-blue-600 mt-1">
-                Auto-selected: {geoDetectedProvider === "amap" ? "高德地图 (China)" : "Google Maps (Global)"}
+                Auto-selected:{" "}
+                {geoDetectedProvider === "amap" ? "高德地图 (China)" : "Google Maps (Global)"}
               </p>
             )}
           </div>
@@ -193,7 +194,10 @@ export function DualMap({
       <div className="absolute bottom-3 right-3 bg-black/70 text-white px-3 py-1.5 rounded-full text-xs font-medium z-[500]">
         {providerInfo.name}
         {geoDetectedProvider && geoDetectedProvider !== provider && (
-          <span className="ml-1 text-blue-300"> (auto: {geoDetectedProvider === "amap" ? "高德" : "Google"})</span>
+          <span className="ml-1 text-blue-300">
+            {" "}
+            (auto: {geoDetectedProvider === "amap" ? "高德" : "Google"})
+          </span>
         )}
       </div>
 

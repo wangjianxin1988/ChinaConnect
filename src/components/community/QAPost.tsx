@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { LevelBadge } from "@/components/user/LevelBadge";
+import { useBestAnswer } from "@/hooks/useBestAnswer";
 import { supabase } from "@/supabase/config";
 import type { Database } from "@/types/database";
 import { POINTS } from "@/types/database";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./Dialog";
-import { useBestAnswer } from "@/hooks/useBestAnswer";
 
 type Post = Database["public"]["Tables"]["posts"]["Row"];
 type Comment = Database["public"]["Tables"]["comments"]["Row"];
@@ -178,14 +178,14 @@ export function QAPostCard({ post, currentUserId, onLike, className = "" }: QAPo
     }
   };
 
-  const handleMarkBest = () => {
+  const _handleMarkBest = () => {
     if (bestAnswerId) {
       // Cycle: if already marked, unmark
     }
     // The actual marking is done in AnswerCard
   };
 
-  const isQuestionAuthor = !!currentUserId && currentUserId === post.user_id;
+  const _isQuestionAuthor = !!currentUserId && currentUserId === post.user_id;
 
   return (
     <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 ${className}`}>
@@ -295,17 +295,26 @@ export function AnswerCard({
           <span className="text-xs text-gray-400">
             {new Date(answer.created_at).toLocaleDateString()}
           </span>
-          {isQuestionAuthor && (
-            isBestAnswer ? (
-              <Button variant="ghost" size="sm" onClick={() => onUnmarkBest?.(answer.id)} className="text-green-600 hover:text-red-500 text-xs px-2 py-1">
+          {isQuestionAuthor &&
+            (isBestAnswer ? (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => onUnmarkBest?.(answer.id)}
+                className="text-green-600 hover:text-red-500 text-xs px-2 py-1"
+              >
                 Unmark Best
               </Button>
             ) : (
-              <Button variant="ghost" size="sm" onClick={() => onMarkBest?.(answer.id)} className="text-xs px-2 py-1">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => onMarkBest?.(answer.id)}
+                className="text-xs px-2 py-1"
+              >
                 Mark as Best
               </Button>
-            )
-          )}
+            ))}
         </div>
       </div>
     </div>

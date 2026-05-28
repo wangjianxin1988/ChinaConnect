@@ -1,13 +1,11 @@
 // E2E tests for Emergency SOS functionality
 // Coverage: Emergency numbers display, SOS button, GPS, translation phrases, embassy, navigation
 
-import { expect, test, Page } from "@playwright/test";
+import { type Page, expect, test } from "@playwright/test";
 
 async function waitForHydration(page: Page) {
   await page.waitForTimeout(2000);
-  await page
-    .waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 })
-    .catch(() => {});
+  await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 }).catch(() => {});
 }
 
 function createConsoleErrorFilter() {
@@ -136,9 +134,7 @@ test.describe("SOS Button Functionality", () => {
     await page.goto("/emergency", { timeout: 30000 });
     await waitForHydration(page);
 
-    const sosButton = page
-      .locator('button:has-text("SOS"), button:has-text("Emergency")')
-      .first();
+    const sosButton = page.locator('button:has-text("SOS"), button:has-text("Emergency")').first();
 
     if ((await sosButton.count()) > 0) {
       await sosButton.click();
@@ -163,9 +159,7 @@ test.describe("SOS Button Functionality", () => {
     await page.goto("/", { timeout: 30000 });
     await waitForHydration(page);
 
-    const sosButton = page.locator(
-      'button:has-text("SOS"), [aria-label*="sos" i], [data-sos]',
-    );
+    const sosButton = page.locator('button:has-text("SOS"), [aria-label*="sos" i], [data-sos]');
     const hasGlobalSos = (await sosButton.count()) > 0;
 
     // Also check for quick dial section on homepage
@@ -199,9 +193,7 @@ test.describe("GPS Location Section", () => {
     // Or verify the section content exists
     const bodyText = await page.locator("body").innerText();
     const hasLocationContent =
-      bodyText.includes("GPS") ||
-      bodyText.includes("location") ||
-      bodyText.includes("Location");
+      bodyText.includes("GPS") || bodyText.includes("location") || bodyText.includes("Location");
 
     expect(hasLocationUI || hasLocationContent).toBeTruthy();
   });
@@ -213,9 +205,7 @@ test.describe("GPS Location Section", () => {
     const bodyText = await page.locator("body").innerText();
     // Should mention sharing location with emergency services
     const hasHelpfulContent =
-      bodyText.includes("location") ||
-      bodyText.includes("hospital") ||
-      bodyText.includes("nearby");
+      bodyText.includes("location") || bodyText.includes("hospital") || bodyText.includes("nearby");
     expect(hasHelpfulContent).toBeTruthy();
   });
 });
@@ -254,22 +244,16 @@ test.describe("Emergency Translation Phrases", () => {
     // Or check body for Chinese characters
     const bodyText = await page.locator("body").innerText();
     const hasChinese =
-      /[一-鿿]/.test(bodyText) ||
-      bodyText.includes("phrase") ||
-      bodyText.includes("Translation");
+      /[一-鿿]/.test(bodyText) || bodyText.includes("phrase") || bodyText.includes("Translation");
 
     expect(hasCards || hasChinese).toBeTruthy();
   });
 
-  test("has preset emergency contacts (embassy, police, hospital)", async ({
-    page,
-  }) => {
+  test("has preset emergency contacts (embassy, police, hospital)", async ({ page }) => {
     await page.goto("/emergency", { timeout: 30000 });
     await waitForHydration(page);
 
-    const contacts = page.locator(
-      "text=/embassy|consulate|police|hospital|大使馆|医院/i",
-    );
+    const contacts = page.locator("text=/embassy|consulate|police|hospital|大使馆|医院/i");
     const hasContacts = (await contacts.count()) > 0;
     expect(hasContacts).toBeTruthy();
   });
@@ -280,9 +264,7 @@ test.describe("Quick Dial Section", () => {
     await page.goto("/emergency", { timeout: 30000 });
     await waitForHydration(page);
 
-    const quickDial = page.locator(
-      "text=/quick|dial|call.*now|tap.*call|One-Tap/i",
-    );
+    const quickDial = page.locator("text=/quick|dial|call.*now|tap.*call|One-Tap/i");
     const hasQuickDial = (await quickDial.count()) > 0;
     expect(hasQuickDial).toBeTruthy();
   });
@@ -326,9 +308,7 @@ test.describe("Embassy & Consulate Section", () => {
     await page.goto("/emergency", { timeout: 30000 });
     await waitForHydration(page);
 
-    const embassySection = page.locator(
-      "text=/embassy|consulate|diplomat|大使馆/i",
-    );
+    const embassySection = page.locator("text=/embassy|consulate|diplomat|大使馆/i");
     const hasEmbassy = (await embassySection.count()) > 0;
     expect(hasEmbassy).toBeTruthy();
   });
@@ -421,7 +401,8 @@ test.describe("Emergency Page from City Context", () => {
     // Test from homepage
     await page.goto("/", { timeout: 30000 });
     await waitForHydration(page);
-    let hasEmergency = (await page.locator('a[href="/emergency"], text=/emergency|sos/i').count()) > 0;
+    let hasEmergency =
+      (await page.locator('a[href="/emergency"], text=/emergency|sos/i').count()) > 0;
     expect(hasEmergency).toBeTruthy();
 
     // Test from community
@@ -462,9 +443,7 @@ test.describe("Safety Tips Section", () => {
     await page.goto("/emergency", { timeout: 30000 });
     await waitForHydration(page);
 
-    const safetySection = page.locator(
-      "text=/safety|tip|prepare|document/i",
-    );
+    const safetySection = page.locator("text=/safety|tip|prepare|document/i");
     const hasSafety = (await safetySection.count()) > 0;
     expect(hasSafety).toBeTruthy();
   });

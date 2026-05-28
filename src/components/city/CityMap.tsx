@@ -172,19 +172,19 @@ export function CityMap({
       <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500">
         <span className="font-medium">Legend:</span>
         <div className="flex items-center gap-1">
-          <span className="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+          <span className="w-3 h-3 rounded-full bg-amber-500 inline-block" />
           <span>Attractions</span>
         </div>
         <div className="flex items-center gap-1">
-          <span className="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+          <span className="w-3 h-3 rounded-full bg-red-500 inline-block" />
           <span>Restaurants</span>
         </div>
         <div className="flex items-center gap-1">
-          <span className="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+          <span className="w-3 h-3 rounded-full bg-emerald-500 inline-block" />
           <span>Transport</span>
         </div>
         <div className="flex items-center gap-1">
-          <span className="w-3 h-3 rounded-full bg-red-600 inline-block"></span>
+          <span className="w-3 h-3 rounded-full bg-red-600 inline-block" />
           <span>Emergency</span>
         </div>
       </div>

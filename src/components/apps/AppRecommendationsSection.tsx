@@ -3,7 +3,12 @@
  * Displays recommended apps for foreigners with English support
  */
 
-import { APP_RECOMMENDATIONS, APP_CATEGORIES, getEssentialApps, getEnglishFriendlyApps } from "@/data/apps/app-recommendations";
+import {
+  APP_CATEGORIES,
+  type APP_RECOMMENDATIONS,
+  getEnglishFriendlyApps,
+  getEssentialApps,
+} from "@/data/apps/app-recommendations";
 
 interface AppRecommendationsSectionProps {
   title?: string;
@@ -176,10 +181,14 @@ export function AppCard({ app, showDownload = true }: AppCardProps) {
             <span className="px-1.5 py-0.5 bg-green-100 text-green-700 text-xs rounded">EN</span>
           )}
           {app.isEssential && (
-            <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-xs rounded">Essential</span>
+            <span className="px-1.5 py-0.5 bg-amber-100 text-amber-700 text-xs rounded">
+              Essential
+            </span>
           )}
           {app.commission && (
-            <span className="px-1.5 py-0.5 bg-purple-100 text-purple-700 text-xs rounded">{app.commission} comm</span>
+            <span className="px-1.5 py-0.5 bg-purple-100 text-purple-700 text-xs rounded">
+              {app.commission} comm
+            </span>
           )}
         </div>
         <p className="text-xs text-gray-500 truncate">{app.descriptionEn}</p>

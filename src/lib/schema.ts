@@ -139,7 +139,7 @@ export function generateEventSchema(event: EventSEOData) {
     "@context": "https://schema.org",
     "@type": "Event",
     name: event.name,
-    description: event.description || `A food event in China`,
+    description: event.description || "A food event in China",
     startDate: event.startDate,
     endDate: event.endDate,
     eventStatus: "https://schema.org/EventScheduled",

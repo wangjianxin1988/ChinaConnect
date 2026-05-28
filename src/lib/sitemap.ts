@@ -204,7 +204,7 @@ function escapeXml(str: string): string {
 // Restaurant sitemap entry builder
 export function createRestaurantSitemapEntry(
   restaurantId: string,
-  citySlug: string,
+  _citySlug: string,
   lastModified?: Date,
 ): SitemapEntry {
   return {

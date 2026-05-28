@@ -1,13 +1,11 @@
 // E2E tests for Auth page (Login/Register)
 // Coverage: Form fields, validation, submission, OAuth buttons, navigation, error states
 
-import { expect, test, Page } from "@playwright/test";
+import { type Page, expect, test } from "@playwright/test";
 
 async function waitForHydration(page: Page) {
   await page.waitForTimeout(2000);
-  await page
-    .waitForSelector(".animate-spin", { state: "hidden", timeout: 15000 })
-    .catch(() => {});
+  await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 15000 }).catch(() => {});
   await page.waitForTimeout(500); // Extra time for React full render
 }
 
@@ -30,10 +28,9 @@ test.describe("Auth Page - Core Load", () => {
     await page.goto("/auth", { timeout: 30000 });
     await waitForHydration(page);
 
-    await expect(page).toHaveTitle(
-      /Login|Register|Auth|ChinaConnect|Sign.*In|Sign.*Up/i,
-      { timeout: 15000 },
-    );
+    await expect(page).toHaveTitle(/Login|Register|Auth|ChinaConnect|Sign.*In|Sign.*Up/i, {
+      timeout: 15000,
+    });
   });
 
   test("has login/register form", async ({ page }) => {
@@ -41,9 +38,9 @@ test.describe("Auth Page - Core Load", () => {
     await waitForHydration(page);
 
     // Look for form container with common auth form classes
-    const form = page.locator(
-      'form, .bg-white, .bg-gray-800, [class*="shadow"], [class*="card"]',
-    ).first();
+    const form = page
+      .locator('form, .bg-white, .bg-gray-800, [class*="shadow"], [class*="card"]')
+      .first();
     const hasForm = (await form.count()) > 0;
     expect(hasForm).toBeTruthy();
   });
@@ -125,9 +122,7 @@ test.describe("Auth Form Fields", () => {
       await page.goto("/auth", { timeout: 30000 });
       await waitForHydration(page);
 
-      const passwordInput = page
-        .locator('input[type="password"], input[name="password"]')
-        .first();
+      const passwordInput = page.locator('input[type="password"], input[name="password"]').first();
       const hasPassword = (await passwordInput.count()) > 0;
       expect(hasPassword).toBeTruthy();
     });
@@ -257,9 +252,7 @@ test.describe("OAuth / Social Login", () => {
     await page.goto("/auth", { timeout: 30000 });
     await waitForHydration(page);
 
-    const oauthBtn = page.locator(
-      'button:has-text("Google"), button:has-text("GitHub")',
-    ).first();
+    const oauthBtn = page.locator('button:has-text("Google"), button:has-text("GitHub")').first();
 
     if ((await oauthBtn.count()) > 0) {
       await oauthBtn.click();
@@ -491,7 +484,7 @@ test.describe("Auth - SEO & Meta", () => {
     await page.goto("/auth", { timeout: 30000 });
     await waitForHydration(page);
 
-    const noIndex = page.locator('meta[name="robots"]');
+    const _noIndex = page.locator('meta[name="robots"]');
     // Auth pages typically should not be indexed
     // Check if noindex is present or just verify the page loads
     expect(true).toBeTruthy();
@@ -555,10 +548,8 @@ test.describe("Auth - Cross-Page Flow", () => {
 
     // Should either show profile or redirect to auth
     const bodyText = await page.locator("body").innerText();
-    const isOnAuth =
-      bodyText.includes("Sign In") ||
-      bodyText.includes("Login") ||
-      bodyText.includes("Register");
+    const _isOnAuth =
+      bodyText.includes("Sign In") || bodyText.includes("Login") || bodyText.includes("Register");
 
     // Profile or auth should be visible
     expect(bodyText.length).toBeGreaterThan(0);

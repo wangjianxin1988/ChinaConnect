@@ -6,7 +6,7 @@ interface RestaurantFilterProps {
   cuisines: string[];
 }
 
-const CUISINES = ["中餐", "西餐", "日料", "东南亚", "其他"];
+const _CUISINES = ["中餐", "西餐", "日料", "东南亚", "其他"];
 const PRICE_RANGES: { label: string; value: [number, number] }[] = [
   { label: "不限", value: [0, 99999] },
   { label: "0-100", value: [0, 100] },

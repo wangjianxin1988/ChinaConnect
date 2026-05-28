@@ -45,7 +45,7 @@ export function useMap(options: UseMapOptions = {}): UseMapReturn {
 
   const [userCountry, setUserCountry] = useState<string | null>(null);
   const [isDetectingLocation, setIsDetectingLocation] = useState(detectLocation);
-  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [_userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [viewState, setViewStateState] = useState<MapViewState>({
     center: initialCenter,
     zoom: initialZoom,

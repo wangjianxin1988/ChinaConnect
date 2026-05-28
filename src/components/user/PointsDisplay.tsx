@@ -26,7 +26,7 @@ export function PointsDisplay({
 }: PointsDisplayProps) {
   const level = calculateLevel(points);
   const pointsToNext = getPointsToNextLevel(points);
-  const currentLevelThreshold = LEVEL_THRESHOLDS[level as keyof typeof LEVEL_THRESHOLDS];
+  const _currentLevelThreshold = LEVEL_THRESHOLDS[level as keyof typeof LEVEL_THRESHOLDS];
 
   // Calculate progress within current level
   let progress = 0;

@@ -5,7 +5,7 @@
  * Usage: pnpm exec tsx src/scripts/update-city-scores.ts
  */
 
-import { cityScoringEngine, saveCityScores, saveCityScoreHistory } from "../lib/city-sources";
+import { cityScoringEngine, saveCityScoreHistory, saveCityScores } from "../lib/city-sources";
 import { createScoreUpdateLog, updateScoreUpdateLog } from "../lib/city-sources/city-scores-db";
 
 async function main() {
@@ -26,7 +26,9 @@ async function main() {
     const summary = await cityScoringEngine.calculateAllScores();
 
     console.log(`Calculated scores for ${summary.totalCities} cities`);
-    console.log(`Successful sources: ${summary.successfulSources}/${summary.successfulSources + summary.failedSources}`);
+    console.log(
+      `Successful sources: ${summary.successfulSources}/${summary.successfulSources + summary.failedSources}`,
+    );
 
     // Save scores to database
     console.log("Saving scores to database...");

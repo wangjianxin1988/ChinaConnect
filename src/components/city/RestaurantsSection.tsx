@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { RestaurantCard, RestaurantCardData } from "./RestaurantCard";
-import { CityMap } from "./CityMap";
 import { InfiniteList } from "@/components/ui/InfiniteList";
+import React, { useState } from "react";
+import { CityMap } from "./CityMap";
+import { RestaurantCard, type RestaurantCardData } from "./RestaurantCard";
 
 interface RestaurantsSectionProps {
   restaurants: RestaurantCardData[];
@@ -9,18 +9,23 @@ interface RestaurantsSectionProps {
   cityName: string;
 }
 
-export function RestaurantsSection({
-  restaurants,
-  citySlug,
-  cityName,
-}: RestaurantsSectionProps) {
-  const [selectedCoords, setSelectedCoords] = useState<{ lat: number; lng: number } | null>(null);
+export function RestaurantsSection({ restaurants, citySlug, cityName }: RestaurantsSectionProps) {
+  const [_selectedCoords, _setSelectedCoords] = useState<{ lat: number; lng: number } | null>(null);
 
   return (
     <div>
       <div className="mb-6">
         <CityMap
-          city={{ slug: citySlug, name: cityName, coordinates: { lat: 0, lng: 0 }, attractions: [], restaurants, hotels: [] } as any}
+          city={
+            {
+              slug: citySlug,
+              name: cityName,
+              coordinates: { lat: 0, lng: 0 },
+              attractions: [],
+              restaurants,
+              hotels: [],
+            } as any
+          }
           activeTab="food"
           height="350px"
         />
@@ -30,11 +35,8 @@ export function RestaurantsSection({
         items={restaurants}
         initialCount={10}
         loadMoreCount={10}
-        renderItem={(restaurant, index) => (
-          <RestaurantCard
-            key={restaurant.id}
-            restaurant={restaurant}
-          />
+        renderItem={(restaurant, _index) => (
+          <RestaurantCard key={restaurant.id} restaurant={restaurant} />
         )}
       />
     </div>

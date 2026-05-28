@@ -1,7 +1,7 @@
 // E2E tests for City Search functionality
 // Coverage: City cards display, search, navigation, filtering, page content
 
-import { expect, test, Page } from "@playwright/test";
+import { type Page, expect, test } from "@playwright/test";
 
 const POPULAR_CITIES = [
   { slug: "beijing", name: "Beijing", nameZh: "北京" },
@@ -27,9 +27,7 @@ const ALL_SUPPORTED_CITIES = [
 // Helper: wait for page to stabilize after hydration
 async function waitForHydration(page: Page) {
   await page.waitForTimeout(2000);
-  await page
-    .waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 })
-    .catch(() => {});
+  await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 }).catch(() => {});
 }
 
 // Helper: check console errors but filter network/non-critical ones
@@ -53,9 +51,7 @@ test.describe("City Search - Core Functionality", () => {
         await waitForHydration(page);
 
         // Try to find city card by link or data attribute
-        const cityCard = page.locator(
-          `a[href*="/city/${city.slug}"], [data-city="${city.slug}"]`,
-        );
+        const cityCard = page.locator(`a[href*="/city/${city.slug}"], [data-city="${city.slug}"]`);
         const cardExists = (await cityCard.count()) > 0;
 
         if (cardExists) {
@@ -97,8 +93,7 @@ test.describe("City Search - Core Functionality", () => {
       expect(bodyText.length).toBeGreaterThan(50);
 
       // Verify it's not just an error page
-      const hasErrorPage =
-        bodyText.includes("404") && bodyText.includes("Not Found");
+      const hasErrorPage = bodyText.includes("404") && bodyText.includes("Not Found");
       expect(hasErrorPage).toBeFalsy();
     });
   });
@@ -208,17 +203,13 @@ test.describe("City Page Sections", () => {
   });
 
   test("has attractions section", async ({ page }) => {
-    const attractionsSection = page.locator(
-      "text=/attraction|landmark|sightseeing|景点/i",
-    );
+    const attractionsSection = page.locator("text=/attraction|landmark|sightseeing|景点/i");
     const hasSection = (await attractionsSection.count()) > 0;
     expect(hasSection).toBeTruthy();
   });
 
   test("has restaurant/food section", async ({ page }) => {
-    const restaurantSection = page.locator(
-      "text=/restaurant|food|dining|餐厅|美食/i",
-    );
+    const restaurantSection = page.locator("text=/restaurant|food|dining|餐厅|美食/i");
     const hasSection = (await restaurantSection.count()) > 0;
     expect(hasSection).toBeTruthy();
   });

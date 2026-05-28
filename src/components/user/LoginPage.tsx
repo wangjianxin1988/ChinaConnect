@@ -171,9 +171,7 @@ export function LoginPage() {
         {/* Demo Mode Quick Login */}
         {DEMO_MODE && mode === "login" && (
           <div className="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-purple-200">
-            <p className="text-sm text-purple-700 font-medium mb-2">
-              Demo Mode Active
-            </p>
+            <p className="text-sm text-purple-700 font-medium mb-2">Demo Mode Active</p>
             <p className="text-xs text-purple-600 mb-3">
               Try ChinaConnect with a demo account without signing up.
             </p>

@@ -3,7 +3,7 @@
  * Manages restaurant favorites with localStorage persistence
  */
 
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const STORAGE_KEY = "chinaconnect-favorites";
 
@@ -62,20 +62,14 @@ export function useFavorites(): UseFavoritesReturn {
     [favorites],
   );
 
-  const addFavorite = useCallback(
-    (restaurant: Omit<FavoriteRestaurant, "addedAt">): void => {
-      setFavorites((prev) => {
-        if (prev.some((f) => f.id === restaurant.id)) return prev;
-        const updated = [
-          ...prev,
-          { ...restaurant, addedAt: new Date().toISOString() },
-        ];
-        saveFavorites(updated);
-        return updated;
-      });
-    },
-    [],
-  );
+  const addFavorite = useCallback((restaurant: Omit<FavoriteRestaurant, "addedAt">): void => {
+    setFavorites((prev) => {
+      if (prev.some((f) => f.id === restaurant.id)) return prev;
+      const updated = [...prev, { ...restaurant, addedAt: new Date().toISOString() }];
+      saveFavorites(updated);
+      return updated;
+    });
+  }, []);
 
   const removeFavorite = useCallback((id: string): void => {
     setFavorites((prev) => {

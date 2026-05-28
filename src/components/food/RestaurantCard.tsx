@@ -45,14 +45,19 @@ export default function RestaurantCard({ restaurant, onClick }: RestaurantCardPr
       className="w-full text-left bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow relative group cursor-pointer"
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onClick(); }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onClick();
+      }}
     >
       {/* Favorite Button */}
       <div
         role="button"
         tabIndex={0}
         onClick={handleFavoriteClick}
-        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleFavoriteClick(e as unknown as React.MouseEvent); }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ")
+            handleFavoriteClick(e as unknown as React.MouseEvent);
+        }}
         className={`absolute top-3 right-3 z-10 w-8 h-8 rounded-full flex items-center justify-center text-lg transition-all shadow-sm cursor-pointer ${
           isFav
             ? "bg-red-100 text-red-500"

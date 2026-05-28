@@ -166,7 +166,7 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
     }
   };
 
-  const handleCheckInSuccess = (checkIn: MockCheckIn, pointsEarned: number) => {
+  const _handleCheckInSuccess = (checkIn: MockCheckIn, pointsEarned: number) => {
     setCheckIns([checkIn, ...checkIns]);
     if (profile) {
       setProfile({
@@ -187,7 +187,7 @@ export function UserProfilePage({ userId, isOwnProfile = false }: UserProfilePag
         bestAnswers: mockProfile.best_answers,
       };
     }
-    const p = profile as Profile | null;
+    const _p = profile as Profile | null;
     return {
       postsCount: 0,
       checkInsCount: 0,

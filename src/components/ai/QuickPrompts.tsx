@@ -234,7 +234,7 @@ export const QuickPrompts: React.FC<QuickPromptsProps> = ({
   // Expanded variant - grouped by category
   if (variant === "expanded") {
     const categories = PROMPT_CATEGORIES[language] || PROMPT_CATEGORIES.en;
-    const categoryGroups = CATEGORY_GROUPS[language] || CATEGORY_GROUPS.en;
+    const _categoryGroups = CATEGORY_GROUPS[language] || CATEGORY_GROUPS.en;
 
     // Split prompts into groups
     const travelPrompts = prompts.slice(0, 2);

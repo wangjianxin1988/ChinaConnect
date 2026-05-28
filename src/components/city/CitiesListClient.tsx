@@ -23,7 +23,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
   const [sortBy, setSortBy] = useState<TierSortOption>("priority");
   const [searchQuery, setSearchQuery] = useState("");
   const [cityScores, setCityScores] = useState<Record<string, CityScoreDisplay>>({});
-  const [scoresLoading, setScoresLoading] = useState(true);
+  const [_scoresLoading, setScoresLoading] = useState(true);
 
   // Fetch city scores from Supabase on mount
   useEffect(() => {
@@ -150,7 +150,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
   };
 
   // Get tier badge color scheme
-  const getTierColorScheme = (tier: CityTier): { bg: string; text: string } => {
+  const _getTierColorScheme = (tier: CityTier): { bg: string; text: string } => {
     const schemes: Record<CityTier, { bg: string; text: string }> = {
       S: { bg: "bg-amber-500", text: "text-amber-500" },
       A: { bg: "bg-blue-500", text: "text-blue-500" },

@@ -9,10 +9,10 @@ import React, { useState, useCallback } from "react";
 import { AIChat } from "./ai/AIChat";
 
 export default function AIChatPage() {
-  const [savedItinerary, setSavedItinerary] = useState<SavedItinerary | null>(null);
+  const [_savedItinerary, setSavedItinerary] = useState<SavedItinerary | null>(null);
   const [showItineraryPanel, setShowItineraryPanel] = useState(true);
 
-  const handleSaveItinerary = useCallback((name: string) => {
+  const _handleSaveItinerary = useCallback((name: string) => {
     const memory = getLongTermMemory();
     // Get the current temporary itinerary and save it
     const itineraries = memory.getItineraries();

@@ -91,13 +91,7 @@ export function GPSLocator({ className = "" }: GPSLocatorProps) {
 
       for (const { type, query } of queries) {
         const response = await fetch(
-          `https://nominatim.openstreetmap.org/search?` +
-            `q=${encodeURIComponent(query)}&` +
-            `lat=${location.lat}&` +
-            `lon=${location.lng}&` +
-            `radius=5000&` +
-            `format=json&` +
-            `limit=5`,
+          `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&lat=${location.lat}&lon=${location.lng}&radius=5000&format=json&limit=5`,
           {
             headers: {
               "Accept-Language": "en,zh",

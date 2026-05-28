@@ -1,4 +1,4 @@
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { type SupabaseClient, createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || "";
 const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "";
@@ -11,9 +11,6 @@ if (typeof window === "undefined" && typeof globalThis !== "undefined") {
   if (typeof (globalThis as unknown as { WebSocket?: unknown }).WebSocket === "undefined") {
     // Create a dummy WebSocket class that won't throw
     class DummyWebSocket {
-      constructor(_url: string, _protocols?: string | string[]) {
-        // Do nothing - this is just to satisfy the WebSocketFactory check
-      }
       close(): void {
         // Do nothing
       }

@@ -3345,7 +3345,8 @@ export const TIER_CONFIG: Record<
     bgColor: "bg-amber-50",
     borderColor: "border-amber-300",
     icon: "star",
-    description: "Premium cities with full detailed guides - UNESCO sites, Michelin restaurants, complete transport info",
+    description:
+      "Premium cities with full detailed guides - UNESCO sites, Michelin restaurants, complete transport info",
   },
   A: {
     label: "A-Tier",
@@ -3354,7 +3355,8 @@ export const TIER_CONFIG: Record<
     bgColor: "bg-blue-50",
     borderColor: "border-blue-300",
     icon: "shield",
-    description: "Semi-premium cities with curated content - popular destinations with good local coverage",
+    description:
+      "Semi-premium cities with curated content - popular destinations with good local coverage",
   },
   D: {
     label: "D-Tier",

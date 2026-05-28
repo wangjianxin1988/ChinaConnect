@@ -194,19 +194,13 @@ export function CulturalWarningTrigger({
 
   const { warning } = currentWarning;
   const style = IMPORTANCE_STYLES[warning.importance];
-  const progress = warningQueue.length > 1
-    ? `${queueIndex + 1} / ${warningQueue.length}`
-    : "";
+  const progress = warningQueue.length > 1 ? `${queueIndex + 1} / ${warningQueue.length}` : "";
 
   return (
     <div className="fixed bottom-24 right-6 z-40 max-w-sm w-full animate-in slide-in-from-bottom-4">
-      <div
-        className={`${style.bg} border-2 ${style.text} rounded-2xl shadow-2xl overflow-hidden`}
-      >
+      <div className={`${style.bg} border-2 ${style.text} rounded-2xl shadow-2xl overflow-hidden`}>
         {/* Header */}
-        <div
-          className={`px-4 py-3 border-b border-current/20 flex items-center justify-between`}
-        >
+        <div className={"px-4 py-3 border-b border-current/20 flex items-center justify-between"}>
           <div className="flex items-center gap-2">
             <span className="text-2xl">{warning.icon}</span>
             <div>

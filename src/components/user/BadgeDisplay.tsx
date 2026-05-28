@@ -41,7 +41,7 @@ const tierColors: Record<BadgeTier, { bg: string; border: string; text: string; 
   },
 };
 
-const categoryIcons: Record<BadgeCategory, string> = {
+const _categoryIcons: Record<BadgeCategory, string> = {
   exploration: "compass",
   food: "utensils",
   social: "users",
@@ -315,7 +315,7 @@ export function BadgeItem({ badge, size = "md", showDetails = false, className }
   const icon = badgeIcons[badge.icon] || badgeIcons.star;
   const classes = sizeClasses[size];
 
-  const badgeElement = (
+  const _badgeElement = (
     <div className={cn("group relative flex flex-col items-center gap-1", className)}>
       {/* Badge icon container */}
       <div

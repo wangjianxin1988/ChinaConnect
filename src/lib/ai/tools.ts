@@ -343,7 +343,7 @@ export function translateText(
 } {
   // Use built-in translations for common phrases
   const key = text.toLowerCase().trim();
-  const translations = TRANSLATIONS[targetLang] || TRANSLATIONS["en"];
+  const translations = TRANSLATIONS[targetLang] || TRANSLATIONS.en;
 
   // Check if we have a direct translation
   if (translations[key]) {
@@ -432,7 +432,7 @@ export function getMapData(cityName: string): {
       total_distance_km: 15,
       estimated_duration_minutes: 45,
     },
-    map_url: `https://www.openstreetmap.org/search?query=${encodeURIComponent(cityName + " China")}`,
+    map_url: `https://www.openstreetmap.org/search?query=${encodeURIComponent(`${cityName} China`)}`,
   };
 }
 
@@ -501,7 +501,6 @@ function findCity(name: string): City | null {
     guangzhou: "guangzhou",
     广州: "guangzhou",
     canton: "guangzhou",
-    xian: "xian",
     "xi'an": "xian",
     xian: "xian",
     西安: "xian",
@@ -564,7 +563,7 @@ function citySearch(params: { query: string; language?: string }):
   for (const city of cities) {
     const nameMatch =
       city.name.toLowerCase().includes(lowerQuery) ||
-      (city.nameEn && city.nameEn.toLowerCase().includes(lowerQuery)) ||
+      city.nameEn?.toLowerCase().includes(lowerQuery) ||
       city.slug.toLowerCase().includes(lowerQuery);
 
     if (nameMatch) {
@@ -690,9 +689,7 @@ function paymentGuide(params: { city?: string; language?: string }):
     {
       method: isZh ? "现金" : "Cash",
       icon: "💵",
-      description: isZh
-        ? "准备适量现金以备不时之需"
-        : "Keep some cash as backup",
+      description: isZh ? "准备适量现金以备不时之需" : "Keep some cash as backup",
       setup: isZh ? "在银行或兑换点兑换人民币" : "Exchange at banks or currency exchanges",
       usage: isZh ? "小商贩、农贸市场、景区门票" : "Street vendors, markets, tickets",
     },
@@ -734,7 +731,10 @@ function visaCheck(params: { nationality: string; purpose: string; language?: st
   const isZh = language === "zh";
 
   // Simplified visa database
-  const visaData: Record<string, { visa_type: string; duration: string; required_docs: string[]; notes: string[] }> = {
+  const visaData: Record<
+    string,
+    { visa_type: string; duration: string; required_docs: string[]; notes: string[] }
+  > = {
     "United States": {
       visa_type: "L (Tourism/Business)",
       duration: "30-90 days",
@@ -767,7 +767,7 @@ function visaCheck(params: { nationality: string; purpose: string; language?: st
     },
   };
 
-  const data = visaData[nationality] || visaData["default"];
+  const data = visaData[nationality] || visaData.default;
 
   return {
     visa_requirements: [
@@ -930,7 +930,9 @@ function localExpert(params: { city: string; specialty?: string; language?: stri
       specialty: specialty,
       rating: 4.8,
       languages: ["English", "Mandarin"],
-      note: isZh ? "请联系当地旅行社获取认证向导" : "Contact local travel agency for certified guides",
+      note: isZh
+        ? "请联系当地旅行社获取认证向导"
+        : "Contact local travel agency for certified guides",
     },
   ];
 
@@ -938,7 +940,9 @@ function localExpert(params: { city: string; specialty?: string; language?: stri
     {
       name: isZh ? "城市一日游" : "City Day Tour",
       duration: "8 hours",
-      includes: isZh ? ["交通", "门票", "午餐", "向导"] : ["Transport", "Tickets", "Lunch", "Guide"],
+      includes: isZh
+        ? ["交通", "门票", "午餐", "向导"]
+        : ["Transport", "Tickets", "Lunch", "Guide"],
       price: isZh ? "¥500-800/人" : "¥500-800/person",
     },
   ];
@@ -964,7 +968,8 @@ export const TOOL_REGISTRY = {
   FoodSearch: foodSearch,
   HotelSearch: searchHotels,
   TransportSearch: searchTransport,
-  WeatherSearch: (params: { city: string; days?: number }) => getWeatherData(params.city, params.days),
+  WeatherSearch: (params: { city: string; days?: number }) =>
+    getWeatherData(params.city, params.days),
 
   // Information tools
   EmergencyContact: getEmergencyInfo,

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface UseInfiniteScrollOptions<T> {
   items: T[];
@@ -65,12 +65,12 @@ export function useInfiniteScroll<T>({
           root: null,
           rootMargin: "100px",
           threshold,
-        }
+        },
       );
 
       observerRef.current.observe(node);
     },
-    [hasMore, loading, loadMore, threshold]
+    [hasMore, loading, loadMore, threshold],
   );
 
   // Cleanup observer on unmount

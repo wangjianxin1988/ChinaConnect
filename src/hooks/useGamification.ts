@@ -269,7 +269,7 @@ const BADGES: Badge[] = [
 const STREAK_KEY = "chinaconnect-streak";
 const POINTS_HISTORY_KEY = "chinaconnect-points-history";
 const EARNED_BADGES_KEY = "chinaconnect-earned-badges";
-const LAST_CHECKIN_KEY = "chinaconnect-last-checkin";
+const _LAST_CHECKIN_KEY = "chinaconnect-last-checkin";
 
 // ============================================
 // Helper Functions
@@ -577,10 +577,11 @@ export function useGamification(options: UseGamificationOptions = {}): UseGamifi
           case "likes":
             qualifies = stats.likes >= badge.requirement.count;
             break;
-          case "streak":
+          case "streak": {
             const streak = getStreakFromStorage();
             qualifies = streak.current >= badge.requirement.count;
             break;
+          }
         }
 
         if (qualifies) {

@@ -1,5 +1,5 @@
 document.getElementById("city-select")?.addEventListener("change", (e) => {
-  window.location.href = "/food?city=" + e.target.value;
+  window.location.href = `/food?city=${e.target.value}`;
 });
 
 (() => {
@@ -26,24 +26,19 @@ document.getElementById("city-select")?.addEventListener("change", (e) => {
         .forEach((r) => {
           const icon = L.divIcon({
             className: "custom-marker",
-            html:
-              '<div style="background:' +
-              TYPE_COLORS[r.type] +
-              ';color:white;padding:8px 12px;border-radius:20px;font-size:14px;font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.3);white-space:nowrap;">' +
-              TYPE_ICONS[r.type] +
-              " " +
-              (r.type === "michelin"
-                ? r.star + "星"
+            html: `<div style="background:${TYPE_COLORS[r.type]};color:white;padding:8px 12px;border-radius:20px;font-size:14px;font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.3);white-space:nowrap;">${TYPE_ICONS[r.type]} ${
+              r.type === "michelin"
+                ? `${r.star}星`
                 : r.type === "blackpearl"
-                  ? r.diamond + "钻"
-                  : "") +
-              "</div>",
+                  ? `${r.diamond}钻`
+                  : ""
+            }</div>`,
             iconSize: [0, 0],
             iconAnchor: [0, 0],
           });
           const marker = L.marker([r.lat, r.lng], { icon }).addTo(map);
           marker.on("click", () => {
-            window.location.href = "/food/" + r.id;
+            window.location.href = `/food/${r.id}`;
           });
           markers.push(marker);
         });
@@ -205,34 +200,16 @@ document.getElementById("menu-photo")?.addEventListener("change", (e) => {
       ];
       let html = "";
       dishes.forEach((d) => {
-        html +=
-          '<div class="p-3 rounded-lg border ' +
-          (d.recommended ? "border-green-200 bg-green-50" : "border-gray-200") +
-          '">';
-        html +=
-          '<div class="flex justify-between"><div><p class="font-medium text-gray-900">' +
-          d.name +
-          '</p><p class="text-sm text-gray-500">' +
-          d.nameEn +
-          "</p></div>";
-        html +=
-          '<div class="text-right"><p class="font-medium text-orange-600">¥' +
-          d.price +
-          "</p>" +
-          (d.recommended ? '<span class="text-xs text-green-600">✨ 推荐</span>' : "") +
-          "</div></div>";
-        if (d.allergens && d.allergens.length) {
-          html +=
-            '<div class="mt-2 flex gap-1">' +
-            d.allergens
-              .map(
-                (a) =>
-                  '<span class="text-xs px-2 py-0.5 bg-red-100 text-red-700 rounded">⚠️ 含' +
-                  a +
-                  "</span>",
-              )
-              .join("") +
-            "</div>";
+        html += `<div class="p-3 rounded-lg border ${d.recommended ? "border-green-200 bg-green-50" : "border-gray-200"}">`;
+        html += `<div class="flex justify-between"><div><p class="font-medium text-gray-900">${d.name}</p><p class="text-sm text-gray-500">${d.nameEn}</p></div>`;
+        html += `<div class="text-right"><p class="font-medium text-orange-600">¥${d.price}</p>${d.recommended ? '<span class="text-xs text-green-600">✨ 推荐</span>' : ""}</div></div>`;
+        if (d.allergens?.length) {
+          html += `<div class="mt-2 flex gap-1">${d.allergens
+            .map(
+              (a) =>
+                `<span class="text-xs px-2 py-0.5 bg-red-100 text-red-700 rounded">⚠️ 含${a}</span>`,
+            )
+            .join("")}</div>`;
         }
         html += "</div>";
       });

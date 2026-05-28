@@ -4,7 +4,7 @@
  * Supports review list, add review, star ratings
  */
 
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export interface Review {
   id: string;
@@ -197,9 +197,7 @@ export function StarRating({
           );
         })}
       </div>
-      {showValue && (
-        <span className={`${sizeClass} text-gray-600 ml-1`}>{rating.toFixed(1)}</span>
-      )}
+      {showValue && <span className={`${sizeClass} text-gray-600 ml-1`}>{rating.toFixed(1)}</span>}
     </div>
   );
 }

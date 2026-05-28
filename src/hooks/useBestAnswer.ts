@@ -6,7 +6,7 @@
 import { useCallback, useEffect, useState } from "react";
 
 const STORAGE_KEY = "chinaconnect-best-answers";
-const POINTS_BEST_ANSWER = 50;
+const _POINTS_BEST_ANSWER = 50;
 
 interface BestAnswerRecord {
   postId: string;
@@ -64,16 +64,13 @@ export function useBestAnswer(): UseBestAnswerReturn {
     [state],
   );
 
-  const markBest = useCallback(
-    (postId: string, answerId: string) => {
-      setState((prev) => {
-        const next = { ...prev, [postId]: answerId };
-        saveBestAnswers(next);
-        return next;
-      });
-    },
-    [],
-  );
+  const markBest = useCallback((postId: string, answerId: string) => {
+    setState((prev) => {
+      const next = { ...prev, [postId]: answerId };
+      saveBestAnswers(next);
+      return next;
+    });
+  }, []);
 
   const unmarkBest = useCallback((postId: string) => {
     setState((prev) => {
@@ -91,13 +88,11 @@ export function useBestAnswer(): UseBestAnswerReturn {
     [state],
   );
 
-  const allRecords: BestAnswerRecord[] = Object.entries(state).map(
-    ([postId, answerId]) => ({
-      postId,
-      answerId,
-      markedAt: Date.now(), // timestamp not stored in v1
-    }),
-  );
+  const allRecords: BestAnswerRecord[] = Object.entries(state).map(([postId, answerId]) => ({
+    postId,
+    answerId,
+    markedAt: Date.now(), // timestamp not stored in v1
+  }));
 
   return {
     getBestAnswer,

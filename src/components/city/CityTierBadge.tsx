@@ -75,9 +75,7 @@ export function CityTierBadge({
           </svg>
         )}
       </span>
-      {showLabel && (
-        <span className="hidden sm:inline">{config.labelZh}</span>
-      )}
+      {showLabel && <span className="hidden sm:inline">{config.labelZh}</span>}
     </span>
   );
 }

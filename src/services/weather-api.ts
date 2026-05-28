@@ -58,9 +58,39 @@ const MOCK_WEATHER: Record<string, WeatherData> = {
       sunset: 1694346000,
     },
     forecast: [
-      { date: "2026-05-27", dayName: "Wed", tempMin: 18, tempMax: 25, main: "Clouds", description: "overcast clouds", icon: "04d", humidity: 50, pop: 0.1 },
-      { date: "2026-05-28", dayName: "Thu", tempMin: 19, tempMax: 27, main: "Clear", description: "clear sky", icon: "01d", humidity: 40, pop: 0 },
-      { date: "2026-05-29", dayName: "Fri", tempMin: 20, tempMax: 28, main: "Clear", description: "clear sky", icon: "01d", humidity: 38, pop: 0 },
+      {
+        date: "2026-05-27",
+        dayName: "Wed",
+        tempMin: 18,
+        tempMax: 25,
+        main: "Clouds",
+        description: "overcast clouds",
+        icon: "04d",
+        humidity: 50,
+        pop: 0.1,
+      },
+      {
+        date: "2026-05-28",
+        dayName: "Thu",
+        tempMin: 19,
+        tempMax: 27,
+        main: "Clear",
+        description: "clear sky",
+        icon: "01d",
+        humidity: 40,
+        pop: 0,
+      },
+      {
+        date: "2026-05-29",
+        dayName: "Fri",
+        tempMin: 20,
+        tempMax: 28,
+        main: "Clear",
+        description: "clear sky",
+        icon: "01d",
+        humidity: 38,
+        pop: 0,
+      },
     ],
     source: "mock",
     fetchedAt: Date.now(),
@@ -81,14 +111,44 @@ const MOCK_WEATHER: Record<string, WeatherData> = {
       sunset: 1694334000,
     },
     forecast: [
-      { date: "2026-05-27", dayName: "Wed", tempMin: 22, tempMax: 26, main: "Rain", description: "light rain", icon: "10d", humidity: 80, pop: 0.8 },
-      { date: "2026-05-28", dayName: "Thu", tempMin: 23, tempMax: 28, main: "Clouds", description: "scattered clouds", icon: "03d", humidity: 65, pop: 0.3 },
-      { date: "2026-05-29", dayName: "Fri", tempMin: 24, tempMax: 30, main: "Clear", description: "clear sky", icon: "01d", humidity: 55, pop: 0 },
+      {
+        date: "2026-05-27",
+        dayName: "Wed",
+        tempMin: 22,
+        tempMax: 26,
+        main: "Rain",
+        description: "light rain",
+        icon: "10d",
+        humidity: 80,
+        pop: 0.8,
+      },
+      {
+        date: "2026-05-28",
+        dayName: "Thu",
+        tempMin: 23,
+        tempMax: 28,
+        main: "Clouds",
+        description: "scattered clouds",
+        icon: "03d",
+        humidity: 65,
+        pop: 0.3,
+      },
+      {
+        date: "2026-05-29",
+        dayName: "Fri",
+        tempMin: 24,
+        tempMax: 30,
+        main: "Clear",
+        description: "clear sky",
+        icon: "01d",
+        humidity: 55,
+        pop: 0,
+      },
     ],
     source: "mock",
     fetchedAt: Date.now(),
   },
-  "default": {
+  default: {
     city: "Unknown",
     current: {
       temp: 20,
@@ -104,9 +164,39 @@ const MOCK_WEATHER: Record<string, WeatherData> = {
       sunset: 1694346000,
     },
     forecast: [
-      { date: "2026-05-27", dayName: "Wed", tempMin: 17, tempMax: 23, main: "Clear", description: "clear sky", icon: "01d", humidity: 55, pop: 0 },
-      { date: "2026-05-28", dayName: "Thu", tempMin: 18, tempMax: 24, main: "Clouds", description: "few clouds", icon: "02d", humidity: 50, pop: 0.1 },
-      { date: "2026-05-29", dayName: "Fri", tempMin: 19, tempMax: 25, main: "Clear", description: "clear sky", icon: "01d", humidity: 45, pop: 0 },
+      {
+        date: "2026-05-27",
+        dayName: "Wed",
+        tempMin: 17,
+        tempMax: 23,
+        main: "Clear",
+        description: "clear sky",
+        icon: "01d",
+        humidity: 55,
+        pop: 0,
+      },
+      {
+        date: "2026-05-28",
+        dayName: "Thu",
+        tempMin: 18,
+        tempMax: 24,
+        main: "Clouds",
+        description: "few clouds",
+        icon: "02d",
+        humidity: 50,
+        pop: 0.1,
+      },
+      {
+        date: "2026-05-29",
+        dayName: "Fri",
+        tempMin: 19,
+        tempMax: 25,
+        main: "Clear",
+        description: "clear sky",
+        icon: "01d",
+        humidity: 45,
+        pop: 0,
+      },
     ],
     source: "mock",
     fetchedAt: Date.now(),
@@ -115,7 +205,10 @@ const MOCK_WEATHER: Record<string, WeatherData> = {
 
 // City name normalization
 function normalizeCity(city: string): string {
-  return city.toLowerCase().replace(/\s+/g, "_").replace(/[^a-z0-9_]/g, "");
+  return city
+    .toLowerCase()
+    .replace(/\s+/g, "_")
+    .replace(/[^a-z0-9_]/g, "");
 }
 
 const WEATHER_CACHE_KEY = "chinaconnect-weather";
@@ -156,11 +249,7 @@ function setCached(city: string, data: WeatherData): void {
 /**
  * Fetch weather for a city. Uses OpenMeteo (free, no API key) or OpenWeatherMap (requires key).
  */
-export async function fetchWeather(
-  city: string,
-  lat?: number,
-  lng?: number,
-): Promise<WeatherData> {
+export async function fetchWeather(city: string, lat?: number, lng?: number): Promise<WeatherData> {
   // Try cache first
   const normalizedCity = normalizeCity(city);
   const cached = getCached(normalizedCity);
@@ -444,7 +533,7 @@ function buildWeatherData(
 
 /** Convert Celsius to Fahrenheit */
 export function toFahrenheit(celsius: number): number {
-  return Math.round(celsius * 9 / 5 + 32);
+  return Math.round((celsius * 9) / 5 + 32);
 }
 
 /** OpenWeatherMap icon URL */
@@ -455,15 +544,24 @@ export function getWeatherIconUrl(icon: string, size = 2): string {
 /** Get a text label for a weather icon code */
 export function getWeatherEmoji(icon: string): string {
   const map: Record<string, string> = {
-    "01d": "☀️", "01n": "🌙",
-    "02d": "⛅", "02n": "☁️",
-    "03d": "☁️", "03n": "☁️",
-    "04d": "☁️", "04n": "☁️",
-    "09d": "🌧️", "09n": "🌧️",
-    "10d": "🌦️", "10n": "🌧️",
-    "11d": "⛈️", "11n": "⛈️",
-    "13d": "🌨️", "13n": "🌨️",
-    "50d": "🌫️", "50n": "🌫️",
+    "01d": "☀️",
+    "01n": "🌙",
+    "02d": "⛅",
+    "02n": "☁️",
+    "03d": "☁️",
+    "03n": "☁️",
+    "04d": "☁️",
+    "04n": "☁️",
+    "09d": "🌧️",
+    "09n": "🌧️",
+    "10d": "🌦️",
+    "10n": "🌧️",
+    "11d": "⛈️",
+    "11n": "⛈️",
+    "13d": "🌨️",
+    "13n": "🌨️",
+    "50d": "🌫️",
+    "50n": "🌫️",
   };
   return map[icon] || "🌡️";
 }

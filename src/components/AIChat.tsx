@@ -514,7 +514,7 @@ export const AIChat: React.FC<AIChatProps> = ({
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [conversationId, setConversationId] = useState<string | null>(null);
-  const [conversations, setConversations] = useState<Conversation[]>([]);
+  const [conversations, _setConversations] = useState<Conversation[]>([]);
   const [workflowProgress, setWorkflowProgress] = useState<WorkflowProgress | null>(null);
   const [showConversationList, setShowConversationList] = useState(false);
 
@@ -574,7 +574,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           throw new Error("Dify client not initialized");
         }
 
-        let fullResponse = "";
+        let _fullResponse = "";
 
         await clientRef.current.planTravel(
           {
@@ -583,7 +583,7 @@ export const AIChat: React.FC<AIChatProps> = ({
             conversationId: conversationId || undefined,
           },
           (text, isComplete) => {
-            fullResponse = text;
+            _fullResponse = text;
             setMessages((prev) =>
               prev.map((msg) =>
                 msg.id === assistantMessageId

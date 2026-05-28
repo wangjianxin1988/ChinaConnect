@@ -1,5 +1,5 @@
-import React from "react";
 import { useInfiniteScroll } from "@/hooks/useInfiniteScroll";
+import React from "react";
 
 interface InfiniteListProps<T> {
   items: T[];
@@ -34,16 +34,11 @@ export function InfiniteList<T>({
 
   return (
     <>
-      <div className={className}>
-        {visibleItems.map((item, index) => renderItem(item, index))}
-      </div>
+      <div className={className}>{visibleItems.map((item, index) => renderItem(item, index))}</div>
 
       {/* Sentinel element for intersection observer */}
       {hasMore && (
-        <div
-          ref={sentinelRef}
-          className="py-8 flex flex-col items-center"
-        >
+        <div ref={sentinelRef} className="py-8 flex flex-col items-center">
           {loading ? (
             <>
               <div className="flex items-center gap-3 text-gray-500">

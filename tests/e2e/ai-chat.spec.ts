@@ -1,13 +1,11 @@
 // E2E tests for AI Chat page
 // Coverage: Page load, chat interface, quick prompts, interactions, error handling
 
-import { expect, test, Page } from "@playwright/test";
+import { type Page, expect, test } from "@playwright/test";
 
 async function waitForHydration(page: Page) {
   await page.waitForTimeout(2000);
-  await page
-    .waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 })
-    .catch(() => {});
+  await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 }).catch(() => {});
 }
 
 function createConsoleErrorFilter() {
@@ -39,10 +37,9 @@ test.describe("AI Chat Page - Core Load", () => {
     await page.goto("/ai", { timeout: 30000 });
     await waitForHydration(page);
 
-    await expect(page).toHaveTitle(
-      /AI.*Travel.*Assistant|Chinese|i.*chat|ChinaConnect/i,
-      { timeout: 15000 },
-    );
+    await expect(page).toHaveTitle(/AI.*Travel.*Assistant|Chinese|i.*chat|ChinaConnect/i, {
+      timeout: 15000,
+    });
   });
 
   test("has main heading", async ({ page }) => {
@@ -204,7 +201,7 @@ test.describe("Quick Prompts / Suggestions", () => {
     const btnCount = await buttons.count();
 
     if (btnCount > 0) {
-      const firstBtnText = await buttons.first().innerText();
+      const _firstBtnText = await buttons.first().innerText();
       await buttons.first().click();
       await page.waitForTimeout(500);
 
@@ -396,7 +393,9 @@ test.describe("AI Chat - Cross-Page Context", () => {
     await page.goto("/", { timeout: 30000 });
     await waitForHydration(page);
 
-    const aiLink = page.locator('a[href="/ai"], a[href*="/ai"]:not([href="/"]), button:has-text("AI")');
+    const aiLink = page.locator(
+      'a[href="/ai"], a[href*="/ai"]:not([href="/"]), button:has-text("AI")',
+    );
     const hasLink = (await aiLink.count()) > 0;
     expect(hasLink).toBeTruthy();
   });
@@ -405,7 +404,7 @@ test.describe("AI Chat - Cross-Page Context", () => {
     await page.goto("/city/beijing", { timeout: 30000 });
     await waitForHydration(page);
 
-    const aiLink = page.locator('a[href="/ai"]');
+    const _aiLink = page.locator('a[href="/ai"]');
     // AI might be in global nav
     const hasGlobalAI = (await page.locator("text=/AI|assistant|chat/i").count()) > 0;
     expect(hasGlobalAI).toBeTruthy();

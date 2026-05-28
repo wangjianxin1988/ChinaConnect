@@ -25,19 +25,19 @@ export const POINTS = {
 
 // Helper functions
 export function calculateLevel(points: number): UserLevel {
-  if (points >= LEVEL_THRESHOLDS["传奇"]) return "传奇";
-  if (points >= LEVEL_THRESHOLDS["中国通"]) return "中国通";
-  if (points >= LEVEL_THRESHOLDS["旅行家"]) return "旅行家";
-  if (points >= LEVEL_THRESHOLDS["探索者"]) return "探索者";
+  if (points >= LEVEL_THRESHOLDS.传奇) return "传奇";
+  if (points >= LEVEL_THRESHOLDS.中国通) return "中国通";
+  if (points >= LEVEL_THRESHOLDS.旅行家) return "旅行家";
+  if (points >= LEVEL_THRESHOLDS.探索者) return "探索者";
   return "小白";
 }
 
 export function getPointsToNextLevel(points: number): number | null {
-  if (points >= LEVEL_THRESHOLDS["传奇"]) return null;
-  if (points >= LEVEL_THRESHOLDS["中国通"]) return LEVEL_THRESHOLDS["传奇"] - points;
-  if (points >= LEVEL_THRESHOLDS["旅行家"]) return LEVEL_THRESHOLDS["中国通"] - points;
-  if (points >= LEVEL_THRESHOLDS["探索者"]) return LEVEL_THRESHOLDS["旅行家"] - points;
-  return LEVEL_THRESHOLDS["探索者"] - points;
+  if (points >= LEVEL_THRESHOLDS.传奇) return null;
+  if (points >= LEVEL_THRESHOLDS.中国通) return LEVEL_THRESHOLDS.传奇 - points;
+  if (points >= LEVEL_THRESHOLDS.旅行家) return LEVEL_THRESHOLDS.中国通 - points;
+  if (points >= LEVEL_THRESHOLDS.探索者) return LEVEL_THRESHOLDS.旅行家 - points;
+  return LEVEL_THRESHOLDS.探索者 - points;
 }
 
 // Mock User Profile type

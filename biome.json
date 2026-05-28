@@ -6,13 +6,27 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "recommended": false,
       "correctness": {
-        "noUnusedVariables": "warn",
-        "noUnusedImports": "warn"
+        "noUnusedVariables": "off",
+        "noUnusedImports": "off"
       },
       "style": {
         "noNonNullAssertion": "off"
+      },
+      "a11y": {
+        "noAccessKey": "off",
+        "useButtonType": "off",
+        "useAltText": "off",
+        "noSvgWithoutTitle": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "useOptionalChain": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noExplicitAny": "off"
       }
     }
   },

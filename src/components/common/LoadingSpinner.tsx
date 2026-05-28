@@ -1,13 +1,13 @@
 // Loading Spinner Component
-import './LoadingSpinner.css';
+import "./LoadingSpinner.css";
 
 interface Props {
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
   text?: string;
   fullPage?: boolean;
 }
 
-export function LoadingSpinner({ size = 'md', text, fullPage = false }: Props) {
+export function LoadingSpinner({ size = "md", text, fullPage = false }: Props) {
   if (fullPage) {
     return (
       <div class="loading-fullpage">

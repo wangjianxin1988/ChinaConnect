@@ -6,9 +6,9 @@ import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
 import CulturalWarningTrigger from "@/components/Guide/CulturalWarningTrigger";
 import InstallPrompt from "@/components/pwa/InstallPrompt";
 import OfflineIndicator from "@/components/pwa/OfflineIndicator";
-import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
-import { SUPPORTED_LANGUAGES, translations, type Language } from "@/i18n/translations";
+import { type Language, SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
 import { generateHreflangUrlsWithDefault } from "@/lib/hreflang";
+import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
 
 interface Props {
   title: string;

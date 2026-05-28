@@ -196,7 +196,7 @@ export default function DishAssistant({ cityName = "上海" }: DishAssistantProp
         setUploadedImage(event.target?.result as string);
         setIsScanning(true);
         setTimeout(() => {
-          const menu = CITY_MENUS[cityName] || CITY_MENUS["上海"];
+          const menu = CITY_MENUS[cityName] || CITY_MENUS.上海;
           setTranslatedDishes(menu as TranslatedDish[]);
           setIsScanning(false);
           setShowResult(true);

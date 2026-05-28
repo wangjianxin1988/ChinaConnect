@@ -48,10 +48,10 @@ interface ReActStep {
 // Intent Recognition
 // ============================================
 
-function recognizeIntent(userMessage: string, language: string): IntentResult {
+function recognizeIntent(userMessage: string, _language: string): IntentResult {
   const msg = userMessage.toLowerCase();
   const msgZh = userMessage;
-  const isZh = /[一-龥]/.test(msgZh);
+  const _isZh = /[一-龥]/.test(msgZh);
 
   // Emergency keywords
   const emergencyKeywords = [
@@ -565,8 +565,6 @@ function selectTools(intent: IntentResult, params: ExtractedParams): ToolName[] 
       tools.push("VisaCheck");
       tools.push("TransportSearch");
       break;
-
-    case "casual_chat":
     default:
       tools.push("WebSearch");
       tools.push("LocalExpert");
@@ -743,7 +741,7 @@ export class ReActEngine {
         `City "${params.destination}" not found in database - will use general knowledge`,
       );
     } else {
-      context.push(`No destination specified - will ask user for clarification`);
+      context.push("No destination specified - will ask user for clarification");
     }
 
     if (steps.length > 0) {
@@ -1099,7 +1097,7 @@ export class ReActEngine {
     intent: IntentResult,
     params: ExtractedParams,
     city: City | null,
-    reactSteps: ReActStep[],
+    _reactSteps: ReActStep[],
     language: string,
   ): string {
     switch (intent.intent) {
@@ -1119,7 +1117,7 @@ export class ReActEngine {
   }
 
   private formatTravelPlanning(
-    intent: IntentResult,
+    _intent: IntentResult,
     params: ExtractedParams,
     city: City | null,
     language: string,
@@ -1183,7 +1181,7 @@ export class ReActEngine {
       const theme = themes[d % themes.length];
       const attr = city.attractions?.[d % (city.attractions?.length || 1)];
 
-      response += `### ${language === "zh" ? "第" + day + "天" : "Day " + day}: ${theme}\n\n`;
+      response += `### ${language === "zh" ? `第${day}天` : `Day ${day}`}: ${theme}\n\n`;
 
       if (attr) {
         response += `**${language === "zh" ? "上午" : "Morning"}:** ${attr.nameEn || attr.name} ${language === "zh" ? "参观" : ""}\n`;
@@ -1256,14 +1254,14 @@ export class ReActEngine {
     const attractions = Math.round(total * 0.25);
 
     response += `| ${language === "zh" ? "项目" : "Category"} | ${language === "zh" ? "金额 (CNY)" : "Amount (CNY)"} |\n`;
-    response += `|------|------|\n`;
+    response += "|------|------|\n";
     response += `| ${language === "zh" ? "总计" : "Total"} | ${total} |\n`;
     response += `| ${language === "zh" ? "餐饮" : "Food"} | ${food} |\n`;
     response += `| ${language === "zh" ? "住宿" : "Accommodation"} | ${hotel} |\n`;
     response += `| ${language === "zh" ? "交通" : "Transport"} | ${transport} |\n`;
     response += `| ${language === "zh" ? "门票" : "Attractions"} | ${attractions} |\n\n`;
 
-    response += `---\n\n`;
+    response += "---\n\n";
     response += `*${
       language === "zh"
         ? "此行程由ChinaConnect AI生成，仅供参考。请以当地实际信息为准。"
@@ -1274,7 +1272,7 @@ export class ReActEngine {
   }
 
   private formatFoodRecommendation(
-    intent: IntentResult,
+    _intent: IntentResult,
     params: ExtractedParams,
     city: City | null,
     language: string,
@@ -1308,9 +1306,9 @@ export class ReActEngine {
   }
 
   private formatLifeConsultation(
-    intent: IntentResult,
-    params: ExtractedParams,
-    city: City | null,
+    _intent: IntentResult,
+    _params: ExtractedParams,
+    _city: City | null,
     language: string,
   ): string {
     let response = "";
@@ -1336,7 +1334,7 @@ export class ReActEngine {
     response += `- **${language === "zh" ? "本地SIM" : "Local SIM"}:** ${language === "zh" ? "可在机场或便利店购买" : "Available at airports and convenience stores"}\n`;
     response += `- **${language === "zh" ? "推荐运营商" : "Recommended carriers"}:** China Mobile, China Unicom, Telecom\n\n`;
 
-    response += `---\n\n`;
+    response += "---\n\n";
     response +=
       language === "zh"
         ? "如果您有具体问题，欢迎继续问我！"
@@ -1346,8 +1344,8 @@ export class ReActEngine {
   }
 
   private formatEmergencyHelp(
-    intent: IntentResult,
-    params: ExtractedParams,
+    _intent: IntentResult,
+    _params: ExtractedParams,
     language: string,
   ): string {
     let response = "";
@@ -1369,7 +1367,7 @@ export class ReActEngine {
         ? "1. 立即向当地警方报案，获取报警记录\n2. 联系您的大使馆或领事馆补办旅行证件\n3. 准备好身份证明材料（照片、身份证复印件等）\n4. 如需紧急回国，可申请旅行证\n\n"
         : "1. Report to local police immediately and get a police report\n2. Contact your embassy or consulate for document replacement\n3. Prepare identification materials (photos, ID copies, etc.)\n4. Emergency travel permits available if needed\n\n";
 
-    response += `---\n\n`;
+    response += "---\n\n";
     response +=
       language === "zh"
         ? "如果情况紧急，请立即拨打当地报警电话！"
@@ -1379,8 +1377,8 @@ export class ReActEngine {
   }
 
   private formatBusinessHelp(
-    intent: IntentResult,
-    params: ExtractedParams,
+    _intent: IntentResult,
+    _params: ExtractedParams,
     language: string,
   ): string {
     let response = "";
@@ -1420,7 +1418,7 @@ export class ReActEngine {
     return response;
   }
 
-  private formatCasualChat(intent: IntentResult, language: string): string {
+  private formatCasualChat(_intent: IntentResult, language: string): string {
     const responses =
       language === "zh"
         ? [

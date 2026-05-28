@@ -105,7 +105,7 @@ export function CheckInMap({
       <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg p-3 shadow-md">
         <div className="text-xs font-medium mb-2">Check-in Locations</div>
         <div className="flex items-center gap-2 text-xs">
-          <span className="w-3 h-3 bg-blue-500 rounded-full"></span>
+          <span className="w-3 h-3 bg-blue-500 rounded-full" />
           <span className="text-gray-600 dark:text-gray-300">User check-in</span>
         </div>
       </div>

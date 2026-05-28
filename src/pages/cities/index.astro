@@ -1,8 +1,8 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import { citiesMeta, cities } from "@/data/cities/index";
-import { getLangFromUrl } from "@/i18n/utils";
 import { CitiesListClient } from "@/components/city/CitiesListClient";
+import { cities, citiesMeta } from "@/data/cities/index";
+import { getLangFromUrl } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const lang = getLangFromUrl(Astro.url);

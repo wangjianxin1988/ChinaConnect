@@ -23,7 +23,7 @@ const STATIC_ASSETS = [
 ];
 
 // City pages for offline access
-const CITY_PAGES = [
+const _CITY_PAGES = [
   '/city/beijing',
   '/city/shanghai',
   '/city/guangzhou',
@@ -47,7 +47,7 @@ const CACHE_EXPIRY = 7 * 24 * 60 * 60 * 1000;
 
 // Install event - precache static assets
 self.addEventListener('install', (event) => {
-  console.log('[SW] Installing Service Worker v' + CACHE_VERSION);
+  console.log(`[SW] Installing Service Worker v${CACHE_VERSION}`);
 
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => {
@@ -162,7 +162,7 @@ function isImage(url) {
 
 function isCriticalRoute(url) {
   return CRITICAL_ROUTES.some(route =>
-    url.pathname === route || url.pathname.startsWith(route + '/')
+    url.pathname === route || url.pathname.startsWith(`${route}/`)
   );
 }
 
@@ -173,7 +173,7 @@ async function cacheFirstStrategy(request, cacheName) {
   if (cachedResponse) {
     // Check if cache is still valid
     const cachedDate = cachedResponse.headers.get('sw-cache-date');
-    if (cachedDate && Date.now() - parseInt(cachedDate) < CACHE_EXPIRY) {
+    if (cachedDate && Date.now() - Number.parseInt(cachedDate) < CACHE_EXPIRY) {
       return cachedResponse;
     }
   }
@@ -291,7 +291,7 @@ async function networkFirstWithCacheFallback(request, cacheName) {
 }
 
 // Broadcast cache update to all clients
-async function broadcastCacheUpdate(cacheName) {
+async function broadcastCacheUpdate(_cacheName) {
   try {
     const clients = await self.clients.matchAll();
     const status = await getCacheStatus();
@@ -301,7 +301,7 @@ async function broadcastCacheUpdate(cacheName) {
         ...status
       });
     });
-  } catch (e) {
+  } catch (_e) {
     // Ignore broadcast errors
   }
 }

@@ -358,13 +358,7 @@ export const CITY_WEATHER: CityWeather[] = [
       "Mosquito repellent for summer",
       "Light jacket for air-conditioned spaces",
     ],
-    packedListCn: [
-      "轻便透气衣物",
-      "雨具-雨水频繁",
-      "舒适步行鞋",
-      "夏季防蚊液",
-      "空调房间需薄外套",
-    ],
+    packedListCn: ["轻便透气衣物", "雨具-雨水频繁", "舒适步行鞋", "夏季防蚊液", "空调房间需薄外套"],
     monthlyData: [
       {
         month: "January",
@@ -516,14 +510,7 @@ export const CITY_WEATHER: CityWeather[] = [
       "Light cardigan for AC",
       "Waterproof shoes",
     ],
-    packedListCn: [
-      "轻薄棉质衣物",
-      "雨具-必备",
-      "全年防晒霜",
-      "防蚊液",
-      "空调房需薄开衫",
-      "防水鞋",
-    ],
+    packedListCn: ["轻薄棉质衣物", "雨具-必备", "全年防晒霜", "防蚊液", "空调房需薄开衫", "防水鞋"],
     monthlyData: [
       {
         month: "January",
@@ -990,13 +977,7 @@ export const CITY_WEATHER: CityWeather[] = [
       "Sun protection",
       "Light layers",
     ],
-    packedListCn: [
-      "防水外套",
-      "速干衣物",
-      "涉水活动需防滑鞋",
-      "防晒用品",
-      "轻便层叠",
-    ],
+    packedListCn: ["防水外套", "速干衣物", "涉水活动需防滑鞋", "防晒用品", "轻便层叠"],
     monthlyData: [
       {
         month: "January",
@@ -1461,13 +1442,7 @@ export const CITY_WEATHER: CityWeather[] = [
       "Light jacket for evenings",
       "Sunscreen for summer",
     ],
-    packedListCn: [
-      "春秋温差大，需多层衣物",
-      "雨具",
-      "舒适步行鞋",
-      "夜晚轻便外套",
-      "夏季防晒",
-    ],
+    packedListCn: ["春秋温差大，需多层衣物", "雨具", "舒适步行鞋", "夜晚轻便外套", "夏季防晒"],
     monthlyData: [
       {
         month: "January",
@@ -1618,13 +1593,7 @@ export const CITY_WEATHER: CityWeather[] = [
       "Light jacket for evenings",
       "Sun protection for summer",
     ],
-    packedListCn: [
-      "春秋轻便衣物",
-      "雨具",
-      "舒适步行鞋",
-      "夜晚轻便外套",
-      "夏季防晒",
-    ],
+    packedListCn: ["春秋轻便衣物", "雨具", "舒适步行鞋", "夜晚轻便外套", "夏季防晒"],
     monthlyData: [
       {
         month: "January",
@@ -1925,28 +1894,32 @@ export const CITY_WEATHER: CityWeather[] = [
 export const REGIONAL_CLIMATE = [
   {
     region: "Northern China (Beijing, Xi'an)",
-    description: "Dry continental climate with four distinct seasons. Summers are hot and humid, winters are cold and dry.",
+    description:
+      "Dry continental climate with four distinct seasons. Summers are hot and humid, winters are cold and dry.",
     bestSeason: "Spring (Apr-May) and Autumn (Sep-Oct)",
     descriptionCn: "温带大陆性气候，四季分明。夏季炎热潮湿，冬季寒冷干燥。",
     bestSeasonCn: "春季（4-5月）和秋季（9-10月）",
   },
   {
     region: "Eastern China (Shanghai, Hangzhou, Nanjing, Suzhou)",
-    description: "Humid subtropical climate with long, hot summers and cold, damp winters. Plum rain season in June-July.",
+    description:
+      "Humid subtropical climate with long, hot summers and cold, damp winters. Plum rain season in June-July.",
     bestSeason: "Spring (Mar-May) and Autumn (Sep-Nov)",
     descriptionCn: "亚热带湿润气候，夏季漫长炎热，冬季寒冷潮湿。6-7月梅雨季。",
     bestSeasonCn: "春季（3-5月）和秋季（9-11月）",
   },
   {
     region: "Southern China (Guangzhou, Shenzhen, Guilin)",
-    description: "Hot and humid year-round with distinct rainy season (Apr-Sep). Typhoons possible Jul-Sep.",
+    description:
+      "Hot and humid year-round with distinct rainy season (Apr-Sep). Typhoons possible Jul-Sep.",
     bestSeason: "Autumn-Winter (Oct-Mar)",
     descriptionCn: "全年炎热潮湿，雨季明显（4-9月）。7-9月可能有台风。",
     bestSeasonCn: "秋冬季节（10月-次年3月）",
   },
   {
     region: "Southwestern China (Chengdu, Chongqing, Dali)",
-    description: "Varied climates from subtropical (Chengdu/Chongqing) to highland (Dali). Generally mild year-round.",
+    description:
+      "Varied climates from subtropical (Chengdu/Chongqing) to highland (Dali). Generally mild year-round.",
     bestSeason: "Spring (Mar-May) and Autumn (Sep-Nov)",
     descriptionCn: "从亚热带（成都/重庆）到高原（大理）气候多样。全年温和。",
     bestSeasonCn: "春季（3-5月）和秋季（9-11月）",

@@ -1,6 +1,3 @@
-// City data types - mirrors the JSON structure in src/data/cities/*.json
-
-import type { City } from "./index";
 import { S_TIER_CITIES } from "./tier-data";
 
 // City tier classification

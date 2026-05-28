@@ -60,13 +60,13 @@ test.describe("Robots.txt", () => {
   });
 
   test("robots.txt allows AI crawlers", async ({ page }) => {
-    const response = await page.goto("/robots.txt");
+    const _response = await page.goto("/robots.txt");
     const content = await page.content();
     expect(content).toContain("GPTBot");
   });
 
   test("robots.txt declares sitemap", async ({ page }) => {
-    const response = await page.goto("/robots.txt");
+    const _response = await page.goto("/robots.txt");
     const content = await page.content();
     expect(content).toContain("Sitemap:");
   });

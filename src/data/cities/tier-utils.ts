@@ -1,9 +1,9 @@
+import { TIER_CONFIG } from "./tier-data";
 /**
  * City Tier Display Helper
  * Provides consistent tier display logic across the application
  */
 import type { CityTier } from "./types";
-import { TIER_CONFIG } from "./tier-data";
 
 /**
  * Get tier display info for a given tier
@@ -27,10 +27,7 @@ export function getTierColorClasses(tier: CityTier) {
 /**
  * Get tier badge class names for a given tier and size
  */
-export function getTierBadgeClasses(
-  tier: CityTier,
-  size: "sm" | "md" | "lg" = "md"
-) {
+export function getTierBadgeClasses(tier: CityTier, size: "sm" | "md" | "lg" = "md") {
   const config = TIER_CONFIG[tier];
   const sizeClasses = {
     sm: "px-2 py-0.5 text-xs",

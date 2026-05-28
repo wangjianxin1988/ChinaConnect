@@ -3,11 +3,19 @@
  * Centralized state management for points, levels, badges, and streaks
  */
 
+import { calculateLevel, getPointsToNextLevel } from "@/types/database";
+import type {
+  EarnedBadge,
+  GamificationState,
+  LeaderboardEntry,
+  PointsAction,
+  PointsHistory,
+  PointsReferenceType,
+  UserLevel,
+} from "@/types/user";
+import { POINTS_CONFIG } from "@/types/user";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { EarnedBadge, LeaderboardEntry, PointsHistory, PointsAction, PointsReferenceType, GamificationState, UserLevel } from "@/types/user";
-import { POINTS_CONFIG } from "@/types/user";
-import { calculateLevel, getPointsToNextLevel, LEVEL_THRESHOLDS } from "@/types/database";
 
 // ============================================
 // Store Types
@@ -183,7 +191,9 @@ const initialState: GamificationState & { isDemoMode: boolean } = {
   badges: [],
   recentPoints: [],
   isLoading: false,
-  isDemoMode: !import.meta.env.PUBLIC_SUPABASE_URL || import.meta.env.PUBLIC_SUPABASE_URL === "your-project-url",
+  isDemoMode:
+    !import.meta.env.PUBLIC_SUPABASE_URL ||
+    import.meta.env.PUBLIC_SUPABASE_URL === "your-project-url",
 };
 
 // ============================================
@@ -356,10 +366,11 @@ export const useGamificationStore = create<GamificationStore>()(
 
 export const usePoints = () => useGamificationStore((state) => state.points);
 export const useLevel = () => useGamificationStore((state) => state.level);
-export const useStreak = () => useGamificationStore((state) => ({
-  current: state.currentStreak,
-  longest: state.longestStreak,
-}));
+export const useStreak = () =>
+  useGamificationStore((state) => ({
+    current: state.currentStreak,
+    longest: state.longestStreak,
+  }));
 export const useBadges = () => useGamificationStore((state) => state.badges);
 export const useRecentPoints = () => useGamificationStore((state) => state.recentPoints);
 export const useLeaderboard = () => useGamificationStore((state) => state.leaderboard);
@@ -412,29 +423,17 @@ export const gamificationActions = {
 
   // Post action
   performPost(): void {
-    useGamificationStore.getState().addPoints(
-      "post",
-      "Created a new post",
-      "发布了新帖子",
-    );
+    useGamificationStore.getState().addPoints("post", "Created a new post", "发布了新帖子");
   },
 
   // Like received action
   performLikeReceived(): void {
-    useGamificationStore.getState().addPoints(
-      "like_received",
-      "Received a like",
-      "收到一个赞",
-    );
+    useGamificationStore.getState().addPoints("like_received", "Received a like", "收到一个赞");
   },
 
   // Daily login
   performDailyLogin(): void {
-    useGamificationStore.getState().addPoints(
-      "daily_login",
-      "Daily login bonus",
-      "每日登录奖励",
-    );
+    useGamificationStore.getState().addPoints("daily_login", "Daily login bonus", "每日登录奖励");
   },
 };
 

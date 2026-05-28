@@ -3,17 +3,9 @@
  * Supabase Auth integration with magic link, OAuth, and Demo Mode support
  */
 
-import { createClient, type AuthError as SupabaseAuthError } from "@supabase/supabase-js";
-import type {
-  AuthProvider,
-  AuthState,
-  SignInOptions,
-  SignUpData,
-  User,
-  UserProfile,
-} from "@/types/user";
-import { supabase } from "./supabase";
 import type { Database, UserLevel } from "@/types/database";
+import type { AuthProvider, AuthState, SignUpData, User, UserProfile } from "@/types/user";
+import { type AuthError as SupabaseAuthError, createClient } from "@supabase/supabase-js";
 
 // ============================================
 // Demo Mode Configuration
@@ -104,13 +96,17 @@ function isDemoSessionActive(): boolean {
 const authUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const authKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
-export const authClient = createClient<Database>(authUrl || "https://placeholder.supabase.co", authKey || "placeholder", {
-  auth: {
-    autoRefreshToken: !DEMO_MODE,
-    persistSession: !DEMO_MODE,
-    detectSessionInUrl: !DEMO_MODE,
+export const authClient = createClient<Database>(
+  authUrl || "https://placeholder.supabase.co",
+  authKey || "placeholder",
+  {
+    auth: {
+      autoRefreshToken: !DEMO_MODE,
+      persistSession: !DEMO_MODE,
+      detectSessionInUrl: !DEMO_MODE,
+    },
   },
-});
+);
 
 // ============================================
 // Auth Response Types
@@ -167,10 +163,7 @@ export async function getCurrentUser(): Promise<User | null> {
 /**
  * Sign in with email and password
  */
-export async function signInWithEmail(
-  email: string,
-  password: string,
-): Promise<AuthResponse> {
+export async function signInWithEmail(email: string, password: string): Promise<AuthResponse> {
   // Demo mode - check demo users
   if (DEMO_MODE) {
     const demoAccount = DEMO_USERS[email.toLowerCase()];
@@ -376,9 +369,7 @@ export async function signOut(): Promise<{ error: SupabaseAuthError | null }> {
 /**
  * Reset password request
  */
-export async function resetPassword(
-  email: string,
-): Promise<{ error: SupabaseAuthError | null }> {
+export async function resetPassword(email: string): Promise<{ error: SupabaseAuthError | null }> {
   // Demo mode - silently succeed
   if (DEMO_MODE) {
     return { error: null };
@@ -409,7 +400,9 @@ export async function updatePassword(
  * Update user profile
  */
 export async function updateProfile(
-  updates: Partial<Pick<UserProfile, "display_name" | "avatar_url" | "bio" | "nationality" | "native_language">>,
+  updates: Partial<
+    Pick<UserProfile, "display_name" | "avatar_url" | "bio" | "nationality" | "native_language">
+  >,
 ): Promise<ProfileResponse> {
   // Demo mode - update local profile
   if (DEMO_MODE && isDemoSessionActive()) {
@@ -515,7 +508,7 @@ export async function upsertProfile(
  * Subscribe to auth state changes
  */
 export function onAuthStateChange(callback: (authState: AuthState) => void) {
-  return authClient.auth.onAuthStateChange(async (event, session) => {
+  return authClient.auth.onAuthStateChange(async (_event, session) => {
     const user = session?.user
       ? {
           id: session.user.id,

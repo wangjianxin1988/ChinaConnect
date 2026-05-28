@@ -126,12 +126,12 @@ export function CommunityHub() {
 
   // Get display name helper
   const getDisplayName = (u: Profile | MockProfile | null) => {
-    return u?.display_name || u?.["display_name"] || "User";
+    return u?.display_name || u?.display_name || "User";
   };
 
   // Get avatar helper
   const getAvatar = (u: Profile | MockProfile | null) => {
-    return u?.avatar_url || u?.["avatar_url"] || null;
+    return u?.avatar_url || u?.avatar_url || null;
   };
 
   // Get points helper

@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { LevelBadge } from "@/components/user/LevelBadge";
+import { addImageToCache, addImageUrl, getCachedImages } from "@/services/upload-service";
 import { supabase } from "@/supabase/config";
 import type { Database } from "@/types/database";
 import { POINTS } from "@/types/database";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./Dialog";
-import { addImageUrl, getCachedImages, addImageToCache, removeImageFromCache } from "@/services/upload-service";
 
 type Post = Database["public"]["Tables"]["posts"]["Row"];
 

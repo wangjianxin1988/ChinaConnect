@@ -64,7 +64,7 @@ export function CheckInForm({ userId, onCheckInSuccess, className = "" }: CheckI
       const location = await getCurrentLocation();
       setFormData((prev) => ({ ...prev, location }));
       setError(null);
-    } catch (err) {
+    } catch (_err) {
       setError("Could not get current location. Please enter manually.");
     }
   };

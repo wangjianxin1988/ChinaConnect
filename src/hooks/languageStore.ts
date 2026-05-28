@@ -1,39 +1,39 @@
+import type { Language } from "@/i18n/translations";
 // Language store - persists language preference to localStorage
-import { writable } from 'svelte/store';
-import type { Language } from '@/i18n/translations';
+import { writable } from "svelte/store";
 
-const STORAGE_KEY = 'chinaconnect_language';
+const STORAGE_KEY = "chinaconnect_language";
 
 function getInitialLanguage(): Language {
-  if (typeof window === 'undefined') return 'en';
+  if (typeof window === "undefined") return "en";
   const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === 'en' || stored === 'zh') return stored;
+  if (stored === "en" || stored === "zh") return stored;
   // Could also detect from browser preference
-  return 'en';
+  return "en";
 }
 
 function createLanguageStore() {
-  const { subscribe, set, update } = writable<Language>('en');
+  const { subscribe, set, update } = writable<Language>("en");
 
   return {
     subscribe,
     set: (lang: Language) => {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         localStorage.setItem(STORAGE_KEY, lang);
       }
       set(lang);
     },
     toggle: () => {
-      update(current => {
-        const next = current === 'en' ? 'zh' : 'en';
-        if (typeof window !== 'undefined') {
+      update((current) => {
+        const next = current === "en" ? "zh" : "en";
+        if (typeof window !== "undefined") {
           localStorage.setItem(STORAGE_KEY, next);
         }
         return next;
       });
     },
     init: () => {
-      if (typeof window !== 'undefined') {
+      if (typeof window !== "undefined") {
         set(getInitialLanguage());
       }
     },

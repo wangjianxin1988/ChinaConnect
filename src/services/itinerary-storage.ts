@@ -1,11 +1,3 @@
-/**
- * Itinerary Storage Service
- * Handles saving/loading itineraries to/from localStorage
- * Provides itinerary history list and deletion functionality
- */
-
-import type { SavedItinerary } from "@/lib/ai/types";
-
 const STORAGE_KEY = "chinaconnect-itineraries";
 const MAX_ITINERARIES = 50;
 
@@ -160,10 +152,7 @@ export function getShareLink(shareCode: string): string {
 /**
  * Export itinerary as text or JSON
  */
-export function exportItinerary(
-  id: string,
-  format: "text" | "json",
-): string {
+export function exportItinerary(id: string, format: "text" | "json"): string {
   const item = getItinerary(id);
   if (!item) return "";
 
@@ -185,7 +174,9 @@ export function exportItinerary(
   }
 
   if (item.summary?.estimatedTotalCost) {
-    lines.push(`## Estimated Cost: ${item.summary.estimatedTotalCost} ${item.summary.currency || "CNY"}`);
+    lines.push(
+      `## Estimated Cost: ${item.summary.estimatedTotalCost} ${item.summary.currency || "CNY"}`,
+    );
     lines.push("");
   }
 
@@ -213,10 +204,7 @@ export function createTempItinerary(data: Partial<ItineraryStorageItem>): Itiner
 /**
  * Convert temporary itinerary to permanent
  */
-export function promoteTempItinerary(
-  tempId: string,
-  name: string,
-): ItineraryStorageItem | null {
+export function promoteTempItinerary(tempId: string, _name: string): ItineraryStorageItem | null {
   const items = loadAll();
   const idx = items.findIndex((item) => item.id === tempId);
   if (idx >= 0) {
