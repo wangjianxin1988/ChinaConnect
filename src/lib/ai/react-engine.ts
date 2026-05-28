@@ -375,17 +375,17 @@ function extractLocation(text: string): string | undefined {
 }
 
 function extractDays(text: string): number | undefined {
-  // Chinese patterns
-  const zhMatch = text.match(/(\d+)\s*天[的]?/);
+  // Chinese patterns: "3天", "5天的行程"
+  const zhMatch = text.match(/(\d+)\s*天/);
   if (zhMatch) return Number.parseInt(zhMatch[1]);
 
-  // English patterns
+  // Hyphenated patterns: "3-day", "5-day trip", "a 3-day tour"
+  const hyphenMatch = text.match(/(\d+)[-]day/i);
+  if (hyphenMatch) return Number.parseInt(hyphenMatch[1]);
+
+  // Standard patterns: "3 days", "for 5 days", "stay 4 days"
   const enMatch = text.match(/(\d+)\s*(day|days)/i);
   if (enMatch) return Number.parseInt(enMatch[1]);
-
-  // X days
-  const xDaysMatch = text.match(/(?:for|stay|visit|spend)\s*(\d+)\s*(?:day|days)/i);
-  if (xDaysMatch) return Number.parseInt(xDaysMatch[1]);
 
   return undefined;
 }
@@ -624,7 +624,14 @@ export class ReActEngine {
 
     const tools = selectTools(intentResult, params);
     const toolCalls: ToolCall[] = [];
-    const reactSteps = await this.runReactLoop(intentResult, params, matchedCity, tools, toolCalls);
+    let reactSteps: ReActStep[] = [];
+
+    try {
+      reactSteps = await this.runReactLoop(intentResult, params, matchedCity, tools, toolCalls);
+    } catch (error) {
+      console.warn("ReAct loop error, proceeding with available data:", error);
+      // Continue with whatever data we have
+    }
 
     // Step 7: Format response
     progressCallback?.(this.makeProgress(7, { steps: reactSteps.length }));
@@ -1100,20 +1107,56 @@ export class ReActEngine {
     _reactSteps: ReActStep[],
     language: string,
   ): string {
+    let response = "";
+
     switch (intent.intent) {
       case "travel_planning":
-        return this.formatTravelPlanning(intent, params, city, language);
+        response = this.formatTravelPlanning(intent, params, city, language);
+        break;
       case "food_recommendation":
-        return this.formatFoodRecommendation(intent, params, city, language);
+        response = this.formatFoodRecommendation(intent, params, city, language);
+        break;
       case "life_consultation":
-        return this.formatLifeConsultation(intent, params, city, language);
+        response = this.formatLifeConsultation(intent, params, city, language);
+        break;
       case "emergency_help":
-        return this.formatEmergencyHelp(intent, params, language);
+        response = this.formatEmergencyHelp(intent, params, language);
+        break;
       case "business_arrangement":
-        return this.formatBusinessHelp(intent, params, language);
+        response = this.formatBusinessHelp(intent, params, language);
+        break;
       default:
-        return this.formatCasualChat(intent, language);
+        response = this.formatCasualChat(intent, language);
     }
+
+    // Inject weather data if available from tool results
+    const weatherData = this.toolResults.get("WeatherSearch");
+    if (weatherData && typeof weatherData === "object" && "forecast" in weatherData) {
+      const forecast = (weatherData as { forecast: Array<{ date: string; weather: { condition: string; temperature_c: { min: number; max: number } } }> }).forecast;
+      if (forecast && forecast.length > 0) {
+        response += `\n### ${language === "zh" ? "天气预报" : "Weather Forecast"}\n`;
+        forecast.slice(0, 3).forEach((day) => {
+          const emoji = day.weather.condition === "sunny" ? "☀️" : day.weather.condition === "partly_cloudy" ? "⛅" : day.weather.condition === "rainy" ? "🌧️" : "🌤️";
+          response += `- ${day.date}: ${emoji} ${day.weather.temperature_c.min}°C - ${day.weather.temperature_c.max}°C\n`;
+        });
+        response += "\n";
+      }
+    }
+
+    // Inject hotel data if available
+    const hotelData = this.toolResults.get("HotelSearch");
+    if (hotelData && typeof hotelData === "object" && "hotels" in hotelData) {
+      const hotels = (hotelData as { hotels: Array<{ name: string; price_range: string; rating: number }> }).hotels;
+      if (hotels && hotels.length > 0) {
+        response += `### ${language === "zh" ? "推荐住宿" : "Recommended Hotels"}\n`;
+        hotels.slice(0, 3).forEach((h) => {
+          response += `- **${h.name}** | ${h.price_range} | ⭐ ${h.rating}\n`;
+        });
+        response += "\n";
+      }
+    }
+
+    return response;
   }
 
   private formatTravelPlanning(
@@ -1122,7 +1165,7 @@ export class ReActEngine {
     city: City | null,
     language: string,
   ): string {
-    const days = params.days || 5;
+    const days = params.days || 3;
     const budget = params.budgetLevel;
     const dest = params.destination || city?.nameEn || city?.name || "your destination";
 
@@ -1198,7 +1241,7 @@ export class ReActEngine {
       if (restaurant) {
         response += `${language === "zh" ? "**午餐**" : "**Lunch:**"} ${restaurant.nameEn || restaurant.name}\n`;
         response += `- ${language === "zh" ? "推荐" : "Specialties"}: ${restaurant.dishHighlights?.slice(0, 3).join(", ")}\n`;
-        response += `- ${language === "zh" ? "人均" : "Avg. price"}: ${restaurant.avgPrice} CNY\n\n`;
+        response += `- ${language === "zh" ? "人均" : "Avg. price"}: ${restaurant.avgPrice} ¥\n\n`;
       }
 
       // Afternoon
@@ -1253,7 +1296,7 @@ export class ReActEngine {
     const transport = Math.round(total * 0.15);
     const attractions = Math.round(total * 0.25);
 
-    response += `| ${language === "zh" ? "项目" : "Category"} | ${language === "zh" ? "金额 (CNY)" : "Amount (CNY)"} |\n`;
+    response += `| ${language === "zh" ? "项目" : "Category"} | ${language === "zh" ? "金额 (¥)" : "Amount (¥)"} |\n`;
     response += "|------|------|\n";
     response += `| ${language === "zh" ? "总计" : "Total"} | ${total} |\n`;
     response += `| ${language === "zh" ? "餐饮" : "Food"} | ${food} |\n`;
@@ -1295,7 +1338,7 @@ export class ReActEngine {
     restaurants.forEach((r) => {
       const stars = r.star ? "⭐".repeat(r.star) : r.diamond ? "💎".repeat(r.diamond) : "";
       response += `### ${r.nameEn || r.name} ${stars}\n`;
-      response += `**${r.cuisine}** | ${language === "zh" ? "人均" : "Avg price"}: ${r.avgPrice} CNY\n`;
+      response += `**${r.cuisine}** | ${language === "zh" ? "人均" : "Avg price"}: ${r.avgPrice} ¥\n`;
       response += `${r.description || ""}\n`;
       response += `${language === "zh" ? "推荐菜" : "Highlights"}: ${r.dishHighlights?.slice(0, 4).join(", ")}\n`;
       if (r.hours) response += `${language === "zh" ? "营业时间" : "Hours"}: ${r.hours}\n`;

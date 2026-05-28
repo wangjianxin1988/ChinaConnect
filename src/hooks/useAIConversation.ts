@@ -98,9 +98,22 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
 
     // Initialize MiniMax client
     const apiKey = import.meta.env.MINIMAX_API_KEY;
+    const baseUrl = import.meta.env.MINIMAX_BASE_URL || "https://api.minimax.chat/v1";
     if (apiKey) {
-      miniMaxClientRef.current = new MiniMaxClient(apiKey);
-      setIsMiniMaxAvailable(true);
+      miniMaxClientRef.current = new MiniMaxClient(apiKey, baseUrl);
+      // Verify API connectivity with a lightweight health check
+      fetch(`${baseUrl}/models`, {
+        method: "GET",
+        headers: { Authorization: `Bearer ${apiKey}` },
+        signal: AbortSignal.timeout(8000),
+      })
+        .then((res) => {
+          setIsMiniMaxAvailable(res.ok || res.status === 401 || res.status === 403);
+        })
+        .catch(() => {
+          // If fetch fails but key exists, assume available (network may be fine for chat)
+          setIsMiniMaxAvailable(true);
+        });
     }
 
     // Load saved data
@@ -177,7 +190,8 @@ Remember:
 - Always respond in the user's language
 - Provide specific restaurant names, prices, and locations
 - Include emergency numbers relevant to the city
-- Suggest timing and estimated costs in CNY`;
+- Suggest timing and estimated costs using ¥ symbol (never CNY)
+- CRITICAL: If user specifies a number of days, generate EXACTLY that many days`;
 
       const conversationMessages: MiniMaxMessage[] = [
         { role: "system", content: systemPrompt },
@@ -259,14 +273,28 @@ Remember:
 
             responseText =
               fullResponse || messages.find((m) => m.id === assistantMsg.id)?.content || "";
+
+            // If still empty, try to get from the streaming message
+            if (!responseText) {
+              setMessages((prev) => {
+                const msg = prev.find((m) => m.id === assistantMsg.id);
+                if (msg?.content) responseText = msg.content;
+                return prev;
+              });
+            }
           } catch (miniMaxError) {
             console.warn("MiniMax failed, falling back to ReAct:", miniMaxError);
             // Fall back to ReAct engine
-            const engine = engineRef.current!;
-            const result = await engine.execute(content, language, (progress) => {
-              setWorkflowProgress(progress);
-            });
-            responseText = result.response;
+            try {
+              const engine = engineRef.current!;
+              const result = await engine.execute(content, language, (progress) => {
+                setWorkflowProgress(progress);
+              });
+              responseText = result.response;
+            } catch (reactError) {
+              console.warn("ReAct engine also failed:", reactError);
+              responseText = "";
+            }
           }
         } else {
           // Use ReAct engine directly

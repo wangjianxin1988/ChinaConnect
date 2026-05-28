@@ -32,12 +32,14 @@ interface TypingDotsProps {
 // ============================================
 
 const TypingDots: React.FC<TypingDotsProps> = ({ color = "bg-gray-400" }) => (
-  <div className="flex gap-1.5 py-2">
+  <div className="flex items-center gap-1.5 py-2 px-1">
     {[0, 1, 2].map((i) => (
       <div
         key={i}
-        className={`w-2 h-2 ${color} rounded-full animate-bounce`}
-        style={{ animationDelay: `${i * 0.15}s`, animationDuration: "0.6s" }}
+        className={`w-2 h-2 ${color} rounded-full`}
+        style={{
+          animation: `typingBounce 1.4s ease-in-out ${i * 0.2}s infinite`,
+        }}
       />
     ))}
   </div>
@@ -88,57 +90,135 @@ const MessageBubble: React.FC<{
   const isUser = message.role === "user";
   const isStreaming = message.isStreaming;
 
+  // Escape HTML to prevent XSS
+  const escapeHtml = (text: string): string => {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  };
+
+  // Parse inline markdown (bold, italic, code, links)
+  const parseInline = (text: string): string => {
+    let result = escapeHtml(text);
+    // Inline code
+    result = result.replace(/`([^`]+)`/g, '<code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm text-red-600 font-mono">$1</code>');
+    // Bold
+    result = result.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+    // Italic
+    result = result.replace(/\*(.*?)\*/g, "<em>$1</em>");
+    // Links
+    result = result.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:underline" target="_blank" rel="noopener">$1</a>');
+    return result;
+  };
+
   // Parse markdown-ish content
   const formatContent = (text: string) => {
     if (!text) return null;
 
     const lines = text.split("\n");
     const elements: React.ReactNode[] = [];
+    let tableRows: string[][] = [];
+    let inTable = false;
+
+    const flushTable = () => {
+      if (tableRows.length > 0) {
+        const headerRow = tableRows[0];
+        const dataRows = tableRows.filter((_, idx) => {
+          // Skip separator row (|---|---|)
+          if (idx === 1 && tableRows[idx].every((cell) => /^[-:]+$/.test(cell.trim()))) return false;
+          return idx > 0;
+        });
+
+        elements.push(
+          <div key={`table-${elements.length}`} className="overflow-x-auto my-3">
+            <table className="min-w-full border border-gray-200 rounded-lg overflow-hidden text-sm">
+              <thead>
+                <tr className="bg-gray-50">
+                  {headerRow.map((cell, ci) => (
+                    <th key={ci} className="px-3 py-2 text-left font-semibold text-gray-700 border-b border-gray-200" dangerouslySetInnerHTML={{ __html: parseInline(cell) }} />
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {dataRows.map((row, ri) => (
+                  <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    {row.map((cell, ci) => (
+                      <td key={ci} className="px-3 py-2 text-gray-600 border-b border-gray-100" dangerouslySetInnerHTML={{ __html: parseInline(cell) }} />
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+        tableRows = [];
+      }
+      inTable = false;
+    };
 
     lines.forEach((line, i) => {
+      // Table detection
+      if (line.includes("|") && line.trim().startsWith("|")) {
+        const cells = line
+          .split("|")
+          .filter((c) => c.trim() !== "")
+          .map((c) => c.trim());
+
+        // Skip separator rows
+        if (cells.every((c) => /^[-:]+$/.test(c))) {
+          inTable = true;
+          tableRows.push(cells);
+          return;
+        }
+
+        inTable = true;
+        tableRows.push(cells);
+        return;
+      } else if (inTable) {
+        flushTable();
+      }
+
       if (!line.trim()) {
-        elements.push(<br key={i} />);
+        elements.push(<div key={i} className="h-2" />);
         return;
       }
 
       // Headers
       if (line.startsWith("# ")) {
         elements.push(
-          <h1 key={i} className="text-xl font-bold mb-2 text-gray-900">
-            {line.slice(2)}
-          </h1>,
+          <h1 key={i} className="text-xl font-bold mb-2 text-gray-900" dangerouslySetInnerHTML={{ __html: parseInline(line.slice(2)) }} />,
         );
         return;
       }
       if (line.startsWith("## ")) {
         elements.push(
-          <h2 key={i} className="text-lg font-semibold mt-3 mb-1.5 text-gray-800">
-            {line.slice(3)}
-          </h2>,
+          <h2 key={i} className="text-lg font-semibold mt-4 mb-2 text-gray-800 border-b border-gray-100 pb-1" dangerouslySetInnerHTML={{ __html: parseInline(line.slice(3)) }} />,
         );
         return;
       }
       if (line.startsWith("### ")) {
         elements.push(
-          <h3 key={i} className="text-base font-semibold mt-2 mb-1 text-gray-700">
-            {line.slice(4)}
-          </h3>,
+          <h3 key={i} className="text-base font-semibold mt-3 mb-1 text-gray-700" dangerouslySetInnerHTML={{ __html: parseInline(line.slice(4)) }} />,
         );
         return;
       }
 
-      // Bold
-      let processed = line.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-      // Italic
-      processed = processed.replace(/\*(.*?)\*/g, "<em>$1</em>");
+      // Horizontal rule
+      if (/^[-*_]{3,}$/.test(line.trim())) {
+        elements.push(<hr key={i} className="my-3 border-gray-200" />);
+        return;
+      }
 
       // Unordered list
       if (line.startsWith("- ") || line.startsWith("* ")) {
         elements.push(
           <li
             key={i}
-            className="ml-4 text-gray-600"
-            dangerouslySetInnerHTML={{ __html: processed.slice(2) }}
+            className="ml-5 text-gray-600 list-disc leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: parseInline(line.slice(2)) }}
           />,
         );
         return;
@@ -149,16 +229,10 @@ const MessageBubble: React.FC<{
         elements.push(
           <li
             key={i}
-            className="ml-4 text-gray-600 list-decimal"
-            dangerouslySetInnerHTML={{ __html: processed.replace(/^\d+\.\s*/, "") }}
+            className="ml-5 text-gray-600 list-decimal leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: parseInline(line.replace(/^\d+\.\s*/, "")) }}
           />,
         );
-        return;
-      }
-
-      // Table (simple detection)
-      if (line.includes("|") && line.trim().startsWith("|")) {
-        // Skip table rendering for now
         return;
       }
 
@@ -166,19 +240,22 @@ const MessageBubble: React.FC<{
       elements.push(
         <p
           key={i}
-          className="text-gray-600 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: processed }}
+          className="text-gray-700 leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: parseInline(line) }}
         />,
       );
     });
+
+    // Flush any remaining table
+    if (inTable) flushTable();
 
     return elements;
   };
 
   return (
-    <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
+    <div className={`flex ${isUser ? "justify-end" : "justify-start"} message-enter`}>
       <div
-        className={`max-w-[85%] rounded-2xl px-4 py-3 ${
+        className={`max-w-[90%] sm:max-w-[85%] rounded-2xl px-4 py-3 ${
           isUser
             ? "bg-blue-600 text-white rounded-br-sm"
             : "bg-white border border-gray-200 text-gray-800 rounded-bl-sm shadow-sm"
@@ -420,7 +497,7 @@ export const AIChat: React.FC<AIChatProps> = ({
     <div className="flex h-full bg-gray-50">
       {/* Sidebar - History or Itinerary */}
       {showItinerary && (
-        <div className="w-80 border-r border-gray-200 bg-white flex flex-col overflow-hidden">
+        <div className="chat-sidebar w-80 border-r border-gray-200 bg-white flex flex-col overflow-hidden hidden md:flex">
           {/* Saved Itineraries */}
           <div className="flex-1 overflow-y-auto">
             <div className="p-4 border-b border-gray-100">
@@ -682,13 +759,20 @@ export const AIChat: React.FC<AIChatProps> = ({
         </div>
       )}
 
-      {/* Bounce animation style */}
+      {/* Animation styles */}
       <style>{`
-        @keyframes bounce {
-          0%, 80%, 100% { transform: translateY(0); }
-          40% { transform: translateY(-4px); }
+        @keyframes typingBounce {
+          0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+          30% { transform: translateY(-6px); opacity: 1; }
         }
-        .animate-bounce { animation: bounce 0.6s ease-in-out infinite; }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(8px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .message-enter { animation: fadeIn 0.3s ease-out; }
+        @media (max-width: 640px) {
+          .chat-sidebar { display: none; }
+        }
       `}</style>
     </div>
   );

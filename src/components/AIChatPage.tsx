@@ -54,10 +54,6 @@ export default function AIChatPage() {
                 </svg>
                 {showItineraryPanel ? "Hide Panel" : "Show Panel"}
               </button>
-              <div className="flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1.5 rounded-full text-sm font-medium">
-                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                AI Powered
-              </div>
             </div>
           </div>
         </div>

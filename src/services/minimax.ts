@@ -166,9 +166,14 @@ Always provide:
 - Day-by-day schedule with timing
 - Restaurant recommendations (Michelin/Black Pearl/local)
 - Transport between locations
-- Estimated costs in CNY
+- Estimated costs in Chinese Yuan (¥) — ALWAYS use the ¥ symbol instead of "CNY"
 - Cultural tips specific to the destination
 - Emergency numbers relevant to the city
+
+CRITICAL RULES:
+- If the user specifies a number of days (e.g., "3 days", "5-day"), you MUST generate exactly that many days. NEVER add extra days.
+- Always use ¥ symbol for prices, not "CNY" or "RMB". Example: ¥150 not 150 CNY
+- Use ¥ for all price mentions throughout your response
 
 Respond in the user's language (English/Chinese).`;
 
