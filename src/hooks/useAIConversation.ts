@@ -215,12 +215,22 @@ Remember:
         { role: "user", content: userMessage },
       ];
 
+      // Add throttle to streaming updates for visible effect
+      let lastUpdateTime = 0;
+      const UPDATE_INTERVAL = 50; // Update every 50ms
+
       await client.chatStream(
         conversationMessages,
         (text, isComplete) => {
           if (!isComplete) {
-            onChunk(text);
+            const now = Date.now();
+            if (now - lastUpdateTime >= UPDATE_INTERVAL) {
+              onChunk(text);
+              lastUpdateTime = now;
+            }
           } else {
+            // Always send final update
+            onChunk(text);
             onComplete();
           }
         },
