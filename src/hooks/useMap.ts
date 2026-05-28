@@ -61,7 +61,10 @@ export function useMap(options: UseMapOptions = {}): UseMapReturn {
 
     const detectCountry = async () => {
       try {
-        const response = await fetch(IP_API_URL, { signal: AbortSignal.timeout(5000) });
+        var fetchSignal = (typeof AbortSignal.timeout === 'function')
+          ? AbortSignal.timeout(5000)
+          : undefined;
+        const response = await fetch(IP_API_URL, fetchSignal ? { signal: fetchSignal } : {});
         if (!response.ok) throw new Error("Failed to fetch IP info");
         const data = await response.json();
         const countryCode = data.country_code || data.country;

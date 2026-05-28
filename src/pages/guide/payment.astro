@@ -1,5 +1,6 @@
 ---
 import PaymentGuideClient from "@/components/Guide/PaymentGuideClient";
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
@@ -95,5 +96,16 @@ const paymentSchemas = [
     </div>
 
     <PaymentGuideClient client:load />
+
+    <!-- Payment App Recommendations -->
+    <section class="mt-12">
+      <EmbeddedAppRecommendation
+        client:visible
+        categories={["payment"]}
+        title="Payment Apps You Need"
+        subtitle="Download and set up these apps before arriving in China"
+        essentialOnly={true}
+      />
+    </section>
   </main>
 </BaseLayout>

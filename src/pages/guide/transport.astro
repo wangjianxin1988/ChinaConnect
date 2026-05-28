@@ -1,5 +1,6 @@
 ---
 import TransportGuideClient from "@/components/Guide/TransportGuideClient";
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
@@ -73,5 +74,15 @@ const transportSchemas = [
     </div>
 
     <TransportGuideClient client:load />
+
+    <!-- Transport App Recommendations -->
+    <section class="mt-12">
+      <EmbeddedAppRecommendation
+        client:visible
+        categories={["transport", "maps"]}
+        title="Transport & Navigation Apps"
+        subtitle="Essential apps for getting around China"
+      />
+    </section>
   </main>
 </BaseLayout>

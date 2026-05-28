@@ -75,8 +75,12 @@ export function useGeoLocation(): UseGeoLocationReturn {
     }
 
     try {
+      // Use AbortSignal.timeout if available, otherwise fall back to AbortController
+      var fetchSignal = (typeof AbortSignal.timeout === 'function')
+        ? AbortSignal.timeout(5000)
+        : abortRef.current.signal;
       const response = await fetch(IP_API_URL, {
-        signal: abortRef.current.signal,
+        signal: fetchSignal,
       });
 
       if (!response.ok) throw new Error(`HTTP ${response.status}`);

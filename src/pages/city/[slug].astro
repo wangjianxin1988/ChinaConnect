@@ -1,6 +1,6 @@
 ---
 import { BudgetHotelSection } from "@/components/accommodation/BudgetHotelSection";
-import { AppRecommendationsSection } from "@/components/apps/AppRecommendationsSection";
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
 import { AttractionCard } from "@/components/city/AttractionCard";
 import { AttractionsSection } from "@/components/city/AttractionsSection";
@@ -872,7 +872,12 @@ const mapMarkers = [
           </h2>
           <p class="section-subtitle">Download these apps before arriving in China</p>
 
-          <AppRecommendationsSection client:visible />
+          <EmbeddedAppRecommendation
+            client:visible
+            categories={["payment", "transport", "food", "social", "language", "maps", "connectivity"]}
+            title={`Essential Apps for ${city.nameEn}`}
+            subtitle="Download these apps before arriving in China"
+          />
         </section>
 
         <!-- Culture Section (Lazy loaded with infinite scroll) -->

@@ -3,8 +3,6 @@
  * Suggests useful apps for foreigners in China with English/multilingual support
  */
 
-import type { AppCategory } from "@/types/app";
-
 export interface AppRecommendation {
   id: string;
   name: string;
@@ -106,7 +104,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
       "Book taxis, private cars, and rides with English interface. Supports international credit cards and English destination input.",
     icon: "🚗",
     category: "transport",
-    appStoreUrl: "https://apps.apple.com/app/didi-passenger/id fate in 1138808114",
+    appStoreUrl: "https://apps.apple.com/app/didi-passenger/id1138808114",
     androidUrl: "https://www.didiglobal.com/",
     hasEnglish: true,
     isEssential: true,
@@ -169,6 +167,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     icon: "🍜",
     category: "food",
     appStoreUrl: "https://apps.apple.com/app/meituan-takeaway-food-ordering/id938124123",
+    androidUrl: "https://www.meituan.com/",
     hasEnglish: true,
     isEssential: true,
   },
@@ -183,6 +182,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     icon: "🍔",
     category: "food",
     appStoreUrl: "https://apps.apple.com/app/ele-me-food-delivery/id1071811712",
+    androidUrl: "https://www.ele.me/",
     hasEnglish: false,
     isEssential: false,
   },
@@ -244,6 +244,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     icon: "📕",
     category: "social",
     appStoreUrl: "https://apps.apple.com/app/xiaohongshu/id741292507",
+    androidUrl: "https://www.xiaohongshu.com/",
     hasEnglish: true,
     isEssential: true,
   },
@@ -258,6 +259,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     icon: "🏨",
     category: "travel",
     appStoreUrl: "https://apps.apple.com/app/tripadvisor-hotels-flights/id284876795",
+    androidUrl: "https://play.google.com/store/apps/details?id=com.tripadvisor.tripadvisor",
     hasEnglish: true,
     isEssential: true,
   },
@@ -272,6 +274,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     icon: "📧",
     category: "utilities",
     appStoreUrl: "https://apps.apple.com/app/163-mail/id413948029",
+    androidUrl: "https://mail.163.com/",
     hasEnglish: false,
     isEssential: false,
   },
@@ -302,6 +305,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     icon: "🚇",
     category: "transport",
     appStoreUrl: "https://apps.apple.com/app/metro-now-中国城市地铁/id1220546414",
+    androidUrl: "https://www.pgsoft.com/",
     hasEnglish: false,
     isEssential: false,
   },
@@ -317,6 +321,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
     icon: "🍽️",
     category: "food",
     appStoreUrl: "https://apps.apple.com/app/dianping/id423433029",
+    androidUrl: "https://www.dianping.com/",
     hasEnglish: true,
     isEssential: true,
   },
@@ -393,6 +398,10 @@ export function getAppsByCategory(category: AppCategory): AppRecommendation[] {
 
 export function getEssentialApps(): AppRecommendation[] {
   return APP_RECOMMENDATIONS.filter((app) => app.isEssential);
+}
+
+export function getAppsByCategories(categories: AppCategory[]): AppRecommendation[] {
+  return APP_RECOMMENDATIONS.filter((app) => categories.includes(app.category));
 }
 
 export function getEnglishFriendlyApps(): AppRecommendation[] {

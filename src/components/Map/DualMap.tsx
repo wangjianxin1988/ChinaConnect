@@ -59,6 +59,7 @@ export function DualMap({
   const [currentLayer, setCurrentLayer] = useState<MapLayer>(defaultLayer);
   const [isClient, setIsClient] = useState(false);
   const [geoDetectedProvider, setGeoDetectedProvider] = useState<"google" | "amap" | null>(null);
+  const [loadingTimedOut, setLoadingTimedOut] = useState(false);
 
   // Apply geo-based provider override after detection
   useEffect(() => {
@@ -67,8 +68,16 @@ export function DualMap({
     }
   }, [isDetectingGeo, isChina]);
 
-  // Show loading state while detecting both geo and location
-  const isMapLoading = isDetectingLocation || isDetectingGeo;
+  // Ensure geo detection doesn't block the map indefinitely
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoadingTimedOut(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Show loading state while detecting both geo and location, but cap at 3 seconds
+  const isMapLoading = (isDetectingLocation || isDetectingGeo) && !loadingTimedOut;
 
   // Ensure we only render Leaflet on client side
   // (Leaflet requires DOM access)

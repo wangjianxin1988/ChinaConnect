@@ -207,7 +207,8 @@ const homeSchemas = [
               index === 8 ? 'from-cyan-500 to-blue-600' :
               index === 9 ? 'from-indigo-500 to-purple-600' :
               'from-emerald-500 to-teal-600'
-            } ${index === 0 ? 'h-80 lg:h-full min-h-[320px]' : 'h-48'} flex items-center justify-center`}>
+            } ${index === 0 ? 'h-80 lg:h-full min-h-[320px]' : 'h-48'} flex items-center justify-center bg-cover bg-center`}
+              style={city.coverImage ? `background-image: url('${city.coverImage}')` : undefined}>
               <span class="text-white/30 text-9xl font-bold">{city.name[0]}</span>
             </div>
 
@@ -348,7 +349,7 @@ const homeSchemas = [
         <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Recommended for You</h2>
         <p class="text-gray-600">Based on popular destinations</p>
       </div>
-      <div id="recommended-grid" class="grid md:grid-cols-3 gap-6">
+      <div id="recommended-grid" class="grid md:grid-cols-3 gap-6" data-cities={JSON.stringify(citiesMeta.map(c => ({ slug: c.slug, name: c.name, nameZh: c.nameZh, description: c.description, coverImage: c.coverImage })))}>
       </div>
     </div>
   </section>
@@ -414,18 +415,32 @@ const homeSchemas = [
       // Recommended for You (popular cities from real data)
       var recGrid = document.getElementById('recommended-grid');
       if (recGrid) {
-        // Use first 3 cities from citiesMeta for recommendations
-        var recommended = [
-          { slug: 'shanghai', name: 'Shanghai', nameZh: '上海', desc: 'Modern metropolis where East meets West', color: 'from-purple-500 to-pink-600' },
-          { slug: 'chengdu', name: 'Chengdu', nameZh: '成都', desc: 'Giant pandas and spicy Sichuan cuisine', color: 'from-red-500 to-orange-600' },
-          { slug: 'xian', name: "Xi'an", nameZh: '西安', desc: 'Terracotta Warriors and Silk Road heritage', color: 'from-amber-500 to-orange-600' },
-        ];
+        // Get real city data from the data attribute
+        var allCities = [];
+        try {
+          allCities = JSON.parse(recGrid.getAttribute('data-cities') || '[]');
+        } catch(e) { allCities = []; }
+
+        // Pick 3 featured cities
+        var featuredSlugs = ['shanghai', 'chengdu', 'xian'];
+        var recommended = allCities.filter(function(c) {
+          return featuredSlugs.indexOf(c.slug) !== -1;
+        });
+        // If we couldn't find featured cities, fall back to first 3
+        if (recommended.length < 3) {
+          recommended = allCities.slice(0, 3);
+        }
+
         var lang2 = document.documentElement.lang || 'en';
         recommended.forEach(function(city) {
           var div = document.createElement('a');
           div.href = '/city/' + city.slug;
           div.className = 'group relative overflow-hidden rounded-2xl card-hover block';
-          div.innerHTML = '<div class="bg-gradient-to-br ' + city.color + ' h-48 flex items-center justify-center"><span class="text-white/30 text-8xl font-bold">' + (lang2 === 'zh' ? city.nameZh[0] : city.name[0]) + '</span></div><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-5"><h3 class="text-xl font-bold text-white mb-1 group-hover:text-blue-300 transition-colors">' + (lang2 === 'zh' ? city.nameZh : city.name) + '</h3><p class="text-gray-300 text-sm">' + city.desc + '</p></div>';
+          var bgStyle = city.coverImage
+            ? 'background-image: url(\'' + city.coverImage + '\'); background-size: cover; background-position: center;'
+            : '';
+          var displayName = lang2 === 'zh' ? city.nameZh : city.name;
+          div.innerHTML = '<div class="bg-gradient-to-br from-blue-500 to-purple-600 h-48 flex items-center justify-center" style="' + bgStyle + '"><span class="text-white/30 text-8xl font-bold">' + displayName[0] + '</span></div><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-5"><h3 class="text-xl font-bold text-white mb-1 group-hover:text-blue-300 transition-colors">' + displayName + '</h3><p class="text-gray-300 text-sm">' + city.description + '</p></div>';
           recGrid.appendChild(div);
         });
       }

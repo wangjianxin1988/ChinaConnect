@@ -1,6 +1,6 @@
 ---
 import "@/styles/global.css";
-import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
 import { cities, citiesMeta } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -176,8 +176,10 @@ const foodSchemas = [
         Download these apps to order food delivery and discover local restaurants with English menus
       </p>
 
-      <InlineAppPillsGroup
-        apps={getAppsForSection(["food"])}
+      <EmbeddedAppRecommendation
+        client:visible
+        categories={["food"]}
+        essentialOnly={true}
       />
 
       <div class="mt-6 bg-white rounded-xl p-4 border border-orange-100">

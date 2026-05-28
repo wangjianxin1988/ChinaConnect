@@ -1,5 +1,6 @@
 ---
 import CommunicationGuideClient from "@/components/Guide/CommunicationGuideClient";
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
@@ -44,5 +45,15 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     </div>
 
     <CommunicationGuideClient client:load />
+
+    <!-- Communication App Recommendations -->
+    <section class="mt-12">
+      <EmbeddedAppRecommendation
+        client:visible
+        categories={["social", "connectivity"]}
+        title="Stay Connected in China"
+        subtitle="Essential messaging and connectivity apps"
+      />
+    </section>
   </main>
 </BaseLayout>
