@@ -1,0 +1,247 @@
+---
+import { getCityBySlug, citySlugs } from "@/data/cities/index";
+import { getLangFromUrl } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return citySlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const city = getCityBySlug(slug as string);
+const lang = getLangFromUrl(Astro.url);
+
+if (!city) {
+  return Astro.redirect("/404");
+}
+
+const pageTitle = `${city.nameEn} Attractions - ChinaConnect`;
+const pageDescription = `Explore all ${city.attractions.length} attractions in ${city.nameEn} (${city.name}). Find historical sites, cultural landmarks, modern marvels, and more.`;
+
+// Get unique categories
+const categories = [...new Set(city.attractions.map((a: any) => a.category))].sort();
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  lang={lang}
+  meta={{
+    canonicalUrl: `https://chinaconnect.com/city/${city.slug}/attractions`,
+  }}
+>
+  <!-- Hero Section -->
+  <section class="relative h-64 md:h-80 bg-gradient-to-br from-purple-600 to-blue-600">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+    <div class="container-custom relative h-full flex flex-col justify-end pb-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-4">
+        <a href="/" class="text-purple-200 hover:text-white transition-colors">Home</a>
+        <span class="text-purple-300 mx-2">/</span>
+        <a href={`/city/${city.slug}`} class="text-purple-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <span class="text-purple-300 mx-2">/</span>
+        <span class="text-white">Attractions</span>
+      </nav>
+
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
+        🏛️ Attractions in {city.nameEn}
+      </h1>
+      <p class="text-xl text-purple-200">{city.name} · {city.attractions.length} places to explore</p>
+    </div>
+  </section>
+
+  <!-- Filters & Search -->
+  <section class="bg-white border-b sticky top-16 z-40">
+    <div class="container-custom py-4">
+      <div class="flex flex-col md:flex-row gap-4 items-start md:items-center">
+        <!-- Search -->
+        <div class="relative flex-1 w-full md:max-w-md">
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search attractions..."
+            class="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+          />
+        </div>
+
+        <!-- Category filters -->
+        <div class="flex flex-wrap gap-2">
+          <button
+            class="category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-purple-600 text-white"
+            data-category="all"
+          >
+            All ({city.attractions.length})
+          </button>
+          {categories.map((cat: string) => {
+            const count = city.attractions.filter((a: any) => a.category === cat).length;
+            const catLabels = {
+              historical: "🏛️ Historical",
+              cultural: "🎎 Cultural",
+              modern: "🏙️ Modern",
+              natural: "🌿 Natural",
+              entertainment: "🎢 Entertainment",
+            };
+            return (
+              <button
+                class="category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
+                data-category={cat}
+              >
+                {catLabels[cat] || cat} ({count})
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Attractions Grid -->
+  <section class="container-custom py-8">
+    <div id="attractions-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {city.attractions.map((attraction: any, index: number) => (
+        <div
+          class="attraction-card bg-white border border-gray-100 rounded-xl overflow-hidden card-hover"
+          data-category={attraction.category}
+          data-name={`${attraction.nameEn} ${attraction.name}`.toLowerCase()}
+        >
+          {/* Image */}
+          {attraction.image && (
+            <div class="relative h-48 overflow-hidden">
+              <img
+                src={attraction.image}
+                alt={attraction.nameEn}
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                loading="lazy"
+              />
+              <div class="absolute top-3 left-3">
+                <span class={`px-2.5 py-1 rounded-full text-xs font-semibold border ${
+                  attraction.category === 'historical' ? 'bg-amber-100 text-amber-700 border-amber-200' :
+                  attraction.category === 'cultural' ? 'bg-purple-100 text-purple-700 border-purple-200' :
+                  attraction.category === 'natural' ? 'bg-green-100 text-green-700 border-green-200' :
+                  attraction.category === 'modern' ? 'bg-blue-100 text-blue-700 border-blue-200' :
+                  attraction.category === 'entertainment' ? 'bg-pink-100 text-pink-700 border-pink-200' :
+                  'bg-gray-100 text-gray-700 border-gray-200'
+                }`}>
+                  {attraction.category.charAt(0).toUpperCase() + attraction.category.slice(1)}
+                </span>
+              </div>
+              {attraction.ticketPrice && attraction.ticketPrice !== 'Free' && (
+                <div class="absolute top-3 right-3 bg-black/70 text-white px-2.5 py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
+                  🎫 {attraction.ticketPrice}
+                </div>
+              )}
+              {attraction.ticketPrice === 'Free' && (
+                <div class="absolute top-3 right-3 bg-green-500 text-white px-2.5 py-1 rounded-full text-xs font-semibold">
+                  FREE
+                </div>
+              )}
+            </div>
+          )}
+
+          <div class="p-5">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">{attraction.nameEn}</h3>
+            <p class="text-gray-500 text-sm mb-3">{attraction.name}</p>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">{attraction.description}</p>
+
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <span class="text-gray-400">⏰</span>
+                <span>{attraction.openingHours}</span>
+              </div>
+              {attraction.address && (
+                <div class="flex items-center gap-2 text-sm text-gray-600">
+                  <span class="text-gray-400">📍</span>
+                  <span class="truncate">{attraction.address}</span>
+                </div>
+              )}
+            </div>
+
+            {attraction.coordinates && (
+              <a
+                href={`https://maps.google.com/maps?daddr=${attraction.coordinates.lat},${attraction.coordinates.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 text-sm text-purple-600 hover:text-purple-700 font-medium hover:underline"
+              >
+                Get Directions →
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- No results message -->
+    <div id="no-results" class="hidden text-center py-16">
+      <div class="text-6xl mb-4">🔍</div>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">No attractions found</h3>
+      <p class="text-gray-500">Try a different search term or category</p>
+    </div>
+  </section>
+
+  <script>
+    // Client-side search and filter
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('search-input') as HTMLInputElement;
+      const cards = document.querySelectorAll('.attraction-card');
+      const filterButtons = document.querySelectorAll('.category-filter');
+      const noResults = document.getElementById('no-results');
+
+      let activeCategory = 'all';
+
+      function filterCards() {
+        const query = searchInput.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const category = card.getAttribute('data-category');
+          const name = card.getAttribute('data-name') || '';
+
+          const matchesCategory = activeCategory === 'all' || category === activeCategory;
+          const matchesSearch = !query || name.includes(query);
+
+          if (matchesCategory && matchesSearch) {
+            (card as HTMLElement).style.display = '';
+            visibleCount++;
+          } else {
+            (card as HTMLElement).style.display = 'none';
+          }
+        });
+
+        if (noResults) {
+          noResults.classList.toggle('hidden', visibleCount > 0);
+        }
+      }
+
+      searchInput?.addEventListener('input', filterCards);
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          activeCategory = btn.getAttribute('data-category') || 'all';
+
+          // Update button styles
+          filterButtons.forEach((b) => {
+            b.className = 'category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200';
+          });
+          btn.className = 'category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-purple-600 text-white';
+
+          filterCards();
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</BaseLayout>

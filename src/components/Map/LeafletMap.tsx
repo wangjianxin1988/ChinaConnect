@@ -70,6 +70,21 @@ function MapCenterUpdater({
   return null;
 }
 
+// Component to force map resize after mount (fixes client:visible initialization issues)
+function MapResizer() {
+  const map = useMap();
+
+  useEffect(() => {
+    // Invalidate size after a short delay to ensure container dimensions are settled
+    const timer = setTimeout(() => {
+      map.invalidateSize();
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [map]);
+
+  return null;
+}
+
 // Tile layer URLs for different providers and layers
 const TILE_LAYERS = {
   google: {
@@ -124,7 +139,7 @@ export function LeafletMap({
   const attribution = ATTRIBUTIONS[provider];
 
   return (
-    <div className={`leaflet-map-container ${className}`}>
+    <div className={`leaflet-map-container h-full ${className}`}>
       <MapContainer
         center={[mapCenter.lat, mapCenter.lng]}
         zoom={zoom}
@@ -141,6 +156,9 @@ export function LeafletMap({
 
         {/* Center updater */}
         <MapCenterUpdater center={mapCenter} zoom={zoom} />
+
+        {/* Resize handler for client:visible initialization */}
+        <MapResizer />
 
         {/* Markers */}
         {markers.map((marker) => {

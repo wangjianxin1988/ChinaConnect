@@ -1,5 +1,5 @@
 import { InfiniteList } from "@/components/ui/InfiniteList";
-import React, { useState } from "react";
+import React from "react";
 import { CityMap } from "./CityMap";
 import { RestaurantCard, type RestaurantCardData } from "./RestaurantCard";
 
@@ -10,8 +10,6 @@ interface RestaurantsSectionProps {
 }
 
 export function RestaurantsSection({ restaurants, citySlug, cityName }: RestaurantsSectionProps) {
-  const [_selectedCoords, _setSelectedCoords] = useState<{ lat: number; lng: number } | null>(null);
-
   return (
     <div>
       <div className="mb-6">
@@ -35,6 +33,7 @@ export function RestaurantsSection({ restaurants, citySlug, cityName }: Restaura
         items={restaurants}
         initialCount={10}
         loadMoreCount={10}
+        className="grid grid-cols-1 md:grid-cols-2 gap-6"
         renderItem={(restaurant, _index) => (
           <RestaurantCard key={restaurant.id} restaurant={restaurant} />
         )}

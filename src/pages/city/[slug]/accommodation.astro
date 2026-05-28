@@ -1,0 +1,223 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { BudgetHotelSection } from "@/components/accommodation/BudgetHotelSection";
+import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
+import { getBudgetHotelsByCity } from "@/data/accommodation/cities-budget-hotels";
+import { getLangFromUrl } from "@/i18n/utils";
+
+export function getStaticPaths() {
+  return citySlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const city = getCityBySlug(slug as string);
+const lang = getLangFromUrl(Astro.url);
+
+if (!city) {
+  return Astro.redirect("/404");
+}
+
+const budgetHotels = getBudgetHotelsByCity(slug as string);
+const { prev, next } = getAdjacentCities(slug as string);
+
+const pageTitle = `${city.nameEn} Accommodation - ChinaConnect`;
+const pageDescription = `Hotels for every budget in ${city.nameEn}. Luxury, mid-range, and budget options with booking tips.`;
+
+const budgetStyles: Record<string, string> = {
+  luxury: "bg-purple-100 text-purple-700",
+  mid: "bg-blue-100 text-blue-700",
+  budget: "bg-green-100 text-green-700",
+};
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: [city.nameEn, city.name, `${city.nameEn} hotels`, `${city.nameEn} accommodation`, "budget hotels", "luxury hotels"],
+  }}
+  lang={lang}
+>
+  <!-- Hero Section -->
+  <section class="relative h-64 bg-gradient-to-br from-teal-600 to-blue-600">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+    <div class="container-custom relative h-full flex flex-col justify-end pb-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-4">
+        <a href="/" class="text-teal-200 hover:text-white transition-colors">Home</a>
+        <span class="text-teal-300 mx-2">/</span>
+        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <span class="text-teal-300 mx-2">/</span>
+        <span class="text-white">Accommodation</span>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
+        <span>🏨</span> {city.nameEn} Accommodation
+      </h1>
+      <p class="text-teal-100">Hotels for every budget in {city.nameEn} ({city.name})</p>
+
+      <!-- Quick stats -->
+      <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-teal-100">
+        <span class="flex items-center gap-1">
+          <span>🏨</span> {city.hotels?.length || 0} Hotels
+        </span>
+        <span class="flex items-center gap-1">
+          <span>🎯</span> {budgetHotels.length} Budget Options
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-custom py-8">
+    <!-- Budget Filter -->
+    <div class="flex flex-wrap gap-2 mb-6" id="budget-filter">
+      {(['all', 'luxury', 'mid', 'budget'] as const).map(b => (
+        <button
+          data-budget={b}
+          class={`filter-btn px-4 py-2 rounded-lg text-sm font-semibold border transition-all
+            ${b === 'all' ? 'bg-blue-50 text-blue-700 border-blue-200' : ''}
+            ${b === 'luxury' ? 'bg-white text-gray-500 border-gray-200 hover:border-purple-400 hover:text-purple-700' : ''}
+            ${b === 'mid' ? 'bg-white text-gray-500 border-gray-200 hover:border-blue-400 hover:text-blue-700' : ''}
+            ${b === 'budget' ? 'bg-white text-gray-500 border-gray-200 hover:border-green-400 hover:text-green-700' : ''}
+          `}
+        >
+          {b === 'all' ? 'All' : b.charAt(0).toUpperCase() + b.slice(1)}
+        </button>
+      ))}
+      <a
+        href={`/city/${city.slug}`}
+        class="ml-auto text-sm text-blue-600 hover:text-blue-700 font-medium hover:underline flex items-center gap-1"
+      >
+        <span>←</span> Back to {city.nameEn}
+      </a>
+    </div>
+
+    <!-- Hotel List (All hotels) -->
+    <div id="hotel-list" class="space-y-4">
+      {(city.hotels || []).map(hotel => (
+        <div
+          class="hotel-card bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-lg transition-all"
+          data-budget={hotel.budget}
+        >
+          <div class="flex items-start justify-between mb-4 gap-3">
+            <div class="flex-1 min-w-0">
+              <h3 class="text-lg font-bold text-gray-900 leading-tight">{hotel.nameEn}</h3>
+              <p class="text-gray-500 text-sm">{hotel.name}</p>
+            </div>
+            <div class="flex flex-col items-end gap-2 shrink-0">
+              <span class={`px-3 py-1 rounded-full text-xs font-semibold border ${budgetStyles[hotel.budget] || 'bg-gray-100 text-gray-700'}`}>
+                {hotel.budget}
+              </span>
+              <div class="text-yellow-500 font-bold text-sm">★ {hotel.rating}</div>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-3 mb-4">
+            <div class="bg-blue-50 rounded-xl p-3">
+              <div class="text-blue-600 text-xs font-medium uppercase tracking-wide mb-0.5">Price Range</div>
+              <div class="text-lg font-bold text-blue-900">{hotel.priceRange}</div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3">
+              <div class="text-gray-500 text-xs font-medium uppercase tracking-wide mb-0.5">Address</div>
+              <div class="text-sm font-medium text-gray-800 truncate">{hotel.address}</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            {(hotel.highlights || []).map(h => (
+              <span class="px-3 py-1 bg-gray-50 text-gray-700 rounded-full text-xs font-medium border border-gray-100">
+                {h}
+              </span>
+            ))}
+          </div>
+
+          {hotel.bookingTips && (
+            <p class="text-sm text-gray-700 bg-amber-50 p-3 rounded-xl border border-amber-100 flex items-start gap-2">
+              <span class="text-amber-500 shrink-0 mt-0.5">💡</span>
+              <span>{hotel.bookingTips}</span>
+            </p>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <!-- Budget Hotels Section -->
+    {budgetHotels.length > 0 && (
+      <div class="mt-8 pt-8 border-t border-gray-200">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+            <span>🎯</span>
+            <span>Budget Hotels (¥100-300)</span>
+          </h3>
+          <p class="text-gray-600 text-sm">
+            Affordable, foreigner-friendly options near metro stations
+          </p>
+        </div>
+        <BudgetHotelSection
+          hotels={budgetHotels}
+          citySlug={city.slug}
+          cityName={city.nameEn}
+          client:visible
+        />
+      </div>
+    )}
+
+    <!-- Navigation -->
+    <div class="mt-12 flex items-center justify-between border-t border-gray-100 pt-8">
+      <div>
+        {prev && (
+          <a
+            href={`/city/${prev.slug}/accommodation`}
+            class="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-teal-300 hover:bg-teal-50 transition-all"
+          >
+            <span class="text-gray-400">←</span>
+            <div>
+              <div class="text-xs text-gray-500">Previous City</div>
+              <div class="font-semibold text-gray-700">{prev.nameEn} Hotels</div>
+            </div>
+          </a>
+        )}
+      </div>
+      <div>
+        {next && (
+          <a
+            href={`/city/${next.slug}/accommodation`}
+            class="flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-teal-300 hover:bg-teal-50 transition-all"
+          >
+            <div class="text-right">
+              <div class="text-xs text-gray-500">Next City</div>
+              <div class="font-semibold text-gray-700">{next.nameEn} Hotels</div>
+            </div>
+            <span class="text-gray-400">→</span>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+  // Hotel budget filter
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const budget = btn.dataset.budget;
+
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-50', 'text-blue-700', 'border-blue-200');
+        b.classList.add('bg-white', 'text-gray-500', 'border-gray-200');
+      });
+      btn.classList.remove('bg-white', 'text-gray-500', 'border-gray-200');
+      btn.classList.add('ring-2', 'ring-blue-500', 'bg-blue-50', 'text-blue-700', 'border-blue-200');
+
+      document.querySelectorAll('.hotel-card').forEach(card => {
+        if (budget === 'all' || card.dataset.budget === budget) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+  </script>
+</BaseLayout>

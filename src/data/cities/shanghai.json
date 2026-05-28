@@ -629,6 +629,604 @@
         "Bonsai garden"
       ],
       "tips": "One of Shanghai's oldest temples. Metro Line 11 to Longhua station. Beautiful at cherry blossom season."
+    },
+    {
+      "id": "lujiazui",
+      "name": "陆家嘴",
+      "nameEn": "Lujiazui Finance & Trade Zone",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=400",
+      "description": "Shanghai's iconic financial district featuring the three super-tall skyscrapers: Shanghai Tower, Shanghai World Financial Center, and Jin Mao Tower.",
+      "address": "Pudong New Area",
+      "coordinates": {
+        "lat": 31.2355,
+        "lng": 121.4998
+      },
+      "openingHours": "Open 24 hours (buildings vary)",
+      "ticketPrice": "Free (observation decks charge separately)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Shanghai Tower observation deck",
+        "IFC Mall",
+        "Oriental Pearl Tower",
+        "Night skyline views"
+      ],
+      "tips": "Visit at night for the best views from the Bund. The three towers are best photographed from across the river."
+    },
+    {
+      "id": "jinmao-tower",
+      "name": "金茂大厦",
+      "nameEn": "Jin Mao Tower",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=400",
+      "description": "A 421-meter skyscraper with a unique pagoda-inspired design, featuring an 88th-floor observation deck with glass-bottomed skywalk.",
+      "address": "88 Century Ave, Pudong",
+      "coordinates": {
+        "lat": 31.2355,
+        "lng": 121.5012
+      },
+      "openingHours": "08:30-21:30",
+      "ticketPrice": "120 CNY (88th floor observation deck)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "88th floor skywalk",
+        "Glass-bottomed walkway",
+        "Pagoda-inspired design",
+        "Grand Hyatt atrium"
+      ],
+      "tips": "The glass skywalk is thrilling. Less crowded than Shanghai Tower. Great for photos."
+    },
+    {
+      "id": "global-harbour",
+      "name": "上海环球港",
+      "nameEn": "Global Harbour",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400",
+      "description": "One of the largest shopping malls in Asia, featuring over 400 shops, a rooftop garden, and European-style interior architecture.",
+      "address": "3300 Zhongshan North Rd, Putuo District",
+      "coordinates": {
+        "lat": 31.2437,
+        "lng": 121.4061
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "European-style interior",
+        "Rooftop garden",
+        "400+ shops",
+        "IMAX cinema"
+      ],
+      "tips": "Easily accessible by metro. Great for rainy days. The architecture is impressive even if you are not shopping."
+    },
+    {
+      "id": "people-square",
+      "name": "人民广场",
+      "nameEn": "People's Square",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1598966673369-b41f9e3b2d59?w=400",
+      "description": "The central square of Shanghai, surrounded by major cultural institutions including Shanghai Museum, Grand Theatre, and the Urban Planning Exhibition Center.",
+      "address": "Huangpu District",
+      "coordinates": {
+        "lat": 31.2303,
+        "lng": 121.4737
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Shanghai Museum",
+        "Grand Theatre",
+        "Underground shopping",
+        "Pigeons and fountains"
+      ],
+      "tips": "Central hub connecting multiple metro lines. Great starting point for exploring Shanghai."
+    },
+    {
+      "id": "shanghai-wildlife-park",
+      "name": "上海野生动物园",
+      "nameEn": "Shanghai Wildlife Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1535338454528-1b6325b2356c?w=400",
+      "description": "A large wildlife park featuring over 200 species from around the world, including drive-through safari zones and animal performances.",
+      "address": "178 Nanliu Rd, Pudong",
+      "coordinates": {
+        "lat": 31.0527,
+        "lng": 121.7242
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "130 CNY",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Safari bus ride",
+        "Giant panda exhibit",
+        "Animal shows",
+        "Feeding experiences"
+      ],
+      "tips": "Arrive early. Take the safari bus first. Great for families with children. Bring snacks."
+    },
+    {
+      "id": "shanghai-ocean-aquarium",
+      "name": "上海海洋水族馆",
+      "nameEn": "Shanghai Ocean Aquarium",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1535338454528-1b6325b2356c?w=400",
+      "description": "One of the largest aquariums in Asia, featuring a 155-meter underwater tunnel and exhibits from five continents.",
+      "address": "1388 Lujiazui Ring Rd, Pudong",
+      "coordinates": {
+        "lat": 31.2397,
+        "lng": 121.4978
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "160 CNY (adult), 110 CNY (child)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "155m underwater tunnel",
+        "Jellyfish exhibit",
+        "Penguin zone",
+        "Coral reef display"
+      ],
+      "tips": "Located near the Oriental Pearl Tower. Combine with Lujiazui area exploration. Book online for discounts."
+    },
+    {
+      "id": "duolun-road",
+      "name": "多伦路文化名人街",
+      "nameEn": "Duolun Road Cultural Street",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1559525834-62a09a86e21e?w=400",
+      "description": "A short but historically rich street where many famous Chinese writers and intellectuals lived in the 1920s-30s, now featuring bookstores and art galleries.",
+      "address": "Duolun Rd, Hongkou District",
+      "coordinates": {
+        "lat": 31.2557,
+        "lng": 121.4823
+      },
+      "openingHours": "Open 24 hours (shops vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lu Xun's former residence",
+        "Historic bookshops",
+        "Art galleries",
+        "European-style villas"
+      ],
+      "tips": "Combine with nearby 1933 Old Mill Fun and Lu Xun Park. Great for literature enthusiasts."
+    },
+    {
+      "id": "longhua-temple",
+      "name": "龙华寺",
+      "nameEn": "Longhua Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400",
+      "description": "The largest and oldest Buddhist temple in Shanghai, dating back to 242 AD, featuring a seven-story pagoda and beautiful gardens.",
+      "address": "2853 Longhua Rd, Xuhui District",
+      "coordinates": {
+        "lat": 31.1728,
+        "lng": 121.4516
+      },
+      "openingHours": "07:00-16:30",
+      "ticketPrice": "10 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Seven-story pagoda",
+        "Ancient bell tower",
+        "Buddhist prayer halls",
+        "Cherry blossom garden"
+      ],
+      "tips": "Visit during Chinese New Year for the famous bell-ringing ceremony. The pagoda is the highlight."
+    },
+    {
+      "id": "columbia-circle",
+      "name": "哥伦比亚公园",
+      "nameEn": "Columbia Circle",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1559525834-62a09a86e21e?w=400",
+      "description": "A historic compound from the 1920s-30s American settlement era, now a trendy lifestyle hub with restaurants, shops, and co-working spaces.",
+      "address": "1262 Yan'an West Rd, Changning District",
+      "coordinates": {
+        "lat": 31.2148,
+        "lng": 121.4147
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Colonial-era architecture",
+        "Trendy cafes",
+        "Design shops",
+        "Lush garden setting"
+      ],
+      "tips": "Great for afternoon tea or brunch. The architecture is the main draw. Popular with young locals."
+    },
+    {
+      "id": "shanghai-bund-history-museum",
+      "name": "上海市历史博物馆",
+      "nameEn": "Shanghai History Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1568310952684-a76cb1a3ab03?w=400",
+      "description": "Housed in the former Shanghai Race Club building, this museum chronicles Shanghai's evolution from a small fishing village to a global metropolis.",
+      "address": "325 Nanjing West Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.2328,
+        "lng": 121.4717
+      },
+      "openingHours": "09:00-16:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Old Shanghai artifacts",
+        "Colonial-era exhibits",
+        "Rooftop city views",
+        "Interactive displays"
+      ],
+      "tips": "Free admission. Located near People's Square. The rooftop view of the city is a hidden gem."
+    },
+    {
+      "id": "shanghai-astronomical-museum",
+      "name": "上海天文馆",
+      "nameEn": "Shanghai Astronomical Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1543832923-0f4bfc98d041?w=400",
+      "description": "The world's largest astronomical museum, featuring immersive planetarium shows, space exhibitions, and a solar telescope.",
+      "address": "380 Lingang Ave, Pudong",
+      "coordinates": {
+        "lat": 30.9112,
+        "lng": 121.9375
+      },
+      "openingHours": "09:30-16:00 (Closed Monday)",
+      "ticketPrice": "40 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Immersive planetarium",
+        "Mars exhibition",
+        "Solar telescope",
+        "Interactive space zone"
+      ],
+      "tips": "Book tickets well in advance - it is very popular. Located in Lingang, about 1.5 hours from city center."
+    },
+    {
+      "id": "shanghai-bund-sources",
+      "name": "外滩源",
+      "nameEn": "Bund Source (Waitanyuan)",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1557903719-73feb061b957?w=400",
+      "description": "The northern extension of the Bund featuring beautifully restored heritage buildings, upscale dining, and the Peninsula Hotel.",
+      "address": "Near Yuanmingyuan Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.2428,
+        "lng": 121.4888
+      },
+      "openingHours": "Open 24 hours (venues vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Heritage architecture",
+        "Rockbund Art Museum",
+        "Fine dining",
+        "Riverside promenade"
+      ],
+      "tips": "Less crowded than the main Bund area. Great for photography. Combine with a Bund walk."
+    },
+    {
+      "id": "china-maritime-museum",
+      "name": "中国航海博物馆",
+      "nameEn": "China Maritime Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400",
+      "description": "A comprehensive museum dedicated to China's maritime history, featuring ship models, navigation instruments, and a full-size replica ancient ship.",
+      "address": "1 Shugang Rd, Pudong (Lingang)",
+      "coordinates": {
+        "lat": 30.8892,
+        "lng": 121.9291
+      },
+      "openingHours": "09:30-16:00 (Closed Monday)",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Full-size ancient ship replica",
+        "Navigation instruments",
+        "Maritime artifacts",
+        "Interactive exhibits"
+      ],
+      "tips": "Located in Lingang area. Combine with the Astronomical Museum nearby for a full day trip."
+    },
+    {
+      "id": "shanghai-greenhouse-garden",
+      "name": "上海温室花园",
+      "nameEn": "Shanghai Greenhouse Garden",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A stunning modern greenhouse complex featuring tropical plants, desert landscapes, and a cloud forest in a futuristic architectural setting.",
+      "address": "Near Expo Park, Pudong",
+      "coordinates": {
+        "lat": 31.1855,
+        "lng": 121.4912
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Cloud forest zone",
+        "Desert plant garden",
+        "Tropical greenhouse",
+        "Modern architecture"
+      ],
+      "tips": "A newer attraction. Great for plant lovers and photography. Combine with Expo Park area."
+    },
+    {
+      "id": "shanghai-jewish-refugees-museum",
+      "name": "上海犹太难民纪念馆",
+      "nameEn": "Shanghai Jewish Refugees Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1568310952684-a76cb1a3ab03?w=400",
+      "description": "A museum documenting the history of Jewish refugees who fled to Shanghai during WWII, housed in the former Ohel Moishe Synagogue.",
+      "address": "62 Changyang Rd, Hongkou District",
+      "coordinates": {
+        "lat": 31.2565,
+        "lng": 121.5065
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ohel Moishe Synagogue",
+        "Personal refugee stories",
+        "Historical photographs",
+        "Survivor testimonies"
+      ],
+      "tips": "Moving and important museum. Allow time for the video presentations. Free admission."
+    },
+    {
+      "id": "shanghai-chopsticks-museum",
+      "name": "上海筷子博物馆",
+      "nameEn": "Shanghai Chopsticks Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1568310952684-a76cb1a3ab03?w=400",
+      "description": "A quirky private museum housing over 2,000 pairs of chopsticks from various dynasties and countries, the only chopstick museum in the world.",
+      "address": "36 Lianyun Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.2285,
+        "lng": 121.4865
+      },
+      "openingHours": "10:00-18:00 (by appointment)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "2,000+ chopstick pairs",
+        "Ancient dynasty chopsticks",
+        "Ivory and jade chopsticks",
+        "Chopstick culture history"
+      ],
+      "tips": "Call ahead to confirm opening. Small but unique museum. Great conversation starter."
+    },
+    {
+      "id": "jing-an-sculpture-park",
+      "name": "静安雕塑公园",
+      "nameEn": "Jing'an Sculpture Park",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A beautiful urban park featuring contemporary sculpture installations, cherry blossoms, and the Shanghai Natural History Museum.",
+      "address": "500 Beijing West Rd, Jing'an District",
+      "coordinates": {
+        "lat": 31.2285,
+        "lng": 121.4567
+      },
+      "openingHours": "06:00-21:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Contemporary sculptures",
+        "Cherry blossom avenue",
+        "Shanghai Natural History Museum",
+        "Urban green space"
+      ],
+      "tips": "Free park. Visit in spring for cherry blossoms. Combine with the Natural History Museum."
+    },
+    {
+      "id": "shanghai-bund-finance-center",
+      "name": "外滩金融中心",
+      "nameEn": "Bund Finance Center (BFC)",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=400",
+      "description": "A mixed-use development at the southern end of the Bund featuring the Fosun Foundation art center with a moving facade veil.",
+      "address": "600 Zhongshan East 2nd Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.2335,
+        "lng": 121.4945
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free (exhibitions may charge)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Moving facade veil",
+        "Fosun Foundation exhibitions",
+        "Bund river views",
+        "Luxury shopping"
+      ],
+      "tips": "Check the Fosun Foundation exhibition schedule. The moving veil is best viewed from outside."
+    },
+    {
+      "id": "shanghai-le-golf",
+      "name": "上海汽车博物馆",
+      "nameEn": "Shanghai Auto Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400",
+      "description": "China's first auto museum featuring over 100 vintage and classic cars from the 19th century to the present.",
+      "address": "7565 Boyuan Rd, Jiading District",
+      "coordinates": {
+        "lat": 31.2955,
+        "lng": 121.2702
+      },
+      "openingHours": "09:30-16:30 (Closed Monday)",
+      "ticketPrice": "60 CNY",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Vintage car collection",
+        "Retro designs",
+        "Automobile history",
+        "Interactive displays"
+      ],
+      "tips": "Located in Jiading district. Good for car enthusiasts. Combine with Jiading Old Town."
+    },
+    {
+      "id": "shanghai-film-museum",
+      "name": "上海电影博物馆",
+      "nameEn": "Shanghai Film Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1568310952684-a76cb1a3ab03?w=400",
+      "description": "A museum celebrating 100 years of Chinese cinema, featuring vintage film equipment, costumes, and interactive exhibits.",
+      "address": "595 Caoxi North Rd, Xuhui District",
+      "coordinates": {
+        "lat": 31.1823,
+        "lng": 121.4356
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "50 CNY",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Vintage film equipment",
+        "Chinese cinema history",
+        "Costume exhibits",
+        "4D cinema experience"
+      ],
+      "tips": "Great for film enthusiasts. Interactive exhibits are fun. Located near Shanghai Film Studio."
+    },
+    {
+      "id": "zhujiajiao",
+      "name": "朱家角古镇",
+      "nameEn": "Zhujiajiao Water Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A 1,700-year-old water town with canals, stone bridges, traditional houses, and local food specialties, just 48km from Shanghai.",
+      "address": "Zhujiajiao Town, Qingpu District",
+      "coordinates": {
+        "lat": 31.1089,
+        "lng": 121.0526
+      },
+      "openingHours": "Open 24 hours (attractions 08:30-16:30)",
+      "ticketPrice": "Free (combo ticket 80 CNY for attractions)",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "Fangsheng Bridge",
+        "Canal boat rides",
+        "Traditional rice wine",
+        "Local zongzi dumplings"
+      ],
+      "tips": "Take the bus from Pu'an Rd. Arrive early to avoid crowds. Try the local zongzi (rice dumplings)."
+    },
+    {
+      "id": "qibao-old-town",
+      "name": "七宝老街",
+      "nameEn": "Qibao Old Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A charming ancient water town within Shanghai, featuring traditional architecture, local snacks, and a cricket museum.",
+      "address": "Qibao Town, Minhang District",
+      "coordinates": {
+        "lat": 31.1617,
+        "lng": 121.3528
+      },
+      "openingHours": "Open 24 hours (shops 09:00-18:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Local snack street",
+        "Cricket museum",
+        "Canal views",
+        "Traditional handicrafts"
+      ],
+      "tips": "Easily accessible by metro. Great for a half-day trip. The snack street is the main attraction."
+    },
+    {
+      "id": "nanxiang-old-town",
+      "name": "南翔古镇",
+      "nameEn": "Nanxiang Old Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "The birthplace of xiaolongbao (soup dumplings), featuring ancient temples, gardens, and the famous Nanxiang Steamed Bun Restaurant.",
+      "address": "Nanxiang Town, Jiading District",
+      "coordinates": {
+        "lat": 31.2921,
+        "lng": 121.3149
+      },
+      "openingHours": "Open 24 hours (restaurants vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Original xiaolongbao",
+        "Guyi Garden",
+        "Temples",
+        "Traditional architecture"
+      ],
+      "tips": "Must-try: original Nanxiang xiaolongbao at the old restaurant. Guyi Garden is worth visiting."
+    },
+    {
+      "id": "shanghai-chongming-island",
+      "name": "崇明岛",
+      "nameEn": "Chongming Island",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "The third largest island in China at the mouth of the Yangtze River, known for wetlands, bird watching, and eco-tourism.",
+      "address": "Chongming District, northeast of Shanghai",
+      "coordinates": {
+        "lat": 31.6285,
+        "lng": 121.3975
+      },
+      "openingHours": "Open 24 hours (parks vary)",
+      "ticketPrice": "Free (parks may charge)",
+      "recommendedVisitTime": "Full day or overnight",
+      "highlights": [
+        "Dongtan wetland reserve",
+        "Bird watching",
+        "Organic farms",
+        "Cycling routes"
+      ],
+      "tips": "Take a bus or drive from the city. Best for nature lovers. Stay overnight to explore fully."
+    },
+    {
+      "id": "shanghai-pest-control-memorial",
+      "name": "上海四行仓库抗战纪念馆",
+      "nameEn": "Sihang Warehouse Battle Memorial",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1568310952684-a76cb1a3ab03?w=400",
+      "description": "A WWII memorial at the site of the famous 1937 defense battle, featuring exhibits about the 425 Chinese soldiers who held the warehouse against Japanese forces.",
+      "address": "1 Sihang Warehouse, Jing'an District",
+      "coordinates": {
+        "lat": 31.2437,
+        "lng": 121.4737
+      },
+      "openingHours": "09:00-16:30 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Battle-scarred walls",
+        "War artifacts",
+        "Documentary screenings",
+        "Memorial hall"
+      ],
+      "tips": "Moving and educational. Free admission. The bullet holes in the wall are still visible."
+    },
+    {
+      "id": "shanghai-dmuseum",
+      "name": "上海当代艺术博物馆",
+      "nameEn": "Power Station of Art (PSA)",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1584972190-b8d6c527b16c?w=400",
+      "description": "China's first state-run contemporary art museum, housed in a converted power station with rotating international exhibitions.",
+      "address": "678 Miaojiang Rd, Huangpu District",
+      "coordinates": {
+        "lat": 31.2025,
+        "lng": 121.4912
+      },
+      "openingHours": "11:00-19:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Contemporary art exhibitions",
+        "Industrial architecture",
+        "Shanghai Biennale venue",
+        "Rooftop views"
+      ],
+      "tips": "Free admission. Check the current exhibition schedule. The building itself is impressive."
     }
   ],
   "restaurants": [
@@ -1378,6 +1976,213 @@
         "healthy"
       ],
       "diamond": 0
+    },
+    {
+      "id": "shanghai-cheap-1",
+      "name": "小杨生煎",
+      "nameEn": "Xiaoyang Shengjian",
+      "type": "local",
+      "cuisine": "Shanghai Snacks",
+      "avgPrice": 15,
+      "rating": 4.5,
+      "address": "Multiple locations across Shanghai",
+      "coordinates": {
+        "lat": 31.2304,
+        "lng": 121.4737
+      },
+      "hours": "06:30-21:00",
+      "description": "The most famous shengjianbao (pan-fried dumplings) chain in Shanghai. Crispy bottom, juicy filling, and a fraction of the price of sit-down restaurants.",
+      "dishHighlights": [
+        "Shengjianbao (Pan-Fried Dumplings)",
+        "Xiaolongbao",
+        "Wonton Soup"
+      ],
+      "tags": [
+        "street",
+        "dumplings",
+        "chain"
+      ]
+    },
+    {
+      "id": "shanghai-cheap-2",
+      "name": "大壶春",
+      "nameEn": "Da Hu Chun",
+      "type": "local",
+      "cuisine": "Shanghai Traditional",
+      "avgPrice": 12,
+      "rating": 4.4,
+      "address": "Huangpu District, Yunnan South Road",
+      "coordinates": {
+        "lat": 31.227,
+        "lng": 121.479
+      },
+      "hours": "06:30-19:00",
+      "description": "Heritage shengjianbao shop since 1932. Thicker skin than Xiaoyang but equally delicious. The original Shanghai pan-fried dumpling experience.",
+      "dishHighlights": [
+        "Shengjianbao",
+        "Xianrou Baozi (Pork Buns)",
+        "Xiaolongbao"
+      ],
+      "tags": [
+        "street",
+        "traditional",
+        "heritage"
+      ]
+    },
+    {
+      "id": "shanghai-cheap-3",
+      "name": "阿大葱油饼",
+      "nameEn": "A Da Congyoubing",
+      "type": "local",
+      "cuisine": "Shanghai Street Food",
+      "avgPrice": 10,
+      "rating": 4.3,
+      "address": "Huangpu District, Ruijin Er Road No.120",
+      "coordinates": {
+        "lat": 31.218,
+        "lng": 121.469
+      },
+      "hours": "06:00-18:00",
+      "description": "Legendary scallion oil pancake maker. One man, one wok, decades of dedication. Crispy, flaky, and aromatic. Get there early - sells out by noon.",
+      "dishHighlights": [
+        "Congyoubing (Scallion Oil Pancake)",
+        "Danbing (Egg Pancake)"
+      ],
+      "tags": [
+        "street",
+        "breakfast",
+        "legendary"
+      ]
+    },
+    {
+      "id": "shanghai-cheap-4",
+      "name": "阿娘面馆",
+      "nameEn": "A Niang Mian Guan",
+      "type": "local",
+      "cuisine": "Shanghai Noodles",
+      "avgPrice": 18,
+      "rating": 4.5,
+      "address": "Huangpu District, Sinan Road",
+      "coordinates": {
+        "lat": 31.215,
+        "lng": 121.47
+      },
+      "hours": "07:00-19:00",
+      "description": "Famous noodle shop known for huangyu mian (yellow croaker noodles). Simple shop, extraordinary flavors. The fish is pan-fried and served over springy noodles in rich broth.",
+      "dishHighlights": [
+        "Huangyu Mian (Yellow Croaker Noodles)",
+        "Huntun (Wontons)",
+        "Noodle Soup"
+      ],
+      "tags": [
+        "street",
+        "noodles",
+        "traditional"
+      ]
+    },
+    {
+      "id": "shanghai-cheap-5",
+      "name": "光明郑大酒家",
+      "nameEn": "Guangmingcun Restaurant",
+      "type": "local",
+      "cuisine": "Shanghai Snacks",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Huangpu District, Huaihai Middle Road No.588",
+      "coordinates": {
+        "lat": 31.219,
+        "lng": 121.466
+      },
+      "hours": "07:00-21:00",
+      "description": "Iconic Huaihai Road snack shop. Famous for xiekehuang (crab shell pastries) and fresh meat mooncakes. Always a queue, always worth it.",
+      "dishHighlights": [
+        "Xiekehuang (Crab Shell Pastry)",
+        "Fresh Meat Mooncake",
+        "Qingtuan (Green Rice Ball)"
+      ],
+      "tags": [
+        "street",
+        "snacks",
+        "heritage"
+      ]
+    },
+    {
+      "id": "shanghai-cheap-6",
+      "name": "鲜得来排骨年糕",
+      "nameEn": "Xiandelai Pai Nian Gao",
+      "type": "local",
+      "cuisine": "Shanghai Traditional",
+      "avgPrice": 18,
+      "rating": 4.4,
+      "address": "Huangpu District, Yunnan South Road No.69",
+      "coordinates": {
+        "lat": 31.226,
+        "lng": 121.478
+      },
+      "hours": "07:00-20:00",
+      "description": "The go-to spot for paigu niangao (pork chop with rice cakes). Sweet sauce, tender pork, chewy rice cakes - a classic Shanghai combination since 1920s.",
+      "dishHighlights": [
+        "Paigu Niangao (Pork Chop Rice Cake)",
+        "Nian Gao Stir-Fry",
+        "Sweet Sauce Chicken"
+      ],
+      "tags": [
+        "street",
+        "traditional",
+        "heritage"
+      ]
+    },
+    {
+      "id": "shanghai-cheap-7",
+      "name": "蘑心餐厅",
+      "nameEn": "Lan Xin Restaurant",
+      "type": "local",
+      "cuisine": "Shanghai Home Cooking",
+      "avgPrice": 20,
+      "rating": 4.5,
+      "address": "Huangpu District, Jinxian Road",
+      "coordinates": {
+        "lat": 31.222,
+        "lng": 121.472
+      },
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Michelin-recommended for 7 consecutive years. Tiny neighborhood restaurant serving authentic Shanghai home-cooked dishes. No reservations, expect to queue and share tables.",
+      "dishHighlights": [
+        "Hogao (Braised Pork)",
+        "Youmen Xunzi (Stewed Bamboo Shoots)",
+        "Congshao Pai (Scallion Pork Chop)"
+      ],
+      "tags": [
+        "street",
+        "michelin-recommended",
+        "home-cooking"
+      ]
+    },
+    {
+      "id": "shanghai-cheap-8",
+      "name": "玖玖小炒",
+      "nameEn": "Jiujiu Small Stir-Fry",
+      "type": "local",
+      "cuisine": "Shanghai Stir-Fry",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Huangpu District, Guangxi North Road No.434",
+      "coordinates": {
+        "lat": 31.228,
+        "lng": 121.48
+      },
+      "hours": "10:30-20:30",
+      "description": "Hole-in-the-wall stir-fry shop where 100 yuan feeds 4 people. Jiaoyan paidiao (salt & pepper ribs) at 19 yuan and jiangbao zhugan (pork liver in sauce) at 17 yuan are steals.",
+      "dishHighlights": [
+        "Jiaoyan Paidiao (Salt & Pepper Ribs)",
+        "Jiangbao Zhugan (Pork Liver)",
+        "Garlic Stir-Fried Greens"
+      ],
+      "tags": [
+        "street",
+        "stir-fry",
+        "budget"
+      ]
     }
   ],
   "transport": {

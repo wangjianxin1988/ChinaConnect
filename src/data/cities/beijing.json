@@ -656,6 +656,627 @@
         "Cherry blossom avenue"
       ],
       "tips": "Arrive early. Weekend visits recommended. Combine with a visit to Tsinghua University nearby."
+    },
+    {
+      "id": "ming-tombs",
+      "name": "明十三陵",
+      "nameEn": "Ming Tombs (Shisanling)",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400",
+      "description": "A UNESCO World Heritage site containing the tombs of 13 Ming dynasty emperors, set in a beautiful valley with impressive stone-lined avenues.",
+      "address": "Changping District, 50km northwest of Beijing",
+      "coordinates": {
+        "lat": 40.2919,
+        "lng": 116.2244
+      },
+      "openingHours": "08:00-17:30 (Apr-Oct), 08:30-17:00 (Nov-Mar)",
+      "ticketPrice": "30 CNY (Changling), 65 CNY (Dingling with underground palace)",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Changling main tomb",
+        "Dingling underground palace",
+        "Sacred Way stone animals",
+        "Spirit Way"
+      ],
+      "tips": "Combine with a visit to the Great Wall at Badaling. The underground palace at Dingling is the highlight."
+    },
+    {
+      "id": "yuanmingyuan",
+      "name": "圆明园",
+      "nameEn": "Old Summer Palace (Yuanmingyuan)",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400",
+      "description": "The ruins of the original imperial palace and garden complex, destroyed in 1860. Features European-style architecture remains and beautiful lotus ponds.",
+      "address": "28 Qinghua West Rd, Haidian District",
+      "coordinates": {
+        "lat": 40.0067,
+        "lng": 116.2977
+      },
+      "openingHours": "07:00-19:30 (Apr-Oct), 07:00-17:30 (Nov-Mar)",
+      "ticketPrice": "10 CNY (park), 15 CNY (with ruins area)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "European-style ruins",
+        "Lotus flower ponds",
+        "Haiyantang remains",
+        "Boat ride on lake"
+      ],
+      "tips": "Best visited in summer when lotus flowers bloom. The ruins area tells a powerful history lesson."
+    },
+    {
+      "id": "universal-resort",
+      "name": "北京环球度假区",
+      "nameEn": "Universal Beijing Resort",
+      "category": "entertainment",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=400",
+      "description": "China's first Universal theme park featuring seven themed lands including the Wizarding World of Harry Potter and Kung Fu Panda Land.",
+      "address": "Tongzhou District, eastern Beijing",
+      "coordinates": {
+        "lat": 39.8574,
+        "lng": 116.6736
+      },
+      "openingHours": "09:00-21:00 (hours vary by season)",
+      "ticketPrice": "418 CNY (weekday), 528 CNY (peak)",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Wizarding World of Harry Potter",
+        "Kung Fu Panda Land",
+        "Transformers Metrobase",
+        "Jurassic World"
+      ],
+      "tips": "Book tickets well in advance. Download the Universal Beijing app. Weekdays are less crowded."
+    },
+    {
+      "id": "national-stadium",
+      "name": "鸟巢（国家体育场）",
+      "nameEn": "National Stadium (Bird's Nest)",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1584450150058-f6c4b12f8bcd?w=400",
+      "description": "The iconic 2008 Olympic Games main venue, designed by Herzog & de Meuron with a distinctive steel lattice structure resembling a bird's nest.",
+      "address": "1 National Stadium South Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9929,
+        "lng": 116.3966
+      },
+      "openingHours": "09:00-19:00 (Apr-Oct), 09:00-17:30 (Nov-Mar)",
+      "ticketPrice": "50 CNY (exterior), 80 CNY (interior tour)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Olympic cauldron",
+        "Steel lattice architecture",
+        "Night illumination",
+        "Olympic memorabilia"
+      ],
+      "tips": "Visit at night when the stadium is illuminated. Combine with nearby Water Cube and Olympic Park."
+    },
+    {
+      "id": "water-cube",
+      "name": "水立方（国家游泳中心）",
+      "nameEn": "Water Cube (National Aquatics Center)",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1584450150058-f6c4b12f8bcd?w=400",
+      "description": "The stunning 2008 Olympic swimming venue, now featuring a water park. Its unique ETFE bubble facade is an architectural marvel.",
+      "address": "1 National Aquatics Center, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9937,
+        "lng": 116.3835
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "30 CNY (tour), 260 CNY (water park)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "ETFE bubble facade",
+        "Water park slides",
+        "Olympic pool",
+        "Night lighting display"
+      ],
+      "tips": "The water park is great for families. Visit at night for the LED light show."
+    },
+    {
+      "id": "wangfujing",
+      "name": "王府井大街",
+      "nameEn": "Wangfujing Street",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1537053781304-1905a87b2b3b?w=400",
+      "description": "Beijing's most famous shopping street, spanning 1.6km with modern malls, traditional shops, and the famous Wangfujing Snack Street.",
+      "address": "Dongcheng District",
+      "coordinates": {
+        "lat": 39.9142,
+        "lng": 116.4103
+      },
+      "openingHours": "Shops 10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Wangfujing Snack Street",
+        "Beijing Department Store",
+        "St. Joseph Cathedral",
+        "Night market"
+      ],
+      "tips": "Try local snacks at the snack street. The Catholic cathedral nearby is worth a visit."
+    },
+    {
+      "id": "qianmen",
+      "name": "前门大街",
+      "nameEn": "Qianmen Street",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1537053781304-1905a87b2b3b?w=400",
+      "description": "A historic commercial street dating back to the Ming dynasty, featuring traditional Beijing shops, teahouses, and the iconic Qianmen Gate.",
+      "address": "Dongcheng District, south of Tiananmen",
+      "coordinates": {
+        "lat": 39.8956,
+        "lng": 116.3972
+      },
+      "openingHours": "Shops 10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional Beijing brands",
+        "Dangdang tram",
+        "Quanjude Roast Duck",
+        "Historic architecture"
+      ],
+      "tips": "Walk from Tiananmen Square. Try Beijing roast duck at Quanjude, the original location."
+    },
+    {
+      "id": "confucius-temple",
+      "name": "孔庙和国子监",
+      "nameEn": "Confucius Temple & Imperial Academy",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400",
+      "description": "The second largest Confucius Temple in China and the former imperial academy where scholars studied for civil service exams.",
+      "address": "13 Guozijian St, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9472,
+        "lng": 116.4118
+      },
+      "openingHours": "08:30-18:00 (May-Sep), 08:30-17:00 (Oct-Apr)",
+      "ticketPrice": "30 CNY",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "198 stone steles with inscriptions",
+        "Ancient scholar trees",
+        "Dacheng Hall",
+        "Imperial ranking stones"
+      ],
+      "tips": "Combine with a walk through Guozijian Street and nearby Lama Temple. Audio guides available."
+    },
+    {
+      "id": "chinese-garden-museum",
+      "name": "中国园林博物馆",
+      "nameEn": "Chinese Garden Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400",
+      "description": "The first national-level garden museum showcasing Chinese garden art, featuring indoor and outdoor exhibits with replicas of famous gardens.",
+      "address": "Fengtai District",
+      "coordinates": {
+        "lat": 39.8563,
+        "lng": 116.2159
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Replica classical gardens",
+        "Bonsai collection",
+        "Water garden",
+        "Landscape architecture exhibits"
+      ],
+      "tips": "Worth visiting for garden enthusiasts. Allow at least 2 hours to explore the outdoor gardens."
+    },
+    {
+      "id": "fayuan-temple",
+      "name": "法源寺",
+      "nameEn": "Fayuan Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400",
+      "description": "The oldest Buddhist temple in Beijing, built in 645 AD. Known for its lilac flowers in spring and peaceful atmosphere.",
+      "address": "7 Fayuansi Qianjie, Xicheng District",
+      "coordinates": {
+        "lat": 39.8862,
+        "lng": 116.3692
+      },
+      "openingHours": "08:30-16:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "1,400 years of history",
+        "Lilac garden",
+        "Ancient Buddhist statues",
+        "Peaceful courtyards"
+      ],
+      "tips": "Visit in spring when lilacs bloom. One of Beijing's hidden gems with very few tourists."
+    },
+    {
+      "id": "national-art-museum",
+      "name": "中国美术馆",
+      "nameEn": "National Art Museum of China",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400",
+      "description": "China's premier art museum housing over 100,000 works including traditional Chinese paintings, modern art, and international exhibitions.",
+      "address": "1 Wusi Ave, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9267,
+        "lng": 116.4079
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Chinese modern art",
+        "Traditional ink paintings",
+        "International exhibitions",
+        "Sculpture garden"
+      ],
+      "tips": "Check the exhibition schedule online. Free but reservation required. Located near Wangfujing."
+    },
+    {
+      "id": "planetarium",
+      "name": "北京天文馆",
+      "nameEn": "Beijing Planetarium",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1543832923-0f4bfc98d041?w=400",
+      "description": "China's first planetarium featuring IMAX space theater, digital sky shows, and astronomy exhibitions.",
+      "address": "138 Xizhimen Outer St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9353,
+        "lng": 116.3385
+      },
+      "openingHours": "09:30-15:30 (Closed Monday)",
+      "ticketPrice": "10 CNY (exhibition), 45 CNY (with shows)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "IMAX space theater",
+        "Digital sky shows",
+        "Meteorite collection",
+        "Interactive exhibits"
+      ],
+      "tips": "Book show tickets in advance. Great for families with children. Shows in Chinese only."
+    },
+    {
+      "id": "national-zoo",
+      "name": "北京动物园",
+      "nameEn": "Beijing Zoo",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1535338454528-1b6325b2356c?w=400",
+      "description": "One of China's oldest and largest zoos, home to giant pandas, golden monkeys, and over 500 species of animals.",
+      "address": "137 Xizhimen Outer St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9389,
+        "lng": 116.3342
+      },
+      "openingHours": "07:30-18:00 (Apr-Oct), 07:30-17:00 (Nov-Mar)",
+      "ticketPrice": "15 CNY (zoo), 19 CNY (with aquarium)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Giant Panda House",
+        "Aquarium",
+        "Golden monkey exhibit",
+        "Historic architecture"
+      ],
+      "tips": "Visit pandas early in the morning when they are most active. The aquarium is worth the extra fee."
+    },
+    {
+      "id": "fragrant-hills",
+      "name": "香山公园",
+      "nameEn": "Fragrant Hills Park (Xiangshan)",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A vast park on the western outskirts famous for autumn foliage, historic temples, and scenic hiking trails.",
+      "address": "40 Maimai St, Haidian District",
+      "coordinates": {
+        "lat": 39.9903,
+        "lng": 116.1855
+      },
+      "openingHours": "06:00-18:30 (Apr-Nov), 06:00-18:00 (Dec-Mar)",
+      "ticketPrice": "10 CNY",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Red autumn leaves",
+        "Biyun Temple",
+        "Incense Burner Peak",
+        "Cable car"
+      ],
+      "tips": "Best visited in October-November for the famous red leaves. Weekends are extremely crowded in autumn."
+    },
+    {
+      "id": "capital-museum",
+      "name": "首都博物馆",
+      "nameEn": "Capital Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400",
+      "description": "A modern museum showcasing Beijing's history and culture from prehistoric times to the present, with an impressive bronze and porcelain collection.",
+      "address": "16 Fuximen Outer St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9072,
+        "lng": 116.3351
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Beijing history exhibits",
+        "Bronze age collection",
+        "Ancient porcelain",
+        "Traditional architecture halls"
+      ],
+      "tips": "Free entry with reservation. Audio guides available. Modern building with excellent exhibits."
+    },
+    {
+      "id": "cuandixia-village",
+      "name": "爨底下村",
+      "nameEn": "Cuandixia Village",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A well-preserved Ming dynasty mountain village with stone houses and traditional courtyard architecture, about 90km west of Beijing.",
+      "address": "Zhaitang Town, Mentougou District",
+      "coordinates": {
+        "lat": 39.9708,
+        "lng": 115.6289
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "35 CNY",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "Traditional stone houses",
+        "Mountain scenery",
+        "Ming dynasty architecture",
+        "Local farmhouse food"
+      ],
+      "tips": "Best combined with a weekend trip. Stay overnight for the full experience. Roads can be winding."
+    },
+    {
+      "id": "gubei-water-town",
+      "name": "古北水镇",
+      "nameEn": "Gubei Water Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A replica water town at the foot of the Simatai Great Wall, featuring traditional architecture, hot springs, and night views of the illuminated wall.",
+      "address": "Simatai Village, Miyun District",
+      "coordinates": {
+        "lat": 40.6597,
+        "lng": 117.2447
+      },
+      "openingHours": "09:00-22:00",
+      "ticketPrice": "140 CNY",
+      "recommendedVisitTime": "Full day or overnight",
+      "highlights": [
+        "Simatai Great Wall night view",
+        "Hot springs",
+        "Water town boat rides",
+        "Traditional crafts"
+      ],
+      "tips": "Stay overnight to see the Great Wall illuminated at night. Book hot springs in advance."
+    },
+    {
+      "id": "ncpa",
+      "name": "国家大剧院",
+      "nameEn": "National Centre for the Performing Arts",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=400",
+      "description": "A stunning titanium and glass dome surrounded by water, hosting opera, ballet, concerts, and theater performances.",
+      "address": "2 West Chang'an Ave, Xicheng District",
+      "coordinates": {
+        "lat": 39.9032,
+        "lng": 116.3835
+      },
+      "openingHours": "Tours 09:00-17:00, performances vary",
+      "ticketPrice": "30 CNY (tour), performance tickets vary",
+      "recommendedVisitTime": "1-2 hours (tour)",
+      "highlights": [
+        "Egg-shaped titanium dome",
+        "Underwater entrance",
+        "Three performance halls",
+        "Acoustic excellence"
+      ],
+      "tips": "Take a guided tour during the day. Attend an evening performance for the full experience. Book tickets early."
+    },
+    {
+      "id": "taoranting-park",
+      "name": "陶然亭公园",
+      "nameEn": "Taoranting Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400",
+      "description": "A historic park famous for its classical pavilions, cherry blossoms, and peaceful lake with boat rides.",
+      "address": "19 Taiping St, Xicheng District",
+      "coordinates": {
+        "lat": 39.8746,
+        "lng": 116.3765
+      },
+      "openingHours": "06:00-21:30 (Apr-Oct), 06:00-21:00 (Nov-Mar)",
+      "ticketPrice": "2 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Cherry blossom season",
+        "Historical pavilions",
+        "Lake boat rides",
+        "Local tai chi practice"
+      ],
+      "tips": "Great for a relaxing afternoon. Visit in spring for cherry blossoms. Popular with local residents."
+    },
+    {
+      "id": "badaling-safari",
+      "name": "八达岭野生动物园",
+      "nameEn": "Badaling Safari Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1535338454528-1b6325b2356c?w=400",
+      "description": "A drive-through safari park at the foot of the Great Wall, featuring lions, tigers, bears, and other wildlife in semi-natural habitats.",
+      "address": "Yanqing District, near Badaling Great Wall",
+      "coordinates": {
+        "lat": 40.3581,
+        "lng": 116.0108
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "90 CNY (adult), children discounts",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Drive-through safari zone",
+        "White tiger exhibit",
+        "Bear area",
+        "Walking animal zone"
+      ],
+      "tips": "Keep car windows closed in the predator zone. Combine with a Badaling Great Wall visit."
+    },
+    {
+      "id": "temple-of-earth",
+      "name": "地坛公园",
+      "nameEn": "Temple of Earth (Ditan)",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1599707367072-c5b0b5c0c0a4?w=400",
+      "description": "The second largest of Beijing's imperial temples, where emperors worshipped the Earth God. Features beautiful ancient cypress trees and seasonal festivals.",
+      "address": "Aobei Rd, Dongcheng District",
+      "coordinates": {
+        "lat": 39.9535,
+        "lng": 116.4075
+      },
+      "openingHours": "06:00-21:00",
+      "ticketPrice": "2 CNY",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Altar of Earth",
+        "Ancient cypress grove",
+        "Spring festival temple fair",
+        "Autumn ginkgo trees"
+      ],
+      "tips": "Visit during Chinese New Year for the famous temple fair. Autumn ginkgo trees are beautiful."
+    },
+    {
+      "id": "world-park",
+      "name": "世界公园",
+      "nameEn": "Beijing World Park",
+      "category": "entertainment",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=400",
+      "description": "A theme park featuring miniature replicas of over 100 famous landmarks from around the world, including the Eiffel Tower and pyramids.",
+      "address": "158 Fengbao Rd, Fengtai District",
+      "coordinates": {
+        "lat": 39.8223,
+        "lng": 116.2842
+      },
+      "openingHours": "08:30-17:30 (Apr-Oct), 09:00-17:00 (Nov-Mar)",
+      "ticketPrice": "100 CNY",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Miniature world landmarks",
+        "Cultural performances",
+        "European garden area",
+        "Boat rides"
+      ],
+      "tips": "Great for families. Allow at least 3 hours to see everything. Cultural performances on weekends."
+    },
+    {
+      "id": "beijing-natural-history",
+      "name": "北京自然博物馆",
+      "nameEn": "Beijing Museum of Natural History",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=400",
+      "description": "One of China's oldest natural history museums, featuring dinosaur fossils, wildlife dioramas, and interactive science exhibits.",
+      "address": "126 Tianqiao South St, Dongcheng District",
+      "coordinates": {
+        "lat": 39.8851,
+        "lng": 116.3932
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Dinosaur hall",
+        "Paleontology exhibits",
+        "Wildlife dioramas",
+        "Science interactive zone"
+      ],
+      "tips": "Great for children. Free admission with reservation. Book online in advance."
+    },
+    {
+      "id": "sanlitun",
+      "name": "三里屯",
+      "nameEn": "Sanlitun",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+      "description": "Beijing's trendiest entertainment district featuring international restaurants, bars, designer shops, and a vibrant nightlife scene.",
+      "address": "Sanlitun Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9337,
+        "lng": 116.4542
+      },
+      "openingHours": "Shops 10:00-22:00, bars until late",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "Taikoo Li shopping complex",
+        "International restaurants",
+        "Bar street",
+        "Designer boutiques"
+      ],
+      "tips": "Best in the evening. Great area for international food and nightlife. Popular with expats."
+    },
+    {
+      "id": "751-dpark",
+      "name": "751D·Park",
+      "nameEn": "751 D-Park",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=400",
+      "description": "An industrial heritage zone next to 798 Art District, featuring converted gas tanks and factories now used for fashion shows, exhibitions, and events.",
+      "address": "4 Jiuxianqiao Rd, Chaoyang District",
+      "coordinates": {
+        "lat": 39.9843,
+        "lng": 116.4978
+      },
+      "openingHours": "10:00-18:00 (events vary)",
+      "ticketPrice": "Free (some events may charge)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Industrial architecture",
+        "Fashion week venue",
+        "Design exhibitions",
+        "Gas tank art space"
+      ],
+      "tips": "Combine with a 798 Art District visit. Check the event calendar for special exhibitions."
+    },
+    {
+      "id": "beijing-aquarium",
+      "name": "北京海洋馆",
+      "nameEn": "Beijing Aquarium",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1535338454528-1b6325b2356c?w=400",
+      "description": "One of the largest inland aquariums in the world, featuring shark tanks, dolphin shows, and a tropical rainforest exhibit.",
+      "address": "18 Baishiqiao Rd, Haidian District (inside Beijing Zoo)",
+      "coordinates": {
+        "lat": 39.9395,
+        "lng": 116.3348
+      },
+      "openingHours": "09:00-17:30",
+      "ticketPrice": "165 CNY (zoo + aquarium combo)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Shark tank tunnel",
+        "Dolphin performances",
+        "Tropical rainforest zone",
+        "Touch pool"
+      ],
+      "tips": "Check dolphin show times when you arrive. Located inside Beijing Zoo. Buy combo tickets."
+    },
+    {
+      "id": "meilanfang-memorial",
+      "name": "梅兰芳纪念馆",
+      "nameEn": "Mei Lanfang Memorial Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+      "description": "The former residence of China's most famous Peking Opera performer, displaying costumes, photographs, and personal artifacts.",
+      "address": "9 Huguosi St, Xicheng District",
+      "coordinates": {
+        "lat": 39.9324,
+        "lng": 116.3755
+      },
+      "openingHours": "09:00-16:00 (Closed Monday)",
+      "ticketPrice": "10 CNY",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Peking Opera costumes",
+        "Historic photographs",
+        "Traditional courtyard",
+        "Personal memorabilia"
+      ],
+      "tips": "Small but intimate museum. Best combined with nearby Shichahai and hutong walk."
     }
   ],
   "restaurants": [
@@ -1472,6 +2093,218 @@
       ],
       "star": 0,
       "diamond": 0
+    },
+    {
+      "id": "beijing-cheap-1",
+      "name": "方砖厂69号炸酱面",
+      "nameEn": "Fangzhuanchang No.69 Zhajiang Noodles",
+      "type": "local",
+      "cuisine": "Beijing Noodles",
+      "avgPrice": 18,
+      "rating": 4.6,
+      "address": "Dongcheng District, Nanluoguxiang No.1",
+      "coordinates": {
+        "lat": 39.937,
+        "lng": 116.403
+      },
+      "hours": "09:30-22:00",
+      "description": "Famous zhajiang noodles chain, Michelin-recommended for 6 consecutive years. Free extra noodles and sauce. A true Beijing staple at an unbeatable price.",
+      "dishHighlights": [
+        "Zhajiang Noodles",
+        "Laoba Garlic",
+        "Beijing Braised Tripe"
+      ],
+      "tags": [
+        "street",
+        "michelin-recommended",
+        "noodles"
+      ]
+    },
+    {
+      "id": "beijing-cheap-2",
+      "name": "护国寺小吃",
+      "nameEn": "Huguosi Snacks",
+      "type": "local",
+      "cuisine": "Beijing Traditional Snacks",
+      "avgPrice": 12,
+      "rating": 4.3,
+      "address": "Xicheng District, Huguosi Street",
+      "coordinates": {
+        "lat": 39.9375,
+        "lng": 116.375
+      },
+      "hours": "06:00-21:00",
+      "description": "Iconic Beijing snack shop with over 60 years of history. Try douzhir (fermented mung bean drink), jiaoquan (fried dough rings), and wandouhuang (sweet pea cake).",
+      "dishHighlights": [
+        "Douzhir",
+        "Jiaoquan (Fried Dough Rings)",
+        "Wandouhuang",
+        "Lvdagun (Donkey Rolling)"
+      ],
+      "tags": [
+        "street",
+        "traditional",
+        "breakfast"
+      ]
+    },
+    {
+      "id": "beijing-cheap-3",
+      "name": "姚记炒肝",
+      "nameEn": "Yaoji Fried Liver",
+      "type": "local",
+      "cuisine": "Beijing Traditional",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "Dongcheng District, Dongsi Bei Dajie",
+      "coordinates": {
+        "lat": 39.929,
+        "lng": 116.415
+      },
+      "hours": "06:00-14:00",
+      "description": "The most famous chaogan (fried liver) in Beijing. Thick, savory pork liver soup with garlic, served with baozi. A must-try breakfast for adventurous eaters.",
+      "dishHighlights": [
+        "Chaogan (Fried Liver)",
+        "Pork Baozi",
+        "Luzhu Huihuo (Stewed Offal)"
+      ],
+      "tags": [
+        "street",
+        "breakfast",
+        "traditional"
+      ]
+    },
+    {
+      "id": "beijing-cheap-4",
+      "name": "老磁器口豆汁店",
+      "nameEn": "Lao Ciqikou Douzhi Shop",
+      "type": "local",
+      "cuisine": "Beijing Breakfast",
+      "avgPrice": 10,
+      "rating": 4.2,
+      "address": "Dongcheng District, Ciqikou",
+      "coordinates": {
+        "lat": 39.902,
+        "lng": 116.413
+      },
+      "hours": "05:30-12:00",
+      "description": "Legendary breakfast spot for authentic Beijing douzhi (fermented mung bean drink). Not for the faint-hearted, but locals swear by it. Served with jiaoquan and pickled vegetables.",
+      "dishHighlights": [
+        "Douzhi",
+        "Jiaoquan",
+        "Pickled Vegetables",
+        "Jiaotuan (Fried Twist)"
+      ],
+      "tags": [
+        "street",
+        "breakfast",
+        "traditional"
+      ]
+    },
+    {
+      "id": "beijing-cheap-5",
+      "name": "隆福寺小吃店",
+      "nameEn": "Longfusi Snack Shop",
+      "type": "local",
+      "cuisine": "Beijing Snacks",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Dongcheng District, Longfusi Street",
+      "coordinates": {
+        "lat": 39.928,
+        "lng": 116.412
+      },
+      "hours": "06:30-20:00",
+      "description": "Hidden gem serving classic Beijing snacks at rock-bottom prices. Try the tanghuoshao (baked sweet sesame bun) and miancha (millet paste). Cash only.",
+      "dishHighlights": [
+        "Tanghuoshao",
+        "Miancha (Millet Paste)",
+        "Aiwowo (Steamed Rice Cake)"
+      ],
+      "tags": [
+        "street",
+        "traditional",
+        "breakfast"
+      ]
+    },
+    {
+      "id": "beijing-cheap-6",
+      "name": "南城香",
+      "nameEn": "Nancheng Xiang",
+      "type": "local",
+      "cuisine": "Beijing Fast Food",
+      "avgPrice": 14,
+      "rating": 4.1,
+      "address": "Multiple locations across Beijing",
+      "coordinates": {
+        "lat": 39.895,
+        "lng": 116.397
+      },
+      "hours": "06:00-22:00",
+      "description": "Popular budget chain with 10-yuan meals. Free unlimited xiaomi porridge with any order. Their bazi meat (braised pork) with rice is the ultimate value meal.",
+      "dishHighlights": [
+        "Bazi Meat (Braised Pork)",
+        "Rice Set Meal",
+        "Free Xiaomi Porridge"
+      ],
+      "tags": [
+        "street",
+        "budget",
+        "fast-food"
+      ]
+    },
+    {
+      "id": "beijing-cheap-7",
+      "name": "超意兴",
+      "nameEn": "Chaoyixing",
+      "type": "local",
+      "cuisine": "Shandong Fast Food",
+      "avgPrice": 14,
+      "rating": 4,
+      "address": "Multiple locations in Beijing",
+      "coordinates": {
+        "lat": 39.91,
+        "lng": 116.38
+      },
+      "hours": "06:00-21:00",
+      "description": "Shandong-style budget restaurant chain. Self-serve model with a variety of home-cooked dishes. Full meal with meat for under 20 yuan. Popular with workers.",
+      "dishHighlights": [
+        "Braised Chicken",
+        "Stir-Fried Vegetables",
+        "Steamed Buns",
+        "Free Porridge"
+      ],
+      "tags": [
+        "street",
+        "budget",
+        "fast-food"
+      ]
+    },
+    {
+      "id": "beijing-cheap-8",
+      "name": "白魁老号饭庄",
+      "nameEn": "Baikui Old Restaurant",
+      "type": "local",
+      "cuisine": "Beijing Halal",
+      "avgPrice": 20,
+      "rating": 4.4,
+      "address": "Dongcheng District, Jiaodaokou",
+      "coordinates": {
+        "lat": 39.94,
+        "lng": 116.409
+      },
+      "hours": "06:00-20:00",
+      "description": "Historic halal restaurant since 1780. Famous for their kaobao (baked cake) and stewed lamb. One of the oldest surviving restaurants in Beijing.",
+      "dishHighlights": [
+        "Kaobao (Baked Cake)",
+        "Stewed Lamb",
+        "Tanghuoshao",
+        "Douzhi"
+      ],
+      "tags": [
+        "street",
+        "halal",
+        "traditional"
+      ]
     }
   ],
   "transport": {

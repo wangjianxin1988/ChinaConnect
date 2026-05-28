@@ -77,13 +77,23 @@ export function CityMap({
 }: CityMapProps) {
   const [selectedMarker, setSelectedMarker] = useState<MapMarker | null>(null);
 
+  // Validate coordinates - fallback to Beijing if invalid
+  const validCoordinates = useMemo(() => {
+    const lat = city.coordinates?.lat;
+    const lng = city.coordinates?.lng;
+    if (typeof lat === "number" && typeof lng === "number" && !isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) {
+      return { lat, lng };
+    }
+    return { lat: 39.9042, lng: 116.4074 };
+  }, [city.coordinates]);
+
   const markers = useMemo(() => {
     const result: MapMarker[] = [];
 
     // City center marker
     result.push({
       id: `${city.slug}-center`,
-      coordinates: city.coordinates,
+      coordinates: validCoordinates,
       name: city.name,
       nameEn: city.nameEn,
       type: "transport",
@@ -154,11 +164,11 @@ export function CityMap({
     }
 
     return result;
-  }, [city, activeTab]);
+  }, [city, activeTab, validCoordinates]);
 
   const initialLocation: DualMapLocation = {
-    lat: city.coordinates.lat,
-    lng: city.coordinates.lng,
+    lat: validCoordinates.lat,
+    lng: validCoordinates.lng,
     name: city.nameEn,
   };
 
