@@ -70,7 +70,11 @@ export type ToolName =
   | "transport_search"
   | "translation_api"
   | "map_service"
-  | "anysearch";
+   | "anysearch"
+   | "ExchangeRate"
+   | "VisaSearch"
+   | "RouteSearch"
+   | "SaveItinerary";
 
 export interface ToolCall {
   name: ToolName;
@@ -304,6 +308,31 @@ export interface ReActState {
 
 // ============================================
 // API Response Types
+// ============================================
+// Route Types
+// ============================================
+
+export interface Route {
+  id: string;
+  type: "train" | "flight" | "driving";
+  from: string;
+  to: string;
+  departureTime: string;
+  arrivalTime: string;
+  duration: string;
+  distance?: string;
+  price: {
+    economy?: number;
+    business?: number;
+    firstClass?: number;
+    secondClass?: number;
+  };
+  operator?: string;
+  number?: string;
+  availability?: "high" | "moderate" | "low";
+  bookingUrl?: string;
+}
+
 // ============================================
 
 export interface WeatherResponse {

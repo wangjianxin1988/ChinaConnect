@@ -20,13 +20,67 @@ export interface SearchResponse {
 }
 
 // ============================================
-// MCP AnySearch Call - Gracefully handle when MCP is not available
+// AnySearch API Integration
 // ============================================
 
-// Always use fallback search to avoid 404 errors
-// MCP mode requires the server to be running with specific protocol
-// Note: This is a placeholder that always returns null to use fallback
-// The actual MCP implementation would require a running MCP server
+const ANYSEARCH_API_KEY = typeof import.meta !== "undefined" ? import.meta.env?.VITE_ANYSEARCH_API_KEY : undefined;
+const ANYSEARCH_BASE_URL = "https://api.anysearch.com/v1";
+
+/**
+ * Call AnySearch API directly (when MCP is not available)
+ */
+async function callAnySearchAPI(
+  query: string,
+  options?: { location?: string; maxResults?: number },
+): Promise<SearchResponse | null> {
+  if (!ANYSEARCH_API_KEY) return null;
+
+  const startTime = Date.now();
+
+  try {
+    const params = new URLSearchParams({
+      q: query,
+      format: "json",
+      max_results: String(options?.maxResults || 10),
+    });
+    if (options?.location) params.set("location", options.location);
+
+    const response = await fetch(`${ANYSEARCH_BASE_URL}/search?${params}`, {
+      headers: {
+        Authorization: `Bearer ${ANYSEARCH_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      signal: AbortSignal.timeout(10000),
+    });
+
+    if (!response.ok) {
+      throw new Error(`AnySearch API error: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    const results: SearchResult[] = (data.results || []).map((r: { title: string; url: string; snippet: string; source?: string; published_date?: string }) => ({
+      title: r.title,
+      url: r.url,
+      snippet: r.snippet,
+      source: r.source,
+      publishedDate: r.published_date,
+    }));
+
+    return {
+      query,
+      results,
+      totalResults: results.length,
+      searchTime: Date.now() - startTime,
+      location: options?.location,
+    };
+  } catch (error) {
+    console.warn("AnySearch API call failed:", error);
+    return null;
+  }
+}
+
+// MCP AnySearch Call - Gracefully handle when MCP is not available
 export async function callMCPAnySearch(_query: string): Promise<SearchResponse | null> {
   // MCP is not reliably available in all deployment environments
   // Return null to always use the fallback search method
@@ -38,6 +92,11 @@ async function isMCPEnabled(): Promise<boolean> {
   // Always return false to use fallback search
   // MCP can be enabled by setting up the MCP server with proper AnySearch API
   return false;
+}
+
+// Check if AnySearch API key is configured
+function isAnySearchAPIAvailable(): boolean {
+  return !!ANYSEARCH_API_KEY;
 }
 
 // Fallback search using public APIs when MCP is not available
@@ -124,7 +183,8 @@ export class AnySearchService {
 
     try {
       this.mcpEnabled = await isMCPEnabled();
-      console.log(`AnySearch: MCP ${this.mcpEnabled ? "enabled" : "disabled"}, using fallback`);
+      const hasAPIKey = isAnySearchAPIAvailable();
+      console.log(`AnySearch: MCP ${this.mcpEnabled ? "enabled" : "disabled"}, API Key ${hasAPIKey ? "configured" : "not configured"}, using fallback`);
     } catch {
       this.mcpEnabled = false;
     }
@@ -152,17 +212,28 @@ export class AnySearchService {
 
     let response: SearchResponse;
 
+    // Priority: MCP > Direct API > Fallback
     if (this.mcpEnabled) {
       const mcpResult = await callMCPAnySearch(query);
-      response = mcpResult || (await fallbackSearch(query, options?.location));
+      response = mcpResult || (await this.tryDirectAPIOrFallback(query, options?.location));
     } else {
-      response = await fallbackSearch(query, options?.location);
+      response = await this.tryDirectAPIOrFallback(query, options?.location);
     }
 
     // Cache result
     this.searchHistory.set(cacheKey, response);
 
     return response;
+  }
+
+  private async tryDirectAPIOrFallback(query: string, location?: string): Promise<SearchResponse> {
+    // Try direct AnySearch API first
+    const apiResult = await callAnySearchAPI(query, { location, maxResults: 10 });
+    if (apiResult && apiResult.results.length > 0) {
+      return apiResult;
+    }
+    // Fall back to DuckDuckGo
+    return fallbackSearch(query, location);
   }
 
   async searchMultiple(queries: string[]): Promise<SearchResponse[]> {
@@ -196,7 +267,7 @@ export class AnySearchService {
   }
 
   isMCPAvailable(): boolean {
-    return this.mcpEnabled;
+    return this.mcpEnabled || isAnySearchAPIAvailable();
   }
 
   getSearchHistory(): SearchResponse[] {

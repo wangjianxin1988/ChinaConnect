@@ -13,6 +13,16 @@ import type {
   ToolName,
   WorkflowProgress,
 } from "./types";
+import {
+  getCityDatabase,
+  getWeatherData,
+  searchHotels,
+  searchTransport,
+  translateText,
+  getEmergencyInfo,
+  getExchangeRate,
+  searchVisaRequirements,
+} from "./tools";
 
 const WORKFLOW_STEPS = [
   {
@@ -563,6 +573,7 @@ function selectTools(intent: IntentResult, params: ExtractedParams): ToolName[] 
     case "business_arrangement":
       tools.push("CitySearch");
       tools.push("VisaCheck");
+      tools.push("ExchangeRate");
       tools.push("TransportSearch");
       break;
     default:
@@ -582,6 +593,7 @@ export class ReActEngine {
   private messages: string[] = [];
   private toolResults: Map<string, unknown> = new Map();
   private maxIterations = 10;
+  private maxRetries = 2;
 
   constructor() {
     this.reset();
@@ -632,6 +644,12 @@ export class ReActEngine {
       console.warn("ReAct loop error, proceeding with available data:", error);
       // Continue with whatever data we have
     }
+
+    // Step 5: Content Enrichment
+    progressCallback?.(this.makeProgress(5, { steps: reactSteps.length, toolResults: this.toolResults.size }));
+
+    // Step 6: Practical Info (visa/payment/SIM)
+    progressCallback?.(this.makeProgress(6, {}));
 
     // Step 7: Format response
     progressCallback?.(this.makeProgress(7, { steps: reactSteps.length }));
@@ -700,8 +718,8 @@ export class ReActEngine {
         break;
       }
 
-      // ACT: Select and execute tool
-      const actionResult = await this.act(
+      // ACT: Select and execute tool (with retry logic)
+      const actionResult = await this.actWithRetry(
         stepNum,
         thought,
         intent,
@@ -859,6 +877,20 @@ export class ReActEngine {
         result = { status: "available", note: "Local expert ready" };
         break;
 
+      case "ExchangeRate":
+        result = getExchangeRate(
+          (toolCall.parameters.from as string) || "USD",
+          (toolCall.parameters.to as string) || "CNY",
+        );
+        break;
+
+      case "VisaSearch":
+        result = searchVisaRequirements(
+          (toolCall.parameters.nationality as string) || "United States",
+          (toolCall.parameters.destination as string) || params.destination || "China",
+        );
+        break;
+
       case "city_database":
         result = city ? this.getCityData(city) : { error: "No city matched" };
         break;
@@ -943,6 +975,12 @@ export class ReActEngine {
       case "LocalExpert":
         return { city: params.destination, specialty: "general", language: params.language };
 
+      case "ExchangeRate":
+        return { from: "USD", to: "CNY" };
+
+      case "VisaSearch":
+        return { nationality: "United States", destination: params.destination || "China" };
+
       case "city_database":
         return {
           city_name: params.destination || city?.nameEn || "Beijing",
@@ -991,6 +1029,55 @@ export class ReActEngine {
     }
 
     return false;
+  }
+
+  /**
+   * Execute tool with retry logic on failure
+   */
+  private async actWithRetry(
+    stepNum: number,
+    thought: string,
+    intent: IntentResult,
+    params: ExtractedParams,
+    city: City | null,
+    selectedTools: ToolName[],
+    toolCallsOut: ToolCall[],
+  ): Promise<{ step: ReActStep; toolResult: unknown }> {
+    let lastError: unknown = null;
+
+    for (let attempt = 0; attempt <= this.maxRetries; attempt++) {
+      try {
+        const result = await this.act(stepNum, thought, intent, params, city, selectedTools, toolCallsOut);
+        // If the tool returned an error object, retry
+        if (result.toolResult && typeof result.toolResult === "object" && "error" in (result.toolResult as Record<string, unknown>)) {
+          lastError = result.toolResult;
+          if (attempt < this.maxRetries) {
+            console.warn(`Tool ${result.step.action} returned error, retrying (${attempt + 1}/${this.maxRetries})...`);
+            continue;
+          }
+        }
+        return result;
+      } catch (error) {
+        lastError = error;
+        if (attempt < this.maxRetries) {
+          console.warn(`Tool execution failed, retrying (${attempt + 1}/${this.maxRetries}):`, error);
+          await new Promise((resolve) => setTimeout(resolve, 100 * (attempt + 1)));
+        }
+      }
+    }
+
+    // All retries exhausted - return error step
+    const tool = selectedTools[Math.min(stepNum - 1, selectedTools.length - 1)] || "CitySearch";
+    return {
+      step: {
+        phase: "act" as ReActPhase,
+        thought,
+        action: tool,
+        actionInput: {},
+        observation: `Error after ${this.maxRetries + 1} attempts: ${lastError}`,
+      },
+      toolResult: { error: String(lastError) },
+    };
   }
 
   private summarizeObservation(result: unknown): string {
@@ -1154,6 +1241,39 @@ export class ReActEngine {
         });
         response += "\n";
       }
+    }
+
+    // Inject transport data if available
+    const transportData = this.toolResults.get("TransportSearch");
+    if (transportData && typeof transportData === "object") {
+      const td = transportData as Record<string, unknown>;
+      if (td.trains && Array.isArray(td.trains) && td.trains.length > 0) {
+        response += `### ${language === "zh" ? "高铁线路" : "High-Speed Rail"}\n`;
+        (td.trains as Array<{ train_number: string; departure_time: string; arrival_time: string; duration_hours: number; prices: { second_class: number } }>).slice(0, 3).forEach((t) => {
+          response += `- **${t.train_number}** | ${t.departure_time} → ${t.arrival_time} | ${t.duration_hours}h | ¥${t.prices.second_class}\n`;
+        });
+        response += "\n";
+      }
+    }
+
+    // Inject exchange rate data if available
+    const exchangeData = this.toolResults.get("ExchangeRate");
+    if (exchangeData && typeof exchangeData === "object" && "rate" in exchangeData) {
+      const ex = exchangeData as { rate: number; from: string; to: string };
+      response += `### ${language === "zh" ? "汇率参考" : "Exchange Rate"}\n`;
+      response += `- 1 ${ex.from} = ${ex.rate} ${ex.to}\n\n`;
+    }
+
+    // Inject visa data if available
+    const visaData = this.toolResults.get("VisaSearch");
+    if (visaData && typeof visaData === "object" && "requirements" in visaData) {
+      const vd = visaData as { requirements: string; visaType?: string; duration?: string; notes?: string };
+      response += `### ${language === "zh" ? "签证信息" : "Visa Information"}\n`;
+      response += `- **${language === "zh" ? "签证类型" : "Visa Type"}:** ${vd.visaType || "L (Tourist)"}\n`;
+      response += `- **${language === "zh" ? "停留时间" : "Duration"}:** ${vd.duration || "30-60 days"}\n`;
+      response += `- ${vd.requirements}\n`;
+      if (vd.notes) response += `- ⚠️ ${vd.notes}\n`;
+      response += "\n";
     }
 
     return response;

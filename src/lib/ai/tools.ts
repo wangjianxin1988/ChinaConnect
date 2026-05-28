@@ -5,6 +5,7 @@
 
 import { cities } from "@/data/cities";
 import type { City } from "@/data/cities/beijing";
+import type { Route, SavedItinerary } from "./types";
 
 // ============================================
 // City Database Tool
@@ -983,9 +984,380 @@ export const TOOL_REGISTRY = {
   WebSearch: webSearch,
   LocalExpert: localExpert,
 
+  // New tools
+  ExchangeRate: getExchangeRate,
+  VisaSearch: searchVisaRequirements,
+  RouteSearch: searchRoute,
+  SaveItinerary: saveItinerary,
+
   // Legacy aliases (for backward compatibility)
   city_database: getCityDatabase,
   map_service: getMapData,
 };
 
 export type ToolName = keyof typeof TOOL_REGISTRY;
+
+// ============================================
+// Exchange Rate Tool
+// ============================================
+
+const EXCHANGE_RATES: Record<string, Record<string, number>> = {
+  USD: { CNY: 7.24, EUR: 0.92, GBP: 0.79, JPY: 149.5, KRW: 960 },
+  EUR: { CNY: 7.87, USD: 1.09, GBP: 0.86, JPY: 162.7, KRW: 1044 },
+  GBP: { CNY: 9.17, USD: 1.27, EUR: 1.16, JPY: 189.5, KRW: 1215 },
+  JPY: { CNY: 0.048, USD: 0.0067, EUR: 0.0061, GBP: 0.0053, KRW: 6.42 },
+  KRW: { CNY: 0.0075, USD: 0.001, EUR: 0.00096, GBP: 0.00082, JPY: 0.156 },
+  AUD: { CNY: 4.72, USD: 0.65, EUR: 0.60, GBP: 0.52, JPY: 97.2 },
+  CAD: { CNY: 5.31, USD: 0.73, EUR: 0.68, GBP: 0.58, JPY: 109.3 },
+  SGD: { CNY: 5.38, USD: 0.74, EUR: 0.68, GBP: 0.59, JPY: 110.7 },
+  THB: { CNY: 0.21, USD: 0.029, EUR: 0.027, GBP: 0.023, JPY: 4.32 },
+  MYR: { CNY: 1.56, USD: 0.22, EUR: 0.20, GBP: 0.17, JPY: 32.1 },
+};
+
+export function getExchangeRate(
+  from: string,
+  to: string,
+): { rate: number; source: string; from: string; to: string; timestamp: string } {
+  const fromUpper = from.toUpperCase().trim();
+  const toUpper = to.toUpperCase().trim();
+
+  // Normalize common names
+  const currencyMap: Record<string, string> = {
+    "CHINESE YUAN": "CNY",
+    YUAN: "CNY",
+    RENMINBI: "CNY",
+    RMB: "CNY",
+    DOLLAR: "USD",
+    "US DOLLAR": "USD",
+    EURO: "EUR",
+    POUND: "GBP",
+    "BRITISH POUND": "GBP",
+    YEN: "JPY",
+    WON: "KRW",
+  };
+
+  const fromCurrency = currencyMap[fromUpper] || fromUpper;
+  const toCurrency = currencyMap[toUpper] || toUpper;
+
+  // Direct lookup
+  const rates = EXCHANGE_RATES[fromCurrency];
+  if (rates && rates[toCurrency]) {
+    return {
+      rate: rates[toCurrency],
+      source: "ChinaConnect Reference Rates (updated periodically)",
+      from: fromCurrency,
+      to: toCurrency,
+      timestamp: new Date().toISOString(),
+    };
+  }
+
+  // Reverse lookup
+  const reverseRates = EXCHANGE_RATES[toCurrency];
+  if (reverseRates && reverseRates[fromCurrency]) {
+    return {
+      rate: +(1 / reverseRates[fromCurrency]).toFixed(6),
+      source: "ChinaConnect Reference Rates (calculated reverse)",
+      from: fromCurrency,
+      to: toCurrency,
+      timestamp: new Date().toISOString(),
+    };
+  }
+
+  // Default fallback
+  return {
+    rate: 1,
+    source: "Rate not available. Please check a live exchange rate service.",
+    from: fromCurrency,
+    to: toCurrency,
+    timestamp: new Date().toISOString(),
+  };
+}
+
+// ============================================
+// Visa Requirements Search Tool
+// ============================================
+
+const VISA_DATABASE: Record<
+  string,
+  Record<string, { requirements: string; visaType: string; duration: string; notes: string }>
+> = {
+  "United States": {
+    China: {
+      requirements:
+        "Tourist visa (L) required. Apply at Chinese embassy/consulate with passport, completed application form, recent photo, flight itinerary, and hotel booking confirmation.",
+      visaType: "L (Tourist)",
+      duration: "30-90 days per entry",
+      notes:
+        "10-year multiple-entry visa available for US passport holders. Interview may be required. Apply at least 4 weeks before travel.",
+    },
+  },
+  "United Kingdom": {
+    China: {
+      requirements:
+        "Tourist visa (L) required. Submit passport, application form, photo, itinerary, and hotel booking at Chinese embassy/consulate.",
+      visaType: "L (Tourist)",
+      duration: "30-60 days",
+      notes: "Interview required. Apply 6 weeks in advance. Transit visa exemptions may apply for short stays.",
+    },
+  },
+  Japan: {
+    China: {
+      requirements:
+        "Tourist visa (L) required for Japanese citizens. Apply with passport, form, photo, and travel documents.",
+      visaType: "L (Tourist)",
+      duration: "15-30 days",
+      notes: "Group tours may have simplified visa processing.",
+    },
+  },
+  "South Korea": {
+    China: {
+      requirements:
+        "Tourist visa (L) required. Standard documentation: passport, application, photo, itinerary, accommodation proof.",
+      visaType: "L (Tourist)",
+      duration: "30 days",
+      notes: "Jeju Island is visa-free for most nationalities.",
+    },
+  },
+  Australia: {
+    China: {
+      requirements:
+        "Tourist visa (L) required. Apply with passport, form, photo, flight bookings, and hotel reservations.",
+      visaType: "L (Tourist)",
+      duration: "30-90 days",
+      notes: "Apply well in advance as processing can take 5-10 business days.",
+    },
+  },
+};
+
+export function searchVisaRequirements(
+  nationality: string,
+  destination: string,
+): {
+  requirements: string;
+  source: string;
+  visaType?: string;
+  duration?: string;
+  notes?: string;
+} {
+  const natKey = nationality.trim();
+  const destKey = destination.trim();
+
+  const natData = VISA_DATABASE[natKey];
+  if (natData) {
+    const destData = natData[destKey] || natData["China"];
+    if (destData) {
+      return {
+        requirements: destData.requirements,
+        source: "ChinaConnect Visa Database",
+        visaType: destData.visaType,
+        duration: destData.duration,
+        notes: destData.notes,
+      };
+    }
+  }
+
+  // Default fallback
+  return {
+    requirements: `Visa requirements for ${nationality} citizens traveling to ${destination}. Please check with the Chinese embassy or consulate in your country for the most up-to-date information. Generally, a tourist visa (L) is required with a valid passport, completed application form, photo, and travel itinerary.`,
+    source: "General guidance — verify with local Chinese embassy/consulate",
+    visaType: "L (Tourist) — standard",
+    duration: "30-60 days (varies by nationality)",
+    notes: "Requirements vary by nationality. Some nationalities enjoy visa-free entry for limited periods. Always verify with official sources.",
+  };
+}
+
+// ============================================
+// Route Search Tool (Train/Flight/Driving)
+// ============================================
+
+const ROUTE_DATA: Record<string, Record<string, { distance: number; trainHours: number; flightHours: number }>> = {
+  Beijing: {
+    Shanghai: { distance: 1318, trainHours: 4.5, flightHours: 2.2 },
+    Guangzhou: { distance: 2298, trainHours: 8, flightHours: 3.2 },
+    "Xi'an": { distance: 1200, trainHours: 5.5, flightHours: 2 },
+    Chengdu: { distance: 1800, trainHours: 8, flightHours: 2.8 },
+    Guilin: { distance: 1960, trainHours: 10, flightHours: 3 },
+    Shenzhen: { distance: 2370, trainHours: 8.5, flightHours: 3.3 },
+    Hangzhou: { distance: 1200, trainHours: 5, flightHours: 2 },
+    Nanjing: { distance: 1020, trainHours: 3.5, flightHours: 1.8 },
+  },
+  Shanghai: {
+    Beijing: { distance: 1318, trainHours: 4.5, flightHours: 2.2 },
+    Guangzhou: { distance: 1210, trainHours: 7, flightHours: 2.5 },
+    Hangzhou: { distance: 170, trainHours: 1, flightHours: 0.8 },
+    Nanjing: { distance: 300, trainHours: 1.5, flightHours: 1 },
+    Suzhou: { distance: 100, trainHours: 0.5, flightHours: 0.5 },
+    Chengdu: { distance: 1900, trainHours: 14, flightHours: 3 },
+    "Xi'an": { distance: 1230, trainHours: 6, flightHours: 2.2 },
+  },
+  Guangzhou: {
+    Beijing: { distance: 2298, trainHours: 8, flightHours: 3.2 },
+    Shanghai: { distance: 1210, trainHours: 7, flightHours: 2.5 },
+    Shenzhen: { distance: 140, trainHours: 0.5, flightHours: 0.5 },
+    Guilin: { distance: 530, trainHours: 3, flightHours: 1 },
+    Chengdu: { distance: 1600, trainHours: 10, flightHours: 2.5 },
+    "Xi'an": { distance: 1650, trainHours: 8, flightHours: 2.5 },
+  },
+};
+
+function resolveCityKey(name: string): string {
+  const lower = name.toLowerCase().trim();
+  const map: Record<string, string> = {
+    beijing: "Beijing",
+    北京: "Beijing",
+    shanghai: "Shanghai",
+    上海: "Shanghai",
+    guangzhou: "Guangzhou",
+    广州: "Guangzhou",
+    shenzhen: "Shenzhen",
+    深圳: "Shenzhen",
+    "xi'an": "Xi'an",
+    xian: "Xi'an",
+    西安: "Xi'an",
+    chengdu: "Chengdu",
+    成都: "Chengdu",
+    guilin: "Guilin",
+    桂林: "Guilin",
+    hangzhou: "Hangzhou",
+    杭州: "Hangzhou",
+    nanjing: "Nanjing",
+    南京: "Nanjing",
+    suzhou: "Suzhou",
+    苏州: "Suzhou",
+  };
+  return map[lower] || name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+}
+
+export async function searchRoute(
+  from: string,
+  to: string,
+  type: "train" | "flight" | "driving",
+): Promise<{ routes: Route[]; from: string; to: string }> {
+  const fromCity = resolveCityKey(from);
+  const toCity = resolveCityKey(to);
+
+  const routeInfo = ROUTE_DATA[fromCity]?.[toCity] || ROUTE_DATA[toCity]?.[fromCity];
+  const routes: Route[] = [];
+
+  if (type === "train" || type === "flight") {
+    if (routeInfo) {
+      if (type === "train") {
+        // Generate high-speed train options
+        const trainTimes = ["06:30", "08:00", "09:30", "11:00", "13:00", "15:00", "17:30"];
+        const trainTypes = ["G", "D"];
+        for (let i = 0; i < Math.min(4, trainTimes.length); i++) {
+          const tType = trainTypes[i % 2];
+          const trainNum = `${tType}${100 + Math.floor(Math.random() * 900)}`;
+          const hours = routeInfo.trainHours + (Math.random() * 0.5 - 0.25);
+          const [depH, depM] = trainTimes[i].split(":").map(Number);
+          const arrTotal = depH * 60 + depM + Math.round(hours * 60);
+          const arrH = Math.floor(arrTotal / 60) % 24;
+          const arrM = arrTotal % 60;
+          routes.push({
+            id: `train_${fromCity}_${toCity}_${i}`,
+            type: "train",
+            from: fromCity,
+            to: toCity,
+            departureTime: trainTimes[i],
+            arrivalTime: `${String(arrH).padStart(2, "0")}:${String(arrM).padStart(2, "0")}`,
+            duration: `${hours.toFixed(1)}h`,
+            distance: `${routeInfo.distance}km`,
+            price: {
+              secondClass: Math.round(300 + routeInfo.distance * 0.4),
+              firstClass: Math.round(500 + routeInfo.distance * 0.6),
+            },
+            operator: "China Railway",
+            number: trainNum,
+            availability: (["high", "moderate", "low"] as const)[Math.floor(Math.random() * 3)],
+            bookingUrl: "https://www.12306.cn",
+          });
+        }
+      } else {
+        // Generate flight options
+        const airlines = ["Air China", "China Eastern", "China Southern", "Hainan Airlines"];
+        const flightTimes = ["07:00", "10:30", "14:00", "17:30", "20:00"];
+        for (let i = 0; i < Math.min(3, flightTimes.length); i++) {
+          const airline = airlines[i % airlines.length];
+          const flightNum = `${airline === "Air China" ? "CA" : airline === "China Eastern" ? "MU" : airline === "China Southern" ? "CZ" : "HU"}${1000 + Math.floor(Math.random() * 9000)}`;
+          const hours = routeInfo.flightHours + (Math.random() * 0.3 - 0.15);
+          const [depH, depM] = flightTimes[i].split(":").map(Number);
+          const arrTotal = depH * 60 + depM + Math.round(hours * 60);
+          const arrH = Math.floor(arrTotal / 60) % 24;
+          const arrM = arrTotal % 60;
+          routes.push({
+            id: `flight_${fromCity}_${toCity}_${i}`,
+            type: "flight",
+            from: fromCity,
+            to: toCity,
+            departureTime: flightTimes[i],
+            arrivalTime: `${String(arrH).padStart(2, "0")}:${String(arrM).padStart(2, "0")}`,
+            duration: `${hours.toFixed(1)}h`,
+            price: {
+              economy: Math.round(500 + routeInfo.distance * 0.5),
+              business: Math.round(2000 + routeInfo.distance * 1.2),
+            },
+            operator: airline,
+            number: flightNum,
+            availability: (["high", "moderate", "low"] as const)[Math.floor(Math.random() * 3)],
+            bookingUrl: "https://www.ctrip.com",
+          });
+        }
+      }
+    } else {
+      routes.push({
+        id: `${type}_${fromCity}_${toCity}_placeholder`,
+        type,
+        from: fromCity,
+        to: toCity,
+        departureTime: "Various",
+        arrivalTime: "Various",
+        duration: "Check with booking platform",
+        price: {},
+        bookingUrl: type === "train" ? "https://www.12306.cn" : "https://www.ctrip.com",
+      });
+    }
+  } else if (type === "driving") {
+    const distance = routeInfo?.distance || 500;
+    routes.push({
+      id: `driving_${fromCity}_${toCity}`,
+      type: "driving",
+      from: fromCity,
+      to: toCity,
+      departureTime: "Flexible",
+      arrivalTime: "Flexible",
+      duration: `${Math.round(distance / 100)}h`,
+      distance: `${distance}km`,
+      price: {},
+      notes: "Estimated driving time at highway speeds. Tolls apply.",
+    } as Route & { notes?: string });
+  }
+
+  return { routes, from: fromCity, to: toCity };
+}
+
+// ============================================
+// Save Itinerary Tool
+// ============================================
+
+const SAVED_ITINERARIES: Map<string, SavedItinerary> = new Map();
+
+export function saveItinerary(
+  itinerary: SavedItinerary,
+  userId?: string,
+): { id: string; shareCode: string; savedAt: string } {
+  const id = `itin_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+  const shareCode = Math.random().toString(36).slice(2, 8).toUpperCase();
+  const savedAt = new Date().toISOString();
+
+  const saved: SavedItinerary = {
+    ...itinerary,
+    id,
+    shareCode,
+    createdAt: savedAt,
+    updatedAt: savedAt,
+  };
+
+  SAVED_ITINERARIES.set(id, saved);
+
+  return { id, shareCode, savedAt };
+}

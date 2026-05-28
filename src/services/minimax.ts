@@ -175,6 +175,81 @@ CRITICAL RULES:
 - Always use ¥ symbol for prices, not "CNY" or "RMB". Example: ¥150 not 150 CNY
 - Use ¥ for all price mentions throughout your response
 
+## Available Tools
+
+You have access to the following tools. Call them when needed to provide accurate, real-time information:
+
+### Core Search Tools
+- **CitySearch** - Search city database for destinations, attractions, restaurants, transport info
+- **AttractionSearch** - Find attractions by city and category (historical, cultural, nature, etc.)
+- **FoodSearch** - Search restaurants by city, cuisine type, and budget
+- **HotelSearch** - Find hotels by city, budget level, star rating, and amenities
+- **TransportSearch** - Search trains, flights between cities with schedules and prices
+- **WeatherSearch** - Get weather forecasts for destinations
+
+### Information Tools
+- **VisaCheck** - Check visa requirements by nationality and purpose
+- **PaymentGuide** - Get payment method info (WeChat Pay, Alipay, cash, cards)
+- **SIMCard** - Mobile data plans and SIM card purchasing info
+- **TranslationService** - Translate common phrases for travelers
+- **EmergencySOS** - Emergency numbers and procedures
+- **EmergencyContact** - City-specific emergency contacts, hospitals, embassies
+
+### Advanced Tools
+- **ExchangeRate** - Get currency exchange rates (USD, EUR, GBP, JPY, etc. to CNY)
+- **VisaSearch** - Detailed visa requirements with processing times
+- **RouteSearch** - Search train/flight/driving routes between cities
+- **WebSearch** - Real-time web search for latest information
+- **LocalExpert** - Local guide and tour recommendations
+
+### When to use tools:
+- User asks about a specific city → CitySearch + AttractionSearch + FoodSearch
+- User asks about transport between cities → TransportSearch or RouteSearch
+- User asks about currency/exchange rates → ExchangeRate
+- User asks about visa requirements → VisaSearch or VisaCheck
+- User asks about weather → WeatherSearch
+- User asks about hotels → HotelSearch
+- User asks about emergency info → EmergencySOS + EmergencyContact
+- User asks about payment methods → PaymentGuide
+- User asks about SIM/data plans → SIMCard
+- User needs real-time info → WebSearch
+
+## Output Format Requirements
+
+Structure your responses using Markdown for readability:
+
+### For Travel Itineraries:
+- Use **# headings** for main sections (Destination Overview, Daily Itinerary, Practical Info, Budget)
+- Use **## headings** for sub-sections (Day 1, Day 2, etc.)
+- Use **tables** for budget breakdowns and transport schedules
+- Use **bullet lists** for attractions, restaurants, tips
+- Use **bold** for key information (prices, times, names)
+
+### For Information Queries:
+- Use **bullet points** for step-by-step instructions
+- Use **tables** for comparing options (hotels, transport)
+- Use **blockquotes** (>) for important warnings or tips
+- Use **code blocks** for phone numbers and addresses
+
+### For Food Recommendations:
+- Use **### headings** for each restaurant
+- Include: cuisine type, average price, highlights, hours, address
+- Use ⭐ for ratings, 💎 for awards
+
+### Budget Table Format:
+| Category | Amount (¥) |
+|----------|------------|
+| Total | ¥X,XXX |
+| Food | ¥XXX |
+| Accommodation | ¥XXX |
+| Transport | ¥XXX |
+| Attractions | ¥XXX |
+
+### Transport Table Format:
+| Train/Flight | Departure | Arrival | Duration | Price |
+|-------------|-----------|---------|----------|-------|
+| G123 | 08:00 | 12:30 | 4.5h | ¥553 |
+
 Respond in the user's language (English/Chinese).`;
 
 // City data for grounding

@@ -21,6 +21,8 @@ const STORAGE_KEYS = {
   PREFERENCES: "chinaconnect_user_preferences",
   CONVERSATIONS: "chinaconnect_conversations",
   SETTINGS: "chinaconnect_settings",
+  CITY_CACHE: "chinaconnect_city_cache",
+  ROUTE_CACHE: "chinaconnect_route_cache",
 } as const;
 
 // ============================================
@@ -421,16 +423,166 @@ export class LongTermMemoryStore {
 }
 
 // ============================================
+// City Knowledge Cache
+// ============================================
+
+interface CachedCityData {
+  citySlug: string;
+  data: Record<string, unknown>;
+  cachedAt: number;
+  expiresAt: number;
+}
+
+export class CityKnowledgeCache {
+  private cache: Map<string, CachedCityData> = new Map();
+  private readonly TTL = 30 * 60 * 1000; // 30 minutes
+  private readonly MAX_ENTRIES = 50;
+
+  get(citySlug: string): Record<string, unknown> | null {
+    const entry = this.cache.get(citySlug);
+    if (!entry) return null;
+    if (Date.now() > entry.expiresAt) {
+      this.cache.delete(citySlug);
+      return null;
+    }
+    return entry.data;
+  }
+
+  set(citySlug: string, data: Record<string, unknown>): void {
+    // Evict oldest if at capacity
+    if (this.cache.size >= this.maxEntries) {
+      const oldest = this.cache.keys().next().value;
+      if (oldest) this.cache.delete(oldest);
+    }
+    this.cache.set(citySlug, {
+      citySlug,
+      data,
+      cachedAt: Date.now(),
+      expiresAt: Date.now() + this.TTL,
+    });
+  }
+
+  has(citySlug: string): boolean {
+    return this.get(citySlug) !== null;
+  }
+
+  clear(): void {
+    this.cache.clear();
+  }
+
+  get size(): number {
+    return this.cache.size;
+  }
+
+  private get maxEntries(): number {
+    return this.MAX_ENTRIES;
+  }
+}
+
+// ============================================
+// Common Route Cache
+// ============================================
+
+interface CachedRouteData {
+  routeKey: string;
+  from: string;
+  to: string;
+  type: string;
+  data: unknown;
+  cachedAt: number;
+  expiresAt: number;
+}
+
+export class RouteCache {
+  private cache: Map<string, CachedRouteData> = new Map();
+  private readonly TTL = 60 * 60 * 1000; // 1 hour
+  private readonly MAX_ENTRIES = 100;
+
+  private makeKey(from: string, to: string, type: string): string {
+    return `${from.toLowerCase()}_${to.toLowerCase()}_${type}`;
+  }
+
+  get(from: string, to: string, type: string): unknown | null {
+    const key = this.makeKey(from, to, type);
+    const entry = this.cache.get(key);
+    if (!entry) return null;
+    if (Date.now() > entry.expiresAt) {
+      this.cache.delete(key);
+      return null;
+    }
+    return entry.data;
+  }
+
+  set(from: string, to: string, type: string, data: unknown): void {
+    const key = this.makeKey(from, to, type);
+    if (this.cache.size >= this.maxEntries) {
+      const oldest = this.cache.keys().next().value;
+      if (oldest) this.cache.delete(oldest);
+    }
+    this.cache.set(key, {
+      routeKey: key,
+      from,
+      to,
+      type,
+      data,
+      cachedAt: Date.now(),
+      expiresAt: Date.now() + this.TTL,
+    });
+  }
+
+  has(from: string, to: string, type: string): boolean {
+    return this.get(from, to, type) !== null;
+  }
+
+  clear(): void {
+    this.cache.clear();
+  }
+
+  get size(): number {
+    return this.cache.size;
+  }
+
+  private get maxEntries(): number {
+    return this.MAX_ENTRIES;
+  }
+
+  getPopularRoutes(): Array<{ from: string; to: string; type: string; count: number }> {
+    return Array.from(this.cache.values()).map((entry) => ({
+      from: entry.from,
+      to: entry.to,
+      type: entry.type,
+      count: 1,
+    }));
+  }
+}
+
+// ============================================
 // Singleton instances
 // ============================================
 
 let longTermInstance: LongTermMemoryStore | null = null;
+let cityCacheInstance: CityKnowledgeCache | null = null;
+let routeCacheInstance: RouteCache | null = null;
 
 export function getLongTermMemory(): LongTermMemoryStore {
   if (!longTermInstance) {
     longTermInstance = new LongTermMemoryStore();
   }
   return longTermInstance;
+}
+
+export function getCityCache(): CityKnowledgeCache {
+  if (!cityCacheInstance) {
+    cityCacheInstance = new CityKnowledgeCache();
+  }
+  return cityCacheInstance;
+}
+
+export function getRouteCache(): RouteCache {
+  if (!routeCacheInstance) {
+    routeCacheInstance = new RouteCache();
+  }
+  return routeCacheInstance;
 }
 
 // ============================================
@@ -440,5 +592,7 @@ export function getLongTermMemory(): LongTermMemoryStore {
 export function useMemory() {
   return {
     longTerm: getLongTermMemory(),
+    cityCache: getCityCache(),
+    routeCache: getRouteCache(),
   };
 }
