@@ -358,7 +358,7 @@ Remember:
         if (duration < 800 && responseText) {
           // Split into word-aware chunks for natural typing feel
           const totalLen = responseText.length;
-          const targetChunks = Math.min(40, Math.max(10, Math.floor(totalLen / 30)));
+          const targetChunks = Math.min(20, Math.max(5, Math.floor(totalLen / 50)));
           const baseChunkSize = Math.floor(totalLen / targetChunks);
           let pos = 0;
           while (pos < totalLen) {
@@ -378,7 +378,7 @@ Remember:
             setMessages((prev) =>
               prev.map((m) => (m.id === assistantMsg.id ? { ...m, content: chunk } : m)),
             );
-            await new Promise((resolve) => setTimeout(resolve, 10 + Math.random() * 10));
+            await new Promise((resolve) => setTimeout(resolve, 2));
           }
         }
 

@@ -104,52 +104,24 @@ async function fallbackSearch(query: string, location?: string): Promise<SearchR
   const startTime = Date.now();
 
   try {
-    // Use DuckDuckGo Instant Answer API (free, no API key)
-    const ddgUrl = `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_html=1`;
-
-    const response = await fetch(ddgUrl, {
-      signal: AbortSignal.timeout(8000),
-    });
-
-    if (!response.ok) {
-      throw new Error(`Search API error: ${response.status}`);
+    // Try DuckDuckGo Instant Answer API first
+    const ddgResult = await searchDuckDuckGo(query);
+    if (ddgResult.results.length > 0) {
+      return { ...ddgResult, searchTime: Date.now() - startTime, location };
     }
 
-    const data = await response.json();
-
-    const results: SearchResult[] = [];
-
-    // Parse DuckDuckGo response
-    if (data.RelatedTopics && Array.isArray(data.RelatedTopics)) {
-      for (const topic of data.RelatedTopics.slice(0, 10)) {
-        if (topic.Text && topic.FirstURL) {
-          results.push({
-            title: extractTitle(topic.Text),
-            url: topic.FirstURL,
-            snippet: topic.Text,
-            source: "DuckDuckGo",
-          });
-        }
-      }
+    // Fallback to Wikipedia API for factual queries
+    const wikiResult = await searchWikipedia(query);
+    if (wikiResult.results.length > 0) {
+      return { ...wikiResult, searchTime: Date.now() - startTime, location };
     }
 
-    // Add Answer if available
-    if (data.AbstractText) {
-      results.unshift({
-        title: data.Heading || "Answer",
-        url: data.AbstractURL || "",
-        snippet: data.AbstractText,
-        source: data.ImageIsLogo ? undefined : "Wikipedia",
-        publishedDate: data.AbstractSource,
-      });
-    }
-
+    // If all fail, return empty
     return {
       query,
-      results,
-      totalResults: results.length,
+      results: [],
+      totalResults: 0,
       searchTime: Date.now() - startTime,
-      location: location || data.geo?.country || undefined,
     };
   } catch (error) {
     console.error("Fallback search failed:", error);
@@ -160,6 +132,109 @@ async function fallbackSearch(query: string, location?: string): Promise<SearchR
       searchTime: Date.now() - startTime,
     };
   }
+}
+
+async function searchDuckDuckGo(query: string): Promise<{ results: SearchResult[] }> {
+  const results: SearchResult[] = [];
+
+  try {
+    const ddgUrl = `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_html=1&skip_disambig=1`;
+
+    const response = await fetch(ddgUrl, {
+      signal: AbortSignal.timeout(8000),
+    });
+
+    if (!response.ok) {
+      return { results };
+    }
+
+    const data = await response.json();
+
+    // Add Answer/Abstract if available
+    if (data.AbstractText) {
+      results.push({
+        title: data.Heading || "Answer",
+        url: data.AbstractURL || "",
+        snippet: data.AbstractText,
+        source: data.AbstractSource || "DuckDuckGo",
+      });
+    }
+
+    // Parse RelatedTopics
+    if (data.RelatedTopics && Array.isArray(data.RelatedTopics)) {
+      for (const topic of data.RelatedTopics.slice(0, 8)) {
+        if (topic.Text && topic.FirstURL) {
+          results.push({
+            title: extractTitle(topic.Text),
+            url: topic.FirstURL,
+            snippet: topic.Text,
+            source: "DuckDuckGo",
+          });
+        }
+        // Handle sub-topics
+        if (topic.Topics && Array.isArray(topic.Topics)) {
+          for (const subtopic of topic.Topics.slice(0, 3)) {
+            if (subtopic.Text && subtopic.FirstURL) {
+              results.push({
+                title: extractTitle(subtopic.Text),
+                url: subtopic.FirstURL,
+                snippet: subtopic.Text,
+                source: "DuckDuckGo",
+              });
+            }
+          }
+        }
+      }
+    }
+
+    // Add Infobox data if available
+    if (data.Infobox && data.Infobox.content) {
+      for (const item of data.Infobox.content.slice(0, 3)) {
+        if (item.label && item.value) {
+          results.push({
+            title: `${data.Heading || "Info"} - ${item.label}`,
+            url: data.AbstractURL || "",
+            snippet: `${item.label}: ${item.value}`,
+            source: "DuckDuckGo Infobox",
+          });
+        }
+      }
+    }
+  } catch (e) {
+    console.warn("DuckDuckGo search failed:", e);
+  }
+
+  return { results };
+}
+
+async function searchWikipedia(query: string): Promise<{ results: SearchResult[] }> {
+  const results: SearchResult[] = [];
+
+  try {
+    // Use Wikipedia API for travel/city info
+    const searchUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(query.split(" ").slice(0, 3).join(" "))}`;
+
+    const response = await fetch(searchUrl, {
+      signal: AbortSignal.timeout(6000),
+      headers: { "Accept": "application/json" },
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      if (data.extract) {
+        results.push({
+          title: data.title || query,
+          url: data.content_urls?.desktop?.page || "",
+          snippet: data.extract.slice(0, 500),
+          source: "Wikipedia",
+        });
+      }
+    }
+  } catch (e) {
+    console.warn("Wikipedia search failed:", e);
+  }
+
+  return { results };
 }
 
 function extractTitle(text: string): string {

@@ -113,47 +113,61 @@ export function getWeatherData(
   location: { city: string; coordinates?: { lat: number; lng: number } };
   forecast: unknown[];
 } {
-  const city = findCity(cityName);
+  try {
+    const city = findCity(cityName);
 
-  const conditions = ["sunny", "partly_cloudy", "cloudy", "rainy"];
-  const forecast = [];
+    const conditions = ["sunny", "partly_cloudy", "cloudy", "rainy"];
+    const forecast = [];
 
-  for (let i = 0; i < days; i++) {
-    const date = new Date();
-    date.setDate(date.getDate() + i);
+    for (let i = 0; i < Math.max(1, Math.min(days, 14)); i++) {
+      const date = new Date();
+      date.setDate(date.getDate() + i);
 
-    const baseTemp = city?.climate?.avgSummerTemp
-      ? Number.parseInt(String(city.climate.avgSummerTemp))
-      : 25;
-    const variance = Math.floor(Math.random() * 6) - 3;
+      const baseTemp = city?.climate?.avgSummerTemp
+        ? Number.parseInt(String(city.climate.avgSummerTemp))
+        : 25;
+      const variance = Math.floor(Math.random() * 6) - 3;
+      const condition = conditions[Math.floor(Math.random() * conditions.length)];
 
-    forecast.push({
-      date: date.toISOString().split("T")[0],
-      weather: {
-        condition: conditions[Math.floor(Math.random() * conditions.length)],
-        temperature_c: {
-          min: baseTemp + variance - 5,
-          max: baseTemp + variance + 3,
+      forecast.push({
+        date: date.toISOString().split("T")[0],
+        weather: {
+          condition,
+          temperature_c: {
+            min: baseTemp + variance - 5,
+            max: baseTemp + variance + 3,
+          },
+          humidity_percent: 40 + Math.floor(Math.random() * 30),
+          wind_kmh: 5 + Math.floor(Math.random() * 15),
+          uv_index: 5 + Math.floor(Math.random() * 4),
         },
-        humidity_percent: 40 + Math.floor(Math.random() * 30),
-        wind_kmh: 5 + Math.floor(Math.random() * 15),
-        uv_index: 5 + Math.floor(Math.random() * 4),
-      },
-      travel_advisory: {
-        good_for_outdoor: true,
-        warnings: [],
-        recommendations: ["Bring sunscreen", "Stay hydrated"],
-      },
-    });
-  }
+        travel_advisory: {
+          good_for_outdoor: condition !== "rainy",
+          warnings: condition === "rainy" ? ["Bring an umbrella"] : [],
+          recommendations:
+            condition === "sunny"
+              ? ["Bring sunscreen", "Stay hydrated"]
+              : condition === "rainy"
+                ? ["Bring rain gear", "Plan indoor activities"]
+                : ["Dress in layers", "Check weather updates"],
+        },
+      });
+    }
 
-  return {
-    location: {
-      city: city?.nameEn || cityName,
-      coordinates: city?.coordinates,
-    },
-    forecast,
-  };
+    return {
+      location: {
+        city: city?.nameEn || cityName || "Unknown",
+        coordinates: city?.coordinates,
+      },
+      forecast,
+    };
+  } catch (error) {
+    console.warn("getWeatherData error:", error);
+    return {
+      location: { city: cityName || "Unknown" },
+      forecast: [],
+    };
+  }
 }
 
 // ============================================
@@ -169,60 +183,65 @@ export function searchHotels(params: {
   user_rating_min?: number;
   language?: string;
 }): { hotels: unknown[]; filters_applied: unknown; total_results: number } {
-  const city = findCity(params.city);
+  try {
+    const city = findCity(params.city);
 
-  if (!city?.hotels) {
+    if (!city?.hotels) {
+      return { hotels: [], filters_applied: params, total_results: 0 };
+    }
+
+    let hotels = [...city.hotels];
+
+    // Filter by budget level
+    if (params.budget_level) {
+      const budgetMap: Record<string, string[]> = {
+        budget: ["budget"],
+        medium: ["mid", "budget"],
+        luxury: ["luxury", "mid"],
+      };
+      const target = budgetMap[params.budget_level] || ["mid"];
+      hotels = hotels.filter((h) => target.includes(h.budget));
+    }
+
+    // Filter by price range
+    if (params.price_range) {
+      hotels = hotels.filter((h) => {
+        const priceMatch = h.priceRange.match(/(\d+)-(\d+)/);
+        if (!priceMatch) return true;
+        const min = Number.parseInt(priceMatch[1]);
+        return min >= (params.price_range!.min || 0) && min <= (params.price_range!.max || 99999);
+      });
+    }
+
+    // Filter by rating
+    if (params.user_rating_min) {
+      hotels = hotels.filter((h) => h.rating >= params.user_rating_min!);
+    }
+
+    const result = hotels.slice(0, 10).map((h) => ({
+      name_en: h.nameEn || h.name || "Unknown Hotel",
+      name_zh: h.name || "",
+      star_rating: h.budget === "luxury" ? 5 : h.budget === "mid" ? 4 : 3,
+      user_rating: h.rating ?? 0,
+      price_per_night_cny: h.priceRange?.split("-")[0]?.replace(/[^0-9]/g, "") || "N/A",
+      price_range: h.priceRange || "Contact hotel",
+      location: {
+        address: h.address || "City center",
+        nearest_metro: h.nearestMetro || undefined,
+      },
+      highlights: h.highlights || [],
+      booking_tips: h.bookingTips || "Book in advance for best rates",
+    }));
+
+    return {
+      hotels: result,
+      filters_applied: params,
+      total_results: result.length,
+    };
+  } catch (error) {
+    console.warn("searchHotels error:", error);
     return { hotels: [], filters_applied: params, total_results: 0 };
   }
-
-  let hotels = [...city.hotels];
-
-  // Filter by budget level
-  if (params.budget_level) {
-    const budgetMap: Record<string, string[]> = {
-      budget: ["budget"],
-      medium: ["mid", "budget"],
-      luxury: ["luxury", "mid"],
-    };
-    const target = budgetMap[params.budget_level] || ["mid"];
-    hotels = hotels.filter((h) => target.includes(h.budget));
-  }
-
-  // Filter by price range
-  if (params.price_range) {
-    hotels = hotels.filter((h) => {
-      const priceMatch = h.priceRange.match(/(\d+)-(\d+)/);
-      if (!priceMatch) return true;
-      const min = Number.parseInt(priceMatch[1]);
-      return min >= (params.price_range!.min || 0) && min <= (params.price_range!.max || 99999);
-    });
-  }
-
-  // Filter by rating
-  if (params.user_rating_min) {
-    hotels = hotels.filter((h) => h.rating >= params.user_rating_min!);
-  }
-
-  const result = hotels.slice(0, 10).map((h) => ({
-    name_en: h.nameEn,
-    name_zh: h.name,
-    star_rating: h.budget === "luxury" ? 5 : h.budget === "mid" ? 4 : 3,
-    user_rating: h.rating,
-    price_per_night_cny: h.priceRange.split("-")[0]?.replace(/[^0-9]/g, "") || "?",
-    price_range: h.priceRange,
-    location: {
-      address: h.address,
-      nearest_metro: h.nearestMetro || undefined,
-    },
-    highlights: h.highlights,
-    booking_tips: h.bookingTips,
-  }));
-
-  return {
-    hotels: result,
-    filters_applied: params,
-    total_results: result.length,
-  };
 }
 
 // ============================================
@@ -237,61 +256,64 @@ export function searchTransport(params: {
   time_preference?: "morning" | "afternoon" | "evening" | "any";
   passengers?: { adults: number; children: number; infants: number };
 }): { trains: unknown[]; flights: unknown[]; error?: string } {
-  // Simulated transport data for demonstration
-  const trainTypes = ["G", "D"]; // High-speed
+  try {
+    const trainTypes = ["G", "D"];
+    const trains = [];
 
-  const trains = [];
-
-  if (params.transport_type !== "flight") {
-    // Generate sample high-speed trains
-    const times = ["08:00", "09:30", "11:00", "13:00", "14:30", "16:00", "18:00"];
-    for (const time of times.slice(0, 4)) {
-      const type = trainTypes[Math.floor(Math.random() * trainTypes.length)];
-      trains.push({
-        train_number: `${type}${Math.floor(Math.random() * 900 + 100)}`,
-        train_type: "high_speed",
-        from_station: params.from_city,
-        to_station: params.to_city,
-        departure_time: time,
-        arrival_time: calculateArrival(time, 3 + Math.random() * 2),
-        duration_hours: +(3 + Math.random() * 2).toFixed(1),
-        distance_km: Math.floor(800 + Math.random() * 800),
-        prices: {
-          second_class: Math.floor(300 + Math.random() * 200),
-          first_class: Math.floor(500 + Math.random() * 300),
-          business_class: Math.floor(1000 + Math.random() * 500),
-        },
-        availability: ["high", "moderate", "low"][Math.floor(Math.random() * 3)],
-        booking_url: "https://www.12306.cn",
-      });
+    if (params.transport_type !== "flight") {
+      const times = ["08:00", "09:30", "11:00", "13:00", "14:30", "16:00", "18:00"];
+      for (const time of times.slice(0, 4)) {
+        const type = trainTypes[Math.floor(Math.random() * trainTypes.length)];
+        trains.push({
+          train_number: `${type}${Math.floor(Math.random() * 900 + 100)}`,
+          train_type: "high_speed",
+          from_station: params.from_city || "Unknown",
+          to_station: params.to_city || "Unknown",
+          departure_time: time,
+          arrival_time: calculateArrival(time, 3 + Math.random() * 2),
+          duration_hours: +(3 + Math.random() * 2).toFixed(1),
+          distance_km: Math.floor(800 + Math.random() * 800),
+          prices: {
+            second_class: Math.floor(300 + Math.random() * 200),
+            first_class: Math.floor(500 + Math.random() * 300),
+            business_class: Math.floor(1000 + Math.random() * 500),
+          },
+          availability: ["high", "moderate", "low"][Math.floor(Math.random() * 3)],
+          booking_url: "https://www.12306.cn",
+        });
+      }
     }
-  }
 
-  const flights = [];
+    const flights = [];
 
-  if (params.transport_type !== "train") {
-    const airlines = ["Air China", "China Eastern", "China Southern", "Xiamen Air"];
-    const times = ["07:00", "10:30", "13:00", "16:00", "19:00"];
-    for (const time of times.slice(0, 2)) {
-      flights.push({
-        flight_number: `${airlines[Math.floor(Math.random() * airlines.length)].slice(0, 2)}${Math.floor(Math.random() * 9000 + 1000)}`,
-        airline: airlines[Math.floor(Math.random() * airlines.length)],
-        from_airport: "PEK",
-        to_airport: "PVG",
-        departure_time: time,
-        arrival_time: calculateArrival(time, 2 + Math.random()),
-        duration_hours: +(2 + Math.random()).toFixed(1),
-        prices: {
-          economy: Math.floor(600 + Math.random() * 400),
-          business: Math.floor(2000 + Math.random() * 1500),
-        },
-        availability: ["high", "moderate", "low"][Math.floor(Math.random() * 3)],
-        booking_url: "https://www.ctrip.com",
-      });
+    if (params.transport_type !== "train") {
+      const airlines = ["Air China", "China Eastern", "China Southern", "Xiamen Air"];
+      const times = ["07:00", "10:30", "13:00", "16:00", "19:00"];
+      for (const time of times.slice(0, 2)) {
+        const airline = airlines[Math.floor(Math.random() * airlines.length)];
+        flights.push({
+          flight_number: `${airline.slice(0, 2).toUpperCase()}${Math.floor(Math.random() * 9000 + 1000)}`,
+          airline,
+          from_airport: params.from_city || "Unknown",
+          to_airport: params.to_city || "Unknown",
+          departure_time: time,
+          arrival_time: calculateArrival(time, 2 + Math.random()),
+          duration_hours: +(2 + Math.random()).toFixed(1),
+          prices: {
+            economy: Math.floor(600 + Math.random() * 400),
+            business: Math.floor(2000 + Math.random() * 1500),
+          },
+          availability: ["high", "moderate", "low"][Math.floor(Math.random() * 3)],
+          booking_url: "https://www.ctrip.com",
+        });
+      }
     }
-  }
 
-  return { trains, flights };
+    return { trains, flights };
+  } catch (error) {
+    console.warn("searchTransport error:", error);
+    return { trains: [], flights: [], error: String(error) };
+  }
 }
 
 // ============================================
@@ -342,29 +364,50 @@ export function translateText(
   target_lang: string;
   confidence: number;
 } {
-  // Use built-in translations for common phrases
-  const key = text.toLowerCase().trim();
-  const translations = TRANSLATIONS[targetLang] || TRANSLATIONS.en;
+  try {
+    if (!text || !targetLang) {
+      return {
+        original_text: text || "",
+        translated_text: text || "",
+        source_lang: sourceLang || "auto",
+        target_lang: targetLang || "en",
+        confidence: 0,
+      };
+    }
 
-  // Check if we have a direct translation
-  if (translations[key]) {
+    // Use built-in translations for common phrases
+    const key = text.toLowerCase().trim();
+    const translations = TRANSLATIONS[targetLang] || TRANSLATIONS.en;
+
+    // Check if we have a direct translation
+    if (translations[key]) {
+      return {
+        original_text: text,
+        translated_text: translations[key],
+        source_lang: targetLang === "en" ? "zh" : "en",
+        target_lang: targetLang,
+        confidence: 1.0,
+      };
+    }
+
+    // For other text, return a placeholder response
     return {
       original_text: text,
-      translated_text: translations[key],
-      source_lang: targetLang === "en" ? "zh" : "en",
+      translated_text: `[Translation to ${targetLang} would appear here. For accurate translations, use an external translation API.]`,
+      source_lang: sourceLang === "auto" ? "detected" : sourceLang,
       target_lang: targetLang,
-      confidence: 1.0,
+      confidence: 0.5,
+    };
+  } catch (error) {
+    console.warn("translateText error:", error);
+    return {
+      original_text: text || "",
+      translated_text: text || "",
+      source_lang: "unknown",
+      target_lang: targetLang || "en",
+      confidence: 0,
     };
   }
-
-  // For other text, return a placeholder response
-  return {
-    original_text: text,
-    translated_text: `[Translation to ${targetLang} would appear here. For accurate translations, use an external translation API.]`,
-    source_lang: sourceLang === "auto" ? "detected" : sourceLang,
-    target_lang: targetLang,
-    confidence: 0.5,
-  };
 }
 
 // ============================================
@@ -447,40 +490,54 @@ export function getEmergencyInfo(cityName?: string): {
   police_stations: unknown[];
   embassies: unknown[];
 } {
-  const result = {
-    emergency_numbers: [
-      { service: "Ambulance", number: "120", note: "Emergency medical services" },
-      { service: "Police", number: "110", note: "Public security" },
-      { service: "Fire", number: "119", note: "Fire and rescue" },
-      { service: "Traffic Accident", number: "122", note: "Road traffic emergencies" },
-    ],
-    hospitals: [],
-    police_stations: [],
-    embassies: [
-      { country: "United States", phone: "+86 10 8531 3000", address: "Beijing" },
-      { country: "United Kingdom", phone: "+86 10 8529 6600", address: "Beijing" },
-      { country: "Canada", phone: "+86 10 5139 4000", address: "Beijing" },
-      { country: "Australia", phone: "+86 10 8529 6600", address: "Beijing" },
-      { country: "Japan", phone: "+86 10 6513 0300", address: "Beijing" },
-      { country: "South Korea", phone: "+86 10 6501 6081", address: "Beijing" },
-    ],
-  };
+  try {
+    const result = {
+      emergency_numbers: [
+        { service: "Ambulance", number: "120", note: "Emergency medical services" },
+        { service: "Police", number: "110", note: "Public security" },
+        { service: "Fire", number: "119", note: "Fire and rescue" },
+        { service: "Traffic Accident", number: "122", note: "Road traffic emergencies" },
+      ],
+      hospitals: [] as unknown[],
+      police_stations: [] as unknown[],
+      embassies: [
+        { country: "United States", phone: "+86 10 8531 3000", address: "Beijing" },
+        { country: "United Kingdom", phone: "+86 10 8529 6600", address: "Beijing" },
+        { country: "Canada", phone: "+86 10 5139 4000", address: "Beijing" },
+        { country: "Australia", phone: "+86 10 8529 6600", address: "Beijing" },
+        { country: "Japan", phone: "+86 10 6513 0300", address: "Beijing" },
+        { country: "South Korea", phone: "+86 10 6501 6081", address: "Beijing" },
+      ],
+    };
 
-  // Add city-specific info if available
-  if (cityName) {
-    const city = findCity(cityName);
-    if (city?.emergencyContacts) {
-      result.hospitals = city.emergencyContacts
-        .filter((e) => e.type === "hospital")
-        .map((e) => ({ name: e.nameEn, phone: e.phone, address: e.address, notes: e.notes }));
+    // Add city-specific info if available
+    if (cityName) {
+      const city = findCity(cityName);
+      if (city?.emergencyContacts) {
+        result.hospitals = city.emergencyContacts
+          .filter((e) => e.type === "hospital")
+          .map((e) => ({ name: e.nameEn || e.name, phone: e.phone || "N/A", address: e.address || "N/A", notes: e.notes || "" }));
 
-      result.police_stations = city.emergencyContacts
-        .filter((e) => e.type === "police")
-        .map((e) => ({ name: e.nameEn, phone: e.phone, address: e.address, notes: e.notes }));
+        result.police_stations = city.emergencyContacts
+          .filter((e) => e.type === "police")
+          .map((e) => ({ name: e.nameEn || e.name, phone: e.phone || "N/A", address: e.address || "N/A", notes: e.notes || "" }));
+      }
     }
-  }
 
-  return result;
+    return result;
+  } catch (error) {
+    console.warn("getEmergencyInfo error:", error);
+    return {
+      emergency_numbers: [
+        { service: "Ambulance", number: "120", note: "Emergency medical services" },
+        { service: "Police", number: "110", note: "Public security" },
+        { service: "Fire", number: "119", note: "Fire and rescue" },
+      ],
+      hospitals: [],
+      police_stations: [],
+      embassies: [],
+    };
+  }
 }
 
 // ============================================

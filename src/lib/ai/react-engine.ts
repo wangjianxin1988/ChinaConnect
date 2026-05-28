@@ -22,6 +22,7 @@ import {
   getEmergencyInfo,
   getExchangeRate,
   searchVisaRequirements,
+  TOOL_REGISTRY,
 } from "./tools";
 
 const WORKFLOW_STEPS = [
@@ -645,6 +646,22 @@ export class ReActEngine {
       // Continue with whatever data we have
     }
 
+    // Step 4.5: Always call WebSearch for real-time data enrichment
+    try {
+      const searchQuery = params.destination
+        ? `${params.destination} travel latest news tips 2026`
+        : "China travel latest news tips 2026";
+      const webSearchTool = TOOL_REGISTRY["WebSearch"];
+      if (webSearchTool && typeof webSearchTool === "function") {
+        const webResult = await webSearchTool({ query: searchQuery, language });
+        if (webResult && typeof webResult === "object" && !("error" in webResult)) {
+          this.toolResults.set("WebSearch", webResult);
+        }
+      }
+    } catch (webError) {
+      console.warn("WebSearch enrichment failed (non-critical):", webError);
+    }
+
     // Step 5: Content Enrichment
     progressCallback?.(this.makeProgress(5, { steps: reactSteps.length, toolResults: this.toolResults.size }));
 
@@ -820,87 +837,24 @@ export class ReActEngine {
 
     let result: unknown = null;
 
-    switch (tool) {
-      case "CitySearch":
-        result = city ? this.getCityData(city) : { error: "No city matched" };
-        break;
-
-      case "AttractionSearch":
-        result = city ? this.getCityData(city) : { error: "No city matched" };
-        break;
-
-      case "FoodSearch":
-        result = city ? this.getCityData(city) : { error: "No city matched" };
-        break;
-
-      case "WeatherSearch":
-        result = this.getWeatherData(params.destination);
-        break;
-
-      case "HotelSearch":
-        result = this.getHotelRecommendations(city, params.budgetLevel);
-        break;
-
-      case "TransportSearch":
-        result = this.getTransportInfo(params.destination);
-        break;
-
-      case "TranslationService":
-        result = { status: "available", note: "Translation service ready" };
-        break;
-
-      case "EmergencyContact":
-        result = { status: "available", note: "Emergency contacts ready" };
-        break;
-
-      case "EmergencySOS":
-        result = { status: "available", note: "Emergency SOS ready" };
-        break;
-
-      case "PaymentGuide":
-        result = { status: "available", note: "Payment guide ready" };
-        break;
-
-      case "VisaCheck":
-        result = { status: "available", note: "Visa check ready" };
-        break;
-
-      case "SIMCard":
-        result = { status: "available", note: "SIM card info ready" };
-        break;
-
-      case "WebSearch":
-        result = { status: "search_available", note: "Real-time search ready" };
-        break;
-
-      case "LocalExpert":
-        result = { status: "available", note: "Local expert ready" };
-        break;
-
-      case "ExchangeRate":
-        result = getExchangeRate(
-          (toolCall.parameters.from as string) || "USD",
-          (toolCall.parameters.to as string) || "CNY",
-        );
-        break;
-
-      case "VisaSearch":
-        result = searchVisaRequirements(
-          (toolCall.parameters.nationality as string) || "United States",
-          (toolCall.parameters.destination as string) || params.destination || "China",
-        );
-        break;
-
-      case "city_database":
-        result = city ? this.getCityData(city) : { error: "No city matched" };
-        break;
-
-      case "map_service":
-        result = city ? this.getMapData(city) : { error: "No city for map" };
-        break;
-
-      default:
-        result = { status: "unknown_tool" };
+    try {
+      // Use TOOL_REGISTRY for tools that have proper implementations
+      const registryTool = TOOL_REGISTRY[tool as keyof typeof TOOL_REGISTRY];
+      if (registryTool && typeof registryTool === "function") {
+        try {
+          // Build proper parameters for each tool
+          const toolParams = this.buildToolParams(tool, intent, params, city);
+          result = await registryTool(toolParams as never);
+        } catch (registryError) {
+          console.warn(`Tool ${tool} via registry failed, using fallback:`, registryError);
+          result = this.fallbackToolResult(tool, city, params);
+        }
+      } else {
+        result = this.fallbackToolResult(tool, city, params);
+      }
+    } catch (error) {
+      console.warn(`Tool ${tool} execution error:`, error);
+      result = { error: `Tool ${tool} failed: ${String(error)}` };
     }
 
     toolCall.result = result;
@@ -918,6 +872,48 @@ export class ReActEngine {
       },
       toolResult: result,
     };
+  }
+
+  /**
+   * Fallback tool results when TOOL_REGISTRY is not available
+   */
+  private fallbackToolResult(tool: ToolName, city: City | null, params: ExtractedParams): unknown {
+    switch (tool) {
+      case "CitySearch":
+      case "AttractionSearch":
+      case "FoodSearch":
+        return city ? this.getCityData(city) : { error: "No city matched" };
+      case "WeatherSearch":
+        return this.getWeatherData(params.destination);
+      case "HotelSearch":
+        return this.getHotelRecommendations(city, params.budgetLevel);
+      case "TransportSearch":
+        return this.getTransportInfo(params.destination);
+      case "TranslationService":
+        return { status: "available", note: "Translation service ready" };
+      case "EmergencyContact":
+      case "EmergencySOS":
+        return { status: "available", note: "Emergency info ready" };
+      case "PaymentGuide":
+        return { status: "available", note: "Payment guide ready" };
+      case "VisaCheck":
+      case "VisaSearch":
+        return { status: "available", note: "Visa info ready" };
+      case "SIMCard":
+        return { status: "available", note: "SIM card info ready" };
+      case "WebSearch":
+        return { status: "search_available", note: "Real-time search ready" };
+      case "LocalExpert":
+        return { status: "available", note: "Local expert ready" };
+      case "ExchangeRate":
+        return getExchangeRate("USD", "CNY");
+      case "city_database":
+        return city ? this.getCityData(city) : { error: "No city matched" };
+      case "map_service":
+        return city ? this.getMapData(city) : { error: "No city for map" };
+      default:
+        return { status: "unknown_tool" };
+    }
   }
 
   private buildToolParams(

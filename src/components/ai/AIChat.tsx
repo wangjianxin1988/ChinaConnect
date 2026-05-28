@@ -273,7 +273,7 @@ const MessageBubble: React.FC<{
         )}
 
         {/* Content */}
-        <div className="text-sm leading-relaxed">{formatContent(message.content)}</div>
+        <div className={`text-sm leading-relaxed ${isStreaming ? "streaming-text streaming-content" : ""}`}>{formatContent(message.content)}</div>
 
         {/* Streaming indicator with blinking cursor */}
         {isStreaming && (
@@ -822,12 +822,39 @@ export const AIChat: React.FC<AIChatProps> = ({
           from { opacity: 0; transform: translateY(8px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(4px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
         @keyframes cursorBlink {
           0%, 100% { opacity: 1; }
           50% { opacity: 0; }
         }
-        .message-enter { animation: fadeIn 0.3s ease-out; }
-        .streaming-cursor { animation: cursorBlink 0.8s ease-in-out infinite; }
+        @keyframes streamText {
+          from { opacity: 0.7; }
+          to { opacity: 1; }
+        }
+        @keyframes smoothReveal {
+          0% { opacity: 0; filter: blur(2px); }
+          100% { opacity: 1; filter: blur(0); }
+        }
+        .message-enter { animation: fadeIn 0.2s ease-out; }
+        .streaming-cursor { animation: cursorBlink 0.6s ease-in-out infinite; }
+        .streaming-text {
+          animation: streamText 0.15s ease-out;
+          transition: all 0.1s ease-out;
+        }
+        .streaming-content {
+          animation: smoothReveal 0.2s ease-out;
+          will-change: contents;
+        }
+        .streaming-content p,
+        .streaming-content li,
+        .streaming-content h1,
+        .streaming-content h2,
+        .streaming-content h3 {
+          animation: fadeInUp 0.15s ease-out;
+        }
         @media (max-width: 640px) {
           .chat-sidebar { display: none; }
         }
