@@ -1,4 +1,5 @@
 import React from "react";
+import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 
 export interface AttractionData {
   id: string;
@@ -116,7 +117,18 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
             </div>
             <div className="flex items-center gap-2 text-sm">
               <span className="text-gray-400 text-base">🎫</span>
-              <span className="text-gray-600 font-medium">{attraction.ticketPrice}</span>
+              <span className="text-gray-600 font-medium">
+                {(() => {
+                  const tp = attraction.ticketPrice;
+                  if (!tp) return tp;
+                  // Already has ¥ symbol (either prefix or suffix)
+                  if (tp.includes("¥")) return tp;
+                  // Free or text descriptions
+                  if (/^(free|included|varies|免费)/i.test(tp)) return tp;
+                  // Add ¥ prefix
+                  return `¥${tp}`;
+                })()}
+              </span>
             </div>
             {attraction.recommendedVisitTime && (
               <div className="flex items-center gap-2 text-sm">
@@ -152,14 +164,14 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
                 📍 {attraction.address}
               </p>
               {attraction.coordinates && (
-                <a
-                  href={`https://maps.google.com/maps?daddr=${attraction.coordinates.lat},${attraction.coordinates.lng}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <MapDirectionsLink
+                  lat={attraction.coordinates.lat}
+                  lng={attraction.coordinates.lng}
+                  name={attraction.nameEn}
                   className="shrink-0 text-blue-600 hover:text-blue-700 text-xs font-medium hover:underline"
                 >
                   Get Directions →
-                </a>
+                </MapDirectionsLink>
               )}
             </div>
           )}

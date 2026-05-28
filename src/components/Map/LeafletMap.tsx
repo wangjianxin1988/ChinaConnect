@@ -86,24 +86,24 @@ function MapResizer() {
 }
 
 // Tile layer URLs for different providers and layers
+// Using OpenStreetMap as default to avoid CORS issues with Google/Amap tiles
 const TILE_LAYERS = {
   google: {
-    standard: "https://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}",
-    satellite: "https://{s}.google.com/vt?lyrs=s&x={x}&y={y}&z={z}",
-    terrain: "https://{s}.google.com/vt?lyrs=p&x={x}&y={y}&z={z}",
+    standard: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    satellite: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    terrain: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   },
   amap: {
-    standard: "https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
-    satellite: "https://webst0{s}.is.autonavi.com/appmaptile?style=3&x={x}&y={y}&z={z}",
-    // Amap doesn't have a direct terrain layer, use standard as fallback
-    terrain: "https://webst0{s}.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+    standard: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    satellite: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    terrain: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   },
 };
 
 // Attribution text
 const ATTRIBUTIONS = {
-  google: '&copy; <a href="https://www.google.com/maps">Google Maps</a>',
-  amap: '&copy; <a href="https://www.amap.com/">高德地图</a>',
+  google: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  amap: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 };
 
 interface LeafletMapProps {
@@ -149,7 +149,6 @@ export function LeafletMap({
       >
         <TileLayer
           url={tileUrl}
-          subdomains={provider === "google" ? "1234" : "1234"}
           attribution={attribution}
           maxZoom={19}
         />

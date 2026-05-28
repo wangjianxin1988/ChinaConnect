@@ -36,7 +36,7 @@ export const HOTEL_TYPES: HotelType[] = [
   {
     type: "Budget Hotels",
     icon: "🏨",
-    priceRange: "100-300 CNY/night",
+    priceRange: "¥100-300/night",
     priceRangeCn: "每晚100-300元",
     description:
       "Basic clean rooms, suitable for short stays. Chain brands like 7 Days, Home Inn, etc.",
@@ -55,7 +55,7 @@ export const HOTEL_TYPES: HotelType[] = [
   {
     type: "Business Hotels",
     icon: "🏢",
-    priceRange: "300-600 CNY/night",
+    priceRange: "¥300-600/night",
     priceRangeCn: "每晚300-600元",
     description:
       "Comfortable rooms with business facilities. Brands like Holiday Inn, Sheraton, local chains.",
@@ -74,7 +74,7 @@ export const HOTEL_TYPES: HotelType[] = [
   {
     type: "Luxury Hotels",
     icon: "✨",
-    priceRange: "800-3000+ CNY/night",
+    priceRange: "¥800-3000+/night",
     priceRangeCn: "每晚800-3000+元",
     description: "Premium service and facilities. International brands in major cities.",
     descriptionCn: "优质服务和设施。主要城市的国际品牌酒店。",
@@ -86,7 +86,7 @@ export const HOTEL_TYPES: HotelType[] = [
   {
     type: "Boutique Hotels",
     icon: "🏡",
-    priceRange: "400-1200 CNY/night",
+    priceRange: "¥400-1200/night",
     priceRangeCn: "每晚400-1200元",
     description:
       "Stylish unique properties with personalized service. Often in historic buildings.",

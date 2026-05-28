@@ -8,6 +8,7 @@
 import type { Restaurant } from "@/types/food";
 import { RESTAURANT_TYPE_CONFIG } from "@/types/food";
 import React from "react";
+import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 import {
   BloggerBadge,
   BudgetTypeBadge,
@@ -135,8 +136,8 @@ export function FoodCard({
           />
           {isNewType && (
             <span className="text-xs text-gray-400">
-              ({RESTAURANT_TYPE_CONFIG[restaurant.type]?.priceRange.min}-
-              {RESTAURANT_TYPE_CONFIG[restaurant.type]?.priceRange.max}元)
+              (¥{RESTAURANT_TYPE_CONFIG[restaurant.type]?.priceRange.min}-
+              {RESTAURANT_TYPE_CONFIG[restaurant.type]?.priceRange.max})
             </span>
           )}
         </div>
@@ -210,16 +211,13 @@ export function FoodCard({
             <span>Call</span>
           </a>
         )}
-        {showMapLink && (
-          <a
-            href={`https://maps.google.com/maps?search=${restaurant.lat},${restaurant.lng}`}
-            target="_blank"
-            rel="noopener noreferrer"
+        {showMapLink && restaurant.lat && restaurant.lng && (
+          <MapDirectionsLink
+            lat={restaurant.lat}
+            lng={restaurant.lng}
+            name={restaurant.nameEn || restaurant.name}
             className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
-          >
-            <span>📍</span>
-            <span>Directions</span>
-          </a>
+          />
         )}
         {restaurant.address && (
           <span

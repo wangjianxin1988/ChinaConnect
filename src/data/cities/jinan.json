@@ -36,7 +36,7 @@
       "address": "Baotu Spring Park, Lixia District",
       "coordinates": {"lat": 36.6512, "lng": 117.0294},
       "openingHours": "07:00-19:00",
-      "ticketPrice": "40 CNY",
+      "ticketPrice": "40¥",
       "recommendedVisitTime": "1-2 hours",
       "highlights": ["Three major springs", "Lotus pond", "Lixia River views", "Cultural statues"],
       "tips": "Arrive early morning for best photos. Combine with Daming Lake nearby. The water is drinkable."
@@ -51,7 +51,7 @@
       "address": "Daming Lake, Lixia District",
       "coordinates": {"lat": 36.6412, "lng": 117.0194},
       "openingHours": "Open 24 hours (ferries 08:00-18:00)",
-      "ticketPrice": "Free (ferry 30-50 CNY)",
+      "ticketPrice": "Free (ferry 30-50¥)",
       "recommendedVisitTime": "2-3 hours",
       "highlights": ["Lake cycling", "Historic islands", "Night lighting", "Autumn lotus"],
       "tips": "Best at sunset or night. Rent bikes around the lake. Take boat to islands. Combine with Baotu Spring."
@@ -66,7 +66,7 @@
       "address": "Thousand Buddha Mountain, Lixia District",
       "coordinates": {"lat": 36.6212, "lng": 117.0494},
       "openingHours": "06:30-18:00",
-      "ticketPrice": "30 CNY",
+      "ticketPrice": "30¥",
       "recommendedVisitTime": "2-3 hours",
       "highlights": ["Buddhist carvings", "Mountain views", "Monastery", "Autumn foliage"],
       "tips": "Take cable car up, walk down. Visit in autumn for foliage. Combine with nearby Olympic Sports Center."
@@ -216,7 +216,7 @@
       "address": "Lingshan, Changqing District",
       "coordinates": {"lat": 36.3512, "lng": 117.1194},
       "openingHours": "07:00-18:00",
-      "ticketPrice": "60 CNY",
+      "ticketPrice": "60¥",
       "recommendedVisitTime": "3-4 hours",
       "highlights": ["Buddhist temple", "Mountain setting", "Ancient architecture", "Vegetarian food"],
       "tips": "Day trip from Jinan. Arrive early. The vegetarian noodles are excellent."
@@ -231,7 +231,7 @@
       "address": "Licheng District",
       "coordinates": {"lat": 36.7512, "lng": 117.2194},
       "openingHours": "08:00-17:00",
-      "ticketPrice": "60 CNY",
+      "ticketPrice": "60¥",
       "recommendedVisitTime": "3-4 hours",
       "highlights": ["Autumn leaves", "Maple forest", "Photography", "Mountain air"],
       "tips": "Best in late October. Less crowded on weekdays. Bring comfortable shoes."
@@ -321,7 +321,7 @@
       "address": "Licheng District",
       "coordinates": {"lat": 36.7212, "lng": 117.1294},
       "openingHours": "06:00-18:00",
-      "ticketPrice": "20 CNY",
+      "ticketPrice": "20¥",
       "recommendedVisitTime": "2-3 hours",
       "highlights": ["Hiking trails", "Temple", "Willow views", "Nature escape"],
       "tips": "Good for escaping city. Less crowded than Thousand Buddha Mountain. Spring for willows."
@@ -366,7 +366,7 @@
       "address": "City Moat System",
       "coordinates": {"lat": 36.6512, "lng": 117.0294},
       "openingHours": "08:00-18:00",
-      "ticketPrice": "100 CNY (boat tour)",
+      "ticketPrice": "100¥ (boat tour)",
       "recommendedVisitTime": "1-2 hours",
       "highlights": ["Boat tour", "Spring culture", "Historic locks", "City views"],
       "tips": "Best way to understand Jinan's spring culture. Combine with walking along moat."
@@ -784,16 +784,16 @@
         "from": "Major Chinese cities",
         "to": "Jinan Yaoqiang International Airport (TNA)",
         "duration": "Varies (1.5h from Beijing, 2h from Shanghai)",
-        "price": "500-1800 CNY",
+        "price": "500-1800¥",
         "frequency": "Daily flights from major cities",
-        "tips": "Airport 40km from city center. Airport bus (20 CNY) or taxi (150 CNY). Metro Line 3 to downtown."
+        "tips": "Airport 40km from city center. Airport bus (20¥) or taxi (150¥). Metro Line 3 to downtown."
       },
       {
         "type": "train",
         "from": "Beijing (2h), Shanghai (2.5h), Qingdao (2h)",
         "to": "Jinan Railway Station / Jinan West Railway Station",
         "duration": "2-3 hours",
-        "price": "150-600 CNY",
+        "price": "150-600¥",
         "frequency": "Multiple high-speed trains daily",
         "tips": "Jinan West for high-speed trains. Jinan Station for regular trains. Both have metro connections."
       }
@@ -801,25 +801,25 @@
     "local": {
       "metro": [
         "4 lines operational",
-        "Single ride: 2-7 CNY",
+        "Single ride: 2-7¥",
         "Lines 1, 2 cover most tourist areas",
         "Connects both stations and airport"
       ],
       "bus": [
         "Extensive network",
-        "Single ride: 2 CNY",
+        "Single ride: 2¥",
         "Tourist areas well connected",
         "Use apps for routes"
       ],
       "taxi": [
-        "Starting fare: 10 CNY (first 3km)",
+        "Starting fare: 10¥ (first 3km)",
         "Night surcharge: 20% extra",
-        "Most attractions 15-40 CNY",
+        "Most attractions 15-40¥",
         "Didi recommended for English"
       ],
       "bike": [
         "Mobike, Meituan bikes abundant",
-        "Unlock: 1 CNY, then 0.5-1 CNY per 30 min",
+        "Unlock: 1¥, then 0.5-1¥ per 30 min",
         "Great for Daming Lake area",
         "Spring-fed moat path perfect for cycling"
       ]
@@ -830,7 +830,7 @@
       "name": "济南香格里拉大酒店",
       "nameEn": "Shangri-La Hotel Jinan",
       "budget": "luxury",
-      "priceRange": "1200-2500 CNY/night",
+      "priceRange": "¥1200-2500/night",
       "address": "88 Luoyuan Avenue, Lixia District",
       "coordinates": {"lat": 36.6412, "lng": 117.0294},
       "rating": 4.7,
@@ -841,7 +841,7 @@
       "name": "济南贵和洲际酒店",
       "nameEn": "InterContinental Jinan",
       "budget": "luxury",
-      "priceRange": "1000-2000 CNY/night",
+      "priceRange": "¥1000-2000/night",
       "address": "101 Jingyi Road, Lixia District",
       "coordinates": {"lat": 36.6412, "lng": 117.0394},
       "rating": 4.6,
@@ -852,7 +852,7 @@
       "name": "山东大厦",
       "nameEn": "Shandong Hotel",
       "budget": "luxury",
-      "priceRange": "800-1500 CNY/night",
+      "priceRange": "¥800-1500/night",
       "address": "19 Luoyuan Avenue, Lixia District",
       "coordinates": {"lat": 36.6412, "lng": 117.0294},
       "rating": 4.5,
@@ -863,7 +863,7 @@
       "name": "济南银座佳悦酒店",
       "nameEn": "Jinan Silver Best Hotel",
       "budget": "mid",
-      "priceRange": "400-800 CNY/night",
+      "priceRange": "¥400-800/night",
       "address": "66 Quancheng Road, Lixia District",
       "coordinates": {"lat": 36.6512, "lng": 117.0194},
       "rating": 4.4,
@@ -874,7 +874,7 @@
       "name": "济南泉城大酒店",
       "nameEn": "Jinan Quancheng Hotel",
       "budget": "mid",
-      "priceRange": "350-700 CNY/night",
+      "priceRange": "¥350-700/night",
       "address": "88 Quancheng Road, Lixia District",
       "coordinates": {"lat": 36.6512, "lng": 117.0194},
       "rating": 4.3,
@@ -885,7 +885,7 @@
       "name": "济南蓝海御华酒店",
       "nameEn": "Blue Ocean Hotel Jinan",
       "budget": "mid",
-      "priceRange": "300-600 CNY/night",
+      "priceRange": "¥300-600/night",
       "address": "88 Jiefang Road, Lixia District",
       "coordinates": {"lat": 36.6512, "lng": 117.0294},
       "rating": 4.4,
@@ -896,7 +896,7 @@
       "name": "济南锦绣泉城酒店",
       "nameEn": "Jinan Splendid Spring Hotel",
       "budget": "mid",
-      "priceRange": "350-650 CNY/night",
+      "priceRange": "¥350-650/night",
       "address": "168 Luoyuan Avenue, Lixia District",
       "coordinates": {"lat": 36.6412, "lng": 117.0294},
       "rating": 4.5,
@@ -907,7 +907,7 @@
       "name": "济南珍珠泉宾馆",
       "nameEn": "Jinan Pearl Spring Hotel",
       "budget": "mid",
-      "priceRange": "400-700 CNY/night",
+      "priceRange": "¥400-700/night",
       "address": "68 Luoyuan Avenue, Lixia District",
       "coordinates": {"lat": 36.6412, "lng": 117.0294},
       "rating": 4.4,
@@ -918,7 +918,7 @@
       "name": "如家酒店济南泉城广场店",
       "nameEn": "Home Inn Jinan Quancheng Square",
       "budget": "budget",
-      "priceRange": "150-300 CNY/night",
+      "priceRange": "¥150-300/night",
       "address": "88 Quancheng Road, Lixia District",
       "coordinates": {"lat": 36.6512, "lng": 117.0194},
       "rating": 4.2,
@@ -929,7 +929,7 @@
       "name": "7天连锁酒店济南泉城路店",
       "nameEn": "7 Days Inn Jinan Quancheng Road",
       "budget": "budget",
-      "priceRange": "120-250 CNY/night",
+      "priceRange": "¥120-250/night",
       "address": "66 Quancheng Road, Lixia District",
       "coordinates": {"lat": 36.6512, "lng": 117.0194},
       "rating": 4.1,
@@ -940,7 +940,7 @@
       "name": "济南青年旅舍",
       "nameEn": "Jinan Youth Hostel",
       "budget": "budget",
-      "priceRange": "80-200 CNY/night",
+      "priceRange": "¥80-200/night",
       "address": "Near Daming Lake",
       "coordinates": {"lat": 36.6412, "lng": 117.0194},
       "rating": 4.3,
@@ -951,7 +951,7 @@
       "name": "济南蓝创极轻旅民宿",
       "nameEn": "Jinan Lanchuang Boutique Homestay",
       "budget": "budget",
-      "priceRange": "200-400 CNY/night",
+      "priceRange": "¥200-400/night",
       "address": "Old City District",
       "coordinates": {"lat": 36.6612, "lng": 117.0294},
       "rating": 4.5,
@@ -962,7 +962,7 @@
       "name": "济南舜耕山庄",
       "nameEn": "Jinan Shungeng Hotel",
       "budget": "luxury",
-      "priceRange": "800-1500 CNY/night",
+      "priceRange": "¥800-1500/night",
       "address": "Near Shungeng Mountain",
       "coordinates": {"lat": 36.6212, "lng": 117.0494},
       "rating": 4.5,
@@ -973,7 +973,7 @@
       "name": "济南喜来登酒店",
       "nameEn": "Sheraton Jinan Hotel",
       "budget": "luxury",
-      "priceRange": "800-1600 CNY/night",
+      "priceRange": "¥800-1600/night",
       "address": "88 Luoyuan Avenue",
       "coordinates": {"lat": 36.6412, "lng": 117.0294},
       "rating": 4.6,
@@ -984,7 +984,7 @@
       "name": "济南千佛山酒店",
       "nameEn": "Jinan Thousand Buddha Mountain Hotel",
       "budget": "mid",
-      "priceRange": "350-600 CNY/night",
+      "priceRange": "¥350-600/night",
       "address": "Near Thousand Buddha Mountain",
       "coordinates": {"lat": 36.6212, "lng": 117.0494},
       "rating": 4.4,
@@ -1012,7 +1012,7 @@
       "icon": "cash",
       "description": "Useful at traditional markets",
       "howToUse": ["ATM everywhere", "Banks along main streets"],
-      "tips": ["Keep 200 CNY for markets", "Most restaurants accept cards"]
+      "tips": ["Keep 200¥ for markets", "Most restaurants accept cards"]
     }
   ],
   "culturalTips": [

@@ -285,8 +285,21 @@ export function EmbassyLocator({ className = "", showAll = false }: EmbassyLocat
                       <div className="text-sm">
                         <div className="text-gray-500 text-xs">Phone</div>
                         <div>
-                          {embassy.phoneCn && <span>{embassy.phoneCn} </span>}
-                          <span className="text-gray-500">{embassy.phone}</span>
+                          {embassy.phoneCn && (
+                            <a
+                              href={`tel:${embassy.phoneCn.replace(/\D/g, "")}`}
+                              className="text-blue-600 hover:underline"
+                            >
+                              {embassy.phoneCn}
+                            </a>
+                          )}
+                          {embassy.phoneCn && " "}
+                          <a
+                            href={`tel:${embassy.phone.replace(/\D/g, "")}`}
+                            className="text-gray-500 hover:text-blue-600 hover:underline"
+                          >
+                            {embassy.phone}
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -329,9 +342,19 @@ export function EmbassyLocator({ className = "", showAll = false }: EmbassyLocat
               <div>
                 <div className="text-sm text-gray-500 mb-1">Phone</div>
                 <div className="flex items-center gap-2">
-                  <span className="font-medium">{selectedEmbassy.phone}</span>
+                  <a
+                    href={`tel:${selectedEmbassy.phone.replace(/\D/g, "")}`}
+                    className="font-medium text-blue-600 hover:underline"
+                  >
+                    {selectedEmbassy.phone}
+                  </a>
                   {selectedEmbassy.phoneCn && (
-                    <span className="text-sm text-gray-500">({selectedEmbassy.phoneCn})</span>
+                    <a
+                      href={`tel:${selectedEmbassy.phoneCn.replace(/\D/g, "")}`}
+                      className="text-sm text-gray-500 hover:text-blue-600 hover:underline"
+                    >
+                      ({selectedEmbassy.phoneCn})
+                    </a>
                   )}
                 </div>
               </div>

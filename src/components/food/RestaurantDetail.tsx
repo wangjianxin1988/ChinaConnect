@@ -323,7 +323,12 @@ export function RestaurantDetail({ restaurant }: RestaurantDetailProps) {
           {restaurant.phone && (
             <div>
               <p className="text-sm text-gray-500">Phone / 电话</p>
-              <p className="font-medium">{restaurant.phone}</p>
+              <a
+                href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
+                className="font-medium text-blue-600 hover:text-blue-700 hover:underline"
+              >
+                {restaurant.phone}
+              </a>
             </div>
           )}
           <div>

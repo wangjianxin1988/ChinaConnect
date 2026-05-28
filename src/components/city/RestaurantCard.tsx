@@ -1,4 +1,5 @@
 import React from "react";
+import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 
 export interface RestaurantCardData {
   id: string;
@@ -209,15 +210,12 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
             </a>
           )}
           {restaurant.coordinates && (
-            <a
-              href={`https://maps.google.com/maps?search=${restaurant.coordinates.lat},${restaurant.coordinates.lng}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <MapDirectionsLink
+              lat={restaurant.coordinates.lat}
+              lng={restaurant.coordinates.lng}
+              name={restaurant.nameEn}
               className="flex items-center gap-1.5 px-3 py-2 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
-            >
-              <span>📍</span>
-              <span>Directions</span>
-            </a>
+            />
           )}
           {restaurant.address && (
             <span

@@ -10,6 +10,7 @@ import {
   getAmenityIcon,
 } from "@/types/accommodation";
 import React from "react";
+import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 
 export interface BudgetHotelCardData {
   id: string;
@@ -185,15 +186,14 @@ export function BudgetHotelCard({ hotel, compact = false }: BudgetHotelCardProps
           </a>
         )}
         {hotel.metro && (
-          <a
-            href={`https://maps.google.com/maps?search=${hotel.address}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <MapDirectionsLink
+            address={hotel.address}
+            name={hotel.nameEn}
             className="flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-700 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors"
           >
             <span>🗺️</span>
             <span>Directions</span>
-          </a>
+          </MapDirectionsLink>
         )}
         {hotel.foreignerFriendly && (
           <span className="ml-auto text-xs text-green-600 font-medium flex items-center gap-1">

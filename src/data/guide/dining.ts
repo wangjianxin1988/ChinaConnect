@@ -49,7 +49,7 @@ export const CUISINE_TYPES: CuisineType[] = [
       "Rice helps with the heat",
     ],
     tipsCn: ["如果不能吃辣可以要求微辣", "麻辣会让嘴唇暂时发麻", "米饭可以帮助解辣"],
-    priceRange: "50-200 CNY per person",
+    priceRange: "¥50-200/person",
     priceRangeCn: "每人50-200元",
   },
   {
@@ -71,7 +71,7 @@ export const CUISINE_TYPES: CuisineType[] = [
       "Green tea aids digestion",
     ],
     tipsCn: ["点心早上最好（7-11点）", "尝试各种小菜", "绿茶帮助消化"],
-    priceRange: "80-300 CNY per person",
+    priceRange: "¥80-300/person",
     priceRangeCn: "每人80-300元",
   },
   {
@@ -93,7 +93,7 @@ export const CUISINE_TYPES: CuisineType[] = [
       "Street food is excellent for snacks",
     ],
     tipsCn: ["提前预订烤鸭店", "第一次去烤鸭店是必须的", "街边小吃作为零食非常棒"],
-    priceRange: "60-400 CNY per person",
+    priceRange: "¥60-400/person",
     priceRangeCn: "每人60-400元",
   },
   {
@@ -111,7 +111,7 @@ export const CUISINE_TYPES: CuisineType[] = [
     popularDishesCn: ["麻辣火锅", "鸳鸯锅（一半辣一半清汤）", "牛肉片", "蘑菇和蔬菜"],
     tips: ["Dip beef in egg yolk for tenderness", "Try mala oil sauce", "Beware of bone pieces"],
     tipsCn: ["牛肉沾蛋黄更嫩", "尝试麻辣油碟", "注意骨头碎片"],
-    priceRange: "80-200 CNY per person",
+    priceRange: "¥80-200/person",
     priceRangeCn: "每人80-200元",
   },
   {
@@ -132,7 +132,7 @@ export const CUISINE_TYPES: CuisineType[] = [
       "Best after sunset",
     ],
     tipsCn: ["选择排队长的摊位（新鲜）", "用瓶装水清洗", "日落后最佳"],
-    priceRange: "5-30 CNY per item",
+    priceRange: "¥5-30/item",
     priceRangeCn: "每件5-30元",
   },
 ];

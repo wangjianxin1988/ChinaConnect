@@ -135,7 +135,7 @@ export function CityMap({
             address: restaurant.address,
             phone: restaurant.phone,
             rating: restaurant.rating,
-            priceRange: `${restaurant.avgPrice} CNY`,
+            priceRange: `¥${restaurant.avgPrice}`,
           });
         }
       });

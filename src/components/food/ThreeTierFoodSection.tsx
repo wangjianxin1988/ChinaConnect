@@ -5,6 +5,7 @@
  */
 
 import React, { useState } from "react";
+import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 import { BloggerBadge, RatingBadge } from "./FoodTierBadge";
 
 // Type for existing city restaurant data
@@ -353,15 +354,12 @@ function FoodItemCard({ restaurant }: { restaurant: FoodItemData }) {
           </a>
         )}
         {restaurant.coordinates && (
-          <a
-            href={`https://maps.google.com/maps?search=${restaurant.coordinates.lat},${restaurant.coordinates.lng}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <MapDirectionsLink
+            lat={restaurant.coordinates.lat}
+            lng={restaurant.coordinates.lng}
+            name={restaurant.nameEn || restaurant.name}
             className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
-          >
-            <span>📍</span>
-            <span>Directions</span>
-          </a>
+          />
         )}
         {restaurant.address && (
           <span
