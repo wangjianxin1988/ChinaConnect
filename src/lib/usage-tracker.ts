@@ -86,21 +86,11 @@ export function getRemainingRequests(): number {
 /**
  * Check if the user has exceeded their usage limit
  * Returns true if within limit, false if exceeded
+ * NOTE: Temporarily unlimited for testing - revert after testing
  */
 export function checkUsageLimit(): { allowed: boolean; remaining: number; max: number } {
-  const max = getMaxRequests();
-  const used = getUsageCount();
-
-  if (max === -1) {
-    return { allowed: true, remaining: -1, max: -1 };
-  }
-
-  const remaining = Math.max(0, max - used);
-  return {
-    allowed: remaining > 0,
-    remaining,
-    max,
-  };
+  // TEMPORARY: Unlimited for testing
+  return { allowed: true, remaining: -1, max: -1 };
 }
 
 /**
