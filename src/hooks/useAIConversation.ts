@@ -103,8 +103,8 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
     shortTermMemoryRef.current = new ShortTermMemoryStore();
 
     // Initialize MiniMax client
-    const apiKey = import.meta.env.MINIMAX_API_KEY;
-    const baseUrl = import.meta.env.MINIMAX_BASE_URL || "https://api.minimax.chat/v1";
+    const apiKey = import.meta.env.PUBLIC_MINIMAX_API_KEY;
+    const baseUrl = import.meta.env.PUBLIC_MINIMAX_BASE_URL || "https://api.minimax.chat/v1";
     if (apiKey) {
       miniMaxClientRef.current = new MiniMaxClient(apiKey, baseUrl);
       // Verify API connectivity with a lightweight health check
