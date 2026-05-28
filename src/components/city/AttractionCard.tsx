@@ -6,6 +6,7 @@ export interface AttractionData {
   nameEn: string;
   category: "historical" | "cultural" | "natural" | "modern";
   description: string;
+  image?: string;
   address: string;
   coordinates?: { lat: number; lng: number };
   openingHours: string;
@@ -38,9 +39,25 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
 
   return (
     <div className="bg-white border border-gray-100 rounded-xl overflow-hidden card-hover">
-      {/* Number badge (left side on desktop) */}
+      {/* Image */}
+      {attraction.image && (
+        <div className="relative h-48 overflow-hidden">
+          <img
+            src={attraction.image}
+            alt={attraction.nameEn}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          {typeof index === "number" && (
+            <div className="absolute top-3 left-3 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg">
+              {index + 1}
+            </div>
+          )}
+        </div>
+      )}
+
       <div className="flex">
-        {typeof index === "number" && (
+        {!attraction.image && typeof index === "number" && (
           <div className="hidden md:flex flex-col items-center justify-center w-14 bg-blue-600 text-white shrink-0">
             <span className="text-2xl font-black leading-none">{index + 1}</span>
           </div>
