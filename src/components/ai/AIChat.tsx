@@ -4,6 +4,7 @@
  */
 
 import { useAIConversation } from "@/hooks/useAIConversation";
+import { checkUsageLimit, getRemainingRequests } from "@/lib/usage-tracker";
 import type { Message, WorkflowProgress } from "@/lib/ai/types";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { ItineraryDisplay } from "./ItineraryDisplay";
@@ -377,6 +378,8 @@ export const AIChat: React.FC<AIChatProps> = ({
     currentItinerary,
     isMCPAvailable,
     isMiniMaxAvailable,
+    usageExceeded,
+    remainingRequests,
     sendMessage,
     clearConversation,
     saveCurrentItinerary,
@@ -665,6 +668,43 @@ export const AIChat: React.FC<AIChatProps> = ({
           </div>
         )}
 
+        {/* Usage Display */}
+        {!usageExceeded && remainingRequests !== -1 && (
+          <div className="px-4 pb-1">
+            <div className="flex items-center justify-between text-xs text-gray-500">
+              <span>
+                {language === "zh"
+                  ? `本月剩余 ${remainingRequests} 次AI请求`
+                  : `${remainingRequests} AI requests remaining this month`}
+              </span>
+              <a href="/pricing" className="text-blue-600 hover:underline">
+                {language === "zh" ? "升级" : "Upgrade"}
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* Usage Exceeded Banner */}
+        {usageExceeded && (
+          <div className="px-4 pb-2">
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+                <span className="text-sm text-amber-800">
+                  {language === "zh"
+                    ? "本月AI请求次数已用完"
+                    : "AI requests limit reached for this month"}
+                </span>
+              </div>
+              <a href="/pricing" className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline">
+                {language === "zh" ? "升级套餐" : "Upgrade Plan"} →
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Input Area */}
         <div className="bg-white border-t border-gray-200 p-4">
           <div className="flex gap-3">
@@ -673,9 +713,10 @@ export const AIChat: React.FC<AIChatProps> = ({
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder={LABELS.placeholder}
+              placeholder={usageExceeded ? (language === "zh" ? "请升级以继续使用AI助手..." : "Upgrade to continue using AI...") : LABELS.placeholder}
               rows={1}
-              className="flex-1 resize-none rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              disabled={usageExceeded}
+              className={`flex-1 resize-none rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${usageExceeded ? 'bg-gray-100 cursor-not-allowed' : ''}`}
               style={{ minHeight: "48px", maxHeight: "120px" }}
             />
             <button

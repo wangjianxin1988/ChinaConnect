@@ -1,0 +1,333 @@
+---
+/**
+ * Pricing Page
+ * Displays subscription tiers, feature comparison, and FAQ
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCurrentTier } from '../lib/subscription';
+
+const title = "Pricing Plans - ChinaConnect AI";
+const description = "Choose the perfect AI travel assistant plan for your China journey";
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    {/* Hero Section */}
+    <section class="py-16 text-center">
+      <div class="container-custom">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Choose Your AI Travel Plan
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Unlock the full potential of AI-powered travel planning for China
+        </p>
+      </div>
+    </section>
+
+    {/* Pricing Cards */}
+    <section class="pb-16">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          {/* Free */}
+          <div class="bg-white rounded-2xl border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+            <div class="text-center mb-6">
+              <span class="text-3xl">🆓</span>
+              <h3 class="text-xl font-bold text-gray-900 mt-2">Free</h3>
+              <p class="text-sm text-gray-500 mt-1">Get started with basic planning</p>
+            </div>
+            <div class="text-center mb-6">
+              <span class="text-4xl font-bold text-gray-900">$0</span>
+              <span class="text-gray-500">/month</span>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                3 AI requests per month
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Basic travel planning
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                View itineraries
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-400">
+                <svg class="w-5 h-5 text-gray-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                Save itineraries
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-400">
+                <svg class="w-5 h-5 text-gray-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                PDF export
+              </li>
+            </ul>
+            <button class="w-full py-2.5 px-4 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-50 transition-colors" data-tier="free">
+              Current Plan
+            </button>
+          </div>
+
+          {/* Explorer */}
+          <div class="bg-white rounded-2xl border border-blue-200 p-6 hover:shadow-lg transition-shadow relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+              <span class="bg-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">Popular</span>
+            </div>
+            <div class="text-center mb-6">
+              <span class="text-3xl">🧭</span>
+              <h3 class="text-xl font-bold text-gray-900 mt-2">Explorer</h3>
+              <p class="text-sm text-gray-500 mt-1">More requests & save features</p>
+            </div>
+            <div class="text-center mb-6">
+              <span class="text-4xl font-bold text-blue-600">$4.99</span>
+              <span class="text-gray-500">/month</span>
+              <p class="text-xs text-green-600 mt-1">Save 20% with annual ($47.99/yr)</p>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                15 AI requests per month
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Save itineraries
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Conversation history
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Priority support
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-400">
+                <svg class="w-5 h-5 text-gray-300 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                PDF export
+              </li>
+            </ul>
+            <button class="w-full py-2.5 px-4 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors" data-tier="explorer">
+              Get Explorer
+            </button>
+          </div>
+
+          {/* Traveler */}
+          <div class="bg-white rounded-2xl border border-purple-200 p-6 hover:shadow-lg transition-shadow">
+            <div class="text-center mb-6">
+              <span class="text-3xl">✈️</span>
+              <h3 class="text-xl font-bold text-gray-900 mt-2">Traveler</h3>
+              <p class="text-sm text-gray-500 mt-1">Unlimited AI with premium features</p>
+            </div>
+            <div class="text-center mb-6">
+              <span class="text-4xl font-bold text-purple-600">$9.99</span>
+              <span class="text-gray-500">/month</span>
+              <p class="text-xs text-green-600 mt-1">Save 20% with annual ($95.99/yr)</p>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Unlimited AI requests
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Save & export itineraries
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                PDF export
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Premium customization
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Advanced travel tools
+              </li>
+            </ul>
+            <button class="w-full py-2.5 px-4 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition-colors" data-tier="traveler">
+              Get Traveler
+            </button>
+          </div>
+
+          {/* Business */}
+          <div class="bg-white rounded-2xl border border-amber-200 p-6 hover:shadow-lg transition-shadow">
+            <div class="text-center mb-6">
+              <span class="text-3xl">💼</span>
+              <h3 class="text-xl font-bold text-gray-900 mt-2">Business</h3>
+              <p class="text-sm text-gray-500 mt-1">For travel professionals</p>
+            </div>
+            <div class="text-center mb-6">
+              <span class="text-4xl font-bold text-amber-600">$19.99</span>
+              <span class="text-gray-500">/month</span>
+              <p class="text-xs text-green-600 mt-1">Save 20% with annual ($191.99/yr)</p>
+            </div>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Unlimited AI requests
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                All Traveler features
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Business templates
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                Team collaboration
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                API access & dedicated support
+              </li>
+            </ul>
+            <button class="w-full py-2.5 px-4 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors" data-tier="business">
+              Get Business
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Feature Comparison Table */}
+    <section class="py-16 bg-gray-50">
+      <div class="container-custom">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Feature Comparison</h2>
+        <div class="overflow-x-auto max-w-4xl mx-auto">
+          <table class="w-full bg-white rounded-xl shadow-sm">
+            <thead>
+              <tr class="border-b border-gray-200">
+                <th class="text-left py-4 px-6 font-semibold text-gray-900">Feature</th>
+                <th class="text-center py-4 px-4 font-semibold text-gray-600">Free</th>
+                <th class="text-center py-4 px-4 font-semibold text-blue-600">Explorer</th>
+                <th class="text-center py-4 px-4 font-semibold text-purple-600">Traveler</th>
+                <th class="text-center py-4 px-4 font-semibold text-amber-600">Business</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 px-6 text-sm text-gray-700">AI Requests per Month</td>
+                <td class="py-3 px-4 text-center text-sm">3</td>
+                <td class="py-3 px-4 text-center text-sm">15</td>
+                <td class="py-3 px-4 text-center text-sm font-medium text-green-600">Unlimited</td>
+                <td class="py-3 px-4 text-center text-sm font-medium text-green-600">Unlimited</td>
+              </tr>
+              <tr class="border-b border-gray-100 bg-gray-50">
+                <td class="py-3 px-6 text-sm text-gray-700">Save Itineraries</td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 px-6 text-sm text-gray-700">Conversation History</td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+              </tr>
+              <tr class="border-b border-gray-100 bg-gray-50">
+                <td class="py-3 px-6 text-sm text-gray-700">PDF Export</td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 px-6 text-sm text-gray-700">Premium Customization</td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+              </tr>
+              <tr class="border-b border-gray-100 bg-gray-50">
+                <td class="py-3 px-6 text-sm text-gray-700">Business Templates</td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+              </tr>
+              <tr>
+                <td class="py-3 px-6 text-sm text-gray-700">Team Collaboration</td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></td>
+                <td class="py-3 px-4 text-center"><svg class="w-5 h-5 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    {/* FAQ Section */}
+    <section class="py-16">
+      <div class="container-custom">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
+        <div class="max-w-3xl mx-auto space-y-6">
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-gray-900 mb-2">When does my monthly quota reset?</h3>
+            <p class="text-gray-600 text-sm">Your AI request quota resets on the 1st of each month at midnight (UTC). Unused requests do not roll over to the next month.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-gray-900 mb-2">Can I upgrade or downgrade at any time?</h3>
+            <p class="text-gray-600 text-sm">Yes! You can change your plan at any time. When upgrading, you'll get immediate access to new features. Downgrades take effect at the start of your next billing cycle.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-gray-900 mb-2">What happens when I reach my AI request limit?</h3>
+            <p class="text-gray-600 text-sm">You'll see a friendly reminder to upgrade your plan. You can still view your saved itineraries and use other features available in your tier.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-gray-900 mb-2">Is there a free trial for paid plans?</h3>
+            <p class="text-gray-600 text-sm">The Free plan lets you try 3 AI requests per month. We don't offer trials for paid plans, but you can cancel anytime if you're not satisfied.</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-gray-900 mb-2">What payment methods do you accept?</h3>
+            <p class="text-gray-600 text-sm">We accept all major credit cards, PayPal, and various local payment methods. Annual plans can also be paid via bank transfer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA Section */}
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600">
+      <div class="container-custom text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Start Your China Adventure?</h2>
+        <p class="text-blue-100 mb-8 max-w-xl mx-auto">Join thousands of travelers using AI to plan their perfect China trip</p>
+        <a href="/ai" class="inline-block py-3 px-8 rounded-lg bg-white text-blue-600 font-semibold hover:bg-blue-50 transition-colors">
+          Start Planning Now
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<script>
+  // Handle tier selection buttons
+  document.querySelectorAll('[data-tier]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const tier = btn.getAttribute('data-tier');
+      if (tier) {
+        localStorage.setItem('subscription_tier', tier);
+        // Show confirmation
+        const original = btn.textContent;
+        btn.textContent = '✓ Activated!';
+        btn.classList.add('bg-green-600', 'hover:bg-green-700');
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.classList.remove('bg-green-600', 'hover:bg-green-700');
+        }, 2000);
+      }
+    });
+  });
+
+  // Highlight current tier
+  const currentTier = localStorage.getItem('subscription_tier') || 'free';
+  document.querySelectorAll('[data-tier]').forEach((btn) => {
+    if (btn.getAttribute('data-tier') === currentTier) {
+      btn.textContent = 'Current Plan';
+      btn.disabled = true;
+      btn.classList.add('opacity-60', 'cursor-not-allowed');
+    }
+  });
+</script>

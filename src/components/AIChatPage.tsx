@@ -1,12 +1,14 @@
 /**
  * AIChatPage Component
  * Full-page AI chat interface for ChinaConnect
+ * Integrates subscription status and usage tracking
  */
 
 import { getLongTermMemory } from "@/lib/ai/memory";
 import type { SavedItinerary } from "@/lib/ai/types";
 import React, { useState, useCallback } from "react";
 import { AIChat } from "./ai/AIChat";
+import { SubscriptionCard } from "./subscription/SubscriptionCard";
 
 export default function AIChatPage() {
   const [_savedItinerary, setSavedItinerary] = useState<SavedItinerary | null>(null);
@@ -61,11 +63,46 @@ export default function AIChatPage() {
 
       {/* Main Chat Interface */}
       <div className="container-custom py-6">
-        <div
-          className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
-          style={{ height: "calc(100vh - 250px)", minHeight: "500px" }}
-        >
-          <AIChat language="en" budgetLevel="medium" showItinerary={showItineraryPanel} />
+        <div className="flex gap-6">
+          {/* Subscription Status Sidebar */}
+          <div className="hidden lg:block w-64 flex-shrink-0">
+            <div className="sticky top-6 space-y-4">
+              <SubscriptionCard language="en" compact={false} />
+              
+              {/* Quick Tips */}
+              <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl border border-indigo-100 p-4">
+                <h4 className="font-semibold text-gray-900 text-sm mb-3">💡 Quick Tips</h4>
+                <ul className="space-y-2 text-xs text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-500 mt-0.5">•</span>
+                    Be specific about dates and interests
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-500 mt-0.5">•</span>
+                    Ask for restaurant recommendations
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-500 mt-0.5">•</span>
+                    Request day-by-day itineraries
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-500 mt-0.5">•</span>
+                    Save your favorite plans
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Chat Area */}
+          <div className="flex-1">
+            <div
+              className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
+              style={{ height: "calc(100vh - 250px)", minHeight: "500px" }}
+            >
+              <AIChat language="en" budgetLevel="medium" showItinerary={showItineraryPanel} />
+            </div>
+          </div>
         </div>
       </div>
 

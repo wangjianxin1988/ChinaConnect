@@ -20,6 +20,7 @@ import {
   TRAVEL_PLANNING_SYSTEM,
 } from "@/services/minimax";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { checkUsageLimit, incrementUsage, getRemainingRequests as getRemainingAIRequests } from "@/lib/usage-tracker";
 
 // ============================================
 // Hook Types
@@ -43,10 +44,13 @@ export interface UseAIConversationReturn {
   currentItinerary: SavedItinerary | null;
   isMCPAvailable: boolean;
   isMiniMaxAvailable: boolean;
+  usageExceeded: boolean;
+  remainingRequests: number;
 
   // Actions
   sendMessage: (content: string) => Promise<void>;
   clearConversation: () => void;
+  refreshUsage: () => void;
   saveCurrentItinerary: (name: string) => SavedItinerary | null;
   loadItinerary: (id: string) => void;
   deleteItinerary: (id: string) => void;
@@ -79,6 +83,8 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
   const [currentItinerary, setCurrentItinerary] = useState<SavedItinerary | null>(null);
   const [isMCPAvailable, setIsMCPAvailable] = useState(false);
   const [isMiniMaxAvailable, setIsMiniMaxAvailable] = useState(false);
+  const [usageExceeded, setUsageExceeded] = useState(false);
+  const [remainingRequests, setRemainingRequests] = useState(getRemainingAIRequests());
 
   // Engine instances
   const engineRef = useRef<ReActEngine | null>(null);
@@ -135,6 +141,16 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
     return () => {
       unsubscribe();
     };
+  }, []);
+
+  // ============================================
+  // Usage Tracking
+  // ============================================
+
+  const refreshUsage = useCallback(() => {
+    const limit = checkUsageLimit();
+    setUsageExceeded(!limit.allowed);
+    setRemainingRequests(limit.remaining);
   }, []);
 
   // ============================================
@@ -223,6 +239,20 @@ Remember:
   const sendMessage = useCallback(
     async (content: string) => {
       if (!content.trim() || isLoading) return;
+
+      // Check usage limit before sending
+      const usageLimit = checkUsageLimit();
+      if (!usageLimit.allowed) {
+        setUsageExceeded(true);
+        addMessage({
+          role: "assistant",
+          content: language === "zh"
+            ? "⚠️ 您本月的AI请求次数已用完。请升级您的套餐以继续使用AI助手。\n\n[查看定价方案](/pricing)"
+            : "⚠️ You've used all your AI requests for this month. Please upgrade your plan to continue using the AI assistant.\n\n[View Pricing](/pricing)",
+          isStreaming: false,
+        });
+        return;
+      }
 
       setIsLoading(true);
       setWorkflowProgress(null);
@@ -347,6 +377,10 @@ Remember:
 
         // Add assistant response to MiniMax conversation history
         conversationMessagesRef.current.push({ role: "assistant", content: responseText });
+
+        // Increment usage count after successful AI response
+        incrementUsage();
+        refreshUsage();
 
         // 5. Parse itinerary from response text
         const destinationMatch = responseText.match(
@@ -571,6 +605,8 @@ Remember:
     currentItinerary,
     isMCPAvailable,
     isMiniMaxAvailable,
+    usageExceeded,
+    remainingRequests,
     sendMessage,
     clearConversation,
     saveCurrentItinerary,
@@ -581,5 +617,6 @@ Remember:
     shareItinerary,
     getShareLink,
     generateQuickResponse,
+    refreshUsage,
   };
 }
