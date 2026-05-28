@@ -3,10 +3,25 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { citiesMeta, cities } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
 import { CitiesListClient } from "@/components/city/CitiesListClient";
+import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const lang = getLangFromUrl(Astro.url);
 const pageTitle = "All Cities - ChinaConnect";
 const pageDescription = "Explore all Chinese cities covered by ChinaConnect - from ancient capitals to modern metropolises. S-tier premium cities, A-tier semi-premium, and D-tier on-demand cities.";
+
+// Schema.org JSON-LD for Cities listing
+const citiesSchemas = [
+  generateCollectionPageSchema({
+    name: "Chinese Cities on ChinaConnect",
+    description: "Explore 12+ Chinese cities with ChinaConnect - from ancient capitals like Beijing and Xi'an to modern metropolises like Shanghai and Shenzhen. Find Michelin restaurants, Black Pearl establishments, and local favorites.",
+    url: "https://chinaconnect.com/cities",
+    numberOfItems: citiesMeta.length,
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Cities", url: "https://chinaconnect.com/cities" },
+  ]),
+];
 ---
 
 <BaseLayout
@@ -17,6 +32,9 @@ const pageDescription = "Explore all Chinese cities covered by ChinaConnect - fr
   }}
   lang={lang}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(citiesSchemas)} />
+
   <main class="container mx-auto px-4 py-8">
     <div class="mb-8">
       <h1 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="cities.title">Explore All Cities</h1>

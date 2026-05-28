@@ -1,15 +1,66 @@
 ---
 import PaymentGuideClient from "@/components/Guide/PaymentGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateHowToSchema, generateFAQSchema, generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+// Payment Guide page SEO
+const pageTitle = "Payment Guide - ChinaConnect";
+const pageDescription = "Complete payment guide for China travel. Alipay, WeChat Pay, cash, bank cards, tax refunds, and shopping tips with practical instructions for international visitors.";
+
+// Schema.org JSON-LD for Payment Guide (HowTo + FAQ for AI crawlers)
+const paymentSchemas = [
+  generateHowToSchema({
+    name: "How to Pay in China as a Foreigner",
+    description: "Step-by-step guide for international visitors on setting up and using mobile payments, cash, and cards in China.",
+    steps: [
+      { name: "Download Alipay or WeChat Pay", text: "Download Alipay or WeChat Pay apps before or upon arrival in China." },
+      { name: "Verify Identity with Passport", text: "Complete the foreign passport verification process in the app, which may require a photo of your passport." },
+      { name: "Link International Card", text: "Link a Visa, Mastercard, or other international card to enable payments." },
+      { name: "Set Payment Password", text: "Set a secure payment password for authorizing transactions." },
+      { name: "Use Scanner to Pay", text: "Scan merchant QR codes or show your personal QR code to complete payments." },
+    ],
+    totalTime: "PT30M",
+  }),
+  generateFAQSchema([
+    {
+      question: "Do I need a Chinese bank account for mobile payments?",
+      answer: "Foreign credit cards now work with Alipay and WeChat Pay, but with limitations. For full features, a Chinese bank account is helpful but not always required."
+    },
+    {
+      question: "Is it safe to use mobile payments in China?",
+      answer: "Yes, mobile payments in China are very secure. Alipay and WeChat have millions of users with strong security measures. Use biometric verification for large transactions."
+    },
+    {
+      question: "How much cash should I bring to China?",
+      answer: "For emergencies, carry 500-1000 CNY equivalent in local currency. Most urban places accept mobile payment. Rural areas may need more cash."
+    },
+    {
+      question: "Can I get a tax refund on purchases in China?",
+      answer: "Yes, you can get VAT refund on purchases over 500 CNY at participating stores. Keep the invoice and get the tax refund form at the store before departure."
+    },
+    {
+      question: "What ATMs should I use in China?",
+      answer: "Use ICBC, Bank of China, or HSBC ATMs for international cards. They have the best exchange rates and widest coverage."
+    },
+  ]),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Travel Guide", url: "https://chinaconnect.com/guide" },
+    { name: "Payment Guide", url: "https://chinaconnect.com/guide/payment" },
+  ]),
+];
 ---
 
 <BaseLayout
-  title="Payment Guide - ChinaConnect"
-  description="Complete payment guide for China travel. Alipay, WeChat Pay, cash, tax refunds, and shopping tips with practical instructions."
+  title={pageTitle}
+  description={pageDescription}
   meta={{
-    keywords: ['China payment guide', 'Alipay', 'WeChat Pay', 'China cash', 'tax refund China', 'China shopping'],
+    keywords: ['China payment guide', 'Alipay', 'WeChat Pay', 'China cash', 'bank card China', 'tax refund China', 'China shopping'],
   }}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO (HowTo + FAQ for AI crawlers) -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(paymentSchemas)} />
+
   <main class="container mx-auto px-4 py-8">
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">

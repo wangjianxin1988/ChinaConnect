@@ -3,8 +3,8 @@ compatibility_date = "2024-12-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
-# Supabase Configuration
+# Supabase Configuration (migrated to new project on 2026-05-27)
 # SUPABASE_URL 在此配置
 # SUPABASE_ANON_KEY 在 Cloudflare Dashboard → Settings → Environment Variables 中配置
 [vars]
-SUPABASE_URL = "https://giynvpfnzzelzwpmsgtf.supabase.co"
+SUPABASE_URL = "https://xyvuqbpwrhkukjgzveyc.supabase.co"

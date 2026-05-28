@@ -27,7 +27,7 @@ export function CityTierBadge({
     <span
       className={`
         inline-flex items-center gap-1 rounded-full font-semibold border
-        ${config.bgColor} ${config.color}
+        ${config.bgColor} ${config.color} ${config.borderColor}
         ${sizeClasses[size]}
         ${className}
       `}
@@ -75,7 +75,9 @@ export function CityTierBadge({
           </svg>
         )}
       </span>
-      {showLabel && <span>{config.label}</span>}
+      {showLabel && (
+        <span className="hidden sm:inline">{config.labelZh}</span>
+      )}
     </span>
   );
 }

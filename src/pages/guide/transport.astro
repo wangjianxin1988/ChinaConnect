@@ -1,15 +1,44 @@
 ---
 import TransportGuideClient from "@/components/Guide/TransportGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateHowToSchema, generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+// Transport Guide page SEO
+const pageTitle = "Transport Guide - ChinaConnect";
+const pageDescription = "Complete transport guide for traveling in China. Airport arrival, metro, bus, taxi, high-speed rail, and inter-city transport with step-by-step instructions.";
+
+// Schema.org JSON-LD for Transport Guide
+const transportSchemas = [
+  generateHowToSchema({
+    name: "How to Get Around China as a Tourist",
+    description: "Step-by-step guide for navigating transportation in China including airport transfers, metro, high-speed rail, taxis, and inter-city transport.",
+    steps: [
+      { name: "Airport Arrival", text: "After landing, follow signs to metro or taxi. Airport staff can help with directions." },
+      { name: "Get a SIM Card", text: "Purchase a SIM or eSIM at the airport for navigation apps and ride-hailing." },
+      { name: "Use Metro or Didi", text: "Major cities have efficient metro systems. Download Metro Man or use WeChat mini-programs." },
+      { name: "Book High-Speed Rail", text: "Use 12306 app or station counters to book train tickets. Present passport at pickup." },
+      { name: "Navigate with Maps", text: "Use Gaode Maps (高德地图) for most accurate turn-by-turn navigation in China." },
+    ],
+    totalTime: "PT45M",
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Travel Guide", url: "https://chinaconnect.com/guide" },
+    { name: "Transport Guide", url: "https://chinaconnect.com/guide/transport" },
+  ]),
+];
 ---
 
 <BaseLayout
-  title="Transport Guide - ChinaConnect"
-  description="Complete transport guide for traveling in China. Airport arrival, metro, bus, taxi, high-speed rail, and inter-city transport with step-by-step instructions."
+  title={pageTitle}
+  description={pageDescription}
   meta={{
     keywords: ['China transport guide', 'China metro', 'China taxi', 'high speed rail China', 'Didi China', '12306'],
   }}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(transportSchemas)} />
+
   <main class="container mx-auto px-4 py-8">
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">

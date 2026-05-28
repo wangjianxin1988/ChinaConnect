@@ -1,15 +1,61 @@
 ---
 import VisaGuideClient from "@/components/Guide/VisaGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateHowToSchema, generateFAQSchema, generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+// Visa Guide page SEO
+const pageTitle = "Visa Guide - ChinaConnect";
+const pageDescription = "Complete visa application guide for China travel. Requirements by country, application process, required documents, and tips for tourists.";
+
+// Schema.org JSON-LD for Visa Guide
+const visaSchemas = [
+  generateHowToSchema({
+    name: "How to Apply for a China Tourist Visa",
+    description: "Step-by-step guide for international visitors on applying for a China L tourist visa including document preparation, application process, and interview tips.",
+    steps: [
+      { name: "Determine Your Visa Type", text: "Most tourists need an L (tourist) visa. Business visitors may need M or F visas." },
+      { name: "Gather Required Documents", text: "Valid passport, visa application form, photo, itinerary, hotel bookings, and proof of finances." },
+      { name: "Complete the Application Form", text: "Fill out the China visa application form (Form V.2013) online or at the consulate." },
+      { name: "Submit Application", text: "Submit to Chinese embassy/consulate/visa center with applicable fees." },
+      { name: "Collect Your Passport", text: "Standard processing takes 4 business days, express service available." },
+    ],
+    totalTime: "PT2H",
+  }),
+  generateFAQSchema([
+    {
+      question: "How long does it take to get a China tourist visa?",
+      answer: "Standard processing takes 4 business days. Express service (2-3 days) or super express (1 day) available for additional fees."
+    },
+    {
+      question: "Can I get a China visa on arrival?",
+      answer: "China does not offer visas on arrival for most nationalities. You must apply before traveling at a Chinese embassy, consulate, or authorized visa center."
+    },
+    {
+      question: "How much does a China visa cost?",
+      answer: "Visa fees vary by nationality and processing speed. US citizens pay approximately $140 for standard processing. Check with your local Chinese embassy for exact fees."
+    },
+    {
+      question: "Do I need an invitation letter for a China visa?",
+      answer: "For tourist visas, an invitation letter is not always required but strengthens your application. Business visas typically require an invitation from a Chinese company."
+    },
+  ]),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Travel Guide", url: "https://chinaconnect.com/guide" },
+    { name: "Visa Guide", url: "https://chinaconnect.com/guide/visa" },
+  ]),
+];
 ---
 
 <BaseLayout
-  title="Visa Guide - ChinaConnect"
-  description="Complete visa application guide for China travel. Requirements by country, application process, required documents, and tips for tourists."
+  title={pageTitle}
+  description={pageDescription}
   meta={{
     keywords: ['China visa guide', 'visa application', 'China tourist visa', 'L visa', 'visa requirements'],
   }}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(visaSchemas)} />
   <main class="container mx-auto px-4 py-8">
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">

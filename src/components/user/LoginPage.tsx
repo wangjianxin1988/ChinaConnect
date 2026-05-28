@@ -1,10 +1,12 @@
 /**
  * LoginPage Component
  * Authentication page with email, magic link, and OAuth options
+ * Supports Demo Mode for development/preview
  */
 
 import { useAuth } from "@/hooks/useAuth";
 import { cn } from "@/lib/utils";
+import { DEMO_MODE } from "@/services/auth";
 import { useState } from "react";
 
 type AuthMode = "login" | "register" | "magic_link" | "forgot_password";
@@ -48,6 +50,12 @@ export function LoginPage() {
 
   const handleOAuth = async (provider: "google" | "github") => {
     await signInWithProvider(provider);
+  };
+
+  // Demo mode quick login
+  const handleDemoLogin = async () => {
+    clearError();
+    await signIn("demo@chinaconnect.com", "demo123");
   };
 
   // Show loading state while redirecting
@@ -157,6 +165,26 @@ export function LoginPage() {
             <p className="text-sm text-green-600 mt-1">
               We sent a password reset link to {email}. Click the link to reset your password.
             </p>
+          </div>
+        )}
+
+        {/* Demo Mode Quick Login */}
+        {DEMO_MODE && mode === "login" && (
+          <div className="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-purple-200">
+            <p className="text-sm text-purple-700 font-medium mb-2">
+              Demo Mode Active
+            </p>
+            <p className="text-xs text-purple-600 mb-3">
+              Try ChinaConnect with a demo account without signing up.
+            </p>
+            <button
+              type="button"
+              onClick={handleDemoLogin}
+              disabled={isLoading}
+              className="w-full py-2 px-4 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              {isLoading ? "Loading..." : "Quick Demo Login"}
+            </button>
           </div>
         )}
 

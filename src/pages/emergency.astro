@@ -1,9 +1,37 @@
 ---
 import { QuickDial, EmergencyCard, GPSLocator, EmbassyLocator } from "@/components/Emergency";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateFAQSchema, generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
 const pageTitle = "Emergency Contacts & Phrases - ChinaConnect";
 const pageDescription =
   "Essential emergency contacts and translation phrases for travelers in China. Includes police, ambulance, fire, embassy info, GPS location, and offline emergency phrases.";
+
+// Schema.org JSON-LD for Emergency page
+const emergencySchemas = [
+  generateFAQSchema([
+    {
+      question: "What is the emergency number in China?",
+      answer: "Police: 110, Ambulance: 120, Fire: 119, Traffic Accident: 122. For foreign visitors, remain calm and state your location clearly."
+    },
+    {
+      question: "What should I do if I lose my passport in China?",
+      answer: "Report to local police for a theft/loss report, then contact your embassy for emergency travel documents. Keep copies of your passport separately."
+    },
+    {
+      question: "How do I call an ambulance in China?",
+      answer: "Dial 120 for ambulance services. International cards work at most hospitals. For serious emergencies, go directly to the nearest hospital."
+    },
+    {
+      question: "Can I use my home emergency number in China?",
+      answer: "No, international emergency numbers like 911 do not work in China. Use local numbers: 110 (police), 120 (ambulance), 119 (fire)."
+    },
+  ]),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Emergency", url: "https://chinaconnect.com/emergency" },
+  ]),
+];
 ---
 
 <BaseLayout
@@ -13,6 +41,8 @@ const pageDescription =
     keywords: ['emergency china', 'china emergency contacts', 'police china', 'ambulance china', 'emergency phrases china', 'embassy beijing', 'SOS china', 'GPS location china'],
   }}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(emergencySchemas)} />
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-red-600 to-red-800 text-white py-16">
     <div class="container-custom">

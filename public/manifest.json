@@ -1,47 +1,13 @@
 {
-  "name": "ChinaConnect",
+  "name": "ChinaConnect - China Travel Guide",
   "short_name": "ChinaConnect",
-  "description": "AI-powered China travel guide with offline support",
+  "description": "AI-powered China travel guide with offline support - restaurants, cities, emergency contacts, and AI chat",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3b82f6",
   "orientation": "portrait-primary",
   "scope": "/",
-  "icons": [
-    {
-      "src": "/icons/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
-    {
-      "src": "/icons/icon.svg",
-      "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "AI Assistant",
-      "short_name": "AI Chat",
-      "description": "Chat with AI for travel advice",
-      "url": "/ai"
-    },
-    {
-      "name": "Emergency Contacts",
-      "short_name": "Emergency",
-      "description": "View emergency contacts",
-      "url": "/emergency"
-    },
-    {
-      "name": "Explore Cities",
-      "short_name": "Cities",
-      "description": "Browse Chinese cities",
-      "url": "/cities"
-    }
-  ],
   "categories": ["travel", "food", "lifestyle"],
   "lang": "en",
   "dir": "auto",
@@ -51,6 +17,63 @@
   "launch_handler": {
     "client_mode": "navigate-existing"
   },
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "label": "Home screen"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AI Assistant",
+      "short_name": "AI Chat",
+      "description": "Chat with AI for travel advice",
+      "url": "/ai",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Emergency Contacts",
+      "short_name": "Emergency",
+      "description": "View emergency contacts for China",
+      "url": "/emergency",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Explore Cities",
+      "short_name": "Cities",
+      "description": "Browse Chinese cities",
+      "url": "/cities",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+    }
+  ],
   "share_target": {
     "action": "/share-handler",
     "method": "GET",

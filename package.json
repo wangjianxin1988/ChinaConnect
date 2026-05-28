@@ -28,11 +28,19 @@
     "test:e2e:emergency": "playwright test tests/e2e/emergency-sos.spec.ts",
     "test:e2e:ai": "playwright test tests/e2e/ai-chat.spec.ts",
     "test:e2e:auth": "playwright test tests/e2e/auth.spec.ts",
+    "test:e2e:smoke": "playwright test tests/e2e/homepage.spec.ts tests/e2e/auth.spec.ts tests/e2e/city-pages.spec.ts --project=chromium",
+    "test:e2e:ci": "playwright test --project=chromium --reporter=list",
+    "test:e2e:all": "playwright test --reporter=list",
+    "test:e2e:grep": "playwright test --grep",
     "test:all": "pnpm test && pnpm test:e2e",
+    "test:ci": "pnpm test && pnpm test:e2e:ci",
     "playwright:install": "playwright install --with-deps chromium",
+    "playwright:install:all": "playwright install --with-deps",
     "playwright:install-deps": "playwright install-deps",
     "lhci:build": "lhci build",
-    "lhci:autorun": "lhci autorun"
+    "lhci:autorun": "lhci autorun",
+    "lhci:collect": "lhci collect",
+    "lhci:assert": "lhci assert"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.5.4",
@@ -56,10 +64,12 @@
     "react-leaflet": "^5.0.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.17",
-    "uuid": "^14.0.0"
+    "uuid": "^14.0.0",
+    "zustand": "^5.0.13"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@lhci/cli": "^0.14.0",
     "@playwright/test": "^1.60.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",

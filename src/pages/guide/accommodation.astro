@@ -1,15 +1,44 @@
 ---
 import AccommodationGuideClient from "@/components/Guide/AccommodationGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateHowToSchema, generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+// Accommodation Guide page SEO
+const pageTitle = "Accommodation Guide - ChinaConnect";
+const pageDescription = "Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay.";
+
+// Schema.org JSON-LD for Accommodation Guide
+const accommodationSchemas = [
+  generateHowToSchema({
+    name: "How to Book and Check into Hotels in China",
+    description: "Step-by-step guide for booking hotels and completing check-in procedures in China as a foreign visitor.",
+    steps: [
+      { name: "Book Online or App", text: "Use Booking.com, Ctrip, or Fliggy to book hotels. International sites often have better English support." },
+      { name: "Prepare Documents", text: "Have your passport ready. Hotels require passport registration for all foreign guests." },
+      { name: "Complete Registration", text: "Fill out the temporary residence form at check-in. Some hotels use digital registration." },
+      { name: "Payment", text: "Pay via Alipay, WeChat Pay, or credit card depending on hotel policy." },
+      { name: "Keep Registration Slip", text: "Keep your hotel registration slip - you may need it for police checks or other hotel bookings." },
+    ],
+    totalTime: "PT30M",
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Travel Guide", url: "https://chinaconnect.com/guide" },
+    { name: "Accommodation Guide", url: "https://chinaconnect.com/guide/accommodation" },
+  ]),
+];
 ---
 
 <BaseLayout
-  title="Accommodation Guide - ChinaConnect"
-  description="Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay."
+  title={pageTitle}
+  description={pageDescription}
   meta={{
     keywords: ['China hotel guide', 'China accommodation', 'China booking', 'Chinese hotel tips', 'China hostel'],
   }}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(accommodationSchemas)} />
+
   <main class="container mx-auto px-4 py-8">
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">

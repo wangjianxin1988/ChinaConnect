@@ -45,6 +45,20 @@ module.exports = {
         "categories:best-practices": ["error", { minScore: 0.85 }],
         "categories:seo": ["error", { minScore: 0.9 }],
 
+        // PWA specific (critical for PWA score)
+        "categories:pwa": ["error", { minScore: 0.9 }],
+        "installable-manifest": ["error", { minScore: 1 }],
+        "service-worker": ["error", { minScore: 1 }],
+        "redirects-http": ["error", { minScore: 1 }],
+        "apple-touch-icon": ["error", { minScore: 1 }],
+        "without-javascript": ["error", { minScore: 1 }],
+        "maskable-icon": ["error", { minScore: 1 }],
+        "icons": ["error", { minScore: 1 }],
+        "has-manifest": ["error", { minScore: 1 }],
+        "manifest-start-url": ["error", { minScore: 1 }],
+        "manifest-short-name": ["error", { minScore: 1 }],
+        "theme-color": ["error", { minScore: 1 }],
+
         // Specific audits
         "first-contentful-paint": ["warn", { maxNumericValue: 2000 }],
         "largest-contentful-paint": ["error", { maxNumericValue: 4000 }],

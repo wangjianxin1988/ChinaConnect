@@ -3328,25 +3328,42 @@ export function getCityTierMeta(slug: string): CityTierMeta | undefined {
  */
 export const TIER_CONFIG: Record<
   CityTier,
-  { label: string; color: string; bgColor: string; description: string }
+  {
+    label: string;
+    labelZh: string;
+    color: string;
+    bgColor: string;
+    borderColor: string;
+    icon: string;
+    description: string;
+  }
 > = {
   S: {
     label: "S-Tier",
+    labelZh: "S级城市",
     color: "text-amber-700",
-    bgColor: "bg-amber-100 border-amber-200",
-    description: "Premium cities with full detailed guides",
+    bgColor: "bg-amber-50",
+    borderColor: "border-amber-300",
+    icon: "star",
+    description: "Premium cities with full detailed guides - UNESCO sites, Michelin restaurants, complete transport info",
   },
   A: {
     label: "A-Tier",
+    labelZh: "A级城市",
     color: "text-blue-700",
-    bgColor: "bg-blue-100 border-blue-200",
-    description: "Semi-premium cities with curated content",
+    bgColor: "bg-blue-50",
+    borderColor: "border-blue-300",
+    icon: "shield",
+    description: "Semi-premium cities with curated content - popular destinations with good local coverage",
   },
   D: {
     label: "D-Tier",
+    labelZh: "D级城市",
     color: "text-gray-600",
-    bgColor: "bg-gray-100 border-gray-200",
-    description: "On-demand generated content",
+    bgColor: "bg-gray-50",
+    borderColor: "border-gray-300",
+    icon: "circle",
+    description: "On-demand generated content - cities with basic info available on request",
   },
 };
 

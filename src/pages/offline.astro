@@ -1,11 +1,8 @@
 ---
 /**
- * Offline Fallback Page
- *
- * This page is displayed when the user is offline and cannot access the main site.
- * It provides essential emergency contact information that works without internet.
- *
- * @module offline
+ * Offline Fallback Page - ChinaConnect
+ * Complete offline experience with emergency contacts and essential info
+ * This page is cached by Service Worker and shown when offline
  */
 ---
 
@@ -14,14 +11,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Offline emergency contacts for China - Police, Ambulance, Fire" />
+    <meta name="description" content="Offline - ChinaConnect emergency contacts and essential travel info" />
     <meta name="theme-color" content="#dc2626" />
-    <title>Offline - ChinaConnect Emergency</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Offline - ChinaConnect</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.json" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" href="/icons/icon.svg" />
 
     <style>
       * {
@@ -30,37 +27,50 @@
         padding: 0;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background: linear-gradient(135deg, #fef2f2 0%, #fef7f7 100%);
-        min-height: 100vh;
+        background: #f8fafc;
+        color: #1f2937;
+        line-height: 1.6;
       }
 
       .container {
         max-width: 600px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 16px;
       }
 
+      /* Offline Banner */
       .offline-banner {
         background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
         color: white;
-        padding: 16px 24px;
-        border-radius: 12px;
+        padding: 20px 24px;
+        border-radius: 16px;
         margin-bottom: 24px;
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 16px;
+        box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.4);
       }
 
       .offline-banner-icon {
-        font-size: 32px;
+        font-size: 48px;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.6; }
       }
 
       .offline-banner-text h1 {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
         margin-bottom: 4px;
       }
@@ -70,7 +80,15 @@
         opacity: 0.9;
       }
 
-      .emergency-card {
+      .offline-banner-text small {
+        font-size: 12px;
+        opacity: 0.75;
+        display: block;
+        margin-top: 4px;
+      }
+
+      /* Section Cards */
+      .card {
         background: white;
         border-radius: 16px;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -78,28 +96,40 @@
         margin-bottom: 24px;
       }
 
-      .emergency-card-header {
-        background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-        color: white;
-        padding: 20px 24px;
+      .card-header {
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
       }
 
-      .emergency-card-header h2 {
-        font-size: 18px;
+      .card-header h2, .card-header h3 {
+        font-size: 16px;
         font-weight: 700;
         display: flex;
         align-items: center;
         gap: 8px;
       }
 
-      .emergency-card-header p {
+      .card-header p {
         font-size: 13px;
         opacity: 0.9;
-        margin-top: 4px;
+        margin-top: 2px;
+      }
+
+      .card-content {
+        padding: 16px 20px;
+      }
+
+      /* Emergency Numbers */
+      .emergency-card .card-header {
+        background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        color: white;
       }
 
       .emergency-numbers {
-        padding: 16px;
+        display: grid;
+        gap: 12px;
       }
 
       .emergency-button {
@@ -108,7 +138,6 @@
         gap: 16px;
         padding: 16px;
         border-radius: 12px;
-        margin-bottom: 12px;
         color: white;
         text-decoration: none;
         transition: transform 0.2s, box-shadow 0.2s;
@@ -119,92 +148,108 @@
         font-size: 16px;
       }
 
-      .emergency-button:last-child {
-        margin-bottom: 0;
-      }
-
       .emergency-button:hover {
-        transform: scale(1.02);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.25);
       }
 
       .emergency-button:active {
-        transform: scale(0.98);
+        transform: translateY(0);
       }
 
-      .emergency-button-icon {
+      .emergency-icon {
         font-size: 36px;
         width: 56px;
         height: 56px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba-white(0.2);
+        background: rgba(255, 255, 255, 0.2);
         border-radius: 12px;
+        flex-shrink: 0;
       }
 
-      .emergency-button-content {
+      .emergency-content {
         flex: 1;
       }
 
-      .emergency-button-number {
+      .emergency-number {
         font-size: 28px;
         font-weight: 800;
-        line-height: 1;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
       }
 
-      .emergency-button-name {
+      .emergency-name {
         font-size: 14px;
+        font-weight: 500;
         opacity: 0.9;
         margin-top: 2px;
       }
 
-      .emergency-button-desc {
+      .emergency-desc {
         font-size: 12px;
         opacity: 0.7;
         margin-top: 2px;
       }
 
-      .emergency-button-arrow {
+      .emergency-arrow {
         font-size: 24px;
         opacity: 0.7;
       }
 
-      .phrases-card {
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        margin-bottom: 24px;
+      /* Quick Actions */
+      .quick-actions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding: 16px 20px;
       }
 
-      .phrases-header {
+      .quick-action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 8px;
+        background: #f9fafb;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #374151;
+        transition: background 0.2s, transform 0.2s;
+      }
+
+      .quick-action:hover {
+        background: #f3f4f6;
+        transform: translateY(-2px);
+      }
+
+      .quick-action-icon {
+        font-size: 28px;
+      }
+
+      .quick-action-label {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      /* Emergency Phrases */
+      .phrases-card .card-header {
         background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
         color: white;
-        padding: 16px 24px;
       }
 
-      .phrases-header h3 {
-        font-size: 16px;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
+      .phrase-list {
+        display: grid;
         gap: 8px;
       }
 
-      .phrases-list {
-        padding: 16px;
-      }
-
       .phrase-item {
-        padding: 12px;
+        padding: 12px 16px;
         background: #f9fafb;
-        border-radius: 8px;
-        margin-bottom: 8px;
-      }
-
-      .phrase-item:last-child {
-        margin-bottom: 0;
+        border-radius: 12px;
+        border-left: 4px solid #7c3aed;
       }
 
       .phrase-english {
@@ -222,90 +267,187 @@
       .phrase-pronunciation {
         font-size: 13px;
         color: #9ca3af;
+        font-style: italic;
         margin-top: 2px;
       }
 
-      .info-card {
-        background: #fef3c7;
+      /* Tips Card */
+      .tips-card {
+        background: #fffbeb;
         border: 1px solid #fcd34d;
-        border-radius: 12px;
-        padding: 16px;
-        margin-bottom: 24px;
       }
 
-      .info-card h4 {
-        font-size: 14px;
-        font-weight: 600;
+      .tips-card .card-header {
+        background: #fef3c7;
         color: #92400e;
-        margin-bottom: 8px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
       }
 
-      .info-card ul {
+      .tips-list {
         list-style: none;
-        font-size: 13px;
+        font-size: 14px;
         color: #78350f;
       }
 
-      .info-card li {
-        padding: 4px 0;
-        padding-left: 16px;
+      .tips-list li {
+        padding: 8px 0;
+        padding-left: 24px;
         position: relative;
+        border-bottom: 1px solid #fde68a;
       }
 
-      .info-card li::before {
-        content: "•";
+      .tips-list li:last-child {
+        border-bottom: none;
+      }
+
+      .tips-list li::before {
+        content: "💡";
         position: absolute;
         left: 0;
-        color: #d97706;
+        top: 8px;
       }
 
+      /* Retry Section */
       .retry-section {
         text-align: center;
-        padding: 24px;
+        padding: 24px 20px;
       }
 
       .retry-button {
         display: inline-flex;
         align-items: center;
-        gap: 8px;
-        padding: 14px 32px;
+        gap: 10px;
+        padding: 16px 32px;
         background: #3b82f6;
         color: white;
-        border-radius: 10px;
+        border-radius: 12px;
         font-size: 16px;
         font-weight: 600;
         text-decoration: none;
         transition: background 0.2s, transform 0.2s;
         cursor: pointer;
         border: none;
+        box-shadow: 0 4px 14px -3px rgba(59, 130, 246, 0.5);
       }
 
       .retry-button:hover {
         background: #2563eb;
-        transform: scale(1.02);
+        transform: translateY(-2px);
       }
 
       .retry-button:active {
-        transform: scale(0.98);
+        transform: translateY(0);
       }
 
+      .retry-button .spinner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-top-color: white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        display: none;
+      }
+
+      .retry-button.loading .spinner {
+        display: block;
+      }
+
+      .retry-button.loading span {
+        display: none;
+      }
+
+      .retry-button.loading::after {
+        content: "Checking...";
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      /* Cache Status */
+      .cache-status {
+        background: #ecfdf5;
+        border: 1px solid #6ee7b7;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 24px;
+        display: none;
+      }
+
+      .cache-status.visible {
+        display: block;
+      }
+
+      .cache-status h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #065f46;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .cache-status-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .cache-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 12px;
+        background: #d1fae5;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #047857;
+      }
+
+      /* Footer */
       .footer-note {
         text-align: center;
-        padding: 16px;
+        padding: 24px 16px;
         font-size: 12px;
         color: #9ca3af;
       }
 
       .footer-note a {
         color: #6b7280;
+        text-decoration: none;
       }
 
+      .footer-note a:hover {
+        text-decoration: underline;
+      }
+
+      /* Toast notification */
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: #1f2937;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 0;
+        transition: transform 0.3s, opacity 0.3s;
+        z-index: 100;
+      }
+
+      .toast.visible {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+
+      /* Responsive */
       @media (max-width: 480px) {
         .container {
-          padding: 16px;
+          padding: 12px;
         }
 
         .emergency-button {
@@ -313,14 +455,18 @@
           gap: 12px;
         }
 
-        .emergency-button-icon {
+        .emergency-icon {
           font-size: 28px;
           width: 48px;
           height: 48px;
         }
 
-        .emergency-button-number {
+        .emergency-number {
           font-size: 24px;
+        }
+
+        .quick-actions {
+          grid-template-columns: repeat(2, 1fr);
         }
       }
     </style>
@@ -329,154 +475,286 @@
   <body>
     <div class="container">
       <!-- Offline Banner -->
-      <div class="offline-banner">
-        <span class="offline-banner-icon">📡</span>
+      <div class="offline-banner" role="alert" aria-live="polite">
+        <span class="offline-banner-icon" aria-hidden="true">📡</span>
         <div class="offline-banner-text">
           <h1>You're Offline</h1>
-          <p>Emergency numbers below work without internet</p>
+          <p>Emergency contacts and essential info are still available</p>
+          <small>Last synced: <span id="lastSync">--</span></small>
         </div>
       </div>
 
+      <!-- Cache Status -->
+      <div class="cache-status" id="cacheStatus" aria-live="polite">
+        <h4>
+          <span>✅</span>
+          Available Offline
+        </h4>
+        <div class="cache-status-items" id="cacheItems"></div>
+      </div>
+
       <!-- Emergency Numbers Card -->
-      <div class="emergency-card">
-        <div class="emergency-card-header">
+      <div class="card emergency-card">
+        <div class="card-header">
           <h2>
-            <span>🚨</span>
+            <span aria-hidden="true">🚨</span>
             Emergency Numbers (China)
           </h2>
           <p>Tap any number to call immediately</p>
         </div>
-        <div class="emergency-numbers">
-          <a href="tel:110" class="emergency-button" style="background: #2563eb;">
-            <div class="emergency-button-icon"><span>🚔</span></div>
-            <div class="emergency-button-content">
-              <div class="emergency-button-number">110</div>
-              <div class="emergency-button-name">警察 - Police</div>
-              <div class="emergency-button-desc">Crime, emergencies, public safety</div>
-            </div>
-            <div class="emergency-button-arrow">📞</div>
+        <div class="card-content">
+          <div class="emergency-numbers">
+            <a href="tel:110" class="emergency-button" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+              <div class="emergency-icon"><span aria-hidden="true">🚔</span></div>
+              <div class="emergency-content">
+                <div class="emergency-number">110</div>
+                <div class="emergency-name">警察 - Police</div>
+                <div class="emergency-desc">Crime, emergencies, public safety</div>
+              </div>
+              <div class="emergency-arrow" aria-hidden="true">📞</div>
+            </a>
+            <a href="tel:120" class="emergency-button" style="background: linear-gradient(135deg, #dc2626, #b91c1c);">
+              <div class="emergency-icon"><span aria-hidden="true">🚑</span></div>
+              <div class="emergency-content">
+                <div class="emergency-number">120</div>
+                <div class="emergency-name">救护车 - Ambulance</div>
+                <div class="emergency-desc">Medical emergencies, injuries</div>
+              </div>
+              <div class="emergency-arrow" aria-hidden="true">📞</div>
+            </a>
+            <a href="tel:119" class="emergency-button" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+              <div class="emergency-icon"><span aria-hidden="true">🚒</span></div>
+              <div class="emergency-content">
+                <div class="emergency-number">119</div>
+                <div class="emergency-name">消防 - Fire</div>
+                <div class="emergency-desc">Fires, rescues, hazardous materials</div>
+              </div>
+              <div class="emergency-arrow" aria-hidden="true">📞</div>
+            </a>
+            <a href="tel:122" class="emergency-button" style="background: linear-gradient(135deg, #16a34a, #15803d);">
+              <div class="emergency-icon"><span aria-hidden="true">🚗</span></div>
+              <div class="emergency-content">
+                <div class="emergency-number">122</div>
+                <div class="emergency-name">交通事故 - Traffic</div>
+                <div class="emergency-desc">Traffic accidents only</div>
+              </div>
+              <div class="emergency-arrow" aria-hidden="true">📞</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions Card -->
+      <div class="card">
+        <div class="card-header" style="background: #f9fafb; color: #374151;">
+          <h3>
+            <span aria-hidden="true">⚡</span>
+            Quick Actions
+          </h3>
+        </div>
+        <div class="quick-actions">
+          <a href="/" class="quick-action">
+            <span class="quick-action-icon">🏠</span>
+            <span class="quick-action-label">Home</span>
           </a>
-          <a href="tel:120" class="emergency-button" style="background: #dc2626;">
-            <div class="emergency-button-icon"><span>🚑</span></div>
-            <div class="emergency-button-content">
-              <div class="emergency-button-number">120</div>
-              <div class="emergency-button-name">救护车 - Ambulance</div>
-              <div class="emergency-button-desc">Medical emergencies, injuries</div>
-            </div>
-            <div class="emergency-button-arrow">📞</div>
+          <a href="/cities" class="quick-action">
+            <span class="quick-action-icon">🏙️</span>
+            <span class="quick-action-label">Cities</span>
           </a>
-          <a href="tel:119" class="emergency-button" style="background: #f97316;">
-            <div class="emergency-button-icon"><span>🚒</span></div>
-            <div class="emergency-button-content">
-              <div class="emergency-button-number">119</div>
-              <div class="emergency-button-name">消防 - Fire</div>
-              <div class="emergency-button-desc">Fires, rescues, hazardous materials</div>
-            </div>
-            <div class="emergency-button-arrow">📞</div>
+          <a href="/food" class="quick-action">
+            <span class="quick-action-icon">🍜</span>
+            <span class="quick-action-label">Food</span>
           </a>
-          <a href="tel:122" class="emergency-button" style="background: #16a34a;">
-            <div class="emergency-button-icon"><span>🚗</span></div>
-            <div class="emergency-button-content">
-              <div class="emergency-button-number">122</div>
-              <div class="emergency-button-name">交通事故 - Traffic</div>
-              <div class="emergency-button-desc">Traffic accidents only</div>
-            </div>
-            <div class="emergency-button-arrow">📞</div>
+          <a href="/ai" class="quick-action">
+            <span class="quick-action-icon">💬</span>
+            <span class="quick-action-label">AI Chat</span>
+          </a>
+          <a href="/guide" class="quick-action">
+            <span class="quick-action-icon">📖</span>
+            <span class="quick-action-label">Guide</span>
+          </a>
+          <a href="/community" class="quick-action">
+            <span class="quick-action-icon">👥</span>
+            <span class="quick-action-label">Community</span>
           </a>
         </div>
       </div>
 
       <!-- Emergency Phrases Card -->
-      <div class="phrases-card">
-        <div class="phrases-header">
+      <div class="card phrases-card">
+        <div class="card-header">
           <h3>
-            <span>💬</span>
-            Emergency Phrases (Offline)
+            <span aria-hidden="true">💬</span>
+            Emergency Phrases
           </h3>
+          <p>Show these phrases if you need help</p>
         </div>
-        <div class="phrases-list">
-          <div class="phrase-item">
-            <div class="phrase-english">Help!</div>
-            <div class="phrase-chinese">救命!</div>
-            <div class="phrase-pronunciation">Jiùmìng!</div>
-          </div>
-          <div class="phrase-item">
-            <div class="phrase-english">Call the police!</div>
-            <div class="phrase-chinese">叫警察!</div>
-            <div class="phrase-pronunciation">Jiào jǐngchá!</div>
-          </div>
-          <div class="phrase-item">
-            <div class="phrase-english">I need an ambulance</div>
-            <div class="phrase-chinese">我需要救护车</div>
-            <div class="phrase-pronunciation">Wǒ xūyào jiùhù chē</div>
-          </div>
-          <div class="phrase-item">
-            <div class="phrase-english">There is a fire</div>
-            <div class="phrase-chinese">着火了</div>
-            <div class="phrase-pronunciation">Zháo huǒ le</div>
-          </div>
-          <div class="phrase-item">
-            <div class="phrase-english">I am lost</div>
-            <div class="phrase-chinese">我迷路了</div>
-            <div class="phrase-pronunciation">Wǒ mílù le</div>
-          </div>
-          <div class="phrase-item">
-            <div class="phrase-english">I need help</div>
-            <div class="phrase-chinese">我需要帮助</div>
-            <div class="phrase-pronunciation">Wǒ xūyào bāngzhù</div>
+        <div class="card-content">
+          <div class="phrase-list">
+            <div class="phrase-item">
+              <div class="phrase-english">Help!</div>
+              <div class="phrase-chinese">救命!</div>
+              <div class="phrase-pronunciation">Jiùmìng!</div>
+            </div>
+            <div class="phrase-item">
+              <div class="phrase-english">Call the police!</div>
+              <div class="phrase-chinese">叫警察!</div>
+              <div class="phrase-pronunciation">Jiào jǐngchá!</div>
+            </div>
+            <div class="phrase-item">
+              <div class="phrase-english">I need an ambulance</div>
+              <div class="phrase-chinese">我需要救护车</div>
+              <div class="phrase-pronunciation">Wǒ xūyào jiùhù chē</div>
+            </div>
+            <div class="phrase-item">
+              <div class="phrase-english">There is a fire</div>
+              <div class="phrase-chinese">着火了</div>
+              <div class="phrase-pronunciation">Zháo huǒ le</div>
+            </div>
+            <div class="phrase-item">
+              <div class="phrase-english">I am lost</div>
+              <div class="phrase-chinese">我迷路了</div>
+              <div class="phrase-pronunciation">Wǒ mílù le</div>
+            </div>
+            <div class="phrase-item">
+              <div class="phrase-english">I need help</div>
+              <div class="phrase-chinese">我需要帮助</div>
+              <div class="phrase-pronunciation">Wǒ xūyào bāngzhù</div>
+            </div>
+            <div class="phrase-item">
+              <div class="phrase-english">Where is the hospital?</div>
+              <div class="phrase-chinese">医院在哪里?</div>
+              <div class="phrase-pronunciation">Yīyuàn zài nǎlǐ?</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Info Card -->
-      <div class="info-card">
-        <h4>
-          <span>💡</span>
-          Important Notes
-        </h4>
-        <ul>
-          <li>All emergency numbers work nationwide without area codes</li>
-          <li>Police (110) handles crime, public safety, emergencies</li>
-          <li>Ambulance (120) handles medical emergencies</li>
-          <li>Fire (119) handles fires, rescues, hazardous materials</li>
-          <li>Traffic (122) is for traffic accidents only</li>
-        </ul>
+      <!-- Tips Card -->
+      <div class="card tips-card">
+        <div class="card-header">
+          <h3>
+            <span aria-hidden="true">💡</span>
+            Important Notes
+          </h3>
+        </div>
+        <div class="card-content">
+          <ul class="tips-list">
+            <li>All emergency numbers work nationwide without area codes</li>
+            <li>Police (110) handles crime, public safety, and general emergencies</li>
+            <li>Ambulance (120) handles medical emergencies and injuries</li>
+            <li>Fire (119) handles fires, rescues, and hazardous materials</li>
+            <li>Traffic (122) is for traffic accidents only</li>
+            <li>Stay calm and show your emergency phrase card if language is a barrier</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Retry Section -->
       <div class="retry-section">
-        <button class="retry-button" onclick="window.location.reload()">
-          <span>🔄</span>
-          Try Again
+        <button class="retry-button" id="retryBtn" onclick="checkOnline()">
+          <span class="spinner" aria-hidden="true"></span>
+          <span>
+            <span aria-hidden="true">🔄</span> Try Again
+          </span>
         </button>
       </div>
 
       <!-- Footer -->
       <div class="footer-note">
         <p>ChinaConnect Emergency SOS - Works Offline</p>
-        <p style="margin-top: 4px;">
-          <a href="/emergency">View Full Emergency Info</a>
+        <p style="margin-top: 8px;">
+          <a href="/emergency">View Full Emergency Info</a> |
+          <a href="/cities">Browse Cities</a>
         </p>
       </div>
     </div>
 
+    <!-- Toast notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
     <script is:inline>
+      // Display toast notification
+      function showToast(message, duration = 3000) {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.classList.add('visible');
+        setTimeout(() => toast.classList.remove('visible'), duration);
+      }
+
+      // Check online status and update UI
+      function checkOnline() {
+        const btn = document.getElementById('retryBtn');
+        if (navigator.onLine) {
+          btn.classList.add('loading');
+          // Small delay to show loading state
+          setTimeout(() => {
+            window.location.reload();
+          }, 500);
+        } else {
+          showToast('Still offline. Please check your connection.');
+        }
+      }
+
       // Auto-reload when back online
-      window.addEventListener("online", function () {
-        window.location.reload();
+      window.addEventListener('online', function() {
+        showToast('Back online! Reloading...');
+        setTimeout(() => window.location.reload(), 1000);
       });
 
-      // Register service worker for offline support
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/sw.js")
-          .then(function (registration) {
-            console.log("SW registered:", registration.scope);
-          })
-          .catch(function (error) {
-            console.log("SW registration failed:", error);
-          });
+      // Listen for cache status from SW
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.addEventListener('message', function(event) {
+          if (event.data && event.data.type === 'CACHE_STATUS') {
+            updateCacheStatus(event.data);
+          }
+        });
+
+        // Request cache status
+        navigator.serviceWorker.ready.then(function(registration) {
+          if (registration.active) {
+            registration.active.postMessage({ type: 'GET_CACHE_STATUS' });
+          }
+        });
       }
+
+      // Update cache status display
+      function updateCacheStatus(status) {
+        const container = document.getElementById('cacheStatus');
+        const items = document.getElementById('cacheItems');
+
+        if (!status || !status.caches) {
+          container.classList.remove('visible');
+          return;
+        }
+
+        const cacheItems = [];
+        for (const [name, count] of Object.entries(status.caches)) {
+          if (count > 0 && typeof count === 'number') {
+            const label = name.replace('chinaconnect-', '').replace(/-/g, ' ').replace(' cached cities', ' cities').replace(' cached ai responses', ' AI responses');
+            cacheItems.push(label + ': ' + count);
+          }
+        }
+
+        if (cacheItems.length > 0) {
+          items.innerHTML = cacheItems.map(item =>
+            '<span class="cache-item"><span>✓</span>' + item + '</span>'
+          ).join('');
+          container.classList.add('visible');
+        }
+
+        // Update last sync time
+        if (status.timestamp) {
+          document.getElementById('lastSync').textContent = new Date(status.timestamp).toLocaleString();
+        }
+      }
+
+      // Initial cache status check after load
+      setTimeout(() => {
+        if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+          navigator.serviceWorker.controller.postMessage({ type: 'GET_CACHE_STATUS' });
+        }
+      }, 2000);
     </script>
   </body>
 </html>

@@ -1,5 +1,8 @@
 // City data types - mirrors the JSON structure in src/data/cities/*.json
 
+import type { City } from "./index";
+import { S_TIER_CITIES } from "./tier-data";
+
 // City tier classification
 export type CityTier = "S" | "A" | "D";
 
@@ -148,4 +151,34 @@ export interface City {
   }>;
   // Tier classification for city prioritization
   tier?: CityTier;
+}
+
+/**
+ * Get city tier from S_TIER_CITIES lookup
+ * Returns the tier classification for a city
+ */
+export function getCityTier(slug: string): CityTier | undefined {
+  if (S_TIER_CITIES[slug]) {
+    return S_TIER_CITIES[slug].tier;
+  }
+  return undefined;
+}
+
+/**
+ * Get all cities grouped by tier
+ */
+export function getCitiesByTier(): Record<CityTier, City[]> {
+  const result: Record<CityTier, City[]> = { S: [], A: [], D: [] };
+
+  for (const city of cities) {
+    const tier = getCityTier(city.slug);
+    if (tier) {
+      result[tier].push(city);
+    } else {
+      // Cities not in S_TIER_CITIES are D-tier (on-demand generated)
+      result.D.push(city);
+    }
+  }
+
+  return result;
 }

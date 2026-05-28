@@ -1,10 +1,19 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import AIChatPage from '@/components/AIChatPage';
+import { generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const pageTitle = "AI Travel Assistant - ChinaConnect";
 const pageDescription =
   "Get personalized travel advice for China from our AI assistant. Plan your perfect trip with recommendations for restaurants, attractions, transport, and more.";
+
+// Schema.org JSON-LD for AI page
+const aiSchemas = [
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "AI Assistant", url: "https://chinaconnect.com/ai" },
+  ]),
+];
 ---
 
 <BaseLayout
@@ -14,5 +23,8 @@ const pageDescription =
     noIndex: false,
   }}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(aiSchemas)} />
+
   <AIChatPage client:only="react" />
 </BaseLayout>

@@ -1,0 +1,43 @@
+// Schema.org JSON-LD injection component for Astro pages
+// Injects structured data for SEO/GEO optimization including AI crawler support
+
+import { generateWebsiteSchema, generateOrganizationSchema, generateJsonLdScript } from '@/lib/seo/schema-org';
+
+interface Props {
+  pageType: 'home' | 'guide' | 'city' | 'food' | 'ai' | 'emergency' | 'community';
+  pageSlug?: string;
+  pageName?: string;
+  description?: string;
+}
+
+export function SchemaOrg({ pageType, pageSlug, pageName, description }: Props) {
+  const schemas: Record<string, unknown>[] = [
+    generateWebsiteSchema(),
+    generateOrganizationSchema(),
+  ];
+
+  const pageDescriptions: Record<string, string> = {
+    home: 'ChinaConnect - Your AI-powered guide to exploring China. Discover Michelin-starred restaurants, Black Pearl establishments, and local favorites in 12 Chinese cities.',
+    guide: 'Comprehensive travel guide for China including visa, payment, transport, dining, accommodation, and emergency information.',
+    city: `Explore ${pageName || 'China'} with ChinaConnect - Discover the best restaurants, attractions, and travel tips.`,
+    food: `${pageName || 'Restaurant'} on ChinaConnect - Find and explore restaurants in China.`,
+    ai: 'AI Travel Assistant on ChinaConnect - Get personalized travel advice for China.',
+    emergency: 'Emergency contacts and procedures for China travel on ChinaConnect.',
+    community: 'Traveler community on ChinaConnect - Share experiences and connect with other travelers.',
+  };
+
+  const currentDescription = description || pageDescriptions[pageType] || pageDescriptions.guide;
+
+  return (
+    <script
+      type="application/ld+json"
+      set:html={generateJsonLdScript(schemas)}
+      data-page-type={pageType}
+      data-page-slug={pageSlug || ''}
+      data-page-name={pageName || ''}
+      data-description={currentDescription}
+    />
+  );
+}
+
+export default SchemaOrg;

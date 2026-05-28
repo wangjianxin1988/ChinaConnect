@@ -16,7 +16,7 @@
 | 样式 | TailwindCSS + shadcn/ui | 移动优先响应式 |
 | 后端 | Supabase | Auth + PostgreSQL + Realtime |
 | AI | Dify + 通义千问/Claude | AI Agent编排 |
-| 社区 | Flarum | PHP论坛（独立部署） |
+| 社区 | Flarum + Supabase SSO | 独立部署 + 单点登录 |
 | 搜索 | MiniMax API | 全站搜索 |
 | 地图 | Google Maps + 高德地图 | 双引擎自动切换 |
 | 部署 | Cloudflare Pages | 免费无限带宽 |
@@ -188,6 +188,7 @@ created_at: TIMESTAMPTZ
 
 ## 八、部署架构
 
+### ChinaConnect 主站
 ```
 GitHub Push → GitHub Actions → Cloudflare Pages
                                     ↓
@@ -196,7 +197,29 @@ GitHub Push → GitHub Actions → Cloudflare Pages
                               dist/ 部署
 ```
 
-## 九、MVP里程碑
+### Flarum 论坛 (独立部署)
+```
+VPS Server (Docker)
+    ├── Flarum (PHP Forum)
+    ├── MySQL 8.0 (Forum DB)
+    └── Redis (Cache)
+            ↓ Nginx Reverse Proxy + SSL
+       community.chinaconnect.com
+            ↓ SSO
+       ChinaConnect 主站 (Supabase Auth)
+```
+
+### 九、Flarum 集成状态
+
+- [x] 独立部署方案决策完成
+- [x] Docker Compose 配置完成
+- [x] SSO 集成方案完成
+- [ ] 服务器配置完成
+- [ ] SSL 证书配置完成
+- [ ] Flarum 安装完成
+- [ ] Supabase Edge Function 部署完成
+
+## 十、MVP里程碑
 
 - [x] 项目初始化
 - [ ] 6城市页面完整

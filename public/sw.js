@@ -1,7 +1,7 @@
 // ChinaConnect Service Worker with Workbox-style caching strategies
-// Version: 1.0.0
+// Version: 1.1.0 - Enhanced offline support
 
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.1.0';
 const CACHE_NAME = `chinaconnect-${CACHE_VERSION}`;
 
 // Workbox-style cache names for different strategies
@@ -15,9 +15,11 @@ const IMAGE_CACHE = `${CACHE_NAME}-images`;
 const STATIC_ASSETS = [
   '/',
   '/index.html',
+  '/offline/',
   '/offline-emergency.html',
   '/manifest.json',
   '/favicon.svg',
+  '/icons/icon.svg',
 ];
 
 // City pages for offline access
@@ -30,7 +32,7 @@ const CITY_PAGES = [
   '/city/hangzhou',
 ];
 
-// Critical routes
+// Critical routes - always available offline
 const CRITICAL_ROUTES = [
   '/',
   '/cities',
@@ -40,14 +42,21 @@ const CRITICAL_ROUTES = [
   '/guide',
 ];
 
+// Cache expiry: 7 days for dynamic content
+const CACHE_EXPIRY = 7 * 24 * 60 * 60 * 1000;
+
 // Install event - precache static assets
 self.addEventListener('install', (event) => {
-  console.log('[SW] Installing Service Worker...');
+  console.log('[SW] Installing Service Worker v' + CACHE_VERSION);
 
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => {
       console.log('[SW] Precaching static assets');
-      return cache.addAll(STATIC_ASSETS);
+      return cache.addAll(STATIC_ASSETS).catch((err) => {
+        console.error('[SW] Failed to precache some assets:', err);
+        // Continue even if some assets fail
+        return Promise.resolve();
+      });
     })
   );
 
@@ -94,21 +103,26 @@ self.addEventListener('fetch', (event) => {
   // Skip WebSocket requests
   if (url.protocol === 'ws:' || url.protocol === 'wss:') return;
 
+  // Skip AI API requests - do not cache, these require network
+  if (isAIAPIRequest(url)) {
+    event.respondWith(
+      networkFirstWithCacheFallback(request, AI_RESPONSE_CACHE)
+    );
+    return;
+  }
+
   // Determine caching strategy based on request type
   if (isStaticAsset(url)) {
     // Cache-first strategy for static assets
     event.respondWith(cacheFirstStrategy(request, STATIC_CACHE));
-  } else if (isCityData(url)) {
-    // Cache-first with network fallback for city data
+  } else if (isCityPage(url) || isCityData(url)) {
+    // Cache-first with network fallback for city pages and data
     event.respondWith(cacheFirstWithNetworkFallback(request, CITY_CACHE));
-  } else if (isAIResponse(url)) {
-    // Network-first with cache fallback for AI responses
-    event.respondWith(networkFirstWithCacheFallback(request, AI_RESPONSE_CACHE));
   } else if (isImage(url)) {
     // Stale-while-revalidate for images
     event.respondWith(staleWhileRevalidate(request, IMAGE_CACHE));
   } else if (isCriticalRoute(url)) {
-    // Network-first for critical pages
+    // Network-first for critical pages (with cache fallback)
     event.respondWith(networkFirstWithCacheFallback(request, DYNAMIC_CACHE));
   } else {
     // Network-first for everything else
@@ -122,18 +136,24 @@ function isStaticAsset(url) {
   return url.pathname.match(/\.(js|css|woff2?|ttf|eot|ico|svg|png|jpg|jpeg|gif|webp)$/);
 }
 
-function isCityData(url) {
-  return url.pathname.startsWith('/api/cities') ||
-         url.pathname.startsWith('/data/cities') ||
-         url.pathname.match(/\/city\/[a-z]+$/);
+function isCityPage(url) {
+  // Match city pages like /city/beijing, /city/shanghai
+  return url.pathname.match(/\/city\/[a-z]+$/);
 }
 
-function isAIResponse(url) {
+function isCityData(url) {
+  return url.pathname.startsWith('/api/cities') ||
+         url.pathname.startsWith('/data/cities');
+}
+
+function isAIAPIRequest(url) {
+  // Do not cache AI API requests - require network, show cached responses only for display
   return url.pathname.startsWith('/api/ai') ||
          url.pathname.startsWith('/api/chat') ||
          url.pathname.includes('dify') ||
          url.pathname.includes('openai') ||
-         url.pathname.includes('anthropic');
+         url.pathname.includes('anthropic') ||
+         url.pathname.includes('minimax');
 }
 
 function isImage(url) {
@@ -151,7 +171,11 @@ async function cacheFirstStrategy(request, cacheName) {
   const cachedResponse = await caches.match(request);
 
   if (cachedResponse) {
-    return cachedResponse;
+    // Check if cache is still valid
+    const cachedDate = cachedResponse.headers.get('sw-cache-date');
+    if (cachedDate && Date.now() - parseInt(cachedDate) < CACHE_EXPIRY) {
+      return cachedResponse;
+    }
   }
 
   try {
@@ -159,13 +183,29 @@ async function cacheFirstStrategy(request, cacheName) {
 
     if (networkResponse.ok) {
       const cache = await caches.open(cacheName);
-      cache.put(request, networkResponse.clone());
+      // Clone and add cache timestamp header
+      const responseToCache = new Response(await networkResponse.clone().blob(), {
+        headers: {
+          ...Object.fromEntries(networkResponse.headers.entries()),
+          'sw-cache-date': Date.now().toString()
+        }
+      });
+      cache.put(request, responseToCache);
     }
 
     return networkResponse;
   } catch (error) {
     console.log('[SW] Network request failed:', error);
-    return caches.match('/offline-emergency.html');
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+    // Return offline fallback for navigation
+    if (request.mode === 'navigate') {
+      const offlinePage = await caches.match('/offline/') ||
+                          await caches.match('/offline-emergency.html');
+      if (offlinePage) return offlinePage;
+    }
+    return new Response('Offline', { status: 503 });
   }
 }
 
@@ -174,6 +214,12 @@ async function cacheFirstWithNetworkFallback(request, cacheName) {
   const cachedResponse = await caches.match(request);
 
   if (cachedResponse) {
+    // Refresh cache in background
+    fetch(request).then((networkResponse) => {
+      if (networkResponse.ok) {
+        caches.open(cacheName).then(cache => cache.put(request, networkResponse.clone()));
+      }
+    }).catch(() => {});
     return cachedResponse;
   }
 
@@ -188,7 +234,11 @@ async function cacheFirstWithNetworkFallback(request, cacheName) {
     return networkResponse;
   } catch (error) {
     console.log('[SW] Network request failed for city data:', error);
-    return new Response(JSON.stringify({ error: 'Offline', cached: false }), {
+    return new Response(JSON.stringify({
+      error: 'Offline',
+      cached: false,
+      message: 'This content is not available offline. Please connect to the internet.'
+    }), {
       status: 503,
       headers: { 'Content-Type': 'application/json' }
     });
@@ -203,6 +253,9 @@ async function networkFirstWithCacheFallback(request, cacheName) {
     if (networkResponse.ok) {
       const cache = await caches.open(cacheName);
       cache.put(request, networkResponse.clone());
+
+      // Send cache status update to clients
+      broadcastCacheUpdate(cacheName);
     }
 
     return networkResponse;
@@ -216,7 +269,18 @@ async function networkFirstWithCacheFallback(request, cacheName) {
 
     // For navigation requests, return offline page
     if (request.mode === 'navigate') {
-      return caches.match('/offline-emergency.html');
+      // Try offline page in order of preference
+      const offlinePage = await caches.match('/offline/') ||
+                          await caches.match('/offline.html') ||
+                          await caches.match('/offline-emergency.html');
+      if (offlinePage) {
+        return offlinePage;
+      }
+      // Fallback inline response
+      return new Response(getOfflineHTML(), {
+        status: 503,
+        headers: { 'Content-Type': 'text/html' }
+      });
     }
 
     return new Response(JSON.stringify({ error: 'Offline' }), {
@@ -224,6 +288,57 @@ async function networkFirstWithCacheFallback(request, cacheName) {
       headers: { 'Content-Type': 'application/json' }
     });
   }
+}
+
+// Broadcast cache update to all clients
+async function broadcastCacheUpdate(cacheName) {
+  try {
+    const clients = await self.clients.matchAll();
+    const status = await getCacheStatus();
+    clients.forEach(client => {
+      client.postMessage({
+        type: 'CACHE_STATUS',
+        ...status
+      });
+    });
+  } catch (e) {
+    // Ignore broadcast errors
+  }
+}
+
+// Inline offline HTML (fallback when no offline page cached)
+function getOfflineHTML() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - ChinaConnect</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,sans-serif;background:linear-gradient(135deg,#dc2626,#991b1b);min-height:100vh;display:flex;align-items:center;justify-content:center;color:white}
+    .container{max-width:400px;text-align:center;padding:20px}
+    h1{font-size:2rem;margin-bottom:1rem}
+    .numbers{background:rgba(255,255,255,0.2);border-radius:16px;padding:24px;margin:24px 0;text-align:left}
+    .num{display:flex;align-items:center;justify-content:space-between;padding:12px;margin:8px 0;background:rgba(255,255,255,0.15);border-radius:8px}
+    .num a{color:white;text-decoration:none;display:flex;align-items:center;gap:12px;width:100%}
+    .num span{font-size:1.2rem}
+    .num b{font-size:1.2rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>You're Offline</h1>
+    <p>Emergency contacts work without internet:</p>
+    <div class="numbers">
+      <div class="num"><a href="tel:110"><span>Police</span><b>110</b></a></div>
+      <div class="num"><a href="tel:120"><span>Ambulance</span><b>120</b></a></div>
+      <div class="num"><a href="tel:119"><span>Fire</span><b>119</b></a></div>
+    </div>
+    <p><a href="/" style="color:white">Return to home</a></p>
+  </div>
+</body>
+</html>`;
 }
 
 // Stale-while-revalidate (good for images and non-critical assets)
@@ -258,8 +373,28 @@ self.addEventListener('sync', (event) => {
     event.waitUntil(syncFavorites());
   } else if (event.tag === 'sync-user-data') {
     event.waitUntil(syncUserData());
+  } else if (event.tag === 'sync-city-cache') {
+    event.waitUntil(cacheTopCities());
   }
 });
+
+// Periodically cache top cities for offline access
+async function cacheTopCities() {
+  const cities = ['beijing', 'shanghai', 'guangzhou', 'xian', 'chengdu', 'hangzhou'];
+
+  for (const city of cities) {
+    try {
+      const response = await fetch(`/city/${city}`);
+      if (response.ok) {
+        const cache = await caches.open(CITY_CACHE);
+        await cache.put(`/city/${city}`, response.clone());
+        console.log('[SW] Cached city:', city);
+      }
+    } catch (error) {
+      console.log('[SW] Failed to cache city:', city, error);
+    }
+  }
+}
 
 // Sync favorites when back online
 async function syncFavorites() {

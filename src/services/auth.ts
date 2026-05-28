@@ -1,6 +1,6 @@
 /**
  * ChinaConnect Auth Service
- * Supabase Auth integration with magic link and OAuth support
+ * Supabase Auth integration with magic link, OAuth, and Demo Mode support
  */
 
 import { createClient, type AuthError as SupabaseAuthError } from "@supabase/supabase-js";
@@ -13,7 +13,89 @@ import type {
   UserProfile,
 } from "@/types/user";
 import { supabase } from "./supabase";
-import type { Database } from "@/types/database";
+import type { Database, UserLevel } from "@/types/database";
+
+// ============================================
+// Demo Mode Configuration
+// ============================================
+
+export const DEMO_MODE =
+  !import.meta.env.PUBLIC_SUPABASE_URL ||
+  import.meta.env.PUBLIC_SUPABASE_URL === "your-project-url" ||
+  import.meta.env.PUBLIC_SUPABASE_URL === "";
+
+export function isDemoMode(): boolean {
+  return DEMO_MODE;
+}
+
+// Demo users for development/preview
+const DEMO_USERS: Record<string, { password: string; profile: Partial<UserProfile> }> = {
+  "demo@chinaconnect.com": {
+    password: "demo123",
+    profile: {
+      id: "demo-user-1",
+      user_id: "demo-user-1",
+      display_name: "Demo Explorer",
+      avatar_url: null,
+      nationality: "US",
+      bio: "Exploring China one city at a time!",
+      level: "探索者" as UserLevel,
+      points: 250,
+      posts_count: 5,
+      check_ins_count: 12,
+      likes_received: 28,
+      best_answers: 2,
+      native_language: "en",
+      travel_level: 3,
+      badges: ["first_checkin", "explorer_10", "streak_3", "first_post"],
+      preferences: {
+        language: "en",
+        currency: "USD",
+        notifications: {
+          email: true,
+          push: true,
+          likes: true,
+          comments: true,
+          checkInReminders: true,
+          weeklyDigest: false,
+        },
+        privacy: {
+          showProfile: true,
+          showTravelHistory: true,
+          showBadges: true,
+        },
+      },
+      created_at: "2026-01-01T00:00:00Z",
+      updated_at: "2026-05-20T00:00:00Z",
+    },
+  },
+};
+
+// Demo session storage (in-memory)
+let demoUser: User | null = null;
+let demoProfile: UserProfile | null = null;
+let demoSessionExpiry: number | null = null;
+
+function createDemoSession(profile: UserProfile): void {
+  demoUser = {
+    id: profile.user_id,
+    email: "demo@chinaconnect.com",
+    created_at: profile.created_at,
+    updated_at: profile.updated_at,
+  };
+  demoProfile = profile;
+  demoSessionExpiry = Date.now() + 24 * 60 * 60 * 1000; // 24 hours
+}
+
+function clearDemoSession(): void {
+  demoUser = null;
+  demoProfile = null;
+  demoSessionExpiry = null;
+}
+
+function isDemoSessionActive(): boolean {
+  return !!(demoSessionExpiry && Date.now() < demoSessionExpiry);
+}
 
 // ============================================
 // Auth Client
@@ -22,11 +104,13 @@ import type { Database } from "@/types/database";
 const authUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const authKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
-if (!authUrl || !authKey) {
-  throw new Error("Supabase auth environment variables are not set");
-}
-
-export const authClient = createClient<Database>(authUrl, authKey);
+export const authClient = createClient<Database>(authUrl || "https://placeholder.supabase.co", authKey || "placeholder", {
+  auth: {
+    autoRefreshToken: !DEMO_MODE,
+    persistSession: !DEMO_MODE,
+    detectSessionInUrl: !DEMO_MODE,
+  },
+});
 
 // ============================================
 // Auth Response Types
@@ -62,6 +146,11 @@ export async function getSession() {
  * Get current user
  */
 export async function getCurrentUser(): Promise<User | null> {
+  // Check demo mode first
+  if (DEMO_MODE && isDemoSessionActive()) {
+    return demoUser;
+  }
+
   const {
     data: { user },
     error,
@@ -82,6 +171,33 @@ export async function signInWithEmail(
   email: string,
   password: string,
 ): Promise<AuthResponse> {
+  // Demo mode - check demo users
+  if (DEMO_MODE) {
+    const demoAccount = DEMO_USERS[email.toLowerCase()];
+    if (demoAccount && demoAccount.password === password) {
+      const profile = {
+        ...demoAccount.profile,
+        created_at: demoAccount.profile.created_at || new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      } as UserProfile;
+      createDemoSession(profile);
+      return {
+        user: demoUser,
+        session: null,
+        error: null,
+      };
+    }
+    return {
+      user: null,
+      session: null,
+      error: {
+        name: "AuthError",
+        message: "Invalid email or password",
+        status: 400,
+      } as SupabaseAuthError,
+    };
+  }
+
   const { data, error } = await authClient.auth.signInWithPassword({
     email,
     password,
@@ -107,6 +223,19 @@ export async function signInWithEmail(
  * Sign up with email and password
  */
 export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
+  // Demo mode - sign up not available
+  if (DEMO_MODE) {
+    return {
+      user: null,
+      session: null,
+      error: {
+        name: "AuthError",
+        message: "Sign up is not available in demo mode",
+        status: 400,
+      } as SupabaseAuthError,
+    };
+  }
+
   const { data: authData, error } = await authClient.auth.signUp({
     email: data.email,
     password: data.password || "",
@@ -139,6 +268,19 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
  * Sign in with OAuth provider (Google, GitHub)
  */
 export async function signInWithOAuth(provider: AuthProvider): Promise<AuthResponse> {
+  // Demo mode - OAuth not available
+  if (DEMO_MODE) {
+    return {
+      user: null,
+      session: null,
+      error: {
+        name: "AuthError",
+        message: "OAuth sign-in is not available in demo mode",
+        status: 400,
+      } as SupabaseAuthError,
+    };
+  }
+
   const { data, error } = await authClient.auth.signInWithOAuth({
     provider: provider === "email" ? "google" : provider,
     options: {
@@ -159,6 +301,17 @@ export async function signInWithMagicLink(
   email: string,
   redirectTo?: string,
 ): Promise<{ error: SupabaseAuthError | null }> {
+  // Demo mode - magic link not available
+  if (DEMO_MODE) {
+    return {
+      error: {
+        name: "AuthError",
+        message: "Magic link is not available in demo mode",
+        status: 400,
+      } as SupabaseAuthError,
+    };
+  }
+
   const { error } = await authClient.auth.signInWithOtp({
     email,
     options: {
@@ -173,6 +326,11 @@ export async function signInWithMagicLink(
  * Verify magic link token from URL
  */
 export async function verifyMagicLink(): Promise<AuthResponse> {
+  // Demo mode - return demo user
+  if (DEMO_MODE && isDemoSessionActive()) {
+    return { user: demoUser, session: null, error: null };
+  }
+
   const { data, error } = await authClient.auth.getSession();
 
   if (error) return { user: null, session: null, error };
@@ -205,6 +363,12 @@ export async function verifyMagicLink(): Promise<AuthResponse> {
  * Sign out current user
  */
 export async function signOut(): Promise<{ error: SupabaseAuthError | null }> {
+  // Clear demo session
+  if (DEMO_MODE && isDemoSessionActive()) {
+    clearDemoSession();
+    return { error: null };
+  }
+
   const { error } = await authClient.auth.signOut();
   return { error };
 }
@@ -215,6 +379,11 @@ export async function signOut(): Promise<{ error: SupabaseAuthError | null }> {
 export async function resetPassword(
   email: string,
 ): Promise<{ error: SupabaseAuthError | null }> {
+  // Demo mode - silently succeed
+  if (DEMO_MODE) {
+    return { error: null };
+  }
+
   const { error } = await authClient.auth.resetPasswordForEmail(email, {
     redirectTo: `${window.location.origin}/auth/reset-password`,
   });
@@ -227,6 +396,11 @@ export async function resetPassword(
 export async function updatePassword(
   newPassword: string,
 ): Promise<{ error: SupabaseAuthError | null }> {
+  // Demo mode - not available
+  if (DEMO_MODE) {
+    return { error: null };
+  }
+
   const { error } = await authClient.auth.updateUser({ password: newPassword });
   return { error };
 }
@@ -237,6 +411,14 @@ export async function updatePassword(
 export async function updateProfile(
   updates: Partial<Pick<UserProfile, "display_name" | "avatar_url" | "bio" | "nationality" | "native_language">>,
 ): Promise<ProfileResponse> {
+  // Demo mode - update local profile
+  if (DEMO_MODE && isDemoSessionActive()) {
+    if (demoProfile) {
+      demoProfile = { ...demoProfile, ...updates, updated_at: new Date().toISOString() };
+    }
+    return { profile: demoProfile, error: null };
+  }
+
   try {
     const {
       data: { user },
@@ -282,12 +464,17 @@ export async function getProfile(userId: string): Promise<ProfileResponse> {
  * Get current user's profile
  */
 export async function getCurrentProfile(): Promise<ProfileResponse> {
+  // Check demo mode first
+  if (DEMO_MODE && isDemoSessionActive()) {
+    return { profile: demoProfile, error: null };
+  }
+
   try {
     const {
       data: { user },
     } = await authClient.auth.getUser();
 
-    if (!user) return { profile: null, error: new Error("User not authenticated") };
+    if (!user) return { profile: null, error: null };
 
     return getProfile(user.id);
   } catch (err) {

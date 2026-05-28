@@ -1,0 +1,121 @@
+{
+  "project": "ChinaConnect",
+  "started_at": "2026-05-28T13:35:00+08:00",
+  "tasks": [
+    {
+      "id": 1,
+      "name": "AI Agent Core - Dify集成",
+      "description": "完成Dify API集成，实现13个工具的完整AI Agent系统",
+      "skill": "python-expert",
+      "priority": "high",
+      "files": ["src/lib/ai/dify.ts", "src/hooks/useAIConversation.ts", "src/services/tools/"]
+    },
+    {
+      "id": 2,
+      "name": "三层城市系统",
+      "description": "实现S/A/D级城市分类系统，包括城市详情页和城市选择组件",
+      "skill": "frontend-design",
+      "priority": "high",
+      "status": "completed",
+      "files": ["src/data/cities/", "src/components/city/", "src/pages/city/"]
+    },
+    {
+      "id": 3,
+      "name": "三层美食系统",
+      "description": "实现米其林/黑珍珠/博主推荐三级美食系统",
+      "skill": "frontend-design",
+      "priority": "medium",
+      "status": "completed",
+      "files": ["src/types/food.ts", "src/components/food/", "src/pages/food/"]
+    },
+    {
+      "id": 4,
+      "name": "双地图引擎",
+      "description": "实现Google Maps + 高德地图双引擎，支持离线切换",
+      "skill": "frontend-design",
+      "priority": "high",
+      "status": "completed",
+      "files": ["src/components/map/DualMap.tsx", "src/hooks/useMapProvider.ts"]
+    },
+    {
+      "id": 5,
+      "name": "紧急SOS系统",
+      "description": "实现离线可用的紧急求助系统，包括医院、大使馆联系方式",
+      "skill": "frontend-design",
+      "priority": "high",
+      "status": "completed",
+      "files": ["src/components/emergency/SOSButton.tsx", "src/data/emergency/"]
+    },
+    {
+      "id": 6,
+      "name": "用户系统与Gamification",
+      "description": "完善Supabase Auth集成，实现完整的积分/等级/成就系统",
+      "skill": "frontend-design",
+      "priority": "high",
+      "status": "completed",
+      "files": ["src/lib/auth.ts", "src/components/user/", "src/stores/gamification.ts"]
+    },
+    {
+      "id": 7,
+      "name": "SEO/GEO优化",
+      "description": "实现Schema.org结构化数据，AI爬虫友好优化",
+      "skill": "frontend-design",
+      "priority": "medium",
+      "status": "completed",
+      "files": ["src/lib/seo/", "src/components/Schema.org.tsx"]
+    },
+    {
+      "id": 8,
+      "name": "支付商务指南",
+      "description": "完善支付方式指南和商务签证信息",
+      "skill": "frontend-design",
+      "priority": "medium",
+      "status": "completed",
+      "files": ["src/components/guide/", "src/pages/guide/"]
+    },
+    {
+      "id": 9,
+      "name": "12语言i18n",
+      "description": "完成12种语言的完整翻译，建立语言切换组件",
+      "skill": "frontend-design",
+      "priority": "medium",
+      "status": "completed",
+      "files": ["src/i18n/", "src/components/LanguageSwitcher.tsx"]
+    },
+    {
+      "id": 10,
+      "name": "LLM路由系统",
+      "description": "实现Qwen/Claude/MiniMax多模型路由和fallback链",
+      "skill": "python-expert",
+      "priority": "high",
+      "files": ["src/lib/ai/llm-router.ts", "src/lib/ai/fallback-chain.ts"]
+    },
+    {
+      "id": 11,
+      "name": "Flarum社区集成",
+      "description": "实现Flarum论坛集成或独立部署方案",
+      "skill": "deployment-automation",
+      "priority": "low",
+      "status": "completed",
+      "files": ["docs/flarum-integration.md", "flarum/docker-compose.yml", "flarum/scripts/", "supabase/functions/flarum-sso/"]
+    },
+    {
+      "id": 12,
+      "name": "离线PWA",
+      "description": "完善Service Worker和Web App Manifest实现完全离线可用",
+      "skill": "frontend-design",
+      "priority": "medium",
+      "status": "completed",
+      "files": ["public/sw.js", "public/manifest.json", "src/pages/offline.astro"]
+    },
+    {
+      "id": 13,
+      "name": "CI/CD与E2E测试",
+      "description": "完善Playwright E2E测试套件，确保关键路径100%覆盖",
+      "skill": "test-master",
+      "priority": "high",
+      "status": "completed",
+      "files": ["tests/e2e/", "playwright.config.ts", ".github/workflows/"]
+    }
+  ]
+}

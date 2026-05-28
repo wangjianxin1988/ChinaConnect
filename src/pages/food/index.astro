@@ -5,6 +5,7 @@ import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
 import { cities, citiesMeta } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -35,6 +36,20 @@ citiesWithFoodStats.sort((a, b) => b.totalRestaurants - a.totalRestaurants);
 const totalMichelin = citiesWithFoodStats.reduce((sum, c) => sum + c.michelinCount, 0);
 const totalBlackpearl = citiesWithFoodStats.reduce((sum, c) => sum + c.blackpearlCount, 0);
 const totalLocal = citiesWithFoodStats.reduce((sum, c) => sum + c.localCount, 0);
+
+// Schema.org JSON-LD for Food listing
+const foodSchemas = [
+  generateCollectionPageSchema({
+    name: "Chinese Restaurants on ChinaConnect",
+    description: `Discover ${totalMichelin}+ Michelin-starred restaurants, ${totalBlackpearl}+ Black Pearl establishments, and local favorites across Chinese cities. Find the best Chinese cuisine with detailed reviews, locations, and travel tips.`,
+    url: "https://chinaconnect.com/food",
+    numberOfItems: cities.reduce((sum, c) => sum + (c.restaurants?.length || 0), 0),
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Food Guide", url: "https://chinaconnect.com/food" },
+  ]),
+];
 ---
 
 <BaseLayout
@@ -45,6 +60,9 @@ const totalLocal = citiesWithFoodStats.reduce((sum, c) => sum + c.localCount, 0)
   }}
   lang={lang}
 >
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(foodSchemas)} />
+
   <main class="container mx-auto px-4 py-8">
     <!-- Hero Section -->
     <section class="text-center mb-12">
