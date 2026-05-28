@@ -91,10 +91,11 @@ describe("generateCityHreflangUrls", () => {
     const urls = generateCityHreflangUrls("beijing");
 
     const enUrl = urls.find((u) => u.hreflang === "en");
-    expect(enUrl?.href).toBe("https://chinaconnect.com/en/city/beijing");
+    // English (default locale) has no /en/ prefix
+    expect(enUrl?.href).toBe("https://chinaconnect.com/city/beijing");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/zh/city/beijing");
+    expect(zhUrl?.href).toBe("https://chinaconnect.com/zh-CN/city/beijing");
   });
 });
 
@@ -103,10 +104,11 @@ describe("generateRestaurantHreflangUrls", () => {
     const urls = generateRestaurantHreflangUrls("rest-123", "beijing");
 
     const enUrl = urls.find((u) => u.hreflang === "en");
-    expect(enUrl?.href).toBe("https://chinaconnect.com/en/food/rest-123");
+    // English (default locale) has no /en/ prefix
+    expect(enUrl?.href).toBe("https://chinaconnect.com/food/rest-123");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/zh/food/rest-123");
+    expect(zhUrl?.href).toBe("https://chinaconnect.com/zh-CN/food/rest-123");
   });
 });
 
@@ -130,14 +132,20 @@ describe("isCanonicalUrl", () => {
 
   it("identifies non-canonical URLs", () => {
     expect(isCanonicalUrl("https://chinaconnect.com/en/beijing")).toBe(false);
-    expect(isCanonicalUrl("https://chinaconnect.com/zh/beijing")).toBe(false);
+    // zh-CN is the actual locale code, not zh
+    expect(isCanonicalUrl("https://chinaconnect.com/zh-CN/beijing")).toBe(false);
+    // /zh/ doesn't match zh-CN so it would be considered canonical
+    expect(isCanonicalUrl("https://chinaconnect.com/zh/beijing")).toBe(true);
   });
 });
 
 describe("getLocaleFromPath", () => {
   it("extracts locale from path", () => {
     expect(getLocaleFromPath("/en/beijing")).toBe("en");
-    expect(getLocaleFromPath("/zh/beijing")).toBe("zh");
+    // zh-CN is the actual locale code, not zh
+    expect(getLocaleFromPath("/zh-CN/beijing")).toBe("zh-CN");
+    // /zh/ doesn't match any locale, returns default
+    expect(getLocaleFromPath("/zh/beijing")).toBe("en");
   });
 
   it("returns default locale for paths without locale prefix", () => {
@@ -149,7 +157,10 @@ describe("getLocaleFromPath", () => {
 describe("getPathWithoutLocale", () => {
   it("removes locale prefix from path", () => {
     expect(getPathWithoutLocale("/en/beijing")).toBe("/beijing");
-    expect(getPathWithoutLocale("/zh/shanghai")).toBe("/shanghai");
+    // zh-CN is the actual locale code
+    expect(getPathWithoutLocale("/zh-CN/shanghai")).toBe("/shanghai");
+    // /zh/ doesn't match any locale so path unchanged
+    expect(getPathWithoutLocale("/zh/shanghai")).toBe("/zh/shanghai");
   });
 
   it("returns path unchanged if no locale prefix", () => {
