@@ -520,17 +520,19 @@ export const AIChat: React.FC<AIChatProps> = ({
 
   // Refs
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLTextAreaElement>(null);
-  const clientRef = useRef<ReturnType<typeof createChinaConnectClient> | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const clientRef = useRef<ChinaConnectClient | null>(null);
 
   // Initialize client
   useEffect(() => {
     clientRef.current = createChinaConnectClient();
   }, []);
 
-  // Auto-scroll to bottom
+  // Auto-scroll - only scroll the chat container, not the whole page
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
   }, [messages]);
 
   // Build user context
@@ -747,7 +749,7 @@ export const AIChat: React.FC<AIChatProps> = ({
         {/* Chat Area */}
         <div style={styles.chatArea}>
           {/* Messages */}
-          <div style={styles.messagesContainer}>
+          <div ref={containerRef} style={styles.messagesContainer}>
             {messages.length === 0 && (
               <div
                 style={{
