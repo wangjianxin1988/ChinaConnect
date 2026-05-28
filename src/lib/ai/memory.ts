@@ -16,14 +16,19 @@ import type {
   UserPreferences,
 } from "./types";
 
-const STORAGE_KEYS = {
-  ITINERARIES: "chinaconnect_saved_itineraries",
-  PREFERENCES: "chinaconnect_user_preferences",
-  CONVERSATIONS: "chinaconnect_conversations",
-  SETTINGS: "chinaconnect_settings",
-  CITY_CACHE: "chinaconnect_city_cache",
-  ROUTE_CACHE: "chinaconnect_route_cache",
-} as const;
+// Storage key builder — namespaces all keys by userId for isolation
+function makeStorageKeys(userId: string) {
+  return {
+    ITINERARIES: `ai_memory_${userId}_itineraries`,
+    PREFERENCES: `ai_memory_${userId}_preferences`,
+    CONVERSATIONS: `ai_memory_${userId}_conversations`,
+    SETTINGS: `ai_memory_${userId}_settings`,
+    CITY_CACHE: `ai_memory_${userId}_city_cache`,
+    ROUTE_CACHE: `ai_memory_${userId}_route_cache`,
+  } as const;
+}
+
+type StorageKeys = ReturnType<typeof makeStorageKeys>;
 
 // ============================================
 // Short-term Memory (Session)
@@ -32,8 +37,10 @@ const STORAGE_KEYS = {
 export class ShortTermMemoryStore {
   private memory: ShortTermMemory;
   private listeners: Set<(memory: ShortTermMemory) => void> = new Set();
+  private userId: string;
 
-  constructor(conversationId?: string) {
+  constructor(conversationId?: string, userId?: string) {
+    this.userId = userId || "anonymous";
     this.memory = {
       conversationId: conversationId || this.generateId(),
       messages: [],
@@ -42,7 +49,11 @@ export class ShortTermMemoryStore {
   }
 
   private generateId(): string {
-    return `conv_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+    return `conv_${this.userId}_${Date.now()}`;
+  }
+
+  getUserId(): string {
+    return this.userId;
   }
 
   // Message management
@@ -176,21 +187,29 @@ export class ShortTermMemoryStore {
 export class LongTermMemoryStore {
   private listeners: Set<(memory: LongTermMemory) => void> = new Set();
   private isClient: boolean;
+  private userId: string;
+  private storageKeys: StorageKeys;
 
-  constructor() {
+  constructor(userId?: string) {
+    this.userId = userId || "anonymous";
+    this.storageKeys = makeStorageKeys(this.userId);
     this.isClient = typeof window !== "undefined";
     if (this.isClient) {
       this.initializeDefaults();
     }
   }
 
+  getUserId(): string {
+    return this.userId;
+  }
+
   private initializeDefaults(): void {
     if (!this.isClient) return;
     // Initialize with defaults if not exists
-    if (!this.getStorageItem(STORAGE_KEYS.ITINERARIES)) {
-      this.setStorageItem(STORAGE_KEYS.ITINERARIES, "[]");
+    if (!this.getStorageItem(this.storageKeys.ITINERARIES)) {
+      this.setStorageItem(this.storageKeys.ITINERARIES, "[]");
     }
-    if (!this.getStorageItem(STORAGE_KEYS.PREFERENCES)) {
+    if (!this.getStorageItem(this.storageKeys.PREFERENCES)) {
       const defaults: UserPreferences = {
         defaultLanguage: "en",
         defaultBudget: "medium",
@@ -198,7 +217,7 @@ export class LongTermMemoryStore {
         visitedCities: [],
         favoriteAttractions: [],
       };
-      this.setStorageItem(STORAGE_KEYS.PREFERENCES, JSON.stringify(defaults));
+      this.setStorageItem(this.storageKeys.PREFERENCES, JSON.stringify(defaults));
     }
   }
 
@@ -235,7 +254,7 @@ export class LongTermMemoryStore {
 
   getItineraries(): SavedItinerary[] {
     try {
-      const data = this.getStorageItem(STORAGE_KEYS.ITINERARIES);
+      const data = this.getStorageItem(this.storageKeys.ITINERARIES);
       return data ? JSON.parse(data) : [];
     } catch {
       return [];
@@ -256,7 +275,7 @@ export class LongTermMemoryStore {
 
     const all = this.getItineraries();
     all.unshift(saved);
-    this.setStorageItem(STORAGE_KEYS.ITINERARIES, JSON.stringify(all));
+    this.setStorageItem(this.storageKeys.ITINERARIES, JSON.stringify(all));
 
     this.notifyListeners();
     return saved;
@@ -274,7 +293,7 @@ export class LongTermMemoryStore {
       updatedAt: new Date().toISOString(),
     };
 
-    this.setStorageItem(STORAGE_KEYS.ITINERARIES, JSON.stringify(all));
+    this.setStorageItem(this.storageKeys.ITINERARIES, JSON.stringify(all));
     this.notifyListeners();
     return all[index];
   }
@@ -285,7 +304,7 @@ export class LongTermMemoryStore {
 
     if (filtered.length === all.length) return false;
 
-    this.setStorageItem(STORAGE_KEYS.ITINERARIES, JSON.stringify(filtered));
+    this.setStorageItem(this.storageKeys.ITINERARIES, JSON.stringify(filtered));
     this.notifyListeners();
     return true;
   }
@@ -304,7 +323,7 @@ export class LongTermMemoryStore {
 
   getPreferences(): UserPreferences {
     try {
-      const data = this.getStorageItem(STORAGE_KEYS.PREFERENCES);
+      const data = this.getStorageItem(this.storageKeys.PREFERENCES);
       return data ? JSON.parse(data) : this.getDefaultPreferences();
     } catch {
       return this.getDefaultPreferences();
@@ -314,7 +333,7 @@ export class LongTermMemoryStore {
   updatePreferences(updates: Partial<UserPreferences>): UserPreferences {
     const current = this.getPreferences();
     const updated = { ...current, ...updates };
-    this.setStorageItem(STORAGE_KEYS.PREFERENCES, JSON.stringify(updated));
+    this.setStorageItem(this.storageKeys.PREFERENCES, JSON.stringify(updated));
     this.notifyListeners();
     return updated;
   }
@@ -335,7 +354,7 @@ export class LongTermMemoryStore {
 
   getConversationHistory(): ConversationSummary[] {
     try {
-      const data = this.getStorageItem(STORAGE_KEYS.CONVERSATIONS);
+      const data = this.getStorageItem(this.storageKeys.CONVERSATIONS);
       return data ? JSON.parse(data) : [];
     } catch {
       return [];
@@ -354,7 +373,7 @@ export class LongTermMemoryStore {
 
     // Keep only last 50 conversations
     const trimmed = all.slice(0, 50);
-    this.setStorageItem(STORAGE_KEYS.CONVERSATIONS, JSON.stringify(trimmed));
+    this.setStorageItem(this.storageKeys.CONVERSATIONS, JSON.stringify(trimmed));
     this.notifyListeners();
   }
 
@@ -364,7 +383,7 @@ export class LongTermMemoryStore {
 
     if (filtered.length === all.length) return false;
 
-    this.setStorageItem(STORAGE_KEYS.CONVERSATIONS, JSON.stringify(filtered));
+    this.setStorageItem(this.storageKeys.CONVERSATIONS, JSON.stringify(filtered));
     this.notifyListeners();
     return true;
   }
@@ -383,20 +402,20 @@ export class LongTermMemoryStore {
 
   importData(data: LongTermMemory): void {
     if (data.savedItineraries) {
-      this.setStorageItem(STORAGE_KEYS.ITINERARIES, JSON.stringify(data.savedItineraries));
+      this.setStorageItem(this.storageKeys.ITINERARIES, JSON.stringify(data.savedItineraries));
     }
     if (data.userPreferences) {
-      this.setStorageItem(STORAGE_KEYS.PREFERENCES, JSON.stringify(data.userPreferences));
+      this.setStorageItem(this.storageKeys.PREFERENCES, JSON.stringify(data.userPreferences));
     }
     if (data.conversationHistory) {
-      this.setStorageItem(STORAGE_KEYS.CONVERSATIONS, JSON.stringify(data.conversationHistory));
+      this.setStorageItem(this.storageKeys.CONVERSATIONS, JSON.stringify(data.conversationHistory));
     }
     this.notifyListeners();
   }
 
   clearAllData(): void {
     if (this.isBrowser()) {
-      Object.values(STORAGE_KEYS).forEach((key) => localStorage.removeItem(key));
+      Object.values(this.storageKeys).forEach((key) => localStorage.removeItem(key));
     }
     this.initializeDefaults();
     this.notifyListeners();
@@ -561,12 +580,15 @@ export class RouteCache {
 // ============================================
 
 let longTermInstance: LongTermMemoryStore | null = null;
+let longTermUserId: string | null = null;
 let cityCacheInstance: CityKnowledgeCache | null = null;
 let routeCacheInstance: RouteCache | null = null;
 
-export function getLongTermMemory(): LongTermMemoryStore {
-  if (!longTermInstance) {
-    longTermInstance = new LongTermMemoryStore();
+export function getLongTermMemory(userId?: string): LongTermMemoryStore {
+  // Re-create instance if userId changes (user switch)
+  if (!longTermInstance || (userId && userId !== longTermUserId)) {
+    longTermInstance = new LongTermMemoryStore(userId);
+    longTermUserId = userId || null;
   }
   return longTermInstance;
 }
@@ -589,9 +611,9 @@ export function getRouteCache(): RouteCache {
 // Hook helpers (for React components)
 // ============================================
 
-export function useMemory() {
+export function useMemory(userId?: string) {
   return {
-    longTerm: getLongTermMemory(),
+    longTerm: getLongTermMemory(userId),
     cityCache: getCityCache(),
     routeCache: getRouteCache(),
   };

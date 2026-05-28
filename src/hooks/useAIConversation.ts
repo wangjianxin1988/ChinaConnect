@@ -215,19 +215,13 @@ Remember:
         { role: "user", content: userMessage },
       ];
 
-      // Add throttle to streaming updates for visible effect
-      let lastUpdateTime = 0;
-      const UPDATE_INTERVAL = 50; // Update every 50ms
+      // No throttle — send every chunk immediately for fastest streaming
 
       await client.chatStream(
         conversationMessages,
         (text, isComplete) => {
           if (!isComplete) {
-            const now = Date.now();
-            if (now - lastUpdateTime >= UPDATE_INTERVAL) {
-              onChunk(text);
-              lastUpdateTime = now;
-            }
+            onChunk(text);
           } else {
             // Always send final update
             onChunk(text);
@@ -384,7 +378,7 @@ Remember:
             setMessages((prev) =>
               prev.map((m) => (m.id === assistantMsg.id ? { ...m, content: chunk } : m)),
             );
-            await new Promise((resolve) => setTimeout(resolve, 15 + Math.random() * 10));
+            await new Promise((resolve) => setTimeout(resolve, 10 + Math.random() * 10));
           }
         }
 

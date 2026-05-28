@@ -74,7 +74,10 @@ export type ToolName =
    | "ExchangeRate"
    | "VisaSearch"
    | "RouteSearch"
-   | "SaveItinerary";
+   | "SaveItinerary"
+   | "PriceQuery"
+   | "UserReviews"
+   | "EventSearch";
 
 export interface ToolCall {
   name: ToolName;
