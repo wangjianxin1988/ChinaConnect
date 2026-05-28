@@ -349,16 +349,32 @@ Remember:
           responseText = result.response;
         }
 
-        // Simulate streaming effect for ReAct response if too fast
+        // Simulate streaming effect with smooth typewriter for non-streaming responses
         const duration = Date.now() - startTime;
-        if (duration < 500 && responseText) {
-          const chunkSize = Math.max(5, Math.floor(responseText.length / 20));
-          for (let i = chunkSize; i < responseText.length; i += chunkSize) {
-            const chunk = responseText.slice(0, i);
+        if (duration < 800 && responseText) {
+          // Split into word-aware chunks for natural typing feel
+          const totalLen = responseText.length;
+          const targetChunks = Math.min(40, Math.max(10, Math.floor(totalLen / 30)));
+          const baseChunkSize = Math.floor(totalLen / targetChunks);
+          let pos = 0;
+          while (pos < totalLen) {
+            // Try to break at word/sentence boundaries for natural feel
+            let end = Math.min(pos + baseChunkSize + 5, totalLen);
+            if (end < totalLen) {
+              const breakChars = [' ', String.fromCharCode(10), '，', '。', ',', '.', '!', '?'];
+              for (let b = end; b > pos + baseChunkSize - 5 && b < totalLen; b--) {
+                if (breakChars.includes(responseText[b])) {
+                  end = b + 1;
+                  break;
+                }
+              }
+            }
+            pos = Math.min(end, totalLen);
+            const chunk = responseText.slice(0, pos);
             setMessages((prev) =>
               prev.map((m) => (m.id === assistantMsg.id ? { ...m, content: chunk } : m)),
             );
-            await new Promise((resolve) => setTimeout(resolve, 20));
+            await new Promise((resolve) => setTimeout(resolve, 15 + Math.random() * 10));
           }
         }
 

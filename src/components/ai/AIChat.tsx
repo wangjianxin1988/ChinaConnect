@@ -275,10 +275,19 @@ const MessageBubble: React.FC<{
         {/* Content */}
         <div className="text-sm leading-relaxed">{formatContent(message.content)}</div>
 
-        {/* Streaming indicator */}
+        {/* Streaming indicator with blinking cursor */}
         {isStreaming && (
           <div className="mt-2">
-            <TypingDots color={isUser ? "bg-blue-300" : "bg-gray-400"} />
+            {message.content ? (
+              <span className="inline-block w-0.5 h-4 bg-blue-500 ml-0.5 align-middle streaming-cursor" />
+            ) : (
+              <div className="flex items-center gap-2">
+                <TypingDots color={isUser ? "bg-blue-300" : "bg-gray-400"} />
+                <span className="text-xs text-gray-400 animate-pulse">
+                  {"Thinking..."}
+                </span>
+              </div>
+            )}
           </div>
         )}
 
@@ -399,11 +408,14 @@ export const AIChat: React.FC<AIChatProps> = ({
 
   // Refs
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
-  // Auto-scroll
+  // Auto-scroll - only scroll the chat container, not the whole page
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
   }, [messages]);
 
   // Initial message
@@ -626,7 +638,7 @@ export const AIChat: React.FC<AIChatProps> = ({
         )}
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        <div ref={containerRef} className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-center px-4">
               <div className="text-5xl mb-4">🌏</div>
@@ -810,7 +822,12 @@ export const AIChat: React.FC<AIChatProps> = ({
           from { opacity: 0; transform: translateY(8px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes cursorBlink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
         .message-enter { animation: fadeIn 0.3s ease-out; }
+        .streaming-cursor { animation: cursorBlink 0.8s ease-in-out infinite; }
         @media (max-width: 640px) {
           .chat-sidebar { display: none; }
         }
