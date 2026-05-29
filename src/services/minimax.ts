@@ -148,6 +148,7 @@ async function* parseSSEStream(
       try {
         const event = JSON.parse(dataStr);
         // MiniMax uses OpenAI-compatible format: choices[0].delta.content
+        // With reasoning_split=true, thinking goes to reasoning_details, content is clean
         const content = event.choices?.[0]?.delta?.content ?? event.content;
         const error = event.error;
         if (content || error) {
@@ -284,6 +285,7 @@ export class MiniMaxClient {
             model: "MiniMax-M2.7-highspeed",
             messages: trimmed,
             stream: true,
+            reasoning_split: true,
           }),
         },
         3,
@@ -362,6 +364,7 @@ export class MiniMaxClient {
           model: "MiniMax-M2.7-highspeed",
           messages: trimmed,
           stream: false,
+          reasoning_split: true,
         }),
       },
       3,
