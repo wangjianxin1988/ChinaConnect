@@ -79,7 +79,7 @@ function createProviderClient(type: LLMProviderType, apiKey?: string): LLMProvid
     }
     case "minimax": {
       if (apiKey) {
-        const client = new MiniMaxClient("/api/chat");
+        const client = new MiniMaxClient(apiKey);
         return {
           chatStream: client.chatStream.bind(client),
           chatBlocking: client.chatBlocking.bind(client),

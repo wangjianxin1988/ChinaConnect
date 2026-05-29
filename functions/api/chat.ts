@@ -281,7 +281,9 @@ function createSSEStream() {
 
 interface Env {
   MINIMAX_API_KEY: string;
-  AMAP_WEB_KEY?: string;
+  AMAP_WEB_KEY: string;
+  SUPABASE_URL: string;
+  SUPABASE_ANON_KEY: string;
 }
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {

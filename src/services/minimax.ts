@@ -233,10 +233,12 @@ async function fetchWithRetry(
 
 export class MiniMaxClient {
   private currentAbortController: AbortController | null = null;
-  private apiEndpoint: string;
+  private apiKey: string;
+  private baseUrl: string;
 
-  constructor(apiEndpoint = "/api/chat") {
-    this.apiEndpoint = apiEndpoint;
+  constructor(apiKey: string, baseUrl = "https://api.minimax.chat/v1") {
+    this.apiKey = apiKey;
+    this.baseUrl = baseUrl;
   }
 
   /**
@@ -279,16 +281,19 @@ export class MiniMaxClient {
       const trimmed = trimMessages(messages);
 
       const res = await fetchWithRetry(
-        this.apiEndpoint,
+        `${this.baseUrl}/chat/completions`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Authorization: `Bearer ${this.apiKey}`,
           },
           body: JSON.stringify({
             messages: trimmed,
             tools: tools || [],
             stream: true,
+            reasoning_split: true,
+            model: "MiniMax-M2.7-highspeed",
           }),
         },
         3,
