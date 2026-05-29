@@ -145,10 +145,12 @@ async function* parseSSEStream(
 
       try {
         const event = JSON.parse(dataStr);
-        yield {
-          content: event.content,
-          error: event.error,
-        };
+        // MiniMax uses OpenAI-compatible format: choices[0].delta.content
+        const content = event.choices?.[0]?.delta?.content ?? event.content;
+        const error = event.error;
+        if (content || error) {
+          yield { content, error };
+        }
       } catch {
         // Skip malformed JSON lines
       }
@@ -161,9 +163,10 @@ async function* parseSSEStream(
     if (dataStr !== "[DONE]") {
       try {
         const event = JSON.parse(dataStr);
-        yield {
-          content: event.content,
-          error: event.error,
+        const content = event.choices?.[0]?.delta?.content ?? event.content;
+        const error = event.error;
+        if (content || error) {
+          yield { content, error };
         };
       } catch {
         // Skip malformed
@@ -220,10 +223,12 @@ async function fetchWithRetry(
 // ---------------------------------------------------------------------------
 
 export class MiniMaxClient {
+  private apiKey: string;
   private baseUrl: string;
   private currentAbortController: AbortController | null = null;
 
-  constructor(baseUrl = "/api/chat") {
+  constructor(apiKey: string, baseUrl = "https://api.minimax.chat/v1") {
+    this.apiKey = apiKey;
     this.baseUrl = baseUrl;
   }
 
@@ -266,11 +271,15 @@ export class MiniMaxClient {
       const trimmed = trimMessages(messages);
 
       const res = await fetchWithRetry(
-        this.baseUrl,
+        `${this.baseUrl}/chat/completions`,
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${this.apiKey}`,
+          },
           body: JSON.stringify({
+            model: "MiniMax-M2.7-highspeed",
             messages: trimmed,
             stream: true,
           }),
@@ -339,11 +348,15 @@ export class MiniMaxClient {
     const trimmed = trimMessages(messages);
 
     const res = await fetchWithRetry(
-      this.baseUrl,
+      `${this.baseUrl}/chat/completions`,
       {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${this.apiKey}`,
+        },
         body: JSON.stringify({
+          model: "MiniMax-M2.7-highspeed",
           messages: trimmed,
           stream: false,
         }),
