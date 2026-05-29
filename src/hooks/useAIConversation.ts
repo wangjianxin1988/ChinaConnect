@@ -218,7 +218,7 @@ Remember:
 
       // No throttle — send every chunk immediately for fastest streaming
 
-      await client.chatStream(
+      const finalCleanedResponse = await client.chatStream(
         conversationMessages,
         (text, isComplete) => {
           if (!isComplete) {
@@ -233,6 +233,9 @@ Remember:
           console.error("MiniMax error:", error);
         },
       );
+
+      // Store the final cleaned response for later use
+      return finalCleanedResponse;
     },
     [language, budgetLevel],
   );
@@ -286,8 +289,8 @@ Remember:
 
         if (isMiniMaxAvailable && miniMaxClientRef.current) {
           try {
-            // Use MiniMax AI
-            await getMiniMaxResponse(
+            // Use MiniMax AI - get the final cleaned response
+            const miniMaxResponse = await getMiniMaxResponse(
               content,
               (chunk) => {
                 // Update streaming message
@@ -300,14 +303,8 @@ Remember:
               },
             );
 
-            // Get final response from the streaming message (already cleaned by chatStream)
-            let finalResponse = '';
-            setMessages((prev) => {
-              const msg = prev.find((m) => m.id === assistantMsg.id);
-              if (msg?.content) finalResponse = msg.content;
-              return prev;
-            });
-            responseText = finalResponse;
+            // Use the cleaned response from MiniMax
+            responseText = miniMaxResponse || '';
 
             // Double-clean any residual think/tool_call tags
             responseText = cleanModelResponse(responseText);
