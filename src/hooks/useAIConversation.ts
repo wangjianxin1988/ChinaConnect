@@ -218,7 +218,6 @@ Remember:
 
       const finalCleanedResponse = await client.chatStream({
         messages: conversationMessages,
-        tools: ALL_TOOL_DEFINITIONS,
         onChunk: (text: string) => {
           onChunk(text);
         },

@@ -290,7 +290,6 @@ export class MiniMaxClient {
           },
           body: JSON.stringify({
             messages: trimmed,
-            tools: tools || [],
             stream: true,
             reasoning_split: true,
             model: "MiniMax-M2.7-highspeed",
