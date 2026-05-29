@@ -6,6 +6,7 @@
 import { cities } from "@/data/cities";
 import { getAnySearch } from "@/lib/ai/anysearch";
 import { ShortTermMemoryStore, getLongTermMemory } from "@/lib/ai/memory";
+import { ALL_TOOL_DEFINITIONS } from "@/lib/ai/tools";
 import type {
   ConversationSummary,
   Message,
@@ -217,6 +218,7 @@ Remember:
 
       const finalCleanedResponse = await client.chatStream({
         messages: conversationMessages,
+        tools: ALL_TOOL_DEFINITIONS,
         onChunk: (text: string) => {
           onChunk(text);
         },
