@@ -53,6 +53,8 @@ export function cleanModelResponse(text: string): string {
   if (!text) return "";
 
   let cleaned = text;
+  // DEBUG: Log when think block is detected
+  if (text.includes("think")) console.log("[DEBUG clean] input length:", text.length, "has think:", text.includes("<think>"));
 
   // Remove closed <think>...</think> blocks
   cleaned = cleaned.replace(/<think>[\s\S]*?<\/think>/g, "");
@@ -316,6 +318,7 @@ export class MiniMaxClient {
           fullResponse += chunk.content;
           // Clean and send incremental update
           const cleaned = cleanModelResponse(fullResponse);
+          console.log("[DEBUG stream] chunk len:", chunk.content.length, "full len:", fullResponse.length, "cleaned len:", cleaned.length, "has think:", cleaned.includes("think"));
           onChunk(cleaned);
         }
       }
