@@ -1,12 +1,11 @@
 /**
  * useAIConversation Hook with MiniMax AI Integration
- * Manages AI conversation state with ReAct engine, tools, memory and MiniMax API
+ * Manages AI conversation state with tools, memory and MiniMax API
  */
 
 import { cities } from "@/data/cities";
 import { getAnySearch } from "@/lib/ai/anysearch";
 import { ShortTermMemoryStore, getLongTermMemory } from "@/lib/ai/memory";
-import { ReActEngine } from "@/lib/ai/react-engine";
 import type {
   ConversationSummary,
   Message,
@@ -87,8 +86,7 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
   const [usageExceeded, setUsageExceeded] = useState(false);
   const [remainingRequests, setRemainingRequests] = useState(getRemainingAIRequests());
 
-  // Engine instances
-  const engineRef = useRef<ReActEngine | null>(null);
+  // Client instances
   const miniMaxClientRef = useRef<MiniMaxClient | null>(null);
   const shortTermMemoryRef = useRef<ShortTermMemoryStore | null>(null);
   const longTermMemoryRef = useRef(getLongTermMemory());
@@ -100,7 +98,6 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
 
   // Initialize on mount
   useEffect(() => {
-    engineRef.current = new ReActEngine();
     shortTermMemoryRef.current = new ShortTermMemoryStore();
 
     // Initialize MiniMax client
@@ -284,66 +281,32 @@ Remember:
           isStreaming: true,
         });
 
-        // 3. Try MiniMax first, fall back to ReAct
+        // 3. Use MiniMax AI
         let responseText = "";
 
-        if (isMiniMaxAvailable && miniMaxClientRef.current) {
-          try {
-            // Use MiniMax AI - get the final cleaned response
-            const miniMaxResponse = await getMiniMaxResponse(
-              content,
-              (chunk) => {
-                // Update streaming message
-                setMessages((prev) =>
-                  prev.map((m) => (m.id === assistantMsg.id ? { ...m, content: chunk } : m)),
-                );
-              },
-              () => {
-                // Complete
-              },
-            );
-
-            // Use the cleaned response from MiniMax
-            responseText = miniMaxResponse || '';
-
-            // Double-clean any residual think/tool_call tags
-            responseText = cleanModelResponse(responseText);
-          } catch (miniMaxError) {
-            console.warn("MiniMax failed, falling back to ReAct:", miniMaxError);
-            // Fall back to ReAct engine
-            try {
-              const engine = engineRef.current!;
-              const result = await engine.execute(content, language, (progress) => {
-                setWorkflowProgress(progress);
-              });
-              responseText = cleanModelResponse(result.response);
-            } catch (reactError) {
-              console.warn("ReAct engine also failed:", reactError);
-              responseText = "";
-            }
-          }
-        } else {
-          // Use ReAct engine directly
-          const engine = engineRef.current!;
-
-          // Enrich with web search if available
-          let enrichedQuery = content;
-          if (isMCPAvailable || anySearchRef.current.isMCPAvailable()) {
-            try {
-              const enrichment = await anySearchRef.current.enrichWithWebData(content);
-              if (enrichment) {
-                enrichedQuery = content + enrichment;
-              }
-            } catch {
-              // Continue without enrichment
-            }
-          }
-
-          const result = await engine.execute(enrichedQuery, language, (progress) => {
-            setWorkflowProgress(progress);
-          });
-          responseText = cleanModelResponse(result.response);
+        if (!miniMaxClientRef.current) {
+          throw new Error("MiniMax client not initialized. Please set PUBLIC_MINIMAX_API_KEY.");
         }
+
+        // Use MiniMax AI - get the final cleaned response
+        const miniMaxResponse = await getMiniMaxResponse(
+          content,
+          (chunk) => {
+            // Update streaming message
+            setMessages((prev) =>
+              prev.map((m) => (m.id === assistantMsg.id ? { ...m, content: chunk } : m)),
+            );
+          },
+          () => {
+            // Complete
+          },
+        );
+
+        // Use the cleaned response from MiniMax
+        responseText = miniMaxResponse || '';
+
+        // Double-clean any residual think/tool_call tags
+        responseText = cleanModelResponse(responseText);
 
         // Simulate streaming effect with smooth typewriter for non-streaming responses
         const duration = Date.now() - startTime;
@@ -473,8 +436,6 @@ Remember:
       language,
       addMessage,
       autoSave,
-      isMCPAvailable,
-      isMiniMaxAvailable,
       getMiniMaxResponse,
       budgetLevel,
       messages,
