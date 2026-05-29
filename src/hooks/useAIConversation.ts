@@ -18,6 +18,7 @@ import {
   MiniMaxClient,
   type MiniMaxMessage,
   TRAVEL_PLANNING_SYSTEM,
+  cleanModelResponse,
 } from "@/services/minimax";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { checkUsageLimit, incrementUsage, getRemainingRequests as getRemainingAIRequests } from "@/lib/usage-tracker";
@@ -308,6 +309,9 @@ Remember:
             responseText =
               fullResponse || messages.find((m) => m.id === assistantMsg.id)?.content || "";
 
+            // Clean any residual think/tool_call tags from the final response
+            responseText = cleanModelResponse(responseText);
+
             // If still empty, try to get from the streaming message
             if (!responseText) {
               setMessages((prev) => {
@@ -396,7 +400,7 @@ Remember:
         );
 
         // Add assistant response to MiniMax conversation history
-        conversationMessagesRef.current.push({ role: "assistant", content: responseText });
+        conversationMessagesRef.current.push({ role: "assistant", content: cleanModelResponse(responseText) });
 
         // Increment usage count after successful AI response
         incrementUsage();

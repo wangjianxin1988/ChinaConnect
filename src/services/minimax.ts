@@ -28,7 +28,7 @@ export interface MiniMaxStreamResponse {
  * Strip <think> blocks, tool_call blocks, and function call tags
  * from model output so users only see clean responses.
  */
-function cleanModelResponse(text: string): string {
+export function cleanModelResponse(text: string): string {
   // Remove closed <think>...</think> blocks
   let cleaned = text.replace(/<think>[\s\S]*?<\/think>/g, '');
   // Remove unclosed <think> blocks (mid-stream: opening tag with no closing yet)
