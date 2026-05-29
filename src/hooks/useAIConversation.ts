@@ -300,26 +300,17 @@ Remember:
               },
             );
 
-            // Get final response from MiniMax
-            const fullResponse = conversationMessagesRef.current
-              .filter((m) => m.role === "assistant")
-              .map((m) => m.content)
-              .join("");
+            // Get final response from the streaming message (already cleaned by chatStream)
+            let finalResponse = '';
+            setMessages((prev) => {
+              const msg = prev.find((m) => m.id === assistantMsg.id);
+              if (msg?.content) finalResponse = msg.content;
+              return prev;
+            });
+            responseText = finalResponse;
 
-            responseText =
-              fullResponse || messages.find((m) => m.id === assistantMsg.id)?.content || "";
-
-            // Clean any residual think/tool_call tags from the final response
+            // Double-clean any residual think/tool_call tags
             responseText = cleanModelResponse(responseText);
-
-            // If still empty, try to get from the streaming message
-            if (!responseText) {
-              setMessages((prev) => {
-                const msg = prev.find((m) => m.id === assistantMsg.id);
-                if (msg?.content) responseText = msg.content;
-                return prev;
-              });
-            }
           } catch (miniMaxError) {
             console.warn("MiniMax failed, falling back to ReAct:", miniMaxError);
             // Fall back to ReAct engine
