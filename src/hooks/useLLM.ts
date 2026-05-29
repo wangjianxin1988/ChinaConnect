@@ -369,8 +369,7 @@ async function callProvider(
     }
     case "minimax": {
       const { MiniMaxClient } = await import("@/services/minimax");
-      const apiKey = import.meta.env.PUBLIC_MINIMAX_API_KEY || "";
-      const client = new MiniMaxClient(apiKey);
+      const client = new MiniMaxClient("/api/chat");
       return client.chatBlocking(
         messages as Array<{ role: "system" | "user" | "assistant"; content: string }>,
       );

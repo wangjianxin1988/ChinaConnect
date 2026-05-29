@@ -6,6 +6,9 @@
 
 import { cities } from "@/data/cities";
 import type { City } from "@/data/cities/types";
+import { WebSearchToolDefinition } from "@/lib/ai/search/web-search";
+import { AmapPOISearchToolDefinition } from "@/lib/ai/search/amap-poi";
+import { AmapRouteSearchToolDefinition } from "@/lib/ai/search/amap-route";
 
 // ============================================
 // City Alias Lookup
@@ -739,3 +742,269 @@ export function executeTool(name: string, args: Record<string, string>): string 
     return JSON.stringify({ error: `Tool execution failed: ${String(error)}` });
   }
 }
+
+// ============================================
+// MiniMax API Tool Definitions (OpenAI-compatible)
+// ============================================
+
+/**
+ * Local tool definitions (from city database).
+ * Format: OpenAI-compatible function tools for MiniMax API.
+ */
+export const LOCAL_TOOL_DEFINITIONS = [
+  {
+    type: "function" as const,
+    function: {
+      name: "CitySearch",
+      description: "Search for a Chinese city and get its overview, top attractions, restaurants, climate, and transport info.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name in English or Chinese, e.g. 'Beijing', '上海'." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "HotelSearch",
+      description: "Search for hotels in a Chinese city filtered by budget level.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Shanghai'." },
+          budget: { type: "string", description: "Budget level: 'budget', 'mid', 'luxury', 'low', 'medium', 'high'." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "FoodSearch",
+      description: "Search for restaurants in a Chinese city, optionally filtered by cuisine type and budget.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Chengdu'." },
+          cuisine: { type: "string", description: "Cuisine type, e.g. 'Sichuan', 'Cantonese', 'hotpot'." },
+          budget: { type: "string", description: "Budget: 'low', 'medium', 'high'." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "TransportSearch",
+      description: "Search for transport options (train, flight) between two Chinese cities.",
+      parameters: {
+        type: "object",
+        properties: {
+          from: { type: "string", description: "Departure city, e.g. 'Beijing'." },
+          to: { type: "string", description: "Arrival city, e.g. 'Shanghai'." },
+        },
+        required: ["from", "to"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "VisaInfo",
+      description: "Get China visa information for a given nationality.",
+      parameters: {
+        type: "object",
+        properties: {
+          nationality: { type: "string", description: "Country name, e.g. 'United States', 'Japan'." },
+        },
+        required: [],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "TranslationHelper",
+      description: "Translate common travel phrases to Chinese with pinyin pronunciation.",
+      parameters: {
+        type: "object",
+        properties: {
+          text: { type: "string", description: "Text to translate, e.g. 'hello', 'how_much', 'food'." },
+          targetLang: { type: "string", description: "Target language code, default 'zh'." },
+          sourceLang: { type: "string", description: "Source language code, default 'auto'." },
+        },
+        required: ["text"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "WeatherInfo",
+      description: "Get climate and weather information for a Chinese city.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Guangzhou'." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "EmergencyInfo",
+      description: "Get emergency numbers (ambulance 120, police 110, fire 119) and hospital contacts for a city.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name (optional), e.g. 'Beijing'." },
+        },
+        required: [],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "SubwayRoute",
+      description: "Get metro/subway information for a Chinese city.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Shanghai'." },
+          from: { type: "string", description: "Starting station (optional)." },
+          to: { type: "string", description: "Destination station (optional)." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "BudgetCalculator",
+      description: "Calculate estimated travel budget for a Chinese city trip.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Beijing'." },
+          days: { type: "number", description: "Number of days (default 3)." },
+          budgetLevel: { type: "string", description: "Budget level: 'budget', 'midRange', 'luxury'." },
+          travelers: { type: "number", description: "Number of travelers (default 1)." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "RouteOptimizer",
+      description: "Create an optimized multi-day sightseeing itinerary for a city.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Xian'." },
+          attractions: { type: "string", description: "Comma-separated attraction names (optional)." },
+          days: { type: "number", description: "Number of days (default 1)." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "CulturalTips",
+      description: "Get cultural etiquette tips for visiting a Chinese city.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Chengdu'." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "PaymentGuide",
+      description: "Get information about payment methods in China (WeChat Pay, Alipay, cash, credit cards).",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name (optional)." },
+        },
+        required: [],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "CrowdLevel",
+      description: "Check expected crowd levels for a city/attraction in a given month.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Hangzhou'." },
+          attraction: { type: "string", description: "Specific attraction name (optional)." },
+          month: { type: "string", description: "Month name, e.g. 'October'." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+  {
+    type: "function" as const,
+    function: {
+      name: "NearbyPOI",
+      description: "Find nearby points of interest (restaurants, hotels, attractions) in a city from the local database.",
+      parameters: {
+        type: "object",
+        properties: {
+          city: { type: "string", description: "City name, e.g. 'Guilin'." },
+          type: { type: "string", description: "POI type: 'attraction', 'restaurant', 'hotel'." },
+          near: { type: "string", description: "Nearby landmark or area (optional)." },
+        },
+        required: ["city"],
+      },
+    },
+  },
+];
+
+/**
+ * Search tool definitions (real-time API-powered).
+ * These wrap external APIs (AnySearch, Amap).
+ */
+export const SEARCH_TOOL_DEFINITIONS = [
+  WebSearchToolDefinition,
+  AmapPOISearchToolDefinition,
+  AmapRouteSearchToolDefinition,
+];
+
+/**
+ * All tool definitions combined — pass this array to MiniMax API's `tools` parameter.
+ * Format: OpenAI-compatible function tools (type: "function").
+ *
+ * @example
+ * ```ts
+ * const response = await fetch(MINIMAX_URL, {
+ *   method: "POST",
+ *   body: JSON.stringify({
+ *     model: "MiniMax-Text-01",
+ *     messages: [...],
+ *     tools: ALL_TOOL_DEFINITIONS,
+ *   }),
+ * });
+ * ```
+ */
+export const ALL_TOOL_DEFINITIONS = [...LOCAL_TOOL_DEFINITIONS, ...SEARCH_TOOL_DEFINITIONS];

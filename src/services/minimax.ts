@@ -30,10 +30,16 @@ export interface MiniMaxToolCall {
 export interface ChatStreamOptions {
   /** Messages to send (including system prompt) */
   messages: MiniMaxMessage[];
+  /** Tools available for the AI to call */
+  tools?: unknown[];
   /** Called for each content chunk during streaming */
   onChunk: (text: string) => void;
   /** Called when the stream completes */
   onComplete: (finalText: string) => void;
+  /** Called when a tool is being executed */
+  onToolExecuting?: (toolName: string, toolId: string) => void;
+  /** Called when a tool returns a result */
+  onToolResult?: (toolName: string, toolId: string, result: string) => void;
   /** Called on error */
   onError: (error: Error) => void;
   /** AbortSignal for cancellation */
@@ -226,13 +232,11 @@ async function fetchWithRetry(
 // ---------------------------------------------------------------------------
 
 export class MiniMaxClient {
-  private apiKey: string;
-  private baseUrl: string;
   private currentAbortController: AbortController | null = null;
+  private apiEndpoint: string;
 
-  constructor(apiKey: string, baseUrl = "https://api.minimax.chat/v1") {
-    this.apiKey = apiKey;
-    this.baseUrl = baseUrl;
+  constructor(apiEndpoint = "/api/chat") {
+    this.apiEndpoint = apiEndpoint;
   }
 
   /**
@@ -251,6 +255,7 @@ export class MiniMaxClient {
    */
   async chatStream(options: ChatStreamOptions): Promise<string> {
     const { messages, onChunk, onComplete, onError, signal } = options;
+    const { tools } = options as ChatStreamOptions & { tools?: unknown[] };
 
     // Cancel any previous in-flight request
     this.cancel();
@@ -274,18 +279,16 @@ export class MiniMaxClient {
       const trimmed = trimMessages(messages);
 
       const res = await fetchWithRetry(
-        `${this.baseUrl}/chat/completions`,
+        this.apiEndpoint,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${this.apiKey}`,
           },
           body: JSON.stringify({
-            model: "MiniMax-M2.7-highspeed",
             messages: trimmed,
+            tools: tools || [],
             stream: true,
-            reasoning_split: true,
           }),
         },
         3,
@@ -312,16 +315,52 @@ export class MiniMaxClient {
       for await (const chunk of parseSSEStream(reader)) {
         if (controller.signal.aborted) break;
 
-        if (chunk.error) {
-          throw new Error(chunk.error);
+        // Handle structured events from server proxy
+        const event = chunk as unknown as { type?: string; content?: string; error?: string; tool_name?: string; tool_id?: string; result?: string };
+
+        if (event.error) {
+          throw new Error(event.error);
         }
 
-        if (chunk.content) {
-          fullResponse += chunk.content;
-          // Clean and send incremental update
-          const cleaned = cleanModelResponse(fullResponse);
-          console.log("[DEBUG stream] chunk len:", chunk.content.length, "full len:", fullResponse.length, "cleaned len:", cleaned.length, "has think:", cleaned.includes("think"));
-          onChunk(cleaned);
+        switch (event.type) {
+          case "tool_executing":
+            // Notify UI that a tool is being executed
+            if (options.onToolExecuting && event.tool_name && event.tool_id) {
+              options.onToolExecuting(event.tool_name, event.tool_id);
+            }
+            break;
+
+          case "tool_result":
+            // Notify UI of tool result
+            if (options.onToolResult && event.tool_name && event.tool_id && event.result) {
+              options.onToolResult(event.tool_name, event.tool_id, event.result);
+            }
+            break;
+
+          case "content":
+            // Content chunk from server
+            if (event.content) {
+              fullResponse += event.content;
+              const cleaned = cleanModelResponse(fullResponse);
+              onChunk(cleaned);
+            }
+            break;
+
+          case "done":
+            // Final message
+            if (event.content) {
+              fullResponse = event.content;
+            }
+            break;
+
+          default:
+            // Legacy format: direct content
+            if (chunk.content) {
+              fullResponse += chunk.content;
+              const cleaned = cleanModelResponse(fullResponse);
+              onChunk(cleaned);
+            }
+            break;
         }
       }
 
