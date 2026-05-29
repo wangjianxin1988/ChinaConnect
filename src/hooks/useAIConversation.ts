@@ -316,7 +316,7 @@ Remember:
               const result = await engine.execute(content, language, (progress) => {
                 setWorkflowProgress(progress);
               });
-              responseText = result.response;
+              responseText = cleanModelResponse(result.response);
             } catch (reactError) {
               console.warn("ReAct engine also failed:", reactError);
               responseText = "";
@@ -342,7 +342,7 @@ Remember:
           const result = await engine.execute(enrichedQuery, language, (progress) => {
             setWorkflowProgress(progress);
           });
-          responseText = result.response;
+          responseText = cleanModelResponse(result.response);
         }
 
         // Simulate streaming effect with smooth typewriter for non-streaming responses
