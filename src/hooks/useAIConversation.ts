@@ -215,21 +215,19 @@ Remember:
 
       // No throttle — send every chunk immediately for fastest streaming
 
-      const finalCleanedResponse = await client.chatStream(
-        conversationMessages,
-        (text, isComplete) => {
-          if (!isComplete) {
-            onChunk(text);
-          } else {
-            // Always send final update
-            onChunk(text);
-            onComplete();
-          }
+      const finalCleanedResponse = await client.chatStream({
+        messages: conversationMessages,
+        onChunk: (text: string) => {
+          onChunk(text);
         },
-        (error) => {
+        onComplete: (finalText: string) => {
+          onChunk(finalText);
+          onComplete();
+        },
+        onError: (error: Error) => {
           console.error("MiniMax error:", error);
         },
-      );
+      });
 
       // Store the final cleaned response for later use
       return finalCleanedResponse;
