@@ -24,6 +24,26 @@ export interface MiniMaxStreamResponse {
   }>;
 }
 
+/**
+ * Strip <think> blocks, <minimax:tool_call> blocks, and stray <invoke> tags
+ * from model output so users only see clean responses.
+ */
+function cleanModelResponse(text: string): string {
+  // Remove closed <think>...</think> blocks
+  let cleaned = text.replace(/<think>[\s\S]*?<\/think>/g, '');
+  // Remove unclosed <think> blocks (mid-stream: opening tag with no closing yet)
+  cleaned = cleaned.replace(/<think>[\s\S]*$/, '');
+  // Remove closed <minimax:tool_call>...</minimax:tool_call> blocks
+  cleaned = cleaned.replace(/<minimax:tool_call>[\s\S]*?<\/minimax:tool_call>/g, '');
+  // Remove unclosed <minimax:tool_call> blocks (mid-stream)
+  cleaned = cleaned.replace(/<minimax:tool_call>[\s\S]*$/, '');
+  // Remove any stray <invoke ... /> tags that may appear outside tool_call blocks
+  cleaned = cleaned.replace(/<invoke\s+[^>]*\/>/g, '');
+  // Clean up extra whitespace/newlines left behind
+  cleaned = cleaned.replace(/\n{3,}/g, '\n\n').trim();
+  return cleaned;
+}
+
 export class MiniMaxClient {
   private apiKey: string;
   private baseUrl: string;
@@ -99,10 +119,10 @@ export class MiniMaxClient {
             const content = event.choices[0]?.delta?.content;
             if (content) {
               fullResponse += content;
-              onMessage(fullResponse, false);
+              onMessage(cleanModelResponse(fullResponse), false);
             }
             if (event.choices[0]?.finish_reason) {
-              onMessage(fullResponse, true);
+              onMessage(cleanModelResponse(fullResponse), true);
             }
           } catch {
             // Skip malformed lines
@@ -110,8 +130,9 @@ export class MiniMaxClient {
         }
       }
 
-      onMessage(fullResponse, true);
-      return fullResponse;
+      const cleaned = cleanModelResponse(fullResponse);
+      onMessage(cleaned, true);
+      return cleaned;
     } catch (error) {
       if (error instanceof Error) {
         onError?.(error);
@@ -145,7 +166,7 @@ export class MiniMaxClient {
     }
 
     const data = await response.json();
-    return data.choices[0]?.message?.content || "";
+    return cleanModelResponse(data.choices[0]?.message?.content || "");
   }
 }
 
@@ -293,8 +314,8 @@ City data includes:
 `;
 
 export function createMiniMaxClient(): MiniMaxClient {
-  const apiKey = import.meta.env.MINIMAX_API_KEY || "";
-  const baseUrl = import.meta.env.MINIMAX_BASE_URL || "https://api.minimax.chat/v1";
+  const apiKey = import.meta.env.PUBLIC_MINIMAX_API_KEY || "";
+  const baseUrl = import.meta.env.PUBLIC_MINIMAX_BASE_URL || "https://api.minimax.chat/v1";
   return new MiniMaxClient(apiKey, baseUrl);
 }
 
