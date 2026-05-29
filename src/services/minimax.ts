@@ -25,7 +25,7 @@ export interface MiniMaxStreamResponse {
 }
 
 /**
- * Strip <think> blocks, <minimax:tool_call> blocks, and stray <invoke> tags
+ * Strip <think> blocks, tool_call blocks, and function call tags
  * from model output so users only see clean responses.
  */
 function cleanModelResponse(text: string): string {
@@ -37,8 +37,14 @@ function cleanModelResponse(text: string): string {
   cleaned = cleaned.replace(/<minimax:tool_call>[\s\S]*?<\/minimax:tool_call>/g, '');
   // Remove unclosed <minimax:tool_call> blocks (mid-stream)
   cleaned = cleaned.replace(/<minimax:tool_call>[\s\S]*$/, '');
-  // Remove any stray <invoke ... /> tags that may appear outside tool_call blocks
+  // Remove any stray <invoke ... /> tags
   cleaned = cleaned.replace(/<invoke\s+[^>]*\/>/g, '');
+  // Remove <function ...> ... </function> blocks (multi-line)
+  cleaned = cleaned.replace(/<function\s+[\s\S]*?<\/function>/g, '');
+  // Remove self-closing <function ... /> tags (may be multi-line)
+  cleaned = cleaned.replace(/<function\s+[\s\S]*?\/>/g, '');
+  // Remove unclosed <function ...> tags (mid-stream)
+  cleaned = cleaned.replace(/<function\s+[\s\S]*$/, '');
   // Clean up extra whitespace/newlines left behind
   cleaned = cleaned.replace(/\n{3,}/g, '\n\n').trim();
   return cleaned;
