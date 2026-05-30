@@ -307,7 +307,7 @@ export class MiniMaxClient {
   private apiKey: string;
   private baseUrl: string;
 
-  constructor(apiKey: string, baseUrl = "https://api.minimax.chat/v1") {
+  constructor(apiKey: string, baseUrl = "/api/chat") {
     this.apiKey = apiKey;
     this.baseUrl = baseUrl;
   }
@@ -357,12 +357,11 @@ export class MiniMaxClient {
         if (controller.signal.aborted) break;
 
         const res = await fetchWithRetry(
-          `${this.baseUrl}/chat/completions`,
+          this.baseUrl,
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer ${this.apiKey}`,
             },
             body: JSON.stringify({
               messages: currentMessages,
@@ -507,12 +506,11 @@ export class MiniMaxClient {
     const trimmed = trimMessages(messages);
 
     const res = await fetchWithRetry(
-      `${this.baseUrl}/chat/completions`,
+      this.baseUrl,
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${this.apiKey}`,
         },
         body: JSON.stringify({
           model: "MiniMax-M2.7-highspeed",

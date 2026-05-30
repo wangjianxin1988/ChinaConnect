@@ -184,7 +184,7 @@ export function useLLM(options: UseLLMOptions = {}): UseLLMReturn {
         if (enableFallback) {
           // Build API keys map for fallback chain
           const apiKeys: Partial<Record<LLMProviderType, string>> = {
-            minimax: import.meta.env.PUBLIC_MINIMAX_API_KEY,
+            minimax: "", // Uses server-side proxy
             qwen: import.meta.env.DASHSCOPE_API_KEY,
             claude: import.meta.env.ANTHROPIC_API_KEY,
             gpt4o: import.meta.env.OPENAI_API_KEY,
@@ -369,8 +369,7 @@ async function callProvider(
     }
     case "minimax": {
       const { MiniMaxClient } = await import("@/services/minimax");
-      const apiKey = import.meta.env.PUBLIC_MINIMAX_API_KEY || "";
-      const client = new MiniMaxClient(apiKey);
+      const client = new MiniMaxClient("", "/api/chat");
       return client.chatBlocking(
         messages as Array<{ role: "system" | "user" | "assistant"; content: string }>,
       );
