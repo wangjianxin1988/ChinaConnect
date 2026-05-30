@@ -43,10 +43,11 @@ export type ToolExecutorFn = (args: Record<string, string>) => Promise<ToolResul
 
 /**
  * Maps tool names (as used in MiniMax function_call) to their execution functions.
- * Local tools (sync) and search tools (async) are both supported.
+ * All tools are async — local tools call real-time APIs (Amap, WebSearch, OpenMete)
+ * with fallback to static data.
  */
 export const TOOL_EXECUTOR_MAP: Record<string, ToolExecutorFn> = {
-  // ── Local data tools (synchronous) ──
+  // ── City & travel tools (async — real-time APIs + static fallback) ──
   CitySearch: (p) => CitySearch({ city: p.city }),
   HotelSearch: (p) => HotelSearch({ city: p.city, budget: p.budget }),
   FoodSearch: (p) => FoodSearch({ city: p.city, cuisine: p.cuisine, budget: p.budget }),
