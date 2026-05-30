@@ -101,25 +101,9 @@ export function useAIConversation(options: UseAIConversationOptions = {}): UseAI
   useEffect(() => {
     shortTermMemoryRef.current = new ShortTermMemoryStore();
 
-    // Initialize MiniMax client
-    const apiKey = import.meta.env.PUBLIC_MINIMAX_API_KEY;
-    const baseUrl = import.meta.env.PUBLIC_MINIMAX_BASE_URL || "https://api.minimax.chat/v1";
-    if (apiKey) {
-      miniMaxClientRef.current = new MiniMaxClient(apiKey, baseUrl);
-      // Verify API connectivity with a lightweight health check
-      fetch(`${baseUrl}/models`, {
-        method: "GET",
-        headers: { Authorization: `Bearer ${apiKey}` },
-        signal: AbortSignal.timeout(8000),
-      })
-        .then((res) => {
-          setIsMiniMaxAvailable(res.ok || res.status === 401 || res.status === 403);
-        })
-        .catch(() => {
-          // If fetch fails but key exists, assume available (network may be fine for chat)
-          setIsMiniMaxAvailable(true);
-        });
-    }
+    // Initialize MiniMax client — uses server-side proxy at /api/chat
+    miniMaxClientRef.current = new MiniMaxClient("", "/api/chat");
+    setIsMiniMaxAvailable(true);
 
     // Load saved data
     const longTerm = longTermMemoryRef.current;
@@ -291,7 +275,7 @@ Remember:
         let responseText = "";
 
         if (!miniMaxClientRef.current) {
-          throw new Error("MiniMax client not initialized. Please set PUBLIC_MINIMAX_API_KEY.");
+          throw new Error("MiniMax client not initialized.");
         }
 
         // Use MiniMax AI - get the final cleaned response
