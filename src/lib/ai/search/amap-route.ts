@@ -71,13 +71,7 @@ const AMAP_DIRECTION_API_BASE: Record<string, string> = {
  * Get Amap API key from environment.
  */
 function getAmapKey(): string | undefined {
-  if (typeof import.meta !== "undefined" && import.meta.env) {
-    return import.meta.env.VITE_AMAP_WEB_API_KEY;
-  }
-  if (typeof process !== "undefined" && process.env) {
-    return process.env.AMAP_WEB_API_KEY;
-  }
-  return undefined;
+  return import.meta.env.VITE_AMAP_WEB_API_KEY || "REDACTED_AMAP_WEB_KEY";
 }
 
 /**

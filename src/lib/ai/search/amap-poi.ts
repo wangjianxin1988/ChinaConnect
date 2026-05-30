@@ -49,13 +49,7 @@ const AMAP_WEB_API_BASE = "https://restapi.amap.com/v3/place/text";
  * Uses VITE_AMAP_WEB_API_KEY (client-side) or AMAP_WEB_API_KEY (server-side).
  */
 function getAmapKey(): string | undefined {
-  if (typeof import.meta !== "undefined" && import.meta.env) {
-    return import.meta.env.VITE_AMAP_WEB_API_KEY;
-  }
-  if (typeof process !== "undefined" && process.env) {
-    return process.env.AMAP_WEB_API_KEY;
-  }
-  return undefined;
+  return import.meta.env.VITE_AMAP_WEB_API_KEY || "REDACTED_AMAP_WEB_KEY";
 }
 
 /**
