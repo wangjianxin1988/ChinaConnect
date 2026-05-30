@@ -9,6 +9,60 @@ import type { City } from "@/data/cities/types";
 import { WebSearchToolDefinition } from "@/lib/ai/search/web-search";
 import { AmapPOISearchToolDefinition } from "@/lib/ai/search/amap-poi";
 import { AmapRouteSearchToolDefinition } from "@/lib/ai/search/amap-route";
+import { executeWebSearch } from "@/lib/ai/search/web-search";
+import { executeAmapPOISearch } from "@/lib/ai/search/amap-poi";
+import { fetchWeather } from "@/services/weather-api";
+
+// ============================================
+// City Coordinates (for weather API)
+// ============================================
+
+const CITY_COORDS: Record<string, { lat: number; lng: number }> = {
+  beijing: { lat: 39.9042, lng: 116.4074 },
+  shanghai: { lat: 31.2304, lng: 121.4737 },
+  guangzhou: { lat: 23.1291, lng: 113.2644 },
+  xian: { lat: 34.3416, lng: 108.9398 },
+  chengdu: { lat: 30.5728, lng: 104.0668 },
+  guilin: { lat: 25.2736, lng: 110.2900 },
+  hangzhou: { lat: 30.2741, lng: 120.1551 },
+  nanjing: { lat: 32.0603, lng: 118.7969 },
+  chongqing: { lat: 29.5630, lng: 106.5516 },
+  shenzhen: { lat: 22.5431, lng: 114.0579 },
+  suzhou: { lat: 31.2990, lng: 120.5853 },
+  xiamen: { lat: 24.4798, lng: 118.0894 },
+  qingdao: { lat: 36.0671, lng: 120.3826 },
+  kunming: { lat: 25.0389, lng: 102.7183 },
+  lijiang: { lat: 26.8721, lng: 100.2299 },
+  sanya: { lat: 18.2528, lng: 109.5120 },
+  wuhan: { lat: 30.5928, lng: 114.3055 },
+  changsha: { lat: 28.2282, lng: 112.9388 },
+  harbin: { lat: 45.8038, lng: 126.5350 },
+  tianjin: { lat: 39.3434, lng: 117.3616 },
+  dalian: { lat: 38.9140, lng: 121.6147 },
+  dali: { lat: 25.6065, lng: 100.2676 },
+  zhangjiajie: { lat: 29.1170, lng: 110.4793 },
+};
+
+/** Get coordinates for any city — hardcoded first, then OpenMeteo geocoding fallback */
+async function getCityCoords(cityName: string): Promise<{ lat: number; lng: number } | null> {
+  const key = cityName.toLowerCase().trim();
+  if (CITY_COORDS[key]) return CITY_COORDS[key];
+  // Alias check
+  const slug = CITY_ALIASES[key];
+  if (slug && CITY_COORDS[slug]) return CITY_COORDS[slug];
+  // Try OpenMeteo geocoding (free, works worldwide)
+  try {
+    const res = await fetch(
+      `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(cityName)}&count=1&language=en`,
+      { signal: AbortSignal.timeout(5000) },
+    );
+    const data = await res.json();
+    if (data.results?.[0]) {
+      return { lat: data.results[0].latitude, lng: data.results[0].longitude };
+    }
+  } catch { /* ignore */ }
+  return null;
+}
 
 // ============================================
 // City Alias Lookup
@@ -72,10 +126,30 @@ function findCity(input: string): City | null {
 // CitySearch Tool
 // ============================================
 
-export function CitySearch(params: { city: string }): Record<string, unknown> {
+export async function CitySearch(params: { city: string }): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
+  const cityName = city?.nameEn || params.city;
+
+  // Try real-time WebSearch for up-to-date city info
+  let webResults: Array<{ title: string; snippet: string; url: string }> = [];
+  try {
+    const search = await executeWebSearch({ query: `${cityName} China travel guide top attractions food 2026`, maxResults: 5 });
+    if (search.success && search.results.length > 0) {
+      webResults = search.results;
+    }
+  } catch { /* fall through */ }
 
   if (!city) {
+    // City not in static DB — return web results only
+    if (webResults.length > 0) {
+      return {
+        found: true,
+        city: cityName,
+        source: "web",
+        webOverview: webResults.map(r => ({ title: r.title, snippet: r.snippet, url: r.url })),
+        note: "City not in local database. Data from real-time web search.",
+      };
+    }
     return {
       found: false,
       message: `City "${params.city}" not found.`,
@@ -83,6 +157,7 @@ export function CitySearch(params: { city: string }): Record<string, unknown> {
     };
   }
 
+  // Merge static + real-time data
   return {
     found: true,
     city: city.nameEn,
@@ -103,6 +178,7 @@ export function CitySearch(params: { city: string }): Record<string, unknown> {
     })),
     bestMonths: city.climate?.bestMonths || [],
     transport: city.transport,
+    ...(webResults.length > 0 ? { webHighlights: webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet })) } : {}),
   };
 }
 
@@ -110,40 +186,58 @@ export function CitySearch(params: { city: string }): Record<string, unknown> {
 // HotelSearch Tool — fixed budget mapping
 // ============================================
 
-export function HotelSearch(params: { city: string; budget?: string }): Record<string, unknown> {
+export async function HotelSearch(params: { city: string; budget?: string }): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
-  if (!city) return { error: `City "${params.city}" not found.`, hotels: [] };
+  const cityName = city?.nameEn || params.city;
 
-  let hotels = city.hotels || [];
+  // Try Amap POI search for real-time hotel data
+  let amapHotels: Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }> = [];
+  try {
+    const keywords = params.budget === "luxury" ? "五星级酒店" : params.budget === "budget" ? "经济型酒店" : "酒店";
+    const result = await executeAmapPOISearch({ keywords, city: cityName, type: "hotel", pageSize: 10 });
+    if (result.success && result.pois.length > 0) {
+      amapHotels = result.pois.map(p => ({
+        name: p.name,
+        address: p.address,
+        rating: p.rating,
+        cost: p.cost,
+        tel: p.tel,
+      }));
+    }
+  } catch { /* fall through */ }
+
+  // Static data as supplement
+  let staticHotels = (city?.hotels || []).map(h => ({
+    name: h.nameEn || h.name,
+    budget: h.budget,
+    priceRange: h.priceRange,
+    rating: h.rating,
+    address: h.address,
+    highlights: h.highlights,
+    bookingTips: h.bookingTips,
+    source: "local" as const,
+  }));
 
   if (params.budget) {
-    // Map "medium" → "mid" (the actual budget value in city data)
     const budgetMap: Record<string, string[]> = {
-      low: ["budget"],
-      medium: ["mid", "budget"],
-      high: ["luxury", "mid"],
-      budget: ["budget"],
-      mid: ["mid"],
-      midRange: ["mid"],
-      luxury: ["luxury"],
+      low: ["budget"], medium: ["mid", "budget"], high: ["luxury", "mid"],
+      budget: ["budget"], mid: ["mid"], midRange: ["mid"], luxury: ["luxury"],
     };
     const targets = budgetMap[params.budget] || [params.budget];
-    hotels = hotels.filter(h => targets.includes(h.budget));
+    staticHotels = staticHotels.filter(h => targets.includes(h.budget));
   }
 
+  // Merge: Amap results first, then static
+  const merged = [
+    ...amapHotels.map(h => ({ ...h, source: "amap" as const })),
+    ...staticHotels,
+  ];
+
   return {
-    city: city.nameEn,
-    hotels: hotels.slice(0, 10).map(h => ({
-      name: h.name,
-      nameEn: h.nameEn,
-      budget: h.budget,
-      priceRange: h.priceRange,
-      rating: h.rating,
-      address: h.address,
-      highlights: h.highlights,
-      bookingTips: h.bookingTips,
-    })),
-    totalResults: Math.min(hotels.length, 10),
+    city: cityName,
+    totalResults: merged.length,
+    hotels: merged.slice(0, 10),
+    ...(amapHotels.length > 0 ? { note: "Real-time hotel data from Amap (高德地图)" } : {}),
   };
 }
 
@@ -151,43 +245,66 @@ export function HotelSearch(params: { city: string; budget?: string }): Record<s
 // FoodSearch Tool
 // ============================================
 
-export function FoodSearch(params: { city: string; cuisine?: string; budget?: string }): Record<string, unknown> {
+export async function FoodSearch(params: { city: string; cuisine?: string; budget?: string }): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
-  if (!city) return { error: `City "${params.city}" not found.`, restaurants: [] };
+  const cityName = city?.nameEn || params.city;
 
-  let restaurants = city.restaurants || [];
+  // Try Amap POI search for real-time restaurant data
+  let amapRestaurants: Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }> = [];
+  try {
+    const keywords = params.cuisine ? `${params.cuisine}餐厅` : "美食";
+    const result = await executeAmapPOISearch({ keywords, city: cityName, type: "restaurant", pageSize: 10 });
+    if (result.success && result.pois.length > 0) {
+      amapRestaurants = result.pois.map(p => ({
+        name: p.name,
+        address: p.address,
+        rating: p.rating,
+        cost: p.cost,
+        tel: p.tel,
+      }));
+    }
+  } catch { /* fall through */ }
+
+  // Static data as supplement
+  let staticRestaurants = (city?.restaurants || []).map(r => ({
+    name: r.nameEn || r.name,
+    type: r.type === "michelin" ? "⭐ Michelin" : r.type === "blackpearl" ? "💎 Black Pearl" : "🏠 Local",
+    cuisine: r.cuisine,
+    avgPrice: `¥${r.avgPrice}`,
+    highlights: r.dishHighlights,
+    rating: r.rating,
+    address: r.address,
+    source: "local" as const,
+  }));
 
   if (params.budget) {
-    const budgetMap: Record<string, (r: { avgPrice: number; type: string }) => boolean> = {
-      low: r => r.avgPrice <= 80,
-      medium: r => r.avgPrice > 80 && r.avgPrice <= 300,
-      high: r => r.avgPrice > 300,
+    const budgetMap: Record<string, (r: { avgPrice: string }) => boolean> = {
+      low: r => parseInt(r.avgPrice.replace("¥", "")) <= 80,
+      medium: r => { const p = parseInt(r.avgPrice.replace("¥", "")); return p > 80 && p <= 300; },
+      high: r => parseInt(r.avgPrice.replace("¥", "")) > 300,
     };
     const filter = budgetMap[params.budget];
-    if (filter) restaurants = restaurants.filter(filter);
+    if (filter) staticRestaurants = staticRestaurants.filter(filter);
   }
 
   if (params.cuisine) {
     const cuisineLower = params.cuisine.toLowerCase();
-    const filtered = restaurants.filter(r =>
-      r.cuisine?.toLowerCase().includes(cuisineLower)
-    );
-    if (filtered.length > 0) restaurants = filtered;
+    const filtered = staticRestaurants.filter(r => r.cuisine?.toLowerCase().includes(cuisineLower));
+    if (filtered.length > 0) staticRestaurants = filtered;
   }
 
+  // Merge: Amap results first, then static
+  const merged = [
+    ...amapRestaurants.map(r => ({ ...r, source: "amap" as const })),
+    ...staticRestaurants,
+  ];
+
   return {
-    city: city.nameEn,
+    city: cityName,
     budget: params.budget || "all",
-    restaurants: restaurants.slice(0, 15).map(r => ({
-      name: r.name,
-      nameEn: r.nameEn,
-      type: r.type === "michelin" ? "⭐ Michelin" : r.type === "blackpearl" ? "💎 Black Pearl" : "🏠 Local",
-      cuisine: r.cuisine,
-      avgPrice: `¥${r.avgPrice}`,
-      highlights: r.dishHighlights,
-      rating: r.rating,
-      address: r.address,
-    })),
+    totalResults: merged.length,
+    restaurants: merged.slice(0, 15),
+    ...(amapRestaurants.length > 0 ? { note: "Real-time restaurant data from Amap (高德地图)" } : {}),
   };
 }
 
@@ -195,79 +312,63 @@ export function FoodSearch(params: { city: string; cuisine?: string; budget?: st
 // TransportSearch Tool — uses city transport data
 // ============================================
 
-export function TransportSearch(params: { from: string; to: string }): Record<string, unknown> {
+export async function TransportSearch(params: { from: string; to: string }): Promise<Record<string, unknown>> {
   const fromCity = findCity(params.from);
   const toCity = findCity(params.to);
+  const fromName = fromCity?.nameEn || params.from;
+  const toName = toCity?.nameEn || params.to;
 
-  // Try to find transport info from city data
+  // Try WebSearch for real-time transport info
+  let webResults: Array<{ title: string; snippet: string }> = [];
+  try {
+    const search = await executeWebSearch({
+      query: `train flight ${fromName} to ${toName} China schedule price 2026`,
+      maxResults: 5,
+    });
+    if (search.success) webResults = search.results;
+  } catch { /* fall through */ }
+
+  // Static data
   const results: Array<{ type: string; from: string; to: string; duration: string; price: string; tips: string }> = [];
 
-  // Search in transport.arrival for the destination city
   if (toCity?.transport?.arrival) {
     for (const t of toCity.transport.arrival) {
-      const fromLower = params.from.toLowerCase();
-      if (
-        (t.from || "").toLowerCase().includes(fromLower) ||
-        fromLower.includes((t.from || "").toLowerCase())
-      ) {
+      if ((t.from || "").toLowerCase().includes(params.from.toLowerCase()) ||
+          params.from.toLowerCase().includes((t.from || "").toLowerCase())) {
         results.push({
-          type: t.type,
-          from: t.from || params.from,
-          to: toCity.nameEn,
-          duration: t.duration || "Varies",
-          price: t.price || "Check booking platform",
-          tips: t.tips || "",
+          type: t.type, from: t.from || params.from, to: toName,
+          duration: t.duration || "Varies", price: t.price || "Check booking platform", tips: t.tips || "",
         });
       }
     }
   }
 
-  // Reverse: search in fromCity's transport.arrival
   if (results.length === 0 && fromCity?.transport?.arrival) {
     for (const t of fromCity.transport.arrival) {
-      const toLower = params.to.toLowerCase();
-      if (
-        (t.to || "").toLowerCase().includes(toLower) ||
-        toLower.includes((t.to || "").toLowerCase())
-      ) {
+      if ((t.to || "").toLowerCase().includes(params.to.toLowerCase()) ||
+          params.to.toLowerCase().includes((t.to || "").toLowerCase())) {
         results.push({
-          type: t.type,
-          from: fromCity.nameEn,
-          to: t.to || params.to,
-          duration: t.duration || "Varies",
-          price: t.price || "Check booking platform",
-          tips: t.tips || "",
+          type: t.type, from: fromName, to: t.to || params.to,
+          duration: t.duration || "Varies", price: t.price || "Check booking platform", tips: t.tips || "",
         });
       }
     }
   }
 
-  // Generic fallback if no specific route found
   if (results.length === 0) {
     results.push(
-      {
-        type: "train",
-        from: fromCity?.nameEn || params.from,
-        to: toCity?.nameEn || params.to,
-        duration: "Check 12306.cn",
-        price: "Varies by class",
-        tips: "Book via 12306 app or website. High-speed rail connects most major cities.",
-      },
-      {
-        type: "flight",
-        from: fromCity?.nameEn || params.from,
-        to: toCity?.nameEn || params.to,
-        duration: "Check Ctrip/Qunar",
-        price: "Varies by airline",
-        tips: "Check Ctrip, Qunar, or airline websites for domestic flights.",
-      },
+      { type: "train", from: fromName, to: toName, duration: "Check 12306.cn", price: "Varies by class",
+        tips: "Book via 12306 app or website. High-speed rail connects most major cities." },
+      { type: "flight", from: fromName, to: toName, duration: "Check Ctrip/Qunar", price: "Varies by airline",
+        tips: "Check Ctrip, Qunar, or airline websites for domestic flights." },
     );
   }
 
   return {
-    from: fromCity?.nameEn || params.from,
-    to: toCity?.nameEn || params.to,
+    from: fromName,
+    to: toName,
     options: results,
+    ...(webResults.length > 0 ? { webInfo: webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet })) } : {}),
   };
 }
 
@@ -381,13 +482,48 @@ export function TranslationHelper(params: { text: string; targetLang?: string; s
 // WeatherInfo Tool — uses city climate data
 // ============================================
 
-export function WeatherInfo(params: { city: string }): Record<string, unknown> {
+export async function WeatherInfo(params: { city: string }): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
+  const cityName = city?.nameEn || params.city;
+
+  // Try OpenMeteo API for real-time weather
+  try {
+    const coords = await getCityCoords(params.city);
+    if (coords) {
+      const weatherData = await fetchWeather(cityName, coords.lat, coords.lng);
+      if (weatherData.source === "api") {
+        return {
+          city: cityName,
+          cityZh: city?.name || cityName,
+          source: "real-time (OpenMeteo)",
+          current: {
+            temp: `${weatherData.current.temp}°C`,
+            feelsLike: `${weatherData.current.feelsLike}°C`,
+            humidity: `${weatherData.current.humidity}%`,
+            windSpeed: `${weatherData.current.windSpeed} km/h`,
+            description: weatherData.current.description,
+            main: weatherData.current.main,
+          },
+          forecast: weatherData.forecast.map(d => ({
+            date: d.date,
+            day: d.dayName,
+            tempRange: `${d.tempMin}°C ~ ${d.tempMax}°C`,
+            weather: d.description,
+            rainChance: `${Math.round(d.pop * 100)}%`,
+          })),
+          ...(city?.climate ? { climate: { type: city.climate.type, bestMonths: city.climate.bestMonths, tips: city.climate.tips } } : {}),
+        };
+      }
+    }
+  } catch { /* fall through to static */ }
+
+  // Fallback to static climate data
   if (!city) return { error: `City "${params.city}" not found.` };
 
   return {
     city: city.nameEn,
     cityZh: city.name,
+    source: "static (climate data)",
     climate: city.climate?.type || "Unknown",
     bestMonths: city.climate?.bestMonths || [],
     avgSummerTemp: city.climate?.avgSummerTemp || "N/A",
@@ -655,52 +791,51 @@ export function CrowdLevel(params: { city: string; attraction?: string; month?: 
 // NearbyPOI Tool
 // ============================================
 
-export function NearbyPOI(params: { city: string; type?: string; near?: string }): Record<string, unknown> {
+export async function NearbyPOI(params: { city: string; type?: string; near?: string }): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
-  if (!city) return { error: `City "${params.city}" not found.` };
-
+  const cityName = city?.nameEn || params.city;
   const type = params.type || "attraction";
 
+  // Try Amap POI search for real-time data
+  let amapResults: Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }> = [];
+  try {
+    const keywords = type === "restaurant" ? "美食" : type === "hotel" ? "酒店" : "景点";
+    const result = await executeAmapPOISearch({ keywords, city: cityName, type, pageSize: 5 });
+    if (result.success && result.pois.length > 0) {
+      amapResults = result.pois.map(p => ({
+        name: p.name, address: p.address, rating: p.rating, cost: p.cost, tel: p.tel,
+      }));
+    }
+  } catch { /* fall through */ }
+
+  // Static fallback
+  let staticResults: Array<Record<string, unknown>> = [];
   if (type === "restaurant") {
-    return {
-      city: city.nameEn,
-      type: "restaurant",
-      near: params.near || "City center",
-      results: (city.restaurants || []).slice(0, 5).map(r => ({
-        name: r.nameEn || r.name,
-        cuisine: r.cuisine,
-        avgPrice: `¥${r.avgPrice}`,
-        type: r.type,
-        rating: r.rating,
-      })),
-    };
+    staticResults = (city?.restaurants || []).slice(0, 5).map(r => ({
+      name: r.nameEn || r.name, cuisine: r.cuisine, avgPrice: `¥${r.avgPrice}`, type: r.type, rating: r.rating,
+    }));
+  } else if (type === "hotel") {
+    staticResults = (city?.hotels || []).slice(0, 5).map(h => ({
+      name: h.nameEn || h.name, budget: h.budget, priceRange: h.priceRange, rating: h.rating,
+    }));
+  } else {
+    staticResults = (city?.attractions || []).slice(0, 5).map(a => ({
+      name: a.nameEn || a.name, category: a.category, ticketPrice: a.ticketPrice || "Free", duration: a.recommendedVisitTime,
+    }));
   }
 
-  if (type === "hotel") {
-    return {
-      city: city.nameEn,
-      type: "hotel",
-      near: params.near || "City center",
-      results: (city.hotels || []).slice(0, 5).map(h => ({
-        name: h.nameEn || h.name,
-        budget: h.budget,
-        priceRange: h.priceRange,
-        rating: h.rating,
-      })),
-    };
-  }
+  const merged = [
+    ...amapResults.map(r => ({ ...r, source: "amap" as const })),
+    ...staticResults.map(r => ({ ...r, source: "local" as const })),
+  ];
 
-  // Default: attractions
   return {
-    city: city.nameEn,
-    type: "attraction",
+    city: cityName,
+    type,
     near: params.near || "City center",
-    results: (city.attractions || []).slice(0, 5).map(a => ({
-      name: a.nameEn || a.name,
-      category: a.category,
-      ticketPrice: a.ticketPrice || "Free",
-      duration: a.recommendedVisitTime,
-    })),
+    totalResults: merged.length,
+    results: merged.slice(0, 10),
+    ...(amapResults.length > 0 ? { note: "Real-time POI data from Amap (高德地图)" } : {}),
   };
 }
 
@@ -708,7 +843,7 @@ export function NearbyPOI(params: { city: string; type?: string; near?: string }
 // Tool Registry — maps MiniMax function names to implementations
 // ============================================
 
-export const TOOL_REGISTRY: Record<string, (params: Record<string, string>) => Record<string, unknown>> = {
+export const TOOL_REGISTRY: Record<string, (params: Record<string, string>) => Record<string, unknown> | Promise<Record<string, unknown>>> = {
   CitySearch: (p) => CitySearch({ city: p.city }),
   HotelSearch: (p) => HotelSearch({ city: p.city, budget: p.budget }),
   FoodSearch: (p) => FoodSearch({ city: p.city, cuisine: p.cuisine, budget: p.budget }),
@@ -730,13 +865,13 @@ export const TOOL_REGISTRY: Record<string, (params: Record<string, string>) => R
  * Execute a tool by name with the given arguments.
  * Used by MiniMaxClient to process tool calls.
  */
-export function executeTool(name: string, args: Record<string, string>): string {
+export async function executeTool(name: string, args: Record<string, string>): Promise<string> {
   const tool = TOOL_REGISTRY[name];
   if (!tool) {
     return JSON.stringify({ error: `Unknown tool: ${name}` });
   }
   try {
-    const result = tool(args);
+    const result = await tool(args);
     return JSON.stringify(result);
   } catch (error) {
     return JSON.stringify({ error: `Tool execution failed: ${String(error)}` });
