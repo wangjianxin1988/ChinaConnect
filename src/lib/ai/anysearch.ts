@@ -23,7 +23,7 @@ export interface SearchResponse {
 // AnySearch API Integration
 // ============================================
 
-const ANYSEARCH_API_KEY = typeof import.meta !== "undefined" ? import.meta.env?.VITE_ANYSEARCH_API_KEY : undefined;
+const ANYSEARCH_API_KEY = "as_sk_968a9530f19ae6e36d8ae099f1eb3b4c";
 const ANYSEARCH_BASE_URL = "https://api.anysearch.com/v1";
 
 /**
@@ -38,19 +38,20 @@ async function callAnySearchAPI(
   const startTime = Date.now();
 
   try {
-    const params = new URLSearchParams({
-      q: query,
-      format: "json",
-      max_results: String(options?.maxResults || 10),
-    });
-    if (options?.location) params.set("location", options.location);
+    const body: Record<string, unknown> = {
+      query,
+      max_results: options?.maxResults || 10,
+    };
+    if (options?.location) body.location = options.location;
 
-    const response = await fetch(`${ANYSEARCH_BASE_URL}/search?${params}`, {
+    const response = await fetch(`${ANYSEARCH_BASE_URL}/search`, {
+      method: "POST",
       headers: {
         Authorization: `Bearer ${ANYSEARCH_API_KEY}`,
         "Content-Type": "application/json",
       },
-      signal: AbortSignal.timeout(10000),
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(15000),
     });
 
     if (!response.ok) {
@@ -59,10 +60,13 @@ async function callAnySearchAPI(
 
     const data = await response.json();
 
-    const results: SearchResult[] = (data.results || []).map((r: { title: string; url: string; snippet: string; source?: string; published_date?: string }) => ({
+    // AnySearch API returns: { code, message, data: { results: [...], metadata } }
+    // Each result has: { title, url, content, score, quality_score }
+    const apiResults = data?.data?.results || data?.results || [];
+    const results: SearchResult[] = apiResults.map((r: { title: string; url: string; content?: string; snippet?: string; source?: string; published_date?: string }) => ({
       title: r.title,
       url: r.url,
-      snippet: r.snippet,
+      snippet: r.content || r.snippet || "",
       source: r.source,
       publishedDate: r.published_date,
     }));
