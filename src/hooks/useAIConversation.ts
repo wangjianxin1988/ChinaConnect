@@ -218,12 +218,19 @@ Remember:
 
       const finalCleanedResponse = await client.chatStream({
         messages: conversationMessages,
+        tools: ALL_TOOL_DEFINITIONS as unknown[],
         onChunk: (text: string) => {
           onChunk(text);
         },
         onComplete: (finalText: string) => {
           onChunk(finalText);
           onComplete();
+        },
+        onToolExecuting: (toolName: string, toolId: string) => {
+          console.log(`[AI Tool] Executing: ${toolName} (${toolId})`);
+        },
+        onToolResult: (toolName: string, toolId: string, result: string) => {
+          console.log(`[AI Tool] Result for ${toolName}:`, result.slice(0, 200));
         },
         onError: (error: Error) => {
           console.error("MiniMax error:", error);

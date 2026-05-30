@@ -7,6 +7,63 @@
  */
 
 // ---------------------------------------------------------------------------
+// Imports
+// ---------------------------------------------------------------------------
+
+import { executeTool } from "@/lib/ai/tools";
+import { executeWebSearch } from "@/lib/ai/search/web-search";
+import { executeAmapPOISearch } from "@/lib/ai/search/amap-poi";
+import { executeAmapRouteSearch } from "@/lib/ai/search/amap-route";
+
+// ---------------------------------------------------------------------------
+// Async Tool Execution — handles both local and search tools
+// ---------------------------------------------------------------------------
+
+/**
+ * Execute a tool by name, supporting both local (sync) and search (async) tools.
+ * Returns a JSON string result.
+ */
+async function executeToolAsync(name: string, args: Record<string, string>): Promise<string> {
+  try {
+    switch (name) {
+      case "WebSearch": {
+        const result = await executeWebSearch({
+          query: args.query || "",
+          location: args.location,
+          maxResults: args.maxResults ? Number(args.maxResults) : 5,
+        });
+        return JSON.stringify(result);
+      }
+      case "AmapPOISearch": {
+        const result = await executeAmapPOISearch({
+          keywords: args.keywords || "",
+          city: args.city,
+          type: args.type,
+          page: args.page ? Number(args.page) : 1,
+          pageSize: args.pageSize ? Number(args.pageSize) : 10,
+        });
+        return JSON.stringify(result);
+      }
+      case "AmapRouteSearch": {
+        const result = await executeAmapRouteSearch({
+          origin: args.origin || "",
+          destination: args.destination || "",
+          mode: (args.mode as "driving" | "transit" | "walking" | "riding") || "driving",
+          city: args.city,
+          strategy: args.strategy ? Number(args.strategy) : undefined,
+        });
+        return JSON.stringify(result);
+      }
+      default:
+        // Local tools (sync)
+        return executeTool(name, args);
+    }
+  } catch (error) {
+    return JSON.stringify({ error: `Tool execution failed: ${String(error)}` });
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
 
@@ -120,6 +177,16 @@ export function trimMessages(messages: MiniMaxMessage[]): MiniMaxMessage[] {
 interface SSEChunk {
   content?: string;
   error?: string;
+  tool_calls?: Array<{
+    index: number;
+    id?: string;
+    type?: string;
+    function?: {
+      name?: string;
+      arguments?: string;
+    };
+  }>;
+  finish_reason?: string;
 }
 
 /**
@@ -156,9 +223,11 @@ async function* parseSSEStream(
         // MiniMax uses OpenAI-compatible format: choices[0].delta.content
         // With reasoning_split=true, thinking goes to reasoning_details, content is clean
         const content = event.choices?.[0]?.delta?.content ?? event.content;
+        const toolCalls = event.choices?.[0]?.delta?.tool_calls;
+        const finishReason = event.choices?.[0]?.finish_reason;
         const error = event.error;
-        if (content || error) {
-          yield { content, error };
+        if (content || error || toolCalls || finishReason) {
+          yield { content, error, tool_calls: toolCalls, finish_reason: finishReason };
         }
       } catch {
         // Skip malformed JSON lines
@@ -173,10 +242,12 @@ async function* parseSSEStream(
       try {
         const event = JSON.parse(dataStr);
         const content = event.choices?.[0]?.delta?.content ?? event.content;
+        const toolCalls = event.choices?.[0]?.delta?.tool_calls;
+        const finishReason = event.choices?.[0]?.finish_reason;
         const error = event.error;
-        if (content || error) {
-          yield { content, error };
-        };
+        if (content || error || toolCalls || finishReason) {
+          yield { content, error, tool_calls: toolCalls, finish_reason: finishReason };
+        }
       } catch {
         // Skip malformed
       }
@@ -252,12 +323,11 @@ export class MiniMaxClient {
   }
 
   /**
-   * Stream a chat message to /api/chat with SSE response.
+   * Stream a chat message to MiniMax API with SSE response and tool calling loop.
    * Returns the final cleaned response text.
    */
   async chatStream(options: ChatStreamOptions): Promise<string> {
-    const { messages, onChunk, onComplete, onError, signal } = options;
-    const { tools } = options as ChatStreamOptions & { tools?: unknown[] };
+    const { messages, tools, onChunk, onComplete, onError, signal, onToolExecuting, onToolResult } = options;
 
     // Cancel any previous in-flight request
     this.cancel();
@@ -279,92 +349,133 @@ export class MiniMaxClient {
 
     try {
       const trimmed = trimMessages(messages);
+      // Working copy of messages that grows with tool_calls and tool results
+      const currentMessages: MiniMaxMessage[] = [...trimmed];
+      const MAX_TOOL_ITERATIONS = 5;
 
-      const res = await fetchWithRetry(
-        `${this.baseUrl}/chat/completions`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${this.apiKey}`,
-          },
-          body: JSON.stringify({
-            messages: trimmed,
-            stream: true,
-            reasoning_split: true,
-            model: "MiniMax-M2.7-highspeed",
-          }),
-        },
-        3,
-        controller.signal,
-      );
-
-      if (!res.ok) {
-        let errorMsg = `API error: ${res.status}`;
-        try {
-          const errBody = await res.json();
-          errorMsg = errBody.error || errorMsg;
-        } catch {
-          // Use default error message
-        }
-        throw new Error(errorMsg);
-      }
-
-      const reader = res.body?.getReader();
-      if (!reader) {
-        throw new Error("No response body");
-      }
-
-      // Parse SSE stream
-      for await (const chunk of parseSSEStream(reader)) {
+      for (let iteration = 0; iteration <= MAX_TOOL_ITERATIONS; iteration++) {
         if (controller.signal.aborted) break;
 
-        // Handle structured events from server proxy
-        const event = chunk as unknown as { type?: string; content?: string; error?: string; tool_name?: string; tool_id?: string; result?: string };
+        const res = await fetchWithRetry(
+          `${this.baseUrl}/chat/completions`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${this.apiKey}`,
+            },
+            body: JSON.stringify({
+              messages: currentMessages,
+              stream: true,
+              reasoning_split: true,
+              model: "MiniMax-M2.7-highspeed",
+              ...(tools && (tools as unknown[]).length > 0 ? { tools } : {}),
+            }),
+          },
+          3,
+          controller.signal,
+        );
 
-        if (event.error) {
-          throw new Error(event.error);
+        if (!res.ok) {
+          let errorMsg = `API error: ${res.status}`;
+          try {
+            const errBody = await res.json();
+            errorMsg = errBody.error || errorMsg;
+          } catch {
+            // Use default error message
+          }
+          throw new Error(errorMsg);
         }
 
-        switch (event.type) {
-          case "tool_executing":
-            // Notify UI that a tool is being executed
-            if (options.onToolExecuting && event.tool_name && event.tool_id) {
-              options.onToolExecuting(event.tool_name, event.tool_id);
-            }
-            break;
+        const reader = res.body?.getReader();
+        if (!reader) {
+          throw new Error("No response body");
+        }
 
-          case "tool_result":
-            // Notify UI of tool result
-            if (options.onToolResult && event.tool_name && event.tool_id && event.result) {
-              options.onToolResult(event.tool_name, event.tool_id, event.result);
-            }
-            break;
+        // Parse SSE stream, collecting content and tool_calls
+        let iterationContent = "";
+        const toolCallsMap = new Map<number, { id: string; name: string; arguments: string }>();
 
-          case "content":
-            // Content chunk from server
-            if (event.content) {
-              fullResponse += event.content;
-              const cleaned = cleanModelResponse(fullResponse);
-              onChunk(cleaned);
-            }
-            break;
+        for await (const chunk of parseSSEStream(reader)) {
+          if (controller.signal.aborted) break;
 
-          case "done":
-            // Final message
-            if (event.content) {
-              fullResponse = event.content;
-            }
-            break;
+          if (chunk.error) {
+            throw new Error(chunk.error);
+          }
 
-          default:
-            // Legacy format: direct content
-            if (chunk.content) {
-              fullResponse += chunk.content;
-              const cleaned = cleanModelResponse(fullResponse);
-              onChunk(cleaned);
+          // Handle text content
+          if (chunk.content) {
+            fullResponse += chunk.content;
+            iterationContent += chunk.content;
+            const cleaned = cleanModelResponse(fullResponse);
+            onChunk(cleaned);
+          }
+
+          // Accumulate tool calls from streaming chunks
+          if (chunk.tool_calls) {
+            for (const tc of chunk.tool_calls) {
+              if (!toolCallsMap.has(tc.index)) {
+                toolCallsMap.set(tc.index, { id: "", name: "", arguments: "" });
+              }
+              const acc = toolCallsMap.get(tc.index)!;
+              if (tc.id) acc.id = tc.id;
+              if (tc.function?.name) acc.name = tc.function.name;
+              if (tc.function?.arguments) acc.arguments += tc.function.arguments;
             }
-            break;
+          }
+        }
+
+        // If no tool calls received, the response is complete
+        if (toolCallsMap.size === 0) break;
+
+        // --- Tool execution loop ---
+        const toolCallsArray = Array.from(toolCallsMap.values());
+
+        // Build the assistant message with tool_calls for conversation history
+        const assistantToolCalls = toolCallsArray.map((tc, i) => ({
+          id: tc.id || `call_${Date.now()}_${i}`,
+          type: "function" as const,
+          function: {
+            name: tc.name,
+            arguments: tc.arguments,
+          },
+        }));
+
+        currentMessages.push({
+          role: "assistant",
+          content: iterationContent || "",
+          tool_calls: assistantToolCalls,
+        });
+
+        // Execute each tool and add results to conversation
+        for (let i = 0; i < toolCallsArray.length; i++) {
+          const tc = toolCallsArray[i];
+          const toolCallId = assistantToolCalls[i].id;
+
+          // Parse tool arguments
+          let toolArgs: Record<string, string> = {};
+          try {
+            toolArgs = JSON.parse(tc.arguments);
+          } catch {
+            // If arguments can't be parsed, try to handle gracefully
+            console.warn(`Failed to parse tool arguments for ${tc.name}:`, tc.arguments);
+          }
+
+          // Notify UI that tool is executing
+          onToolExecuting?.(tc.name, toolCallId);
+
+          // Execute the tool (async — handles both local and search tools)
+          const result = await executeToolAsync(tc.name, toolArgs);
+
+          // Notify UI of tool result
+          onToolResult?.(tc.name, toolCallId, result);
+
+          // Add tool result message to conversation
+          currentMessages.push({
+            role: "tool",
+            tool_call_id: toolCallId,
+            content: result,
+          });
         }
       }
 
