@@ -1,0 +1,372 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+// Auth is handled by middleware (SSR) and client-side JS (static).
+// The account page renders a loading state and checks auth via client JS.
+---
+
+<BaseLayout title="My Account - ChinaConnect">
+  <main class="min-h-screen bg-gray-50 py-8">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <!-- Loading state -->
+      <div id="account-loading" class="flex items-center justify-center py-20">
+        <div class="text-center">
+          <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p class="text-gray-500">Loading your account...</p>
+        </div>
+      </div>
+
+      <!-- Not authenticated state -->
+      <div id="account-unauthenticated" class="hidden text-center py-20">
+        <div class="text-6xl mb-4">🔒</div>
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">Sign in required</h2>
+        <p class="text-gray-500 mb-6">Please sign in to view your account.</p>
+        <a href="/auth/login" class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+          Sign In
+        </a>
+      </div>
+
+      <!-- Account content -->
+      <div id="account-content" class="hidden">
+        <!-- Header -->
+        <div class="bg-white rounded-xl shadow-sm border p-6 mb-6">
+          <div class="flex items-center gap-4">
+            <div id="user-avatar" class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-2xl font-bold">
+              ?
+            </div>
+            <div class="flex-1">
+              <h1 id="user-display-name" class="text-2xl font-bold text-gray-900">User</h1>
+              <p id="user-email" class="text-gray-500">user@example.com</p>
+              <div class="flex items-center gap-3 mt-1">
+                <span id="user-level" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Explorer</span>
+                <span id="user-points" class="text-sm text-gray-500">0 points</span>
+              </div>
+            </div>
+            <a href="/profile" class="text-sm text-blue-600 hover:underline">Edit Profile →</a>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+          <div class="bg-white rounded-xl shadow-sm border p-4 text-center">
+            <div id="stat-tier" class="text-2xl mb-1">🆓</div>
+            <div class="text-sm font-medium text-gray-900" id="stat-tier-name">Free</div>
+            <div class="text-xs text-gray-500">Membership</div>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm border p-4 text-center">
+            <div class="text-2xl mb-1">💰</div>
+            <div class="text-sm font-medium text-gray-900" id="stat-balance">¥0.00</div>
+            <div class="text-xs text-gray-500">Wallet Balance</div>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm border p-4 text-center">
+            <div class="text-2xl mb-1">🤖</div>
+            <div class="text-sm font-medium text-gray-900" id="stat-ai-usage">0 / 10</div>
+            <div class="text-xs text-gray-500">AI Requests Today</div>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm border p-4 text-center">
+            <div class="text-2xl mb-1">🗺️</div>
+            <div class="text-sm font-medium text-gray-900" id="stat-routes">0</div>
+            <div class="text-xs text-gray-500">Saved Routes</div>
+          </div>
+        </div>
+
+        <!-- Membership Details -->
+        <div class="bg-white rounded-xl shadow-sm border p-6 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold text-gray-900">Membership</h2>
+            <a href="/pricing" class="text-sm text-blue-600 hover:underline">Upgrade →</a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <div class="text-sm text-gray-500">Daily AI Requests</div>
+              <div class="mt-1">
+                <div class="flex items-center gap-2">
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div id="ai-daily-bar" class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                  </div>
+                  <span id="ai-daily-text" class="text-sm text-gray-600">0/10</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-sm text-gray-500">Saved Routes</div>
+              <div class="mt-1">
+                <div class="flex items-center gap-2">
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div id="routes-bar" class="bg-purple-600 h-2 rounded-full" style="width: 0%"></div>
+                  </div>
+                  <span id="routes-text" class="text-sm text-gray-600">0/5</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-sm text-gray-500">Favorites</div>
+              <div class="mt-1">
+                <div class="flex items-center gap-2">
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div id="favorites-bar" class="bg-pink-600 h-2 rounded-full" style="width: 0%"></div>
+                  </div>
+                  <span id="favorites-text" class="text-sm text-gray-600">0/50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two column layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Saved Routes -->
+          <div class="bg-white rounded-xl shadow-sm border p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-4">Saved Routes</h2>
+            <div id="routes-list" class="space-y-3">
+              <p class="text-sm text-gray-500">No saved routes yet.</p>
+            </div>
+          </div>
+
+          <!-- Favorites -->
+          <div class="bg-white rounded-xl shadow-sm border p-6">
+            <h2 class="text-lg font-semibold text-gray-900 mb-4">Favorites</h2>
+            <div id="favorites-list" class="space-y-3">
+              <p class="text-sm text-gray-500">No favorites yet.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <div class="bg-white rounded-xl shadow-sm border p-6 mt-6">
+          <h2 class="text-lg font-semibold text-gray-900 mb-4">Recent Orders</h2>
+          <div id="orders-list">
+            <p class="text-sm text-gray-500">No orders yet.</p>
+          </div>
+        </div>
+
+        <!-- Sign Out -->
+        <div class="mt-6 text-center">
+          <button
+            id="signout-btn"
+            class="text-sm text-red-600 hover:text-red-700 hover:underline"
+          >
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  import {
+    getCurrentUser,
+    getUserProfile,
+    getUserDashboard,
+    getUserWallet,
+    getUserOrders,
+    getUserRoutes,
+    getUserFavorites,
+    signOut,
+    onAuthStateChange,
+  } from '@/lib/auth/supabase-auth';
+
+  const loadingEl = document.getElementById('account-loading')!;
+  const unauthEl = document.getElementById('account-unauthenticated')!;
+  const contentEl = document.getElementById('account-content')!;
+
+  function showSection(section: 'loading' | 'unauth' | 'content') {
+    loadingEl.classList.toggle('hidden', section !== 'loading');
+    unauthEl.classList.toggle('hidden', section !== 'unauth');
+    contentEl.classList.toggle('hidden', section !== 'content');
+  }
+
+  function formatCurrency(amount: number): string {
+    return `¥${Number(amount).toFixed(2)}`;
+  }
+
+  function renderRoutes(routes: any[]) {
+    const container = document.getElementById('routes-list')!;
+    if (!routes || routes.length === 0) {
+      container.innerHTML = '<p class="text-sm text-gray-500">No saved routes yet. Start a conversation with AI to create routes!</p>';
+      return;
+    }
+    container.innerHTML = routes.map(r => `
+      <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+        <span class="text-xl">🗺️</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-medium text-gray-900 truncate">${r.title || 'Untitled Route'}</div>
+          <div class="text-xs text-gray-500">${r.destination_city || ''} · ${new Date(r.created_at).toLocaleDateString()}</div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function renderFavorites(favorites: any[]) {
+    const container = document.getElementById('favorites-list')!;
+    if (!favorites || favorites.length === 0) {
+      container.innerHTML = '<p class="text-sm text-gray-500">No favorites yet. Browse cities and restaurants to add favorites!</p>';
+      return;
+    }
+    container.innerHTML = favorites.map(f => `
+      <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+        <span class="text-xl">⭐</span>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-medium text-gray-900 truncate">${f.title || f.item_type || 'Saved Item'}</div>
+          <div class="text-xs text-gray-500">${f.item_type || ''} · ${new Date(f.created_at).toLocaleDateString()}</div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function renderOrders(orders: any[]) {
+    const container = document.getElementById('orders-list')!;
+    if (!orders || orders.length === 0) {
+      container.innerHTML = '<p class="text-sm text-gray-500">No orders yet.</p>';
+      return;
+    }
+    container.innerHTML = `
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-gray-200">
+              <th class="text-left py-2 text-gray-500 font-medium">Order #</th>
+              <th class="text-left py-2 text-gray-500 font-medium">Type</th>
+              <th class="text-left py-2 text-gray-500 font-medium">Amount</th>
+              <th class="text-left py-2 text-gray-500 font-medium">Status</th>
+              <th class="text-left py-2 text-gray-500 font-medium">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${orders.map(o => `
+              <tr class="border-b border-gray-100">
+                <td class="py-2 font-mono text-xs">${o.order_number || o.id.slice(0, 8)}</td>
+                <td class="py-2">${o.order_type || '-'}</td>
+                <td class="py-2">${formatCurrency(o.final_amount || o.amount || 0)}</td>
+                <td class="py-2">
+                  <span class="px-2 py-0.5 rounded-full text-xs font-medium ${
+                    o.status === 'paid' ? 'bg-green-100 text-green-700' :
+                    o.status === 'pending_payment' ? 'bg-yellow-100 text-yellow-700' :
+                    'bg-gray-100 text-gray-600'
+                  }">${o.status || 'unknown'}</span>
+                </td>
+                <td class="py-2 text-gray-500">${new Date(o.created_at).toLocaleDateString()}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  async function loadAccount() {
+    showSection('loading');
+
+    const user = await getCurrentUser();
+    if (!user) {
+      showSection('unauth');
+      return;
+    }
+
+    // Fetch all data in parallel
+    const [profileRes, dashboardRes, walletRes, ordersRes, routesRes, favoritesRes] = await Promise.all([
+      getUserProfile(user.id),
+      getUserDashboard(user.id),
+      getUserWallet(user.id),
+      getUserOrders(user.id, 5),
+      getUserRoutes(user.id, 5),
+      getUserFavorites(user.id, 5),
+    ]);
+
+    const profile = profileRes.profile;
+    const dashboard = dashboardRes.dashboard;
+    const wallet = walletRes.wallet;
+
+    // Populate header
+    const avatarEl = document.getElementById('user-avatar')!;
+    const nameEl = document.getElementById('user-display-name')!;
+    const emailEl = document.getElementById('user-email')!;
+    const levelEl = document.getElementById('user-level')!;
+    const pointsEl = document.getElementById('user-points')!;
+
+    const displayName = profile?.display_name || user.email?.split('@')[0] || 'User';
+    nameEl.textContent = displayName;
+    emailEl.textContent = user.email || '';
+
+    if (profile?.avatar_url) {
+      avatarEl.innerHTML = `<img src="${profile.avatar_url}" alt="${displayName}" class="w-16 h-16 rounded-full object-cover" />`;
+    } else {
+      avatarEl.textContent = displayName.charAt(0).toUpperCase();
+    }
+
+    if (profile?.level) {
+      levelEl.textContent = profile.level;
+    }
+    if (profile?.points !== undefined) {
+      pointsEl.textContent = `${profile.points} points`;
+    }
+
+    // Populate stats
+    const tierIcon = document.getElementById('stat-tier')!;
+    const tierName = document.getElementById('stat-tier-name')!;
+    const balance = document.getElementById('stat-balance')!;
+    const aiUsage = document.getElementById('stat-ai-usage')!;
+    const routesCount = document.getElementById('stat-routes')!;
+
+    if (dashboard) {
+      const tier = (dashboard as any).tier_slug || 'free';
+      const tierIcons: Record<string, string> = { free: '🆓', pro: '⭐', enterprise: '💎' };
+      tierIcon.textContent = tierIcons[tier] || '🆓';
+      tierName.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
+
+      const aiUsed = (dashboard as any).ai_used_today || 0;
+      const aiLimit = (dashboard as any).ai_daily_limit || 10;
+      aiUsage.textContent = aiLimit === -1 ? `${aiUsed} / ∞` : `${aiUsed} / ${aiLimit}`;
+
+      routesCount.textContent = String((dashboard as any).saved_routes || 0);
+
+      // Usage bars
+      const aiDailyBar = document.getElementById('ai-daily-bar')!;
+      const aiDailyText = document.getElementById('ai-daily-text')!;
+      if (aiLimit === -1) {
+        aiDailyBar.style.width = '5%';
+        aiDailyText.textContent = `${aiUsed} / ∞`;
+      } else {
+        const pct = Math.min(100, (aiUsed / aiLimit) * 100);
+        aiDailyBar.style.width = `${pct}%`;
+        aiDailyText.textContent = `${aiUsed}/${aiLimit}`;
+      }
+
+      const savedRoutes = (dashboard as any).saved_routes || 0;
+      const maxRoutes = 5; // Free tier default
+      const routesBar = document.getElementById('routes-bar')!;
+      const routesText = document.getElementById('routes-text')!;
+      routesBar.style.width = `${Math.min(100, (savedRoutes / maxRoutes) * 100)}%`;
+      routesText.textContent = `${savedRoutes}/${maxRoutes}`;
+
+      const favCount = (dashboard as any).favorites_count || 0;
+      const maxFav = 50;
+      const favBar = document.getElementById('favorites-bar')!;
+      const favText = document.getElementById('favorites-text')!;
+      favBar.style.width = `${Math.min(100, (favCount / maxFav) * 100)}%`;
+      favText.textContent = `${favCount}/${maxFav}`;
+    }
+
+    // Wallet balance
+    if (wallet) {
+      balance.textContent = formatCurrency((wallet as any).balance || 0);
+    }
+
+    // Render lists
+    renderRoutes(routesRes.routes || []);
+    renderFavorites(favoritesRes.favorites || []);
+    renderOrders(ordersRes.orders || []);
+
+    showSection('content');
+  }
+
+  // Load on init
+  loadAccount();
+
+  // Sign out
+  document.getElementById('signout-btn')?.addEventListener('click', async () => {
+    await signOut();
+    window.location.href = '/';
+  });
+</script>

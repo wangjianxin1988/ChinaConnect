@@ -51,8 +51,8 @@ function loadAmapAPI(): Promise<void> {
       return;
     }
 
-    // Get API key from environment
-    const key = import.meta.env.PUBLIC_AMAP_KEY;
+    // Get API key — hardcoded as fallback (Vite tree-shakes import.meta.env with optional chaining)
+    const key = import.meta.env.PUBLIC_AMAP_KEY || "013d6b96800d73eeb66dcbf3dd3b068a";
     if (!key) {
       reject(new Error("PUBLIC_AMAP_KEY not configured. Get a key at https://console.amap.com/dev/key/app"));
       return;
