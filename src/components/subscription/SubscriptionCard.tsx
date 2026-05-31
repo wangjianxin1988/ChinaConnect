@@ -21,14 +21,34 @@ const TIER_COLORS: Record<SubscriptionTier, { bg: string; text: string; border: 
 
 export const SubscriptionCard: React.FC<SubscriptionCardProps> = ({ language = 'en', compact = false }) => {
   const tier = getCurrentTier();
-  const remaining = getRemainingRequests();
-  const used = getUsageCount();
-  const max = getMaxRequests();
-  const percentage = getUsagePercentage();
+  const [remaining, setRemaining] = React.useState(getRemainingRequests());
+  const [used, setUsed] = React.useState(getUsageCount());
+  const [max, setMax] = React.useState(getMaxRequests());
+  const [percentage, setPercentage] = React.useState(getUsagePercentage());
   const colors = TIER_COLORS[tier];
   const tierName = TIER_NAMES[tier][language];
 
   const isUnlimited = max === -1;
+
+  // Re-render when localStorage changes (usage increment)
+  React.useEffect(() => {
+    const refresh = () => {
+      setRemaining(getRemainingRequests());
+      setUsed(getUsageCount());
+      setMax(getMaxRequests());
+      setPercentage(getUsagePercentage());
+    };
+
+    // Listen for custom event dispatched by incrementUsage
+    window.addEventListener('ai-usage-updated', refresh);
+    // Also listen for storage events (cross-tab)
+    window.addEventListener('storage', refresh);
+
+    return () => {
+      window.removeEventListener('ai-usage-updated', refresh);
+      window.removeEventListener('storage', refresh);
+    };
+  }, []);
 
   if (compact) {
     return (
