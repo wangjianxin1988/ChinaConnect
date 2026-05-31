@@ -297,17 +297,27 @@ const translationsJson = JSON.stringify(translations);
             <script is:inline>
               (async function() {
                 try {
-                  const { createClient } = await import('/_astro/supabase.BzczbnvH.js');
-                  const supabaseUrl = 'https://xyvuqbpwrhkukjgzveyc.supabase.co';
-                  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh5dnVxYndydGhra3Vnanp2ZXljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgzNjcxNDAsImV4cCI6MjA2Mzk0MzE0MH0.RS6MMOEZTxP3F82rmRy8XlL8k4dLLe4a7j4aL-oZRA';
-                  const supabase = createClient(supabaseUrl, supabaseKey);
-                  const { data: { session } } = await supabase.auth.getSession();
-                  const container = document.getElementById('auth-nav-container');
+                  // Use the pre-created Supabase client from the config module (avoids creating a duplicate GoTrueClient)
+                  const mod = await import('/_astro/supabase.BzczbnvH.js');
+                  const supabase = mod.s || mod.default;
+                  if (!supabase || !supabase.auth) {
+                    // Fallback: show login link if client unavailable
+                    var c = document.getElementById('auth-nav-container');
+                    if (c) c.innerHTML = '<a href="/auth/login" class="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>Login</a>';
+                    return;
+                  }
+                  var timeout = new Promise(function(_, reject) { setTimeout(function() { reject(new Error('timeout')); }, 5000); });
+                  var result = await Promise.race([
+                    supabase.auth.getSession().then(function(r) { return r; }),
+                    timeout
+                  ]);
+                  var session = result && result.data ? result.data.session : null;
+                  var container = document.getElementById('auth-nav-container');
                   if (!container) return;
                   if (session && session.user) {
-                    const user = session.user;
-                    const name = user.user_metadata?.full_name || user.user_metadata?.name || user.email?.split('@')[0] || 'User';
-                    const avatar = user.user_metadata?.avatar_url || user.user_metadata?.picture;
+                    var user = session.user;
+                    var name = user.user_metadata && (user.user_metadata.full_name || user.user_metadata.name) || (user.email ? user.email.split('@')[0] : 'User');
+                    var avatar = user.user_metadata && (user.user_metadata.avatar_url || user.user_metadata.picture);
                     container.innerHTML = '<a href="/account" class="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition-colors">'
                       + (avatar ? '<img src="' + avatar + '" class="w-7 h-7 rounded-full" alt="">' : '<div class="w-7 h-7 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-bold">' + name.charAt(0).toUpperCase() + '</div>')
                       + '<span class="text-sm font-medium text-gray-700 hidden sm:inline">' + name + '</span></a>';
@@ -316,7 +326,11 @@ const translationsJson = JSON.stringify(translations);
                       + '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>'
                       + 'Login</a>';
                   }
-                } catch(e) { console.error('Auth nav error:', e); }
+                } catch(e) {
+                  // On any error (timeout, import failure, etc.), show login link
+                  var c2 = document.getElementById('auth-nav-container');
+                  if (c2) c2.innerHTML = '<a href="/auth/login" class="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>Login</a>';
+                }
               })();
             </script>
             <!-- Language Switcher -->
