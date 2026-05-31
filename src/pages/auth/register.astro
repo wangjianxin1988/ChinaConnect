@@ -169,24 +169,45 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     submitBtn.disabled = true;
     submitBtn.textContent = 'Creating account...';
 
-    const { user, session, error } = await signUpWithEmail(email, password, username);
+    // Add 15s timeout to prevent infinite loading
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('Registration timed out. Please try again.')), 15000)
+    );
 
-    if (error) {
-      showError(error.message || 'Registration failed');
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Create Account';
-      return;
-    }
+    try {
+      const result = await Promise.race([
+        signUpWithEmail(email, password, username),
+        timeoutPromise,
+      ]) as Awaited<ReturnType<typeof signUpWithEmail>>;
 
-    if (user) {
-      if (session) {
+      const { user, session, error } = result;
+
+      if (error) {
+        showError(error.message || 'Registration failed');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Create Account';
+        return;
+      }
+
+      if (session && user) {
         // Auto-confirmed — redirect to account
         window.location.href = '/account';
+        return;
+      }
+
+      if (user) {
+        // Email confirmation required — user created but no session yet
+        showSuccess('Account created! Please check your email to confirm your account, then sign in.');
+        submitBtn.textContent = 'Account Created ✓';
       } else {
-        // Email confirmation required
+        // Edge case: user is null but no error — likely email confirmation pending
         showSuccess('Account created! Please check your email to confirm your account, then sign in.');
         submitBtn.textContent = 'Account Created ✓';
       }
+    } catch (err: any) {
+      showError(err?.message || 'Registration failed. Please try again.');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Create Account';
     }
   });
 

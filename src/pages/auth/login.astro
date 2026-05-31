@@ -116,17 +116,35 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     const email = formData.get('email') as string;
     const password = formData.get('password') as string;
 
-    const { user, error } = await signInWithEmail(email, password);
+    // Add 15s timeout to prevent infinite loading
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('Sign in timed out. Please try again.')), 15000)
+    );
 
-    if (error) {
-      showError(error.message || 'Invalid email or password');
+    try {
+      const { user, error } = await Promise.race([
+        signInWithEmail(email, password),
+        timeoutPromise,
+      ]) as Awaited<ReturnType<typeof signInWithEmail>>;
+
+      if (error) {
+        showError(error.message || 'Invalid email or password');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Sign In';
+        return;
+      }
+
+      if (user) {
+        window.location.href = '/account';
+      } else {
+        showError('Sign in failed. Please check your credentials.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Sign In';
+      }
+    } catch (err: any) {
+      showError(err?.message || 'Sign in failed. Please try again.');
       submitBtn.disabled = false;
       submitBtn.textContent = 'Sign In';
-      return;
-    }
-
-    if (user) {
-      window.location.href = '/account';
     }
   });
 
