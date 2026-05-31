@@ -18,7 +18,7 @@ interface Props {
   lang?: Language;
 }
 
-const SITE_URL = "https://chinaconnect.com";
+const SITE_URL = "https://chinaconnect.xyz";
 const SITE_NAME = "ChinaConnect";
 
 const {
@@ -35,7 +35,8 @@ const pageMeta: SEOPageMeta = {
   ...meta,
 };
 
-const canonicalUrl = meta.canonicalUrl || Astro.url.href;
+// Build canonical URL using SITE_URL to avoid localhost in production
+const canonicalUrl = meta.canonicalUrl || `${SITE_URL}${Astro.url.pathname}`;
 const fullOgImage = ogImage || `${SITE_URL}/og-image.png`;
 const pathname = Astro.url.pathname;
 

@@ -5,7 +5,8 @@
 
 import type { Database, UserLevel } from "@/types/database";
 import type { AuthProvider, AuthState, SignUpData, User, UserProfile } from "@/types/user";
-import { type AuthError as SupabaseAuthError, createClient } from "@supabase/supabase-js";
+import { type AuthError as SupabaseAuthError } from "@supabase/supabase-js";
+import { supabase } from "@/supabase/config";
 
 // ============================================
 // Demo Mode Configuration
@@ -90,23 +91,10 @@ function isDemoSessionActive(): boolean {
 }
 
 // ============================================
-// Auth Client
+// Auth Client - Use the single Supabase instance
 // ============================================
 
-const authUrl = import.meta.env.PUBLIC_SUPABASE_URL;
-const authKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
-
-export const authClient = createClient<Database>(
-  authUrl || "https://placeholder.supabase.co",
-  authKey || "placeholder",
-  {
-    auth: {
-      autoRefreshToken: !DEMO_MODE,
-      persistSession: !DEMO_MODE,
-      detectSessionInUrl: !DEMO_MODE,
-    },
-  },
-);
+export const authClient = supabase;
 
 // ============================================
 // Auth Response Types

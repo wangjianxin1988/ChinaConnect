@@ -17,14 +17,14 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
   // Handle OAuth callback
   supabase.auth.onAuthStateChange((event, session) => {
     if (event === 'SIGNED_IN' && session) {
-      window.location.href = '/';
+      window.location.href = '/account';
     }
   });
 
   // Also try to get the session immediately in case the event already fired
   supabase.auth.getSession().then(({ data: { session } }) => {
     if (session) {
-      window.location.href = '/';
+      window.location.href = '/account';
     }
   });
 </script>
