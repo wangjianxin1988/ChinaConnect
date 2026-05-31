@@ -169,15 +169,27 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
       category: a.category,
       ticketPrice: a.ticketPrice || "Free",
       duration: a.recommendedVisitTime,
+      links: {
+        "🗺️ Navigate on Amap": `https://uri.amap.com/search?keyword=${encodeURIComponent(a.nameEn || a.name)}&city=${encodeURIComponent(city.nameEn)}&callnative=1`,
+      },
     })),
     topRestaurants: (city.restaurants || []).slice(0, 5).map(r => ({
       name: r.nameEn || r.name,
       cuisine: r.cuisine,
       type: r.type,
       avgPrice: `¥${r.avgPrice}`,
+      links: {
+        "🗺️ Navigate on Amap": `https://uri.amap.com/search?keyword=${encodeURIComponent(r.nameEn || r.name)}&city=${encodeURIComponent(city.nameEn)}&callnative=1`,
+        "⭐ Reviews on Dianping": `https://www.dianping.com/search/keyword/0/0_${encodeURIComponent(r.nameEn || r.name)}`,
+      },
     })),
     bestMonths: city.climate?.bestMonths || [],
     transport: city.transport,
+    cityLinks: {
+      "🗺️ Amap City Guide": `https://uri.amap.com/search?keyword=${encodeURIComponent(city.nameEn)}&city=${encodeURIComponent(city.nameEn)}&callnative=1`,
+      "📱 Download Amap App": "https://apps.apple.com/app/apple-store/id461703208",
+    },
+    dataSource: webResults.length > 0 ? "Real-time from WebSearch + Local database" : "Local database",
     ...(webResults.length > 0 ? { webHighlights: webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet })) } : {}),
   };
 }
@@ -233,11 +245,23 @@ export async function HotelSearch(params: { city: string; budget?: string }): Pr
     ...staticHotels,
   ];
 
+  // Generate links for each hotel
+  const hotelsWithLinks = merged.slice(0, 10).map(h => ({
+    ...h,
+    links: {
+      "🗺️ Navigate on Amap": `https://uri.amap.com/search?keyword=${encodeURIComponent(h.name)}&city=${encodeURIComponent(cityName)}&callnative=1`,
+      "📱 Book on Trip.com": `https://hotels.ctrip.com/hotels/list?city=${encodeURIComponent(cityName.toLowerCase())}`,
+      "🌐 Book on Booking.com": `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(cityName)}&lang=en-us`,
+      "🏨 Book on Agoda": `https://www.agoda.com/search?city=${encodeURIComponent(cityName)}&lang=en-us`,
+    },
+  }));
+
   return {
     city: cityName,
     totalResults: merged.length,
-    hotels: merged.slice(0, 10),
-    ...(amapHotels.length > 0 ? { note: "Real-time hotel data from Amap (高德地图)" } : {}),
+    hotels: hotelsWithLinks,
+    dataSource: amapHotels.length > 0 ? "Real-time from Amap (高德地图)" : "Local database",
+    ...(amapHotels.length > 0 ? { note: "Real-time hotel data from Amap (高德地图). Click links to navigate or book." } : {}),
   };
 }
 
@@ -299,12 +323,22 @@ export async function FoodSearch(params: { city: string; cuisine?: string; budge
     ...staticRestaurants,
   ];
 
+  // Generate links for each restaurant
+  const restaurantsWithLinks = merged.slice(0, 15).map(r => ({
+    ...r,
+    links: {
+      "🗺️ Navigate on Amap": `https://uri.amap.com/search?keyword=${encodeURIComponent(r.name)}&city=${encodeURIComponent(cityName)}&callnative=1`,
+      "⭐ Reviews on Dianping": `https://www.dianping.com/search/keyword/0/0_${encodeURIComponent(r.name)}`,
+    },
+  }));
+
   return {
     city: cityName,
     budget: params.budget || "all",
     totalResults: merged.length,
-    restaurants: merged.slice(0, 15),
-    ...(amapRestaurants.length > 0 ? { note: "Real-time restaurant data from Amap (高德地图)" } : {}),
+    restaurants: restaurantsWithLinks,
+    dataSource: amapRestaurants.length > 0 ? "Real-time from Amap (高德地图)" : "Local database",
+    ...(amapRestaurants.length > 0 ? { note: "Real-time restaurant data from Amap (高德地图). Click links to navigate or view reviews." } : {}),
   };
 }
 
@@ -364,10 +398,21 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
     );
   }
 
+  // Generate transport links
+  const transportLinks = {
+    "🚄 Book Train (12306)": "https://www.12306.cn/index/",
+    "🚄 Book Train (Trip.com)": `https://trains.ctrip.com/webapp/train/list?ticketType=0&dStation=${encodeURIComponent(fromName)}&aStation=${encodeURIComponent(toName)}`,
+    "✈️ Search Flights (Trip.com)": `https://flights.ctrip.com/online/list/oneway-${encodeURIComponent(fromName)}-${encodeURIComponent(toName)}`,
+    "✈️ Search Flights (Qunar)": `https://flight.qunar.com/site/oneway_list.htm?searchDepartureAirport=${encodeURIComponent(fromName)}&searchArrivalAirport=${encodeURIComponent(toName)}`,
+    "🗺️ Amap Route Planning": `https://uri.amap.com/search?keyword=${encodeURIComponent(fromName + ' to ' + toName)}&callnative=1`,
+  };
+
   return {
     from: fromName,
     to: toName,
     options: results,
+    links: transportLinks,
+    dataSource: webResults.length > 0 ? "Real-time from WebSearch + Local database" : "Local database",
     ...(webResults.length > 0 ? { webInfo: webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet })) } : {}),
   };
 }
@@ -511,6 +556,11 @@ export async function WeatherInfo(params: { city: string }): Promise<Record<stri
             weather: d.description,
             rainChance: `${Math.round(d.pop * 100)}%`,
           })),
+          links: {
+            "🌤️ OpenMeteo Forecast": `https://open-meteo.com/en/docs#latitude=${coords.lat}&longitude=${coords.lng}&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m&hourly=temperature_2m,precipitation_probability&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max`,
+            "📊 Weather Dashboard": `https://open-meteo.com/en/docs#latitude=${coords.lat}&longitude=${coords.lng}`,
+          },
+          dataSource: "Real-time from OpenMeteo API",
           ...(city?.climate ? { climate: { type: city.climate.type, bestMonths: city.climate.bestMonths, tips: city.climate.tips } } : {}),
         };
       }
