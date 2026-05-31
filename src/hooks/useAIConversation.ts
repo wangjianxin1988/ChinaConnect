@@ -182,15 +182,16 @@ ${CITY_CONTEXT}
 
 Current user context:
 - Language: ${language}
-- Budget level: ${budgetLevel}
-- Travel style preferences noted in conversation
+${budgetLevel !== 'medium' ? `- Budget level: ${budgetLevel}` : '- Budget level: NOT YET ASKED — you MUST ask the user'}
+- Travel style preferences: NOT YET ASKED — you MUST ask the user
 
 Remember:
 - Always respond in the user's language
 - Provide specific restaurant names, prices, and locations
 - Include emergency numbers relevant to the city
 - Suggest timing and estimated costs using ¥ symbol (never CNY)
-- CRITICAL: If user specifies a number of days, generate EXACTLY that many days`;
+- CRITICAL: If user specifies a number of days, generate EXACTLY that many days
+- CRITICAL: You MUST ask the preference questions before generating ANY itinerary`;
 
       const conversationMessages: MiniMaxMessage[] = [
         { role: "system", content: systemPrompt },
