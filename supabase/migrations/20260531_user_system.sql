@@ -31,13 +31,13 @@ CREATE TABLE IF NOT EXISTS membership_tiers (
     currency TEXT DEFAULT 'CNY',
 
     -- AI request limits
-    ai_requests_daily INTEGER DEFAULT 10 CHECK (ai_requests_daily >= 0),
-    ai_requests_monthly INTEGER DEFAULT 200 CHECK (ai_requests_monthly >= 0),
+    ai_requests_daily INTEGER DEFAULT 10 CHECK (ai_requests_daily >= -1),
+    ai_requests_monthly INTEGER DEFAULT 200 CHECK (ai_requests_monthly >= -1),
 
     -- Storage limits
-    max_saved_routes INTEGER DEFAULT 5 CHECK (max_saved_routes >= 0),
-    max_conversations INTEGER DEFAULT 20 CHECK (max_conversations >= 0),
-    max_favorites INTEGER DEFAULT 50 CHECK (max_favorites >= 0),
+    max_saved_routes INTEGER DEFAULT 5 CHECK (max_saved_routes >= -1),
+    max_conversations INTEGER DEFAULT 20 CHECK (max_conversations >= -1),
+    max_favorites INTEGER DEFAULT 50 CHECK (max_favorites >= -1),
 
     -- Feature flags
     features JSONB DEFAULT '{
