@@ -6,6 +6,8 @@
 
 import { useAIConversation } from "@/hooks/useAIConversation";
 import type { Message, ToolCall, WorkflowProgress } from "@/lib/ai/types";
+import { extractRouteFromConversation, saveRoute } from "@/lib/ai/route-saver";
+import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import React, { useState, useRef, useEffect, useCallback, Component, type ReactNode, type ErrorInfo } from "react";
 import { ItineraryDisplay } from "./ItineraryDisplay";
 import { QuickPrompts } from "./QuickPrompts";
@@ -21,6 +23,8 @@ interface AIChatProps {
   theme?: "light" | "dark";
   showItinerary?: boolean;
   initialMessage?: string;
+  externalPrompt?: string | null;
+  onExternalPromptConsumed?: () => void;
   onConversationStart?: (id: string) => void;
   onConversationEnd?: (id: string) => void;
 }
@@ -461,6 +465,8 @@ export const AIChat: React.FC<AIChatProps> = ({
   budgetLevel = "medium",
   showItinerary = true,
   initialMessage,
+  externalPrompt,
+  onExternalPromptConsumed,
 }) => {
   // Hook
   const {
@@ -491,6 +497,9 @@ export const AIChat: React.FC<AIChatProps> = ({
   const [shareCode, setShareCode] = useState("");
   const [lastSentAt, setLastSentAt] = useState(0);
   const [showMap, setShowMap] = useState(false);
+  const [routeSaving, setRouteSaving] = useState(false);
+  const [routeSaved, setRouteSaved] = useState(false);
+  const [routeSaveError, setRouteSaveError] = useState<string | null>(null);
 
   // Refs
   const containerRef = useRef<HTMLDivElement>(null);
@@ -512,6 +521,14 @@ export const AIChat: React.FC<AIChatProps> = ({
       sendMessage(initialMessage);
     }
   }, [initialMessage]);
+
+  // Handle external prompt (from sidebar example chips)
+  useEffect(() => {
+    if (externalPrompt) {
+      sendMessage(externalPrompt);
+      onExternalPromptConsumed?.();
+    }
+  }, [externalPrompt, onExternalPromptConsumed, sendMessage]);
 
   // Send handler with dedup
   const handleSend = useCallback(() => {
@@ -684,6 +701,35 @@ export const AIChat: React.FC<AIChatProps> = ({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                 </svg>
               </button>
+              {/* Save Route Button */}
+              {currentItinerary && (
+                <button
+                  onClick={async () => {
+                    const user = await getCurrentUser();
+                    if (!user) {
+                      alert('Please sign in to save routes.');
+                      return;
+                    }
+                    const routeData = extractRouteFromConversation(messages, currentItinerary?.data);
+                    if (!routeData) {
+                      alert('No route data to save.');
+                      return;
+                    }
+                    const result = await saveRoute(user.id, conversationStateRef.current.conversationId, routeData);
+                    if (result.success) {
+                      alert(result.error || 'Route saved successfully!');
+                    } else {
+                      alert('Failed to save route: ' + result.error);
+                    }
+                  }}
+                  className="p-2 hover:bg-green-100 rounded-lg transition-colors"
+                  title="Save Route"
+                >
+                  <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </button>
+              )}
               <button
                 onClick={() => setShowHistory(!showHistory)}
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
