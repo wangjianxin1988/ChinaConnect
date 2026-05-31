@@ -29,9 +29,11 @@ jobs:
           PUBLIC_MINIMAX_API_KEY: ${{ secrets.PUBLIC_MINIMAX_API_KEY }}
           PUBLIC_MINIMAX_BASE_URL: ${{ secrets.PUBLIC_MINIMAX_BASE_URL }}
           VITE_ANYSEARCH_API_KEY: ${{ secrets.VITE_ANYSEARCH_API_KEY }}
+      # Copy Cloudflare Functions into dist so wrangler deploys them
+      - run: cp -r functions dist/functions
       - run: npm install -g wrangler@latest
       - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: wrangler pages deploy dist --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }} --branch=main
+        run: wrangler pages deploy dist --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
