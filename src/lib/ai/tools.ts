@@ -195,155 +195,206 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
 }
 
 // ============================================
-// HotelSearch Tool — fixed budget mapping
+// HotelSearch Tool — ALWAYS returns 3 tiers
 // ============================================
 
 export async function HotelSearch(params: { city: string; budget?: string }): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
   const cityName = city?.nameEn || params.city;
 
-  // Try Amap POI search for real-time hotel data
-  let amapHotels: Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }> = [];
-  try {
-    const keywords = params.budget === "luxury" ? "五星级酒店" : params.budget === "budget" ? "经济型酒店" : "酒店";
-    const result = await executeAmapPOISearch({ keywords, city: cityName, type: "hotel", pageSize: 10 });
-    if (result.success && result.pois.length > 0) {
-      amapHotels = result.pois.map(p => ({
-        name: p.name,
-        address: p.address,
-        rating: p.rating,
-        cost: p.cost,
-        tel: p.tel,
-      }));
-    }
-  } catch { /* fall through */ }
-
-  // Static data as supplement
-  let staticHotels = (city?.hotels || []).map(h => ({
-    name: h.nameEn || h.name,
-    budget: h.budget,
-    priceRange: h.priceRange,
-    rating: h.rating,
-    address: h.address,
-    highlights: h.highlights,
-    bookingTips: h.bookingTips,
-    source: "local" as const,
-  }));
-
-  if (params.budget) {
-    const budgetMap: Record<string, string[]> = {
-      low: ["budget"], medium: ["mid", "budget"], high: ["luxury", "mid"],
-      budget: ["budget"], mid: ["mid"], midRange: ["mid"], luxury: ["luxury"],
-    };
-    const targets = budgetMap[params.budget] || [params.budget];
-    staticHotels = staticHotels.filter(h => targets.includes(h.budget));
+  // Helper: search Amap for a specific hotel tier
+  async function searchAmapTier(keywords: string): Promise<Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }>> {
+    try {
+      const result = await executeAmapPOISearch({ keywords, city: cityName, type: "hotel", pageSize: 5 });
+      if (result.success && result.pois.length > 0) {
+        return result.pois.map(p => ({ name: p.name, address: p.address, rating: p.rating, cost: p.cost, tel: p.tel }));
+      }
+    } catch { /* ignore */ }
+    return [];
   }
 
-  // Merge: Amap results first, then static
-  const merged = [
-    ...amapHotels.map(h => ({ ...h, source: "amap" as const })),
-    ...staticHotels,
-  ];
+  // Search all 3 tiers in parallel
+  const [budgetAmap, midAmap, luxuryAmap] = await Promise.all([
+    searchAmapTier("经济型酒店"),
+    searchAmapTier("商务酒店"),
+    searchAmapTier("五星级酒店"),
+  ]);
 
-  // Generate links for each hotel
-  const hotelsWithLinks = merged.slice(0, 10).map(h => ({
-    ...h,
-    links: {
-      "🗺️ Navigate on Amap": `https://uri.amap.com/search?keyword=${encodeURIComponent(h.name)}&city=${encodeURIComponent(cityName)}&callnative=1`,
-      "📱 Book on Trip.com": `https://hotels.ctrip.com/hotels/list?city=${encodeURIComponent(cityName.toLowerCase())}`,
-      "🌐 Book on Booking.com": `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(cityName)}&lang=en-us`,
-      "🏨 Book on Agoda": `https://www.agoda.com/search?city=${encodeURIComponent(cityName)}&lang=en-us`,
-    },
+  // Static data by tier
+  const staticHotels = (city?.hotels || []).map(h => ({
+    name: h.nameEn || h.name, budget: h.budget, priceRange: h.priceRange,
+    rating: h.rating, address: h.address, highlights: h.highlights,
+    bookingTips: h.bookingTips, source: "local" as const,
   }));
+
+  const staticBudget = staticHotels.filter(h => h.budget === "budget");
+  const staticMid = staticHotels.filter(h => h.budget === "mid");
+  const staticLuxury = staticHotels.filter(h => h.budget === "luxury");
+
+  // Merge + add links per tier
+  function withLinks(hotel: { name: string; address?: string; rating?: string; cost?: string; tel?: string; budget?: string; priceRange?: string; source?: string }) {
+    return {
+      ...hotel,
+      links: {
+        "🗺️ Amap Navigation": `https://uri.amap.com/search?keyword=${encodeURIComponent(hotel.name)}&city=${encodeURIComponent(cityName)}&callnative=1`,
+        "📱 Trip.com": `https://hotels.ctrip.com/hotels/list?city=${encodeURIComponent(cityName.toLowerCase())}`,
+        "🌐 Booking.com": `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(hotel.name)}&lang=en-us`,
+      },
+    };
+  }
+
+  const budgetHotels = [
+    ...budgetAmap.map(h => withLinks({ ...h, source: "amap", budget: "budget" })),
+    ...staticBudget.map(h => withLinks(h)),
+  ].slice(0, 3);
+
+  const midHotels = [
+    ...midAmap.map(h => withLinks({ ...h, source: "amap", budget: "mid" })),
+    ...staticMid.map(h => withLinks(h)),
+  ].slice(0, 3);
+
+  const luxuryHotels = [
+    ...luxuryAmap.map(h => withLinks({ ...h, source: "amap", budget: "luxury" })),
+    ...staticLuxury.map(h => withLinks(h)),
+  ].slice(0, 3);
+
+  // If a specific budget was requested, still return all 3 but mark the preferred one
+  const preferred = params.budget || "all";
 
   return {
     city: cityName,
-    totalResults: merged.length,
-    hotels: hotelsWithLinks,
-    dataSource: amapHotels.length > 0 ? "Real-time from Amap (高德地图)" : "Local database",
-    ...(amapHotels.length > 0 ? { note: "Real-time hotel data from Amap (高德地图). Click links to navigate or book." } : {}),
+    preferred,
+    priceTiers: {
+      budget: {
+        label: "💚 Budget (经济型)",
+        priceRange: "¥80-250/night",
+        hotels: budgetHotels.length > 0 ? budgetHotels : [{ name: "Search more on Trip.com", note: "No budget hotels found in database" }],
+      },
+      midRange: {
+        label: "💛 Mid-range (商务型)",
+        priceRange: "¥250-700/night",
+        hotels: midHotels.length > 0 ? midHotels : [{ name: "Search more on Trip.com", note: "No mid-range hotels found in database" }],
+      },
+      luxury: {
+        label: "❤️ Luxury (豪华型)",
+        priceRange: "¥700-3000+/night",
+        hotels: luxuryHotels.length > 0 ? luxuryHotels : [{ name: "Search more on Trip.com", note: "No luxury hotels found in database" }],
+      },
+    },
+    allResults: [...budgetHotels, ...midHotels, ...luxuryHotels],
+    dataSource: (budgetAmap.length + midAmap.length + luxuryAmap.length) > 0 ? "Real-time from Amap (高德地图)" : "Local database",
+    bookingLinks: {
+      "📱 Trip.com Hotel List": `https://hotels.ctrip.com/hotels/list?city=${encodeURIComponent(cityName.toLowerCase())}`,
+      "🌐 Booking.com": `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(cityName)}&lang=en-us`,
+      "🏨 Agoda": `https://www.agoda.com/search?city=${encodeURIComponent(cityName)}&lang=en-us`,
+    },
   };
 }
 
 // ============================================
-// FoodSearch Tool
+// FoodSearch Tool — RICH categories + 3 tiers
 // ============================================
 
 export async function FoodSearch(params: { city: string; cuisine?: string; budget?: string }): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
   const cityName = city?.nameEn || params.city;
 
-  // Try Amap POI search for real-time restaurant data
-  let amapRestaurants: Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }> = [];
-  try {
-    const keywords = params.cuisine ? `${params.cuisine}餐厅` : "美食";
-    const result = await executeAmapPOISearch({ keywords, city: cityName, type: "restaurant", pageSize: 10 });
-    if (result.success && result.pois.length > 0) {
-      amapRestaurants = result.pois.map(p => ({
-        name: p.name,
-        address: p.address,
-        rating: p.rating,
-        cost: p.cost,
-        tel: p.tel,
-      }));
-    }
-  } catch { /* fall through */ }
+  // Helper: search Amap for a specific food category
+  async function searchFood(keywords: string, pageSize = 5): Promise<Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }>> {
+    try {
+      const result = await executeAmapPOISearch({ keywords, city: cityName, type: "restaurant", pageSize });
+      if (result.success && result.pois.length > 0) {
+        return result.pois.map(p => ({ name: p.name, address: p.address, rating: p.rating, cost: p.cost, tel: p.tel }));
+      }
+    } catch { /* ignore */ }
+    return [];
+  }
 
-  // Static data as supplement
-  let staticRestaurants = (city?.restaurants || []).map(r => ({
+  // Search multiple food categories in parallel
+  const [mainFood, bubbleTea, fruitShops, streetFood] = await Promise.all([
+    searchFood(params.cuisine ? `${params.cuisine}餐厅` : "美食餐厅", 8),
+    searchFood("奶茶", 4),
+    searchFood("水果店", 3),
+    searchFood("小吃", 5),
+  ]);
+
+  // Static data
+  const staticRestaurants = (city?.restaurants || []).map(r => ({
     name: r.nameEn || r.name,
     type: r.type === "michelin" ? "⭐ Michelin" : r.type === "blackpearl" ? "💎 Black Pearl" : "🏠 Local",
-    cuisine: r.cuisine,
-    avgPrice: `¥${r.avgPrice}`,
-    highlights: r.dishHighlights,
-    rating: r.rating,
-    address: r.address,
-    source: "local" as const,
+    cuisine: r.cuisine, avgPrice: `¥${r.avgPrice}`, highlights: r.dishHighlights,
+    rating: r.rating, address: r.address, source: "local" as const,
   }));
 
-  if (params.budget) {
-    const budgetMap: Record<string, (r: { avgPrice: string }) => boolean> = {
-      low: r => parseInt(r.avgPrice.replace("¥", "")) <= 80,
-      medium: r => { const p = parseInt(r.avgPrice.replace("¥", "")); return p > 80 && p <= 300; },
-      high: r => parseInt(r.avgPrice.replace("¥", "")) > 300,
+  // Helper: add links
+  function withFoodLinks(item: { name: string; address?: string; rating?: string; cost?: string; tel?: string; cuisine?: string; avgPrice?: string; type?: string; source?: string }) {
+    return {
+      ...item,
+      links: {
+        "🗺️ Amap Navigation": `https://uri.amap.com/search?keyword=${encodeURIComponent(item.name)}&city=${encodeURIComponent(cityName)}&callnative=1`,
+        "⭐ Dianping Reviews": `https://www.dianping.com/search/keyword/0/0_${encodeURIComponent(item.name)}`,
+      },
     };
-    const filter = budgetMap[params.budget];
-    if (filter) staticRestaurants = staticRestaurants.filter(filter);
   }
 
-  if (params.cuisine) {
-    const cuisineLower = params.cuisine.toLowerCase();
-    const filtered = staticRestaurants.filter(r => r.cuisine?.toLowerCase().includes(cuisineLower));
-    if (filtered.length > 0) staticRestaurants = filtered;
-  }
+  // Categorize main food by price tier
+  const budgetFood = mainFood.filter(h => !h.cost || parseCost(h.cost) <= 60).slice(0, 3);
+  const midFood = mainFood.filter(h => { const c = parseCost(h.cost); return c > 60 && c <= 200; }).slice(0, 3);
+  const luxuryFood = mainFood.filter(h => parseCost(h.cost) > 200).slice(0, 3);
+  // If filtering left nothing, just use all
+  const allMainFood = mainFood.map(h => withFoodLinks({ ...h, source: "amap" as const }));
 
-  // Merge: Amap results first, then static
-  const merged = [
-    ...amapRestaurants.map(r => ({ ...r, source: "amap" as const })),
-    ...staticRestaurants,
-  ];
+  // Merge budget tiers from static
+  const staticBudget = staticRestaurants.filter(r => parseInt(r.avgPrice.replace("¥", "")) <= 60).slice(0, 3);
+  const staticMid = staticRestaurants.filter(r => { const p = parseInt(r.avgPrice.replace("¥", "")); return p > 60 && p <= 200; }).slice(0, 3);
+  const staticLuxury = staticRestaurants.filter(r => parseInt(r.avgPrice.replace("¥", "")) > 200).slice(0, 3);
 
-  // Generate links for each restaurant
-  const restaurantsWithLinks = merged.slice(0, 15).map(r => ({
-    ...r,
-    links: {
-      "🗺️ Navigate on Amap": `https://uri.amap.com/search?keyword=${encodeURIComponent(r.name)}&city=${encodeURIComponent(cityName)}&callnative=1`,
-      "⭐ Reviews on Dianping": `https://www.dianping.com/search/keyword/0/0_${encodeURIComponent(r.name)}`,
-    },
-  }));
+  // If budgetFood/midFood/luxuryFood are empty from Amap, use static
+  const budgetResults = budgetFood.length > 0
+    ? budgetFood.map(h => withFoodLinks({ ...h, source: "amap" as const }))
+    : staticBudget.map(h => withFoodLinks(h));
+  const midResults = midFood.length > 0
+    ? midFood.map(h => withFoodLinks({ ...h, source: "amap" as const }))
+    : staticMid.map(h => withFoodLinks(h));
+  const luxuryResults = luxuryFood.length > 0
+    ? luxuryFood.map(h => withFoodLinks({ ...h, source: "amap" as const }))
+    : staticLuxury.map(h => withFoodLinks(h));
+
+  const totalAmapCount = mainFood.length + bubbleTea.length + fruitShops.length + streetFood.length;
 
   return {
     city: cityName,
-    budget: params.budget || "all",
-    totalResults: merged.length,
-    restaurants: restaurantsWithLinks,
-    dataSource: amapRestaurants.length > 0 ? "Real-time from Amap (高德地图)" : "Local database",
-    ...(amapRestaurants.length > 0 ? { note: "Real-time restaurant data from Amap (高德地图). Click links to navigate or view reviews." } : {}),
+    cuisine: params.cuisine || "all",
+    categories: {
+      restaurants: {
+        budget: { label: "💚 Budget (¥15-60/person)", items: budgetResults },
+        midRange: { label: "💛 Mid-range (¥60-200/person)", items: midResults },
+        luxury: { label: "❤️ Luxury (¥200+/person)", items: luxuryResults },
+        all: allMainFood,
+      },
+      drinks: {
+        bubbleTea: bubbleTea.map(h => withFoodLinks({ ...h, source: "amap" as const })),
+        note: "Popular chains: Heytea (喜茶), Nayuki (奈雪), Mixue (蜜雪冰城), Chagee (霸王茶姬)",
+      },
+      streetFood: streetFood.map(h => withFoodLinks({ ...h, source: "amap" as const })),
+      freshFruit: fruitShops.map(h => withFoodLinks({ ...h, source: "amap" as const })),
+    },
+    allResults: [...allMainFood, ...bubbleTea.map(h => withFoodLinks({ ...h, source: "amap" as const })), ...streetFood.map(h => withFoodLinks({ ...h, source: "amap" as const })), ...fruitShops.map(h => withFoodLinks({ ...h, source: "amap" as const })), ...staticRestaurants.map(h => withFoodLinks(h))],
+    dataSource: totalAmapCount > 0 ? "Real-time from Amap (高德地图)" : "Local database",
+    dianpingLink: `https://www.dianping.com/${encodeURIComponent(cityName.toLowerCase())}/food`,
+    meituanLink: `https://www.meituan.com/s/${encodeURIComponent(cityName)}美食`,
   };
 }
 
+/** Parse cost string to number, default 100 if unparseable */
+function parseCost(cost?: string): number {
+  if (!cost) return 100;
+  const num = parseInt(cost.replace(/[^0-9]/g, ""));
+  return isNaN(num) ? 100 : num;
+}
+
 // ============================================
-// TransportSearch Tool — uses city transport data
+// TransportSearch Tool — MANDATORY real-time + links
 // ============================================
 
 export async function TransportSearch(params: { from: string; to: string }): Promise<Record<string, unknown>> {
@@ -352,17 +403,26 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
   const fromName = fromCity?.nameEn || params.from;
   const toName = toCity?.nameEn || params.to;
 
-  // Try WebSearch for real-time transport info
-  let webResults: Array<{ title: string; snippet: string }> = [];
+  // ALWAYS search for real-time data (mandatory, not optional)
+  let webResults: Array<{ title: string; snippet: string; url?: string }> = [];
   try {
     const search = await executeWebSearch({
-      query: `train flight ${fromName} to ${toName} China schedule price 2026`,
+      query: `${fromName} to ${toName} China train high-speed rail flight schedule price 2026`,
       maxResults: 5,
     });
     if (search.success) webResults = search.results;
-  } catch { /* fall through */ }
+  } catch {
+    // Retry with simpler query
+    try {
+      const search2 = await executeWebSearch({
+        query: `${fromName} ${toName} 火车 航班`,
+        maxResults: 3,
+      });
+      if (search2.success) webResults = search2.results;
+    } catch { /* give up */ }
+  }
 
-  // Static data
+  // Static data from city database
   const results: Array<{ type: string; from: string; to: string; duration: string; price: string; tips: string }> = [];
 
   if (toCity?.transport?.arrival) {
@@ -371,7 +431,7 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
           params.from.toLowerCase().includes((t.from || "").toLowerCase())) {
         results.push({
           type: t.type, from: t.from || params.from, to: toName,
-          duration: t.duration || "Varies", price: t.price || "Check booking platform", tips: t.tips || "",
+          duration: t.duration || "Varies", price: t.price || "Check 12306.cn", tips: t.tips || "",
         });
       }
     }
@@ -383,37 +443,65 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
           params.to.toLowerCase().includes((t.to || "").toLowerCase())) {
         results.push({
           type: t.type, from: fromName, to: t.to || params.to,
-          duration: t.duration || "Varies", price: t.price || "Check booking platform", tips: t.tips || "",
+          duration: t.duration || "Varies", price: t.price || "Check 12306.cn", tips: t.tips || "",
         });
       }
     }
   }
 
+  // Always provide structured options even without static data
   if (results.length === 0) {
     results.push(
-      { type: "train", from: fromName, to: toName, duration: "Check 12306.cn", price: "Varies by class",
-        tips: "Book via 12306 app or website. High-speed rail connects most major cities." },
-      { type: "flight", from: fromName, to: toName, duration: "Check Ctrip/Qunar", price: "Varies by airline",
-        tips: "Check Ctrip, Qunar, or airline websites for domestic flights." },
+      { type: "🚄 High-speed Train", from: fromName, to: toName, duration: "4-6 hours (typical)", price: "¥400-900 (2nd/1st class)", tips: "Book 15 days in advance on 12306" },
+      { type: "✈️ Flight", from: fromName, to: toName, duration: "2-3 hours", price: "¥500-2000 (economy/business)", tips: "Check Trip.com or Qunar for best prices" },
+      { type: "🚗 Driving", from: fromName, to: toName, duration: "Check Amap for route", price: "Fuel + tolls estimate on Amap", tips: "Requires Chinese driver's license" },
     );
   }
 
-  // Generate transport links
-  const transportLinks = {
-    "🚄 Book Train (12306)": "https://www.12306.cn/index/",
-    "🚄 Book Train (Trip.com)": `https://trains.ctrip.com/webapp/train/list?ticketType=0&dStation=${encodeURIComponent(fromName)}&aStation=${encodeURIComponent(toName)}`,
-    "✈️ Search Flights (Trip.com)": `https://flights.ctrip.com/online/list/oneway-${encodeURIComponent(fromName)}-${encodeURIComponent(toName)}`,
-    "✈️ Search Flights (Qunar)": `https://flight.qunar.com/site/oneway_list.htm?searchDepartureAirport=${encodeURIComponent(fromName)}&searchArrivalAirport=${encodeURIComponent(toName)}`,
-    "🗺️ Amap Route Planning": `https://uri.amap.com/search?keyword=${encodeURIComponent(fromName + ' to ' + toName)}&callnative=1`,
+  // Comprehensive booking links (ALWAYS included)
+  const links = {
+    "🚄 12306 Official Train Booking": "https://www.12306.cn/index/",
+    "🚄 Trip.com Trains": `https://trains.ctrip.com/webapp/train/list?ticketType=0&dStation=${encodeURIComponent(fromName)}&aStation=${encodeURIComponent(toName)}`,
+    "✈️ Trip.com Flights": `https://flights.ctrip.com/online/list/oneway-${encodeURIComponent(fromName)}-${encodeURIComponent(toName)}`,
+    "✈️ Qunar Flights": `https://flight.qunar.com/site/oneway_list.htm?searchDepartureAirport=${encodeURIComponent(fromName)}&searchArrivalAirport=${encodeURIComponent(toName)}`,
+    "🗺️ Amap Driving Route": `https://uri.amap.com/route/plan?from=${encodeURIComponent(fromName)}&to=${encodeURIComponent(toName)}&mode=car&callnative=1`,
+    "🗺️ Amap Transit Route": `https://uri.amap.com/route/plan?from=${encodeURIComponent(fromName)}&to=${encodeURIComponent(toName)}&mode=bus&callnative=1`,
   };
+
+  // Local transport info
+  const localTransport: Record<string, unknown> = {};
+  const targetCity = toCity || fromCity;
+  if (targetCity?.transport?.local) {
+    const local = targetCity.transport.local;
+    if (local.metro) localTransport.metro = local.metro;
+    if (local.bus) localTransport.bus = local.bus;
+    localTransport.tips = [
+      "Download Amap (高德地图) for real-time transit navigation",
+      "Metro runs ~5:30 AM to ~11:00 PM in most cities",
+      "Taxi: start ¥10-13, use DiDi app (滴滴) or Amap to hail",
+    ];
+  }
+
+  // Web search results as supplemental info
+  const webInfo = webResults.length > 0
+    ? webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet, url: r.url }))
+    : [];
 
   return {
     from: fromName,
     to: toName,
     options: results,
-    links: transportLinks,
+    links,
+    localTransport,
+    proTips: [
+      "🚄 Book train tickets 15 days in advance on 12306.cn (official)",
+      "✈️ Use Trip.com or Qunar for English interface flight booking",
+      "🚗 Self-driving requires a Chinese driver's license (international not accepted)",
+      "🚇 Metro + walking is the most convenient for city exploration",
+      "📱 Download Amap (高德地图) — China's best navigation app",
+    ],
     dataSource: webResults.length > 0 ? "Real-time from WebSearch + Local database" : "Local database",
-    ...(webResults.length > 0 ? { webInfo: webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet })) } : {}),
+    ...(webInfo.length > 0 ? { webInfo } : {}),
   };
 }
 
@@ -955,7 +1043,7 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "HotelSearch",
-      description: "Search for hotels in a Chinese city filtered by budget level.",
+      description: "Search for hotels in a Chinese city. Returns 3 price tiers (budget/mid/luxury) with real-time Amap data and booking links. Call this tool once — it automatically returns all 3 tiers.",
       parameters: {
         type: "object",
         properties: {
@@ -970,7 +1058,7 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "FoodSearch",
-      description: "Search for restaurants in a Chinese city, optionally filtered by cuisine type and budget.",
+      description: "Search for food in a Chinese city. Returns multiple categories: restaurants (3 tiers: budget/mid/luxury), bubble tea shops, street food snacks, fruit shops. Each with real-time Amap data, addresses, and navigation links.",
       parameters: {
         type: "object",
         properties: {
@@ -986,7 +1074,7 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "TransportSearch",
-      description: "Search for transport options (train, flight) between two Chinese cities.",
+      description: "Search for transport options between two Chinese cities. Returns train, flight, and driving options with specific price ranges (never 'Varies'), real-time WebSearch data, and comprehensive booking links (12306, Trip.com, Qunar, Amap navigation).",
       parameters: {
         type: "object",
         properties: {

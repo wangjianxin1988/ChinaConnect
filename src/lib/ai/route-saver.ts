@@ -79,7 +79,7 @@ export interface ExtractedLocation {
 const SNAPSHOT_INTERVAL = 4;
 
 /** MiniMax model info */
-const AI_MODEL = 'MiniMax-Text-01';
+const AI_MODEL = 'MiniMax-M2.7-highspeed';
 const AI_PROVIDER = 'minimax';
 
 // ============================================
