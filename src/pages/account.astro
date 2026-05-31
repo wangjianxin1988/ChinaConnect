@@ -183,20 +183,59 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 
   function renderRoutes(routes: any[]) {
     const container = document.getElementById('routes-list')!;
-    if (!routes || routes.length === 0) {
+    
+    // Also load from localStorage
+    let localRoutes: any[] = [];
+    try {
+      const stored = localStorage.getItem('cc_ai_saved_routes');
+      if (stored) localRoutes = JSON.parse(stored);
+    } catch {}
+    
+    // Merge and deduplicate
+    const allRoutes = [...routes];
+    for (const lr of localRoutes) {
+      if (!allRoutes.find(r => r.id === lr.id)) {
+        allRoutes.push(lr);
+      }
+    }
+    
+    if (!allRoutes || allRoutes.length === 0) {
       container.innerHTML = '<p class="text-sm text-gray-500">No saved routes yet. Start a conversation with AI to create routes!</p>';
       return;
     }
-    container.innerHTML = routes.map(r => `
-      <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+    container.innerHTML = allRoutes.map(r => `
+      <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
         <span class="text-xl">🗺️</span>
         <div class="flex-1 min-w-0">
           <div class="text-sm font-medium text-gray-900 truncate">${r.title || 'Untitled Route'}</div>
-          <div class="text-xs text-gray-500">${r.destination_city || ''} · ${new Date(r.created_at).toLocaleDateString()}</div>
+          <div class="text-xs text-gray-500">${r.destination || r.destination_city || ''} · ${r.days || '?'} days · ${new Date(r.createdAt || r.created_at).toLocaleDateString()}</div>
+          ${r.highlights && r.highlights.length > 0 ? `<div class="text-xs text-gray-400 mt-1 truncate">${r.highlights.slice(0, 2).join(' • ')}</div>` : ''}
+        </div>
+        <div class="flex items-center gap-2">
+          ${r.synced === false ? '<span class="text-xs text-amber-500" title="Saved locally only">📱</span>' : '<span class="text-xs text-green-500" title="Synced to cloud">☁️</span>'}
+          <button onclick="deleteRoute('${r.id}')" class="p-1 hover:bg-red-100 rounded text-gray-400 hover:text-red-500" title="Delete">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+          </button>
         </div>
       </div>
     `).join('');
   }
+  
+  // Delete route function
+  (window as any).deleteRoute = function(routeId: string) {
+    if (!confirm('Delete this route?')) return;
+    // Remove from localStorage
+    try {
+      const stored = localStorage.getItem('cc_ai_saved_routes');
+      if (stored) {
+        const routes = JSON.parse(stored);
+        const filtered = routes.filter((r: any) => r.id !== routeId);
+        localStorage.setItem('cc_ai_saved_routes', JSON.stringify(filtered));
+      }
+    } catch {}
+    // Reload
+    loadAccount();
+  };
 
   function renderFavorites(favorites: any[]) {
     const container = document.getElementById('favorites-list')!;
