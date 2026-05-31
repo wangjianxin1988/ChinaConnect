@@ -226,6 +226,26 @@ export default function AIChatPage() {
                       text="Help me plan a business trip to Shenzhen"
                       onClick={() => handleExamplePrompt("Help me plan a business trip to Shenzhen")}
                     />
+                    <PromptChip
+                      icon="☁️"
+                      text="成都今天天气怎么样？"
+                      onClick={() => handleExamplePrompt("成都今天天气怎么样？")}
+                    />
+                    <PromptChip
+                      icon="🏨"
+                      text="推荐成都的酒店，预算300-500元"
+                      onClick={() => handleExamplePrompt("推荐成都的酒店，预算300-500元")}
+                    />
+                    <PromptChip
+                      icon="📍"
+                      text="北京故宫附近有什么好吃的？"
+                      onClick={() => handleExamplePrompt("北京故宫附近有什么好吃的？")}
+                    />
+                    <PromptChip
+                      icon="🌤️"
+                      text="What's the weather like in Guilin this week?"
+                      onClick={() => handleExamplePrompt("What's the weather like in Guilin this week?")}
+                    />
                   </div>
                 </AccordionSection>
 
@@ -277,6 +297,45 @@ export default function AIChatPage() {
                       title="Life Help"
                       description="Practical guides for WeChat Pay setup, SIM cards, transport cards, VPN tips, and daily life in China."
                     />
+                  </div>
+                </AccordionSection>
+
+                {/* 3.5 Real-time Data Sources */}
+                <AccordionSection
+                  icon="📡"
+                  title="Real-time Data Sources"
+                  defaultOpen={false}
+                  color="bg-gradient-to-br from-green-50 to-emerald-50"
+                >
+                  <div className="space-y-2 text-xs text-gray-600">
+                    <p className="text-gray-700 font-medium mb-2">All data below is fetched live during your conversation:</p>
+                    <div className="grid grid-cols-1 gap-1.5">
+                      <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 border border-green-100">
+                        <span className="text-green-600">☁️</span>
+                        <span><strong>Weather</strong> — OpenMeteo API (global, free, real-time)</span>
+                      </div>
+                      <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 border border-green-100">
+                        <span className="text-green-600">🍜</span>
+                        <span><strong>Restaurants</strong> — 高德地图 POI Search (300+ Chinese cities)</span>
+                      </div>
+                      <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 border border-green-100">
+                        <span className="text-green-600">🏨</span>
+                        <span><strong>Hotels</strong> — 高德地图 POI Search (real-time availability)</span>
+                      </div>
+                      <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 border border-green-100">
+                        <span className="text-green-600">📍</span>
+                        <span><strong>Nearby POI</strong> — 高德地图 POI Search (attractions, shopping, etc.)</span>
+                      </div>
+                      <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 border border-green-100">
+                        <span className="text-green-600">🔍</span>
+                        <span><strong>Web Search</strong> — AnySearch API (latest travel info, events, news)</span>
+                      </div>
+                      <div className="flex items-center gap-2 bg-white rounded-lg px-3 py-2 border border-green-100">
+                        <span className="text-green-600">🚄</span>
+                        <span><strong>Transport</strong> — Web Search + 高德路线 (trains, flights, metro)</span>
+                      </div>
+                    </div>
+                    <p className="text-gray-500 mt-2 italic">💡 Look for "📡 Based on real-time data" in responses to confirm live data was used.</p>
                   </div>
                 </AccordionSection>
 
