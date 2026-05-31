@@ -9,6 +9,7 @@ import type { Message, ToolCall, WorkflowProgress } from "@/lib/ai/types";
 import React, { useState, useRef, useEffect, useCallback, Component, type ReactNode, type ErrorInfo } from "react";
 import { ItineraryDisplay } from "./ItineraryDisplay";
 import { QuickPrompts } from "./QuickPrompts";
+import ItineraryMap from "@/components/Map/ItineraryMap";
 
 // ============================================
 // Types
@@ -489,6 +490,7 @@ export const AIChat: React.FC<AIChatProps> = ({
   const [showShareDialog, setShowShareDialog] = useState(false);
   const [shareCode, setShareCode] = useState("");
   const [lastSentAt, setLastSentAt] = useState(0);
+  const [showMap, setShowMap] = useState(false);
 
   // Refs
   const containerRef = useRef<HTMLDivElement>(null);
@@ -674,6 +676,15 @@ export const AIChat: React.FC<AIChatProps> = ({
             </div>
             <div className="flex items-center gap-1">
               <button
+                onClick={() => setShowMap(!showMap)}
+                className={`p-2 rounded-lg transition-colors ${showMap ? "bg-blue-100 text-blue-600" : "hover:bg-gray-100 text-gray-600"}`}
+                title={language === "zh" ? "地图" : "Map"}
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+              </button>
+              <button
                 onClick={() => setShowHistory(!showHistory)}
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                 title={LABELS.history}
@@ -705,6 +716,33 @@ export const AIChat: React.FC<AIChatProps> = ({
               onClose={() => setShowHistory(false)}
             />
           )}
+
+          {/* Map View */}
+          {showMap && currentItinerary?.data?.dailyItinerary && (() => {
+            const locations = currentItinerary.data.dailyItinerary.flatMap((day) =>
+              (day.locations || []).map((loc, i) => ({
+                name: loc.name,
+                nameZh: loc.nameZh,
+                lat: loc.coordinates?.lat || 0,
+                lng: loc.coordinates?.lng || 0,
+                day: day.day,
+                order: i + 1,
+                time: loc.bestTimeStart,
+                activity: loc.highlights?.[0],
+                cost: loc.ticketInfo?.price,
+              })).filter(loc => loc.lat !== 0 && loc.lng !== 0)
+            );
+            if (locations.length === 0) return null;
+            return (
+              <div className="px-4 pt-3 shrink-0">
+                <ItineraryMap
+                  locations={locations}
+                  height="280px"
+                  className="rounded-xl overflow-hidden border border-gray-200"
+                />
+              </div>
+            );
+          })()}
 
           {/* Messages */}
           <div ref={containerRef} className="flex-1 overflow-y-auto p-4 space-y-4 min-h-0">
