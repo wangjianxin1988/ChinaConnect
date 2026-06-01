@@ -10,7 +10,7 @@
   },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Jinan, capital of Shandong Province, is known as the 'City of Springs' due to its numerous natural springs. Home to iconic attractions like Baotu Spring,大明湖 (Daming Lake), and Thousand Buddha Mountain. A cultural hub with 4000 years of history and birthplace of many Chinese celebrities.",
-  "coverImage": "https://images.unsplash.com/photo-1598600236050-8b2f4a16f1e2?w=1200",
+  "coverImage": "https://images.unsplash.com/photo-1654348977441-d844b27b6375?w=1200&q=80",
   "highlights": [
     "Baotu Spring - Most famous spring in China",
     "Daming Lake - Largest urban lake in China",
@@ -20,7 +20,12 @@
   ],
   "climate": {
     "type": "Temperate continental monsoon",
-    "bestMonths": ["April", "May", "September", "October"],
+    "bestMonths": [
+      "April",
+      "May",
+      "September",
+      "October"
+    ],
     "avgSummerTemp": "27C (81F)",
     "avgWinterTemp": "1C (34F)",
     "tips": "Best in spring for springs and autumn for foliage. Summer can be hot and humid. Winter cold but sunny. Spring festivals around April."
@@ -31,14 +36,22 @@
       "name": "趵突泉",
       "nameEn": "Baotu Spring",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1544141515-4ab6ce6db874?w=400",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
       "description": "The most famous spring in China, one of the Three Premier Springs globally. Features three large springs gushing year-round with crystal-clear water.",
       "address": "Baotu Spring Park, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "openingHours": "07:00-19:00",
       "ticketPrice": "40¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Three major springs", "Lotus pond", "Lixia River views", "Cultural statues"],
+      "highlights": [
+        "Three major springs",
+        "Lotus pond",
+        "Lixia River views",
+        "Cultural statues"
+      ],
       "tips": "Arrive early morning for best photos. Combine with Daming Lake nearby. The water is drinkable."
     },
     {
@@ -46,14 +59,22 @@
       "name": "大明湖",
       "nameEn": "Daming Lake",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1598600236050-8b2f4a16f1e2?w=400",
+      "image": "https://images.unsplash.com/photo-1598600236050-8b2f4a16f1e2?w=800",
       "description": "Largest urban lake in China, spanning 580,000 square meters. Beautiful in all seasons with historic pavilions and gardens.",
       "address": "Daming Lake, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0194
+      },
       "openingHours": "Open 24 hours (ferries 08:00-18:00)",
       "ticketPrice": "Free (ferry 30-50¥)",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Lake cycling", "Historic islands", "Night lighting", "Autumn lotus"],
+      "highlights": [
+        "Lake cycling",
+        "Historic islands",
+        "Night lighting",
+        "Autumn lotus"
+      ],
       "tips": "Best at sunset or night. Rent bikes around the lake. Take boat to islands. Combine with Baotu Spring."
     },
     {
@@ -61,14 +82,22 @@
       "name": "千佛山",
       "nameEn": "Thousand Buddha Mountain",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
       "description": "Mountain with ancient Buddhist carvings dating back 1500 years. Offers panoramic views of Jinan city.",
       "address": "Thousand Buddha Mountain, Lixia District",
-      "coordinates": {"lat": 36.6212, "lng": 117.0494},
+      "coordinates": {
+        "lat": 36.6212,
+        "lng": 117.0494
+      },
       "openingHours": "06:30-18:00",
       "ticketPrice": "30¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Buddhist carvings", "Mountain views", "Monastery", "Autumn foliage"],
+      "highlights": [
+        "Buddhist carvings",
+        "Mountain views",
+        "Monastery",
+        "Autumn foliage"
+      ],
       "tips": "Take cable car up, walk down. Visit in autumn for foliage. Combine with nearby Olympic Sports Center."
     },
     {
@@ -76,14 +105,22 @@
       "name": "泉城路",
       "nameEn": "Quancheng Road",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85",
       "description": "Historic commercial street with traditional architecture, modern shops, and beautiful fountain squares.",
       "address": "Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Traditional buildings", "Shopping", "Fountain square", "Night atmosphere"],
+      "highlights": [
+        "Traditional buildings",
+        "Shopping",
+        "Fountain square",
+        "Night atmosphere"
+      ],
       "tips": "Best evening for lights. Good for souvenir shopping. Connect Baotu Spring and Daming Lake."
     },
     {
@@ -91,14 +128,22 @@
       "name": "山东省博物馆",
       "nameEn": "Shandong Museum",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1569974507005-6dc61f0a4d1c?w=400",
+      "image": "https://images.unsplash.com/photo-1569003336825-ea4b2a2d0d8a?w=800&q=85",
       "description": "Premier museum showcasing 50,000 years of Shandong history with excellent collections of ancient bronzes, ceramics, and Buddhist art.",
       "address": "5189991 East Road, Lixia District",
-      "coordinates": {"lat": 36.6212, "lng": 117.0694},
+      "coordinates": {
+        "lat": 36.6212,
+        "lng": 117.0694
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Ancient bronzes", "Dawenkou culture", "Buddhist art", "Interactive exhibits"],
+      "highlights": [
+        "Ancient bronzes",
+        "Dawenkou culture",
+        "Buddhist art",
+        "Interactive exhibits"
+      ],
       "tips": "Book tickets online. Allow 2-3 hours. Excellent English signage. Great for rainy days."
     },
     {
@@ -106,14 +151,22 @@
       "name": "珍珠泉",
       "nameEn": "Pearl Spring",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1544141515-4ab6ce6db874?w=400",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85",
       "description": "Beautiful spring in the Provincial Government compound with historic pavilions and lotus ponds.",
       "address": "Shandong Provincial Government, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0194
+      },
       "openingHours": "06:00-20:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Historic pavilions", "Lotus pond", "Quiet atmosphere", "Local life"],
+      "highlights": [
+        "Historic pavilions",
+        "Lotus pond",
+        "Quiet atmosphere",
+        "Local life"
+      ],
       "tips": "Less crowded than Baotu Spring. Morning visits best. Watch locals doing tai chi."
     },
     {
@@ -121,14 +174,22 @@
       "name": "英雄山",
       "nameEn": "Hero Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=85",
       "description": "Mountain with Revolutionary history, now a public park with cultural market at its base.",
       "address": "Hero Mountain, Lixia District",
-      "coordinates": {"lat": 36.6312, "lng": 117.0094},
+      "coordinates": {
+        "lat": 36.6312,
+        "lng": 117.0094
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["City views", "Cultural market", "Revolutionary history", "Morning tai chi"],
+      "highlights": [
+        "City views",
+        "Cultural market",
+        "Revolutionary history",
+        "Morning tai chi"
+      ],
       "tips": "Visit morning for tai chi and market. The cultural market is great for calligraphy and antiques."
     },
     {
@@ -136,14 +197,21 @@
       "name": "历下泉",
       "nameEn": "Lixia Spring",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1544141515-4ab6ce6db874?w=400",
+      "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=85",
       "description": "Series of beautiful springs in Lixia District, part of Jinan's famous spring culture.",
       "address": "Lixia District",
-      "coordinates": {"lat": 36.6612, "lng": 117.0394},
+      "coordinates": {
+        "lat": 36.6612,
+        "lng": 117.0394
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Natural springs", "Local neighborhoods", "Traditional culture"],
+      "highlights": [
+        "Natural springs",
+        "Local neighborhoods",
+        "Traditional culture"
+      ],
       "tips": "Explore by walking through old neighborhoods. Great for photography. Best spring water."
     },
     {
@@ -151,14 +219,22 @@
       "name": "黑虎泉",
       "nameEn": "Black Tiger Spring",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1544141515-4ab6ce6db874?w=400",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=85",
       "description": "One of Jinan's famous springs, named for the sound of water hitting the pool resembling a tiger's roar.",
       "address": "South of Lixia River, Lixia District",
-      "coordinates": {"lat": 36.6612, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6612,
+        "lng": 117.0194
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["Spring water", "Local residents", "Historic site", "Drinking water"],
+      "highlights": [
+        "Spring water",
+        "Local residents",
+        "Historic site",
+        "Drinking water"
+      ],
       "tips": "Locals collect spring water here. Great to watch local life. The water is safe to drink."
     },
     {
@@ -166,14 +242,22 @@
       "name": "解放阁",
       "nameEn": "Liberation Pavilion",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=85",
       "description": "Memorial pavilion built on the site of Jinan's liberation during the Chinese Civil War.",
       "address": "East of Baotu Spring, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "openingHours": "09:00-17:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["City views", "Revolutionary history", "Architecture", "Night lighting"],
+      "highlights": [
+        "City views",
+        "Revolutionary history",
+        "Architecture",
+        "Night lighting"
+      ],
       "tips": "Combine with Baotu Spring visit. Best at night when illuminated."
     },
     {
@@ -181,14 +265,22 @@
       "name": "花园路",
       "nameEn": "Huayuan Road",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
       "description": "Modern commercial district with international brands, restaurants, and entertainment.",
       "address": "Huayuan Road, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0594},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0594
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Shopping", "Dining", "Nightlife", "Modern Jinan"],
+      "highlights": [
+        "Shopping",
+        "Dining",
+        "Nightlife",
+        "Modern Jinan"
+      ],
       "tips": "Best evening and night. Great for modern Jinan experience. Many international brands."
     },
     {
@@ -196,14 +288,22 @@
       "name": "圣殿泉",
       "nameEn": "Holy Spring",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
       "description": "Beautiful spring complex with historic Catholic church nearby.",
       "address": "Near Shandong Museum, Lixia District",
-      "coordinates": {"lat": 36.6312, "lng": 67.0694},
+      "coordinates": {
+        "lat": 36.6312,
+        "lng": 67.0694
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["Spring water", "Church nearby", "Peaceful", "Local atmosphere"],
+      "highlights": [
+        "Spring water",
+        "Church nearby",
+        "Peaceful",
+        "Local atmosphere"
+      ],
       "tips": "Combine with museum visit. Quiet spot for reflection."
     },
     {
@@ -211,14 +311,22 @@
       "name": "灵岩寺",
       "nameEn": "Lingshan Temple",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400",
+      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800",
       "description": "One of the Four Great Buddhist Temples in China, famous for its ancient architecture and mountain setting.",
       "address": "Lingshan, Changqing District",
-      "coordinates": {"lat": 36.3512, "lng": 117.1194},
+      "coordinates": {
+        "lat": 36.3512,
+        "lng": 117.1194
+      },
       "openingHours": "07:00-18:00",
       "ticketPrice": "60¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Buddhist temple", "Mountain setting", "Ancient architecture", "Vegetarian food"],
+      "highlights": [
+        "Buddhist temple",
+        "Mountain setting",
+        "Ancient architecture",
+        "Vegetarian food"
+      ],
       "tips": "Day trip from Jinan. Arrive early. The vegetarian noodles are excellent."
     },
     {
@@ -226,14 +334,22 @@
       "name": "红叶谷",
       "nameEn": "Red Leaf Valley",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=85",
       "description": "Beautiful valley famous for autumn foliage, spanning 500 acres of maple trees.",
       "address": "Licheng District",
-      "coordinates": {"lat": 36.7512, "lng": 117.2194},
+      "coordinates": {
+        "lat": 36.7512,
+        "lng": 117.2194
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Autumn leaves", "Maple forest", "Photography", "Mountain air"],
+      "highlights": [
+        "Autumn leaves",
+        "Maple forest",
+        "Photography",
+        "Mountain air"
+      ],
       "tips": "Best in late October. Less crowded on weekdays. Bring comfortable shoes."
     },
     {
@@ -241,14 +357,22 @@
       "name": "阳光一百",
       "nameEn": "Sunshine 100",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1543835247-0e4b6f0b1b0e?w=800&q=85",
       "description": "Modern entertainment complex with international dining and shopping.",
       "address": "University Road, Shizhong District",
-      "coordinates": {"lat": 36.6212, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6212,
+        "lng": 117.0194
+      },
       "openingHours": "10:00-22:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Shopping", "Dining", "Movies", "International brands"],
+      "highlights": [
+        "Shopping",
+        "Dining",
+        "Movies",
+        "International brands"
+      ],
       "tips": "Popular with locals. Great for evening entertainment. Many restaurants."
     },
     {
@@ -256,14 +380,22 @@
       "name": "印象济南",
       "nameEn": "Yinxiang Jinan",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1546961342-ea5f60b193f9?w=800&q=85",
       "description": "Cultural tourism block showcasing traditional Jinan architecture and local crafts.",
       "address": "Lixia District",
-      "coordinates": {"lat": 36.6612, "lng": 117.0594},
+      "coordinates": {
+        "lat": 36.6612,
+        "lng": 117.0594
+      },
       "openingHours": "Open 24 hours (shops 10:00-22:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Traditional architecture", "Local crafts", "Street performances", "Souvenirs"],
+      "highlights": [
+        "Traditional architecture",
+        "Local crafts",
+        "Street performances",
+        "Souvenirs"
+      ],
       "tips": "Best evening with lighting. Good for souvenirs. Traditional performances on weekends."
     },
     {
@@ -271,14 +403,22 @@
       "name": "曲水亭街",
       "nameEn": "Qushui Ting Street",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=800&q=85",
       "description": "Historic street with traditional shophouses, teahouses, and beautiful canals.",
       "address": "Near Baotu Spring, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Traditional buildings", "Canals", "Teahouses", "Old Jinan"],
+      "highlights": [
+        "Traditional buildings",
+        "Canals",
+        "Teahouses",
+        "Old Jinan"
+      ],
       "tips": "Best morning for tea culture. Very photogenic. Connect to Baotu Spring area."
     },
     {
@@ -286,14 +426,22 @@
       "name": "金街",
       "nameEn": "Jin Street",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1583831974457-21cf9e33f5ef?w=800&q=85",
       "description": "Premier pedestrian shopping street in Jinan with MixC mall and international brands.",
       "address": "Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["MixC mall", "International brands", "Entertainment", "Dining"],
+      "highlights": [
+        "MixC mall",
+        "International brands",
+        "Entertainment",
+        "Dining"
+      ],
       "tips": "Best for shopping. The MixC is one of China's premier malls. Many restaurants."
     },
     {
@@ -301,14 +449,22 @@
       "name": "护城河",
       "nameEn": "City Moat",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85",
       "description": "Historic moat surrounding the old city with beautiful spring-fed waters and walking paths.",
       "address": "Around old city center",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Spring-fed water", "Walking path", "City views", "Boat rides"],
+      "highlights": [
+        "Spring-fed water",
+        "Walking path",
+        "City views",
+        "Boat rides"
+      ],
       "tips": "Take boat ride for unique view. Best evening. Connect all major springs."
     },
     {
@@ -316,14 +472,22 @@
       "name": "柳荷山",
       "nameEn": "Liuhe Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400",
+      "image": "https://images.unsplash.com/photo-1573824398985-ca6aee6b0cbd?w=800&q=85",
       "description": "Mountain named for its famous willows and lotus, offering hiking trails and temple.",
       "address": "Licheng District",
-      "coordinates": {"lat": 36.7212, "lng": 117.1294},
+      "coordinates": {
+        "lat": 36.7212,
+        "lng": 117.1294
+      },
       "openingHours": "06:00-18:00",
       "ticketPrice": "20¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Hiking trails", "Temple", "Willow views", "Nature escape"],
+      "highlights": [
+        "Hiking trails",
+        "Temple",
+        "Willow views",
+        "Nature escape"
+      ],
       "tips": "Good for escaping city. Less crowded than Thousand Buddha Mountain. Spring for willows."
     },
     {
@@ -331,14 +495,22 @@
       "name": "和谐广场",
       "nameEn": "Harmony Square",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=85",
       "description": "Modern public square with fountains, shopping, and entertainment complex.",
       "address": "Weili Road, Lixia District",
-      "coordinates": {"lat": 36.6312, "lng": 117.0394},
+      "coordinates": {
+        "lat": 36.6312,
+        "lng": 117.0394
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Fountains", "Shopping", "Night views", "Local life"],
+      "highlights": [
+        "Fountains",
+        "Shopping",
+        "Night views",
+        "Local life"
+      ],
       "tips": "Best evening. The fountain show at night is spectacular."
     },
     {
@@ -346,14 +518,22 @@
       "name": "山东美术馆",
       "nameEn": "Shandong Art Museum",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1569974507005-6dc61f0a4d1c?w=400",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85",
       "description": "Modern art museum with contemporary exhibitions and traditional Chinese art.",
       "address": "8579 East Road, Lixia District",
-      "coordinates": {"lat": 36.6312, "lng": 117.0794},
+      "coordinates": {
+        "lat": 36.6312,
+        "lng": 117.0794
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Contemporary art", "Traditional calligraphy", "Rotating exhibitions", "Architecture"],
+      "highlights": [
+        "Contemporary art",
+        "Traditional calligraphy",
+        "Rotating exhibitions",
+        "Architecture"
+      ],
       "tips": "Great for art lovers. Combine with nearby Shandong Museum. Allow 1-2 hours."
     },
     {
@@ -361,14 +541,22 @@
       "name": "山东连通",
       "nameEn": "Shandong Canal",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400",
+      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=85",
       "description": "Historic canal with boat tours showcasing Jinan's water culture and spring systems.",
       "address": "City Moat System",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "openingHours": "08:00-18:00",
       "ticketPrice": "100¥ (boat tour)",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Boat tour", "Spring culture", "Historic locks", "City views"],
+      "highlights": [
+        "Boat tour",
+        "Spring culture",
+        "Historic locks",
+        "City views"
+      ],
       "tips": "Best way to understand Jinan's spring culture. Combine with walking along moat."
     },
     {
@@ -376,14 +564,22 @@
       "name": "天桥",
       "nameEn": "Tianqiao Arts District",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1569974507005-6dc61f0a4d1c?w=400",
+      "image": "https://images.unsplash.com/photo-1590077428593-a55bb07c4665?w=800&q=85",
       "description": "Revitalized industrial area turned arts district with galleries and performance spaces.",
       "address": "Tianqiao District",
-      "coordinates": {"lat": 36.6812, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6812,
+        "lng": 117.0194
+      },
       "openingHours": "Various by venue",
       "ticketPrice": "Varies",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Galleries", "Street art", "Performance venues", "Cafes"],
+      "highlights": [
+        "Galleries",
+        "Street art",
+        "Performance venues",
+        "Cafes"
+      ],
       "tips": "Weekend visits best. Check event schedules. Great for photography."
     }
   ],
@@ -398,12 +594,25 @@
       "avgPrice": 200,
       "rating": 4.7,
       "address": "188 Luoyuan Avenue, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "phone": "+86 531 8690 8888",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "One-diamond Black Pearl restaurant specializing in classic Shandong cuisine with elegant atmosphere.",
-      "dishHighlights": ["Imperial Shandong cuisine", "Braised abalone", "Sweet and sour carp", "Jinan style noodles"],
-      "tags": ["fine-dining", "shandong-cuisine", "elegant", "special-occasion"]
+      "dishHighlights": [
+        "Imperial Shandong cuisine",
+        "Braised abalone",
+        "Sweet and sour carp",
+        "Jinan style noodles"
+      ],
+      "tags": [
+        "fine-dining",
+        "shandong-cuisine",
+        "elegant",
+        "special-occasion"
+      ]
     },
     {
       "id": "jinan-2",
@@ -414,12 +623,25 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Near Baotu Spring, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "phone": "+86 531 8690 1234",
       "hours": "10:30-21:30",
       "description": "Historic restaurant famous for Jinan cuisine and local dishes in traditional setting.",
-      "dishHighlights": ["Jinan style prawns", "Spring rolls", "Fried dumplings", "Sweet and sour carp"],
-      "tags": ["local", "jinan-cuisine", "historic", "traditional"]
+      "dishHighlights": [
+        "Jinan style prawns",
+        "Spring rolls",
+        "Fried dumplings",
+        "Sweet and sour carp"
+      ],
+      "tags": [
+        "local",
+        "jinan-cuisine",
+        "historic",
+        "traditional"
+      ]
     },
     {
       "id": "jinan-3",
@@ -430,12 +652,26 @@
       "avgPrice": 40,
       "rating": 4.8,
       "address": "Multiple locations including Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "phone": "+86 531 8690 5678",
       "hours": "06:00-14:00",
       "description": "Legendary local snack chain serving famous Jinan buns since 1917.",
-      "dishHighlights": ["Pork buns", "Vegetable buns", "Soy milk", "Fried dough sticks"],
-      "tags": ["local", "famous", "breakfast", "must-try", "budget"]
+      "dishHighlights": [
+        "Pork buns",
+        "Vegetable buns",
+        "Soy milk",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "breakfast",
+        "must-try",
+        "budget"
+      ]
     },
     {
       "id": "jinan-4",
@@ -446,11 +682,24 @@
       "avgPrice": 60,
       "rating": 4.6,
       "address": "Near Daming Lake, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0194
+      },
       "hours": "08:00-20:00",
       "description": "Famous for braised chicken, a Jinan specialty with 100-year history.",
-      "dishHighlights": ["Braised chicken", "Chicken feet", "Noodles", "Local dishes"],
-      "tags": ["local", "famous", "specialty", "must-try"]
+      "dishHighlights": [
+        "Braised chicken",
+        "Chicken feet",
+        "Noodles",
+        "Local dishes"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "specialty",
+        "must-try"
+      ]
     },
     {
       "id": "jinan-5",
@@ -461,11 +710,24 @@
       "avgPrice": 15,
       "rating": 4.7,
       "address": "Near Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "hours": "07:00-19:00",
       "description": "Iconic Jinan snack - crispy spiral pastry layered with scallions and lard.",
-      "dishHighlights": ["Oil spirals", "Millettia soup", "Steamed buns"],
-      "tags": ["local", "famous", "snacks", "must-try", "budget"]
+      "dishHighlights": [
+        "Oil spirals",
+        "Millettia soup",
+        "Steamed buns"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "snacks",
+        "must-try",
+        "budget"
+      ]
     },
     {
       "id": "jinan-6",
@@ -476,11 +738,25 @@
       "avgPrice": 35,
       "rating": 4.5,
       "address": "Various locations",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "hours": "10:00-22:00",
       "description": "Classic Jinan rice bowl - braised pork belly over rice with gravy.",
-      "dishHighlights": ["Braised pork belly rice", "Braised eggs", "Braised tofu", "Rice"],
-      "tags": ["local", "jinan-cuisine", "budget", "quick", "must-try"]
+      "dishHighlights": [
+        "Braised pork belly rice",
+        "Braised eggs",
+        "Braised tofu",
+        "Rice"
+      ],
+      "tags": [
+        "local",
+        "jinan-cuisine",
+        "budget",
+        "quick",
+        "must-try"
+      ]
     },
     {
       "id": "jinan-7",
@@ -491,11 +767,24 @@
       "avgPrice": 20,
       "rating": 4.6,
       "address": "Old City District",
-      "coordinates": {"lat": 36.6612, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6612,
+        "lng": 117.0294
+      },
       "hours": "06:00-10:00",
       "description": "Famous Jinan breakfast - savory millet porridge with peanuts, tofu, and vegetables.",
-      "dishHighlights": ["Sweet millet porridge", "Fried dough sticks", "Buns", "Soy milk"],
-      "tags": ["local", "breakfast", "traditional", "budget"]
+      "dishHighlights": [
+        "Sweet millet porridge",
+        "Fried dough sticks",
+        "Buns",
+        "Soy milk"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "traditional",
+        "budget"
+      ]
     },
     {
       "id": "jinan-8",
@@ -506,11 +795,23 @@
       "avgPrice": 80,
       "rating": 4.4,
       "address": "Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "hours": "11:00-21:00",
       "description": "Classic Shandong dish - braised pig intestine cooked in nine transformations.",
-      "dishHighlights": ["Nine-transformed intestine", "Sweet and sour flavor", "Crispy texture"],
-      "tags": ["local", "shandong-cuisine", "traditional", "adventurous"]
+      "dishHighlights": [
+        "Nine-transformed intestine",
+        "Sweet and sour flavor",
+        "Crispy texture"
+      ],
+      "tags": [
+        "local",
+        "shandong-cuisine",
+        "traditional",
+        "adventurous"
+      ]
     },
     {
       "id": "jinan-9",
@@ -521,11 +822,23 @@
       "avgPrice": 15,
       "rating": 4.5,
       "address": "Various locations",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "hours": "06:00-14:00",
       "description": "Thick crepe filled with scallions, vegetables, and various toppings.",
-      "dishHighlights": ["Shandong crepe", "Savory filling", "Classic breakfast"],
-      "tags": ["local", "breakfast", "street-food", "budget"]
+      "dishHighlights": [
+        "Shandong crepe",
+        "Savory filling",
+        "Classic breakfast"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "street-food",
+        "budget"
+      ]
     },
     {
       "id": "jinan-10",
@@ -536,12 +849,25 @@
       "avgPrice": 100,
       "rating": 4.5,
       "address": "96 Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "phone": "+86 531 8691 2345",
       "hours": "10:30-21:30",
       "description": "Popular restaurant serving authentic Shandong cuisine in central location.",
-      "dishHighlights": ["Shandong style seafood", "Jinan noodles", "Braised dishes", "Fresh vegetables"],
-      "tags": ["local", "shandong-cuisine", "central", "reliable"]
+      "dishHighlights": [
+        "Shandong style seafood",
+        "Jinan noodles",
+        "Braised dishes",
+        "Fresh vegetables"
+      ],
+      "tags": [
+        "local",
+        "shandong-cuisine",
+        "central",
+        "reliable"
+      ]
     },
     {
       "id": "jinan-11",
@@ -552,11 +878,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "Shizhong District",
-      "coordinates": {"lat": 36.6212, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6212,
+        "lng": 117.0194
+      },
       "hours": "11:00-21:00",
       "description": "Famous roast duck restaurant with crispy skin and traditional preparation.",
-      "dishHighlights": ["Roast duck", "Pancakes", "Cucumber and scallion", "Duck soup"],
-      "tags": ["local", "famous", "roast-duck", "traditional"]
+      "dishHighlights": [
+        "Roast duck",
+        "Pancakes",
+        "Cucumber and scallion",
+        "Duck soup"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "roast-duck",
+        "traditional"
+      ]
     },
     {
       "id": "jinan-12",
@@ -567,11 +906,24 @@
       "avgPrice": 70,
       "rating": 4.6,
       "address": "Near Daming Lake",
-      "coordinates": {"lat": 36.6412, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0194
+      },
       "hours": "10:30-21:00",
       "description": "Popular home-style restaurant with cozy atmosphere and local favorites.",
-      "dishHighlights": ["Home-style dishes", "Braised pork", "Fish dishes", "Seasonal vegetables"],
-      "tags": ["local", "home-style", "cozy", "value"]
+      "dishHighlights": [
+        "Home-style dishes",
+        "Braised pork",
+        "Fish dishes",
+        "Seasonal vegetables"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "cozy",
+        "value"
+      ]
     },
     {
       "id": "jinan-13",
@@ -583,12 +935,25 @@
       "avgPrice": 250,
       "rating": 4.8,
       "address": "666 Luoyuan Avenue, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "phone": "+86 531 8692 8888",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "One-diamond restaurant with elegant setting and refined Shandong imperial cuisine.",
-      "dishHighlights": ["Imperial cuisine", "Shandong seafood", "Braised abalone", "Bird's nest"],
-      "tags": ["fine-dining", "shandong-cuisine", "luxury", "special-occasion"]
+      "dishHighlights": [
+        "Imperial cuisine",
+        "Shandong seafood",
+        "Braised abalone",
+        "Bird's nest"
+      ],
+      "tags": [
+        "fine-dining",
+        "shandong-cuisine",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "jinan-14",
@@ -599,11 +964,24 @@
       "avgPrice": 50,
       "rating": 4.4,
       "address": "Near Quancheng Road",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "hours": "10:00-22:00",
       "description": "Popular snack restaurant with variety of Jinan street foods and small dishes.",
-      "dishHighlights": ["Spring rolls", "Dumplings", "Noodles", "Fried snacks"],
-      "tags": ["local", "snacks", "variety", "casual"]
+      "dishHighlights": [
+        "Spring rolls",
+        "Dumplings",
+        "Noodles",
+        "Fried snacks"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "variety",
+        "casual"
+      ]
     },
     {
       "id": "jinan-15",
@@ -614,12 +992,25 @@
       "avgPrice": 150,
       "rating": 4.7,
       "address": "128 Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "phone": "+86 531 8693 4567",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Historic restaurant established 1932, famous for traditional Shandong cuisine.",
-      "dishHighlights": ["Classic Shandong dishes", "Braised sea cucumber", "Jinan style fish", "Seasonal menu"],
-      "tags": ["local", "historic", "shandong-cuisine", "traditional"]
+      "dishHighlights": [
+        "Classic Shandong dishes",
+        "Braised sea cucumber",
+        "Jinan style fish",
+        "Seasonal menu"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "shandong-cuisine",
+        "traditional"
+      ]
     },
     {
       "id": "jinan-16",
@@ -630,11 +1021,24 @@
       "avgPrice": 50,
       "rating": 4.2,
       "address": "Multiple locations",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "hours": "07:00-23:00",
       "description": "International fast food chain - familiar refuge when needed.",
-      "dishHighlights": ["Burgers", "Fries", "Chicken nuggets", "Coffee"],
-      "tags": ["chain", "western", "familiar", "quick"]
+      "dishHighlights": [
+        "Burgers",
+        "Fries",
+        "Chicken nuggets",
+        "Coffee"
+      ],
+      "tags": [
+        "chain",
+        "western",
+        "familiar",
+        "quick"
+      ]
     },
     {
       "id": "jinan-17",
@@ -645,12 +1049,26 @@
       "avgPrice": 150,
       "rating": 4.8,
       "address": "MixC Mall, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "phone": "+86 531 8694 9999",
       "hours": "24 hours",
       "description": "Famous chain hotpot with exceptional service, free snacks, and manicotti.",
-      "dishHighlights": ["Spicy and mild broth", "Fresh beef", "Hand-pulled noodles", "Free dessert"],
-      "tags": ["chain", "hotpot", "service", "entertainment", "late-night"]
+      "dishHighlights": [
+        "Spicy and mild broth",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free dessert"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "entertainment",
+        "late-night"
+      ]
     },
     {
       "id": "jinan-18",
@@ -661,11 +1079,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "MixC Mall, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "hours": "10:00-21:30",
       "description": "World-famous Taiwanese dumpling chain with excellent xiaolongbao.",
-      "dishHighlights": ["Xiaolongbao", "Fried rice", "Noodles", "Desserts"],
-      "tags": ["chain", "taiwanese", "dumplings", "quality"]
+      "dishHighlights": [
+        "Xiaolongbao",
+        "Fried rice",
+        "Noodles",
+        "Desserts"
+      ],
+      "tags": [
+        "chain",
+        "taiwanese",
+        "dumplings",
+        "quality"
+      ]
     },
     {
       "id": "jinan-19",
@@ -676,11 +1107,24 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Daming Lake area",
-      "coordinates": {"lat": 36.6412, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0194
+      },
       "hours": "11:00-22:00",
       "description": "Popular chain serving Jiangsu cuisine in traditional atmosphere.",
-      "dishHighlights": ["Duck blood soup", "Salt duck", "Steamed dumplings", "Jiangsu dishes"],
-      "tags": ["chain", "jiangsu-cuisine", "traditional", "atmospheric"]
+      "dishHighlights": [
+        "Duck blood soup",
+        "Salt duck",
+        "Steamed dumplings",
+        "Jiangsu dishes"
+      ],
+      "tags": [
+        "chain",
+        "jiangsu-cuisine",
+        "traditional",
+        "atmospheric"
+      ]
     },
     {
       "id": "jinan-20",
@@ -691,12 +1135,25 @@
       "avgPrice": 200,
       "rating": 4.4,
       "address": "Shangri-La Hotel, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0394},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0394
+      },
       "phone": "+86 531 8695 6789",
       "hours": "11:30-14:30, 18:00-22:00",
       "description": "Italian restaurant in Shangri-La with elegant setting and authentic cuisine.",
-      "dishHighlights": ["Pasta", "Pizza", "Risotto", "Italian wine"],
-      "tags": ["fine-dining", "italian", "luxury", "romantic"]
+      "dishHighlights": [
+        "Pasta",
+        "Pizza",
+        "Risotto",
+        "Italian wine"
+      ],
+      "tags": [
+        "fine-dining",
+        "italian",
+        "luxury",
+        "romantic"
+      ]
     },
     {
       "id": "jinan-21",
@@ -707,11 +1164,25 @@
       "avgPrice": 45,
       "rating": 4.7,
       "address": "Near Quancheng Road",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "hours": "07:00-20:00",
       "description": "Popular halal noodle shop with authentic Muslim Chinese cuisine.",
-      "dishHighlights": ["Beef noodles", "Lamb skewers", "Hand-pulled noodles", "Fried rice"],
-      "tags": ["local", "halal", "noodles", "budget", "muslim"]
+      "dishHighlights": [
+        "Beef noodles",
+        "Lamb skewers",
+        "Hand-pulled noodles",
+        "Fried rice"
+      ],
+      "tags": [
+        "local",
+        "halal",
+        "noodles",
+        "budget",
+        "muslim"
+      ]
     },
     {
       "id": "jinan-22",
@@ -722,12 +1193,25 @@
       "avgPrice": 150,
       "rating": 4.6,
       "address": "Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "phone": "+86 531 8696 1234",
       "hours": "10:30-22:00",
       "description": "Famous Mongolian hotpot chain with premium lamb and traditional broth.",
-      "dishHighlights": ["Mongolian lamb", "Hotpot", "Traditional broth", "Variety of toppings"],
-      "tags": ["chain", "hotpot", "mongolian", "premium"]
+      "dishHighlights": [
+        "Mongolian lamb",
+        "Hotpot",
+        "Traditional broth",
+        "Variety of toppings"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "mongolian",
+        "premium"
+      ]
     },
     {
       "id": "jinan-23",
@@ -738,12 +1222,25 @@
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Shizhong District",
-      "coordinates": {"lat": 36.6212, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6212,
+        "lng": 117.0194
+      },
       "phone": "+86 531 8697 4567",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Established restaurant with classic Shandong dishes and historic atmosphere.",
-      "dishHighlights": ["Shandong classic dishes", "Braised prawns", "Sweet and sour carp", "Seasonal dishes"],
-      "tags": ["local", "shandong-cuisine", "historic", "classic"]
+      "dishHighlights": [
+        "Shandong classic dishes",
+        "Braised prawns",
+        "Sweet and sour carp",
+        "Seasonal dishes"
+      ],
+      "tags": [
+        "local",
+        "shandong-cuisine",
+        "historic",
+        "classic"
+      ]
     },
     {
       "id": "jinan-24",
@@ -754,12 +1251,25 @@
       "avgPrice": 300,
       "rating": 4.8,
       "address": "666 East Road, Lixia District",
-      "coordinates": {"lat": 36.6312, "lng": 117.0694},
+      "coordinates": {
+        "lat": 36.6312,
+        "lng": 117.0694
+      },
       "phone": "+86 531 8698 8888",
       "hours": "11:30-14:00, 17:30-21:00",
       "description": "High-end imperial Shandong restaurant with elaborate décor and premium service.",
-      "dishHighlights": ["Imperial feast", "Bird's nest soup", "Shark fin", "Premium seafood"],
-      "tags": ["fine-dining", "luxury", "imperial", "special-occasion"]
+      "dishHighlights": [
+        "Imperial feast",
+        "Bird's nest soup",
+        "Shark fin",
+        "Premium seafood"
+      ],
+      "tags": [
+        "fine-dining",
+        "luxury",
+        "imperial",
+        "special-occasion"
+      ]
     },
     {
       "id": "jinan-25",
@@ -770,11 +1280,24 @@
       "avgPrice": 90,
       "rating": 4.5,
       "address": "Near Baotu Spring",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "hours": "10:30-21:30",
       "description": "Restaurant dedicated to Jinan cuisine with focus on local culinary traditions.",
-      "dishHighlights": ["Jinan specialty dishes", "Spring water tofu", "Local seafood", "Traditional recipes"],
-      "tags": ["local", "jinan-cuisine", "traditional", "specialty"]
+      "dishHighlights": [
+        "Jinan specialty dishes",
+        "Spring water tofu",
+        "Local seafood",
+        "Traditional recipes"
+      ],
+      "tags": [
+        "local",
+        "jinan-cuisine",
+        "traditional",
+        "specialty"
+      ]
     }
   ],
   "transport": {
@@ -832,9 +1355,17 @@
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
       "address": "88 Luoyuan Avenue, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "rating": 4.7,
-      "highlights": ["Central location", "Luxury facilities", "Lake views", "Multiple dining"],
+      "highlights": [
+        "Central location",
+        "Luxury facilities",
+        "Lake views",
+        "Multiple dining"
+      ],
       "bookingTips": "Best location for sightseeing. Book lake view rooms. Famous brunch."
     },
     {
@@ -843,9 +1374,17 @@
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
       "address": "101 Jingyi Road, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0394},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0394
+      },
       "rating": 4.6,
-      "highlights": ["Modern luxury", "River views", "High-rise", "Central location"],
+      "highlights": [
+        "Modern luxury",
+        "River views",
+        "High-rise",
+        "Central location"
+      ],
       "bookingTips": "Newer property. Great for business. Excellent views."
     },
     {
@@ -854,9 +1393,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "19 Luoyuan Avenue, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "rating": 4.5,
-      "highlights": ["Historic luxury", "Near springs", "Central location", "Good service"],
+      "highlights": [
+        "Historic luxury",
+        "Near springs",
+        "Central location",
+        "Good service"
+      ],
       "bookingTips": "Good value luxury. Near major attractions. Traditional Chinese hotel."
     },
     {
@@ -865,9 +1412,17 @@
       "budget": "mid",
       "priceRange": "¥400-800/night",
       "address": "66 Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "rating": 4.4,
-      "highlights": ["Central location", "Modern rooms", "Metro access", "Good breakfast"],
+      "highlights": [
+        "Central location",
+        "Modern rooms",
+        "Metro access",
+        "Good breakfast"
+      ],
       "bookingTips": "Best value in center. Near shopping. Metro nearby."
     },
     {
@@ -876,9 +1431,17 @@
       "budget": "mid",
       "priceRange": "¥350-700/night",
       "address": "88 Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "rating": 4.3,
-      "highlights": ["Near Baotu Spring", "Central location", "Traditional style", "Good service"],
+      "highlights": [
+        "Near Baotu Spring",
+        "Central location",
+        "Traditional style",
+        "Good service"
+      ],
       "bookingTips": "Perfect for sightseeing. Walk to major springs."
     },
     {
@@ -887,9 +1450,17 @@
       "budget": "mid",
       "priceRange": "¥300-600/night",
       "address": "88 Jiefang Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0294
+      },
       "rating": 4.4,
-      "highlights": ["Modern", "Clean rooms", "Good breakfast", "Central"],
+      "highlights": [
+        "Modern",
+        "Clean rooms",
+        "Good breakfast",
+        "Central"
+      ],
       "bookingTips": "Good Chinese hotel chain. Reliable quality."
     },
     {
@@ -898,9 +1469,17 @@
       "budget": "mid",
       "priceRange": "¥350-650/night",
       "address": "168 Luoyuan Avenue, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "rating": 4.5,
-      "highlights": ["Lake views", "Modern", "Good restaurant", "Central"],
+      "highlights": [
+        "Lake views",
+        "Modern",
+        "Good restaurant",
+        "Central"
+      ],
       "bookingTips": "Great views. Near Daming Lake. Good restaurant."
     },
     {
@@ -909,9 +1488,17 @@
       "budget": "mid",
       "priceRange": "¥400-700/night",
       "address": "68 Luoyuan Avenue, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "rating": 4.4,
-      "highlights": ["Near Pearl Spring", "Historic", "Garden setting", "Quiet"],
+      "highlights": [
+        "Near Pearl Spring",
+        "Historic",
+        "Garden setting",
+        "Quiet"
+      ],
       "bookingTips": "Peaceful location. Great for nature lovers."
     },
     {
@@ -920,9 +1507,17 @@
       "budget": "budget",
       "priceRange": "¥150-300/night",
       "address": "88 Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "rating": 4.2,
-      "highlights": ["Central location", "Budget-friendly", "Clean", "Metro access"],
+      "highlights": [
+        "Central location",
+        "Budget-friendly",
+        "Clean",
+        "Metro access"
+      ],
       "bookingTips": "Best budget option in center. Simple but reliable."
     },
     {
@@ -931,9 +1526,17 @@
       "budget": "budget",
       "priceRange": "¥120-250/night",
       "address": "66 Quancheng Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "rating": 4.1,
-      "highlights": ["Budget", "Central", "Simple", "Clean"],
+      "highlights": [
+        "Budget",
+        "Central",
+        "Simple",
+        "Clean"
+      ],
       "bookingTips": "Reliable budget chain. Good location."
     },
     {
@@ -942,9 +1545,17 @@
       "budget": "budget",
       "priceRange": "¥80-200/night",
       "address": "Near Daming Lake",
-      "coordinates": {"lat": 36.6412, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0194
+      },
       "rating": 4.3,
-      "highlights": ["Lake location", "Budget-friendly", "Social atmosphere", "Bike rental"],
+      "highlights": [
+        "Lake location",
+        "Budget-friendly",
+        "Social atmosphere",
+        "Bike rental"
+      ],
       "bookingTips": "Great for backpackers. English speaking. Bike rental available."
     },
     {
@@ -953,9 +1564,17 @@
       "budget": "budget",
       "priceRange": "¥200-400/night",
       "address": "Old City District",
-      "coordinates": {"lat": 36.6612, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6612,
+        "lng": 117.0294
+      },
       "rating": 4.5,
-      "highlights": ["Traditional courtyard", "Local experience", "Central", "Authentic"],
+      "highlights": [
+        "Traditional courtyard",
+        "Local experience",
+        "Central",
+        "Authentic"
+      ],
       "bookingTips": "Experience traditional Jinan living. Book well ahead."
     },
     {
@@ -964,9 +1583,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "Near Shungeng Mountain",
-      "coordinates": {"lat": 36.6212, "lng": 117.0494},
+      "coordinates": {
+        "lat": 36.6212,
+        "lng": 117.0494
+      },
       "rating": 4.5,
-      "highlights": ["Mountain views", "Historic", "Garden setting", "Traditional"],
+      "highlights": [
+        "Mountain views",
+        "Historic",
+        "Garden setting",
+        "Traditional"
+      ],
       "bookingTips": "Great for traditional experience. Book during off-peak."
     },
     {
@@ -975,9 +1602,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1600/night",
       "address": "88 Luoyuan Avenue",
-      "coordinates": {"lat": 36.6412, "lng": 117.0294},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0294
+      },
       "rating": 4.6,
-      "highlights": ["International brand", "Lake views", "Modern facilities", "Good service"],
+      "highlights": [
+        "International brand",
+        "Lake views",
+        "Modern facilities",
+        "Good service"
+      ],
       "bookingTips": "Book lake view rooms. International standard."
     },
     {
@@ -986,9 +1621,17 @@
       "budget": "mid",
       "priceRange": "¥350-600/night",
       "address": "Near Thousand Buddha Mountain",
-      "coordinates": {"lat": 36.6212, "lng": 117.0494},
+      "coordinates": {
+        "lat": 36.6212,
+        "lng": 117.0494
+      },
       "rating": 4.4,
-      "highlights": ["Near mountain", "Hiking access", "Modern", "Good value"],
+      "highlights": [
+        "Near mountain",
+        "Hiking access",
+        "Modern",
+        "Good value"
+      ],
       "bookingTips": "Perfect for hikers. Book during off-peak."
     }
   ],
@@ -997,22 +1640,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Jinan",
-      "howToUse": ["Download before arrival", "Link card"],
-      "tips": ["Works at all merchants", "English available"]
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Needed for shared bikes"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at traditional markets",
-      "howToUse": ["ATM everywhere", "Banks along main streets"],
-      "tips": ["Keep 200¥ for markets", "Most restaurants accept cards"]
+      "howToUse": [
+        "ATM everywhere",
+        "Banks along main streets"
+      ],
+      "tips": [
+        "Keep 200¥ for markets",
+        "Most restaurants accept cards"
+      ]
     }
   ],
   "culturalTips": [
@@ -1128,7 +1789,10 @@
       "nameEn": "Shandong Provincial Hospital",
       "phone": "+86 531 8793 8911",
       "address": "324 Jingwu Road, Lixia District",
-      "coordinates": {"lat": 36.6412, "lng": 117.0394},
+      "coordinates": {
+        "lat": 36.6412,
+        "lng": 117.0394
+      },
       "notes": "English-speaking staff available"
     },
     {
@@ -1137,7 +1801,10 @@
       "nameEn": "Qilu Hospital of Shandong University",
       "phone": "+86 531 8216 9266",
       "address": "107 West Wenhua Road, Lixia District",
-      "coordinates": {"lat": 36.6512, "lng": 117.0194},
+      "coordinates": {
+        "lat": 36.6512,
+        "lng": 117.0194
+      },
       "notes": "Major teaching hospital with English"
     },
     {

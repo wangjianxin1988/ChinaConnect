@@ -6,11 +6,11 @@
   "population": "5.4 million",
   "coordinates": {
     "lat": 29.8683,
-    "lng": 121.5440
+    "lng": 121.544
   },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Ningbo, an ancient port city in Zhejiang province, is one of China's oldest cities and major ports. Known for its thousand-year history, Buddhist temples, traditional architecture, and fresh seafood. Home to the famous Tianyi Pavilion, China's oldest private library.",
-  "coverImage": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200",
+  "coverImage": "https://images.unsplash.com/photo-1661109569638-48cde0946630?w=1200&q=80",
   "highlights": [
     "Tianyi Pavilion - China's oldest private library",
     "Temple of the Heavenly King",
@@ -20,7 +20,13 @@
   ],
   "climate": {
     "type": "Subtropical monsoon climate",
-    "bestMonths": ["March", "April", "May", "October", "November"],
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
     "avgSummerTemp": "28°C (82°F)",
     "avgWinterTemp": "6°C (43°F)",
     "tips": "Best in spring and autumn. Summers hot and humid with typhoons possible. Pleasant winters. Spring for flowers, autumn for foliage."
@@ -31,14 +37,22 @@
       "name": "天一阁",
       "nameEn": "Tianyi Pavilion",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=400",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800",
       "description": "China's oldest private library, built in 1561, with beautiful gardens.",
       "address": "10 Tianyi Lane, Haishu District",
-      "coordinates": { "lat": 29.8822, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8822,
+        "lng": 121.5522
+      },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Ancient library", "Classical gardens", "Book culture", "Ming architecture"],
+      "highlights": [
+        "Ancient library",
+        "Classical gardens",
+        "Book culture",
+        "Ming architecture"
+      ],
       "tips": "Arrive early to avoid crowds. The gardens are beautiful. Audio guide recommended."
     },
     {
@@ -46,14 +60,22 @@
       "name": "天童寺",
       "nameEn": "Tiantong Temple",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85",
       "description": "Ancient Buddhist temple founded in 300 AD, one of the most important in China.",
       "address": "Tiantong Temple, Yinzhou District",
-      "coordinates": { "lat": 29.8522, "lng": 121.7122 },
+      "coordinates": {
+        "lat": 29.8522,
+        "lng": 121.7122
+      },
       "openingHours": "06:00-17:00",
       "ticketPrice": "10¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Ancient Buddhist temple", "Mountain setting", "Zen atmosphere", "Thousand-year history"],
+      "highlights": [
+        "Ancient Buddhist temple",
+        "Mountain setting",
+        "Zen atmosphere",
+        "Thousand-year history"
+      ],
       "tips": "Take bus 622 or 629. Arrive early. Great for hiking in the area."
     },
     {
@@ -61,14 +83,22 @@
       "name": "宁波老外滩",
       "nameEn": "Ningbo Old Bund",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?w=400",
+      "image": "https://images.unsplash.com/photo-1779234518724-218fde21cf9a?w=800&q=85",
       "description": "Historic waterfront area with European colonial architecture from 1800s.",
       "address": "Lao Waitan, Jiangxia District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Colonial buildings", "River views", "Night scene", "Historic architecture"],
+      "highlights": [
+        "Colonial buildings",
+        "River views",
+        "Night scene",
+        "Historic architecture"
+      ],
       "tips": "Best at night when illuminated. Enjoy river cruise. Explore bars and cafes."
     },
     {
@@ -76,14 +106,22 @@
       "name": "东钱湖",
       "nameEn": "Dongqian Lake",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=400",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
       "description": "Scenic lake area with temples, gardens and beautiful mountain scenery.",
       "address": "Dongqian Lake, Yinzhou District",
-      "coordinates": { "lat": 29.8022, "lng": 121.6422 },
+      "coordinates": {
+        "lat": 29.8022,
+        "lng": 121.6422
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free (individual attractions charge)",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Lake scenery", "Bike around lake", "Gardens", "陶公岛"],
+      "highlights": [
+        "Lake scenery",
+        "Bike around lake",
+        "Gardens",
+        "陶公岛"
+      ],
       "tips": "Rent bike to tour the lake. Combine with nearby temples. Stay for sunset."
     },
     {
@@ -91,14 +129,22 @@
       "name": "雪窦山",
       "nameEn": "Xuedou Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1516490658263-ac14ac84c5ca?w=400",
+      "image": "https://images.unsplash.com/photo-1516490658263-ac14ac84c5ca?w=800",
       "description": "Sacred Buddhist mountain with temples and the world's largest弥勒大佛.",
       "address": "Xuedou Mountain, Fenghua District",
-      "coordinates": { "lat": 29.7022, "lng": 121.4222 },
+      "coordinates": {
+        "lat": 29.7022,
+        "lng": 121.4222
+      },
       "openingHours": "07:30-17:00",
       "ticketPrice": "150¥ (includes all)",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Maitreya Buddha statue", "Mountain views", "Ancient temples", "Zen Buddhism"],
+      "highlights": [
+        "Maitreya Buddha statue",
+        "Mountain views",
+        "Ancient temples",
+        "Zen Buddhism"
+      ],
       "tips": "Take tourist bus from city. Wear comfortable shoes. Full day trip."
     },
     {
@@ -106,14 +152,22 @@
       "name": "宁波博物馆",
       "nameEn": "Ningbo Museum",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?w=400",
+      "image": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?w=800",
       "description": "Modern museum with local history exhibits and unique architecture.",
       "address": "1000chuan Road, Yinzhou District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Local history", "Ming and Qing artifacts", "Modern architecture", "Cultural exhibits"],
+      "highlights": [
+        "Local history",
+        "Ming and Qing artifacts",
+        "Modern architecture",
+        "Cultural exhibits"
+      ],
       "tips": "The building architecture is unique. Allow 2 hours. Audio guide available."
     },
     {
@@ -121,14 +175,22 @@
       "name": "月湖",
       "nameEn": "Moon Lake",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1546083715-6f2d8a4e8481?w=400",
+      "image": "https://images.unsplash.com/photo-1546083715-6f2d8a4e8481?w=800",
       "description": "Historic urban lake with classical gardens and traditional buildings.",
       "address": "Moon Lake, Haishu District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Classical gardens", "Quiet atmosphere", "Historic pavilions", "City park"],
+      "highlights": [
+        "Classical gardens",
+        "Quiet atmosphere",
+        "Historic pavilions",
+        "City park"
+      ],
       "tips": "Beautiful in early morning. Combine with Tianyi Pavilion nearby."
     },
     {
@@ -136,14 +198,22 @@
       "name": "鼓楼",
       "nameEn": "Gulou (Drum Tower)",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=400",
+      "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=800",
       "description": "Historic drum tower and traditional shopping street.",
       "address": "Gulou, Haishu District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "openingHours": "Open 24 hours (shops vary)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Drum tower", "Shopping street", "Traditional architecture", "Local snacks"],
+      "highlights": [
+        "Drum tower",
+        "Shopping street",
+        "Traditional architecture",
+        "Local snacks"
+      ],
       "tips": "Shop for local products. Try Ningbo snacks. Best in evening."
     },
     {
@@ -151,14 +221,22 @@
       "name": "阿育王寺",
       "nameEn": "Ayuwang Temple",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=400",
+      "image": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800",
       "description": "Ancient temple housing a relic of Buddha, founded in 4th century.",
       "address": "Ayuwang Temple, Beilun District",
-      "coordinates": { "lat": 29.9222, "lng": 121.8422 },
+      "coordinates": {
+        "lat": 29.9222,
+        "lng": 121.8422
+      },
       "openingHours": "07:00-17:00",
       "ticketPrice": "5¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Buddha relic", "Ancient pagoda", "Zen atmosphere", "Thousand-year history"],
+      "highlights": [
+        "Buddha relic",
+        "Ancient pagoda",
+        "Zen atmosphere",
+        "Thousand-year history"
+      ],
       "tips": "One of China's oldest temples. Take bus 721 or 758. Very peaceful."
     },
     {
@@ -166,14 +244,22 @@
       "name": "象山影视城",
       "nameEn": "Xiangshan Film and Television City",
       "category": "entertainment",
-      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800",
       "description": "Film set complex where many Chinese TV dramas are filmed.",
       "address": "Xiangshan County",
-      "coordinates": { "lat": 29.4722, "lng": 121.8722 },
+      "coordinates": {
+        "lat": 29.4722,
+        "lng": 121.8722
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "130¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Ancient streets", "Film sets", "Live performances", "Costume rentals"],
+      "highlights": [
+        "Ancient streets",
+        "Film sets",
+        "Live performances",
+        "Costume rentals"
+      ],
       "tips": "Check show schedule. Rent costumes for photos. Full day attraction."
     },
     {
@@ -181,14 +267,22 @@
       "name": "南塘老街",
       "nameEn": "Nantang Old Street",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1518639192441-8fce0a09e07d?w=400",
+      "image": "https://images.unsplash.com/photo-1518639192441-8fce0a09e07d?w=800",
       "description": "Restored historic street with traditional architecture and local snacks.",
       "address": "Nantang Old Street, Haishu District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "openingHours": "Open 24 hours (shops 09:00-21:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Traditional architecture", "Local snacks", "Handicrafts", "Photo opportunities"],
+      "highlights": [
+        "Traditional architecture",
+        "Local snacks",
+        "Handicrafts",
+        "Photo opportunities"
+      ],
       "tips": "Try local snacks. Buy souvenirs. Best in evening with lighting."
     },
     {
@@ -196,14 +290,22 @@
       "name": "宁波海洋世界",
       "nameEn": "Ningbo Ocean World",
       "category": "entertainment",
-      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
       "description": "Large aquarium with marine life and dolphin shows.",
       "address": "Jiangdong District",
-      "coordinates": { "lat": 29.8922, "lng": 121.5722 },
+      "coordinates": {
+        "lat": 29.8922,
+        "lng": 121.5722
+      },
       "openingHours": "09:00-17:00",
       "ticketPrice": "150¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Dolphin shows", "Shark tank", "Underwater tunnel", "Marine exhibits"],
+      "highlights": [
+        "Dolphin shows",
+        "Shark tank",
+        "Underwater tunnel",
+        "Marine exhibits"
+      ],
       "tips": "Arrive for dolphin show. Great for families. Book tickets online."
     },
     {
@@ -211,14 +313,22 @@
       "name": "招宝山",
       "nameEn": "Zhaobao Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1501222522756-8e35e1f5e7d2?w=400",
+      "image": "https://images.unsplash.com/photo-1501222522756-8e35e1f5e7d2?w=800",
       "description": "Historic mountain with ancient fortifications and coastal views.",
       "address": "Zhaobao Mountain, Zhenhai District",
-      "coordinates": { "lat": 29.9522, "lng": 121.7222 },
+      "coordinates": {
+        "lat": 29.9522,
+        "lng": 121.7222
+      },
       "openingHours": "07:30-17:00",
       "ticketPrice": "40¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Coastal views", "Ancient炮台", "Historic site", "Sea views"],
+      "highlights": [
+        "Coastal views",
+        "Ancient炮台",
+        "Historic site",
+        "Sea views"
+      ],
       "tips": "Take bus 541 or 371. Great for history buffs. Combine with nearby beach."
     },
     {
@@ -226,14 +336,22 @@
       "name": "庆安会馆",
       "nameEn": "Qing'an Guild Hall",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=400",
+      "image": "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800",
       "description": "Historic guild hall for sailors and merchants with elaborate carvings.",
       "address": "Qing'an Guild Hall, Jiangxia District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "openingHours": "08:30-17:00",
       "ticketPrice": "20¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Elaborate carvings", "Maritime history", "Traditional architecture", "Cultural exhibits"],
+      "highlights": [
+        "Elaborate carvings",
+        "Maritime history",
+        "Traditional architecture",
+        "Cultural exhibits"
+      ],
       "tips": "The carvings are impressive. Learn about maritime trade history."
     },
     {
@@ -241,14 +359,22 @@
       "name": "它山堰",
       "nameEn": " Tashan Dam",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=400",
+      "image": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800",
       "description": "Ancient water conservation project from Tang Dynasty, still in use.",
       "address": " Tashan, Yinzhou District",
-      "coordinates": { "lat": 29.7822, "lng": 121.4722 },
+      "coordinates": {
+        "lat": 29.7822,
+        "lng": 121.4722
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Ancient engineering", "Water flows", "Peaceful setting", "Historical significance"],
+      "highlights": [
+        "Ancient engineering",
+        "Water flows",
+        "Peaceful setting",
+        "Historical significance"
+      ],
       "tips": "For engineering enthusiasts. Combine with nearby hiking. Very peaceful."
     },
     {
@@ -256,14 +382,22 @@
       "name": "梁祝公园",
       "nameEn": "Liangshanbo (Butterfly Lovers) Park",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
       "description": "Theme park based on the famous Chinese legend of the Butterfly Lovers.",
       "address": "High-tech Zone",
-      "coordinates": { "lat": 29.8222, "lng": 121.5922 },
+      "coordinates": {
+        "lat": 29.8222,
+        "lng": 121.5922
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "50¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Butterfly Lovers legend", "Traditional architecture", "Gardens", "Performances"],
+      "highlights": [
+        "Butterfly Lovers legend",
+        "Traditional architecture",
+        "Gardens",
+        "Performances"
+      ],
       "tips": "Check for performances. Great for couples. Learn about Chinese legend."
     },
     {
@@ -271,14 +405,22 @@
       "name": "宁波美术馆",
       "nameEn": "Ningbo Museum of Art",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400",
+      "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800",
       "description": "Modern art museum in a historic building with rotating exhibitions.",
       "address": "1 Alsha Avenue, Jiangxia District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Contemporary art", "Historic building", "Rotating exhibits", "Cultural programs"],
+      "highlights": [
+        "Contemporary art",
+        "Historic building",
+        "Rotating exhibits",
+        "Cultural programs"
+      ],
       "tips": "Check current exhibitions. Combine with Old Bund visit."
     },
     {
@@ -286,14 +428,22 @@
       "name": "福泉山",
       "nameEn": "Fuquan Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=400",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
       "description": "Mountain tea plantation with panoramic views of Dongqian Lake.",
       "address": "Dongqian Lake area",
-      "coordinates": { "lat": 29.8122, "lng": 121.6522 },
+      "coordinates": {
+        "lat": 29.8122,
+        "lng": 121.6522
+      },
       "openingHours": "06:00-18:00",
       "ticketPrice": "40¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Tea plantations", "Lake views", "Hiking trails", "Sunrise"],
+      "highlights": [
+        "Tea plantations",
+        "Lake views",
+        "Hiking trails",
+        "Sunrise"
+      ],
       "tips": "Come for sunrise. The tea is famous. Great hiking in the area."
     },
     {
@@ -301,14 +451,22 @@
       "name": "沙孟海书院",
       "nameEn": "Shamenghai Academy",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400",
+      "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800",
       "description": "Historic academy and former residence of famous calligrapher.",
       "address": "Haiyian District",
-      "coordinates": { "lat": 29.8822, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8822,
+        "lng": 121.5522
+      },
       "openingHours": "08:30-17:00",
       "ticketPrice": "15¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Calligraphy", "Traditional architecture", "Cultural heritage", "Scholar's garden"],
+      "highlights": [
+        "Calligraphy",
+        "Traditional architecture",
+        "Cultural heritage",
+        "Scholar's garden"
+      ],
       "tips": "For calligraphy lovers. The gardens are peaceful."
     },
     {
@@ -316,14 +474,22 @@
       "name": "前童古镇",
       "nameEn": "Qiantong Ancient Town",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=400",
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800",
       "description": "Preserved ancient water town with traditional Ming and Qing architecture.",
       "address": "Xianpo County",
-      "coordinates": { "lat": 29.3522, "lng": 121.4422 },
+      "coordinates": {
+        "lat": 29.3522,
+        "lng": 121.4422
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "70¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Ancient architecture", "Water lanes", "Traditional life", "Folk culture"],
+      "highlights": [
+        "Ancient architecture",
+        "Water lanes",
+        "Traditional life",
+        "Folk culture"
+      ],
       "tips": "Less crowded than other water towns. Authentic experience. Half day trip."
     },
     {
@@ -331,14 +497,22 @@
       "name": "宁波科技馆",
       "nameEn": "Ningbo Science and Technology Museum",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
       "description": "Modern interactive science museum with many hands-on exhibits.",
       "address": "Jiangdong District",
-      "coordinates": { "lat": 29.8922, "lng": 121.5822 },
+      "coordinates": {
+        "lat": 29.8922,
+        "lng": 121.5822
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "50¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Interactive exhibits", "IMAX theater", "Science shows", "Space exhibit"],
+      "highlights": [
+        "Interactive exhibits",
+        "IMAX theater",
+        "Science shows",
+        "Space exhibit"
+      ],
       "tips": "Great for families. Allow 3-4 hours. Buy tickets online."
     },
     {
@@ -346,14 +520,22 @@
       "name": "城隍庙",
       "nameEn": "Chenghuang Temple",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400",
+      "image": "https://images.unsplash.com/photo-1591267990532-6b3619c85ab5?w=800&q=85",
       "description": "Historic temple dedicated to the city god with traditional buildings.",
       "address": "East of Tianyi Lane",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "10¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Temple architecture", "Local prayers", "Historic significance", "Atmospheric"],
+      "highlights": [
+        "Temple architecture",
+        "Local prayers",
+        "Historic significance",
+        "Atmospheric"
+      ],
       "tips": "Near Tianyi Pavilion. Experience local worship culture."
     },
     {
@@ -361,14 +543,22 @@
       "name": "三江口",
       "nameEn": "Three River Mouth",
       "category": "landmark",
-      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=400",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800",
       "description": "Confluence of three rivers with modern skyline views.",
       "address": "Three River Mouth, Jiangxia District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["River confluence", "Night views", "Modern skyline", "Photo spot"],
+      "highlights": [
+        "River confluence",
+        "Night views",
+        "Modern skyline",
+        "Photo spot"
+      ],
       "tips": "Best at night. Take river cruise. Great photo opportunities."
     },
     {
@@ -376,14 +566,22 @@
       "name": "宁波动物园",
       "nameEn": "Ningbo Zoo",
       "category": "nature",
-      "image": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=400",
+      "image": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=800",
       "description": "Large zoo with pandas and variety of animals in natural setting.",
       "address": "Yinzhou District",
-      "coordinates": { "lat": 29.8222, "lng": 121.5922 },
+      "coordinates": {
+        "lat": 29.8222,
+        "lng": 121.5922
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "130¥",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Giant pandas", "Natural setting", "Safari area", "Shows"],
+      "highlights": [
+        "Giant pandas",
+        "Natural setting",
+        "Safari area",
+        "Shows"
+      ],
       "tips": "Arrive early for pandas. Take观光车. Great for families."
     }
   ],
@@ -397,11 +595,23 @@
       "avgPrice": 50,
       "rating": 4.6,
       "address": "5 Yongxing Lane, Haishu District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "07:00-20:00",
       "description": "Legendary restaurant since 1926, famous for soup dumplings and traditional dishes.",
-      "dishHighlights": ["Soup dumplings", "Ningbo style noodles", "Sweet rice balls"],
-      "tags": ["local", "famous", "historic", "must-try"]
+      "dishHighlights": [
+        "Soup dumplings",
+        "Ningbo style noodles",
+        "Sweet rice balls"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "historic",
+        "must-try"
+      ]
     },
     {
       "id": "ningbo-2",
@@ -412,12 +622,25 @@
       "avgPrice": 200,
       "rating": 4.6,
       "address": "68 Zhongshan Road, Haishu District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "phone": "+86 574 8739 1888",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "High-end restaurant serving refined Ningbo cuisine with elegant atmosphere.",
-      "dishHighlights": [" steamed fish", "Shark fin soup", "Abalone", "Local specialties"],
-      "tags": ["fine-dining", "ningbo-cuisine", "luxury", "special-occasion"]
+      "dishHighlights": [
+        " steamed fish",
+        "Shark fin soup",
+        "Abalone",
+        "Local specialties"
+      ],
+      "tags": [
+        "fine-dining",
+        "ningbo-cuisine",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "ningbo-3",
@@ -428,11 +651,24 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "10:30-21:30",
       "description": "Popular for traditional Ningbo home-style dishes.",
-      "dishHighlights": ["Braised pork belly", "Steamed fish", "Vegetables", "Rice dishes"],
-      "tags": ["local", "home-style", "ningbo-cuisine", "popular"]
+      "dishHighlights": [
+        "Braised pork belly",
+        "Steamed fish",
+        "Vegetables",
+        "Rice dishes"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "ningbo-cuisine",
+        "popular"
+      ]
     },
     {
       "id": "ningbo-4",
@@ -443,12 +679,25 @@
       "avgPrice": 150,
       "rating": 4.5,
       "address": "Dongqian Lake area",
-      "coordinates": { "lat": 29.8022, "lng": 121.6422 },
+      "coordinates": {
+        "lat": 29.8022,
+        "lng": 121.6422
+      },
       "phone": "+86 574 8280 8888",
       "hours": "10:00-21:00",
       "description": "Famous for fresh fish and seafood from Dongqian Lake.",
-      "dishHighlights": ["Steamed carp", "Lake fish", "Fresh shrimp", "Shellfish"],
-      "tags": ["local", "seafood", "lake-cuisine", "scenic"]
+      "dishHighlights": [
+        "Steamed carp",
+        "Lake fish",
+        "Fresh shrimp",
+        "Shellfish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "lake-cuisine",
+        "scenic"
+      ]
     },
     {
       "id": "ningbo-5",
@@ -459,11 +708,22 @@
       "avgPrice": 20,
       "rating": 4.6,
       "address": "Nantang Old Street",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "hours": "09:00-21:00",
       "description": "Famous for crispy oil-fried dough twists - a Ningbo specialty snack.",
-      "dishHighlights": ["Oil-fried dough twists", "Various flavors"],
-      "tags": ["local", "snacks", "famous", "souvenir"]
+      "dishHighlights": [
+        "Oil-fried dough twists",
+        "Various flavors"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous",
+        "souvenir"
+      ]
     },
     {
       "id": "ningbo-6",
@@ -474,12 +734,24 @@
       "avgPrice": 250,
       "rating": 4.7,
       "address": "1000 Xintiandi, Yinzhou District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
       "phone": "+86 574 8908 8888",
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "Upscale restaurant serving premium Ningbo cuisine.",
-      "dishHighlights": ["Premium seafood", "Traditional recipes", "Elegant presentation"],
-      "tags": ["fine-dining", "ningbo-cuisine", "luxury", "special-occasion"]
+      "dishHighlights": [
+        "Premium seafood",
+        "Traditional recipes",
+        "Elegant presentation"
+      ],
+      "tags": [
+        "fine-dining",
+        "ningbo-cuisine",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "ningbo-7",
@@ -490,11 +762,23 @@
       "avgPrice": 25,
       "rating": 4.5,
       "address": "Near Tianyi Pavilion",
-      "coordinates": { "lat": 29.8822, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8822,
+        "lng": 121.5522
+      },
       "hours": "08:00-18:00",
       "description": "Famous for soft rice cakes - a traditional Ningbo specialty.",
-      "dishHighlights": ["Steamed rice cake", "Fried rice cake", "Rice cake soup"],
-      "tags": ["local", "snacks", "traditional", "famous"]
+      "dishHighlights": [
+        "Steamed rice cake",
+        "Fried rice cake",
+        "Rice cake soup"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "traditional",
+        "famous"
+      ]
     },
     {
       "id": "ningbo-8",
@@ -505,11 +789,24 @@
       "avgPrice": 100,
       "rating": 4.4,
       "address": "Dongmen Night Market area",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "17:00-02:00",
       "description": "Popular outdoor seafood market with fresh catches.",
-      "dishHighlights": ["Grilled seafood", "Steamed shells", "Fried fish", "Shrimp"],
-      "tags": ["local", "seafood", "night-market", "fresh"]
+      "dishHighlights": [
+        "Grilled seafood",
+        "Steamed shells",
+        "Fried fish",
+        "Shrimp"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "night-market",
+        "fresh"
+      ]
     },
     {
       "id": "ningbo-9",
@@ -520,11 +817,23 @@
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Various locations",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "06:00-14:00",
       "description": "Sweet rice dumplings in soup - a famous Ningbo breakfast.",
-      "dishHighlights": ["Sweet rice dumplings", "Black sesame filling", "Ginger soup"],
-      "tags": ["local", "dessert", "breakfast", "traditional"]
+      "dishHighlights": [
+        "Sweet rice dumplings",
+        "Black sesame filling",
+        "Ginger soup"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "breakfast",
+        "traditional"
+      ]
     },
     {
       "id": "ningbo-10",
@@ -535,11 +844,24 @@
       "avgPrice": 70,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "10:00-22:00",
       "description": "Traditional dishes from old lane neighborhoods.",
-      "dishHighlights": ["Braised pork", "Steamed fish", "Pickled vegetables", "Tofu"],
-      "tags": ["local", "ningbo-cuisine", "home-style", "traditional"]
+      "dishHighlights": [
+        "Braised pork",
+        "Steamed fish",
+        "Pickled vegetables",
+        "Tofu"
+      ],
+      "tags": [
+        "local",
+        "ningbo-cuisine",
+        "home-style",
+        "traditional"
+      ]
     },
     {
       "id": "ningbo-11",
@@ -550,11 +872,23 @@
       "avgPrice": 50,
       "rating": 4.6,
       "address": "Multiple locations",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "07:00-19:00",
       "description": "Famous for noodles with fresh yellow croaker - a local specialty.",
-      "dishHighlights": ["Yellow croaker noodles", "Seafood noodles", "Fish soup"],
-      "tags": ["local", "noodles", "seafood", "famous"]
+      "dishHighlights": [
+        "Yellow croaker noodles",
+        "Seafood noodles",
+        "Fish soup"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "seafood",
+        "famous"
+      ]
     },
     {
       "id": "ningbo-12",
@@ -565,12 +899,24 @@
       "avgPrice": 180,
       "rating": 4.6,
       "address": "168 Zhongshan Road, Haishu District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "phone": "+86 574 8728 8888",
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "High-end restaurant serving refined Shanghai and Ningbo cuisine.",
-      "dishHighlights": ["Shanghai-style dishes", "Ningbo specialties", "Premium seafood"],
-      "tags": ["fine-dining", "shanghai-ningbo", "luxury", "special-occasion"]
+      "dishHighlights": [
+        "Shanghai-style dishes",
+        "Ningbo specialties",
+        "Premium seafood"
+      ],
+      "tags": [
+        "fine-dining",
+        "shanghai-ningbo",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "ningbo-13",
@@ -581,11 +927,24 @@
       "avgPrice": 150,
       "rating": 4.5,
       "address": "Xianxiang County",
-      "coordinates": { "lat": 29.7022, "lng": 121.7622 },
+      "coordinates": {
+        "lat": 29.7022,
+        "lng": 121.7622
+      },
       "hours": "10:00-22:00",
       "description": "Famous for fresh seafood from Xianxiang fishing village.",
-      "dishHighlights": ["Fresh crab", "Steamed fish", "Salt shrimp", "Shellfish"],
-      "tags": ["local", "seafood", "fresh", "village-style"]
+      "dishHighlights": [
+        "Fresh crab",
+        "Steamed fish",
+        "Salt shrimp",
+        "Shellfish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "fresh",
+        "village-style"
+      ]
     },
     {
       "id": "ningbo-14",
@@ -596,11 +955,23 @@
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Xikou scenic area",
-      "coordinates": { "lat": 29.7022, "lng": 121.4222 },
+      "coordinates": {
+        "lat": 29.7022,
+        "lng": 121.4222
+      },
       "hours": "08:00-18:00",
       "description": "Famous crispy multi-layer cake from Xikou area.",
-      "dishHighlights": ["Thousand-layer cake", "Various flavors", "Crispy texture"],
-      "tags": ["local", "snacks", "famous", "souvenir"]
+      "dishHighlights": [
+        "Thousand-layer cake",
+        "Various flavors",
+        "Crispy texture"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous",
+        "souvenir"
+      ]
     },
     {
       "id": "ningbo-15",
@@ -611,12 +982,25 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "88 Renmin Road, Haishu District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "phone": "+86 574 8739 1888",
       "hours": "10:30-21:30",
       "description": "Historic restaurant known for traditional Ningbo dishes.",
-      "dishHighlights": ["Traditional dishes", "Steamed fish", "Braised pork", "Local vegetables"],
-      "tags": ["local", "historic", "ningbo-cuisine", "traditional"]
+      "dishHighlights": [
+        "Traditional dishes",
+        "Steamed fish",
+        "Braised pork",
+        "Local vegetables"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "ningbo-cuisine",
+        "traditional"
+      ]
     },
     {
       "id": "ningbo-16",
@@ -627,11 +1011,24 @@
       "avgPrice": 60,
       "rating": 4.3,
       "address": "Wanda Plaza, various locations",
-      "coordinates": { "lat": 29.8622, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
       "hours": "10:00-22:00",
       "description": "Large shopping mall with multiple restaurant options.",
-      "dishHighlights": ["Various cuisines", "Fast food", "Asian food", "Desserts"],
-      "tags": ["chain", "food-court", "shopping", "variety"]
+      "dishHighlights": [
+        "Various cuisines",
+        "Fast food",
+        "Asian food",
+        "Desserts"
+      ],
+      "tags": [
+        "chain",
+        "food-court",
+        "shopping",
+        "variety"
+      ]
     },
     {
       "id": "ningbo-17",
@@ -642,12 +1039,25 @@
       "avgPrice": 150,
       "rating": 4.7,
       "address": "Yinzhou District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
       "phone": "+86 574 8908 8888",
       "hours": "24 hours",
       "description": "Famous chain hotpot with excellent service.",
-      "dishHighlights": ["Spicy hotpot", "Fresh beef", "Hand-pulled noodles", "Free snacks"],
-      "tags": ["chain", "hotpot", "service", "entertainment"]
+      "dishHighlights": [
+        "Spicy hotpot",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free snacks"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "entertainment"
+      ]
     },
     {
       "id": "ningbo-18",
@@ -658,11 +1068,23 @@
       "avgPrice": 20,
       "rating": 4.4,
       "address": "Nantang Old Street",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "hours": "09:00-21:00",
       "description": "Traditional rice flour desserts - a Ningbo specialty.",
-      "dishHighlights": ["Rice flour balls", "Sweet soup", "Osmanthus syrup"],
-      "tags": ["local", "dessert", "traditional", "sweet"]
+      "dishHighlights": [
+        "Rice flour balls",
+        "Sweet soup",
+        "Osmanthus syrup"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "sweet"
+      ]
     },
     {
       "id": "ningbo-19",
@@ -673,11 +1095,23 @@
       "avgPrice": 30,
       "rating": 4.5,
       "address": "Ninghai County",
-      "coordinates": { "lat": 29.3422, "lng": 121.4422 },
+      "coordinates": {
+        "lat": 29.3422,
+        "lng": 121.4422
+      },
       "hours": "06:00-14:00",
       "description": "Famous noodle soup with wheat shrimp shapes - local breakfast.",
-      "dishHighlights": ["Wheat shrimp soup", "Vegetables", "Ginger"],
-      "tags": ["local", "breakfast", "noodles", "traditional"]
+      "dishHighlights": [
+        "Wheat shrimp soup",
+        "Vegetables",
+        "Ginger"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "noodles",
+        "traditional"
+      ]
     },
     {
       "id": "ningbo-20",
@@ -688,11 +1122,23 @@
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Beilun District",
-      "coordinates": { "lat": 29.9022, "lng": 121.8422 },
+      "coordinates": {
+        "lat": 29.9022,
+        "lng": 121.8422
+      },
       "hours": "10:00-22:00",
       "description": "Fresh seafood from Beilun port area.",
-      "dishHighlights": ["Steamed crab", "Salt and pepper shrimp", "Grilled fish"],
-      "tags": ["local", "seafood", "fresh", "port"]
+      "dishHighlights": [
+        "Steamed crab",
+        "Salt and pepper shrimp",
+        "Grilled fish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "fresh",
+        "port"
+      ]
     },
     {
       "id": "ningbo-21",
@@ -703,11 +1149,23 @@
       "avgPrice": 40,
       "rating": 4.3,
       "address": "Various locations",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "10:00-22:00",
       "description": "Famous for fermented stinky vegetable - an acquired taste.",
-      "dishHighlights": ["Stinky vegetable", "Stinky tofu", "Strong flavor"],
-      "tags": ["local", "ningbo-cuisine", "unique", "acquired-taste"]
+      "dishHighlights": [
+        "Stinky vegetable",
+        "Stinky tofu",
+        "Strong flavor"
+      ],
+      "tags": [
+        "local",
+        "ningbo-cuisine",
+        "unique",
+        "acquired-taste"
+      ]
     },
     {
       "id": "ningbo-22",
@@ -718,11 +1176,24 @@
       "avgPrice": 70,
       "rating": 4.5,
       "address": "Nantang Old Street area",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "hours": "10:00-22:00",
       "description": "Traditional restaurant serving regional Zhejiang dishes.",
-      "dishHighlights": ["Regional dishes", "Steamed fish", "Local vegetables", "Rice wine"],
-      "tags": ["local", "zhejiang-cuisine", "traditional", "popular"]
+      "dishHighlights": [
+        "Regional dishes",
+        "Steamed fish",
+        "Local vegetables",
+        "Rice wine"
+      ],
+      "tags": [
+        "local",
+        "zhejiang-cuisine",
+        "traditional",
+        "popular"
+      ]
     },
     {
       "id": "ningbo-23",
@@ -733,11 +1204,24 @@
       "avgPrice": 30,
       "rating": 4.3,
       "address": "Gulou area",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "17:00-23:00",
       "description": "Popular night market near the drum tower.",
-      "dishHighlights": ["Grilled skewers", "Fried rice", "Hot pot", "Snacks"],
-      "tags": ["local", "night-market", "street-food", "budget"]
+      "dishHighlights": [
+        "Grilled skewers",
+        "Fried rice",
+        "Hot pot",
+        "Snacks"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "budget"
+      ]
     },
     {
       "id": "ningbo-24",
@@ -748,11 +1232,23 @@
       "avgPrice": 15,
       "rating": 4.4,
       "address": "Street vendors",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "全天",
       "description": "Sweet fried rice cakes - a traditional Ningbo snack.",
-      "dishHighlights": ["Sweet rice cake", "Pan-fried", "Various fillings"],
-      "tags": ["local", "dessert", "snacks", "traditional"]
+      "dishHighlights": [
+        "Sweet rice cake",
+        "Pan-fried",
+        "Various fillings"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "snacks",
+        "traditional"
+      ]
     },
     {
       "id": "ningbo-25",
@@ -763,11 +1259,23 @@
       "avgPrice": 15,
       "rating": 4.5,
       "address": "Bakeries around city",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "hours": "06:00-20:00",
       "description": "Famous for fresh meat mooncakes - a Ningbo specialty.",
-      "dishHighlights": ["Fresh meat mooncake", "Pork filling", "Flaky crust"],
-      "tags": ["local", "snacks", "famous", "baked-goods"]
+      "dishHighlights": [
+        "Fresh meat mooncake",
+        "Pork filling",
+        "Flaky crust"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous",
+        "baked-goods"
+      ]
     }
   ],
   "transport": {
@@ -825,9 +1333,17 @@
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
       "address": "168 Renmin Road, Jiangxia District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "rating": 4.7,
-      "highlights": ["River views", "Central location", "Luxury facilities", "Multiple dining"],
+      "highlights": [
+        "River views",
+        "Central location",
+        "Luxury facilities",
+        "Multiple dining"
+      ],
       "bookingTips": "Best location. Book river view rooms. Excellent service."
     },
     {
@@ -836,9 +1352,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1800/night",
       "address": "99 Chuangmao Road, Yinzhou District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
       "rating": 4.6,
-      "highlights": ["Modern luxury", "City views", "Business facilities", "Multiple restaurants"],
+      "highlights": [
+        "Modern luxury",
+        "City views",
+        "Business facilities",
+        "Multiple restaurants"
+      ],
       "bookingTips": "Good for business travelers. Book city view rooms."
     },
     {
@@ -847,9 +1371,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "2 Linhe Middle Road, Yinzhou District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
       "rating": 4.6,
-      "highlights": ["Central location", "Historic luxury", "Good service", "Renovated rooms"],
+      "highlights": [
+        "Central location",
+        "Historic luxury",
+        "Good service",
+        "Renovated rooms"
+      ],
       "bookingTips": "Book during off-peak. Good value for location."
     },
     {
@@ -858,9 +1390,17 @@
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
       "address": "75 Xianfeng Road, Yinzhou District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
       "rating": 4.6,
-      "highlights": ["Modern luxury", "Central location", "Westin quality", "Good breakfast"],
+      "highlights": [
+        "Modern luxury",
+        "Central location",
+        "Westin quality",
+        "Good breakfast"
+      ],
       "bookingTips": "Westin brand quality. Book direct for best rates."
     },
     {
@@ -869,9 +1409,17 @@
       "budget": "budget",
       "priceRange": "¥150-300/night",
       "address": "Near Tianyi Square",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "rating": 4.2,
-      "highlights": ["Near Tianyi", "Budget-friendly", "Clean rooms", "Central location"],
+      "highlights": [
+        "Near Tianyi",
+        "Budget-friendly",
+        "Clean rooms",
+        "Central location"
+      ],
       "bookingTips": "Best budget option in central area."
     },
     {
@@ -880,9 +1428,17 @@
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
       "address": "Dongqian Lake area",
-      "coordinates": { "lat": 29.8022, "lng": 121.6422 },
+      "coordinates": {
+        "lat": 29.8022,
+        "lng": 121.6422
+      },
       "rating": 4.7,
-      "highlights": ["Lake views", "Resort facilities", "Scenic location", "Golf course"],
+      "highlights": [
+        "Lake views",
+        "Resort facilities",
+        "Scenic location",
+        "Golf course"
+      ],
       "bookingTips": "Perfect for lake vacation. Book lake view rooms."
     },
     {
@@ -891,9 +1447,17 @@
       "budget": "budget",
       "priceRange": "¥200-500/night",
       "address": "Nantang Old Street",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "rating": 4.4,
-      "highlights": ["Old street location", "Traditional style", "Central location", "Boutique"],
+      "highlights": [
+        "Old street location",
+        "Traditional style",
+        "Central location",
+        "Boutique"
+      ],
       "bookingTips": "Unique experience on old street. Book during off-peak."
     },
     {
@@ -902,9 +1466,17 @@
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
       "address": "1688 Zhongxin Road, Yinzhou District",
-      "coordinates": { "lat": 29.8622, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
       "rating": 4.5,
-      "highlights": ["Modern facilities", "Large rooms", "Good service", "Value"],
+      "highlights": [
+        "Modern facilities",
+        "Large rooms",
+        "Good service",
+        "Value"
+      ],
       "bookingTips": "Good value luxury. Book weekend rates."
     },
     {
@@ -913,9 +1485,17 @@
       "budget": "luxury",
       "priceRange": "¥500-1000/night",
       "address": "1 Huaisheng Road, Jiangxia District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "rating": 4.5,
-      "highlights": ["River location", "Central", "Comfortable rooms", "Good breakfast"],
+      "highlights": [
+        "River location",
+        "Central",
+        "Comfortable rooms",
+        "Good breakfast"
+      ],
       "bookingTips": "Good central location. Book river view rooms."
     },
     {
@@ -924,9 +1504,17 @@
       "budget": "mid",
       "priceRange": "¥350-600/night",
       "address": "Near Tianyi Pavilion",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "rating": 4.4,
-      "highlights": ["Near museum", "Cultural area", "Modern", "Good service"],
+      "highlights": [
+        "Near museum",
+        "Cultural area",
+        "Modern",
+        "Good service"
+      ],
       "bookingTips": "Perfect for cultural tourists. Book during off-peak."
     },
     {
@@ -935,9 +1523,17 @@
       "budget": "mid",
       "priceRange": "¥400-700/night",
       "address": "Near Old Bund",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "rating": 4.5,
-      "highlights": ["River views", "Bund area", "Historic", "Modern"],
+      "highlights": [
+        "River views",
+        "Bund area",
+        "Historic",
+        "Modern"
+      ],
       "bookingTips": "Great Bund views. Perfect for evening walks."
     },
     {
@@ -946,9 +1542,17 @@
       "budget": "mid",
       "priceRange": "¥300-550/night",
       "address": "Near Putuo Mountain",
-      "coordinates": { "lat": 29.9722, "lng": 121.9822 },
+      "coordinates": {
+        "lat": 29.9722,
+        "lng": 121.9822
+      },
       "rating": 4.4,
-      "highlights": ["Near Putuo", "Pilgrimage route", "Buddhist culture", "Value"],
+      "highlights": [
+        "Near Putuo",
+        "Pilgrimage route",
+        "Buddhist culture",
+        "Value"
+      ],
       "bookingTips": "Perfect for Putuo Mountain visitors."
     },
     {
@@ -957,9 +1561,17 @@
       "budget": "mid",
       "priceRange": "¥350-650/night",
       "address": "Moon Lake area",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "rating": 4.4,
-      "highlights": ["Lake views", "Quiet area", "Central location", "Traditional"],
+      "highlights": [
+        "Lake views",
+        "Quiet area",
+        "Central location",
+        "Traditional"
+      ],
       "bookingTips": "Peaceful location. Great for romantic trips."
     },
     {
@@ -968,9 +1580,17 @@
       "budget": "budget",
       "priceRange": "¥150-300/night",
       "address": "Near Museum area",
-      "coordinates": { "lat": 29.8622, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
       "rating": 4.3,
-      "highlights": ["Near museum", "Modern", "Budget-friendly", "Clean"],
+      "highlights": [
+        "Near museum",
+        "Modern",
+        "Budget-friendly",
+        "Clean"
+      ],
       "bookingTips": "Great for museum lovers. Budget option."
     },
     {
@@ -979,9 +1599,17 @@
       "budget": "budget",
       "priceRange": "¥200-450/night",
       "address": "Xiangshan area",
-      "coordinates": { "lat": 29.4722, "lng": 121.8622 },
+      "coordinates": {
+        "lat": 29.4722,
+        "lng": 121.8622
+      },
       "rating": 4.5,
-      "highlights": ["Seafood", "Island scenery", "Local experience", "Fresh"],
+      "highlights": [
+        "Seafood",
+        "Island scenery",
+        "Local experience",
+        "Fresh"
+      ],
       "bookingTips": "Perfect for seafood lovers. Book weekend."
     }
   ],
@@ -990,22 +1618,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Ningbo",
-      "howToUse": ["Download app", "Link card"],
-      "tips": ["Works at all merchants", "English mode available"]
+      "howToUse": [
+        "Download app",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English mode available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Needed for shared bikes"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at traditional markets",
-      "howToUse": ["ATM everywhere", "Banks common"],
-      "tips": ["Keep 100¥ for markets", "Most restaurants accept cards"]
+      "howToUse": [
+        "ATM everywhere",
+        "Banks common"
+      ],
+      "tips": [
+        "Keep 100¥ for markets",
+        "Most restaurants accept cards"
+      ]
     }
   ],
   "culturalTips": [
@@ -1127,7 +1773,10 @@
       "nameEn": "Ningbo First Hospital",
       "phone": "+86 574 8730 5569",
       "address": "59 Liuting Street, Haishu District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
       "notes": "English-speaking staff available"
     },
     {
@@ -1136,7 +1785,10 @@
       "nameEn": "Affiliated Hospital of Ningbo University School of Medicine",
       "phone": "+86 574 8703 5514",
       "address": "247 Renmin Road, Jiangxia District",
-      "coordinates": { "lat": 29.8722, "lng": 121.5622 },
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
       "notes": "Another major hospital"
     },
     {

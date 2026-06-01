@@ -10,7 +10,7 @@
   },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Yantai is a beautiful coastal city in Shandong Province, known for its wine production, fresh seafood, and stunning seaside scenery. Features the famous Penglai Pavilion, scenic coastal road, and as the birthplace of China's modern macaroni industry. A charming blend of colonial architecture and traditional Chinese culture.",
-  "coverImage": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200",
+  "coverImage": "https://images.unsplash.com/photo-1758784548356-e0992d471bb4?w=1200&q=80",
   "highlights": [
     "Penglai Pavilion - legendary birthplace of immortals",
     "Coastal Tourism Zone - beautiful seaside scenery",
@@ -20,7 +20,12 @@
   ],
   "climate": {
     "type": "Temperate monsoon",
-    "bestMonths": ["May", "June", "September", "October"],
+    "bestMonths": [
+      "May",
+      "June",
+      "September",
+      "October"
+    ],
     "avgSummerTemp": "24C (75F)",
     "avgWinterTemp": "1C (34F)",
     "tips": "Best in summer for beaches and autumn for wine harvest. Pleasant sea breezes. Winter cold but scenic. Avoid Golden Week October."
@@ -31,14 +36,22 @@
       "name": "蓬莱阁",
       "nameEn": "Penglai Pavilion",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1537531383496-f4749b85ceb3?w=400",
+      "image": "https://images.unsplash.com/photo-1537531383496-f4749b85ceb3?w=800",
       "description": "Legendary Taoist shrine said to be the dwelling place of the Eight Immortals. UNESCO World Heritage site with ancient architecture and sea views.",
       "address": "Penglai District, Yantai",
-      "coordinates": {"lat": 37.8101, "lng": 120.7557},
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
       "openingHours": "06:30-18:30 (summer), 07:00-17:30 (winter)",
       "ticketPrice": "100¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Sea of immortals", "Ancient architecture", "Coastal views", "Eight Immortals hall"],
+      "highlights": [
+        "Sea of immortals",
+        "Ancient architecture",
+        "Coastal views",
+        "Eight Immortals hall"
+      ],
       "tips": "Arrive early to avoid crowds. Combine with nearby sam beach. The legend of Eight Immortals crossing the sea."
     },
     {
@@ -46,14 +59,22 @@
       "name": "烟台山",
       "nameEn": "Yantai Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400",
+      "image": "https://images.unsplash.com/photo-1507437655600-801a83dd885c?w=800&q=85",
       "description": "Historic hilltop park with colonial architecture, lighthouse, and panoramic views of Yantai Bay.",
       "address": "Yantai Mountain, Zhifu District",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "openingHours": "06:00-18:00",
       "ticketPrice": "Free (some attractions 30¥)",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Lighthouse", "Colonial buildings", "Bay views", "Historic churches"],
+      "highlights": [
+        "Lighthouse",
+        "Colonial buildings",
+        "Bay views",
+        "Historic churches"
+      ],
       "tips": "Best at sunset for photos. The lighthouse is iconic. Explore colonial history."
     },
     {
@@ -61,14 +82,22 @@
       "name": "金沙滩",
       "nameEn": "Golden Sand Beach",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1507437655600-801a83dd885c?w=800&q=85",
       "description": "10km pristine beach with golden sand, clear water, and modern coastal developments.",
       "address": "Coastal Development Zone",
-      "coordinates": {"lat": 37.4665, "lng": 121.4414},
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-4 hours",
-      "highlights": ["Clean beach", "Swimming", "Water sports", "Sunset views"],
+      "highlights": [
+        "Clean beach",
+        "Swimming",
+        "Water sports",
+        "Sunset views"
+      ],
       "tips": "Best in summer for swimming. Arrive early for parking. Water sports available."
     },
     {
@@ -76,14 +105,22 @@
       "name": "张裕酒文化博物馆",
       "nameEn": "Changyu Wine Culture Museum",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400",
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800",
       "description": "World's largest wine museum showcasing China's premier wine producer with underground wine cellars.",
       "address": "56 Daman Road, Zhifu District",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "80¥ (includes wine tasting)",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Wine cellars", "Wine tasting", "Production process", "Wine history"],
+      "highlights": [
+        "Wine cellars",
+        "Wine tasting",
+        "Production process",
+        "Wine history"
+      ],
       "tips": "Must-book for wine lovers. Tasting includes premium wines. Underground cellars are impressive."
     },
     {
@@ -91,14 +128,22 @@
       "name": "月亮湾",
       "nameEn": "Moon Bay",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400",
+      "image": "https://images.unsplash.com/photo-1507437655600-801a83dd885c?w=800&q=85",
       "description": "Romantic bay with crescent shape, famous love lock displays, and romantic sunset views.",
       "address": "Yantai Coastal Zone",
-      "coordinates": {"lat": 37.5265, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5265,
+        "lng": 121.4014
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Love locks", "Romantic atmosphere", "Sunset views", "Sea views"],
+      "highlights": [
+        "Love locks",
+        "Romantic atmosphere",
+        "Sunset views",
+        "Sea views"
+      ],
       "tips": "Best at sunset. Couples place love locks. Great for photos. The Moon老人 rock is iconic."
     },
     {
@@ -106,14 +151,22 @@
       "name": "蓬莱水城",
       "nameEn": "Penglai Water City",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=400",
+      "image": "https://images.unsplash.com/photo-1674200648539-75a8bde2fee7?w=800&q=85",
       "description": "Historic naval fortress and port from Ming Dynasty, used to defend against wokou pirates.",
       "address": "Penglai District",
-      "coordinates": {"lat": 37.8101, "lng": 120.7557},
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
       "openingHours": "08:00-17:30",
       "ticketPrice": "80¥ (combined with Penglai Pavilion)",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Ming Dynasty fortress", "Naval history", "Ancient warships", "Sea access"],
+      "highlights": [
+        "Ming Dynasty fortress",
+        "Naval history",
+        "Ancient warships",
+        "Sea access"
+      ],
       "tips": "Combine with Penglai Pavilion. The water gates are impressive engineering."
     },
     {
@@ -121,14 +174,22 @@
       "name": "养马岛",
       "nameEn": "Yangma Island",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=400",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800",
       "description": "Beautiful island known for horse-racing history, now a scenic tourist destination with beaches.",
       "address": "牟平区 Yantai",
-      "coordinates": {"lat": 37.3965, "lng": 121.6014},
+      "coordinates": {
+        "lat": 37.3965,
+        "lng": 121.6014
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free (some attractions charge)",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Island scenery", "Beaches", "Horse racing history", "Seafood"],
+      "highlights": [
+        "Island scenery",
+        "Beaches",
+        "Horse racing history",
+        "Seafood"
+      ],
       "tips": "Drive or bike around island. The coastal road is scenic. Beach time in summer."
     },
     {
@@ -136,14 +197,22 @@
       "name": "朝阳街",
       "nameEn": "Chaoyang Street",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=400",
+      "image": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800",
       "description": "Historic street with well-preserved colonial architecture, shops, and cafes.",
       "address": "Near Yantai Mountain, Zhifu District",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Colonial buildings", "Shops", "Cafes", "Nightlife"],
+      "highlights": [
+        "Colonial buildings",
+        "Shops",
+        "Cafes",
+        "Nightlife"
+      ],
       "tips": "Best evening with lighting. Great for photos. Colonial atmosphere."
     },
     {
@@ -151,14 +220,22 @@
       "name": "牟氏庄园",
       "nameEn": "Mou's Manor",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400",
+      "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800",
       "description": "Largest surviving private manor in China, showcasing wealthy landlord culture from Qing Dynasty.",
       "address": "栖霞市 Qixia",
-      "coordinates": {"lat": 37.3065, "lng": 120.8514},
+      "coordinates": {
+        "lat": 37.3065,
+        "lng": 120.8514
+      },
       "openingHours": "08:00-17:30",
       "ticketPrice": "60¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Qing architecture", "Private estate", "Cultural heritage", "Gardens"],
+      "highlights": [
+        "Qing architecture",
+        "Private estate",
+        "Cultural heritage",
+        "Gardens"
+      ],
       "tips": "Day trip from Yantai. One of China's largest manor. Well preserved."
     },
     {
@@ -166,14 +243,22 @@
       "name": "金石湾",
       "nameEn": "Jinshi Bay",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400",
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800",
       "description": "Pristine bay with unique rock formations, clear water, and peaceful atmosphere.",
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.4765, "lng": 121.5114},
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5114
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Rock formations", "Clear water", "Quiet beach", "Photography"],
+      "highlights": [
+        "Rock formations",
+        "Clear water",
+        "Quiet beach",
+        "Photography"
+      ],
       "tips": "Less crowded than Golden Sand Beach. Great for photography. Snorkeling possible."
     },
     {
@@ -181,14 +266,22 @@
       "name": "烟台博物馆",
       "nameEn": "Yantai Museum",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=400",
+      "image": "https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=800",
       "description": "Regional museum with collections showcasing Yantai's maritime history and local culture.",
       "address": "2 Yantai Mountain Road, Zhifu District",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Maritime history", "Local culture", "Archaeological finds", "Interactive exhibits"],
+      "highlights": [
+        "Maritime history",
+        "Local culture",
+        "Archaeological finds",
+        "Interactive exhibits"
+      ],
       "tips": "Good for rainy days. Combine with Yantai Mountain visit."
     },
     {
@@ -196,14 +289,22 @@
       "name": "北极星钟表博物馆",
       "nameEn": "Polaris Clock Museum",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?w=400",
+      "image": "https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?w=800",
       "description": "Unique museum dedicated to clock-making history, showcasing China's watch industry heritage.",
       "address": "Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Clock history", "Polaris brand", "Antique timepieces", "Interactive"],
+      "highlights": [
+        "Clock history",
+        "Polaris brand",
+        "Antique timepieces",
+        "Interactive"
+      ],
       "tips": "Interesting for clock enthusiasts. Near shopping area."
     },
     {
@@ -211,14 +312,22 @@
       "name": "农博园",
       "nameEn": "Agricultural Expo Garden",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400",
+      "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800",
       "description": "Large botanical garden with diverse plant collections and agricultural exhibits.",
       "address": "Fushan District",
-      "coordinates": {"lat": 37.4665, "lng": 121.2614},
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.2614
+      },
       "openingHours": "07:30-17:30",
       "ticketPrice": "30¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Plants", "Flowers", "Agricultural exhibits", "Family friendly"],
+      "highlights": [
+        "Plants",
+        "Flowers",
+        "Agricultural exhibits",
+        "Family friendly"
+      ],
       "tips": "Great for families. Spring and summer best for flowers."
     },
     {
@@ -226,14 +335,22 @@
       "name": "戚继光纪念馆",
       "nameEn": "Qi Jiguang Memorial Hall",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
+      "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800",
       "description": "Memorial to famous Ming Dynasty general who defended China against wokou pirates.",
       "address": "Penglai District",
-      "coordinates": {"lat": 37.8101, "lng": 120.7557},
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Military history", "Qi Jiguang artifacts", "Ming Dynasty", "Cultural heritage"],
+      "highlights": [
+        "Military history",
+        "Qi Jiguang artifacts",
+        "Ming Dynasty",
+        "Cultural heritage"
+      ],
       "tips": "Combine with Penglai Pavilion. Important historical figure."
     },
     {
@@ -241,14 +358,22 @@
       "name": "望夫礁",
       "nameEn": "Wangfu Reef",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1500926149254-a9f8a8a8f9e4?w=400",
+      "image": "https://images.unsplash.com/photo-1500926149254-a9f8a8a8f9e4?w=800",
       "description": "Rock formation said to be a woman waiting for her husband's return, with romantic legend.",
       "address": "Muping District",
-      "coordinates": {"lat": 37.3565, "lng": 121.6214},
+      "coordinates": {
+        "lat": 37.3565,
+        "lng": 121.6214
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Rock formation", "Sea views", "Romantic legend", "Photography"],
+      "highlights": [
+        "Rock formation",
+        "Sea views",
+        "Romantic legend",
+        "Photography"
+      ],
       "tips": "Best at sunrise or sunset. The story is touching."
     },
     {
@@ -256,14 +381,22 @@
       "name": "栈桥",
       "nameEn": "Zhanqiao Pier",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=400",
+      "image": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=800",
       "description": "Historic pier stretching into the sea, iconic symbol of Yantai with colonial origins.",
       "address": "Coastal Zone, Zhifu District",
-      "coordinates": {"lat": 37.5365, "lng": 121.4114},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4114
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["Pier views", "Colonial history", "Fishing boats", "Sunset"],
+      "highlights": [
+        "Pier views",
+        "Colonial history",
+        "Fishing boats",
+        "Sunset"
+      ],
       "tips": "Best at sunset. Iconic Yantai photo spot."
     },
     {
@@ -271,14 +404,22 @@
       "name": "昆嵛山",
       "nameEn": "Kunyu Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=400",
+      "image": "https://images.unsplash.com/photo-1507437655600-801a83dd885c?w=800&q=85",
       "description": "Sacred Taoist mountain with pristine forests, ancient temples, and hiking trails.",
       "address": "文登市 Wendeng",
-      "coordinates": {"lat": 37.2065, "lng": 121.8514},
+      "coordinates": {
+        "lat": 37.2065,
+        "lng": 121.8514
+      },
       "openingHours": "07:00-17:00",
       "ticketPrice": "60¥",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Taoist culture", "Hiking", "Ancient temples", "Nature"],
+      "highlights": [
+        "Taoist culture",
+        "Hiking",
+        "Ancient temples",
+        "Nature"
+      ],
       "tips": "Day trip. Taoist sacred mountain. Best in autumn for foliage."
     },
     {
@@ -286,14 +427,22 @@
       "name": "科技大道",
       "nameEn": "Technology Avenue",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
       "description": "Modern shopping and entertainment district with international brands and restaurants.",
       "address": "Zhifu District",
-      "coordinates": {"lat": 37.5365, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4014
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Shopping", "Dining", "Entertainment", "Modern Yantai"],
+      "highlights": [
+        "Shopping",
+        "Dining",
+        "Entertainment",
+        "Modern Yantai"
+      ],
       "tips": "Best evening and night. International brands."
     },
     {
@@ -301,14 +450,22 @@
       "name": "地质公园",
       "nameEn": "Geological Park",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1508193638397-1c4234db14d9?w=400",
+      "image": "https://images.unsplash.com/photo-1508193638397-1c4234db14d9?w=800",
       "description": "Coastal geological park with unique rock formations, sea caves, and fossil sites.",
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.4465, "lng": 121.5514},
+      "coordinates": {
+        "lat": 37.4465,
+        "lng": 121.5514
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "40¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Rock formations", "Sea caves", "Fossils", "Geology"],
+      "highlights": [
+        "Rock formations",
+        "Sea caves",
+        "Fossils",
+        "Geology"
+      ],
       "tips": "Great for geology enthusiasts. Guided tours available."
     },
     {
@@ -316,14 +473,22 @@
       "name": "海洋世界",
       "nameEn": "Ocean World",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
+      "image": "https://images.unsplash.com/photo-1507437655600-801a83dd885c?w=800&q=85",
       "description": "Large aquarium with marine life exhibits, dolphin shows, and penguin habitat.",
       "address": "Coastal Development Zone",
-      "coordinates": {"lat": 37.4565, "lng": 121.4414},
+      "coordinates": {
+        "lat": 37.4565,
+        "lng": 121.4414
+      },
       "openingHours": "08:30-17:30",
       "ticketPrice": "150¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Marine animals", "Dolphin shows", "Penguins", "Underwater tunnel"],
+      "highlights": [
+        "Marine animals",
+        "Dolphin shows",
+        "Penguins",
+        "Underwater tunnel"
+      ],
       "tips": "Great for families. Book shows in advance."
     },
     {
@@ -331,14 +496,22 @@
       "name": "渔人码头",
       "nameEn": "Fisherman's Wharf",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1511895426328-dc8714191011?w=400",
+      "image": "https://images.unsplash.com/photo-1511895426328-dc8714191011?w=800",
       "description": "Revitalized fishing harbor with shops, restaurants, and maritime attractions.",
       "address": "Muping District",
-      "coordinates": {"lat": 37.4765, "lng": 121.5814},
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5814
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Harbor views", "Fresh seafood", "Shopping", "Entertainment"],
+      "highlights": [
+        "Harbor views",
+        "Fresh seafood",
+        "Shopping",
+        "Entertainment"
+      ],
       "tips": "Best for seafood. Buy fresh fish. Evening atmosphere."
     },
     {
@@ -346,14 +519,22 @@
       "name": "马家沟",
       "nameEn": "Majiagou",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=400",
+      "image": "https://images.unsplash.com/photo-1507437655600-801a83dd885c?w=800&q=85",
       "description": "Eco-tourism village with hot springs, vineyards, and rural charm.",
       "address": "Fushan District",
-      "coordinates": {"lat": 37.4265, "lng": 121.2314},
+      "coordinates": {
+        "lat": 37.4265,
+        "lng": 121.2314
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Varies by activity",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Hot springs", "Vineyards", "Rural experience", "Family activities"],
+      "highlights": [
+        "Hot springs",
+        "Vineyards",
+        "Rural experience",
+        "Family activities"
+      ],
       "tips": "Day trip. Combine wine and hot springs."
     },
     {
@@ -361,14 +542,22 @@
       "name": "天崮山",
       "nameEn": "Tiangu Mountain",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
       "description": "Scenic mountain with unique peaks, ancient temples, and hiking trails.",
       "address": "Fushan District",
-      "coordinates": {"lat": 37.3565, "lng": 121.1014},
+      "coordinates": {
+        "lat": 37.3565,
+        "lng": 121.1014
+      },
       "openingHours": "07:00-18:00",
       "ticketPrice": "50¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Mountain peaks", "Hiking", "Ancient temple", "Nature"],
+      "highlights": [
+        "Mountain peaks",
+        "Hiking",
+        "Ancient temple",
+        "Nature"
+      ],
       "tips": "Great hiking. Less crowded than major attractions."
     },
     {
@@ -376,14 +565,22 @@
       "name": "长岛",
       "nameEn": "Changdao Islands",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=400",
+      "image": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800",
       "description": "Beautiful archipelago with pristine beaches, fishing villages, and island hopping.",
       "address": "长岛县 Changdao County",
-      "coordinates": {"lat": 37.9565, "lng": 120.7514},
+      "coordinates": {
+        "lat": 37.9565,
+        "lng": 120.7514
+      },
       "openingHours": "Ferry schedule",
       "ticketPrice": "Free (ferry 45-100¥)",
       "recommendedVisitTime": "1-2 days",
-      "highlights": ["Island scenery", "Beaches", "Fishing villages", "Bird watching"],
+      "highlights": [
+        "Island scenery",
+        "Beaches",
+        "Fishing villages",
+        "Bird watching"
+      ],
       "tips": "Overnight stay recommended. Ferry from Penglai. Authentic island life."
     },
     {
@@ -391,14 +588,22 @@
       "name": "葡萄酒庄",
       "nameEn": "Wine Chateaus",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400",
+      "image": "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=800",
       "description": "Several French-style wineries offering tours, tastings, and beautiful vineyard scenery.",
       "address": "Penglai and Fushan",
-      "coordinates": {"lat": 37.8065, "lng": 120.8014},
+      "coordinates": {
+        "lat": 37.8065,
+        "lng": 120.8014
+      },
       "openingHours": "Varies by winery",
       "ticketPrice": "Tour + tasting 100-200¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Vineyards", "Wine tasting", "French architecture", "Wine production"],
+      "highlights": [
+        "Vineyards",
+        "Wine tasting",
+        "French architecture",
+        "Wine production"
+      ],
       "tips": "Must-visit for wine lovers. Autumn harvest best. Appointment needed."
     }
   ],
@@ -412,12 +617,25 @@
       "avgPrice": 200,
       "rating": 4.8,
       "address": "69 Chaoyang Street, Zhifu District",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "phone": "+86 535 620 8888",
       "hours": "10:30-22:00",
       "description": "Premium seafood restaurant with fresh catches daily and ocean views.",
-      "dishHighlights": ["Steamed seafood", "Sea urchin", "Razor clams", "Grilled fish"],
-      "tags": ["local", "seafood", "premium", "views"]
+      "dishHighlights": [
+        "Steamed seafood",
+        "Sea urchin",
+        "Razor clams",
+        "Grilled fish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "premium",
+        "views"
+      ]
     },
     {
       "id": "yantai-2",
@@ -428,11 +646,25 @@
       "avgPrice": 30,
       "rating": 4.7,
       "address": "Penglai District",
-      "coordinates": {"lat": 37.8101, "lng": 120.7557},
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
       "hours": "06:00-14:00",
       "description": "Local breakfast spot famous for hand-pulled noodles in savory broth.",
-      "dishHighlights": ["Hand-pulled noodles", "Seafood broth", "Scallion oil", "Pickled vegetables"],
-      "tags": ["local", "noodles", "breakfast", "budget", "must-try"]
+      "dishHighlights": [
+        "Hand-pulled noodles",
+        "Seafood broth",
+        "Scallion oil",
+        "Pickled vegetables"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget",
+        "must-try"
+      ]
     },
     {
       "id": "yantai-3",
@@ -443,11 +675,25 @@
       "avgPrice": 20,
       "rating": 4.6,
       "address": "Various locations",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "hours": "10:00-22:00",
       "description": "Iconic Yantai snack - fried mung bean starch cubes with savory sauce.",
-      "dishHighlights": ["Fried starch cubes", "Soy sauce dressing", "Sesame", "Mildly spicy"],
-      "tags": ["local", "famous", "snacks", "must-try", "budget"]
+      "dishHighlights": [
+        "Fried starch cubes",
+        "Soy sauce dressing",
+        "Sesame",
+        "Mildly spicy"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "snacks",
+        "must-try",
+        "budget"
+      ]
     },
     {
       "id": "yantai-4",
@@ -458,11 +704,23 @@
       "avgPrice": 50,
       "rating": 4.8,
       "address": "Zhifu District",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "hours": "10:00-22:00",
       "description": "Famous for dumplings filled with fresh Spanish mackerel, a Yantai specialty.",
-      "dishHighlights": ["Fresh mackerel dumplings", "Steamed dumplings", "Sour and spicy dipping"],
-      "tags": ["local", "famous", "dumplings", "must-try"]
+      "dishHighlights": [
+        "Fresh mackerel dumplings",
+        "Steamed dumplings",
+        "Sour and spicy dipping"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "dumplings",
+        "must-try"
+      ]
     },
     {
       "id": "yantai-5",
@@ -473,11 +731,24 @@
       "avgPrice": 80,
       "rating": 4.7,
       "address": "Near Fisherman's Wharf",
-      "coordinates": {"lat": 37.4765, "lng": 121.5814},
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5814
+      },
       "hours": "10:30-21:30",
       "description": "Local specialty - rice topped with stir-fried sea intestine in savory sauce.",
-      "dishHighlights": ["Sea intestine", "Rice", "Savory sauce", "Umami flavor"],
-      "tags": ["local", "specialty", "seafood", "adventurous"]
+      "dishHighlights": [
+        "Sea intestine",
+        "Rice",
+        "Savory sauce",
+        "Umami flavor"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "seafood",
+        "adventurous"
+      ]
     },
     {
       "id": "yantai-6",
@@ -488,11 +759,24 @@
       "avgPrice": 40,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "hours": "06:00-20:00",
       "description": "Popular noodle shop with variety of hand-pulled noodles and broths.",
-      "dishHighlights": ["Beef noodles", "Seafood noodles", "Vegetable noodles", "Hand-pulled"],
-      "tags": ["local", "noodles", "value", "quick"]
+      "dishHighlights": [
+        "Beef noodles",
+        "Seafood noodles",
+        "Vegetable noodles",
+        "Hand-pulled"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "value",
+        "quick"
+      ]
     },
     {
       "id": "yantai-7",
@@ -503,11 +787,24 @@
       "avgPrice": 150,
       "rating": 4.6,
       "address": "Seafood Market, Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "hours": "09:00-22:00",
       "description": "Fresh seafood market restaurant where you pick and they cook.",
-      "dishHighlights": ["Fresh catch", "Steam preparation", "Grilled options", "Your choice"],
-      "tags": ["local", "seafood", "fresh", "market-style"]
+      "dishHighlights": [
+        "Fresh catch",
+        "Steam preparation",
+        "Grilled options",
+        "Your choice"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "fresh",
+        "market-style"
+      ]
     },
     {
       "id": "yantai-8",
@@ -518,12 +815,26 @@
       "avgPrice": 300,
       "rating": 4.7,
       "address": "Changyu Wine Culture Museum",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "phone": "+86 535 669 8888",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Elegant restaurant in winery with wine pairing and French-inspired cuisine.",
-      "dishHighlights": ["Wine paired dishes", "Western cuisine", "Premium wine", "Elegant setting"],
-      "tags": ["fine-dining", "wine", "french", "romantic", "special-occasion"]
+      "dishHighlights": [
+        "Wine paired dishes",
+        "Western cuisine",
+        "Premium wine",
+        "Elegant setting"
+      ],
+      "tags": [
+        "fine-dining",
+        "wine",
+        "french",
+        "romantic",
+        "special-occasion"
+      ]
     },
     {
       "id": "yantai-9",
@@ -534,11 +845,24 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Near Golden Sand Beach",
-      "coordinates": {"lat": 37.4665, "lng": 121.4414},
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
       "hours": "10:30-22:00",
       "description": "Cozy restaurant serving home-style seafood and local Yantai dishes.",
-      "dishHighlights": ["Home-style seafood", "Fried fish", "Steamed clams", "Local vegetables"],
-      "tags": ["local", "home-style", "cozy", "seafood"]
+      "dishHighlights": [
+        "Home-style seafood",
+        "Fried fish",
+        "Steamed clams",
+        "Local vegetables"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "cozy",
+        "seafood"
+      ]
     },
     {
       "id": "yantai-10",
@@ -549,11 +873,24 @@
       "avgPrice": 80,
       "rating": 4.4,
       "address": "53 Er Ma Road, Zhifu District",
-      "coordinates": {"lat": 37.5365, "lng": 121.4114},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4114
+      },
       "hours": "10:00-22:00",
       "description": "Large mall with multiple restaurants and food court options.",
-      "dishHighlights": ["Food court", "International brands", "Cafes", "Variety"],
-      "tags": ["chain", "mall", "variety", "convenient"]
+      "dishHighlights": [
+        "Food court",
+        "International brands",
+        "Cafes",
+        "Variety"
+      ],
+      "tags": [
+        "chain",
+        "mall",
+        "variety",
+        "convenient"
+      ]
     },
     {
       "id": "yantai-11",
@@ -564,12 +901,25 @@
       "avgPrice": 150,
       "rating": 4.8,
       "address": "MixC Mall, Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "phone": "+86 535 620 9999",
       "hours": "24 hours",
       "description": "Famous hotpot chain with exceptional service and free manicotti.",
-      "dishHighlights": ["Spicy broth", "Fresh beef", "Hand-pulled noodles", "Free dessert"],
-      "tags": ["chain", "hotpot", "service", "late-night"]
+      "dishHighlights": [
+        "Spicy broth",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free dessert"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "late-night"
+      ]
     },
     {
       "id": "yantai-12",
@@ -580,11 +930,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "Changdao Islands",
-      "coordinates": {"lat": 37.9565, "lng": 120.7514},
+      "coordinates": {
+        "lat": 37.9565,
+        "lng": 120.7514
+      },
       "hours": "07:00-21:00",
       "description": "Island seafood restaurant with fresh catch and traditional preparation.",
-      "dishHighlights": ["Island seafood", "Steamed fish", "Seaweed soup", "Local specialties"],
-      "tags": ["local", "seafood", "island", "authentic"]
+      "dishHighlights": [
+        "Island seafood",
+        "Steamed fish",
+        "Seaweed soup",
+        "Local specialties"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "island",
+        "authentic"
+      ]
     },
     {
       "id": "yantai-13",
@@ -595,12 +958,25 @@
       "avgPrice": 150,
       "rating": 4.7,
       "address": "Fisherman's Wharf",
-      "coordinates": {"lat": 37.4765, "lng": 121.5814},
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5814
+      },
       "phone": "+86 535 669 1234",
       "hours": "10:30-22:00",
       "description": "Historic seafood restaurant with harbor views and fresh seafood.",
-      "dishHighlights": ["Fresh seafood", "Grilled prawns", "Steamed fish", "Harbor views"],
-      "tags": ["local", "seafood", "views", "historic"]
+      "dishHighlights": [
+        "Fresh seafood",
+        "Grilled prawns",
+        "Steamed fish",
+        "Harbor views"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "views",
+        "historic"
+      ]
     },
     {
       "id": "yantai-14",
@@ -611,11 +987,24 @@
       "avgPrice": 200,
       "rating": 4.5,
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.4765, "lng": 121.4414},
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.4414
+      },
       "hours": "11:30-14:30, 18:00-22:00",
       "description": "Italian restaurant with ocean views and authentic Mediterranean cuisine.",
-      "dishHighlights": ["Pasta", "Pizza", "Seafood", "Italian wine"],
-      "tags": ["fine-dining", "italian", "views", "romantic"]
+      "dishHighlights": [
+        "Pasta",
+        "Pizza",
+        "Seafood",
+        "Italian wine"
+      ],
+      "tags": [
+        "fine-dining",
+        "italian",
+        "views",
+        "romantic"
+      ]
     },
     {
       "id": "yantai-15",
@@ -626,12 +1015,25 @@
       "avgPrice": 150,
       "rating": 4.6,
       "address": "Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "phone": "+86 535 620 1234",
       "hours": "10:30-22:00",
       "description": "Famous Mongolian hotpot chain with premium lamb and traditional broth.",
-      "dishHighlights": ["Mongolian lamb", "Hotpot", "Traditional broth", "Quality ingredients"],
-      "tags": ["chain", "hotpot", "mongolian", "premium"]
+      "dishHighlights": [
+        "Mongolian lamb",
+        "Hotpot",
+        "Traditional broth",
+        "Quality ingredients"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "mongolian",
+        "premium"
+      ]
     },
     {
       "id": "yantai-16",
@@ -642,11 +1044,24 @@
       "avgPrice": 70,
       "rating": 4.5,
       "address": "Penglai District",
-      "coordinates": {"lat": 37.8101, "lng": 120.7557},
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
       "hours": "10:00-21:30",
       "description": "Established restaurant near Penglai Pavilion serving local specialties.",
-      "dishHighlights": ["Penglai noodles", "Seafood dishes", "Traditional recipes", "Local favorites"],
-      "tags": ["local", "traditional", "near-attraction", "reliable"]
+      "dishHighlights": [
+        "Penglai noodles",
+        "Seafood dishes",
+        "Traditional recipes",
+        "Local favorites"
+      ],
+      "tags": [
+        "local",
+        "traditional",
+        "near-attraction",
+        "reliable"
+      ]
     },
     {
       "id": "yantai-17",
@@ -657,11 +1072,25 @@
       "avgPrice": 80,
       "rating": 4.4,
       "address": "Multiple locations",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "hours": "10:00-22:00",
       "description": "Popular individual hotpot chain with affordable prices and variety.",
-      "dishHighlights": ["Individual hotpot", "Variety of broths", "Fresh ingredients", "Affordable"],
-      "tags": ["chain", "hotpot", "individual", "value", "quick"]
+      "dishHighlights": [
+        "Individual hotpot",
+        "Variety of broths",
+        "Fresh ingredients",
+        "Affordable"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "individual",
+        "value",
+        "quick"
+      ]
     },
     {
       "id": "yantai-18",
@@ -672,11 +1101,24 @@
       "avgPrice": 100,
       "rating": 4.5,
       "address": "Zhifu District",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "hours": "11:00-23:00",
       "description": "Korean BBQ restaurant with quality meat and authentic Korean sides.",
-      "dishHighlights": ["Grilled lamb", "Beef", "Kimchi", "Korean side dishes"],
-      "tags": ["local", "korean", "bbq", "meat"]
+      "dishHighlights": [
+        "Grilled lamb",
+        "Beef",
+        "Kimchi",
+        "Korean side dishes"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "bbq",
+        "meat"
+      ]
     },
     {
       "id": "yantai-19",
@@ -687,11 +1129,24 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Chaoyang Street area",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "hours": "10:30-21:30",
       "description": "Cozy home-style restaurant with local Yantai dishes and comfortable atmosphere.",
-      "dishHighlights": ["Home-style dishes", "Local seafood", "Seasonal menu", "Value"],
-      "tags": ["local", "home-style", "cozy", "value"]
+      "dishHighlights": [
+        "Home-style dishes",
+        "Local seafood",
+        "Seasonal menu",
+        "Value"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "cozy",
+        "value"
+      ]
     },
     {
       "id": "yantai-20",
@@ -702,11 +1157,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "MixC Mall",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "hours": "10:00-21:30",
       "description": "World-famous Taiwanese dumpling chain with excellent xiaolongbao.",
-      "dishHighlights": ["Xiaolongbao", "Fried rice", "Noodles", "Desserts"],
-      "tags": ["chain", "taiwanese", "dumplings", "quality"]
+      "dishHighlights": [
+        "Xiaolongbao",
+        "Fried rice",
+        "Noodles",
+        "Desserts"
+      ],
+      "tags": [
+        "chain",
+        "taiwanese",
+        "dumplings",
+        "quality"
+      ]
     },
     {
       "id": "yantai-21",
@@ -717,11 +1185,24 @@
       "avgPrice": 60,
       "rating": 4.4,
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.5265, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5265,
+        "lng": 121.4014
+      },
       "hours": "09:00-23:00",
       "description": "Cafe with panoramic sea views, perfect for sunset watching.",
-      "dishHighlights": ["Coffee", "Western snacks", "Sea views", "Sunset"],
-      "tags": ["cafe", "views", "sunset", "romantic"]
+      "dishHighlights": [
+        "Coffee",
+        "Western snacks",
+        "Sea views",
+        "Sunset"
+      ],
+      "tags": [
+        "cafe",
+        "views",
+        "sunset",
+        "romantic"
+      ]
     },
     {
       "id": "yantai-22",
@@ -732,11 +1213,24 @@
       "avgPrice": 60,
       "rating": 4.4,
       "address": "Night Market Area",
-      "coordinates": {"lat": 37.5465, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.4014
+      },
       "hours": "17:00-02:00",
       "description": "Popular night market BBQ with variety of grilled meats and seafood.",
-      "dishHighlights": ["Grilled lamb", "Skewers", "Grilled squid", "Beer"],
-      "tags": ["local", "bbq", "night-market", "late-night"]
+      "dishHighlights": [
+        "Grilled lamb",
+        "Skewers",
+        "Grilled squid",
+        "Beer"
+      ],
+      "tags": [
+        "local",
+        "bbq",
+        "night-market",
+        "late-night"
+      ]
     },
     {
       "id": "yantai-23",
@@ -747,11 +1241,24 @@
       "avgPrice": 100,
       "rating": 4.6,
       "address": "Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "hours": "10:30-21:30",
       "description": "Classic Shandong cuisine restaurant with traditional recipes and elegant setting.",
-      "dishHighlights": ["Shandong classic dishes", "Braised seafood", "Fresh vegetables", "Traditional cooking"],
-      "tags": ["local", "shandong-cuisine", "traditional", "classic"]
+      "dishHighlights": [
+        "Shandong classic dishes",
+        "Braised seafood",
+        "Fresh vegetables",
+        "Traditional cooking"
+      ],
+      "tags": [
+        "local",
+        "shandong-cuisine",
+        "traditional",
+        "classic"
+      ]
     },
     {
       "id": "yantai-24",
@@ -762,11 +1269,25 @@
       "avgPrice": 90,
       "rating": 4.5,
       "address": "Yangma Island",
-      "coordinates": {"lat": 37.3965, "lng": 121.6014},
+      "coordinates": {
+        "lat": 37.3965,
+        "lng": 121.6014
+      },
       "hours": "08:00-21:00",
       "description": "Island restaurant specializing in fresh seafood caught by local fishermen.",
-      "dishHighlights": ["Fresh catch", "Island specialties", "Sea views", "Local preparation"],
-      "tags": ["local", "seafood", "island", "fresh", "authentic"]
+      "dishHighlights": [
+        "Fresh catch",
+        "Island specialties",
+        "Sea views",
+        "Local preparation"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "island",
+        "fresh",
+        "authentic"
+      ]
     },
     {
       "id": "yantai-25",
@@ -777,11 +1298,24 @@
       "avgPrice": 40,
       "rating": 4.3,
       "address": "Multiple locations",
-      "coordinates": {"lat": 37.5365, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
       "hours": "07:00-23:00",
       "description": "Popular Chinese fast food chain with fried rice and comfort food.",
-      "dishHighlights": ["Fried rice", "Noodles", "Dumplings", "Fast service"],
-      "tags": ["chain", "fast-food", "quick", "familiar"]
+      "dishHighlights": [
+        "Fried rice",
+        "Noodles",
+        "Dumplings",
+        "Fast service"
+      ],
+      "tags": [
+        "chain",
+        "fast-food",
+        "quick",
+        "familiar"
+      ]
     }
   ],
   "transport": {
@@ -838,9 +1372,17 @@
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
       "address": "158 Changjiang Road, Coastal Development Zone",
-      "coordinates": {"lat": 37.4565, "lng": 121.4414},
+      "coordinates": {
+        "lat": 37.4565,
+        "lng": 121.4414
+      },
       "rating": 4.7,
-      "highlights": ["Beachfront", "Modern luxury", "Multiple pools", "Sea views"],
+      "highlights": [
+        "Beachfront",
+        "Modern luxury",
+        "Multiple pools",
+        "Sea views"
+      ],
       "bookingTips": "Best for beach vacation. Book ocean view rooms."
     },
     {
@@ -849,9 +1391,17 @@
       "budget": "luxury",
       "priceRange": "¥1200-2200/night",
       "address": "88 Qixia Road, Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "rating": 4.7,
-      "highlights": ["Central location", "Luxury facilities", "Bay views", "Multiple dining"],
+      "highlights": [
+        "Central location",
+        "Luxury facilities",
+        "Bay views",
+        "Multiple dining"
+      ],
       "bookingTips": "Best location for sightseeing. Famous Sunday brunch."
     },
     {
@@ -860,9 +1410,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "218 Changjiang Road, Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3814},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3814
+      },
       "rating": 4.6,
-      "highlights": ["Modern luxury", "River views", "High-rise", "Good service"],
+      "highlights": [
+        "Modern luxury",
+        "River views",
+        "High-rise",
+        "Good service"
+      ],
       "bookingTips": "Newer property. Great for business and leisure."
     },
     {
@@ -871,9 +1429,17 @@
       "budget": "mid",
       "priceRange": "¥400-700/night",
       "address": "88 Changjiang Road, Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "rating": 4.4,
-      "highlights": ["Central location", "Modern rooms", "Good breakfast", "Value"],
+      "highlights": [
+        "Central location",
+        "Modern rooms",
+        "Good breakfast",
+        "Value"
+      ],
       "bookingTips": "Best value in center. Reliable Chinese brand."
     },
     {
@@ -882,9 +1448,17 @@
       "budget": "mid",
       "priceRange": "¥500-900/night",
       "address": "158 Yantai Mountain Road, Zhifu District",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "rating": 4.5,
-      "highlights": ["Near Yantai Mountain", "Sea views", "Central location", "Modern"],
+      "highlights": [
+        "Near Yantai Mountain",
+        "Sea views",
+        "Central location",
+        "Modern"
+      ],
       "bookingTips": "Perfect for sightseeing. Walk to attractions."
     },
     {
@@ -893,9 +1467,17 @@
       "budget": "budget",
       "priceRange": "¥150-300/night",
       "address": "68 Zhanqiao Road, Zhifu District",
-      "coordinates": {"lat": 37.5365, "lng": 121.4114},
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4114
+      },
       "rating": 4.2,
-      "highlights": ["Near pier", "Budget-friendly", "Clean", "Central"],
+      "highlights": [
+        "Near pier",
+        "Budget-friendly",
+        "Clean",
+        "Central"
+      ],
       "bookingTips": "Best budget near waterfront. Simple but reliable."
     },
     {
@@ -904,9 +1486,17 @@
       "budget": "budget",
       "priceRange": "¥120-250/night",
       "address": "168 Qixia Road, Zhifu District",
-      "coordinates": {"lat": 37.5465, "lng": 121.3814},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3814
+      },
       "rating": 4.1,
-      "highlights": ["Budget", "Near bus station", "Simple", "Clean"],
+      "highlights": [
+        "Budget",
+        "Near bus station",
+        "Simple",
+        "Clean"
+      ],
       "bookingTips": "Good for bus travelers. Reliable budget chain."
     },
     {
@@ -915,9 +1505,17 @@
       "budget": "budget",
       "priceRange": "¥80-200/night",
       "address": "Near Golden Sand Beach",
-      "coordinates": {"lat": 37.4665, "lng": 121.4414},
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
       "rating": 4.3,
-      "highlights": ["Beach location", "Budget-friendly", "Social atmosphere", "Bike rental"],
+      "highlights": [
+        "Beach location",
+        "Budget-friendly",
+        "Social atmosphere",
+        "Bike rental"
+      ],
       "bookingTips": "Great for backpackers. Beach access. English speaking."
     },
     {
@@ -926,9 +1524,17 @@
       "budget": "mid",
       "priceRange": "¥500-900/night",
       "address": "Penglai District",
-      "coordinates": {"lat": 37.8101, "lng": 120.7557},
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
       "rating": 4.6,
-      "highlights": ["Near Penglai Pavilion", "Themed rooms", "Family-friendly", "Entertainment"],
+      "highlights": [
+        "Near Penglai Pavilion",
+        "Themed rooms",
+        "Family-friendly",
+        "Entertainment"
+      ],
       "bookingTips": "Best for Penglai sightseeing. Great for families."
     },
     {
@@ -937,9 +1543,17 @@
       "budget": "budget",
       "priceRange": "¥200-500/night",
       "address": "长岛县 Changdao County",
-      "coordinates": {"lat": 37.9565, "lng": 120.7514},
+      "coordinates": {
+        "lat": 37.9565,
+        "lng": 120.7514
+      },
       "rating": 4.4,
-      "highlights": ["Island location", "Local experience", "Fresh seafood", "Authentic"],
+      "highlights": [
+        "Island location",
+        "Local experience",
+        "Fresh seafood",
+        "Authentic"
+      ],
       "bookingTips": "Experience island life. Book during fishing season."
     },
     {
@@ -948,9 +1562,17 @@
       "budget": "mid",
       "priceRange": "¥400-700/night",
       "address": "Near Changyu Wine Culture Museum",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "rating": 4.5,
-      "highlights": ["Wine theme", "Near museum", "Modern", "Cultural experience"],
+      "highlights": [
+        "Wine theme",
+        "Near museum",
+        "Modern",
+        "Cultural experience"
+      ],
       "bookingTips": "Perfect for wine lovers. Book wine tour packages."
     },
     {
@@ -959,9 +1581,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "Yangma Island",
-      "coordinates": {"lat": 37.3865, "lng": 121.6414},
+      "coordinates": {
+        "lat": 37.3865,
+        "lng": 121.6414
+      },
       "rating": 4.6,
-      "highlights": ["Island location", "Beachfront", "Resort facilities", "Scenic"],
+      "highlights": [
+        "Island location",
+        "Beachfront",
+        "Resort facilities",
+        "Scenic"
+      ],
       "bookingTips": "Perfect for beach vacation. Book during off-peak."
     },
     {
@@ -970,9 +1600,17 @@
       "budget": "mid",
       "priceRange": "¥350-650/night",
       "address": "Near Golden Sand Beach",
-      "coordinates": {"lat": 37.4665, "lng": 121.4414},
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
       "rating": 4.4,
-      "highlights": ["Beach views", "Near beach", "Modern", "Good value"],
+      "highlights": [
+        "Beach views",
+        "Near beach",
+        "Modern",
+        "Good value"
+      ],
       "bookingTips": "Great for beach lovers. Book ocean view rooms."
     },
     {
@@ -981,9 +1619,17 @@
       "budget": "budget",
       "priceRange": "¥150-350/night",
       "address": "Chaoyang Street area",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "rating": 4.3,
-      "highlights": ["Historic area", "Colonial architecture", "Local experience", "Value"],
+      "highlights": [
+        "Historic area",
+        "Colonial architecture",
+        "Local experience",
+        "Value"
+      ],
       "bookingTips": "Experience colonial history. Book during off-peak."
     },
     {
@@ -992,9 +1638,17 @@
       "budget": "luxury",
       "priceRange": "¥700-1300/night",
       "address": "Yantai Wine Valley",
-      "coordinates": {"lat": 37.5465, "lng": 121.3914},
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
       "rating": 4.5,
-      "highlights": ["Vineyard views", "Wine tasting", "Luxury", "Romantic"],
+      "highlights": [
+        "Vineyard views",
+        "Wine tasting",
+        "Luxury",
+        "Romantic"
+      ],
       "bookingTips": "Perfect for romantic trips. Book wine tasting packages."
     }
   ],
@@ -1003,22 +1657,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Yantai",
-      "howToUse": ["Download before arrival", "Link card"],
-      "tips": ["Works at all merchants", "English available"]
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Needed for shared bikes"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at seafood markets",
-      "howToUse": ["ATM everywhere", "Banks along main streets"],
-      "tips": ["Keep 300¥ for seafood markets", "Most restaurants accept cards"]
+      "howToUse": [
+        "ATM everywhere",
+        "Banks along main streets"
+      ],
+      "tips": [
+        "Keep 300¥ for seafood markets",
+        "Most restaurants accept cards"
+      ]
     }
   ],
   "culturalTips": [
@@ -1134,7 +1806,10 @@
       "nameEn": "Yantai Yuhuangding Hospital",
       "phone": "+86 535 602 1096",
       "address": "20 Yantai Mountain Road, Zhifu District",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "notes": "English-speaking staff available"
     },
     {
@@ -1143,7 +1818,10 @@
       "nameEn": "Yantai Mountain Hospital",
       "phone": "+86 535 660 2000",
       "address": "88 Yantai Mountain Road, Zhifu District",
-      "coordinates": {"lat": 37.5456, "lng": 121.4014},
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
       "notes": "Another major hospital with English staff"
     },
     {
