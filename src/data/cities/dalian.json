@@ -5,12 +5,12 @@
   "country": "China",
   "population": "5.3 million",
   "coordinates": {
-    "lat": 38.9140,
+    "lat": 38.914,
     "lng": 121.6147
   },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Dalian, a coastal city in Liaoning province, is known for its European architecture, beautiful coastal scenery, and vibrant Russian and Japanese influence. The city features clean beaches, modern urban planning, and the famous Xinghai Square.",
-  "coverImage": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200",
+  "coverImage": "https://images.unsplash.com/photo-1580474524060-088d96ba3974?w=1200&q=80",
   "highlights": [
     "Xinghai Square - Largest city square in Asia",
     "Fraser Beach - Golden sand beach",
@@ -20,7 +20,12 @@
   ],
   "climate": {
     "type": "Temperate oceanic climate",
-    "bestMonths": ["May", "June", "September", "October"],
+    "bestMonths": [
+      "May",
+      "June",
+      "September",
+      "October"
+    ],
     "avgSummerTemp": "22°C (72°F)",
     "avgWinterTemp": "-3°C (27°F)",
     "tips": "Best in summer for beaches. Spring and autumn are pleasant. Winters are cold but not extreme. Summer is peak tourist season."
@@ -32,13 +37,21 @@
       "nameEn": "Xinghai Square",
       "category": "landmark",
       "description": "Largest city square in Asia, featuring the city's best waterfront views.",
-      "image": "https://images.unsplash.com/photo-1550123355-19aa4b6c8bd7?w=400",
+      "image": "https://images.unsplash.com/photo-1708476287209-2190799f4672?w=800&q=85",
       "address": "Xinghai Square, Shahekou District",
-      "coordinates": { "lat": 38.8822, "lng": 121.5222 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5222
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Ocean views", "Sculptures", "Night lighting", "Photo opportunities"],
+      "highlights": [
+        "Ocean views",
+        "Sculptures",
+        "Night lighting",
+        "Photo opportunities"
+      ],
       "tips": "Best at sunset or night. Walk to the music fountain. Take photos with the giant book sculpture."
     },
     {
@@ -47,13 +60,21 @@
       "nameEn": "Jinshi Beach",
       "category": "natural",
       "description": "Scenic coastal area with golden beaches, rock formations, and theme parks.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
       "address": "Jinshi Beach, Jinzhou District",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "80¥ (park only)",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Golden beach", "Rock formations", "Theme parks", "Golf courses"],
+      "highlights": [
+        "Golden beach",
+        "Rock formations",
+        "Theme parks",
+        "Golf courses"
+      ],
       "tips": "Take bus 5 or tourist bus from city center. Combine with Discoveryland."
     },
     {
@@ -62,13 +83,21 @@
       "nameEn": "Laohutan Ocean Park",
       "category": "entertainment",
       "description": "Large ocean park with marine shows, aquariums and amusement rides.",
-      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
       "address": "Laohutan,中山区",
-      "coordinates": { "lat": 38.8722, "lng": 121.6522 },
+      "coordinates": {
+        "lat": 38.8722,
+        "lng": 121.6522
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "220¥ (includes all)",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Dolphin shows", "Polar bear", "Bird shows", "4D theater"],
+      "highlights": [
+        "Dolphin shows",
+        "Polar bear",
+        "Bird shows",
+        "4D theater"
+      ],
       "tips": "Arrive early for shows. Buy tickets online. Full day attraction."
     },
     {
@@ -77,13 +106,21 @@
       "nameEn": "Russian Style Street",
       "category": "cultural",
       "description": "Historic street with Russian colonial architecture from early 1900s.",
-      "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85",
       "address": "Russian Style Street, Zhongshan District",
-      "coordinates": { "lat": 38.9322, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9322,
+        "lng": 121.6222
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Russian architecture", "Wooden houses", "Souvenir shops", "Photo opportunities"],
+      "highlights": [
+        "Russian architecture",
+        "Wooden houses",
+        "Souvenir shops",
+        "Photo opportunities"
+      ],
       "tips": "Best in morning for photos. Buy Russian products. Combine with nearby Japanese Street."
     },
     {
@@ -92,13 +129,21 @@
       "nameEn": "Japanese Style Street",
       "category": "cultural",
       "description": "Historic street with Japanese colonial architecture and traditional buildings.",
-      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400",
+      "image": "https://images.unsplash.com/photo-1730131841283-a8e130de2e89?w=800&q=85",
       "address": "Huanghe Road, Zhongshan District",
-      "coordinates": { "lat": 38.9322, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9322,
+        "lng": 121.6222
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Japanese architecture", "Cherry blossoms", "Traditional shops", "Tea houses"],
+      "highlights": [
+        "Japanese architecture",
+        "Cherry blossoms",
+        "Traditional shops",
+        "Tea houses"
+      ],
       "tips": "Beautiful in spring. Take photos with Japanese-style buildings. Find Japanese restaurants."
     },
     {
@@ -107,13 +152,21 @@
       "nameEn": "Bangchui Island",
       "category": "natural",
       "description": "Scenic island with beautiful beach and golf course, once a state guesthouse.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=85",
       "address": "Bangchui Island, Ganjingzi District",
-      "coordinates": { "lat": 38.8722, "lng": 121.7222 },
+      "coordinates": {
+        "lat": 38.8722,
+        "lng": 121.7222
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "20¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Clean beach", "Island views", "Golf course", "State guesthouse"],
+      "highlights": [
+        "Clean beach",
+        "Island views",
+        "Golf course",
+        "State guesthouse"
+      ],
       "tips": "Take tourist bus or taxi. Beach is beautiful but crowded in summer."
     },
     {
@@ -122,13 +175,21 @@
       "nameEn": "Dalian Forest Zoo",
       "category": "nature",
       "description": "Large zoo with natural environment for animals, featuring pandas and rare species.",
-      "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400",
+      "image": "https://images.unsplash.com/photo-1506905275237-883cd4902b81?w=800&q=85",
       "address": "Ganjingzi District",
-      "coordinates": { "lat": 38.9622, "lng": 121.7222 },
+      "coordinates": {
+        "lat": 38.9622,
+        "lng": 121.7222
+      },
       "openingHours": "08:30-16:30",
       "ticketPrice": "120¥",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Giant pandas", "African savanna", "Bird show", "Cable car"],
+      "highlights": [
+        "Giant pandas",
+        "African savanna",
+        "Bird show",
+        "Cable car"
+      ],
       "tips": "Arrive early. Take cable car for views. Great for families."
     },
     {
@@ -137,13 +198,21 @@
       "nameEn": "Fujiazhuang Beach",
       "category": "natural",
       "description": "Popular city beach with clear water and scenic surrounding hills.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?w=800&q=85",
       "address": "Fujiazhuang, Shahekou District",
-      "coordinates": { "lat": 38.8522, "lng": 121.6022 },
+      "coordinates": {
+        "lat": 38.8522,
+        "lng": 121.6022
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Clean beach", "Clear water", "City views", "Sunset"],
+      "highlights": [
+        "Clean beach",
+        "Clear water",
+        "City views",
+        "Sunset"
+      ],
       "tips": "Best in summer. Bring sunscreen. Take bus 5 or 702."
     },
     {
@@ -152,13 +221,21 @@
       "nameEn": "Dalian Coastal Road",
       "category": "natural",
       "description": "Scenic coastal road with ocean views, connecting major attractions.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
       "address": "Coastal Road, Zhongshan District",
-      "coordinates": { "lat": 38.8922, "lng": 121.6522 },
+      "coordinates": {
+        "lat": 38.8922,
+        "lng": 121.6522
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Ocean views", "Scenic drive", "Photo stops", "Connecting attractions"],
+      "highlights": [
+        "Ocean views",
+        "Scenic drive",
+        "Photo stops",
+        "Connecting attractions"
+      ],
       "tips": "Drive or take tourist bus. Best viewpoints at沿途. Stop for photos."
     },
     {
@@ -167,13 +244,21 @@
       "nameEn": "Xinghai Bay Cross-Sea Bridge",
       "category": "landmark",
       "description": "Modern cross-sea bridge offering panoramic views of the bay.",
-      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
       "address": "Xinghai Bay",
-      "coordinates": { "lat": 38.8822, "lng": 121.5522 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5522
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Bay views", "Modern architecture", "Sunset", "Photography"],
+      "highlights": [
+        "Bay views",
+        "Modern architecture",
+        "Sunset",
+        "Photography"
+      ],
       "tips": "Best at sunset. Walk across or drive. Combine with Xinghai Square."
     },
     {
@@ -182,13 +267,21 @@
       "nameEn": "Discoveryland Theme Park",
       "category": "entertainment",
       "description": "Large theme park with European-style architecture and thrill rides.",
-      "image": "https://images.unsplash.com/photo-1519331379826-f1c2a854723f?w=400",
+      "image": "https://images.unsplash.com/photo-1519331379826-f1c2a854723f?w=800",
       "address": "Jinshi Beach, Jinzhou District",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "openingHours": "09:00-21:00 (summer)",
       "ticketPrice": "200¥",
       "recommendedVisitTime": "Full day",
-      "highlights": ["Roller coasters", "European street", "Night show", "Water rides"],
+      "highlights": [
+        "Roller coasters",
+        "European street",
+        "Night show",
+        "Water rides"
+      ],
       "tips": "Full day attraction. Arrive at opening. Wear comfortable shoes."
     },
     {
@@ -197,13 +290,21 @@
       "nameEn": "Labor Park",
       "category": "natural",
       "description": "Large urban park in city center with cherry blossoms and city views.",
-      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400",
+      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800",
       "address": "Labor Park, Xigang District",
-      "coordinates": { "lat": 38.9122, "lng": 121.6022 },
+      "coordinates": {
+        "lat": 38.9122,
+        "lng": 121.6022
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Cherry blossoms", "Viewing tower", "Lake", "Local life"],
+      "highlights": [
+        "Cherry blossoms",
+        "Viewing tower",
+        "Lake",
+        "Local life"
+      ],
       "tips": "Best in spring for cherry blossoms. Take cable car to viewing tower."
     },
     {
@@ -212,13 +313,21 @@
       "nameEn": "Dalian Museum",
       "category": "cultural",
       "description": "Modern museum showcasing city's history, culture and natural heritage.",
-      "image": "https://images.unsplash.com/photo-1568789066892-0a1f4a5a5c3e?w=400",
+      "image": "https://images.unsplash.com/photo-1568789066892-0a1f4a5a5c3e?w=800",
       "address": "Xinghai Bay",
-      "coordinates": { "lat": 38.8822, "lng": 121.5322 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5322
+      },
       "openingHours": "09:00-16:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Local history", "Russian period", "Natural heritage", "Modern exhibits"],
+      "highlights": [
+        "Local history",
+        "Russian period",
+        "Natural heritage",
+        "Modern exhibits"
+      ],
       "tips": "Allow 2 hours. Audio guide available. Combine with Xinghai Square."
     },
     {
@@ -227,13 +336,21 @@
       "nameEn": "Dalian Women Police Cavalry Base",
       "category": "cultural",
       "description": "Unique base for all-female police cavalry, with horse shows and exhibitions.",
-      "image": "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400",
+      "image": "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=800",
       "address": "Ganjingzi District",
-      "coordinates": { "lat": 38.9622, "lng": 121.6922 },
+      "coordinates": {
+        "lat": 38.9622,
+        "lng": 121.6922
+      },
       "openingHours": "09:00-11:00, 14:00-16:00",
       "ticketPrice": "20¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Horse shows", "Police cavalry", "Photo with horses", "Unique experience"],
+      "highlights": [
+        "Horse shows",
+        "Police cavalry",
+        "Photo with horses",
+        "Unique experience"
+      ],
       "tips": "Check show times. Great for children. Take photos with horses."
     },
     {
@@ -242,13 +359,21 @@
       "nameEn": "Black Rock Reef",
       "category": "natural",
       "description": "Coastal area with unique black rock formations and tide pools.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=800&q=85",
       "address": "Black Rock Reef, Shahekou District",
-      "coordinates": { "lat": 38.8622, "lng": 121.5922 },
+      "coordinates": {
+        "lat": 38.8622,
+        "lng": 121.5922
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Black rocks", "Tide pools", "Sunrise", "Photography"],
+      "highlights": [
+        "Black rocks",
+        "Tide pools",
+        "Sunrise",
+        "Photography"
+      ],
       "tips": "Best at low tide. Come for sunrise. Explore tide pools."
     },
     {
@@ -257,13 +382,21 @@
       "nameEn": "Dalian Night View",
       "category": "landmark",
       "description": "Best viewpoints for Dalian's illuminated skyline at night.",
-      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400",
+      "image": "https://images.unsplash.com/photo-1543835247-0e4b6f0b1b0e?w=800&q=85",
       "address": "Various locations",
-      "coordinates": { "lat": 38.9022, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9022,
+        "lng": 121.6222
+      },
       "openingHours": "Night",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["City lights", "Mountain views", "Coastal views", "Photo spots"],
+      "highlights": [
+        "City lights",
+        "Mountain views",
+        "Coastal views",
+        "Photo spots"
+      ],
       "tips": "Best from Pearl Lake or mountain viewing points. Take night tour bus."
     },
     {
@@ -272,13 +405,21 @@
       "nameEn": "Zhongshan Square",
       "category": "landmark",
       "description": "Historic circular square surrounded by European architecture from various countries.",
-      "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85",
       "address": "Zhongshan Square, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min - 1 hour",
-      "highlights": ["European architecture", "Circular design", "Historical buildings", "Traffic circle"],
+      "highlights": [
+        "European architecture",
+        "Circular design",
+        "Historical buildings",
+        "Traffic circle"
+      ],
       "tips": "Best for architecture photography. Surrounding buildings from 10+ countries."
     },
     {
@@ -287,13 +428,21 @@
       "nameEn": "Jinshi Beach National Resort",
       "category": "resort",
       "description": "Large coastal resort area with beaches, golf courses and theme parks.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1520454974749-611b7248ffdb?w=800&q=85",
       "address": "Jinshi Beach, Jinzhou District",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Varies by attraction",
       "recommendedVisitTime": "Full day to multiple days",
-      "highlights": ["Beaches", "Golf courses", "Theme parks", "Natural scenery"],
+      "highlights": [
+        "Beaches",
+        "Golf courses",
+        "Theme parks",
+        "Natural scenery"
+      ],
       "tips": "Book resort hotel for multiple days. Rent car to explore. Take tourist bus."
     },
     {
@@ -302,13 +451,21 @@
       "nameEn": "Dalian Natural History Museum",
       "category": "cultural",
       "description": "Museum with exhibits on dinosaurs, marine life and local ecosystems.",
-      "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400",
+      "image": "https://images.unsplash.com/photo-1569003336825-ea4b2a2d0d8a?w=800&q=85",
       "address": "Xinghai Bay",
-      "coordinates": { "lat": 38.8822, "lng": 121.5322 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5322
+      },
       "openingHours": "09:00-16:30 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Dinosaur fossils", "Marine life", "Birds", "Interactive exhibits"],
+      "highlights": [
+        "Dinosaur fossils",
+        "Marine life",
+        "Birds",
+        "Interactive exhibits"
+      ],
       "tips": "Great for families. Allow 2 hours. Combine with nearby attractions."
     },
     {
@@ -317,13 +474,21 @@
       "nameEn": "East Sea Park",
       "category": "natural",
       "description": "Coastal park with scenic cliffs, unusual rock formations and ocean views.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
       "address": "East Sea Park, Zhongshan District",
-      "coordinates": { "lat": 38.8922, "lng": 121.7022 },
+      "coordinates": {
+        "lat": 38.8922,
+        "lng": 121.7022
+      },
       "openingHours": "06:00-20:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Sea cliffs", "Rock formations", "Hiking trails", "Ocean views"],
+      "highlights": [
+        "Sea cliffs",
+        "Rock formations",
+        "Hiking trails",
+        "Ocean views"
+      ],
       "tips": "Wear hiking shoes. Best in morning. The views are spectacular."
     },
     {
@@ -332,13 +497,21 @@
       "nameEn": "Dalian Olympic Square",
       "category": "landmark",
       "description": "Large square built for Dalian's Olympic bid, featuring sports themes.",
-      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85",
       "address": "Xi'an Road, Shahekou District",
-      "coordinates": { "lat": 38.9022, "lng": 121.6022 },
+      "coordinates": {
+        "lat": 38.9022,
+        "lng": 121.6022
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["Olympic theme", "Fountains", "Night lighting", "Photo opportunities"],
+      "highlights": [
+        "Olympic theme",
+        "Fountains",
+        "Night lighting",
+        "Photo opportunities"
+      ],
       "tips": "Best at night with lighting. Take photos with statues."
     },
     {
@@ -347,13 +520,21 @@
       "nameEn": "Sea Rhythm Park",
       "category": "natural",
       "description": "Coastal park with unique marine-themed sculptures and ocean views.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=85",
       "address": "Coastal Road, Zhongshan District",
-      "coordinates": { "lat": 38.8922, "lng": 121.6922 },
+      "coordinates": {
+        "lat": 38.8922,
+        "lng": 121.6922
+      },
       "openingHours": "06:00-20:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Marine sculptures", "Ocean views", "Hiking", "Photography"],
+      "highlights": [
+        "Marine sculptures",
+        "Ocean views",
+        "Hiking",
+        "Photography"
+      ],
       "tips": "Best at sunrise or sunset. Combine with coastal road drive."
     },
     {
@@ -362,13 +543,21 @@
       "nameEn": "Dalian Port",
       "category": "landmark",
       "description": "Historic port area with European architecture and ferry services.",
-      "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400",
+      "image": "https://images.unsplash.com/photo-1546961342-ea5f60b193f9?w=800&q=85",
       "address": "Dalian Port, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6322 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6322
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Port views", "European buildings", "Ferry terminal", "Historical architecture"],
+      "highlights": [
+        "Port views",
+        "European buildings",
+        "Ferry terminal",
+        "Historical architecture"
+      ],
       "tips": "Take ferry to Lvshun or Yantai. Explore old port area."
     },
     {
@@ -377,13 +566,21 @@
       "nameEn": "White Jade Mountain",
       "category": "natural",
       "description": "Mountain with panoramic views of Dalian and the naval base.",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85",
       "address": "Lvshun, Dalian",
-      "coordinates": { "lat": 38.7922, "lng": 121.2622 },
+      "coordinates": {
+        "lat": 38.7922,
+        "lng": 121.2622
+      },
       "openingHours": "07:00-18:00",
       "ticketPrice": "40¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Panoramic views", "Naval base views", "Cable car", "Military history"],
+      "highlights": [
+        "Panoramic views",
+        "Naval base views",
+        "Cable car",
+        "Military history"
+      ],
       "tips": "Take cable car up. Views are spectacular. Combine with Lvshun."
     }
   ],
@@ -397,12 +594,25 @@
       "avgPrice": 200,
       "rating": 4.6,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9122, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9122,
+        "lng": 121.6222
+      },
       "phone": "+86 411 8263 8888",
       "hours": "10:00-22:00",
       "description": "Famous seafood restaurant with fresh catches daily.",
-      "dishHighlights": ["Steamed crab", "Salt shrimp", "Fresh fish", "Shellfish"],
-      "tags": ["local", "seafood", "famous", "fresh"]
+      "dishHighlights": [
+        "Steamed crab",
+        "Salt shrimp",
+        "Fresh fish",
+        "Shellfish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "famous",
+        "fresh"
+      ]
     },
     {
       "id": "dalian-2",
@@ -413,12 +623,25 @@
       "avgPrice": 180,
       "rating": 4.5,
       "address": "Jinshi Beach area",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "phone": "+86 411 8790 8888",
       "hours": "10:00-22:00",
       "description": "Popular seafood restaurant near the beach area.",
-      "dishHighlights": ["Grilled fish", "Steamed shrimp", "Clam soup", "Sea urchin"],
-      "tags": ["local", "seafood", "beach-area", "popular"]
+      "dishHighlights": [
+        "Grilled fish",
+        "Steamed shrimp",
+        "Clam soup",
+        "Sea urchin"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "beach-area",
+        "popular"
+      ]
     },
     {
       "id": "dalian-3",
@@ -429,11 +652,24 @@
       "avgPrice": 60,
       "rating": 4.6,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Famous for dumplings with fresh seafood fillings.",
-      "dishHighlights": ["Shrimp dumplings", "Squid dumplings", "Crab dumplings", "Mixed seafood"],
-      "tags": ["local", "dumplings", "seafood", "famous"]
+      "dishHighlights": [
+        "Shrimp dumplings",
+        "Squid dumplings",
+        "Crab dumplings",
+        "Mixed seafood"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "seafood",
+        "famous"
+      ]
     },
     {
       "id": "dalian-4",
@@ -444,11 +680,24 @@
       "avgPrice": 150,
       "rating": 4.5,
       "address": "Huanghe Road, Japanese Style Street",
-      "coordinates": { "lat": 38.9322, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9322,
+        "lng": 121.6222
+      },
       "hours": "11:00-22:00",
       "description": "Area with many authentic Japanese restaurants.",
-      "dishHighlights": ["Sushi", "Ramen", "Tempura", "Japanese sake"],
-      "tags": ["local", "japanese", "row", "authentic"]
+      "dishHighlights": [
+        "Sushi",
+        "Ramen",
+        "Tempura",
+        "Japanese sake"
+      ],
+      "tags": [
+        "local",
+        "japanese",
+        "row",
+        "authentic"
+      ]
     },
     {
       "id": "dalian-5",
@@ -459,11 +708,24 @@
       "avgPrice": 120,
       "rating": 4.4,
       "address": "Russian Style Street",
-      "coordinates": { "lat": 38.9322, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9322,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Traditional Russian restaurant in historic building.",
-      "dishHighlights": ["Borscht", "Beef stroganoff", "Russian bread", "Dumplings"],
-      "tags": ["local", "russian", "historic", "traditional"]
+      "dishHighlights": [
+        "Borscht",
+        "Beef stroganoff",
+        "Russian bread",
+        "Dumplings"
+      ],
+      "tags": [
+        "local",
+        "russian",
+        "historic",
+        "traditional"
+      ]
     },
     {
       "id": "dalian-6",
@@ -474,12 +736,25 @@
       "avgPrice": 300,
       "rating": 4.7,
       "address": "28 Renmin Road, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "phone": "+86 411 8280 8888",
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "High-end seafood restaurant with elegant atmosphere.",
-      "dishHighlights": ["Abalone", "Sea cucumber", "Shark fin", "Premium seafood"],
-      "tags": ["fine-dining", "seafood", "luxury", "special-occasion"]
+      "dishHighlights": [
+        "Abalone",
+        "Sea cucumber",
+        "Shark fin",
+        "Premium seafood"
+      ],
+      "tags": [
+        "fine-dining",
+        "seafood",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "dalian-7",
@@ -490,11 +765,23 @@
       "avgPrice": 50,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Popular for pan-fried dumplings with various fillings.",
-      "dishHighlights": ["Pork pan-fried dumplings", "Seafood pan-fried", "Vegetable"],
-      "tags": ["local", "dumplings", "pan-fried", "popular"]
+      "dishHighlights": [
+        "Pork pan-fried dumplings",
+        "Seafood pan-fried",
+        "Vegetable"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "pan-fried",
+        "popular"
+      ]
     },
     {
       "id": "dalian-8",
@@ -505,11 +792,24 @@
       "avgPrice": 30,
       "rating": 4.3,
       "address": "Dai Street, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "17:00-02:00",
       "description": "Popular night market with variety of street food.",
-      "dishHighlights": ["Grilled skewers", "Fried rice", "Hot pot", "Desserts"],
-      "tags": ["local", "night-market", "street-food", "budget"]
+      "dishHighlights": [
+        "Grilled skewers",
+        "Fried rice",
+        "Hot pot",
+        "Desserts"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "budget"
+      ]
     },
     {
       "id": "dalian-9",
@@ -520,11 +820,23 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-23:00",
       "description": "Famous for grilled whole fish with special seasonings.",
-      "dishHighlights": ["Grilled sea bass", "Grilled squid", "Grilled shrimp"],
-      "tags": ["local", "grilled", "seafood", "popular"]
+      "dishHighlights": [
+        "Grilled sea bass",
+        "Grilled squid",
+        "Grilled shrimp"
+      ],
+      "tags": [
+        "local",
+        "grilled",
+        "seafood",
+        "popular"
+      ]
     },
     {
       "id": "dalian-10",
@@ -535,12 +847,24 @@
       "avgPrice": 200,
       "rating": 4.6,
       "address": "88 Jiefang Road, Xigang District",
-      "coordinates": { "lat": 38.9122, "lng": 121.6022 },
+      "coordinates": {
+        "lat": 38.9122,
+        "lng": 121.6022
+      },
       "phone": "+86 411 8363 8888",
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "High-end restaurant serving refined Dalian cuisine.",
-      "dishHighlights": ["Premium seafood", "Local specialties", "Seasonal dishes"],
-      "tags": ["fine-dining", "dalian-cuisine", "luxury", "special-occasion"]
+      "dishHighlights": [
+        "Premium seafood",
+        "Local specialties",
+        "Seasonal dishes"
+      ],
+      "tags": [
+        "fine-dining",
+        "dalian-cuisine",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "dalian-11",
@@ -551,11 +875,24 @@
       "avgPrice": 100,
       "rating": 4.5,
       "address": "45 Shandong Road, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Historic restaurant known for traditional Dalian dishes.",
-      "dishHighlights": ["Sea cucumber", "Abalone", "Fresh seafood", "Local specialties"],
-      "tags": ["local", "historic", "dalian-cuisine", "traditional"]
+      "dishHighlights": [
+        "Sea cucumber",
+        "Abalone",
+        "Fresh seafood",
+        "Local specialties"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "dalian-cuisine",
+        "traditional"
+      ]
     },
     {
       "id": "dalian-12",
@@ -566,12 +903,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "68 Nanjing Road, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "phone": "+86 411 8282 8888",
       "hours": "10:30-21:30",
       "description": "Popular for refined local dishes in traditional setting.",
-      "dishHighlights": ["Steamed fish", "Braised seafood", "Local vegetables"],
-      "tags": ["local", "dalian-cuisine", "traditional", "popular"]
+      "dishHighlights": [
+        "Steamed fish",
+        "Braised seafood",
+        "Local vegetables"
+      ],
+      "tags": [
+        "local",
+        "dalian-cuisine",
+        "traditional",
+        "popular"
+      ]
     },
     {
       "id": "dalian-13",
@@ -582,11 +931,23 @@
       "avgPrice": 80,
       "rating": 4.2,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "International chain with familiar menu.",
-      "dishHighlights": ["Pizza", "Pasta", "Italian food"],
-      "tags": ["chain", "western", "familiar", "quick"]
+      "dishHighlights": [
+        "Pizza",
+        "Pasta",
+        "Italian food"
+      ],
+      "tags": [
+        "chain",
+        "western",
+        "familiar",
+        "quick"
+      ]
     },
     {
       "id": "dalian-14",
@@ -597,12 +958,24 @@
       "avgPrice": 150,
       "rating": 4.7,
       "address": "Times Square, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "phone": "+86 411 8266 8888",
       "hours": "24 hours",
       "description": "Famous chain hotpot with excellent service.",
-      "dishHighlights": ["Spicy hotpot", "Fresh beef", "Hand-pulled noodles"],
-      "tags": ["chain", "hotpot", "service", "entertainment"]
+      "dishHighlights": [
+        "Spicy hotpot",
+        "Fresh beef",
+        "Hand-pulled noodles"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "entertainment"
+      ]
     },
     {
       "id": "dalian-15",
@@ -613,11 +986,22 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Seafood markets",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "全天",
       "description": "Spicy raw shrimp - a Dalian specialty snack.",
-      "dishHighlights": ["Spicy raw shrimp", "Pickled vegetables"],
-      "tags": ["local", "snacks", "dalian-specialty", "unique"]
+      "dishHighlights": [
+        "Spicy raw shrimp",
+        "Pickled vegetables"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "dalian-specialty",
+        "unique"
+      ]
     },
     {
       "id": "dalian-16",
@@ -628,11 +1012,23 @@
       "avgPrice": 150,
       "rating": 4.6,
       "address": "Jinshi Beach area",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "hours": "10:00-22:00",
       "description": "Grilled whole shrimp in red sauce - a local specialty.",
-      "dishHighlights": ["Red grilled shrimp", "Garlic sauce", "Fresh shrimp"],
-      "tags": ["local", "seafood", "specialty", "popular"]
+      "dishHighlights": [
+        "Red grilled shrimp",
+        "Garlic sauce",
+        "Fresh shrimp"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "specialty",
+        "popular"
+      ]
     },
     {
       "id": "dalian-17",
@@ -643,11 +1039,23 @@
       "avgPrice": 20,
       "rating": 4.4,
       "address": "Street vendors",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "全天",
       "description": "Pan-fried starch jelly cubes - iconic Dalian street snack.",
-      "dishHighlights": ["Pan-fried menzi", "Garlic sauce", "MSoy sauce"],
-      "tags": ["local", "snacks", "street-food", "iconic"]
+      "dishHighlights": [
+        "Pan-fried menzi",
+        "Garlic sauce",
+        "MSoy sauce"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "street-food",
+        "iconic"
+      ]
     },
     {
       "id": "dalian-18",
@@ -658,11 +1066,23 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Traditional Dalian dishes in old-fashioned setting.",
-      "dishHighlights": ["Braised pork", "Steamed fish", "Local vegetables"],
-      "tags": ["local", "traditional", "dalian-cuisine", "home-style"]
+      "dishHighlights": [
+        "Braised pork",
+        "Steamed fish",
+        "Local vegetables"
+      ],
+      "tags": [
+        "local",
+        "traditional",
+        "dalian-cuisine",
+        "home-style"
+      ]
     },
     {
       "id": "dalian-19",
@@ -673,11 +1093,24 @@
       "avgPrice": 200,
       "rating": 4.4,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "11:00-15:00, 17:00-21:30",
       "description": "All-you-can-eat seafood buffet with fresh catches.",
-      "dishHighlights": ["Unlimited seafood", "Crab", "Shrimp", "Shellfish"],
-      "tags": ["chain", "seafood", "buffet", "value"]
+      "dishHighlights": [
+        "Unlimited seafood",
+        "Crab",
+        "Shrimp",
+        "Shellfish"
+      ],
+      "tags": [
+        "chain",
+        "seafood",
+        "buffet",
+        "value"
+      ]
     },
     {
       "id": "dalian-20",
@@ -688,11 +1121,24 @@
       "avgPrice": 100,
       "rating": 4.3,
       "address": "Xinghai Square area",
-      "coordinates": { "lat": 38.8822, "lng": 121.5222 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5222
+      },
       "hours": "10:00-22:00",
       "description": "Various restaurants near the famous square.",
-      "dishHighlights": ["Western food", "Chinese food", "Seafood", "Fast food"],
-      "tags": ["local", "tourist-area", "variety", "view"]
+      "dishHighlights": [
+        "Western food",
+        "Chinese food",
+        "Seafood",
+        "Fast food"
+      ],
+      "tags": [
+        "local",
+        "tourist-area",
+        "variety",
+        "view"
+      ]
     },
     {
       "id": "dalian-21",
@@ -703,11 +1149,24 @@
       "avgPrice": 60,
       "rating": 4.3,
       "address": "Joy City Mall, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Large food court in modern shopping mall.",
-      "dishHighlights": ["Various cuisines", "Fast food", "Asian food", "Desserts"],
-      "tags": ["local", "food-court", "shopping", "variety"]
+      "dishHighlights": [
+        "Various cuisines",
+        "Fast food",
+        "Asian food",
+        "Desserts"
+      ],
+      "tags": [
+        "local",
+        "food-court",
+        "shopping",
+        "variety"
+      ]
     },
     {
       "id": "dalian-22",
@@ -718,11 +1177,23 @@
       "avgPrice": 25,
       "rating": 4.5,
       "address": "46 Shandong Road",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "09:00-21:00",
       "description": "Famous dessert shop with traditional glutinous rice treats.",
-      "dishHighlights": ["Glutinous rice cakes", "Sweet dumplings", "Rice pudding"],
-      "tags": ["local", "dessert", "traditional", "sweet"]
+      "dishHighlights": [
+        "Glutinous rice cakes",
+        "Sweet dumplings",
+        "Rice pudding"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "sweet"
+      ]
     },
     {
       "id": "dalian-23",
@@ -733,11 +1204,23 @@
       "avgPrice": 70,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Famous for rich braised pork ribs and bones.",
-      "dishHighlights": ["Braised pork ribs", "Pork knuckle", "Rice"],
-      "tags": ["local", "northeast", "meat", "popular"]
+      "dishHighlights": [
+        "Braised pork ribs",
+        "Pork knuckle",
+        "Rice"
+      ],
+      "tags": [
+        "local",
+        "northeast",
+        "meat",
+        "popular"
+      ]
     },
     {
       "id": "dalian-24",
@@ -748,11 +1231,23 @@
       "avgPrice": 60,
       "rating": 4.4,
       "address": "Multiple locations",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Popular restaurant chain known for sweet and sour dishes.",
-      "dishHighlights": ["Sweet and sour pork", "General Tso's chicken", "Fried rice"],
-      "tags": ["local", "dalian-cuisine", "popular", "chain"]
+      "dishHighlights": [
+        "Sweet and sour pork",
+        "General Tso's chicken",
+        "Fried rice"
+      ],
+      "tags": [
+        "local",
+        "dalian-cuisine",
+        "popular",
+        "chain"
+      ]
     },
     {
       "id": "dalian-25",
@@ -763,11 +1258,23 @@
       "avgPrice": 80,
       "rating": 4.6,
       "address": "Seafood restaurants",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "hours": "10:00-22:00",
       "description": "Stir-fried sea intestine - a unique Dalian seafood dish.",
-      "dishHighlights": ["Stir-fried sea intestine", "Garlic sauce", "Spicy"],
-      "tags": ["local", "seafood", "unique", "dalian-specialty"]
+      "dishHighlights": [
+        "Stir-fried sea intestine",
+        "Garlic sauce",
+        "Spicy"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "unique",
+        "dalian-specialty"
+      ]
     }
   ],
   "transport": {
@@ -825,9 +1332,17 @@
       "budget": "luxury",
       "priceRange": "¥1200-2800/night",
       "address": "68 Jiefang Road, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "rating": 4.7,
-      "highlights": ["City center location", "Sea views", "Luxury facilities", "Good service"],
+      "highlights": [
+        "City center location",
+        "Sea views",
+        "Luxury facilities",
+        "Good service"
+      ],
       "bookingTips": "Best location for sightseeing. Book sea view rooms."
     },
     {
@@ -836,9 +1351,17 @@
       "budget": "luxury",
       "priceRange": "¥1000-2200/night",
       "address": "1-3 Victory Square, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "rating": 4.6,
-      "highlights": ["Zhongshan Square views", "Central location", "Modern luxury", "Multiple dining"],
+      "highlights": [
+        "Zhongshan Square views",
+        "Central location",
+        "Modern luxury",
+        "Multiple dining"
+      ],
       "bookingTips": "Book square view rooms. Perfect for first-time visitors."
     },
     {
@@ -847,9 +1370,17 @@
       "budget": "luxury",
       "priceRange": "¥1500-3500/night",
       "address": "600 Jinshi Road, Jinzhou District",
-      "coordinates": { "lat": 39.0422, "lng": 121.9122 },
+      "coordinates": {
+        "lat": 39.0422,
+        "lng": 121.9122
+      },
       "rating": 4.7,
-      "highlights": ["Castle-like building", "Sea views", "Golf course", "Unique experience"],
+      "highlights": [
+        "Castle-like building",
+        "Sea views",
+        "Golf course",
+        "Unique experience"
+      ],
       "bookingTips": "Unique experience in castle. Book well ahead for best rates."
     },
     {
@@ -858,9 +1389,17 @@
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
       "address": "Jinshi Beach, Jinzhou District",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "rating": 4.6,
-      "highlights": ["Beachfront", "Resort facilities", "Golf course", "Scenic location"],
+      "highlights": [
+        "Beachfront",
+        "Resort facilities",
+        "Golf course",
+        "Scenic location"
+      ],
       "bookingTips": "Great for beach vacation. Book resort hotel."
     },
     {
@@ -869,9 +1408,17 @@
       "budget": "mid",
       "priceRange": "¥400-800/night",
       "address": "Near Dalian Airport",
-      "coordinates": { "lat": 38.9622, "lng": 121.5422 },
+      "coordinates": {
+        "lat": 38.9622,
+        "lng": 121.5422
+      },
       "rating": 4.4,
-      "highlights": ["Airport location", "Free airport transfer", "Comfortable rooms", "Good value"],
+      "highlights": [
+        "Airport location",
+        "Free airport transfer",
+        "Comfortable rooms",
+        "Good value"
+      ],
       "bookingTips": "Perfect for early flights. Free shuttle service."
     },
     {
@@ -880,9 +1427,17 @@
       "budget": "budget",
       "priceRange": "¥150-350/night",
       "address": "Xinghai Square area",
-      "coordinates": { "lat": 38.8822, "lng": 121.5222 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5222
+      },
       "rating": 4.2,
-      "highlights": ["Near Xinghai Square", "Budget-friendly", "Clean rooms", "Metro access"],
+      "highlights": [
+        "Near Xinghai Square",
+        "Budget-friendly",
+        "Clean rooms",
+        "Metro access"
+      ],
       "bookingTips": "Best budget near main attraction. Book during off-peak."
     },
     {
@@ -891,9 +1446,17 @@
       "budget": "mid",
       "priceRange": "¥350-700/night",
       "address": "Xinghai Bay area",
-      "coordinates": { "lat": 38.8822, "lng": 121.5222 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5222
+      },
       "rating": 4.5,
-      "highlights": ["Library theme", "Near square", "Comfortable beds", "Free breakfast"],
+      "highlights": [
+        "Library theme",
+        "Near square",
+        "Comfortable beds",
+        "Free breakfast"
+      ],
       "bookingTips": "Great value. Popular Chinese boutique chain."
     },
     {
@@ -902,9 +1465,17 @@
       "budget": "mid",
       "priceRange": "¥500-900/night",
       "address": "Laohutan area",
-      "coordinates": { "lat": 38.8722, "lng": 121.6522 },
+      "coordinates": {
+        "lat": 38.8722,
+        "lng": 121.6522
+      },
       "rating": 4.4,
-      "highlights": ["Near ocean park", "Ocean views", "Family-friendly", "Good location"],
+      "highlights": [
+        "Near ocean park",
+        "Ocean views",
+        "Family-friendly",
+        "Good location"
+      ],
       "bookingTips": "Perfect for families. Book near attractions."
     },
     {
@@ -913,9 +1484,17 @@
       "budget": "mid",
       "priceRange": "¥400-800/night",
       "address": "Zhongshan Square",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "rating": 4.4,
-      "highlights": ["Central location", "European architecture", "Historic building", "Good service"],
+      "highlights": [
+        "Central location",
+        "European architecture",
+        "Historic building",
+        "Good service"
+      ],
       "bookingTips": "Feel historic Dalian. Book square view rooms."
     },
     {
@@ -924,9 +1503,17 @@
       "budget": "budget",
       "priceRange": "¥200-500/night",
       "address": "Jinshi Beach area",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "rating": 4.3,
-      "highlights": ["Near beach", "Local experience", "Budget-friendly", "Scenic location"],
+      "highlights": [
+        "Near beach",
+        "Local experience",
+        "Budget-friendly",
+        "Scenic location"
+      ],
       "bookingTips": "Great for beach vacation. Book during off-peak season."
     },
     {
@@ -935,9 +1522,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "Bangchuidao Island area",
-      "coordinates": { "lat": 38.8722, "lng": 121.6522 },
+      "coordinates": {
+        "lat": 38.8722,
+        "lng": 121.6522
+      },
       "rating": 4.6,
-      "highlights": ["Seaside location", "Ocean views", "Resort facilities", "Quiet area"],
+      "highlights": [
+        "Seaside location",
+        "Ocean views",
+        "Resort facilities",
+        "Quiet area"
+      ],
       "bookingTips": "Perfect for beach lovers. Book ocean view rooms."
     },
     {
@@ -946,9 +1541,17 @@
       "budget": "budget",
       "priceRange": "¥150-350/night",
       "address": "Russian Style Street area",
-      "coordinates": { "lat": 38.9322, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9322,
+        "lng": 121.6222
+      },
       "rating": 4.3,
-      "highlights": ["Near Russian street", "Historic area", "Local experience", "Value"],
+      "highlights": [
+        "Near Russian street",
+        "Historic area",
+        "Local experience",
+        "Value"
+      ],
       "bookingTips": "Experience colonial architecture. Great location."
     },
     {
@@ -957,9 +1560,17 @@
       "budget": "mid",
       "priceRange": "¥500-900/night",
       "address": "Near Discoveryland",
-      "coordinates": { "lat": 39.0522, "lng": 121.9222 },
+      "coordinates": {
+        "lat": 39.0522,
+        "lng": 121.9222
+      },
       "rating": 4.5,
-      "highlights": ["Near theme park", "Family-friendly", "Themed rooms", "Good value"],
+      "highlights": [
+        "Near theme park",
+        "Family-friendly",
+        "Themed rooms",
+        "Good value"
+      ],
       "bookingTips": "Perfect for families visiting theme parks."
     },
     {
@@ -968,9 +1579,17 @@
       "budget": "luxury",
       "priceRange": "¥1200-2500/night",
       "address": "Xinghai Bay",
-      "coordinates": { "lat": 38.8822, "lng": 121.5222 },
+      "coordinates": {
+        "lat": 38.8822,
+        "lng": 121.5222
+      },
       "rating": 4.6,
-      "highlights": ["Castle-like building", "Sea views", "Luxury", "Photo opportunities"],
+      "highlights": [
+        "Castle-like building",
+        "Sea views",
+        "Luxury",
+        "Photo opportunities"
+      ],
       "bookingTips": "Unique experience. Great for photos."
     },
     {
@@ -979,9 +1598,17 @@
       "budget": "mid",
       "priceRange": "¥400-800/night",
       "address": "Near Laohutan Ocean Park",
-      "coordinates": { "lat": 38.8722, "lng": 121.6522 },
+      "coordinates": {
+        "lat": 38.8722,
+        "lng": 121.6522
+      },
       "rating": 4.4,
-      "highlights": ["Near ocean park", "Sea views", "Family-friendly", "Good location"],
+      "highlights": [
+        "Near ocean park",
+        "Sea views",
+        "Family-friendly",
+        "Good location"
+      ],
       "bookingTips": "Perfect for ocean park visitors."
     }
   ],
@@ -990,22 +1617,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Dalian",
-      "howToUse": ["Download app", "Link card"],
-      "tips": ["Works at all merchants", "English mode available"]
+      "howToUse": [
+        "Download app",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English mode available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Needed for shared bikes"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at seafood markets",
-      "howToUse": ["ATM everywhere", "Banks common"],
-      "tips": ["Keep 200¥ for seafood markets", "Most restaurants accept cards"]
+      "howToUse": [
+        "ATM everywhere",
+        "Banks common"
+      ],
+      "tips": [
+        "Keep 200¥ for seafood markets",
+        "Most restaurants accept cards"
+      ]
     }
   ],
   "culturalTips": [
@@ -1127,7 +1772,10 @@
       "nameEn": "The First Affiliated Hospital of Dalian Medical University",
       "phone": "+86 411 8363 5999",
       "address": "222 Zhongshan Road, Xigang District",
-      "coordinates": { "lat": 38.9122, "lng": 121.6022 },
+      "coordinates": {
+        "lat": 38.9122,
+        "lng": 121.6022
+      },
       "notes": "English-speaking staff available"
     },
     {
@@ -1136,7 +1784,10 @@
       "nameEn": "Dalian Central Hospital",
       "phone": "+86 411 8440 8999",
       "address": "42 Xuefu Road, Shahekou District",
-      "coordinates": { "lat": 38.8922, "lng": 121.5922 },
+      "coordinates": {
+        "lat": 38.8922,
+        "lng": 121.5922
+      },
       "notes": "Another major hospital"
     },
     {
@@ -1159,7 +1810,10 @@
       "nameEn": "Russia Consulate General Dalian",
       "phone": "+86 411 8280 3828",
       "address": "6 Huayuan Street, Zhongshan District",
-      "coordinates": { "lat": 38.9222, "lng": 121.6222 },
+      "coordinates": {
+        "lat": 38.9222,
+        "lng": 121.6222
+      },
       "notes": "For Russian citizens in Dalian"
     },
     {

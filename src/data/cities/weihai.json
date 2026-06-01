@@ -10,7 +10,7 @@
   },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Weihai is a beautiful coastal city in Shandong Province, known for clean beaches, fresh seafood, and historical sites. Famous as the departure point for the first Japanese attack on China in 1894 (Sino-Japanese War). Now a popular summer destination with scenic coastal drives and islands.",
-  "coverImage": "https://images.unsplash.com/photo-1559628233-100c798642d4?w=1200",
+  "coverImage": "https://images.unsplash.com/photo-1689143626749-3c2ab3ebca45?w=1200&q=80",
   "highlights": [
     "Liugong Island - First Sino-Japanese War site",
     "Golden Beach - Pristine 10km beach",
@@ -20,7 +20,13 @@
   ],
   "climate": {
     "type": "Temperate monsoon",
-    "bestMonths": ["May", "June", "July", "August", "September"],
+    "bestMonths": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
     "avgSummerTemp": "24C (75F)",
     "avgWinterTemp": "0C (32F)",
     "tips": "Best in summer for beaches. July-August peak swimming season. Pleasant in September. Winter cold but scenic. Avoid Golden Week October."
@@ -31,14 +37,22 @@
       "name": "刘公岛",
       "nameEn": "Liugong Island",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=400",
+      "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=800",
       "description": "Historic island where the First Sino-Japanese War began in 1894. Features naval base, museums, and beautiful coastal scenery.",
       "address": "Liugong Island, Weihai",
-      "coordinates": {"lat": 37.4591, "lng": 122.1716},
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
       "openingHours": "08:00-17:30",
       "ticketPrice": "122¥ (includes ferry)",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Naval history", "War museum", "British colonial buildings", "Coastal views"],
+      "highlights": [
+        "Naval history",
+        "War museum",
+        "British colonial buildings",
+        "Coastal views"
+      ],
       "tips": "Book tickets online. Allow full morning. The history is moving."
     },
     {
@@ -46,14 +60,22 @@
       "name": "金海滩",
       "nameEn": "Golden Beach",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
       "description": "Pristine 10km beach with fine golden sand, clear water, and modern resorts.",
       "address": "Coastal Development Zone",
-      "coordinates": {"lat": 37.4791, "lng": 122.1016},
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-4 hours",
-      "highlights": ["Clean beach", "Swimming", "Water sports", "Sunset views"],
+      "highlights": [
+        "Clean beach",
+        "Swimming",
+        "Water sports",
+        "Sunset views"
+      ],
       "tips": "Best in summer for swimming. Arrive early on weekends. Water sports available."
     },
     {
@@ -61,14 +83,22 @@
       "name": "华夏城",
       "nameEn": "Huaxia City",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
       "description": "Large cultural theme park showcasing Chinese civilization with performances and architecture.",
       "address": "环翠区 Weihai",
-      "coordinates": {"lat": 37.4491, "lng": 122.0916},
+      "coordinates": {
+        "lat": 37.4491,
+        "lng": 122.0916
+      },
       "openingHours": "07:30-18:30",
       "ticketPrice": "98¥",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Live performances", "Ancient architecture", "Water show", "Cultural exhibits"],
+      "highlights": [
+        "Live performances",
+        "Ancient architecture",
+        "Water show",
+        "Cultural exhibits"
+      ],
       "tips": "Full day needed. The evening water show is spectacular."
     },
     {
@@ -76,14 +106,22 @@
       "name": "成山头",
       "nameEn": "Chengshan Island",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=400",
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800",
       "description": "Easternmost point of China's mainland, known as 'First Light of the East'. Dramatic sea cliffs and sunrise views.",
       "address": "荣成市 Rongcheng",
-      "coordinates": {"lat": 37.3991, "lng": 122.6716},
+      "coordinates": {
+        "lat": 37.3991,
+        "lng": 122.6716
+      },
       "openingHours": "06:00-18:00",
       "ticketPrice": "180¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Easternmost point", "Sunrise views", "Sea cliffs", "Lighthouse"],
+      "highlights": [
+        "Easternmost point",
+        "Sunrise views",
+        "Sea cliffs",
+        "Lighthouse"
+      ],
       "tips": "Best for sunrise. Day trip from Weihai. The lighthouse area is iconic."
     },
     {
@@ -91,14 +129,22 @@
       "name": "海驴岛",
       "nameEn": "Haiyu Island",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1516815231560-8f41ec531527?w=400",
+      "image": "https://images.unsplash.com/photo-1516815231560-8f41ec531527?w=800",
       "description": "Seabird island with thousands of black-tailed gulls nesting. Known as 'Seabird Kingdom'.",
       "address": "荣成市 Rongcheng",
-      "coordinates": {"lat": 37.3591, "lng": 122.5916},
+      "coordinates": {
+        "lat": 37.3591,
+        "lng": 122.5916
+      },
       "openingHours": "Ferry schedule (Apr-Oct)",
       "ticketPrice": "120¥ (ferry included)",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Seabirds", "Island scenery", "Photography", "Nature"],
+      "highlights": [
+        "Seabirds",
+        "Island scenery",
+        "Photography",
+        "Nature"
+      ],
       "tips": "Best in summer for birds. Bring seasickness medicine for ferry."
     },
     {
@@ -106,14 +152,22 @@
       "name": "威海公园",
       "nameEn": "Weihai Park",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?w=400",
+      "image": "https://images.unsplash.com/photo-1746960731249-8a167dafa31b?w=800&q=85",
       "description": "Beautiful coastal urban park with gardens, sculptures, and sea views.",
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Coastal path", "Sculptures", "City views", "Sunset"],
+      "highlights": [
+        "Coastal path",
+        "Sculptures",
+        "City views",
+        "Sunset"
+      ],
       "tips": "Best at sunset. Great for evening stroll. Iconic giant rubber duck."
     },
     {
@@ -121,14 +175,22 @@
       "name": "幸福门",
       "nameEn": "Happiness Gate",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1513721039695-d514d6b7d9d2?w=400",
+      "image": "https://images.unsplash.com/photo-1513721039695-d514d6b7d9d2?w=800",
       "description": "Iconic arch gate on the waterfront, symbol of Weihai and 'happiness' of the city.",
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.5191, "lng": 122.1316},
+      "coordinates": {
+        "lat": 37.5191,
+        "lng": 122.1316
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["Iconic structure", "Photo spot", "Sea views", "City symbol"],
+      "highlights": [
+        "Iconic structure",
+        "Photo spot",
+        "Sea views",
+        "City symbol"
+      ],
       "tips": "Best for photos. The surrounding area is great for walking."
     },
     {
@@ -136,14 +198,22 @@
       "name": "环海路",
       "nameEn": "Coastal Road",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
       "description": "Scenic coastal road stretching 30km along the coastline with beautiful sea views.",
       "address": "Along coastline",
-      "coordinates": {"lat": 37.4991, "lng": 122.1116},
+      "coordinates": {
+        "lat": 37.4991,
+        "lng": 122.1116
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Coastal views", "Driving", "Cycling", "Beaches"],
+      "highlights": [
+        "Coastal views",
+        "Driving",
+        "Cycling",
+        "Beaches"
+      ],
       "tips": "Rent a car or bike. Best in morning. Multiple scenic stops."
     },
     {
@@ -151,14 +221,22 @@
       "name": "那香海",
       "nameEn": "Naxianghai",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=400",
+      "image": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=800",
       "description": "Clean beach area with modern facilities, art installations, and beach clubs.",
       "address": "文登市 Wendeng",
-      "coordinates": {"lat": 37.3591, "lng": 122.3016},
+      "coordinates": {
+        "lat": 37.3591,
+        "lng": 122.3016
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Clean beach", "Art installations", "Beach club", "Modern facilities"],
+      "highlights": [
+        "Clean beach",
+        "Art installations",
+        "Beach club",
+        "Modern facilities"
+      ],
       "tips": "Best beach experience. Modern amenities. Beach club for dining."
     },
     {
@@ -166,14 +244,22 @@
       "name": "天鹅湖",
       "nameEn": "Swan Lake",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1457845603122-6a2d8b7d31c5?w=400",
+      "image": "https://images.unsplash.com/photo-1457845603122-6a2d8b7d31c5?w=800",
       "description": "Winter habitat for migrating swans from Siberia. Best visited December-February.",
       "address": "荣成市 Rongcheng",
-      "coordinates": {"lat": 37.1791, "lng": 122.5916},
+      "coordinates": {
+        "lat": 37.1791,
+        "lng": 122.5916
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Swan migration", "Winter scenery", "Photography", "Nature"],
+      "highlights": [
+        "Swan migration",
+        "Winter scenery",
+        "Photography",
+        "Nature"
+      ],
       "tips": "Best in December-February. Hundreds of swans. Bring warm clothes."
     },
     {
@@ -181,14 +267,22 @@
       "name": "圣经山",
       "nameEn": "Bible Mountain",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=400",
+      "image": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800",
       "description": "Sacred Taoist mountain with ancient carved scriptures and scenic hiking trails.",
       "address": "文登市 Wendeng",
-      "coordinates": {"lat": 37.2091, "lng": 122.1516},
+      "coordinates": {
+        "lat": 37.2091,
+        "lng": 122.1516
+      },
       "openingHours": "07:00-17:00",
       "ticketPrice": "50¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Taoist culture", "Ancient carvings", "Mountain hiking", "Scenery"],
+      "highlights": [
+        "Taoist culture",
+        "Ancient carvings",
+        "Mountain hiking",
+        "Scenery"
+      ],
       "tips": "Day trip. Taoist sacred mountain. Ancient stone carvings unique."
     },
     {
@@ -196,14 +290,22 @@
       "name": "大乳山",
       "nameEn": "Darushan",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=400",
+      "image": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=800",
       "description": "Mother mountain shaped like a nursing breast, considered sacred in local culture.",
       "address": "乳山市 Rushan",
-      "coordinates": {"lat": 36.8091, "lng": 121.6516},
+      "coordinates": {
+        "lat": 36.8091,
+        "lng": 121.6516
+      },
       "openingHours": "07:00-17:30",
       "ticketPrice": "40¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Unique shape", "Sacred site", "Coastal views", "Gardens"],
+      "highlights": [
+        "Unique shape",
+        "Sacred site",
+        "Coastal views",
+        "Gardens"
+      ],
       "tips": "Day trip. Interesting shape. The surrounding gardens are beautiful."
     },
     {
@@ -211,14 +313,22 @@
       "name": "银滩",
       "nameEn": "Silver Beach",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1529579986984-8d1b5bc84c1b?w=400",
+      "image": "https://images.unsplash.com/photo-1529579986984-8d1b5bc84c1b?w=800",
       "description": "21km pristine beach with fine white sand, considered among China's best beaches.",
       "address": "乳山市 Rushan",
-      "coordinates": {"lat": 36.8591, "lng": 121.6016},
+      "coordinates": {
+        "lat": 36.8591,
+        "lng": 121.6016
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-4 hours",
-      "highlights": ["White sand", "Clean water", "Long beach", "Quiet"],
+      "highlights": [
+        "White sand",
+        "Clean water",
+        "Long beach",
+        "Quiet"
+      ],
       "tips": "Less crowded than Golden Beach. White sand unique. Great for walks."
     },
     {
@@ -226,14 +336,22 @@
       "name": "刘公岛博览园",
       "nameEn": "Liugong Island Exhibition Garden",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1590123292084-1e82ac8be4df?w=400",
+      "image": "https://images.unsplash.com/photo-1590123292084-1e82ac8be4df?w=800",
       "description": "Exhibition hall on Liugong Island showcasing naval history and Sino-Japanese War.",
       "address": "Liugong Island",
-      "coordinates": {"lat": 37.4591, "lng": 122.1716},
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
       "openingHours": "08:00-17:30",
       "ticketPrice": "Included in Liugong Island ticket",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Naval exhibits", "War history", "Interactive displays", "Artifacts"],
+      "highlights": [
+        "Naval exhibits",
+        "War history",
+        "Interactive displays",
+        "Artifacts"
+      ],
       "tips": "Combine with island tour. The exhibits are informative and moving."
     },
     {
@@ -241,14 +359,22 @@
       "name": "定远舰",
       "nameEn": "Dingyuan Battleship",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
+      "image": "https://images.unsplash.com/photo-1537531383496-f4749bce9441?w=800&q=85",
       "description": "Full-scale replica of the famous Chinese battleship from the Sino-Japanese War.",
       "address": "Liugong Island area",
-      "coordinates": {"lat": 37.4591, "lng": 122.1716},
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
       "openingHours": "08:00-17:30",
       "ticketPrice": "70¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Battleship replica", "Naval history", "Weapon exhibits", "History"],
+      "highlights": [
+        "Battleship replica",
+        "Naval history",
+        "Weapon exhibits",
+        "History"
+      ],
       "tips": "Combine with Liugong Island. Impressive size. Great for history buffs."
     },
     {
@@ -256,14 +382,22 @@
       "name": "鸡鸣岛",
       "nameEn": "Jiming Island",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=400",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800",
       "description": "Secluded island with fishing village, cliffs, and beach. Famous from TV show.",
       "address": "荣成市 Rongcheng",
-      "coordinates": {"lat": 37.4091, "lng": 122.5916},
+      "coordinates": {
+        "lat": 37.4091,
+        "lng": 122.5916
+      },
       "openingHours": "Ferry schedule",
       "ticketPrice": "88¥ (ferry included)",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Island village", "Cliffs", "Beach", "Authentic life"],
+      "highlights": [
+        "Island village",
+        "Cliffs",
+        "Beach",
+        "Authentic life"
+      ],
       "tips": "Book ferry in advance. The fishing village is charming."
     },
     {
@@ -271,14 +405,22 @@
       "name": "海洋公园",
       "nameEn": "Weihai Ocean Park",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
+      "image": "https://images.unsplash.com/photo-1506905275237-883cd4902b81?w=800&q=85",
       "description": "Aquarium with marine life, dolphin shows, and underwater tunnel.",
       "address": "Coastal Development Zone",
-      "coordinates": {"lat": 37.4791, "lng": 122.1016},
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
       "openingHours": "08:30-17:30",
       "ticketPrice": "150¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Marine animals", "Dolphin shows", "Underwater tunnel", "Family friendly"],
+      "highlights": [
+        "Marine animals",
+        "Dolphin shows",
+        "Underwater tunnel",
+        "Family friendly"
+      ],
       "tips": "Great for families. Book shows in advance. Combine with beach."
     },
     {
@@ -286,14 +428,22 @@
       "name": "韩乐坊",
       "nameEn": "Korean Cultural Block",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=400",
+      "image": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800",
       "description": "Korean-themed commercial district with authentic Korean food and culture.",
       "address": "Weihai Economic Zone",
-      "coordinates": {"lat": 37.5291, "lng": 122.1416},
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Korean food", "Shopping", "Culture", "Nightlife"],
+      "highlights": [
+        "Korean food",
+        "Shopping",
+        "Culture",
+        "Nightlife"
+      ],
       "tips": "Best evening. Authentic Korean food. Popular with locals."
     },
     {
@@ -301,14 +451,22 @@
       "name": "国际海水浴场",
       "nameEn": "International Bathing Beach",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=400",
+      "image": "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=800",
       "description": "Popular beach with complete facilities, volleyball courts, and beach activities.",
       "address": "Coastal Development Zone",
-      "coordinates": {"lat": 37.4891, "lng": 122.0916},
+      "coordinates": {
+        "lat": 37.4891,
+        "lng": 122.0916
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-4 hours",
-      "highlights": ["Facilities", "Sports", "Clean beach", "Night beach"],
+      "highlights": [
+        "Facilities",
+        "Sports",
+        "Clean beach",
+        "Night beach"
+      ],
       "tips": "Best equipped beach. Beach volleyball. Evening bonfires."
     },
     {
@@ -316,14 +474,22 @@
       "name": "灯塔",
       "nameEn": "Weihai Lighthouse",
       "category": "historical",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+      "image": "https://images.unsplash.com/photo-1675586869688-f152e2a9a12f?w=800&q=85",
       "description": "Historic lighthouse on the eastern tip of Liugong Island, offering views.",
       "address": "Liugong Island",
-      "coordinates": {"lat": 37.4591, "lng": 122.1816},
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1816
+      },
       "openingHours": "08:00-17:30",
       "ticketPrice": "Included in island ticket",
       "recommendedVisitTime": "30 min",
-      "highlights": ["Coastal views", "Historic lighthouse", "Photo spot", "Naval history"],
+      "highlights": [
+        "Coastal views",
+        "Historic lighthouse",
+        "Photo spot",
+        "Naval history"
+      ],
       "tips": "Combine with island tour. Best lighting for photos."
     },
     {
@@ -331,14 +497,22 @@
       "name": "悦海公园",
       "nameEn": "Yuehai Park",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
       "description": "Coastal park with beach, gardens, and famous lighthouse building.",
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.5091, "lng": 122.1316},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Lighthouse building", "Beach", "Gardens", "Sunset"],
+      "highlights": [
+        "Lighthouse building",
+        "Beach",
+        "Gardens",
+        "Sunset"
+      ],
       "tips": "Best at sunset. The lighthouse building is unique."
     },
     {
@@ -346,14 +520,22 @@
       "name": "影视城",
       "nameEn": "Weihai Film and Television City",
       "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800",
       "description": "Film studio and tourist destination with period architecture and shows.",
       "address": "环翠区 Weihai",
-      "coordinates": {"lat": 37.4391, "lng": 122.1016},
+      "coordinates": {
+        "lat": 37.4391,
+        "lng": 122.1016
+      },
       "openingHours": "08:30-17:30",
       "ticketPrice": "80¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Film sets", "Performances", "Period architecture", "Costume rental"],
+      "highlights": [
+        "Film sets",
+        "Performances",
+        "Period architecture",
+        "Costume rental"
+      ],
       "tips": "Great for photos. Costume rental available. Check show schedule."
     },
     {
@@ -361,14 +543,22 @@
       "name": "温泉",
       "nameEn": "Weihai Hot Spring",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=400",
+      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800",
       "description": "Natural hot spring resort with various pools and spa treatments.",
       "address": "文登市 Wendeng",
-      "coordinates": {"lat": 37.2091, "lng": 122.2016},
+      "coordinates": {
+        "lat": 37.2091,
+        "lng": 122.2016
+      },
       "openingHours": "09:00-23:00",
       "ticketPrice": "168¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Natural hot spring", "Outdoor pools", "Spa treatments", "Relaxation"],
+      "highlights": [
+        "Natural hot spring",
+        "Outdoor pools",
+        "Spa treatments",
+        "Relaxation"
+      ],
       "tips": "Great after beach day. Book evening for sunset views. Many pools."
     },
     {
@@ -376,14 +566,22 @@
       "name": "小石岛",
       "nameEn": "Xiaoshi Island",
       "category": "natural",
-      "image": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=400",
+      "image": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800",
       "description": "Small island with fishing village, seafood restaurants, and sunset views.",
       "address": "环翠区 Weihai",
-      "coordinates": {"lat": 37.5291, "lng": 122.0816},
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.0816
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Fishing village", "Seafood", "Sunset", "Peaceful"],
+      "highlights": [
+        "Fishing village",
+        "Seafood",
+        "Sunset",
+        "Peaceful"
+      ],
       "tips": "Best for sunset. Fresh seafood. Quiet island feel."
     }
   ],
@@ -397,12 +595,25 @@
       "avgPrice": 100,
       "rating": 4.6,
       "address": "Seafood Street, Coastal Zone",
-      "coordinates": {"lat": 37.5091, "lng": 122.1316},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
       "phone": "+86 631 522 8888",
       "hours": "10:00-23:00",
       "description": "Popular outdoor seafood market with fresh catches and local preparation.",
-      "dishHighlights": ["Fresh seafood", "Steamed fish", "Grilled prawns", "Clams"],
-      "tags": ["local", "seafood", "market-style", "fresh"]
+      "dishHighlights": [
+        "Fresh seafood",
+        "Steamed fish",
+        "Grilled prawns",
+        "Clams"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "market-style",
+        "fresh"
+      ]
     },
     {
       "id": "weihai-2",
@@ -413,11 +624,24 @@
       "avgPrice": 80,
       "rating": 4.7,
       "address": "Korean Cultural Block",
-      "coordinates": {"lat": 37.5291, "lng": 122.1416},
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
       "hours": "11:00-23:00",
       "description": "Authentic Korean restaurant run by Korean locals with premium ingredients.",
-      "dishHighlights": ["Korean BBQ", "Kimchi", "Bibimbap", "Korean fried chicken"],
-      "tags": ["local", "korean", "authentic", "popular"]
+      "dishHighlights": [
+        "Korean BBQ",
+        "Kimchi",
+        "Bibimbap",
+        "Korean fried chicken"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "authentic",
+        "popular"
+      ]
     },
     {
       "id": "weihai-3",
@@ -428,12 +652,25 @@
       "avgPrice": 150,
       "rating": 4.7,
       "address": "Near Golden Beach",
-      "coordinates": {"lat": 37.4791, "lng": 122.1016},
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
       "phone": "+86 631 562 8888",
       "hours": "10:30-22:00",
       "description": "Popular seafood restaurant with fresh catches and ocean views.",
-      "dishHighlights": ["Steamed seafood", "Sea urchin", "Abalone", "Grilled fish"],
-      "tags": ["local", "seafood", "views", "premium"]
+      "dishHighlights": [
+        "Steamed seafood",
+        "Sea urchin",
+        "Abalone",
+        "Grilled fish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "views",
+        "premium"
+      ]
     },
     {
       "id": "weihai-4",
@@ -444,11 +681,24 @@
       "avgPrice": 50,
       "rating": 4.4,
       "address": "Night Market Area",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "hours": "17:00-02:00",
       "description": "Popular night market with variety of street food and local snacks.",
-      "dishHighlights": ["Grilled skewers", "Fried seafood", "Local snacks", "Beer"],
-      "tags": ["local", "night-market", "street-food", "late-night"]
+      "dishHighlights": [
+        "Grilled skewers",
+        "Fried seafood",
+        "Local snacks",
+        "Beer"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "late-night"
+      ]
     },
     {
       "id": "weihai-5",
@@ -459,11 +709,24 @@
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Near Hot Spring Resort",
-      "coordinates": {"lat": 37.2091, "lng": 122.2016},
+      "coordinates": {
+        "lat": 37.2091,
+        "lng": 122.2016
+      },
       "hours": "10:30-22:00",
       "description": "Restaurant serving healthy cuisine using hot spring water for cooking.",
-      "dishHighlights": ["Hot spring cooked fish", "Steamed dishes", "Healthy menu", "Local ingredients"],
-      "tags": ["local", "healthy", "unique", "specialty"]
+      "dishHighlights": [
+        "Hot spring cooked fish",
+        "Steamed dishes",
+        "Healthy menu",
+        "Local ingredients"
+      ],
+      "tags": [
+        "local",
+        "healthy",
+        "unique",
+        "specialty"
+      ]
     },
     {
       "id": "weihai-6",
@@ -474,11 +737,24 @@
       "avgPrice": 100,
       "rating": 4.6,
       "address": "Korean Cultural Block",
-      "coordinates": {"lat": 37.5291, "lng": 122.1416},
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
       "hours": "11:00-23:00",
       "description": "Korean BBQ restaurant with premium beef and authentic Korean sides.",
-      "dishHighlights": ["Premium beef", "Lamb BBQ", "Kimchi", "Rice dishes"],
-      "tags": ["local", "korean", "bbq", "meat"]
+      "dishHighlights": [
+        "Premium beef",
+        "Lamb BBQ",
+        "Kimchi",
+        "Rice dishes"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "bbq",
+        "meat"
+      ]
     },
     {
       "id": "weihai-7",
@@ -489,11 +765,24 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Near Silver Beach",
-      "coordinates": {"lat": 36.8591, "lng": 121.6016},
+      "coordinates": {
+        "lat": 36.8591,
+        "lng": 121.6016
+      },
       "hours": "09:00-21:00",
       "description": "Home-style restaurant serving local seafood and traditional dishes.",
-      "dishHighlights": ["Home-style seafood", "Fresh catch", "Local vegetables", "Cozy atmosphere"],
-      "tags": ["local", "home-style", "seafood", "cozy"]
+      "dishHighlights": [
+        "Home-style seafood",
+        "Fresh catch",
+        "Local vegetables",
+        "Cozy atmosphere"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "seafood",
+        "cozy"
+      ]
     },
     {
       "id": "weihai-8",
@@ -504,11 +793,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "Xiaoshi Island",
-      "coordinates": {"lat": 37.5291, "lng": 122.0816},
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.0816
+      },
       "hours": "10:00-21:00",
       "description": "Seafood restaurant on Xiaoshi Island with sunset views and fresh fish.",
-      "dishHighlights": ["Island seafood", "Steamed fish", "Sunset views", "Local specialty"],
-      "tags": ["local", "seafood", "island", "views"]
+      "dishHighlights": [
+        "Island seafood",
+        "Steamed fish",
+        "Sunset views",
+        "Local specialty"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "island",
+        "views"
+      ]
     },
     {
       "id": "weihai-9",
@@ -519,12 +821,25 @@
       "avgPrice": 150,
       "rating": 4.8,
       "address": "City Center",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "phone": "+86 631 520 9999",
       "hours": "24 hours",
       "description": "Famous hotpot chain with exceptional service and free manicotti.",
-      "dishHighlights": ["Spicy broth", "Fresh beef", "Hand-pulled noodles", "Free dessert"],
-      "tags": ["chain", "hotpot", "service", "late-night"]
+      "dishHighlights": [
+        "Spicy broth",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free dessert"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "late-night"
+      ]
     },
     {
       "id": "weihai-10",
@@ -535,11 +850,24 @@
       "avgPrice": 70,
       "rating": 4.4,
       "address": "Multiple locations",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "hours": "10:00-22:00",
       "description": "Popular individual hotpot chain with affordable prices.",
-      "dishHighlights": ["Individual hotpot", "Variety of broths", "Fresh ingredients", "Value"],
-      "tags": ["chain", "hotpot", "individual", "value"]
+      "dishHighlights": [
+        "Individual hotpot",
+        "Variety of broths",
+        "Fresh ingredients",
+        "Value"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "individual",
+        "value"
+      ]
     },
     {
       "id": "weihai-11",
@@ -550,12 +878,25 @@
       "avgPrice": 150,
       "rating": 4.6,
       "address": "City Center",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "phone": "+86 631 520 1234",
       "hours": "10:30-22:00",
       "description": "Famous Mongolian hotpot chain with premium lamb.",
-      "dishHighlights": ["Mongolian lamb", "Hotpot", "Traditional broth", "Quality"],
-      "tags": ["chain", "hotpot", "mongolian", "premium"]
+      "dishHighlights": [
+        "Mongolian lamb",
+        "Hotpot",
+        "Traditional broth",
+        "Quality"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "mongolian",
+        "premium"
+      ]
     },
     {
       "id": "weihai-12",
@@ -566,11 +907,24 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Korean Cultural Block",
-      "coordinates": {"lat": 37.5291, "lng": 122.1416},
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
       "hours": "11:00-24:00",
       "description": "Popular Korean fried chicken with authentic Korean sauces.",
-      "dishHighlights": ["Korean fried chicken", "Soju", "Korean snacks", "Late night"],
-      "tags": ["local", "korean", "fried-chicken", "late-night"]
+      "dishHighlights": [
+        "Korean fried chicken",
+        "Soju",
+        "Korean snacks",
+        "Late night"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "fried-chicken",
+        "late-night"
+      ]
     },
     {
       "id": "weihai-13",
@@ -581,11 +935,24 @@
       "avgPrice": 70,
       "rating": 4.4,
       "address": "Dayuecheng Mall",
-      "coordinates": {"lat": 37.5091, "lng": 122.1316},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
       "hours": "10:00-22:00",
       "description": "Mall food court with variety of cuisines and options.",
-      "dishHighlights": ["Food court", "International options", "Cafes", "Variety"],
-      "tags": ["chain", "mall", "variety", "convenient"]
+      "dishHighlights": [
+        "Food court",
+        "International options",
+        "Cafes",
+        "Variety"
+      ],
+      "tags": [
+        "chain",
+        "mall",
+        "variety",
+        "convenient"
+      ]
     },
     {
       "id": "weihai-14",
@@ -596,11 +963,24 @@
       "avgPrice": 90,
       "rating": 4.6,
       "address": "Korean Cultural Block",
-      "coordinates": {"lat": 37.5291, "lng": 122.1416},
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
       "hours": "11:00-23:00",
       "description": "Popular BBQ in Korean block with all-you-can-eat options.",
-      "dishHighlights": ["All-you-can-eat BBQ", "Premium meat", "Korean sides", "Value"],
-      "tags": ["local", "korean", "bbq", "all-you-can-eat"]
+      "dishHighlights": [
+        "All-you-can-eat BBQ",
+        "Premium meat",
+        "Korean sides",
+        "Value"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "bbq",
+        "all-you-can-eat"
+      ]
     },
     {
       "id": "weihai-15",
@@ -611,12 +991,25 @@
       "avgPrice": 200,
       "rating": 4.6,
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "phone": "+86 631 522 6666",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "Upscale seafood restaurant with ocean views and premium dishes.",
-      "dishHighlights": ["Premium seafood", "Sea views", "Elegant setting", "Wine list"],
-      "tags": ["fine-dining", "seafood", "views", "romantic"]
+      "dishHighlights": [
+        "Premium seafood",
+        "Sea views",
+        "Elegant setting",
+        "Wine list"
+      ],
+      "tags": [
+        "fine-dining",
+        "seafood",
+        "views",
+        "romantic"
+      ]
     },
     {
       "id": "weihai-16",
@@ -627,11 +1020,24 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "City Center",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "hours": "10:00-22:00",
       "description": "Popular for chicken soup, a local specialty perfect for recovery.",
-      "dishHighlights": ["Chicken soup", "Steamed chicken", "Local dishes", "Healthy"],
-      "tags": ["local", "specialty", "healthy", "comfort"]
+      "dishHighlights": [
+        "Chicken soup",
+        "Steamed chicken",
+        "Local dishes",
+        "Healthy"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "healthy",
+        "comfort"
+      ]
     },
     {
       "id": "weihai-17",
@@ -642,11 +1048,24 @@
       "avgPrice": 40,
       "rating": 4.3,
       "address": "Multiple locations",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "hours": "07:00-23:00",
       "description": "Popular Chinese fast food chain with fried rice and comfort food.",
-      "dishHighlights": ["Fried rice", "Noodles", "Dumplings", "Fast service"],
-      "tags": ["chain", "fast-food", "quick", "familiar"]
+      "dishHighlights": [
+        "Fried rice",
+        "Noodles",
+        "Dumplings",
+        "Fast service"
+      ],
+      "tags": [
+        "chain",
+        "fast-food",
+        "quick",
+        "familiar"
+      ]
     },
     {
       "id": "weihai-18",
@@ -657,11 +1076,24 @@
       "avgPrice": 80,
       "rating": 4.7,
       "address": "Near Seafood Market",
-      "coordinates": {"lat": 37.5091, "lng": 122.1316},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
       "hours": "10:30-21:30",
       "description": "Local specialty - rice topped with stir-fried sea intestine.",
-      "dishHighlights": ["Sea intestine", "Rice", "Savory sauce", "Umami"],
-      "tags": ["local", "specialty", "must-try", "adventurous"]
+      "dishHighlights": [
+        "Sea intestine",
+        "Rice",
+        "Savory sauce",
+        "Umami"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "must-try",
+        "adventurous"
+      ]
     },
     {
       "id": "weihai-19",
@@ -672,11 +1104,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "Mall area",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "hours": "10:00-21:30",
       "description": "World-famous Taiwanese dumpling chain.",
-      "dishHighlights": ["Xiaolongbao", "Fried rice", "Noodles", "Desserts"],
-      "tags": ["chain", "taiwanese", "dumplings", "quality"]
+      "dishHighlights": [
+        "Xiaolongbao",
+        "Fried rice",
+        "Noodles",
+        "Desserts"
+      ],
+      "tags": [
+        "chain",
+        "taiwanese",
+        "dumplings",
+        "quality"
+      ]
     },
     {
       "id": "weihai-20",
@@ -687,11 +1132,24 @@
       "avgPrice": 50,
       "rating": 4.4,
       "address": "Coastal Zone",
-      "coordinates": {"lat": 37.5191, "lng": 122.1316},
+      "coordinates": {
+        "lat": 37.5191,
+        "lng": 122.1316
+      },
       "hours": "09:00-24:00",
       "description": "Street with various cafes, perfect for sunset viewing.",
-      "dishHighlights": ["Coffee", "Western snacks", "Sea views", "Sunset"],
-      "tags": ["cafe", "views", "sunset", "relaxing"]
+      "dishHighlights": [
+        "Coffee",
+        "Western snacks",
+        "Sea views",
+        "Sunset"
+      ],
+      "tags": [
+        "cafe",
+        "views",
+        "sunset",
+        "relaxing"
+      ]
     }
   ],
   "transport": {
@@ -748,9 +1206,17 @@
       "budget": "luxury",
       "priceRange": "¥1000-2000/night",
       "address": "188 Coastal Road, Weihai",
-      "coordinates": {"lat": 37.4891, "lng": 122.0916},
+      "coordinates": {
+        "lat": 37.4891,
+        "lng": 122.0916
+      },
       "rating": 4.7,
-      "highlights": ["Beachfront", "Luxury", "Ocean views", "Multiple pools"],
+      "highlights": [
+        "Beachfront",
+        "Luxury",
+        "Ocean views",
+        "Multiple pools"
+      ],
       "bookingTips": "Best for beach vacation. Book ocean view rooms."
     },
     {
@@ -759,9 +1225,17 @@
       "budget": "luxury",
       "priceRange": "¥1200-2200/night",
       "address": "88 Cultural Road, Weihai",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "rating": 4.7,
-      "highlights": ["Central location", "Luxury facilities", "Bay views", "Multiple dining"],
+      "highlights": [
+        "Central location",
+        "Luxury facilities",
+        "Bay views",
+        "Multiple dining"
+      ],
       "bookingTips": "Best location for sightseeing. Famous Sunday brunch."
     },
     {
@@ -770,9 +1244,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "68 Coastal Road, Weihai",
-      "coordinates": {"lat": 37.5191, "lng": 122.1316},
+      "coordinates": {
+        "lat": 37.5191,
+        "lng": 122.1316
+      },
       "rating": 4.6,
-      "highlights": ["Sea views", "Modern luxury", "Central location", "Good service"],
+      "highlights": [
+        "Sea views",
+        "Modern luxury",
+        "Central location",
+        "Good service"
+      ],
       "bookingTips": "Great location. Perfect for coastal walks."
     },
     {
@@ -781,9 +1263,17 @@
       "budget": "mid",
       "priceRange": "¥400-700/night",
       "address": "168 Qingdao Road, Weihai",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "rating": 4.4,
-      "highlights": ["Central location", "Modern rooms", "Good breakfast", "Value"],
+      "highlights": [
+        "Central location",
+        "Modern rooms",
+        "Good breakfast",
+        "Value"
+      ],
       "bookingTips": "Best value in center. Reliable quality."
     },
     {
@@ -792,9 +1282,17 @@
       "budget": "budget",
       "priceRange": "¥150-300/night",
       "address": "88 Government Road, Weihai",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "rating": 4.2,
-      "highlights": ["Central location", "Budget-friendly", "Clean", "Simple"],
+      "highlights": [
+        "Central location",
+        "Budget-friendly",
+        "Clean",
+        "Simple"
+      ],
       "bookingTips": "Best budget option in center."
     },
     {
@@ -803,9 +1301,17 @@
       "budget": "budget",
       "priceRange": "¥120-250/night",
       "address": "168 Bus Station Road, Weihai",
-      "coordinates": {"lat": 37.5091, "lng": 122.1116},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1116
+      },
       "rating": 4.1,
-      "highlights": ["Budget", "Near bus station", "Simple", "Clean"],
+      "highlights": [
+        "Budget",
+        "Near bus station",
+        "Simple",
+        "Clean"
+      ],
       "bookingTips": "Good for bus travelers."
     },
     {
@@ -814,9 +1320,17 @@
       "budget": "budget",
       "priceRange": "¥80-200/night",
       "address": "Near Golden Beach",
-      "coordinates": {"lat": 37.4791, "lng": 122.1016},
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
       "rating": 4.3,
-      "highlights": ["Beach location", "Budget-friendly", "Social atmosphere", "Bike rental"],
+      "highlights": [
+        "Beach location",
+        "Budget-friendly",
+        "Social atmosphere",
+        "Bike rental"
+      ],
       "bookingTips": "Great for backpackers. Beach access."
     },
     {
@@ -825,9 +1339,17 @@
       "budget": "mid",
       "priceRange": "¥500-900/night",
       "address": "Naxianghai, Wendeng",
-      "coordinates": {"lat": 37.3591, "lng": 122.3016},
+      "coordinates": {
+        "lat": 37.3591,
+        "lng": 122.3016
+      },
       "rating": 4.5,
-      "highlights": ["Beachfront", "Modern", "Clean beach", "Resort facilities"],
+      "highlights": [
+        "Beachfront",
+        "Modern",
+        "Clean beach",
+        "Resort facilities"
+      ],
       "bookingTips": "Best for beach lovers. Modern facilities."
     },
     {
@@ -836,9 +1358,17 @@
       "budget": "mid",
       "priceRange": "¥400-800/night",
       "address": "Liugong Island",
-      "coordinates": {"lat": 37.4591, "lng": 122.1716},
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
       "rating": 4.4,
-      "highlights": ["Island location", "Historic area", "Sea views", "Unique experience"],
+      "highlights": [
+        "Island location",
+        "Historic area",
+        "Sea views",
+        "Unique experience"
+      ],
       "bookingTips": "For history enthusiasts. Book ahead for island stay."
     },
     {
@@ -847,9 +1377,17 @@
       "budget": "mid",
       "priceRange": "¥350-700/night",
       "address": "Chengshan Island, Rongcheng",
-      "coordinates": {"lat": 37.3991, "lng": 122.6716},
+      "coordinates": {
+        "lat": 37.3991,
+        "lng": 122.6716
+      },
       "rating": 4.4,
-      "highlights": ["Easternmost point", "Sunrise views", "Scenic location", "Nature"],
+      "highlights": [
+        "Easternmost point",
+        "Sunrise views",
+        "Scenic location",
+        "Nature"
+      ],
       "bookingTips": "Best for sunrise chasers. Day trip recommended."
     },
     {
@@ -858,9 +1396,17 @@
       "budget": "mid",
       "priceRange": "¥350-650/night",
       "address": "Near Hanle坊",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "rating": 4.4,
-      "highlights": ["Korean style", "Near，韩乐坊", "Modern", "Good location"],
+      "highlights": [
+        "Korean style",
+        "Near，韩乐坊",
+        "Modern",
+        "Good location"
+      ],
       "bookingTips": "Perfect for Korean culture体验. Book during off-peak."
     },
     {
@@ -869,9 +1415,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "Near Bathing Beach",
-      "coordinates": {"lat": 37.4791, "lng": 122.1016},
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
       "rating": 4.5,
-      "highlights": ["Beachfront", "Sea views", "Resort facilities", "Water sports"],
+      "highlights": [
+        "Beachfront",
+        "Sea views",
+        "Resort facilities",
+        "Water sports"
+      ],
       "bookingTips": "Best for beach lovers. Book ocean view rooms."
     },
     {
@@ -880,9 +1434,17 @@
       "budget": "mid",
       "priceRange": "¥300-550/night",
       "address": "Near Huancuilou Park",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "rating": 4.3,
-      "highlights": ["Park views", "Central location", "Clean", "Value"],
+      "highlights": [
+        "Park views",
+        "Central location",
+        "Clean",
+        "Value"
+      ],
       "bookingTips": "Great for nature lovers. Book during off-peak."
     },
     {
@@ -891,9 +1453,17 @@
       "budget": "luxury",
       "priceRange": "¥700-1300/night",
       "address": "Weihai Golf Course area",
-      "coordinates": {"lat": 37.4891, "lng": 122.0916},
+      "coordinates": {
+        "lat": 37.4891,
+        "lng": 122.0916
+      },
       "rating": 4.5,
-      "highlights": ["Golf course", "Resort facilities", "Scenic", "Relaxing"],
+      "highlights": [
+        "Golf course",
+        "Resort facilities",
+        "Scenic",
+        "Relaxing"
+      ],
       "bookingTips": "Perfect for golfers. Book golf packages."
     },
     {
@@ -902,9 +1472,17 @@
       "budget": "mid",
       "priceRange": "¥350-600/night",
       "address": "Near Huaxia City",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "rating": 4.4,
-      "highlights": ["Near cultural show", "Modern", "Good service", "Value"],
+      "highlights": [
+        "Near cultural show",
+        "Modern",
+        "Good service",
+        "Value"
+      ],
       "bookingTips": "Great for cultural tourists. Book show tickets in advance."
     }
   ],
@@ -913,22 +1491,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Weihai",
-      "howToUse": ["Download before arrival", "Link card"],
-      "tips": ["Works at all merchants", "English available"]
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Needed for shared bikes"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at seafood markets",
-      "howToUse": ["ATM everywhere", "Banks along main streets"],
-      "tips": ["Keep 300¥ for seafood markets", "Most restaurants accept cards"]
+      "howToUse": [
+        "ATM everywhere",
+        "Banks along main streets"
+      ],
+      "tips": [
+        "Keep 300¥ for seafood markets",
+        "Most restaurants accept cards"
+      ]
     }
   ],
   "culturalTips": [
@@ -1044,7 +1640,10 @@
       "nameEn": "Weihai Municipal Hospital",
       "phone": "+86 631 528 9120",
       "address": "88 Qingdao Road, Weihai",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "notes": "English-speaking staff available"
     },
     {
@@ -1053,7 +1652,10 @@
       "nameEn": "Weihai Central Hospital",
       "phone": "+86 631 528 7000",
       "address": "168 Cultural Road, Weihai",
-      "coordinates": {"lat": 37.5091, "lng": 122.1216},
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
       "notes": "Another major hospital with English staff"
     },
     {

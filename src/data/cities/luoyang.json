@@ -6,11 +6,11 @@
   "population": "5.2 million",
   "coordinates": {
     "lat": 34.6197,
-    "lng": 112.4540
+    "lng": 112.454
   },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Luoyang, one of China's ancient capitals, is famous for the Longmen Grottoes (UNESCO), the Shaolin Temple, and peony flowers. A cradle of Chinese civilization with over 5,000 years of history, it served as capital for thirteen dynasties.",
-  "coverImage": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200",
+  "coverImage": "https://images.unsplash.com/photo-1753522743014-d9ae317ff693?w=1200&q=80",
   "highlights": [
     "Longmen Grottoes - UNESCO World Heritage",
     "Shaolin Temple - Birthplace of Kung Fu",
@@ -20,7 +20,12 @@
   ],
   "climate": {
     "type": "Continental monsoon climate",
-    "bestMonths": ["April", "May", "September", "October"],
+    "bestMonths": [
+      "April",
+      "May",
+      "September",
+      "October"
+    ],
     "avgSummerTemp": "27°C (81°F)",
     "avgWinterTemp": "2°C (36°F)",
     "tips": "Best in spring for peonies. Autumn for pleasant weather. Summers hot. Spring festival (April) is peak tourist season."
@@ -33,13 +38,21 @@
       "category": "historical",
       "description": "UNESCO World Heritage - massive Buddhist cave complex with 100,000+ sculptures.",
       "address": "Longmen Grottoes, Yanshi District",
-      "coordinates": { "lat": 34.4522, "lng": 112.4722 },
+      "coordinates": {
+        "lat": 34.4522,
+        "lng": 112.4722
+      },
       "openingHours": "08:00-18:00",
       "ticketPrice": "90¥ (high season), 70¥ (low season)",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Buddhist sculptures", "Fengxian Temple", "Lotus Flower Cave", "Thousands of figures"],
+      "highlights": [
+        "Buddhist sculptures",
+        "Fengxian Temple",
+        "Lotus Flower Cave",
+        "Thousands of figures"
+      ],
       "tips": "Arrive early to avoid crowds. Take boat ride for different view. Wear comfortable shoes.",
-      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=400"
+      "image": "https://images.unsplash.com/photo-1537531383496-f4749bce9441?w=800&q=85"
     },
     {
       "id": "luoyang-2",
@@ -48,13 +61,21 @@
       "category": "cultural",
       "description": "Birthplace of Chinese martial arts and Zen Buddhism, with famous kung fu performances.",
       "address": "Songshan, Dengfeng County",
-      "coordinates": { "lat": 34.5022, "lng": 112.9322 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.9322
+      },
       "openingHours": "07:00-18:00",
       "ticketPrice": "100¥ (temple), 280¥ (including performance)",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Kung fu performances", "Martial arts training", "Pagoda Forest", "Bodhi tree"],
+      "highlights": [
+        "Kung fu performances",
+        "Martial arts training",
+        "Pagoda Forest",
+        "Bodhi tree"
+      ],
       "tips": "Watch the kung fu show. Arrive early. Combine with Songshan hiking.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85"
     },
     {
       "id": "luoyang-3",
@@ -63,13 +84,21 @@
       "category": "cultural",
       "description": "China's first Buddhist temple, founded in 68 AD, with contributions from India and Southeast Asia.",
       "address": "White Horse Temple, Laocheng District",
-      "coordinates": { "lat": 34.7122, "lng": 112.5622 },
+      "coordinates": {
+        "lat": 34.7122,
+        "lng": 112.5622
+      },
       "openingHours": "07:00-19:00",
       "ticketPrice": "35¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["First Buddhist temple", "Indian temple", "Thai temple", "Ancient history"],
+      "highlights": [
+        "First Buddhist temple",
+        "Indian temple",
+        "Thai temple",
+        "Ancient history"
+      ],
       "tips": "The birthplace of Chinese Buddhism. Combine with Luoyang old town.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1591267990532-6b3619c85ab5?w=800&q=85"
     },
     {
       "id": "luoyang-4",
@@ -78,13 +107,21 @@
       "category": "cultural",
       "description": "Excellent museum showcasing ancient capital history with over 40,000 artifacts.",
       "address": "Garden of Luoyang, Laocheng District",
-      "coordinates": { "lat": 34.6622, "lng": 112.4422 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4422
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Ancient artifacts", "Tang dynasty treasures", "Tri-color pottery", "Local history"],
+      "highlights": [
+        "Ancient artifacts",
+        "Tang dynasty treasures",
+        "Tri-color pottery",
+        "Local history"
+      ],
       "tips": "Allow 2-3 hours. Audio guide available. Don't miss the tri-color pottery.",
-      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400"
+      "image": "https://images.unsplash.com/photo-1569003336825-ea4b2a2d0d8a?w=800&q=85"
     },
     {
       "id": "luoyang-5",
@@ -93,13 +130,21 @@
       "category": "cultural",
       "description": "Temple dedicated to Guan Yu, where his remains are buried, largest such temple in China.",
       "address": "Guanlin Temple, Laocheng District",
-      "coordinates": { "lat": 34.6522, "lng": 112.5822 },
+      "coordinates": {
+        "lat": 34.6522,
+        "lng": 112.5822
+      },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Guan Yu temple", "Ancient cypress trees", "Bell tower", "Cultural significance"],
+      "highlights": [
+        "Guan Yu temple",
+        "Ancient cypress trees",
+        "Bell tower",
+        "Cultural significance"
+      ],
       "tips": "Learn about Guan Yu's legendary stories. The ancient trees are impressive.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1584450150058-f6c4b12f8bcd?w=800&q=85"
     },
     {
       "id": "luoyang-6",
@@ -108,13 +153,21 @@
       "category": "cultural",
       "description": "Historic streets with traditional architecture, lanterns and local snacks.",
       "address": "Old City, Laocheng District",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "openingHours": "Open 24 hours (shops 09:00-22:00)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Traditional streets", "Red lanterns", "Night scene", "Local snacks"],
+      "highlights": [
+        "Traditional streets",
+        "Red lanterns",
+        "Night scene",
+        "Local snacks"
+      ],
       "tips": "Best at night when illuminated. Try local snacks. Buy souvenirs.",
-      "image": "https://images.unsplash.com/photo-1539020144-3a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1588873707657-eabb7dbc1d43?w=800&q=85"
     },
     {
       "id": "luoyang-7",
@@ -123,13 +176,21 @@
       "category": "historical",
       "description": "Iconic gate of Luoyang with well-preserved city wall section.",
       "address": "Lijing Gate, Old City",
-      "coordinates": { "lat": 34.6722, "lng": 112.4422 },
+      "coordinates": {
+        "lat": 34.6722,
+        "lng": 112.4422
+      },
       "openingHours": "08:00-22:00",
       "ticketPrice": "45¥ (including city wall)",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Ancient gate", "City wall walk", "Night views", "Photo opportunities"],
+      "highlights": [
+        "Ancient gate",
+        "City wall walk",
+        "Night views",
+        "Photo opportunities"
+      ],
       "tips": "Walk the city wall at sunset. Best at night with lighting.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85"
     },
     {
       "id": "luoyang-8",
@@ -138,13 +199,21 @@
       "category": "historical",
       "description": " reconstructed Tang Dynasty palaces with large rotating stage show.",
       "address": "Zhouli Avenue, Laocheng District",
-      "coordinates": { "lat": 34.6622, "lng": 112.4422 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4422
+      },
       "openingHours": "09:00-22:00",
       "ticketPrice": "120¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Tang palace", "Rotating stage", "Light show", "History performance"],
+      "highlights": [
+        "Tang palace",
+        "Rotating stage",
+        "Light show",
+        "History performance"
+      ],
       "tips": "Watch the evening performance. Arrive before show time. Great photo opportunities.",
-      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=400"
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
     },
     {
       "id": "luoyang-9",
@@ -153,13 +222,21 @@
       "category": "natural",
       "description": "Largest peony garden in China with 400+ varieties of the city flower.",
       "address": "National Peony Garden, Laocheng District",
-      "coordinates": { "lat": 34.6822, "lng": 112.6022 },
+      "coordinates": {
+        "lat": 34.6822,
+        "lng": 112.6022
+      },
       "openingHours": "06:00-19:00 (April peak season)",
       "ticketPrice": "30¥ (peak 50¥)",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Peony flowers", "Rare varieties", "Spring scenery", "Photography"],
+      "highlights": [
+        "Peony flowers",
+        "Rare varieties",
+        "Spring scenery",
+        "Photography"
+      ],
       "tips": "Visit during Peony Festival (April-May). The flowers are spectacular.",
-      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=400"
+      "image": "https://images.unsplash.com/photo-1506905275237-883cd4902b81?w=800&q=85"
     },
     {
       "id": "luoyang-10",
@@ -168,13 +245,21 @@
       "category": "cultural",
       "description": "Unique museum with underground ancient tombs you can walk through.",
       "address": "Baiwan Village, Laocheng District",
-      "coordinates": { "lat": 34.6922, "lng": 112.5222 },
+      "coordinates": {
+        "lat": 34.6922,
+        "lng": 112.5222
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Underground tombs", "Ancient burial customs", "Historical artifacts", "Unique experience"],
+      "highlights": [
+        "Underground tombs",
+        "Ancient burial customs",
+        "Historical artifacts",
+        "Unique experience"
+      ],
       "tips": "Walk through actual tombs underground. Learn about ancient burial practices.",
-      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400"
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85"
     },
     {
       "id": "luoyang-11",
@@ -183,13 +268,21 @@
       "category": "cultural",
       "description": "Temple dedicated to the Duke of Zhou, founder of the Zhou Dynasty.",
       "address": "Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Zhou dynasty", "Ancient temple", "Historical significance", "Quiet atmosphere"],
+      "highlights": [
+        "Zhou dynasty",
+        "Ancient temple",
+        "Historical significance",
+        "Quiet atmosphere"
+      ],
       "tips": "For history enthusiasts. Quiet compared to other temples.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=800&q=85"
     },
     {
       "id": "luoyang-12",
@@ -198,13 +291,21 @@
       "category": "cultural",
       "description": "Taoist temple on a hilltop with panoramic views of Luoyang.",
       "address": "Sanjie Town",
-      "coordinates": { "lat": 34.6422, "lng": 112.4722 },
+      "coordinates": {
+        "lat": 34.6422,
+        "lng": 112.4722
+      },
       "openingHours": "07:00-18:00",
       "ticketPrice": "20¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Taoist temple", "Hilltop views", "Ancient architecture", "Peaceful"],
+      "highlights": [
+        "Taoist temple",
+        "Hilltop views",
+        "Ancient architecture",
+        "Peaceful"
+      ],
       "tips": "Great views of the city. Combine with nearby sites. Peaceful atmosphere.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=85"
     },
     {
       "id": "luoyang-13",
@@ -213,13 +314,21 @@
       "category": "historical",
       "description": "Reconstructed Tang Dynasty gate with impressive scale and evening light show.",
       "address": "Yingtian Gate, Laocheng District",
-      "coordinates": { "lat": 34.6622, "lng": 112.4422 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4422
+      },
       "openingHours": "09:00-22:00",
       "ticketPrice": "60¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Tang dynasty gate", "Light show", "Night photography", "Historical recreation"],
+      "highlights": [
+        "Tang dynasty gate",
+        "Light show",
+        "Night photography",
+        "Historical recreation"
+      ],
       "tips": "Best at night. Watch the light show. Great photo opportunities.",
-      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=400"
+      "image": "https://images.unsplash.com/photo-1543835247-0e4b6f0b1b0e?w=800&q=85"
     },
     {
       "id": "luoyang-14",
@@ -228,13 +337,21 @@
       "category": "natural",
       "description": "One of the Sacred Mountains of China with Shaolin Temple and stunning scenery.",
       "address": "Dengfeng County",
-      "coordinates": { "lat": 34.5022, "lng": 112.9322 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.9322
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "80¥ (park only)",
       "recommendedVisitTime": "1-2 days",
-      "highlights": ["Sacred mountain", "Shaolin Temple", "Hiking trails", "Temples"],
+      "highlights": [
+        "Sacred mountain",
+        "Shaolin Temple",
+        "Hiking trails",
+        "Temples"
+      ],
       "tips": "Combine with Shaolin Temple. Allow 2 days for full experience. Hiking required.",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     },
     {
       "id": "luoyang-15",
@@ -243,13 +360,21 @@
       "category": "natural",
       "description": "Large peony garden with many rare varieties and beautiful scenery.",
       "address": "National Peony Garden area",
-      "coordinates": { "lat": 34.6822, "lng": 112.6022 },
+      "coordinates": {
+        "lat": 34.6822,
+        "lng": 112.6022
+      },
       "openingHours": "06:00-19:00",
       "ticketPrice": "30¥",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Rare peonies", "Beautiful gardens", "Spring flowers", "Photography"],
+      "highlights": [
+        "Rare peonies",
+        "Beautiful gardens",
+        "Spring flowers",
+        "Photography"
+      ],
       "tips": "Best in April-May. Different varieties bloom at different times.",
-      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e0dba72?w=400"
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
     },
     {
       "id": "luoyang-16",
@@ -258,13 +383,21 @@
       "category": "natural",
       "description": "Large riverside park along the Luo River with gardens and walking paths.",
       "address": "Along Luo River",
-      "coordinates": { "lat": 34.6622, "lng": 112.4422 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4422
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["River walks", "Gardens", "Local life", "Sunset views"],
+      "highlights": [
+        "River walks",
+        "Gardens",
+        "Local life",
+        "Sunset views"
+      ],
       "tips": "Great for evening walks. Beautiful sunset over the river.",
-      "image": "https://images.unsplash.com/photo-1471196352-0f5e4b3a4fcd?w=400"
+      "image": "https://images.unsplash.com/photo-1471196352-0f5e4b3a4fcd?w=800"
     },
     {
       "id": "luoyang-17",
@@ -273,13 +406,21 @@
       "category": "cultural",
       "description": "Main temple on Songshan dedicated to the mountain itself.",
       "address": "Dengfeng County",
-      "coordinates": { "lat": 34.5022, "lng": 112.9322 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.9322
+      },
       "openingHours": "07:00-18:00",
       "ticketPrice": "30¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Mountain worship", "Ancient architecture", "Taoist culture", "Historical significance"],
+      "highlights": [
+        "Mountain worship",
+        "Ancient architecture",
+        "Taoist culture",
+        "Historical significance"
+      ],
       "tips": "Combine with Songshan hike. Ancient and atmospheric.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1549576492-b40f6a0b4e5c?w=800&q=85"
     },
     {
       "id": "luoyang-18",
@@ -288,13 +429,21 @@
       "category": "cultural",
       "description": "Ancient Buddhist nunnery on Songshan with over 1,500-year history.",
       "address": "Songshan, Dengfeng County",
-      "coordinates": { "lat": 34.5122, "lng": 112.9222 },
+      "coordinates": {
+        "lat": 34.5122,
+        "lng": 112.9222
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Buddhist nunnery", "Ancient trees", "Peaceful setting", "Female monastery"],
+      "highlights": [
+        "Buddhist nunnery",
+        "Ancient trees",
+        "Peaceful setting",
+        "Female monastery"
+      ],
       "tips": "Atmospheric and peaceful. Meet the nuns. Unique experience.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1590422749897-47036da0b0ff?w=800&q=85"
     },
     {
       "id": "luoyang-19",
@@ -303,13 +452,21 @@
       "category": "historical",
       "description": "Over 240 ancient Buddhist pagodas at Shaolin Temple, second largest in China.",
       "address": "Shaolin Temple",
-      "coordinates": { "lat": 34.5022, "lng": 112.9322 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.9322
+      },
       "openingHours": "07:00-18:00",
       "ticketPrice": "Included in Shaolin ticket",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Ancient pagodas", "Martial arts history", "Buddhist heritage", "Photography"],
+      "highlights": [
+        "Ancient pagodas",
+        "Martial arts history",
+        "Buddhist heritage",
+        "Photography"
+      ],
       "tips": "The pagodas date from Tang to Qing dynasties. Impressive number.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1558678306-41f0018a6d9b?w=800&q=85"
     },
     {
       "id": "luoyang-20",
@@ -318,13 +475,21 @@
       "category": "cultural",
       "description": "Beautiful hilltop Buddhist temple near Longmen Grottoes.",
       "address": "Near Longmen Grottoes",
-      "coordinates": { "lat": 34.4522, "lng": 112.4722 },
+      "coordinates": {
+        "lat": 34.4522,
+        "lng": 112.4722
+      },
       "openingHours": "08:00-18:00",
       "ticketPrice": "Included in Longmen ticket",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Hilltop views", "Ancient temple", "Peaceful", "Longmen views"],
+      "highlights": [
+        "Hilltop views",
+        "Ancient temple",
+        "Peaceful",
+        "Longmen views"
+      ],
       "tips": "Great views of Longmen. Combine with grottoes visit. Peaceful.",
-      "image": "https://images.unsplash.com/photo-1543945094-4a8e3c2d5ce4?w=400"
+      "image": "https://images.unsplash.com/photo-1604076913837-52ab5629fba9?w=800&q=85"
     },
     {
       "id": "luoyang-21",
@@ -333,13 +498,21 @@
       "category": "historical",
       "description": "Ruins of the earliest Chinese civilization capital, over 3,800 years old.",
       "address": "Yanshi County",
-      "coordinates": { "lat": 34.7022, "lng": 112.7022 },
+      "coordinates": {
+        "lat": 34.7022,
+        "lng": 112.7022
+      },
       "openingHours": "09:00-17:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Ancient civilization", "Bronze artifacts", "Early China", "Archaeological site"],
+      "highlights": [
+        "Ancient civilization",
+        "Bronze artifacts",
+        "Early China",
+        "Archaeological site"
+      ],
       "tips": "For history enthusiasts. Learn about China's earliest capitals.",
-      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400"
+      "image": "https://images.unsplash.com/photo-1546961342-ea5f60b193f9?w=800&q=85"
     },
     {
       "id": "luoyang-22",
@@ -348,13 +521,21 @@
       "category": "cultural",
       "description": "Museum housing ancient chariot burial pits from Eastern Zhou period.",
       "address": "Zhouli Avenue",
-      "coordinates": { "lat": 34.6622, "lng": 112.4422 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4422
+      },
       "openingHours": "09:00-17:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Chariot pits", "Zhou dynasty", "Ancient burial", "Unique exhibits"],
+      "highlights": [
+        "Chariot pits",
+        "Zhou dynasty",
+        "Ancient burial",
+        "Unique exhibits"
+      ],
       "tips": "See actual chariot remains. Small but interesting.",
-      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400"
+      "image": "https://images.unsplash.com/photo-1568310952684-e2ee0b6c0c1d?w=800&q=85"
     },
     {
       "id": "luoyang-23",
@@ -363,13 +544,21 @@
       "category": "natural",
       "description": "Scenic canyon with waterfalls, pools and dramatic rock formations.",
       "address": "Yanshi County",
-      "coordinates": { "lat": 34.5022, "lng": 112.4122 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.4122
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "80¥",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Waterfalls", "Canyon scenery", "Hiking", "Nature"],
+      "highlights": [
+        "Waterfalls",
+        "Canyon scenery",
+        "Hiking",
+        "Nature"
+      ],
       "tips": "Full day trip from Luoyang. Wear hiking shoes. Great scenery.",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
     },
     {
       "id": "luoyang-24",
@@ -378,13 +567,21 @@
       "category": "natural",
       "description": "Scenic mountain area with waterfalls and hiking trails.",
       "address": "Mengjin County",
-      "coordinates": { "lat": 34.8022, "lng": 112.6022 },
+      "coordinates": {
+        "lat": 34.8022,
+        "lng": 112.6022
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Mountain scenery", "Waterfalls", "Hiking", "Nature"],
+      "highlights": [
+        "Mountain scenery",
+        "Waterfalls",
+        "Hiking",
+        "Nature"
+      ],
       "tips": "Great for nature lovers. Full day trip. Bring water and snacks.",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400"
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85"
     }
   ],
   "restaurants": [
@@ -397,11 +594,24 @@
       "avgPrice": 80,
       "rating": 4.6,
       "address": "Near Lijing Gate, Old City",
-      "coordinates": { "lat": 34.6722, "lng": 112.4422 },
+      "coordinates": {
+        "lat": 34.6722,
+        "lng": 112.4422
+      },
       "hours": "10:00-22:00",
       "description": "Famous restaurant serving traditional Luoyang water banquet dishes.",
-      "dishHighlights": ["Water banquet", "Yanru noodles", "Luoyang soup", "Traditional dishes"],
-      "tags": ["local", "famous", "traditional", "must-try"]
+      "dishHighlights": [
+        "Water banquet",
+        "Yanru noodles",
+        "Luoyang soup",
+        "Traditional dishes"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "traditional",
+        "must-try"
+      ]
     },
     {
       "id": "luoyang-2",
@@ -412,12 +622,25 @@
       "avgPrice": 100,
       "rating": 4.6,
       "address": "Old City area",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "phone": "+86 379 6330 8888",
       "hours": "10:00-22:00",
       "description": "Best place for authentic Luoyang water banquet.",
-      "dishHighlights": ["Full water banquet", "24 dishes", "Traditional recipes", "Cultural experience"],
-      "tags": ["local", "water-banquet", "traditional", "famous"]
+      "dishHighlights": [
+        "Full water banquet",
+        "24 dishes",
+        "Traditional recipes",
+        "Cultural experience"
+      ],
+      "tags": [
+        "local",
+        "water-banquet",
+        "traditional",
+        "famous"
+      ]
     },
     {
       "id": "luoyang-3",
@@ -428,11 +651,24 @@
       "avgPrice": 30,
       "rating": 4.4,
       "address": "Old City Cross Street",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "17:00-23:00",
       "description": "Famous night market with variety of local and international food.",
-      "dishHighlights": ["Grilled skewers", "Spicy hotpot", "Fried rice", "Local snacks"],
-      "tags": ["local", "night-market", "street-food", "atmosphere"]
+      "dishHighlights": [
+        "Grilled skewers",
+        "Spicy hotpot",
+        "Fried rice",
+        "Local snacks"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "atmosphere"
+      ]
     },
     {
       "id": "luoyang-4",
@@ -443,11 +679,24 @@
       "avgPrice": 20,
       "rating": 4.6,
       "address": "Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "06:00-14:00",
       "description": "Famous breakfast soup shop, local institution since 1920s.",
-      "dishHighlights": ["Mixed organ soup", "Pork liver", "Lamb soup", "Flatbread"],
-      "tags": ["local", "breakfast", "famous", "soup"]
+      "dishHighlights": [
+        "Mixed organ soup",
+        "Pork liver",
+        "Lamb soup",
+        "Flatbread"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "famous",
+        "soup"
+      ]
     },
     {
       "id": "luoyang-5",
@@ -458,11 +707,24 @@
       "avgPrice": 80,
       "rating": 4.7,
       "address": "Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "10:00-22:00",
       "description": "Authentic water banquet in family-run restaurant.",
-      "dishHighlights": ["Traditional water banquet", "Family recipes", "Authentic taste", "Cultural"],
-      "tags": ["local", "water-banquet", "family-run", "traditional"]
+      "dishHighlights": [
+        "Traditional water banquet",
+        "Family recipes",
+        "Authentic taste",
+        "Cultural"
+      ],
+      "tags": [
+        "local",
+        "water-banquet",
+        "family-run",
+        "traditional"
+      ]
     },
     {
       "id": "luoyang-6",
@@ -473,11 +735,23 @@
       "avgPrice": 50,
       "rating": 4.5,
       "address": "East Gate area",
-      "coordinates": { "lat": 34.6722, "lng": 112.4622 },
+      "coordinates": {
+        "lat": 34.6722,
+        "lng": 112.4622
+      },
       "hours": "07:00-20:00",
       "description": "Popular for traditional Luoyang noodles and soup.",
-      "dishHighlights": ["Yanru noodles", "Hot and sour noodles", "Noodles with toppings"],
-      "tags": ["local", "noodles", "traditional", "popular"]
+      "dishHighlights": [
+        "Yanru noodles",
+        "Hot and sour noodles",
+        "Noodles with toppings"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "traditional",
+        "popular"
+      ]
     },
     {
       "id": "luoyang-7",
@@ -488,11 +762,23 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Various restaurants",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "10:00-22:00",
       "description": "Famous Luoyang dish made from taro and local ingredients.",
-      "dishHighlights": ["Peony yan cai", "Taro dish", "Traditional recipe"],
-      "tags": ["local", "famous", "traditional", "luoyang-specialty"]
+      "dishHighlights": [
+        "Peony yan cai",
+        "Taro dish",
+        "Traditional recipe"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "traditional",
+        "luoyang-specialty"
+      ]
     },
     {
       "id": "luoyang-8",
@@ -503,11 +789,24 @@
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Street vendors",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "06:00-14:00",
       "description": "Rich beef soup - popular breakfast in Luoyang.",
-      "dishHighlights": ["Beef soup", "Beef brisket", "Flatbread", "Cilantro"],
-      "tags": ["local", "breakfast", "soup", "popular"]
+      "dishHighlights": [
+        "Beef soup",
+        "Beef brisket",
+        "Flatbread",
+        "Cilantro"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "soup",
+        "popular"
+      ]
     },
     {
       "id": "luoyang-9",
@@ -518,11 +817,23 @@
       "avgPrice": 25,
       "rating": 4.5,
       "address": "Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "07:00-19:00",
       "description": "Steamed dumplings with hot filling - Luoyang specialty.",
-      "dishHighlights": ["Hot filling dumplings", "Pork filling", "Vegetable filling"],
-      "tags": ["local", "snacks", "famous", "dumplings"]
+      "dishHighlights": [
+        "Hot filling dumplings",
+        "Pork filling",
+        "Vegetable filling"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous",
+        "dumplings"
+      ]
     },
     {
       "id": "luoyang-10",
@@ -533,12 +844,25 @@
       "avgPrice": 150,
       "rating": 4.6,
       "address": "City center",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "phone": "+86 379 6330 8888",
       "hours": "11:00-14:00, 17:00-21:00",
       "description": "High-end restaurant serving refined Luoyang cuisine.",
-      "dishHighlights": ["Refined water banquet", "Peony dishes", "Traditional recipes", "Elegant"],
-      "tags": ["fine-dining", "luoyang-cuisine", "elegant", "special-occasion"]
+      "dishHighlights": [
+        "Refined water banquet",
+        "Peony dishes",
+        "Traditional recipes",
+        "Elegant"
+      ],
+      "tags": [
+        "fine-dining",
+        "luoyang-cuisine",
+        "elegant",
+        "special-occasion"
+      ]
     },
     {
       "id": "luoyang-11",
@@ -549,11 +873,23 @@
       "avgPrice": 20,
       "rating": 4.4,
       "address": "Near Shaolin Temple",
-      "coordinates": { "lat": 34.5022, "lng": 112.9322 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.9322
+      },
       "hours": "08:00-18:00",
       "description": "Famous vegetarian pastries from Shaolin area.",
-      "dishHighlights": ["Vegetarian pastries", "Various flavors", "Temple area"],
-      "tags": ["local", "snacks", "souvenir", "shaolin"]
+      "dishHighlights": [
+        "Vegetarian pastries",
+        "Various flavors",
+        "Temple area"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "souvenir",
+        "shaolin"
+      ]
     },
     {
       "id": "luoyang-12",
@@ -564,11 +900,24 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Near Songshan",
-      "coordinates": { "lat": 34.5022, "lng": 112.9322 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.9322
+      },
       "hours": "10:00-22:00",
       "description": "Mountain village restaurant with local dishes.",
-      "dishHighlights": ["Forest mushrooms", "Wild vegetables", "Mountain lamb", "Local rice"],
-      "tags": ["local", "mountain", "home-style", "fresh"]
+      "dishHighlights": [
+        "Forest mushrooms",
+        "Wild vegetables",
+        "Mountain lamb",
+        "Local rice"
+      ],
+      "tags": [
+        "local",
+        "mountain",
+        "home-style",
+        "fresh"
+      ]
     },
     {
       "id": "luoyang-13",
@@ -579,11 +928,24 @@
       "avgPrice": 25,
       "rating": 4.5,
       "address": "Various locations",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "06:00-14:00",
       "description": "Rich lamb soup - another popular breakfast option.",
-      "dishHighlights": ["Lamb soup", "Lamb ribs", "Flatbread", "Herbs"],
-      "tags": ["local", "breakfast", "soup", "popular"]
+      "dishHighlights": [
+        "Lamb soup",
+        "Lamb ribs",
+        "Flatbread",
+        "Herbs"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "soup",
+        "popular"
+      ]
     },
     {
       "id": "luoyang-14",
@@ -594,11 +956,24 @@
       "avgPrice": 15,
       "rating": 4.4,
       "address": "Old City vendors",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "全天",
       "description": "Thick noodles with vegetables - simple local dish.",
-      "dishHighlights": ["Thick noodles", "Vegetables", "Peanut sauce", "Simple"],
-      "tags": ["local", "snacks", "budget", "simple"]
+      "dishHighlights": [
+        "Thick noodles",
+        "Vegetables",
+        "Peanut sauce",
+        "Simple"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "budget",
+        "simple"
+      ]
     },
     {
       "id": "luoyang-15",
@@ -609,11 +984,24 @@
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Various locations",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "06:00-20:00",
       "description": "Various noodle soups specific to Luoyang.",
-      "dishHighlights": ["Noodle soup", "Various toppings", "Hot and sour", "Spicy"],
-      "tags": ["local", "noodles", "soup", "popular"]
+      "dishHighlights": [
+        "Noodle soup",
+        "Various toppings",
+        "Hot and sour",
+        "Spicy"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "soup",
+        "popular"
+      ]
     },
     {
       "id": "luoyang-16",
@@ -624,11 +1012,24 @@
       "avgPrice": 25,
       "rating": 4.5,
       "address": "Night market",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "17:00-23:00",
       "description": "Pan-fried dumplings - popular street food.",
-      "dishHighlights": ["Pan-fried dumplings", "Crispy bottom", "Pork filling", "Vegetables"],
-      "tags": ["local", "snacks", "street-food", "popular"]
+      "dishHighlights": [
+        "Pan-fried dumplings",
+        "Crispy bottom",
+        "Pork filling",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "street-food",
+        "popular"
+      ]
     },
     {
       "id": "luoyang-17",
@@ -639,11 +1040,24 @@
       "avgPrice": 15,
       "rating": 4.4,
       "address": "Night market",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "17:00-23:00",
       "description": "Stir-fried rice jelly - famous Luoyang street snack.",
-      "dishHighlights": ["Stir-fried rice jelly", "Soy sauce", "Spicy", "Crispy"],
-      "tags": ["local", "snacks", "street-food", "famous"]
+      "dishHighlights": [
+        "Stir-fried rice jelly",
+        "Soy sauce",
+        "Spicy",
+        "Crispy"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "street-food",
+        "famous"
+      ]
     },
     {
       "id": "luoyang-18",
@@ -654,11 +1068,24 @@
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "10:00-22:00",
       "description": "Pancake and soup combination - traditional Luoyang snack.",
-      "dishHighlights": ["Pancake in soup", "Special sauce", "Lung and tofu skin", "Traditional"],
-      "tags": ["local", "snacks", "traditional", "luoyang-specialty"]
+      "dishHighlights": [
+        "Pancake in soup",
+        "Special sauce",
+        "Lung and tofu skin",
+        "Traditional"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "traditional",
+        "luoyang-specialty"
+      ]
     },
     {
       "id": "luoyang-19",
@@ -669,12 +1096,25 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "Near Longmen Grottoes",
-      "coordinates": { "lat": 34.4522, "lng": 112.4722 },
+      "coordinates": {
+        "lat": 34.4522,
+        "lng": 112.4722
+      },
       "phone": "+86 379 6590 8888",
       "hours": "10:00-22:00",
       "description": "Famous dish of carp prepared in traditional style.",
-      "dishHighlights": ["Carp dish", "Traditional recipe", "Named after legend", "Local fish"],
-      "tags": ["local", "famous", "fish", "special-occasion"]
+      "dishHighlights": [
+        "Carp dish",
+        "Traditional recipe",
+        "Named after legend",
+        "Local fish"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "fish",
+        "special-occasion"
+      ]
     },
     {
       "id": "luoyang-20",
@@ -685,11 +1125,24 @@
       "avgPrice": 15,
       "rating": 4.4,
       "address": "Street vendors",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "06:00-14:00",
       "description": "Light tofu soup - popular breakfast.",
-      "dishHighlights": ["Tofu soup", "Vegetable soup", "Light", "Healthy"],
-      "tags": ["local", "breakfast", "soup", "vegetarian"]
+      "dishHighlights": [
+        "Tofu soup",
+        "Vegetable soup",
+        "Light",
+        "Healthy"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "soup",
+        "vegetarian"
+      ]
     },
     {
       "id": "luoyang-21",
@@ -700,11 +1153,24 @@
       "avgPrice": 10,
       "rating": 4.3,
       "address": "Street vendors",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "全天",
       "description": "Crispy sesame ball dessert - common snack.",
-      "dishHighlights": ["Sesame balls", "Sweet filling", "Crispy", "Traditional"],
-      "tags": ["local", "dessert", "snacks", "traditional"]
+      "dishHighlights": [
+        "Sesame balls",
+        "Sweet filling",
+        "Crispy",
+        "Traditional"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "snacks",
+        "traditional"
+      ]
     },
     {
       "id": "luoyang-22",
@@ -715,11 +1181,24 @@
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "09:00-21:00",
       "description": "Sweet lotus root - traditional dessert.",
-      "dishHighlights": ["Glazed lotus root", "Sweet", "Honey", "Traditional"],
-      "tags": ["local", "dessert", "sweet", "traditional"]
+      "dishHighlights": [
+        "Glazed lotus root",
+        "Sweet",
+        "Honey",
+        "Traditional"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "sweet",
+        "traditional"
+      ]
     },
     {
       "id": "luoyang-23",
@@ -730,11 +1209,24 @@
       "avgPrice": 40,
       "rating": 4.6,
       "address": "Various locations",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "07:00-20:00",
       "description": "Juicy soup dumplings - popular throughout China.",
-      "dishHighlights": ["Soup dumplings", "Pork filling", "Hot broth", "Delicate"],
-      "tags": ["local", "dumplings", "popular", "soup"]
+      "dishHighlights": [
+        "Soup dumplings",
+        "Pork filling",
+        "Hot broth",
+        "Delicate"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "popular",
+        "soup"
+      ]
     },
     {
       "id": "luoyang-24",
@@ -745,11 +1237,24 @@
       "avgPrice": 40,
       "rating": 4.5,
       "address": "Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "10:00-22:00",
       "description": "Handmade dumplings with various traditional fillings.",
-      "dishHighlights": ["Handmade dumplings", "Various fillings", "Traditional", "Fresh"],
-      "tags": ["local", "dumplings", "handmade", "traditional"]
+      "dishHighlights": [
+        "Handmade dumplings",
+        "Various fillings",
+        "Traditional",
+        "Fresh"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "handmade",
+        "traditional"
+      ]
     },
     {
       "id": "luoyang-25",
@@ -760,11 +1265,24 @@
       "avgPrice": 40,
       "rating": 4.3,
       "address": "Night market areas",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "hours": "17:00-02:00",
       "description": "Various food stalls open late at night.",
-      "dishHighlights": ["Late night food", "Various options", "Atmosphere", "Social"],
-      "tags": ["local", "night-market", "late-night", "variety"]
+      "dishHighlights": [
+        "Late night food",
+        "Various options",
+        "Atmosphere",
+        "Social"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "late-night",
+        "variety"
+      ]
     }
   ],
   "transport": {
@@ -816,9 +1334,17 @@
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
       "address": "City center",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.5,
-      "highlights": ["Central location", "Modern facilities", "Good service", "Value"],
+      "highlights": [
+        "Central location",
+        "Modern facilities",
+        "Good service",
+        "Value"
+      ],
       "bookingTips": "Book during off-peak season. Good location for sightseeing."
     },
     {
@@ -827,9 +1353,17 @@
       "budget": "luxury",
       "priceRange": "¥500-1000/night",
       "address": "City center",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.5,
-      "highlights": ["Central location", "Modern luxury", "Multiple dining", "Good service"],
+      "highlights": [
+        "Central location",
+        "Modern luxury",
+        "Multiple dining",
+        "Good service"
+      ],
       "bookingTips": "Book during off-peak. Good for transport."
     },
     {
@@ -838,9 +1372,17 @@
       "budget": "mid",
       "priceRange": "¥300-600/night",
       "address": "Near Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.4,
-      "highlights": ["Near old city", "Traditional style", "Good location", "Value"],
+      "highlights": [
+        "Near old city",
+        "Traditional style",
+        "Good location",
+        "Value"
+      ],
       "bookingTips": "Perfect for old city exploration. Book during off-peak."
     },
     {
@@ -849,9 +1391,17 @@
       "budget": "budget",
       "priceRange": "¥120-250/night",
       "address": "Near Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.2,
-      "highlights": ["Budget-friendly", "Near old city", "Clean rooms", "Central location"],
+      "highlights": [
+        "Budget-friendly",
+        "Near old city",
+        "Clean rooms",
+        "Central location"
+      ],
       "bookingTips": "Best budget option in old city area."
     },
     {
@@ -860,9 +1410,17 @@
       "budget": "luxury",
       "priceRange": "¥500-1000/night",
       "address": "City center",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.5,
-      "highlights": ["Modern facilities", "Central location", "Good service", "Value"],
+      "highlights": [
+        "Modern facilities",
+        "Central location",
+        "Good service",
+        "Value"
+      ],
       "bookingTips": "Book direct for best rates. Good business hotel."
     },
     {
@@ -871,9 +1429,17 @@
       "budget": "mid",
       "priceRange": "¥250-500/night",
       "address": "City center",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.5,
-      "highlights": ["Library theme", "Comfortable beds", "Free breakfast", "Good service"],
+      "highlights": [
+        "Library theme",
+        "Comfortable beds",
+        "Free breakfast",
+        "Good service"
+      ],
       "bookingTips": "Popular Chinese boutique chain. Great value."
     },
     {
@@ -882,9 +1448,17 @@
       "budget": "mid",
       "priceRange": "¥300-600/night",
       "address": "Near Shaolin Temple",
-      "coordinates": { "lat": 34.5022, "lng": 112.9322 },
+      "coordinates": {
+        "lat": 34.5022,
+        "lng": 112.9322
+      },
       "rating": 4.4,
-      "highlights": ["Near Shaolin", "Mountain location", "Kung fu themed", "Good for temple visits"],
+      "highlights": [
+        "Near Shaolin",
+        "Mountain location",
+        "Kung fu themed",
+        "Good for temple visits"
+      ],
       "bookingTips": "Perfect for Shaolin Temple visits. Book during off-peak."
     },
     {
@@ -893,9 +1467,17 @@
       "budget": "mid",
       "priceRange": "¥300-550/night",
       "address": "City center",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.4,
-      "highlights": ["Central location", "Peony theme", "Modern facilities", "Good service"],
+      "highlights": [
+        "Central location",
+        "Peony theme",
+        "Modern facilities",
+        "Good service"
+      ],
       "bookingTips": "Book during off-peak. Good for sightseeing."
     },
     {
@@ -904,9 +1486,17 @@
       "budget": "mid",
       "priceRange": "¥250-450/night",
       "address": "Near Old City",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.3,
-      "highlights": ["Near old city", "Traditional style", "Good location", "Value"],
+      "highlights": [
+        "Near old city",
+        "Traditional style",
+        "Good location",
+        "Value"
+      ],
       "bookingTips": "Perfect for old city exploration."
     },
     {
@@ -915,9 +1505,17 @@
       "budget": "mid",
       "priceRange": "¥280-500/night",
       "address": "Near Longmen Grottoes",
-      "coordinates": { "lat": 34.4522, "lng": 112.4722 },
+      "coordinates": {
+        "lat": 34.4522,
+        "lng": 112.4722
+      },
       "rating": 4.4,
-      "highlights": ["Near Longmen", "Modern", "Good service", "Free parking"],
+      "highlights": [
+        "Near Longmen",
+        "Modern",
+        "Good service",
+        "Free parking"
+      ],
       "bookingTips": "Perfect for Longmen Grottoes visits."
     },
     {
@@ -926,9 +1524,17 @@
       "budget": "budget",
       "priceRange": "¥120-280/night",
       "address": "Xigong District",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.2,
-      "highlights": ["Budget-friendly", "Central location", "Clean rooms", "Basic amenities"],
+      "highlights": [
+        "Budget-friendly",
+        "Central location",
+        "Clean rooms",
+        "Basic amenities"
+      ],
       "bookingTips": "Best budget option in central area."
     },
     {
@@ -937,9 +1543,17 @@
       "budget": "mid",
       "priceRange": "¥350-600/night",
       "address": "Near airport",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.4,
-      "highlights": ["Near airport", "Modern facilities", "Free shuttle", "Good service"],
+      "highlights": [
+        "Near airport",
+        "Modern facilities",
+        "Free shuttle",
+        "Good service"
+      ],
       "bookingTips": "Perfect for early flights. Book airport shuttle."
     },
     {
@@ -948,9 +1562,17 @@
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
       "address": "Near city",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "rating": 4.6,
-      "highlights": ["Hot springs", "Spa facilities", "Mountain views", "Relaxation"],
+      "highlights": [
+        "Hot springs",
+        "Spa facilities",
+        "Mountain views",
+        "Relaxation"
+      ],
       "bookingTips": "Perfect for relaxation. Book spa packages."
     },
     {
@@ -959,9 +1581,17 @@
       "budget": "budget",
       "priceRange": "¥100-250/night",
       "address": "Near White Horse Temple",
-      "coordinates": { "lat": 34.7122, "lng": 112.5622 },
+      "coordinates": {
+        "lat": 34.7122,
+        "lng": 112.5622
+      },
       "rating": 4.3,
-      "highlights": ["Near White Horse Temple", "Local area", "Simple", "Value"],
+      "highlights": [
+        "Near White Horse Temple",
+        "Local area",
+        "Simple",
+        "Value"
+      ],
       "bookingTips": "Great for temple visits. Experience local life."
     },
     {
@@ -970,9 +1600,17 @@
       "budget": "budget",
       "priceRange": "¥150-300/night",
       "address": "Near Ancient Tomb Museum",
-      "coordinates": { "lat": 34.6922, "lng": 112.5222 },
+      "coordinates": {
+        "lat": 34.6922,
+        "lng": 112.5222
+      },
       "rating": 4.2,
-      "highlights": ["Near museum", "Cultural area", "Clean", "Budget-friendly"],
+      "highlights": [
+        "Near museum",
+        "Cultural area",
+        "Clean",
+        "Budget-friendly"
+      ],
       "bookingTips": "Perfect for museum visitors."
     }
   ],
@@ -981,22 +1619,39 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Luoyang",
-      "howToUse": ["Download app", "Link card"],
-      "tips": ["Works at all merchants", "English mode available"]
+      "howToUse": [
+        "Download app",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English mode available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at traditional markets",
-      "howToUse": ["ATM everywhere", "Banks common"],
-      "tips": ["Keep 100¥ for markets", "Most restaurants accept cards"]
+      "howToUse": [
+        "ATM everywhere",
+        "Banks common"
+      ],
+      "tips": [
+        "Keep 100¥ for markets",
+        "Most restaurants accept cards"
+      ]
     }
   ],
   "culturalTips": [
@@ -1112,7 +1767,10 @@
       "nameEn": "First Affiliated Hospital of Henan University of Science and Technology",
       "phone": "+86 379 6483 0666",
       "address": "24 Jinglu Road",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "notes": "English-speaking staff available"
     },
     {
@@ -1143,7 +1801,10 @@
       "nameEn": "Luoyang Central Hospital",
       "phone": "+86 379 6389 2123",
       "address": "288 Zhongzhou Road",
-      "coordinates": { "lat": 34.6622, "lng": 112.4522 },
+      "coordinates": {
+        "lat": 34.6622,
+        "lng": 112.4522
+      },
       "notes": "24-hour emergency services"
     },
     {

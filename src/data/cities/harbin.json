@@ -6,11 +6,11 @@
   "population": "5.4 million",
   "coordinates": {
     "lat": 45.8038,
-    "lng": 126.5340
+    "lng": 126.534
   },
   "timezone": "UTC+8 (China Standard Time)",
   "description": "Harbin, the capital of Heilongjiang province, is known for its severe winters and spectacular ice festival. The city showcases a unique blend of Russian and Chinese architecture, earning it the nickname 'Moscow of the East'. Home to one of the world's largest ice and snow festivals.",
-  "coverImage": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200",
+  "coverImage": "https://images.unsplash.com/photo-1716308239069-ef71a999d570?w=1200&q=80",
   "highlights": [
     "Harbin Ice and Snow Festival - World's largest",
     "Saint Sophia Cathedral - Largest Orthodox church in Far East",
@@ -20,7 +20,11 @@
   ],
   "climate": {
     "type": "Humid continental climate",
-    "bestMonths": ["December", "January", "February"],
+    "bestMonths": [
+      "December",
+      "January",
+      "February"
+    ],
     "avgSummerTemp": "22°C (72°F)",
     "avgWinterTemp": "-18°C (0°F)",
     "tips": "Best in winter for Ice Festival. Summers are pleasant. Spring and autumn are short. Pack extremely warm clothes in winter."
@@ -33,13 +37,21 @@
       "category": "seasonal",
       "description": "World's largest ice and snow sculpture festival with massive illuminated ice structures.",
       "address": "Ice and Snow World, Songhua River",
-      "coordinates": { "lat": 45.7822, "lng": 126.5422 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.5422
+      },
       "openingHours": "10:00-21:00 (Dec-Feb)",
       "ticketPrice": "290¥ (peak), 180¥ (off-peak)",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Ice sculptures", "Illuminated structures", "Ice slides", "Winter activities"],
+      "highlights": [
+        "Ice sculptures",
+        "Illuminated structures",
+        "Ice slides",
+        "Winter activities"
+      ],
       "tips": "Book tickets online. Arrive at sunset for photos. Dress extremely warm. Average visit 2-3 hours.",
-      "image": "https://images.unsplash.com/photo-1548502499-ef49b9c908e1?w=400"
+      "image": "https://images.unsplash.com/photo-1552418033-d68b553926d2?w=800&q=85"
     },
     {
       "id": "saint-sophia",
@@ -48,13 +60,21 @@
       "category": "historical",
       "description": "Largest Orthodox church in the Far East, built in 1903, now a museum.",
       "address": "Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "08:30-17:00",
       "ticketPrice": "15¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Russian architecture", "Byzantine style", "Photo opportunities", "Museum exhibits"],
+      "highlights": [
+        "Russian architecture",
+        "Byzantine style",
+        "Photo opportunities",
+        "Museum exhibits"
+      ],
       "tips": "Best exterior photos at sunrise. The largest surviving church in Asia.",
-      "image": "https://images.unsplash.com/photo-1547970810-dc1eeac2d6d7?w=400"
+      "image": "https://images.unsplash.com/photo-1773472502087-38fcf710da78?w=800&q=85"
     },
     {
       "id": "central-avenue",
@@ -63,13 +83,21 @@
       "category": "cultural",
       "description": "1.4km pedestrian street with European architecture, shops and restaurants.",
       "address": "Central Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Russian architecture", "Cobblestone streets", "European shops", "Historic buildings"],
+      "highlights": [
+        "Russian architecture",
+        "Cobblestone streets",
+        "European shops",
+        "Historic buildings"
+      ],
       "tips": "Try Russian food and Harbin sausage. Best at night when illuminated. Buy Russian souvenirs.",
-      "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=400"
+      "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800"
     },
     {
       "id": "sun-island",
@@ -78,13 +106,21 @@
       "category": "natural",
       "description": "Island retreat on Songhua River with parks, beaches and Russian-style villas.",
       "address": "Sun Island, Songhua River",
-      "coordinates": { "lat": 45.8022, "lng": 126.5822 },
+      "coordinates": {
+        "lat": 45.8022,
+        "lng": 126.5822
+      },
       "openingHours": "08:00-18:00",
       "ticketPrice": "30¥ (park only)",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Russian villas", "Lake views", "Swan sculptures", "Summer palace"],
+      "highlights": [
+        "Russian villas",
+        "Lake views",
+        "Swan sculptures",
+        "Summer palace"
+      ],
       "tips": "Take ferry in summer. Visit Snow Expo in winter. Beautiful in all seasons.",
-      "image": "https://images.unsplash.com/photo-1534531173927-aeb928d54385?w=400"
+      "image": "https://images.unsplash.com/photo-1534531173927-aeb928d54385?w=800"
     },
     {
       "id": "harbin-polar-akvarium",
@@ -93,13 +129,21 @@
       "category": "entertainment",
       "description": "Aquarium featuring polar animals, Siberian tigers and marine performances.",
       "address": "Sun Island, Songhua River",
-      "coordinates": { "lat": 45.8022, "lng": 126.5822 },
+      "coordinates": {
+        "lat": 45.8022,
+        "lng": 126.5822
+      },
       "openingHours": "09:00-17:00",
       "ticketPrice": "150¥",
       "recommendedVisitTime": "3-4 hours",
-      "highlights": ["Polar bears", "Siberian tigers", "Marine shows", "Penguins"],
+      "highlights": [
+        "Polar bears",
+        "Siberian tigers",
+        "Marine shows",
+        "Penguins"
+      ],
       "tips": "Arrive early for shows. Combine with Sun Island visit. Great for families.",
-      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400"
+      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
     },
     {
       "id": "zhongyang-dashan",
@@ -108,13 +152,21 @@
       "category": "historical",
       "description": "Collection of early 20th century European buildings along the historic street.",
       "address": "Central Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Russian style", "Art Deco", "Medieval European", "Photo opportunities"],
+      "highlights": [
+        "Russian style",
+        "Art Deco",
+        "Medieval European",
+        "Photo opportunities"
+      ],
       "tips": "Take walking tour for history. Best in evening lighting. Combine with Saint Sophia.",
-      "image": "https://images.unsplash.com/photo-1524293581917-878a6d017c71?w=400"
+      "image": "https://images.unsplash.com/photo-1524293581917-878a6d017c71?w=800"
     },
     {
       "id": "songhua-river",
@@ -123,13 +175,21 @@
       "category": "natural",
       "description": "Major river flowing through Harbin with winter activities and scenic walks.",
       "address": "Songhua River waterfront",
-      "coordinates": { "lat": 45.7822, "lng": 126.6122 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6122
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free (activities extra)",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Winter activities", "River views", "Stalactite ice", "Evening walks"],
+      "highlights": [
+        "Winter activities",
+        "River views",
+        "Stalactite ice",
+        "Evening walks"
+      ],
       "tips": "Walk on frozen river in winter. Take ferry in summer. Beautiful at sunset.",
-      "image": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=400"
+      "image": "https://images.unsplash.com/photo-1676385772553-dbab1f63721a?w=800&q=85"
     },
     {
       "id": "tigers",
@@ -138,13 +198,21 @@
       "category": "nature",
       "description": "Large breeding facility for Siberian tigers with observation platforms.",
       "address": "Songbei District",
-      "coordinates": { "lat": 45.8322, "lng": 126.5122 },
+      "coordinates": {
+        "lat": 45.8322,
+        "lng": 126.5122
+      },
       "openingHours": "08:00-17:00 (Nov-Mar), 08:00-16:00 (Apr-Oct)",
       "ticketPrice": "90¥ (park) + 20¥ (bus)",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Tiger feeding", "Cub interactions", "White tigers", "Photography"],
+      "highlights": [
+        "Tiger feeding",
+        "Cub interactions",
+        "White tigers",
+        "Photography"
+      ],
       "tips": "Feed tigers from bus. Watch feeding times. Bring binoculars.",
-      "image": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=400"
+      "image": "https://images.unsplash.com/photo-1553796304-f337d1afb951?w=800&q=85"
     },
     {
       "id": "volunteer-bridge",
@@ -153,13 +221,21 @@
       "category": "landmark",
       "description": "Modern suspension bridge with panoramic city views.",
       "address": "Yangmingtan Island",
-      "coordinates": { "lat": 45.8122, "lng": 126.5722 },
+      "coordinates": {
+        "lat": 45.8122,
+        "lng": 126.5722
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["City views", "Modern architecture", "Photography", "Sunset views"],
+      "highlights": [
+        "City views",
+        "Modern architecture",
+        "Photography",
+        "Sunset views"
+      ],
       "tips": "Best at sunset or night. Drive or taxi to access.",
-      "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400"
+      "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800"
     },
     {
       "id": "harbin-museum",
@@ -168,13 +244,21 @@
       "category": "cultural",
       "description": "Museum showcasing provincial history, culture and natural heritage.",
       "address": "Central Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "09:00-16:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Ancient artifacts", "Manchurian culture", "Natural history", "Russian influence"],
+      "highlights": [
+        "Ancient artifacts",
+        "Manchurian culture",
+        "Natural history",
+        "Russian influence"
+      ],
       "tips": "Allow 2 hours. Audio guide available. Combine with Central Avenue visit.",
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400"
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
     },
     {
       "id": "catherine-church",
@@ -183,13 +267,20 @@
       "category": "historical",
       "description": "Small Orthodox church now used as a restaurant and cultural venue.",
       "address": "Zhong谊街, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "10:00-22:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["Russian architecture", "Cultural venue", "Photo opportunities"],
+      "highlights": [
+        "Russian architecture",
+        "Cultural venue",
+        "Photo opportunities"
+      ],
       "tips": "Now houses a Russian restaurant. Good for atmosphere photos.",
-      "image": "https://images.unsplash.com/photo-1551867633-194f125bddfa?w=400"
+      "image": "https://images.unsplash.com/photo-1727188748757-4d2231fddc75?w=800&q=85"
     },
     {
       "id": "harbin-concert-hall",
@@ -198,13 +289,21 @@
       "category": "cultural",
       "description": "Modern concert hall with excellent acoustics and Russian-influenced design.",
       "address": "Songhua River waterfront",
-      "coordinates": { "lat": 45.7822, "lng": 126.6122 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6122
+      },
       "openingHours": "Performance hours vary",
       "ticketPrice": "Performance dependent",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Classical music", "Modern architecture", "River views", "Cultural performances"],
+      "highlights": [
+        "Classical music",
+        "Modern architecture",
+        "River views",
+        "Cultural performances"
+      ],
       "tips": "Book tickets in advance. Dress appropriately for performances.",
-      "image": "https://images.unsplash.com/photo-1503095396549-807759245b35?w=400"
+      "image": "https://images.unsplash.com/photo-1608360097628-e4ac588e4d14?w=800&q=85"
     },
     {
       "id": "huangshan",
@@ -213,13 +312,21 @@
       "category": "cultural",
       "description": "Mountain scenic area within city known for Russian dacha style buildings.",
       "address": "Huangshan District",
-      "coordinates": { "lat": 45.8522, "lng": 126.5622 },
+      "coordinates": {
+        "lat": 45.8522,
+        "lng": 126.5622
+      },
       "openingHours": "08:00-17:00",
       "ticketPrice": "25¥",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Mountain views", "Russian dachas", "Forest walks", "Photography"],
+      "highlights": [
+        "Mountain views",
+        "Russian dachas",
+        "Forest walks",
+        "Photography"
+      ],
       "tips": "Less crowded than other attractions. Beautiful autumn foliage.",
-      "image": "https://images.unsplash.com/photo-1508747703725-719777637510?w=400"
+      "image": "https://images.unsplash.com/photo-1508747703725-719777637510?w=800"
     },
     {
       "id": "fengle-zhen",
@@ -228,13 +335,21 @@
       "category": "cultural",
       "description": "Russian-style town with European architecture and cultural activities.",
       "address": "Songbei District",
-      "coordinates": { "lat": 45.8122, "lng": 126.5722 },
+      "coordinates": {
+        "lat": 45.8122,
+        "lng": 126.5722
+      },
       "openingHours": "09:00-18:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Russian style", "Cultural shows", "European architecture", "Souvenirs"],
+      "highlights": [
+        "Russian style",
+        "Cultural shows",
+        "European architecture",
+        "Souvenirs"
+      ],
       "tips": "Great for photos. Watch cultural performances. Buy Russian products.",
-      "image": "https://images.unsplash.com/photo-1528181304800-259b08848526?w=400"
+      "image": "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800"
     },
     {
       "id": "harbin-library",
@@ -243,13 +358,21 @@
       "category": "cultural",
       "description": "Historic library with Russian architectural influence.",
       "address": "Zhongyang Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "09:00-18:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Russian architecture", "Reading rooms", "Historic building", "Quiet atmosphere"],
+      "highlights": [
+        "Russian architecture",
+        "Reading rooms",
+        "Historic building",
+        "Quiet atmosphere"
+      ],
       "tips": "Great for book lovers. The building is beautiful.",
-      "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=400"
+      "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800"
     },
     {
       "id": "qingyun-tower",
@@ -258,13 +381,21 @@
       "category": "landmark",
       "description": "Modern tower offering panoramic views of Harbin.",
       "address": "Songbei District",
-      "coordinates": { "lat": 45.8122, "lng": 126.5722 },
+      "coordinates": {
+        "lat": 45.8122,
+        "lng": 126.5722
+      },
       "openingHours": "09:00-21:00",
       "ticketPrice": "50¥",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["City panorama", "Observation deck", "Modern design", "Sunset views"],
+      "highlights": [
+        "City panorama",
+        "Observation deck",
+        "Modern design",
+        "Sunset views"
+      ],
       "tips": "Best views at sunset. Bring camera. Elevator to top.",
-      "image": "https://images.unsplash.com/photo-1514924801775-3e14bc3f3c94?w=400"
+      "image": "https://images.unsplash.com/photo-1514924801775-3e14bc3f3c94?w=800"
     },
     {
       "id": "historic-district",
@@ -273,13 +404,21 @@
       "category": "historical",
       "description": "Old Chinese district with traditional architecture and local culture.",
       "address": "Daowai District",
-      "coordinates": { "lat": 45.7922, "lng": 126.6422 },
+      "coordinates": {
+        "lat": 45.7922,
+        "lng": 126.6422
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
-      "highlights": ["Chinese architecture", "Traditional shops", "Local life", "Photography"],
+      "highlights": [
+        "Chinese architecture",
+        "Traditional shops",
+        "Local life",
+        "Photography"
+      ],
       "tips": "Explore authentic Harbin. Try local food. Best on weekdays.",
-      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400"
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800"
     },
     {
       "id": "harbin-market",
@@ -288,13 +427,21 @@
       "category": "shopping",
       "description": "Historic department store famous for Russian goods and local products.",
       "address": "Zhongyang Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "09:00-21:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Russian products", "Harbin sausage", "Chocolate", "Traditional goods"],
+      "highlights": [
+        "Russian products",
+        "Harbin sausage",
+        "Chocolate",
+        "Traditional goods"
+      ],
       "tips": "Buy souvenirs here. Famous for Russian chocolate and sausage.",
-      "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400"
+      "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800"
     },
     {
       "id": "squirrel",
@@ -303,13 +450,21 @@
       "category": "nature",
       "description": "Winter spot for watching various bird species on the frozen river.",
       "address": "Songhua River",
-      "coordinates": { "lat": 45.7822, "lng": 126.6122 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6122
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Bird watching", "Winter scenery", "Local life", "Photography"],
+      "highlights": [
+        "Bird watching",
+        "Winter scenery",
+        "Local life",
+        "Photography"
+      ],
       "tips": "Visit in early morning. Bring binoculars. Watch for migratory birds.",
-      "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=400"
+      "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800"
     },
     {
       "id": "christmas-village",
@@ -318,13 +473,21 @@
       "category": "cultural",
       "description": "Russian-style estate with churches, dachas and cultural performances.",
       "address": "香坊区oa Town",
-      "coordinates": { "lat": 45.8522, "lng": 126.6722 },
+      "coordinates": {
+        "lat": 45.8522,
+        "lng": 126.6722
+      },
       "openingHours": "08:30-17:00",
       "ticketPrice": "120¥",
       "recommendedVisitTime": "4-5 hours",
-      "highlights": ["Russian architecture", "Churches", "Cultural shows", "Photo opportunities"],
+      "highlights": [
+        "Russian architecture",
+        "Churches",
+        "Cultural shows",
+        "Photo opportunities"
+      ],
       "tips": "Full day trip. Arrive early. Watch all performances. Great for photos.",
-      "image": "https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=400"
+      "image": "https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=800"
     },
     {
       "id": "harbin-rolling",
@@ -333,13 +496,21 @@
       "category": "historical",
       "description": "Iconic tower built to commemorate Harbin's flood resistance efforts.",
       "address": "Zhongyang Avenue, Songhua River",
-      "coordinates": { "lat": 45.7822, "lng": 126.6122 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6122
+      },
       "openingHours": "Open 24 hours",
       "ticketPrice": "Free",
       "recommendedVisitTime": "30 min",
-      "highlights": ["City landmark", "River views", "Historic significance", "Photo spot"],
+      "highlights": [
+        "City landmark",
+        "River views",
+        "Historic significance",
+        "Photo spot"
+      ],
       "tips": "Meet at base for photos. Combine with river walk. Night lighting impressive.",
-      "image": "https://images.unsplash.com/photo-1534056860480-1db35c0b4e93?w=400"
+      "image": "https://images.unsplash.com/photo-1534056860480-1db35c0b4e93?w=800"
     },
     {
       "id": "hongxing",
@@ -348,13 +519,21 @@
       "category": "seasonal",
       "description": "Year-round ice sculpture exhibition with elaborate carvings.",
       "address": "Songhua River",
-      "coordinates": { "lat": 45.7822, "lng": 126.5422 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.5422
+      },
       "openingHours": "09:00-22:00",
       "ticketPrice": "180¥",
       "recommendedVisitTime": "1-2 hours",
-      "highlights": ["Ice sculptures", "Year-round display", "Illumination", "Photo opportunities"],
+      "highlights": [
+        "Ice sculptures",
+        "Year-round display",
+        "Illumination",
+        "Photo opportunities"
+      ],
       "tips": "Bring warm clothes. Great alternative if missed main festival.",
-      "image": "https://images.unsplash.com/photo-1482784161815-38620a0fc4a6?w=400"
+      "image": "https://images.unsplash.com/photo-1482784161815-38620a0fc4a6?w=800"
     },
     {
       "id": "zhongyang-dapai",
@@ -363,13 +542,21 @@
       "category": "shopping",
       "description": "Underground shopping area with local products and Russian goods.",
       "address": "Under Central Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "openingHours": "09:00-21:00",
       "ticketPrice": "Free",
       "recommendedVisitTime": "1 hour",
-      "highlights": ["Russian goods", "Local crafts", "Souvenirs", "Underground shopping"],
+      "highlights": [
+        "Russian goods",
+        "Local crafts",
+        "Souvenirs",
+        "Underground shopping"
+      ],
       "tips": "Browse for bargains. Compare prices. Good for souvenirs.",
-      "image": "https://images.unsplash.com/photo-1555529771-7888783a18d3?w=400"
+      "image": "https://images.unsplash.com/photo-1555529771-7888783a18d3?w=800"
     },
     {
       "id": "harbin-industrial",
@@ -378,13 +565,21 @@
       "category": "cultural",
       "description": "Museum showcasing Harbin's industrial heritage and Russian influence.",
       "address": "Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6322 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6322
+      },
       "openingHours": "09:00-16:00 (Closed Monday)",
       "ticketPrice": "Free",
       "recommendedVisitTime": "2 hours",
-      "highlights": ["Industrial heritage", "Russian influence", "Historic machinery", "Cultural exhibits"],
+      "highlights": [
+        "Industrial heritage",
+        "Russian influence",
+        "Historic machinery",
+        "Cultural exhibits"
+      ],
       "tips": "Learn about city's history. Combine with Central Avenue visit.",
-      "image": "https://images.unsplash.com/photo-1567431333733-547f60aac3c2?w=400"
+      "image": "https://images.unsplash.com/photo-1567431333733-547f60aac3c2?w=800"
     }
   ],
   "restaurants": [
@@ -397,11 +592,23 @@
       "avgPrice": 60,
       "rating": 4.6,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Famous for thin spring pancakes with various fillings.",
-      "dishHighlights": ["Spring pancakes", "Beijing duck", "Vegetable rolls"],
-      "tags": ["local", "famous", "spring-pancakes", "traditional"]
+      "dishHighlights": [
+        "Spring pancakes",
+        "Beijing duck",
+        "Vegetable rolls"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "spring-pancakes",
+        "traditional"
+      ]
     },
     {
       "id": "harbin-2",
@@ -412,11 +619,22 @@
       "avgPrice": 15,
       "rating": 4.7,
       "address": "Central Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "09:00-23:00",
       "description": "Legendary ice cream from Modern Hotel, a Harbin institution since 1906.",
-      "dishHighlights": ["Vanilla ice cream", "Chocolate ice cream"],
-      "tags": ["local", "famous", "ice-cream", "must-try"]
+      "dishHighlights": [
+        "Vanilla ice cream",
+        "Chocolate ice cream"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "ice-cream",
+        "must-try"
+      ]
     },
     {
       "id": "harbin-3",
@@ -427,12 +645,24 @@
       "avgPrice": 150,
       "rating": 4.5,
       "address": "85 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "phone": "+86 451 8488 4000",
       "hours": "11:00-22:00",
       "description": "Historic Russian restaurant with elegant atmosphere and traditional recipes.",
-      "dishHighlights": ["Borscht", "Beef stroganoff", "Russian bread"],
-      "tags": ["fine-dining", "russian", "historic", "traditional"]
+      "dishHighlights": [
+        "Borscht",
+        "Beef stroganoff",
+        "Russian bread"
+      ],
+      "tags": [
+        "fine-dining",
+        "russian",
+        "historic",
+        "traditional"
+      ]
     },
     {
       "id": "harbin-4",
@@ -443,11 +673,23 @@
       "avgPrice": 40,
       "rating": 4.6,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "08:00-20:00",
       "description": "Famous for pastries and traditional Chinese desserts.",
-      "dishHighlights": ["Mooncakes", "Pastries", "Sweet dumplings"],
-      "tags": ["local", "pastries", "dessert", "famous"]
+      "dishHighlights": [
+        "Mooncakes",
+        "Pastries",
+        "Sweet dumplings"
+      ],
+      "tags": [
+        "local",
+        "pastries",
+        "dessert",
+        "famous"
+      ]
     },
     {
       "id": "harbin-5",
@@ -458,12 +700,24 @@
       "avgPrice": 50,
       "rating": 4.6,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "phone": "+86 451 8881 8888",
       "hours": "10:00-22:00",
       "description": "Popular chain for quality dumplings with various fillings.",
-      "dishHighlights": ["Pork dumplings", "Shrimp dumplings", "Vegetable dumplings"],
-      "tags": ["local", "dumplings", "chain", "popular"]
+      "dishHighlights": [
+        "Pork dumplings",
+        "Shrimp dumplings",
+        "Vegetable dumplings"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "chain",
+        "popular"
+      ]
     },
     {
       "id": "harbin-6",
@@ -474,11 +728,23 @@
       "avgPrice": 50,
       "rating": 4.5,
       "address": "Central Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "09:00-21:00",
       "description": "Famous for Russian-style sausages and local specialties.",
-      "dishHighlights": ["Harbin sausage", "Russian bread", "Candy"],
-      "tags": ["local", "russian-style", "sausage", "souvenir"]
+      "dishHighlights": [
+        "Harbin sausage",
+        "Russian bread",
+        "Candy"
+      ],
+      "tags": [
+        "local",
+        "russian-style",
+        "sausage",
+        "souvenir"
+      ]
     },
     {
       "id": "harbin-7",
@@ -489,12 +755,24 @@
       "avgPrice": 200,
       "rating": 4.7,
       "address": "Modern Hotel, Central Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "phone": "+86 451 8488 4000",
       "hours": "11:30-14:00, 17:30-21:00",
       "description": "Upscale Russian restaurant in historic hotel with elegant dining.",
-      "dishHighlights": ["Caviar", "Grilled meat", "Russian specialties"],
-      "tags": ["fine-dining", "russian", "luxury", "special-occasion"]
+      "dishHighlights": [
+        "Caviar",
+        "Grilled meat",
+        "Russian specialties"
+      ],
+      "tags": [
+        "fine-dining",
+        "russian",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "harbin-8",
@@ -505,11 +783,24 @@
       "avgPrice": 30,
       "rating": 4.4,
       "address": "Near Harbin Normal University",
-      "coordinates": { "lat": 45.7622, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7622,
+        "lng": 126.6222
+      },
       "hours": "17:00-23:00",
       "description": "Popular student night market with variety of street food.",
-      "dishHighlights": ["Grilled skewers", "Fried rice", "Hot pot", "Desserts"],
-      "tags": ["local", "night-market", "street-food", "budget"]
+      "dishHighlights": [
+        "Grilled skewers",
+        "Fried rice",
+        "Hot pot",
+        "Desserts"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "budget"
+      ]
     },
     {
       "id": "harbin-9",
@@ -520,11 +811,23 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Daowai District",
-      "coordinates": { "lat": 45.7922, "lng": 126.6422 },
+      "coordinates": {
+        "lat": 45.7922,
+        "lng": 126.6422
+      },
       "hours": "10:00-22:00",
       "description": "Traditional Northeast dishes, especially pork-based comfort food.",
-      "dishHighlights": ["Blood sausage", "Pork stomach", "Pickled vegetables"],
-      "tags": ["local", "northeast-cuisine", "traditional", "comfort-food"]
+      "dishHighlights": [
+        "Blood sausage",
+        "Pork stomach",
+        "Pickled vegetables"
+      ],
+      "tags": [
+        "local",
+        "northeast-cuisine",
+        "traditional",
+        "comfort-food"
+      ]
     },
     {
       "id": "harbin-10",
@@ -535,11 +838,23 @@
       "avgPrice": 60,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Popular for pan-fried dumplings and local specialties.",
-      "dishHighlights": ["Pan-fried dumplings", "Steamed dumplings", "Soups"],
-      "tags": ["local", "dumplings", "pan-fried", "popular"]
+      "dishHighlights": [
+        "Pan-fried dumplings",
+        "Steamed dumplings",
+        "Soups"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "pan-fried",
+        "popular"
+      ]
     },
     {
       "id": "harbin-11",
@@ -550,11 +865,23 @@
       "avgPrice": 70,
       "rating": 4.4,
       "address": "Daowai District",
-      "coordinates": { "lat": 45.7922, "lng": 126.6422 },
+      "coordinates": {
+        "lat": 45.7922,
+        "lng": 126.6422
+      },
       "hours": "10:00-22:00",
       "description": "Home-style restaurant famous for rich braised pork dishes.",
-      "dishHighlights": ["Braised pork belly", "Steamed ribs", "Vegetables"],
-      "tags": ["local", "home-style", "northeast", "value"]
+      "dishHighlights": [
+        "Braised pork belly",
+        "Steamed ribs",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "northeast",
+        "value"
+      ]
     },
     {
       "id": "harbin-12",
@@ -565,11 +892,23 @@
       "avgPrice": 80,
       "rating": 4.3,
       "address": "Central Avenue area",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Various Russian restaurants and food stalls in tourist area.",
-      "dishHighlights": ["Pelmeni", "Borscht", "Russian sausage"],
-      "tags": ["local", "russian", "tourist-area", "variety"]
+      "dishHighlights": [
+        "Pelmeni",
+        "Borscht",
+        "Russian sausage"
+      ],
+      "tags": [
+        "local",
+        "russian",
+        "tourist-area",
+        "variety"
+      ]
     },
     {
       "id": "harbin-13",
@@ -580,11 +919,23 @@
       "avgPrice": 20,
       "rating": 4.4,
       "address": "Near Central Avenue",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "07:00-19:00",
       "description": "Local favorite for quick wontons and noodle soup.",
-      "dishHighlights": ["Wontons", "Noodle soup", "Dumplings"],
-      "tags": ["local", "breakfast", "quick", "budget"]
+      "dishHighlights": [
+        "Wontons",
+        "Noodle soup",
+        "Dumplings"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "quick",
+        "budget"
+      ]
     },
     {
       "id": "harbin-14",
@@ -595,11 +946,23 @@
       "avgPrice": 80,
       "rating": 4.6,
       "address": "Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Famous for rich chicken soup and traditional dishes.",
-      "dishHighlights": ["Chicken soup", "Steamed chicken", "Vegetables"],
-      "tags": ["local", "soup", "traditional", "healthy"]
+      "dishHighlights": [
+        "Chicken soup",
+        "Steamed chicken",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "soup",
+        "traditional",
+        "healthy"
+      ]
     },
     {
       "id": "harbin-15",
@@ -610,11 +973,23 @@
       "avgPrice": 100,
       "rating": 4.6,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Traditional Northeastern stew cooked in iron pot over open flame.",
-      "dishHighlights": ["Pork stew", "Chicken stew", "Vegetables"],
-      "tags": ["local", "northeast", " communal-dining", "winter"]
+      "dishHighlights": [
+        "Pork stew",
+        "Chicken stew",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "northeast",
+        " communal-dining",
+        "winter"
+      ]
     },
     {
       "id": "harbin-16",
@@ -625,11 +1000,23 @@
       "avgPrice": 50,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Popular chain for spring pancakes with various fillings.",
-      "dishHighlights": ["Spring pancakes", "京酱肉丝", "Vegetables"],
-      "tags": ["local", "chain", "spring-pancakes", "value"]
+      "dishHighlights": [
+        "Spring pancakes",
+        "京酱肉丝",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "chain",
+        "spring-pancakes",
+        "value"
+      ]
     },
     {
       "id": "harbin-17",
@@ -640,12 +1027,24 @@
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "phone": "+86 451 8881 6666",
       "hours": "10:30-23:00",
       "description": "Popular hotpot chain with quality meat and fresh vegetables.",
-      "dishHighlights": ["Lamb hotpot", "Beef slices", "Vegetables"],
-      "tags": ["chain", "hotpot", "quality", "popular"]
+      "dishHighlights": [
+        "Lamb hotpot",
+        "Beef slices",
+        "Vegetables"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "quality",
+        "popular"
+      ]
     },
     {
       "id": "harbin-18",
@@ -656,12 +1055,24 @@
       "avgPrice": 200,
       "rating": 4.7,
       "address": "20 Songpu Street, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "phone": "+86 451 8464 0000",
       "hours": "11:00-14:00, 17:00-21:30",
       "description": "High-end restaurant serving refined Harbin cuisine.",
-      "dishHighlights": ["Refined local dishes", "Premium seafood", "Traditional recipes"],
-      "tags": ["fine-dining", "harbin-cuisine", "luxury", "special-occasion"]
+      "dishHighlights": [
+        "Refined local dishes",
+        "Premium seafood",
+        "Traditional recipes"
+      ],
+      "tags": [
+        "fine-dining",
+        "harbin-cuisine",
+        "luxury",
+        "special-occasion"
+      ]
     },
     {
       "id": "harbin-19",
@@ -672,11 +1083,23 @@
       "avgPrice": 25,
       "rating": 4.4,
       "address": "Daowai District",
-      "coordinates": { "lat": 45.7922, "lng": 126.6422 },
+      "coordinates": {
+        "lat": 45.7922,
+        "lng": 126.6422
+      },
       "hours": "08:00-18:00",
       "description": "Traditional Northeast glutinous rice dumplings with sweet fillings.",
-      "dishHighlights": ["Red bean dumplings", "Sweet rice cakes", "Nuts"],
-      "tags": ["local", "dessert", "traditional", "snacks"]
+      "dishHighlights": [
+        "Red bean dumplings",
+        "Sweet rice cakes",
+        "Nuts"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "snacks"
+      ]
     },
     {
       "id": "harbin-20",
@@ -687,11 +1110,23 @@
       "avgPrice": 150,
       "rating": 4.3,
       "address": "Ice and Snow World area",
-      "coordinates": { "lat": 45.7822, "lng": 126.5422 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.5422
+      },
       "hours": "10:00-21:00",
       "description": "Restaurant near ice festival with warm dining inside ice-themed decor.",
-      "dishHighlights": ["Hot dishes", "Northeast cuisine", "Warm atmosphere"],
-      "tags": ["local", "tourist-area", "convenient", "ice-festival"]
+      "dishHighlights": [
+        "Hot dishes",
+        "Northeast cuisine",
+        "Warm atmosphere"
+      ],
+      "tags": [
+        "local",
+        "tourist-area",
+        "convenient",
+        "ice-festival"
+      ]
     },
     {
       "id": "harbin-21",
@@ -702,11 +1137,23 @@
       "avgPrice": 100,
       "rating": 4.5,
       "address": "Central Avenue area",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "17:00-02:00",
       "description": "Beer hall serving Harbin beer with traditional dishes.",
-      "dishHighlights": ["Harbin beer", "Grilled meats", "Sausages"],
-      "tags": ["local", "beer", "nightlife", "traditional"]
+      "dishHighlights": [
+        "Harbin beer",
+        "Grilled meats",
+        "Sausages"
+      ],
+      "tags": [
+        "local",
+        "beer",
+        "nightlife",
+        "traditional"
+      ]
     },
     {
       "id": "harbin-22",
@@ -717,11 +1164,23 @@
       "avgPrice": 30,
       "rating": 4.3,
       "address": "Winter markets",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00 (winter)",
       "description": "Winter specialty - frozen fruits like hawthorn and pear on sticks.",
-      "dishHighlights": ["Frozen hawthorn", "Frozen pear", "Frozen grapes"],
-      "tags": ["local", "winter-specialty", "dessert", "unique"]
+      "dishHighlights": [
+        "Frozen hawthorn",
+        "Frozen pear",
+        "Frozen grapes"
+      ],
+      "tags": [
+        "local",
+        "winter-specialty",
+        "dessert",
+        "unique"
+      ]
     },
     {
       "id": "harbin-23",
@@ -732,11 +1191,24 @@
       "avgPrice": 120,
       "rating": 4.6,
       "address": "Highway 绥满线",
-      "coordinates": { "lat": 45.7522, "lng": 126.5822 },
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 126.5822
+      },
       "hours": "10:00-22:00",
       "description": "Famous for fish stew from De Moli village, a Harbin specialty.",
-      "dishHighlights": ["Fish stew", "Freshwater fish", "Tofu", "Noodles"],
-      "tags": ["local", "famous", "fish", "roadside"]
+      "dishHighlights": [
+        "Fish stew",
+        "Freshwater fish",
+        "Tofu",
+        "Noodles"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "fish",
+        "roadside"
+      ]
     },
     {
       "id": "harbin-24",
@@ -747,11 +1219,23 @@
       "avgPrice": 80,
       "rating": 4.5,
       "address": "Multiple locations",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Popular for braised pork ribs in rich sauce.",
-      "dishHighlights": ["Braised pork ribs", "Pork knuckle", "Vegetables"],
-      "tags": ["local", "northeast", "meat", "value"]
+      "dishHighlights": [
+        "Braised pork ribs",
+        "Pork knuckle",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "northeast",
+        "meat",
+        "value"
+      ]
     },
     {
       "id": "harbin-25",
@@ -762,11 +1246,23 @@
       "avgPrice": 50,
       "rating": 4.5,
       "address": "Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "hours": "10:00-22:00",
       "description": "Local favorite for handmade dumplings with unique fillings.",
-      "dishHighlights": ["Lamb dumplings", "Cabbage dumplings", "Mixed vegetable"],
-      "tags": ["local", "dumplings", "handmade", "popular"]
+      "dishHighlights": [
+        "Lamb dumplings",
+        "Cabbage dumplings",
+        "Mixed vegetable"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "handmade",
+        "popular"
+      ]
     }
   ],
   "transport": {
@@ -824,9 +1320,17 @@
       "budget": "luxury",
       "priceRange": "¥1200-2800/night",
       "address": "555 Youyi Road, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6122 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6122
+      },
       "rating": 4.7,
-      "highlights": ["Songhua River views", "Central location", "Luxury facilities", "Russian influence"],
+      "highlights": [
+        "Songhua River views",
+        "Central location",
+        "Luxury facilities",
+        "Russian influence"
+      ],
       "bookingTips": "Best location for Ice Festival. Book river view rooms."
     },
     {
@@ -835,9 +1339,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1800/night",
       "address": "68 Ganshui Road, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6122 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6122
+      },
       "rating": 4.6,
-      "highlights": ["French luxury", "Modern facilities", "Central location", "Good service"],
+      "highlights": [
+        "French luxury",
+        "Modern facilities",
+        "Central location",
+        "Good service"
+      ],
       "bookingTips": "Book during Ice Festival well ahead."
     },
     {
@@ -846,9 +1358,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "89 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.6,
-      "highlights": ["Historic luxury", "Central location", "Famous ice cream", "Russian style"],
+      "highlights": [
+        "Historic luxury",
+        "Central location",
+        "Famous ice cream",
+        "Russian style"
+      ],
       "bookingTips": "Book for historic atmosphere. The location is perfect."
     },
     {
@@ -857,9 +1377,17 @@
       "budget": "mid",
       "priceRange": "¥500-1000/night",
       "address": "189 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.5,
-      "highlights": ["Near Saint Sophia", "Modern rooms", "Central location", "Good value"],
+      "highlights": [
+        "Near Saint Sophia",
+        "Modern rooms",
+        "Central location",
+        "Good value"
+      ],
       "bookingTips": "Great location for sightseeing. Book during off-peak."
     },
     {
@@ -868,9 +1396,17 @@
       "budget": "mid",
       "priceRange": "¥400-800/night",
       "address": "69 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.4,
-      "highlights": ["Central location", "Comfortable rooms", "Near attractions", "Russian area"],
+      "highlights": [
+        "Central location",
+        "Comfortable rooms",
+        "Near attractions",
+        "Russian area"
+      ],
       "bookingTips": "Perfect for first-time visitors. Walking distance to sites."
     },
     {
@@ -879,9 +1415,17 @@
       "budget": "budget",
       "priceRange": "¥150-350/night",
       "address": "88 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.2,
-      "highlights": ["Budget-friendly", "Central location", "Clean rooms", "Metro access"],
+      "highlights": [
+        "Budget-friendly",
+        "Central location",
+        "Clean rooms",
+        "Metro access"
+      ],
       "bookingTips": "Best budget option in central area."
     },
     {
@@ -890,9 +1434,17 @@
       "budget": "budget",
       "priceRange": "¥80-250/night",
       "address": "Near Saint Sophia Cathedral",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.3,
-      "highlights": ["Central location", "Social atmosphere", "Budget-friendly", "Russian area"],
+      "highlights": [
+        "Central location",
+        "Social atmosphere",
+        "Budget-friendly",
+        "Russian area"
+      ],
       "bookingTips": "Great for backpackers. Book during off-peak season."
     },
     {
@@ -901,9 +1453,17 @@
       "budget": "luxury",
       "priceRange": "¥1400-3000/night",
       "address": "88 Songbei Street, Songbei District",
-      "coordinates": { "lat": 45.8122, "lng": 126.5722 },
+      "coordinates": {
+        "lat": 45.8122,
+        "lng": 126.5722
+      },
       "rating": 4.7,
-      "highlights": ["Newer property", "Modern luxury", "River views", "Quiet area"],
+      "highlights": [
+        "Newer property",
+        "Modern luxury",
+        "River views",
+        "Quiet area"
+      ],
       "bookingTips": "Best for luxury seekers. Modern facilities."
     },
     {
@@ -912,9 +1472,17 @@
       "budget": "mid",
       "priceRange": "¥450-900/night",
       "address": "263 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.4,
-      "highlights": ["Historic building", "Russian style", "Central location", "Good service"],
+      "highlights": [
+        "Historic building",
+        "Russian style",
+        "Central location",
+        "Good service"
+      ],
       "bookingTips": "Experience Soviet-era luxury. Book well ahead."
     },
     {
@@ -923,9 +1491,17 @@
       "budget": "mid",
       "priceRange": "¥350-700/night",
       "address": "168 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.5,
-      "highlights": ["Library theme", "Reading area", "Free breakfast", "Comfortable beds"],
+      "highlights": [
+        "Library theme",
+        "Reading area",
+        "Free breakfast",
+        "Comfortable beds"
+      ],
       "bookingTips": "Popular Chinese boutique chain. Great value."
     },
     {
@@ -934,9 +1510,17 @@
       "budget": "luxury",
       "priceRange": "¥600-1200/night",
       "address": "95 Zhongyang Avenue, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "rating": 4.5,
-      "highlights": ["European style", "Central location", "Russian architecture", "Fine dining"],
+      "highlights": [
+        "European style",
+        "Central location",
+        "Russian architecture",
+        "Fine dining"
+      ],
       "bookingTips": "Feel like Europe. Perfect for romantic trips."
     },
     {
@@ -945,9 +1529,17 @@
       "budget": "budget",
       "priceRange": "¥120-280/night",
       "address": "Near Harbin Railway Station",
-      "coordinates": { "lat": 45.7722, "lng": 126.6322 },
+      "coordinates": {
+        "lat": 45.7722,
+        "lng": 126.6322
+      },
       "rating": 4.2,
-      "highlights": ["Near station", "Budget-friendly", "Clean", "Convenient transport"],
+      "highlights": [
+        "Near station",
+        "Budget-friendly",
+        "Clean",
+        "Convenient transport"
+      ],
       "bookingTips": "Best for transit. Simple but reliable."
     },
     {
@@ -956,9 +1548,17 @@
       "budget": "mid",
       "priceRange": "¥400-800/night",
       "address": "Near Ice and Snow World",
-      "coordinates": { "lat": 45.7822, "lng": 126.5422 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.5422
+      },
       "rating": 4.5,
-      "highlights": ["Near Ice Festival", "Ice themed", "Modern", "Good service"],
+      "highlights": [
+        "Near Ice Festival",
+        "Ice themed",
+        "Modern",
+        "Good service"
+      ],
       "bookingTips": "Perfect for Ice Festival visitors. Book early."
     },
     {
@@ -967,9 +1567,17 @@
       "budget": "mid",
       "priceRange": "¥350-700/night",
       "address": "Near Volga Manor",
-      "coordinates": { "lat": 45.8522, "lng": 126.5622 },
+      "coordinates": {
+        "lat": 45.8522,
+        "lng": 126.5622
+      },
       "rating": 4.4,
-      "highlights": ["Russian style", "Near manor", "Garden setting", "Cultural experience"],
+      "highlights": [
+        "Russian style",
+        "Near manor",
+        "Garden setting",
+        "Cultural experience"
+      ],
       "bookingTips": "Great for Russian cultural experience."
     },
     {
@@ -978,9 +1586,17 @@
       "budget": "luxury",
       "priceRange": "¥800-1500/night",
       "address": "Sun Island area",
-      "coordinates": { "lat": 45.8022, "lng": 126.5822 },
+      "coordinates": {
+        "lat": 45.8022,
+        "lng": 126.5822
+      },
       "rating": 4.5,
-      "highlights": ["Island location", "River views", "Resort facilities", "Quiet area"],
+      "highlights": [
+        "Island location",
+        "River views",
+        "Resort facilities",
+        "Quiet area"
+      ],
       "bookingTips": "Perfect for summer retreats. Book river view rooms."
     }
   ],
@@ -989,22 +1605,40 @@
       "method": "Alipay",
       "icon": "alipay",
       "description": "Universal in Harbin",
-      "howToUse": ["Download app", "Link card"],
-      "tips": ["Works at all merchants", "English mode available"]
+      "howToUse": [
+        "Download app",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English mode available"
+      ]
     },
     {
       "method": "WeChat Pay",
       "icon": "wechat",
       "description": "Accepted everywhere",
-      "howToUse": ["WeChat required", "International cards accepted"],
-      "tips": ["Set to English mode", "Needed for shared bikes"]
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
     },
     {
       "method": "Cash",
       "icon": "cash",
       "description": "Useful at traditional markets",
-      "howToUse": ["ATM everywhere", "Banks common"],
-      "tips": ["Keep 200¥ for markets", "Street vendors prefer cash"]
+      "howToUse": [
+        "ATM everywhere",
+        "Banks common"
+      ],
+      "tips": [
+        "Keep 200¥ for markets",
+        "Street vendors prefer cash"
+      ]
     }
   ],
   "culturalTips": [
@@ -1126,7 +1760,10 @@
       "nameEn": "The First Affiliated Hospital of Harbin Medical University",
       "phone": "+86 451 5364 3854",
       "address": "23 Youzheng Street, Nangang District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6422 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6422
+      },
       "notes": "English-speaking staff available"
     },
     {
@@ -1135,7 +1772,10 @@
       "nameEn": "Harbin Central Hospital",
       "phone": "+86 451 5856 1000",
       "address": "5 Wenlin Street, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "notes": "Another major hospital"
     },
     {
@@ -1158,7 +1798,10 @@
       "nameEn": "Russia Consulate General Harbin",
       "phone": "+86 451 8238 1068",
       "address": "No. 1 Xi'an Road, Daoli District",
-      "coordinates": { "lat": 45.7822, "lng": 126.6222 },
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6222
+      },
       "notes": "For Russian citizens in Harbin"
     },
     {
