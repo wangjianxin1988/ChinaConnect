@@ -2,16 +2,26 @@
 /**
  * Pricing Page
  * Displays subscription tiers, feature comparison, and FAQ
+ * Integrates with Stripe Checkout for real payments
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getCurrentTier } from '../lib/subscription';
 
 const title = "Pricing Plans - ChinaConnect AI";
 const description = "Choose the perfect AI travel assistant plan for your China journey";
+const cancelled = Astro.url.searchParams.get('cancelled');
 ---
 
 <BaseLayout title={title} description={description}>
   <main class="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    {/* Cancelled notice */}
+    {cancelled && (
+      <div class="bg-yellow-50 border-b border-yellow-200 py-3 px-4 text-center">
+        <p class="text-sm text-yellow-800">
+          Payment was cancelled. You can try again below.
+        </p>
+      </div>
+    )}
+
     {/* Hero Section */}
     <section class="py-16 text-center">
       <div class="container-custom">
@@ -21,6 +31,28 @@ const description = "Choose the perfect AI travel assistant plan for your China 
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
           Unlock the full potential of AI-powered travel planning for China
         </p>
+      </div>
+    </section>
+
+    {/* Billing Toggle */}
+    <section class="pb-8">
+      <div class="container-custom text-center">
+        <div class="inline-flex items-center bg-gray-100 rounded-lg p-1">
+          <button
+            id="billing-monthly"
+            class="billing-toggle px-4 py-2 rounded-md text-sm font-medium bg-white text-gray-900 shadow-sm transition-colors"
+            data-billing="monthly"
+          >
+            Monthly
+          </button>
+          <button
+            id="billing-annual"
+            class="billing-toggle px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            data-billing="annual"
+          >
+            Annual <span class="text-green-600 text-xs font-semibold">Save 20%</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -36,8 +68,8 @@ const description = "Choose the perfect AI travel assistant plan for your China 
               <p class="text-sm text-gray-500 mt-1">Get started with basic planning</p>
             </div>
             <div class="text-center mb-6">
-              <span class="text-4xl font-bold text-gray-900">$0</span>
-              <span class="text-gray-500">/month</span>
+              <span class="text-4xl font-bold text-gray-900 price-amount" data-monthly="0" data-annual="0">$0</span>
+              <span class="text-gray-500 price-period">/month</span>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -61,7 +93,7 @@ const description = "Choose the perfect AI travel assistant plan for your China 
                 PDF export
               </li>
             </ul>
-            <button class="w-full py-2.5 px-4 rounded-lg border border-gray-300 text-gray-700 font-medium hover:bg-gray-50 transition-colors" data-tier="free">
+            <button class="w-full py-2.5 px-4 rounded-lg border border-gray-300 text-gray-700 font-medium cursor-default" data-tier="free" disabled>
               Current Plan
             </button>
           </div>
@@ -77,9 +109,9 @@ const description = "Choose the perfect AI travel assistant plan for your China 
               <p class="text-sm text-gray-500 mt-1">More requests & save features</p>
             </div>
             <div class="text-center mb-6">
-              <span class="text-4xl font-bold text-blue-600">$4.99</span>
-              <span class="text-gray-500">/month</span>
-              <p class="text-xs text-green-600 mt-1">Save 20% with annual ($47.99/yr)</p>
+              <span class="text-4xl font-bold text-blue-600 price-amount" data-monthly="4.99" data-annual="3.99">$4.99</span>
+              <span class="text-gray-500 price-period">/month</span>
+              <p class="text-xs text-green-600 mt-1 price-annual-note">Billed annually ($47.99/yr)</p>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -103,7 +135,7 @@ const description = "Choose the perfect AI travel assistant plan for your China 
                 PDF export
               </li>
             </ul>
-            <button class="w-full py-2.5 px-4 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors" data-tier="explorer">
+            <button class="w-full py-2.5 px-4 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors subscribe-btn" data-tier="explorer">
               Get Explorer
             </button>
           </div>
@@ -116,9 +148,9 @@ const description = "Choose the perfect AI travel assistant plan for your China 
               <p class="text-sm text-gray-500 mt-1">Unlimited AI with premium features</p>
             </div>
             <div class="text-center mb-6">
-              <span class="text-4xl font-bold text-purple-600">$9.99</span>
-              <span class="text-gray-500">/month</span>
-              <p class="text-xs text-green-600 mt-1">Save 20% with annual ($95.99/yr)</p>
+              <span class="text-4xl font-bold text-purple-600 price-amount" data-monthly="9.99" data-annual="7.99">$9.99</span>
+              <span class="text-gray-500 price-period">/month</span>
+              <p class="text-xs text-green-600 mt-1 price-annual-note">Billed annually ($95.99/yr)</p>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -142,7 +174,7 @@ const description = "Choose the perfect AI travel assistant plan for your China 
                 Advanced travel tools
               </li>
             </ul>
-            <button class="w-full py-2.5 px-4 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition-colors" data-tier="traveler">
+            <button class="w-full py-2.5 px-4 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition-colors subscribe-btn" data-tier="traveler">
               Get Traveler
             </button>
           </div>
@@ -155,9 +187,9 @@ const description = "Choose the perfect AI travel assistant plan for your China 
               <p class="text-sm text-gray-500 mt-1">For travel professionals</p>
             </div>
             <div class="text-center mb-6">
-              <span class="text-4xl font-bold text-amber-600">$19.99</span>
-              <span class="text-gray-500">/month</span>
-              <p class="text-xs text-green-600 mt-1">Save 20% with annual ($191.99/yr)</p>
+              <span class="text-4xl font-bold text-amber-600 price-amount" data-monthly="19.99" data-annual="15.99">$19.99</span>
+              <span class="text-gray-500 price-period">/month</span>
+              <p class="text-xs text-green-600 mt-1 price-annual-note">Billed annually ($191.99/yr)</p>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -181,7 +213,7 @@ const description = "Choose the perfect AI travel assistant plan for your China 
                 API access & dedicated support
               </li>
             </ul>
-            <button class="w-full py-2.5 px-4 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors" data-tier="business">
+            <button class="w-full py-2.5 px-4 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors subscribe-btn" data-tier="business">
               Get Business
             </button>
           </div>
@@ -283,7 +315,7 @@ const description = "Choose the perfect AI travel assistant plan for your China 
           </div>
           <div class="bg-white rounded-xl border border-gray-200 p-6">
             <h3 class="font-semibold text-gray-900 mb-2">What payment methods do you accept?</h3>
-            <p class="text-gray-600 text-sm">We accept all major credit cards, PayPal, and various local payment methods. Annual plans can also be paid via bank transfer.</p>
+            <p class="text-gray-600 text-sm">We accept all major credit cards through Stripe. Annual plans can also be paid via bank transfer. All payments are securely processed by Stripe.</p>
           </div>
         </div>
       </div>
@@ -303,20 +335,90 @@ const description = "Choose the perfect AI travel assistant plan for your China 
 </BaseLayout>
 
 <script>
-  // Handle tier selection buttons
-  document.querySelectorAll('[data-tier]').forEach((btn) => {
+  // Billing toggle
+  let currentBilling: 'monthly' | 'annual' = 'monthly';
+
+  const billingBtns = document.querySelectorAll('.billing-toggle');
+  const priceAmounts = document.querySelectorAll('.price-amount');
+  const annualNotes = document.querySelectorAll('.price-annual-note');
+
+  billingBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
+      const billing = btn.getAttribute('data-billing') as 'monthly' | 'annual';
+      currentBilling = billing;
+
+      // Update toggle UI
+      billingBtns.forEach((b) => {
+        if (b.getAttribute('data-billing') === billing) {
+          b.classList.add('bg-white', 'text-gray-900', 'shadow-sm');
+          b.classList.remove('text-gray-600');
+        } else {
+          b.classList.remove('bg-white', 'text-gray-900', 'shadow-sm');
+          b.classList.add('text-gray-600');
+        }
+      });
+
+      // Update prices
+      priceAmounts.forEach((el) => {
+        const monthly = el.getAttribute('data-monthly');
+        const annual = el.getAttribute('data-annual');
+        if (monthly && annual) {
+          el.textContent = `$${billing === 'monthly' ? monthly : annual}`;
+        }
+      });
+
+      // Show/hide annual notes
+      annualNotes.forEach((note) => {
+        (note as HTMLElement).style.display = billing === 'annual' ? 'block' : 'none';
+      });
+    });
+  });
+
+  // Initially hide annual notes
+  annualNotes.forEach((note) => {
+    (note as HTMLElement).style.display = 'none';
+  });
+
+  // Subscribe button click handler
+  document.querySelectorAll('.subscribe-btn').forEach((btn) => {
+    btn.addEventListener('click', async () => {
       const tier = btn.getAttribute('data-tier');
-      if (tier) {
-        localStorage.setItem('subscription_tier', tier);
-        // Show confirmation
-        const original = btn.textContent;
-        btn.textContent = '✓ Activated!';
-        btn.classList.add('bg-green-600', 'hover:bg-green-700');
-        setTimeout(() => {
-          btn.textContent = original;
-          btn.classList.remove('bg-green-600', 'hover:bg-green-700');
-        }, 2000);
+      if (!tier || tier === 'free') return;
+
+      const button = btn as HTMLButtonElement;
+      const originalText = button.textContent;
+      button.textContent = 'Redirecting...';
+      button.disabled = true;
+
+      try {
+        // Store tier for success page
+        localStorage.setItem('pending_checkout_tier', tier);
+
+        // Call checkout API
+        const response = await fetch('/api/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ tier, billing: currentBilling }),
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Failed to create checkout session');
+        }
+
+        if (data.url) {
+          window.location.href = data.url;
+        } else {
+          throw new Error('No checkout URL returned');
+        }
+      } catch (error: unknown) {
+        const message = error instanceof Error ? error.message : 'Unknown error';
+        console.error('Checkout error:', message);
+        alert(`Checkout error: ${message}\n\nPlease make sure Stripe is configured properly.`);
+        button.textContent = originalText;
+        button.disabled = false;
+        localStorage.removeItem('pending_checkout_tier');
       }
     });
   });
@@ -324,10 +426,14 @@ const description = "Choose the perfect AI travel assistant plan for your China 
   // Highlight current tier
   const currentTier = localStorage.getItem('subscription_tier') || 'free';
   document.querySelectorAll('[data-tier]').forEach((btn) => {
-    if (btn.getAttribute('data-tier') === currentTier) {
+    const tier = btn.getAttribute('data-tier');
+    if (tier === currentTier && btn.classList.contains('subscribe-btn')) {
       btn.textContent = 'Current Plan';
-      btn.disabled = true;
+      (btn as HTMLButtonElement).disabled = true;
       btn.classList.add('opacity-60', 'cursor-not-allowed');
+    }
+    if (tier === 'free' && currentTier === 'free') {
+      btn.textContent = 'Current Plan';
     }
   });
 </script>

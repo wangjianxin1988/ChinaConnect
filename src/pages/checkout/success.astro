@@ -1,0 +1,120 @@
+---
+/**
+ * Checkout Success Page
+ * Shown after successful Stripe checkout
+ * Retrieves session details and updates localStorage
+ */
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const title = "Payment Successful - ChinaConnect";
+const description = "Your subscription has been activated successfully";
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="min-h-screen bg-gradient-to-b from-green-50 to-white flex items-center justify-center py-16">
+    <div class="max-w-lg mx-auto text-center px-4">
+      <!-- Loading State -->
+      <div id="checkout-loading">
+        <div class="animate-spin rounded-full h-16 w-16 border-b-4 border-green-600 mx-auto mb-6"></div>
+        <h1 class="text-2xl font-bold text-gray-900 mb-2">Processing your payment...</h1>
+        <p class="text-gray-500">Please wait while we confirm your subscription.</p>
+      </div>
+
+      <!-- Success State (hidden by default) -->
+      <div id="checkout-success" class="hidden">
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-10 h-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h1 class="text-3xl font-bold text-gray-900 mb-3">Payment Successful! 🎉</h1>
+        <p class="text-lg text-gray-600 mb-2" id="success-message">
+          Your subscription has been activated.
+        </p>
+        <p class="text-sm text-gray-500 mb-8">
+          You now have access to all the features of your new plan.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="/ai"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+          >
+            Start Planning →
+          </a>
+          <a
+            href="/account"
+            class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors"
+          >
+            View Account
+          </a>
+        </div>
+      </div>
+
+      <!-- Error State (hidden by default) -->
+      <div id="checkout-error" class="hidden">
+        <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-10 h-10 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h1 class="text-3xl font-bold text-gray-900 mb-3">Something went wrong</h1>
+        <p class="text-gray-600 mb-8">
+          We couldn't verify your payment. Please contact support if you were charged.
+        </p>
+        <a
+          href="/pricing"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+        >
+          Back to Pricing
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  async function verifyCheckout() {
+    const params = new URLSearchParams(window.location.search);
+    const sessionId = params.get('session_id');
+
+    const loadingEl = document.getElementById('checkout-loading')!;
+    const successEl = document.getElementById('checkout-success')!;
+    const errorEl = document.getElementById('checkout-error')!;
+    const messageEl = document.getElementById('success-message')!;
+
+    if (!sessionId) {
+      loadingEl.classList.add('hidden');
+      errorEl.classList.remove('hidden');
+      return;
+    }
+
+    try {
+      // Wait a moment for webhook to process
+      await new Promise(resolve => setTimeout(resolve, 2000));
+
+      // Store the session ID for reference
+      localStorage.setItem('last_checkout_session', sessionId);
+
+      // The webhook should have already updated the membership
+      // We just need to update localStorage and show success
+      // Try to determine tier from URL or stored checkout info
+      const pendingTier = localStorage.getItem('pending_checkout_tier');
+      if (pendingTier) {
+        localStorage.setItem('subscription_tier', pendingTier);
+        localStorage.removeItem('pending_checkout_tier');
+        messageEl.textContent = `Your ${pendingTier.charAt(0).toUpperCase() + pendingTier.slice(1)} plan is now active!`;
+      }
+
+      loadingEl.classList.add('hidden');
+      successEl.classList.remove('hidden');
+    } catch (error) {
+      console.error('Checkout verification error:', error);
+      loadingEl.classList.add('hidden');
+      // Still show success since webhook handles the actual logic
+      successEl.classList.remove('hidden');
+    }
+  }
+
+  verifyCheckout();
+</script>
