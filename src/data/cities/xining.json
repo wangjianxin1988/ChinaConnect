@@ -538,6 +538,566 @@
         "Summer retreat"
       ],
       "tips": "Good summer escape. The forested mountains are refreshing. Popular with locals. Fall colors are beautiful."
+    },
+    {
+      "id": "taer-temple",
+      "name": "塔尔寺",
+      "nameEn": "Ta'er Temple",
+      "category": "temple",
+      "description": "藏传佛教格鲁派六大寺之一，酥油花、壁画、堆绣被誉为艺术三绝。",
+      "address": "西宁市湟中区鲁沙尔镇",
+      "coordinates": {
+        "lat": 36.48,
+        "lng": 101.57
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "70元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "酥油花",
+        "壁画",
+        "金顶"
+      ],
+      "tips": "尊重宗教习俗。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "kunlun-mountain",
+      "name": "日月山",
+      "nameEn": "Riyue Mountain",
+      "category": "nature",
+      "description": "青海农牧区的分界线，文成公主进藏经过之地。",
+      "address": "湟源县",
+      "coordinates": {
+        "lat": 36.48,
+        "lng": 101.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "日亭",
+        "月亭",
+        "草原风光"
+      ],
+      "tips": "海拔3520米，注意高反。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "cha-lake",
+      "name": "茶卡盐湖",
+      "nameEn": "Chaka Salt Lake",
+      "category": "nature",
+      "description": "天空之镜，中国的玻利维亚，盐湖面积105平方公里。",
+      "address": "海西州乌兰县",
+      "coordinates": {
+        "lat": 36.72,
+        "lng": 99.08
+      },
+      "openingHours": "07:00-18:30",
+      "ticketPrice": "60元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "天空之镜",
+        "盐雕",
+        "小火车"
+      ],
+      "tips": "晴天无风时效果最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "menyuan-flower",
+      "name": "门源油菜花",
+      "nameEn": "Menyuan Rapeseed Flowers",
+      "category": "nature",
+      "description": "中国最大的油菜花海，面积达50万亩。",
+      "address": "海北州门源县",
+      "coordinates": {
+        "lat": 37.38,
+        "lng": 101.62
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "油菜花海",
+        "祁连山"
+      ],
+      "tips": "7月最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "qilian-mountain",
+      "name": "祁连山",
+      "nameEn": "Qilian Mountain",
+      "category": "nature",
+      "description": "中国重要的山脉，有东方瑞士之称。",
+      "address": "海北州祁连县",
+      "coordinates": {
+        "lat": 38.2,
+        "lng": 100.25
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "草原",
+        "雪山",
+        "牧场"
+      ],
+      "tips": "夏季最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dongxiaojie",
+      "name": "水井巷市场",
+      "nameEn": "Shuijingxiang Market",
+      "category": "street",
+      "description": "西宁最热闹的市场，汇集各种青海特产和小吃。",
+      "address": "西宁市城中区",
+      "coordinates": {
+        "lat": 36.62,
+        "lng": 101.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "酸奶",
+        "酿皮",
+        "手抓羊肉"
+      ],
+      "tips": "必吃青海酸奶。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "beishan-temple",
+      "name": "北禅寺",
+      "nameEn": "Beichan Temple",
+      "category": "temple",
+      "description": "西宁最古老的寺庙，始建于北魏，有九窟十八洞。",
+      "address": "西宁市城北区",
+      "coordinates": {
+        "lat": 36.65,
+        "lng": 101.76
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "道教建筑",
+        "九窟十八洞"
+      ],
+      "tips": "可俯瞰西宁全景。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanshan-park",
+      "name": "南山公园",
+      "nameEn": "Nanshan Park",
+      "category": "park",
+      "description": "西宁南部的绿色屏障，有凤凰台等景点。",
+      "address": "西宁市城中区",
+      "coordinates": {
+        "lat": 36.6,
+        "lng": 101.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "凤凰台",
+        "城市全景"
+      ],
+      "tips": "登高望远好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "qinghai-museum",
+      "name": "青海博物馆",
+      "nameEn": "Qinghai Provincial Museum",
+      "category": "museum",
+      "description": "馆藏文物1.5万件，展示了青海的历史和民族文化。",
+      "address": "西宁市城西区",
+      "coordinates": {
+        "lat": 36.62,
+        "lng": 101.76
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "彩陶",
+        "唐卡",
+        "民族文物"
+      ],
+      "tips": "了解青海文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tibetan-medicine",
+      "name": "青海藏医药文化博物馆",
+      "nameEn": "Qinghai Tibetan Medicine Museum",
+      "category": "museum",
+      "description": "世界唯一的藏医药文化博物馆，有中国最大的唐卡。",
+      "address": "西宁市城北区",
+      "coordinates": {
+        "lat": 36.65,
+        "lng": 101.76
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "唐卡",
+        "藏医药",
+        "曼唐"
+      ],
+      "tips": "了解藏医药文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "kumbum-art",
+      "name": "酥油花馆",
+      "nameEn": "Butter Flower Museum",
+      "category": "museum",
+      "description": "展示塔尔寺酥油花艺术，是非物质文化遗产。",
+      "address": "湟中区鲁沙尔镇",
+      "coordinates": {
+        "lat": 36.48,
+        "lng": 101.57
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "酥油花",
+        "佛教艺术"
+      ],
+      "tips": "酥油花制作工艺精湛。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "huangyuan-ancient",
+      "name": "丹噶尔古城",
+      "nameEn": "Dangar Ancient City",
+      "category": "street",
+      "description": "有600多年历史的古城，曾是茶马古道的重要驿站。",
+      "address": "湟源县",
+      "coordinates": {
+        "lat": 36.68,
+        "lng": 101.25
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古城",
+        "茶马古道",
+        "排灯"
+      ],
+      "tips": "了解青海商贸历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "datong-forest",
+      "name": "大通国家森林公园",
+      "nameEn": "Datong National Forest Park",
+      "category": "nature",
+      "description": "西宁北部的天然氧吧，有察汗河等景点。",
+      "address": "大通县",
+      "coordinates": {
+        "lat": 36.93,
+        "lng": 101.68
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "森林",
+        "河流",
+        "瀑布"
+      ],
+      "tips": "夏季避暑好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "guide-ancient",
+      "name": "贵德古城",
+      "nameEn": "Guide Ancient City",
+      "category": "street",
+      "description": "有600多年历史的古城，有天下黄河贵德清之称。",
+      "address": "贵德县",
+      "coordinates": {
+        "lat": 36.03,
+        "lng": 101.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古城",
+        "黄河清"
+      ],
+      "tips": "黄河在这里是清的。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "guide-wenquan",
+      "name": "贵德温泉",
+      "nameEn": "Guide Hot Spring",
+      "category": "nature",
+      "description": "青海著名的温泉，水温达93°C。",
+      "address": "贵德县",
+      "coordinates": {
+        "lat": 36.03,
+        "lng": 101.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "温泉",
+        "黄河风光"
+      ],
+      "tips": "冬季泡温泉。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "huangshui",
+      "name": "互助土族故土园",
+      "nameEn": "Huzu Tuzu Homeland Park",
+      "category": "street",
+      "description": "体验土族文化的好去处，有土族歌舞表演。",
+      "address": "互助县",
+      "coordinates": {
+        "lat": 36.83,
+        "lng": 101.95
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "60元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "土族文化",
+        "安昭舞",
+        "轮子秋"
+      ],
+      "tips": "了解土族民俗。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "kanbula",
+      "name": "坎布拉国家森林公园",
+      "nameEn": "Kanbula National Forest Park",
+      "category": "nature",
+      "description": "丹霞地貌与黄河水相映成趣的国家森林公园。",
+      "address": "黄南州尖扎县",
+      "coordinates": {
+        "lat": 35.93,
+        "lng": 101.87
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "丹霞地貌",
+        "黄河",
+        "森林"
+      ],
+      "tips": "秋季色彩最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xining-night-market",
+      "name": "大新街夜市",
+      "nameEn": "Daxinjie Night Market",
+      "category": "street",
+      "description": "西宁最有名的夜市，汇集各种青海小吃。",
+      "address": "西宁市城中区",
+      "coordinates": {
+        "lat": 36.62,
+        "lng": 101.78
+      },
+      "openingHours": "18:00-24:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "烤羊肉",
+        "酿皮",
+        "甜醅"
+      ],
+      "tips": "晚上去最热闹。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "huangyuan-riyue",
+      "name": "湟源峡",
+      "nameEn": "Huangyuan Gorge",
+      "category": "nature",
+      "description": "青海东部的峡谷，有小三峡之称。",
+      "address": "湟源县",
+      "coordinates": {
+        "lat": 36.68,
+        "lng": 101.25
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "峡谷",
+        "河流"
+      ],
+      "tips": "自然风光优美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "huzhu-forest",
+      "name": "互助北山国家森林公园",
+      "nameEn": "Huzhu Beishan Forest Park",
+      "category": "nature",
+      "description": "青海最大的森林公园，有扎龙沟等景点。",
+      "address": "互助县",
+      "coordinates": {
+        "lat": 36.83,
+        "lng": 101.95
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "森林",
+        "瀑布",
+        "草甸"
+      ],
+      "tips": "夏季避暑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "minhe-lajisi",
+      "name": "民和喇家遗址",
+      "nameEn": "Minhe Lajia Site",
+      "category": "museum",
+      "description": "4000年前的灾难遗址，被称为东方庞贝。",
+      "address": "民和县",
+      "coordinates": {
+        "lat": 36.3,
+        "lng": 102.8
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "史前遗址",
+        "灾难现场"
+      ],
+      "tips": "了解史前文明。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "guide-danxia",
+      "name": "贵德丹霞",
+      "nameEn": "Guide Danxia",
+      "category": "nature",
+      "description": "黄河边的丹霞地貌，色彩斑斓。",
+      "address": "贵德县",
+      "coordinates": {
+        "lat": 36.03,
+        "lng": 101.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "丹霞",
+        "黄河"
+      ],
+      "tips": "日落最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xining-park",
+      "name": "人民公园",
+      "nameEn": "People's Park",
+      "category": "park",
+      "description": "西宁最大的城市公园，有湖泊和花园。",
+      "address": "西宁市城西区",
+      "coordinates": {
+        "lat": 36.62,
+        "lng": 101.76
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "湖泊",
+        "花园",
+        "市民生活"
+      ],
+      "tips": "感受西宁市民生活。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "huangzhong-museum",
+      "name": "湟中区博物馆",
+      "nameEn": "Huangzhong Museum",
+      "category": "museum",
+      "description": "展示湟中地区的历史文化。",
+      "address": "湟中区",
+      "coordinates": {
+        "lat": 36.48,
+        "lng": 101.57
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "历史文物"
+      ],
+      "tips": "与塔尔寺一起游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "qinghai-3d",
+      "name": "青海湖二郎剑景区",
+      "nameEn": "Qinghai Lake Erlangjian",
+      "category": "nature",
+      "description": "青海湖最主要的景区，可近距离接触湖水。",
+      "address": "共和县",
+      "coordinates": {
+        "lat": 36.6,
+        "lng": 100.5
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "湖畔",
+        "草原",
+        "油菜花"
+      ],
+      "tips": "7-8月最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "menyuan-land",
+      "name": "百里油菜花海",
+      "nameEn": "Menyuan Flower Sea",
+      "category": "nature",
+      "description": "门源百里油菜花海，是中国最大的油菜花观赏地。",
+      "address": "门源县",
+      "coordinates": {
+        "lat": 37.38,
+        "lng": 101.62
+      },
+      "openingHours": "7月",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "油菜花",
+        "祁连山"
+      ],
+      "tips": "7月中旬最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

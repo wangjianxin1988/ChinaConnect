@@ -582,6 +582,554 @@
         "Military history"
       ],
       "tips": "Take cable car up. Views are spectacular. Combine with Lvshun."
+    },
+    {
+      "id": "xinghai-square",
+      "name": "星海广场",
+      "nameEn": "Xinghai Square",
+      "category": "landmark",
+      "description": "亚洲最大的城市广场，面积176万平方米，有百年纪念雕塑。",
+      "address": "大连市沙河口区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.57
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "百年雕塑",
+        "海滨",
+        "音乐喷泉"
+      ],
+      "tips": "傍晚灯光最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "laohutan",
+      "name": "老虎滩海洋公园",
+      "nameEn": "Laohutan Ocean Park",
+      "category": "museum",
+      "description": "中国最大的海洋主题公园之一，有极地馆、珊瑚馆等。",
+      "address": "大连市中山区滨海中路",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.63
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "210元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "极地馆",
+        "珊瑚馆",
+        "海豚表演"
+      ],
+      "tips": "建议安排半天。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinshitan",
+      "name": "金石滩",
+      "nameEn": "Jinshitan",
+      "category": "beach",
+      "description": "国家级风景名胜区，有奇石、海滩和高尔夫球场。",
+      "address": "大连市金州区",
+      "coordinates": {
+        "lat": 39.05,
+        "lng": 122.0
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "奇石",
+        "海滩",
+        "地质公园"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "bangchui-island",
+      "name": "棒棰岛",
+      "nameEn": "Bangchui Island",
+      "category": "beach",
+      "description": "大连最美的海滩之一，曾是国家领导人疗养地。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.65
+      },
+      "openingHours": "全天",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海滩",
+        "别墅",
+        "森林"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-church",
+      "name": "大连天主教堂",
+      "nameEn": "Dalian Catholic Church",
+      "category": "landmark",
+      "description": "哥特式建筑，是大连最古老的教堂之一。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.92,
+        "lng": 121.63
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "哥特式建筑"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-museum",
+      "name": "大连现代博物馆",
+      "nameEn": "Dalian Modern Museum",
+      "category": "museum",
+      "description": "展示大连近代历史和城市发展的博物馆。",
+      "address": "大连市沙河口区",
+      "coordinates": {
+        "lat": 38.88,
+        "lng": 121.58
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "近代史",
+        "城市发展"
+      ],
+      "tips": "了解大连历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xinghai-park",
+      "name": "星海公园",
+      "nameEn": "Xinghai Park",
+      "category": "park",
+      "description": "大连著名的海滨公园，有沙滩和海上乐园。",
+      "address": "大连市沙河口区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.57
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "沙滩",
+        "海上乐园"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "donggang",
+      "name": "东港商务区",
+      "nameEn": "Donggang Business District",
+      "category": "landmark",
+      "description": "大连新城区，有音乐喷泉和现代建筑。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.92,
+        "lng": 121.65
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "音乐喷泉",
+        "现代建筑"
+      ],
+      "tips": "傍晚灯光最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "lvshun",
+      "name": "旅顺口",
+      "nameEn": "Lüshunkou",
+      "category": "landmark",
+      "description": "中国近代史上的重要军事要塞，有日俄监狱旧址。",
+      "address": "大连市旅顺口区",
+      "coordinates": {
+        "lat": 38.8,
+        "lng": 121.25
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "日俄监狱",
+        "白玉山",
+        "万忠墓"
+      ],
+      "tips": "了解近代史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "baiyu-mountain",
+      "name": "白玉山",
+      "nameEn": "Baiyu Mountain",
+      "category": "nature",
+      "description": "旅顺口的标志性山峰，可俯瞰旅顺军港。",
+      "address": "大连市旅顺口区",
+      "coordinates": {
+        "lat": 38.8,
+        "lng": 121.25
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "军港全景",
+        "日俄战争遗迹"
+      ],
+      "tips": "了解军事历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-forest-zoo",
+      "name": "大连森林动物园",
+      "nameEn": "Dalian Forest Zoo",
+      "category": "nature",
+      "description": "中国最大的森林动物园之一，有散养区和圈养区。",
+      "address": "大连市西岗区",
+      "coordinates": {
+        "lat": 38.9,
+        "lng": 121.6
+      },
+      "openingHours": "08:30-16:30",
+      "ticketPrice": "120元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "散养动物",
+        "大熊猫"
+      ],
+      "tips": "建议坐观光车。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "bangchui-beach",
+      "name": "棒棰岛海滩",
+      "nameEn": "Bangchui Beach",
+      "category": "beach",
+      "description": "大连最干净的海滩，水质清澈。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.65
+      },
+      "openingHours": "全天",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-shell-museum",
+      "name": "大连贝壳博物馆",
+      "nameEn": "Dalian Shell Museum",
+      "category": "museum",
+      "description": "中国最大的贝壳博物馆，有5000多种贝壳。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.63
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "贝壳",
+        "海洋文化"
+      ],
+      "tips": "了解海洋生物。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xinhua-bookstore",
+      "name": "大连新华书店",
+      "nameEn": "Dalian Xinhua Bookstore",
+      "category": "landmark",
+      "description": "大连最大的书店，有独特的建筑设计。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.92,
+        "lng": 121.63
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "书店",
+        "文化地标"
+      ],
+      "tips": "感受大连文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-night",
+      "name": "大连夜景",
+      "nameEn": "Dalian Night View",
+      "category": "landmark",
+      "description": "星海湾和东港的夜景灯光秀。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.92,
+        "lng": 121.65
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "海景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-russian",
+      "name": "俄罗斯风情街",
+      "nameEn": "Russian Style Street",
+      "category": "street",
+      "description": "保留了俄式建筑的商业街，有俄罗斯商品。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.92,
+        "lng": 121.63
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "俄式建筑",
+        "俄罗斯商品"
+      ],
+      "tips": "购买俄罗斯特产。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-japanese",
+      "name": "日本风情街",
+      "nameEn": "Japanese Style Street",
+      "category": "street",
+      "description": "保留了日式建筑的商业街。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.92,
+        "lng": 121.63
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "日式建筑"
+      ],
+      "tips": "了解大连历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "laohutan-beach",
+      "name": "老虎滩海滩",
+      "nameEn": "Laohutan Beach",
+      "category": "beach",
+      "description": "大连著名的海滩，有细软的沙滩。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.63
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-polar",
+      "name": "大连极地馆",
+      "nameEn": "Dalian Polar Aquarium",
+      "category": "museum",
+      "description": "有白鲸、海豚等极地海洋动物。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.63
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "白鲸",
+        "海豚表演"
+      ],
+      "tips": "与老虎滩一起游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xinghai-bay",
+      "name": "星海湾跨海大桥",
+      "nameEn": "Xinghai Bay Bridge",
+      "category": "landmark",
+      "description": "中国首座海上地锚悬索桥，全长6.8公里。",
+      "address": "大连市沙河口区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.57
+      },
+      "openingHours": "全天",
+      "ticketPrice": "通行费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "跨海大桥",
+        "海景"
+      ],
+      "tips": "驾车体验。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-art-museum",
+      "name": "大连美术馆",
+      "nameEn": "Dalian Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品的美术馆。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.92,
+        "lng": 121.63
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-botanical",
+      "name": "大连植物园",
+      "nameEn": "Dalian Botanical Garden",
+      "category": "park",
+      "description": "大连市区的绿色氧吧，有各种植物。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.9,
+        "lng": 121.63
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "植物",
+        "森林"
+      ],
+      "tips": "休闲散步好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "lvshun-museum",
+      "name": "旅顺博物馆",
+      "nameEn": "Lüshun Museum",
+      "category": "museum",
+      "description": "中国最早的博物馆之一，有珍贵的历史文物。",
+      "address": "大连市旅顺口区",
+      "coordinates": {
+        "lat": 38.8,
+        "lng": 121.25
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "历史文物",
+        "古代文明"
+      ],
+      "tips": "了解旅顺历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-discovery",
+      "name": "大连发现王国",
+      "nameEn": "Dalian Discovery Kingdom",
+      "category": "landmark",
+      "description": "大型主题乐园，有过山车等游乐设施。",
+      "address": "大连市金州区",
+      "coordinates": {
+        "lat": 39.05,
+        "lng": 122.0
+      },
+      "openingHours": "09:30-21:00",
+      "ticketPrice": "220元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "过山车",
+        "主题乐园"
+      ],
+      "tips": "适合亲子游。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-swim",
+      "name": "付家庄海滨浴场",
+      "nameEn": "Fujiazhuang Beach",
+      "category": "beach",
+      "description": "大连最受欢迎的海水浴场之一。",
+      "address": "大连市西岗区",
+      "coordinates": {
+        "lat": 38.88,
+        "lng": 121.6
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dalian-tiger",
+      "name": "老虎滩极地馆",
+      "nameEn": "Laohutan Polar Aquarium",
+      "category": "museum",
+      "description": "大连最大的极地海洋动物展示馆。",
+      "address": "大连市中山区",
+      "coordinates": {
+        "lat": 38.87,
+        "lng": 121.63
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "极地动物",
+        "表演"
+      ],
+      "tips": "与海洋公园一起游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

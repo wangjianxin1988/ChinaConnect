@@ -581,6 +581,551 @@
         "Cafes"
       ],
       "tips": "Weekend visits best. Check event schedules. Great for photography."
+    },
+    {
+      "id": "thousand-buddha",
+      "name": "千佛山",
+      "nameEn": "Thousand Buddha Mountain",
+      "category": "nature",
+      "description": "济南三大名胜之一，有隋代石佛造像。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.65,
+        "lng": 117.03
+      },
+      "openingHours": "06:30-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "石佛",
+        "兴国禅寺",
+        "城市全景"
+      ],
+      "tips": "登高望远好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "five-dragon-pool",
+      "name": "五龙潭",
+      "nameEn": "Wulongtan Park",
+      "category": "nature",
+      "description": "济南四大泉群之一，有五龙潭、天镜泉等名泉。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.67,
+        "lng": 117.0
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "5元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "名泉",
+        "秦琼故居"
+      ],
+      "tips": "了解济南泉文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "quancheng-square",
+      "name": "泉城广场",
+      "nameEn": "Quancheng Square",
+      "category": "landmark",
+      "description": "济南的城市中心广场，有泉标雕塑。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.01
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "泉标",
+        "音乐喷泉"
+      ],
+      "tips": "傍晚灯光最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "lingyan-temple",
+      "name": "灵岩寺",
+      "nameEn": "Lingyan Temple",
+      "category": "temple",
+      "description": "中国四大名刹之首，有千佛殿和辟支塔。",
+      "address": "济南市长清区",
+      "coordinates": {
+        "lat": 36.35,
+        "lng": 117.0
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "千佛殿",
+        "辟支塔",
+        "墓塔林"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-museum",
+      "name": "济南市博物馆",
+      "nameEn": "Jinan Museum",
+      "category": "museum",
+      "description": "展示济南历史文化的博物馆。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.02
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "历史文物",
+        "泉文化"
+      ],
+      "tips": "了解济南历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "furong-street",
+      "name": "芙蓉街",
+      "nameEn": "Furong Street",
+      "category": "street",
+      "description": "济南最古老的商业街，汇集各种小吃。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.67,
+        "lng": 117.02
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "小吃",
+        "老建筑"
+      ],
+      "tips": "品尝济南小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "kuanhou-li",
+      "name": "宽厚里",
+      "nameEn": "Kuanhouli",
+      "category": "street",
+      "description": "济南新开发的历史文化街区，融合传统与现代。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.02
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "历史街区",
+        "美食",
+        "文创"
+      ],
+      "tips": "感受济南文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "quancheng-park",
+      "name": "泉城公园",
+      "nameEn": "Quancheng Park",
+      "category": "park",
+      "description": "济南最大的城市公园，有湖泊和花园。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.03
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "湖泊",
+        "花园"
+      ],
+      "tips": "休闲散步好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jingshi-road",
+      "name": "经十路",
+      "nameEn": "Jingshi Road",
+      "category": "landmark",
+      "description": "济南最宽的城市道路，有现代化建筑群。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.0
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "现代建筑",
+        "城市新貌"
+      ],
+      "tips": "感受济南发展。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "lishan-district",
+      "name": "历下区",
+      "nameEn": "Lixia District",
+      "category": "landmark",
+      "description": "济南的中心城区，汇集了大部分名胜古迹。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.02
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "名胜古迹",
+        "商业中心"
+      ],
+      "tips": "济南旅游核心区。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zhangqiu-iron",
+      "name": "章丘铁锅",
+      "nameEn": "Zhangqiu Iron Wok",
+      "category": "street",
+      "description": "章丘铁锅锻造技艺，是非物质文化遗产。",
+      "address": "济南市章丘区",
+      "coordinates": {
+        "lat": 36.72,
+        "lng": 117.53
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "非遗技艺",
+        "铁锅锻造"
+      ],
+      "tips": "了解传统工艺。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-zoo",
+      "name": "济南动物园",
+      "nameEn": "Jinan Zoo",
+      "category": "nature",
+      "description": "山东省最大的动物园，有300多种动物。",
+      "address": "济南市天桥区",
+      "coordinates": {
+        "lat": 36.68,
+        "lng": 116.98
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "大熊猫",
+        "金丝猴"
+      ],
+      "tips": "适合亲子游。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "mingshui-ancient",
+      "name": "明水古城",
+      "nameEn": "Mingshui Ancient City",
+      "category": "street",
+      "description": "章丘区的古城，有泉水和古建筑。",
+      "address": "济南市章丘区",
+      "coordinates": {
+        "lat": 36.72,
+        "lng": 117.53
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古城",
+        "泉水"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "changqing-forest",
+      "name": "长清园博园",
+      "nameEn": "Changqing Garden Expo",
+      "category": "park",
+      "description": "济南园博园，有各种主题花园。",
+      "address": "济南市长清区",
+      "coordinates": {
+        "lat": 36.35,
+        "lng": 117.0
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "花园",
+        "园林"
+      ],
+      "tips": "春季花展最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-buddha",
+      "name": "四门塔",
+      "nameEn": "Four Gates Pagoda",
+      "category": "temple",
+      "description": "中国现存最古老的石塔，建于隋代。",
+      "address": "济南市历城区",
+      "coordinates": {
+        "lat": 36.48,
+        "lng": 117.22
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "隋代石塔",
+        "佛教文化"
+      ],
+      "tips": "了解古代建筑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "laiwu-forest",
+      "name": "莱芜莲花山",
+      "nameEn": "Laiwu Lianhua Mountain",
+      "category": "nature",
+      "description": "济南南部的风景区，有莲花和瀑布。",
+      "address": "济南市莱芜区",
+      "coordinates": {
+        "lat": 36.2,
+        "lng": 117.67
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "莲花",
+        "瀑布"
+      ],
+      "tips": "夏季避暑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-hotspring",
+      "name": "济南温泉",
+      "nameEn": "Jinan Hot Spring",
+      "category": "nature",
+      "description": "济南有丰富的温泉资源，可泡温泉。",
+      "address": "济南市历城区",
+      "coordinates": {
+        "lat": 36.48,
+        "lng": 117.22
+      },
+      "openingHours": "全天",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "温泉"
+      ],
+      "tips": "冬季泡温泉。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "pingyin-rose",
+      "name": "平阴玫瑰",
+      "nameEn": "Pingyin Rose",
+      "category": "nature",
+      "description": "中国玫瑰之乡，每年5月玫瑰盛开。",
+      "address": "济南市平阴县",
+      "coordinates": {
+        "lat": 36.28,
+        "lng": 116.45
+      },
+      "openingHours": "5月",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "玫瑰花海"
+      ],
+      "tips": "5月最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-culture",
+      "name": "山东省美术馆",
+      "nameEn": "Shandong Art Museum",
+      "category": "museum",
+      "description": "山东省最大的美术馆，展示中外美术作品。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.05
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-tea",
+      "name": "济南茶叶批发市场",
+      "nameEn": "Jinan Tea Market",
+      "category": "street",
+      "description": "中国北方最大的茶叶市场，可品尝各种茶。",
+      "address": "济南市槐荫区",
+      "coordinates": {
+        "lat": 36.65,
+        "lng": 116.98
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "茶叶",
+        "品茶"
+      ],
+      "tips": "购买济南特产。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-night",
+      "name": "泉城夜景",
+      "nameEn": "Quancheng Night View",
+      "category": "landmark",
+      "description": "趵突泉和大明湖的夜景灯光秀。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.02
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "泉城夜色"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zhangqiu-baihua",
+      "name": "百脉泉",
+      "nameEn": "Baimai Spring",
+      "category": "nature",
+      "description": "章丘名泉，有百脉齐发的壮观景象。",
+      "address": "济南市章丘区",
+      "coordinates": {
+        "lat": 36.72,
+        "lng": 117.53
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "名泉",
+        "泉水"
+      ],
+      "tips": "了解济南泉文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wanda-plaza",
+      "name": "济南万达广场",
+      "nameEn": "Jinan Wanda Plaza",
+      "category": "landmark",
+      "description": "济南最大的商业综合体。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.03
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "购物好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "high-tech-zone",
+      "name": "济南高新区",
+      "nameEn": "Jinan High-tech Zone",
+      "category": "landmark",
+      "description": "济南的科技中心，有现代化建筑。",
+      "address": "济南市高新区",
+      "coordinates": {
+        "lat": 36.66,
+        "lng": 117.05
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "现代建筑"
+      ],
+      "tips": "感受济南发展。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "old-jinan",
+      "name": "老济南胡同",
+      "nameEn": "Old Jinan Hutongs",
+      "category": "street",
+      "description": "济南老城区的胡同，保留了传统建筑风格。",
+      "address": "济南市历下区",
+      "coordinates": {
+        "lat": 36.67,
+        "lng": 117.02
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "胡同",
+        "老建筑"
+      ],
+      "tips": "了解老济南生活。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinan-station",
+      "name": "济南站",
+      "nameEn": "Jinan Railway Station",
+      "category": "landmark",
+      "description": "济南的标志性建筑，德式建筑风格。",
+      "address": "济南市天桥区",
+      "coordinates": {
+        "lat": 36.68,
+        "lng": 117.0
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "德式建筑",
+        "火车站"
+      ],
+      "tips": "了解济南历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
