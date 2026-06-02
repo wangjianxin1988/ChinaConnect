@@ -537,6 +537,342 @@
         "Nature"
       ],
       "tips": "Good for morning bird watching. The boardwalk is pleasant. Bring binoculars for birds."
+    },
+    {
+      "id": "yellow-river-mother",
+      "name": "黄河母亲雕塑",
+      "nameEn": "Yellow River Mother Sculpture",
+      "category": "landmark",
+      "description": "黄河岸边标志性雕塑，长6米、高2.6米。",
+      "address": "兰州市七里河区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "黄河文化",
+        "雕塑艺术"
+      ],
+      "tips": "兰州必打卡。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuquan-mountain",
+      "name": "五泉山公园",
+      "nameEn": "Wuquan Mountain Park",
+      "category": "park",
+      "description": "因五眼清泉得名，有2000多年历史。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "五眼泉",
+        "古建筑"
+      ],
+      "tips": "兰州人休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xiguan-mosque",
+      "name": "西关清真大寺",
+      "nameEn": "Xiguan Grand Mosque",
+      "category": "temple",
+      "description": "兰州最大的清真寺，融合中阿建筑风格。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "伊斯兰建筑",
+        "宗教文化"
+      ],
+      "tips": "注意尊重宗教习俗。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanshan-mountain",
+      "name": "南山公园",
+      "nameEn": "Nanshan Park",
+      "category": "park",
+      "description": "兰州南部的绿色屏障，可俯瞰城市全景。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.85
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "城市全景",
+        "森林"
+      ],
+      "tips": "登高望远好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "iron-bridge",
+      "name": "兰州黄河铁桥",
+      "nameEn": "Lanzhou Yellow River Iron Bridge",
+      "category": "landmark",
+      "description": "黄河上最早的铁桥，由德国人建造，已有百年历史。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "百年铁桥",
+        "黄河风光"
+      ],
+      "tips": "与中山桥同一座桥。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hefei-tan",
+      "name": "河口古镇",
+      "nameEn": "Hekou Ancient Town",
+      "category": "street",
+      "description": "兰州西郊的古镇，保留了明清时期的建筑风格。",
+      "address": "兰州市西固区",
+      "coordinates": {
+        "lat": 36.08,
+        "lng": 103.62
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古镇",
+        "黄河渡口"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "yuzhong-xinglong",
+      "name": "兴隆山",
+      "nameEn": "Xinglong Mountain",
+      "category": "nature",
+      "description": "兰州南部的国家级自然保护区，有云龙桥等景点。",
+      "address": "兰州市榆中县",
+      "coordinates": {
+        "lat": 35.85,
+        "lng": 104.1
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "森林",
+        "云龙桥"
+      ],
+      "tips": "避暑好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-art",
+      "name": "敦煌艺术馆",
+      "nameEn": "Dunhuang Art Museum",
+      "category": "museum",
+      "description": "复制了敦煌莫高窟的经典洞窟，可近距离欣赏壁画。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.83
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "壁画复制",
+        "敦煌文化"
+      ],
+      "tips": "不去敦煌也能看莫高窟。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "lanzhou-noodle-museum",
+      "name": "兰州牛肉面博物馆",
+      "nameEn": "Lanzhou Beef Noodle Museum",
+      "category": "museum",
+      "description": "展示兰州牛肉面的历史和制作工艺。",
+      "address": "兰州市七里河区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.78
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "牛肉面文化",
+        "制作工艺"
+      ],
+      "tips": "看完必吃一碗面。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "baitashan-temple",
+      "name": "白塔寺",
+      "nameEn": "Baita Temple",
+      "category": "temple",
+      "description": "始建于元代，白塔高17米，是兰州最古老的建筑之一。",
+      "address": "兰州市城关区白塔山",
+      "coordinates": {
+        "lat": 36.07,
+        "lng": 103.82
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "白塔",
+        "元代建筑"
+      ],
+      "tips": "与白塔山公园一体。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "yanhe-river",
+      "name": "沿黄河风情线",
+      "nameEn": "Yellow River Style Line",
+      "category": "landmark",
+      "description": "兰州最著名的城市景观带，沿黄河两岸延伸40公里。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "黄河风情",
+        "城市景观"
+      ],
+      "tips": "散步骑行最佳路线。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xinqu",
+      "name": "兰州新区",
+      "nameEn": "Lanzhou New Area",
+      "category": "landmark",
+      "description": "兰州城市新中心，有现代化建筑和商业区。",
+      "address": "兰州市新区",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 103.6
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "现代建筑",
+        "城市新貌"
+      ],
+      "tips": "感受兰州发展。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chengguan-district",
+      "name": "张掖路步行街",
+      "nameEn": "Zhangye Road Pedestrian Street",
+      "category": "street",
+      "description": "兰州最繁华的商业步行街。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "品尝兰州小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "baitashan-forest",
+      "name": "白塔山森林",
+      "nameEn": "Baitashan Forest",
+      "category": "nature",
+      "description": "兰州城内的天然氧吧，森林覆盖率高。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.07,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "森林",
+        "氧吧"
+      ],
+      "tips": "城市中的绿肺。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "kongtong-mountain",
+      "name": "仁寿山",
+      "nameEn": "Renshou Mountain",
+      "category": "nature",
+      "description": "兰州北部的风景区，有明代古建筑群。",
+      "address": "兰州市安宁区",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 103.72
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古建筑",
+        "山林风光"
+      ],
+      "tips": "春季桃花最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "anning-district",
+      "name": "安宁桃花会",
+      "nameEn": "Anning Peach Blossom Festival",
+      "category": "nature",
+      "description": "每年4月举办，万亩桃花盛开，是兰州春天最美景色。",
+      "address": "兰州市安宁区",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 103.72
+      },
+      "openingHours": "4月",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "桃花",
+        "春天美景"
+      ],
+      "tips": "4月中旬最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

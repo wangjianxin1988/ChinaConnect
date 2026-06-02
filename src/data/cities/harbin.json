@@ -580,6 +580,890 @@
       ],
       "tips": "Learn about city's history. Combine with Central Avenue visit.",
       "image": "https://images.unsplash.com/photo-1567431333733-547f60aac3c2?w=800"
+    },
+    {
+      "id": "jile-temple",
+      "name": "极乐寺",
+      "nameEn": "Jile Temple",
+      "category": "temple",
+      "description": "哈尔滨最大的佛教寺院，建于1924年，建筑宏伟壮观，是哈尔滨重要的宗教文化场所，冬季白雪覆盖更显庄严神圣。",
+      "address": "哈尔滨市南岗区东大直街9号",
+      "coordinates": {
+        "lat": 45.7582,
+        "lng": 126.6822
+      },
+      "openingHours": "08:00-16:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "千年古刹",
+        "佛教文化",
+        "建筑艺术",
+        "冬季雪景"
+      ],
+      "tips": "农历初一十五有法会，寺内有素食餐厅，冬天可以体验雪中古刹的意境。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "siberian-tiger-park",
+      "name": "东北虎林园",
+      "nameEn": "Siberian Tiger Park",
+      "category": "nature",
+      "description": "世界最大的东北虎繁育基地，可近距离观赏东北虎、白虎等多种珍稀动物，体验与猛兽近距离接触的刺激与震撼。",
+      "address": "哈尔滨市松北区松北街88号",
+      "coordinates": {
+        "lat": 45.8122,
+        "lng": 126.5522
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "东北虎近距离观赏",
+        "白虎",
+        "狮虎兽",
+        "野生动物保护"
+      ],
+      "tips": "建议乘坐园内观光车，冬季游客较少体验更好，不要把手伸出车外。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "russian-style-town",
+      "name": "俄罗斯风情小镇",
+      "nameEn": "Russian Style Town",
+      "category": "street",
+      "description": "以俄罗斯文化为主题的特色街区，汇集俄式建筑、俄罗斯商品店和特色餐饮，仿佛置身俄罗斯小镇之中。",
+      "address": "哈尔滨市松北区太阳岛风景区",
+      "coordinates": {
+        "lat": 45.7922,
+        "lng": 126.5722
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "俄式木屋建筑",
+        "俄罗斯套娃",
+        "俄式面包房",
+        "文化表演"
+      ],
+      "tips": "可以购买正宗俄罗斯工艺品，冬天有冰雕展，夏天花园很美。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "harbin-confucian-temple",
+      "name": "哈尔滨文庙",
+      "nameEn": "Harbin Confucian Temple",
+      "category": "temple",
+      "description": "东北地区最大的孔庙建筑群，建于1926年，保存完好的古建筑群落，是哈尔滨重要的文化遗产和儒学圣地。",
+      "address": "哈尔滨市南岗区文庙街25号",
+      "coordinates": {
+        "lat": 45.7382,
+        "lng": 126.6522
+      },
+      "openingHours": "08:30-16:30",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "孔庙建筑群",
+        "儒家文化",
+        "古建筑艺术",
+        "碑林"
+      ],
+      "tips": "每年9月有祭孔大典，建筑保存完好适合摄影，冬季人少清静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "annunciation-cathedral",
+      "name": "圣母领报大教堂",
+      "nameEn": "Annunciation Cathedral",
+      "category": "temple",
+      "description": "哈尔滨最古老的东正教堂之一，拜占庭式建筑风格，洋葱形穹顶是哈尔滨天际线的标志之一，内部壁画精美。",
+      "address": "哈尔滨市南岗区士课街111号",
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 126.6422
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "拜占庭建筑",
+        "洋葱形穹顶",
+        "宗教壁画",
+        "历史建筑"
+      ],
+      "tips": "外观宏伟适合摄影，内部有时举办音乐会，注意尊重宗教场所。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "harbin-contemporary-art",
+      "name": "哈尔滨当代艺术馆",
+      "nameEn": "Harbin Contemporary Art Museum",
+      "category": "museum",
+      "description": "展示当代艺术作品的专业美术馆，定期举办国内外艺术展览，是哈尔滨艺术爱好者的重要活动场所。",
+      "address": "哈尔滨市南岗区红军街57号",
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 126.6222
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "当代艺术展",
+        "装置艺术",
+        "油画雕塑",
+        "艺术讲座"
+      ],
+      "tips": "经常有新的展览，关注公众号获取最新展讯，可以参加艺术讲座。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "northeast-martyrs-memorial",
+      "name": "东北烈士纪念馆",
+      "nameEn": "Northeast Martyrs Memorial Hall",
+      "category": "museum",
+      "description": "纪念东北抗日战争和解放战争中牺牲的烈士，馆内有大量珍贵历史资料和文物，是爱国主义教育基地。",
+      "address": "哈尔滨市南岗区一曼街241号",
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 126.6322
+      },
+      "openingHours": "09:00-16:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "抗日历史",
+        "烈士事迹",
+        "历史文物",
+        "爱国主义教育"
+      ],
+      "tips": "可以了解东北抗日历史，建筑本身也是历史文物，免费参观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "gogol-street",
+      "name": "果戈里大街",
+      "nameEn": "Gogol Street",
+      "category": "street",
+      "description": "以俄罗斯作家果戈里命名的商业街，两旁有众多俄式建筑，是哈尔滨俄罗斯风情的重要展示街区。",
+      "address": "哈尔滨市南岗区果戈里大街",
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 126.6322
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "俄式建筑",
+        "特色商铺",
+        "历史街区",
+        "文化氛围"
+      ],
+      "tips": "可以买到正宗俄罗斯商品，秋天梧桐叶很美，有时间可以逛逛附近的教堂。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "daowai-baroque",
+      "name": "道外巴洛克建筑群",
+      "nameEn": "Daowai Baroque Architecture Complex",
+      "category": "landmark",
+      "description": "中国最大的巴洛克建筑群，融合了中西建筑风格，是哈尔滨近代历史的重要见证，被誉为东方小巴黎缩影。",
+      "address": "哈尔滨市道外区南二道街",
+      "coordinates": {
+        "lat": 45.7722,
+        "lng": 126.6522
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "巴洛克建筑",
+        "中西合璧",
+        "历史街区",
+        "老道外风情"
+      ],
+      "tips": "建议请导游讲解建筑历史，冬天可以品尝附近的老字号小吃。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "jihong-bridge",
+      "name": "霁虹桥",
+      "nameEn": "Jihong Bridge",
+      "category": "landmark",
+      "description": "哈尔滨标志性建筑之一，建于1926年，欧式风格桥梁，连接道里区和南岗区，是哈尔滨百年历史的见证者。",
+      "address": "哈尔滨市道里区霁虹街",
+      "coordinates": {
+        "lat": 45.7622,
+        "lng": 126.6122
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "欧式桥梁",
+        "历史地标",
+        "城市记忆",
+        "摄影点"
+      ],
+      "tips": "夜晚灯光璀璨非常漂亮，桥附近有很多历史建筑可以一起游览。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "yaobuli-ski-resort",
+      "name": "亚布力滑雪场",
+      "nameEn": "Yabuli Ski Resort",
+      "category": "nature",
+      "description": "中国最大的综合性滑雪场，曾举办过亚冬会等国际赛事，拥有各级别雪道，是滑雪爱好者的天堂。",
+      "address": "哈尔滨市尚志市亚布力镇",
+      "coordinates": {
+        "lat": 44.7822,
+        "lng": 128.5222
+      },
+      "openingHours": "08:00-16:30（冬季）",
+      "ticketPrice": "200-400元",
+      "recommendedVisitTime": "1-2天",
+      "highlights": [
+        "国际级雪道",
+        "高山滑雪",
+        "雪上运动",
+        "度假村"
+      ],
+      "tips": "建议提前预约教练，旺季酒店要早订，初学者选择初级雪道。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "zhaolin-ice-lantern",
+      "name": "兆麟公园冰灯游园会",
+      "nameEn": "Zhaolin Park Ice Lantern Festival",
+      "category": "nature",
+      "description": "哈尔滨最早的冰灯展览场地，每年冬季举办冰灯游园会，冰灯晶莹剔透，是哈尔滨冬季传统经典活动。",
+      "address": "哈尔滨市道里区兆麟街",
+      "coordinates": {
+        "lat": 45.7722,
+        "lng": 126.6222
+      },
+      "openingHours": "17:00-21:00（冬季）",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "冰灯艺术",
+        "传统冰灯",
+        "夜间景观",
+        "冬季活动"
+      ],
+      "tips": "晚上看冰灯效果最好，拍照很美，穿暖和点。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "harbin-normal-night-market",
+      "name": "师大夜市",
+      "nameEn": "Harbin Normal University Night Market",
+      "category": "market",
+      "description": "哈尔滨最著名的夜市之一，汇集各种东北小吃和特色美食，是体验哈尔滨夜生活和美食文化的绝佳去处。",
+      "address": "哈尔滨市南岗区和兴路附近",
+      "coordinates": {
+        "lat": 45.7322,
+        "lng": 126.6522
+      },
+      "openingHours": "17:00-23:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "东北小吃",
+        "烤冷面",
+        "锅包肉",
+        "红肠"
+      ],
+      "tips": "冬天也照常营业，烤冷面和锅包肉必吃，注意保管好个人物品。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "harbin-northern-forest-zoo",
+      "name": "北方森林动物园",
+      "nameEn": "Harbin Northern Forest Zoo",
+      "category": "nature",
+      "description": "中国最大的森林动物园之一，动物在自然环境中生活，可以近距离接触各种东北和寒带珍稀动物。",
+      "address": "哈尔滨市阿城区鸽子洞地区",
+      "coordinates": {
+        "lat": 45.5222,
+        "lng": 126.9822
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "80元",
+      "recommendedVisitTime": "4-5小时",
+      "highlights": [
+        "森林环境",
+        "东北虎",
+        "棕熊",
+        "丹顶鹤"
+      ],
+      "tips": "园区很大建议乘坐观光车，夏天去最好，动物比较活跃。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "harbin-heilongjiang-forest-museum",
+      "name": "中国(哈尔滨)森林博物馆",
+      "nameEn": "China Forest Museum",
+      "category": "museum",
+      "description": "国内首家以森林为主题的国家级博物馆，展示森林生态、林业历史和森林文化，科普教育意义重大。",
+      "address": "哈尔滨市香坊区和兴路26号",
+      "coordinates": {
+        "lat": 45.7222,
+        "lng": 126.6422
+      },
+      "openingHours": "09:00-16:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "森林生态",
+        "林业历史",
+        "互动体验",
+        "科普教育"
+      ],
+      "tips": "适合带孩子来了解森林知识，展品丰富有趣，免费参观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "harbin-erdogang",
+      "name": "哈尔滨关道衙门",
+      "nameEn": "Harbin Customs Office Historic Site",
+      "category": "museum",
+      "description": "清政府在哈尔滨设立的海关道台衙门旧址，展示了哈尔滨近代行政历史，是了解城市发展史的重要窗口。",
+      "address": "哈尔滨市道外区北十八道街",
+      "coordinates": {
+        "lat": 45.7822,
+        "lng": 126.6422
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "清代衙门",
+        "行政历史",
+        "古建筑",
+        "文化展览"
+      ],
+      "tips": "了解哈尔滨近代行政历史的好去处，建筑保存完好，免费参观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "harbin-dongbei-forestry-university",
+      "name": "东北林业大学校园",
+      "nameEn": "Northeast Forestry University Campus",
+      "category": "park",
+      "description": "著名高等学府，校园内有大量俄式建筑，冬季校园雪景如画，秋季银杏大道金黄灿烂，是感受学术氛围的好去处。",
+      "address": "哈尔滨市香坊区和兴路26号",
+      "coordinates": {
+        "lat": 45.7222,
+        "lng": 126.6422
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "俄式校园建筑",
+        "银杏大道",
+        "冬季雪景",
+        "学术氛围"
+      ],
+      "tips": "秋季银杏大道和冬季雪景最值得一看，校园内有学生讲解服务。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "harbin-taiping-lake",
+      "name": "太平湖",
+      "nameEn": "Taiping Lake",
+      "category": "nature",
+      "description": "哈尔滨市郊的天然湖泊，夏季碧波荡漾，冬季结冰后成为天然冰场，是市民休闲娱乐和亲近自然的好去处。",
+      "address": "哈尔滨市道里区太平镇",
+      "coordinates": {
+        "lat": 45.6222,
+        "lng": 126.4822
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "湖光山色",
+        "冬季冰场",
+        "垂钓",
+        "观鸟"
+      ],
+      "tips": "夏天适合野餐垂钓，冬天可以体验冰上活动，注意安全。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "harbin-erlongshan",
+      "name": "二龙山风景区",
+      "nameEn": "Erlong Mountain Scenic Area",
+      "category": "nature",
+      "description": "哈尔滨市郊的著名风景区，有山有水，四季景色各异，是哈尔滨市民周末出游的热门目的地。",
+      "address": "哈尔滨市宾县",
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 127.4822
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山水风光",
+        "龙珠塔",
+        "滑雪场",
+        "森林浴"
+      ],
+      "tips": "秋天红叶很美，冬天有滑雪场，夏天可以避暑。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "harbin-hongbo-square",
+      "name": "红博广场",
+      "nameEn": "Hongbo Square",
+      "category": "landmark",
+      "description": "哈尔滨市中心的标志性广场，周围有多座历史建筑，是市民休闲和城市文化活动的重要场所。",
+      "address": "哈尔滨市南岗区红军街",
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 126.6322
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟-1小时",
+      "highlights": [
+        "城市广场",
+        "历史建筑",
+        "市民休闲",
+        "文化活动"
+      ],
+      "tips": "夜晚灯光很漂亮，附近有购物中心和餐厅，可以一起逛。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "harbin-ice-snow-entertainment-world",
+      "name": "冰雪欢乐谷",
+      "nameEn": "Ice and Snow Happy Valley",
+      "category": "nature",
+      "description": "大型冰雪主题乐园，拥有各种冰上娱乐项目，包括冰滑梯、冰上碰碰车等，是冬季家庭游玩的绝佳去处。",
+      "address": "哈尔滨市松北区冰雪大世界附近",
+      "coordinates": {
+        "lat": 45.7922,
+        "lng": 126.5322
+      },
+      "openingHours": "10:00-21:00（冬季）",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "冰滑梯",
+        "冰上碰碰车",
+        "雪地摩托",
+        "冰雕体验"
+      ],
+      "tips": "适合亲子游玩，穿好保暖衣物，冰上项目注意安全。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "harbin-manchurian-railway-museum",
+      "name": "中东铁路印象馆",
+      "nameEn": "Chinese Eastern Railway Museum",
+      "category": "museum",
+      "description": "展示中东铁路历史的专题博物馆，通过实物、图片和文献资料，再现了哈尔滨近代历史的重要篇章。",
+      "address": "哈尔滨市南岗区西大直街51号",
+      "coordinates": {
+        "lat": 45.7522,
+        "lng": 126.6122
+      },
+      "openingHours": "09:00-16:30（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "中东铁路历史",
+        "俄式建筑",
+        "历史文物",
+        "哈尔滨发展史"
+      ],
+      "tips": "了解哈尔滨历史的好去处，建筑本身就是历史文物，免费参观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "harbin-red-square-art",
+      "name": "红场美术馆",
+      "nameEn": "Red Square Art Museum",
+      "category": "museum",
+      "description": "位于哈尔滨的俄罗斯风格美术馆，经常举办中俄艺术交流展览，是了解中俄文化艺术交流的重要窗口。",
+      "address": "哈尔滨市道里区中央大街附近",
+      "coordinates": {
+        "lat": 45.7722,
+        "lng": 126.6222
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "中俄艺术",
+        "油画展览",
+        "文化交流",
+        "俄式建筑"
+      ],
+      "tips": "经常有新的展览，适合艺术爱好者，建筑本身也很有特色。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "harbin-xiangfang-park",
+      "name": "香坊公园",
+      "nameEn": "Xiangfang Park",
+      "category": "park",
+      "description": "哈尔滨东部的大型城市公园，绿化覆盖率高，有湖泊和各种休闲设施，是当地居民日常休闲的好去处。",
+      "address": "哈尔滨市香坊区红旗大街",
+      "coordinates": {
+        "lat": 45.7122,
+        "lng": 126.6822
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "城市绿地",
+        "湖泊",
+        "健身设施",
+        "市民休闲"
+      ],
+      "tips": "适合晨练和散步，环境清幽，冬天湖面结冰可以滑冰。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "harbin-yabuli-forest",
+      "name": "亚布力森林小火车",
+      "nameEn": "Yabuli Forest Train",
+      "category": "nature",
+      "description": "乘坐复古森林小火车穿越原始森林，沿途欣赏林海雪原风光，是亚布力滑雪度假区的经典体验项目。",
+      "address": "哈尔滨市尚志市亚布力镇",
+      "coordinates": {
+        "lat": 44.7922,
+        "lng": 128.5322
+      },
+      "openingHours": "08:00-16:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "森林小火车",
+        "原始森林",
+        "林海雪原",
+        "复古体验"
+      ],
+      "tips": "冬天雪景最美，可以和滑雪一起安排，建议上午乘坐光线好。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "harbin-wanda-indoor",
+      "name": "哈尔滨万达室内主题乐园",
+      "nameEn": "Harbin Wanda Indoor Theme Park",
+      "category": "park",
+      "description": "大型室内主题乐园，拥有多种游乐设施和表演，是冬季室内娱乐的好选择，不受严寒天气影响，适合全家游玩。",
+      "address": "哈尔滨市松北区世茂大道99号",
+      "coordinates": {
+        "lat": 45.8222,
+        "lng": 126.5822
+      },
+      "openingHours": "09:30-21:00",
+      "ticketPrice": "218元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "室内过山车",
+        "4D影院",
+        "主题表演",
+        "亲子游乐"
+      ],
+      "tips": "冬季推荐室内游玩，提前在网上购票有优惠，周末人多建议工作日前往。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "sophia-cathedral",
+      "name": "圣索菲亚大教堂",
+      "nameEn": "Saint Sophia Cathedral",
+      "category": "landmark",
+      "description": "远东最大的东正教堂，建于1907年，拜占庭式建筑风格，绿色洋葱头穹顶是哈尔滨的标志。",
+      "address": "哈尔滨市道里区透笼街88号",
+      "coordinates": {
+        "lat": 45.7736,
+        "lng": 126.6247
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "拜占庭穹顶",
+        "哈尔滨建筑艺术馆",
+        "广场鸽子"
+      ],
+      "tips": "夜景灯光很美，建议傍晚前往。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "central-street",
+      "name": "中央大街",
+      "nameEn": "Central Street",
+      "category": "street",
+      "description": "亚洲最长的步行街，全长1450米，铺满面包石，两侧汇集欧式建筑71栋。",
+      "address": "哈尔滨市道里区中央大街",
+      "coordinates": {
+        "lat": 45.7736,
+        "lng": 126.6181
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "面包石路面",
+        "欧式建筑群",
+        "马迭尔冰棍"
+      ],
+      "tips": "一定要吃马迭尔冰棍和红肠。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "ice-snow-world",
+      "name": "冰雪大世界",
+      "nameEn": "Ice and Snow World",
+      "category": "landmark",
+      "description": "世界上最大的冰雪主题乐园，每年12月开园，用冰量超20万立方米。",
+      "address": "哈尔滨市松北区太阳岛西侧",
+      "coordinates": {
+        "lat": 45.7917,
+        "lng": 126.55
+      },
+      "openingHours": "11:00-21:30",
+      "ticketPrice": "300元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "巨型冰雕",
+        "冰雪滑梯",
+        "灯光秀"
+      ],
+      "tips": "12月下旬至2月最佳，穿暖和。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "flood-memorial",
+      "name": "防洪纪念塔",
+      "nameEn": "Flood Control Memorial Tower",
+      "category": "landmark",
+      "description": "为纪念1957年哈尔滨人民抗洪胜利而建，塔高22.5米，是松花江畔标志性建筑。",
+      "address": "哈尔滨市道里区中央大街尽头",
+      "coordinates": {
+        "lat": 45.7736,
+        "lng": 126.6125
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "纪念塔",
+        "松花江畔",
+        "斯大林公园"
+      ],
+      "tips": "与中央大街相连，可一起游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "volga-manor",
+      "name": "伏尔加庄园",
+      "nameEn": "Volga Manor",
+      "category": "landmark",
+      "description": "以俄罗斯文化为主题的园林，复建了多座俄式建筑，占地60万平方米。",
+      "address": "哈尔滨市香坊区成高子镇",
+      "coordinates": {
+        "lat": 45.7167,
+        "lng": 126.7333
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "俄式建筑",
+        "伏尔加河畔",
+        "套娃广场"
+      ],
+      "tips": "冬季雪景很美，可体验俄式餐饮。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "harbin-polarland",
+      "name": "哈尔滨极地馆",
+      "nameEn": "Harbin Polarland",
+      "category": "museum",
+      "description": "中国唯一的极地动物表演馆，有白鲸、企鹅、北极熊等极地动物。",
+      "address": "哈尔滨市松北区太阳大道3号",
+      "coordinates": {
+        "lat": 45.7917,
+        "lng": 126.5667
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "200元",
+      "recommendedVisitTime": "3小时",
+      "highlights": [
+        "白鲸表演",
+        "企鹅巡游",
+        "北极熊"
+      ],
+      "tips": "表演时间需提前查看。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "laodaowai",
+      "name": "老道外",
+      "nameEn": "Laodao Wai",
+      "category": "street",
+      "description": "哈尔滨最老的城区，保留了大量中华巴洛克建筑，是哈尔滨历史的缩影。",
+      "address": "哈尔滨市道外区南二道街",
+      "coordinates": {
+        "lat": 45.7833,
+        "lng": 126.65
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "中华巴洛克建筑",
+        "老街巷",
+        "特色小吃"
+      ],
+      "tips": "推荐张包铺、老范记红肠。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "yabuli-ski",
+      "name": "亚布力滑雪场",
+      "nameEn": "Yabuli Ski Resort",
+      "category": "nature",
+      "description": "中国最大的综合性滑雪场，曾举办亚冬会，有46条雪道。",
+      "address": "哈尔滨市尚志市亚布力镇",
+      "coordinates": {
+        "lat": 44.7833,
+        "lng": 128.5
+      },
+      "openingHours": "08:00-16:30",
+      "ticketPrice": "380元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "专业雪道",
+        "雪上娱乐",
+        "度假村"
+      ],
+      "tips": "11月至次年3月最佳，需提前预约。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "heilongjiang-museum",
+      "name": "黑龙江省博物馆",
+      "nameEn": "Heilongjiang Provincial Museum",
+      "category": "museum",
+      "description": "综合性博物馆，馆藏文物10万余件，展示了黑龙江的历史和自然。",
+      "address": "哈尔滨市南岗区红军街50号",
+      "coordinates": {
+        "lat": 45.75,
+        "lng": 126.6333
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "历史文物",
+        "自然标本",
+        "临时展览"
+      ],
+      "tips": "周一闭馆。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "stalin-park",
+      "name": "斯大林公园",
+      "nameEn": "Stalin Park",
+      "category": "park",
+      "description": "松花江南岸的带状公园，全长1750米，是市民休闲的好去处。",
+      "address": "哈尔滨市道里区斯大林街",
+      "coordinates": {
+        "lat": 45.7736,
+        "lng": 126.6125
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "松花江畔",
+        "防洪纪念塔",
+        "俄式建筑"
+      ],
+      "tips": "与中央大街相连。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "harbin-zoo",
+      "name": "哈尔滨北方森林动物园",
+      "nameEn": "Harbin Northern Forest Zoo",
+      "category": "nature",
+      "description": "中国最大的森林动物园之一，占地558公顷，有300多种动物。",
+      "address": "哈尔滨市阿城区鸽子洞地区",
+      "coordinates": {
+        "lat": 45.55,
+        "lng": 126.95
+      },
+      "openingHours": "08:30-16:30",
+      "ticketPrice": "80元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "东北虎",
+        "森林环境",
+        "动物表演"
+      ],
+      "tips": "园区很大，建议坐观光车。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "unit731",
+      "name": "侵华日军第七三一部队罪证陈列馆",
+      "nameEn": "Museum of Evidence of War Crimes by Unit 731",
+      "category": "museum",
+      "description": "展示日本731部队进行细菌战和人体实验的罪证，是重要的爱国主义教育基地。",
+      "address": "哈尔滨市平房区新疆大街47号",
+      "coordinates": {
+        "lat": 45.6167,
+        "lng": 126.6333
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "罪证展览",
+        "遗址",
+        "历史教育"
+      ],
+      "tips": "内容沉重，做好心理准备。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "harbin-opera",
+      "name": "哈尔滨大剧院",
+      "nameEn": "Harbin Grand Theatre",
+      "category": "landmark",
+      "description": "由MAD建筑事务所设计，外形如雪山，是哈尔滨文化新地标。",
+      "address": "哈尔滨市松北区文化中心岛",
+      "coordinates": {
+        "lat": 45.7972,
+        "lng": 126.5583
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "参观免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "雪山造型",
+        "建筑艺术",
+        "演出"
+      ],
+      "tips": "夜景灯光很美，可看演出。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

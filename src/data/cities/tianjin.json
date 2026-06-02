@@ -582,6 +582,575 @@
       ],
       "tips": "Learn about local hero. Combine with Huangyaguan Great Wall trip.",
       "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800"
+    },
+    {
+      "id": "italian-quarter",
+      "name": "意式风情区",
+      "nameEn": "Italian Style District",
+      "category": "street",
+      "description": "中国唯一的意大利风情建筑群，保存了100余栋意式建筑，梁启超等名人故居在此。",
+      "address": "天津市河北区自由道",
+      "coordinates": {
+        "lat": 39.1333,
+        "lng": 117.2
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "意式建筑",
+        "名人故居",
+        "咖啡街"
+      ],
+      "tips": "傍晚最有氛围，适合拍照。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "five-avenues",
+      "name": "五大道",
+      "nameEn": "Five Great Avenues",
+      "category": "street",
+      "description": "中国保存最完整的洋楼建筑群，有2000余栋欧式建筑，被称为万国建筑博览会。",
+      "address": "天津市和平区",
+      "coordinates": {
+        "lat": 39.1167,
+        "lng": 117.2
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "洋楼建筑",
+        "名人故居",
+        "马车游览"
+      ],
+      "tips": "骑马车或租自行车游览最佳。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "porcelain-house",
+      "name": "瓷房子",
+      "nameEn": "Porcelain House",
+      "category": "landmark",
+      "description": "用4亿多片古瓷片装饰的法式建筑，被誉为全球最疯狂的建筑之一。",
+      "address": "天津市和平区赤峰道72号",
+      "coordinates": {
+        "lat": 39.1167,
+        "lng": 117.2083
+      },
+      "openingHours": "09:00-19:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "瓷片装饰",
+        "法式建筑",
+        "艺术品"
+      ],
+      "tips": "拍照很出片，内部收藏丰富。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tianjin-museum",
+      "name": "天津博物馆",
+      "nameEn": "Tianjin Museum",
+      "category": "museum",
+      "description": "综合性博物馆，馆藏20万件文物，以甲骨文和瓷器收藏著称。",
+      "address": "天津市河西区平江道62号",
+      "coordinates": {
+        "lat": 39.0833,
+        "lng": 117.2167
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "甲骨文",
+        "瓷器",
+        "书画"
+      ],
+      "tips": "周一闭馆。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hahyuan",
+      "name": "天津海昌极地海洋世界",
+      "nameEn": "Tianjin Haichang Polar Ocean World",
+      "category": "museum",
+      "description": "华北地区最大的极地海洋馆，有白鲸、海豚、企鹅等极地动物。",
+      "address": "天津市滨海新区响螺湾商务区",
+      "coordinates": {
+        "lat": 39.0167,
+        "lng": 117.7
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "160元",
+      "recommendedVisitTime": "3小时",
+      "highlights": [
+        "白鲸表演",
+        "海底隧道",
+        "企鹅馆"
+      ],
+      "tips": "周末人多，建议工作日去。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tianjin-food-street",
+      "name": "南市食品街",
+      "nameEn": "Nanshi Food Street",
+      "category": "street",
+      "description": "天津最大的美食集中地，汇集了狗不理包子、耳朵眼炸糕等天津名小吃。",
+      "address": "天津市和平区南市",
+      "coordinates": {
+        "lat": 39.1167,
+        "lng": 117.1833
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "狗不理包子",
+        "耳朵眼炸糕",
+        "煎饼果子"
+      ],
+      "tips": "早上去吃煎饼果子最正宗。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "tianjin-radio",
+      "name": "天津广播电视塔",
+      "nameEn": "Tianjin Radio and TV Tower",
+      "category": "landmark",
+      "description": "高415.2米，是天津的地标建筑之一，塔上有旋转餐厅和观光层。",
+      "address": "天津市河西区卫津南路1号",
+      "coordinates": {
+        "lat": 39.0833,
+        "lng": 117.1667
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "城市全景",
+        "旋转餐厅",
+        "天塔旋云"
+      ],
+      "tips": "天气好时视野可达70公里。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dabeiyuan",
+      "name": "大悲禅院",
+      "nameEn": "Dabei Temple",
+      "category": "temple",
+      "description": "天津最大的佛教寺院，始建于清初，寺内有释迦牟尼佛真身舍利。",
+      "address": "天津市河北区天纬路40号",
+      "coordinates": {
+        "lat": 39.15,
+        "lng": 117.1833
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化",
+        "舍利",
+        "古建筑"
+      ],
+      "tips": "农历初一十五有法会。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "binjiang-road",
+      "name": "滨江道",
+      "nameEn": "Binjiang Road",
+      "category": "street",
+      "description": "天津最繁华的商业街，全长2094米，汇集各大商场和品牌。",
+      "address": "天津市和平区滨江道",
+      "coordinates": {
+        "lat": 39.1167,
+        "lng": 117.2
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "商业街",
+        "购物",
+        "美食"
+      ],
+      "tips": "与和平路步行街相连。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "tianjin-zoo",
+      "name": "天津动物园",
+      "nameEn": "Tianjin Zoo",
+      "category": "nature",
+      "description": "华北地区最大的动物园之一，有300多种动物，大熊猫馆最受欢迎。",
+      "address": "天津市南开区水上公园东路",
+      "coordinates": {
+        "lat": 39.0833,
+        "lng": 117.15
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "大熊猫",
+        "海洋馆",
+        "儿童乐园"
+      ],
+      "tips": "与水上公园相邻。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "water-park",
+      "name": "水上公园",
+      "nameEn": "Water Park",
+      "category": "park",
+      "description": "天津最大的公园，面积164公顷，以湖泊和园林著称。",
+      "address": "天津市南开区水上公园路",
+      "coordinates": {
+        "lat": 39.0833,
+        "lng": 117.15
+      },
+      "openingHours": "06:00-21:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "湖泊",
+        "园林",
+        "荷花"
+      ],
+      "tips": "夏季荷花盛开最美。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "yangliuqing",
+      "name": "杨柳青古镇",
+      "nameEn": "Yangliuqing Ancient Town",
+      "category": "street",
+      "description": "中国年画之乡，杨柳青年画是中国四大木版年画之一。",
+      "address": "天津市西青区杨柳青镇",
+      "coordinates": {
+        "lat": 39.1333,
+        "lng": 117.0
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "杨柳青年画",
+        "石家大院",
+        "古镇风情"
+      ],
+      "tips": "春节前最热闹。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "shijia-dayuan",
+      "name": "石家大院",
+      "nameEn": "Shi Family Courtyard",
+      "category": "landmark",
+      "description": "清末民初建筑，华北第一宅，有156间房屋，展示了天津商贾文化。",
+      "address": "天津市西青区杨柳青镇",
+      "coordinates": {
+        "lat": 39.1333,
+        "lng": 117.0
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "27元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "清代建筑",
+        "砖雕",
+        "商贾文化"
+      ],
+      "tips": "与杨柳青古镇一起游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tianjin-forest-zoo",
+      "name": "天津森林动物园",
+      "nameEn": "Tianjin Forest Zoo",
+      "category": "nature",
+      "description": "位于滨海新区，以散养方式展示动物，占地5000亩。",
+      "address": "天津市滨海新区",
+      "coordinates": {
+        "lat": 39.0167,
+        "lng": 117.65
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "散养动物",
+        "猛兽区",
+        "亲子游"
+      ],
+      "tips": "自驾游览最方便。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "tianjin-grand-theatre",
+      "name": "天津大剧院",
+      "nameEn": "Tianjin Grand Theatre",
+      "category": "landmark",
+      "description": "天津文化中心核心建筑，设计灵感来自湖中之石，是天津文化新地标。",
+      "address": "天津市河西区平江道",
+      "coordinates": {
+        "lat": 39.0833,
+        "lng": 117.2167
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "参观免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "现代建筑",
+        "演出",
+        "文化中心"
+      ],
+      "tips": "可看演出，建筑本身也值得参观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "panpan-temple",
+      "name": "盘山风景区",
+      "nameEn": "Panshan Scenic Area",
+      "category": "nature",
+      "description": "天津后花园，有京东第一山之称，集自然风光和佛教文化于一体。",
+      "address": "天津市蓟州区官庄镇",
+      "coordinates": {
+        "lat": 40.0167,
+        "lng": 117.35
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "78元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "三盘暮雨",
+        "天成寺",
+        "万松寺"
+      ],
+      "tips": "秋季红叶最美。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "bicycle-museum",
+      "name": "天津自行车博物馆",
+      "nameEn": "Tianjin Bicycle Museum",
+      "category": "museum",
+      "description": "中国唯一的自行车专题博物馆，展示了自行车200年发展历史。",
+      "address": "天津市武清区",
+      "coordinates": {
+        "lat": 39.3667,
+        "lng": 117.05
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古董自行车",
+        "自行车历史",
+        "互动体验"
+      ],
+      "tips": "飞鸽自行车是天津骄傲。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinmen-bridge",
+      "name": "金汤桥",
+      "nameEn": "Jintang Bridge",
+      "category": "landmark",
+      "description": "天津解放会师地，始建于1906年，是天津现存最早的开启式铁桥。",
+      "address": "天津市河北区",
+      "coordinates": {
+        "lat": 39.1417,
+        "lng": 117.1833
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "开启式铁桥",
+        "历史意义"
+      ],
+      "tips": "与海河游船结合游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wanghailou",
+      "name": "望海楼教堂",
+      "nameEn": "Wanghailou Cathedral",
+      "category": "landmark",
+      "description": "中国近代史上著名的教堂，1869年建成，哥特式建筑风格。",
+      "address": "天津市河北区狮子林大街292号",
+      "coordinates": {
+        "lat": 39.1417,
+        "lng": 117.1833
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "哥特式建筑",
+        "历史事件"
+      ],
+      "tips": "天津教案发生地。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tianjin-planetarium",
+      "name": "天津科技馆",
+      "nameEn": "Tianjin Science and Technology Museum",
+      "category": "museum",
+      "description": "华北地区最大的科技馆，有400多件互动展品。",
+      "address": "天津市河西区隆昌路94号",
+      "coordinates": {
+        "lat": 39.0833,
+        "lng": 117.2
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "互动展品",
+        "天文馆",
+        "儿童科普"
+      ],
+      "tips": "带孩子的好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nankai-university",
+      "name": "南开大学",
+      "nameEn": "Nankai University",
+      "category": "landmark",
+      "description": "中国著名高等学府，周恩来总理母校，校园环境优美。",
+      "address": "天津市南开区卫津路94号",
+      "coordinates": {
+        "lat": 39.1,
+        "lng": 117.15
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "百年名校",
+        "周恩来纪念馆",
+        "校园风光"
+      ],
+      "tips": "可参观主楼和总理纪念馆。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tianjin-university",
+      "name": "天津大学",
+      "nameEn": "Tianjin University",
+      "category": "landmark",
+      "description": "中国第一所现代大学，始建于1895年，前身为北洋大学。",
+      "address": "天津市南开区卫津路92号",
+      "coordinates": {
+        "lat": 39.1,
+        "lng": 117.15
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "北洋大学堂",
+        "校园建筑",
+        "历史底蕴"
+      ],
+      "tips": "与南开大学相邻。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "dagukou",
+      "name": "大沽口炮台",
+      "nameEn": "Dagu Fort",
+      "category": "landmark",
+      "description": "中国近代史上重要的海防要塞，见证了鸦片战争和八国联军侵华。",
+      "address": "天津市滨海新区大沽口",
+      "coordinates": {
+        "lat": 38.9667,
+        "lng": 117.7167
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "海防要塞",
+        "历史遗迹"
+      ],
+      "tips": "爱国主义教育基地。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "binhai-library",
+      "name": "滨海图书馆",
+      "nameEn": "Binhai Library",
+      "category": "landmark",
+      "description": "由MVRDV设计，内部有34层白色阶梯式书架，被称为最美图书馆。",
+      "address": "天津市滨海新区中心图书馆",
+      "coordinates": {
+        "lat": 39.0167,
+        "lng": 117.7
+      },
+      "openingHours": "10:00-21:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "网红图书馆",
+        "球形报告厅",
+        "建筑设计"
+      ],
+      "tips": "拍照很出片。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tianjin-wetland",
+      "name": "天津七里海湿地",
+      "nameEn": "Qilihai Wetland",
+      "category": "nature",
+      "description": "中国最大的古海岸与湿地国家级自然保护区，面积95平方公里。",
+      "address": "天津市宁河区",
+      "coordinates": {
+        "lat": 39.3333,
+        "lng": 117.5
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "湿地风光",
+        "候鸟",
+        "芦苇荡"
+      ],
+      "tips": "秋季观鸟最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tianjin-teahouse",
+      "name": "名流茶馆",
+      "nameEn": "Mingliu Teahouse",
+      "category": "street",
+      "description": "天津最有名的相声茶馆，可体验天津传统曲艺文化。",
+      "address": "天津市和平区新华路177号",
+      "coordinates": {
+        "lat": 39.1167,
+        "lng": 117.2
+      },
+      "openingHours": "14:00-22:00",
+      "ticketPrice": "80元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "相声",
+        "天津曲艺",
+        "茶文化"
+      ],
+      "tips": "提前预约，晚场最精彩。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
