@@ -536,6 +536,610 @@
         "Ancient pine forests"
       ],
       "tips": "Stay in Arxan town overnight. Early entry recommended. The hot springs are excellent after hiking. Combined ticket is good value."
+    },
+    {
+      "id": "erhai-lake",
+      "name": "呼伦湖",
+      "nameEn": "Hulun Lake",
+      "category": "nature",
+      "description": "中国第五大淡水湖，面积2339平方公里，蒙古语意为海一样的湖。",
+      "address": "呼伦贝尔市新巴尔虎右旗",
+      "coordinates": {
+        "lat": 48.9,
+        "lng": 117.4
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "湖光山色",
+        "候鸟",
+        "日落"
+      ],
+      "tips": "夏季最佳，可品尝全鱼宴。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "ergun-wetland",
+      "name": "额尔古纳湿地",
+      "nameEn": "Ergun Wetland",
+      "category": "nature",
+      "description": "亚洲第一湿地，面积12.6万公顷，被誉为亚洲之肾。",
+      "address": "额尔古纳市",
+      "coordinates": {
+        "lat": 50.2,
+        "lng": 120.2
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "65元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "湿地风光",
+        "白桦林",
+        "日落"
+      ],
+      "tips": "秋季最美，色彩斑斓。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "moerdaoga-forest",
+      "name": "莫尔道嘎国家森林公园",
+      "nameEn": "Moerdaoga National Forest Park",
+      "category": "nature",
+      "description": "中国面积最大的森林公园，有南有西双版纳北有莫尔道嘎之称。",
+      "address": "额尔古纳市莫尔道嘎镇",
+      "coordinates": {
+        "lat": 51.3,
+        "lng": 121.2
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "160元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "原始森林",
+        "白鹿岛",
+        "红豆坡"
+      ],
+      "tips": "秋季五彩斑斓最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "shiwai-taoyuan",
+      "name": "室韦俄罗斯民族乡",
+      "nameEn": "Shiwei Russian Ethnic Village",
+      "category": "street",
+      "description": "中国唯一的俄罗斯族民族乡，可体验中俄边境风情。",
+      "address": "额尔古纳市室韦镇",
+      "coordinates": {
+        "lat": 51.3,
+        "lng": 119.9
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "木刻楞建筑",
+        "俄罗斯风情",
+        "界河风光"
+      ],
+      "tips": "可品尝俄式美食。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hei-shan-tou",
+      "name": "黑山头口岸",
+      "nameEn": "Heishan Port",
+      "category": "landmark",
+      "description": "中俄边境口岸，可远眺俄罗斯小镇，体验边境风情。",
+      "address": "额尔古纳市黑山头镇",
+      "coordinates": {
+        "lat": 49.7,
+        "lng": 119.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "边境风光",
+        "界河",
+        "日落"
+      ],
+      "tips": "日落时分最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "manzhouli-taowa",
+      "name": "满洲里套娃广场",
+      "nameEn": "Matryoshka Square",
+      "category": "landmark",
+      "description": "世界上最大的套娃主题广场，有世界最大套娃建筑。",
+      "address": "满洲里市",
+      "coordinates": {
+        "lat": 49.6,
+        "lng": 117.4
+      },
+      "openingHours": "09:00-22:00",
+      "ticketPrice": "148元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "套娃建筑",
+        "俄罗斯风情",
+        "夜景"
+      ],
+      "tips": "夜景灯光很美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "arxan-hot-spring",
+      "name": "阿尔山温泉",
+      "nameEn": "Arxan Hot Spring",
+      "category": "nature",
+      "description": "世界最大的功能型矿泉群，有48眼温泉，水温各异。",
+      "address": "兴安盟阿尔山市",
+      "coordinates": {
+        "lat": 47.2,
+        "lng": 119.9
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "温泉",
+        "矿泉",
+        "森林"
+      ],
+      "tips": "四季皆宜，冬季雪中泡温泉。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "arxan-forest",
+      "name": "阿尔山国家森林公园",
+      "nameEn": "Arxan National Forest Park",
+      "category": "nature",
+      "description": "集火山、温泉、森林、草原于一体的国家级森林公园。",
+      "address": "兴安盟阿尔山市",
+      "coordinates": {
+        "lat": 47.2,
+        "lng": 119.9
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "180元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "天池",
+        "石塘林",
+        "杜鹃湖"
+      ],
+      "tips": "秋季最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hailar-river",
+      "name": "海拉尔河",
+      "nameEn": "Hailar River",
+      "category": "nature",
+      "description": "呼伦贝尔的母亲河，穿城而过，两岸风光优美。",
+      "address": "海拉尔区",
+      "coordinates": {
+        "lat": 49.2,
+        "lng": 119.7
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "河流风光",
+        "城市景观"
+      ],
+      "tips": "傍晚散步最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hailar-forest",
+      "name": "海拉尔国家森林公园",
+      "nameEn": "Hailar National Forest Park",
+      "category": "nature",
+      "description": "中国唯一以樟子松为主的国家级森林公园。",
+      "address": "海拉尔区",
+      "coordinates": {
+        "lat": 49.2,
+        "lng": 119.7
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "樟子松",
+        "沙地森林"
+      ],
+      "tips": "四季景色各异。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "evenki-tribe",
+      "name": "敖鲁古雅使鹿部落",
+      "nameEn": "Aoluguya Reindeer Tribe",
+      "category": "street",
+      "description": "中国最后的使鹿部落，可近距离接触驯鹿。",
+      "address": "根河市",
+      "coordinates": {
+        "lat": 50.8,
+        "lng": 121.5
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "驯鹿",
+        "鄂温克文化",
+        "原始森林"
+      ],
+      "tips": "可喂驯鹿。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "genhe-cold-pole",
+      "name": "根河冷极",
+      "nameEn": "Genhe Cold Pole",
+      "category": "nature",
+      "description": "中国最冷的地方，冬季最低温度-58°C。",
+      "address": "根河市",
+      "coordinates": {
+        "lat": 50.8,
+        "lng": 121.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "极寒体验",
+        "冷极标志"
+      ],
+      "tips": "冬季体验极寒。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "new-balguy-right",
+      "name": "新巴尔虎右旗草原",
+      "nameEn": "New Barag Right Banner Grassland",
+      "category": "nature",
+      "description": "呼伦贝尔最美的草原之一，有贝尔湖和呼伦湖。",
+      "address": "新巴尔虎右旗",
+      "coordinates": {
+        "lat": 48.7,
+        "lng": 116.8
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "草原",
+        "湖泊",
+        "牧民文化"
+      ],
+      "tips": "夏季最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zhalong-nature",
+      "name": "扎兰屯吊桥公园",
+      "nameEn": "Zhalantun Suspension Bridge Park",
+      "category": "park",
+      "description": "始建于1905年，有百年吊桥和秀水风景区。",
+      "address": "扎兰屯市",
+      "coordinates": {
+        "lat": 48.0,
+        "lng": 122.7
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "吊桥",
+        "秀水",
+        "森林"
+      ],
+      "tips": "夏季避暑好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "arxan-tianchi",
+      "name": "阿尔山天池",
+      "nameEn": "Arxan Tianchi",
+      "category": "nature",
+      "description": "火山口湖，海拔1332米，是中国海拔最高的天池之一。",
+      "address": "阿尔山市",
+      "coordinates": {
+        "lat": 47.2,
+        "lng": 119.9
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "火山口湖",
+        "原始森林"
+      ],
+      "tips": "秋季色彩最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "shiwei-river",
+      "name": "额尔古纳河",
+      "nameEn": "Ergun River",
+      "category": "nature",
+      "description": "中俄界河，蜿蜒流淌，两岸风光如画。",
+      "address": "额尔古纳市",
+      "coordinates": {
+        "lat": 50.2,
+        "lng": 120.2
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "界河风光",
+        "日落",
+        "湿地"
+      ],
+      "tips": "日落时分最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hulunbuir-museum",
+      "name": "呼伦贝尔民族博物",
+      "nameEn": "Hulunbuir Nationalities Museum",
+      "category": "museum",
+      "description": "展示蒙古族、鄂温克族等少数民族历史文化。",
+      "address": "海拉尔区",
+      "coordinates": {
+        "lat": 49.2,
+        "lng": 119.7
+      },
+      "openingHours": "09:00-16:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "民族文化",
+        "历史文物"
+      ],
+      "tips": "了解草原文化的好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hailar-antiwar",
+      "name": "世界反法西斯战争海拉尔纪念园",
+      "nameEn": "Hailar Anti-Fascist War Memorial",
+      "category": "museum",
+      "description": "日本关东军海拉尔要塞遗址，爱国主义教育基地。",
+      "address": "海拉尔区",
+      "coordinates": {
+        "lat": 49.2,
+        "lng": 119.7
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "要塞遗址",
+        "历史教育"
+      ],
+      "tips": "了解抗战历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chunhui-dalai",
+      "name": "呼和诺尔草原",
+      "nameEn": "Huh Nur Grassland",
+      "category": "nature",
+      "description": "呼伦贝尔代表性草原景区，可体验蒙古族生活。",
+      "address": "陈巴尔虎旗",
+      "coordinates": {
+        "lat": 49.3,
+        "lng": 119.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "草原",
+        "蒙古包",
+        "骑马"
+      ],
+      "tips": "夏季那达慕大会。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "morigele-river",
+      "name": "莫日格勒河",
+      "nameEn": "Mergel River",
+      "category": "nature",
+      "description": "被誉为天下第一曲水，蜿蜒在草原上如巨龙。",
+      "address": "陈巴尔虎旗",
+      "coordinates": {
+        "lat": 49.3,
+        "lng": 119.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "曲水",
+        "草原风光"
+      ],
+      "tips": "登高俯瞰最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "baiyinaobao",
+      "name": "白音哈达草原",
+      "nameEn": "Baiyinhada Grassland",
+      "category": "nature",
+      "description": "呼伦贝尔保存最完好的草原之一。",
+      "address": "新巴尔虎左旗",
+      "coordinates": {
+        "lat": 48.5,
+        "lng": 118.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "原始草原",
+        "牧民文化"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "ganhe-forest",
+      "name": "甘河林业局",
+      "nameEn": "Ganhe Forest",
+      "category": "nature",
+      "description": "大兴安岭原始森林区，可体验森林徒步。",
+      "address": "鄂伦春自治旗",
+      "coordinates": {
+        "lat": 50.5,
+        "lng": 123.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "原始森林",
+        "徒步",
+        "野生动物"
+      ],
+      "tips": "注意安全。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "evenki-banner",
+      "name": "鄂温克族自治旗",
+      "nameEn": "Ewenki Autonomous Banner",
+      "category": "street",
+      "description": "鄂温克族聚居地，可体验独特的游牧文化。",
+      "address": "鄂温克族自治旗",
+      "coordinates": {
+        "lat": 49.1,
+        "lng": 119.7
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "鄂温克文化",
+        "驯鹿",
+        "草原"
+      ],
+      "tips": "了解少数民族文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "new-balguy-left",
+      "name": "新巴尔虎左旗草原",
+      "nameEn": "New Barag Left Banner Grassland",
+      "category": "nature",
+      "description": "呼伦贝尔草原核心区，有著名的乌兰泡。",
+      "address": "新巴尔虎左旗",
+      "coordinates": {
+        "lat": 48.5,
+        "lng": 118.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "草原",
+        "湖泊",
+        "候鸟"
+      ],
+      "tips": "夏季最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "arxan-rose",
+      "name": "阿尔山玫瑰峰",
+      "nameEn": "Arxan Rose Peak",
+      "category": "nature",
+      "description": "火山岩形成的红色山峰，形状如玫瑰盛开。",
+      "address": "阿尔山市",
+      "coordinates": {
+        "lat": 47.2,
+        "lng": 119.9
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "火山岩",
+        "红色山峰"
+      ],
+      "tips": "日落时分最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hailar-birch",
+      "name": "海拉尔白桦林",
+      "nameEn": "Hailar Birch Forest",
+      "category": "nature",
+      "description": "成片的白桦林，秋季金黄一片，非常壮观。",
+      "address": "海拉尔区",
+      "coordinates": {
+        "lat": 49.2,
+        "lng": 119.7
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "白桦林",
+        "秋色"
+      ],
+      "tips": "9-10月最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "mishan-crater",
+      "name": "柴河月亮天池",
+      "nameEn": "Chaihe Moon Tianchi",
+      "category": "nature",
+      "description": "形如弯月的火山口湖，景色优美。",
+      "address": "扎兰屯市柴河镇",
+      "coordinates": {
+        "lat": 47.5,
+        "lng": 121.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "火山口湖",
+        "月牙形"
+      ],
+      "tips": "秋季最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zalantun-sa",
+      "name": "扎兰屯秀水风景区",
+      "nameEn": "Zhalantun Xiushui Scenic Area",
+      "category": "nature",
+      "description": "以秀水河为核心的风景区，有小桂林之称。",
+      "address": "扎兰屯市",
+      "coordinates": {
+        "lat": 48.0,
+        "lng": 122.7
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "秀水河",
+        "山林风光"
+      ],
+      "tips": "夏季避暑好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
