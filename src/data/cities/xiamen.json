@@ -606,6 +606,431 @@
         "University culture"
       ],
       "tips": "Combine with XMU campus visit. Don't touch or damage the artwork. Best visited on foot."
+    },
+    {
+      "id": "xm-gulangyu",
+      "name": "鼓浪屿",
+      "nameEn": "Gulangyu Island",
+      "category": "street",
+      "description": "世界文化遗产，有万国建筑和钢琴之岛之称。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.07
+      },
+      "openingHours": "全天",
+      "ticketPrice": "35元船票",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "万国建筑",
+        "钢琴",
+        "日光岩"
+      ],
+      "tips": "必去鼓浪屿。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-university",
+      "name": "厦门大学",
+      "nameEn": "Xiamen University",
+      "category": "landmark",
+      "description": "中国最美丽的大学之一，有芙蓉湖和芙蓉隧道。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "芙蓉湖",
+        "芙蓉隧道",
+        "涂鸦"
+      ],
+      "tips": "了解厦门教育。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-zhongshan",
+      "name": "中山路",
+      "nameEn": "Zhongshan Road",
+      "category": "street",
+      "description": "厦门最古老的商业骑楼街。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "骑楼",
+        "小吃",
+        "购物"
+      ],
+      "tips": "品尝厦门小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-nanputuo",
+      "name": "南普陀寺",
+      "nameEn": "Nanputuo Temple",
+      "category": "temple",
+      "description": "闽南佛教圣地，有千年历史。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.1
+      },
+      "openingHours": "03:00-20:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "素斋"
+      ],
+      "tips": "品尝素斋。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-huan-island",
+      "name": "环岛路",
+      "nameEn": "Island Ring Road",
+      "category": "landmark",
+      "description": "厦门最美的海滨大道，全长43公里。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "海滨",
+        "骑行",
+        "沙滩"
+      ],
+      "tips": "骑行看海。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-food",
+      "name": "厦门美食",
+      "nameEn": "Xiamen Food",
+      "category": "street",
+      "description": "厦门有沙茶面和各种海鲜小吃。",
+      "address": "厦门市",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "沙茶面",
+        "海蛎煎",
+        "土笋冻"
+      ],
+      "tips": "品尝厦门美食。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-museum",
+      "name": "厦门博物馆",
+      "nameEn": "Xiamen Museum",
+      "category": "museum",
+      "description": "展示厦门历史的博物馆。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "厦门历史"
+      ],
+      "tips": "了解厦门文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-wanshi",
+      "name": "万石植物园",
+      "nameEn": "Wanshi Botanical Garden",
+      "category": "nature",
+      "description": "厦门最大的植物园。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.1
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "植物",
+        "热带雨林"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-night",
+      "name": "厦门夜景",
+      "nameEn": "Xiamen Night View",
+      "category": "landmark",
+      "description": "鼓浪屿和环岛路的夜景。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-beach",
+      "name": "白城沙滩",
+      "nameEn": "Baicheng Beach",
+      "category": "beach",
+      "description": "厦门最美的海滩之一。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-island",
+      "name": "曾厝垵",
+      "nameEn": "Zengcuo'an",
+      "category": "street",
+      "description": "厦门最文艺的渔村，有各种小吃和手工艺品。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "文艺",
+        "小吃",
+        "手工艺品"
+      ],
+      "tips": "感受厦门文艺。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-bridge",
+      "name": "海沧大桥",
+      "nameEn": "Haicang Bridge",
+      "category": "landmark",
+      "description": "横跨海峡的大桥。",
+      "address": "厦门市",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.03
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "海景"
+      ],
+      "tips": "看海景。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-park",
+      "name": "白鹭洲公园",
+      "nameEn": "Egret Island Park",
+      "category": "park",
+      "description": "厦门最大的城市公园。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "白鹭"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-temple",
+      "name": "开元寺",
+      "nameEn": "Kaiyuan Temple",
+      "category": "temple",
+      "description": "厦门最古老的佛教寺院。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古寺",
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-street",
+      "name": "八市",
+      "nameEn": "Bashi Market",
+      "category": "street",
+      "description": "厦门最古老的菜市场，有各种海鲜和小吃。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "海鲜",
+        "小吃",
+        "市井生活"
+      ],
+      "tips": "体验厦门生活。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-mountain",
+      "name": "五老峰",
+      "nameEn": "Wulaofeng",
+      "category": "nature",
+      "description": "南普陀寺后面的山峰。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "山峰",
+        "城市全景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-art",
+      "name": "厦门美术馆",
+      "nameEn": "Xiamen Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品。",
+      "address": "厦门市思明区",
+      "coordinates": {
+        "lat": 24.45,
+        "lng": 118.08
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-bay",
+      "name": "五缘湾",
+      "nameEn": "Wuyuan Bay",
+      "category": "nature",
+      "description": "厦门新开发的海湾。",
+      "address": "厦门市湖里区",
+      "coordinates": {
+        "lat": 24.5,
+        "lng": 118.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "海湾",
+        "帆船"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-jiujiu",
+      "name": "集美学村",
+      "nameEn": "Jimei School Village",
+      "category": "landmark",
+      "description": "陈嘉庚创办的学校群，有嘉庚建筑风格。",
+      "address": "厦门市集美区",
+      "coordinates": {
+        "lat": 24.57,
+        "lng": 118.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "嘉庚建筑",
+        "学校"
+      ],
+      "tips": "了解陈嘉庚文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xm-tulou",
+      "name": "永定土楼",
+      "nameEn": "Yongding Tulou",
+      "category": "landmark",
+      "description": "世界文化遗产，有独特的圆形土楼。",
+      "address": "龙岩市永定区",
+      "coordinates": {
+        "lat": 24.72,
+        "lng": 116.82
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "90元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "圆形土楼",
+        "客家文化"
+      ],
+      "tips": "了解客家文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

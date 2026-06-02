@@ -681,6 +681,447 @@
       ],
       "tips": "Best visited at sunrise for panoramic views. Good for exercise. Cooler in the mornings.",
       "image": "https://images.unsplash.com/photo-1518182170546-07e6e4d0a3b0?w=800&q=85"
+    },
+    {
+      "id": "sy-bay",
+      "name": "亚龙湾",
+      "nameEn": "Yalong Bay",
+      "category": "beach",
+      "description": "中国最美的海湾之一，有细软沙滩和清澈海水。",
+      "address": "三亚市吉阳区",
+      "coordinates": {
+        "lat": 18.2,
+        "lng": 109.62
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "海水",
+        "潜水"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-sanya",
+      "name": "三亚湾",
+      "nameEn": "Sanya Bay",
+      "category": "beach",
+      "description": "三亚最长的海滩，有椰梦长廊。",
+      "address": "三亚市天涯区",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "椰梦长廊",
+        "日落"
+      ],
+      "tips": "傍晚看日落。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-tianya",
+      "name": "天涯海角",
+      "nameEn": "Tianya Haijiao",
+      "category": "landmark",
+      "description": "中国最著名的海滨景点，有天涯和海角石刻。",
+      "address": "三亚市天涯区",
+      "coordinates": {
+        "lat": 18.23,
+        "lng": 109.35
+      },
+      "openingHours": "07:30-18:00",
+      "ticketPrice": "68元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "天涯石刻",
+        "海角石刻"
+      ],
+      "tips": "三亚必打卡。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-nanshan",
+      "name": "南山文化旅游区",
+      "nameEn": "Nanshan Cultural Tourism Zone",
+      "category": "temple",
+      "description": "有108米高的海上观音像。",
+      "address": "三亚市崖州区",
+      "coordinates": {
+        "lat": 18.3,
+        "lng": 109.2
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "129元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海上观音",
+        "佛教文化"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-wuzhizhou",
+      "name": "蜈支洲岛",
+      "nameEn": "Wuzhizhou Island",
+      "category": "beach",
+      "description": "三亚最美的海岛，有丰富的水上项目。",
+      "address": "三亚市海棠区",
+      "coordinates": {
+        "lat": 18.32,
+        "lng": 109.75
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "168元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "潜水",
+        "水上项目",
+        "海岛"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-haitang",
+      "name": "海棠湾",
+      "nameEn": "Haitang Bay",
+      "category": "beach",
+      "description": "三亚新开发的海湾，有免税购物中心。",
+      "address": "三亚市海棠区",
+      "coordinates": {
+        "lat": 18.35,
+        "lng": 109.72
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "免税店"
+      ],
+      "tips": "购物和海滩。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-luhuitou",
+      "name": "鹿回头",
+      "nameEn": "Luhuitou",
+      "category": "nature",
+      "description": "三亚的城市公园，可俯瞰三亚全景。",
+      "address": "三亚市吉阳区",
+      "coordinates": {
+        "lat": 18.22,
+        "lng": 109.52
+      },
+      "openingHours": "08:00-22:00",
+      "ticketPrice": "42元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "城市全景",
+        "日落"
+      ],
+      "tips": "看三亚全景。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-food",
+      "name": "三亚美食",
+      "nameEn": "Sanya Food",
+      "category": "street",
+      "description": "三亚有新鲜海鲜和热带水果。",
+      "address": "三亚市",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均100元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "海鲜",
+        "热带水果"
+      ],
+      "tips": "品尝三亚海鲜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-night",
+      "name": "三亚夜景",
+      "nameEn": "Sanya Night View",
+      "category": "landmark",
+      "description": "三亚湾的夜景灯光秀。",
+      "address": "三亚市天涯区",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.5
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-museum",
+      "name": "三亚博物馆",
+      "nameEn": "Sanya Museum",
+      "category": "museum",
+      "description": "展示三亚历史的博物馆。",
+      "address": "三亚市天涯区",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.5
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "三亚历史"
+      ],
+      "tips": "了解三亚文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-beach",
+      "name": "大东海",
+      "nameEn": "Dadonghai Beach",
+      "category": "beach",
+      "description": "三亚最著名的海滩之一。",
+      "address": "三亚市吉阳区",
+      "coordinates": {
+        "lat": 18.22,
+        "lng": 109.52
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-tropical",
+      "name": "热带天堂森林公园",
+      "nameEn": "Tropical Paradise Forest Park",
+      "category": "nature",
+      "description": "三亚的热带雨林公园。",
+      "address": "三亚市吉阳区",
+      "coordinates": {
+        "lat": 18.22,
+        "lng": 109.52
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "158元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "热带雨林",
+        "过江龙索桥"
+      ],
+      "tips": "了解热带生态。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-island",
+      "name": "西岛",
+      "nameEn": "West Island",
+      "category": "beach",
+      "description": "三亚附近的海岛，有丰富的水上项目。",
+      "address": "三亚市天涯区",
+      "coordinates": {
+        "lat": 18.23,
+        "lng": 109.35
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "148元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "潜水",
+        "水上项目"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-valley",
+      "name": "呀诺达雨林",
+      "nameEn": "Yanoda Rainforest",
+      "category": "nature",
+      "description": "三亚的热带雨林景区。",
+      "address": "三亚市保亭县",
+      "coordinates": {
+        "lat": 18.48,
+        "lng": 109.68
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "158元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "热带雨林",
+        "瀑布"
+      ],
+      "tips": "了解热带生态。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-street",
+      "name": "第一市场",
+      "nameEn": "First Market",
+      "category": "street",
+      "description": "三亚最著名的海鲜市场。",
+      "address": "三亚市天涯区",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "海鲜",
+        "水果"
+      ],
+      "tips": "买海鲜加工。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-temple",
+      "name": "南山寺",
+      "nameEn": "Nanshan Temple",
+      "category": "temple",
+      "description": "南山文化旅游区内的佛教寺院。",
+      "address": "三亚市崖州区",
+      "coordinates": {
+        "lat": 18.3,
+        "lng": 109.2
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "海上观音"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-bay2",
+      "name": "崖州湾",
+      "nameEn": "Yazhou Bay",
+      "category": "beach",
+      "description": "三亚西部的海湾，人少安静。",
+      "address": "三亚市崖州区",
+      "coordinates": {
+        "lat": 18.3,
+        "lng": 109.2
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "安静"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-park",
+      "name": "三亚千古情",
+      "nameEn": "Sanya Romance Park",
+      "category": "landmark",
+      "description": "以三亚文化为主题的大型公园。",
+      "address": "三亚市吉阳区",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.52
+      },
+      "openingHours": "15:00-21:00",
+      "ticketPrice": "280元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "演出",
+        "文化"
+      ],
+      "tips": "观看千古情演出。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-diving",
+      "name": "亚龙湾潜水",
+      "nameEn": "Yalong Bay Diving",
+      "category": "beach",
+      "description": "三亚最好的潜水点之一。",
+      "address": "三亚市吉阳区",
+      "coordinates": {
+        "lat": 18.2,
+        "lng": 109.62
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "380元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "潜水",
+        "珊瑚"
+      ],
+      "tips": "体验潜水。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-fruit",
+      "name": "三亚热带水果",
+      "nameEn": "Sanya Tropical Fruit",
+      "category": "street",
+      "description": "三亚有各种热带水果。",
+      "address": "三亚市",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "芒果",
+        "椰子"
+      ],
+      "tips": "品尝热带水果。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "sy-spa",
+      "name": "三亚温泉",
+      "nameEn": "Sanya Hot Spring",
+      "category": "nature",
+      "description": "三亚有丰富的温泉资源。",
+      "address": "三亚市",
+      "coordinates": {
+        "lat": 18.25,
+        "lng": 109.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "温泉"
+      ],
+      "tips": "泡温泉。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

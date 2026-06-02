@@ -630,6 +630,505 @@
       ],
       "tips": "Best in summer for lotus. The reflection of Purple Mountain is famous. Combine with Ming Xiaoling visit. Morning light is magical.",
       "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=85"
+    },
+    {
+      "id": "sun-yat-sen",
+      "name": "中山陵",
+      "nameEn": "Sun Yat-sen Mausoleum",
+      "category": "landmark",
+      "description": "孙中山先生的陵墓，有392级台阶。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "392级台阶",
+        "孙中山"
+      ],
+      "tips": "了解民国历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "confucius-temple",
+      "name": "夫子庙",
+      "nameEn": "Confucius Temple",
+      "category": "street",
+      "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
+      "address": "南京市秦淮区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "秦淮河",
+        "小吃",
+        "夜景"
+      ],
+      "tips": "品尝南京小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-museum",
+      "name": "南京博物院",
+      "nameEn": "Nanjing Museum",
+      "category": "museum",
+      "description": "中国三大博物馆之一，馆藏文物42万件。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.82
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "文物",
+        "历史"
+      ],
+      "tips": "了解南京文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-food",
+      "name": "南京美食",
+      "nameEn": "Nanjing Food",
+      "category": "street",
+      "description": "南京有鸭血粉丝汤和各种小吃。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "鸭血粉丝汤",
+        "盐水鸭"
+      ],
+      "tips": "品尝南京美食。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-night",
+      "name": "南京夜景",
+      "nameEn": "Nanjing Night View",
+      "category": "landmark",
+      "description": "秦淮河和夫子庙的夜景灯光秀。",
+      "address": "南京市秦淮区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.78
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-wall",
+      "name": "南京城墙",
+      "nameEn": "Nanjing City Wall",
+      "category": "landmark",
+      "description": "中国保存最完好的古城墙之一。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "08:00-20:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "城墙",
+        "历史"
+      ],
+      "tips": "了解南京历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-temple",
+      "name": "灵谷寺",
+      "nameEn": "Linggu Temple",
+      "category": "temple",
+      "description": "南京最古老的佛教寺院之一。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "35元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "无梁殿"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-park",
+      "name": "莫愁湖公园",
+      "nameEn": "Mochou Lake Park",
+      "category": "park",
+      "description": "南京最美的公园之一，有莫愁湖。",
+      "address": "南京市建邺区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.75
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "湖泊",
+        "花园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-bridge",
+      "name": "南京长江大桥",
+      "nameEn": "Nanjing Yangtze River Bridge",
+      "category": "landmark",
+      "description": "中国自行设计建造的第一座长江大桥。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.08,
+        "lng": 118.75
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "长江"
+      ],
+      "tips": "了解中国桥梁史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-street",
+      "name": "老门东",
+      "nameEn": "Laomengdong",
+      "category": "street",
+      "description": "南京新开发的历史文化街区。",
+      "address": "南京市秦淮区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "历史街区",
+        "小吃"
+      ],
+      "tips": "了解南京文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-mountain",
+      "name": "紫金山",
+      "nameEn": "Purple Mountain",
+      "category": "nature",
+      "description": "南京最著名的山，有中山陵和明孝陵。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "中山陵",
+        "明孝陵"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-temple2",
+      "name": "栖霞寺",
+      "nameEn": "Qixia Temple",
+      "category": "temple",
+      "description": "南京最古老的佛教寺院，有舍利塔。",
+      "address": "南京市栖霞区",
+      "coordinates": {
+        "lat": 32.15,
+        "lng": 118.95
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "舍利塔",
+        "佛教文化"
+      ],
+      "tips": "秋季红叶最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-lake",
+      "name": "百家湖",
+      "nameEn": "Baijia Lake",
+      "category": "nature",
+      "description": "江宁区的人工湖。",
+      "address": "南京市江宁区",
+      "coordinates": {
+        "lat": 31.95,
+        "lng": 118.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "湖泊"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-university",
+      "name": "南京大学",
+      "nameEn": "Nanjing University",
+      "category": "landmark",
+      "description": "中国最著名的高等学府之一。",
+      "address": "南京市鼓楼区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "校园风光"
+      ],
+      "tips": "了解南京教育。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-street2",
+      "name": "颐和路",
+      "nameEn": "Yihe Road",
+      "category": "street",
+      "description": "南京最美的街道之一，有大量民国建筑。",
+      "address": "南京市鼓楼区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "民国建筑"
+      ],
+      "tips": "了解民国历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-museum2",
+      "name": "南京科技馆",
+      "nameEn": "Nanjing Science Museum",
+      "category": "museum",
+      "description": "展示科技知识的博物馆。",
+      "address": "南京市建邺区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.75
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "科技展览"
+      ],
+      "tips": "适合亲子游。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-park2",
+      "name": "雨花台",
+      "nameEn": "Yuhuatai",
+      "category": "landmark",
+      "description": "纪念革命先烈的纪念地。",
+      "address": "南京市雨花台区",
+      "coordinates": {
+        "lat": 32.0,
+        "lng": 118.78
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "革命历史"
+      ],
+      "tips": "了解革命历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-food2",
+      "name": "南京大排档",
+      "nameEn": "Nanjing Dapaidang",
+      "category": "street",
+      "description": "南京最有名的餐厅，有各种南京传统菜。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均80元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "南京菜",
+        "盐水鸭"
+      ],
+      "tips": "品尝南京菜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-temple3",
+      "name": "鸡鸣寺",
+      "nameEn": "Jiming Temple",
+      "category": "temple",
+      "description": "南京最古老的佛教寺院，有1700多年历史。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古寺",
+        "樱花"
+      ],
+      "tips": "春季樱花最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-lake2",
+      "name": "前湖",
+      "nameEn": "Qianhu Lake",
+      "category": "nature",
+      "description": "玄武湖的一部分。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.08,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "湖泊"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nj-park3",
+      "name": "玄武湖公园",
+      "nameEn": "Xuanwu Lake Park",
+      "category": "park",
+      "description": "南京最大的城市公园。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.08,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "湖泊",
+        "公园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nj-street3",
+      "name": "新街口",
+      "nameEn": "Xinjiekou",
+      "category": "street",
+      "description": "南京最繁华的商业中心。",
+      "address": "南京市鼓楼区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "购物好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nj-temple4",
+      "name": "牛首山",
+      "nameEn": "Niushou Mountain",
+      "category": "nature",
+      "description": "南京南部的山，有佛顶宫。",
+      "address": "南京市江宁区",
+      "coordinates": {
+        "lat": 31.93,
+        "lng": 118.83
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "98元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "佛顶宫",
+        "佛教文化"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nj-lake3",
+      "name": "紫霞湖",
+      "nameEn": "Zixia Lake",
+      "category": "nature",
+      "description": "紫金山中的湖泊。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "湖泊",
+        "森林"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
