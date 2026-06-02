@@ -15,21 +15,21 @@ export interface SubscriptionLimits {
 
 export const TIER_LIMITS: Record<SubscriptionTier, SubscriptionLimits> = {
   free: {
-    aiRequestsPerMonth: 3,
+    aiRequestsPerMonth: 5,
     saveItineraries: false,
     exportPDF: false,
     premiumCustomization: false,
     businessTemplates: false,
   },
   explorer: {
-    aiRequestsPerMonth: 15,
+    aiRequestsPerMonth: 20,
     saveItineraries: true,
     exportPDF: false,
     premiumCustomization: false,
     businessTemplates: false,
   },
   traveler: {
-    aiRequestsPerMonth: -1, // unlimited
+    aiRequestsPerMonth: 40,
     saveItineraries: true,
     exportPDF: true,
     premiumCustomization: true,
@@ -48,7 +48,7 @@ export const TIER_PRICING: Record<SubscriptionTier, { monthly: number; annual: n
   free: { monthly: 0, annual: 0 },
   explorer: { monthly: 4.99, annual: 47.99 },
   traveler: { monthly: 9.99, annual: 95.99 },
-  business: { monthly: 19.99, annual: 191.99 },
+  business: { monthly: 29.99, annual: 287.99 },
 };
 
 export const TIER_NAMES: Record<SubscriptionTier, { en: string; zh: string }> = {
@@ -68,8 +68,8 @@ export const TIER_DESCRIPTIONS: Record<SubscriptionTier, { en: string; zh: strin
     zh: '更多请求次数并保存行程',
   },
   traveler: {
-    en: 'Unlimited AI with premium features',
-    zh: '无限AI请求及高级功能',
+    en: '40 AI requests with premium features',
+    zh: '每月40次AI请求及高级功能',
   },
   business: {
     en: 'Full access for travel professionals',
@@ -79,22 +79,22 @@ export const TIER_DESCRIPTIONS: Record<SubscriptionTier, { en: string; zh: strin
 
 export const TIER_FEATURES: Record<SubscriptionTier, { en: string[]; zh: string[] }> = {
   free: {
-    en: ['3 AI requests per month', 'Basic travel planning', 'View itineraries'],
-    zh: ['每月3次AI请求', '基础旅行规划', '查看行程'],
+    en: ['5 AI requests per month', 'Basic travel planning', 'View itineraries'],
+    zh: ['每月5次AI请求', '基础旅行规划', '查看行程'],
   },
   explorer: {
-    en: ['15 AI requests per month', 'Save itineraries', 'Conversation history', 'Priority support'],
-    zh: ['每月15次AI请求', '保存行程', '对话历史', '优先支持'],
+    en: ['20 AI requests per month', 'Save itineraries', 'Conversation history', 'Priority support'],
+    zh: ['每月20次AI请求', '保存行程', '对话历史', '优先支持'],
   },
   traveler: {
     en: [
-      'Unlimited AI requests',
+      '40 AI requests per month',
       'Save & export itineraries',
       'PDF export',
       'Premium customization',
       'Advanced travel tools',
     ],
-    zh: ['无限AI请求', '保存和导出行程', 'PDF导出', '高级自定义', '高级旅行工具'],
+    zh: ['每月40次AI请求', '保存和导出行程', 'PDF导出', '高级自定义', '高级旅行工具'],
   },
   business: {
     en: [
