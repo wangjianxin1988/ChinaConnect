@@ -466,18 +466,9 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     if (manageBtn) {
       manageBtn.addEventListener('click', async () => {
         try {
-          // Get the Stripe customer ID from membership metadata
-          const response = await fetch('/api/stripe-portal', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ customerId: '' }), // TODO: Get from user metadata
-          });
-          const data = await response.json();
-          if (data.url) {
-            window.location.href = data.url;
-          } else {
-            alert('Could not open subscription management. Please contact support.');
-          }
+          // Creem: redirect to pricing page for plan changes
+          // Subscription management is handled through Creem's checkout flow
+          window.location.href = '/pricing';
         } catch (err) {
           console.error('Portal error:', err);
           alert('Could not open subscription management. Please contact support.');

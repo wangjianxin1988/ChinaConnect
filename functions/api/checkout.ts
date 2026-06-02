@@ -1,35 +1,36 @@
 /**
- * Stripe Checkout Session API
- * Creates a Stripe Checkout Session for subscription purchase
+ * Creem Checkout Session API
+ * Creates a Creem Checkout for subscription purchase
  *
  * POST /api/checkout
  * Body: { tier: "explorer" | "traveler" | "business", billing: "monthly" | "annual" }
- * Returns: { url: string } - Stripe Checkout URL
+ * Returns: { url: string } - Creem Checkout URL
+ *
+ * NOTE: CF Pages Functions cannot import node_modules. All Creem API calls use fetch().
  */
 
 import type { PagesFunction } from "@cloudflare/workers-types";
-import Stripe from "stripe";
 
 interface Env {
-  STRIPE_SECRET_KEY: string;
+  CREEM_API_KEY: string;
+  CREEM_API_BASE?: string; // optional override, defaults to https://api.creem.io/v1
   PUBLIC_SUPABASE_URL: string;
   PUBLIC_SUPABASE_ANON_KEY: string;
 }
 
-// Stripe Price ID mapping (replace with actual IDs from Stripe Dashboard)
-// These are placeholder IDs - create matching products/prices in Stripe
-const PRICE_IDS: Record<string, Record<string, string>> = {
+// Creem Product ID mapping (replace with real product IDs from Creem Dashboard)
+const PRODUCT_IDS: Record<string, Record<string, string>> = {
   explorer: {
-    monthly: "price_explorer_monthly",   // Replace with real Stripe price ID
-    annual: "price_explorer_annual",     // Replace with real Stripe price ID
+    monthly: "prod_explorer_monthly",
+    annual: "prod_explorer_annual",
   },
   traveler: {
-    monthly: "price_traveler_monthly",   // Replace with real Stripe price ID
-    annual: "price_traveler_annual",     // Replace with real Stripe price ID
+    monthly: "prod_traveler_monthly",
+    annual: "prod_traveler_annual",
   },
   business: {
-    monthly: "price_business_monthly",   // Replace with real Stripe price ID
-    annual: "price_business_annual",     // Replace with real Stripe price ID
+    monthly: "prod_business_monthly",
+    annual: "prod_business_annual",
   },
 };
 
@@ -48,8 +49,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     "Access-Control-Allow-Headers": "Content-Type, Authorization",
   };
 
-  // Validate Stripe key
-  if (!env.STRIPE_SECRET_KEY) {
+  // Validate Creem API key
+  if (!env.CREEM_API_KEY) {
     return new Response(
       JSON.stringify({ error: "Server configuration error" }),
       { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
@@ -75,44 +76,45 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       );
     }
 
-    const stripe = new Stripe(env.STRIPE_SECRET_KEY, {
-      apiVersion: "2025-05-28.basil",
-    });
-
-    const priceId = PRICE_IDS[tier][billing];
+    const productId = PRODUCT_IDS[tier][billing];
 
     // Get origin for redirect URLs
     const url = new URL(request.url);
     const origin = url.origin;
 
-    // Create Checkout Session
-    const session = await stripe.checkout.sessions.create({
-      mode: "subscription",
-      payment_method_types: ["card"],
-      line_items: [
-        {
-          price: priceId,
-          quantity: 1,
-        },
-      ],
-      success_url: `${origin}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${origin}/pricing?cancelled=true`,
-      metadata: {
-        tier,
-        billing,
+    const successUrl = `${origin}/checkout/success?session_id={CHECKOUT_SESSION_ID}`;
+    const creemApiBase = env.CREEM_API_BASE || "https://api.creem.io/v1";
+
+    // Call Creem API to create checkout (using fetch — CF Workers compatible)
+    const creemResponse = await fetch(`${creemApiBase}/checkouts`, {
+      method: "POST",
+      headers: {
+        "x-api-key": env.CREEM_API_KEY,
+        "Content-Type": "application/json",
       },
-      subscription_data: {
+      body: JSON.stringify({
+        product_id: productId,
+        success_url: successUrl,
         metadata: {
           tier,
           billing,
         },
-      },
-      // Allow promotion codes
-      allow_promotion_codes: true,
+      }),
     });
 
+    if (!creemResponse.ok) {
+      const errorText = await creemResponse.text();
+      console.error("Creem API error:", creemResponse.status, errorText);
+      return new Response(
+        JSON.stringify({ error: `Creem checkout creation failed: ${errorText}` }),
+        { status: 502, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    const checkout = await creemResponse.json() as { checkout_url: string; id: string };
+
     return new Response(
-      JSON.stringify({ url: session.url, sessionId: session.id }),
+      JSON.stringify({ url: checkout.checkout_url, checkoutId: checkout.id }),
       { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
     );
   } catch (error: unknown) {

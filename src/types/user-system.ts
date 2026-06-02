@@ -130,7 +130,7 @@ export type TransactionStatus =
 export type PaymentChannel =
   | "alipay"
   | "wechat_pay"
-  | "stripe"
+  | "creem"
   | "apple_pay"
   | "admin";
 
