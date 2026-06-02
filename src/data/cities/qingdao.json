@@ -514,6 +514,389 @@
       ],
       "tips": "建议清晨或傍晚前往。可以看到老城区红瓦绿树的独特景色。山路不陡，适合各年龄段游客。",
       "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "tsingtao-museum",
+      "name": "青岛啤酒博物馆",
+      "nameEn": "Tsingtao Beer Museum",
+      "category": "museum",
+      "description": "中国唯一的啤酒博物馆，展示了青岛啤酒百年历史和酿造工艺，参观后可品尝新鲜啤酒。",
+      "address": "青岛市市北区登州路56号",
+      "coordinates": {
+        "lat": 36.0756,
+        "lng": 120.3556
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "百年酿造设备",
+        "啤酒品鉴",
+        "醉酒小屋"
+      ],
+      "tips": "门票含两杯啤酒品鉴，建议下午参观后去登州路啤酒街。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "little-qingdao",
+      "name": "小青岛",
+      "nameEn": "Little Qingdao Island",
+      "category": "nature",
+      "description": "位于胶州湾入口处的小岛，因形似古琴又称琴岛。岛上的白色灯塔是青岛的象征之一。",
+      "address": "青岛市市南区琴屿路26号",
+      "coordinates": {
+        "lat": 36.0536,
+        "lng": 120.3222
+      },
+      "openingHours": "07:30-18:00",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "白色灯塔",
+        "海景栈道",
+        "日落观景"
+      ],
+      "tips": "日落时分最美，可远眺栈桥和青岛湾。",
+      "image": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?w=800&q=85"
+    },
+    {
+      "id": "mount-lao",
+      "name": "崂山",
+      "nameEn": "Mount Lao",
+      "category": "nature",
+      "description": "中国海岸线上最高的山峰，海拔1133米，被誉为海上第一名山。道教文化深厚，自然风光壮美。",
+      "address": "青岛市崂山区崂山风景区",
+      "coordinates": {
+        "lat": 36.1833,
+        "lng": 120.6167
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "180元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "太清宫",
+        "仰口海滩",
+        "北九水",
+        "巨峰日出"
+      ],
+      "tips": "建议安排一整天，南线看道教文化，东线看海景。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "jiaozhou-bridge",
+      "name": "胶州湾大桥",
+      "nameEn": "Jiaozhou Bay Bridge",
+      "category": "landmark",
+      "description": "全长36.48公里，曾是世界上最长的跨海大桥，桥梁设计优美。",
+      "address": "青岛市黄岛区",
+      "coordinates": {
+        "lat": 36.1167,
+        "lng": 120.25
+      },
+      "openingHours": "全天",
+      "ticketPrice": "通行费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "跨海大桥",
+        "海景驾驶"
+      ],
+      "tips": "夜间灯光璀璨，建议驾车体验。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xiaoyushan",
+      "name": "小鱼山公园",
+      "nameEn": "Xiaoyushan Park",
+      "category": "park",
+      "description": "海拔60米，山顶览潮阁是观赏青岛前海景致的最佳地点。",
+      "address": "青岛市市南区福山支路24号",
+      "coordinates": {
+        "lat": 36.0611,
+        "lng": 120.3306
+      },
+      "openingHours": "07:00-18:30",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "览潮阁",
+        "前海全景"
+      ],
+      "tips": "与信号山公园相邻，可一起游览。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "golden-sand",
+      "name": "金沙滩",
+      "nameEn": "Golden Sand Beach",
+      "category": "beach",
+      "description": "全长3500米，宽300米，是中国沙质最细、面积最大的沙滩之一。",
+      "address": "青岛市黄岛区金沙滩路",
+      "coordinates": {
+        "lat": 35.95,
+        "lng": 120.2167
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "细沙滩",
+        "冲浪",
+        "日出"
+      ],
+      "tips": "夏季人多，建议清晨或傍晚前往。",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+    },
+    {
+      "id": "shilaoren",
+      "name": "石老人海水浴场",
+      "nameEn": "Shilaoren Beach",
+      "category": "beach",
+      "description": "因海中巨石形似老人而得名，是青岛最大的海水浴场。",
+      "address": "青岛市崂山区海口路",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 120.4667
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "石老人礁石",
+        "日落"
+      ],
+      "tips": "日落时分石老人剪影格外壮观。",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+    },
+    {
+      "id": "pichai-yuan",
+      "name": "劈柴院",
+      "nameEn": "Pichai Yuan",
+      "category": "street",
+      "description": "青岛最有名的老街美食区，汇集各种青岛特色小吃和海鲜。",
+      "address": "青岛市市南区河北路16号",
+      "coordinates": {
+        "lat": 36.0694,
+        "lng": 120.3167
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "青岛小吃",
+        "海鲜大排档"
+      ],
+      "tips": "晚上去更有氛围，推荐烤鱿鱼和海鲜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "naval-museum",
+      "name": "中国海军博物馆",
+      "nameEn": "Chinese Navy Museum",
+      "category": "museum",
+      "description": "中国唯一的海军军事主题博物馆，可登舰参观退役军舰和潜艇。",
+      "address": "青岛市市南区莱阳路8号",
+      "coordinates": {
+        "lat": 36.0556,
+        "lng": 120.3278
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "退役军舰",
+        "潜艇参观"
+      ],
+      "tips": "潜艇参观需提前预约，建议上午去。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "underwater-world",
+      "name": "青岛海底世界",
+      "nameEn": "Qingdao Underwater World",
+      "category": "museum",
+      "description": "中国第一个水族馆，拥有亚洲最大的亚克力玻璃展窗。",
+      "address": "青岛市市南区莱阳路2号",
+      "coordinates": {
+        "lat": 36.0556,
+        "lng": 120.325
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "130元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "海底隧道",
+        "水母馆"
+      ],
+      "tips": "周末人多，建议工作日前往。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "ocean-uni",
+      "name": "中国海洋大学",
+      "nameEn": "Ocean University of China",
+      "category": "landmark",
+      "description": "中国最著名的海洋类高等学府，校园内保留了大量德式建筑。",
+      "address": "青岛市市南区鱼山路5号",
+      "coordinates": {
+        "lat": 36.0639,
+        "lng": 120.3333
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "德式校园",
+        "海洋科学馆"
+      ],
+      "tips": "鱼山校区最值得参观，德式建筑保存完好。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "polar-world",
+      "name": "青岛极地海洋世界",
+      "nameEn": "Qingdao Polar Ocean World",
+      "category": "museum",
+      "description": "集极地动物展示、海洋动物表演于一体的大型主题公园。",
+      "address": "青岛市崂山区东海东路60号",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 120.45
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "180元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "白鲸表演",
+        "企鹅馆"
+      ],
+      "tips": "表演时间需提前查看，建议先看白鲸表演。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "beer-street",
+      "name": "登州路啤酒街",
+      "nameEn": "Dengzhou Road Beer Street",
+      "category": "street",
+      "description": "青岛啤酒的发源地，整条街都是啤酒屋和海鲜大排档。",
+      "address": "青岛市市北区登州路",
+      "coordinates": {
+        "lat": 36.0756,
+        "lng": 120.3556
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "散装啤酒",
+        "海鲜烧烤"
+      ],
+      "tips": "用塑料袋打散啤是青岛特色体验。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "silver-beach",
+      "name": "银沙滩",
+      "nameEn": "Silver Sand Beach",
+      "category": "beach",
+      "description": "位于黄岛区，沙滩呈银白色，水质清澈，人少安静。",
+      "address": "青岛市黄岛区",
+      "coordinates": {
+        "lat": 35.9333,
+        "lng": 120.2
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "银白沙滩",
+        "清澈海水"
+      ],
+      "tips": "比金沙滩人少，适合安静度假。",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+    },
+    {
+      "id": "zhanshan-temple",
+      "name": "湛山寺",
+      "nameEn": "Zhanshan Temple",
+      "category": "temple",
+      "description": "青岛市区唯一的佛寺，始建于1934年，依山面海。",
+      "address": "青岛市市南区芝泉路2号",
+      "coordinates": {
+        "lat": 36.0583,
+        "lng": 120.35
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "浮屠塔",
+        "佛教文化"
+      ],
+      "tips": "环境清幽，适合静心参观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "qingdao-museum",
+      "name": "青岛市博物馆",
+      "nameEn": "Qingdao Municipal Museum",
+      "category": "museum",
+      "description": "综合性博物馆，馆藏文物16万余件。",
+      "address": "青岛市崂山区梅岭路27号",
+      "coordinates": {
+        "lat": 36.1167,
+        "lng": 120.4667
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "历史文物",
+        "青岛历史"
+      ],
+      "tips": "周一闭馆，需提前预约。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "no1-beach",
+      "name": "第一海水浴场",
+      "nameEn": "No.1 Bathing Beach",
+      "category": "beach",
+      "description": "青岛最著名的海水浴场，沙质细腻，坡度平缓。",
+      "address": "青岛市市南区南海路",
+      "coordinates": {
+        "lat": 36.0583,
+        "lng": 120.3333
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "游泳",
+        "沙滩"
+      ],
+      "tips": "夏季7-8月开放，更衣室收费。",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+    },
+    {
+      "id": "zhongshan-park",
+      "name": "中山公园",
+      "nameEn": "Zhongshan Park",
+      "category": "park",
+      "description": "青岛最大的综合性公园，每年春天樱花盛开时举办樱花会。",
+      "address": "青岛市市南区文登路28号",
+      "coordinates": {
+        "lat": 36.0611,
+        "lng": 120.3472
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "樱花大道",
+        "动物园"
+      ],
+      "tips": "4月樱花季最美，与动物园相邻。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
     }
   ],
   "restaurants": [
