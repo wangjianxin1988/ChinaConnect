@@ -8,6 +8,8 @@ import { useAIConversation } from "@/hooks/useAIConversation";
 import type { Message, ToolCall, WorkflowProgress } from "@/lib/ai/types";
 import { extractRouteFromConversation, saveRoute } from "@/lib/ai/route-saver";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
+import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
+import { UpgradePrompt } from "@/components/subscription/UpgradePrompt";
 import React, { useState, useRef, useEffect, useCallback, Component, type ReactNode, type ErrorInfo } from "react";
 import { ItineraryDisplay } from "./ItineraryDisplay";
 import { QuickPrompts } from "./QuickPrompts";
@@ -92,14 +94,12 @@ const renderInline = (text: string): React.ReactNode[] => {
   if (!text) return [text];
 
   const elements: React.ReactNode[] = [];
-  // Tokenize: links, code, bold, italic
   const regex = /(`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
   let key = 0;
 
   while ((match = regex.exec(text)) !== null) {
-    // Text before match
     if (match.index > lastIndex) {
       elements.push(text.slice(lastIndex, match.index));
     }
@@ -134,7 +134,6 @@ const renderInline = (text: string): React.ReactNode[] => {
     lastIndex = match.index + token.length;
   }
 
-  // Remaining text
   if (lastIndex < text.length) {
     elements.push(text.slice(lastIndex));
   }
@@ -142,7 +141,6 @@ const renderInline = (text: string): React.ReactNode[] => {
   return elements.length > 0 ? elements : [text];
 };
 
-/** Safe markdown → React elements (replaces dangerouslySetInnerHTML) */
 const SafeMarkdown: React.FC<{ content: string }> = ({ content }) => {
   if (!content) return null;
 
@@ -191,8 +189,7 @@ const SafeMarkdown: React.FC<{ content: string }> = ({ content }) => {
     inTable = false;
   };
 
-  lines.forEach((line, i) => {
-    // Table detection
+  lines.forEach((line) => {
     if (line.includes("|") && line.trim().startsWith("|")) {
       const cells = line
         .split("|")
@@ -347,7 +344,6 @@ const MessageBubble: React.FC<{
               : "bg-white border border-gray-200 text-gray-800 rounded-bl-sm shadow-sm"
         }`}
       >
-        {/* Avatar for assistant */}
         {!isUser && (
           <div className="flex items-center gap-2 mb-2 pb-1.5 border-b border-gray-100">
             <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-xs">🤖</div>
@@ -355,17 +351,14 @@ const MessageBubble: React.FC<{
           </div>
         )}
 
-        {/* Content — safe markdown */}
         <div className={`text-sm leading-relaxed ${isStreaming ? "streaming-text streaming-content" : ""}`}>
           <SafeMarkdown content={message.content} />
         </div>
 
-        {/* Tool call indicators */}
         {message.toolCalls && message.toolCalls.length > 0 && isStreaming && (
           <ToolCallIndicator toolCalls={message.toolCalls} />
         )}
 
-        {/* Streaming indicator */}
         {isStreaming && (
           <div className="mt-2">
             {message.content ? (
@@ -379,7 +372,6 @@ const MessageBubble: React.FC<{
           </div>
         )}
 
-        {/* Error retry button */}
         {isError && onRetry && !isUser && !isStreaming && (
           <button
             onClick={onRetry}
@@ -392,7 +384,6 @@ const MessageBubble: React.FC<{
           </button>
         )}
 
-        {/* Citations */}
         {message.citations && message.citations.length > 0 && !isUser && (
           <div className="mt-3 pt-2 border-t border-gray-100">
             <p className="text-xs text-gray-400 mb-1">Sources:</p>
@@ -408,7 +399,6 @@ const MessageBubble: React.FC<{
           </div>
         )}
 
-        {/* Timestamp */}
         <div className={`text-xs mt-1.5 ${isUser ? "text-blue-200" : isError ? "text-red-300" : "text-gray-400"} text-right`}>
           {message.timestamp.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
         </div>
@@ -501,6 +491,31 @@ export const AIChat: React.FC<AIChatProps> = ({
   const [routeSaved, setRouteSaved] = useState(false);
   const [routeSaveError, setRouteSaveError] = useState<string | null>(null);
 
+  // Subscription tier enforcement state
+  const [upgradePrompt, setUpgradePrompt] = useState<{
+    isOpen: boolean;
+    featureName: string;
+    requiredTier: SubscriptionTier;
+  }>({ isOpen: false, featureName: '', requiredTier: 'explorer' });
+
+  const isZh = language === "zh";
+  const currentTier = getCurrentTier();
+
+  // Conversation ID ref for route saving
+  const conversationIdRef = useRef(`conv_${Date.now()}`);
+
+  // Check tier for feature gating
+  const checkTierForFeature = useCallback((feature: string, requiredTier: SubscriptionTier): boolean => {
+    const tierOrder: SubscriptionTier[] = ['free', 'explorer', 'traveler', 'business'];
+    const currentIdx = tierOrder.indexOf(currentTier);
+    const requiredIdx = tierOrder.indexOf(requiredTier);
+    if (currentIdx < requiredIdx) {
+      setUpgradePrompt({ isOpen: true, featureName: feature, requiredTier });
+      return false;
+    }
+    return true;
+  }, [currentTier]);
+
   // Refs
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -535,7 +550,6 @@ export const AIChat: React.FC<AIChatProps> = ({
     const text = inputValue.trim();
     if (!text || isLoading) return;
 
-    // Dedup: prevent rapid double-send (within 500ms)
     const now = Date.now();
     if (now - lastSentAt < 500) return;
     setLastSentAt(now);
@@ -558,7 +572,6 @@ export const AIChat: React.FC<AIChatProps> = ({
 
   // Retry last user message
   const handleRetry = useCallback(() => {
-    // Find last user message
     const lastUserMsg = [...messages].reverse().find((m) => m.role === "user");
     if (lastUserMsg) {
       sendMessage(lastUserMsg.content);
@@ -579,9 +592,11 @@ export const AIChat: React.FC<AIChatProps> = ({
     navigator.clipboard.writeText(link).catch(console.error);
   }, [shareCode, getShareLink]);
 
-  // Export handler
+  // Export handler - Task 2: enforce PDF export restriction (Traveler+)
   const handleExport = useCallback(
     (format: "text" | "json") => {
+      if (!checkTierForFeature('exportPDF', 'traveler')) return;
+
       const content = exportItinerary(format);
       const blob = new Blob([content], { type: format === "json" ? "application/json" : "text/plain" });
       const url = URL.createObjectURL(blob);
@@ -591,7 +606,7 @@ export const AIChat: React.FC<AIChatProps> = ({
       a.click();
       URL.revokeObjectURL(url);
     },
-    [exportItinerary],
+    [exportItinerary, checkTierForFeature],
   );
 
   // Cancel in-flight request
@@ -658,7 +673,6 @@ export const AIChat: React.FC<AIChatProps> = ({
               )}
             </div>
 
-            {/* Current Itinerary Preview */}
             {currentItinerary && (
               <div className="border-t border-gray-200 p-4 bg-gray-50">
                 <ItineraryDisplay
@@ -701,37 +715,43 @@ export const AIChat: React.FC<AIChatProps> = ({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                 </svg>
               </button>
-              {/* Save Route Button */}
+              {/* Save Route Button - Task 1: Check tier (Explorer+ required) */}
               {currentItinerary && (
                 <button
                   onClick={async () => {
+                    if (!checkTierForFeature('saveItineraries', 'explorer')) return;
+
                     const user = await getCurrentUser();
                     if (!user) {
-                      alert('Please sign in to save routes.');
+                      alert(isZh ? '请登录后再保存路线。' : 'Please sign in to save routes.');
                       return;
                     }
                     const routeData = extractRouteFromConversation(messages, currentItinerary?.data);
                     if (!routeData) {
-                      alert('No route data to save.');
+                      alert(isZh ? '没有可保存的路线数据。' : 'No route data to save.');
                       return;
                     }
-                    const result = await saveRoute(user.id, conversationStateRef.current.conversationId, routeData);
+                    const result = await saveRoute(user.id, conversationIdRef.current, routeData);
                     if (result.success) {
-                      alert(result.error || 'Route saved successfully!');
+                      alert(result.error || (isZh ? '路线保存成功！' : 'Route saved successfully!'));
                     } else {
-                      alert('Failed to save route: ' + result.error);
+                      alert((isZh ? '保存路线失败：' : 'Failed to save route: ') + result.error);
                     }
                   }}
                   className="p-2 hover:bg-green-100 rounded-lg transition-colors"
-                  title="Save Route"
+                  title={isZh ? "保存路线" : "Save Route"}
                 >
                   <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </button>
               )}
+              {/* History Button - Task 3: Check tier (Explorer+ required) */}
               <button
-                onClick={() => setShowHistory(!showHistory)}
+                onClick={() => {
+                  if (!checkTierForFeature('conversationHistory', 'explorer')) return;
+                  setShowHistory(!showHistory);
+                }}
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                 title={LABELS.history}
               >
@@ -855,7 +875,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
                   </svg>
                   <span className="text-sm text-amber-800">
-                    {language === "zh" ? "本月AI请求次数已用完" : "AI requests limit reached for this month"}
+                    {language === "zh" ? "您已达到本月AI请求上限，请升级以继续使用" : "You've reached your monthly limit. Upgrade to continue."}
                   </span>
                 </div>
                 <a href="/pricing" className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline">
@@ -941,6 +961,16 @@ export const AIChat: React.FC<AIChatProps> = ({
             </div>
           </div>
         )}
+
+        {/* Upgrade Prompt Modal */}
+        <UpgradePrompt
+          isOpen={upgradePrompt.isOpen}
+          onClose={() => setUpgradePrompt(prev => ({ ...prev, isOpen: false }))}
+          currentTier={currentTier}
+          requiredTier={upgradePrompt.requiredTier}
+          featureName={upgradePrompt.featureName}
+          language={language}
+        />
 
         {/* Animation styles */}
         <style>{`

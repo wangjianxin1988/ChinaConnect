@@ -202,10 +202,32 @@ export function checkUsageLimit(): { allowed: boolean; remaining: number; max: n
 }
 
 /**
+ * Check if the user can make a request based on their tier limit.
+ * This is a synchronous check using the current tier and usage count.
+ * Returns false when the limit has been reached.
+ */
+export function canMakeRequest(): boolean {
+  if (typeof window === 'undefined') return true;
+  const limit = checkUsageLimit();
+  return limit.allowed;
+}
+
+/**
  * Increment the usage count by 1
- * Returns the new count
+ * ONLY increments if the user is within their tier limit.
+ * Returns the new count, or -1 if the limit was already reached.
  */
 export function incrementUsage(): number {
+  // Check limit BEFORE incrementing
+  const limit = checkUsageLimit();
+  if (!limit.allowed) {
+    // Dispatch event so UI can react to limit reached
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('ai-usage-exceeded', { detail: { count: getUsageCount(), max: limit.max } }));
+    }
+    return -1;
+  }
+
   const data = getUsageData();
   data.count += 1;
   saveUsageData(data);
