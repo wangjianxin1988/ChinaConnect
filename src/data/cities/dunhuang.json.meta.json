@@ -1,0 +1,1334 @@
+{
+  "slug": "dunhuang",
+  "name": "敦煌",
+  "nameEn": "Dunhuang",
+  "country": "China",
+  "population": "190,000",
+  "coordinates": {
+    "lat": 40.1421,
+    "lng": 94.6618
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Dunhuang, a oasis city at the edge of the Taklamakan Desert, was the ancient gateway to the Silk Road. Home to the spectacular Mogao Caves (UNESCO), singing sand dunes of Mingsha Mountain, and the ancient Yumenguan Pass. A mystical blend of Buddhist art, desert adventures, and star-filled night skies.",
+  "coverImage": "https://images.unsplash.com/photo-1774018163548-6fc35162a270?w=1200&q=80",
+  "highlights": [
+    "Mogao Caves - 1,000-year Buddhist art treasury",
+    "Mingsha Mountain - Singing sand dunes",
+    "Yumenguan Pass - Ancient Silk Road fortress",
+    "Crescent Spring - Desert oasis",
+    "Yadan Landforms - Spectacular desert geology"
+  ],
+  "climate": {
+    "type": "Temperate desert",
+    "bestMonths": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October"
+    ],
+    "avgSummerTemp": "25°C (77°F)",
+    "avgWinterTemp": "-10°C (14°F)",
+    "tips": "Best visited May-Oct for comfortable weather. Summers can be hot but dry. Winters cold but caves are warmer. Avoid sandstorms in spring. Book Mogao Caves tickets early."
+  },
+  "restaurants": [
+    {
+      "id": "dunhuang-1",
+      "name": "沙洲客根",
+      "nameEn": "Shazhou Restaurant",
+      "type": "local",
+      "cuisine": "Dunhuang Local",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Dunhuang City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "10:00-22:00",
+      "description": "Popular restaurant serving local Dunhuang cuisine including lamb dishes and desert specialties.",
+      "dishHighlights": [
+        "Desert lamb",
+        "Yellow river fish",
+        "Donkey meat"
+      ],
+      "tags": [
+        "local",
+        "dunhuang",
+        "traditional",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-2",
+      "name": "敦煌夜市小吃",
+      "nameEn": "Dunhuang Night Market Snacks",
+      "type": "local",
+      "cuisine": "Various Snacks",
+      "avgPrice": 30,
+      "rating": 4.4,
+      "address": "Shazhou Night Market",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "18:00-24:00",
+      "description": "Night market with various local snacks, grilled meats, and refreshing drinks.",
+      "dishHighlights": [
+        "Lamb skewers",
+        "Apricot juice",
+        "Grilled squid"
+      ],
+      "tags": [
+        "night-market",
+        "street-food",
+        "variety",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-3",
+      "name": "驴肉黄面",
+      "nameEn": "Donkey Meat Yellow Noodles",
+      "type": "local",
+      "cuisine": "Dunhuang Specialty",
+      "avgPrice": 40,
+      "rating": 4.7,
+      "address": "Dunhuang City",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "08:00-20:00",
+      "description": "Legendary Dunhuang dish - donkey meat served with yellow noodles, unique local specialty.",
+      "dishHighlights": [
+        "Donkey meat",
+        "Yellow noodles",
+        "Special sauce"
+      ],
+      "tags": [
+        "local",
+        "must-try",
+        "famous",
+        "dunhuang-specialty"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-4",
+      "name": "羊肉粉汤",
+      "nameEn": "Lamb and Rice Noodle Soup",
+      "type": "local",
+      "cuisine": "Gansu",
+      "avgPrice": 35,
+      "rating": 4.5,
+      "address": "Dunhuang City",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "07:00-14:00",
+      "description": "Warming lamb and rice noodle soup, perfect breakfast before desert exploration.",
+      "dishHighlights": [
+        "Lamb soup",
+        "Rice noodles",
+        "Herbs"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "soup",
+        "warming"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-5",
+      "name": "杏皮水",
+      "nameEn": "Apricot Peel Drink",
+      "type": "local",
+      "cuisine": "Dunhuang Drinks",
+      "avgPrice": 10,
+      "rating": 4.6,
+      "address": "Everywhere",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "全天",
+      "description": "Signature Dunhuang sweet-sour drink made from dried apricots, refreshing and unique taste.",
+      "dishHighlights": [
+        "Apricot drink",
+        "Sweet and sour",
+        "Refreshing"
+      ],
+      "tags": [
+        "local",
+        "drinks",
+        "must-try",
+        "refreshing"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-6",
+      "name": "烤肉串",
+      "nameEn": "Dunhuang BBQ",
+      "type": "local",
+      "cuisine": "BBQ",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Night Market",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "18:00-03:00",
+      "description": "Grilled lamb and beef skewers at night market, addictive street food.",
+      "dishHighlights": [
+        "Lamb skewers",
+        "Beef skewers",
+        "Lamb chops"
+      ],
+      "tags": [
+        "local",
+        "bbq",
+        "night-market",
+        "street-food"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-7",
+      "name": "泡儿油糕",
+      "nameEn": "Paoer Yougao",
+      "type": "local",
+      "cuisine": "Dunhuang Desserts",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "Street Vendors",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "全天",
+      "description": "Traditional Dunhuang fried pastry with sweet filling, crispy outside and soft inside.",
+      "dishHighlights": [
+        "Fried pastry",
+        "Sweet filling",
+        "Crispy"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "street-food"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-8",
+      "name": "羊肉垫卷",
+      "nameEn": "Lamb Rolls",
+      "type": "local",
+      "cuisine": "Gansu Lamb",
+      "avgPrice": 70,
+      "rating": 4.6,
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "10:00-22:00",
+      "description": "Tender lamb cooked with flatbread rolls, hearty Gansu dish, sharing friendly.",
+      "dishHighlights": [
+        "Lamb stew",
+        "Flatbread",
+        "Rich sauce"
+      ],
+      "tags": [
+        "local",
+        "lamb",
+        "sharing",
+        "filling"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-9",
+      "name": "拉条子",
+      "nameEn": "Lazt noodles",
+      "type": "local",
+      "cuisine": "Gansu Noodles",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "08:00-20:00",
+      "description": "Hand-pulled noodles with various toppings, staple food in Gansu province.",
+      "dishHighlights": [
+        "Hand-pulled noodles",
+        "Lamb topping",
+        "Vegetable topping"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "budget",
+        "filling"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-10",
+      "name": "桃符",
+      "nameEn": "Peach Symbol",
+      "type": "local",
+      "cuisine": "Dunhuang Fruit",
+      "avgPrice": 20,
+      "rating": 4.3,
+      "address": "Fruit Markets",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "全天",
+      "description": "Local Dunhuang apricots and peaches, sweet and juicy from desert oasis cultivation.",
+      "dishHighlights": [
+        "Fresh apricots",
+        "Local peaches",
+        "Dried fruits"
+      ],
+      "tags": [
+        "local",
+        "fruit",
+        "healthy",
+        "seasonal"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-11",
+      "name": "沙漠枸杞",
+      "nameEn": "Desert Goji Berries",
+      "type": "local",
+      "cuisine": "Dunhuang Specialties",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Markets",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "全天",
+      "description": "High-quality goji berries from desert oases, famous Dunhuang souvenir and health product.",
+      "dishHighlights": [
+        "Fresh goji",
+        "Dried goji",
+        "Goji wine"
+      ],
+      "tags": [
+        "local",
+        "souvenir",
+        "healthy",
+        "gift"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-12",
+      "name": "雪山驼掌",
+      "nameEn": "Camel Paw",
+      "type": "local",
+      "cuisine": "Desert Specialty",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "10:00-22:00",
+      "description": "Exotic desert specialty - camel paw cooked in various styles, unique local delicacy.",
+      "dishHighlights": [
+        "Camel paw hotpot",
+        "Camel meat",
+        "Desert herbs"
+      ],
+      "tags": [
+        "local",
+        "exotic",
+        "specialty",
+        "adventurous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-13",
+      "name": "羊肉面",
+      "nameEn": "Lamb Noodles",
+      "type": "local",
+      "cuisine": "Gansu Noodles",
+      "avgPrice": 30,
+      "rating": 4.6,
+      "address": "Dunhuang City",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "06:00-14:00",
+      "description": "Simple but flavorful lamb broth with hand-pulled noodles, local breakfast tradition.",
+      "dishHighlights": [
+        "Lamb broth",
+        "Hand-pulled noodles",
+        "Cilantro"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "noodles",
+        "simple"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-14",
+      "name": "李广杏",
+      "nameEn": "Li Guang Apricots",
+      "type": "local",
+      "cuisine": "Dunhuang Fruit",
+      "avgPrice": 30,
+      "rating": 4.7,
+      "address": "Orchards",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "Seasonal (June-July)",
+      "description": "Famous Dunhuang apricots named after legendary general Li Guang, sweet and aromatic.",
+      "dishHighlights": [
+        "Fresh apricots",
+        "Apricot products",
+        "Orchard visit"
+      ],
+      "tags": [
+        "local",
+        "seasonal",
+        "fruit",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-15",
+      "name": "黄面",
+      "nameEn": "Yellow Noodles",
+      "type": "local",
+      "cuisine": "Dunhuang Specialty",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "08:00-18:00",
+      "description": "Dunhuang's famous yellow noodles with various toppings, colorful and flavorful dish.",
+      "dishHighlights": [
+        "Yellow noodles",
+        "Vegetable toppings",
+        "Special sauce"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "colorful",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-16",
+      "name": "沙葱",
+      "nameEn": "Desert Chives",
+      "type": "local",
+      "cuisine": "Desert Vegetables",
+      "avgPrice": 30,
+      "rating": 4.4,
+      "address": "Dunhuang Restaurants",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "10:00-22:00",
+      "description": "Wild chives grown in desert areas, unique flavor and prized local vegetable.",
+      "dishHighlights": [
+        "Stir-fried chives",
+        "Chive eggs",
+        "Chive dumplings"
+      ],
+      "tags": [
+        "local",
+        "vegetables",
+        "desert",
+        "unique"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-17",
+      "name": "手抓饭",
+      "nameEn": "Hand-Grabbable Rice",
+      "type": "local",
+      "cuisine": "Uighur Style",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Near Night Market",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "10:00-22:00",
+      "description": "Rice with lamb, carrots, and raisins eaten with hands, Uighur-style pilaf.",
+      "dishHighlights": [
+        "Lamb rice",
+        "Carrots",
+        "Raisins"
+      ],
+      "tags": [
+        "local",
+        "uighur",
+        "sharing",
+        "flavorful"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-18",
+      "name": "烤全羊",
+      "nameEn": "Whole Roasted Lamb",
+      "type": "fine",
+      "cuisine": "Gansu Lamb",
+      "avgPrice": 2000,
+      "rating": 4.9,
+      "address": "Desert Resort",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "By reservation",
+      "description": "Whole lamb roasted in desert pit, ceremonial dish for special occasions, requires advance order.",
+      "dishHighlights": [
+        "Whole lamb",
+        "Pit roasted",
+        "Ceremonial"
+      ],
+      "tags": [
+        "special-occasion",
+        "premium",
+        "ceremonial",
+        "lamb"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-19",
+      "name": "葡萄酒",
+      "nameEn": "Dunhuang Wine",
+      "type": "local",
+      "cuisine": "Dunhuang Drinks",
+      "avgPrice": 80,
+      "rating": 4.4,
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "全天",
+      "description": "Local wine from desert grapes, historical connection to Silk Road wine trade.",
+      "dishHighlights": [
+        "Local wine",
+        "Grape wine",
+        "Silk Road heritage"
+      ],
+      "tags": [
+        "local",
+        "drinks",
+        "souvenir",
+        "historical"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-20",
+      "name": "清真拉面",
+      "nameEn": "Halal Noodles",
+      "type": "local",
+      "cuisine": "Halal",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "Muslim Quarter",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "06:00-20:00",
+      "description": "Halal noodle shops in Muslim quarter serving beef and lamb noodles.",
+      "dishHighlights": [
+        "Beef noodles",
+        "Lamb noodles",
+        "Flatbread"
+      ],
+      "tags": [
+        "local",
+        "halal",
+        "budget",
+        "noodles"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-21",
+      "name": "大盘鸡",
+      "nameEn": "Big Plate Chicken",
+      "type": "local",
+      "cuisine": "Xinjiang Style",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "10:00-22:00",
+      "description": "Large plate of chicken with potatoes and noodles, shared dish popular in Gansu/Xinjiang region.",
+      "dishHighlights": [
+        "Chicken",
+        "Potatoes",
+        "宽面条"
+      ],
+      "tags": [
+        "local",
+        "sharing",
+        "filling",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-22",
+      "name": "凉皮",
+      "nameEn": "Liangpi Cold Noodles",
+      "type": "local",
+      "cuisine": "Gansu Snacks",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "Night Market",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "17:00-24:00",
+      "description": "Cold rice noodles with spicy sauce, refreshing summer street snack.",
+      "dishHighlights": [
+        "Cold noodles",
+        "Spicy sauce",
+        "Cucumber"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "cold",
+        "summer"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-23",
+      "name": "葡萄干",
+      "nameEn": "Dunhuang Raisins",
+      "type": "local",
+      "cuisine": "Local Snacks",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "Markets",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "全天",
+      "description": "Sweet raisins from Dunhuang's desert vineyards, popular snack and souvenir.",
+      "dishHighlights": [
+        "Fresh raisins",
+        "Dried grapes",
+        "Various sizes"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "souvenir",
+        "sweet"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-24",
+      "name": "羊肉泡馍",
+      "nameEn": "Lamb Flatbread Soup",
+      "type": "local",
+      "cuisine": "Gansu",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "08:00-20:00",
+      "description": "Crispy flatbread pieces in lamb broth, hearty Muslim dish.",
+      "dishHighlights": [
+        "Flatbread",
+        "Lamb soup",
+        "Lamb slices"
+      ],
+      "tags": [
+        "local",
+        "muslim",
+        "soup",
+        "filling"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    },
+    {
+      "id": "dunhuang-25",
+      "name": "冰糖雪梨",
+      "nameEn": "Rock Sugar Pear",
+      "type": "local",
+      "cuisine": "Dunhuang Desserts",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "Street Vendors",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "hours": "全天",
+      "description": "Sweet pear drink with rock sugar, soothing for dry desert throat.",
+      "dishHighlights": [
+        "Pear drink",
+        "Rock sugar",
+        "Soothing"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "drinks",
+        "soothing"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": ""
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Dunhuang Airport (DNH)",
+        "duration": "2-4 hours via Xi'an or Lanzhou",
+        "price": "800-2000¥",
+        "frequency": "Daily flights from Xi'an, Lanzhou, Beijing",
+        "tips": "Small airport close to city. Airport bus or taxi to city center. Book flights early as limited options."
+      }
+    ],
+    "local": {
+      "bus": [
+        "Public buses limited",
+        "Tourist bus to attractions",
+        "Hire car recommended"
+      ],
+      "taxi": [
+        "Taxi available in city",
+        "Negotiate for attractions trips",
+        "Didi limited"
+      ],
+      "bike": [
+        "Bike sharing limited",
+        "Flat city for cycling",
+        "Not recommended in desert"
+      ],
+      "walking": [
+        "City center walkable",
+        "Desert attractions require vehicle",
+        "Use tour transport"
+      ],
+      "rental": [
+        "Car rental recommended",
+        "Driver with car popular option",
+        "Tour operators for day trips"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "敦煌宾馆",
+      "nameEn": "Dunhuang Hotel",
+      "budget": "luxury",
+      "priceRange": "¥500-1000/night",
+      "address": "Dunhuang City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location",
+        "Historic hotel",
+        "Good service",
+        "Cultural decor"
+      ],
+      "bookingTips": "Best luxury in city. Book direct. Traditional Chinese style. Good base for sightseeing."
+    },
+    {
+      "name": "敦煌山庄",
+      "nameEn": "Dunhuang Mountain Villa",
+      "budget": "luxury",
+      "priceRange": "¥600-1200/night",
+      "address": "Near Mingsha Mountain",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Desert location",
+        "Great views",
+        "Luxury facilities",
+        "Unique experience"
+      ],
+      "bookingTips": "Best location near desert. Book desert view rooms. Amazing sunrise/sunset views. Great for photography."
+    },
+    {
+      "name": "丝路宾馆",
+      "nameEn": "Silk Road Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Silk Road theme",
+        "Central location",
+        "Good value",
+        "Cultural"
+      ],
+      "bookingTips": "Good mid-range option. Themed decor. Book direct for discounts. Good location for night market."
+    },
+    {
+      "name": "月牙泉客栈",
+      "nameEn": "Crescent Spring Inn",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "Near Crescent Spring",
+      "coordinates": {
+        "lat": 40.0921,
+        "lng": 94.7618
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near oasis",
+        "Desert views",
+        "Cozy",
+        "Unique"
+      ],
+      "bookingTips": "Stay near desert attractions. Book early for sunset/sunrise access. The location is magical."
+    },
+    {
+      "name": "敦煌青年旅舍",
+      "nameEn": "Dunhuang Youth Hostel",
+      "budget": "budget",
+      "priceRange": "¥50-150/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Budget-friendly",
+        "Social atmosphere",
+        "English spoken",
+        "Tour info"
+      ],
+      "bookingTips": "Best for backpackers. Organize desert tours here. Book ahead. Great for solo travelers."
+    },
+    {
+      "name": "沙漠露营基地",
+      "nameEn": "Desert Camping Base",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "Mingsha Mountain",
+      "coordinates": {
+        "lat": 40.0921,
+        "lng": 94.7618
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Desert camping",
+        "Star viewing",
+        "BBQ dinner",
+        "Sunrise"
+      ],
+      "bookingTips": "Book through tour operators. The starry night is unforgettable. Bring warm layers. Once-in-a-lifetime experience."
+    },
+    {
+      "name": "莫高窟招待所",
+      "nameEn": "Mogao Caves Guesthouse",
+      "budget": "budget",
+      "priceRange": "¥100-250/night",
+      "address": "Near Mogao Caves",
+      "coordinates": {
+        "lat": 40.0421,
+        "lng": 94.7618
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near caves",
+        "Quiet location",
+        "Simple",
+        "Value"
+      ],
+      "bookingTips": "Stay near caves for early access. Simple accommodation. Good for photographers wanting sunrise."
+    },
+    {
+      "name": "敦煌飞天大酒店",
+      "nameEn": "Dunhuang Feitian Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Modern",
+        "Central",
+        "Good service",
+        "Value"
+      ],
+      "bookingTips": "Newer hotel with western amenities. Good for business travelers. Book direct for best rates."
+    },
+    {
+      "name": "敦煌阳光沙洲酒店",
+      "nameEn": "Dunhuang Sunshine Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Central location",
+        "Clean",
+        "Good breakfast",
+        "Value"
+      ],
+      "bookingTips": "Reliable mid-range choice. Good location near markets. Book weekend rates."
+    },
+    {
+      "name": "雅丹地质公园营地",
+      "nameEn": "Yadan Geopark Camp",
+      "budget": "budget",
+      "priceRange": "¥100-200/night",
+      "address": "Yadan Park",
+      "coordinates": {
+        "lat": 40.5421,
+        "lng": 93.0618
+      },
+      "rating": 4.4,
+      "highlights": [
+        "In the park",
+        "Unique location",
+        "Adventure",
+        "Starry nights"
+      ],
+      "bookingTips": "Stay overnight at Yadan for sunset and stars. Basic facilities. The ghost city at night is magical."
+    },
+    {
+      "name": "敦煌锦江之星",
+      "nameEn": "Jinjiang Inn Dunhuang",
+      "budget": "budget",
+      "priceRange": "¥120-250/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Budget chain",
+        "Clean",
+        "Central",
+        "Reliable"
+      ],
+      "bookingTips": "Budget but consistent quality. Multiple locations. Book online for discounts."
+    },
+    {
+      "name": "丝路驿站",
+      "nameEn": "Silk Road Post Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-550/night",
+      "address": "Near Shazhou Market",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Themed hotel",
+        "Night market location",
+        "Good service",
+        "Cultural"
+      ],
+      "bookingTips": "Best for night market lovers. Themed Silk Road decor. Book center rooms for less noise."
+    },
+    {
+      "name": "玉门关酒店",
+      "nameEn": "Yumenguan Hotel",
+      "budget": "mid",
+      "priceRange": "¥250-500/night",
+      "address": "Near Yumenguan",
+      "coordinates": {
+        "lat": 40.4921,
+        "lng": 93.5618
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near pass",
+        "Remote location",
+        "Basic but clean",
+        "Desert experience"
+      ],
+      "bookingTips": "Stay overnight near Yumenguan for sunrise. Basic accommodation. The isolation is part of the experience."
+    },
+    {
+      "name": "阳关人家",
+      "nameEn": "Yangguan Homestay",
+      "budget": "budget",
+      "priceRange": "¥80-200/night",
+      "address": "Near Yangguan Pass",
+      "coordinates": {
+        "lat": 40.2921,
+        "lng": 94.3618
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Yangguan",
+        "Local family",
+        "Rural experience",
+        "Authentic"
+      ],
+      "bookingTips": "Stay with local families near ancient pass. Very authentic experience. Limited English. Bring gifts."
+    },
+    {
+      "name": "敦煌东线酒店",
+      "nameEn": "Dunhuang East Line Hotel",
+      "budget": "mid",
+      "priceRange": "¥280-500/night",
+      "address": "East Side",
+      "coordinates": {
+        "lat": 40.1621,
+        "lng": 94.7018
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Eastern attractions",
+        "Quiet",
+        "Clean",
+        "Value"
+      ],
+      "bookingTips": "Good base for Eastern circuit (Mogao alternative route). Quieter area. Book direct."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Works in city and some attractions",
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "City merchants accept",
+        "Remote areas may prefer cash"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Common in city",
+      "howToUse": [
+        "WeChat required",
+        "International version"
+      ],
+      "tips": [
+        "Works for some merchants",
+        "Remote areas use cash"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Essential for desert attractions",
+      "howToUse": [
+        "ATM in city",
+        "Bring to desert sites"
+      ],
+      "tips": [
+        "Remote sites don't accept mobile",
+        "Yurt camps require cash",
+        "Keep 500¥ for day trips"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "culture",
+      "title": "Mogao Caves Respect",
+      "content": "The Mogao Caves are sacred Buddhist sites. Don't photograph inside caves. Don't touch murals. Speak quietly. These are 1,000-year-old treasures.",
+      "importance": "high"
+    },
+    {
+      "category": "culture",
+      "title": "Desert Environment",
+      "content": "Dunhuang is at the edge of the Taklamakan Desert. The environment is fragile. Stay on marked paths, don't disturb desert wildlife, and carry out all trash.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Dunhuang Cuisine",
+      "content": "Dunhuang cuisine combines Gansu and Silk Road influences. Must-try: donkey meat yellow noodles, apricot peel drink, lamb skewers, and desert chives.",
+      "importance": "high"
+    },
+    {
+      "category": "timing",
+      "title": "Book Mogao Early",
+      "content": "Mogao Caves tickets sell out fast, especially in peak season (May-October). Book online weeks in advance or join morning queue very early.",
+      "importance": "high"
+    },
+    {
+      "category": "culture",
+      "title": "Islamic Culture",
+      "content": "Dunhuang has a significant Muslim community. Respect Islamic customs. The night market has excellent halal food options.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Desert Climate",
+      "content": "Desert temperatures vary greatly - hot daytime, cold nights. Even summer nights need warm layers. Bring sunscreen and water. Sandstorms can occur in spring.",
+      "importance": "high"
+    },
+    {
+      "category": "culture",
+      "title": "Silk Road History",
+      "content": "Dunhuang was a major Silk Road oasis where Buddhism, trade, and cultures met. The Mogao Caves were created by monks, merchants, and rulers over 1,000 years.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Night Market Culture",
+      "content": "Shazhou Night Market is the heart of Dunhuang evening life. Try local snacks, buy souvenirs, and enjoy the atmosphere. The apricot juice is a must-try.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Photography Etiquette",
+      "content": "Photography is prohibited inside Mogao Caves but allowed outside. At sand dunes, remove shoes before climbing. Respect signs at archaeological sites.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Visiting Temples",
+      "content": "When visiting Buddhist sites like Leiyin Temple, walk clockwise around statues, speak softly, and make offerings if invited by monks.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Starry Night",
+      "content": "Dunhuang has minimal light pollution, especially at desert camps. The Milky Way is visible on clear nights. Bring a telescope or just lie back and enjoy.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Dunhuang Souvenirs",
+      "content": "Look for goji berries, dried apricots, desert poplar crafts, and Buddhist art reproductions. The night market has good bargaining opportunities.",
+      "importance": "low"
+    },
+    {
+      "category": "dialect",
+      "title": "Local Language",
+      "content": "Mandarin is universal. Some Muslim vendors speak local dialect. Basic Mandarin phrases appreciated. Hand signals help in markets.",
+      "importance": "low"
+    },
+    {
+      "category": "etiquette",
+      "title": "Desert Activities",
+      "content": "When riding camels, follow handler instructions. Don't feed the animals. For sand sliding, protect electronics from sand. Wear goggles on windy days.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Ancient Passes",
+      "content": "Yumenguan and Yangguan passes were Silk Road fortresses. Visiting these lonely ruins with historical context creates a powerful experience of ancient travelers.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "敦煌急救中心",
+      "nameEn": "Dunhuang Emergency Center",
+      "phone": "120",
+      "notes": "Hospital has basic English"
+    },
+    {
+      "type": "police",
+      "name": "敦煌市公安局",
+      "nameEn": "Dunhuang Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major sites"
+    },
+    {
+      "type": "hospital",
+      "name": "敦煌市医院",
+      "nameEn": "Dunhuang Hospital",
+      "phone": "+86 937 882 2567",
+      "address": "Dunhuang City",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "notes": "Basic medical care available"
+    },
+    {
+      "type": "fire",
+      "name": "消防",
+      "nameEn": "Fire Department",
+      "phone": "119",
+      "notes": "Desert fire risk - be careful"
+    },
+    {
+      "type": "tourist-police",
+      "name": "敦煌旅游警察",
+      "nameEn": "Dunhuang Tourist Police",
+      "phone": "+86 937 882 9900",
+      "notes": "English-speaking tourist police"
+    },
+    {
+      "type": "embassy",
+      "name": "巴基斯坦驻乌鲁木齐总领事馆",
+      "nameEn": "Pakistan Consulate General Urumqi",
+      "phone": "+86 991 881 4083",
+      "address": "Urumqi",
+      "notes": "For Pakistani citizens"
+    },
+    {
+      "type": "desert",
+      "name": "沙漠救援",
+      "nameEn": "Desert Rescue",
+      "phone": "139 9371 2110",
+      "notes": "For desert emergencies"
+    },
+    {
+      "type": "weather",
+      "name": "敦煌气象服务",
+      "nameEn": "Dunhuang Weather Service",
+      "phone": "12121",
+      "notes": "Check before desert trips"
+    },
+    {
+      "type": "forest",
+      "name": "甘肃森林防火",
+      "nameEn": "Gansu Forest Fire",
+      "phone": "12119",
+      "notes": "Desert fire prevention"
+    },
+    {
+      "type": "road",
+      "name": "甘肃路政",
+      "nameEn": "Gansu Road Administration",
+      "phone": "12328",
+      "notes": "For road conditions"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Gansu dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water essential in desert"
+  }
+}
