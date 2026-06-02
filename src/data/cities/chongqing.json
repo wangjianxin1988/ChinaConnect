@@ -628,6 +628,508 @@
         "Hiking trails"
       ],
       "tips": "Best combined with cruise on Yangtze. Ancient military fortifications visible. Bring hiking shoes. Cooler temperature by river."
+    },
+    {
+      "id": "yangtze-cable",
+      "name": "长江索道",
+      "nameEn": "Yangtze River Cableway",
+      "category": "landmark",
+      "description": "横跨长江的索道，可俯瞰长江和两岸风光。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "07:30-22:30",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "长江",
+        "索道",
+        "城市风光"
+      ],
+      "tips": "体验重庆特色交通。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chaotianmen",
+      "name": "朝天门",
+      "nameEn": "Chaotianmen",
+      "category": "landmark",
+      "description": "长江和嘉陵江交汇处，重庆最古老的城门。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "两江交汇",
+        "码头"
+      ],
+      "tips": "看两江交汇。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-hotpot",
+      "name": "重庆火锅",
+      "nameEn": "Chongqing Hotpot",
+      "category": "street",
+      "description": "重庆最著名的美食，麻辣鲜香。",
+      "address": "重庆市",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均80元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "火锅",
+        "麻辣"
+      ],
+      "tips": "必吃重庆火锅。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "liziba",
+      "name": "李子坝轻轨站",
+      "nameEn": "Liziba Station",
+      "category": "landmark",
+      "description": "轻轨穿楼而过的奇特景观。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.55,
+        "lng": 106.53
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "轻轨穿楼"
+      ],
+      "tips": "拍照打卡。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "three-gorges",
+      "name": "三峡博物馆",
+      "nameEn": "Three Gorges Museum",
+      "category": "museum",
+      "description": "展示三峡地区历史文化的博物馆。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "三峡文化",
+        "历史"
+      ],
+      "tips": "了解重庆历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-night",
+      "name": "重庆夜景",
+      "nameEn": "Chongqing Night View",
+      "category": "landmark",
+      "description": "南山一棵树观景台可俯瞰重庆夜景。",
+      "address": "重庆市南岸区",
+      "coordinates": {
+        "lat": 29.53,
+        "lng": 106.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "城市夜景",
+        "灯光"
+      ],
+      "tips": "重庆夜景最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanshan-tree",
+      "name": "南山一棵树",
+      "nameEn": "Nanshan One Tree",
+      "category": "landmark",
+      "description": "重庆最佳观景台，可俯瞰整个渝中半岛。",
+      "address": "重庆市南岸区",
+      "coordinates": {
+        "lat": 29.53,
+        "lng": 106.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "城市全景"
+      ],
+      "tips": "看重庆夜景。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "ciqikou-temple",
+      "name": "宝轮寺",
+      "nameEn": "Baolun Temple",
+      "category": "temple",
+      "description": "磁器口古镇内的千年古寺。",
+      "address": "重庆市沙坪坝区",
+      "coordinates": {
+        "lat": 29.5,
+        "lng": 106.45
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古寺",
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-museum",
+      "name": "重庆中国三峡博物馆",
+      "nameEn": "Chongqing Three Gorges Museum",
+      "category": "museum",
+      "description": "展示三峡历史和巴渝文化的博物馆。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "三峡文化",
+        "巴渝文化"
+      ],
+      "tips": "了解重庆文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jinfo-mountain",
+      "name": "金佛山",
+      "nameEn": "Jinfo Mountain",
+      "category": "nature",
+      "description": "世界自然遗产，有喀斯特地貌和原始森林。",
+      "address": "重庆市南川区",
+      "coordinates": {
+        "lat": 29.15,
+        "lng": 107.18
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "90元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "喀斯特",
+        "森林",
+        "杜鹃花"
+      ],
+      "tips": "春季杜鹃花最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tiansheng-three",
+      "name": "天生三桥",
+      "nameEn": "Three Natural Bridges",
+      "category": "nature",
+      "description": "世界最大的天生桥群，三座天然石拱桥。",
+      "address": "重庆市武隆区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 107.77
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含武隆门票",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "天生桥",
+        "天坑"
+      ],
+      "tips": "电影取景地。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-cable",
+      "name": "嘉陵江索道",
+      "nameEn": "Jialing River Cableway",
+      "category": "landmark",
+      "description": "横跨嘉陵江的索道。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.57
+      },
+      "openingHours": "07:30-22:30",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "索道",
+        "江景"
+      ],
+      "tips": "体验重庆交通。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-university",
+      "name": "重庆大学",
+      "nameEn": "Chongqing University",
+      "category": "landmark",
+      "description": "重庆最著名的高等学府。",
+      "address": "重庆市沙坪坝区",
+      "coordinates": {
+        "lat": 29.52,
+        "lng": 106.45
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "校园风光"
+      ],
+      "tips": "了解重庆教育。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "fairy-mountain",
+      "name": "仙女山",
+      "nameEn": "Fairy Mountain",
+      "category": "nature",
+      "description": "重庆南部的高山草原，有南方的呼伦贝尔之称。",
+      "address": "重庆市武隆区",
+      "coordinates": {
+        "lat": 29.42,
+        "lng": 107.77
+      },
+      "openingHours": "全天",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "草原",
+        "森林",
+        "骑马"
+      ],
+      "tips": "夏季避暑冬季滑雪。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-people",
+      "name": "人民大礼堂",
+      "nameEn": "Great Hall of the People",
+      "category": "landmark",
+      "description": "重庆的标志性建筑，仿天坛祈年殿风格。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "建筑艺术"
+      ],
+      "tips": "了解重庆建筑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-art",
+      "name": "四川美术学院",
+      "nameEn": "Sichuan Fine Arts Institute",
+      "category": "landmark",
+      "description": "中国著名的美术学院，有涂鸦街。",
+      "address": "重庆市九龙坡区",
+      "coordinates": {
+        "lat": 29.5,
+        "lng": 106.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "涂鸦街",
+        "艺术"
+      ],
+      "tips": "感受重庆艺术。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "tiefosi",
+      "name": "铁佛寺",
+      "nameEn": "Tiefo Temple",
+      "category": "temple",
+      "description": "重庆古老的佛教寺庙。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "古寺"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-street",
+      "name": "解放碑步行街",
+      "nameEn": "Jiefangbei Pedestrian Street",
+      "category": "street",
+      "description": "重庆最繁华的商业步行街。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "购物好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-night-market",
+      "name": "南滨路夜市",
+      "nameEn": "Nanbin Road Night Market",
+      "category": "street",
+      "description": "重庆最热闹的夜市之一。",
+      "address": "重庆市南岸区",
+      "coordinates": {
+        "lat": 29.53,
+        "lng": 106.58
+      },
+      "openingHours": "18:00-24:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "夜市",
+        "美食"
+      ],
+      "tips": "品尝重庆小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-mountain",
+      "name": "歌乐山",
+      "nameEn": "Geleshan",
+      "category": "nature",
+      "description": "重庆西北部的山脉，有渣滓洞和白公馆。",
+      "address": "重庆市沙坪坝区",
+      "coordinates": {
+        "lat": 29.52,
+        "lng": 106.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "渣滓洞",
+        "白公馆",
+        "森林"
+      ],
+      "tips": "了解抗战历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "ciqikou-food",
+      "name": "磁器口小吃",
+      "nameEn": "Ciqikou Food",
+      "category": "street",
+      "description": "磁器口古镇的各种小吃，有陈麻花、毛血旺等。",
+      "address": "重庆市沙坪坝区",
+      "coordinates": {
+        "lat": 29.5,
+        "lng": 106.45
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "陈麻花",
+        "毛血旺"
+      ],
+      "tips": "品尝重庆小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-river",
+      "name": "嘉陵江",
+      "nameEn": "Jialing River",
+      "category": "nature",
+      "description": "长江支流，穿城而过。",
+      "address": "重庆市",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.57
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "江景"
+      ],
+      "tips": "看两江风光。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-bridge",
+      "name": "千厮门大桥",
+      "nameEn": "Qiansimen Bridge",
+      "category": "landmark",
+      "description": "横跨嘉陵江的大桥，夜景很美。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.57
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "夜景"
+      ],
+      "tips": "拍照打卡。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chongqing-temple",
+      "name": "罗汉寺",
+      "nameEn": "Luohan Temple",
+      "category": "temple",
+      "description": "重庆最古老的佛教寺院，有500罗汉像。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "500罗汉",
+        "古寺"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

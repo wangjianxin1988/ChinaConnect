@@ -720,6 +720,317 @@
         "Photography spot"
       ],
       "tips": "Arrive 30 minutes before sunset for best photos. The golden light on the pagoda is magical. Combine with evening walk around the lake."
+    },
+    {
+      "id": "broken-bridge",
+      "name": "断桥",
+      "nameEn": "Broken Bridge",
+      "category": "landmark",
+      "description": "西湖十景之断桥残雪，白娘子与许仙相遇地。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.25,
+        "lng": 120.15
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "断桥残雪",
+        "白娘子传说"
+      ],
+      "tips": "冬季雪景最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "longjing-village",
+      "name": "龙井村",
+      "nameEn": "Longjing Village",
+      "category": "street",
+      "description": "中国最著名的龙井茶产地，可品尝正宗龙井茶。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.22,
+        "lng": 120.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "龙井茶",
+        "茶园",
+        "品茶"
+      ],
+      "tips": "品尝正宗龙井。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xihu-museum",
+      "name": "浙江省博物馆",
+      "nameEn": "Zhejiang Provincial Museum",
+      "category": "museum",
+      "description": "馆藏文物10万余件，以良渚文化玉器最著名。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.25,
+        "lng": 120.15
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "良渚文化",
+        "玉器"
+      ],
+      "tips": "了解浙江文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "qianjiang-new",
+      "name": "钱江新城",
+      "nameEn": "Qianjiang New City",
+      "category": "landmark",
+      "description": "杭州新城区，有现代化建筑群。",
+      "address": "杭州市江干区",
+      "coordinates": {
+        "lat": 30.25,
+        "lng": 120.2
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "现代建筑"
+      ],
+      "tips": "感受杭州发展。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "song-cheng",
+      "name": "宋城",
+      "nameEn": "Song Dynasty Town",
+      "category": "landmark",
+      "description": "以宋代文化为主题的大型公园，有《宋城千古情》演出。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.2,
+        "lng": 120.12
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "310元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "千古情",
+        "宋代文化"
+      ],
+      "tips": "观看千古情演出。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nine-creeks",
+      "name": "九溪烟树",
+      "nameEn": "Nine Creeks",
+      "category": "nature",
+      "description": "西湖西部的溪流景区，有九溪十八涧。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.22,
+        "lng": 120.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "溪流",
+        "森林"
+      ],
+      "tips": "夏季避暑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-tea",
+      "name": "茶文化",
+      "nameEn": "Hangzhou Tea Culture",
+      "category": "street",
+      "description": "杭州是中国茶都，有龙井茶和茶文化。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.22,
+        "lng": 120.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "龙井茶",
+        "茶文化"
+      ],
+      "tips": "品尝杭州茶。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-food",
+      "name": "杭帮菜",
+      "nameEn": "Hangbang Cuisine",
+      "category": "street",
+      "description": "杭州传统菜系，有西湖醋鱼、东坡肉等。",
+      "address": "杭州市",
+      "coordinates": {
+        "lat": 30.25,
+        "lng": 120.15
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均100元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "西湖醋鱼",
+        "东坡肉"
+      ],
+      "tips": "品尝杭帮菜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-night",
+      "name": "杭州夜景",
+      "nameEn": "Hangzhou Night View",
+      "category": "landmark",
+      "description": "西湖和钱塘江的夜景灯光秀。",
+      "address": "杭州市",
+      "coordinates": {
+        "lat": 30.25,
+        "lng": 120.15
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-museum",
+      "name": "杭州博物馆",
+      "nameEn": "Hangzhou Museum",
+      "category": "museum",
+      "description": "展示杭州历史的博物馆。",
+      "address": "杭州市上城区",
+      "coordinates": {
+        "lat": 30.23,
+        "lng": 120.17
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "杭州历史"
+      ],
+      "tips": "了解杭州文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-university",
+      "name": "浙江大学",
+      "nameEn": "Zhejiang University",
+      "category": "landmark",
+      "description": "中国最著名的高等学府之一。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.27,
+        "lng": 120.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "校园风光"
+      ],
+      "tips": "了解杭州教育。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-bay",
+      "name": "杭州湾",
+      "nameEn": "Hangzhou Bay",
+      "category": "nature",
+      "description": "钱塘江入海口，有著名的钱塘潮。",
+      "address": "杭州市",
+      "coordinates": {
+        "lat": 30.3,
+        "lng": 120.5
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "钱塘潮"
+      ],
+      "tips": "观潮好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-bridge",
+      "name": "钱塘江大桥",
+      "nameEn": "Qiantang River Bridge",
+      "category": "landmark",
+      "description": "中国第一座自行设计的公路铁路两用桥。",
+      "address": "杭州市",
+      "coordinates": {
+        "lat": 30.2,
+        "lng": 120.15
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "历史"
+      ],
+      "tips": "了解中国桥梁史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-silk",
+      "name": "丝绸博物馆",
+      "nameEn": "Silk Museum",
+      "category": "museum",
+      "description": "展示中国丝绸文化的博物馆。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.23,
+        "lng": 120.17
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "丝绸文化"
+      ],
+      "tips": "了解丝绸历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hangzhou-park",
+      "name": "太子湾公园",
+      "nameEn": "Prince Bay Park",
+      "category": "park",
+      "description": "杭州最美的公园之一，春季郁金香盛开。",
+      "address": "杭州市西湖区",
+      "coordinates": {
+        "lat": 30.23,
+        "lng": 120.15
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "郁金香",
+        "樱花"
+      ],
+      "tips": "春季最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
