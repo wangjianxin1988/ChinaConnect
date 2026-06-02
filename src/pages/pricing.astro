@@ -2,7 +2,7 @@
 /**
  * Pricing Page
  * Displays subscription tiers, feature comparison, and FAQ
- * Integrates with Stripe Checkout for real payments
+ * Integrates with Creem Checkout for real payments
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -322,7 +322,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
           </div>
           <div class="bg-white rounded-xl border border-gray-200 p-6">
             <h3 class="font-semibold text-gray-900 mb-2">What payment methods do you accept?</h3>
-            <p class="text-gray-600 text-sm">We accept all major credit cards through Stripe. Annual plans can also be paid via bank transfer. All payments are securely processed by Stripe.</p>
+            <p class="text-gray-600 text-sm">We accept all major credit cards. Annual plans can also be paid via bank transfer. All payments are securely processed by our payment partner.</p>
           </div>
         </div>
       </div>
@@ -422,7 +422,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
       } catch (error: unknown) {
         const message = error instanceof Error ? error.message : 'Unknown error';
         console.error('Checkout error:', message);
-        alert(`Checkout error: ${message}\n\nPlease make sure Stripe is configured properly.`);
+        alert(`Checkout error: ${message}\n\nPlease make sure payment is configured properly.`);
         button.textContent = originalText;
         button.disabled = false;
         localStorage.removeItem('pending_checkout_tier');
