@@ -699,6 +699,446 @@
         "Yi River views"
       ],
       "tips": "About 250km from Xi'an - best as overnight trip. Morning visits best for photos. Comfortable shoes essential."
+    },
+    {
+      "id": "terracotta",
+      "name": "兵马俑",
+      "nameEn": "Terracotta Warriors",
+      "category": "museum",
+      "description": "世界第八大奇迹，秦始皇陵的陪葬坑。",
+      "address": "西安市临潼区",
+      "coordinates": {
+        "lat": 34.38,
+        "lng": 109.28
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "120元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "兵马俑",
+        "铜车马"
+      ],
+      "tips": "必看兵马俑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "big-wild-goose",
+      "name": "大雁塔",
+      "nameEn": "Big Wild Goose Pagoda",
+      "category": "temple",
+      "description": "唐代高僧玄奘为保存佛经而建的佛塔。",
+      "address": "西安市雁塔区",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "佛塔",
+        "玄奘"
+      ],
+      "tips": "了解唐代文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "huangqing",
+      "name": "华清池",
+      "nameEn": "Huaqing Pool",
+      "category": "nature",
+      "description": "唐代皇家温泉行宫，杨贵妃沐浴之地。",
+      "address": "西安市临潼区",
+      "coordinates": {
+        "lat": 34.35,
+        "lng": 109.28
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "120元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "温泉",
+        "杨贵妃"
+      ],
+      "tips": "了解唐代历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-food",
+      "name": "西安美食",
+      "nameEn": "Xi'an Food",
+      "category": "street",
+      "description": "西安是中国美食之都，有各种小吃。",
+      "address": "西安市",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "羊肉泡馍",
+        "肉夹馍"
+      ],
+      "tips": "品尝西安美食。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-night",
+      "name": "西安夜景",
+      "nameEn": "Xi'an Night View",
+      "category": "landmark",
+      "description": "钟鼓楼和大雁塔的夜景灯光秀。",
+      "address": "西安市",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-museum",
+      "name": "西安博物院",
+      "nameEn": "Xi'an Museum",
+      "category": "museum",
+      "description": "展示西安历史的博物馆。",
+      "address": "西安市碑林区",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "西安历史"
+      ],
+      "tips": "了解西安文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-park",
+      "name": "兴庆宫公园",
+      "nameEn": "Xingqing Palace Park",
+      "category": "park",
+      "description": "唐代兴庆宫遗址上的公园。",
+      "address": "西安市碑林区",
+      "coordinates": {
+        "lat": 34.25,
+        "lng": 108.97
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "唐代遗址",
+        "公园"
+      ],
+      "tips": "了解唐代文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-temple",
+      "name": "大慈恩寺",
+      "nameEn": "Da Ci'en Temple",
+      "category": "temple",
+      "description": "大雁塔所在的寺院，唐代皇家寺院。",
+      "address": "西安市雁塔区",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "大雁塔",
+        "佛教文化"
+      ],
+      "tips": "了解唐代佛教。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-street",
+      "name": "书院门",
+      "nameEn": "Shuyuan Gate",
+      "category": "street",
+      "description": "西安最古老的文化街，有各种书画和文房四宝。",
+      "address": "西安市碑林区",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "书画",
+        "文房四宝"
+      ],
+      "tips": "了解西安文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-banpo",
+      "name": "半坡博物馆",
+      "nameEn": "Banpo Museum",
+      "category": "museum",
+      "description": "展示6000年前仰韶文化遗址的博物馆。",
+      "address": "西安市灞桥区",
+      "coordinates": {
+        "lat": 34.3,
+        "lng": 109.05
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "仰韶文化",
+        "遗址"
+      ],
+      "tips": "了解史前文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-forest",
+      "name": "碑林",
+      "nameEn": "Forest of Steles",
+      "category": "museum",
+      "description": "中国最大的石刻博物馆，有大量碑刻。",
+      "address": "西安市碑林区",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.93
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "65元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "碑刻",
+        "书法"
+      ],
+      "tips": "了解中国书法。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-mosque",
+      "name": "大清真寺",
+      "nameEn": "Great Mosque",
+      "category": "temple",
+      "description": "中国四大清真寺之一，有1200多年历史。",
+      "address": "西安市莲湖区",
+      "coordinates": {
+        "lat": 34.27,
+        "lng": 108.93
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "伊斯兰建筑",
+        "宗教文化"
+      ],
+      "tips": "了解伊斯兰文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-bridge",
+      "name": "灞桥",
+      "nameEn": "Ba Bridge",
+      "category": "landmark",
+      "description": "西安东部的古桥，有2000多年历史。",
+      "address": "西安市灞桥区",
+      "coordinates": {
+        "lat": 34.3,
+        "lng": 109.05
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "古桥",
+        "历史"
+      ],
+      "tips": "了解西安历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-wei",
+      "name": "渭河",
+      "nameEn": "Wei River",
+      "category": "nature",
+      "description": "黄河最大的支流，穿城而过。",
+      "address": "西安市",
+      "coordinates": {
+        "lat": 34.3,
+        "lng": 108.93
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "河流"
+      ],
+      "tips": "看渭河风光。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-mountain",
+      "name": "骊山",
+      "nameEn": "Lishan Mountain",
+      "category": "nature",
+      "description": "华清池后面的山，有烽火台和兵谏亭。",
+      "address": "西安市临潼区",
+      "coordinates": {
+        "lat": 34.35,
+        "lng": 109.28
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "含华清池",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "烽火台",
+        "兵谏亭"
+      ],
+      "tips": "了解西安历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-famen",
+      "name": "法门寺",
+      "nameEn": "Famen Temple",
+      "category": "temple",
+      "description": "供奉佛祖释迦牟尼真身舍利的寺院。",
+      "address": "宝鸡市扶风县",
+      "coordinates": {
+        "lat": 34.38,
+        "lng": 107.88
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "佛指舍利",
+        "地宫"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-huashan",
+      "name": "华山",
+      "nameEn": "Mount Hua",
+      "category": "nature",
+      "description": "五岳之西岳，以险峻著称。",
+      "address": "渭南市华阴市",
+      "coordinates": {
+        "lat": 34.48,
+        "lng": 110.1
+      },
+      "openingHours": "全天",
+      "ticketPrice": "160元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "长空栈道",
+        "鹞子翻身",
+        "日出"
+      ],
+      "tips": "登华山看日出。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-forest2",
+      "name": "小雁塔",
+      "nameEn": "Small Wild Goose Pagoda",
+      "category": "temple",
+      "description": "唐代佛塔，与大雁塔齐名。",
+      "address": "西安市碑林区",
+      "coordinates": {
+        "lat": 34.25,
+        "lng": 108.93
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛塔",
+        "历史"
+      ],
+      "tips": "了解唐代文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-street2",
+      "name": "永兴坊",
+      "nameEn": "Yongxing Fang",
+      "category": "street",
+      "description": "西安新开发的美食街区。",
+      "address": "西安市碑林区",
+      "coordinates": {
+        "lat": 34.26,
+        "lng": 108.97
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "美食",
+        "摔碗酒"
+      ],
+      "tips": "品尝西安小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-temple2",
+      "name": "青龙寺",
+      "nameEn": "Qinglong Temple",
+      "category": "temple",
+      "description": "唐代佛教寺院，有空海纪念碑。",
+      "address": "西安市雁塔区",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "樱花",
+        "空海"
+      ],
+      "tips": "春季樱花最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xian-park2",
+      "name": "大唐芙蓉园",
+      "nameEn": "Tang Paradise",
+      "category": "park",
+      "description": "以唐代文化为主题的大型公园。",
+      "address": "西安市雁塔区",
+      "coordinates": {
+        "lat": 34.22,
+        "lng": 108.95
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "120元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "唐代文化",
+        "水幕电影"
+      ],
+      "tips": "了解唐代文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

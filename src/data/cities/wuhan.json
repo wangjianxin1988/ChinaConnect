@@ -698,6 +698,442 @@
         "Group activities"
       ],
       "tips": "Book through travel agencies. Wear water shoes and bring change of clothes. Not suitable for young children or elderly. Best in summer."
+    },
+    {
+      "id": "yellow-crane",
+      "name": "黄鹤楼",
+      "nameEn": "Yellow Crane Tower",
+      "category": "landmark",
+      "description": "中国四大名楼之一，有天下江山第一楼之称。",
+      "address": "武汉市武昌区",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "70元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "长江",
+        "城市全景"
+      ],
+      "tips": "登楼看长江。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hubei-museum",
+      "name": "湖北省博物馆",
+      "nameEn": "Hubei Provincial Museum",
+      "category": "museum",
+      "description": "馆藏文物24万件，以曾侯乙编钟最著名。",
+      "address": "武汉市武昌区",
+      "coordinates": {
+        "lat": 30.57,
+        "lng": 114.35
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "编钟",
+        "越王勾践剑"
+      ],
+      "tips": "必看编钟。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-uni",
+      "name": "武汉大学",
+      "nameEn": "Wuhan University",
+      "category": "landmark",
+      "description": "中国最美丽的大学之一，春季樱花闻名全国。",
+      "address": "武汉市武昌区",
+      "coordinates": {
+        "lat": 30.53,
+        "lng": 114.37
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "樱花",
+        "校园建筑"
+      ],
+      "tips": "3月樱花最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "hubu-alley",
+      "name": "户部巷",
+      "nameEn": "Hubu Alley",
+      "category": "street",
+      "description": "武汉最著名的小吃街，有热干面等武汉小吃。",
+      "address": "武汉市武昌区",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "热干面",
+        "豆皮",
+        "小吃"
+      ],
+      "tips": "品尝武汉小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "yangtze-bridge",
+      "name": "武汉长江大桥",
+      "nameEn": "Wuhan Yangtze River Bridge",
+      "category": "landmark",
+      "description": "中国第一座长江大桥，有万里长江第一桥之称。",
+      "address": "武汉市武昌区",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "长江"
+      ],
+      "tips": "了解中国桥梁史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-food",
+      "name": "武汉美食",
+      "nameEn": "Wuhan Food",
+      "category": "street",
+      "description": "武汉有热干面和各种小吃。",
+      "address": "武汉市",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "热干面",
+        "豆皮",
+        "鸭脖"
+      ],
+      "tips": "品尝武汉美食。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-night",
+      "name": "武汉夜景",
+      "nameEn": "Wuhan Night View",
+      "category": "landmark",
+      "description": "长江两岸的夜景灯光秀。",
+      "address": "武汉市",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-botanical",
+      "name": "武汉植物园",
+      "nameEn": "Wuhan Botanical Garden",
+      "category": "nature",
+      "description": "华中地区最大的植物园。",
+      "address": "武汉市武昌区",
+      "coordinates": {
+        "lat": 30.53,
+        "lng": 114.42
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "35元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "植物"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-zoo",
+      "name": "武汉动物园",
+      "nameEn": "Wuhan Zoo",
+      "category": "nature",
+      "description": "武汉最大的动物园。",
+      "address": "武汉市汉阳区",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.27
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "动物"
+      ],
+      "tips": "适合亲子游。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-science",
+      "name": "武汉科技馆",
+      "nameEn": "Wuhan Science Museum",
+      "category": "museum",
+      "description": "华中地区最大的科技馆。",
+      "address": "武汉市江岸区",
+      "coordinates": {
+        "lat": 30.58,
+        "lng": 114.3
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "科技展览"
+      ],
+      "tips": "适合亲子游。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "mulan-tianchi",
+      "name": "木兰天池",
+      "nameEn": "Mulan Tianchi",
+      "category": "nature",
+      "description": "武汉北部的风景区，有天池和瀑布。",
+      "address": "武汉市黄陂区",
+      "coordinates": {
+        "lat": 30.88,
+        "lng": 114.37
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "80元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "天池",
+        "瀑布"
+      ],
+      "tips": "夏季避暑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-art",
+      "name": "武汉美术馆",
+      "nameEn": "Wuhan Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品。",
+      "address": "武汉市江岸区",
+      "coordinates": {
+        "lat": 30.58,
+        "lng": 114.3
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "huazhong-uni",
+      "name": "华中科技大学",
+      "nameEn": "Huazhong University",
+      "category": "landmark",
+      "description": "中国最著名的理工科大学之一。",
+      "address": "武汉市洪山区",
+      "coordinates": {
+        "lat": 30.52,
+        "lng": 114.42
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "校园风光"
+      ],
+      "tips": "了解武汉教育。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuchang-riverside",
+      "name": "武昌江滩",
+      "nameEn": "Wuchang Riverside",
+      "category": "landmark",
+      "description": "长江边的休闲区。",
+      "address": "武汉市武昌区",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "长江",
+        "休闲"
+      ],
+      "tips": "傍晚散步。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "cailinji",
+      "name": "蔡林记",
+      "nameEn": "Cailinji",
+      "category": "street",
+      "description": "武汉最有名的热干面店。",
+      "address": "武汉市",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均15元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "热干面"
+      ],
+      "tips": "品尝正宗热干面。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-metro",
+      "name": "武汉地铁",
+      "nameEn": "Wuhan Metro",
+      "category": "landmark",
+      "description": "中国重要的城市轨道交通系统。",
+      "address": "武汉市",
+      "coordinates": {
+        "lat": 30.55,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "2元起",
+      "recommendedVisitTime": "随时",
+      "highlights": [
+        "地铁",
+        "交通"
+      ],
+      "tips": "体验武汉交通。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuhan-park",
+      "name": "解放公园",
+      "nameEn": "Jiefang Park",
+      "category": "park",
+      "description": "武汉最大的公园之一。",
+      "address": "武汉市江岸区",
+      "coordinates": {
+        "lat": 30.58,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "花园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-bridge2",
+      "name": "武汉长江二桥",
+      "nameEn": "Wuhan Second Yangtze Bridge",
+      "category": "landmark",
+      "description": "横跨长江的第二座大桥。",
+      "address": "武汉市",
+      "coordinates": {
+        "lat": 30.58,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "长江"
+      ],
+      "tips": "看长江风光。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-street",
+      "name": "江汉路",
+      "nameEn": "Jianghan Road",
+      "category": "street",
+      "description": "武汉最繁华的商业步行街。",
+      "address": "武汉市江汉区",
+      "coordinates": {
+        "lat": 30.58,
+        "lng": 114.28
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "购物好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-hankou",
+      "name": "汉口老租界",
+      "nameEn": "Hankou Old Concession",
+      "category": "street",
+      "description": "保留了大量欧式建筑的历史街区。",
+      "address": "武汉市江岸区",
+      "coordinates": {
+        "lat": 30.58,
+        "lng": 114.3
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "欧式建筑",
+        "历史"
+      ],
+      "tips": "了解武汉历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-garden",
+      "name": "中山公园",
+      "nameEn": "Zhongshan Park",
+      "category": "park",
+      "description": "武汉最大的公园之一。",
+      "address": "武汉市江汉区",
+      "coordinates": {
+        "lat": 30.58,
+        "lng": 114.28
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

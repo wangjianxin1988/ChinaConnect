@@ -583,6 +583,545 @@
         "Shows"
       ],
       "tips": "Arrive early for pandas. Take观光车. Great for families."
+    },
+    {
+      "id": "nb-tianyi",
+      "name": "天一阁",
+      "nameEn": "Tianyi Pavilion",
+      "category": "museum",
+      "description": "中国现存最早的私家藏书楼，有450多年历史。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "藏书楼",
+        "园林"
+      ],
+      "tips": "了解中国文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-bund",
+      "name": "老外滩",
+      "nameEn": "Old Bund",
+      "category": "street",
+      "description": "宁波最古老的商业街区，有欧式建筑。",
+      "address": "宁波市江北区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "欧式建筑",
+        "酒吧街"
+      ],
+      "tips": "体验宁波夜生活。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-xuedou",
+      "name": "雪窦山",
+      "nameEn": "Xuedou Mountain",
+      "category": "nature",
+      "description": "奉化区的名山，有弥勒大佛。",
+      "address": "宁波市奉化区",
+      "coordinates": {
+        "lat": 29.65,
+        "lng": 121.42
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "弥勒大佛",
+        "千丈岩"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-museum",
+      "name": "宁波博物馆",
+      "nameEn": "Ningbo Museum",
+      "category": "museum",
+      "description": "展示宁波历史的博物馆。",
+      "address": "宁波市鄞州区",
+      "coordinates": {
+        "lat": 29.85,
+        "lng": 121.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "宁波历史"
+      ],
+      "tips": "了解宁波文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-tangyuan",
+      "name": "宁波汤圆",
+      "nameEn": "Ningbo Tangyuan",
+      "category": "street",
+      "description": "宁波最著名的美食。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "汤圆",
+        "海鲜"
+      ],
+      "tips": "品尝宁波美食。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-tiantong",
+      "name": "天童寺",
+      "nameEn": "Tiantong Temple",
+      "category": "temple",
+      "description": "中国佛教禅宗五山之一。",
+      "address": "宁波市鄞州区",
+      "coordinates": {
+        "lat": 29.82,
+        "lng": 121.72
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "古寺"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-yuelake",
+      "name": "月湖公园",
+      "nameEn": "Moon Lake Park",
+      "category": "park",
+      "description": "宁波最美的公园，有月湖。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "月湖",
+        "园林"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-night",
+      "name": "宁波夜景",
+      "nameEn": "Ningbo Night View",
+      "category": "landmark",
+      "description": "三江口和老外滩的夜景。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-bridge",
+      "name": "杭州湾跨海大桥",
+      "nameEn": "Hangzhou Bay Bridge",
+      "category": "landmark",
+      "description": "杭州湾跨海大桥。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 30.0,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "通行费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "海景"
+      ],
+      "tips": "看海景。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-nantang",
+      "name": "南塘老街",
+      "nameEn": "Nantang Old Street",
+      "category": "street",
+      "description": "宁波新开发的历史文化街区。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验宁波文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-ashoka",
+      "name": "阿育王寺",
+      "nameEn": "Ashoka Temple",
+      "category": "temple",
+      "description": "中国佛教禅宗五山之一，有释迦牟尼真身舍利。",
+      "address": "宁波市鄞州区",
+      "coordinates": {
+        "lat": 29.82,
+        "lng": 121.72
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "舍利",
+        "佛教文化"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-siming",
+      "name": "四明山",
+      "nameEn": "Siming Mountain",
+      "category": "nature",
+      "description": "宁波西部的山脉。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.82,
+        "lng": 121.32
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-songlan",
+      "name": "松兰山海滩",
+      "nameEn": "Songlan Mountain Beach",
+      "category": "beach",
+      "description": "宁波最美的海滩。",
+      "address": "宁波市象山县",
+      "coordinates": {
+        "lat": 29.48,
+        "lng": 121.97
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "海水"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-art",
+      "name": "宁波美术馆",
+      "nameEn": "Ningbo Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-seafood",
+      "name": "宁波海鲜",
+      "nameEn": "Ningbo Seafood",
+      "category": "street",
+      "description": "宁波有最新鲜的海鲜。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均80元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "海鲜"
+      ],
+      "tips": "品尝宁波海鲜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-rihu",
+      "name": "日湖公园",
+      "nameEn": "Rihu Park",
+      "category": "park",
+      "description": "宁波东部的公园。",
+      "address": "宁波市江东区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "湖泊"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-chenghuang",
+      "name": "城隍庙",
+      "nameEn": "City God Temple",
+      "category": "street",
+      "description": "宁波最古老的商业街区。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验宁波文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-baoguo",
+      "name": "保国寺",
+      "nameEn": "Baoguo Temple",
+      "category": "temple",
+      "description": "中国现存最古老的木结构建筑之一。",
+      "address": "宁波市江北区",
+      "coordinates": {
+        "lat": 29.9,
+        "lng": 121.52
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古建筑",
+        "佛教文化"
+      ],
+      "tips": "了解古建筑。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-yushan",
+      "name": "渔山列岛",
+      "nameEn": "Yushan Islands",
+      "category": "nature",
+      "description": "宁波附近的小岛群，有美丽的海景。",
+      "address": "宁波市象山县",
+      "coordinates": {
+        "lat": 29.2,
+        "lng": 122.22
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海岛",
+        "海景"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-sanjiangkou-night",
+      "name": "三江口夜景",
+      "nameEn": "Sanjiangkou Night View",
+      "category": "landmark",
+      "description": "宁波三江口的夜景灯光秀。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-drum-tower",
+      "name": "鼓楼",
+      "nameEn": "Drum Tower",
+      "category": "landmark",
+      "description": "宁波的标志性建筑。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "鼓楼",
+        "历史"
+      ],
+      "tips": "了解宁波历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-fashion",
+      "name": "宁波服装博物馆",
+      "nameEn": "Ningbo Fashion Museum",
+      "category": "museum",
+      "description": "展示中国服装文化的博物馆。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "服装文化"
+      ],
+      "tips": "了解中国服装。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-zhaobao",
+      "name": "招宝山",
+      "nameEn": "Zhaobao Mountain",
+      "category": "nature",
+      "description": "宁波北部的小山。",
+      "address": "宁波市镇海区",
+      "coordinates": {
+        "lat": 29.95,
+        "lng": 121.72
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "山峰",
+        "海景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-ninggao",
+      "name": "宁波年糕",
+      "nameEn": "Ningbo Rice Cake",
+      "category": "street",
+      "description": "宁波传统美食。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均15元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "年糕"
+      ],
+      "tips": "品尝宁波年糕。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-yaojiang",
+      "name": "姚江公园",
+      "nameEn": "Yaojiang Park",
+      "category": "park",
+      "description": "宁波西部的公园。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.52
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "公园",
+        "江景"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-qita",
+      "name": "七塔寺",
+      "nameEn": "Qita Temple",
+      "category": "temple",
+      "description": "宁波最古老的佛教寺院之一。",
+      "address": "宁波市江东区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.58
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [

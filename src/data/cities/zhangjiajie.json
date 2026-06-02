@@ -721,6 +721,425 @@
         "Hei Long Xia"
       ],
       "tips": "Take shuttle bus from entrance. Walk downhill through the bridges. Elevators available as alternative. Stunning scenery."
+    },
+    {
+      "id": "zjj-glass",
+      "name": "张家界大峡谷玻璃桥",
+      "nameEn": "Zhangjiajie Grand Canyon Glass Bridge",
+      "category": "landmark",
+      "description": "世界最长最高的玻璃桥，长430米，高300米。",
+      "address": "张家界市慈利县",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.73
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "138元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "玻璃桥",
+        "峡谷"
+      ],
+      "tips": "体验高空玻璃桥。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-tianmen",
+      "name": "天门山",
+      "nameEn": "Tianmen Mountain",
+      "category": "nature",
+      "description": "有天门洞和玻璃栈道，是张家界最著名的景点之一。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "258元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "天门洞",
+        "玻璃栈道",
+        "索道"
+      ],
+      "tips": "体验高空玻璃栈道。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-national",
+      "name": "张家界国家森林公园",
+      "nameEn": "Zhangjiajie National Forest Park",
+      "category": "nature",
+      "description": "世界地质公园，有独特的砂岩峰林地貌。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "225元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "砂岩峰林",
+        "金鞭溪",
+        "袁家界"
+      ],
+      "tips": "电影《阿凡达》取景地。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-bridge",
+      "name": "天桥",
+      "nameEn": "Natural Bridge",
+      "category": "nature",
+      "description": "张家界天然石拱桥。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "天然石桥"
+      ],
+      "tips": "了解地质奇观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-food",
+      "name": "张家界美食",
+      "nameEn": "Zhangjiajie Food",
+      "category": "street",
+      "description": "张家界有土家族特色美食。",
+      "address": "张家界市",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "土家族菜",
+        "三下锅"
+      ],
+      "tips": "品尝张家界美食。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-museum",
+      "name": "张家界博物馆",
+      "nameEn": "Zhangjiajie Museum",
+      "category": "museum",
+      "description": "展示张家界历史和地质的博物馆。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "地质",
+        "历史"
+      ],
+      "tips": "了解张家界文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-mountain",
+      "name": "天子山",
+      "nameEn": "Tianzi Mountain",
+      "category": "nature",
+      "description": "张家界最高的山峰，可俯瞰整个景区。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "峰林",
+        "云海"
+      ],
+      "tips": "看云海日出。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-stream",
+      "name": "金鞭溪",
+      "nameEn": "Golden Whip Stream",
+      "category": "nature",
+      "description": "张家界最美的溪流，全长7.5公里。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "溪流",
+        "森林",
+        "猴子"
+      ],
+      "tips": "漫步溪边。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-garden",
+      "name": "宝峰湖",
+      "nameEn": "Baofeng Lake",
+      "category": "nature",
+      "description": "张家界的人工湖，有高峡平湖之称。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "96元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "湖泊",
+        "峡谷"
+      ],
+      "tips": "乘船游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-cave",
+      "name": "黄龙洞",
+      "nameEn": "Yellow Dragon Cave",
+      "category": "nature",
+      "description": "中国最长的溶洞之一，有定海神针等景观。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "溶洞",
+        "钟乳石"
+      ],
+      "tips": "了解溶洞奇观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-street",
+      "name": "溪布街",
+      "nameEn": "Xibu Street",
+      "category": "street",
+      "description": "张家界最有特色的文化街区。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "文化",
+        "小吃"
+      ],
+      "tips": "体验土家族文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-mountain2",
+      "name": "杨家界",
+      "nameEn": "Yangjiajie",
+      "category": "nature",
+      "description": "张家界新开发的景区，有天然长城之称。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "天然长城",
+        "峰林"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-valley",
+      "name": "袁家界",
+      "nameEn": "Yuanjiajie",
+      "category": "nature",
+      "description": "张家界最著名的景区，有乾坤柱等景观。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "乾坤柱",
+        "天下第一桥"
+      ],
+      "tips": "电影《阿凡达》取景地。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-bridge2",
+      "name": "天下第一桥",
+      "nameEn": "First Bridge Under Heaven",
+      "category": "nature",
+      "description": "天然石拱桥，高350米，跨度50米。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "天然石桥"
+      ],
+      "tips": "了解地质奇观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-street2",
+      "name": "大庸古城",
+      "nameEn": "Dayong Ancient City",
+      "category": "street",
+      "description": "张家界新开发的历史文化街区。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "古城",
+        "文化"
+      ],
+      "tips": "了解张家界历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-mountain3",
+      "name": "天门洞",
+      "nameEn": "Tianmen Cave",
+      "category": "nature",
+      "description": "天门山上的天然穿山溶洞，高131米。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "含天门山",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "天门洞",
+        "999级台阶"
+      ],
+      "tips": "攀登999级台阶。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-street3",
+      "name": "老道湾",
+      "nameEn": "Laodaowan",
+      "category": "street",
+      "description": "张家界新开发的民俗文化村。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "民俗文化"
+      ],
+      "tips": "了解土家族文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-night",
+      "name": "张家界夜景",
+      "nameEn": "Zhangjiajie Night View",
+      "category": "landmark",
+      "description": "溪布街的夜景灯光秀。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-temple",
+      "name": "普光禅寺",
+      "nameEn": "Puguang Temple",
+      "category": "temple",
+      "description": "张家界最古老的佛教寺院。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "zjj-food2",
+      "name": "三下锅",
+      "nameEn": "Sanxiaguo",
+      "category": "street",
+      "description": "张家界最著名的特色菜。",
+      "address": "张家界市",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均40元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "三下锅",
+        "土家族菜"
+      ],
+      "tips": "品尝张家界特色菜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
