@@ -583,6 +583,545 @@
         "Peaceful"
       ],
       "tips": "Best for sunset. Fresh seafood. Quiet island feel."
+    },
+    {
+      "id": "wh-bay",
+      "name": "威海湾",
+      "nameEn": "Weihai Bay",
+      "category": "nature",
+      "description": "威海最美丽的海湾。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "海湾",
+        "沙滩"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-liugong",
+      "name": "刘公岛",
+      "nameEn": "Liugong Island",
+      "category": "landmark",
+      "description": "甲午战争纪念地，有中国甲午战争博物院。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "138元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "甲午战争",
+        "博物院"
+      ],
+      "tips": "了解甲午战争历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-huancui",
+      "name": "环翠楼公园",
+      "nameEn": "Huancuilou Park",
+      "category": "park",
+      "description": "威海的城市公园，有环翠楼。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "环翠楼",
+        "城市全景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-intl-beach",
+      "name": "国际海水浴场",
+      "nameEn": "International Bathing Beach",
+      "category": "beach",
+      "description": "威海最著名的海滩。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-food",
+      "name": "威海美食",
+      "nameEn": "Weihai Food",
+      "category": "street",
+      "description": "威海有新鲜海鲜和韩国美食。",
+      "address": "威海市",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均60元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "海鲜",
+        "韩国料理"
+      ],
+      "tips": "品尝威海海鲜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-museum",
+      "name": "威海博物馆",
+      "nameEn": "Weihai Museum",
+      "category": "museum",
+      "description": "展示威海历史的博物馆。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "威海历史"
+      ],
+      "tips": "了解威海文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-fahua",
+      "name": "法华院",
+      "nameEn": "Fahua Temple",
+      "category": "temple",
+      "description": "威海最古老的佛教寺院。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-park",
+      "name": "威海公园",
+      "nameEn": "Weihai Park",
+      "category": "park",
+      "description": "威海最大的城市公园。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "海滨"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-night",
+      "name": "威海夜景",
+      "nameEn": "Weihai Night View",
+      "category": "landmark",
+      "description": "威海湾的夜景。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-happiness",
+      "name": "威海幸福门",
+      "nameEn": "Weihai Happiness Gate",
+      "category": "landmark",
+      "description": "威海的标志性建筑。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "幸福门",
+        "海景"
+      ],
+      "tips": "威海标志。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-golden",
+      "name": "金沙滩",
+      "nameEn": "Golden Sand Beach",
+      "category": "beach",
+      "description": "威海最美的海滩之一。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "海水"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-kunyu",
+      "name": "昆嵛山",
+      "nameEn": "Kunyu Mountain",
+      "category": "nature",
+      "description": "威海最高的山峰。",
+      "address": "威海市文登区",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 121.95
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-jiming",
+      "name": "鸡鸣岛",
+      "nameEn": "Jiming Island",
+      "category": "nature",
+      "description": "威海附近的小岛，有灯塔和海鸥。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.52
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "灯塔",
+        "海鸥"
+      ],
+      "tips": "看海鸥。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-jiawu",
+      "name": "中国甲午战争博物院",
+      "nameEn": "Chinese Jiawu War Museum",
+      "category": "museum",
+      "description": "展示甲午战争历史的博物馆。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含刘公岛",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "甲午战争",
+        "历史"
+      ],
+      "tips": "了解甲午战争。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-chishan",
+      "name": "赤山法华院",
+      "nameEn": "Chishan Fahua Temple",
+      "category": "temple",
+      "description": "威海最大的佛教寺院。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.42
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "赤山大佛"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-nahai",
+      "name": "那香海",
+      "nameEn": "Nahanghai",
+      "category": "nature",
+      "description": "威海新开发的海滨度假区。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.52
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海滨",
+        "沙滩"
+      ],
+      "tips": "度假好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-chengshantou",
+      "name": "成山头",
+      "nameEn": "Chengshantou",
+      "category": "nature",
+      "description": "中国海岸线的最东端，有天尽头之称。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.52
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "天尽头",
+        "日出"
+      ],
+      "tips": "看日出最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-rongcheng-food",
+      "name": "荣成海鲜",
+      "nameEn": "Rongcheng Seafood",
+      "category": "street",
+      "description": "荣成有最新鲜的海鲜。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.42
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均80元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "海鲜"
+      ],
+      "tips": "品尝荣成海鲜。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-yuehai",
+      "name": "悦海公园",
+      "nameEn": "Yuehai Park",
+      "category": "park",
+      "description": "威海海滨公园。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "海滨",
+        "公园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-old-street",
+      "name": "威海老街",
+      "nameEn": "Weihai Old Street",
+      "category": "street",
+      "description": "威海最古老的商业街。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验威海生活。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-liugong-night",
+      "name": "刘公岛夜景",
+      "nameEn": "Liugong Island Night View",
+      "category": "landmark",
+      "description": "刘公岛的夜景灯光秀。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-sea-bridge",
+      "name": "威海跨海大桥",
+      "nameEn": "Weihai Sea-crossing Bridge",
+      "category": "landmark",
+      "description": "连接威海和刘公岛的大桥。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "海景"
+      ],
+      "tips": "看海景。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-art",
+      "name": "威海美术馆",
+      "nameEn": "Weihai Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-tiecha",
+      "name": "铁槎山",
+      "nameEn": "Tiecha Mountain",
+      "category": "nature",
+      "description": "威海南部的山脉。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.0,
+        "lng": 122.32
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-halfmoon",
+      "name": "半月湾",
+      "nameEn": "Half Moon Bay",
+      "category": "beach",
+      "description": "威海最美的海湾之一。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海湾",
+        "沙滩"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-pancake",
+      "name": "威海大饼",
+      "nameEn": "Weihai Pancake",
+      "category": "street",
+      "description": "威海传统面食。",
+      "address": "威海市",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均10元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大饼"
+      ],
+      "tips": "品尝威海大饼。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
