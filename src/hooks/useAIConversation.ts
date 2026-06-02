@@ -21,7 +21,7 @@ import {
   cleanModelResponse,
 } from "@/services/minimax";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { checkUsageLimit, incrementUsage, getRemainingRequests as getRemainingAIRequests } from "@/lib/usage-tracker";
+import { canMakeRequest, checkUsageLimit, incrementUsage, getRemainingRequests as getRemainingAIRequests } from "@/lib/usage-tracker";
 
 // ============================================
 // Hook Types
@@ -236,15 +236,14 @@ Remember:
     async (content: string) => {
       if (!content.trim() || isLoading) return;
 
-      // Check usage limit before sending
-      const usageLimit = checkUsageLimit();
-      if (!usageLimit.allowed) {
+      // Check usage limit BEFORE sending using canMakeRequest()
+      if (!canMakeRequest()) {
         setUsageExceeded(true);
         addMessage({
           role: "assistant",
           content: language === "zh"
             ? "⚠️ 您本月的AI请求次数已用完。请升级您的套餐以继续使用AI助手。\n\n[查看定价方案](/pricing)"
-            : "⚠️ You've used all your AI requests for this month. Please upgrade your plan to continue using the AI assistant.\n\n[View Pricing](/pricing)",
+            : "⚠️ You've reached your monthly limit. Upgrade to continue.\n\n[View Pricing](/pricing)",
           isStreaming: false,
         });
         return;

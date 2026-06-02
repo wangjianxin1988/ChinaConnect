@@ -53,6 +53,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             Annual <span class="text-green-600 text-xs font-semibold">Save 20%</span>
           </button>
         </div>
+        <p class="text-xs text-gray-500 mt-2">自动续费，随时取消 / Auto-renew, cancel anytime</p>
       </div>
     </section>
 
@@ -112,6 +113,8 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               <span class="text-4xl font-bold text-blue-600 price-amount" data-monthly="4.99" data-annual="3.99">$4.99</span>
               <span class="text-gray-500 price-period">/month</span>
               <p class="text-xs text-green-600 mt-1 price-annual-note">Billed annually ($47.99/yr)</p>
+              <p class="text-xs text-gray-400 mt-1">连续包月 · 按月自动扣款</p>
+              <p class="text-xs text-gray-400">自动续费，随时取消</p>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -136,7 +139,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               </li>
             </ul>
             <button class="w-full py-2.5 px-4 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors subscribe-btn" data-tier="explorer">
-              Get Explorer
+              立即订阅
             </button>
           </div>
 
@@ -151,6 +154,8 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               <span class="text-4xl font-bold text-purple-600 price-amount" data-monthly="9.99" data-annual="7.99">$9.99</span>
               <span class="text-gray-500 price-period">/month</span>
               <p class="text-xs text-green-600 mt-1 price-annual-note">Billed annually ($95.99/yr)</p>
+              <p class="text-xs text-gray-400 mt-1">连续包月 · 按月自动扣款</p>
+              <p class="text-xs text-gray-400">自动续费，随时取消</p>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -175,7 +180,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               </li>
             </ul>
             <button class="w-full py-2.5 px-4 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition-colors subscribe-btn" data-tier="traveler">
-              Get Traveler
+              立即订阅
             </button>
           </div>
 
@@ -190,6 +195,8 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               <span class="text-4xl font-bold text-amber-600 price-amount" data-monthly="29.99" data-annual="23.99">$29.99</span>
               <span class="text-gray-500 price-period">/month</span>
               <p class="text-xs text-green-600 mt-1 price-annual-note">Billed annually ($287.99/yr)</p>
+              <p class="text-xs text-gray-400 mt-1">连续包月 · 按月自动扣款</p>
+              <p class="text-xs text-gray-400">自动续费，随时取消</p>
             </div>
             <ul class="space-y-3 mb-8">
               <li class="flex items-center gap-2 text-sm text-gray-600">
@@ -214,7 +221,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               </li>
             </ul>
             <button class="w-full py-2.5 px-4 rounded-lg bg-amber-600 text-white font-medium hover:bg-amber-700 transition-colors subscribe-btn" data-tier="business">
-              Get Business
+              立即订阅
             </button>
           </div>
         </div>
@@ -387,7 +394,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
 
       const button = btn as HTMLButtonElement;
       const originalText = button.textContent;
-      button.textContent = 'Redirecting...';
+      button.textContent = '处理中...';
       button.disabled = true;
 
       try {
@@ -428,7 +435,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
   document.querySelectorAll('[data-tier]').forEach((btn) => {
     const tier = btn.getAttribute('data-tier');
     if (tier === currentTier && btn.classList.contains('subscribe-btn')) {
-      btn.textContent = 'Current Plan';
+      btn.textContent = '当前套餐';
       (btn as HTMLButtonElement).disabled = true;
       btn.classList.add('opacity-60', 'cursor-not-allowed');
     }
