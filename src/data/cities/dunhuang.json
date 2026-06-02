@@ -32,491 +32,6 @@
     "avgWinterTemp": "-10°C (14°F)",
     "tips": "Best visited May-Oct for comfortable weather. Summers can be hot but dry. Winters cold but caves are warmer. Avoid sandstorms in spring. Book Mogao Caves tickets early."
   },
-  "attractions": [
-    {
-      "id": "mogao",
-      "name": "莫高窟",
-      "nameEn": "Mogao Caves",
-      "category": "historical",
-      "image": "https://images.unsplash.com/photo-1543835247-0e4b6f0b1b0e?w=800&q=85",
-      "description": "UNESCO World Heritage site with 492 caves filled with 1,000 years of Buddhist art, including the largest Buddha statue at 35m tall.",
-      "address": "Mogao Caves, 25km from Dunhuang",
-      "coordinates": {
-        "lat": 40.0421,
-        "lng": 94.7618
-      },
-      "openingHours": "08:00-18:00 (Limited access)",
-      "ticketPrice": "旺季238¥ (includes digital center + cave visit)",
-      "recommendedVisitTime": "3-4 hours",
-      "highlights": [
-        "Buddhist cave art",
-        "35m Buddha statue",
-        "Colorful murals",
-        "Thousand Buddhas"
-      ],
-      "tips": "Book tickets online weeks in advance. Only 8 caves open per visit (varies). Morning visits better. Photography prohibited inside caves."
-    },
-    {
-      "id": "mingsha",
-      "name": "鸣沙山",
-      "nameEn": "Mingsha Mountain (Singing Sands)",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
-      "description": "Spectacular sand dunes that emit singing sounds when the wind blows, with camel rides, sand sliding, and desert camping.",
-      "address": "Mingsha Mountain, 5km from Dunhuang",
-      "coordinates": {
-        "lat": 40.0921,
-        "lng": 94.7618
-      },
-      "openingHours": "07:00-19:00",
-      "ticketPrice": "110¥ (3-day pass available)",
-      "recommendedVisitTime": "4-5 hours",
-      "highlights": [
-        "Singing sand dunes",
-        "Camel rides",
-        "Desert views",
-        "Sunset"
-      ],
-      "tips": "Best at sunset for golden dunes. Wear sandals for sand. Camel ride is touristy but scenic. Book overnight desert camping for stars."
-    },
-    {
-      "id": "crescent-spring",
-      "name": "月牙泉",
-      "nameEn": "Crescent Spring",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
-      "description": "Ancient oasis in the desert with a crescent-shaped pond, surrounded by sand dunes, magical desert scenery.",
-      "address": "Mingsha Mountain Park",
-      "coordinates": {
-        "lat": 40.0921,
-        "lng": 94.7618
-      },
-      "openingHours": "07:00-19:00",
-      "ticketPrice": "Included in Mingsha Mountain ticket (110¥)",
-      "recommendedVisitTime": "2-3 hours",
-      "highlights": [
-        "Desert oasis",
-        "Crescent-shaped pond",
-        "Ancient pagoda",
-        "Sand dunes"
-      ],
-      "tips": "Walk around the pond for photos. The ancient pagoda is photogenic. Best light in late afternoon. Climb dunes for panoramic views."
-    },
-    {
-      "id": "yumenguan",
-      "name": "玉门关",
-      "nameEn": "Yumenguan Pass",
-      "category": "historical",
-      "image": "https://images.unsplash.com/photo-1568322503669-8a7c2d2e1c9e?w=800",
-      "description": "Ancient fortress guarding the Silk Road, built during Han Dynasty, now solitary ruins in the desert.",
-      "address": "90km from Dunhuang",
-      "coordinates": {
-        "lat": 40.4921,
-        "lng": 93.5618
-      },
-      "openingHours": "08:00-18:00",
-      "ticketPrice": "40¥ (combined with Han Great Wall)",
-      "recommendedVisitTime": "2-3 hours",
-      "highlights": [
-        "Ancient fortress",
-        "Han Dynasty history",
-        "Desolate beauty",
-        "Silk Road"
-      ],
-      "tips": "Combine with Han Dynasty Great Wall visit. The isolation is moving. Bring sun protection. Drive is scenic through desert."
-    },
-    {
-      "id": "han-great-wall",
-      "name": "汉长城遗址",
-      "nameEn": "Han Dynasty Great Wall",
-      "category": "historical",
-      "image": "https://images.unsplash.com/photo-1508009603395-6d30dd4c19f6?w=800",
-      "description": "Remnants of the Han Dynasty earthen wall that once protected the Silk Road, atmospheric ruins in desert.",
-      "address": "Near Yumenguan",
-      "coordinates": {
-        "lat": 40.5121,
-        "lng": 93.5618
-      },
-      "openingHours": "08:00-18:00",
-      "ticketPrice": "Included with Yumenguan ticket",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Ancient earthwork",
-        "Han Dynasty",
-        "Desert setting",
-        "Historical significance"
-      ],
-      "tips": "Combine with Yumenguan Pass. The ruins are fragile - don't climb on them. The desert scenery is stunning."
-    },
-    {
-      "id": "yadan",
-      "name": "雅丹国家地质公园",
-      "nameEn": "Yadan Landform National Geopark",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1506905275237-883cd4902b81?w=800&q=85",
-      "description": "UNESCO-listed geological park with dramatic wind-carved rock formations called Yadan, resembling ancient cities.",
-      "address": "180km from Dunhuang",
-      "coordinates": {
-        "lat": 40.5421,
-        "lng": 93.0618
-      },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "120¥ (includes bus tour)",
-      "recommendedVisitTime": "3-4 hours",
-      "highlights": [
-        "Wind-carved rocks",
-        "Ghost City",
-        "Sunset views",
-        "Geological wonder"
-      ],
-      "tips": "Sunset tour is magical - formations turn golden. The 'Ghost City' area is most dramatic. Wear warm layers as it's cold at sunset."
-    },
-    {
-      "id": "shazhou",
-      "name": "沙洲夜市",
-      "nameEn": "Shazhou Night Market",
-      "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1555939594-3d9a6c1f1f4a?w=800",
-      "description": "Bustling night market in Dunhuang with local snacks, souvenirs, and vibrant atmosphere.",
-      "address": "Dunhuang City Center",
-      "coordinates": {
-        "lat": 40.1421,
-        "lng": 94.6618
-      },
-      "openingHours": "18:00-24:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Local snacks",
-        "Souvenirs",
-        "Night atmosphere",
-        "People watching"
-      ],
-      "tips": "Best evening activity in Dunhuang. Try local fruits and snacks. Bargain for souvenirs. The apricot juice is refreshing."
-    },
-    {
-      "id": "silk-road",
-      "name": "丝绸之路博物馆",
-      "nameEn": "Silk Road Museum",
-      "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=85",
-      "description": "Museum showcasing Dunhuang's Silk Road history, ancient artifacts, and Buddhist art from the Mogao Caves.",
-      "address": "Dunhuang City",
-      "coordinates": {
-        "lat": 40.1421,
-        "lng": 94.6618
-      },
-      "openingHours": "08:30-17:30",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Silk Road artifacts",
-        "Buddhist art",
-        "Ancient maps",
-        "Cultural relics"
-      ],
-      "tips": "Good introduction before Mogao Caves visit. The artifacts are impressive. Audio guides available."
-    },
-    {
-      "id": "mingcha",
-      "name": "敦煌博物馆",
-      "nameEn": "Dunhuang Museum",
-      "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1569003336825-ea4b2a2d0d8a?w=800&q=85",
-      "description": "City museum with local history exhibits, Han Dynasty artifacts, and minority culture displays.",
-      "address": "Dunhuang City",
-      "coordinates": {
-        "lat": 40.1421,
-        "lng": 94.6618
-      },
-      "openingHours": "08:30-17:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Local history",
-        "Han artifacts",
-        "Minority culture",
-        "Ancient documents"
-      ],
-      "tips": "Good for understanding local history. Combine with night market visit. Free and air-conditioned."
-    },
-    {
-      "id": "desert-camping",
-      "name": "沙漠露营",
-      "nameEn": "Desert Camping",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
-      "description": "Overnight desert camping experiences including BBQ dinner, star viewing, and sunrise over the dunes.",
-      "address": "Mingsha Mountain",
-      "coordinates": {
-        "lat": 40.0921,
-        "lng": 94.7618
-      },
-      "openingHours": "Evening to morning",
-      "ticketPrice": "200-500¥ (camping package)",
-      "recommendedVisitTime": "Overnight",
-      "highlights": [
-        "Star-filled sky",
-        "Desert sunset",
-        "BBQ dinner",
-        "Sunrise"
-      ],
-      "tips": "Book through local tour operators. The Milky Way view is stunning. Bring warm layers - nights are cold. The experience is unforgettable."
-    },
-    {
-      "id": "western-thousand",
-      "name": "西千佛洞",
-      "nameEn": "Western Thousand Buddha Caves",
-      "category": "historical",
-      "image": "https://images.unsplash.com/photo-1546961342-ea5f60b193f9?w=800&q=85",
-      "description": "Cave complex smaller than Mogao but older and less crowded, with ancient Buddhist murals along the river.",
-      "address": "35km from Dunhuang",
-      "coordinates": {
-        "lat": 40.1921,
-        "lng": 94.5618
-      },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "30¥",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Ancient caves",
-        "Less crowded",
-        "Riverside setting",
-        "Buddhist art"
-      ],
-      "tips": "Good alternative if Mogao is fully booked. The setting by the river is beautiful. Allow time for both sites."
-    },
-    {
-      "id": "sunset",
-      "name": "鸣沙山日落",
-      "nameEn": "Mingsha Mountain Sunset Point",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85",
-      "description": "Popular viewpoint on Mingsha Mountain dunes for watching sunset over the singing sands.",
-      "address": "Mingsha Mountain",
-      "coordinates": {
-        "lat": 40.0921,
-        "lng": 94.7618
-      },
-      "openingHours": "07:00-19:00",
-      "ticketPrice": "Included in Mingsha ticket",
-      "recommendedVisitTime": "2-3 hours",
-      "highlights": [
-        "Sunset over dunes",
-        "Golden sands",
-        "Photography",
-        "Romantic"
-      ],
-      "tips": "Climb dunes 30 min before sunset. The view is unforgettable. Bring water. The descent is fun sliding down sand."
-    },
-    {
-      "id": "qianxun",
-      "name": "敦煌影视城",
-      "nameEn": "Dunhuang Film City",
-      "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1532996122724-e6c0bb4f7f3a?w=800",
-      "description": "Film set built for historical movies, offering glimpse into ancient Chinese film production.",
-      "address": "Near Dunhuang",
-      "coordinates": {
-        "lat": 40.1221,
-        "lng": 94.6618
-      },
-      "openingHours": "08:00-18:00",
-      "ticketPrice": "40¥",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Film set",
-        "Ancient architecture",
-        "Costume rental",
-        "Entertainment"
-      ],
-      "tips": "Can feel touristy but fun for photos. Costume rental available. Not a must-see if time limited."
-    },
-    {
-      "id": "dunhuang-research",
-      "name": "敦煌研究院",
-      "nameEn": "Dunhuang Academy",
-      "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85",
-      "description": "Research institute and exhibition hall showing high-quality replicas of Mogao cave art and ongoing restoration work.",
-      "address": "Near Mogao Caves",
-      "coordinates": {
-        "lat": 40.0421,
-        "lng": 94.7618
-      },
-      "openingHours": "09:00-17:00",
-      "ticketPrice": "Included with Mogao ticket",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Cave replicas",
-        "Restoration展示",
-        "Scholarly exhibits",
-        "Digital displays"
-      ],
-      "tips": "Visit after Mogao to understand what you saw. The digital recreations are stunning. Excellent for those interested in art."
-    },
-    {
-      "id": "qinghai",
-      "name": "党河",
-      "nameEn": "Danghe River",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=85",
-      "description": "Lifeline river flowing through Dunhuang, creating green corridor through the desert with poplar forests.",
-      "address": "Dunhuang",
-      "coordinates": {
-        "lat": 40.1421,
-        "lng": 94.6618
-      },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Desert oasis",
-        "Poplar forests",
-        "Sunset views",
-        "Local life"
-      ],
-      "tips": "Beautiful at sunset with desert backdrop. The poplar trees turn golden in fall. Great for morning walks."
-    },
-    {
-      "id": "lebb",
-      "name": "雷音寺",
-      "nameEn": "Leiyin Temple",
-      "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85",
-      "description": "Ancient Buddhist temple with beautiful architecture, peaceful atmosphere away from crowds.",
-      "address": "Dunhuang",
-      "coordinates": {
-        "lat": 40.1521,
-        "lng": 94.6618
-      },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
-      "highlights": [
-        "Buddhist temple",
-        "Peaceful",
-        "Ancient architecture",
-        "Quiet"
-      ],
-      "tips": "Good alternative if Mogao fully booked. The temple is beautiful and peaceful. Morning visits best."
-    },
-    {
-      "id": "dune-buggy",
-      "name": "沙漠越野",
-      "nameEn": "Desert Buggy Adventure",
-      "category": "adventure",
-      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=85",
-      "description": "Thrilling desert buggy rides through the sand dunes, popular adventure activity in Dunhuang.",
-      "address": "Mingsha Mountain",
-      "coordinates": {
-        "lat": 40.0921,
-        "lng": 94.7618
-      },
-      "openingHours": "08:00-18:00",
-      "ticketPrice": "200-400¥",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Desert buggies",
-        "Dune driving",
-        "Adventure",
-        "Thrills"
-      ],
-      "tips": "Book through hotel or tour operator. Safety briefing important. Not for those with back problems. Exciting experience."
-    },
-    {
-      "id": "silk-road-unesco",
-      "name": "悬泉汉简",
-      "nameEn": "Xuanquan Han Dynasty Records",
-      "category": "historical",
-      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=85",
-      "description": "Archaeological site where 35,000 Han Dynasty bamboo slips were discovered, documenting Silk Road communications.",
-      "address": "Xuanquan",
-      "coordinates": {
-        "lat": 40.2421,
-        "lng": 94.6618
-      },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Han Dynasty records",
-        "Archaeological site",
-        "Silk Road history",
-        "Ancient documents"
-      ],
-      "tips": "For history enthusiasts. The bamboo slips are fascinating. The setting in desert is atmospheric. Combine with Western Thousand Buddhas."
-    },
-    {
-      "id": "sand-dune-museum",
-      "name": "敦煌沙漠博物馆",
-      "nameEn": "Dunhuang Desert Museum",
-      "category": "cultural",
-      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85",
-      "description": "Museum about desert ecology, Sand Road history, and Dunhuang's unique environment.",
-      "address": "Dunhuang",
-      "coordinates": {
-        "lat": 40.1421,
-        "lng": 94.6618
-      },
-      "openingHours": "08:30-17:30",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
-      "highlights": [
-        "Desert ecology",
-        "Sand Road history",
-        "Camel exhibits",
-        "Local culture"
-      ],
-      "tips": "Good for understanding desert environment. Free and informative. Combine with morning visit before desert trip."
-    },
-    {
-      "id": "waterfall",
-      "name": "渥洼池",
-      "nameEn": "Wawapi",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1537531383496-f4749bce9441?w=800&q=85",
-      "description": "Desert oasis with lotus flowers and water birds, serene spot for nature photography.",
-      "address": "Near Dunhuang",
-      "coordinates": {
-        "lat": 40.1921,
-        "lng": 94.7618
-      },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
-      "highlights": [
-        "Desert oasis",
-        "Lotus flowers",
-        "Bird watching",
-        "Peaceful"
-      ],
-      "tips": "Less known than Crescent Spring. Great for bird watching. Morning light is best for photos. Combine with Western Thousand Buddhas."
-    },
-    {
-      "id": "populus",
-      "name": "胡杨林",
-      "nameEn": "Desert Poplar Forest",
-      "category": "natural",
-      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
-      "description": "Ancient desert poplar trees, some over 1,000 years old, with beautiful autumn foliage.",
-      "address": "Near Dunhuang",
-      "coordinates": {
-        "lat": 40.2921,
-        "lng": 94.7618
-      },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
-      "highlights": [
-        "Ancient trees",
-        "Autumn colors",
-        "Desert scenery",
-        "Photography"
-      ],
-      "tips": "Best in October for golden leaves. The trees are surreal in fall. Less crowded than other sites. Great for photography."
-    }
-  ],
   "restaurants": [
     {
       "id": "dunhuang-1",
@@ -1815,5 +1330,1111 @@
     "timeZone": "UTC+8 (China Standard Time)",
     "electricity": "220V/50Hz, Type A/I plugs",
     "water": "Tap water safe after boiling; bottled water essential in desert"
-  }
+  },
+  "attractions": [
+    {
+      "id": "mogao",
+      "name": "莫高窟",
+      "nameEn": "Mogao Caves",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1543835247-0e4b6f0b1b0e?w=800&q=85",
+      "description": "UNESCO World Heritage site with 492 caves filled with 1,000 years of Buddhist art, including the largest Buddha statue at 35m tall.",
+      "address": "Mogao Caves, 25km from Dunhuang",
+      "coordinates": {
+        "lat": 40.0421,
+        "lng": 94.7618
+      },
+      "openingHours": "08:00-18:00 (Limited access)",
+      "ticketPrice": "旺季238¥ (includes digital center + cave visit)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Buddhist cave art",
+        "35m Buddha statue",
+        "Colorful murals",
+        "Thousand Buddhas"
+      ],
+      "tips": "Book tickets online weeks in advance. Only 8 caves open per visit (varies). Morning visits better. Photography prohibited inside caves."
+    },
+    {
+      "id": "mingsha",
+      "name": "鸣沙山",
+      "nameEn": "Mingsha Mountain (Singing Sands)",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
+      "description": "Spectacular sand dunes that emit singing sounds when the wind blows, with camel rides, sand sliding, and desert camping.",
+      "address": "Mingsha Mountain, 5km from Dunhuang",
+      "coordinates": {
+        "lat": 40.0921,
+        "lng": 94.7618
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "110¥ (3-day pass available)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Singing sand dunes",
+        "Camel rides",
+        "Desert views",
+        "Sunset"
+      ],
+      "tips": "Best at sunset for golden dunes. Wear sandals for sand. Camel ride is touristy but scenic. Book overnight desert camping for stars."
+    },
+    {
+      "id": "crescent-spring",
+      "name": "月牙泉",
+      "nameEn": "Crescent Spring",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
+      "description": "Ancient oasis in the desert with a crescent-shaped pond, surrounded by sand dunes, magical desert scenery.",
+      "address": "Mingsha Mountain Park",
+      "coordinates": {
+        "lat": 40.0921,
+        "lng": 94.7618
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "Included in Mingsha Mountain ticket (110¥)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Desert oasis",
+        "Crescent-shaped pond",
+        "Ancient pagoda",
+        "Sand dunes"
+      ],
+      "tips": "Walk around the pond for photos. The ancient pagoda is photogenic. Best light in late afternoon. Climb dunes for panoramic views."
+    },
+    {
+      "id": "yumenguan",
+      "name": "玉门关",
+      "nameEn": "Yumenguan Pass",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1568322503669-8a7c2d2e1c9e?w=800",
+      "description": "Ancient fortress guarding the Silk Road, built during Han Dynasty, now solitary ruins in the desert.",
+      "address": "90km from Dunhuang",
+      "coordinates": {
+        "lat": 40.4921,
+        "lng": 93.5618
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "40¥ (combined with Han Great Wall)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient fortress",
+        "Han Dynasty history",
+        "Desolate beauty",
+        "Silk Road"
+      ],
+      "tips": "Combine with Han Dynasty Great Wall visit. The isolation is moving. Bring sun protection. Drive is scenic through desert."
+    },
+    {
+      "id": "han-great-wall",
+      "name": "汉长城遗址",
+      "nameEn": "Han Dynasty Great Wall",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1508009603395-6d30dd4c19f6?w=800",
+      "description": "Remnants of the Han Dynasty earthen wall that once protected the Silk Road, atmospheric ruins in desert.",
+      "address": "Near Yumenguan",
+      "coordinates": {
+        "lat": 40.5121,
+        "lng": 93.5618
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "Included with Yumenguan ticket",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient earthwork",
+        "Han Dynasty",
+        "Desert setting",
+        "Historical significance"
+      ],
+      "tips": "Combine with Yumenguan Pass. The ruins are fragile - don't climb on them. The desert scenery is stunning."
+    },
+    {
+      "id": "yadan",
+      "name": "雅丹国家地质公园",
+      "nameEn": "Yadan Landform National Geopark",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506905275237-883cd4902b81?w=800&q=85",
+      "description": "UNESCO-listed geological park with dramatic wind-carved rock formations called Yadan, resembling ancient cities.",
+      "address": "180km from Dunhuang",
+      "coordinates": {
+        "lat": 40.5421,
+        "lng": 93.0618
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "120¥ (includes bus tour)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Wind-carved rocks",
+        "Ghost City",
+        "Sunset views",
+        "Geological wonder"
+      ],
+      "tips": "Sunset tour is magical - formations turn golden. The 'Ghost City' area is most dramatic. Wear warm layers as it's cold at sunset."
+    },
+    {
+      "id": "shazhou",
+      "name": "沙洲夜市",
+      "nameEn": "Shazhou Night Market",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1555939594-3d9a6c1f1f4a?w=800",
+      "description": "Bustling night market in Dunhuang with local snacks, souvenirs, and vibrant atmosphere.",
+      "address": "Dunhuang City Center",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "openingHours": "18:00-24:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Local snacks",
+        "Souvenirs",
+        "Night atmosphere",
+        "People watching"
+      ],
+      "tips": "Best evening activity in Dunhuang. Try local fruits and snacks. Bargain for souvenirs. The apricot juice is refreshing."
+    },
+    {
+      "id": "silk-road",
+      "name": "丝绸之路博物馆",
+      "nameEn": "Silk Road Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=85",
+      "description": "Museum showcasing Dunhuang's Silk Road history, ancient artifacts, and Buddhist art from the Mogao Caves.",
+      "address": "Dunhuang City",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Silk Road artifacts",
+        "Buddhist art",
+        "Ancient maps",
+        "Cultural relics"
+      ],
+      "tips": "Good introduction before Mogao Caves visit. The artifacts are impressive. Audio guides available."
+    },
+    {
+      "id": "mingcha",
+      "name": "敦煌博物馆",
+      "nameEn": "Dunhuang Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1569003336825-ea4b2a2d0d8a?w=800&q=85",
+      "description": "City museum with local history exhibits, Han Dynasty artifacts, and minority culture displays.",
+      "address": "Dunhuang City",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "openingHours": "08:30-17:30 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Local history",
+        "Han artifacts",
+        "Minority culture",
+        "Ancient documents"
+      ],
+      "tips": "Good for understanding local history. Combine with night market visit. Free and air-conditioned."
+    },
+    {
+      "id": "desert-camping",
+      "name": "沙漠露营",
+      "nameEn": "Desert Camping",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
+      "description": "Overnight desert camping experiences including BBQ dinner, star viewing, and sunrise over the dunes.",
+      "address": "Mingsha Mountain",
+      "coordinates": {
+        "lat": 40.0921,
+        "lng": 94.7618
+      },
+      "openingHours": "Evening to morning",
+      "ticketPrice": "200-500¥ (camping package)",
+      "recommendedVisitTime": "Overnight",
+      "highlights": [
+        "Star-filled sky",
+        "Desert sunset",
+        "BBQ dinner",
+        "Sunrise"
+      ],
+      "tips": "Book through local tour operators. The Milky Way view is stunning. Bring warm layers - nights are cold. The experience is unforgettable."
+    },
+    {
+      "id": "western-thousand",
+      "name": "西千佛洞",
+      "nameEn": "Western Thousand Buddha Caves",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1546961342-ea5f60b193f9?w=800&q=85",
+      "description": "Cave complex smaller than Mogao but older and less crowded, with ancient Buddhist murals along the river.",
+      "address": "35km from Dunhuang",
+      "coordinates": {
+        "lat": 40.1921,
+        "lng": 94.5618
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient caves",
+        "Less crowded",
+        "Riverside setting",
+        "Buddhist art"
+      ],
+      "tips": "Good alternative if Mogao is fully booked. The setting by the river is beautiful. Allow time for both sites."
+    },
+    {
+      "id": "sunset",
+      "name": "鸣沙山日落",
+      "nameEn": "Mingsha Mountain Sunset Point",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85",
+      "description": "Popular viewpoint on Mingsha Mountain dunes for watching sunset over the singing sands.",
+      "address": "Mingsha Mountain",
+      "coordinates": {
+        "lat": 40.0921,
+        "lng": 94.7618
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "Included in Mingsha ticket",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Sunset over dunes",
+        "Golden sands",
+        "Photography",
+        "Romantic"
+      ],
+      "tips": "Climb dunes 30 min before sunset. The view is unforgettable. Bring water. The descent is fun sliding down sand."
+    },
+    {
+      "id": "qianxun",
+      "name": "敦煌影视城",
+      "nameEn": "Dunhuang Film City",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1532996122724-e6c0bb4f7f3a?w=800",
+      "description": "Film set built for historical movies, offering glimpse into ancient Chinese film production.",
+      "address": "Near Dunhuang",
+      "coordinates": {
+        "lat": 40.1221,
+        "lng": 94.6618
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Film set",
+        "Ancient architecture",
+        "Costume rental",
+        "Entertainment"
+      ],
+      "tips": "Can feel touristy but fun for photos. Costume rental available. Not a must-see if time limited."
+    },
+    {
+      "id": "dunhuang-research",
+      "name": "敦煌研究院",
+      "nameEn": "Dunhuang Academy",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85",
+      "description": "Research institute and exhibition hall showing high-quality replicas of Mogao cave art and ongoing restoration work.",
+      "address": "Near Mogao Caves",
+      "coordinates": {
+        "lat": 40.0421,
+        "lng": 94.7618
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "Included with Mogao ticket",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Cave replicas",
+        "Restoration展示",
+        "Scholarly exhibits",
+        "Digital displays"
+      ],
+      "tips": "Visit after Mogao to understand what you saw. The digital recreations are stunning. Excellent for those interested in art."
+    },
+    {
+      "id": "qinghai",
+      "name": "党河",
+      "nameEn": "Danghe River",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=85",
+      "description": "Lifeline river flowing through Dunhuang, creating green corridor through the desert with poplar forests.",
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Desert oasis",
+        "Poplar forests",
+        "Sunset views",
+        "Local life"
+      ],
+      "tips": "Beautiful at sunset with desert backdrop. The poplar trees turn golden in fall. Great for morning walks."
+    },
+    {
+      "id": "lebb",
+      "name": "雷音寺",
+      "nameEn": "Leiyin Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85",
+      "description": "Ancient Buddhist temple with beautiful architecture, peaceful atmosphere away from crowds.",
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1521,
+        "lng": 94.6618
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Buddhist temple",
+        "Peaceful",
+        "Ancient architecture",
+        "Quiet"
+      ],
+      "tips": "Good alternative if Mogao fully booked. The temple is beautiful and peaceful. Morning visits best."
+    },
+    {
+      "id": "dune-buggy",
+      "name": "沙漠越野",
+      "nameEn": "Desert Buggy Adventure",
+      "category": "adventure",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=85",
+      "description": "Thrilling desert buggy rides through the sand dunes, popular adventure activity in Dunhuang.",
+      "address": "Mingsha Mountain",
+      "coordinates": {
+        "lat": 40.0921,
+        "lng": 94.7618
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "200-400¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Desert buggies",
+        "Dune driving",
+        "Adventure",
+        "Thrills"
+      ],
+      "tips": "Book through hotel or tour operator. Safety briefing important. Not for those with back problems. Exciting experience."
+    },
+    {
+      "id": "silk-road-unesco",
+      "name": "悬泉汉简",
+      "nameEn": "Xuanquan Han Dynasty Records",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=85",
+      "description": "Archaeological site where 35,000 Han Dynasty bamboo slips were discovered, documenting Silk Road communications.",
+      "address": "Xuanquan",
+      "coordinates": {
+        "lat": 40.2421,
+        "lng": 94.6618
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Han Dynasty records",
+        "Archaeological site",
+        "Silk Road history",
+        "Ancient documents"
+      ],
+      "tips": "For history enthusiasts. The bamboo slips are fascinating. The setting in desert is atmospheric. Combine with Western Thousand Buddhas."
+    },
+    {
+      "id": "sand-dune-museum",
+      "name": "敦煌沙漠博物馆",
+      "nameEn": "Dunhuang Desert Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85",
+      "description": "Museum about desert ecology, Sand Road history, and Dunhuang's unique environment.",
+      "address": "Dunhuang",
+      "coordinates": {
+        "lat": 40.1421,
+        "lng": 94.6618
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Desert ecology",
+        "Sand Road history",
+        "Camel exhibits",
+        "Local culture"
+      ],
+      "tips": "Good for understanding desert environment. Free and informative. Combine with morning visit before desert trip."
+    },
+    {
+      "id": "waterfall",
+      "name": "渥洼池",
+      "nameEn": "Wawapi",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1537531383496-f4749bce9441?w=800&q=85",
+      "description": "Desert oasis with lotus flowers and water birds, serene spot for nature photography.",
+      "address": "Near Dunhuang",
+      "coordinates": {
+        "lat": 40.1921,
+        "lng": 94.7618
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Desert oasis",
+        "Lotus flowers",
+        "Bird watching",
+        "Peaceful"
+      ],
+      "tips": "Less known than Crescent Spring. Great for bird watching. Morning light is best for photos. Combine with Western Thousand Buddhas."
+    },
+    {
+      "id": "populus",
+      "name": "胡杨林",
+      "nameEn": "Desert Poplar Forest",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
+      "description": "Ancient desert poplar trees, some over 1,000 years old, with beautiful autumn foliage.",
+      "address": "Near Dunhuang",
+      "coordinates": {
+        "lat": 40.2921,
+        "lng": 94.7618
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient trees",
+        "Autumn colors",
+        "Desert scenery",
+        "Photography"
+      ],
+      "tips": "Best in October for golden leaves. The trees are surreal in fall. Less crowded than other sites. Great for photography."
+    },
+    {
+      "id": "yangguan",
+      "name": "阳关遗址",
+      "nameEn": "Yangguan Pass",
+      "category": "landmark",
+      "description": "阳关是古代丝绸之路的重要关隘，与玉门关齐名，因王维'西出阳关无故人'诗句而闻名天下，如今遗址上保留了烽火台和部分城墙遗迹。",
+      "address": "敦煌市阳关镇",
+      "coordinates": {
+        "lat": 39.7833,
+        "lng": 93.8667
+      },
+      "openingHours": "08:00-20:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "烽火台遗址",
+        "阳关博物馆",
+        "丝路古道",
+        "日落美景"
+      ],
+      "tips": "傍晚去最美，可以看沙漠日落。建议自驾或包车前往。",
+      "image": "https://images.unsplash.com/photo-p8a0ArZYQHs?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-museum",
+      "name": "敦煌博物馆",
+      "nameEn": "Dunhuang Museum",
+      "category": "museum",
+      "description": "敦煌博物馆收藏了大量敦煌地区出土的文物，包括汉简、丝织品、佛教造像等，是了解敦煌历史和丝绸之路文化的重要场所。",
+      "address": "敦煌市鸣山路",
+      "coordinates": {
+        "lat": 40.1417,
+        "lng": 94.6625
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "汉简收藏",
+        "丝路文物",
+        "佛教造像",
+        "敦煌历史"
+      ],
+      "tips": "免费但需要提前预约。建议先参观博物馆再去莫高窟，可以更好地理解壁画。",
+      "image": "https://images.unsplash.com/photo-ARZoAmxJVTc?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-night-market",
+      "name": "敦煌夜市",
+      "nameEn": "Dunhuang Night Market",
+      "category": "market",
+      "description": "敦煌夜市是敦煌最热闹的夜生活场所，汇集了各种西北特色美食和手工艺品，游客可以品尝到正宗的驴肉黄面、杏皮水等敦煌特色小吃。",
+      "address": "敦煌市沙洲夜市",
+      "coordinates": {
+        "lat": 40.1417,
+        "lng": 94.6625
+      },
+      "openingHours": "18:00-次日01:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "驴肉黄面",
+        "杏皮水",
+        "烤全羊",
+        "手工艺品"
+      ],
+      "tips": "一定要尝尝驴肉黄面和杏皮水，是敦煌特色。夜市上可以买到骆驼工艺品。",
+      "image": "https://images.unsplash.com/photo-42x5aaUJCk0?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-camel-ride",
+      "name": "鸣沙山骑骆驼",
+      "nameEn": "Mingsha Mountain Camel Ride",
+      "category": "nature",
+      "description": "在鸣沙山骑骆驼是敦煌最经典的旅游体验之一，骆驼队沿着沙漠行进，重现了古丝绸之路上的商队场景，是感受丝路文化的绝佳方式。",
+      "address": "敦煌市鸣沙山月牙泉景区",
+      "coordinates": {
+        "lat": 40.0778,
+        "lng": 94.6722
+      },
+      "openingHours": "05:00-20:30",
+      "ticketPrice": "100元/人",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "沙漠骆驼",
+        "丝路体验",
+        "日出日落",
+        "沙漠风光"
+      ],
+      "tips": "建议傍晚骑骆驼，可以看沙漠日落。骆驼队有固定路线，听从工作人员指挥。",
+      "image": "https://images.unsplash.com/photo-vxIGo3WBSaE?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-sand-dune-sunset",
+      "name": "鸣沙山日落",
+      "nameEn": "Mingsha Mountain Sunset",
+      "category": "nature",
+      "description": "鸣沙山的日落是敦煌最壮观的自然景观之一，夕阳将金色的沙丘染成橙红色，光影变幻莫测，是摄影爱好者的天堂，也是情侣们浪漫的约会地点。",
+      "address": "敦煌市鸣沙山月牙泉景区",
+      "coordinates": {
+        "lat": 40.0778,
+        "lng": 94.6722
+      },
+      "openingHours": "05:00-20:30",
+      "ticketPrice": "110元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "沙漠日落",
+        "金色沙丘",
+        "光影变幻",
+        "摄影圣地"
+      ],
+      "tips": "建议在日落前1-2小时到达山顶，选择好拍摄位置。带好相机和三脚架。",
+      "image": "https://images.unsplash.com/photo-D7v1MGX-1KU?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-mogao-art",
+      "name": "莫高窟艺术馆",
+      "nameEn": "Mogao Caves Art Center",
+      "category": "museum",
+      "description": "莫高窟艺术馆是莫高窟的数字展示中心，通过高清球幕电影和数字化展览，让游客在参观实体洞窟前先了解莫高窟的历史和艺术价值，是莫高窟参观的重要组成部分。",
+      "address": "敦煌市莫高窟数字展示中心",
+      "coordinates": {
+        "lat": 40.0389,
+        "lng": 94.8056
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "含在莫高窟门票内",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "球幕电影",
+        "数字化展览",
+        "莫高窟历史",
+        "壁画高清展示"
+      ],
+      "tips": "必须先在数字中心观看电影，再乘坐摆渡车前往实体洞窟。建议提前预约。",
+      "image": "https://images.unsplash.com/photo-KCp91i45KTg?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-silk-road-museum",
+      "name": "丝绸之路博物馆",
+      "nameEn": "Silk Road Museum",
+      "category": "museum",
+      "description": "丝绸之路博物馆展示了丝绸之路的历史和文化，馆内收藏了大量丝路沿线出土的文物，包括丝绸、陶瓷、金银器等，是了解丝绸之路的重要窗口。",
+      "address": "敦煌市",
+      "coordinates": {
+        "lat": 40.1417,
+        "lng": 94.6625
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "丝路文物",
+        "丝绸收藏",
+        "陶瓷精品",
+        "文化交流"
+      ],
+      "tips": "可以和敦煌博物馆一起参观，全面了解丝绸之路的历史。",
+      "image": "https://images.unsplash.com/photo-YMAcqHzuaZw?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-echoing-sand",
+      "name": "鸣沙山",
+      "nameEn": "Echoing Sand Mountain",
+      "category": "nature",
+      "description": "鸣沙山因风吹沙动会发出声响而得名，沙山东西绵延40公里，南北宽约20公里，是敦煌最著名的自然景观，与月牙泉共同构成了沙漠奇观。",
+      "address": "敦煌市鸣沙山月牙泉景区",
+      "coordinates": {
+        "lat": 40.0778,
+        "lng": 94.6722
+      },
+      "openingHours": "05:00-20:30",
+      "ticketPrice": "110元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "鸣沙奇观",
+        "沙漠风光",
+        "沙山攀登",
+        "日出日落"
+      ],
+      "tips": "建议穿防沙鞋套，赤脚走在沙子上会很烫。可以体验滑沙等沙漠活动。",
+      "image": "https://images.unsplash.com/photo-udpP1p2ymKk?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-painting-art",
+      "name": "敦煌壁画艺术",
+      "nameEn": "Dunhuang Mural Art",
+      "category": "museum",
+      "description": "敦煌壁画是中国古代艺术的瑰宝，莫高窟内保存了从十六国到元代的壁画约45000平方米，内容包括佛教故事、神话传说、社会生活等，是世界艺术史上的奇迹。",
+      "address": "敦煌市莫高窟景区内",
+      "coordinates": {
+        "lat": 40.0389,
+        "lng": 94.8056
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "含在莫高窟门票内",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "佛教壁画",
+        "飞天形象",
+        "供养人像",
+        "经变画"
+      ],
+      "tips": "洞窟内不允许拍照和触摸壁画。建议请专业讲解员，可以更深入了解壁画内容。",
+      "image": "https://images.unsplash.com/photo-jQtXlP35ATE?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-ghost-city",
+      "name": "雅丹魔鬼城",
+      "nameEn": "Yadan Ghost City",
+      "category": "nature",
+      "description": "雅丹魔鬼城是雅丹国家地质公园的核心景区，因风蚀作用形成了各种奇特的地貌造型，夜晚风声呼啸如鬼哭狼嚎，故名魔鬼城，是敦煌最震撼的自然奇观。",
+      "address": "敦煌市雅丹国家地质公园",
+      "coordinates": {
+        "lat": 39.7833,
+        "lng": 93.8667
+      },
+      "openingHours": "06:00-19:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "风蚀地貌",
+        "魔鬼城",
+        "日落壮景",
+        "西海舰队"
+      ],
+      "tips": "景区较大，需要乘坐景区大巴。傍晚去最美，可以看日落。带好防晒和水。",
+      "image": "https://images.unsplash.com/photo-svaofkNuoAk?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-thousand-buddha",
+      "name": "千佛洞",
+      "nameEn": "Thousand Buddha Caves",
+      "category": "temple",
+      "description": "千佛洞是莫高窟的别称，因洞窟内有大量的佛像和壁画而得名，现存洞窟735个，壁画4.5万平方米，彩塑2415尊，是世界上现存规模最大的佛教艺术宝库。",
+      "address": "敦煌市莫高窟景区",
+      "coordinates": {
+        "lat": 40.0389,
+        "lng": 94.8056
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "A类238元/B类100元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "735个洞窟",
+        "4.5万平米壁画",
+        "2415尊彩塑",
+        "九层楼"
+      ],
+      "tips": "A类票可以参观8个实体洞窟+数字中心，B类票只能参观4个实体洞窟。必须提前预约。",
+      "image": "https://images.unsplash.com/photo-ARZoAmxJVTc?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-solar-power",
+      "name": "敦煌光热电站",
+      "nameEn": "Dunhuang Solar Power Tower",
+      "category": "landmark",
+      "description": "敦煌光热电站是中国首座大规模光热发电站，巨大的镜面阵列和中央高塔构成了壮观的现代工业景观，被誉为'戈壁上的太阳花'，是科技与自然结合的典范。",
+      "address": "敦煌市光电产业园区",
+      "coordinates": {
+        "lat": 40.0833,
+        "lng": 94.4167
+      },
+      "openingHours": "全天开放（外观）",
+      "ticketPrice": "免费（外观）",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "光热发电",
+        "镜面阵列",
+        "太阳花",
+        "科技景观"
+      ],
+      "tips": "可以在公路上远观，非常壮观。建议下午去，阳光照射下镜面反射很美。",
+      "image": "https://images.unsplash.com/photo-b3e_3ZBgz68?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-gobi-desert",
+      "name": "戈壁滩",
+      "nameEn": "Gobi Desert",
+      "category": "nature",
+      "description": "敦煌周边的戈壁滩是典型的荒漠地貌，一望无际的砾石和沙漠构成了苍凉壮美的景观，是自驾游和探险旅行的绝佳目的地，也是拍摄西部片的理想场景。",
+      "address": "敦煌市周边",
+      "coordinates": {
+        "lat": 40.1,
+        "lng": 94.6
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "戈壁风光",
+        "荒漠地貌",
+        "自驾探险",
+        "星空拍摄"
+      ],
+      "tips": "建议自驾或包车前往。注意防晒和补水。晚上可以拍星空。",
+      "image": "https://images.unsplash.com/photo-MDbxot9wcZw?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-ancient-beacon",
+      "name": "汉代烽火台",
+      "nameEn": "Han Dynasty Beacon Tower",
+      "category": "landmark",
+      "description": "敦煌周边保留了大量汉代烽火台遗址，这些烽火台是古代军事防御体系的重要组成部分，用于传递军情，如今是研究汉代军事和丝绸之路的重要实物资料。",
+      "address": "敦煌市周边（阳关、玉门关附近）",
+      "coordinates": {
+        "lat": 39.8,
+        "lng": 93.9
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "汉代遗址",
+        "军事防御",
+        "丝路遗迹",
+        "历史沧桑"
+      ],
+      "tips": "可以和阳关、玉门关一起游览。遗址较分散，建议自驾前往。",
+      "image": "https://images.unsplash.com/photo-h6IkQ6-sBnM?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-moonlit-desert",
+      "name": "月牙泉夜景",
+      "nameEn": "Crescent Moon Spring Night View",
+      "category": "nature",
+      "description": "月牙泉在月光下呈现出与白天截然不同的神秘美感，泉水映着月光，四周沙山环绕，寂静而壮美，是敦煌最浪漫的夜景之一。",
+      "address": "敦煌市鸣沙山月牙泉景区",
+      "coordinates": {
+        "lat": 40.0778,
+        "lng": 94.6722
+      },
+      "openingHours": "05:00-20:30",
+      "ticketPrice": "110元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "月光泉水",
+        "沙漠夜景",
+        "浪漫氛围",
+        "星空观赏"
+      ],
+      "tips": "景区关门较早，月牙泉夜景需要在景区外的观景台观赏。满月时最美。",
+      "image": "https://images.unsplash.com/photo-l0QQuEHULaA?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-han-camp",
+      "name": "敦煌古城",
+      "nameEn": "Dunhuang Ancient City",
+      "category": "landmark",
+      "description": "敦煌古城是仿照古代敦煌城池建造的影视基地，再现了古代敦煌的繁华景象，城内有各种古代建筑和商铺，是拍摄古装电影和电视剧的热门取景地。",
+      "address": "敦煌市敦煌古城",
+      "coordinates": {
+        "lat": 40.1167,
+        "lng": 94.6333
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "古代城池",
+        "影视基地",
+        "古装体验",
+        "丝路文化"
+      ],
+      "tips": "可以租古装拍照，体验穿越回古代的感觉。很多电影在此取景。",
+      "image": "https://images.unsplash.com/photo-3BZTJUE2GA4?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-silk-road-camel",
+      "name": "丝路骆驼",
+      "nameEn": "Silk Road Camel Caravan",
+      "category": "landmark",
+      "description": "丝绸之路上的骆驼商队是古代东西方贸易的主要运输方式，如今在敦煌可以体验骆驼骑行，重温丝绸之路的历史风情，感受古代商旅的艰辛与浪漫。",
+      "address": "敦煌市鸣沙山月牙泉景区",
+      "coordinates": {
+        "lat": 40.0778,
+        "lng": 94.6722
+      },
+      "openingHours": "05:00-20:30",
+      "ticketPrice": "100元/人",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "骆驼骑行",
+        "丝路体验",
+        "沙漠行进",
+        "日落美景"
+      ],
+      "tips": "骆驼队有固定时间和路线，建议提前到达。注意安全，听从工作人员指挥。",
+      "image": "https://images.unsplash.com/photo-vdxQhUoAX00?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-mogao-caves-mural",
+      "name": "莫高窟壁画",
+      "nameEn": "Mogao Caves Murals",
+      "category": "museum",
+      "description": "莫高窟壁画是敦煌艺术的精华，内容涵盖佛教故事、神话传说、社会生活等方方面面，色彩绚丽，线条流畅，是中国古代绘画艺术的巅峰之作。",
+      "address": "敦煌市莫高窟景区内",
+      "coordinates": {
+        "lat": 40.0389,
+        "lng": 94.8056
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "含在莫高窟门票内",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "飞天壁画",
+        "经变画",
+        "供养人像",
+        "佛教故事"
+      ],
+      "tips": "洞窟内光线较暗，注意脚下安全。建议请讲解员，可以了解壁画背后的故事。",
+      "image": "https://images.unsplash.com/photo-KCp91i45KTg?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-singing-sand",
+      "name": "鸣沙山月牙泉",
+      "nameEn": "Singing Sand Mountain & Crescent Spring",
+      "category": "nature",
+      "description": "鸣沙山月牙泉是敦煌最著名的景点，沙泉共存的奇观已有数千年历史，月牙泉形如弯月，被沙山环抱而不被掩埋，被誉为'沙漠第一泉'。",
+      "address": "敦煌市鸣沙山月牙泉景区",
+      "coordinates": {
+        "lat": 40.0778,
+        "lng": 94.6722
+      },
+      "openingHours": "05:00-20:30",
+      "ticketPrice": "110元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "沙泉共存",
+        "月牙形泉水",
+        "沙漠奇观",
+        "千年不涸"
+      ],
+      "tips": "建议早上或傍晚去，中午沙子很烫。可以骑骆驼上山，也可以步行。",
+      "image": "https://images.unsplash.com/photo-41Ze4ev7TKc?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-buddhist-art",
+      "name": "敦煌佛教艺术",
+      "nameEn": "Dunhuang Buddhist Art",
+      "category": "museum",
+      "description": "敦煌佛教艺术是中国佛教艺术的集大成者，从莫高窟到榆林窟，从壁画到彩塑，展现了中国佛教艺术从十六国到元代的发展历程，是世界文化遗产的重要组成部分。",
+      "address": "敦煌市莫高窟等景区",
+      "coordinates": {
+        "lat": 40.0389,
+        "lng": 94.8056
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "含在各景点门票内",
+      "recommendedVisitTime": "1天",
+      "highlights": [
+        "佛教彩塑",
+        "壁画艺术",
+        "石窟建筑",
+        "文化遗产"
+      ],
+      "tips": "建议安排1-2天时间，系统参观莫高窟和其他石窟。提前预约门票。",
+      "image": "https://images.unsplash.com/photo-Wwim7OIStoU?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-gobi-adventure",
+      "name": "戈壁探险",
+      "nameEn": "Gobi Desert Adventure",
+      "category": "nature",
+      "description": "敦煌周边的戈壁滩是户外探险的天堂，可以进行沙漠越野、徒步穿越、星空露营等活动，感受大漠孤烟直的壮美意境，是追求刺激和冒险的旅行者的理想目的地。",
+      "address": "敦煌市周边戈壁",
+      "coordinates": {
+        "lat": 40.1,
+        "lng": 94.5
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "视活动而定",
+      "recommendedVisitTime": "1天",
+      "highlights": [
+        "沙漠越野",
+        "徒步穿越",
+        "星空露营",
+        "戈壁探险"
+      ],
+      "tips": "建议参加正规的户外探险团，注意安全。带足水和食物，做好防晒。",
+      "image": "https://images.unsplash.com/photo-p8a0ArZYQHs?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-landscape-park",
+      "name": "敦煌公园",
+      "nameEn": "Dunhuang Park",
+      "category": "park",
+      "description": "敦煌公园是敦煌市区内最大的公园，园内有湖泊、亭台和各种沙漠植物，是市民休闲娱乐的好去处，也是游客了解敦煌本地生活的好地方。",
+      "address": "敦煌市市区",
+      "coordinates": {
+        "lat": 40.1417,
+        "lng": 94.6625
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "沙漠植物",
+        "湖泊景观",
+        "市民生活",
+        "休闲散步"
+      ],
+      "tips": "傍晚去最舒适，可以和当地人一起散步。公园内有儿童游乐设施。",
+      "image": "https://images.unsplash.com/photo-MDbxot9wcZw?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-bei-liang-grottoes",
+      "name": "北凉石窟",
+      "nameEn": "Beiliang Grottoes",
+      "category": "temple",
+      "description": "北凉石窟是敦煌地区最早的佛教石窟之一，开凿于北凉时期（约公元400年），比莫高窟还要早，是研究中国早期佛教艺术的重要遗址。",
+      "address": "敦煌市附近",
+      "coordinates": {
+        "lat": 40.1,
+        "lng": 94.7
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "早期石窟",
+        "佛教艺术",
+        "历史遗迹",
+        "文化价值"
+      ],
+      "tips": "游客较少，可以安静参观。建议和莫高窟对比，了解佛教艺术的发展。",
+      "image": "https://images.unsplash.com/photo-rAf0IePp1gQ?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-wu-tai-mountain",
+      "name": "三危山",
+      "nameEn": "Sanwei Mountain",
+      "category": "nature",
+      "description": "三危山位于莫高窟对面，是敦煌的神山，据传说乐僔和尚看到三危山上的金光而开凿了莫高窟，山上有古代寺庙遗址和观景台，可以俯瞰莫高窟全景。",
+      "address": "敦煌市莫高窟对面",
+      "coordinates": {
+        "lat": 40.0389,
+        "lng": 94.8056
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "俯瞰莫高窟",
+        "神山传说",
+        "古代遗址",
+        "戈壁风光"
+      ],
+      "tips": "山上风大，注意安全。可以在山上拍摄莫高窟全景。",
+      "image": "https://images.unsplash.com/photo-a-view-of-the-desert-from-a-rock-formation-4IoPLdTD5c8?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-leisure-park",
+      "name": "敦煌党河风情线",
+      "nameEn": "Danghe River Scenic Line",
+      "category": "park",
+      "description": "党河风情线是敦煌市区沿党河建设的景观带，两岸绿树成荫，河水清澈，是市民休闲散步的好去处，也是游客在敦煌市区休闲的好地方。",
+      "address": "敦煌市党河两岸",
+      "coordinates": {
+        "lat": 40.1417,
+        "lng": 94.6625
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "党河夜景",
+        "河畔散步",
+        "城市风光",
+        "休闲放松"
+      ],
+      "tips": "傍晚和晚上最美，灯光璀璨。可以沿河散步，感受敦煌的城市生活。",
+      "image": "https://images.unsplash.com/photo-MDbxot9wcZw?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-dunhuang-heritage",
+      "name": "敦煌文化遗产",
+      "nameEn": "Dunhuang Cultural Heritage",
+      "category": "museum",
+      "description": "敦煌是丝绸之路上最重要的文化遗产地之一，拥有莫高窟、玉门关、阳关等多处世界文化遗产，是中华文明与世界文明交流互鉴的重要见证。",
+      "address": "敦煌市各遗产点",
+      "coordinates": {
+        "lat": 40.1417,
+        "lng": 94.6625
+      },
+      "openingHours": "视各景点而定",
+      "ticketPrice": "视各景点而定",
+      "recommendedVisitTime": "2-3天",
+      "highlights": [
+        "世界遗产",
+        "丝路文化",
+        "佛教艺术",
+        "历史见证"
+      ],
+      "tips": "建议安排2-3天时间，系统参观各遗产点。提前预约莫高窟门票。",
+      "image": "https://images.unsplash.com/photo-mExBSXIzE7o?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-sand-dune-activity",
+      "name": "鸣沙山沙漠活动",
+      "nameEn": "Mingsha Sand Dune Activities",
+      "category": "nature",
+      "description": "鸣沙山提供各种沙漠活动，包括滑沙、沙漠摩托、沙漠越野等，是体验沙漠乐趣的最佳去处，适合各个年龄段的游客参与。",
+      "address": "敦煌市鸣沙山月牙泉景区",
+      "coordinates": {
+        "lat": 40.0778,
+        "lng": 94.6722
+      },
+      "openingHours": "05:00-20:30",
+      "ticketPrice": "各项活动另收费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "滑沙",
+        "沙漠摩托",
+        "沙漠越野",
+        "沙漠露营"
+      ],
+      "tips": "建议穿运动鞋，带好防晒用品。沙漠摩托很刺激但注意安全。",
+      "image": "https://images.unsplash.com/photo-EHwfb1-_l-k?w=800&q=85"
+    }
+  ]
 }
