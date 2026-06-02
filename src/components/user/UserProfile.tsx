@@ -3,7 +3,6 @@
  * Displays user profile with stats and activity
  */
 
-import type { MockProfile } from "@/data/community/mockData";
 import type { Database } from "@/types/database";
 import { POINTS } from "@/types/database";
 import { LevelBadge } from "./LevelBadge";
@@ -12,7 +11,7 @@ import { PointsDisplay } from "./PointsDisplay";
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
 interface UserProfileProps {
-  profile: Profile | MockProfile;
+  profile: Profile;
   stats?: {
     postsCount: number;
     checkInsCount: number;
@@ -34,21 +33,18 @@ export function UserProfile({
   isOwnProfile = false,
   className = "",
 }: UserProfileProps) {
-  // Handle both real Profile and MockProfile
-  const displayName = profile.display_name || (profile as MockProfile).display_name || "Anonymous";
-  const avatarUrl = profile.avatar_url || (profile as MockProfile).avatar_url || null;
-  const nationality = profile.nationality || (profile as MockProfile).nationality || null;
+  const displayName = profile.display_name || "Anonymous";
+  const avatarUrl = profile.avatar_url || null;
+  const nationality = profile.nationality || null;
   const bio = "bio" in profile ? profile.bio : null;
   const level = "level" in profile ? profile.level : "小白";
   const points = profile.points || 0;
 
-  // Get stats from MockProfile if available
-  const mockStats = profile as MockProfile;
   const finalStats = {
-    postsCount: stats.postsCount || mockStats.posts_count || 0,
-    checkInsCount: stats.checkInsCount || mockStats.check_ins_count || 0,
-    likesReceived: stats.likesReceived || mockStats.likes_received || 0,
-    bestAnswers: stats.bestAnswers || mockStats.best_answers || 0,
+    postsCount: stats.postsCount || 0,
+    checkInsCount: stats.checkInsCount || 0,
+    likesReceived: stats.likesReceived || 0,
+    bestAnswers: stats.bestAnswers || 0,
   };
 
   const nationalityEmoji = getNationalityEmoji(nationality);

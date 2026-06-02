@@ -220,18 +220,4 @@ export function generateEmergencyBreadcrumbs(): BreadcrumbItem[] {
   ];
 }
 
-/**
- * Generate breadcrumb items for community page
- */
-export function generateCommunityBreadcrumbs(section?: string): BreadcrumbItem[] {
-  const items: BreadcrumbItem[] = [
-    { name: "Home", href: "/" },
-    { name: "Community", href: "/community" },
-  ];
 
-  if (section) {
-    items.push({ name: section, href: "#", isCurrent: true });
-  }
-
-  return items;
-}

@@ -64,7 +64,6 @@ const STATIC_PAGES: Array<{
   { url: "/food", priority: 0.9, changefreq: "daily" },
   { url: "/cities", priority: 0.9, changefreq: "weekly" },
   { url: "/emergency", priority: 0.8, changefreq: "monthly" },
-  { url: "/community", priority: 0.7, changefreq: "weekly" },
   { url: "/guide", priority: 0.8, changefreq: "weekly" },
   { url: "/guide/attractions", priority: 0.7, changefreq: "weekly" },
   { url: "/guide/accommodation", priority: 0.7, changefreq: "weekly" },

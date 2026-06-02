@@ -4,7 +4,7 @@
 import { generateWebsiteSchema, generateOrganizationSchema, generateJsonLdScript } from '@/lib/seo/schema-org';
 
 interface Props {
-  pageType: 'home' | 'guide' | 'city' | 'food' | 'ai' | 'emergency' | 'community';
+  pageType: 'home' | 'guide' | 'city' | 'food' | 'ai' | 'emergency';
   pageSlug?: string;
   pageName?: string;
   description?: string;
@@ -23,7 +23,7 @@ export function SchemaOrg({ pageType, pageSlug, pageName, description }: Props) 
     food: `${pageName || 'Restaurant'} on ChinaConnect - Find and explore restaurants in China.`,
     ai: 'AI Travel Assistant on ChinaConnect - Get personalized travel advice for China.',
     emergency: 'Emergency contacts and procedures for China travel on ChinaConnect.',
-    community: 'Traveler community on ChinaConnect - Share experiences and connect with other travelers.',
+
   };
 
   const currentDescription = description || pageDescriptions[pageType] || pageDescriptions.guide;
