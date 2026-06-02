@@ -55,7 +55,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
           </div>
           <div class="bg-white rounded-xl shadow-sm border p-4 text-center">
             <div class="text-2xl mb-1">💰</div>
-            <div class="text-sm font-medium text-gray-900" id="stat-balance">¥0.00</div>
+            <div class="text-sm font-medium text-gray-900" id="stat-balance">$0.00</div>
             <div class="text-xs text-gray-500">Wallet Balance</div>
           </div>
           <div class="bg-white rounded-xl shadow-sm border p-4 text-center">
@@ -74,8 +74,36 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
         <div class="bg-white rounded-xl shadow-sm border p-6 mb-6">
           <div class="flex items-center justify-between mb-4">
             <h2 class="text-lg font-semibold text-gray-900">Membership</h2>
-            <a href="/pricing" class="text-sm text-blue-600 hover:underline">Upgrade →</a>
+            <div class="flex items-center gap-3">
+              <a href="/pricing" class="text-sm text-blue-600 hover:underline">Upgrade →</a>
+            </div>
           </div>
+
+          <!-- Membership Status Card -->
+          <div id="membership-status" class="bg-gradient-to-r from-gray-50 to-blue-50 rounded-lg p-4 mb-4 border border-blue-100">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-sm text-gray-500">Current Plan</div>
+                <div class="text-lg font-bold text-gray-900" id="membership-plan-name">Free</div>
+              </div>
+              <div class="text-right">
+                <div class="text-sm text-gray-500">Status</div>
+                <span id="membership-status-badge" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+              </div>
+            </div>
+            <div id="membership-expiry" class="mt-3 text-sm text-gray-500 hidden">
+              <span id="membership-expiry-text"></span>
+            </div>
+            <div id="manage-subscription" class="mt-3 hidden">
+              <button
+                id="manage-subscription-btn"
+                class="text-sm text-blue-600 hover:text-blue-800 hover:underline font-medium"
+              >
+                Manage Subscription →
+              </button>
+            </div>
+          </div>
+
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <div class="text-sm text-gray-500">Daily AI Requests</div>
@@ -164,8 +192,8 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     getUserRoutes,
     getUserFavorites,
     signOut,
-    onAuthStateChange,
   } from '@/lib/auth/supabase-auth';
+  import { clearTierCache } from '@/lib/usage-tracker';
 
   const loadingEl = document.getElementById('account-loading')!;
   const unauthEl = document.getElementById('account-unauthenticated')!;
@@ -178,7 +206,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
   }
 
   function formatCurrency(amount: number): string {
-    return `¥${Number(amount).toFixed(2)}`;
+    return `$${Number(amount).toFixed(2)}`;
   }
 
   function renderRoutes(routes: any[]) {
@@ -276,12 +304,13 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
             ${orders.map(o => `
               <tr class="border-b border-gray-100">
                 <td class="py-2 font-mono text-xs">${o.order_number || o.id.slice(0, 8)}</td>
-                <td class="py-2">${o.order_type || '-'}</td>
+                <td class="py-2">${(o.order_type || '-').replace('membership_', '').replace('_', ' ')}</td>
                 <td class="py-2">${formatCurrency(o.final_amount || o.amount || 0)}</td>
                 <td class="py-2">
                   <span class="px-2 py-0.5 rounded-full text-xs font-medium ${
-                    o.status === 'paid' ? 'bg-green-100 text-green-700' :
-                    o.status === 'pending_payment' ? 'bg-yellow-100 text-yellow-700' :
+                    o.status === 'paid' || o.status === 'completed' ? 'bg-green-100 text-green-700' :
+                    o.status === 'pending' || o.status === 'pending_payment' ? 'bg-yellow-100 text-yellow-700' :
+                    o.status === 'failed' ? 'bg-red-100 text-red-700' :
                     'bg-gray-100 text-gray-600'
                   }">${o.status || 'unknown'}</span>
                 </td>
@@ -308,7 +337,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
       getUserProfile(user.id),
       getUserDashboard(user.id),
       getUserWallet(user.id),
-      getUserOrders(user.id, 5),
+      getUserOrders(user.id, 10),
       getUserRoutes(user.id, 5),
       getUserFavorites(user.id, 5),
     ]);
@@ -348,11 +377,23 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     const aiUsage = document.getElementById('stat-ai-usage')!;
     const routesCount = document.getElementById('stat-routes')!;
 
+    // Tier icon mapping
+    const tierIcons: Record<string, string> = { 
+      free: '🆓', 
+      pro: '⭐', 
+      enterprise: '💎',
+      explorer: '🧭',
+      traveler: '✈️',
+      business: '💼'
+    };
+
     if (dashboard) {
-      const tier = (dashboard as any).tier_slug || 'free';
-      const tierIcons: Record<string, string> = { free: '🆓', pro: '⭐', enterprise: '💎' };
+      const tier = (dashboard as any).tier_slug || profile?.membership_tier || 'free';
       tierIcon.textContent = tierIcons[tier] || '🆓';
       tierName.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
+
+      // Update localStorage to match DB
+      localStorage.setItem('subscription_tier', tier);
 
       const aiUsed = (dashboard as any).ai_used_today || 0;
       const aiLimit = (dashboard as any).ai_daily_limit || 10;
@@ -385,6 +426,29 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
       const favText = document.getElementById('favorites-text')!;
       favBar.style.width = `${Math.min(100, (favCount / maxFav) * 100)}%`;
       favText.textContent = `${favCount}/${maxFav}`;
+
+      // Membership status
+      const planNameEl = document.getElementById('membership-plan-name')!;
+      const statusBadge = document.getElementById('membership-status-badge')!;
+      const expiryEl = document.getElementById('membership-expiry')!;
+      const expiryText = document.getElementById('membership-expiry-text')!;
+      const manageEl = document.getElementById('manage-subscription')!;
+
+      planNameEl.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
+
+      const expiresAt = (dashboard as any).membership_expires_at;
+      if (expiresAt) {
+        expiryEl.classList.remove('hidden');
+        const expiryDate = new Date(expiresAt);
+        expiryText.textContent = `Renews on ${expiryDate.toLocaleDateString()}`;
+        statusBadge.textContent = 'Active';
+        statusBadge.className = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800';
+      }
+
+      // Show manage subscription button for paid tiers
+      if (tier !== 'free') {
+        manageEl.classList.remove('hidden');
+      }
     }
 
     // Wallet balance
@@ -397,6 +461,30 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     renderFavorites(favoritesRes.favorites || []);
     renderOrders(ordersRes.orders || []);
 
+    // Manage subscription button
+    const manageBtn = document.getElementById('manage-subscription-btn');
+    if (manageBtn) {
+      manageBtn.addEventListener('click', async () => {
+        try {
+          // Get the Stripe customer ID from membership metadata
+          const response = await fetch('/api/stripe-portal', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ customerId: '' }), // TODO: Get from user metadata
+          });
+          const data = await response.json();
+          if (data.url) {
+            window.location.href = data.url;
+          } else {
+            alert('Could not open subscription management. Please contact support.');
+          }
+        } catch (err) {
+          console.error('Portal error:', err);
+          alert('Could not open subscription management. Please contact support.');
+        }
+      });
+    }
+
     showSection('content');
   }
 
@@ -406,6 +494,8 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
   // Sign out
   document.getElementById('signout-btn')?.addEventListener('click', async () => {
     await signOut();
+    clearTierCache();
+    localStorage.removeItem('subscription_tier');
     window.location.href = '/';
   });
 </script>
