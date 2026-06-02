@@ -54,7 +54,6 @@ export interface Translations {
     restaurants: string;
     aiChat: string;
     business: string;
-    community: string;
     explore: string;
   };
   // Common
@@ -211,7 +210,6 @@ export const translations: Record<Language, Translations> = {
       restaurants: "Restaurants",
       aiChat: "AI Chat",
       business: "Business Express",
-      community: "Community",
       explore: "Explore Restaurants",
     },
     common: {
@@ -330,8 +328,7 @@ export const translations: Record<Language, Translations> = {
       cities: "都市",
       restaurants: "レストラン",
       aiChat: "AIチャット",
-      business: "ビジネス",
-      community: "コミュニティ",
+      business: "ビジネスエクスプレス",
       explore: "レストランを探す",
     },
     common: {
@@ -450,9 +447,8 @@ export const translations: Record<Language, Translations> = {
       cities: "도시",
       restaurants: "음식점",
       aiChat: "AI 채팅",
-      business: "비즈니스",
-      community: "커뮤니티",
-      explore: "음식점 탐색",
+      business: "비즈니스 익스프레스",
+      explore: "맛집 탐색",
     },
     common: {
       loading: "로딩 중...",
@@ -571,7 +567,6 @@ export const translations: Record<Language, Translations> = {
       restaurants: "餐厅",
       aiChat: "AI聊天",
       business: "商务快车",
-      community: "社区",
       explore: "探索餐厅",
     },
     common: {
@@ -691,7 +686,6 @@ export const translations: Record<Language, Translations> = {
       restaurants: "餐廳",
       aiChat: "AI聊天",
       business: "商務快車",
-      community: "社區",
       explore: "探索餐廳",
     },
     common: {
@@ -810,8 +804,7 @@ export const translations: Record<Language, Translations> = {
       cities: "เมือง",
       restaurants: "ร้านอาหาร",
       aiChat: "แชท AI",
-      business: "ธุรกิจ",
-      community: "ชุมชน",
+      business: "ธุรกิจด่วน",
       explore: "สำรวจร้านอาหาร",
     },
     common: {
@@ -930,9 +923,8 @@ export const translations: Record<Language, Translations> = {
       cities: "Thành phố",
       restaurants: "Nhà hàng",
       aiChat: "AI Chat",
-      business: "Kinh doanh",
-      community: "Cộng đồng",
-      explore: "Khám phá Nhà hàng",
+      business: "Doanh nghiệp",
+      explore: "Khám phá nhà hàng",
     },
     common: {
       loading: "Đang tải...",
@@ -1050,8 +1042,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Города",
       restaurants: "Рестораны",
       aiChat: "AI Чат",
-      business: "Бизнес",
-      community: "Сообщество",
+      business: "Бизнес Экспресс",
       explore: "Исследовать рестораны",
     },
     common: {
@@ -1171,8 +1162,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Villes",
       restaurants: "Restaurants",
       aiChat: "AI Chat",
-      business: "Affaires",
-      community: "Communauté",
+      business: "Express Affaires",
       explore: "Explorer les restaurants",
     },
     common: {
@@ -1295,8 +1285,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Städte",
       restaurants: "Restaurants",
       aiChat: "AI Chat",
-      business: "Business",
-      community: "Gemeinschaft",
+      business: "Business Express",
       explore: "Restaurants erkunden",
     },
     common: {
@@ -1417,8 +1406,7 @@ export const translations: Record<Language, Translations> = {
       cities: "المدن",
       restaurants: "المطاعم",
       aiChat: "الذكاء الاصطناعي",
-      business: "الأعمال",
-      community: "المجتمع",
+      business: "أعمال سريعة",
       explore: "استكشف المطاعم",
     },
     common: {
@@ -1537,9 +1525,8 @@ export const translations: Record<Language, Translations> = {
       cities: "شهرها",
       restaurants: "رستوران‌ها",
       aiChat: "چت AI",
-      business: "تجارت",
-      community: "جامعه",
-      explore: "کاوش رستوران‌ها",
+      business: "بیزینس اکسپرس",
+      explore: "کشف رستوران‌ها",
     },
     common: {
       loading: "در حال بارگذاری...",

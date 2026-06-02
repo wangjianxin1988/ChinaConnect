@@ -1361,7 +1361,6 @@ export type Restaurant = Database["public"]["Tables"]["restaurants"]["Row"];
 export type Itinerary = Database["public"]["Tables"]["itineraries"]["Row"];
 export type ItineraryDay = Database["public"]["Tables"]["itinerary_days"]["Row"];
 
-export type CommunityPost = Database["public"]["Tables"]["community_posts"]["Row"];
 export type Post = Database["public"]["Tables"]["posts"]["Row"];
 export type Comment = Database["public"]["Tables"]["comments"]["Row"];
 export type Like = Database["public"]["Tables"]["likes"]["Row"];

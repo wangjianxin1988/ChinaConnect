@@ -114,7 +114,7 @@ export function AuthPage() {
     <div className="max-w-md mx-auto">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">Welcome to ChinaConnect</h1>
-        <p className="text-muted-foreground">Login or create an account to join the community</p>
+        <p className="text-muted-foreground">Login or create an account to access all features</p>
       </div>
       <AuthForms />
     </div>
