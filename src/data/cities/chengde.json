@@ -582,6 +582,555 @@
         "Photography"
       ],
       "tips": "Beautiful lotus in summer. Great for photos. Peaceful."
+    },
+    {
+      "id": "bishu-shanzhuang",
+      "name": "避暑山庄",
+      "nameEn": "Chengde Mountain Resort",
+      "category": "landmark",
+      "description": "中国最大的皇家园林，世界文化遗产，占地564万平方米。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "130元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "宫殿区",
+        "湖泊区",
+        "草原区"
+      ],
+      "tips": "建议安排一整天。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "putuo-zongcheng",
+      "name": "普陀宗乘之庙",
+      "nameEn": "Putuo Zongcheng Temple",
+      "category": "temple",
+      "description": "外八庙中最大的一座，仿西藏布达拉宫而建。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "80元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "小布达拉宫",
+        "金顶"
+      ],
+      "tips": "与避暑山庄一起游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "puning-temple",
+      "name": "普宁寺",
+      "nameEn": "Puning Temple",
+      "category": "temple",
+      "description": "外八庙之一，有世界最大的木雕佛像千手千眼观音。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "80元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "大佛",
+        "藏传佛教"
+      ],
+      "tips": "千手千眼观音高22.28米。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "pule-temple",
+      "name": "普乐寺",
+      "nameEn": "Pule Temple",
+      "category": "temple",
+      "description": "外八庙之一，有旭光阁等建筑。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "旭光阁",
+        "藏传佛教"
+      ],
+      "tips": "与避暑山庄一起游览。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xumifushou",
+      "name": "须弥福寿之庙",
+      "nameEn": "Xumifushou Temple",
+      "category": "temple",
+      "description": "外八庙之一，仿西藏扎什伦布寺而建。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "藏式建筑",
+        "金顶"
+      ],
+      "tips": "班禅行宫。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "anyuan-temple",
+      "name": "安远庙",
+      "nameEn": "Anyuan Temple",
+      "category": "temple",
+      "description": "外八庙之一，仿新疆伊犁固尔扎庙而建。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "蒙古式建筑"
+      ],
+      "tips": "了解蒙古族文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "puyou-temple",
+      "name": "溥仁寺",
+      "nameEn": "Puren Temple",
+      "category": "temple",
+      "description": "外八庙中最早建造的一座，有独特的汉藏结合建筑风格。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "汉藏建筑"
+      ],
+      "tips": "最早的外八庙。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "shuxiang-temple",
+      "name": "殊像寺",
+      "nameEn": "Shuxiang Temple",
+      "category": "temple",
+      "description": "外八庙之一，仿五台山殊像寺而建。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "kui-gelgele",
+      "name": "魁星楼",
+      "nameEn": "Kuixing Tower",
+      "category": "landmark",
+      "description": "承德市区的标志性建筑，始建于清道光年间。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.97,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "古建筑",
+        "城市全景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "bancheng-ancient",
+      "name": "板城古镇",
+      "nameEn": "Bancheng Ancient Town",
+      "category": "street",
+      "description": "承德北部的古镇，保留了清代建筑风格。",
+      "address": "承德市承德县",
+      "coordinates": {
+        "lat": 41.1,
+        "lng": 117.93
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古镇",
+        "清代建筑"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wuling-mountain",
+      "name": "雾灵山",
+      "nameEn": "Wuling Mountain",
+      "category": "nature",
+      "description": "国家级自然保护区，海拔2118米，森林覆盖率93%。",
+      "address": "兴隆县",
+      "coordinates": {
+        "lat": 40.47,
+        "lng": 117.48
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "90元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "森林",
+        "云海",
+        "日出"
+      ],
+      "tips": "秋季红叶最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "saihanba",
+      "name": "塞罕坝国家森林公园",
+      "nameEn": "Saihanba National Forest Park",
+      "category": "nature",
+      "description": "中国最大的人工林场，有百万亩林海。",
+      "address": "围场县",
+      "coordinates": {
+        "lat": 42.35,
+        "lng": 117.22
+      },
+      "openingHours": "全天",
+      "ticketPrice": "75元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "林海",
+        "草原",
+        "湖泊"
+      ],
+      "tips": "夏秋最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "jungle-bridge",
+      "name": "金山岭长城",
+      "nameEn": "Jinshanling Great Wall",
+      "category": "landmark",
+      "description": "万里长城的精华段，保存最完好的明长城。",
+      "address": "滦平县",
+      "coordinates": {
+        "lat": 40.68,
+        "lng": 117.24
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "65元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "长城",
+        "敌楼",
+        "日出"
+      ],
+      "tips": "摄影爱好者天堂。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "bashang-grassland",
+      "name": "丰宁坝上草原",
+      "nameEn": "Fengning Bashang Grassland",
+      "category": "nature",
+      "description": "京北第一草原，距北京最近的天然草原。",
+      "address": "丰宁县",
+      "coordinates": {
+        "lat": 41.2,
+        "lng": 116.63
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "草原",
+        "骑马",
+        "篝火"
+      ],
+      "tips": "夏季避暑胜地。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "weichang",
+      "name": "围场坝上草原",
+      "nameEn": "Weichang Grassland",
+      "category": "nature",
+      "description": "清代皇家猎苑，有御道口等景区。",
+      "address": "围场县",
+      "coordinates": {
+        "lat": 42.35,
+        "lng": 117.22
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "草原",
+        "森林",
+        "湖泊"
+      ],
+      "tips": "秋季五彩斑斓。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chengde-museum",
+      "name": "承德博物馆",
+      "nameEn": "Chengde Museum",
+      "category": "museum",
+      "description": "展示承德历史和避暑山庄文化的博物馆。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.97,
+        "lng": 117.93
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "避暑山庄文物",
+        "清代历史"
+      ],
+      "tips": "了解承德历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "longhua-temple",
+      "name": "隆化董存瑞烈士陵园",
+      "nameEn": "Longhua Dong Cunrui Memorial",
+      "category": "landmark",
+      "description": "纪念战斗英雄董存瑞的陵园。",
+      "address": "隆化县",
+      "coordinates": {
+        "lat": 41.32,
+        "lng": 117.73
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "爱国主义教育"
+      ],
+      "tips": "了解英雄事迹。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chengde-night",
+      "name": "承德夜景",
+      "nameEn": "Chengde Night View",
+      "category": "landmark",
+      "description": "避暑山庄和外八庙的夜景灯光秀。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间开放。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "kuancheng",
+      "name": "宽城蟠龙湖",
+      "nameEn": "Kuancheng Panlong Lake",
+      "category": "nature",
+      "description": "人工湖，因形似蟠龙而得名，可乘船游览。",
+      "address": "宽城县",
+      "coordinates": {
+        "lat": 40.6,
+        "lng": 118.48
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "湖泊",
+        "峡谷"
+      ],
+      "tips": "夏季水上活动。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "longhua-mountain",
+      "name": "隆化茅荆坝",
+      "nameEn": "Longhua Maojingba",
+      "category": "nature",
+      "description": "国家级自然保护区，有原始森林和高山草甸。",
+      "address": "隆化县",
+      "coordinates": {
+        "lat": 41.32,
+        "lng": 117.73
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "森林",
+        "草甸"
+      ],
+      "tips": "秋季红叶。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "pingquan",
+      "name": "平泉辽河源",
+      "nameEn": "Pingquan Liaoheluan River Source",
+      "category": "nature",
+      "description": "辽河源头，有原始森林和峡谷。",
+      "address": "平泉市",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 118.7
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "河流源头",
+        "森林"
+      ],
+      "tips": "自然风光。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chengde-grassland",
+      "name": "御道口草原",
+      "nameEn": "Yudaokou Grassland",
+      "category": "nature",
+      "description": "清代皇家猎苑的一部分，草原和森林交错。",
+      "address": "围场县",
+      "coordinates": {
+        "lat": 42.35,
+        "lng": 117.22
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "草原",
+        "森林",
+        "骑马"
+      ],
+      "tips": "夏季最美。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "xinglong-cave",
+      "name": "兴隆溶洞",
+      "nameEn": "Xinglong Cave",
+      "category": "nature",
+      "description": "华北地区最大的溶洞之一。",
+      "address": "兴隆县",
+      "coordinates": {
+        "lat": 40.47,
+        "lng": 117.48
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "60元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "钟乳石",
+        "地下河"
+      ],
+      "tips": "四季恒温。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chengde-street",
+      "name": "南营子大街",
+      "nameEn": "Nanyingzi Street",
+      "category": "street",
+      "description": "承德最繁华的商业街，汇集各种特产和小吃。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.97,
+        "lng": 117.93
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "品尝承德小吃。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "luanping",
+      "name": "滦平长城",
+      "nameEn": "Luanping Great Wall",
+      "category": "landmark",
+      "description": "滦平县境内的明长城，保存较好。",
+      "address": "滦平县",
+      "coordinates": {
+        "lat": 40.68,
+        "lng": 117.24
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "长城",
+        "敌楼"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "chengde-wanfo",
+      "name": "万佛园",
+      "nameEn": "Wanfo Garden",
+      "category": "park",
+      "description": "有万尊佛像的园林，融合了佛教文化。",
+      "address": "承德市双桥区",
+      "coordinates": {
+        "lat": 40.98,
+        "lng": 117.93
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛像",
+        "园林"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
     }
   ],
   "restaurants": [
