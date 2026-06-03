@@ -19,7 +19,7 @@ interface CitiesListClientProps {
 }
 
 export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientProps) {
-  const [selectedTiers, setSelectedTiers] = useState<CityTier[]>(["S", "A", "D"]);
+  const [selectedTiers, setSelectedTiers] = useState<CityTier[]>(["S", "A", "B", "C", "D"]);
   const [sortBy, setSortBy] = useState<TierSortOption>("priority");
   const [searchQuery, setSearchQuery] = useState("");
   const [cityScores, setCityScores] = useState<Record<string, CityScoreDisplay>>({});
@@ -110,7 +110,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
         sorted.sort((a, b) => {
           // S-tier always first, then by priority
           if (a.tier !== b.tier) {
-            const tierOrder = { S: 0, A: 1, D: 2 };
+            const tierOrder = { S: 0, A: 1, B: 2, C: 3, D: 4 };
             return tierOrder[a.tier] - tierOrder[b.tier];
           }
           return a.priority - b.priority;
@@ -118,7 +118,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
         break;
       case "tier":
         sorted.sort((a, b) => {
-          const tierOrder = { S: 0, A: 1, D: 2 };
+          const tierOrder = { S: 0, A: 1, B: 2, C: 3, D: 4 };
           return tierOrder[a.tier] - tierOrder[b.tier];
         });
         break;
@@ -151,7 +151,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
 
   // Count by tier
   const tierCounts = useMemo(() => {
-    const counts: Record<CityTier, number> = { S: 0, A: 0, D: 0 };
+    const counts: Record<CityTier, number> = { S: 0, A: 0, B: 0, C: 0, D: 0 };
     for (const city of citiesWithTier) {
       if (city.tier in counts) {
         counts[city.tier as CityTier]++;
@@ -169,6 +169,8 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
         "from-orange-500 to-red-600",
       ],
       A: ["from-blue-500 to-indigo-600", "from-cyan-500 to-blue-600", "from-sky-500 to-indigo-600"],
+      B: ["from-emerald-500 to-teal-600", "from-green-500 to-emerald-600", "from-teal-500 to-cyan-600"],
+      C: ["from-purple-500 to-violet-600", "from-fuchsia-500 to-purple-600", "from-violet-500 to-indigo-600"],
       D: ["from-gray-500 to-slate-600", "from-gray-400 to-gray-600", "from-slate-400 to-gray-600"],
     };
     const tierGradients = gradients[tier];
@@ -180,6 +182,8 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
     const schemes: Record<CityTier, { bg: string; text: string }> = {
       S: { bg: "bg-amber-500", text: "text-amber-500" },
       A: { bg: "bg-blue-500", text: "text-blue-500" },
+      B: { bg: "bg-emerald-500", text: "text-emerald-500" },
+      C: { bg: "bg-purple-500", text: "text-purple-500" },
       D: { bg: "bg-gray-400", text: "text-gray-400" },
     };
     return schemes[tier];
@@ -230,9 +234,11 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
             options={[
               { tier: "S", label: "S-Tier", count: tierCounts.S },
               { tier: "A", label: "A-Tier", count: tierCounts.A },
+              { tier: "B", label: "B-Tier", count: tierCounts.B },
+              { tier: "C", label: "C-Tier", count: tierCounts.C },
               { tier: "D", label: "D-Tier", count: tierCounts.D },
             ]}
-            defaultSelected={["S", "A", "D"]}
+            defaultSelected={["S", "A", "B", "C", "D"]}
           />
         </div>
 
@@ -371,7 +377,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
           <button
             type="button"
             onClick={() => {
-              setSelectedTiers(["S", "A", "D"]);
+              setSelectedTiers(["S", "A", "B", "C", "D"]);
               setSearchQuery("");
             }}
             className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"

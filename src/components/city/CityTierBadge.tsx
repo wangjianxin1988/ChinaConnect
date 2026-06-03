@@ -63,6 +63,28 @@ export function CityTierBadge({
             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
           </svg>
         )}
+        {tier === "B" && (
+          <svg
+            role="img"
+            className="w-3.5 h-3.5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-label="B-Tier"
+          >
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+          </svg>
+        )}
+        {tier === "C" && (
+          <svg
+            role="img"
+            className="w-3.5 h-3.5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-label="C-Tier"
+          >
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+          </svg>
+        )}
         {tier === "D" && (
           <svg
             role="img"
@@ -103,6 +125,8 @@ export function CityTierDot({ tier }: { tier: CityTier }) {
   const colors = {
     S: "bg-amber-500",
     A: "bg-blue-500",
+    B: "bg-emerald-500",
+    C: "bg-purple-500",
     D: "bg-gray-400",
   };
 
