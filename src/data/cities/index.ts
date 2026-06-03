@@ -333,7 +333,7 @@ export const citiesMeta = [
     name: "Xining",
     nameZh: "西宁",
     description: "Gateway to Qinghai Lake, Tibetan culture, yak butter tea",
-    coverImage: "https://images.unsplash.com/photo-1569360406955-8e87b2e2f6e9?w=1200",
+    coverImage: "https://images.unsplash.com/photo-1701913997562-fa30f5c75afd?w=1200&q=80",
   },
   {
     slug: "lanzhou",
