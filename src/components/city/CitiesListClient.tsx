@@ -252,18 +252,24 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
           )}
         </div>
 
-        {/* Scoring Methodology - compact */}
+        {/* Scoring Methodology */}
         <div className="mt-3 pt-3 border-t border-gray-100">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-500">
-            <span className="font-medium text-gray-600">📊 Scoring:</span>
-            <span>Economy <span className="font-semibold text-blue-600">30%</span></span>
-            <span>Connectivity <span className="font-semibold text-purple-600">25%</span></span>
-            <span>Tourism <span className="font-semibold text-emerald-600">25%</span></span>
-            <span>Livability <span className="font-semibold text-amber-600">20%</span></span>
-            <span className="text-gray-400">·</span>
-            <span className="text-gray-400">S≥85 A≥70 B≥55 C≥40 D&lt;40</span>
-            <span className="text-gray-400">·</span>
-            <span className="text-gray-400">Updated weekly from economic reports, global rankings, travel & review data</span>
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+            <span className="font-medium text-gray-700">📊 ChinaConnect City Rating™</span>
+            <span className="text-gray-400">|</span>
+            <span className="text-gray-500">Composite score based on four dimensions:</span>
+            <span className="text-gray-500">Economic Strength <span className="font-semibold text-blue-600">30%</span></span>
+            <span className="text-gray-500">·</span>
+            <span className="text-gray-500">Global Connectivity <span className="font-semibold text-purple-600">25%</span></span>
+            <span className="text-gray-500">·</span>
+            <span className="text-gray-500">Tourism Competitiveness <span className="font-semibold text-emerald-600">25%</span></span>
+            <span className="text-gray-500">·</span>
+            <span className="text-gray-500">Urban Livability <span className="font-semibold text-amber-600">20%</span></span>
+          </div>
+          <div className="mt-1.5 flex flex-wrap items-center gap-x-3 text-xs text-gray-400">
+            <span>Data sources: National Bureau of Statistics, Civil Aviation Administration, Ministry of Culture and Tourism, OpenMeteo meteorological data</span>
+            <span>·</span>
+            <span>Refreshed weekly with real-time climate adjustment</span>
           </div>
         </div>
       </div>
@@ -404,16 +410,21 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
 
       {/* Tier Legend */}
       <div className="mt-12 p-6 bg-gray-50 rounded-xl">
-        <h3 className="text-lg font-semibold mb-4">City Tier Guide</h3>
+        <h3 className="text-lg font-semibold mb-2">ChinaConnect City Rating™ — Tier Classification</h3>
+        <p className="text-sm text-gray-500 mb-5">
+          Cities are classified into five tiers based on their composite score (0–100), calculated from economic output, 
+          international connectivity, tourism competitiveness, and urban livability metrics.
+        </p>
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
           <div className="flex items-start gap-3">
             <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center shrink-0">
               <span className="text-amber-600 font-bold">S</span>
             </div>
             <div>
-              <h4 className="font-semibold text-amber-700">S-Tier</h4>
+              <h4 className="font-semibold text-amber-700">S-Tier (≥85)</h4>
               <p className="text-sm text-gray-600 mt-1">
-                Top-tier global destinations with complete guides, real-time data, and comprehensive coverage.
+                World-class cities with top economic output, extensive international networks, 
+                and full-spectrum travel infrastructure.
               </p>
             </div>
           </div>
@@ -422,9 +433,10 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
               <span className="text-blue-600 font-bold">A</span>
             </div>
             <div>
-              <h4 className="font-semibold text-blue-700">A-Tier</h4>
+              <h4 className="font-semibold text-blue-700">A-Tier (≥70)</h4>
               <p className="text-sm text-gray-600 mt-1">
-                Major cities with strong tourism and economic presence. Detailed guides available.
+                Major economic hubs and top tourism destinations with strong international 
+                connectivity and comprehensive city guides.
               </p>
             </div>
           </div>
@@ -433,9 +445,10 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
               <span className="text-emerald-600 font-bold">B</span>
             </div>
             <div>
-              <h4 className="font-semibold text-emerald-700">B-Tier</h4>
+              <h4 className="font-semibold text-emerald-700">B-Tier (≥55)</h4>
               <p className="text-sm text-gray-600 mt-1">
-                Notable regional destinations with good tourism value and curated content.
+                Significant regional centers with solid economic base, established tourism 
+                appeal, and quality travel recommendations.
               </p>
             </div>
           </div>
@@ -444,9 +457,10 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
               <span className="text-purple-600 font-bold">C</span>
             </div>
             <div>
-              <h4 className="font-semibold text-purple-700">C-Tier</h4>
+              <h4 className="font-semibold text-purple-700">C-Tier (≥40)</h4>
               <p className="text-sm text-gray-600 mt-1">
-                Emerging destinations with unique character. Core travel info provided.
+                Emerging destinations with distinct cultural or natural attractions. 
+                Core travel information and essential guides provided.
               </p>
             </div>
           </div>
@@ -455,9 +469,10 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
               <span className="text-gray-600 font-bold">D</span>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-700">D-Tier</h4>
+              <h4 className="font-semibold text-gray-700">D-Tier (&lt;40)</h4>
               <p className="text-sm text-gray-600 mt-1">
-                Smaller cities and towns with basic information available for exploration.
+                Smaller cities and towns with developing tourism infrastructure. 
+                Basic travel information available for exploration.
               </p>
             </div>
           </div>
