@@ -24,6 +24,9 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
   const [searchQuery, setSearchQuery] = useState("");
   const [cityScores, setCityScores] = useState<Record<string, CityScoreDisplay>>({});
   const [_scoresLoading, setScoresLoading] = useState(true);
+  // Lazy loading: start with 12 cities, load more on scroll
+  const [visibleCount, setVisibleCount] = useState(12);
+  const sentinelRef = React.useRef<HTMLDivElement>(null);
 
   // Fetch city scores from Supabase on mount
   useEffect(() => {
@@ -70,6 +73,13 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
       };
     });
   }, [citiesMeta, citiesData, cityScores]);
+
+  // Reset visible count when filters/search change
+  useEffect(() => {
+    setVisibleCount(12);
+  }, [selectedTiers, searchQuery, sortBy]);
+
+
 
   // Filter cities
   const filteredCities = useMemo(() => {
@@ -122,6 +132,22 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
 
     return sorted;
   }, [filteredCities, sortBy]);
+
+  // IntersectionObserver for lazy loading more cities
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((prev) => prev + 12);
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [sortedCities.length]);
 
   // Count by tier
   const tierCounts = useMemo(() => {
@@ -206,7 +232,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
               { tier: "A", label: "A-Tier", count: tierCounts.A },
               { tier: "D", label: "D-Tier", count: tierCounts.D },
             ]}
-            defaultSelected={["S"]}
+            defaultSelected={["S", "A", "D"]}
           />
         </div>
 
@@ -223,7 +249,7 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
 
       {/* Cities Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {sortedCities.map((city, index) => (
+        {sortedCities.slice(0, visibleCount).map((city, index) => (
           <a
             key={city.slug}
             href={`/city/${city.slug}`}
@@ -325,6 +351,16 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
           </a>
         ))}
       </div>
+
+      {/* Lazy loading sentinel — triggers loading more cities when visible */}
+      {visibleCount < sortedCities.length && (
+        <div ref={sentinelRef} className="flex justify-center py-8">
+          <div className="flex items-center gap-3 text-gray-400">
+            <div className="w-6 h-6 border-2 border-gray-300 border-t-blue-500 rounded-full animate-spin" />
+            <span className="text-sm">Loading more cities...</span>
+          </div>
+        </div>
+      )}
 
       {/* Empty State */}
       {sortedCities.length === 0 && (
