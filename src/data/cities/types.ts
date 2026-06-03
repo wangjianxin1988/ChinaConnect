@@ -1,7 +1,7 @@
 import { S_TIER_CITIES } from "./tier-data";
 
 // City tier classification
-export type CityTier = "S" | "A" | "D";
+export type CityTier = "S" | "A" | "B" | "C" | "D";
 
 // S-tier: Premium cities with full detailed data (35 cities)
 // A-tier: Semi-premium cities with moderate data (200-300 cities)
@@ -165,7 +165,7 @@ export function getCityTier(slug: string): CityTier | undefined {
  * Get all cities grouped by tier
  */
 export function getCitiesByTier(): Record<CityTier, City[]> {
-  const result: Record<CityTier, City[]> = { S: [], A: [], D: [] };
+  const result: Record<CityTier, City[]> = { S: [], A: [], B: [], C: [], D: [] };
 
   for (const city of cities) {
     const tier = getCityTier(city.slug);
