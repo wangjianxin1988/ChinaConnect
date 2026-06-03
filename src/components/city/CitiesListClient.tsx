@@ -387,44 +387,105 @@ export function CitiesListClient({ citiesMeta, citiesData }: CitiesListClientPro
         </div>
       )}
 
-      {/* Tier Legend */}
-      <div className="mt-12 p-6 bg-gray-50 rounded-xl">
-        <h3 className="text-lg font-semibold mb-4">About City Tiers</h3>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center shrink-0">
-              <span className="text-amber-600 font-bold">S</span>
+      {/* Tier Legend + Scoring Methodology */}
+      <div className="mt-12 space-y-6">
+        {/* Scoring Methodology */}
+        <div className="p-6 bg-gradient-to-br from-slate-50 to-gray-50 rounded-xl border border-gray-100">
+          <h3 className="text-lg font-semibold mb-3 text-gray-900">📊 How Cities Are Scored</h3>
+          <p className="text-sm text-gray-600 mb-4">
+            Each city receives a composite score (0–100) calculated from four weighted dimensions, 
+            based on aggregated data from economic reports, global city rankings, travel platforms, 
+            and local review services. Scores are recalculated weekly.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+              <div className="text-2xl font-bold text-blue-600">30%</div>
+              <div className="text-xs text-gray-500 mt-1 font-medium">Economic Power</div>
+              <div className="text-xs text-gray-400">GDP, business activity, employment</div>
             </div>
-            <div>
-              <h4 className="font-semibold text-amber-700">S-Tier Cities</h4>
-              <p className="text-sm text-gray-600 mt-1">
-                Premium destinations with full detailed guides, attractions, restaurants, hotels,
-                and comprehensive travel information.
-              </p>
+            <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+              <div className="text-2xl font-bold text-purple-600">25%</div>
+              <div className="text-xs text-gray-500 mt-1 font-medium">Global Connectivity</div>
+              <div className="text-xs text-gray-400">International flights, foreign investment, events</div>
+            </div>
+            <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+              <div className="text-2xl font-bold text-emerald-600">25%</div>
+              <div className="text-xs text-gray-500 mt-1 font-medium">Tourism Appeal</div>
+              <div className="text-xs text-gray-400">Search volume, bookings, reviews, attractions</div>
+            </div>
+            <div className="text-center p-3 bg-white rounded-lg shadow-sm">
+              <div className="text-2xl font-bold text-amber-600">20%</div>
+              <div className="text-xs text-gray-500 mt-1 font-medium">Livability</div>
+              <div className="text-xs text-gray-400">Transport density, user ratings, amenities</div>
             </div>
           </div>
-          <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
-              <span className="text-blue-600 font-bold">A</span>
-            </div>
-            <div>
-              <h4 className="font-semibold text-blue-700">A-Tier Cities</h4>
-              <p className="text-sm text-gray-600 mt-1">
-                Semi-premium cities with curated content, covering significant tourism destinations
-                with quality recommendations.
-              </p>
-            </div>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <span className="px-2.5 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">S ≥ 85</span>
+            <span className="px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">A ≥ 70</span>
+            <span className="px-2.5 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-medium">B ≥ 55</span>
+            <span className="px-2.5 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">C ≥ 40</span>
+            <span className="px-2.5 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-medium">D &lt; 40</span>
           </div>
-          <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
-              <span className="text-gray-600 font-bold">D</span>
+        </div>
+
+        {/* Tier Legend */}
+        <div className="p-6 bg-gray-50 rounded-xl">
+          <h3 className="text-lg font-semibold mb-4">About City Tiers</h3>
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center shrink-0">
+                <span className="text-amber-600 font-bold">S</span>
+              </div>
+              <div>
+                <h4 className="font-semibold text-amber-700">S-Tier</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Top-tier global destinations with complete guides, real-time data, and comprehensive coverage.
+                </p>
+              </div>
             </div>
-            <div>
-              <h4 className="font-semibold text-gray-700">D-Tier Cities</h4>
-              <p className="text-sm text-gray-600 mt-1">
-                On-demand generated content for smaller cities and towns. Basic information
-                available for exploration.
-              </p>
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                <span className="text-blue-600 font-bold">A</span>
+              </div>
+              <div>
+                <h4 className="font-semibold text-blue-700">A-Tier</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Major cities with strong tourism and economic presence. Detailed guides available.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
+                <span className="text-emerald-600 font-bold">B</span>
+              </div>
+              <div>
+                <h4 className="font-semibold text-emerald-700">B-Tier</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Notable regional destinations with good tourism value and curated content.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center shrink-0">
+                <span className="text-purple-600 font-bold">C</span>
+              </div>
+              <div>
+                <h4 className="font-semibold text-purple-700">C-Tier</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Emerging destinations with unique character. Core travel info provided.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
+                <span className="text-gray-600 font-bold">D</span>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-700">D-Tier</h4>
+                <p className="text-sm text-gray-600 mt-1">
+                  Smaller cities and towns with basic information available for exploration.
+                </p>
+              </div>
             </div>
           </div>
         </div>
