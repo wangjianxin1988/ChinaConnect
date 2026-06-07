@@ -10,6 +10,7 @@ export interface AttractionData {
   image?: string;
   address: string;
   coordinates?: { lat: number; lng: number };
+  phone?: string; // 联系电话
   openingHours: string;
   ticketPrice: string;
   recommendedVisitTime?: string;
@@ -107,7 +108,7 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 text-sm leading-relaxed mb-4">{attraction.description}</p>
+          <p className="text-gray-600 text-sm leading-relaxed mb-4" data-translate={attraction.description}>{attraction.description}</p>
 
           {/* Info grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
@@ -157,22 +158,35 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
             </div>
           )}
 
-          {/* Address + directions */}
+          {/* Address + directions + phone */}
           {attraction.address && (
             <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
               <p className="text-xs text-gray-400 truncate flex-1 mr-2" title={attraction.address}>
                 📍 {attraction.address}
               </p>
-              {attraction.coordinates && (
-                <MapDirectionsLink
-                  lat={attraction.coordinates.lat}
-                  lng={attraction.coordinates.lng}
-                  name={attraction.nameEn}
-                  className="shrink-0 text-blue-600 hover:text-blue-700 text-xs font-medium hover:underline"
-                >
-                  Get Directions →
-                </MapDirectionsLink>
-              )}
+              <div className="flex items-center gap-2 shrink-0">
+                {/* 电话拨打按钮 */}
+                {attraction.phone && (
+                  <a
+                    href={`tel:${attraction.phone.replace(/\s/g, "")}`}
+                    className="flex items-center gap-1 px-2 py-1 bg-green-50 text-green-700 rounded-lg text-xs font-medium hover:bg-green-100 transition-colors"
+                    title={`Call ${attraction.nameEn}`}
+                  >
+                    📞 {attraction.phone}
+                  </a>
+                )}
+                {/* 地图导航按钮 */}
+                {attraction.coordinates && (
+                  <MapDirectionsLink
+                    lat={attraction.coordinates.lat}
+                    lng={attraction.coordinates.lng}
+                    name={attraction.nameEn}
+                    className="text-blue-600 hover:text-blue-700 text-xs font-medium hover:underline"
+                  >
+                    Get Directions →
+                  </MapDirectionsLink>
+                )}
+              </div>
             </div>
           )}
         </div>
