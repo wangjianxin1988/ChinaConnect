@@ -7,10 +7,15 @@
  * Injects `Astro.locals.user` and `Astro.locals.session` for
  * use in page components.
  *
- * NOTE: For static output, auth protection is also handled client-side.
+ * NOTE: For static output, auth protection is handled client-side.
  * The middleware runs at build time for SSG and at request time for SSR/hybrid.
- * When no cookies are present (e.g. during static build), protected pages
- * are allowed through — client-side JS handles the runtime redirect.
+ * 
+ * Cookie Detection:
+ * - Supabase JS v2 defaults to localStorage for session storage
+ * - This middleware checks cookies for backward compatibility
+ * - For production, consider using @supabase/ssr for proper cookie support
+ * - When no cookies are present (build-time or first visit), pages are allowed through
+ * - Client-side JS handles the runtime auth check and redirect
  */
 
 import { createClient } from "@supabase/supabase-js";
