@@ -23,18 +23,17 @@ export interface SearchResponse {
 // AnySearch API Integration
 // ============================================
 
-const ANYSEARCH_API_KEY = "as_sk_968a9530f19ae6e36d8ae099f1eb3b4c";
-const ANYSEARCH_BASE_URL = "https://api.anysearch.com/v1";
+// AnySearch API key is server-side only — never exposed to client.
+// Calls go through /api/search proxy on Cloudflare Pages.
+const ANYSEARCH_PROXY_URL = "/api/search";
 
 /**
- * Call AnySearch API directly (when MCP is not available)
+ * Call AnySearch API via server-side proxy (keeps API key secret)
  */
 async function callAnySearchAPI(
   query: string,
   options?: { location?: string; maxResults?: number },
 ): Promise<SearchResponse | null> {
-  if (!ANYSEARCH_API_KEY) return null;
-
   const startTime = Date.now();
 
   try {
@@ -44,10 +43,9 @@ async function callAnySearchAPI(
     };
     if (options?.location) body.location = options.location;
 
-    const response = await fetch(`${ANYSEARCH_BASE_URL}/search`, {
+    const response = await fetch(ANYSEARCH_PROXY_URL, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${ANYSEARCH_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify(body),
@@ -100,7 +98,7 @@ async function isMCPEnabled(): Promise<boolean> {
 
 // Check if AnySearch API key is configured
 function isAnySearchAPIAvailable(): boolean {
-  return !!ANYSEARCH_API_KEY;
+  return true; // Proxy handles key server-side
 }
 
 // Fallback search using public APIs when MCP is not available
