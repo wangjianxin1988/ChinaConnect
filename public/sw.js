@@ -621,7 +621,7 @@ async function getCacheStatus() {
 
   const status = {
     version: CACHE_VERSION,
-    caches: {} as Record<string, number>,
+    caches: {},
     total: 0
   };
 
@@ -646,7 +646,7 @@ async function getCacheStatus() {
           request.onsuccess = () => resolve(request.result);
           request.onerror = () => resolve(0);
         });
-        status.caches[storeName] = count as number;
+        status.caches[storeName] = count;
       } catch {
         // Store might not exist
       }
