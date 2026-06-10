@@ -6,7 +6,7 @@ import type { Language } from "@/i18n/translations";
 import { RTL_LANGUAGES, SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { HreflangUrl } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.com";
+const SITE_URL = "https://chinaconnect.xyz";
 
 // Default locale
 export const DEFAULT_LOCALE: Language = "en";

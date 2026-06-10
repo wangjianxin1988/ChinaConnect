@@ -1,0 +1,3169 @@
+{
+  "slug": "weihai",
+  "name": "威海",
+  "nameEn": "Weihai",
+  "country": "China",
+  "population": "2.9 million",
+  "coordinates": {
+    "lat": 37.5091,
+    "lng": 122.1216
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Weihai is a beautiful coastal city in Shandong Province, known for clean beaches, fresh seafood, and historical sites. Famous as the departure point for the first Japanese attack on China in 1894 (Sino-Japanese War). Now a popular summer destination with scenic coastal drives and islands.",
+  "coverImage": "https://images.unsplash.com/photo-1689143626749-3c2ab3ebca45?w=1200&q=80",
+  "highlights": [
+    "Liugong Island - First Sino-Japanese War site",
+    "Golden Beach - Pristine 10km beach",
+    "Mountain/Sea Paradise - Theme park and beach",
+    "Chengshan Island - Scenic island getaway",
+    "Weihai Park - Coastal urban park"
+  ],
+  "climate": {
+    "type": "Temperate monsoon",
+    "bestMonths": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "avgSummerTemp": "24C (75F)",
+    "avgWinterTemp": "0C (32F)",
+    "tips": "Best in summer for beaches. July-August peak swimming season. Pleasant in September. Winter cold but scenic. Avoid Golden Week October."
+  },
+  "attractions": [
+    {
+      "id": "weihai-1",
+      "name": "刘公岛",
+      "nameEn": "Liugong Island",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1679459188908-421c5f031aff?w=800&q=85",
+      "description": "Historic island where the First Sino-Japanese War began in 1894. Features naval base, museums, and beautiful coastal scenery.",
+      "address": "Liugong Island, Weihai",
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "122¥ (includes ferry)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Naval history",
+        "War museum",
+        "British colonial buildings",
+        "Coastal views"
+      ],
+      "tips": "Book tickets online. Allow full morning. The history is moving."
+    },
+    {
+      "id": "weihai-2",
+      "name": "金海滩",
+      "nameEn": "Golden Beach",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
+      "description": "Pristine 10km beach with fine golden sand, clear water, and modern resorts.",
+      "address": "Coastal Development Zone",
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "Clean beach",
+        "Swimming",
+        "Water sports",
+        "Sunset views"
+      ],
+      "tips": "Best in summer for swimming. Arrive early on weekends. Water sports available."
+    },
+    {
+      "id": "weihai-3",
+      "name": "华夏城",
+      "nameEn": "Huaxia City",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
+      "description": "Large cultural theme park showcasing Chinese civilization with performances and architecture.",
+      "address": "环翠区 Weihai",
+      "coordinates": {
+        "lat": 37.4491,
+        "lng": 122.0916
+      },
+      "openingHours": "07:30-18:30",
+      "ticketPrice": "98¥",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Live performances",
+        "Ancient architecture",
+        "Water show",
+        "Cultural exhibits"
+      ],
+      "tips": "Full day needed. The evening water show is spectacular."
+    },
+    {
+      "id": "weihai-4",
+      "name": "成山头",
+      "nameEn": "Chengshan Island",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800",
+      "description": "Easternmost point of China's mainland, known as 'First Light of the East'. Dramatic sea cliffs and sunrise views.",
+      "address": "荣成市 Rongcheng",
+      "coordinates": {
+        "lat": 37.3991,
+        "lng": 122.6716
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "180¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Easternmost point",
+        "Sunrise views",
+        "Sea cliffs",
+        "Lighthouse"
+      ],
+      "tips": "Best for sunrise. Day trip from Weihai. The lighthouse area is iconic."
+    },
+    {
+      "id": "weihai-5",
+      "name": "海驴岛",
+      "nameEn": "Haiyu Island",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1516815231560-8f41ec531527?w=800",
+      "description": "Seabird island with thousands of black-tailed gulls nesting. Known as 'Seabird Kingdom'.",
+      "address": "荣成市 Rongcheng",
+      "coordinates": {
+        "lat": 37.3591,
+        "lng": 122.5916
+      },
+      "openingHours": "Ferry schedule (Apr-Oct)",
+      "ticketPrice": "120¥ (ferry included)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Seabirds",
+        "Island scenery",
+        "Photography",
+        "Nature"
+      ],
+      "tips": "Best in summer for birds. Bring seasickness medicine for ferry."
+    },
+    {
+      "id": "weihai-6",
+      "name": "威海公园",
+      "nameEn": "Weihai Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1746960731249-8a167dafa31b?w=800&q=85",
+      "description": "Beautiful coastal urban park with gardens, sculptures, and sea views.",
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Coastal path",
+        "Sculptures",
+        "City views",
+        "Sunset"
+      ],
+      "tips": "Best at sunset. Great for evening stroll. Iconic giant rubber duck."
+    },
+    {
+      "id": "weihai-7",
+      "name": "幸福门",
+      "nameEn": "Happiness Gate",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80",
+      "description": "Iconic arch gate on the waterfront, symbol of Weihai and 'happiness' of the city.",
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.5191,
+        "lng": 122.1316
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 min",
+      "highlights": [
+        "Iconic structure",
+        "Photo spot",
+        "Sea views",
+        "City symbol"
+      ],
+      "tips": "Best for photos. The surrounding area is great for walking."
+    },
+    {
+      "id": "weihai-8",
+      "name": "环海路",
+      "nameEn": "Coastal Road",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      "description": "Scenic coastal road stretching 30km along the coastline with beautiful sea views.",
+      "address": "Along coastline",
+      "coordinates": {
+        "lat": 37.4991,
+        "lng": 122.1116
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Coastal views",
+        "Driving",
+        "Cycling",
+        "Beaches"
+      ],
+      "tips": "Rent a car or bike. Best in morning. Multiple scenic stops."
+    },
+    {
+      "id": "weihai-9",
+      "name": "那香海",
+      "nameEn": "Naxianghai",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=800",
+      "description": "Clean beach area with modern facilities, art installations, and beach clubs.",
+      "address": "文登市 Wendeng",
+      "coordinates": {
+        "lat": 37.3591,
+        "lng": 122.3016
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Clean beach",
+        "Art installations",
+        "Beach club",
+        "Modern facilities"
+      ],
+      "tips": "Best beach experience. Modern amenities. Beach club for dining."
+    },
+    {
+      "id": "weihai-10",
+      "name": "天鹅湖",
+      "nameEn": "Swan Lake",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1606567595334-d39972c85dbe?w=800&q=80",
+      "description": "Winter habitat for migrating swans from Siberia. Best visited December-February.",
+      "address": "荣成市 Rongcheng",
+      "coordinates": {
+        "lat": 37.1791,
+        "lng": 122.5916
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Swan migration",
+        "Winter scenery",
+        "Photography",
+        "Nature"
+      ],
+      "tips": "Best in December-February. Hundreds of swans. Bring warm clothes."
+    },
+    {
+      "id": "weihai-11",
+      "name": "圣经山",
+      "nameEn": "Bible Mountain",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800",
+      "description": "Sacred Taoist mountain with ancient carved scriptures and scenic hiking trails.",
+      "address": "文登市 Wendeng",
+      "coordinates": {
+        "lat": 37.2091,
+        "lng": 122.1516
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Taoist culture",
+        "Ancient carvings",
+        "Mountain hiking",
+        "Scenery"
+      ],
+      "tips": "Day trip. Taoist sacred mountain. Ancient stone carvings unique."
+    },
+    {
+      "id": "weihai-12",
+      "name": "大乳山",
+      "nameEn": "Darushan",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=800",
+      "description": "Mother mountain shaped like a nursing breast, considered sacred in local culture.",
+      "address": "乳山市 Rushan",
+      "coordinates": {
+        "lat": 36.8091,
+        "lng": 121.6516
+      },
+      "openingHours": "07:00-17:30",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Unique shape",
+        "Sacred site",
+        "Coastal views",
+        "Gardens"
+      ],
+      "tips": "Day trip. Interesting shape. The surrounding gardens are beautiful."
+    },
+    {
+      "id": "weihai-13",
+      "name": "银滩",
+      "nameEn": "Silver Beach",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80",
+      "description": "21km pristine beach with fine white sand, considered among China's best beaches.",
+      "address": "乳山市 Rushan",
+      "coordinates": {
+        "lat": 36.8591,
+        "lng": 121.6016
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "White sand",
+        "Clean water",
+        "Long beach",
+        "Quiet"
+      ],
+      "tips": "Less crowded than Golden Beach. White sand unique. Great for walks."
+    },
+    {
+      "id": "weihai-14",
+      "name": "刘公岛博览园",
+      "nameEn": "Liugong Island Exhibition Garden",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=800&q=80",
+      "description": "Exhibition hall on Liugong Island showcasing naval history and Sino-Japanese War.",
+      "address": "Liugong Island",
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "Included in Liugong Island ticket",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Naval exhibits",
+        "War history",
+        "Interactive displays",
+        "Artifacts"
+      ],
+      "tips": "Combine with island tour. The exhibits are informative and moving."
+    },
+    {
+      "id": "weihai-15",
+      "name": "定远舰",
+      "nameEn": "Dingyuan Battleship",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1569242840510-9fe6f0112cee?w=800&q=80",
+      "description": "Full-scale replica of the famous Chinese battleship from the Sino-Japanese War.",
+      "address": "Liugong Island area",
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "70¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Battleship replica",
+        "Naval history",
+        "Weapon exhibits",
+        "History"
+      ],
+      "tips": "Combine with Liugong Island. Impressive size. Great for history buffs."
+    },
+    {
+      "id": "weihai-16",
+      "name": "鸡鸣岛",
+      "nameEn": "Jiming Island",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800",
+      "description": "Secluded island with fishing village, cliffs, and beach. Famous from TV show.",
+      "address": "荣成市 Rongcheng",
+      "coordinates": {
+        "lat": 37.4091,
+        "lng": 122.5916
+      },
+      "openingHours": "Ferry schedule",
+      "ticketPrice": "88¥ (ferry included)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Island village",
+        "Cliffs",
+        "Beach",
+        "Authentic life"
+      ],
+      "tips": "Book ferry in advance. The fishing village is charming."
+    },
+    {
+      "id": "weihai-17",
+      "name": "海洋公园",
+      "nameEn": "Weihai Ocean Park",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&q=80",
+      "description": "Aquarium with marine life, dolphin shows, and underwater tunnel.",
+      "address": "Coastal Development Zone",
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "150¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Marine animals",
+        "Dolphin shows",
+        "Underwater tunnel",
+        "Family friendly"
+      ],
+      "tips": "Great for families. Book shows in advance. Combine with beach."
+    },
+    {
+      "id": "weihai-18",
+      "name": "韩乐坊",
+      "nameEn": "Korean Cultural Block",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800",
+      "description": "Korean-themed commercial district with authentic Korean food and culture.",
+      "address": "Weihai Economic Zone",
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Korean food",
+        "Shopping",
+        "Culture",
+        "Nightlife"
+      ],
+      "tips": "Best evening. Authentic Korean food. Popular with locals."
+    },
+    {
+      "id": "weihai-19",
+      "name": "国际海水浴场",
+      "nameEn": "International Bathing Beach",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=800",
+      "description": "Popular beach with complete facilities, volleyball courts, and beach activities.",
+      "address": "Coastal Development Zone",
+      "coordinates": {
+        "lat": 37.4891,
+        "lng": 122.0916
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "Facilities",
+        "Sports",
+        "Clean beach",
+        "Night beach"
+      ],
+      "tips": "Best equipped beach. Beach volleyball. Evening bonfires."
+    },
+    {
+      "id": "weihai-20",
+      "name": "灯塔",
+      "nameEn": "Weihai Lighthouse",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1675586869688-f152e2a9a12f?w=800&q=85",
+      "description": "Historic lighthouse on the eastern tip of Liugong Island, offering views.",
+      "address": "Liugong Island",
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1816
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "Included in island ticket",
+      "recommendedVisitTime": "30 min",
+      "highlights": [
+        "Coastal views",
+        "Historic lighthouse",
+        "Photo spot",
+        "Naval history"
+      ],
+      "tips": "Combine with island tour. Best lighting for photos."
+    },
+    {
+      "id": "weihai-21",
+      "name": "悦海公园",
+      "nameEn": "Yuehai Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
+      "description": "Coastal park with beach, gardens, and famous lighthouse building.",
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lighthouse building",
+        "Beach",
+        "Gardens",
+        "Sunset"
+      ],
+      "tips": "Best at sunset. The lighthouse building is unique."
+    },
+    {
+      "id": "weihai-22",
+      "name": "影视城",
+      "nameEn": "Weihai Film and Television City",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800",
+      "description": "Film studio and tourist destination with period architecture and shows.",
+      "address": "环翠区 Weihai",
+      "coordinates": {
+        "lat": 37.4391,
+        "lng": 122.1016
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "80¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Film sets",
+        "Performances",
+        "Period architecture",
+        "Costume rental"
+      ],
+      "tips": "Great for photos. Costume rental available. Check show schedule."
+    },
+    {
+      "id": "weihai-23",
+      "name": "温泉",
+      "nameEn": "Weihai Hot Spring",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800",
+      "description": "Natural hot spring resort with various pools and spa treatments.",
+      "address": "文登市 Wendeng",
+      "coordinates": {
+        "lat": 37.2091,
+        "lng": 122.2016
+      },
+      "openingHours": "09:00-23:00",
+      "ticketPrice": "168¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Natural hot spring",
+        "Outdoor pools",
+        "Spa treatments",
+        "Relaxation"
+      ],
+      "tips": "Great after beach day. Book evening for sunset views. Many pools."
+    },
+    {
+      "id": "weihai-24",
+      "name": "小石岛",
+      "nameEn": "Xiaoshi Island",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800",
+      "description": "Small island with fishing village, seafood restaurants, and sunset views.",
+      "address": "环翠区 Weihai",
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.0816
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Fishing village",
+        "Seafood",
+        "Sunset",
+        "Peaceful"
+      ],
+      "tips": "Best for sunset. Fresh seafood. Quiet island feel."
+    },
+    {
+      "id": "wh-bay",
+      "name": "威海湾",
+      "nameEn": "Weihai Bay",
+      "category": "nature",
+      "description": "威海最美丽的海湾。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "海湾",
+        "沙滩"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "wh-liugong",
+      "name": "刘公岛",
+      "nameEn": "Liugong Island",
+      "category": "landmark",
+      "description": "甲午战争纪念地，有中国甲午战争博物院。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "138元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "甲午战争",
+        "博物院"
+      ],
+      "tips": "了解甲午战争历史。",
+      "image": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80"
+    },
+    {
+      "id": "wh-huancui",
+      "name": "环翠楼公园",
+      "nameEn": "Huancuilou Park",
+      "category": "park",
+      "description": "威海的城市公园，有环翠楼。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "环翠楼",
+        "城市全景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=85"
+    },
+    {
+      "id": "wh-intl-beach",
+      "name": "国际海水浴场",
+      "nameEn": "International Bathing Beach",
+      "category": "beach",
+      "description": "威海最著名的海滩。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1652431362591-bfe3d1653c7c?w=800&q=85"
+    },
+    {
+      "id": "wh-food",
+      "name": "威海美食",
+      "nameEn": "Weihai Food",
+      "category": "street",
+      "description": "威海有新鲜海鲜和韩国美食。",
+      "address": "威海市",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均60元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "海鲜",
+        "韩国料理"
+      ],
+      "tips": "品尝威海海鲜。",
+      "image": "https://images.unsplash.com/photo-1727188748757-4d2231fddc75?w=800&q=85"
+    },
+    {
+      "id": "wh-museum",
+      "name": "威海博物馆",
+      "nameEn": "Weihai Museum",
+      "category": "museum",
+      "description": "展示威海历史的博物馆。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "威海历史"
+      ],
+      "tips": "了解威海文化。",
+      "image": "https://images.unsplash.com/photo-1575223970966-76ae61ee7838?w=800&q=80"
+    },
+    {
+      "id": "wh-fahua",
+      "name": "法华院",
+      "nameEn": "Fahua Temple",
+      "category": "temple",
+      "description": "威海最古老的佛教寺院。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1717643543235-e2812d10a0e1?w=800&q=85"
+    },
+    {
+      "id": "wh-park",
+      "name": "威海公园",
+      "nameEn": "Weihai Park",
+      "category": "park",
+      "description": "威海最大的城市公园。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "海滨"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1601732804099-6fc0322a9d4a?w=800&q=85"
+    },
+    {
+      "id": "wh-night",
+      "name": "威海夜景",
+      "nameEn": "Weihai Night View",
+      "category": "landmark",
+      "description": "威海湾的夜景。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1748243769266-e989c564318c?w=800&q=85"
+    },
+    {
+      "id": "wh-happiness",
+      "name": "威海幸福门",
+      "nameEn": "Weihai Happiness Gate",
+      "category": "landmark",
+      "description": "威海的标志性建筑。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "幸福门",
+        "海景"
+      ],
+      "tips": "威海标志。",
+      "image": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=85"
+    },
+    {
+      "id": "wh-golden",
+      "name": "金沙滩",
+      "nameEn": "Golden Sand Beach",
+      "category": "beach",
+      "description": "威海最美的海滩之一。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "海水"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=800&q=80"
+    },
+    {
+      "id": "wh-kunyu",
+      "name": "昆嵛山",
+      "nameEn": "Kunyu Mountain",
+      "category": "nature",
+      "description": "威海最高的山峰。",
+      "address": "威海市文登区",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 121.95
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1562070304-ed6c65e1d838?w=800&q=85"
+    },
+    {
+      "id": "wh-jiming",
+      "name": "鸡鸣岛",
+      "nameEn": "Jiming Island",
+      "category": "nature",
+      "description": "威海附近的小岛，有灯塔和海鸥。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.52
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "灯塔",
+        "海鸥"
+      ],
+      "tips": "看海鸥。",
+      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=85"
+    },
+    {
+      "id": "wh-jiawu",
+      "name": "中国甲午战争博物院",
+      "nameEn": "Chinese Jiawu War Museum",
+      "category": "museum",
+      "description": "展示甲午战争历史的博物馆。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含刘公岛",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "甲午战争",
+        "历史"
+      ],
+      "tips": "了解甲午战争。",
+      "image": "https://images.unsplash.com/photo-1767125715251-c257c8f8cefe?w=800&q=85"
+    },
+    {
+      "id": "wh-chishan",
+      "name": "赤山法华院",
+      "nameEn": "Chishan Fahua Temple",
+      "category": "temple",
+      "description": "威海最大的佛教寺院。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.42
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "赤山大佛"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1720017004624-47bf3b8f1b5f?w=800&q=85"
+    },
+    {
+      "id": "wh-nahai",
+      "name": "那香海",
+      "nameEn": "Nahanghai",
+      "category": "nature",
+      "description": "威海新开发的海滨度假区。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.52
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海滨",
+        "沙滩"
+      ],
+      "tips": "度假好去处。",
+      "image": "https://images.unsplash.com/photo-1703957888555-6fc846a32288?w=800&q=85"
+    },
+    {
+      "id": "wh-chengshantou",
+      "name": "成山头",
+      "nameEn": "Chengshantou",
+      "category": "nature",
+      "description": "中国海岸线的最东端，有天尽头之称。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.52
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "天尽头",
+        "日出"
+      ],
+      "tips": "看日出最佳。",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80"
+    },
+    {
+      "id": "wh-rongcheng-food",
+      "name": "荣成海鲜",
+      "nameEn": "Rongcheng Seafood",
+      "category": "street",
+      "description": "荣成有最新鲜的海鲜。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.2,
+        "lng": 122.42
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均80元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "海鲜"
+      ],
+      "tips": "品尝荣成海鲜。",
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=85"
+    },
+    {
+      "id": "wh-yuehai",
+      "name": "悦海公园",
+      "nameEn": "Yuehai Park",
+      "category": "park",
+      "description": "威海海滨公园。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "海滨",
+        "公园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1517732306149-e8f829eb588a?w=800&q=85"
+    },
+    {
+      "id": "wh-old-street",
+      "name": "威海老街",
+      "nameEn": "Weihai Old Street",
+      "category": "street",
+      "description": "威海最古老的商业街。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验威海生活。",
+      "image": "https://images.unsplash.com/photo-1624644128945-920c0da6931b?w=800&q=85"
+    },
+    {
+      "id": "wh-liugong-night",
+      "name": "刘公岛夜景",
+      "nameEn": "Liugong Island Night View",
+      "category": "landmark",
+      "description": "刘公岛的夜景灯光秀。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80"
+    },
+    {
+      "id": "wh-sea-bridge",
+      "name": "威海跨海大桥",
+      "nameEn": "Weihai Sea-crossing Bridge",
+      "category": "landmark",
+      "description": "连接威海和刘公岛的大桥。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "海景"
+      ],
+      "tips": "看海景。",
+      "image": "https://images.unsplash.com/photo-1747607175896-9a9d7bee2220?w=800&q=85"
+    },
+    {
+      "id": "wh-art",
+      "name": "威海美术馆",
+      "nameEn": "Weihai Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=85"
+    },
+    {
+      "id": "wh-tiecha",
+      "name": "铁槎山",
+      "nameEn": "Tiecha Mountain",
+      "category": "nature",
+      "description": "威海南部的山脉。",
+      "address": "威海市荣成市",
+      "coordinates": {
+        "lat": 37.0,
+        "lng": 122.32
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=85"
+    },
+    {
+      "id": "wh-halfmoon",
+      "name": "半月湾",
+      "nameEn": "Half Moon Bay",
+      "category": "beach",
+      "description": "威海最美的海湾之一。",
+      "address": "威海市环翠区",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海湾",
+        "沙滩"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1745989498560-a1f1cd9fa17a?w=800&q=85"
+    },
+    {
+      "id": "wh-pancake",
+      "name": "威海大饼",
+      "nameEn": "Weihai Pancake",
+      "category": "street",
+      "description": "威海传统面食。",
+      "address": "威海市",
+      "coordinates": {
+        "lat": 37.5,
+        "lng": 122.12
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均10元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大饼"
+      ],
+      "tips": "品尝威海大饼。",
+      "image": "https://images.unsplash.com/photo-1557499305-0af888c3d8ec?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "weihai-1",
+      "name": "海鲜大排档",
+      "nameEn": "Weihai Seafood Street",
+      "type": "local",
+      "cuisine": "Weihai Seafood",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Seafood Street, Coastal Zone",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
+      "phone": "+86 631 522 8888",
+      "hours": "10:00-23:00",
+      "description": "Popular outdoor seafood market with fresh catches and local preparation.",
+      "dishHighlights": [
+        "Fresh seafood",
+        "Steamed fish",
+        "Grilled prawns",
+        "Clams"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "market-style",
+        "fresh"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-2",
+      "name": "正宗韩国料理",
+      "nameEn": "Authentic Korean Restaurant",
+      "type": "local",
+      "cuisine": "Korean",
+      "avgPrice": 80,
+      "rating": 4.7,
+      "address": "Korean Cultural Block",
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
+      "hours": "11:00-23:00",
+      "description": "Authentic Korean restaurant run by Korean locals with premium ingredients.",
+      "dishHighlights": [
+        "Korean BBQ",
+        "Kimchi",
+        "Bibimbap",
+        "Korean fried chicken"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "authentic",
+        "popular"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-3",
+      "name": "老船长海鲜",
+      "nameEn": "Old Captain Seafood",
+      "type": "local",
+      "cuisine": "Weihai Seafood",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Near Golden Beach",
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
+      "phone": "+86 631 562 8888",
+      "hours": "10:30-22:00",
+      "description": "Popular seafood restaurant with fresh catches and ocean views.",
+      "dishHighlights": [
+        "Steamed seafood",
+        "Sea urchin",
+        "Abalone",
+        "Grilled fish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "views",
+        "premium"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-4",
+      "name": "威海大排档",
+      "nameEn": "Weihai Night Market",
+      "type": "local",
+      "cuisine": "Various",
+      "avgPrice": 50,
+      "rating": 4.4,
+      "address": "Night Market Area",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "hours": "17:00-02:00",
+      "description": "Popular night market with variety of street food and local snacks.",
+      "dishHighlights": [
+        "Grilled skewers",
+        "Fried seafood",
+        "Local snacks",
+        "Beer"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "late-night"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-5",
+      "name": "温泉料理",
+      "nameEn": "Hot Spring Cuisine",
+      "type": "local",
+      "cuisine": "Weihai",
+      "avgPrice": 120,
+      "rating": 4.5,
+      "address": "Near Hot Spring Resort",
+      "coordinates": {
+        "lat": 37.2091,
+        "lng": 122.2016
+      },
+      "hours": "10:30-22:00",
+      "description": "Restaurant serving healthy cuisine using hot spring water for cooking.",
+      "dishHighlights": [
+        "Hot spring cooked fish",
+        "Steamed dishes",
+        "Healthy menu",
+        "Local ingredients"
+      ],
+      "tags": [
+        "local",
+        "healthy",
+        "unique",
+        "specialty"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-6",
+      "name": "韩国烤肉",
+      "nameEn": "Korean BBQ House",
+      "type": "local",
+      "cuisine": "Korean BBQ",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Korean Cultural Block",
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
+      "hours": "11:00-23:00",
+      "description": "Korean BBQ restaurant with premium beef and authentic Korean sides.",
+      "dishHighlights": [
+        "Premium beef",
+        "Lamb BBQ",
+        "Kimchi",
+        "Rice dishes"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "bbq",
+        "meat"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-7",
+      "name": "农家渔家乐",
+      "nameEn": "Fisherman Home",
+      "type": "local",
+      "cuisine": "Weihai Home Style",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Near Silver Beach",
+      "coordinates": {
+        "lat": 36.8591,
+        "lng": 121.6016
+      },
+      "hours": "09:00-21:00",
+      "description": "Home-style restaurant serving local seafood and traditional dishes.",
+      "dishHighlights": [
+        "Home-style seafood",
+        "Fresh catch",
+        "Local vegetables",
+        "Cozy atmosphere"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "seafood",
+        "cozy"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-8",
+      "name": "小石岛海鲜",
+      "nameEn": "Xiaoshi Island Seafood",
+      "type": "local",
+      "cuisine": "Weihai Seafood",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Xiaoshi Island",
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.0816
+      },
+      "hours": "10:00-21:00",
+      "description": "Seafood restaurant on Xiaoshi Island with sunset views and fresh fish.",
+      "dishHighlights": [
+        "Island seafood",
+        "Steamed fish",
+        "Sunset views",
+        "Local specialty"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "island",
+        "views"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-9",
+      "name": "海底捞",
+      "nameEn": "Haidilao Hotpot",
+      "type": "chain",
+      "cuisine": "Hotpot",
+      "avgPrice": 150,
+      "rating": 4.8,
+      "address": "City Center",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "phone": "+86 631 520 9999",
+      "hours": "24 hours",
+      "description": "Famous hotpot chain with exceptional service and free manicotti.",
+      "dishHighlights": [
+        "Spicy broth",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free dessert"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "late-night"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-10",
+      "name": "呷哺呷哺",
+      "nameEn": "Xia Cuo Xia Cuo",
+      "type": "chain",
+      "cuisine": "Individual Hotpot",
+      "avgPrice": 70,
+      "rating": 4.4,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "hours": "10:00-22:00",
+      "description": "Popular individual hotpot chain with affordable prices.",
+      "dishHighlights": [
+        "Individual hotpot",
+        "Variety of broths",
+        "Fresh ingredients",
+        "Value"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "individual",
+        "value"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-11",
+      "name": "东来顺",
+      "nameEn": "Dong Lai Shun",
+      "type": "chain",
+      "cuisine": "Mongolian Hotpot",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "City Center",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "phone": "+86 631 520 1234",
+      "hours": "10:30-22:00",
+      "description": "Famous Mongolian hotpot chain with premium lamb.",
+      "dishHighlights": [
+        "Mongolian lamb",
+        "Hotpot",
+        "Traditional broth",
+        "Quality"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "mongolian",
+        "premium"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-12",
+      "name": "韩式炸鸡",
+      "nameEn": "Korean Fried Chicken",
+      "type": "local",
+      "cuisine": "Korean",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Korean Cultural Block",
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
+      "hours": "11:00-24:00",
+      "description": "Popular Korean fried chicken with authentic Korean sauces.",
+      "dishHighlights": [
+        "Korean fried chicken",
+        "Soju",
+        "Korean snacks",
+        "Late night"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "fried-chicken",
+        "late-night"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-13",
+      "name": "大悦城美食",
+      "nameEn": "Dayuecheng Mall Food",
+      "type": "chain",
+      "cuisine": "Various",
+      "avgPrice": 70,
+      "rating": 4.4,
+      "address": "Dayuecheng Mall",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
+      "hours": "10:00-22:00",
+      "description": "Mall food court with variety of cuisines and options.",
+      "dishHighlights": [
+        "Food court",
+        "International options",
+        "Cafes",
+        "Variety"
+      ],
+      "tags": [
+        "chain",
+        "mall",
+        "variety",
+        "convenient"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-14",
+      "name": "韩乐坊烤肉",
+      "nameEn": "Hanle BBQ",
+      "type": "local",
+      "cuisine": "Korean BBQ",
+      "avgPrice": 90,
+      "rating": 4.6,
+      "address": "Korean Cultural Block",
+      "coordinates": {
+        "lat": 37.5291,
+        "lng": 122.1416
+      },
+      "hours": "11:00-23:00",
+      "description": "Popular BBQ in Korean block with all-you-can-eat options.",
+      "dishHighlights": [
+        "All-you-can-eat BBQ",
+        "Premium meat",
+        "Korean sides",
+        "Value"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "bbq",
+        "all-you-can-eat"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-15",
+      "name": "海洋餐厅",
+      "nameEn": "Ocean Restaurant",
+      "type": "fine",
+      "cuisine": "Seafood",
+      "avgPrice": 200,
+      "rating": 4.6,
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "phone": "+86 631 522 6666",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Upscale seafood restaurant with ocean views and premium dishes.",
+      "dishHighlights": [
+        "Premium seafood",
+        "Sea views",
+        "Elegant setting",
+        "Wine list"
+      ],
+      "tags": [
+        "fine-dining",
+        "seafood",
+        "views",
+        "romantic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-16",
+      "name": "鸡汤馆",
+      "nameEn": "Chicken Soup Restaurant",
+      "type": "local",
+      "cuisine": "Weihai",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "City Center",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "hours": "10:00-22:00",
+      "description": "Popular for chicken soup, a local specialty perfect for recovery.",
+      "dishHighlights": [
+        "Chicken soup",
+        "Steamed chicken",
+        "Local dishes",
+        "Healthy"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "healthy",
+        "comfort"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-17",
+      "name": "西虹市首富",
+      "nameEn": "Tomato Master",
+      "type": "chain",
+      "cuisine": "Fast Food",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "hours": "07:00-23:00",
+      "description": "Popular Chinese fast food chain with fried rice and comfort food.",
+      "dishHighlights": [
+        "Fried rice",
+        "Noodles",
+        "Dumplings",
+        "Fast service"
+      ],
+      "tags": [
+        "chain",
+        "fast-food",
+        "quick",
+        "familiar"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-18",
+      "name": "海肠捞饭",
+      "nameEn": "Sea Intestine Rice",
+      "type": "local",
+      "cuisine": "Weihai Specialty",
+      "avgPrice": 80,
+      "rating": 4.7,
+      "address": "Near Seafood Market",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1316
+      },
+      "hours": "10:30-21:30",
+      "description": "Local specialty - rice topped with stir-fried sea intestine.",
+      "dishHighlights": [
+        "Sea intestine",
+        "Rice",
+        "Savory sauce",
+        "Umami"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "must-try",
+        "adventurous"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-19",
+      "name": "鼎泰丰",
+      "nameEn": "Din Tai Fung",
+      "type": "chain",
+      "cuisine": "Taiwanese",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Mall area",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "hours": "10:00-21:30",
+      "description": "World-famous Taiwanese dumpling chain.",
+      "dishHighlights": [
+        "Xiaolongbao",
+        "Fried rice",
+        "Noodles",
+        "Desserts"
+      ],
+      "tags": [
+        "chain",
+        "taiwanese",
+        "dumplings",
+        "quality"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-20",
+      "name": "咖啡厅一条街",
+      "nameEn": "Cafe Street",
+      "type": "cafe",
+      "cuisine": "Western Cafe",
+      "avgPrice": 50,
+      "rating": 4.4,
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.5191,
+        "lng": 122.1316
+      },
+      "hours": "09:00-24:00",
+      "description": "Street with various cafes, perfect for sunset viewing.",
+      "dishHighlights": [
+        "Coffee",
+        "Western snacks",
+        "Sea views",
+        "Sunset"
+      ],
+      "tags": [
+        "cafe",
+        "views",
+        "sunset",
+        "relaxing"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-21",
+      "name": "街边鲅鱼饺子",
+      "nameEn": "街边鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 102,
+      "rating": 4.3,
+      "address": "威海市市中心区美食街81号",
+      "coordinates": {
+        "lat": 37.5311,
+        "lng": 122.1136
+      },
+      "phone": "+86 010 52672833",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "海鲜面",
+        "威海锅贴"
+      ],
+      "tags": [
+        "隐藏美食",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-23",
+      "name": "正宗威海锅贴",
+      "nameEn": "正宗威海锅贴 (威海锅贴)",
+      "type": "local",
+      "cuisine": "威海锅贴",
+      "avgPrice": 106,
+      "rating": 4.6,
+      "address": "威海市老城区美食街166号",
+      "coordinates": {
+        "lat": 37.4712,
+        "lng": 122.1369
+      },
+      "phone": "+86 010 65705704",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "威海锅贴",
+        "海鲜面"
+      ],
+      "tags": [
+        "社区老店",
+        "性价比高",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-25",
+      "name": "威海味海鲜面",
+      "nameEn": "威海味海鲜面 (海鲜面)",
+      "type": "local",
+      "cuisine": "海鲜面",
+      "avgPrice": 138,
+      "rating": 4.8,
+      "address": "威海市老城区美食街143号",
+      "coordinates": {
+        "lat": 37.5032,
+        "lng": 122.1078
+      },
+      "phone": "+86 010 54382308",
+      "hours": "10:00-22:00",
+      "description": "威海本地人推荐的海鲜面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "威海锅贴",
+        "海鲜面"
+      ],
+      "tags": [
+        "老字号",
+        "排队王",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-27",
+      "name": "威海味海鲜面",
+      "nameEn": "威海味海鲜面 (海鲜面)",
+      "type": "street",
+      "cuisine": "海鲜面",
+      "avgPrice": 57,
+      "rating": 4.7,
+      "address": "威海市新城区美食街86号",
+      "coordinates": {
+        "lat": 37.5603,
+        "lng": 122.1349
+      },
+      "phone": "+86 010 34869377",
+      "hours": "09:00-21:00",
+      "description": "威海本地人推荐的海鲜面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "威海锅贴"
+      ],
+      "tags": [
+        "路边摊",
+        "深夜美食",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-29",
+      "name": "巷子威海锅贴",
+      "nameEn": "巷子威海锅贴 (威海锅贴)",
+      "type": "local",
+      "cuisine": "威海锅贴",
+      "avgPrice": 43,
+      "rating": 4.0,
+      "address": "威海市市中心区美食街126号",
+      "coordinates": {
+        "lat": 37.4992,
+        "lng": 122.0946
+      },
+      "phone": "+86 010 54184731",
+      "hours": "09:00-21:00",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "海鲜面"
+      ],
+      "tags": [
+        "社区老店",
+        "隐藏美食",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-31",
+      "name": "地道海鲜面",
+      "nameEn": "地道海鲜面 (海鲜面)",
+      "type": "local",
+      "cuisine": "海鲜面",
+      "avgPrice": 96,
+      "rating": 4.8,
+      "address": "威海市市中心区美食街128号",
+      "coordinates": {
+        "lat": 37.4954,
+        "lng": 122.1321
+      },
+      "phone": "+86 010 76119451",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "威海本地人推荐的海鲜面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "海鲜面",
+        "海鲜"
+      ],
+      "tags": [
+        "隐藏美食",
+        "社区老店",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-33",
+      "name": "正宗鲅鱼饺子",
+      "nameEn": "正宗鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 62,
+      "rating": 4.7,
+      "address": "威海市老城区美食街171号",
+      "coordinates": {
+        "lat": 37.4806,
+        "lng": 122.1473
+      },
+      "phone": "+86 010 97089045",
+      "hours": "06:00-14:00",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜面",
+        "海鲜",
+        "威海锅贴"
+      ],
+      "tags": [
+        "排队王",
+        "本地人爱去",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-35",
+      "name": "威海味鲅鱼饺子",
+      "nameEn": "威海味鲅鱼饺子 (鲅鱼饺子)",
+      "type": "cafe",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 49,
+      "rating": 4.0,
+      "address": "威海市老城区美食街49号",
+      "coordinates": {
+        "lat": 37.4725,
+        "lng": 122.0829
+      },
+      "phone": "+86 010 95498170",
+      "hours": "06:00-14:00",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜面",
+        "鲅鱼饺子",
+        "威海锅贴"
+      ],
+      "tags": [
+        "安静",
+        "文艺",
+        "下午茶"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-37",
+      "name": "正宗鲅鱼饺子",
+      "nameEn": "正宗鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 57,
+      "rating": 4.2,
+      "address": "威海市老城区美食街146号",
+      "coordinates": {
+        "lat": 37.4705,
+        "lng": 122.1103
+      },
+      "phone": "+86 010 77563733",
+      "hours": "10:00-22:00",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "威海锅贴",
+        "海鲜面",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "排队王",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-39",
+      "name": "阿婆海鲜",
+      "nameEn": "阿婆海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 146,
+      "rating": 4.0,
+      "address": "威海市新城区美食街161号",
+      "coordinates": {
+        "lat": 37.5431,
+        "lng": 122.0826
+      },
+      "phone": "+86 010 64023082",
+      "hours": "06:00-14:00",
+      "description": "威海本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "威海锅贴",
+        "鲅鱼饺子",
+        "海鲜"
+      ],
+      "tags": [
+        "社区老店",
+        "排队王",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-41",
+      "name": "老街海鲜",
+      "nameEn": "老街海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 110,
+      "rating": 4.4,
+      "address": "威海市老城区美食街58号",
+      "coordinates": {
+        "lat": 37.4978,
+        "lng": 122.1239
+      },
+      "phone": "+86 010 45314159",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "威海本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "威海锅贴",
+        "鲅鱼饺子",
+        "海鲜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-43",
+      "name": "威海味鲅鱼饺子",
+      "nameEn": "威海味鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 130,
+      "rating": 4.4,
+      "address": "威海市老城区美食街11号",
+      "coordinates": {
+        "lat": 37.4778,
+        "lng": 122.1607
+      },
+      "phone": "+86 010 57773920",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "威海锅贴",
+        "海鲜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "隐藏美食",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-45",
+      "name": "老字号威海锅贴",
+      "nameEn": "老字号威海锅贴 (威海锅贴)",
+      "type": "local",
+      "cuisine": "威海锅贴",
+      "avgPrice": 66,
+      "rating": 4.6,
+      "address": "威海市新城区美食街46号",
+      "coordinates": {
+        "lat": 37.4949,
+        "lng": 122.1501
+      },
+      "phone": "+86 010 18775660",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "威海锅贴"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-47",
+      "name": "老字号威海锅贴",
+      "nameEn": "老字号威海锅贴 (威海锅贴)",
+      "type": "street",
+      "cuisine": "威海锅贴",
+      "avgPrice": 55,
+      "rating": 4.6,
+      "address": "威海市新城区美食街18号",
+      "coordinates": {
+        "lat": 37.476,
+        "lng": 122.0789
+      },
+      "phone": "+86 010 35194759",
+      "hours": "09:00-21:00",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜面",
+        "海鲜",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "网红打卡",
+        "深夜美食",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-49",
+      "name": "巷子鲅鱼饺子",
+      "nameEn": "巷子鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 56,
+      "rating": 4.2,
+      "address": "威海市市中心区美食街33号",
+      "coordinates": {
+        "lat": 37.4896,
+        "lng": 122.1657
+      },
+      "phone": "+86 010 66715999",
+      "hours": "17:00-02:00",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "海鲜面",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "性价比高",
+        "本地人爱去",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-51",
+      "name": "老字号威海锅贴",
+      "nameEn": "老字号威海锅贴 (威海锅贴)",
+      "type": "local",
+      "cuisine": "威海锅贴",
+      "avgPrice": 104,
+      "rating": 4.2,
+      "address": "威海市新城区美食街164号",
+      "coordinates": {
+        "lat": 37.4985,
+        "lng": 122.1289
+      },
+      "phone": "+86 010 70234486",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "威海锅贴",
+        "海鲜"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-53",
+      "name": "阿婆威海锅贴",
+      "nameEn": "阿婆威海锅贴 (威海锅贴)",
+      "type": "cafe",
+      "cuisine": "威海锅贴",
+      "avgPrice": 41,
+      "rating": 4.6,
+      "address": "威海市市中心区美食街129号",
+      "coordinates": {
+        "lat": 37.5243,
+        "lng": 122.0985
+      },
+      "phone": "+86 010 76749436",
+      "hours": "06:00-14:00",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "威海锅贴",
+        "海鲜",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "文艺",
+        "安静",
+        "下午茶"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-55",
+      "name": "街边海鲜面",
+      "nameEn": "街边海鲜面 (海鲜面)",
+      "type": "local",
+      "cuisine": "海鲜面",
+      "avgPrice": 115,
+      "rating": 4.7,
+      "address": "威海市新城区美食街168号",
+      "coordinates": {
+        "lat": 37.5475,
+        "lng": 122.0923
+      },
+      "phone": "+86 010 32163074",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "威海本地人推荐的海鲜面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜面",
+        "威海锅贴",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "老字号",
+        "社区老店",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-57",
+      "name": "正宗鲅鱼饺子",
+      "nameEn": "正宗鲅鱼饺子 (鲅鱼饺子)",
+      "type": "street",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 31,
+      "rating": 4.6,
+      "address": "威海市老城区美食街103号",
+      "coordinates": {
+        "lat": 37.4713,
+        "lng": 122.083
+      },
+      "phone": "+86 010 31441679",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "威海锅贴",
+        "海鲜",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "网红打卡",
+        "路边摊",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-59",
+      "name": "地道威海锅贴",
+      "nameEn": "地道威海锅贴 (威海锅贴)",
+      "type": "local",
+      "cuisine": "威海锅贴",
+      "avgPrice": 134,
+      "rating": 4.8,
+      "address": "威海市老城区美食街113号",
+      "coordinates": {
+        "lat": 37.4941,
+        "lng": 122.1275
+      },
+      "phone": "+86 010 28466658",
+      "hours": "06:00-14:00",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "海鲜",
+        "威海锅贴"
+      ],
+      "tags": [
+        "家常菜",
+        "老字号",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-61",
+      "name": "老街海鲜",
+      "nameEn": "老街海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 59,
+      "rating": 4.1,
+      "address": "威海市老城区美食街112号",
+      "coordinates": {
+        "lat": 37.517,
+        "lng": 122.1597
+      },
+      "phone": "+86 010 58932208",
+      "hours": "17:00-02:00",
+      "description": "威海本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "威海锅贴"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-63",
+      "name": "地道海鲜面",
+      "nameEn": "地道海鲜面 (海鲜面)",
+      "type": "local",
+      "cuisine": "海鲜面",
+      "avgPrice": 86,
+      "rating": 4.8,
+      "address": "威海市市中心区美食街140号",
+      "coordinates": {
+        "lat": 37.5325,
+        "lng": 122.1106
+      },
+      "phone": "+86 010 20202148",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "威海本地人推荐的海鲜面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "海鲜面",
+        "威海锅贴"
+      ],
+      "tags": [
+        "家常菜",
+        "社区老店",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-65",
+      "name": "老威海海鲜",
+      "nameEn": "老威海海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 97,
+      "rating": 4.4,
+      "address": "威海市市中心区美食街102号",
+      "coordinates": {
+        "lat": 37.4835,
+        "lng": 122.1313
+      },
+      "phone": "+86 010 92368277",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "威海本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "威海锅贴",
+        "海鲜"
+      ],
+      "tags": [
+        "社区老店",
+        "性价比高",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-67",
+      "name": "老街威海锅贴",
+      "nameEn": "老街威海锅贴 (威海锅贴)",
+      "type": "local",
+      "cuisine": "威海锅贴",
+      "avgPrice": 92,
+      "rating": 4.1,
+      "address": "威海市新城区美食街109号",
+      "coordinates": {
+        "lat": 37.5019,
+        "lng": 122.1391
+      },
+      "phone": "+86 010 26948956",
+      "hours": "10:00-22:00",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "海鲜",
+        "海鲜面"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-69",
+      "name": "阿婆海鲜",
+      "nameEn": "阿婆海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 147,
+      "rating": 4.2,
+      "address": "威海市新城区美食街104号",
+      "coordinates": {
+        "lat": 37.5287,
+        "lng": 122.1024
+      },
+      "phone": "+86 010 42672417",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "威海本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "威海锅贴",
+        "鲅鱼饺子",
+        "海鲜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "老字号",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-71",
+      "name": "正宗海鲜面",
+      "nameEn": "正宗海鲜面 (海鲜面)",
+      "type": "local",
+      "cuisine": "海鲜面",
+      "avgPrice": 114,
+      "rating": 4.3,
+      "address": "威海市市中心区美食街39号",
+      "coordinates": {
+        "lat": 37.4946,
+        "lng": 122.1615
+      },
+      "phone": "+86 010 22622374",
+      "hours": "09:00-21:00",
+      "description": "威海本地人推荐的海鲜面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "威海锅贴"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-73",
+      "name": "街边威海锅贴",
+      "nameEn": "街边威海锅贴 (威海锅贴)",
+      "type": "local",
+      "cuisine": "威海锅贴",
+      "avgPrice": 71,
+      "rating": 4.6,
+      "address": "威海市市中心区美食街87号",
+      "coordinates": {
+        "lat": 37.5579,
+        "lng": 122.1319
+      },
+      "phone": "+86 010 97677915",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "威海本地人推荐的威海锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "威海锅贴",
+        "海鲜"
+      ],
+      "tags": [
+        "隐藏美食",
+        "家常菜",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-75",
+      "name": "阿婆海鲜",
+      "nameEn": "阿婆海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 73,
+      "rating": 4.1,
+      "address": "威海市老城区美食街152号",
+      "coordinates": {
+        "lat": 37.5519,
+        "lng": 122.1338
+      },
+      "phone": "+86 010 29844305",
+      "hours": "17:00-02:00",
+      "description": "威海本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "海鲜面"
+      ],
+      "tags": [
+        "本地人爱去",
+        "排队王",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-77",
+      "name": "威海味海鲜面",
+      "nameEn": "威海味海鲜面 (海鲜面)",
+      "type": "local",
+      "cuisine": "海鲜面",
+      "avgPrice": 44,
+      "rating": 4.0,
+      "address": "威海市新城区美食街186号",
+      "coordinates": {
+        "lat": 37.5425,
+        "lng": 122.1106
+      },
+      "phone": "+86 010 86841560",
+      "hours": "09:00-21:00",
+      "description": "威海本地人推荐的海鲜面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "海鲜面",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "家常菜",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "weihai-79",
+      "name": "地道鲅鱼饺子",
+      "nameEn": "地道鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 123,
+      "rating": 4.8,
+      "address": "威海市市中心区美食街14号",
+      "coordinates": {
+        "lat": 37.5391,
+        "lng": 122.1475
+      },
+      "phone": "+86 010 99431112",
+      "hours": "17:00-02:00",
+      "description": "威海本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜面",
+        "鲅鱼饺子",
+        "海鲜"
+      ],
+      "tags": [
+        "老字号",
+        "排队王",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Weihai Dashuipo Airport (WEH)",
+        "duration": "Varies (1.5h from Beijing, 2h from Shanghai)",
+        "price": "500-1800¥",
+        "frequency": "Daily flights from major cities",
+        "tips": "Airport 40km from city center. Airport bus (20¥) or taxi (120¥)."
+      },
+      {
+        "type": "train",
+        "from": "Beijing (6h), Shanghai (8h), Qingdao (3h)",
+        "to": "Weihai Railway Station",
+        "duration": "3-8 hours",
+        "price": "150-700¥",
+        "frequency": "Daily trains",
+        "tips": "Station near city center. K-train from Beijing. High-speed from Qingdao."
+      }
+    ],
+    "local": {
+      "metro": [
+        "Limited public transport",
+        "Bus is main option",
+        "Taxi recommended"
+      ],
+      "bus": [
+        "Extensive network",
+        "Single ride: 2¥",
+        "Tourist areas connected",
+        "Use apps for routes"
+      ],
+      "taxi": [
+        "Starting fare: 8¥ (first 3km)",
+        "Night surcharge: 20% extra",
+        "Most attractions 20-80¥",
+        "Didi recommended"
+      ],
+      "bike": [
+        "Mobike, Meituan bikes available",
+        "Unlock: 1¥, then 0.5-1¥ per 30 min",
+        "Great for coastal areas",
+        "Beach areas perfect for cycling"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "威海金海湾希尔顿酒店",
+      "nameEn": "Hilton Weihai Golden Bay",
+      "budget": "luxury",
+      "priceRange": "¥1000-2000/night",
+      "address": "188 Coastal Road, Weihai",
+      "coordinates": {
+        "lat": 37.4891,
+        "lng": 122.0916
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Beachfront",
+        "Luxury",
+        "Ocean views",
+        "Multiple pools"
+      ],
+      "bookingTips": "Best for beach vacation. Book ocean view rooms."
+    },
+    {
+      "name": "威海香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Weihai",
+      "budget": "luxury",
+      "priceRange": "¥1200-2200/night",
+      "address": "88 Cultural Road, Weihai",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Central location",
+        "Luxury facilities",
+        "Bay views",
+        "Multiple dining"
+      ],
+      "bookingTips": "Best location for sightseeing. Famous Sunday brunch."
+    },
+    {
+      "name": "威海海悦建国酒店",
+      "nameEn": "Haiyue Jianguo Hotel Weihai",
+      "budget": "luxury",
+      "priceRange": "¥800-1500/night",
+      "address": "68 Coastal Road, Weihai",
+      "coordinates": {
+        "lat": 37.5191,
+        "lng": 122.1316
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Sea views",
+        "Modern luxury",
+        "Central location",
+        "Good service"
+      ],
+      "bookingTips": "Great location. Perfect for coastal walks."
+    },
+    {
+      "name": "威海百纳中心酒店",
+      "nameEn": "Baina Central Hotel Weihai",
+      "budget": "mid",
+      "priceRange": "¥400-700/night",
+      "address": "168 Qingdao Road, Weihai",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Modern rooms",
+        "Good breakfast",
+        "Value"
+      ],
+      "bookingTips": "Best value in center. Reliable quality."
+    },
+    {
+      "name": "如家酒店威海市政府店",
+      "nameEn": "Home Inn Weihai Government",
+      "budget": "budget",
+      "priceRange": "¥150-300/night",
+      "address": "88 Government Road, Weihai",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Central location",
+        "Budget-friendly",
+        "Clean",
+        "Simple"
+      ],
+      "bookingTips": "Best budget option in center."
+    },
+    {
+      "name": "7天连锁酒店威海汽车站店",
+      "nameEn": "7 Days Inn Weihai Bus Station",
+      "budget": "budget",
+      "priceRange": "¥120-250/night",
+      "address": "168 Bus Station Road, Weihai",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1116
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Budget",
+        "Near bus station",
+        "Simple",
+        "Clean"
+      ],
+      "bookingTips": "Good for bus travelers."
+    },
+    {
+      "name": "威海国际青年旅舍",
+      "nameEn": "Weihai International Youth Hostel",
+      "budget": "budget",
+      "priceRange": "¥80-200/night",
+      "address": "Near Golden Beach",
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Beach location",
+        "Budget-friendly",
+        "Social atmosphere",
+        "Bike rental"
+      ],
+      "bookingTips": "Great for backpackers. Beach access."
+    },
+    {
+      "name": "那香海度假酒店",
+      "nameEn": "Naxianghai Resort Hotel",
+      "budget": "mid",
+      "priceRange": "¥500-900/night",
+      "address": "Naxianghai, Wendeng",
+      "coordinates": {
+        "lat": 37.3591,
+        "lng": 122.3016
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Beachfront",
+        "Modern",
+        "Clean beach",
+        "Resort facilities"
+      ],
+      "bookingTips": "Best for beach lovers. Modern facilities."
+    },
+    {
+      "name": "刘公岛度假区酒店",
+      "nameEn": "Liugong Island Resort Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-800/night",
+      "address": "Liugong Island",
+      "coordinates": {
+        "lat": 37.4591,
+        "lng": 122.1716
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Island location",
+        "Historic area",
+        "Sea views",
+        "Unique experience"
+      ],
+      "bookingTips": "For history enthusiasts. Book ahead for island stay."
+    },
+    {
+      "name": "成山头酒店",
+      "nameEn": "Chengshan Tou Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "Chengshan Island, Rongcheng",
+      "coordinates": {
+        "lat": 37.3991,
+        "lng": 122.6716
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Easternmost point",
+        "Sunrise views",
+        "Scenic location",
+        "Nature"
+      ],
+      "bookingTips": "Best for sunrise chasers. Day trip recommended."
+    },
+    {
+      "name": "威海韩乐坊主题酒店",
+      "nameEn": "Weihai Hanle坊 Theme Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-650/night",
+      "address": "Near Hanle坊",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Korean style",
+        "Near，韩乐坊",
+        "Modern",
+        "Good location"
+      ],
+      "bookingTips": "Perfect for Korean culture体验. Book during off-peak."
+    },
+    {
+      "name": "威海海水浴场酒店",
+      "nameEn": "Weihai Bathing Beach Hotel",
+      "budget": "luxury",
+      "priceRange": "¥800-1500/night",
+      "address": "Near Bathing Beach",
+      "coordinates": {
+        "lat": 37.4791,
+        "lng": 122.1016
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Beachfront",
+        "Sea views",
+        "Resort facilities",
+        "Water sports"
+      ],
+      "bookingTips": "Best for beach lovers. Book ocean view rooms."
+    },
+    {
+      "name": "威海环翠楼酒店",
+      "nameEn": "Weihai Huancuilou Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-550/night",
+      "address": "Near Huancuilou Park",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Park views",
+        "Central location",
+        "Clean",
+        "Value"
+      ],
+      "bookingTips": "Great for nature lovers. Book during off-peak."
+    },
+    {
+      "name": "威海高尔夫度假酒店",
+      "nameEn": "Weihai Golf Resort Hotel",
+      "budget": "luxury",
+      "priceRange": "¥700-1300/night",
+      "address": "Weihai Golf Course area",
+      "coordinates": {
+        "lat": 37.4891,
+        "lng": 122.0916
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Golf course",
+        "Resort facilities",
+        "Scenic",
+        "Relaxing"
+      ],
+      "bookingTips": "Perfect for golfers. Book golf packages."
+    },
+    {
+      "name": "威海华夏城酒店",
+      "nameEn": "Weihai Huaxia City Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-600/night",
+      "address": "Near Huaxia City",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near cultural show",
+        "Modern",
+        "Good service",
+        "Value"
+      ],
+      "bookingTips": "Great for cultural tourists. Book show tickets in advance."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Weihai",
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at seafood markets",
+      "howToUse": [
+        "ATM everywhere",
+        "Banks along main streets"
+      ],
+      "tips": [
+        "Keep 300¥ for seafood markets",
+        "Most restaurants accept cards"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "history",
+      "title": "Sino-Japanese War Heritage",
+      "content": "Weihai is historically significant as the location where the First Sino-Japanese War (1894-95) began. Liugong Island features naval fortifications and museums commemorating this period.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Seafood Culture",
+      "content": "Weihai is famous for fresh seafood including abalone, sea urchin, clams, and various fish. The city has strong seafood culture with many restaurants offering fresh catches daily.",
+      "importance": "high"
+    },
+    {
+      "category": "korean",
+      "title": "Korean Influence",
+      "content": "Due to proximity to Korea and Korean investment, Weihai has a significant Korean community, especially in the Korean Cultural Block. Authentic Korean food is readily available.",
+      "importance": "high"
+    },
+    {
+      "category": "beach",
+      "title": "Beach Culture",
+      "content": "Weihai has beautiful beaches including Golden Beach and Silver Beach. Summer (July-August) is peak season for swimming. The beaches are generally clean and well-maintained.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Weihai Dialect",
+      "content": "Weihai dialect is part of Ji-Lu Mandarin with some unique words. The local accent is known for being direct. Korean influence has introduced some Korean loanwords.",
+      "importance": "low"
+    },
+    {
+      "category": "timing",
+      "title": "Best Time to Visit",
+      "content": "Weihai is best visited May-September for beach season. July-August is peak swimming season but crowded. June and September offer pleasant weather with fewer crowds.",
+      "importance": "medium"
+    },
+    {
+      "category": "nature",
+      "title": "Island Hopping",
+      "content": "Weihai has several beautiful islands including Liugong Island, Chengshan Island, and Haiyu Island. Each offers unique scenery from naval history to seabird colonies.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Must-Try Dishes",
+      "content": "Weihai specialties include: sea urchin (海胆), abalone (鲍鱼), steamed sea bass, sea intestine rice (海肠捞饭), and fresh clams.",
+      "importance": "high"
+    },
+    {
+      "category": "winter",
+      "title": "Winter Swan Migration",
+      "content": "Swan Lake in Rongcheng attracts hundreds of migrating swans from Siberia from December to February. This creates a unique winter tourism opportunity.",
+      "importance": "medium"
+    },
+    {
+      "category": "transportation",
+      "title": "Getting Around",
+      "content": "Weihai is best explored by car or taxi. Attractions are spread out across different districts. Didi works well for transportation. Bus network covers main areas but can be slow.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Coastal Weather",
+      "content": "Weihai has pleasant sea breezes in summer making it cooler than inland areas. However, winter can be cold and windy. Fog is common in spring.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Evening Entertainment",
+      "content": "Weihai has growing nightlife centered around the Korean Cultural Block, coastal zone, and beach areas. The Happiness Gate area is popular for evening walks.",
+      "importance": "low"
+    },
+    {
+      "category": "culture",
+      "title": "Korean Cultural Block",
+      "content": "The Korean Cultural Block (韩乐坊) is a vibrant area with Korean restaurants, shops, and entertainment. Experience authentic Korean culture without leaving China.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Local Products",
+      "content": "Weihai is known for local products including dried seafood, Korean cosmetics, and regional specialties. The night markets offer good shopping opportunities.",
+      "importance": "low"
+    },
+    {
+      "category": "eco",
+      "title": "Environmental Protection",
+      "content": "Weihai has strong environmental protection policies with clean beaches and seawater. The city has received awards for urban environmental improvement.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "威海急救中心",
+      "nameEn": "Weihai Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "威海市公安局",
+      "nameEn": "Weihai Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "hospital",
+      "name": "威海市立医院",
+      "nameEn": "Weihai Municipal Hospital",
+      "phone": "+86 631 528 9120",
+      "address": "88 Qingdao Road, Weihai",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "notes": "English-speaking staff available"
+    },
+    {
+      "type": "hospital",
+      "name": "威海市中心医院",
+      "nameEn": "Weihai Central Hospital",
+      "phone": "+86 631 528 7000",
+      "address": "168 Cultural Road, Weihai",
+      "coordinates": {
+        "lat": 37.5091,
+        "lng": 122.1216
+      },
+      "notes": "Another major hospital with English staff"
+    },
+    {
+      "type": "tourist-police",
+      "name": "威海旅游警察",
+      "nameEn": "Weihai Tourist Police",
+      "phone": "+86 631 520 9110",
+      "notes": "English-speaking tourist police"
+    },
+    {
+      "type": "fire",
+      "name": "威海消防",
+      "nameEn": "Weihai Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻青岛总领事馆",
+      "nameEn": "US Consulate General Qingdao",
+      "phone": "+86 532 8090 0001",
+      "address": "Qingdao",
+      "notes": "For US citizens in Weihai region"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻青岛总领事馆",
+      "nameEn": "UK Consulate General Qingdao",
+      "phone": "+86 532 8090 0801",
+      "address": "Qingdao",
+      "notes": "For UK citizens in Weihai region"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻青岛总领事馆",
+      "nameEn": "Japan Consulate General Qingdao",
+      "phone": "+86 532 8090 0001",
+      "address": "Qingdao",
+      "notes": "For Japanese citizens in Weihai region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻青岛总领事馆",
+      "nameEn": "South Korea Consulate General Qingdao",
+      "phone": "+86 532 8090 0188",
+      "address": "Qingdao",
+      "notes": "For Korean citizens in Weihai region"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻青岛总领事馆",
+      "nameEn": "France Consulate General Qingdao",
+      "phone": "+86 532 8090 0900",
+      "address": "Qingdao",
+      "notes": "For French citizens in Weihai region"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻青岛总领事馆",
+      "nameEn": "Germany Consulate General Qingdao",
+      "phone": "+86 532 8090 0700",
+      "address": "Qingdao",
+      "notes": "For German citizens in Weihai region"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻青岛总领事馆",
+      "nameEn": "Australia Consulate General Qingdao",
+      "phone": "+86 532 8090 0500",
+      "address": "Qingdao",
+      "notes": "For Australian citizens in Weihai region"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Weihai dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

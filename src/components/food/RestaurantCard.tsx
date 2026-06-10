@@ -1,4 +1,5 @@
 import { useFavorites } from "@/hooks/useFavorites";
+import { MapDirectionsLink } from "@/components/ui/MapDirectionsLink";
 import type { Restaurant } from "@/types/food";
 import React, { useCallback } from "react";
 
@@ -136,6 +137,27 @@ export default function RestaurantCard({ restaurant, onClick }: RestaurantCardPr
             </div>
           </div>
         )}
+
+        {/* Action Buttons - Map & Phone */}
+        <div className="flex items-center gap-2 mt-3 pt-3 border-t border-gray-100">
+          <MapDirectionsLink
+            lat={restaurant.lat}
+            lng={restaurant.lng}
+            name={restaurant.name}
+            address={restaurant.address}
+            className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors touch-manipulation"
+          />
+          {restaurant.phone && (
+            <a
+              href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
+              onClick={(e) => e.stopPropagation()}
+              className="flex items-center gap-1.5 px-3 py-2 bg-green-50 text-green-700 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors touch-manipulation"
+            >
+              <span>📞</span>
+              <span>{restaurant.phone}</span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

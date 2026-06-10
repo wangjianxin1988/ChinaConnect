@@ -1,0 +1,3259 @@
+{
+  "slug": "nanjing",
+  "name": "南京",
+  "nameEn": "Nanjing",
+  "country": "China",
+  "population": "8.5 million",
+  "coordinates": {
+    "lat": 32.0603,
+    "lng": 118.7969
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Nanjing, ancient capital of six dynasties and capital of the Republic of China, is a city of profound historical significance. Home to the Sun Yat-sen Mausoleum, Ming Xiaoling Tomb (UNESCO), and theMemorial Hall of the Victims in Nanjing Massacre. A cultural crossroads between north and south China.",
+  "coverImage": "https://images.unsplash.com/photo-1770019829620-6683f2403f51?w=1200&q=80",
+  "highlights": [
+    "Sun Yat-sen Mausoleum - Purple Mountain",
+    "Ming Xiaoling Tomb - UNESCO World Heritage",
+    "Nanjing Massacre Memorial Hall",
+    "Presidential Palace - ROC history",
+    "Fuzi Temple - Ancient commerce district"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "4C (39F)",
+    "tips": "Best in spring for flowers or autumn for foliage. Summers hot and humid. Winters cold with occasional snow. Spring plum blossoms and fall gingko are spectacular."
+  },
+  "attractions": [
+    {
+      "id": "sun-yat-sen-mausoleum",
+      "name": "中山陵",
+      "nameEn": "Sun Yat-sen Mausoleum",
+      "category": "historical",
+      "description": "Magnificent mausoleum honoring Dr. Sun Yat-sen, founder of the Republic of China, on Purple Mountain with 392 steps.",
+      "address": "Zhongshan Mountain, Purple Mountain",
+      "coordinates": {
+        "lat": 32.0622,
+        "lng": 118.8572
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "Free (park 70¥)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "392 steps climb",
+        "Blue tile roof",
+        "Panoramic views",
+        "Bai Chong"
+      ],
+      "tips": "Arrive early to avoid crowds. Wear comfortable shoes. Combine with Ming Xiaoling Tomb nearby.",
+      "image": "https://images.unsplash.com/photo-1588001255325-55a26430101c?w=800&q=85"
+    },
+    {
+      "id": "ming-xiaoling",
+      "name": "明孝陵",
+      "nameEn": "Ming Xiaoling Tomb",
+      "category": "historical",
+      "description": "UNESCO World Heritage site - the tomb of Emperor Hongwu, founder of the Ming Dynasty, with spectacular Avenue of Stone Animals.",
+      "address": "Ming Xiaoling, Purple Mountain",
+      "coordinates": {
+        "lat": 32.0722,
+        "lng": 118.8472
+      },
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "70¥ (includes Ming Xiaoling and Music Square)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Avenue of Stone Animals",
+        "Ming palace ruins",
+        "Wenwu Temple",
+        "Autumn colors"
+      ],
+      "tips": "Walk the 600-year-old avenue at sunrise for magical light. Best in autumn for golden gingko. Combine with nearby Purple Mountain.",
+      "image": "https://images.unsplash.com/photo-1631101642393-f296dcd85afd?w=800&q=85"
+    },
+    {
+      "id": "nanjing-massacre",
+      "name": "南京大屠杀纪念馆",
+      "nameEn": "Memorial Hall of the Victims in Nanjing Massacre",
+      "category": "historical",
+      "description": "A powerful memorial to the 300,000 victims of the 1937 Nanjing Massacre, with exhibits and pilgrimage hall.",
+      "address": "418 Shuige Road, Jianye District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7472
+      },
+      "openingHours": "08:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Memorial Hall",
+        "Exhibition halls",
+        "Peace plaza",
+        "Historical documents"
+      ],
+      "tips": "Bring tissues. Audio guide available. Allow time for reflection. Combine with nearby Fuzi Temple.",
+      "image": "https://images.unsplash.com/photo-1779437248086-88efa83385ce?w=800&q=85"
+    },
+    {
+      "id": "presidential-palace",
+      "name": "总统府",
+      "nameEn": "Presidential Palace",
+      "category": "historical",
+      "description": "The presidential office of Sun Yat-sen and later Chiang Kai-shek, now a museum showcasing 600 years of history.",
+      "address": "292 Changjiang Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0322,
+        "lng": 118.7972
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Zhonghua Gate",
+        "Office buildings",
+        "Garden",
+        "Exhibitions"
+      ],
+      "tips": "Good audio guide. Large complex with much history. Morning visits recommended.",
+      "image": "https://images.unsplash.com/photo-1624267509891-5825f5b0891b?w=800&q=85"
+    },
+    {
+      "id": "fuzi-temple",
+      "name": "夫子庙",
+      "nameEn": "Confucius Temple (Fuzi Temple)",
+      "category": "cultural",
+      "description": "Ancient temple complex with traditional architecture, markets, and boat rides on the Qinhuai River.",
+      "address": "Fuzi Temple, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "openingHours": "09:00-21:00 (some areas open later)",
+      "ticketPrice": "Free (some attractions charge)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Confucius Temple",
+        "Qinhuai River boats",
+        "Night lighting",
+        "Street food"
+      ],
+      "tips": "Best at night when illuminated. Try local snacks from vendors. Take boat ride on river.",
+      "image": "https://images.unsplash.com/photo-1778569957091-9db2b7eae160?w=800&q=85"
+    },
+    {
+      "id": "purple-mountain",
+      "name": "紫金山",
+      "nameEn": "Purple Mountain",
+      "category": "natural",
+      "description": "A 450-meter mountain south of the Ming Xiaoling with hiking trails, ancient temples, and panoramic city views.",
+      "address": "Purple Mountain, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0822,
+        "lng": 118.8272
+      },
+      "openingHours": "Open 24 hours (attractions vary)",
+      "ticketPrice": "Free (individual attractions charge)",
+      "recommendedVisitTime": "Half to full day",
+      "highlights": [
+        "Sun Yat-sen Mausoleum",
+        "Ming Xiaoling",
+        "Music台",
+        "Peak views"
+      ],
+      "tips": "Plan full day to cover major sites. Take cable car up, walk down. Combine multiple attractions.",
+      "image": "https://images.unsplash.com/photo-1609317021231-1a9f37ef92bb?w=800&q=85"
+    },
+    {
+      "id": "xuanwu-lake",
+      "name": "玄武湖",
+      "nameEn": "Xuanwu Lake",
+      "category": "natural",
+      "description": "A beautiful urban lake with parks, gardens, and the ancient Ming city wall views, perfect for cycling and walking.",
+      "address": "Xuanwu Lake, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0822,
+        "lng": 118.7772
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lake cycling",
+        "Five islands",
+        "City wall views",
+        "Cherry blossoms"
+      ],
+      "tips": "Rent bikes around the lake. Combine with nearby Purple Mountain. Beautiful at sunset.",
+      "image": "https://images.unsplash.com/photo-1651766340803-223da8e39cf9?w=800&q=85"
+    },
+    {
+      "id": "laochengli",
+      "name": "老门东",
+      "nameEn": "Laochengli",
+      "category": "cultural",
+      "description": "Restored historic district near Fuzi Temple with traditional architecture, crafts, and local snacks.",
+      "address": "Laochengli, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7972
+      },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional architecture",
+        "Handcraft shops",
+        "Nanjing snacks",
+        "Photography"
+      ],
+      "tips": "Best evening with lighting. Try duck blood soup and small sesame balls. Less crowded than Fuzi Temple area.",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85"
+    },
+    {
+      "id": "yuhuata",
+      "name": "雨花台",
+      "nameEn": "Yuhuata",
+      "category": "historical",
+      "description": "Memorial park and former execution site during Taiping Rebellion era, now a peaceful public park with solemn memorials.",
+      "address": "Yuhuata Road,，雨花台区",
+      "coordinates": {
+        "lat": 32.0022,
+        "lng": 118.8572
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Memorial Hall",
+        "Stone sculptures",
+        "Water features",
+        "Forest atmosphere"
+      ],
+      "tips": "Arrive in morning for peaceful atmosphere. The memorial hall is very moving. Combine with nearby Nanjing South Station.",
+      "image": "https://images.unsplash.com/photo-1661546004179-2e198361d295?w=800&q=85"
+    },
+    {
+      "id": "zhonghuamen",
+      "name": "中华门城堡",
+      "nameEn": "Zhonghua Gate Castle",
+      "category": "historical",
+      "description": "Ming Dynasty city gate and fortifications, one of the best-preserved Chinese castle walls with unique brick structure.",
+      "address": "1 Zhonghua Road, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.8272
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Giant gate complex",
+        "藏兵洞",
+        "City wall views",
+        "Military history"
+      ],
+      "tips": "Walk along the wall for panoramic views. The underground chambers are fascinating. Less crowded than other attractions.",
+      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=85"
+    },
+    {
+      "id": "linggu-temple",
+      "name": "灵谷寺",
+      "nameEn": "Linggu Temple",
+      "category": "cultural",
+      "description": "Ancient Buddhist temple in Purple Mountain area, famous for银杏树林 and the resonant Dagoba.",
+      "address": "Linggu Temple, Purple Mountain",
+      "coordinates": {
+        "lat": 32.0722,
+        "lng": 118.8172
+      },
+      "openingHours": "06:30-18:00",
+      "ticketPrice": "35¥ (includes Linggu Temple and Music Square)",
+      "recommendedVisitTime": "1-2 hours",
+      "highopts": [
+        "银杏林",
+        "Dagoba of Pilgrims",
+        "Wuxing Bridge",
+        "Bamboo forest"
+      ],
+      "tips": "Best in autumn for golden ginkgo. The pagoda offers great views. Very peaceful in early morning.",
+      "image": "https://images.unsplash.com/photo-1757138098916-99adf0b0ac43?w=800&q=85"
+    },
+    {
+      "id": "qinhuai-river",
+      "name": "秦淮河",
+      "nameEn": "Qinhuai River",
+      "category": "natural",
+      "description": "Historic river flowing through Nanjing's old city, famous for its illuminated boat rides and Riverside views.",
+      "address": "Qinhuai River, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "openingHours": "Boat rides 09:00-22:00",
+      "ticketPrice": "Free (boat ride 80-120¥)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Night boat ride",
+        "Illuminated banks",
+        "Ancient architecture",
+        "Street food"
+      ],
+      "tips": "Take evening boat for best views. Combine with Fuzi Temple and Laochengli. The riverbank is great for walking.",
+      "image": "https://images.unsplash.com/photo-1738593247963-37b23eb8e4e8?w=800&q=85"
+    },
+    {
+      "id": "purple-mountain-observatory",
+      "name": "紫金山天文台",
+      "nameEn": "Purple Mountain Observatory",
+      "category": "cultural",
+      "description": "Historic astronomical observatory on Purple Mountain, home to ancient telescopes and stellar artifacts.",
+      "address": "Purple Mountain, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0922,
+        "lng": 118.8372
+      },
+      "openingHours": "8:30-16:30",
+      "ticketPrice": "15¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient telescopes",
+        "Star observatory",
+        "Mountain views",
+        "Space artifacts"
+      ],
+      "tips": "Combine with Purple Mountain hike. Take cable car to save energy. Clear nights best for stargazing.",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=85"
+    },
+    {
+      "id": "meihua-mountain",
+      "name": "梅花山",
+      "nameEn": "Meihua Mountain (Plum Blossom Mountain)",
+      "category": "natural",
+      "description": "Famous for thousands of plum blossom trees, offering stunning pink and white blooms in winter and early spring.",
+      "address": "Ming Xiaoling Tomb, Purple Mountain",
+      "coordinates": {
+        "lat": 32.0722,
+        "lng": 118.8472
+      },
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "Included in Ming Xiaoling ticket (70¥)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Plum blossoms",
+        "Mountain views",
+        "Photography",
+        "Winter scenery"
+      ],
+      "tips": "Visit during plum blossom season (February-March). The fragrance is amazing. Less crowded on weekdays.",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=85"
+    },
+    {
+      "id": "xiaoling-winter",
+      "name": "石象路",
+      "nameEn": "Stone Elephant Road",
+      "category": "historical",
+      "description": "The iconic 600-meter avenue lined with massive stone animals leading to Ming Xiaoling Tomb.",
+      "address": "Ming Xiaoling, Purple Mountain",
+      "coordinates": {
+        "lat": 32.0722,
+        "lng": 118.8472
+      },
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "Included in Ming Xiaoling ticket (70¥)",
+      "recommendedVisitTime": "30 min - 1 hour",
+      "highlights": [
+        "Stone animals",
+        "Autumn foliage",
+        "Photography",
+        "Imperial avenue"
+      ],
+      "tips": "Visit at sunrise for magical light. Autumn for golden gingko. The most photographed spot in Nanjing.",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=800&q=85"
+    },
+    {
+      "id": "chaotiangong",
+      "name": "朝天宫",
+      "nameEn": "Chaotiangong Palace",
+      "category": "historical",
+      "description": "Ming Dynasty imperial palace for worshiping ancestors, now a museum showcasing ancient architecture.",
+      "address": "171 Bai Xia Road,秦淮区",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.8072
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "25¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Ming architecture",
+        "Exhibitions",
+        "Courtyards",
+        "Cultural artifacts"
+      ],
+      "tips": "Good for understanding Ming ritual culture. The architecture is impressive. Combine with nearby Fuzi Temple.",
+      "image": "https://images.unsplash.com/photo-1746966848962-2268a4a4a483?w=800&q=85"
+    },
+    {
+      "id": "zjnu",
+      "name": "南京大学",
+      "nameEn": "Nanjing University",
+      "category": "cultural",
+      "description": "Prestigious historic university with beautiful Qing Dynasty architecture and tree-lined campus.",
+      "address": "22 Han Kou Road, Gulou District",
+      "coordinates": {
+        "lat": 32.0522,
+        "lng": 118.7672
+      },
+      "openingHours": "Open to public",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Historic buildings",
+        "Coral tree",
+        "Pattinson Hall",
+        "Campus gardens"
+      ],
+      "tips": "Visit in spring for coral trees. The main building is beautiful. Great for architecture enthusiasts.",
+      "image": "https://images.unsplash.com/photo-1616079482812-62c95cd27ea7?w=800&q=85"
+    },
+    {
+      "id": "yongle-temple",
+      "name": "大报恩寺",
+      "nameEn": "Dabaoen Temple (Yongle Temple)",
+      "category": "historical",
+      "description": "Rebuilt on site of historic Ming Dynasty temple, known for its modern glass exhibitions and tall pagoda.",
+      "address": "1 Baocheng Road, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0322,
+        "lng": 118.8072
+      },
+      "openingHours": "09:00-17:30",
+      "ticketPrice": "80¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Glass walkway",
+        "Ancient ruins",
+        "Modern art",
+        "Pagoda views"
+      ],
+      "tips": "Modern temple with interesting exhibitions. The glass walkway is impressive. Arrive early to avoid crowds.",
+      "image": "https://images.unsplash.com/photo-1741885573144-249d4c4b1cc7?w=800&q=85"
+    },
+    {
+      "id": "xjpm",
+      "name": "玄武湖公园",
+      "nameEn": "Xuanwu Lake Park",
+      "category": "natural",
+      "description": "Large urban lake park with five islands, cycling paths, cherry blossoms, and ancient city wall views.",
+      "address": "Xuanwu Lake, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0822,
+        "lng": 118.7772
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Five islands",
+        "Cycling path",
+        "Cherry blossoms",
+        "Sunset views"
+      ],
+      "tips": "Rent bikes (15¥/hour) to tour the lake. Best at sunset. The cherry blossoms in March are spectacular.",
+      "image": "https://images.unsplash.com/photo-1651717709382-3a9e243298e1?w=800&q=85"
+    },
+    {
+      "id": "taocheng",
+      "name": "桃叶渡",
+      "nameEn": "Taoye Ferry",
+      "category": "cultural",
+      "description": "Historic riverside spot famous in classical poetry, now a charming area with traditional shops.",
+      "address": "Qinhuai River, near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 min - 1 hour",
+      "highlights": [
+        "Classical poetry",
+        "Riverside views",
+        "Traditional shops",
+        "Romantic atmosphere"
+      ],
+      "tips": "Best at night with lights. Named after poet's love story. Great for photos. Combine with boat ride.",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-21",
+      "name": "鸡鸣寺",
+      "nameEn": "Jiming Temple",
+      "category": "cultural",
+      "description": "Ancient Buddhist temple on Purple Mountain, known for its beautiful plum blossoms in winter and peaceful atmosphere.",
+      "address": "1 Jiming Temple Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0622,
+        "lng": 118.7872
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "10¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Plum blossom garden",
+        "Thousand Buddha Hall",
+        "City wall views",
+        "Bamboo forest"
+      ],
+      "tips": "Best in February for plum blossoms. Combine with Purple Mountain walk. The vegetarian noodles nearby are famous.",
+      "image": "https://images.unsplash.com/photo-1751057574680-6be44a796066?w=800&q=85"
+    },
+    {
+      "id": "nanjing-22",
+      "name": "阅江楼",
+      "nameEn": "Yuejiang Tower",
+      "category": "cultural",
+      "description": "Historic tower on Lion Hill offering panoramic views of the Yangtze River and Nanjing skyline.",
+      "address": "Lion Hill, Huaihai Road, Xiaguan District",
+      "coordinates": {
+        "lat": 32.1022,
+        "lng": 118.7372
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Yangtze River views",
+        "Jingting observation deck",
+        "Ming dynasty architecture",
+        "Historical documents"
+      ],
+      "tips": "Best at sunset for river views. Combined ticket available with Zhonghua Gate. Take photos at the Lion Head.",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85"
+    },
+    {
+      "id": "nanjing-23",
+      "name": "珍珠泉",
+      "nameEn": "Pearl Spring",
+      "category": "natural",
+      "description": "Beautiful spring area with natural hot springs, ideal for family outings with playground and amusement rides.",
+      "address": "1 Peiliao Road, Pukou District",
+      "coordinates": {
+        "lat": 32.1422,
+        "lng": 118.7072
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "40¥ (attractions extra)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Natural spring",
+        "Hot spring resort",
+        "Wild animal show",
+        "Family activities"
+      ],
+      "tips": "Great for families. Come early for animal shows. The hot spring is excellent in winter. Combine with Pukou scenic area.",
+      "image": "https://images.unsplash.com/photo-1768873800617-9938f6caeef5?w=800&q=85"
+    },
+    {
+      "id": "nanjing-24",
+      "name": "牛首山文化旅游区",
+      "nameEn": "Niushou Mountain Cultural Tourism Zone",
+      "category": "cultural",
+      "description": "Modern Buddhist cultural park featuring the stunning Palace of Bliss temple built into a former mining pit.",
+      "address": "Niushou Mountain, Yuhuatai District",
+      "coordinates": {
+        "lat": 31.9422,
+        "lng": 118.8072
+      },
+      "openingHours": "09:00-17:30",
+      "ticketPrice": "98¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Palace of Bliss",
+        "Mountain top temple",
+        "Underground palace",
+        "Buddhist art"
+      ],
+      "tips": "One of Nanjing's newest attractions. The underground palace is spectacular. Book tickets online. Arrive early for fewer crowds.",
+      "image": "https://images.unsplash.com/photo-1648445138253-c850c5184930?w=800&q=85"
+    },
+    {
+      "id": "nanjing-25",
+      "name": "中山植物园",
+      "nameEn": "Zhongshan Botanical Garden",
+      "category": "natural",
+      "description": "Historic botanical garden at the foot of Purple Mountain, featuring diverse plant collections and peaceful walking paths.",
+      "address": "Ling Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0522,
+        "lng": 118.8372
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "45¥ (partial), 65¥ (full)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Plant collections",
+        "Cherry blossom avenue",
+        "Greenhouse",
+        "Nature trails"
+      ],
+      "tips": "Best in spring for cherry blossoms and autumn for foliage. The azalea garden is stunning in April. Great for nature photography.",
+      "image": "https://images.unsplash.com/photo-1677909959348-9832a20041a1?w=800&q=85"
+    },
+    {
+      "id": "nanjing-26",
+      "name": "燕雀湖",
+      "nameEn": "Yanqe Lake",
+      "category": "natural",
+      "description": "Picturesque lake near Ming Xiaoling famous for its lotus flowers and reflection views of Purple Mountain.",
+      "address": "Ming Xiaoling, Purple Mountain",
+      "coordinates": {
+        "lat": 32.0622,
+        "lng": 118.8472
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 min - 1 hour",
+      "highlights": [
+        "Lotus flowers",
+        "Mountain reflection",
+        "Photography spot",
+        "Peaceful atmosphere"
+      ],
+      "tips": "Best in summer for lotus. The reflection of Purple Mountain is famous. Combine with Ming Xiaoling visit. Morning light is magical.",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=85"
+    },
+    {
+      "id": "sun-yat-sen",
+      "name": "中山陵",
+      "nameEn": "Sun Yat-sen Mausoleum",
+      "category": "landmark",
+      "description": "孙中山先生的陵墓，有392级台阶。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "392级台阶",
+        "孙中山"
+      ],
+      "tips": "了解民国历史。",
+      "image": "https://images.unsplash.com/photo-1768802870862-b02ce4dabafd?w=800&q=85"
+    },
+    {
+      "id": "confucius-temple",
+      "name": "夫子庙",
+      "nameEn": "Confucius Temple",
+      "category": "street",
+      "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
+      "address": "南京市秦淮区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "秦淮河",
+        "小吃",
+        "夜景"
+      ],
+      "tips": "品尝南京小吃。",
+      "image": "https://images.unsplash.com/photo-1770036491308-2fc128e47f20?w=800&q=85"
+    },
+    {
+      "id": "nanjing-museum",
+      "name": "南京博物院",
+      "nameEn": "Nanjing Museum",
+      "category": "museum",
+      "description": "中国三大博物馆之一，馆藏文物42万件。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.82
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "文物",
+        "历史"
+      ],
+      "tips": "了解南京文化。",
+      "image": "https://images.unsplash.com/photo-1585002508158-aba1a0eaa8ba?w=800&q=85"
+    },
+    {
+      "id": "nanjing-food",
+      "name": "南京美食",
+      "nameEn": "Nanjing Food",
+      "category": "street",
+      "description": "南京有鸭血粉丝汤和各种小吃。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "鸭血粉丝汤",
+        "盐水鸭"
+      ],
+      "tips": "品尝南京美食。",
+      "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=800&q=85"
+    },
+    {
+      "id": "nanjing-night",
+      "name": "南京夜景",
+      "nameEn": "Nanjing Night View",
+      "category": "landmark",
+      "description": "秦淮河和夫子庙的夜景灯光秀。",
+      "address": "南京市秦淮区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.78
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=85"
+    },
+    {
+      "id": "nanjing-wall",
+      "name": "南京城墙",
+      "nameEn": "Nanjing City Wall",
+      "category": "landmark",
+      "description": "中国保存最完好的古城墙之一。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "08:00-20:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "城墙",
+        "历史"
+      ],
+      "tips": "了解南京历史。",
+      "image": "https://images.unsplash.com/photo-1751057577854-1e041f220504?w=800&q=85"
+    },
+    {
+      "id": "nanjing-temple",
+      "name": "灵谷寺",
+      "nameEn": "Linggu Temple",
+      "category": "temple",
+      "description": "南京最古老的佛教寺院之一。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "35元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "无梁殿"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=85"
+    },
+    {
+      "id": "nanjing-park",
+      "name": "莫愁湖公园",
+      "nameEn": "Mochou Lake Park",
+      "category": "park",
+      "description": "南京最美的公园之一，有莫愁湖。",
+      "address": "南京市建邺区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.75
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "湖泊",
+        "花园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1690272963254-16c68997b4e0?w=800&q=85"
+    },
+    {
+      "id": "nanjing-bridge",
+      "name": "南京长江大桥",
+      "nameEn": "Nanjing Yangtze River Bridge",
+      "category": "landmark",
+      "description": "中国自行设计建造的第一座长江大桥。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.08,
+        "lng": 118.75
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "长江"
+      ],
+      "tips": "了解中国桥梁史。",
+      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=85"
+    },
+    {
+      "id": "nanjing-street",
+      "name": "老门东",
+      "nameEn": "Laomengdong",
+      "category": "street",
+      "description": "南京新开发的历史文化街区。",
+      "address": "南京市秦淮区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "历史街区",
+        "小吃"
+      ],
+      "tips": "了解南京文化。",
+      "image": "https://images.unsplash.com/photo-1748334156857-7b30f3eca42b?w=800&q=85"
+    },
+    {
+      "id": "nanjing-mountain",
+      "name": "紫金山",
+      "nameEn": "Purple Mountain",
+      "category": "nature",
+      "description": "南京最著名的山，有中山陵和明孝陵。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "中山陵",
+        "明孝陵"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=85"
+    },
+    {
+      "id": "nanjing-temple2",
+      "name": "栖霞寺",
+      "nameEn": "Qixia Temple",
+      "category": "temple",
+      "description": "南京最古老的佛教寺院，有舍利塔。",
+      "address": "南京市栖霞区",
+      "coordinates": {
+        "lat": 32.15,
+        "lng": 118.95
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "舍利塔",
+        "佛教文化"
+      ],
+      "tips": "秋季红叶最美。",
+      "image": "https://images.unsplash.com/photo-1733234779113-43d7c0134cbb?w=800&q=85"
+    },
+    {
+      "id": "nanjing-lake",
+      "name": "百家湖",
+      "nameEn": "Baijia Lake",
+      "category": "nature",
+      "description": "江宁区的人工湖。",
+      "address": "南京市江宁区",
+      "coordinates": {
+        "lat": 31.95,
+        "lng": 118.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "湖泊"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "nanjing-university",
+      "name": "南京大学",
+      "nameEn": "Nanjing University",
+      "category": "landmark",
+      "description": "中国最著名的高等学府之一。",
+      "address": "南京市鼓楼区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "校园风光"
+      ],
+      "tips": "了解南京教育。",
+      "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&q=85"
+    },
+    {
+      "id": "nanjing-street2",
+      "name": "颐和路",
+      "nameEn": "Yihe Road",
+      "category": "street",
+      "description": "南京最美的街道之一，有大量民国建筑。",
+      "address": "南京市鼓楼区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "民国建筑"
+      ],
+      "tips": "了解民国历史。",
+      "image": "https://images.unsplash.com/photo-1748790746963-d9f8c7306aac?w=800&q=85"
+    },
+    {
+      "id": "nanjing-museum2",
+      "name": "南京科技馆",
+      "nameEn": "Nanjing Science Museum",
+      "category": "museum",
+      "description": "展示科技知识的博物馆。",
+      "address": "南京市建邺区",
+      "coordinates": {
+        "lat": 32.02,
+        "lng": 118.75
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "科技展览"
+      ],
+      "tips": "适合亲子游。",
+      "image": "https://images.unsplash.com/photo-1664848190894-666afd4d1e7c?w=800&q=85"
+    },
+    {
+      "id": "nanjing-park2",
+      "name": "雨花台",
+      "nameEn": "Yuhuatai",
+      "category": "landmark",
+      "description": "纪念革命先烈的纪念地。",
+      "address": "南京市雨花台区",
+      "coordinates": {
+        "lat": 32.0,
+        "lng": 118.78
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "革命历史"
+      ],
+      "tips": "了解革命历史。",
+      "image": "https://images.unsplash.com/photo-1555529771-7888783a18d3?w=800&q=85"
+    },
+    {
+      "id": "nanjing-food2",
+      "name": "南京大排档",
+      "nameEn": "Nanjing Dapaidang",
+      "category": "street",
+      "description": "南京最有名的餐厅，有各种南京传统菜。",
+      "address": "南京市",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均80元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "南京菜",
+        "盐水鸭"
+      ],
+      "tips": "品尝南京菜。",
+      "image": "https://images.unsplash.com/photo-1764172437754-9165320b0fec?w=800&q=85"
+    },
+    {
+      "id": "nanjing-temple3",
+      "name": "鸡鸣寺",
+      "nameEn": "Jiming Temple",
+      "category": "temple",
+      "description": "南京最古老的佛教寺院，有1700多年历史。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古寺",
+        "樱花"
+      ],
+      "tips": "春季樱花最美。",
+      "image": "https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?w=800&q=85"
+    },
+    {
+      "id": "nanjing-lake2",
+      "name": "前湖",
+      "nameEn": "Qianhu Lake",
+      "category": "nature",
+      "description": "玄武湖的一部分。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.08,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "湖泊"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1512383097433-0551456ad131?w=800&q=85"
+    },
+    {
+      "id": "nj-park3",
+      "name": "玄武湖公园",
+      "nameEn": "Xuanwu Lake Park",
+      "category": "park",
+      "description": "南京最大的城市公园。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.08,
+        "lng": 118.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "湖泊",
+        "公园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1575223970966-76ae61ee7838?w=800&q=85"
+    },
+    {
+      "id": "nj-street3",
+      "name": "新街口",
+      "nameEn": "Xinjiekou",
+      "category": "street",
+      "description": "南京最繁华的商业中心。",
+      "address": "南京市鼓楼区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.78
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "购物好去处。",
+      "image": "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=800&q=85"
+    },
+    {
+      "id": "nj-temple4",
+      "name": "牛首山",
+      "nameEn": "Niushou Mountain",
+      "category": "nature",
+      "description": "南京南部的山，有佛顶宫。",
+      "address": "南京市江宁区",
+      "coordinates": {
+        "lat": 31.93,
+        "lng": 118.83
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "98元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "佛顶宫",
+        "佛教文化"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?w=800&q=85"
+    },
+    {
+      "id": "nj-lake3",
+      "name": "紫霞湖",
+      "nameEn": "Zixia Lake",
+      "category": "nature",
+      "description": "紫金山中的湖泊。",
+      "address": "南京市玄武区",
+      "coordinates": {
+        "lat": 32.05,
+        "lng": 118.85
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "湖泊",
+        "森林"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1702868680709-46674a96e518?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "nanjing-1",
+      "name": "南京大牌档",
+      "nameEn": "Nanjing Da Pai Dang",
+      "type": "local",
+      "cuisine": "Nanjing",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Multiple locations including Xuanwu and Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7972
+      },
+      "phone": "+86 25 5226 8888",
+      "hours": "11:00-22:00",
+      "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
+      "dishHighlights": [
+        "Duck blood soup",
+        "Salt Duck",
+        "Steamed dumplings",
+        "Qinhuai snacks"
+      ],
+      "tags": [
+        "local",
+        "nanjing-cuisine",
+        "traditional",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-2",
+      "name": "狮子桥",
+      "nameEn": "Shizi Qiao",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Jiangsu",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "73 Guangdong Road, Gulou District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7772
+      },
+      "phone": "+86 25 8330 0888",
+      "hours": "10:30-21:30",
+      "description": "One-diamond Black Pearl restaurant known for refined Jiangsu cuisine and elegant dining.",
+      "dishHighlights": [
+        "Steamed mantou with crab roe",
+        "Braised pork belly",
+        "Sweet and sour mandarin fish"
+      ],
+      "tags": [
+        "fine-dining",
+        "jiangsu-cuisine",
+        "elegant"
+      ],
+      "star": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-3",
+      "name": "尹氏鸡汁汤包",
+      "nameEn": "Yin Shi Chicken Soup Dumplings",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 40,
+      "rating": 4.9,
+      "address": "28 Zhuangyuan Kitchen (near Fuzi Temple)",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "07:00-19:00",
+      "description": "Legendary tiny soup dumplings in rich chicken broth, a Nanjing institution since 1920s.",
+      "dishHighlights": [
+        "Chicken soup dumplings",
+        "Duck blood soup",
+        "Fried rice noodles"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "snacks",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-4",
+      "name": "回味鸭血粉丝汤",
+      "nameEn": "Huiwei Duck Blood Noodle Soup",
+      "type": "local",
+      "cuisine": "Nanjing",
+      "avgPrice": 35,
+      "rating": 4.7,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7972
+      },
+      "hours": "06:00-22:00",
+      "description": "Popular chain famous for duck blood noodle soup, a quintessential Nanjing breakfast.",
+      "dishHighlights": [
+        "Duck blood soup",
+        "Duck liver",
+        "Tofu knots",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "nanjing-cuisine",
+        "breakfast",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-5",
+      "name": "咸亨酒店",
+      "nameEn": "Xian Heng Hotel",
+      "type": "local",
+      "cuisine": "Shaoxing/Nanjing",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "10:00-22:00",
+      "description": "Historic restaurant inspired by Lu Xun's famous work, serving Shaoxing wine and traditional dishes.",
+      "dishHighlights": [
+        "Drunken chicken",
+        "Braised pork belly",
+        "Stinky tofu"
+      ],
+      "tags": [
+        "historic",
+        "lu-xun",
+        "traditional",
+        "cultural"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-6",
+      "name": "绿柳居",
+      "nameEn": "Lv Liu Ju",
+      "type": "local",
+      "cuisine": "Nanjing Vegetarian",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "07:00-20:00",
+      "description": "Famous vegetarian restaurant established 1912, known for meat substitutes and Buddhist cuisine.",
+      "dishHighlights": [
+        "Vegetarian duck",
+        "Buddhist vegetables",
+        "Rice rolls"
+      ],
+      "tags": [
+        "local",
+        "vegetarian",
+        "historic",
+        "buddhist"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-7",
+      "name": "小笼包店",
+      "nameEn": "Nanjing Soup Dumplings",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 30,
+      "rating": 4.6,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7872
+      },
+      "hours": "06:00-14:00",
+      "description": "Local breakfast spots serving Nanjing-style soup dumplings and congee.",
+      "dishHighlights": [
+        "Soup dumplings",
+        "Congee",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "budget",
+        "snacks"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-8",
+      "name": "秦淮人家",
+      "nameEn": "Qinhuai Renjia",
+      "type": "local",
+      "cuisine": "Nanjing",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Near Qinhuai River, Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "phone": "+86 25 5220 8888",
+      "hours": "11:00-21:30",
+      "description": "Riverside restaurant serving quality Nanjing cuisine with evening boat ride option.",
+      "dishHighlights": [
+        "Nanjing salt duck",
+        "Steamed fish",
+        "Qinhuai snacks",
+        "River views"
+      ],
+      "tags": [
+        "local",
+        "scenic",
+        "nanjing-cuisine",
+        "romantic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-9",
+      "name": "韩复兴",
+      "nameEn": "Han Fu Xing",
+      "type": "local",
+      "cuisine": "Nanjing Salted Duck",
+      "avgPrice": 60,
+      "rating": 4.7,
+      "address": "Multiple locations including Zhuangyuan Kitchen",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "08:00-20:00",
+      "description": "Famous for authentic Nanjing salted duck, a must-buy for visitors to take home.",
+      "dishHighlights": [
+        "Nanjing salted duck",
+        "Duck wings",
+        "Duck neck"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "souvenir",
+        "must-try"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-10",
+      "name": "奇芳阁",
+      "nameEn": "Qi Fang Ge",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "07:00-19:00",
+      "description": "Historic snack restaurant known for traditional Nanjing breakfast and local delicacies.",
+      "dishHighlights": [
+        "Duck blood soup",
+        "Fried dough sticks",
+        "Rice rolls",
+        "Congee"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "breakfast",
+        "snacks"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-11",
+      "name": "永和园",
+      "nameEn": "Yong He Yuan",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 40,
+      "rating": 4.6,
+      "address": "Near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "06:30-19:00",
+      "description": "Long-standing snack shop famous for wontons and crab roe dumplings.",
+      "dishHighlights": [
+        "Wontons",
+        "Crab roe dumplings",
+        "Noodles"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "breakfast",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-12",
+      "name": "六朝面馆",
+      "nameEn": "Liu Chao Noodles",
+      "type": "local",
+      "cuisine": "Nanjing Noodles",
+      "avgPrice": 35,
+      "rating": 4.5,
+      "address": "Near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "10:00-22:00",
+      "description": "Popular noodle shop serving traditional Nanjing-style noodles with various toppings.",
+      "dishHighlights": [
+        "Duck liver noodles",
+        "Beef noodles",
+        "Vegetable noodles"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "quick",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-13",
+      "name": "鸡鸣寺素面",
+      "nameEn": "Jiming Temple Vegetarian Noodles",
+      "type": "local",
+      "cuisine": "Buddhist Vegetarian",
+      "avgPrice": 45,
+      "rating": 4.6,
+      "address": "Near Jiming Temple",
+      "coordinates": {
+        "lat": 32.0622,
+        "lng": 118.7872
+      },
+      "hours": "10:00-19:00",
+      "description": "Vegetarian noodles near Jiming Temple, known for Buddhist cuisine and peaceful atmosphere.",
+      "dishHighlights": [
+        "Vegetarian noodles",
+        "Buddhist vegetables",
+        "Tofu skin rolls"
+      ],
+      "tags": [
+        "local",
+        "vegetarian",
+        "buddhist",
+        "peaceful"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-14",
+      "name": "南京精菜馆",
+      "nameEn": "Nanjing Fine Cuisine",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Jiangsu",
+      "avgPrice": 200,
+      "rating": 4.7,
+      "address": "188 Guangzhou Road, Gulou District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7772
+      },
+      "phone": "+86 25 8332 0888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "One-diamond Black Pearl restaurant offering refined Jiangsu cuisine with elegant presentation.",
+      "dishHighlights": [
+        "Steamed Jiangsu fish",
+        "Braised pork belly",
+        "Seasonal vegetables"
+      ],
+      "tags": [
+        "fine-dining",
+        "jiangsu-cuisine",
+        "elegant",
+        "special-occasion"
+      ],
+      "star": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-15",
+      "name": "金陵饭店梅苑",
+      "nameEn": "Plum Garden - Jinling Hotel",
+      "type": "fine",
+      "cuisine": "Jiangsu",
+      "avgPrice": 300,
+      "rating": 4.8,
+      "address": "2 Hanzhong Road, Xuanwu District (Jinling Hotel)",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7872
+      },
+      "phone": "+86 25 8471 1888",
+      "hours": "11:30-14:00, 17:30-21:30",
+      "description": "High-end restaurant in Jinling Hotel serving premium Jiangsu cuisine with imperial heritage.",
+      "dishHighlights": [
+        "Imperial Jinling cuisine",
+        "Abalone",
+        "Bird's nest soup",
+        "Premium seafood"
+      ],
+      "tags": [
+        "fine-dining",
+        "luxury",
+        "imperial",
+        "special-occasion"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-16",
+      "name": "清真马祥兴",
+      "nameEn": "Ma Xiang Xing Halal",
+      "type": "local",
+      "cuisine": "Halal Nanjing",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "76 Guangzhou Road, Gulou District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7772
+      },
+      "hours": "10:00-22:00",
+      "description": "Historic Muslim restaurant known for beef dishes and traditional Halal Nanjing cuisine.",
+      "dishHighlights": [
+        "Beef noodles",
+        "Lamb skewers",
+        "Hand-pulled noodles"
+      ],
+      "tags": [
+        "local",
+        "halal",
+        "muslim",
+        "historic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-17",
+      "name": "夫子庙小吃广场",
+      "nameEn": "Fuzi Temple Snack Street",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 30,
+      "rating": 4.3,
+      "address": "Fuzi Temple area",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "10:00-22:00",
+      "description": "Open-air snack market with dozens of vendors serving local Nanjing snacks and street food.",
+      "dishHighlights": [
+        "Duck blood soup",
+        "Stinky tofu",
+        "Grilled squid",
+        "Tangbao"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "street-food",
+        "night-market"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-18",
+      "name": "金陵小红枣",
+      "nameEn": "Jinling Red Dates",
+      "type": "local",
+      "cuisine": "Nanjing Desserts",
+      "avgPrice": 25,
+      "rating": 4.4,
+      "address": "Near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "09:00-21:00",
+      "description": "Local dessert shop famous for red date soup and traditional Nanjing sweet soups.",
+      "dishHighlights": [
+        "Red date soup",
+        "Taro soup",
+        "Sweet rice balls",
+        "Osmanthus cake"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "sweet"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-19",
+      "name": "东南大学老食堂",
+      "nameEn": "SEU Old Canteen",
+      "type": "local",
+      "cuisine": "University食堂",
+      "avgPrice": 20,
+      "rating": 4.2,
+      "address": "Southeast University, Sipailou",
+      "coordinates": {
+        "lat": 32.0522,
+        "lng": 118.7872
+      },
+      "hours": "06:30-20:00",
+      "description": "University cafeteria open to visitors, serving authentic and cheap local dishes.",
+      "dishHighlights": [
+        "Rice with dishes",
+        "Noodles",
+        "Dumplings"
+      ],
+      "tags": [
+        "local",
+        "budget",
+        "authentic",
+        "student-life"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-20",
+      "name": "明瓦廊美食街",
+      "nameEn": "Mingwa Lang Food Street",
+      "type": "local",
+      "cuisine": "Various",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "Mingwa Lang, Xinadie",
+      "coordinates": {
+        "lat": 32.0322,
+        "lng": 118.7972
+      },
+      "hours": "17:00-02:00",
+      "description": "Famous evening food street with variety of local snacks and international cuisine.",
+      "dishHighlights": [
+        "Grilled skewers",
+        "Spicy crayfish",
+        "Lamb noodles",
+        "Beer"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "late-night"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-21",
+      "name": "海底捞火锅",
+      "nameEn": "Haidilao Hotpot",
+      "type": "chain",
+      "cuisine": "Hotpot",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Deji Plaza, 18 Zhongshan Road",
+      "coordinates": {
+        "lat": 32.0322,
+        "lng": 118.7972
+      },
+      "phone": "+86 25 8471 9999",
+      "hours": "24 hours",
+      "description": "Famous chain hotpot restaurant with exceptional service. Known for manicotti, freebies, and entertainment while waiting.",
+      "dishHighlights": [
+        "Spicy hotpot",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free snacks"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "entertainment"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-22",
+      "name": "全聚德",
+      "nameEn": "Quanjude Peking Duck",
+      "type": "fine",
+      "cuisine": "Peking Duck",
+      "avgPrice": 200,
+      "rating": 4.5,
+      "address": "188 Guangzhou Road, Gulou District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7772
+      },
+      "phone": "+86 25 8332 8888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Legendary Peking duck restaurant with crispy skin and traditional preparation methods.",
+      "dishHighlights": [
+        "Peking duck",
+        "Pancakes",
+        "Cucumber and scallion",
+        "Duck soup"
+      ],
+      "tags": [
+        "fine-dining",
+        "peking-duck",
+        "traditional",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-23",
+      "name": "小厨娘",
+      "nameEn": "Xiao Chu Niang",
+      "type": "local",
+      "cuisine": "Jiangsu Home Style",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7872
+      },
+      "hours": "10:30-21:30",
+      "description": "Popular home-style Jiangsu cuisine restaurant with comfortable dining atmosphere.",
+      "dishHighlights": [
+        "Braised pork belly",
+        "Steamed fish",
+        "Vegetables in garlic sauce",
+        "Rice with toppings"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "jiangsu-cuisine",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-24",
+      "name": "外婆家",
+      "nameEn": "Grandma's House",
+      "type": "chain",
+      "cuisine": "Zhejiang Style",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Multiple locations including Xinbailai",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7872
+      },
+      "hours": "10:30-22:00",
+      "description": "Popular chain serving flavorful Zhejiang-style dishes at reasonable prices.",
+      "dishHighlights": [
+        "Braised fish head",
+        "West Lake vinegar fish",
+        "Dongpo pork",
+        "Vegetables"
+      ],
+      "tags": [
+        "chain",
+        "zhejiang",
+        "value",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-25",
+      "name": "南京大牌档",
+      "nameEn": "Nanjing Da Pai Dang",
+      "type": "local",
+      "cuisine": "Nanjing Snacks",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Multiple locations including Deji and Xuanwu",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7972
+      },
+      "phone": "+86 25 5226 8888",
+      "hours": "11:00-22:00",
+      "description": "Popular chain serving authentic Nanjing and Jiangsu cuisine in traditional atmosphere.",
+      "dishHighlights": [
+        "Duck blood soup",
+        "Salt duck",
+        "Steamed dumplings",
+        "Qinhuai snacks"
+      ],
+      "tags": [
+        "local",
+        "nanjing-cuisine",
+        "traditional",
+        "chain"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-26",
+      "name": "民国红公馆",
+      "nameEn": "Republic of China Red Mansion",
+      "type": "fine",
+      "cuisine": "Republic Era Cuisine",
+      "avgPrice": 250,
+      "rating": 4.8,
+      "address": "Laochengli District, Qinhuai",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7972
+      },
+      "phone": "+86 25 5220 9999",
+      "hours": "11:30-14:00, 17:30-21:30",
+      "description": "High-end restaurant serving dishes inspired by Republic of China era cuisine with elegant atmosphere.",
+      "dishHighlights": [
+        "Imperial cuisine",
+        "Republic era dishes",
+        "Seasonal menu",
+        "Historical atmosphere"
+      ],
+      "tags": [
+        "fine-dining",
+        "historical",
+        "republic-era",
+        "special-occasion"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-27",
+      "name": "李记清真馆",
+      "nameEn": "Li Ji Halal",
+      "type": "local",
+      "cuisine": "Halal Nanjing",
+      "avgPrice": 50,
+      "rating": 4.7,
+      "address": "100 Zhanqi Lane, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "06:30-19:30",
+      "description": "Famous halal restaurant known for beef products and traditional Muslim cuisine.",
+      "dishHighlights": [
+        "Beef noodle soup",
+        "Lamb skewers",
+        "Beef dumplings",
+        "Hand-pulled noodles"
+      ],
+      "tags": [
+        "local",
+        "halal",
+        "beef",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-28",
+      "name": "莲湖糕团店",
+      "nameEn": "Lianhu Gaotang Shop",
+      "type": "local",
+      "cuisine": "Nanjing Desserts",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "Fuzi Temple area",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "hours": "08:00-20:00",
+      "description": "Famous snack shop specializing in traditional Nanjing rice cakes and sweet pastries.",
+      "dishHighlights": [
+        "Rice cake soup",
+        "Osmanthus cake",
+        "Sweet dumplings",
+        "Glutinous rice balls"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-29",
+      "name": "传统赤豆元宵",
+      "nameEn": "传统赤豆元宵 (赤豆元宵)",
+      "type": "local",
+      "cuisine": "赤豆元宵",
+      "avgPrice": 57,
+      "rating": 4.6,
+      "address": "南京市老城区美食街154号",
+      "coordinates": {
+        "lat": 32.0658,
+        "lng": 118.7729
+      },
+      "phone": "+86 025 81851442",
+      "hours": "09:00-21:00",
+      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小笼包",
+        "牛肉锅贴",
+        "赤豆元宵"
+      ],
+      "tags": [
+        "家常菜",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-31",
+      "name": "巷子牛肉锅贴",
+      "nameEn": "巷子牛肉锅贴 (牛肉锅贴)",
+      "type": "local",
+      "cuisine": "牛肉锅贴",
+      "avgPrice": 133,
+      "rating": 4.1,
+      "address": "南京市市中心区美食街161号",
+      "coordinates": {
+        "lat": 32.0927,
+        "lng": 118.837
+      },
+      "phone": "+86 025 33698328",
+      "hours": "06:00-14:00",
+      "description": "南京本地人推荐的牛肉锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鸭血粉丝汤",
+        "小笼包",
+        "盐水鸭"
+      ],
+      "tags": [
+        "家常菜",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-33",
+      "name": "南京味盐水鸭",
+      "nameEn": "南京味盐水鸭 (盐水鸭)",
+      "type": "street",
+      "cuisine": "盐水鸭",
+      "avgPrice": 29,
+      "rating": 4.7,
+      "address": "南京市老城区美食街97号",
+      "coordinates": {
+        "lat": 32.0445,
+        "lng": 118.7738
+      },
+      "phone": "+86 025 44717633",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鸭血粉丝汤",
+        "小笼包",
+        "盐水鸭"
+      ],
+      "tags": [
+        "网红打卡",
+        "路边摊",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-35",
+      "name": "街边盐水鸭",
+      "nameEn": "街边盐水鸭 (盐水鸭)",
+      "type": "cafe",
+      "cuisine": "盐水鸭",
+      "avgPrice": 80,
+      "rating": 4.2,
+      "address": "南京市新城区美食街38号",
+      "coordinates": {
+        "lat": 32.0655,
+        "lng": 118.7622
+      },
+      "phone": "+86 025 28301892",
+      "hours": "10:00-22:00",
+      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小笼包",
+        "牛肉锅贴",
+        "鸭血粉丝汤"
+      ],
+      "tags": [
+        "下午茶",
+        "咖啡",
+        "安静"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-37",
+      "name": "地道鸭血粉丝汤",
+      "nameEn": "地道鸭血粉丝汤 (鸭血粉丝汤)",
+      "type": "local",
+      "cuisine": "鸭血粉丝汤",
+      "avgPrice": 72,
+      "rating": 4.0,
+      "address": "南京市老城区美食街178号",
+      "coordinates": {
+        "lat": 32.0662,
+        "lng": 118.8038
+      },
+      "phone": "+86 025 29943931",
+      "hours": "06:00-14:00",
+      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鸭血粉丝汤",
+        "牛肉锅贴",
+        "盐水鸭"
+      ],
+      "tags": [
+        "老字号",
+        "排队王",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-39",
+      "name": "街边小笼包",
+      "nameEn": "街边小笼包 (小笼包)",
+      "type": "local",
+      "cuisine": "小笼包",
+      "avgPrice": 87,
+      "rating": 4.3,
+      "address": "南京市新城区美食街101号",
+      "coordinates": {
+        "lat": 32.0467,
+        "lng": 118.8155
+      },
+      "phone": "+86 025 61834002",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉锅贴",
+        "赤豆元宵",
+        "盐水鸭"
+      ],
+      "tags": [
+        "社区老店",
+        "老字号",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-41",
+      "name": "老南京赤豆元宵",
+      "nameEn": "老南京赤豆元宵 (赤豆元宵)",
+      "type": "local",
+      "cuisine": "赤豆元宵",
+      "avgPrice": 35,
+      "rating": 4.5,
+      "address": "南京市市中心区美食街7号",
+      "coordinates": {
+        "lat": 32.071,
+        "lng": 118.8391
+      },
+      "phone": "+86 025 60381115",
+      "hours": "10:00-22:00",
+      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小笼包",
+        "牛肉锅贴",
+        "盐水鸭"
+      ],
+      "tags": [
+        "隐藏美食",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-43",
+      "name": "阿婆小笼包",
+      "nameEn": "阿婆小笼包 (小笼包)",
+      "type": "local",
+      "cuisine": "小笼包",
+      "avgPrice": 90,
+      "rating": 4.4,
+      "address": "南京市市中心区美食街109号",
+      "coordinates": {
+        "lat": 32.0831,
+        "lng": 118.8157
+      },
+      "phone": "+86 025 50716939",
+      "hours": "09:00-21:00",
+      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "赤豆元宵",
+        "鸭血粉丝汤",
+        "小笼包"
+      ],
+      "tags": [
+        "老字号",
+        "本地人爱去",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-45",
+      "name": "阿婆鸭血粉丝汤",
+      "nameEn": "阿婆鸭血粉丝汤 (鸭血粉丝汤)",
+      "type": "local",
+      "cuisine": "鸭血粉丝汤",
+      "avgPrice": 50,
+      "rating": 4.3,
+      "address": "南京市市中心区美食街9号",
+      "coordinates": {
+        "lat": 32.0708,
+        "lng": 118.828
+      },
+      "phone": "+86 025 52345635",
+      "hours": "06:00-14:00",
+      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "赤豆元宵",
+        "盐水鸭",
+        "牛肉锅贴"
+      ],
+      "tags": [
+        "社区老店",
+        "隐藏美食",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-47",
+      "name": "南京味牛肉锅贴",
+      "nameEn": "南京味牛肉锅贴 (牛肉锅贴)",
+      "type": "local",
+      "cuisine": "牛肉锅贴",
+      "avgPrice": 55,
+      "rating": 4.0,
+      "address": "南京市老城区美食街200号",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7795
+      },
+      "phone": "+86 025 78476058",
+      "hours": "09:00-21:00",
+      "description": "南京本地人推荐的牛肉锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鸭血粉丝汤",
+        "赤豆元宵",
+        "牛肉锅贴"
+      ],
+      "tags": [
+        "性价比高",
+        "本地人爱去",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-49",
+      "name": "老街鸭血粉丝汤",
+      "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
+      "type": "local",
+      "cuisine": "鸭血粉丝汤",
+      "avgPrice": 58,
+      "rating": 4.0,
+      "address": "南京市市中心区美食街150号",
+      "coordinates": {
+        "lat": 32.0361,
+        "lng": 118.8345
+      },
+      "phone": "+86 025 11703052",
+      "hours": "17:00-02:00",
+      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "赤豆元宵",
+        "鸭血粉丝汤",
+        "小笼包"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-51",
+      "name": "街边赤豆元宵",
+      "nameEn": "街边赤豆元宵 (赤豆元宵)",
+      "type": "local",
+      "cuisine": "赤豆元宵",
+      "avgPrice": 85,
+      "rating": 4.2,
+      "address": "南京市市中心区美食街127号",
+      "coordinates": {
+        "lat": 32.0249,
+        "lng": 118.8
+      },
+      "phone": "+86 025 39892119",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小笼包",
+        "赤豆元宵",
+        "鸭血粉丝汤"
+      ],
+      "tags": [
+        "隐藏美食",
+        "社区老店",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-53",
+      "name": "南京味小笼包",
+      "nameEn": "南京味小笼包 (小笼包)",
+      "type": "local",
+      "cuisine": "小笼包",
+      "avgPrice": 52,
+      "rating": 4.3,
+      "address": "南京市新城区美食街56号",
+      "coordinates": {
+        "lat": 32.075,
+        "lng": 118.7813
+      },
+      "phone": "+86 025 55778452",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小笼包",
+        "赤豆元宵",
+        "盐水鸭"
+      ],
+      "tags": [
+        "排队王",
+        "本地人爱去",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-55",
+      "name": "传统盐水鸭",
+      "nameEn": "传统盐水鸭 (盐水鸭)",
+      "type": "local",
+      "cuisine": "盐水鸭",
+      "avgPrice": 56,
+      "rating": 4.8,
+      "address": "南京市老城区美食街116号",
+      "coordinates": {
+        "lat": 32.0283,
+        "lng": 118.8271
+      },
+      "phone": "+86 025 14825341",
+      "hours": "09:00-21:00",
+      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "赤豆元宵",
+        "鸭血粉丝汤",
+        "牛肉锅贴"
+      ],
+      "tags": [
+        "社区老店",
+        "家常菜",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-57",
+      "name": "老街赤豆元宵",
+      "nameEn": "老街赤豆元宵 (赤豆元宵)",
+      "type": "local",
+      "cuisine": "赤豆元宵",
+      "avgPrice": 147,
+      "rating": 4.2,
+      "address": "南京市老城区美食街146号",
+      "coordinates": {
+        "lat": 32.0837,
+        "lng": 118.8372
+      },
+      "phone": "+86 025 59069946",
+      "hours": "09:00-21:00",
+      "description": "南京本地人推荐的赤豆元宵店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "盐水鸭",
+        "小笼包",
+        "鸭血粉丝汤"
+      ],
+      "tags": [
+        "性价比高",
+        "排队王",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-59",
+      "name": "地道盐水鸭",
+      "nameEn": "地道盐水鸭 (盐水鸭)",
+      "type": "local",
+      "cuisine": "盐水鸭",
+      "avgPrice": 108,
+      "rating": 4.7,
+      "address": "南京市老城区美食街191号",
+      "coordinates": {
+        "lat": 32.0202,
+        "lng": 118.7812
+      },
+      "phone": "+86 025 57854365",
+      "hours": "17:00-02:00",
+      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "盐水鸭",
+        "牛肉锅贴",
+        "鸭血粉丝汤"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-61",
+      "name": "传统牛肉锅贴",
+      "nameEn": "传统牛肉锅贴 (牛肉锅贴)",
+      "type": "cafe",
+      "cuisine": "牛肉锅贴",
+      "avgPrice": 31,
+      "rating": 4.8,
+      "address": "南京市新城区美食街72号",
+      "coordinates": {
+        "lat": 32.0474,
+        "lng": 118.8133
+      },
+      "phone": "+86 025 48941957",
+      "hours": "09:00-21:00",
+      "description": "南京本地人推荐的牛肉锅贴店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小笼包",
+        "鸭血粉丝汤",
+        "赤豆元宵"
+      ],
+      "tags": [
+        "下午茶",
+        "文艺",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-63",
+      "name": "老街鸭血粉丝汤",
+      "nameEn": "老街鸭血粉丝汤 (鸭血粉丝汤)",
+      "type": "street",
+      "cuisine": "鸭血粉丝汤",
+      "avgPrice": 16,
+      "rating": 4.4,
+      "address": "南京市新城区美食街174号",
+      "coordinates": {
+        "lat": 32.0901,
+        "lng": 118.833
+      },
+      "phone": "+86 025 47811554",
+      "hours": "06:00-14:00",
+      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "盐水鸭",
+        "赤豆元宵",
+        "鸭血粉丝汤"
+      ],
+      "tags": [
+        "网红打卡",
+        "深夜美食",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-65",
+      "name": "南京味小笼包",
+      "nameEn": "南京味小笼包 (小笼包)",
+      "type": "cafe",
+      "cuisine": "小笼包",
+      "avgPrice": 51,
+      "rating": 4.7,
+      "address": "南京市新城区美食街9号",
+      "coordinates": {
+        "lat": 32.0134,
+        "lng": 118.7775
+      },
+      "phone": "+86 025 96249277",
+      "hours": "10:00-22:00",
+      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "赤豆元宵",
+        "盐水鸭",
+        "小笼包"
+      ],
+      "tags": [
+        "安静",
+        "下午茶",
+        "文艺"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-67",
+      "name": "南京味小笼包",
+      "nameEn": "南京味小笼包 (小笼包)",
+      "type": "street",
+      "cuisine": "小笼包",
+      "avgPrice": 58,
+      "rating": 4.2,
+      "address": "南京市市中心区美食街106号",
+      "coordinates": {
+        "lat": 32.0693,
+        "lng": 118.7612
+      },
+      "phone": "+86 025 65904378",
+      "hours": "17:00-02:00",
+      "description": "南京本地人推荐的小笼包店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鸭血粉丝汤",
+        "盐水鸭",
+        "牛肉锅贴"
+      ],
+      "tags": [
+        "路边摊",
+        "深夜美食",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-69",
+      "name": "传统盐水鸭",
+      "nameEn": "传统盐水鸭 (盐水鸭)",
+      "type": "street",
+      "cuisine": "盐水鸭",
+      "avgPrice": 24,
+      "rating": 4.3,
+      "address": "南京市老城区美食街196号",
+      "coordinates": {
+        "lat": 32.0546,
+        "lng": 118.8456
+      },
+      "phone": "+86 025 36213004",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "南京本地人推荐的盐水鸭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "赤豆元宵",
+        "牛肉锅贴",
+        "小笼包"
+      ],
+      "tags": [
+        "网红打卡",
+        "深夜美食",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanjing-71",
+      "name": "巷子鸭血粉丝汤",
+      "nameEn": "巷子鸭血粉丝汤 (鸭血粉丝汤)",
+      "type": "local",
+      "cuisine": "鸭血粉丝汤",
+      "avgPrice": 149,
+      "rating": 4.4,
+      "address": "南京市新城区美食街135号",
+      "coordinates": {
+        "lat": 32.0925,
+        "lng": 118.8198
+      },
+      "phone": "+86 025 63319388",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "南京本地人推荐的鸭血粉丝汤店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉锅贴",
+        "鸭血粉丝汤",
+        "赤豆元宵"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Nanjing Lukou International Airport (NKG)",
+        "duration": "Varies (1.5h from Beijing, 2h from Guangzhou)",
+        "price": "600-2000¥",
+        "frequency": "Daily flights from major cities",
+        "tips": "Airport 40km from city center. Airport bus to city (5¥) or taxi (150¥). Metro LineS1 to downtown."
+      },
+      {
+        "type": "train",
+        "from": "Shanghai (1h), Beijing (3.5h), Hangzhou (2.5h)",
+        "to": "Nanjing Railway Station / Nanjing South Station",
+        "duration": "1-3.5 hours",
+        "price": "150-800¥",
+        "frequency": "Multiple high-speed trains daily",
+        "tips": "Nanjing South for high-speed from Shanghai/Hangzhou. Nanjing Station for Beijing/Shanghai slow trains. Both have metro."
+      }
+    ],
+    "local": {
+      "metro": [
+        "12 lines operational",
+        "Single ride: 2-8¥",
+        "Line 1, 2 for most tourist sites",
+        "Connects to both stations and airport"
+      ],
+      "bus": [
+        "Extensive network",
+        "Single ride: 2¥",
+        "Tourist areas well connected",
+        "Google Maps works for routes"
+      ],
+      "taxi": [
+        "Starting fare: 11¥ (first 3km)",
+        "Night surcharge: 20% extra",
+        "Most attractions 20-50¥",
+        "Didi recommended for English"
+      ],
+      "bike": [
+        "Mobike, Meituan bikes abundant",
+        "Unlock: 1¥, then 0.5-1¥ per 30 min",
+        "Great for Xuanwu Lake area",
+        "Lake path perfect for cycling"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "南京金陵饭店",
+      "nameEn": "Jinling Hotel Nanjing",
+      "budget": "luxury",
+      "priceRange": "¥1200-2500/night",
+      "address": "2 Hanzhong Road, Xuanwu",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7872
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central location",
+        "Historic luxury",
+        "Xuanwu Lake views",
+        "Multiple dining"
+      ],
+      "bookingTips": "Book well ahead. The original 5-star in Nanjing. Sunday brunch is famous."
+    },
+    {
+      "name": "南京香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Nanjing",
+      "budget": "luxury",
+      "priceRange": "¥1500-3000/night",
+      "address": "329 Guangzhou Road, Gulou",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7772
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Near Purple Mountain",
+        "Luxury facilities",
+        "Great service",
+        "Central location"
+      ],
+      "bookingTips": "Best for first-time visitors. Book river view rooms."
+    },
+    {
+      "name": "南京绿地洲际酒店",
+      "nameEn": "InterContinental Nanjing",
+      "budget": "luxury",
+      "priceRange": "¥1000-2200/night",
+      "address": "1 Yingtian Street, Jianye",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7572
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Modern luxury",
+        "Qinhuai River views",
+        "High-rise",
+        "Excellent dining"
+      ],
+      "bookingTips": "Newer property with best views. Great for business travelers."
+    },
+    {
+      "name": "状元楼酒店",
+      "nameEn": "Zhuangyuan Lou Hotel",
+      "budget": "mid",
+      "priceRange": "¥500-1000/night",
+      "address": "Near Fuzi Temple",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Fuzi Temple",
+        "Historic building",
+        "Good location",
+        "Value"
+      ],
+      "bookingTips": "Best for sightseeing. Book during off-peak season."
+    },
+    {
+      "name": "南京国际青年旅舍",
+      "nameEn": "Nanjing International Youth Hostel",
+      "budget": "budget",
+      "priceRange": "¥100-300/night",
+      "address": "Near Xuanwu Lake",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7672
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Lake location",
+        "Budget-friendly",
+        "Social atmosphere",
+        "Bike rental"
+      ],
+      "bookingTips": "Great for backpackers. English speaking staff."
+    },
+    {
+      "name": "南京苏宁诺富特酒店",
+      "nameEn": "Novotel Nanjing Central",
+      "budget": "mid",
+      "priceRange": "¥500-900/night",
+      "address": "88 Shanghai Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0322,
+        "lng": 118.7872
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location",
+        "Modern facilities",
+        "Metro access",
+        "Business center"
+      ],
+      "bookingTips": "Good for business travelers. Near metro Line 1."
+    },
+    {
+      "name": "南京华泰万丽酒店",
+      "nameEn": "Renaissance Nanjing",
+      "budget": "luxury",
+      "priceRange": "¥800-1500/night",
+      "address": "9 Guanghua Road, Jianye District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7572
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Modern luxury",
+        "River views",
+        "Central location",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Good for both business and leisure. Book river view rooms."
+    },
+    {
+      "name": "南京玄武饭店",
+      "nameEn": "Nanjing Xuanwu Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-800/night",
+      "address": "199 Guangzhou Road, Gulou District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7772
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Purple Mountain",
+        "Good location",
+        "Comfortable rooms",
+        "Value"
+      ],
+      "bookingTips": "Good alternative to luxury hotels. Book during off-peak."
+    },
+    {
+      "name": "南京水游城假日酒店",
+      "nameEn": "Holiday Inn Nanjing Aqua City",
+      "budget": "mid",
+      "priceRange": "¥450-800/night",
+      "address": "6 Yanghe Road, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7872
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Shopping mall location",
+        "Metro access",
+        "Modern rooms",
+        "Good breakfast"
+      ],
+      "bookingTips": "Great for shoppers. Connected to Aqua City mall."
+    },
+    {
+      "name": "南京瑞金路亚朵酒店",
+      "nameEn": "Atour Hotel Nanjing Ruijin Road",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "688 Ruijin Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0522,
+        "lng": 118.7972
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Library theme",
+        "Reading area",
+        "Comfortable beds",
+        "Free breakfast"
+      ],
+      "bookingTips": "Popular Chinese boutique hotel chain. Great value."
+    },
+    {
+      "name": "南京新街口如家酒店",
+      "nameEn": "Home Inn Nanjing Xinjiekou",
+      "budget": "budget",
+      "priceRange": "¥150-300/night",
+      "address": "218 Zhongshan Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0322,
+        "lng": 118.7872
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Central location",
+        "Budget-friendly",
+        "Metro access",
+        "Clean"
+      ],
+      "bookingTips": "Best budget option near Xinjiekou. Simple but reliable."
+    },
+    {
+      "name": "南京夫子庙青年旅舍",
+      "nameEn": "Nanjing Fuzi Temple Youth Hostel",
+      "budget": "budget",
+      "priceRange": "¥80-200/night",
+      "address": "Near Fuzi Temple, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7872
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Fuzi Temple",
+        "Riverside location",
+        "Social atmosphere",
+        "Value"
+      ],
+      "bookingTips": "Great location for night market and river walks."
+    },
+    {
+      "name": "南京紫金山庄",
+      "nameEn": "Nanjing Purple Mountain Villa",
+      "budget": "luxury",
+      "priceRange": "¥1200-2500/night",
+      "address": "8 Zhongling Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0622,
+        "lng": 118.8372
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Mountain location",
+        "Peaceful setting",
+        "Nature views",
+        "Spa facilities"
+      ],
+      "bookingTips": "Best for relaxation. Surrounded by Purple Mountain scenery."
+    },
+    {
+      "name": "南京奥体中心亚朵酒店",
+      "nameEn": "Atour Hotel Nanjing Olympic Center",
+      "budget": "mid",
+      "priceRange": "¥350-650/night",
+      "address": "168 Huanqing Road, Jianye District",
+      "coordinates": {
+        "lat": 32.0322,
+        "lng": 118.7472
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near Olympic Stadium",
+        "Modern rooms",
+        "Quiet area",
+        "Good service"
+      ],
+      "bookingTips": "Good for sports fans. Near Nanjing Olympic Sports Center."
+    },
+    {
+      "name": "南京夫子庙民宿",
+      "nameEn": "Nanjing Fuzi Temple Boutique Homestay",
+      "budget": "budget",
+      "priceRange": "¥200-500/night",
+      "address": "Laochengli area, Qinhuai District",
+      "coordinates": {
+        "lat": 32.0122,
+        "lng": 118.7972
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Traditional courtyard",
+        "Central location",
+        "Local experience",
+        "Authentic decor"
+      ],
+      "bookingTips": "Experience traditional Nanjing living. Book well ahead."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Nanjing",
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at traditional markets",
+      "howToUse": [
+        "ATM everywhere",
+        "Banks along main streets"
+      ],
+      "tips": [
+        "Keep 200¥ for markets",
+        "Most restaurants accept cards"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "history",
+      "title": "Memorial Culture",
+      "content": "Nanjing is deeply connected to Chinese modern history. Visit the Massacre Memorial Hall for reflection. The Sun Yat-sen Mausoleum represents founding of modern China. Presidential Palace shows ROC era.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Nanjing Cuisine",
+      "content": "Nanjing food is savory and slightly oily. Must-try: duck blood soup, salt duck, soup dumplings. The city's cuisine reflects its position as 'the home of Jinling cuisine'.",
+      "importance": "high"
+    },
+    {
+      "category": "timing",
+      "title": "Avoiding Crowds",
+      "content": "Nanjing's attractions can be very crowded. Visit Sun Yat-sen Mausoleum and Ming Xiaoling early morning. Fuzi Temple is best at night. Weekdays are quieter.",
+      "importance": "medium"
+    },
+    {
+      "category": "gingko",
+      "title": "Seasonal Highlights",
+      "content": "Nanjing's gingko trees are legendary. The turn color in mid-November along银杏大道. Cherry blossoms at Xuanwu Lake in spring. Plum blossoms in winter.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Six Dynasties Heritage",
+      "content": "Nanjing was capital during Six Dynasties period (220-589 AD). Visit the Nanjing Museum for artifacts from this era. The Zonghua Gate reflects military architecture of that time. Ling Guo Temple is a surviving Buddhist site.",
+      "importance": "medium"
+    },
+    {
+      "category": "literature",
+      "title": "Literary Legacy",
+      "content": "Nanjing inspired many famous writers including Cao Xueqin (Dream of Red Chamber), Li Yu, and modern writer Ye Shengtao. The Nanjing Museum has an excellent collection of historical documents and calligraphy.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Nanjing Snacks Culture",
+      "content": "Nanjing is famous for street snacks: duck blood soup (鸭血粉丝汤), small sesame balls (雨花石汤圆), and beef offal. The Fuzi Temple night market and Laochengli are best areas for snack exploration.",
+      "importance": "high"
+    },
+    {
+      "category": "dialect",
+      "title": "Nanjing Dialect",
+      "content": "Nanjing dialect is one of the oldest Mandarin dialects, preserving many elements from Ming Dynasty imperial speech. It's known for being more 'down to earth' than Beijing dialect. Locals appreciate visitors trying a few phrases.",
+      "importance": "low"
+    },
+    {
+      "category": "crafts",
+      "title": "Nanjing Crafts",
+      "content": "Nanjing is famous for Yuhua stones (雨花石), silk products, and Nanjing brocade (云锦). The Nanjing Yuhua Stone Garden in Zhonghua Gate area showcases these colorful stones. Nanjing brocade is a UNESCO intangible heritage.",
+      "importance": "medium"
+    },
+    {
+      "category": "tea",
+      "title": "Nanjing Tea Culture",
+      "content": "Nanjing has unique tea culture featuring Qimen black tea from nearby Huangshan. The famous 'First Spring Tea' is picked in March. Tea houses along Xuanwu Lake offer pleasant afternoon tea experiences.",
+      "importance": "medium"
+    },
+    {
+      "category": "gardens",
+      "title": "Nanjing Gardens",
+      "content": "Like Suzhou, Nanjing has historic private gardens. The Xuanwu Lake area has many traditional pavilions. The Presidential Palace has beautiful garden areas. The old Ming palace ruins include ancient garden elements.",
+      "importance": "medium"
+    },
+    {
+      "category": "riverside",
+      "title": "Yangtze River Culture",
+      "content": "Nanjing sits on the Yangtze River, historically crucial for trade and defense. The river wall offers walking paths. The historic Xiaguan area was once the main port. Yuejiang Tower offers panoramic river views.",
+      "importance": "medium"
+    },
+    {
+      "category": "education",
+      "title": "Academic Heritage",
+      "content": "Nanjing has been an education center for centuries. Nanjing University and Southeast University are prestigious institutions. The old campus buildings are architecturally significant and open to visitors.",
+      "importance": "medium"
+    },
+    {
+      "category": "music",
+      "title": "Jiangnan Music",
+      "content": "Nanjing is part of Jiangnan region known for traditional music. The Qinhuai River area has historical connections to folk music and opera. The local opera style influenced many Chinese performing arts.",
+      "importance": "low"
+    },
+    {
+      "category": "nightlife",
+      "title": "Modern Nanjing",
+      "content": "Nanjing has vibrant modern nightlife in Xinjiekou and Jianye districts.1912 bar street near Presidential Palace has many restaurants and bars. The Qinhuai River area offers evening boat rides with city views.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "南京急救中心",
+      "nameEn": "Nanjing Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "南京市公安局",
+      "nameEn": "Nanjing Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "hospital",
+      "name": "南京鼓楼医院",
+      "nameEn": "Nanjing Drum Tower Hospital",
+      "phone": "+86 25 8310 6666",
+      "address": "321 Zhongshan Road",
+      "coordinates": {
+        "lat": 32.0222,
+        "lng": 118.7872
+      },
+      "notes": "English-speaking staff available"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻上海总领事馆",
+      "nameEn": "US Consulate General Shanghai",
+      "phone": "+86 21 8011 2400",
+      "address": "Shanghai (nearest US consular services)",
+      "notes": "For US citizens in Nanjing region"
+    },
+    {
+      "type": "hospital",
+      "name": "南京军区总医院",
+      "nameEn": "Nanjing Military General Hospital",
+      "phone": "+86 25 8086 1155",
+      "address": "32 Changjiang Road, Xuanwu District",
+      "coordinates": {
+        "lat": 32.0422,
+        "lng": 118.7972
+      },
+      "notes": "Another major hospital with English staff"
+    },
+    {
+      "type": "tourist-police",
+      "name": "南京旅游警察",
+      "nameEn": "Nanjing Tourist Police",
+      "phone": "+86 25 8442 9901",
+      "notes": "English-speaking tourist police at major attractions"
+    },
+    {
+      "type": "fire",
+      "name": "南京消防",
+      "nameEn": "Nanjing Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻上海总领事馆",
+      "nameEn": "UK Consulate General Shanghai",
+      "phone": "+86 21 6179 8300",
+      "address": "Shanghai",
+      "notes": "For UK citizens in Nanjing region"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻上海总领事馆",
+      "nameEn": "Japan Consulate General Shanghai",
+      "phone": "+86 21 5257 4788",
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Nanjing region"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻上海总领事馆",
+      "nameEn": "Germany Consulate General Shanghai",
+      "phone": "+86 21 6101 2000",
+      "address": "Shanghai",
+      "notes": "For German citizens in Nanjing region"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻上海总领事馆",
+      "nameEn": "Australia Consulate General Shanghai",
+      "phone": "+86 21 5292 9000",
+      "address": "Shanghai",
+      "notes": "For Australian citizens in Nanjing region"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻上海总领事馆",
+      "nameEn": "France Consulate General Shanghai",
+      "phone": "+86 21 6103 2200",
+      "address": "Shanghai",
+      "notes": "For French citizens in Nanjing region"
+    },
+    {
+      "type": "embassy",
+      "name": "加拿大驻上海总领事馆",
+      "nameEn": "Canada Consulate General Shanghai",
+      "phone": "+86 21 3279 2800",
+      "address": "Shanghai",
+      "notes": "For Canadian citizens in Nanjing region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻上海总领事馆",
+      "nameEn": "South Korea Consulate General Shanghai",
+      "phone": "+86 21 5108 0700",
+      "address": "Shanghai",
+      "notes": "For Korean citizens in Nanjing region"
+    },
+    {
+      "type": "embassy",
+      "name": "新加坡驻上海总领事馆",
+      "nameEn": "Singapore Consulate General Shanghai",
+      "phone": "+86 21 6295 3800",
+      "address": "Shanghai",
+      "notes": "For Singapore citizens in Nanjing region"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Nanjing dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

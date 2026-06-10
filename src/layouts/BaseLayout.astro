@@ -70,7 +70,7 @@ const translationsJson = JSON.stringify(translations);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
     <!-- PWA / Theme Color -->
     <meta name="theme-color" content="#3b82f6" />
@@ -233,6 +233,15 @@ const translationsJson = JSON.stringify(translations);
           buildLangMenu();
           toggleLanguageMenu();
           window.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
+          // Navigate to locale-prefixed URL for SEO
+          var currentPath = window.location.pathname;
+          // Remove existing locale prefix
+          var cleanPath = currentPath.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(\/|$)/, '/');
+          if (lang === 'en') {
+            window.location.href = cleanPath;
+          } else {
+            window.location.href = '/' + lang + (cleanPath === '/' ? '' : cleanPath);
+          }
         };
 
         document.addEventListener('click', function(e) {
@@ -270,9 +279,7 @@ const translationsJson = JSON.stringify(translations);
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
-              CC
-            </div>
+            <img src="/logo.png" alt="ChinaConnect" class="w-10 h-10 rounded-lg" />
             <div>
               <span class="font-semibold text-lg text-gray-900">ChinaConnect</span>
               <span class="block text-xs text-gray-500" data-i18n="nav.tagline">Explore China with AI</span>
@@ -467,6 +474,14 @@ const translationsJson = JSON.stringify(translations);
           toggleLanguageMenu();
           // Dispatch event for other components
           window.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
+          // Navigate to locale-prefixed URL for SEO
+          var currentPath = window.location.pathname;
+          var cleanPath = currentPath.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(\/|$)/, '/');
+          if (lang === 'en') {
+            window.location.href = cleanPath;
+          } else {
+            window.location.href = '/' + lang + (cleanPath === '/' ? '' : cleanPath);
+          }
         };
 
         // Close menu on outside click
@@ -553,11 +568,81 @@ const translationsJson = JSON.stringify(translations);
         document.addEventListener('astro:after-swap', function() {
           // Small delay to ensure DOM is ready
           setTimeout(initI18n, 10);
+          setTimeout(autoTranslateContent, 100);
         });
         // Also handle astro:page-load for fallback
         document.addEventListener('astro:page-load', function() {
           setTimeout(initI18n, 50);
+          setTimeout(autoTranslateContent, 150);
         });
+
+        // Auto-translate page content (city descriptions, attraction info, etc.)
+        var translationCache = {};
+        try {
+          var cached = localStorage.getItem('chinaconnect_translate_cache');
+          if (cached) translationCache = JSON.parse(cached);
+        } catch(e) {}
+
+        function autoTranslateContent() {
+          // Use server-set locale if available, otherwise use i18n currentLang
+          var lang = window.__LOCALE__ || currentLang || 'en';
+          if (lang === 'en') return;
+
+          // Find all elements with data-translate attribute
+          var elements = document.querySelectorAll('[data-translate]');
+          if (elements.length === 0) return;
+
+          // Translate in batches of 5
+          var batch = [];
+          for (var i = 0; i < elements.length; i++) {
+            var el = elements[i];
+            var text = el.getAttribute('data-translate') || el.textContent || '';
+            if (!text.trim()) continue;
+
+            var cacheKey = lang + ':' + text.substring(0, 80);
+
+            // Check cache
+            if (translationCache[cacheKey]) {
+              if (el.children.length === 0) {
+                el.textContent = translationCache[cacheKey];
+              }
+              continue;
+            }
+
+            batch.push({ el: el, text: text, cacheKey: cacheKey });
+
+            if (batch.length >= 5) {
+              translateBatch(batch, lang);
+              batch = [];
+            }
+          }
+          if (batch.length > 0) {
+            translateBatch(batch, lang);
+          }
+        }
+
+        function translateBatch(items, targetLang) {
+          items.forEach(function(item) {
+            fetch('/api/translate', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ text: item.text, targetLang: targetLang, sourceLang: 'zh-CN' })
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+              if (data.translated && data.translated !== item.text) {
+                if (item.el.children.length === 0) {
+                  item.el.textContent = data.translated;
+                }
+                translationCache[item.cacheKey] = data.translated;
+                try {
+                  localStorage.setItem('chinaconnect_translate_cache', JSON.stringify(translationCache));
+                } catch(e) {}
+              }
+            })
+            .catch(function() {});
+          });
+        }
       })();
     </script>
 
@@ -650,9 +735,7 @@ const translationsJson = JSON.stringify(translations);
           <!-- Brand -->
           <div class="md:col-span-1">
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
-                CC
-              </div>
+              <img src="/logo.png" alt="ChinaConnect" class="w-10 h-10 rounded-lg" />
               <span class="font-semibold text-lg">ChinaConnect</span>
             </div>
             <p class="text-gray-400 max-w-md" data-i18n="footer.description">

@@ -2222,10 +2222,31 @@
   ],
   "emergencyContacts": [
     {
+      "type": "fire",
+      "name": "昆明消防",
+      "nameEn": "Kunming Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "ambulance",
+      "name": "昆明急救中心",
+      "nameEn": "Kunming Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "昆明市公安局",
+      "nameEn": "Kunming Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police available"
+    },
+    {
       "id": "police",
       "name": "昆明市公安局",
       "nameEn": "Kunming Police Bureau",
-      "phone": "0871-110",
+      "phone": "110",
       "type": "police",
       "description": "Kunming city police emergency hotline",
       "address": "Kunming City Center"
@@ -2234,7 +2255,7 @@
       "id": "fire",
       "name": "昆明市消防支队",
       "nameEn": "Kunming Fire Department",
-      "phone": "0871-119",
+      "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
       "address": "Kunming City"
@@ -2243,7 +2264,7 @@
       "id": "ambulance",
       "name": "昆明市急救中心",
       "nameEn": "Kunming Emergency Medical Center",
-      "phone": "0871-120",
+      "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
       "address": "Kunming City"

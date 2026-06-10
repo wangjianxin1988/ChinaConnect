@@ -1,0 +1,3365 @@
+{
+  "slug": "guilin",
+  "name": "桂林",
+  "nameEn": "Guilin",
+  "country": "China",
+  "population": "5.3 million",
+  "coordinates": {
+    "lat": 25.2744,
+    "lng": 110.29
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Guilin, 'Forest of Osmanthus', is famous for its stunning karst landscape of limestone peaks rising from the Li River. The city has been inspiring Chinese painters and poets for centuries with its ethereal scenery. Besides natural beauty, it offers cave explorations, cycling along the river, bamboo raft trips, and the vibrant Sun and Moon Pagodas.",
+  "coverImage": "https://images.unsplash.com/photo-1773318901379-aac92fdf5611?w=1200&q=80",
+  "highlights": [
+    "Li River Cruise - Karst landscape from water",
+    "Elephant Trunk Hill - City landmark",
+    "Reed Flute Cave - Rainbow-lit underground wonder",
+    "Longji Rice Terraces - Dragons backbone terraces",
+    "Yangshuo - Cycling and bamboo rafting"
+  ],
+  "climate": {
+    "type": "Subtropical humid",
+    "bestMonths": [
+      "April",
+      "May",
+      "June",
+      "September",
+      "October"
+    ],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "9C (48F)",
+    "tips": "Best visited in spring and autumn. Summer is hot and humid with occasional flooding. Winter mild but can be foggy. 'Guilin rain' - frequent afternoon showers create misty scenery. Pack rain gear."
+  },
+  "attractions": [
+    {
+      "id": "seven-star-park",
+      "name": "七星公园",
+      "nameEn": "Seven Star Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1770793730504-8662f1515e54?w=800&q=85",
+      "description": "Guilin's largest park featuring seven peaks arranged like the Big Dipper constellation, with caves, ancient trees, and a small zoo.",
+      "address": "7 Star Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2835,
+        "lng": 110.3165
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "55¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Seven Star Peak",
+        "Petrified wood exhibition",
+        "Camel Peak",
+        "Crouching Tiger Hill"
+      ],
+      "tips": "Best combined with a visit to the zoo if traveling with children."
+    },
+    {
+      "id": "jingjiang-prince",
+      "name": "靖江王府",
+      "nameEn": "Jingjiang Prince's City",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1659233324113-2f04a96ecbab?w=800&q=85",
+      "description": "A 600-year-old Ming dynasty princely mansion and UNESCO World Heritage site, featuring ancient architecture and the famous GUILIN DOCUMENT.",
+      "address": "1 Wangcheng Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2815,
+        "lng": 110.2965
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "130¥ (includes tour)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Prince's palace",
+        "Mountain View Pavilion",
+        "Ming dynasty architecture",
+        "Guilin Mountain museum"
+      ],
+      "tips": "Morning visit recommended to avoid crowds. Audio guide included in ticket."
+    },
+    {
+      "id": "east-west-alley",
+      "name": "东西巷",
+      "nameEn": "East-West Alley",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85",
+      "description": "A renovated historical district near the city center combining traditional architecture with modern amenities, featuring local snacks and crafts.",
+      "address": "Chongshan Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2775,
+        "lng": 110.2925
+      },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional architecture",
+        "Local crafts shops",
+        "Street food vendors",
+        "Night photography"
+      ],
+      "tips": "Best visited in evening when illuminated. Great for souvenirs and local snacks."
+    },
+    {
+      "id": "ten-mile-gallery",
+      "name": "十里画廊",
+      "nameEn": "Ten Mile Gallery",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1773318901045-38e92a58482d?w=800&q=85",
+      "description": "A scenic cycling route in Yangshuo passing through rolling hills, rice paddies, and traditional villages with stunning karst views.",
+      "address": "Yangshuo to Baisha, 20km route",
+      "coordinates": {
+        "lat": 24.7695,
+        "lng": 110.4835
+      },
+      "openingHours": "Always open",
+      "ticketPrice": "Free (e-bike rental 50¥/day)",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Moon Hill",
+        "Big Face Buddha",
+        "Rice paddy views",
+        "Village encounters"
+      ],
+      "tips": "Rent e-bikes in Yangshuo. Start early morning for best light and fewer tourists. Stop at cafes along the route."
+    },
+    {
+      "id": "yulong-river",
+      "name": "遇龙河",
+      "nameEn": "Yulong River",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1536585806558-81c7ea4d393d?w=800&q=85",
+      "description": "A tributary of the Li River, famous for its peaceful bamboo raft rides through dramatic karst scenery away from the crowds.",
+      "address": "Yulong Village, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7495,
+        "lng": 110.4535
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "120-320¥ (depending on route)",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Bamboo raft ride",
+        "Ancient bridges",
+        "Peaceful countryside",
+        "Flooded fields"
+      ],
+      "tips": "Book through your hotel. Less crowded than Li River. Morning mists most beautiful. Bring sunscreen."
+    },
+    {
+      "id": "elecai-mountain",
+      "name": "叠彩山",
+      "nameEn": "Diecai (Folded Brocade) Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
+      "description": "A hill in northern Guilin with excellent views over the city, named for its layers of colored rock resembling folded silk.",
+      "address": "Diecai Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2915,
+        "lng": 110.2845
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "35¥",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Chen Xian Pavilion at peak",
+        "Wind Cave",
+        "City and river views",
+        "Ancient banyan trees"
+      ],
+      "tips": "Combine with Fubo Hill for a morning tour. Wear comfortable shoes. Best visited at sunrise for city views."
+    },
+    {
+      "id": "gongzhong-rock",
+      "name": "拱极山",
+      "nameEn": "Gongzhong (Arched) Rock",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800",
+      "description": "A small hill with a natural arch offering panoramic views of Guilin and the surrounding karst landscape.",
+      "address": "Gongzhong Village, Guilin",
+      "coordinates": {
+        "lat": 25.3035,
+        "lng": 110.2765
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Natural rock arch",
+        "City panorama",
+        "Quiet hiking trail",
+        "Local temple"
+      ],
+      "tips": "Less touristy spot favored by locals. Good for sunrise photography."
+    },
+    {
+      "id": "yaoshan-scenic",
+      "name": "尧山",
+      "nameEn": "Yaoshan Scenic Area",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1773318901039-323c8afa8790?w=800&q=85",
+      "description": "The highest mountain near Guilin at 909m, offering cable car rides and stunning views of the karst landscape from above.",
+      "address": "Yaoshan Town, 15km from Guilin",
+      "coordinates": {
+        "lat": 25.3535,
+        "lng": 110.3365
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "80¥ (includes cable car)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Cable car to summit",
+        "Sea of clouds views",
+        "Ancient temple ruins",
+        "Seasonal flowers"
+      ],
+      "tips": "Best visited on clear days. Summer best for flower sea. Winter for frost views."
+    },
+    {
+      "id": "Elephant-trunk-water",
+      "name": "象山传奇",
+      "nameEn": "Elephant Trunk Hill Water Tour",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85",
+      "description": "Evening light show and boat tour around Elephant Trunk Hill featuring 3D projection mapping and cultural performances.",
+      "address": "Shanxian Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2635,
+        "lng": 110.2975
+      },
+      "openingHours": "Shows at 19:30-21:00",
+      "ticketPrice": "168¥",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "3D projection mapping",
+        "Cultural performance",
+        "Night views of hill",
+        "Light show on water"
+      ],
+      "tips": "Book through hotel or online. Rain ponchos provided. Good weather essential for best experience."
+    },
+    {
+      "id": "paddy-field-sea",
+      "name": "海洋银杏林",
+      "nameEn": "Haiyang Ginkgo Forest",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?w=800",
+      "description": "A vast ginkgo tree forest that turns golden yellow in autumn, creating stunning scenery contrasting with karst peaks.",
+      "address": "Haiyang Town, 30km from Guilin",
+      "coordinates": {
+        "lat": 25.4135,
+        "lng": 110.2265
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (parking may apply)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Golden ginkgo leaves",
+        "Karst backdrop",
+        "Village scenery",
+        "Autumn colors"
+      ],
+      "tips": "Best visited mid-November. Weekends crowded. Combine with nearby villages."
+    },
+    {
+      "id": "gaotian-grottoes",
+      "name": "高田石窟",
+      "nameEn": "Gaotian Grottoes",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?w=800",
+      "description": "Ancient Buddhist cave temples dating back to Tang Dynasty, featuring colorful murals and sculptures carved into karst cliffs.",
+      "address": "Gaotian Village, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7195,
+        "lng": 110.5335
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "60¥",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Tang Dynasty murals",
+        "Buddhist statues",
+        "Karst cave setting",
+        "Ancient inscriptions"
+      ],
+      "tips": "Less crowded than other caves. Combine with cycling route to Ten Mile Gallery."
+    },
+    {
+      "id": "liugong-island",
+      "name": "刘三姐歌圩",
+      "nameEn": "Liu Sanjie Song Market",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800",
+      "description": "An open-air venue on the Li River where visitors can experience traditional Guangxi folk songs and culture.",
+      "address": "Lianhua Town, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7495,
+        "lng": 110.5135
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "80¥",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Folk song performances",
+        "Zhuang dance shows",
+        "Traditional costumes",
+        "Audience participation"
+      ],
+      "tips": "Evening shows more lively. Interactive experience with performers."
+    },
+    {
+      "id": "fubo-hill",
+      "name": "伏波山",
+      "nameEn": "Fubo (Boat-Stopping) Hill",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=85",
+      "description": "A hill with a distinctive peak that juts out over the river, featuring ancient caves and excellent views of the city.",
+      "address": "Fubo Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2885
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "1-1.5 hours",
+      "highlights": [
+        "Panlong Cave",
+        "Ming dynasty inscriptions",
+        "City views from top",
+        "Elephant Trunk Hill views"
+      ],
+      "tips": "Combine with Diecai Mountain for morning tour. Wear comfortable shoes for climbing."
+    },
+    {
+      "id": "cormorant-fishing",
+      "name": "漓江渔火",
+      "nameEn": "Cormorant Fishing Show",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800",
+      "description": "Traditional cormorant fishing demonstration on the Li River with lanterns and folk music.",
+      "address": "Yangdi Village, 35km from Guilin",
+      "coordinates": {
+        "lat": 25.1235,
+        "lng": 110.3865
+      },
+      "openingHours": "Evening shows at 20:00",
+      "ticketPrice": "80-150¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Cormorant fishing spectacle",
+        "Lantern-lit boats",
+        "Folk music performance",
+        "Night river views"
+      ],
+      "tips": "Book evening tour including dinner. Best in summer. Bring warm jacket for evening."
+    },
+    {
+      "id": "silver-cave",
+      "name": "银子岩",
+      "nameEn": "Silver Cave",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1746780700187-9a06a00c4b97?w=800&q=85",
+      "description": "A vast karst cave system known for its sparkling stalactites that resemble silver formations.",
+      "address": "Maling Village, Yangshuo County, 80km from Guilin",
+      "coordinates": {
+        "lat": 24.6135,
+        "lng": 110.5065
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "80¥",
+      "recommendedVisitTime": "1.5-2 hours",
+      "highlights": [
+        "Silver stalactites",
+        "Underground lake",
+        "Natural formations",
+        "Light show inside"
+      ],
+      "tips": "Combine with Yangshuo cycling. Follow guide for best photo spots. The cave is 2km long."
+    },
+    {
+      "id": "longji-ping'an",
+      "name": "龙脊平安寨",
+      "nameEn": "Longji Ping'an Zhuang Village",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800",
+      "description": "The most famous Zhuang village in the Longji Rice Terraces area with stunning views and authentic culture.",
+      "address": "Ping'an Village, Longsheng County, 100km from Guilin",
+      "coordinates": {
+        "lat": 25.7535,
+        "lng": 110.0935
+      },
+      "openingHours": "Always open",
+      "ticketPrice": "80¥ (terraces access)",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Seven Stars Follow Moon",
+        "Nine Dragons，五虎探苍松",
+        "Zhuang architecture",
+        "Terrace sunrise"
+      ],
+      "tips": "Stay overnight for sunrise. Wear hiking shoes. Hire local guide. Try bamboo rice at village restaurants."
+    },
+    {
+      "id": "longji-dazhai",
+      "name": "龙脊古壮寨",
+      "nameEn": "Longji Dazhai Yao Village",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1528181304800-259b08848526?w=800",
+      "description": "Ancient Yao village with 400-year-old wooden architecture and authentic minority customs.",
+      "address": "Dazhai Village, Longsheng County, 110km from Guilin",
+      "coordinates": {
+        "lat": 25.7735,
+        "lng": 110.1035
+      },
+      "openingHours": "Always open",
+      "ticketPrice": "Included in Longji ticket",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Ancient Yao houses",
+        "Three Yellow Cannots",
+        "Terrace views",
+        "Traditional weaving"
+      ],
+      "tips": "Less touristy than Ping'an. Try Yao specialty dishes. Experience homemade rice wine."
+    },
+    {
+      "id": "daxu-ancient",
+      "name": "大圩古镇",
+      "nameEn": "Daxu Ancient Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
+      "description": "A 1000-year-old Ming and Qing dynasty town on the漓江, once a major trading hub with preserved architecture.",
+      "address": "Daxu Town, 15km from Guilin",
+      "coordinates": {
+        "lat": 25.2335,
+        "lng": 110.1765
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient stone streets",
+        "Traditional workshops",
+        "River views",
+        "Old architecture"
+      ],
+      "tips": "Best in early morning before tour buses. Try local specialties. Watch traditional crafts."
+    },
+    {
+      "id": "yangshuo-busying",
+      "name": "阳朔西街",
+      "nameEn": "Yangshuo West Street",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=800&q=85",
+      "description": "China's first 'foreigner street' with 1400 years of history, now a bustling pedestrian zone with shops and restaurants.",
+      "address": "Chengzhong Rd, Yangshuo",
+      "coordinates": {
+        "lat": 24.7815,
+        "lng": 110.4955
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "International atmosphere",
+        "Night markets",
+        "Street performers",
+        "Souvenir shopping"
+      ],
+      "tips": "Avoid Golden Week. Explore side alleys for authentic shops. Try street food at night."
+    },
+    {
+      "id": "xiangshan-park",
+      "name": "象山公园",
+      "nameEn": "Elephant Trunk Hill Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
+      "description": "The iconic landmark of Guilin where an elephant drinks from the river with its trunk forming a natural arch.",
+      "address": "Shanxian Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2625,
+        "lng": 110.2985
+      },
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "55¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Elephant trunk arch",
+        "Water mirror reflection",
+        "Ancient poems carved",
+        "Sunset views"
+      ],
+      "tips": "Best at sunset for reflection shots. The water view from Shanxian Rd is free. Buy ticket for inside access."
+    },
+    {
+      "id": "reed-flute-cave",
+      "name": "芦笛岩",
+      "nameEn": "Reed Flute Cave",
+      "category": "nature",
+      "description": "桂林最著名的溶洞，因洞口曾生长芦草可制笛而得名。洞内钟乳石千姿百态，配合五彩灯光如梦似幻，被誉为大自然的艺术宫殿。",
+      "address": "桂林市秀峰区芦笛路1号",
+      "coordinates": {
+        "lat": 25.3135,
+        "lng": 110.2635
+      },
+      "openingHours": "07:30-18:00",
+      "ticketPrice": "90元",
+      "recommendedVisitTime": "1.5-2小时",
+      "highlights": [
+        "水晶宫",
+        "花果山",
+        "原始森林",
+        "灯光秀"
+      ],
+      "tips": "洞内温度常年18度，夏天凉爽冬天温暖，建议带薄外套。周末人多，建议工作日前往。",
+      "image": "https://images.unsplash.com/photo-1775551196112-1d47802fe4da?w=800&q=85"
+    },
+    {
+      "id": "li-river-cruise",
+      "name": "漓江游船",
+      "nameEn": "Li River Cruise",
+      "category": "nature",
+      "description": "从桂林磨盘山码头到阳朔的83公里漓江精华段，两岸奇峰倒影、翠竹掩映，是桂林山水甲天下的最佳诠释。",
+      "address": "桂林市磨盘山码头至阳朔",
+      "coordinates": {
+        "lat": 25.0535,
+        "lng": 110.3735
+      },
+      "openingHours": "08:00-10:00发船",
+      "ticketPrice": "215元",
+      "recommendedVisitTime": "4-5小时",
+      "highlights": [
+        "九马画山",
+        "黄布倒影",
+        "兴坪古镇",
+        "20元人民币背景"
+      ],
+      "tips": "建议乘坐三星或四星游船，提前一天购票。天气晴朗时景色最佳。",
+      "image": "https://images.unsplash.com/photo-1771967141873-8b714205f4bd?w=800&q=85"
+    },
+    {
+      "id": "crown-cave",
+      "name": "冠岩",
+      "nameEn": "Crown Cave",
+      "category": "nature",
+      "description": "集水、陆、空游览方式于一体的大型溶洞，洞内有地下河可乘船游览，还有小火车穿行其间，趣味性十足。",
+      "address": "桂林市雁山区草坪乡",
+      "coordinates": {
+        "lat": 25.0835,
+        "lng": 110.3235
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "120元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "地下河游船",
+        "洞内小火车",
+        "声光表演",
+        "巨型钟乳石"
+      ],
+      "tips": "建议穿防滑鞋，洞内比较潮湿。可以与古东瀑布联游。",
+      "image": "https://images.unsplash.com/photo-1742568404720-8ccac058f430?w=800&q=85"
+    },
+    {
+      "id": "gudong-waterfall",
+      "name": "古东瀑布",
+      "nameEn": "Gudong Waterfall",
+      "category": "nature",
+      "description": "中国唯一可以攀爬的瀑布，游客可以穿上草鞋戴上头盔沿着瀑布攀岩而上，是极具趣味性和挑战性的亲水体验。",
+      "address": "桂林市灵川县大圩镇古东村",
+      "coordinates": {
+        "lat": 25.2035,
+        "lng": 110.4035
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "75元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "攀爬瀑布",
+        "森林氧吧",
+        "溯溪体验",
+        "枫林秋色"
+      ],
+      "tips": "建议穿可湿水的衣服和防滑鞋。带换洗衣物。",
+      "image": "https://images.unsplash.com/photo-1539143016883-95344276ca95?w=800&q=85"
+    },
+    {
+      "id": "two-rivers-four-lakes",
+      "name": "两江四湖",
+      "nameEn": "Two Rivers and Four Lakes",
+      "category": "nature",
+      "description": "桂林市区环城水系，由漓江、桃花江与杉湖、榕湖、桂湖、木龙湖组成。乘船夜游可欣赏日月双塔等夜景。",
+      "address": "桂林市中心环城水系",
+      "coordinates": {
+        "lat": 25.2785,
+        "lng": 110.2925
+      },
+      "openingHours": "夜游19:30-21:00",
+      "ticketPrice": "190元",
+      "recommendedVisitTime": "1.5-2小时",
+      "highlights": [
+        "日月双塔",
+        "玻璃桥",
+        "古南门",
+        "夜景灯光"
+      ],
+      "tips": "夜游比日游更精彩，建议提前购票。",
+      "image": "https://images.unsplash.com/photo-1773318901073-3d9304c6f48b?w=800&q=85"
+    },
+    {
+      "id": "xingping-ancient-town",
+      "name": "兴坪古镇",
+      "nameEn": "Xingping Ancient Town",
+      "category": "street",
+      "description": "漓江畔有1700多年历史的古镇，20元人民币背面图案取景地。古镇保存完好，青石板路、古戏台都是不可错过的体验。",
+      "address": "桂林市阳朔县兴坪镇",
+      "coordinates": {
+        "lat": 24.9235,
+        "lng": 110.5335
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "20元人民币取景地",
+        "老寨山日落",
+        "古戏台",
+        "渔村"
+      ],
+      "tips": "建议在古镇住一晚，清晨和傍晚的漓江最美。",
+      "image": "https://images.unsplash.com/photo-1773186527348-753562cbb587?w=800&q=85"
+    },
+    {
+      "id": "xianggong-mountain",
+      "name": "相公山",
+      "nameEn": "Xianggong Mountain",
+      "category": "nature",
+      "description": "位于漓江畔的观景台，是拍摄漓江第一湾的最佳位置。清晨登顶可俯瞰漓江晨雾和渔火点点的壮美画卷。",
+      "address": "桂林市阳朔县兴坪镇",
+      "coordinates": {
+        "lat": 24.9335,
+        "lng": 110.5435
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "60元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "漓江第一湾",
+        "日出云海",
+        "渔火",
+        "摄影胜地"
+      ],
+      "tips": "日出前到达最佳，需要凌晨出发。山路较陡，穿运动鞋。",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=85"
+    },
+    {
+      "id": "moon-hill",
+      "name": "月亮山",
+      "nameEn": "Moon Hill",
+      "category": "nature",
+      "description": "阳朔标志性自然奇观，山顶有一个天然圆形穿洞，形似明月高悬。攀爬约20分钟可达洞口，俯瞰田园风光。",
+      "address": "桂林市阳朔县高田镇",
+      "coordinates": {
+        "lat": 24.7535,
+        "lng": 110.4735
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "35元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "天然月亮洞",
+        "攀岩圣地",
+        "田园风光",
+        "十里画廊终点"
+      ],
+      "tips": "可以和十里画廊骑行结合。攀岩爱好者可以体验月亮山攀岩线路。",
+      "image": "https://images.unsplash.com/photo-1777171491750-dbdba2cafe15?w=800&q=85"
+    },
+    {
+      "id": "impression-liu-sanjie",
+      "name": "印象刘三姐",
+      "nameEn": "Impression Liu Sanjie",
+      "category": "cultural",
+      "description": "张艺谋执导的大型山水实景演出，以漓江和十二座山峰为天然舞台，展现壮族歌仙刘三姐的传奇故事。",
+      "address": "桂林市阳朔县田园路1号",
+      "coordinates": {
+        "lat": 24.7735,
+        "lng": 110.5035
+      },
+      "openingHours": "第一场20:00",
+      "ticketPrice": "238-888元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "山水实景",
+        "600人演出",
+        "渔火表演",
+        "少数民族歌舞"
+      ],
+      "tips": "建议买B区座位性价比最高。演出在户外，雨天照常演出。",
+      "image": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=85"
+    },
+    {
+      "id": "duxiu-feng-prince-city",
+      "name": "独秀峰王城景区",
+      "nameEn": "Duxiu Peak and Prince City",
+      "category": "landmark",
+      "description": "桂林市区标志性景点，独秀峰拔地而起，登顶可俯瞰全城。王城为明代靖江王府旧址，有600多年历史。",
+      "address": "桂林市秀峰区王城路1号",
+      "coordinates": {
+        "lat": 25.2825,
+        "lng": 110.2955
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "独秀峰登顶",
+        "摩崖石刻",
+        "贡院科举",
+        "明代城墙"
+      ],
+      "tips": "可以参加科举考试体验，穿着古装拍照。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "lingqu-canal",
+      "name": "灵渠",
+      "nameEn": "Lingqu Canal",
+      "category": "landmark",
+      "description": "秦始皇时期修建的古代水利工程，与都江堰齐名。连接湘江和漓江，至今仍发挥灌溉作用，展现古代中国人民的智慧。",
+      "address": "桂林市兴安县灵渠南路",
+      "coordinates": {
+        "lat": 25.6135,
+        "lng": 110.6735
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "铧嘴分水",
+        "大小天平",
+        "秦堤",
+        "四贤祠"
+      ],
+      "tips": "可以请导游讲解水利工程原理。春天两岸绿意盎然。",
+      "image": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?w=800&q=85"
+    },
+    {
+      "id": "longsheng-hot-spring",
+      "name": "龙胜温泉",
+      "nameEn": "Longsheng Hot Spring",
+      "category": "nature",
+      "description": "位于龙胜各族自治县的天然温泉群，泉水含多种矿物质，水温常年50度。在群山环抱中泡温泉是游览龙脊后的放松方式。",
+      "address": "桂林市龙胜各族自治县江底乡",
+      "coordinates": {
+        "lat": 25.8035,
+        "lng": 110.0535
+      },
+      "openingHours": "08:00-22:00",
+      "ticketPrice": "128元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "天然温泉",
+        "森林浴场",
+        "瑶族风情",
+        "养生体验"
+      ],
+      "tips": "建议在龙脊梯田游览后前往。冬天泡温泉体验最佳。",
+      "image": "https://images.unsplash.com/photo-1754878209694-e763436b03a3?w=800&q=85"
+    },
+    {
+      "id": "guilin-art-museum",
+      "name": "桂林美术馆",
+      "nameEn": "Guilin Art Museum",
+      "category": "museum",
+      "description": "展示桂林山水画和当代艺术作品的专业美术馆，馆藏丰富，定期举办各类画展和艺术交流活动。",
+      "address": "桂林市秀峰区杉湖北路1号",
+      "coordinates": {
+        "lat": 25.2755,
+        "lng": 110.2915
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "山水画展",
+        "当代艺术",
+        "摄影展览",
+        "文化交流"
+      ],
+      "tips": "不定期更换展览主题，建议关注公众号获取最新信息。",
+      "image": "https://images.unsplash.com/photo-1563696629964-8c3ce077cf3e?w=800&q=85"
+    },
+    {
+      "id": "xiufeng-park",
+      "name": "独秀峰公园",
+      "nameEn": "Xiufeng Park",
+      "category": "park",
+      "description": "以独秀峰为中心的城市公园，古树参天、亭台楼阁错落有致，是市民休闲锻炼的好去处。",
+      "address": "桂林市秀峰区独秀峰路",
+      "coordinates": {
+        "lat": 25.2835,
+        "lng": 110.2945
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "独秀峰",
+        "古树名木",
+        "晨练人群",
+        "城市绿肺"
+      ],
+      "tips": "清晨可以看到市民打太极拳。适合散步放松。",
+      "image": "https://images.unsplash.com/photo-1758567056386-768c303d19b8?w=800&q=85"
+    },
+    {
+      "id": "xingping-bamboo-raft",
+      "name": "兴坪竹筏漂流",
+      "nameEn": "Xingping Bamboo Rafting",
+      "category": "nature",
+      "description": "在漓江兴坪段乘坐竹筏漂流，近距离感受漓江山水之美。沿途可欣赏九马画山、黄布倒影等经典景观。",
+      "address": "桂林市阳朔县兴坪镇",
+      "coordinates": {
+        "lat": 24.9135,
+        "lng": 110.5235
+      },
+      "openingHours": "07:00-16:00",
+      "ticketPrice": "98元/人",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "竹筏漂流",
+        "九马画山",
+        "黄布倒影",
+        "渔翁撒网"
+      ],
+      "tips": "7岁以下儿童和70岁以上老人不能乘坐。穿救生衣。",
+      "image": "https://images.unsplash.com/photo-1760885877718-0fb56b216528?w=800&q=85"
+    },
+    {
+      "id": "jiuxian-mountain",
+      "name": "九仙山",
+      "nameEn": "Jiuxian Mountain",
+      "category": "nature",
+      "description": "阳朔境内的一座道教名山，山上有九仙阁等古建筑遗迹。登顶可俯瞰漓江和阳朔县城全景。",
+      "address": "桂林市阳朔县",
+      "coordinates": {
+        "lat": 24.7935,
+        "lng": 110.5035
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "道教遗迹",
+        "漓江全景",
+        "日落观赏",
+        "登山健身"
+      ],
+      "tips": "建议下午登山看日落。台阶较多，穿舒适运动鞋。",
+      "image": "https://images.unsplash.com/photo-1695792622995-dc673d0d9d64?w=800&q=85"
+    },
+    {
+      "id": "guilin-zoo",
+      "name": "桂林动物园",
+      "nameEn": "Guilin Zoo",
+      "category": "park",
+      "description": "位于七星公园内的动物园，饲养有大熊猫、金丝猴、华南虎等珍稀动物。是亲子游的好去处。",
+      "address": "桂林市七星区七星路1号",
+      "coordinates": {
+        "lat": 25.2845,
+        "lng": 110.3175
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "包含在七星公园门票内",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "大熊猫",
+        "金丝猴",
+        "华南虎",
+        "亲子互动"
+      ],
+      "tips": "建议和七星公园一起游览。",
+      "image": "https://images.unsplash.com/photo-1730691740093-a7959af5f4a6?w=800&q=85"
+    },
+    {
+      "id": "yangdi-scenic",
+      "name": "杨堤风光",
+      "nameEn": "Yangdi Scenic Area",
+      "category": "nature",
+      "description": "漓江上的小村庄，是漓江漂流的起点之一。周围群山环抱、翠竹成林，是拍摄漓江日出和渔火的绝佳地点。",
+      "address": "桂林市灵川县杨堤乡",
+      "coordinates": {
+        "lat": 25.1135,
+        "lng": 110.3735
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "漓江日出",
+        "渔火拍摄",
+        "竹林漫步",
+        "田园风光"
+      ],
+      "tips": "清晨到达可拍摄漓江晨雾。从桂林市区可乘班车到达。",
+      "image": "https://images.unsplash.com/photo-1683111149273-8cb02d4ba46c?w=800&q=85"
+    },
+    {
+      "id": "bajiaozhai",
+      "name": "八角寨",
+      "nameEn": "Bajiaozhai",
+      "category": "nature",
+      "description": "资源县的丹霞地貌景区，因主峰有八个翘角而得名。山顶云雾缭绕时八个山角从云海中伸出，被誉为丹霞之魂。",
+      "address": "桂林市资源县梅溪乡",
+      "coordinates": {
+        "lat": 26.1535,
+        "lng": 110.7235
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "80元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "丹霞地貌",
+        "云海奇观",
+        "八角翘峰",
+        "悬崖栈道"
+      ],
+      "tips": "建议早起看云海。山路较陡，穿登山鞋。",
+      "image": "https://images.unsplash.com/photo-1770104456151-b61273de2d93?w=800&q=85"
+    },
+    {
+      "id": "zijiang-rafting",
+      "name": "资江漂流",
+      "nameEn": "Zijiang River Rafting",
+      "category": "nature",
+      "description": "资源县境内的资江漂流，江水清澈碧绿，两岸丹霞地貌色彩斑斓。被誉为资江漂流华夏第一。",
+      "address": "桂林市资源县",
+      "coordinates": {
+        "lat": 26.0335,
+        "lng": 110.6535
+      },
+      "openingHours": "08:00-16:00",
+      "ticketPrice": "138元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "丹霞地貌",
+        "清澈江水",
+        "竹筏漂流",
+        "田园风光"
+      ],
+      "tips": "可与八角寨丹霞地貌联游。穿防晒衣物。",
+      "image": "https://images.unsplash.com/photo-1587954362159-eae5767e609e?w=800&q=85"
+    },
+    {
+      "id": "wupai-rafting",
+      "name": "五排河漂流",
+      "nameEn": "Wupai River Rafting",
+      "category": "nature",
+      "description": "被誉为桂林第一漂，河水湍急、两岸原始森林茂密。是广西最刺激的漂流项目之一。",
+      "address": "桂林市资源县",
+      "coordinates": {
+        "lat": 26.0435,
+        "lng": 110.6435
+      },
+      "openingHours": "09:00-16:00（夏季）",
+      "ticketPrice": "168元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "激流险滩",
+        "原始森林",
+        "峡谷风光",
+        "冒险体验"
+      ],
+      "tips": "只在夏季开放（5-10月）。带换洗衣物，穿凉鞋。",
+      "image": "https://images.unsplash.com/photo-1772490184794-4ae50d917785?w=800&q=85"
+    },
+    {
+      "id": "guilin-merryland",
+      "name": "桂林乐满地",
+      "nameEn": "Guilin Merryland",
+      "category": "park",
+      "description": "集主题乐园、高尔夫球场、度假酒店于一体的综合性旅游度假区，有各种游乐设施和表演。",
+      "address": "桂林市兴安县",
+      "coordinates": {
+        "lat": 25.6035,
+        "lng": 110.6635
+      },
+      "openingHours": "09:00-17:30",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "1天",
+      "highlights": [
+        "主题乐园",
+        "水上乐园",
+        "高尔夫",
+        "度假酒店"
+      ],
+      "tips": "适合带小朋友的家庭。夏天水上乐园开放。",
+      "image": "https://images.unsplash.com/photo-1769308303885-80aa909a84eb?w=800&q=85"
+    },
+    {
+      "id": "jiangtou-ancient-village",
+      "name": "江头洲古村",
+      "nameEn": "Jiangtouzhou Ancient Village",
+      "category": "street",
+      "description": "有600多年历史的古村落，保存完好的明清古建筑群。村中青砖灰瓦、石板小巷，是周敦颐后裔聚居地，有百年清官村的美誉。",
+      "address": "桂林市灵川县九屋镇江头洲村",
+      "coordinates": {
+        "lat": 25.4235,
+        "lng": 110.2835
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "明清古建筑",
+        "爱莲家祠",
+        "石板小巷",
+        "廉政文化"
+      ],
+      "tips": "游客稀少，适合喜欢古村落的旅行者。自驾或包车前往。",
+      "image": "https://images.unsplash.com/photo-1773186527834-beeb5e4a1f5f?w=800&q=85"
+    },
+    {
+      "id": "guilin-tea-culture-museum",
+      "name": "桂林茶文化博物馆",
+      "nameEn": "Guilin Tea Culture Museum",
+      "category": "museum",
+      "description": "展示中国茶文化和桂林本地茶叶历史的主题博物馆。可以品尝六堡茶、桂花茶等本地名茶。",
+      "address": "桂林市秀峰区",
+      "coordinates": {
+        "lat": 25.2775,
+        "lng": 110.2885
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "茶艺表演",
+        "品茶体验",
+        "茶文化展示",
+        "购茶推荐"
+      ],
+      "tips": "可以免费品尝多种桂林本地茶。买茶伴手礼的好去处。",
+      "image": "https://images.unsplash.com/photo-1758471576342-0b85d3caa8ea?w=800&q=85"
+    },
+    {
+      "id": "putuo-peak",
+      "name": "普陀山",
+      "nameEn": "Putuo Mountain",
+      "category": "nature",
+      "description": "七星公园内的一座山峰，因供奉观音菩萨而得名。山上有普陀精舍等佛教建筑，登顶可俯瞰桂林市区。",
+      "address": "桂林市七星区七星公园内",
+      "coordinates": {
+        "lat": 25.2855,
+        "lng": 110.3155
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "包含在七星公园门票内",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "观音殿",
+        "登高望远",
+        "佛教文化",
+        "城市全景"
+      ],
+      "tips": "与七星公园一起游览。山路平缓，适合各年龄段。",
+      "image": "https://images.unsplash.com/photo-1624267509891-5825f5b0891b?w=800&q=85"
+    },
+    {
+      "id": "guilin-jiangtou-wetland",
+      "name": "会仙湿地",
+      "nameEn": "Huixian Wetland",
+      "category": "nature",
+      "description": "桂林喀斯特湿地公园，是中国最大的岩溶湿地之一。水田、荷塘、峰林交织，是观鸟和拍摄田园风光的好地方。",
+      "address": "桂林市临桂区会仙镇",
+      "coordinates": {
+        "lat": 25.1535,
+        "lng": 110.1735
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "喀斯特湿地",
+        "观鸟胜地",
+        "田园风光",
+        "荷花季节"
+      ],
+      "tips": "夏天荷花盛开最美。自驾前往较为方便。蚊虫较多，做好防蚊。",
+      "image": "https://images.unsplash.com/photo-1719248238000-4e44d2d8a9d4?w=800&q=85"
+    },
+    {
+      "id": "yangshuo-county-museum",
+      "name": "阳朔徐悲鸿故居",
+      "nameEn": "Xu Beihong Former Residence",
+      "category": "museum",
+      "description": "著名画家徐悲鸿在阳朔的故居，展示其在桂林创作期间的生活和作品。建筑本身也是民国时期的典型民居。",
+      "address": "桂林市阳朔县县前街",
+      "coordinates": {
+        "lat": 24.7805,
+        "lng": 110.4945
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟-1小时",
+      "highlights": [
+        "徐悲鸿作品",
+        "民国建筑",
+        "历史照片",
+        "文化展览"
+      ],
+      "tips": "就在阳朔西街附近，可以顺路参观。规模不大但值得一看。",
+      "image": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800&q=85"
+    },
+    {
+      "id": "caoping-ethnic-village",
+      "name": "草坪回族乡",
+      "nameEn": "Caoping Hui Ethnic Village",
+      "category": "cultural",
+      "description": "漓江边的回族聚居村落，可以体验回族文化和清真美食。村中清真寺古朴典雅，是了解桂林多元民族文化的好去处。",
+      "address": "桂林市雁山区草坪乡",
+      "coordinates": {
+        "lat": 25.0735,
+        "lng": 110.3135
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "回族文化",
+        "清真美食",
+        "漓江风光",
+        "民族风情"
+      ],
+      "tips": "尊重回族饮食习惯。可以品尝当地清真牛肉面。",
+      "image": "https://images.unsplash.com/photo-1693066468721-54f6465aaa62?w=800&q=85"
+    },
+    {
+      "id": "lijiang-national-park",
+      "name": "漓江国家公园",
+      "nameEn": "Lijiang National Park",
+      "category": "nature",
+      "description": "以漓江为核心的国家级风景名胜区，涵盖桂林至阳朔的漓江两岸精华景观。公园内山青水秀、洞奇石美，是桂林山水的集中展示区。",
+      "address": "桂林市灵川县至阳朔县",
+      "coordinates": {
+        "lat": 25.1535,
+        "lng": 110.3535
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（部分景点收费）",
+      "recommendedVisitTime": "1天",
+      "highlights": [
+        "漓江精华段",
+        "喀斯特地貌",
+        "田园风光",
+        "徒步线路"
+      ],
+      "tips": "建议安排一整天游览。可以徒步漓江精华段，从杨堤到兴坪。",
+      "image": "https://images.unsplash.com/photo-1633970550780-bb1480825549?w=800&q=85"
+    },
+    {
+      "id": "aishan-village",
+      "name": "石头城",
+      "nameEn": "Aishan Stone Village",
+      "category": "street",
+      "description": "阳朔县葡萄镇的古老石头村落，整座村庄由石头砌成，石屋、石墙、石板路保存完好。是摄影爱好者和文艺青年的打卡圣地。",
+      "address": "桂林市阳朔县葡萄镇",
+      "coordinates": {
+        "lat": 24.8335,
+        "lng": 110.3935
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "石头建筑",
+        "田园风光",
+        "摄影打卡",
+        "古朴村落"
+      ],
+      "tips": "游客较少，适合喜欢安静的旅行者。自驾或骑行前往。",
+      "image": "https://images.unsplash.com/photo-1758684701176-0d77467205f1?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "guilin-noodle-legend",
+      "name": "老东江米粉",
+      "nameEn": "Lao Dongjiang Rice Noodles",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 20,
+      "rating": 4.7,
+      "address": "2 Diecai Rd, near Diecai Pavilion",
+      "coordinates": {
+        "lat": 25.2895,
+        "lng": 110.2865
+      },
+      "description": "Legendary rice noodle shop (since 1977) - locals line up daily for breakfast.",
+      "dishHighlights": [
+        "Guilin rice noodles",
+        "Slow-cooked soup base",
+        "Variety of toppings"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "breakfast"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "chunjee-roast-goose",
+      "name": "椿记烧鹅",
+      "nameEn": "Chun Ji Roast Goose",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "20 Diecai Rd, Diecai District",
+      "coordinates": {
+        "lat": 25.2855,
+        "lng": 110.2875
+      },
+      "phone": "+86 773 280 8888",
+      "hours": "11:00-14:30, 17:00-21:30",
+      "description": "Popular local restaurant famous for roast goose and excellent Guangxi cuisine.",
+      "dishHighlights": [
+        "Roast goose",
+        "Beer fish",
+        "Oils duck"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "gan-restaurant",
+      "name": "阿甘酒家",
+      "nameEn": "Gan Restaurant",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Near Elephant Trunk Hill",
+      "coordinates": {
+        "lat": 25.2635,
+        "lng": 110.2975
+      },
+      "hours": "10:30-21:30",
+      "description": "Popular restaurant with good views and authentic local dishes.",
+      "dishHighlights": [
+        "Beer fish",
+        "Guilin rice noodles",
+        "Stir-fried vegetables"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "scenic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "mango-madness",
+      "name": "芒果帮",
+      "nameEn": "Mango Bang",
+      "type": "local",
+      "cuisine": "Mango specialty",
+      "avgPrice": 30,
+      "rating": 4.4,
+      "address": "Near Elephant Trunk Hill",
+      "coordinates": {
+        "lat": 25.2625,
+        "lng": 110.2985
+      },
+      "description": "Popular mango juice and dessert shop using Guilin's famous mangoes.",
+      "dishHighlights": [
+        "Mango juice",
+        "Mango pudding",
+        "Mango ice cream"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "refreshing"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xiao-nan-guo",
+      "name": "小南国家宴",
+      "nameEn": "Xiao Nan Guo Jia Yan",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "6 Chengzhong Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2765,
+        "lng": 110.2915
+      },
+      "phone": "+86 773 583 2888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Popular restaurant serving authentic Guangxi cuisine with beautiful riverside setting.",
+      "dishHighlights": [
+        "Guilin rice noodles",
+        "Bamboo rice",
+        "Local specialty stew"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "river-view"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "rice-noodle-buffet",
+      "name": "米粉自助",
+      "nameEn": "Guilin Rice Noodle Buffet",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Diecai District",
+      "coordinates": {
+        "lat": 25.2835,
+        "lng": 110.2855
+      },
+      "description": "Budget self-service rice noodle restaurant popular with locals. Unlimited toppings.",
+      "dishHighlights": [
+        "DIY rice noodles",
+        "Various broths",
+        "All-you-can-add toppings"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "budget",
+        "DIY"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "west-street-food",
+      "name": "阳朔西街餐厅",
+      "nameEn": "West Street Restaurants",
+      "type": "local",
+      "cuisine": "International/Local",
+      "avgPrice": 60,
+      "rating": 4.2,
+      "address": "West Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7805,
+        "lng": 110.4965
+      },
+      "description": "Yangshuo's famous pedestrian street with hundreds of restaurants serving both local and international cuisine.",
+      "dishHighlights": [
+        "Yangshuo beer fish",
+        "Fresh fruit shakes",
+        "Western food options"
+      ],
+      "tags": [
+        "local",
+        "yangshuo",
+        "international",
+        "busy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lipu-taro-house",
+      "name": "荔浦芋",
+      "nameEn": "Lipu Taro Specialties",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 25.2735,
+        "lng": 110.2945
+      },
+      "description": "Specialty restaurants featuring Lipu taro dishes - a famous Guangxi ingredient.",
+      "dishHighlights": [
+        "Lipu taro pork belly",
+        "Fried taro slices",
+        "Taro hot pot"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "specialty"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "osmanthus-cake-vendors",
+      "name": "桂花糕",
+      "nameEn": "Osmanthus Cake Vendors",
+      "type": "local",
+      "cuisine": "Guilin dessert",
+      "avgPrice": 10,
+      "rating": 4.3,
+      "address": "Night markets and food streets",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2905
+      },
+      "description": "Traditional osmanthus cakes and pastries - Guilin's signature sweet, made with osmanthus flowers.",
+      "dishHighlights": [
+        "Osmanthus cake",
+        "Osmanthus wine",
+        "Sweet osmanthus rice balls"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "guilin-specialty",
+        "street-food"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "hours": "10:00-22:00",
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yangshuo-beer-fish-1",
+      "name": "阳朔啤酒鱼总店",
+      "nameEn": "Yangshuo Beer Fish Headquarters",
+      "type": "local",
+      "cuisine": "Beer fish",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "West Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7815,
+        "lng": 110.4975
+      },
+      "hours": "10:00-23:00",
+      "description": "The original and most famous beer fish restaurant in Yangshuo, located on West Street.",
+      "dishHighlights": [
+        "Beer fish (漓江啤酒鱼)",
+        "Spicy crayfish",
+        "Yangshuo specialties"
+      ],
+      "tags": [
+        "local",
+        "yangshuo-specialty",
+        "famous",
+        "west-street"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-rice-noodle-king",
+      "name": "桂林米粉大王",
+      "nameEn": "Guilin Rice Noodle King",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "8 Zhongshan Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2785,
+        "lng": 110.2935
+      },
+      "hours": "06:30-20:00",
+      "description": "Popular rice noodle shop known for its authentic taste and generous portions.",
+      "dishHighlights": [
+        "Guilin rice noodles",
+        "Dry noodles with sauce",
+        "Hot and sour noodles"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "popular",
+        "breakfast"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nashan-noodles",
+      "name": "那山米粉",
+      "nameEn": "Nashan Rice Noodles",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 20,
+      "rating": 4.4,
+      "address": "Diecai Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2875,
+        "lng": 110.2855
+      },
+      "hours": "07:00-14:00",
+      "description": "Local favorite hidden in a small alley, known for authentic flavors and traditional recipes.",
+      "dishHighlights": [
+        "Original rice noodles",
+        "Pork hock broth",
+        "Peanuts and pickled vegetables"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "hidden-gem",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lijiang-fish-pub",
+      "name": "漓江鱼馆",
+      "nameEn": "Li River Fish Restaurant",
+      "type": "local",
+      "cuisine": "Freshwater fish",
+      "avgPrice": 120,
+      "rating": 4.5,
+      "address": "Zhujiang Port, Guilin",
+      "coordinates": {
+        "lat": 25.1835,
+        "lng": 110.4275
+      },
+      "hours": "10:00-21:00",
+      "description": "Specializing in fresh fish dishes caught from the Li River, with stunning river views.",
+      "dishHighlights": [
+        "Steamed Li River fish",
+        "Fish head hot pot",
+        "River shrimp"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "river-view",
+        "fresh"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "mountain-taro-village",
+      "name": "山芋香农家乐",
+      "nameEn": "Mountain Taro Farm House",
+      "type": "local",
+      "cuisine": "Farm to table",
+      "avgPrice": 60,
+      "rating": 4.3,
+      "address": "Longji Rice Terraces area",
+      "coordinates": {
+        "lat": 25.7835,
+        "lng": 110.1135
+      },
+      "hours": "08:00-20:00",
+      "description": "Rustic restaurant in Longji area serving local Zhuang and Yao cuisine with terrace views.",
+      "dishHighlights": [
+        "Bamboo rice",
+        "Smoked pork",
+        "Local vegetables",
+        "Rice wine"
+      ],
+      "tags": [
+        "local",
+        "farm-to-table",
+        "longji",
+        "zhuang-cuisine"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yao-village-dining",
+      "name": "瑶寨农家菜",
+      "nameEn": "Yao Village Cuisine",
+      "type": "local",
+      "cuisine": "Yao ethnic cuisine",
+      "avgPrice": 50,
+      "rating": 4.4,
+      "address": "Jinkeng Yao Village, Longji",
+      "coordinates": {
+        "lat": 25.7935,
+        "lng": 110.1235
+      },
+      "hours": "07:00-21:00",
+      "description": "Traditional Yao cuisine in a village setting, known for spicy dishes and fermented flavors.",
+      "dishHighlights": [
+        "Spicy tofu",
+        "Yao bacon",
+        "Bamboo tube rice",
+        "Mushroom stir-fry"
+      ],
+      "tags": [
+        "local",
+        "yao-ethnic",
+        "spicy",
+        "village"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yangshuo-moon-cafe",
+      "name": "月亮咖啡",
+      "nameEn": "Moon Cafe",
+      "type": "cafe",
+      "cuisine": "Western/Chinese fusion",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "West Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7795,
+        "lng": 110.4955
+      },
+      "hours": "08:00-23:00",
+      "description": "Popular cafe with rooftop seating offering good coffee and Western breakfast options.",
+      "dishHighlights": [
+        "Cappuccino",
+        "Western breakfast",
+        "Fresh juices",
+        "Pancakes"
+      ],
+      "tags": [
+        "cafe",
+        "yangshuo",
+        "rooftop",
+        "western"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "silk-road-noodle",
+      "name": "丝路米粉",
+      "nameEn": "Silk Road Rice Noodles",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 22,
+      "rating": 4.3,
+      "address": "Shanghai Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2755,
+        "lng": 110.3015
+      },
+      "hours": "06:00-15:00",
+      "description": "Local breakfast spot famous for its light broth and handmade rice noodles.",
+      "dishHighlights": [
+        "Clear soup rice noodles",
+        "Beef slices",
+        "Green onions oil"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "breakfast",
+        "early-morning"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "chinese-osmanthus-dumpling",
+      "name": "桂花汤圆店",
+      "nameEn": "Osmanthus Dumpling Shop",
+      "type": "local",
+      "cuisine": "Traditional sweets",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "Zhengyang Pedestrian Street, Guilin",
+      "coordinates": {
+        "lat": 25.2805,
+        "lng": 110.2905
+      },
+      "hours": "09:00-21:00",
+      "description": "Traditional dessert shop specializing in osmanthus-flavored dumplings and sweet soups.",
+      "dishHighlights": [
+        "Osmanthus dumplings",
+        "Sweet osmanthus soup",
+        "Rice ball desserts"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "sweet"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "li-river-local-food",
+      "name": "漓江人家",
+      "nameEn": "Li River Family",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Near Diecai Bridge, Guilin",
+      "coordinates": {
+        "lat": 25.2865,
+        "lng": 110.2885
+      },
+      "hours": "10:30-21:30",
+      "description": "Cozy family restaurant with riverside terrace serving homestyle Guangxi dishes.",
+      "dishHighlights": [
+        "Home-style beer fish",
+        "Steamed eggs",
+        "Stir-fried river shrimp"
+      ],
+      "tags": [
+        "local",
+        "family-style",
+        "river-view",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-20",
+      "name": "椿记烧鹅形象店",
+      "nameEn": "Chun Ji Roast Goose Image Store",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "2 Diecai Rd, Diecai District, Guilin",
+      "coordinates": {
+        "lat": 25.2885,
+        "lng": 110.2865
+      },
+      "hours": "11:00-14:30, 17:00-21:30",
+      "description": "Famous for roast goose and excellent service. Popular with locals for celebrations.",
+      "dishHighlights": [
+        "Roast goose (招牌)",
+        "Beer fish",
+        "Steamed chicken"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "celebration",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-21",
+      "name": "阿元鱼丸",
+      "nameEn": "A Yuan Fish Balls",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "68 Zhujiang Rd, Guilin",
+      "coordinates": {
+        "lat": 25.1865,
+        "lng": 110.4245
+      },
+      "hours": "10:00-21:00",
+      "description": "Specializing in fish ball dishes made from fresh river fish.",
+      "dishHighlights": [
+        "Fish ball soup",
+        "Fried fish balls",
+        "Spicy fish balls"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "specialty",
+        "homestyle"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-22",
+      "name": "桂林肥叔",
+      "nameEn": "Guilin Fei Shu",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 25,
+      "rating": 4.4,
+      "address": "Diecai District, near Diecai Mountain",
+      "coordinates": {
+        "lat": 25.2885,
+        "lng": 110.2855
+      },
+      "hours": "06:00-15:00",
+      "description": "Local favorite breakfast spot known for big portions and rich broth.",
+      "dishHighlights": [
+        "Big bowl rice noodles",
+        "Pork hock broth",
+        "Various toppings"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "breakfast",
+        "generous-portions"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-23",
+      "name": "阳朔大师傅啤酒鱼",
+      "nameEn": "Yangshuo Master Beer Fish",
+      "type": "local",
+      "cuisine": "Beer fish",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "Chengzhong Rd, Yangshuo",
+      "coordinates": {
+        "lat": 24.7795,
+        "lng": 110.4945
+      },
+      "hours": "10:00-23:00",
+      "description": "Renowned beer fish restaurant with authentic Yangshuo style.",
+      "dishHighlights": [
+        "Beer fish (招牌)",
+        "Crayfish",
+        "Local specialties"
+      ],
+      "tags": [
+        "local",
+        "yangshuo-specialty",
+        "famous",
+        "river-fish"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-24",
+      "name": "漓江又一轩",
+      "nameEn": "Li River Yi You Xuan",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Nandajie, Guilin",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2915
+      },
+      "hours": "10:30-21:00",
+      "description": "Riverside restaurant with elegant environment and quality local dishes.",
+      "dishHighlights": [
+        "Steamed Li River fish",
+        "Guilin specialties",
+        "River view dining"
+      ],
+      "tags": [
+        "local",
+        "guangxi-cuisine",
+        "river-view",
+        "elegant"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-25",
+      "name": "象鼻山下农家乐",
+      "nameEn": "Elephant Hill Farm House",
+      "type": "local",
+      "cuisine": "Farm to table",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "Near Elephant Trunk Hill, Guilin",
+      "coordinates": {
+        "lat": 25.2615,
+        "lng": 110.2975
+      },
+      "hours": "09:00-21:00",
+      "description": "Rustic farm-style restaurant with garden seating and fresh local ingredients.",
+      "dishHighlights": [
+        "Farm vegetables",
+        "Grilled fish",
+        "Rice wine"
+      ],
+      "tags": [
+        "local",
+        "farm-to-table",
+        "rural",
+        "cozy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-26",
+      "name": "龙脊壮家风味",
+      "nameEn": "Longji Zhuang Flavor",
+      "type": "local",
+      "cuisine": "Zhuang ethnic cuisine",
+      "avgPrice": 70,
+      "rating": 4.6,
+      "address": "Ping'an Village, Longji",
+      "coordinates": {
+        "lat": 25.7535,
+        "lng": 110.0935
+      },
+      "hours": "07:00-21:00",
+      "description": "Authentic Zhuang cuisine in the rice terraces area with terrace views.",
+      "dishHighlights": [
+        "Bamboo rice",
+        "Zhuang bacon",
+        "Home-style dishes"
+      ],
+      "tags": [
+        "local",
+        "zhuang-ethnic",
+        "longji",
+        "authentic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-27",
+      "name": "阳朔谢大姐啤酒鱼",
+      "nameEn": "Yangshuo Sister Xie Beer Fish",
+      "type": "local",
+      "cuisine": "Beer fish",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "West Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7815,
+        "lng": 110.4965
+      },
+      "hours": "09:00-23:00",
+      "description": "Popular female-owned restaurant famous for beer fish, featured on food shows.",
+      "dishHighlights": [
+        "Beer fish",
+        "Spicy crawfish",
+        "Local snacks"
+      ],
+      "tags": [
+        "local",
+        "yangshuo-specialty",
+        "famous",
+        "recommended"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-28",
+      "name": "桂林仔啤酒鱼",
+      "nameEn": "Guilin Zi Beer Fish",
+      "type": "local",
+      "cuisine": "Beer fish",
+      "avgPrice": 75,
+      "rating": 4.5,
+      "address": "Near West Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7805,
+        "lng": 110.4955
+      },
+      "hours": "10:00-22:00",
+      "description": "Popular local chain with consistent quality and reasonable prices.",
+      "dishHighlights": [
+        "Beer fish",
+        "Grilled fish",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "yangshuo-specialty",
+        "chain",
+        "reliable"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-29",
+      "name": "渔翁渔火",
+      "nameEn": "Fisherman Fire",
+      "type": "local",
+      "cuisine": "Guangxi",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Yangdi Scenic Area, 35km from Guilin",
+      "coordinates": {
+        "lat": 25.1235,
+        "lng": 110.3865
+      },
+      "hours": "17:00-21:00",
+      "description": "Riverside restaurant offering dinner with cormorant fishing show.",
+      "dishHighlights": [
+        "River fish specialties",
+        "Cormorant show package",
+        "Local cuisine"
+      ],
+      "tags": [
+        "local",
+        "river-view",
+        "cormorant-fishing",
+        "experience"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-30",
+      "name": "马家米粉",
+      "nameEn": "Ma Jia Rice Noodles",
+      "type": "local",
+      "cuisine": "Rice noodles",
+      "avgPrice": 20,
+      "rating": 4.5,
+      "address": "9 Zhongshan Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2795,
+        "lng": 110.2935
+      },
+      "hours": "07:00-15:00",
+      "description": "Popular breakfast spot with authentic Guilin rice noodles and local crowd.",
+      "dishHighlights": [
+        "Guilin rice noodles",
+        "Original recipe",
+        "Fast service"
+      ],
+      "tags": [
+        "local",
+        "rice-noodles",
+        "breakfast",
+        "authentic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-31",
+      "name": "老桂林油茶",
+      "nameEn": "老桂林油茶 (油茶)",
+      "type": "local",
+      "cuisine": "油茶",
+      "avgPrice": 120,
+      "rating": 4.5,
+      "address": "桂林市市中心区美食街195号",
+      "coordinates": {
+        "lat": 25.2933,
+        "lng": 110.249
+      },
+      "phone": "+86 010 89729499",
+      "hours": "09:00-21:00",
+      "description": "桂林本地人推荐的油茶店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "田螺酿",
+        "荔浦扣肉",
+        "桂林米粉"
+      ],
+      "tags": [
+        "排队王",
+        "隐藏美食",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-33",
+      "name": "老街田螺酿",
+      "nameEn": "老街田螺酿 (田螺酿)",
+      "type": "cafe",
+      "cuisine": "田螺酿",
+      "avgPrice": 46,
+      "rating": 4.1,
+      "address": "桂林市老城区美食街146号",
+      "coordinates": {
+        "lat": 25.2494,
+        "lng": 110.2903
+      },
+      "phone": "+86 010 31208904",
+      "hours": "10:00-22:00",
+      "description": "桂林本地人推荐的田螺酿店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "荔浦扣肉",
+        "桂林米粉",
+        "油茶"
+      ],
+      "tags": [
+        "下午茶",
+        "文艺",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-35",
+      "name": "阿婆啤酒鱼",
+      "nameEn": "阿婆啤酒鱼 (啤酒鱼)",
+      "type": "local",
+      "cuisine": "啤酒鱼",
+      "avgPrice": 105,
+      "rating": 4.2,
+      "address": "桂林市新城区美食街126号",
+      "coordinates": {
+        "lat": 25.2264,
+        "lng": 110.2997
+      },
+      "phone": "+86 010 35921561",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "桂林本地人推荐的啤酒鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "油茶",
+        "田螺酿",
+        "啤酒鱼"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-37",
+      "name": "巷子桂林米粉",
+      "nameEn": "巷子桂林米粉 (桂林米粉)",
+      "type": "local",
+      "cuisine": "桂林米粉",
+      "avgPrice": 105,
+      "rating": 4.5,
+      "address": "桂林市市中心区美食街54号",
+      "coordinates": {
+        "lat": 25.2729,
+        "lng": 110.3187
+      },
+      "phone": "+86 010 34829399",
+      "hours": "06:00-14:00",
+      "description": "桂林本地人推荐的桂林米粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "油茶",
+        "啤酒鱼",
+        "桂林米粉"
+      ],
+      "tags": [
+        "社区老店",
+        "隐藏美食",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/9224926/pexels-photo-9224926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-39",
+      "name": "地道油茶",
+      "nameEn": "地道油茶 (油茶)",
+      "type": "local",
+      "cuisine": "油茶",
+      "avgPrice": 82,
+      "rating": 4.4,
+      "address": "桂林市老城区美食街90号",
+      "coordinates": {
+        "lat": 25.2732,
+        "lng": 110.2528
+      },
+      "phone": "+86 010 98786577",
+      "hours": "10:00-22:00",
+      "description": "桂林本地人推荐的油茶店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "油茶",
+        "田螺酿",
+        "荔浦扣肉"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-41",
+      "name": "桂林味啤酒鱼",
+      "nameEn": "桂林味啤酒鱼 (啤酒鱼)",
+      "type": "local",
+      "cuisine": "啤酒鱼",
+      "avgPrice": 130,
+      "rating": 4.8,
+      "address": "桂林市市中心区美食街54号",
+      "coordinates": {
+        "lat": 25.3015,
+        "lng": 110.2902
+      },
+      "phone": "+86 010 87283159",
+      "hours": "06:00-14:00",
+      "description": "桂林本地人推荐的啤酒鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒鱼",
+        "油茶",
+        "荔浦扣肉"
+      ],
+      "tags": [
+        "社区老店",
+        "家常菜",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-43",
+      "name": "老桂林桂林米粉",
+      "nameEn": "老桂林桂林米粉 (桂林米粉)",
+      "type": "cafe",
+      "cuisine": "桂林米粉",
+      "avgPrice": 30,
+      "rating": 4.1,
+      "address": "桂林市市中心区美食街107号",
+      "coordinates": {
+        "lat": 25.2448,
+        "lng": 110.326
+      },
+      "phone": "+86 010 63059458",
+      "hours": "09:00-21:00",
+      "description": "桂林本地人推荐的桂林米粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "荔浦扣肉",
+        "啤酒鱼",
+        "田螺酿"
+      ],
+      "tags": [
+        "安静",
+        "文艺",
+        "下午茶"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/30136627/pexels-photo-30136627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-45",
+      "name": "地道荔浦扣肉",
+      "nameEn": "地道荔浦扣肉 (荔浦扣肉)",
+      "type": "street",
+      "cuisine": "荔浦扣肉",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "桂林市新城区美食街141号",
+      "coordinates": {
+        "lat": 25.2773,
+        "lng": 110.2841
+      },
+      "phone": "+86 010 20842478",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "桂林本地人推荐的荔浦扣肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒鱼",
+        "荔浦扣肉",
+        "桂林米粉"
+      ],
+      "tags": [
+        "深夜美食",
+        "路边摊",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-47",
+      "name": "地道桂林米粉",
+      "nameEn": "地道桂林米粉 (桂林米粉)",
+      "type": "local",
+      "cuisine": "桂林米粉",
+      "avgPrice": 99,
+      "rating": 4.3,
+      "address": "桂林市老城区美食街10号",
+      "coordinates": {
+        "lat": 25.2631,
+        "lng": 110.2965
+      },
+      "phone": "+86 010 85482898",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "桂林本地人推荐的桂林米粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "田螺酿",
+        "啤酒鱼",
+        "油茶"
+      ],
+      "tags": [
+        "家常菜",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/14162746/pexels-photo-14162746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-49",
+      "name": "巷子荔浦扣肉",
+      "nameEn": "巷子荔浦扣肉 (荔浦扣肉)",
+      "type": "cafe",
+      "cuisine": "荔浦扣肉",
+      "avgPrice": 37,
+      "rating": 4.2,
+      "address": "桂林市市中心区美食街160号",
+      "coordinates": {
+        "lat": 25.3021,
+        "lng": 110.2995
+      },
+      "phone": "+86 010 21198215",
+      "hours": "06:00-14:00",
+      "description": "桂林本地人推荐的荔浦扣肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "荔浦扣肉",
+        "田螺酿",
+        "油茶"
+      ],
+      "tags": [
+        "安静",
+        "文艺",
+        "下午茶"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-51",
+      "name": "阿婆田螺酿",
+      "nameEn": "阿婆田螺酿 (田螺酿)",
+      "type": "local",
+      "cuisine": "田螺酿",
+      "avgPrice": 139,
+      "rating": 4.7,
+      "address": "桂林市老城区美食街197号",
+      "coordinates": {
+        "lat": 25.2376,
+        "lng": 110.2516
+      },
+      "phone": "+86 010 75496607",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "桂林本地人推荐的田螺酿店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "油茶",
+        "啤酒鱼",
+        "桂林米粉"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-53",
+      "name": "老桂林桂林米粉",
+      "nameEn": "老桂林桂林米粉 (桂林米粉)",
+      "type": "local",
+      "cuisine": "桂林米粉",
+      "avgPrice": 84,
+      "rating": 4.1,
+      "address": "桂林市老城区美食街180号",
+      "coordinates": {
+        "lat": 25.2535,
+        "lng": 110.272
+      },
+      "phone": "+86 010 41395267",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "桂林本地人推荐的桂林米粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "油茶",
+        "荔浦扣肉",
+        "田螺酿"
+      ],
+      "tags": [
+        "老字号",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/34888274/pexels-photo-34888274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-55",
+      "name": "巷子桂林米粉",
+      "nameEn": "巷子桂林米粉 (桂林米粉)",
+      "type": "local",
+      "cuisine": "桂林米粉",
+      "avgPrice": 90,
+      "rating": 4.3,
+      "address": "桂林市老城区美食街190号",
+      "coordinates": {
+        "lat": 25.2861,
+        "lng": 110.29
+      },
+      "phone": "+86 010 15721821",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "桂林本地人推荐的桂林米粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "荔浦扣肉",
+        "油茶",
+        "桂林米粉"
+      ],
+      "tags": [
+        "性价比高",
+        "社区老店",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/8257871/pexels-photo-8257871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-57",
+      "name": "正宗荔浦扣肉",
+      "nameEn": "正宗荔浦扣肉 (荔浦扣肉)",
+      "type": "local",
+      "cuisine": "荔浦扣肉",
+      "avgPrice": 52,
+      "rating": 4.3,
+      "address": "桂林市老城区美食街187号",
+      "coordinates": {
+        "lat": 25.2834,
+        "lng": 110.3021
+      },
+      "phone": "+86 010 10941626",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "桂林本地人推荐的荔浦扣肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "荔浦扣肉",
+        "啤酒鱼",
+        "桂林米粉"
+      ],
+      "tags": [
+        "性价比高",
+        "隐藏美食",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-59",
+      "name": "老街田螺酿",
+      "nameEn": "老街田螺酿 (田螺酿)",
+      "type": "local",
+      "cuisine": "田螺酿",
+      "avgPrice": 71,
+      "rating": 4.6,
+      "address": "桂林市新城区美食街192号",
+      "coordinates": {
+        "lat": 25.3149,
+        "lng": 110.2746
+      },
+      "phone": "+86 010 34699113",
+      "hours": "10:00-22:00",
+      "description": "桂林本地人推荐的田螺酿店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "田螺酿",
+        "桂林米粉",
+        "油茶"
+      ],
+      "tags": [
+        "隐藏美食",
+        "排队王",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-61",
+      "name": "老字号田螺酿",
+      "nameEn": "老字号田螺酿 (田螺酿)",
+      "type": "local",
+      "cuisine": "田螺酿",
+      "avgPrice": 106,
+      "rating": 4.4,
+      "address": "桂林市新城区美食街2号",
+      "coordinates": {
+        "lat": 25.2333,
+        "lng": 110.3093
+      },
+      "phone": "+86 010 58959177",
+      "hours": "09:00-21:00",
+      "description": "桂林本地人推荐的田螺酿店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "田螺酿",
+        "桂林米粉",
+        "荔浦扣肉"
+      ],
+      "tags": [
+        "社区老店",
+        "性价比高",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-63",
+      "name": "阿婆荔浦扣肉",
+      "nameEn": "阿婆荔浦扣肉 (荔浦扣肉)",
+      "type": "street",
+      "cuisine": "荔浦扣肉",
+      "avgPrice": 56,
+      "rating": 4.4,
+      "address": "桂林市新城区美食街169号",
+      "coordinates": {
+        "lat": 25.2286,
+        "lng": 110.2847
+      },
+      "phone": "+86 010 21222466",
+      "hours": "06:00-14:00",
+      "description": "桂林本地人推荐的荔浦扣肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒鱼",
+        "油茶",
+        "田螺酿"
+      ],
+      "tags": [
+        "路边摊",
+        "网红打卡",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-65",
+      "name": "阿婆田螺酿",
+      "nameEn": "阿婆田螺酿 (田螺酿)",
+      "type": "street",
+      "cuisine": "田螺酿",
+      "avgPrice": 17,
+      "rating": 4.1,
+      "address": "桂林市市中心区美食街92号",
+      "coordinates": {
+        "lat": 25.3087,
+        "lng": 110.3279
+      },
+      "phone": "+86 010 67328270",
+      "hours": "10:00-22:00",
+      "description": "桂林本地人推荐的田螺酿店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "油茶",
+        "田螺酿",
+        "啤酒鱼"
+      ],
+      "tags": [
+        "路边摊",
+        "深夜美食",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-67",
+      "name": "阿婆田螺酿",
+      "nameEn": "阿婆田螺酿 (田螺酿)",
+      "type": "local",
+      "cuisine": "田螺酿",
+      "avgPrice": 45,
+      "rating": 4.1,
+      "address": "桂林市市中心区美食街148号",
+      "coordinates": {
+        "lat": 25.3062,
+        "lng": 110.2829
+      },
+      "phone": "+86 010 89138173",
+      "hours": "10:00-22:00",
+      "description": "桂林本地人推荐的田螺酿店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "油茶",
+        "荔浦扣肉",
+        "田螺酿"
+      ],
+      "tags": [
+        "本地人爱去",
+        "社区老店",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guilin-69",
+      "name": "老街田螺酿",
+      "nameEn": "老街田螺酿 (田螺酿)",
+      "type": "local",
+      "cuisine": "田螺酿",
+      "avgPrice": 101,
+      "rating": 4.1,
+      "address": "桂林市市中心区美食街113号",
+      "coordinates": {
+        "lat": 25.2624,
+        "lng": 110.2878
+      },
+      "phone": "+86 010 32397031",
+      "hours": "06:00-14:00",
+      "description": "桂林本地人推荐的田螺酿店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "田螺酿",
+        "桂林米粉",
+        "荔浦扣肉"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major domestic airports, growing international routes",
+        "to": "Guilin Liangjiang International Airport (KWL)",
+        "duration": "Varies by origin",
+        "price": "600-3000¥",
+        "frequency": "Multiple daily flights",
+        "tips": "Airport 28km from city center. Airport bus (hourly, 20¥) to downtown. Taxis available."
+      },
+      {
+        "type": "train",
+        "from": "Guangzhou (2.5h), Shenzhen (3h), Beijing (10h)",
+        "to": "Guilin Railway Station / Guilin North Station",
+        "duration": "2.5-10 hours",
+        "price": "200-600¥",
+        "frequency": "Several daily departures",
+        "tips": "Guilin North for high-speed trains to/from Guangzhou, Shenzhen. Old station for trains to/from Beijing."
+      }
+    ],
+    "local": {
+      "metro": [
+        "Currently 2 lines being expanded",
+        "English signage limited",
+        "Bus network extensive"
+      ],
+      "bus": [
+        "Good bus connections between scenic areas",
+        "Tourist bus to Yangshuo and Longji",
+        "Local buses numbered"
+      ],
+      "taxi": [
+        "Starting fare: 7¥",
+        "Didi works but less common than cities",
+        "Negotiate price for tourist areas"
+      ],
+      "bike": [
+        "E-bikes widely available for rent",
+        "30-50¥ per day in Yangshuo",
+        "Best way to explore karst scenery",
+        "Helmet recommended but not always provided"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "桂林香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Guilin",
+      "budget": "luxury",
+      "priceRange": "¥800-1800/night",
+      "address": "1 Shanmeng Rd, Diecai District",
+      "coordinates": {
+        "lat": 25.2915,
+        "lng": 110.2895
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Riverside location",
+        "Great views of karst",
+        "Spacious rooms"
+      ],
+      "bookingTips": "Request river-view rooms for best scenery."
+    },
+    {
+      "name": "桂林Club Med地中海俱乐部",
+      "nameEn": "Club Med Guilin",
+      "budget": "luxury",
+      "priceRange": "¥1500-3000/night",
+      "address": "Lijiang National Park, Yanshan Town",
+      "coordinates": {
+        "lat": 25.1835,
+        "lng": 110.3535
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Karst surroundings",
+        "All-inclusive resort",
+        "Activities for all ages"
+      ],
+      "bookingTips": "Good for families. Book directly for best rates."
+    },
+    {
+      "name": "桂林喜来登饭店",
+      "nameEn": "Sheraton Guilin Hotel",
+      "budget": "mid",
+      "priceRange": "¥500-1000/night",
+      "address": "1 Binjiang Rd, Xiufeng District",
+      "coordinates": {
+        "lat": 25.2785,
+        "lng": 110.2875
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location on river",
+        "Walking distance to attractions",
+        "Good breakfast"
+      ],
+      "bookingTips": "Weekend rates often lower."
+    },
+    {
+      "name": "阳朔悦榕庄",
+      "nameEn": "Banyan Tree Yangshuo",
+      "budget": "luxury",
+      "priceRange": "¥2000-4500/night",
+      "address": "Yi Lu, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7635,
+        "lng": 110.4915
+      },
+      "rating": 4.9,
+      "highlights": [
+        "Stunning karst views",
+        "Luxury spa",
+        "Private pool villas"
+      ],
+      "bookingTips": "Best luxury stay in the area. Book spa in advance."
+    },
+    {
+      "name": "阳朔花梦居客栈",
+      "nameEn": "Flowerdream Inn",
+      "budget": "budget",
+      "priceRange": "¥200-500/night",
+      "address": "Xi Street, Yangshuo",
+      "coordinates": {
+        "lat": 24.7815,
+        "lng": 110.4955
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central Xi Street location",
+        "Rooftop terrace",
+        "Friendly owners"
+      ],
+      "bookingTips": "Book ahead during peak season. Great for budget travelers."
+    },
+    {
+      "name": "桂林漓江大瀑布饭店",
+      "nameEn": "Lijiang Waterfall Hotel",
+      "budget": "luxury",
+      "priceRange": "¥800-1800/night",
+      "address": "1 South Ring Rd, Xiufeng District",
+      "coordinates": {
+        "lat": 25.2785,
+        "lng": 110.2875
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Famous waterfall show",
+        "Central location",
+        "Historic building"
+      ],
+      "bookingTips": "Waterfall show at 20:00 daily. Book river-view room."
+    },
+    {
+      "name": "桂林榕湖饭店",
+      "nameEn": "Guilin Banyan Lake Hotel",
+      "budget": "mid",
+      "priceRange": "¥500-1000/night",
+      "address": "38-1 Ronghu Rd, Xiufeng District",
+      "coordinates": {
+        "lat": 25.2815,
+        "lng": 110.2935
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Lake view",
+        "Classic Chinese style",
+        "Central location"
+      ],
+      "bookingTips": "Best location near city center attractions."
+    },
+    {
+      "name": "阳朔碧莲江景大酒店",
+      "nameEn": "Yangshuo Bilian River View Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-900/night",
+      "address": "1 Chengzhong Rd, Yangshuo",
+      "coordinates": {
+        "lat": 24.7805,
+        "lng": 110.4935
+      },
+      "rating": 4.5,
+      "highlights": [
+        "River view",
+        "Near West Street",
+        "Good facilities"
+      ],
+      "bookingTips": "Best value in Yangshuo with river views."
+    },
+    {
+      "name": "桂林观光酒店",
+      "nameEn": "Guilin Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-800/night",
+      "address": "1 Yiren Rd, Xiufeng District",
+      "coordinates": {
+        "lat": 25.2815,
+        "lng": 110.2965
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Jingjiang Prince",
+        "Comfortable rooms",
+        "Good breakfast"
+      ],
+      "bookingTips": "Good for first-time visitors."
+    },
+    {
+      "name": "桂林环球大酒店",
+      "nameEn": "Guilin Universal Hotel",
+      "budget": "mid",
+      "priceRange": "¥450-900/night",
+      "address": "8 Shanghai Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2755,
+        "lng": 110.3015
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near railway station",
+        "Modern facilities",
+        "Good service"
+      ],
+      "bookingTips": "Best for train travelers."
+    },
+    {
+      "name": "阳朔河畔度假酒店",
+      "nameEn": "Yangshuo Riverside Resort",
+      "budget": "luxury",
+      "priceRange": "¥1200-2800/night",
+      "address": "108 Chengzhong Rd, Yangshuo",
+      "coordinates": {
+        "lat": 24.7705,
+        "lng": 110.4905
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Riverside location",
+        "Infinity pool",
+        "Quiet environment"
+      ],
+      "bookingTips": "Best for romantic getaways."
+    },
+    {
+      "name": "桂林象山酒店",
+      "nameEn": "Elephant Hill Hotel",
+      "budget": "budget",
+      "priceRange": "¥200-500/night",
+      "address": "28 Shanxian Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2625,
+        "lng": 110.2965
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Elephant Hill",
+        "Affordable",
+        "Basic amenities"
+      ],
+      "bookingTips": "Best budget near main attraction."
+    },
+    {
+      "name": "阳朔芒果旅社",
+      "nameEn": "Yangshuo Mango Hostel",
+      "budget": "budget",
+      "priceRange": "¥150-400/night",
+      "address": "27 Xianjie, Yangshuo",
+      "coordinates": {
+        "lat": 24.7795,
+        "lng": 110.4945
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location",
+        "Rooftop bar",
+        "Traveler friendly"
+      ],
+      "bookingTips": "Best for young travelers."
+    },
+    {
+      "name": "龙脊梯田民宿",
+      "nameEn": "Longji Terrace Homestay",
+      "budget": "budget",
+      "priceRange": "¥200-500/night",
+      "address": "Ping'an Village, Longji",
+      "coordinates": {
+        "lat": 25.7535,
+        "lng": 110.0935
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Terrace views",
+        "Authentic Zhuang experience",
+        "Local family run"
+      ],
+      "bookingTips": "Book early for sunrise views. Shared bathroom common."
+    },
+    {
+      "name": "桂林丹桂酒店",
+      "nameEn": "Guilin Osmanthus Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "86 Zhongshan Rd, Guilin",
+      "coordinates": {
+        "lat": 25.2805,
+        "lng": 110.2915
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near East-West Alley",
+        "Clean rooms",
+        "Good location"
+      ],
+      "bookingTips": "Good value near pedestrian zone."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Standard payment, accepted at most modern venues",
+      "howToUse": [
+        "Download before arrival",
+        "Bind international card",
+        "QR code payment"
+      ],
+      "tips": [
+        "Guilin less developed - some places only accept cash",
+        "Rural areas (Longji, Yangshuo) mostly cash",
+        "Download both Alipay and WeChat as backup"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Important in Guilin",
+      "howToUse": [
+        "WeChat app required",
+        "Link card"
+      ],
+      "tips": [
+        "Didi requires WeChat",
+        "Both apps useful"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Essential in Guilin - many local restaurants and vendors only accept cash",
+      "howToUse": [
+        "Keep 500-1000¥ cash for rural areas",
+        "ATMs available but rural area access limited",
+        "Bamboo raft operators usually cash only"
+      ],
+      "tips": [
+        "Longji Rice Terraces area mostly cash",
+        "Yangshuo market vendors cash only",
+        "Exchange before heading to rural areas"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "ethnic",
+      "title": "Minority Cultures",
+      "content": "Guilin area home to Zhuang, Yao, and other minority groups. Longji Rice Terraces are farmed by Zhuang and Yao people. Respect local customs when visiting villages.",
+      "importance": "medium"
+    },
+    {
+      "category": "scenery",
+      "title": "Weather and Photography",
+      "content": "Misty weather creates the classic Guilin scenery - don't be disappointed by 'bad' weather. Early morning and evening light most magical. Rain creates mist and reflections.",
+      "importance": "medium"
+    },
+    {
+      "category": "cycling",
+      "title": "Yangshuo Cycling",
+      "content": "Cycling is the best way to explore Yangshuo's countryside. Rent e-bikes (50¥/day) and explore back roads. Follow rice paddies and karst peaks. Return before dark.",
+      "importance": "medium"
+    },
+    {
+      "category": "yangshuo",
+      "title": "Yangshuo Escape",
+      "content": "The Li River cruise to Yangshuo is magical but crowded. Consider staying overnight in Yangshuo and exploring by bike. The Western Street comes alive at night with hundreds of food stalls. Travelers from around the world gather here.",
+      "importance": "high"
+    },
+    {
+      "category": "li-river-culture",
+      "title": "Li River History",
+      "content": "The Li River has been a source of artistic inspiration for over 1000 years. Many famous Chinese paintings and poems depict its karst scenery. The river was once a major transportation route connecting Guangxi with the outside world.",
+      "importance": "medium"
+    },
+    {
+      "category": "ethnic-zhuang",
+      "title": "Zhuang Culture",
+      "content": "The Zhuang people are China's largest minority ethnic group. Their traditional Brocade weaving and folk songs (Ge Xiao) are famous throughout China. The Zhuang New Year (Spring Festival) is celebrated with unique customs including water splashing.",
+      "importance": "medium"
+    },
+    {
+      "category": "ethnic-yao",
+      "title": "Yao People",
+      "content": "The Yao people are known for their Red Detachment of Women costume and traditional Panwang Festival. Women traditionally wear their hair long - some Yao women never cut their hair and wrap it in elaborate coils. Longji villages are authentic Yao communities.",
+      "importance": "medium"
+    },
+    {
+      "category": "karst-geology",
+      "title": "Karst Landscape Formation",
+      "content": "Guilin's karst landscape formed over millions of years as rainwater dissolved limestone bedrock. The same geological process created the caves, underground rivers, and natural bridges. Reed Flute Cave stalactites are estimated to be 450,000 years old.",
+      "importance": "low"
+    },
+    {
+      "category": "osmanthus-city",
+      "title": "City Name Origin",
+      "content": "Guilin means 'Forest of Osmanthus' in Chinese. The city is famous for its osmanthus trees which bloom in autumn, filling the air with sweet fragrance. The osmanthus flower is also used in local cuisine - cakes, tea, and wine.",
+      "importance": "low"
+    },
+    {
+      "category": "cormorant-fishing",
+      "title": "Traditional Cormorant Fishing",
+      "content": "The ancient technique of fishing with trained cormorants is still practiced on the Li River. Fishermen use bamboo rafts and allow cormorants to dive for fish. A ring around the bird's neck prevents them from swallowing large fish.",
+      "importance": "medium"
+    },
+    {
+      "category": "rice-terraces-farming",
+      "title": "Terrace Farming",
+      "content": "The Longji Rice Terraces were carved over 600 years by hand, following the contour lines of the mountains. Local farmers still plant rice using traditional methods. Water flows down from the mountains, creating a natural irrigation system.",
+      "importance": "medium"
+    },
+    {
+      "category": "folk-songs",
+      "title": "Liu Sanjie Legend",
+      "content": "Liu Sanjie (Third Sister Liu) is a legendary Zhuang folk singer whose songs have been passed down for centuries. The famous 'Impression Liu Sanjie' outdoor show by Zhang Yimou is set on the Li River where the legend takes place.",
+      "importance": "medium"
+    },
+    {
+      "category": "guilin-cuisine",
+      "title": "Guilin Cuisine",
+      "content": "Guilin cuisine is known for its use of chili peppers, sour flavors, and fresh ingredients. Signature dishes include Guilin rice noodles, beer fish, and various pork preparations. The city is also famous for osmanthus-flavored sweets.",
+      "importance": "high"
+    },
+    {
+      "category": "moon-hill",
+      "title": "Moon Hill Mystery",
+      "content": "Moon Hill is a natural arch formed by karst erosion, creating a perfect moon shape when viewed from certain angles. The arch is 410m above ground level. Local legend says it was formed by the goddess Chang'e visiting the area.",
+      "importance": "low"
+    },
+    {
+      "category": "bamboo-raft-tradition",
+      "title": "Bamboo Raft History",
+      "content": "Bamboo rafts have been used on the Li River for over 1000 years as the primary transportation method. Today, they serve mainly tourism but the design remains traditional. A typical raft uses 5-7 bamboo poles lashed together.",
+      "importance": "medium"
+    },
+    {
+      "category": "cave-exploration",
+      "title": "Cave Systems",
+      "content": "Guilin has one of the largest concentrations of karst caves in China, with over 1000 explored. Reed Flute Cave (Ludi Yan) is the most famous, with stalactites illuminated in rainbow colors. Other notable caves include Silver Cave and Gongzhong Cave.",
+      "importance": "medium"
+    },
+    {
+      "category": "photography-locations",
+      "title": "Best Photography Spots",
+      "content": "For classic Guilin shots: Elephant Trunk Hill at sunrise, Longji terraces at golden hour, Yulong River bamboo rafts in morning mist. The 20 RMB note features Elephant Trunk Hill and the Five-Hundred-Bhon Temple.",
+      "importance": "medium"
+    },
+    {
+      "category": "tea-culture",
+      "title": "Guilin Tea Culture",
+      "content": "Lipu tea and Gulong tea are famous local varieties. Tea houses are popular gathering spots. The traditional tea ceremony involves multiple infusions, each with different flavor notes. Tea is often served with osmanthus cakes.",
+      "importance": "low"
+    },
+    {
+      "category": "tea-culture",
+      "title": "Guilin Tea Ceremony",
+      "content": "Traditional Guangxi tea ceremony involves 'Gongfu Cha' with multiple infusions. Tea houses near Elephant Hill serve osmanthus tea alongside the view. The tea culture here combines Zhuang and Han traditions.",
+      "importance": "low"
+    },
+    {
+      "category": "water-splashing",
+      "title": "Zhuang Water Splashing Festival",
+      "content": "The Zhuang New Year includes '泼水节' (Water Splashing Festival) where locals splash each other and visitors with water for blessing. Spring is the main season. Joining is acceptable - expect to get wet!",
+      "importance": "medium"
+    },
+    {
+      "category": "bamboo-raft-photography",
+      "title": "Bamboo Raft Photography Tips",
+      "content": "For the best bamboo raft photos, go early morning when mist rises. The Yulong River bamboo rafts are more scenic than Li River. Wear a hat and sunscreen - there's no shade. Cameras should be protected from splashes.",
+      "importance": "medium"
+    },
+    {
+      "category": "terrace-seasons",
+      "title": "Best Seasons for Rice Terraces",
+      "content": "Longji terraces look different each season: water-filled in spring (April-May), green in summer, golden in autumn (September-October), snowy in winter. Spring is most dramatic but wet. Autumn is most popular.",
+      "importance": "high"
+    },
+    {
+      "category": "yangshuo-english",
+      "title": "Yangshuo English Level",
+      "content": "Yangshuo has the highest concentration of English speakers outside major cities in China. Many restaurant menus have English. Market vendors use calculators for prices. Still, learning '你好' (hello) and '多少钱' (how much) appreciated.",
+      "importance": "medium"
+    },
+    {
+      "category": "bamboo-shoot-season",
+      "title": "Bamboo Shoot Season",
+      "content": "Fresh bamboo shoots (竹笋) are a spring delicacy in Guilin. They're harvested from March to May and appear in many local dishes. Try '酸笋' (sour bamboo shoots) - an acquired taste. They're also sold dried year-round.",
+      "importance": "low"
+    },
+    {
+      "category": "river-cruise-tips",
+      "title": "Li River Cruise Tips",
+      "content": "The classic 4-hour cruise from Zhujiang to Yangshuo passes iconic scenery. Book upper deck for best views. Lunch included on board. Evening cruises available for sunset. Bring layers - river can be cold.",
+      "importance": "high"
+    },
+    {
+      "category": "zhuang-dialect",
+      "title": "Zhuang Language and Customs",
+      "content": "The Zhuang language is tonal and different from Mandarin. Their folk songs 'Ge Xiao' are UNESCO intangible heritage. When visiting Zhuang homes, remove shoes at door. Tipping head chef shows respect. 'Gai' means 'chicken' in Zhuang dialect.",
+      "importance": "low"
+    },
+    {
+      "category": "karst-climate",
+      "title": "Karst Cave Safety",
+      "content": "Guilin's caves are cool year-round (15-18C). Wear layers and comfortable shoes. Paths can be slippery. Watch your head on low stalactites. The 'Lightning Tower' in Silver Cave is 26m high. Photography restricted in some areas.",
+      "importance": "medium"
+    },
+    {
+      "category": "osmanthus-blossom",
+      "title": "Osmanthus Blossom Festival",
+      "content": "Guilin's osmanthus trees bloom in late September to early October, filling the city with sweet fragrance. The Osmanthus Festival includes cultural performances, tea ceremonies, and osmanthus-themed foods. Book accommodation early for this period.",
+      "importance": "medium"
+    },
+    {
+      "category": "yangshuo-nightlife",
+      "title": "Yangshuo Nightlife Scene",
+      "content": "Yangshuo has a surprisingly vibrant nightlife for its size. West Street has live music bars, rooftop pubs, and foreign-owned cafes. '印象刘三姐' (Impression Liu Sanjie) show starts at 20:00. Karaoke and bar hopping popular among locals.",
+      "importance": "medium"
+    },
+    {
+      "category": "fishing-village-culture",
+      "title": "Fishing Village Life",
+      "content": "Life in Yangshuo's fishing villages along the river remains traditional. Cormorant fishing, bamboo rafts, and net mending are daily activities. Some families offer homestays - a chance to experience authentic river life. Early morning is most photogenic.",
+      "importance": "medium"
+    },
+    {
+      "category": "bike-rental-tips",
+      "title": "E-Bike Rental in Yangshuo",
+      "content": "Rent e-bikes at shops along West Street (30-50¥/day). No license needed for under-50cc vehicles. Follow traffic rules - bikes stay right. Helmet recommended but not always available. Return before dark as roads unlit.",
+      "importance": "high"
+    },
+    {
+      "category": "river-fish-preparation",
+      "title": "River Fish Preparation Methods",
+      "content": "Guilin's river fish (鲤鱼, 草鱼) prepared various ways: '啤酒鱼' (beer fish - braised with tomato and beer), '漓江蒸鱼' (steamed), '炭烤鱼' (grilled). Ask for '少辣' (less spicy) if needed. Freshness guaranteed in riverside restaurants.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "桂林急救中心",
+      "nameEn": "Guilin Emergency Center",
+      "phone": "120",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "police",
+      "name": "桂林市公安局",
+      "nameEn": "Guilin Public Security Bureau",
+      "phone": "110",
+      "address": "Various locations"
+    },
+    {
+      "type": "hospital",
+      "name": "桂林市人民医院",
+      "nameEn": "Guilin People's Hospital",
+      "phone": "+86 773 282 2410",
+      "address": "12 Wenming Rd, Diecai District",
+      "coordinates": {
+        "lat": 25.2905,
+        "lng": 110.2845
+      },
+      "notes": "Best public hospital in Guilin"
+    },
+    {
+      "type": "hospital",
+      "name": "阳朔县人民医院",
+      "nameEn": "Yangshuo County People's Hospital",
+      "phone": "+86 773 882 2450",
+      "address": "Chengzhong Rd, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7785,
+        "lng": 110.4945
+      },
+      "notes": "For emergencies in Yangshuo"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻广州总领事馆",
+      "nameEn": "Australian Consulate General Guangzhou",
+      "phone": "+86 20 3814 0128",
+      "address": "Guangzhou (nearest consular services for Guilin)",
+      "notes": "Nearest consular services - some countries may not have representation in Guilin"
+    },
+    {
+      "type": "police",
+      "name": "阳朔县公安局",
+      "nameEn": "Yangshuo County Public Security Bureau",
+      "phone": "+86 773 882 1110",
+      "address": "Chengzhong Rd, Yangshuo County",
+      "coordinates": {
+        "lat": 24.7795,
+        "lng": 110.4935
+      },
+      "notes": "For emergencies in Yangshuo area"
+    },
+    {
+      "type": "fire",
+      "name": "桂林消防支队",
+      "nameEn": "Guilin Fire Brigade",
+      "phone": "119",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "tourist-police",
+      "name": "桂林旅游警察",
+      "nameEn": "Guilin Tourist Police",
+      "phone": "+86 773 280 5110",
+      "address": "Various tourist areas",
+      "notes": "English speaking tourist police in scenic areas"
+    },
+    {
+      "type": "tourist-complaint",
+      "name": "桂林旅游投诉热线",
+      "nameEn": "Guilin Tourism Complaint Hotline",
+      "phone": "12301",
+      "address": "Citywide",
+      "notes": "For tourism complaints and emergencies"
+    },
+    {
+      "type": "water-emergency",
+      "name": "漓江搜救中心",
+      "nameEn": "Li River Rescue Center",
+      "phone": "+86 773 384 9119",
+      "address": "Zhujiang Port area",
+      "notes": "For water emergencies and river rescue"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻广州总领事馆",
+      "nameEn": "Australian Consulate General Guangzhou",
+      "phone": "+86 20 3814 0128",
+      "address": "Guangzhou",
+      "notes": "Nearest consular services for Australians"
+    },
+    {
+      "type": "embassy",
+      "name": "加拿大驻广州总领事馆",
+      "nameEn": "Canadian Consulate General Guangzhou",
+      "phone": "+86 20 3228 6911",
+      "address": "Guangzhou",
+      "notes": "Nearest consular services for Canadians"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese + local dialects",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa. 144h transit visa available at airport.",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Use bottled water - local water may upset stomach"
+  }
+}

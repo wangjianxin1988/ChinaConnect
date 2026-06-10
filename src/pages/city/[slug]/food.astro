@@ -237,8 +237,20 @@ function getBadgeLabel(type: Restaurant["type"]) {
         {allRestaurants.map((restaurant) => (
           <div
             data-filter-category={getHighlightCategory(restaurant)}
-            class="bg-white border border-gray-100 rounded-xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all group restaurant-card"
+            class="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all group restaurant-card"
           >
+            {/* Restaurant Image */}
+            {restaurant.imageUrl && (
+              <div class="h-40 overflow-hidden">
+                <img
+                  src={restaurant.imageUrl}
+                  alt={restaurant.name}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            )}
+            <div class="p-5">
             {/* Header - clickable link to detail */}
             <a href={`/food/${restaurant.id}`} class="block mb-3">
               <div class="flex items-start justify-between gap-2">
@@ -339,21 +351,43 @@ function getBadgeLabel(type: Restaurant["type"]) {
                   <span>拨打电话</span>
                 </a>
               )}
-              {restaurant.lat && restaurant.lng && (
+              {restaurant.coordinates?.lat && restaurant.coordinates?.lng ? (
+                <>
+                  <a
+                    href={`https://uri.amap.com/marker?position=${restaurant.coordinates.lng},${restaurant.coordinates.lat}&name=${encodeURIComponent(restaurant.name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-700 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors shrink-0"
+                  >
+                    <span>🗺️</span>
+                    <span>高德导航</span>
+                  </a>
+                  <a
+                    href={`https://maps.google.com/maps?search=${restaurant.coordinates.lat},${restaurant.coordinates.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium hover:bg-emerald-100 transition-colors shrink-0"
+                  >
+                    <span>🌍</span>
+                    <span>Google Maps</span>
+                  </a>
+                </>
+              ) : restaurant.address ? (
                 <a
-                  href={`https://maps.google.com/maps?search=${restaurant.lat},${restaurant.lng}`}
+                  href={`https://uri.amap.com/search?keyword=${encodeURIComponent(restaurant.address)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="flex items-center gap-1.5 px-3 py-1.5 bg-green-50 text-green-700 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors shrink-0"
                 >
-                  <span>📍</span>
+                  <span>🗺️</span>
                   <span>导航</span>
                 </a>
-              )}
+              ) : null}
               <span class="text-xs text-gray-400 truncate max-w-[200px]" title={restaurant.address}>
                 {restaurant.address}
               </span>
             </div>
+            </div>{/* end p-5 inner div */}
           </div>
         ))}
       </div>
@@ -372,6 +406,44 @@ function getBadgeLabel(type: Restaurant["type"]) {
         </button>
       </div>
     )}
+
+    <!-- Reference Sources -->
+    <div class="mt-12 p-6 bg-gray-50 rounded-xl border border-gray-200">
+      <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+        <span>📚</span> 权威参考数据源
+      </h3>
+      <p class="text-sm text-gray-600 mb-4">以下数据来源可帮助您进一步了解{city.name}美食文化：</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="https://www.dianping.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
+          <span class="text-xl">🔍</span>
+          <div>
+            <div class="font-medium text-gray-900 text-sm">大众点评</div>
+            <div class="text-xs text-gray-500">中国最大本地生活服务平台</div>
+          </div>
+        </a>
+        <a href="https://www.meituan.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
+          <span class="text-xl">🛵</span>
+          <div>
+            <div class="font-medium text-gray-900 text-sm">美团</div>
+            <div class="text-xs text-gray-500">餐饮外卖与评价平台</div>
+          </div>
+        </a>
+        <a href="https://www.xiaohongshu.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
+          <span class="text-xl">📕</span>
+          <div>
+            <div class="font-medium text-gray-900 text-sm">小红书</div>
+            <div class="text-xs text-gray-500">本地美食探店攻略</div>
+          </div>
+        </a>
+        <a href="https://guide.michelin.com/cn/zh_CN/restaurants" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all">
+          <span class="text-xl">⭐</span>
+          <div>
+            <div class="font-medium text-gray-900 text-sm">米其林指南</div>
+            <div class="text-xs text-gray-500">国际权威餐厅评级</div>
+          </div>
+        </a>
+      </div>
+    </div>
 
     <!-- Navigation -->
     <div class="mt-12 flex items-center justify-between border-t border-gray-100 pt-8">
@@ -406,7 +478,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
     </div>
   </div>
 
-  <script>
+  <script is:inline>
     // Client-side filter handling for food page
     (function() {
       const filterButtons = document.querySelectorAll('.filter-btn');
@@ -416,7 +488,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
       const emptyState = document.getElementById('empty-state');
 
       // Filter metadata for display
-      const filterMeta: Record<string, { icon: string; labelZh: string }> = {
+      const filterMeta = {
         'all': { icon: '🍽️', labelZh: '全部' },
         'local_recommend': { icon: '❤️', labelZh: '本地人推荐' },
         'michelin': { icon: '⭐', labelZh: '米其林' },
@@ -426,13 +498,13 @@ function getBadgeLabel(type: Restaurant["type"]) {
       };
 
       // Get initial filter from URL
-      function getInitialFilter(): string {
+      function getInitialFilter() {
         const params = new URLSearchParams(window.location.search);
         return params.get('filter') || 'all';
       }
 
       // Update URL without page reload
-      function updateURL(filter: string, citySlug: string) {
+      function updateURL(filter, citySlug) {
         const url = new URL(window.location.href);
         if (filter === 'all') {
           url.searchParams.delete('filter');
@@ -443,14 +515,14 @@ function getBadgeLabel(type: Restaurant["type"]) {
       }
 
       // Apply filter to restaurant cards
-      function applyFilter(filter: string) {
+      function applyFilter(filter) {
         if (!restaurantGrid) return;
 
         const cards = restaurantGrid.querySelectorAll('.restaurant-card');
         let visibleCount = 0;
 
         cards.forEach((card) => {
-          const cardEl = card as HTMLElement;
+          const cardEl = card;
           const category = cardEl.dataset.filterCategory;
 
           if (filter === 'all' || category === filter) {
@@ -488,7 +560,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
 
         // Update active button state
         filterButtons.forEach((btn) => {
-          const btnEl = btn as HTMLElement;
+          const btnEl = btn;
           const btnFilter = btnEl.dataset.filter;
           const isActive = btnFilter === filter;
 
@@ -513,7 +585,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
       // Add click handlers to filter buttons
       filterButtons.forEach((btn) => {
         btn.addEventListener('click', (e) => {
-          const btnEl = e.currentTarget as HTMLElement;
+          const btnEl = e.currentTarget;
           const filter = btnEl.dataset.filter;
           const citySlug = btnEl.dataset.citySlug;
 

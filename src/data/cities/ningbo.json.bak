@@ -1,0 +1,3146 @@
+{
+  "slug": "ningbo",
+  "name": "宁波",
+  "nameEn": "Ningbo",
+  "country": "China",
+  "population": "5.4 million",
+  "coordinates": {
+    "lat": 29.8683,
+    "lng": 121.544
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Ningbo, an ancient port city in Zhejiang province, is one of China's oldest cities and major ports. Known for its thousand-year history, Buddhist temples, traditional architecture, and fresh seafood. Home to the famous Tianyi Pavilion, China's oldest private library.",
+  "coverImage": "https://images.unsplash.com/photo-1661109569638-48cde0946630?w=1200&q=80",
+  "highlights": [
+    "Tianyi Pavilion - China's oldest private library",
+    "Temple of the Heavenly King",
+    "Old Bund - European colonial architecture",
+    "Dong钱湖 - Scenic lake area",
+    "Famous seafood cuisine"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon climate",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "28°C (82°F)",
+    "avgWinterTemp": "6°C (43°F)",
+    "tips": "Best in spring and autumn. Summers hot and humid with typhoons possible. Pleasant winters. Spring for flowers, autumn for foliage."
+  },
+  "attractions": [
+    {
+      "id": "ningbo-1",
+      "name": "天一阁",
+      "nameEn": "Tianyi Pavilion",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1763304730993-a18be6a2b3b9?w=800&q=85",
+      "description": "China's oldest private library, built in 1561, with beautiful gardens.",
+      "address": "10 Tianyi Lane, Haishu District",
+      "coordinates": {
+        "lat": 29.8822,
+        "lng": 121.5522
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient library",
+        "Classical gardens",
+        "Book culture",
+        "Ming architecture"
+      ],
+      "tips": "Arrive early to avoid crowds. The gardens are beautiful. Audio guide recommended."
+    },
+    {
+      "id": "ningbo-2",
+      "name": "天童寺",
+      "nameEn": "Tiantong Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85",
+      "description": "Ancient Buddhist temple founded in 300 AD, one of the most important in China.",
+      "address": "Tiantong Temple, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8522,
+        "lng": 121.7122
+      },
+      "openingHours": "06:00-17:00",
+      "ticketPrice": "10¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient Buddhist temple",
+        "Mountain setting",
+        "Zen atmosphere",
+        "Thousand-year history"
+      ],
+      "tips": "Take bus 622 or 629. Arrive early. Great for hiking in the area."
+    },
+    {
+      "id": "ningbo-3",
+      "name": "宁波老外滩",
+      "nameEn": "Ningbo Old Bund",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1779234518724-218fde21cf9a?w=800&q=85",
+      "description": "Historic waterfront area with European colonial architecture from 1800s.",
+      "address": "Lao Waitan, Jiangxia District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Colonial buildings",
+        "River views",
+        "Night scene",
+        "Historic architecture"
+      ],
+      "tips": "Best at night when illuminated. Enjoy river cruise. Explore bars and cafes."
+    },
+    {
+      "id": "ningbo-4",
+      "name": "东钱湖",
+      "nameEn": "Dongqian Lake",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
+      "description": "Scenic lake area with temples, gardens and beautiful mountain scenery.",
+      "address": "Dongqian Lake, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8022,
+        "lng": 121.6422
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (individual attractions charge)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Lake scenery",
+        "Bike around lake",
+        "Gardens",
+        "陶公岛"
+      ],
+      "tips": "Rent bike to tour the lake. Combine with nearby temples. Stay for sunset."
+    },
+    {
+      "id": "ningbo-5",
+      "name": "雪窦山",
+      "nameEn": "Xuedou Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1748546614651-c4e02beaaec7?w=800&q=85",
+      "description": "Sacred Buddhist mountain with temples and the world's largest弥勒大佛.",
+      "address": "Xuedou Mountain, Fenghua District",
+      "coordinates": {
+        "lat": 29.7022,
+        "lng": 121.4222
+      },
+      "openingHours": "07:30-17:00",
+      "ticketPrice": "150¥ (includes all)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Maitreya Buddha statue",
+        "Mountain views",
+        "Ancient temples",
+        "Zen Buddhism"
+      ],
+      "tips": "Take tourist bus from city. Wear comfortable shoes. Full day trip."
+    },
+    {
+      "id": "ningbo-6",
+      "name": "宁波博物馆",
+      "nameEn": "Ningbo Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?w=800",
+      "description": "Modern museum with local history exhibits and unique architecture.",
+      "address": "1000chuan Road, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Local history",
+        "Ming and Qing artifacts",
+        "Modern architecture",
+        "Cultural exhibits"
+      ],
+      "tips": "The building architecture is unique. Allow 2 hours. Audio guide available."
+    },
+    {
+      "id": "ningbo-7",
+      "name": "月湖",
+      "nameEn": "Moon Lake",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1780303435097-e31089d57564?w=800&q=85",
+      "description": "Historic urban lake with classical gardens and traditional buildings.",
+      "address": "Moon Lake, Haishu District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Classical gardens",
+        "Quiet atmosphere",
+        "Historic pavilions",
+        "City park"
+      ],
+      "tips": "Beautiful in early morning. Combine with Tianyi Pavilion nearby."
+    },
+    {
+      "id": "ningbo-8",
+      "name": "鼓楼",
+      "nameEn": "Gulou (Drum Tower)",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1537531383496-f4749b8032cf?w=800",
+      "description": "Historic drum tower and traditional shopping street.",
+      "address": "Gulou, Haishu District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "openingHours": "Open 24 hours (shops vary)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Drum tower",
+        "Shopping street",
+        "Traditional architecture",
+        "Local snacks"
+      ],
+      "tips": "Shop for local products. Try Ningbo snacks. Best in evening."
+    },
+    {
+      "id": "ningbo-9",
+      "name": "阿育王寺",
+      "nameEn": "Ayuwang Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?w=800",
+      "description": "Ancient temple housing a relic of Buddha, founded in 4th century.",
+      "address": "Ayuwang Temple, Beilun District",
+      "coordinates": {
+        "lat": 29.9222,
+        "lng": 121.8422
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "5¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Buddha relic",
+        "Ancient pagoda",
+        "Zen atmosphere",
+        "Thousand-year history"
+      ],
+      "tips": "One of China's oldest temples. Take bus 721 or 758. Very peaceful."
+    },
+    {
+      "id": "ningbo-10",
+      "name": "象山影视城",
+      "nameEn": "Xiangshan Film and Television City",
+      "category": "entertainment",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800",
+      "description": "Film set complex where many Chinese TV dramas are filmed.",
+      "address": "Xiangshan County",
+      "coordinates": {
+        "lat": 29.4722,
+        "lng": 121.8722
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "130¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Ancient streets",
+        "Film sets",
+        "Live performances",
+        "Costume rentals"
+      ],
+      "tips": "Check show schedule. Rent costumes for photos. Full day attraction."
+    },
+    {
+      "id": "ningbo-11",
+      "name": "南塘老街",
+      "nameEn": "Nantang Old Street",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1743612828320-ec00d128dba0?w=800&q=85",
+      "description": "Restored historic street with traditional architecture and local snacks.",
+      "address": "Nantang Old Street, Haishu District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "openingHours": "Open 24 hours (shops 09:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Traditional architecture",
+        "Local snacks",
+        "Handicrafts",
+        "Photo opportunities"
+      ],
+      "tips": "Try local snacks. Buy souvenirs. Best in evening with lighting."
+    },
+    {
+      "id": "ningbo-12",
+      "name": "宁波海洋世界",
+      "nameEn": "Ningbo Ocean World",
+      "category": "entertainment",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
+      "description": "Large aquarium with marine life and dolphin shows.",
+      "address": "Jiangdong District",
+      "coordinates": {
+        "lat": 29.8922,
+        "lng": 121.5722
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "150¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Dolphin shows",
+        "Shark tank",
+        "Underwater tunnel",
+        "Marine exhibits"
+      ],
+      "tips": "Arrive for dolphin show. Great for families. Book tickets online."
+    },
+    {
+      "id": "ningbo-13",
+      "name": "招宝山",
+      "nameEn": "Zhaobao Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1668330612211-f8020736d327?w=800&q=85",
+      "description": "Historic mountain with ancient fortifications and coastal views.",
+      "address": "Zhaobao Mountain, Zhenhai District",
+      "coordinates": {
+        "lat": 29.9522,
+        "lng": 121.7222
+      },
+      "openingHours": "07:30-17:00",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Coastal views",
+        "Ancient炮台",
+        "Historic site",
+        "Sea views"
+      ],
+      "tips": "Take bus 541 or 371. Great for history buffs. Combine with nearby beach."
+    },
+    {
+      "id": "ningbo-14",
+      "name": "庆安会馆",
+      "nameEn": "Qing'an Guild Hall",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800",
+      "description": "Historic guild hall for sailors and merchants with elaborate carvings.",
+      "address": "Qing'an Guild Hall, Jiangxia District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Elaborate carvings",
+        "Maritime history",
+        "Traditional architecture",
+        "Cultural exhibits"
+      ],
+      "tips": "The carvings are impressive. Learn about maritime trade history."
+    },
+    {
+      "id": "ningbo-15",
+      "name": "它山堰",
+      "nameEn": " Tashan Dam",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800",
+      "description": "Ancient water conservation project from Tang Dynasty, still in use.",
+      "address": " Tashan, Yinzhou District",
+      "coordinates": {
+        "lat": 29.7822,
+        "lng": 121.4722
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient engineering",
+        "Water flows",
+        "Peaceful setting",
+        "Historical significance"
+      ],
+      "tips": "For engineering enthusiasts. Combine with nearby hiking. Very peaceful."
+    },
+    {
+      "id": "ningbo-16",
+      "name": "梁祝公园",
+      "nameEn": "Liangshanbo (Butterfly Lovers) Park",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+      "description": "Theme park based on the famous Chinese legend of the Butterfly Lovers.",
+      "address": "High-tech Zone",
+      "coordinates": {
+        "lat": 29.8222,
+        "lng": 121.5922
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Butterfly Lovers legend",
+        "Traditional architecture",
+        "Gardens",
+        "Performances"
+      ],
+      "tips": "Check for performances. Great for couples. Learn about Chinese legend."
+    },
+    {
+      "id": "ningbo-17",
+      "name": "宁波美术馆",
+      "nameEn": "Ningbo Museum of Art",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800",
+      "description": "Modern art museum in a historic building with rotating exhibitions.",
+      "address": "1 Alsha Avenue, Jiangxia District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Contemporary art",
+        "Historic building",
+        "Rotating exhibits",
+        "Cultural programs"
+      ],
+      "tips": "Check current exhibitions. Combine with Old Bund visit."
+    },
+    {
+      "id": "ningbo-18",
+      "name": "福泉山",
+      "nameEn": "Fuquan Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
+      "description": "Mountain tea plantation with panoramic views of Dongqian Lake.",
+      "address": "Dongqian Lake area",
+      "coordinates": {
+        "lat": 29.8122,
+        "lng": 121.6522
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Tea plantations",
+        "Lake views",
+        "Hiking trails",
+        "Sunrise"
+      ],
+      "tips": "Come for sunrise. The tea is famous. Great hiking in the area."
+    },
+    {
+      "id": "ningbo-19",
+      "name": "沙孟海书院",
+      "nameEn": "Shamenghai Academy",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800",
+      "description": "Historic academy and former residence of famous calligrapher.",
+      "address": "Haiyian District",
+      "coordinates": {
+        "lat": 29.8822,
+        "lng": 121.5522
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "15¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Calligraphy",
+        "Traditional architecture",
+        "Cultural heritage",
+        "Scholar's garden"
+      ],
+      "tips": "For calligraphy lovers. The gardens are peaceful."
+    },
+    {
+      "id": "ningbo-20",
+      "name": "前童古镇",
+      "nameEn": "Qiantong Ancient Town",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800",
+      "description": "Preserved ancient water town with traditional Ming and Qing architecture.",
+      "address": "Xianpo County",
+      "coordinates": {
+        "lat": 29.3522,
+        "lng": 121.4422
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "70¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Ancient architecture",
+        "Water lanes",
+        "Traditional life",
+        "Folk culture"
+      ],
+      "tips": "Less crowded than other water towns. Authentic experience. Half day trip."
+    },
+    {
+      "id": "ningbo-21",
+      "name": "宁波科技馆",
+      "nameEn": "Ningbo Science and Technology Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
+      "description": "Modern interactive science museum with many hands-on exhibits.",
+      "address": "Jiangdong District",
+      "coordinates": {
+        "lat": 29.8922,
+        "lng": 121.5822
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Interactive exhibits",
+        "IMAX theater",
+        "Science shows",
+        "Space exhibit"
+      ],
+      "tips": "Great for families. Allow 3-4 hours. Buy tickets online."
+    },
+    {
+      "id": "ningbo-22",
+      "name": "城隍庙",
+      "nameEn": "Chenghuang Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1488561092521-fa6b563f76c7?w=800&q=85",
+      "description": "Historic temple dedicated to the city god with traditional buildings.",
+      "address": "East of Tianyi Lane",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "10¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Temple architecture",
+        "Local prayers",
+        "Historic significance",
+        "Atmospheric"
+      ],
+      "tips": "Near Tianyi Pavilion. Experience local worship culture."
+    },
+    {
+      "id": "ningbo-23",
+      "name": "三江口",
+      "nameEn": "Three River Mouth",
+      "category": "landmark",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800",
+      "description": "Confluence of three rivers with modern skyline views.",
+      "address": "Three River Mouth, Jiangxia District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "River confluence",
+        "Night views",
+        "Modern skyline",
+        "Photo spot"
+      ],
+      "tips": "Best at night. Take river cruise. Great photo opportunities."
+    },
+    {
+      "id": "ningbo-24",
+      "name": "宁波动物园",
+      "nameEn": "Ningbo Zoo",
+      "category": "nature",
+      "image": "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=800",
+      "description": "Large zoo with pandas and variety of animals in natural setting.",
+      "address": "Yinzhou District",
+      "coordinates": {
+        "lat": 29.8222,
+        "lng": 121.5922
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "130¥",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Giant pandas",
+        "Natural setting",
+        "Safari area",
+        "Shows"
+      ],
+      "tips": "Arrive early for pandas. Take观光车. Great for families."
+    },
+    {
+      "id": "nb-tianyi",
+      "name": "天一阁",
+      "nameEn": "Tianyi Pavilion",
+      "category": "museum",
+      "description": "中国现存最早的私家藏书楼，有450多年历史。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "藏书楼",
+        "园林"
+      ],
+      "tips": "了解中国文化。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "nb-bund",
+      "name": "老外滩",
+      "nameEn": "Old Bund",
+      "category": "street",
+      "description": "宁波最古老的商业街区，有欧式建筑。",
+      "address": "宁波市江北区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "欧式建筑",
+        "酒吧街"
+      ],
+      "tips": "体验宁波夜生活。",
+      "image": "https://images.unsplash.com/photo-1720939222054-5b4a4db7c0eb?w=800&q=85"
+    },
+    {
+      "id": "nb-xuedou",
+      "name": "雪窦山",
+      "nameEn": "Xuedou Mountain",
+      "category": "nature",
+      "description": "奉化区的名山，有弥勒大佛。",
+      "address": "宁波市奉化区",
+      "coordinates": {
+        "lat": 29.65,
+        "lng": 121.42
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "150元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "弥勒大佛",
+        "千丈岩"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1593407174638-896dde4034b1?w=800&q=85"
+    },
+    {
+      "id": "nb-museum",
+      "name": "宁波博物馆",
+      "nameEn": "Ningbo Museum",
+      "category": "museum",
+      "description": "展示宁波历史的博物馆。",
+      "address": "宁波市鄞州区",
+      "coordinates": {
+        "lat": 29.85,
+        "lng": 121.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "宁波历史"
+      ],
+      "tips": "了解宁波文化。",
+      "image": "https://images.unsplash.com/photo-1758784548350-036e24b9894f?w=800&q=85"
+    },
+    {
+      "id": "nb-tangyuan",
+      "name": "宁波汤圆",
+      "nameEn": "Ningbo Tangyuan",
+      "category": "street",
+      "description": "宁波最著名的美食。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "汤圆",
+        "海鲜"
+      ],
+      "tips": "品尝宁波美食。",
+      "image": "https://images.unsplash.com/photo-1614235183711-7a4f4f339265?w=800&q=85"
+    },
+    {
+      "id": "nb-tiantong",
+      "name": "天童寺",
+      "nameEn": "Tiantong Temple",
+      "category": "temple",
+      "description": "中国佛教禅宗五山之一。",
+      "address": "宁波市鄞州区",
+      "coordinates": {
+        "lat": 29.82,
+        "lng": 121.72
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "佛教文化",
+        "古寺"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1758081263423-d8529e8ba312?w=800&q=85"
+    },
+    {
+      "id": "nb-yuelake",
+      "name": "月湖公园",
+      "nameEn": "Moon Lake Park",
+      "category": "park",
+      "description": "宁波最美的公园，有月湖。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "月湖",
+        "园林"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1686807309649-36801d76d1a1?w=800&q=85"
+    },
+    {
+      "id": "nb-night",
+      "name": "宁波夜景",
+      "nameEn": "Ningbo Night View",
+      "category": "landmark",
+      "description": "三江口和老外滩的夜景。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1465446751832-9f11e125aaa7?w=800&q=85"
+    },
+    {
+      "id": "nb-bridge",
+      "name": "杭州湾跨海大桥",
+      "nameEn": "Hangzhou Bay Bridge",
+      "category": "landmark",
+      "description": "杭州湾跨海大桥。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 30.0,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "通行费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "海景"
+      ],
+      "tips": "看海景。",
+      "image": "https://images.unsplash.com/photo-1736265339877-2382471610ed?w=800&q=85"
+    },
+    {
+      "id": "nb-nantang",
+      "name": "南塘老街",
+      "nameEn": "Nantang Old Street",
+      "category": "street",
+      "description": "宁波新开发的历史文化街区。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验宁波文化。",
+      "image": "https://images.unsplash.com/photo-1779538077139-ba0a186d326e?w=800&q=85"
+    },
+    {
+      "id": "nb-ashoka",
+      "name": "阿育王寺",
+      "nameEn": "Ashoka Temple",
+      "category": "temple",
+      "description": "中国佛教禅宗五山之一，有释迦牟尼真身舍利。",
+      "address": "宁波市鄞州区",
+      "coordinates": {
+        "lat": 29.82,
+        "lng": 121.72
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "舍利",
+        "佛教文化"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1773843859278-1ece15fe9dec?w=800&q=85"
+    },
+    {
+      "id": "nb-siming",
+      "name": "四明山",
+      "nameEn": "Siming Mountain",
+      "category": "nature",
+      "description": "宁波西部的山脉。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.82,
+        "lng": 121.32
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1756789977307-02fd13d41616?w=800&q=85"
+    },
+    {
+      "id": "nb-songlan",
+      "name": "松兰山海滩",
+      "nameEn": "Songlan Mountain Beach",
+      "category": "beach",
+      "description": "宁波最美的海滩。",
+      "address": "宁波市象山县",
+      "coordinates": {
+        "lat": 29.48,
+        "lng": 121.97
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "海水"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1683799909253-05471b47ee3b?w=800&q=85"
+    },
+    {
+      "id": "nb-art",
+      "name": "宁波美术馆",
+      "nameEn": "Ningbo Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1750602709284-563e6a2d46e5?w=800&q=85"
+    },
+    {
+      "id": "nb-seafood",
+      "name": "宁波海鲜",
+      "nameEn": "Ningbo Seafood",
+      "category": "street",
+      "description": "宁波有最新鲜的海鲜。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均80元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "海鲜"
+      ],
+      "tips": "品尝宁波海鲜。",
+      "image": "https://images.unsplash.com/photo-1682328932063-1dda022c1e4b?w=800&q=85"
+    },
+    {
+      "id": "nb-rihu",
+      "name": "日湖公园",
+      "nameEn": "Rihu Park",
+      "category": "park",
+      "description": "宁波东部的公园。",
+      "address": "宁波市江东区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "湖泊"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1745832733473-44c5789cceb1?w=800&q=85"
+    },
+    {
+      "id": "nb-chenghuang",
+      "name": "城隍庙",
+      "nameEn": "City God Temple",
+      "category": "street",
+      "description": "宁波最古老的商业街区。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验宁波文化。",
+      "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=85"
+    },
+    {
+      "id": "nb-baoguo",
+      "name": "保国寺",
+      "nameEn": "Baoguo Temple",
+      "category": "temple",
+      "description": "中国现存最古老的木结构建筑之一。",
+      "address": "宁波市江北区",
+      "coordinates": {
+        "lat": 29.9,
+        "lng": 121.52
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古建筑",
+        "佛教文化"
+      ],
+      "tips": "了解古建筑。",
+      "image": "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800&q=85"
+    },
+    {
+      "id": "nb-yushan",
+      "name": "渔山列岛",
+      "nameEn": "Yushan Islands",
+      "category": "nature",
+      "description": "宁波附近的小岛群，有美丽的海景。",
+      "address": "宁波市象山县",
+      "coordinates": {
+        "lat": 29.2,
+        "lng": 122.22
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海岛",
+        "海景"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1683799907598-8b12a48e7ed2?w=800&q=85"
+    },
+    {
+      "id": "nb-sanjiangkou-night",
+      "name": "三江口夜景",
+      "nameEn": "Sanjiangkou Night View",
+      "category": "landmark",
+      "description": "宁波三江口的夜景灯光秀。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1743431290639-154ed2efe597?w=800&q=85"
+    },
+    {
+      "id": "nb-drum-tower",
+      "name": "鼓楼",
+      "nameEn": "Drum Tower",
+      "category": "landmark",
+      "description": "宁波的标志性建筑。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "鼓楼",
+        "历史"
+      ],
+      "tips": "了解宁波历史。",
+      "image": "https://images.unsplash.com/photo-1688992293668-08475755edd4?w=800&q=85"
+    },
+    {
+      "id": "nb-fashion",
+      "name": "宁波服装博物馆",
+      "nameEn": "Ningbo Fashion Museum",
+      "category": "museum",
+      "description": "展示中国服装文化的博物馆。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "服装文化"
+      ],
+      "tips": "了解中国服装。",
+      "image": "https://images.unsplash.com/photo-1751057574680-6be44a796066?w=800&q=85"
+    },
+    {
+      "id": "nb-zhaobao",
+      "name": "招宝山",
+      "nameEn": "Zhaobao Mountain",
+      "category": "nature",
+      "description": "宁波北部的小山。",
+      "address": "宁波市镇海区",
+      "coordinates": {
+        "lat": 29.95,
+        "lng": 121.72
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "山峰",
+        "海景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1748759157650-d1bb0bcb2c51?w=800&q=85"
+    },
+    {
+      "id": "nb-ninggao",
+      "name": "宁波年糕",
+      "nameEn": "Ningbo Rice Cake",
+      "category": "street",
+      "description": "宁波传统美食。",
+      "address": "宁波市",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均15元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "年糕"
+      ],
+      "tips": "品尝宁波年糕。",
+      "image": "https://images.unsplash.com/photo-1748078096034-46086f5b87da?w=800&q=85"
+    },
+    {
+      "id": "nb-yaojiang",
+      "name": "姚江公园",
+      "nameEn": "Yaojiang Park",
+      "category": "park",
+      "description": "宁波西部的公园。",
+      "address": "宁波市海曙区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.52
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "公园",
+        "江景"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1565344953548-705d4d1b3660?w=800&q=85"
+    },
+    {
+      "id": "nb-qita",
+      "name": "七塔寺",
+      "nameEn": "Qita Temple",
+      "category": "temple",
+      "description": "宁波最古老的佛教寺院之一。",
+      "address": "宁波市江东区",
+      "coordinates": {
+        "lat": 29.87,
+        "lng": 121.58
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1753166890334-55a89f788a6c?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "ningbo-1",
+      "name": "缸鸭狗",
+      "nameEn": "Gang Ya Gou",
+      "type": "local",
+      "cuisine": "Ningbo",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "5 Yongxing Lane, Haishu District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "07:00-20:00",
+      "description": "Legendary restaurant since 1926, famous for soup dumplings and traditional dishes.",
+      "dishHighlights": [
+        "Soup dumplings",
+        "Ningbo style noodles",
+        "Sweet rice balls"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "historic",
+        "must-try"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-2",
+      "name": "状元楼",
+      "nameEn": "Zhuangyuan Lou",
+      "type": "fine",
+      "cuisine": "Ningbo",
+      "avgPrice": 200,
+      "rating": 4.6,
+      "address": "68 Zhongshan Road, Haishu District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "phone": "+86 574 8739 1888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "High-end restaurant serving refined Ningbo cuisine with elegant atmosphere.",
+      "dishHighlights": [
+        " steamed fish",
+        "Shark fin soup",
+        "Abalone",
+        "Local specialties"
+      ],
+      "tags": [
+        "fine-dining",
+        "ningbo-cuisine",
+        "luxury",
+        "special-occasion"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-3",
+      "name": "贴阁碧",
+      "nameEn": "Tie Ge Bi",
+      "type": "local",
+      "cuisine": "Ningbo",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "10:30-21:30",
+      "description": "Popular for traditional Ningbo home-style dishes.",
+      "dishHighlights": [
+        "Braised pork belly",
+        "Steamed fish",
+        "Vegetables",
+        "Rice dishes"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "ningbo-cuisine",
+        "popular"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-4",
+      "name": "东钱湖船菜",
+      "nameEn": "Dongqian Lake Boat Cuisine",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "Dongqian Lake area",
+      "coordinates": {
+        "lat": 29.8022,
+        "lng": 121.6422
+      },
+      "phone": "+86 574 8280 8888",
+      "hours": "10:00-21:00",
+      "description": "Famous for fresh fish and seafood from Dongqian Lake.",
+      "dishHighlights": [
+        "Steamed carp",
+        "Lake fish",
+        "Fresh shrimp",
+        "Shellfish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "lake-cuisine",
+        "scenic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-5",
+      "name": "南塘油赞子",
+      "nameEn": "Nantang You Zan Zi",
+      "type": "local",
+      "cuisine": "Ningbo Snacks",
+      "avgPrice": 20,
+      "rating": 4.6,
+      "address": "Nantang Old Street",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "hours": "09:00-21:00",
+      "description": "Famous for crispy oil-fried dough twists - a Ningbo specialty snack.",
+      "dishHighlights": [
+        "Oil-fried dough twists",
+        "Various flavors"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous",
+        "souvenir"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-6",
+      "name": "味融会馆",
+      "nameEn": "Wei Rong Hui",
+      "type": "fine",
+      "cuisine": "Ningbo",
+      "avgPrice": 250,
+      "rating": 4.7,
+      "address": "1000 Xintiandi, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
+      "phone": "+86 574 8908 8888",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "Upscale restaurant serving premium Ningbo cuisine.",
+      "dishHighlights": [
+        "Premium seafood",
+        "Traditional recipes",
+        "Elegant presentation"
+      ],
+      "tags": [
+        "fine-dining",
+        "ningbo-cuisine",
+        "luxury",
+        "special-occasion"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-7",
+      "name": "慈城年糕",
+      "nameEn": "Cicheng Rice Cake",
+      "type": "local",
+      "cuisine": "Ningbo Snacks",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "Near Tianyi Pavilion",
+      "coordinates": {
+        "lat": 29.8822,
+        "lng": 121.5522
+      },
+      "hours": "08:00-18:00",
+      "description": "Famous for soft rice cakes - a traditional Ningbo specialty.",
+      "dishHighlights": [
+        "Steamed rice cake",
+        "Fried rice cake",
+        "Rice cake soup"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "traditional",
+        "famous"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-8",
+      "name": "海鲜大排档",
+      "nameEn": "Seafood Night Market",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Dongmen Night Market area",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "17:00-02:00",
+      "description": "Popular outdoor seafood market with fresh catches.",
+      "dishHighlights": [
+        "Grilled seafood",
+        "Steamed shells",
+        "Fried fish",
+        "Shrimp"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "night-market",
+        "fresh"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-9",
+      "name": "宁波汤团",
+      "nameEn": "Ningbo Tangtuan",
+      "type": "local",
+      "cuisine": "Dessert",
+      "avgPrice": 20,
+      "rating": 4.5,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "06:00-14:00",
+      "description": "Sweet rice dumplings in soup - a famous Ningbo breakfast.",
+      "dishHighlights": [
+        "Sweet rice dumplings",
+        "Black sesame filling",
+        "Ginger soup"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "breakfast",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-10",
+      "name": "老宁波弄堂菜",
+      "nameEn": "Old Ningbo Lane Dishes",
+      "type": "local",
+      "cuisine": "Ningbo",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "10:00-22:00",
+      "description": "Traditional dishes from old lane neighborhoods.",
+      "dishHighlights": [
+        "Braised pork",
+        "Steamed fish",
+        "Pickled vegetables",
+        "Tofu"
+      ],
+      "tags": [
+        "local",
+        "ningbo-cuisine",
+        "home-style",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-11",
+      "name": "黄鱼面馆",
+      "nameEn": "Yellow Croaker Noodles",
+      "type": "local",
+      "cuisine": "Noodles",
+      "avgPrice": 50,
+      "rating": 4.6,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "07:00-19:00",
+      "description": "Famous for noodles with fresh yellow croaker - a local specialty.",
+      "dishHighlights": [
+        "Yellow croaker noodles",
+        "Seafood noodles",
+        "Fish soup"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "seafood",
+        "famous"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-12",
+      "name": "梅龙镇",
+      "nameEn": "Mei Long Zhen",
+      "type": "fine",
+      "cuisine": "Shanghai/Ningbo",
+      "avgPrice": 180,
+      "rating": 4.6,
+      "address": "168 Zhongshan Road, Haishu District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "phone": "+86 574 8728 8888",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "High-end restaurant serving refined Shanghai and Ningbo cuisine.",
+      "dishHighlights": [
+        "Shanghai-style dishes",
+        "Ningbo specialties",
+        "Premium seafood"
+      ],
+      "tags": [
+        "fine-dining",
+        "shanghai-ningbo",
+        "luxury",
+        "special-occasion"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-13",
+      "name": "咸祥海鲜",
+      "nameEn": "Xianxiang Seafood",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "Xianxiang County",
+      "coordinates": {
+        "lat": 29.7022,
+        "lng": 121.7622
+      },
+      "hours": "10:00-22:00",
+      "description": "Famous for fresh seafood from Xianxiang fishing village.",
+      "dishHighlights": [
+        "Fresh crab",
+        "Steamed fish",
+        "Salt shrimp",
+        "Shellfish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "fresh",
+        "village-style"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-14",
+      "name": "溪口千层饼",
+      "nameEn": "Xikou Thousand-Layer Cake",
+      "type": "local",
+      "cuisine": "Ningbo Snacks",
+      "avgPrice": 20,
+      "rating": 4.5,
+      "address": "Xikou scenic area",
+      "coordinates": {
+        "lat": 29.7022,
+        "lng": 121.4222
+      },
+      "hours": "08:00-18:00",
+      "description": "Famous crispy multi-layer cake from Xikou area.",
+      "dishHighlights": [
+        "Thousand-layer cake",
+        "Various flavors",
+        "Crispy texture"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous",
+        "souvenir"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-15",
+      "name": "东福园",
+      "nameEn": "Dong Fu Yuan",
+      "type": "local",
+      "cuisine": "Ningbo",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "88 Renmin Road, Haishu District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "phone": "+86 574 8739 1888",
+      "hours": "10:30-21:30",
+      "description": "Historic restaurant known for traditional Ningbo dishes.",
+      "dishHighlights": [
+        "Traditional dishes",
+        "Steamed fish",
+        "Braised pork",
+        "Local vegetables"
+      ],
+      "tags": [
+        "local",
+        "historic",
+        "ningbo-cuisine",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-16",
+      "name": "万达广场美食",
+      "nameEn": "Wanda Plaza Food Court",
+      "type": "chain",
+      "cuisine": "Various",
+      "avgPrice": 60,
+      "rating": 4.3,
+      "address": "Wanda Plaza, various locations",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
+      "hours": "10:00-22:00",
+      "description": "Large shopping mall with multiple restaurant options.",
+      "dishHighlights": [
+        "Various cuisines",
+        "Fast food",
+        "Asian food",
+        "Desserts"
+      ],
+      "tags": [
+        "chain",
+        "food-court",
+        "shopping",
+        "variety"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-17",
+      "name": "海底捞火锅",
+      "nameEn": "Haidilao Hotpot",
+      "type": "chain",
+      "cuisine": "Hotpot",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Yinzhou District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
+      "phone": "+86 574 8908 8888",
+      "hours": "24 hours",
+      "description": "Famous chain hotpot with excellent service.",
+      "dishHighlights": [
+        "Spicy hotpot",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free snacks"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "entertainment"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-18",
+      "name": "水磨粉",
+      "nameEn": "Rice Flour Dessert",
+      "type": "local",
+      "cuisine": "Dessert",
+      "avgPrice": 20,
+      "rating": 4.4,
+      "address": "Nantang Old Street",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "hours": "09:00-21:00",
+      "description": "Traditional rice flour desserts - a Ningbo specialty.",
+      "dishHighlights": [
+        "Rice flour balls",
+        "Sweet soup",
+        "Osmanthus syrup"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "sweet"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-19",
+      "name": "宁海麦虾汤",
+      "nameEn": "Ninghai Wheat Shrimp Soup",
+      "type": "local",
+      "cuisine": "Ningbo",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "Ninghai County",
+      "coordinates": {
+        "lat": 29.3422,
+        "lng": 121.4422
+      },
+      "hours": "06:00-14:00",
+      "description": "Famous noodle soup with wheat shrimp shapes - local breakfast.",
+      "dishHighlights": [
+        "Wheat shrimp soup",
+        "Vegetables",
+        "Ginger"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "noodles",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-20",
+      "name": "北仑海鲜",
+      "nameEn": "Beilun Seafood",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 120,
+      "rating": 4.5,
+      "address": "Beilun District",
+      "coordinates": {
+        "lat": 29.9022,
+        "lng": 121.8422
+      },
+      "hours": "10:00-22:00",
+      "description": "Fresh seafood from Beilun port area.",
+      "dishHighlights": [
+        "Steamed crab",
+        "Salt and pepper shrimp",
+        "Grilled fish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "fresh",
+        "port"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-21",
+      "name": "臭菜",
+      "nameEn": "Stinky Vegetable",
+      "type": "local",
+      "cuisine": "Ningbo",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "10:00-22:00",
+      "description": "Famous for fermented stinky vegetable - an acquired taste.",
+      "dishHighlights": [
+        "Stinky vegetable",
+        "Stinky tofu",
+        "Strong flavor"
+      ],
+      "tags": [
+        "local",
+        "ningbo-cuisine",
+        "unique",
+        "acquired-taste"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-22",
+      "name": "浙东老砖",
+      "nameEn": "Zhedong Lao Zhuan",
+      "type": "local",
+      "cuisine": "Ningbo",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Nantang Old Street area",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "hours": "10:00-22:00",
+      "description": "Traditional restaurant serving regional Zhejiang dishes.",
+      "dishHighlights": [
+        "Regional dishes",
+        "Steamed fish",
+        "Local vegetables",
+        "Rice wine"
+      ],
+      "tags": [
+        "local",
+        "zhejiang-cuisine",
+        "traditional",
+        "popular"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-23",
+      "name": "鼓楼夜市",
+      "nameEn": "Gulou Night Market",
+      "type": "local",
+      "cuisine": "Various",
+      "avgPrice": 30,
+      "rating": 4.3,
+      "address": "Gulou area",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "17:00-23:00",
+      "description": "Popular night market near the drum tower.",
+      "dishHighlights": [
+        "Grilled skewers",
+        "Fried rice",
+        "Hot pot",
+        "Snacks"
+      ],
+      "tags": [
+        "local",
+        "night-market",
+        "street-food",
+        "budget"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-24",
+      "name": "糖糕",
+      "nameEn": "Sweet Rice Cake",
+      "type": "local",
+      "cuisine": "Ningbo Dessert",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "Street vendors",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "全天",
+      "description": "Sweet fried rice cakes - a traditional Ningbo snack.",
+      "dishHighlights": [
+        "Sweet rice cake",
+        "Pan-fried",
+        "Various fillings"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "snacks",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-25",
+      "name": "鲜肉月饼",
+      "nameEn": "Fresh Meat Mooncake",
+      "type": "local",
+      "cuisine": "Ningbo Snacks",
+      "avgPrice": 15,
+      "rating": 4.5,
+      "address": "Bakeries around city",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "hours": "06:00-20:00",
+      "description": "Famous for fresh meat mooncakes - a Ningbo specialty.",
+      "dishHighlights": [
+        "Fresh meat mooncake",
+        "Pork filling",
+        "Flaky crust"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "famous",
+        "baked-goods"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-26",
+      "name": "阿婆汤圆",
+      "nameEn": "阿婆汤圆 (汤圆)",
+      "type": "local",
+      "cuisine": "汤圆",
+      "avgPrice": 54,
+      "rating": 4.3,
+      "address": "宁波市市中心区美食街69号",
+      "coordinates": {
+        "lat": 29.8943,
+        "lng": 121.5254
+      },
+      "phone": "+86 010 29636096",
+      "hours": "06:00-14:00",
+      "description": "宁波本地人推荐的汤圆店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "年糕",
+        "海鲜",
+        "汤圆"
+      ],
+      "tags": [
+        "隐藏美食",
+        "老字号",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-28",
+      "name": "巷子年糕",
+      "nameEn": "巷子年糕 (年糕)",
+      "type": "local",
+      "cuisine": "年糕",
+      "avgPrice": 88,
+      "rating": 4.6,
+      "address": "宁波市老城区美食街92号",
+      "coordinates": {
+        "lat": 29.8833,
+        "lng": 121.5527
+      },
+      "phone": "+86 010 27724196",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "宁波本地人推荐的年糕店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "雪菜大黄鱼",
+        "汤圆",
+        "年糕"
+      ],
+      "tags": [
+        "本地人爱去",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-30",
+      "name": "宁波味海鲜",
+      "nameEn": "宁波味海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 139,
+      "rating": 4.0,
+      "address": "宁波市市中心区美食街151号",
+      "coordinates": {
+        "lat": 29.8286,
+        "lng": 121.5284
+      },
+      "phone": "+86 010 56761221",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "年糕",
+        "臭冬瓜",
+        "汤圆"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-32",
+      "name": "正宗臭冬瓜",
+      "nameEn": "正宗臭冬瓜 (臭冬瓜)",
+      "type": "local",
+      "cuisine": "臭冬瓜",
+      "avgPrice": 68,
+      "rating": 4.3,
+      "address": "宁波市新城区美食街53号",
+      "coordinates": {
+        "lat": 29.9129,
+        "lng": 121.5324
+      },
+      "phone": "+86 010 91544878",
+      "hours": "10:00-22:00",
+      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "臭冬瓜",
+        "海鲜",
+        "年糕"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-34",
+      "name": "正宗年糕",
+      "nameEn": "正宗年糕 (年糕)",
+      "type": "local",
+      "cuisine": "年糕",
+      "avgPrice": 98,
+      "rating": 4.3,
+      "address": "宁波市新城区美食街80号",
+      "coordinates": {
+        "lat": 29.84,
+        "lng": 121.5157
+      },
+      "phone": "+86 010 90456322",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "宁波本地人推荐的年糕店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "臭冬瓜",
+        "海鲜",
+        "汤圆"
+      ],
+      "tags": [
+        "本地人爱去",
+        "隐藏美食",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-36",
+      "name": "老字号汤圆",
+      "nameEn": "老字号汤圆 (汤圆)",
+      "type": "local",
+      "cuisine": "汤圆",
+      "avgPrice": 137,
+      "rating": 4.8,
+      "address": "宁波市市中心区美食街148号",
+      "coordinates": {
+        "lat": 29.8305,
+        "lng": 121.5299
+      },
+      "phone": "+86 010 88854318",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "宁波本地人推荐的汤圆店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "臭冬瓜",
+        "雪菜大黄鱼",
+        "年糕"
+      ],
+      "tags": [
+        "排队王",
+        "性价比高",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-38",
+      "name": "老宁波臭冬瓜",
+      "nameEn": "老宁波臭冬瓜 (臭冬瓜)",
+      "type": "local",
+      "cuisine": "臭冬瓜",
+      "avgPrice": 140,
+      "rating": 4.8,
+      "address": "宁波市市中心区美食街73号",
+      "coordinates": {
+        "lat": 29.8742,
+        "lng": 121.4999
+      },
+      "phone": "+86 010 98985289",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "汤圆",
+        "年糕",
+        "雪菜大黄鱼"
+      ],
+      "tags": [
+        "社区老店",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-40",
+      "name": "阿婆年糕",
+      "nameEn": "阿婆年糕 (年糕)",
+      "type": "street",
+      "cuisine": "年糕",
+      "avgPrice": 30,
+      "rating": 4.0,
+      "address": "宁波市新城区美食街158号",
+      "coordinates": {
+        "lat": 29.8679,
+        "lng": 121.5203
+      },
+      "phone": "+86 010 99553832",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "宁波本地人推荐的年糕店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "雪菜大黄鱼",
+        "年糕",
+        "汤圆"
+      ],
+      "tags": [
+        "路边摊",
+        "小吃",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-42",
+      "name": "街边年糕",
+      "nameEn": "街边年糕 (年糕)",
+      "type": "local",
+      "cuisine": "年糕",
+      "avgPrice": 126,
+      "rating": 4.6,
+      "address": "宁波市新城区美食街175号",
+      "coordinates": {
+        "lat": 29.9178,
+        "lng": 121.5057
+      },
+      "phone": "+86 010 89662900",
+      "hours": "06:00-14:00",
+      "description": "宁波本地人推荐的年糕店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "汤圆",
+        "臭冬瓜"
+      ],
+      "tags": [
+        "排队王",
+        "社区老店",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-44",
+      "name": "地道臭冬瓜",
+      "nameEn": "地道臭冬瓜 (臭冬瓜)",
+      "type": "local",
+      "cuisine": "臭冬瓜",
+      "avgPrice": 33,
+      "rating": 4.8,
+      "address": "宁波市市中心区美食街184号",
+      "coordinates": {
+        "lat": 29.8914,
+        "lng": 121.5766
+      },
+      "phone": "+86 010 27004935",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "臭冬瓜",
+        "雪菜大黄鱼",
+        "年糕"
+      ],
+      "tags": [
+        "本地人爱去",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-46",
+      "name": "宁波味臭冬瓜",
+      "nameEn": "宁波味臭冬瓜 (臭冬瓜)",
+      "type": "local",
+      "cuisine": "臭冬瓜",
+      "avgPrice": 115,
+      "rating": 4.7,
+      "address": "宁波市老城区美食街44号",
+      "coordinates": {
+        "lat": 29.8217,
+        "lng": 121.5201
+      },
+      "phone": "+86 010 66073584",
+      "hours": "09:00-21:00",
+      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "雪菜大黄鱼",
+        "汤圆"
+      ],
+      "tags": [
+        "排队王",
+        "本地人爱去",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-48",
+      "name": "巷子臭冬瓜",
+      "nameEn": "巷子臭冬瓜 (臭冬瓜)",
+      "type": "street",
+      "cuisine": "臭冬瓜",
+      "avgPrice": 17,
+      "rating": 4.3,
+      "address": "宁波市市中心区美食街107号",
+      "coordinates": {
+        "lat": 29.9048,
+        "lng": 121.576
+      },
+      "phone": "+86 010 63094558",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "汤圆",
+        "海鲜",
+        "年糕"
+      ],
+      "tags": [
+        "路边摊",
+        "网红打卡",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-50",
+      "name": "宁波味雪菜大黄鱼",
+      "nameEn": "宁波味雪菜大黄鱼 (雪菜大黄鱼)",
+      "type": "local",
+      "cuisine": "雪菜大黄鱼",
+      "avgPrice": 110,
+      "rating": 4.7,
+      "address": "宁波市市中心区美食街59号",
+      "coordinates": {
+        "lat": 29.8528,
+        "lng": 121.5034
+      },
+      "phone": "+86 010 29653226",
+      "hours": "10:00-22:00",
+      "description": "宁波本地人推荐的雪菜大黄鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "雪菜大黄鱼",
+        "臭冬瓜",
+        "海鲜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "社区老店",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-52",
+      "name": "老街臭冬瓜",
+      "nameEn": "老街臭冬瓜 (臭冬瓜)",
+      "type": "cafe",
+      "cuisine": "臭冬瓜",
+      "avgPrice": 52,
+      "rating": 4.6,
+      "address": "宁波市新城区美食街21号",
+      "coordinates": {
+        "lat": 29.8873,
+        "lng": 121.5275
+      },
+      "phone": "+86 010 75698437",
+      "hours": "10:00-22:00",
+      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "臭冬瓜",
+        "雪菜大黄鱼",
+        "海鲜"
+      ],
+      "tags": [
+        "下午茶",
+        "文艺",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-54",
+      "name": "街边雪菜大黄鱼",
+      "nameEn": "街边雪菜大黄鱼 (雪菜大黄鱼)",
+      "type": "local",
+      "cuisine": "雪菜大黄鱼",
+      "avgPrice": 106,
+      "rating": 4.1,
+      "address": "宁波市新城区美食街136号",
+      "coordinates": {
+        "lat": 29.9048,
+        "lng": 121.5376
+      },
+      "phone": "+86 010 82591578",
+      "hours": "10:00-22:00",
+      "description": "宁波本地人推荐的雪菜大黄鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "雪菜大黄鱼",
+        "汤圆",
+        "臭冬瓜"
+      ],
+      "tags": [
+        "性价比高",
+        "隐藏美食",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-56",
+      "name": "老街海鲜",
+      "nameEn": "老街海鲜 (海鲜)",
+      "type": "cafe",
+      "cuisine": "海鲜",
+      "avgPrice": 44,
+      "rating": 4.7,
+      "address": "宁波市市中心区美食街95号",
+      "coordinates": {
+        "lat": 29.844,
+        "lng": 121.5615
+      },
+      "phone": "+86 010 96766835",
+      "hours": "09:00-21:00",
+      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "汤圆",
+        "年糕",
+        "臭冬瓜"
+      ],
+      "tags": [
+        "安静",
+        "文艺",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-58",
+      "name": "老宁波海鲜",
+      "nameEn": "老宁波海鲜 (海鲜)",
+      "type": "street",
+      "cuisine": "海鲜",
+      "avgPrice": 56,
+      "rating": 4.7,
+      "address": "宁波市新城区美食街34号",
+      "coordinates": {
+        "lat": 29.8899,
+        "lng": 121.5486
+      },
+      "phone": "+86 010 22869641",
+      "hours": "17:00-02:00",
+      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "汤圆",
+        "雪菜大黄鱼",
+        "臭冬瓜"
+      ],
+      "tags": [
+        "夜市",
+        "深夜美食",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-60",
+      "name": "老街年糕",
+      "nameEn": "老街年糕 (年糕)",
+      "type": "local",
+      "cuisine": "年糕",
+      "avgPrice": 73,
+      "rating": 4.1,
+      "address": "宁波市新城区美食街138号",
+      "coordinates": {
+        "lat": 29.8314,
+        "lng": 121.5194
+      },
+      "phone": "+86 010 76509898",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "宁波本地人推荐的年糕店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "汤圆",
+        "年糕"
+      ],
+      "tags": [
+        "排队王",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-62",
+      "name": "宁波味汤圆",
+      "nameEn": "宁波味汤圆 (汤圆)",
+      "type": "local",
+      "cuisine": "汤圆",
+      "avgPrice": 51,
+      "rating": 4.3,
+      "address": "宁波市老城区美食街71号",
+      "coordinates": {
+        "lat": 29.8466,
+        "lng": 121.5097
+      },
+      "phone": "+86 010 71874092",
+      "hours": "17:00-02:00",
+      "description": "宁波本地人推荐的汤圆店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "汤圆",
+        "海鲜",
+        "年糕"
+      ],
+      "tags": [
+        "隐藏美食",
+        "排队王",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-64",
+      "name": "老街臭冬瓜",
+      "nameEn": "老街臭冬瓜 (臭冬瓜)",
+      "type": "street",
+      "cuisine": "臭冬瓜",
+      "avgPrice": 26,
+      "rating": 4.5,
+      "address": "宁波市新城区美食街69号",
+      "coordinates": {
+        "lat": 29.9113,
+        "lng": 121.5936
+      },
+      "phone": "+86 010 99487784",
+      "hours": "06:00-14:00",
+      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "汤圆",
+        "雪菜大黄鱼"
+      ],
+      "tags": [
+        "路边摊",
+        "小吃",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-66",
+      "name": "老街海鲜",
+      "nameEn": "老街海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 55,
+      "rating": 4.6,
+      "address": "宁波市市中心区美食街197号",
+      "coordinates": {
+        "lat": 29.8725,
+        "lng": 121.5351
+      },
+      "phone": "+86 010 46253811",
+      "hours": "17:00-02:00",
+      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "雪菜大黄鱼",
+        "海鲜",
+        "年糕"
+      ],
+      "tags": [
+        "隐藏美食",
+        "老字号",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-68",
+      "name": "阿婆海鲜",
+      "nameEn": "阿婆海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 43,
+      "rating": 4.7,
+      "address": "宁波市市中心区美食街183号",
+      "coordinates": {
+        "lat": 29.8918,
+        "lng": 121.5527
+      },
+      "phone": "+86 010 99877840",
+      "hours": "09:00-21:00",
+      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "汤圆",
+        "年糕",
+        "雪菜大黄鱼"
+      ],
+      "tags": [
+        "老字号",
+        "社区老店",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-70",
+      "name": "巷子汤圆",
+      "nameEn": "巷子汤圆 (汤圆)",
+      "type": "cafe",
+      "cuisine": "汤圆",
+      "avgPrice": 36,
+      "rating": 4.2,
+      "address": "宁波市市中心区美食街103号",
+      "coordinates": {
+        "lat": 29.8685,
+        "lng": 121.5812
+      },
+      "phone": "+86 010 23666035",
+      "hours": "17:00-02:00",
+      "description": "宁波本地人推荐的汤圆店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "汤圆",
+        "年糕",
+        "雪菜大黄鱼"
+      ],
+      "tags": [
+        "文艺",
+        "安静",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-72",
+      "name": "传统海鲜",
+      "nameEn": "传统海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 60,
+      "rating": 4.8,
+      "address": "宁波市新城区美食街11号",
+      "coordinates": {
+        "lat": 29.8609,
+        "lng": 121.5611
+      },
+      "phone": "+86 010 33184467",
+      "hours": "06:00-14:00",
+      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "雪菜大黄鱼",
+        "海鲜",
+        "年糕"
+      ],
+      "tags": [
+        "老字号",
+        "排队王",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "ningbo-74",
+      "name": "阿婆雪菜大黄鱼",
+      "nameEn": "阿婆雪菜大黄鱼 (雪菜大黄鱼)",
+      "type": "cafe",
+      "cuisine": "雪菜大黄鱼",
+      "avgPrice": 46,
+      "rating": 4.3,
+      "address": "宁波市老城区美食街77号",
+      "coordinates": {
+        "lat": 29.9104,
+        "lng": 121.5823
+      },
+      "phone": "+86 010 68615173",
+      "hours": "06:00-14:00",
+      "description": "宁波本地人推荐的雪菜大黄鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "臭冬瓜",
+        "汤圆",
+        "雪菜大黄鱼"
+      ],
+      "tags": [
+        "安静",
+        "文艺",
+        "下午茶"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Ningbo Lishe International Airport (NGB)",
+        "duration": "1-3 hours from major cities",
+        "price": "500-1500¥",
+        "frequency": "Daily flights from major cities",
+        "tips": "Airport 15km from city center. Airport bus (12¥) or taxi (80¥) to city."
+      },
+      {
+        "type": "train",
+        "from": "Shanghai (2h), Hangzhou (1h), Xian (8h)",
+        "to": "Ningbo Railway Station / Ningbo East Station",
+        "duration": "1-8 hours",
+        "price": "100-600¥",
+        "frequency": "Frequent high-speed trains",
+        "tips": "High-speed train from Shanghai and Hangzhou is convenient. Both stations have metro."
+      }
+    ],
+    "local": {
+      "metro": [
+        "4 lines operational",
+        "Single ride: 2-7¥",
+        "Connects major areas",
+        "Line 1, 2 for most attractions"
+      ],
+      "bus": [
+        "Extensive network",
+        "Single ride: 2¥",
+        "Tourist bus available",
+        "Air-conditioned"
+      ],
+      "taxi": [
+        "Starting fare: 11¥ (first 3km)",
+        "Night surcharge: 20% extra",
+        "Most attractions 20-60¥",
+        "Didi app recommended"
+      ],
+      "bike": [
+        "Mobike, Meituan bikes available",
+        "City cycling possible",
+        "Lake area great for cycling",
+        "Unlock: 1¥ per ride"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "宁波香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Ningbo",
+      "budget": "luxury",
+      "priceRange": "¥1200-2500/night",
+      "address": "168 Renmin Road, Jiangxia District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "rating": 4.7,
+      "highlights": [
+        "River views",
+        "Central location",
+        "Luxury facilities",
+        "Multiple dining"
+      ],
+      "bookingTips": "Best location. Book river view rooms. Excellent service."
+    },
+    {
+      "name": "宁波泛太平洋酒店",
+      "nameEn": "Pan Pacific Hotel Ningbo",
+      "budget": "luxury",
+      "priceRange": "¥800-1800/night",
+      "address": "99 Chuangmao Road, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Modern luxury",
+        "City views",
+        "Business facilities",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Good for business travelers. Book city view rooms."
+    },
+    {
+      "name": "宁波南苑饭店",
+      "nameEn": "Nanyuan Hotel Ningbo",
+      "budget": "luxury",
+      "priceRange": "¥800-1500/night",
+      "address": "2 Linhe Middle Road, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central location",
+        "Historic luxury",
+        "Good service",
+        "Renovated rooms"
+      ],
+      "bookingTips": "Book during off-peak. Good value for location."
+    },
+    {
+      "name": "宁波威斯汀酒店",
+      "nameEn": "The Westin Ningbo",
+      "budget": "luxury",
+      "priceRange": "¥1000-2000/night",
+      "address": "75 Xianfeng Road, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Modern luxury",
+        "Central location",
+        "Westin quality",
+        "Good breakfast"
+      ],
+      "bookingTips": "Westin brand quality. Book direct for best rates."
+    },
+    {
+      "name": "如家酒店宁波天一广场店",
+      "nameEn": "Home Inn Ningbo Tianyi Square",
+      "budget": "budget",
+      "priceRange": "¥150-300/night",
+      "address": "Near Tianyi Square",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near Tianyi",
+        "Budget-friendly",
+        "Clean rooms",
+        "Central location"
+      ],
+      "bookingTips": "Best budget option in central area."
+    },
+    {
+      "name": "宁波东钱湖希尔顿酒店",
+      "nameEn": "Hilton Ningbo Dongqian Lake",
+      "budget": "luxury",
+      "priceRange": "¥1000-2000/night",
+      "address": "Dongqian Lake area",
+      "coordinates": {
+        "lat": 29.8022,
+        "lng": 121.6422
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Lake views",
+        "Resort facilities",
+        "Scenic location",
+        "Golf course"
+      ],
+      "bookingTips": "Perfect for lake vacation. Book lake view rooms."
+    },
+    {
+      "name": "宁波南塘客栈",
+      "nameEn": "Ningbo Nantang Inn",
+      "budget": "budget",
+      "priceRange": "¥200-500/night",
+      "address": "Nantang Old Street",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Old street location",
+        "Traditional style",
+        "Central location",
+        "Boutique"
+      ],
+      "bookingTips": "Unique experience on old street. Book during off-peak."
+    },
+    {
+      "name": "宁波开元名都大酒店",
+      "nameEn": "New Century Grand Hotel Ningbo",
+      "budget": "luxury",
+      "priceRange": "¥600-1200/night",
+      "address": "1688 Zhongxin Road, Yinzhou District",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5622
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Modern facilities",
+        "Large rooms",
+        "Good service",
+        "Value"
+      ],
+      "bookingTips": "Good value luxury. Book weekend rates."
+    },
+    {
+      "name": "宁波华侨豪生大酒店",
+      "nameEn": "Howard Johnson Ningbo",
+      "budget": "luxury",
+      "priceRange": "¥500-1000/night",
+      "address": "1 Huaisheng Road, Jiangxia District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "rating": 4.5,
+      "highlights": [
+        "River location",
+        "Central",
+        "Comfortable rooms",
+        "Good breakfast"
+      ],
+      "bookingTips": "Good central location. Book river view rooms."
+    },
+    {
+      "name": "宁波天一阁博物馆酒店",
+      "nameEn": "Ningbo Tianyi Pavilion Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-600/night",
+      "address": "Near Tianyi Pavilion",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near museum",
+        "Cultural area",
+        "Modern",
+        "Good service"
+      ],
+      "bookingTips": "Perfect for cultural tourists. Book during off-peak."
+    },
+    {
+      "name": "宁波老外滩江景酒店",
+      "nameEn": "Ningbo Old Bund River View Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-700/night",
+      "address": "Near Old Bund",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "rating": 4.5,
+      "highlights": [
+        "River views",
+        "Bund area",
+        "Historic",
+        "Modern"
+      ],
+      "bookingTips": "Great Bund views. Perfect for evening walks."
+    },
+    {
+      "name": "宁波普陀山脚酒店",
+      "nameEn": "Ningbo Putuo Mountain Foot Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-550/night",
+      "address": "Near Putuo Mountain",
+      "coordinates": {
+        "lat": 29.9722,
+        "lng": 121.9822
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Putuo",
+        "Pilgrimage route",
+        "Buddhist culture",
+        "Value"
+      ],
+      "bookingTips": "Perfect for Putuo Mountain visitors."
+    },
+    {
+      "name": "宁波月湖酒店",
+      "nameEn": "Ningbo Moon Lake Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-650/night",
+      "address": "Moon Lake area",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Lake views",
+        "Quiet area",
+        "Central location",
+        "Traditional"
+      ],
+      "bookingTips": "Peaceful location. Great for romantic trips."
+    },
+    {
+      "name": "宁波博物馆酒店",
+      "nameEn": "Ningbo Museum Hotel",
+      "budget": "budget",
+      "priceRange": "¥150-300/night",
+      "address": "Near Museum area",
+      "coordinates": {
+        "lat": 29.8622,
+        "lng": 121.5522
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near museum",
+        "Modern",
+        "Budget-friendly",
+        "Clean"
+      ],
+      "bookingTips": "Great for museum lovers. Budget option."
+    },
+    {
+      "name": "宁波象山海鲜民宿",
+      "nameEn": "Ningbo Xiangshan Seafood Homestay",
+      "budget": "budget",
+      "priceRange": "¥200-450/night",
+      "address": "Xiangshan area",
+      "coordinates": {
+        "lat": 29.4722,
+        "lng": 121.8622
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Seafood",
+        "Island scenery",
+        "Local experience",
+        "Fresh"
+      ],
+      "bookingTips": "Perfect for seafood lovers. Book weekend."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Ningbo",
+      "howToUse": [
+        "Download app",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English mode available"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at traditional markets",
+      "howToUse": [
+        "ATM everywhere",
+        "Banks common"
+      ],
+      "tips": [
+        "Keep 100¥ for markets",
+        "Most restaurants accept cards"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "history",
+      "title": "Ancient Port City",
+      "content": "Ningbo is one of China's oldest port cities, dating back over 1,000 years. It was a major stop on the Maritime Silk Road and remains an important port today.",
+      "importance": "high"
+    },
+    {
+      "category": "library",
+      "title": "Tianyi Pavilion",
+      "content": "The Tianyi Pavilion is China's oldest private library, built in 1561. The name means 'First under Heaven' and it houses rare books and classical gardens.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Ningbo Cuisine",
+      "content": "Ningbo cuisine is known for its sweet and savory flavors. Must-try: soup dumplings (汤团), rice cakes (年糕), and the famous stinky vegetable (臭菜).",
+      "importance": "high"
+    },
+    {
+      "category": "buddhism",
+      "title": "Buddhist Heritage",
+      "content": "Ningbo is an important Buddhist center with ancient temples like Tiantong Temple and Ayuwang Temple that date back over 1,700 years.",
+      "importance": "medium"
+    },
+    {
+      "category": "water",
+      "title": "Water Towns",
+      "content": "The area around Ningbo has several ancient water towns like Qiantong that offer a glimpse of traditional Chinese life along canals.",
+      "importance": "medium"
+    },
+    {
+      "category": "seafood",
+      "title": "Fresh Seafood",
+      "content": "Being a coastal city, Ningbo is famous for fresh seafood. The Dongqian Lake area has famous 'boat cuisine' with fish caught from the lake.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Colonial Architecture",
+      "content": "The Old Bund shows European colonial influence from the 1800s when Ningbo was a treaty port. The architecture blends Chinese and Western styles.",
+      "importance": "medium"
+    },
+    {
+      "category": "tea",
+      "title": "Tea Culture",
+      "content": "Ningbo has famous green tea plantations on Fuquan Mountain overlooking Dongqian Lake. Tea picking and tasting can be combined with hiking.",
+      "importance": "medium"
+    },
+    {
+      "category": "legend",
+      "title": "Butterfly Lovers",
+      "content": "The famous Chinese legend 'Butterfly Lovers' (梁祝) is set in the Ningbo area. The Liangshanbo Park tells this romantic story.",
+      "importance": "low"
+    },
+    {
+      "category": "dialect",
+      "title": "Ningbo Dialect",
+      "content": "Ningbo dialect is a distinct Wu Chinese dialect, different from Mandarin. It preserves ancient Chinese pronunciation features valued by linguists.",
+      "importance": "low"
+    },
+    {
+      "category": "business",
+      "title": "Business Hub",
+      "content": "Ningbo is a major commercial hub with busy ports. The city has thriving trade and manufacturing industries.",
+      "importance": "medium"
+    },
+    {
+      "category": "nature",
+      "title": "Dongqian Lake",
+      "content": "Dongqian Lake is one of Zhejiang's most beautiful lakes with scenic bike paths, gardens, and temples to explore. Rent a bike to tour the lake.",
+      "importance": "high"
+    },
+    {
+      "category": "art",
+      "title": "Calligraphy Heritage",
+      "content": "Ningbo has produced many famous calligraphers. The Shamenghai Academy honors the famous calligrapher and offers cultural exhibits.",
+      "importance": "low"
+    },
+    {
+      "category": "temple",
+      "title": "Buddhist Mountains",
+      "content": "Xuedou Mountain is a sacred Buddhist mountain with the world's largest Maitreya Buddha statue. Combined with hiking and temple visits.",
+      "importance": "medium"
+    },
+    {
+      "category": "snacks",
+      "title": "Famous Snacks",
+      "content": "Ningbo has many famous snacks: oil-fried dough twists (油赞子), rice cakes (年糕), and sweet rice dumplings (汤团) are must-tries.",
+      "importance": "medium"
+    },
+    {
+      "category": "handicrafts",
+      "title": "Traditional Crafts",
+      "content": "Look for traditional Ningbo crafts like Zhoushan wood carving and local embroidery as souvenirs from the area.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "宁波急救中心",
+      "nameEn": "Ningbo Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "宁波市公安局",
+      "nameEn": "Ningbo Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "hospital",
+      "name": "宁波第一医院",
+      "nameEn": "Ningbo First Hospital",
+      "phone": "+86 574 8730 5569",
+      "address": "59 Liuting Street, Haishu District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5522
+      },
+      "notes": "English-speaking staff available"
+    },
+    {
+      "type": "hospital",
+      "name": "宁波大学医学院附属医院",
+      "nameEn": "Affiliated Hospital of Ningbo University School of Medicine",
+      "phone": "+86 574 8703 5514",
+      "address": "247 Renmin Road, Jiangxia District",
+      "coordinates": {
+        "lat": 29.8722,
+        "lng": 121.5622
+      },
+      "notes": "Another major hospital"
+    },
+    {
+      "type": "tourist-police",
+      "name": "宁波旅游警察",
+      "nameEn": "Ningbo Tourist Police",
+      "phone": "+86 574 8719 2810",
+      "notes": "English-speaking tourist police"
+    },
+    {
+      "type": "fire",
+      "name": "宁波消防",
+      "nameEn": "Ningbo Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻上海总领事馆",
+      "nameEn": "UK Consulate General Shanghai",
+      "phone": "+86 21 6179 8300",
+      "address": "Shanghai",
+      "notes": "For UK citizens in Ningbo region"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻上海总领事馆",
+      "nameEn": "US Consulate General Shanghai",
+      "phone": "+86 21 8011 2400",
+      "address": "Shanghai",
+      "notes": "For US citizens in Ningbo region"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻上海总领事馆",
+      "nameEn": "Japan Consulate General Shanghai",
+      "phone": "+86 21 5257 4788",
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Ningbo region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻上海总领事馆",
+      "nameEn": "South Korea Consulate General Shanghai",
+      "phone": "+86 21 5108 0700",
+      "address": "Shanghai",
+      "notes": "For Korean citizens in Ningbo region"
+    },
+    {
+      "type": "pharmacy",
+      "name": "宁波大药房",
+      "nameEn": "Ningbo Pharmacy",
+      "phone": "+86 574 8733 8888",
+      "address": "Multiple locations",
+      "notes": "24-hour pharmacy available"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Ningbo dialect (Wu Chinese)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

@@ -1,0 +1,3361 @@
+{
+  "slug": "shenzhen",
+  "name": "深圳",
+  "nameEn": "Shenzhen",
+  "country": "China",
+  "population": "17.56 million",
+  "coordinates": {
+    "lat": 22.5431,
+    "lng": 114.0579
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Shenzhen is China's first Special Economic Zone and a global tech hub. A modern megacity that transformed from a fishing village to one of the world's fastest-growing cities in just 40 years. Home to tech giants like Tencent, Huawei, and BYD. Features innovative architecture, theme parks, and easy access to Hong Kong.",
+  "coverImage": "https://images.unsplash.com/photo-1696678788380-48029fab03aa?w=1200&q=80",
+  "highlights": [
+    "Window of the World - Global landmarks",
+    "Shenzhen Bay - Coastal scenery",
+    "OCT-LOFT - Arts and culture hub",
+    "Dafen Village - Original art district",
+    "Mizuki Piazza - Coastal living mall"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "15C (59F)",
+    "tips": "Best visited in winter (Nov-Feb) when weather is mild and pleasant. Summer is hot, humid with frequent typhoons. Spring is rainy. Always bring sunscreen and hydration."
+  },
+  "attractions": [
+    {
+      "id": "window-of-the-world",
+      "name": "世界之窗",
+      "nameEn": "Window of the World",
+      "category": "theme-park",
+      "image": "https://images.unsplash.com/photo-1565344953548-705d4d1b3660?w=800&q=85",
+      "description": "Theme park featuring miniature replicas of famous world landmarks including Eiffel Tower, pyramids, and Taj Mahal.",
+      "address": "9037 Huaqiaocheng, Nanshan District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9272
+      },
+      "openingHours": "09:00-22:00",
+      "ticketPrice": "220¥ (adult), 110¥ (children)",
+      "recommendedVisitTime": "4-6 hours",
+      "highlights": [
+        "Miniature Eiffel Tower",
+        "World Heritage sites",
+        "Live performances",
+        "Evening fireworks"
+      ],
+      "tips": "Start early to cover all attractions. Evening is best for photos. Book tickets online for discount."
+    },
+    {
+      "id": "oct-loft",
+      "name": "华侨城创意园",
+      "nameEn": "OCT-LOFT Creative Culture Park",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+      "description": "Former industrial complex converted into vibrant arts and design hub with galleries, boutiques, cafes, and creative studios.",
+      "address": "North Area of OCT, Nanshan District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9572
+      },
+      "openingHours": "Open 24 hours (shops 10:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Art galleries",
+        "Design shops",
+        "Coffee houses",
+        "Live music venues"
+      ],
+      "tips": "Best on weekends for markets and events. The area transforms during Chinese New Year with art exhibitions."
+    },
+    {
+      "id": "dafen-village",
+      "name": "大芬油画村",
+      "nameEn": "Dafen Oil Painting Village",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=85",
+      "description": "The world's largest oil painting production base, where millions of replicas of famous artworks are painted. Now also an art destination.",
+      "address": "Dafen Village, Longgang District",
+      "coordinates": {
+        "lat": 22.6522,
+        "lng": 114.2472
+      },
+      "openingHours": "Open 24 hours (galleries 09:00-18:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Oil painting workshops",
+        "Art galleries",
+        "Custom portrait service",
+        "Art supply stores"
+      ],
+      "tips": "Bargaining expected when buying paintings. Quality varies widely. Commission paintings on-site at reasonable prices."
+    },
+    {
+      "id": "shenzhen-bay",
+      "name": "深圳湾公园",
+      "nameEn": "Shenzhen Bay Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85",
+      "description": "Coastal park along Shenzhen Bay with scenic waterfront, mangroves, bird watching, and Hong Kong skyline views.",
+      "address": "Shenzhen Bay, Nanshan District",
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 113.8972
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Hong Kong skyline view",
+        "Bird watching",
+        "Coastal trail",
+        "Sunrise point"
+      ],
+      "tips": "Best at sunset for Hong Kong skyline photos. Morning for bird watching. Bring binoculars."
+    },
+    {
+      "id": "mizuki-piazza",
+      "name": "海上世界",
+      "nameEn": "Sea World (Mizuki Piazza)",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1682325373516-cffedbb35003?w=800&q=85",
+      "description": "Italian-themed waterfront complex centered on a historic Italian cruise ship, featuring restaurants, bars, and entertainment.",
+      "address": "Mizuki Piazza, Shekou, Nanshan District",
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 113.9172
+      },
+      "openingHours": "Open 24 hours (restaurants 11:00-02:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Italian cruise ship Mingzhu",
+        "International restaurants",
+        "Waterfront夜景",
+        "Live music"
+      ],
+      "tips": "Evening visit recommended for atmosphere. Great for seafood restaurants. Take ferry from Hong Kong for scenic arrival."
+    },
+    {
+      "id": "happy-valley",
+      "name": "欢乐谷",
+      "nameEn": "Happy Valley Shenzhen",
+      "category": "theme-park",
+      "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=800&q=85",
+      "description": "Large amusement park with roller coasters, water rides, and performances for all ages.",
+      "address": "Overseas Chinese Town, Nanshan District",
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 113.9672
+      },
+      "openingHours": "09:30-22:00 (varies by season)",
+      "ticketPrice": "260¥ (full day)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Mountain Flying coaster",
+        "Swing carousel",
+        "Water slides",
+        "Evening shows"
+      ],
+      "tips": "Weekday visits avoid crowds. Height restrictions on rides. Re-entry allowed with hand stamp."
+    },
+    {
+      "id": "ping-an-center",
+      "name": "平安金融中心",
+      "nameEn": "Ping An Finance Center",
+      "category": "modern",
+      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800",
+      "description": "The second tallest building in China with observation deck offering panoramic city views from 542 meters.",
+      "address": "5033 Yitian Road, Futian District",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "180¥ (observation deck)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "540m height",
+        "360-degree views",
+        "Sky anchors",
+        "Glass floor"
+      ],
+      "tips": "Book tickets online to avoid queues. Go at sunset for day and night views. Avoid foggy days."
+    },
+    {
+      "id": "coastal-city",
+      "name": "海岸城",
+      "nameEn": "Coastal City Mall",
+      "category": "shopping",
+      "image": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=800",
+      "description": "Large waterfront shopping complex with international brands, restaurants, and entertainment in Nanshan.",
+      "address": "Wenwei Road, Nanshan District",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9272
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "International brands",
+        "Food court",
+        "Cinema",
+        "Waterfront views"
+      ],
+      "tips": "Good for rainy days. Connected to Metro. Excellent restaurants on upper floors."
+    },
+    {
+      "id": "oct-eastern",
+      "name": "东部华侨城",
+      "nameEn": "OCT Eastern",
+      "category": "theme-park",
+      "image": "https://images.unsplash.com/photo-1562070304-ed6c65e1d838?w=800&q=85",
+      "description": "Large ecological tourism zone with茶溪谷 theme park,大侠谷云海谷, and hot springs. Combines natural scenery with entertainment.",
+      "address": "Yangtai Mountain, Yantian District",
+      "coordinates": {
+        "lat": 22.6022,
+        "lng": 114.2572
+      },
+      "openingHours": "09:30-18:00",
+      "ticketPrice": "200¥ (one park), 300¥ (two parks)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Tea Stream Valley",
+        "Grand Canyon",
+        "Hot spring resort",
+        "Mountaintop monastery"
+      ],
+      "tips": "Stay overnight at the resort hotel for full experience. Wear comfortable shoes for hiking."
+    },
+    {
+      "id": "dameisha",
+      "name": "大梅沙海滨公园",
+      "nameEn": "Dameisha Beach Park",
+      "category": "beach",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
+      "description": "Popular sandy beach with clear waters and scenic coastline. Free entry public beach with facilities.",
+      "address": "Dameisha, Yantian District",
+      "coordinates": {
+        "lat": 22.5922,
+        "lng": 114.2872
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-5 hours",
+      "highlights": [
+        "Golden sand beach",
+        "Swimming area",
+        "Sculpture park",
+        "Coastal promenade"
+      ],
+      "tips": "Arrive early on weekends to avoid crowds. No outside food allowed. Rent umbrella and chair on-site."
+    },
+    {
+      "id": "xiaomeisha",
+      "name": "小梅沙海洋世界",
+      "nameEn": "Xiaomeisha Sea World",
+      "category": "aquarium",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
+      "description": "Marine aquarium with dolphin shows, polar exhibits, and underwater tunnels. Great for families.",
+      "address": "Xiaomeisha, Yantian District",
+      "coordinates": {
+        "lat": 22.5822,
+        "lng": 114.2972
+      },
+      "openingHours": "09:30-17:30",
+      "ticketPrice": "170¥ (adult), 85¥ (children)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Dolphin performances",
+        "Polar bear exhibit",
+        "Underwater tunnel",
+        "Shark tank"
+      ],
+      "tips": "Shows at scheduled times, check schedule on arrival. Good for rainy days."
+    },
+    {
+      "id": "dutch-flower-town",
+      "name": "荷兰花卉小镇",
+      "nameEn": "Dutch Flower Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800",
+      "description": "European-style flower market with Dutch architecture, flower shops, and cafes. Free entry.",
+      "address": "Qianhai Road, Nanshan District",
+      "coordinates": {
+        "lat": 22.5022,
+        "lng": 113.8972
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Dutch windmill",
+        "Flower markets",
+        "European architecture",
+        "Coffee shops"
+      ],
+      "tips": "Best in spring for flower displays. Popular for wedding photos. Great for Instagram shots."
+    },
+    {
+      "id": "ganjia-ancient-town",
+      "name": "甘坑古镇",
+      "nameEn": "Ganjia Ancient Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800",
+      "description": "Historical Hakka village with traditional architecture, museums, and local snacks. Evening lighting spectacular.",
+      "address": "Ganjia Village, Longgang District",
+      "coordinates": {
+        "lat": 22.6822,
+        "lng": 114.2672
+      },
+      "openingHours": "09:00-22:00",
+      "ticketPrice": "Free (some attractions inside)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Traditional Hakka houses",
+        "Ancient wells",
+        "Folk museums",
+        "Local snacks"
+      ],
+      "tips": "Visit in late afternoon to see both day and night scenes. Try Hakka specialties."
+    },
+    {
+      "id": "guanlan-art-village",
+      "name": "观澜版画村",
+      "nameEn": "Guanlan Original Art Village",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
+      "description": "Traditional Hakka village turned artist colony. Known for printmaking and traditional buildings.",
+      "address": "Guanlan, Longhua District",
+      "coordinates": {
+        "lat": 22.7222,
+        "lng": 114.0572
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Woodblock printing workshops",
+        "Hakka architecture",
+        "Rice paddies",
+        "Art galleries"
+      ],
+      "tips": "Combine with nearby Guanlan Hot Spring. Morning visits best for photos."
+    },
+    {
+      "id": "dapeng-fort",
+      "name": "大鹏所城",
+      "nameEn": "Dapeng Ancient Fortress",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85",
+      "description": "600-year-old Ming Dynasty coastal fortress. Birthplace of China's modern navy and Hakka culture.",
+      "address": "Dapeng Peninsula, Longgang District",
+      "coordinates": {
+        "lat": 22.5822,
+        "lng": 114.4972
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ming walls",
+        "Hakka ancestral halls",
+        "Coastal views",
+        "Historical museums"
+      ],
+      "tips": "Combine with nearby beaches. Try Dapeng cuisine. Half-day trip recommended."
+    },
+    {
+      "id": "jiaochangwei-beach",
+      "name": "较场尾海滩",
+      "nameEn": "Jiaochangwei Beach",
+      "category": "beach",
+      "image": "https://images.unsplash.com/photo-1677728050942-19232bd2e9e8?w=800&q=85",
+      "description": "Popular beach destination known for surfing, beach bars, and colorful seaside cabins.",
+      "address": "Dapeng Peninsula, Longgang District",
+      "coordinates": {
+        "lat": 22.5722,
+        "lng": 114.4872
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Half-day to full day",
+      "highlights": [
+        "Surfing schools",
+        "Beach bars",
+        "Colorful cabins",
+        "Sunrise views"
+      ],
+      "tips": "Known as 'Shenzhen's Bali'. Stay overnight for beach party atmosphere. Try fresh seafood."
+    },
+    {
+      "id": "mission-hills",
+      "name": "观澜湖高尔夫",
+      "nameEn": "Mission Hills Golf Club",
+      "category": "sports",
+      "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800",
+      "description": "World's largest golf club with 12 courses. Hosts international tournaments.",
+      "address": "Mission Hills, Longhua District",
+      "coordinates": {
+        "lat": 22.7522,
+        "lng": 114.0672
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "800-2000¥ per round",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "12 signature courses",
+        "Spafirst-class spa",
+        "Tennis center",
+        "Wildlife zone"
+      ],
+      "tips": "Book in advance. Non-golfers can enjoy spa and restaurants. Stay at resort hotel."
+    },
+    {
+      "id": "shenzhen-museum",
+      "name": "深圳博物馆",
+      "nameEn": "Shenzhen Museum",
+      "category": "museum",
+      "image": "https://images.unsplash.com/photo-1759343801809-0cb4b96dd23d?w=800&q=85",
+      "description": "Modern museum showcasing Shenzhen's history from fishing village to megacity. Free entry.",
+      "address": "市民中心, 福田区",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0472
+      },
+      "openingHours": "10:00-18:00 (closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Shenzhen history exhibits",
+        "Special exhibitions",
+        "Free guided tours",
+        "Cultural programs"
+      ],
+      "tips": "Combine with nearby Shenzhen Convention Center. Good for rainy days."
+    },
+    {
+      "id": "chunjee-festival",
+      "name": "春 节",
+      "nameEn": "Chinese New Year in Shenzhen",
+      "category": "festival",
+      "image": "https://images.unsplash.com/photo-1586452185953-c06f54b1145c?w=800&q=85",
+      "description": "Major citywide celebrations during Chinese New Year with flowers, lights, and cultural events.",
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      "openingHours": "Varies by event",
+      "ticketPrice": "Varies",
+      "recommendedVisitTime": "1-3 days",
+      "highlights": [
+        "Lianhua Hill flower display",
+        "Happy Valley¥ events",
+        "Cultural performances",
+        "Light festivals"
+      ],
+      "tips": "Book hotels early. City empties after 3rd day. Good time to visit theme parks without crowds."
+    },
+    {
+      "id": "shenzhen-20",
+      "name": "大梅沙海滨公园",
+      "nameEn": " Dameisha Coastal Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=85",
+      "description": "Popular coastal park with sandy beach and recreational facilities.",
+      "address": "Dameisha, Yantian District",
+      "coordinates": {
+        "lat": 22.5889,
+        "lng": 114.2822
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Beach",
+        "Swimming",
+        "Coastal views"
+      ],
+      "tips": "Best on weekdays to avoid crowds. Take sun protection."
+    },
+    {
+      "id": "lianhua-mountain",
+      "name": "莲花山公园",
+      "nameEn": "Lianhua Mountain Park",
+      "category": "park",
+      "description": "深圳中心区的标志性公园，山顶有邓小平铜像。登顶可俯瞰深圳CBD天际线和市民中心，是深圳市民休闲和游客打卡的热门地点。",
+      "address": "深圳市福田区红荔路6030号",
+      "coordinates": {
+        "lat": 22.5531,
+        "lng": 114.0579
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "邓小平铜像",
+        "CBD天际线",
+        "风筝广场",
+        "椰林草坪"
+      ],
+      "tips": "傍晚登顶可以看日落和CBD灯光。周末有风筝表演。",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=85"
+    },
+    {
+      "id": "dongmen-pedestrian-street",
+      "name": "东门步行街",
+      "nameEn": "Dongmen Pedestrian Street",
+      "category": "street",
+      "description": "深圳历史最悠久的商业街区，有300多年历史。如今是年轻人购物天堂，汇集各种潮流服饰、小吃和娱乐场所，人流量极大。",
+      "address": "深圳市罗湖区东门中路",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.1172
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "潮流购物",
+        "街头小吃",
+        "老街历史",
+        "人潮涌动"
+      ],
+      "tips": "周末人非常多。注意防扒。可以砍价购物。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "huaqiangbei",
+      "name": "华强北",
+      "nameEn": "Huaqiangbei Electronics Market",
+      "category": "market",
+      "description": "全球最大的电子产品集散地，被誉为'中国电子第一街'。这里可以找到各种电子产品、元器件和数码配件，是科技爱好者的天堂。",
+      "address": "深圳市福田区华强北路",
+      "coordinates": {
+        "lat": 22.5431,
+        "lng": 114.0879
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "电子产品",
+        "数码配件",
+        "山寨文化",
+        "创客空间"
+      ],
+      "tips": "砍价是必须的。注意辨别产品质量。可以逛半天都不够。",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=85"
+    },
+    {
+      "id": "nantou-ancient-city",
+      "name": "南头古城",
+      "nameEn": "Nantou Ancient City",
+      "category": "street",
+      "description": "深圳最古老的城邑，有1700多年历史。经过改造后融合了传统岭南建筑和现代文创空间，是深圳历史与现代交融的缩影。",
+      "address": "深圳市南山区南头古城",
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 113.9272
+      },
+      "openingHours": "全天开放（店铺10:00-22:00）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "古城门",
+        "文创空间",
+        "岭南建筑",
+        "特色美食"
+      ],
+      "tips": "改造后的古城有很多网红店。适合拍照打卡和品尝美食。",
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-library",
+      "name": "深圳图书馆",
+      "nameEn": "Shenzhen Library",
+      "category": "museum",
+      "description": "深圳中心区的现代化图书馆，建筑设计前卫，藏书丰富。是深圳读书月活动的主会场，也是市民学习和休闲的文化空间。",
+      "address": "深圳市福田区福中一路2001号",
+      "coordinates": {
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      "openingHours": "09:00-21:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "现代建筑",
+        "数字图书馆",
+        "读书空间",
+        "文化活动"
+      ],
+      "tips": "可以免费办借书证。和音乐厅、少年宫相邻，可以一起参观。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-concert-hall",
+      "name": "深圳音乐厅",
+      "nameEn": "Shenzhen Concert Hall",
+      "category": "landmark",
+      "description": "由日本建筑师矶崎新设计的现代音乐厅，建筑造型独特如金色大厅。是深圳举办大型交响乐和音乐会的主要场馆。",
+      "address": "深圳市福田区福中一路2016号",
+      "coordinates": {
+        "lat": 22.5441,
+        "lng": 114.0589
+      },
+      "openingHours": "演出时间开放",
+      "ticketPrice": "演出票价不等",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "金色大厅",
+        "交响乐演出",
+        "现代建筑",
+        "声学设计"
+      ],
+      "tips": "建议提前购票。建筑外观也值得拍照。",
+      "image": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-civic-center",
+      "name": "深圳市民中心",
+      "nameEn": "Shenzhen Civic Center",
+      "category": "landmark",
+      "description": "深圳市政府所在地，建筑造型如大鹏展翅，是深圳的标志性建筑之一。广场面积巨大，是深圳举办大型活动和市民休闲的场所。",
+      "address": "深圳市福田区福中三路",
+      "coordinates": {
+        "lat": 22.5431,
+        "lng": 114.0579
+      },
+      "openingHours": "广场全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "大鹏展翅建筑",
+        "市民广场",
+        "灯光秀",
+        "城市地标"
+      ],
+      "tips": "晚上有灯光秀表演。可以和莲花山公园一起游览。",
+      "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-bay-bridge",
+      "name": "深圳湾大桥",
+      "nameEn": "Shenzhen Bay Bridge",
+      "category": "landmark",
+      "description": "连接深圳和香港的跨海大桥，全长5.5公里。从深圳湾公园可以远眺大桥全貌，是深圳连接香港的重要通道。",
+      "address": "深圳市南山区深圳湾",
+      "coordinates": {
+        "lat": 22.4722,
+        "lng": 113.8972
+      },
+      "openingHours": "全天可观赏",
+      "ticketPrice": "免费（观赏）",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "跨海大桥",
+        "香港边界",
+        "海景",
+        "日落观赏"
+      ],
+      "tips": "在深圳湾公园可以拍到大桥全景。傍晚日落时最美。",
+      "image": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=800&q=85"
+    },
+    {
+      "id": "xianhu-botanical-garden",
+      "name": "仙湖植物园",
+      "nameEn": "Fairy Lake Botanical Garden",
+      "category": "nature",
+      "description": "深圳最大的植物园，占地546公顷。园内有弘法寺、化石森林、仙湖等景点，集植物科研、科普教育和旅游休闲于一体。",
+      "address": "深圳市罗湖区莲塘仙湖路160号",
+      "coordinates": {
+        "lat": 22.5731,
+        "lng": 114.1679
+      },
+      "openingHours": "06:00-21:00",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "弘法寺",
+        "化石森林",
+        "仙湖",
+        "沙漠植物区"
+      ],
+      "tips": "建议乘坐园内大巴到山顶然后走下来。弘法寺可以免费上香。",
+      "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-university",
+      "name": "深圳大学",
+      "nameEn": "Shenzhen University",
+      "category": "landmark",
+      "description": "深圳第一所综合性大学，校园环境优美，建筑风格现代。是深圳培养创新人才的摇篮，马化腾等知名企业家毕业于此。",
+      "address": "深圳市南山区南海大道3688号",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9372
+      },
+      "openingHours": "校园开放参观",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "现代校园",
+        "科技氛围",
+        "图书馆",
+        "创业文化"
+      ],
+      "tips": "可以在校园内散步感受大学氛围。附近的桂庙新村有很多美食。",
+      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?w=800&q=85"
+    },
+    {
+      "id": "coco-park",
+      "name": "星河COCO Park",
+      "nameEn": "COCO Park",
+      "category": "market",
+      "description": "深圳福田CBD的大型购物中心，集购物、餐饮、娱乐于一体。有各种国际品牌和特色餐厅，是深圳白领休闲消费的主要场所。",
+      "address": "深圳市福田区福华三路",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0572
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "国际品牌",
+        "美食广场",
+        "电影院",
+        "屋顶花园"
+      ],
+      "tips": "周末人多。地铁购物公园站直达。附近有很多酒吧。",
+      "image": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-wetland-park",
+      "name": "深圳红树林海滨生态公园",
+      "nameEn": "Mangrove Seaside Ecological Park",
+      "category": "nature",
+      "description": "深圳湾畔的红树林保护区，是深圳最重要的生态绿地之一。每年有大量候鸟在此栖息，是观鸟和亲近自然的好地方。",
+      "address": "深圳市福田区深圳湾畔",
+      "coordinates": {
+        "lat": 22.5022,
+        "lng": 113.9672
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "红树林",
+        "候鸟观赏",
+        "海滨栈道",
+        "日落美景"
+      ],
+      "tips": "秋冬季节候鸟最多。带望远镜观鸟效果更好。",
+      "image": "https://images.unsplash.com/photo-1776000148698-88f4ea431ded?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-folk-village",
+      "name": "锦绣中华民俗村",
+      "nameEn": "Splendid China Folk Village",
+      "category": "park",
+      "description": "中国最早的主题公园之一，微缩景观区展示了中国各地著名景点的缩小版，民俗村展示了各少数民族的建筑和文化。",
+      "address": "深圳市南山区深南大道9003号",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9772
+      },
+      "openingHours": "09:30-21:00",
+      "ticketPrice": "180元",
+      "recommendedVisitTime": "4-5小时",
+      "highlights": [
+        "微缩景观",
+        "民族表演",
+        "民俗村",
+        "晚场演出"
+      ],
+      "tips": "晚场的民族歌舞表演很精彩。建议下午入园看完晚场再走。",
+      "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-museum-of-art",
+      "name": "关山月美术馆",
+      "nameEn": "Guan Shanyue Art Museum",
+      "category": "museum",
+      "description": "以著名国画家关山月名字命名的美术馆，收藏和展示关山月及当代中国画作品。是深圳重要的艺术展览场馆。",
+      "address": "深圳市福田区红荔路6026号",
+      "coordinates": {
+        "lat": 22.5531,
+        "lng": 114.0589
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "关山月作品",
+        "当代国画",
+        "艺术展览",
+        "文化讲座"
+      ],
+      "tips": "经常举办各种免费艺术展览。可以和莲花山公园一起游览。",
+      "image": "https://images.unsplash.com/photo-1525659664328-1bdaaca92ecf?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-hongshuwan",
+      "name": "欢乐港湾",
+      "nameEn": "Happy Harbor (Bay Glory)",
+      "category": "park",
+      "description": "深圳前海的大型海滨文化公园，有湾区之光摩天轮和海滨栈道。摩天轮高128米，可俯瞰前海和宝安全景。",
+      "address": "深圳市南山区前海路",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 113.8872
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "免费（摩天轮128元）",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "湾区之光摩天轮",
+        "海滨栈道",
+        "音乐喷泉",
+        "日落美景"
+      ],
+      "tips": "傍晚乘坐摩天轮可以看到日落和夜景。周末人较多。",
+      "image": "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-nanshan-district",
+      "name": "蛇口海上世界文化艺术中心",
+      "nameEn": "Sea World Culture and Arts Center",
+      "category": "museum",
+      "description": "由日本建筑师槇文彦设计的海滨文化艺术中心，定期举办各类艺术展览和文化活动。建筑本身就是一件艺术品，面朝大海。",
+      "address": "深圳市南山区望海路1187号",
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 113.9172
+      },
+      "openingHours": "10:00-20:00（周一闭馆）",
+      "ticketPrice": "免费（部分展览收费）",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "现代建筑",
+        "艺术展览",
+        "海景",
+        "文化活动"
+      ],
+      "tips": "可以和海上世界一起游览。建筑外观很适合拍照。",
+      "image": "https://images.unsplash.com/photo-1651766340803-223da8e39cf9?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-guanlan-hotspring",
+      "name": "观澜山水田园",
+      "nameEn": "Guanlan Shanshui田园",
+      "category": "nature",
+      "description": "龙华区的大型生态旅游景区，有温泉、农场、拓展基地和水上乐园。是深圳都市人回归自然、体验田园生活的理想去处。",
+      "address": "深圳市龙华区观澜街道",
+      "coordinates": {
+        "lat": 22.7322,
+        "lng": 114.0672
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "78元",
+      "recommendedVisitTime": "半天-1天",
+      "highlights": [
+        "温泉",
+        "农场体验",
+        "水上乐园",
+        "拓展训练"
+      ],
+      "tips": "适合家庭出游。温泉需要另外购票。",
+      "image": "https://images.unsplash.com/photo-1690135507670-40384e93f5a8?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-bijiashan-park",
+      "name": "笔架山公园",
+      "nameEn": "Bijiashan Park",
+      "category": "park",
+      "description": "深圳福田区的城市公园，因山形似笔架而得名。有登山步道、观景台和体育设施，是市民晨练和周末休闲的好去处。",
+      "address": "深圳市福田区梅岗路",
+      "coordinates": {
+        "lat": 22.5631,
+        "lng": 114.0579
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "登山步道",
+        "城市全景",
+        "晨练人群",
+        "体育设施"
+      ],
+      "tips": "山顶可以看到深圳CBD全景。适合早起晨练。",
+      "image": "https://images.unsplash.com/photo-1520454974749-611b7248ffdb?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-lychee-park",
+      "name": "荔枝公园",
+      "nameEn": "Lizhi Park",
+      "category": "park",
+      "description": "深圳最早的公园之一，因园内遍植荔枝树而得名。湖光山色、亭台楼阁，是深圳闹市中的一片绿洲。",
+      "address": "深圳市福田区红岭中路1001号",
+      "coordinates": {
+        "lat": 22.5531,
+        "lng": 114.1079
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "荔枝林",
+        "人工湖",
+        "亭台楼阁",
+        "晨练人群"
+      ],
+      "tips": "6-7月荔枝成熟季节最有趣。傍晚散步很惬意。",
+      "image": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-shuanglong-park",
+      "name": "大南山公园",
+      "nameEn": "Dananshan Park",
+      "category": "nature",
+      "description": "南山区的城市山体公园，海拔336米。登顶可俯瞰深圳湾、蛇口港和香港元朗，是深圳最佳观景台之一。",
+      "address": "深圳市南山区南山大道",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9272
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "深圳湾全景",
+        "蛇口港",
+        "日落观赏",
+        "登山健身"
+      ],
+      "tips": "建议下午登山看日落。带足水和防蚊液。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-qianhai",
+      "name": "前海深港合作区",
+      "nameEn": "Qianhai Shenzhen-Hong Kong Cooperation Zone",
+      "category": "landmark",
+      "description": "深圳前海的新兴商务区，代表了深圳未来发展的方向。有大量现代建筑和创新企业入驻，是深圳改革开放的新地标。",
+      "address": "深圳市南山区前海",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.8872
+      },
+      "openingHours": "全天可参观外部",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "现代建筑群",
+        "创新企业",
+        "海滨风光",
+        "城市规划"
+      ],
+      "tips": "主要看建筑和城市规划。可以和欢乐港湾一起游览。",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-hakka-museum",
+      "name": "深圳客家民俗博物馆",
+      "nameEn": "Shenzhen Hakka Folk Museum",
+      "category": "museum",
+      "description": "展示深圳客家文化历史的专题博物馆，位于龙岗区鹤湖新居内。鹤湖新居是全国最大的客家围屋之一，建筑宏伟壮观。",
+      "address": "深圳市龙岗区龙岗街道南联社区",
+      "coordinates": {
+        "lat": 22.7222,
+        "lng": 114.2672
+      },
+      "openingHours": "09:00-17:30（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "客家围屋",
+        "民俗展览",
+        "客家美食",
+        "建筑艺术"
+      ],
+      "tips": "可以和甘坑古镇一起游览。了解深圳原住民文化。",
+      "image": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-dapeng-bay",
+      "name": "大鹏半岛国家地质公园",
+      "nameEn": "Dapeng Peninsula National Geopark",
+      "category": "nature",
+      "description": "以火山岩地貌和海岸地质景观为主的国家地质公园。有海蚀洞、火山岩柱等地质奇观，是深圳难得的自然秘境。",
+      "address": "深圳市大鹏新区大鹏半岛",
+      "coordinates": {
+        "lat": 22.5622,
+        "lng": 114.5072
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "火山岩地貌",
+        "海蚀洞",
+        "海岸栈道",
+        "地质博物馆"
+      ],
+      "tips": "建议自驾前往。海边栈道风景绝美但要注意安全。",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-lychee-beach",
+      "name": "西涌海滩",
+      "nameEn": "Xichong Beach",
+      "category": "beach",
+      "description": "深圳最长最美的海滩，全长约4公里。沙质细腻、海水清澈，被誉为深圳的马尔代夫。是深圳最佳的海滨度假目的地。",
+      "address": "深圳市大鹏新区南澳街道西涌",
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 114.5172
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "半天-1天",
+      "highlights": [
+        "细沙海滩",
+        "清澈海水",
+        "冲浪",
+        "海边露营"
+      ],
+      "tips": "周末和节假日人多。可以露营看日出。注意防晒和安全。",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-dongchong-beach",
+      "name": "东涌海滩",
+      "nameEn": "Dongchong Beach",
+      "category": "beach",
+      "description": "大鹏半岛上的原始海滩，比西涌更为安静原始。海水清澈见底，适合浮潜和游泳。是深圳本地人的秘密海滩。",
+      "address": "深圳市大鹏新区南澳街道东涌",
+      "coordinates": {
+        "lat": 22.4922,
+        "lng": 114.5272
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "原始海滩",
+        "浮潜",
+        "海水清澈",
+        "安静休闲"
+      ],
+      "tips": "适合喜欢安静的人。设施比西涌少，自带食物和水。",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-yangmeikeng",
+      "name": "杨梅坑",
+      "nameEn": "Yangmeikeng",
+      "category": "nature",
+      "description": "大鹏半岛上的美丽海湾，以骑行和海景闻名。沿海骑行道风景优美，是深圳最受欢迎的骑行路线之一，也是婚纱摄影热门地。",
+      "address": "深圳市大鹏新区南澳街道杨梅坑",
+      "coordinates": {
+        "lat": 22.5022,
+        "lng": 114.5172
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沿海骑行",
+        "海景",
+        "婚纱摄影",
+        "海鲜大排档"
+      ],
+      "tips": "建议租自行车沿海骑行。周末人多，工作日更好。",
+      "image": "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-talent-park",
+      "name": "人才公园",
+      "nameEn": "Talent Park",
+      "category": "park",
+      "description": "深圳湾畔的海滨公园，以'人才'为主题。有星光桥、π桥等网红打卡点，是深圳新晋的休闲好去处。",
+      "address": "深圳市南山区沙河西路",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 113.9572
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "星光桥",
+        "π桥",
+        "海滨栈道",
+        "深圳湾日落"
+      ],
+      "tips": "傍晚看日落最美。可以和深圳湾公园一起游览。",
+      "image": "https://images.unsplash.com/photo-1495954380655-01609180eda3?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-xiangmi-park",
+      "name": "香蜜公园",
+      "nameEn": "Xiangmi Park",
+      "category": "park",
+      "description": "福田区的大型城市公园，有玫瑰园、花田和人工湖。是深圳最美的城市公园之一，四季花开不断，是婚纱摄影热门地。",
+      "address": "深圳市福田区农园路",
+      "coordinates": {
+        "lat": 22.5431,
+        "lng": 114.0279
+      },
+      "openingHours": "06:00-23:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "玫瑰园",
+        "花田",
+        "人工湖",
+        "空中栈道"
+      ],
+      "tips": "春天花季最美。适合散步和拍照。",
+      "image": "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-oct-harbour",
+      "name": "欢乐海岸",
+      "nameEn": "OCT Harbour",
+      "category": "park",
+      "description": "华侨城集团打造的大型滨水文化商业区，有购物中心、电影院、餐厅和水秀剧场。是深圳夜晚最热闹的休闲场所之一。",
+      "address": "深圳市南山区白石路东8号",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 113.9872
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "水秀剧场",
+        "购物中心",
+        "海滨栈道",
+        "夜景灯光"
+      ],
+      "tips": "晚上的水秀表演很精彩。可以和深圳湾公园一起游览。",
+      "image": "https://images.unsplash.com/photo-1672367686112-a92b9b521607?w=800&q=85"
+    },
+    {
+      "id": "shenzhen-buji-ceramics-town",
+      "name": "大芬油画村美术馆",
+      "nameEn": "Dafen Oil Painting Village Art Museum",
+      "category": "museum",
+      "description": "大芬村内的专业美术馆，展示从油画复制到原创艺术的转变历程。收藏有大量原创油画作品，是了解大芬村艺术发展的重要窗口。",
+      "address": "深圳市龙岗区大芬村",
+      "coordinates": {
+        "lat": 22.6522,
+        "lng": 114.2472
+      },
+      "openingHours": "09:00-18:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "原创油画",
+        "艺术展览",
+        "油画工坊",
+        "文化讲座"
+      ],
+      "tips": "可以和大芬油画村一起游览。免费展览质量很高。",
+      "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "shenzhen-1",
+      "name": "利苑酒家",
+      "nameEn": "Lei Garden",
+      "type": "michelin",
+      "star": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 500,
+      "rating": 4.7,
+      "address": "2F, Shenzhen Times Square, Luobao Road, Luohu",
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0872
+      },
+      "phone": "+86 755 8268 0888",
+      "hours": "11:00-15:00, 17:30-22:00",
+      "description": "Two Michelin-starred Cantonese fine dining with exceptional dim sum and premium seafood.",
+      "dishHighlights": [
+        "Steamed shrimp dumplings",
+        "Braised abalone",
+        "Roasted suckling pig"
+      ],
+      "tags": [
+        "fine-dining",
+        "cantonese",
+        "dim-sum",
+        "business"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-2",
+      "name": "粤菜王府",
+      "nameEn": "Yue Cai Wang Fu",
+      "type": "blackpearl",
+      "diamond": 2,
+      "cuisine": "Cantonese",
+      "avgPrice": 300,
+      "rating": 4.6,
+      "address": "2F, Park 'N Shop Center, Jintian Road, Futian",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
+      "phone": "+86 755 8250 8888",
+      "hours": "11:00-14:30, 17:30-22:00",
+      "description": "Two-diamond Black Pearl restaurant specializing in authentic Cantonese cuisine with elegant setting.",
+      "dishHighlights": [
+        "Steamed fish",
+        "White salted chicken",
+        "Bird's nest dessert"
+      ],
+      "tags": [
+        "cantonese",
+        "fine-dining",
+        "celebration"
+      ],
+      "star": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-3",
+      "name": "润园四季椰子鸡",
+      "nameEn": "Run Yuan Si Ji Coconut Chicken",
+      "type": "local",
+      "cuisine": "Hainanese/Cantonese",
+      "avgPrice": 150,
+      "rating": 4.8,
+      "address": "Nanshan District (multiple locations)",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9272
+      },
+      "phone": "+86 755 8623 8888",
+      "hours": "11:00-22:00",
+      "description": "Famous for tender coconut chicken hot pot, a favorite among locals for healthy and delicious dining.",
+      "dishHighlights": [
+        "Coconut chicken",
+        "Fresh vegetables",
+        "Taro balls"
+      ],
+      "tags": [
+        "local",
+        "hot-pot",
+        "healthy",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-4",
+      "name": "金稻园砂锅粥",
+      "nameEn": "Jin Dao Yuan Congee",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Fuming Road, Futian District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0472
+      },
+      "hours": "17:00-03:00",
+      "description": "Popular late-night spot for thick Cantonese congee and fresh seafood dishes.",
+      "dishHighlights": [
+        "Seafood congee",
+        "Steamed scallops",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "late-night",
+        "congee",
+        "seafood"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-5",
+      "name": "华强北小吃街",
+      "nameEn": "Huaqiangbei Snack Street",
+      "type": "local",
+      "cuisine": "Various Chinese",
+      "avgPrice": 50,
+      "rating": 4.3,
+      "address": "Huaqiangbei Road, Futian District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0672
+      },
+      "hours": "10:00-23:00",
+      "description": "Bustling street food area near electronics market with variety of local snacks and quick bites.",
+      "dishHighlights": [
+        "Grilled skewers",
+        "Stir-fried noodles",
+        "Bubble tea"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "budget",
+        "late-night"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-6",
+      "name": "蔡澜点心",
+      "nameEn": "Chua Lam Dim Sum",
+      "type": "michelin",
+      "star": 1,
+      "cuisine": "Cantonese Dim Sum",
+      "avgPrice": 200,
+      "rating": 4.6,
+      "address": "MixC Mall, Kouan Road, Luohu",
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0972
+      },
+      "phone": "+86 755 8266 8888",
+      "hours": "10:00-22:00",
+      "description": "Michelin-starred dim sum by celebrity chef Chua Lam. Modern presentation with traditional flavors.",
+      "dishHighlights": [
+        "Crystal shrimp dumplings",
+        "Baked char siu buns",
+        "Pan-fried noodles"
+      ],
+      "tags": [
+        "fine-dining",
+        "dim-sum",
+        "celebrity-chef"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-7",
+      "name": "日日香鹅肉馆",
+      "nameEn": "Riri Xiang Goose",
+      "type": "local",
+      "cuisine": "Chaozhou",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "Nanshan District (multiple locations)",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9472
+      },
+      "phone": "+86 755 2640 8888",
+      "hours": "11:00-14:30, 17:00-21:30",
+      "description": "Famous for salt-baked goose and traditional Chaozhou dishes. Local favorite with honest pricing.",
+      "dishHighlights": [
+        "Salt-baked goose",
+        "Goose meatballs",
+        "Preserved vegetables"
+      ],
+      "tags": [
+        "local",
+        "chaozhou",
+        "specialty",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-8",
+      "name": "探鱼",
+      "nameEn": "Tan Yu (Fish Grilled)",
+      "type": "local",
+      "cuisine": "Sichuan/Guangdong Fusion",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "COCO Park, Fuhua Road, Futian",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0372
+      },
+      "hours": "11:00-23:00",
+      "description": "Popular chain known for creatively grilled fish dishes with Sichuan spices and local flavors.",
+      "dishHighlights": [
+        "Grilled fish with green onion",
+        "Dan dan noodles",
+        "Chengdu style skewers"
+      ],
+      "tags": [
+        "local",
+        "fish",
+        "creative",
+        "casual"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-9",
+      "name": "点都德",
+      "nameEn": "Dian Dou De",
+      "type": "local",
+      "cuisine": "Cantonese Dim Sum",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Various locations including Dongmen and Futian",
+      "coordinates": {
+        "lat": 22.5622,
+        "lng": 114.1072
+      },
+      "phone": "+86 755 2222 8888",
+      "hours": "07:00-22:00",
+      "description": "Popular dim sum chain known for traditional recipes and all-day dining. Great for breakfast and brunch.",
+      "dishHighlights": [
+        "Pork shu mai",
+        "Egg tarts",
+        "Spring rolls",
+        "Congee"
+      ],
+      "tags": [
+        "dim-sum",
+        "breakfast",
+        "all-day",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-10",
+      "name": "陶陶居",
+      "nameEn": "Tao Tao Ju",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Cantonese",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "MixC Mall, Kouan Road, Luohu",
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0972
+      },
+      "phone": "+86 755 8266 8888",
+      "hours": "11:00-14:30, 17:00-22:00",
+      "description": "Historic Cantonese restaurant established in 1880. Known for authentic old-style dim sum and traditional dishes.",
+      "dishHighlights": [
+        "Steamed spareribs",
+        "Baked crab shells",
+        "Phoenix claws",
+        "Bird's nest soup"
+      ],
+      "tags": [
+        "cantonese",
+        "historic",
+        "dim-sum",
+        "traditional"
+      ],
+      "star": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-11",
+      "name": "广州酒家",
+      "nameEn": "Guangzhou Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 120,
+      "rating": 4.4,
+      "address": "Shennan Avenue, Futian District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0472
+      },
+      "hours": "07:00-22:00",
+      "description": "Famous chain for Cantonese cuisine and yum cha. Known for moon cakes and holiday specialties.",
+      "dishHighlights": [
+        "Dim sum basket",
+        "Roast duck",
+        "Steamed fish",
+        "Moon cakes"
+      ],
+      "tags": [
+        "cantonese",
+        "yum-cha",
+        "chain",
+        "family-friendly"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-12",
+      "name": "胜记酒家",
+      "nameEn": "Sheng Ji Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 200,
+      "rating": 4.7,
+      "address": "Shennan Avenue, Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0972
+      },
+      "phone": "+86 755 8222 8888",
+      "hours": "11:00-14:30, 17:30-22:00",
+      "description": "Legendary Cantonese restaurant with 40+ years history. Known for premium seafood and traditional recipes.",
+      "dishHighlights": [
+        "Braised shark fin",
+        "Steamed crab",
+        "Roasted suckling pig",
+        "Bird's nest"
+      ],
+      "tags": [
+        "cantonese",
+        "historic",
+        "seafood",
+        "fine-dining"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-13",
+      "name": "潮江春",
+      "nameEn": "Chao Jiang Chun",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Chaozhou",
+      "avgPrice": 180,
+      "rating": 4.5,
+      "address": "Futian District (multiple locations)",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
+      "phone": "+86 755 8250 8888",
+      "hours": "11:00-14:30, 17:30-22:00",
+      "description": "Elegant Chaozhou restaurant known for精致潮州菜 and superior service.",
+      "dishHighlights": [
+        "Cold crab",
+        "Braised goose",
+        "Steamed fish",
+        "Chaozhou noodles"
+      ],
+      "tags": [
+        "chaozhou",
+        "fine-dining",
+        "seafood",
+        "elegant"
+      ],
+      "star": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-14",
+      "name": "丹桂轩",
+      "nameEn": "Dan Gui Xuan",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Nanshan District (multiple locations)",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9272
+      },
+      "hours": "07:00-22:00",
+      "description": "Popular for all-day dim sum and Cantonese comfort food. Local favorite with consistent quality.",
+      "dishHighlights": [
+        "Shrimp dumplings",
+        "Char siu bao",
+        "Rice rolls",
+        "Taro balls"
+      ],
+      "tags": [
+        "dim-sum",
+        "cantonese",
+        "all-day",
+        "value"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-15",
+      "name": "海港大酒楼",
+      "nameEn": "Hai Gang Da Jiu Lou",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 150,
+      "rating": 4.5,
+      "address": "Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.1072
+      },
+      "phone": "+86 755 8225 8888",
+      "hours": "07:00-14:30, 17:30-22:00",
+      "description": "Large traditional Cantonese restaurant famous for wedding banquets and yum cha.",
+      "dishHighlights": [
+        "Dim sum variety",
+        "Braised chicken",
+        "Seafood",
+        "Sweet desserts"
+      ],
+      "tags": [
+        "cantonese",
+        "yum-cha",
+        "banquet",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-16",
+      "name": "凤凰楼",
+      "nameEn": "Feng Huang Lou",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 80,
+      "rating": 4.3,
+      "address": "Dongmen, Luohu District",
+      "coordinates": {
+        "lat": 22.5622,
+        "lng": 114.1172
+      },
+      "hours": "07:00-22:00",
+      "description": "Classic dim sum restaurant in historic Dongmen area. Known for affordable and authentic yum cha.",
+      "dishHighlights": [
+        "Egg rolls",
+        "Steamed dumplings",
+        "Congee",
+        "Rice noodles"
+      ],
+      "tags": [
+        "dim-sum",
+        "budget",
+        "local",
+        "historic-area"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-17",
+      "name": "大名酒家",
+      "nameEn": "Da Ming Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 100,
+      "rating": 4.4,
+      "address": "Nanshan District",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9372
+      },
+      "hours": "07:00-22:00",
+      "description": "Neighborhood favorite for traditional Cantonese breakfast and dim sum. Local crowd only.",
+      "dishHighlights": [
+        "Morning dim sum",
+        "Egg sandwiches",
+        "Congee",
+        "Hong Kong style milk tea"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "dim-sum",
+        "neighborhood"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-18",
+      "name": "老广酒家",
+      "nameEn": "Lao Guang Restaurant",
+      "type": "local",
+      "cuisine": "Cantonese",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "Futian District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0372
+      },
+      "hours": "06:30-22:00",
+      "description": "Known for authentic old Guangzhou style dim sum. Opens early for breakfast lovers.",
+      "dishHighlights": [
+        "Early morning dim sum",
+        "Steamed sponges",
+        "Radish cake",
+        "Sesame balls"
+      ],
+      "tags": [
+        "cantonese",
+        "early-breakfast",
+        "traditional",
+        "local"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-19",
+      "name": "波士顿龙虾餐厅",
+      "nameEn": "Boston Lobster Restaurant",
+      "type": "local",
+      "cuisine": "Seafood/International",
+      "avgPrice": 400,
+      "rating": 4.6,
+      "address": "Shekou, Nanshan District",
+      "coordinates": {
+        "lat": 22.4822,
+        "lng": 113.9172
+      },
+      "hours": "11:00-14:30, 17:00-22:00",
+      "description": "Premium seafood restaurant famous for live tanks with lobster, crab, and fish.",
+      "dishHighlights": [
+        "Boston lobster",
+        "Stone crab",
+        "Live fish",
+        "Abalone"
+      ],
+      "tags": [
+        "seafood",
+        "premium",
+        "live-tank",
+        "celebration"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-20",
+      "name": " BBQ韩国烤肉",
+      "nameEn": "Korean BBQ Restaurant",
+      "type": "local",
+      "cuisine": "Korean",
+      "avgPrice": 150,
+      "rating": 4.4,
+      "address": "Coco Park, Futian District",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0372
+      },
+      "hours": "11:00-23:00",
+      "description": "Popular Korean BBQ with premium meat selection and authentic Korean side dishes.",
+      "dishHighlights": [
+        "Hanwoo beef",
+        "Pork belly",
+        "Kimchi jjigae",
+        "Korean cold noodles"
+      ],
+      "tags": [
+        "korean",
+        "bbq",
+        "meat",
+        "fun"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-21",
+      "name": "阿婆肠粉",
+      "nameEn": "阿婆肠粉 (肠粉)",
+      "type": "local",
+      "cuisine": "肠粉",
+      "avgPrice": 106,
+      "rating": 4.8,
+      "address": "深圳市市中心区美食街156号",
+      "coordinates": {
+        "lat": 22.5424,
+        "lng": 114.0501
+      },
+      "phone": "+86 010 10836093",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "深圳本地人推荐的肠粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "肠粉",
+        "客家菜",
+        "海鲜"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-23",
+      "name": "街边烧鹅",
+      "nameEn": "街边烧鹅 (烧鹅)",
+      "type": "local",
+      "cuisine": "烧鹅",
+      "avgPrice": 150,
+      "rating": 4.0,
+      "address": "深圳市市中心区美食街158号",
+      "coordinates": {
+        "lat": 22.5148,
+        "lng": 114.1005
+      },
+      "phone": "+86 010 22096563",
+      "hours": "10:00-22:00",
+      "description": "深圳本地人推荐的烧鹅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "肠粉",
+        "海鲜"
+      ],
+      "tags": [
+        "排队王",
+        "隐藏美食",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-25",
+      "name": "地道潮汕牛肉火锅",
+      "nameEn": "地道潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "street",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 41,
+      "rating": 4.6,
+      "address": "深圳市老城区美食街99号",
+      "coordinates": {
+        "lat": 22.5358,
+        "lng": 114.0878
+      },
+      "phone": "+86 010 83059473",
+      "hours": "06:00-14:00",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "肠粉",
+        "客家菜"
+      ],
+      "tags": [
+        "小吃",
+        "网红打卡",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-27",
+      "name": "地道潮汕牛肉火锅",
+      "nameEn": "地道潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "street",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 60,
+      "rating": 4.8,
+      "address": "深圳市老城区美食街129号",
+      "coordinates": {
+        "lat": 22.5116,
+        "lng": 114.0618
+      },
+      "phone": "+86 010 57226201",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "客家菜",
+        "潮汕牛肉火锅",
+        "烧鹅"
+      ],
+      "tags": [
+        "路边摊",
+        "深夜美食",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-29",
+      "name": "老街海鲜",
+      "nameEn": "老街海鲜 (海鲜)",
+      "type": "cafe",
+      "cuisine": "海鲜",
+      "avgPrice": 80,
+      "rating": 4.2,
+      "address": "深圳市老城区美食街163号",
+      "coordinates": {
+        "lat": 22.5621,
+        "lng": 114.1029
+      },
+      "phone": "+86 010 57275940",
+      "hours": "06:00-14:00",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "肠粉",
+        "海鲜",
+        "客家菜"
+      ],
+      "tags": [
+        "下午茶",
+        "咖啡",
+        "文艺"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-31",
+      "name": "街边海鲜",
+      "nameEn": "街边海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 117,
+      "rating": 4.2,
+      "address": "深圳市老城区美食街115号",
+      "coordinates": {
+        "lat": 22.5247,
+        "lng": 114.0241
+      },
+      "phone": "+86 010 27282276",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烧鹅",
+        "客家菜",
+        "海鲜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-33",
+      "name": "地道潮汕牛肉火锅",
+      "nameEn": "地道潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "local",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 127,
+      "rating": 4.6,
+      "address": "深圳市新城区美食街116号",
+      "coordinates": {
+        "lat": 22.5845,
+        "lng": 114.0497
+      },
+      "phone": "+86 010 94976498",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "客家菜",
+        "肠粉"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-35",
+      "name": "老字号烧鹅",
+      "nameEn": "老字号烧鹅 (烧鹅)",
+      "type": "street",
+      "cuisine": "烧鹅",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "深圳市新城区美食街35号",
+      "coordinates": {
+        "lat": 22.5078,
+        "lng": 114.0761
+      },
+      "phone": "+86 010 46005543",
+      "hours": "06:00-14:00",
+      "description": "深圳本地人推荐的烧鹅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "客家菜",
+        "烧鹅"
+      ],
+      "tags": [
+        "夜市",
+        "网红打卡",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-37",
+      "name": "巷子肠粉",
+      "nameEn": "巷子肠粉 (肠粉)",
+      "type": "local",
+      "cuisine": "肠粉",
+      "avgPrice": 140,
+      "rating": 4.1,
+      "address": "深圳市市中心区美食街161号",
+      "coordinates": {
+        "lat": 22.5176,
+        "lng": 114.0568
+      },
+      "phone": "+86 010 28221125",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "深圳本地人推荐的肠粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "客家菜",
+        "海鲜",
+        "肠粉"
+      ],
+      "tags": [
+        "家常菜",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-39",
+      "name": "阿婆肠粉",
+      "nameEn": "阿婆肠粉 (肠粉)",
+      "type": "local",
+      "cuisine": "肠粉",
+      "avgPrice": 150,
+      "rating": 4.4,
+      "address": "深圳市新城区美食街52号",
+      "coordinates": {
+        "lat": 22.5424,
+        "lng": 114.0921
+      },
+      "phone": "+86 010 13444356",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的肠粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烧鹅",
+        "肠粉",
+        "潮汕牛肉火锅"
+      ],
+      "tags": [
+        "排队王",
+        "社区老店",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-41",
+      "name": "老深圳肠粉",
+      "nameEn": "老深圳肠粉 (肠粉)",
+      "type": "local",
+      "cuisine": "肠粉",
+      "avgPrice": 42,
+      "rating": 4.8,
+      "address": "深圳市老城区美食街144号",
+      "coordinates": {
+        "lat": 22.5896,
+        "lng": 114.0509
+      },
+      "phone": "+86 010 40127247",
+      "hours": "17:00-02:00",
+      "description": "深圳本地人推荐的肠粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烧鹅",
+        "潮汕牛肉火锅",
+        "海鲜"
+      ],
+      "tags": [
+        "家常菜",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-43",
+      "name": "老街潮汕牛肉火锅",
+      "nameEn": "老街潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "local",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 66,
+      "rating": 4.7,
+      "address": "深圳市市中心区美食街10号",
+      "coordinates": {
+        "lat": 22.5086,
+        "lng": 114.037
+      },
+      "phone": "+86 010 91968612",
+      "hours": "17:00-02:00",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "肠粉",
+        "潮汕牛肉火锅",
+        "客家菜"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-45",
+      "name": "老字号肠粉",
+      "nameEn": "老字号肠粉 (肠粉)",
+      "type": "street",
+      "cuisine": "肠粉",
+      "avgPrice": 36,
+      "rating": 4.5,
+      "address": "深圳市老城区美食街194号",
+      "coordinates": {
+        "lat": 22.5238,
+        "lng": 114.094
+      },
+      "phone": "+86 010 82915869",
+      "hours": "06:00-14:00",
+      "description": "深圳本地人推荐的肠粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "客家菜",
+        "烧鹅",
+        "海鲜"
+      ],
+      "tags": [
+        "网红打卡",
+        "路边摊",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-47",
+      "name": "老字号海鲜",
+      "nameEn": "老字号海鲜 (海鲜)",
+      "type": "street",
+      "cuisine": "海鲜",
+      "avgPrice": 33,
+      "rating": 4.5,
+      "address": "深圳市市中心区美食街142号",
+      "coordinates": {
+        "lat": 22.5662,
+        "lng": 114.0166
+      },
+      "phone": "+86 010 37352765",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "海鲜",
+        "客家菜"
+      ],
+      "tags": [
+        "网红打卡",
+        "路边摊",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-49",
+      "name": "巷子客家菜",
+      "nameEn": "巷子客家菜 (客家菜)",
+      "type": "street",
+      "cuisine": "客家菜",
+      "avgPrice": 18,
+      "rating": 4.3,
+      "address": "深圳市新城区美食街189号",
+      "coordinates": {
+        "lat": 22.5617,
+        "lng": 114.0269
+      },
+      "phone": "+86 010 32729562",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的客家菜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "肠粉",
+        "潮汕牛肉火锅",
+        "烧鹅"
+      ],
+      "tags": [
+        "路边摊",
+        "网红打卡",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-51",
+      "name": "正宗潮汕牛肉火锅",
+      "nameEn": "正宗潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "local",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 121,
+      "rating": 4.2,
+      "address": "深圳市市中心区美食街192号",
+      "coordinates": {
+        "lat": 22.5869,
+        "lng": 114.0404
+      },
+      "phone": "+86 010 69874711",
+      "hours": "06:00-14:00",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "肠粉",
+        "烧鹅"
+      ],
+      "tags": [
+        "社区老店",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-53",
+      "name": "阿婆肠粉",
+      "nameEn": "阿婆肠粉 (肠粉)",
+      "type": "street",
+      "cuisine": "肠粉",
+      "avgPrice": 31,
+      "rating": 4.3,
+      "address": "深圳市新城区美食街12号",
+      "coordinates": {
+        "lat": 22.5656,
+        "lng": 114.0888
+      },
+      "phone": "+86 010 68775999",
+      "hours": "09:00-21:00",
+      "description": "深圳本地人推荐的肠粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "烧鹅",
+        "潮汕牛肉火锅"
+      ],
+      "tags": [
+        "路边摊",
+        "夜市",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-55",
+      "name": "深圳味海鲜",
+      "nameEn": "深圳味海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 61,
+      "rating": 4.4,
+      "address": "深圳市老城区美食街157号",
+      "coordinates": {
+        "lat": 22.5774,
+        "lng": 114.0269
+      },
+      "phone": "+86 010 93816857",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "海鲜",
+        "客家菜"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-57",
+      "name": "老街海鲜",
+      "nameEn": "老街海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 32,
+      "rating": 4.2,
+      "address": "深圳市市中心区美食街45号",
+      "coordinates": {
+        "lat": 22.538,
+        "lng": 114.089
+      },
+      "phone": "+86 010 10513736",
+      "hours": "09:00-21:00",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "肠粉",
+        "海鲜"
+      ],
+      "tags": [
+        "家常菜",
+        "老字号",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-59",
+      "name": "街边潮汕牛肉火锅",
+      "nameEn": "街边潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "street",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 14,
+      "rating": 4.1,
+      "address": "深圳市老城区美食街176号",
+      "coordinates": {
+        "lat": 22.5399,
+        "lng": 114.0239
+      },
+      "phone": "+86 010 74108288",
+      "hours": "10:00-22:00",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烧鹅",
+        "客家菜",
+        "潮汕牛肉火锅"
+      ],
+      "tags": [
+        "路边摊",
+        "网红打卡",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-61",
+      "name": "街边潮汕牛肉火锅",
+      "nameEn": "街边潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "local",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 50,
+      "rating": 4.3,
+      "address": "深圳市老城区美食街114号",
+      "coordinates": {
+        "lat": 22.5656,
+        "lng": 114.0584
+      },
+      "phone": "+86 010 67413509",
+      "hours": "09:00-21:00",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "烧鹅",
+        "肠粉"
+      ],
+      "tags": [
+        "性价比高",
+        "社区老店",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-63",
+      "name": "地道潮汕牛肉火锅",
+      "nameEn": "地道潮汕牛肉火锅 (潮汕牛肉火锅)",
+      "type": "local",
+      "cuisine": "潮汕牛肉火锅",
+      "avgPrice": 59,
+      "rating": 4.3,
+      "address": "深圳市老城区美食街197号",
+      "coordinates": {
+        "lat": 22.5436,
+        "lng": 114.0163
+      },
+      "phone": "+86 010 54925321",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的潮汕牛肉火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "烧鹅",
+        "潮汕牛肉火锅"
+      ],
+      "tags": [
+        "性价比高",
+        "社区老店",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-65",
+      "name": "巷子海鲜",
+      "nameEn": "巷子海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 89,
+      "rating": 4.4,
+      "address": "深圳市新城区美食街25号",
+      "coordinates": {
+        "lat": 22.5056,
+        "lng": 114.0788
+      },
+      "phone": "+86 010 89531852",
+      "hours": "09:00-21:00",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "肠粉",
+        "潮汕牛肉火锅",
+        "客家菜"
+      ],
+      "tags": [
+        "社区老店",
+        "性价比高",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-67",
+      "name": "老深圳海鲜",
+      "nameEn": "老深圳海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 87,
+      "rating": 4.8,
+      "address": "深圳市市中心区美食街38号",
+      "coordinates": {
+        "lat": 22.4952,
+        "lng": 114.0428
+      },
+      "phone": "+86 010 49121287",
+      "hours": "10:00-22:00",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "潮汕牛肉火锅",
+        "客家菜",
+        "海鲜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "隐藏美食",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-69",
+      "name": "老街肠粉",
+      "nameEn": "老街肠粉 (肠粉)",
+      "type": "local",
+      "cuisine": "肠粉",
+      "avgPrice": 83,
+      "rating": 4.6,
+      "address": "深圳市市中心区美食街194号",
+      "coordinates": {
+        "lat": 22.5228,
+        "lng": 114.0561
+      },
+      "phone": "+86 010 67471956",
+      "hours": "10:00-22:00",
+      "description": "深圳本地人推荐的肠粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "客家菜",
+        "海鲜",
+        "烧鹅"
+      ],
+      "tags": [
+        "排队王",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-71",
+      "name": "深圳味烧鹅",
+      "nameEn": "深圳味烧鹅 (烧鹅)",
+      "type": "local",
+      "cuisine": "烧鹅",
+      "avgPrice": 39,
+      "rating": 4.7,
+      "address": "深圳市新城区美食街155号",
+      "coordinates": {
+        "lat": 22.5521,
+        "lng": 114.0748
+      },
+      "phone": "+86 010 80988345",
+      "hours": "10:00-22:00",
+      "description": "深圳本地人推荐的烧鹅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "潮汕牛肉火锅",
+        "客家菜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-73",
+      "name": "老深圳海鲜",
+      "nameEn": "老深圳海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 106,
+      "rating": 4.8,
+      "address": "深圳市市中心区美食街76号",
+      "coordinates": {
+        "lat": 22.5838,
+        "lng": 114.0795
+      },
+      "phone": "+86 010 59813223",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烧鹅",
+        "海鲜",
+        "潮汕牛肉火锅"
+      ],
+      "tags": [
+        "隐藏美食",
+        "老字号",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-75",
+      "name": "传统烧鹅",
+      "nameEn": "传统烧鹅 (烧鹅)",
+      "type": "local",
+      "cuisine": "烧鹅",
+      "avgPrice": 98,
+      "rating": 4.5,
+      "address": "深圳市新城区美食街146号",
+      "coordinates": {
+        "lat": 22.5011,
+        "lng": 114.0729
+      },
+      "phone": "+86 010 13702829",
+      "hours": "06:00-14:00",
+      "description": "深圳本地人推荐的烧鹅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "客家菜",
+        "烧鹅",
+        "海鲜"
+      ],
+      "tags": [
+        "家常菜",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-77",
+      "name": "深圳味海鲜",
+      "nameEn": "深圳味海鲜 (海鲜)",
+      "type": "cafe",
+      "cuisine": "海鲜",
+      "avgPrice": 42,
+      "rating": 4.7,
+      "address": "深圳市老城区美食街36号",
+      "coordinates": {
+        "lat": 22.5868,
+        "lng": 114.068
+      },
+      "phone": "+86 010 14223606",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "肠粉",
+        "潮汕牛肉火锅",
+        "客家菜"
+      ],
+      "tags": [
+        "咖啡",
+        "下午茶",
+        "安静"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shenzhen-79",
+      "name": "街边海鲜",
+      "nameEn": "街边海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 117,
+      "rating": 4.9,
+      "address": "深圳市老城区美食街71号",
+      "coordinates": {
+        "lat": 22.5,
+        "lng": 114.07
+      },
+      "phone": "+86 010 61537129",
+      "hours": "17:00-02:00",
+      "description": "深圳本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "肠粉",
+        "潮汕牛肉火锅",
+        "烧鹅"
+      ],
+      "tags": [
+        "老字号",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major international cities",
+        "to": "Shenzhen Bao'an International Airport (SZX)",
+        "duration": "Varies by origin (3h from Hong Kong, 12h from Europe)",
+        "price": "1000-5000¥",
+        "frequency": "Daily flights from Asia, Europe, Americas",
+        "tips": "Airport is 35km from city center. Metro Line 11 to downtown. Airport shuttle bus available."
+      },
+      {
+        "type": "train",
+        "from": "Hong Kong (15min-1h), Guangzhou (30min), Beijing (10h)",
+        "to": "Shenzhen Railway Station / Shenzhen North Station / Shenzhen East",
+        "duration": "15min-4h depending on origin",
+        "price": "80-1000¥",
+        "frequency": "High-speed trains from major cities",
+        "tips": "High-speed rail from Hong Kong West Kowloon is very convenient. Futian Station is central."
+      }
+    ],
+    "local": {
+      "metro": [
+        "12 lines covering most of city",
+        "Single ride: 2-10¥ depending on distance",
+        "Line 1 connects Luohu (Hong Kong border)",
+        "Line 11 to Bao'an Airport"
+      ],
+      "bus": [
+        "Extensive network covering areas not served by metro",
+        "Single ride: 2-6¥",
+        "Many routes run until late night"
+      ],
+      "taxi": [
+        "Starting fare: 10¥ (first 2km)",
+        "Waiting: 0.8¥ per minute",
+        "Night surcharge: 20% extra (23:00-06:00)",
+        "Didi works well for English users"
+      ],
+      "bike": [
+        "Mobike and Meituan bikes abundant",
+        "Unlock: 1¥, then 0.5-1¥ per 30 minutes",
+        "Designated bike lanes on many roads",
+        "Shared bikes forbidden on some roads"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "深圳华侨城洲际酒店",
+      "nameEn": "InterContinental Shenzhen",
+      "budget": "luxury",
+      "priceRange": "¥1500-3000/night",
+      "address": "9009 Shennan Avenue, Overseas Chinese Town",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9672
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Near Happy Valley",
+        "Large pool",
+        "Multiple restaurants",
+        "Garden setting"
+      ],
+      "bookingTips": "Weekend packages good value. Check for OCT discounts."
+    },
+    {
+      "name": "深圳瑞吉酒店",
+      "nameEn": "The St. Regis Shenzhen",
+      "budget": "luxury",
+      "priceRange": "¥2000-4000/night",
+      "address": "5016 Jintian Road, Futian District",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0572
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central location",
+        "High-rise views",
+        "Butler service",
+        "Luxury spa"
+      ],
+      "bookingTips": "Club rooms worth upgrade for privileges. Book direct for benefits."
+    },
+    {
+      "name": "深圳香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Shenzhen",
+      "budget": "luxury",
+      "priceRange": "¥1200-2500/night",
+      "address": "1002 Jianshe Road, Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0972
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near Luohu border",
+        "Luohu Park views",
+        "Business center",
+        "Multiple dining"
+      ],
+      "bookingTips": "Best for those entering from Hong Kong. Good for transit."
+    },
+    {
+      "name": "深圳格兰云天酒店",
+      "nameEn": "Grand Skylight Hotel",
+      "budget": "mid",
+      "priceRange": "¥600-1200/night",
+      "address": "88 Fuhua Road, Futian District",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 114.0472
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Convention Center",
+        "Good value",
+        "Reliable service"
+      ],
+      "bookingTips": "Check weekend rates. Book early during conventions."
+    },
+    {
+      "name": "深圳东门酒店",
+      "nameEn": "Dongmen Hotel",
+      "budget": "budget",
+      "priceRange": "¥300-600/night",
+      "address": "2008 Chunhui Road, Luohu",
+      "coordinates": {
+        "lat": 22.5622,
+        "lng": 114.1072
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near Dongmen shopping",
+        "Metro access",
+        "Budget-friendly"
+      ],
+      "bookingTips": "Great for shopping tourists. Basic but clean."
+    },
+    {
+      "name": "深圳jw万豪酒店",
+      "nameEn": "JW Marriott Hotel Shenzhen",
+      "budget": "luxury",
+      "priceRange": "¥1800-3500/night",
+      "address": "6001 Shennan Avenue, Futian District",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0672
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Modern luxury",
+        "Multiple award-winning restaurants",
+        "Rooftop bar",
+        "Executive lounge"
+      ],
+      "bookingTips": "Book via Marriott app for member benefits. Club lounge access worth it."
+    },
+    {
+      "name": "深圳大中华希尔顿酒店",
+      "nameEn": "Hilton Shenzhen Grand World",
+      "budget": "luxury",
+      "priceRange": "¥1200-2200/night",
+      "address": "Great China Financial Center, Futian",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0772
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Iconic tower",
+        "Sky lobby",
+        "Central location",
+        "Reliable brand"
+      ],
+      "bookingTips": "Higher floors offer better views. Weekend deals available."
+    },
+    {
+      "name": "深圳威尼斯睿途酒店",
+      "nameEn": "The Venice Raytour Hotel",
+      "budget": "mid",
+      "priceRange": "¥800-1500/night",
+      "address": "9028-1 Shennan Avenue, Overseas Chinese Town",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9572
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Venetian canal theme",
+        "Near Window of the World",
+        "Unique architecture",
+        "Good breakfast"
+      ],
+      "bookingTips": "Request canal-view rooms. Good for families with kids."
+    },
+    {
+      "name": "深圳求山水皇冠假日酒店",
+      "nameEn": "Crowne Plaza Shenzhen",
+      "budget": "mid",
+      "priceRange": "¥700-1300/night",
+      "address": "143 Yi Tian Road, Futian District",
+      "coordinates": {
+        "lat": 22.5222,
+        "lng": 114.0272
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Shenzhen Convention Center",
+        "Comfortable beds",
+        "Good service"
+      ],
+      "bookingTips": "Book during conventions in Futian for convenience."
+    },
+    {
+      "name": "深圳海德酒店",
+      "nameEn": "Shenzhen Hai Dei Hotel",
+      "budget": "mid",
+      "priceRange": "¥600-1100/night",
+      "address": "1002 Nanshan Avenue, Nanshan District",
+      "coordinates": {
+        "lat": 22.5122,
+        "lng": 113.9372
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Nanshan business district",
+        "Modern rooms",
+        "Good restaurant"
+      ],
+      "bookingTips": "Good for tech company visitors. Check corporate rates."
+    },
+    {
+      "name": "深圳艺尚商务酒店",
+      "nameEn": "Shenzhen Yishang Business Hotel",
+      "budget": "budget",
+      "priceRange": "¥350-650/night",
+      "address": "3031 Shennan Avenue, Futian",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0372
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Central location",
+        "Clean rooms",
+        "Metro nearby"
+      ],
+      "bookingTips": "Best value in Futian. Good for short business trips."
+    },
+    {
+      "name": "深圳凯宾斯基酒店",
+      "nameEn": "Kempinski Hotel Shenzhen",
+      "budget": "luxury",
+      "priceRange": "¥1500-2800/night",
+      "address": "Haide Yi Dao, Nanshan District",
+      "coordinates": {
+        "lat": 22.5022,
+        "lng": 113.9272
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Sea view rooms",
+        "European brand",
+        "Award-winning spa",
+        "Fine dining"
+      ],
+      "bookingTips": "Sea-view rooms worth premium. Book direct for better rates."
+    },
+    {
+      "name": "深圳马哥孛罗酒店",
+      "nameEn": "Marco Polo Shenzhen",
+      "budget": "mid",
+      "priceRange": "¥800-1400/night",
+      "address": "1692 Jianshe Road, Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.1072
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Luohu border",
+        "Shopping mall attached",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Great for cross-border travelers. Connected to mall."
+    },
+    {
+      "name": "深圳深业上城民宿",
+      "nameEn": "Shenzhen Upper Hill Residence",
+      "budget": "mid",
+      "priceRange": "¥500-900/night",
+      "address": "Mid-Level, Upper Hill, Futian",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0572
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Apartment-style",
+        "Kitchen facilities",
+        "City views",
+        "Quiet location"
+      ],
+      "bookingTips": "Good for extended stays. Request higher floors."
+    },
+    {
+      "name": "深圳北站铂尔曼酒店",
+      "nameEn": "Pullman Shenzhen North Station",
+      "budget": "mid",
+      "priceRange": "¥550-1000/night",
+      "address": "North Railway Station, Longhua District",
+      "coordinates": {
+        "lat": 22.6522,
+        "lng": 114.0272
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near high-speed rail",
+        "Modern design",
+        "Good for transit"
+      ],
+      "bookingTips": "Perfect for arriving by train. Easy metro connection."
+    },
+    {
+      "name": "深圳雅诗阁服务公寓",
+      "nameEn": "Ascott Serviced Residence Shenzhen",
+      "budget": "mid",
+      "priceRange": "¥700-1200/night",
+      "address": "888 Shennan Avenue, Futian",
+      "coordinates": {
+        "lat": 22.5332,
+        "lng": 114.0472
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Serviced apartments",
+        "Full kitchen",
+        "Long-stay suitable",
+        "Gym and pool"
+      ],
+      "bookingTips": "Best for business travelers staying a week or more."
+    },
+    {
+      "name": "深圳中洲圣廷苑酒店",
+      "nameEn": "The Pavilion Hotel Shenzhen",
+      "budget": "mid",
+      "priceRange": "¥650-1100/night",
+      "address": "2001 Jiabin Road, Luohu District",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0972
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near Dasha River",
+        "Quiet area",
+        "Good breakfast"
+      ],
+      "bookingTips": "Good balance of price and location. Weekend discounts."
+    },
+    {
+      "name": "深圳东部华侨城茵特拉根酒店",
+      "nameEn": "Interlaken OCT Hotel",
+      "budget": "luxury",
+      "priceRange": "¥1400-2600/night",
+      "address": "OCT Eastern, Yantian District",
+      "coordinates": {
+        "lat": 22.6022,
+        "lng": 114.2572
+      },
+      "rating": 4.6,
+      "highlights": [
+        "European alpine theme",
+        "Hot spring access",
+        "Nature setting",
+        "Near theme parks"
+      ],
+      "bookingTips": "Include hot spring in your booking. Great for weekend getaways."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal payment throughout Shenzhen",
+      "howToUse": [
+        "Download before arrival",
+        "Link card or Chinese account"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available",
+        "Required for tech experiences"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere in Shenzhen",
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Required for shared bikes"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at traditional markets only",
+      "howToUse": [
+        "ATM at every bank",
+        "Currency exchange at banks"
+      ],
+      "tips": [
+        "Only needed for small vendors",
+        "Most places accept cards"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "tech",
+      "title": "Tech Culture",
+      "content": "Shenzhen is China's tech hub. Visit Huaqiangbei electronics market for gadgets. Experience cashless society firsthand.",
+      "importance": "high"
+    },
+    {
+      "category": "pace",
+      "title": "Fast Pace",
+      "content": "Shenzhen is always moving. Metro is packed during rush hours (7:30-9:00, 17:30-19:30). Plan accordingly.",
+      "importance": "medium"
+    },
+    {
+      "category": "dining",
+      "title": "Dining Hours",
+      "content": "Local restaurants busy during normal meal times: 11:30-13:30 and 17:30-20:30. Late-night dining common.",
+      "importance": "medium"
+    },
+    {
+      "category": "language",
+      "title": "Language",
+      "content": "Mandarin is primary. Cantonese widely spoken in Luohu and traditional areas. English more common in tourist areas.",
+      "importance": "low"
+    },
+    {
+      "category": "tech",
+      "title": "Huaqiangbei Electronics Market",
+      "content": "The world's largest electronics market at Huaqiangbei. Bargain hard, check quality carefully, and verify specifications before purchase. Bring your laptop to test components.",
+      "importance": "high"
+    },
+    {
+      "category": "startup",
+      "title": "Startup Ecosystem",
+      "content": "Shenzhen is home to Tencent, Huawei, BYD, and DJI. Visit Tencent's headquarters in Nanshan. The city has a unique entrepreneurial spirit born from reform and opening.",
+      "importance": "medium"
+    },
+    {
+      "category": "cashless",
+      "title": "Cashless Society",
+      "content": "Mobile payment is universal in Shenzhen. Alipay and WeChat Pay are used for everything from street food to taxis. Bring a phone with these apps installed.",
+      "importance": "high"
+    },
+    {
+      "category": "beach",
+      "title": "Beach Culture",
+      "content": "Shenzhen has beautiful beaches (Dameisha, Xiaomeisha, Jiaochangwei). Arrive early on weekends as they get crowded. Bring sunscreen - shade is limited.",
+      "importance": "medium"
+    },
+    {
+      "category": "cantonese",
+      "title": "Cantonese Influence",
+      "content": "While Mandarin dominates, Cantonese is still widely spoken in Luohu, Dongmen, and traditional Hakka areas. Locals appreciate when visitors try basic phrases.",
+      "importance": "medium"
+    },
+    {
+      "category": "hk-access",
+      "title": "Hong Kong Access",
+      "content": "Shenzhen is gateway to Hong Kong via Luohu or Futian Checkpoint. Consider a day trip to Hong Kong or use Shenzhen as base for Pearl River Delta exploration.",
+      "importance": "high"
+    },
+    {
+      "category": "theme-parks",
+      "title": "Theme Park Culture",
+      "content": "Shenzhen has major theme parks (Window of the World, Happy Valley, OCT Eastern). Book tickets online for discounts. Weekdays are less crowded.",
+      "importance": "medium"
+    },
+    {
+      "category": "fashion",
+      "title": "Fashion and Design",
+      "content": "OCT-LOFT and Dapeng Fortress host creative festivals. Shenzhen Fashion Week showcases local designers. The city blends innovation with manufacturing.",
+      "importance": "low"
+    },
+    {
+      "category": " hukou",
+      "title": "Reform History",
+      "content": "Shenzhen was a fishing village in 1980. Now it's 17+ million people. Visit Shenzhen Museum to understand this remarkable transformation.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Teochew Dialect",
+      "content": "Shenzhen has large Teochew (潮州) population from Chaoshan. Their cuisine and culture influence local dining. Try Chaoshan beef hot pot.",
+      "importance": "low"
+    },
+    {
+      "category": "seafood",
+      "title": "Seafood Dining",
+      "content": "Coastal location means fresh seafood is abundant. Shekou and Dapeng have excellent seafood restaurants. Live tanks are common - pick your own.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Nightlife Scene",
+      "content": "Sea World (海上世界) in Shekou has vibrant nightlife with international bars. Coastal City and COCO Park also have good evening options.",
+      "importance": "medium"
+    },
+    {
+      "category": "art",
+      "title": "Art Scene",
+      "content": "Dafen Oil Painting Village creates 60% of world's oil paintings. OCT-LOFT hosts indie music and design events. Art is big business here.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Typhoon Season",
+      "content": "Shenzhen typhoon season is July-September. Check weather before beach trips. Major typhoons cause transit shutdowns - stay indoors.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Modern Architecture",
+      "content": "Shenzhen has iconic modern architecture: Ping An Finance Center (599m), Shenzhen Civic Center by Mario Botta. Architecture tours are popular.",
+      "importance": "low"
+    },
+    {
+      "category": "business",
+      "title": "Business Hub",
+      "content": "Shenzhen is China's Silicon Valley. Many tech companies recruit internationally. Business culture is fast-paced and efficiency-focused.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "深圳急救中心",
+      "nameEn": "Shenzhen Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpreters"
+    },
+    {
+      "type": "police",
+      "name": "深圳市公安局",
+      "nameEn": "Shenzhen Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major areas"
+    },
+    {
+      "type": "hospital",
+      "name": "北京大学深圳医院",
+      "nameEn": "Peking University Shenzhen Hospital",
+      "phone": "+86 755 8392 3333",
+      "address": "1120 Lianhua Road, Futian",
+      "coordinates": {
+        "lat": 22.5422,
+        "lng": 114.0672
+      },
+      "notes": "English-speaking staff, accepts international insurance"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻广州总领事馆",
+      "nameEn": "US Consulate General Guangzhou",
+      "phone": "+86 20 3814 5775",
+      "address": "Guangzhou (nearest US consular services)",
+      "notes": "For US citizens in Shenzhen region"
+    },
+    {
+      "type": "fire",
+      "name": "深圳消防支队",
+      "nameEn": "Shenzhen Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue emergency"
+    },
+    {
+      "type": "hospital",
+      "name": "深圳市第二人民医院",
+      "nameEn": "Shenzhen Second People's Hospital",
+      "phone": "+86 755 8336 6388",
+      "address": "3002 Sungang Road, Futian",
+      "coordinates": {
+        "lat": 22.5522,
+        "lng": 114.0772
+      },
+      "notes": "Trauma center, 24h emergency"
+    },
+    {
+      "type": "hospital",
+      "name": "深圳华侨城医院",
+      "nameEn": "Shenzhen Overseas Chinese Town Hospital",
+      "phone": "+86 755 2660 2011",
+      "address": "9011 Shennan Avenue, Nanshan",
+      "coordinates": {
+        "lat": 22.5322,
+        "lng": 113.9672
+      },
+      "notes": "Near OCT area, good for tourists"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻广州总领事馆",
+      "nameEn": "UK Consulate General Guangzhou",
+      "phone": "+86 20 8314 3000",
+      "address": "Guangzhou",
+      "notes": "For UK citizens in Shenzhen region"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻广州总领事馆",
+      "nameEn": "German Consulate General Guangzhou",
+      "phone": "+86 20 8313 0000",
+      "address": "Guangzhou",
+      "notes": "For German citizens in Shenzhen region"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻广州总领事馆",
+      "nameEn": "French Consulate General Guangzhou",
+      "phone": "+86 20 2829 2000",
+      "address": "Guangzhou",
+      "notes": "For French citizens in Shenzhen region"
+    },
+    {
+      "type": "hospital",
+      "name": "南方医科大学深圳医院",
+      "nameEn": "Southern Medical University Shenzhen Hospital",
+      "phone": "+86 755 2336 0000",
+      "address": "1333 New Lake Road, Bao'an",
+      "coordinates": {
+        "lat": 22.5822,
+        "lng": 113.8972
+      },
+      "notes": "Modern hospital, near airport"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻广州总领事馆",
+      "nameEn": "Japanese Consulate General Guangzhou",
+      "phone": "+86 20 8334 3009",
+      "address": "Guangzhou",
+      "notes": "For Japanese citizens in Shenzhen region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻广州总领事馆",
+      "nameEn": "Korean Consulate General Guangzhou",
+      "phone": "+86 20 3885 0927",
+      "address": "Guangzhou",
+      "notes": "For Korean citizens in Shenzhen region"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese (Simplified), Cantonese in Luohu",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa; Hong Kong visit if eligible",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe; bottled water widely available"
+  }
+}

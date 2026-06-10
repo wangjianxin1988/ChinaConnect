@@ -174,22 +174,18 @@ export function CulturalWarningTrigger({
     setIsVisible(true);
   }, []);
 
+  // Listen for external trigger events (from SOSButton cultural tips tab)
+  useEffect(() => {
+    const handleExternalTrigger = () => {
+      handleReopen();
+    };
+    window.addEventListener("chinaconnect-show-cultural-warnings", handleExternalTrigger);
+    return () => window.removeEventListener("chinaconnect-show-cultural-warnings", handleExternalTrigger);
+  }, [handleReopen]);
+
   if (!isVisible || !currentWarning) {
-    // Return a small trigger button that floats in the corner
-    return (
-      <button
-        onClick={handleReopen}
-        className="fixed top-20 right-6 z-40 flex items-center gap-2 px-3 py-2 bg-amber-100 hover:bg-amber-200 border border-amber-400 rounded-full shadow-md transition-colors text-sm font-medium text-amber-800"
-        title="Cultural Warnings / 文化预警"
-      >
-        <span>⚠️</span>
-        <span className="hidden sm:inline">
-          {typeof navigator !== "undefined" && navigator.language?.startsWith("zh")
-            ? "文化提示"
-            : "Cultural Tips"}
-        </span>
-      </button>
-    );
+    // No floating button - cultural tips are now accessible from SOS menu
+    return null;
   }
 
   const { warning } = currentWarning;

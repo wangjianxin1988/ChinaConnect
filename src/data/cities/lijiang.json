@@ -2270,10 +2270,31 @@
   ],
   "emergencyContacts": [
     {
+      "type": "fire",
+      "name": "丽江消防",
+      "nameEn": "Lijiang Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "ambulance",
+      "name": "丽江急救中心",
+      "nameEn": "Lijiang Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "丽江市公安局",
+      "nameEn": "Lijiang Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police available"
+    },
+    {
       "id": "police",
       "name": "丽江市公安局",
       "nameEn": "Lijiang Police Bureau",
-      "phone": "0888-110",
+      "phone": "110",
       "type": "police",
       "description": "Lijiang city police emergency hotline",
       "address": "Lijiang City Center"
@@ -2282,7 +2303,7 @@
       "id": "fire",
       "name": "丽江市消防支队",
       "nameEn": "Lijiang Fire Department",
-      "phone": "0888-119",
+      "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
       "address": "Lijiang City"
@@ -2291,7 +2312,7 @@
       "id": "ambulance",
       "name": "丽江市急救中心",
       "nameEn": "Lijiang Emergency Medical Center",
-      "phone": "0888-120",
+      "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
       "address": "Lijiang City"

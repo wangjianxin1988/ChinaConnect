@@ -1,0 +1,3931 @@
+{
+  "slug": "kunming",
+  "name": "昆明",
+  "nameEn": "Kunming",
+  "country": "China",
+  "population": "8.5 million",
+  "coordinates": {
+    "lat": 25.0389,
+    "lng": 102.7183
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Kunming, the capital of Yunnan province, is known as the 'Spring City' for its pleasant climate year-round. Located at an elevation of 1,890 meters, it serves as the political, economic, and cultural center of Yunnan. The city is a gateway to stunning natural landscapes including the UNESCO World Heritage Site of Stone Forest, and is home to 26 ethnic minorities preserving rich traditions.",
+  "coverImage": "https://images.unsplash.com/photo-1678288661010-762afc729414?w=1200&q=80",
+  "highlights": [
+    "Stone Forest - UNESCO World Heritage",
+    "Dianchi Lake - Largest lake in Yunnan",
+    "Yunnan Ethnic Village - 26 ethnic minorities",
+    "Cuihu Park - Urban oasis",
+    "Golden Horse and Phoenix Gate - Iconic archway"
+  ],
+  "climate": {
+    "type": "Subtropical plateau monsoon",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "18-26C (64-79F)",
+    "avgWinterTemp": "8-18C (46-64F)",
+    "tips": "Kunming is called 'Spring City' with mild weather year-round. Summer is rainy season (June-August) but not hot. Winter is dry and sunny. Bring layers year-round as temperatures vary daily. UV is strong due to high altitude."
+  },
+  "restaurants": [
+    {
+      "id": "guangxi-crossing-bridge",
+      "name": "过桥园（光华街店）",
+      "nameEn": "Guangxi Crossing Bridge Rice Noodles",
+      "cuisine": "Yunnan",
+      "priceRange": "¥40-80¥",
+      "description": "Famous for authentic Crossing Bridge Rice Noodles (过桥米线) with rich broth and fresh ingredients served in traditional style.",
+      "address": "Guanghua Street, Kunming",
+      "coordinates": {
+        "lat": 25.0389,
+        "lng": 102.7111
+      },
+      "hours": "10:30-21:00",
+      "highlights": [
+        "Authentic broth recipe",
+        "Fresh ingredient station",
+        "Traditional serving style",
+        "Local favorite"
+      ],
+      "tips": "Try the 'grandmother's recipe' set. Lunch is crowded - arrive before noon. Ask for less spicy if sensitive.",
+      "dishHighlights": [
+        "Authentic broth recipe",
+        "Fresh ingredient station",
+        "Traditional serving style"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 40,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "chuancai-lao",
+      "name": "川菜佬",
+      "nameEn": "Chuancai Lao",
+      "cuisine": "Sichuan",
+      "priceRange": "¥60-120¥",
+      "description": "Popular Sichuan restaurant serving authentic spicy dishes including dan dan noodles, mapo tofu, and spicy crayfish.",
+      "address": "Wenlin Street, Kunming",
+      "coordinates": {
+        "lat": 25.0428,
+        "lng": 102.7189
+      },
+      "hours": "11:00-14:00, 17:00-21:30",
+      "highlights": [
+        "Dan dan noodles",
+        "Spicy crayfish",
+        "Fuqi feipian (cold beef)",
+        "Hot and sour potato"
+      ],
+      "tips": "Very spicy - specify spice level when ordering. Dinner reservation recommended. Try the cold dishes as appetizers.",
+      "dishHighlights": [
+        "Dan dan noodles",
+        "Spicy crayfish",
+        "Fuqi feipian (cold beef)"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "dali-renjia",
+      "name": "大理人家（昆明店）",
+      "nameEn": "Dali Renjia",
+      "cuisine": "Bai Ethnic",
+      "priceRange": "¥50-100¥",
+      "description": "Bai ethnic cuisine restaurant recreating traditional Dali dishes with local Yunnan ingredients and Bai cooking methods.",
+      "address": "Beijing Road, Kunming",
+      "coordinates": {
+        "lat": 25.0356,
+        "lng": 102.7233
+      },
+      "hours": "10:00-22:00",
+      "highlights": [
+        "Bai style raw meat salad",
+        "Dali sausages",
+        "Sai ma chicken (凉鸡)",
+        "Bai three-course tea"
+      ],
+      "tips": "Good introduction to Yunnan ethnic cuisine. The raw meat salad is a specialty. Ask about the 'three-course tea' ceremony.",
+      "dishHighlights": [
+        "Bai style raw meat salad",
+        "Dali sausages",
+        "Sai ma chicken (凉鸡)"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-night-market",
+      "name": "昆明老街夜市",
+      "nameEn": "Kunming Old Street Night Market",
+      "cuisine": "Street Food",
+      "priceRange": "¥20-60¥",
+      "description": "Bustling night market on historic Kunming Old Street featuring local snacks, grilled meats, and regional specialties.",
+      "address": "East-West Street Night Market",
+      "coordinates": {
+        "lat": 25.0417,
+        "lng": 102.7156
+      },
+      "hours": "17:00-23:00",
+      "highlights": [
+        "Grilled、过桥米线",
+        "Yunnan HAM",
+        "Fresh fruit shakes",
+        "Local beer (Dali)"
+      ],
+      "tips": "Best after 7pm. Try a bit of everything - small portions. Bring cash. Watch for food hygiene. Great for atmosphere.",
+      "dishHighlights": [
+        "Grilled、过桥米线",
+        "Yunnan HAM",
+        "Fresh fruit shakes"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 20,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xiao-yunnan",
+      "name": "小云南",
+      "nameEn": "Xiao Yunnan",
+      "cuisine": "Yunnan",
+      "priceRange": "¥80-150¥",
+      "description": "Upscale Yunnan cuisine restaurant featuring wild mushroom dishes, minority specialties, and Yunnan herbs in elegant setting.",
+      "address": "Green Lake Area, Kunming",
+      "coordinates": {
+        "lat": 25.0444,
+        "lng": 102.7056
+      },
+      "hours": "11:00-14:00, 17:00-21:00",
+      "highlights": [
+        "Wild mushroom hotpot",
+        "Steam pot chicken",
+        "Yunnan herb dishes",
+        "Ethnic minority dishes"
+      ],
+      "tips": "Best in rainy season for fresh mushrooms. Reservation required. The steam pot chicken is legendary. Expensive but excellent quality.",
+      "dishHighlights": [
+        "Wild mushroom hotpot",
+        "Steam pot chicken",
+        "Yunnan herb dishes"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "old-kunming-restaurant",
+      "name": "老昆明酒楼",
+      "nameEn": "Old Kunming Restaurant",
+      "cuisine": "Yunnan Traditional",
+      "priceRange": "¥60-120¥",
+      "description": "Classic Kunming restaurant serving traditional local dishes with recipes dating back 50+ years in nostalgic setting.",
+      "address": "South Ring Road, Kunming",
+      "coordinates": {
+        "lat": 25.0128,
+        "lng": 102.7189
+      },
+      "hours": "10:30-21:00",
+      "highlights": [
+        "Kunming-style cold noodles",
+        "Fried rice with ham",
+        "Steamed egg with tomato",
+        "Pickled vegetables"
+      ],
+      "tips": "Local institution. The fried rice is famous citywide. Good for first-time Yunnan food explorers. Lunch sets are good value.",
+      "dishHighlights": [
+        "Kunming-style cold noodles",
+        "Fried rice with ham",
+        "Steamed egg with tomato"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingyan-ethnic",
+      "name": "青岩民族菜",
+      "nameEn": "Qingyan Ethnic Cuisine",
+      "cuisine": "Multi-ethnic Yunnan",
+      "priceRange": "¥50-90¥",
+      "description": "Restaurant specializing in dishes from various Yunnan ethnic minorities including Yi, Miao, Zhuang, and Bai.",
+      "address": "Fashion Street, Kunming",
+      "coordinates": {
+        "lat": 25.0394,
+        "lng": 102.7217
+      },
+      "hours": "11:00-22:00",
+      "highlights": [
+        "Miao spicy chicken",
+        "Yi barbecue platter",
+        "Zhuang fish with sour soup",
+        "Ethnic rice dishes"
+      ],
+      "tips": "Good variety for trying multiple ethnic cuisines. Groups should order the 'ethnic sampler'. Very flavorful and spicy.",
+      "dishHighlights": [
+        "Miao spicy chicken",
+        "Yi barbecue platter",
+        "Zhuang fish with sour soup"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "flower-mushroom-hotpot",
+      "name": "花菇娘野生菌",
+      "nameEn": "Huagu Mushroom Hotpot",
+      "cuisine": "Yunnan Mushroom",
+      "priceRange": "¥100-200¥",
+      "description": "Premium wild mushroom hotpot restaurant with safety-certified mushrooms, serving seasonal varieties from Yunnan forests.",
+      "address": "Guangfu Road, Kunming",
+      "coordinates": {
+        "lat": 25.0289,
+        "lng": 102.7283
+      },
+      "hours": "11:00-22:00",
+      "highlights": [
+        "Matsutake mushroom hotpot",
+        "Porcini (牛肝菌)",
+        "Seasonal wild mushrooms",
+        "Hotpot set meals"
+      ],
+      "tips": "Only open during mushroom season (June-November). Price varies by mushroom type. Always confirm mushroom safety. Book in advance.",
+      "dishHighlights": [
+        "Matsutake mushroom hotpot",
+        "Porcini (牛肝菌)",
+        "Seasonal wild mushrooms"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 100,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "chuanjiang-hotpot",
+      "name": "川江号子火锅",
+      "nameEn": "Chuanjiang Hotpot",
+      "cuisine": "Sichuan Hotpot",
+      "priceRange": "¥80-150¥",
+      "description": "Popular chain hotpot restaurant with authentic Sichuan mala (numbing-spicy) broth and quality meat slices.",
+      "address": "Nanya Area, Kunming",
+      "coordinates": {
+        "lat": 25.0456,
+        "lng": 102.7356
+      },
+      "hours": "10:00-23:00",
+      "highlights": [
+        "Mala broth (麻辣)",
+        "Fresh lamb slices",
+        "Beef variety packs",
+        "Self-service condiments"
+      ],
+      "tips": "Very popular - expect waits on weekends. All-you-can-eat options available. The broth is very spicy. Bring change of clothes.",
+      "dishHighlights": [
+        "Mala broth (麻辣)",
+        "Fresh lamb slices",
+        "Beef variety packs"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yunnan-steam-pot",
+      "name": "云南汽锅鸡",
+      "nameEn": "Yunnan Steam Pot Chicken",
+      "cuisine": "Yunnan Traditional",
+      "priceRange": "¥60-100¥",
+      "description": "Traditional restaurant specializing in steam pot chicken (汽锅鸡) cooked using traditional clay pots and Yunnan herbs.",
+      "address": "Dongfang Road, Kunming",
+      "coordinates": {
+        "lat": 25.0328,
+        "lng": 102.7189
+      },
+      "hours": "10:00-21:30",
+      "highlights": [
+        "Original steam pot chicken",
+        "Herb-enhanced versions",
+        "Steam pot fish",
+        "Local chicken specials"
+      ],
+      "tips": "The broth is the highlight - drink it like soup. Allow 30 minutes cooking time. Multiple locations throughout city.",
+      "dishHighlights": [
+        "Original steam pot chicken",
+        "Herb-enhanced versions",
+        "Steam pot fish"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shuxiang-ethnic",
+      "name": "蜀香民族菜",
+      "nameEn": "Shuxiang Ethnic Cuisine",
+      "cuisine": "Yi Ethnic",
+      "priceRange": "¥50-80¥",
+      "description": "Authentic Yi ethnic cuisine with famous spicy dishes and traditional cooking methods from the Yi people.",
+      "address": "North Ring Road, Kunming",
+      "coordinates": {
+        "lat": 25.0656,
+        "lng": 102.7128
+      },
+      "hours": "11:00-21:00",
+      "highlights": [
+        "Yi spicy chicken",
+        "Candied pork ribs",
+        "Buckwheat cakes",
+        "Yi bacon"
+      ],
+      "tips": "Very local - English menu unlikely. Point and choose from kitchen. The spicy chicken is addictive. Good for adventurous eaters.",
+      "dishHighlights": [
+        "Yi spicy chicken",
+        "Candied pork ribs",
+        "Buckwheat cakes"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "spring-city-restaurant",
+      "name": "春城味道",
+      "nameEn": "Spring City Taste",
+      "cuisine": "Yunnan Fusion",
+      "priceRange": "¥70-130¥",
+      "description": "Modern Yunnan fusion restaurant combining traditional recipes with contemporary presentation in elegant setting.",
+      "address": "Park 1903, Kunming",
+      "coordinates": {
+        "lat": 25.0189,
+        "lng": 102.6856
+      },
+      "hours": "11:00-14:30, 17:00-21:30",
+      "highlights": [
+        "Fusion crossing bridge noodles",
+        "Yunnan tapas style",
+        "Craft beer pairing",
+        "Modern ethnic décor"
+      ],
+      "tips": "Best for visitors wanting refined Yunnan cuisine. Instagram-worthy presentation. Good for special occasions. Reservation recommended.",
+      "dishHighlights": [
+        "Fusion crossing bridge noodles",
+        "Yunnan tapas style",
+        "Craft beer pairing"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 70,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "degu Hotpot",
+      "name": "德居火锅",
+      "nameEn": "Degu Hotpot",
+      "cuisine": "Chongqing Hotpot",
+      "priceRange": "¥80-140¥",
+      "description": "Authentic Chongqing-style hotpot with thick mala broth, ox stomach, and various organ meats popular with locals.",
+      "address": "Wuhua Area, Kunming",
+      "coordinates": {
+        "lat": 25.0517,
+        "lng": 102.7233
+      },
+      "hours": "10:30-23:00",
+      "highlights": [
+        "Numbing spicy broth",
+        "Beef offal variety",
+        "Hot and sour tripe",
+        "Self-mixing sauces"
+      ],
+      "tips": "Not for the faint-hearted - very authentic offal-heavy menu. Specify spice level. Local favorite - expect crowds.",
+      "dishHighlights": [
+        "Numbing spicy broth",
+        "Beef offal variety",
+        "Hot and sour tripe"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "peter-kitchen",
+      "name": "彼得厨房",
+      "nameEn": "Peter's Kitchen",
+      "cuisine": "Western Yunnan",
+      "priceRange": "¥60-110¥",
+      "description": "Western Yunnan cuisine specialist focusing on dishes from Dali, Lijiang, and Shangri-La regions with authentic recipes.",
+      "address": "Green Lake Area, Kunming",
+      "coordinates": {
+        "lat": 25.0428,
+        "lng": 102.7033
+      },
+      "hours": "11:00-21:00",
+      "highlights": [
+        "Dali style pork belly",
+        "Lijiang chicken",
+        "Tibetan yak meat",
+        "Alpine mushroom dishes"
+      ],
+      "tips": "Good alternative if tired of generic Yunnan food. The yak meat is lean and healthy. Portion sizes are generous. English menu available.",
+      "dishHighlights": [
+        "Dali style pork belly",
+        "Lijiang chicken",
+        "Tibetan yak meat"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "linhua-valley",
+      "name": "林花谷私房菜",
+      "nameEn": "Linhua Valley Private Kitchen",
+      "cuisine": "Yunnan Private Kitchen",
+      "priceRange": "¥100-200¥",
+      "description": "Exclusive private kitchen experience with chef's tasting menu featuring seasonal Yunnan ingredients and innovative dishes.",
+      "address": "Panlong District, Kunming",
+      "coordinates": {
+        "lat": 25.0628,
+        "lng": 102.7189
+      },
+      "hours": "By reservation only",
+      "highlights": [
+        "Chef's tasting menu",
+        "Seasonal wild ingredients",
+        "Wine pairing available",
+        "Intimate dining room"
+      ],
+      "tips": "Must book 1 day ahead. Only 8 tables available. Perfect for special occasions. Dietary restrictions can be accommodated.",
+      "dishHighlights": [
+        "Chef's tasting menu",
+        "Seasonal wild ingredients",
+        "Wine pairing available"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 100,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "chuan-xiang-douhua",
+      "name": "川香豆花庄",
+      "nameEn": "Chuanxiang Douhua Village",
+      "cuisine": "Sichuan-Yunnan",
+      "priceRange": "¥30-60¥",
+      "description": "Casual restaurant famous for tofu pudding (豆花) dishes both savory and sweet, plus Sichuan-Yunnan noodle dishes.",
+      "address": "Kunming Old Street",
+      "coordinates": {
+        "lat": 25.0394,
+        "lng": 102.7133
+      },
+      "hours": "07:00-20:00",
+      "highlights": [
+        "Savory tofu pudding",
+        "Sweet osmanthus tofu",
+        "Sichuan-style noodles",
+        "Cheap and filling sets"
+      ],
+      "tips": "Great breakfast spot. The tofu pudding desserts are unique. Open early - good before sightseeing. Very cheap.",
+      "dishHighlights": [
+        "Savory tofu pudding",
+        "Sweet osmanthus tofu",
+        "Sichuan-style noodles"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 30,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "baiya-bbq",
+      "name": "白亚烤肉",
+      "nameEn": "Baiya BBQ",
+      "cuisine": "Korean BBQ",
+      "priceRange": "¥70-120¥",
+      "description": "Popular Korean BBQ restaurant with quality beef and pork, great banchan (side dishes), and all-you-can-eat options.",
+      "address": "South Ring Area, Kunming",
+      "coordinates": {
+        "lat": 25.0228,
+        "lng": 102.7289
+      },
+      "hours": "11:00-14:30, 17:00-22:00",
+      "highlights": [
+        "Premium beef bulgogi",
+        "Pork belly BBQ",
+        "All-you-can-eat menu",
+        "Korean side dishes"
+      ],
+      "tips": "Good air conditioning - escape summer heat. All-you-can-eat is good value. Dinner reservation needed on weekends.",
+      "dishHighlights": [
+        "Premium beef bulgogi",
+        "Pork belly BBQ",
+        "All-you-can-eat menu"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 70,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xinying-cuisine",
+      "name": "新营家乡菜",
+      "nameEn": "Xinying Home Cuisine",
+      "cuisine": "Yunnan Home Style",
+      "priceRange": "¥40-80¥",
+      "description": "Home-style Yunnan cooking with emphasis on fresh seasonal ingredients and traditional recipes from Kunming area.",
+      "address": "Guanghua Street, Kunming",
+      "coordinates": {
+        "lat": 25.0411,
+        "lng": 102.7122
+      },
+      "hours": "10:30-21:00",
+      "highlights": [
+        "Fried eggs with tomato",
+        "Home-style braised pork",
+        "Stir-fried greens",
+        "Local beer pairing"
+      ],
+      "tips": "No-frills local restaurant. Point at ingredients in kitchen. Rice is unlimited. Very popular with office workers at lunch.",
+      "dishHighlights": [
+        "Fried eggs with tomato",
+        "Home-style braised pork",
+        "Stir-fried greens"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 40,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yunnanhua-ristorante",
+      "name": "云南花意式餐厅",
+      "nameEn": "Yunnan Hua Italian Restaurant",
+      "cuisine": "Italian",
+      "priceRange": "¥80-150¥",
+      "description": "Italian restaurant in Kunming using Yunnan local ingredients like wild mushrooms and herbs in traditional Italian recipes.",
+      "address": "Park 1903, Kunming",
+      "coordinates": {
+        "lat": 25.0178,
+        "lng": 102.6844
+      },
+      "hours": "11:00-22:00",
+      "highlights": [
+        "Mushroom risotto",
+        "Yunnan truffle pasta",
+        "Local ingredient pizza",
+        "Italian wine selection"
+      ],
+      "tips": "Great for Western food cravings. Fusion menu is interesting. Romantic atmosphere. Pricey by Yunnan standards.",
+      "dishHighlights": [
+        "Mushroom risotto",
+        "Yunnan truffle pasta",
+        "Local ingredient pizza"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "minshan-food-court",
+      "name": "民升美食广场",
+      "nameEn": "Minshan Food Court",
+      "cuisine": "Multiple",
+      "priceRange": "¥20-50¥",
+      "description": "Multi-vendor food court in department store with various Yunnan and Chinese fast food options at reasonable prices.",
+      "address": "Minshan Department Store, Kunming",
+      "coordinates": {
+        "lat": 25.0356,
+        "lng": 102.7256
+      },
+      "hours": "10:00-21:00",
+      "highlights": [
+        "Rice noodle stations",
+        "Braised dishes",
+        "Hot and sour noodles",
+        "Local desserts"
+      ],
+      "tips": "Good for quick, cheap meals. Each vendor has own opening hours. AC available. Easy to find in city center.",
+      "dishHighlights": [
+        "Rice noodle stations",
+        "Braised dishes",
+        "Hot and sour noodles"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 20,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yunnanshan-kitchen",
+      "name": "云南山厨房",
+      "nameEn": "Yunnan Mountain Kitchen",
+      "cuisine": "Yunnan Mountain",
+      "priceRange": "¥60-120¥",
+      "description": "Restaurant specializing in mountain cuisine from Yunnan's highlands including wild vegetables, river fish, and highland herbs.",
+      "address": "Panlong District, Kunming",
+      "coordinates": {
+        "lat": 25.0589,
+        "lng": 102.7228
+      },
+      "hours": "10:30-21:00",
+      "highlights": [
+        "Wild vegetable dishes",
+        "River fish",
+        "Highland herbs",
+        "Mountain chicken"
+      ],
+      "tips": "Great for trying mountain cuisine. The river fish is excellent. Ask for chef's recommendations. Good for groups.",
+      "dishHighlights": [
+        "Stir-fried wild vegetables",
+        "Grilled river fish",
+        "Herb soup"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 60,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xishuangbanna-food",
+      "name": "傣味轩",
+      "nameEn": "Dai Flavor Restaurant",
+      "cuisine": "Dai Ethnic",
+      "priceRange": "¥50-100¥",
+      "description": "Restaurant serving Dai ethnic cuisine from Xishuangbanna with sour and spicy flavors, grilled meats, and tropical ingredients.",
+      "address": "Wuhua District, Kunming",
+      "coordinates": {
+        "lat": 25.0522,
+        "lng": 102.7289
+      },
+      "hours": "11:00-21:30",
+      "highlights": [
+        "Dai sour soup",
+        "Grilled chicken",
+        "Bamboo rice",
+        "Banana flower salad"
+      ],
+      "tips": "The sour soup is excellent. Bring friends to try variety of dishes. Very flavorful. Good for spicy food lovers.",
+      "dishHighlights": [
+        "Dai sour soup",
+        "Grilled chicken",
+        "Bamboo rice"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 50,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "nanping-street-food",
+      "name": "南屏街小吃",
+      "nameEn": "Nanping Street Snacks",
+      "cuisine": "Street Food",
+      "priceRange": "¥15-40¥",
+      "description": "Historic commercial street with local snack vendors, Yunnan specialties, and bustling night market atmosphere.",
+      "address": "Nanping Street, Kunming",
+      "coordinates": {
+        "lat": 25.0367,
+        "lng": 102.7156
+      },
+      "hours": "10:00-22:00",
+      "highlights": [
+        "Yunnan rice cakes",
+        "Barbecue skewers",
+        "Cold rice noodles",
+        "Fried dough twists"
+      ],
+      "tips": "Best in evening. Try small portions from multiple vendors. Very local atmosphere. Great for casual eating.",
+      "dishHighlights": [
+        "Yunnan rice cakes",
+        "Barbecue skewers",
+        "Cold rice noodles"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 15,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "chunshan-mei-restaurant",
+      "name": "春山美餐厅",
+      "nameEn": "Chunshan Mei Restaurant",
+      "cuisine": "Yunnan Fusion",
+      "priceRange": "¥80-150¥",
+      "description": "Modern Yunnan fusion restaurant with creative dishes using local ingredients, elegant presentation, and contemporary setting.",
+      "address": "Park 1903, Kunming",
+      "coordinates": {
+        "lat": 25.0178,
+        "lng": 102.6856
+      },
+      "hours": "11:00-14:30, 17:00-21:30",
+      "highlights": [
+        "Creative Yunnan dishes",
+        "Modern presentation",
+        "Seasonal menu",
+        "Artistic plating"
+      ],
+      "tips": "Best for special occasions. The dishes are Instagram-worthy. Reservation required for dinner. Pricey but worth it.",
+      "dishHighlights": [
+        "Fusion crossing bridge noodles",
+        "Artistic presentation",
+        "Seasonal specialties"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 80,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guangtong-traditional",
+      "name": "广通传统菜馆",
+      "nameEn": "Guangtong Traditional Cuisine",
+      "cuisine": "Yunnan Traditional",
+      "priceRange": "¥40-80¥",
+      "description": "Local favorite serving traditional Yunnan dishes with recipes passed down for generations, known for honest portions.",
+      "address": "Guanghua Street, Kunming",
+      "coordinates": {
+        "lat": 25.0389,
+        "lng": 102.7144
+      },
+      "hours": "10:00-21:00",
+      "highlights": [
+        "Traditional Yunnan recipes",
+        "Generous portions",
+        "Local favorite",
+        "Affordable prices"
+      ],
+      "tips": "Very popular with locals. Point at kitchen display for ordering. The portions are large. Good for authentic food.",
+      "dishHighlights": [
+        "Braised pork with soy sauce",
+        "Stir-fried greens",
+        "Steam egg with minced pork"
+      ],
+      "type": "local",
+      "tags": [
+        "local"
+      ],
+      "rating": 4,
+      "star": 0,
+      "diamond": 0,
+      "avgPrice": 40,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-26",
+      "name": "昆明味饵块",
+      "nameEn": "昆明味饵块 (饵块)",
+      "type": "local",
+      "cuisine": "饵块",
+      "avgPrice": 122,
+      "rating": 4.9,
+      "address": "昆明市市中心区美食街149号",
+      "coordinates": {
+        "lat": 25.0225,
+        "lng": 102.6829
+      },
+      "phone": "+86 0871 11439999",
+      "hours": "06:00-14:00",
+      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "过桥米线",
+        "鲜花饼"
+      ],
+      "tags": [
+        "性价比高",
+        "排队王",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-28",
+      "name": "巷子菌子火锅",
+      "nameEn": "巷子菌子火锅 (菌子火锅)",
+      "type": "cafe",
+      "cuisine": "菌子火锅",
+      "avgPrice": 69,
+      "rating": 4.2,
+      "address": "昆明市老城区美食街18号",
+      "coordinates": {
+        "lat": 25.0846,
+        "lng": 102.6995
+      },
+      "phone": "+86 0871 76623291",
+      "hours": "17:00-02:00",
+      "description": "昆明本地人推荐的菌子火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "鲜花饼",
+        "饵块"
+      ],
+      "tags": [
+        "下午茶",
+        "文艺",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-30",
+      "name": "巷子饵块",
+      "nameEn": "巷子饵块 (饵块)",
+      "type": "local",
+      "cuisine": "饵块",
+      "avgPrice": 73,
+      "rating": 4.3,
+      "address": "昆明市新城区美食街12号",
+      "coordinates": {
+        "lat": 25.0645,
+        "lng": 102.6818
+      },
+      "phone": "+86 0871 68418999",
+      "hours": "10:00-22:00",
+      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "过桥米线",
+        "汽锅鸡",
+        "饵块"
+      ],
+      "tags": [
+        "本地人爱去",
+        "老字号",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-32",
+      "name": "昆明味汽锅鸡",
+      "nameEn": "昆明味汽锅鸡 (汽锅鸡)",
+      "type": "local",
+      "cuisine": "汽锅鸡",
+      "avgPrice": 45,
+      "rating": 4.0,
+      "address": "昆明市老城区美食街118号",
+      "coordinates": {
+        "lat": 25.0732,
+        "lng": 102.7128
+      },
+      "phone": "+86 0871 65664964",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "汽锅鸡",
+        "鲜花饼"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-34",
+      "name": "巷子饵块",
+      "nameEn": "巷子饵块 (饵块)",
+      "type": "local",
+      "cuisine": "饵块",
+      "avgPrice": 61,
+      "rating": 4.8,
+      "address": "昆明市市中心区美食街149号",
+      "coordinates": {
+        "lat": 25.0284,
+        "lng": 102.7264
+      },
+      "phone": "+86 0871 71019105",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲜花饼",
+        "菌子火锅",
+        "饵块"
+      ],
+      "tags": [
+        "隐藏美食",
+        "老字号",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-36",
+      "name": "街边鲜花饼",
+      "nameEn": "街边鲜花饼 (鲜花饼)",
+      "type": "local",
+      "cuisine": "鲜花饼",
+      "avgPrice": 132,
+      "rating": 4.8,
+      "address": "昆明市新城区美食街43号",
+      "coordinates": {
+        "lat": 25.0616,
+        "lng": 102.6949
+      },
+      "phone": "+86 0871 41572938",
+      "hours": "06:00-14:00",
+      "description": "昆明本地人推荐的鲜花饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "过桥米线",
+        "菌子火锅",
+        "鲜花饼"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-38",
+      "name": "老字号菌子火锅",
+      "nameEn": "老字号菌子火锅 (菌子火锅)",
+      "type": "local",
+      "cuisine": "菌子火锅",
+      "avgPrice": 103,
+      "rating": 4.7,
+      "address": "昆明市新城区美食街44号",
+      "coordinates": {
+        "lat": 24.994,
+        "lng": 102.7145
+      },
+      "phone": "+86 0871 24622440",
+      "hours": "17:00-02:00",
+      "description": "昆明本地人推荐的菌子火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲜花饼",
+        "过桥米线",
+        "菌子火锅"
+      ],
+      "tags": [
+        "老字号",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-40",
+      "name": "正宗饵块",
+      "nameEn": "正宗饵块 (饵块)",
+      "type": "street",
+      "cuisine": "饵块",
+      "avgPrice": 34,
+      "rating": 4.7,
+      "address": "昆明市老城区美食街60号",
+      "coordinates": {
+        "lat": 25.0478,
+        "lng": 102.7552
+      },
+      "phone": "+86 0871 75066968",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "饵块",
+        "汽锅鸡"
+      ],
+      "tags": [
+        "网红打卡",
+        "路边摊",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-42",
+      "name": "老昆明汽锅鸡",
+      "nameEn": "老昆明汽锅鸡 (汽锅鸡)",
+      "type": "street",
+      "cuisine": "汽锅鸡",
+      "avgPrice": 53,
+      "rating": 4.5,
+      "address": "昆明市老城区美食街104号",
+      "coordinates": {
+        "lat": 25.0552,
+        "lng": 102.6714
+      },
+      "phone": "+86 0871 46902185",
+      "hours": "06:00-14:00",
+      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "饵块",
+        "汽锅鸡",
+        "鲜花饼"
+      ],
+      "tags": [
+        "路边摊",
+        "网红打卡",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-44",
+      "name": "昆明味过桥米线",
+      "nameEn": "昆明味过桥米线 (过桥米线)",
+      "type": "local",
+      "cuisine": "过桥米线",
+      "avgPrice": 143,
+      "rating": 4.0,
+      "address": "昆明市老城区美食街12号",
+      "coordinates": {
+        "lat": 25.0255,
+        "lng": 102.7352
+      },
+      "phone": "+86 0871 17139513",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "昆明本地人推荐的过桥米线店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "饵块",
+        "汽锅鸡",
+        "菌子火锅"
+      ],
+      "tags": [
+        "家常菜",
+        "性价比高",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-46",
+      "name": "老字号汽锅鸡",
+      "nameEn": "老字号汽锅鸡 (汽锅鸡)",
+      "type": "local",
+      "cuisine": "汽锅鸡",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "昆明市市中心区美食街171号",
+      "coordinates": {
+        "lat": 25.087,
+        "lng": 102.7021
+      },
+      "phone": "+86 0871 68013623",
+      "hours": "09:00-21:00",
+      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "过桥米线",
+        "鲜花饼"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-48",
+      "name": "地道鲜花饼",
+      "nameEn": "地道鲜花饼 (鲜花饼)",
+      "type": "local",
+      "cuisine": "鲜花饼",
+      "avgPrice": 76,
+      "rating": 4.8,
+      "address": "昆明市老城区美食街142号",
+      "coordinates": {
+        "lat": 24.9925,
+        "lng": 102.6879
+      },
+      "phone": "+86 0871 91358641",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "昆明本地人推荐的鲜花饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "鲜花饼",
+        "饵块"
+      ],
+      "tags": [
+        "隐藏美食",
+        "社区老店",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-50",
+      "name": "老字号汽锅鸡",
+      "nameEn": "老字号汽锅鸡 (汽锅鸡)",
+      "type": "local",
+      "cuisine": "汽锅鸡",
+      "avgPrice": 133,
+      "rating": 4.2,
+      "address": "昆明市市中心区美食街181号",
+      "coordinates": {
+        "lat": 25.0842,
+        "lng": 102.7365
+      },
+      "phone": "+86 0871 69423520",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲜花饼",
+        "饵块",
+        "汽锅鸡"
+      ],
+      "tags": [
+        "性价比高",
+        "社区老店",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-52",
+      "name": "正宗饵块",
+      "nameEn": "正宗饵块 (饵块)",
+      "type": "local",
+      "cuisine": "饵块",
+      "avgPrice": 103,
+      "rating": 4.5,
+      "address": "昆明市新城区美食街58号",
+      "coordinates": {
+        "lat": 25.0414,
+        "lng": 102.7444
+      },
+      "phone": "+86 0871 47168299",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲜花饼",
+        "饵块",
+        "菌子火锅"
+      ],
+      "tags": [
+        "隐藏美食",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-54",
+      "name": "传统鲜花饼",
+      "nameEn": "传统鲜花饼 (鲜花饼)",
+      "type": "local",
+      "cuisine": "鲜花饼",
+      "avgPrice": 147,
+      "rating": 4.7,
+      "address": "昆明市老城区美食街32号",
+      "coordinates": {
+        "lat": 25.0407,
+        "lng": 102.755
+      },
+      "phone": "+86 0871 88033654",
+      "hours": "17:00-02:00",
+      "description": "昆明本地人推荐的鲜花饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲜花饼",
+        "过桥米线",
+        "菌子火锅"
+      ],
+      "tags": [
+        "老字号",
+        "社区老店",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-56",
+      "name": "传统菌子火锅",
+      "nameEn": "传统菌子火锅 (菌子火锅)",
+      "type": "cafe",
+      "cuisine": "菌子火锅",
+      "avgPrice": 73,
+      "rating": 4.5,
+      "address": "昆明市市中心区美食街9号",
+      "coordinates": {
+        "lat": 25.0055,
+        "lng": 102.7616
+      },
+      "phone": "+86 0871 45574091",
+      "hours": "17:00-02:00",
+      "description": "昆明本地人推荐的菌子火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "饵块",
+        "过桥米线",
+        "菌子火锅"
+      ],
+      "tags": [
+        "文艺",
+        "咖啡",
+        "安静"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-58",
+      "name": "巷子汽锅鸡",
+      "nameEn": "巷子汽锅鸡 (汽锅鸡)",
+      "type": "street",
+      "cuisine": "汽锅鸡",
+      "avgPrice": 34,
+      "rating": 4.4,
+      "address": "昆明市老城区美食街162号",
+      "coordinates": {
+        "lat": 25.0674,
+        "lng": 102.7316
+      },
+      "phone": "+86 0871 75198209",
+      "hours": "06:00-14:00",
+      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "过桥米线",
+        "汽锅鸡",
+        "鲜花饼"
+      ],
+      "tags": [
+        "小吃",
+        "路边摊",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-60",
+      "name": "阿婆菌子火锅",
+      "nameEn": "阿婆菌子火锅 (菌子火锅)",
+      "type": "local",
+      "cuisine": "菌子火锅",
+      "avgPrice": 35,
+      "rating": 4.3,
+      "address": "昆明市老城区美食街106号",
+      "coordinates": {
+        "lat": 25.0439,
+        "lng": 102.7215
+      },
+      "phone": "+86 0871 75877819",
+      "hours": "10:00-22:00",
+      "description": "昆明本地人推荐的菌子火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "饵块",
+        "鲜花饼",
+        "汽锅鸡"
+      ],
+      "tags": [
+        "隐藏美食",
+        "排队王",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-62",
+      "name": "传统过桥米线",
+      "nameEn": "传统过桥米线 (过桥米线)",
+      "type": "street",
+      "cuisine": "过桥米线",
+      "avgPrice": 28,
+      "rating": 4.4,
+      "address": "昆明市市中心区美食街103号",
+      "coordinates": {
+        "lat": 25.0451,
+        "lng": 102.7577
+      },
+      "phone": "+86 0871 34654005",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "昆明本地人推荐的过桥米线店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "过桥米线",
+        "鲜花饼"
+      ],
+      "tags": [
+        "小吃",
+        "夜市",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-64",
+      "name": "老街鲜花饼",
+      "nameEn": "老街鲜花饼 (鲜花饼)",
+      "type": "local",
+      "cuisine": "鲜花饼",
+      "avgPrice": 83,
+      "rating": 4.4,
+      "address": "昆明市新城区美食街186号",
+      "coordinates": {
+        "lat": 25.0713,
+        "lng": 102.6834
+      },
+      "phone": "+86 0871 81215107",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "昆明本地人推荐的鲜花饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "过桥米线",
+        "鲜花饼"
+      ],
+      "tags": [
+        "本地人爱去",
+        "老字号",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-66",
+      "name": "昆明味鲜花饼",
+      "nameEn": "昆明味鲜花饼 (鲜花饼)",
+      "type": "local",
+      "cuisine": "鲜花饼",
+      "avgPrice": 76,
+      "rating": 4.7,
+      "address": "昆明市市中心区美食街145号",
+      "coordinates": {
+        "lat": 25.0799,
+        "lng": 102.7577
+      },
+      "phone": "+86 0871 69929156",
+      "hours": "06:00-14:00",
+      "description": "昆明本地人推荐的鲜花饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲜花饼",
+        "菌子火锅",
+        "汽锅鸡"
+      ],
+      "tags": [
+        "排队王",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-68",
+      "name": "巷子菌子火锅",
+      "nameEn": "巷子菌子火锅 (菌子火锅)",
+      "type": "local",
+      "cuisine": "菌子火锅",
+      "avgPrice": 92,
+      "rating": 4.0,
+      "address": "昆明市新城区美食街66号",
+      "coordinates": {
+        "lat": 25.0148,
+        "lng": 102.7519
+      },
+      "phone": "+86 0871 73746034",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "昆明本地人推荐的菌子火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "鲜花饼",
+        "饵块"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-70",
+      "name": "地道汽锅鸡",
+      "nameEn": "地道汽锅鸡 (汽锅鸡)",
+      "type": "street",
+      "cuisine": "汽锅鸡",
+      "avgPrice": 41,
+      "rating": 4.6,
+      "address": "昆明市市中心区美食街105号",
+      "coordinates": {
+        "lat": 25.0075,
+        "lng": 102.7192
+      },
+      "phone": "+86 0871 14087283",
+      "hours": "17:00-02:00",
+      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "过桥米线",
+        "饵块",
+        "菌子火锅"
+      ],
+      "tags": [
+        "夜市",
+        "路边摊",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-72",
+      "name": "昆明味饵块",
+      "nameEn": "昆明味饵块 (饵块)",
+      "type": "street",
+      "cuisine": "饵块",
+      "avgPrice": 27,
+      "rating": 4.8,
+      "address": "昆明市市中心区美食街163号",
+      "coordinates": {
+        "lat": 25.0731,
+        "lng": 102.7146
+      },
+      "phone": "+86 0871 72246859",
+      "hours": "09:00-21:00",
+      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "菌子火锅",
+        "汽锅鸡",
+        "过桥米线"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "kunming-74",
+      "name": "阿婆汽锅鸡",
+      "nameEn": "阿婆汽锅鸡 (汽锅鸡)",
+      "type": "street",
+      "cuisine": "汽锅鸡",
+      "avgPrice": 17,
+      "rating": 4.4,
+      "address": "昆明市老城区美食街5号",
+      "coordinates": {
+        "lat": 25.0186,
+        "lng": 102.6976
+      },
+      "phone": "+86 0871 62998697",
+      "hours": "17:00-02:00",
+      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲜花饼",
+        "过桥米线",
+        "汽锅鸡"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "hotels": [
+    {
+      "id": "cloud-king-hotel",
+      "name": "云举大酒店",
+      "nameEn": "Cloud King Hotel",
+      "category": "luxury",
+      "priceRange": "¥800-1500/night",
+      "description": "5-star luxury hotel near Cuihu Park with panoramic city views, spa, multiple restaurants, and premium service.",
+      "address": "98 Cuihu North Road, Kunming",
+      "coordinates": {
+        "lat": 25.0489,
+        "lng": 102.7028
+      },
+      "highlights": [
+        "Rooftop bar with view",
+        "Luxury spa",
+        "Multiple restaurants",
+        "Fitness center"
+      ],
+      "amenities": [
+        "Spa",
+        "Pool",
+        "Restaurant",
+        "Bar",
+        "Gym",
+        "Business Center",
+        "Airport Shuttle"
+      ],
+      "tips": "Best views from executive floors. Book direct for better rates. Breakfast buffet is excellent.",
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+    },
+    {
+      "id": "kunming-hotel",
+      "name": "昆明饭店",
+      "nameEn": "Kunming Hotel",
+      "category": "luxury",
+      "priceRange": "¥600-1200/night",
+      "description": "Historic 5-star hotel in central Kunming, known for excellent service and convenient location near shopping and attractions.",
+      "address": "52 Dongfeng East Road, Kunming",
+      "coordinates": {
+        "lat": 25.0389,
+        "lng": 102.7233
+      },
+      "highlights": [
+        "Historic significance",
+        "Central location",
+        "Varied restaurants",
+        "Conference facilities"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Business Center",
+        "Shopping Arcade",
+        "Beauty Salon"
+      ],
+      "tips": "Long history - many Chinese leaders stayed here. Excellent location for first-time visitors. Book well in advance.",
+      "imageUrl": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800"
+    },
+    {
+      "id": "golden-gate-hotel",
+      "name": "金格大酒店",
+      "nameEn": "Golden Gate Hotel",
+      "category": "upscale",
+      "priceRange": "¥400-800/night",
+      "description": "4-star hotel near Golden Horse and Phoenix Gate with comfortable rooms, good service, and proximity to major attractions.",
+      "address": "123 Beijing Road, Kunming",
+      "coordinates": {
+        "lat": 25.0417,
+        "lng": 102.7189
+      },
+      "highlights": [
+        "Walking distance to old street",
+        "Reliable breakfast",
+        "Modern facilities",
+        "Good value"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Gym",
+        "Business Center",
+        "Free WiFi",
+        "Parking"
+      ],
+      "tips": "Best value in this category. Check for weekend discounts. Near metro station. Staff speak some English.",
+      "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+    },
+    {
+      "id": "green-lake-hotel",
+      "name": "翠湖宾馆",
+      "nameEn": "Green Lake Hotel",
+      "category": "upscale",
+      "priceRange": "¥500-900/night",
+      "description": "Boutique hotel overlooking Cuihu Park with artistic decor, excellent restaurant, and personalized service.",
+      "address": "8 Cuihu South Road, Kunming",
+      "coordinates": {
+        "lat": 25.0422,
+        "lng": 102.7056
+      },
+      "highlights": [
+        "Park views",
+        "Artistic interior",
+        "Famous brunch",
+        "Quiet location"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Garden",
+        "Free WiFi",
+        "Airport Shuttle"
+      ],
+      "tips": "Best for romantic getaways. The brunch is famous citywide. Very quiet despite central location. Book park-view rooms.",
+      "imageUrl": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800"
+    },
+    {
+      "id": "kailash-hotel",
+      "name": "凯拉斯酒店",
+      "nameEn": "Kailash Hotel",
+      "category": "mid-range",
+      "priceRange": "¥250-450/night",
+      "description": "Modern mid-range hotel near shopping district with comfortable rooms, reliable service, and good breakfast.",
+      "address": "88 Spring City Road, Kunming",
+      "coordinates": {
+        "lat": 25.0356,
+        "lng": 102.7128
+      },
+      "highlights": [
+        "Near shopping areas",
+        "Generous breakfast",
+        "Clean rooms",
+        "Metro access"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Metro Nearby",
+        "Laundry"
+      ],
+      "tips": "Good balance of price and quality. Metro station 5 min walk. Breakfast included in most rates.",
+      "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+    },
+    {
+      "id": "yunnan-business-hotel",
+      "name": "云南商务酒店",
+      "nameEn": "Yunnan Business Hotel",
+      "category": "mid-range",
+      "priceRange": "¥200-380/night",
+      "description": "Reliable business hotel near Kunming's business district with comfortable rooms and efficient service.",
+      "address": "168 Beijing Road, Kunming",
+      "coordinates": {
+        "lat": 25.0378,
+        "lng": 102.7256
+      },
+      "highlights": [
+        "Business facilities",
+        "Central location",
+        "Reliable WiFi",
+        "Good breakfast"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Business Center",
+        "Free WiFi",
+        "Meeting Rooms",
+        "Parking"
+      ],
+      "tips": "Popular with business travelers. Get floor higher up for views. Weekend rates often discounted.",
+      "imageUrl": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800"
+    },
+    {
+      "id": "spring-city-inn",
+      "name": "春城客栈",
+      "nameEn": "Spring City Inn",
+      "category": "budget",
+      "priceRange": "¥120-220/night",
+      "description": "Charming budget hotel near Cuihu Park with Yunnan ethnic decor, clean rooms, and local character.",
+      "address": "23 Cuihu Road, Kunming",
+      "coordinates": {
+        "lat": 25.0433,
+        "lng": 102.7039
+      },
+      "highlights": [
+        "Ethnic decor",
+        "Near park",
+        "Local breakfast",
+        "Friendly staff"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Luggage Storage",
+        "Tour Desk"
+      ],
+      "tips": "Best budget option near Cuihu. Book early as small hotel. English-speaking staff limited.",
+      "imageUrl": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?w=800"
+    },
+    {
+      "id": "kunming-youth-hostel",
+      "name": "昆明青年旅舍",
+      "nameEn": "Kunming Youth Hostel",
+      "category": "hostel",
+      "priceRange": "¥50-120/night",
+      "description": "Popular backpacker hostel near Kunming Railway Station with dorms, private rooms, and social atmosphere.",
+      "address": "45 Beijing Road, Kunming",
+      "coordinates": {
+        "lat": 25.0489,
+        "lng": 102.7233
+      },
+      "highlights": [
+        "Social atmosphere",
+        "Dorm beds available",
+        "Common kitchen",
+        "Tour booking"
+      ],
+      "amenities": [
+        "Dorms",
+        "Shared Kitchen",
+        "Free WiFi",
+        "Luggage Storage",
+        "Tour Desk"
+      ],
+      "tips": "Best for solo travelers. Evening social events. Very close to railway station. Noisy at times.",
+      "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "id": "donghua-grand-hotel",
+      "name": "东华大酒店",
+      "nameEn": "Donghua Grand Hotel",
+      "category": "upscale",
+      "priceRange": "¥450-750/night",
+      "description": "Modern 4-star hotel near East Kunming with comfortable rooms, good restaurants, and comprehensive facilities.",
+      "address": "388 East Ring Road, Kunming",
+      "coordinates": {
+        "lat": 25.0528,
+        "lng": 102.7456
+      },
+      "highlights": [
+        "New facilities",
+        "Large rooms",
+        "Good breakfast",
+        "Underground parking"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Gym",
+        "Business Center",
+        "Free WiFi",
+        "Parking",
+        "Room Service"
+      ],
+      "tips": "Good for those with cars. Far from center but good metro connection. Newer property - fresh decor.",
+      "imageUrl": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=800"
+    },
+    {
+      "id": "xishan-resort",
+      "name": "西山度假酒店",
+      "nameEn": "Xishan Resort Hotel",
+      "category": "resort",
+      "priceRange": "¥600-1200/night",
+      "description": "Resort hotel on the Western Hills with scenic views of Dianchi Lake, forest setting, and fresh air.",
+      "address": "Western Hills Scenic Area, Kunming",
+      "coordinates": {
+        "lat": 24.9533,
+        "lng": 102.6233
+      },
+      "highlights": [
+        "Mountain views",
+        "Forest atmosphere",
+        "Hiking access",
+        "Fresh air"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Garden",
+        "Hiking Trails",
+        "Free WiFi",
+        "Parking"
+      ],
+      "tips": "Best for nature lovers. Rent a car recommended. Quiet and peaceful. Good for weekend getaways.",
+      "imageUrl": "https://images.unsplash.com/photo-1586611292717-f828b167408c?w=800"
+    },
+    {
+      "id": "lijiang-hotel-kunming",
+      "name": "丽江饭店",
+      "nameEn": "Lijiang Hotel Kunming",
+      "category": "mid-range",
+      "priceRange": "¥280-480/night",
+      "description": "Nostalgic hotel with Naxi-style architecture and decor, offering unique character near city center.",
+      "address": "89 Wenlin Street, Kunming",
+      "coordinates": {
+        "lat": 25.0428,
+        "lng": 102.7189
+      },
+      "highlights": [
+        "Naxi style rooms",
+        "Central location",
+        "Traditional atmosphere",
+        "Good restaurant"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Tour Desk",
+        "Luggage Storage"
+      ],
+      "tips": "Unique architectural style. Good for experiencing Yunnan culture. Clean but older facilities.",
+      "imageUrl": "https://images.unsplash.com/photo-1561842437-5d70e8a8a0b1?w=800"
+    },
+    {
+      "id": "park-1903-boutique",
+      "name": "公园1903精品酒店",
+      "nameEn": "Park 1903 Boutique Hotel",
+      "category": "boutique",
+      "priceRange": "¥500-900/night",
+      "description": "French-inspired boutique hotel in the Park 1903 development with elegant rooms and upscale amenities.",
+      "address": "Park 1903, Guangfu Road, Kunming",
+      "coordinates": {
+        "lat": 25.0189,
+        "lng": 102.6856
+      },
+      "highlights": [
+        "European design",
+        "Quiet neighborhood",
+        "Upscale dining",
+        "Lake views"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Bar",
+        "Gym",
+        "Free WiFi",
+        "Parking",
+        "Spa"
+      ],
+      "tips": "Best for romantic stays. The surrounding Park 1903 area is nice for strolling. Dinner reservation needed for restaurant.",
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+    },
+    {
+      "id": "kunming-airport-hotel",
+      "name": "昆明机场酒店",
+      "nameEn": "Kunming Airport Hotel",
+      "category": "airport",
+      "priceRange": "¥300-500/night",
+      "description": "Convenient hotel directly connected to Kunming Changshui Airport terminal, ideal for transit passengers.",
+      "address": "Inside Kunming Airport Terminal",
+      "coordinates": {
+        "lat": 25.1017,
+        "lng": 102.9344
+      },
+      "highlights": [
+        "Airport connected",
+        "24-hour check-in",
+        "Quiet rooms",
+        "Free airport shuttle"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Airport Shuttle",
+        "Luggage Storage",
+        "Shower Facilities"
+      ],
+      "tips": "Best for early morning flights or late arrivals. Book directly with hotel for better rate. Shower facilities available.",
+      "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+    },
+    {
+      "id": "panlong-hotel",
+      "name": "盘龙酒店",
+      "nameEn": "Panlong Hotel",
+      "category": "mid-range",
+      "priceRange": "¥220-380/night",
+      "description": "Comfortable mid-range hotel near Panlong River with modern rooms, good breakfast, and practical amenities.",
+      "address": "Panlong District, Kunming",
+      "coordinates": {
+        "lat": 25.0628,
+        "lng": 102.7156
+      },
+      "highlights": [
+        "River views",
+        "Modern rooms",
+        "Good breakfast",
+        "Metro nearby"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Room Service",
+        "Laundry"
+      ],
+      "tips": "Good value for money. Metro station 10 min walk. Rooms on higher floors have better views.",
+      "imageUrl": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800"
+    },
+    {
+      "id": "jindu-hotel",
+      "name": "金都酒店",
+      "nameEn": "Jindu Hotel",
+      "category": "budget",
+      "priceRange": "¥150-280/night",
+      "description": "Clean and affordable budget hotel near Kunming Railway Station with basic but comfortable rooms.",
+      "address": "123 Railway Station Road, Kunming",
+      "coordinates": {
+        "lat": 25.0517,
+        "lng": 102.7267
+      },
+      "highlights": [
+        "Near train station",
+        "Very cheap",
+        "Basic but clean",
+        "Simple breakfast"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Luggage Storage",
+        "24-hour Reception"
+      ],
+      "tips": "Best budget option near station. Many long-distance bus connections nearby. Room quality varies - request newer floor.",
+      "imageUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800"
+    },
+    {
+      "id": "hongta-park-hotel",
+      "name": "红塔公园酒店",
+      "nameEn": "Hongta Park Hotel",
+      "category": "upscale",
+      "priceRange": "¥450-780/night",
+      "description": "Upscale hotel near Hongta Park with modern facilities, multiple dining options, and professional service.",
+      "address": "Hongta Park Area, Kunming",
+      "coordinates": {
+        "lat": 25.0356,
+        "lng": 102.6989
+      },
+      "highlights": [
+        "Park views",
+        "Modern facilities",
+        "Good restaurants",
+        "Professional staff"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Gym",
+        "Business Center",
+        "Free WiFi",
+        "Parking",
+        "Room Service"
+      ],
+      "tips": "Good for both business and leisure. Nearby park is nice for morning walks. Weekend discounts available.",
+      "imageUrl": "https://images.unsplash.com/photo-1595576508898-0bb5b64bd566?w=800"
+    },
+    {
+      "id": "chuneng-hotel",
+      "name": "楚雄酒店",
+      "nameEn": "Chuxiong Hotel",
+      "category": "mid-range",
+      "priceRange": "¥200-350/night",
+      "description": "Comfortable mid-range hotel near Kunming's business district with clean rooms and practical amenities.",
+      "address": "Chengdu-Kunming Highway junction",
+      "coordinates": {
+        "lat": 25.0622,
+        "lng": 102.6989
+      },
+      "highlights": [
+        "Clean rooms",
+        "Good breakfast",
+        "Central location",
+        "Reliable service"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Laundry"
+      ],
+      "tips": "Good value for money. Near highway entrance. Weekend discounts available. Rooms are well-maintained.",
+      "imageUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+    },
+    {
+      "id": "xiaoyunnan-boutique",
+      "name": "小云南精品客栈",
+      "nameEn": "Xiao Yunnan Boutique Inn",
+      "category": "boutique",
+      "priceRange": "¥350-600/night",
+      "description": "Ethnic-themed boutique hotel with Yunnan's minority culture decoration, offering unique local experience.",
+      "address": "Cuihu area, Kunming",
+      "coordinates": {
+        "lat": 25.0467,
+        "lng": 102.7039
+      },
+      "highlights": [
+        "Ethnic decoration",
+        "Cultural atmosphere",
+        "Near park",
+        "Unique experience"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Tour Desk",
+        "Garden"
+      ],
+      "tips": "Best for cultural experience. The decoration is impressive. Near Cuihu Park. Book early for best rooms.",
+      "imageUrl": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800"
+    },
+    {
+      "id": "tiancheng-hotel",
+      "name": "天城酒店",
+      "nameEn": "Tiancheng Hotel",
+      "category": "mid-range",
+      "priceRange": "¥250-400/night",
+      "description": "Modern business hotel near Kunming's financial district with comfortable rooms and good meeting facilities.",
+      "address": "Financial District, Kunming",
+      "coordinates": {
+        "lat": 25.0289,
+        "lng": 102.7222
+      },
+      "highlights": [
+        "Business facilities",
+        "Modern design",
+        "Central location",
+        "Reliable WiFi"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Business Center",
+        "Free WiFi",
+        "Meeting Rooms",
+        "Gym"
+      ],
+      "tips": "Good for business travelers. The rooms are modern and clean. Weekend discounts available. Near metro station.",
+      "imageUrl": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800"
+    },
+    {
+      "id": "shilin-yi-hotel",
+      "name": "石林彝族客栈",
+      "nameEn": "Shilin Yi Ethnic Hotel",
+      "category": "mid-range",
+      "priceRange": "¥200-350/night",
+      "description": "Ethnic Yi-style hotel in Shilin County near Stone Forest, featuring traditional architecture and local character.",
+      "address": "Shilin County, Kunming",
+      "coordinates": {
+        "lat": 24.8189,
+        "lng": 103.3222
+      },
+      "highlights": [
+        "Yi ethnic style",
+        "Near Stone Forest",
+        "Local atmosphere",
+        "Affordable"
+      ],
+      "amenities": [
+        "Restaurant",
+        "Free WiFi",
+        "Parking",
+        "Tour Desk"
+      ],
+      "tips": "Best for visiting Stone Forest area. The ethnic decoration is authentic. Book early during peak season. Combine with ancient town visit.",
+      "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "id": "police",
+      "name": "昆明市公安局",
+      "nameEn": "Kunming Police Bureau",
+      "phone": "0871-110",
+      "type": "police",
+      "description": "Kunming city police emergency hotline",
+      "address": "Kunming City Center"
+    },
+    {
+      "id": "fire",
+      "name": "昆明市消防支队",
+      "nameEn": "Kunming Fire Department",
+      "phone": "0871-119",
+      "type": "fire",
+      "description": "Fire and rescue emergency",
+      "address": "Kunming City"
+    },
+    {
+      "id": "ambulance",
+      "name": "昆明市急救中心",
+      "nameEn": "Kunming Emergency Medical Center",
+      "phone": "0871-120",
+      "type": "medical",
+      "description": "Medical emergency and ambulance service",
+      "address": "Kunming City"
+    },
+    {
+      "id": "tourism-hotline",
+      "name": "昆明市旅游投诉热线",
+      "nameEn": "Kunming Tourism Complaint Hotline",
+      "phone": "0871-12345",
+      "type": "tourism",
+      "description": "Tourism complaints and tourist assistance",
+      "address": "Kunming City"
+    },
+    {
+      "id": "entry-exit",
+      "name": "昆明市公安局出入境管理处",
+      "nameEn": "Kunming Exit-Entry Administration",
+      "phone": "0871-6715555",
+      "type": "government",
+      "description": "Passport, visa, and exit-entry services",
+      "address": "Guanhua Road, Kunming"
+    },
+    {
+      "id": "supervision",
+      "name": "昆明市旅游执法支队",
+      "nameEn": "Kunming Tourism Enforcement Brigade",
+      "phone": "0871-6535233",
+      "type": "tourism",
+      "description": "Report illegal tourism activities",
+      "address": "Kunming City"
+    },
+    {
+      "id": "weather",
+      "name": "昆明市气象局",
+      "nameEn": "Kunming Meteorological Bureau",
+      "phone": "12121",
+      "type": "weather",
+      "description": "Weather forecasts and severe weather warnings",
+      "address": "Kunming City"
+    },
+    {
+      "id": "consumer-complaints",
+      "name": "昆明市消费者协会",
+      "nameEn": "Kunming Consumers Association",
+      "phone": "0871-12315",
+      "type": "consumer",
+      "description": "Consumer rights protection and complaints",
+      "address": "Kunming City"
+    },
+    {
+      "id": "forestry",
+      "name": "昆明市森林防火指挥部",
+      "nameEn": "Kunming Forest Fire Prevention",
+      "phone": "0871-12119",
+      "type": "emergency",
+      "description": "Forest fire reporting and prevention",
+      "address": "Kunming City"
+    },
+    {
+      "id": "province-emergency",
+      "name": "云南省应急管理厅",
+      "nameEn": "Yunnan Provincial Emergency Management",
+      "phone": "0871-12350",
+      "type": "emergency",
+      "description": "Provincial emergency coordination",
+      "address": "Kunming City"
+    },
+    {
+      "id": "china-post",
+      "name": "中国邮政速递",
+      "nameEn": "China Post Express",
+      "phone": "11183",
+      "type": "delivery",
+      "description": "Mail and package delivery services",
+      "address": "Kunming City"
+    },
+    {
+      "id": "water-emergency",
+      "name": "昆明市自来水公司",
+      "nameEn": "Kunming Water Supply Company",
+      "phone": "0871-96106",
+      "type": "utility",
+      "description": "Water supply emergencies and leaks",
+      "address": "Kunming City"
+    },
+    {
+      "id": "electricity-emergency",
+      "name": "昆明供电局",
+      "nameEn": "Kunming Power Supply Bureau",
+      "phone": "95598",
+      "type": "utility",
+      "description": "Power outage and electrical emergencies",
+      "address": "Kunming City"
+    },
+    {
+      "id": "gas-emergency",
+      "name": "昆明市燃气公司",
+      "nameEn": "Kunming Gas Company",
+      "phone": "0871-96107",
+      "type": "utility",
+      "description": "Gas leak and gas emergency reporting",
+      "address": "Kunming City"
+    },
+    {
+      "id": "railway-complaints",
+      "name": "昆明铁路投诉",
+      "nameEn": "Kunming Railway Station Complaints",
+      "phone": "0871-12306",
+      "type": "transport",
+      "description": "Railway ticket inquiries and complaints",
+      "address": "Kunming Railway Station"
+    },
+    {
+      "id": "national-tourism-complaint",
+      "name": "全国旅游投诉热线",
+      "nameEn": "National Tourism Complaint Hotline",
+      "phone": "12301",
+      "type": "tourism",
+      "description": "National tourism complaints hotline",
+      "address": "Nationwide"
+    }
+  ],
+  "culturalTips": [
+    {
+      "id": "ethnic-diversity",
+      "title": "云南民族多样性",
+      "content": "昆明是云南26个少数民族的汇聚地，汉族占多数外，还有彝族、回族、白族、苗族、傣族等。尊重各民族的习俗和禁忌。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "temple-etiquette",
+      "title": "寺庙礼仪",
+      "content": "参观佛教或道教寺庙时，穿着要得体（遮盖肩膀和膝盖）。不要用手指佛像，保持安静。点燃香火后要用手扇灭而不是吹灭。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "bartering",
+      "title": "昆明集市还价",
+      "content": "在昆明老街或民族村购买手工艺品时，还价是正常的文化习惯。通常可以还到标价的30-50%。保持友好态度，以笑容开始。",
+      "category": "shopping",
+      "importance": "medium"
+    },
+    {
+      "id": "spring-city-weather",
+      "title": "春城天气特点",
+      "content": "昆明四季如春，但紫外线强（海拔1890米），即使阴天也要涂防晒霜。早晚温差大，夏季也要带薄外套。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "crossing-bridge-noodles-tradition",
+      "title": "过桥米线文化",
+      "content": "过桥米线是云南著名美食，据说源于昆明。吃法讲究：先放生肉，再放蔬菜，最后放米线。汤很烫，不要急于喝。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "local-dialect",
+      "title": "昆明方言",
+      "content": "昆明话属于云南方言，语调与普通话差异较大。当地人很热情，即使你用普通话交流也不会有问题。",
+      "category": "language",
+      "importance": "medium"
+    },
+    {
+      "id": "altitude-consideration",
+      "title": "高原注意事项",
+      "content": "昆明海拔约1890米，一般不会有高原反应。但如果前往石林或西山徒步，建议多喝水，避免剧烈运动。",
+      "category": "health",
+      "importance": "medium"
+    },
+    {
+      "id": "tea-culture",
+      "title": "云南普洱茶文化",
+      "content": "云南是普洱茶产地，昆明有很多茶馆。购买茶叶时可以先品茶，询问茶叶产地和年份。好的普洱越陈越香。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "flower-city",
+      "title": "花城昆明",
+      "content": "昆明被称为'花城'，全年有鲜花。斗南花卉市场是亚洲最大的花卉交易市场，可以买便宜鲜花带回家。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "market-haggling",
+      "title": "昆明夜市购物",
+      "content": "昆明老街夜市的商品质量参差不齐。购买民族服饰和手工艺品时，记得货比三家并适当还价。",
+      "category": "shopping",
+      "importance": "medium"
+    },
+    {
+      "id": "yunnan's-spicy-food",
+      "title": "云南辣味",
+      "content": "云南菜系偏辣，但不是四川那种麻辣。如果不吃辣，点菜时明确说'不要辣'。昆明餐厅一般都能调整辣度。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "public-transport",
+      "title": "昆明公交文化",
+      "content": "昆明公交系统发达，但高峰期很拥挤。让座给老人和孕妇是基本礼仪。上车要排队，不要拥挤。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "ethnic-festivals",
+      "title": "民族节日",
+      "content": "昆明及其周边有多个少数民族节日，如火把节（彝族）、泼水节（傣族）等。参加时请尊重当地习俗和宗教信仰。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "wild-mushroom-safety",
+      "title": "野生菌食用安全",
+      "content": "云南野生菌种类繁多，6-11月是旺季。只在正规餐厅食用，不要自行采摘。野生菌中毒很危险，绝不要吃不认识的菌类。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "business-meeting-etiquette",
+      "title": "昆明商务礼仪",
+      "content": "昆明商业文化较为务实。见面时握手是常见礼仪，交换名片用双手。商务宴请通常会持续较长时间。",
+      "category": "business",
+      "importance": "medium"
+    },
+    {
+      "id": "photography-tips",
+      "title": "摄影建议",
+      "content": "拍摄当地人或民族服饰前，建议先征得同意。寺庙内拍照前先看指示牌，有些区域禁止拍照。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "local-spirits",
+      "title": "云南本地酒文化",
+      "content": "云南本地有包谷酒、梅子酒等。昆明人待客热情，敬酒是常见礼仪。酒量因人而异，不要勉强自己。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "crossing-bridge-noodles-history",
+      "title": "过桥米线的传说",
+      "content": "传说过桥米线源于一位书生妻子送饭过桥的故事，汤要用滚油保温以保持温度。食用时先放生肉再放蔬菜最后放米线。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "yunnan-flowers-edible",
+      "title": "云南鲜花入菜",
+      "content": "云南有食用鲜花的传统，玫瑰、桂花、茉莉等都可入菜。昆明菜市场有各种食用花卉出售，是独特的美食体验。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "steam-pot-chicken-tradition",
+      "title": "汽锅鸡的烹饪传统",
+      "content": "汽锅鸡用特制土陶汽锅蒸制，利用蒸汽循环保持鸡肉原汁原味。加入三七、天麻等药材可增强滋补功效。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "kunming-stone-forest-sani",
+      "title": "石林撒尼文化",
+      "content": "石林是彝族撒尼人聚居地，他们有独特的跳月舞和阿诗玛传说。观看撒尼人表演时，请尊重他们的文化习俗。",
+      "category": "culture",
+      "importance": "medium"
+    },
+    {
+      "id": "dianchi-lake-ecology",
+      "title": "滇池生态保护",
+      "content": "滇池是昆明的母亲湖，但曾经污染严重，现在正在恢复中。请不要在湖中游泳或乱扔垃圾，保护湖泊生态。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "yunnans-coffee-culture",
+      "title": "云南小粒咖啡",
+      "content": "云南是中国咖啡主产地，昆明有很多特色咖啡馆。普洱和德宏产的小粒咖啡品质优良，是伴手礼的好选择。",
+      "category": "food",
+      "importance": "medium"
+    },
+    {
+      "id": "cuihu-morning-culture",
+      "title": "翠湖晨练文化",
+      "content": "翠湖是昆明人最爱的晨练场所，每天早晨都有市民在湖边打太极、跳广场舞、唱歌。游客可以观摩但请保持安静。",
+      "category": "practical",
+      "importance": "medium"
+    },
+    {
+      "id": "yunnans-geothermal-hot-spring",
+      "title": "云南温泉文化",
+      "content": "云南地热资源丰富，温泉是当地重要的休闲方式。安宁温泉是著名温泉胜地，水质优良，适合休闲度假。",
+      "category": "health",
+      "importance": "medium"
+    }
+  ],
+  "payment": [
+    {
+      "id": "alipay",
+      "name": "支付宝",
+      "nameEn": "Alipay",
+      "type": "mobile-payment",
+      "description": "Most widely accepted mobile payment in Kunming",
+      "popularity": "Very High",
+      "tips": [
+        "Download app and link bank card before arrival. Works at most stores, restaurants, and hotels."
+      ],
+      "howToUse": [
+        "Download app and link bank card before arrival. Works at most stores, restaurants, and hotels."
+      ]
+    },
+    {
+      "id": "wechat-pay",
+      "name": "微信支付",
+      "nameEn": "WeChat Pay",
+      "type": "mobile-payment",
+      "description": "Second most popular mobile payment, essential for WeChat communication",
+      "popularity": "Very High",
+      "tips": [
+        "WeChat is used for everything in China. WeChat Pay is integrated. Both Alipay and WeChat Pay are accepted almost everywhere."
+      ],
+      "howToUse": [
+        "WeChat is used for everything in China. WeChat Pay is integrated. Both Alipay and WeChat Pay are accepted almost everywhere."
+      ]
+    },
+    {
+      "id": "cash",
+      "name": "现金",
+      "nameEn": "Cash (RMB)",
+      "type": "cash",
+      "description": "Cash still accepted at markets, small shops, and rural areas",
+      "popularity": "Medium",
+      "tips": [
+        "Carry 200-500¥ cash for markets and small vendors. ATMs widely available. Rural areas may not accept cards."
+      ],
+      "howToUse": [
+        "Carry 200-500¥ cash for markets and small vendors. ATMs widely available. Rural areas may not accept cards."
+      ]
+    },
+    {
+      "id": "unionpay",
+      "name": "银联卡",
+      "nameEn": "UnionPay",
+      "type": "card",
+      "description": "China's dominant card network, accepted at most merchants",
+      "popularity": "High",
+      "tips": [
+        "Check your bank allows international transactions. Inform bank of travel plans before departure. Most ATMs accept foreign cards."
+      ],
+      "howToUse": [
+        "Check your bank allows international transactions. Inform bank of travel plans before departure. Most ATMs accept foreign cards."
+      ]
+    },
+    {
+      "id": "visa-mastercard",
+      "name": "Visa/Mastercard",
+      "nameEn": "Visa/Mastercard",
+      "type": "card",
+      "description": "International credit cards accepted at large hotels and upscale restaurants only",
+      "popularity": "Low",
+      "tips": [
+        "Don't rely on international cards in Kunming. Most small merchants don't accept them. China Merchants Bank and HSBC ATMs sometimes work."
+      ],
+      "howToUse": [
+        "Don't rely on international cards in Kunming. Most small merchants don't accept them. China Merchants Bank and HSBC ATMs sometimes work."
+      ]
+    },
+    {
+      "id": "travelers-cheques",
+      "name": "旅行支票",
+      "nameEn": "Traveler's Cheques",
+      "type": "other",
+      "description": "Rarely accepted in Kunming",
+      "popularity": "Very Low",
+      "tips": [
+        "Traveler's cheques are not recommended. Exchange them at banks if you have them. Cash and mobile payment are much more practical."
+      ],
+      "howToUse": [
+        "Traveler's cheques are not recommended. Exchange them at banks if you have them. Cash and mobile payment are much more practical."
+      ]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "airport",
+        "name": "昆明长水国际机场",
+        "nameEn": "Kunming Changshui International Airport",
+        "code": "KMG",
+        "description": "Main international airport serving Kunming, located 25km from city center",
+        "toCityCenter": "Airport metro line 6 (40 min, 5¥) or taxi (60-80¥, 40-60 min depending on traffic)",
+        "highlights": [
+          "International flights to Southeast Asia",
+          "Domestic hub for China Southwest",
+          "Metro connection to city",
+          "Taxi stands outside terminal"
+        ]
+      },
+      {
+        "type": "train",
+        "name": "昆明站",
+        "nameEn": "Kunming Railway Station",
+        "code": "KRR",
+        "description": "Main railway station in city center with connections to most major Chinese cities",
+        "toCityCenter": "Walking distance to city center (15 min) or metro lines 1/2 (5 min)",
+        "highlights": [
+          "High-speed trains to Dali (2h), Lijiang (3h)",
+          "Overnight sleepers to Beijing (11h), Shanghai (10h)",
+          "Metro connection",
+          "Bus stations nearby"
+        ]
+      },
+      {
+        "type": "train",
+        "name": "昆明南站",
+        "nameEn": "Kunming South Railway Station",
+        "code": "KMS",
+        "description": "High-speed rail hub in呈贡新城 area for G/D trains",
+        "toCityCenter": "Metro line 1 (45 min to city center, 4¥) or taxi (80-100¥, 50-70 min)",
+        "highlights": [
+          "High-speed trains to Guangzhou (6h), Shanghai (10h)",
+          "Modern facilities",
+          "Metro connection",
+          "Taxi queue available"
+        ]
+      },
+      {
+        "type": "bus",
+        "name": "昆明东部客运站",
+        "nameEn": "Kunming East Bus Station",
+        "description": "Bus station for routes to eastern Yunnan including Stone Forest",
+        "toCityCenter": "Metro line 3 (25 min) or taxi (30-50¥, 30-45 min)",
+        "highlights": [
+          "Buses to Stone Forest (1.5h, 40¥)",
+          "Routes to Jianshui, Yuanyang",
+          "Metro connection",
+          "Book tickets via app"
+        ]
+      },
+      {
+        "type": "bus",
+        "name": "昆明西北部客运站",
+        "nameEn": "Kunming Northwest Bus Station",
+        "description": "Bus station for routes to western Yunnan including Dali and Lijiang",
+        "toCityCenter": "Taxi (40-60¥, 40-50 min) or bus 1 (1h)",
+        "highlights": [
+          "Buses to Dali (3.5h, 100-130¥)",
+          "Buses to Lijiang (4h, 130-160¥)",
+          "Overnight buses available",
+          "Morning departures recommended"
+        ]
+      }
+    ],
+    "local": {
+      "metro": [
+        "Line 1 (North-South)",
+        "Line 2 (East-West)",
+        "Line 3 (West)",
+        "Line 4 (South)",
+        "Line 5 (Circular)",
+        "Line 6 (Airport)"
+      ],
+      "bus": [
+        "Extensive bus network covering all city areas"
+      ],
+      "taxi": [
+        [
+          "Didi app works well for English users with translation",
+          "Taxis are cheap - short trips 10-20¥",
+          "Insist on using meter in regular taxis",
+          "Airport/hotel taxis may charge fixed rates"
+        ]
+      ],
+      "rental": [
+        [
+          "Scan QR code with WeChat or Alipay to unlock",
+          "Use designated parking areas",
+          "Beware of traffic when cycling",
+          "Best for flat areas near Cuihu"
+        ],
+        [
+          "International license may not be accepted - check requirements",
+          "Traffic can be congested in city center",
+          "Best for day trips to Stone Forest or Western Hills",
+          "Insurance is mandatory"
+        ]
+      ],
+      "bike": [],
+      "walking": []
+    }
+  },
+  "quickFacts": {
+    "language": "Mandarin Chinese (Simplified)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa (L-tourist, M-business)",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water is boiled before drinking; bottled water widely available"
+  },
+  "attractions": [
+    {
+      "id": "stone-forest",
+      "name": "石林",
+      "nameEn": "Stone Forest",
+      "category": "natural",
+      "description": "UNESCO World Heritage Site featuring thousands of limestone pillars formed over 270 million years, creating a dramatic forest-like landscape of stone formations.",
+      "address": "Stone Forest Scenic Area, Shilin County, Yunnan",
+      "coordinates": {
+        "lat": 24.8155,
+        "lng": 103.3216
+      },
+      "openingHours": "07:30-18:00 (Summer), 08:00-17:30 (Winter)",
+      "ticketPrice": "130¥ (includes electric car)",
+      "recommendedVisitTime": "Half to full day",
+      "highlights": [
+        "Xiaoxitian (Small Stone Forest)",
+        "Daxiatian (Large Stone Forest)",
+        "Naigu Stone Forest",
+        "Stone Forest Lake"
+      ],
+      "tips": "Arrive early to avoid tour groups. Wear comfortable walking shoes. The area is large - rent an electric car or hire a local guide. Combine with nearby Jiuxiang Scenic Area.",
+      "imageUrl": "https://images.unsplash.com/photo-1530062845289-9109b2c9c868?w=1200",
+      "image": "https://images.unsplash.com/photo-1711886943210-beca23793689?w=800&q=85"
+    },
+    {
+      "id": "dianchi-lake",
+      "name": "滇池",
+      "nameEn": "Dianchi Lake",
+      "category": "natural",
+      "description": "The largest lake in Yunnan and sixth largest freshwater lake in China, offering scenic views of the city skyline and Kunming's 'West Lake' experience.",
+      "address": "Dianchi Lake, Kunming",
+      "coordinates": {
+        "lat": 24.8607,
+        "lng": 102.6525
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (Haigeng Park 20¥)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Haigeng Park views",
+        "Lake sunrise/sunset",
+        "Kunming Hydrangea Garden",
+        "Yunnan National Museum area"
+      ],
+      "tips": "Best visited at sunrise or sunset for dramatic photos. Haigeng Park has beautiful gardens. The lake is polluted - don't swim or drink. Winter brings migratory birds.",
+      "imageUrl": "https://images.unsplash.com/photo-1529921879218-f99546d03a9e?w=1200",
+      "image": "https://images.unsplash.com/photo-1760885877718-0fb56b216528?w=800&q=85"
+    },
+    {
+      "id": "yunnan-ethnic-village",
+      "name": "云南民族村",
+      "nameEn": "Yunnan Ethnic Village",
+      "category": "cultural",
+      "description": "A theme park showcasing the customs, architecture, and traditions of Yunnan's 26 ethnic minorities in their authentic village settings.",
+      "address": "99 Yunnan Ethnic Village Road, Kunming",
+      "coordinates": {
+        "lat": 24.9944,
+        "lng": 102.7139
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "90¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Bai Village (Dali style)",
+        "Yi Village traditional houses",
+        "Miao village bridge",
+        "Ethnic performance shows"
+      ],
+      "tips": "Arrive when gates open for best experience. Daily performance schedule available at entrance. Allow 3+ hours minimum. Combine with nearby Western Hills.",
+      "imageUrl": "https://images.unsplash.com/photo-1591808216268-ce0b90997905?w=1200",
+      "image": "https://images.unsplash.com/photo-1758831508701-33837263b224?w=800&q=85"
+    },
+    {
+      "id": "cuihu-park",
+      "name": "翠湖",
+      "nameEn": "Cuihu Park",
+      "category": "natural",
+      "description": "An urban oasis in central Kunming featuring a scenic lake, lotus ponds, and historic pavilions, popular with locals for morning tai chi and散步.",
+      "address": "Cuihu Park, Kunming",
+      "coordinates": {
+        "lat": 25.0442,
+        "lng": 102.7039
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lotus pond viewing",
+        "Yunnan University nearby",
+        "Buddhist temple",
+        "Local tai chi gatherings"
+      ],
+      "tips": "Best in early morning for tai chi and traditional music. Summer has beautiful lotus flowers. Surrounding streets have good coffee shops. Connected to Yunnan University area.",
+      "imageUrl": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=1200",
+      "image": "https://images.unsplash.com/photo-1688992293668-08475755edd4?w=800&q=85"
+    },
+    {
+      "id": "golden-horse-phoenix-gate",
+      "name": "金马碧鸡坊",
+      "nameEn": "Golden Horse and Phoenix Gate",
+      "category": "cultural",
+      "description": "The iconic symbol of Kunming featuring two ornate archways built in 1381 during the Ming Dynasty, representing the legendary golden horse and phoenix.",
+      "address": "Jinma Biji Fang, Kunming",
+      "coordinates": {
+        "lat": 25.0403,
+        "lng": 102.7122
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "Night illumination",
+        "Traditional architecture",
+        "Kunming shopping district",
+        "Photo opportunity"
+      ],
+      "tips": "Most impressive at night when illuminated. Located near downtown shopping areas. Good starting point for exploring Kunming's old streets. Watch for traffic when taking photos.",
+      "imageUrl": "https://images.unsplash.com/photo-1528164344005-aa7869f04aan?w=1200",
+      "image": "https://images.unsplash.com/photo-1725296765129-3b7e615eb4d2?w=800&q=85"
+    },
+    {
+      "id": "world-garden",
+      "name": "昆明世界园艺博览园",
+      "nameEn": "Kunming World Horticultural Expo Garden",
+      "category": "cultural",
+      "description": "Built for the 1999 World Horticultural Exposition, featuring beautiful gardens from around China and world, plus permanent international pavilions.",
+      "address": "Kunming World Expo Park",
+      "coordinates": {
+        "lat": 25.0178,
+        "lng": 102.7072
+      },
+      "openingHours": "08:30-18:00",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Chinese Garden",
+        "International Garden",
+        "Tea Culture Garden",
+        "Crystal Palace"
+      ],
+      "tips": "Spring and autumn best for flower viewing. Large area - allow half day. Combine with nearby Golden Temple. Great for photography.",
+      "imageUrl": "https://images.unsplash.com/photo-1588592804688-4e6a8c1e1b8a?w=1200",
+      "image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=85"
+    },
+    {
+      "id": "black-dragon-pool",
+      "name": "黑龙潭",
+      "nameEn": "Black Dragon Pool",
+      "category": "cultural",
+      "description": "A historic Taoist temple complex with ancient plum trees, lotus ponds, and the famous 'Three Immortals' cypress trees over 500 years old.",
+      "address": "Black Dragon Pool Park, Kunming",
+      "coordinates": {
+        "lat": 25.1367,
+        "lng": 102.7217
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "15¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient plum garden (500+ trees)",
+        "Taoist temple",
+        "Lotus pond",
+        "Three Immortals cypress"
+      ],
+      "tips": "Best visited during plum blossom season (January-February). Beautiful lotus in summer. Less crowded than major attractions. Famous for plum flower painting.",
+      "imageUrl": "https://images.unsplash.com/photo-1592656094267-764a45160876?w=1200",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=85"
+    },
+    {
+      "id": "daguan-park",
+      "name": "大观公园",
+      "nameEn": "Daguan Park",
+      "category": "natural",
+      "description": "Famous for the 'First Scenery of Yunnan' ink painting displayed in the historic Daguan Lou pavilion, plus lakeside gardens and the 1800m long corridor.",
+      "address": "Daguan Park, Kunming",
+      "coordinates": {
+        "lat": 24.9744,
+        "lng": 102.6533
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Daguan Lou pavilion",
+        "Famous calligraphy scroll",
+        "Lake views",
+        "Flower exhibitions"
+      ],
+      "tips": "Visit the pavilion for the famous 'First Scenery of Yunnan' painting (replica). Best in spring for flower shows. Good for sunset photos over Dianchi Lake.",
+      "imageUrl": "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=1200",
+      "image": "https://images.unsplash.com/photo-1768036599813-e136e166a015?w=800&q=85"
+    },
+    {
+      "id": "golden-temple",
+      "name": "金殿",
+      "nameEn": "Golden Temple",
+      "category": "cultural",
+      "description": "Yunnan's largest Taoist temple built in 1602, featuring China's largest pure gold-covered copper structure and ancient bronze statues.",
+      "address": "Golden Temple Park, Kunming",
+      "coordinates": {
+        "lat": 25.1428,
+        "lng": 102.7856
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "35¥",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Pure gold copper hall",
+        "Ancient bronze statues",
+        "400-year-old tea tree",
+        "Taoist architecture"
+      ],
+      "tips": "Built entirely of brass and gold - the original 1602 structure. Take cable car up for views. Combine with Black Dragon Pool nearby. Spring plum blossoms are beautiful.",
+      "imageUrl": "https://images.unsplash.com/photo-1564493678336-c27c16e0c9d1?w=1200",
+      "image": "https://images.unsplash.com/photo-1754835904203-4de2b82fda46?w=800&q=85"
+    },
+    {
+      "id": "western-hills",
+      "name": "西山龙门",
+      "nameEn": "Western Hills (Xishan)",
+      "category": "natural",
+      "description": "A scenic mountain area overlooking Dianchi Lake with hiking trails, Buddhist temples, and the famous Dragon Gate carved into cliffside.",
+      "address": "Western Hills Scenic Area, Kunming",
+      "coordinates": {
+        "lat": 24.9578,
+        "lng": 102.6233
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "66¥ (includes cable car)",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Dragon Gate carved caves",
+        "Cable car over Dianchi",
+        "Taihua Temple",
+        "Forest hiking trails"
+      ],
+      "tips": "Take bus 51 or taxi from downtown. Combine with nearby Yunnan Ethnic Village. Wear hiking shoes for forest trails. Allow full morning or afternoon.",
+      "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200",
+      "image": "https://images.unsplash.com/photo-1670416812116-5d7ecc31c5d0?w=800&q=85"
+    },
+    {
+      "id": "kunming-ancient-streets",
+      "name": "昆明老街",
+      "nameEn": "Kunming Old Streets",
+      "category": "cultural",
+      "description": "Historic streets preserving traditional Yunnan architecture with local shops, traditional medicine stores, and authentic local snacks.",
+      "address": "East-West Street, Kunming",
+      "coordinates": {
+        "lat": 25.0417,
+        "lng": 102.7156
+      },
+      "openingHours": "Open 24 hours (shops 09:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional pharmacy",
+        "Yunnan ethnic crafts",
+        "Local snack vendors",
+        "Historic architecture"
+      ],
+      "tips": "Great for buying Yunnan specialties. Sample local snacks like crossing-bridge rice noodles. Evening has street food vendors. bargaining expected.",
+      "imageUrl": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=1200",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=800&q=85"
+    },
+    {
+      "id": "yunnan-normal-university",
+      "name": "云南师范大学",
+      "nameEn": "Yunnan Normal University Campus",
+      "category": "cultural",
+      "description": "Beautiful campus with historic buildings from the '国立西南联大' era when Peking, Tsinghua and Nankai universities relocated during WWII.",
+      "address": "Yunnan Normal University, Kunming",
+      "coordinates": {
+        "lat": 25.0372,
+        "lng": 102.7033
+      },
+      "openingHours": "Campus: Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "West Southwest Associated University history",
+        "Historic buildings",
+        "Cherry blossom avenue (spring)",
+        "Museum of education history"
+      ],
+      "tips": "Beautiful in spring for cherry blossoms. The wartime history is fascinating. Near Cuihu Park - combine visits. Respect students during class hours.",
+      "imageUrl": "https://images.unsplash.com/photo-1562774053-701939374585?w=1200",
+      "image": "https://images.unsplash.com/photo-1770104456151-b61273de2d93?w=800&q=85"
+    },
+    {
+      "id": "shuangta-scenic-area",
+      "name": "双塔景区",
+      "nameEn": "Shuangta (Twin Towers) Scenic Area",
+      "category": "cultural",
+      "description": "Two ancient Buddhist pagodas dating to the Tang Dynasty (9th century), standing 43 meters tall as the oldest surviving architecture in Kunming.",
+      "address": "Shuangta Scenic Area, Kunming",
+      "coordinates": {
+        "lat": 25.0583,
+        "lng": 102.7256
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Tang Dynasty pagodas",
+        "Buddhist artifacts",
+        "City view from top",
+        "Peaceful temple grounds"
+      ],
+      "tips": "Less crowded than other attractions. Climb to top for panoramic views. Evening lighting makes for dramatic photos. Buddhist festivals bring special events.",
+      "imageUrl": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
+      "image": "https://images.unsplash.com/photo-1744616160710-1b7db28dbe0e?w=800&q=85"
+    },
+    {
+      "id": "yuantong-temple",
+      "name": "圆通寺",
+      "nameEn": "Yuantong Temple",
+      "category": "cultural",
+      "description": "The largest Buddhist temple in Kunming and one of the oldest in Yunnan, featuring a unique architectural design with a circular hall in the center.",
+      "address": "Yuantong Temple Street, Kunming",
+      "coordinates": {
+        "lat": 25.0433,
+        "lng": 102.6989
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "10¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Circular main hall",
+        "Thousand-hand Guanyin",
+        "Ancient banyan trees",
+        "Tibetan Buddhist influence"
+      ],
+      "tips": "Active Buddhist temple - dress modestly. Popular with locals on Buddhist holidays. Good location near Cuihu area. Try vegetarian food nearby.",
+      "imageUrl": "https://images.unsplash.com/photo-1601712512686-db14bc5c78e1?w=1200",
+      "image": "https://images.unsplash.com/photo-1703957888555-6fc846a32288?w=800&q=85"
+    },
+    {
+      "id": "jindian-flower-sea",
+      "name": "锦庭花海",
+      "nameEn": "Jindian Flower Sea",
+      "category": "natural",
+      "description": "A vast flower farm with seasonal blooms including lavender, sunflowers, and rapeseed flowers, popular for photography and rural scenery.",
+      "address": "Jindian Town, Kunming",
+      "coordinates": {
+        "lat": 25.0928,
+        "lng": 102.6533
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Lavender fields",
+        "Sunflower fields",
+        "Rapeseed flower seas",
+        "Rural landscape"
+      ],
+      "tips": "Best seasons: spring and autumn. Wear a hat and sunscreen. Combine with farm-stay experiences. Great for Instagram-style photos.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85"
+    },
+    {
+      "id": "meilian-scenic-area",
+      "name": "美联生态园",
+      "nameEn": "Meilian Ecological Garden",
+      "category": "natural",
+      "description": "An ecological garden showcasing Yunnan tropical plants and flowers in climate-controlled greenhouses, with ethnic performances.",
+      "address": "Meilian Ecological Garden, Kunming",
+      "coordinates": {
+        "lat": 24.9956,
+        "lng": 102.6844
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "60¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Tropical greenhouse",
+        "Butterfly orchid garden",
+        "Ethnic dance shows",
+        "Flower exhibitions"
+      ],
+      "tips": "Good for rainy days. The tropical greenhouse is impressive. Check show schedule for timing. Near Golden Temple area.",
+      "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c036bc6544?w=1200",
+      "image": "https://images.unsplash.com/photo-1674886703051-334be5dab114?w=800&q=85"
+    },
+    {
+      "id": "tonghai-yuanmou",
+      "name": "通海秀山",
+      "nameEn": "Tonghai Xiushan Scenic Area",
+      "category": "cultural",
+      "description": "A scenic area combining Buddhist and Taoist temples on a forested mountain with views of Tonghai Lake and ancient cultural relics.",
+      "address": "Tonghai County, Yuxi",
+      "coordinates": {
+        "lat": 24.1253,
+        "lng": 102.7658
+      },
+      "openingHours": "07:00-19:00",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "Half day",
+      "highlights": [
+        "Ancient temple complex",
+        "Forest hiking",
+        "Lake views",
+        "Ancient inscriptions"
+      ],
+      "tips": "Combine with visit to Tonghai county. The temples have beautiful carvings. Hiking takes 2-3 hours. Bring water and snacks.",
+      "imageUrl": "https://images.unsplash.com/photo-1504214204224-dd4f5b4c9a6e?w=1200",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "shilin-ancient-village",
+      "name": "石林古镇",
+      "nameEn": "Shilin Ancient Town",
+      "category": "cultural",
+      "description": "An ancient Yi ethnic minority town near Stone Forest, preserving traditional architecture, local markets, and ethnic customs.",
+      "address": "Shilin County, Kunming",
+      "coordinates": {
+        "lat": 24.8258,
+        "lng": 103.3233
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Yi ethnic architecture",
+        "Traditional markets",
+        "Yi handicrafts",
+        "Local snacks"
+      ],
+      "tips": "Visit before or after Stone Forest. The local Yi market is colorful. Buy ethnic handicrafts here rather than at Stone Forest. Sample Yi cuisine.",
+      "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200",
+      "image": "https://images.unsplash.com/photo-1711886765226-296e0f6af8f0?w=800&q=85"
+    },
+    {
+      "id": "jiuxiang-scenic-area",
+      "name": "九乡景区",
+      "nameEn": "Jiuxiang Scenic Area",
+      "category": "natural",
+      "description": "An underground cave system featuring stalactites, underground rivers, and dramatic karst formations dubbed 'The Underwater World of Yunnan'.",
+      "address": "Jiuxiang Town, Yiliang County",
+      "coordinates": {
+        "lat": 25.1358,
+        "lng": 103.4019
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "90¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Underground river boat ride",
+        "Cave waterfall",
+        "Stalactite formations",
+        "Karst geology"
+      ],
+      "tips": "Combine with Stone Forest in same day. Boat ride through cave is unique. Wear non-slip shoes for wet cave floors. Temperature inside is cool.",
+      "imageUrl": "https://images.unsplash.com/photo-1557800636-894a64c1696f?w=1200",
+      "image": "https://images.unsplash.com/photo-1757564592120-f8126b03846a?w=800&q=85"
+    },
+    {
+      "id": "longmen-waterfall",
+      "name": "龙门飞甲瀑",
+      "nameEn": "Longmen Waterfall",
+      "category": "natural",
+      "description": "A scenic waterfall area with hiking trails, natural swimming holes, and beautiful canyon scenery in the eastern suburbs of Kunming.",
+      "address": "Longmen Scenic Area, Kunming",
+      "coordinates": {
+        "lat": 25.1628,
+        "lng": 102.8756
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Main waterfall",
+        "Natural swimming holes",
+        "Hiking trails",
+        "Canyon views"
+      ],
+      "tips": "Summer best for swimming. Bring swimwear and towel. Hiking shoes recommended. Arrive early on weekends to find parking.",
+      "imageUrl": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200",
+      "image": "https://images.unsplash.com/photo-1678288661010-762afc729414?w=800&q=85"
+    },
+    {
+      "id": "yuhua-nunnery",
+      "name": "玉华寺",
+      "nameEn": "Yuhua Nunnery",
+      "category": "cultural",
+      "description": "Historic Buddhist nunnery in western Kunming with beautiful gardens, ancient pagodas, and peaceful atmosphere away from tourist crowds.",
+      "address": "Yuhua Temple Road, Kunming",
+      "coordinates": {
+        "lat": 25.0289,
+        "lng": 102.6622
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "15¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient pagodas",
+        "Lotus pond",
+        "Nunnery architecture",
+        "Quiet gardens"
+      ],
+      "tips": "Less visited than other temples. Beautiful in spring for plum blossoms. Combine with nearby Daguan Park area.",
+      "imageUrl": "https://images.unsplash.com/photo-1548625149-fc4a29cf2e18?w=1200",
+      "image": "https://images.unsplash.com/photo-1756789977307-02fd13d41616?w=800&q=85"
+    },
+    {
+      "id": "shilin-yi-costume-market",
+      "name": "石林彝族服饰街",
+      "nameEn": "Shilin Yi Costume Street",
+      "category": "cultural",
+      "description": "Colorful market street in Shilin selling authentic Yi ethnic costumes, silver jewelry, and traditional handicrafts.",
+      "address": "Shilin County, Kunming",
+      "coordinates": {
+        "lat": 24.8233,
+        "lng": 103.3256
+      },
+      "openingHours": "Shops 09:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Yi silver jewelry",
+        "Traditional costumes",
+        "Embroidery crafts",
+        "Local snacks"
+      ],
+      "tips": "Best after visiting Stone Forest. Compare prices before buying. The silver items are authentic. Good for souvenirs.",
+      "imageUrl": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1200",
+      "image": "https://images.unsplash.com/photo-1705568887658-55ded71b0c09?w=800&q=85"
+    },
+    {
+      "id": "dianchi-changlong",
+      "name": "滇池长廊",
+      "nameEn": "Dianchi Lake Promenade",
+      "category": "natural",
+      "description": "Scenic lakefront promenade with gardens, exercise areas, and views of Dianchi Lake and Western Hills.",
+      "address": "Dianchi Lake, Kunming",
+      "coordinates": {
+        "lat": 24.8767,
+        "lng": 102.6656
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lake views",
+        "Morning tai chi",
+        "Cycling path",
+        "Flower gardens"
+      ],
+      "tips": "Best at sunrise for photos. Popular with locals doing exercise. Rent a bike for exploring. Bring sunscreen.",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=85"
+    },
+    {
+      "id": "kaishiyiyuan",
+      "name": "昆明动物博物馆",
+      "nameEn": "Kunming Zoological Museum",
+      "category": "cultural",
+      "description": "Excellent natural history museum showcasing Yunnan's biodiversity including butterflies, birds, and mammals from the region.",
+      "address": "Kunming Institute of Zoology, Kunming",
+      "coordinates": {
+        "lat": 25.0156,
+        "lng": 102.7156
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Butterfly collection",
+        "Yunnan bird specimens",
+        "Rare animal exhibits",
+        "Nature documentaries"
+      ],
+      "tips": "Good for rainy days. The butterfly collection is outstanding. Allow 2-3 hours. Combine with nearby Green Lake area.",
+      "imageUrl": "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=1200",
+      "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=85"
+    },
+    {
+      "id": "tongren-street",
+      "name": "同仁街",
+      "nameEn": "Tongren Street",
+      "category": "cultural",
+      "description": "Historic commercial street from the 1920s-30s with colonial-style buildings, now featuring cafes, galleries, and boutique shops.",
+      "address": "Tongren Street, Kunming",
+      "coordinates": {
+        "lat": 25.0433,
+        "lng": 102.7083
+      },
+      "openingHours": "Shops 10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Colonial architecture",
+        "Boutique cafes",
+        "Art galleries",
+        "Historic buildings"
+      ],
+      "tips": "Great for afternoon coffee. The architecture is unique in Kunming. Good for photos. Evening lighting is romantic.",
+      "imageUrl": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200",
+      "image": "https://images.unsplash.com/photo-1716637116064-28d34bce411b?w=800&q=85"
+    },
+    {
+      "id": "yingkou-temple",
+      "name": "赢财寺",
+      "nameEn": "Yingkou Temple",
+      "category": "cultural",
+      "description": "Ancient Buddhist temple on a hillside with thousand-year-old trees, stone carvings, and panoramic views of Kunming.",
+      "address": "Yingkou Temple, Kunming",
+      "coordinates": {
+        "lat": 25.0656,
+        "lng": 102.6933
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "10¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient trees",
+        "Stone carvings",
+        "City views",
+        "Quiet atmosphere"
+      ],
+      "tips": "Off the beaten path. Hiking path to temple is pleasant. The old banyan trees are impressive. Best visited in morning.",
+      "imageUrl": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200",
+      "image": "https://images.unsplash.com/photo-1760885877723-1cefedacd4d7?w=800&q=85"
+    },
+    {
+      "id": "huanhua-road-night",
+      "name": "华华路夜市",
+      "nameEn": "Huanhua Road Night Market",
+      "category": "cultural",
+      "description": "Popular night market with local street food, souvenirs, and shopping in a vibrant atmosphere near Cuihu Park.",
+      "address": "Huanhua Road, Kunming",
+      "coordinates": {
+        "lat": 25.0389,
+        "lng": 102.7017
+      },
+      "openingHours": "18:00-23:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Local street food",
+        "Clothing vendors",
+        "Night atmosphere",
+        "Yunnan snacks"
+      ],
+      "tips": "Best after 7pm. Great for trying Yunnan street food. Bargaining expected. Try the grilled cheese and local beer.",
+      "imageUrl": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+      "image": "https://images.unsplash.com/photo-1748406144100-e2f1c470e1ae?w=800&q=85"
+    },
+    {
+      "id": "shuangqiao-scene",
+      "name": "双桥生态园",
+      "nameEn": "Shuangqiao Ecological Park",
+      "category": "natural",
+      "description": "Urban ecological park with wetlands, bird watching areas, and walking trails along the Panlong River.",
+      "address": "Shuangqiao, Kunming",
+      "coordinates": {
+        "lat": 25.0722,
+        "lng": 102.7356
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Wetland scenery",
+        "Bird watching",
+        "Walking trails",
+        "Photography spots"
+      ],
+      "tips": "Best for nature lovers. Bring binoculars for bird watching. Morning is best for birds. Good for escaping city crowds.",
+      "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200",
+      "image": "https://images.unsplash.com/photo-1761724794887-b4713bab592b?w=800&q=85"
+    },
+    {
+      "id": "yunnan-military-academy",
+      "name": "云南陆军讲武堂",
+      "nameEn": "Yunnan Military Academy",
+      "category": "cultural",
+      "description": "Historic military academy where Zhu De,叶剑英and other Chinese leaders studied, now a museum with excellent exhibits.",
+      "address": "Guanghua Street, Kunming",
+      "coordinates": {
+        "lat": 25.0394,
+        "lng": 102.7089
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Zhu De studied here",
+        "Historic buildings",
+        "Military exhibits",
+        "Revolutionary history"
+      ],
+      "tips": "Free admission. Allow 1-2 hours. The architecture is beautiful. Good introduction to Chinese revolutionary history.",
+      "imageUrl": "https://images.unsplash.com/photo-1569974507005-6dc61f97fb5c?w=1200",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85"
+    },
+    {
+      "id": "anning-hot-spring",
+      "name": "安宁温泉",
+      "nameEn": "Anning Hot Springs",
+      "category": "natural",
+      "description": "Famous hot spring resort area 40km from Kunming, known for its mineral-rich waters and historic spa culture.",
+      "address": "Anning County, Kunming",
+      "coordinates": {
+        "lat": 24.9533,
+        "lng": 102.4856
+      },
+      "openingHours": "Various resorts open 08:00-22:00",
+      "ticketPrice": "50-200¥ (resort dependent)",
+      "recommendedVisitTime": "Half day to full day",
+      "highlights": [
+        "Mineral hot springs",
+        "Historic spas",
+        "Mountain scenery",
+        "Wellness experience"
+      ],
+      "tips": "Best for relaxation. Several resorts to choose from. Bring swimwear and towel. Combine with day trip. Weekday visits are quieter.",
+      "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=85"
+    },
+    {
+      "id": "dongchuan-red-land",
+      "name": "东川红土地",
+      "nameEn": "Dongchuan Red Land",
+      "category": "nature",
+      "description": "被誉为上帝的调色板，东川红土地以其壮观的红色土壤和多彩的农作物闻名于世，是摄影爱好者的天堂，色彩斑斓的田野在不同季节呈现出不同的美景。",
+      "address": "昆明市东川区新田乡花石头村",
+      "coordinates": {
+        "lat": 26.0833,
+        "lng": 103.0167
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "落霞沟日落",
+        "七彩坡",
+        "乐谱凹",
+        "瓦梁房子"
+      ],
+      "tips": "最佳拍摄时间为日出和日落时分，秋季（9-12月）色彩最丰富，建议自驾前往。",
+      "image": "https://images.unsplash.com/photo-1761527382930-62959f113d40?w=800&q=85"
+    },
+    {
+      "id": "guandu-ancient-town",
+      "name": "官渡古镇",
+      "nameEn": "Guandu Ancient Town",
+      "category": "landmark",
+      "description": "官渡古镇是昆明著名的历史文化古镇，始建于唐代，拥有众多古建筑和寺庙，包括妙湛寺金刚塔、土主庙等，是了解昆明历史文化的重要窗口。",
+      "address": "昆明市官渡区官渡古镇",
+      "coordinates": {
+        "lat": 24.9978,
+        "lng": 102.7539
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（部分景点收费）",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "妙湛寺金刚塔",
+        "官渡粑粑",
+        "古戏台",
+        "土主庙"
+      ],
+      "tips": "官渡粑粑是当地特色小吃，一定要尝尝。周末人较多，建议工作日前往。",
+      "image": "https://images.unsplash.com/photo-1773335083398-53d3eed4e82d?w=800&q=85"
+    },
+    {
+      "id": "haigeng-park",
+      "name": "海埂公园",
+      "nameEn": "Haigeng Park",
+      "category": "park",
+      "description": "海埂公园位于滇池北岸，是昆明市民休闲娱乐的好去处，公园内绿树成荫，湖光山色，冬季有大量红嘴鸥从西伯利亚飞来越冬，成为昆明一大景观。",
+      "address": "昆明市西山区滇池路1318号",
+      "coordinates": {
+        "lat": 24.9389,
+        "lng": 102.6528
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "红嘴鸥观赏",
+        "滇池湖景",
+        "民族村对面",
+        "海埂大坝"
+      ],
+      "tips": "冬季（11月-3月）是观赏红嘴鸥的最佳时期，可以买面包喂海鸥。",
+      "image": "https://images.unsplash.com/photo-1631786488073-c7d6ac444b98?w=800&q=85"
+    },
+    {
+      "id": "yunnan-museum",
+      "name": "云南省博物馆",
+      "nameEn": "Yunnan Provincial Museum",
+      "category": "museum",
+      "description": "云南省博物馆是云南省最大的综合性博物馆，馆藏文物丰富，包括青铜器、少数民族文物、佛教艺术等，是了解云南历史文化的最佳场所。",
+      "address": "昆明市官渡区广福路6393号",
+      "coordinates": {
+        "lat": 24.9528,
+        "lng": 102.7278
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "滇国青铜器",
+        "少数民族文物",
+        "佛教艺术品",
+        "古生物化石"
+      ],
+      "tips": "需要提前预约，每天限流。建议租用语音导览器，可以更深入了解展品。",
+      "image": "https://images.unsplash.com/photo-1741568714270-a36886b7b083?w=800&q=85"
+    },
+    {
+      "id": "kunming-botanical-garden",
+      "name": "中国科学院昆明植物园",
+      "nameEn": "Kunming Botanical Garden",
+      "category": "park",
+      "description": "昆明植物园是中国西南地区最大的植物园，拥有丰富的热带和亚热带植物资源，园内四季花开不断，是植物爱好者和摄影爱好者的天堂。",
+      "address": "昆明市盘龙区蓝黑路132号",
+      "coordinates": {
+        "lat": 25.1389,
+        "lng": 102.7444
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "山茶园",
+        "杜鹃园",
+        "棕榈园",
+        "热带雨林温室"
+      ],
+      "tips": "春季（2-4月）是最佳观赏期，山茶花和杜鹃花盛开。园区较大，建议穿舒适的鞋子。",
+      "image": "https://images.unsplash.com/photo-1744699013756-eb2034385d67?w=800&q=85"
+    },
+    {
+      "id": "dounan-flower-market",
+      "name": "斗南花卉市场",
+      "nameEn": "Dounan Flower Market",
+      "category": "market",
+      "description": "斗南花卉市场是亚洲最大的鲜切花交易市场，每天交易量惊人，各种鲜花琳琅满目，是体验昆明花都文化的最佳去处，也是购买鲜花的理想之地。",
+      "address": "昆明市呈贡区斗南街道",
+      "coordinates": {
+        "lat": 24.8833,
+        "lng": 102.7833
+      },
+      "openingHours": "全天（交易高峰在夜间）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "鲜切花交易",
+        "多肉植物区",
+        "干花市场",
+        "夜间拍卖"
+      ],
+      "tips": "傍晚去可以看到最热闹的交易场景，鲜花价格非常便宜，可以大量购买。",
+      "image": "https://images.unsplash.com/photo-1749260850825-1fd9f3719c0f?w=800&q=85"
+    },
+    {
+      "id": "kunming-dragon-gate",
+      "name": "西山龙门",
+      "nameEn": "Dragon Gate at Western Hills",
+      "category": "landmark",
+      "description": "西山龙门是昆明最著名的景点之一，开凿于清代，沿悬崖峭壁而建，登顶可俯瞰整个滇池和昆明市区，石窟雕刻精美，是昆明必游之地。",
+      "address": "昆明市西山区西山风景区",
+      "coordinates": {
+        "lat": 24.95,
+        "lng": 102.6333
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "龙门石窟",
+        "俯瞰滇池",
+        "达天阁",
+        "石雕艺术"
+      ],
+      "tips": "建议乘坐索道上山，步行下山。下午去可以看滇池日落。石窟内光线较暗，注意安全。",
+      "image": "https://images.unsplash.com/photo-1741354562388-89fc10d58fb7?w=800&q=85"
+    },
+    {
+      "id": "yunnan-university",
+      "name": "云南大学",
+      "nameEn": "Yunnan University",
+      "category": "landmark",
+      "description": "云南大学是中国著名的高等学府，校园内古树参天，建筑风格独特，银杏大道在秋季金黄一片，是昆明最美的大学校园之一，也是拍照打卡的好去处。",
+      "address": "昆明市五华区翠湖北路2号",
+      "coordinates": {
+        "lat": 25.0556,
+        "lng": 102.7
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "银杏大道",
+        "会泽院",
+        "至公堂",
+        "映秋院"
+      ],
+      "tips": "秋季（11月）银杏叶变黄时最美，校园内有多个历史建筑值得参观。",
+      "image": "https://images.unsplash.com/photo-1753163928756-f165dee87018?w=800&q=85"
+    },
+    {
+      "id": "kunming-bamboo-temple",
+      "name": "筇竹寺",
+      "nameEn": "Qiongzhu Temple",
+      "category": "temple",
+      "description": "筇竹寺始建于唐代，是昆明最古老的佛教寺庙之一，以精美绝伦的五百罗汉彩塑闻名于世，每尊罗汉形态各异，栩栩如生，被誉为东方雕塑艺术的明珠。",
+      "address": "昆明市西山区玉案山",
+      "coordinates": {
+        "lat": 25.0667,
+        "lng": 102.6167
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "五百罗汉彩塑",
+        "古竹林",
+        "大雄宝殿",
+        "玉案山风光"
+      ],
+      "tips": "罗汉堂内不允许拍照，建议仔细观赏每一尊罗汉的表情和姿态。",
+      "image": "https://images.unsplash.com/photo-1510769995093-e17d39f560bb?w=800&q=85"
+    },
+    {
+      "id": "kunming-tanhua-temple",
+      "name": "昙华寺",
+      "nameEn": "Tanhua Temple",
+      "category": "temple",
+      "description": "昙华寺始建于明代，以优昙花（一种稀有的佛教圣花）而得名，寺内古木参天，花卉繁多，是昆明市区内闹中取静的清幽之地。",
+      "address": "昆明市盘龙区昙华路",
+      "coordinates": {
+        "lat": 25.0389,
+        "lng": 102.7389
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "优昙花",
+        "朱德旧居",
+        "古树名木",
+        "花卉展览"
+      ],
+      "tips": "每年春节前后有花卉展览，寺内环境清幽，适合散步休闲。",
+      "image": "https://images.unsplash.com/photo-1758637689126-2598f5b17ceb?w=800&q=85"
+    },
+    {
+      "id": "kunming-yuantong-mountain",
+      "name": "圆通山",
+      "nameEn": "Yuantong Mountain",
+      "category": "park",
+      "description": "圆通山是昆明市区内的一座小山，山上建有圆通寺和昆明动物园，每年春天樱花盛开，形成一片粉色花海，是昆明人赏花的首选之地。",
+      "address": "昆明市五华区圆通街",
+      "coordinates": {
+        "lat": 25.0556,
+        "lng": 102.7167
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费（动物园另收费）",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "樱花大道",
+        "圆通寺",
+        "昆明动物园",
+        "摩崖石刻"
+      ],
+      "tips": "每年3月樱花节期间人非常多，建议早点去。可以顺便参观圆通寺。",
+      "image": "https://images.unsplash.com/photo-1695792622995-dc673d0d9d64?w=800&q=85"
+    },
+    {
+      "id": "kunming-fuxian-lake",
+      "name": "抚仙湖",
+      "nameEn": "Fuxian Lake",
+      "category": "nature",
+      "description": "抚仙湖是中国第二深淡水湖，湖水清澈见底，能见度可达7-8米，湖畔沙滩细腻，被誉为'云南的马尔代夫'，是昆明周边最受欢迎的度假胜地。",
+      "address": "玉溪市澄江市（距昆明约60公里）",
+      "coordinates": {
+        "lat": 24.4167,
+        "lng": 102.8833
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（部分景区收费）",
+      "recommendedVisitTime": "半天-1天",
+      "highlights": [
+        "清澈湖水",
+        "阳光海岸",
+        "禄充风景区",
+        "樱花谷"
+      ],
+      "tips": "夏季可以游泳和划船，水质极好。建议自驾前往，沿湖有多个观景点。",
+      "image": "https://images.unsplash.com/photo-1661109443131-61145a4a1bed?w=800&q=85"
+    },
+    {
+      "id": "kunming-jinsha-site",
+      "name": "金沙遗址",
+      "nameEn": "Jinsha Site Museum",
+      "category": "museum",
+      "description": "金沙遗址是古蜀文明的重要遗址，出土了大量珍贵文物，包括太阳神鸟金饰等国宝级文物，博物馆展示了古蜀人的生活和信仰。",
+      "address": "昆明市西山区（参考成都金沙遗址博物馆）",
+      "coordinates": {
+        "lat": 25.0333,
+        "lng": 102.7
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "太阳神鸟",
+        "金面具",
+        "象牙雕刻",
+        "古蜀文化"
+      ],
+      "tips": "博物馆内有详细的文物介绍，建议租用语音导览。周一闭馆。",
+      "image": "https://images.unsplash.com/photo-1759149059150-490f1b3f13e1?w=800&q=85"
+    },
+    {
+      "id": "kunming-kundu-night",
+      "name": "昆都夜市",
+      "nameEn": "Kundu Night Market",
+      "category": "market",
+      "description": "昆都是昆明最繁华的夜生活街区，汇集了各种餐厅、酒吧和夜市摊位，是体验昆明夜生活和品尝当地美食的好去处，尤其以烧烤和过桥米线闻名。",
+      "address": "昆明市五华区昆都片区",
+      "coordinates": {
+        "lat": 25.0333,
+        "lng": 102.7167
+      },
+      "openingHours": "18:00-次日02:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "特色烧烤",
+        "过桥米线",
+        "夜市小吃",
+        "酒吧街"
+      ],
+      "tips": "晚上8点以后最热闹，注意保管好个人物品。可以尝试各种云南特色小吃。",
+      "image": "https://images.unsplash.com/photo-1689827645643-b1e5ec55eb2e?w=800&q=85"
+    },
+    {
+      "id": "kunming-yunnan-nationalities-village",
+      "name": "云南民族博物馆",
+      "nameEn": "Yunnan Nationalities Museum",
+      "category": "museum",
+      "description": "云南民族博物馆是中国最大的民族类博物馆，展示了云南25个少数民族的文化、服饰、建筑和生活方式，是了解云南多元文化的绝佳场所。",
+      "address": "昆明市西山区滇池路1503号",
+      "coordinates": {
+        "lat": 24.9833,
+        "lng": 102.6833
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "民族服饰展厅",
+        "宗教文化展",
+        "传统工艺",
+        "民族建筑"
+      ],
+      "tips": "展览内容非常丰富，建议预留充足时间。可以和附近的云南民族村一起游览。",
+      "image": "https://images.unsplash.com/photo-1751526042900-09f2ae029e1c?w=800&q=85"
+    },
+    {
+      "id": "kunming-green-lake-seagulls",
+      "name": "翠湖红嘴鸥",
+      "nameEn": "Green Lake Red-billed Gulls",
+      "category": "nature",
+      "description": "每年冬季，数万只红嘴鸥从西伯利亚飞到昆明翠湖越冬，成为昆明最著名的冬季景观之一，成群的海鸥在湖面上翱翔，与市民和谐共处。",
+      "address": "昆明市五华区翠湖南路",
+      "coordinates": {
+        "lat": 25.0472,
+        "lng": 102.7028
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "红嘴鸥群",
+        "湖畔喂鸥",
+        "冬日暖阳",
+        "市民互动"
+      ],
+      "tips": "最佳观赏时间为11月至次年3月，早上8-10点海鸥最活跃。可以买面包喂海鸥。",
+      "image": "https://images.unsplash.com/photo-1549133888-b32c56a5ee64?w=800&q=85"
+    },
+    {
+      "id": "kunming-cherry-blossom",
+      "name": "昆明樱花",
+      "nameEn": "Kunming Cherry Blossoms",
+      "category": "nature",
+      "description": "昆明的春天是樱花的季节，圆通山、昙华寺等地的樱花竞相绽放，粉色花海与蓝天白云相映成趣，吸引大量游客前来赏花拍照。",
+      "address": "昆明市五华区圆通山等地",
+      "coordinates": {
+        "lat": 25.0556,
+        "lng": 102.7167
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "粉色花海",
+        "圆通山樱花",
+        "拍照打卡",
+        "春日赏花"
+      ],
+      "tips": "樱花花期通常在2月底至3月中旬，花期较短，建议关注花情预报。",
+      "image": "https://images.unsplash.com/photo-1689825680689-91ead06a16ca?w=800&q=85"
+    },
+    {
+      "id": "kunming-tea-horse-road",
+      "name": "茶马古道",
+      "nameEn": "Ancient Tea Horse Road",
+      "category": "landmark",
+      "description": "茶马古道是古代中国西南地区重要的贸易通道，以马帮运输茶叶而闻名，昆明作为茶马古道的重要节点，保留了许多相关的历史遗迹和文化传统。",
+      "address": "昆明市周边（官渡古镇等地有遗迹）",
+      "coordinates": {
+        "lat": 25.0,
+        "lng": 102.75
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "马帮文化",
+        "茶文化",
+        "古道遗迹",
+        "历史故事"
+      ],
+      "tips": "可以在官渡古镇了解茶马古道的历史，也可以品尝普洱茶。",
+      "image": "https://images.unsplash.com/photo-1689825650048-55d2216868f7?w=800&q=85"
+    },
+    {
+      "id": "kunming-stone-forest-geopark",
+      "name": "石林世界地质公园",
+      "nameEn": "Stone Forest World Geopark",
+      "category": "nature",
+      "description": "石林世界地质公园是联合国教科文组织世界地质公园，以喀斯特地貌著称，奇峰异石林立，形态万千，被誉为'天下第一奇观'。",
+      "address": "昆明市石林彝族自治县",
+      "coordinates": {
+        "lat": 24.8167,
+        "lng": 103.3167
+      },
+      "openingHours": "07:30-18:00",
+      "ticketPrice": "130元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "大石林",
+        "小石林",
+        "乃古石林",
+        "阿诗玛石"
+      ],
+      "tips": "建议请一位撒尼族导游讲解，可以听到很多有趣的传说故事。穿舒适的鞋子。",
+      "image": "https://images.unsplash.com/photo-1771907617780-652269338276?w=800&q=85"
+    },
+    {
+      "id": "kunming-wetland-park",
+      "name": "滇池湿地公园",
+      "nameEn": "Dianchi Wetland Park",
+      "category": "park",
+      "description": "滇池湿地公园是昆明近年来新建的生态公园，沿滇池岸边建设，拥有丰富的湿地生态系统，是观赏滇池和各种水鸟的好去处，也是市民休闲的好地方。",
+      "address": "昆明市呈贡区环湖东路",
+      "coordinates": {
+        "lat": 24.8833,
+        "lng": 102.7167
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "湿地栈道",
+        "观鸟台",
+        "滇池落日",
+        "生态景观"
+      ],
+      "tips": "傍晚时分最美，可以看滇池落日。冬季有大量候鸟栖息。建议骑行或步行游览。",
+      "image": "https://images.unsplash.com/photo-1759046263120-763faa804cf8?w=800&q=85"
+    }
+  ]
+}

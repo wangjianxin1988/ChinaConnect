@@ -1,0 +1,3183 @@
+{
+  "slug": "quanzhou",
+  "name": "泉州",
+  "nameEn": "Quanzhou",
+  "country": "China",
+  "population": "8.7 million",
+  "coordinates": {
+    "lat": 24.8742,
+    "lng": 118.6758
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Quanzhou is a historic port city in Fujian, known as the starting point of the Maritime Silk Road. Home to diverse religious sites including Buddhism, Islam, Christianity, and Hinduism. Called 'Zayton' by Marco Polo. A UNESCO World Heritage city with incredible cultural diversity.",
+  "coverImage": "https://images.unsplash.com/photo-1703686944036-da93d5d5bb93?w=1200&q=80",
+  "highlights": [
+    "Kaiyuan Temple - Largest Song Dynasty temple in Fujian",
+    "Qingjing Mosque - Oldest mosque in China",
+    "Sri Lankan Buddhist Temple - Unique foreign architecture",
+    "Maritime Silk Road Museum - Ancient trade history",
+    "Shandong Hill - Scenic Buddhist temple"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "28C (82F)",
+    "avgWinterTemp": "12C (54F)",
+    "tips": "Best in spring and autumn. Summers hot and humid. Winter mild. Year-round destination due to cultural sites."
+  },
+  "attractions": [
+    {
+      "id": "quanzhou-1",
+      "name": "开元寺",
+      "nameEn": "Kaiyuan Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85",
+      "description": "Largest Song Dynasty Buddhist temple in Fujian with famous twin pagodas.",
+      "address": "Xi Street, Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Twin pagodas",
+        "Song architecture",
+        "Ancient banyan",
+        "Buddhist culture"
+      ],
+      "tips": "Arrive early. The twin pagodas are iconic."
+    },
+    {
+      "id": "quanzhou-2",
+      "name": "清净寺",
+      "nameEn": "Qingjing Mosque",
+      "category": "cultural",
+      "description": "Oldest mosque in China, built in 1009, with Arab architecture.",
+      "address": "Tumen Street, Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5858
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "3¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Arab architecture",
+        "Ancient inscription",
+        "Religious harmony",
+        "Historical significance"
+      ],
+      "tips": "Dress modestly. Important Islamic heritage.",
+      "image": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-3",
+      "name": "泉州木偶戏",
+      "nameEn": "Quanzhou Puppet Show",
+      "category": "cultural",
+      "description": "Traditional Fujian puppet theater with ancient marionette art.",
+      "address": "Cultural Center, Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "openingHours": "Shows at 15:00, 20:00",
+      "ticketPrice": "80-120¥",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Traditional marionettes",
+        "Ancient art",
+        "Live performance",
+        "Cultural"
+      ],
+      "tips": "Book tickets in advance. Must-see cultural experience.",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-4",
+      "name": "清源山",
+      "nameEn": "Qingyuan Mountain",
+      "category": "natural",
+      "description": "Sacred mountain with Buddhist temples, ancient sculptures, and tea houses.",
+      "address": "Qingyuan District",
+      "coordinates": {
+        "lat": 24.9542,
+        "lng": 118.5858
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "55¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Lao Tzu statue",
+        "Mountain tea houses",
+        "Hiking",
+        "Scenic views"
+      ],
+      "tips": "Visit at sunrise for views. Try mountain tea.",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-5",
+      "name": "天后宫",
+      "nameEn": "Tianhou Palace",
+      "category": "cultural",
+      "description": "Most important Mazu temple, goddess of the sea worshipped by sailors.",
+      "address": "Tianhou Road, Licheng District",
+      "coordinates": {
+        "lat": 24.8942,
+        "lng": 118.5858
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Mazu worship",
+        "Ancient architecture",
+        "Religious significance",
+        "Coastal culture"
+      ],
+      "tips": "Important for maritime culture. Try Mazu cookies nearby.",
+      "image": "https://images.unsplash.com/photo-1533669955142-6a73332af4db?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-6",
+      "name": "洛阳桥",
+      "nameEn": "Luoyang Bridge",
+      "category": "historical",
+      "description": "Ancient Song Dynasty stone bridge, one of China's four famous bridges.",
+      "address": "Quanzhou Bay",
+      "coordinates": {
+        "lat": 24.9642,
+        "lng": 118.5858
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Song architecture",
+        "Stone bridge",
+        "Coastal scenery",
+        "Ancient engineering"
+      ],
+      "tips": "Best at sunset. Ancient engineering marvel.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-7",
+      "name": "府文庙",
+      "nameEn": "Quanzhou Confucian Temple",
+      "category": "cultural",
+      "description": "Largest Confucian temple in Fujian with beautiful architecture.",
+      "address": "Wenmiao Road, Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Song architecture",
+        "Cultural education",
+        "Ancient trees",
+        "Historical"
+      ],
+      "tips": "Combine with nearby Kaiyuan Temple.",
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-8",
+      "name": "海外交通史博物馆",
+      "nameEn": "Maritime Silk Road Museum",
+      "category": "cultural",
+      "description": "Museum showcasing Quanzhou's ancient maritime trade history.",
+      "address": "Donghu Road",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.5958
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Maritime history",
+        "Ancient trade",
+        "Foreign artifacts",
+        "Silk Road"
+      ],
+      "tips": "Great for understanding Quanzhou's importance.",
+      "image": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-9",
+      "name": "南少林寺",
+      "nameEn": "Southern Shaolin Temple",
+      "category": "cultural",
+      "description": "Famous martial arts temple where Chinese boxing originated.",
+      "address": "Qingyuan Mountain Area",
+      "coordinates": {
+        "lat": 24.9542,
+        "lng": 118.5658
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "25¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Martial arts",
+        "Kung fu history",
+        "Monastery",
+        "Performances"
+      ],
+      "tips": "Watch martial arts performances. Great for kung fu fans.",
+      "image": "https://images.unsplash.com/photo-1770036491308-2fc128e47f20?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-10",
+      "name": "石狮黄金海岸",
+      "nameEn": "Shishi Golden Coast",
+      "category": "natural",
+      "description": "Beautiful beach area with coastal scenery and resort facilities.",
+      "address": "石狮市 Shishi",
+      "coordinates": {
+        "lat": 24.8142,
+        "lng": 118.7258
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Beach",
+        "Sunset",
+        "Water sports",
+        "Resort area"
+      ],
+      "tips": "Best for beach time. Day trip from Quanzhou.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-11",
+      "name": "闽台缘博物馆",
+      "nameEn": "Fujian-Taiwan Museum",
+      "category": "cultural",
+      "description": "Museum showcasing cultural connections between Fujian and Taiwan.",
+      "address": "West Lake Park",
+      "coordinates": {
+        "lat": 24.9242,
+        "lng": 118.5858
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Fujian-Taiwan relations",
+        "Cultural links",
+        "Interactive exhibits"
+      ],
+      "tips": "Important for understanding regional connections.",
+      "image": "https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-12",
+      "name": "涂门街",
+      "nameEn": "Tumen Street",
+      "category": "cultural",
+      "description": "Historic street with diverse religious buildings from multiple faiths.",
+      "address": "Tumen Street, Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Religious diversity",
+        "Multiple faiths",
+        "Historic buildings",
+        "Architecture"
+      ],
+      "tips": "Walk to see mosque, temple, church on same street.",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-13",
+      "name": "崇武古城",
+      "nameEn": "Chongwu Ancient City",
+      "category": "historical",
+      "description": "Ming Dynasty coastal fortress with stone carvers and beaches.",
+      "address": "惠安县 Hui'an County",
+      "coordinates": {
+        "lat": 24.8742,
+        "lng": 118.9258
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ming fortress",
+        "Stone carvings",
+        "Coastal views",
+        "Beach"
+      ],
+      "tips": "Day trip. Famous for stone carving tradition.",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-14",
+      "name": "牛姆林",
+      "nameEn": "Niumulin Forest",
+      "category": "natural",
+      "description": "Nature reserve with ancient trees, hiking trails, and fresh air.",
+      "address": "永春县 Yongchun County",
+      "coordinates": {
+        "lat": 25.3242,
+        "lng": 118.2758
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Ancient forest",
+        "Hiking",
+        "Nature",
+        "Fresh air"
+      ],
+      "tips": "Day trip. Great for nature lovers.",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+    },
+    {
+      "id": "quanzhou-15",
+      "name": "仙公山",
+      "nameEn": "Xiangong Mountain",
+      "category": "natural",
+      "description": "Sacred mountain with temples, stunning views, and folk temple fair.",
+      "address": "洛江区 Luojiang District",
+      "coordinates": {
+        "lat": 24.9542,
+        "lng": 118.5758
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Temple",
+        "Mountain views",
+        "Cable car",
+        "Folk culture"
+      ],
+      "tips": "Take cable car. Popular with locals for blessings.",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-16",
+      "name": "泉州博物馆",
+      "nameEn": "Quanzhou Museum",
+      "category": "cultural",
+      "description": "Regional museum with collections on Quanzhou history and culture.",
+      "address": "Cultural Center",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.5958
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Local history",
+        "Cultural exhibits",
+        "Archaeological finds"
+      ],
+      "tips": "Combine with nearby cultural attractions.",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-17",
+      "name": "蟳埔渔村",
+      "nameEn": "Xinpu Fishing Village",
+      "category": "cultural",
+      "description": "Traditional fishing village with unique sea snail shell houses and local women wearing floral headpieces.",
+      "address": "蚶江镇 Fengze District",
+      "coordinates": {
+        "lat": 24.8942,
+        "lng": 118.6358
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Sea snail houses",
+        "Floral headpieces",
+        "Fishing culture",
+        "Photo spots"
+      ],
+      "tips": "Visit in early morning to see fishermen returning with catch.",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-18",
+      "name": "郑和航海遗迹",
+      "nameEn": "Zheng He Maritime Heritage",
+      "category": "historical",
+      "description": "Historical sites related to Zheng He's voyages, including his temple and navigation monuments.",
+      "address": "Baiqi Town",
+      "coordinates": {
+        "lat": 24.8342,
+        "lng": 118.6858
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Zheng He temple",
+        "Maritime history",
+        "Ancient navigation",
+        "Related to voyages"
+      ],
+      "tips": "Learn about China's maritime exploration history.",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-19",
+      "name": "永宁古卫城",
+      "nameEn": "Yongning Ancient Fortress",
+      "category": "historical",
+      "description": "Ming Dynasty coastal defense fortress, one of the three major forts in Fujian.",
+      "address": "永宁镇 Yongning Town",
+      "coordinates": {
+        "lat": 24.7842,
+        "lng": 118.7158
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ming architecture",
+        "Coastal defense",
+        "Ancient walls",
+        "Temple"
+      ],
+      "tips": "Less touristy, authentic ancient atmosphere.",
+      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-20",
+      "name": "黄金渔排",
+      "nameEn": "Golden Fishing Raft",
+      "category": "natural",
+      "description": "Unique floating fish farm experience on the sea with fresh seafood dining.",
+      "address": "石狮市 Shishi",
+      "coordinates": {
+        "lat": 24.8042,
+        "lng": 118.7358
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "Free (dining extra)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Floating restaurant",
+        "Fresh seafood",
+        "Ocean views",
+        "Fishing experience"
+      ],
+      "tips": "Best at sunset. Eat fresh seafood right from the sea.",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-21",
+      "name": "闽南建筑博物馆",
+      "nameEn": "Minnan Architecture Museum",
+      "category": "cultural",
+      "description": "Museum showcasing traditional Minnan architectural styles including tulou-like buildings.",
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.6058
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional architecture",
+        "Red brick houses",
+        "Architectural heritage",
+        "Cultural exhibits"
+      ],
+      "tips": "Great for understanding Minnan building techniques.",
+      "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-22",
+      "name": "泉州创意产业园",
+      "nameEn": "Quanzhou Creative Industry Park",
+      "category": "cultural",
+      "description": "Former factory converted to art and creative hub with galleries, cafes, and workshops.",
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9242,
+        "lng": 118.5858
+      },
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Art galleries",
+        "Creative workshops",
+        "Cafes",
+        "Photo spots"
+      ],
+      "tips": "Good for modern art and souvenirs.",
+      "image": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-23",
+      "name": "惠安女民俗村",
+      "nameEn": "Hui'an Women Folk Village",
+      "category": "cultural",
+      "description": "Experience the unique culture of Hui'an women known for their colorful costumes and fishing traditions.",
+      "address": "崇武镇 Chongwu Town",
+      "coordinates": {
+        "lat": 24.8642,
+        "lng": 118.9158
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Colorful costumes",
+        "Fishing traditions",
+        "Folk customs",
+        "Photography"
+      ],
+      "tips": "Watch women weave and learn about their unique customs.",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-24",
+      "name": "九仙山",
+      "nameEn": "Jiuxian Mountain",
+      "category": "natural",
+      "description": "Sacred Taoist mountain with unique rock formations, sea of clouds, and alpine meadows.",
+      "address": "德化县 Dehua County",
+      "coordinates": {
+        "lat": 25.6242,
+        "lng": 118.1858
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "60¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Sea of clouds",
+        "Rock formations",
+        "Taoist temple",
+        "Hiking"
+      ],
+      "tips": "Best visited after rainfall for cloud seas.",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=85"
+    },
+    {
+      "id": "quanzhou-25",
+      "name": "德化陶瓷博物馆",
+      "nameEn": "Dehua Porcelain Museum",
+      "category": "cultural",
+      "description": "Museum dedicated to Dehua porcelain, also called 'white gold', with 1000-year history.",
+      "address": "德化县 Dehua County",
+      "coordinates": {
+        "lat": 25.5842,
+        "lng": 118.2358
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "White porcelain",
+        "Porcelain history",
+        "Artisan demonstrations",
+        "Shopping"
+      ],
+      "tips": "Buy authentic Dehua porcelain as souvenirs.",
+      "image": "https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=800&q=85"
+    },
+    {
+      "id": "qz-kaiyuan",
+      "name": "开元寺",
+      "nameEn": "Kaiyuan Temple",
+      "category": "temple",
+      "description": "泉州最古老的佛教寺院，有东西双塔。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "东西双塔",
+        "佛教文化"
+      ],
+      "tips": "了解佛教文化。",
+      "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800&q=85"
+    },
+    {
+      "id": "qz-xijie",
+      "name": "西街",
+      "nameEn": "West Street",
+      "category": "street",
+      "description": "泉州最古老的商业街。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验泉州文化。",
+      "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&q=85"
+    },
+    {
+      "id": "qz-maritime",
+      "name": "泉州海外交通史博物馆",
+      "nameEn": "Quanzhou Maritime Museum",
+      "category": "museum",
+      "description": "展示泉州海上丝绸之路历史的博物馆。",
+      "address": "泉州市丰泽区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.62
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "海上丝路",
+        "历史"
+      ],
+      "tips": "了解泉州历史。",
+      "image": "https://images.unsplash.com/photo-1759046263120-763faa804cf8?w=800&q=85"
+    },
+    {
+      "id": "qz-qingjing",
+      "name": "清净寺",
+      "nameEn": "Qingjing Mosque",
+      "category": "temple",
+      "description": "中国现存最古老的阿拉伯式清真寺。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "3元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "伊斯兰建筑"
+      ],
+      "tips": "了解伊斯兰文化。",
+      "image": "https://images.unsplash.com/photo-1776644651222-40c7b30dfd46?w=800&q=85"
+    },
+    {
+      "id": "qz-qingyuan",
+      "name": "清源山",
+      "nameEn": "Qingyuan Mountain",
+      "category": "nature",
+      "description": "泉州最著名的山，有老君岩。",
+      "address": "泉州市丰泽区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.62
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "55元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "老君岩",
+        "城市全景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1762996770572-d69c79d67ad5?w=800&q=85"
+    },
+    {
+      "id": "qz-food",
+      "name": "泉州美食",
+      "nameEn": "Quanzhou Food",
+      "category": "street",
+      "description": "泉州有面线糊和各种小吃。",
+      "address": "泉州市",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均30元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "面线糊",
+        "肉粽"
+      ],
+      "tips": "品尝泉州美食。",
+      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=85"
+    },
+    {
+      "id": "qz-guandi",
+      "name": "关帝庙",
+      "nameEn": "Guan Di Temple",
+      "category": "temple",
+      "description": "泉州最著名的关帝庙。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "关帝文化"
+      ],
+      "tips": "了解关帝文化。",
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=85"
+    },
+    {
+      "id": "qz-night",
+      "name": "泉州夜景",
+      "nameEn": "Quanzhou Night View",
+      "category": "landmark",
+      "description": "西街和开元寺的夜景。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1704077393213-ec08ac53e3fe?w=800&q=85"
+    },
+    {
+      "id": "qz-luoyang-bridge",
+      "name": "洛阳桥",
+      "nameEn": "Luoyang Bridge",
+      "category": "landmark",
+      "description": "中国现存最早的跨海大桥，有900多年历史。",
+      "address": "泉州市洛江区",
+      "coordinates": {
+        "lat": 24.95,
+        "lng": 118.68
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古桥",
+        "历史"
+      ],
+      "tips": "了解中国桥梁史。",
+      "image": "https://images.unsplash.com/photo-1535191029341-ae8435767b0e?w=800&q=85"
+    },
+    {
+      "id": "qz-tianhou",
+      "name": "天后宫",
+      "nameEn": "Tianhou Temple",
+      "category": "temple",
+      "description": "供奉妈祖的庙宇，有800多年历史。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "妈祖文化"
+      ],
+      "tips": "了解妈祖文化。",
+      "image": "https://images.unsplash.com/photo-1742568404676-2cd550b175e8?w=800&q=85"
+    },
+    {
+      "id": "qz-museum",
+      "name": "泉州博物馆",
+      "nameEn": "Quanzhou Museum",
+      "category": "museum",
+      "description": "展示泉州历史的博物馆。",
+      "address": "泉州市丰泽区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.62
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "泉州历史"
+      ],
+      "tips": "了解泉州文化。",
+      "image": "https://images.unsplash.com/photo-1729487152252-87eabc0d0177?w=800&q=85"
+    },
+    {
+      "id": "qz-zhongshan",
+      "name": "中山路",
+      "nameEn": "Zhongshan Road",
+      "category": "street",
+      "description": "泉州最繁华的商业街。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "购物好去处。",
+      "image": "https://images.unsplash.com/photo-1780278906070-0198833cc0c4?w=800&q=85"
+    },
+    {
+      "id": "qz-park",
+      "name": "东湖公园",
+      "nameEn": "Donghu Park",
+      "category": "park",
+      "description": "泉州最大的公园。",
+      "address": "泉州市丰泽区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.62
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "湖泊"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1483135349295-9e3c48106ee6?w=800&q=85"
+    },
+    {
+      "id": "qz-chengtian",
+      "name": "承天寺",
+      "nameEn": "Chengtian Temple",
+      "category": "temple",
+      "description": "泉州最古老的佛教寺院之一。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1775376632463-1fc3bc775ec2?w=800&q=85"
+    },
+    {
+      "id": "qz-zongzi",
+      "name": "泉州肉粽",
+      "nameEn": "Quanzhou Zongzi",
+      "category": "street",
+      "description": "泉州最著名的传统美食。",
+      "address": "泉州市",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均10元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "肉粽"
+      ],
+      "tips": "品尝泉州肉粽。",
+      "image": "https://images.unsplash.com/photo-1769434396924-e0ec354364d4?w=800&q=85"
+    },
+    {
+      "id": "qz-chongwu",
+      "name": "崇武古城",
+      "nameEn": "Chongwu Ancient City",
+      "category": "landmark",
+      "description": "中国现存最完整的石砌海防城堡之一。",
+      "address": "泉州市惠安县",
+      "coordinates": {
+        "lat": 24.9,
+        "lng": 118.92
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "45元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古城",
+        "海防",
+        "惠安女"
+      ],
+      "tips": "了解海防历史。",
+      "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=85"
+    },
+    {
+      "id": "qz-jiuri",
+      "name": "九日山",
+      "nameEn": "Jiuri Mountain",
+      "category": "nature",
+      "description": "泉州西部的山，有祈风石刻。",
+      "address": "泉州市南安市",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.42
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "祈风石刻",
+        "历史"
+      ],
+      "tips": "了解海上丝路。",
+      "image": "https://images.unsplash.com/photo-1680535105125-0f719ce3b2c8?w=800&q=85"
+    },
+    {
+      "id": "qz-caoan",
+      "name": "草庵",
+      "nameEn": "Cao'an",
+      "category": "temple",
+      "description": "中国现存唯一的摩尼教寺庙。",
+      "address": "泉州市晋江市",
+      "coordinates": {
+        "lat": 24.82,
+        "lng": 118.55
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "摩尼教",
+        "宗教"
+      ],
+      "tips": "了解摩尼教文化。",
+      "image": "https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=800&q=85"
+    },
+    {
+      "id": "qz-tumen",
+      "name": "涂门街",
+      "nameEn": "Tumen Street",
+      "category": "street",
+      "description": "泉州最古老的街区之一。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验泉州文化。",
+      "image": "https://images.unsplash.com/photo-1751526042900-09f2ae029e1c?w=800&q=85"
+    },
+    {
+      "id": "qz-xihu-park",
+      "name": "西湖公园",
+      "nameEn": "West Lake Park",
+      "category": "park",
+      "description": "泉州最美的公园。",
+      "address": "泉州市丰泽区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "湖泊",
+        "公园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=800&q=85"
+    },
+    {
+      "id": "qz-xijie-night",
+      "name": "西街夜景",
+      "nameEn": "West Street Night View",
+      "category": "landmark",
+      "description": "泉州西街的夜景灯光秀。",
+      "address": "泉州市鲤城区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1508747703725-719777637510?w=800&q=85"
+    },
+    {
+      "id": "qz-ancient-ship",
+      "name": "泉州湾古船陈列馆",
+      "nameEn": "Quanzhou Bay Ancient Ship Museum",
+      "category": "museum",
+      "description": "展示泉州古代船只的博物馆。",
+      "address": "泉州市丰泽区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.62
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古船",
+        "海上丝路"
+      ],
+      "tips": "了解海上丝路。",
+      "image": "https://images.unsplash.com/photo-1689827645643-b1e5ec55eb2e?w=800&q=85"
+    },
+    {
+      "id": "qz-mianxianhu",
+      "name": "泉州面线糊",
+      "nameEn": "Quanzhou Noodle Soup",
+      "category": "street",
+      "description": "泉州最著名的传统美食。",
+      "address": "泉州市",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均10元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "面线糊"
+      ],
+      "tips": "品尝泉州面线糊。",
+      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=85"
+    },
+    {
+      "id": "qz-zimao",
+      "name": "紫帽山",
+      "nameEn": "Zimao Mountain",
+      "category": "nature",
+      "description": "泉州南部的山脉。",
+      "address": "泉州市晋江市",
+      "coordinates": {
+        "lat": 24.82,
+        "lng": 118.55
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1737418829450-ae4884a517f4?w=800&q=85"
+    },
+    {
+      "id": "qz-temple-museum",
+      "name": "泉州宗教石刻博物馆",
+      "nameEn": "Quanzhou Religious Stone Carvings Museum",
+      "category": "museum",
+      "description": "展示泉州宗教石刻的博物馆。",
+      "address": "泉州市丰泽区",
+      "coordinates": {
+        "lat": 24.92,
+        "lng": 118.62
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "宗教石刻"
+      ],
+      "tips": "了解泉州宗教文化。",
+      "image": "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "quanzhou-1",
+      "name": "侯阿婆肉粽",
+      "nameEn": "Hou Apo Meat Dumplings",
+      "type": "local",
+      "cuisine": "Quanzhou Snacks",
+      "avgPrice": 30,
+      "rating": 4.8,
+      "address": "Yanxi Street, Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "hours": "08:00-20:00",
+      "description": "Famous for rice dumplings with meat, a Quanzhou specialty.",
+      "dishHighlights": [
+        "Meat dumplings",
+        "Savory filling",
+        "Traditional recipe",
+        "Must-try"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "snacks",
+        "must-try"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-2",
+      "name": "面线糊",
+      "nameEn": "Minxianhu",
+      "type": "local",
+      "cuisine": "Quanzhou",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "hours": "06:00-14:00",
+      "description": "Thin rice noodles in savory broth, a local breakfast staple.",
+      "dishHighlights": [
+        "Thin noodles",
+        "Pork broth",
+        "Various toppings",
+        "Breakfast"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-3",
+      "name": "泉州姜母鸭",
+      "nameEn": "Quanzhou Ginger Duck",
+      "type": "local",
+      "cuisine": "Quanzhou",
+      "avgPrice": 80,
+      "rating": 4.7,
+      "address": "Near Kaiyuan Temple",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "hours": "10:30-21:00",
+      "description": "Famous dish - braised duck with ginger in clay pot.",
+      "dishHighlights": [
+        "Ginger duck",
+        "Clay pot cooking",
+        "Aromatic",
+        "Traditional"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "must-try",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-4",
+      "name": "土笋冻",
+      "nameEn": "Tusun Jelly",
+      "type": "local",
+      "cuisine": "Quanzhou Snacks",
+      "avgPrice": 20,
+      "rating": 4.5,
+      "address": "Night markets",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "hours": "17:00-02:00",
+      "description": "Unique jelly made from marine worm, a local specialty.",
+      "dishHighlights": [
+        "Sea worm jelly",
+        "Garlic sauce",
+        "Vinegar",
+        "Adventurous"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "adventurous",
+        "unique"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-5",
+      "name": "海蛎煎",
+      "nameEn": "Oyster Omelette",
+      "type": "local",
+      "cuisine": "Quanzhou",
+      "avgPrice": 35,
+      "rating": 4.6,
+      "address": "Near Tianhou Palace",
+      "coordinates": {
+        "lat": 24.8942,
+        "lng": 118.5858
+      },
+      "hours": "10:00-22:00",
+      "description": "Crispy omelette with fresh oysters and sweet sauce.",
+      "dishHighlights": [
+        "Oyster omelette",
+        "Crispy texture",
+        "Sweet sauce",
+        "Fresh oysters"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "must-try",
+        "seafood"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-6",
+      "name": "闽南菜",
+      "nameEn": "Minnan Restaurant",
+      "type": "local",
+      "cuisine": "Minnan",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "hours": "10:30-21:30",
+      "description": "Restaurant serving authentic Minnan cuisine with traditional recipes.",
+      "dishHighlights": [
+        "Minnan dishes",
+        "Seafood",
+        "Traditional recipes",
+        "Seasonal menu"
+      ],
+      "tags": [
+        "local",
+        "minnan",
+        "traditional",
+        "seafood"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-7",
+      "name": "东来顺",
+      "nameEn": "Dong Lai Shun",
+      "type": "chain",
+      "cuisine": "Mongolian Hotpot",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.5958
+      },
+      "hours": "10:30-22:00",
+      "description": "Famous hotpot chain with premium lamb.",
+      "dishHighlights": [
+        "Lamb slices",
+        "Hotpot",
+        "Traditional broth",
+        "Quality"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "mongolian",
+        "premium"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-8",
+      "name": "蓝氏肉夹",
+      "nameEn": "Lan Shi Meat Pie",
+      "type": "local",
+      "cuisine": "Quanzhou Snacks",
+      "avgPrice": 15,
+      "rating": 4.6,
+      "address": "Tumen Street",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "hours": "07:00-19:00",
+      "description": "Local snack - crispy meat pie with flaky crust.",
+      "dishHighlights": [
+        "Meat pie",
+        "Flaky crust",
+        "Pork filling",
+        "Hot"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "budget",
+        "famous"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-9",
+      "name": "港式茶餐厅",
+      "nameEn": "Hong Kong Tea Restaurant",
+      "type": "local",
+      "cuisine": "Hong Kong",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "Jin'an District",
+      "coordinates": {
+        "lat": 24.9242,
+        "lng": 118.5958
+      },
+      "hours": "10:00-22:00",
+      "description": "Hong Kong style tea restaurant with dim sum and Western food.",
+      "dishHighlights": [
+        "Dim sum",
+        "Egg tarts",
+        "Milk tea",
+        "Hong Kong style"
+      ],
+      "tags": [
+        "local",
+        "hong-kong",
+        "dim-sum",
+        "casual"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-10",
+      "name": "海鲜大排档",
+      "nameEn": "Seafood Night Market",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Shishi City",
+      "coordinates": {
+        "lat": 24.8142,
+        "lng": 118.7258
+      },
+      "hours": "17:00-02:00",
+      "description": "Popular seafood market with fresh catches and local cooking.",
+      "dishHighlights": [
+        "Fresh seafood",
+        "Steamed fish",
+        "Crab",
+        "Grilled prawns"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "night-market",
+        "fresh"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-11",
+      "name": "水门国仔",
+      "nameEn": "Shuimen Guozai",
+      "type": "local",
+      "cuisine": "Quanzhou Snacks",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "水门街 Shuimen Street",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5908
+      },
+      "hours": "07:00-19:00",
+      "description": "Famous for seafood noodles and fish ball soup, a Quanzhou institution.",
+      "dishHighlights": [
+        "Seafood noodles",
+        "Fish balls",
+        "Pork rib soup",
+        "Traditional"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "noodles",
+        "snacks"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-12",
+      "name": "群众牛肉馆",
+      "nameEn": "Qunzhong Beef Restaurant",
+      "type": "local",
+      "cuisine": "Beef",
+      "avgPrice": 60,
+      "rating": 4.6,
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.6008
+      },
+      "hours": "10:30-21:00",
+      "description": "Local favorite for beef dishes including beef offal soup and stir-fried beef.",
+      "dishHighlights": [
+        "Beef offal",
+        "Beef soup",
+        "Stir-fried beef",
+        "Local favorite"
+      ],
+      "tags": [
+        "local",
+        "beef",
+        "traditional",
+        "offal"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-13",
+      "name": "林记正泉成",
+      "nameEn": "Lin Ji Zhengquan Cheng",
+      "type": "local",
+      "cuisine": "Quanzhou Snacks",
+      "avgPrice": 20,
+      "rating": 4.8,
+      "address": "Xianglan Street",
+      "coordinates": {
+        "lat": 24.9022,
+        "lng": 118.5928
+      },
+      "hours": "08:00-20:00",
+      "description": "Traditional pastry shop famous for沪尾酥 and闽南式糕点.",
+      "dishHighlights": [
+        "Huwai cake",
+        "Minnan pastries",
+        "Traditional desserts",
+        "Old recipe"
+      ],
+      "tags": [
+        "local",
+        "pastries",
+        "traditional",
+        "dessert"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-14",
+      "name": "老记炖番鸭",
+      "nameEn": "Lao Ji Duck Stew",
+      "type": "local",
+      "cuisine": "Quanzhou",
+      "avgPrice": 90,
+      "rating": 4.7,
+      "address": "Fengze District",
+      "coordinates": {
+        "lat": 24.8942,
+        "lng": 118.6108
+      },
+      "hours": "11:00-22:00",
+      "description": "Famous for slow-cooked duck soup with medicinal herbs, a winter specialty.",
+      "dishHighlights": [
+        "Duck stew",
+        "Medicinal herbs",
+        "Slow-cooked",
+        "Winter specialty"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "soup",
+        "healthy"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-15",
+      "name": "阿秋专业肥牛",
+      "nameEn": "A Qiu Beef Hotpot",
+      "type": "local",
+      "cuisine": "Hotpot",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Jinjiang District",
+      "coordinates": {
+        "lat": 24.8242,
+        "lng": 118.5858
+      },
+      "hours": "10:30-22:00",
+      "description": "Popular hotpot with premium beef slices and local broth.",
+      "dishHighlights": [
+        "Beef slices",
+        "Spicy broth",
+        "Fresh vegetables",
+        "All-you-can-eat"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "beef",
+        "popular"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-16",
+      "name": "石狮王川小厨",
+      "nameEn": "Shishi Wang Chuan Kitchen",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "石狮市 Shishi",
+      "coordinates": {
+        "lat": 24.8142,
+        "lng": 118.7158
+      },
+      "hours": "10:30-21:30",
+      "description": "Upscale seafood restaurant with live fish tanks and expert cooking.",
+      "dishHighlights": [
+        "Live seafood",
+        "Steamed fish",
+        "Crab",
+        "Professional cooking"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "upscale",
+        "fresh"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-17",
+      "name": "安海菜粿",
+      "nameEn": "Anhai Cai Guo",
+      "type": "local",
+      "cuisine": "Quanzhou Snacks",
+      "avgPrice": 15,
+      "rating": 4.5,
+      "address": "晋江安海 Jinjiang Anhai",
+      "coordinates": {
+        "lat": 24.7842,
+        "lng": 118.4858
+      },
+      "hours": "06:00-14:00",
+      "description": "Famous for vegetable rice cake, a traditional breakfast snack.",
+      "dishHighlights": [
+        "Vegetable rice cake",
+        "Pan-fried",
+        "Breakfast",
+        "Traditional"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "breakfast",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-18",
+      "name": "深沪紫菜饭",
+      "nameEn": "Shenhu Seaweed Rice",
+      "type": "local",
+      "cuisine": "Quanzhou Snacks",
+      "avgPrice": 20,
+      "rating": 4.6,
+      "address": "晋江深沪 Jinjiang Shenhu",
+      "coordinates": {
+        "lat": 24.7542,
+        "lng": 118.4758
+      },
+      "hours": "07:00-15:00",
+      "description": "Famous for seaweed rice rolls, a unique coastal specialty.",
+      "dishHighlights": [
+        "Seaweed rice roll",
+        "Seaweed filling",
+        "Steamed",
+        "Local specialty"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "seafood",
+        "breakfast"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-19",
+      "name": "崇武鱼卷",
+      "nameEn": "Chongwu Fish Roll",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 40,
+      "rating": 4.7,
+      "address": "惠安崇武 Hui'an Chongwu",
+      "coordinates": {
+        "lat": 24.8642,
+        "lng": 118.9158
+      },
+      "hours": "09:00-21:00",
+      "description": "Famous fish cake rolls made from fresh ground fish, a local specialty.",
+      "dishHighlights": [
+        "Fish roll",
+        "Fresh fish",
+        "Grilled",
+        "Local specialty"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "famous",
+        "must-try"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-20",
+      "name": "福人颐",
+      "nameEn": "Furen Yi",
+      "type": "local",
+      "cuisine": "Minnan",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.5958
+      },
+      "hours": "10:30-21:30",
+      "description": "Elegant Minnan restaurant with refined dishes and historic ambiance.",
+      "dishHighlights": [
+        "Minnan cuisine",
+        "Refined dishes",
+        "Historical setting",
+        "Premium service"
+      ],
+      "tags": [
+        "local",
+        "minnan",
+        "upscale",
+        "traditional"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-21",
+      "name": "好而由",
+      "nameEn": "Hao Er You",
+      "type": "local",
+      "cuisine": "Quanzhou",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Fengze District",
+      "coordinates": {
+        "lat": 24.8942,
+        "lng": 118.6058
+      },
+      "hours": "10:30-21:00",
+      "description": "Local chain restaurant known for casual Minnan dishes and fast service.",
+      "dishHighlights": [
+        "Casual dining",
+        "Minnan dishes",
+        "Quick service",
+        "Value"
+      ],
+      "tags": [
+        "local",
+        "minnan",
+        "casual",
+        "chain"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-22",
+      "name": "客必隆",
+      "nameEn": "Ke Bi Long",
+      "type": "local",
+      "cuisine": "Korean",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "Jinjiang District",
+      "coordinates": {
+        "lat": 24.8342,
+        "lng": 118.5758
+      },
+      "hours": "11:00-22:00",
+      "description": "Korean BBQ restaurant popular with locals for grill-it-yourself meat.",
+      "dishHighlights": [
+        "Korean BBQ",
+        "Self-grill",
+        "Meat variety",
+        "All-you-can-eat"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "bbq",
+        "popular"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-23",
+      "name": "来豆多",
+      "nameEn": "Lai Dou Duo",
+      "type": "local",
+      "cuisine": "Dessert",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5908
+      },
+      "hours": "12:00-23:00",
+      "description": "Popular dessert shop with grass jelly, red bean, and traditional sweets.",
+      "dishHighlights": [
+        "Grass jelly",
+        "Red bean",
+        "Traditional desserts",
+        "Cool treats"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "dessert-shop",
+        "summer"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-24",
+      "name": "南洋古早味",
+      "nameEn": "Nanyang Traditional Taste",
+      "type": "local",
+      "cuisine": "Nanyang",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.6008
+      },
+      "hours": "10:00-22:00",
+      "description": "Restaurant serving Peranakan-influenced dishes from overseas Chinese.",
+      "dishHighlights": [
+        "Nanyang cuisine",
+        "Peranakan",
+        "Curry",
+        "Laksa"
+      ],
+      "tags": [
+        "local",
+        "nanyang",
+        "curry",
+        "fusion"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-25",
+      "name": "百源川池鳗球",
+      "nameEn": "Baiyuan Eel Ball",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 35,
+      "rating": 4.6,
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5928
+      },
+      "hours": "09:00-21:00",
+      "description": "Famous for eel balls and eel noodles, a Quanzhou specialty.",
+      "dishHighlights": [
+        "Eel balls",
+        "Eel noodles",
+        "Fresh eel",
+        "Specialty"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "noodles",
+        "famous"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-26",
+      "name": "传统牛肉羹",
+      "nameEn": "传统牛肉羹 (牛肉羹)",
+      "type": "local",
+      "cuisine": "牛肉羹",
+      "avgPrice": 46,
+      "rating": 4.0,
+      "address": "泉州市老城区美食街97号",
+      "coordinates": {
+        "lat": 24.8728,
+        "lng": 118.723
+      },
+      "phone": "+86 010 18129029",
+      "hours": "17:00-02:00",
+      "description": "泉州本地人推荐的牛肉羹店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "醋肉",
+        "润饼",
+        "土笋冻"
+      ],
+      "tags": [
+        "排队王",
+        "家常菜",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-28",
+      "name": "阿婆面线糊",
+      "nameEn": "阿婆面线糊 (面线糊)",
+      "type": "local",
+      "cuisine": "面线糊",
+      "avgPrice": 109,
+      "rating": 4.4,
+      "address": "泉州市新城区美食街88号",
+      "coordinates": {
+        "lat": 24.8483,
+        "lng": 118.6588
+      },
+      "phone": "+86 010 62518578",
+      "hours": "17:00-02:00",
+      "description": "泉州本地人推荐的面线糊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "醋肉",
+        "润饼"
+      ],
+      "tags": [
+        "社区老店",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-30",
+      "name": "传统醋肉",
+      "nameEn": "传统醋肉 (醋肉)",
+      "type": "local",
+      "cuisine": "醋肉",
+      "avgPrice": 72,
+      "rating": 4.5,
+      "address": "泉州市市中心区美食街56号",
+      "coordinates": {
+        "lat": 24.9103,
+        "lng": 118.6653
+      },
+      "phone": "+86 010 41446750",
+      "hours": "10:00-22:00",
+      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "润饼",
+        "醋肉",
+        "面线糊"
+      ],
+      "tags": [
+        "隐藏美食",
+        "家常菜",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-32",
+      "name": "泉州味面线糊",
+      "nameEn": "泉州味面线糊 (面线糊)",
+      "type": "local",
+      "cuisine": "面线糊",
+      "avgPrice": 135,
+      "rating": 4.6,
+      "address": "泉州市新城区美食街91号",
+      "coordinates": {
+        "lat": 24.8476,
+        "lng": 118.6858
+      },
+      "phone": "+86 010 74967293",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "泉州本地人推荐的面线糊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土笋冻",
+        "醋肉",
+        "面线糊"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-34",
+      "name": "街边醋肉",
+      "nameEn": "街边醋肉 (醋肉)",
+      "type": "street",
+      "cuisine": "醋肉",
+      "avgPrice": 39,
+      "rating": 4.4,
+      "address": "泉州市老城区美食街176号",
+      "coordinates": {
+        "lat": 24.9202,
+        "lng": 118.6973
+      },
+      "phone": "+86 010 87896629",
+      "hours": "17:00-02:00",
+      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土笋冻",
+        "牛肉羹",
+        "醋肉"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-36",
+      "name": "地道醋肉",
+      "nameEn": "地道醋肉 (醋肉)",
+      "type": "local",
+      "cuisine": "醋肉",
+      "avgPrice": 116,
+      "rating": 4.5,
+      "address": "泉州市市中心区美食街55号",
+      "coordinates": {
+        "lat": 24.893,
+        "lng": 118.7127
+      },
+      "phone": "+86 010 28496828",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "土笋冻",
+        "润饼"
+      ],
+      "tags": [
+        "性价比高",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-38",
+      "name": "老字号醋肉",
+      "nameEn": "老字号醋肉 (醋肉)",
+      "type": "local",
+      "cuisine": "醋肉",
+      "avgPrice": 60,
+      "rating": 4.1,
+      "address": "泉州市市中心区美食街131号",
+      "coordinates": {
+        "lat": 24.8316,
+        "lng": 118.6702
+      },
+      "phone": "+86 010 87933192",
+      "hours": "17:00-02:00",
+      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "润饼",
+        "醋肉",
+        "牛肉羹"
+      ],
+      "tags": [
+        "性价比高",
+        "社区老店",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-40",
+      "name": "老泉州土笋冻",
+      "nameEn": "老泉州土笋冻 (土笋冻)",
+      "type": "cafe",
+      "cuisine": "土笋冻",
+      "avgPrice": 51,
+      "rating": 4.3,
+      "address": "泉州市新城区美食街161号",
+      "coordinates": {
+        "lat": 24.8569,
+        "lng": 118.6699
+      },
+      "phone": "+86 010 13052704",
+      "hours": "06:00-14:00",
+      "description": "泉州本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "润饼",
+        "牛肉羹"
+      ],
+      "tags": [
+        "文艺",
+        "下午茶",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-42",
+      "name": "传统面线糊",
+      "nameEn": "传统面线糊 (面线糊)",
+      "type": "cafe",
+      "cuisine": "面线糊",
+      "avgPrice": 41,
+      "rating": 4.3,
+      "address": "泉州市老城区美食街76号",
+      "coordinates": {
+        "lat": 24.8688,
+        "lng": 118.6368
+      },
+      "phone": "+86 010 82465049",
+      "hours": "10:00-22:00",
+      "description": "泉州本地人推荐的面线糊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土笋冻",
+        "面线糊",
+        "牛肉羹"
+      ],
+      "tags": [
+        "咖啡",
+        "安静",
+        "文艺"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-44",
+      "name": "传统醋肉",
+      "nameEn": "传统醋肉 (醋肉)",
+      "type": "street",
+      "cuisine": "醋肉",
+      "avgPrice": 46,
+      "rating": 4.1,
+      "address": "泉州市新城区美食街72号",
+      "coordinates": {
+        "lat": 24.8706,
+        "lng": 118.7055
+      },
+      "phone": "+86 010 57759605",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土笋冻",
+        "面线糊",
+        "牛肉羹"
+      ],
+      "tags": [
+        "小吃",
+        "网红打卡",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-46",
+      "name": "老字号面线糊",
+      "nameEn": "老字号面线糊 (面线糊)",
+      "type": "local",
+      "cuisine": "面线糊",
+      "avgPrice": 72,
+      "rating": 4.1,
+      "address": "泉州市老城区美食街63号",
+      "coordinates": {
+        "lat": 24.847,
+        "lng": 118.7087
+      },
+      "phone": "+86 010 69973332",
+      "hours": "06:00-14:00",
+      "description": "泉州本地人推荐的面线糊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "土笋冻",
+        "牛肉羹"
+      ],
+      "tags": [
+        "家常菜",
+        "排队王",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-48",
+      "name": "街边润饼",
+      "nameEn": "街边润饼 (润饼)",
+      "type": "local",
+      "cuisine": "润饼",
+      "avgPrice": 117,
+      "rating": 4.1,
+      "address": "泉州市市中心区美食街190号",
+      "coordinates": {
+        "lat": 24.8795,
+        "lng": 118.6719
+      },
+      "phone": "+86 010 32109078",
+      "hours": "10:00-22:00",
+      "description": "泉州本地人推荐的润饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土笋冻",
+        "牛肉羹",
+        "润饼"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-50",
+      "name": "阿婆润饼",
+      "nameEn": "阿婆润饼 (润饼)",
+      "type": "street",
+      "cuisine": "润饼",
+      "avgPrice": 13,
+      "rating": 4.2,
+      "address": "泉州市新城区美食街65号",
+      "coordinates": {
+        "lat": 24.8342,
+        "lng": 118.654
+      },
+      "phone": "+86 010 24533390",
+      "hours": "09:00-21:00",
+      "description": "泉州本地人推荐的润饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "土笋冻",
+        "牛肉羹"
+      ],
+      "tags": [
+        "路边摊",
+        "夜市",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-52",
+      "name": "老街润饼",
+      "nameEn": "老街润饼 (润饼)",
+      "type": "local",
+      "cuisine": "润饼",
+      "avgPrice": 60,
+      "rating": 4.7,
+      "address": "泉州市新城区美食街75号",
+      "coordinates": {
+        "lat": 24.8675,
+        "lng": 118.7163
+      },
+      "phone": "+86 010 86125022",
+      "hours": "17:00-02:00",
+      "description": "泉州本地人推荐的润饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "牛肉羹",
+        "润饼"
+      ],
+      "tags": [
+        "性价比高",
+        "排队王",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-54",
+      "name": "传统润饼",
+      "nameEn": "传统润饼 (润饼)",
+      "type": "local",
+      "cuisine": "润饼",
+      "avgPrice": 140,
+      "rating": 4.0,
+      "address": "泉州市新城区美食街137号",
+      "coordinates": {
+        "lat": 24.9027,
+        "lng": 118.6589
+      },
+      "phone": "+86 010 35126619",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "泉州本地人推荐的润饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "润饼",
+        "牛肉羹",
+        "醋肉"
+      ],
+      "tags": [
+        "性价比高",
+        "本地人爱去",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-56",
+      "name": "老泉州牛肉羹",
+      "nameEn": "老泉州牛肉羹 (牛肉羹)",
+      "type": "street",
+      "cuisine": "牛肉羹",
+      "avgPrice": 50,
+      "rating": 4.7,
+      "address": "泉州市老城区美食街114号",
+      "coordinates": {
+        "lat": 24.9065,
+        "lng": 118.6512
+      },
+      "phone": "+86 010 72053582",
+      "hours": "09:00-21:00",
+      "description": "泉州本地人推荐的牛肉羹店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "醋肉",
+        "土笋冻",
+        "牛肉羹"
+      ],
+      "tags": [
+        "小吃",
+        "夜市",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-58",
+      "name": "阿婆润饼",
+      "nameEn": "阿婆润饼 (润饼)",
+      "type": "local",
+      "cuisine": "润饼",
+      "avgPrice": 91,
+      "rating": 4.3,
+      "address": "泉州市新城区美食街156号",
+      "coordinates": {
+        "lat": 24.8284,
+        "lng": 118.6439
+      },
+      "phone": "+86 010 13949085",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "泉州本地人推荐的润饼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉羹",
+        "面线糊",
+        "润饼"
+      ],
+      "tags": [
+        "家常菜",
+        "社区老店",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-60",
+      "name": "老泉州土笋冻",
+      "nameEn": "老泉州土笋冻 (土笋冻)",
+      "type": "local",
+      "cuisine": "土笋冻",
+      "avgPrice": 126,
+      "rating": 4.7,
+      "address": "泉州市市中心区美食街157号",
+      "coordinates": {
+        "lat": 24.9104,
+        "lng": 118.6336
+      },
+      "phone": "+86 010 83234985",
+      "hours": "09:00-21:00",
+      "description": "泉州本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "牛肉羹",
+        "润饼"
+      ],
+      "tags": [
+        "本地人爱去",
+        "排队王",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-62",
+      "name": "老泉州面线糊",
+      "nameEn": "老泉州面线糊 (面线糊)",
+      "type": "local",
+      "cuisine": "面线糊",
+      "avgPrice": 49,
+      "rating": 4.5,
+      "address": "泉州市市中心区美食街47号",
+      "coordinates": {
+        "lat": 24.9171,
+        "lng": 118.6789
+      },
+      "phone": "+86 010 86049846",
+      "hours": "17:00-02:00",
+      "description": "泉州本地人推荐的面线糊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉羹",
+        "润饼",
+        "醋肉"
+      ],
+      "tags": [
+        "社区老店",
+        "隐藏美食",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-64",
+      "name": "地道面线糊",
+      "nameEn": "地道面线糊 (面线糊)",
+      "type": "local",
+      "cuisine": "面线糊",
+      "avgPrice": 48,
+      "rating": 4.3,
+      "address": "泉州市新城区美食街31号",
+      "coordinates": {
+        "lat": 24.8663,
+        "lng": 118.6474
+      },
+      "phone": "+86 010 19898051",
+      "hours": "10:00-22:00",
+      "description": "泉州本地人推荐的面线糊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "醋肉",
+        "润饼",
+        "土笋冻"
+      ],
+      "tags": [
+        "家常菜",
+        "本地人爱去",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-66",
+      "name": "正宗土笋冻",
+      "nameEn": "正宗土笋冻 (土笋冻)",
+      "type": "local",
+      "cuisine": "土笋冻",
+      "avgPrice": 49,
+      "rating": 4.4,
+      "address": "泉州市老城区美食街73号",
+      "coordinates": {
+        "lat": 24.8354,
+        "lng": 118.7134
+      },
+      "phone": "+86 010 94035024",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "泉州本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土笋冻",
+        "润饼",
+        "牛肉羹"
+      ],
+      "tags": [
+        "家常菜",
+        "排队王",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-68",
+      "name": "老泉州醋肉",
+      "nameEn": "老泉州醋肉 (醋肉)",
+      "type": "local",
+      "cuisine": "醋肉",
+      "avgPrice": 133,
+      "rating": 4.9,
+      "address": "泉州市市中心区美食街179号",
+      "coordinates": {
+        "lat": 24.8417,
+        "lng": 118.6811
+      },
+      "phone": "+86 010 74125202",
+      "hours": "06:00-14:00",
+      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "土笋冻",
+        "牛肉羹"
+      ],
+      "tags": [
+        "社区老店",
+        "家常菜",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-70",
+      "name": "传统土笋冻",
+      "nameEn": "传统土笋冻 (土笋冻)",
+      "type": "cafe",
+      "cuisine": "土笋冻",
+      "avgPrice": 74,
+      "rating": 4.1,
+      "address": "泉州市新城区美食街68号",
+      "coordinates": {
+        "lat": 24.8518,
+        "lng": 118.6708
+      },
+      "phone": "+86 010 79242721",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "泉州本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉羹",
+        "面线糊",
+        "土笋冻"
+      ],
+      "tags": [
+        "下午茶",
+        "文艺",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-72",
+      "name": "阿婆牛肉羹",
+      "nameEn": "阿婆牛肉羹 (牛肉羹)",
+      "type": "local",
+      "cuisine": "牛肉羹",
+      "avgPrice": 87,
+      "rating": 4.5,
+      "address": "泉州市老城区美食街124号",
+      "coordinates": {
+        "lat": 24.8812,
+        "lng": 118.7205
+      },
+      "phone": "+86 010 94365233",
+      "hours": "06:00-14:00",
+      "description": "泉州本地人推荐的牛肉羹店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "面线糊",
+        "润饼",
+        "土笋冻"
+      ],
+      "tags": [
+        "性价比高",
+        "隐藏美食",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "quanzhou-74",
+      "name": "巷子醋肉",
+      "nameEn": "巷子醋肉 (醋肉)",
+      "type": "local",
+      "cuisine": "醋肉",
+      "avgPrice": 131,
+      "rating": 4.8,
+      "address": "泉州市市中心区美食街98号",
+      "coordinates": {
+        "lat": 24.8441,
+        "lng": 118.6989
+      },
+      "phone": "+86 010 49857557",
+      "hours": "17:00-02:00",
+      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "润饼",
+        "牛肉羹",
+        "面线糊"
+      ],
+      "tags": [
+        "本地人爱去",
+        "老字号",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Quanzhou Jinjiang International Airport (JJN)",
+        "duration": "Varies",
+        "price": "400-1500¥",
+        "frequency": "Daily flights",
+        "tips": "Airport 15km from city center. Taxi or bus."
+      },
+      {
+        "type": "train",
+        "from": "Xiamen (1h), Fuzhou (2h), Shanghai (4h)",
+        "to": "Quanzhou Railway Station",
+        "duration": "1-4 hours",
+        "price": "100-500¥",
+        "frequency": "Multiple daily",
+        "tips": "High-speed trains from major cities."
+      }
+    ],
+    "local": {
+      "bus": [
+        "Extensive network",
+        "Single ride: 2¥",
+        "Tourist areas connected"
+      ],
+      "taxi": [
+        "Starting fare: 8¥",
+        "Most attractions 15-50¥",
+        "Didi recommended"
+      ],
+      "bike": [
+        "Mobike, Meituan available",
+        "Good for city center",
+        "Historic areas"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "泉州酒店",
+      "nameEn": "Quanzhou Hotel",
+      "budget": "luxury",
+      "priceRange": "¥800-1500/night",
+      "address": "88 Ping Street, Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location",
+        "Historic",
+        "Good service"
+      ],
+      "bookingTips": "Best location for sightseeing."
+    },
+    {
+      "name": "晋江马哥孛罗酒店",
+      "nameEn": "Marco Polo Hotel Jinjiang",
+      "budget": "luxury",
+      "priceRange": "¥600-1200/night",
+      "address": "Jinjiang District",
+      "coordinates": {
+        "lat": 24.8242,
+        "lng": 118.5758
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Modern luxury",
+        "Business facilities",
+        "Good dining"
+      ],
+      "bookingTips": "Good for business travelers."
+    },
+    {
+      "name": "如家酒店泉州开元寺店",
+      "nameEn": "Home Inn Quanzhou Kaiyuan",
+      "budget": "budget",
+      "priceRange": "¥150-300/night",
+      "address": "Near Kaiyuan Temple",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5958
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near attractions",
+        "Budget-friendly",
+        "Clean"
+      ],
+      "bookingTips": "Best budget near historic areas."
+    },
+    {
+      "name": "泉州富力万达文华酒店",
+      "nameEn": "Wanda Vista Quanzhou",
+      "budget": "luxury",
+      "priceRange": "¥700-1400/night",
+      "address": "Baijie Street, Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.5928
+      },
+      "rating": 4.6,
+      "highlights": [
+        "River view",
+        "Modern facilities",
+        "Central location",
+        "Excellent service"
+      ],
+      "bookingTips": "Great for luxury travelers."
+    },
+    {
+      "name": "泉州悦华酒店",
+      "nameEn": "Yuehua Hotel Quanzhou",
+      "budget": "luxury",
+      "priceRange": "¥500-900/night",
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.5858
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Garden setting",
+        "Traditional style",
+        "Good breakfast"
+      ],
+      "bookingTips": "Good balance of luxury and value."
+    },
+    {
+      "name": "泉州酒店式公寓",
+      "nameEn": "Quanzhou Serviced Apartments",
+      "budget": "mid-range",
+      "priceRange": "¥300-600/night",
+      "address": "Fengze District",
+      "coordinates": {
+        "lat": 24.8942,
+        "lng": 118.6058
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Kitchen",
+        "Spacious rooms",
+        "Family-friendly"
+      ],
+      "bookingTips": "Best for families and long stays."
+    },
+    {
+      "name": "汉庭酒店泉州文化中心",
+      "nameEn": "Hanting Quanzhou Culture Center",
+      "budget": "budget",
+      "priceRange": "¥120-250/night",
+      "address": "Cultural Center Area",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.6008
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Clean",
+        "Affordable",
+        "Near museums"
+      ],
+      "bookingTips": "Best budget option near cultural attractions."
+    },
+    {
+      "name": "全季酒店泉州开元寺",
+      "nameEn": "Ji Hotel Quanzhou Kaiyuan",
+      "budget": "mid-range",
+      "priceRange": "¥250-450/night",
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9042,
+        "lng": 118.5988
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Modern",
+        "Good location",
+        "Consistent quality"
+      ],
+      "bookingTips": "Reliable mid-range chain."
+    },
+    {
+      "name": "石狮国际酒店",
+      "nameEn": "Shishi International Hotel",
+      "budget": "luxury",
+      "priceRange": "¥500-1000/night",
+      "address": "石狮市 Shishi",
+      "coordinates": {
+        "lat": 24.8142,
+        "lng": 118.7258
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near coast",
+        "Business facilities",
+        "Sea views"
+      ],
+      "bookingTips": "Best for Shishi exploration."
+    },
+    {
+      "name": "晋江荣誉酒店",
+      "nameEn": "Jinjiang Honor Hotel",
+      "budget": "luxury",
+      "priceRange": "¥450-850/night",
+      "address": "Jinjiang District",
+      "coordinates": {
+        "lat": 24.8242,
+        "lng": 118.5808
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Large pool",
+        "Spa",
+        "Conference facilities"
+      ],
+      "bookingTips": "Good for resort-style stays."
+    },
+    {
+      "name": "如家精选泉州西湖",
+      "nameEn": "Home Inn Plus Quanzhou West Lake",
+      "budget": "mid-range",
+      "priceRange": "¥200-380/night",
+      "address": "West Lake Area",
+      "coordinates": {
+        "lat": 24.9242,
+        "lng": 118.5908
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near West Lake",
+        "Quiet area",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best location for nature lovers."
+    },
+    {
+      "name": "7天连锁酒店泉州南俊巷",
+      "nameEn": "7 Days Inn Quanzhou Nanjun Lane",
+      "budget": "budget",
+      "priceRange": "¥100-200/night",
+      "address": "Nanjun Lane, Licheng District",
+      "coordinates": {
+        "lat": 24.9062,
+        "lng": 118.5928
+      },
+      "rating": 4.0,
+      "highlights": [
+        "Very cheap",
+        "Central",
+        "Basic but clean"
+      ],
+      "bookingTips": "Ultra-budget option."
+    },
+    {
+      "name": "泉州迎宾馆",
+      "nameEn": "Quanzhou Guest Hotel",
+      "budget": "luxury",
+      "priceRange": "¥600-1100/night",
+      "address": "Licheng District",
+      "coordinates": {
+        "lat": 24.9142,
+        "lng": 118.5888
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Government-run",
+        "Beautiful gardens",
+        "Traditional architecture"
+      ],
+      "bookingTips": "Experience local government hospitality."
+    },
+    {
+      "name": "晋江爱乐酒店",
+      "nameEn": "Jinjiang Aile Hotel",
+      "budget": "mid-range",
+      "priceRange": "¥280-500/night",
+      "address": "Jinjiang District",
+      "coordinates": {
+        "lat": 24.8342,
+        "lng": 118.5708
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Karaoke",
+        "Restaurant",
+        "Good value"
+      ],
+      "bookingTips": "Good for nightlife enthusiasts."
+    },
+    {
+      "name": "泉州民宿体验",
+      "nameEn": "Quanzhou Homestay Experience",
+      "budget": "mid-range",
+      "priceRange": "¥200-450/night",
+      "address": "Historic District",
+      "coordinates": {
+        "lat": 24.9022,
+        "lng": 118.5908
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Traditional house",
+        "Local experience",
+        "Personal hosts"
+      ],
+      "bookingTips": "Best for cultural immersion."
+    },
+    {
+      "name": "惠安海边度假屋",
+      "nameEn": "Hui'an Beach Resort",
+      "budget": "mid-range",
+      "priceRange": "¥350-700/night",
+      "address": "惠安 Hui'an County",
+      "coordinates": {
+        "lat": 24.8742,
+        "lng": 118.9058
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Beachfront",
+        "Ocean views",
+        "Fresh seafood"
+      ],
+      "bookingTips": "Perfect for beach vacation."
+    },
+    {
+      "name": "泉州铂尔曼酒店",
+      "nameEn": "Pullman Quanzhou",
+      "budget": "luxury",
+      "priceRange": "¥700-1300/night",
+      "address": "Financial District",
+      "coordinates": {
+        "lat": 24.9242,
+        "lng": 118.5858
+      },
+      "rating": 4.6,
+      "highlights": [
+        "International brand",
+        "Rooftop bar",
+        "Gym and pool"
+      ],
+      "bookingTips": "Best international luxury option."
+    },
+    {
+      "name": "泉州航空酒店",
+      "nameEn": "Quanzhou Aviation Hotel",
+      "budget": "mid-range",
+      "priceRange": "¥300-550/night",
+      "address": "Near Airport",
+      "coordinates": {
+        "lat": 24.8042,
+        "lng": 118.6758
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Airport shuttle",
+        "Free parking",
+        "Early flight convenient"
+      ],
+      "bookingTips": "Best for early/late flights."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Quanzhou",
+      "howToUse": [
+        "Download before arrival"
+      ],
+      "tips": [
+        "Works at all merchants"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": [
+        "WeChat required"
+      ],
+      "tips": [
+        "Set to English mode"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at traditional markets",
+      "howToUse": [
+        "ATM everywhere"
+      ],
+      "tips": [
+        "Keep 200¥ for markets"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "history",
+      "title": "Maritime Silk Road",
+      "content": "Quanzhou was major port on Maritime Silk Road, visited by Marco Polo who called it Zayton. Diverse foreign religions settled here including Islam, Christianity, Hinduism.",
+      "importance": "high"
+    },
+    {
+      "category": "religion",
+      "title": "Religious Diversity",
+      "content": "Quanzhou has unique religious diversity - Buddhist temples, Islamic mosques, Christian churches, and Hindu ruins coexist on Tumen Street.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Minnan Cuisine",
+      "content": "Quanzhou is heart of Minnan cuisine known for seafood, ginger duck, rice dumplings, and unique snacks like 土笋冻 (tusun jelly).",
+      "importance": "high"
+    },
+    {
+      "category": "crafts",
+      "title": "Stone Carving",
+      "content": "Quanzhou and nearby Hui'an are famous for stone carving tradition, visible at Chongwu Ancient City.",
+      "importance": "medium"
+    },
+    {
+      "category": "martial-arts",
+      "title": "Southern Shaolin",
+      "content": "Southern Shaolin Temple at Qingyuan Mountain is birthplace of many Chinese martial arts styles including Hung Gar boxing.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Overseas Chinese Heritage",
+      "content": "Quanzhou is major overseas Chinese hometown. Many Chinese diaspora from Southeast Asia trace ancestry here. The华侨文化 is strong.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Minnan Architectural Style",
+      "content": "Minnan houses feature red brick, white walls, and ornate roof ridges with upturned corners. The闽南建筑风格 is distinct from other Chinese regional styles.",
+      "importance": "medium"
+    },
+    {
+      "category": "folk",
+      "title": "Mazu Worship",
+      "content": "Quanzhou is important center for Mazu worship, the sea goddess. Tianhou Palace is one of the most important Mazu temples in the world.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Tea Culture",
+      "content": "Fujian is famous for tea, and Quanzhou has its own tea traditions. Visit tea houses on 清源山 to experience mountain tea culture.",
+      "importance": "medium"
+    },
+    {
+      "category": "art",
+      "title": "Nanyin Music",
+      "content": "Nanyin (南音) is ancient music from Quanzhou, recognized as intangible cultural heritage. Listen to performances at Quanzhou Puppet Show.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Minnan Dialect",
+      "content": "Quanzhou speakers use Minnanhua (闽南话), a distinct dialect group. It's mutually intelligible with Taiwanese and Southeast Asian Chinese communities.",
+      "importance": "high"
+    },
+    {
+      "category": "folk",
+      "title": "惠安女 Culture",
+      "content": "Hui'an women are famous for their colorful costumes, including直达髻 headpieces and short上衣. They traditionally handle fishing while men work abroad.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Seafood Culture",
+      "content": "Being a coastal city, seafood is central to Quanzhou cuisine. Fresh fish, crab, shrimp, and shellfish appear in most dishes.",
+      "importance": "high"
+    },
+    {
+      "category": "history",
+      "title": "Zheng He Connections",
+      "content": "Zheng He, the famous Ming Dynasty admiral, was associated with Quanzhou. His maritime legacy is celebrated at several historical sites.",
+      "importance": "medium"
+    },
+    {
+      "category": "religion",
+      "title": "Buddhist Heritage",
+      "content": "Quanzhou has been Buddhist center for over 1000 years. Kaiyuan Temple and Qingyuan Mountain are important Buddhist sites.",
+      "importance": "medium"
+    },
+    {
+      "category": "crafts",
+      "title": "Dehua Porcelain",
+      "content": "Dehua County near Quanzhou produces world-famous white porcelain, called 'white gold' in ancient times. Visit museums and factories.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Street Food Culture",
+      "content": "Quanzhou has vibrant night markets and street food culture. Try local snacks at路边摊 and传统小贩 for authentic flavors.",
+      "importance": "high"
+    },
+    {
+      "category": "folk",
+      "title": "Traditional Festivals",
+      "content": "Quanzhou celebrates traditional festivals with unique customs including Mazu birthday, 中秋博饼, and various temple fairs.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "泉州急救中心",
+      "nameEn": "Quanzhou Emergency Center",
+      "phone": "120"
+    },
+    {
+      "type": "police",
+      "name": "泉州市公安局",
+      "nameEn": "Quanzhou Public Security Bureau",
+      "phone": "110"
+    },
+    {
+      "type": "hospital",
+      "name": "福建医科大学附属第二医院",
+      "nameEn": "Second Affiliated Hospital of Fujian Medical University",
+      "phone": "+86 595 2275 0141",
+      "address": "Licheng District"
+    },
+    {
+      "type": "fire",
+      "name": "泉州消防",
+      "nameEn": "Quanzhou Fire Department",
+      "phone": "119"
+    },
+    {
+      "type": "tourism",
+      "name": "泉州旅游投诉热线",
+      "nameEn": "Quanzhou Tourism Complaint Hotline",
+      "phone": "0595-22132188"
+    },
+    {
+      "type": "hospital",
+      "name": "泉州市第一医院",
+      "nameEn": "Quanzhou First Hospital",
+      "phone": "+86 595 2227 7001",
+      "address": "Licheng District"
+    },
+    {
+      "type": "police",
+      "name": "晋江公安局",
+      "nameEn": "Jinjiang Public Security Bureau",
+      "phone": "0595-85681100",
+      "address": "Jinjiang District"
+    },
+    {
+      "type": "police",
+      "name": "石狮公安局",
+      "nameEn": "Shishi Public Security Bureau",
+      "phone": "0595-88719110",
+      "address": "Shishi City"
+    },
+    {
+      "type": "medical",
+      "name": "泉州市中医院",
+      "nameEn": "Quanzhou Traditional Chinese Medicine Hospital",
+      "phone": "+86 595 2278 5041",
+      "address": "Licheng District"
+    },
+    {
+      "type": "traffic",
+      "name": "泉州交通事故报警",
+      "nameEn": "Quanzhou Traffic Accident",
+      "phone": "122"
+    },
+    {
+      "type": "consumer",
+      "name": "消费者投诉热线",
+      "nameEn": "Consumer Rights Hotline",
+      "phone": "12315"
+    },
+    {
+      "type": "foreign",
+      "name": "福建省外事办公室",
+      "nameEn": "Fujian Foreign Affairs Office",
+      "phone": "+86 591 87841370",
+      "address": "Fuzhou (nearby)"
+    },
+    {
+      "type": "embassy",
+      "name": "中国外交部全球领事保护",
+      "nameEn": "China Ministry of Foreign Affairs Consular Protection",
+      "phone": "+86 10 12308",
+      "address": "Beijing"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Minnan dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}
