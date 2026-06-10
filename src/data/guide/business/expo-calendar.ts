@@ -46,7 +46,7 @@ export const EXPO_CALENDAR: Expo[] = [
     description:
       "The biggest furniture trade fair in Asia, showcasing residential and office furniture.",
     descriptionCn: "亚洲最大的家具行业盛会，展示民用家具、办公家具等。",
-    website: "https://www.ciff.sh.cn",
+    website: "https://www.ciff-gz.com",
     category: "furniture",
   },
   {
@@ -60,7 +60,7 @@ export const EXPO_CALENDAR: Expo[] = [
     description:
       "One of the most influential PCB exhibitions globally, covering the entire electronic circuit supply chain.",
     descriptionCn: "全球最具影响力的PCB行业展会之一，覆盖整个电子电路产业链。",
-    website: "https://www.ciexpo.com",
+    website: "https://www.intertextile.com.cn",
     category: "electronics",
   },
   {
@@ -73,7 +73,7 @@ export const EXPO_CALENDAR: Expo[] = [
     months: [4],
     description: "One of the top automotive exhibitions globally, held every two years in Beijing.",
     descriptionCn: "全球顶级汽车展会之一，每两年在北京举办一次。",
-    website: "https://www.autochina.com.cn",
+    website: "https://www.autochinashow.org",
     category: "automotive",
   },
   {
