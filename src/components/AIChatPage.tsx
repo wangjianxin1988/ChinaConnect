@@ -1,13 +1,32 @@
 /**
  * AIChatPage Component
- * Full-page AI chat interface for ChinaConnect
- * Sidebar with subscription status and comprehensive AI usage guide
+ * Premium AI chat interface for ChinaConnect
+ * Redesigned with hero section, feature cards, and professional layout
  */
 
 import type { SavedItinerary } from "@/lib/ai/types";
 import React, { useState, useCallback } from "react";
 import { AIChat } from "./ai/AIChat";
 import { SubscriptionCard } from "./subscription/SubscriptionCard";
+
+// ============================================
+// Feature Card Component
+// ============================================
+
+const FeatureCard: React.FC<{
+  icon: string;
+  title: string;
+  description: string;
+  gradient: string;
+}> = ({ icon, title, description, gradient }) => (
+  <div className={`relative group rounded-2xl p-[1px] ${gradient} hover:shadow-lg transition-all duration-300`}>
+    <div className="bg-white rounded-2xl p-5 h-full">
+      <div className="text-3xl mb-3">{icon}</div>
+      <h3 className="font-bold text-gray-900 text-sm mb-1.5">{title}</h3>
+      <p className="text-xs text-gray-500 leading-relaxed">{description}</p>
+    </div>
+  </div>
+);
 
 // ============================================
 // Accordion Section Component
@@ -88,6 +107,7 @@ export default function AIChatPage() {
   const [_savedItinerary, setSavedItinerary] = useState<SavedItinerary | null>(null);
   const [showItineraryPanel, setShowItineraryPanel] = useState(true);
   const [externalPrompt, setExternalPrompt] = useState<string | null>(null);
+  const [chatStarted, setChatStarted] = useState(false);
 
   const _handleSaveItinerary = useCallback((name: string) => {
     void name;
@@ -96,46 +116,135 @@ export default function AIChatPage() {
 
   const handleExamplePrompt = useCallback((prompt: string) => {
     setExternalPrompt(prompt);
+    setChatStarted(true);
   }, []);
 
   return (
     <div className="min-h-[calc(100vh-64px)] bg-gray-50">
-      {/* Page Header */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="container-custom py-5">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-900">AI Travel Assistant</h1>
-              <p className="text-gray-600 mt-1 text-sm md:text-base">
-                Get personalized travel advice for your China trip
+      {/* ===== Hero Section ===== */}
+      {!chatStarted && (
+        <div className="relative overflow-hidden">
+          {/* Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-purple-900 to-slate-900" />
+          
+          {/* Decorative Elements */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-purple-500/10 blur-3xl" />
+            <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-indigo-500/10 blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-blue-500/5 blur-3xl" />
+            {/* Grid pattern overlay */}
+            <div className="absolute inset-0 opacity-[0.03]" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+            }} />
+          </div>
+
+          <div className="relative container-custom py-16 md:py-24">
+            <div className="max-w-4xl mx-auto text-center">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-6">
+                <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+                <span className="text-white/90 text-xs font-medium tracking-wide uppercase">Powered by Advanced AI</span>
+              </div>
+
+              {/* Main Title */}
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1] tracking-tight">
+                ChinaConnect
+                <span className="block bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-300 bg-clip-text text-transparent">
+                  AI Travel Expert
+                </span>
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Your personal China travel intelligence. Get expert itinerary planning, 
+                real-time recommendations, and local insights — all powered by AI.
               </p>
-            </div>
-            <div className="hidden md:flex items-center gap-3">
-              <button
-                onClick={() => setShowItineraryPanel(!showItineraryPanel)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors text-sm font-medium ${
-                  showItineraryPanel
-                    ? "bg-blue-100 text-blue-700"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-                  />
-                </svg>
-                {showItineraryPanel ? "Hide Panel" : "Show Panel"}
-              </button>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <button
+                  onClick={() => {
+                    const chatEl = document.getElementById('ai-chat-input');
+                    if (chatEl) chatEl.focus();
+                  }}
+                  className="group relative px-8 py-3.5 bg-white rounded-xl font-semibold text-gray-900 shadow-xl shadow-black/20 hover:shadow-2xl hover:shadow-black/30 transition-all hover:-translate-y-0.5"
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                    Start Chatting — It's Free
+                  </span>
+                </button>
+                <div className="flex items-center gap-2 text-white/50 text-sm">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  No sign-up required &bull; Instant responses
+                </div>
+              </div>
+
+              {/* Feature Cards Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                <FeatureCard
+                  icon="🗺️"
+                  title="Smart Itineraries"
+                  description="AI-crafted day-by-day plans tailored to your interests, budget, and travel style."
+                  gradient="bg-gradient-to-br from-blue-400 to-indigo-500"
+                />
+                <FeatureCard
+                  icon="🍜"
+                  title="Food Discovery"
+                  description="Local restaurant gems, street food guides, and dining recommendations from real data."
+                  gradient="bg-gradient-to-br from-orange-400 to-red-500"
+                />
+                <FeatureCard
+                  icon="🔍"
+                  title="Real-time Intel"
+                  description="Live weather, opening hours, events, and transport updates from verified sources."
+                  gradient="bg-gradient-to-br from-emerald-400 to-teal-500"
+                />
+                <FeatureCard
+                  icon="🌏"
+                  title="Cultural Guide"
+                  description="Language tips, etiquette, payment setup, and everything you need to navigate China."
+                  gradient="bg-gradient-to-br from-purple-400 to-pink-500"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Main Layout */}
-      <div className="container-custom py-6">
+          {/* Bottom fade */}
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent" />
+        </div>
+      )}
+
+      {/* ===== Chat Section ===== */}
+      <div className={`container-custom ${chatStarted ? 'pt-4 pb-6' : 'py-6'}`}>
+        {/* Compact Header when chat started */}
+        {chatStarted && (
+          <div className="mb-4 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/25">
+                <span className="text-white text-lg">🤖</span>
+              </div>
+              <div>
+                <h1 className="text-lg font-bold text-gray-900">ChinaConnect AI</h1>
+                <p className="text-xs text-gray-500">Your Intelligent Travel Expert</p>
+              </div>
+            </div>
+            <button
+              onClick={() => setChatStarted(false)}
+              className="text-xs text-gray-400 hover:text-gray-600 transition-colors flex items-center gap-1"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              </svg>
+              Show features
+            </button>
+          </div>
+        )}
+
         <div className="flex gap-6">
           {/* Sidebar */}
           <div className="hidden lg:block w-72 flex-shrink-0">
@@ -170,15 +279,15 @@ export default function AIChatPage() {
                         </li>
                         <li className="flex items-start gap-1.5">
                           <span className="text-blue-500">•</span>
-                          <span>Restaurant & food recommendations</span>
+                          <span>Restaurant &amp; food recommendations</span>
                         </li>
                         <li className="flex items-start gap-1.5">
                           <span className="text-blue-500">•</span>
-                          <span>Transport & directions</span>
+                          <span>Transport &amp; directions</span>
                         </li>
                         <li className="flex items-start gap-1.5">
                           <span className="text-blue-500">•</span>
-                          <span>Local tips & practical info</span>
+                          <span>Local tips &amp; practical info</span>
                         </li>
                       </ul>
                     </div>
@@ -264,7 +373,7 @@ export default function AIChatPage() {
                     />
                     <CapabilityItem
                       icon="🍜"
-                      title="Food & Dining"
+                      title="Food &amp; Dining"
                       description="Restaurant recommendations with ratings, prices, dietary options, and local specialties you shouldn't miss."
                     />
                     <CapabilityItem
@@ -409,7 +518,7 @@ export default function AIChatPage() {
           <div className="flex-1 min-w-0">
             <div
               className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
-              style={{ height: "calc(100vh - 250px)", minHeight: "500px" }}
+              style={{ height: chatStarted ? "calc(100vh - 140px)" : "calc(100vh - 250px)", minHeight: "500px" }}
             >
               <AIChat
                 language="en"
