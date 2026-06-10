@@ -1,0 +1,3188 @@
+{
+  "slug": "lanzhou",
+  "name": "兰州",
+  "nameEn": "Lanzhou",
+  "country": "China",
+  "population": "4.35 million",
+  "coordinates": {
+    "lat": 36.0614,
+    "lng": 103.8343
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Lanzhou, capital of Gansu Province, sits at the edge of the Tibetan Plateau where the Yellow River flows through the city. Famous as the start of the ancient Silk Road, home to the legendary Lanzhou beef noodles, and gateway to Gansu's historic sites. The Yellow River bridges and waterfront walks make this a unique urban destination.",
+  "coverImage": "https://images.unsplash.com/photo-1641959163390-cc23125b33f6?w=1200&q=80",
+  "highlights": [
+    "Yellow River waterfront - Iconic iron bridge",
+    "Zhongshan Bridge - 1907 historic bridge",
+    "Lanzhou beef noodles - China's most famous noodles",
+    "Baita Mountain Park - Panoramic city views",
+    "Gansu Provincial Museum - Silk Road artifacts"
+  ],
+  "climate": {
+    "type": "Temperate continental",
+    "bestMonths": [
+      "April",
+      "May",
+      "June",
+      "September",
+      "October"
+    ],
+    "avgSummerTemp": "22°C (72°F)",
+    "avgWinterTemp": "-4°C (25°F)",
+    "tips": "Best in spring and fall for comfortable weather. Summers can be hot. Winters are cold but clear. Spring brings sandstorms from Gobi. Lanzhou beef noodles are best in early morning."
+  },
+  "attractions": [
+    {
+      "id": "zhongshan-bridge",
+      "name": "中山桥",
+      "nameEn": "Zhongshan Bridge",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1681693106399-82ab76561dd9?w=800&q=85",
+      "description": "Historic 1907 iron bridge crossing the Yellow River, iconic symbol of Lanzhou and engineering marvel of its era.",
+      "address": "Yellow River, Lanzhou",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Iron bridge",
+        "Yellow River views",
+        "Photo spot",
+        "Historic landmark"
+      ],
+      "tips": "Best at sunset for golden hour photos. Walk across for river views. The bridge is beautifully lit at night."
+    },
+    {
+      "id": "baita-mountain",
+      "name": "白塔山公园",
+      "nameEn": "Baita Mountain Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1699872074472-963846fca564?w=800&q=85",
+      "description": "Hilltop park with iconic White Pagoda, offering panoramic views of Lanzhou and the Yellow River winding through the city.",
+      "address": "Baita Mountain",
+      "coordinates": {
+        "lat": 36.0714,
+        "lng": 103.8443
+      },
+      "openingHours": "06:00-20:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "White Pagoda",
+        "Panoramic views",
+        "Yellow River",
+        "Gardens"
+      ],
+      "tips": "Take cable car up, walk down. The pagoda is beautiful at sunset. Combine with riverside walk."
+    },
+    {
+      "id": "gansu-museum",
+      "name": "甘肃省博物馆",
+      "nameEn": "Gansu Provincial Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1758092320433-502cc1d8f5c2?w=800&q=85",
+      "description": "Excellent museum showcasing Silk Road artifacts, ancient Buddhist sculptures, and Gansu's diverse cultural heritage.",
+      "address": "Xijin West Road",
+      "coordinates": {
+        "lat": 36.0214,
+        "lng": 103.7943
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Silk Road exhibits",
+        "Buddhist sculptures",
+        "Ancient pottery",
+        "Mummies"
+      ],
+      "tips": "Allow 2-3 hours. The Buddhist gallery is exceptional. Audio guides available. Combine with nearby Waterwheel Park."
+    },
+    {
+      "id": "waterwheel-park",
+      "name": "水车博览园",
+      "nameEn": "Waterwheel Park",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=85",
+      "description": "Open-air park displaying traditional waterwheels used for irrigation along the Yellow River, with sculptures and river views.",
+      "address": "East River Bank",
+      "coordinates": {
+        "lat": 36.0714,
+        "lng": 103.8543
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Waterwheels",
+        "Yellow River",
+        "Sculptures",
+        "Riverside walk"
+      ],
+      "tips": "Best near sunset. The waterwheels are photogenic. Combine with Yellow River boat ride."
+    },
+    {
+      "id": "xiguan",
+      "name": "西关清真寺",
+      "nameEn": "Xiguan Mosque",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1641959163879-ca2fcf8c7845?w=800&q=85",
+      "description": "Historic mosque with elegant Chinese-Islamic architecture, center of Lanzhou's Muslim community.",
+      "address": "Xiguan",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8243
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Islamic architecture",
+        "Minaret",
+        "Cultural center",
+        "Quiet atmosphere"
+      ],
+      "tips": "Modest dress required. Non-Muslims welcome outside prayer times. The architecture is beautiful."
+    },
+    {
+      "id": "five-spring",
+      "name": "五泉山公园",
+      "nameEn": "Five Spring Mountain Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=85",
+      "description": "Historic park with five springs, ancient temples, and forested hills offering escape from city bustle.",
+      "address": "Five Spring Mountain",
+      "coordinates": {
+        "lat": 36.0314,
+        "lng": 103.8143
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Five springs",
+        "Ancient temples",
+        "Forest trails",
+        "City views"
+      ],
+      "tips": "Good morning hike spot. The springs have interesting legends. Wear comfortable shoes for stone steps."
+    },
+    {
+      "id": "yellow-river",
+      "name": "黄河母亲河",
+      "nameEn": "Yellow River Mother Sculpture",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
+      "description": "Iconic sculpture of mother and child on Yellow River bank, symbol of Lanzhou and popular photo spot.",
+      "address": "South River Bank",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8443
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 min - 1 hour",
+      "highlights": [
+        "Mother sculpture",
+        "Yellow River",
+        "Photo spot",
+        "Waterfront"
+      ],
+      "tips": "Best at sunset with river. Walk along the riverside south. Combine with Waterwheel Park."
+    },
+    {
+      "id": "xian",
+      "name": "雁滩公园",
+      "nameEn": "Yantan Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1636772510141-8088c9e2009d?w=800&q=85",
+      "description": "Riverside park on former goose island with gardens, pavilions, and peaceful atmosphere.",
+      "address": "Yantan",
+      "coordinates": {
+        "lat": 36.0914,
+        "lng": 103.8643
+      },
+      "openingHours": "06:00-20:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Riverside gardens",
+        "Pavilions",
+        "Geese",
+        "Peaceful"
+      ],
+      "tips": "Good for morning tai chi. The island setting is unique. Less crowded than central areas."
+    },
+    {
+      "id": "dushan",
+      "name": "读本人山",
+      "nameEn": "Dushan",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1699872074353-4d3e173e59bf?w=800&q=85",
+      "description": "Mountain offering panoramic views of Lanzhou, Yellow River, and surrounding landscape from observation platform.",
+      "address": "Near City Center",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8543
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Panoramic views",
+        "Sunset views",
+        "City landmark",
+        "Observation deck"
+      ],
+      "tips": "Best at sunset for city views. Take cable car for easier climb. Bring camera for photos."
+    },
+    {
+      "id": "lamast",
+      "name": "兰州博物馆",
+      "nameEn": "Lanzhou Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85",
+      "description": "City museum showcasing Lanzhou's 2,000-year history, Silk Road trade, and Yellow River civilization.",
+      "address": "Nanguan",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Silk Road history",
+        "Ancient artifacts",
+        "Yellow River culture",
+        "Local history"
+      ],
+      "tips": "Good introduction to the city. Audio guides available. Combine with nearby shopping streets."
+    },
+    {
+      "id": "qingb",
+      "name": "青城古镇",
+      "nameEn": "Qingcheng Ancient Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
+      "description": "Historic ancient town with well-preserved Ming and Qing architecture, ancestral halls, and canals.",
+      "address": "Yuzhong County",
+      "coordinates": {
+        "lat": 36.3214,
+        "lng": 104.1343
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Ming architecture",
+        "Ancient streets",
+        "Canals",
+        "Ancestral halls"
+      ],
+      "tips": "Half-day trip from Lanzhou. The waterwheel irrigation system is unique. Try local sweet mulberries."
+    },
+    {
+      "id": "bingling",
+      "name": "炳灵寺石窟",
+      "nameEn": "Bingling Temple Caves",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=800&q=85",
+      "description": "UNESCO-listed cave complex with 200 Buddhist caves dating to Western Qin Dynasty, accessible by boat on Yellow River.",
+      "address": "Yongjing County",
+      "coordinates": {
+        "lat": 35.9514,
+        "lng": 103.0343
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "50¥ + boat",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Buddhist caves",
+        "Ancient sculptures",
+        "Yellow River boat",
+        "UNESCO site"
+      ],
+      "tips": "Take boat from Liujiaxia Dam. The cave complex is impressive. Full day trip from Lanzhou."
+    },
+    {
+      "id": "liujiaxia",
+      "name": "刘家峡",
+      "nameEn": "Liujiaxia",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85",
+      "description": "Yellow River canyon with stunning blue waters, ancient cave temples, and hydroelectric dam scenery.",
+      "address": "Yongjing County",
+      "coordinates": {
+        "lat": 35.9214,
+        "lng": 103.0343
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "Free (boat extra)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Blue river",
+        "Canyon views",
+        "Dam",
+        "Boat trip"
+      ],
+      "tips": "The color contrast between Yellow River and clear water is stunning. Combine with Bingling Caves."
+    },
+    {
+      "id": "taohe",
+      "name": "桃花岛",
+      "nameEn": "Peach Blossom Island",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=85",
+      "description": "River island with peach orchards, gardens, and pavilions, beautiful in spring when blossoms bloom.",
+      "address": "Yellow River",
+      "coordinates": {
+        "lat": 36.0414,
+        "lng": 103.8543
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "20¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Peach blossoms",
+        "River views",
+        "Gardens",
+        "Spring scenery"
+      ],
+      "tips": "Best in April-May for peach blossoms. The island is romantic. Boat rides available."
+    },
+    {
+      "id": "yimeng",
+      "name": "意门",
+      "nameEn": "Yimen Gate",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85",
+      "description": "Historic city gate and section of ancient Lanzhou city wall, symbol of the city's Ming Dynasty heritage.",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 min",
+      "highlights": [
+        "Ancient wall",
+        "City gate",
+        "Historic landmark",
+        "Photo spot"
+      ],
+      "tips": "Best lit at night. The ancient wall is well preserved. Good photo location near downtown."
+    },
+    {
+      "id": "xihu",
+      "name": "西湖公园",
+      "nameEn": "West Lake Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=85",
+      "description": "Urban park with lake, gardens, and teahouses, popular morning exercise spot for locals.",
+      "address": "West Lake",
+      "coordinates": {
+        "lat": 36.0414,
+        "lng": 103.8243
+      },
+      "openingHours": "06:00-20:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lake scenery",
+        "Morning tai chi",
+        "Teahouses",
+        "Local life"
+      ],
+      "tips": "Best in early morning for local exercise scenes. The park reflects local culture. Nice teahouse for rest."
+    },
+    {
+      "id": "mingshan",
+      "name": "金塔山",
+      "nameEn": "Mingshan Temple",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1770036491308-2fc128e47f20?w=800&q=85",
+      "description": "Historic Buddhist temple on hillside with ancient pagodas and peaceful monastery atmosphere.",
+      "address": "Mingshan",
+      "coordinates": {
+        "lat": 36.0314,
+        "lng": 103.8143
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "10¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Ancient temple",
+        "Pagodas",
+        "Mountain setting",
+        "Quiet"
+      ],
+      "tips": "Combine with Five Spring Mountain hike. The temple is peaceful. Morning visits recommended."
+    },
+    {
+      "id": "xinglong",
+      "name": "兴隆山",
+      "nameEn": "Xinglong Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85",
+      "description": "Nature reserve with alpine scenery, ancient trees, andDaoist temples, perfect for hiking.",
+      "address": "Yuzhong County",
+      "coordinates": {
+        "lat": 36.0314,
+        "lng": 104.0343
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Alpine scenery",
+        "Hiking trails",
+        "Ancient trees",
+        "Daoist temples"
+      ],
+      "tips": "Good for day hike from Lanzhou. Ancient pines are impressive. Bring water and snacks for trail."
+    },
+    {
+      "id": "yongjing",
+      "name": "黄河三峡",
+      "nameEn": "Yellow River Three Gorges",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=85",
+      "description": "Stunning river gorge with dramatic cliffs, clear waters, and ancient cave temples along the Yellow River.",
+      "address": "Yongjing County",
+      "coordinates": {
+        "lat": 35.9014,
+        "lng": 103.0343
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "Free (boat extra)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "River gorges",
+        "Cliff views",
+        "Boat trips",
+        "Cave temples"
+      ],
+      "tips": "Take boat through gorges. The canyon scenery rivals Yangtze. Best combined with Liujiaxia."
+    },
+    {
+      "id": "minzhu",
+      "name": "民族金街",
+      "nameEn": "Minzhu Street",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1764828308486-d43df41ce1e0?w=800&q=85",
+      "description": "Bustling pedestrian street with local snacks, shopping, and Lanzhou's traditional atmosphere.",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Local snacks",
+        "Shopping",
+        "Street life",
+        "Night atmosphere"
+      ],
+      "tips": "Best in evening for food stalls. Try Lanzhou beef noodles here. Great for souvenirs."
+    },
+    {
+      "id": "shuangqiao",
+      "name": "河口古镇",
+      "nameEn": "Hekou Ancient Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85",
+      "description": "Historic town at former Silk Road crossing with ancient streets, temples, and Yellow River views.",
+      "address": "Xigu District",
+      "coordinates": {
+        "lat": 36.1514,
+        "lng": 103.5343
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Silk Road history",
+        "Ancient streets",
+        "Yellow River",
+        "Quiet"
+      ],
+      "tips": "Less touristy than expected. The ancient temples are well preserved. Good for photography."
+    },
+    {
+      "id": "chty",
+      "name": "银滩湿地公园",
+      "nameEn": "Yintan Wetland Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=85",
+      "description": "Urban wetland with boardwalks, bird watching, and ecological education facilities.",
+      "address": "North Bank",
+      "coordinates": {
+        "lat": 36.0914,
+        "lng": 103.8243
+      },
+      "openingHours": "06:00-19:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Wetland scenery",
+        "Bird watching",
+        "Boardwalks",
+        "Nature"
+      ],
+      "tips": "Good for morning bird watching. The boardwalk is pleasant. Bring binoculars for birds."
+    },
+    {
+      "id": "yellow-river-mother",
+      "name": "黄河母亲雕塑",
+      "nameEn": "Yellow River Mother Sculpture",
+      "category": "landmark",
+      "description": "黄河岸边标志性雕塑，长6米、高2.6米。",
+      "address": "兰州市七里河区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "黄河文化",
+        "雕塑艺术"
+      ],
+      "tips": "兰州必打卡。",
+      "image": "https://images.unsplash.com/photo-1608360097628-e4ac588e4d14?w=800&q=85"
+    },
+    {
+      "id": "wuquan-mountain",
+      "name": "五泉山公园",
+      "nameEn": "Wuquan Mountain Park",
+      "category": "park",
+      "description": "因五眼清泉得名，有2000多年历史。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "五眼泉",
+        "古建筑"
+      ],
+      "tips": "兰州人休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1757138100328-c246b5795aa3?w=800&q=85"
+    },
+    {
+      "id": "xiguan-mosque",
+      "name": "西关清真大寺",
+      "nameEn": "Xiguan Grand Mosque",
+      "category": "temple",
+      "description": "兰州最大的清真寺，融合中阿建筑风格。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "伊斯兰建筑",
+        "宗教文化"
+      ],
+      "tips": "注意尊重宗教习俗。",
+      "image": "https://images.unsplash.com/photo-1740575894109-d1e556222427?w=800&q=85"
+    },
+    {
+      "id": "nanshan-mountain",
+      "name": "南山公园",
+      "nameEn": "Nanshan Park",
+      "category": "park",
+      "description": "兰州南部的绿色屏障，可俯瞰城市全景。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.85
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "城市全景",
+        "森林"
+      ],
+      "tips": "登高望远好去处。",
+      "image": "https://images.unsplash.com/photo-1541062880546-661f13176baf?w=800&q=85"
+    },
+    {
+      "id": "iron-bridge",
+      "name": "兰州黄河铁桥",
+      "nameEn": "Lanzhou Yellow River Iron Bridge",
+      "category": "landmark",
+      "description": "黄河上最早的铁桥，由德国人建造，已有百年历史。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "百年铁桥",
+        "黄河风光"
+      ],
+      "tips": "与中山桥同一座桥。",
+      "image": "https://images.unsplash.com/photo-1767467974699-8b5a6fed0cac?w=800&q=85"
+    },
+    {
+      "id": "hefei-tan",
+      "name": "河口古镇",
+      "nameEn": "Hekou Ancient Town",
+      "category": "street",
+      "description": "兰州西郊的古镇，保留了明清时期的建筑风格。",
+      "address": "兰州市西固区",
+      "coordinates": {
+        "lat": 36.08,
+        "lng": 103.62
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古镇",
+        "黄河渡口"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1751012325063-96ce9a663fdf?w=800&q=85"
+    },
+    {
+      "id": "yuzhong-xinglong",
+      "name": "兴隆山",
+      "nameEn": "Xinglong Mountain",
+      "category": "nature",
+      "description": "兰州南部的国家级自然保护区，有云龙桥等景点。",
+      "address": "兰州市榆中县",
+      "coordinates": {
+        "lat": 35.85,
+        "lng": 104.1
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "森林",
+        "云龙桥"
+      ],
+      "tips": "避暑好去处。",
+      "image": "https://images.unsplash.com/photo-1598538982693-2b16db7db0a0?w=800&q=85"
+    },
+    {
+      "id": "dunhuang-art",
+      "name": "敦煌艺术馆",
+      "nameEn": "Dunhuang Art Museum",
+      "category": "museum",
+      "description": "复制了敦煌莫高窟的经典洞窟，可近距离欣赏壁画。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.83
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "壁画复制",
+        "敦煌文化"
+      ],
+      "tips": "不去敦煌也能看莫高窟。",
+      "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800&q=85"
+    },
+    {
+      "id": "lanzhou-noodle-museum",
+      "name": "兰州牛肉面博物馆",
+      "nameEn": "Lanzhou Beef Noodle Museum",
+      "category": "museum",
+      "description": "展示兰州牛肉面的历史和制作工艺。",
+      "address": "兰州市七里河区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.78
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "牛肉面文化",
+        "制作工艺"
+      ],
+      "tips": "看完必吃一碗面。",
+      "image": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?w=800&q=85"
+    },
+    {
+      "id": "baitashan-temple",
+      "name": "白塔寺",
+      "nameEn": "Baita Temple",
+      "category": "temple",
+      "description": "始建于元代，白塔高17米，是兰州最古老的建筑之一。",
+      "address": "兰州市城关区白塔山",
+      "coordinates": {
+        "lat": 36.07,
+        "lng": 103.82
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "白塔",
+        "元代建筑"
+      ],
+      "tips": "与白塔山公园一体。",
+      "image": "https://images.unsplash.com/photo-1657639272958-273071f8bd03?w=800&q=85"
+    },
+    {
+      "id": "yanhe-river",
+      "name": "沿黄河风情线",
+      "nameEn": "Yellow River Style Line",
+      "category": "landmark",
+      "description": "兰州最著名的城市景观带，沿黄河两岸延伸40公里。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "黄河风情",
+        "城市景观"
+      ],
+      "tips": "散步骑行最佳路线。",
+      "image": "https://images.unsplash.com/photo-1752562466320-6e958c5dbd63?w=800&q=85"
+    },
+    {
+      "id": "xinqu",
+      "name": "兰州新区",
+      "nameEn": "Lanzhou New Area",
+      "category": "landmark",
+      "description": "兰州城市新中心，有现代化建筑和商业区。",
+      "address": "兰州市新区",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 103.6
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "现代建筑",
+        "城市新貌"
+      ],
+      "tips": "感受兰州发展。",
+      "image": "https://images.unsplash.com/photo-1695103043396-27ddf8ab6e3d?w=800&q=85"
+    },
+    {
+      "id": "chengguan-district",
+      "name": "张掖路步行街",
+      "nameEn": "Zhangye Road Pedestrian Street",
+      "category": "street",
+      "description": "兰州最繁华的商业步行街。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "品尝兰州小吃。",
+      "image": "https://images.unsplash.com/photo-1683701603830-213418968c9c?w=800&q=85"
+    },
+    {
+      "id": "baitashan-forest",
+      "name": "白塔山森林",
+      "nameEn": "Baitashan Forest",
+      "category": "nature",
+      "description": "兰州城内的天然氧吧，森林覆盖率高。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.07,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "森林",
+        "氧吧"
+      ],
+      "tips": "城市中的绿肺。",
+      "image": "https://images.unsplash.com/photo-1676385772553-dbab1f63721a?w=800&q=85"
+    },
+    {
+      "id": "kongtong-mountain",
+      "name": "仁寿山",
+      "nameEn": "Renshou Mountain",
+      "category": "nature",
+      "description": "兰州北部的风景区，有明代古建筑群。",
+      "address": "兰州市安宁区",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 103.72
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "古建筑",
+        "山林风光"
+      ],
+      "tips": "春季桃花最美。",
+      "image": "https://images.unsplash.com/photo-1682158833189-cb59b83a4d01?w=800&q=85"
+    },
+    {
+      "id": "anning-district",
+      "name": "安宁桃花会",
+      "nameEn": "Anning Peach Blossom Festival",
+      "category": "nature",
+      "description": "每年4月举办，万亩桃花盛开，是兰州春天最美景色。",
+      "address": "兰州市安宁区",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 103.72
+      },
+      "openingHours": "4月",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "桃花",
+        "春天美景"
+      ],
+      "tips": "4月中旬最佳。",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=85"
+    },
+    {
+      "id": "lz-bridge",
+      "name": "中山桥",
+      "nameEn": "Zhongshan Bridge",
+      "category": "landmark",
+      "description": "黄河上第一座铁桥。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "黄河铁桥"
+      ],
+      "tips": "兰州标志。",
+      "image": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=800&q=85"
+    },
+    {
+      "id": "lz-mountain",
+      "name": "白塔山",
+      "nameEn": "Baita Mountain",
+      "category": "nature",
+      "description": "可俯瞰兰州城区和黄河。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.07,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "白塔",
+        "黄河全景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1748078091485-c2de75bd76ab?w=800&q=85"
+    },
+    {
+      "id": "lz-mother",
+      "name": "黄河母亲",
+      "nameEn": "Yellow River Mother",
+      "category": "landmark",
+      "description": "黄河岸边标志性雕塑。",
+      "address": "兰州市七里河区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.78
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "黄河文化"
+      ],
+      "tips": "兰州必打卡。",
+      "image": "https://images.unsplash.com/photo-1556761915-3fd5f6f66407?w=800&q=85"
+    },
+    {
+      "id": "lz-museum",
+      "name": "甘肃省博物馆",
+      "nameEn": "Gansu Provincial Museum",
+      "category": "museum",
+      "description": "馆藏文物35万件，有马踏飞燕。",
+      "address": "兰州市七里河区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.78
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "马踏飞燕",
+        "丝路文物"
+      ],
+      "tips": "必看国宝。",
+      "image": "https://images.unsplash.com/photo-1759444088419-9c76a78f3bc1?w=800&q=85"
+    },
+    {
+      "id": "lz-waterwheel",
+      "name": "水车博览园",
+      "nameEn": "Waterwheel Park",
+      "category": "park",
+      "description": "展示兰州传统水车文化。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.83
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "水车",
+        "黄河文化"
+      ],
+      "tips": "了解兰州历史。",
+      "image": "https://images.unsplash.com/photo-1761549281560-1e5f3a0bd07b?w=800&q=85"
+    },
+    {
+      "id": "lz-mosque",
+      "name": "西关清真大寺",
+      "nameEn": "Xiguan Grand Mosque",
+      "category": "temple",
+      "description": "兰州最大的清真寺。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "伊斯兰建筑"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1701827911046-90c2f16dcb0a?w=800&q=85"
+    },
+    {
+      "id": "lz-five",
+      "name": "五泉山公园",
+      "nameEn": "Wuquan Mountain Park",
+      "category": "park",
+      "description": "因五眼清泉得名。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 103.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "五眼泉",
+        "古建筑"
+      ],
+      "tips": "兰州人休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1621949350827-b69af5bdef8c?w=800&q=85"
+    },
+    {
+      "id": "lz-noodle",
+      "name": "兰州牛肉面",
+      "nameEn": "Lanzhou Beef Noodle",
+      "category": "street",
+      "description": "兰州最著名的美食。",
+      "address": "兰州市",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均15元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "牛肉面"
+      ],
+      "tips": "必吃兰州牛肉面。",
+      "image": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=800&q=85"
+    },
+    {
+      "id": "lz-night",
+      "name": "兰州夜景",
+      "nameEn": "Lanzhou Night View",
+      "category": "landmark",
+      "description": "黄河两岸的夜景。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "黄河夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1604076913837-52ab5629fba9?w=800&q=85"
+    },
+    {
+      "id": "lz-street",
+      "name": "张掖路步行街",
+      "nameEn": "Zhangye Road",
+      "category": "street",
+      "description": "兰州最繁华的商业街。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.83
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "购物",
+        "美食"
+      ],
+      "tips": "购物好去处。",
+      "image": "https://images.unsplash.com/photo-1779234518724-218fde21cf9a?w=800&q=85"
+    },
+    {
+      "id": "lz-temple",
+      "name": "白衣寺",
+      "nameEn": "Baiyi Temple",
+      "category": "temple",
+      "description": "兰州古老的佛教寺院。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "古寺",
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1651717709382-3a9e243298e1?w=800&q=85"
+    },
+    {
+      "id": "lz-river",
+      "name": "黄河风情线",
+      "nameEn": "Yellow River Style Line",
+      "category": "landmark",
+      "description": "沿黄河两岸的城市景观带。",
+      "address": "兰州市城关区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 103.82
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "黄河风光",
+        "城市景观"
+      ],
+      "tips": "散步骑行。",
+      "image": "https://images.unsplash.com/photo-1651076242276-971b12872930?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "lanzhou-1",
+      "name": "兰州牛肉面",
+      "nameEn": "Lanzhou Beef Noodles",
+      "type": "local",
+      "cuisine": "Lanzhou Beef Noodles",
+      "avgPrice": 20,
+      "rating": 4.8,
+      "address": "Various Locations",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "06:00-14:00",
+      "description": "Legendary Lanzhou beef noodles - hand-pulled noodles in clear beef broth with white radish, the quintessential Lanzhou breakfast.",
+      "dishHighlights": [
+        "Beef noodles",
+        "Beef tendon",
+        "White radish",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "must-try",
+        "famous",
+        "breakfast"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-2",
+      "name": "马子禄牛肉面",
+      "nameEn": "Ma Zilu Lanzhou Beef Noodles",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Lanzhou Noodles",
+      "avgPrice": 30,
+      "rating": 4.7,
+      "address": "Nanguan",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "hours": "06:30-14:00",
+      "description": "Legendary beef noodle shop with 100+ year history, serving the city's finest hand-pulled noodles.",
+      "dishHighlights": [
+        "Signature beef noodles",
+        "Beef tendon",
+        "Secret broth recipe"
+      ],
+      "tags": [
+        "famous",
+        "local",
+        "history",
+        "must-try"
+      ],
+      "star": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-3",
+      "name": "黄河边烧烤",
+      "nameEn": "Yellow River BBQ",
+      "type": "local",
+      "cuisine": "BBQ",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "South River Bank",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8443
+      },
+      "hours": "17:00-03:00",
+      "description": "Riverside BBQ stalls with lamb skewers, cold beer, and Yellow River evening views.",
+      "dishHighlights": [
+        "Lamb skewers",
+        "Beef skewers",
+        "Cold beer"
+      ],
+      "tags": [
+        "local",
+        "bbq",
+        "night-market",
+        "riverside"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-4",
+      "name": "手抓羊肉",
+      "nameEn": "Hand-Grabbed Lamb",
+      "type": "local",
+      "cuisine": "Gansu Lamb",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Various Locations",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "10:00-22:00",
+      "description": "Traditional boiled lamb served with hands, tender and flavorful Gansu plateau lamb.",
+      "dishHighlights": [
+        "Hand-grabbed lamb",
+        "Lamb soup",
+        "Mongolian style"
+      ],
+      "tags": [
+        "local",
+        "lamb",
+        "traditional",
+        "plateau"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-5",
+      "name": "酿皮",
+      "nameEn": "Niangpi (Lanzhou Skin)",
+      "type": "local",
+      "cuisine": "Lanzhou Snacks",
+      "avgPrice": 15,
+      "rating": 4.5,
+      "address": "Night Markets",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "17:00-24:00",
+      "description": "Famous Lanzhou cold noodle skin with spicy sauce, refreshing street snack popular with locals.",
+      "dishHighlights": [
+        "Cold noodle skin",
+        "Spicy sauce",
+        "Vegetables"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "street-food",
+        "night-market"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-6",
+      "name": "羊肉泡馍",
+      "nameEn": "Lamb Flatbread Soup",
+      "type": "local",
+      "cuisine": "Gansu",
+      "avgPrice": 40,
+      "rating": 4.6,
+      "address": "Muslim Quarter",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "hours": "08:00-20:00",
+      "description": "Crispy flatbread pieces in rich lamb broth, served with lamb and herbs, filling Muslim dish.",
+      "dishHighlights": [
+        "Lamb broth",
+        "Flatbread pieces",
+        "Lamb slices"
+      ],
+      "tags": [
+        "local",
+        "muslim",
+        "filling",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-7",
+      "name": "灰豆子",
+      "nameEn": "Grey Bean Soup",
+      "type": "local",
+      "cuisine": "Lanzhou Desserts",
+      "avgPrice": 15,
+      "rating": 4.4,
+      "address": "Various Locations",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "全天",
+      "description": "Sweet grey bean soup with red dates, traditional Lanzhou dessert drink, unique flavor.",
+      "dishHighlights": [
+        "Grey bean soup",
+        "Red dates",
+        "Sweet taste"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "traditional",
+        "sweet"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-8",
+      "name": "热冬果",
+      "nameEn": "Hot Winter Fruit",
+      "type": "local",
+      "cuisine": "Lanzhou Desserts",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Night Markets",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "17:00-22:00",
+      "description": "Hot pear and ginger drink, traditional winter remedy sold by street vendors in cold months.",
+      "dishHighlights": [
+        "Hot pear drink",
+        "Ginger",
+        "Winter warmer"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "winter",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-9",
+      "name": "杏皮水",
+      "nameEn": "Apricot Peel Drink",
+      "type": "local",
+      "cuisine": "Gansu Drinks",
+      "avgPrice": 10,
+      "rating": 4.5,
+      "address": "Street Vendors",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "全天",
+      "description": "Sweet apricot drink made from dried apricot peels, refreshing local specialty, best on hot days.",
+      "dishHighlights": [
+        "Apricot drink",
+        "Sweet and sour",
+        "Refreshing"
+      ],
+      "tags": [
+        "local",
+        "drinks",
+        "refreshing",
+        "summer"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-10",
+      "name": "羊肉串",
+      "nameEn": "Lamb Skewers",
+      "type": "local",
+      "cuisine": "BBQ",
+      "avgPrice": 5,
+      "rating": 4.6,
+      "address": "Night Markets",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "17:00-03:00",
+      "description": "Lamb skewers grilled over charcoal, addictive street food found at every night market.",
+      "dishHighlights": [
+        "Lamb skewers",
+        "Charcoal grilled",
+        "Spicy version"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "bbq",
+        "night-market"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-11",
+      "name": "拉扎面",
+      "nameEn": "Lazha Noodles",
+      "type": "local",
+      "cuisine": "Gansu",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "East Side",
+      "coordinates": {
+        "lat": 36.0714,
+        "lng": 103.8543
+      },
+      "hours": "06:00-14:00",
+      "description": "Traditional wheat noodles in garlic vinegar sauce, unique Lanzhou breakfast with sour-spicy taste.",
+      "dishHighlights": [
+        "Wheat noodles",
+        "Garlic sauce",
+        "Vinegar"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "sour-spicy",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-12",
+      "name": "马大胡子",
+      "nameEn": "Ma Da Huzi",
+      "type": "local",
+      "cuisine": "Muslim Chinese",
+      "avgPrice": 60,
+      "rating": 4.6,
+      "address": "Donggang",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8543
+      },
+      "hours": "10:00-22:00",
+      "description": "Popular Muslim restaurant chain known for quality lamb dishes and authentic Islamic cuisine.",
+      "dishHighlights": [
+        "Lamb hotpot",
+        "Grilled lamb",
+        "Muslim cuisine"
+      ],
+      "tags": [
+        "local",
+        "muslim",
+        "chain",
+        "lamb"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-13",
+      "name": "牛肉拉面",
+      "nameEn": "Beef Pulled Noodles",
+      "type": "local",
+      "cuisine": "Lanzhou Noodles",
+      "avgPrice": 20,
+      "rating": 4.7,
+      "address": "Every Corner",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "06:00-15:00",
+      "description": "Every Lanzhou street has beef noodle shops - try different ones for comparison, each has unique broth flavor.",
+      "dishHighlights": [
+        "Hand-pulled noodles",
+        "Clear broth",
+        "White radish"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "variety"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-14",
+      "name": "金城第一汤",
+      "nameEn": "Golden City First Soup",
+      "type": "local",
+      "cuisine": "Lanzhou Beef Noodles",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "West Side",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8243
+      },
+      "hours": "06:00-14:00",
+      "description": "Renowned beef noodle restaurant with secret family recipe, locals line up before dawn for the first bowls.",
+      "dishHighlights": [
+        "Secret broth",
+        "Hand-pulled noodles",
+        "Beef tendon"
+      ],
+      "tags": [
+        "famous",
+        "local",
+        "morning",
+        "queue"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-15",
+      "name": "三泡台",
+      "nameEn": "San Pao Tai",
+      "type": "local",
+      "cuisine": "Gansu Tea",
+      "avgPrice": 20,
+      "rating": 4.4,
+      "address": "Teahouses",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "全天",
+      "description": "Traditional Gansu tea with goji berries, longan, and rock sugar in a covered cup, social drink.",
+      "dishHighlights": [
+        "Eight-treasure tea",
+        "Goji berries",
+        "Longan"
+      ],
+      "tags": [
+        "local",
+        "tea",
+        "traditional",
+        "social"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-16",
+      "name": "黄焖羊肉",
+      "nameEn": "Braised Lamb",
+      "type": "local",
+      "cuisine": "Gansu Lamb",
+      "avgPrice": 90,
+      "rating": 4.7,
+      "address": "Muslim Quarter",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "hours": "10:00-22:00",
+      "description": "Lamb braised with potatoes and peppers in rich sauce, hearty Gansu specialty, sharing dish.",
+      "dishHighlights": [
+        "Braised lamb",
+        "Potatoes",
+        "Rich sauce"
+      ],
+      "tags": [
+        "local",
+        "lamb",
+        "sharing",
+        "filling"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-17",
+      "name": "面片",
+      "nameEn": "Lanzhou Noodle Pieces",
+      "type": "local",
+      "cuisine": "Gansu",
+      "avgPrice": 30,
+      "rating": 4.5,
+      "address": "Various",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "10:00-22:00",
+      "description": "Hand-torn noodle pieces in vegetable or lamb soup, home-style Lanzhou comfort food.",
+      "dishHighlights": [
+        "Hand-torn noodles",
+        "Vegetable soup",
+        "Lamb version"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "soup",
+        "comfort"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-18",
+      "name": "马国礼",
+      "nameEn": "Ma Guoli",
+      "type": "local",
+      "cuisine": "Muslim",
+      "avgPrice": 70,
+      "rating": 4.8,
+      "address": "Xigu",
+      "coordinates": {
+        "lat": 36.1514,
+        "lng": 103.5343
+      },
+      "hours": "10:00-22:00",
+      "description": "Legendary Muslim restaurant with decades of history, known for exceptional lamb preparations.",
+      "dishHighlights": [
+        "Whole lamb banquet",
+        "Lamb specialties",
+        "Secret recipes"
+      ],
+      "tags": [
+        "famous",
+        "muslim",
+        "history",
+        "lamb"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-19",
+      "name": "鸡蛋糟",
+      "nameEn": "Egg and Rice Wine",
+      "type": "local",
+      "cuisine": "Gansu Desserts",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Street Vendors",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "全天",
+      "description": "Warm rice wine with egg, traditional winter drink in Lanzhou, sweet and warming.",
+      "dishHighlights": [
+        "Rice wine",
+        "Egg",
+        "Sweet"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "winter",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-20",
+      "name": "凉皮",
+      "nameEn": "Lanzhou Liangpi",
+      "type": "local",
+      "cuisine": "Lanzhou Snacks",
+      "avgPrice": 15,
+      "rating": 4.5,
+      "address": "Night Markets",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "17:00-24:00",
+      "description": "Cold rice noodles with spicy sauce, popular summer street snack throughout Lanzhou.",
+      "dishHighlights": [
+        "Cold noodles",
+        "Spicy sauce",
+        "Cucumber"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "cold",
+        "summer"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-21",
+      "name": "麻辣烫",
+      "nameEn": "Malatang",
+      "type": "local",
+      "cuisine": "Sichuan Style",
+      "avgPrice": 30,
+      "rating": 4.4,
+      "address": "Various",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "10:00-24:00",
+      "description": "Spicy hot pot in麻辣烫 style with various ingredients, popular casual dining choice.",
+      "dishHighlights": [
+        "Spicy broth",
+        "Various ingredients",
+        "Self-select"
+      ],
+      "tags": [
+        "local",
+        "spicy",
+        "casual",
+        "variety"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-22",
+      "name": "烤全羊",
+      "nameEn": "Whole Roasted Lamb",
+      "type": "fine",
+      "cuisine": "Gansu Lamb",
+      "avgPrice": 2000,
+      "rating": 4.9,
+      "address": "Resort Areas",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "By reservation",
+      "description": "Whole lamb roasted on spit, ceremonial dish for special occasions, requires advance order.",
+      "dishHighlights": [
+        "Whole lamb",
+        "Roasted on spit",
+        "Ceremonial"
+      ],
+      "tags": [
+        "special-occasion",
+        "ceremonial",
+        "premium",
+        "lamb"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-23",
+      "name": "甜胚子",
+      "nameEn": "Tian Pei Zi",
+      "type": "local",
+      "cuisine": "Gansu Desserts",
+      "avgPrice": 10,
+      "rating": 4.4,
+      "address": "Street Vendors",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "hours": "全天",
+      "description": "Sweet fermented barley, refreshing summer drink, unique Lanzhou flavor found at street stalls.",
+      "dishHighlights": [
+        "Fermented barley",
+        "Sweet",
+        "Refreshing"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "summer",
+        "refreshing"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-24",
+      "name": "大漠烤肉",
+      "nameEn": "Desert BBQ",
+      "type": "local",
+      "cuisine": "Gansu BBQ",
+      "avgPrice": 70,
+      "rating": 4.6,
+      "address": "North Side",
+      "coordinates": {
+        "lat": 36.0814,
+        "lng": 103.8243
+      },
+      "hours": "17:00-03:00",
+      "description": "Popular BBQ restaurant with desert-themed decor, serving quality lamb and beef skewers.",
+      "dishHighlights": [
+        "Lamb skewers",
+        "Beef skewers",
+        "Desert decor"
+      ],
+      "tags": [
+        "local",
+        "bbq",
+        "night-market",
+        "atmosphere"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-25",
+      "name": "老兰州奶茶",
+      "nameEn": "Old Lanzhou Milk Tea",
+      "type": "local",
+      "cuisine": "Gansu Drinks",
+      "avgPrice": 20,
+      "rating": 4.4,
+      "address": "Nanguan",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "hours": "10:00-22:00",
+      "description": "Traditional Lanzhou milk tea with yak butter and salt, authentic Tibetan-influenced drink.",
+      "dishHighlights": [
+        "Salt milk tea",
+        "Butter",
+        "Traditional"
+      ],
+      "tags": [
+        "local",
+        "tea",
+        "traditional",
+        "tibetan-style"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-26",
+      "name": "老兰州手抓羊肉",
+      "nameEn": "老兰州手抓羊肉 (手抓羊肉)",
+      "type": "street",
+      "cuisine": "手抓羊肉",
+      "avgPrice": 34,
+      "rating": 4.1,
+      "address": "兰州市市中心区美食街169号",
+      "coordinates": {
+        "lat": 36.0962,
+        "lng": 103.8553
+      },
+      "phone": "+86 010 51999565",
+      "hours": "09:00-21:00",
+      "description": "兰州本地人推荐的手抓羊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "手抓羊肉",
+        "牛肉面"
+      ],
+      "tags": [
+        "夜市",
+        "网红打卡",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-28",
+      "name": "老字号酿皮子",
+      "nameEn": "老字号酿皮子 (酿皮子)",
+      "type": "local",
+      "cuisine": "酿皮子",
+      "avgPrice": 105,
+      "rating": 4.8,
+      "address": "兰州市老城区美食街57号",
+      "coordinates": {
+        "lat": 36.0304,
+        "lng": 103.7901
+      },
+      "phone": "+86 010 97003046",
+      "hours": "10:00-22:00",
+      "description": "兰州本地人推荐的酿皮子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "灰豆子",
+        "手抓羊肉",
+        "牛肉面"
+      ],
+      "tags": [
+        "隐藏美食",
+        "社区老店",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-30",
+      "name": "街边灰豆子",
+      "nameEn": "街边灰豆子 (灰豆子)",
+      "type": "street",
+      "cuisine": "灰豆子",
+      "avgPrice": 44,
+      "rating": 4.7,
+      "address": "兰州市老城区美食街32号",
+      "coordinates": {
+        "lat": 36.0964,
+        "lng": 103.8671
+      },
+      "phone": "+86 010 83154445",
+      "hours": "09:00-21:00",
+      "description": "兰州本地人推荐的灰豆子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉面",
+        "灰豆子",
+        "手抓羊肉"
+      ],
+      "tags": [
+        "小吃",
+        "深夜美食",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-32",
+      "name": "巷子甜醅子",
+      "nameEn": "巷子甜醅子 (甜醅子)",
+      "type": "local",
+      "cuisine": "甜醅子",
+      "avgPrice": 39,
+      "rating": 4.2,
+      "address": "兰州市老城区美食街70号",
+      "coordinates": {
+        "lat": 36.0467,
+        "lng": 103.8729
+      },
+      "phone": "+86 010 87274267",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "兰州本地人推荐的甜醅子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "手抓羊肉",
+        "牛肉面",
+        "灰豆子"
+      ],
+      "tags": [
+        "排队王",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-34",
+      "name": "地道牛肉面",
+      "nameEn": "地道牛肉面 (牛肉面)",
+      "type": "local",
+      "cuisine": "牛肉面",
+      "avgPrice": 84,
+      "rating": 4.6,
+      "address": "兰州市市中心区美食街155号",
+      "coordinates": {
+        "lat": 36.0852,
+        "lng": 103.879
+      },
+      "phone": "+86 010 90719140",
+      "hours": "09:00-21:00",
+      "description": "兰州本地人推荐的牛肉面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "灰豆子",
+        "手抓羊肉",
+        "酿皮子"
+      ],
+      "tags": [
+        "性价比高",
+        "本地人爱去",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-36",
+      "name": "巷子手抓羊肉",
+      "nameEn": "巷子手抓羊肉 (手抓羊肉)",
+      "type": "local",
+      "cuisine": "手抓羊肉",
+      "avgPrice": 33,
+      "rating": 4.8,
+      "address": "兰州市老城区美食街119号",
+      "coordinates": {
+        "lat": 36.0601,
+        "lng": 103.8544
+      },
+      "phone": "+86 010 50906907",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "兰州本地人推荐的手抓羊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酿皮子",
+        "灰豆子",
+        "甜醅子"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-38",
+      "name": "巷子手抓羊肉",
+      "nameEn": "巷子手抓羊肉 (手抓羊肉)",
+      "type": "local",
+      "cuisine": "手抓羊肉",
+      "avgPrice": 140,
+      "rating": 4.3,
+      "address": "兰州市新城区美食街110号",
+      "coordinates": {
+        "lat": 36.0327,
+        "lng": 103.8506
+      },
+      "phone": "+86 010 65949262",
+      "hours": "17:00-02:00",
+      "description": "兰州本地人推荐的手抓羊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酿皮子",
+        "灰豆子",
+        "甜醅子"
+      ],
+      "tags": [
+        "性价比高",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-40",
+      "name": "阿婆牛肉面",
+      "nameEn": "阿婆牛肉面 (牛肉面)",
+      "type": "local",
+      "cuisine": "牛肉面",
+      "avgPrice": 32,
+      "rating": 4.1,
+      "address": "兰州市市中心区美食街63号",
+      "coordinates": {
+        "lat": 36.0696,
+        "lng": 103.8485
+      },
+      "phone": "+86 010 56441184",
+      "hours": "17:00-02:00",
+      "description": "兰州本地人推荐的牛肉面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉面",
+        "甜醅子",
+        "手抓羊肉"
+      ],
+      "tags": [
+        "社区老店",
+        "隐藏美食",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-42",
+      "name": "巷子手抓羊肉",
+      "nameEn": "巷子手抓羊肉 (手抓羊肉)",
+      "type": "street",
+      "cuisine": "手抓羊肉",
+      "avgPrice": 38,
+      "rating": 4.1,
+      "address": "兰州市新城区美食街63号",
+      "coordinates": {
+        "lat": 36.1102,
+        "lng": 103.8108
+      },
+      "phone": "+86 010 18942909",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "兰州本地人推荐的手抓羊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "牛肉面",
+        "手抓羊肉"
+      ],
+      "tags": [
+        "小吃",
+        "路边摊",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-44",
+      "name": "街边牛肉面",
+      "nameEn": "街边牛肉面 (牛肉面)",
+      "type": "local",
+      "cuisine": "牛肉面",
+      "avgPrice": 87,
+      "rating": 4.5,
+      "address": "兰州市新城区美食街199号",
+      "coordinates": {
+        "lat": 36.0939,
+        "lng": 103.8009
+      },
+      "phone": "+86 010 88554463",
+      "hours": "09:00-21:00",
+      "description": "兰州本地人推荐的牛肉面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "牛肉面",
+        "手抓羊肉",
+        "灰豆子"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-46",
+      "name": "兰州味甜醅子",
+      "nameEn": "兰州味甜醅子 (甜醅子)",
+      "type": "local",
+      "cuisine": "甜醅子",
+      "avgPrice": 36,
+      "rating": 4.5,
+      "address": "兰州市市中心区美食街73号",
+      "coordinates": {
+        "lat": 36.0436,
+        "lng": 103.8556
+      },
+      "phone": "+86 010 99639982",
+      "hours": "17:00-02:00",
+      "description": "兰州本地人推荐的甜醅子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "手抓羊肉",
+        "灰豆子",
+        "牛肉面"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-48",
+      "name": "兰州味灰豆子",
+      "nameEn": "兰州味灰豆子 (灰豆子)",
+      "type": "local",
+      "cuisine": "灰豆子",
+      "avgPrice": 74,
+      "rating": 4.8,
+      "address": "兰州市新城区美食街131号",
+      "coordinates": {
+        "lat": 36.0491,
+        "lng": 103.8633
+      },
+      "phone": "+86 010 47785026",
+      "hours": "17:00-02:00",
+      "description": "兰州本地人推荐的灰豆子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "酿皮子",
+        "牛肉面"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-50",
+      "name": "正宗酿皮子",
+      "nameEn": "正宗酿皮子 (酿皮子)",
+      "type": "cafe",
+      "cuisine": "酿皮子",
+      "avgPrice": 43,
+      "rating": 4.8,
+      "address": "兰州市市中心区美食街82号",
+      "coordinates": {
+        "lat": 36.0254,
+        "lng": 103.8082
+      },
+      "phone": "+86 010 17004549",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "兰州本地人推荐的酿皮子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "手抓羊肉",
+        "甜醅子",
+        "牛肉面"
+      ],
+      "tags": [
+        "安静",
+        "下午茶",
+        "文艺"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-52",
+      "name": "阿婆酿皮子",
+      "nameEn": "阿婆酿皮子 (酿皮子)",
+      "type": "cafe",
+      "cuisine": "酿皮子",
+      "avgPrice": 40,
+      "rating": 4.4,
+      "address": "兰州市新城区美食街150号",
+      "coordinates": {
+        "lat": 36.0422,
+        "lng": 103.8334
+      },
+      "phone": "+86 010 20544674",
+      "hours": "06:00-14:00",
+      "description": "兰州本地人推荐的酿皮子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "酿皮子",
+        "灰豆子"
+      ],
+      "tags": [
+        "文艺",
+        "安静",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-54",
+      "name": "传统牛肉面",
+      "nameEn": "传统牛肉面 (牛肉面)",
+      "type": "local",
+      "cuisine": "牛肉面",
+      "avgPrice": 102,
+      "rating": 4.7,
+      "address": "兰州市新城区美食街139号",
+      "coordinates": {
+        "lat": 36.0352,
+        "lng": 103.7978
+      },
+      "phone": "+86 010 34753979",
+      "hours": "06:00-14:00",
+      "description": "兰州本地人推荐的牛肉面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酿皮子",
+        "手抓羊肉",
+        "牛肉面"
+      ],
+      "tags": [
+        "社区老店",
+        "本地人爱去",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-56",
+      "name": "老字号牛肉面",
+      "nameEn": "老字号牛肉面 (牛肉面)",
+      "type": "local",
+      "cuisine": "牛肉面",
+      "avgPrice": 60,
+      "rating": 4.0,
+      "address": "兰州市老城区美食街185号",
+      "coordinates": {
+        "lat": 36.0843,
+        "lng": 103.8779
+      },
+      "phone": "+86 010 46924426",
+      "hours": "10:00-22:00",
+      "description": "兰州本地人推荐的牛肉面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "灰豆子",
+        "牛肉面"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-58",
+      "name": "兰州味灰豆子",
+      "nameEn": "兰州味灰豆子 (灰豆子)",
+      "type": "local",
+      "cuisine": "灰豆子",
+      "avgPrice": 51,
+      "rating": 4.6,
+      "address": "兰州市市中心区美食街85号",
+      "coordinates": {
+        "lat": 36.0636,
+        "lng": 103.7935
+      },
+      "phone": "+86 010 71773330",
+      "hours": "10:00-22:00",
+      "description": "兰州本地人推荐的灰豆子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酿皮子",
+        "手抓羊肉",
+        "牛肉面"
+      ],
+      "tags": [
+        "性价比高",
+        "隐藏美食",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-60",
+      "name": "老街灰豆子",
+      "nameEn": "老街灰豆子 (灰豆子)",
+      "type": "local",
+      "cuisine": "灰豆子",
+      "avgPrice": 117,
+      "rating": 4.3,
+      "address": "兰州市市中心区美食街58号",
+      "coordinates": {
+        "lat": 36.0775,
+        "lng": 103.8617
+      },
+      "phone": "+86 010 54287184",
+      "hours": "17:00-02:00",
+      "description": "兰州本地人推荐的灰豆子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "灰豆子",
+        "牛肉面",
+        "甜醅子"
+      ],
+      "tags": [
+        "社区老店",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-62",
+      "name": "地道牛肉面",
+      "nameEn": "地道牛肉面 (牛肉面)",
+      "type": "local",
+      "cuisine": "牛肉面",
+      "avgPrice": 70,
+      "rating": 4.1,
+      "address": "兰州市老城区美食街111号",
+      "coordinates": {
+        "lat": 36.0679,
+        "lng": 103.8167
+      },
+      "phone": "+86 010 26185805",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "兰州本地人推荐的牛肉面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "灰豆子",
+        "酿皮子",
+        "牛肉面"
+      ],
+      "tags": [
+        "本地人爱去",
+        "老字号",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-64",
+      "name": "老街酿皮子",
+      "nameEn": "老街酿皮子 (酿皮子)",
+      "type": "local",
+      "cuisine": "酿皮子",
+      "avgPrice": 122,
+      "rating": 4.2,
+      "address": "兰州市市中心区美食街13号",
+      "coordinates": {
+        "lat": 36.062,
+        "lng": 103.8079
+      },
+      "phone": "+86 010 68363571",
+      "hours": "09:00-21:00",
+      "description": "兰州本地人推荐的酿皮子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "灰豆子",
+        "酿皮子"
+      ],
+      "tags": [
+        "家常菜",
+        "隐藏美食",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-66",
+      "name": "老街灰豆子",
+      "nameEn": "老街灰豆子 (灰豆子)",
+      "type": "cafe",
+      "cuisine": "灰豆子",
+      "avgPrice": 60,
+      "rating": 4.8,
+      "address": "兰州市老城区美食街159号",
+      "coordinates": {
+        "lat": 36.0655,
+        "lng": 103.8112
+      },
+      "phone": "+86 010 74482835",
+      "hours": "17:00-02:00",
+      "description": "兰州本地人推荐的灰豆子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酿皮子",
+        "牛肉面",
+        "灰豆子"
+      ],
+      "tags": [
+        "下午茶",
+        "咖啡",
+        "安静"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-68",
+      "name": "阿婆甜醅子",
+      "nameEn": "阿婆甜醅子 (甜醅子)",
+      "type": "street",
+      "cuisine": "甜醅子",
+      "avgPrice": 33,
+      "rating": 4.0,
+      "address": "兰州市市中心区美食街167号",
+      "coordinates": {
+        "lat": 36.0928,
+        "lng": 103.7905
+      },
+      "phone": "+86 010 64315185",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "兰州本地人推荐的甜醅子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "酿皮子",
+        "手抓羊肉"
+      ],
+      "tags": [
+        "路边摊",
+        "深夜美食",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-70",
+      "name": "老字号牛肉面",
+      "nameEn": "老字号牛肉面 (牛肉面)",
+      "type": "street",
+      "cuisine": "牛肉面",
+      "avgPrice": 10,
+      "rating": 4.5,
+      "address": "兰州市老城区美食街88号",
+      "coordinates": {
+        "lat": 36.0546,
+        "lng": 103.8097
+      },
+      "phone": "+86 010 95317791",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "兰州本地人推荐的牛肉面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "手抓羊肉",
+        "酿皮子"
+      ],
+      "tags": [
+        "网红打卡",
+        "路边摊",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-72",
+      "name": "老字号甜醅子",
+      "nameEn": "老字号甜醅子 (甜醅子)",
+      "type": "local",
+      "cuisine": "甜醅子",
+      "avgPrice": 35,
+      "rating": 4.6,
+      "address": "兰州市市中心区美食街127号",
+      "coordinates": {
+        "lat": 36.0395,
+        "lng": 103.8237
+      },
+      "phone": "+86 010 76472357",
+      "hours": "09:00-21:00",
+      "description": "兰州本地人推荐的甜醅子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "手抓羊肉",
+        "酿皮子",
+        "甜醅子"
+      ],
+      "tags": [
+        "本地人爱去",
+        "排队王",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "lanzhou-74",
+      "name": "阿婆灰豆子",
+      "nameEn": "阿婆灰豆子 (灰豆子)",
+      "type": "local",
+      "cuisine": "灰豆子",
+      "avgPrice": 106,
+      "rating": 4.6,
+      "address": "兰州市老城区美食街109号",
+      "coordinates": {
+        "lat": 36.0585,
+        "lng": 103.8143
+      },
+      "phone": "+86 010 10886432",
+      "hours": "10:00-22:00",
+      "description": "兰州本地人推荐的灰豆子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "甜醅子",
+        "牛肉面",
+        "酿皮子"
+      ],
+      "tags": [
+        "排队王",
+        "性价比高",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Lanzhou Zhongchuan Airport (LHW)",
+        "duration": "2-4 hours",
+        "price": "600-1800¥",
+        "frequency": "Daily flights from major cities",
+        "tips": "Airport 70km from city. Airport bus (30¥) or high-speed train (25¥) to city. Good connections."
+      },
+      {
+        "type": "train",
+        "from": "Beijing (11h), Shanghai (14h), Xian (3h)",
+        "to": "Lanzhou Railway Station / Lanzhou West Station",
+        "duration": "3-14 hours",
+        "price": "200-900¥",
+        "frequency": "Multiple daily trains including high-speed",
+        "tips": "Lanzhou West for high-speed trains. Regular trains at main station. Both have metro connections."
+      }
+    ],
+    "local": {
+      "metro": [
+        "Metro Line 1 operational",
+        "Line 2 under construction",
+        "Connects stations and airport"
+      ],
+      "bus": [
+        "Extensive bus network",
+        "2¥ standard fare",
+        "Tourist buses to attractions"
+      ],
+      "taxi": [
+        "Starting fare: 10¥",
+        "Didi works well",
+        "Negotiate for long trips"
+      ],
+      "bike": [
+        "Mobike and Meituan bikes available",
+        "Flat city terrain good for cycling",
+        "Bike lanes on main roads"
+      ],
+      "walking": [
+        "City center walkable",
+        "Yellow River paths are pleasant",
+        "Hilly areas require stamina"
+      ],
+      "rental": [
+        "Car rental for regional trips",
+        "Day trips to Qilian Mountains popular",
+        "4WD needed for remote areas"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "兰州万达文华酒店",
+      "nameEn": "Lanzhou Wanda Vista Hotel",
+      "budget": "luxury",
+      "priceRange": "¥600-1200/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central location",
+        "Modern luxury",
+        "River views",
+        "Good service"
+      ],
+      "bookingTips": "Best luxury in city. Book river view rooms. Good base for sightseeing."
+    },
+    {
+      "name": "兰州皇冠假日酒店",
+      "nameEn": "Crowne Plaza Lanzhou",
+      "budget": "luxury",
+      "priceRange": "¥500-1000/night",
+      "address": "East Side",
+      "coordinates": {
+        "lat": 36.0714,
+        "lng": 103.8543
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Yellow River location",
+        "Modern facilities",
+        "Good breakfast",
+        "Central"
+      ],
+      "bookingTips": "Best location near river. The breakfast is excellent. Book river view rooms."
+    },
+    {
+      "name": "兰州饭店",
+      "nameEn": "Lanzhou Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Historic hotel",
+        "Good value",
+        "Chinese style"
+      ],
+      "bookingTips": "Good mid-range option. Historic hotel with character. Book direct for discounts."
+    },
+    {
+      "name": "黄河饭店",
+      "nameEn": "Yellow River Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "South River Bank",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8443
+      },
+      "rating": 4.4,
+      "highlights": [
+        "River location",
+        "Central",
+        "Good views",
+        "Value"
+      ],
+      "bookingTips": "Good location near river attractions. Book river view rooms. Simple but adequate."
+    },
+    {
+      "name": "兰州背包客青年旅舍",
+      "nameEn": "Lanzhou Backpacker Hostel",
+      "budget": "budget",
+      "priceRange": "¥50-150/night",
+      "address": "Near Train Station",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Budget-friendly",
+        "Social atmosphere",
+        "Near station",
+        "English spoken"
+      ],
+      "bookingTips": "Best for backpackers. English speaking staff. Great for Silk Road travelers. Book ahead."
+    },
+    {
+      "name": "白塔山宾馆",
+      "nameEn": "Baita Mountain Hotel",
+      "budget": "mid",
+      "priceRange": "¥250-500/night",
+      "address": "Near Baita Mountain",
+      "coordinates": {
+        "lat": 36.0714,
+        "lng": 103.8443
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near park",
+        "Quiet location",
+        "Good views",
+        "Value"
+      ],
+      "bookingTips": "Good for nature lovers. Near Baita Mountain hike. Book park view rooms."
+    },
+    {
+      "name": "甘肃大剧院酒店",
+      "nameEn": "Gansu Grand Theatre Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Modern",
+        "Central location",
+        "Good facilities",
+        "Value"
+      ],
+      "bookingTips": "New property with modern amenities. Good for business travelers. Book direct."
+    },
+    {
+      "name": "西关清真寺招待所",
+      "nameEn": "Xiguan Mosque Guesthouse",
+      "budget": "budget",
+      "priceRange": "¥100-250/night",
+      "address": "Xiguan",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8243
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near mosque",
+        "Muslim area",
+        "Cultural experience",
+        "Budget"
+      ],
+      "bookingTips": "Stay in Muslim quarter for cultural experience. Simple accommodation. Great Muslim food nearby."
+    },
+    {
+      "name": "兰州锦江之星",
+      "nameEn": "Jinjiang Inn Lanzhou",
+      "budget": "budget",
+      "priceRange": "¥120-250/night",
+      "address": "Various Locations",
+      "coordinates": {
+        "lat": 36.0614,
+        "lng": 103.8343
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Budget chain",
+        "Consistent quality",
+        "Multiple locations",
+        "Clean"
+      ],
+      "bookingTips": "Reliable budget option. Multiple locations in city. Book online for discounts."
+    },
+    {
+      "name": "兰州飞天大酒店",
+      "nameEn": "Lanzhou Feitian Hotel",
+      "budget": "luxury",
+      "priceRange": "¥500-900/night",
+      "address": "East Side",
+      "coordinates": {
+        "lat": 36.0714,
+        "lng": 103.8543
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Business hotel",
+        "Modern facilities",
+        "Good service",
+        "Central"
+      ],
+      "bookingTips": "Good for business travelers. Modern amenities. Book weekend rates for value."
+    },
+    {
+      "name": "青城古镇民宿",
+      "nameEn": "Qingcheng Ancient Town Homestay",
+      "budget": "budget",
+      "priceRange": "¥80-200/night",
+      "address": "Qingcheng Town",
+      "coordinates": {
+        "lat": 36.3214,
+        "lng": 104.1343
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Ancient town",
+        "Local families",
+        "Historic",
+        "Cultural"
+      ],
+      "bookingTips": "Stay overnight in ancient town for quiet experience. Local homestays available. Book through local guides."
+    },
+    {
+      "name": "刘家峡宾馆",
+      "nameEn": "Liujiaxia Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "Liujiaxia",
+      "coordinates": {
+        "lat": 35.9214,
+        "lng": 103.0343
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Lake location",
+        "Near Bingling",
+        "Scenic",
+        "Peaceful"
+      ],
+      "bookingTips": "Base for Bingling Caves day trip. Good for photography tours. The canyon scenery is beautiful."
+    },
+    {
+      "name": "兴隆山度假村",
+      "nameEn": "Xinglong Mountain Resort",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "Xinglong Mountain",
+      "coordinates": {
+        "lat": 36.0314,
+        "lng": 104.0343
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Mountain location",
+        "Nature",
+        "Hiking",
+        "Fresh air"
+      ],
+      "bookingTips": "Good for hiking trips. Mountain air is refreshing. Book hiking packages. Summer escape from city."
+    },
+    {
+      "name": "黄河三峡游艇酒店",
+      "nameEn": "Yellow River Three Gorges Boat Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-800/night",
+      "address": "Liujiaxia",
+      "coordinates": {
+        "lat": 35.9014,
+        "lng": 103.0343
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Boat hotel",
+        "River views",
+        "Unique experience",
+        "Scenic"
+      ],
+      "bookingTips": "Unique overnight on Yellow River. The canyon views are stunning. Book in advance for best cabins."
+    },
+    {
+      "name": "兰州东站亚朵酒店",
+      "nameEn": "Atour Hotel Lanzhou East Station",
+      "budget": "mid",
+      "priceRange": "¥280-500/night",
+      "address": "East Railway Station",
+      "coordinates": {
+        "lat": 36.0814,
+        "lng": 103.8843
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near station",
+        "Modern",
+        "Good service",
+        "Value"
+      ],
+      "bookingTips": "Best for train travelers. New hotel with consistent quality. Book direct for best rates."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Lanzhou",
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": [
+        "WeChat required",
+        "International version works"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for bike sharing"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at traditional markets",
+      "howToUse": [
+        "ATM everywhere",
+        "Bring for night markets"
+      ],
+      "tips": [
+        "Keep 100¥ for markets",
+        "Most restaurants accept mobile"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "food",
+      "title": "Lanzhou Beef Noodles",
+      "content": "Lanzhou beef noodles are a breakfast institution. Arrive before 10am for the freshest noodles. Each shop has unique broth recipe. Try comparing several shops.",
+      "importance": "high"
+    },
+    {
+      "category": "culture",
+      "title": "Silk Road Heritage",
+      "content": "Lanzhou was a key Silk Road trading post. Visit the Gansu Museum to understand the historical significance. The city's architecture reflects this multicultural history.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Islamic Culture",
+      "content": "Lanzhou has a significant Muslim community. Respect Islamic customs at mosques. The Muslim quarter has excellent halal food options.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Night Market Culture",
+      "content": "Lanzhou's night markets come alive after sunset. Try lamb skewers, niangpi, and local snacks. Minzhu Street and river banks have best night food.",
+      "importance": "medium"
+    },
+    {
+      "category": "nature",
+      "title": "Yellow River",
+      "content": "The Yellow River flows through Lanzhou's center. Walk along the river banks, especially at sunset. The iron bridge is iconic landmark.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Gansu Cuisine",
+      "content": "Gansu cuisine combines Muslim, Mandarin, and Tibetan influences. Must-try: beef noodles, hand-grabbed lamb, liangpi, and unique desserts like grey bean soup.",
+      "importance": "high"
+    },
+    {
+      "category": "timing",
+      "title": "Early Rising",
+      "content": "Lanzhou beef noodle shops close by early afternoon. Plan breakfast early. Many other restaurants also close between 2-5pm.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Mosque Etiquette",
+      "content": "At mosques and Muslim areas, dress modestly and remove shoes before entering prayer halls. Photography inside prayer halls may not be allowed.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Tea Culture",
+      "content": "Three Pao Tai (san pao tai) is the traditional Gansu tea - a mixture of green tea, goji berries, longan, and rock sugar in a covered cup.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Lanzhou Dialect",
+      "content": "Lanzhou dialect is distinctive within Gansu. Locals are friendly and patient with visitors trying Mandarin. Basic phrases appreciated.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "Lanzhou Souvenirs",
+      "content": "Look for Hei Shan (black dates) from Gansu, minority handicrafts, and Gansu cave replicas. The night markets have good souvenir options.",
+      "importance": "low"
+    },
+    {
+      "category": "weather",
+      "title": "Sandstorms",
+      "content": "Spring sandstorms from Gobi can affect Lanzhou. Check weather before day trips. Summer thunderstorms can cause flash floods in mountain areas.",
+      "importance": "medium"
+    },
+    {
+      "category": "language",
+      "title": "Muslim Quarter Language",
+      "content": "In Muslim areas, many vendors speak Mandarin but some older residents may use local dialect. Hand signals and patience help communication.",
+      "importance": "low"
+    },
+    {
+      "category": "etiquette",
+      "title": "Toasting Etiquette",
+      "content": "When sharing meals with locals, especially lamb dishes, accept food offered as a sign of friendship. Leaving some food shows satisfaction.",
+      "importance": "medium"
+    },
+    {
+      "category": "culture",
+      "title": "Yellow River Boat Culture",
+      "content": "Boat rides on the Yellow River offer unique views of the canyon scenery, especially at Liujiaxia where the water turns turquoise blue.",
+      "importance": "medium"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "兰州急救中心",
+      "nameEn": "Lanzhou Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "兰州市公安局",
+      "nameEn": "Lanzhou Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "hospital",
+      "name": "兰州大学第一医院",
+      "nameEn": "Lanzhou University First Hospital",
+      "phone": "+86 931 891 2122",
+      "address": "Lanzhou",
+      "coordinates": {
+        "lat": 36.0514,
+        "lng": 103.8343
+      },
+      "notes": "Best hospital in city, English available"
+    },
+    {
+      "type": "fire",
+      "name": "消防",
+      "nameEn": "Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "tourist-police",
+      "name": "兰州旅游警察",
+      "nameEn": "Lanzhou Tourist Police",
+      "phone": "+86 931 845 6122",
+      "notes": "English-speaking tourist police"
+    },
+    {
+      "type": "embassy",
+      "name": "巴基斯坦驻乌鲁木齐总领事馆",
+      "nameEn": "Pakistan Consulate General Urumqi",
+      "phone": "+86 991 881 4083",
+      "address": "Urumqi (nearest consular services)",
+      "notes": "For Pakistani citizens in Lanzhou region"
+    },
+    {
+      "type": "embassy",
+      "name": "哈萨克斯坦驻乌鲁木齐总领事馆",
+      "nameEn": "Kazakhstan Consulate General Urumqi",
+      "phone": "+86 991 881 4083",
+      "address": "Urumqi",
+      "notes": "For Kazakh citizens in Lanzhou region"
+    },
+    {
+      "type": "road",
+      "name": "甘肃路政",
+      "nameEn": "Gansu Road Administration",
+      "phone": "12328",
+      "notes": "For road conditions and emergencies"
+    },
+    {
+      "type": "weather",
+      "name": "兰州气象服务",
+      "nameEn": "Lanzhou Weather Service",
+      "phone": "12121",
+      "notes": "For weather updates and forecasts"
+    },
+    {
+      "type": "forest",
+      "name": "甘肃森林防火",
+      "nameEn": "Gansu Forest Fire Prevention",
+      "phone": "12119",
+      "notes": "Forest fire reporting"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Gansu dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

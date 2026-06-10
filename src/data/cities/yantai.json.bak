@@ -1,0 +1,3204 @@
+{
+  "slug": "yantai",
+  "name": "烟台",
+  "nameEn": "Yantai",
+  "country": "China",
+  "population": "7.1 million",
+  "coordinates": {
+    "lat": 37.5365,
+    "lng": 121.3914
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Yantai is a beautiful coastal city in Shandong Province, known for its wine production, fresh seafood, and stunning seaside scenery. Features the famous Penglai Pavilion, scenic coastal road, and as the birthplace of China's modern macaroni industry. A charming blend of colonial architecture and traditional Chinese culture.",
+  "coverImage": "https://images.unsplash.com/photo-1758784548356-e0992d471bb4?w=1200&q=80",
+  "highlights": [
+    "Penglai Pavilion - legendary birthplace of immortals",
+    "Coastal Tourism Zone - beautiful seaside scenery",
+    "Zhengri Xinma - historic shopping street",
+    "Yantai Mountain - panoramic coastal views",
+    "Wine culture - Chinese wine capital"
+  ],
+  "climate": {
+    "type": "Temperate monsoon",
+    "bestMonths": [
+      "May",
+      "June",
+      "September",
+      "October"
+    ],
+    "avgSummerTemp": "24C (75F)",
+    "avgWinterTemp": "1C (34F)",
+    "tips": "Best in summer for beaches and autumn for wine harvest. Pleasant sea breezes. Winter cold but scenic. Avoid Golden Week October."
+  },
+  "attractions": [
+    {
+      "id": "yantai-1",
+      "name": "蓬莱阁",
+      "nameEn": "Penglai Pavilion",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1770295477859-11c1d39342be?w=800&q=85",
+      "description": "Legendary Taoist shrine said to be the dwelling place of the Eight Immortals. UNESCO World Heritage site with ancient architecture and sea views.",
+      "address": "Penglai District, Yantai",
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
+      "openingHours": "06:30-18:30 (summer), 07:00-17:30 (winter)",
+      "ticketPrice": "100¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Sea of immortals",
+        "Ancient architecture",
+        "Coastal views",
+        "Eight Immortals hall"
+      ],
+      "tips": "Arrive early to avoid crowds. Combine with nearby sam beach. The legend of Eight Immortals crossing the sea."
+    },
+    {
+      "id": "yantai-2",
+      "name": "烟台山",
+      "nameEn": "Yantai Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1751012325063-96ce9a663fdf?w=800&q=85",
+      "description": "Historic hilltop park with colonial architecture, lighthouse, and panoramic views of Yantai Bay.",
+      "address": "Yantai Mountain, Zhifu District",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "Free (some attractions 30¥)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Lighthouse",
+        "Colonial buildings",
+        "Bay views",
+        "Historic churches"
+      ],
+      "tips": "Best at sunset for photos. The lighthouse is iconic. Explore colonial history."
+    },
+    {
+      "id": "yantai-3",
+      "name": "金沙滩",
+      "nameEn": "Golden Sand Beach",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1621949350827-b69af5bdef8c?w=800&q=85",
+      "description": "10km pristine beach with golden sand, clear water, and modern coastal developments.",
+      "address": "Coastal Development Zone",
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
+      "highlights": [
+        "Clean beach",
+        "Swimming",
+        "Water sports",
+        "Sunset views"
+      ],
+      "tips": "Best in summer for swimming. Arrive early for parking. Water sports available."
+    },
+    {
+      "id": "yantai-4",
+      "name": "张裕酒文化博物馆",
+      "nameEn": "Changyu Wine Culture Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800",
+      "description": "World's largest wine museum showcasing China's premier wine producer with underground wine cellars.",
+      "address": "56 Daman Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "80¥ (includes wine tasting)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Wine cellars",
+        "Wine tasting",
+        "Production process",
+        "Wine history"
+      ],
+      "tips": "Must-book for wine lovers. Tasting includes premium wines. Underground cellars are impressive."
+    },
+    {
+      "id": "yantai-5",
+      "name": "月亮湾",
+      "nameEn": "Moon Bay",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1736265339877-2382471610ed?w=800&q=85",
+      "description": "Romantic bay with crescent shape, famous love lock displays, and romantic sunset views.",
+      "address": "Yantai Coastal Zone",
+      "coordinates": {
+        "lat": 37.5265,
+        "lng": 121.4014
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Love locks",
+        "Romantic atmosphere",
+        "Sunset views",
+        "Sea views"
+      ],
+      "tips": "Best at sunset. Couples place love locks. Great for photos. The Moon老人 rock is iconic."
+    },
+    {
+      "id": "yantai-6",
+      "name": "蓬莱水城",
+      "nameEn": "Penglai Water City",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1674200648539-75a8bde2fee7?w=800&q=85",
+      "description": "Historic naval fortress and port from Ming Dynasty, used to defend against wokou pirates.",
+      "address": "Penglai District",
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "80¥ (combined with Penglai Pavilion)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ming Dynasty fortress",
+        "Naval history",
+        "Ancient warships",
+        "Sea access"
+      ],
+      "tips": "Combine with Penglai Pavilion. The water gates are impressive engineering."
+    },
+    {
+      "id": "yantai-7",
+      "name": "养马岛",
+      "nameEn": "Yangma Island",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800",
+      "description": "Beautiful island known for horse-racing history, now a scenic tourist destination with beaches.",
+      "address": "牟平区 Yantai",
+      "coordinates": {
+        "lat": 37.3965,
+        "lng": 121.6014
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some attractions charge)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Island scenery",
+        "Beaches",
+        "Horse racing history",
+        "Seafood"
+      ],
+      "tips": "Drive or bike around island. The coastal road is scenic. Beach time in summer."
+    },
+    {
+      "id": "yantai-8",
+      "name": "朝阳街",
+      "nameEn": "Chaoyang Street",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800",
+      "description": "Historic street with well-preserved colonial architecture, shops, and cafes.",
+      "address": "Near Yantai Mountain, Zhifu District",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Colonial buildings",
+        "Shops",
+        "Cafes",
+        "Nightlife"
+      ],
+      "tips": "Best evening with lighting. Great for photos. Colonial atmosphere."
+    },
+    {
+      "id": "yantai-9",
+      "name": "牟氏庄园",
+      "nameEn": "Mou's Manor",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800",
+      "description": "Largest surviving private manor in China, showcasing wealthy landlord culture from Qing Dynasty.",
+      "address": "栖霞市 Qixia",
+      "coordinates": {
+        "lat": 37.3065,
+        "lng": 120.8514
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "60¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Qing architecture",
+        "Private estate",
+        "Cultural heritage",
+        "Gardens"
+      ],
+      "tips": "Day trip from Yantai. One of China's largest manor. Well preserved."
+    },
+    {
+      "id": "yantai-10",
+      "name": "金石湾",
+      "nameEn": "Jinshi Bay",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800",
+      "description": "Pristine bay with unique rock formations, clear water, and peaceful atmosphere.",
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5114
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Rock formations",
+        "Clear water",
+        "Quiet beach",
+        "Photography"
+      ],
+      "tips": "Less crowded than Golden Sand Beach. Great for photography. Snorkeling possible."
+    },
+    {
+      "id": "yantai-11",
+      "name": "烟台博物馆",
+      "nameEn": "Yantai Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=800",
+      "description": "Regional museum with collections showcasing Yantai's maritime history and local culture.",
+      "address": "2 Yantai Mountain Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Maritime history",
+        "Local culture",
+        "Archaeological finds",
+        "Interactive exhibits"
+      ],
+      "tips": "Good for rainy days. Combine with Yantai Mountain visit."
+    },
+    {
+      "id": "yantai-12",
+      "name": "北极星钟表博物馆",
+      "nameEn": "Polaris Clock Museum",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?w=800",
+      "description": "Unique museum dedicated to clock-making history, showcasing China's watch industry heritage.",
+      "address": "Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Clock history",
+        "Polaris brand",
+        "Antique timepieces",
+        "Interactive"
+      ],
+      "tips": "Interesting for clock enthusiasts. Near shopping area."
+    },
+    {
+      "id": "yantai-13",
+      "name": "农博园",
+      "nameEn": "Agricultural Expo Garden",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800",
+      "description": "Large botanical garden with diverse plant collections and agricultural exhibits.",
+      "address": "Fushan District",
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.2614
+      },
+      "openingHours": "07:30-17:30",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Plants",
+        "Flowers",
+        "Agricultural exhibits",
+        "Family friendly"
+      ],
+      "tips": "Great for families. Spring and summer best for flowers."
+    },
+    {
+      "id": "yantai-14",
+      "name": "戚继光纪念馆",
+      "nameEn": "Qi Jiguang Memorial Hall",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1559300150-31434828a787?w=800&q=85",
+      "description": "Memorial to famous Ming Dynasty general who defended China against wokou pirates.",
+      "address": "Penglai District",
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Military history",
+        "Qi Jiguang artifacts",
+        "Ming Dynasty",
+        "Cultural heritage"
+      ],
+      "tips": "Combine with Penglai Pavilion. Important historical figure."
+    },
+    {
+      "id": "yantai-15",
+      "name": "望夫礁",
+      "nameEn": "Wangfu Reef",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1468413253725-0d5181091126?w=800&q=80",
+      "description": "Rock formation said to be a woman waiting for her husband's return, with romantic legend.",
+      "address": "Muping District",
+      "coordinates": {
+        "lat": 37.3565,
+        "lng": 121.6214
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Rock formation",
+        "Sea views",
+        "Romantic legend",
+        "Photography"
+      ],
+      "tips": "Best at sunrise or sunset. The story is touching."
+    },
+    {
+      "id": "yantai-16",
+      "name": "栈桥",
+      "nameEn": "Zhanqiao Pier",
+      "category": "historical",
+      "image": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=800",
+      "description": "Historic pier stretching into the sea, iconic symbol of Yantai with colonial origins.",
+      "address": "Coastal Zone, Zhifu District",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4114
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 min",
+      "highlights": [
+        "Pier views",
+        "Colonial history",
+        "Fishing boats",
+        "Sunset"
+      ],
+      "tips": "Best at sunset. Iconic Yantai photo spot."
+    },
+    {
+      "id": "yantai-17",
+      "name": "昆嵛山",
+      "nameEn": "Kunyu Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1749655169127-fb2e1fde696f?w=800&q=85",
+      "description": "Sacred Taoist mountain with pristine forests, ancient temples, and hiking trails.",
+      "address": "文登市 Wendeng",
+      "coordinates": {
+        "lat": 37.2065,
+        "lng": 121.8514
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "60¥",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Taoist culture",
+        "Hiking",
+        "Ancient temples",
+        "Nature"
+      ],
+      "tips": "Day trip. Taoist sacred mountain. Best in autumn for foliage."
+    },
+    {
+      "id": "yantai-18",
+      "name": "科技大道",
+      "nameEn": "Technology Avenue",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+      "description": "Modern shopping and entertainment district with international brands and restaurants.",
+      "address": "Zhifu District",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4014
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Shopping",
+        "Dining",
+        "Entertainment",
+        "Modern Yantai"
+      ],
+      "tips": "Best evening and night. International brands."
+    },
+    {
+      "id": "yantai-19",
+      "name": "地质公园",
+      "nameEn": "Geological Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&q=80",
+      "description": "Coastal geological park with unique rock formations, sea caves, and fossil sites.",
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.4465,
+        "lng": 121.5514
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "40¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Rock formations",
+        "Sea caves",
+        "Fossils",
+        "Geology"
+      ],
+      "tips": "Great for geology enthusiasts. Guided tours available."
+    },
+    {
+      "id": "yantai-20",
+      "name": "海洋世界",
+      "nameEn": "Ocean World",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1758784548350-036e24b9894f?w=800&q=85",
+      "description": "Large aquarium with marine life exhibits, dolphin shows, and penguin habitat.",
+      "address": "Coastal Development Zone",
+      "coordinates": {
+        "lat": 37.4565,
+        "lng": 121.4414
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "150¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Marine animals",
+        "Dolphin shows",
+        "Penguins",
+        "Underwater tunnel"
+      ],
+      "tips": "Great for families. Book shows in advance."
+    },
+    {
+      "id": "yantai-21",
+      "name": "渔人码头",
+      "nameEn": "Fisherman's Wharf",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+      "description": "Revitalized fishing harbor with shops, restaurants, and maritime attractions.",
+      "address": "Muping District",
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5814
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Harbor views",
+        "Fresh seafood",
+        "Shopping",
+        "Entertainment"
+      ],
+      "tips": "Best for seafood. Buy fresh fish. Evening atmosphere."
+    },
+    {
+      "id": "yantai-22",
+      "name": "马家沟",
+      "nameEn": "Majiagou",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1742568404720-8ccac058f430?w=800&q=85",
+      "description": "Eco-tourism village with hot springs, vineyards, and rural charm.",
+      "address": "Fushan District",
+      "coordinates": {
+        "lat": 37.4265,
+        "lng": 121.2314
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Varies by activity",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Hot springs",
+        "Vineyards",
+        "Rural experience",
+        "Family activities"
+      ],
+      "tips": "Day trip. Combine wine and hot springs."
+    },
+    {
+      "id": "yantai-23",
+      "name": "天崮山",
+      "nameEn": "Tiangu Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      "description": "Scenic mountain with unique peaks, ancient temples, and hiking trails.",
+      "address": "Fushan District",
+      "coordinates": {
+        "lat": 37.3565,
+        "lng": 121.1014
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Mountain peaks",
+        "Hiking",
+        "Ancient temple",
+        "Nature"
+      ],
+      "tips": "Great hiking. Less crowded than major attractions."
+    },
+    {
+      "id": "yantai-24",
+      "name": "长岛",
+      "nameEn": "Changdao Islands",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1491557345352-5929e343eb89?w=800",
+      "description": "Beautiful archipelago with pristine beaches, fishing villages, and island hopping.",
+      "address": "长岛县 Changdao County",
+      "coordinates": {
+        "lat": 37.9565,
+        "lng": 120.7514
+      },
+      "openingHours": "Ferry schedule",
+      "ticketPrice": "Free (ferry 45-100¥)",
+      "recommendedVisitTime": "1-2 days",
+      "highlights": [
+        "Island scenery",
+        "Beaches",
+        "Fishing villages",
+        "Bird watching"
+      ],
+      "tips": "Overnight stay recommended. Ferry from Penglai. Authentic island life."
+    },
+    {
+      "id": "yantai-25",
+      "name": "葡萄酒庄",
+      "nameEn": "Wine Chateaus",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=800",
+      "description": "Several French-style wineries offering tours, tastings, and beautiful vineyard scenery.",
+      "address": "Penglai and Fushan",
+      "coordinates": {
+        "lat": 37.8065,
+        "lng": 120.8014
+      },
+      "openingHours": "Varies by winery",
+      "ticketPrice": "Tour + tasting 100-200¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Vineyards",
+        "Wine tasting",
+        "French architecture",
+        "Wine production"
+      ],
+      "tips": "Must-visit for wine lovers. Autumn harvest best. Appointment needed."
+    },
+    {
+      "id": "yt-yantaishan",
+      "name": "烟台山",
+      "nameEn": "Yantai Mountain",
+      "category": "nature",
+      "description": "烟台的标志，有灯塔和领事馆旧址。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "灯塔",
+        "领事馆",
+        "海景"
+      ],
+      "tips": "了解烟台历史。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "yt-no1beach",
+      "name": "第一海水浴场",
+      "nameEn": "No.1 Bathing Beach",
+      "category": "beach",
+      "description": "烟台最著名的海滩。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "游泳"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=85"
+    },
+    {
+      "id": "yt-park",
+      "name": "烟台公园",
+      "nameEn": "Yantai Park",
+      "category": "park",
+      "description": "烟台最大的城市公园。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "海滨"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80"
+    },
+    {
+      "id": "yt-food",
+      "name": "烟台美食",
+      "nameEn": "Yantai Food",
+      "category": "street",
+      "description": "烟台有新鲜海鲜和苹果。",
+      "address": "烟台市",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "海鲜",
+        "苹果"
+      ],
+      "tips": "品尝烟台海鲜。",
+      "image": "https://images.unsplash.com/photo-1725933014999-e70ae6e57375?w=800&q=85"
+    },
+    {
+      "id": "yt-museum",
+      "name": "烟台博物馆",
+      "nameEn": "Yantai Museum",
+      "category": "museum",
+      "description": "展示烟台历史的博物馆。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "烟台历史"
+      ],
+      "tips": "了解烟台文化。",
+      "image": "https://images.unsplash.com/photo-1661546004179-2e198361d295?w=800&q=85"
+    },
+    {
+      "id": "yt-kongtong",
+      "name": "崆峒岛",
+      "nameEn": "Kongtong Island",
+      "category": "nature",
+      "description": "烟台附近的小岛，有美丽的海滩。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海岛",
+        "沙滩"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1733288577064-7cab02275e87?w=800&q=85"
+    },
+    {
+      "id": "yt-nanshan-park",
+      "name": "南山公园",
+      "nameEn": "Nanshan Park",
+      "category": "park",
+      "description": "烟台南部的公园。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "花园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=85"
+    },
+    {
+      "id": "yt-night",
+      "name": "烟台夜景",
+      "nameEn": "Yantai Night View",
+      "category": "landmark",
+      "description": "烟台山和海滨的夜景。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800&q=80"
+    },
+    {
+      "id": "yt-bridge",
+      "name": "烟台跨海大桥",
+      "nameEn": "Yantai Sea-crossing Bridge",
+      "category": "landmark",
+      "description": "连接烟台和开发区的大桥。",
+      "address": "烟台市",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "大桥",
+        "海景"
+      ],
+      "tips": "看海景。",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80"
+    },
+    {
+      "id": "yt-kunyu",
+      "name": "昆嵛山",
+      "nameEn": "Kunyu Mountain",
+      "category": "nature",
+      "description": "烟台最高的山峰。",
+      "address": "烟台市牟平区",
+      "coordinates": {
+        "lat": 37.3,
+        "lng": 121.65
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "山峰",
+        "森林"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80"
+    },
+    {
+      "id": "yt-moonbay",
+      "name": "月亮湾",
+      "nameEn": "Moon Bay",
+      "category": "nature",
+      "description": "烟台最美的海湾之一。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海湾",
+        "沙滩"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?w=800&q=85"
+    },
+    {
+      "id": "yt-chaoyang",
+      "name": "朝阳街",
+      "nameEn": "Chaoyang Street",
+      "category": "street",
+      "description": "烟台最古老的商业街。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "老街",
+        "小吃"
+      ],
+      "tips": "体验烟台生活。",
+      "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80"
+    },
+    {
+      "id": "yt-art",
+      "name": "烟台美术馆",
+      "nameEn": "Yantai Art Museum",
+      "category": "museum",
+      "description": "展示中外美术作品。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "美术展览"
+      ],
+      "tips": "了解艺术文化。",
+      "image": "https://images.unsplash.com/photo-1545972154-9bb223aac798?w=800&q=85"
+    },
+    {
+      "id": "yt-bamboo",
+      "name": "竹林寺",
+      "nameEn": "Bamboo Forest Temple",
+      "category": "temple",
+      "description": "烟台最古老的佛教寺院。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1533669955142-6a73332af4db?w=800&q=80"
+    },
+    {
+      "id": "yt-goldenbeach",
+      "name": "金沙滩",
+      "nameEn": "Golden Sand Beach",
+      "category": "beach",
+      "description": "烟台最美的海滩之一。",
+      "address": "烟台市开发区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.2
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "沙滩",
+        "海水"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1565715367074-4497ee5ae532?w=800&q=85"
+    },
+    {
+      "id": "yt-apple",
+      "name": "烟台苹果",
+      "nameEn": "Yantai Apple",
+      "category": "street",
+      "description": "烟台是中国著名的苹果产地。",
+      "address": "烟台市",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "苹果"
+      ],
+      "tips": "品尝烟台苹果。",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85"
+    },
+    {
+      "id": "yt-tashan",
+      "name": "塔山",
+      "nameEn": "Tashan Mountain",
+      "category": "nature",
+      "description": "烟台市区的小山。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "山峰",
+        "城市全景"
+      ],
+      "tips": "登高望远。",
+      "image": "https://images.unsplash.com/photo-1742194801379-ca7b698656a2?w=800&q=85"
+    },
+    {
+      "id": "yt-binhai",
+      "name": "滨海广场",
+      "nameEn": "Binhai Square",
+      "category": "landmark",
+      "description": "烟台的城市中心广场。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "广场",
+        "海景"
+      ],
+      "tips": "烟台标志。",
+      "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80"
+    },
+    {
+      "id": "yt-lighthouse",
+      "name": "烟台山灯塔",
+      "nameEn": "Yantai Mountain Lighthouse",
+      "category": "landmark",
+      "description": "烟台的标志灯塔。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "灯塔",
+        "海景"
+      ],
+      "tips": "烟台标志。",
+      "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80"
+    },
+    {
+      "id": "yt-seafood",
+      "name": "烟台海鲜",
+      "nameEn": "Yantai Seafood",
+      "category": "street",
+      "description": "烟台有最新鲜的海鲜。",
+      "address": "烟台市",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均60元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "海鲜"
+      ],
+      "tips": "品尝烟台海鲜。",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+    },
+    {
+      "id": "yt-yangma",
+      "name": "养马岛",
+      "nameEn": "Yangma Island",
+      "category": "nature",
+      "description": "烟台附近的大岛，有美丽的海滩。",
+      "address": "烟台市牟平区",
+      "coordinates": {
+        "lat": 37.38,
+        "lng": 121.62
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海岛",
+        "沙滩"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1701944576899-1f3a95646577?w=800&q=85"
+    },
+    {
+      "id": "yt-zhangyu",
+      "name": "张裕葡萄酒文化博物馆",
+      "nameEn": "Zhangyu Wine Culture Museum",
+      "category": "museum",
+      "description": "展示中国葡萄酒文化的博物馆。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "葡萄酒",
+        "文化"
+      ],
+      "tips": "了解葡萄酒文化。",
+      "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80"
+    },
+    {
+      "id": "yt-beachnight",
+      "name": "烟台海滨夜景",
+      "nameEn": "Yantai Beach Night View",
+      "category": "landmark",
+      "description": "烟台海滨的夜景灯光秀。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?w=800&q=85"
+    },
+    {
+      "id": "yt-suochengli",
+      "name": "所城里",
+      "nameEn": "Suochengli",
+      "category": "street",
+      "description": "烟台最古老的街区。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "老街",
+        "历史"
+      ],
+      "tips": "了解烟台历史。",
+      "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800&q=80"
+    },
+    {
+      "id": "yt-nanshanpark2",
+      "name": "南山公园",
+      "nameEn": "Nanshan Park",
+      "category": "park",
+      "description": "烟台最大的公园之一。",
+      "address": "烟台市芝罘区",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "公园",
+        "花园"
+      ],
+      "tips": "休闲好去处。",
+      "image": "https://images.unsplash.com/photo-1773633490738-9f9a75944f00?w=800&q=85"
+    },
+    {
+      "id": "yt-cherry",
+      "name": "烟台大樱桃",
+      "nameEn": "Yantai Cherry",
+      "category": "street",
+      "description": "烟台是中国著名的大樱桃产地。",
+      "address": "烟台市",
+      "coordinates": {
+        "lat": 37.53,
+        "lng": 121.38
+      },
+      "openingHours": "5-6月",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "大樱桃"
+      ],
+      "tips": "品尝烟台大樱桃。",
+      "image": "https://images.unsplash.com/photo-1528821128474-27f963b062bf?w=800&q=80"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "yantai-1",
+      "name": "虹口海鲜",
+      "nameEn": "Hongkou Seafood",
+      "type": "local",
+      "cuisine": "Yantai Seafood",
+      "avgPrice": 200,
+      "rating": 4.8,
+      "address": "69 Chaoyang Street, Zhifu District",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "phone": "+86 535 620 8888",
+      "hours": "10:30-22:00",
+      "description": "Premium seafood restaurant with fresh catches daily and ocean views.",
+      "dishHighlights": [
+        "Steamed seafood",
+        "Sea urchin",
+        "Razor clams",
+        "Grilled fish"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "premium",
+        "views"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-2",
+      "name": "蓬莱小面",
+      "nameEn": "Penglai Noodles",
+      "type": "local",
+      "cuisine": "Yantai",
+      "avgPrice": 30,
+      "rating": 4.7,
+      "address": "Penglai District",
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
+      "hours": "06:00-14:00",
+      "description": "Local breakfast spot famous for hand-pulled noodles in savory broth.",
+      "dishHighlights": [
+        "Hand-pulled noodles",
+        "Seafood broth",
+        "Scallion oil",
+        "Pickled vegetables"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget",
+        "must-try"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-3",
+      "name": "焖子",
+      "nameEn": "Men Zi",
+      "type": "local",
+      "cuisine": "Yantai Snacks",
+      "avgPrice": 20,
+      "rating": 4.6,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "hours": "10:00-22:00",
+      "description": "Iconic Yantai snack - fried mung bean starch cubes with savory sauce.",
+      "dishHighlights": [
+        "Fried starch cubes",
+        "Soy sauce dressing",
+        "Sesame",
+        "Mildly spicy"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "snacks",
+        "must-try",
+        "budget"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-4",
+      "name": "鲅鱼饺子",
+      "nameEn": "Baqua Dumplings",
+      "type": "local",
+      "cuisine": "Yantai",
+      "avgPrice": 50,
+      "rating": 4.8,
+      "address": "Zhifu District",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "hours": "10:00-22:00",
+      "description": "Famous for dumplings filled with fresh Spanish mackerel, a Yantai specialty.",
+      "dishHighlights": [
+        "Fresh mackerel dumplings",
+        "Steamed dumplings",
+        "Sour and spicy dipping"
+      ],
+      "tags": [
+        "local",
+        "famous",
+        "dumplings",
+        "must-try"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-5",
+      "name": "海肠捞饭",
+      "nameEn": "Sea Intestine Rice",
+      "type": "local",
+      "cuisine": "Yantai Seafood",
+      "avgPrice": 80,
+      "rating": 4.7,
+      "address": "Near Fisherman's Wharf",
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5814
+      },
+      "hours": "10:30-21:30",
+      "description": "Local specialty - rice topped with stir-fried sea intestine in savory sauce.",
+      "dishHighlights": [
+        "Sea intestine",
+        "Rice",
+        "Savory sauce",
+        "Umami flavor"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "seafood",
+        "adventurous"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-6",
+      "name": "捞面坊",
+      "nameEn": "Lao Mian Fang",
+      "type": "local",
+      "cuisine": "Yantai Noodles",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "hours": "06:00-20:00",
+      "description": "Popular noodle shop with variety of hand-pulled noodles and broths.",
+      "dishHighlights": [
+        "Beef noodles",
+        "Seafood noodles",
+        "Vegetable noodles",
+        "Hand-pulled"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "value",
+        "quick"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-7",
+      "name": "建兴海鲜",
+      "nameEn": "Jianxing Seafood",
+      "type": "local",
+      "cuisine": "Yantai Seafood",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "Seafood Market, Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "hours": "09:00-22:00",
+      "description": "Fresh seafood market restaurant where you pick and they cook.",
+      "dishHighlights": [
+        "Fresh catch",
+        "Steam preparation",
+        "Grilled options",
+        "Your choice"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "fresh",
+        "market-style"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-8",
+      "name": "张裕酒庄餐厅",
+      "nameEn": "Changyu Chateau Restaurant",
+      "type": "fine",
+      "cuisine": "French/Wine Pairing",
+      "avgPrice": 300,
+      "rating": 4.7,
+      "address": "Changyu Wine Culture Museum",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "phone": "+86 535 669 8888",
+      "hours": "11:00-14:00, 17:00-21:00",
+      "description": "Elegant restaurant in winery with wine pairing and French-inspired cuisine.",
+      "dishHighlights": [
+        "Wine paired dishes",
+        "Western cuisine",
+        "Premium wine",
+        "Elegant setting"
+      ],
+      "tags": [
+        "fine-dining",
+        "wine",
+        "french",
+        "romantic",
+        "special-occasion"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-9",
+      "name": "农家渔家",
+      "nameEn": "Rural Fisherman",
+      "type": "local",
+      "cuisine": "Yantai Home Style",
+      "avgPrice": 80,
+      "rating": 4.5,
+      "address": "Near Golden Sand Beach",
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
+      "hours": "10:30-22:00",
+      "description": "Cozy restaurant serving home-style seafood and local Yantai dishes.",
+      "dishHighlights": [
+        "Home-style seafood",
+        "Fried fish",
+        "Steamed clams",
+        "Local vegetables"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "cozy",
+        "seafood"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-10",
+      "name": "大悦城",
+      "nameEn": "Dayuecheng Mall",
+      "type": "chain",
+      "cuisine": "Various",
+      "avgPrice": 80,
+      "rating": 4.4,
+      "address": "53 Er Ma Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4114
+      },
+      "hours": "10:00-22:00",
+      "description": "Large mall with multiple restaurants and food court options.",
+      "dishHighlights": [
+        "Food court",
+        "International brands",
+        "Cafes",
+        "Variety"
+      ],
+      "tags": [
+        "chain",
+        "mall",
+        "variety",
+        "convenient"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-11",
+      "name": "海底捞",
+      "nameEn": "Haidilao Hotpot",
+      "type": "chain",
+      "cuisine": "Hotpot",
+      "avgPrice": 150,
+      "rating": 4.8,
+      "address": "MixC Mall, Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "phone": "+86 535 620 9999",
+      "hours": "24 hours",
+      "description": "Famous hotpot chain with exceptional service and free manicotti.",
+      "dishHighlights": [
+        "Spicy broth",
+        "Fresh beef",
+        "Hand-pulled noodles",
+        "Free dessert"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "service",
+        "late-night"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-12",
+      "name": "三合渔家",
+      "nameEn": "Sanhe Fisherman",
+      "type": "local",
+      "cuisine": "Yantai Seafood",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Changdao Islands",
+      "coordinates": {
+        "lat": 37.9565,
+        "lng": 120.7514
+      },
+      "hours": "07:00-21:00",
+      "description": "Island seafood restaurant with fresh catch and traditional preparation.",
+      "dishHighlights": [
+        "Island seafood",
+        "Steamed fish",
+        "Seaweed soup",
+        "Local specialties"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "island",
+        "authentic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-13",
+      "name": "老船长",
+      "nameEn": "Old Captain",
+      "type": "local",
+      "cuisine": "Yantai Seafood",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Fisherman's Wharf",
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.5814
+      },
+      "phone": "+86 535 669 1234",
+      "hours": "10:30-22:00",
+      "description": "Historic seafood restaurant with harbor views and fresh seafood.",
+      "dishHighlights": [
+        "Fresh seafood",
+        "Grilled prawns",
+        "Steamed fish",
+        "Harbor views"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "views",
+        "historic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-14",
+      "name": "威尼斯餐厅",
+      "nameEn": "Venice Restaurant",
+      "type": "fine",
+      "cuisine": "Italian",
+      "avgPrice": 200,
+      "rating": 4.5,
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.4765,
+        "lng": 121.4414
+      },
+      "hours": "11:30-14:30, 18:00-22:00",
+      "description": "Italian restaurant with ocean views and authentic Mediterranean cuisine.",
+      "dishHighlights": [
+        "Pasta",
+        "Pizza",
+        "Seafood",
+        "Italian wine"
+      ],
+      "tags": [
+        "fine-dining",
+        "italian",
+        "views",
+        "romantic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-15",
+      "name": "东来顺",
+      "nameEn": "Dong Lai Shun",
+      "type": "chain",
+      "cuisine": "Mongolian Hotpot",
+      "avgPrice": 150,
+      "rating": 4.6,
+      "address": "Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "phone": "+86 535 620 1234",
+      "hours": "10:30-22:00",
+      "description": "Famous Mongolian hotpot chain with premium lamb and traditional broth.",
+      "dishHighlights": [
+        "Mongolian lamb",
+        "Hotpot",
+        "Traditional broth",
+        "Quality ingredients"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "mongolian",
+        "premium"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-16",
+      "name": "新兴园",
+      "nameEn": "Xinxing Yuan",
+      "type": "local",
+      "cuisine": "Yantai",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Penglai District",
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
+      "hours": "10:00-21:30",
+      "description": "Established restaurant near Penglai Pavilion serving local specialties.",
+      "dishHighlights": [
+        "Penglai noodles",
+        "Seafood dishes",
+        "Traditional recipes",
+        "Local favorites"
+      ],
+      "tags": [
+        "local",
+        "traditional",
+        "near-attraction",
+        "reliable"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-17",
+      "name": "呷哺呷哺",
+      "nameEn": "Xia Cuo Xia Cuo",
+      "type": "chain",
+      "cuisine": "Individual Hotpot",
+      "avgPrice": 80,
+      "rating": 4.4,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "hours": "10:00-22:00",
+      "description": "Popular individual hotpot chain with affordable prices and variety.",
+      "dishHighlights": [
+        "Individual hotpot",
+        "Variety of broths",
+        "Fresh ingredients",
+        "Affordable"
+      ],
+      "tags": [
+        "chain",
+        "hotpot",
+        "individual",
+        "value",
+        "quick"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-18",
+      "name": "韩式烤肉",
+      "nameEn": "Korean BBQ",
+      "type": "local",
+      "cuisine": "Korean",
+      "avgPrice": 100,
+      "rating": 4.5,
+      "address": "Zhifu District",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "hours": "11:00-23:00",
+      "description": "Korean BBQ restaurant with quality meat and authentic Korean sides.",
+      "dishHighlights": [
+        "Grilled lamb",
+        "Beef",
+        "Kimchi",
+        "Korean side dishes"
+      ],
+      "tags": [
+        "local",
+        "korean",
+        "bbq",
+        "meat"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-19",
+      "name": "味道小馆",
+      "nameEn": "Taste House",
+      "type": "local",
+      "cuisine": "Yantai Home Style",
+      "avgPrice": 60,
+      "rating": 4.5,
+      "address": "Chaoyang Street area",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "hours": "10:30-21:30",
+      "description": "Cozy home-style restaurant with local Yantai dishes and comfortable atmosphere.",
+      "dishHighlights": [
+        "Home-style dishes",
+        "Local seafood",
+        "Seasonal menu",
+        "Value"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "cozy",
+        "value"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-20",
+      "name": "鼎泰丰",
+      "nameEn": "Din Tai Fung",
+      "type": "chain",
+      "cuisine": "Taiwanese",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "MixC Mall",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "hours": "10:00-21:30",
+      "description": "World-famous Taiwanese dumpling chain with excellent xiaolongbao.",
+      "dishHighlights": [
+        "Xiaolongbao",
+        "Fried rice",
+        "Noodles",
+        "Desserts"
+      ],
+      "tags": [
+        "chain",
+        "taiwanese",
+        "dumplings",
+        "quality"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-21",
+      "name": "海景咖啡厅",
+      "nameEn": "Ocean View Cafe",
+      "type": "cafe",
+      "cuisine": "Western Cafe",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "Coastal Zone",
+      "coordinates": {
+        "lat": 37.5265,
+        "lng": 121.4014
+      },
+      "hours": "09:00-23:00",
+      "description": "Cafe with panoramic sea views, perfect for sunset watching.",
+      "dishHighlights": [
+        "Coffee",
+        "Western snacks",
+        "Sea views",
+        "Sunset"
+      ],
+      "tags": [
+        "cafe",
+        "views",
+        "sunset",
+        "romantic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-22",
+      "name": "夜市烧烤",
+      "nameEn": "Night Market BBQ",
+      "type": "local",
+      "cuisine": "BBQ",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "Night Market Area",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.4014
+      },
+      "hours": "17:00-02:00",
+      "description": "Popular night market BBQ with variety of grilled meats and seafood.",
+      "dishHighlights": [
+        "Grilled lamb",
+        "Skewers",
+        "Grilled squid",
+        "Beer"
+      ],
+      "tags": [
+        "local",
+        "bbq",
+        "night-market",
+        "late-night"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-23",
+      "name": "鲁菜馆",
+      "nameEn": "Lu Cuisine Restaurant",
+      "type": "local",
+      "cuisine": "Shandong",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "hours": "10:30-21:30",
+      "description": "Classic Shandong cuisine restaurant with traditional recipes and elegant setting.",
+      "dishHighlights": [
+        "Shandong classic dishes",
+        "Braised seafood",
+        "Fresh vegetables",
+        "Traditional cooking"
+      ],
+      "tags": [
+        "local",
+        "shandong-cuisine",
+        "traditional",
+        "classic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-24",
+      "name": "渔家乐",
+      "nameEn": "Fisherman's Joy",
+      "type": "local",
+      "cuisine": "Yantai Seafood",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "Yangma Island",
+      "coordinates": {
+        "lat": 37.3965,
+        "lng": 121.6014
+      },
+      "hours": "08:00-21:00",
+      "description": "Island restaurant specializing in fresh seafood caught by local fishermen.",
+      "dishHighlights": [
+        "Fresh catch",
+        "Island specialties",
+        "Sea views",
+        "Local preparation"
+      ],
+      "tags": [
+        "local",
+        "seafood",
+        "island",
+        "fresh",
+        "authentic"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-25",
+      "name": "西虹市首富",
+      "nameEn": "Tomato Master",
+      "type": "chain",
+      "cuisine": "Fast Food",
+      "avgPrice": 40,
+      "rating": 4.3,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.3914
+      },
+      "hours": "07:00-23:00",
+      "description": "Popular Chinese fast food chain with fried rice and comfort food.",
+      "dishHighlights": [
+        "Fried rice",
+        "Noodles",
+        "Dumplings",
+        "Fast service"
+      ],
+      "tags": [
+        "chain",
+        "fast-food",
+        "quick",
+        "familiar"
+      ],
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-26",
+      "name": "正宗鲅鱼水饺",
+      "nameEn": "正宗鲅鱼水饺 (鲅鱼水饺)",
+      "type": "local",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 36,
+      "rating": 4.5,
+      "address": "烟台市新城区美食街98号",
+      "coordinates": {
+        "lat": 37.4645,
+        "lng": 121.4031
+      },
+      "phone": "+86 010 14259659",
+      "hours": "06:00-14:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烟台焖子",
+        "蓬莱小面",
+        "鲅鱼水饺"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-28",
+      "name": "老烟台烟台焖子",
+      "nameEn": "老烟台烟台焖子 (烟台焖子)",
+      "type": "local",
+      "cuisine": "烟台焖子",
+      "avgPrice": 61,
+      "rating": 4.2,
+      "address": "烟台市新城区美食街97号",
+      "coordinates": {
+        "lat": 37.4833,
+        "lng": 121.494
+      },
+      "phone": "+86 010 85242654",
+      "hours": "10:00-22:00",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "蓬莱小面",
+        "烟台焖子",
+        "海鲜"
+      ],
+      "tags": [
+        "排队王",
+        "家常菜",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-30",
+      "name": "烟台味烟台焖子",
+      "nameEn": "烟台味烟台焖子 (烟台焖子)",
+      "type": "local",
+      "cuisine": "烟台焖子",
+      "avgPrice": 59,
+      "rating": 4.5,
+      "address": "烟台市老城区美食街53号",
+      "coordinates": {
+        "lat": 37.4826,
+        "lng": 121.4069
+      },
+      "phone": "+86 010 16693329",
+      "hours": "06:00-14:00",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼水饺",
+        "烟台焖子",
+        "海鲜"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-32",
+      "name": "地道鲅鱼水饺",
+      "nameEn": "地道鲅鱼水饺 (鲅鱼水饺)",
+      "type": "local",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 68,
+      "rating": 4.1,
+      "address": "烟台市新城区美食街11号",
+      "coordinates": {
+        "lat": 37.4491,
+        "lng": 121.475
+      },
+      "phone": "+86 010 64769557",
+      "hours": "17:00-02:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烟台焖子",
+        "鲅鱼水饺",
+        "海鲜"
+      ],
+      "tags": [
+        "隐藏美食",
+        "老字号",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-34",
+      "name": "老街烟台焖子",
+      "nameEn": "老街烟台焖子 (烟台焖子)",
+      "type": "cafe",
+      "cuisine": "烟台焖子",
+      "avgPrice": 38,
+      "rating": 4.6,
+      "address": "烟台市老城区美食街134号",
+      "coordinates": {
+        "lat": 37.4872,
+        "lng": 121.4784
+      },
+      "phone": "+86 010 91071926",
+      "hours": "09:00-21:00",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼水饺",
+        "烟台焖子"
+      ],
+      "tags": [
+        "安静",
+        "咖啡",
+        "下午茶"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-36",
+      "name": "正宗烟台焖子",
+      "nameEn": "正宗烟台焖子 (烟台焖子)",
+      "type": "local",
+      "cuisine": "烟台焖子",
+      "avgPrice": 90,
+      "rating": 4.1,
+      "address": "烟台市新城区美食街158号",
+      "coordinates": {
+        "lat": 37.4491,
+        "lng": 121.4382
+      },
+      "phone": "+86 010 11563935",
+      "hours": "09:00-21:00",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "烟台焖子",
+        "蓬莱小面"
+      ],
+      "tags": [
+        "家常菜",
+        "本地人爱去",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-38",
+      "name": "地道鲅鱼水饺",
+      "nameEn": "地道鲅鱼水饺 (鲅鱼水饺)",
+      "type": "local",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 32,
+      "rating": 4.9,
+      "address": "烟台市老城区美食街69号",
+      "coordinates": {
+        "lat": 37.4796,
+        "lng": 121.3981
+      },
+      "phone": "+86 010 40672081",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "烟台焖子",
+        "鲅鱼水饺"
+      ],
+      "tags": [
+        "排队王",
+        "社区老店",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-40",
+      "name": "传统烟台焖子",
+      "nameEn": "传统烟台焖子 (烟台焖子)",
+      "type": "local",
+      "cuisine": "烟台焖子",
+      "avgPrice": 123,
+      "rating": 4.1,
+      "address": "烟台市市中心区美食街146号",
+      "coordinates": {
+        "lat": 37.4534,
+        "lng": 121.452
+      },
+      "phone": "+86 010 56166372",
+      "hours": "09:00-21:00",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烟台焖子",
+        "蓬莱小面",
+        "海鲜"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-42",
+      "name": "街边蓬莱小面",
+      "nameEn": "街边蓬莱小面 (蓬莱小面)",
+      "type": "local",
+      "cuisine": "蓬莱小面",
+      "avgPrice": 34,
+      "rating": 4.0,
+      "address": "烟台市新城区美食街25号",
+      "coordinates": {
+        "lat": 37.4727,
+        "lng": 121.4081
+      },
+      "phone": "+86 010 30902846",
+      "hours": "17:00-02:00",
+      "description": "烟台本地人推荐的蓬莱小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "蓬莱小面",
+        "鲅鱼水饺",
+        "烟台焖子"
+      ],
+      "tags": [
+        "本地人爱去",
+        "社区老店",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-44",
+      "name": "正宗鲅鱼水饺",
+      "nameEn": "正宗鲅鱼水饺 (鲅鱼水饺)",
+      "type": "street",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 24,
+      "rating": 4.3,
+      "address": "烟台市老城区美食街19号",
+      "coordinates": {
+        "lat": 37.4821,
+        "lng": 121.437
+      },
+      "phone": "+86 010 35926312",
+      "hours": "17:00-02:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼水饺",
+        "烟台焖子",
+        "海鲜"
+      ],
+      "tags": [
+        "夜市",
+        "路边摊",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-46",
+      "name": "街边蓬莱小面",
+      "nameEn": "街边蓬莱小面 (蓬莱小面)",
+      "type": "local",
+      "cuisine": "蓬莱小面",
+      "avgPrice": 48,
+      "rating": 4.3,
+      "address": "烟台市市中心区美食街155号",
+      "coordinates": {
+        "lat": 37.4695,
+        "lng": 121.4203
+      },
+      "phone": "+86 010 60643578",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "烟台本地人推荐的蓬莱小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烟台焖子",
+        "鲅鱼水饺",
+        "蓬莱小面"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-48",
+      "name": "传统烟台焖子",
+      "nameEn": "传统烟台焖子 (烟台焖子)",
+      "type": "street",
+      "cuisine": "烟台焖子",
+      "avgPrice": 58,
+      "rating": 4.8,
+      "address": "烟台市老城区美食街135号",
+      "coordinates": {
+        "lat": 37.4715,
+        "lng": 121.4229
+      },
+      "phone": "+86 010 38261753",
+      "hours": "10:00-22:00",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "蓬莱小面",
+        "鲅鱼水饺",
+        "烟台焖子"
+      ],
+      "tags": [
+        "网红打卡",
+        "深夜美食",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-50",
+      "name": "老字号蓬莱小面",
+      "nameEn": "老字号蓬莱小面 (蓬莱小面)",
+      "type": "street",
+      "cuisine": "蓬莱小面",
+      "avgPrice": 10,
+      "rating": 4.8,
+      "address": "烟台市新城区美食街68号",
+      "coordinates": {
+        "lat": 37.4469,
+        "lng": 121.4764
+      },
+      "phone": "+86 010 32356923",
+      "hours": "06:00-14:00",
+      "description": "烟台本地人推荐的蓬莱小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "蓬莱小面",
+        "烟台焖子"
+      ],
+      "tags": [
+        "网红打卡",
+        "深夜美食",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-52",
+      "name": "正宗鲅鱼水饺",
+      "nameEn": "正宗鲅鱼水饺 (鲅鱼水饺)",
+      "type": "local",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 144,
+      "rating": 4.8,
+      "address": "烟台市市中心区美食街58号",
+      "coordinates": {
+        "lat": 37.4379,
+        "lng": 121.4196
+      },
+      "phone": "+86 010 41877444",
+      "hours": "17:00-02:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "蓬莱小面",
+        "鲅鱼水饺"
+      ],
+      "tags": [
+        "家常菜",
+        "隐藏美食",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-54",
+      "name": "地道海鲜",
+      "nameEn": "地道海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 66,
+      "rating": 4.6,
+      "address": "烟台市新城区美食街111号",
+      "coordinates": {
+        "lat": 37.5011,
+        "lng": 121.494
+      },
+      "phone": "+86 010 82419650",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "烟台本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼水饺",
+        "蓬莱小面",
+        "烟台焖子"
+      ],
+      "tags": [
+        "本地人爱去",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-56",
+      "name": "烟台味鲅鱼水饺",
+      "nameEn": "烟台味鲅鱼水饺 (鲅鱼水饺)",
+      "type": "local",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 76,
+      "rating": 4.4,
+      "address": "烟台市新城区美食街147号",
+      "coordinates": {
+        "lat": 37.415,
+        "lng": 121.4467
+      },
+      "phone": "+86 010 91612602",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼水饺",
+        "蓬莱小面"
+      ],
+      "tags": [
+        "排队王",
+        "性价比高",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-58",
+      "name": "老街鲅鱼水饺",
+      "nameEn": "老街鲅鱼水饺 (鲅鱼水饺)",
+      "type": "cafe",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 33,
+      "rating": 4.9,
+      "address": "烟台市市中心区美食街57号",
+      "coordinates": {
+        "lat": 37.4863,
+        "lng": 121.4659
+      },
+      "phone": "+86 010 16513425",
+      "hours": "10:00-22:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "蓬莱小面",
+        "海鲜",
+        "烟台焖子"
+      ],
+      "tags": [
+        "安静",
+        "咖啡",
+        "文艺"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-60",
+      "name": "传统鲅鱼水饺",
+      "nameEn": "传统鲅鱼水饺 (鲅鱼水饺)",
+      "type": "street",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 59,
+      "rating": 4.9,
+      "address": "烟台市老城区美食街7号",
+      "coordinates": {
+        "lat": 37.4323,
+        "lng": 121.4171
+      },
+      "phone": "+86 010 64379610",
+      "hours": "17:00-02:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "蓬莱小面",
+        "烟台焖子",
+        "鲅鱼水饺"
+      ],
+      "tags": [
+        "深夜美食",
+        "夜市",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-62",
+      "name": "老街烟台焖子",
+      "nameEn": "老街烟台焖子 (烟台焖子)",
+      "type": "street",
+      "cuisine": "烟台焖子",
+      "avgPrice": 57,
+      "rating": 4.4,
+      "address": "烟台市老城区美食街177号",
+      "coordinates": {
+        "lat": 37.4831,
+        "lng": 121.4031
+      },
+      "phone": "+86 010 58253285",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烟台焖子",
+        "蓬莱小面",
+        "海鲜"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-64",
+      "name": "地道蓬莱小面",
+      "nameEn": "地道蓬莱小面 (蓬莱小面)",
+      "type": "local",
+      "cuisine": "蓬莱小面",
+      "avgPrice": 144,
+      "rating": 4.2,
+      "address": "烟台市新城区美食街51号",
+      "coordinates": {
+        "lat": 37.4476,
+        "lng": 121.4442
+      },
+      "phone": "+86 010 69284473",
+      "hours": "17:00-02:00",
+      "description": "烟台本地人推荐的蓬莱小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烟台焖子",
+        "鲅鱼水饺",
+        "海鲜"
+      ],
+      "tags": [
+        "性价比高",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-66",
+      "name": "阿婆蓬莱小面",
+      "nameEn": "阿婆蓬莱小面 (蓬莱小面)",
+      "type": "local",
+      "cuisine": "蓬莱小面",
+      "avgPrice": 63,
+      "rating": 4.7,
+      "address": "烟台市新城区美食街13号",
+      "coordinates": {
+        "lat": 37.4212,
+        "lng": 121.4977
+      },
+      "phone": "+86 010 64688262",
+      "hours": "17:00-02:00",
+      "description": "烟台本地人推荐的蓬莱小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "蓬莱小面",
+        "烟台焖子"
+      ],
+      "tags": [
+        "社区老店",
+        "性价比高",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-68",
+      "name": "老字号蓬莱小面",
+      "nameEn": "老字号蓬莱小面 (蓬莱小面)",
+      "type": "local",
+      "cuisine": "蓬莱小面",
+      "avgPrice": 102,
+      "rating": 4.2,
+      "address": "烟台市新城区美食街24号",
+      "coordinates": {
+        "lat": 37.5069,
+        "lng": 121.4281
+      },
+      "phone": "+86 010 73829191",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "烟台本地人推荐的蓬莱小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烟台焖子",
+        "鲅鱼水饺",
+        "蓬莱小面"
+      ],
+      "tags": [
+        "排队王",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-70",
+      "name": "阿婆鲅鱼水饺",
+      "nameEn": "阿婆鲅鱼水饺 (鲅鱼水饺)",
+      "type": "local",
+      "cuisine": "鲅鱼水饺",
+      "avgPrice": 144,
+      "rating": 4.3,
+      "address": "烟台市市中心区美食街162号",
+      "coordinates": {
+        "lat": 37.4342,
+        "lng": 121.4026
+      },
+      "phone": "+86 010 20102938",
+      "hours": "10:00-22:00",
+      "description": "烟台本地人推荐的鲅鱼水饺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "烟台焖子",
+        "鲅鱼水饺"
+      ],
+      "tags": [
+        "性价比高",
+        "排队王",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-72",
+      "name": "传统海鲜",
+      "nameEn": "传统海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 147,
+      "rating": 4.7,
+      "address": "烟台市市中心区美食街71号",
+      "coordinates": {
+        "lat": 37.421,
+        "lng": 121.4654
+      },
+      "phone": "+86 010 11873063",
+      "hours": "10:00-22:00",
+      "description": "烟台本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼水饺",
+        "海鲜",
+        "蓬莱小面"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yantai-74",
+      "name": "正宗烟台焖子",
+      "nameEn": "正宗烟台焖子 (烟台焖子)",
+      "type": "local",
+      "cuisine": "烟台焖子",
+      "avgPrice": 80,
+      "rating": 4.7,
+      "address": "烟台市新城区美食街87号",
+      "coordinates": {
+        "lat": 37.4514,
+        "lng": 121.4069
+      },
+      "phone": "+86 010 25763030",
+      "hours": "09:00-21:00",
+      "description": "烟台本地人推荐的烟台焖子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "蓬莱小面",
+        "烟台焖子"
+      ],
+      "tags": [
+        "社区老店",
+        "性价比高",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major Chinese cities",
+        "to": "Yantai Penglai International Airport (YNT)",
+        "duration": "Varies (1h from Beijing, 1.5h from Shanghai)",
+        "price": "400-1500¥",
+        "frequency": "Daily flights from major cities",
+        "tips": "Airport 60km from city center. Airport bus (30¥) or taxi (200¥)."
+      },
+      {
+        "type": "train",
+        "from": "Beijing (5h), Shanghai (7h), Qingdao (2h)",
+        "to": "Yantai Railway Station / Yantai South Station",
+        "duration": "2-7 hours",
+        "price": "150-600¥",
+        "frequency": "Daily high-speed and regular trains",
+        "tips": "Yantai Station near city center. High-speed from Qingdao. K-train from Beijing."
+      }
+    ],
+    "local": {
+      "metro": [
+        "Currently limited metro lines",
+        "Bus is main public transport",
+        "Taxi recommended for tourists"
+      ],
+      "bus": [
+        "Extensive network",
+        "Single ride: 2¥",
+        "Tourist areas connected",
+        "Use apps for routes"
+      ],
+      "taxi": [
+        "Starting fare: 8¥ (first 3km)",
+        "Night surcharge: 20% extra",
+        "Most attractions 20-60¥",
+        "Didi recommended"
+      ],
+      "bike": [
+        "Mobike, Meituan bikes available",
+        "Unlock: 1¥, then 0.5-1¥ per 30 min",
+        "Great for coastal areas",
+        "Beach areas perfect for cycling"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "烟台金海岸希尔顿酒店",
+      "nameEn": "Hilton Yantai Golden Coast",
+      "budget": "luxury",
+      "priceRange": "¥1000-2000/night",
+      "address": "158 Changjiang Road, Coastal Development Zone",
+      "coordinates": {
+        "lat": 37.4565,
+        "lng": 121.4414
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Beachfront",
+        "Modern luxury",
+        "Multiple pools",
+        "Sea views"
+      ],
+      "bookingTips": "Best for beach vacation. Book ocean view rooms."
+    },
+    {
+      "name": "烟台香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Yantai",
+      "budget": "luxury",
+      "priceRange": "¥1200-2200/night",
+      "address": "88 Qixia Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Central location",
+        "Luxury facilities",
+        "Bay views",
+        "Multiple dining"
+      ],
+      "bookingTips": "Best location for sightseeing. Famous Sunday brunch."
+    },
+    {
+      "name": "烟台万达文华酒店",
+      "nameEn": "Wanda Vista Hotel Yantai",
+      "budget": "luxury",
+      "priceRange": "¥800-1500/night",
+      "address": "218 Changjiang Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3814
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Modern luxury",
+        "River views",
+        "High-rise",
+        "Good service"
+      ],
+      "bookingTips": "Newer property. Great for business and leisure."
+    },
+    {
+      "name": "烟台百瑞佳选酒店",
+      "nameEn": "Bairuijia Hotel Yantai",
+      "budget": "mid",
+      "priceRange": "¥400-700/night",
+      "address": "88 Changjiang Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Modern rooms",
+        "Good breakfast",
+        "Value"
+      ],
+      "bookingTips": "Best value in center. Reliable Chinese brand."
+    },
+    {
+      "name": "烟台华美达广场",
+      "nameEn": "Ramada Plaza Yantai",
+      "budget": "mid",
+      "priceRange": "¥500-900/night",
+      "address": "158 Yantai Mountain Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near Yantai Mountain",
+        "Sea views",
+        "Central location",
+        "Modern"
+      ],
+      "bookingTips": "Perfect for sightseeing. Walk to attractions."
+    },
+    {
+      "name": "如家酒店烟台栈桥店",
+      "nameEn": "Home Inn Yantai Zhanqiao",
+      "budget": "budget",
+      "priceRange": "¥150-300/night",
+      "address": "68 Zhanqiao Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5365,
+        "lng": 121.4114
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near pier",
+        "Budget-friendly",
+        "Clean",
+        "Central"
+      ],
+      "bookingTips": "Best budget near waterfront. Simple but reliable."
+    },
+    {
+      "name": "7天连锁酒店烟台汽车站店",
+      "nameEn": "7 Days Inn Yantai Bus Station",
+      "budget": "budget",
+      "priceRange": "¥120-250/night",
+      "address": "168 Qixia Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3814
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Budget",
+        "Near bus station",
+        "Simple",
+        "Clean"
+      ],
+      "bookingTips": "Good for bus travelers. Reliable budget chain."
+    },
+    {
+      "name": "烟台国际青年旅舍",
+      "nameEn": "Yantai International Youth Hostel",
+      "budget": "budget",
+      "priceRange": "¥80-200/night",
+      "address": "Near Golden Sand Beach",
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Beach location",
+        "Budget-friendly",
+        "Social atmosphere",
+        "Bike rental"
+      ],
+      "bookingTips": "Great for backpackers. Beach access. English speaking."
+    },
+    {
+      "name": "蓬莱欧乐堡骑士酒店",
+      "nameEn": "Penglai Knight Hotel",
+      "budget": "mid",
+      "priceRange": "¥500-900/night",
+      "address": "Penglai District",
+      "coordinates": {
+        "lat": 37.8101,
+        "lng": 120.7557
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Near Penglai Pavilion",
+        "Themed rooms",
+        "Family-friendly",
+        "Entertainment"
+      ],
+      "bookingTips": "Best for Penglai sightseeing. Great for families."
+    },
+    {
+      "name": "长岛渔家乐民宿",
+      "nameEn": "Changdao Island Fisherman Homestay",
+      "budget": "budget",
+      "priceRange": "¥200-500/night",
+      "address": "长岛县 Changdao County",
+      "coordinates": {
+        "lat": 37.9565,
+        "lng": 120.7514
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Island location",
+        "Local experience",
+        "Fresh seafood",
+        "Authentic"
+      ],
+      "bookingTips": "Experience island life. Book during fishing season."
+    },
+    {
+      "name": "烟台张裕葡萄酒主题酒店",
+      "nameEn": "Yantai Changyu Wine Theme Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-700/night",
+      "address": "Near Changyu Wine Culture Museum",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Wine theme",
+        "Near museum",
+        "Modern",
+        "Cultural experience"
+      ],
+      "bookingTips": "Perfect for wine lovers. Book wine tour packages."
+    },
+    {
+      "name": "烟台养马岛度假酒店",
+      "nameEn": "Yantai Yangma Island Resort Hotel",
+      "budget": "luxury",
+      "priceRange": "¥800-1500/night",
+      "address": "Yangma Island",
+      "coordinates": {
+        "lat": 37.3865,
+        "lng": 121.6414
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Island location",
+        "Beachfront",
+        "Resort facilities",
+        "Scenic"
+      ],
+      "bookingTips": "Perfect for beach vacation. Book during off-peak."
+    },
+    {
+      "name": "烟台金沙滩海景酒店",
+      "nameEn": "Yantai Golden Sand Beach Sea View Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-650/night",
+      "address": "Near Golden Sand Beach",
+      "coordinates": {
+        "lat": 37.4665,
+        "lng": 121.4414
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Beach views",
+        "Near beach",
+        "Modern",
+        "Good value"
+      ],
+      "bookingTips": "Great for beach lovers. Book ocean view rooms."
+    },
+    {
+      "name": "烟台朝阳街民宿",
+      "nameEn": "Yantai Chaoyang Street Homestay",
+      "budget": "budget",
+      "priceRange": "¥150-350/night",
+      "address": "Chaoyang Street area",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Historic area",
+        "Colonial architecture",
+        "Local experience",
+        "Value"
+      ],
+      "bookingTips": "Experience colonial history. Book during off-peak."
+    },
+    {
+      "name": "烟台葡萄酒庄酒店",
+      "nameEn": "Yantai Vineyard Hotel",
+      "budget": "luxury",
+      "priceRange": "¥700-1300/night",
+      "address": "Yantai Wine Valley",
+      "coordinates": {
+        "lat": 37.5465,
+        "lng": 121.3914
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Vineyard views",
+        "Wine tasting",
+        "Luxury",
+        "Romantic"
+      ],
+      "bookingTips": "Perfect for romantic trips. Book wine tasting packages."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Yantai",
+      "howToUse": [
+        "Download before arrival",
+        "Link card"
+      ],
+      "tips": [
+        "Works at all merchants",
+        "English available"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Needed for shared bikes"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Useful at seafood markets",
+      "howToUse": [
+        "ATM everywhere",
+        "Banks along main streets"
+      ],
+      "tips": [
+        "Keep 300¥ for seafood markets",
+        "Most restaurants accept cards"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "food",
+      "title": "Seafood Culture",
+      "content": "Yantai is famous for fresh seafood including sea urchin, abalone, clams, and various fish. The city has strong seafood culture with many restaurants offering fresh catches daily.",
+      "importance": "high"
+    },
+    {
+      "category": "history",
+      "title": "Maritime Heritage",
+      "content": "Yantai has 600 years of maritime history as a treaty port. The colonial architecture, especially around Yantai Mountain, reflects its international past with Russian, British, French, and German influence.",
+      "importance": "high"
+    },
+    {
+      "category": "wine",
+      "title": "Wine Culture",
+      "content": "Yantai is China's wine capital, producing 40% of China's wine. The Changyu winery is world-famous. Wine tourism is popular with vineyard tours and tastings available.",
+      "importance": "high"
+    },
+    {
+      "category": "legend",
+      "title": "Penglai Legend",
+      "content": "Penglai is legendary as the dwelling place of the Eight Immortals and immortals in Chinese mythology. The Penglai Pavilion is said to be where immortal beings dwell, making it a sacred Taoist site.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Yantai Dialect",
+      "content": "Yantai dialect is part of Ji-Lu Mandarin with distinct pronunciation. The local accent is known for being direct and straightforward. Some words are unique to the region.",
+      "importance": "low"
+    },
+    {
+      "category": "timing",
+      "title": "Best Time to Visit",
+      "content": "Yantai is best visited May-June for pleasant weather and flowers, or September-October for wine harvest. Summer is popular for beaches but crowded. Golden Week in October should be avoided.",
+      "importance": "medium"
+    },
+    {
+      "category": "beach",
+      "title": "Beach Culture",
+      "content": "Yantai has beautiful beaches with Golden Sand Beach being the most famous. The beaches are popular in summer for swimming and water sports. Some beaches can get crowded in July-August.",
+      "importance": "medium"
+    },
+    {
+      "category": "colonial",
+      "title": "Colonial Architecture",
+      "content": "Yantai's colonial history left a legacy of European-style buildings around Yantai Mountain and Chaoyang Street. Many buildings from the late 19th century have been preserved and now house cafes and shops.",
+      "importance": "medium"
+    },
+    {
+      "category": "crafts",
+      "title": "Local Crafts",
+      "content": "Yantai is known for kelp/seaweed products, wine (of course), and local snuff bottles. The region's crafts reflect its coastal culture and colonial influences.",
+      "importance": "low"
+    },
+    {
+      "category": "food",
+      "title": "Must-Try Dishes",
+      "content": "Yantai specialties include: sea urchin (海胆), razor clams (蛏子), steamed sea bass, sea intestine rice (海肠捞饭), Penglai noodles (蓬莱小面), and local dumplings.",
+      "importance": "high"
+    },
+    {
+      "category": "island",
+      "title": "Island Hopping",
+      "content": "The Changdao Islands offer beautiful island scenery with pristine beaches and fishing villages. The archipelago is perfect for escaping the mainland and experiencing authentic island life.",
+      "importance": "medium"
+    },
+    {
+      "category": "festival",
+      "title": "Wine Festival",
+      "content": "The Yantai International Wine Festival held in September showcases local wine culture with tastings, tours, and cultural events. This coincides with the grape harvest season.",
+      "importance": "medium"
+    },
+    {
+      "category": "transportation",
+      "title": "Getting Around",
+      "content": "Yantai is spread out with attractions in different districts. Renting a car is recommended for visiting Penglai and Changdao. Didi works well for city transport. Buses are available but can be crowded.",
+      "importance": "medium"
+    },
+    {
+      "category": "weather",
+      "title": "Coastal Weather",
+      "content": "Yantai has pleasant sea breezes in summer making it cooler than inland Shandong. However, winter can be cold and windy from the sea. The fog is common in spring.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Evening Entertainment",
+      "content": "Yantai has growing nightlife centered around Fisherman's Wharf, Chaoyang Street, and the coastal zones. Moon Bay is romantic in the evening. The MixC mall has late-night entertainment.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "烟台急救中心",
+      "nameEn": "Yantai Emergency Center",
+      "phone": "120",
+      "notes": "Major hospitals have English interpretation"
+    },
+    {
+      "type": "police",
+      "name": "烟台市公安局",
+      "nameEn": "Yantai Public Security Bureau",
+      "phone": "110",
+      "notes": "Tourist police at major attractions"
+    },
+    {
+      "type": "hospital",
+      "name": "烟台毓璜顶医院",
+      "nameEn": "Yantai Yuhuangding Hospital",
+      "phone": "+86 535 602 1096",
+      "address": "20 Yantai Mountain Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "notes": "English-speaking staff available"
+    },
+    {
+      "type": "hospital",
+      "name": "烟台市烟台山医院",
+      "nameEn": "Yantai Mountain Hospital",
+      "phone": "+86 535 660 2000",
+      "address": "88 Yantai Mountain Road, Zhifu District",
+      "coordinates": {
+        "lat": 37.5456,
+        "lng": 121.4014
+      },
+      "notes": "Another major hospital with English staff"
+    },
+    {
+      "type": "tourist-police",
+      "name": "烟台旅游警察",
+      "nameEn": "Yantai Tourist Police",
+      "phone": "+86 535 620 9110",
+      "notes": "English-speaking tourist police"
+    },
+    {
+      "type": "fire",
+      "name": "烟台消防",
+      "nameEn": "Yantai Fire Department",
+      "phone": "119",
+      "notes": "Fire and rescue services"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻青岛总领事馆",
+      "nameEn": "US Consulate General Qingdao",
+      "phone": "+86 532 8090 0001",
+      "address": "Qingdao",
+      "notes": "For US citizens in Yantai region"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻青岛总领事馆",
+      "nameEn": "UK Consulate General Qingdao",
+      "phone": "+86 532 8090 0801",
+      "address": "Qingdao",
+      "notes": "For UK citizens in Yantai region"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻青岛总领事馆",
+      "nameEn": "Japan Consulate General Qingdao",
+      "phone": "+86 532 8090 0001",
+      "address": "Qingdao",
+      "notes": "For Japanese citizens in Yantai region"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻青岛总领事馆",
+      "nameEn": "South Korea Consulate General Qingdao",
+      "phone": "+86 532 8090 0188",
+      "address": "Qingdao",
+      "notes": "For Korean citizens in Yantai region"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻青岛总领事馆",
+      "nameEn": "France Consulate General Qingdao",
+      "phone": "+86 532 8090 0900",
+      "address": "Qingdao",
+      "notes": "For French citizens in Yantai region"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻青岛总领事馆",
+      "nameEn": "Germany Consulate General Qingdao",
+      "phone": "+86 532 8090 0700",
+      "address": "Qingdao",
+      "notes": "For German citizens in Yantai region"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻青岛总领事馆",
+      "nameEn": "Australia Consulate General Qingdao",
+      "phone": "+86 532 8090 0500",
+      "address": "Qingdao",
+      "notes": "For Australian citizens in Yantai region"
+    },
+    {
+      "type": "embassy",
+      "name": "加拿大驻青岛总领事馆",
+      "nameEn": "Canada Consulate General Qingdao",
+      "phone": "+86 532 8090 0600",
+      "address": "Qingdao",
+      "notes": "For Canadian citizens in Yantai region"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese, Yantai dialect",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water safe after boiling; bottled water recommended"
+  }
+}

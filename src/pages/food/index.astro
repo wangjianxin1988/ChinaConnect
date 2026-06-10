@@ -3,18 +3,43 @@ import "@/styles/global.css";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
 import { cities, citiesMeta } from "@/data/cities/index";
+import type { Restaurant } from "@/data/cities/types";
 import { getLangFromUrl } from "@/i18n/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 const lang = getLangFromUrl(Astro.url);
 
+// Category thresholds (consistent with city/[slug]/food.astro)
+const LOCAL_RECOMMEND_THRESHOLD = 150;
+const AFFORDABLE_MAX_PRICE = 100;
+
+function getHighlightCategory(r: Restaurant): string {
+  if (r.type === "local") {
+    const tags = r.tags || [];
+    if (tags.some(t => t.includes("苍蝇馆子") || t.includes("street"))) {
+      return "street_food";
+    }
+    if (r.avgPrice <= AFFORDABLE_MAX_PRICE) {
+      return "affordable";
+    }
+    if (r.avgPrice <= LOCAL_RECOMMEND_THRESHOLD) {
+      return "local_recommend";
+    }
+  }
+  if (r.type === "michelin") return "michelin";
+  if (r.type === "blackpearl") return "blackpearl";
+  return "local_recommend";
+}
+
 // Calculate food statistics per city from city JSON data
 const citiesWithFoodStats = cities.map((city) => {
   const restaurants = city.restaurants || [];
   const michelinCount = restaurants.filter((r) => r.type === "michelin").length;
   const blackpearlCount = restaurants.filter((r) => r.type === "blackpearl").length;
-  const localCount = restaurants.filter((r) => r.type === "local").length;
+  const localRecommendCount = restaurants.filter((r) => getHighlightCategory(r) === "local_recommend").length;
+  const affordableCount = restaurants.filter((r) => getHighlightCategory(r) === "affordable").length;
+  const streetFoodCount = restaurants.filter((r) => getHighlightCategory(r) === "street_food").length;
   const meta = citiesMeta.find((m) => m.slug === city.slug);
 
   return {
@@ -26,7 +51,9 @@ const citiesWithFoodStats = cities.map((city) => {
     totalRestaurants: restaurants.length,
     michelinCount,
     blackpearlCount,
-    localCount,
+    localRecommendCount,
+    affordableCount,
+    streetFoodCount,
   };
 });
 
@@ -35,19 +62,21 @@ citiesWithFoodStats.sort((a, b) => b.totalRestaurants - a.totalRestaurants);
 
 const totalMichelin = citiesWithFoodStats.reduce((sum, c) => sum + c.michelinCount, 0);
 const totalBlackpearl = citiesWithFoodStats.reduce((sum, c) => sum + c.blackpearlCount, 0);
-const totalLocal = citiesWithFoodStats.reduce((sum, c) => sum + c.localCount, 0);
+const totalLocalRecommend = citiesWithFoodStats.reduce((sum, c) => sum + c.localRecommendCount, 0);
+const totalAffordable = citiesWithFoodStats.reduce((sum, c) => sum + c.affordableCount, 0);
+const totalStreetFood = citiesWithFoodStats.reduce((sum, c) => sum + c.streetFoodCount, 0);
 
 // Schema.org JSON-LD for Food listing
 const foodSchemas = [
   generateCollectionPageSchema({
     name: "Chinese Restaurants on ChinaConnect",
     description: `Discover ${totalMichelin}+ Michelin-starred restaurants, ${totalBlackpearl}+ Black Pearl establishments, and local favorites across Chinese cities. Find the best Chinese cuisine with detailed reviews, locations, and travel tips.`,
-    url: "https://chinaconnect.com/food",
+    url: "https://chinaconnect.xyz/food",
     numberOfItems: cities.reduce((sum, c) => sum + (c.restaurants?.length || 0), 0),
   }),
   generateBreadcrumbSchema([
-    { name: "Home", url: "https://chinaconnect.com/" },
-    { name: "Food Guide", url: "https://chinaconnect.com/food" },
+    { name: "Home", url: "https://chinaconnect.xyz/" },
+    { name: "Food Guide", url: "https://chinaconnect.xyz/food" },
   ]),
 ];
 ---
@@ -82,19 +111,107 @@ const foodSchemas = [
           <div class="text-sm text-slate-600">黑珍珠餐厅</div>
         </div>
         <div class="bg-red-50 border border-red-200 rounded-xl px-6 py-3">
-          <div class="text-2xl font-bold text-red-600">{totalLocal}</div>
+          <div class="text-2xl font-bold text-red-600">{totalLocalRecommend}</div>
           <div class="text-sm text-red-700">本地人推荐</div>
         </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-blue-600">{totalAffordable}</div>
+          <div class="text-sm text-blue-700">平价美食</div>
+        </div>
+        <div class="bg-orange-50 border border-orange-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-orange-600">{totalStreetFood}</div>
+          <div class="text-sm text-orange-700">苍蝇馆子</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Filter Tabs -->
+    <section class="mb-8">
+      <div class="flex flex-wrap gap-2 justify-center" id="category-filter-buttons">
+        <button
+          data-category="all"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn ring-2 ring-offset-1 ring-orange-300 bg-gray-50 border-gray-200 text-gray-700"
+        >
+          <span>🍽️</span>
+          <span>全部</span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-white/40">
+            {citiesWithFoodStats.reduce((sum, c) => sum + c.totalRestaurants, 0)}
+          </span>
+        </button>
+        <button
+          data-category="local_recommend"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>❤️</span>
+          <span>本地人推荐</span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalLocalRecommend}
+          </span>
+        </button>
+        <button
+          data-category="michelin"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>⭐</span>
+          <span>米其林</span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalMichelin}
+          </span>
+        </button>
+        <button
+          data-category="blackpearl"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>💎</span>
+          <span>黑珍珠</span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalBlackpearl}
+          </span>
+        </button>
+        <button
+          data-category="affordable"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>💙</span>
+          <span>平价美食</span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalAffordable}
+          </span>
+        </button>
+        <button
+          data-category="street_food"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>🔥</span>
+          <span>苍蝇馆子</span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalStreetFood}
+          </span>
+        </button>
+      </div>
+
+      <!-- Filter info -->
+      <div class="mt-4 text-center">
+        <p class="text-gray-600 text-sm">
+          显示 <span class="font-semibold text-gray-900" id="city-count">{citiesWithFoodStats.length}</span> 个城市
+          <span id="filter-info"></span>
+        </p>
       </div>
     </section>
 
     <!-- City Grid -->
     <section>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div id="city-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {citiesWithFoodStats.map((city) => (
           <a
             href={`/city/${city.slug}/food`}
-            class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
+            data-michelin={city.michelinCount}
+            data-blackpearl={city.blackpearlCount}
+            data-local-recommend={city.localRecommendCount}
+            data-affordable={city.affordableCount}
+            data-street-food={city.streetFoodCount}
+            data-total={city.totalRestaurants}
+            class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 city-card"
           >
             <!-- Cover Image -->
             <div class="aspect-video bg-gray-200 overflow-hidden relative">
@@ -120,25 +237,36 @@ const foodSchemas = [
 
             <!-- Stats -->
             <div class="p-4">
-              <div class="flex items-center justify-between text-sm">
+              <div class="flex items-center justify-between text-sm mb-2">
                 <span class="text-gray-500">{city.totalRestaurants} 家餐厅</span>
-                <div class="flex items-center gap-3">
-                  {city.michelinCount > 0 && (
-                    <span class="flex items-center gap-1 text-amber-600" title="米其林">
-                      ⭐ {city.michelinCount}
-                    </span>
-                  )}
-                  {city.blackpearlCount > 0 && (
-                    <span class="flex items-center gap-1 text-slate-600" title="黑珍珠">
-                      💎 {city.blackpearlCount}
-                    </span>
-                  )}
-                  {city.localCount > 0 && (
-                    <span class="flex items-center gap-1 text-red-600" title="本地人推荐">
-                      🔥 {city.localCount}
-                    </span>
-                  )}
-                </div>
+              </div>
+              <!-- Category badges -->
+              <div class="flex flex-wrap items-center gap-2 text-xs">
+                {city.michelinCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200" title="米其林">
+                    ⭐ {city.michelinCount}
+                  </span>
+                )}
+                {city.blackpearlCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200" title="黑珍珠">
+                    💎 {city.blackpearlCount}
+                  </span>
+                )}
+                {city.localRecommendCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200" title="本地人推荐">
+                    ❤️ {city.localRecommendCount}
+                  </span>
+                )}
+                {city.affordableCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200" title="平价美食">
+                    💙 {city.affordableCount}
+                  </span>
+                )}
+                {city.streetFoodCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-orange-50 text-orange-700 border border-orange-200" title="苍蝇馆子">
+                    🔥 {city.streetFoodCount}
+                  </span>
+                )}
               </div>
 
               <!-- CTA -->
@@ -149,6 +277,12 @@ const foodSchemas = [
             </div>
           </a>
         ))}
+      </div>
+      <!-- Empty state for filtered results -->
+      <div id="empty-state" class="text-center py-16 hidden">
+        <div class="text-6xl mb-4">🍽️</div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">暂无城市</h3>
+        <p class="text-gray-500 mb-6">该分类下暂无城市，请选择其他分类</p>
       </div>
     </section>
 
@@ -195,4 +329,118 @@ const foodSchemas = [
       </div>
     </section>
   </main>
+
+  <script>
+    // Client-side category filtering for food listing page
+    (function() {
+      const filterButtons = document.querySelectorAll('.category-btn');
+      const cityGrid = document.getElementById('city-grid');
+      const cityCount = document.getElementById('city-count');
+      const filterInfo = document.getElementById('filter-info');
+      const emptyState = document.getElementById('empty-state');
+
+      const categoryMeta: Record<string, { icon: string; labelZh: string; colorClass: string }> = {
+        'all': { icon: '🍽️', labelZh: '全部', colorClass: 'bg-gray-50 border-gray-200 text-gray-700' },
+        'local_recommend': { icon: '❤️', labelZh: '本地人推荐', colorClass: 'bg-red-50 border-red-200 text-red-700' },
+        'michelin': { icon: '⭐', labelZh: '米其林', colorClass: 'bg-amber-50 border-amber-200 text-amber-700' },
+        'blackpearl': { icon: '💎', labelZh: '黑珍珠', colorClass: 'bg-slate-800 border-slate-600 text-slate-200' },
+        'affordable': { icon: '💙', labelZh: '平价美食', colorClass: 'bg-blue-50 border-blue-200 text-blue-700' },
+        'street_food': { icon: '🔥', labelZh: '苍蝇馆子', colorClass: 'bg-orange-50 border-orange-200 text-orange-700' },
+      };
+
+      // Map category id to data-attribute name
+      const categoryAttrMap: Record<string, string> = {
+        'all': 'total',
+        'michelin': 'michelin',
+        'blackpearl': 'blackpearl',
+        'local_recommend': 'localRecommend',
+        'affordable': 'affordable',
+        'street_food': 'streetFood',
+      };
+
+      function applyFilter(category: string) {
+        if (!cityGrid) return;
+
+        const cards = cityGrid.querySelectorAll('.city-card');
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const cardEl = card as HTMLElement;
+          const attrName = 'data-' + (categoryAttrMap[category] || 'total');
+          const count = parseInt(cardEl.getAttribute(attrName) || '0', 10);
+
+          if (category === 'all' || count > 0) {
+            cardEl.style.display = '';
+            visibleCount++;
+          } else {
+            cardEl.style.display = 'none';
+          }
+        });
+
+        // Update city count
+        if (cityCount) {
+          cityCount.textContent = visibleCount.toString();
+        }
+
+        // Update filter info
+        if (filterInfo) {
+          if (category === 'all') {
+            filterInfo.innerHTML = '';
+          } else {
+            const meta = categoryMeta[category];
+            if (meta) {
+              filterInfo.innerHTML = ` — 筛选: <span class="font-medium text-orange-600">${meta.icon} ${meta.labelZh}</span>`;
+            }
+          }
+        }
+
+        // Show/hide empty state
+        if (emptyState) {
+          emptyState.classList.toggle('hidden', visibleCount > 0);
+        }
+        if (cityGrid) {
+          (cityGrid as HTMLElement).style.display = visibleCount === 0 ? 'none' : '';
+        }
+
+        // Update active button state
+        filterButtons.forEach((btn) => {
+          const btnEl = btn as HTMLElement;
+          const btnCategory = btnEl.dataset.category;
+          const isActive = btnCategory === category;
+          const meta = btnCategory ? categoryMeta[btnCategory] : null;
+
+          // Reset classes
+          btnEl.classList.remove('ring-2', 'ring-offset-1', 'ring-orange-300', 'ring-slate-400', 'bg-gray-50', 'bg-white', 'bg-amber-50', 'bg-red-50', 'bg-blue-50', 'bg-orange-50', 'border-gray-200', 'border-amber-200', 'border-red-200', 'border-blue-200', 'border-orange-200', 'border-slate-600', 'bg-slate-800', 'text-gray-700', 'text-amber-700', 'text-red-700', 'text-blue-700', 'text-orange-700', 'text-slate-200', 'text-gray-500');
+
+          if (isActive) {
+            btnEl.classList.add('ring-2', 'ring-offset-1', 'ring-orange-300');
+            // Apply the category's color
+            if (meta?.colorClass) {
+              meta.colorClass.split(' ').forEach(cls => btnEl.classList.add(cls));
+            }
+            const badge = btnEl.querySelector('.text-xs');
+            if (badge) {
+              badge.classList.remove('bg-gray-100');
+              badge.classList.add('bg-white/40');
+            }
+          } else {
+            btnEl.classList.add('bg-white', 'border-gray-200', 'text-gray-500');
+            const badge = btnEl.querySelector('.text-xs');
+            if (badge) {
+              badge.classList.remove('bg-white/40');
+              badge.classList.add('bg-gray-100');
+            }
+          }
+        });
+      }
+
+      // Add click handlers
+      filterButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const category = (btn as HTMLElement).dataset.category || 'all';
+          applyFilter(category);
+        });
+      });
+    })();
+  </script>
 </BaseLayout>

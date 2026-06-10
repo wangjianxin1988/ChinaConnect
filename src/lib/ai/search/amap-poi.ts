@@ -42,14 +42,16 @@ export interface AmapPOIResult {
 // Amap API Configuration
 // ============================================
 
-const AMAP_WEB_API_BASE = "https://restapi.amap.com/v3/place/text";
+const AMAP_WEB_API_BASE = "/api/amap";
 
 /**
- * Get Amap API key from environment.
- * Uses VITE_AMAP_WEB_API_KEY (client-side) or AMAP_WEB_API_KEY (server-side).
+ * Amap API key is now handled server-side via /api/amap proxy.
+ * No key is needed on the client.
  */
 function getAmapKey(): string | undefined {
-  return import.meta.env.VITE_AMAP_WEB_API_KEY || "013d6b96800d73eeb66dcbf3dd3b068a";
+  // Key is injected server-side by the proxy — return a marker so callers
+  // know the feature is available.
+  return "proxied";
 }
 
 /**
@@ -111,13 +113,13 @@ export async function executeAmapPOISearch(params: AmapPOIParams): Promise<AmapP
       count: 0,
       pois: [],
       error:
-        "Amap API key not configured. Set VITE_AMAP_WEB_API_KEY in your .env file. Get a key at https://console.amap.com/dev/key/app",
+        "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
     };
   }
 
   try {
     const params_obj = new URLSearchParams({
-      key: amapKey,
+      endpoint: "place/text",
       keywords: keywords.trim(),
       offset: String(Math.min(pageSize, 25)),
       page: String(page),

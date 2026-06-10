@@ -3,7 +3,7 @@
 
 import type { CityInfo } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.com";
+const SITE_URL = "https://chinaconnect.xyz";
 
 export interface SitemapEntry {
   url: string;

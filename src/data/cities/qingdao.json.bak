@@ -1,0 +1,3412 @@
+{
+  "slug": "qingdao",
+  "name": "青岛",
+  "nameEn": "Qingdao",
+  "country": "China",
+  "population": "10.07 million",
+  "coordinates": {
+    "lat": 36.0671,
+    "lng": 120.3826
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Qingdao, a beautiful coastal city in Shandong Province, is renowned for its Tsingtao Brewery, stunning German colonial architecture, and scenic beaches. Nestled between hills and the Yellow Sea, it offers a unique blend of European charm and Chinese culture. The city hosts the annual Qingdao International Beer Festival and features world-class attractions like Zhanqiao Pier, Badaguan Scenic Area, and Laoshan Mountain.",
+  "coverImage": "https://images.unsplash.com/photo-1779023877465-dacb0c58b435?w=1200&q=80",
+  "highlights": [
+    "Zhanqiao Pier - Iconic waterfront landmark",
+    "Badaguan Scenic Area - European-style architecture",
+    "Laoshan Mountain - Taoist sacred mountain",
+    "Tsingtao Brewery - World-famous beer heritage",
+    "五四广场 - Modern waterfront district",
+    "金沙滩 - Premier beach destination"
+  ],
+  "climate": {
+    "type": "温带海洋性气候",
+    "bestMonths": [
+      "4月",
+      "5月",
+      "9月",
+      "10月"
+    ],
+    "avgSummerTemp": "23°C (73°F)",
+    "avgWinterTemp": "1°C (34°F)",
+    "tips": "最佳旅游季节为春季(4-5月)和秋季(9-10月)。夏季凉爽宜人，是避暑胜地。冬季较冷但少雪。啤酒节在8月举办。建议携带薄外套和防晒用品。"
+  },
+  "attractions": [
+    {
+      "id": "zhanqiao-pier",
+      "name": "栈桥",
+      "nameEn": "Zhanqiao Pier",
+      "category": "landmark",
+      "description": "青岛的标志性景观，全长440米，宽8米，桥尽头有一座双层飞檐八角亭——回澜阁。建于1891年，是青岛历史的重要象征。",
+      "address": "青岛市市南区太平路12号",
+      "coordinates": {
+        "lat": 36.0667,
+        "lng": 120.3856
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "回澜阁",
+        "沿海栈道",
+        "百年灯塔",
+        "海鸥观赏"
+      ],
+      "tips": "建议清晨或傍晚前往，避开人流高峰。冬季可观海鸥，夏季可乘船出海。这里是拍摄青岛全景的最佳地点之一。",
+      "image": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?w=800&q=85"
+    },
+    {
+      "id": "badaguan",
+      "name": "八大关风景区",
+      "nameEn": "Badaguan Scenic Area",
+      "category": "cultural",
+      "description": "汇集了24个国家建筑风格的别墅区，因路口以中国著名关隘命名而得名。环境优雅，树木繁茂，被誉为万国建筑博览会。",
+      "address": "青岛市市南区武胜关路",
+      "coordinates": {
+        "lat": 36.0536,
+        "lng": 120.3789
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（部分别墅需门票）",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "公主楼",
+        "花石楼",
+        "元帅楼",
+        "欧洲风格别墅群"
+      ],
+      "tips": "最佳拍摄时间为春秋两季。建议租借自行车游览。周边有第二海水浴场，可顺便游玩。秋天银杏叶金黄，景色最美。",
+      "image": "https://images.unsplash.com/photo-1754983284886-98bdd1a3ff37?w=800&q=85"
+    },
+    {
+      "id": "laoshan-mountain",
+      "name": "崂山风景区",
+      "nameEn": "Laoshan Mountain",
+      "category": "nature",
+      "description": "中国著名的道教名山，海拔1132.7米，三面环海，集山、海、林、泉、瀑于一体。自古有海上第一名山之称。",
+      "address": "青岛市崂山区崂山路",
+      "coordinates": {
+        "lat": 36.1064,
+        "lng": 120.4291
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "旺季160¥，淡季120¥（含景区交通）",
+      "recommendedVisitTime": "半天至一天",
+      "highlights": [
+        "太清宫",
+        "巨峰游览区",
+        "北九水",
+        "仰口风景区"
+      ],
+      "tips": "建议乘坐景区大巴游览。山上气候变化大，需带外套。太清宫是道教发祥地之一，有千年古银杏树。需要提前规划行程。",
+      "image": "https://images.unsplash.com/photo-1681305470312-6768c555089b?w=800&q=85"
+    },
+    {
+      "id": "tsingtao-brewery",
+      "name": "青岛啤酒厂",
+      "nameEn": "Tsingtao Brewery",
+      "category": "cultural",
+      "description": "青岛啤酒厂是中国最古老的啤酒品牌之一，建于1903年。游客可以参观百年历史的酿造车间，品尝正宗的青岛原浆啤酒。",
+      "address": "青岛市市北区登州路56号",
+      "coordinates": {
+        "lat": 36.0856,
+        "lng": 120.3756
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "50¥（含讲解和品酒）",
+      "recommendedVisitTime": "1.5-2小时",
+      "highlights": [
+        "百年酿造车间",
+        "啤酒博物馆",
+        "原浆啤酒品鉴",
+        "特色啤酒街"
+      ],
+      "tips": "建议提前预约讲解服务。博物馆内有互动体验项目。啤酒街周边美食丰富，可一并安排。适合与朋友一起体验。",
+      "image": "https://images.unsplash.com/photo-1682426182468-0e9492f00cc2?w=800&q=85"
+    },
+    {
+      "id": "wusongguangchang",
+      "name": "五四广场",
+      "nameEn": "May Fourth Square",
+      "category": "landmark",
+      "description": "为纪念五四运动而建的广场，标志性雕塑五月的风高达30米，以螺旋上升的造型象征五四运动的革命火焰。",
+      "address": "青岛市市南区东海西路",
+      "coordinates": {
+        "lat": 36.0622,
+        "lng": 120.3939
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "五月的风雕塑",
+        "夜景灯光秀",
+        "海岸线风光",
+        "音乐广场"
+      ],
+      "tips": "夜晚的灯光秀非常壮观，建议傍晚前往。紧邻奥帆中心，可安排联游。周边高楼林立，是现代青岛的象征。",
+      "image": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?w=800&q=85"
+    },
+    {
+      "id": "aofan-center",
+      "name": "奥帆中心",
+      "nameEn": "Olympic Sailing Center",
+      "category": "landmark",
+      "description": "2008年北京奥运会帆船比赛举办地，是目前亚洲最大的帆船中心。拥有专业的码头设施和独特的海上运动设施。",
+      "address": "青岛市市南区新会路",
+      "coordinates": {
+        "lat": 36.0533,
+        "lng": 120.3944
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（部分项目收费）",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "奥运五环塔",
+        "帆船码头",
+        "情人坝",
+        "灯光秀"
+      ],
+      "tips": "可体验帆船、游艇等水上项目。晚上的灯光秀非常浪漫。情人坝是情侣打卡圣地。周边餐厅众多，消费偏高。",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85"
+    },
+    {
+      "id": "st-michael-cathedral",
+      "name": "圣弥厄尔大教堂",
+      "nameEn": "St. Michael's Cathedral",
+      "category": "cultural",
+      "description": "青岛最大的天主教堂，由德国设计师建造于1934年，哥特式建筑风格。教堂高60米，是青岛的地标性建筑。",
+      "address": "青岛市市南区浙江路15号",
+      "coordinates": {
+        "lat": 36.0644,
+        "lng": 120.3817
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "10¥",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "双塔钟楼",
+        "哥特式穹顶",
+        "彩色玻璃窗",
+        "欧洲古典装饰"
+      ],
+      "tips": "周日上午有弥撒活动。建筑拍照效果极佳，建议使用广角镜头。周边是中山路商业街，可一并游览。",
+      "image": "https://images.unsplash.com/photo-1669612911280-2f50bd3b6306?w=800&q=85"
+    },
+    {
+      "id": "jinshatan-beach",
+      "name": "金沙滩",
+      "nameEn": "Jinshatan Beach",
+      "category": "nature",
+      "description": "青岛最著名的海滩，因沙质细腻、色如金黄而得名。全长约3.5公里，水清浪稳，是避暑戏水的绝佳去处。",
+      "address": "青岛市黄岛区金沙滩路",
+      "coordinates": {
+        "lat": 35.9878,
+        "lng": 120.2256
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "金色沙滩",
+        "海水浴场",
+        "沙雕艺术",
+        "夜景灯光"
+      ],
+      "tips": "夏季人流量大，建议早上去。防晒工作要做好。可以租借帐篷和遮阳伞。周边有海鲜排档，消费适中。",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85"
+    },
+    {
+      "id": "ocean-museum",
+      "name": "青岛海军博物馆",
+      "nameEn": "Qingdao Navy Museum",
+      "category": "cultural",
+      "description": "中国唯一一座全面反映海军发展的博物馆，展示多艘退役军舰、潜艇和直升机，是国防教育的重要基地。",
+      "address": "青岛市市南区莱阳路8号",
+      "coordinates": {
+        "lat": 36.0633,
+        "lng": 120.3783
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "50¥",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "海军舰艇展示",
+        "潜艇参观",
+        "武器装备展",
+        "海洋知识科普"
+      ],
+      "tips": "建议提前预约。周一闭馆，注意安排时间。室外展区较大，建议穿舒适鞋子。适合带孩子参观。",
+      "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=85"
+    },
+    {
+      "id": "signal-hill-park",
+      "name": "信号山公园",
+      "nameEn": "Signal Hill Park",
+      "category": "nature",
+      "description": "位于市中心的小山丘，海拔98米，因山顶曾用于信号传递而得名。登顶可俯瞰青岛红瓦绿树、碧海蓝天的独特美景。",
+      "address": "青岛市市南区信号山路18号",
+      "coordinates": {
+        "lat": 36.0694,
+        "lng": 120.3817
+      },
+      "openingHours": "06:00-20:30",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "旋转观景楼",
+        "古城墙遗址",
+        "俯瞰老城区",
+        "日落美景"
+      ],
+      "tips": "建议傍晚登顶，可观赏日落和夜景。旋转观景楼是拍照亮点。山下有德国监狱旧址等景点，可安排联游。",
+      "image": "https://images.unsplash.com/photo-1541062880546-661f13176baf?w=800&q=85"
+    },
+    {
+      "id": "xiaoyu-shan-park",
+      "name": "小鱼山公园",
+      "nameEn": "Xiaoyu Shan Park",
+      "category": "nature",
+      "description": "海拔仅60米的小山，但视野开阔，是观赏青岛前海一线风光的最佳地点。建筑风格与周围环境和谐统一。",
+      "address": "青岛市市南区鱼山路",
+      "coordinates": {
+        "lat": 36.0667,
+        "lng": 120.3806
+      },
+      "openingHours": "06:00-20:00",
+      "ticketPrice": "8¥",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "览潮阁观景台",
+        "前海风光",
+        "欧式建筑群",
+        "樱花景观"
+      ],
+      "tips": "春季樱花盛开时景色最美。览潮阁三层可观不同景致。比信号山人少，更适合拍照。建议与附近大学路一起游览。",
+      "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=800"
+    },
+    {
+      "id": "german-prison",
+      "name": "德国监狱旧址",
+      "nameEn": "Former German Prison",
+      "category": "historical",
+      "description": "建于1900年的德国监狱，是目前我国保存最完整、最具殖民特色的德式建筑之一。展示了青岛被德国殖民的历史。",
+      "address": "青岛市市南区常州路7号",
+      "coordinates": {
+        "lat": 36.0681,
+        "lng": 120.3794
+      },
+      "openingHours": "08:30-17:30",
+      "ticketPrice": "25¥",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "红砖欧式建筑",
+        "地下牢房",
+        "历史陈列馆",
+        "绞刑架遗址"
+      ],
+      "tips": "室内部分较为阴森，胆小的游客注意。周边是栈桥和信号山，可安排半日游。建议购买联票更划算。",
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800"
+    },
+    {
+      "id": "stone-old-man",
+      "name": "石老人",
+      "nameEn": "Stone Old Man",
+      "category": "nature",
+      "description": "海中突兀的礁石，形似一位老人坐在水中，是青岛著名的自然景观。旁边的石老人海水浴场是消暑好去处。",
+      "address": "青岛市崂山区石老人海水浴场",
+      "coordinates": {
+        "lat": 36.0861,
+        "lng": 120.4567
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "石老人礁石",
+        "海水浴场",
+        "日出观赏",
+        "雕塑广场"
+      ],
+      "tips": "这里是青岛市区内看日出的最佳地点。海水浴场设施完善。周边的啤酒城和文化广场值得一逛。",
+      "image": "https://images.unsplash.com/photo-1750602939088-bab6b3a28553?w=800&q=85"
+    },
+    {
+      "id": "zhoushan-road",
+      "name": "劈柴院",
+      "nameEn": "Zhoushan Road (Picigin)",
+      "category": "cultural",
+      "description": "青岛最古老的民俗风情街之一，有100多年历史。汇集了各种小吃、戏曲表演和传统手工艺品，是体验老青岛风情的好去处。",
+      "address": "青岛市市南区劈柴院",
+      "coordinates": {
+        "lat": 36.0672,
+        "lng": 120.3842
+      },
+      "openingHours": "全天（商铺约10:00-22:00）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "传统小吃",
+        "戏曲表演",
+        "老字号商铺",
+        "民俗博物馆"
+      ],
+      "tips": "晚上的氛围比白天好。美食价格略高于外面，但可以尝试。豆腐脑、锅贴等传统小吃值得一试。注意辨别拉客行为。",
+      "image": "https://images.unsplash.com/photo-1683799909253-05471b47ee3b?w=800&q=85"
+    },
+    {
+      "id": "taidong-night-market",
+      "name": "台东夜市",
+      "nameEn": "Taidong Night Market",
+      "category": "shopping",
+      "description": "青岛最热闹的夜市之一，商品种类繁多，价格实惠。周边美食街更是吃货的天堂，是体验青岛夜生活的好去处。",
+      "address": "青岛市市北区台东三路",
+      "coordinates": {
+        "lat": 36.0861,
+        "lng": 120.3694
+      },
+      "openingHours": "16:00-23:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "小吃一条街",
+        "服装百货",
+        "游戏娱乐",
+        "街头艺人"
+      ],
+      "tips": "建议晚上7点后去最热闹。砍价是必要的。周边美食店林立，可先吃饱再逛街。注意保管好随身物品。",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800"
+    },
+    {
+      "id": "laoshan-taiqing-gong",
+      "name": "崂山太清宫",
+      "nameEn": "Taiqing Palace",
+      "category": "cultural",
+      "description": "崂山最著名的道教建筑群，有2000多年历史，是道教发祥地之一。古树名木众多，环境清幽。",
+      "address": "青岛市崂山区崂山风景区太清宫",
+      "coordinates": {
+        "lat": 36.1231,
+        "lng": 120.4736
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "含在崂山门票内",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "三清殿",
+        "千年银杏",
+        "老子像",
+        "太清湾海景"
+      ],
+      "tips": "需要与崂山风景区门票一起购买。宫内有道长可以求签问道。春季玉兰花盛开时最美。请保持安静，尊重宗教场所。",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+    },
+    {
+      "id": "beijiushui",
+      "name": "北九水",
+      "nameEn": "Beijiushui Valley",
+      "category": "nature",
+      "description": "崂山北麓的峡谷景区，以清泉飞瀑著称，有九水十八潭之美誉。溪水清澈，山势险峻，是避暑胜地和徒步天堂。",
+      "address": "青岛市崂山区北九水风景区",
+      "coordinates": {
+        "lat": 36.1656,
+        "lng": 120.4033
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "含在崂山门票内",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "潮音瀑",
+        "九水画廊",
+        "靛缸湾",
+        "画壁峰"
+      ],
+      "tips": "雨季瀑布水量更大，景色更佳。需走山路，建议穿防滑鞋。需要一定体力，但老人小孩也可完成基本游览。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800"
+    },
+    {
+      "id": "hongkong-middle-road",
+      "name": "香港中路",
+      "nameEn": "Hong Kong Middle Road",
+      "category": "shopping",
+      "description": "青岛最现代化的商业中心，高楼林立，百货商场、五星级酒店、写字楼密集。是了解青岛现代城市发展的窗口。",
+      "address": "青岛市市南区香港中路",
+      "coordinates": {
+        "lat": 36.0678,
+        "lng": 120.3989
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "万象城",
+        "海信广场",
+        "奥帆中心",
+        "市政中心广场"
+      ],
+      "tips": "万象城是高端购物天堂。海信广场适合奢侈品消费。夜晚灯光璀璨，适合散步。建议与五四广场一起游览。",
+      "image": "https://images.unsplash.com/photo-1743586220752-ae2fb22acfdd?w=800&q=85"
+    },
+    {
+      "id": "sanjiaozhou",
+      "name": "三号码头",
+      "nameEn": "No.3 Wharf",
+      "category": "landmark",
+      "description": "青岛百年老码头，保留了大量德式建筑风格。如今已成为海鲜批发零售和美食打卡地标。",
+      "address": "青岛市市南区费县路",
+      "coordinates": {
+        "lat": 36.0594,
+        "lng": 120.3811
+      },
+      "openingHours": "全天（海鲜市场约05:00-18:00）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "德式仓库建筑",
+        "海鲜批发市场",
+        "滨海步行街",
+        "夕阳景观"
+      ],
+      "tips": "清晨的海鲜最新鲜，可以买到便宜又新鲜的海货。码头边的海鲜加工店收取一定加工费。傍晚时分景色最美。",
+      "image": "https://images.unsplash.com/photo-1779023877465-dacb0c58b435?w=800&q=85"
+    },
+    {
+      "id": "qingdao-museum",
+      "name": "青岛市博物馆",
+      "nameEn": "Qingdao Museum",
+      "category": "cultural",
+      "description": "展示青岛历史文化和山东地区文物的大型综合性博物馆，馆藏丰富，包括古代青铜器、陶瓷、书画等珍贵文物。",
+      "address": "青岛市崂山区梅岭东路51号",
+      "coordinates": {
+        "lat": 36.1022,
+        "lng": 120.4822
+      },
+      "openingHours": "09:00-17:00（周一闭馆）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "古代青铜器",
+        "明清瓷器",
+        "青岛历史展区",
+        "临时特展"
+      ],
+      "tips": "建议参加免费讲解服务。周一闭馆，注意安排时间。馆内有咖啡厅可以休息。适合了解青岛历史文化。",
+      "image": "https://images.unsplash.com/photo-1769434396924-e0ec354364d4?w=800&q=85"
+    },
+    {
+      "id": "laoheshan",
+      "name": "老何山公园",
+      "nameEn": "Laoheshan Park",
+      "category": "nature",
+      "description": "位于市中心的小山丘，海拔仅70米，但视野开阔，是俯瞰老城区和胶州湾的绝佳地点。山顶有观景平台。",
+      "address": "青岛市市北区标山路",
+      "coordinates": {
+        "lat": 36.0789,
+        "lng": 120.3622
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "山顶观景台",
+        "老城区全景",
+        "胶州湾风光",
+        "晨练好去处"
+      ],
+      "tips": "建议清晨或傍晚前往。可以看到老城区红瓦绿树的独特景色。山路不陡，适合各年龄段游客。",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85"
+    },
+    {
+      "id": "tsingtao-museum",
+      "name": "青岛啤酒博物馆",
+      "nameEn": "Tsingtao Beer Museum",
+      "category": "museum",
+      "description": "中国唯一的啤酒博物馆，展示了青岛啤酒百年历史和酿造工艺，参观后可品尝新鲜啤酒。",
+      "address": "青岛市市北区登州路56号",
+      "coordinates": {
+        "lat": 36.0756,
+        "lng": 120.3556
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "百年酿造设备",
+        "啤酒品鉴",
+        "醉酒小屋"
+      ],
+      "tips": "门票含两杯啤酒品鉴，建议下午参观后去登州路啤酒街。",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85"
+    },
+    {
+      "id": "little-qingdao",
+      "name": "小青岛",
+      "nameEn": "Little Qingdao Island",
+      "category": "nature",
+      "description": "位于胶州湾入口处的小岛，因形似古琴又称琴岛。岛上的白色灯塔是青岛的象征之一。",
+      "address": "青岛市市南区琴屿路26号",
+      "coordinates": {
+        "lat": 36.0536,
+        "lng": 120.3222
+      },
+      "openingHours": "07:30-18:00",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "白色灯塔",
+        "海景栈道",
+        "日落观景"
+      ],
+      "tips": "日落时分最美，可远眺栈桥和青岛湾。",
+      "image": "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=800&q=85"
+    },
+    {
+      "id": "mount-lao",
+      "name": "崂山",
+      "nameEn": "Mount Lao",
+      "category": "nature",
+      "description": "中国海岸线上最高的山峰，海拔1133米，被誉为海上第一名山。道教文化深厚，自然风光壮美。",
+      "address": "青岛市崂山区崂山风景区",
+      "coordinates": {
+        "lat": 36.1833,
+        "lng": 120.6167
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "180元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "太清宫",
+        "仰口海滩",
+        "北九水",
+        "巨峰日出"
+      ],
+      "tips": "建议安排一整天，南线看道教文化，东线看海景。",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85"
+    },
+    {
+      "id": "jiaozhou-bridge",
+      "name": "胶州湾大桥",
+      "nameEn": "Jiaozhou Bay Bridge",
+      "category": "landmark",
+      "description": "全长36.48公里，曾是世界上最长的跨海大桥，桥梁设计优美。",
+      "address": "青岛市黄岛区",
+      "coordinates": {
+        "lat": 36.1167,
+        "lng": 120.25
+      },
+      "openingHours": "全天",
+      "ticketPrice": "通行费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "跨海大桥",
+        "海景驾驶"
+      ],
+      "tips": "夜间灯光璀璨，建议驾车体验。",
+      "image": "https://images.unsplash.com/photo-1698215191113-6f879dc1b538?w=800&q=85"
+    },
+    {
+      "id": "xiaoyushan",
+      "name": "小鱼山公园",
+      "nameEn": "Xiaoyushan Park",
+      "category": "park",
+      "description": "海拔60米，山顶览潮阁是观赏青岛前海景致的最佳地点。",
+      "address": "青岛市市南区福山支路24号",
+      "coordinates": {
+        "lat": 36.0611,
+        "lng": 120.3306
+      },
+      "openingHours": "07:00-18:30",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "览潮阁",
+        "前海全景"
+      ],
+      "tips": "与信号山公园相邻，可一起游览。",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85"
+    },
+    {
+      "id": "golden-sand",
+      "name": "金沙滩",
+      "nameEn": "Golden Sand Beach",
+      "category": "beach",
+      "description": "全长3500米，宽300米，是中国沙质最细、面积最大的沙滩之一。",
+      "address": "青岛市黄岛区金沙滩路",
+      "coordinates": {
+        "lat": 35.95,
+        "lng": 120.2167
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "细沙滩",
+        "冲浪",
+        "日出"
+      ],
+      "tips": "夏季人多，建议清晨或傍晚前往。",
+      "image": "https://images.unsplash.com/photo-1623553282739-cc6d8a91547e?w=800&q=85"
+    },
+    {
+      "id": "shilaoren",
+      "name": "石老人海水浴场",
+      "nameEn": "Shilaoren Beach",
+      "category": "beach",
+      "description": "因海中巨石形似老人而得名，是青岛最大的海水浴场。",
+      "address": "青岛市崂山区海口路",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 120.4667
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "石老人礁石",
+        "日落"
+      ],
+      "tips": "日落时分石老人剪影格外壮观。",
+      "image": "https://images.unsplash.com/photo-1611416611145-3316caa52c73?w=800&q=85"
+    },
+    {
+      "id": "pichai-yuan",
+      "name": "劈柴院",
+      "nameEn": "Pichai Yuan",
+      "category": "street",
+      "description": "青岛最有名的老街美食区，汇集各种青岛特色小吃和海鲜。",
+      "address": "青岛市市南区河北路16号",
+      "coordinates": {
+        "lat": 36.0694,
+        "lng": 120.3167
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "青岛小吃",
+        "海鲜大排档"
+      ],
+      "tips": "晚上去更有氛围，推荐烤鱿鱼和海鲜。",
+      "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&q=85"
+    },
+    {
+      "id": "naval-museum",
+      "name": "中国海军博物馆",
+      "nameEn": "Chinese Navy Museum",
+      "category": "museum",
+      "description": "中国唯一的海军军事主题博物馆，可登舰参观退役军舰和潜艇。",
+      "address": "青岛市市南区莱阳路8号",
+      "coordinates": {
+        "lat": 36.0556,
+        "lng": 120.3278
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "退役军舰",
+        "潜艇参观"
+      ],
+      "tips": "潜艇参观需提前预约，建议上午去。",
+      "image": "https://images.unsplash.com/photo-1674886703051-334be5dab114?w=800&q=85"
+    },
+    {
+      "id": "underwater-world",
+      "name": "青岛海底世界",
+      "nameEn": "Qingdao Underwater World",
+      "category": "museum",
+      "description": "中国第一个水族馆，拥有亚洲最大的亚克力玻璃展窗。",
+      "address": "青岛市市南区莱阳路2号",
+      "coordinates": {
+        "lat": 36.0556,
+        "lng": 120.325
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "130元",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "海底隧道",
+        "水母馆"
+      ],
+      "tips": "周末人多，建议工作日前往。",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=85"
+    },
+    {
+      "id": "ocean-uni",
+      "name": "中国海洋大学",
+      "nameEn": "Ocean University of China",
+      "category": "landmark",
+      "description": "中国最著名的海洋类高等学府，校园内保留了大量德式建筑。",
+      "address": "青岛市市南区鱼山路5号",
+      "coordinates": {
+        "lat": 36.0639,
+        "lng": 120.3333
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
+      "highlights": [
+        "德式校园",
+        "海洋科学馆"
+      ],
+      "tips": "鱼山校区最值得参观，德式建筑保存完好。",
+      "image": "https://images.unsplash.com/photo-1476673160081-cf065607f449?w=800&q=85"
+    },
+    {
+      "id": "polar-world",
+      "name": "青岛极地海洋世界",
+      "nameEn": "Qingdao Polar Ocean World",
+      "category": "museum",
+      "description": "集极地动物展示、海洋动物表演于一体的大型主题公园。",
+      "address": "青岛市崂山区东海东路60号",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 120.45
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "180元",
+      "recommendedVisitTime": "3-4小时",
+      "highlights": [
+        "白鲸表演",
+        "企鹅馆"
+      ],
+      "tips": "表演时间需提前查看，建议先看白鲸表演。",
+      "image": "https://images.unsplash.com/photo-1516815231560-8f41ec531527?w=800&q=85"
+    },
+    {
+      "id": "beer-street",
+      "name": "登州路啤酒街",
+      "nameEn": "Dengzhou Road Beer Street",
+      "category": "street",
+      "description": "青岛啤酒的发源地，整条街都是啤酒屋和海鲜大排档。",
+      "address": "青岛市市北区登州路",
+      "coordinates": {
+        "lat": 36.0756,
+        "lng": 120.3556
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "散装啤酒",
+        "海鲜烧烤"
+      ],
+      "tips": "用塑料袋打散啤是青岛特色体验。",
+      "image": "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=800&q=85"
+    },
+    {
+      "id": "silver-beach",
+      "name": "银沙滩",
+      "nameEn": "Silver Sand Beach",
+      "category": "beach",
+      "description": "位于黄岛区，沙滩呈银白色，水质清澈，人少安静。",
+      "address": "青岛市黄岛区",
+      "coordinates": {
+        "lat": 35.9333,
+        "lng": 120.2
+      },
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "银白沙滩",
+        "清澈海水"
+      ],
+      "tips": "比金沙滩人少，适合安静度假。",
+      "image": "https://images.unsplash.com/photo-1668868466735-f357ac9db649?w=800&q=85"
+    },
+    {
+      "id": "zhanshan-temple",
+      "name": "湛山寺",
+      "nameEn": "Zhanshan Temple",
+      "category": "temple",
+      "description": "青岛市区唯一的佛寺，始建于1934年，依山面海。",
+      "address": "青岛市市南区芝泉路2号",
+      "coordinates": {
+        "lat": 36.0583,
+        "lng": 120.35
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "10元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "浮屠塔",
+        "佛教文化"
+      ],
+      "tips": "环境清幽，适合静心参观。",
+      "image": "https://images.unsplash.com/photo-1566487097168-e91a4f38bee2?w=800&q=85"
+    },
+    {
+      "id": "qingdao-museum",
+      "name": "青岛市博物馆",
+      "nameEn": "Qingdao Municipal Museum",
+      "category": "museum",
+      "description": "综合性博物馆，馆藏文物16万余件。",
+      "address": "青岛市崂山区梅岭路27号",
+      "coordinates": {
+        "lat": 36.1167,
+        "lng": 120.4667
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "历史文物",
+        "青岛历史"
+      ],
+      "tips": "周一闭馆，需提前预约。",
+      "image": "https://images.unsplash.com/photo-1674200648539-75a8bde2fee7?w=800&q=85"
+    },
+    {
+      "id": "no1-beach",
+      "name": "第一海水浴场",
+      "nameEn": "No.1 Bathing Beach",
+      "category": "beach",
+      "description": "青岛最著名的海水浴场，沙质细腻，坡度平缓。",
+      "address": "青岛市市南区南海路",
+      "coordinates": {
+        "lat": 36.0583,
+        "lng": 120.3333
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "游泳",
+        "沙滩"
+      ],
+      "tips": "夏季7-8月开放，更衣室收费。",
+      "image": "https://images.unsplash.com/photo-1524293581917-878a6d017c71?w=800&q=85"
+    },
+    {
+      "id": "zhongshan-park",
+      "name": "中山公园",
+      "nameEn": "Zhongshan Park",
+      "category": "park",
+      "description": "青岛最大的综合性公园，每年春天樱花盛开时举办樱花会。",
+      "address": "青岛市市南区文登路28号",
+      "coordinates": {
+        "lat": 36.0611,
+        "lng": 120.3472
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "樱花大道",
+        "动物园"
+      ],
+      "tips": "4月樱花季最美，与动物园相邻。",
+      "image": "https://images.unsplash.com/photo-1657803721126-aea0fd022360?w=800&q=85"
+    },
+    {
+      "id": "haichang-polar",
+      "name": "青岛海昌极地海洋公园",
+      "nameEn": "Qingdao Haichang Polar Park",
+      "category": "museum",
+      "description": "集极地动物展示和海洋动物表演于一体。",
+      "address": "青岛市崂山区",
+      "coordinates": {
+        "lat": 36.1,
+        "lng": 120.45
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "180元",
+      "recommendedVisitTime": "3小时",
+      "highlights": [
+        "白鲸",
+        "海豚"
+      ],
+      "tips": "适合亲子游。",
+      "image": "https://images.unsplash.com/photo-1588001255325-55a26430101c?w=800&q=85"
+    },
+    {
+      "id": "qingdao-beer-plaza",
+      "name": "青岛啤酒街",
+      "nameEn": "Qingdao Beer Street",
+      "category": "street",
+      "description": "登州路啤酒街，青岛啤酒文化集中地。",
+      "address": "青岛市市北区",
+      "coordinates": {
+        "lat": 36.08,
+        "lng": 120.36
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "啤酒文化",
+        "海鲜"
+      ],
+      "tips": "品尝青岛啤酒。",
+      "image": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&q=85"
+    },
+    {
+      "id": "jiushui-mountain",
+      "name": "北九水",
+      "nameEn": "Jiushui",
+      "category": "nature",
+      "description": "崂山北线景区，有九水十八潭。",
+      "address": "青岛市崂山区",
+      "coordinates": {
+        "lat": 36.18,
+        "lng": 120.62
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "含崂山票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "瀑布",
+        "潭水"
+      ],
+      "tips": "夏季最佳。",
+      "image": "https://images.unsplash.com/photo-1695197950346-476e51f5748d?w=800&q=85"
+    },
+    {
+      "id": "yangkou-beach",
+      "name": "仰口海滩",
+      "nameEn": "Yangkou Beach",
+      "category": "beach",
+      "description": "崂山东部的海滩，可看日出。",
+      "address": "青岛市崂山区",
+      "coordinates": {
+        "lat": 36.13,
+        "lng": 120.63
+      },
+      "openingHours": "全天",
+      "ticketPrice": "含崂山票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "海滩",
+        "日出"
+      ],
+      "tips": "清晨看日出。",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=85"
+    },
+    {
+      "id": "jiufeng-mountain",
+      "name": "巨峰",
+      "nameEn": "Jufeng",
+      "category": "nature",
+      "description": "崂山最高峰，海拔1133米。",
+      "address": "青岛市崂山区",
+      "coordinates": {
+        "lat": 36.18,
+        "lng": 120.62
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "含崂山票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "日出",
+        "云海"
+      ],
+      "tips": "看日出最佳。",
+      "image": "https://images.unsplash.com/photo-1742689502186-fe7d6aa1402a?w=800&q=85"
+    },
+    {
+      "id": "qingdao-bay",
+      "name": "青岛湾",
+      "nameEn": "Qingdao Bay",
+      "category": "beach",
+      "description": "青岛最美的海湾之一，有栈桥和小青岛。",
+      "address": "青岛市市南区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 120.33
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "海湾",
+        "栈桥"
+      ],
+      "tips": "与栈桥一起游览。",
+      "image": "https://images.unsplash.com/photo-1689143626749-3c2ab3ebca45?w=800&q=85"
+    },
+    {
+      "id": "huashi-park",
+      "name": "花石楼",
+      "nameEn": "Huashi Tower",
+      "category": "landmark",
+      "description": "八大关的标志性建筑，花岗岩和鹅卵石建造。",
+      "address": "青岛市市南区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 120.35
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "8.5元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "欧式建筑",
+        "海景"
+      ],
+      "tips": "了解八大关建筑。",
+      "image": "https://images.unsplash.com/photo-1653809213702-3790e8021e78?w=800&q=85"
+    },
+    {
+      "id": "princess-building",
+      "name": "公主楼",
+      "nameEn": "Princess Building",
+      "category": "landmark",
+      "description": "八大关的童话式建筑，北欧风格。",
+      "address": "青岛市市南区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 120.35
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "15元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "北欧建筑"
+      ],
+      "tips": "拍照很出片。",
+      "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=800&q=85"
+    },
+    {
+      "id": "danish-consulate",
+      "name": "丹麦领事馆旧址",
+      "nameEn": "Former Danish Consulate",
+      "category": "landmark",
+      "description": "八大关的欧式建筑，丹麦风格。",
+      "address": "青岛市市南区",
+      "coordinates": {
+        "lat": 36.05,
+        "lng": 120.35
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "欧式建筑"
+      ],
+      "tips": "了解青岛历史。",
+      "image": "https://images.unsplash.com/photo-1610540626994-c444956f0d6d?w=800&q=85"
+    },
+    {
+      "id": "qingdao-tv",
+      "name": "青岛电视塔",
+      "nameEn": "Qingdao TV Tower",
+      "category": "landmark",
+      "description": "青岛的标志性建筑之一，可俯瞰城市全景。",
+      "address": "青岛市市南区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 120.33
+      },
+      "openingHours": "09:00-21:00",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "城市全景",
+        "旋转餐厅"
+      ],
+      "tips": "天气好时视野最佳。",
+      "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=85"
+    },
+    {
+      "id": "xinhaoping",
+      "name": "信号山灯塔",
+      "nameEn": "Signal Hill Lighthouse",
+      "category": "landmark",
+      "description": "信号山上的灯塔，可360度观景。",
+      "address": "青岛市市南区",
+      "coordinates": {
+        "lat": 36.06,
+        "lng": 120.34
+      },
+      "openingHours": "含信号山",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "灯塔",
+        "全景"
+      ],
+      "tips": "与信号山一起游览。",
+      "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "jiangtong-yitiao-jie",
+      "name": "啤酒街",
+      "nameEn": "Tsingtao Beer Street",
+      "description": "以青岛啤酒为主题的美食街，汇集了各种海鲜和地道的青岛菜，是体验青岛夜生活和大排档文化的绝佳去处。",
+      "address": "青岛市市北区登州路",
+      "priceRange": "人均80-150¥",
+      "highlights": [
+        "青岛原浆啤酒",
+        "烤海鲜",
+        "德式香肠",
+        "音乐表演"
+      ],
+      "tips": "每晚5点后营业，建议提前占座。啤酒按升计价，比超市略贵但更新鲜。烤海鲜是必点。",
+      "dishHighlights": [
+        "青岛原浆啤酒",
+        "烤海鲜",
+        "德式香肠"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Tsingtao Beer Street",
+      "rating": 4,
+      "avgPrice": 80,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhoushan-road-food",
+      "name": "劈柴院小吃",
+      "nameEn": "Picigin Food Street",
+      "description": "百年老字号小吃街，汇集了青岛传统小吃和各地美食，是游客必打卡的小吃圣地。",
+      "address": "青岛市市南区劈柴院",
+      "priceRange": "人均30-80¥",
+      "highlights": [
+        "豆腐脑",
+        "锅贴",
+        "烤鱼丸",
+        "糖葫芦"
+      ],
+      "tips": "选择老字号店铺更有保障。避开旅游旺季人潮更多。价格比外面略贵但味道更正宗。",
+      "dishHighlights": [
+        "豆腐脑",
+        "锅贴",
+        "烤鱼丸"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Picigin Food Street",
+      "rating": 4,
+      "avgPrice": 30,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "yunxiangyuan",
+      "name": "云祥楼",
+      "nameEn": "Yunxianglou",
+      "description": "老字号的鲁菜馆，以正宗的青岛本地菜著称，环境古色古香，是宴请宾客的好去处。",
+      "address": "青岛市市南区太平路31号",
+      "priceRange": "人均150-300¥",
+      "highlights": [
+        "葱烧海参",
+        "油焖大虾",
+        "清蒸鲈鱼",
+        "青岛凉粉"
+      ],
+      "tips": "需要提前预订。菜品精致，价格偏高。适合商务宴请或特殊场合。服务水平一流。",
+      "dishHighlights": [
+        "葱烧海参",
+        "油焖大虾",
+        "清蒸鲈鱼"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Yunxianglou",
+      "rating": 4,
+      "avgPrice": 150,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "laoshan-beer",
+      "name": "崂山矿泉水啤酒",
+      "nameEn": "Laoshan Mineral Water Beer",
+      "description": "以崂山矿泉水酿造的特色啤酒，口感清爽独特，是青岛啤酒的高端产品线。",
+      "address": "青岛市崂山区",
+      "priceRange": "人均50-100¥",
+      "highlights": [
+        "崂山啤酒",
+        "矿泉水酿造",
+        "特色下酒菜",
+        "工厂参观"
+      ],
+      "tips": "可以在啤酒厂直接购买。口感比普通青岛啤酒更清爽。适合作为特产带回家。",
+      "dishHighlights": [
+        "崂山啤酒",
+        "矿泉水酿造",
+        "特色下酒菜"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Laoshan Mineral Water Beer",
+      "rating": 4,
+      "avgPrice": 50,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "jinshatan-seafood",
+      "name": "金沙滩海鲜",
+      "nameEn": "Jinshatan Seafood",
+      "description": "金沙滩周边的海鲜大排档，食材新鲜，价格实惠，是海边度假的理想用餐选择。",
+      "address": "青岛市黄岛区金沙滩路",
+      "priceRange": "人均100-200¥",
+      "highlights": [
+        "活蹦乱跳的虾蟹",
+        "烤生蚝",
+        "辣炒蛤蜊",
+        "海鲜烧烤"
+      ],
+      "tips": "选择明码标价的店铺。自己在市场买海鲜加工更划算。注意防晒和防蚊虫。",
+      "dishHighlights": [
+        "活蹦乱跳的虾蟹",
+        "烤生蚝",
+        "辣炒蛤蜊"
+      ],
+      "tags": [
+        "seafood"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Jinshatan Seafood",
+      "rating": 4,
+      "avgPrice": 100,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "hongda-seafood",
+      "name": "宏达海鲜舫",
+      "nameEn": "Hongda Seafood Restaurant",
+      "description": "老字号海鲜酒楼，以新鲜的海产品和正宗的胶东菜闻名，环境优雅，服务周到。",
+      "address": "青岛市市南区东海西路12号",
+      "priceRange": "人均200-400¥",
+      "highlights": [
+        "清蒸螃蟹",
+        "红烧鲍鱼",
+        "海鲜拼盘",
+        "特色鱼丸"
+      ],
+      "tips": "海鲜按时令定价，冬天的螃蟹最肥美。建议提前预订包间。适合重要宴请。",
+      "dishHighlights": [
+        "清蒸螃蟹",
+        "红烧鲍鱼",
+        "海鲜拼盘"
+      ],
+      "tags": [
+        "seafood"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Hongda Seafood Restaurant",
+      "rating": 4,
+      "avgPrice": 200,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "laoshan-tofu",
+      "name": "崂山豆腐宴",
+      "nameEn": "Laoshan Tofu Feast",
+      "description": "以崂山特产豆腐为主题的特色餐厅，用豆腐做出各种菜品，口感细腻独特。",
+      "address": "青岛市崂山区王戈庄",
+      "priceRange": "人均80-120¥",
+      "highlights": [
+        "崂山豆腐",
+        "农家菜",
+        "山野菜",
+        "土鸡炖汤"
+      ],
+      "tips": "素食者的好选择。菜品新鲜但口味清淡。环境有乡村特色。适合家庭聚餐。",
+      "dishHighlights": [
+        "崂山豆腐",
+        "农家菜",
+        "山野菜"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Laoshan Tofu Feast",
+      "rating": 4,
+      "avgPrice": 80,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shandong-restaurant",
+      "name": "山东老家",
+      "nameEn": "Shandong Homeland",
+      "description": "主打山东传统家常菜，价格亲民，味道正宗，是体验山东饮食文化的好去处。",
+      "address": "青岛市市北区台东三路",
+      "priceRange": "人均50-80¥",
+      "highlights": [
+        "煎饼卷大葱",
+        "德州扒鸡",
+        "九转大肠",
+        "糖醋鲤鱼"
+      ],
+      "tips": "性价比很高，适合大众消费。分量足，建议少点一些。饭点需要等位。",
+      "dishHighlights": [
+        "煎饼卷大葱",
+        "德州扒鸡",
+        "九转大肠"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Shandong Homeland",
+      "rating": 4,
+      "avgPrice": 50,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "wangdama",
+      "name": "王大妈海鲜坊",
+      "nameEn": "Wang Dama Seafood House",
+      "description": "网红海鲜餐厅，以超大份量和新鲜食材著称，本地人和游客都爱去。",
+      "address": "青岛市市北区营口路",
+      "priceRange": "人均100-150¥",
+      "highlights": [
+        "蒸汽海鲜锅",
+        "辣炒蛤蜊",
+        "烤大虾",
+        "海肠捞饭"
+      ],
+      "tips": "分量很大，建议少点。可以自带酒水。排队时间长，建议提前去。适合多人聚餐。",
+      "dishHighlights": [
+        "蒸汽海鲜锅",
+        "辣炒蛤蜊",
+        "烤大虾"
+      ],
+      "tags": [
+        "seafood"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Wang Dama Seafood House",
+      "rating": 4,
+      "avgPrice": 100,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "chuanrestaurant",
+      "name": "川蜀老火锅",
+      "nameEn": "Sichuan Hotpot",
+      "description": "正宗的四川火锅，在青岛也能吃到地道的麻辣火锅，是改变口味的好选择。",
+      "address": "青岛市市南区香港中路",
+      "priceRange": "人均100-150¥",
+      "highlights": [
+        "麻辣锅底",
+        "鲜毛肚",
+        "嫩牛肉",
+        "川味小吃"
+      ],
+      "tips": "辣度可以调整。食材新鲜，服务不错。环境有四川特色。适合冬季用餐。",
+      "dishHighlights": [
+        "麻辣锅底",
+        "鲜毛肚",
+        "嫩牛肉"
+      ],
+      "tags": [
+        "hotpot"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Sichuan Hotpot",
+      "rating": 4,
+      "avgPrice": 100,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "shandong-cuisine-minglu",
+      "name": "明炉鲁菜",
+      "nameEn": "Minglu Shandong Cuisine",
+      "description": "高端鲁菜餐厅，环境私密，菜品精致，是商务宴请的首选。",
+      "address": "青岛市市南区海天中心",
+      "priceRange": "人均300-500¥",
+      "highlights": [
+        "葱烧海参",
+        "糟熘鱼片",
+        "九转大肠",
+        "油焖大虾"
+      ],
+      "tips": "需要提前预订。服务费另计。菜品艺术感强。适合重要场合。",
+      "dishHighlights": [
+        "葱烧海参",
+        "糟熘鱼片",
+        "九转大肠"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Minglu Shandong Cuisine",
+      "rating": 4,
+      "avgPrice": 300,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "beach-barbecue",
+      "name": "海边烧烤",
+      "nameEn": "Beach Barbecue",
+      "description": "海边沙滩烧烤，吹着海风吃着烧烤，是青岛独特的夜生活方式。",
+      "address": "青岛市石老人海水浴场周边",
+      "priceRange": "人均80-120¥",
+      "highlights": [
+        "烤海鲜串",
+        "烤生蚝",
+        "青岛啤酒",
+        "沙滩露营"
+      ],
+      "tips": "晚上氛围很好，但要注意防蚊虫。价格比市区略贵。音乐和海边风景是加分项。",
+      "dishHighlights": [
+        "烤海鲜串",
+        "烤生蚝",
+        "青岛啤酒"
+      ],
+      "tags": [
+        "bbq"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Beach Barbecue",
+      "rating": 4,
+      "avgPrice": 80,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xiaochaogu",
+      "name": "小餐馆",
+      "nameEn": "Small Restaurant",
+      "description": "藏在小巷里的地道小馆子，味道正宗，价格实惠，是本地人的食堂。",
+      "address": "青岛市市南区大学路",
+      "priceRange": "人均30-60¥",
+      "highlights": [
+        "鲅鱼饺子",
+        "排骨米饭",
+        "海鲜面",
+        "家常菜"
+      ],
+      "tips": "需要本地人指引才能找到。菜品简单但美味。老板热情好客。适合体验青岛本地生活。",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "排骨米饭",
+        "海鲜面"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Small Restaurant",
+      "rating": 4,
+      "avgPrice": 30,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "baohua-restaurant",
+      "name": "饱海楼",
+      "nameEn": "Baohailou",
+      "description": "老字号的蒸汽海鲜店，以蒸汽海鲜保留原汁原味，是青岛特色吃法的代表。",
+      "address": "青岛市市北区泰山路",
+      "priceRange": "人均150-250¥",
+      "highlights": [
+        "蒸汽海鲜拼盘",
+        "贝类大咖",
+        "蒸饺",
+        "海鲜粥"
+      ],
+      "tips": "海鲜按斤计价，明码标价。蒸汽锅能保留海鲜原味。吃完后可以用汤煮粥。",
+      "dishHighlights": [
+        "蒸汽海鲜拼盘",
+        "贝类大咖",
+        "蒸饺"
+      ],
+      "tags": [
+        "seafood"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Baohailou",
+      "rating": 4,
+      "avgPrice": 150,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xinba-international",
+      "name": "鑫百利国际会馆",
+      "nameEn": "Xinbailey International Club",
+      "description": "高端私人会所，环境私密，以官府菜和精致鲁菜为主，是名流汇聚之地。",
+      "address": "青岛市市南区东海西路",
+      "priceRange": "人均500-800¥",
+      "highlights": [
+        "精致鲁菜",
+        "燕窝",
+        "鲍鱼",
+        "私人包间"
+      ],
+      "tips": "需要会员或预约。服务顶级，私密性好。适合商务接待。最低消费较高。",
+      "dishHighlights": [
+        "精致鲁菜",
+        "燕窝",
+        "鲍鱼"
+      ],
+      "tags": [
+        "luxury"
+      ],
+      "type": "blackpearl",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Xinbailey International Club",
+      "rating": 4,
+      "avgPrice": 500,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "guangzhou-seafood",
+      "name": "粤菜坊",
+      "nameEn": "Cantonese Seafood",
+      "description": "主打粤式海鲜料理，口味清淡健康，适合不吃辣的游客。",
+      "address": "青岛市市南区香港中路",
+      "priceRange": "人均150-250¥",
+      "highlights": [
+        "白灼虾",
+        "清蒸石斑",
+        "烧鹅",
+        "粤式点心"
+      ],
+      "tips": "口味清淡，保留食材原味。适合老人小孩。点心自助性价比高。提前预订有优惠。",
+      "dishHighlights": [
+        "白灼虾",
+        "清蒸石斑",
+        "烧鹅"
+      ],
+      "tags": [
+        "cantonese"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Cantonese Seafood",
+      "rating": 4,
+      "avgPrice": 150,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "korean-restaurant",
+      "name": "韩式烤肉",
+      "nameEn": "Korean BBQ",
+      "description": "青岛靠近韩国，境内有很多正宗韩式烤肉店，价格比韩国本地还实惠。",
+      "address": "青岛市市北区台东",
+      "priceRange": "人均80-120¥",
+      "highlights": [
+        "五花肉",
+        "牛肉拼盘",
+        "韩式小菜",
+        "石锅拌饭"
+      ],
+      "tips": "青岛的韩国人社区烤肉店更正宗。肉质新鲜，酱料地道。无限续小菜是亮点。",
+      "dishHighlights": [
+        "五花肉",
+        "牛肉拼盘",
+        "韩式小菜"
+      ],
+      "tags": [
+        "korean"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Korean BBQ",
+      "rating": 4,
+      "avgPrice": 80,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xiaomarus",
+      "name": "小马丁",
+      "nameEn": "Xiao Ma Dun",
+      "description": "网红小馆子，以创意青岛菜著称，适合年轻人和拍照打卡。",
+      "address": "青岛市市南区闽江路",
+      "priceRange": "人均60-100¥",
+      "highlights": [
+        "创意海鲜",
+        "分子料理",
+        "特色饮品",
+        "INS风装修"
+      ],
+      "tips": "需要排队，建议提前预约。菜品卖相好，适合发朋友圈。味道中规中矩，偏网红风格。",
+      "dishHighlights": [
+        "创意海鲜",
+        "分子料理",
+        "特色饮品"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Xiao Ma Dun",
+      "rating": 4,
+      "avgPrice": 60,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "xinamei-seafood",
+      "name": "新雅苑海鲜城",
+      "nameEn": "Xinyayuan Seafood City",
+      "description": "大型海鲜综合酒楼，品种齐全，价格透明，是游客的热门选择。",
+      "address": "青岛市黄岛区武夷山路",
+      "priceRange": "人均120-200¥",
+      "highlights": [
+        "鲜活海鲜池",
+        "海鲜大咖",
+        "烤鸭",
+        "鲁菜经典"
+      ],
+      "tips": "海鲜自己挑选，称重计价。品种齐全，丰俭由人。环境干净整洁。适合团体聚餐。",
+      "dishHighlights": [
+        "鲜活海鲜池",
+        "海鲜大咖",
+        "烤鸭"
+      ],
+      "tags": [
+        "seafood"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Xinyayuan Seafood City",
+      "rating": 4,
+      "avgPrice": 120,
+      "coordinates": {
+        "lat": 36.0671,
+        "lng": 120.3826
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "laoshanorganic",
+      "name": "崂山有机农家菜",
+      "nameEn": "Laoshan Organic Farm Food",
+      "description": "位于崂山脚下的农家乐，以有机蔬菜和山珍为主打，原生态体验。",
+      "address": "青岛市崂山区北宅",
+      "priceRange": "人均60-100¥",
+      "highlights": [
+        "崂山蘑菇",
+        "山野菜",
+        "跑山鸡",
+        "农家豆腐"
+      ],
+      "tips": "需要开车前往，周末人满为患。菜品新鲜但口味偏咸。适合农家乐体验。建议提前订餐。",
+      "dishHighlights": [
+        "崂山蘑菇",
+        "山野菜",
+        "跑山鸡"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Laoshan Organic Farm Food",
+      "rating": 4,
+      "avgPrice": 60,
+      "coordinates": {
+        "lat": 36.1311,
+        "lng": 120.4722
+      },
+      "phone": "",
+      "hours": "10:00-22:00",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-hengyi",
+      "name": "恒益美食",
+      "nameEn": "Heng Yi",
+      "description": "老字号鲁菜馆，以正宗的胶东菜闻名，菜品精致，环境优雅。",
+      "address": "青岛市市南区太平路28号",
+      "priceRange": "人均150-300¥",
+      "highlights": [
+        "葱烧海参",
+        "红烧肉",
+        "糖醋里脊",
+        "海鲜全家福"
+      ],
+      "tips": "需要提前预订。环境安静适合商务宴请。菜品分量较大，建议少点。服务周到。",
+      "dishHighlights": [
+        "葱烧海参",
+        "红烧肉",
+        "糖醋里脊"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Heng Yi",
+      "rating": 4.5,
+      "avgPrice": 150,
+      "coordinates": {
+        "lat": 36.0672,
+        "lng": 120.3856
+      },
+      "phone": "",
+      "hours": "10:30-21:30",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-yuxiang",
+      "name": "裕祥楼",
+      "nameEn": "Yu Xiang Lou",
+      "description": "百年老字号，主打正宗鲁菜，是青岛人请客吃饭的首选之一。",
+      "address": "青岛市市北区中山路93号",
+      "priceRange": "人均80-150¥",
+      "highlights": [
+        "九转大肠",
+        "爆炒腰花",
+        "糖醋鲤鱼",
+        "扒鸡"
+      ],
+      "tips": "老字号品质有保障。招牌菜一定要点。饭点经常排队，建议提前到。性价比高。",
+      "dishHighlights": [
+        "九转大肠",
+        "爆炒腰花",
+        "糖醋鲤鱼"
+      ],
+      "tags": [
+        "local"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Yu Xiang Lou",
+      "rating": 4.4,
+      "avgPrice": 80,
+      "coordinates": {
+        "lat": 36.0692,
+        "lng": 120.3806
+      },
+      "phone": "",
+      "hours": "10:00-21:00",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-jiaoyuan",
+      "name": "娇苑鱼港",
+      "nameEn": "Jiao Yuan Yu Gang",
+      "description": "以活海鲜著称的酒楼，所有海鲜现点现做，新鲜度百分百保证。",
+      "address": "青岛市市南区东海西路22号",
+      "priceRange": "人均200-400¥",
+      "highlights": [
+        "帝王蟹",
+        "澳洲龙虾",
+        "石斑鱼",
+        "鲍鱼刺身"
+      ],
+      "tips": "海鲜按时令定价，价格透明。适合重要宴请。包间需要提前预订。环境高档。",
+      "dishHighlights": [
+        "帝王蟹",
+        "澳洲龙虾",
+        "石斑鱼"
+      ],
+      "tags": [
+        "seafood"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Jiao Yuan Yu Gang",
+      "rating": 4.6,
+      "avgPrice": 200,
+      "coordinates": {
+        "lat": 36.0615,
+        "lng": 120.3932
+      },
+      "phone": "",
+      "hours": "10:30-22:00",
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-haizheng",
+      "name": "海政渔家",
+      "nameEn": "Hai Zheng",
+      "description": "渔民自己开的海鲜馆子，以实惠的价格和新鲜的海鲜著称。",
+      "address": "青岛市崂山区沙子口",
+      "priceRange": "人均80-150¥",
+      "highlights": [
+        "鲅鱼饺子",
+        "海肠捞饭",
+        "辣炒蛤蜊",
+        "蒸海鱼"
+      ],
+      "tips": "需要开车前往。可以自己在码头买海鲜来加工。分量足，适合多人聚餐。当地人推荐。",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "海肠捞饭",
+        "辣炒蛤蜊"
+      ],
+      "tags": [
+        "seafood"
+      ],
+      "type": "local",
+      "star": 0,
+      "diamond": 0,
+      "cuisine": "Hai Zheng",
+      "rating": 4.5,
+      "avgPrice": 80,
+      "coordinates": {
+        "lat": 36.1022,
+        "lng": 120.5022
+      },
+      "phone": "",
+      "hours": "10:00-21:00",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-25",
+      "name": "正宗辣炒蛤蜊",
+      "nameEn": "正宗辣炒蛤蜊 (辣炒蛤蜊)",
+      "type": "cafe",
+      "cuisine": "辣炒蛤蜊",
+      "avgPrice": 60,
+      "rating": 4.1,
+      "address": "青岛市老城区美食街149号",
+      "coordinates": {
+        "lat": 36.0551,
+        "lng": 120.3852
+      },
+      "phone": "+86 0532 28475078",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "青岛本地人推荐的辣炒蛤蜊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "海鲜",
+        "啤酒"
+      ],
+      "tags": [
+        "文艺",
+        "咖啡",
+        "下午茶"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-27",
+      "name": "街边辣炒蛤蜊",
+      "nameEn": "街边辣炒蛤蜊 (辣炒蛤蜊)",
+      "type": "local",
+      "cuisine": "辣炒蛤蜊",
+      "avgPrice": 49,
+      "rating": 4.3,
+      "address": "青岛市新城区美食街118号",
+      "coordinates": {
+        "lat": 36.0593,
+        "lng": 120.3747
+      },
+      "phone": "+86 0532 55529907",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的辣炒蛤蜊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "辣炒蛤蜊"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-29",
+      "name": "老街烤鱿鱼",
+      "nameEn": "老街烤鱿鱼 (烤鱿鱼)",
+      "type": "local",
+      "cuisine": "烤鱿鱼",
+      "avgPrice": 132,
+      "rating": 4.2,
+      "address": "青岛市老城区美食街15号",
+      "coordinates": {
+        "lat": 36.0493,
+        "lng": 120.3456
+      },
+      "phone": "+86 0532 43392699",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "青岛本地人推荐的烤鱿鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "鲅鱼饺子",
+        "烤鱿鱼"
+      ],
+      "tags": [
+        "老字号",
+        "家常菜",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-31",
+      "name": "传统鲅鱼饺子",
+      "nameEn": "传统鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 78,
+      "rating": 4.1,
+      "address": "青岛市老城区美食街45号",
+      "coordinates": {
+        "lat": 36.04,
+        "lng": 120.4095
+      },
+      "phone": "+86 0532 10184739",
+      "hours": "17:00-02:00",
+      "description": "青岛本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒",
+        "辣炒蛤蜊",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "本地人爱去",
+        "老字号",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-33",
+      "name": "老字号啤酒",
+      "nameEn": "老字号啤酒 (啤酒)",
+      "type": "street",
+      "cuisine": "啤酒",
+      "avgPrice": 45,
+      "rating": 4.2,
+      "address": "青岛市老城区美食街169号",
+      "coordinates": {
+        "lat": 36.0811,
+        "lng": 120.3372
+      },
+      "phone": "+86 0532 18697358",
+      "hours": "06:00-14:00",
+      "description": "青岛本地人推荐的啤酒店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "啤酒",
+        "海鲜"
+      ],
+      "tags": [
+        "网红打卡",
+        "小吃",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-35",
+      "name": "正宗辣炒蛤蜊",
+      "nameEn": "正宗辣炒蛤蜊 (辣炒蛤蜊)",
+      "type": "street",
+      "cuisine": "辣炒蛤蜊",
+      "avgPrice": 56,
+      "rating": 4.3,
+      "address": "青岛市市中心区美食街30号",
+      "coordinates": {
+        "lat": 36.0984,
+        "lng": 120.3629
+      },
+      "phone": "+86 0532 25477129",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的辣炒蛤蜊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "辣炒蛤蜊",
+        "烤鱿鱼",
+        "啤酒"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-37",
+      "name": "传统烤鱿鱼",
+      "nameEn": "传统烤鱿鱼 (烤鱿鱼)",
+      "type": "local",
+      "cuisine": "烤鱿鱼",
+      "avgPrice": 37,
+      "rating": 4.4,
+      "address": "青岛市新城区美食街188号",
+      "coordinates": {
+        "lat": 36.1128,
+        "lng": 120.3742
+      },
+      "phone": "+86 0532 70221116",
+      "hours": "09:00-21:00",
+      "description": "青岛本地人推荐的烤鱿鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烤鱿鱼",
+        "辣炒蛤蜊",
+        "海鲜"
+      ],
+      "tags": [
+        "隐藏美食",
+        "本地人爱去",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-39",
+      "name": "地道辣炒蛤蜊",
+      "nameEn": "地道辣炒蛤蜊 (辣炒蛤蜊)",
+      "type": "street",
+      "cuisine": "辣炒蛤蜊",
+      "avgPrice": 24,
+      "rating": 4.4,
+      "address": "青岛市市中心区美食街4号",
+      "coordinates": {
+        "lat": 36.0923,
+        "lng": 120.4258
+      },
+      "phone": "+86 0532 45753542",
+      "hours": "09:00-21:00",
+      "description": "青岛本地人推荐的辣炒蛤蜊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "啤酒",
+        "辣炒蛤蜊"
+      ],
+      "tags": [
+        "深夜美食",
+        "夜市",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-41",
+      "name": "巷子啤酒",
+      "nameEn": "巷子啤酒 (啤酒)",
+      "type": "local",
+      "cuisine": "啤酒",
+      "avgPrice": 77,
+      "rating": 4.4,
+      "address": "青岛市老城区美食街99号",
+      "coordinates": {
+        "lat": 36.0822,
+        "lng": 120.4187
+      },
+      "phone": "+86 0532 72555855",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的啤酒店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "啤酒",
+        "辣炒蛤蜊"
+      ],
+      "tags": [
+        "排队王",
+        "性价比高",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-43",
+      "name": "街边鲅鱼饺子",
+      "nameEn": "街边鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 58,
+      "rating": 4.4,
+      "address": "青岛市市中心区美食街125号",
+      "coordinates": {
+        "lat": 36.07,
+        "lng": 120.3715
+      },
+      "phone": "+86 0532 97558308",
+      "hours": "09:00-21:00",
+      "description": "青岛本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "辣炒蛤蜊",
+        "海鲜",
+        "烤鱿鱼"
+      ],
+      "tags": [
+        "老字号",
+        "家常菜",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-45",
+      "name": "街边海鲜",
+      "nameEn": "街边海鲜 (海鲜)",
+      "type": "street",
+      "cuisine": "海鲜",
+      "avgPrice": 54,
+      "rating": 4.3,
+      "address": "青岛市新城区美食街49号",
+      "coordinates": {
+        "lat": 36.0317,
+        "lng": 120.4034
+      },
+      "phone": "+86 0532 63431095",
+      "hours": "10:00-22:00",
+      "description": "青岛本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒",
+        "烤鱿鱼",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "网红打卡",
+        "深夜美食",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-47",
+      "name": "街边辣炒蛤蜊",
+      "nameEn": "街边辣炒蛤蜊 (辣炒蛤蜊)",
+      "type": "local",
+      "cuisine": "辣炒蛤蜊",
+      "avgPrice": 121,
+      "rating": 4.8,
+      "address": "青岛市市中心区美食街6号",
+      "coordinates": {
+        "lat": 36.0573,
+        "lng": 120.4018
+      },
+      "phone": "+86 0532 66323518",
+      "hours": "10:00-22:00",
+      "description": "青岛本地人推荐的辣炒蛤蜊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烤鱿鱼",
+        "鲅鱼饺子",
+        "海鲜"
+      ],
+      "tags": [
+        "本地人爱去",
+        "排队王",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-49",
+      "name": "青岛味烤鱿鱼",
+      "nameEn": "青岛味烤鱿鱼 (烤鱿鱼)",
+      "type": "local",
+      "cuisine": "烤鱿鱼",
+      "avgPrice": 93,
+      "rating": 4.0,
+      "address": "青岛市老城区美食街17号",
+      "coordinates": {
+        "lat": 36.0476,
+        "lng": 120.3905
+      },
+      "phone": "+86 0532 23723341",
+      "hours": "06:00-14:00",
+      "description": "青岛本地人推荐的烤鱿鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒",
+        "烤鱿鱼",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "老字号",
+        "隐藏美食",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-51",
+      "name": "老街烤鱿鱼",
+      "nameEn": "老街烤鱿鱼 (烤鱿鱼)",
+      "type": "street",
+      "cuisine": "烤鱿鱼",
+      "avgPrice": 58,
+      "rating": 4.2,
+      "address": "青岛市老城区美食街159号",
+      "coordinates": {
+        "lat": 36.0923,
+        "lng": 120.3833
+      },
+      "phone": "+86 0532 41728990",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的烤鱿鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "啤酒",
+        "辣炒蛤蜊"
+      ],
+      "tags": [
+        "夜市",
+        "小吃",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-53",
+      "name": "正宗烤鱿鱼",
+      "nameEn": "正宗烤鱿鱼 (烤鱿鱼)",
+      "type": "local",
+      "cuisine": "烤鱿鱼",
+      "avgPrice": 48,
+      "rating": 4.4,
+      "address": "青岛市老城区美食街157号",
+      "coordinates": {
+        "lat": 36.1014,
+        "lng": 120.3672
+      },
+      "phone": "+86 0532 29359261",
+      "hours": "06:00-14:00",
+      "description": "青岛本地人推荐的烤鱿鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "啤酒",
+        "烤鱿鱼"
+      ],
+      "tags": [
+        "社区老店",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-55",
+      "name": "正宗烤鱿鱼",
+      "nameEn": "正宗烤鱿鱼 (烤鱿鱼)",
+      "type": "street",
+      "cuisine": "烤鱿鱼",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "青岛市市中心区美食街137号",
+      "coordinates": {
+        "lat": 36.0261,
+        "lng": 120.3994
+      },
+      "phone": "+86 0532 67917489",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的烤鱿鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒",
+        "鲅鱼饺子",
+        "烤鱿鱼"
+      ],
+      "tags": [
+        "小吃",
+        "网红打卡",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-57",
+      "name": "青岛味辣炒蛤蜊",
+      "nameEn": "青岛味辣炒蛤蜊 (辣炒蛤蜊)",
+      "type": "local",
+      "cuisine": "辣炒蛤蜊",
+      "avgPrice": 97,
+      "rating": 4.3,
+      "address": "青岛市老城区美食街189号",
+      "coordinates": {
+        "lat": 36.1064,
+        "lng": 120.416
+      },
+      "phone": "+86 0532 28261341",
+      "hours": "17:00-02:00",
+      "description": "青岛本地人推荐的辣炒蛤蜊店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烤鱿鱼",
+        "鲅鱼饺子",
+        "海鲜"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-59",
+      "name": "老字号啤酒",
+      "nameEn": "老字号啤酒 (啤酒)",
+      "type": "local",
+      "cuisine": "啤酒",
+      "avgPrice": 41,
+      "rating": 4.3,
+      "address": "青岛市市中心区美食街4号",
+      "coordinates": {
+        "lat": 36.035,
+        "lng": 120.4
+      },
+      "phone": "+86 0532 11401355",
+      "hours": "09:00-21:00",
+      "description": "青岛本地人推荐的啤酒店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "烤鱿鱼",
+        "辣炒蛤蜊",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-61",
+      "name": "老街鲅鱼饺子",
+      "nameEn": "老街鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 61,
+      "rating": 4.8,
+      "address": "青岛市市中心区美食街164号",
+      "coordinates": {
+        "lat": 36.0776,
+        "lng": 120.3634
+      },
+      "phone": "+86 0532 63009594",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "青岛本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒",
+        "烤鱿鱼",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "老字号",
+        "社区老店",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-63",
+      "name": "巷子海鲜",
+      "nameEn": "巷子海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 66,
+      "rating": 4.1,
+      "address": "青岛市老城区美食街165号",
+      "coordinates": {
+        "lat": 36.0834,
+        "lng": 120.4178
+      },
+      "phone": "+86 0532 55301048",
+      "hours": "17:00-02:00",
+      "description": "青岛本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "辣炒蛤蜊",
+        "烤鱿鱼",
+        "啤酒"
+      ],
+      "tags": [
+        "隐藏美食",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-65",
+      "name": "老字号海鲜",
+      "nameEn": "老字号海鲜 (海鲜)",
+      "type": "street",
+      "cuisine": "海鲜",
+      "avgPrice": 37,
+      "rating": 4.8,
+      "address": "青岛市新城区美食街141号",
+      "coordinates": {
+        "lat": 36.0294,
+        "lng": 120.3494
+      },
+      "phone": "+86 0532 61934635",
+      "hours": "06:00-14:00",
+      "description": "青岛本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒",
+        "烤鱿鱼",
+        "海鲜"
+      ],
+      "tags": [
+        "小吃",
+        "夜市",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-67",
+      "name": "阿婆海鲜",
+      "nameEn": "阿婆海鲜 (海鲜)",
+      "type": "cafe",
+      "cuisine": "海鲜",
+      "avgPrice": 71,
+      "rating": 4.2,
+      "address": "青岛市老城区美食街37号",
+      "coordinates": {
+        "lat": 36.0448,
+        "lng": 120.3827
+      },
+      "phone": "+86 0532 27351902",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "海鲜",
+        "啤酒",
+        "烤鱿鱼"
+      ],
+      "tags": [
+        "安静",
+        "咖啡",
+        "文艺"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-69",
+      "name": "阿婆鲅鱼饺子",
+      "nameEn": "阿婆鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 147,
+      "rating": 4.4,
+      "address": "青岛市市中心区美食街3号",
+      "coordinates": {
+        "lat": 36.1135,
+        "lng": 120.3698
+      },
+      "phone": "+86 0532 67134942",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "辣炒蛤蜊",
+        "海鲜",
+        "鲅鱼饺子"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-71",
+      "name": "传统鲅鱼饺子",
+      "nameEn": "传统鲅鱼饺子 (鲅鱼饺子)",
+      "type": "local",
+      "cuisine": "鲅鱼饺子",
+      "avgPrice": 139,
+      "rating": 4.3,
+      "address": "青岛市老城区美食街62号",
+      "coordinates": {
+        "lat": 36.0383,
+        "lng": 120.3548
+      },
+      "phone": "+86 0532 68944660",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的鲅鱼饺子店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "辣炒蛤蜊",
+        "啤酒",
+        "海鲜"
+      ],
+      "tags": [
+        "社区老店",
+        "本地人爱去",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-73",
+      "name": "青岛味烤鱿鱼",
+      "nameEn": "青岛味烤鱿鱼 (烤鱿鱼)",
+      "type": "local",
+      "cuisine": "烤鱿鱼",
+      "avgPrice": 36,
+      "rating": 4.6,
+      "address": "青岛市新城区美食街140号",
+      "coordinates": {
+        "lat": 36.0374,
+        "lng": 120.3695
+      },
+      "phone": "+86 0532 35764177",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "青岛本地人推荐的烤鱿鱼店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "鲅鱼饺子",
+        "海鲜",
+        "辣炒蛤蜊"
+      ],
+      "tags": [
+        "家常菜",
+        "老字号",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "qingdao-75",
+      "name": "地道海鲜",
+      "nameEn": "地道海鲜 (海鲜)",
+      "type": "local",
+      "cuisine": "海鲜",
+      "avgPrice": 57,
+      "rating": 4.1,
+      "address": "青岛市新城区美食街150号",
+      "coordinates": {
+        "lat": 36.0302,
+        "lng": 120.4234
+      },
+      "phone": "+86 0532 37581767",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "青岛本地人推荐的海鲜店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "啤酒",
+        "烤鱿鱼",
+        "海鲜"
+      ],
+      "tags": [
+        "社区老店",
+        "排队王",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "hotels": [
+    {
+      "id": "huiquan-dynasty",
+      "name": "汇泉王朝大饭店",
+      "nameEn": "Huiquan Dynasty Hotel",
+      "category": "luxury",
+      "description": "五星级酒店，位于市中心，靠近海边和各大景点，是商务和旅游的理想选择。",
+      "address": "青岛市市南区香港中路",
+      "priceRange": "¥800-2000¥/晚",
+      "rating": 4.6,
+      "highlights": [
+        "海景房",
+        "健身房",
+        "中餐厅",
+        "商务中心"
+      ],
+      "tips": "提前预订有优惠。旺季价格波动大。地理位置优越，出行方便。服务专业。"
+    },
+    {
+      "id": "lizhi-boutique",
+      "name": "荔枝精品酒店",
+      "nameEn": "Lizhi Boutique Hotel",
+      "category": "boutique",
+      "description": "设计师风格的精品酒店，装修精致有个性，适合年轻情侣和家庭入住。",
+      "address": "青岛市市南区八大关",
+      "priceRange": "¥500-1200¥/晚",
+      "rating": 4.5,
+      "highlights": [
+        "设计师装修",
+        "花园庭院",
+        "精品早餐",
+        "管家服务"
+      ],
+      "tips": "房间数量有限，需要提前预订。装修风格独特，适合拍照。服务热情周到。"
+    },
+    {
+      "id": "jinshatan-seaview",
+      "name": "金沙滩海景酒店",
+      "nameEn": "Jinshatan Seaview Hotel",
+      "category": "resort",
+      "description": "位于金沙滩边上的度假酒店，出门就是沙滩，是海边度假的首选。",
+      "address": "青岛市黄岛区金沙滩路",
+      "priceRange": "¥400-1000¥/晚",
+      "rating": 4.4,
+      "highlights": [
+        "一线海景",
+        "私人沙滩",
+        "游泳池",
+        "儿童乐园"
+      ],
+      "tips": "旺季需要提前一个月预订。海滩就在楼下，非常方便。适合带孩子度假。停车方便。"
+    },
+    {
+      "id": "jiawen-hotel",
+      "name": "佳文海景酒店",
+      "nameEn": "Jiawen Seaview Hotel",
+      "category": "mid-range",
+      "description": "性价比高的海景酒店，房间宽敞，视野开阔，适合家庭出游。",
+      "address": "青岛市市南区东海西路",
+      "priceRange": "¥300-600¥/晚",
+      "rating": 4.3,
+      "highlights": [
+        "海景房",
+        "家庭房",
+        "免费停车",
+        "早餐丰富"
+      ],
+      "tips": "性价比很高。海景视野好，拍照很美。距离五四广场步行可达。周边餐饮购物方便。"
+    },
+    {
+      "id": "mountain-view-hotel",
+      "name": "崂山观海酒店",
+      "nameEn": "Laoshan Mountain View Hotel",
+      "category": "resort",
+      "description": "位于崂山脚下，环境清幽，部分房间可观海，是避暑度假的好选择。",
+      "address": "青岛市崂山区王戈庄",
+      "priceRange": "¥350-800¥/晚",
+      "rating": 4.4,
+      "highlights": [
+        "山景海景",
+        "天然氧吧",
+        "农家早餐",
+        "徒步路线"
+      ],
+      "tips": "适合自驾游客。清晨空气清新，适合养生。周边有崂山景区入口。夜晚安静，能看到星星。"
+    },
+    {
+      "id": "qingdao-holiday-inn",
+      "name": "青岛Holiday Inn",
+      "nameEn": "Holiday Inn Qingdao",
+      "category": "business",
+      "description": "国际连锁品牌酒店，服务标准统一，设施完善，是商务出行的高性价比选择。",
+      "address": "青岛市市北区福州北路",
+      "priceRange": "¥400-800¥/晚",
+      "rating": 4.3,
+      "highlights": [
+        "国际标准",
+        "健身房",
+        "商务中心",
+        "餐厅"
+      ],
+      "tips": "会员有优惠。服务稳定可靠。位置交通便利。早餐品质不错。"
+    },
+    {
+      "id": "badaguan-villa",
+      "name": "八大关别墅酒店",
+      "nameEn": "Badaguan Villa Hotel",
+      "category": "boutique",
+      "description": "位于八大关风景区内，由历史别墅改造，保留了欧式建筑风格，环境优雅。",
+      "address": "青岛市市南区武胜关路",
+      "priceRange": "¥600-1500¥/晚",
+      "rating": 4.6,
+      "highlights": [
+        "历史别墅",
+        "欧式风格",
+        "花园庭院",
+        "婚纱摄影"
+      ],
+      "tips": "旺季一房难求，需要提前很久预订。拍照效果极佳。非常适合情侣。周边环境优美。"
+    },
+    {
+      "id": "seaview-youth-hostel",
+      "name": "海景青年旅舍",
+      "nameEn": "Seaview Youth Hostel",
+      "category": "budget",
+      "description": "面向年轻旅客的青旅，床位和单间都有，氛围轻松，可以认识来自各地的旅行者。",
+      "address": "青岛市市南区栈桥",
+      "priceRange": "¥50-150¥/晚",
+      "rating": 4.2,
+      "highlights": [
+        "海景床位",
+        "公共活动区",
+        "厨房",
+        "旅行咨询"
+      ],
+      "tips": "性价比超高。氛围活跃，适合年轻人。公共区域设施齐全。提前订床位。"
+    },
+    {
+      "id": "marriott-qingdao",
+      "name": "青岛 Marriott",
+      "nameEn": "Marriott Hotel Qingdao",
+      "category": "luxury",
+      "description": "国际顶级五星级酒店，位于海岸线最佳位置，服务顶级，是高端旅行的首选。",
+      "address": "青岛市市南区奥帆中心",
+      "priceRange": "¥1000-3000¥/晚",
+      "rating": 4.7,
+      "highlights": [
+        "海景套房",
+        "行政酒廊",
+        "SPA中心",
+        "管家服务"
+      ],
+      "tips": "万豪会员有积分优惠。服务无可挑剔。位置绝佳，看日出方便。设施先进。"
+    },
+    {
+      "id": "yinzu-hotel",
+      "name": "银座酒店",
+      "nameEn": "Yinzuo Hotel",
+      "category": "mid-range",
+      "description": "位于市中心的精品酒店，购物和餐饮方便，房间干净舒适。",
+      "address": "青岛市市北区台东",
+      "priceRange": "¥250-500¥/晚",
+      "rating": 4.2,
+      "highlights": [
+        "市中心",
+        "购物方便",
+        "美食林立",
+        "交通便利"
+      ],
+      "tips": "台东夜市就在楼下，晚上很热闹。购物吃饭都方便。价格实惠。适合穷游。"
+    },
+    {
+      "id": "shangri-la-qingdao",
+      "name": "香格里拉大酒店",
+      "nameEn": "Shangri-La Hotel Qingdao",
+      "category": "luxury",
+      "description": "位于市政府旁边的国际五星级酒店，设施豪华，服务一流，是政商活动的热门场地。",
+      "address": "青岛市市南区香港中路",
+      "priceRange": "¥900-2500¥/晚",
+      "rating": 4.6,
+      "highlights": [
+        "行政楼层",
+        "游泳池",
+        "多个餐厅",
+        "会议设施"
+      ],
+      "tips": "香格里拉会员积分可抵扣。服务细致周到。位置政务中心。早餐品质高。"
+    },
+    {
+      "id": "laoshan-boutique-inn",
+      "name": "崂山精品客栈",
+      "nameEn": "Laoshan Boutique Inn",
+      "category": "boutique",
+      "description": "位于崂山景区内的特色客栈，采用当地石材和木材建造，有浓郁的乡村气息。",
+      "address": "青岛市崂山区北九水",
+      "priceRange": "¥300-700¥/晚",
+      "rating": 4.5,
+      "highlights": [
+        "山景庭院",
+        "农家风味",
+        "徒步向导",
+        "溪流相伴"
+      ],
+      "tips": "需要提前联系老板。周边徒步路线丰富。适合亲近自然。夜晚安静凉爽。"
+    },
+    {
+      "id": "jinshatan-club",
+      "name": "金沙滩会所酒店",
+      "nameEn": "Jinshatan Club Hotel",
+      "category": "resort",
+      "description": "高端海滨度假酒店，私人沙滩，多种娱乐设施，是休闲度假的理想选择。",
+      "address": "青岛市黄岛区金沙滩",
+      "priceRange": "¥600-1500¥/晚",
+      "rating": 4.4,
+      "highlights": [
+        "私人沙滩",
+        "海边别墅",
+        "水上乐园",
+        "高尔夫练习场"
+      ],
+      "tips": "淡旺季价格差很大。设施齐全，不用出门也能玩一整天。适合家庭度假。停车位充足。"
+    },
+    {
+      "id": "old-town-boutique",
+      "name": "老城区精品民宿",
+      "nameEn": "Old Town Boutique Homestay",
+      "category": "homestay",
+      "description": "由老建筑改造的特色民宿，位于青岛老城区，保留了很多历史元素。",
+      "address": "青岛市市南区中山路",
+      "priceRange": "¥200-500¥/晚",
+      "rating": 4.3,
+      "highlights": [
+        "历史建筑",
+        "老街氛围",
+        "咖啡早餐",
+        "手绘地图"
+      ],
+      "tips": "老板会提供详细的游玩攻略。位置适合citywalk。周边景点集中。装修有特色。"
+    },
+    {
+      "id": "hongkong-road-marriott",
+      "name": "香港中路全服务公寓",
+      "nameEn": "Hong Kong Rd Service Apartment",
+      "category": "serviced",
+      "description": "酒店式公寓，有客厅和厨房，适合长住或家庭入住，空间大，设施齐全。",
+      "address": "青岛市市南区香港中路",
+      "priceRange": "¥400-800¥/晚",
+      "rating": 4.3,
+      "highlights": [
+        "开放式厨房",
+        "起居室",
+        "洗衣机",
+        "周租优惠"
+      ],
+      "tips": "长住有折扣。适合一家老小。超市购物方便。可以自己做饭节省开支。"
+    },
+    {
+      "id": "qingdao-zhujiang",
+      "name": "青岛珠江渔村",
+      "nameEn": "Zhujiang Fisherman Village",
+      "category": "resort",
+      "description": "位于崂山脚下的渔家乐，可以体验出海捕鱼的乐趣，品尝刚捕捞的海鲜。",
+      "address": "青岛市崂山区沙子口镇",
+      "priceRange": "¥300-600¥/晚",
+      "rating": 4.4,
+      "highlights": [
+        "出海捕鱼",
+        "海鲜大餐",
+        "海边日出",
+        "篝火晚会"
+      ],
+      "tips": "需要提前预订。可以体验渔民生活。适合亲子游。夜晚安静，可以看星星。"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "id": "police",
+      "name": "青岛市公安局",
+      "nameEn": "Qingdao Police Bureau",
+      "phone": "110",
+      "description": "报警电话",
+      "type": "police"
+    },
+    {
+      "id": "ambulance",
+      "name": "青岛市急救中心",
+      "nameEn": "Qingdao Emergency Center",
+      "phone": "120",
+      "description": "医疗急救",
+      "type": "ambulance"
+    },
+    {
+      "id": "fire",
+      "name": "青岛市消防支队",
+      "nameEn": "Qingdao Fire Brigade",
+      "phone": "119",
+      "description": "火灾报警",
+      "type": "fire"
+    },
+    {
+      "id": "tourism-complaint",
+      "name": "青岛市旅游投诉热线",
+      "nameEn": "Qingdao Tourism Complaint Hotline",
+      "phone": "12345",
+      "description": "旅游投诉和咨询",
+      "type": "tourism-complaint"
+    },
+    {
+      "id": "coast-guard",
+      "name": "海上搜救中心",
+      "nameEn": "Maritime Search and Rescue",
+      "phone": "12395",
+      "description": "海上紧急救援",
+      "type": "coast-guard"
+    },
+    {
+      "id": "consumer-complaint",
+      "name": "消费者投诉热线",
+      "nameEn": "Consumer Complaint Hotline",
+      "phone": "12315",
+      "description": "消费维权投诉",
+      "type": "consumer-complaint"
+    },
+    {
+      "id": "weather",
+      "name": "青岛市气象局",
+      "nameEn": "Qingdao Meteorological Bureau",
+      "phone": "12121",
+      "description": "天气预报查询",
+      "type": "weather"
+    },
+    {
+      "id": "traffic-police",
+      "name": "青岛交警",
+      "nameEn": "Qingdao Traffic Police",
+      "phone": "122",
+      "description": "交通事故报警",
+      "type": "traffic-police"
+    },
+    {
+      "id": "electricity",
+      "name": "青岛供电公司",
+      "nameEn": "Qingdao Power Supply",
+      "phone": "95598",
+      "description": "电力故障报修",
+      "type": "electricity"
+    },
+    {
+      "id": "gas",
+      "name": "青岛燃气公司",
+      "nameEn": "Qingdao Gas Company",
+      "phone": "96556",
+      "description": "燃气故障报修",
+      "type": "gas"
+    },
+    {
+      "id": "water",
+      "name": "青岛水务集团",
+      "nameEn": "Qingdao Water Group",
+      "phone": "96111",
+      "description": "水务故障报修",
+      "type": "water"
+    },
+    {
+      "id": "foreign-affairs",
+      "name": "青岛市外事办",
+      "nameEn": "Qingdao Foreign Affairs Office",
+      "phone": "0532-80880008",
+      "description": "外国人服务热线",
+      "type": "foreign-affairs"
+    },
+    {
+      "id": "qingdao-hospital-1",
+      "name": "青岛大学附属医院",
+      "nameEn": "Affiliated Hospital of Qingdao University",
+      "phone": "0532-82911222",
+      "description": "三甲医院，24小时急诊，拥有优秀医疗团队",
+      "type": "hospital"
+    },
+    {
+      "id": "qingdao-hospital-2",
+      "name": "青岛市市立医院",
+      "nameEn": "Qingdao Municipal Hospital",
+      "phone": "0532-82789121",
+      "description": "三甲医院，综合性医院，位于市中心，交通便利",
+      "type": "hospital"
+    },
+    {
+      "id": "qingdao-embassy",
+      "name": "大韩民国驻青岛总领事馆",
+      "nameEn": "Consulate-General of the Republic of Korea in Qingdao",
+      "phone": "0532-80900028",
+      "description": "为韩国公民提供领事服务",
+      "type": "embassy"
+    },
+    {
+      "id": "qingdao-tourist-police",
+      "name": "青岛市旅游警察",
+      "nameEn": "Qingdao Tourist Police",
+      "phone": "0532-88010110",
+      "description": "专门处理游客投诉和求助，保护游客权益",
+      "type": "tourist-police"
+    }
+  ],
+  "culturalTips": [
+    {
+      "id": "qingdao-beer-culture",
+      "title": "青岛啤酒文化",
+      "content": "青岛是中国啤酒的发源地，1903年德国人在此建立了啤酒厂。青岛人喝啤酒的习惯根深蒂固，大街小巷都有啤酒摊和啤酒街。夏天的时候，本地人喜欢用塑料袋打散装啤酒，这种独特的啤酒文化吸引了无数游客体验。",
+      "importance": "medium"
+    },
+    {
+      "id": "seafood-eating",
+      "title": "海鲜食用礼仪",
+      "content": "青岛人吃海鲜讲究鲜字当头。清蒸、白灼是最常见的做法，以保留海鲜原味。吃海鲜时配青岛啤酒是当地人的经典搭配。但要注意，过量食用海鲜可能导致痛风，体质敏感者应适量。吃海鲜时蘸醋姜汁可以驱寒杀菌。",
+      "importance": "medium"
+    },
+    {
+      "id": "german-colonial-heritage",
+      "title": "德式建筑文化",
+      "content": "1897-1914年德国租借胶州湾期间，在青岛留下了大量欧式建筑。八大关风景区是这方面最集中的体现，汇集了24个国家的建筑风格，被称为万国建筑博览会。这些建筑至今保存完好，成为青岛独特的城市名片。",
+      "importance": "medium"
+    },
+    {
+      "id": "bathing-culture",
+      "title": "海滨洗浴文化",
+      "content": "青岛的海水浴场是夏季最热闹的地方。本地人有洗海澡的传统，无论男女老少都会在夏天到海边游泳消暑。青岛人洗海澡有特定的时间：清晨和傍晚最佳，中午阳光强烈容易晒伤。洗完海澡后用淡水冲洗是必须的。",
+      "importance": "medium"
+    },
+    {
+      "id": "fisherman-whistle",
+      "title": "码头的吆喝文化",
+      "content": "青岛的码头有独特的劳动号子和吆喝文化。早年渔民出海前会喊号子，码头卸货时也有特定的节奏。至今在第三海水浴场等地方还能听到这种传统的吆喝声。这种文化体现了青岛作为一个海洋城市的独特性格。",
+      "importance": "medium"
+    },
+    {
+      "id": "hotels-on-street",
+      "title": "啤酒街的大排档",
+      "content": "登州路的啤酒街是体验青岛夜市文化的好去处。这里的大排档保留了传统的地摊文化，人们围坐在小桌旁，吃着烤海鲜，喝着新鲜啤酒，谈天说地。这种随性自在的氛围是青岛人热情豪爽性格的体现。",
+      "importance": "medium"
+    },
+    {
+      "id": "dialect-charm",
+      "title": "青岛方言特色",
+      "content": "青岛话属于胶辽官话，语调硬朗，说话像吵架。但实际上青岛人很热情友好。青岛人说话爱带哈字，比如吃哈、玩哈。初来乍到可能会觉得青岛人说话太冲，但这是他们表达亲近的方式。",
+      "importance": "medium"
+    },
+    {
+      "id": "dumpling-tradition",
+      "title": "鲅鱼饺子",
+      "content": "鲅鱼饺子是青岛特有的传统美食，在其他地方很难吃到正宗的。青岛人在谷雨前后有吃鲅鱼饺子的习俗，相传与送鲅鱼丈人的习俗有关。这种饺子皮薄馅大，汤汁鲜美，是检验青岛媳妇厨艺的标准之一。",
+      "importance": "medium"
+    },
+    {
+      "id": "lighthouse-tradition",
+      "title": "灯塔文化",
+      "content": "青岛有多座历史悠久的灯塔，最著名的是栈桥尽头的回澜阁。灯塔是青岛海洋文化的重要组成部分，代表着安全、指引和希望。很多青岛的老建筑上都建有小型灯塔装饰，这是青岛特有的建筑文化符号。",
+      "importance": "medium"
+    },
+    {
+      "id": "hot-dry-noodles",
+      "title": "澡堂子文化",
+      "content": "青岛人把公共浴池叫做澡堂子，这是一种独特的社交场所。老青岛人习惯早上到澡堂子泡澡、喝茶、聊天，一待就是半天。这种慢生活方式在快节奏的现代社会中逐渐消失，但在一些老社区仍然保留着。",
+      "importance": "medium"
+    },
+    {
+      "id": "soup-culture",
+      "title": "汤文化",
+      "content": "青岛人爱喝汤，特别是海鲜汤和骨头汤。冬天的时候，一碗热腾腾的海鲜疙瘩汤是驱寒暖胃的佳品。青岛的馄饨和汤面也很有特色，汤底通常用骨头熬制，味道鲜美。这种汤文化体现了青岛人对生活品质的追求。",
+      "importance": "medium"
+    },
+    {
+      "id": "red-tiles-green-trees",
+      "title": "红瓦绿树",
+      "content": "红瓦绿树，碧海蓝天是形容青岛城市景观的名句。青岛老城区的建筑以红色屋顶、绿色树木和蓝色大海构成独特的色彩体系。这种城市规划美学使得青岛获得过联合国人居奖，是中外专家公认的花园城市。",
+      "importance": "medium"
+    },
+    {
+      "id": "taoist-culture",
+      "title": "崂山道教文化",
+      "content": "崂山是中国著名的道教名山，太清宫是道教发祥地之一。邱处机、张三丰等道教宗师都曾在崂山修行。崂山道士穿墙术的传说家喻户晓。每年农历四月十五是崂山庙会，是体验道教文化的好时机。",
+      "importance": "medium"
+    },
+    {
+      "id": "sparrow-culture",
+      "title": "海鸥文化",
+      "content": "每年冬天，成千上万只海鸥从西伯利亚飞抵青岛越冬。栈桥和各个海水浴场是观赏海鸥的最佳地点。青岛人把这看作是这座城市与自然的独特纽带。游客可以用油条、面包喂食海鸥，但要注意不要用变质食物。",
+      "importance": "medium"
+    },
+    {
+      "id": "spit-curtain",
+      "title": "回澜阁与口传文化",
+      "content": "栈桥尽头的回澜阁有个美丽的传说：相传古时候有对恩爱的夫妻，丈夫出海打鱼不幸遇难，妻子每天都来海边等待，最终化为海鸥守护这片海域。这个故事代代相传，成为青岛海洋文化的重要组成部分，体现了青岛人重情重义的性格。",
+      "importance": "medium"
+    },
+    {
+      "id": "qingdao-bathing-suit",
+      "title": "泳衣文化",
+      "content": "青岛人对洗海澡有独特的讲究。本地人在海水浴场游泳时会穿比较保守的泳衣，比基尼相对少见。如果穿着过于暴露可能会引起侧目。建议选择普通泳衣更入乡随俗。",
+      "importance": "medium"
+    },
+    {
+      "id": "qingdao-dialect-emphasis",
+      "title": "青岛话的语气",
+      "content": "青岛人说普通话时语调较重，听起来可能像在吵架，但其实是在表达热情友好。青岛人说话爱带'哈'字结尾，如'吃了哈''玩了哈'，这是当地人表达亲切的方式。",
+      "importance": "medium"
+    },
+    {
+      "id": "qingdao-seafood-season",
+      "title": "海鲜季节讲究",
+      "content": "青岛人吃海鲜讲究时令：春季吃鲅鱼，夏季吃蛤蜊，秋季吃螃蟹，冬季吃海参。不同的季节有不同的鲜美。过季的海鲜不仅口感差，价格也贵。",
+      "importance": "medium"
+    },
+    {
+      "id": "qingdao-tsingtao-plastic-bag",
+      "title": "塑料袋装啤酒",
+      "content": "用塑料袋打散装啤酒是青岛特有的街头文化，本地人称之为'散啤'。这种散装啤酒比瓶装更新鲜，价格也更便宜。游客可以尝试这种独特的喝法，是体验青岛生活的好方式。",
+      "importance": "medium"
+    }
+  ],
+  "payment": [
+    {
+      "id": "wechat-pay",
+      "name": "微信支付",
+      "nameEn": "WeChat Pay",
+      "description": "中国最普及的移动支付方式，几乎所有商家都支持。",
+      "tips": [
+        "需要绑定银行卡或信用卡。出示付款码即可完成支付。小商贩也普遍接受。"
+      ],
+      "howToUse": [
+        "需要绑定银行卡或信用卡。出示付款码即可完成支付。小商贩也普遍接受。"
+      ]
+    },
+    {
+      "id": "alipay",
+      "name": "支付宝",
+      "nameEn": "Alipay",
+      "description": "阿里巴巴旗下的移动支付平台，与微信支付同样普及。",
+      "tips": [
+        "支持多种优惠活动。可以在首页搜索红包获取折扣。部分商家支持扫码枪收款。"
+      ],
+      "howToUse": [
+        "支持多种优惠活动。可以在首页搜索红包获取折扣。部分商家支持扫码枪收款。"
+      ]
+    },
+    {
+      "id": "cash",
+      "name": "现金",
+      "nameEn": "Cash",
+      "description": "虽然移动支付普及，但现金在部分场景仍然需要。",
+      "tips": [
+        "路边摊、农贸市场、早点摊可能只收现金。建议随身携带500元左右现金。部分寺庙购票只收现金。"
+      ],
+      "howToUse": [
+        "路边摊、农贸市场、早点摊可能只收现金。建议随身携带500元左右现金。部分寺庙购票只收现金。"
+      ]
+    },
+    {
+      "id": "unionpay",
+      "name": "银联卡",
+      "nameEn": "UnionPay",
+      "description": "中国银联卡可以在大部分商家刷卡消费。",
+      "tips": [
+        "大型商场、超市、酒店都接受。刷卡时请确认金额。部分地方可能收取手续费。"
+      ],
+      "howToUse": [
+        "大型商场、超市、酒店都接受。刷卡时请确认金额。部分地方可能收取手续费。"
+      ]
+    },
+    {
+      "id": "visa-mastercard",
+      "name": "VISA/Mastercard",
+      "nameEn": "International Cards",
+      "description": "国际信用卡在大型酒店、商场和高档餐厅可以使用。",
+      "tips": [
+        "小店和市场基本不支持。汇率结算可能有差异。建议同时准备其他支付方式。"
+      ],
+      "howToUse": [
+        "小店和市场基本不支持。汇率结算可能有差异。建议同时准备其他支付方式。"
+      ]
+    },
+    {
+      "id": "tsingtao-beer-voucher",
+      "name": "啤酒券",
+      "nameEn": "Beer Voucher",
+      "description": "青岛啤酒节期间特有的票券，可用于兑换啤酒和小吃。",
+      "tips": [
+        "只在啤酒节期间使用。可以提前在官方网站购买。现场购买可能需要排队。"
+      ],
+      "howToUse": [
+        "只在啤酒节期间使用。可以提前在官方网站购买。现场购买可能需要排队。"
+      ]
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "airplane",
+        "name": "飞机",
+        "nameEn": "By Air",
+        "description": "青岛流亭国际机场位于市区北部，距市中心约23公里。机场有大巴和地铁连接市区。",
+        "tips": "国内航班提前2小时到机场，国际航班提前3小时。机场大巴票价20-30元。有地铁连接市中心。"
+      },
+      {
+        "type": "train",
+        "name": "火车",
+        "nameEn": "By Train",
+        "description": "青岛站位于市中心，是百年老站，靠近栈桥。青岛北站是高铁站，位于李沧区。",
+        "tips": "青岛站出站就是海边，非常方便。高铁经青岛北站，去崂山方便。从北京高铁约4.5小时。"
+      },
+      {
+        "type": "bus",
+        "name": "长途汽车",
+        "nameEn": "By Bus",
+        "description": "青岛有多个汽车站，公路交通发达，适合来自山东省内及周边省份的旅客。",
+        "tips": "相比高铁和飞机，长途汽车最经济但最耗时。汽车总站位于内蒙古路。提前购票有优惠。"
+      },
+      {
+        "type": "自驾",
+        "name": "自驾",
+        "nameEn": "By Car",
+        "description": "青岛高速公路网络完善，自驾可以灵活安排行程，但旺季市区停车困难。",
+        "tips": "旺季市区停车费约10-20元/小时。八大关、栈桥周边停车位紧张。建议使用公共交通。"
+      }
+    ],
+    "local": {
+      "metro": [
+        "1号线",
+        "2号线",
+        "3号线",
+        "8号线",
+        "11号线",
+        "13号线"
+      ],
+      "bus": [
+        "公交票价1-2元，可用微信/支付宝乘车",
+        "崂山景区有旅游专线"
+      ],
+      "taxi": [
+        "起步价10元/3公里，之后2.2元/公里",
+        "建议使用滴滴出行APP叫车"
+      ],
+      "bike": [
+        "哈啰单车、美团单车分布广泛",
+        "押金99-199元，骑行1-3元/小时"
+      ],
+      "walking": [],
+      "rental": [
+        "滴滴出行等网约车便捷",
+        "共享单车适合短途"
+      ]
+    }
+  },
+  "quickFacts": {
+    "language": "Mandarin Chinese (Simplified)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa (L-tourist, M-business)",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water is boiled before drinking; bottled water widely available"
+  }
+}

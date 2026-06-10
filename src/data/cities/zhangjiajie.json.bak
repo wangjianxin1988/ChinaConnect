@@ -1,0 +1,3785 @@
+{
+  "slug": "zhangjiajie",
+  "name": "张家界",
+  "nameEn": "Zhangjiajie",
+  "country": "China",
+  "population": "1.5 million",
+  "coordinates": {
+    "lat": 29.117,
+    "lng": 110.479
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Zhangjiajie, 'The Home of Avatar', is famous for its UNESCO-listed national forest park featuring towering sandstone pillars, dramatic karst formations, and lush forests. The city's unique pillar-like quartz sandstone pillars inspired the floating mountains in the movie Avatar. Beyond the park, visitors explore Tianmen Mountain's glass skywalk, the world's longest glass bridge, ancient Tujia villages, and mystical caves.",
+  "coverImage": "https://images.unsplash.com/photo-1774979130933-cf40d82185b4?w=1200&q=80",
+  "highlights": [
+    "Zhangjiajie National Forest Park - UNESCO World Heritage",
+    "Avatar Hallelujah Mountains inspiration",
+    "Tianmen Mountain - Glass skywalk and sky cave",
+    "Zhangjiajie Grand Canyon Glass Bridge",
+    "Yellow Dragon Cave - Underground wonder"
+  ],
+  "climate": {
+    "type": "Subtropical humid mountain",
+    "bestMonths": [
+      "April",
+      "May",
+      "June",
+      "September",
+      "October"
+    ],
+    "avgSummerTemp": "24C (75F)",
+    "avgWinterTemp": "5C (41F)",
+    "tips": "Mountain weather is unpredictable - bring layers. Summer monsoon season brings heavy rain. Winter can see snow on peaks. Morning mists create magical scenery. Book accommodation in park area for early access to attractions."
+  },
+  "attractions": [
+    {
+      "id": "zhangjiajie-forest-park",
+      "name": "张家界国家森林公园",
+      "nameEn": "Zhangjiajie National Forest Park",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1561031454-4f1331bd2a34?w=800&q=85",
+      "description": "UNESCO World Heritage site featuring thousands of sandstone pillars, dense forests, and dramatic gorges. The Avatar Hallelujah Mountains inspiration.",
+      "address": "Wulingyuan District, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.3475,
+        "lng": 110.4465
+      },
+      "openingHours": "06:30-18:00 (Summer), 07:00-17:30 (Winter)",
+      "ticketPrice": "225¥ (includes shuttle bus)",
+      "recommendedVisitTime": "2-3 days",
+      "highlights": [
+        "Avatar Mountains",
+        "Golden Whip Stream",
+        "Yuanjiajie scenic area",
+        "Wulingyuan UNESCO core"
+      ],
+      "tips": "Stay inside park to avoid re-entry fees. Wake early for sunrise at viewing platforms. The park is huge - plan routes carefully."
+    },
+    {
+      "id": "yuanjiajie",
+      "name": "袁家界",
+      "nameEn": "Yuanjiajie",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=85",
+      "description": "Famous for the Avatar Hallelujah Mountains - towering sandstone pillars that appear to float in mist.",
+      "address": "Within Zhangjiajie National Forest Park",
+      "coordinates": {
+        "lat": 29.3525,
+        "lng": 110.4435
+      },
+      "openingHours": "06:30-18:00",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "First Bridge of Heaven",
+        "Avatar Mountains viewing platform",
+        "Array of Peaks",
+        "Soul Searching Platform"
+      ],
+      "tips": "Take the world's highest elevator (326m) to Yuanjiajie. Most crowded in morning."
+    },
+    {
+      "id": "tianmen-mountain",
+      "name": "天门山",
+      "nameEn": "Tianmen Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=85",
+      "description": "Known for the Heavenly Door cave and world's longest glass skywalk. The 99 bends road leading up is legendary.",
+      "address": "Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.0525,
+        "lng": 110.4795
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "278¥ (including shuttle and cable car)",
+      "recommendedVisitTime": "4-6 hours",
+      "highlights": [
+        "Tianmen Cave (Heavenly Door)",
+        "Glass Skywalk",
+        "World's longest cable car",
+        "99 bends road"
+      ],
+      "tips": "Book online to avoid queues. Go early. Glass Skywalk requires separate ticket. The summit can be foggy."
+    },
+    {
+      "id": "grand-canyon-glass-bridge",
+      "name": "张家界大峡谷玻璃桥",
+      "nameEn": "Zhangjiajie Grand Canyon Glass Bridge",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&q=85",
+      "description": "The world's longest and highest glass-bottomed bridge, 430m long and 300m above the canyon.",
+      "address": "Zhangjiajie Grand Canyon",
+      "coordinates": {
+        "lat": 29.0835,
+        "lng": 110.5535
+      },
+      "openingHours": "07:30-17:00",
+      "ticketPrice": "138¥ (bridge only), 259¥ (with canyon)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "430m glass bridge",
+        "300m valley drop",
+        "Bungee jump (world's highest)",
+        "Canyon hiking"
+      ],
+      "tips": "Book at least one day ahead. Don't wear high heels. Maximum 800 visitors per day."
+    },
+    {
+      "id": "yellow-dragon-cave",
+      "name": "黄龙洞",
+      "nameEn": "Yellow Dragon Cave",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=85",
+      "description": "One of China's largest caves with stalactites, stalagmites, underground rivers and the world's tallest stalagmite.",
+      "address": "Zhangjiajie Town, Wulingyuan District",
+      "coordinates": {
+        "lat": 29.2235,
+        "lng": 110.5235
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "121¥",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "World's tallest natural stalagmite (19.2m)",
+        "Underground river boat ride",
+        "Cave formations",
+        "Water curtain cave"
+      ],
+      "tips": "Audio guide highly recommended. Boat ride included. Temperature inside is cooler year-round."
+    },
+    {
+      "id": "baofeng-lake",
+      "name": "宝峰湖",
+      "nameEn": "Baofeng Lake",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=85",
+      "description": "A scenic lake known as 'Mini Lijiang' with traditional Tujia village on its shores.",
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3435,
+        "lng": 110.5165
+      },
+      "openingHours": "07:00-17:30",
+      "ticketPrice": "96¥",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Lake boat tour",
+        "Tujia ethnic performances",
+        "Imitation Huangshi",
+        "Moonlight Spring"
+      ],
+      "tips": "Combine with nearby Huanglong Cave. Evening performances in summer."
+    },
+    {
+      "id": "tujia-royal-village",
+      "name": "土家风情园",
+      "nameEn": "Tujia Royal Folk Village",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=85",
+      "description": "A theme park showcasing traditional Tujia architecture, customs, and performing arts.",
+      "address": "Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1135,
+        "lng": 110.4685
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "80¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Tujia architecture",
+        "Nuo opera performances",
+        "Timestamper wall",
+        "Traditional crafts"
+      ],
+      "tips": "Best visited in afternoon to catch performances. Combine with Tianmen Mountain."
+    },
+    {
+      "id": "golden-eagle",
+      "name": "金鹰卡通",
+      "nameEn": "Golden Eagle Broadcasting Tower",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=800&q=85",
+      "description": "Iconic TV tower in city center, symbol of Zhangjiajie with rotating restaurant at top.",
+      "address": "City Center, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4735
+      },
+      "openingHours": "09:00-22:00",
+      "ticketPrice": "70¥ (observation deck)",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "360-degree city views",
+        "Rotating restaurant",
+        "Night illumination",
+        "Cable car to top"
+      ],
+      "tips": "Best visited at sunset for day/night views. Restaurant requires reservation."
+    },
+    {
+      "id": "tianmen-skywalk",
+      "name": "天门山玻璃栈道",
+      "nameEn": "Tianmen Mountain Glass Skywalk",
+      "category": "adventure",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=85",
+      "description": "A terrifying 60m glass walkway along cliffs with drop views, world's highest bungee jump nearby.",
+      "address": "Tianmen Mountain",
+      "coordinates": {
+        "lat": 29.0535,
+        "lng": 110.4805
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "Separate ticket 5¥",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "60m glass walkway",
+        "Cliff views",
+        "World's highest bungee",
+        "Ghost Valley"
+      ],
+      "tips": "Not for those afraid of heights. Separate queue for skywalk. Bungee jump tickets sold separately."
+    },
+    {
+      "id": "suoxi-valley",
+      "name": "索溪峪",
+      "nameEn": "Suoxi Valley",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=85",
+      "description": "A nature reserve with diverse flora and fauna, known for macaque monkeys.",
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3235,
+        "lng": 110.5365
+      },
+      "openingHours": "07:00-17:30",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Wild macaques",
+        "Xianren Spring",
+        "Waterfall",
+        "Forest trails"
+      ],
+      "tips": "Don't feed the monkeys. Keep belongings secure. They can be aggressive."
+    },
+    {
+      "id": "yangjiajie",
+      "name": "杨家界",
+      "nameEn": "Yangjiajie",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=85",
+      "description": "Quieter area with Emperor Mountain, Four Screening Walls, and fewer crowds than Yuanjiajie.",
+      "address": "Within Zhangjiajie Forest Park",
+      "coordinates": {
+        "lat": 29.3635,
+        "lng": 110.4165
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Four Screening Walls",
+        "Emperor Mountain",
+        "Fewer tourists",
+        "Ancient tree forest"
+      ],
+      "tips": "Best for escaping crowds. Take shuttle bus to Yangjiajie. Good photography spot."
+    },
+    {
+      "id": "mozi-wan",
+      "name": "墨子湾",
+      "nameEn": "Moziwan",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=85",
+      "description": "Scenic area featuring lotus-shaped mountain and traditional fishing village.",
+      "address": "Near Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.0535,
+        "lng": 110.5235
+      },
+      "openingHours": "24 hours (scenic area)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Lotus mountain view",
+        "Fishing village",
+        "Sunset views",
+        "Photography spot"
+      ],
+      "tips": "Best at sunset. Combine with day trips. Free entry but parking fee."
+    },
+    {
+      "id": "ten-mile-gallery",
+      "name": "十里画廊",
+      "nameEn": "Ten Mile Gallery",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=85",
+      "description": "A scenic train ride through towering pillars resembling famous paintings and sculptures.",
+      "address": "Within Forest Park",
+      "coordinates": {
+        "lat": 29.3535,
+        "lng": 110.4765
+      },
+      "openingHours": "07:00-17:30",
+      "ticketPrice": "76¥ (train only)",
+      "recommendedVisitTime": "1.5 hours",
+      "highlights": [
+        "Landmark Pillars",
+        "Artistic rock formations",
+        "Mini train experience",
+        "Photography stops"
+      ],
+      "tips": "Train saves walking but misses some scenery. Get off at viewpoint for photos."
+    },
+    {
+      "id": "huangshi-village",
+      "name": "黄石寨",
+      "nameEn": "Huangshi Village",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&q=85",
+      "description": "A plateau area with panoramic views, known as 'The Largest Natural Amphitheater in The World'.",
+      "address": "Within Forest Park",
+      "coordinates": {
+        "lat": 29.3635,
+        "lng": 110.4565
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Six Gates",
+        "Echo Wall",
+        "Giant's Shoulder",
+        "Panoramic views"
+      ],
+      "tips": "Take cable car up, walk down. Early morning best for views. Famous filming location."
+    },
+    {
+      "id": "golden-whip-stream",
+      "name": "金鞭溪",
+      "nameEn": "Golden Whip Stream",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1686807309649-36801d76d1a1?w=800&q=85",
+      "description": "A beautiful 7.5km stream famous for golden sand and crystal clear water.",
+      "address": "Within Forest Park",
+      "coordinates": {
+        "lat": 29.3435,
+        "lng": 110.4365
+      },
+      "openingHours": "07:00-17:30",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Golden sand bottom",
+        "Ancient trees",
+        "Wild monkeys",
+        "Relaxing walk"
+      ],
+      "tips": "Best visited in morning. Flat terrain easy to walk. Bring water and comfortable shoes."
+    },
+    {
+      "id": "tianzi-shan",
+      "name": "天子山",
+      "nameEn": "Tianzi Mountain",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=800&q=85",
+      "description": "The 'King of the Peaks' with stunning views and the标志性御笔峰.",
+      "address": "Within Forest Park",
+      "coordinates": {
+        "lat": 29.3735,
+        "lng": 110.4665
+      },
+      "openingHours": "06:00-18:00",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Imperial Brush Peak",
+        "Monarch Mountain",
+        "Cloud Sea views",
+        "Herb garden"
+      ],
+      "tips": "Cable car recommended. Best lighting in late afternoon. Cloud seas appear in early morning."
+    },
+    {
+      "id": "mafengwo",
+      "name": "马蜂窝",
+      "nameEn": "Mafengwo",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=85",
+      "description": "A scenic area with traditional Tujia stilted buildings and local crafts.",
+      "address": "Near Wulingyuan",
+      "coordinates": {
+        "lat": 29.3335,
+        "lng": 110.5065
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "60¥",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Stilted buildings",
+        "Traditional crafts",
+        "Local snacks",
+        "Tujia culture"
+      ],
+      "tips": "Good for understanding Tujia architecture. Buy local specialties here."
+    },
+    {
+      "id": "zhangjiajie-waterfall",
+      "name": "张家界大瀑布",
+      "nameEn": "Zhangjiajie Grand Waterfall",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=85",
+      "description": "A spectacular 300m waterfall inside the forest park, one of the highest in China.",
+      "address": "Within Forest Park",
+      "coordinates": {
+        "lat": 29.3535,
+        "lng": 110.4265
+      },
+      "openingHours": "07:00-17:30",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "300m drop",
+        "Rainbow at base",
+        "Mist effects",
+        "Photography spot"
+      ],
+      "tips": "Get soaked approaching the falls. Bring raincoat or umbrella."
+    },
+    {
+      "id": "yongding-ancient-town",
+      "name": "永定古镇",
+      "nameEn": "Yongding Ancient Town",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800",
+      "description": "A 2000-year-old Tujia town with preserved ancient streets and traditional houses.",
+      "address": "Yongding County",
+      "coordinates": {
+        "lat": 29.0535,
+        "lng": 110.3935
+      },
+      "openingHours": "24 hours (streets)",
+      "ticketPrice": "Free (some buildings ticketed)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Ancient Tujia streets",
+        "Stilted houses",
+        "Local snacks",
+        "Night performances"
+      ],
+      "tips": "Best at night when illuminated. Try local snacks. Connected to Tujia culture."
+    },
+    {
+      "id": "jade-emperor-peak",
+      "name": "玉皇顶",
+      "nameEn": "Jade Emperor Peak",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1573824398985-ca6aee6b0cbd?w=800&q=85",
+      "description": "The highest peak in Zhangjiajie at 1216m with panoramic views of the pillar landscape.",
+      "address": "Tianmen Mountain",
+      "coordinates": {
+        "lat": 29.0535,
+        "lng": 110.4795
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "Included in Tianmen ticket",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Highest viewpoint",
+        "360-degree panorama",
+        "Sea of clouds",
+        "Cable car views"
+      ],
+      "tips": "Take cable car to summit. Best visibility in morning. Wear warm layers."
+    },
+    {
+      "id": "bailong-elevator",
+      "name": "百龙电梯",
+      "nameEn": "Bailong Elevator",
+      "category": "adventure",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+      "description": "The world's highest outdoor elevator at 326m, transporting visitors from ground level to Yuanjiajie in just 66 seconds.",
+      "address": "Within Zhangjiajie Forest Park",
+      "coordinates": {
+        "lat": 29.3535,
+        "lng": 110.4425
+      },
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "72¥ (one-way), included in some packages",
+      "recommendedVisitTime": "10 minutes",
+      "highlights": [
+        "World's highest outdoor elevator",
+        "326m vertical height",
+        "66-second journey",
+        "Stunning pillar views"
+      ],
+      "tips": "Long queues in peak season. Consider walking up if you have time. Combined ticket with park is cheaper."
+    },
+    {
+      "id": "huanglong-dong-pass",
+      "name": "黄龙洞",
+      "nameEn": "Huanglong Cave Pass",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=85",
+      "description": "Combined ticket for Yellow Dragon Cave and Baofeng Lake, offering the best value for visiting both attractions.",
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.2435,
+        "lng": 110.5135
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "210¥ (combined ticket for both attractions)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Best value combo",
+        "Yellow Dragon Cave",
+        "Baofeng Lake",
+        "Boat rides included"
+      ],
+      "tips": "Purchase combined ticket to save money. Visit cave in morning, lake in afternoon. Both are must-see attractions."
+    },
+    {
+      "id": "mengding-shan",
+      "name": "蒙泉湖",
+      "nameEn": "Mengding Lake",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=85",
+      "description": "A pristine mountain lake known for its emerald waters and surrounding peaks. Popular for bamboo rafting.",
+      "address": "Cili County, 50km from Zhangjiajie",
+      "coordinates": {
+        "lat": 29.2535,
+        "lng": 110.3635
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "Free (boat rides 60-100¥ extra)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Crystal clear water",
+        "Bamboo rafting",
+        "Mountain scenery",
+        "Peaceful atmosphere"
+      ],
+      "tips": "Best visited in spring and autumn. Bamboo rafting is the main attraction. Bring change of clothes for water activities."
+    },
+    {
+      "id": "maoyan-forest",
+      "name": "茅岩河",
+      "nameEn": "Maoyan River",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=85",
+      "description": "A scenic river for white water rafting and kayaking, flowing through dramatic limestone gorges.",
+      "address": "Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.0235,
+        "lng": 110.3935
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "180¥ (rafting)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "White water rafting",
+        "Gorge scenery",
+        "Thrilling rapids",
+        "Scenic boat ride"
+      ],
+      "tips": "Bring waterproof bags for valuables. Wear quick-dry clothes. Safety equipment provided. Not suitable for non-swimmers."
+    },
+    {
+      "id": "xianrenqiao",
+      "name": "仙人桥",
+      "nameEn": "Fairy Bridge",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=85",
+      "description": "A natural stone arch bridge formed by erosion, spanning a dramatic gorge. One of Zhangjiajie's most-photographed spots.",
+      "address": "Within Yangjiajie, Forest Park",
+      "coordinates": {
+        "lat": 29.3735,
+        "lng": 110.4065
+      },
+      "openingHours": "07:00-17:00",
+      "ticketPrice": "Included in park ticket",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Natural stone arch",
+        "Dramatic gorge",
+        "Iconic photo spot",
+        "Fairy legend"
+      ],
+      "tips": "Best photographed in morning light. Can be slippery when wet. Combine with other Yangjiajie attractions."
+    },
+    {
+      "id": "tujia-xiuxian",
+      "name": "土家秀",
+      "nameEn": "Tujia Cultural Show",
+      "category": "cultural",
+      "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800",
+      "description": "Evening performance showcasing Tujia folk songs, dances, and the famous 'Xiji Girl' love story.",
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3335,
+        "lng": 110.5465
+      },
+      "openingHours": "20:00-22:00 (shows nightly)",
+      "ticketPrice": "180-260¥",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Traditional Tujia dances",
+        "Folk songs performance",
+        "Love story drama",
+        "Fireworks finale"
+      ],
+      "tips": "Book through hotel concierge for discounts. Bring jacket as outdoor venue. Shows run rain or shine."
+    },
+    {
+      "id": "xinhuang-bridge",
+      "name": "新黄龙洞",
+      "nameEn": "New Yellow Dragon Cave",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85",
+      "description": "Expanded cave system with improved lighting and walkways, offering extended exploration routes.",
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.2335,
+        "lng": 110.5335
+      },
+      "openingHours": "08:00-17:30",
+      "ticketPrice": "121¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Extended cave routes",
+        "Modern lighting",
+        "Underground river",
+        "Larger exploration area"
+      ],
+      "tips": "Arrive early to avoid crowds. Audio guide recommended. Wear comfortable walking shoes. Temperature inside is cool."
+    },
+    {
+      "id": "wulong-hole",
+      "name": "武隆",
+      "nameEn": "Wulong Karst",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=85",
+      "description": "UNESCO World Heritage site featuring massive sinkholes, bridges, and caves. Famous filming location for movie Transformers.",
+      "address": "100km from Zhangjiajie",
+      "coordinates": {
+        "lat": 29.4535,
+        "lng": 107.9035
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "320¥ (includes all attractions)",
+      "recommendedVisitTime": "Full day trip",
+      "highlights": [
+        "Three Natural Bridges",
+        "Houpeng Doline",
+        "Hanging Caves",
+        "Transformers filming location"
+      ],
+      "tips": "Requires day trip from Zhangjiajie. Best combined with Fengdu or Wulong. Book tour for convenience. Photo ops are stunning."
+    },
+    {
+      "id": "wulong-hole-cave",
+      "name": "武隆芙蓉洞",
+      "nameEn": "Furong Cave",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=85",
+      "description": "One of the largest developed caverns in China with spectacular stalactite and stalagmite formations.",
+      "address": "Wulong County",
+      "coordinates": {
+        "lat": 29.4235,
+        "lng": 107.9235
+      },
+      "openingHours": "09:00-16:00",
+      "ticketPrice": "150¥ (cave only)",
+      "recommendedVisitTime": "2 hours",
+      "highlights": [
+        "Massive cave chambers",
+        "Ancient formations",
+        "Underground river",
+        "Light show"
+      ],
+      "tips": "Part of Wulong day trip. Combine with Three Natural Bridges. Bring warm clothes for cave temperature."
+    },
+    {
+      "id": "wulong-three-bridges",
+      "name": "天生三桥",
+      "nameEn": "Three Natural Bridges",
+      "category": "natural",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=85",
+      "description": "Three natural limestone bridges - Dragon Bridge, Qinglong Bridge, and Heilong Bridge - forming an impressive natural architecture.",
+      "address": "Wulong County",
+      "coordinates": {
+        "lat": 29.4635,
+        "lng": 107.8935
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "145¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Three natural bridges",
+        "Bai Long Xia (Dragon Bridge)",
+        "Qing Long Xia",
+        "Hei Long Xia"
+      ],
+      "tips": "Take shuttle bus from entrance. Walk downhill through the bridges. Elevators available as alternative. Stunning scenery."
+    },
+    {
+      "id": "zjj-glass",
+      "name": "张家界大峡谷玻璃桥",
+      "nameEn": "Zhangjiajie Grand Canyon Glass Bridge",
+      "category": "landmark",
+      "description": "世界最长最高的玻璃桥，长430米，高300米。",
+      "address": "张家界市慈利县",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.73
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "138元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "玻璃桥",
+        "峡谷"
+      ],
+      "tips": "体验高空玻璃桥。",
+      "image": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800&q=85"
+    },
+    {
+      "id": "zjj-tianmen",
+      "name": "天门山",
+      "nameEn": "Tianmen Mountain",
+      "category": "nature",
+      "description": "有天门洞和玻璃栈道，是张家界最著名的景点之一。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "258元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "天门洞",
+        "玻璃栈道",
+        "索道"
+      ],
+      "tips": "体验高空玻璃栈道。",
+      "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=85"
+    },
+    {
+      "id": "zjj-national",
+      "name": "张家界国家森林公园",
+      "nameEn": "Zhangjiajie National Forest Park",
+      "category": "nature",
+      "description": "世界地质公园，有独特的砂岩峰林地貌。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "225元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "砂岩峰林",
+        "金鞭溪",
+        "袁家界"
+      ],
+      "tips": "电影《阿凡达》取景地。",
+      "image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=85"
+    },
+    {
+      "id": "zjj-bridge",
+      "name": "天桥",
+      "nameEn": "Natural Bridge",
+      "category": "nature",
+      "description": "张家界天然石拱桥。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "天然石桥"
+      ],
+      "tips": "了解地质奇观。",
+      "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&q=85"
+    },
+    {
+      "id": "zjj-food",
+      "name": "张家界美食",
+      "nameEn": "Zhangjiajie Food",
+      "category": "street",
+      "description": "张家界有土家族特色美食。",
+      "address": "张家界市",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "土家族菜",
+        "三下锅"
+      ],
+      "tips": "品尝张家界美食。",
+      "image": "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=85"
+    },
+    {
+      "id": "zjj-museum",
+      "name": "张家界博物馆",
+      "nameEn": "Zhangjiajie Museum",
+      "category": "museum",
+      "description": "展示张家界历史和地质的博物馆。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "地质",
+        "历史"
+      ],
+      "tips": "了解张家界文化。",
+      "image": "https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?w=800&q=85"
+    },
+    {
+      "id": "zjj-mountain",
+      "name": "天子山",
+      "nameEn": "Tianzi Mountain",
+      "category": "nature",
+      "description": "张家界最高的山峰，可俯瞰整个景区。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "峰林",
+        "云海"
+      ],
+      "tips": "看云海日出。",
+      "image": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800&q=85"
+    },
+    {
+      "id": "zjj-stream",
+      "name": "金鞭溪",
+      "nameEn": "Golden Whip Stream",
+      "category": "nature",
+      "description": "张家界最美的溪流，全长7.5公里。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "2-3小时",
+      "highlights": [
+        "溪流",
+        "森林",
+        "猴子"
+      ],
+      "tips": "漫步溪边。",
+      "image": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=85"
+    },
+    {
+      "id": "zjj-garden",
+      "name": "宝峰湖",
+      "nameEn": "Baofeng Lake",
+      "category": "nature",
+      "description": "张家界的人工湖，有高峡平湖之称。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "96元",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "湖泊",
+        "峡谷"
+      ],
+      "tips": "乘船游览。",
+      "image": "https://images.unsplash.com/photo-1552083375-1447ce886485?w=800&q=85"
+    },
+    {
+      "id": "zjj-cave",
+      "name": "黄龙洞",
+      "nameEn": "Yellow Dragon Cave",
+      "category": "nature",
+      "description": "中国最长的溶洞之一，有定海神针等景观。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "100元",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "溶洞",
+        "钟乳石"
+      ],
+      "tips": "了解溶洞奇观。",
+      "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=85"
+    },
+    {
+      "id": "zjj-street",
+      "name": "溪布街",
+      "nameEn": "Xibu Street",
+      "category": "street",
+      "description": "张家界最有特色的文化街区。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "文化",
+        "小吃"
+      ],
+      "tips": "体验土家族文化。",
+      "image": "https://images.unsplash.com/photo-1511497584788-876760111969?w=800&q=85"
+    },
+    {
+      "id": "zjj-mountain2",
+      "name": "杨家界",
+      "nameEn": "Yangjiajie",
+      "category": "nature",
+      "description": "张家界新开发的景区，有天然长城之称。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "天然长城",
+        "峰林"
+      ],
+      "tips": "人少安静。",
+      "image": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800&q=85"
+    },
+    {
+      "id": "zjj-valley",
+      "name": "袁家界",
+      "nameEn": "Yuanjiajie",
+      "category": "nature",
+      "description": "张家界最著名的景区，有乾坤柱等景观。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
+      "highlights": [
+        "乾坤柱",
+        "天下第一桥"
+      ],
+      "tips": "电影《阿凡达》取景地。",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=85"
+    },
+    {
+      "id": "zjj-bridge2",
+      "name": "天下第一桥",
+      "nameEn": "First Bridge Under Heaven",
+      "category": "nature",
+      "description": "天然石拱桥，高350米，跨度50米。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "含门票",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "天然石桥"
+      ],
+      "tips": "了解地质奇观。",
+      "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=85"
+    },
+    {
+      "id": "zjj-street2",
+      "name": "大庸古城",
+      "nameEn": "Dayong Ancient City",
+      "category": "street",
+      "description": "张家界新开发的历史文化街区。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
+      "highlights": [
+        "古城",
+        "文化"
+      ],
+      "tips": "了解张家界历史。",
+      "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&q=85"
+    },
+    {
+      "id": "zjj-mountain3",
+      "name": "天门洞",
+      "nameEn": "Tianmen Cave",
+      "category": "nature",
+      "description": "天门山上的天然穿山溶洞，高131米。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "含天门山",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "天门洞",
+        "999级台阶"
+      ],
+      "tips": "攀登999级台阶。",
+      "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&q=85"
+    },
+    {
+      "id": "zjj-street3",
+      "name": "老道湾",
+      "nameEn": "Laodaowan",
+      "category": "street",
+      "description": "张家界新开发的民俗文化村。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "民俗文化"
+      ],
+      "tips": "了解土家族文化。",
+      "image": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=800&q=85"
+    },
+    {
+      "id": "zjj-night",
+      "name": "张家界夜景",
+      "nameEn": "Zhangjiajie Night View",
+      "category": "landmark",
+      "description": "溪布街的夜景灯光秀。",
+      "address": "张家界市武陵源区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 110.43
+      },
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "灯光秀",
+        "夜景"
+      ],
+      "tips": "夏季夜间最美。",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=85"
+    },
+    {
+      "id": "zjj-temple",
+      "name": "普光禅寺",
+      "nameEn": "Puguang Temple",
+      "category": "temple",
+      "description": "张家界最古老的佛教寺院。",
+      "address": "张家界市永定区",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "佛教文化"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=85"
+    },
+    {
+      "id": "zjj-food2",
+      "name": "三下锅",
+      "nameEn": "Sanxiaguo",
+      "category": "street",
+      "description": "张家界最著名的特色菜。",
+      "address": "张家界市",
+      "coordinates": {
+        "lat": 29.08,
+        "lng": 110.48
+      },
+      "openingHours": "全天",
+      "ticketPrice": "人均40元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "三下锅",
+        "土家族菜"
+      ],
+      "tips": "品尝张家界特色菜。",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=85"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "zhangjiajie-1",
+      "name": "三下锅总店",
+      "nameEn": "San Xia Guo Restaurant",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 80,
+      "rating": 4.6,
+      "address": "Zhonghua Road, Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3335,
+        "lng": 110.5365
+      },
+      "phone": "+86 744 555 1234",
+      "hours": "10:00-22:00",
+      "description": "Famous for San Xia Guo - a traditional Tujia hot pot with three meats.",
+      "dishHighlights": [
+        "San Xia Guo (Three Meats Hot Pot)",
+        "Tujia fermented grain wine",
+        "Mountain vegetables"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "hotpot",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-2",
+      "name": "岩耳炖鸡",
+      "nameEn": "Rock Ear Chicken Soup",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 120,
+      "rating": 4.7,
+      "address": "Wuling Road, Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4785
+      },
+      "phone": "+86 744 822 5678",
+      "hours": "09:00-21:00",
+      "description": "Specialty restaurant serving Rock Ear Chicken - a famous local medicinal soup.",
+      "dishHighlights": [
+        "Rock Ear Chicken Soup",
+        "Wild mushroom dishes",
+        "Tujia specialties"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "health",
+        "soup"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-3",
+      "name": "老灶台三下锅",
+      "nameEn": "Old Stove San Xia Guo",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Near Forest Park Entrance",
+      "coordinates": {
+        "lat": 29.3475,
+        "lng": 110.4465
+      },
+      "hours": "11:00-21:30",
+      "description": "Popular local restaurant with authentic old stove cooking method.",
+      "dishHighlights": [
+        "San Xia Guo",
+        "Chili pepper chicken",
+        "Pickled vegetables"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "hotpot",
+        "casual"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-4",
+      "name": "土家扣肉馆",
+      "nameEn": "Tujia Braised Pork Restaurant",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 60,
+      "rating": 4.4,
+      "address": "People's Road, Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4745
+      },
+      "hours": "10:30-21:00",
+      "description": "Specializing in Tujia-style braised pork and traditional dishes.",
+      "dishHighlights": [
+        "Tujia Braised Pork",
+        "Steamed fish",
+        "Local vegetables"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "pork",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-5",
+      "name": "葛根粉店",
+      "nameEn": "Kudzu Root Powder Shop",
+      "type": "local",
+      "cuisine": "Snack",
+      "avgPrice": 15,
+      "rating": 4.3,
+      "address": "Night Market, Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4795
+      },
+      "hours": "17:00-23:00",
+      "description": "Local snack shop serving authentic kudzu root powder desserts.",
+      "dishHighlights": [
+        "Kudzu root powder",
+        "Sweet rice balls",
+        "Osmanthus cake"
+      ],
+      "tags": [
+        "local",
+        "dessert",
+        "snack",
+        "night-market"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-6",
+      "name": "猕猴桃汁",
+      "nameEn": "Kiwi Juice Stall",
+      "type": "local",
+      "cuisine": "Beverage",
+      "avgPrice": 10,
+      "rating": 4.4,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4765
+      },
+      "hours": "全天",
+      "description": "Fresh kiwi juice from Zhangjiajie's famous kiwi fruit.",
+      "dishHighlights": [
+        "Fresh kiwi juice",
+        "Kiwi ice cream",
+        "Dried kiwi fruit"
+      ],
+      "tags": [
+        "local",
+        "beverage",
+        "fruit",
+        "healthy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-7",
+      "name": "腊肉豆腐馆",
+      "nameEn": "Smoked Pork Tofu Restaurant",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3235,
+        "lng": 110.5465
+      },
+      "hours": "10:00-21:00",
+      "description": "Specializing in smoked pork and tofu dishes.",
+      "dishHighlights": [
+        "Smoked Pork with Tofu",
+        "Smoked pork slices",
+        "Vegetable dishes"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "smoked-meat",
+        "home-style"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/5848495/pexels-photo-5848495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-8",
+      "name": "特色野菜馆",
+      "nameEn": "Wild Vegetable Restaurant",
+      "type": "local",
+      "cuisine": "Vegetarian",
+      "avgPrice": 55,
+      "rating": 4.6,
+      "address": "Near Baofeng Lake",
+      "coordinates": {
+        "lat": 29.3435,
+        "lng": 110.5165
+      },
+      "hours": "09:00-20:00",
+      "description": "Serving fresh wild vegetables from the forest park area.",
+      "dishHighlights": [
+        "Stir-fried wild vegetables",
+        "Wild mushroom soup",
+        "Mountain ferns"
+      ],
+      "tags": [
+        "local",
+        "vegetarian",
+        "healthy",
+        "fresh"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-9",
+      "name": "土家风味楼",
+      "nameEn": "Tujia Flavor Building",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 85,
+      "rating": 4.5,
+      "address": "Jichang Road, Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1335,
+        "lng": 110.4685
+      },
+      "phone": "+86 744 888 9999",
+      "hours": "10:30-22:00",
+      "description": "Upscale Tujia restaurant with traditional decor and performances.",
+      "dishHighlights": [
+        "Tujia hot pot",
+        "Braised pork",
+        "Ethnic performances"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "upscale",
+        "performance"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-10",
+      "name": "路边野菜摊",
+      "nameEn": "Wild Vegetable Stalls",
+      "type": "local",
+      "cuisine": "Street Food",
+      "avgPrice": 20,
+      "rating": 4.2,
+      "address": "Along scenic routes",
+      "coordinates": {
+        "lat": 29.3475,
+        "lng": 110.4465
+      },
+      "hours": "全天",
+      "description": "Roadside stalls selling freshly picked mountain vegetables.",
+      "dishHighlights": [
+        "Grilled wild vegetables",
+        "Steamed buns",
+        "Local tea"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "budget",
+        "vegetables"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-11",
+      "name": "竹筒饭馆",
+      "nameEn": "Bamboo Rice Restaurant",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 45,
+      "rating": 4.4,
+      "address": "Near Tianmen Mountain",
+      "coordinates": {
+        "lat": 29.0525,
+        "lng": 110.4795
+      },
+      "hours": "08:00-18:00",
+      "description": "Serving rice cooked in bamboo tubes - a local specialty.",
+      "dishHighlights": [
+        "Bamboo rice",
+        "Grilled chicken",
+        "Wild vegetables"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "bamboo",
+        "特色"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-12",
+      "name": "农家乐",
+      "nameEn": "Farm Family Restaurant",
+      "type": "local",
+      "cuisine": "Home Style",
+      "avgPrice": 55,
+      "rating": 4.5,
+      "address": "Rural Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1535,
+        "lng": 110.4565
+      },
+      "hours": "10:00-20:00",
+      "description": "Rural homestyle cooking with fresh ingredients from local farms.",
+      "dishHighlights": [
+        "Farm chicken",
+        "Fresh eggs",
+        "Organic vegetables"
+      ],
+      "tags": [
+        "local",
+        "home-style",
+        "farm-fresh",
+        "rural"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/23880152/pexels-photo-23880152.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-13",
+      "name": "苗家酸汤鱼",
+      "nameEn": "Miao Sour Soup Fish",
+      "type": "local",
+      "cuisine": "Miao",
+      "avgPrice": 75,
+      "rating": 4.6,
+      "address": "Wuling District",
+      "coordinates": {
+        "lat": 29.3435,
+        "lng": 110.5265
+      },
+      "hours": "11:00-21:00",
+      "description": "Miao-style sour soup fish - a specialty of the region.",
+      "dishHighlights": [
+        "Sour soup fish",
+        "Miao fermented grains",
+        "Spicy dishes"
+      ],
+      "tags": [
+        "local",
+        "miaocuisine",
+        "sour",
+        "spicy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-14",
+      "name": "豆腐脑店",
+      "nameEn": "Tofu Brain Shop",
+      "type": "local",
+      "cuisine": "Breakfast",
+      "avgPrice": 12,
+      "rating": 4.3,
+      "address": "Morning Market, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4725
+      },
+      "hours": "06:00-11:00",
+      "description": "Popular breakfast spot serving tofu brain with various toppings.",
+      "dishHighlights": [
+        "Tofu brain",
+        "Shao Mai",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "tofu",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-15",
+      "name": "湘菜馆",
+      "nameEn": "Hunan Restaurant",
+      "type": "local",
+      "cuisine": "Hunan",
+      "avgPrice": 65,
+      "rating": 4.4,
+      "address": "市中心",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4795
+      },
+      "hours": "10:30-22:00",
+      "description": "Classic Hunan restaurant with spicy dishes and rice.",
+      "dishHighlights": [
+        "Spicy diced chicken",
+        "Chairman Mao's red braised pork",
+        "Fish with chili"
+      ],
+      "tags": [
+        "local",
+        "hunan-cuisine",
+        "spicy",
+        "classic"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-16",
+      "name": "大排档",
+      "nameEn": "Night Food Stalls",
+      "type": "local",
+      "cuisine": "Street Food",
+      "avgPrice": 40,
+      "rating": 4.2,
+      "address": "Night Market Area",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4815
+      },
+      "hours": "18:00-02:00",
+      "description": "Night market with variety of grilled meats and skewers.",
+      "dishHighlights": [
+        "Grilled lamb skewers",
+        "Spicy crawfish",
+        "Beer"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "night-market",
+        "grilled"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-17",
+      "name": "米粉店",
+      "nameEn": "Rice Noodle Shop",
+      "type": "local",
+      "cuisine": "Noodles",
+      "avgPrice": 18,
+      "rating": 4.4,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4775
+      },
+      "hours": "06:00-20:00",
+      "description": "Local rice noodles with savory broth and toppings.",
+      "dishHighlights": [
+        "Rice noodles",
+        "Beef noodle",
+        "Pork noodle"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-18",
+      "name": "蒸菜馆",
+      "nameEn": "Steamed Dish Restaurant",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 50,
+      "rating": 4.5,
+      "address": "Near Wulingyuan",
+      "coordinates": {
+        "lat": 29.3335,
+        "lng": 110.5365
+      },
+      "hours": "10:00-21:00",
+      "description": "Traditional Tujia steamed dishes - healthy and flavorful.",
+      "dishHighlights": [
+        "Steamed fish",
+        "Steamed vegetables",
+        "Steamed pork"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "steamed",
+        "healthy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-19",
+      "name": "火锅城",
+      "nameEn": "Hot Pot City",
+      "type": "local",
+      "cuisine": "Hot Pot",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "Commercial Center",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4715
+      },
+      "phone": "+86 744 888 6666",
+      "hours": "11:00-23:00",
+      "description": "Large hot pot restaurant with variety of broths and ingredients.",
+      "dishHighlights": [
+        "Mushroom hot pot",
+        "Lamb hot pot",
+        "Seafood combinations"
+      ],
+      "tags": [
+        "local",
+        "hotpot",
+        "variety",
+        "group"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-20",
+      "name": "土家腊肉",
+      "nameEn": "Tujia Smoked Meat",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 55,
+      "rating": 4.6,
+      "address": "Old Street, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4755
+      },
+      "hours": "09:00-21:00",
+      "description": "Specializing in traditional Tujia smoked and cured meats.",
+      "dishHighlights": [
+        "Smoked pork",
+        "Smoked ribs",
+        "Cured chicken"
+      ],
+      "tags": [
+        "local",
+        "tujia-cuisine",
+        "smoked-meat",
+        "traditional"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-21",
+      "name": "张家界川菜馆",
+      "nameEn": "Zhangjiajie Sichuan Restaurant",
+      "type": "local",
+      "cuisine": "Sichuan",
+      "avgPrice": 60,
+      "rating": 4.3,
+      "address": "People's Road, Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4755
+      },
+      "hours": "10:30-22:00",
+      "description": "Popular Sichuan restaurant with signature mapo tofu and spicy dishes.",
+      "dishHighlights": [
+        "Mapo tofu",
+        "Spicy diced chicken",
+        "Fish-flavored pork ribs"
+      ],
+      "tags": [
+        "sichuan-cuisine",
+        "spicy",
+        "popular"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-22",
+      "name": "武陵土菜馆",
+      "nameEn": "Wuling Tujia Restaurant",
+      "type": "local",
+      "cuisine": "Tujia",
+      "avgPrice": 70,
+      "rating": 4.5,
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3235,
+        "lng": 110.5365
+      },
+      "hours": "10:00-21:30",
+      "description": "Local favorite serving authentic Tujia dishes with home-cooked style.",
+      "dishHighlights": [
+        "Tujia cold noodles",
+        "Braised pork belly",
+        "Pickled vegetables"
+      ],
+      "tags": [
+        "tujia-cuisine",
+        "home-style",
+        "local-favorite"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-23",
+      "name": "山顶农家菜",
+      "nameEn": "Mountain Top Farm House",
+      "type": "local",
+      "cuisine": "Home Style",
+      "avgPrice": 65,
+      "rating": 4.6,
+      "address": "Inside Zhangjiajie Forest Park",
+      "coordinates": {
+        "lat": 29.3635,
+        "lng": 110.4465
+      },
+      "hours": "09:00-18:00",
+      "description": "Cozy restaurant inside the park with stunning mountain views and farm-fresh ingredients.",
+      "dishHighlights": [
+        "Steamed mountain fish",
+        "Wild mushroom stir-fry",
+        "Bamboo shoots"
+      ],
+      "tags": [
+        "park-location",
+        "scenic-view",
+        "farm-fresh"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-24",
+      "name": "溪水鱼庄",
+      "nameEn": "Stream Fish Restaurant",
+      "type": "local",
+      "cuisine": "Seafood",
+      "avgPrice": 95,
+      "rating": 4.5,
+      "address": "Near Golden Whip Stream",
+      "coordinates": {
+        "lat": 29.3435,
+        "lng": 110.4365
+      },
+      "hours": "10:00-20:00",
+      "description": "Specializing in stream fish dishes - fresh trout and carp from local waters.",
+      "dishHighlights": [
+        "Grilled trout",
+        "Fish hot pot",
+        "Steamed fish with ginger"
+      ],
+      "tags": [
+        "fresh-fish",
+        "local-specialty",
+        "scenic-area"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-25",
+      "name": "回民餐厅",
+      "nameEn": "Muslim Restaurant",
+      "type": "local",
+      "cuisine": "Muslim",
+      "avgPrice": 55,
+      "rating": 4.4,
+      "address": "Near Bus Station",
+      "coordinates": {
+        "lat": 29.1375,
+        "lng": 110.4715
+      },
+      "hours": "07:00-21:00",
+      "description": "Halal restaurant serving beef and lamb dishes in Uyghur and Chinese Muslim style.",
+      "dishHighlights": [
+        "Beef lamian noodles",
+        "Lamb skewers",
+        "Hand-pulled noodles"
+      ],
+      "tags": [
+        "halal",
+        "muslim-cuisine",
+        "noodles"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-26",
+      "name": "天门山索道餐厅",
+      "nameEn": "Tianmen Mountain Cable Car Restaurant",
+      "type": "local",
+      "cuisine": "Fast Food",
+      "avgPrice": 50,
+      "rating": 4.0,
+      "address": "Tianmen Mountain Summit",
+      "coordinates": {
+        "lat": 29.0535,
+        "lng": 110.4795
+      },
+      "hours": "09:00-17:00",
+      "description": "Casual dining at the mountain summit with limited but convenient options.",
+      "dishHighlights": [
+        "Noodles",
+        "Dumplings",
+        "Hot drinks"
+      ],
+      "tags": [
+        "convenient",
+        "mountain-location",
+        "limited-options"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-27",
+      "name": "张家界火锅店",
+      "nameEn": "Zhangjiajie Hotpot Restaurant",
+      "type": "local",
+      "cuisine": "Hot Pot",
+      "avgPrice": 85,
+      "rating": 4.4,
+      "address": "Commercial Street, City Center",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4735
+      },
+      "hours": "11:00-23:00",
+      "description": "Popular hot pot restaurant with variety of broths and fresh ingredients.",
+      "dishHighlights": [
+        "Mushroom hot pot",
+        "Spicy broth",
+        "Beef slices"
+      ],
+      "tags": [
+        "hotpot",
+        "popular",
+        "evening-dining"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-28",
+      "name": "五雷山素斋",
+      "nameEn": "Wulei Mountain Vegetarian",
+      "type": "local",
+      "cuisine": "Vegetarian",
+      "avgPrice": 45,
+      "rating": 4.3,
+      "address": "Near Wulei Mountain",
+      "coordinates": {
+        "lat": 29.0835,
+        "lng": 110.5435
+      },
+      "hours": "09:00-17:00",
+      "description": "Temple vegetarian cuisine with organic vegetables and Buddhist-style dishes.",
+      "dishHighlights": [
+        "Buddha jumping over wall",
+        "Vegetable tempura",
+        "Temple tofu"
+      ],
+      "tags": [
+        "vegetarian",
+        "buddhist",
+        "healthy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/28078570/pexels-photo-28078570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-29",
+      "name": "夜市烧烤一条街",
+      "nameEn": "Night Market BBQ Street",
+      "type": "local",
+      "cuisine": "Street Food",
+      "avgPrice": 50,
+      "rating": 4.2,
+      "address": "Night Market, Downtown",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4815
+      },
+      "hours": "18:00-02:00",
+      "description": "Famous BBQ street with dozens of stalls serving grilled meats and skewers.",
+      "dishHighlights": [
+        "Grilled lamb chops",
+        "Cumin lamb skewers",
+        "Beer"
+      ],
+      "tags": [
+        "bbq",
+        "night-market",
+        "local-atmosphere"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-30",
+      "name": "张家界国际酒店餐厅",
+      "nameEn": "Zhangjiajie International Hotel Restaurant",
+      "type": "international",
+      "cuisine": "International",
+      "avgPrice": 150,
+      "rating": 4.3,
+      "address": "Zhangjiajie International Hotel",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4685
+      },
+      "hours": "06:30-22:00",
+      "description": "Hotel restaurant offering international buffet and Chinese dishes.",
+      "dishHighlights": [
+        "International buffet",
+        "Seafood options",
+        "Western dishes"
+      ],
+      "tags": [
+        "hotel",
+        "buffet",
+        "reliable"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "",
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-31",
+      "name": "张家界味葛根粉",
+      "nameEn": "张家界味葛根粉 (葛根粉)",
+      "type": "local",
+      "cuisine": "葛根粉",
+      "avgPrice": 70,
+      "rating": 4.2,
+      "address": "张家界市市中心区美食街25号",
+      "coordinates": {
+        "lat": 29.146,
+        "lng": 110.4318
+      },
+      "phone": "+86 010 31845682",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的葛根粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "社饭",
+        "土家腊肉",
+        "葛根粉"
+      ],
+      "tags": [
+        "社区老店",
+        "本地人爱去",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-33",
+      "name": "老张家界土家腊肉",
+      "nameEn": "老张家界土家腊肉 (土家腊肉)",
+      "type": "local",
+      "cuisine": "土家腊肉",
+      "avgPrice": 60,
+      "rating": 4.9,
+      "address": "张家界市老城区美食街102号",
+      "coordinates": {
+        "lat": 29.1285,
+        "lng": 110.4581
+      },
+      "phone": "+86 010 33861288",
+      "hours": "06:00-14:00",
+      "description": "张家界本地人推荐的土家腊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "三下锅",
+        "社饭",
+        "土家腊肉"
+      ],
+      "tags": [
+        "隐藏美食",
+        "性价比高",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-35",
+      "name": "正宗土家腊肉",
+      "nameEn": "正宗土家腊肉 (土家腊肉)",
+      "type": "cafe",
+      "cuisine": "土家腊肉",
+      "avgPrice": 30,
+      "rating": 4.6,
+      "address": "张家界市老城区美食街88号",
+      "coordinates": {
+        "lat": 29.0879,
+        "lng": 110.4688
+      },
+      "phone": "+86 010 23795130",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的土家腊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "三下锅",
+        "土家腊肉",
+        "酸鱼肉"
+      ],
+      "tags": [
+        "文艺",
+        "下午茶",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-37",
+      "name": "巷子三下锅",
+      "nameEn": "巷子三下锅 (三下锅)",
+      "type": "local",
+      "cuisine": "三下锅",
+      "avgPrice": 60,
+      "rating": 4.8,
+      "address": "张家界市老城区美食街182号",
+      "coordinates": {
+        "lat": 29.1355,
+        "lng": 110.442
+      },
+      "phone": "+86 010 23421736",
+      "hours": "06:00-14:00",
+      "description": "张家界本地人推荐的三下锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土家腊肉",
+        "酸鱼肉",
+        "三下锅"
+      ],
+      "tags": [
+        "排队王",
+        "隐藏美食",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445827/pexels-photo-28445827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-39",
+      "name": "张家界味土家腊肉",
+      "nameEn": "张家界味土家腊肉 (土家腊肉)",
+      "type": "street",
+      "cuisine": "土家腊肉",
+      "avgPrice": 58,
+      "rating": 4.0,
+      "address": "张家界市市中心区美食街103号",
+      "coordinates": {
+        "lat": 29.1054,
+        "lng": 110.4428
+      },
+      "phone": "+86 010 85614156",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的土家腊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土家腊肉",
+        "社饭",
+        "酸鱼肉"
+      ],
+      "tags": [
+        "深夜美食",
+        "路边摊",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-41",
+      "name": "老字号三下锅",
+      "nameEn": "老字号三下锅 (三下锅)",
+      "type": "local",
+      "cuisine": "三下锅",
+      "avgPrice": 123,
+      "rating": 4.7,
+      "address": "张家界市市中心区美食街160号",
+      "coordinates": {
+        "lat": 29.1242,
+        "lng": 110.471
+      },
+      "phone": "+86 010 63169293",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "张家界本地人推荐的三下锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸鱼肉",
+        "葛根粉",
+        "土家腊肉"
+      ],
+      "tags": [
+        "本地人爱去",
+        "排队王",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-43",
+      "name": "巷子土家腊肉",
+      "nameEn": "巷子土家腊肉 (土家腊肉)",
+      "type": "street",
+      "cuisine": "土家腊肉",
+      "avgPrice": 25,
+      "rating": 4.1,
+      "address": "张家界市新城区美食街88号",
+      "coordinates": {
+        "lat": 29.0751,
+        "lng": 110.5097
+      },
+      "phone": "+86 010 17897032",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "张家界本地人推荐的土家腊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸鱼肉",
+        "三下锅",
+        "葛根粉"
+      ],
+      "tags": [
+        "路边摊",
+        "夜市",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-45",
+      "name": "老街三下锅",
+      "nameEn": "老街三下锅 (三下锅)",
+      "type": "local",
+      "cuisine": "三下锅",
+      "avgPrice": 47,
+      "rating": 4.2,
+      "address": "张家界市市中心区美食街150号",
+      "coordinates": {
+        "lat": 29.1464,
+        "lng": 110.4833
+      },
+      "phone": "+86 010 99363874",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "张家界本地人推荐的三下锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土家腊肉",
+        "三下锅",
+        "社饭"
+      ],
+      "tags": [
+        "排队王",
+        "隐藏美食",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-47",
+      "name": "张家界味三下锅",
+      "nameEn": "张家界味三下锅 (三下锅)",
+      "type": "local",
+      "cuisine": "三下锅",
+      "avgPrice": 105,
+      "rating": 4.5,
+      "address": "张家界市市中心区美食街54号",
+      "coordinates": {
+        "lat": 29.1574,
+        "lng": 110.4849
+      },
+      "phone": "+86 010 17338622",
+      "hours": "17:00-02:00",
+      "description": "张家界本地人推荐的三下锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "三下锅",
+        "葛根粉",
+        "土家腊肉"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-49",
+      "name": "街边社饭",
+      "nameEn": "街边社饭 (社饭)",
+      "type": "local",
+      "cuisine": "社饭",
+      "avgPrice": 122,
+      "rating": 4.2,
+      "address": "张家界市老城区美食街153号",
+      "coordinates": {
+        "lat": 29.1357,
+        "lng": 110.4945
+      },
+      "phone": "+86 010 75308337",
+      "hours": "06:00-14:00",
+      "description": "张家界本地人推荐的社饭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "三下锅",
+        "酸鱼肉",
+        "土家腊肉"
+      ],
+      "tags": [
+        "性价比高",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6646201/pexels-photo-6646201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-51",
+      "name": "巷子酸鱼肉",
+      "nameEn": "巷子酸鱼肉 (酸鱼肉)",
+      "type": "local",
+      "cuisine": "酸鱼肉",
+      "avgPrice": 88,
+      "rating": 4.1,
+      "address": "张家界市新城区美食街38号",
+      "coordinates": {
+        "lat": 29.1249,
+        "lng": 110.4364
+      },
+      "phone": "+86 010 74996827",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的酸鱼肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土家腊肉",
+        "三下锅",
+        "酸鱼肉"
+      ],
+      "tags": [
+        "老字号",
+        "本地人爱去",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/6613050/pexels-photo-6613050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-53",
+      "name": "老张家界酸鱼肉",
+      "nameEn": "老张家界酸鱼肉 (酸鱼肉)",
+      "type": "local",
+      "cuisine": "酸鱼肉",
+      "avgPrice": 111,
+      "rating": 4.0,
+      "address": "张家界市老城区美食街128号",
+      "coordinates": {
+        "lat": 29.1394,
+        "lng": 110.473
+      },
+      "phone": "+86 010 59163266",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "张家界本地人推荐的酸鱼肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "葛根粉",
+        "土家腊肉",
+        "三下锅"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-55",
+      "name": "老街三下锅",
+      "nameEn": "老街三下锅 (三下锅)",
+      "type": "local",
+      "cuisine": "三下锅",
+      "avgPrice": 77,
+      "rating": 4.2,
+      "address": "张家界市老城区美食街66号",
+      "coordinates": {
+        "lat": 29.1088,
+        "lng": 110.4836
+      },
+      "phone": "+86 010 90505267",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的三下锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "三下锅",
+        "酸鱼肉",
+        "土家腊肉"
+      ],
+      "tags": [
+        "家常菜",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445826/pexels-photo-28445826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-57",
+      "name": "街边社饭",
+      "nameEn": "街边社饭 (社饭)",
+      "type": "street",
+      "cuisine": "社饭",
+      "avgPrice": 32,
+      "rating": 4.2,
+      "address": "张家界市老城区美食街43号",
+      "coordinates": {
+        "lat": 29.1364,
+        "lng": 110.4877
+      },
+      "phone": "+86 010 98755523",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的社饭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "葛根粉",
+        "土家腊肉",
+        "社饭"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-59",
+      "name": "传统三下锅",
+      "nameEn": "传统三下锅 (三下锅)",
+      "type": "local",
+      "cuisine": "三下锅",
+      "avgPrice": 91,
+      "rating": 4.7,
+      "address": "张家界市新城区美食街172号",
+      "coordinates": {
+        "lat": 29.0725,
+        "lng": 110.504
+      },
+      "phone": "+86 010 84925270",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "张家界本地人推荐的三下锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "三下锅",
+        "葛根粉",
+        "土家腊肉"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/10695967/pexels-photo-10695967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-61",
+      "name": "老街三下锅",
+      "nameEn": "老街三下锅 (三下锅)",
+      "type": "cafe",
+      "cuisine": "三下锅",
+      "avgPrice": 29,
+      "rating": 4.4,
+      "address": "张家界市市中心区美食街59号",
+      "coordinates": {
+        "lat": 29.0687,
+        "lng": 110.5249
+      },
+      "phone": "+86 010 54861863",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的三下锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "土家腊肉",
+        "葛根粉",
+        "酸鱼肉"
+      ],
+      "tags": [
+        "文艺",
+        "下午茶",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-63",
+      "name": "传统土家腊肉",
+      "nameEn": "传统土家腊肉 (土家腊肉)",
+      "type": "local",
+      "cuisine": "土家腊肉",
+      "avgPrice": 140,
+      "rating": 4.3,
+      "address": "张家界市市中心区美食街112号",
+      "coordinates": {
+        "lat": 29.0688,
+        "lng": 110.4387
+      },
+      "phone": "+86 010 36377003",
+      "hours": "06:00-14:00",
+      "description": "张家界本地人推荐的土家腊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "葛根粉",
+        "社饭",
+        "土家腊肉"
+      ],
+      "tags": [
+        "隐藏美食",
+        "社区老店",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-65",
+      "name": "正宗社饭",
+      "nameEn": "正宗社饭 (社饭)",
+      "type": "local",
+      "cuisine": "社饭",
+      "avgPrice": 124,
+      "rating": 4.8,
+      "address": "张家界市老城区美食街22号",
+      "coordinates": {
+        "lat": 29.0995,
+        "lng": 110.4871
+      },
+      "phone": "+86 010 51635345",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "张家界本地人推荐的社饭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "三下锅",
+        "社饭",
+        "酸鱼肉"
+      ],
+      "tags": [
+        "隐藏美食",
+        "老字号",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-67",
+      "name": "街边土家腊肉",
+      "nameEn": "街边土家腊肉 (土家腊肉)",
+      "type": "local",
+      "cuisine": "土家腊肉",
+      "avgPrice": 106,
+      "rating": 4.1,
+      "address": "张家界市市中心区美食街98号",
+      "coordinates": {
+        "lat": 29.1318,
+        "lng": 110.498
+      },
+      "phone": "+86 010 42504052",
+      "hours": "09:00-21:00",
+      "description": "张家界本地人推荐的土家腊肉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸鱼肉",
+        "土家腊肉",
+        "葛根粉"
+      ],
+      "tags": [
+        "家常菜",
+        "老字号",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/28445829/pexels-photo-28445829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "id": "zhangjiajie-69",
+      "name": "地道社饭",
+      "nameEn": "地道社饭 (社饭)",
+      "type": "local",
+      "cuisine": "社饭",
+      "avgPrice": 32,
+      "rating": 4.6,
+      "address": "张家界市老城区美食街103号",
+      "coordinates": {
+        "lat": 29.0978,
+        "lng": 110.5273
+      },
+      "phone": "+86 010 22364821",
+      "hours": "10:00-22:00",
+      "description": "张家界本地人推荐的社饭店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "社饭",
+        "葛根粉",
+        "土家腊肉"
+      ],
+      "tags": [
+        "性价比高",
+        "社区老店",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major domestic airports: Beijing (3.5h), Shanghai (2.5h), Guangzhou (1.5h)",
+        "to": "Zhangjiajie Hehua International Airport (DYG)",
+        "duration": "1.5-3.5 hours",
+        "price": "600-2000¥",
+        "frequency": "Multiple daily flights",
+        "tips": "Airport 5km from city center. Airport bus (20¥) to city and scenic areas. Taxis available."
+      },
+      {
+        "type": "train",
+        "from": "Changsha (3h), Beijing (15h), Shanghai (10h), Guangzhou (8h)",
+        "to": "Zhangjiajie Railway Station / Zhangjiajie West Station",
+        "duration": "3-15 hours",
+        "price": "200-800¥",
+        "frequency": "Multiple daily departures",
+        "tips": "High-speed trains from Changsha. West Station for high-speed, main station for regular trains."
+      },
+      {
+        "type": "bus",
+        "from": "Changsha (4h), Fenghuang (3h), Jishou (2h)",
+        "to": "Zhangjiajie Bus Station",
+        "duration": "2-4 hours",
+        "price": "100-180¥",
+        "frequency": "Regular departures",
+        "tips": "Bus station near train station. Tourist buses to scenic areas available."
+      }
+    ],
+    "local": {
+      "metro": [
+        {
+          "line": "Line 1",
+          "description": "Connects city center to airport and bus station",
+          "hours": "06:30-22:00"
+        },
+        {
+          "line": "Line 2",
+          "description": "Connects railway stations to main tourist areas",
+          "hours": "06:30-22:00"
+        },
+        {
+          "line": "Future Expansion",
+          "description": "Lines to Wulingyuan and scenic areas planned",
+          "hours": "N/A"
+        },
+        {
+          "line": "English Signs",
+          "description": "Limited English signage - use translation app",
+          "hours": "N/A"
+        },
+        {
+          "line": "Fare",
+          "description": "2-7¥ per journey",
+          "hours": "N/A"
+        },
+        {
+          "line": "Peak Hours",
+          "description": "07:00-09:00 and 17:00-19:00 can be crowded",
+          "hours": "N/A"
+        },
+        {
+          "line": "Connection",
+          "description": "Connects to bus stations for scenic area access",
+          "hours": "N/A"
+        },
+        {
+          "line": "Cards",
+          "description": "Transportation cards available for tourists",
+          "hours": "N/A"
+        },
+        {
+          "line": "Last Train",
+          "description": "Last metro around 22:00 - plan accordingly",
+          "hours": "N/A"
+        },
+        {
+          "line": "Alternatives",
+          "description": "When metro crowded, buses are good alternative",
+          "hours": "N/A"
+        },
+        {
+          "line": "City Map",
+          "description": "Get city map at metro stations",
+          "hours": "N/A"
+        },
+        {
+          "line": "Tourist Metro",
+          "description": "Special tourist metro during holidays",
+          "hours": "Seasonal"
+        }
+      ],
+      "bus": [
+        {
+          "route": "Tourist Bus 1",
+          "description": "City - Tianmen Mountain",
+          "price": "15¥",
+          "frequency": "Every 30 min"
+        },
+        {
+          "route": "Tourist Bus 2",
+          "description": "City - Forest Park",
+          "price": "20¥",
+          "frequency": "Every 20 min"
+        },
+        {
+          "route": "Tourist Bus 3",
+          "description": "City - Grand Canyon",
+          "price": "25¥",
+          "frequency": "Every 40 min"
+        },
+        {
+          "route": "Tourist Bus 4",
+          "description": "City - Yellow Dragon Cave",
+          "price": "22¥",
+          "frequency": "Every 45 min"
+        },
+        {
+          "route": "Bus 1",
+          "description": "City center loop",
+          "price": "2¥",
+          "frequency": "Every 10 min"
+        },
+        {
+          "route": "Bus 5",
+          "description": "Railway station to city",
+          "price": "2¥",
+          "frequency": "Every 15 min"
+        },
+        {
+          "route": "Bus 10",
+          "description": "Bus station to scenic areas",
+          "price": "3¥",
+          "frequency": "Every 20 min"
+        },
+        {
+          "route": "Bus 101",
+          "description": "Wulingyuan district inner",
+          "price": "2¥",
+          "frequency": "Every 15 min"
+        },
+        {
+          "route": "Airport Bus",
+          "description": "Airport to city center",
+          "price": "20¥",
+          "frequency": "Every 30 min"
+        },
+        {
+          "route": "Sightseeing Bus",
+          "description": "Within Forest Park - free with ticket",
+          "price": "Included",
+          "frequency": "Continuous"
+        },
+        {
+          "route": "Night Bus",
+          "description": "Night market routes",
+          "price": "2¥",
+          "frequency": "Every 30 min"
+        },
+        {
+          "route": "Kandong Bus",
+          "description": "To remote scenic spots",
+          "price": "Varies",
+          "frequency": "Limited"
+        },
+        {
+          "route": "Express Bus",
+          "description": "Direct to Changsha",
+          "price": "120¥",
+          "frequency": "Several daily"
+        }
+      ],
+      "taxi": [
+        {
+          "type": "Starting Fare",
+          "price": "8¥",
+          "description": "First 2km"
+        },
+        {
+          "type": "Per km",
+          "price": "2¥/km",
+          "description": "After first 2km"
+        },
+        {
+          "type": "To Airport",
+          "price": "30-50¥",
+          "description": "From city center"
+        },
+        {
+          "type": "To Forest Park",
+          "price": "80-120¥",
+          "description": "From city center"
+        },
+        {
+          "type": "To Tianmen",
+          "price": "50-80¥",
+          "description": "From city center"
+        },
+        {
+          "type": "Didi",
+          "description": "Ride-hailing app works in city",
+          "tips": "Set destination carefully"
+        },
+        {
+          "type": "Long Distance",
+          "price": "Negotiable",
+          "description": "To distant attractions"
+        },
+        {
+          "type": "Night Surcharge",
+          "price": "+20%",
+          "description": "22:00-06:00"
+        },
+        {
+          "type": "Tip",
+          "description": "Have destination written in Chinese",
+          "tips": "Show address to driver"
+        },
+        {
+          "type": "Airport Taxi",
+          "price": "Meter",
+          "description": "Official taxis at airport"
+        },
+        {
+          "type": "Hotel Pickup",
+          "description": "Ask hotel to call taxi",
+          "tips": "Useful for early morning"
+        },
+        {
+          "type": "Negotiation",
+          "description": "Agree price before for tourist areas",
+          "tips": "Research typical prices"
+        }
+      ],
+      "bike": [
+        {
+          "type": "E-bike Rental",
+          "price": "50-80¥/day",
+          "locations": "City center and tourist areas",
+          "tips": "Valid driving license needed"
+        },
+        {
+          "type": "Bike Share",
+          "price": "2-5¥/trip",
+          "locations": "City center stations",
+          "tips": "Use WeChat mini program"
+        },
+        {
+          "type": "Mountain Bike",
+          "price": "100-150¥/day",
+          "locations": "Near Forest Park",
+          "tips": "For experienced riders only"
+        },
+        {
+          "type": "Cave Area",
+          "description": "Not recommended - long distances",
+          "suitability": "City exploring only"
+        },
+        {
+          "type": "Traffic Rules",
+          "description": "Follow local traffic regulations",
+          "tips": "Ride in bike lanes"
+        },
+        {
+          "type": "Parking",
+          "price": "1-2¥",
+          "description": "Designated parking areas",
+          "tips": "Lock bike properly"
+        },
+        {
+          "type": "Helmet",
+          "description": "Recommended but not always provided",
+          "tips": "Bring your own if possible"
+        },
+        {
+          "type": "Night Riding",
+          "description": "Not recommended - limited lighting",
+          "tips": "Return before dark"
+        },
+        {
+          "type": "Scenic Areas",
+          "description": "Bikes not allowed inside most attractions",
+          "tips": "Park at entrance"
+        },
+        {
+          "type": "Rain",
+          "description": "Avoid riding in heavy rain",
+          "tips": "Check weather forecast"
+        },
+        {
+          "type": "Distance",
+          "description": "Short distances in city only",
+          "tips": "Use bus for scenic areas"
+        },
+        {
+          "type": "Registration",
+          "description": "Some e-bikes require registration",
+          "tips": "Ask rental shop"
+        }
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "张家界禾田居度假酒店",
+      "nameEn": "Zhangjiajie He Tian Ju Resort",
+      "budget": "luxury",
+      "priceRange": "¥800-2000/night",
+      "address": "Wulingyuan District, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.3435,
+        "lng": 110.5365
+      },
+      "rating": 4.7,
+      "highlights": [
+        "Mountain views",
+        "Traditional architecture",
+        "Spa services",
+        "Outdoor pool"
+      ],
+      "bookingTips": "Best luxury option near scenic areas. Book directly for free upgrades."
+    },
+    {
+      "name": "张家界京武铂尔曼酒店",
+      "nameEn": "Pullman Zhangjiajie",
+      "budget": "luxury",
+      "priceRange": "¥600-1500/night",
+      "address": "N-dayang Road, Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1335,
+        "lng": 110.4685
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central location",
+        "International standards",
+        "Good breakfast",
+        "Fitness center"
+      ],
+      "bookingTips": "Best Western brand in city. Weekend discounts available."
+    },
+    {
+      "name": "张家界万豪酒店",
+      "nameEn": "Marriott Zhangjiajie",
+      "budget": "luxury",
+      "priceRange": "¥700-1800/night",
+      "address": "Kaiyuan Road, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4735
+      },
+      "rating": 4.7,
+      "highlights": [
+        "River views",
+        "Modern facilities",
+        "Multiple restaurants",
+        "Concierge service"
+      ],
+      "bookingTips": "Best new luxury hotel. Book river-view rooms."
+    },
+    {
+      "name": "张家界铂尔曼酒店",
+      "nameEn": "Pullman Zhangjiajie Resort",
+      "budget": "luxury",
+      "priceRange": "¥900-2200/night",
+      "address": "Wulingyuan Scenic Area",
+      "coordinates": {
+        "lat": 29.3535,
+        "lng": 110.4465
+      },
+      "rating": 4.8,
+      "highlights": [
+        "Next to Forest Park",
+        "Scenic views",
+        "Shuttle service",
+        "All-inclusive option"
+      ],
+      "bookingTips": "Best for park visitors. Shuttle to park entrance included."
+    },
+    {
+      "name": "张家界天房酒店",
+      "nameEn": "Tianfang Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "Zhonghua Road, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4715
+      },
+      "rating": 4.4,
+      "highlights": [
+        "City center",
+        "Good value",
+        "Clean rooms",
+        "Helpful staff"
+      ],
+      "bookingTips": "Best mid-range option in city center. Request quiet rooms."
+    },
+    {
+      "name": "张家界国宾酒店",
+      "nameEn": "Guobin Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "People's Road, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4755
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Central location",
+        "Varied breakfast",
+        "Business facilities",
+        "Underground parking"
+      ],
+      "bookingTips": "Good for business travelers. Weekend rates lower."
+    },
+    {
+      "name": "张家界福朋喜来登酒店",
+      "nameEn": "Four Points by Sheraton",
+      "budget": "mid",
+      "priceRange": "¥400-900/night",
+      "address": "Yongding Avenue, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1075,
+        "lng": 110.4795
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near highway",
+        "Modern rooms",
+        "Comfortable beds",
+        "Good service"
+      ],
+      "bookingTips": "Best for those with cars. Free parking available."
+    },
+    {
+      "name": "张家界锦江之星",
+      "nameEn": "Jinjiang Inn",
+      "budget": "budget",
+      "priceRange": "¥120-250/night",
+      "address": "Jiefang Road, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4695
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Budget friendly",
+        "Central location",
+        "Basic amenities",
+        "Clean"
+      ],
+      "bookingTips": "Best budget chain option. Book online for discounts."
+    },
+    {
+      "name": "张家界如家酒店",
+      "nameEn": "Ru Jia Hotel",
+      "budget": "budget",
+      "priceRange": "¥100-220/night",
+      "address": "Wuling Square, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1275,
+        "lng": 110.4775
+      },
+      "rating": 4.1,
+      "highlights": [
+        "Very budget",
+        "Good location",
+        "Simple rooms",
+        "Breakfast included"
+      ],
+      "bookingTips": "Most reliable budget chain. Ask for renovated rooms."
+    },
+    {
+      "name": "张家界7天连锁酒店",
+      "nameEn": "7 Days Inn",
+      "budget": "budget",
+      "priceRange": "¥90-180/night",
+      "address": "Near Bus Station, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1375,
+        "lng": 110.4715
+      },
+      "rating": 4.0,
+      "highlights": [
+        "Ultra budget",
+        "Consistent quality",
+        "Basic but clean",
+        "Good for transit"
+      ],
+      "bookingTips": "Best for one-night stays. Book ahead in peak season."
+    },
+    {
+      "name": "张家界客栈",
+      "nameEn": "Zhangjiajie Inn",
+      "budget": "budget",
+      "priceRange": "¥150-350/night",
+      "address": "Near Forest Park",
+      "coordinates": {
+        "lat": 29.3435,
+        "lng": 110.4465
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Near park entrance",
+        "Local character",
+        "Helpful owner",
+        "Garden setting"
+      ],
+      "bookingTips": "Best for park visitors. Owner can arrange tickets."
+    },
+    {
+      "name": "张家界山上客栈",
+      "nameEn": "Mountain Inn",
+      "budget": "budget",
+      "priceRange": "¥200-400/night",
+      "address": "Inside Forest Park",
+      "coordinates": {
+        "lat": 29.3535,
+        "lng": 110.4435
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Inside park",
+        "Sunrise views",
+        "Quiet location",
+        "Nature access"
+      ],
+      "bookingTips": "Book well ahead - limited rooms. Bring warm clothes."
+    },
+    {
+      "name": "张家界民宿",
+      "nameEn": "Tujia Homestay",
+      "budget": "mid",
+      "priceRange": "¥250-500/night",
+      "address": "Tujia Village, Wulingyuan",
+      "coordinates": {
+        "lat": 29.3335,
+        "lng": 110.5265
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Tujia architecture",
+        "Local experience",
+        "Home cooking",
+        "Peaceful"
+      ],
+      "bookingTips": "Authentic local experience. Minimum 1 night stay."
+    },
+    {
+      "name": "张家界天门山酒店",
+      "nameEn": "Tianmen Mountain Hotel",
+      "budget": "mid",
+      "priceRange": "¥300-600/night",
+      "address": "Near Tianmen Mountain",
+      "coordinates": {
+        "lat": 29.0535,
+        "lng": 110.4795
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near cable car",
+        "Scenic views",
+        "Modern amenities",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best for Tianmen visitors. Early start to mountain."
+    },
+    {
+      "name": "张家界客栈",
+      "nameEn": "Zhangjiajie Boutique Hotel",
+      "budget": "mid",
+      "priceRange": "¥350-700/night",
+      "address": "City Center",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4785
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Boutique style",
+        "Good service",
+        "Central location",
+        "Rooftop restaurant"
+      ],
+      "bookingTips": "Good balance of price and quality. Ask about packages."
+    },
+    {
+      "name": "张家界温德姆花园酒店",
+      "nameEn": "Wyndham Garden Zhangjiajie",
+      "budget": "mid",
+      "priceRange": "¥350-750/night",
+      "address": "Yongding Avenue, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4835
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Garden setting",
+        "Modern facilities",
+        "Good breakfast",
+        "Quiet location"
+      ],
+      "bookingTips": "Good value for money. Quiet area away from main road."
+    },
+    {
+      "name": "张家界华天大酒店",
+      "nameEn": "Huatian Hotel Zhangjiajie",
+      "budget": "mid",
+      "priceRange": "¥300-650/night",
+      "address": "Wuling Road, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4765
+      },
+      "rating": 4.3,
+      "highlights": [
+        "City center location",
+        "Multiple restaurants",
+        "Conference facilities",
+        "Good service"
+      ],
+      "bookingTips": "Reliable mid-range option. Book direct for better rates."
+    },
+    {
+      "name": "武陵源御笔峰酒店",
+      "nameEn": "Yubifeng Hotel",
+      "budget": "mid",
+      "priceRange": "¥250-550/night",
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3335,
+        "lng": 110.5465
+      },
+      "rating": 4.5,
+      "highlights": [
+        "Near scenic areas",
+        "Mountain views",
+        "Local character",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best location for park visitors. Shuttle service available."
+    },
+    {
+      "name": "张家界锦江都城酒店",
+      "nameEn": "Jinjiang Metropolo",
+      "budget": "budget",
+      "priceRange": "¥180-350/night",
+      "address": "Near Train Station",
+      "coordinates": {
+        "lat": 29.1335,
+        "lng": 110.4695
+      },
+      "rating": 4.2,
+      "highlights": [
+        "Near transport hub",
+        "Clean rooms",
+        "Basic amenities",
+        "Good for transit"
+      ],
+      "bookingTips": "Best for train travelers. Quick access to station."
+    },
+    {
+      "name": "张家界东玉温泉酒店",
+      "nameEn": "Dongyu Hot Spring Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-900/night",
+      "address": "Near Huanglong Cave",
+      "coordinates": {
+        "lat": 29.2235,
+        "lng": 110.5235
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Hot spring pools",
+        "Spa services",
+        "Scenic location",
+        "Relaxing atmosphere"
+      ],
+      "bookingTips": "Perfect after touring. Combine with cave visit."
+    },
+    {
+      "name": "张家界在路上客栈",
+      "nameEn": "On The Way Inn",
+      "budget": "budget",
+      "priceRange": "¥120-280/night",
+      "address": "Near Tianmen Mountain",
+      "coordinates": {
+        "lat": 29.0525,
+        "lng": 110.4795
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Backpacker friendly",
+        "Helpful owner",
+        "Good location",
+        "Social atmosphere"
+      ],
+      "bookingTips": "Popular with independent travelers. Great for solo travelers."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Most widely accepted mobile payment in Zhangjiajie",
+      "howToUse": [
+        "Download Alipay app",
+        "Bind international card",
+        "QR code payment"
+      ],
+      "tips": [
+        "Use for most purchases in city",
+        "Hotels and restaurants accept",
+        "Rural areas may prefer cash"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Essential for Didi ride-hailing and many local shops",
+      "howToUse": [
+        "WeChat app required",
+        "Link card to WeChat",
+        "QR code or in-app payment"
+      ],
+      "tips": [
+        "Required for Didi",
+        "Local vendors prefer",
+        "Both Alipay and WeChat useful"
+      ]
+    },
+    {
+      "method": "Cash (RMB)",
+      "icon": "cash",
+      "description": "Essential in Zhangjiajie - many local vendors and scenic areas only accept cash",
+      "howToUse": [
+        "Withdraw from ATMs",
+        "Keep 500-1000¥ for rural areas",
+        "Bamboo raft operators usually cash only"
+      ],
+      "tips": [
+        "Rural scenic areas mostly cash",
+        "Night markets prefer cash",
+        "Exchange before heading to parks"
+      ]
+    },
+    {
+      "method": "Credit Cards",
+      "icon": "credit-card",
+      "description": "Accepted at hotels and larger restaurants",
+      "howToUse": [
+        "Visa/Mastercard accepted at hotels",
+        "Some restaurants accept",
+        "Most local vendors no"
+      ],
+      "tips": [
+        "Best for hotel bookings",
+        "Upscale restaurants only",
+        "Carry cash as backup"
+      ]
+    },
+    {
+      "method": "UnionPay",
+      "icon": "unionpay",
+      "description": "Chinese bank cards - useful for ATM withdrawals",
+      "howToUse": [
+        "ATM withdrawals with Chinese card",
+        "Some merchants accept",
+        "Best for residents"
+      ],
+      "tips": [
+        "ATMs widely available",
+        "Lower fees than international cards",
+        "Tourists may not need"
+      ]
+    },
+    {
+      "method": "Mobile Wallets (Apple Pay/Google Pay)",
+      "icon": "mobile-pay",
+      "description": "Increasingly accepted at modern establishments",
+      "howToUse": [
+        "Apple Pay/Google Pay at participating stores",
+        "Works with bound card",
+        "Tap to pay"
+      ],
+      "tips": [
+        "Limited acceptance",
+        "May work at convenience stores",
+        "Still need cash for rural areas"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "ethnic",
+      "title": "Tujia Culture",
+      "content": "Zhangjiajie is home to the Tujia people, an ethnic minority with unique customs. Respect their traditions when visiting villages. The 'Nuo opera' is a traditional performance art worth witnessing.",
+      "importance": "high"
+    },
+    {
+      "category": "ethnic",
+      "title": "Miao Influences",
+      "content": "Nearby areas have Miao ethnic communities. Sample sour soup fish and other Miao dishes. The silver jewelry and embroidery are traditional crafts.",
+      "importance": "medium"
+    },
+    {
+      "category": "scenery",
+      "title": "Morning Mists",
+      "content": "Zhangjiajie's pillars often appear floating in mist - this is the classic Avatar scenery. Early morning (before 8am) offers the best views with least crowds.",
+      "importance": "high"
+    },
+    {
+      "category": "scenery",
+      "title": "Weather in Mountains",
+      "content": "Mountain weather changes rapidly - sunny morning can turn foggy by noon. Bring layers and rain gear. Temperature inside park can be 5-10C cooler than city.",
+      "importance": "high"
+    },
+    {
+      "category": "adventure",
+      "title": "Glass Attractions",
+      "content": "Zhangjiajie has multiple glass attractions - the Glass Bridge and Glass Skywalk. Those afraid of heights should avoid or view from safe distances. Photo opportunities are plentiful.",
+      "importance": "medium"
+    },
+    {
+      "category": "adventure",
+      "title": "Bungee Jump",
+      "content": "The world's highest bungee jump (326m) is at the Glass Bridge area. Extreme thrill for adventurous visitors. Medical clearance recommended.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "San Xia Guo",
+      "content": "The signature dish 'Three Meats Hot Pot' (San Xia Guo) is a must-try. Pork, lamb, and chicken cooked in a single pot with vegetables. Find authentic versions in Wulingyuan.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Wild Vegetables",
+      "content": "Mountain vegetables (野菜) are a specialty - freshly picked from the forest. Try ferns, bamboo shoots, and mushrooms. Health-conscious and flavorful.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Kudzu Root Products",
+      "content": "Kudzu root (葛根粉) is a local specialty - used in soups and desserts. Believed to have health benefits. Available at night markets.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Kiwi Fruit",
+      "content": "Zhangjiajie is famous for kiwi fruit - sweet and cheap in season (September-October). Fresh juice stalls are everywhere. Don't miss trying them.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Tipping Culture",
+      "content": "Tipping is not customary in Zhangjiajie. At hotels and restaurants, service charge is rarely added. Small tips for exceptional service are appreciated but not expected.",
+      "importance": "low"
+    },
+    {
+      "category": "etiquette",
+      "title": "Photography",
+      "content": "The scenery is highly photogenic. For sunrise at viewing platforms, arrive 30 minutes early to secure position. Tripods allowed but be mindful of other visitors.",
+      "importance": "medium"
+    },
+    {
+      "category": "transport",
+      "title": "Park Transportation",
+      "content": "The park has efficient shuttle bus system included in ticket. The Bailong Elevator (Hundred Dragon Elevator) is the world's highest outdoor elevator - saves time but often long queues.",
+      "importance": "high"
+    },
+    {
+      "category": "transport",
+      "title": "Walking in Park",
+      "content": "The park is huge - 500km2. Don't try to see everything in one day. Prioritize Yuanjiajie for Avatar mountains, Golden Whip Stream for easy walking, and Yangjiajie for fewer crowds.",
+      "importance": "high"
+    },
+    {
+      "category": "environment",
+      "title": "Environmental Protection",
+      "content": "Zhangjiajie is a UNESCO site - please don't litter. The park has strict environmental rules. Stay on marked paths to protect the unique ecosystem.",
+      "importance": "high"
+    },
+    {
+      "category": "environment",
+      "title": "Wildlife",
+      "content": "The forest park has macaque monkeys. Don't feed them or leave food visible - they can be aggressive and will take food from bags. Keep distance.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Local Products",
+      "content": "Look for Tujia silver, handmade embroidery, and dried wild herbs. For authentic products, visit the morning market or Tujia villages rather than tourist shops.",
+      "importance": "low"
+    },
+    {
+      "category": "shopping",
+      "title": "Tea",
+      "content": "Zhangjiajie has local tea including Wuling Mountain Tea. Buy tea at specialty shops or from tea plantations. Bargaining expected at markets.",
+      "importance": "low"
+    },
+    {
+      "category": "food",
+      "title": "Local Alcohol",
+      "content": "Tujia people have a strong brewing tradition. Try the local millet wine (粟米酒) and Tujia fermented grain wine (土家咂酒). Rice wine is also popular. Drinking together from the same jar is a traditional bonding ritual.",
+      "importance": "medium"
+    },
+    {
+      "category": "food",
+      "title": "Wild Mushroom Season",
+      "content": "Summer and autumn bring an abundance of wild mushrooms. Zhangjiajie's forests produce prized varieties like matsutake and chanterelles. Mountain restaurants often serve fresh-picked mushrooms in season.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Tujia Greetings",
+      "content": "The Tujia say 'ni hao' like other Chinese, but have unique customs. When receiving guests, Tujia families may offer tea with both hands. It is polite to accept a small sip before setting the cup down.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Photography Etiquette",
+      "content": "Some Tujia villages and sacred sites prohibit photography. Always ask permission before photographing locals, especially elderly people. At viewpoints, be courteous about sharing space for photos.",
+      "importance": "medium"
+    },
+    {
+      "category": "transport",
+      "title": "Altitude and Health",
+      "content": "Some scenic areas are at 1000m+ altitude. If you have heart or breathing conditions, take it slow. The Bailong Elevator provides a quick ascent - some visitors experience ear popping. Stay hydrated.",
+      "importance": "high"
+    },
+    {
+      "category": "transport",
+      "title": "Park Shuttle Bus",
+      "content": "The park's shuttle bus system is efficient but can be crowded. Peak times are 10:00-14:00. Get on early at major stops. Buses run until 18:00 - plan your day to avoid being stranded.",
+      "importance": "medium"
+    },
+    {
+      "category": "environment",
+      "title": "Leave No Trace",
+      "content": "As a UNESCO World Heritage site, Zhangjiajie has strict environmental protection. Pack out all trash, stay on marked trails, and never remove plants, rocks, or other natural objects. Penalties for violation can be steep.",
+      "importance": "high"
+    },
+    {
+      "category": "environment",
+      "title": "Weather and Dress",
+      "content": "Mountain weather changes rapidly. Even in summer, bring a light jacket and rain gear. Temperatures inside the park can be 5-10 degrees cooler than in the city. Wear comfortable, non-slip shoes for trails.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Antiques and Crafts",
+      "content": "Be cautious when buying 'antiques' or 'ancient' items. Most are reproductions. For authentic crafts, buy directly from Tujia artisans in villages. Tujia silver and embroidery are genuine traditional crafts.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "张家界急救中心",
+      "nameEn": "Zhangjiajie Emergency Center",
+      "phone": "120",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "police",
+      "name": "张家界市公安局",
+      "nameEn": "Zhangjiajie Public Security Bureau",
+      "phone": "110",
+      "address": "Various locations"
+    },
+    {
+      "type": "fire",
+      "name": "消防紧急电话",
+      "nameEn": "Fire Emergency",
+      "phone": "119",
+      "address": "Citywide coverage"
+    },
+    {
+      "type": "hospital",
+      "name": "张家界市人民医院",
+      "nameEn": "Zhangjiajie People's Hospital",
+      "phone": "+86 744 822 2412",
+      "address": "People's Road, Zhangjiajie City",
+      "coordinates": {
+        "lat": 29.1175,
+        "lng": 110.4745
+      },
+      "notes": "Best public hospital in city"
+    },
+    {
+      "type": "hospital",
+      "name": "张家界市中医院",
+      "nameEn": "Zhangjiajie TCM Hospital",
+      "phone": "+86 744 822 3456",
+      "address": "Zhonghua Road, Zhangjiajie",
+      "coordinates": {
+        "lat": 29.1235,
+        "lng": 110.4715
+      },
+      "notes": "Traditional Chinese medicine available"
+    },
+    {
+      "type": "hospital",
+      "name": "武陵源区人民医院",
+      "nameEn": "Wulingyuan District Hospital",
+      "phone": "+86 744 561 2456",
+      "address": "Wulingyuan District",
+      "coordinates": {
+        "lat": 29.3335,
+        "lng": 110.5365
+      },
+      "notes": "For emergencies in scenic area"
+    },
+    {
+      "type": "tourist",
+      "name": "张家界旅游投诉热线",
+      "nameEn": "Zhangjiajie Tourism Complaint Hotline",
+      "phone": "12345",
+      "address": "Citywide",
+      "notes": "For tourism complaints and assistance"
+    },
+    {
+      "type": "tourist",
+      "name": "景区急救中心",
+      "nameEn": "Forest Park Emergency Center",
+      "phone": "+86 744 571 8110",
+      "address": "Within Forest Park",
+      "coordinates": {
+        "lat": 29.3475,
+        "lng": 110.4465
+      },
+      "notes": "24-hour emergency within park"
+    },
+    {
+      "type": "embassy",
+      "name": "澳大利亚驻广州总领事馆",
+      "nameEn": "Australian Consulate General Guangzhou",
+      "phone": "+86 20 3814 0128",
+      "address": "Guangzhou (nearest consular services)",
+      "notes": "Nearest consular services for Zhangjiajie"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻广州总领事馆",
+      "nameEn": "U.S. Consulate General Guangzhou",
+      "phone": "+86 20 3814 5775",
+      "address": "Guangzhou",
+      "notes": "For U.S. citizens"
+    },
+    {
+      "type": "tourist",
+      "name": "湖南省旅游投诉热线",
+      "nameEn": "Hunan Province Tourism Complaint Hotline",
+      "phone": "12301",
+      "address": "Provincewide",
+      "notes": "24-hour tourism complaints and emergency assistance"
+    },
+    {
+      "type": "info",
+      "name": "张家界旅游信息服务中心",
+      "nameEn": "Zhangjiajie Tourist Information Center",
+      "phone": "+86 744 851 2222",
+      "address": "City Center, Zhangjiajie",
+      "notes": "Tourist information, maps, and travel advice"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻广州总领事馆",
+      "nameEn": "British Consulate General Guangzhou",
+      "phone": "+86 20 8314 3000",
+      "address": "Guangzhou",
+      "notes": "For British citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "加拿大驻广州总领事馆",
+      "nameEn": "Canadian Consulate General Guangzhou",
+      "phone": "+86 20 8611 6100",
+      "address": "Guangzhou",
+      "notes": "For Canadian citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "德国驻广州总领事馆",
+      "nameEn": "German Consulate General Guangzhou",
+      "phone": "+86 20 8313 0000",
+      "address": "Guangzhou",
+      "notes": "For German citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻广州总领事馆",
+      "nameEn": "French Consulate General Guangzhou",
+      "phone": "+86 20 2829 2000",
+      "address": "Guangzhou",
+      "notes": "For French citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "日本驻广州总领事馆",
+      "nameEn": "Japanese Consulate General Guangzhou",
+      "phone": "+86 20 8334 3009",
+      "address": "Guangzhou",
+      "notes": "For Japanese citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻广州总领事馆",
+      "nameEn": "South Korean Consulate General Guangzhou",
+      "phone": "+86 20 3885 0993",
+      "address": "Guangzhou",
+      "notes": "For South Korean citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "新加坡驻广州总领事馆",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 20 3892 2125",
+      "address": "Guangzhou",
+      "notes": "For Singapore citizens"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese + local dialects",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa. 144h transit visa available at airport.",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Use bottled water - mountain springs safe but packaged water recommended",
+    "bestTimeToVisit": "April-June, September-October for best weather and scenery",
+    "parkAltitude": "Average 1000m, peaks up to 1300m",
+    "parkSize": "500 km2 total area"
+  }
+}

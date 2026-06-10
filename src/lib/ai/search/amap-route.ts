@@ -61,17 +61,20 @@ export interface AmapRouteResult {
 // ============================================
 
 const AMAP_DIRECTION_API_BASE: Record<string, string> = {
-  driving: "https://restapi.amap.com/v3/direction/driving",
-  transit: "https://restapi.amap.com/v3/direction/transit/integrated",
-  walking: "https://restapi.amap.com/v3/direction/walking",
-  riding: "https://restapi.amap.com/v4/direction/bicycling",
+  driving: "direction/driving",
+  transit: "direction/transit/integrated",
+  walking: "direction/walking",
+  riding: "direction/bicycling",
 };
 
 /**
- * Get Amap API key from environment.
+ * Amap API key is now handled server-side via /api/amap proxy.
+ * No key is needed on the client.
  */
 function getAmapKey(): string | undefined {
-  return import.meta.env.VITE_AMAP_WEB_API_KEY || "013d6b96800d73eeb66dcbf3dd3b068a";
+  // Key is injected server-side by the proxy — return a marker so callers
+  // know the feature is available.
+  return "proxied";
 }
 
 /**
@@ -119,7 +122,7 @@ export async function executeAmapRouteSearch(params: AmapRouteParams): Promise<A
       destination,
       routes: [],
       error:
-        "Amap API key not configured. Set VITE_AMAP_WEB_API_KEY in your .env file. Get a key at https://console.amap.com/dev/key/app",
+        "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
     };
   }
 
@@ -137,7 +140,7 @@ export async function executeAmapRouteSearch(params: AmapRouteParams): Promise<A
 
   try {
     const params_obj = new URLSearchParams({
-      key: amapKey,
+      endpoint: apiUrl,
       origin: normalizeLocation(origin),
       destination: normalizeLocation(destination),
       output: "json",
@@ -154,7 +157,7 @@ export async function executeAmapRouteSearch(params: AmapRouteParams): Promise<A
       params_obj.set("strategy", String(strategy));
     }
 
-    const url = `${apiUrl}?${params_obj}`;
+    const url = `/api/amap?${params_obj}`;
     const response = await fetch(url, {
       signal: AbortSignal.timeout(10000),
       headers: { Accept: "application/json" },

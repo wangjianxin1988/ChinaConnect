@@ -160,7 +160,7 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
 
         {/* Description */}
         {!compact && (
-          <p className="text-gray-600 text-sm leading-relaxed mb-3 line-clamp-2">
+          <p className="text-gray-600 text-sm leading-relaxed mb-3 line-clamp-2" data-translate={restaurant.description}>
             {restaurant.description}
           </p>
         )}
@@ -203,18 +203,19 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
           {restaurant.phone && (
             <a
               href={`tel:${restaurant.phone.replace(/\s/g, "")}`}
-              className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors"
+              className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors touch-manipulation"
             >
               <span>📞</span>
               <span>Call</span>
             </a>
           )}
-          {restaurant.coordinates && (
+          {(restaurant.coordinates || restaurant.address) && (
             <MapDirectionsLink
-              lat={restaurant.coordinates.lat}
-              lng={restaurant.coordinates.lng}
+              lat={restaurant.coordinates?.lat}
+              lng={restaurant.coordinates?.lng}
               name={restaurant.nameEn}
-              className="flex items-center gap-1.5 px-3 py-2 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"
+              address={restaurant.address}
+              className="flex items-center gap-1.5 px-3 py-2 bg-gray-50 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors touch-manipulation"
             />
           )}
           {restaurant.address && (

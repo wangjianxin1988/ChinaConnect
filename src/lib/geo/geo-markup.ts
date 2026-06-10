@@ -4,7 +4,7 @@
 import { generateHowToSchema, generateQASchema, generateRecipeSchema } from "@/lib/seo/schema-org";
 import type { FAQItem } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.com";
+const SITE_URL = "https://chinaconnect.xyz";
 const SITE_NAME = "ChinaConnect";
 
 // ============================================================================
