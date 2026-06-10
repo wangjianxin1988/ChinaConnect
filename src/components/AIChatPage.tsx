@@ -8,6 +8,10 @@ import type { SavedItinerary } from "@/lib/ai/types";
 import React, { useState, useCallback } from "react";
 import { AIChat } from "./ai/AIChat";
 import { SubscriptionCard } from "./subscription/SubscriptionCard";
+import { MembershipStatusBar } from "./subscription/MembershipStatusBar";
+import { UsageExhaustedBanner } from "./subscription/UsageExhaustedBanner";
+import { PremiumFeatureBadge } from "./subscription/PremiumFeatureBadge";
+import { canMakeRequest } from "@/lib/usage-tracker";
 
 // ============================================
 // Feature Card Component
@@ -113,6 +117,26 @@ export default function AIChatPage() {
     void name;
     void setSavedItinerary;
   }, []);
+
+  // Track usage state for inline banner
+  const [usageExhausted, setUsageExhausted] = React.useState(!canMakeRequest());
+  const [showExhaustedBanner, setShowExhaustedBanner] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkUsage = () => {
+      const exhausted = !canMakeRequest();
+      setUsageExhausted(exhausted);
+      if (exhausted && chatStarted) {
+        setShowExhaustedBanner(true);
+      }
+    };
+    window.addEventListener('ai-usage-updated', checkUsage);
+    window.addEventListener('ai-usage-exceeded', checkUsage);
+    return () => {
+      window.removeEventListener('ai-usage-updated', checkUsage);
+      window.removeEventListener('ai-usage-exceeded', checkUsage);
+    };
+  }, [chatStarted]);
 
   const handleExamplePrompt = useCallback((prompt: string) => {
     setExternalPrompt(prompt);
@@ -242,6 +266,23 @@ export default function AIChatPage() {
               </svg>
               Show features
             </button>
+          </div>
+        )}
+
+        {/* Membership Status Bar - shown when chat started */}
+        {chatStarted && (
+          <div className="mb-3">
+            <MembershipStatusBar language="en" />
+          </div>
+        )}
+
+        {/* Usage Exhausted Banner */}
+        {chatStarted && showExhaustedBanner && usageExhausted && (
+          <div className="mb-3">
+            <UsageExhaustedBanner
+              language="en"
+              onDismiss={() => setShowExhaustedBanner(false)}
+            />
           </div>
         )}
 
@@ -386,21 +427,31 @@ export default function AIChatPage() {
                       title="Transport"
                       description="Train, flight, metro, and bus routing with real-time schedules, ticket prices, and booking tips."
                     />
-                    <CapabilityItem
-                      icon="🔍"
-                      title="Real-time Search"
-                      description="Get the latest information from the web — opening hours, events, entry requirements, and more."
-                    />
+                    <div className="relative">
+                      <CapabilityItem
+                        icon="🔍"
+                        title="Real-time Search"
+                        description="Get the latest information from the web — opening hours, events, entry requirements, and more."
+                      />
+                      <div className="absolute top-2 right-0">
+                        <PremiumFeatureBadge requiredTier="explorer" language="en" />
+                      </div>
+                    </div>
                     <CapabilityItem
                       icon="🌤️"
                       title="Weather"
                       description="Current weather forecasts for any Chinese city, plus packing suggestions based on the season."
                     />
-                    <CapabilityItem
-                      icon="📍"
-                      title="Maps"
-                      description="Visualize routes and points of interest on an interactive map with your itinerary."
-                    />
+                    <div className="relative">
+                      <CapabilityItem
+                        icon="📍"
+                        title="Maps"
+                        description="Visualize routes and points of interest on an interactive map with your itinerary."
+                      />
+                      <div className="absolute top-2 right-0">
+                        <PremiumFeatureBadge requiredTier="traveler" language="en" />
+                      </div>
+                    </div>
                     <CapabilityItem
                       icon="💳"
                       title="Life Help"
