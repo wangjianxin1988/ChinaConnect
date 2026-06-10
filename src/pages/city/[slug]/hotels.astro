@@ -1,0 +1,170 @@
+---
+/**
+ * Dedicated Hotels Page
+ * /city/[slug]/hotels
+ * 
+ * Features:
+ * - Category filtering (luxury/mid/budget/hostel/love/esports)
+ * - Hotel cards with images, map links, phone calls
+ * - Responsive grid layout
+ */
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { HotelCard } from "@/components/hotel/HotelCard";
+import { HotelCategoryFilter } from "@/components/hotel/HotelCategoryFilter";
+import { citySlugs, getCityBySlug } from "@/data/cities/index";
+import { getHotelsByCity, getHotelCategoryCounts, getHotelCount } from "@/data/hotels";
+import { HOTEL_CATEGORY_CONFIG, type HotelCategory } from "@/types/accommodation";
+import { getLangFromUrl } from "@/i18n/utils";
+
+export function getStaticPaths() {
+  return citySlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const city = getCityBySlug(slug as string);
+const lang = getLangFromUrl(Astro.url);
+
+if (!city) {
+  return Astro.redirect("/404");
+}
+
+const hotels = getHotelsByCity(slug as string);
+const categoryCounts = getHotelCategoryCounts(slug as string);
+const totalCount = getHotelCount(slug as string);
+
+const pageTitle = `${city.nameEn} Hotels - All Categories | ChinaConnect`;
+const pageDescription = `Find the perfect hotel in ${city.nameEn}. Browse luxury, mid-range, budget, hostels, love hotels, and esports hotels. ${totalCount} options available.`;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: [city.nameEn, city.name, `${city.nameEn} hotels`, `${city.nameEn} accommodation`, "luxury hotels", "budget hotels", "hostels", "esports hotels"],
+  }}
+  lang={lang}
+>
+  <!-- Hero Section -->
+  <section class="relative h-64 bg-gradient-to-br from-teal-600 to-blue-600">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+    <div class="container-custom relative h-full flex flex-col justify-end pb-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-4">
+        <a href="/" class="text-teal-200 hover:text-white transition-colors">Home</a>
+        <span class="text-teal-300 mx-2">/</span>
+        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <span class="text-teal-300 mx-2">/</span>
+        <span class="text-white">Hotels</span>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
+        <span>🏨</span> {city.nameEn} Hotels
+      </h1>
+      <p class="text-teal-100">{totalCount} hotels across {Object.keys(categoryCounts).length} categories</p>
+    </div>
+  </section>
+
+  <!-- Category Stats Bar -->
+  <section class="bg-white border-b">
+    <div class="container-custom py-4">
+      <div class="flex overflow-x-auto gap-4 pb-2">
+        {Object.entries(HOTEL_CATEGORY_CONFIG).map(([key, config]) => (
+          <div class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-lg shrink-0">
+            <span class="text-lg">{config.icon}</span>
+            <div>
+              <div class="text-xs text-gray-500">{config.labelZh}</div>
+              <div class="font-bold text-gray-900">{categoryCounts[key as HotelCategory] || 0}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container-custom py-8">
+    <!-- Category Filter -->
+    <div class="mb-8">
+      <HotelCategoryFilter
+        activeCategory={null}
+        categoryCounts={categoryCounts}
+        client:visible
+      />
+    </div>
+
+    <!-- Hotel Grid -->
+    <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {hotels.map((hotel) => (
+        <div class="hotel-item" data-category={hotel.category}>
+          <HotelCard hotel={hotel} client:visible />
+        </div>
+      ))}
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="hidden text-center py-16">
+      <span class="text-6xl mb-4 block">🏨</span>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2">No hotels in this category</h3>
+      <p class="text-gray-500">Try selecting a different category</p>
+    </div>
+
+    <!-- Back to City -->
+    <div class="mt-12 text-center">
+      <a
+        href={`/city/${city.slug}`}
+        class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-semibold text-sm hover:bg-gray-200 transition-all"
+      >
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 17l-5-5m0 0l5-5m-5 5H6m7 5H6" />
+        </svg>
+        <span>Back to {city.nameEn}</span>
+      </a>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+// Category filtering
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('[data-filter-category]');
+  const hotelItems = document.querySelectorAll('.hotel-item');
+  const emptyState = document.getElementById('empty-state');
+  const hotelGrid = document.getElementById('hotel-grid');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const category = this.dataset.filterCategory;
+      
+      // Update active state
+      filterButtons.forEach(b => {
+        b.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-50');
+        b.classList.add('bg-white');
+      });
+      this.classList.add('ring-2', 'ring-blue-500', 'bg-blue-50');
+      this.classList.remove('bg-white');
+
+      // Filter hotels
+      let visibleCount = 0;
+      hotelItems.forEach(item => {
+        if (!category || category === 'all' || item.dataset.category === category) {
+          item.style.display = '';
+          visibleCount++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Show/hide empty state
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        hotelGrid.classList.add('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+        hotelGrid.classList.remove('hidden');
+      }
+    });
+  });
+});
+</script>
