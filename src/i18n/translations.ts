@@ -53,6 +53,7 @@ export interface Translations {
     cities: string;
     restaurants: string;
     aiChat: string;
+    guide: string;
     business: string;
     explore: string;
   };
@@ -209,6 +210,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Cities",
       restaurants: "Restaurants",
       aiChat: "AI Chat",
+      guide: "Travel Guide",
       business: "Business Express",
       explore: "Explore Restaurants",
     },
@@ -328,6 +330,7 @@ export const translations: Record<Language, Translations> = {
       cities: "都市",
       restaurants: "レストラン",
       aiChat: "AIチャット",
+      guide: "トラベルガイド",
       business: "ビジネスエクスプレス",
       explore: "レストランを探す",
     },
@@ -447,6 +450,7 @@ export const translations: Record<Language, Translations> = {
       cities: "도시",
       restaurants: "음식점",
       aiChat: "AI 채팅",
+      guide: "여행 가이드",
       business: "비즈니스 익스프레스",
       explore: "맛집 탐색",
     },
@@ -566,6 +570,7 @@ export const translations: Record<Language, Translations> = {
       cities: "城市",
       restaurants: "餐厅",
       aiChat: "AI聊天",
+      guide: "旅游指南",
       business: "商务快车",
       explore: "探索餐厅",
     },
@@ -685,6 +690,7 @@ export const translations: Record<Language, Translations> = {
       cities: "城市",
       restaurants: "餐廳",
       aiChat: "AI聊天",
+      guide: "旅遊指南",
       business: "商務快車",
       explore: "探索餐廳",
     },
@@ -804,6 +810,7 @@ export const translations: Record<Language, Translations> = {
       cities: "เมือง",
       restaurants: "ร้านอาหาร",
       aiChat: "แชท AI",
+      guide: "คู่มือการเดินทาง",
       business: "ธุรกิจด่วน",
       explore: "สำรวจร้านอาหาร",
     },
@@ -923,6 +930,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Thành phố",
       restaurants: "Nhà hàng",
       aiChat: "AI Chat",
+      guide: "Travel Guide",
       business: "Doanh nghiệp",
       explore: "Khám phá nhà hàng",
     },
@@ -1042,6 +1050,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Города",
       restaurants: "Рестораны",
       aiChat: "AI Чат",
+      guide: "Путеводитель",
       business: "Бизнес Экспресс",
       explore: "Исследовать рестораны",
     },
@@ -1162,6 +1171,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Villes",
       restaurants: "Restaurants",
       aiChat: "AI Chat",
+      guide: "Travel Guide",
       business: "Express Affaires",
       explore: "Explorer les restaurants",
     },
@@ -1285,6 +1295,7 @@ export const translations: Record<Language, Translations> = {
       cities: "Städte",
       restaurants: "Restaurants",
       aiChat: "AI Chat",
+      guide: "Travel Guide",
       business: "Business Express",
       explore: "Restaurants erkunden",
     },
@@ -1406,6 +1417,7 @@ export const translations: Record<Language, Translations> = {
       cities: "المدن",
       restaurants: "المطاعم",
       aiChat: "الذكاء الاصطناعي",
+      guide: "دليل السفر",
       business: "أعمال سريعة",
       explore: "استكشف المطاعم",
     },
@@ -1525,6 +1537,7 @@ export const translations: Record<Language, Translations> = {
       cities: "شهرها",
       restaurants: "رستوران‌ها",
       aiChat: "چت AI",
+      guide: "راهنمای سفر",
       business: "بیزینس اکسپرس",
       explore: "کشف رستوران‌ها",
     },

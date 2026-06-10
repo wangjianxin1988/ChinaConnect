@@ -24,7 +24,7 @@ export const VISA_REQUIREMENTS: VisaRequirement[] = [
     visaType: "Tourist (L)",
     duration: "10 years multiple entry",
     processingTime: "3-5 business days",
-    fee: "$185",
+    fee: "$140",
     notes: [
       "DS-160 form required",
       "Interview at embassy required",

@@ -205,14 +205,14 @@ export const TAX_REFUND_INFO: TaxRefundInfo[] = [
     descriptionCn: "谁可以获得退税，哪些商品符合条件。",
     requirements: [
       "Foreign passport holders (non-Chinese)",
-      "Single purchase over 500 CNY at participating stores",
+      "Single purchase over 200 CNY at participating stores (reduced from 500 CNY in April 2025)",
       "Items to be taken out of China (not consumed in China)",
       "Valid invoice with tax refund symbol",
       "Store participates in tax refund program",
     ],
     requirementsCn: [
       "外国护照持有者（非中国籍）",
-      "在参与商店单笔消费超过500元人民币",
+      "在参与商店单笔消费超过200元人民币（2025年4月起从500元降至200元）",
       "将物品带出中国（不在中国境内消费）",
       "有效发票带有退税标识",
       "商店参与退税计划",
