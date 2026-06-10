@@ -276,8 +276,8 @@ export const SHOPPING_TIPS: ShoppingTip[] = [
   {
     category: "Tax Refund",
     icon: "💰",
-    tip: "You can get VAT refund on purchases over 500 CNY at participating stores.",
-    tipCn: "在参与活动的商店购买超过500元可获得增值税退税。",
+    tip: "You can get VAT refund on purchases over 200 CNY at participating stores.",
+    tipCn: "在参与活动的商店购买超过200元可获得增值税退税（2025年4月起从500元降至200元）。",
     warning: "Keep the invoice and get tax refund form at store",
     warningCn: "保留发票并在商店获取退税单",
   },

@@ -140,7 +140,7 @@ export const COMPANY_REGISTRATION: RegistrationInfo[] = [
           "After receiving the business license, complete several post-registration steps at various government offices.",
         descriptionCn: "获得营业执照后，还需在多个政府部门完成多项后续登记。",
         documents: [
-          { en: "Tax registration (State Tax + Local Tax bureaus)", cn: "税务登记（国税+地税）" },
+          { en: "Tax registration (Tax Bureau)", cn: "税务登记（税务局）" },
           {
             en: "Social insurance registration (for hiring employees)",
             cn: "社保登记（招聘员工时）",
@@ -340,8 +340,8 @@ export const COMPANY_REGISTRATION: RegistrationInfo[] = [
         duration: "3–7 business days",
         durationCn: "3-7个工作日",
         description:
-          "Register with the State Taxation Administration and Local Taxation Bureau as a taxpayer once PE is established.",
-        descriptionCn: "常设机构确定后，向国家税务总局和地方税务局进行纳税人登记。",
+          "Register with the local Tax Bureau as a taxpayer once PE is established.",
+        descriptionCn: "常设机构确定后，向当地税务局进行纳税人登记。",
         documents: [
           { en: "Application for tax registration", cn: "税务登记表" },
           {

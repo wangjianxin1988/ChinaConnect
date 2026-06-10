@@ -84,6 +84,44 @@ const guides = [
   },
 ];
 
+const businessGuides = [
+  {
+    title: "Invitation Letter Templates",
+    titleCn: "商务邀请函模板",
+    icon: "✉️",
+    description: "Download ready-to-use bilingual invitation letters for visa applications",
+    href: "/guide/business/invitation-letter",
+  },
+  {
+    title: "Expo & Event Calendar",
+    titleCn: "展会与活动日历",
+    icon: "📅",
+    description: "Plan your trips around China's top trade shows and industry events",
+    href: "/guide/business/expo-calendar",
+  },
+  {
+    title: "Company Registration Guide",
+    titleCn: "工商注册指南",
+    icon: "🏢",
+    description: "Step-by-step guide for WFOE, Representative Office, and other entities",
+    href: "/guide/business/company-registration",
+  },
+  {
+    title: "Business Etiquette Essentials",
+    titleCn: "商务礼仪速成",
+    icon: "🎯",
+    description: "Master Chinese business culture, dining etiquette, and meeting protocols",
+    href: "/guide/business/etiquette",
+  },
+  {
+    title: "Translation & Interpreting",
+    titleCn: "翻译服务预约",
+    icon: "🌍",
+    description: "Professional interpreters and translators for business visits",
+    href: "/guide/business/translation",
+  },
+];
+
 const colorClasses = {
   blue: "from-blue-500 to-blue-600",
   green: "from-green-500 to-green-600",
@@ -97,19 +135,19 @@ const colorClasses = {
 ---
 
 <BaseLayout
-  title="Travel Guide - ChinaConnect"
-  description="Complete 12-stage travel guide for China. From visa application to departure - covering payment, transport, accommodation, and emergency procedures."
+  title="Complete Travel Guide to China - ChinaConnect"
+  description="中国完整旅游指南 - Complete 12-stage travel guide for China plus business travel essentials. From visa application to departure, covering every aspect of your journey."
   meta={{
-    keywords: ['China travel guide', 'China guide', 'travel China', 'China tips', 'China preparation'],
+    keywords: ['China travel guide', 'China guide', 'travel China', 'China tips', 'China preparation', 'China business guide', '商务快车道', '中国商务指南'],
   }}
 >
   <main class="container mx-auto px-4 py-8">
     <div class="mb-12 text-center">
       <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4">
-        Complete Travel Guide to China
+        🇨🇳 中国完整旅游指南
       </h1>
       <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
-        完整的12阶段中国旅行指南 - From pre-departure preparation to departure, covering every aspect of your journey
+        Complete Travel Guide to China — 从出发准备到离境，涵盖旅行的方方面面，同时包含商务差旅实用工具
       </p>
     </div>
 
@@ -144,7 +182,10 @@ const colorClasses = {
       </div>
     </div>
 
-    <!-- Guide Cards -->
+    <!-- Travel Guide Cards -->
+    <div class="mb-4">
+      <h2 class="text-2xl font-bold text-foreground mb-6">🗺️ 旅行指南 Travel Guides</h2>
+    </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {guides.map((guide, index) => (
         <a
@@ -174,6 +215,52 @@ const colorClasses = {
           </div>
         </a>
       ))}
+    </div>
+
+    <!-- Business Travel Section -->
+    <div class="mt-16 mb-4">
+      <h2 class="text-2xl font-bold text-foreground mb-2">🚀 商务差旅 Business Travel</h2>
+      <p class="text-muted-foreground mb-6">从邀请函到商务礼仪，为外国商务人士提供的五大实用工具</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {businessGuides.map((guide) => (
+        <a
+          href={guide.href}
+          class="group bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1"
+        >
+          <div class="bg-gradient-to-br from-slate-700 to-slate-800 p-6 h-28 flex items-center justify-center">
+            <span class="text-6xl opacity-90">{guide.icon}</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+              {guide.title}
+            </h3>
+            <p class="text-muted-foreground text-sm mb-3">{guide.titleCn}</p>
+            <p class="text-sm text-muted-foreground">
+              {guide.description}
+            </p>
+            <div class="mt-4 text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+              Learn More
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      ))}
+
+      <!-- View All Business Guides -->
+      <a
+        href="/guide/business"
+        class="group bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white flex flex-col justify-center items-center hover:shadow-lg transition-all hover:-translate-y-1"
+      >
+        <span class="text-5xl mb-4">📋</span>
+        <h3 class="text-xl font-bold mb-2">View All Business Tools</h3>
+        <p class="text-white/80 text-sm text-center mb-4">查看完整商务工具页面，包含详细统计和快速入门指南</p>
+        <span class="text-sm font-medium group-hover:translate-x-1 transition-transform">
+          Go to Business Express →
+        </span>
+      </a>
     </div>
 
     <!-- Quick Links -->
