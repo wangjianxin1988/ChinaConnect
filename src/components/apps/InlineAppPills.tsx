@@ -27,9 +27,19 @@ export function InlineAppPill({ app }: InlineAppPillProps) {
           href={app.appStoreUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-1 shrink-0 px-2 py-1 bg-blue-500 text-white text-xs font-medium rounded-md hover:bg-blue-600 transition-colors"
+          className="ml-1 shrink-0 px-2 py-1 bg-gray-800 text-white text-xs font-medium rounded-md hover:bg-gray-900 transition-colors"
         >
-          App Store
+          iOS
+        </a>
+      )}
+      {app.androidUrl && (
+        <a
+          href={app.androidUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 px-2 py-1 bg-green-600 text-white text-xs font-medium rounded-md hover:bg-green-700 transition-colors"
+        >
+          Android
         </a>
       )}
     </div>
