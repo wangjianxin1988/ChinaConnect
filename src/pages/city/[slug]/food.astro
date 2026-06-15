@@ -22,27 +22,45 @@ const { prev, next } = getAdjacentCities(slug as string);
 // Three-level filter from URL param
 const filterParam = Astro.url.searchParams.get("filter") || "all";
 
-// Categorize restaurants
-const LOCAL_RECOMMEND_THRESHOLD = 150;
-const AFFORDABLE_MAX_PRICE = 100;
-const STREET_FOOD_MAX_PRICE = 80;
+// ─── Unified Restaurant Category System ──────────────────────────
+// Maps RestaurantType → filter category (matches RestaurantCard TYPE_CONFIG)
+const TYPE_TO_CATEGORY: Record<string, string> = {
+  michelin: "michelin",
+  blackpearl: "blackpearl",
+  local: "local",
+  budget_local: "affordable",
+  hole_in_wall: "street_food",
+  night_market: "street_food",
+  street: "street_food",
+  cafe: "cafe",
+  chain: "chain",
+  fine: "fine_dining",
+  "fine-dining": "fine_dining",
+  international: "international",
+  luxury: "fine_dining",
+  buffet: "buffet",
+  fastfood: "fastfood",
+  modern: "local",
+};
+
+// Category display config (order matters for UI)
+const CATEGORY_CONFIG: Record<string, { label: string; labelZh: string; icon: string; colorClass: string }> = {
+  all: { label: "All", labelZh: "全部", icon: "🍽️", colorClass: "bg-gray-50 border-gray-200 text-gray-700" },
+  michelin: { label: "Michelin", labelZh: "米其林", icon: "⭐", colorClass: "bg-amber-50 border-amber-200 text-amber-700" },
+  blackpearl: { label: "Black Pearl", labelZh: "黑珍珠", icon: "💎", colorClass: "bg-slate-800 border-slate-600 text-slate-200" },
+  local: { label: "Local Recommend", labelZh: "本地推荐", icon: "❤️", colorClass: "bg-red-50 border-red-200 text-red-700" },
+  affordable: { label: "Affordable", labelZh: "平价美食", icon: "💙", colorClass: "bg-blue-50 border-blue-200 text-blue-700" },
+  street_food: { label: "Street Food", labelZh: "苍蝇馆子", icon: "🔥", colorClass: "bg-orange-50 border-orange-200 text-orange-700" },
+  cafe: { label: "Cafe", labelZh: "咖啡厅", icon: "☕", colorClass: "bg-amber-50 border-amber-200 text-amber-700" },
+  chain: { label: "Chain", labelZh: "连锁品牌", icon: "🏪", colorClass: "bg-blue-50 border-blue-200 text-blue-700" },
+  fine_dining: { label: "Fine Dining", labelZh: "精致餐饮", icon: "🍽️", colorClass: "bg-purple-50 border-purple-200 text-purple-700" },
+  international: { label: "International", labelZh: "国际美食", icon: "🌍", colorClass: "bg-teal-50 border-teal-200 text-teal-700" },
+  buffet: { label: "Buffet", labelZh: "自助餐", icon: "🥘", colorClass: "bg-orange-50 border-orange-200 text-orange-700" },
+  fastfood: { label: "Fast Food", labelZh: "快餐", icon: "🍔", colorClass: "bg-red-50 border-red-200 text-red-700" },
+};
 
 function getHighlightCategory(r: Restaurant): string {
-  if (r.type === "local") {
-    const tags = r.tags || [];
-    if (tags.some(t => t.includes("苍蝇馆子") || t.includes("street"))) {
-      return "street_food";
-    }
-    if (r.avgPrice <= AFFORDABLE_MAX_PRICE) {
-      return "affordable";
-    }
-    if (r.avgPrice <= LOCAL_RECOMMEND_THRESHOLD) {
-      return "local_recommend";
-    }
-  }
-  if (r.type === "michelin") return "michelin";
-  if (r.type === "blackpearl") return "blackpearl";
-  return "local_recommend";
+  return TYPE_TO_CATEGORY[r.type] || "local";
 }
 
 interface FilterGroup {
@@ -56,63 +74,20 @@ interface FilterGroup {
 
 const allRestaurants = city.restaurants;
 
-const michelinRestaurants = allRestaurants.filter(r => r.type === "michelin");
-const blackpearlRestaurants = allRestaurants.filter(r => r.type === "blackpearl");
-const localRestaurants = allRestaurants.filter(r => r.type === "local");
-
-const localRecommendRestaurants = allRestaurants.filter(r => getHighlightCategory(r) === "local_recommend");
-const affordableRestaurants = allRestaurants.filter(r => getHighlightCategory(r) === "affordable");
-const streetFoodRestaurants = allRestaurants.filter(r => getHighlightCategory(r) === "street_food");
+// Auto-generate filter groups from actual data (dynamic, adapts to new types)
+const presentCategories = new Set(allRestaurants.map(r => getHighlightCategory(r)));
 
 const filterGroups: FilterGroup[] = [
-  {
-    id: "all",
-    label: "All",
-    labelZh: "全部",
-    icon: "🍽️",
-    colorClass: "bg-gray-50 border-gray-200 text-gray-700",
-    restaurants: allRestaurants,
-  },
-  {
-    id: "local_recommend",
-    label: "Local Recommend",
-    labelZh: "本地人推荐",
-    icon: "❤️",
-    colorClass: "bg-red-50 border-red-200 text-red-700",
-    restaurants: localRecommendRestaurants,
-  },
-  {
-    id: "michelin",
-    label: "Michelin",
-    labelZh: "米其林",
-    icon: "⭐",
-    colorClass: "bg-amber-50 border-amber-200 text-amber-700",
-    restaurants: michelinRestaurants,
-  },
-  {
-    id: "blackpearl",
-    label: "Black Pearl",
-    labelZh: "黑珍珠",
-    icon: "💎",
-    colorClass: "bg-slate-800 border-slate-600 text-slate-200",
-    restaurants: blackpearlRestaurants,
-  },
-  {
-    id: "affordable",
-    label: "Affordable",
-    labelZh: "平价美食",
-    icon: "💙",
-    colorClass: "bg-blue-50 border-blue-200 text-blue-700",
-    restaurants: affordableRestaurants,
-  },
-  {
-    id: "street_food",
-    label: "Street Food",
-    labelZh: "苍蝇馆子",
-    icon: "🔥",
-    colorClass: "bg-orange-50 border-orange-200 text-orange-700",
-    restaurants: streetFoodRestaurants,
-  },
+  { id: "all", ...CATEGORY_CONFIG.all, restaurants: allRestaurants },
+  // Priority order: michelin → blackpearl → local → affordable → street_food → others
+  ...["michelin", "blackpearl", "local", "affordable", "street_food",
+      "fine_dining", "international", "cafe", "chain", "buffet", "fastfood"]
+    .filter(cat => presentCategories.has(cat))
+    .map(cat => ({
+      id: cat,
+      ...CATEGORY_CONFIG[cat],
+      restaurants: allRestaurants.filter(r => getHighlightCategory(r) === cat),
+    })),
 ];
 
 const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
@@ -161,23 +136,13 @@ function getBadgeLabel(type: Restaurant["type"]) {
       </h1>
       <p class="text-orange-100">发现{city.name}的米其林、黑珍珠与本地人真心推荐</p>
 
-      <!-- Quick stats -->
+      <!-- Quick stats (dynamic from filterGroups) -->
       <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-orange-100">
-        <span class="flex items-center gap-1">
-          <span>⭐</span> {michelinRestaurants.length} 米其林
-        </span>
-        <span class="flex items-center gap-1">
-          <span>💎</span> {blackpearlRestaurants.length} 黑珍珠
-        </span>
-        <span class="flex items-center gap-1">
-          <span>🔥</span> {localRestaurants.length} 本地推荐
-        </span>
-        <span class="flex items-center gap-1">
-          <span>💙</span> {affordableRestaurants.length} 平价美食
-        </span>
-        <span class="flex items-center gap-1">
-          <span>❤️</span> {localRecommendRestaurants.length} 本地人推荐
-        </span>
+        {filterGroups.filter(g => g.id !== 'all').slice(0, 5).map(group => (
+          <span class="flex items-center gap-1">
+            <span>{group.icon}</span> {group.restaurants.length} {group.labelZh}
+          </span>
+        ))}
       </div>
     </div>
   </section>
@@ -487,14 +452,20 @@ function getBadgeLabel(type: Restaurant["type"]) {
       const filterInfo = document.getElementById('filter-info');
       const emptyState = document.getElementById('empty-state');
 
-      // Filter metadata for display
+      // Filter metadata for display (auto-matches server-side CATEGORY_CONFIG)
       const filterMeta = {
         'all': { icon: '🍽️', labelZh: '全部' },
-        'local_recommend': { icon: '❤️', labelZh: '本地人推荐' },
         'michelin': { icon: '⭐', labelZh: '米其林' },
         'blackpearl': { icon: '💎', labelZh: '黑珍珠' },
+        'local': { icon: '❤️', labelZh: '本地推荐' },
         'affordable': { icon: '💙', labelZh: '平价美食' },
         'street_food': { icon: '🔥', labelZh: '苍蝇馆子' },
+        'cafe': { icon: '☕', labelZh: '咖啡厅' },
+        'chain': { icon: '🏪', labelZh: '连锁品牌' },
+        'fine_dining': { icon: '🍽️', labelZh: '精致餐饮' },
+        'international': { icon: '🌍', labelZh: '国际美食' },
+        'buffet': { icon: '🥘', labelZh: '自助餐' },
+        'fastfood': { icon: '🍔', labelZh: '快餐' },
       };
 
       // Get initial filter from URL
