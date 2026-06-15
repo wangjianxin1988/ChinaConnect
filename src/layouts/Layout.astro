@@ -21,7 +21,7 @@ const { title } = Astro.props;
   <body class="font-sans antialiased">
     <slot />
     <EmergencyWrapper client:load />
-    <CulturalWarningTrigger client:load />
+    <CulturalWarningTrigger client:load autoShow={false} />
     <script is:inline>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

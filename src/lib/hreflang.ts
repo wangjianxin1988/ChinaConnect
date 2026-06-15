@@ -1,12 +1,12 @@
 // Hreflang utilities for multi-language SEO
-// Generates alternate URL links for different language versions
-// Supports all 12 languages: en, ja, ko, zh-CN, zh-TW, th, vi, ru, fr, de, ar, fa
+// Uses query parameter approach: ?lang=XX
+// This works with static hosting (CF Pages) without server-side routing
 
 import type { Language } from "@/i18n/translations";
 import { RTL_LANGUAGES, SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { HreflangUrl } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.pages.dev";
 
 // Default locale
 export const DEFAULT_LOCALE: Language = "en";
@@ -29,71 +29,61 @@ export function isRTL(locale: Language): boolean {
  * Get hreflang code for a locale
  */
 export function getHreflangCode(locale: Language): string {
-  // The code property IS the hreflang value
   return locale;
 }
 
 /**
- * Normalize path for hreflang generation
+ * Normalize path — strip query params and trailing slashes
  */
 function normalizePath(path: string): string {
-  // Remove leading/trailing slashes and locale prefix if present
-  let normalized = path.replace(/^\/+|\/+$/g, "");
+  // Remove query string
+  const withoutQuery = path.split("?")[0];
+  // Remove trailing slashes
+  return withoutQuery.replace(/^\/+|\/+$/g, "");
+}
 
-  // Remove existing locale prefix
-  normalized = normalized.replace(/^(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)\//, "");
+/**
+ * Build URL for a specific locale using query parameter
+ * English (default): https://chinaconnect.pages.dev/city/beijing
+ * Other languages: https://chinaconnect.pages.dev/city/beijing?lang=ja
+ */
+function buildLocaleUrl(path: string, locale: Language, baseUrl: string = SITE_URL): string {
+  const cleanPath = normalizePath(path);
+  const urlPath = cleanPath ? `/${cleanPath}` : "";
 
-  return normalized;
+  if (locale === DEFAULT_LOCALE) {
+    return `${baseUrl}${urlPath}`;
+  }
+
+  return `${baseUrl}${urlPath}?lang=${locale}`;
 }
 
 /**
  * Generate hreflang URLs for a given path
  */
 export function generateHreflangUrls(path: string, baseUrl: string = SITE_URL): HreflangUrl[] {
-  const normalizedPath = normalizePath(path);
-
-  return SUPPORTED_LANGUAGES.map((locale) => {
-    const href = buildLocaleUrl(normalizedPath, locale.code, baseUrl);
-    return {
-      hreflang: locale.code,
-      href,
-    };
-  });
+  return SUPPORTED_LANGUAGES.map((locale) => ({
+    hreflang: locale.code,
+    href: buildLocaleUrl(path, locale.code, baseUrl),
+  }));
 }
 
 /**
- * Build URL for a specific locale
- */
-function buildLocaleUrl(path: string, locale: Language, baseUrl: string = SITE_URL): string {
-  const normalizedPath = path.replace(/^\/|\/$/g, "");
-  const cleanPath = normalizedPath ? `/${normalizedPath}` : "";
-
-  if (locale === DEFAULT_LOCALE) {
-    // Default locale (English) - no prefix
-    return `${baseUrl}${cleanPath}`;
-  }
-
-  return `${baseUrl}/${locale}${cleanPath}`;
-}
-
-/**
- * Generate self-referencing hreflang (x-default)
+ * Generate hreflang URLs with x-default
  */
 export function generateHreflangUrlsWithDefault(
   path: string,
   baseUrl: string = SITE_URL,
 ): HreflangUrl[] {
-  const normalizedPath = normalizePath(path);
-
   const hreflangs: HreflangUrl[] = SUPPORTED_LANGUAGES.map((locale) => ({
     hreflang: locale.code,
-    href: buildLocaleUrl(normalizedPath, locale.code, baseUrl),
+    href: buildLocaleUrl(path, locale.code, baseUrl),
   }));
 
   // Add x-default (English as default)
   hreflangs.push({
     hreflang: "x-default",
-    href: buildLocaleUrl(normalizedPath, DEFAULT_LOCALE, baseUrl),
+    href: buildLocaleUrl(path, DEFAULT_LOCALE, baseUrl),
   });
 
   return hreflangs;
@@ -106,10 +96,7 @@ export function generateCityHreflangUrls(
   citySlug: string,
   baseUrl: string = SITE_URL,
 ): HreflangUrl[] {
-  return SUPPORTED_LANGUAGES.map((locale) => ({
-    hreflang: locale.code,
-    href: `${baseUrl}/${locale.code === DEFAULT_LOCALE ? "" : `${locale.code}/`}city/${citySlug}`,
-  }));
+  return generateHreflangUrls(`/city/${citySlug}`, baseUrl);
 }
 
 /**
@@ -120,28 +107,22 @@ export function generateRestaurantHreflangUrls(
   _citySlug: string,
   baseUrl: string = SITE_URL,
 ): HreflangUrl[] {
-  return SUPPORTED_LANGUAGES.map((locale) => ({
-    hreflang: locale.code,
-    href: `${baseUrl}/${locale.code === DEFAULT_LOCALE ? "" : `${locale.code}/`}food/${restaurantId}`,
-  }));
+  return generateHreflangUrls(`/food/${restaurantId}`, baseUrl);
 }
 
 /**
- * Get canonical URL based on current locale
+ * Get canonical URL (always without lang param)
  */
 export function getCanonicalUrl(path: string, locale: Language = DEFAULT_LOCALE): string {
-  const normalizedPath = normalizePath(path);
-  return buildLocaleUrl(normalizedPath, locale);
+  const cleanPath = normalizePath(path);
+  return `${SITE_URL}${cleanPath ? `/${cleanPath}` : ""}`;
 }
 
 /**
  * Check if a URL is the canonical version
  */
 export function isCanonicalUrl(url: string): boolean {
-  // Check if URL contains any of our supported locale prefixes
-  const localePattern =
-    /\/en\/|\/ja\/|\/ko\/|\/zh-CN\/|\/zh-TW\/|\/th\/|\/vi\/|\/ru\/|\/fr\/|\/de\/|\/ar\/|\/fa\//;
-  return !localePattern.test(url);
+  return !url.includes("lang=");
 }
 
 /**
@@ -159,18 +140,21 @@ export function generateAlternateLinkTags(path: string, baseUrl: string = SITE_U
 }
 
 /**
- * Get locale from URL path
+ * Get locale from URL search params
  */
-export function getLocaleFromPath(path: string): Language {
-  const match = path.match(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?:\/|$)/);
-  return (match?.[1] as Language) || DEFAULT_LOCALE;
+export function getLocaleFromParams(url: URL): Language {
+  const lang = url.searchParams.get("lang");
+  if (lang && SUPPORTED_LANGUAGES.some((l) => l.code === lang)) {
+    return lang as Language;
+  }
+  return DEFAULT_LOCALE;
 }
 
 /**
- * Get path without locale prefix
+ * Get path without locale query param
  */
 export function getPathWithoutLocale(path: string): string {
-  return path.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)\//, "/");
+  return path.split("?")[0];
 }
 
 /**
@@ -187,14 +171,11 @@ export function generateHreflangSitemapXml(
       const links = entry.hreflangs
         .map(
           ({ hreflang, href }) =>
-            `    <xhtml:link rel="alternate" hreflang="${hreflang}" href="${href}" />`,
+            `    <xhtml:link rel="alternate" hreflang="${hreflang}" href="${escapeXml(href)}" />`,
         )
         .join("\n");
 
-      return `  <url>
-    <loc>${entry.url}</loc>
-${links}
-  </url>`;
+      return `  <url>\n    <loc>${entry.url}</loc>\n${links}\n  </url>`;
     })
     .join("\n");
 
@@ -205,6 +186,15 @@ ${urlEntries}
 </urlset>`;
 }
 
+function escapeXml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 /**
  * Generate hreflang for a specific page in all languages
  */
@@ -212,11 +202,9 @@ export function generatePageHreflangs(
   path: string,
   siteUrl: string = SITE_URL,
 ): Array<{ hreflang: string; href: string }> {
-  const normalizedPath = normalizePath(path);
-
   return SUPPORTED_LANGUAGES.map((locale) => ({
     hreflang: locale.code,
-    href: buildLocaleUrl(normalizedPath, locale.code, siteUrl),
+    href: buildLocaleUrl(path, locale.code, siteUrl),
   }));
 }
 
@@ -236,16 +224,15 @@ export function getLocaleMetadata(locale: Language):
   return {
     name: meta.name,
     nativeName: meta.nativeName,
-    hreflang: meta.code, // code is the hreflang value
+    hreflang: meta.code,
     dir: meta.dir,
   };
 }
 
 /**
- * Build canonical URL considering current path and locale
+ * Build canonical URL considering current path
  */
 export function buildCanonicalUrl(pathname: string, siteUrl: string = SITE_URL): string {
-  // Remove any existing locale prefix
-  const pathWithoutLocale = getPathWithoutLocale(pathname);
-  return `${siteUrl}${pathWithoutLocale || "/"}`;
+  const cleanPath = pathname.split("?")[0].replace(/^\/+|\/+$/g, "");
+  return `${siteUrl}${cleanPath ? `/${cleanPath}` : "/"}`;
 }
