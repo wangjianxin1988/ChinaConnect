@@ -106,20 +106,18 @@ function escapeXml(str: string): string {
 }
 
 /**
- * Generate hreflang URLs for a path
+ * Generate hreflang URLs for a path (using query parameters)
+ * English: https://chinaconnect.pages.dev/city/beijing
+ * Japanese: https://chinaconnect.pages.dev/city/beijing?lang=ja
  */
 function generateHreflangUrls(path: string): Array<{ hreflang: string; href: string }> {
-  const cleanPath = path.replace(/^\/|\/$/g, "");
+  const cleanPath = path.replace(/^\/+|\/+$/g, "").split("?")[0].split("#")[0];
+  const urlBase = cleanPath ? `${SITE_URL}/${cleanPath}` : SITE_URL;
 
-  return SUPPORTED_LANGUAGES.map((lang) => {
-    const href =
-      lang.code === "en" ? `${SITE_URL}/${cleanPath}` : `${SITE_URL}/${lang.code}/${cleanPath}`;
-
-    return {
-      hreflang: lang.code,
-      href,
-    };
-  });
+  return SUPPORTED_LANGUAGES.map((lang) => ({
+    hreflang: lang.code,
+    href: lang.code === "en" ? urlBase : `${urlBase}?lang=${lang.code}`,
+  }));
 }
 
 /**

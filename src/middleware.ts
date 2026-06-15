@@ -1,21 +1,9 @@
 /**
- * Astro Middleware — Auth Guard
+ * Astro Middleware — Auth Guard + Language Detection
  *
- * Checks session on protected routes (/account, /profile) and redirects
- * unauthenticated users to /auth/login.
- *
- * Injects `Astro.locals.user` and `Astro.locals.session` for
- * use in page components.
- *
- * NOTE: For static output, auth protection is handled client-side.
- * The middleware runs at build time for SSG and at request time for SSR/hybrid.
- * 
- * Cookie Detection:
- * - Supabase JS v2 defaults to localStorage for session storage
- * - This middleware checks cookies for backward compatibility
- * - For production, consider using @supabase/ssr for proper cookie support
- * - When no cookies are present (build-time or first visit), pages are allowed through
- * - Client-side JS handles the runtime auth check and redirect
+ * 1. Auth: Checks session on protected routes
+ * 2. Language: Detects user language from query param, cookie, or Accept-Language header
+ *    Injects into locals for server-side rendering
  */
 
 import { createClient } from "@supabase/supabase-js";
@@ -26,26 +14,98 @@ const PROTECTED_ROUTES = ["/account"];
 // Public auth pages that redirect to account if already logged in
 const AUTH_ROUTES = ["/auth/login", "/auth/register"];
 
+// Supported languages
+const SUPPORTED = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
+type Language = (typeof SUPPORTED)[number];
+
+/**
+ * Detect language from Accept-Language header
+ */
+function detectFromHeader(acceptLang: string | null): Language | null {
+  if (!acceptLang) return null;
+
+  // Parse Accept-Language: "ja,en-US;q=0.9,zh-CN;q=0.8"
+  const langs = acceptLang
+    .split(",")
+    .map((part) => {
+      const [code, q] = part.trim().split(";q=");
+      return { code: code.trim(), q: q ? Number.parseFloat(q) : 1.0 };
+    })
+    .sort((a, b) => b.q - a.q);
+
+  for (const { code } of langs) {
+    // Exact match
+    if ((SUPPORTED as readonly string[]).includes(code)) return code as Language;
+    // Prefix match: "ja-JP" → "ja"
+    const prefix = code.split("-")[0];
+    if ((SUPPORTED as readonly string[]).includes(prefix)) return prefix as Language;
+    // Special: "zh" → "zh-CN", "zh-TW"/"zh-Hant" → "zh-TW"
+    if (prefix === "zh") {
+      if (code.includes("TW") || code.includes("Hant") || code.includes("HK")) return "zh-TW";
+      return "zh-CN";
+    }
+  }
+  return null;
+}
+
 export const onRequest = defineMiddleware(async (context, next) => {
   const { url, redirect, cookies } = context;
   const pathname = url.pathname;
+  const params = url.searchParams;
 
-  // Check if this is a protected route
+  // =========================================================================
+  // Language Detection (runs on ALL routes)
+  // Priority: ?lang=XX query param > cookie > Accept-Language header
+  // =========================================================================
+
+  let detectedLang: Language = "en";
+
+  // 1. Query parameter (highest priority, also used for hreflang)
+  const queryLang = params.get("lang");
+  if (queryLang && (SUPPORTED as readonly string[]).includes(queryLang)) {
+    detectedLang = queryLang as Language;
+  } else {
+    // 2. Cookie
+    const cookieLang = cookies.get("chinaconnect_language")?.value;
+    if (cookieLang && (SUPPORTED as readonly string[]).includes(cookieLang)) {
+      detectedLang = cookieLang as Language;
+    } else {
+      // 3. Accept-Language header (server-side detection)
+      const acceptLang = context.request.headers.get("Accept-Language");
+      const headerLang = detectFromHeader(acceptLang);
+      if (headerLang) {
+        detectedLang = headerLang;
+      }
+    }
+  }
+
+  // Inject language into locals for use in pages
+  context.locals.lang = detectedLang;
+
+  // If lang was set via query param, persist to cookie
+  if (queryLang && (SUPPORTED as readonly string[]).includes(queryLang)) {
+    cookies.set("chinaconnect_language", queryLang, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 365, // 1 year
+      sameSite: "lax",
+    });
+  }
+
+  // =========================================================================
+  // Auth Guard (existing logic)
+  // =========================================================================
+
   const isProtected = PROTECTED_ROUTES.some(
     (route) => pathname === route || pathname.startsWith(`${route}/`),
   );
-
-  // Check if this is an auth page
   const isAuthPage = AUTH_ROUTES.some(
     (route) => pathname === route || pathname.startsWith(`${route}/`),
   );
 
-  // Skip middleware for non-auth routes
   if (!isProtected && !isAuthPage) {
     return next();
   }
 
-  // Read Supabase config from environment
   const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
   const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
@@ -53,12 +113,8 @@ export const onRequest = defineMiddleware(async (context, next) => {
     return next();
   }
 
-  // Try to find auth tokens from cookies
-  // Supabase JS v2 stores tokens in cookies like sb-<ref>-auth-token
   let accessToken: string | undefined;
 
-  // Look for Supabase session cookie patterns
-  // cookies.getAll() may not exist during static build — guard it
   try {
     const allCookiesList = typeof cookies.getAll === "function" ? cookies.getAll() : [];
     for (const cookie of allCookiesList) {
@@ -73,10 +129,9 @@ export const onRequest = defineMiddleware(async (context, next) => {
       }
     }
   } catch {
-    // Static build — no cookies available
+    // Static build
   }
 
-  // Also check for simple cookie names used by some setups
   if (!accessToken) {
     accessToken = cookies.get("sb-access-token")?.value;
   }
@@ -94,26 +149,21 @@ export const onRequest = defineMiddleware(async (context, next) => {
         user = data.user;
       }
     } catch {
-      // Token invalid — treat as unauthenticated
+      // Token invalid
     }
   }
 
-  // Inject user into locals
   context.locals.user = user;
   context.locals.session = user ? { access_token: accessToken } : null;
 
-  // If no cookies at all (build-time or first visit), let the page through
-  // Client-side JS will handle the auth check and redirect
   if (!accessToken) {
     return next();
   }
 
-  // Protected route with invalid/expired token: redirect to login
   if (isProtected && !user) {
     return redirect("/auth/login");
   }
 
-  // Auth page with valid session: redirect to account
   if (isAuthPage && user) {
     return redirect("/account");
   }

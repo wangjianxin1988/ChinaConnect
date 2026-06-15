@@ -150,11 +150,15 @@ export async function translatePageContent(targetLang: Language): Promise<void> 
 
 /**
  * Auto-detect user's preferred language
+ * Priority: URL query param > localStorage > browser language
  */
 export function detectLanguage(): Language {
-  // 1. Check URL path (/ja/, /ko/, etc.)
-  const pathLang = getLanguageFromPath();
-  if (pathLang) return pathLang;
+  // 1. Check URL query parameter (?lang=XX)
+  if (typeof window !== "undefined") {
+    const params = new URLSearchParams(window.location.search);
+    const queryLang = params.get("lang");
+    if (queryLang && isValidLanguage(queryLang)) return queryLang as Language;
+  }
 
   // 2. Check localStorage
   try {
@@ -165,12 +169,9 @@ export function detectLanguage(): Language {
   // 3. Check browser language
   const browserLang = navigator.language;
   if (browserLang) {
-    // Try exact match first (e.g., "ja" → "ja")
     if (isValidLanguage(browserLang)) return browserLang as Language;
-    // Try prefix match (e.g., "ja-JP" → "ja")
     const prefix = browserLang.split("-")[0];
     if (isValidLanguage(prefix)) return prefix as Language;
-    // Special: "zh" → "zh-CN"
     if (prefix === "zh") {
       if (browserLang.includes("TW") || browserLang.includes("Hant")) return "zh-TW";
       return "zh-CN";
@@ -178,11 +179,6 @@ export function detectLanguage(): Language {
   }
 
   return "en";
-}
-
-function getLanguageFromPath(): Language | null {
-  const match = window.location.pathname.match(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?:\/|$)/);
-  return match ? (match[1] as Language) : null;
 }
 
 function isValidLanguage(code: string): boolean {

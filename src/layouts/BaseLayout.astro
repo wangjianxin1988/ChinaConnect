@@ -26,8 +26,11 @@ const {
   description = "ChinaConnect - Connecting China with the World through culinary experiences",
   meta = {},
   ogImage,
-  lang = "en",
+  lang: propLang,
 } = Astro.props;
+
+// Use middleware-detected language, fall back to prop, then default to "en"
+const lang: Language = propLang || (Astro.locals.lang as Language) || "en";
 
 const pageMeta: SEOPageMeta = {
   title,
@@ -40,7 +43,7 @@ const canonicalUrl = meta.canonicalUrl || `${SITE_URL}${Astro.url.pathname}`;
 const fullOgImage = ogImage || `${SITE_URL}/og-image.png`;
 const pathname = Astro.url.pathname;
 
-// Generate hreflang tags for all 12 languages
+// Generate hreflang tags for all 12 languages (query-param based)
 const hreflangUrls = generateHreflangUrlsWithDefault(pathname, SITE_URL);
 
 // Map language to Open Graph locale
@@ -70,7 +73,8 @@ const translationsJson = JSON.stringify(translations);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
 
     <!-- PWA / Theme Color -->
     <meta name="theme-color" content="#3b82f6" />
@@ -135,23 +139,34 @@ const translationsJson = JSON.stringify(translations);
     <ViewTransitions />
 
     <!-- Inline translations for client-side i18n -->
-    <script is:inline define:vars={{ translationsJson, SUPPORTED_LANGUAGES }}>
+    <script is:inline define:vars={{ translationsJson, SUPPORTED_LANGUAGES, lang }}>
       (function() {
         var STORAGE_KEY = 'chinaconnect_language';
         var translations = JSON.parse(translationsJson);
         var languages = SUPPORTED_LANGUAGES;
+        var serverLang = lang; // Detected by middleware (from ?lang=XX, cookie, or Accept-Language)
 
         // Expose translations and languages globally for other scripts
         window.__I18N__ = {
           translations: translations,
-          languages: languages
+          languages: languages,
+          serverLang: serverLang
         };
 
-        // Get current language from localStorage or browser
+        // Get current language — priority: localStorage > server-detected > browser
         function getCurrentLang() {
+          // 1. localStorage (user explicitly chose a language)
           var stored = localStorage.getItem(STORAGE_KEY);
           if (stored && translations[stored]) return stored;
 
+          // 2. Server-detected language (from ?lang=XX cookie or Accept-Language)
+          if (serverLang && translations[serverLang]) {
+            // Persist server detection to localStorage for consistency
+            localStorage.setItem(STORAGE_KEY, serverLang);
+            return serverLang;
+          }
+
+          // 3. Browser language
           var browserLang = navigator.language;
           if (browserLang.startsWith('ja')) return 'ja';
           if (browserLang.startsWith('ko')) return 'ko';
@@ -233,15 +248,14 @@ const translationsJson = JSON.stringify(translations);
           buildLangMenu();
           toggleLanguageMenu();
           window.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
-          // Navigate to locale-prefixed URL for SEO
-          var currentPath = window.location.pathname;
-          // Remove existing locale prefix
-          var cleanPath = currentPath.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(\/|$)/, '/');
+          // Navigate with ?lang=XX query parameter for SEO
+          var url = new URL(window.location.href);
           if (lang === 'en') {
-            window.location.href = cleanPath;
+            url.searchParams.delete('lang');
           } else {
-            window.location.href = '/' + lang + (cleanPath === '/' ? '' : cleanPath);
+            url.searchParams.set('lang', lang);
           }
+          window.location.href = url.toString();
         };
 
         document.addEventListener('click', function(e) {
@@ -279,7 +293,7 @@ const translationsJson = JSON.stringify(translations);
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <img src="/logo.png" alt="ChinaConnect" class="w-10 h-10 rounded-lg" />
+            <img src="/logo.svg" alt="ChinaConnect" class="w-10 h-10 rounded-lg" />
             <div>
               <span class="font-semibold text-lg text-gray-900">ChinaConnect</span>
               <span class="block text-xs text-gray-500" data-i18n="nav.tagline">Explore China with AI</span>
@@ -472,14 +486,14 @@ const translationsJson = JSON.stringify(translations);
           toggleLanguageMenu();
           // Dispatch event for other components
           window.dispatchEvent(new CustomEvent('languagechange', { detail: lang }));
-          // Navigate to locale-prefixed URL for SEO
-          var currentPath = window.location.pathname;
-          var cleanPath = currentPath.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(\/|$)/, '/');
+          // Navigate with ?lang=XX query parameter for SEO
+          var url = new URL(window.location.href);
           if (lang === 'en') {
-            window.location.href = cleanPath;
+            url.searchParams.delete('lang');
           } else {
-            window.location.href = '/' + lang + (cleanPath === '/' ? '' : cleanPath);
+            url.searchParams.set('lang', lang);
           }
+          window.location.href = url.toString();
         };
 
         // Close menu on outside click
@@ -651,7 +665,7 @@ const translationsJson = JSON.stringify(translations);
 
     <!-- SOS Emergency Button and Cultural Warnings -->
     <EmergencyWrapper client:load />
-    <CulturalWarningTrigger client:load />
+    <CulturalWarningTrigger client:load autoShow={false} />
 
     <!-- PWA Components -->
     <InstallPrompt client:load />
@@ -733,7 +747,7 @@ const translationsJson = JSON.stringify(translations);
           <!-- Brand -->
           <div class="md:col-span-1">
             <div class="flex items-center gap-3 mb-4">
-              <img src="/logo.png" alt="ChinaConnect" class="w-10 h-10 rounded-lg" />
+              <img src="/logo.svg" alt="ChinaConnect" class="w-10 h-10 rounded-lg" />
               <span class="font-semibold text-lg">ChinaConnect</span>
             </div>
             <p class="text-gray-400 max-w-md" data-i18n="footer.description">
