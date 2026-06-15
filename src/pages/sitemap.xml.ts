@@ -386,7 +386,7 @@ export const GET: APIRoute = ({ url }) => {
     headers: {
       "Content-Type": contentType,
       "Cache-Control": "public, max-age=3600, s-maxage=86400",
-      "X-Robots-Tag": "noindex",
+      "X-Robots-Tag": "index, follow",
     },
   });
 };

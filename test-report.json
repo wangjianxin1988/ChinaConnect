@@ -1,0 +1,564 @@
+{
+  "summary": {
+    "total": 79,
+    "passed": 76,
+    "failed": 2,
+    "warned": 1,
+    "pass_rate": "96.2%"
+  },
+  "results": [
+    {
+      "test": "Page load: /",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:33:50.263351"
+    },
+    {
+      "test": "Page load: /cities",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:33:53.586818"
+    },
+    {
+      "test": "Page load: /food",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:33:55.057181"
+    },
+    {
+      "test": "Page load: /ai",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:33:56.418696"
+    },
+    {
+      "test": "Page load: /guide",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:33:57.765521"
+    },
+    {
+      "test": "Page load: /pricing",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:33:59.025186"
+    },
+    {
+      "test": "Page load: /auth/login",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:00.218217"
+    },
+    {
+      "test": "Page load: /auth/register",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:01.435301"
+    },
+    {
+      "test": "Page load: /account",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:02.789495"
+    },
+    {
+      "test": "Page load: /emergency",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:04.198011"
+    },
+    {
+      "test": "Page load: /offline",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:05.271768"
+    },
+    {
+      "test": "Page load: /city/beijing",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:07.493664"
+    },
+    {
+      "test": "Page load: /city/beijing/food",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:09.297746"
+    },
+    {
+      "test": "Page load: /city/beijing/hotels",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:11.586343"
+    },
+    {
+      "test": "Page load: /city/beijing/attractions",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:13.244103"
+    },
+    {
+      "test": "Page load: /city/shanghai",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:15.295581"
+    },
+    {
+      "test": "Page load: /city/shanghai/food",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:16.938111"
+    },
+    {
+      "test": "Page load: /city/chengdu",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:19.375650"
+    },
+    {
+      "test": "Page load: /city/guangzhou",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:21.311544"
+    },
+    {
+      "test": "Page load: /guide/visa",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:22.762037"
+    },
+    {
+      "test": "Page load: /guide/payment",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:24.059318"
+    },
+    {
+      "test": "Page load: /guide/transport",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:25.523975"
+    },
+    {
+      "test": "Page load: /guide/accommodation",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:26.970787"
+    },
+    {
+      "test": "Page load: /guide/dining",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:28.480720"
+    },
+    {
+      "test": "Page load: /guide/emergency-procedures",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:29.854343"
+    },
+    {
+      "test": "Page load: /guide/departure",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:31.276696"
+    },
+    {
+      "test": "Page load: /guide/business/expo-calendar",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:32.620317"
+    },
+    {
+      "test": "Page load: /guide/business/invitation-letter",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:34.044726"
+    },
+    {
+      "test": "Page load: /guide/business/etiquette",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:35.497100"
+    },
+    {
+      "test": "Page load: /guide/business/company-registration",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:36.822388"
+    },
+    {
+      "test": "Page load: /guide/business/translation",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:38.170271"
+    },
+    {
+      "test": "Page load: /guide/cultural-warnings",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:39.737632"
+    },
+    {
+      "test": "Page load: /guide/scam-prevention",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:41.075326"
+    },
+    {
+      "test": "Nav: Home link",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:42.229178"
+    },
+    {
+      "test": "Nav: Cities link",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:42.229178"
+    },
+    {
+      "test": "Nav: Food link",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:42.229178"
+    },
+    {
+      "test": "Nav: AI Concierge link",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:42.229677"
+    },
+    {
+      "test": "Nav: Guide link",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:42.229677"
+    },
+    {
+      "test": "i18n: Hreflang tags",
+      "status": "PASS",
+      "details": "13 tags found",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:43.687868"
+    },
+    {
+      "test": "i18n: Language switcher",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:43.687868"
+    },
+    {
+      "test": "i18n: ?lang=ja works",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:44.820790"
+    },
+    {
+      "test": "Food filter: data-filter=\"all\"",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:46.329524"
+    },
+    {
+      "test": "Food filter: data-filter=\"michelin\"",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:46.329524"
+    },
+    {
+      "test": "Food filter: data-filter=\"blackpearl\"",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:46.329524"
+    },
+    {
+      "test": "Food filter: data-filter=\"local\"",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:46.330528"
+    },
+    {
+      "test": "Food filter: data-filter=\"street_food\"",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:46.330528"
+    },
+    {
+      "test": "Food: Card filter attributes",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:46.330528"
+    },
+    {
+      "test": "Hotel category: luxury",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:48.575038"
+    },
+    {
+      "test": "Hotel category: mid_range",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:48.575536"
+    },
+    {
+      "test": "Hotel category: budget",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:48.575536"
+    },
+    {
+      "test": "Hotel category: hostel",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:48.575536"
+    },
+    {
+      "test": "Hotel category: love_hotel",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:48.575536"
+    },
+    {
+      "test": "Hotel category: esports_hotel",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:48.575536"
+    },
+    {
+      "test": "Hotels: Phone links",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:48.575536"
+    },
+    {
+      "test": "Emergency: 110",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:50.511331"
+    },
+    {
+      "test": "Emergency: 119",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:50.511830"
+    },
+    {
+      "test": "Emergency: 120",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:50.511830"
+    },
+    {
+      "test": "SEO: JSON-LD schema",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:51.707831"
+    },
+    {
+      "test": "SEO: Open Graph title",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:51.707831"
+    },
+    {
+      "test": "SEO: Open Graph description",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:51.707831"
+    },
+    {
+      "test": "SEO: Open Graph image",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:51.707831"
+    },
+    {
+      "test": "SEO: Twitter card",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:51.707831"
+    },
+    {
+      "test": "SEO: Canonical URL",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:51.707831"
+    },
+    {
+      "test": "SEO: Page title",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:51.707831"
+    },
+    {
+      "test": "App links: Google Play",
+      "status": "PASS",
+      "details": "16 links",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:53.665398"
+    },
+    {
+      "test": "App links: App Store",
+      "status": "PASS",
+      "details": "35 links",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:53.665398"
+    },
+    {
+      "test": "Asset: /logo.svg",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:54.380069"
+    },
+    {
+      "test": "Asset: /logo.png",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:55.308027"
+    },
+    {
+      "test": "Asset: /favicon.svg",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:56.022959"
+    },
+    {
+      "test": "Asset: /favicon.png",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:56.864156"
+    },
+    {
+      "test": "Sitemap: Valid XML",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:57.924750"
+    },
+    {
+      "test": "Sitemap: URLs",
+      "status": "FAIL",
+      "details": "Only 99 URLs",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:57.924750"
+    },
+    {
+      "test": "Sitemap: Hreflang",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:57.924750"
+    },
+    {
+      "test": "API: /api/pricing",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:34:58.717926"
+    },
+    {
+      "test": "Data: Beijing restaurants",
+      "status": "PASS",
+      "details": "51 cards",
+      "screenshot": null,
+      "time": "2026-06-15T15:35:00.229257"
+    },
+    {
+      "test": "Data: Beijing hotels",
+      "status": "FAIL",
+      "details": "Only 0 cards",
+      "screenshot": null,
+      "time": "2026-06-15T15:35:02.356443"
+    },
+    {
+      "test": "Cultural warning: No auto-show",
+      "status": "WARN",
+      "details": "Check if autoShow is disabled",
+      "screenshot": null,
+      "time": "2026-06-15T15:35:04.385432"
+    },
+    {
+      "test": "Responsive: Viewport meta",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:35:05.493399"
+    },
+    {
+      "test": "PWA: Service worker",
+      "status": "PASS",
+      "details": "",
+      "screenshot": null,
+      "time": "2026-06-15T15:35:06.536939"
+    }
+  ]
+}
