@@ -15,7 +15,17 @@ export type RestaurantType =
   | "local"
   | "budget_local"
   | "hole_in_wall"
-  | "night_market";
+  | "night_market"
+  | "street"
+  | "cafe"
+  | "chain"
+  | "fine"
+  | "fine-dining"
+  | "international"
+  | "luxury"
+  | "buffet"
+  | "fastfood"
+  | "modern";
 
 // Legacy alias for backward compatibility
 export type RestaurantTier = RestaurantType;
@@ -50,6 +60,16 @@ export const restaurantTypeToTier: Record<RestaurantType, FoodTier> = {
   budget_local: "B",
   hole_in_wall: "B",
   night_market: "B",
+  street: "B",
+  cafe: "B",
+  chain: "B",
+  fine: "S",
+  "fine-dining": "S",
+  international: "B",
+  luxury: "S",
+  buffet: "B",
+  fastfood: "B",
+  modern: "B",
 };
 
 // Food Tier configurations
@@ -185,6 +205,136 @@ export const RESTAURANT_TYPE_CONFIG: Record<RestaurantType, RestaurantTypeInfo> 
       border: "border-indigo-200",
     },
     priceRange: { min: 10, max: 50 },
+  },
+  street: {
+    type: "street",
+    label: "Street Food",
+    labelZh: "苍蝇馆子",
+    description: "Authentic street food and hole-in-the-wall eateries",
+    icon: "🍜",
+    color: {
+      bg: "bg-yellow-50",
+      text: "text-yellow-800",
+      border: "border-yellow-200",
+    },
+    priceRange: { min: 10, max: 80 },
+  },
+  cafe: {
+    type: "cafe",
+    label: "Cafe",
+    labelZh: "咖啡厅",
+    description: "Coffee shops and tea houses",
+    icon: "☕",
+    color: {
+      bg: "bg-amber-50",
+      text: "text-amber-800",
+      border: "border-amber-200",
+    },
+    priceRange: { min: 20, max: 100 },
+  },
+  chain: {
+    type: "chain",
+    label: "Chain Restaurant",
+    labelZh: "连锁品牌",
+    description: "Popular restaurant chains",
+    icon: "🏪",
+    color: {
+      bg: "bg-blue-50",
+      text: "text-blue-800",
+      border: "border-blue-200",
+    },
+    priceRange: { min: 30, max: 200 },
+  },
+  fine: {
+    type: "fine",
+    label: "Fine Dining",
+    labelZh: "精致餐饮",
+    description: "Upscale dining experiences",
+    icon: "🍽️",
+    color: {
+      bg: "bg-purple-50",
+      text: "text-purple-800",
+      border: "border-purple-200",
+    },
+    priceRange: { min: 300, max: 3000 },
+  },
+  "fine-dining": {
+    type: "fine-dining",
+    label: "Fine Dining",
+    labelZh: "高级料理",
+    description: "Premium fine dining restaurants",
+    icon: "🍽️",
+    color: {
+      bg: "bg-purple-50",
+      text: "text-purple-800",
+      border: "border-purple-200",
+    },
+    priceRange: { min: 500, max: 5000 },
+  },
+  international: {
+    type: "international",
+    label: "International",
+    labelZh: "国际美食",
+    description: "International cuisine restaurants",
+    icon: "🌍",
+    color: {
+      bg: "bg-teal-50",
+      text: "text-teal-800",
+      border: "border-teal-200",
+    },
+    priceRange: { min: 50, max: 500 },
+  },
+  luxury: {
+    type: "luxury",
+    label: "Luxury Dining",
+    labelZh: "奢华餐饮",
+    description: "Ultra-premium luxury dining",
+    icon: "👑",
+    color: {
+      bg: "bg-yellow-50",
+      text: "text-yellow-800",
+      border: "border-yellow-200",
+    },
+    priceRange: { min: 1000, max: 10000 },
+  },
+  buffet: {
+    type: "buffet",
+    label: "Buffet",
+    labelZh: "自助餐",
+    description: "All-you-can-eat buffet restaurants",
+    icon: "🥘",
+    color: {
+      bg: "bg-orange-50",
+      text: "text-orange-800",
+      border: "border-orange-200",
+    },
+    priceRange: { min: 80, max: 500 },
+  },
+  fastfood: {
+    type: "fastfood",
+    label: "Fast Food",
+    labelZh: "快餐",
+    description: "Quick service restaurants",
+    icon: "🍔",
+    color: {
+      bg: "bg-red-50",
+      text: "text-red-800",
+      border: "border-red-200",
+    },
+    priceRange: { min: 10, max: 60 },
+  },
+  modern: {
+    type: "modern",
+    label: "Modern Cuisine",
+    labelZh: "新派餐厅",
+    description: "Modern and fusion cuisine",
+    icon: "✨",
+    color: {
+      bg: "bg-cyan-50",
+      text: "text-cyan-800",
+      border: "border-cyan-200",
+    },
+    priceRange: { min: 100, max: 800 },
   },
 };
 

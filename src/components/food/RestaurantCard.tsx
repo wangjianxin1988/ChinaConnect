@@ -8,14 +8,24 @@ interface RestaurantCardProps {
   onClick: () => void;
 }
 
-const TYPE_CONFIG = {
+const TYPE_CONFIG: Record<string, { label: string; icon: string; color: string; bg: string }> = {
   michelin: { label: "米其林", icon: "⭐", color: "text-[#1E3A5F]", bg: "bg-[#1E3A5F]/10" },
   blackpearl: { label: "黑珍珠", icon: "💎", color: "text-[#2D1B4E]", bg: "bg-[#2D1B4E]/10" },
   local: { label: "本地推荐", icon: "🔥", color: "text-[#B8383D]", bg: "bg-[#B8383D]/10" },
+  street: { label: "苍蝇馆子", icon: "🍜", color: "text-[#D4820C]", bg: "bg-[#D4820C]/10" },
+  cafe: { label: "咖啡厅", icon: "☕", color: "text-[#6B4226]", bg: "bg-[#6B4226]/10" },
+  chain: { label: "连锁品牌", icon: "🏪", color: "text-[#2563EB]", bg: "bg-[#2563EB]/10" },
+  fine: { label: "精致餐饮", icon: "🍽️", color: "text-[#7C3AED]", bg: "bg-[#7C3AED]/10" },
+  "fine-dining": { label: "高级料理", icon: "🍽️", color: "text-[#7C3AED]", bg: "bg-[#7C3AED]/10" },
+  international: { label: "国际美食", icon: "🌍", color: "text-[#059669]", bg: "bg-[#059669]/10" },
+  luxury: { label: "奢华餐饮", icon: "👑", color: "text-[#D4AF37]", bg: "bg-[#D4AF37]/10" },
+  buffet: { label: "自助餐", icon: "🥘", color: "text-[#EA580C]", bg: "bg-[#EA580C]/10" },
+  fastfood: { label: "快餐", icon: "🍔", color: "text-[#DC2626]", bg: "bg-[#DC2626]/10" },
+  modern: { label: "新派餐厅", icon: "✨", color: "text-[#0891B2]", bg: "bg-[#0891B2]/10" },
 };
 
 export default function RestaurantCard({ restaurant, onClick }: RestaurantCardProps) {
-  const config = TYPE_CONFIG[restaurant.type];
+  const config = TYPE_CONFIG[restaurant.type] || { label: "美食", icon: "🍴", color: "text-gray-600", bg: "bg-gray-100" };
   const { isFavorited, toggleFavorite } = useFavorites();
 
   const isFav = isFavorited(restaurant.id);

@@ -244,4 +244,22 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
       overflow: hidden;
     }
   </style>
+
+  <!-- Authoritative Data Sources -->
+  <section class="container-custom py-8 mt-8 border-t border-gray-200">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-lg font-semibold text-gray-700 mb-3">📊 Data Sources & References</h2>
+      <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
+        <p>Attraction data compiled from authoritative sources. Verify details before visiting:</p>
+        <ul class="list-disc list-inside space-y-1 ml-2">
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">马蜂窝 (Mafengwo)</a> — China's largest travel community</li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">携程 (Ctrip/Trip.com)</a> — Attraction reviews & booking</li>
+          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a> — International attraction reviews</li>
+          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">中国新闻网 (China News)</a> — Official tourism information</li>
+          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">文化和旅游部 (Ministry of Culture & Tourism)</a> — Government tourism data</li>
+        </ul>
+        <p class="text-xs text-gray-400 mt-3">Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</p>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
