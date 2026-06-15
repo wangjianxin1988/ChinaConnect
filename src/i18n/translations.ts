@@ -54,8 +54,7 @@ export interface Translations {
     restaurants: string;
     aiChat: string;
     guide: string;
-    business: string;
-    explore: string;
+
   };
   // Common
   common: {
@@ -209,7 +208,7 @@ export const translations: Record<Language, Translations> = {
       home: "Home",
       cities: "Cities",
       restaurants: "Restaurants",
-      aiChat: "AI Chat",
+      aiChat: "AI Concierge",
       guide: "Travel Guide",
       business: "Business Express",
       explore: "Explore Restaurants",
@@ -233,7 +232,7 @@ export const translations: Record<Language, Translations> = {
       open: "Open",
     },
     home: {
-      heroTitle: "Explore China with AI",
+      heroTitle: "Your AI-Powered China Guide",
       heroSubtitle: "Your trusted guide to China's best cities",
       heroCTA: "Ask AI for Trip Advice",
       exploreCities: "Explore Cities",
@@ -569,7 +568,7 @@ export const translations: Record<Language, Translations> = {
       home: "首页",
       cities: "城市",
       restaurants: "餐厅",
-      aiChat: "AI聊天",
+      aiChat: "AI 旅行顾问",
       guide: "旅游指南",
       business: "商务快车",
       explore: "探索餐厅",
@@ -689,7 +688,7 @@ export const translations: Record<Language, Translations> = {
       home: "首頁",
       cities: "城市",
       restaurants: "餐廳",
-      aiChat: "AI聊天",
+      aiChat: "AI 旅行顾问",
       guide: "旅遊指南",
       business: "商務快車",
       explore: "探索餐廳",
@@ -929,7 +928,7 @@ export const translations: Record<Language, Translations> = {
       home: "Trang chủ",
       cities: "Thành phố",
       restaurants: "Nhà hàng",
-      aiChat: "AI Chat",
+      aiChat: "AI Concierge",
       guide: "Travel Guide",
       business: "Doanh nghiệp",
       explore: "Khám phá nhà hàng",
@@ -1170,7 +1169,7 @@ export const translations: Record<Language, Translations> = {
       home: "Accueil",
       cities: "Villes",
       restaurants: "Restaurants",
-      aiChat: "AI Chat",
+      aiChat: "AI Concierge",
       guide: "Travel Guide",
       business: "Express Affaires",
       explore: "Explorer les restaurants",
@@ -1294,7 +1293,7 @@ export const translations: Record<Language, Translations> = {
       home: "Startseite",
       cities: "Städte",
       restaurants: "Restaurants",
-      aiChat: "AI Chat",
+      aiChat: "AI Concierge",
       guide: "Travel Guide",
       business: "Business Express",
       explore: "Restaurants erkunden",
