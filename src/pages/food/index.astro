@@ -10,36 +10,27 @@ import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdS
 
 const lang = getLangFromUrl(Astro.url);
 
-// Category thresholds (consistent with city/[slug]/food.astro)
-const LOCAL_RECOMMEND_THRESHOLD = 150;
-const AFFORDABLE_MAX_PRICE = 100;
+// ─── Unified Restaurant Category System (matches city/[slug]/food.astro) ───
+const TYPE_TO_CATEGORY: Record<string, string> = {
+  michelin: "michelin", blackpearl: "blackpearl", local: "local",
+  budget_local: "affordable", hole_in_wall: "street_food", night_market: "street_food",
+  street: "street_food", cafe: "cafe", chain: "chain",
+  fine: "fine_dining", "fine-dining": "fine_dining", international: "international",
+  luxury: "fine_dining", buffet: "buffet", fastfood: "fastfood", modern: "local",
+};
 
 function getHighlightCategory(r: Restaurant): string {
-  if (r.type === "local") {
-    const tags = r.tags || [];
-    if (tags.some(t => t.includes("苍蝇馆子") || t.includes("street"))) {
-      return "street_food";
-    }
-    if (r.avgPrice <= AFFORDABLE_MAX_PRICE) {
-      return "affordable";
-    }
-    if (r.avgPrice <= LOCAL_RECOMMEND_THRESHOLD) {
-      return "local_recommend";
-    }
-  }
-  if (r.type === "michelin") return "michelin";
-  if (r.type === "blackpearl") return "blackpearl";
-  return "local_recommend";
+  return TYPE_TO_CATEGORY[r.type] || "local";
 }
 
 // Calculate food statistics per city from city JSON data
 const citiesWithFoodStats = cities.map((city) => {
   const restaurants = city.restaurants || [];
-  const michelinCount = restaurants.filter((r) => r.type === "michelin").length;
-  const blackpearlCount = restaurants.filter((r) => r.type === "blackpearl").length;
-  const localRecommendCount = restaurants.filter((r) => getHighlightCategory(r) === "local_recommend").length;
-  const affordableCount = restaurants.filter((r) => getHighlightCategory(r) === "affordable").length;
-  const streetFoodCount = restaurants.filter((r) => getHighlightCategory(r) === "street_food").length;
+  const categoryCounts: Record<string, number> = {};
+  for (const r of restaurants) {
+    const cat = getHighlightCategory(r);
+    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+  }
   const meta = citiesMeta.find((m) => m.slug === city.slug);
 
   return {
@@ -49,22 +40,22 @@ const citiesWithFoodStats = cities.map((city) => {
     nameZh: meta?.nameZh || city.name,
     coverImage: city.coverImage,
     totalRestaurants: restaurants.length,
-    michelinCount,
-    blackpearlCount,
-    localRecommendCount,
-    affordableCount,
-    streetFoodCount,
+    categoryCounts,
   };
 });
 
 // Sort by total restaurant count
 citiesWithFoodStats.sort((a, b) => b.totalRestaurants - a.totalRestaurants);
 
-const totalMichelin = citiesWithFoodStats.reduce((sum, c) => sum + c.michelinCount, 0);
-const totalBlackpearl = citiesWithFoodStats.reduce((sum, c) => sum + c.blackpearlCount, 0);
-const totalLocalRecommend = citiesWithFoodStats.reduce((sum, c) => sum + c.localRecommendCount, 0);
-const totalAffordable = citiesWithFoodStats.reduce((sum, c) => sum + c.affordableCount, 0);
-const totalStreetFood = citiesWithFoodStats.reduce((sum, c) => sum + c.streetFoodCount, 0);
+// Aggregate category counts across all cities
+const totalByCategory: Record<string, number> = {};
+for (const c of citiesWithFoodStats) {
+  for (const [cat, count] of Object.entries(c.categoryCounts)) {
+    totalByCategory[cat] = (totalByCategory[cat] || 0) + count;
+  }
+}
+const totalMichelin = totalByCategory["michelin"] || 0;
+const totalBlackpearl = totalByCategory["blackpearl"] || 0;
 
 // Schema.org JSON-LD for Food listing
 const foodSchemas = [
@@ -111,15 +102,15 @@ const foodSchemas = [
           <div class="text-sm text-slate-600">黑珍珠餐厅</div>
         </div>
         <div class="bg-red-50 border border-red-200 rounded-xl px-6 py-3">
-          <div class="text-2xl font-bold text-red-600">{totalLocalRecommend}</div>
+          <div class="text-2xl font-bold text-red-600">{totalByCategory["local"] || 0}</div>
           <div class="text-sm text-red-700">本地人推荐</div>
         </div>
         <div class="bg-blue-50 border border-blue-200 rounded-xl px-6 py-3">
-          <div class="text-2xl font-bold text-blue-600">{totalAffordable}</div>
+          <div class="text-2xl font-bold text-blue-600">{totalByCategory["affordable"] || 0}</div>
           <div class="text-sm text-blue-700">平价美食</div>
         </div>
         <div class="bg-orange-50 border border-orange-200 rounded-xl px-6 py-3">
-          <div class="text-2xl font-bold text-orange-600">{totalStreetFood}</div>
+          <div class="text-2xl font-bold text-orange-600">{totalByCategory["street_food"] || 0}</div>
           <div class="text-sm text-orange-700">苍蝇馆子</div>
         </div>
       </div>
@@ -145,7 +136,7 @@ const foodSchemas = [
           <span>❤️</span>
           <span>本地人推荐</span>
           <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
-            {totalLocalRecommend}
+            {totalByCategory["local"] || 0}
           </span>
         </button>
         <button
@@ -175,7 +166,7 @@ const foodSchemas = [
           <span>💙</span>
           <span>平价美食</span>
           <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
-            {totalAffordable}
+            {totalByCategory["affordable"] || 0}
           </span>
         </button>
         <button
@@ -185,7 +176,7 @@ const foodSchemas = [
           <span>🔥</span>
           <span>苍蝇馆子</span>
           <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
-            {totalStreetFood}
+            {totalByCategory["street_food"] || 0}
           </span>
         </button>
       </div>
@@ -205,11 +196,7 @@ const foodSchemas = [
         {citiesWithFoodStats.map((city) => (
           <a
             href={`/city/${city.slug}/food`}
-            data-michelin={city.michelinCount}
-            data-blackpearl={city.blackpearlCount}
-            data-local-recommend={city.localRecommendCount}
-            data-affordable={city.affordableCount}
-            data-street-food={city.streetFoodCount}
+            data-categories={JSON.stringify(city.categoryCounts)}
             data-total={city.totalRestaurants}
             class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 city-card"
           >
@@ -366,8 +353,16 @@ const foodSchemas = [
 
         cards.forEach((card) => {
           const cardEl = card as HTMLElement;
-          const attrName = 'data-' + (categoryAttrMap[category] || 'total');
-          const count = parseInt(cardEl.getAttribute(attrName) || '0', 10);
+          let count = 0;
+          
+          if (category === 'all') {
+            count = parseInt(cardEl.getAttribute('data-total') || '0', 10);
+          } else {
+            try {
+              const cats = JSON.parse(cardEl.getAttribute('data-categories') || '{}');
+              count = cats[category] || 0;
+            } catch { count = 0; }
+          }
 
           if (category === 'all' || count > 0) {
             cardEl.style.display = '';
