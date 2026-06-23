@@ -625,65 +625,51 @@ const mapMarkers = [
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">🏨</span> Where to Stay
           </h2>
-          <p class="section-subtitle">Hotels for every budget in {city.nameEn}</p>
+          <p class="section-subtitle">Browse {totalHotelCount} vetted hotels across 6 categories in {city.nameEn}</p>
 
-          {/* Hotel Summary Card */}
-          <div class="bg-gradient-to-br from-teal-50 to-blue-50 border border-teal-100 rounded-2xl p-6">
-            <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mb-6">
-              {/* Luxury */}
-              <div class="flex flex-col items-center gap-2 p-3 bg-white rounded-xl border border-purple-100 hover:shadow-md transition-all">
-                <span class="text-2xl">🏨</span>
-                <span class="text-xs font-medium text-gray-600">豪华</span>
-                <span class="text-lg font-bold text-purple-700">{hotelCategoryCounts.luxury || 0}</span>
-              </div>
-              {/* Mid-range */}
-              <div class="flex flex-col items-center gap-2 p-3 bg-white rounded-xl border border-blue-100 hover:shadow-md transition-all">
-                <span class="text-2xl">🏢</span>
-                <span class="text-xs font-medium text-gray-600">中端</span>
-                <span class="text-lg font-bold text-blue-700">{hotelCategoryCounts.mid_range || 0}</span>
-              </div>
-              {/* Budget */}
-              <div class="flex flex-col items-center gap-2 p-3 bg-white rounded-xl border border-green-100 hover:shadow-md transition-all">
-                <span class="text-2xl">💰</span>
-                <span class="text-xs font-medium text-gray-600">经济</span>
-                <span class="text-lg font-bold text-green-700">{hotelCategoryCounts.budget || 0}</span>
-              </div>
-              {/* Hostel */}
-              <div class="flex flex-col items-center gap-2 p-3 bg-white rounded-xl border border-amber-100 hover:shadow-md transition-all">
-                <span class="text-2xl">🛏️</span>
-                <span class="text-xs font-medium text-gray-600">青年旅舍</span>
-                <span class="text-lg font-bold text-amber-700">{hotelCategoryCounts.hostel || 0}</span>
-              </div>
-              {/* Love Hotel */}
-              <div class="flex flex-col items-center gap-2 p-3 bg-white rounded-xl border border-pink-100 hover:shadow-md transition-all">
-                <span class="text-2xl">💕</span>
-                <span class="text-xs font-medium text-gray-600">情趣</span>
-                <span class="text-lg font-bold text-pink-700">{hotelCategoryCounts.love_hotel || 0}</span>
-              </div>
-              {/* Gaming */}
-              <div class="flex flex-col items-center gap-2 p-3 bg-white rounded-xl border border-indigo-100 hover:shadow-md transition-all">
-                <span class="text-2xl">🎮</span>
-                <span class="text-xs font-medium text-gray-600">电竞</span>
-                <span class="text-lg font-bold text-indigo-700">{hotelCategoryCounts.esports_hotel || 0}</span>
-              </div>
-            </div>
+          {/* Hotel category entry cards — each card links to the dedicated
+              /city/[slug]/hotels?category=... page with a working filter.
+              No duplicated list is rendered here; the home page is just an
+              entry point. */}
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-6">
+            {[
+              { key: "luxury", label: "豪华", labelEn: "Luxury", icon: "🏨", colorClass: "border-purple-200 hover:border-purple-400", textClass: "text-purple-700" },
+              { key: "mid_range", label: "中端", labelEn: "Mid-Range", icon: "🏢", colorClass: "border-blue-200 hover:border-blue-400", textClass: "text-blue-700" },
+              { key: "budget", label: "经济", labelEn: "Budget", icon: "💰", colorClass: "border-green-200 hover:border-green-400", textClass: "text-green-700" },
+              { key: "hostel", label: "青年旅舍", labelEn: "Hostel", icon: "🛏️", colorClass: "border-amber-200 hover:border-amber-400", textClass: "text-amber-700" },
+              { key: "love_hotel", label: "情趣", labelEn: "Love Hotel", icon: "💕", colorClass: "border-pink-200 hover:border-pink-400", textClass: "text-pink-700" },
+              { key: "esports_hotel", label: "电竞", labelEn: "Esports", icon: "🎮", colorClass: "border-indigo-200 hover:border-indigo-400", textClass: "text-indigo-700" },
+            ].map(cat => {
+              const count = (hotelCategoryCounts as any)[cat.key] || 0;
+              return (
+                <a
+                  href={`/city/${city.slug}/hotels?category=${cat.key}`}
+                  class={`group flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border-2 ${cat.colorClass} hover:shadow-md transition-all`}
+                  data-category={cat.key}
+                >
+                  <span class="text-3xl group-hover:scale-110 transition-transform">{cat.icon}</span>
+                  <span class="text-sm font-semibold text-gray-800">{cat.label}</span>
+                  <span class={`text-xs ${cat.textClass} font-bold`}>{count} 家</span>
+                  <span class="text-[10px] text-gray-400 uppercase tracking-wide">{cat.labelEn}</span>
+                </a>
+              );
+            })}
+          </div>
 
-            {/* View All Button */}
-            <div class="text-center">
-              <a
-                href={`/city/${city.slug}/hotels`}
-                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-xl font-semibold text-sm hover:from-teal-600 hover:to-blue-600 transition-all shadow-md hover:shadow-lg"
-              >
-                <span>🏨</span>
-                <span>查看全部酒店</span>
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </a>
-            </div>
+          {/* View all link */}
+          <div class="text-center mt-6">
+            <a
+              href={`/city/${city.slug}/hotels`}
+              class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-xl font-semibold text-sm hover:from-teal-600 hover:to-blue-600 transition-all shadow-md hover:shadow-lg"
+            >
+              <span>🏨</span>
+              <span>查看全部 {totalHotelCount} 家酒店</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
           </div>
         </section>
-
         <!-- Payment Section -->
         <section id="payment" class="scroll-mt-32">
           <h2 class="section-title flex items-center gap-3">
@@ -822,69 +808,6 @@ const mapMarkers = [
 </BaseLayout>
 
 <script is:inline>
-// Hotel budget filter
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const budget = btn.dataset.budget;
-
-    document.querySelectorAll('.filter-btn').forEach(b => {
-      b.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-50', 'text-blue-700', 'border-blue-200');
-      b.classList.add('bg-white', 'text-gray-500', 'border-gray-200');
-    });
-    btn.classList.remove('bg-white', 'text-gray-500', 'border-gray-200');
-    btn.classList.add('ring-2', 'ring-blue-500', 'bg-blue-50', 'text-blue-700', 'border-blue-200');
-
-    document.querySelectorAll('.hotel-card').forEach(card => {
-      if (budget === 'all' || card.dataset.budget === budget) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  });
-});
-
-// Hotel infinite scroll - IntersectionObserver to load 5 more each time
-(function() {
-  const sentinel = document.getElementById('hotel-sentinel');
-  if (!sentinel) return;
-
-  const BATCH_SIZE = 5;
-  let currentVisible = 5;
-
-  function showNextBatch() {
-    const hiddenCards = document.querySelectorAll('.hotel-hidden');
-    let shown = 0;
-    hiddenCards.forEach(card => {
-      if (shown < BATCH_SIZE) {
-        card.classList.remove('hotel-hidden');
-        card.classList.remove('hidden');
-        shown++;
-      }
-    });
-    currentVisible += shown;
-
-    // If no more hidden cards, disconnect observer
-    if (document.querySelectorAll('.hotel-hidden').length === 0) {
-      observer.disconnect();
-      sentinel.style.display = 'none';
-    }
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        showNextBatch();
-      }
-    });
-  }, { rootMargin: '200px' });
-
-  // Only observe if there are hidden cards
-  if (document.querySelectorAll('.hotel-hidden').length > 0) {
-    observer.observe(sentinel);
-  }
-})();
-
 // Real-time weather widget via OpenMeteo (free, no API key needed)
 document.querySelectorAll('[id^="weather-widget-"]').forEach(widget => {
   const el = widget;
