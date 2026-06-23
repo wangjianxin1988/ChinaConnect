@@ -1,4 +1,4 @@
-// Hreflang utilities for multi-language SEO
+﻿// Hreflang utilities for multi-language SEO
 // Uses query parameter approach: ?lang=XX
 // This works with static hosting (CF Pages) without server-side routing
 
@@ -6,7 +6,7 @@ import type { Language } from "@/i18n/translations";
 import { RTL_LANGUAGES, SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { HreflangUrl } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.pages.dev";
+const SITE_URL = "https://chinaconnect.com";
 
 // Default locale
 export const DEFAULT_LOCALE: Language = "en";
@@ -33,7 +33,7 @@ export function getHreflangCode(locale: Language): string {
 }
 
 /**
- * Normalize path — strip query params and trailing slashes
+ * Normalize path 鈥?strip query params and trailing slashes
  */
 function normalizePath(path: string): string {
   // Remove query string
@@ -44,8 +44,8 @@ function normalizePath(path: string): string {
 
 /**
  * Build URL for a specific locale using query parameter
- * English (default): https://chinaconnect.pages.dev/city/beijing
- * Other languages: https://chinaconnect.pages.dev/city/beijing?lang=ja
+ * English (default): https://chinaconnect.com/city/beijing
+ * Other languages: https://chinaconnect.com/city/beijing?lang=ja
  */
 function buildLocaleUrl(path: string, locale: Language, baseUrl: string = SITE_URL): string {
   const cleanPath = normalizePath(path);
@@ -236,3 +236,4 @@ export function buildCanonicalUrl(pathname: string, siteUrl: string = SITE_URL):
   const cleanPath = pathname.split("?")[0].replace(/^\/+|\/+$/g, "");
   return `${siteUrl}${cleanPath ? `/${cleanPath}` : "/"}`;
 }
+
