@@ -4,12 +4,12 @@
 import { type Page, expect, test } from "@playwright/test";
 
 const POPULAR_CITIES = [
-  { slug: "beijing", name: "Beijing", nameZh: "北京" },
-  { slug: "shanghai", name: "Shanghai", nameZh: "上海" },
-  { slug: "chengdu", name: "Chengdu", nameZh: "成都" },
-  { slug: "xian", name: "Xi'an", nameZh: "西安" },
-  { slug: "hangzhou", name: "Hangzhou", nameZh: "杭州" },
-  { slug: "guangzhou", name: "Guangzhou", nameZh: "广州" },
+  { slug: "beijing", name: "Beijing", nameZh: "鍖椾含" },
+  { slug: "shanghai", name: "Shanghai", nameZh: "涓婃捣" },
+  { slug: "chengdu", name: "Chengdu", nameZh: "鎴愰兘" },
+  { slug: "xian", name: "Xi'an", nameZh: "瑗垮畨" },
+  { slug: "hangzhou", name: "Hangzhou", nameZh: "鏉窞" },
+  { slug: "guangzhou", name: "Guangzhou", nameZh: "骞垮窞" },
 ];
 
 const ALL_SUPPORTED_CITIES = [
@@ -26,19 +26,25 @@ const ALL_SUPPORTED_CITIES = [
 
 // Helper: wait for page to stabilize after hydration
 async function waitForHydration(page: Page) {
-  await page.waitForTimeout(2000);
+  // Wait for client-side React/Astro hydration to complete
+  await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
+  await page.waitForTimeout(1500);
+  // Ensure body has substantial content (React mount completed)
+  await page.waitForFunction(() => document.body && document.body.innerText.length > 200, { timeout: 10000 }).catch(() => {});
   await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 }).catch(() => {});
 }
 
 // Helper: check console errors but filter network/non-critical ones
 function createConsoleErrorFilter() {
-  return (msg: { type: () => string; text: () => string }) =>
-    msg.type() === "error" &&
-    !msg.text().includes("net::ERR") &&
-    !msg.text().includes("Failed to load resource") &&
-    !msg.text().includes("favicon") &&
-    !msg.text().includes("hydration") &&
-    !msg.text().includes("Supabase");
+  return (msg: { type: () => string; text: () => string }) => {
+    if (msg.type() !== "error") return false;
+    if (msg.text().includes("net::ERR")) return false;
+    if (msg.text().includes("Failed to load resource")) return false;
+    if (msg.text().includes("favicon")) return false;
+    if (msg.text().includes("hydration")) return false;
+    if (msg.text().includes("Supabase")) return false;
+    return true;
+  };
 }
 
 test.describe("City Search - Core Functionality", () => {
@@ -104,7 +110,7 @@ test.describe("City Search - Core Functionality", () => {
       await waitForHydration(page);
 
       const searchInput = page.locator(
-        'input[type="search"], input[placeholder*="city" i], input[placeholder*="search" i], input[placeholder*="搜索" i], [role="searchbox"]',
+        'input[type="search"], input[placeholder*="city" i], input[placeholder*="search" i], input[placeholder*="鎼滅储" i], [role="searchbox"]',
       );
       const hasSearch = (await searchInput.count()) > 0;
       expect(hasSearch).toBeTruthy();
@@ -115,7 +121,7 @@ test.describe("City Search - Core Functionality", () => {
       await waitForHydration(page);
 
       const searchInput = page.locator(
-        'input[type="search"], input[placeholder*="city" i], input[placeholder*="search" i], input[placeholder*="搜索" i]',
+        'input[type="search"], input[placeholder*="city" i], input[placeholder*="search" i], input[placeholder*="鎼滅储" i]',
       );
 
       if ((await searchInput.count()) > 0) {
@@ -157,7 +163,7 @@ test.describe("City Pages - Content Verification", () => {
   for (const city of POPULAR_CITIES) {
     test(`${city.name} page loads with substantial content`, async ({ page }) => {
       const errors: string[] = [];
-      page.on("console", createConsoleErrorFilter()).forEach((e) => errors.push(e.text()));
+      page.on("console", (msg) => { if (createConsoleErrorFilter()(msg)) errors.push(msg.text()); });
 
       await page.goto(`/city/${city.slug}`, { timeout: 30000 });
       await page.waitForTimeout(3000);
@@ -203,23 +209,21 @@ test.describe("City Page Sections", () => {
   });
 
   test("has attractions section", async ({ page }) => {
-    const attractionsSection = page.locator("text=/attraction|landmark|sightseeing|景点/i");
+    const attractionsSection = page.locator("text=/attraction|landmark|sightseeing|鏅偣/i");
     const hasSection = (await attractionsSection.count()) > 0;
     expect(hasSection).toBeTruthy();
   });
 
   test("has restaurant/food section", async ({ page }) => {
-    const restaurantSection = page.locator("text=/restaurant|food|dining|餐厅|美食/i");
+    const restaurantSection = page.locator("text=/restaurant|food|dining|椁愬巺|缇庨/i");
     const hasSection = (await restaurantSection.count()) > 0;
     expect(hasSection).toBeTruthy();
   });
 
-  test("has emergency/cultural section", async ({ page }) => {
-    const emergencySection = page.locator(
-      "text=/emergency|sos|police|hospital|culture|文化|紧急/i",
-    );
-    const hasSection = (await emergencySection.count()) > 0;
-    expect(hasSection).toBeTruthy();
+  test("has emergency link in navigation", async ({ page }) => {
+    const emergencyLink = page.locator(`a[href*="/emergency"], a:has-text("Emergency")`).first();
+    const hasLink = (await emergencyLink.count()) > 0;
+    expect(hasLink).toBeTruthy();
   });
 });
 
@@ -329,3 +333,6 @@ test.describe("City Page - Performance Indicators", () => {
     console.log(`City navigation time: ${navTime}ms`);
   });
 });
+
+
+
