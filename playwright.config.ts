@@ -1,9 +1,11 @@
-import { defineConfig, devices } from "@playwright/test";
+﻿import { defineConfig, devices } from "@playwright/test";
 
 const BASE_URL = process.env.PLAYWRIGHT_BASE_URL || "http://localhost:4321";
 
 // Performance budgets for key pages (in ms)
 const PAGE_TIMEOUT = parseInt(process.env.PLAYWRIGHT_TIMEOUT || "30000");
+
+import { chromium } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests/e2e",
@@ -67,6 +69,9 @@ export default defineConfig({
 
     // Extra HTTP headers for testing
     extraHTTPHeaders: {
+
+    // Pre-set localStorage to skip onboarding modal in e2e tests
+    storageState: "./playwright-storage.json",
       "X-Playwright-Test": "true",
     },
   },
@@ -78,7 +83,6 @@ export default defineConfig({
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
-        channel: "chrome",
       },
     },
 
@@ -125,6 +129,9 @@ export default defineConfig({
 
   // Output directories
   outputDir: "./test-results",
+
+  // Global setup: write storage state JSON for onboarding dismissal
+  globalSetup: "./e2e-global-setup.ts",
 
   // Shadow mode for DOM snapshots
   snapshotDir: "./snapshots",
