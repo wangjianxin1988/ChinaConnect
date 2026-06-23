@@ -74,7 +74,7 @@ export const EXPO_CALENDAR: Expo[] = [
     description:
       "One of the most influential PCB and electronic circuit exhibitions globally, covering the entire electronic circuit supply chain from design to manufacturing.",
     descriptionCn: "全球最具影响力的PCB及电子电路展览会之一，覆盖从设计到制造的整个电子电路产业链。",
-    website: "https://www.cpcashow.com",
+    website: "https://www.cpca.org.cn",
     category: "electronics",
   },
   {
@@ -181,7 +181,7 @@ export const EXPO_CALENDAR: Expo[] = [
     description:
       "The world's largest daily necessities procurement center, with a dedicated trade festival each October.",
     descriptionCn: "全球最大的日用小商品采购中心，每年10月举办专属采购节。",
-    website: "https://www.yiwuexpo.com",
+    website: "https://www.yw.gov.cn",
     category: "trade",
   },
 ];

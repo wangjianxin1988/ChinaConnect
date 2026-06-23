@@ -644,7 +644,7 @@ export const AIChat: React.FC<AIChatProps> = ({
         };
 
   return (
-    <ChatErrorBoundary language={language}>
+    <ChatErrorBoundary language={language === "zh" ? "zh" : "en"}>
       <div className="flex h-full bg-gray-50">
         {/* Sidebar - Itinerary */}
         {showItinerary && (
@@ -677,7 +677,7 @@ export const AIChat: React.FC<AIChatProps> = ({
               <div className="border-t border-gray-200 p-4 bg-gray-50">
                 <ItineraryDisplay
                   itinerary={currentItinerary}
-                  language={language}
+                  language={language === "zh" ? "zh" : "en"}
                   compact
                   onSave={saveCurrentItinerary}
                   onExport={handleExport}
@@ -824,7 +824,7 @@ export const AIChat: React.FC<AIChatProps> = ({
                     : "I can help you plan itineraries, recommend restaurants, and answer life questions. Try quick prompts or just ask!"}
                 </p>
                 <div className="w-full max-w-md">
-                  <QuickPrompts language={language} onSelect={sendMessage} variant="expanded" />
+                  <QuickPrompts language={language === "zh" ? "zh" : "en"} onSelect={sendMessage} variant="expanded" />
                 </div>
               </div>
             ) : (
@@ -848,7 +848,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           {/* Quick Prompts */}
           {messages.length > 0 && !isLoading && (
             <div className="px-4 pb-2 shrink-0">
-              <QuickPrompts language={language} onSelect={sendMessage} variant="compact" showLabels={false} />
+              <QuickPrompts language={language === "zh" ? "zh" : "en"} onSelect={sendMessage} variant="compact" showLabels={false} />
             </div>
           )}
 
@@ -969,7 +969,7 @@ export const AIChat: React.FC<AIChatProps> = ({
           currentTier={currentTier}
           requiredTier={upgradePrompt.requiredTier}
           featureName={upgradePrompt.featureName}
-          language={language}
+          language={language === "zh" ? "zh" : "en"}
         />
 
         {/* Animation styles */}
