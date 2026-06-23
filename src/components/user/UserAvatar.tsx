@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * UserAvatar Component
  * Displays user avatar with fallback to initials

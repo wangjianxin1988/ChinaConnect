@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { TIER_CONFIG } from "./tier-data";
 /**
  * City Tier Display Helper

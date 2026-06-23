@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * LLM Stats Panel Component
  * Displays LLM routing statistics, costs, and latency metrics

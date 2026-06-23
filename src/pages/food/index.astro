@@ -1,4 +1,5 @@
 ---
+
 import "@/styles/global.css";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
@@ -10,18 +11,8 @@ import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdS
 
 const lang = getLangFromUrl(Astro.url);
 
-// ─── Unified Restaurant Category System (matches city/[slug]/food.astro) ───
-const TYPE_TO_CATEGORY: Record<string, string> = {
-  michelin: "michelin", blackpearl: "blackpearl", local: "local",
-  budget_local: "affordable", hole_in_wall: "street_food", night_market: "street_food",
-  street: "street_food", cafe: "cafe", chain: "chain",
-  fine: "fine_dining", "fine-dining": "fine_dining", international: "international",
-  luxury: "fine_dining", buffet: "buffet", fastfood: "fastfood", modern: "local",
-};
-
-function getHighlightCategory(r: Restaurant): string {
-  return TYPE_TO_CATEGORY[r.type] || "local";
-}
+// Unified category system shared with city/[slug]/food.astro
+import { getHighlightCategory, CATEGORY_CONFIG, CATEGORY_ORDER } from "@/data/food/categories";
 
 // Calculate food statistics per city from city JSON data
 const citiesWithFoodStats = cities.map((city) => {

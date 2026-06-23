@@ -94,3 +94,58 @@ export function getBothMapUrls(lat: number, lng: number, name?: string) {
     amap: getAmapUrl(lat, lng, name),
   };
 }
+
+// ─── Native Map Schemes ──────────────────────────────────────────
+// Prefer native map app schemes (geo: for Android, comgooglemaps:// for iOS,
+// maps:// for Apple Maps) so taps open the user's installed map app directly.
+// Falls back to the web URL above when the native scheme can't be used.
+
+/**
+ * Try to detect mobile OS at runtime. Returns "ios" | "android" | "other".
+ * Safe to call on the client; on the server returns "other".
+ */
+export function detectMobileOS(): "ios" | "android" | "other" {
+  if (typeof navigator === "undefined") return "other";
+  const ua = navigator.userAgent || "";
+  if (/iPhone|iPad|iPod/i.test(ua)) return "ios";
+  if (/Android/i.test(ua)) return "android";
+  return "other";
+}
+
+/**
+ * Build a native map URL that the user's installed map app can open.
+ * - iOS: comgooglemaps://?q=lat,lng&center=lat,lng (Google Maps if installed;
+ *   iOS will fall back to Apple Maps automatically if Google Maps isn't there
+ *   and we also expose a maps:// URL via getAppleMapsUrl below).
+ * - Android: geo:lat,lng?q=lat,lng(Name) — any registered map handler
+ *   (Google Maps / Amap / Baidu / Tencent) will pick it up.
+ *
+ * Returns empty string on server / desktop so the caller can fall back to web URL.
+ */
+export function getNativeMapUrl(
+  lat: number,
+  lng: number,
+  name?: string,
+  os?: "ios" | "android" | "other",
+): string {
+  const detected = os ?? detectMobileOS();
+  const encodedName = name ? encodeURIComponent(name) : "";
+  if (detected === "ios") {
+    const namePart = encodedName ? `(${encodedName})` : "";
+    return `comgooglemaps://?q=${lat},${lng}${namePart}&center=${lat},${lng}&zoom=16`;
+  }
+  if (detected === "android") {
+    const q = encodedName ? `${lat},${lng}(${encodedName})` : `${lat},${lng}`;
+    return `geo:${lat},${lng}?q=${q}`;
+  }
+  return "";
+}
+
+/**
+ * Apple Maps universal URL — works on iOS even when Google Maps is not installed.
+ * Use as a final fallback on iOS.
+ */
+export function getAppleMapsUrl(lat: number, lng: number, name?: string): string {
+  const q = name ? encodeURIComponent(name) : `${lat},${lng}`;
+  return `maps://?q=${q}&ll=${lat},${lng}`;
+}

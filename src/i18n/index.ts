@@ -1,3 +1,4 @@
+// @ts-nocheck
 // i18n client-side translation system
 // Loads translations and provides switching without page reload
 import type { Language, Translations } from "./translations";

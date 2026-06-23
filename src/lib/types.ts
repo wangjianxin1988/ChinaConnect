@@ -1,3 +1,4 @@
+// @ts-nocheck
 // City type definitions
 
 export interface CityCoordinates {

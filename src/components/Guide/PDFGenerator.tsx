@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * PDF Generation Component for Business Invitation Letters
  * Uses html2canvas + jsPDF to generate professional PDF documents

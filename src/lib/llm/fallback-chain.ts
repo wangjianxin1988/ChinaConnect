@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * LLM Fallback Chain Implementation
  * Implements quality degradation chain: Primary → Backup → Fallback

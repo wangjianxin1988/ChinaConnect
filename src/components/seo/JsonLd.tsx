@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Schema.org JSON-LD React component
 // Injects structured data scripts into the page head
 

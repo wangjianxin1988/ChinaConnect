@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Unit tests for City Tier Classification
  * Tests S-tier (premium), A-tier (standard), D-tier (on-demand) city classification

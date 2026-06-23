@@ -14,6 +14,14 @@ export interface AppRecommendation {
   category: AppCategory;
   appStoreUrl?: string;
   androidUrl?: string;
+  /** Native iOS App Store scheme — opens the App Store app directly on iOS */
+  iosScheme?: string;
+  /** Native Android Play Store scheme — opens Play Store app directly on Android */
+  androidScheme?: string;
+  /** Android package name — derived from androidUrl when not provided */
+  androidPackage?: string;
+  /** Numeric iOS App Store ID — derived from appStoreUrl when not provided */
+  iosAppId?: string;
   hasEnglish: boolean;
   isEssential: boolean;
   affiliateLink?: string;
@@ -306,7 +314,7 @@ export const APP_RECOMMENDATIONS: AppRecommendation[] = [
       "Scan QR codes to enter metro stations in Shanghai and other cities. Links to Alipay/WeChat Pay.",
     icon: "🚇",
     category: "transport",
-    appStoreUrl: "https://apps.apple.com/app/metro%E5%A4%A7%E9%83%BD%E4%BC%9A/id1202750238",
+    appStoreUrl: "https://apps.apple.com/app/metro/id1202750238",
     androidUrl: "https://play.google.com/store/apps/details?id=com.stec.smartmetro",
     hasEnglish: false,
     isEssential: false,
@@ -408,4 +416,77 @@ export function getAppsByCategories(categories: AppCategory[]): AppRecommendatio
 
 export function getEnglishFriendlyApps(): AppRecommendation[] {
   return APP_RECOMMENDATIONS.filter((app) => app.hasEnglish);
+}
+
+// ─── Native scheme helpers ────────────────────────────────────────
+// Foreign users on iOS / Android should land in the App Store / Play Store
+// app directly, not in a browser tab that re-launches the store. These
+// helpers derive the native scheme from the existing web URLs.
+
+/**
+ * Pull the numeric iOS App Store ID out of an apps.apple.com URL.
+ * Returns null if the URL is malformed.
+ * Example: ".../id414478124" -> "414478124"
+ */
+export function extractIosAppId(appStoreUrl?: string): string | null {
+  if (!appStoreUrl) return null;
+  const m = appStoreUrl.match(/\/id(\d+)/);
+  return m ? m[1] : null;
+}
+
+/**
+ * Pull the Android package name out of a play.google.com URL.
+ * Example: "...?id=com.tencent.mm" -> "com.tencent.mm"
+ */
+export function extractAndroidPackage(androidUrl?: string): string | null {
+  if (!androidUrl) return null;
+  const m = androidUrl.match(/[?&]id=([\w.]+)/);
+  return m ? m[1] : null;
+}
+
+/**
+ * Build the native iOS App Store scheme: itms-apps://itunes.apple.com/app/id{ID}
+ * This always works on iOS, even when the App Store app is not pre-installed
+ * (it is on every iPhone), so the user lands directly in the store view.
+ */
+export function getIosScheme(app: AppRecommendation): string | null {
+  if (app.iosScheme) return app.iosScheme;
+  const id = app.iosAppId ?? extractIosAppId(app.appStoreUrl);
+  if (!id) return null;
+  return `itms-apps://itunes.apple.com/app/id${id}`;
+}
+
+/**
+ * Build the native Android Play Store scheme. We use the intent:// URL form
+ * so the OS will hand off to the Play Store app if installed, and the system
+ * browser otherwise.
+ *
+ *   intent://details?id=com.tencent.mm#Intent;scheme=market;...;end
+ */
+export function getAndroidScheme(app: AppRecommendation): string | null {
+  if (app.androidScheme) return app.androidScheme;
+  const pkg = app.androidPackage ?? extractAndroidPackage(app.androidUrl);
+  if (!pkg) return null;
+  return `intent://details?id=${pkg}#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=${encodeURIComponent(`https://play.google.com/store/apps/details?id=${pkg}`)};end`;
+}
+
+/**
+ * One-stop helper for rendering download links in the UI.
+ * Returns the best URL for the current OS, or the web URL as fallback.
+ *
+ *   os = "ios"      -> native iOS scheme (App Store app) if available
+ *   os = "android"  -> native Android intent (Play Store app) if available
+ *   os = "other"    -> web URL
+ */
+export function getDownloadLink(
+  app: AppRecommendation,
+  os: "ios" | "android" | "other",
+): string | null {
+  if (os === "ios") {
+    return getIosScheme(app) ?? app.appStoreUrl ?? null;
+  }
+  if (os === "android") {
+    return getAndroidScheme(app) ?? app.androidUrl ?? null;
+  }
+  return app.appStoreUrl ?? app.androidUrl ?? null;
 }

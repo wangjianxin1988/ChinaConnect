@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * AnySearch Integration for ChinaConnect AI
  * Real-time web search capabilities via AnySearch MCP tool

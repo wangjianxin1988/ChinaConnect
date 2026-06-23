@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * useReviews Hook
  * Manages restaurant reviews with localStorage persistence

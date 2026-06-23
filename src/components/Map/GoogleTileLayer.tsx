@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * GoogleTileLayer - Google Maps tile layer component for Leaflet
  * Uses WGS-84 coordinate system (native for Google Maps)

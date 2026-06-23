@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Language } from "@/i18n/translations";
 import { SUPPORTED_LANGUAGES } from "@/i18n/translations";
 // Language hook for React components

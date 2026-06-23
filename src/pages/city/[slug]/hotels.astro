@@ -1,4 +1,5 @@
 ---
+
 /**
  * Dedicated Hotels Page
  * /city/[slug]/hotels
@@ -13,7 +14,7 @@ import { HotelCard } from "@/components/hotel/HotelCard";
 import { HotelCategoryFilter } from "@/components/hotel/HotelCategoryFilter";
 import { citySlugs, getCityBySlug } from "@/data/cities/index";
 import { getHotelsByCity, getHotelCategoryCounts, getHotelCount } from "@/data/hotels";
-import { HOTEL_CATEGORY_CONFIG, type HotelCategory } from "@/types/accommodation";
+import { HOTEL_CATEGORY_CONFIG, type HotelCategory } from "@/components/hotel/HotelCard";
 import { getLangFromUrl } from "@/i18n/utils";
 
 export function getStaticPaths() {
@@ -32,8 +33,27 @@ const hotels = getHotelsByCity(slug as string);
 const categoryCounts = getHotelCategoryCounts(slug as string);
 const totalCount = getHotelCount(slug as string);
 
-const pageTitle = `${city.nameEn} Hotels - All Categories | ChinaConnect`;
-const pageDescription = `Find the perfect hotel in ${city.nameEn}. Browse luxury, mid-range, budget, hostels, love hotels, and esports hotels. ${totalCount} options available.`;
+// Read ?category= from URL so users landing from a category card on the city
+// home page land on the matching filtered view.
+const VALID_CATEGORIES: HotelCategory[] = [
+  "luxury", "mid_range", "budget", "hostel", "love_hotel", "esports_hotel",
+];
+const requestedCategory = Astro.url.searchParams.get("category");
+const initialCategory: HotelCategory | null =
+  requestedCategory && VALID_CATEGORIES.includes(requestedCategory as HotelCategory)
+    ? (requestedCategory as HotelCategory)
+    : null;
+const initialHotels = initialCategory
+  ? hotels.filter((h) => h.category === initialCategory)
+  : hotels;
+
+const pageTitle = initialCategory
+  ? `${city.nameEn} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelZh} Hotels | ChinaConnect`
+  : `${city.nameEn} Hotels - All Categories | ChinaConnect`;
+const totalFiltered = initialHotels.length;
+const pageDescription = initialCategory
+  ? `Browse ${totalFiltered} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelEn} hotels in ${city.nameEn}. Open in map app, tap to call.`
+  : `Find the perfect hotel in ${city.nameEn}. Browse luxury, mid-range, budget, hostels, love hotels, and esports hotels. ${hotels.length} options available.`;
 ---
 
 <BaseLayout
@@ -88,21 +108,20 @@ const pageDescription = `Find the perfect hotel in ${city.nameEn}. Browse luxury
     <!-- Category Filter -->
     <div class="mb-8">
       <HotelCategoryFilter
-        activeCategory={null}
+        activeCategory={initialCategory}
         categoryCounts={categoryCounts}
         client:visible
       />
     </div>
 
-    <!-- Hotel Grid -->
+    <!-- Hotel Grid (pre-filtered on the server when ?category= is set) -->
     <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {hotels.map((hotel) => (
+      {initialHotels.map((hotel) => (
         <div class="hotel-item" data-category={hotel.category}>
           <HotelCard hotel={hotel} client:visible />
         </div>
       ))}
     </div>
-
     <!-- Empty State -->
     <div id="empty-state" class="hidden text-center py-16">
       <span class="text-6xl mb-4 block">🏨</span>
@@ -125,46 +144,61 @@ const pageDescription = `Find the perfect hotel in ${city.nameEn}. Browse luxury
   </div>
 </BaseLayout>
 
-<script is:inline>
-// Category filtering
-document.addEventListener('DOMContentLoaded', function() {
-  const filterButtons = document.querySelectorAll('[data-filter-category]');
-  const hotelItems = document.querySelectorAll('.hotel-item');
-  const emptyState = document.getElementById('empty-state');
-  const hotelGrid = document.getElementById('hotel-grid');
+<script>
+  // Category filtering for the React-rendered HotelCategoryFilter.
+  // The filter component renders buttons with aria-pressed; we listen to clicks
+  // on them and toggle visibility of the pre-rendered hotel cards.
+  // Works under both regular page load and Astro view transitions.
+  function initHotelFilter() {
+    const filterBar = document.querySelector('[data-hotel-filter-bar]');
+    const hotelItems = document.querySelectorAll('.hotel-item');
+    const emptyState = document.getElementById('empty-state');
+    const hotelGrid = document.getElementById('hotel-grid');
+    if (!filterBar || !hotelItems.length) return;
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const category = this.dataset.filterCategory;
-      
-      // Update active state
-      filterButtons.forEach(b => {
-        b.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-50');
-        b.classList.add('bg-white');
-      });
-      this.classList.add('ring-2', 'ring-blue-500', 'bg-blue-50');
-      this.classList.remove('bg-white');
-
-      // Filter hotels
-      let visibleCount = 0;
-      hotelItems.forEach(item => {
-        if (!category || category === 'all' || item.dataset.category === category) {
-          item.style.display = '';
-          visibleCount++;
+    const buttons = filterBar.querySelectorAll('button[aria-pressed]');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category || 'all';
+        // Sync aria-pressed visual state across siblings
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        // Toggle card visibility
+        let visible = 0;
+        hotelItems.forEach((item) => {
+          const itemCat = item.getAttribute('data-category');
+          if (cat === 'all' || itemCat === cat) {
+            (item as HTMLElement).style.display = '';
+            visible++;
+          } else {
+            (item as HTMLElement).style.display = 'none';
+          }
+        });
+        if (visible === 0) {
+          emptyState?.classList.remove('hidden');
+          hotelGrid?.classList.add('hidden');
         } else {
-          item.style.display = 'none';
+          emptyState?.classList.add('hidden');
+          hotelGrid?.classList.remove('hidden');
         }
+        // Update URL ?category= so the state is shareable / back-button works
+        try {
+          const url = new URL(window.location.href);
+          if (cat === 'all') {
+            url.searchParams.delete('category');
+          } else {
+            url.searchParams.set('category', cat);
+          }
+          window.history.replaceState({}, '', url);
+        } catch {}
       });
-
-      // Show/hide empty state
-      if (visibleCount === 0) {
-        emptyState.classList.remove('hidden');
-        hotelGrid.classList.add('hidden');
-      } else {
-        emptyState.classList.add('hidden');
-        hotelGrid.classList.remove('hidden');
-      }
     });
-  });
-});
+  }
+
+  // Run on regular load and on Astro view transitions
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHotelFilter);
+  } else {
+    initHotelFilter();
+  }
+  document.addEventListener('astro:page-load', initHotelFilter);
 </script>

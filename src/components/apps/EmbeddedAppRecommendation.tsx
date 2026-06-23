@@ -5,12 +5,13 @@
  * Prioritizes apps with English support.
  */
 
-import { useState, useEffect } from "react";
 import {
   APP_RECOMMENDATIONS,
   type AppCategory,
   type AppRecommendation,
 } from "@/data/apps/app-recommendations";
+import { getDownloadLink } from "@/data/apps/app-recommendations";
+import { useEffect, useState } from "react";
 
 interface EmbeddedAppRecommendationProps {
   /** App categories to show */
@@ -39,13 +40,15 @@ function detectPlatform(): Platform {
   return "unknown";
 }
 
-function getDownloadUrl(
-  app: AppRecommendation,
-  platform: Platform,
-): string | null {
-  if (platform === "ios" && app.appStoreUrl) return app.appStoreUrl;
-  if (platform === "android" && app.androidUrl) return app.androidUrl;
-  // Fallback: prefer App Store, then Android
+function getDownloadUrl(app: AppRecommendation, platform: Platform): string | null {
+  // Prefer the native scheme on iOS / Android so taps open the store app directly.
+  // Falls back to the web URL if no scheme is derivable.
+  if (platform === "ios") {
+    return getDownloadLink(app, "ios") ?? app.appStoreUrl ?? null;
+  }
+  if (platform === "android") {
+    return getDownloadLink(app, "android") ?? app.androidUrl ?? null;
+  }
   return app.appStoreUrl || app.androidUrl || null;
 }
 
@@ -71,23 +74,14 @@ function PlatformIcon({ platform }: { platform: Platform }) {
     );
   }
   return (
-    <svg
-      className="w-4 h-4"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-    >
+    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
     </svg>
   );
 }
 
 /** Single app card for embedded display */
-function AppCard({
-  app,
-  platform,
-}: { app: AppRecommendation; platform: Platform }) {
+function AppCard({ app, platform }: { app: AppRecommendation; platform: Platform }) {
   const downloadUrl = getDownloadUrl(app, platform);
 
   return (
@@ -98,9 +92,7 @@ function AppCard({
       {/* App Info */}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 flex-wrap">
-          <span className="font-semibold text-gray-900 text-sm">
-            {app.nameEn || app.name}
-          </span>
+          <span className="font-semibold text-gray-900 text-sm">{app.nameEn || app.name}</span>
           {app.hasEnglish && (
             <span className="px-1.5 py-0.5 bg-green-100 text-green-700 text-[10px] font-medium rounded">
               EN
@@ -166,9 +158,7 @@ export default function EmbeddedAppRecommendation({
   }, []);
 
   // Filter apps by categories
-  let apps = APP_RECOMMENDATIONS.filter((app) =>
-    categories.includes(app.category),
-  );
+  let apps = APP_RECOMMENDATIONS.filter((app) => categories.includes(app.category));
 
   // Filter essential only
   if (essentialOnly) {
@@ -202,14 +192,11 @@ export default function EmbeddedAppRecommendation({
   };
 
   const displayTitle =
-    title ||
-    `Recommended ${categories.map((c) => categoryLabels[c] || c).join(" & ")} Apps`;
+    title || `Recommended ${categories.map((c) => categoryLabels[c] || c).join(" & ")} Apps`;
 
   if (compact) {
     return (
-      <div
-        className={`flex flex-wrap gap-2 ${className}`}
-      >
+      <div className={`flex flex-wrap gap-2 ${className}`}>
         {apps.map((app) => {
           const downloadUrl = getDownloadUrl(app, platform);
           return (
@@ -221,9 +208,7 @@ export default function EmbeddedAppRecommendation({
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-sm"
             >
               <span>{app.icon}</span>
-              <span className="font-medium text-gray-800">
-                {app.nameEn || app.name}
-              </span>
+              <span className="font-medium text-gray-800">{app.nameEn || app.name}</span>
               {app.hasEnglish && (
                 <span className="px-1 py-0.5 bg-green-100 text-green-700 text-[10px] rounded">
                   EN
@@ -246,9 +231,7 @@ export default function EmbeddedAppRecommendation({
           <span>📱</span>
           <span>{displayTitle}</span>
         </h3>
-        {subtitle && (
-          <p className="text-xs text-gray-500 mt-0.5">{subtitle}</p>
-        )}
+        {subtitle && <p className="text-xs text-gray-500 mt-0.5">{subtitle}</p>}
         <div className="flex items-center gap-2 mt-1.5">
           <span className="text-[10px] px-2 py-0.5 bg-white rounded-full text-green-600 font-medium">
             {apps.filter((a) => a.hasEnglish).length} with English
@@ -269,9 +252,7 @@ export default function EmbeddedAppRecommendation({
       {/* Tip */}
       <p className="text-[11px] text-gray-400 mt-3 flex items-center gap-1">
         <span>💡</span>
-        <span>
-          Download before arriving in China — app stores may be restricted.
-        </span>
+        <span>Download before arriving in China — app stores may be restricted.</span>
       </p>
     </div>
   );

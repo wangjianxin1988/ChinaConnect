@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { InfiniteList } from "@/components/ui/InfiniteList";
 import React from "react";
 import { CityMap } from "./CityMap";

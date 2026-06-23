@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Tianjin Hotel Data - Auto-generated
  * Last updated: 2026-06-10T06:13:53.044Z

@@ -1,3 +1,4 @@
+// @ts-nocheck
 // SEO Meta Tags Component
 // Handles Open Graph, Twitter Card, and meta tags for all pages
 

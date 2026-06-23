@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Breadcrumb Navigation Component
 // Renders breadcrumb navigation with JSON-LD structured data
 

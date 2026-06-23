@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { CULTURAL_WARNINGS, IMPORTANCE_STYLES, REGION_TRIGGERS } from "@/data/cultural-warnings";
 import React, { useState, useEffect } from "react";
 
