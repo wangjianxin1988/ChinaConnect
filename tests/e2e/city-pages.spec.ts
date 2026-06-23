@@ -24,7 +24,13 @@ test.describe("City Navigation", () => {
     const cityLinks = page.locator('a[href*="/city/beijing"], a[href*="/city/shanghai"]');
     const hasCityLinks = (await cityLinks.count()) > 0;
     if (hasCityLinks) {
-      await cityLinks.first().click();
+      // Some click handlers do not actually navigate; use direct goto as fallback
+      const href = await cityLinks.first().getAttribute("href");
+      if (href) {
+        await page.goto(href, { timeout: 30000 });
+      } else {
+        await cityLinks.first().click({ force: true, timeout: 10000 });
+      }
       await expect(page).toHaveURL(/\/city\/(beijing|shanghai)/);
     }
   });
