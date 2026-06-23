@@ -67,7 +67,7 @@ export default function AIChatPage() {
             }} />
           </div>
 
-          <div className="relative container-custom py-24 md:py-36 lg:py-44">
+          <div className="relative container-custom py-20 md:py-28 lg:py-32">
             <div className="max-w-3xl mx-auto text-center">
               {/* Status badge */}
               <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full mb-10">
@@ -118,7 +118,7 @@ export default function AIChatPage() {
 
       {/* ===== Example Prompts (before chat starts) ===== */}
       {!chatStarted && (
-        <section className="bg-gray-50 py-16 md:py-24">
+        <section className="bg-gray-50 py-12 md:py-16">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-3">
@@ -146,27 +146,83 @@ export default function AIChatPage() {
         </section>
       )}
 
-      {/* ===== Chat Interface ===== */}
-      <section className={chatStarted ? "py-0" : "py-0"}>
-        <div className={chatStarted ? "max-w-5xl mx-auto px-4 py-6" : "max-w-5xl mx-auto px-4 pb-16"}>
-          {/* Membership Status */}
-          <div className="mb-6">
-            <MembershipStatusBar />
-          </div>
+      {/* ===== Three-column Main Grid ===== */}
+      <section className="bg-white">
+        <div className="container-custom py-8 md:py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 lg:gap-8">
+            {/* Main chat area: 70% on desktop */}
+            <div className="lg:col-span-7 min-w-0">
+              <div className="mb-4">
+                <MembershipStatusBar />
+              </div>
 
-          {/* Usage Exhausted Banner */}
-          {showExhaustedBanner && (
-            <div className="mb-6">
-              <UsageExhaustedBanner onUpgrade={() => window.location.href = "/pricing"} />
+              {showExhaustedBanner && (
+                <div className="mb-4">
+                  <UsageExhaustedBanner onDismiss={() => setShowExhaustedBanner(false)} />
+                </div>
+              )}
+
+              <div
+                className={
+                  chatStarted
+                    ? "bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
+                    : "bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
+                }
+              >
+                <AIChat
+                  externalPrompt={externalPrompt}
+                  onExternalPromptConsumed={() => setExternalPrompt(null)}
+                />
+              </div>
             </div>
-          )}
 
-          {/* Chat Component */}
-          <div className={chatStarted ? "bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden" : ""}>
-            <AIChat
-              externalPrompt={externalPrompt}
-              onChatStart={() => setChatStarted(true)}
-            />
+            {/* Membership sidebar: 30% on desktop, sticky */}
+            <aside className="lg:col-span-3 min-w-0">
+              <div className="lg:sticky lg:top-20 space-y-4">
+                <SubscriptionCard compact />
+
+                <div className="bg-white border border-gray-200 rounded-2xl p-5">
+                  <h3 className="text-sm font-semibold text-gray-900 mb-2">
+                    Why Pro?
+                  </h3>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 mt-0.5">&#10003;</span>
+                      <span>Up to 40 AI requests / month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 mt-0.5">&#10003;</span>
+                      <span>Save and export itineraries as PDF</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 mt-0.5">&#10003;</span>
+                      <span>Conversation history</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 mt-0.5">&#10003;</span>
+                      <span>Premium customization</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="/pricing"
+                    className="mt-4 block w-full text-center px-4 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl text-sm font-semibold hover:from-purple-700 hover:to-indigo-700 transition-all"
+                  >
+                    See all plans &#8594;
+                  </a>
+                </div>
+
+                <div className="bg-gradient-to-br from-slate-50 to-gray-100 border border-gray-200 rounded-2xl p-5 text-sm text-gray-600">
+                  <p className="font-semibold text-gray-900 mb-1">Need human help?</p>
+                  <p className="mb-3">Your account dashboard has billing history and invoice downloads.</p>
+                  <a
+                    href="/account"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Open account &#8594;
+                  </a>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
