@@ -4,7 +4,22 @@
 import { type Page, expect, test } from "@playwright/test";
 
 async function waitForHydration(page: Page) {
-  await page.waitForTimeout(2000);
+  // AI page (/ai) is client:only="react" so SSR HTML has no h1 �� wait for the React
+  // bundle to mount the AI Concierge heading. For other pages (homepage, city, etc.)
+  // we just wait for body content + animate-spin to clear to avoid hanging on selectors
+  // that are scoped to the AI page only.
+  const url = page.url();
+  if (/\/ai(\b|$|\?|#|\/)/.test(url)) {
+    await page
+      .locator("h1:has-text('AI Concierge'), h1:has-text('AI Assistant'), h1:has-text('AI Travel')")
+      .first()
+      .waitFor({ state: "visible", timeout: 30000 })
+      .catch(() => {});
+  } else {
+    await page
+      .waitForFunction(() => document.body && document.body.innerText.length > 200, { timeout: 15000 })
+      .catch(() => {});
+  }
   await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 }).catch(() => {});
 }
 
@@ -47,7 +62,7 @@ test.describe("AI Chat Page - Core Load", () => {
     await waitForHydration(page);
 
     const heading = page.locator("h1, h2").first();
-    await expect(heading).toBeVisible({ timeout: 10000 });
+    await expect(heading).toBeVisible({ timeout: 30000 });
   });
 
   test("has page content", async ({ page }) => {
@@ -106,17 +121,17 @@ test.describe("AI Chat Interface", () => {
     await page.goto("/ai", { timeout: 30000 });
     await waitForHydration(page);
 
-    const chatInput = page.locator("textarea").first();
-    const hasTextarea = (await chatInput.count()) > 0;
+    // Wait for client-side React mount (h1 with "AI Concierge")
+    await page.locator("h1:has-text('AI Concierge')").first().waitFor({ state: "visible", timeout: 15000 });
 
-    if (hasTextarea) {
-      await expect(chatInput).toBeVisible({ timeout: 5000 });
-    } else {
-      // Fallback to text input
-      const textInput = page.locator('input[type="text"]').first();
-      const hasTextInput = (await textInput.count()) > 0;
-      expect(hasTextInput).toBeTruthy();
+    // AI chat starts with example prompts; clicking one triggers chatStarted and reveals the textarea
+    const promptButton = page.locator("button:has-text('Plan a'), button:has-text('Best local'), button:has-text('How to travel')").first();
+    if ((await promptButton.count()) > 0) {
+      await promptButton.click({ timeout: 5000 }).catch(() => {});
     }
+
+    const chatInput = page.locator("textarea").first();
+    await expect(chatInput).toBeVisible({ timeout: 15000 });
   });
 
   test("chat input is focusable", async ({ page }) => {
@@ -239,8 +254,7 @@ test.describe("Navigation & Links", () => {
     await waitForHydration(page);
 
     // Check for at least one navigation link
-    const navLinks = page.locator("nav a, header a").all();
-    const linkCount = await navLinks.length;
+    const linkCount = await page.locator("nav a, header a").count();
 
     // The page should have a nav with at least some links
     expect(linkCount).toBeGreaterThanOrEqual(0); // 0 is ok if nav is not present
@@ -279,18 +293,20 @@ test.describe("AI Chat Interactions", () => {
     await page.goto("/ai", { timeout: 30000 });
     await waitForHydration(page);
 
-    const submitBtn = page.locator(
-      'button[type="submit"], button:has-text("Send"), button:has-text("Submit"), button:has-text("Ask")',
-    );
-    const hasSubmit = (await submitBtn.count()) > 0;
+    // Wait for client-side React mount (h1 with "AI Concierge")
+    await page.locator("h1:has-text('AI Concierge')").first().waitFor({ state: "visible", timeout: 15000 });
 
-    if (hasSubmit) {
-      await expect(submitBtn.first()).toBeVisible();
-    } else {
-      // Submit might be triggered by Enter key
-      const chatInput = page.locator("textarea");
-      expect(await chatInput.count()).toBeGreaterThan(0);
+    // Click a prompt to trigger chatStarted and reveal the chat input + submit
+    const promptButton = page.locator("button:has-text('Plan a'), button:has-text('Best local'), button:has-text('How to travel')").first();
+    if ((await promptButton.count()) > 0) {
+      await promptButton.click({ timeout: 5000 }).catch(() => {});
     }
+
+    // After chatStarted the chat input area (with Send button) appears
+    const submitBtn = page.locator(
+      'button[type="submit"], button:has-text("Send"), button:has-text("Submit")',
+    );
+    await expect(submitBtn.first()).toBeVisible({ timeout: 15000 });
   });
 
   test("chat input supports multiline text", async ({ page }) => {
@@ -401,10 +417,11 @@ test.describe("AI Chat - Cross-Page Context", () => {
   });
 
   test("AI chat is linked from city pages", async ({ page }) => {
-    await page.goto("/city/beijing", { timeout: 30000 });
+    test.setTimeout(90000);
+    // City page is the slowest to first-compile in dev �� give the navigation extra time
+    await page.goto("/city/beijing", { timeout: 60000 });
     await waitForHydration(page);
 
-    const _aiLink = page.locator('a[href="/ai"]');
     // AI might be in global nav
     const hasGlobalAI = (await page.locator("text=/AI|assistant|chat/i").count()) > 0;
     expect(hasGlobalAI).toBeTruthy();
