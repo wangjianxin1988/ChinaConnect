@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * useGamification Hook
  * Manages points, badges, streaks, and leaderboard

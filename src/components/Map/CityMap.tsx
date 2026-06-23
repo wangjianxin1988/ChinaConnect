@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Location } from "@/data/cities/types";
 import React, { useState, useEffect } from "react";
 

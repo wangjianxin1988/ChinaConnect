@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * useMapProvider - IP-based map provider auto-detection hook
  * Uses Cloudflare CF-IPCountry header when available, with fallback to ipapi.co

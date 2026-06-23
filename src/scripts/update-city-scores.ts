@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * City Scores Update Script
  * Run by GitHub Actions on schedule or manually

@@ -1,4 +1,5 @@
 ---
+
 import { CitiesListClient } from "@/components/city/CitiesListClient";
 import { cities, citiesMeta } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -14,12 +15,12 @@ const citiesSchemas = [
   generateCollectionPageSchema({
     name: "Chinese Cities on ChinaConnect",
     description: "Explore 12+ Chinese cities with ChinaConnect - from ancient capitals like Beijing and Xi'an to modern metropolises like Shanghai and Shenzhen. Find Michelin restaurants, Black Pearl establishments, and local favorites.",
-    url: "https://chinaconnect.xyz/cities",
+    url: "https://chinaconnect.com/cities",
     numberOfItems: citiesMeta.length,
   }),
   generateBreadcrumbSchema([
-    { name: "Home", url: "https://chinaconnect.xyz/" },
-    { name: "Cities", url: "https://chinaconnect.xyz/cities" },
+    { name: "Home", url: "https://chinaconnect.com/" },
+    { name: "Cities", url: "https://chinaconnect.com/cities" },
   ]),
 ];
 ---

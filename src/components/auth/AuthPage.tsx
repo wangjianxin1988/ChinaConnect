@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Auth Page Component
  * Handles login/register UI

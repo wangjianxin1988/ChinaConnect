@@ -1,4 +1,5 @@
 ---
+
 import { getCityBySlug, citySlugs } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -27,7 +28,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
   description={pageDescription}
   lang={lang}
   meta={{
-    canonicalUrl: `https://chinaconnect.xyz/city/${city.slug}/attractions`,
+    canonicalUrl: `https://chinaconnect.com/city/${city.slug}/attractions`,
   }}
 >
   <!-- Hero Section -->

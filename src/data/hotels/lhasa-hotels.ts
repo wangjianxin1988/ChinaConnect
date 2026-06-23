@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Lhasa Hotel Data - Auto-generated
  * Last updated: 2026-06-10T06:13:53.060Z

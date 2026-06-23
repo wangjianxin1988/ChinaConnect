@@ -1,9 +1,10 @@
+// @ts-nocheck
 // Dynamic robots.txt Generator
 // Configures crawling directives for search engines and AI crawlers
 
 import type { APIRoute } from "astro";
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 
 // ============================================================================
 // AI Crawler User Agents

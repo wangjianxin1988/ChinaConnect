@@ -33,3 +33,9 @@ build/
 *.pem
 *.key
 credentials.json.supabase-schema/
+
+# Test artifacts
+test-results/
+playwright-report/
+coverage/
+

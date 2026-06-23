@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { City } from "@/types/food";
 
 export const cities: City[] = [

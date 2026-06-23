@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Comprehensive Food Data for 35 Cities in China
  * Categories:

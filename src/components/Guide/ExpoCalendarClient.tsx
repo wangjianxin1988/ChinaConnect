@@ -1,4 +1,5 @@
 import { EXPO_CALENDAR, EXPO_CATEGORIES, YEAR_MONTHS } from "@/data/guide/business/expo-calendar";
+import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
 
 export function ExpoCalendarClient() {
@@ -28,6 +29,7 @@ export function ExpoCalendarClient() {
               Plan your business trips around China&apos;s most important trade shows and
               exhibitions. From the Canton Fair to industry-specific events across major cities.
             </p>
+            <LastVerifiedStamp dataKey="expo-calendar" />
           </div>
         </div>
       </div>

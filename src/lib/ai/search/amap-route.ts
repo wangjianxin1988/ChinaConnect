@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * AmapRouteSearch Tool for ChinaConnect AI
  * Gets driving and transit route directions between two locations

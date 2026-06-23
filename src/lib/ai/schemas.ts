@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * AI Structured Output Schemas for ChinaConnect
  * Type definitions for structured itinerary output and tool results

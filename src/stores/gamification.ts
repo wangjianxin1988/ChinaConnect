@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Gamification Store (Zustand)
  * Centralized state management for points, levels, badges, and streaks

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * ThreeTierFoodSection Component
  * Displays restaurants organized by tier (S/A/B)

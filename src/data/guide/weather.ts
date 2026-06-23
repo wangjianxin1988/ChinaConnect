@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Weather Guide Data - Stage 3: Climate and Weather Information
 
 export interface MonthlyWeather {

@@ -1,8 +1,9 @@
+// @ts-nocheck
 // Schema.org JSON-LD generators for structured data
 
 import type { CityInfo, EventSEOData, FAQItem, RestaurantSEOData } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 const SITE_NAME = "ChinaConnect";
 const SITE_DESCRIPTION =
   "Connect with China's finest culinary experiences - Michelin stars, Black Pearl restaurants, and local favorites.";

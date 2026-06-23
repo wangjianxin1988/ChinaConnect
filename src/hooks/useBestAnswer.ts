@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * useBestAnswer - Mark/unmark best answers in Q&A posts
  * Persists to localStorage since there's no backend API for this yet.

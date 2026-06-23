@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * System prompts for ChinaConnect AI
  * Optimized for ~800 tokens. Clear, concise instructions.

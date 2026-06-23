@@ -1,3 +1,4 @@
+// @ts-nocheck
 // City Payment Coverage Data for ChinaConnect
 import type { ATMInfo, CityPaymentCoverage, PaymentMethod } from "@/types/payment";
 

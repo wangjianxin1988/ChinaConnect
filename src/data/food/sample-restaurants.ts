@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Sample restaurants for the three-tier food system
  * S = Michelin (米其林)

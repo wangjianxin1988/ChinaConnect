@@ -442,7 +442,7 @@ export const EMBASSY_INFO: EmbassyInfo[] = [
     addressCn: "北京市朝阳区安家楼路55号",
     phone: "+86-10-8531-3000",
     emergency: "+86-10-8531-4000",
-    website: "https://china.usembassy.gov",
+    website: "https://www.state.gov/countries-areas/china/",
   },
   {
     country: "United Kingdom",
@@ -462,7 +462,7 @@ export const EMBASSY_INFO: EmbassyInfo[] = [
     addressCn: "北京市朝阳区东直门北大街19号",
     phone: "+86-10-5139-4000",
     emergency: "+86-10-5139-4000",
-    website: "https://www.canada.ca/china",
+    website: "https://www.international.gc.ca/country-pays/china-chine/index.aspx?lang=eng",
   },
   {
     country: "Australia",

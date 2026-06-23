@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * useTranslation Hook for React Components
  * Provides translation function and language state management

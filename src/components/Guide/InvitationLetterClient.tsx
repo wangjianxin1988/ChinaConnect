@@ -4,6 +4,7 @@
  */
 
 import { INVITATION_TEMPLATES } from "@/data/guide/business/invitation-letter";
+import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React, { useState, useRef, useEffect } from "react";
@@ -257,6 +258,7 @@ export function InvitationLetterClient() {
               Download ready-to-use invitation letters for visa applications, trade visits, and
               business meetings. Fill in the fields and download as PDF or print.
             </p>
+            <LastVerifiedStamp dataKey="invitation-letter" />
           </div>
         </div>
       </div>

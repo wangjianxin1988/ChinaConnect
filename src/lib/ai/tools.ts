@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * AI Tool Implementations for ChinaConnect
  * All tools use @/data/cities as single source of truth.

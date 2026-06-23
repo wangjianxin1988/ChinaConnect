@@ -1,4 +1,5 @@
 import { ETIQUETTE_DATA } from "@/data/guide/business/etiquette";
+import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
 
 export function EtiquetteClient() {
@@ -24,6 +25,7 @@ export function EtiquetteClient() {
               Master the unwritten rules of Chinese business culture. First impressions matter —
               knowing these norms will help you earn respect and build lasting relationships.
             </p>
+            <LastVerifiedStamp dataKey="etiquette" />
           </div>
         </div>
       </div>

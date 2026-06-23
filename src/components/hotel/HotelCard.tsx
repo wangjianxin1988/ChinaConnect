@@ -219,32 +219,23 @@ export function HotelCard({ hotel, onClick, compact = false }: HotelCardProps) {
 
         {/* Name */}
         <h3
-          className={`font-bold text-gray-900 leading-tight ${
-            compact ? "text-base" : "text-lg"
-          }`}
+          className={`font-bold text-gray-900 leading-tight ${compact ? "text-base" : "text-lg"}`}
         >
           {hotel.name}
         </h3>
-        {hotel.nameEn && (
-          <p className="text-sm text-gray-500 mt-0.5">{hotel.nameEn}</p>
-        )}
+        {hotel.nameEn && <p className="text-sm text-gray-500 mt-0.5">{hotel.nameEn}</p>}
 
         {/* Price row (compact / no-image mode) */}
         {(compact || !hotel.imageUrl) && priceDisplay && (
           <div className="mt-2">
-            <span className="text-lg font-bold text-orange-600">
-              {priceDisplay}
-            </span>
+            <span className="text-lg font-bold text-orange-600">{priceDisplay}</span>
             <span className="text-xs text-gray-400 ml-1">/晚</span>
           </div>
         )}
 
         {/* Location */}
         {hotel.address && (
-          <p
-            className="text-sm text-gray-500 mt-2 line-clamp-1"
-            title={hotel.address}
-          >
+          <p className="text-sm text-gray-500 mt-2 line-clamp-1" title={hotel.address}>
             📍 {hotel.district ? `${hotel.district} · ` : ""}
             {hotel.address}
           </p>
@@ -253,16 +244,14 @@ export function HotelCard({ hotel, onClick, compact = false }: HotelCardProps) {
         {/* Highlights / Tags */}
         {hotel.highlights && hotel.highlights.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mt-2.5">
-            {hotel.highlights
-              .slice(0, compact ? 3 : 5)
-              .map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs px-2 py-0.5 bg-gray-50 text-gray-600 rounded-full border border-gray-100"
-                >
-                  {tag}
-                </span>
-              ))}
+            {hotel.highlights.slice(0, compact ? 3 : 5).map((tag) => (
+              <span
+                key={tag}
+                className="text-xs px-2 py-0.5 bg-gray-50 text-gray-600 rounded-full border border-gray-100"
+              >
+                {tag}
+              </span>
+            ))}
             {!compact && hotel.highlights.length > 5 && (
               <span className="text-xs px-2 py-0.5 bg-gray-100 text-gray-400 rounded-full">
                 +{hotel.highlights.length - 5}
@@ -278,14 +267,10 @@ export function HotelCard({ hotel, onClick, compact = false }: HotelCardProps) {
               <span className="w-5 h-5 bg-orange-200 rounded-full flex items-center justify-center text-[10px] font-bold text-orange-700">
                 {hotel.bloggerName.charAt(0)}
               </span>
-              <span className="text-xs font-semibold text-gray-700">
-                {hotel.bloggerName} 推荐
-              </span>
+              <span className="text-xs font-semibold text-gray-700">{hotel.bloggerName} 推荐</span>
             </div>
             {hotel.bloggerReason && (
-              <p className="text-xs text-gray-600 leading-relaxed">
-                {hotel.bloggerReason}
-              </p>
+              <p className="text-xs text-gray-600 leading-relaxed">{hotel.bloggerReason}</p>
             )}
           </div>
         )}

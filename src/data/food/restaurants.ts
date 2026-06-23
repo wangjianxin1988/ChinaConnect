@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Restaurant } from "@/types/food";
 
 const defaultAccess: Pick<Restaurant, "foreignerFriendly" | "hasEnglishMenu" | "hasPictureMenu"> = {

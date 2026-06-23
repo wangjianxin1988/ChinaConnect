@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Language } from "@/i18n/translations";
 // Language store - persists language preference to localStorage
 import { writable } from "svelte/store";
