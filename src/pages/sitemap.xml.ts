@@ -5,7 +5,7 @@
 import { SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { APIRoute } from "astro";
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 
 // ============================================================================
 // City Data (inline to avoid import issues in static generation)

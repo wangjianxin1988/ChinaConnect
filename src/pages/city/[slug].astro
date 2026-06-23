@@ -72,7 +72,7 @@ const citySchema = {
     addressRegion: city.name,
   },
   population: city.population,
-  url: `https://chinaconnect.xyz/city/${city.slug}`,
+  url: `https://chinaconnect.com/city/${city.slug}`,
   photo: city.coverImage,
   aggregateRating:
     city.restaurants.length > 0
@@ -178,25 +178,25 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://chinaconnect.xyz",
+      item: "https://chinaconnect.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Cities",
-      item: "https://chinaconnect.xyz/#cities",
+      item: "https://chinaconnect.com/#cities",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: city.nameEn,
-      item: `https://chinaconnect.xyz/city/${city.slug}`,
+      item: `https://chinaconnect.com/city/${city.slug}`,
     },
   ],
 };
 
 // hreflang URLs for this city page
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 const enCityUrl = `${SITE_URL}/city/${city.slug}`;
 const zhCityUrl = `${SITE_URL}/zh/city/${city.slug}`;
 
@@ -250,7 +250,7 @@ const mapMarkers = [
   description={pageDescription}
   meta={{
     keywords,
-    canonicalUrl: `https://chinaconnect.xyz/city/${city.slug}`,
+    canonicalUrl: `https://chinaconnect.com/city/${city.slug}`,
   }}
   lang={lang}
 >

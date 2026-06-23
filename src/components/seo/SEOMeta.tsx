@@ -29,7 +29,7 @@ export interface SEOMetaProps {
   tags?: string[];
 }
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 const DEFAULT_SITE_NAME = "ChinaConnect";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 const DEFAULT_TWITTER_SITE = "@chinaconnect";
