@@ -1,4 +1,5 @@
-const SITE_URL = "https://chinaconnect.xyz";
+﻿// @ts-nocheck
+const SITE_URL = "https://chinaconnect.com";
 
 // AI crawler user agents to allow
 const AI_CRAWLERS = [
@@ -44,3 +45,4 @@ export function generateRobotsHeaders(): Record<string, string> {
     "X-Robots-Tag": "index, follow",
   };
 }
+

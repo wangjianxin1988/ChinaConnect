@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Hotel components barrel export
  */

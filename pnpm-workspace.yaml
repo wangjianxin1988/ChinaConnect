@@ -1,2 +1,12 @@
 allowBuilds:
-  esbuild: set this to true or false
+  '@biomejs/biome': true
+  core-js: true
+  esbuild: true
+  sharp: true
+  workerd: true
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - core-js
+  - esbuild
+  - sharp
+  - workerd

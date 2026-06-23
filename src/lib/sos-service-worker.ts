@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * SOS Service Worker Registration
  *

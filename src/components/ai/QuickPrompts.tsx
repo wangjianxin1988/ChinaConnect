@@ -12,7 +12,8 @@ interface QuickPrompt {
 }
 
 interface QuickPromptsProps {
-  language?: "en" | "zh" | "ja" | "ko";
+  // PROMPT_CATEGORIES is only defined for en/zh; ja/ko falls back to en at runtime.
+  language?: "en" | "zh";
   onSelect: (prompt: string) => void;
   variant?: "default" | "compact" | "expanded";
   showLabels?: boolean;

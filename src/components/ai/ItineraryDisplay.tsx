@@ -13,7 +13,8 @@ import React, { useState, useCallback } from "react";
 
 interface ItineraryDisplayProps {
   itinerary: SavedItinerary | null;
-  language?: "en" | "zh" | "ja" | "ko";
+  // LABEL table is only translated for en/zh; ja/ko falls back to en at runtime.
+  language?: "en" | "zh";
   onSave?: (name: string) => void;
   onExport?: (format: "text" | "json") => void;
   onShare?: () => void;
@@ -551,10 +552,11 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
   const [showSaveDialog, setShowSaveDialog] = useState(false);
 
   const handleSaveClick = useCallback(() => {
-    if (itinerary?.id?.startsWith("temp_")) {
+    if (!itinerary) return;
+    if (itinerary.id?.startsWith("temp_")) {
       setShowSaveDialog(true);
       setEditName(itinerary.name);
-    } else if (onSave && !itinerary?.id?.startsWith("temp_")) {
+    } else if (onSave) {
       onSave(itinerary.name);
     }
   }, [itinerary, onSave]);

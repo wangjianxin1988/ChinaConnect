@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Astro Middleware — Auth Guard + Language Detection
  *

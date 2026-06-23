@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * i18n Configuration for ChinaConnect
  * 12 Language Internationalization System

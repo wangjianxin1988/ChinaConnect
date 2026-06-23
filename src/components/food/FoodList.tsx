@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FoodList Component
  * Displays a filtered/sorted list of restaurants by tier

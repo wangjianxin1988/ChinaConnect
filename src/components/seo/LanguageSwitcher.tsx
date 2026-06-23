@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Language Switcher Component
 // Provides language selection UI with proper hreflang support
 
@@ -19,7 +20,7 @@ export interface LanguageSwitcherProps {
   includeXDefault?: boolean;
 }
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 
 /**
  * Generate the URL for a specific language

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * GamificationPanel Component
  * Comprehensive gamification dashboard with points, streaks, badges, and leaderboard

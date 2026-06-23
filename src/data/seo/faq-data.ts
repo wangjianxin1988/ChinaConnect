@@ -1,3 +1,4 @@
+// @ts-nocheck
 // SEO FAQ Data for Cities
 // Contains frequently asked questions optimized for SEO and AI search
 

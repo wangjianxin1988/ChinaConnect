@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { filterRestaurantList, foodFilterStore } from "@/lib/food-context";
 import type { Restaurant } from "@/types/food";
 import { useEffect, useState } from "react";

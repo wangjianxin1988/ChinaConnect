@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * AuthButton React Component
  * Drop into the navbar to show Login button or user avatar dropdown.

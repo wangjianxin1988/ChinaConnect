@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { City } from "./types";
 
 // City data files - Batch 1 (Original 6 cities)

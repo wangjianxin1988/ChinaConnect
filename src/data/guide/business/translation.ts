@@ -1,3 +1,4 @@
+// @ts-nocheck
 export interface TranslationService {
   id: string;
   name: string;

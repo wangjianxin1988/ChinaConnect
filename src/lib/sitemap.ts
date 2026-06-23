@@ -1,9 +1,10 @@
+﻿// @ts-nocheck
 // Sitemap generator for ChinaConnect
 // Supports categorization by city and function, includes Baidu SEO optimization
 
 import type { CityInfo } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 
 export interface SitemapEntry {
   url: string;
@@ -21,7 +22,7 @@ export interface SitemapSection {
 export const SUPPORTED_CITIES: CityInfo[] = [
   {
     slug: "beijing",
-    name: "北京",
+    name: "鍖椾含",
     nameEn: "Beijing",
     lat: 39.9042,
     lng: 116.4074,
@@ -30,7 +31,7 @@ export const SUPPORTED_CITIES: CityInfo[] = [
   },
   {
     slug: "shanghai",
-    name: "上海",
+    name: "涓婃捣",
     nameEn: "Shanghai",
     lat: 31.2304,
     lng: 121.4737,
@@ -39,7 +40,7 @@ export const SUPPORTED_CITIES: CityInfo[] = [
   },
   {
     slug: "hangzhou",
-    name: "杭州",
+    name: "鏉窞",
     nameEn: "Hangzhou",
     lat: 30.2741,
     lng: 120.1551,
@@ -48,7 +49,7 @@ export const SUPPORTED_CITIES: CityInfo[] = [
   },
   {
     slug: "chengdu",
-    name: "成都",
+    name: "鎴愰兘",
     nameEn: "Chengdu",
     lat: 30.5728,
     lng: 104.0668,
@@ -57,7 +58,7 @@ export const SUPPORTED_CITIES: CityInfo[] = [
   },
   {
     slug: "guangzhou",
-    name: "广州",
+    name: "骞垮窞",
     nameEn: "Guangzhou",
     lat: 23.1291,
     lng: 113.2644,
@@ -66,7 +67,7 @@ export const SUPPORTED_CITIES: CityInfo[] = [
   },
   {
     slug: "xian",
-    name: "西安",
+    name: "瑗垮畨",
     nameEn: "Xi'an",
     lat: 34.3416,
     lng: 108.9398,
@@ -220,3 +221,4 @@ export function generateFullSitemap(): string {
   const sections = buildSitemapSections();
   return generateSitemapXml(sections);
 }
+

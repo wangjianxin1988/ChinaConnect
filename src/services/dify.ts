@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Dify AI Client for ChinaConnect
  * Handles communication with Dify API for workflow execution

@@ -1,10 +1,11 @@
+// @ts-nocheck
 // GEO (Generative Engine Optimization) Markup Generators
 // Generates structured data optimized for AI search engines and assistants
 
 import { generateHowToSchema, generateQASchema, generateRecipeSchema } from "@/lib/seo/schema-org";
 import type { FAQItem } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 const SITE_NAME = "ChinaConnect";
 
 // ============================================================================

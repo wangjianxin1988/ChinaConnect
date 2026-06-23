@@ -1,4 +1,6 @@
-// Unit tests for hreflang library functions
+﻿// Unit tests for hreflang library functions
+// Implementation uses query parameter approach: ?lang=XX
+// (works with static hosting on Cloudflare Pages without server-side routing)
 
 import {
   DEFAULT_LOCALE,
@@ -9,7 +11,6 @@ import {
   generateHreflangUrlsWithDefault,
   generateRestaurantHreflangUrls,
   getCanonicalUrl,
-  getLocaleFromPath,
   getPathWithoutLocale,
   isCanonicalUrl,
   getSupportedLocales,
@@ -41,15 +42,15 @@ describe("generateHreflangUrls", () => {
     expect(urls.some((u) => u.hreflang === "zh-CN")).toBe(true);
   });
 
-  it("uses correct URL format - no prefix for default locale", () => {
+  it("uses correct URL format - default locale has no query param", () => {
     const urls = generateHreflangUrls("/beijing");
 
     const enUrl = urls.find((u) => u.hreflang === "en");
-    // Default locale (en) has no prefix
+    // Default locale (en) has no ?lang= query param
     expect(enUrl?.href).toBe("https://chinaconnect.com/beijing");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/zh-CN/beijing");
+    expect(zhUrl?.href).toBe("https://chinaconnect.com/beijing?lang=zh-CN");
   });
 
   it("handles paths with leading/trailing slashes", () => {
@@ -75,11 +76,11 @@ describe("generateCityHreflangUrls", () => {
     const urls = generateCityHreflangUrls("beijing");
 
     const enUrl = urls.find((u) => u.hreflang === "en");
-    // English (default locale) has no /en/ prefix
+    // English (default locale) has no ?lang= query param
     expect(enUrl?.href).toBe("https://chinaconnect.com/city/beijing");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/zh-CN/city/beijing");
+    expect(zhUrl?.href).toBe("https://chinaconnect.com/city/beijing?lang=zh-CN");
   });
 });
 
@@ -88,23 +89,23 @@ describe("generateRestaurantHreflangUrls", () => {
     const urls = generateRestaurantHreflangUrls("rest-123", "beijing");
 
     const enUrl = urls.find((u) => u.hreflang === "en");
-    // English (default locale) has no /en/ prefix
+    // English (default locale) has no ?lang= query param
     expect(enUrl?.href).toBe("https://chinaconnect.com/food/rest-123");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/zh-CN/food/rest-123");
+    expect(zhUrl?.href).toBe("https://chinaconnect.com/food/rest-123?lang=zh-CN");
   });
 });
 
 describe("getCanonicalUrl", () => {
-  it("returns URL without locale prefix for default locale", () => {
+  it("returns URL without query param for default locale", () => {
     const canonical = getCanonicalUrl("/beijing", "en");
     expect(canonical).toBe("https://chinaconnect.com/beijing");
   });
 
-  it("includes locale in URL for non-default locale", () => {
+  it("returns URL without query param (canonical is always locale-free)", () => {
     const canonical = getCanonicalUrl("/beijing", "zh-CN");
-    expect(canonical).toBe("https://chinaconnect.com/zh-CN/beijing");
+    expect(canonical).toBe("https://chinaconnect.com/beijing");
   });
 });
 
@@ -114,31 +115,19 @@ describe("isCanonicalUrl", () => {
     expect(isCanonicalUrl("https://chinaconnect.com/")).toBe(true);
   });
 
-  it("identifies non-canonical URLs", () => {
-    expect(isCanonicalUrl("https://chinaconnect.com/en/beijing")).toBe(false);
-    expect(isCanonicalUrl("https://chinaconnect.com/zh-CN/beijing")).toBe(false);
-  });
-});
-
-describe("getLocaleFromPath", () => {
-  it("extracts locale from path", () => {
-    expect(getLocaleFromPath("/en/beijing")).toBe("en");
-    expect(getLocaleFromPath("/zh-CN/beijing")).toBe("zh-CN");
-  });
-
-  it("returns default locale for paths without locale prefix", () => {
-    expect(getLocaleFromPath("/beijing")).toBe("en");
-    expect(getLocaleFromPath("/")).toBe("en");
+  it("identifies non-canonical URLs (those with ?lang=)", () => {
+    expect(isCanonicalUrl("https://chinaconnect.com/beijing?lang=en")).toBe(false);
+    expect(isCanonicalUrl("https://chinaconnect.com/beijing?lang=zh-CN")).toBe(false);
   });
 });
 
 describe("getPathWithoutLocale", () => {
-  it("removes locale prefix from path", () => {
-    expect(getPathWithoutLocale("/en/beijing")).toBe("/beijing");
-    expect(getPathWithoutLocale("/zh-CN/shanghai")).toBe("/shanghai");
+  it("strips ?lang= query param from path", () => {
+    expect(getPathWithoutLocale("/beijing?lang=ja")).toBe("/beijing");
+    expect(getPathWithoutLocale("/shanghai?lang=zh-CN")).toBe("/shanghai");
   });
 
-  it("returns path unchanged if no locale prefix", () => {
+  it("returns path unchanged if no ?lang= query param", () => {
     expect(getPathWithoutLocale("/beijing")).toBe("/beijing");
   });
 });

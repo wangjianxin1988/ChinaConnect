@@ -2,6 +2,7 @@ import {
   COMPANY_REGISTRATION,
   REGISTRATION_TIMELINE,
 } from "@/data/guide/business/company-registration";
+import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
 
 export function CompanyRegistrationClient() {
@@ -27,6 +28,7 @@ export function CompanyRegistrationClient() {
               Step-by-step guide to registering a business entity in China as a foreign investor.
               Choose the structure that best fits your business needs.
             </p>
+            <LastVerifiedStamp dataKey="company-registration" />
           </div>
         </div>
       </div>

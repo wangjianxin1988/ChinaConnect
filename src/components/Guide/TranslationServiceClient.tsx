@@ -1,4 +1,5 @@
 import { TRANSLATION_FAQS, TRANSLATION_SERVICES } from "@/data/guide/business/translation";
+import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
 
 export function TranslationServiceClient() {
@@ -20,6 +21,7 @@ export function TranslationServiceClient() {
               Book professional interpreters and translators for your business visits. From
               consecutive interpreting at dinners to certified document translation for visas.
             </p>
+            <LastVerifiedStamp dataKey="translation" />
           </div>
         </div>
       </div>

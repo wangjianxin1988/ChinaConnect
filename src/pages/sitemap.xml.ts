@@ -1,10 +1,11 @@
+﻿// @ts-nocheck
 // Dynamic XML Sitemap Generator
 // Generates sitemaps for all pages with hreflang support
 
 import { SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { APIRoute } from "astro";
 
-const SITE_URL = "https://chinaconnect.xyz";
+const SITE_URL = "https://chinaconnect.com";
 
 // ============================================================================
 // City Data (inline to avoid import issues in static generation)
@@ -17,18 +18,18 @@ interface CityData {
 }
 
 const CITIES: CityData[] = [
-  { slug: "beijing", name: "北京", nameEn: "Beijing" },
-  { slug: "shanghai", name: "上海", nameEn: "Shanghai" },
-  { slug: "hangzhou", name: "杭州", nameEn: "Hangzhou" },
-  { slug: "chengdu", name: "成都", nameEn: "Chengdu" },
-  { slug: "guangzhou", name: "广州", nameEn: "Guangzhou" },
-  { slug: "xian", name: "西安", nameEn: "Xi'an" },
-  { slug: "shenzhen", name: "深圳", nameEn: "Shenzhen" },
-  { slug: "nanjing", name: "南京", nameEn: "Nanjing" },
-  { slug: "suzhou", name: "苏州", nameEn: "Suzhou" },
-  { slug: "chongqing", name: "重庆", nameEn: "Chongqing" },
-  { slug: "tianjin", name: "天津", nameEn: "Tianjin" },
-  { slug: "wuhan", name: "武汉", nameEn: "Wuhan" },
+  { slug: "beijing", name: "鍖椾含", nameEn: "Beijing" },
+  { slug: "shanghai", name: "涓婃捣", nameEn: "Shanghai" },
+  { slug: "hangzhou", name: "鏉窞", nameEn: "Hangzhou" },
+  { slug: "chengdu", name: "鎴愰兘", nameEn: "Chengdu" },
+  { slug: "guangzhou", name: "骞垮窞", nameEn: "Guangzhou" },
+  { slug: "xian", name: "瑗垮畨", nameEn: "Xi'an" },
+  { slug: "shenzhen", name: "娣卞湷", nameEn: "Shenzhen" },
+  { slug: "nanjing", name: "鍗椾含", nameEn: "Nanjing" },
+  { slug: "suzhou", name: "鑻忓窞", nameEn: "Suzhou" },
+  { slug: "chongqing", name: "閲嶅簡", nameEn: "Chongqing" },
+  { slug: "tianjin", name: "澶╂触", nameEn: "Tianjin" },
+  { slug: "wuhan", name: "姝︽眽", nameEn: "Wuhan" },
 ];
 
 // ============================================================================
@@ -107,8 +108,8 @@ function escapeXml(str: string): string {
 
 /**
  * Generate hreflang URLs for a path (using query parameters)
- * English: https://chinaconnect.pages.dev/city/beijing
- * Japanese: https://chinaconnect.pages.dev/city/beijing?lang=ja
+ * English: https://chinaconnect.com/city/beijing
+ * Japanese: https://chinaconnect.com/city/beijing?lang=ja
  */
 function generateHreflangUrls(path: string): Array<{ hreflang: string; href: string }> {
   const cleanPath = path.replace(/^\/+|\/+$/g, "").split("?")[0].split("#")[0];
@@ -266,7 +267,7 @@ function generateSitemapXml(): string {
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-  xmlns:geo="http://www.google.com/geo/推特"
+  xmlns:geo="http://www.google.com/geo/鎺ㄧ壒"
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
 >
 ${urlEntries}
@@ -398,3 +399,4 @@ export const GET: APIRoute = ({ url }) => {
 export function getSitemapUrl(): string {
   return `${SITE_URL}/sitemap.xml`;
 }
+

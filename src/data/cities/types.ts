@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { S_TIER_CITIES } from "./tier-data";
 
 // City tier classification

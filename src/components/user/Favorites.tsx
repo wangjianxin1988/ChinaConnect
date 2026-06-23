@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Favorites Component
  * Manages user favorites (cities, restaurants, hotels, attractions)

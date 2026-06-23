@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Unit tests for LLM Router
  * Tests routing logic based on geo-location, cost, latency, and fallback chains

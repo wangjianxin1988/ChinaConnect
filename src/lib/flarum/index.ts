@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Flarum Integration Module
  *

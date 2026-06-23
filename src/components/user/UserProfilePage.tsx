@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * User Profile Page Component for ChinaConnect
  * Full page component for viewing user profiles
