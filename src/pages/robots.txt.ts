@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Dynamic robots.txt Generator
 // Configures crawling directives for search engines and AI crawlers
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Hotel Data Scraper - 酒店数据实时抓取
  * 

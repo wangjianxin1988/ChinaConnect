@@ -6,10 +6,7 @@
  */
 
 import React, { useCallback, useRef } from "react";
-import {
-  HOTEL_CATEGORY_CONFIG,
-  type HotelCategory,
-} from "./HotelCard";
+import { HOTEL_CATEGORY_CONFIG, type HotelCategory } from "./HotelCard";
 
 // ─── Props ───────────────────────────────────────────────────────
 
@@ -59,7 +56,7 @@ export function HotelCategoryFilter({
   ];
 
   return (
-    <div className="relative">
+    <div className="relative" data-hotel-filter-bar>
       {/* Horizontal scrollable container */}
       <div
         ref={scrollRef}
@@ -74,6 +71,7 @@ export function HotelCategoryFilter({
             <button
               key={key ?? "all"}
               onClick={() => handleClick(key)}
+              data-category={key ?? "all"}
               className={`
                 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium
                 whitespace-nowrap shrink-0 transition-all duration-200 touch-manipulation

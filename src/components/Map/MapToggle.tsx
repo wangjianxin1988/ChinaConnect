@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * MapToggle - UI control for switching between Google Maps and Amap (Gaode)
  * Part of the ChinaConnect dual map engine

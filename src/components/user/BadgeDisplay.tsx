@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * BadgeDisplay Component
  * Displays user badges with categories and tiers

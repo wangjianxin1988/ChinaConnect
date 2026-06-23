@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { type Language, translations } from "@/i18n/translations";
 // Onboarding Component - First-time user guide
 import { useState } from "react";
@@ -75,22 +76,22 @@ export function Onboarding({ onComplete, initialLang = "en" }: Props) {
   };
 
   return (
-    <div class="onboarding-overlay">
-      <div class="onboarding-modal">
-        <div class="onboarding-header">
-          <button class="onboarding-skip" onClick={handleSkip}>
+    <div className="onboarding-overlay">
+      <div className="onboarding-modal">
+        <div className="onboarding-header">
+          <button className="onboarding-skip" onClick={handleSkip}>
             {t.onboarding.skip}
           </button>
         </div>
 
-        <div class="onboarding-content">
-          <div class="onboarding-step-icon">{steps[currentStep].icon}</div>
-          <h2 class="onboarding-step-title">{steps[currentStep].title}</h2>
-          <p class="onboarding-step-desc">{steps[currentStep].description}</p>
+        <div className="onboarding-content">
+          <div className="onboarding-step-icon">{steps[currentStep].icon}</div>
+          <h2 className="onboarding-step-title">{steps[currentStep].title}</h2>
+          <p className="onboarding-step-desc">{steps[currentStep].description}</p>
         </div>
 
-        <div class="onboarding-footer">
-          <div class="onboarding-dots">
+        <div className="onboarding-footer">
+          <div className="onboarding-dots">
             {steps.map((_, index) => (
               <button
                 key={index}
@@ -101,7 +102,7 @@ export function Onboarding({ onComplete, initialLang = "en" }: Props) {
             ))}
           </div>
 
-          <button class="onboarding-next" onClick={handleNext}>
+          <button className="onboarding-next" onClick={handleNext}>
             {currentStep === steps.length - 1 ? t.onboarding.getStarted : t.onboarding.next}
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />

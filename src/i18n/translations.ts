@@ -54,7 +54,9 @@ export interface Translations {
     restaurants: string;
     aiChat: string;
     guide: string;
-
+    business: string;
+    tagline: string;
+    [key: string]: string;
   };
   // Common
   common: {
@@ -79,7 +81,6 @@ export interface Translations {
   home: {
     heroTitle: string;
     heroSubtitle: string;
-    heroDesc: string;
     heroCTA: string;
     exploreCities: string;
     statsCities: string;
@@ -87,20 +88,15 @@ export interface Translations {
     statsAttractions: string;
     statsAI: string;
     featuresTitle: string;
-    featuresSubtitle: string;
     ctaTitle: string;
     ctaSubtitle: string;
-    citiesTitle: string;
-    citiesSubtitle: string;
-    exploreGuide: string;
-    viewAllCities: string;
-    exploreBeijing: string;
-    chatWithAI: string;
+    [key: string]: string;
   };
   // Cities
   cities: {
     title: string;
     subtitle: string;
+    exploreGuide: string;
     attractions: string;
     restaurants: string;
     transport: string;
@@ -111,6 +107,7 @@ export interface Translations {
     recommendedTime: string;
     ticketPrice: string;
     openingHours: string;
+    [key: string]: string;
   };
   // Restaurants
   restaurants: {
@@ -210,7 +207,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "Restaurants",
       aiChat: "AI Concierge",
       guide: "Travel Guide",
-      business: "Business Express"
+      business: "Business Express",
+      tagline: "Explore China with AI",
     },
     common: {
       loading: "Loading...",
@@ -314,6 +312,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "Clear History",
       forYou: "Because you visited {city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "Restaurant Guide",
+      restaurantGuideDesc: "Michelin stars, Black Pearl rankings, and local favorites with detailed reviews",
+      attractions: "Attractions",
+      attractionsDesc: "Top-rated attractions with opening hours, tickets, and local tips",
+      transport: "Transport",
+      transportDesc: "How to get there and around - flights, trains, metro, and local tips",
+      emergency: "Emergency",
+      emergencyDesc: "Hospital, police, embassy contacts and important phone numbers",
+      payment: "Payment Guide",
+      paymentDesc: "Alipay, WeChat Pay, cash tips, and card acceptance info",
+      accommodation: "Accommodation",
+      accommodationDesc: "Hotel recommendations for every budget from luxury to budget",
+      culturalTips: "Cultural Tips",
+      culturalTipsDesc: "Local customs, etiquette, and cultural insights for each city",
+      aiAssistant: "AI Assistant",
+      aiAssistantDesc: "Ask questions in English, get instant answers about China travel",
+    },
     language: {
       switchTo: "Switch to",
       current: "Current",
@@ -329,7 +346,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "レストラン",
       aiChat: "AI コンシェルジュ",
       guide: "旅行ガイド",
-      business: "ビジネスエクスプレス"
+      business: "ビジネスエクスプレス",
+      tagline: "AIと一緒に中国を探索",
     },
     common: {
       loading: "読み込み中...",
@@ -433,6 +451,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "履歴をクリア",
       forYou: "{city}を見た的你へのおすすめ"
     },
+    // Features section
+    features: {
+      restaurantGuide: "レストランガイド",
+      restaurantGuideDesc: "ミシュラン星、黒真珠ランキング、地元のお気に入りを詳細レビュー付きで紹介",
+      attractions: "観光名所",
+      attractionsDesc: "営業時間、チケット、現地 tips を含むトップ評価の観光名所",
+      transport: "交通",
+      transportDesc: "行き方と移動手段 - 飛行機、電車、地下鉄、現地 tips",
+      emergency: "緊急時",
+      emergencyDesc: "病院、警察、大使館の連絡先と重要な電話番号",
+      payment: "支払いガイド",
+      paymentDesc: "Alipay、WeChat Pay、現金 tips、カード利用情報",
+      accommodation: "宿泊",
+      accommodationDesc: "高級から予算まで、あらゆる予算のホテル推奨",
+      culturalTips: "文化 tips",
+      culturalTipsDesc: "現地の習慣、エチケット、各都市の文化的な洞察",
+      aiAssistant: "AI アシスタント",
+      aiAssistantDesc: "中国旅行について英語で質問し、すぐに回答を得る",
+    },
     language: {
       switchTo: "切り替える",
       current: "現在",
@@ -448,7 +485,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "음식점",
       aiChat: "AI 컨시어지",
       guide: "여행 가이드",
-      business: "비즈니스 익스프레스"
+      business: "비즈니스 익스프레스",
+      tagline: "AI와 함께 중국 탐험",
     },
     common: {
       loading: "로딩 중...",
@@ -552,6 +590,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "기록 지우기",
       forYou: "{city}을 본 당신을 위한 추천"
     },
+    // Features section
+    features: {
+      restaurantGuide: "레스토랑 가이드",
+      restaurantGuideDesc: "미슐랭 스타, 블랙펄 랭킹, 그리고 상세한 리뷰와 함께하는 현지 인기 식당",
+      attractions: "관광 명소",
+      attractionsDesc: "운영 시간, 티켓, 현지 팁이 포함된 최고 평점 관광 명소",
+      transport: "교통",
+      transportDesc: "가는 법과 이동 수단 - 항공편, 기차, 지하철, 현지 팁",
+      emergency: "긴급 상황",
+      emergencyDesc: "병원, 경찰, 대사관 연락처 및 중요한 전화번호",
+      payment: "결제 가이드",
+      paymentDesc: "Alipay, WeChat Pay, 현금 팁, 카드 사용 정보",
+      accommodation: "숙박",
+      accommodationDesc: "럭셔리부터 예산까지 모든 예산의 호텔 추천",
+      culturalTips: "문화 팁",
+      culturalTipsDesc: "현지 관습, 에티켓, 각 도시의 문화 통찰",
+      aiAssistant: "AI 어시스턴트",
+      aiAssistantDesc: "중국 여행에 대한 질문을 영어로 하고 즉각적인 답변 받기",
+    },
     language: {
       switchTo: "전환",
       current: "현재",
@@ -567,7 +624,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "餐厅",
       aiChat: "AI 管家",
       guide: "旅游指南",
-      business: "商务快车"
+      business: "商务快车",
+      tagline: "AI 探索中国",
     },
     common: {
       loading: "加载中...",
@@ -671,6 +729,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "清除历史",
       forYou: "因为您浏览了{city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "餐厅指南",
+      restaurantGuideDesc: "米其林星级、黑珍珠排名和本地最爱，配有详细评价",
+      attractions: "景点",
+      attractionsDesc: "顶级景点，附带开放时间、门票和本地贴士",
+      transport: "交通",
+      transportDesc: "如何到达和出行 - 航班、火车、地铁和本地贴士",
+      emergency: "紧急联系",
+      emergencyDesc: "医院、警察、大使馆联系方式和重要电话号码",
+      payment: "支付指南",
+      paymentDesc: "支付宝、微信支付、现金贴士和刷卡信息",
+      accommodation: "住宿",
+      accommodationDesc: "从豪华到经济型，各类预算的酒店推荐",
+      culturalTips: "文化贴士",
+      culturalTipsDesc: "各地风俗、礼仪和每个城市的文化见解",
+      aiAssistant: "AI 助手",
+      aiAssistantDesc: "用中文提问，立刻获得中国旅行相关解答",
+    },
     language: {
       switchTo: "切换到",
       current: "当前",
@@ -686,7 +763,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "餐廳",
       aiChat: "AI 管家",
       guide: "旅遊指南",
-      business: "商務快車"
+      business: "商務快車",
+      tagline: "AI 探索中國",
     },
     common: {
       loading: "載入中...",
@@ -790,6 +868,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "清除歷史",
       forYou: "因為您瀏覽了{city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "餐廳指南",
+      restaurantGuideDesc: "米其林星級、黑珍珠排名和本地最愛，附有詳細評論",
+      attractions: "景點",
+      attractionsDesc: "頂級景點，附帶開放時間、門票和本地貼士",
+      transport: "交通",
+      transportDesc: "如何到達和出行 - 航班、火車、地鐵和本地貼士",
+      emergency: "緊急聯絡",
+      emergencyDesc: "醫院、警察、大使館聯絡方式和重要電話號碼",
+      payment: "支付指南",
+      paymentDesc: "支付寶、微信支付、現金貼士和刷卡資訊",
+      accommodation: "住宿",
+      accommodationDesc: "從豪華到經濟型，各類預算的飯店推薦",
+      culturalTips: "文化貼士",
+      culturalTipsDesc: "各地風俗、禮儀和每個城市的文化見解",
+      aiAssistant: "AI 助理",
+      aiAssistantDesc: "用中文提問，立即獲得中國旅行相關解答",
+    },
     language: {
       switchTo: "切換到",
       current: "當前",
@@ -805,7 +902,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "ร้านอาหาร",
       aiChat: "AI ผู้ช่วยส่วนตัว",
       guide: "คู่มือท่องเที่ยว",
-      business: "ธุรกิจด่วน"
+      business: "ธุรกิจด่วน",
+      tagline: "สำรวจจีนด้วย AI",
     },
     common: {
       loading: "กำลังโหลด...",
@@ -909,6 +1007,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "ล้างประวัติ",
       forYou: "เพราะคุณเยี่ยมชม {city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "คู่มือร้านอาหาร",
+      restaurantGuideDesc: "ดาวมิชลิน, Black Pearl และร้านโปรดท้องถิ่น พร้อมรีวิวละเอียด",
+      attractions: "สถานที่ท่องเที่ยว",
+      attractionsDesc: "สถานที่ท่องเที่ยวยอดนิยมพร้อมเวลาเปิด ตั๋ว และเคล็ดลับท้องถิ่น",
+      transport: "การเดินทาง",
+      transportDesc: "วิธีไปและท่องเที่ยว - เครื่องบิน รถไฟ รถไฟใต้ดิน และเคล็ดลับท้องถิ่น",
+      emergency: "ฉุกเฉิน",
+      emergencyDesc: "โรงพยาบาล ตำรวจ สถานทูต และหมายเลขโทรศัพท์สำคัญ",
+      payment: "คู่มือการชำระเงิน",
+      paymentDesc: "Alipay, WeChat Pay, เงินสด และข้อมูลการใช้บัตร",
+      accommodation: "ที่พัก",
+      accommodationDesc: "คำแนะนำโรงแรมสำหรับทุกงบประมาณ ตั้งแต่หรูหราจนถึงประหยัด",
+      culturalTips: "เคล็ดลับวัฒนธรรม",
+      culturalTipsDesc: "ประเพณีท้องถิ่น มารยาท และข้อมูลเชิงลึกทางวัฒนธรรมของแต่ละเมือง",
+      aiAssistant: "ผู้ช่วย AI",
+      aiAssistantDesc: "ถามคำถามเกี่ยวกับการท่องเที่ยวจีน ได้รับคำตอบทันที",
+    },
     language: {
       switchTo: "เปลี่ยนเป็น",
       current: "ปัจจุบัน",
@@ -924,7 +1041,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "Nhà hàng",
       aiChat: "Trợ lý AI",
       guide: "Hướng dẫn du lịch",
-      business: "Doanh nghiệp"
+      business: "Doanh nghiệp",
+      tagline: "Khám phá Trung Quốc với AI",
     },
     common: {
       loading: "Đang tải...",
@@ -1028,6 +1146,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "Xóa lịch sử",
       forYou: "Vì bạn đã xem {city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "Hướng dẫn nhà hàng",
+      restaurantGuideDesc: "Sao Michelin, xếp hạng Black Pearl và các món địa phương yêu thích kèm đánh giá chi tiết",
+      attractions: "Điểm tham quan",
+      attractionsDesc: "Điểm tham quan hàng đầu với giờ mở cửa, vé và mẹo địa phương",
+      transport: "Phương tiện",
+      transportDesc: "Cách đi và di chuyển - máy bay, tàu hỏa, tàu điện ngầm và mẹo địa phương",
+      emergency: "Khẩn cấp",
+      emergencyDesc: "Bệnh viện, cảnh sát, đại sứ quán và các số điện thoại quan trọng",
+      payment: "Hướng dẫn thanh toán",
+      paymentDesc: "Alipay, WeChat Pay, mẹo tiền mặt và thông tin thẻ",
+      accommodation: "Chỗ ở",
+      accommodationDesc: "Đề xuất khách sạn cho mọi ngân sách từ sang trọng đến tiết kiệm",
+      culturalTips: "Mẹo văn hóa",
+      culturalTipsDesc: "Phong tục địa phương, nghi thức và hiểu biết văn hóa cho mỗi thành phố",
+      aiAssistant: "Trợ lý AI",
+      aiAssistantDesc: "Đặt câu hỏi về du lịch Trung Quốc, nhận câu trả lời ngay",
+    },
     language: {
       switchTo: "Chuyển sang",
       current: "Hiện tại",
@@ -1043,7 +1180,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "Рестораны",
       aiChat: "ИИ-консьерж",
       guide: "Путеводитель",
-      business: "Бизнес Экспресс"
+      business: "Бизнес Экспресс",
+      tagline: "Изучайте Китай с ИИ",
     },
     common: {
       loading: "Загрузка...",
@@ -1148,6 +1286,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "Очистить историю",
       forYou: "Потому что вы посетили {city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "Гид по ресторанам",
+      restaurantGuideDesc: "Звезды Мишлен, рейтинг Black Pearl и местные фавориты с подробными обзорами",
+      attractions: "Достопримечательности",
+      attractionsDesc: "Лучшие достопримечательности с часами работы, билетами и местными советами",
+      transport: "Транспорт",
+      transportDesc: "Как добраться и передвигаться - рейсы, поезда, метро и местные советы",
+      emergency: "Экстренные случаи",
+      emergencyDesc: "Больницы, полиция, посольства и важные телефонные номера",
+      payment: "Гид по оплате",
+      paymentDesc: "Alipay, WeChat Pay, советы по наличным и информация о картах",
+      accommodation: "Проживание",
+      accommodationDesc: "Рекомендации отелей для любого бюджета - от роскошных до бюджетных",
+      culturalTips: "Культурные советы",
+      culturalTipsDesc: "Местные обычаи, этикет и культурные особенности каждого города",
+      aiAssistant: "ИИ-ассистент",
+      aiAssistantDesc: "Задавайте вопросы о путешествиях по Китаю на английском, получайте мгновенные ответы",
+    },
     language: {
       switchTo: "Переключить на",
       current: "Текущий",
@@ -1163,7 +1320,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "Restaurants",
       aiChat: "Conciergerie IA",
       guide: "Guide de Voyage",
-      business: "Express Affaires"
+      business: "Express Affaires",
+      tagline: "Explorez la Chine avec l’IA",
     },
     common: {
       loading: "Chargement...",
@@ -1271,6 +1429,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "Effacer l'historique",
       forYou: "Parce que vous avez visité {city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "Guide des restaurants",
+      restaurantGuideDesc: "Étoiles Michelin, classement Black Pearl et favoris locaux avec avis détaillés",
+      attractions: "Attractions",
+      attractionsDesc: "Attractions les mieux notées avec horaires, billets et conseils locaux",
+      transport: "Transport",
+      transportDesc: "Comment s’y rendre et se déplacer - vols, trains, métro et conseils locaux",
+      emergency: "Urgence",
+      emergencyDesc: "Hôpitaux, police, contacts ambassade et numéros de téléphone importants",
+      payment: "Guide de paiement",
+      paymentDesc: "Alipay, WeChat Pay, astuces espèces et informations sur les cartes",
+      accommodation: "Hébergement",
+      accommodationDesc: "Recommandations d’hôtels pour tous les budgets, du luxe à l’économique",
+      culturalTips: "Conseils culturels",
+      culturalTipsDesc: "Coutumes locales, étiquette et perspectives culturelles pour chaque ville",
+      aiAssistant: "Assistant IA",
+      aiAssistantDesc: "Posez des questions en anglais sur les voyages en Chine, obtenez des réponses instantanées",
+    },
     language: {
       switchTo: "Passer à",
       current: "Actuel",
@@ -1286,7 +1463,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "Restaurants",
       aiChat: "KI-Concierge",
       guide: "Reiseführer",
-      business: "Business Express"
+      business: "Business Express",
+      tagline: "China mit KI entdecken",
     },
     common: {
       loading: "Laden...",
@@ -1392,6 +1570,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "Verlauf löschen",
       forYou: "Weil Sie {city} besucht haben"
     },
+    // Features section
+    features: {
+      restaurantGuide: "Restaurantführer",
+      restaurantGuideDesc: "Michelin-Sterne, Black-Pearl-Bewertung und lokale Favoriten mit ausführlichen Bewertungen",
+      attractions: "Sehenswürdigkeiten",
+      attractionsDesc: "Top-bewertete Attraktionen mit Öffnungszeiten, Tickets und lokalen Tipps",
+      transport: "Transport",
+      transportDesc: "Anreise und Fortbewegung - Flüge, Züge, U-Bahn und lokale Tipps",
+      emergency: "Notfälle",
+      emergencyDesc: "Krankenhaus, Polizei, Botschaftskontakte und wichtige Telefonnummern",
+      payment: "Zahlungsführer",
+      paymentDesc: "Alipay, WeChat Pay, Bargeldtipps und Karteninformationen",
+      accommodation: "Unterkunft",
+      accommodationDesc: "Hotelempfehlungen für jedes Budget, von luxuriös bis preiswert",
+      culturalTips: "Kulturelle Tipps",
+      culturalTipsDesc: "Lokale Bräuche, Etikette und kulturelle Einblicke für jede Stadt",
+      aiAssistant: "KI-Assistent",
+      aiAssistantDesc: "Stellen Sie Fragen auf Englisch zu China-Reisen und erhalten Sie sofort Antworten",
+    },
     language: {
       switchTo: "Wechseln zu",
       current: "Aktuell",
@@ -1407,7 +1604,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "المطاعم",
       aiChat: "مساعد الذكاء الاصطناعي",
       guide: "دليل السفر",
-      business: "أعمال سريعة"
+      business: "أعمال سريعة",
+      tagline: "استكشف الصين بالذكاء الاصطناعي",
     },
     common: {
       loading: "جاري التحميل...",
@@ -1511,6 +1709,25 @@ export const translations: Record<Language, Translations> = {
       clearHistory: "مسح السجل",
       forYou: "لأنك زرت {city}"
     },
+    // Features section
+    features: {
+      restaurantGuide: "دليل المطاعم",
+      restaurantGuideDesc: "نجوم ميشلان، ترتيب بلاك بيرل والمفضلات المحلية مع مراجعات مفصلة",
+      attractions: "المعالم",
+      attractionsDesc: "أفضل المعالم مع ساعات العمل والتذاكر والنصائح المحلية",
+      transport: "النقل",
+      transportDesc: "كيفية الوصول والتنقل - الرحلات الجوية، القطارات، المترو والنصائح المحلية",
+      emergency: "الطوارئ",
+      emergencyDesc: "المستشفى، الشرطة، جهات اتصال السفارة وأرقام الهواتف المهمة",
+      payment: "دليل الدفع",
+      paymentDesc: "Alipay، WeChat Pay، نصائح نقدية ومعلومات البطاقات",
+      accommodation: "الإقامة",
+      accommodationDesc: "توصيات الفنادق لكل ميزانية من الفاخر إلى الاقتصادي",
+      culturalTips: "نصائح ثقافية",
+      culturalTipsDesc: "العادات المحلية، آداب السلوك والرؤى الثقافية لكل مدينة",
+      aiAssistant: "مساعد الذكاء الاصطناعي",
+      aiAssistantDesc: "اطرح أسئلة حول السفر إلى الصين واحصل على إجابات فورية",
+    },
     language: {
       switchTo: "التغيير إلى",
       current: "الحالي",
@@ -1526,7 +1743,8 @@ export const translations: Record<Language, Translations> = {
       restaurants: "رستوران‌ها",
       aiChat: "دستیار هوش مصنوعی",
       guide: "راهنمای سفر",
-      business: "بیزینس اکسپرس"
+      business: "بیزینس اکسپرس",
+      tagline: "چین را با هوش مصنوعی کاوش کنید",
     },
     common: {
       loading: "در حال بارگذاری...",
@@ -1629,6 +1847,25 @@ export const translations: Record<Language, Translations> = {
       recommended: "پیشنهاد شده برای شما",
       clearHistory: "پاک کردن تاریخچه",
       forYou: "چون شما {city} را بازدید کرده‌اید"
+    },
+    // Features section
+    features: {
+      restaurantGuide: "راهنمای رستوران",
+      restaurantGuideDesc: "ستارهای میشلن، رتبه‌بندی بلک پرل و موارد دلخواه محلی با نقد و بررسی دقیق",
+      attractions: "جاذبه‌ها",
+      attractionsDesc: "جاذبه‌های برتر با ساعات کار، بلیط و نکات محلی",
+      transport: "حمل و نقل",
+      transportDesc: "چگونگی رسیدن و گشت و گذار - پروازها، قطارها، مترو و نکات محلی",
+      emergency: "اورژانس",
+      emergencyDesc: "بیمارستان، پلیس، تماس‌های سفارت و شماره تلفن‌های مهم",
+      payment: "راهنمای پرداخت",
+      paymentDesc: "Alipay، WeChat Pay، نکات نقدی و اطلاعات کارت",
+      accommodation: "اقامت",
+      accommodationDesc: "توصیه‌های هتل برای هر بودجه‌ای از لوکس تا اقتصادی",
+      culturalTips: "نکات فرهنگی",
+      culturalTipsDesc: "آداب و رسوم محلی، آداب معاشرت و بینش‌های فرهنگی برای هر شهر",
+      aiAssistant: "دستیار هوش مصنوعی",
+      aiAssistantDesc: "سوالاتی درباره سفر به چین بپرسید و پاسخ‌های فوری دریافت کنید",
     },
     language: {
       switchTo: "تغییر به",

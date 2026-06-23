@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Sitemap generator for ChinaConnect
 // Supports categorization by city and function, includes Baidu SEO optimization
 

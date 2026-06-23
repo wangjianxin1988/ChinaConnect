@@ -1,4 +1,5 @@
 ---
+
 import "@/styles/global.css";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import type { Restaurant } from "@/data/cities/types";
@@ -23,73 +24,11 @@ const { prev, next } = getAdjacentCities(slug as string);
 const filterParam = Astro.url.searchParams.get("filter") || "all";
 
 // ─── Unified Restaurant Category System ──────────────────────────
-// Maps RestaurantType → filter category (matches RestaurantCard TYPE_CONFIG)
-const TYPE_TO_CATEGORY: Record<string, string> = {
-  michelin: "michelin",
-  blackpearl: "blackpearl",
-  local: "local",
-  budget_local: "affordable",
-  hole_in_wall: "street_food",
-  night_market: "street_food",
-  street: "street_food",
-  cafe: "cafe",
-  chain: "chain",
-  fine: "fine_dining",
-  "fine-dining": "fine_dining",
-  international: "international",
-  luxury: "fine_dining",
-  buffet: "buffet",
-  fastfood: "fastfood",
-  modern: "local",
-};
-
-// Category display config (order matters for UI)
-const CATEGORY_CONFIG: Record<string, { label: string; labelZh: string; icon: string; colorClass: string }> = {
-  all: { label: "All", labelZh: "全部", icon: "🍽️", colorClass: "bg-gray-50 border-gray-200 text-gray-700" },
-  michelin: { label: "Michelin", labelZh: "米其林", icon: "⭐", colorClass: "bg-amber-50 border-amber-200 text-amber-700" },
-  blackpearl: { label: "Black Pearl", labelZh: "黑珍珠", icon: "💎", colorClass: "bg-slate-800 border-slate-600 text-slate-200" },
-  local: { label: "Local Recommend", labelZh: "本地推荐", icon: "❤️", colorClass: "bg-red-50 border-red-200 text-red-700" },
-  affordable: { label: "Affordable", labelZh: "平价美食", icon: "💙", colorClass: "bg-blue-50 border-blue-200 text-blue-700" },
-  street_food: { label: "Street Food", labelZh: "苍蝇馆子", icon: "🔥", colorClass: "bg-orange-50 border-orange-200 text-orange-700" },
-  cafe: { label: "Cafe", labelZh: "咖啡厅", icon: "☕", colorClass: "bg-amber-50 border-amber-200 text-amber-700" },
-  chain: { label: "Chain", labelZh: "连锁品牌", icon: "🏪", colorClass: "bg-blue-50 border-blue-200 text-blue-700" },
-  fine_dining: { label: "Fine Dining", labelZh: "精致餐饮", icon: "🍽️", colorClass: "bg-purple-50 border-purple-200 text-purple-700" },
-  international: { label: "International", labelZh: "国际美食", icon: "🌍", colorClass: "bg-teal-50 border-teal-200 text-teal-700" },
-  buffet: { label: "Buffet", labelZh: "自助餐", icon: "🥘", colorClass: "bg-orange-50 border-orange-200 text-orange-700" },
-  fastfood: { label: "Fast Food", labelZh: "快餐", icon: "🍔", colorClass: "bg-red-50 border-red-200 text-red-700" },
-};
-
-function getHighlightCategory(r: Restaurant): string {
-  return TYPE_TO_CATEGORY[r.type] || "local";
-}
-
-interface FilterGroup {
-  id: string;
-  label: string;
-  labelZh: string;
-  icon: string;
-  colorClass: string;
-  restaurants: Restaurant[];
-}
+// Single source of truth in src/data/food/categories.ts
+import { CATEGORY_CONFIG, buildFilterGroups, getHighlightCategory, type FilterGroup } from "@/data/food/categories";
 
 const allRestaurants = city.restaurants;
-
-// Auto-generate filter groups from actual data (dynamic, adapts to new types)
-const presentCategories = new Set(allRestaurants.map(r => getHighlightCategory(r)));
-
-const filterGroups: FilterGroup[] = [
-  { id: "all", ...CATEGORY_CONFIG.all, restaurants: allRestaurants },
-  // Priority order: michelin → blackpearl → local → affordable → street_food → others
-  ...["michelin", "blackpearl", "local", "affordable", "street_food",
-      "fine_dining", "international", "cafe", "chain", "buffet", "fastfood"]
-    .filter(cat => presentCategories.has(cat))
-    .map(cat => ({
-      id: cat,
-      ...CATEGORY_CONFIG[cat],
-      restaurants: allRestaurants.filter(r => getHighlightCategory(r) === cat),
-    })),
-];
-
+const filterGroups: FilterGroup[] = buildFilterGroups(allRestaurants);
 const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
 
 const pageTitle = `${city.nameEn} 美食 - ChinaConnect`;
@@ -156,6 +95,8 @@ function getBadgeLabel(type: Restaurant["type"]) {
           return (
             <button
               data-filter={group.id}
+              data-filter-icon={group.icon}
+              data-filter-label={group.labelZh}
               data-city-slug={city.slug}
               class={`
                 flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all filter-btn
@@ -443,136 +384,99 @@ function getBadgeLabel(type: Restaurant["type"]) {
     </div>
   </div>
 
-  <script is:inline>
-    // Client-side filter handling for food page
-    (function() {
+  <script>
+    // City food page filter — works under both regular page load and Astro
+    // view transitions. Reads filter icon / label from a data-* attribute
+    // injected by the server (single source of truth), so client and server
+    // never drift.
+    function initFoodFilter() {
       const filterButtons = document.querySelectorAll('.filter-btn');
       const restaurantGrid = document.getElementById('restaurant-grid');
       const restaurantCount = document.getElementById('restaurant-count');
       const filterInfo = document.getElementById('filter-info');
       const emptyState = document.getElementById('empty-state');
+      if (!filterButtons.length || !restaurantGrid) return;
 
-      // Filter metadata for display (auto-matches server-side CATEGORY_CONFIG)
-      const filterMeta = {
-        'all': { icon: '🍽️', labelZh: '全部' },
-        'michelin': { icon: '⭐', labelZh: '米其林' },
-        'blackpearl': { icon: '💎', labelZh: '黑珍珠' },
-        'local': { icon: '❤️', labelZh: '本地推荐' },
-        'affordable': { icon: '💙', labelZh: '平价美食' },
-        'street_food': { icon: '🔥', labelZh: '苍蝇馆子' },
-        'cafe': { icon: '☕', labelZh: '咖啡厅' },
-        'chain': { icon: '🏪', labelZh: '连锁品牌' },
-        'fine_dining': { icon: '🍽️', labelZh: '精致餐饮' },
-        'international': { icon: '🌍', labelZh: '国际美食' },
-        'buffet': { icon: '🥘', labelZh: '自助餐' },
-        'fastfood': { icon: '🍔', labelZh: '快餐' },
-      };
-
-      // Get initial filter from URL
       function getInitialFilter() {
         const params = new URLSearchParams(window.location.search);
         return params.get('filter') || 'all';
       }
 
-      // Update URL without page reload
-      function updateURL(filter, citySlug) {
-        const url = new URL(window.location.href);
-        if (filter === 'all') {
-          url.searchParams.delete('filter');
-        } else {
-          url.searchParams.set('filter', filter);
-        }
-        history.pushState({ filter }, '', url.toString());
+      function updateURL(filter) {
+        try {
+          const url = new URL(window.location.href);
+          if (filter === 'all') {
+            url.searchParams.delete('filter');
+          } else {
+            url.searchParams.set('filter', filter);
+          }
+          history.pushState({ filter }, '', url.toString());
+        } catch (e) {}
       }
 
-      // Apply filter to restaurant cards
       function applyFilter(filter) {
-        if (!restaurantGrid) return;
-
         const cards = restaurantGrid.querySelectorAll('.restaurant-card');
         let visibleCount = 0;
-
         cards.forEach((card) => {
-          const cardEl = card;
-          const category = cardEl.dataset.filterCategory;
-
-          if (filter === 'all' || category === filter) {
-            cardEl.style.display = '';
+          const category = card.getAttribute('data-filter-category');
+          if (!filter || filter === 'all' || category === filter) {
+            card.style.display = '';
             visibleCount++;
           } else {
-            cardEl.style.display = 'none';
+            card.style.display = 'none';
           }
         });
 
-        // Update count display
-        if (restaurantCount) {
-          restaurantCount.textContent = visibleCount.toString();
-        }
+        if (restaurantCount) restaurantCount.textContent = String(visibleCount);
 
-        // Update filter info
         if (filterInfo) {
-          if (filter === 'all') {
+          const btn = Array.from(filterButtons).find(
+            (b) => b.dataset.filter === filter,
+          );
+          const icon = btn ? btn.getAttribute('data-filter-icon') : '';
+          const labelZh = btn ? btn.getAttribute('data-filter-label') : '';
+          if (filter === 'all' || !icon) {
             filterInfo.innerHTML = '';
           } else {
-            const meta = filterMeta[filter];
-            if (meta) {
-              filterInfo.innerHTML = `— 筛选: <span class="font-medium text-orange-600">${meta.icon} ${meta.labelZh}</span>`;
-            }
+            filterInfo.innerHTML = '— 筛选: <span class="font-medium text-orange-600">' + icon + ' ' + labelZh + '</span>';
           }
         }
+        if (emptyState) emptyState.style.display = visibleCount === 0 ? '' : 'none';
+        if (restaurantGrid) restaurantGrid.style.display = visibleCount === 0 ? 'none' : '';
 
-        // Show/hide empty state
-        if (emptyState) {
-          emptyState.style.display = visibleCount === 0 ? '' : 'none';
-        }
-        if (restaurantGrid) {
-          restaurantGrid.style.display = visibleCount === 0 ? 'none' : '';
-        }
-
-        // Update active button state
         filterButtons.forEach((btn) => {
-          const btnEl = btn;
-          const btnFilter = btnEl.dataset.filter;
-          const isActive = btnFilter === filter;
-
-          // Update classes based on active state
-          if (isActive) {
-            btnEl.classList.add('ring-2', 'ring-offset-1');
-            if (filter === 'blackpearl') {
-              btnEl.classList.add('ring-slate-400');
-            } else {
-              btnEl.classList.add('ring-orange-300');
-            }
+          const isActive = btn.dataset.filter === filter;
+          btn.classList.toggle('ring-2', isActive);
+          btn.classList.toggle('ring-offset-1', isActive);
+          if (filter === 'blackpearl') {
+            btn.classList.toggle('ring-slate-400', isActive);
+            btn.classList.remove('ring-orange-300');
           } else {
-            btnEl.classList.remove('ring-2', 'ring-offset-1', 'ring-slate-400', 'ring-orange-300');
+            btn.classList.toggle('ring-orange-300', isActive);
+            btn.classList.remove('ring-slate-400');
           }
         });
       }
 
-      // Initialize
-      const initialFilter = getInitialFilter();
-      applyFilter(initialFilter);
-
-      // Add click handlers to filter buttons
+      applyFilter(getInitialFilter());
       filterButtons.forEach((btn) => {
         btn.addEventListener('click', (e) => {
-          const btnEl = e.currentTarget;
-          const filter = btnEl.dataset.filter;
-          const citySlug = btnEl.dataset.citySlug;
-
-          if (filter) {
-            updateURL(filter, citySlug || '');
-            applyFilter(filter);
-          }
+          e.preventDefault();
+          const filter = btn.dataset.filter;
+          if (!filter) return;
+          updateURL(filter);
+          applyFilter(filter);
         });
       });
+      window.addEventListener('popstate', () => applyFilter(getInitialFilter()));
+    }
 
-      // Handle browser back/forward
-      window.addEventListener('popstate', () => {
-        const filter = getInitialFilter();
-        applyFilter(filter);
-      });
-    })();
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initFoodFilter);
+    } else {
+      initFoodFilter();
+    }
+    document.addEventListener('astro:page-load', initFoodFilter);
   </script>
 
   <!-- Authoritative Data Sources -->

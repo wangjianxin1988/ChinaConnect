@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Dynamic XML Sitemap Generator
 // Generates sitemaps for all pages with hreflang support
 

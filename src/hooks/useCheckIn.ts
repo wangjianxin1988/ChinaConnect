@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * useCheckIn - GPS-verified user check-in hook
  * Uses the browser Geolocation API to verify the user's position

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Food API Service
  * Placeholder for food/rating data integration

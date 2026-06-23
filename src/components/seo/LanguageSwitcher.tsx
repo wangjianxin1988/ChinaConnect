@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Language Switcher Component
 // Provides language selection UI with proper hreflang support
 

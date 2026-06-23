@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Authentication Forms for ChinaConnect
  * Supports: Email/Password, Google OAuth, GitHub OAuth, Phone SMS

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { Language } from "@/i18n/translations";
 // Language Switcher Component

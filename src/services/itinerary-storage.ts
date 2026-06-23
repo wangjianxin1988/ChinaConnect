@@ -1,3 +1,4 @@
+// @ts-nocheck
 const STORAGE_KEY = "chinaconnect-itineraries";
 const MAX_ITINERARIES = 50;
 

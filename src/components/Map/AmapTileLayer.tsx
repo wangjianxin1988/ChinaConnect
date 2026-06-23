@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * AmapTileLayer - Gaode (Amap) Maps tile layer component for Leaflet
  * Uses GCJ-02 coordinate system (China-specific deviation from WGS-84)

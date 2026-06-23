@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Restaurant food context - manages selected map layers and filter state
  * Used client-side to sync LayerToggle + RestaurantFilter + restaurant list

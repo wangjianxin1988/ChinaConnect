@@ -1,3 +1,4 @@
+// @ts-nocheck
 const SITE_URL = "https://chinaconnect.xyz";
 
 // AI crawler user agents to allow

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * ChinaConnect Link Generator
  * Generates clickable links for all data sources

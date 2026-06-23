@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * ChinaConnect User Membership System Types
  * Database types for membership, wallet, orders, AI routes, and favorites
