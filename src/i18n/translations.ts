@@ -205,7 +205,7 @@ export const translations: Record<Language, Translations> = {
       home: "Home",
       cities: "Cities",
       restaurants: "Restaurants",
-      aiChat: "AI Concierge",
+      aiChat: "ChinaGuide AI",
       guide: "Travel Guide",
       business: "Business Express",
       tagline: "Explore China with AI",

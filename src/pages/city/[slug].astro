@@ -1,4 +1,4 @@
----
+﻿---
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
 import { AttractionCard } from "@/components/city/AttractionCard";
@@ -285,7 +285,7 @@ const mapMarkers = [
 
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 flex items-center gap-3">
         {city.nameEn}
-        <CityTierBadge tier={S_TIER_CITIES[city.slug]?.tier || "D"} size="md" />
+        <CityTierBadge tier={S_TIER_CITIES[city.slug]?.tier || "D"} size="md" showLabel={false} />
       </h1>
       <p class="text-xl text-blue-200 mb-4">{city.name}</p>
       <p class="text-gray-300 max-w-2xl" data-translate={city.description}>{city.description}</p>
