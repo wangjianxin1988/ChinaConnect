@@ -11,7 +11,7 @@ async function waitForHydration(page: Page) {
   const url = page.url();
   if (/\/ai(\b|$|\?|#|\/)/.test(url)) {
     await page
-      .locator("h1:has-text('AI Concierge'), h1:has-text('AI Assistant'), h1:has-text('AI Travel')")
+      .locator("h1:has-text('ChinaGuide AI'), h1:has-text('ChinaGuide AI'), h1:has-text('AI Travel')")
       .first()
       .waitFor({ state: "visible", timeout: 30000 })
       .catch(() => {});
@@ -122,7 +122,7 @@ test.describe("AI Chat Interface", () => {
     await waitForHydration(page);
 
     // Wait for client-side React mount (h1 with "AI Concierge")
-    await page.locator("h1:has-text('AI Concierge')").first().waitFor({ state: "visible", timeout: 15000 });
+    await page.locator("h1:has-text('ChinaGuide AI')").first().waitFor({ state: "visible", timeout: 15000 });
 
     // AI chat starts with example prompts; clicking one triggers chatStarted and reveals the textarea
     const promptButton = page.locator("button:has-text('Plan a'), button:has-text('Best local'), button:has-text('How to travel')").first();
@@ -294,7 +294,7 @@ test.describe("AI Chat Interactions", () => {
     await waitForHydration(page);
 
     // Wait for client-side React mount (h1 with "AI Concierge")
-    await page.locator("h1:has-text('AI Concierge')").first().waitFor({ state: "visible", timeout: 15000 });
+    await page.locator("h1:has-text('ChinaGuide AI')").first().waitFor({ state: "visible", timeout: 15000 });
 
     // Click a prompt to trigger chatStarted and reveal the chat input + submit
     const promptButton = page.locator("button:has-text('Plan a'), button:has-text('Best local'), button:has-text('How to travel')").first();

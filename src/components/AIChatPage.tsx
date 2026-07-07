@@ -79,7 +79,7 @@ export default function AIChatPage() {
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[0.95] tracking-tight">
                 <span className="block">ChinaConnect</span>
                 <span className="block mt-2 bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-200 bg-clip-text text-transparent">
-                  AI Concierge
+                  ChinaGuide AI
                 </span>
               </h1>
 

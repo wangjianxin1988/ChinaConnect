@@ -347,7 +347,7 @@ const MessageBubble: React.FC<{
         {!isUser && (
           <div className="flex items-center gap-2 mb-2 pb-1.5 border-b border-gray-100">
             <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-xs">🤖</div>
-            <span className="text-xs font-medium text-gray-500">ChinaConnect AI</span>
+            <span className="text-xs font-medium text-gray-500">ChinaGuide AI</span>
           </div>
         )}
 
@@ -696,7 +696,7 @@ export const AIChat: React.FC<AIChatProps> = ({
             <div className="flex items-center gap-3">
               <span className="text-2xl">🇨🇳</span>
               <div>
-                <h2 className="font-semibold text-gray-800">ChinaConnect AI</h2>
+                <h2 className="font-semibold text-gray-800">ChinaGuide AI</h2>
                 <div className="flex items-center gap-2 text-xs">
                   <span className={`inline-flex items-center gap-1 ${isMiniMaxAvailable ? "text-green-600" : "text-gray-400"}`}>
                     <span className={`w-2 h-2 rounded-full ${isMiniMaxAvailable ? "bg-green-500 animate-pulse" : "bg-gray-300"}`} />
