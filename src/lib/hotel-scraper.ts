@@ -151,34 +151,34 @@ async function getHotelImage(category: HotelCategory): Promise<string> {
 function getDefaultHotelImage(category: HotelCategory): string {
   const defaultImages: Record<HotelCategory, string[]> = {
     luxury: [
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/ext/5a6d10deaf68.webp",
+      "/img/ext/d16b47e46ada.webp",
+      "/img/ext/1e2e9858f320.webp",
     ],
     mid_range: [
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/ext/caaa3dd1d105.webp",
+      "/img/ext/2c63f93d58de.webp",
+      "/img/ext/45ff6d92c6fa.webp",
     ],
     budget: [
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/ext/3231e69d63d5.webp",
+      "/img/ext/0079ba993d86.webp",
+      "/img/ext/28a14426acec.webp",
     ],
     hostel: [
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/ext/1e2e9858f320.webp",
+      "/img/ext/92e899c8a470.webp",
+      "/img/ext/b7317026e4fa.webp",
     ],
     love_hotel: [
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/ext/3231e69d63d5.webp",
+      "/img/ext/0079ba993d86.webp",
+      "/img/ext/28a14426acec.webp",
     ],
     esports_hotel: [
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/2029731/pexels-photo-2029731.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/img/ext/b7317026e4fa.webp",
+      "/img/ext/5867b0bbe31e.webp",
+      "/img/ext/57ca74b3609b.webp",
     ],
   };
 

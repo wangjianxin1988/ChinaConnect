@@ -27,8 +27,7 @@ export const restaurants: Restaurant[] = [
     phone: "010-6566-1234",
     hours: "11:30-14:00, 17:30-21:30",
     tags: ["外国人友好", "高端", "商务宴请"],
-    imageUrl:
-      "https://images.pexels.com/photos/12978405/pexels-photo-12978405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/65f05851b4bb.webp",
     description: "米其林二星餐厅，主打台州海鲜与粤式料理融合",
     descriptionEn: "Two Michelin star restaurant featuring Taizhou seafood and Cantonese cuisine",
     ...defaultAccess,
@@ -51,8 +50,7 @@ export const restaurants: Restaurant[] = [
     phone: "010-6523-8999",
     hours: "10:00-22:00",
     tags: ["外国人友好", "老字号", "必吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/5848609/pexels-photo-5848609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/bea876190f29.webp",
     description: "黑珍珠三钻餐厅，北京烤鸭代表性名店",
     descriptionEn: "Three Diamond restaurant, representative Peking duck establishment",
     ...defaultAccess,
@@ -75,8 +73,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "douyin",
     dishHighlights: ["卤煮火烧", "炸灌肠", "豆汁"],
     tags: ["苍蝇馆子", "本地人爱去", "老北京"],
-    imageUrl:
-      "https://images.pexels.com/photos/20943970/pexels-photo-20943970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/cd6dec49b271.webp",
     description: "隐藏在小巷里的卤煮老店，本地人从小吃到大",
     ...defaultAccess,
   },
@@ -98,8 +95,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "bilibili",
     dishHighlights: ["麻婆豆腐", "水煮鱼", "夫妻肺片"],
     tags: ["苍蝇馆子", "正宗川菜", "辣"],
-    imageUrl:
-      "https://images.pexels.com/photos/10672908/pexels-photo-10672908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/1beaa4ec0924.webp",
     description: "藏在三里屯的川菜小馆，味道正宗价格实惠",
     ...defaultAccess,
   },
@@ -121,8 +117,7 @@ export const restaurants: Restaurant[] = [
     phone: "010-8454-0088",
     hours: "11:00-14:00, 17:00-22:00",
     tags: ["外国人友好", "高端", "潮汕菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/14786461/pexels-photo-14786461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/b6df8acd446d.webp",
     description: "米其林一星，潮汕菜精致化代表",
     ...defaultAccess,
   },
@@ -145,8 +140,7 @@ export const restaurants: Restaurant[] = [
     phone: "021-6328-9939",
     hours: "18:00-23:00 (仅限预约)",
     tags: ["外国人友好", "高端", "全球50佳"],
-    imageUrl:
-      "https://images.pexels.com/photos/8152135/pexels-photo-8152135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/e6bd4f3a011b.webp",
     description: "米其林三星沉浸式创意料理，全球最独特的用餐体验之一",
     ...defaultAccess,
   },
@@ -168,8 +162,7 @@ export const restaurants: Restaurant[] = [
     phone: "021-6280-0160",
     hours: "18:00-22:00",
     tags: ["外国人友好", "米其林", "创意料理"],
-    imageUrl:
-      "https://images.pexels.com/photos/33194323/pexels-photo-33194323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/c64a392499d2.webp",
     description: "黑珍珠三钻，主厨Stefan Stiller的创意料理",
     ...defaultAccess,
   },
@@ -191,8 +184,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "xiaohongshu",
     dishHighlights: ["大肠面", "黄鱼面", "葱油拌面"],
     tags: ["苍蝇馆子", "本地人爱去", "排队王"],
-    imageUrl:
-      "https://images.pexels.com/photos/19943225/pexels-photo-19943225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/9317132da5bb.webp",
     description: "上海最火的本帮面馆之一，每天排队到崩溃",
     ...defaultAccess,
   },
@@ -214,8 +206,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "douyin",
     dishHighlights: ["黄鱼面", "素交面", "馄饨"],
     tags: ["苍蝇馆子", "老字号", "记忆味道"],
-    imageUrl:
-      "https://images.pexels.com/photos/724291/pexels-photo-724291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/9b50ce9fc70b.webp",
     description: "传承三代的上海本帮面馆",
     ...defaultAccess,
   },
@@ -237,8 +228,7 @@ export const restaurants: Restaurant[] = [
     phone: "021-6333-1888",
     hours: "11:30-14:00, 17:30-21:30",
     tags: ["外国人友好", "闽菜", "景观餐厅"],
-    imageUrl:
-      "https://images.pexels.com/photos/7436962/pexels-photo-7436962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/d0b5c3bc0cb6.webp",
     description: "黑珍珠二钻，闽菜与外滩景观的完美结合",
     ...defaultAccess,
   },
@@ -261,8 +251,7 @@ export const restaurants: Restaurant[] = [
     phone: "0571-8797-5677",
     hours: "11:00-14:00, 17:00-21:00",
     tags: ["外国人友好", "米其林", "约会圣地"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860319/pexels-photo-32860319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/29abb4c608d5.webp",
     description: "米其林一星，创意杭帮菜代表餐厅",
     ...defaultAccess,
   },
@@ -284,8 +273,7 @@ export const restaurants: Restaurant[] = [
     phone: "0571-8682-3999",
     hours: "11:00-14:00, 17:00-21:00",
     tags: ["外国人友好", "素食", "环境绝美"],
-    imageUrl:
-      "https://images.pexels.com/photos/28445830/pexels-photo-28445830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/cbd9922c6ef8.webp",
     description: "黑珍珠二钻，隐藏在满觉陇的素食餐厅",
     ...defaultAccess,
   },
@@ -307,8 +295,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "xiaohongshu",
     dishHighlights: ["东坡肉", "西湖醋鱼", "龙井虾仁"],
     tags: ["苍蝇馆子", "本地人爱去", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/29126490/pexels-photo-29126490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/2c9ae4eeca9c.webp",
     description: "河坊街老字号，正宗杭帮菜味道",
     ...defaultAccess,
   },
@@ -330,8 +317,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "bilibili",
     dishHighlights: ["片儿川", "爆鳝面", "虾爆鳝"],
     tags: ["苍蝇馆子", "老杭州", "面食"],
-    imageUrl:
-      "https://images.pexels.com/photos/37436597/pexels-photo-37436597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/d342a6596ea0.webp",
     description: "杭州老底子味道，片儿川正宗",
     ...defaultAccess,
   },
@@ -353,8 +339,7 @@ export const restaurants: Restaurant[] = [
     phone: "0571-8797-7888",
     hours: "11:30-14:00, 17:30-21:00",
     tags: ["外国人友好", "米其林", "景观餐厅"],
-    imageUrl:
-      "https://images.pexels.com/photos/34474143/pexels-photo-34474143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/eff9b87563ef.webp",
     description: "米其林一星，西湖边上的江南美食",
     ...defaultAccess,
   },
@@ -377,8 +362,7 @@ export const restaurants: Restaurant[] = [
     phone: "028-8667-8888",
     hours: "11:30-14:00, 17:30-21:30",
     tags: ["外国人友好", "高端川菜", "私房菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/20943936/pexels-photo-20943936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/740f856d57ab.webp",
     description: "黑珍珠三钻，川菜大师兰桂均的私房菜馆",
     ...defaultAccess,
   },
@@ -400,8 +384,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "douyin",
     dishHighlights: ["牛肉串", "郡肝串", "兔腰"],
     tags: ["苍蝇馆子", "本地人爱去", "串串香"],
-    imageUrl:
-      "https://images.pexels.com/photos/33085849/pexels-photo-33085849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/21f4543d0ab1.webp",
     description: "成都串串香鼻祖，本地人从小吃到大",
     ...defaultAccess,
   },
@@ -423,8 +406,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "xiaohongshu",
     dishHighlights: ["卤鸡爪", "卤鸭脖", "卤牛蛙"],
     tags: ["苍蝇馆子", "网红店", "下酒菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/8256983/pexels-photo-8256983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/b29fa328a388.webp",
     description: "春熙路网红卤味，软糯入味",
     ...defaultAccess,
   },
@@ -446,8 +428,7 @@ export const restaurants: Restaurant[] = [
     phone: "028-8677-1234",
     hours: "11:00-14:00, 17:00-21:00",
     tags: ["外国人友好", "米其林", "川菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/7517290/pexels-photo-7517290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/0a34d73b3ac0.webp",
     description: "米其林一星，眉山老字号川菜馆",
     ...defaultAccess,
   },
@@ -469,8 +450,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "bilibili",
     dishHighlights: ["甜水面", "三大炮", "蛋烘糕"],
     tags: ["苍蝇馆子", "小吃", "宽窄巷子"],
-    imageUrl:
-      "https://images.pexels.com/photos/33692911/pexels-photo-33692911.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/da8c0f5339a0.png",
     description: "宽窄巷子里的成都小吃集合店",
     ...defaultAccess,
   },
@@ -493,8 +473,7 @@ export const restaurants: Restaurant[] = [
     phone: "020-8888-1234",
     hours: "11:30-14:30, 17:30-22:00",
     tags: ["外国人友好", "高端粤菜", "商务宴请"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/e2987486c5c3.webp",
     description: "米其林二星，珠江新城高端粤菜代表",
     ...defaultAccess,
   },
@@ -516,8 +495,7 @@ export const restaurants: Restaurant[] = [
     phone: "020-8319-1888",
     hours: "11:00-15:00, 17:00-22:00",
     tags: ["外国人友好", "老字号", "啫啫煲"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860331/pexels-photo-32860331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/cf6f2759dcc6.webp",
     description: "黑珍珠二钻，啫啫煲发源地",
     ...defaultAccess,
   },
@@ -539,8 +517,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "douyin",
     dishHighlights: ["原味椰子炖鸡", "西洋菜陈肾汤", "花旗参炖竹丝鸡"],
     tags: ["苍蝇馆子", "本地人爱去", "炖品"],
-    imageUrl:
-      "https://images.pexels.com/photos/20943937/pexels-photo-20943937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/2b8b871b136e.webp",
     description: "文明路炖品传奇，本地人最爱的老火汤",
     ...defaultAccess,
   },
@@ -562,8 +539,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "xiaohongshu",
     dishHighlights: ["艇仔粥", "鱼皮", "肠粉"],
     tags: ["苍蝇馆子", "老字号", "老西关"],
-    imageUrl:
-      "https://images.pexels.com/photos/5652188/pexels-photo-5652188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/c478d94d31fb.webp",
     description: "宝华路老字号，艇仔粥创始店",
     ...defaultAccess,
   },
@@ -585,8 +561,7 @@ export const restaurants: Restaurant[] = [
     phone: "020-3868-1234",
     hours: "11:00-15:00, 18:00-22:00",
     tags: ["外国人友好", "高端", "米其林"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860322/pexels-photo-32860322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/adb3de35992a.webp",
     description: "黑珍珠三钻，太古汇高端粤菜",
     ...defaultAccess,
   },
@@ -609,8 +584,7 @@ export const restaurants: Restaurant[] = [
     phone: "029-8727-1888",
     hours: "10:00-22:00",
     tags: ["外国人友好", "老字号", "陕菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/5545885/pexels-photo-5545885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/187ba7e96f44.webp",
     description: "黑珍珠二钻，西安老字号陕菜代表",
     ...defaultAccess,
   },
@@ -632,8 +606,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "douyin",
     dishHighlights: ["羊肉泡馍", "牛肉泡馍", "优质泡馍"],
     tags: ["苍蝇馆子", "本地人爱去", "回坊"],
-    imageUrl:
-      "https://images.pexels.com/photos/18852561/pexels-photo-18852561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/88c428d03f42.webp",
     description: "回坊泡馍老店，本地人推荐第一",
     ...defaultAccess,
   },
@@ -655,8 +628,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "xiaohongshu",
     dishHighlights: ["羊肉泡馍", "肉夹馍", "凉皮"],
     tags: ["苍蝇馆子", "老字号", "清真"],
-    imageUrl:
-      "https://images.pexels.com/photos/19334342/pexels-photo-19334342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/40398e7c6daa.webp",
     description: "百年老店，正宗西安清真美食",
     ...defaultAccess,
   },
@@ -678,8 +650,7 @@ export const restaurants: Restaurant[] = [
     phone: "029-8932-8888",
     hours: "11:00-22:00",
     tags: ["外国人友好", "米其林", "网红餐厅"],
-    imageUrl:
-      "https://images.pexels.com/photos/37266332/pexels-photo-37266332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/f5f94d31f0a9.webp",
     description: "米其林一星，赛格网红陕菜馆",
     ...defaultAccess,
   },
@@ -701,8 +672,7 @@ export const restaurants: Restaurant[] = [
     bloggerPlatform: "bilibili",
     dishHighlights: ["羊肉泡馍", "牛肉小炒", "糖蒜"],
     tags: ["苍蝇馆子", "本地人爱去", "回坊"],
-    imageUrl:
-      "https://images.pexels.com/photos/29305561/pexels-photo-29305561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/879988d9ba0d.webp",
     description: "回坊必吃榜，泡馍界的扛把子",
     ...defaultAccess,
   },
@@ -725,8 +695,7 @@ export const restaurants: Restaurant[] = [
     phone: "+86 23 6382 8888",
     hours: "11:00-23:00",
     tags: ["黑珍珠", "本地人爱去", "必吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/19775602/pexels-photo-19775602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/3a00829b84b4.webp",
     description: "黑珍珠一钻，以大刀腰片闻名的重庆火锅老店",
     ...defaultAccess,
   },
@@ -748,8 +717,7 @@ export const restaurants: Restaurant[] = [
     phone: "+86 23 6777 8888",
     hours: "24 hours",
     tags: ["米其林", "外国人友好", "连锁"],
-    imageUrl:
-      "https://images.pexels.com/photos/30882910/pexels-photo-30882910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/6158dc9ee5c6.webp",
     description: "米其林一星，海底捞以其卓越的服务著称",
     ...defaultAccess,
   },
@@ -769,8 +737,7 @@ export const restaurants: Restaurant[] = [
     lng: 106.5782,
     hours: "11:00-02:00",
     tags: ["本地人爱去", "排队王", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/34870559/pexels-photo-34870559.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/92d1d18bf492.png",
     description: "重庆火锅排队王，本地人最爱的老火锅",
     ...defaultAccess,
   },
@@ -787,8 +754,7 @@ export const restaurants: Restaurant[] = [
     cityZh: "重庆",
     hours: "06:00-14:00",
     tags: ["苍蝇馆子", "早餐", "本地人爱去"],
-    imageUrl:
-      "https://images.pexels.com/photos/8980452/pexels-photo-8980452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/38a59ee848db.webp",
     description: "重庆小面50强，本地人早餐首选",
     ...defaultAccess,
   },
@@ -811,8 +777,7 @@ export const restaurants: Restaurant[] = [
     phone: "0872-2670 888",
     hours: "10:00-22:00",
     tags: ["黑珍珠", "白族菜", "特色"],
-    imageUrl:
-      "https://images.pexels.com/photos/34258896/pexels-photo-34258896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/eb9da9fd5cc2.webp",
     description: "黑珍珠一钻，白族私房菜代表餐厅",
     ...defaultAccess,
   },
@@ -832,8 +797,7 @@ export const restaurants: Restaurant[] = [
     lng: 100.2772,
     hours: "08:00-20:00",
     tags: ["本地人爱去", "苍蝇馆子", "必吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/31756381/pexels-photo-31756381.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/ffe15dee6e28.webp",
     description: "大理古城神级凉鸡米线，本地人从小吃到大",
     ...defaultAccess,
   },
@@ -853,8 +817,7 @@ export const restaurants: Restaurant[] = [
     lng: 100.2872,
     hours: "10:00-22:00",
     tags: ["本地人爱去", "老字号", "白族菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/19021725/pexels-photo-19021725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/e9859f9014a4.webp",
     description: "古城老字号白族菜馆，味道正宗",
     ...defaultAccess,
   },
@@ -877,8 +840,7 @@ export const restaurants: Restaurant[] = [
     phone: "0773-2835 888",
     hours: "10:30-21:30",
     tags: ["黑珍珠", "老字号", "桂林菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/36290043/pexels-photo-36290043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/c557645ff978.webp",
     description: "黑珍珠一钻，桂林老字号餐厅",
     ...defaultAccess,
   },
@@ -898,8 +860,7 @@ export const restaurants: Restaurant[] = [
     lng: 110.3072,
     hours: "06:00-15:00",
     tags: ["本地人爱去", "早餐", "必吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/9224926/pexels-photo-9224926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/4244dee9cc7c.webp",
     description: "桂林米粉发源地，本地人早餐首选",
     ...defaultAccess,
   },
@@ -919,8 +880,7 @@ export const restaurants: Restaurant[] = [
     lng: 110.2972,
     hours: "07:00-20:00",
     tags: ["本地人爱去", "连锁", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/30136627/pexels-photo-30136627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/a87665692a9d.webp",
     description: "桂林知名米粉连锁，本地人认可",
     ...defaultAccess,
   },
@@ -941,8 +901,7 @@ export const restaurants: Restaurant[] = [
     phone: "0773-5635 888",
     hours: "10:30-21:30",
     tags: ["本地人爱去", "粤菜", "必吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/35069186/pexels-photo-35069186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/0c7230277cd1.webp",
     description: "桂林知名粤菜馆，烧鹅是招牌",
     ...defaultAccess,
   },
@@ -965,8 +924,7 @@ export const restaurants: Restaurant[] = [
     phone: "025-8332 0888",
     hours: "11:00-14:00, 17:00-21:00",
     tags: ["黑珍珠", "淮扬菜", "高端"],
-    imageUrl:
-      "https://images.pexels.com/photos/32149254/pexels-photo-32149254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/ca4cf2394c37.webp",
     description: "黑珍珠一钻，南京高端淮扬菜代表",
     ...defaultAccess,
   },
@@ -988,8 +946,7 @@ export const restaurants: Restaurant[] = [
     phone: "025-8330 8888",
     hours: "11:30-14:30, 17:30-22:00",
     tags: ["米其林", "淮扬菜", "酒店餐厅"],
-    imageUrl:
-      "https://images.pexels.com/photos/11161453/pexels-photo-11161453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/0af9b896b0a6.webp",
     description: "米其林一星，香格里拉酒店江南灶中餐厅",
     ...defaultAccess,
   },
@@ -1009,8 +966,7 @@ export const restaurants: Restaurant[] = [
     lng: 118.7972,
     hours: "06:30-14:00, 17:00-20:30",
     tags: ["本地人爱去", "老字号", "早餐"],
-    imageUrl:
-      "https://images.pexels.com/photos/37113573/pexels-photo-37113573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/3839d2ad1905.webp",
     description: "南京知名清真老店，牛肉锅贴必吃",
     ...defaultAccess,
   },
@@ -1030,8 +986,7 @@ export const restaurants: Restaurant[] = [
     lng: 118.8072,
     hours: "07:00-19:00",
     tags: ["本地人爱去", "馄饨", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/28124031/pexels-photo-28124031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/a136adc9f61d.webp",
     description: "老门东神级馄饨店，本地人早餐首选",
     ...defaultAccess,
   },
@@ -1054,8 +1009,7 @@ export const restaurants: Restaurant[] = [
     phone: "+86 755 8268 0888",
     hours: "11:00-15:00, 17:30-22:00",
     tags: ["米其林", "粤菜", "高端"],
-    imageUrl:
-      "https://images.pexels.com/photos/36290926/pexels-photo-36290926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/47bd0ad5e527.webp",
     description: "米其林一星，深圳经典粤菜餐厅",
     ...defaultAccess,
   },
@@ -1077,8 +1031,7 @@ export const restaurants: Restaurant[] = [
     phone: "+86 755 8250 8888",
     hours: "11:00-14:30, 17:30-22:00",
     tags: ["黑珍珠", "粤菜", "高端"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860318/pexels-photo-32860318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/cb84a858c1f9.webp",
     description: "黑珍珠一钻，深圳粤菜代表餐厅",
     ...defaultAccess,
   },
@@ -1098,8 +1051,7 @@ export const restaurants: Restaurant[] = [
     lng: 113.9272,
     hours: "11:00-22:00",
     tags: ["本地人爱去", "椰子鸡", "必吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/35049889/pexels-photo-35049889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/beb632782326.webp",
     description: "深圳特色椰子鸡火锅，健康又美味",
     ...defaultAccess,
   },
@@ -1120,8 +1072,7 @@ export const restaurants: Restaurant[] = [
     phone: "+86 755 2640 8888",
     hours: "11:00-14:30, 17:00-21:30",
     tags: ["本地人爱去", "潮汕菜", "必吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/248455/pexels-photo-248455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/852bb52826b5.webp",
     description: "潮汕鹅肉名店，盐焗鹅是正宗风味",
     ...defaultAccess,
   },
@@ -1144,8 +1095,7 @@ export const restaurants: Restaurant[] = [
     phone: "0512-6727 8588",
     hours: "11:00-13:30, 17:00-20:30",
     tags: ["黑珍珠", "苏帮菜", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/11216403/pexels-photo-11216403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/599a5e53e1ff.webp",
     description: "黑珍珠二钻，苏州乾隆年间老字号",
     ...defaultAccess,
   },
@@ -1167,8 +1117,7 @@ export const restaurants: Restaurant[] = [
     phone: "0512-6512 8888",
     hours: "11:00-14:00, 17:00-21:00",
     tags: ["米其林", "苏帮菜", "创新"],
-    imageUrl:
-      "https://images.pexels.com/photos/36466099/pexels-photo-36466099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/82ebcb460dbb.webp",
     description: "米其林一星，苏帮菜创新代表",
     ...defaultAccess,
   },
@@ -1188,8 +1137,7 @@ export const restaurants: Restaurant[] = [
     lng: 120.6072,
     hours: "06:00-14:00",
     tags: ["本地人爱去", "苏式面", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/24186431/pexels-photo-24186431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/4b48a30bba2b.webp",
     description: "苏州传奇面馆，苏式面正宗",
     ...defaultAccess,
   },
@@ -1209,8 +1157,7 @@ export const restaurants: Restaurant[] = [
     lng: 120.6272,
     hours: "10:30-14:00, 16:30-20:00",
     tags: ["本地人爱去", "苏帮菜", "老宅"],
-    imageUrl:
-      "https://images.pexels.com/photos/37015409/pexels-photo-37015409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/e6a2d37e135e.webp",
     description: "老宅里的苏帮菜，本地人最爱的家味道",
     ...defaultAccess,
   },

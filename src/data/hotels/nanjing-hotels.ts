@@ -20,8 +20,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京路160号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 2635 3388",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -37,8 +36,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京大道178号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 8575 9374",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊"],
   },
@@ -54,8 +52,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京大道4号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 1942 9213",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -71,8 +68,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京路8号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 6931 6532",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊"],
   },
@@ -88,8 +84,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京路12号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 5721 3995",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -105,8 +100,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京街124号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 7184 1024",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi"],
   },
@@ -122,8 +116,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京大道75号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 7435 9922",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi", "地铁直达"],
   },
@@ -139,8 +132,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京大道157号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 6314 5151",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi"],
   },
@@ -156,8 +148,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "火车站",
     address: "南京街49号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 7548 1764",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi", "地铁直达"],
   },
@@ -173,8 +164,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京街4号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 1379 6331",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi"],
   },
@@ -190,8 +180,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京大道57号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 2211 7104",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -207,8 +196,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京路43号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 7770 6984",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -224,8 +212,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京路169号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 4346 7903",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -241,8 +228,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "火车站",
     address: "南京路105号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 1822 1897",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -258,8 +244,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京大道144号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 3740 8784",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -275,8 +260,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京大道41号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 1792 4801",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -292,8 +276,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "火车站",
     address: "南京大道97号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 6186 1467",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -309,8 +292,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京路150号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 9543 3667",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -326,8 +308,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京街112号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 4313 2470",
     highlights: ["背包客首选", "公共厨房", "社交氛围"],
   },
@@ -343,8 +324,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "火车站",
     address: "南京街188号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 5956 7870",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -360,8 +340,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京街72号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 8461 8133",
     highlights: ["主题房间", "情侣专属", "私密空间"],
   },
@@ -377,8 +356,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "火车站",
     address: "南京路185号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 1187 9658",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -394,8 +372,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京大道189号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 7466 9417",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -411,8 +388,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京大道67号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 4301 9503",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -428,8 +404,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "市中心",
     address: "南京大道192号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 1331 1850",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -445,8 +420,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "商业区",
     address: "南京街80号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 9706 2618",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑", "游戏主题"],
   },
@@ -462,8 +436,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京大道83号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 1178 7996",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -479,8 +452,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京路17号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 8850 6490",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -496,8 +468,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京路79号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 4603 6568",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -513,8 +484,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "景区附近",
     address: "南京街18号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 7522 1297",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑", "游戏主题"],
   },
@@ -530,8 +500,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区42号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 79013895",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -547,8 +516,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区25号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 84283953",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -564,8 +532,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区145号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 24602123",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -581,8 +548,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区8号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 08898808",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -598,8 +564,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区152号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 92270258",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -615,8 +580,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区186号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 79247227",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -632,8 +596,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区54号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 25238032",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -649,8 +612,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区48号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 66952243",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -666,8 +628,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区193号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 20606010",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -683,8 +644,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区36号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 26717197",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -700,8 +660,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区163号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 28988541",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -717,8 +676,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区116号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 92416812",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -734,8 +692,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区36号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 77572448",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -751,8 +708,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区61号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 35844034",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -768,8 +724,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区93号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 38336626",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -785,8 +740,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区89号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 24676667",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -802,8 +756,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区3号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 75477216",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -819,8 +772,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区71号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 78124889",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -836,8 +788,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区172号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 32099582",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -853,8 +804,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区119号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 36669280",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -870,8 +820,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区5号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 91150544",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -887,8 +836,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区23号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 02048432",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -904,8 +852,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区93号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 15753082",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -921,8 +868,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区128号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 19630611",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -938,8 +884,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区168号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 63742859",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -955,8 +900,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区1号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 45810075",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -972,8 +916,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区113号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 22061037",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -989,8 +932,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区178号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 46575261",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1006,8 +948,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区161号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 28461946",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1023,8 +964,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区119号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 76404190",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1040,8 +980,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区65号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 31606906",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1057,8 +996,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区36号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 24382556",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1074,8 +1012,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区113号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 99529603",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1091,8 +1028,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区165号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 99783700",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1108,8 +1044,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区137号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 06104787",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1125,8 +1060,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区154号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 23552311",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1142,8 +1076,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区61号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 97910861",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1159,8 +1092,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区113号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 91407970",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1176,8 +1108,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区76号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 28094351",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1193,8 +1124,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区186号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 52980261",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1210,8 +1140,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区12号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 50340817",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1227,8 +1156,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区177号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 25715299",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1244,8 +1172,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区103号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 11428334",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1261,8 +1188,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区14号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 67850282",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1278,8 +1204,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区191号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 59260104",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1295,8 +1220,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区126号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 20065209",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1312,8 +1236,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区16号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 32104373",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1329,8 +1252,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区32号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 57684815",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1346,8 +1268,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区116号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 86519965",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1363,8 +1284,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区50号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 22997922",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1380,8 +1300,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区60号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 49270235",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1397,8 +1316,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区163号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 52939004",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1414,8 +1332,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区109号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 48176450",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1431,8 +1348,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区102号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 68391588",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1448,8 +1364,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区103号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 84979449",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1465,8 +1380,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区76号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 73683735",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1482,8 +1396,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区66号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 36671804",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1499,8 +1412,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区193号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 87866483",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1516,8 +1428,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区117号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 39287427",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1533,8 +1444,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区47号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 85038900",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1550,8 +1460,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区16号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 89637665",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1567,8 +1476,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区108号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 77784604",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1584,8 +1492,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区172号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 77116456",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1601,8 +1508,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区62号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 67871347",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1618,8 +1524,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区134号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 83191533",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1635,8 +1540,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区112号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 62163256",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1652,8 +1556,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区68号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 74483939",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1669,8 +1572,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区19号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 65823073",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1686,8 +1588,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区47号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 49785835",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1703,8 +1604,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区148号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 93457235",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1720,8 +1620,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区71号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 03755513",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1737,8 +1636,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区23号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 77560726",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1754,8 +1652,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区193号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 33398255",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1771,8 +1668,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区23号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 50652534",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1788,8 +1684,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区5号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 22637912",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1805,8 +1700,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区29号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 25432943",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1822,8 +1716,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区89号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 16308408",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1839,8 +1732,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区15号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 82319800",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1856,8 +1748,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区135号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 01175035",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1873,8 +1764,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区91号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 55589502",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1890,8 +1780,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区165号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 36759351",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -1907,8 +1796,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区176号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 61963229",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1924,8 +1812,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区165号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 93788107",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1941,8 +1828,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区131号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 75015499",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1958,8 +1844,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区41号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 43603707",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1975,8 +1860,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区131号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 15578020",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1992,8 +1876,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区136号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 41725701",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2009,8 +1892,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区63号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 95140021",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2026,8 +1908,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区101号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 73990003",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2043,8 +1924,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区184号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 25705642",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2060,8 +1940,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区90号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 28369855",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2077,8 +1956,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区81号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 05356652",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2094,8 +1972,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区13号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 86228905",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2111,8 +1988,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区168号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 13370463",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2128,8 +2004,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区72号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 90464477",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2145,8 +2020,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区70号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 20924586",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2162,8 +2036,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区31号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 24341191",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2179,8 +2052,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区17号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 99828493",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2196,8 +2068,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区17号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 26750168",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2213,8 +2084,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区177号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 25589277",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2230,8 +2100,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区106号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 58178034",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2247,8 +2116,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区141号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 72046137",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2264,8 +2132,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区2号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 71946307",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2281,8 +2148,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区9号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 82476120",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2298,8 +2164,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区99号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 45353404",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2315,8 +2180,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区123号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 44251452",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2332,8 +2196,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区141号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 56456508",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2349,8 +2212,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区187号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 75530776",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2366,8 +2228,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区199号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 14639818",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2383,8 +2244,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区144号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 77642867",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2400,8 +2260,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区127号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 50020823",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2417,8 +2276,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区20号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 69259882",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2434,8 +2292,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区158号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 76447436",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2451,8 +2308,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区121号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 98802878",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2468,8 +2324,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区163号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 35711598",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2485,8 +2340,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区1号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 28036364",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2502,8 +2356,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区3号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 72080599",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2519,8 +2372,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区141号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 59490080",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2536,8 +2388,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区191号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 10696213",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2553,8 +2404,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区169号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 51906354",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2570,8 +2420,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区22号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 80042742",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2587,8 +2436,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区82号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 56786509",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2604,8 +2452,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区56号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 67516412",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2621,8 +2468,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区35号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 025 33405169",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2638,8 +2484,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区133号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 025 20708942",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2655,8 +2500,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区7号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 45540880",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2672,8 +2516,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区26号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 22211461",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2689,8 +2532,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区63号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 29711408",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2706,8 +2548,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区69号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 32893581",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2723,8 +2564,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区156号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 025 82361698",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2740,8 +2580,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区142号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 12354532",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2757,8 +2596,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区115号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 23014824",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2774,8 +2612,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区90号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 37542692",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2791,8 +2628,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区25号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 10879761",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2808,8 +2644,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区115号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 52479072",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2825,8 +2660,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区50号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 19488200",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2842,8 +2676,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区197号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 28716552",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2859,8 +2692,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区166号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 00600721",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2876,8 +2708,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区118号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 93785980",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2893,8 +2724,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区42号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 98794569",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2910,8 +2740,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区162号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 33377527",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2927,8 +2756,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区109号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 22775825",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2944,8 +2772,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区194号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 025 26511411",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2961,8 +2788,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区5号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 025 31085723",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2978,8 +2804,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "秦淮区",
     address: "秦淮区5号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 025 09407534",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2995,8 +2820,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "鼓楼区",
     address: "鼓楼区185号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 31647544",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -3012,8 +2836,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "建邺区",
     address: "建邺区55号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 025 34961529",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -3029,8 +2852,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "栖霞区",
     address: "栖霞区1号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 025 35399161",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -3046,8 +2868,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "雨花台区",
     address: "雨花台区112号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 025 23714076",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -3063,8 +2884,7 @@ export const nanjingHotels: HotelItem[] = [
     district: "玄武区",
     address: "玄武区68号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 025 13663661",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },

@@ -20,8 +20,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "火车站",
     address: "武汉大道142号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 4387 7557",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -37,8 +36,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "市中心",
     address: "武汉大道10号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 6283 6499",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -54,8 +52,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "商业区",
     address: "武汉路151号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 4128 6212",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊"],
   },
@@ -71,8 +68,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "商业区",
     address: "武汉街91号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 3889 3168",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -88,8 +84,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉街191号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 1995 3293",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -105,8 +100,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "市中心",
     address: "武汉大道73号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 3109 7347",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -122,8 +116,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉路1号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 9086 2343",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi"],
   },
@@ -139,8 +132,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "市中心",
     address: "武汉路194号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 9692 5668",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi", "地铁直达"],
   },
@@ -156,8 +148,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉街112号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 2152 1199",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -173,8 +164,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉路7号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 1646 2827",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -190,8 +180,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉街58号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 9978 2920",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -207,8 +196,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "市中心",
     address: "武汉大道159号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 9141 9231",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -224,8 +212,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "火车站",
     address: "武汉路47号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 3452 4699",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -241,8 +228,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "市中心",
     address: "武汉大道31号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 5817 7180",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -258,8 +244,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "商业区",
     address: "武汉路173号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 8965 3189",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -275,8 +260,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "市中心",
     address: "武汉路109号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 4045 8872",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -292,8 +276,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "商业区",
     address: "武汉大道107号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 6259 2573",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -309,8 +292,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉大道150号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 8729 7249",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -326,8 +308,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉大道177号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 1815 5013",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -343,8 +324,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "火车站",
     address: "武汉路66号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 7935 6398",
     highlights: ["背包客首选", "公共厨房", "社交氛围"],
   },
@@ -360,8 +340,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "商业区",
     address: "武汉街19号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 9171 7276",
     highlights: ["主题房间", "情侣专属", "私密空间"],
   },
@@ -377,8 +356,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "商业区",
     address: "武汉街69号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 4515 7022",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -394,8 +372,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉大道70号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 1987 8384",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -411,8 +388,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉路100号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 5529 1579",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -428,8 +404,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "火车站",
     address: "武汉大道157号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 7495 3051",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -445,8 +420,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉街28号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 5651 9457",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑", "游戏主题"],
   },
@@ -462,8 +436,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "景区附近",
     address: "武汉街90号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 2923 8834",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -479,8 +452,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "火车站",
     address: "武汉路157号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 7621 9997",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -496,8 +468,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "商业区",
     address: "武汉大道3号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 6906 6394",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -513,8 +484,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "火车站",
     address: "武汉街10号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 4380 2617",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑", "游戏主题"],
   },
@@ -530,8 +500,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区11号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 58688472",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -547,8 +516,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区190号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 11694094",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -564,8 +532,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区44号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 37096612",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -581,8 +548,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区30号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 48528224",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -598,8 +564,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区33号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 02517510",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -615,8 +580,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区83号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 19262394",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -632,8 +596,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区166号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 76118567",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -649,8 +612,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区155号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 45695326",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -666,8 +628,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区165号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 56808213",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -683,8 +644,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区61号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 38016319",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -700,8 +660,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区66号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 59501894",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -717,8 +676,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区8号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 21384924",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -734,8 +692,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区115号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 07156294",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -751,8 +708,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区187号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 35992097",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -768,8 +724,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区145号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 48662871",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -785,8 +740,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区166号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 69597502",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -802,8 +756,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区150号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 14238809",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -819,8 +772,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区88号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 05362718",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -836,8 +788,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区3号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 53265068",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -853,8 +804,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区53号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 93883471",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -870,8 +820,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区50号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 83958738",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -887,8 +836,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区23号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 17556809",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -904,8 +852,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区85号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 88344014",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -921,8 +868,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区130号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 94518894",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -938,8 +884,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区93号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 94970290",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -955,8 +900,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区194号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 06871754",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -972,8 +916,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区109号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 86209436",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -989,8 +932,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区33号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 11214368",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1006,8 +948,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区25号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 09447341",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1023,8 +964,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区199号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 37720794",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1040,8 +980,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区34号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 47786385",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1057,8 +996,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区49号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 07712846",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1074,8 +1012,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区33号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 48745203",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1091,8 +1028,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区155号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 83810235",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1108,8 +1044,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区38号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 98535931",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1125,8 +1060,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区40号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 11487329",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1142,8 +1076,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区29号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 56297855",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1159,8 +1092,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区143号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 48379936",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1176,8 +1108,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区65号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 76995727",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1193,8 +1124,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区105号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 31150630",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1210,8 +1140,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区18号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 42244625",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1227,8 +1156,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区65号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 47706335",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1244,8 +1172,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区19号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 62573768",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1261,8 +1188,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区200号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 08287648",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1278,8 +1204,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区197号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 31307436",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1295,8 +1220,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区143号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 38980218",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1312,8 +1236,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区155号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 53999885",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1329,8 +1252,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区143号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 86615218",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1346,8 +1268,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区18号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 27752284",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1363,8 +1284,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区3号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 50362913",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1380,8 +1300,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区152号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 53731764",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1397,8 +1316,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区62号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 53774879",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1414,8 +1332,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区31号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 87243368",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1431,8 +1348,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区183号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 50001972",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1448,8 +1364,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区181号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 25815956",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1465,8 +1380,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区65号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 98640032",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1482,8 +1396,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区178号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 46084823",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1499,8 +1412,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区24号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 73287268",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1516,8 +1428,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区90号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 73042399",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1533,8 +1444,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区107号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 49058250",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1550,8 +1460,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区195号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 02153728",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1567,8 +1476,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区52号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 77149658",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1584,8 +1492,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区99号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 34292231",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1601,8 +1508,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区158号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 15522562",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1618,8 +1524,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区38号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 32043517",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1635,8 +1540,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区64号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 57401568",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1652,8 +1556,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区30号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 20614173",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1669,8 +1572,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区139号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 37257713",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1686,8 +1588,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区144号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 48750160",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1703,8 +1604,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区33号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 84859694",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1720,8 +1620,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区131号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 43919219",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1737,8 +1636,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区4号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 52100396",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1754,8 +1652,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区101号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 00196222",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1771,8 +1668,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区118号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 42762278",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1788,8 +1684,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区39号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 04266719",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1805,8 +1700,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区100号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 89439342",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1822,8 +1716,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区101号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 07547105",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1839,8 +1732,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区55号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 85673845",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1856,8 +1748,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区15号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 65860175",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1873,8 +1764,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区189号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 93645089",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1890,8 +1780,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区186号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 10494491",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -1907,8 +1796,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区75号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 96692751",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1924,8 +1812,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区109号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 15175681",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1941,8 +1828,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区193号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 02843670",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1958,8 +1844,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区128号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 13989947",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1975,8 +1860,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区13号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 35309354",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1992,8 +1876,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区175号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 87909630",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2009,8 +1892,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区6号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 34344373",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2026,8 +1908,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区3号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 57700108",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2043,8 +1924,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区136号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 85663463",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2060,8 +1940,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区15号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 89083527",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2077,8 +1956,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区164号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 87228420",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2094,8 +1972,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区108号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 91861420",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2111,8 +1988,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区194号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 29869144",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2128,8 +2004,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区200号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 64728738",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2145,8 +2020,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区75号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 42732107",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2162,8 +2036,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区15号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 21531540",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2179,8 +2052,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区53号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 34241235",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2196,8 +2068,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区46号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 36523794",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2213,8 +2084,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区54号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 93116670",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2230,8 +2100,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区24号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 23340400",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2247,8 +2116,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区186号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 41617230",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2264,8 +2132,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区141号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 61157934",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2281,8 +2148,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区71号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 38817382",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2298,8 +2164,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区132号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 22495091",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2315,8 +2180,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区23号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 12570185",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2332,8 +2196,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区47号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 78316295",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2349,8 +2212,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区145号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 05958041",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2366,8 +2228,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区54号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 82268989",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2383,8 +2244,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区74号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 53263481",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2400,8 +2260,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区183号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 49700713",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2417,8 +2276,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区26号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 30352924",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2434,8 +2292,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区81号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 61326193",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2451,8 +2308,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区142号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 76703910",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2468,8 +2324,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区126号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 34156317",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2485,8 +2340,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区97号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 38999941",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2502,8 +2356,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区17号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 40583604",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2519,8 +2372,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区166号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 89085379",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2536,8 +2388,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区197号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 15625028",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2553,8 +2404,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区87号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 93016347",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2570,8 +2420,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区95号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 90025513",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2587,8 +2436,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区196号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 77099257",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2604,8 +2452,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区174号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 58698560",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2621,8 +2468,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区164号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 05448790",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2638,8 +2484,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区82号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 77112827",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2655,8 +2500,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区106号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 04408493",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2672,8 +2516,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区193号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 88481714",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2689,8 +2532,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区5号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 29021522",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2706,8 +2548,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区124号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 027 02987877",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2723,8 +2564,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区25号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 57744584",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2740,8 +2580,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区116号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 55015963",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2757,8 +2596,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区14号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 99005585",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2774,8 +2612,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区132号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 13802579",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2791,8 +2628,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区193号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 61655869",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2808,8 +2644,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区125号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 027 87935926",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2825,8 +2660,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区54号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 28004544",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2842,8 +2676,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区62号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 84130573",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2859,8 +2692,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区176号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 55203225",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2876,8 +2708,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区164号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 027 45861418",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2893,8 +2724,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区66号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 46894233",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2910,8 +2740,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区21号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 027 13696317",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2927,8 +2756,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区32号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 027 53756118",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2944,8 +2772,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区130号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 027 51353294",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2961,8 +2788,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区148号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 90753074",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2978,8 +2804,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江岸区",
     address: "江岸区152号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 61393148",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2995,8 +2820,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "江汉区",
     address: "江汉区184号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 027 39197915",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -3012,8 +2836,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "洪山区",
     address: "洪山区173号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 43169739",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -3029,8 +2852,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "汉阳区",
     address: "汉阳区51号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 027 93671418",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -3046,8 +2868,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "东湖高新区",
     address: "东湖高新区108号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 027 29570280",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -3063,8 +2884,7 @@ export const wuhanHotels: HotelItem[] = [
     district: "武昌区",
     address: "武昌区117号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 027 44666735",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },

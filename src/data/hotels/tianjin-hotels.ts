@@ -20,8 +20,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津路16号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 2597 7788",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -37,8 +36,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津街23号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 5489 4191",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -54,8 +52,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站",
     address: "天津路128号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 1314 1807",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -71,8 +68,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津街171号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 5994 6608",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -88,8 +84,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津路46号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 6351 1759",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -105,8 +100,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站",
     address: "天津大道135号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 8240 3942",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -122,8 +116,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津大道193号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 8655 6216",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi"],
   },
@@ -139,8 +132,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津街152号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 7849 5535",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -156,8 +148,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津大道46号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 4176 2653",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi", "地铁直达"],
   },
@@ -173,8 +164,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津大道84号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 7628 9001",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -190,8 +180,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津路163号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 1088 4784",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -207,8 +196,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津路86号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 8567 3570",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -224,8 +212,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津街154号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 8153 2008",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -241,8 +228,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站",
     address: "天津街133号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 1490 4453",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -258,8 +244,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津街151号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 1957 5877",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -275,8 +260,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津大道4号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 6548 3180",
     highlights: ["背包客首选", "公共厨房", "社交氛围"],
   },
@@ -292,8 +276,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站",
     address: "天津街24号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 6740 6023",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -309,8 +292,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站",
     address: "天津街175号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 9273 1645",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -326,8 +308,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津路98号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 3138 9889",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -343,8 +324,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津大道163号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 5907 5375",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -360,8 +340,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津路147号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 9874 9286",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -377,8 +356,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津路159号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 6220 9658",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -394,8 +372,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津大道153号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 2487 3803",
     highlights: ["主题房间", "情侣专属", "私密空间"],
   },
@@ -411,8 +388,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津大道135号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 7521 8395",
     highlights: ["主题房间", "情侣专属", "私密空间"],
   },
@@ -428,8 +404,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津街26号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 9875 9805",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -445,8 +420,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "天津街81号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 4727 6111",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -462,8 +436,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津街122号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 8629 5268",
     highlights: ["高端配置", "电竞设备", "24小时营业"],
   },
@@ -479,8 +452,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津大道186号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 6160 6133",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -496,8 +468,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "天津大道93号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 3681 6365",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -513,8 +484,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "天津路136号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 2254 3077",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -530,8 +500,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心171号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 01057584",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -547,8 +516,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区71号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 41811389",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -564,8 +532,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近132号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 35962751",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -581,8 +548,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近105号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 91375679",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -598,8 +564,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区168号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 65074895",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -615,8 +580,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区149号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 63211792",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -632,8 +596,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心158号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 12035723",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -649,8 +612,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区183号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 95408557",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -666,8 +628,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近36号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 52423002",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -683,8 +644,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近96号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 48453475",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -700,8 +660,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区162号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 75539222",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -717,8 +676,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区48号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 45305993",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -734,8 +692,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心125号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 36951691",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -751,8 +708,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区136号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 24180657",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -768,8 +724,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近162号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 67992245",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -785,8 +740,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近76号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 08642109",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -802,8 +756,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区180号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 45013479",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -819,8 +772,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区96号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 95131136",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -836,8 +788,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心160号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 76140795",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -853,8 +804,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区132号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 73939727",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -870,8 +820,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近64号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 99666637",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -887,8 +836,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近51号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 00923746",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -904,8 +852,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区12号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 71236819",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -921,8 +868,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区166号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 66158679",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -938,8 +884,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心173号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 95192243",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -955,8 +900,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心158号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 67987051",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -972,8 +916,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区108号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 97671188",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -989,8 +932,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近37号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 72046198",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1006,8 +948,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近153号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 33582809",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1023,8 +964,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区186号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 96534064",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1040,8 +980,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区53号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 24565061",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1057,8 +996,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心86号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 16174580",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1074,8 +1012,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区88号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 93639528",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1091,8 +1028,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近64号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 78278466",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1108,8 +1044,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近197号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 34405314",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1125,8 +1060,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区76号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 99438017",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1142,8 +1076,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区198号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 87993018",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1159,8 +1092,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心129号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 71885359",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1176,8 +1108,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区117号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 55590396",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1193,8 +1124,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近119号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 33187336",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1210,8 +1140,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近130号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 88313363",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1227,8 +1156,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区165号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 54722740",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1244,8 +1172,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区149号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 64521164",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1261,8 +1188,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心192号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 02606813",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1278,8 +1204,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区31号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 06723846",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1295,8 +1220,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近170号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 00532133",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1312,8 +1236,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近16号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 17092068",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1329,8 +1252,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区171号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 75183275",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1346,8 +1268,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区14号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 20827184",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1363,8 +1284,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心106号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 08387819",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1380,8 +1300,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心138号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 98833422",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1397,8 +1316,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区159号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 18335303",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1414,8 +1332,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近187号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 36497170",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1431,8 +1348,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近17号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 96546864",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1448,8 +1364,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区187号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 53612025",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1465,8 +1380,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区96号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 41651513",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1482,8 +1396,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心116号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 61857620",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1499,8 +1412,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区39号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 73038903",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1516,8 +1428,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近93号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 82989846",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1533,8 +1444,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近176号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 00578717",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1550,8 +1460,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区194号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 59282116",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1567,8 +1476,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区29号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 44041473",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1584,8 +1492,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心177号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 38698030",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1601,8 +1508,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区169号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 30769253",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1618,8 +1524,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近102号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 09033374",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1635,8 +1540,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近144号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 88806388",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1652,8 +1556,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区148号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 85070154",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1669,8 +1572,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区24号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 43995570",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1686,8 +1588,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心31号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 58772835",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1703,8 +1604,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区42号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 71753089",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1720,8 +1620,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近98号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 18609399",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1737,8 +1636,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近31号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 94713263",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1754,8 +1652,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区10号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 48787091",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1771,8 +1668,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区111号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 55527814",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1788,8 +1684,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心102号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 45497743",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1805,8 +1700,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心193号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 51229915",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1822,8 +1716,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区158号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 88681581",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1839,8 +1732,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近160号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 25364044",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1856,8 +1748,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近25号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 83913486",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1873,8 +1764,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区66号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 04735016",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1890,8 +1780,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区112号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 54588710",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -1907,8 +1796,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心123号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 69143901",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1924,8 +1812,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区185号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 71617078",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1941,8 +1828,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近75号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 48463417",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1958,8 +1844,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近179号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 53365092",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1975,8 +1860,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区108号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 31195586",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1992,8 +1876,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区33号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 48981619",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2009,8 +1892,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心144号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 93738997",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2026,8 +1908,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区25号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 34794048",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2043,8 +1924,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近167号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 30708015",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2060,8 +1940,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近163号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 08161439",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2077,8 +1956,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区94号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 14904199",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2094,8 +1972,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区98号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 72716543",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2111,8 +1988,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心126号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 63588565",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2128,8 +2004,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区73号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 55981017",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2145,8 +2020,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近156号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 62231344",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2162,8 +2036,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近43号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 77921679",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2179,8 +2052,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区110号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 33368763",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2196,8 +2068,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区82号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 90252631",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2213,8 +2084,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心124号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 45419233",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2230,8 +2100,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心134号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 52112579",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2247,8 +2116,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区184号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 63899652",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2264,8 +2132,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近15号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 96795239",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2281,8 +2148,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近78号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 02205264",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2298,8 +2164,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区38号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 11090926",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2315,8 +2180,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区103号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 05814816",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2332,8 +2196,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心138号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 89396495",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2349,8 +2212,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区54号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 27820457",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2366,8 +2228,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近90号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 88962275",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2383,8 +2244,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近103号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 47172075",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2400,8 +2260,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区190号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 79471375",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2417,8 +2276,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区81号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 51781233",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2434,8 +2292,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心6号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 61553480",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2451,8 +2308,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区96号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 91469096",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2468,8 +2324,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近68号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 88460387",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2485,8 +2340,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近17号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 95891648",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2502,8 +2356,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区82号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 65445303",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2519,8 +2372,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区79号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 20432862",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2536,8 +2388,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心140号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 03780148",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2553,8 +2404,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区81号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 07645654",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2570,8 +2420,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近9号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 66043480",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2587,8 +2436,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近51号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 55146122",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2604,8 +2452,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区137号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 28893220",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2621,8 +2468,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区76号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 69096226",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2638,8 +2484,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心112号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 84354812",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2655,8 +2500,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心175号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 022 72951413",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2672,8 +2516,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区134号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 26620453",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2689,8 +2532,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近200号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 022 04814903",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2706,8 +2548,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近121号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 78553046",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2723,8 +2564,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区197号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 67283568",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2740,8 +2580,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区118号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 84613731",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2757,8 +2596,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心4号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 30284112",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2774,8 +2612,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区150号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 19232463",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2791,8 +2628,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近155号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 85146849",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2808,8 +2644,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近101号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 42649592",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2825,8 +2660,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区78号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 92924376",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2842,8 +2676,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区167号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 65171886",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2859,8 +2692,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心178号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 48910022",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2876,8 +2708,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区150号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 022 86972201",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2893,8 +2724,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近160号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 17427007",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2910,8 +2740,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近16号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 46332335",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2927,8 +2756,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区93号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 022 77403057",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2944,8 +2772,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区7号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 01696792",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2961,8 +2788,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心81号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 022 35616233",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2978,8 +2804,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区26号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 06779999",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2995,8 +2820,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近178号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 022 88010317",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -3012,8 +2836,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近60号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 022 45348429",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -3029,8 +2852,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "新区",
     address: "新区182号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 022 93807776",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -3046,8 +2868,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区146号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 022 81761966",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -3063,8 +2884,7 @@ export const tianjinHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心122号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 022 70703734",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },

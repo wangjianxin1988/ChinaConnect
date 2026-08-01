@@ -20,8 +20,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁街111号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 1388 4866",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -37,8 +36,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "南宁大道61号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 7612 8227",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -54,8 +52,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁街3号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 8406 1585",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -71,8 +68,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁路73号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 3837 1341",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -88,8 +84,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站",
     address: "南宁路176号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 2138 6908",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -105,8 +100,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁大道9号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 2438 4372",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -122,8 +116,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁大道32号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 1838 4977",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -139,8 +132,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "南宁街131号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 1127 2670",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -156,8 +148,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁大道56号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 6355 9087",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -173,8 +164,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁大道104号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 9174 6943",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi", "地铁直达"],
   },
@@ -190,8 +180,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁大道176号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 3769 1280",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -207,8 +196,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁路127号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 7985 8112",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -224,8 +212,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "南宁大道119号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 7261 1213",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -241,8 +228,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁路16号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 7158 8631",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -258,8 +244,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "南宁街44号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 7320 8003",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -275,8 +260,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁路76号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 5688 1723",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -292,8 +276,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁大道112号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 9019 1327",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -309,8 +292,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁大道91号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 9050 7038",
     highlights: ["背包客首选", "公共厨房", "社交氛围"],
   },
@@ -326,8 +308,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站",
     address: "南宁街162号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 2938 7681",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -343,8 +324,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁路103号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 4337 2386",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -360,8 +340,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁大道179号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 5232 3291",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -377,8 +356,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁大道137号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 2356 3914",
     highlights: ["主题房间", "情侣专属", "私密空间"],
   },
@@ -394,8 +372,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁大道189号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 1341 4894",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -411,8 +388,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站",
     address: "南宁路18号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 1895 4539",
     highlights: ["主题房间", "情侣专属", "私密空间"],
   },
@@ -428,8 +404,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "南宁街65号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 8468 7834",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -445,8 +420,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站",
     address: "南宁街61号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 9323 7313",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -462,8 +436,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站",
     address: "南宁路128号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 1382 9390",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑", "游戏主题"],
   },
@@ -479,8 +452,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "南宁大道177号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 7396 9852",
     highlights: ["高端配置", "电竞设备", "24小时营业"],
   },
@@ -496,8 +468,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "南宁大道167号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 6118 4199",
     highlights: ["高端配置", "电竞设备", "24小时营业"],
   },
@@ -513,8 +484,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "南宁街37号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 1937 5871",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -530,8 +500,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心116号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 79032670",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -547,8 +516,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区191号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 20963847",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -564,8 +532,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近42号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 92470007",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -581,8 +548,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近200号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 08387100",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -598,8 +564,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区84号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 61350767",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -615,8 +580,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区73号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 92917065",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -632,8 +596,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心200号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 78489545",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -649,8 +612,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区127号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 96170243",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -666,8 +628,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近135号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 96067803",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -683,8 +644,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近109号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 63391217",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -700,8 +660,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区71号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 66590506",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -717,8 +676,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区24号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 73967616",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -734,8 +692,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心16号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 07323582",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -751,8 +708,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区74号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 92992541",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -768,8 +724,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近33号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 55711875",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -785,8 +740,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近186号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 04281171",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -802,8 +756,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区87号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 45001985",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -819,8 +772,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区51号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 09003340",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -836,8 +788,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心51号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 52572530",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -853,8 +804,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区139号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 23218025",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -870,8 +820,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近127号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 04416685",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -887,8 +836,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近120号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 08068404",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -904,8 +852,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区68号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 49895312",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -921,8 +868,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区145号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 14110153",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -938,8 +884,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心194号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 09730281",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -955,8 +900,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心44号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 07307671",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -972,8 +916,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区143号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 01586062",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -989,8 +932,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近61号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 10904018",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1006,8 +948,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近147号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 85248579",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1023,8 +964,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区83号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 43251691",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1040,8 +980,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区21号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 10928308",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1057,8 +996,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心72号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 51784126",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1074,8 +1012,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区109号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 56104196",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1091,8 +1028,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近122号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 22028464",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1108,8 +1044,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近4号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 62387838",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1125,8 +1060,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区195号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 99272260",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1142,8 +1076,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区163号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 38641015",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1159,8 +1092,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心135号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 23236956",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1176,8 +1108,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区162号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 58406561",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1193,8 +1124,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近195号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 53368937",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1210,8 +1140,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近195号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 41793082",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1227,8 +1156,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区19号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 88401066",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1244,8 +1172,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区140号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 22179756",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1261,8 +1188,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心87号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 12353370",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1278,8 +1204,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区22号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 77353520",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1295,8 +1220,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近85号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 18833660",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1312,8 +1236,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近75号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 10691979",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1329,8 +1252,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区66号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 69285816",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1346,8 +1268,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区143号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 95487552",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1363,8 +1284,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心94号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 77579922",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1380,8 +1300,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心193号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 00836121",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1397,8 +1316,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区168号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 79648954",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1414,8 +1332,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近27号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 72835254",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1431,8 +1348,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近16号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 08875901",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1448,8 +1364,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区195号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 80732827",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1465,8 +1380,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区40号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 97167559",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1482,8 +1396,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心130号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 57688371",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1499,8 +1412,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区174号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 85142625",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1516,8 +1428,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近86号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 92792664",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1533,8 +1444,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近75号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 59118627",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1550,8 +1460,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区197号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 26741670",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1567,8 +1476,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区130号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 92197137",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1584,8 +1492,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心153号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 43163480",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1601,8 +1508,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区21号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 61055846",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1618,8 +1524,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近114号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 36233190",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1635,8 +1540,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近121号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 18696034",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1652,8 +1556,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区147号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 86759908",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1669,8 +1572,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区106号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 59736306",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1686,8 +1588,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心84号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 43838572",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1703,8 +1604,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区187号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 94341512",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1720,8 +1620,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近199号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 70856494",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1737,8 +1636,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近110号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 73008565",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1754,8 +1652,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区105号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 71436329",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1771,8 +1668,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区172号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 25634395",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1788,8 +1684,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心33号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 28386216",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1805,8 +1700,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心168号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 74795633",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1822,8 +1716,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区28号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 47592229",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1839,8 +1732,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近144号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 59804744",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1856,8 +1748,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近54号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 62222158",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1873,8 +1764,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区78号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 59810422",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1890,8 +1780,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区134号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 00647390",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -1907,8 +1796,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心151号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 66277963",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1924,8 +1812,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区23号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 91700059",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1941,8 +1828,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近194号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 07772029",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1958,8 +1844,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近14号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 21832689",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1975,8 +1860,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区192号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 54006057",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1992,8 +1876,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区22号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 59539684",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2009,8 +1892,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心124号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 86553483",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2026,8 +1908,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区49号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 73837618",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2043,8 +1924,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近26号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 62861316",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2060,8 +1940,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近115号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 42515391",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2077,8 +1956,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区185号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 49995974",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2094,8 +1972,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区22号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 18766186",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2111,8 +1988,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心60号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 93781682",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2128,8 +2004,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区104号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 03940527",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2145,8 +2020,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近153号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 49474252",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2162,8 +2036,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近185号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 18601883",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2179,8 +2052,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区96号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 59968176",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2196,8 +2068,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区112号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 61311368",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2213,8 +2084,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心157号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 39752903",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2230,8 +2100,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心107号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 13626889",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2247,8 +2116,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区101号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 06925567",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2264,8 +2132,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近197号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 35049537",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2281,8 +2148,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近134号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 18880502",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2298,8 +2164,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区26号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 23781752",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2315,8 +2180,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区47号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 76052567",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2332,8 +2196,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心195号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 97039799",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2349,8 +2212,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区176号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 12420764",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2366,8 +2228,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近30号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 95577207",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2383,8 +2244,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近95号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 30301634",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2400,8 +2260,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区98号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 51618531",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2417,8 +2276,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区45号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 45692604",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2434,8 +2292,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心136号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 83498779",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2451,8 +2308,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区29号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 64227302",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2468,8 +2324,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近174号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 41359718",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2485,8 +2340,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近58号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 65017101",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2502,8 +2356,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区127号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 71875844",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2519,8 +2372,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区149号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 63182547",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2536,8 +2388,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心134号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 41443256",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2553,8 +2404,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区191号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 58218550",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2570,8 +2420,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近137号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 0771 46181817",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2587,8 +2436,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近107号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 69108640",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2604,8 +2452,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区9号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 16514980",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2621,8 +2468,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区186号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 33089385",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2638,8 +2484,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心98号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 18002903",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2655,8 +2500,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心25号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 22537204",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2672,8 +2516,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区162号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 85910468",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2689,8 +2532,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近45号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 00025265",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2706,8 +2548,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近184号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 90452602",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2723,8 +2564,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区184号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 71043105",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2740,8 +2580,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区59号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 44363916",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2757,8 +2596,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心138号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 0771 69802894",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2774,8 +2612,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区104号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 20095907",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2791,8 +2628,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近170号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 0771 93607192",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2808,8 +2644,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近106号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 15781220",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2825,8 +2660,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区23号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 83702909",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2842,8 +2676,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区11号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 62106247",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2859,8 +2692,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心99号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 54463842",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2876,8 +2708,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区79号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 0771 41157381",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2893,8 +2724,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近167号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 48611025",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2910,8 +2740,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近173号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 37222228",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2927,8 +2756,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区64号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 30637581",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2944,8 +2772,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区106号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 0771 82179091",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2961,8 +2788,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心138号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 0771 95206348",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2978,8 +2804,7 @@ export const nanningHotels: HotelItem[] = [
     district: "商业区",
     address: "商业区106号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 0771 70157515",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2995,8 +2820,7 @@ export const nanningHotels: HotelItem[] = [
     district: "火车站附近",
     address: "火车站附近82号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 98465665",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -3012,8 +2836,7 @@ export const nanningHotels: HotelItem[] = [
     district: "景区附近",
     address: "景区附近178号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 0771 98510100",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -3029,8 +2852,7 @@ export const nanningHotels: HotelItem[] = [
     district: "新区",
     address: "新区90号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 0771 22984799",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -3046,8 +2868,7 @@ export const nanningHotels: HotelItem[] = [
     district: "老城区",
     address: "老城区59号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 06013025",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -3063,8 +2884,7 @@ export const nanningHotels: HotelItem[] = [
     district: "市中心",
     address: "市中心81号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 0771 84666443",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },

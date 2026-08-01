@@ -20,8 +20,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "商业区",
     address: "上海大道66号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 1582 2558",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -37,8 +36,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "市中心",
     address: "上海街91号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 8410 7880",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊"],
   },
@@ -54,8 +52,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海路194号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 6015 2472",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -71,8 +68,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "市中心",
     address: "上海大道195号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 7731 7813",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -88,8 +84,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "商业区",
     address: "上海街49号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 8913 2051",
     highlights: ["五星级服务", "豪华设施", "商务首选", "行政酒廊", "水疗中心"],
   },
@@ -105,8 +100,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "景区附近",
     address: "上海街178号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 6739 6485",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi", "地铁直达"],
   },
@@ -122,8 +116,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "市中心",
     address: "上海路168号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 4962 9940",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -139,8 +132,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海大道78号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 3238 3373",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi"],
   },
@@ -156,8 +148,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "市中心",
     address: "上海路149号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/2c63f93d58de.webp",
     phone: "+86 8741 6436",
     highlights: ["商务出差", "交通便利", "含早餐", "免费WiFi", "地铁直达"],
   },
@@ -173,8 +164,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海大道89号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 3676 8624",
     highlights: ["商务出差", "交通便利", "含早餐"],
   },
@@ -190,8 +180,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海大道93号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 4292 5295",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -207,8 +196,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "景区附近",
     address: "上海大道179号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 4764 6884",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -224,8 +212,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "景区附近",
     address: "上海街40号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 8072 5028",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -241,8 +228,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "商业区",
     address: "上海大道27号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 7565 3451",
     highlights: ["经济实惠", "干净整洁", "24小时热水"],
   },
@@ -258,8 +244,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "市中心",
     address: "上海路139号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 7701 4201",
     highlights: ["经济实惠", "干净整洁", "24小时热水", "免费WiFi"],
   },
@@ -275,8 +260,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "商业区",
     address: "上海街85号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 7012 2092",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -292,8 +276,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "商业区",
     address: "上海大道48号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 4405 2553",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -309,8 +292,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海大道65号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 1406 7551",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -326,8 +308,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海路125号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 2481 2486",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务"],
   },
@@ -343,8 +324,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "商业区",
     address: "上海大道28号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/92e899c8a470.webp",
     phone: "+86 3849 6589",
     highlights: ["背包客首选", "公共厨房", "社交氛围", "多语言服务", "行李寄存"],
   },
@@ -360,8 +340,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海大道148号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 4592 2009",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -377,8 +356,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海街77号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 7538 7848",
     highlights: ["主题房间", "情侣专属", "私密空间"],
   },
@@ -394,8 +372,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "市中心",
     address: "上海街4号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 5973 5368",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -411,8 +388,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "景区附近",
     address: "上海路80号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 8944 6434",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围", "特色装修"],
   },
@@ -428,8 +404,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海大道188号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/3231e69d63d5.webp",
     phone: "+86 6928 5133",
     highlights: ["主题房间", "情侣专属", "私密空间", "浪漫氛围"],
   },
@@ -445,8 +420,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "景区附近",
     address: "上海街124号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 1405 8856",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑", "游戏主题"],
   },
@@ -462,8 +436,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "市中心",
     address: "上海大道166号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 6146 1881",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -479,8 +452,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "景区附近",
     address: "上海街114号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 3357 6721",
     highlights: ["高端配置", "电竞设备", "24小时营业"],
   },
@@ -496,8 +468,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "商业区",
     address: "上海街38号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/57ca74b3609b.webp",
     phone: "+86 3588 8842",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -513,8 +484,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "火车站",
     address: "上海大道34号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/2029722/pexels-photo-2029722.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/b7317026e4fa.webp",
     phone: "+86 3399 8090",
     highlights: ["高端配置", "电竞设备", "24小时营业", "多人开黑"],
   },
@@ -530,8 +500,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区158号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 25735612",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -547,8 +516,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区36号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 47459086",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -564,8 +532,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区191号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 45983532",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -581,8 +548,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区71号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 09640764",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -598,8 +564,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区91号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 56229697",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -615,8 +580,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区86号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 79525799",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -632,8 +596,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区27号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 86552945",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -649,8 +612,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区146号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 20347040",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -666,8 +628,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区144号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 23204110",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -683,8 +644,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区3号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 45376818",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -700,8 +660,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区45号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 56232691",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -717,8 +676,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区177号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 76671023",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -734,8 +692,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区197号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 62884761",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -751,8 +708,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区36号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 96581343",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -768,8 +724,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区161号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 05563166",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -785,8 +740,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区152号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 05127259",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -802,8 +756,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区136号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 13542651",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -819,8 +772,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区120号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 91326120",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -836,8 +788,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区187号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 09046708",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -853,8 +804,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区121号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 03320711",
     highlights: ["豪华设施", "商务首选", "行政酒廊"],
   },
@@ -870,8 +820,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区198号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 68837684",
     highlights: ["商务首选", "行政酒廊", "SPA中心"],
   },
@@ -887,8 +836,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区51号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 31253304",
     highlights: ["行政酒廊", "SPA中心", "米其林餐厅"],
   },
@@ -904,8 +852,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区190号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 72213634",
     highlights: ["SPA中心", "米其林餐厅", "五星级服务"],
   },
@@ -921,8 +868,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区186号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 75646141",
     highlights: ["米其林餐厅", "五星级服务", "豪华设施"],
   },
@@ -938,8 +884,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区109号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 49854206",
     highlights: ["五星级服务", "豪华设施", "商务首选"],
   },
@@ -955,8 +900,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区124号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 73866861",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -972,8 +916,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区132号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 40339208",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -989,8 +932,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区85号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 18378103",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1006,8 +948,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区27号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 43656611",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1023,8 +964,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区88号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 64126166",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1040,8 +980,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区22号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 73886038",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1057,8 +996,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区90号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 74651716",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1074,8 +1012,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区10号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 47495579",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1091,8 +1028,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区138号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 08095455",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1108,8 +1044,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区59号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 17908131",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1125,8 +1060,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区87号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 55083888",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1142,8 +1076,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区80号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 39109608",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1159,8 +1092,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区63号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 99964921",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1176,8 +1108,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区160号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 95890470",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1193,8 +1124,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区68号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 08585591",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1210,8 +1140,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区160号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 96316079",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1227,8 +1156,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区134号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 75101111",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1244,8 +1172,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区44号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 64516605",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1261,8 +1188,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区176号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 51923491",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1278,8 +1204,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区102号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 65697966",
     highlights: ["性价比高", "交通便利", "自助早餐"],
   },
@@ -1295,8 +1220,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区148号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 26369984",
     highlights: ["交通便利", "自助早餐", "免费WiFi"],
   },
@@ -1312,8 +1236,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区52号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 88090637",
     highlights: ["自助早餐", "免费WiFi", "停车场"],
   },
@@ -1329,8 +1252,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区104号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 28299145",
     highlights: ["免费WiFi", "停车场", "舒适商务"],
   },
@@ -1346,8 +1268,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区51号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 96635623",
     highlights: ["停车场", "舒适商务", "性价比高"],
   },
@@ -1363,8 +1284,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区168号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 90017879",
     highlights: ["舒适商务", "性价比高", "交通便利"],
   },
@@ -1380,8 +1300,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区171号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 30081152",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1397,8 +1316,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区166号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 21099632",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1414,8 +1332,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区123号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 22656435",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1431,8 +1348,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区185号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 02323131",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1448,8 +1364,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区111号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 07213862",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1465,8 +1380,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区184号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 81136487",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1482,8 +1396,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区132号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 39002417",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1499,8 +1412,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区186号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 58053062",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1516,8 +1428,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区93号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 99521499",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1533,8 +1444,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区31号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 98083747",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1550,8 +1460,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区30号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 87321566",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1567,8 +1476,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区76号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 15950158",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1584,8 +1492,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区153号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 22335182",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1601,8 +1508,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区70号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 07599582",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1618,8 +1524,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区197号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 71571897",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1635,8 +1540,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区80号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 14438165",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1652,8 +1556,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区121号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 41085346",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1669,8 +1572,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区145号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 94947772",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1686,8 +1588,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区72号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 63549330",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1703,8 +1604,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区184号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 31320475",
     highlights: ["干净整洁", "位置便利", "24小时热水"],
   },
@@ -1720,8 +1620,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区148号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 95437147",
     highlights: ["位置便利", "24小时热水", "免费WiFi"],
   },
@@ -1737,8 +1636,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区191号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 76682104",
     highlights: ["24小时热水", "免费WiFi", "连锁品牌"],
   },
@@ -1754,8 +1652,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区142号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 62752262",
     highlights: ["免费WiFi", "连锁品牌", "经济实惠"],
   },
@@ -1771,8 +1668,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区29号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 55217752",
     highlights: ["连锁品牌", "经济实惠", "干净整洁"],
   },
@@ -1788,8 +1684,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区129号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 34197913",
     highlights: ["经济实惠", "干净整洁", "位置便利"],
   },
@@ -1805,8 +1700,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区152号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 75712298",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1822,8 +1716,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区64号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 70419063",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1839,8 +1732,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区13号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 04806536",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1856,8 +1748,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区132号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 79074007",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1873,8 +1764,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区146号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 47185119",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1890,8 +1780,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区42号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 05158228",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -1907,8 +1796,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区4号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 23864080",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -1924,8 +1812,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区163号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 84015827",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -1941,8 +1828,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区173号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 96119666",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -1958,8 +1844,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区175号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 41399969",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -1975,8 +1860,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区113号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 96425416",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -1992,8 +1876,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区12号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 30722379",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2009,8 +1892,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区18号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 82996278",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2026,8 +1908,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区169号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 36832657",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2043,8 +1924,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区65号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 35190007",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2060,8 +1940,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区67号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 52913436",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2077,8 +1956,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区52号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 09498152",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2094,8 +1972,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区59号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 30646216",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2111,8 +1988,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区2号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 41538313",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2128,8 +2004,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区144号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 13911931",
     highlights: ["社交氛围", "公共厨房", "行李寄存"],
   },
@@ -2145,8 +2020,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区190号",
     rating: 4.9,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 57644330",
     highlights: ["公共厨房", "行李寄存", "旅游咨询"],
   },
@@ -2162,8 +2036,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区121号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 88472395",
     highlights: ["行李寄存", "旅游咨询", "多人间可选"],
   },
@@ -2179,8 +2052,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区17号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 75658483",
     highlights: ["旅游咨询", "多人间可选", "背包客首选"],
   },
@@ -2196,8 +2068,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区176号",
     rating: 4.0,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 96282146",
     highlights: ["多人间可选", "背包客首选", "社交氛围"],
   },
@@ -2213,8 +2084,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区133号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 57050887",
     highlights: ["背包客首选", "社交氛围", "公共厨房"],
   },
@@ -2230,8 +2100,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区25号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 09059868",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2247,8 +2116,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区4号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 30614136",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2264,8 +2132,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区60号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 61433114",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2281,8 +2148,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区1号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 91164192",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2298,8 +2164,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区136号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 23839024",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2315,8 +2180,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区8号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 69387008",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2332,8 +2196,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区37号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 27391042",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2349,8 +2212,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区65号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 11289165",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2366,8 +2228,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区101号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 17839243",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2383,8 +2244,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区129号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 73759247",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2400,8 +2260,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区72号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 34725811",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2417,8 +2276,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区138号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 21086808",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2434,8 +2292,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区172号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 57508841",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2451,8 +2308,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区34号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 37637896",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2468,8 +2324,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区44号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 70659517",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2485,8 +2340,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区8号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 50297669",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2502,8 +2356,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区59号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 77414769",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2519,8 +2372,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区78号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 54473458",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2536,8 +2388,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区164号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 98414655",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2553,8 +2404,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区122号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 20941981",
     highlights: ["浪漫氛围", "情侣首选", "特色装修"],
   },
@@ -2570,8 +2420,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区24号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 79426142",
     highlights: ["情侣首选", "特色装修", "隐私保护"],
   },
@@ -2587,8 +2436,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区41号",
     rating: 3.7,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 83468326",
     highlights: ["特色装修", "隐私保护", "圆床浴缸"],
   },
@@ -2604,8 +2452,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区164号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 20642649",
     highlights: ["隐私保护", "圆床浴缸", "主题房间"],
   },
@@ -2621,8 +2468,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区125号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 15749120",
     highlights: ["圆床浴缸", "主题房间", "浪漫氛围"],
   },
@@ -2638,8 +2484,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区161号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 66923733",
     highlights: ["主题房间", "浪漫氛围", "情侣首选"],
   },
@@ -2655,8 +2500,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区126号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 75682152",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2672,8 +2516,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区112号",
     rating: 3.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 00894993",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2689,8 +2532,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区74号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 83022255",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2706,8 +2548,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区119号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 79702548",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2723,8 +2564,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区18号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 23968445",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2740,8 +2580,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区73号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/caaa3dd1d105.webp",
     phone: "+86 021 46296998",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2757,8 +2596,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区60号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/d16b47e46ada.webp",
     phone: "+86 021 50300379",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2774,8 +2612,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区110号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/689ab9d7e350.webp",
     phone: "+86 021 21615511",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2791,8 +2628,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区93号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 84952337",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2808,8 +2644,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区84号",
     rating: 4.3,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 01810391",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2825,8 +2660,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区89号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 46031775",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2842,8 +2676,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区66号",
     rating: 4.7,
-    image:
-      "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/e4eb810b8e3f.webp",
     phone: "+86 021 98046774",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2859,8 +2692,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区113号",
     rating: 4.6,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 62293523",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2876,8 +2708,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区68号",
     rating: 3.8,
-    image:
-      "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/0079ba993d86.webp",
     phone: "+86 021 68801569",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2893,8 +2724,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区81号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 79690444",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -2910,8 +2740,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区145号",
     rating: 3.9,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 06150377",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -2927,8 +2756,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区164号",
     rating: 4.8,
-    image:
-      "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/28a14426acec.webp",
     phone: "+86 021 76386295",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -2944,8 +2772,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区121号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 91428892",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -2961,8 +2788,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区171号",
     rating: 3.6,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 23616554",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },
@@ -2978,8 +2804,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "黄浦区",
     address: "黄浦区156号",
     rating: 4.1,
-    image:
-      "https://images.pexels.com/photos/258154/pexels-phone-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/__missing.svg",
     phone: "+86 021 80941750",
     highlights: ["电竞设备", "开黑首选", "机械键盘"],
   },
@@ -2995,8 +2820,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "静安区",
     address: "静安区42号",
     rating: 4.2,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 72971368",
     highlights: ["开黑首选", "机械键盘", "电竞椅"],
   },
@@ -3012,8 +2836,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "徐汇区",
     address: "徐汇区97号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/45ff6d92c6fa.webp",
     phone: "+86 021 55653404",
     highlights: ["机械键盘", "电竞椅", "24小时畅玩"],
   },
@@ -3029,8 +2852,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "长宁区",
     address: "长宁区197号",
     rating: 4.5,
-    image:
-      "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/5a6d10deaf68.webp",
     phone: "+86 021 94058711",
     highlights: ["电竞椅", "24小时畅玩", "高配电脑"],
   },
@@ -3046,8 +2868,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "虹口区",
     address: "虹口区175号",
     rating: 4.4,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 55326661",
     highlights: ["24小时畅玩", "高配电脑", "电竞设备"],
   },
@@ -3063,8 +2884,7 @@ export const shanghaiHotels: HotelItem[] = [
     district: "浦东新区",
     address: "浦东新区32号",
     rating: 5.0,
-    image:
-      "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/ext/1e2e9858f320.webp",
     phone: "+86 021 92287827",
     highlights: ["高配电脑", "电竞设备", "开黑首选"],
   },

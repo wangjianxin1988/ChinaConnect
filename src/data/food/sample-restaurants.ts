@@ -28,8 +28,7 @@ export const SAMPLE_RESTAURANTS: Restaurant[] = [
     phone: "021-62881688",
     hours: "11:30-14:00, 17:30-21:30",
     tags: ["米其林三星", "台州海鲜", "高端商务"],
-    imageUrl:
-      "https://images.pexels.com/photos/15177422/pexels-photo-15177422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/42709ea23cc6.webp",
     description: "新荣记以精选鲜活海鲜和地道台州家常菜著称，是米其林三星餐厅。",
     descriptionEn:
       "Xin Rong Ji is renowned for fresh seafood and authentic Taizhou cuisine, awarded three Michelin stars.",
@@ -97,8 +96,7 @@ export const SAMPLE_RESTAURANTS: Restaurant[] = [
     phone: "010-65052288",
     hours: "10:00-22:00",
     tags: ["黑珍珠二钻", "高端粤菜", "商务宴请"],
-    imageUrl:
-      "https://images.pexels.com/photos/7627408/pexels-photo-7627408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/98b2e0f9f9fe.webp",
     description: "正宗粤菜，以精致点心和海鲜料理著称。",
     descriptionEn: "Authentic Cantonese cuisine known for exquisite dim sum and seafood.",
     touristPrice: 600,
@@ -126,8 +124,7 @@ export const SAMPLE_RESTAURANTS: Restaurant[] = [
     phone: "021-64738888",
     hours: "10:00-22:00",
     tags: ["黑珍珠一钻", "台湾菜", "小笼包"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/e2987486c5c3.webp",
     description: "世界闻名的小笼包专卖店，皮薄汁多味美。",
     descriptionEn: "World-famous xiaolongbao specialist with thin skin and rich soup.",
     touristPrice: 250,

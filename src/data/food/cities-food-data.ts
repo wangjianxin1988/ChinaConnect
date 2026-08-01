@@ -43,8 +43,7 @@ export const beijingFoodData: Restaurant[] = [
     bloggerReason: "老北京传统小吃，奶卷入口即化，价格实惠",
     dishHighlights: ["奶贡", "杏仁豆腐", "炸酱面"],
     tags: ["本地人爱去", "老字号", "传统小吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/3603453/pexels-photo-3603453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/1d319de5e5d2.webp",
     description: "南锣鼓巷里的传统小吃店，本地人从小吃到大",
     ...defaultAccess,
   },
@@ -69,8 +68,7 @@ export const beijingFoodData: Restaurant[] = [
     bloggerReason: "簋街最火的小龙虾店，麻辣鲜香，本地人夜宵首选",
     dishHighlights: ["麻辣小龙虾", "蒜蓉小龙虾", "馋嘴牛蛙"],
     tags: ["夜宵", "本地人爱去", "排队王"],
-    imageUrl:
-      "https://images.pexels.com/photos/10672908/pexels-photo-10672908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/1beaa4ec0924.webp",
     description: "簋街代表性夜宵店，小龙虾个头大入味",
     ...defaultAccess,
   },
@@ -95,8 +93,7 @@ export const beijingFoodData: Restaurant[] = [
     bloggerReason: "牛街最正宗的涮羊肉，羊肉鲜嫩，麻酱地道",
     dishHighlights: ["手切羊肉", "鲜毛肚", "白菜粉丝"],
     tags: ["本地人爱去", "老字号", "涮羊肉"],
-    imageUrl:
-      "https://images.pexels.com/photos/28445828/pexels-photo-28445828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/75cc963484f4.webp",
     description: "牛街老字号涮羊肉，北京人冬季最爱",
     ...defaultAccess,
   },
@@ -121,8 +118,7 @@ export const beijingFoodData: Restaurant[] = [
     bloggerReason: "护国寺小吃集合店，豆汁焦圈艾窝窝一应俱全",
     dishHighlights: ["豆汁", "焦圈", "艾窝窝", "驴打滚"],
     tags: ["本地人爱去", "早餐", "传统小吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/33583796/pexels-photo-33583796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/b2464bf4cb87.webp",
     description: "老北京小吃集大成者，本地人早餐首选",
     ...defaultAccess,
   },
@@ -147,8 +143,7 @@ export const beijingFoodData: Restaurant[] = [
     bloggerReason: "百年老字号涮羊肉，品牌正宗，品质稳定",
     dishHighlights: ["手切羊肉", "肥牛", "麻酱烧饼"],
     tags: ["老字号", "本地人爱去", "涮羊肉"],
-    imageUrl:
-      "https://images.pexels.com/photos/31261434/pexels-photo-31261434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/ccacd455a506.webp",
     description: "北京涮羊肉老字号，百年传承",
     ...defaultAccess,
   },
@@ -171,8 +166,7 @@ export const beijingFoodData: Restaurant[] = [
     hours: "10:00-22:00",
     dishHighlights: ["炸酱面", "麻酱面"],
     tags: ["苍蝇馆子", "本地人爱去", "平价"],
-    imageUrl:
-      "https://images.pexels.com/photos/37488682/pexels-photo-37488682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/a64be3138bf4.webp",
     description: "藏在巷子里的炸酱面馆，味道正宗",
     ...defaultAccess,
   },
@@ -194,8 +188,7 @@ export const beijingFoodData: Restaurant[] = [
     hours: "06:00-14:00",
     dishHighlights: ["炒肝", "包子", "卤煮"],
     tags: ["苍蝇馆子", "早餐", "老北京"],
-    imageUrl:
-      "https://images.pexels.com/photos/11259688/pexels-photo-11259688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/51b76c1605be.webp",
     description: "鼓楼老店，炒肝芡汁饱满",
     ...defaultAccess,
   },
@@ -217,8 +210,7 @@ export const beijingFoodData: Restaurant[] = [
     hours: "10:00-20:00",
     dishHighlights: ["爆肚", "羊肚", "芝麻酱"],
     tags: ["苍蝇馆子", "老字号", "爆肚"],
-    imageUrl:
-      "https://images.pexels.com/photos/29714906/pexels-photo-29714906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/be543f38b269.webp",
     description: "前门老字号，爆肚火候刚好",
     ...defaultAccess,
   },
@@ -241,8 +233,7 @@ export const beijingFoodData: Restaurant[] = [
     hours: "18:00-23:00",
     dishHighlights: ["糖葫芦", "炸蝎子", "烤冷面", "臭豆腐"],
     tags: ["夜市", "游客必去", "小吃集合"],
-    imageUrl:
-      "https://images.pexels.com/photos/36034214/pexels-photo-36034214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/9ea869215e0e.webp",
     description: "北京最著名的小吃街，种类丰富",
     ...defaultAccess,
   },
@@ -264,8 +255,7 @@ export const beijingFoodData: Restaurant[] = [
     hours: "18:00-03:00",
     dishHighlights: ["小龙虾", "烤串", "麻辣烫"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/34453548/pexels-photo-34453548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/ddc97fb6933c.webp",
     description: "北京夜宵圣地，本地人深夜食堂",
     ...defaultAccess,
   },
@@ -295,8 +285,7 @@ export const shanghaiFoodData: Restaurant[] = [
     bloggerReason: "老上海的味道，排骨年糕是小时候的味道",
     dishHighlights: ["排骨年糕", "炸猪排"],
     tags: ["本地人爱去", "老字号", "本帮菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/6752827/pexels-photo-6752827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/e57da0c86443.webp",
     description: "云南南路老字号，本地人从小吃到大",
     ...defaultAccess,
   },
@@ -321,8 +310,7 @@ export const shanghaiFoodData: Restaurant[] = [
     bloggerReason: "排队神店，本帮菜做得地道",
     dishHighlights: ["蟹粉小笼", "红烧肉", "清炒虾仁"],
     tags: ["本地人爱去", "排队王", "本帮菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/24349909/pexels-photo-24349909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/d1c6d3d444ab.webp",
     description: "淮海路排队王，本帮菜经典",
     ...defaultAccess,
   },
@@ -347,8 +335,7 @@ export const shanghaiFoodData: Restaurant[] = [
     bloggerReason: "白斩鸡皮脆肉嫩，上海人请客必备",
     dishHighlights: ["白斩鸡", "鸡粥", "鸡血汤"],
     tags: ["本地人爱去", "老字号", "本帮菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/28560097/pexels-photo-28560097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/7d24c1294d17.webp",
     description: "云南南路老字号，白斩鸡创始店",
     ...defaultAccess,
   },
@@ -373,8 +360,7 @@ export const shanghaiFoodData: Restaurant[] = [
     bloggerReason: "老牌西餐厅，上海人最早的西餐启蒙",
     dishHighlights: ["炸猪排", "罗宋汤", "土豆沙拉"],
     tags: ["本地人爱去", "老字号", "西餐"],
-    imageUrl:
-      "https://images.pexels.com/photos/11714372/pexels-photo-11714372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/3a4027a89086.webp",
     description: "老上海西餐代表，情怀满分",
     ...defaultAccess,
   },
@@ -399,8 +385,7 @@ export const shanghaiFoodData: Restaurant[] = [
     bloggerReason: "南翔小笼正宗，豫园必吃",
     dishHighlights: ["鲜肉小笼", "蟹粉小笼", "虾仁烧麦"],
     tags: ["本地人爱去", "老字号", "豫园"],
-    imageUrl:
-      "https://images.pexels.com/photos/7563033/pexels-photo-7563033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/de6399e8b926.webp",
     description: "豫园老字号，小笼包正宗",
     ...defaultAccess,
   },
@@ -423,8 +408,7 @@ export const shanghaiFoodData: Restaurant[] = [
     hours: "07:00-15:00",
     dishHighlights: ["大肠面", "黄鱼面", "葱油拌面"],
     tags: ["苍蝇馆子", "本地人爱去", "排队"],
-    imageUrl:
-      "https://images.pexels.com/photos/19943225/pexels-photo-19943225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/9317132da5bb.webp",
     description: "上海最火本帮面馆之一，每天排队",
     ...defaultAccess,
   },
@@ -446,8 +430,7 @@ export const shanghaiFoodData: Restaurant[] = [
     hours: "11:00-20:00",
     dishHighlights: ["黄鱼面", "素交面", "馄饨"],
     tags: ["苍蝇馆子", "老字号", "本帮面"],
-    imageUrl:
-      "https://images.pexels.com/photos/724291/pexels-photo-724291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/9b50ce9fc70b.webp",
     description: "传承三代的上海本帮面馆",
     ...defaultAccess,
   },
@@ -469,8 +452,7 @@ export const shanghaiFoodData: Restaurant[] = [
     hours: "10:00-20:00",
     dishHighlights: ["小笼", "馄饨", "面"],
     tags: ["苍蝇馆子", "老字号", "虹口"],
-    imageUrl:
-      "https://images.pexels.com/photos/32565694/pexels-photo-32565694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/1b3180783f6a.webp",
     description: "山阴路老店，本地人私藏",
     ...defaultAccess,
   },
@@ -493,8 +475,7 @@ export const shanghaiFoodData: Restaurant[] = [
     hours: "17:00-23:00",
     dishHighlights: ["生煎", "锅贴", "奶茶", "烤冷面"],
     tags: ["夜市", "本地人爱去", "小吃集合"],
-    imageUrl:
-      "https://images.pexels.com/photos/22487166/pexels-photo-22487166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/51976567dbfc.webp",
     description: "上海著名夜市小吃街",
     ...defaultAccess,
   },
@@ -516,8 +497,7 @@ export const shanghaiFoodData: Restaurant[] = [
     hours: "18:00-01:00",
     dishHighlights: ["小龙虾", "烧烤", "麻辣烫", "炸鸡"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/31623480/pexels-photo-31623480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/6603295d712d.webp",
     description: "浦东深夜食堂，本地人夜宵首选",
     ...defaultAccess,
   },
@@ -547,8 +527,7 @@ export const chengduFoodData: Restaurant[] = [
     bloggerReason: "串串香鼻祖，成都人从小吃到大",
     dishHighlights: ["牛肉串", "郡肝串", "兔腰", "火锅粉"],
     tags: ["本地人爱去", "老字号", "串串香"],
-    imageUrl:
-      "https://images.pexels.com/photos/33085849/pexels-photo-33085849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/21f4543d0ab1.webp",
     description: "成都串串香创始店，本地人最爱",
     ...defaultAccess,
   },
@@ -573,8 +552,7 @@ export const chengduFoodData: Restaurant[] = [
     bloggerReason: "春熙路网红卤味，软糯入味，入口即化",
     dishHighlights: ["卤鸡爪", "卤鸭脖", "卤牛蛙"],
     tags: ["本地人爱去", "网红店", "卤味"],
-    imageUrl:
-      "https://images.pexels.com/photos/8256983/pexels-photo-8256983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/b29fa328a388.webp",
     description: "春熙路必吃卤味，软烂入味",
     ...defaultAccess,
   },
@@ -599,8 +577,7 @@ export const chengduFoodData: Restaurant[] = [
     bloggerReason: "成都本地火锅代表，味道正宗价格实惠",
     dishHighlights: ["毛肚", "鸭肠", "鲜切牛肉", "冰粉"],
     tags: ["本地人爱去", "火锅", "排队"],
-    imageUrl:
-      "https://images.pexels.com/photos/19775602/pexels-photo-19775602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/3a00829b84b4.webp",
     description: "成都本地火锅品牌，学生最爱",
     ...defaultAccess,
   },
@@ -625,8 +602,7 @@ export const chengduFoodData: Restaurant[] = [
     bloggerReason: "麻婆豆腐发源地，正宗川菜老字号",
     dishHighlights: ["麻婆豆腐", "回锅肉", "水煮鱼"],
     tags: ["本地人爱去", "老字号", "川菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/20943936/pexels-photo-20943936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/740f856d57ab.webp",
     description: "百年老店，川菜经典代表",
     ...defaultAccess,
   },
@@ -651,8 +627,7 @@ export const chengduFoodData: Restaurant[] = [
     bloggerReason: "成都名小吃，皮薄馅嫩，红油超香",
     dishHighlights: ["红油水饺", "龙抄手", "赖汤圆"],
     tags: ["本地人爱去", "老字号", "小吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/33692911/pexels-photo-33692911.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/da8c0f5339a0.png",
     description: "成都名小吃代表，味道正宗",
     ...defaultAccess,
   },
@@ -675,8 +650,7 @@ export const chengduFoodData: Restaurant[] = [
     hours: "11:00-20:00",
     dishHighlights: ["冒菜", "川菜小炒"],
     tags: ["苍蝇馆子", "本地人爱去", "平价"],
-    imageUrl:
-      "https://images.pexels.com/photos/7517290/pexels-photo-7517290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/0a34d73b3ac0.webp",
     description: "青羊宫旁边的小馆子，味道巴适",
     ...defaultAccess,
   },
@@ -698,8 +672,7 @@ export const chengduFoodData: Restaurant[] = [
     hours: "11:00-14:00, 17:00-20:30",
     dishHighlights: ["脑花豆腐", "霸王排骨", "炝香鱼"],
     tags: ["苍蝇馆子", "本地人爱去", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/5858115/pexels-photo-5858115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/b0a904f7fb4a.webp",
     description: "成都苍蝇馆子传奇，味道霸道",
     ...defaultAccess,
   },
@@ -721,8 +694,7 @@ export const chengduFoodData: Restaurant[] = [
     hours: "14:00-18:00",
     dishHighlights: ["蛋烘糕", "牛肉馅", "芝麻糖"],
     tags: ["苍蝇馆子", "老字号", "小吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/33125092/pexels-photo-33125092.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/c18842c3bfad.png",
     description: "成都名小吃，每天只卖几小时",
     ...defaultAccess,
   },
@@ -745,8 +717,7 @@ export const chengduFoodData: Restaurant[] = [
     hours: "18:00-23:00",
     dishHighlights: ["烤脑花", "锅巴土豆", "冰粉", "降龙爪爪"],
     tags: ["夜市", "本地人爱去", "小吃集合"],
-    imageUrl:
-      "https://images.pexels.com/photos/34222596/pexels-photo-34222596.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/53dbd2f0aa1d.webp",
     description: "成都最火的夜市小吃街",
     ...defaultAccess,
   },
@@ -768,8 +739,7 @@ export const chengduFoodData: Restaurant[] = [
     hours: "19:00-03:00",
     dishHighlights: ["串串", "烧烤", "小龙虾", "酒"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/18375227/pexels-photo-18375227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/fffa881ab0c0.webp",
     description: "成都夜生活代表，本地人深夜食堂",
     ...defaultAccess,
   },
@@ -799,8 +769,7 @@ export const hangzhouFoodData: Restaurant[] = [
     bloggerReason: "河坊街老字号，正宗杭帮菜味道",
     dishHighlights: ["东坡肉", "西湖醋鱼", "龙井虾仁"],
     tags: ["本地人爱去", "老字号", "杭帮菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/29126490/pexels-photo-29126490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/2c9ae4eeca9c.webp",
     description: "河坊街必吃，正宗杭帮菜",
     ...defaultAccess,
   },
@@ -825,8 +794,7 @@ export const hangzhouFoodData: Restaurant[] = [
     bloggerReason: "杭州家常菜代表，价格实惠味道好",
     dishHighlights: ["外婆红烧肉", "青豆泥", "铁板虾"],
     tags: ["本地人爱去", "连锁", "杭帮菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/37436597/pexels-photo-37436597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/d342a6596ea0.webp",
     description: "杭州人家喻户晓的连锁品牌",
     ...defaultAccess,
   },
@@ -851,8 +819,7 @@ export const hangzhouFoodData: Restaurant[] = [
     bloggerReason: "百年老字号，杭州小笼包正宗",
     dishHighlights: ["小笼包", "片儿川", "馄饨"],
     tags: ["本地人爱去", "老字号", "点心"],
-    imageUrl:
-      "https://images.pexels.com/photos/12978405/pexels-photo-12978405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/65f05851b4bb.webp",
     description: "杭州点心代表，百年传承",
     ...defaultAccess,
   },
@@ -877,8 +844,7 @@ export const hangzhouFoodData: Restaurant[] = [
     bloggerReason: "杭州老牌面馆，片儿川正宗",
     dishHighlights: ["片儿川", "爆鳝面", "虾爆鳝"],
     tags: ["本地人爱去", "老字号", "面馆"],
-    imageUrl:
-      "https://images.pexels.com/photos/30676160/pexels-photo-30676160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/7c44155d65d7.webp",
     description: "杭州面馆代表，百年老店",
     ...defaultAccess,
   },
@@ -903,8 +869,7 @@ export const hangzhouFoodData: Restaurant[] = [
     bloggerReason: "龙井路上的餐厅，环境味道都不错",
     dishHighlights: ["绿茶烤肉", "石锅蛙", "面包诱惑"],
     tags: ["本地人爱去", "景观餐厅", "杭帮菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/37158467/pexels-photo-37158467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/8f23aebcfbed.webp",
     description: "龙井路知名餐厅，本地人常去",
     ...defaultAccess,
   },
@@ -927,8 +892,7 @@ export const hangzhouFoodData: Restaurant[] = [
     hours: "11:00-14:00, 17:00-20:30",
     dishHighlights: ["片儿川", "爆鳝面", "虾爆鳝"],
     tags: ["苍蝇馆子", "老杭州", "面食"],
-    imageUrl:
-      "https://images.pexels.com/photos/14370889/pexels-photo-14370889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/86f352a3ab08.webp",
     description: "杭州老底子味道，片儿川正宗",
     ...defaultAccess,
   },
@@ -950,8 +914,7 @@ export const hangzhouFoodData: Restaurant[] = [
     hours: "06:30-13:30",
     dishHighlights: ["片儿川", "素面"],
     tags: ["苍蝇馆子", "早餐", "老杭州"],
-    imageUrl:
-      "https://images.pexels.com/photos/5339076/pexels-photo-5339076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/774e3eae27bc.webp",
     description: "望江门老店，早餐面馆",
     ...defaultAccess,
   },
@@ -973,8 +936,7 @@ export const hangzhouFoodData: Restaurant[] = [
     hours: "10:00-22:00",
     dishHighlights: ["臭豆腐", "炸年糕"],
     tags: ["苍蝇馆子", "老字号", "小吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/35541205/pexels-photo-35541205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/d80d857f9a61.webp",
     description: "龙翔桥名小吃，正宗杭州臭豆腐",
     ...defaultAccess,
   },
@@ -997,8 +959,7 @@ export const hangzhouFoodData: Restaurant[] = [
     hours: "18:00-22:00",
     dishHighlights: ["定胜糕", "葱包烩", "臭豆腐", "糖葫芦"],
     tags: ["夜市", "游客必去", "小吃集合"],
-    imageUrl:
-      "https://images.pexels.com/photos/6440094/pexels-photo-6440094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/c9c40af51935.webp",
     description: "杭州最著名的夜市小吃街",
     ...defaultAccess,
   },
@@ -1020,8 +981,7 @@ export const hangzhouFoodData: Restaurant[] = [
     hours: "17:00-02:00",
     dishHighlights: ["小龙虾", "烧烤", "火锅", "串串"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/6456251/pexels-photo-6456251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/250de71ad28f.webp",
     description: "杭州夜宵圣地，本地人深夜食堂",
     ...defaultAccess,
   },
@@ -1051,8 +1011,7 @@ export const guangzhouFoodData: Restaurant[] = [
     bloggerReason: "百年老字号，广州点心代表",
     dishHighlights: ["虾饺", "凤爪", "蛋挞", "叉烧包"],
     tags: ["本地人爱去", "老字号", "粤菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860323/pexels-photo-32860323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/e2987486c5c3.webp",
     description: "广州早茶代表，百年老店",
     ...defaultAccess,
   },
@@ -1077,8 +1036,7 @@ export const guangzhouFoodData: Restaurant[] = [
     bloggerReason: "广州早茶老字号，味道正宗",
     dishHighlights: ["虾饺", "烧麦", "叉烧包", "肠粉"],
     tags: ["本地人爱去", "老字号", "早茶"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860331/pexels-photo-32860331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/cf6f2759dcc6.webp",
     description: "广州知名早茶品牌，文昌总店必去",
     ...defaultAccess,
   },
@@ -1103,8 +1061,7 @@ export const guangzhouFoodData: Restaurant[] = [
     bloggerReason: "百年老字号，莲蓉月饼最出名",
     dishHighlights: ["莲蓉包", "鸡仔饼", "老婆饼"],
     tags: ["本地人爱去", "老字号", "点心"],
-    imageUrl:
-      "https://images.pexels.com/photos/32393810/pexels-photo-32393810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/0863433b8119.webp",
     description: "广州著名老字号，糕点代表",
     ...defaultAccess,
   },
@@ -1129,8 +1086,7 @@ export const guangzhouFoodData: Restaurant[] = [
     bloggerReason: "广州知名点心店，种类丰富",
     dishHighlights: ["金沙红米肠", "虾饺", "菠萝油"],
     tags: ["本地人爱去", "连锁", "早茶"],
-    imageUrl:
-      "https://images.pexels.com/photos/17584428/pexels-photo-17584428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/1295f1995b98.webp",
     description: "广州点心连锁品牌代表",
     ...defaultAccess,
   },
@@ -1155,8 +1111,7 @@ export const guangzhouFoodData: Restaurant[] = [
     bloggerReason: "啫啫煲发源地，味道一绝",
     dishHighlights: ["啫啫煲", "黄鳝煲", "生炒菜心"],
     tags: ["本地人爱去", "老字号", "粤菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/32860322/pexels-photo-32860322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/adb3de35992a.webp",
     description: "惠福路老字号，啫啫煲正宗",
     ...defaultAccess,
   },
@@ -1179,8 +1134,7 @@ export const guangzhouFoodData: Restaurant[] = [
     hours: "11:00-22:00",
     dishHighlights: ["原味椰子炖鸡", "西洋菜陈肾汤", "花旗参炖竹丝鸡"],
     tags: ["苍蝇馆子", "本地人爱去", "炖汤"],
-    imageUrl:
-      "https://images.pexels.com/photos/20943970/pexels-photo-20943970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/cd6dec49b271.webp",
     description: "文明路炖品传奇，本地人最爱的老火汤",
     ...defaultAccess,
   },
@@ -1202,8 +1156,7 @@ export const guangzhouFoodData: Restaurant[] = [
     hours: "08:00-17:00",
     dishHighlights: ["艇仔粥", "鱼皮", "肠粉"],
     tags: ["苍蝇馆子", "老字号", "老西关"],
-    imageUrl:
-      "https://images.pexels.com/photos/5652188/pexels-photo-5652188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/c478d94d31fb.webp",
     description: "宝华路老字号，艇仔粥创始店",
     ...defaultAccess,
   },
@@ -1225,8 +1178,7 @@ export const guangzhouFoodData: Restaurant[] = [
     hours: "11:00-14:00, 17:00-21:00",
     dishHighlights: ["葱油鸡", "滑蛋牛肉", "咕噜肉"],
     tags: ["苍蝇馆子", "本地人爱去", "老字号"],
-    imageUrl:
-      "https://images.pexels.com/photos/35069186/pexels-photo-35069186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/0c7230277cd1.webp",
     description: "龙津东路老店，广州本地人私藏",
     ...defaultAccess,
   },
@@ -1249,8 +1201,7 @@ export const guangzhouFoodData: Restaurant[] = [
     hours: "18:00-22:00",
     dishHighlights: ["牛杂", "双皮奶", "虾饺", "叉烧酥"],
     tags: ["夜市", "游客必去", "小吃集合"],
-    imageUrl:
-      "https://images.pexels.com/photos/36910843/pexels-photo-36910843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/0654b98e32ed.webp",
     description: "广州最著名的小吃步行街",
     ...defaultAccess,
   },
@@ -1272,8 +1223,7 @@ export const guangzhouFoodData: Restaurant[] = [
     hours: "19:00-02:00",
     dishHighlights: ["烧烤", "小龙虾", "砂锅粥", "潮汕牛肉"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/37361801/pexels-photo-37361801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/98f7d60e8aa6.webp",
     description: "天河区深夜食堂，白领最爱",
     ...defaultAccess,
   },
@@ -1303,8 +1253,7 @@ export const xianFoodData: Restaurant[] = [
     bloggerReason: "百年老店，正宗西安清真美食",
     dishHighlights: ["羊肉泡馍", "肉夹馍", "凉皮"],
     tags: ["本地人爱去", "老字号", "清真"],
-    imageUrl:
-      "https://images.pexels.com/photos/5545885/pexels-photo-5545885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/187ba7e96f44.webp",
     description: "西安老字号清真餐厅代表",
     ...defaultAccess,
   },
@@ -1329,8 +1278,7 @@ export const xianFoodData: Restaurant[] = [
     bloggerReason: "葫芦头泡馍正宗，西安人早餐首选",
     dishHighlights: ["葫芦头泡馍", "梆梆肉", "粉丝汤"],
     tags: ["本地人爱去", "老字号", "早餐"],
-    imageUrl:
-      "https://images.pexels.com/photos/19334342/pexels-photo-19334342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/40398e7c6daa.webp",
     description: "西安老字号，葫芦头泡馍创始店",
     ...defaultAccess,
   },
@@ -1355,8 +1303,7 @@ export const xianFoodData: Restaurant[] = [
     bloggerReason: "陕菜代表餐厅，种类齐全",
     dishHighlights: ["葫芦鸡", "温拌腰丝", "金线油塔"],
     tags: ["本地人爱去", "老字号", "陕菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/37266332/pexels-photo-37266332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/f5f94d31f0a9.webp",
     description: "西安老字号陕菜代表",
     ...defaultAccess,
   },
@@ -1381,8 +1328,7 @@ export const xianFoodData: Restaurant[] = [
     bloggerReason: "饺子宴出名，百年老店",
     dishHighlights: ["饺子宴", "酸汤水饺", "牛肉水饺"],
     tags: ["本地人爱去", "老字号", "饺子"],
-    imageUrl:
-      "https://images.pexels.com/photos/7363964/pexels-photo-7363964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/d879430e1784.webp",
     description: "钟楼老字号，饺子代表",
     ...defaultAccess,
   },
@@ -1407,8 +1353,7 @@ export const xianFoodData: Restaurant[] = [
     bloggerReason: "回坊泡馍老店，本地人推荐第一",
     dishHighlights: ["羊肉泡馍", "牛肉泡馍", "优质泡馍"],
     tags: ["本地人爱去", "回坊", "泡馍"],
-    imageUrl:
-      "https://images.pexels.com/photos/18852561/pexels-photo-18852561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/88c428d03f42.webp",
     description: "回坊必吃榜，泡馍界的扛把子",
     ...defaultAccess,
   },
@@ -1431,8 +1376,7 @@ export const xianFoodData: Restaurant[] = [
     hours: "08:00-20:00",
     dishHighlights: ["羊肉泡馍", "牛肉小炒", "糖蒜"],
     tags: ["苍蝇馆子", "本地人爱去", "回坊"],
-    imageUrl:
-      "https://images.pexels.com/photos/29305561/pexels-photo-29305561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/879988d9ba0d.webp",
     description: "回坊老店，泡馍正宗",
     ...defaultAccess,
   },
@@ -1454,8 +1398,7 @@ export const xianFoodData: Restaurant[] = [
     hours: "06:30-14:30",
     dishHighlights: ["腊牛肉夹馍", "普通肉夹馍", "粉丝汤"],
     tags: ["苍蝇馆子", "早餐", "本地人爱去"],
-    imageUrl:
-      "https://images.pexels.com/photos/18580143/pexels-photo-18580143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/c1cf3db1d74d.webp",
     description: "案板街老店，西安人早餐标配",
     ...defaultAccess,
   },
@@ -1477,8 +1420,7 @@ export const xianFoodData: Restaurant[] = [
     hours: "11:00-21:00",
     dishHighlights: ["小酥肉", "酸梅汤"],
     tags: ["苍蝇馆子", "本地人爱去", "回坊"],
-    imageUrl:
-      "https://images.pexels.com/photos/36736203/pexels-photo-36736203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/1ad56b5d9c26.webp",
     description: "大皮院老店，回坊必吃",
     ...defaultAccess,
   },
@@ -1501,8 +1443,7 @@ export const xianFoodData: Restaurant[] = [
     hours: "18:00-23:00",
     dishHighlights: ["羊肉串", "烤馕", "柿子饼", "酸梅汤"],
     tags: ["夜市", "游客必去", "清真"],
-    imageUrl:
-      "https://images.pexels.com/photos/28699434/pexels-photo-28699434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/43e5e26ea63b.webp",
     description: "西安最著名的夜市小吃街",
     ...defaultAccess,
   },
@@ -1524,8 +1465,7 @@ export const xianFoodData: Restaurant[] = [
     hours: "18:00-02:00",
     dishHighlights: ["小龙虾", "烧烤", "砂锅", "饺子"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/36799182/pexels-photo-36799182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/1bab9d7dc7c6.webp",
     description: "西安夜宵圣地，本地人深夜食堂",
     ...defaultAccess,
   },
@@ -1555,8 +1495,7 @@ export const chongqingFoodData: Restaurant[] = [
     bloggerReason: "重庆火锅排队王，本地人最爱的老火锅",
     dishHighlights: ["毛肚", "鸭肠", "鲜切牛肉", "冰粉"],
     tags: ["本地人爱去", "排队王", "火锅"],
-    imageUrl:
-      "https://images.pexels.com/photos/34870559/pexels-photo-34870559.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/92d1d18bf492.png",
     description: "解放碑排队神店，重庆火锅代表",
     ...defaultAccess,
   },
@@ -1581,8 +1520,7 @@ export const chongqingFoodData: Restaurant[] = [
     bloggerReason: "重庆火锅老字号，味道正宗",
     dishHighlights: ["毛肚", "鸭肠", "鹅肠", "血旺"],
     tags: ["本地人爱去", "老字号", "火锅"],
-    imageUrl:
-      "https://images.pexels.com/photos/14837864/pexels-photo-14837864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/2098f10f69ca.webp",
     description: "重庆知名火锅连锁品牌",
     ...defaultAccess,
   },
@@ -1607,8 +1545,7 @@ export const chongqingFoodData: Restaurant[] = [
     bloggerReason: "重庆小面50强首位的传奇面馆",
     dishHighlights: ["红油小面", "杂酱面", "牛肉面"],
     tags: ["本地人爱去", "老字号", "小面"],
-    imageUrl:
-      "https://images.pexels.com/photos/8980452/pexels-photo-8980452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/38a59ee848db.webp",
     description: "十八梯传奇小面，本地人早餐首选",
     ...defaultAccess,
   },
@@ -1633,8 +1570,7 @@ export const chongqingFoodData: Restaurant[] = [
     bloggerReason: "南山泉水鸡代表，味道鲜美",
     dishHighlights: ["泉水鸡", "辣子鸡", "来凤鱼"],
     tags: ["本地人爱去", "老字号", "川菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/2365944/pexels-photo-2365944.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/072f317a8797.webp",
     description: "南坪老字号，泉水鸡正宗",
     ...defaultAccess,
   },
@@ -1659,8 +1595,7 @@ export const chongqingFoodData: Restaurant[] = [
     bloggerReason: "重庆抄手老字号，皮薄馅嫩",
     dishHighlights: ["红油抄手", "清汤抄手", "老麻抄手"],
     tags: ["本地人爱去", "老字号", "小吃"],
-    imageUrl:
-      "https://images.pexels.com/photos/29191590/pexels-photo-29191590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/dbbd87138552.webp",
     description: "中华路老店，抄手正宗",
     ...defaultAccess,
   },
@@ -1682,8 +1617,7 @@ export const chongqingFoodData: Restaurant[] = [
     hours: "06:00-14:00",
     dishHighlights: ["小面", "豌杂面"],
     tags: ["苍蝇馆子", "早餐", "本地人爱去"],
-    imageUrl:
-      "https://images.pexels.com/photos/8980451/pexels-photo-8980451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/f92df3d7231c.webp",
     description: "重庆小面50强，本地人早餐首选",
     ...defaultAccess,
   },
@@ -1705,8 +1639,7 @@ export const chongqingFoodData: Restaurant[] = [
     hours: "17:00-02:00",
     dishHighlights: ["串串", "嫩牛肉", "郡肝"],
     tags: ["苍蝇馆子", "本地人爱去", "串串"],
-    imageUrl:
-      "https://images.pexels.com/photos/34981671/pexels-photo-34981671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/cf08550b6458.webp",
     description: "藏在菜市场里的串串神店",
     ...defaultAccess,
   },
@@ -1728,8 +1661,7 @@ export const chongqingFoodData: Restaurant[] = [
     hours: "11:00-22:00",
     dishHighlights: ["烧鸡公", "芋儿鸡", "泉水鸡"],
     tags: ["苍蝇馆子", "本地人爱去", "川菜"],
-    imageUrl:
-      "https://images.pexels.com/photos/2365946/pexels-photo-2365946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/70ffe9fe58ab.webp",
     description: "沙坪坝老店，学生最爱",
     ...defaultAccess,
   },
@@ -1752,8 +1684,7 @@ export const chongqingFoodData: Restaurant[] = [
     hours: "18:00-02:00",
     dishHighlights: ["烧烤", "小龙虾", "串串", "酸辣粉"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/32248302/pexels-photo-32248302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/879a70d20680.webp",
     description: "重庆夜生活代表，观音桥深夜食堂",
     ...defaultAccess,
   },
@@ -1775,8 +1706,7 @@ export const chongqingFoodData: Restaurant[] = [
     hours: "17:00-02:00",
     dishHighlights: ["泉水鸡", "烧烤", "夜啤酒"],
     tags: ["夜市", "本地人爱去", "夜宵"],
-    imageUrl:
-      "https://images.pexels.com/photos/11840607/pexels-photo-11840607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    imageUrl: "/img/ext/b5abb87e76c5.webp",
     description: "南山上的夜市，一边吃鸡一边看夜景",
     ...defaultAccess,
   },
