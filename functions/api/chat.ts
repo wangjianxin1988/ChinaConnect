@@ -29,7 +29,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   if (!apiKey) {
     return new Response(
       JSON.stringify({ error: "Server configuration error: MINIMAX_API_KEY not set" }),
-      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } },
     );
   }
 
@@ -70,10 +70,10 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       },
     });
   } catch (error) {
-    return new Response(
-      JSON.stringify({ error: `Proxy error: ${error}` }),
-      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
-    );
+    return new Response(JSON.stringify({ error: `Proxy error: ${error}` }), {
+      status: 500,
+      headers: { "Content-Type": "application/json", ...corsHeaders },
+    });
   }
 };
 

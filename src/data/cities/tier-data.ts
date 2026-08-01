@@ -3365,8 +3365,7 @@ export const TIER_CONFIG: Record<
     bgColor: "bg-emerald-50",
     borderColor: "border-emerald-300",
     icon: "compass",
-    description:
-      "Notable cities with good tourism value - regional destinations worth visiting",
+    description: "Notable cities with good tourism value - regional destinations worth visiting",
   },
   C: {
     label: "C-Tier",

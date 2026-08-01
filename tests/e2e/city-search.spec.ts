@@ -30,7 +30,11 @@ async function waitForHydration(page: Page) {
   await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
   await page.waitForTimeout(1500);
   // Ensure body has substantial content (React mount completed)
-  await page.waitForFunction(() => document.body && document.body.innerText.length > 200, { timeout: 10000 }).catch(() => {});
+  await page
+    .waitForFunction(() => document.body && document.body.innerText.length > 200, {
+      timeout: 10000,
+    })
+    .catch(() => {});
   await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 }).catch(() => {});
 }
 
@@ -163,7 +167,9 @@ test.describe("City Pages - Content Verification", () => {
   for (const city of POPULAR_CITIES) {
     test(`${city.name} page loads with substantial content`, async ({ page }) => {
       const errors: string[] = [];
-      page.on("console", (msg) => { if (createConsoleErrorFilter()(msg)) errors.push(msg.text()); });
+      page.on("console", (msg) => {
+        if (createConsoleErrorFilter()(msg)) errors.push(msg.text());
+      });
 
       await page.goto(`/city/${city.slug}`, { timeout: 30000 });
       await page.waitForTimeout(3000);
@@ -333,6 +339,3 @@ test.describe("City Page - Performance Indicators", () => {
     console.log(`City navigation time: ${navTime}ms`);
   });
 });
-
-
-

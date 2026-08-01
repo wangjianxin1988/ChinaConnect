@@ -45,4 +45,3 @@ export function generateRobotsHeaders(): Record<string, string> {
     "X-Robots-Tag": "index, follow",
   };
 }
-

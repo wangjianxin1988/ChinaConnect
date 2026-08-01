@@ -1,7 +1,7 @@
 // @ts-nocheck
 /**
  * Auto-Translation Layer
- * 
+ *
  * Automatically translates page content based on user's language preference.
  * - UI labels: from translations.ts (static, pre-translated)
  * - Page content: via /api/translate (dynamic, AI-translated)
@@ -114,7 +114,7 @@ export async function translatePageContent(targetLang: Language): Promise<void> 
 
   // Find all elements that should be translated
   const elements = document.querySelectorAll("[data-translate]");
-  
+
   if (elements.length === 0) return;
 
   // Batch translate (up to 5 at a time to avoid rate limiting)
@@ -123,7 +123,7 @@ export async function translatePageContent(targetLang: Language): Promise<void> 
 
   for (let i = 0; i < elementArray.length; i += batchSize) {
     const batch = elementArray.slice(i, i + batchSize);
-    
+
     await Promise.all(
       batch.map(async (el) => {
         const originalText = el.getAttribute("data-translate") || el.textContent || "";
@@ -144,7 +144,7 @@ export async function translatePageContent(targetLang: Language): Promise<void> 
             }
           }
         }
-      })
+      }),
     );
   }
 }
@@ -193,7 +193,7 @@ function isValidLanguage(code: string): boolean {
  */
 export async function initAutoTranslation(): Promise<Language> {
   const lang = detectLanguage();
-  
+
   if (lang !== "en") {
     // Translate page content (async, non-blocking)
     translatePageContent(lang).catch(console.warn);

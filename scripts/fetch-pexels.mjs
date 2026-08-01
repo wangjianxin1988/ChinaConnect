@@ -1,5 +1,5 @@
 ﻿// Fetch precise Pexels images for each city card
-const PEXELS_KEY = 'REDACTED_PEXELS_KEY';
+const PEXELS_KEY = "REDACTED_PEXELS_KEY";
 
 async function searchPexels(query, perPage = 1) {
   const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=landscape`;
@@ -16,22 +16,22 @@ async function fetchWithRetry(query, attempts = 3) {
       const url = await searchPexels(query, 1);
       if (url) return url;
     } catch (e) {
-      console.error(`  attempt ${i+1} failed: ${e.message.slice(0,80)}`);
+      console.error(`  attempt ${i + 1} failed: ${e.message.slice(0, 80)}`);
     }
-    await new Promise(r => setTimeout(r, 800));
+    await new Promise((r) => setTimeout(r, 800));
   }
   return null;
 }
 
-const fs = await import('fs');
-const path = await import('path');
+const fs = await import("fs");
+const path = await import("path");
 
-const cities = ['beijing', 'shanghai', 'chengdu', 'guangzhou'];
+const cities = ["beijing", "shanghai", "chengdu", "guangzhou"];
 const results = {};
 
 for (const city of cities) {
   console.log(`\n=== ${city} ===`);
-  const data = JSON.parse(fs.readFileSync(`src/data/cities/${city}.json`, 'utf8'));
+  const data = JSON.parse(fs.readFileSync(`src/data/cities/${city}.json`, "utf8"));
   results[city] = { attractions: [], restaurants: [] };
 
   // Attractions
@@ -42,11 +42,11 @@ for (const city of cities) {
     if (url) {
       a.image = url;
       results[city].attractions.push({ name: a.nameEn, url });
-      console.log('OK');
+      console.log("OK");
     } else {
-      console.log('FAIL');
+      console.log("FAIL");
     }
-    await new Promise(r => setTimeout(r, 350));
+    await new Promise((r) => setTimeout(r, 350));
   }
 
   // Restaurants
@@ -57,11 +57,11 @@ for (const city of cities) {
     if (url) {
       r.image = url;
       results[city].restaurants.push({ name: r.nameEn, url });
-      console.log('OK');
+      console.log("OK");
     } else {
-      console.log('FAIL');
+      console.log("FAIL");
     }
-    await new Promise(r => setTimeout(r, 350));
+    await new Promise((r) => setTimeout(r, 350));
   }
 
   // Save updated city JSON
@@ -69,5 +69,5 @@ for (const city of cities) {
   console.log(`Saved ${city}.json`);
 }
 
-fs.writeFileSync('scripts/pexels-results.json', JSON.stringify(results, null, 2));
-console.log('\nDone.');
+fs.writeFileSync("scripts/pexels-results.json", JSON.stringify(results, null, 2));
+console.log("\nDone.");

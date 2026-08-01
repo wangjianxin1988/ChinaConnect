@@ -24,11 +24,11 @@ export interface MembershipTier {
   price_monthly: number;
   price_yearly: number;
   currency: string;
-  ai_requests_daily: number;    // -1 = unlimited
-  ai_requests_monthly: number;  // -1 = unlimited
-  max_saved_routes: number;     // -1 = unlimited
-  max_conversations: number;    // -1 = unlimited
-  max_favorites: number;        // -1 = unlimited
+  ai_requests_daily: number; // -1 = unlimited
+  ai_requests_monthly: number; // -1 = unlimited
+  max_saved_routes: number; // -1 = unlimited
+  max_conversations: number; // -1 = unlimited
+  max_favorites: number; // -1 = unlimited
   features: TierFeatures;
   display_order: number;
   badge_color: string | null;
@@ -50,12 +50,7 @@ export interface TierFeatures {
 // User Memberships
 // ============================================================
 
-export type MembershipStatus =
-  | "active"
-  | "expired"
-  | "cancelled"
-  | "suspended"
-  | "pending_payment";
+export type MembershipStatus = "active" | "expired" | "cancelled" | "suspended" | "pending_payment";
 
 export type BillingCycle = "monthly" | "yearly" | "lifetime" | "trial";
 
@@ -115,32 +110,18 @@ export type TransactionType =
   | "adjustment"
   | "withdrawal";
 
-export type TransactionReferenceType =
-  | "order"
-  | "ai_usage"
-  | "admin"
-  | "reward"
-  | "refund";
+export type TransactionReferenceType = "order" | "ai_usage" | "admin" | "reward" | "refund";
 
-export type TransactionStatus =
-  | "pending"
-  | "completed"
-  | "failed"
-  | "reversed";
+export type TransactionStatus = "pending" | "completed" | "failed" | "reversed";
 
-export type PaymentChannel =
-  | "alipay"
-  | "wechat_pay"
-  | "creem"
-  | "apple_pay"
-  | "admin";
+export type PaymentChannel = "alipay" | "wechat_pay" | "creem" | "apple_pay" | "admin";
 
 export interface WalletTransaction {
   id: string;
   wallet_id: string;
   user_id: string;
   type: TransactionType;
-  amount: number;        // positive = credit, negative = debit
+  amount: number; // positive = credit, negative = debit
   balance_before: number;
   balance_after: number;
   description: string | null;
@@ -158,11 +139,7 @@ export interface WalletTransaction {
 // Orders
 // ============================================================
 
-export type OrderType =
-  | "recharge"
-  | "membership_upgrade"
-  | "membership_renew"
-  | "membership_new";
+export type OrderType = "recharge" | "membership_upgrade" | "membership_renew" | "membership_new";
 
 export type OrderStatus =
   | "pending"
@@ -271,7 +248,7 @@ export interface RouteDay {
 }
 
 export interface RouteActivity {
-  time: string;           // "09:00"
+  time: string; // "09:00"
   title: string;
   title_zh?: string;
   location: string;
@@ -307,11 +284,7 @@ export interface TransportSegment {
 // AI Conversation Snapshots
 // ============================================================
 
-export type SnapshotType =
-  | "auto"
-  | "manual"
-  | "crash_recovery"
-  | "end_of_conversation";
+export type SnapshotType = "auto" | "manual" | "crash_recovery" | "end_of_conversation";
 
 export interface AIConversationSnapshot {
   id: string;
@@ -493,10 +466,7 @@ export const isLimitReached = (used: number, limit: number): boolean => {
 };
 
 /** Format balance for display (e.g., "¥128.50") */
-export const formatBalance = (
-  amount: number,
-  currency: string = "CNY"
-): string => {
+export const formatBalance = (amount: number, currency: string = "CNY"): string => {
   const symbols: Record<string, string> = {
     CNY: "¥",
     USD: "$",

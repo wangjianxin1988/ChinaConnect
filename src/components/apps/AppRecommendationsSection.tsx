@@ -1,5 +1,5 @@
 // @ts-nocheck
-﻿/**
+/**
  * App Recommendations Component
  * Displays recommended apps for foreigners with English support.
  *

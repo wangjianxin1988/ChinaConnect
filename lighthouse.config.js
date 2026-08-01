@@ -53,7 +53,7 @@ module.exports = {
         "apple-touch-icon": ["error", { minScore: 1 }],
         "without-javascript": ["error", { minScore: 1 }],
         "maskable-icon": ["error", { minScore: 1 }],
-        "icons": ["error", { minScore: 1 }],
+        icons: ["error", { minScore: 1 }],
         "has-manifest": ["error", { minScore: 1 }],
         "manifest-start-url": ["error", { minScore: 1 }],
         "manifest-short-name": ["error", { minScore: 1 }],

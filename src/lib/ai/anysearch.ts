@@ -62,13 +62,22 @@ async function callAnySearchAPI(
     // AnySearch API returns: { code, message, data: { results: [...], metadata } }
     // Each result has: { title, url, content, score, quality_score }
     const apiResults = data?.data?.results || data?.results || [];
-    const results: SearchResult[] = apiResults.map((r: { title: string; url: string; content?: string; snippet?: string; source?: string; published_date?: string }) => ({
-      title: r.title,
-      url: r.url,
-      snippet: r.content || r.snippet || "",
-      source: r.source,
-      publishedDate: r.published_date,
-    }));
+    const results: SearchResult[] = apiResults.map(
+      (r: {
+        title: string;
+        url: string;
+        content?: string;
+        snippet?: string;
+        source?: string;
+        published_date?: string;
+      }) => ({
+        title: r.title,
+        url: r.url,
+        snippet: r.content || r.snippet || "",
+        source: r.source,
+        publishedDate: r.published_date,
+      }),
+    );
 
     return {
       query,
@@ -219,7 +228,7 @@ async function searchWikipedia(query: string): Promise<{ results: SearchResult[]
 
     const response = await fetch(searchUrl, {
       signal: AbortSignal.timeout(6000),
-      headers: { "Accept": "application/json" },
+      headers: { Accept: "application/json" },
     });
 
     if (response.ok) {
@@ -262,7 +271,9 @@ export class AnySearchService {
     try {
       this.mcpEnabled = await isMCPEnabled();
       const hasAPIKey = isAnySearchAPIAvailable();
-      console.log(`AnySearch: MCP ${this.mcpEnabled ? "enabled" : "disabled"}, API Key ${hasAPIKey ? "configured" : "not configured"}, using fallback`);
+      console.log(
+        `AnySearch: MCP ${this.mcpEnabled ? "enabled" : "disabled"}, API Key ${hasAPIKey ? "configured" : "not configured"}, using fallback`,
+      );
     } catch {
       this.mcpEnabled = false;
     }

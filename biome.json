@@ -1,8 +1,9 @@
-{
+﻿{
   "$schema": "https://biomejs.org/schemas/1.9.4/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "files": {
+    "ignore": [".astro/**", ".supabase-cache/**", ".wrangler/**", "dist/**", "node_modules/**", ".cache/**"]
   },
+  "organizeImports": { "enabled": false },
   "linter": {
     "enabled": true,
     "rules": {

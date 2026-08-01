@@ -69,9 +69,8 @@ export default defineConfig({
 
     // Extra HTTP headers for testing
     extraHTTPHeaders: {
-
-    // Pre-set localStorage to skip onboarding modal in e2e tests
-    storageState: "./playwright-storage.json",
+      // Pre-set localStorage to skip onboarding modal in e2e tests
+      storageState: "./playwright-storage.json",
       "X-Playwright-Test": "true",
     },
   },

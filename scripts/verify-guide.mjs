@@ -42,7 +42,6 @@ function findHtml(dir) {
   return out;
 }
 
-
 function extractFromDataSources(dir) {
   const out = new Map();
   if (!existsSync(dir)) return out;
@@ -85,8 +84,9 @@ async function headCheck(url, timeoutMs = 8000) {
       redirect: "follow",
       signal: controller.signal,
       headers: {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "user-agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       },
     });
     const latency = Date.now() - started;
@@ -94,7 +94,13 @@ async function headCheck(url, timeoutMs = 8000) {
     return { ok: res.ok || blocked, status: res.status, finalUrl: res.url, latency, blocked };
   } catch (err) {
     const latency = Date.now() - started;
-    return { ok: false, status: 0, finalUrl: url, latency, error: err.name === "AbortError" ? "timeout" : err.message };
+    return {
+      ok: false,
+      status: 0,
+      finalUrl: url,
+      latency,
+      error: err.name === "AbortError" ? "timeout" : err.message,
+    };
   } finally {
     clearTimeout(timer);
   }
@@ -151,7 +157,11 @@ async function main() {
     report.summary.total += 1;
     if (r.ok) report.summary.ok += 1;
     else report.summary.broken += 1;
-    const status = r.ok ? (r.blocked ? `${r.status}*` : `${r.status}`) : `FAIL${r.error ? `(${r.error.slice(0,8)})` : ""}`;
+    const status = r.ok
+      ? r.blocked
+        ? `${r.status}*`
+        : `${r.status}`
+      : `FAIL${r.error ? `(${r.error.slice(0, 8)})` : ""}`;
     console.log(formatRow([url, status, `${r.latency}ms`], widths));
   }
 

@@ -2,10 +2,10 @@
 /**
  * Hotel Data Scraper Script
  * 酒店数据抓取脚本
- * 
+ *
  * Usage:
  *   node scripts/scrape-hotels.mjs [city] [category] [count]
- * 
+ *
  * Examples:
  *   node scripts/scrape-hotels.mjs beijing              # Scrape all categories for Beijing
  *   node scripts/scrape-hotels.mjs shanghai luxury 10   # Scrape 10 luxury hotels for Shanghai
@@ -53,14 +53,7 @@ const CITIES = [
   { slug: "hohhot", name: "呼和浩特" },
 ];
 
-const CATEGORIES = [
-  "luxury",
-  "mid_range",
-  "budget",
-  "hostel",
-  "love_hotel",
-  "esports_hotel",
-];
+const CATEGORIES = ["luxury", "mid_range", "budget", "hostel", "love_hotel", "esports_hotel"];
 
 async function main() {
   const args = process.argv.slice(2);
@@ -79,7 +72,7 @@ Examples:
   node scripts/scrape-hotels.mjs --all 5                    # Scrape 5 hotels per category for all cities
 
 Categories: ${CATEGORIES.join(", ")}
-Cities: ${CITIES.map(c => c.slug).join(", ")}
+Cities: ${CITIES.map((c) => c.slug).join(", ")}
     `);
     return;
   }
@@ -101,16 +94,16 @@ Cities: ${CITIES.map(c => c.slug).join(", ")}
       }
 
       // Rate limiting between cities
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise((resolve) => setTimeout(resolve, 2000));
     }
   } else {
     const citySlug = args[0];
     const category = args[1];
 
-    const city = CITIES.find(c => c.slug === citySlug);
+    const city = CITIES.find((c) => c.slug === citySlug);
     if (!city) {
       console.error(`City not found: ${citySlug}`);
-      console.log(`Available cities: ${CITIES.map(c => c.slug).join(", ")}`);
+      console.log(`Available cities: ${CITIES.map((c) => c.slug).join(", ")}`);
       return;
     }
 
@@ -126,7 +119,7 @@ Cities: ${CITIES.map(c => c.slug).join(", ")}
 
     if (category) {
       // Filter by category
-      const filtered = hotels.filter(h => h.category === category);
+      const filtered = hotels.filter((h) => h.category === category);
       console.log(`Found ${filtered.length} ${category} hotels`);
       await saveHotelsToFile(city.slug, filtered);
     } else {

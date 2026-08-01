@@ -16,7 +16,20 @@ const PROTECTED_ROUTES = ["/account"];
 const AUTH_ROUTES = ["/auth/login", "/auth/register"];
 
 // Supported languages
-const SUPPORTED = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
+const SUPPORTED = [
+  "en",
+  "ja",
+  "ko",
+  "zh-CN",
+  "zh-TW",
+  "th",
+  "vi",
+  "ru",
+  "fr",
+  "de",
+  "ar",
+  "fa",
+] as const;
 type Language = (typeof SUPPORTED)[number];
 
 /**

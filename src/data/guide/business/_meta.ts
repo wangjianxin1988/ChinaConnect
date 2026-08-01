@@ -15,46 +15,47 @@ export interface DataSourceMeta {
   /** Short label for the source (e.g. "Canton Fair official site") */
   sourceLabel: string;
   /** How often this dataset should be re-verified */
-  reVerifyInterval: 'quarterly' | 'biannual' | 'annual';
+  reVerifyInterval: "quarterly" | "biannual" | "annual";
   /** Optional notes for the verifier */
   notes?: string;
 }
 
 export const BUSINESS_DATA_META: Record<string, DataSourceMeta> = {
-  'expo-calendar': {
-    lastVerified: '2026-06-23',
-    sourceUrl: 'https://www.cantonfair.org.cn',
-    sourceLabel: 'Canton Fair official site (representative)',
-    reVerifyInterval: 'quarterly',
-    notes: 'Each expo entry has its own organizer URL in expo-calendar.ts; this is the headline reference.',
+  "expo-calendar": {
+    lastVerified: "2026-06-23",
+    sourceUrl: "https://www.cantonfair.org.cn",
+    sourceLabel: "Canton Fair official site (representative)",
+    reVerifyInterval: "quarterly",
+    notes:
+      "Each expo entry has its own organizer URL in expo-calendar.ts; this is the headline reference.",
   },
-  'company-registration': {
-    lastVerified: '2026-06-23',
-    sourceUrl: 'https://www.gov.cn',
-    sourceLabel: 'State Council - Market Regulation (AMR)',
-    reVerifyInterval: 'biannual',
-    notes: 'Foreign Investment Law and AMR procedures; check Negative List and MOFCOM updates.',
+  "company-registration": {
+    lastVerified: "2026-06-23",
+    sourceUrl: "https://www.gov.cn",
+    sourceLabel: "State Council - Market Regulation (AMR)",
+    reVerifyInterval: "biannual",
+    notes: "Foreign Investment Law and AMR procedures; check Negative List and MOFCOM updates.",
   },
-  'etiquette': {
-    lastVerified: '2026-06-23',
-    sourceUrl: 'https://www.china-briefing.com',
-    sourceLabel: 'China Briefing business culture guides',
-    reVerifyInterval: 'biannual',
-    notes: 'Business etiquette norms evolve slowly; re-verify every 6 months.',
+  etiquette: {
+    lastVerified: "2026-06-23",
+    sourceUrl: "https://www.china-briefing.com",
+    sourceLabel: "China Briefing business culture guides",
+    reVerifyInterval: "biannual",
+    notes: "Business etiquette norms evolve slowly; re-verify every 6 months.",
   },
-  'invitation-letter': {
-    lastVerified: '2026-06-23',
-    sourceUrl: 'https://www.visaforchina.cn',
-    sourceLabel: 'China Visa Application Service Center',
-    reVerifyInterval: 'biannual',
-    notes: 'Invitation letter format requirements per Chinese embassies/consulates.',
+  "invitation-letter": {
+    lastVerified: "2026-06-23",
+    sourceUrl: "https://www.visaforchina.cn",
+    sourceLabel: "China Visa Application Service Center",
+    reVerifyInterval: "biannual",
+    notes: "Invitation letter format requirements per Chinese embassies/consulates.",
   },
-  'translation': {
-    lastVerified: '2026-06-23',
-    sourceUrl: 'https://www.tac-online.org.cn',
-    sourceLabel: 'Translators Association of China (TAC)',
-    reVerifyInterval: 'annual',
-    notes: 'Industry pricing is a market reference; actual rates vary by provider.',
+  translation: {
+    lastVerified: "2026-06-23",
+    sourceUrl: "https://www.tac-online.org.cn",
+    sourceLabel: "Translators Association of China (TAC)",
+    reVerifyInterval: "annual",
+    notes: "Industry pricing is a market reference; actual rates vary by provider.",
   },
 };
 
@@ -63,29 +64,20 @@ export const BUSINESS_DATA_META: Record<string, DataSourceMeta> = {
  * Keys match BUSINESS_DATA_META; values are arrays of URL strings.
  */
 export const BUSINESS_URLS_TO_CHECK: Record<string, string[]> = {
-  'expo-calendar': [
-    'https://www.cantonfair.org.cn',
-    'https://www.ciff-gz.com',
-    'https://en.ciff-sh.com',
-    'https://www.cpca.org.cn',
-    'https://www.autochinashow.org',
-    'https://www.intertextileapparel.com',
-    'https://www.cmef.com.cn',
-    'https://www.bauma-china.com',
-    'https://www.ciftis.org',
-    'https://www.yw.gov.cn',
+  "expo-calendar": [
+    "https://www.cantonfair.org.cn",
+    "https://www.ciff-gz.com",
+    "https://en.ciff-sh.com",
+    "https://www.cpca.org.cn",
+    "https://www.autochinashow.org",
+    "https://www.intertextileapparel.com",
+    "https://www.cmef.com.cn",
+    "https://www.bauma-china.com",
+    "https://www.ciftis.org",
+    "https://www.yw.gov.cn",
   ],
-  'company-registration': [
-    'https://www.gov.cn',
-    'https://www.mofcom.gov.cn',
-  ],
-  'etiquette': [
-    'https://www.china-briefing.com',
-  ],
-  'invitation-letter': [
-    'https://www.visaforchina.cn',
-  ],
-  'translation': [
-    'https://www.tac-online.org.cn',
-  ],
+  "company-registration": ["https://www.gov.cn", "https://www.mofcom.gov.cn"],
+  etiquette: ["https://www.china-briefing.com"],
+  "invitation-letter": ["https://www.visaforchina.cn"],
+  translation: ["https://www.tac-online.org.cn"],
 };

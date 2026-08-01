@@ -108,7 +108,12 @@ export function AttractionCard({ attraction, index, onSelectMapMarker }: Attract
           </div>
 
           {/* Description */}
-          <p className="text-gray-600 text-sm leading-relaxed mb-4" data-translate={attraction.description}>{attraction.description}</p>
+          <p
+            className="text-gray-600 text-sm leading-relaxed mb-4"
+            data-translate={attraction.description}
+          >
+            {attraction.description}
+          </p>
 
           {/* Info grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">

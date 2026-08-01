@@ -180,7 +180,8 @@ export function CulturalWarningTrigger({
       handleReopen();
     };
     window.addEventListener("chinaconnect-show-cultural-warnings", handleExternalTrigger);
-    return () => window.removeEventListener("chinaconnect-show-cultural-warnings", handleExternalTrigger);
+    return () =>
+      window.removeEventListener("chinaconnect-show-cultural-warnings", handleExternalTrigger);
   }, [handleReopen]);
 
   if (!isVisible || !currentWarning) {

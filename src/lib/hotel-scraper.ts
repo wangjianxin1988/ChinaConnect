@@ -1,12 +1,12 @@
 // @ts-nocheck
 /**
  * Hotel Data Scraper - 酒店数据实时抓取
- * 
+ *
  * Data Sources:
  * 1. AnySearch - 搜索酒店信息
  * 2. Pexels - 获取酒店图片
  * 3. 高德地图 - 获取坐标和地址
- * 
+ *
  * 支持的酒店分类：
  * - luxury（豪华酒店）
  * - mid_range（中端酒店）
@@ -59,7 +59,7 @@ interface ScrapedHotel {
 async function searchHotels(
   city: string,
   category: HotelCategory,
-  limit: number = 10
+  limit: number = 10,
 ): Promise<ScrapedHotel[]> {
   const query = HOTEL_SEARCH_QUERIES[category];
   const searchQuery = `${city} ${query.zh} 推荐 地址 电话 价格`;
@@ -123,7 +123,7 @@ async function getHotelImage(category: HotelCategory): Promise<string> {
         headers: {
           Authorization: apiKey,
         },
-      }
+      },
     );
 
     if (!response.ok) {
@@ -192,7 +192,7 @@ function getDefaultHotelImage(category: HotelCategory): string {
 export async function scrapeCityHotels(
   city: string,
   cityZh: string,
-  hotelsPerCategory: number = 5
+  hotelsPerCategory: number = 5,
 ): Promise<HotelItem[]> {
   const categories: HotelCategory[] = [
     "luxury",
@@ -244,40 +244,34 @@ export async function scrapeCityHotels(
 
 function extractHotelName(title: string, city: string): string {
   // Remove city name and common suffixes
-  return title
-    .replace(new RegExp(city, "gi"), "")
-    .replace(/酒店|宾馆|旅馆|民宿/g, "")
-    .trim() || title;
+  return (
+    title
+      .replace(new RegExp(city, "gi"), "")
+      .replace(/酒店|宾馆|旅馆|民宿/g, "")
+      .trim() || title
+  );
 }
 
 function extractAddress(snippet: string): string {
   // Look for address patterns
-  const addressMatch = snippet.match(
-    /(?:地址|位于|坐落在|地处)[：:]\s*([^，。,.\n]+)/
-  );
+  const addressMatch = snippet.match(/(?:地址|位于|坐落在|地处)[：:]\s*([^，。,.\n]+)/);
   if (addressMatch) return addressMatch[1].trim();
 
   // Look for street address
-  const streetMatch = snippet.match(
-    /[^\s]*(?:路|街|大道|胡同|巷|号|栋|楼)[^\s]*/
-  );
+  const streetMatch = snippet.match(/[^\s]*(?:路|街|大道|胡同|巷|号|栋|楼)[^\s]*/);
   if (streetMatch) return streetMatch[0];
 
   return "";
 }
 
 function extractDistrict(snippet: string, city: string): string {
-  const districtMatch = snippet.match(
-    new RegExp(`(?:${city})?\\s*(\\S{2,4}(?:区|县|市))`)
-  );
+  const districtMatch = snippet.match(new RegExp(`(?:${city})?\\s*(\\S{2,4}(?:区|县|市))`));
   return districtMatch ? districtMatch[1] : "";
 }
 
 function extractPrice(snippet: string, type: "min" | "max"): number {
   // Look for price patterns like ¥200-500, 200元-500元
-  const priceMatch = snippet.match(
-    /[¥￥]?\s*(\d+)\s*[-至到]\s*(\d+)\s*[元]?/
-  );
+  const priceMatch = snippet.match(/[¥￥]?\s*(\d+)\s*[-至到]\s*(\d+)\s*[元]?/);
   if (priceMatch) {
     const min = parseInt(priceMatch[1]);
     const max = parseInt(priceMatch[2]);
@@ -305,9 +299,7 @@ function extractRating(snippet: string): number {
 }
 
 function extractPhone(snippet: string): string | undefined {
-  const phoneMatch = snippet.match(
-    /(?:电话|Tel|联系)[：:]\s*([+\d\s\-()]+)/
-  );
+  const phoneMatch = snippet.match(/(?:电话|Tel|联系)[：:]\s*([+\d\s\-()]+)/);
   if (phoneMatch) return phoneMatch[1].trim();
 
   // Chinese phone number pattern
@@ -351,20 +343,11 @@ function extractHighlights(snippet: string): string[] {
 /**
  * Save scraped hotels to JSON file
  */
-export async function saveHotelsToFile(
-  city: string,
-  hotels: HotelItem[]
-): Promise<void> {
+export async function saveHotelsToFile(city: string, hotels: HotelItem[]): Promise<void> {
   const fs = await import("fs/promises");
   const path = await import("path");
 
-  const filePath = path.join(
-    process.cwd(),
-    "src",
-    "data",
-    "hotels",
-    `${city}-hotels.ts`
-  );
+  const filePath = path.join(process.cwd(), "src", "data", "hotels", `${city}-hotels.ts`);
 
   const content = `/**
  * ${city.charAt(0).toUpperCase() + city.slice(1)} Hotel Data - Auto-generated

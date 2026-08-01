@@ -141,25 +141,48 @@ const LABEL = {
 
 const ClockIcon: React.FC = () => (
   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
   </svg>
 );
 
 const MapPinIcon: React.FC = () => (
   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+    />
   </svg>
 );
 
 const TicketIcon: React.FC = () => (
   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
+    />
   </svg>
 );
 
 const StarIcon: React.FC<{ filled?: boolean }> = ({ filled }) => (
-  <svg className={`w-3.5 h-3.5 ${filled ? "text-amber-400 fill-amber-400" : "text-gray-300"}`} viewBox="0 0 24 24">
+  <svg
+    className={`w-3.5 h-3.5 ${filled ? "text-amber-400 fill-amber-400" : "text-gray-300"}`}
+    viewBox="0 0 24 24"
+  >
     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
   </svg>
 );
@@ -182,11 +205,15 @@ const MealCard: React.FC<{
     <div className="font-medium text-gray-800 text-sm">{meal.name}</div>
     <div className="text-xs text-gray-500 mt-1 flex items-center gap-1.5">
       <span className="text-orange-500">🍽</span>
-      <span>{labels.cuisine}: {meal.cuisine}</span>
+      <span>
+        {labels.cuisine}: {meal.cuisine}
+      </span>
     </div>
     <div className="text-xs text-gray-500 mt-0.5 flex items-center gap-1.5">
       <span className="text-green-500">💰</span>
-      <span>{labels.priceRange}: {meal.priceRange}</span>
+      <span>
+        {labels.priceRange}: {meal.priceRange}
+      </span>
     </div>
     {meal.recommendedDishes && meal.recommendedDishes.length > 0 && (
       <div className="mt-2">
@@ -204,12 +231,16 @@ const MealCard: React.FC<{
       <div className="text-xs text-gray-400 mt-1.5 flex items-center gap-1">
         <MapPinIcon />
         <span>{meal.location}</span>
-        {meal.distanceFromAttraction && <span className="text-gray-300">· {meal.distanceFromAttraction}</span>}
+        {meal.distanceFromAttraction && (
+          <span className="text-gray-300">· {meal.distanceFromAttraction}</span>
+        )}
       </div>
     )}
     {meal.reservationRequired && (
       <div className="mt-1.5">
-        <span className="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full">📋 {labels.reservation}</span>
+        <span className="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full">
+          📋 {labels.reservation}
+        </span>
       </div>
     )}
   </div>
@@ -247,7 +278,9 @@ const TimelineActivity: React.FC<{
           <div>
             <div className="flex items-center gap-1.5 text-xs text-blue-600 font-medium mb-1">
               <ClockIcon />
-              <span>{location.bestTimeStart} – {location.bestTimeEnd}</span>
+              <span>
+                {location.bestTimeStart} – {location.bestTimeEnd}
+              </span>
             </div>
             <h4 className="font-semibold text-gray-800 text-sm">{location.name}</h4>
             {location.nameZh && <p className="text-xs text-gray-400">{location.nameZh}</p>}
@@ -263,7 +296,9 @@ const TimelineActivity: React.FC<{
         {location.durationHours && (
           <div className="text-xs text-gray-500 mb-2 flex items-center gap-1">
             <span>⏱</span>
-            <span>{labels.duration}: {location.durationHours}h</span>
+            <span>
+              {labels.duration}: {location.durationHours}h
+            </span>
           </div>
         )}
 
@@ -283,7 +318,12 @@ const TimelineActivity: React.FC<{
           <div className="text-xs text-amber-600 bg-amber-50 px-2 py-1 rounded-lg mb-2">
             ⚠️ {labels.bookNow}
             {location.ticketInfo.bookingUrl && (
-              <a href={location.ticketInfo.bookingUrl} target="_blank" rel="noopener" className="ml-1 underline">
+              <a
+                href={location.ticketInfo.bookingUrl}
+                target="_blank"
+                rel="noopener"
+                className="ml-1 underline"
+              >
                 →
               </a>
             )}
@@ -349,8 +389,14 @@ const DayCard: React.FC<{
               <span>🚇</span>
               <span className="font-medium">{labels.transport}:</span>
               <span>{day.transportToAttractions.route}</span>
-              {day.transportToAttractions.duration && <span>· {day.transportToAttractions.duration}</span>}
-              {day.transportToAttractions.cost && <span className="text-green-600 font-medium">· {day.transportToAttractions.cost}</span>}
+              {day.transportToAttractions.duration && (
+                <span>· {day.transportToAttractions.duration}</span>
+              )}
+              {day.transportToAttractions.cost && (
+                <span className="text-green-600 font-medium">
+                  · {day.transportToAttractions.cost}
+                </span>
+              )}
             </div>
           )}
 
@@ -374,7 +420,12 @@ const DayCard: React.FC<{
           {/* Meals Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {day.meals?.breakfast && (
-              <MealCard meal={day.meals.breakfast} label={labels.breakfast} icon="🌅" labels={labels} />
+              <MealCard
+                meal={day.meals.breakfast}
+                label={labels.breakfast}
+                icon="🌅"
+                labels={labels}
+              />
             )}
             {day.meals?.lunch && (
               <MealCard meal={day.meals.lunch} label={labels.lunch} icon="☀️" labels={labels} />
@@ -389,7 +440,9 @@ const DayCard: React.FC<{
             <div className="bg-indigo-50 rounded-xl border border-indigo-100 p-4">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-lg">🏨</span>
-                <span className="text-xs font-semibold text-indigo-700 uppercase tracking-wide">{labels.accommodation}</span>
+                <span className="text-xs font-semibold text-indigo-700 uppercase tracking-wide">
+                  {labels.accommodation}
+                </span>
               </div>
               <div className="font-medium text-gray-800">{day.accommodation.name}</div>
               <div className="flex items-center gap-3 mt-1 text-sm text-gray-600">
@@ -398,17 +451,27 @@ const DayCard: React.FC<{
                     <StarIcon key={i} filled={i < day.accommodation!.stars} />
                   ))}
                 </div>
-                <span className="text-indigo-600 font-medium">{day.accommodation.pricePerNight}{labels.perNight}</span>
+                <span className="text-indigo-600 font-medium">
+                  {day.accommodation.pricePerNight}
+                  {labels.perNight}
+                </span>
               </div>
               <div className="text-xs text-gray-500 mt-1 flex items-center gap-1">
                 <MapPinIcon />
                 <span>{day.accommodation.location}</span>
-                {day.accommodation.nearestMetro && <span className="text-gray-400">· 🚇 {day.accommodation.nearestMetro}</span>}
+                {day.accommodation.nearestMetro && (
+                  <span className="text-gray-400">· 🚇 {day.accommodation.nearestMetro}</span>
+                )}
               </div>
               {day.accommodation.highlights && day.accommodation.highlights.length > 0 && (
                 <div className="flex flex-wrap gap-1 mt-2">
                   {day.accommodation.highlights.map((h, i) => (
-                    <span key={i} className="bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full">{h}</span>
+                    <span
+                      key={i}
+                      className="bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full"
+                    >
+                      {h}
+                    </span>
                   ))}
                 </div>
               )}
@@ -431,10 +494,34 @@ const BudgetBreakdown: React.FC<{
   labels: typeof LABEL.en;
 }> = ({ costBreakdown, estimatedTotalCost, currency, labels }) => {
   const items = [
-    { key: "accommodation", label: labels.accommodationLabel, color: "bg-indigo-500", bgColor: "bg-indigo-50", textColor: "text-indigo-700" },
-    { key: "food", label: labels.foodLabel, color: "bg-orange-500", bgColor: "bg-orange-50", textColor: "text-orange-700" },
-    { key: "transport", label: labels.transportLabel, color: "bg-blue-500", bgColor: "bg-blue-50", textColor: "text-blue-700" },
-    { key: "attractions", label: labels.attractionsLabel, color: "bg-green-500", bgColor: "bg-green-50", textColor: "text-green-700" },
+    {
+      key: "accommodation",
+      label: labels.accommodationLabel,
+      color: "bg-indigo-500",
+      bgColor: "bg-indigo-50",
+      textColor: "text-indigo-700",
+    },
+    {
+      key: "food",
+      label: labels.foodLabel,
+      color: "bg-orange-500",
+      bgColor: "bg-orange-50",
+      textColor: "text-orange-700",
+    },
+    {
+      key: "transport",
+      label: labels.transportLabel,
+      color: "bg-blue-500",
+      bgColor: "bg-blue-50",
+      textColor: "text-blue-700",
+    },
+    {
+      key: "attractions",
+      label: labels.attractionsLabel,
+      color: "bg-green-500",
+      bgColor: "bg-green-50",
+      textColor: "text-green-700",
+    },
   ] as const;
 
   const total = Object.values(costBreakdown).reduce((sum, v) => sum + Number(v), 0);
@@ -461,7 +548,12 @@ const BudgetBreakdown: React.FC<{
             const value = Number(costBreakdown[item.key as keyof typeof costBreakdown] || 0);
             const pct = (value / total) * 100;
             return pct > 0 ? (
-              <div key={item.key} className={`${item.color} transition-all`} style={{ width: `${pct}%` }} title={`${item.label}: ${value}`} />
+              <div
+                key={item.key}
+                className={`${item.color} transition-all`}
+                style={{ width: `${pct}%` }}
+                title={`${item.label}: ${value}`}
+              />
             ) : null;
           })}
         </div>
@@ -473,7 +565,10 @@ const BudgetBreakdown: React.FC<{
           const value = Number(costBreakdown[item.key as keyof typeof costBreakdown] || 0);
           const pct = total > 0 ? Math.round((value / total) * 100) : 0;
           return (
-            <div key={item.key} className={`flex items-center justify-between ${item.bgColor} rounded-lg px-3 py-2`}>
+            <div
+              key={item.key}
+              className={`flex items-center justify-between ${item.bgColor} rounded-lg px-3 py-2`}
+            >
               <div className="flex items-center gap-2">
                 <div className={`w-3 h-3 rounded-full ${item.color}`} />
                 <span className={`text-sm font-medium ${item.textColor}`}>{item.label}</span>
@@ -501,25 +596,29 @@ const PracticalInfoSection: React.FC<{ labels: typeof LABEL.en }> = ({ labels })
     <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
       <h4 className="font-semibold text-amber-800 mb-2">⚠️ {labels.visaTitle}</h4>
       <p className="text-sm text-amber-700">
-        Most nationalities require a visa. Tourist (L) visa recommended. Apply 2–4 weeks before travel.
+        Most nationalities require a visa. Tourist (L) visa recommended. Apply 2–4 weeks before
+        travel.
       </p>
     </div>
     <div className="bg-green-50 border border-green-200 rounded-xl p-4">
       <h4 className="font-semibold text-green-800 mb-2">💳 {labels.paymentTitle}</h4>
       <p className="text-sm text-green-700">
-        Use Alipay or WeChat Pay for most payments. Keep some cash as backup. International cards accepted at hotels and large restaurants.
+        Use Alipay or WeChat Pay for most payments. Keep some cash as backup. International cards
+        accepted at hotels and large restaurants.
       </p>
     </div>
     <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
       <h4 className="font-semibold text-blue-800 mb-2">📱 {labels.simTitle}</h4>
       <p className="text-sm text-blue-700">
-        Get a local SIM at the airport or convenience stores. China Mobile, Unicom, and Telecom offer tourist plans.
+        Get a local SIM at the airport or convenience stores. China Mobile, Unicom, and Telecom
+        offer tourist plans.
       </p>
     </div>
     <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
       <h4 className="font-semibold text-gray-800 mb-2">🚇 {labels.transportTitle}</h4>
       <p className="text-sm text-gray-600">
-        High-speed trains are efficient. Download Didi app for taxis. Metro available in all major cities.
+        High-speed trains are efficient. Download Didi app for taxis. Metro available in all major
+        cities.
       </p>
     </div>
     <div className="bg-red-50 border border-red-200 rounded-xl p-4">
@@ -585,7 +684,9 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
   const isSaved = !itinerary.id?.startsWith("temp_");
 
   return (
-    <div className={`bg-white rounded-2xl border border-gray-200 overflow-hidden ${compact ? "" : "shadow-sm"}`}>
+    <div
+      className={`bg-white rounded-2xl border border-gray-200 overflow-hidden ${compact ? "" : "shadow-sm"}`}
+    >
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white p-5">
         <div className="flex items-start justify-between">
@@ -609,7 +710,12 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
             className="flex-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1.5"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
+              />
             </svg>
             {labels.save}
           </button>
@@ -618,7 +724,12 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
             className="flex-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1.5"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
             </svg>
             {labels.export}
           </button>
@@ -628,7 +739,12 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
               className="flex-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1.5"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                />
               </svg>
               {labels.share}
             </button>
@@ -640,7 +756,12 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
               title={labels.delete}
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                />
               </svg>
             </button>
           )}
@@ -675,7 +796,9 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
               <div className="text-center py-12">
                 <div className="text-4xl mb-3">📅</div>
                 <p className="text-gray-500 text-sm">
-                  {language === "zh" ? "每日行程详情将在完整规划后显示" : "Daily details will appear after full planning"}
+                  {language === "zh"
+                    ? "每日行程详情将在完整规划后显示"
+                    : "Daily details will appear after full planning"}
                 </p>
               </div>
             ) : (
@@ -697,7 +820,10 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {summary.topHighlights.slice(0, 6).map((h, i) => (
-                    <div key={i} className="flex items-center gap-2 bg-blue-50 rounded-lg px-3 py-2 text-sm text-gray-700">
+                    <div
+                      key={i}
+                      className="flex items-center gap-2 bg-blue-50 rounded-lg px-3 py-2 text-sm text-gray-700"
+                    >
                       <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">
                         {i + 1}
                       </span>
@@ -743,8 +869,14 @@ export const ItineraryDisplay: React.FC<ItineraryDisplayProps> = ({
 
       {/* Save Dialog */}
       {showSaveDialog && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50" onClick={() => setShowSaveDialog(false)}>
-          <div className="bg-white rounded-2xl p-6 w-96 shadow-2xl mx-4" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
+          onClick={() => setShowSaveDialog(false)}
+        >
+          <div
+            className="bg-white rounded-2xl p-6 w-96 shadow-2xl mx-4"
+            onClick={(e) => e.stopPropagation()}
+          >
             <h3 className="font-semibold text-lg mb-4">{labels.saveItinerary}</h3>
             <input
               type="text"

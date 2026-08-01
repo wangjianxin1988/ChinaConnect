@@ -4,9 +4,9 @@
  * Supports Supabase-backed tier checking for authenticated users
  */
 
-import { getCurrentTier, setCurrentTier, TIER_LIMITS, type SubscriptionTier } from './subscription';
+import { getCurrentTier, setCurrentTier, TIER_LIMITS, type SubscriptionTier } from "./subscription";
 
-const STORAGE_KEY = 'ai_usage_data';
+const STORAGE_KEY = "ai_usage_data";
 
 interface UsageData {
   count: number;
@@ -23,35 +23,37 @@ let tierFetchPromise: Promise<SubscriptionTier> | null = null;
  * Returns the tier slug mapped to our local subscription tier
  */
 async function fetchTierFromSupabase(): Promise<SubscriptionTier> {
-  if (typeof window === 'undefined') return 'free';
+  if (typeof window === "undefined") return "free";
 
   try {
     // Dynamically import to avoid circular deps and SSR issues
-    const { supabase } = await import('@/supabase/config');
+    const { supabase } = await import("@/supabase/config");
 
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return 'free';
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) return "free";
 
     // Use the get_user_membership RPC function
-    const { data, error } = await supabase.rpc('get_user_membership', {
+    const { data, error } = await supabase.rpc("get_user_membership", {
       p_user_id: user.id,
     });
 
     if (error || !data || data.length === 0) {
       // Fallback: check profiles table
       const { data: profile } = await supabase
-        .from('profiles')
-        .select('membership_tier')
-        .eq('user_id', user.id)
+        .from("profiles")
+        .select("membership_tier")
+        .eq("user_id", user.id)
         .single();
 
       if (profile?.membership_tier) {
         return mapDbTierToLocal(profile.membership_tier);
       }
-      return 'free';
+      return "free";
     }
 
-    const tierSlug = data[0]?.tier_slug || 'free';
+    const tierSlug = data[0]?.tier_slug || "free";
     const mapped = mapDbTierToLocal(tierSlug);
 
     // Update localStorage cache
@@ -59,7 +61,7 @@ async function fetchTierFromSupabase(): Promise<SubscriptionTier> {
 
     return mapped;
   } catch (err) {
-    console.warn('Failed to fetch tier from Supabase:', err);
+    console.warn("Failed to fetch tier from Supabase:", err);
     return getCurrentTier();
   }
 }
@@ -71,14 +73,14 @@ async function fetchTierFromSupabase(): Promise<SubscriptionTier> {
  */
 function mapDbTierToLocal(dbSlug: string): SubscriptionTier {
   const mapping: Record<string, SubscriptionTier> = {
-    free: 'free',
-    explorer: 'explorer',
-    traveler: 'traveler',
-    business: 'business',
-    pro: 'traveler',      // Map DB 'pro' to local 'traveler'
-    enterprise: 'business', // Map DB 'enterprise' to local 'business'
+    free: "free",
+    explorer: "explorer",
+    traveler: "traveler",
+    business: "business",
+    pro: "traveler", // Map DB 'pro' to local 'traveler'
+    enterprise: "business", // Map DB 'enterprise' to local 'business'
   };
-  return mapping[dbSlug] || 'free';
+  return mapping[dbSlug] || "free";
 }
 
 /**
@@ -86,7 +88,7 @@ function mapDbTierToLocal(dbSlug: string): SubscriptionTier {
  * Falls back to localStorage for non-logged-in users
  */
 export async function getAuthAwareTier(): Promise<SubscriptionTier> {
-  if (typeof window === 'undefined') return 'free';
+  if (typeof window === "undefined") return "free";
 
   // Return cached value if available
   if (cachedTier) return cachedTier;
@@ -115,7 +117,7 @@ export function clearTierCache(): void {
  * Automatically resets if we're in a new month
  */
 function getUsageData(): UsageData {
-  if (typeof window === 'undefined') {
+  if (typeof window === "undefined") {
     return { count: 0, month: new Date().getMonth(), year: new Date().getFullYear() };
   }
 
@@ -149,7 +151,7 @@ function getUsageData(): UsageData {
  * Save usage data to localStorage
  */
 function saveUsageData(data: UsageData): void {
-  if (typeof window === 'undefined') return;
+  if (typeof window === "undefined") return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
@@ -207,7 +209,7 @@ export function checkUsageLimit(): { allowed: boolean; remaining: number; max: n
  * Returns false when the limit has been reached.
  */
 export function canMakeRequest(): boolean {
-  if (typeof window === 'undefined') return true;
+  if (typeof window === "undefined") return true;
   const limit = checkUsageLimit();
   return limit.allowed;
 }
@@ -222,8 +224,12 @@ export function incrementUsage(): number {
   const limit = checkUsageLimit();
   if (!limit.allowed) {
     // Dispatch event so UI can react to limit reached
-    if (typeof window !== 'undefined') {
-      window.dispatchEvent(new CustomEvent('ai-usage-exceeded', { detail: { count: getUsageCount(), max: limit.max } }));
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(
+        new CustomEvent("ai-usage-exceeded", {
+          detail: { count: getUsageCount(), max: limit.max },
+        }),
+      );
     }
     return -1;
   }
@@ -233,8 +239,8 @@ export function incrementUsage(): number {
   saveUsageData(data);
 
   // Dispatch custom event so UI components can react
-  if (typeof window !== 'undefined') {
-    window.dispatchEvent(new CustomEvent('ai-usage-updated', { detail: { count: data.count } }));
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new CustomEvent("ai-usage-updated", { detail: { count: data.count } }));
   }
 
   return data.count;

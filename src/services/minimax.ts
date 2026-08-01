@@ -117,7 +117,8 @@ export function cleanModelResponse(text: string): string {
 
   let cleaned = text;
   // DEBUG: Log when think block is detected
-  if (text.includes("think")) console.log("[DEBUG clean] input length:", text.length, "has think:", text.includes("<think>"));
+  if (text.includes("think"))
+    console.log("[DEBUG clean] input length:", text.length, "has think:", text.includes("<think>"));
 
   // Remove closed <think>...</think> blocks
   cleaned = cleaned.replace(/<think>[\s\S]*?<\/think>/g, "");
@@ -327,7 +328,8 @@ export class MiniMaxClient {
    * Returns the final cleaned response text.
    */
   async chatStream(options: ChatStreamOptions): Promise<string> {
-    const { messages, tools, onChunk, onComplete, onError, signal, onToolExecuting, onToolResult } = options;
+    const { messages, tools, onChunk, onComplete, onError, signal, onToolExecuting, onToolResult } =
+      options;
 
     // Cancel any previous in-flight request
     this.cancel();

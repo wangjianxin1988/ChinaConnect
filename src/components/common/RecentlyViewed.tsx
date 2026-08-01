@@ -57,7 +57,11 @@ export function RecentlyViewed({ lang = "en", onItemClick }: Props) {
       </div>
       <div className="recently-viewed-grid">
         {items.slice(0, MAX_ITEMS).map((item) => (
-          <button key={item.id} className="recently-viewed-item" onClick={() => onItemClick?.(item)}>
+          <button
+            key={item.id}
+            className="recently-viewed-item"
+            onClick={() => onItemClick?.(item)}
+          >
             <div className="recently-viewed-img">
               {item.image ? (
                 <img src={item.image} alt={lang === "zh" ? item.name : item.nameEn} />

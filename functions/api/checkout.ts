@@ -51,28 +51,28 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
   // Validate Creem API key
   if (!env.CREEM_API_KEY) {
-    return new Response(
-      JSON.stringify({ error: "Server configuration error" }),
-      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
-    );
+    return new Response(JSON.stringify({ error: "Server configuration error" }), {
+      status: 500,
+      headers: { "Content-Type": "application/json", ...corsHeaders },
+    });
   }
 
   try {
-    const body = await request.json() as { tier?: string; billing?: string };
+    const body = (await request.json()) as { tier?: string; billing?: string };
     const { tier, billing } = body;
 
     // Validate inputs
     if (!tier || !["explorer", "traveler", "business"].includes(tier)) {
       return new Response(
         JSON.stringify({ error: "Invalid tier. Must be explorer, traveler, or business." }),
-        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } },
       );
     }
 
     if (!billing || !["monthly", "annual"].includes(billing)) {
       return new Response(
         JSON.stringify({ error: "Invalid billing. Must be monthly or annual." }),
-        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } },
       );
     }
 
@@ -107,23 +107,23 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       console.error("Creem API error:", creemResponse.status, errorText);
       return new Response(
         JSON.stringify({ error: `Creem checkout creation failed: ${errorText}` }),
-        { status: 502, headers: { "Content-Type": "application/json", ...corsHeaders } }
+        { status: 502, headers: { "Content-Type": "application/json", ...corsHeaders } },
       );
     }
 
-    const checkout = await creemResponse.json() as { checkout_url: string; id: string };
+    const checkout = (await creemResponse.json()) as { checkout_url: string; id: string };
 
-    return new Response(
-      JSON.stringify({ url: checkout.checkout_url, checkoutId: checkout.id }),
-      { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
-    );
+    return new Response(JSON.stringify({ url: checkout.checkout_url, checkoutId: checkout.id }), {
+      status: 200,
+      headers: { "Content-Type": "application/json", ...corsHeaders },
+    });
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : "Unknown error";
     console.error("Checkout error:", message);
-    return new Response(
-      JSON.stringify({ error: `Checkout error: ${message}` }),
-      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
-    );
+    return new Response(JSON.stringify({ error: `Checkout error: ${message}` }), {
+      status: 500,
+      headers: { "Content-Type": "application/json", ...corsHeaders },
+    });
   }
 };
 

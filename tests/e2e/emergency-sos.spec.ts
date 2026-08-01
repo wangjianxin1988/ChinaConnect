@@ -8,7 +8,11 @@ async function waitForHydration(page: Page) {
   await page.waitForLoadState("networkidle", { timeout: 30000 }).catch(() => {});
   await page.waitForTimeout(1500);
   // Ensure body has substantial content (React mount completed)
-  await page.waitForFunction(() => document.body && document.body.innerText.length > 200, { timeout: 10000 }).catch(() => {});
+  await page
+    .waitForFunction(() => document.body && document.body.innerText.length > 200, {
+      timeout: 10000,
+    })
+    .catch(() => {});
   await page.waitForSelector(".animate-spin", { state: "hidden", timeout: 10000 }).catch(() => {});
 }
 
@@ -406,13 +410,18 @@ test.describe("Emergency Page from City Context", () => {
     await page.goto("/", { timeout: 30000 });
     await waitForHydration(page);
     let hasEmergency =
-      (await page.locator('a[href="/emergency"], a:has-text("Emergency"), a:has-text("SOS")').count()) > 0;
+      (await page
+        .locator('a[href="/emergency"], a:has-text("Emergency"), a:has-text("SOS")')
+        .count()) > 0;
     expect(hasEmergency).toBeTruthy();
 
     // Test from community
     await page.goto("/community", { timeout: 30000 });
     await waitForHydration(page);
-    hasEmergency = (await page.locator('a[href="/emergency"], a:has-text("Emergency"), a:has-text("SOS")').count()) > 0;
+    hasEmergency =
+      (await page
+        .locator('a[href="/emergency"], a:has-text("Emergency"), a:has-text("SOS")')
+        .count()) > 0;
     expect(hasEmergency).toBeTruthy();
   });
 });

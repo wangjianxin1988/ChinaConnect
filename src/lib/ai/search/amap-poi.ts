@@ -112,8 +112,7 @@ export async function executeAmapPOISearch(params: AmapPOIParams): Promise<AmapP
       success: false,
       count: 0,
       pois: [],
-      error:
-        "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
+      error: "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
     };
   }
 
@@ -159,37 +158,33 @@ export async function executeAmapPOISearch(params: AmapPOIParams): Promise<AmapP
       };
     }
 
-    const pois: AmapPOIItem[] = (data.pois || []).map(
-      (poi: Record<string, unknown>) => {
-        const location = String(poi.location || "").split(",");
-        const photos = Array.isArray(poi.photos)
-          ? (poi.photos as Array<{ title?: string; url?: string }>).slice(0, 3).map((p) => ({
-              title: p.title || "",
-              url: p.url || "",
-            }))
-          : [];
+    const pois: AmapPOIItem[] = (data.pois || []).map((poi: Record<string, unknown>) => {
+      const location = String(poi.location || "").split(",");
+      const photos = Array.isArray(poi.photos)
+        ? (poi.photos as Array<{ title?: string; url?: string }>).slice(0, 3).map((p) => ({
+            title: p.title || "",
+            url: p.url || "",
+          }))
+        : [];
 
-        return {
-          name: String(poi.name || ""),
-          type: String(poi.type || ""),
-          address: String(poi.address || ""),
-          location: {
-            lng: parseFloat(location[0]) || 0,
-            lat: parseFloat(location[1]) || 0,
-          },
-          tel: poi.tel ? String(poi.tel) : undefined,
-          distance: poi.distance ? String(poi.distance) : undefined,
-          rating: poi.biz_ext
-            ? String((poi.biz_ext as Record<string, unknown>).rating || "")
-            : undefined,
-          cost: poi.biz_ext
-            ? String((poi.biz_ext as Record<string, unknown>).cost || "")
-            : undefined,
-          businessArea: poi.business_area ? String(poi.business_area) : undefined,
-          photos: photos.length > 0 ? photos : undefined,
-        };
-      }
-    );
+      return {
+        name: String(poi.name || ""),
+        type: String(poi.type || ""),
+        address: String(poi.address || ""),
+        location: {
+          lng: parseFloat(location[0]) || 0,
+          lat: parseFloat(location[1]) || 0,
+        },
+        tel: poi.tel ? String(poi.tel) : undefined,
+        distance: poi.distance ? String(poi.distance) : undefined,
+        rating: poi.biz_ext
+          ? String((poi.biz_ext as Record<string, unknown>).rating || "")
+          : undefined,
+        cost: poi.biz_ext ? String((poi.biz_ext as Record<string, unknown>).cost || "") : undefined,
+        businessArea: poi.business_area ? String(poi.business_area) : undefined,
+        photos: photos.length > 0 ? photos : undefined,
+      };
+    });
 
     return {
       success: true,

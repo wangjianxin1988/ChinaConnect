@@ -5,9 +5,21 @@
  * Used by MiniMaxClient to dispatch tool calls during AI conversations.
  */
 
-import { executeWebSearch, type WebSearchParams, type WebSearchResult } from "@/lib/ai/search/web-search";
-import { executeAmapPOISearch, type AmapPOIParams, type AmapPOIResult } from "@/lib/ai/search/amap-poi";
-import { executeAmapRouteSearch, type AmapRouteParams, type AmapRouteResult } from "@/lib/ai/search/amap-route";
+import {
+  executeWebSearch,
+  type WebSearchParams,
+  type WebSearchResult,
+} from "@/lib/ai/search/web-search";
+import {
+  executeAmapPOISearch,
+  type AmapPOIParams,
+  type AmapPOIResult,
+} from "@/lib/ai/search/amap-poi";
+import {
+  executeAmapRouteSearch,
+  type AmapRouteParams,
+  type AmapRouteResult,
+} from "@/lib/ai/search/amap-route";
 import {
   CitySearch,
   HotelSearch,
@@ -54,12 +66,24 @@ export const TOOL_EXECUTOR_MAP: Record<string, ToolExecutorFn> = {
   FoodSearch: (p) => FoodSearch({ city: p.city, cuisine: p.cuisine, budget: p.budget }),
   TransportSearch: (p) => TransportSearch({ from: p.from, to: p.to }),
   VisaInfo: (p) => VisaInfo({ nationality: p.nationality }),
-  TranslationHelper: (p) => TranslationHelper({ text: p.text, targetLang: p.targetLang, sourceLang: p.sourceLang }),
+  TranslationHelper: (p) =>
+    TranslationHelper({ text: p.text, targetLang: p.targetLang, sourceLang: p.sourceLang }),
   WeatherInfo: (p) => WeatherInfo({ city: p.city }),
   EmergencyInfo: (p) => EmergencyInfo({ city: p.city }),
   SubwayRoute: (p) => SubwayRoute({ city: p.city, from: p.from, to: p.to }),
-  BudgetCalculator: (p) => BudgetCalculator({ city: p.city, days: Number(p.days) || 3, budgetLevel: p.budgetLevel, travelers: Number(p.travelers) || 1 }),
-  RouteOptimizer: (p) => RouteOptimizer({ city: p.city, attractions: p.attractions ? p.attractions.split(",") : undefined, days: Number(p.days) || 1 }),
+  BudgetCalculator: (p) =>
+    BudgetCalculator({
+      city: p.city,
+      days: Number(p.days) || 3,
+      budgetLevel: p.budgetLevel,
+      travelers: Number(p.travelers) || 1,
+    }),
+  RouteOptimizer: (p) =>
+    RouteOptimizer({
+      city: p.city,
+      attractions: p.attractions ? p.attractions.split(",") : undefined,
+      days: Number(p.days) || 1,
+    }),
   CulturalTips: (p) => CulturalTips({ city: p.city }),
   PaymentGuide: (p) => PaymentGuide({ city: p.city }),
   CrowdLevel: (p) => CrowdLevel({ city: p.city, attraction: p.attraction, month: p.month }),
@@ -101,7 +125,10 @@ export const TOOL_EXECUTOR_MAP: Record<string, ToolExecutorFn> = {
  * Handles both sync and async tool functions.
  * Returns a JSON string suitable for the AI tool response.
  */
-export async function executeToolByName(name: string, args: Record<string, string>): Promise<string> {
+export async function executeToolByName(
+  name: string,
+  args: Record<string, string>,
+): Promise<string> {
   const executor = TOOL_EXECUTOR_MAP[name];
   if (!executor) {
     return JSON.stringify({

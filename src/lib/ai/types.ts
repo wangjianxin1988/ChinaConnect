@@ -70,14 +70,14 @@ export type ToolName =
   | "transport_search"
   | "translation_api"
   | "map_service"
-   | "anysearch"
-   | "ExchangeRate"
-   | "VisaSearch"
-   | "RouteSearch"
-   | "SaveItinerary"
-   | "PriceQuery"
-   | "UserReviews"
-   | "EventSearch";
+  | "anysearch"
+  | "ExchangeRate"
+  | "VisaSearch"
+  | "RouteSearch"
+  | "SaveItinerary"
+  | "PriceQuery"
+  | "UserReviews"
+  | "EventSearch";
 
 export interface ToolCall {
   name: ToolName;

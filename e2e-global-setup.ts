@@ -9,13 +9,10 @@ export default async function globalSetup(_config: FullConfig) {
     origins: [
       {
         origin: baseURL,
-        localStorage: [
-          { name: "chinaconnect_onboarding_complete", value: "true" },
-        ],
+        localStorage: [{ name: "chinaconnect_onboarding_complete", value: "true" }],
       },
     ],
   };
   const fs = await import("fs");
   fs.writeFileSync("playwright-storage.json", JSON.stringify(storageState, null, 2));
 }
-

@@ -122,8 +122,7 @@ export async function executeAmapRouteSearch(params: AmapRouteParams): Promise<A
       origin,
       destination,
       routes: [],
-      error:
-        "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
+      error: "Amap API proxy not available. Ensure the /api/amap endpoint is deployed.",
     };
   }
 
@@ -267,8 +266,12 @@ function parseTransitRoutes(data: Record<string, unknown>): AmapRoute[] {
         segments.push({
           mode: "bus",
           lineName: line.name ? String(line.name) : undefined,
-          departureStop: line.departure_stop ? String((line.departure_stop as Record<string, unknown>).name || "") : undefined,
-          arrivalStop: line.arrival_stop ? String((line.arrival_stop as Record<string, unknown>).name || "") : undefined,
+          departureStop: line.departure_stop
+            ? String((line.departure_stop as Record<string, unknown>).name || "")
+            : undefined,
+          arrivalStop: line.arrival_stop
+            ? String((line.arrival_stop as Record<string, unknown>).name || "")
+            : undefined,
           stationNum: line.via_num ? Number(line.via_num) + 1 : undefined,
         });
       }
@@ -277,10 +280,18 @@ function parseTransitRoutes(data: Record<string, unknown>): AmapRoute[] {
         segments.push({
           mode: "railway",
           lineName: railway.name ? String(railway.name) : undefined,
-          departureStop: railway.departure_stop ? String((railway.departure_stop as Record<string, unknown>).name || "") : undefined,
-          arrivalStop: railway.arrival_stop ? String((railway.arrival_stop as Record<string, unknown>).name || "") : undefined,
-          departureTime: railway.departure_stop ? String((railway.departure_stop as Record<string, unknown>).time || "") : undefined,
-          arrivalTime: railway.arrival_stop ? String((railway.arrival_stop as Record<string, unknown>).time || "") : undefined,
+          departureStop: railway.departure_stop
+            ? String((railway.departure_stop as Record<string, unknown>).name || "")
+            : undefined,
+          arrivalStop: railway.arrival_stop
+            ? String((railway.arrival_stop as Record<string, unknown>).name || "")
+            : undefined,
+          departureTime: railway.departure_stop
+            ? String((railway.departure_stop as Record<string, unknown>).time || "")
+            : undefined,
+          arrivalTime: railway.arrival_stop
+            ? String((railway.arrival_stop as Record<string, unknown>).time || "")
+            : undefined,
           price: railway.price ? `¥${railway.price}` : undefined,
           stationNum: railway.via_num ? Number(railway.via_num) + 1 : undefined,
         });

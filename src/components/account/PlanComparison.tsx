@@ -4,7 +4,7 @@
  * showing feature differences for each tier.
  */
 
-import React from 'react';
+import React from "react";
 import {
   getCurrentTier,
   TIER_LIMITS,
@@ -13,47 +13,40 @@ import {
   TIER_DESCRIPTIONS,
   TIER_FEATURES,
   type SubscriptionTier,
-} from '@/lib/subscription';
+} from "@/lib/subscription";
 
 interface PlanComparisonProps {
-  language?: 'en' | 'zh';
+  language?: "en" | "zh";
 }
 
-const TIER_ORDER: SubscriptionTier[] = [
-  'free',
-  'explorer',
-  'traveler',
-  'business',
-];
+const TIER_ORDER: SubscriptionTier[] = ["free", "explorer", "traveler", "business"];
 
 const TIER_GRADIENTS: Record<SubscriptionTier, string> = {
-  free: 'from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-750',
-  explorer: 'from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20',
-  traveler:
-    'from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20',
-  business:
-    'from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20',
+  free: "from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-750",
+  explorer: "from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20",
+  traveler: "from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20",
+  business: "from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20",
 };
 
 const TIER_ICON_BG: Record<SubscriptionTier, string> = {
-  free: 'bg-gray-200 dark:bg-gray-700',
-  explorer: 'bg-blue-100 dark:bg-blue-800',
-  traveler: 'bg-purple-100 dark:bg-purple-800',
-  business: 'bg-amber-100 dark:bg-amber-800',
+  free: "bg-gray-200 dark:bg-gray-700",
+  explorer: "bg-blue-100 dark:bg-blue-800",
+  traveler: "bg-purple-100 dark:bg-purple-800",
+  business: "bg-amber-100 dark:bg-amber-800",
 };
 
 const TIER_ICON: Record<SubscriptionTier, string> = {
-  free: '🆓',
-  explorer: '🧭',
-  traveler: '✈️',
-  business: '💼',
+  free: "🆓",
+  explorer: "🧭",
+  traveler: "✈️",
+  business: "💼",
 };
 
 const TIER_BTN_COLORS: Record<SubscriptionTier, string> = {
-  free: 'bg-gray-600 hover:bg-gray-700 dark:bg-gray-500 dark:hover:bg-gray-600',
-  explorer: 'bg-blue-600 hover:bg-blue-700',
-  traveler: 'bg-purple-600 hover:bg-purple-700',
-  business: 'bg-amber-600 hover:bg-amber-700',
+  free: "bg-gray-600 hover:bg-gray-700 dark:bg-gray-500 dark:hover:bg-gray-600",
+  explorer: "bg-blue-600 hover:bg-blue-700",
+  traveler: "bg-purple-600 hover:bg-purple-700",
+  business: "bg-amber-600 hover:bg-amber-700",
 };
 
 // All features for the comparison matrix
@@ -65,59 +58,59 @@ interface FeatureRow {
 
 const FEATURE_MATRIX: FeatureRow[] = [
   {
-    key: 'ai_requests',
-    label: { en: 'AI Requests / Month', zh: '每月AI请求次数' },
-    tiers: { free: '5', explorer: '20', traveler: '40', business: '∞' },
+    key: "ai_requests",
+    label: { en: "AI Requests / Month", zh: "每月AI请求次数" },
+    tiers: { free: "5", explorer: "20", traveler: "40", business: "∞" },
   },
   {
-    key: 'save_itineraries',
-    label: { en: 'Save Itineraries', zh: '保存行程' },
+    key: "save_itineraries",
+    label: { en: "Save Itineraries", zh: "保存行程" },
     tiers: { free: false, explorer: true, traveler: true, business: true },
   },
   {
-    key: 'conversation_history',
-    label: { en: 'Conversation History', zh: '对话历史' },
+    key: "conversation_history",
+    label: { en: "Conversation History", zh: "对话历史" },
     tiers: { free: false, explorer: true, traveler: true, business: true },
   },
   {
-    key: 'pdf_export',
-    label: { en: 'PDF Export', zh: 'PDF导出' },
+    key: "pdf_export",
+    label: { en: "PDF Export", zh: "PDF导出" },
     tiers: { free: false, explorer: false, traveler: true, business: true },
   },
   {
-    key: 'premium_custom',
-    label: { en: 'Premium Customization', zh: '高级自定义' },
+    key: "premium_custom",
+    label: { en: "Premium Customization", zh: "高级自定义" },
     tiers: { free: false, explorer: false, traveler: true, business: true },
   },
   {
-    key: 'biz_templates',
-    label: { en: 'Business Templates', zh: '商务模板' },
+    key: "biz_templates",
+    label: { en: "Business Templates", zh: "商务模板" },
     tiers: { free: false, explorer: false, traveler: false, business: true },
   },
   {
-    key: 'team_collab',
-    label: { en: 'Team Collaboration', zh: '团队协作' },
+    key: "team_collab",
+    label: { en: "Team Collaboration", zh: "团队协作" },
     tiers: { free: false, explorer: false, traveler: false, business: true },
   },
   {
-    key: 'api_access',
-    label: { en: 'API Access', zh: 'API访问' },
+    key: "api_access",
+    label: { en: "API Access", zh: "API访问" },
     tiers: { free: false, explorer: false, traveler: false, business: true },
   },
   {
-    key: 'priority_support',
-    label: { en: 'Priority Support', zh: '优先支持' },
+    key: "priority_support",
+    label: { en: "Priority Support", zh: "优先支持" },
     tiers: { free: false, explorer: true, traveler: true, business: true },
   },
   {
-    key: 'dedicated_support',
-    label: { en: 'Dedicated Support', zh: '专属支持' },
+    key: "dedicated_support",
+    label: { en: "Dedicated Support", zh: "专属支持" },
     tiers: { free: false, explorer: false, traveler: false, business: true },
   },
 ];
 
 function renderCellValue(value: string | boolean): React.ReactNode {
-  if (typeof value === 'boolean') {
+  if (typeof value === "boolean") {
     return value ? (
       <svg
         className="w-5 h-5 text-green-500 mx-auto"
@@ -125,12 +118,7 @@ function renderCellValue(value: string | boolean): React.ReactNode {
         viewBox="0 0 24 24"
         stroke="currentColor"
       >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2.5}
-          d="M5 13l4 4L19 7"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
       </svg>
     ) : (
       <svg
@@ -148,19 +136,12 @@ function renderCellValue(value: string | boolean): React.ReactNode {
       </svg>
     );
   }
-  return (
-    <span className="text-sm font-semibold text-gray-900 dark:text-white">
-      {value}
-    </span>
-  );
+  return <span className="text-sm font-semibold text-gray-900 dark:text-white">{value}</span>;
 }
 
-export const PlanComparison: React.FC<PlanComparisonProps> = ({
-  language = 'en',
-}) => {
-  const isZh = language === 'zh';
-  const [currentTier, setCurrentTierState] =
-    React.useState<SubscriptionTier>('free');
+export const PlanComparison: React.FC<PlanComparisonProps> = ({ language = "en" }) => {
+  const isZh = language === "zh";
+  const [currentTier, setCurrentTierState] = React.useState<SubscriptionTier>("free");
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
@@ -171,22 +152,20 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
   if (!mounted) return null;
 
   const currentTierIndex = TIER_ORDER.indexOf(currentTier);
-  const availableUpgrades = TIER_ORDER.filter(
-    (_, i) => i > currentTierIndex
-  );
+  const availableUpgrades = TIER_ORDER.filter((_, i) => i > currentTierIndex);
 
   return (
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold text-gray-900 dark:text-white">
-          {isZh ? '套餐对比' : 'Plan Comparison'}
+          {isZh ? "套餐对比" : "Plan Comparison"}
         </h2>
         <a
           href="/pricing"
           className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium hover:underline"
         >
-          {isZh ? '查看完整定价' : 'View Full Pricing'} →
+          {isZh ? "查看完整定价" : "View Full Pricing"} →
         </a>
       </div>
 
@@ -200,7 +179,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
           </div>
           <div className="flex-1">
             <p className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wide">
-              {isZh ? '当前套餐' : 'Current Plan'}
+              {isZh ? "当前套餐" : "Current Plan"}
             </p>
             <h3 className="text-xl font-bold text-gray-900 dark:text-white">
               {TIER_NAMES[currentTier][language]}
@@ -213,9 +192,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
             <p className="text-2xl font-bold text-gray-900 dark:text-white">
               ${TIER_PRICING[currentTier].monthly.toFixed(2)}
             </p>
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              {isZh ? '/月' : '/month'}
-            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{isZh ? "/月" : "/month"}</p>
           </div>
         </div>
       </div>
@@ -224,7 +201,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
       {availableUpgrades.length > 0 && (
         <div>
           <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
-            {isZh ? '可升级套餐' : 'Available Upgrades'}
+            {isZh ? "可升级套餐" : "Available Upgrades"}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {availableUpgrades.map((tier) => (
@@ -244,7 +221,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
                     </h4>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
                       ${TIER_PRICING[tier].monthly.toFixed(2)}
-                      {isZh ? '/月' : '/mo'}
+                      {isZh ? "/月" : "/mo"}
                     </p>
                   </div>
                 </div>
@@ -277,7 +254,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
                 {/* What you gain vs current */}
                 <div className="border-t border-gray-200 dark:border-gray-600 pt-3 mb-4">
                   <p className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-1.5">
-                    {isZh ? '相比当前套餐增加：' : 'Upgrade gains:'}
+                    {isZh ? "相比当前套餐增加：" : "Upgrade gains:"}
                   </p>
                   {FEATURE_MATRIX.filter((f) => {
                     const currentVal = f.tiers[currentTier];
@@ -299,7 +276,9 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
                   href="/pricing"
                   className={`block w-full text-center py-2.5 px-4 rounded-lg text-white text-sm font-medium transition-colors ${TIER_BTN_COLORS[tier]}`}
                 >
-                  {isZh ? '升级到此套餐' : 'Upgrade to {name}'.replace('{name}', TIER_NAMES[tier][language])}
+                  {isZh
+                    ? "升级到此套餐"
+                    : "Upgrade to {name}".replace("{name}", TIER_NAMES[tier][language])}
                 </a>
               </div>
             ))}
@@ -311,12 +290,12 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
         <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-6 text-center">
           <div className="text-3xl mb-2">👑</div>
           <h3 className="text-lg font-bold text-amber-700 dark:text-amber-300">
-            {isZh ? '您已拥有最高套餐！' : "You're on the highest plan!"}
+            {isZh ? "您已拥有最高套餐！" : "You're on the highest plan!"}
           </h3>
           <p className="text-sm text-amber-600 dark:text-amber-400 mt-1">
             {isZh
-              ? '您已享受所有功能。需要团队方案请联系客服。'
-              : 'Enjoy all features. Contact support for team plans.'}
+              ? "您已享受所有功能。需要团队方案请联系客服。"
+              : "Enjoy all features. Contact support for team plans."}
           </p>
         </div>
       )}
@@ -325,7 +304,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
       <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm">
         <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
           <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300">
-            {isZh ? '功能对比详情' : 'Detailed Feature Comparison'}
+            {isZh ? "功能对比详情" : "Detailed Feature Comparison"}
           </h3>
         </div>
 
@@ -334,15 +313,15 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
             <thead>
               <tr className="bg-gray-50 dark:bg-gray-750">
                 <th className="text-left px-6 py-3 text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider min-w-[180px]">
-                  {isZh ? '功能' : 'Feature'}
+                  {isZh ? "功能" : "Feature"}
                 </th>
                 {TIER_ORDER.map((tier) => (
                   <th
                     key={tier}
                     className={`text-center px-4 py-3 text-xs font-medium uppercase tracking-wider min-w-[100px] ${
                       tier === currentTier
-                        ? 'text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/10'
-                        : 'text-gray-500 dark:text-gray-400'
+                        ? "text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/10"
+                        : "text-gray-500 dark:text-gray-400"
                     }`}
                   >
                     <div className="flex flex-col items-center gap-1">
@@ -350,7 +329,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
                       <span>{TIER_NAMES[tier][language]}</span>
                       {tier === currentTier && (
                         <span className="inline-block px-1.5 py-0.5 rounded-full text-[9px] bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-semibold normal-case">
-                          {isZh ? '当前' : 'Current'}
+                          {isZh ? "当前" : "Current"}
                         </span>
                       )}
                     </div>
@@ -362,15 +341,13 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
               {/* Pricing row */}
               <tr className="bg-gray-50/50 dark:bg-gray-750/50">
                 <td className="px-6 py-3 font-medium text-gray-700 dark:text-gray-300">
-                  {isZh ? '月费' : 'Monthly Price'}
+                  {isZh ? "月费" : "Monthly Price"}
                 </td>
                 {TIER_ORDER.map((tier) => (
                   <td
                     key={tier}
                     className={`text-center px-4 py-3 ${
-                      tier === currentTier
-                        ? 'bg-blue-50/50 dark:bg-blue-900/10'
-                        : ''
+                      tier === currentTier ? "bg-blue-50/50 dark:bg-blue-900/10" : ""
                     }`}
                   >
                     <span className="text-sm font-bold text-gray-900 dark:text-white">
@@ -393,9 +370,7 @@ export const PlanComparison: React.FC<PlanComparisonProps> = ({
                     <td
                       key={tier}
                       className={`text-center px-4 py-3 ${
-                        tier === currentTier
-                          ? 'bg-blue-50/50 dark:bg-blue-900/10'
-                          : ''
+                        tier === currentTier ? "bg-blue-50/50 dark:bg-blue-900/10" : ""
                       }`}
                     >
                       {renderCellValue(feature.tiers[tier])}

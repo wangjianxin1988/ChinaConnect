@@ -1,11 +1,18 @@
-
-
 // Legacy types kept for backward compatibility with HotelItem fields.
 // No production code uses these anymore after the BudgetHotel section was removed.
 export type BudgetHotelType = "budget_hostel" | "economy_hotel" | "motel";
-export interface MetroNearby { line: string; station: string; walkingMinutes: number; }
+export interface MetroNearby {
+  line: string;
+  station: string;
+  walkingMinutes: number;
+}
 export type BloggerPlatform = "douyin" | "xiaohongshu" | "bilibili" | "weibo";
-export interface Amenity { id: string; label: string; labelZh: string; icon: string; }
+export interface Amenity {
+  id: string;
+  label: string;
+  labelZh: string;
+  icon: string;
+}
 export const BUDGET_AMENITIES: Amenity[] = [];
 // ============================================================================
 // Extended Hotel Types - 全品类酒店分类
@@ -13,11 +20,11 @@ export const BUDGET_AMENITIES: Amenity[] = [];
 
 // Extended hotel category classification (covers all hotel types)
 export type HotelCategory =
-  | "luxury"        // 豪华酒店
-  | "mid_range"     // 中端酒店
-  | "budget"        // 经济型酒店
-  | "youth_hostel"  // 青年旅舍
-  | "love_hotel"    // 情趣酒店
+  | "luxury" // 豪华酒店
+  | "mid_range" // 中端酒店
+  | "budget" // 经济型酒店
+  | "youth_hostel" // 青年旅舍
+  | "love_hotel" // 情趣酒店
   | "gaming_hotel"; // 电竞酒店
 
 // Price tier for filtering
@@ -35,23 +42,23 @@ export interface Hotel {
   name: string;
   nameEn: string;
   category: HotelCategory;
-  priceRange: string;        // e.g. "¥200-400/night"
+  priceRange: string; // e.g. "¥200-400/night"
   priceTier?: PriceTier;
-  city: string;              // city slug, e.g. "beijing"
-  cityZh: string;            // Chinese city name, e.g. "北京"
-  district?: string;         // district name
+  city: string; // city slug, e.g. "beijing"
+  cityZh: string; // Chinese city name, e.g. "北京"
+  district?: string; // district name
   address: string;
   coordinates?: Coordinates;
-  rating: number;            // 1-5
+  rating: number; // 1-5
   reviewCount?: number;
-  image?: string;            // main image URL
-  images?: string[];         // additional images
-  phone?: string;            // contact phone
-  mapUrl?: string;           // map link (Gaode/Baidu)
-  bookingUrl?: string;       // booking platform link
-  website?: string;          // official website
-  highlights: string[];      // key features
-  amenities?: string[];      // amenity IDs
+  image?: string; // main image URL
+  images?: string[]; // additional images
+  phone?: string; // contact phone
+  mapUrl?: string; // map link (Gaode/Baidu)
+  bookingUrl?: string; // booking platform link
+  website?: string; // official website
+  highlights: string[]; // key features
+  amenities?: string[]; // amenity IDs
   description?: string;
   descriptionEn?: string;
   // Location info
@@ -63,7 +70,7 @@ export interface Hotel {
   checkInTime?: string;
   checkOutTime?: string;
   // Category-specific fields
-  categoryFeatures?: string[];  // e.g. ["e-sports PCs", "PS5", "VR"] for gaming_hotel
+  categoryFeatures?: string[]; // e.g. ["e-sports PCs", "PS5", "VR"] for gaming_hotel
   tips?: string;
   // Metadata
   bloggerName?: string;
@@ -121,7 +128,10 @@ export const HOTEL_CATEGORY_LABELS: Record<
 };
 
 // Price tier labels
-export const PRICE_TIER_LABELS: Record<PriceTier, { label: string; labelZh: string; range: string }> = {
+export const PRICE_TIER_LABELS: Record<
+  PriceTier,
+  { label: string; labelZh: string; range: string }
+> = {
   ultra_luxury: { label: "Ultra Luxury", labelZh: "超豪华", range: "¥5000+" },
   luxury: { label: "Luxury", labelZh: "豪华", range: "¥1500-5000" },
   upper_mid: { label: "Upper Mid-Range", labelZh: "中高端", range: "¥500-1500" },

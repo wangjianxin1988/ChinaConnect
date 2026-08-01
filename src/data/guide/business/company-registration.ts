@@ -339,8 +339,7 @@ export const COMPANY_REGISTRATION: RegistrationInfo[] = [
         titleCn: "税务登记",
         duration: "3–7 business days",
         durationCn: "3-7个工作日",
-        description:
-          "Register with the local Tax Bureau as a taxpayer once PE is established.",
+        description: "Register with the local Tax Bureau as a taxpayer once PE is established.",
         descriptionCn: "常设机构确定后，向当地税务局进行纳税人登记。",
         documents: [
           { en: "Application for tax registration", cn: "税务登记表" },

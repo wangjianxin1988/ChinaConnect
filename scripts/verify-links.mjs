@@ -32,7 +32,8 @@ function isValidHref(href, kind) {
   }
   if (kind === "android") {
     if (href.startsWith("intent://details?id=")) return { ok: true };
-    if (href.includes("play.google.com/store/apps/details?id=") && !href.includes(" ")) return { ok: true };
+    if (href.includes("play.google.com/store/apps/details?id=") && !href.includes(" "))
+      return { ok: true };
     return { ok: false, reason: "malformed play.google.com URL" };
   }
   if (kind === "phone") {
@@ -40,7 +41,12 @@ function isValidHref(href, kind) {
     return { ok: false, reason: "not a tel: link" };
   }
   if (kind === "map") {
-    if (href.startsWith("comgooglemaps://") || href.startsWith("geo:") || href.startsWith("maps://")) return { ok: true };
+    if (
+      href.startsWith("comgooglemaps://") ||
+      href.startsWith("geo:") ||
+      href.startsWith("maps://")
+    )
+      return { ok: true };
     if (href.includes("google.com/maps/") || href.includes("amap.com/")) return { ok: true };
     return { ok: false, reason: "no map URL pattern matched" };
   }
@@ -69,11 +75,13 @@ async function main() {
     visited++;
 
     // App section
-    const appStoreHrefs = await page.$$eval('a[href*="apps.apple.com"], a[href*="itms-apps://"]', (els) =>
-      els.map((e) => e.getAttribute("href")).filter(Boolean),
+    const appStoreHrefs = await page.$$eval(
+      'a[href*="apps.apple.com"], a[href*="itms-apps://"]',
+      (els) => els.map((e) => e.getAttribute("href")).filter(Boolean),
     );
-    const androidHrefs = await page.$$eval('a[href*="play.google.com"], a[href*="intent://"]', (els) =>
-      els.map((e) => e.getAttribute("href")).filter(Boolean),
+    const androidHrefs = await page.$$eval(
+      'a[href*="play.google.com"], a[href*="intent://"]',
+      (els) => els.map((e) => e.getAttribute("href")).filter(Boolean),
     );
     for (const h of appStoreHrefs) {
       results.appStoreLinks.tested++;
@@ -92,7 +100,10 @@ async function main() {
 
     // Hotels page
     try {
-      await page.goto(`${BASE}/city/${city}/hotels/`, { waitUntil: "domcontentloaded", timeout: 20000 });
+      await page.goto(`${BASE}/city/${city}/hotels/`, {
+        waitUntil: "domcontentloaded",
+        timeout: 20000,
+      });
       const telHrefs = await page.$$eval('a[href^="tel:"]', (els) =>
         els.map((e) => e.getAttribute("href")).filter(Boolean),
       );
@@ -109,7 +120,10 @@ async function main() {
 
     // City home emergency section
     try {
-      await page.goto(`${BASE}/city/${city}/#emergency`, { waitUntil: "domcontentloaded", timeout: 20000 });
+      await page.goto(`${BASE}/city/${city}/#emergency`, {
+        waitUntil: "domcontentloaded",
+        timeout: 20000,
+      });
       await page.evaluate(() => {
         const el = document.getElementById("emergency");
         if (el) el.scrollIntoView();
@@ -125,7 +139,9 @@ async function main() {
         if (v.ok) results.nationalEmergency.ok++;
         else results.nationalEmergency.broken.push({ city, href: h, reason: v.reason });
       }
-      console.log(`  Emergency tel:   ${emergencyHrefs.length} (${results.nationalEmergency.ok} ok)`);
+      console.log(
+        `  Emergency tel:   ${emergencyHrefs.length} (${results.nationalEmergency.ok} ok)`,
+      );
     } catch (e) {
       console.log(`  Emergency skipped: ${e.message.slice(0, 80)}`);
     }

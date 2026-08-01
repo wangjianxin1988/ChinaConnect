@@ -81,7 +81,14 @@ export function CityMap({
   const validCoordinates = useMemo(() => {
     const lat = city.coordinates?.lat;
     const lng = city.coordinates?.lng;
-    if (typeof lat === "number" && typeof lng === "number" && !isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0) {
+    if (
+      typeof lat === "number" &&
+      typeof lng === "number" &&
+      !isNaN(lat) &&
+      !isNaN(lng) &&
+      lat !== 0 &&
+      lng !== 0
+    ) {
       return { lat, lng };
     }
     return { lat: 39.9042, lng: 116.4074 };

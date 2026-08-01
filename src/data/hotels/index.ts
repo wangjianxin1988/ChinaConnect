@@ -95,20 +95,20 @@ export function getHotelsByCity(citySlug: string): HotelItem[] {
   return [];
 }
 
-export function getHotelsByCityAndCategory(
-  citySlug: string,
-  category: HotelCategory
-): HotelItem[] {
-  return getHotelsByCity(citySlug).filter(h => h.category === category);
+export function getHotelsByCityAndCategory(citySlug: string, category: HotelCategory): HotelItem[] {
+  return getHotelsByCity(citySlug).filter((h) => h.category === category);
 }
 
-export function getHotelCategoryCounts(
-  citySlug: string
-): Record<HotelCategory, number> {
+export function getHotelCategoryCounts(citySlug: string): Record<HotelCategory, number> {
   const hotels = getHotelsByCity(citySlug);
   const counts: Record<string, number> = {};
   const categories: HotelCategory[] = [
-    "luxury", "mid_range", "budget", "hostel", "love_hotel", "esports_hotel"
+    "luxury",
+    "mid_range",
+    "budget",
+    "hostel",
+    "love_hotel",
+    "esports_hotel",
   ];
   for (const cat of categories) counts[cat] = 0;
   for (const h of hotels) counts[h.category] = (counts[h.category] || 0) + 1;
@@ -120,7 +120,7 @@ export function getHotelCount(citySlug: string): number {
 }
 
 export function getAvailableCategories(citySlug: string): HotelCategory[] {
-  return [...new Set(getHotelsByCity(citySlug).map(h => h.category))] as HotelCategory[];
+  return [...new Set(getHotelsByCity(citySlug).map((h) => h.category))] as HotelCategory[];
 }
 
 export function registerHotelData(citySlug: string, hotels: HotelItem[]): void {

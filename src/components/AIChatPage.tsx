@@ -62,9 +62,12 @@ export default function AIChatPage() {
             <div className="absolute -bottom-32 -left-32 w-[400px] h-[400px] rounded-full bg-indigo-600/8 blur-[80px]" />
             <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-blue-600/5 blur-[120px]" />
             {/* Subtle grid */}
-            <div className="absolute inset-0 opacity-[0.02]" style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='20' cy='20' r='0.5'/%3E%3C/g%3E%3C/svg%3E")`
-            }} />
+            <div
+              className="absolute inset-0 opacity-[0.02]"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='20' cy='20' r='0.5'/%3E%3C/g%3E%3C/svg%3E")`,
+              }}
+            />
           </div>
 
           <div className="relative container-custom py-20 md:py-28 lg:py-32">
@@ -72,7 +75,9 @@ export default function AIChatPage() {
               {/* Status badge */}
               <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full mb-10">
                 <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-                <span className="text-white/70 text-sm font-medium tracking-wide">Powered by Advanced AI</span>
+                <span className="text-white/70 text-sm font-medium tracking-wide">
+                  Powered by Advanced AI
+                </span>
               </div>
 
               {/* Title */}
@@ -85,7 +90,8 @@ export default function AIChatPage() {
 
               {/* Subtitle */}
               <p className="text-xl md:text-2xl text-white/50 mb-14 max-w-xl mx-auto leading-relaxed font-light">
-                Your personal China travel intelligence — itineraries, local insights, and real-time guidance.
+                Your personal China travel intelligence — itineraries, local insights, and real-time
+                guidance.
               </p>
 
               {/* CTA */}
@@ -99,7 +105,12 @@ export default function AIChatPage() {
                 >
                   <span className="flex items-center gap-3">
                     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                      />
                     </svg>
                     Start Planning
                   </span>
@@ -182,9 +193,7 @@ export default function AIChatPage() {
                 <SubscriptionCard compact />
 
                 <div className="bg-white border border-gray-200 rounded-2xl p-5">
-                  <h3 className="text-sm font-semibold text-gray-900 mb-2">
-                    Why Pro?
-                  </h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-2">Why Pro?</h3>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-500 mt-0.5">&#10003;</span>
@@ -213,11 +222,10 @@ export default function AIChatPage() {
 
                 <div className="bg-gradient-to-br from-slate-50 to-gray-100 border border-gray-200 rounded-2xl p-5 text-sm text-gray-600">
                   <p className="font-semibold text-gray-900 mb-1">Need human help?</p>
-                  <p className="mb-3">Your account dashboard has billing history and invoice downloads.</p>
-                  <a
-                    href="/account"
-                    className="text-blue-600 hover:text-blue-800 font-medium"
-                  >
+                  <p className="mb-3">
+                    Your account dashboard has billing history and invoice downloads.
+                  </p>
+                  <a href="/account" className="text-blue-600 hover:text-blue-800 font-medium">
                     Open account &#8594;
                   </a>
                 </div>

@@ -13,7 +13,13 @@ export function getAmapNavigationLink(lat: number, lng: number, name: string): s
   return `https://uri.amap.com/marker?position=${lng},${lat}&name=${encodeURIComponent(name)}&coordinate=gaode&callnative=1`;
 }
 
-export function getAmapRouteLink(fromLng: number, fromLat: number, toLng: number, toLat: number, toName: string): string {
+export function getAmapRouteLink(
+  fromLng: number,
+  fromLat: number,
+  toLng: number,
+  toLat: number,
+  toName: string,
+): string {
   return `https://uri.amap.com/navigation?from=${fromLng},${fromLat}&to=${toLng},${toLat},${encodeURIComponent(toName)}&mode=car&coordinate=gaode&callnative=1`;
 }
 
@@ -171,7 +177,10 @@ export const APP_DOWNLOAD_LINKS: Record<string, AppDownloadLink> = {
 
 export function generateHotelLinks(city: string, hotelName?: string, lat?: number, lng?: number) {
   const links: Record<string, string> = {
-    "🗺️ Navigate on Amap": lat && lng ? getAmapNavigationLink(lat, lng, hotelName || hotel) : getAmapSearchLink(hotelName || "hotel", city),
+    "🗺️ Navigate on Amap":
+      lat && lng
+        ? getAmapNavigationLink(lat, lng, hotelName || hotel)
+        : getAmapSearchLink(hotelName || "hotel", city),
     "📱 Book on Trip.com": getCtripHotelLink(city),
     "🌐 Book on Booking.com": getBookingLink(city),
     "🏨 Book on Agoda": getAgodaLink(city),
@@ -179,9 +188,17 @@ export function generateHotelLinks(city: string, hotelName?: string, lat?: numbe
   return links;
 }
 
-export function generateRestaurantLinks(city: string, restaurantName?: string, lat?: number, lng?: number) {
+export function generateRestaurantLinks(
+  city: string,
+  restaurantName?: string,
+  lat?: number,
+  lng?: number,
+) {
   const links: Record<string, string> = {
-    "🗺️ Navigate on Amap": lat && lng ? getAmapNavigationLink(lat, lng, restaurantName || "") : getAmapSearchLink(restaurantName || "restaurant", city),
+    "🗺️ Navigate on Amap":
+      lat && lng
+        ? getAmapNavigationLink(lat, lng, restaurantName || "")
+        : getAmapSearchLink(restaurantName || "restaurant", city),
     "⭐ Reviews on Dianping": getDianpingLink(restaurantName || "", city),
   };
   return links;
@@ -205,7 +222,10 @@ export function generateWeatherLinks(lat: number, lng: number) {
 
 export function generateAttractionLinks(city: string, name?: string, lat?: number, lng?: number) {
   return {
-    "🗺️ Navigate on Amap": lat && lng ? getAmapNavigationLink(lat, lng, name || "") : getAmapSearchLink(name || "attraction", city),
+    "🗺️ Navigate on Amap":
+      lat && lng
+        ? getAmapNavigationLink(lat, lng, name || "")
+        : getAmapSearchLink(name || "attraction", city),
     "📍 Search on Amap": getAmapSearchLink(name || city, city),
   };
 }
@@ -222,7 +242,10 @@ export function formatLinksForAI(links: Record<string, string>): string {
 
 export function getAppDownloadSection(): string {
   const apps = Object.values(APP_DOWNLOAD_LINKS);
-  return apps.map(app => 
-    `**${app.name}** (${app.nameZh})\n${app.description}\n[📱 App Store](${app.ios}) | [🤖 Google Play](${app.android})${app.website ? ` | [🌐 Website](${app.website})` : ""}`
-  ).join("\n\n");
+  return apps
+    .map(
+      (app) =>
+        `**${app.name}** (${app.nameZh})\n${app.description}\n[📱 App Store](${app.ios}) | [🤖 Google Play](${app.android})${app.website ? ` | [🌐 Website](${app.website})` : ""}`,
+    )
+    .join("\n\n");
 }

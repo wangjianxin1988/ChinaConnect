@@ -18,11 +18,7 @@ import type { User } from "@supabase/supabase-js";
  * The username is stored as `display_name` in user metadata,
  * which the handle_new_user() trigger uses to populate the profile.
  */
-export async function signUpWithEmail(
-  email: string,
-  password: string,
-  username?: string,
-) {
+export async function signUpWithEmail(email: string, password: string, username?: string) {
   const { data, error } = await supabase.auth.signUp({
     email,
     password,
@@ -107,9 +103,7 @@ export async function getSession() {
  * Subscribe to auth state changes (SIGNED_IN, SIGNED_OUT, TOKEN_REFRESHED, etc.).
  * Returns the subscription object — call `.subscription.unsubscribe()` to clean up.
  */
-export function onAuthStateChange(
-  callback: (event: string, user: User | null) => void,
-) {
+export function onAuthStateChange(callback: (event: string, user: User | null) => void) {
   return supabase.auth.onAuthStateChange((event, session) => {
     callback(event, session?.user ?? null);
   });
@@ -145,11 +139,7 @@ export async function getUserDashboard(userId: string) {
  * Fetch the user's wallet balance.
  */
 export async function getUserWallet(userId: string) {
-  const { data, error } = await supabase
-    .from("wallets")
-    .select("*")
-    .eq("user_id", userId)
-    .single();
+  const { data, error } = await supabase.from("wallets").select("*").eq("user_id", userId).single();
 
   return { wallet: data, error };
 }

@@ -2,7 +2,7 @@
 /**
  * Generate Sample Hotel Data for All Cities
  * 为所有城市生成示例酒店数据
- * 
+ *
  * Usage:
  *   node scripts/generate-hotel-data.mjs
  */
@@ -225,11 +225,11 @@ export const ${city.slug}Hotels: HotelItem[] = ${JSON.stringify(hotels, null, 2)
 
 import type { HotelItem, HotelCategory } from "@/types/accommodation";
 
-${CITIES.map(c => `import { ${c.slug}Hotels } from "./${c.slug}-hotels";`).join("\n")}
+${CITIES.map((c) => `import { ${c.slug}Hotels } from "./${c.slug}-hotels";`).join("\n")}
 
 // City hotel data registry
 const cityHotelData: Record<string, HotelItem[]> = {
-${CITIES.map(c => `  ${c.slug}: ${c.slug}Hotels,`).join("\n")}
+${CITIES.map((c) => `  ${c.slug}: ${c.slug}Hotels,`).join("\n")}
 };
 
 // Dynamic hotel data cache

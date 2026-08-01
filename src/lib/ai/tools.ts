@@ -24,24 +24,24 @@ const CITY_COORDS: Record<string, { lat: number; lng: number }> = {
   guangzhou: { lat: 23.1291, lng: 113.2644 },
   xian: { lat: 34.3416, lng: 108.9398 },
   chengdu: { lat: 30.5728, lng: 104.0668 },
-  guilin: { lat: 25.2736, lng: 110.2900 },
+  guilin: { lat: 25.2736, lng: 110.29 },
   hangzhou: { lat: 30.2741, lng: 120.1551 },
   nanjing: { lat: 32.0603, lng: 118.7969 },
-  chongqing: { lat: 29.5630, lng: 106.5516 },
+  chongqing: { lat: 29.563, lng: 106.5516 },
   shenzhen: { lat: 22.5431, lng: 114.0579 },
-  suzhou: { lat: 31.2990, lng: 120.5853 },
+  suzhou: { lat: 31.299, lng: 120.5853 },
   xiamen: { lat: 24.4798, lng: 118.0894 },
   qingdao: { lat: 36.0671, lng: 120.3826 },
   kunming: { lat: 25.0389, lng: 102.7183 },
   lijiang: { lat: 26.8721, lng: 100.2299 },
-  sanya: { lat: 18.2528, lng: 109.5120 },
+  sanya: { lat: 18.2528, lng: 109.512 },
   wuhan: { lat: 30.5928, lng: 114.3055 },
   changsha: { lat: 28.2282, lng: 112.9388 },
-  harbin: { lat: 45.8038, lng: 126.5350 },
+  harbin: { lat: 45.8038, lng: 126.535 },
   tianjin: { lat: 39.3434, lng: 117.3616 },
-  dalian: { lat: 38.9140, lng: 121.6147 },
+  dalian: { lat: 38.914, lng: 121.6147 },
   dali: { lat: 25.6065, lng: 100.2676 },
-  zhangjiajie: { lat: 29.1170, lng: 110.4793 },
+  zhangjiajie: { lat: 29.117, lng: 110.4793 },
 };
 
 /** Get coordinates for any city — hardcoded first, then OpenMeteo geocoding fallback */
@@ -61,7 +61,9 @@ async function getCityCoords(cityName: string): Promise<{ lat: number; lng: numb
     if (data.results?.[0]) {
       return { lat: data.results[0].latitude, lng: data.results[0].longitude };
     }
-  } catch { /* ignore */ }
+  } catch {
+    /* ignore */
+  }
   return null;
 }
 
@@ -70,29 +72,60 @@ async function getCityCoords(cityName: string): Promise<{ lat: number; lng: numb
 // ============================================
 
 const CITY_ALIASES: Record<string, string> = {
-  beijing: "beijing", "北京": "beijing", peking: "beijing",
-  shanghai: "shanghai", "上海": "shanghai",
-  guangzhou: "guangzhou", "广州": "guangzhou", canton: "guangzhou",
-  "xi'an": "xian", xian: "xian", "西安": "xian",
-  chengdu: "chengdu", "成都": "chengdu",
-  guilin: "guilin", "桂林": "guilin", kweilin: "guilin",
-  hangzhou: "hangzhou", "杭州": "hangzhou",
-  nanjing: "nanjing", "南京": "nanjing", nanking: "nanjing",
-  chongqing: "chongqing", "重庆": "chongqing", chungking: "chongqing",
-  shenzhen: "shenzhen", "深圳": "shenzhen",
-  suzhou: "suzhou", "苏州": "suzhou",
-  xiamen: "xiamen", "厦门": "xiamen", amoy: "xiamen",
-  qingdao: "qingdao", "青岛": "qingdao", tsingtao: "qingdao",
-  kunming: "kunming", "昆明": "kunming",
-  lijiang: "lijiang", "丽江": "lijiang",
-  sanya: "sanya", "三亚": "sanya",
-  wuhan: "wuhan", "武汉": "wuhan",
-  changsha: "changsha", "长沙": "changsha",
-  harbin: "harbin", "哈尔滨": "harbin",
-  tianjin: "tianjin", "天津": "tianjin",
-  dalian: "dalian", "大连": "dalian",
-  dali: "dali", "大理": "dali",
-  zhangjiajie: "zhangjiajie", "张家界": "zhangjiajie",
+  beijing: "beijing",
+  北京: "beijing",
+  peking: "beijing",
+  shanghai: "shanghai",
+  上海: "shanghai",
+  guangzhou: "guangzhou",
+  广州: "guangzhou",
+  canton: "guangzhou",
+  "xi'an": "xian",
+  xian: "xian",
+  西安: "xian",
+  chengdu: "chengdu",
+  成都: "chengdu",
+  guilin: "guilin",
+  桂林: "guilin",
+  kweilin: "guilin",
+  hangzhou: "hangzhou",
+  杭州: "hangzhou",
+  nanjing: "nanjing",
+  南京: "nanjing",
+  nanking: "nanjing",
+  chongqing: "chongqing",
+  重庆: "chongqing",
+  chungking: "chongqing",
+  shenzhen: "shenzhen",
+  深圳: "shenzhen",
+  suzhou: "suzhou",
+  苏州: "suzhou",
+  xiamen: "xiamen",
+  厦门: "xiamen",
+  amoy: "xiamen",
+  qingdao: "qingdao",
+  青岛: "qingdao",
+  tsingtao: "qingdao",
+  kunming: "kunming",
+  昆明: "kunming",
+  lijiang: "lijiang",
+  丽江: "lijiang",
+  sanya: "sanya",
+  三亚: "sanya",
+  wuhan: "wuhan",
+  武汉: "wuhan",
+  changsha: "changsha",
+  长沙: "changsha",
+  harbin: "harbin",
+  哈尔滨: "harbin",
+  tianjin: "tianjin",
+  天津: "tianjin",
+  dalian: "dalian",
+  大连: "dalian",
+  dali: "dali",
+  大理: "dali",
+  zhangjiajie: "zhangjiajie",
+  张家界: "zhangjiajie",
 };
 
 function findCity(input: string): City | null {
@@ -102,7 +135,7 @@ function findCity(input: string): City | null {
   // Direct alias lookup
   const slug = CITY_ALIASES[lower];
   if (slug) {
-    return cities.find(c => c.slug === slug) || null;
+    return cities.find((c) => c.slug === slug) || null;
   }
 
   // Fuzzy match on name/nameEn/slug
@@ -134,11 +167,16 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
   // Try real-time WebSearch for up-to-date city info
   let webResults: Array<{ title: string; snippet: string; url: string }> = [];
   try {
-    const search = await executeWebSearch({ query: `${cityName} China travel guide top attractions food 2026`, maxResults: 5 });
+    const search = await executeWebSearch({
+      query: `${cityName} China travel guide top attractions food 2026`,
+      maxResults: 5,
+    });
     if (search.success && search.results.length > 0) {
       webResults = search.results;
     }
-  } catch { /* fall through */ }
+  } catch {
+    /* fall through */
+  }
 
   if (!city) {
     // City not in static DB — return web results only
@@ -147,14 +185,14 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
         found: true,
         city: cityName,
         source: "web",
-        webOverview: webResults.map(r => ({ title: r.title, snippet: r.snippet, url: r.url })),
+        webOverview: webResults.map((r) => ({ title: r.title, snippet: r.snippet, url: r.url })),
         note: "City not in local database. Data from real-time web search.",
       };
     }
     return {
       found: false,
       message: `City "${params.city}" not found.`,
-      availableCities: cities.map(c => c.nameEn),
+      availableCities: cities.map((c) => c.nameEn),
     };
   }
 
@@ -165,7 +203,7 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
     cityZh: city.name,
     description: city.description,
     climate: city.climate,
-    topAttractions: (city.attractions || []).slice(0, 5).map(a => ({
+    topAttractions: (city.attractions || []).slice(0, 5).map((a) => ({
       name: a.nameEn || a.name,
       category: a.category,
       ticketPrice: a.ticketPrice || "Free",
@@ -174,7 +212,7 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
         "🗺️ Navigate on Amap": `https://uri.amap.com/search?keyword=${encodeURIComponent(a.nameEn || a.name)}&city=${encodeURIComponent(city.nameEn)}&callnative=1`,
       },
     })),
-    topRestaurants: (city.restaurants || []).slice(0, 5).map(r => ({
+    topRestaurants: (city.restaurants || []).slice(0, 5).map((r) => ({
       name: r.nameEn || r.name,
       cuisine: r.cuisine,
       type: r.type,
@@ -190,8 +228,15 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
       "🗺️ Amap City Guide": `https://uri.amap.com/search?keyword=${encodeURIComponent(city.nameEn)}&city=${encodeURIComponent(city.nameEn)}&callnative=1`,
       "📱 Download Amap App": "https://apps.apple.com/app/apple-store/id461703208",
     },
-    dataSource: webResults.length > 0 ? "Real-time from WebSearch + Local database" : "Local database",
-    ...(webResults.length > 0 ? { webHighlights: webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet })) } : {}),
+    dataSource:
+      webResults.length > 0 ? "Real-time from WebSearch + Local database" : "Local database",
+    ...(webResults.length > 0
+      ? {
+          webHighlights: webResults
+            .slice(0, 3)
+            .map((r) => ({ title: r.title, snippet: r.snippet })),
+        }
+      : {}),
   };
 }
 
@@ -199,18 +244,37 @@ export async function CitySearch(params: { city: string }): Promise<Record<strin
 // HotelSearch Tool — ALWAYS returns 3 tiers
 // ============================================
 
-export async function HotelSearch(params: { city: string; budget?: string }): Promise<Record<string, unknown>> {
+export async function HotelSearch(params: { city: string; budget?: string }): Promise<
+  Record<string, unknown>
+> {
   const city = findCity(params.city);
   const cityName = city?.nameEn || params.city;
 
   // Helper: search Amap for a specific hotel tier
-  async function searchAmapTier(keywords: string): Promise<Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }>> {
+  async function searchAmapTier(
+    keywords: string,
+  ): Promise<
+    Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }>
+  > {
     try {
-      const result = await executeAmapPOISearch({ keywords, city: cityName, type: "hotel", pageSize: 5 });
+      const result = await executeAmapPOISearch({
+        keywords,
+        city: cityName,
+        type: "hotel",
+        pageSize: 5,
+      });
       if (result.success && result.pois.length > 0) {
-        return result.pois.map(p => ({ name: p.name, address: p.address, rating: p.rating, cost: p.cost, tel: p.tel }));
+        return result.pois.map((p) => ({
+          name: p.name,
+          address: p.address,
+          rating: p.rating,
+          cost: p.cost,
+          tel: p.tel,
+        }));
       }
-    } catch { /* ignore */ }
+    } catch {
+      /* ignore */
+    }
     return [];
   }
 
@@ -222,18 +286,32 @@ export async function HotelSearch(params: { city: string; budget?: string }): Pr
   ]);
 
   // Static data by tier
-  const staticHotels = (city?.hotels || []).map(h => ({
-    name: h.nameEn || h.name, budget: h.budget, priceRange: h.priceRange,
-    rating: h.rating, address: h.address, highlights: h.highlights,
-    bookingTips: h.bookingTips, source: "local" as const,
+  const staticHotels = (city?.hotels || []).map((h) => ({
+    name: h.nameEn || h.name,
+    budget: h.budget,
+    priceRange: h.priceRange,
+    rating: h.rating,
+    address: h.address,
+    highlights: h.highlights,
+    bookingTips: h.bookingTips,
+    source: "local" as const,
   }));
 
-  const staticBudget = staticHotels.filter(h => h.budget === "budget");
-  const staticMid = staticHotels.filter(h => h.budget === "mid");
-  const staticLuxury = staticHotels.filter(h => h.budget === "luxury");
+  const staticBudget = staticHotels.filter((h) => h.budget === "budget");
+  const staticMid = staticHotels.filter((h) => h.budget === "mid");
+  const staticLuxury = staticHotels.filter((h) => h.budget === "luxury");
 
   // Merge + add links per tier
-  function withLinks(hotel: { name: string; address?: string; rating?: string; cost?: string; tel?: string; budget?: string; priceRange?: string; source?: string }) {
+  function withLinks(hotel: {
+    name: string;
+    address?: string;
+    rating?: string;
+    cost?: string;
+    tel?: string;
+    budget?: string;
+    priceRange?: string;
+    source?: string;
+  }) {
     return {
       ...hotel,
       links: {
@@ -245,18 +323,18 @@ export async function HotelSearch(params: { city: string; budget?: string }): Pr
   }
 
   const budgetHotels = [
-    ...budgetAmap.map(h => withLinks({ ...h, source: "amap", budget: "budget" })),
-    ...staticBudget.map(h => withLinks(h)),
+    ...budgetAmap.map((h) => withLinks({ ...h, source: "amap", budget: "budget" })),
+    ...staticBudget.map((h) => withLinks(h)),
   ].slice(0, 3);
 
   const midHotels = [
-    ...midAmap.map(h => withLinks({ ...h, source: "amap", budget: "mid" })),
-    ...staticMid.map(h => withLinks(h)),
+    ...midAmap.map((h) => withLinks({ ...h, source: "amap", budget: "mid" })),
+    ...staticMid.map((h) => withLinks(h)),
   ].slice(0, 3);
 
   const luxuryHotels = [
-    ...luxuryAmap.map(h => withLinks({ ...h, source: "amap", budget: "luxury" })),
-    ...staticLuxury.map(h => withLinks(h)),
+    ...luxuryAmap.map((h) => withLinks({ ...h, source: "amap", budget: "luxury" })),
+    ...staticLuxury.map((h) => withLinks(h)),
   ].slice(0, 3);
 
   // If a specific budget was requested, still return all 3 but mark the preferred one
@@ -269,21 +347,33 @@ export async function HotelSearch(params: { city: string; budget?: string }): Pr
       budget: {
         label: "💚 Budget (经济型)",
         priceRange: "¥80-250/night",
-        hotels: budgetHotels.length > 0 ? budgetHotels : [{ name: "Search more on Trip.com", note: "No budget hotels found in database" }],
+        hotels:
+          budgetHotels.length > 0
+            ? budgetHotels
+            : [{ name: "Search more on Trip.com", note: "No budget hotels found in database" }],
       },
       midRange: {
         label: "💛 Mid-range (商务型)",
         priceRange: "¥250-700/night",
-        hotels: midHotels.length > 0 ? midHotels : [{ name: "Search more on Trip.com", note: "No mid-range hotels found in database" }],
+        hotels:
+          midHotels.length > 0
+            ? midHotels
+            : [{ name: "Search more on Trip.com", note: "No mid-range hotels found in database" }],
       },
       luxury: {
         label: "❤️ Luxury (豪华型)",
         priceRange: "¥700-3000+/night",
-        hotels: luxuryHotels.length > 0 ? luxuryHotels : [{ name: "Search more on Trip.com", note: "No luxury hotels found in database" }],
+        hotels:
+          luxuryHotels.length > 0
+            ? luxuryHotels
+            : [{ name: "Search more on Trip.com", note: "No luxury hotels found in database" }],
       },
     },
     allResults: [...budgetHotels, ...midHotels, ...luxuryHotels],
-    dataSource: (budgetAmap.length + midAmap.length + luxuryAmap.length) > 0 ? "Real-time from Amap (高德地图)" : "Local database",
+    dataSource:
+      budgetAmap.length + midAmap.length + luxuryAmap.length > 0
+        ? "Real-time from Amap (高德地图)"
+        : "Local database",
     bookingLinks: {
       "📱 Trip.com Hotel List": `https://hotels.ctrip.com/hotels/list?city=${encodeURIComponent(cityName.toLowerCase())}`,
       "🌐 Booking.com": `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(cityName)}&lang=en-us`,
@@ -296,18 +386,40 @@ export async function HotelSearch(params: { city: string; budget?: string }): Pr
 // FoodSearch Tool — RICH categories + 3 tiers
 // ============================================
 
-export async function FoodSearch(params: { city: string; cuisine?: string; budget?: string }): Promise<Record<string, unknown>> {
+export async function FoodSearch(params: {
+  city: string;
+  cuisine?: string;
+  budget?: string;
+}): Promise<Record<string, unknown>> {
   const city = findCity(params.city);
   const cityName = city?.nameEn || params.city;
 
   // Helper: search Amap for a specific food category
-  async function searchFood(keywords: string, pageSize = 5): Promise<Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }>> {
+  async function searchFood(
+    keywords: string,
+    pageSize = 5,
+  ): Promise<
+    Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }>
+  > {
     try {
-      const result = await executeAmapPOISearch({ keywords, city: cityName, type: "restaurant", pageSize });
+      const result = await executeAmapPOISearch({
+        keywords,
+        city: cityName,
+        type: "restaurant",
+        pageSize,
+      });
       if (result.success && result.pois.length > 0) {
-        return result.pois.map(p => ({ name: p.name, address: p.address, rating: p.rating, cost: p.cost, tel: p.tel }));
+        return result.pois.map((p) => ({
+          name: p.name,
+          address: p.address,
+          rating: p.rating,
+          cost: p.cost,
+          tel: p.tel,
+        }));
       }
-    } catch { /* ignore */ }
+    } catch {
+      /* ignore */
+    }
     return [];
   }
 
@@ -320,15 +432,34 @@ export async function FoodSearch(params: { city: string; cuisine?: string; budge
   ]);
 
   // Static data
-  const staticRestaurants = (city?.restaurants || []).map(r => ({
+  const staticRestaurants = (city?.restaurants || []).map((r) => ({
     name: r.nameEn || r.name,
-    type: r.type === "michelin" ? "⭐ Michelin" : r.type === "blackpearl" ? "💎 Black Pearl" : "🏠 Local",
-    cuisine: r.cuisine, avgPrice: `¥${r.avgPrice}`, highlights: r.dishHighlights,
-    rating: r.rating, address: r.address, source: "local" as const,
+    type:
+      r.type === "michelin"
+        ? "⭐ Michelin"
+        : r.type === "blackpearl"
+          ? "💎 Black Pearl"
+          : "🏠 Local",
+    cuisine: r.cuisine,
+    avgPrice: `¥${r.avgPrice}`,
+    highlights: r.dishHighlights,
+    rating: r.rating,
+    address: r.address,
+    source: "local" as const,
   }));
 
   // Helper: add links
-  function withFoodLinks(item: { name: string; address?: string; rating?: string; cost?: string; tel?: string; cuisine?: string; avgPrice?: string; type?: string; source?: string }) {
+  function withFoodLinks(item: {
+    name: string;
+    address?: string;
+    rating?: string;
+    cost?: string;
+    tel?: string;
+    cuisine?: string;
+    avgPrice?: string;
+    type?: string;
+    source?: string;
+  }) {
     return {
       ...item,
       links: {
@@ -339,27 +470,44 @@ export async function FoodSearch(params: { city: string; cuisine?: string; budge
   }
 
   // Categorize main food by price tier
-  const budgetFood = mainFood.filter(h => !h.cost || parseCost(h.cost) <= 60).slice(0, 3);
-  const midFood = mainFood.filter(h => { const c = parseCost(h.cost); return c > 60 && c <= 200; }).slice(0, 3);
-  const luxuryFood = mainFood.filter(h => parseCost(h.cost) > 200).slice(0, 3);
+  const budgetFood = mainFood.filter((h) => !h.cost || parseCost(h.cost) <= 60).slice(0, 3);
+  const midFood = mainFood
+    .filter((h) => {
+      const c = parseCost(h.cost);
+      return c > 60 && c <= 200;
+    })
+    .slice(0, 3);
+  const luxuryFood = mainFood.filter((h) => parseCost(h.cost) > 200).slice(0, 3);
   // If filtering left nothing, just use all
-  const allMainFood = mainFood.map(h => withFoodLinks({ ...h, source: "amap" as const }));
+  const allMainFood = mainFood.map((h) => withFoodLinks({ ...h, source: "amap" as const }));
 
   // Merge budget tiers from static
-  const staticBudget = staticRestaurants.filter(r => parseInt(r.avgPrice.replace("¥", "")) <= 60).slice(0, 3);
-  const staticMid = staticRestaurants.filter(r => { const p = parseInt(r.avgPrice.replace("¥", "")); return p > 60 && p <= 200; }).slice(0, 3);
-  const staticLuxury = staticRestaurants.filter(r => parseInt(r.avgPrice.replace("¥", "")) > 200).slice(0, 3);
+  const staticBudget = staticRestaurants
+    .filter((r) => parseInt(r.avgPrice.replace("¥", "")) <= 60)
+    .slice(0, 3);
+  const staticMid = staticRestaurants
+    .filter((r) => {
+      const p = parseInt(r.avgPrice.replace("¥", ""));
+      return p > 60 && p <= 200;
+    })
+    .slice(0, 3);
+  const staticLuxury = staticRestaurants
+    .filter((r) => parseInt(r.avgPrice.replace("¥", "")) > 200)
+    .slice(0, 3);
 
   // If budgetFood/midFood/luxuryFood are empty from Amap, use static
-  const budgetResults = budgetFood.length > 0
-    ? budgetFood.map(h => withFoodLinks({ ...h, source: "amap" as const }))
-    : staticBudget.map(h => withFoodLinks(h));
-  const midResults = midFood.length > 0
-    ? midFood.map(h => withFoodLinks({ ...h, source: "amap" as const }))
-    : staticMid.map(h => withFoodLinks(h));
-  const luxuryResults = luxuryFood.length > 0
-    ? luxuryFood.map(h => withFoodLinks({ ...h, source: "amap" as const }))
-    : staticLuxury.map(h => withFoodLinks(h));
+  const budgetResults =
+    budgetFood.length > 0
+      ? budgetFood.map((h) => withFoodLinks({ ...h, source: "amap" as const }))
+      : staticBudget.map((h) => withFoodLinks(h));
+  const midResults =
+    midFood.length > 0
+      ? midFood.map((h) => withFoodLinks({ ...h, source: "amap" as const }))
+      : staticMid.map((h) => withFoodLinks(h));
+  const luxuryResults =
+    luxuryFood.length > 0
+      ? luxuryFood.map((h) => withFoodLinks({ ...h, source: "amap" as const }))
+      : staticLuxury.map((h) => withFoodLinks(h));
 
   const totalAmapCount = mainFood.length + bubbleTea.length + fruitShops.length + streetFood.length;
 
@@ -374,13 +522,19 @@ export async function FoodSearch(params: { city: string; cuisine?: string; budge
         all: allMainFood,
       },
       drinks: {
-        bubbleTea: bubbleTea.map(h => withFoodLinks({ ...h, source: "amap" as const })),
+        bubbleTea: bubbleTea.map((h) => withFoodLinks({ ...h, source: "amap" as const })),
         note: "Popular chains: Heytea (喜茶), Nayuki (奈雪), Mixue (蜜雪冰城), Chagee (霸王茶姬)",
       },
-      streetFood: streetFood.map(h => withFoodLinks({ ...h, source: "amap" as const })),
-      freshFruit: fruitShops.map(h => withFoodLinks({ ...h, source: "amap" as const })),
+      streetFood: streetFood.map((h) => withFoodLinks({ ...h, source: "amap" as const })),
+      freshFruit: fruitShops.map((h) => withFoodLinks({ ...h, source: "amap" as const })),
     },
-    allResults: [...allMainFood, ...bubbleTea.map(h => withFoodLinks({ ...h, source: "amap" as const })), ...streetFood.map(h => withFoodLinks({ ...h, source: "amap" as const })), ...fruitShops.map(h => withFoodLinks({ ...h, source: "amap" as const })), ...staticRestaurants.map(h => withFoodLinks(h))],
+    allResults: [
+      ...allMainFood,
+      ...bubbleTea.map((h) => withFoodLinks({ ...h, source: "amap" as const })),
+      ...streetFood.map((h) => withFoodLinks({ ...h, source: "amap" as const })),
+      ...fruitShops.map((h) => withFoodLinks({ ...h, source: "amap" as const })),
+      ...staticRestaurants.map((h) => withFoodLinks(h)),
+    ],
     dataSource: totalAmapCount > 0 ? "Real-time from Amap (高德地图)" : "Local database",
     dianpingLink: `https://www.dianping.com/${encodeURIComponent(cityName.toLowerCase())}/food`,
     meituanLink: `https://www.meituan.com/s/${encodeURIComponent(cityName)}美食`,
@@ -398,7 +552,9 @@ function parseCost(cost?: string): number {
 // TransportSearch Tool — MANDATORY real-time + links
 // ============================================
 
-export async function TransportSearch(params: { from: string; to: string }): Promise<Record<string, unknown>> {
+export async function TransportSearch(params: { from: string; to: string }): Promise<
+  Record<string, unknown>
+> {
   const fromCity = findCity(params.from);
   const toCity = findCity(params.to);
   const fromName = fromCity?.nameEn || params.from;
@@ -420,19 +576,34 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
         maxResults: 3,
       });
       if (search2.success) webResults = search2.results;
-    } catch { /* give up */ }
+    } catch {
+      /* give up */
+    }
   }
 
   // Static data from city database
-  const results: Array<{ type: string; from: string; to: string; duration: string; price: string; tips: string }> = [];
+  const results: Array<{
+    type: string;
+    from: string;
+    to: string;
+    duration: string;
+    price: string;
+    tips: string;
+  }> = [];
 
   if (toCity?.transport?.arrival) {
     for (const t of toCity.transport.arrival) {
-      if ((t.from || "").toLowerCase().includes(params.from.toLowerCase()) ||
-          params.from.toLowerCase().includes((t.from || "").toLowerCase())) {
+      if (
+        (t.from || "").toLowerCase().includes(params.from.toLowerCase()) ||
+        params.from.toLowerCase().includes((t.from || "").toLowerCase())
+      ) {
         results.push({
-          type: t.type, from: t.from || params.from, to: toName,
-          duration: t.duration || "Varies", price: t.price || "Check 12306.cn", tips: t.tips || "",
+          type: t.type,
+          from: t.from || params.from,
+          to: toName,
+          duration: t.duration || "Varies",
+          price: t.price || "Check 12306.cn",
+          tips: t.tips || "",
         });
       }
     }
@@ -440,11 +611,17 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
 
   if (results.length === 0 && fromCity?.transport?.arrival) {
     for (const t of fromCity.transport.arrival) {
-      if ((t.to || "").toLowerCase().includes(params.to.toLowerCase()) ||
-          params.to.toLowerCase().includes((t.to || "").toLowerCase())) {
+      if (
+        (t.to || "").toLowerCase().includes(params.to.toLowerCase()) ||
+        params.to.toLowerCase().includes((t.to || "").toLowerCase())
+      ) {
         results.push({
-          type: t.type, from: fromName, to: t.to || params.to,
-          duration: t.duration || "Varies", price: t.price || "Check 12306.cn", tips: t.tips || "",
+          type: t.type,
+          from: fromName,
+          to: t.to || params.to,
+          duration: t.duration || "Varies",
+          price: t.price || "Check 12306.cn",
+          tips: t.tips || "",
         });
       }
     }
@@ -453,9 +630,30 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
   // Always provide structured options even without static data
   if (results.length === 0) {
     results.push(
-      { type: "🚄 High-speed Train", from: fromName, to: toName, duration: "4-6 hours (typical)", price: "¥400-900 (2nd/1st class)", tips: "Book 15 days in advance on 12306" },
-      { type: "✈️ Flight", from: fromName, to: toName, duration: "2-3 hours", price: "¥500-2000 (economy/business)", tips: "Check Trip.com or Qunar for best prices" },
-      { type: "🚗 Driving", from: fromName, to: toName, duration: "Check Amap for route", price: "Fuel + tolls estimate on Amap", tips: "Requires Chinese driver's license" },
+      {
+        type: "🚄 High-speed Train",
+        from: fromName,
+        to: toName,
+        duration: "4-6 hours (typical)",
+        price: "¥400-900 (2nd/1st class)",
+        tips: "Book 15 days in advance on 12306",
+      },
+      {
+        type: "✈️ Flight",
+        from: fromName,
+        to: toName,
+        duration: "2-3 hours",
+        price: "¥500-2000 (economy/business)",
+        tips: "Check Trip.com or Qunar for best prices",
+      },
+      {
+        type: "🚗 Driving",
+        from: fromName,
+        to: toName,
+        duration: "Check Amap for route",
+        price: "Fuel + tolls estimate on Amap",
+        tips: "Requires Chinese driver's license",
+      },
     );
   }
 
@@ -484,9 +682,10 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
   }
 
   // Web search results as supplemental info
-  const webInfo = webResults.length > 0
-    ? webResults.slice(0, 3).map(r => ({ title: r.title, snippet: r.snippet, url: r.url }))
-    : [];
+  const webInfo =
+    webResults.length > 0
+      ? webResults.slice(0, 3).map((r) => ({ title: r.title, snippet: r.snippet, url: r.url }))
+      : [];
 
   return {
     from: fromName,
@@ -501,7 +700,8 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
       "🚇 Metro + walking is the most convenient for city exploration",
       "📱 Download Amap (高德地图) — China's best navigation app",
     ],
-    dataSource: webResults.length > 0 ? "Real-time from WebSearch + Local database" : "Local database",
+    dataSource:
+      webResults.length > 0 ? "Real-time from WebSearch + Local database" : "Local database",
     ...(webInfo.length > 0 ? { webInfo } : {}),
   };
 }
@@ -510,11 +710,20 @@ export async function TransportSearch(params: { from: string; to: string }): Pro
 // VisaInfo Tool
 // ============================================
 
-const VISA_DATA: Record<string, { visaType: string; duration: string; requirements: string[]; notes: string[] }> = {
+const VISA_DATA: Record<
+  string,
+  { visaType: string; duration: string; requirements: string[]; notes: string[] }
+> = {
   "United States": {
     visaType: "L (Tourism/Business)",
     duration: "30-90 days",
-    requirements: ["Passport (6+ months validity)", "Visa application form", "Recent photo", "Flight itinerary", "Hotel booking"],
+    requirements: [
+      "Passport (6+ months validity)",
+      "Visa application form",
+      "Recent photo",
+      "Flight itinerary",
+      "Hotel booking",
+    ],
     notes: ["Interview required", "Apply 1 month in advance", "10-year multiple entry available"],
   },
   "United Kingdom": {
@@ -538,14 +747,23 @@ const VISA_DATA: Record<string, { visaType: string; duration: string; requiremen
   Australia: {
     visaType: "L (Tourism)",
     duration: "30-90 days",
-    requirements: ["Passport", "Application form", "Photo", "Flight bookings", "Hotel reservations"],
+    requirements: [
+      "Passport",
+      "Application form",
+      "Photo",
+      "Flight bookings",
+      "Hotel reservations",
+    ],
     notes: ["Processing 5-10 business days"],
   },
   default: {
     visaType: "L (Tourism)",
     duration: "30-60 days",
     requirements: ["Passport", "Visa application form", "Photo", "Itinerary"],
-    notes: ["Check with local Chinese embassy for exact requirements", "Some nationalities have visa-free entry"],
+    notes: [
+      "Check with local Chinese embassy for exact requirements",
+      "Some nationalities have visa-free entry",
+    ],
   },
 };
 
@@ -588,7 +806,11 @@ const COMMON_PHRASES: Record<string, Record<string, string>> = {
   },
 };
 
-export function TranslationHelper(params: { text: string; targetLang?: string; sourceLang?: string }): Record<string, unknown> {
+export function TranslationHelper(params: {
+  text: string;
+  targetLang?: string;
+  sourceLang?: string;
+}): Record<string, unknown> {
   const key = params.text.toLowerCase().trim().replace(/\s+/g, "_");
   const phrases = COMMON_PHRASES.en;
 
@@ -638,7 +860,7 @@ export async function WeatherInfo(params: { city: string }): Promise<Record<stri
             description: weatherData.current.description,
             main: weatherData.current.main,
           },
-          forecast: weatherData.forecast.map(d => ({
+          forecast: weatherData.forecast.map((d) => ({
             date: d.date,
             day: d.dayName,
             tempRange: `${d.tempMin}°C ~ ${d.tempMax}°C`,
@@ -650,11 +872,21 @@ export async function WeatherInfo(params: { city: string }): Promise<Record<stri
             "📊 Weather Dashboard": `https://open-meteo.com/en/docs#latitude=${coords.lat}&longitude=${coords.lng}`,
           },
           dataSource: "Real-time from OpenMeteo API",
-          ...(city?.climate ? { climate: { type: city.climate.type, bestMonths: city.climate.bestMonths, tips: city.climate.tips } } : {}),
+          ...(city?.climate
+            ? {
+                climate: {
+                  type: city.climate.type,
+                  bestMonths: city.climate.bestMonths,
+                  tips: city.climate.tips,
+                },
+              }
+            : {}),
         };
       }
     }
-  } catch { /* fall through to static */ }
+  } catch {
+    /* fall through to static */
+  }
 
   // Fallback to static climate data
   if (!city) return { error: `City "${params.city}" not found.` };
@@ -697,16 +929,16 @@ export function EmergencyInfo(params: { city?: string }): Record<string, unknown
     const city = findCity(params.city);
     if (city?.emergencyContacts) {
       result.hospitals = city.emergencyContacts
-        .filter(e => e.type === "hospital")
-        .map(e => ({
+        .filter((e) => e.type === "hospital")
+        .map((e) => ({
           name: e.nameEn || e.name,
           phone: e.phone,
           address: e.address,
           notes: e.notes,
         }));
       result.policeStations = city.emergencyContacts
-        .filter(e => e.type === "police")
-        .map(e => ({
+        .filter((e) => e.type === "police")
+        .map((e) => ({
           name: e.nameEn || e.name,
           phone: e.phone,
           address: e.address,
@@ -721,7 +953,10 @@ export function EmergencyInfo(params: { city?: string }): Record<string, unknown
 // SubwayRoute Tool — uses city transport.local data
 // ============================================
 
-export function SubwayRoute(params: { city: string; from?: string; to?: string }): Record<string, unknown> {
+export function SubwayRoute(params: { city: string; from?: string; to?: string }): Record<
+  string,
+  unknown
+> {
   const city = findCity(params.city);
   if (!city) return { error: `City "${params.city}" not found.` };
 
@@ -759,7 +994,10 @@ export function BudgetCalculator(params: {
   const travelers = params.travelers || 1;
 
   // Budget estimates per person per day
-  const budgetEstimates: Record<string, { accommodation: number; food: number; transport: number; attractions: number }> = {
+  const budgetEstimates: Record<
+    string,
+    { accommodation: number; food: number; transport: number; attractions: number }
+  > = {
     budget: { accommodation: 200, food: 100, transport: 50, attractions: 50 },
     midRange: { accommodation: 500, food: 200, transport: 100, attractions: 100 },
     luxury: { accommodation: 1500, food: 500, transport: 200, attractions: 200 },
@@ -796,7 +1034,11 @@ export function BudgetCalculator(params: {
 // RouteOptimizer Tool
 // ============================================
 
-export function RouteOptimizer(params: { city: string; attractions?: string[]; days?: number }): Record<string, unknown> {
+export function RouteOptimizer(params: {
+  city: string;
+  attractions?: string[];
+  days?: number;
+}): Record<string, unknown> {
   const city = findCity(params.city);
   if (!city) return { error: `City "${params.city}" not found.` };
 
@@ -809,7 +1051,8 @@ export function RouteOptimizer(params: { city: string; attractions?: string[]; d
     const dayAttractions = attractions.slice(d * perDay, (d + 1) * perDay);
     optimizedDays.push({
       day: d + 1,
-      theme: d === 0 ? "Historical & Cultural" : d === 1 ? "Modern & Local Life" : "Nature & Leisure",
+      theme:
+        d === 0 ? "Historical & Cultural" : d === 1 ? "Modern & Local Life" : "Nature & Leisure",
       stops: dayAttractions.map((a, i) => ({
         name: a.nameEn || a.name,
         order: i + 1,
@@ -841,11 +1084,26 @@ export function CulturalTips(params: { city: string }): Record<string, unknown> 
   const tips = city.culturalTips || [];
 
   // Add generic China tips if city has none
-  const allTips = tips.length > 0 ? tips : [
-    { title: "Tipping", content: "Tipping is not expected in China, but appreciated at high-end hotels.", importance: "medium" as const },
-    { title: "Bargaining", content: "Bargaining is expected at markets but not in malls or restaurants.", importance: "medium" as const },
-    { title: "Chopstick Etiquette", content: "Never stick chopsticks upright in rice — it resembles funeral incense.", importance: "high" as const },
-  ];
+  const allTips =
+    tips.length > 0
+      ? tips
+      : [
+          {
+            title: "Tipping",
+            content: "Tipping is not expected in China, but appreciated at high-end hotels.",
+            importance: "medium" as const,
+          },
+          {
+            title: "Bargaining",
+            content: "Bargaining is expected at markets but not in malls or restaurants.",
+            importance: "medium" as const,
+          },
+          {
+            title: "Chopstick Etiquette",
+            content: "Never stick chopsticks upright in rice — it resembles funeral incense.",
+            importance: "high" as const,
+          },
+        ];
 
   return {
     city: city.nameEn,
@@ -897,7 +1155,10 @@ export function PaymentGuide(params: { city?: string }): Record<string, unknown>
 // CrowdLevel Tool
 // ============================================
 
-export function CrowdLevel(params: { city: string; attraction?: string; month?: string }): Record<string, unknown> {
+export function CrowdLevel(params: { city: string; attraction?: string; month?: string }): Record<
+  string,
+  unknown
+> {
   const city = findCity(params.city);
 
   // Peak seasons
@@ -930,42 +1191,66 @@ export function CrowdLevel(params: { city: string; attraction?: string; month?: 
 // NearbyPOI Tool
 // ============================================
 
-export async function NearbyPOI(params: { city: string; type?: string; near?: string }): Promise<Record<string, unknown>> {
+export async function NearbyPOI(params: { city: string; type?: string; near?: string }): Promise<
+  Record<string, unknown>
+> {
   const city = findCity(params.city);
   const cityName = city?.nameEn || params.city;
   const type = params.type || "attraction";
 
   // Try Amap POI search for real-time data
-  let amapResults: Array<{ name: string; address: string; rating?: string; cost?: string; tel?: string }> = [];
+  let amapResults: Array<{
+    name: string;
+    address: string;
+    rating?: string;
+    cost?: string;
+    tel?: string;
+  }> = [];
   try {
     const keywords = type === "restaurant" ? "美食" : type === "hotel" ? "酒店" : "景点";
     const result = await executeAmapPOISearch({ keywords, city: cityName, type, pageSize: 5 });
     if (result.success && result.pois.length > 0) {
-      amapResults = result.pois.map(p => ({
-        name: p.name, address: p.address, rating: p.rating, cost: p.cost, tel: p.tel,
+      amapResults = result.pois.map((p) => ({
+        name: p.name,
+        address: p.address,
+        rating: p.rating,
+        cost: p.cost,
+        tel: p.tel,
       }));
     }
-  } catch { /* fall through */ }
+  } catch {
+    /* fall through */
+  }
 
   // Static fallback
   let staticResults: Array<Record<string, unknown>> = [];
   if (type === "restaurant") {
-    staticResults = (city?.restaurants || []).slice(0, 5).map(r => ({
-      name: r.nameEn || r.name, cuisine: r.cuisine, avgPrice: `¥${r.avgPrice}`, type: r.type, rating: r.rating,
+    staticResults = (city?.restaurants || []).slice(0, 5).map((r) => ({
+      name: r.nameEn || r.name,
+      cuisine: r.cuisine,
+      avgPrice: `¥${r.avgPrice}`,
+      type: r.type,
+      rating: r.rating,
     }));
   } else if (type === "hotel") {
-    staticResults = (city?.hotels || []).slice(0, 5).map(h => ({
-      name: h.nameEn || h.name, budget: h.budget, priceRange: h.priceRange, rating: h.rating,
+    staticResults = (city?.hotels || []).slice(0, 5).map((h) => ({
+      name: h.nameEn || h.name,
+      budget: h.budget,
+      priceRange: h.priceRange,
+      rating: h.rating,
     }));
   } else {
-    staticResults = (city?.attractions || []).slice(0, 5).map(a => ({
-      name: a.nameEn || a.name, category: a.category, ticketPrice: a.ticketPrice || "Free", duration: a.recommendedVisitTime,
+    staticResults = (city?.attractions || []).slice(0, 5).map((a) => ({
+      name: a.nameEn || a.name,
+      category: a.category,
+      ticketPrice: a.ticketPrice || "Free",
+      duration: a.recommendedVisitTime,
     }));
   }
 
   const merged = [
-    ...amapResults.map(r => ({ ...r, source: "amap" as const })),
-    ...staticResults.map(r => ({ ...r, source: "local" as const })),
+    ...amapResults.map((r) => ({ ...r, source: "amap" as const })),
+    ...staticResults.map((r) => ({ ...r, source: "local" as const })),
   ];
 
   return {
@@ -982,18 +1267,33 @@ export async function NearbyPOI(params: { city: string; type?: string; near?: st
 // Tool Registry — maps MiniMax function names to implementations
 // ============================================
 
-export const TOOL_REGISTRY: Record<string, (params: Record<string, string>) => Record<string, unknown> | Promise<Record<string, unknown>>> = {
+export const TOOL_REGISTRY: Record<
+  string,
+  (params: Record<string, string>) => Record<string, unknown> | Promise<Record<string, unknown>>
+> = {
   CitySearch: (p) => CitySearch({ city: p.city }),
   HotelSearch: (p) => HotelSearch({ city: p.city, budget: p.budget }),
   FoodSearch: (p) => FoodSearch({ city: p.city, cuisine: p.cuisine, budget: p.budget }),
   TransportSearch: (p) => TransportSearch({ from: p.from, to: p.to }),
   VisaInfo: (p) => VisaInfo({ nationality: p.nationality }),
-  TranslationHelper: (p) => TranslationHelper({ text: p.text, targetLang: p.targetLang, sourceLang: p.sourceLang }),
+  TranslationHelper: (p) =>
+    TranslationHelper({ text: p.text, targetLang: p.targetLang, sourceLang: p.sourceLang }),
   WeatherInfo: (p) => WeatherInfo({ city: p.city }),
   EmergencyInfo: (p) => EmergencyInfo({ city: p.city }),
   SubwayRoute: (p) => SubwayRoute({ city: p.city, from: p.from, to: p.to }),
-  BudgetCalculator: (p) => BudgetCalculator({ city: p.city, days: Number(p.days) || 3, budgetLevel: p.budgetLevel, travelers: Number(p.travelers) || 1 }),
-  RouteOptimizer: (p) => RouteOptimizer({ city: p.city, attractions: p.attractions ? p.attractions.split(",") : undefined, days: Number(p.days) || 1 }),
+  BudgetCalculator: (p) =>
+    BudgetCalculator({
+      city: p.city,
+      days: Number(p.days) || 3,
+      budgetLevel: p.budgetLevel,
+      travelers: Number(p.travelers) || 1,
+    }),
+  RouteOptimizer: (p) =>
+    RouteOptimizer({
+      city: p.city,
+      attractions: p.attractions ? p.attractions.split(",") : undefined,
+      days: Number(p.days) || 1,
+    }),
   CulturalTips: (p) => CulturalTips({ city: p.city }),
   PaymentGuide: (p) => PaymentGuide({ city: p.city }),
   CrowdLevel: (p) => CrowdLevel({ city: p.city, attraction: p.attraction, month: p.month }),
@@ -1030,11 +1330,15 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "CitySearch",
-      description: "Search for a Chinese city and get its overview, top attractions, restaurants, climate, and transport info.",
+      description:
+        "Search for a Chinese city and get its overview, top attractions, restaurants, climate, and transport info.",
       parameters: {
         type: "object",
         properties: {
-          city: { type: "string", description: "City name in English or Chinese, e.g. 'Beijing', '上海'." },
+          city: {
+            type: "string",
+            description: "City name in English or Chinese, e.g. 'Beijing', '上海'.",
+          },
         },
         required: ["city"],
       },
@@ -1044,12 +1348,16 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "HotelSearch",
-      description: "Search for hotels in a Chinese city. Returns 3 price tiers (budget/mid/luxury) with real-time Amap data and booking links. Call this tool once — it automatically returns all 3 tiers.",
+      description:
+        "Search for hotels in a Chinese city. Returns 3 price tiers (budget/mid/luxury) with real-time Amap data and booking links. Call this tool once — it automatically returns all 3 tiers.",
       parameters: {
         type: "object",
         properties: {
           city: { type: "string", description: "City name, e.g. 'Shanghai'." },
-          budget: { type: "string", description: "Budget level: 'budget', 'mid', 'luxury', 'low', 'medium', 'high'." },
+          budget: {
+            type: "string",
+            description: "Budget level: 'budget', 'mid', 'luxury', 'low', 'medium', 'high'.",
+          },
         },
         required: ["city"],
       },
@@ -1059,12 +1367,16 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "FoodSearch",
-      description: "Search for food in a Chinese city. Returns multiple categories: restaurants (3 tiers: budget/mid/luxury), bubble tea shops, street food snacks, fruit shops. Each with real-time Amap data, addresses, and navigation links.",
+      description:
+        "Search for food in a Chinese city. Returns multiple categories: restaurants (3 tiers: budget/mid/luxury), bubble tea shops, street food snacks, fruit shops. Each with real-time Amap data, addresses, and navigation links.",
       parameters: {
         type: "object",
         properties: {
           city: { type: "string", description: "City name, e.g. 'Chengdu'." },
-          cuisine: { type: "string", description: "Cuisine type, e.g. 'Sichuan', 'Cantonese', 'hotpot'." },
+          cuisine: {
+            type: "string",
+            description: "Cuisine type, e.g. 'Sichuan', 'Cantonese', 'hotpot'.",
+          },
           budget: { type: "string", description: "Budget: 'low', 'medium', 'high'." },
         },
         required: ["city"],
@@ -1075,7 +1387,8 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "TransportSearch",
-      description: "Search for transport options between two Chinese cities. Returns train, flight, and driving options with specific price ranges (never 'Varies'), real-time WebSearch data, and comprehensive booking links (12306, Trip.com, Qunar, Amap navigation).",
+      description:
+        "Search for transport options between two Chinese cities. Returns train, flight, and driving options with specific price ranges (never 'Varies'), real-time WebSearch data, and comprehensive booking links (12306, Trip.com, Qunar, Amap navigation).",
       parameters: {
         type: "object",
         properties: {
@@ -1094,7 +1407,10 @@ export const LOCAL_TOOL_DEFINITIONS = [
       parameters: {
         type: "object",
         properties: {
-          nationality: { type: "string", description: "Country name, e.g. 'United States', 'Japan'." },
+          nationality: {
+            type: "string",
+            description: "Country name, e.g. 'United States', 'Japan'.",
+          },
         },
         required: [],
       },
@@ -1108,7 +1424,10 @@ export const LOCAL_TOOL_DEFINITIONS = [
       parameters: {
         type: "object",
         properties: {
-          text: { type: "string", description: "Text to translate, e.g. 'hello', 'how_much', 'food'." },
+          text: {
+            type: "string",
+            description: "Text to translate, e.g. 'hello', 'how_much', 'food'.",
+          },
           targetLang: { type: "string", description: "Target language code, default 'zh'." },
           sourceLang: { type: "string", description: "Source language code, default 'auto'." },
         },
@@ -1134,7 +1453,8 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "EmergencyInfo",
-      description: "Get emergency numbers (ambulance 120, police 110, fire 119) and hospital contacts for a city.",
+      description:
+        "Get emergency numbers (ambulance 120, police 110, fire 119) and hospital contacts for a city.",
       parameters: {
         type: "object",
         properties: {
@@ -1170,7 +1490,10 @@ export const LOCAL_TOOL_DEFINITIONS = [
         properties: {
           city: { type: "string", description: "City name, e.g. 'Beijing'." },
           days: { type: "number", description: "Number of days (default 3)." },
-          budgetLevel: { type: "string", description: "Budget level: 'budget', 'midRange', 'luxury'." },
+          budgetLevel: {
+            type: "string",
+            description: "Budget level: 'budget', 'midRange', 'luxury'.",
+          },
           travelers: { type: "number", description: "Number of travelers (default 1)." },
         },
         required: ["city"],
@@ -1186,7 +1509,10 @@ export const LOCAL_TOOL_DEFINITIONS = [
         type: "object",
         properties: {
           city: { type: "string", description: "City name, e.g. 'Xian'." },
-          attractions: { type: "string", description: "Comma-separated attraction names (optional)." },
+          attractions: {
+            type: "string",
+            description: "Comma-separated attraction names (optional).",
+          },
           days: { type: "number", description: "Number of days (default 1)." },
         },
         required: ["city"],
@@ -1211,7 +1537,8 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "PaymentGuide",
-      description: "Get information about payment methods in China (WeChat Pay, Alipay, cash, credit cards).",
+      description:
+        "Get information about payment methods in China (WeChat Pay, Alipay, cash, credit cards).",
       parameters: {
         type: "object",
         properties: {
@@ -1241,7 +1568,8 @@ export const LOCAL_TOOL_DEFINITIONS = [
     type: "function" as const,
     function: {
       name: "NearbyPOI",
-      description: "Find nearby points of interest (restaurants, hotels, attractions) in a city from the local database.",
+      description:
+        "Find nearby points of interest (restaurants, hotels, attractions) in a city from the local database.",
       parameters: {
         type: "object",
         properties: {

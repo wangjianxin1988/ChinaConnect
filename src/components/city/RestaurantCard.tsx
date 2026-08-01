@@ -160,7 +160,10 @@ export function RestaurantCard({ restaurant, compact = false }: RestaurantCardPr
 
         {/* Description */}
         {!compact && (
-          <p className="text-gray-600 text-sm leading-relaxed mb-3 line-clamp-2" data-translate={restaurant.description}>
+          <p
+            className="text-gray-600 text-sm leading-relaxed mb-3 line-clamp-2"
+            data-translate={restaurant.description}
+          >
             {restaurant.description}
           </p>
         )}

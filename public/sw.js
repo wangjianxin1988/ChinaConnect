@@ -1,7 +1,7 @@
 // ChinaConnect Service Worker with Workbox-style caching strategies
 // Version: 1.1.0 - Enhanced offline support
 
-const CACHE_VERSION = 'v1.1.0';
+const CACHE_VERSION = "v1.1.0";
 const CACHE_NAME = `chinaconnect-${CACHE_VERSION}`;
 
 // Workbox-style cache names for different strategies
@@ -13,51 +13,44 @@ const IMAGE_CACHE = `${CACHE_NAME}-images`;
 
 // Static assets to precache
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/offline/',
-  '/offline-emergency.html',
-  '/manifest.json',
-  '/favicon.svg',
-  '/icons/icon.svg',
+  "/",
+  "/index.html",
+  "/offline/",
+  "/offline-emergency.html",
+  "/manifest.json",
+  "/favicon.svg",
+  "/icons/icon.svg",
 ];
 
 // City pages for offline access
 const _CITY_PAGES = [
-  '/city/beijing',
-  '/city/shanghai',
-  '/city/guangzhou',
-  '/city/xian',
-  '/city/chengdu',
-  '/city/hangzhou',
+  "/city/beijing",
+  "/city/shanghai",
+  "/city/guangzhou",
+  "/city/xian",
+  "/city/chengdu",
+  "/city/hangzhou",
 ];
 
 // Critical routes - always available offline
-const CRITICAL_ROUTES = [
-  '/',
-  '/cities',
-  '/food',
-  '/ai',
-  '/emergency',
-  '/guide',
-];
+const CRITICAL_ROUTES = ["/", "/cities", "/food", "/ai", "/emergency", "/guide"];
 
 // Cache expiry: 7 days for dynamic content
 const CACHE_EXPIRY = 7 * 24 * 60 * 60 * 1000;
 
 // Install event - precache static assets
-self.addEventListener('install', (event) => {
+self.addEventListener("install", (event) => {
   console.log(`[SW] Installing Service Worker v${CACHE_VERSION}`);
 
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => {
-      console.log('[SW] Precaching static assets');
+      console.log("[SW] Precaching static assets");
       return cache.addAll(STATIC_ASSETS).catch((err) => {
-        console.error('[SW] Failed to precache some assets:', err);
+        console.error("[SW] Failed to precache some assets:", err);
         // Continue even if some assets fail
         return Promise.resolve();
       });
-    })
+    }),
   );
 
   // Skip waiting to activate immediately
@@ -65,8 +58,8 @@ self.addEventListener('install', (event) => {
 });
 
 // Activate event - clean up old caches
-self.addEventListener('activate', (event) => {
-  console.log('[SW] Activating Service Worker...');
+self.addEventListener("activate", (event) => {
+  console.log("[SW] Activating Service Worker...");
 
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -74,15 +67,14 @@ self.addEventListener('activate', (event) => {
         cacheNames
           .filter((name) => {
             // Delete old version caches
-            return name.startsWith('chinaconnect-') &&
-                   !name.includes(CACHE_VERSION);
+            return name.startsWith("chinaconnect-") && !name.includes(CACHE_VERSION);
           })
           .map((name) => {
-            console.log('[SW] Deleting old cache:', name);
+            console.log("[SW] Deleting old cache:", name);
             return caches.delete(name);
-          })
+          }),
       );
-    })
+    }),
   );
 
   // Take control of all clients immediately
@@ -90,24 +82,22 @@ self.addEventListener('activate', (event) => {
 });
 
 // Fetch event - implement caching strategies
-self.addEventListener('fetch', (event) => {
+self.addEventListener("fetch", (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
   // Skip non-GET requests
-  if (request.method !== 'GET') return;
+  if (request.method !== "GET") return;
 
   // Skip chrome-extension and non-http(s) requests
-  if (!url.protocol.startsWith('http')) return;
+  if (!url.protocol.startsWith("http")) return;
 
   // Skip WebSocket requests
-  if (url.protocol === 'ws:' || url.protocol === 'wss:') return;
+  if (url.protocol === "ws:" || url.protocol === "wss:") return;
 
   // Skip AI API requests - do not cache, these require network
   if (isAIAPIRequest(url)) {
-    event.respondWith(
-      networkFirstWithCacheFallback(request, AI_RESPONSE_CACHE)
-    );
+    event.respondWith(networkFirstWithCacheFallback(request, AI_RESPONSE_CACHE));
     return;
   }
 
@@ -142,18 +132,19 @@ function isCityPage(url) {
 }
 
 function isCityData(url) {
-  return url.pathname.startsWith('/api/cities') ||
-         url.pathname.startsWith('/data/cities');
+  return url.pathname.startsWith("/api/cities") || url.pathname.startsWith("/data/cities");
 }
 
 function isAIAPIRequest(url) {
   // Do not cache AI API requests - require network, show cached responses only for display
-  return url.pathname.startsWith('/api/ai') ||
-         url.pathname.startsWith('/api/chat') ||
-         url.pathname.includes('dify') ||
-         url.pathname.includes('openai') ||
-         url.pathname.includes('anthropic') ||
-         url.pathname.includes('minimax');
+  return (
+    url.pathname.startsWith("/api/ai") ||
+    url.pathname.startsWith("/api/chat") ||
+    url.pathname.includes("dify") ||
+    url.pathname.includes("openai") ||
+    url.pathname.includes("anthropic") ||
+    url.pathname.includes("minimax")
+  );
 }
 
 function isImage(url) {
@@ -161,8 +152,8 @@ function isImage(url) {
 }
 
 function isCriticalRoute(url) {
-  return CRITICAL_ROUTES.some(route =>
-    url.pathname === route || url.pathname.startsWith(`${route}/`)
+  return CRITICAL_ROUTES.some(
+    (route) => url.pathname === route || url.pathname.startsWith(`${route}/`),
   );
 }
 
@@ -172,7 +163,7 @@ async function cacheFirstStrategy(request, cacheName) {
 
   if (cachedResponse) {
     // Check if cache is still valid
-    const cachedDate = cachedResponse.headers.get('sw-cache-date');
+    const cachedDate = cachedResponse.headers.get("sw-cache-date");
     if (cachedDate && Date.now() - Number.parseInt(cachedDate) < CACHE_EXPIRY) {
       return cachedResponse;
     }
@@ -187,25 +178,25 @@ async function cacheFirstStrategy(request, cacheName) {
       const responseToCache = new Response(await networkResponse.clone().blob(), {
         headers: {
           ...Object.fromEntries(networkResponse.headers.entries()),
-          'sw-cache-date': Date.now().toString()
-        }
+          "sw-cache-date": Date.now().toString(),
+        },
       });
       cache.put(request, responseToCache);
     }
 
     return networkResponse;
   } catch (error) {
-    console.log('[SW] Network request failed:', error);
+    console.log("[SW] Network request failed:", error);
     if (cachedResponse) {
       return cachedResponse;
     }
     // Return offline fallback for navigation
-    if (request.mode === 'navigate') {
-      const offlinePage = await caches.match('/offline/') ||
-                          await caches.match('/offline-emergency.html');
+    if (request.mode === "navigate") {
+      const offlinePage =
+        (await caches.match("/offline/")) || (await caches.match("/offline-emergency.html"));
       if (offlinePage) return offlinePage;
     }
-    return new Response('Offline', { status: 503 });
+    return new Response("Offline", { status: 503 });
   }
 }
 
@@ -215,11 +206,13 @@ async function cacheFirstWithNetworkFallback(request, cacheName) {
 
   if (cachedResponse) {
     // Refresh cache in background
-    fetch(request).then((networkResponse) => {
-      if (networkResponse.ok) {
-        caches.open(cacheName).then(cache => cache.put(request, networkResponse.clone()));
-      }
-    }).catch(() => {});
+    fetch(request)
+      .then((networkResponse) => {
+        if (networkResponse.ok) {
+          caches.open(cacheName).then((cache) => cache.put(request, networkResponse.clone()));
+        }
+      })
+      .catch(() => {});
     return cachedResponse;
   }
 
@@ -233,15 +226,18 @@ async function cacheFirstWithNetworkFallback(request, cacheName) {
 
     return networkResponse;
   } catch (error) {
-    console.log('[SW] Network request failed for city data:', error);
-    return new Response(JSON.stringify({
-      error: 'Offline',
-      cached: false,
-      message: 'This content is not available offline. Please connect to the internet.'
-    }), {
-      status: 503,
-      headers: { 'Content-Type': 'application/json' }
-    });
+    console.log("[SW] Network request failed for city data:", error);
+    return new Response(
+      JSON.stringify({
+        error: "Offline",
+        cached: false,
+        message: "This content is not available offline. Please connect to the internet.",
+      }),
+      {
+        status: 503,
+        headers: { "Content-Type": "application/json" },
+      },
+    );
   }
 }
 
@@ -260,7 +256,7 @@ async function networkFirstWithCacheFallback(request, cacheName) {
 
     return networkResponse;
   } catch (error) {
-    console.log('[SW] Network request failed, trying cache:', error);
+    console.log("[SW] Network request failed, trying cache:", error);
     const cachedResponse = await caches.match(request);
 
     if (cachedResponse) {
@@ -268,24 +264,25 @@ async function networkFirstWithCacheFallback(request, cacheName) {
     }
 
     // For navigation requests, return offline page
-    if (request.mode === 'navigate') {
+    if (request.mode === "navigate") {
       // Try offline page in order of preference
-      const offlinePage = await caches.match('/offline/') ||
-                          await caches.match('/offline.html') ||
-                          await caches.match('/offline-emergency.html');
+      const offlinePage =
+        (await caches.match("/offline/")) ||
+        (await caches.match("/offline.html")) ||
+        (await caches.match("/offline-emergency.html"));
       if (offlinePage) {
         return offlinePage;
       }
       // Fallback inline response
       return new Response(getOfflineHTML(), {
         status: 503,
-        headers: { 'Content-Type': 'text/html' }
+        headers: { "Content-Type": "text/html" },
       });
     }
 
-    return new Response(JSON.stringify({ error: 'Offline' }), {
+    return new Response(JSON.stringify({ error: "Offline" }), {
       status: 503,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { "Content-Type": "application/json" },
     });
   }
 }
@@ -295,10 +292,10 @@ async function broadcastCacheUpdate(_cacheName) {
   try {
     const clients = await self.clients.matchAll();
     const status = await getCacheStatus();
-    clients.forEach(client => {
+    clients.forEach((client) => {
       client.postMessage({
-        type: 'CACHE_STATUS',
-        ...status
+        type: "CACHE_STATUS",
+        ...status,
       });
     });
   } catch (_e) {
@@ -347,14 +344,16 @@ async function staleWhileRevalidate(request, cacheName) {
   const cachedResponse = await cache.match(request);
 
   // Fetch in background regardless of cache hit
-  const fetchPromise = fetch(request).then((networkResponse) => {
-    if (networkResponse.ok) {
-      cache.put(request, networkResponse.clone());
-    }
-    return networkResponse;
-  }).catch((error) => {
-    console.log('[SW] Background fetch failed:', error);
-  });
+  const fetchPromise = fetch(request)
+    .then((networkResponse) => {
+      if (networkResponse.ok) {
+        cache.put(request, networkResponse.clone());
+      }
+      return networkResponse;
+    })
+    .catch((error) => {
+      console.log("[SW] Background fetch failed:", error);
+    });
 
   // Return cached response immediately if available
   if (cachedResponse) {
@@ -366,21 +365,21 @@ async function staleWhileRevalidate(request, cacheName) {
 }
 
 // Background sync for offline actions
-self.addEventListener('sync', (event) => {
-  console.log('[SW] Background sync:', event.tag);
+self.addEventListener("sync", (event) => {
+  console.log("[SW] Background sync:", event.tag);
 
-  if (event.tag === 'sync-favorites') {
+  if (event.tag === "sync-favorites") {
     event.waitUntil(syncFavorites());
-  } else if (event.tag === 'sync-user-data') {
+  } else if (event.tag === "sync-user-data") {
     event.waitUntil(syncUserData());
-  } else if (event.tag === 'sync-city-cache') {
+  } else if (event.tag === "sync-city-cache") {
     event.waitUntil(cacheTopCities());
   }
 });
 
 // Periodically cache top cities for offline access
 async function cacheTopCities() {
-  const cities = ['beijing', 'shanghai', 'guangzhou', 'xian', 'chengdu', 'hangzhou'];
+  const cities = ["beijing", "shanghai", "guangzhou", "xian", "chengdu", "hangzhou"];
 
   for (const city of cities) {
     try {
@@ -388,10 +387,10 @@ async function cacheTopCities() {
       if (response.ok) {
         const cache = await caches.open(CITY_CACHE);
         await cache.put(`/city/${city}`, response.clone());
-        console.log('[SW] Cached city:', city);
+        console.log("[SW] Cached city:", city);
       }
     } catch (error) {
-      console.log('[SW] Failed to cache city:', city, error);
+      console.log("[SW] Failed to cache city:", city, error);
     }
   }
 }
@@ -401,26 +400,26 @@ async function syncFavorites() {
   try {
     // Get pending favorites from IndexedDB
     const db = await openDB();
-    const tx = db.transaction('pending-favorites', 'readwrite');
-    const store = tx.objectStore('pending-favorites');
+    const tx = db.transaction("pending-favorites", "readwrite");
+    const store = tx.objectStore("pending-favorites");
     const pendingFavorites = await store.getAll();
 
     for (const favorite of pendingFavorites) {
       try {
-        await fetch('/api/favorites', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(favorite)
+        await fetch("/api/favorites", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(favorite),
         });
 
         // Remove from pending after successful sync
         await store.delete(favorite.id);
       } catch (error) {
-        console.log('[SW] Failed to sync favorite:', error);
+        console.log("[SW] Failed to sync favorite:", error);
       }
     }
   } catch (error) {
-    console.log('[SW] Favorites sync failed:', error);
+    console.log("[SW] Favorites sync failed:", error);
   }
 }
 
@@ -428,32 +427,32 @@ async function syncFavorites() {
 async function syncUserData() {
   try {
     const db = await openDB();
-    const tx = db.transaction('pending-user-data', 'readwrite');
-    const store = tx.objectStore('pending-user-data');
+    const tx = db.transaction("pending-user-data", "readwrite");
+    const store = tx.objectStore("pending-user-data");
     const pendingData = await store.getAll();
 
     for (const data of pendingData) {
       try {
-        await fetch('/api/user/sync', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
+        await fetch("/api/user/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
         });
 
         await store.delete(data.id);
       } catch (error) {
-        console.log('[SW] Failed to sync user data:', error);
+        console.log("[SW] Failed to sync user data:", error);
       }
     }
   } catch (error) {
-    console.log('[SW] User data sync failed:', error);
+    console.log("[SW] User data sync failed:", error);
   }
 }
 
 // IndexedDB helper
 function openDB() {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open('ChinaConnect-Offline', 1);
+    const request = indexedDB.open("ChinaConnect-Offline", 1);
 
     request.onerror = () => reject(request.error);
     request.onsuccess = () => resolve(request.result);
@@ -462,63 +461,61 @@ function openDB() {
       const db = event.target.result;
 
       // Create stores for offline data
-      if (!db.objectStoreNames.contains('pending-favorites')) {
-        db.createObjectStore('pending-favorites', { keyPath: 'id' });
+      if (!db.objectStoreNames.contains("pending-favorites")) {
+        db.createObjectStore("pending-favorites", { keyPath: "id" });
       }
 
-      if (!db.objectStoreNames.contains('pending-user-data')) {
-        db.createObjectStore('pending-user-data', { keyPath: 'id' });
+      if (!db.objectStoreNames.contains("pending-user-data")) {
+        db.createObjectStore("pending-user-data", { keyPath: "id" });
       }
 
-      if (!db.objectStoreNames.contains('cached-cities')) {
-        db.createObjectStore('cached-cities', { keyPath: 'slug' });
+      if (!db.objectStoreNames.contains("cached-cities")) {
+        db.createObjectStore("cached-cities", { keyPath: "slug" });
       }
 
-      if (!db.objectStoreNames.contains('cached-ai-responses')) {
-        db.createObjectStore('cached-ai-responses', { keyPath: 'query' });
+      if (!db.objectStoreNames.contains("cached-ai-responses")) {
+        db.createObjectStore("cached-ai-responses", { keyPath: "query" });
       }
     };
   });
 }
 
 // Push notification handling
-self.addEventListener('push', (event) => {
+self.addEventListener("push", (event) => {
   if (!event.data) return;
 
   const data = event.data.json();
 
   const options = {
-    body: data.body || 'New notification from ChinaConnect',
-    icon: '/icons/icon-192.png',
-    badge: '/icons/badge-72.png',
+    body: data.body || "New notification from ChinaConnect",
+    icon: "/icons/icon-192.png",
+    badge: "/icons/badge-72.png",
     vibrate: [100, 50, 100],
     data: {
-      url: data.url || '/'
+      url: data.url || "/",
     },
     actions: [
-      { action: 'open', title: 'Open' },
-      { action: 'close', title: 'Close' }
-    ]
+      { action: "open", title: "Open" },
+      { action: "close", title: "Close" },
+    ],
   };
 
-  event.waitUntil(
-    self.registration.showNotification(data.title || 'ChinaConnect', options)
-  );
+  event.waitUntil(self.registration.showNotification(data.title || "ChinaConnect", options));
 });
 
 // Notification click handling
-self.addEventListener('notificationclick', (event) => {
+self.addEventListener("notificationclick", (event) => {
   event.notification.close();
 
-  if (event.action === 'close') return;
+  if (event.action === "close") return;
 
-  const url = event.notification.data?.url || '/';
+  const url = event.notification.data?.url || "/";
 
   event.waitUntil(
-    clients.matchAll({ type: 'window' }).then((clientList) => {
+    clients.matchAll({ type: "window" }).then((clientList) => {
       // Focus existing window if available
       for (const client of clientList) {
-        if (client.url === url && 'focus' in client) {
+        if (client.url === url && "focus" in client) {
           return client.focus();
         }
       }
@@ -526,43 +523,43 @@ self.addEventListener('notificationclick', (event) => {
       if (clients.openWindow) {
         return clients.openWindow(url);
       }
-    })
+    }),
   );
 });
 
 // Message handling for cache management
-self.addEventListener('message', (event) => {
+self.addEventListener("message", (event) => {
   const { type, payload } = event.data || {};
 
   switch (type) {
-    case 'SKIP_WAITING':
+    case "SKIP_WAITING":
       self.skipWaiting();
       break;
 
-    case 'CACHE_CITY':
+    case "CACHE_CITY":
       cacheCityData(payload);
       break;
 
-    case 'CACHE_AI_RESPONSE':
+    case "CACHE_AI_RESPONSE":
       cacheAIResponse(payload);
       break;
 
-    case 'CLEAR_CACHE':
+    case "CLEAR_CACHE":
       clearAllCaches();
       break;
 
-    case 'GET_CACHE_STATUS':
+    case "GET_CACHE_STATUS":
       getCacheStatus().then((status) => {
         event.ports[0]?.postMessage(status);
       });
       break;
 
-    case 'SYNC_FAVORITES':
+    case "SYNC_FAVORITES":
       syncFavorites();
       break;
 
     default:
-      console.log('[SW] Unknown message type:', type);
+      console.log("[SW] Unknown message type:", type);
   }
 });
 
@@ -572,15 +569,15 @@ async function cacheCityData(cityData) {
 
   try {
     const db = await openDB();
-    const tx = db.transaction('cached-cities', 'readwrite');
-    const store = tx.objectStore('cached-cities');
+    const tx = db.transaction("cached-cities", "readwrite");
+    const store = tx.objectStore("cached-cities");
     await store.put({
       ...cityData,
-      cachedAt: Date.now()
+      cachedAt: Date.now(),
     });
-    console.log('[SW] Cached city data:', cityData.slug);
+    console.log("[SW] Cached city data:", cityData.slug);
   } catch (error) {
-    console.log('[SW] Failed to cache city data:', error);
+    console.log("[SW] Failed to cache city data:", error);
   }
 }
 
@@ -590,16 +587,16 @@ async function cacheAIResponse(responseData) {
 
   try {
     const db = await openDB();
-    const tx = db.transaction('cached-ai-responses', 'readwrite');
-    const store = tx.objectStore('cached-ai-responses');
+    const tx = db.transaction("cached-ai-responses", "readwrite");
+    const store = tx.objectStore("cached-ai-responses");
     await store.put({
       query: responseData.query,
       response: responseData.response,
-      cachedAt: Date.now()
+      cachedAt: Date.now(),
     });
-    console.log('[SW] Cached AI response for:', responseData.query);
+    console.log("[SW] Cached AI response for:", responseData.query);
   } catch (error) {
-    console.log('[SW] Failed to cache AI response:', error);
+    console.log("[SW] Failed to cache AI response:", error);
   }
 }
 
@@ -608,21 +605,21 @@ async function clearAllCaches() {
   const cacheNames = await caches.keys();
   await Promise.all(
     cacheNames
-      .filter((name) => name.startsWith('chinaconnect-'))
-      .map((name) => caches.delete(name))
+      .filter((name) => name.startsWith("chinaconnect-"))
+      .map((name) => caches.delete(name)),
   );
-  console.log('[SW] All caches cleared');
+  console.log("[SW] All caches cleared");
 }
 
 // Get cache status
 async function getCacheStatus() {
   const cacheNames = await caches.keys();
-  const chinaconnectCaches = cacheNames.filter((name) => name.startsWith('chinaconnect-'));
+  const chinaconnectCaches = cacheNames.filter((name) => name.startsWith("chinaconnect-"));
 
   const status = {
     version: CACHE_VERSION,
     caches: {},
-    total: 0
+    total: 0,
   };
 
   for (const cacheName of chinaconnectCaches) {
@@ -635,11 +632,16 @@ async function getCacheStatus() {
   // Get IndexedDB stats
   try {
     const db = await openDB();
-    const caches = ['pending-favorites', 'pending-user-data', 'cached-cities', 'cached-ai-responses'];
+    const caches = [
+      "pending-favorites",
+      "pending-user-data",
+      "cached-cities",
+      "cached-ai-responses",
+    ];
 
     for (const storeName of caches) {
       try {
-        const tx = db.transaction(storeName, 'readonly');
+        const tx = db.transaction(storeName, "readonly");
         const store = tx.objectStore(storeName);
         const count = await new Promise((resolve) => {
           const request = store.count();
@@ -658,4 +660,4 @@ async function getCacheStatus() {
   return status;
 }
 
-console.log('[SW] Service Worker loaded');
+console.log("[SW] Service Worker loaded");

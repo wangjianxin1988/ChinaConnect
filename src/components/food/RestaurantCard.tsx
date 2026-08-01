@@ -26,7 +26,12 @@ const TYPE_CONFIG: Record<string, { label: string; icon: string; color: string; 
 };
 
 export default function RestaurantCard({ restaurant, onClick }: RestaurantCardProps) {
-  const config = TYPE_CONFIG[restaurant.type] || { label: "美食", icon: "🍴", color: "text-gray-600", bg: "bg-gray-100" };
+  const config = TYPE_CONFIG[restaurant.type] || {
+    label: "美食",
+    icon: "🍴",
+    color: "text-gray-600",
+    bg: "bg-gray-100",
+  };
   const { isFavorited, toggleFavorite } = useFavorites();
 
   const isFav = isFavorited(restaurant.id);

@@ -34,9 +34,7 @@ if (!existsSync(cacheDir)) mkdirSync(cacheDir, { recursive: true });
 // We avoid an actual TS import to keep this script zero-dep.
 function extractUrls(source) {
   // Capture everything between BUSINESS_URLS_TO_CHECK: ... = { ... };
-  const m = source.match(
-    /export\s+const\s+BUSINESS_URLS_TO_CHECK[^=]*=\s*\{([\s\S]*?)\n\};/,
-  );
+  const m = source.match(/export\s+const\s+BUSINESS_URLS_TO_CHECK[^=]*=\s*\{([\s\S]*?)\n\};/);
   if (!m) return {};
   const body = m[1];
   // Extract each key: [ ...urls... ],
@@ -86,14 +84,15 @@ async function headCheck(url, timeoutMs = 8000) {
       redirect: "follow",
       signal: controller.signal,
       headers: {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "user-agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "accept-language": "en-US,en;q=0.9",
       },
     });
     const latency = Date.now() - started;
     const blocked = res.status === 403 || res.status === 429;
-      return { ok: res.ok || blocked, status: res.status, finalUrl: res.url, latency, blocked };
+    return { ok: res.ok || blocked, status: res.status, finalUrl: res.url, latency, blocked };
   } catch (err) {
     const latency = Date.now() - started;
     return {

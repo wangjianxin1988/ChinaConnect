@@ -2,7 +2,7 @@
 /**
  * Hotel Search API Route
  * /api/hotels/search
- * 
+ *
  * 实时搜索酒店数据
  * Query params:
  *   - city: 城市slug (required)
@@ -20,10 +20,10 @@ export const GET: APIRoute = async ({ url }) => {
   const limit = parseInt(url.searchParams.get("limit") || "20");
 
   if (!city) {
-    return new Response(
-      JSON.stringify({ error: "city parameter is required" }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
-    );
+    return new Response(JSON.stringify({ error: "city parameter is required" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
   try {
@@ -46,12 +46,12 @@ export const GET: APIRoute = async ({ url }) => {
         count: hotels.length,
         hotels,
       }),
-      { status: 200, headers: { "Content-Type": "application/json" } }
+      { status: 200, headers: { "Content-Type": "application/json" } },
     );
   } catch (error) {
-    return new Response(
-      JSON.stringify({ error: "Failed to fetch hotels" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
-    );
+    return new Response(JSON.stringify({ error: "Failed to fetch hotels" }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 };

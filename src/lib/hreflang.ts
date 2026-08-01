@@ -236,4 +236,3 @@ export function buildCanonicalUrl(pathname: string, siteUrl: string = SITE_URL):
   const cleanPath = pathname.split("?")[0].replace(/^\/+|\/+$/g, "");
   return `${siteUrl}${cleanPath ? `/${cleanPath}` : "/"}`;
 }
-

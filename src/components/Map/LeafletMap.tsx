@@ -90,12 +90,14 @@ function MapResizer() {
 const TILE_LAYERS = {
   google: {
     standard: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    satellite: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    satellite:
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     terrain: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   },
   amap: {
     standard: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    satellite: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    satellite:
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     terrain: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   },
 };
@@ -147,11 +149,7 @@ export function LeafletMap({
         zoomControl={true}
         scrollWheelZoom={true}
       >
-        <TileLayer
-          url={tileUrl}
-          attribution={attribution}
-          maxZoom={19}
-        />
+        <TileLayer url={tileUrl} attribution={attribution} maxZoom={19} />
 
         {/* Center updater */}
         <MapCenterUpdater center={mapCenter} zoom={zoom} />

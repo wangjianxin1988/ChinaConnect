@@ -8,8 +8,8 @@
  *   3. Sync to Supabase when online
  */
 
-import { supabase } from '@/services/supabase';
-import { getLocalStorageManager, type ConversationSnapshot } from './local-storage-manager';
+import { supabase } from "@/services/supabase";
+import { getLocalStorageManager, type ConversationSnapshot } from "./local-storage-manager";
 import type {
   ConversationSummary,
   DailyPlan,
@@ -17,7 +17,7 @@ import type {
   ParsedItinerary,
   PlannedLocation,
   SavedItinerary,
-} from './types';
+} from "./types";
 
 // ============================================
 // Types
@@ -37,7 +37,7 @@ export interface ExtractedRoute {
   highlights: string[];
   tips: string[];
   transportSummary: string[];
-  travelStyle: 'budget' | 'comfort' | 'luxury' | 'adventure' | 'cultural' | 'foodie' | 'family';
+  travelStyle: "budget" | "comfort" | "luxury" | "adventure" | "cultural" | "foodie" | "family";
   tags: string[];
   startDate?: string;
   endDate?: string;
@@ -79,8 +79,8 @@ export interface ExtractedLocation {
 const SNAPSHOT_INTERVAL = 4;
 
 /** MiniMax model info */
-const AI_MODEL = 'MiniMax-M2.7-highspeed';
-const AI_PROVIDER = 'minimax';
+const AI_MODEL = "MiniMax-M2.7-highspeed";
+const AI_PROVIDER = "minimax";
 
 // ============================================
 // Route Extraction
@@ -93,7 +93,7 @@ const AI_PROVIDER = 'minimax';
 export function extractRouteFromConversation(
   messages: Message[],
   itinerary?: ParsedItinerary | null,
-  userParams?: { destination?: string; days?: number; budgetLevel?: string }
+  userParams?: { destination?: string; days?: number; budgetLevel?: string },
 ): ExtractedRoute | null {
   // Try to get data from itinerary first, fall back to message parsing
   const destination =
@@ -102,9 +102,7 @@ export function extractRouteFromConversation(
     extractDestinationFromMessages(messages);
 
   const days =
-    itinerary?.summary?.totalDays ||
-    userParams?.days ||
-    extractDaysFromMessages(messages);
+    itinerary?.summary?.totalDays || userParams?.days || extractDaysFromMessages(messages);
 
   if (!destination) return null;
 
@@ -117,12 +115,8 @@ export function extractRouteFromConversation(
   const travelStyle = determineTravelStyle(userParams?.budgetLevel, messages);
 
   // Generate title
-  const title = days
-    ? `${destination} ${days}-Day Trip`
-    : `Trip to ${destination}`;
-  const titleZh = days
-    ? `${destination}${days}日游`
-    : `${destination}之旅`;
+  const title = days ? `${destination} ${days}-Day Trip` : `Trip to ${destination}`;
+  const titleZh = days ? `${destination}${days}日游` : `${destination}之旅`;
 
   // Generate summary from highlights or itinerary
   const highlights = itinerary?.summary?.topHighlights || extractHighlightsFromMessages(messages);
@@ -131,9 +125,7 @@ export function extractRouteFromConversation(
   const summaryZh = generateSummaryZh(destination, days, highlights);
 
   // Extract transport summary
-  const transportSummary = dailyPlans
-    .map((dp) => dp.transport)
-    .filter((t) => t && t !== 'walk');
+  const transportSummary = dailyPlans.map((dp) => dp.transport).filter((t) => t && t !== "walk");
 
   // Generate tags
   const tags = generateTags(destination, travelStyle, days);
@@ -147,7 +139,7 @@ export function extractRouteFromConversation(
     days: days || 1,
     dailyPlans,
     totalEstimatedCost: itinerary?.summary?.estimatedTotalCost || 0,
-    currency: itinerary?.summary?.currency || 'CNY',
+    currency: itinerary?.summary?.currency || "CNY",
     highlights,
     tips,
     transportSummary,
@@ -174,8 +166,8 @@ function extractDayPlan(day: DailyPlan): ExtractedDayPlan {
       dinner: day.meals?.dinner?.name,
     },
     transport: day.transportToAttractions
-      ? day.transportToAttractions.type + ': ' + day.transportToAttractions.route
-      : '',
+      ? day.transportToAttractions.type + ": " + day.transportToAttractions.route
+      : "",
     accommodation: day.accommodation?.name,
   };
 }
@@ -187,8 +179,8 @@ function extractLocation(loc: PlannedLocation): ExtractedLocation {
     lat: loc.coordinates?.lat || 0,
     lng: loc.coordinates?.lng || 0,
     durationHours: loc.durationHours,
-    bestTime: loc.bestTimeStart + ' - ' + loc.bestTimeEnd,
-    ticketPrice: loc.ticketInfo?.price || 'Free',
+    bestTime: loc.bestTimeStart + " - " + loc.bestTimeEnd,
+    ticketPrice: loc.ticketInfo?.price || "Free",
     highlights: loc.highlights || [],
     insiderTip: loc.insiderTip,
   };
@@ -197,17 +189,17 @@ function extractLocation(loc: PlannedLocation): ExtractedLocation {
 function extractDestinationFromMessages(messages: Message[]): string | undefined {
   // Look in user messages for destination keywords
   for (const msg of messages) {
-    if (msg.role !== 'user') continue;
+    if (msg.role !== "user") continue;
     const match = msg.content.match(
-      /(?:visit|go to|travel to|trip to|explore|plan.*?to|want.*?to go)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/i
+      /(?:visit|go to|travel to|trip to|explore|plan.*?to|want.*?to go)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/i,
     );
     if (match) return match[1];
   }
   // Look in assistant messages for destination headers
   for (const msg of messages) {
-    if (msg.role !== 'assistant') continue;
+    if (msg.role !== "assistant") continue;
     const match = msg.content.match(
-      /(?:#|##)\s*(?:Trip to|Itinerary.*?for|Exploring)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/i
+      /(?:#|##)\s*(?:Trip to|Itinerary.*?for|Exploring)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/i,
     );
     if (match) return match[1];
   }
@@ -216,7 +208,7 @@ function extractDestinationFromMessages(messages: Message[]): string | undefined
 
 function extractDaysFromMessages(messages: Message[]): number | undefined {
   for (const msg of messages) {
-    if (msg.role !== 'user') continue;
+    if (msg.role !== "user") continue;
     const match = msg.content.match(/(\d+)\s*(?:day|days|天)/i);
     if (match) return parseInt(match[1], 10);
   }
@@ -227,11 +219,11 @@ function extractHighlightsFromMessages(messages: Message[]): string[] {
   // Extract bullet points from assistant messages that look like highlights
   const highlights: string[] = [];
   for (const msg of messages) {
-    if (msg.role !== 'assistant') continue;
+    if (msg.role !== "assistant") continue;
     const bullets = msg.content.match(/^[-*]\s+(.+)$/gm);
     if (bullets) {
       for (const b of bullets.slice(0, 5)) {
-        highlights.push(b.replace(/^[-*]\s+/, ''));
+        highlights.push(b.replace(/^[-*]\s+/, ""));
       }
     }
     if (highlights.length >= 5) break;
@@ -241,37 +233,45 @@ function extractHighlightsFromMessages(messages: Message[]): string[] {
 
 function determineTravelStyle(
   budgetLevel?: string,
-  _messages?: Message[]
-): ExtractedRoute['travelStyle'] {
+  _messages?: Message[],
+): ExtractedRoute["travelStyle"] {
   switch (budgetLevel) {
-    case 'luxury': return 'luxury';
-    case 'budget': return 'budget';
-    default: return 'comfort';
+    case "luxury":
+      return "luxury";
+    case "budget":
+      return "budget";
+    default:
+      return "comfort";
   }
 }
 
-function generateSummary(destination: string, days: number | undefined, highlights: string[]): string {
-  const dayStr = days ? `${days}-day ` : '';
-  const hlStr = highlights.length > 0
-    ? ' Highlights include ' + highlights.slice(0, 3).join(', ') + '.'
-    : '';
+function generateSummary(
+  destination: string,
+  days: number | undefined,
+  highlights: string[],
+): string {
+  const dayStr = days ? `${days}-day ` : "";
+  const hlStr =
+    highlights.length > 0 ? " Highlights include " + highlights.slice(0, 3).join(", ") + "." : "";
   return `A ${dayStr}travel itinerary for ${destination}.${hlStr}`;
 }
 
-function generateSummaryZh(destination: string, days: number | undefined, highlights: string[]): string {
-  const dayStr = days ? `${days}天` : '';
-  const hlStr = highlights.length > 0
-    ? '亮点包括' + highlights.slice(0, 3).join('、') + '。'
-    : '';
+function generateSummaryZh(
+  destination: string,
+  days: number | undefined,
+  highlights: string[],
+): string {
+  const dayStr = days ? `${days}天` : "";
+  const hlStr = highlights.length > 0 ? "亮点包括" + highlights.slice(0, 3).join("、") + "。" : "";
   return `${destination}${dayStr}旅行行程。${hlStr}`;
 }
 
 function generateTags(destination: string, style: string, days?: number): string[] {
   const tags = [destination.toLowerCase(), style];
   if (days) {
-    if (days <= 2) tags.push('weekend');
-    else if (days <= 5) tags.push('short-trip');
-    else tags.push('extended-trip');
+    if (days <= 2) tags.push("weekend");
+    else if (days <= 5) tags.push("short-trip");
+    else tags.push("extended-trip");
   }
   return tags;
 }
@@ -287,14 +287,14 @@ function generateTags(destination: string, style: string, days?: number): string
 export async function saveRoute(
   userId: string,
   conversationId: string,
-  routeData: ExtractedRoute
+  routeData: ExtractedRoute,
 ): Promise<{ success: boolean; routeId?: string; error?: string }> {
   const lsm = getLocalStorageManager();
 
   try {
     // Try Supabase first
     const { data, error } = await supabase
-      .from('ai_routes')
+      .from("ai_routes")
       .insert({
         user_id: userId,
         conversation_id: conversationId || null,
@@ -317,13 +317,13 @@ export async function saveRoute(
         start_date: routeData.startDate || null,
         end_date: routeData.endDate || null,
       })
-      .select('id')
+      .select("id")
       .single();
 
     if (error) {
-      console.error('[RouteSaver] Supabase save failed, saving locally:', error);
+      console.error("[RouteSaver] Supabase save failed, saving locally:", error);
       saveRouteLocally(userId, conversationId, routeData);
-      return { success: true, error: 'Saved locally (offline)' };
+      return { success: true, error: "Saved locally (offline)" };
     }
 
     // Also save to localStorage as cache
@@ -331,9 +331,9 @@ export async function saveRoute(
 
     return { success: true, routeId: data.id };
   } catch (err) {
-    console.error('[RouteSaver] Network error, saving locally:', err);
+    console.error("[RouteSaver] Network error, saving locally:", err);
     saveRouteLocally(userId, conversationId, routeData);
-    return { success: true, error: 'Saved locally (offline)' };
+    return { success: true, error: "Saved locally (offline)" };
   }
 }
 
@@ -344,15 +344,15 @@ function saveRouteLocally(
   userId: string,
   conversationId: string,
   routeData: ExtractedRoute,
-  supabaseId?: string
+  supabaseId?: string,
 ): void {
   try {
-    const key = 'cc_ai_saved_routes';
+    const key = "cc_ai_saved_routes";
     const existing = localStorage.getItem(key);
     const routes = existing ? JSON.parse(existing) : [];
 
     routes.unshift({
-      id: supabaseId || 'local_' + Date.now(),
+      id: supabaseId || "local_" + Date.now(),
       userId,
       conversationId,
       ...routeData,
@@ -364,7 +364,7 @@ function saveRouteLocally(
     const trimmed = routes.slice(0, 50);
     localStorage.setItem(key, JSON.stringify(trimmed));
   } catch (e) {
-    console.error('[RouteSaver] Failed to save route locally:', e);
+    console.error("[RouteSaver] Failed to save route locally:", e);
   }
 }
 
@@ -381,7 +381,7 @@ export async function autoSaveSnapshot(
   userId: string,
   conversationId: string,
   messages: Message[],
-  itinerary?: ParsedItinerary
+  itinerary?: ParsedItinerary,
 ): Promise<void> {
   if (messages.length === 0) return;
 
@@ -397,7 +397,7 @@ export async function autoSaveSnapshot(
 
   // 2. Try to sync to Supabase in background (fire-and-forget)
   syncSnapshotToSupabase(userId, conversationId, messages).catch((err) => {
-    console.warn('[RouteSaver] Background snapshot sync failed:', err);
+    console.warn("[RouteSaver] Background snapshot sync failed:", err);
   });
 
   // 3. Run cleanup if needed
@@ -417,7 +417,7 @@ export function shouldSaveSnapshot(messageCount: number): boolean {
 async function syncSnapshotToSupabase(
   userId: string,
   conversationId: string,
-  messages: Message[]
+  messages: Message[],
 ): Promise<void> {
   const lsm = getLocalStorageManager();
 
@@ -432,16 +432,14 @@ async function syncSnapshotToSupabase(
       toolCalls: m.toolCalls,
     }));
 
-    const { error } = await supabase
-      .from('ai_conversation_snapshots')
-      .insert({
-        conversation_id: conversationId,
-        user_id: userId,
-        messages: serialized,
-        snapshot_type: 'auto',
-        message_count: messages.length,
-        is_latest: true,
-      });
+    const { error } = await supabase.from("ai_conversation_snapshots").insert({
+      conversation_id: conversationId,
+      user_id: userId,
+      messages: serialized,
+      snapshot_type: "auto",
+      message_count: messages.length,
+      is_latest: true,
+    });
 
     if (!error) {
       // Mark as synced
@@ -483,16 +481,14 @@ export async function syncPendingSnapshots(userId: string): Promise<number> {
     }));
 
     try {
-      const { error } = await supabase
-        .from('ai_conversation_snapshots')
-        .insert({
-          conversation_id: conversationId,
-          user_id: userId,
-          messages,
-          snapshot_type: 'auto',
-          message_count: snap.messageCount,
-          is_latest: true,
-        });
+      const { error } = await supabase.from("ai_conversation_snapshots").insert({
+        conversation_id: conversationId,
+        user_id: userId,
+        messages,
+        snapshot_type: "auto",
+        message_count: snap.messageCount,
+        is_latest: true,
+      });
 
       if (!error) {
         lsm.removeFromPendingSync(conversationId);
@@ -515,7 +511,7 @@ export async function syncPendingSnapshots(userId: string): Promise<number> {
  * Falls back to Supabase if not in localStorage.
  */
 export async function restoreSnapshot(
-  conversationId: string
+  conversationId: string,
 ): Promise<ConversationSnapshot | null> {
   const lsm = getLocalStorageManager();
 
@@ -526,11 +522,11 @@ export async function restoreSnapshot(
   // Try Supabase
   try {
     const { data, error } = await supabase
-      .from('ai_conversation_snapshots')
-      .select('messages, message_count, created_at')
-      .eq('conversation_id', conversationId)
-      .eq('is_latest', true)
-      .order('created_at', { ascending: false })
+      .from("ai_conversation_snapshots")
+      .select("messages, message_count, created_at")
+      .eq("conversation_id", conversationId)
+      .eq("is_latest", true)
+      .order("created_at", { ascending: false })
       .limit(1)
       .single();
 
@@ -538,7 +534,7 @@ export async function restoreSnapshot(
 
     const snapshot: ConversationSnapshot = {
       conversationId,
-      messages: data.messages as ConversationSnapshot['messages'],
+      messages: data.messages as ConversationSnapshot["messages"],
       savedAt: data.created_at,
       messageCount: data.message_count,
       syncedToSupabase: true,
@@ -547,12 +543,12 @@ export async function restoreSnapshot(
     // Cache locally
     lsm.saveSnapshot(
       conversationId,
-      (data.messages as ConversationSnapshot['messages']).map((sm) => ({
+      (data.messages as ConversationSnapshot["messages"]).map((sm) => ({
         ...sm,
         timestamp: new Date(sm.timestamp),
       })),
       undefined,
-      true
+      true,
     );
 
     return snapshot;
@@ -576,10 +572,10 @@ export function findRestorableConversation(): {
   if (!snap || snap.messageCount === 0) return null;
 
   // Get a preview from the first user message
-  const firstUserMsg = snap.deserializedMessages.find((m) => m.role === 'user');
+  const firstUserMsg = snap.deserializedMessages.find((m) => m.role === "user");
   const preview = firstUserMsg
-    ? firstUserMsg.content.slice(0, 100) + (firstUserMsg.content.length > 100 ? '...' : '')
-    : 'Previous conversation';
+    ? firstUserMsg.content.slice(0, 100) + (firstUserMsg.content.length > 100 ? "..." : "")
+    : "Previous conversation";
 
   return {
     conversationId: snap.conversationId,
@@ -612,7 +608,7 @@ export async function saveConversationEnd(
   conversationId: string,
   messages: Message[],
   itinerary?: ParsedItinerary | null,
-  userParams?: { destination?: string; days?: number; budgetLevel?: string }
+  userParams?: { destination?: string; days?: number; budgetLevel?: string },
 ): Promise<{ routeId?: string; snapshotSaved: boolean }> {
   const lsm = getLocalStorageManager();
   let routeId: string | undefined;
@@ -630,16 +626,16 @@ export async function saveConversationEnd(
       timestamp: m.timestamp instanceof Date ? m.timestamp.toISOString() : String(m.timestamp),
     }));
 
-    await supabase.from('ai_conversation_snapshots').insert({
+    await supabase.from("ai_conversation_snapshots").insert({
       conversation_id: conversationId,
       user_id: userId,
       messages: serialized,
-      snapshot_type: 'end_of_conversation',
+      snapshot_type: "end_of_conversation",
       message_count: messages.length,
       is_latest: true,
     });
   } catch (err) {
-    console.warn('[RouteSaver] Failed to save end snapshot to Supabase:', err);
+    console.warn("[RouteSaver] Failed to save end snapshot to Supabase:", err);
   }
 
   // 3. Extract and save route if itinerary exists
@@ -650,9 +646,9 @@ export async function saveConversationEnd(
   }
 
   // 4. Update conversation summary in localStorage
-  const summary: import('./types').ConversationSummary = {
+  const summary: import("./types").ConversationSummary = {
     id: conversationId,
-    name: route ? route.title : 'Conversation ' + new Date().toLocaleDateString(),
+    name: route ? route.title : "Conversation " + new Date().toLocaleDateString(),
     destination: route?.destination,
     days: route?.days,
     createdAt: new Date().toISOString(),

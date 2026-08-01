@@ -220,5 +220,3 @@ export function generateEmergencyBreadcrumbs(): BreadcrumbItem[] {
     { name: "Emergency", href: "/emergency", isCurrent: true },
   ];
 }
-
-

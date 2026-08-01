@@ -57,7 +57,7 @@ const PRODUCT_TO_TIER: Record<string, string> = {
 async function verifySignature(
   body: string,
   signature: string | null,
-  secret: string
+  secret: string,
 ): Promise<boolean> {
   if (!signature) return false;
 
@@ -68,7 +68,7 @@ async function verifySignature(
       encoder.encode(secret),
       { name: "HMAC", hash: "SHA-256" },
       false,
-      ["sign"]
+      ["sign"],
     );
 
     const mac = await crypto.subtle.sign("HMAC", key, encoder.encode(body));
@@ -202,7 +202,10 @@ async function getTierId(supabase: ReturnType<typeof createClient>, tierSlug: st
 /**
  * Handle subscription.active — user subscribed or reactivated
  */
-async function handleSubscriptionActive(supabase: ReturnType<typeof createClient>, event: CreemEvent) {
+async function handleSubscriptionActive(
+  supabase: ReturnType<typeof createClient>,
+  event: CreemEvent,
+) {
   const obj = event.object;
   const productId = obj.product_id || obj.metadata?.product_id || "";
   const tierSlug = PRODUCT_TO_TIER[productId] || obj.metadata?.tier || "explorer";
@@ -243,21 +246,19 @@ async function handleSubscriptionActive(supabase: ReturnType<typeof createClient
     .eq("status", "active");
 
   // Create new membership
-  const { error: membershipError } = await supabase
-    .from("user_memberships")
-    .insert({
-      user_id: user.id,
-      tier_id: tierId,
-      status: "active",
-      billing_cycle: billingCycle,
-      started_at: now.toISOString(),
-      expires_at: expiresAt.toISOString(),
-      auto_renew: true,
-      metadata: {
-        creem_subscription_id: obj.id,
-        creem_customer_id: obj.customer?.id,
-      },
-    });
+  const { error: membershipError } = await supabase.from("user_memberships").insert({
+    user_id: user.id,
+    tier_id: tierId,
+    status: "active",
+    billing_cycle: billingCycle,
+    started_at: now.toISOString(),
+    expires_at: expiresAt.toISOString(),
+    auto_renew: true,
+    metadata: {
+      creem_subscription_id: obj.id,
+      creem_customer_id: obj.customer?.id,
+    },
+  });
 
   if (membershipError) {
     console.error("Error creating membership:", membershipError);
@@ -286,7 +287,10 @@ async function handleSubscriptionActive(supabase: ReturnType<typeof createClient
 /**
  * Handle subscription.paid — renewal payment
  */
-async function handleSubscriptionPaid(supabase: ReturnType<typeof createClient>, event: CreemEvent) {
+async function handleSubscriptionPaid(
+  supabase: ReturnType<typeof createClient>,
+  event: CreemEvent,
+) {
   const obj = event.object;
   const customerEmail = obj.customer?.email;
 
@@ -361,7 +365,10 @@ async function handleSubscriptionPaid(supabase: ReturnType<typeof createClient>,
 /**
  * Handle subscription.canceled — mark as cancel_at_period_end
  */
-async function handleSubscriptionCanceled(supabase: ReturnType<typeof createClient>, event: CreemEvent) {
+async function handleSubscriptionCanceled(
+  supabase: ReturnType<typeof createClient>,
+  event: CreemEvent,
+) {
   const obj = event.object;
 
   const { data: memberships } = await supabase
@@ -392,7 +399,10 @@ async function handleSubscriptionCanceled(supabase: ReturnType<typeof createClie
 /**
  * Handle subscription.expired — deactivate membership, tier back to free
  */
-async function handleSubscriptionExpired(supabase: ReturnType<typeof createClient>, event: CreemEvent) {
+async function handleSubscriptionExpired(
+  supabase: ReturnType<typeof createClient>,
+  event: CreemEvent,
+) {
   const obj = event.object;
 
   const { data: memberships } = await supabase
@@ -424,7 +434,10 @@ async function handleSubscriptionExpired(supabase: ReturnType<typeof createClien
 /**
  * Handle subscription.past_due — flag payment issue
  */
-async function handleSubscriptionPastDue(supabase: ReturnType<typeof createClient>, event: CreemEvent) {
+async function handleSubscriptionPastDue(
+  supabase: ReturnType<typeof createClient>,
+  event: CreemEvent,
+) {
   const obj = event.object;
 
   const { data: memberships } = await supabase

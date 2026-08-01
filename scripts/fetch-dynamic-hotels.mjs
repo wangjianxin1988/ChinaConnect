@@ -70,8 +70,10 @@ function parseArgs(argv) {
   const positional = [];
   for (const a of argv) {
     if (a === "--write") opts.write = true;
-    else if (a === "--help" || a === "-h") { printHelp(); process.exit(0); }
-    else positional.push(a);
+    else if (a === "--help" || a === "-h") {
+      printHelp();
+      process.exit(0);
+    } else positional.push(a);
   }
   if (positional[0]) opts.city = positional[0];
   if (positional[1]) opts.category = positional[1];
@@ -123,7 +125,9 @@ async function main() {
   const count = opts.count;
 
   console.log(`[hotels:refresh] mode=${opts.write ? "WRITE" : "DRY-RUN"}`);
-  console.log(`[hotels:refresh] cities=${cities.length} categories=${categories.length} count=${count}`);
+  console.log(
+    `[hotels:refresh] cities=${cities.length} categories=${categories.length} count=${count}`,
+  );
   console.log(`[hotels:refresh] minimum per category: ${MIN_PER_CATEGORY}`);
 
   const outDir = path.join(ROOT, "src", "data", "hotels", "dynamic");

@@ -4,10 +4,10 @@
  * Offers to restore or dismiss the conversation.
  */
 
-import React, { useState, useEffect, useCallback } from 'react';
-import { findRestorableConversation, dismissRestorableConversation } from '@/lib/ai/route-saver';
-import { getLocalStorageManager, deserializeMessage } from '@/lib/ai/local-storage-manager';
-import type { Message } from '@/lib/ai/types';
+import React, { useState, useEffect, useCallback } from "react";
+import { findRestorableConversation, dismissRestorableConversation } from "@/lib/ai/route-saver";
+import { getLocalStorageManager, deserializeMessage } from "@/lib/ai/local-storage-manager";
+import type { Message } from "@/lib/ai/types";
 
 // ============================================
 // Types
@@ -19,7 +19,7 @@ interface RestorePromptProps {
   /** Called when user dismisses the prompt */
   onDismiss?: () => void;
   /** UI language */
-  language?: 'en' | 'zh' | 'ja' | 'ko';
+  language?: "en" | "zh" | "ja" | "ko";
   /** Auto-dismiss after N seconds (0 = no auto-dismiss) */
   autoDismissSeconds?: number;
 }
@@ -38,7 +38,7 @@ interface RestorableInfo {
 export const RestorePrompt: React.FC<RestorePromptProps> = ({
   onRestore,
   onDismiss,
-  language = 'en',
+  language = "en",
   autoDismissSeconds = 30,
 }) => {
   const [restorable, setRestorable] = useState<RestorableInfo | null>(null);
@@ -87,7 +87,7 @@ export const RestorePrompt: React.FC<RestorePromptProps> = ({
         onRestore(restorable.conversationId, messages);
       }
     } catch (err) {
-      console.error('[RestorePrompt] Failed to restore:', err);
+      console.error("[RestorePrompt] Failed to restore:", err);
     } finally {
       setIsRestoring(false);
       setIsVisible(false);
@@ -119,15 +119,23 @@ export const RestorePrompt: React.FC<RestorePromptProps> = ({
         <div className="bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-white text-sm">
-              <svg className="w-4 h-4 inline-block mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              <svg
+                className="w-4 h-4 inline-block mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                />
               </svg>
               {L.title}
             </span>
           </div>
-          {autoDismissSeconds > 0 && (
-            <span className="text-blue-200 text-xs">{countdown}s</span>
-          )}
+          {autoDismissSeconds > 0 && <span className="text-blue-200 text-xs">{countdown}s</span>}
         </div>
 
         {/* Body */}
@@ -135,7 +143,7 @@ export const RestorePrompt: React.FC<RestorePromptProps> = ({
           <p className="text-sm text-gray-700 mb-1">{L.description}</p>
           <div className="bg-gray-50 rounded-lg p-3 mb-4">
             <p className="text-xs text-gray-500 mb-1">
-              {L.messageCount.replace('{count}', String(restorable.messageCount))}
+              {L.messageCount.replace("{count}", String(restorable.messageCount))}
             </p>
             <p className="text-sm text-gray-800 line-clamp-2 font-medium">
               &ldquo;{restorable.preview}&rdquo;
@@ -159,8 +167,19 @@ export const RestorePrompt: React.FC<RestorePromptProps> = ({
               {isRestoring ? (
                 <>
                   <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                    />
                   </svg>
                   {L.restoring}
                 </>
@@ -196,38 +215,48 @@ export const RestorePrompt: React.FC<RestorePromptProps> = ({
 // Labels
 // ============================================
 
-const LABELS: Record<string, { title: string; description: string; messageCount: string; restore: string; restoring: string; dismiss: string }> = {
+const LABELS: Record<
+  string,
+  {
+    title: string;
+    description: string;
+    messageCount: string;
+    restore: string;
+    restoring: string;
+    dismiss: string;
+  }
+> = {
   en: {
-    title: 'Unsaved Conversation',
-    description: 'You have a conversation from your last session that wasn\'t saved.',
-    messageCount: '{count} messages',
-    restore: 'Restore',
-    restoring: 'Restoring...',
-    dismiss: 'Dismiss',
+    title: "Unsaved Conversation",
+    description: "You have a conversation from your last session that wasn't saved.",
+    messageCount: "{count} messages",
+    restore: "Restore",
+    restoring: "Restoring...",
+    dismiss: "Dismiss",
   },
   zh: {
-    title: '未保存的对话',
-    description: '您上次会话中有一个未保存的对话。',
-    messageCount: '{count} 条消息',
-    restore: '恢复',
-    restoring: '恢复中...',
-    dismiss: '忽略',
+    title: "未保存的对话",
+    description: "您上次会话中有一个未保存的对话。",
+    messageCount: "{count} 条消息",
+    restore: "恢复",
+    restoring: "恢复中...",
+    dismiss: "忽略",
   },
   ja: {
-    title: '未保存の会話',
-    description: '前回のセッションに未保存の会話があります。',
-    messageCount: '{count} 件のメッセージ',
-    restore: '復元',
-    restoring: '復元中...',
-    dismiss: '閉じる',
+    title: "未保存の会話",
+    description: "前回のセッションに未保存の会話があります。",
+    messageCount: "{count} 件のメッセージ",
+    restore: "復元",
+    restoring: "復元中...",
+    dismiss: "閉じる",
   },
   ko: {
-    title: '저장되지 않은 대화',
-    description: '이전 세션에서 저장되지 않은 대화가 있습니다.',
-    messageCount: '{count}개의 메시지',
-    restore: '복원',
-    restoring: '복원 중...',
-    dismiss: '닫기',
+    title: "저장되지 않은 대화",
+    description: "이전 세션에서 저장되지 않은 대화가 있습니다.",
+    messageCount: "{count}개의 메시지",
+    restore: "복원",
+    restoring: "복원 중...",
+    dismiss: "닫기",
   },
 };
 
@@ -243,17 +272,17 @@ function formatRelativeTime(isoString: string, language: string): string {
   const diffHours = Math.floor(diffMs / 3600000);
   const diffDays = Math.floor(diffMs / 86400000);
 
-  if (language === 'zh') {
-    if (diffMin < 1) return '刚刚';
-    if (diffMin < 60) return diffMin + ' 分钟前';
-    if (diffHours < 24) return diffHours + ' 小时前';
-    return diffDays + ' 天前';
+  if (language === "zh") {
+    if (diffMin < 1) return "刚刚";
+    if (diffMin < 60) return diffMin + " 分钟前";
+    if (diffHours < 24) return diffHours + " 小时前";
+    return diffDays + " 天前";
   }
 
-  if (diffMin < 1) return 'Just now';
-  if (diffMin < 60) return diffMin + ' min ago';
-  if (diffHours < 24) return diffHours + 'h ago';
-  return diffDays + 'd ago';
+  if (diffMin < 1) return "Just now";
+  if (diffMin < 60) return diffMin + " min ago";
+  if (diffHours < 24) return diffHours + "h ago";
+  return diffDays + "d ago";
 }
 
 export default RestorePrompt;

@@ -10,7 +10,12 @@ interface AttractionsSectionProps {
   totalCount?: number;
 }
 
-export function AttractionsSection({ attractions, citySlug, cityName, totalCount }: AttractionsSectionProps) {
+export function AttractionsSection({
+  attractions,
+  citySlug,
+  cityName,
+  totalCount,
+}: AttractionsSectionProps) {
   const [_selectedCoords, setSelectedCoords] = useState<{ lat: number; lng: number } | null>(null);
 
   const { visibleItems, hasMore, loading, sentinelRef } = useInfiniteScroll<AttractionData>({
@@ -103,7 +108,12 @@ export function AttractionsSection({ attractions, citySlug, cityName, totalCount
           >
             View All {total} Attractions
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </a>
         </div>

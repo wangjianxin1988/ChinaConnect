@@ -73,7 +73,8 @@ export const EXPO_CALENDAR: Expo[] = [
     months: [3],
     description:
       "One of the most influential PCB and electronic circuit exhibitions globally, covering the entire electronic circuit supply chain from design to manufacturing.",
-    descriptionCn: "全球最具影响力的PCB及电子电路展览会之一，覆盖从设计到制造的整个电子电路产业链。",
+    descriptionCn:
+      "全球最具影响力的PCB及电子电路展览会之一，覆盖从设计到制造的整个电子电路产业链。",
     website: "https://www.cpca.org.cn",
     category: "electronics",
   },
@@ -152,7 +153,8 @@ export const EXPO_CALENDAR: Expo[] = [
     venue: "China National Convention Center",
     city: "Beijing",
     months: [9],
-    description: "China's premier trade in services expo covering digital trade, finance, tourism, and education services.",
+    description:
+      "China's premier trade in services expo covering digital trade, finance, tourism, and education services.",
     descriptionCn: "中国服务贸易领域的龙头展会，涵盖数字贸易、金融、旅游、教育等服务领域。",
     website: "https://www.ciftis.org",
     category: "trade",

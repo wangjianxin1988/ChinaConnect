@@ -112,7 +112,10 @@ function escapeXml(str: string): string {
  * Japanese: https://chinaconnect.com/city/beijing?lang=ja
  */
 function generateHreflangUrls(path: string): Array<{ hreflang: string; href: string }> {
-  const cleanPath = path.replace(/^\/+|\/+$/g, "").split("?")[0].split("#")[0];
+  const cleanPath = path
+    .replace(/^\/+|\/+$/g, "")
+    .split("?")[0]
+    .split("#")[0];
   const urlBase = cleanPath ? `${SITE_URL}/${cleanPath}` : SITE_URL;
 
   return SUPPORTED_LANGUAGES.map((lang) => ({
@@ -399,4 +402,3 @@ export const GET: APIRoute = ({ url }) => {
 export function getSitemapUrl(): string {
   return `${SITE_URL}/sitemap.xml`;
 }
-

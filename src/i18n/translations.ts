@@ -226,7 +226,7 @@ export const translations: Record<Language, Translations> = {
       next: "Next",
       previous: "Previous",
       close: "Close",
-      open: "Open"
+      open: "Open",
     },
     home: {
       heroTitle: "Your AI-Powered China Guide",
@@ -239,7 +239,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "AI Assistance",
       featuresTitle: "Everything You Need for Your China Trip",
       ctaTitle: "Ready to Explore China?",
-      ctaSubtitle: "Start planning your trip with AI-powered recommendations."
+      ctaSubtitle: "Start planning your trip with AI-powered recommendations.",
     },
     cities: {
       title: "Explore Our Cities",
@@ -254,7 +254,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "Emergency",
       recommendedTime: "Recommended Visit",
       ticketPrice: "Ticket",
-      openingHours: "Hours"
+      openingHours: "Hours",
     },
     restaurants: {
       title: "Restaurant Guide",
@@ -268,7 +268,7 @@ export const translations: Record<Language, Translations> = {
       address: "Address",
       hours: "Hours",
       dishes: "Signature Dishes",
-      tags: "Tags"
+      tags: "Tags",
     },
     empty: {
       noResults: "No results found",
@@ -277,14 +277,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "No results for your search",
       tryAdjusting: "Try adjusting your filters or search terms",
       noFavorites: "No favorites yet",
-      addSome: "Start exploring and save your favorites!"
+      addSome: "Start exploring and save your favorites!",
     },
     errors: {
       loadFailed: "Failed to load content",
       networkError: "Network error. Please check your connection.",
       somethingWrong: "Something went wrong",
       goBack: "Go Back",
-      goHome: "Go to Homepage"
+      goHome: "Go to Homepage",
     },
     onboarding: {
       welcome: "Welcome to ChinaConnect!",
@@ -297,25 +297,26 @@ export const translations: Record<Language, Translations> = {
       getStarted: "Get Started",
       skip: "Skip",
       next: "Next",
-      done: "Done"
+      done: "Done",
     },
     tooltips: {
       searchTip: "Search cities, restaurants, or topics",
       filterTip: "Filter by cuisine, rating, or price",
       mapTip: "View on map",
       favoritesTip: "Add to favorites",
-      shareTip: "Share with friends"
+      shareTip: "Share with friends",
     },
     recents: {
       recentlyViewed: "Recently Viewed",
       recommended: "Recommended for You",
       clearHistory: "Clear History",
-      forYou: "Because you visited {city}"
+      forYou: "Because you visited {city}",
     },
     // Features section
     features: {
       restaurantGuide: "Restaurant Guide",
-      restaurantGuideDesc: "Michelin stars, Black Pearl rankings, and local favorites with detailed reviews",
+      restaurantGuideDesc:
+        "Michelin stars, Black Pearl rankings, and local favorites with detailed reviews",
       attractions: "Attractions",
       attractionsDesc: "Top-rated attractions with opening hours, tickets, and local tips",
       transport: "Transport",
@@ -335,9 +336,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "Switch to",
       current: "Current",
       english: "English",
-      chinese: "Chinese"
-    }
+      chinese: "Chinese",
     },
+  },
 
   ja: {
     nav: {
@@ -365,7 +366,7 @@ export const translations: Record<Language, Translations> = {
       next: "次へ",
       previous: "前へ",
       close: "閉じる",
-      open: "開く"
+      open: "開く",
     },
     home: {
       heroTitle: "AIで中国を巡る",
@@ -378,7 +379,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "AIアシスタント",
       featuresTitle: "中国旅行に必要なすべて",
       ctaTitle: "中国探索の準備はできましたか？",
-      ctaSubtitle: "AIを活用したおすすめで旅程を計画しましょう。"
+      ctaSubtitle: "AIを活用したおすすめで旅程を計画しましょう。",
     },
     cities: {
       title: "都市を探す",
@@ -393,7 +394,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "緊急連絡先",
       recommendedTime: "最佳訪問時間",
       ticketPrice: "チケット",
-      openingHours: "営業時間"
+      openingHours: "営業時間",
     },
     restaurants: {
       title: "レストランガイド",
@@ -407,7 +408,7 @@ export const translations: Record<Language, Translations> = {
       address: "住所",
       hours: "営業時間",
       dishes: "おすすめ料理",
-      tags: "タグ"
+      tags: "タグ",
     },
     empty: {
       noResults: "結果が見つかりません",
@@ -416,14 +417,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "検索結果がありません",
       tryAdjusting: "フィルターまたは検索語を調整してみてください",
       noFavorites: "お気に入りがまだありません",
-      addSome: "探索してお気に入りを追加しましょう！"
+      addSome: "探索してお気に入りを追加しましょう！",
     },
     errors: {
       loadFailed: "コンテンツの読み込みに失敗しました",
       networkError: "ネットワークエラー。接続を確認してください。",
       somethingWrong: "問題が発生しました",
       goBack: "戻る",
-      goHome: "ホームページへ"
+      goHome: "ホームページへ",
     },
     onboarding: {
       welcome: "ChinaConnectへようこそ！",
@@ -436,25 +437,26 @@ export const translations: Record<Language, Translations> = {
       getStarted: "始める",
       skip: "スキップ",
       next: "次へ",
-      done: "完了"
+      done: "完了",
     },
     tooltips: {
       searchTip: "都市、レストラン、トピックを検索",
       filterTip: "料理、評価、価格で確認",
       mapTip: "地図で表示",
       favoritesTip: "お気に入りに追加",
-      shareTip: "友達にシェア"
+      shareTip: "友達にシェア",
     },
     recents: {
       recentlyViewed: "最近見た",
       recommended: "おすすめ",
       clearHistory: "履歴をクリア",
-      forYou: "{city}を見た的你へのおすすめ"
+      forYou: "{city}を見た的你へのおすすめ",
     },
     // Features section
     features: {
       restaurantGuide: "レストランガイド",
-      restaurantGuideDesc: "ミシュラン星、黒真珠ランキング、地元のお気に入りを詳細レビュー付きで紹介",
+      restaurantGuideDesc:
+        "ミシュラン星、黒真珠ランキング、地元のお気に入りを詳細レビュー付きで紹介",
       attractions: "観光名所",
       attractionsDesc: "営業時間、チケット、現地 tips を含むトップ評価の観光名所",
       transport: "交通",
@@ -474,9 +476,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "切り替える",
       current: "現在",
       english: "英語",
-      chinese: "中国語"
-    }
+      chinese: "中国語",
     },
+  },
 
   ko: {
     nav: {
@@ -504,7 +506,7 @@ export const translations: Record<Language, Translations> = {
       next: "다음",
       previous: "이전",
       close: "닫기",
-      open: "열기"
+      open: "열기",
     },
     home: {
       heroTitle: "AI로 중국 탐험",
@@ -517,7 +519,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "AI 어시스턴트",
       featuresTitle: "중국 여행에 필요한 모든 것",
       ctaTitle: "중국 탐험을 준비하셨나요?",
-      ctaSubtitle: "AI 기반 추천으로 여행을 계획하세요."
+      ctaSubtitle: "AI 기반 추천으로 여행을 계획하세요.",
     },
     cities: {
       title: "도시 탐험",
@@ -532,7 +534,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "비상 연락처",
       recommendedTime: "추천 방문 시간",
       ticketPrice: "티켓",
-      openingHours: "운영 시간"
+      openingHours: "운영 시간",
     },
     restaurants: {
       title: "음식점 가이드",
@@ -546,7 +548,7 @@ export const translations: Record<Language, Translations> = {
       address: "주소",
       hours: "운영 시간",
       dishes: "시그니처 요리",
-      tags: "태그"
+      tags: "태그",
     },
     empty: {
       noResults: "결과 없음",
@@ -555,14 +557,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "검색 결과 없음",
       tryAdjusting: "필터 또는 검색어 조정",
       noFavorites: "아직 즐겨찾기 없음",
-      addSome: "탐험을 시작하고 즐겨찾기에 추가하세요!"
+      addSome: "탐험을 시작하고 즐겨찾기에 추가하세요!",
     },
     errors: {
       loadFailed: "콘텐츠 로드 실패",
       networkError: "네트워크 오류. 연결을 확인하세요.",
       somethingWrong: "문제가 발생했습니다",
       goBack: "뒤로 가기",
-      goHome: "홈으로 가기"
+      goHome: "홈으로 가기",
     },
     onboarding: {
       welcome: "ChinaConnect에 오신 것을 환영합니다!",
@@ -575,20 +577,20 @@ export const translations: Record<Language, Translations> = {
       getStarted: "시작하기",
       skip: "건너뛰기",
       next: "다음",
-      done: "완료"
+      done: "완료",
     },
     tooltips: {
       searchTip: "도시, 음식점, 주제 검색",
       filterTip: "요리, 평점, 가격으로 필터",
       mapTip: "지도로 보기",
       favoritesTip: "즐겨찾기에 추가",
-      shareTip: "친구와 공유"
+      shareTip: "친구와 공유",
     },
     recents: {
       recentlyViewed: "최근 본 것",
       recommended: "추천",
       clearHistory: "기록 지우기",
-      forYou: "{city}을 본 당신을 위한 추천"
+      forYou: "{city}을 본 당신을 위한 추천",
     },
     // Features section
     features: {
@@ -613,9 +615,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "전환",
       current: "현재",
       english: "영어",
-      chinese: "중국어"
-    }
+      chinese: "중국어",
     },
+  },
 
   "zh-CN": {
     nav: {
@@ -643,7 +645,7 @@ export const translations: Record<Language, Translations> = {
       next: "下一步",
       previous: "上一步",
       close: "关闭",
-      open: "打开"
+      open: "打开",
     },
     home: {
       heroTitle: "用AI探索中国",
@@ -656,7 +658,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "AI助手",
       featuresTitle: "您中国之旅所需的一切",
       ctaTitle: "准备好探索中国了吗？",
-      ctaSubtitle: "开始使用AI驱动的推荐来规划您的行程。"
+      ctaSubtitle: "开始使用AI驱动的推荐来规划您的行程。",
     },
     cities: {
       title: "探索我们的城市",
@@ -671,7 +673,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "紧急联系",
       recommendedTime: "建议游览时间",
       ticketPrice: "门票",
-      openingHours: "营业时间"
+      openingHours: "营业时间",
     },
     restaurants: {
       title: "餐厅指南",
@@ -685,7 +687,7 @@ export const translations: Record<Language, Translations> = {
       address: "地址",
       hours: "营业时间",
       dishes: "招牌菜",
-      tags: "标签"
+      tags: "标签",
     },
     empty: {
       noResults: "未找到结果",
@@ -694,14 +696,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "搜索无结果",
       tryAdjusting: "尝试调整筛选条件或搜索关键词",
       noFavorites: "暂无收藏",
-      addSome: "开始探索并收藏您喜欢的！"
+      addSome: "开始探索并收藏您喜欢的！",
     },
     errors: {
       loadFailed: "加载内容失败",
       networkError: "网络错误，请检查您的连接。",
       somethingWrong: "出错了",
       goBack: "返回",
-      goHome: "返回首页"
+      goHome: "返回首页",
     },
     onboarding: {
       welcome: "欢迎使用ChinaConnect！",
@@ -714,20 +716,20 @@ export const translations: Record<Language, Translations> = {
       getStarted: "开始使用",
       skip: "跳过",
       next: "下一步",
-      done: "完成"
+      done: "完成",
     },
     tooltips: {
       searchTip: "搜索城市、餐厅或主题",
       filterTip: "按菜系、评分或价格筛选",
       mapTip: "在地图上查看",
       favoritesTip: "添加到收藏",
-      shareTip: "分享给朋友"
+      shareTip: "分享给朋友",
     },
     recents: {
       recentlyViewed: "最近浏览",
       recommended: "为您推荐",
       clearHistory: "清除历史",
-      forYou: "因为您浏览了{city}"
+      forYou: "因为您浏览了{city}",
     },
     // Features section
     features: {
@@ -752,9 +754,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "切换到",
       current: "当前",
       english: "英语",
-      chinese: "中文"
-    }
+      chinese: "中文",
     },
+  },
 
   "zh-TW": {
     nav: {
@@ -782,7 +784,7 @@ export const translations: Record<Language, Translations> = {
       next: "下一步",
       previous: "上一步",
       close: "關閉",
-      open: "打開"
+      open: "打開",
     },
     home: {
       heroTitle: "用AI探索中國",
@@ -795,7 +797,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "AI助手",
       featuresTitle: "您中國之旅所需的一切",
       ctaTitle: "準備好探索中國了嗎？",
-      ctaSubtitle: "開始使用AI驅動的推薦來規劃您的行程。"
+      ctaSubtitle: "開始使用AI驅動的推薦來規劃您的行程。",
     },
     cities: {
       title: "探索我們的城市",
@@ -810,7 +812,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "緊急聯繫",
       recommendedTime: "建議遊覽時間",
       ticketPrice: "門票",
-      openingHours: "營業時間"
+      openingHours: "營業時間",
     },
     restaurants: {
       title: "餐廳指南",
@@ -824,7 +826,7 @@ export const translations: Record<Language, Translations> = {
       address: "地址",
       hours: "營業時間",
       dishes: "招牌菜",
-      tags: "標籤"
+      tags: "標籤",
     },
     empty: {
       noResults: "未找到結果",
@@ -833,14 +835,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "搜尋無結果",
       tryAdjusting: "嘗試調整篩選條件或搜尋關鍵詞",
       noFavorites: "暫無收藏",
-      addSome: "開始探索並收藏您喜歡的！"
+      addSome: "開始探索並收藏您喜歡的！",
     },
     errors: {
       loadFailed: "載入內容失敗",
       networkError: "網絡錯誤，請檢查您的連接。",
       somethingWrong: "出錯了",
       goBack: "返回",
-      goHome: "返回首頁"
+      goHome: "返回首頁",
     },
     onboarding: {
       welcome: "歡迎使用ChinaConnect！",
@@ -853,20 +855,20 @@ export const translations: Record<Language, Translations> = {
       getStarted: "開始使用",
       skip: "跳過",
       next: "下一步",
-      done: "完成"
+      done: "完成",
     },
     tooltips: {
       searchTip: "搜尋城市、餐廳或主題",
       filterTip: "按菜系、評分或價格篩選",
       mapTip: "在地圖上查看",
       favoritesTip: "添加到收藏",
-      shareTip: "分享給朋友"
+      shareTip: "分享給朋友",
     },
     recents: {
       recentlyViewed: "最近瀏覽",
       recommended: "為您推薦",
       clearHistory: "清除歷史",
-      forYou: "因為您瀏覽了{city}"
+      forYou: "因為您瀏覽了{city}",
     },
     // Features section
     features: {
@@ -891,9 +893,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "切換到",
       current: "當前",
       english: "英語",
-      chinese: "中文"
-    }
+      chinese: "中文",
     },
+  },
 
   th: {
     nav: {
@@ -921,7 +923,7 @@ export const translations: Record<Language, Translations> = {
       next: "ถัดไป",
       previous: "ก่อนหน้า",
       close: "ปิด",
-      open: "เปิด"
+      open: "เปิด",
     },
     home: {
       heroTitle: "สำรวจจีนกับ AI",
@@ -934,7 +936,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "ผู้ช่วย AI",
       featuresTitle: "ทุกสิ่งที่คุณต้องการสำหรับการเดินทางไปจีน",
       ctaTitle: "พร้อมสำรวจจีนหรือยัง?",
-      ctaSubtitle: "เริ่มวางแผนการเดินทางของคุณด้วยคำแนะนำที่ขับเคลื่อนด้วย AI"
+      ctaSubtitle: "เริ่มวางแผนการเดินทางของคุณด้วยคำแนะนำที่ขับเคลื่อนด้วย AI",
     },
     cities: {
       title: "สำรวจเมืองของเรา",
@@ -949,7 +951,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "ฉุกเฉิน",
       recommendedTime: "เวลาที่แนะนำ",
       ticketPrice: "บัตร",
-      openingHours: "เวลาเปิด"
+      openingHours: "เวลาเปิด",
     },
     restaurants: {
       title: "คู่มือร้านอาหาร",
@@ -963,7 +965,7 @@ export const translations: Record<Language, Translations> = {
       address: "ที่อยู่",
       hours: "เวลาเปิด",
       dishes: "เมนู Signature",
-      tags: "แท็ก"
+      tags: "แท็ก",
     },
     empty: {
       noResults: "ไม่พบผลลัพธ์",
@@ -972,14 +974,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "ไม่มีผลลัพธ์การค้นหา",
       tryAdjusting: "ลองปรับตัวกรองหรือคำค้นหาของคุณ",
       noFavorites: "ยังไม่มีรายการโปรด",
-      addSome: "เริ่มสำรวจและบันทึกรายการโปรดของคุณ!"
+      addSome: "เริ่มสำรวจและบันทึกรายการโปรดของคุณ!",
     },
     errors: {
       loadFailed: "ไม่สามารถโหลดเนื้อหา",
       networkError: "ข้อผิดพลาดเครือข่าย กรุณาตรวจสอบการเชื่อมต่อของคุณ",
       somethingWrong: "มีบางอย่างผิดพลาด",
       goBack: "กลับ",
-      goHome: "ไปหน้าแรก"
+      goHome: "ไปหน้าแรก",
     },
     onboarding: {
       welcome: "ยินดีต้อนรับสู่ ChinaConnect!",
@@ -992,20 +994,20 @@ export const translations: Record<Language, Translations> = {
       getStarted: "เริ่มต้น",
       skip: "ข้าม",
       next: "ถัดไป",
-      done: "เสร็จสิ้น"
+      done: "เสร็จสิ้น",
     },
     tooltips: {
       searchTip: "ค้นหาเมือง ร้านอาหาร หรือหัวข้อ",
       filterTip: "กรองตามอาหาร คะแนน หรือราคา",
       mapTip: "ดูบนแผนที่",
       favoritesTip: "เพิ่มในรายการโปรด",
-      shareTip: "แชร์กับเพื่อน"
+      shareTip: "แชร์กับเพื่อน",
     },
     recents: {
       recentlyViewed: "ดูล่าสุด",
       recommended: "แนะนำสำหรับคุณ",
       clearHistory: "ล้างประวัติ",
-      forYou: "เพราะคุณเยี่ยมชม {city}"
+      forYou: "เพราะคุณเยี่ยมชม {city}",
     },
     // Features section
     features: {
@@ -1030,9 +1032,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "เปลี่ยนเป็น",
       current: "ปัจจุบัน",
       english: "อังกฤษ",
-      chinese: "จีน"
-    }
+      chinese: "จีน",
     },
+  },
 
   vi: {
     nav: {
@@ -1060,7 +1062,7 @@ export const translations: Record<Language, Translations> = {
       next: "Tiếp theo",
       previous: "Trước đó",
       close: "Đóng",
-      open: "Mở"
+      open: "Mở",
     },
     home: {
       heroTitle: "Khám phá Trung Quốc với AI",
@@ -1073,7 +1075,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "Hỗ trợ AI",
       featuresTitle: "Mọi thứ bạn cần cho chuyến đi Trung Quốc",
       ctaTitle: "Sẵn sàng khám phá Trung Quốc?",
-      ctaSubtitle: "Bắt đầu lập kế hoạch chuyến đi với đề xuất từ AI."
+      ctaSubtitle: "Bắt đầu lập kế hoạch chuyến đi với đề xuất từ AI.",
     },
     cities: {
       title: "Khám phá Thành phố của chúng tôi",
@@ -1088,7 +1090,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "Khẩn cấp",
       recommendedTime: "Thời gian đề xuất",
       ticketPrice: "Vé",
-      openingHours: "Giờ mở cửa"
+      openingHours: "Giờ mở cửa",
     },
     restaurants: {
       title: "Hướng dẫn Nhà hàng",
@@ -1102,7 +1104,7 @@ export const translations: Record<Language, Translations> = {
       address: "Địa chỉ",
       hours: "Giờ mở cửa",
       dishes: "Món đặc trưng",
-      tags: "Thẻ"
+      tags: "Thẻ",
     },
     empty: {
       noResults: "Không tìm thấy kết quả",
@@ -1111,14 +1113,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "Không có kết quả tìm kiếm",
       tryAdjusting: "Thử điều chỉnh bộ lọc hoặc từ khóa",
       noFavorites: "Chưa có mục yêu thích",
-      addSome: "Bắt đầu khám phá và lưu mục yêu thích của bạn!"
+      addSome: "Bắt đầu khám phá và lưu mục yêu thích của bạn!",
     },
     errors: {
       loadFailed: "Không thể tải nội dung",
       networkError: "Lỗi mạng. Vui lòng kiểm tra kết nối của bạn.",
       somethingWrong: "Đã xảy ra sự cố",
       goBack: "Quay lại",
-      goHome: "Đến Trang chủ"
+      goHome: "Đến Trang chủ",
     },
     onboarding: {
       welcome: "Chào mừng đến với ChinaConnect!",
@@ -1131,25 +1133,26 @@ export const translations: Record<Language, Translations> = {
       getStarted: "Bắt đầu",
       skip: "Bỏ qua",
       next: "Tiếp theo",
-      done: "Xong"
+      done: "Xong",
     },
     tooltips: {
       searchTip: "Tìm kiếm thành phố, nhà hàng hoặc chủ đề",
       filterTip: "Lọc theo ẩm thực, đánh giá hoặc giá",
       mapTip: "Xem trên bản đồ",
       favoritesTip: "Thêm vào mục yêu thích",
-      shareTip: "Chia sẻ với bạn bè"
+      shareTip: "Chia sẻ với bạn bè",
     },
     recents: {
       recentlyViewed: "Đã xem gần đây",
       recommended: "Đề xuất cho bạn",
       clearHistory: "Xóa lịch sử",
-      forYou: "Vì bạn đã xem {city}"
+      forYou: "Vì bạn đã xem {city}",
     },
     // Features section
     features: {
       restaurantGuide: "Hướng dẫn nhà hàng",
-      restaurantGuideDesc: "Sao Michelin, xếp hạng Black Pearl và các món địa phương yêu thích kèm đánh giá chi tiết",
+      restaurantGuideDesc:
+        "Sao Michelin, xếp hạng Black Pearl và các món địa phương yêu thích kèm đánh giá chi tiết",
       attractions: "Điểm tham quan",
       attractionsDesc: "Điểm tham quan hàng đầu với giờ mở cửa, vé và mẹo địa phương",
       transport: "Phương tiện",
@@ -1169,9 +1172,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "Chuyển sang",
       current: "Hiện tại",
       english: "Tiếng Anh",
-      chinese: "Tiếng Trung"
-    }
+      chinese: "Tiếng Trung",
     },
+  },
 
   ru: {
     nav: {
@@ -1199,7 +1202,7 @@ export const translations: Record<Language, Translations> = {
       next: "Далее",
       previous: "Предыдущий",
       close: "Закрыть",
-      open: "Открыть"
+      open: "Открыть",
     },
     home: {
       heroTitle: "Исследуйте Китай с AI",
@@ -1212,7 +1215,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "AI Помощник",
       featuresTitle: "Все, что вам нужно для поездки в Китай",
       ctaTitle: "Готовы исследовать Китай?",
-      ctaSubtitle: "Начните планировать поездку с рекомендациями на основе AI."
+      ctaSubtitle: "Начните планировать поездку с рекомендациями на основе AI.",
     },
     cities: {
       title: "Исследуйте наши города",
@@ -1227,7 +1230,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "Экстренная связь",
       recommendedTime: "Рекомендуемое время",
       ticketPrice: "Билет",
-      openingHours: "Часы работы"
+      openingHours: "Часы работы",
     },
     restaurants: {
       title: "Гид по ресторанам",
@@ -1241,7 +1244,7 @@ export const translations: Record<Language, Translations> = {
       address: "Адрес",
       hours: "Часы работы",
       dishes: "Фирменные блюда",
-      tags: "Теги"
+      tags: "Теги",
     },
     empty: {
       noResults: "Результатов не найдено",
@@ -1250,14 +1253,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "Нет результатов поиска",
       tryAdjusting: "Попробуйте изменить фильтры или условия поиска",
       noFavorites: "Пока нет избранного",
-      addSome: "Начните исследовать и сохраняйте избранное!"
+      addSome: "Начните исследовать и сохраняйте избранное!",
     },
     errors: {
       loadFailed: "Не удалось загрузить контент",
       networkError: "Ошибка сети. Проверьте подключение.",
       somethingWrong: "Что-то пошло не так",
       goBack: "Вернуться",
-      goHome: "На главную"
+      goHome: "На главную",
     },
     onboarding: {
       welcome: "Добро пожаловать в ChinaConnect!",
@@ -1271,25 +1274,26 @@ export const translations: Record<Language, Translations> = {
       getStarted: "Начать",
       skip: "Пропустить",
       next: "Далее",
-      done: "Готово"
+      done: "Готово",
     },
     tooltips: {
       searchTip: "Искать города, рестораны или темы",
       filterTip: "Фильтровать по кухне, рейтингу или цене",
       mapTip: "Показать на карте",
       favoritesTip: "Добавить в избранное",
-      shareTip: "Поделиться с друзьями"
+      shareTip: "Поделиться с друзьями",
     },
     recents: {
       recentlyViewed: "Недавно просмотренные",
       recommended: "Рекомендуем",
       clearHistory: "Очистить историю",
-      forYou: "Потому что вы посетили {city}"
+      forYou: "Потому что вы посетили {city}",
     },
     // Features section
     features: {
       restaurantGuide: "Гид по ресторанам",
-      restaurantGuideDesc: "Звезды Мишлен, рейтинг Black Pearl и местные фавориты с подробными обзорами",
+      restaurantGuideDesc:
+        "Звезды Мишлен, рейтинг Black Pearl и местные фавориты с подробными обзорами",
       attractions: "Достопримечательности",
       attractionsDesc: "Лучшие достопримечательности с часами работы, билетами и местными советами",
       transport: "Транспорт",
@@ -1303,15 +1307,16 @@ export const translations: Record<Language, Translations> = {
       culturalTips: "Культурные советы",
       culturalTipsDesc: "Местные обычаи, этикет и культурные особенности каждого города",
       aiAssistant: "ИИ-ассистент",
-      aiAssistantDesc: "Задавайте вопросы о путешествиях по Китаю на английском, получайте мгновенные ответы",
+      aiAssistantDesc:
+        "Задавайте вопросы о путешествиях по Китаю на английском, получайте мгновенные ответы",
     },
     language: {
       switchTo: "Переключить на",
       current: "Текущий",
       english: "Английский",
-      chinese: "Китайский"
-    }
+      chinese: "Китайский",
     },
+  },
 
   fr: {
     nav: {
@@ -1339,7 +1344,7 @@ export const translations: Record<Language, Translations> = {
       next: "Suivant",
       previous: "Précédent",
       close: "Fermer",
-      open: "Ouvrir"
+      open: "Ouvrir",
     },
     home: {
       heroTitle: "Explorez la Chine avec l'IA",
@@ -1353,7 +1358,7 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "Tout ce dont vous avez besoin pour votre voyage en Chine",
       ctaTitle: "Prêt à explorer la Chine?",
       ctaSubtitle:
-        "Commencez à planifier votre voyage avec des recommandations alimentées par l'IA."
+        "Commencez à planifier votre voyage avec des recommandations alimentées par l'IA.",
     },
     cities: {
       title: "Explorez nos villes",
@@ -1368,7 +1373,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "Urgence",
       recommendedTime: "Temps recommandé",
       ticketPrice: "Billet",
-      openingHours: "Horaires"
+      openingHours: "Horaires",
     },
     restaurants: {
       title: "Guide des restaurants",
@@ -1382,7 +1387,7 @@ export const translations: Record<Language, Translations> = {
       address: "Adresse",
       hours: "Horaires",
       dishes: "Plats signatures",
-      tags: "Tags"
+      tags: "Tags",
     },
     empty: {
       noResults: "Aucun résultat trouvé",
@@ -1391,14 +1396,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "Aucun résultat de recherche",
       tryAdjusting: "Essayez d'ajuster vos filtres ou termes de recherche",
       noFavorites: "Pas encore de favoris",
-      addSome: "Commencez à explorer et ajoutez vos favoris!"
+      addSome: "Commencez à explorer et ajoutez vos favoris!",
     },
     errors: {
       loadFailed: "Échec du chargement du contenu",
       networkError: "Erreur réseau. Veuillez vérifier votre connexion.",
       somethingWrong: "Une erreur s'est produite",
       goBack: "Retour",
-      goHome: "Aller à l'accueil"
+      goHome: "Aller à l'accueil",
     },
     onboarding: {
       welcome: "Bienvenue sur ChinaConnect!",
@@ -1414,25 +1419,26 @@ export const translations: Record<Language, Translations> = {
       getStarted: "Commencer",
       skip: "Passer",
       next: "Suivant",
-      done: "Terminé"
+      done: "Terminé",
     },
     tooltips: {
       searchTip: "Rechercher villes, restaurants ou sujets",
       filterTip: "Filtrer par cuisine, note ou prix",
       mapTip: "Voir sur la carte",
       favoritesTip: "Ajouter aux favoris",
-      shareTip: "Partager avec des amis"
+      shareTip: "Partager avec des amis",
     },
     recents: {
       recentlyViewed: "Vus récemment",
       recommended: "Recommandé pour vous",
       clearHistory: "Effacer l'historique",
-      forYou: "Parce que vous avez visité {city}"
+      forYou: "Parce que vous avez visité {city}",
     },
     // Features section
     features: {
       restaurantGuide: "Guide des restaurants",
-      restaurantGuideDesc: "Étoiles Michelin, classement Black Pearl et favoris locaux avec avis détaillés",
+      restaurantGuideDesc:
+        "Étoiles Michelin, classement Black Pearl et favoris locaux avec avis détaillés",
       attractions: "Attractions",
       attractionsDesc: "Attractions les mieux notées avec horaires, billets et conseils locaux",
       transport: "Transport",
@@ -1446,15 +1452,16 @@ export const translations: Record<Language, Translations> = {
       culturalTips: "Conseils culturels",
       culturalTipsDesc: "Coutumes locales, étiquette et perspectives culturelles pour chaque ville",
       aiAssistant: "Assistant IA",
-      aiAssistantDesc: "Posez des questions en anglais sur les voyages en Chine, obtenez des réponses instantanées",
+      aiAssistantDesc:
+        "Posez des questions en anglais sur les voyages en Chine, obtenez des réponses instantanées",
     },
     language: {
       switchTo: "Passer à",
       current: "Actuel",
       english: "Anglais",
-      chinese: "Chinois"
-    }
+      chinese: "Chinois",
     },
+  },
 
   de: {
     nav: {
@@ -1482,7 +1489,7 @@ export const translations: Record<Language, Translations> = {
       next: "Weiter",
       previous: "Vorherige",
       close: "Schließen",
-      open: "Öffnen"
+      open: "Öffnen",
     },
     home: {
       heroTitle: "China mit KI erkunden",
@@ -1495,7 +1502,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "KI Unterstützung",
       featuresTitle: "Alles was Sie für Ihre China Reise brauchen",
       ctaTitle: "Bereit China zu erkunden?",
-      ctaSubtitle: "Beginnen Sie mit KI-gestützten Empfehlungen Ihre Reise zu planen."
+      ctaSubtitle: "Beginnen Sie mit KI-gestützten Empfehlungen Ihre Reise zu planen.",
     },
     cities: {
       title: "Unsere Städte erkunden",
@@ -1510,7 +1517,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "Notfall",
       recommendedTime: "Empfohlene Zeit",
       ticketPrice: "Ticket",
-      openingHours: "Öffnungszeiten"
+      openingHours: "Öffnungszeiten",
     },
     restaurants: {
       title: "Restaurant Guide",
@@ -1524,7 +1531,7 @@ export const translations: Record<Language, Translations> = {
       address: "Adresse",
       hours: "Öffnungszeiten",
       dishes: "Signature Gerichte",
-      tags: "Tags"
+      tags: "Tags",
     },
     empty: {
       noResults: "Keine Ergebnisse gefunden",
@@ -1533,14 +1540,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "Keine Suchergebnisse",
       tryAdjusting: "Versuchen Sie Ihre Filter oder Suchbegriffe anzupassen",
       noFavorites: "Noch keine Favoriten",
-      addSome: "Beginnen Sie zu erkunden und speichern Sie Ihre Favoriten!"
+      addSome: "Beginnen Sie zu erkunden und speichern Sie Ihre Favoriten!",
     },
     errors: {
       loadFailed: "Inhalt konnte nicht geladen werden",
       networkError: "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
       somethingWrong: "Etwas ist schief gelaufen",
       goBack: "Zurück",
-      goHome: "Zur Startseite"
+      goHome: "Zur Startseite",
     },
     onboarding: {
       welcome: "Willkommen bei ChinaConnect!",
@@ -1555,25 +1562,26 @@ export const translations: Record<Language, Translations> = {
       getStarted: "Loslegen",
       skip: "Überspringen",
       next: "Weiter",
-      done: "Fertig"
+      done: "Fertig",
     },
     tooltips: {
       searchTip: "Städte, Restaurants oder Themen suchen",
       filterTip: "Nach Küche, Bewertung oder Preis filtern",
       mapTip: "Auf Karte anzeigen",
       favoritesTip: "Zu Favoriten hinzufügen",
-      shareTip: "Mit Freunden teilen"
+      shareTip: "Mit Freunden teilen",
     },
     recents: {
       recentlyViewed: "Kürzlich angesehen",
       recommended: "Für Sie empfohlen",
       clearHistory: "Verlauf löschen",
-      forYou: "Weil Sie {city} besucht haben"
+      forYou: "Weil Sie {city} besucht haben",
     },
     // Features section
     features: {
       restaurantGuide: "Restaurantführer",
-      restaurantGuideDesc: "Michelin-Sterne, Black-Pearl-Bewertung und lokale Favoriten mit ausführlichen Bewertungen",
+      restaurantGuideDesc:
+        "Michelin-Sterne, Black-Pearl-Bewertung und lokale Favoriten mit ausführlichen Bewertungen",
       attractions: "Sehenswürdigkeiten",
       attractionsDesc: "Top-bewertete Attraktionen mit Öffnungszeiten, Tickets und lokalen Tipps",
       transport: "Transport",
@@ -1587,15 +1595,16 @@ export const translations: Record<Language, Translations> = {
       culturalTips: "Kulturelle Tipps",
       culturalTipsDesc: "Lokale Bräuche, Etikette und kulturelle Einblicke für jede Stadt",
       aiAssistant: "KI-Assistent",
-      aiAssistantDesc: "Stellen Sie Fragen auf Englisch zu China-Reisen und erhalten Sie sofort Antworten",
+      aiAssistantDesc:
+        "Stellen Sie Fragen auf Englisch zu China-Reisen und erhalten Sie sofort Antworten",
     },
     language: {
       switchTo: "Wechseln zu",
       current: "Aktuell",
       english: "Englisch",
-      chinese: "Chinesisch"
-    }
+      chinese: "Chinesisch",
     },
+  },
 
   ar: {
     nav: {
@@ -1623,7 +1632,7 @@ export const translations: Record<Language, Translations> = {
       next: "التالي",
       previous: "السابق",
       close: "إغلاق",
-      open: "فتح"
+      open: "فتح",
     },
     home: {
       heroTitle: "استكشف الصين مع الذكاء الاصطناعي",
@@ -1636,7 +1645,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "مساعدة الذكاء الاصطناعي",
       featuresTitle: "كل ما تحتاجه لرحلتك إلى الصين",
       ctaTitle: "هل أنت مستعد لاستكشاف الصين؟",
-      ctaSubtitle: "ابدأ التخطيط لرحلتك مع توصيات مدعومة بالذكاء الاصطناعي."
+      ctaSubtitle: "ابدأ التخطيط لرحلتك مع توصيات مدعومة بالذكاء الاصطناعي.",
     },
     cities: {
       title: "استكشف مدننا",
@@ -1651,7 +1660,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "الطوارئ",
       recommendedTime: "الوقت الموصى به",
       ticketPrice: "التذكرة",
-      openingHours: "ساعات العمل"
+      openingHours: "ساعات العمل",
     },
     restaurants: {
       title: "دليل المطاعم",
@@ -1665,7 +1674,7 @@ export const translations: Record<Language, Translations> = {
       address: "العنوان",
       hours: "ساعات العمل",
       dishes: "الأطباق المميزة",
-      tags: "الوسوم"
+      tags: "الوسوم",
     },
     empty: {
       noResults: "لم يتم العثور على نتائج",
@@ -1674,14 +1683,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "لا توجد نتائج بحث",
       tryAdjusting: "حاول تعديل عوامل التصفية أو مصطلحات البحث",
       noFavorites: "لا توجد مفضلات بعد",
-      addSome: "ابدأ الاستكشاف واحفظ مفضلاتك!"
+      addSome: "ابدأ الاستكشاف واحفظ مفضلاتك!",
     },
     errors: {
       loadFailed: "فشل تحميل المحتوى",
       networkError: "خطأ في الشبكة. يرجى التحقق من اتصالك.",
       somethingWrong: "حدث خطأ ما",
       goBack: "رجوع",
-      goHome: "الذهاب للرئيسية"
+      goHome: "الذهاب للرئيسية",
     },
     onboarding: {
       welcome: "مرحباً بك في ChinaConnect!",
@@ -1694,20 +1703,20 @@ export const translations: Record<Language, Translations> = {
       getStarted: "ابدأ",
       skip: "تخطي",
       next: "التالي",
-      done: "تم"
+      done: "تم",
     },
     tooltips: {
       searchTip: "ابحث عن مدن أو مطاعم أو مواضيع",
       filterTip: "تصفية حسب المطبخ أو التقييم أو السعر",
       mapTip: "عرض على الخريطة",
       favoritesTip: "إضافة إلى المفضلات",
-      shareTip: "مشاركة مع الأصدقاء"
+      shareTip: "مشاركة مع الأصدقاء",
     },
     recents: {
       recentlyViewed: "شوهدت مؤخراً",
       recommended: "موصى به لك",
       clearHistory: "مسح السجل",
-      forYou: "لأنك زرت {city}"
+      forYou: "لأنك زرت {city}",
     },
     // Features section
     features: {
@@ -1732,9 +1741,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "التغيير إلى",
       current: "الحالي",
       english: "الإنجليزية",
-      chinese: "الصينية"
-    }
+      chinese: "الصينية",
     },
+  },
 
   fa: {
     nav: {
@@ -1762,7 +1771,7 @@ export const translations: Record<Language, Translations> = {
       next: "بعدی",
       previous: "قبلی",
       close: "بستن",
-      open: "باز کردن"
+      open: "باز کردن",
     },
     home: {
       heroTitle: "چین را با AI کاوش کنید",
@@ -1775,7 +1784,7 @@ export const translations: Record<Language, Translations> = {
       statsAI: "کمک AI",
       featuresTitle: "همه چیز مورد نیاز شما برای سفر به چین",
       ctaTitle: "آماده کاوش چین هستید؟",
-      ctaSubtitle: "سفر خود را با توصیه‌های مبتنی بر AI برنامه‌ریزی کنید."
+      ctaSubtitle: "سفر خود را با توصیه‌های مبتنی بر AI برنامه‌ریزی کنید.",
     },
     cities: {
       title: "شهرهای ما را کاوش کنید",
@@ -1790,7 +1799,7 @@ export const translations: Record<Language, Translations> = {
       emergency: "اضطراری",
       recommendedTime: "زمان پیشنهادی",
       ticketPrice: "بلیت",
-      openingHours: "ساعات کاری"
+      openingHours: "ساعات کاری",
     },
     restaurants: {
       title: "راهنمای رستوران",
@@ -1804,7 +1813,7 @@ export const translations: Record<Language, Translations> = {
       address: "آدرس",
       hours: "ساعات کاری",
       dishes: "غذاهایsignature",
-      tags: "برچسب‌ها"
+      tags: "برچسب‌ها",
     },
     empty: {
       noResults: "نتیجه‌ای یافت نشد",
@@ -1813,14 +1822,14 @@ export const translations: Record<Language, Translations> = {
       noSearchResults: "نتیجه جستجویی وجود ندارد",
       tryAdjusting: "فیلترها یا کلمات جستجو را تنظیم کنید",
       noFavorites: "هنوز علاقه‌مندی ندارید",
-      addSome: "کاوش را شروع کنید و علاقه‌مندی‌های خود را ذخیره کنید!"
+      addSome: "کاوش را شروع کنید و علاقه‌مندی‌های خود را ذخیره کنید!",
     },
     errors: {
       loadFailed: "بارگذاری محتوا ناموفق بود",
       networkError: "خطای شبکه. لطفاً اتصال خود را بررسی کنید.",
       somethingWrong: "مشکلی پیش آمد",
       goBack: "بازگشت",
-      goHome: "رفتن به صفحه اصلی"
+      goHome: "رفتن به صفحه اصلی",
     },
     onboarding: {
       welcome: "به ChinaConnect خوش آمدید!",
@@ -1833,25 +1842,26 @@ export const translations: Record<Language, Translations> = {
       getStarted: "شروع کنید",
       skip: "رد کردن",
       next: "بعدی",
-      done: "انجام شد"
+      done: "انجام شد",
     },
     tooltips: {
       searchTip: "جستجوی شهرها، رستوران‌ها یا موضوعات",
       filterTip: "فیلتر بر اساس غذا، امتیاز یا قیمت",
       mapTip: "مشاهده روی نقشه",
       favoritesTip: "افزودن به علاقه‌مندی‌ها",
-      shareTip: "اشتراک‌گذاری با دوستان"
+      shareTip: "اشتراک‌گذاری با دوستان",
     },
     recents: {
       recentlyViewed: "اخیراً مشاهده شده",
       recommended: "پیشنهاد شده برای شما",
       clearHistory: "پاک کردن تاریخچه",
-      forYou: "چون شما {city} را بازدید کرده‌اید"
+      forYou: "چون شما {city} را بازدید کرده‌اید",
     },
     // Features section
     features: {
       restaurantGuide: "راهنمای رستوران",
-      restaurantGuideDesc: "ستارهای میشلن، رتبه‌بندی بلک پرل و موارد دلخواه محلی با نقد و بررسی دقیق",
+      restaurantGuideDesc:
+        "ستارهای میشلن، رتبه‌بندی بلک پرل و موارد دلخواه محلی با نقد و بررسی دقیق",
       attractions: "جاذبه‌ها",
       attractionsDesc: "جاذبه‌های برتر با ساعات کار، بلیط و نکات محلی",
       transport: "حمل و نقل",
@@ -1871,9 +1881,9 @@ export const translations: Record<Language, Translations> = {
       switchTo: "تغییر به",
       current: "فعلی",
       english: "انگلیسی",
-      chinese: "چینی"
-    }
+      chinese: "چینی",
     },
+  },
 };
 
 export function getTranslation(lang: Language): Translations {

@@ -1,6 +1,6 @@
 /**
  * Cloudflare Pages Function — AI Translation API
- * 
+ *
  * Translates text content using Cloudflare Workers AI (free tier: 10,000 neurons/day)
  * Endpoint: POST /api/translate
  * Body: { text: string, targetLang: string, sourceLang?: string }
@@ -21,18 +21,18 @@ interface TranslateRequest {
 
 // Language code mapping for the AI model
 const LANG_MAP: Record<string, string> = {
-  "en": "English",
-  "ja": "Japanese",
-  "ko": "Korean",
+  en: "English",
+  ja: "Japanese",
+  ko: "Korean",
   "zh-CN": "Chinese (Simplified)",
   "zh-TW": "Chinese (Traditional)",
-  "th": "Thai",
-  "vi": "Vietnamese",
-  "ru": "Russian",
-  "fr": "French",
-  "de": "German",
-  "ar": "Arabic",
-  "fa": "Persian",
+  th: "Thai",
+  vi: "Vietnamese",
+  ru: "Russian",
+  fr: "French",
+  de: "German",
+  ar: "Arabic",
+  fa: "Persian",
 };
 
 // In-memory cache (per worker instance, resets on cold start)
@@ -61,17 +61,17 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
     // Validate
     if (!text || !targetLang) {
-      return new Response(
-        JSON.stringify({ error: "Missing text or targetLang" }),
-        { status: 400, headers: corsHeaders }
-      );
+      return new Response(JSON.stringify({ error: "Missing text or targetLang" }), {
+        status: 400,
+        headers: corsHeaders,
+      });
     }
 
     // Skip if source === target
     if (sourceLang === targetLang) {
       return new Response(
         JSON.stringify({ translated: text, source: sourceLang, target: targetLang, cached: false }),
-        { headers: corsHeaders }
+        { headers: corsHeaders },
       );
     }
 
@@ -79,7 +79,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     if (targetLang === "en") {
       return new Response(
         JSON.stringify({ translated: text, source: sourceLang, target: targetLang, cached: false }),
-        { headers: corsHeaders }
+        { headers: corsHeaders },
       );
     }
 
@@ -93,7 +93,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
           target: targetLang,
           cached: true,
         }),
-        { headers: corsHeaders }
+        { headers: corsHeaders },
       );
     }
 
@@ -104,7 +104,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     // Use Cloudflare Workers AI for translation
     // @ts-ignore - AI binding is available on CF Pages
     const ai = (context.env as any).AI;
-    
+
     if (ai) {
       // Use CF Workers AI (free tier)
       const response = await ai.run("@cf/meta/m2m100-1.2b", {
@@ -114,7 +114,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       });
 
       const translated = response.translated_text || text;
-      
+
       // Cache the result
       translationCache.set(cacheKey, translated);
 
@@ -125,7 +125,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
           target: targetLang,
           cached: false,
         }),
-        { headers: corsHeaders }
+        { headers: corsHeaders },
       );
     }
 
@@ -137,19 +137,19 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${minimaxKey}`,
+          Authorization: `Bearer ${minimaxKey}`,
         },
         body: JSON.stringify({
           model: "MiniMax-M2.7-highspeed",
           messages: [
             {
               role: "system",
-              content: `You are a professional translator. Translate the following text from ${sourceName} to ${targetName}. Return ONLY the translated text, no explanations, no notes, no thinking process. Just the translation.`
+              content: `You are a professional translator. Translate the following text from ${sourceName} to ${targetName}. Return ONLY the translated text, no explanations, no notes, no thinking process. Just the translation.`,
             },
             {
               role: "user",
-              content: text
-            }
+              content: text,
+            },
           ],
           max_tokens: 2000,
           temperature: 0.1,
@@ -157,14 +157,14 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         }),
       });
 
-      const minimaxData = await minimaxResponse.json() as any;
+      const minimaxData = (await minimaxResponse.json()) as any;
       // Use content (not reasoning_content) for the translation
       let translated = minimaxData?.choices?.[0]?.message?.content || text;
-      
+
       // Strip any <think>...</think> blocks that might leak through
-      translated = translated.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+      translated = translated.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
       // Strip any leading/trailing quotes
-      translated = translated.replace(/^["']|["']$/g, '').trim();
+      translated = translated.replace(/^["']|["']$/g, "").trim();
 
       // Cache
       translationCache.set(cacheKey, translated);
@@ -176,19 +176,19 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
           target: targetLang,
           cached: false,
         }),
-        { headers: corsHeaders }
+        { headers: corsHeaders },
       );
     }
 
-    return new Response(
-      JSON.stringify({ error: "No translation service available" }),
-      { status: 500, headers: corsHeaders }
-    );
+    return new Response(JSON.stringify({ error: "No translation service available" }), {
+      status: 500,
+      headers: corsHeaders,
+    });
   } catch (err: any) {
-    return new Response(
-      JSON.stringify({ error: err.message || "Translation failed" }),
-      { status: 500, headers: corsHeaders }
-    );
+    return new Response(JSON.stringify({ error: err.message || "Translation failed" }), {
+      status: 500,
+      headers: corsHeaders,
+    });
   }
 };
 

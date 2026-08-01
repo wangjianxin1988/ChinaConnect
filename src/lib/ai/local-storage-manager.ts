@@ -4,7 +4,7 @@
  * Used as primary store; Supabase is the backup/sync target.
  */
 
-import type { Message, ParsedItinerary } from './types';
+import type { Message, ParsedItinerary } from "./types";
 
 // ============================================
 // Types
@@ -31,13 +31,13 @@ export interface ConversationSnapshot {
 
 export interface SerializedMessage {
   id: string;
-  role: 'user' | 'assistant' | 'system';
+  role: "user" | "assistant" | "system";
   content: string;
   timestamp: string;
-  citations?: Message['citations'];
-  toolCalls?: Message['toolCalls'];
-  workflowProgress?: Message['workflowProgress'];
-  intentResult?: Message['intentResult'];
+  citations?: Message["citations"];
+  toolCalls?: Message["toolCalls"];
+  workflowProgress?: Message["workflowProgress"];
+  intentResult?: Message["intentResult"];
 }
 
 // ============================================
@@ -45,10 +45,10 @@ export interface SerializedMessage {
 // ============================================
 
 const KEYS = {
-  CONVERSATIONS: 'cc_ai_conversations',
-  SNAPSHOTS_PREFIX: 'cc_ai_snapshots_',
-  PENDING_SYNC: 'cc_ai_pending_sync',
-  LAST_CLEANUP: 'cc_ai_last_cleanup',
+  CONVERSATIONS: "cc_ai_conversations",
+  SNAPSHOTS_PREFIX: "cc_ai_snapshots_",
+  PENDING_SYNC: "cc_ai_pending_sync",
+  LAST_CLEANUP: "cc_ai_last_cleanup",
 } as const;
 
 const MAX_CONVERSATIONS = 50;
@@ -60,7 +60,7 @@ const MAX_SNAPSHOTS = 10;
 // ============================================
 
 function isBrowser(): boolean {
-  return typeof window !== 'undefined' && typeof localStorage !== 'undefined';
+  return typeof window !== "undefined" && typeof localStorage !== "undefined";
 }
 
 function safeGetItem(key: string): string | null {
@@ -78,11 +78,11 @@ function safeSetItem(key: string, value: string): boolean {
     localStorage.setItem(key, value);
     return true;
   } catch (e) {
-    if (e instanceof DOMException && e.name === 'QuotaExceededError') {
-      console.warn('[LocalStorageManager] Quota exceeded, attempting cleanup...');
+    if (e instanceof DOMException && e.name === "QuotaExceededError") {
+      console.warn("[LocalStorageManager] Quota exceeded, attempting cleanup...");
       return handleQuotaExceeded(key, value);
     }
-    console.error('[LocalStorageManager] Failed to write:', e);
+    console.error("[LocalStorageManager] Failed to write:", e);
     return false;
   }
 }
@@ -102,9 +102,7 @@ function safeRemoveItem(key: string): void {
 function handleQuotaExceeded(key: string, value: string): boolean {
   try {
     const allKeys = Object.keys(localStorage);
-    const snapshotKeys = allKeys
-      .filter((k) => k.startsWith(KEYS.SNAPSHOTS_PREFIX))
-      .sort();
+    const snapshotKeys = allKeys.filter((k) => k.startsWith(KEYS.SNAPSHOTS_PREFIX)).sort();
 
     const toRemove = snapshotKeys.slice(0, Math.ceil(snapshotKeys.length / 2));
     for (const k of toRemove) {
@@ -116,7 +114,7 @@ function handleQuotaExceeded(key: string, value: string): boolean {
       return true;
     } catch {
       const remaining = Object.keys(localStorage).filter((k) =>
-        k.startsWith(KEYS.SNAPSHOTS_PREFIX)
+        k.startsWith(KEYS.SNAPSHOTS_PREFIX),
       );
       for (const k of remaining) {
         localStorage.removeItem(k);
@@ -126,7 +124,7 @@ function handleQuotaExceeded(key: string, value: string): boolean {
         localStorage.setItem(key, value);
         return true;
       } catch {
-        console.error('[LocalStorageManager] Cannot free enough space');
+        console.error("[LocalStorageManager] Cannot free enough space");
         return false;
       }
     }
@@ -143,10 +141,7 @@ function serializeMessage(msg: Message): SerializedMessage {
     id: msg.id,
     role: msg.role,
     content: msg.content,
-    timestamp:
-      msg.timestamp instanceof Date
-        ? msg.timestamp.toISOString()
-        : String(msg.timestamp),
+    timestamp: msg.timestamp instanceof Date ? msg.timestamp.toISOString() : String(msg.timestamp),
     citations: msg.citations,
     toolCalls: msg.toolCalls,
     workflowProgress: msg.workflowProgress,
@@ -231,7 +226,7 @@ class LocalStorageManager {
     conversationId: string,
     messages: Message[],
     itinerary?: ParsedItinerary,
-    syncedToSupabase = false
+    syncedToSupabase = false,
   ): boolean {
     const snapshot: ConversationSnapshot = {
       conversationId,
@@ -369,7 +364,7 @@ class LocalStorageManager {
 
     const removed = this.clearOldSnapshots(MAX_SNAPSHOTS);
     if (removed > 0) {
-      console.log('[LocalStorageManager] Cleaned up ' + removed + ' old snapshots');
+      console.log("[LocalStorageManager] Cleaned up " + removed + " old snapshots");
     }
 
     safeSetItem(KEYS.LAST_CLEANUP, String(now));
@@ -384,7 +379,7 @@ class LocalStorageManager {
 
     const allKeys = Object.keys(localStorage);
     for (const key of allKeys) {
-      if (key.startsWith('cc_ai_')) {
+      if (key.startsWith("cc_ai_")) {
         const value = localStorage.getItem(key);
         const size = value ? key.length + value.length : 0;
         breakdown[key] = size;
@@ -398,7 +393,7 @@ class LocalStorageManager {
   /** Clear all AI-related localStorage data. */
   clearAll(): void {
     if (!isBrowser()) return;
-    const keysToRemove = Object.keys(localStorage).filter((k) => k.startsWith('cc_ai_'));
+    const keysToRemove = Object.keys(localStorage).filter((k) => k.startsWith("cc_ai_"));
     for (const key of keysToRemove) {
       localStorage.removeItem(key);
     }

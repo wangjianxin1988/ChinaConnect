@@ -221,4 +221,3 @@ export function generateFullSitemap(): string {
   const sections = buildSitemapSections();
   return generateSitemapXml(sections);
 }
-

@@ -16,11 +16,16 @@ const server = http.createServer(async (req, res) => {
       content = await fs.readFile(file);
     }
     const ext = path.extname(file);
-    const ct = ext === ".html" ? "text/html; charset=utf-8"
-      : ext === ".js" ? "application/javascript"
-      : ext === ".css" ? "text/css"
-      : ext === ".json" ? "application/json"
-      : "application/octet-stream";
+    const ct =
+      ext === ".html"
+        ? "text/html; charset=utf-8"
+        : ext === ".js"
+          ? "application/javascript"
+          : ext === ".css"
+            ? "text/css"
+            : ext === ".json"
+              ? "application/json"
+              : "application/octet-stream";
     res.writeHead(200, { "Content-Type": ct });
     res.end(content);
   } catch (e) {

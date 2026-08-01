@@ -21,7 +21,12 @@ import {
   cleanModelResponse,
 } from "@/services/minimax";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { canMakeRequest, checkUsageLimit, incrementUsage, getRemainingRequests as getRemainingAIRequests } from "@/lib/usage-tracker";
+import {
+  canMakeRequest,
+  checkUsageLimit,
+  incrementUsage,
+  getRemainingRequests as getRemainingAIRequests,
+} from "@/lib/usage-tracker";
 
 // ============================================
 // Hook Types
@@ -182,7 +187,7 @@ ${CITY_CONTEXT}
 
 Current user context:
 - Language: ${language}
-${budgetLevel !== 'medium' ? `- Budget level: ${budgetLevel}` : '- Budget level: NOT YET ASKED — you MUST ask the user'}
+${budgetLevel !== "medium" ? `- Budget level: ${budgetLevel}` : "- Budget level: NOT YET ASKED — you MUST ask the user"}
 - Travel style preferences: NOT YET ASKED — you MUST ask the user
 
 Remember:
@@ -241,9 +246,10 @@ Remember:
         setUsageExceeded(true);
         addMessage({
           role: "assistant",
-          content: language === "zh"
-            ? "⚠️ 您本月的AI请求次数已用完。请升级您的套餐以继续使用AI助手。\n\n[查看定价方案](/pricing)"
-            : "⚠️ You've reached your monthly limit. Upgrade to continue.\n\n[View Pricing](/pricing)",
+          content:
+            language === "zh"
+              ? "⚠️ 您本月的AI请求次数已用完。请升级您的套餐以继续使用AI助手。\n\n[查看定价方案](/pricing)"
+              : "⚠️ You've reached your monthly limit. Upgrade to continue.\n\n[View Pricing](/pricing)",
           isStreaming: false,
         });
         return;
@@ -293,7 +299,7 @@ Remember:
         );
 
         // Use the cleaned response from MiniMax
-        responseText = miniMaxResponse || '';
+        responseText = miniMaxResponse || "";
 
         // Double-clean any residual think/tool_call tags
         responseText = cleanModelResponse(responseText);
@@ -310,7 +316,7 @@ Remember:
             // Try to break at word/sentence boundaries for natural feel
             let end = Math.min(pos + baseChunkSize + 5, totalLen);
             if (end < totalLen) {
-              const breakChars = [' ', String.fromCharCode(10), '，', '。', ',', '.', '!', '?'];
+              const breakChars = [" ", String.fromCharCode(10), "，", "。", ",", ".", "!", "?"];
               for (let b = end; b > pos + baseChunkSize - 5 && b < totalLen; b--) {
                 if (breakChars.includes(responseText[b])) {
                   end = b + 1;
@@ -341,7 +347,10 @@ Remember:
         );
 
         // Add assistant response to MiniMax conversation history
-        conversationMessagesRef.current.push({ role: "assistant", content: cleanModelResponse(responseText) });
+        conversationMessagesRef.current.push({
+          role: "assistant",
+          content: cleanModelResponse(responseText),
+        });
 
         // Increment usage count after successful AI response
         incrementUsage();

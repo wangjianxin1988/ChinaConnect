@@ -10,7 +10,15 @@ import { extractRouteFromConversation, saveRoute } from "@/lib/ai/route-saver";
 import { getCurrentUser } from "@/lib/auth/supabase-auth";
 import { getCurrentTier, TIER_LIMITS, type SubscriptionTier } from "@/lib/subscription";
 import { UpgradePrompt } from "@/components/subscription/UpgradePrompt";
-import React, { useState, useRef, useEffect, useCallback, Component, type ReactNode, type ErrorInfo } from "react";
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  useCallback,
+  Component,
+  type ReactNode,
+  type ErrorInfo,
+} from "react";
 import { ItineraryDisplay } from "./ItineraryDisplay";
 import { QuickPrompts } from "./QuickPrompts";
 import ItineraryMap from "@/components/Map/ItineraryMap";
@@ -40,7 +48,10 @@ interface ErrorBoundaryState {
   error: Error | null;
 }
 
-class ChatErrorBoundary extends Component<{ children: ReactNode; language?: string }, ErrorBoundaryState> {
+class ChatErrorBoundary extends Component<
+  { children: ReactNode; language?: string },
+  ErrorBoundaryState
+> {
   constructor(props: { children: ReactNode; language?: string }) {
     super(props);
     this.state = { hasError: false, error: null };
@@ -64,7 +75,8 @@ class ChatErrorBoundary extends Component<{ children: ReactNode; language?: stri
             {isZh ? "出了点问题" : "Something went wrong"}
           </h3>
           <p className="text-sm text-gray-500 mb-4 max-w-md">
-            {this.state.error?.message || (isZh ? "发生了一个意外错误" : "An unexpected error occurred")}
+            {this.state.error?.message ||
+              (isZh ? "发生了一个意外错误" : "An unexpected error occurred")}
           </p>
           <button
             onClick={() => {
@@ -87,7 +99,12 @@ class ChatErrorBoundary extends Component<{ children: ReactNode; language?: stri
 // ============================================
 
 const escapeHtml = (text: string): string =>
-  text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 
 /** Render inline markdown as React elements (no dangerouslySetInnerHTML) */
 const renderInline = (text: string): React.ReactNode[] => {
@@ -108,7 +125,10 @@ const renderInline = (text: string): React.ReactNode[] => {
 
     if (token.startsWith("`") && token.endsWith("`")) {
       elements.push(
-        <code key={key++} className="bg-gray-100 px-1.5 py-0.5 rounded text-sm text-red-600 font-mono">
+        <code
+          key={key++}
+          className="bg-gray-100 px-1.5 py-0.5 rounded text-sm text-red-600 font-mono"
+        >
           {token.slice(1, -1)}
         </code>,
       );
@@ -120,7 +140,13 @@ const renderInline = (text: string): React.ReactNode[] => {
       const linkMatch = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
       if (linkMatch) {
         elements.push(
-          <a key={key++} href={linkMatch[2]} className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+          <a
+            key={key++}
+            href={linkMatch[2]}
+            className="text-blue-600 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {linkMatch[1]}
           </a>,
         );
@@ -164,7 +190,10 @@ const SafeMarkdown: React.FC<{ content: string }> = ({ content }) => {
             <thead>
               <tr className="bg-gray-50">
                 {headerRow.map((cell, ci) => (
-                  <th key={ci} className="px-3 py-2 text-left font-semibold text-gray-700 border-b border-gray-200">
+                  <th
+                    key={ci}
+                    className="px-3 py-2 text-left font-semibold text-gray-700 border-b border-gray-200"
+                  >
                     {renderInline(cell)}
                   </th>
                 ))}
@@ -213,15 +242,30 @@ const SafeMarkdown: React.FC<{ content: string }> = ({ content }) => {
     }
 
     if (line.startsWith("# ")) {
-      elements.push(<h1 key={`h1-${key++}`} className="text-xl font-bold mb-2 text-gray-900">{renderInline(line.slice(2))}</h1>);
+      elements.push(
+        <h1 key={`h1-${key++}`} className="text-xl font-bold mb-2 text-gray-900">
+          {renderInline(line.slice(2))}
+        </h1>,
+      );
       return;
     }
     if (line.startsWith("## ")) {
-      elements.push(<h2 key={`h2-${key++}`} className="text-lg font-semibold mt-4 mb-2 text-gray-800 border-b border-gray-100 pb-1">{renderInline(line.slice(3))}</h2>);
+      elements.push(
+        <h2
+          key={`h2-${key++}`}
+          className="text-lg font-semibold mt-4 mb-2 text-gray-800 border-b border-gray-100 pb-1"
+        >
+          {renderInline(line.slice(3))}
+        </h2>,
+      );
       return;
     }
     if (line.startsWith("### ")) {
-      elements.push(<h3 key={`h3-${key++}`} className="text-base font-semibold mt-3 mb-1 text-gray-700">{renderInline(line.slice(4))}</h3>);
+      elements.push(
+        <h3 key={`h3-${key++}`} className="text-base font-semibold mt-3 mb-1 text-gray-700">
+          {renderInline(line.slice(4))}
+        </h3>,
+      );
       return;
     }
     if (/^[-*_]{3,}$/.test(line.trim())) {
@@ -229,14 +273,26 @@ const SafeMarkdown: React.FC<{ content: string }> = ({ content }) => {
       return;
     }
     if (line.startsWith("- ") || line.startsWith("* ")) {
-      elements.push(<li key={`li-${key++}`} className="ml-5 text-gray-600 list-disc leading-relaxed">{renderInline(line.slice(2))}</li>);
+      elements.push(
+        <li key={`li-${key++}`} className="ml-5 text-gray-600 list-disc leading-relaxed">
+          {renderInline(line.slice(2))}
+        </li>,
+      );
       return;
     }
     if (/^\d+\./.test(line)) {
-      elements.push(<li key={`oli-${key++}`} className="ml-5 text-gray-600 list-decimal leading-relaxed">{renderInline(line.replace(/^\d+\.\s*/, ""))}</li>);
+      elements.push(
+        <li key={`oli-${key++}`} className="ml-5 text-gray-600 list-decimal leading-relaxed">
+          {renderInline(line.replace(/^\d+\.\s*/, ""))}
+        </li>,
+      );
       return;
     }
-    elements.push(<p key={`p-${key++}`} className="text-gray-700 leading-relaxed">{renderInline(line)}</p>);
+    elements.push(
+      <p key={`p-${key++}`} className="text-gray-700 leading-relaxed">
+        {renderInline(line)}
+      </p>,
+    );
   });
 
   if (inTable) flushTable();
@@ -282,8 +338,19 @@ const ToolCallIndicator: React.FC<{ toolCalls: ToolCall[] }> = ({ toolCalls }) =
   return (
     <div className="flex items-center gap-2 text-xs text-blue-600 bg-blue-50 rounded-lg px-3 py-1.5 mt-2">
       <svg className="w-3.5 h-3.5 animate-spin" viewBox="0 0 24 24" fill="none">
-        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        />
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+        />
       </svg>
       <span>{toolLabels[latest.name] || `Using ${latest.name}...`}</span>
     </div>
@@ -305,7 +372,9 @@ const WorkflowProgressBar: React.FC<{ progress: WorkflowProgress }> = ({ progres
   return (
     <div className="bg-blue-50 border-b border-blue-100 px-4 py-2">
       <div className="flex items-center justify-between mb-1.5">
-        <span className="text-xs font-medium text-blue-700">Step {progress.step}/8: {progress.stepName}</span>
+        <span className="text-xs font-medium text-blue-700">
+          Step {progress.step}/8: {progress.stepName}
+        </span>
         <span className="text-xs text-blue-600">{progress.progress}%</span>
       </div>
       <div className="flex gap-1">
@@ -313,7 +382,13 @@ const WorkflowProgressBar: React.FC<{ progress: WorkflowProgress }> = ({ progres
           let cls = "bg-gray-200 text-gray-500";
           if (step.num < progress.step) cls = "bg-green-500 text-white";
           else if (step.num === progress.step) cls = "bg-blue-500 text-white";
-          return <div key={step.key} className={`h-1.5 flex-1 rounded-full transition-all ${cls}`} title={step.name} />;
+          return (
+            <div
+              key={step.key}
+              className={`h-1.5 flex-1 rounded-full transition-all ${cls}`}
+              title={step.name}
+            />
+          );
         })}
       </div>
     </div>
@@ -331,7 +406,8 @@ const MessageBubble: React.FC<{
 }> = ({ message, onRetry, onCitationClick }) => {
   const isUser = message.role === "user";
   const isStreaming = message.isStreaming;
-  const isError = message.content.startsWith("⚠️") || message.content.startsWith("Sorry, I encountered");
+  const isError =
+    message.content.startsWith("⚠️") || message.content.startsWith("Sorry, I encountered");
 
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"} message-enter`}>
@@ -346,12 +422,16 @@ const MessageBubble: React.FC<{
       >
         {!isUser && (
           <div className="flex items-center gap-2 mb-2 pb-1.5 border-b border-gray-100">
-            <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-xs">🤖</div>
+            <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-xs">
+              🤖
+            </div>
             <span className="text-xs font-medium text-gray-500">ChinaGuide AI</span>
           </div>
         )}
 
-        <div className={`text-sm leading-relaxed ${isStreaming ? "streaming-text streaming-content" : ""}`}>
+        <div
+          className={`text-sm leading-relaxed ${isStreaming ? "streaming-text streaming-content" : ""}`}
+        >
           <SafeMarkdown content={message.content} />
         </div>
 
@@ -378,7 +458,12 @@ const MessageBubble: React.FC<{
             className="mt-2 flex items-center gap-1.5 text-xs text-red-600 hover:text-red-800 bg-red-100 hover:bg-red-200 px-3 py-1.5 rounded-lg transition-colors"
           >
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+              />
             </svg>
             Retry
           </button>
@@ -399,7 +484,9 @@ const MessageBubble: React.FC<{
           </div>
         )}
 
-        <div className={`text-xs mt-1.5 ${isUser ? "text-blue-200" : isError ? "text-red-300" : "text-gray-400"} text-right`}>
+        <div
+          className={`text-xs mt-1.5 ${isUser ? "text-blue-200" : isError ? "text-red-300" : "text-gray-400"} text-right`}
+        >
           {message.timestamp.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
         </div>
       </div>
@@ -420,8 +507,18 @@ const ConversationHistory: React.FC<{
     <div className="p-3 border-b border-gray-200 flex items-center justify-between">
       <h3 className="font-semibold text-gray-800">History</h3>
       <button onClick={onClose} className="p-1 hover:bg-gray-100 rounded">
-        <svg className="w-5 h-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        <svg
+          className="w-5 h-5 text-gray-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
     </div>
@@ -432,7 +529,10 @@ const ConversationHistory: React.FC<{
         conversations.map((conv) => (
           <button
             key={conv.id}
-            onClick={() => { onSelect(conv.id); onClose(); }}
+            onClick={() => {
+              onSelect(conv.id);
+              onClose();
+            }}
             className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-100 transition-colors"
           >
             <div className="font-medium text-gray-800 text-sm truncate">{conv.name}</div>
@@ -496,7 +596,7 @@ export const AIChat: React.FC<AIChatProps> = ({
     isOpen: boolean;
     featureName: string;
     requiredTier: SubscriptionTier;
-  }>({ isOpen: false, featureName: '', requiredTier: 'explorer' });
+  }>({ isOpen: false, featureName: "", requiredTier: "explorer" });
 
   const isZh = language === "zh";
   const currentTier = getCurrentTier();
@@ -505,16 +605,19 @@ export const AIChat: React.FC<AIChatProps> = ({
   const conversationIdRef = useRef(`conv_${Date.now()}`);
 
   // Check tier for feature gating
-  const checkTierForFeature = useCallback((feature: string, requiredTier: SubscriptionTier): boolean => {
-    const tierOrder: SubscriptionTier[] = ['free', 'explorer', 'traveler', 'business'];
-    const currentIdx = tierOrder.indexOf(currentTier);
-    const requiredIdx = tierOrder.indexOf(requiredTier);
-    if (currentIdx < requiredIdx) {
-      setUpgradePrompt({ isOpen: true, featureName: feature, requiredTier });
-      return false;
-    }
-    return true;
-  }, [currentTier]);
+  const checkTierForFeature = useCallback(
+    (feature: string, requiredTier: SubscriptionTier): boolean => {
+      const tierOrder: SubscriptionTier[] = ["free", "explorer", "traveler", "business"];
+      const currentIdx = tierOrder.indexOf(currentTier);
+      const requiredIdx = tierOrder.indexOf(requiredTier);
+      if (currentIdx < requiredIdx) {
+        setUpgradePrompt({ isOpen: true, featureName: feature, requiredTier });
+        return false;
+      }
+      return true;
+    },
+    [currentTier],
+  );
 
   // Refs
   const containerRef = useRef<HTMLDivElement>(null);
@@ -595,10 +698,12 @@ export const AIChat: React.FC<AIChatProps> = ({
   // Export handler - Task 2: enforce PDF export restriction (Traveler+)
   const handleExport = useCallback(
     (format: "text" | "json") => {
-      if (!checkTierForFeature('exportPDF', 'traveler')) return;
+      if (!checkTierForFeature("exportPDF", "traveler")) return;
 
       const content = exportItinerary(format);
-      const blob = new Blob([content], { type: format === "json" ? "application/json" : "text/plain" });
+      const blob = new Blob([content], {
+        type: format === "json" ? "application/json" : "text/plain",
+      });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
@@ -663,11 +768,15 @@ export const AIChat: React.FC<AIChatProps> = ({
                     key={it.id}
                     onClick={() => loadItinerary(it.id)}
                     className={`w-full text-left px-4 py-3 border-b border-gray-50 hover:bg-blue-50 transition-colors ${
-                      currentItinerary?.id === it.id ? "bg-blue-50 border-l-4 border-l-blue-500" : ""
+                      currentItinerary?.id === it.id
+                        ? "bg-blue-50 border-l-4 border-l-blue-500"
+                        : ""
                     }`}
                   >
                     <div className="font-medium text-gray-800 text-sm truncate">{it.name}</div>
-                    <div className="text-xs text-gray-500 mt-0.5">{it.destination} · {it.days} days</div>
+                    <div className="text-xs text-gray-500 mt-0.5">
+                      {it.destination} · {it.days} days
+                    </div>
                   </button>
                 ))
               )}
@@ -682,7 +791,9 @@ export const AIChat: React.FC<AIChatProps> = ({
                   onSave={saveCurrentItinerary}
                   onExport={handleExport}
                   onShare={handleShare}
-                  onDelete={currentItinerary.id ? () => deleteItinerary(currentItinerary.id) : undefined}
+                  onDelete={
+                    currentItinerary.id ? () => deleteItinerary(currentItinerary.id) : undefined
+                  }
                 />
               </div>
             )}
@@ -698,8 +809,12 @@ export const AIChat: React.FC<AIChatProps> = ({
               <div>
                 <h2 className="font-semibold text-gray-800">ChinaGuide AI</h2>
                 <div className="flex items-center gap-2 text-xs">
-                  <span className={`inline-flex items-center gap-1 ${isMiniMaxAvailable ? "text-green-600" : "text-gray-400"}`}>
-                    <span className={`w-2 h-2 rounded-full ${isMiniMaxAvailable ? "bg-green-500 animate-pulse" : "bg-gray-300"}`} />
+                  <span
+                    className={`inline-flex items-center gap-1 ${isMiniMaxAvailable ? "text-green-600" : "text-gray-400"}`}
+                  >
+                    <span
+                      className={`w-2 h-2 rounded-full ${isMiniMaxAvailable ? "bg-green-500 animate-pulse" : "bg-gray-300"}`}
+                    />
                     {isMiniMaxAvailable ? LABELS.mcpOnline : LABELS.mcpOffline}
                   </span>
                 </div>
@@ -712,51 +827,81 @@ export const AIChat: React.FC<AIChatProps> = ({
                 title={language === "zh" ? "地图" : "Map"}
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  />
                 </svg>
               </button>
               {/* Save Route Button - Task 1: Check tier (Explorer+ required) */}
               {currentItinerary && (
                 <button
                   onClick={async () => {
-                    if (!checkTierForFeature('saveItineraries', 'explorer')) return;
+                    if (!checkTierForFeature("saveItineraries", "explorer")) return;
 
                     const user = await getCurrentUser();
                     if (!user) {
-                      alert(isZh ? '请登录后再保存路线。' : 'Please sign in to save routes.');
+                      alert(isZh ? "请登录后再保存路线。" : "Please sign in to save routes.");
                       return;
                     }
-                    const routeData = extractRouteFromConversation(messages, currentItinerary?.data);
+                    const routeData = extractRouteFromConversation(
+                      messages,
+                      currentItinerary?.data,
+                    );
                     if (!routeData) {
-                      alert(isZh ? '没有可保存的路线数据。' : 'No route data to save.');
+                      alert(isZh ? "没有可保存的路线数据。" : "No route data to save.");
                       return;
                     }
                     const result = await saveRoute(user.id, conversationIdRef.current, routeData);
                     if (result.success) {
-                      alert(result.error || (isZh ? '路线保存成功！' : 'Route saved successfully!'));
+                      alert(
+                        result.error || (isZh ? "路线保存成功！" : "Route saved successfully!"),
+                      );
                     } else {
-                      alert((isZh ? '保存路线失败：' : 'Failed to save route: ') + result.error);
+                      alert((isZh ? "保存路线失败：" : "Failed to save route: ") + result.error);
                     }
                   }}
                   className="p-2 hover:bg-green-100 rounded-lg transition-colors"
                   title={isZh ? "保存路线" : "Save Route"}
                 >
-                  <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="w-5 h-5 text-green-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </button>
               )}
               {/* History Button - Task 3: Check tier (Explorer+ required) */}
               <button
                 onClick={() => {
-                  if (!checkTierForFeature('conversationHistory', 'explorer')) return;
+                  if (!checkTierForFeature("conversationHistory", "explorer")) return;
                   setShowHistory(!showHistory);
                 }}
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                 title={LABELS.history}
               >
-                <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="w-5 h-5 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </button>
               <button
@@ -764,8 +909,18 @@ export const AIChat: React.FC<AIChatProps> = ({
                 className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                 title={LABELS.newChat}
               >
-                <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                <svg
+                  className="w-5 h-5 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  />
                 </svg>
               </button>
             </div>
@@ -777,38 +932,46 @@ export const AIChat: React.FC<AIChatProps> = ({
           {/* History Sidebar (overlay) */}
           {showHistory && (
             <ConversationHistory
-              conversations={conversationHistory.map((c) => ({ id: c.id, name: c.name, updatedAt: c.createdAt }))}
+              conversations={conversationHistory.map((c) => ({
+                id: c.id,
+                name: c.name,
+                updatedAt: c.createdAt,
+              }))}
               onSelect={loadConversation}
               onClose={() => setShowHistory(false)}
             />
           )}
 
           {/* Map View */}
-          {showMap && currentItinerary?.data?.dailyItinerary && (() => {
-            const locations = currentItinerary.data.dailyItinerary.flatMap((day) =>
-              (day.locations || []).map((loc, i) => ({
-                name: loc.name,
-                nameZh: loc.nameZh,
-                lat: loc.coordinates?.lat || 0,
-                lng: loc.coordinates?.lng || 0,
-                day: day.day,
-                order: i + 1,
-                time: loc.bestTimeStart,
-                activity: loc.highlights?.[0],
-                cost: loc.ticketInfo?.price,
-              })).filter(loc => loc.lat !== 0 && loc.lng !== 0)
-            );
-            if (locations.length === 0) return null;
-            return (
-              <div className="px-4 pt-3 shrink-0">
-                <ItineraryMap
-                  locations={locations}
-                  height="280px"
-                  className="rounded-xl overflow-hidden border border-gray-200"
-                />
-              </div>
-            );
-          })()}
+          {showMap &&
+            currentItinerary?.data?.dailyItinerary &&
+            (() => {
+              const locations = currentItinerary.data.dailyItinerary.flatMap((day) =>
+                (day.locations || [])
+                  .map((loc, i) => ({
+                    name: loc.name,
+                    nameZh: loc.nameZh,
+                    lat: loc.coordinates?.lat || 0,
+                    lng: loc.coordinates?.lng || 0,
+                    day: day.day,
+                    order: i + 1,
+                    time: loc.bestTimeStart,
+                    activity: loc.highlights?.[0],
+                    cost: loc.ticketInfo?.price,
+                  }))
+                  .filter((loc) => loc.lat !== 0 && loc.lng !== 0),
+              );
+              if (locations.length === 0) return null;
+              return (
+                <div className="px-4 pt-3 shrink-0">
+                  <ItineraryMap
+                    locations={locations}
+                    height="280px"
+                    className="rounded-xl overflow-hidden border border-gray-200"
+                  />
+                </div>
+              );
+            })()}
 
           {/* Messages */}
           <div ref={containerRef} className="flex-1 overflow-y-auto p-4 space-y-4 min-h-0">
@@ -824,7 +987,11 @@ export const AIChat: React.FC<AIChatProps> = ({
                     : "I can help you plan itineraries, recommend restaurants, and answer life questions. Try quick prompts or just ask!"}
                 </p>
                 <div className="w-full max-w-md">
-                  <QuickPrompts language={language === "zh" ? "zh" : "en"} onSelect={sendMessage} variant="expanded" />
+                  <QuickPrompts
+                    language={language === "zh" ? "zh" : "en"}
+                    onSelect={sendMessage}
+                    variant="expanded"
+                  />
                 </div>
               </div>
             ) : (
@@ -834,7 +1001,8 @@ export const AIChat: React.FC<AIChatProps> = ({
                     key={message.id}
                     message={message}
                     onRetry={
-                      message.content.startsWith("⚠️") || message.content.startsWith("Sorry, I encountered")
+                      message.content.startsWith("⚠️") ||
+                      message.content.startsWith("Sorry, I encountered")
                         ? handleRetry
                         : undefined
                     }
@@ -848,7 +1016,12 @@ export const AIChat: React.FC<AIChatProps> = ({
           {/* Quick Prompts */}
           {messages.length > 0 && !isLoading && (
             <div className="px-4 pb-2 shrink-0">
-              <QuickPrompts language={language === "zh" ? "zh" : "en"} onSelect={sendMessage} variant="compact" showLabels={false} />
+              <QuickPrompts
+                language={language === "zh" ? "zh" : "en"}
+                onSelect={sendMessage}
+                variant="compact"
+                showLabels={false}
+              />
             </div>
           )}
 
@@ -857,7 +1030,9 @@ export const AIChat: React.FC<AIChatProps> = ({
             <div className="px-4 pb-1 shrink-0">
               <div className="flex items-center justify-between text-xs text-gray-500">
                 <span>
-                  {language === "zh" ? `本月剩余 ${remainingRequests} 次AI请求` : `${remainingRequests} AI requests remaining this month`}
+                  {language === "zh"
+                    ? `本月剩余 ${remainingRequests} 次AI请求`
+                    : `${remainingRequests} AI requests remaining this month`}
                 </span>
                 <a href="/pricing" className="text-blue-600 hover:underline">
                   {language === "zh" ? "升级" : "Upgrade"}
@@ -871,14 +1046,29 @@ export const AIChat: React.FC<AIChatProps> = ({
             <div className="px-4 pb-2 shrink-0">
               <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                  <svg
+                    className="w-5 h-5 text-amber-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"
+                    />
                   </svg>
                   <span className="text-sm text-amber-800">
-                    {language === "zh" ? "您已达到本月AI请求上限，请升级以继续使用" : "You've reached your monthly limit. Upgrade to continue."}
+                    {language === "zh"
+                      ? "您已达到本月AI请求上限，请升级以继续使用"
+                      : "You've reached your monthly limit. Upgrade to continue."}
                   </span>
                 </div>
-                <a href="/pricing" className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline">
+                <a
+                  href="/pricing"
+                  className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                >
                   {language === "zh" ? "升级套餐" : "Upgrade Plan"} →
                 </a>
               </div>
@@ -893,7 +1083,13 @@ export const AIChat: React.FC<AIChatProps> = ({
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder={usageExceeded ? (language === "zh" ? "请升级以继续使用AI助手..." : "Upgrade to continue using AI...") : LABELS.placeholder}
+                placeholder={
+                  usageExceeded
+                    ? language === "zh"
+                      ? "请升级以继续使用AI助手..."
+                      : "Upgrade to continue using AI..."
+                    : LABELS.placeholder
+                }
                 rows={1}
                 disabled={usageExceeded}
                 className={`flex-1 resize-none rounded-xl border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ${usageExceeded ? "bg-gray-100 cursor-not-allowed" : ""}`}
@@ -906,7 +1102,12 @@ export const AIChat: React.FC<AIChatProps> = ({
                   title={LABELS.cancel}
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               ) : (
@@ -914,7 +1115,9 @@ export const AIChat: React.FC<AIChatProps> = ({
                   onClick={handleSend}
                   disabled={!inputValue.trim()}
                   className={`px-6 py-3 rounded-xl font-medium text-white transition-all ${
-                    inputValue.trim() ? "bg-blue-600 hover:bg-blue-700 active:scale-95" : "bg-gray-300 cursor-not-allowed"
+                    inputValue.trim()
+                      ? "bg-blue-600 hover:bg-blue-700 active:scale-95"
+                      : "bg-gray-300 cursor-not-allowed"
                   }`}
                 >
                   {LABELS.send}
@@ -922,15 +1125,23 @@ export const AIChat: React.FC<AIChatProps> = ({
               )}
             </div>
             <p className="text-xs text-gray-400 mt-2 text-center">
-              {language === "zh" ? "AI回复仅供参考，请以当地实际信息为准" : "AI responses are for reference only. Always verify locally."}
+              {language === "zh"
+                ? "AI回复仅供参考，请以当地实际信息为准"
+                : "AI responses are for reference only. Always verify locally."}
             </p>
           </div>
         </div>
 
         {/* Share Dialog */}
         {showShareDialog && (
-          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50" onClick={() => setShowShareDialog(false)}>
-            <div className="bg-white rounded-2xl p-6 w-96 shadow-2xl mx-4" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
+            onClick={() => setShowShareDialog(false)}
+          >
+            <div
+              className="bg-white rounded-2xl p-6 w-96 shadow-2xl mx-4"
+              onClick={(e) => e.stopPropagation()}
+            >
               <h3 className="font-semibold text-lg mb-4">
                 {language === "zh" ? "分享行程" : "Share Itinerary"}
               </h3>
@@ -965,7 +1176,7 @@ export const AIChat: React.FC<AIChatProps> = ({
         {/* Upgrade Prompt Modal */}
         <UpgradePrompt
           isOpen={upgradePrompt.isOpen}
-          onClose={() => setUpgradePrompt(prev => ({ ...prev, isOpen: false }))}
+          onClose={() => setUpgradePrompt((prev) => ({ ...prev, isOpen: false }))}
           currentTier={currentTier}
           requiredTier={upgradePrompt.requiredTier}
           featureName={upgradePrompt.featureName}
