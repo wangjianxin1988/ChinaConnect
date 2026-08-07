@@ -6,7 +6,7 @@ import type { Language } from "@/i18n/translations";
 import { RTL_LANGUAGES, SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { HreflangUrl } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.com";
+const SITE_URL = "https://chinaconnect.io";
 
 // Default locale
 export const DEFAULT_LOCALE: Language = "en";
@@ -44,8 +44,8 @@ function normalizePath(path: string): string {
 
 /**
  * Build URL for a specific locale using query parameter
- * English (default): https://chinaconnect.com/city/beijing
- * Other languages: https://chinaconnect.com/city/beijing?lang=ja
+ * English (default): https://chinaconnect.io/city/beijing
+ * Other languages: https://chinaconnect.io/city/beijing?lang=ja
  */
 function buildLocaleUrl(path: string, locale: Language, baseUrl: string = SITE_URL): string {
   const cleanPath = normalizePath(path);

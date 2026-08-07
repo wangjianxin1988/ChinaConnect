@@ -1,5 +1,5 @@
 ﻿// @ts-nocheck
-const SITE_URL = "https://chinaconnect.com";
+const SITE_URL = "https://chinaconnect.io";
 
 // AI crawler user agents to allow
 const AI_CRAWLERS = [

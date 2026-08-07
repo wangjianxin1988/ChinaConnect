@@ -5,7 +5,7 @@
 import { SUPPORTED_LANGUAGES } from "@/i18n/translations";
 import type { APIRoute } from "astro";
 
-const SITE_URL = "https://chinaconnect.com";
+const SITE_URL = "https://chinaconnect.io";
 
 // ============================================================================
 // City Data (inline to avoid import issues in static generation)
@@ -108,8 +108,8 @@ function escapeXml(str: string): string {
 
 /**
  * Generate hreflang URLs for a path (using query parameters)
- * English: https://chinaconnect.com/city/beijing
- * Japanese: https://chinaconnect.com/city/beijing?lang=ja
+ * English: https://chinaconnect.io/city/beijing
+ * Japanese: https://chinaconnect.io/city/beijing?lang=ja
  */
 function generateHreflangUrls(path: string): Array<{ hreflang: string; href: string }> {
   const cleanPath = path

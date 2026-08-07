@@ -23,7 +23,7 @@ export function isDemoMode(): boolean {
 
 // Demo users for development/preview
 const DEMO_USERS: Record<string, { password: string; profile: Partial<UserProfile> }> = {
-  "demo@chinaconnect.com": {
+  "demo@chinaconnect.io": {
     password: "demo123",
     profile: {
       id: "demo-user-1",
@@ -72,7 +72,7 @@ let demoSessionExpiry: number | null = null;
 function createDemoSession(profile: UserProfile): void {
   demoUser = {
     id: profile.user_id,
-    email: "demo@chinaconnect.com",
+    email: "demo@chinaconnect.io",
     created_at: profile.created_at,
     updated_at: profile.updated_at,
   };

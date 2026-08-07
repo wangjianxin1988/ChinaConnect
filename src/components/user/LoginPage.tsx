@@ -55,7 +55,7 @@ export function LoginPage() {
   // Demo mode quick login
   const handleDemoLogin = async () => {
     clearError();
-    await signIn("demo@chinaconnect.com", "demo123");
+    await signIn("demo@chinaconnect.io", "demo123");
   };
 
   // Show loading state while redirecting
