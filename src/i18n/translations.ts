@@ -227,6 +227,29 @@ export interface Translations {
     exploreCities: string;
     askAi: string;
   };
+  // Emergency page
+  emergencyPage?: {
+    title: string;
+    subtitle: string;
+    police: string;
+    ambulance: string;
+    fire: string;
+    traffic: string;
+    oneTapCalls: string;
+    oneTapDesc: string;
+    phrases: string;
+    phrasesDesc: string;
+    gps: string;
+    gpsDesc: string;
+    contacts: string;
+    contactsDesc: string;
+    howToSave: string;
+    howToSave1: string;
+    howToSave2: string;
+    howToSave3: string;
+    nearbyHelp: string;
+    nearbyDesc: string;
+  };
   // Pricing page
   pricing?: {
     cancelledNotice: string;
@@ -517,6 +540,28 @@ export const translations: Record<Language, Translations> = {
       goHome: "Go Home",
       exploreCities: "Explore Cities",
       askAi: "Ask ChinaGuide AI",
+    },
+    emergencyPage: {
+      title: "Emergency Contacts & Help",
+      subtitle: "Essential phone numbers, phrases, and tools for your safety in China",
+      police: "Police",
+      ambulance: "Ambulance",
+      fire: "Fire",
+      traffic: "Traffic",
+      oneTapCalls: "One-Tap Emergency Calls",
+      oneTapDesc: "Tap any number to call immediately. Works with any phone - no app needed.",
+      phrases: "Emergency Translation Phrases",
+      phrasesDesc: "Tap any phrase to hear the pronunciation. This card works offline.",
+      gps: "GPS Location Share",
+      gpsDesc: "Get your current location and share it with emergency services. The system also helps you find nearby hospitals, pharmacies, and police stations.",
+      contacts: "Emergency Contacts",
+      contactsDesc: "Save your hotel, tour guide, or family contacts for quick access during emergencies.",
+      howToSave: "How to save contacts",
+      howToSave1: "Look for the red SOS button in the bottom-right corner of any page",
+      howToSave2: "Tap the menu button to open the emergency menu",
+      howToSave3: "Go to the Contacts tab and add your emergency contacts",
+      nearbyHelp: "Finding Help Nearby",
+      nearbyDesc: "Use these tips to find medical help, pharmacies, and police quickly.",
     },
     language: {
       switchTo: "Switch to",
