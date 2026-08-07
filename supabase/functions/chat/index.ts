@@ -100,7 +100,9 @@ async function toolCitySearch(
   const city = args.city || args.query || "";
   const { data, error } = await supabase
     .from("cities")
-    .select("id, name, name_zh, name_pinyin, province, tier, summary, climate, best_time, days_recommended")
+    .select(
+      "id, name, name_zh, name_pinyin, province, tier, summary, climate, best_time, days_recommended",
+    )
     .or(`name.ilike.%${city}%,name_zh.ilike.%${city}%,name_pinyin.ilike.%${city}%`)
     .limit(5);
   if (error) return JSON.stringify({ error: error.message, cities: [] });
@@ -237,10 +239,13 @@ Deno.serve(async (req: Request) => {
     });
   }
   if (!minimaxApiKey) {
-    return new Response(JSON.stringify({ error: "Server misconfigured: MINIMAX_API_KEY not set" }), {
-      status: 500,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
-    });
+    return new Response(
+      JSON.stringify({ error: "Server misconfigured: MINIMAX_API_KEY not set" }),
+      {
+        status: 500,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      },
+    );
   }
 
   const supabase = createClient(supabaseUrl, supabaseServiceKey, {
@@ -355,17 +360,21 @@ Deno.serve(async (req: Request) => {
         abortController.signal,
       );
     } catch (e) {
-      return new Response(
-        JSON.stringify({ error: "AI provider unreachable", detail: String(e) }),
-        { status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-      );
+      return new Response(JSON.stringify({ error: "AI provider unreachable", detail: String(e) }), {
+        status: 502,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
     }
 
     if (!apiRes.ok) {
       const errText = await apiRes.text();
       console.error("MiniMax API error:", apiRes.status, errText);
       return new Response(
-        JSON.stringify({ error: "AI provider error", status: apiRes.status, detail: errText.slice(0, 500) }),
+        JSON.stringify({
+          error: "AI provider error",
+          status: apiRes.status,
+          detail: errText.slice(0, 500),
+        }),
         { status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
     }
@@ -378,10 +387,10 @@ Deno.serve(async (req: Request) => {
     totalTokens += data.usage?.total_tokens ?? 0;
 
     if (!assistantMessage) {
-      return new Response(
-        JSON.stringify({ error: "Empty response from AI provider" }),
-        { status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-      );
+      return new Response(JSON.stringify({ error: "Empty response from AI provider" }), {
+        status: 502,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
     }
 
     // Add assistant message to history

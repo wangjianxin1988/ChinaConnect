@@ -1,24 +1,14 @@
+---
 import "@/styles/global.css";
 import "@/styles/tailwind.css";
-import { ViewTransitions } from "astro:transitions";
 import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
-
 import InstallPrompt from "@/components/pwa/InstallPrompt";
 import OfflineIndicator from "@/components/pwa/OfflineIndicator";
-import { type Language, SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
+import { ViewTransitions } from "astro:transitions";
+import { SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
 import { generateHreflangUrlsWithDefault } from "@/lib/hreflang";
 import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
----
-
-
-
-
-
-
-
-
-
-
 
 interface Props {
   title: string;
@@ -39,7 +29,6 @@ const {
   lang: propLang,
 } = Astro.props;
 
-// Use middleware-detected language, fall back to prop, then default to "en"
 const lang: Language = propLang || (Astro.locals.lang as Language) || "en";
 
 const pageMeta: SEOPageMeta = {
@@ -48,35 +37,24 @@ const pageMeta: SEOPageMeta = {
   ...meta,
 };
 
-// Build canonical URL using SITE_URL to avoid localhost in production
 const canonicalUrl = meta.canonicalUrl || `${SITE_URL}${Astro.url.pathname}`;
 const fullOgImage = ogImage || `${SITE_URL}/og-image.png`;
 const pathname = Astro.url.pathname;
 
-// Generate hreflang tags for all 12 languages (query-param based)
 const hreflangUrls = generateHreflangUrlsWithDefault(pathname, SITE_URL);
 
-// Map language to Open Graph locale
-const ogLocaleMap: Record<Language, string> = {
-  en: "en_US",
-  ja: "ja_JP",
-  ko: "ko_KR",
-  "zh-CN": "zh_CN",
-  "zh-TW": "zh_TW",
-  th: "th_TH",
-  vi: "vi_VN",
-  ru: "ru_RU",
-  fr: "fr_FR",
-  de: "de_DE",
-  ar: "ar_AR",
-  fa: "fa_IR",
-};
-const currentOgLocale = ogLocaleMap[lang] || "en_US";
+function localeFor(code: string): string {
+  const map: Record<string, string> = {
+    en: "en_US", ja: "ja_JP", ko: "ko_KR",
+    "zh-CN": "zh_CN", "zh-TW": "zh_TW",
+    th: "th_TH", vi: "vi_VN", ru: "ru_RU",
+    fr: "fr_FR", de: "de_DE", ar: "ar_AR", fa: "fa_IR",
+  };
+  return map[code] || "en_US";
+}
+const currentOgLocale = localeFor(lang);
 
-// Serialize translations for client-side use
 const translationsJson = JSON.stringify(translations);
-
-
 ---
 
 <!doctype html>
@@ -134,7 +112,7 @@ const translationsJson = JSON.stringify(translations);
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:locale" content={currentOgLocale} />
     {SUPPORTED_LANGUAGES.filter(l => l.code !== lang).slice(0, 5).map(l => (
-      <meta property="og:locale:alternate" content={ogLocaleMap[l.code]} />
+      <meta property="og:locale:alternate" content={localeFor(l.code)} />
     ))}
 
     <!-- Twitter Card -->
