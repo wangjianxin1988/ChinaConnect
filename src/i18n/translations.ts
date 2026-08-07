@@ -565,9 +565,11 @@ export const translations: Record<Language, Translations> = {
       phrases: "Emergency Translation Phrases",
       phrasesDesc: "Tap any phrase to hear the pronunciation. This card works offline.",
       gps: "GPS Location Share",
-      gpsDesc: "Get your current location and share it with emergency services. The system also helps you find nearby hospitals, pharmacies, and police stations.",
+      gpsDesc:
+        "Get your current location and share it with emergency services. The system also helps you find nearby hospitals, pharmacies, and police stations.",
       contacts: "Emergency Contacts",
-      contactsDesc: "Save your hotel, tour guide, or family contacts for quick access during emergencies.",
+      contactsDesc:
+        "Save your hotel, tour guide, or family contacts for quick access during emergencies.",
       howToSave: "How to save contacts",
       howToSave1: "Look for the red SOS button in the bottom-right corner of any page",
       howToSave2: "Tap the menu button to open the emergency menu",
@@ -577,7 +579,8 @@ export const translations: Record<Language, Translations> = {
     },
     aiPage: {
       title: "ChinaGuide AI - Your Intelligent China Travel Expert",
-      description: "Your personal China travel intelligence - expert itinerary planning, real-time recommendations, local insights, and cultural guidance, all powered by advanced AI.",
+      description:
+        "Your personal China travel intelligence - expert itinerary planning, real-time recommendations, local insights, and cultural guidance, all powered by advanced AI.",
     },
     accountPage: {
       loading: "Loading your account...",
