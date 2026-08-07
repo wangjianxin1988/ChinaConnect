@@ -1,14 +1,14 @@
 ---
-import "@/styles/global.css";
-import "@/styles/tailwind.css";
-import { ViewTransitions } from "astro:transitions";
-import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
 
-import InstallPrompt from "@/components/pwa/InstallPrompt";
-import OfflineIndicator from "@/components/pwa/OfflineIndicator";
-import { type Language, SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
-import { generateHreflangUrlsWithDefault } from "@/lib/hreflang";
-import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
+
+
+
+
+
+
+
+
+
 
 interface Props {
   title: string;
@@ -156,6 +156,101 @@ const translationsJson = JSON.stringify(translations);
           languages: languages,
           serverLang: serverLang
         };
+
+
+        // Client-side i18n runtime (inlined so it can run before React hydrates)
+        (function () {
+          var RTL_LANGS = ["ar", "fa"];
+
+          function getLang() {
+            var stored = localStorage.getItem("chinaconnect_language");
+            if (stored) return stored;
+            var html = document.documentElement;
+            if (html.lang) return html.lang;
+            return (navigator.language || "en").toLowerCase().split("-")[0];
+          }
+
+          function getDict(lang) {
+            var win = window;
+            var t = (win.__I18N__ && win.__I18N__.translations && win.__I18N__.translations[lang]) || null;
+            if (t) return t;
+            return (win.__I18N__ && win.__I18N__.translations && win.__I18N__.translations.en) || {};
+          }
+
+          function lookup(t, key) {
+            var parts = key.split(".");
+            var cur = t;
+            for (var i = 0; i < parts.length; i++) {
+              var p = parts[i];
+              if (cur && typeof cur === "object" && p in cur) {
+                cur = cur[p];
+              } else {
+                return undefined;
+              }
+            }
+            return typeof cur === "string" ? cur : undefined;
+          }
+
+          function applyAttrs(root, lang, t) {
+            var nodes = root.querySelectorAll("[data-i18n]");
+            for (var i = 0; i < nodes.length; i++) {
+              var el = nodes[i];
+              var key = el.getAttribute("data-i18n");
+              if (!key) continue;
+              var v = lookup(t, key);
+              if (v) el.textContent = v;
+            }
+            nodes = root.querySelectorAll("[data-i18n-placeholder]");
+            for (var j = 0; j < nodes.length; j++) {
+              var el2 = nodes[j];
+              var key2 = el2.getAttribute("data-i18n-placeholder");
+              if (!key2) continue;
+              var v2 = lookup(t, key2);
+              if (v2) el2.placeholder = v2;
+            }
+            nodes = root.querySelectorAll("[data-i18n-title]");
+            for (var k = 0; k < nodes.length; k++) {
+              var el3 = nodes[k];
+              var key3 = el3.getAttribute("data-i18n-title");
+              if (!key3) continue;
+              var v3 = lookup(t, key3);
+              if (v3) el3.setAttribute("title", v3);
+            }
+            nodes = root.querySelectorAll("[data-i18n-aria]");
+            for (var l = 0; l < nodes.length; l++) {
+              var el4 = nodes[l];
+              var key4 = el4.getAttribute("data-i18n-aria");
+              if (!key4) continue;
+              var v4 = lookup(t, key4);
+              if (v4) el4.setAttribute("aria-label", v4);
+            }
+            if (RTL_LANGS.indexOf(lang) >= 0) {
+              document.documentElement.dir = "rtl";
+            } else if (document.documentElement.dir === "rtl") {
+              document.documentElement.dir = "ltr";
+            }
+          }
+
+          function applyI18n() {
+            var lang = getLang();
+            applyAttrs(document, lang, getDict(lang));
+          }
+
+          function setLanguage(lang) {
+            localStorage.setItem("chinaconnect_language", lang);
+            document.documentElement.lang = lang;
+            document.documentElement.dispatchEvent(new CustomEvent("languagechange", { detail: lang }));
+            applyI18n();
+          }
+
+          window.__I18N_RUNTIME__ = { applyI18n: applyI18n, setLanguage: setLanguage };
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", applyI18n);
+          } else {
+            applyI18n();
+          }
+          window.addEventListener("languagechange", applyI18n);
+        })();
 
         // Mirror Supabase auth token to window for legacy inline scripts
         (async () => {
