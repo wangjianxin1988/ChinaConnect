@@ -24,14 +24,19 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     "Access-Control-Allow-Headers": "Content-Type",
   };
 
-  // Get API key from environment, preferring the dedicated secret but
-  // falling back to the public env var if Pages is misconfigured.
+  // Get API key from environment. Prefer the dedicated secret but fall back
+  // to PUBLIC_MINIMAX_API_KEY so Pages runtime (which sometimes loses the
+  // dedicated secret after a wrangler pages secret put round-trip) still
+  // finds a usable MiniMax bearer token.
   const apiKey =
     (env as unknown as Record<string, string>).MINIMAX_API_KEY ||
     (env as unknown as Record<string, string>).PUBLIC_MINIMAX_API_KEY;
   if (!apiKey) {
     return new Response(
-      JSON.stringify({ error: "Server configuration error: MINIMAX_API_KEY not set" }),
+      JSON.stringify({
+        error: "Server configuration error: MINIMAX_API_KEY not set",
+        hint: "Set MINIMAX_API_KEY as a Pages secret or in wrangler.toml [vars].",
+      }),
       { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } },
     );
   }
