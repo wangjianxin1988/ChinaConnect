@@ -255,6 +255,13 @@ export interface Translations {
     title: string;
     description: string;
   };
+  // Account page loading states
+  accountPage?: {
+    loading: string;
+    signInRequired: string;
+    signInRequiredDesc: string;
+    signIn: string;
+  };
   // Pricing page
   pricing?: {
     cancelledNotice: string;
@@ -571,6 +578,12 @@ export const translations: Record<Language, Translations> = {
     aiPage: {
       title: "ChinaGuide AI - Your Intelligent China Travel Expert",
       description: "Your personal China travel intelligence - expert itinerary planning, real-time recommendations, local insights, and cultural guidance, all powered by advanced AI.",
+    },
+    accountPage: {
+      loading: "Loading your account...",
+      signInRequired: "Sign in required",
+      signInRequiredDesc: "Please sign in to view your account.",
+      signIn: "Sign In",
     },
     language: {
       switchTo: "Switch to",

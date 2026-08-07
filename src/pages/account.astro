@@ -13,18 +13,16 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
       <div id="account-loading" class="flex items-center justify-center py-20">
         <div class="text-center">
           <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p class="text-gray-500 dark:text-gray-400">Loading your account...</p>
+          <p class="text-gray-500 dark:text-gray-400"><span data-i18n="accountPage.loading">Loading your account...</span></p>
         </div>
       </div>
 
       <!-- Not authenticated state -->
       <div id="account-unauthenticated" class="hidden text-center py-20">
         <div class="text-6xl mb-4">🔒</div>
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Sign in required</h2>
-        <p class="text-gray-500 dark:text-gray-400 mb-6">Please sign in to view your account.</p>
-        <a href="/auth/login" class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-          Sign In
-        </a>
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2"><span data-i18n="accountPage.signInRequired">Sign in required</span></h2>
+        <p class="text-gray-500 dark:text-gray-400 mb-6"><span data-i18n="accountPage.signInRequiredDesc">Please sign in to view your account.</span></p>
+        <a href="/auth/login" class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors"><span data-i18n="accountPage.signIn">Sign In</span></a>
       </div>
 
       <!-- Account content -->
