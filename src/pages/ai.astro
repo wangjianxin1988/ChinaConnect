@@ -1,11 +1,12 @@
 ---
 import AIChatPage from '@/components/AIChatPage';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { translations } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
-const pageTitle = "ChinaGuide AI - Your Intelligent China Travel Expert";
+const pageTitle = translations.aiPage?.title || "ChinaGuide AI - Your Intelligent China Travel Expert";
 const pageDescription =
-  "Your personal China travel intelligence — expert itinerary planning, real-time recommendations, local insights, and cultural guidance, all powered by advanced AI.";
+  translations.aiPage?.description || "Your personal China travel intelligence.";
 
 // Schema.org JSON-LD for AI page
 const aiSchemas = [

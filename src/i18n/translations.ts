@@ -250,6 +250,11 @@ export interface Translations {
     nearbyHelp: string;
     nearbyDesc: string;
   };
+  // AI page
+  aiPage?: {
+    title: string;
+    description: string;
+  };
   // Pricing page
   pricing?: {
     cancelledNotice: string;
@@ -562,6 +567,10 @@ export const translations: Record<Language, Translations> = {
       howToSave3: "Go to the Contacts tab and add your emergency contacts",
       nearbyHelp: "Finding Help Nearby",
       nearbyDesc: "Use these tips to find medical help, pharmacies, and police quickly.",
+    },
+    aiPage: {
+      title: "ChinaGuide AI - Your Intelligent China Travel Expert",
+      description: "Your personal China travel intelligence - expert itinerary planning, real-time recommendations, local insights, and cultural guidance, all powered by advanced AI.",
     },
     language: {
       switchTo: "Switch to",
