@@ -506,16 +506,17 @@ export const translations: Record<Language, Translations> = {
       accountCreated: "Account Created",
       errorGoogle: "Google sign-up failed",
       errorDefault: "Registration failed",
-    notfound: {
+    },
+    notFound: {
       title: "Page Not Found - ChinaConnect",
       description: "The page you're looking for doesn't exist.",
       heading: "404",
       primary: "Page Not Found",
-      descriptionText: "The page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+      descriptionText:
+        "The page you're looking for doesn't exist or has been moved. Let's get you back on track.",
       goHome: "Go Home",
       exploreCities: "Explore Cities",
       askAi: "Ask ChinaGuide AI",
-    },
     },
     language: {
       switchTo: "Switch to",
