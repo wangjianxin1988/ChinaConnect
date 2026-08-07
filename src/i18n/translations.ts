@@ -240,6 +240,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "Everything You Need for Your China Trip",
       ctaTitle: "Ready to Explore China?",
       ctaSubtitle: "Start planning your trip with AI-powered recommendations.",
+      recentlyViewed: "Recently Viewed",
+      recommendedForYou: "Recommended for You",
     },
     cities: {
       title: "Explore Our Cities",
@@ -380,6 +382,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "中国旅行に必要なすべて",
       ctaTitle: "中国探索の準備はできましたか？",
       ctaSubtitle: "AIを活用したおすすめで旅程を計画しましょう。",
+      recentlyViewed: "最近見た",
+      recommendedForYou: "あなたへのおすすめ",
     },
     cities: {
       title: "都市を探す",
@@ -520,6 +524,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "중국 여행에 필요한 모든 것",
       ctaTitle: "중국 탐험을 준비하셨나요?",
       ctaSubtitle: "AI 기반 추천으로 여행을 계획하세요.",
+      recentlyViewed: "최근 본 것",
+      recommendedForYou: "추천 항목",
     },
     cities: {
       title: "도시 탐험",
@@ -937,6 +943,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "ทุกสิ่งที่คุณต้องการสำหรับการเดินทางไปจีน",
       ctaTitle: "พร้อมสำรวจจีนหรือยัง?",
       ctaSubtitle: "เริ่มวางแผนการเดินทางของคุณด้วยคำแนะนำที่ขับเคลื่อนด้วย AI",
+      recentlyViewed: "เพิ่งดูล่าสุด",
+      recommendedForYou: "แนะนำสำหรับคุณ",
     },
     cities: {
       title: "สำรวจเมืองของเรา",
@@ -1076,6 +1084,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "Mọi thứ bạn cần cho chuyến đi Trung Quốc",
       ctaTitle: "Sẵn sàng khám phá Trung Quốc?",
       ctaSubtitle: "Bắt đầu lập kế hoạch chuyến đi với đề xuất từ AI.",
+      recentlyViewed: "Đã xem gần đây",
+      recommendedForYou: "Đề xuất cho bạn",
     },
     cities: {
       title: "Khám phá Thành phố của chúng tôi",
@@ -1216,6 +1226,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "Все, что вам нужно для поездки в Китай",
       ctaTitle: "Готовы исследовать Китай?",
       ctaSubtitle: "Начните планировать поездку с рекомендациями на основе AI.",
+      recentlyViewed: "Недавно просмотренные",
+      recommendedForYou: "Рекомендуем для вас",
     },
     cities: {
       title: "Исследуйте наши города",
@@ -1359,6 +1371,8 @@ export const translations: Record<Language, Translations> = {
       ctaTitle: "Prêt à explorer la Chine?",
       ctaSubtitle:
         "Commencez à planifier votre voyage avec des recommandations alimentées par l'IA.",
+      recentlyViewed: "Récemment consultés",
+      recommendedForYou: "Recommandé pour vous",
     },
     cities: {
       title: "Explorez nos villes",
@@ -1503,6 +1517,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "Alles was Sie für Ihre China Reise brauchen",
       ctaTitle: "Bereit China zu erkunden?",
       ctaSubtitle: "Beginnen Sie mit KI-gestützten Empfehlungen Ihre Reise zu planen.",
+      recentlyViewed: "Zuletzt angesehen",
+      recommendedForYou: "Empfohlen für Sie",
     },
     cities: {
       title: "Unsere Städte erkunden",
@@ -1646,6 +1662,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "كل ما تحتاجه لرحلتك إلى الصين",
       ctaTitle: "هل أنت مستعد لاستكشاف الصين؟",
       ctaSubtitle: "ابدأ التخطيط لرحلتك مع توصيات مدعومة بالذكاء الاصطناعي.",
+      recentlyViewed: "شوهدت مؤخرًا",
+      recommendedForYou: "موصى به لك",
     },
     cities: {
       title: "استكشف مدننا",
@@ -1785,6 +1803,8 @@ export const translations: Record<Language, Translations> = {
       featuresTitle: "همه چیز مورد نیاز شما برای سفر به چین",
       ctaTitle: "آماده کاوش چین هستید؟",
       ctaSubtitle: "سفر خود را با توصیه‌های مبتنی بر AI برنامه‌ریزی کنید.",
+      recentlyViewed: "اخیراً مشاهده‌شده",
+      recommendedForYou: "پیشنهاد برای شما",
     },
     cities: {
       title: "شهرهای ما را کاوش کنید",

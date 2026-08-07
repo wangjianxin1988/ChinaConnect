@@ -167,7 +167,7 @@ const homeSchemas = [
   <section id="recents-section" class="py-8 border-b border-gray-100" style="display:none;">
     <div class="container-custom">
       <div class="flex items-center justify-between mb-4">
-        <h2 class="text-lg font-semibold text-gray-900">Recently Viewed</h2>
+        <h2 class="text-lg font-semibold text-gray-900" data-i18n="home.recentlyViewed">Recently Viewed</h2>
         <button id="clear-recents" class="text-sm text-gray-500 hover:text-gray-700 transition-colors">Clear History</button>
       </div>
       <div id="recents-grid" class="flex gap-3 overflow-x-auto pb-2 -mx-2 px-2">
@@ -347,7 +347,7 @@ const homeSchemas = [
   <section id="recommended-section" class="py-12">
     <div class="container-custom">
       <div class="text-center mb-8">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Recommended for You</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2" data-i18n="home.recommendedForYou">Recommended for You</h2>
         <p class="text-gray-600">Based on popular destinations</p>
       </div>
       <div id="recommended-grid" class="grid md:grid-cols-3 gap-6" data-cities={JSON.stringify(citiesMeta.map(c => ({ slug: c.slug, name: c.name, nameZh: c.nameZh, description: c.description, coverImage: c.coverImage })))}>

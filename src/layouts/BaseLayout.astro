@@ -1,3 +1,13 @@
+import "@/styles/global.css";
+import "@/styles/tailwind.css";
+import { ViewTransitions } from "astro:transitions";
+import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
+
+import InstallPrompt from "@/components/pwa/InstallPrompt";
+import OfflineIndicator from "@/components/pwa/OfflineIndicator";
+import { type Language, SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
+import { generateHreflangUrlsWithDefault } from "@/lib/hreflang";
+import type { HreflangUrl, SEOPageMeta } from "@/types/seo";
 ---
 
 
