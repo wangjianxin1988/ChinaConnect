@@ -1,266 +1,245 @@
 /**
  * AI Usage Tracker
- * Tracks monthly AI request usage with automatic monthly reset
- * Supports Supabase-backed tier checking for authenticated users
+ * Tracks monthly AI request usage with server-side persistence (Supabase).
+ * The server is the source of truth — local cache is only a UI hint.
+ *
+ * Why this changed:
+ *   The previous version wrote everything to localStorage. Refreshing / clearing browser data
+ *   reset the counter, letting users get unlimited free requests. Now the Edge Function
+ *   increments `public.ai_usage` per user per period (YYYYMM UTC), and the client just
+ *   refreshes from the server.
  */
 
 import { getCurrentTier, setCurrentTier, TIER_LIMITS, type SubscriptionTier } from "./subscription";
 
-const STORAGE_KEY = "ai_usage_data";
+const STORAGE_KEY = "ai_usage_cache";
 
-interface UsageData {
+interface UsageCache {
   count: number;
-  month: number; // 0-11
-  year: number;
+  max: number;
+  tier: SubscriptionTier;
+  month: string; // YYYY-MM
+  fetchedAt: number;
 }
 
-// Cached tier from Supabase to avoid repeated fetches
+interface ServerUsage {
+  request_count: number;
+  max_requests: number;
+  tier_slug: string;
+}
+
 let cachedTier: SubscriptionTier | null = null;
 let tierFetchPromise: Promise<SubscriptionTier> | null = null;
 
-/**
- * Fetch the user's actual tier from Supabase
- * Returns the tier slug mapped to our local subscription tier
- */
-async function fetchTierFromSupabase(): Promise<SubscriptionTier> {
+async function fetchTierFromServer(): Promise<SubscriptionTier> {
   if (typeof window === "undefined") return "free";
-
   try {
-    // Dynamically import to avoid circular deps and SSR issues
     const { supabase } = await import("@/supabase/config");
+    const { data: userData } = await supabase.auth.getUser();
+    if (!userData?.user) return "free";
 
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-    if (!user) return "free";
-
-    // Use the get_user_membership RPC function
     const { data, error } = await supabase.rpc("get_user_membership", {
-      p_user_id: user.id,
+      p_user_id: userData.user.id,
     });
-
     if (error || !data || data.length === 0) {
-      // Fallback: check profiles table
       const { data: profile } = await supabase
         .from("profiles")
         .select("membership_tier")
-        .eq("user_id", user.id)
+        .eq("user_id", userData.user.id)
         .single();
-
-      if (profile?.membership_tier) {
-        return mapDbTierToLocal(profile.membership_tier);
-      }
+      if (profile?.membership_tier) return mapDbTierToLocal(profile.membership_tier);
       return "free";
     }
-
-    const tierSlug = data[0]?.tier_slug || "free";
-    const mapped = mapDbTierToLocal(tierSlug);
-
-    // Update localStorage cache
+    const mapped = mapDbTierToLocal(data[0]?.tier_slug || "free");
     setCurrentTier(mapped);
-
     return mapped;
-  } catch (err) {
-    console.warn("Failed to fetch tier from Supabase:", err);
+  } catch {
     return getCurrentTier();
   }
 }
 
-/**
- * Map database tier slugs to local subscription tier names
- * DB uses: free, pro, enterprise
- * Local uses: free, explorer, traveler, business
- */
 function mapDbTierToLocal(dbSlug: string): SubscriptionTier {
   const mapping: Record<string, SubscriptionTier> = {
     free: "free",
     explorer: "explorer",
     traveler: "traveler",
     business: "business",
-    pro: "traveler", // Map DB 'pro' to local 'traveler'
-    enterprise: "business", // Map DB 'enterprise' to local 'business'
+    pro: "traveler",
+    enterprise: "business",
   };
   return mapping[dbSlug] || "free";
 }
 
-/**
- * Get the current tier, checking Supabase first for authenticated users
- * Falls back to localStorage for non-logged-in users
- */
 export async function getAuthAwareTier(): Promise<SubscriptionTier> {
   if (typeof window === "undefined") return "free";
-
-  // Return cached value if available
   if (cachedTier) return cachedTier;
-
-  // Deduplicate concurrent requests
   if (!tierFetchPromise) {
-    tierFetchPromise = fetchTierFromSupabase().finally(() => {
+    tierFetchPromise = fetchTierFromServer().finally(() => {
       tierFetchPromise = null;
     });
   }
-
   cachedTier = await tierFetchPromise;
   return cachedTier;
 }
 
-/**
- * Clear the cached tier (call after login/logout/upgrade)
- */
 export function clearTierCache(): void {
   cachedTier = null;
   tierFetchPromise = null;
 }
 
-/**
- * Get the current usage data from localStorage
- * Automatically resets if we're in a new month
- */
-function getUsageData(): UsageData {
+// ---------------------------------------------------------------------------
+// Local cache helpers (UI hint only — server is authoritative)
+// ---------------------------------------------------------------------------
+
+function getCache(): UsageCache {
   if (typeof window === "undefined") {
-    return { count: 0, month: new Date().getMonth(), year: new Date().getFullYear() };
+    return {
+      count: 0,
+      max: TIER_LIMITS.free.aiRequestsPerMonth,
+      tier: "free",
+      month: "",
+      fetchedAt: 0,
+    };
   }
-
-  const now = new Date();
-  const currentMonth = now.getMonth();
-  const currentYear = now.getFullYear();
-
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-      const data: UsageData = JSON.parse(stored);
-      // Check if we need to reset (new month)
-      if (data.month !== currentMonth || data.year !== currentYear) {
-        const resetData: UsageData = { count: 0, month: currentMonth, year: currentYear };
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(resetData));
-        return resetData;
-      }
-      return data;
-    }
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw) as UsageCache;
   } catch {
-    // If parsing fails, reset
+    // ignore
   }
-
-  // Initialize fresh
-  const freshData: UsageData = { count: 0, month: currentMonth, year: currentYear };
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(freshData));
-  return freshData;
+  return {
+    count: 0,
+    max: TIER_LIMITS.free.aiRequestsPerMonth,
+    tier: "free",
+    month: "",
+    fetchedAt: 0,
+  };
 }
 
-/**
- * Save usage data to localStorage
- */
-function saveUsageData(data: UsageData): void {
+function saveCache(cache: UsageCache): void {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(cache));
+  } catch {
+    // ignore
+  }
+}
+
+function currentPeriod(): string {
+  const now = new Date();
+  return `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}`;
+}
+
+// ---------------------------------------------------------------------------
+// Public API
+// ---------------------------------------------------------------------------
+
+/**
+ * Fetch authoritative usage from the server. Returns null if unauthenticated.
+ */
+export async function fetchUsageFromServer(): Promise<UsageCache | null> {
+  if (typeof window === "undefined") return null;
+  try {
+    const { supabase } = await import("@/supabase/config");
+    const { data: userData } = await supabase.auth.getUser();
+    if (!userData?.user) return null;
+
+    const { data, error } = await supabase.rpc("get_user_ai_usage", {
+      p_user_id: userData.user.id,
+    });
+    if (error) {
+      console.warn("get_user_ai_usage failed", error);
+      return null;
+    }
+    const row = Array.isArray(data) ? data[0] : data;
+    if (!row) return null;
+
+    const cache: UsageCache = {
+      count: row.request_count,
+      max: row.max_requests,
+      tier: mapDbTierToLocal(row.tier_slug),
+      month: row.period_yyyymm,
+      fetchedAt: Date.now(),
+    };
+    saveCache(cache);
+    return cache;
+  } catch (e) {
+    console.warn("fetchUsageFromServer failed", e);
+    return null;
+  }
 }
 
 /**
- * Get the number of AI requests used this month
+ * Optimistically bump the local counter after a successful request.
+ * The server is authoritative — this just keeps the UI snappy.
+ */
+export function bumpLocalCount(): number {
+  const c = getCache();
+  c.count += 1;
+  c.fetchedAt = Date.now();
+  saveCache(c);
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(
+      new CustomEvent("ai-usage-updated", { detail: { count: c.count, max: c.max } }),
+    );
+  }
+  return c.count;
+}
+
+/**
+ * Read the cached usage synchronously. Use as a UI hint only.
  */
 export function getUsageCount(): number {
-  return getUsageData().count;
+  return getCache().count;
 }
 
-/**
- * Get the maximum allowed requests for the current tier
- * Returns -1 for unlimited
- */
 export function getMaxRequests(tier?: SubscriptionTier): number {
   const t = tier || getCurrentTier();
   return TIER_LIMITS[t].aiRequestsPerMonth;
 }
 
-/**
- * Get the number of remaining requests
- * Returns -1 for unlimited
- */
 export function getRemainingRequests(): number {
-  const max = getMaxRequests();
-  if (max === -1) return -1; // unlimited
-  const used = getUsageCount();
-  return Math.max(0, max - used);
+  const cache = getCache();
+  const max = cache.max === -1 ? -1 : cache.max;
+  if (max === -1) return -1;
+  return Math.max(0, max - cache.count);
 }
 
 /**
- * Check if the user has exceeded their usage limit
- * Returns true if within limit, false if exceeded
+ * Sync check based on the local cache. The Edge Function is the actual gatekeeper.
  */
 export function checkUsageLimit(): { allowed: boolean; remaining: number; max: number } {
-  const max = getMaxRequests();
-  // -1 means unlimited
-  if (max === -1) {
-    return { allowed: true, remaining: -1, max: -1 };
-  }
-
-  const used = getUsageCount();
-  const remaining = Math.max(0, max - used);
-
-  return {
-    allowed: used < max,
-    remaining,
-    max,
-  };
+  const cache = getCache();
+  const max = cache.max;
+  if (max === -1) return { allowed: true, remaining: -1, max: -1 };
+  const remaining = Math.max(0, max - cache.count);
+  return { allowed: cache.count < max, remaining, max };
 }
 
 /**
- * Check if the user can make a request based on their tier limit.
- * This is a synchronous check using the current tier and usage count.
- * Returns false when the limit has been reached.
+ * Synchronous UI hint. Real gate is server-side.
  */
 export function canMakeRequest(): boolean {
   if (typeof window === "undefined") return true;
-  const limit = checkUsageLimit();
-  return limit.allowed;
+  return checkUsageLimit().allowed;
+}
+
+export function getUsagePercentage(): number {
+  const cache = getCache();
+  if (cache.max === -1) return -1;
+  return Math.min(100, Math.round((cache.count / cache.max) * 100));
 }
 
 /**
- * Increment the usage count by 1
- * ONLY increments if the user is within their tier limit.
- * Returns the new count, or -1 if the limit was already reached.
- */
-export function incrementUsage(): number {
-  // Check limit BEFORE incrementing
-  const limit = checkUsageLimit();
-  if (!limit.allowed) {
-    // Dispatch event so UI can react to limit reached
-    if (typeof window !== "undefined") {
-      window.dispatchEvent(
-        new CustomEvent("ai-usage-exceeded", {
-          detail: { count: getUsageCount(), max: limit.max },
-        }),
-      );
-    }
-    return -1;
-  }
-
-  const data = getUsageData();
-  data.count += 1;
-  saveUsageData(data);
-
-  // Dispatch custom event so UI components can react
-  if (typeof window !== "undefined") {
-    window.dispatchEvent(new CustomEvent("ai-usage-updated", { detail: { count: data.count } }));
-  }
-
-  return data.count;
-}
-
-/**
- * Reset usage count (for testing or admin purposes)
+ * Local reset for testing / admin.
  */
 export function resetUsage(): void {
-  const now = new Date();
-  saveUsageData({ count: 0, month: now.getMonth(), year: now.getFullYear() });
-}
-
-/**
- * Get usage percentage (0-100)
- * Returns -1 for unlimited
- */
-export function getUsagePercentage(): number {
-  const max = getMaxRequests();
-  if (max === -1) return -1;
-  const used = getUsageCount();
-  return Math.min(100, Math.round((used / max) * 100));
+  const cache: UsageCache = {
+    count: 0,
+    max: TIER_LIMITS.free.aiRequestsPerMonth,
+    tier: "free",
+    month: currentPeriod(),
+    fetchedAt: Date.now(),
+  };
+  saveCache(cache);
 }

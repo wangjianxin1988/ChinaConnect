@@ -1,11 +1,14 @@
 /**
- * useAIConversation Hook with MiniMax AI Integration
- * Manages AI conversation state with tools, memory and MiniMax API
+ * useAIConversation Hook
+ *
+ * Talks to the Supabase Edge Function `chat` (which runs MiniMax + tools + usage tracking).
+ * Conversation history is persisted in `public.ai_conversations` / `public.ai_messages`,
+ * keyed by the authenticated user. Sidebar summaries come from the same table.
+ *
+ * Removed: long-term localStorage memory, client-side tool execution (now server-side).
  */
 
-import { cities } from "@/data/cities";
 import { getAnySearch } from "@/lib/ai/anysearch";
-import { ShortTermMemoryStore, getLongTermMemory } from "@/lib/ai/memory";
 import { ALL_TOOL_DEFINITIONS } from "@/lib/ai/tools";
 import type {
   ConversationSummary,
@@ -22,11 +25,13 @@ import {
 } from "@/services/minimax";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
+  bumpLocalCount,
   canMakeRequest,
   checkUsageLimit,
-  incrementUsage,
+  fetchUsageFromServer,
   getRemainingRequests as getRemainingAIRequests,
 } from "@/lib/usage-tracker";
+import { supabase } from "@/supabase/config";
 
 // ============================================
 // Hook Types
@@ -41,7 +46,6 @@ export interface UseAIConversationOptions {
 }
 
 export interface UseAIConversationReturn {
-  // State
   messages: Message[];
   isLoading: boolean;
   workflowProgress: WorkflowProgress | null;
@@ -52,435 +56,370 @@ export interface UseAIConversationReturn {
   isMiniMaxAvailable: boolean;
   usageExceeded: boolean;
   remainingRequests: number;
-
-  // Actions
+  isAuthenticated: boolean;
   sendMessage: (content: string) => Promise<void>;
   clearConversation: () => void;
-  refreshUsage: () => void;
+  refreshUsage: () => Promise<void>;
   saveCurrentItinerary: (name: string) => SavedItinerary | null;
   loadItinerary: (id: string) => void;
   deleteItinerary: (id: string) => void;
-  loadConversation: (id: string) => void;
+  loadConversation: (id: string) => Promise<void>;
+  deleteConversation: (id: string) => Promise<void>;
+  createNewConversation: () => void;
   exportItinerary: (format: "text" | "json") => string;
   shareItinerary: (id: string) => string;
   getShareLink: (shareCode: string) => string;
-
-  // Quick actions
   generateQuickResponse: (type: string) => Promise<void>;
 }
 
-interface ConversationState {
-  conversationId: string;
+// ============================================
+// Helpers
+// ============================================
+
+function uuid(): string {
+  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
+    return crypto.randomUUID();
+  }
+  return `msg_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+}
+
+function dbMessageToMessage(row: {
+  id: string;
+  role: string;
+  content: string;
+  created_at: string;
+}): Message {
+  return {
+    id: row.id,
+    role: row.role as Message["role"],
+    content: row.content,
+    timestamp: new Date(row.created_at),
+  };
+}
+
+function dbConversationToSummary(row: {
+  id: string;
+  title: string | null;
+  summary: string | null;
+  message_count: number;
+  last_message_at: string | null;
+  created_at: string;
+  updated_at: string;
+}): ConversationSummary {
+  return {
+    id: row.id,
+    name: row.title || row.summary || "New conversation",
+    createdAt: row.created_at,
+    messageCount: row.message_count ?? 0,
+    hasItinerary: false,
+  };
 }
 
 // ============================================
-// Hook Implementation
+// Hook
 // ============================================
 
 export function useAIConversation(options: UseAIConversationOptions = {}): UseAIConversationReturn {
-  const { language = "en", budgetLevel = "medium", autoSave = true, maxMessages = 100 } = options;
+  const {
+    language = "en",
+    budgetLevel = "medium",
+    autoSave: _autoSave = true,
+    maxMessages = 100,
+  } = options;
 
-  // Core state
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [workflowProgress, setWorkflowProgress] = useState<WorkflowProgress | null>(null);
-  const [savedItineraries, setSavedItineraries] = useState<SavedItinerary[]>([]);
+  const [savedItineraries] = useState<SavedItinerary[]>([]);
   const [conversationHistory, setConversationHistory] = useState<ConversationSummary[]>([]);
   const [currentItinerary, setCurrentItinerary] = useState<SavedItinerary | null>(null);
   const [isMCPAvailable, setIsMCPAvailable] = useState(false);
-  const [isMiniMaxAvailable, setIsMiniMaxAvailable] = useState(false);
+  const [isMiniMaxAvailable, setIsMiniMaxAvailable] = useState(true);
   const [usageExceeded, setUsageExceeded] = useState(false);
   const [remainingRequests, setRemainingRequests] = useState(getRemainingAIRequests());
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Client instances
   const miniMaxClientRef = useRef<MiniMaxClient | null>(null);
-  const shortTermMemoryRef = useRef<ShortTermMemoryStore | null>(null);
-  const longTermMemoryRef = useRef(getLongTermMemory());
+  const conversationIdRef = useRef<string | null>(null);
   const anySearchRef = useRef(getAnySearch());
-  const conversationStateRef = useRef<ConversationState>({
-    conversationId: `conv_${Date.now()}`,
-  });
-  const conversationMessagesRef = useRef<MiniMaxMessage[]>([]);
 
-  // Initialize on mount
+  // Initialize MiniMax client
   useEffect(() => {
-    shortTermMemoryRef.current = new ShortTermMemoryStore();
+    miniMaxClientRef.current = new MiniMaxClient("");
+  }, []);
 
-    // Initialize MiniMax client — uses server-side proxy at /api/chat
-    miniMaxClientRef.current = new MiniMaxClient("", "/api/chat");
-    setIsMiniMaxAvailable(true);
+  // Resolve auth state, refresh usage, and load conversation history
+  useEffect(() => {
+    let cancelled = false;
 
-    // Load saved data
-    const longTerm = longTermMemoryRef.current;
-    setSavedItineraries(longTerm.getItineraries());
-    setConversationHistory(longTerm.getConversationHistory());
+    const init = async () => {
+      const { data: userData } = await supabase.auth.getUser();
+      if (cancelled) return;
+      setIsAuthenticated(!!userData?.user);
+
+      if (userData?.user) {
+        await refreshUsage();
+        await loadConversationHistory();
+      } else {
+        setConversationHistory([]);
+      }
+    };
+
+    init();
+
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsAuthenticated(!!session?.user);
+      if (session?.user) {
+        refreshUsage();
+        loadConversationHistory();
+      } else {
+        setConversationHistory([]);
+        setMessages([]);
+        conversationIdRef.current = null;
+      }
+    });
 
     // Check MCP availability
     anySearchRef.current.initialize().then(() => {
-      setIsMCPAvailable(anySearchRef.current.isMCPAvailable());
-    });
-
-    // Subscribe to long-term memory changes
-    const unsubscribe = longTerm.subscribe(() => {
-      setSavedItineraries(longTermMemoryRef.current.getItineraries());
-      setConversationHistory(longTermMemoryRef.current.getConversationHistory());
+      if (!cancelled) setIsMCPAvailable(anySearchRef.current.isMCPAvailable());
     });
 
     return () => {
-      unsubscribe();
+      cancelled = true;
+      sub.subscription.unsubscribe();
     };
   }, []);
 
   // ============================================
-  // Usage Tracking
+  // Conversation history (server-backed)
   // ============================================
 
-  const refreshUsage = useCallback(() => {
-    const limit = checkUsageLimit();
-    setUsageExceeded(!limit.allowed);
-    setRemainingRequests(limit.remaining);
+  const loadConversationHistory = useCallback(async () => {
+    const { data, error } = await supabase
+      .from("ai_conversations")
+      .select("id, title, summary, message_count, last_message_at, created_at, updated_at")
+      .order("last_message_at", { ascending: false, nullsFirst: false })
+      .limit(50);
+    if (error) {
+      console.warn("Failed to load conversations:", error);
+      return;
+    }
+    setConversationHistory((data ?? []).map(dbConversationToSummary));
   }, []);
 
-  // ============================================
-  // Message Handling
-  // ============================================
-
-  const addMessage = useCallback(
-    (message: Omit<Message, "id" | "timestamp">): Message => {
-      const newMessage: Message = {
-        ...message,
-        id: `msg_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
-        timestamp: new Date(),
-      };
-
-      setMessages((prev) => {
-        const updated = [...prev, newMessage];
-        if (updated.length > maxMessages) {
-          return updated.slice(-maxMessages);
-        }
-        return updated;
-      });
-
-      // Add to short-term memory
-      shortTermMemoryRef.current?.addMessage(newMessage);
-
-      return newMessage;
+  const loadConversationMessages = useCallback(
+    async (conversationId: string) => {
+      const { data, error } = await supabase
+        .from("ai_messages")
+        .select("id, role, content, created_at")
+        .eq("conversation_id", conversationId)
+        .order("created_at", { ascending: true })
+        .limit(maxMessages);
+      if (error) {
+        console.warn("Failed to load messages:", error);
+        setMessages([]);
+        return;
+      }
+      setMessages((data ?? []).map(dbMessageToMessage));
     },
     [maxMessages],
   );
 
-  // ============================================
-  // MiniMax AI Response
-  // ============================================
-
-  const getMiniMaxResponse = useCallback(
-    async (userMessage: string, onChunk: (text: string) => void, onComplete: () => void) => {
-      const client = miniMaxClientRef.current;
-      if (!client) {
-        throw new Error("MiniMax client not initialized");
-      }
-
-      // Build conversation messages with system prompt
-      const systemPrompt = `${TRAVEL_PLANNING_SYSTEM}
-
-${CITY_CONTEXT}
-
-Current user context:
-- Language: ${language}
-${budgetLevel !== "medium" ? `- Budget level: ${budgetLevel}` : "- Budget level: NOT YET ASKED — you MUST ask the user"}
-- Travel style preferences: NOT YET ASKED — you MUST ask the user
-
-Remember:
-- Always respond in the user's language
-- Provide specific restaurant names, prices, and locations
-- Include emergency numbers relevant to the city
-- Suggest timing and estimated costs using ¥ symbol (never CNY)
-- CRITICAL: If user specifies a number of days, generate EXACTLY that many days
-- CRITICAL: You MUST ask the preference questions before generating ANY itinerary`;
-
-      const conversationMessages: MiniMaxMessage[] = [
-        { role: "system", content: systemPrompt },
-        ...conversationMessagesRef.current,
-        { role: "user", content: userMessage },
-      ];
-
-      // No throttle — send every chunk immediately for fastest streaming
-
-      const finalCleanedResponse = await client.chatStream({
-        messages: conversationMessages,
-        tools: ALL_TOOL_DEFINITIONS as unknown[],
-        onChunk: (text: string) => {
-          onChunk(text);
-        },
-        onComplete: (finalText: string) => {
-          onChunk(finalText);
-          onComplete();
-        },
-        onToolExecuting: (toolName: string, toolId: string) => {
-          console.log(`[AI Tool] Executing: ${toolName} (${toolId})`);
-        },
-        onToolResult: (toolName: string, toolId: string, result: string) => {
-          console.log(`[AI Tool] Result for ${toolName}:`, result.slice(0, 200));
-        },
-        onError: (error: Error) => {
-          console.error("MiniMax error:", error);
-        },
-      });
-
-      // Store the final cleaned response for later use
-      return finalCleanedResponse;
-    },
-    [language, budgetLevel],
-  );
+  const createConversation = useCallback(async (firstUserText: string): Promise<string | null> => {
+    const { data: userData } = await supabase.auth.getUser();
+    if (!userData?.user) return null;
+    const title = firstUserText.length > 60 ? `${firstUserText.slice(0, 57)}...` : firstUserText;
+    const { data, error } = await supabase
+      .from("ai_conversations")
+      .insert({
+        user_id: userData.user.id,
+        title,
+        message_count: 0,
+        last_message_at: new Date().toISOString(),
+      })
+      .select("id")
+      .single();
+    if (error || !data) {
+      console.warn("Failed to create conversation:", error);
+      return null;
+    }
+    return data.id;
+  }, []);
 
   // ============================================
-  // Main Send Message
+  // Usage refresh
+  // ============================================
+
+  const refreshUsage = useCallback(async () => {
+    const usage = await fetchUsageFromServer();
+    if (usage) {
+      const limit = {
+        allowed: usage.count < usage.max,
+        remaining: Math.max(0, usage.max - usage.count),
+        max: usage.max,
+      };
+      setUsageExceeded(!limit.allowed);
+      setRemainingRequests(limit.remaining);
+    } else {
+      // Fallback to local cache so the UI is never blank
+      const local = checkUsageLimit();
+      setUsageExceeded(!local.allowed);
+      setRemainingRequests(local.remaining);
+    }
+  }, []);
+
+  // ============================================
+  // sendMessage — the core action
   // ============================================
 
   const sendMessage = useCallback(
     async (content: string) => {
-      if (!content.trim() || isLoading) return;
+      const text = content.trim();
+      if (!text || isLoading) return;
 
-      // Check usage limit BEFORE sending using canMakeRequest()
-      if (!canMakeRequest()) {
-        setUsageExceeded(true);
-        addMessage({
-          role: "assistant",
-          content:
-            language === "zh"
-              ? "⚠️ 您本月的AI请求次数已用完。请升级您的套餐以继续使用AI助手。\n\n[查看定价方案](/pricing)"
-              : "⚠️ You've reached your monthly limit. Upgrade to continue.\n\n[View Pricing](/pricing)",
-          isStreaming: false,
-        });
-        return;
-      }
+      const userMsg: Message = {
+        id: uuid(),
+        role: "user",
+        content: text,
+        timestamp: new Date(),
+      };
 
+      setMessages((prev) => [...prev, userMsg]);
       setIsLoading(true);
-      setWorkflowProgress(null);
-
-      const startTime = Date.now();
 
       try {
-        // 1. Add user message
-        addMessage({
-          role: "user",
-          content: content.trim(),
-        });
+        const client = miniMaxClientRef.current ?? new MiniMaxClient("");
+        miniMaxClientRef.current = client;
 
-        // Add to MiniMax conversation history
-        conversationMessagesRef.current.push({ role: "user", content: content.trim() });
+        // Build MiniMax messages
+        const mmMessages: MiniMaxMessage[] = [
+          { role: "system", content: TRAVEL_PLANNING_SYSTEM + "\n\n" + CITY_CONTEXT },
+          ...messages.map((m) => ({ role: m.role, content: m.content })),
+          { role: "user", content: text },
+        ];
 
-        // 2. Create streaming assistant message
-        const assistantMsg = addMessage({
-          role: "assistant",
-          content: "",
-          isStreaming: true,
-        });
-
-        // 3. Use MiniMax AI
-        let responseText = "";
-
-        if (!miniMaxClientRef.current) {
-          throw new Error("MiniMax client not initialized.");
+        // Resolve conversation id (create new one if needed)
+        let conversationId = conversationIdRef.current;
+        if (!conversationId) {
+          conversationId = await createConversation(text);
+          conversationIdRef.current = conversationId;
         }
 
-        // Use MiniMax AI - get the final cleaned response
-        const miniMaxResponse = await getMiniMaxResponse(
-          content,
-          (chunk) => {
-            // Update streaming message
+        // Streaming assistant placeholder
+        const assistantId = uuid();
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: assistantId,
+            role: "assistant",
+            content: "",
+            timestamp: new Date(),
+            isStreaming: true,
+          },
+        ]);
+
+        const fullResponse = await client.chatStream({
+          messages: mmMessages,
+          tools: ALL_TOOL_DEFINITIONS,
+          language,
+          conversationId: conversationId ?? undefined,
+          onChunk: (partial) => {
             setMessages((prev) =>
-              prev.map((m) => (m.id === assistantMsg.id ? { ...m, content: chunk } : m)),
+              prev.map((m) => (m.id === assistantId ? { ...m, content: partial } : m)),
             );
           },
-          () => {
-            // Complete
-          },
-        );
-
-        // Use the cleaned response from MiniMax
-        responseText = miniMaxResponse || "";
-
-        // Double-clean any residual think/tool_call tags
-        responseText = cleanModelResponse(responseText);
-
-        // Simulate streaming effect with smooth typewriter for non-streaming responses
-        const duration = Date.now() - startTime;
-        if (duration < 800 && responseText) {
-          // Split into word-aware chunks for natural typing feel
-          const totalLen = responseText.length;
-          const targetChunks = Math.min(20, Math.max(5, Math.floor(totalLen / 50)));
-          const baseChunkSize = Math.floor(totalLen / targetChunks);
-          let pos = 0;
-          while (pos < totalLen) {
-            // Try to break at word/sentence boundaries for natural feel
-            let end = Math.min(pos + baseChunkSize + 5, totalLen);
-            if (end < totalLen) {
-              const breakChars = [" ", String.fromCharCode(10), "，", "。", ",", ".", "!", "?"];
-              for (let b = end; b > pos + baseChunkSize - 5 && b < totalLen; b--) {
-                if (breakChars.includes(responseText[b])) {
-                  end = b + 1;
-                  break;
-                }
-              }
-            }
-            pos = Math.min(end, totalLen);
-            const chunk = responseText.slice(0, pos);
+          onComplete: (finalText) => {
             setMessages((prev) =>
-              prev.map((m) => (m.id === assistantMsg.id ? { ...m, content: chunk } : m)),
+              prev.map((m) =>
+                m.id === assistantId ? { ...m, content: finalText, isStreaming: false } : m,
+              ),
             );
-            await new Promise((resolve) => setTimeout(resolve, 2));
-          }
-        }
-
-        // 4. Finalize message
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === assistantMsg.id
-              ? {
-                  ...m,
-                  content: responseText,
-                  isStreaming: false,
-                }
-              : m,
-          ),
-        );
-
-        // Add assistant response to MiniMax conversation history
-        conversationMessagesRef.current.push({
-          role: "assistant",
-          content: cleanModelResponse(responseText),
+          },
+          onError: (err) => {
+            setMessages((prev) =>
+              prev.map((m) =>
+                m.id === assistantId
+                  ? {
+                      ...m,
+                      content: cleanModelResponse(err.message || "Error"),
+                      isStreaming: false,
+                    }
+                  : m,
+              ),
+            );
+          },
         });
 
-        // Increment usage count after successful AI response
-        incrementUsage();
-        refreshUsage();
+        // Bump local usage count (Edge Function has already incremented server-side)
+        bumpLocalCount();
+        await refreshUsage();
+        await loadConversationHistory();
 
-        // 5. Parse itinerary from response text
-        const destinationMatch = responseText.match(
-          /(?:visit|go to|travel to|in|for)\s+([A-Za-z]+(?:\s+[A-Za-z]+)?)/i,
-        );
-        const daysMatch = responseText.match(/(\d+)\s*(?:day|days|天)/i);
-
-        if (destinationMatch && daysMatch) {
-          const dest = destinationMatch[1];
-          const days = Number.parseInt(daysMatch[1]);
-          const city = cities.find(
-            (c) =>
-              c.nameEn?.toLowerCase() === dest?.toLowerCase() ||
-              c.name?.toLowerCase() === dest?.toLowerCase(),
-          );
-
-          if (city) {
-            const itinerary: SavedItinerary = {
-              id: `temp_${Date.now()}`,
-              name: `${dest} ${days}-day trip`,
-              destination: dest,
-              days: days,
-              createdAt: new Date().toISOString(),
-              updatedAt: new Date().toISOString(),
-              data: {
-                summary: {
-                  destination: dest,
-                  totalDays: days,
-                  bestSeason: "Spring",
-                  estimatedTotalCost:
-                    budgetLevel === "luxury"
-                      ? days * 1500
-                      : budgetLevel === "medium"
-                        ? days * 600
-                        : days * 300,
-                  currency: "CNY",
-                  costBreakdown: { accommodation: 0, food: 0, transport: 0, attractions: 0 },
-                  topHighlights: city.attractions?.slice(0, 5).map((a) => a.name) || [],
-                  travelTips: [],
-                },
-                dailyItinerary: [],
-              },
-            };
-            setCurrentItinerary(itinerary);
-          }
-        }
-
-        // 6. Save conversation summary to long-term memory
-        if (autoSave) {
-          const summary: ConversationSummary = {
-            id: conversationStateRef.current.conversationId,
-            name: `Conversation ${new Date().toLocaleDateString()}`,
-            createdAt: new Date().toISOString(),
-            messageCount: messages.length + 2,
-            hasItinerary: !!currentItinerary,
-          };
-          longTermMemoryRef.current.saveConversationSummary(summary);
-        }
-      } catch (error) {
-        console.error("AI Conversation error:", error);
-
-        // Add error message
-        addMessage({
-          role: "assistant",
-          content:
-            language === "zh"
-              ? "抱歉，我遇到了一个错误。请稍后再试，或者换个方式描述您的需求。"
-              : "Sorry, I encountered an error. Please try again or rephrase your request.",
-          isStreaming: false,
-        });
+        void fullResponse;
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: uuid(),
+            role: "assistant",
+            content:
+              msg.includes("usage_exceeded") || msg.includes("reached")
+                ? msg
+                : `Sorry, I encountered an error: ${msg}`,
+            timestamp: new Date(),
+          },
+        ]);
       } finally {
         setIsLoading(false);
         setWorkflowProgress(null);
       }
     },
-    [
-      isLoading,
-      language,
-      addMessage,
-      autoSave,
-      getMiniMaxResponse,
-      budgetLevel,
-      messages,
-      currentItinerary,
-    ],
+    [isLoading, messages, language, createConversation, refreshUsage, loadConversationHistory],
   );
 
   // ============================================
-  // Conversation Management
+  // Conversation management
   // ============================================
 
   const clearConversation = useCallback(() => {
     setMessages([]);
     setCurrentItinerary(null);
     setWorkflowProgress(null);
-    shortTermMemoryRef.current?.reset();
-    conversationMessagesRef.current = [];
-    conversationStateRef.current = {
-      conversationId: `conv_${Date.now()}`,
-    };
+    conversationIdRef.current = null;
   }, []);
 
   const loadConversation = useCallback(
-    (id: string) => {
-      const summary = conversationHistory.find((c) => c.id === id);
-      if (summary) {
-        conversationStateRef.current.conversationId = id;
-        clearConversation();
-      }
+    async (id: string) => {
+      conversationIdRef.current = id;
+      await loadConversationMessages(id);
     },
-    [conversationHistory, clearConversation],
+    [loadConversationMessages],
   );
 
+  const deleteConversation = useCallback(
+    async (id: string) => {
+      await supabase.from("ai_conversations").delete().eq("id", id);
+      if (conversationIdRef.current === id) {
+        clearConversation();
+      }
+      await loadConversationHistory();
+    },
+    [loadConversationHistory, clearConversation],
+  );
+
+  const createNewConversation = useCallback(() => {
+    clearConversation();
+  }, [clearConversation]);
+
   // ============================================
-  // Itinerary Management
+  // Itinerary management (kept from old API, local only)
   // ============================================
 
   const saveCurrentItinerary = useCallback(
     (name: string): SavedItinerary | null => {
       if (!currentItinerary) return null;
-
-      const saved = longTermMemoryRef.current.saveItinerary({
-        ...currentItinerary,
-        name,
-      });
-
+      const saved: SavedItinerary = { ...currentItinerary, name };
       setCurrentItinerary(saved);
       return saved;
     },
@@ -488,54 +427,32 @@ Remember:
   );
 
   const loadItinerary = useCallback((id: string) => {
-    const loaded = longTermMemoryRef.current.getItineraryById(id);
-    if (loaded) {
-      setCurrentItinerary(loaded);
-    }
+    // No local itinerary store; this is a stub for backward compatibility
+    void id;
   }, []);
 
-  const deleteItinerary = useCallback(
-    (id: string) => {
-      longTermMemoryRef.current.deleteItinerary(id);
-      if (currentItinerary?.id === id) {
-        setCurrentItinerary(null);
-      }
-    },
-    [currentItinerary],
-  );
+  const deleteItinerary = useCallback((id: string) => {
+    void id;
+  }, []);
 
   const exportItinerary = useCallback(
     (format: "text" | "json"): string => {
       if (!currentItinerary) return "";
-
-      if (format === "json") {
-        return JSON.stringify(currentItinerary, null, 2);
-      }
-
+      if (format === "json") return JSON.stringify(currentItinerary, null, 2);
       const lines: string[] = [];
       lines.push(`# ${currentItinerary.name}`);
       lines.push(`Destination: ${currentItinerary.destination}`);
       lines.push(`Duration: ${currentItinerary.days} days`);
-      lines.push(`Created: ${new Date(currentItinerary.createdAt).toLocaleDateString()}`);
-      lines.push("");
-      lines.push("## Itinerary");
-      lines.push(currentItinerary.data.summary.topHighlights.join(", "));
       lines.push("");
       lines.push("Generated by ChinaConnect AI");
-
       return lines.join("\n");
     },
     [currentItinerary],
   );
 
   const shareItinerary = useCallback((id: string): string => {
-    const itinerary = longTermMemoryRef.current.getItineraryById(id);
-    if (!itinerary) return "";
-
-    const shareCode = itinerary.shareCode || Math.random().toString(36).slice(2, 8).toUpperCase();
-    longTermMemoryRef.current.updateItinerary(id, { shareCode });
-
-    return shareCode;
+    void id;
+    return Math.random().toString(36).slice(2, 8).toUpperCase();
   }, []);
 
   const getShareLink = useCallback((shareCode: string): string => {
@@ -543,7 +460,7 @@ Remember:
   }, []);
 
   // ============================================
-  // Quick Actions
+  // Quick actions
   // ============================================
 
   const generateQuickResponse = useCallback(
@@ -555,18 +472,11 @@ Remember:
         food_tour: "I am a foodie, recommend the best food destinations in China",
         nature_7days: "Looking for nature and adventure, Zhangjiajie or Guilin for 7 days",
       };
-
       const message = quickMessages[type];
-      if (message) {
-        await sendMessage(message);
-      }
+      if (message) await sendMessage(message);
     },
     [sendMessage],
   );
-
-  // ============================================
-  // Return Hook Value
-  // ============================================
 
   return {
     messages,
@@ -579,16 +489,19 @@ Remember:
     isMiniMaxAvailable,
     usageExceeded,
     remainingRequests,
+    isAuthenticated,
     sendMessage,
     clearConversation,
+    refreshUsage,
     saveCurrentItinerary,
     loadItinerary,
     deleteItinerary,
     loadConversation,
+    deleteConversation,
+    createNewConversation,
     exportItinerary,
     shareItinerary,
     getShareLink,
     generateQuickResponse,
-    refreshUsage,
   };
 }
