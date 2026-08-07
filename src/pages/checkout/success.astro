@@ -77,43 +77,63 @@ const description = "Your subscription has been activated successfully";
 <script>
   async function verifyCheckout() {
     const params = new URLSearchParams(window.location.search);
-    const sessionId = params.get('session_id');
+    const sessionId = params.get("session") || params.get("session_id");
 
-    const loadingEl = document.getElementById('checkout-loading')!;
-    const successEl = document.getElementById('checkout-success')!;
-    const errorEl = document.getElementById('checkout-error')!;
-    const messageEl = document.getElementById('success-message')!;
+    const loadingEl = document.getElementById("checkout-loading");
+    const successEl = document.getElementById("checkout-success");
+    const errorEl = document.getElementById("checkout-error");
+    const messageEl = document.getElementById("success-message");
 
     if (!sessionId) {
-      loadingEl.classList.add('hidden');
-      errorEl.classList.remove('hidden');
+      loadingEl?.classList.add("hidden");
+      errorEl?.classList.remove("hidden");
       return;
     }
 
     try {
-      // Wait a moment for webhook to process
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Wait briefly so the webhook has time to land
+      await new Promise((resolve) => setTimeout(resolve, 1500));
 
-      // Store the session ID for reference
-      localStorage.setItem('last_checkout_session', sessionId);
+      const supabaseUrl = (window).__SUPABASE_URL__ || "";
+      const accessToken = (window).__SUPABASE_TOKEN__ || "";
 
-      // The webhook should have already updated the membership
-      // We just need to update localStorage and show success
-      // Try to determine tier from URL or stored checkout info
-      const pendingTier = localStorage.getItem('pending_checkout_tier');
-      if (pendingTier) {
-        localStorage.setItem('subscription_tier', pendingTier);
-        localStorage.removeItem('pending_checkout_tier');
-        messageEl.textContent = `Your ${pendingTier.charAt(0).toUpperCase() + pendingTier.slice(1)} plan is now active!`;
+      if (supabaseUrl && accessToken) {
+        // Pull the current membership from Supabase and surface the real tier
+        const res = await fetch(supabaseUrl + "/rest/v1/user_memberships?select=membership_tiers(slug,name),status,expires_at&status=eq.active&order=created_at.desc&limit=1", {
+          headers: {
+            apikey: (window).__SUPABASE_ANON_KEY__ || "",
+            Authorization: "Bearer " + accessToken,
+          },
+        });
+        if (res.ok) {
+          const rows = await res.json();
+          const tier = rows?.[0]?.membership_tiers?.slug;
+          const tierName = rows?.[0]?.membership_tiers?.name;
+          if (tier) {
+            localStorage.setItem("subscription_tier", tier);
+            if (tierName && messageEl) {
+              messageEl.textContent = "Your " + tierName + " plan is now active.";
+            }
+          }
+        }
       }
 
-      loadingEl.classList.add('hidden');
-      successEl.classList.remove('hidden');
+      // Fall back to the pending tier that pricing.astro stashed
+      const pendingTier = localStorage.getItem("pending_checkout_tier");
+      if (pendingTier && !localStorage.getItem("subscription_tier")) {
+        localStorage.setItem("subscription_tier", pendingTier);
+        if (messageEl) {
+          messageEl.textContent = "Your " + pendingTier.charAt(0).toUpperCase() + pendingTier.slice(1) + " plan is now active.";
+        }
+      }
+      localStorage.removeItem("pending_checkout_tier");
+
+      loadingEl?.classList.add("hidden");
+      successEl?.classList.remove("hidden");
     } catch (error) {
-      console.error('Checkout verification error:', error);
-      loadingEl.classList.add('hidden');
-      // Still show success since webhook handles the actual logic
-      successEl.classList.remove('hidden');
+      console.error("Checkout verification error:", error);
+      loadingEl?.classList.add("hidden");
+      successEl?.classList.remove("hidden");
     }
   }
 
