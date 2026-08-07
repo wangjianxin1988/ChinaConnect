@@ -1,4 +1,5 @@
-﻿import fs from "fs";import path from "path";
+﻿import fs from "fs";
+import path from "path";
 
 // Submit URLs to the public IndexNow endpoint (used by Microsoft Bing, Yandex,
 // DuckDuckGo, Seznam and others). The shared key + key file is published at the
@@ -42,4 +43,3 @@ if (!res.ok) {
   console.error("response:", text);
   process.exitCode = 1;
 }
-
