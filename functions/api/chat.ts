@@ -27,8 +27,18 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   // Get API key from environment
   const apiKey = env.MINIMAX_API_KEY;
   if (!apiKey) {
+    const visibleEnv = Object.keys((env as unknown as Record<string, unknown>) ?? {});
     return new Response(
-      JSON.stringify({ error: "Server configuration error: MINIMAX_API_KEY not set" }),
+      JSON.stringify({
+        error: "Server configuration error: MINIMAX_API_KEY not set",
+        envKeys: visibleEnv,
+        sample: {
+          MINIMAX_API_KEY_len: ((env as unknown as Record<string, string>).MINIMAX_API_KEY || "").length,
+          PUBLIC_MINIMAX_API_KEY_len: ((env as unknown as Record<string, string>).PUBLIC_MINIMAX_API_KEY || "").length,
+          SUPABASE_ANON_KEY_len: ((env as unknown as Record<string, string>).SUPABASE_ANON_KEY || "").length,
+          SUPABASE_URL: ((env as unknown as Record<string, string>).SUPABASE_URL || "").length,
+        },
+      }),
       { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } },
     );
   }
