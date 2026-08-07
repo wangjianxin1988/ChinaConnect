@@ -94,7 +94,6 @@ export async function saveCityScores(
  * Get city IDs from slugs
  */
 async function getCityIdsFromSlugs(slugs: string[]): Promise<Record<string, string> | null> {
-  // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue
   const { data, error } = await (supabase as any)
     .from("cities")
     .select("id, slug")
@@ -118,7 +117,6 @@ async function getCityIdsFromSlugs(slugs: string[]): Promise<Record<string, stri
  * Get city scores with city information
  */
 export async function getCityScores(): Promise<StoredCityScore[]> {
-  // biome-ignore lint/suspicious/noExplicitAny: Supabase complex join typing requires any
   const { data, error } = await (supabase as any)
     .from("city_scores")
     .select(
@@ -183,7 +181,6 @@ export async function getDataSourceConfigs(): Promise<DataSourceConfig[]> {
  * Update data source last fetch time
  */
 export async function updateDataSourceFetchTime(sourceName: string): Promise<void> {
-  // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue
   await (supabase as any)
     .from("data_source_configs")
     .update({ last_fetch_at: new Date().toISOString() })
@@ -215,7 +212,6 @@ export async function saveCityScoreHistory(
         recorded_at: new Date().toISOString().split("T")[0],
       }));
 
-    // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue
     const { error } = await (supabase as any).from("city_score_history").upsert(historyRecords, {
       onConflict: "city_id,recorded_at",
     });
@@ -238,7 +234,6 @@ export async function saveCityScoreHistory(
  * Get city images for a city
  */
 export async function getCityImages(citySlug: string): Promise<StoredCityImage[]> {
-  // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue
   const { data, error } = await (supabase as any)
     .from("city_images")
     .select("city_id, image_url, image_type, is_primary")
@@ -265,7 +260,6 @@ export async function getCityImages(citySlug: string): Promise<StoredCityImage[]
  * Get score update logs
  */
 export async function getScoreUpdateLogs(limit = 10) {
-  // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue
   const { data, error } = await (supabase as any)
     .from("score_update_logs")
     .select("*")
@@ -284,7 +278,6 @@ export async function getScoreUpdateLogs(limit = 10) {
  * Create a new score update log entry
  */
 export async function createScoreUpdateLog(runId: string): Promise<string> {
-  // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue
   const { data, error } = await (supabase as any)
     .from("score_update_logs")
     .insert({ run_id: runId, status: "running" })
@@ -312,7 +305,6 @@ export async function updateScoreUpdateLog(
     completed_at?: string;
   },
 ): Promise<void> {
-  // biome-ignore lint/suspicious/noExplicitAny: Supabase type inference issue
   await (supabase as any)
     .from("score_update_logs")
     .update({

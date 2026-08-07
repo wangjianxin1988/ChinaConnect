@@ -455,7 +455,8 @@ export const translations: Record<Language, Translations> = {
       cancelledNotice: "Payment was cancelled. You can try again below.",
       trustedBy: "Trusted by 10,000+ travelers",
       heroTitle: "Simple, Transparent Pricing",
-      heroSubtitle: "One plan for every traveler - start free, upgrade when you need more AI power.",
+      heroSubtitle:
+        "One plan for every traveler - start free, upgrade when you need more AI power.",
       saveBadge: "Save 20%",
       billingMonthly: "Monthly",
       billingAnnual: "Annual",
@@ -515,7 +516,8 @@ export const translations: Record<Language, Translations> = {
         cancelAnytime: "Cancel anytime",
       },
       compareTitle: "Compare All Features",
-      compareSubtitle: "See exactly what is included in each plan. All plans include access to our AI-powered travel assistant.",
+      compareSubtitle:
+        "See exactly what is included in each plan. All plans include access to our AI-powered travel assistant.",
       compareFeatures: {
         aiRequests: "AI Requests per Month",
         saveItineraries: "Save Itineraries",
@@ -530,34 +532,44 @@ export const translations: Record<Language, Translations> = {
       unlimited: "Unlimited",
       testimonialsTitle: "Loved by Travelers Worldwide",
       testimonialsSubtitle: "Hear what our users say about their ChinaConnect experience",
-      testimonial1Quote: "ChinaConnect made planning my first trip to Beijing incredibly easy. The AI suggestions for local restaurants were spot on.",
+      testimonial1Quote:
+        "ChinaConnect made planning my first trip to Beijing incredibly easy. The AI suggestions for local restaurants were spot on.",
       testimonial1Author: "Sarah K.",
       testimonial1Role: "Explorer Plan",
       testimonial1Country: "USA",
-      testimonial2Quote: "As a travel agent, the Business plan is worth every penny. I create custom itineraries for clients in minutes. The PDF export feature saves me hours of work.",
+      testimonial2Quote:
+        "As a travel agent, the Business plan is worth every penny. I create custom itineraries for clients in minutes. The PDF export feature saves me hours of work.",
       testimonial2Author: "Li Wei T.",
       testimonial2Role: "Business Plan",
       testimonial2Country: "UK",
-      testimonial3Quote: "I upgraded to Traveler after my free requests ran out. The premium customization helped me plan a perfect 2-week cultural immersion trip. Highly recommend.",
+      testimonial3Quote:
+        "I upgraded to Traveler after my free requests ran out. The premium customization helped me plan a perfect 2-week cultural immersion trip. Highly recommend.",
       testimonial3Author: "Maria R.",
       testimonial3Role: "Traveler Plan",
       testimonial3Country: "Germany",
       faqTitle: "Frequently Asked Questions",
       faqSubtitle: "Everything you need to know about our plans and billing",
       faq1Q: "How do I upgrade or downgrade my plan?",
-      faq1A: "You can change your plan at any time from your account settings. When upgrading, you will get immediate access to new features and be charged a prorated amount. Downgrades take effect at the start of your next billing cycle - you will keep your current features until then.",
+      faq1A:
+        "You can change your plan at any time from your account settings. When upgrading, you will get immediate access to new features and be charged a prorated amount. Downgrades take effect at the start of your next billing cycle - you will keep your current features until then.",
       faq2Q: "How do I cancel my subscription?",
-      faq2A: "You can cancel your subscription anytime from your account page. After cancellation, you will continue to have access to paid features until the end of your current billing period. Your account will then revert to the Free plan automatically.",
+      faq2A:
+        "You can cancel your subscription anytime from your account page. After cancellation, you will continue to have access to paid features until the end of your current billing period. Your account will then revert to the Free plan automatically.",
       faq3Q: "What is your refund policy?",
-      faq3A: "We offer a 7-day money-back guarantee for new subscribers. If you are not satisfied within the first 7 days, contact our support team for a full refund. After 7 days, refunds are handled on a case-by-case basis. Annual plans can be refunded prorated within the first 30 days.",
+      faq3A:
+        "We offer a 7-day money-back guarantee for new subscribers. If you are not satisfied within the first 7 days, contact our support team for a full refund. After 7 days, refunds are handled on a case-by-case basis. Annual plans can be refunded prorated within the first 30 days.",
       faq4Q: "When does my monthly quota reset?",
-      faq4A: "Your AI request quota resets on the 1st of each month at midnight UTC. Unused requests do not roll over to the next month. If you upgrade mid-cycle, your new higher limit takes effect immediately.",
+      faq4A:
+        "Your AI request quota resets on the 1st of each month at midnight UTC. Unused requests do not roll over to the next month. If you upgrade mid-cycle, your new higher limit takes effect immediately.",
       faq5Q: "What happens when I reach my AI request limit?",
-      faq5A: "You will see a friendly reminder suggesting an upgrade. You can still view your saved itineraries and use all other features available in your current tier. Your remaining features are never locked.",
+      faq5A:
+        "You will see a friendly reminder suggesting an upgrade. You can still view your saved itineraries and use all other features available in your current tier. Your remaining features are never locked.",
       faq6Q: "What payment methods do you accept?",
-      faq6A: "We accept all major credit and debit cards (Visa, Mastercard, American Express, Discover). All payments are securely processed through our payment partner with industry-standard encryption. We never store your card details on our servers.",
+      faq6A:
+        "We accept all major credit and debit cards (Visa, Mastercard, American Express, Discover). All payments are securely processed through our payment partner with industry-standard encryption. We never store your card details on our servers.",
       ctaTitle: "Ready to Start Your China Adventure?",
-      ctaSubtitle: "Join thousands of travelers using AI to plan their perfect China trip. Start free today.",
+      ctaSubtitle:
+        "Join thousands of travelers using AI to plan their perfect China trip. Start free today.",
       ctaPrimary: "Start Free Today",
       ctaSecondary: "Explore Features",
     },
