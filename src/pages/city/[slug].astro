@@ -7,6 +7,7 @@ import { CityMap } from "@/components/city/CityMap";
 import { CityTierBadge } from "@/components/city/CityTierBadge";
 import { CulturalSection } from "@/components/city/CulturalSection";
 import { EmergencyCard, QuickDialGrid } from "@/components/city/EmergencyCard";
+import { translations } from "@/i18n/translations";
 import { EmergencySection } from "@/components/city/EmergencySection";
 import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
 import { WeatherWidget } from "@/components/city/WeatherWidget";
@@ -37,7 +38,7 @@ const hotelCategoryCounts = getHotelCategoryCounts(slug as string);
 const totalHotelCount = getHotelCount(slug as string);
 
 const pageTitle = `${city.nameEn} Travel Guide - ChinaConnect`;
-const pageDescription = `Complete travel guide for ${city.nameEn}, ${city.name}. Attractions, restaurants (Michelin & Black Pearl), transport, hotels, and emergency contacts.`;
+const pageDescription = translations.en.cityPage?.citySubtitle?.replace('{city}', city.nameEn) || `Complete travel guide for ${city.nameEn}, ${city.name}.`;
 
 // SEO keywords
 const keywords = [
@@ -276,7 +277,7 @@ const mapMarkers = [
     <div class="container-custom relative h-full flex flex-col justify-end pb-8">
       <!-- Breadcrumb -->
       <nav class="mb-4">
-        <a href="/" class="text-blue-200 hover:text-white transition-colors">Home</a>
+        <a href="/" class="text-blue-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-blue-300 mx-2">/</span>
         <a href="/#cities" class="text-blue-200 hover:text-white transition-colors">Cities</a>
         <span class="text-blue-300 mx-2">/</span>
@@ -377,8 +378,8 @@ const mapMarkers = [
 
           <!-- Best Time to Visit -->
           <div class="bg-blue-50 rounded-xl p-6 mb-6">
-            <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
-              <span>🌤️</span> Best Time to Visit
+          <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
+              <span aria-hidden="true">🌤️</span> <span data-i18n="cityPage.bestTimeHeading">Best Time to Visit</span>
             </h3>
             <p class="text-gray-700 mb-3">{city.climate.tips}</p>
             <div class="flex flex-wrap gap-2">
@@ -402,7 +403,7 @@ const mapMarkers = [
 
           <!-- Highlights -->
           <div class="bg-gray-50 rounded-xl p-6">
-            <h3 class="text-lg font-semibold mb-4">Top Highlights</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.topHighlightsHeading">Top Highlights</h3>
             <div class="grid md:grid-cols-2 gap-3">
               {city.highlights.map(h => (
                 <div class="flex items-start gap-2">
@@ -415,7 +416,7 @@ const mapMarkers = [
 
           <!-- Quick Facts -->
           <div class="bg-white border rounded-xl p-6 mt-6">
-            <h3 class="text-lg font-semibold mb-4">Quick Facts</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.quickFactsHeading">Quick Facts</h3>
             <div class="grid grid-cols-2 gap-4">
               <div class="flex items-center gap-3">
                 <span class="text-2xl">🗣️</span>
@@ -455,7 +456,7 @@ const mapMarkers = [
             <span class="text-2xl">🍜</span> 美食亮点
             <span class="text-sm font-normal text-gray-500 ml-2">本地人真心推荐</span>
           </h2>
-          <p class="section-subtitle">Discover local food highlights in {city.nameEn}</p>
+          <p class="section-subtitle" data-i18n="cityPage.foodSubtitle">Discover local food highlights in {city.nameEn}</p>
 
           <FoodHighlightsSection
             restaurants={city.restaurants}
@@ -495,7 +496,7 @@ const mapMarkers = [
             <span class="text-2xl">🏛️</span> Must-Visit Attractions
             <span class="text-sm font-normal text-gray-500 ml-2">({city.attractions.length} places)</span>
           </h2>
-          <p class="section-subtitle">Discover the best attractions in {city.nameEn}</p>
+          <p class="section-subtitle" data-i18n="cityPage.attractionsSubtitle">Discover the best attractions in {city.nameEn}</p>
 
           <AttractionsSection
             attractions={city.attractions.slice(0, 5)}
@@ -511,11 +512,11 @@ const mapMarkers = [
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">🚇</span> Transport Guide
           </h2>
-          <p class="section-subtitle">Getting to and around {city.nameEn}</p>
+          <p class="section-subtitle" data-i18n="cityPage.transportSubtitle">Getting to and around {city.nameEn}</p>
 
           <!-- Getting There -->
           <div class="mb-8">
-            <h3 class="text-lg font-semibold mb-4">Getting to {city.nameEn}</h3>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="cityPage.gettingTo">Getting to {city.nameEn}</h3>
             <div class="space-y-4">
               {city.transport.arrival.map(option => (
                 <div class="bg-white border rounded-xl p-6">

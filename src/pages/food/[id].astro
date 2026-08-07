@@ -69,8 +69,8 @@ const restaurantDetail = {
       <div class="max-w-4xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
           <a href={`/food?city=${restaurant.city}`} class="flex items-center gap-2 text-gray-600 hover:text-gray-900">
-            <span>←</span>
-            <span>返回</span>
+            <span aria-hidden="true">←</span>
+            <span data-i18n="foodPage.back">Back</span>
           </a>
           <span class={`text-sm font-medium ${config.color}`}>
             {config.icon} {config.label}
@@ -88,7 +88,7 @@ const restaurantDetail = {
       {/* Similar Restaurants */}
       {sameCityRestaurants.length > 0 && (
         <div class="bg-white rounded-xl shadow-md p-6 mt-6">
-          <h2 class="text-lg font-bold text-gray-900 mb-4">附近其他餐厅</h2>
+          <h2 class="text-lg font-bold text-gray-900 mb-4" data-i18n="foodPage.otherRestaurants">Other restaurants nearby</h2>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             {sameCityRestaurants.map(r => (
               <a href={`/food/${r.id}`} class="block group">
@@ -109,7 +109,7 @@ const restaurantDetail = {
     {/* Footer */}
     <footer class="bg-white border-t border-gray-200 mt-12">
       <div class="max-w-4xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-        <p>ChinaConnect 美食推荐</p>
+        <p data-i18n="foodPage.metaFooter">ChinaConnect food recommendations</p>
       </div>
     </footer>
   </div>

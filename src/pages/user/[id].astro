@@ -2,6 +2,7 @@
 
 import UserProfilePage from "@/components/user/UserProfilePage";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 // Mock user IDs for static generation
 export function getStaticPaths() {
   return [
@@ -23,7 +24,7 @@ if (!id) {
 const isMockUser = id.startsWith("mock-user-");
 ---
 
-<BaseLayout title={`User Profile - ChinaConnect`}>
+<BaseLayout title={translations.en.userPage?.title || "User Profile - ChinaConnect"}>
   <main class="container mx-auto px-4 py-8">
     <UserProfilePage userId={id} isOwnProfile={isMockUser} client:load />
   </main>

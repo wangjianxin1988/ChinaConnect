@@ -2,11 +2,12 @@
 
 import VisaGuideClient from "@/components/Guide/VisaGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 // Visa Guide page SEO
-const pageTitle = "Visa Guide - ChinaConnect";
-const pageDescription = "Complete visa application guide for China travel. Requirements by country, application process, required documents, and tips for tourists.";
+const pageTitle = translations.en.guidePage?.visaTitle || "Visa Guide - ChinaConnect";
+const pageDescription = translations.en.guidePage?.visaDescription || "Complete visa application guide for China travel. Requirements by country, application process, required documents, and tips for tourists.";
 
 // Schema.org JSON-LD for Visa Guide
 const visaSchemas = [
@@ -61,11 +62,11 @@ const visaSchemas = [
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">
       <ol class="flex items-center gap-2 text-muted-foreground">
-        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><a href="/" class="hover:text-foreground transition-colors" data-i18n="guidePage.home">Home</a></li>
         <li><span>/</span></li>
-        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors" data-i18n="guidePage.travelGuide">Travel Guide</a></li>
         <li><span>/</span></li>
-        <li class="text-foreground font-medium">Visa Guide</li>
+        <li class="text-foreground font-medium" data-i18n="guidePage.visaTitleShort">Visa Guide</li>
       </ol>
     </nav>
 
@@ -73,8 +74,8 @@ const visaSchemas = [
       <div class="flex items-center gap-3 mb-4">
         <span class="text-4xl">📋</span>
         <div>
-          <h1 class="text-4xl font-bold text-foreground">Visa Guide</h1>
-          <p class="text-muted-foreground text-lg">签证指南 - Complete guide for China visa application</p>
+          <h1 class="text-4xl font-bold text-foreground" data-i18n="guidePage.visaTitleShort">Visa Guide</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="guidePage.visaSubtitle">签证指南 - Complete guide for China visa application</p>
         </div>
       </div>
     </div>
@@ -84,8 +85,8 @@ const visaSchemas = [
       <div class="flex items-center gap-2">
         <span class="text-2xl">✈️</span>
         <div>
-          <h2 class="font-semibold">Stage 1: Pre-departure Preparation</h2>
-          <p class="text-sm text-muted-foreground">Apply for visa, gather documents, and prepare for your trip</p>
+          <h2 class="font-semibold" data-i18n="guidePage.visaStageTitle">Stage 1: Pre-departure Preparation</h2>
+          <p class="text-sm text-muted-foreground" data-i18n="guidePage.visaStageDescription">Apply for visa, gather documents, and prepare for your trip</p>
         </div>
       </div>
     </div>

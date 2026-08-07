@@ -2,6 +2,7 @@
 
 import { UserProfilePage } from '@/components/user/UserProfilePage';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { translations } from "@/i18n/translations";
 import { supabase } from '@/supabase/config';
 
 // Redirect to login if not authenticated
@@ -12,7 +13,7 @@ if (!session) {
 }
 ---
 
-<BaseLayout title="My Profile - ChinaConnect">
+<BaseLayout title={translations.en.profilePage?.title || "My Profile - ChinaConnect"}>
   <main class="container mx-auto px-4 py-8">
     <UserProfilePage userId={session.user.id} isOwnProfile={true} client:load />
   </main>

@@ -39,11 +39,11 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
     <div class="container-custom relative h-full flex flex-col justify-end pb-8">
       <!-- Breadcrumb -->
       <nav class="mb-4">
-        <a href="/" class="text-purple-200 hover:text-white transition-colors">Home</a>
+        <a href="/" class="text-purple-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-purple-300 mx-2">/</span>
         <a href={`/city/${city.slug}`} class="text-purple-200 hover:text-white transition-colors">{city.nameEn}</a>
         <span class="text-purple-300 mx-2">/</span>
-        <span class="text-white">Attractions</span>
+        <span class="text-white" data-i18n="cityPage.attractionsHeading">Attractions</span>
       </nav>
 
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
@@ -65,7 +65,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
           <input
             type="text"
             id="search-input"
-            placeholder="Search attractions..."
+            placeholder="Search attractions..." data-i18n-placeholder="cityPage.searchAttractions" data-i18n-attr="placeholder"
             class="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           />
         </div>
@@ -187,8 +187,8 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
     <!-- No results message -->
     <div id="no-results" class="hidden text-center py-16">
       <div class="text-6xl mb-4">🔍</div>
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">No attractions found</h3>
-      <p class="text-gray-500">Try a different search term or category</p>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2" data-i18n="cityPage.noResults">No attractions found</h3>
+      <p class="text-gray-500" data-i18n="cityPage.noResultsDesc">Try a different search term or category</p>
     </div>
   </section>
 
@@ -256,9 +256,9 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
   <!-- Authoritative Data Sources -->
   <section class="container-custom py-8 mt-8 border-t border-gray-200">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-lg font-semibold text-gray-700 mb-3">📊 Data Sources & References</h2>
+      <h2 class="text-lg font-semibold text-gray-700 mb-3" data-i18n="cityPage.dataSourcesHeading">Data Sources & References</h2>
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
-        <p>Attraction data compiled from authoritative sources. Verify details before visiting:</p>
+        <p data-i18n="cityPage.dataSourcesDesc">Attraction data compiled from authoritative sources. Verify details before visiting:</p>
         <ul class="list-disc list-inside space-y-1 ml-2">
           <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">马蜂窝?(Mafengwo)</a> 鈥?China's largest travel community</li>
           <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">鎼虹▼ (Ctrip/Trip.com)</a> 鈥?Attraction reviews & booking</li>

@@ -12,11 +12,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Offline - ChinaConnect emergency contacts and essential travel info" />
+    <meta name="description" content="Offline - ChinaConnect emergency contacts and essential travel info" data-i18n-content="offlinePage.metaDescription" data-i18n-attr="content" />
     <meta name="theme-color" content="#dc2626" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <title>Offline - ChinaConnect</title>
+    <title data-i18n="offlinePage.title">Offline - ChinaConnect</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/icons/icon.svg" />
@@ -479,7 +479,7 @@
       <div class="offline-banner" role="alert" aria-live="polite">
         <span class="offline-banner-icon" aria-hidden="true">📡</span>
         <div class="offline-banner-text">
-          <h1>You're Offline</h1>
+          <h1 data-i18n="offlinePage.bannerTitle">You're Offline</h1>
           <p>Emergency contacts and essential info are still available</p>
           <small>Last synced: <span id="lastSync">--</span></small>
         </div>
@@ -589,37 +589,37 @@
         <div class="card-content">
           <div class="phrase-list">
             <div class="phrase-item">
-              <div class="phrase-english">Help!</div>
+              <div class="phrase-english" data-i18n="offlinePage.phrase1En">Help!</div>
               <div class="phrase-chinese">救命!</div>
               <div class="phrase-pronunciation">Jiùmìng!</div>
             </div>
             <div class="phrase-item">
-              <div class="phrase-english">Call the police!</div>
+              <div class="phrase-english" data-i18n="offlinePage.phrase2En">Call the police!</div>
               <div class="phrase-chinese">叫警察!</div>
               <div class="phrase-pronunciation">Jiào jǐngchá!</div>
             </div>
             <div class="phrase-item">
-              <div class="phrase-english">I need an ambulance</div>
+              <div class="phrase-english" data-i18n="offlinePage.phrase3En">I need an ambulance</div>
               <div class="phrase-chinese">我需要救护车</div>
               <div class="phrase-pronunciation">Wǒ xūyào jiùhù chē</div>
             </div>
             <div class="phrase-item">
-              <div class="phrase-english">There is a fire</div>
+              <div class="phrase-english" data-i18n="offlinePage.phrase4En">There is a fire</div>
               <div class="phrase-chinese">着火了</div>
               <div class="phrase-pronunciation">Zháo huǒ le</div>
             </div>
             <div class="phrase-item">
-              <div class="phrase-english">I am lost</div>
+              <div class="phrase-english" data-i18n="offlinePage.phrase5En">I am lost</div>
               <div class="phrase-chinese">我迷路了</div>
               <div class="phrase-pronunciation">Wǒ mílù le</div>
             </div>
             <div class="phrase-item">
-              <div class="phrase-english">I need help</div>
+              <div class="phrase-english" data-i18n="offlinePage.phrase6En">I need help</div>
               <div class="phrase-chinese">我需要帮助</div>
               <div class="phrase-pronunciation">Wǒ xūyào bāngzhù</div>
             </div>
             <div class="phrase-item">
-              <div class="phrase-english">Where is the hospital?</div>
+              <div class="phrase-english" data-i18n="offlinePage.phrase7En">Where is the hospital?</div>
               <div class="phrase-chinese">医院在哪里?</div>
               <div class="phrase-pronunciation">Yīyuàn zài nǎlǐ?</div>
             </div>
@@ -630,19 +630,16 @@
       <!-- Tips Card -->
       <div class="card tips-card">
         <div class="card-header">
-          <h3>
-            <span aria-hidden="true">💡</span>
-            Important Notes
-          </h3>
+          <h3><span aria-hidden="true">💡</span> <span data-i18n="offlinePage.tipsHeading">Important Notes</span></h3>
         </div>
         <div class="card-content">
           <ul class="tips-list">
-            <li>All emergency numbers work nationwide without area codes</li>
-            <li>Police (110) handles crime, public safety, and general emergencies</li>
-            <li>Ambulance (120) handles medical emergencies and injuries</li>
-            <li>Fire (119) handles fires, rescues, and hazardous materials</li>
-            <li>Traffic (122) is for traffic accidents only</li>
-            <li>Stay calm and show your emergency phrase card if language is a barrier</li>
+            <li data-i18n="offlinePage.tipsList1">All emergency numbers work nationwide without area codes</li>
+            <li data-i18n="offlinePage.tipsList2">Police (110) handles crime, public safety, and general emergencies</li>
+            <li data-i18n="offlinePage.tipsList3">Ambulance (120) handles medical emergencies and injuries</li>
+            <li data-i18n="offlinePage.tipsList4">Fire (119) handles fires, rescues, and hazardous materials</li>
+            <li data-i18n="offlinePage.tipsList5">Traffic (122) is for traffic accidents only</li>
+            <li data-i18n="offlinePage.tipsList6">Stay calm and show your emergency phrase card if language is a barrier</li>
           </ul>
         </div>
       </div>
@@ -651,9 +648,7 @@
       <div class="retry-section">
         <button class="retry-button" id="retryBtn" onclick="checkOnline()">
           <span class="spinner" aria-hidden="true"></span>
-          <span>
-            <span aria-hidden="true">🔄</span> Try Again
-          </span>
+          <span><span aria-hidden="true">🔄</span> <span data-i18n="offlinePage.tryAgain">Try Again</span></span>
         </button>
       </div>
 
@@ -689,13 +684,13 @@
             window.location.reload();
           }, 500);
         } else {
-          showToast('Still offline. Please check your connection.');
+          showToast(translations?.en?.offlinePage?.retryToast || 'Still offline. Please check your connection.');
         }
       }
 
       // Auto-reload when back online
       window.addEventListener('online', function() {
-        showToast('Back online! Reloading...');
+        showToast(translations?.en?.offlinePage?.backOnlineToast || 'Back online! Reloading...');
         setTimeout(() => window.location.reload(), 1000);
       });
 

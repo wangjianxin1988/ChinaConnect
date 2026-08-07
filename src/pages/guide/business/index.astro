@@ -6,6 +6,7 @@
  */
 
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 
 const tools = [
   {
@@ -52,8 +53,8 @@ const tools = [
 ---
 
 <BaseLayout
-  title="Business Express / 商务快车道 - ChinaConnect"
-  description="Bilingual business tools for working with China: invitation letters, expo calendar, company registration, etiquette guide, and translation services."
+  title={translations.en.businessGuidePage?.indexTitle || "Business Express - ChinaConnect"}
+  description={translations.en.businessGuidePage?.indexDescription || "Practical tools for foreign business travelers in China."}
   meta={{
     keywords: [
       "China business guide",
@@ -78,12 +79,12 @@ const tools = [
             stroke-width="2"
             d="M15 19l-7-7 7-7"></path>
         </svg>
-        Back to China Travel Guide / 返回旅游指南
+        <span data-i18n="businessGuidePage.backToGuide">← Back to Travel Guide</span>
       </a>
       <div class="flex items-center gap-3 mb-3">
         <span class="text-4xl">💼</span>
         <div>
-          <h1 class="text-3xl md:text-4xl font-bold text-foreground">
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground" data-i18n="businessGuidePage.backToGuide">
             Business Express
           </h1>
           <p class="text-muted-foreground text-lg">商务快车道</p>

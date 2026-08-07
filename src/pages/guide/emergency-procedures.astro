@@ -2,11 +2,15 @@
 
 import EmergencyGuideClient from "@/components/Guide/EmergencyGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+
+const pageTitle = translations.en.guidePage?.emergencyTitle || "Emergency Procedures - ChinaConnect";
+const pageDescription = translations.en.guidePage?.emergencyDescription || "Complete emergency guide for China travel. Lost passport, medical emergency, theft, scams, embassy contacts, and important phone numbers.";
 ---
 
 <BaseLayout
-  title="Emergency Procedures - ChinaConnect"
-  description="Complete emergency guide for China travel. Lost passport, medical emergency, theft, scams, embassy contacts, and important phone numbers."
+  title={pageTitle}
+  description={pageDescription}
   meta={{
     keywords: ['China emergency', 'lost passport China', 'China embassy', 'China medical emergency', 'China police', '110 China'],
   }}
@@ -15,11 +19,11 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">
       <ol class="flex items-center gap-2 text-muted-foreground">
-        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><a href="/" class="hover:text-foreground transition-colors" data-i18n="guidePage.home">Home</a></li>
         <li><span>/</span></li>
-        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors" data-i18n="guidePage.travelGuide">Travel Guide</a></li>
         <li><span>/</span></li>
-        <li class="text-foreground font-medium">Emergency Procedures</li>
+        <li class="text-foreground font-medium" data-i18n="guidePage.emergencyTitleShort">Emergency Procedures</li>
       </ol>
     </nav>
 
@@ -27,8 +31,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       <div class="flex items-center gap-3 mb-4">
         <span class="text-4xl">🚨</span>
         <div>
-          <h1 class="text-4xl font-bold text-foreground">Emergency Procedures</h1>
-          <p class="text-muted-foreground text-lg">紧急情况处理 - What to do in emergencies in China</p>
+          <h1 class="text-4xl font-bold text-foreground" data-i18n="guidePage.emergencyTitleShort">Emergency Procedures</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="guidePage.emergencySubtitle">紧急情况处理 - What to do in emergencies in China</p>
         </div>
       </div>
     </div>
@@ -38,8 +42,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       <div class="flex items-center gap-2">
         <span class="text-2xl">🏥</span>
         <div>
-          <h2 class="font-semibold">Stage 11: Emergency Response</h2>
-          <p class="text-sm text-muted-foreground">Lost passport, medical emergency, theft, scams, and crisis management</p>
+          <h2 class="font-semibold" data-i18n="guidePage.emergencyStageTitle">Stage 11: Emergency Response</h2>
+          <p class="text-sm text-muted-foreground" data-i18n="guidePage.emergencyStageDescription">Lost passport, medical emergency, theft, scams, and crisis management</p>
         </div>
       </div>
     </div>

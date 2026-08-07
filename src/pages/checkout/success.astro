@@ -6,9 +6,10 @@
  * Retrieves session details and updates localStorage
  */
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { translations } from "@/i18n/translations";
 
-const title = "Payment Successful - ChinaConnect";
-const description = "Your subscription has been activated successfully";
+const title = translations.en.checkoutPage?.title || "Payment Successful - ChinaConnect";
+const description = translations.en.checkoutPage?.description || "Your subscription has been activated successfully";
 ---
 
 <BaseLayout title={title} description={description}>
@@ -18,7 +19,7 @@ const description = "Your subscription has been activated successfully";
       <div id="checkout-loading">
         <div class="animate-spin rounded-full h-16 w-16 border-b-4 border-green-600 mx-auto mb-6"></div>
         <h1 class="text-2xl font-bold text-gray-900 mb-2">Processing your payment...</h1>
-        <p class="text-gray-500">Please wait while we confirm your subscription.</p>
+        <p class="text-gray-500" data-i18n="checkoutPage.processingDesc">Please wait while we confirm your subscription.</p>
       </div>
 
       <!-- Success State (hidden by default) -->
@@ -28,11 +29,11 @@ const description = "Your subscription has been activated successfully";
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h1 class="text-3xl font-bold text-gray-900 mb-3">Payment Successful! 🎉</h1>
-        <p class="text-lg text-gray-600 mb-2" id="success-message">
+        <h1 class="text-3xl font-bold text-gray-900 mb-3" data-i18n="checkoutPage.successTitle">Payment Successful! 🎉</h1>
+        <p class="text-lg text-gray-600 mb-2" id="success-message" data-i18n="checkoutPage.successDesc">
           Your subscription has been activated.
         </p>
-        <p class="text-sm text-gray-500 mb-8">
+        <p class="text-sm text-gray-500 mb-8" data-i18n="checkoutPage.successAccess">
           You now have access to all the features of your new plan.
         </p>
 
@@ -41,13 +42,13 @@ const description = "Your subscription has been activated successfully";
             href="/ai"
             class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
           >
-            Start Planning →
+            <span data-i18n="checkoutPage.startPlanning">Start Planning →</span>
           </a>
           <a
             href="/account"
             class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors"
           >
-            View Account
+            <span data-i18n="checkoutPage.viewAccount">View Account</span>
           </a>
         </div>
       </div>
@@ -59,15 +60,15 @@ const description = "Your subscription has been activated successfully";
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </div>
-        <h1 class="text-3xl font-bold text-gray-900 mb-3">Something went wrong</h1>
-        <p class="text-gray-600 mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-3" data-i18n="checkoutPage.errorTitle">Something went wrong</h1>
+        <p class="text-gray-600 mb-8" data-i18n="checkoutPage.errorDesc">
           We couldn't verify your payment. Please contact support if you were charged.
         </p>
         <a
           href="/pricing"
           class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
         >
-          Back to Pricing
+          <span data-i18n="checkoutPage.backToPricing">Back to Pricing</span>
         </a>
       </div>
     </div>

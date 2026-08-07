@@ -2,11 +2,12 @@
 
 import TranslationServiceClient from "@/components/Guide/TranslationServiceClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 ---
 
 <BaseLayout
-  title="Translation & Interpreting Services - ChinaConnect"
-  description="Book professional interpreters and translators in China. Consecutive interpreting, simultaneous interpreting, document translation, and certified translations for legal use."
+  title={translations.en.businessGuidePage?.translationTitle || "Translation & Interpreting Services - ChinaConnect"}
+  description={translations.en.businessGuidePage?.translationDescription || "Book vetted interpreters and translators for meetings, conferences, and negotiations in China."}
   meta={{
     keywords: ['interpreter China', '翻译服务中国', 'Chinese translator booking', 'consecutive interpreting China', '同声传译'],
   }}
@@ -17,12 +18,12 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
-        Business Express / 商务快车道
+        <span data-i18n="businessGuidePage.backToGuide">← Back to Travel Guide</span>
       </a>
       <div class="flex items-center gap-3 mb-3">
         <span class="text-4xl">🌍</span>
         <div>
-          <h1 class="text-3xl md:text-4xl font-bold text-foreground">Translation & Interpreting</h1>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground" data-i18n="businessGuidePage.translationShort">Translation & Interpreting</h1>
           <p class="text-muted-foreground text-lg">翻译服务预约</p>
         </div>
       </div>

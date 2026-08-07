@@ -3,11 +3,12 @@
 import PaymentGuideClient from "@/components/Guide/PaymentGuideClient";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 // Payment Guide page SEO
-const pageTitle = "Payment Guide - ChinaConnect";
-const pageDescription = "Complete payment guide for China travel. Alipay, WeChat Pay, cash, bank cards, tax refunds, and shopping tips with practical instructions for international visitors.";
+const pageTitle = translations.en.guidePage?.paymentTitle || "Payment Guide - ChinaConnect";
+const pageDescription = translations.en.guidePage?.paymentDescription || "Complete payment guide for China travel. Alipay, WeChat Pay, cash, bank cards, tax refunds, and shopping tips with practical instructions for international visitors.";
 
 // Schema.org JSON-LD for Payment Guide (HowTo + FAQ for AI crawlers)
 const paymentSchemas = [
@@ -67,11 +68,11 @@ const paymentSchemas = [
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">
       <ol class="flex items-center gap-2 text-muted-foreground">
-        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><a href="/" class="hover:text-foreground transition-colors" data-i18n="guidePage.home">Home</a></li>
         <li><span>/</span></li>
-        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors" data-i18n="guidePage.travelGuide">Travel Guide</a></li>
         <li><span>/</span></li>
-        <li class="text-foreground font-medium">Payment Guide</li>
+        <li class="text-foreground font-medium" data-i18n="guidePage.paymentTitleShort">Payment Guide</li>
       </ol>
     </nav>
 
@@ -79,8 +80,8 @@ const paymentSchemas = [
       <div class="flex items-center gap-3 mb-4">
         <span class="text-4xl">💳</span>
         <div>
-          <h1 class="text-4xl font-bold text-foreground">Payment Guide</h1>
-          <p class="text-muted-foreground text-lg">支付指南 - Complete guide for payments in China</p>
+          <h1 class="text-4xl font-bold text-foreground" data-i18n="guidePage.paymentTitleShort">Payment Guide</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="guidePage.paymentSubtitle">支付指南 - Complete guide for payments in China</p>
         </div>
       </div>
     </div>
@@ -90,8 +91,8 @@ const paymentSchemas = [
       <div class="flex items-center gap-2">
         <span class="text-2xl">💰</span>
         <div>
-          <h2 class="font-semibold">Stages 2 & 10: Payment Systems & Shopping</h2>
-          <p class="text-sm text-muted-foreground">Set up payment methods and learn shopping tips in China</p>
+          <h2 class="font-semibold" data-i18n="guidePage.paymentStageTitle">Stages 2 & 10: Payment Systems & Shopping</h2>
+          <p class="text-sm text-muted-foreground" data-i18n="guidePage.paymentStageDescription">Set up payment methods and learn shopping tips in China</p>
         </div>
       </div>
     </div>

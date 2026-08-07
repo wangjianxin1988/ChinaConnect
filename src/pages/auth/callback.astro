@@ -1,13 +1,14 @@
 ---
 
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { translations } from "@/i18n/translations";
 ---
 
-<BaseLayout title="Signing in...">
+<BaseLayout title={translations.en.authPage?.callbackTitle || "Signing in..."}>
   <div class="min-h-screen flex items-center justify-center bg-gray-50">
     <div class="text-center">
       <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-      <p class="text-gray-500">Signing you in...</p>
+      <p class="text-gray-500" data-i18n="authPage.signingYouIn">Signing you in...</p>
     </div>
   </div>
 </BaseLayout>

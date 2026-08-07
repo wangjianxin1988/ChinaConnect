@@ -2,11 +2,12 @@
 
 import AccommodationGuideClient from "@/components/Guide/AccommodationGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
 // Accommodation Guide page SEO
-const pageTitle = "Accommodation Guide - ChinaConnect";
-const pageDescription = "Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay.";
+const pageTitle = translations.en.guidePage?.accommodationTitle || "Accommodation Guide - ChinaConnect";
+const pageDescription = translations.en.guidePage?.accommodationDescription || "Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay.";
 
 // Schema.org JSON-LD for Accommodation Guide
 const accommodationSchemas = [
@@ -44,11 +45,11 @@ const accommodationSchemas = [
     <!-- Breadcrumb -->
     <nav class="mb-6 text-sm">
       <ol class="flex items-center gap-2 text-muted-foreground">
-        <li><a href="/" class="hover:text-foreground transition-colors">Home</a></li>
+        <li><a href="/" class="hover:text-foreground transition-colors" data-i18n="guidePage.home">Home</a></li>
         <li><span>/</span></li>
-        <li><a href="/guide" class="hover:text-foreground transition-colors">Travel Guide</a></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors" data-i18n="guidePage.travelGuide">Travel Guide</a></li>
         <li><span>/</span></li>
-        <li class="text-foreground font-medium">Accommodation Guide</li>
+        <li class="text-foreground font-medium" data-i18n="guidePage.accommodationTitleShort">Accommodation Guide</li>
       </ol>
     </nav>
 
@@ -56,8 +57,8 @@ const accommodationSchemas = [
       <div class="flex items-center gap-3 mb-4">
         <span class="text-4xl">🏨</span>
         <div>
-          <h1 class="text-4xl font-bold text-foreground">Accommodation Guide</h1>
-          <p class="text-muted-foreground text-lg">住宿指南 - Complete guide for staying in China</p>
+          <h1 class="text-4xl font-bold text-foreground" data-i18n="guidePage.accommodationTitleShort">Accommodation Guide</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="guidePage.accommodationSubtitle">住宿指南 - Complete guide for staying in China</p>
         </div>
       </div>
     </div>
@@ -67,8 +68,8 @@ const accommodationSchemas = [
       <div class="flex items-center gap-2">
         <span class="text-2xl">🛏️</span>
         <div>
-          <h2 class="font-semibold">Stage 9: Accommodation Guide</h2>
-          <p class="text-sm text-muted-foreground">Hotels, hostels, and vacation rentals in China</p>
+          <h2 class="font-semibold" data-i18n="guidePage.accommodationStageTitle">Stage 9: Accommodation Guide</h2>
+          <p class="text-sm text-muted-foreground" data-i18n="guidePage.accommodationStageDescription">Hotels, hostels, and vacation rentals in China</p>
         </div>
       </div>
     </div>

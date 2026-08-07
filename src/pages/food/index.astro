@@ -6,6 +6,7 @@ import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
 import { cities, citiesMeta } from "@/data/cities/index";
 import type { Restaurant } from "@/data/cities/types";
 import { getLangFromUrl } from "@/i18n/utils";
+import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
@@ -64,8 +65,8 @@ const foodSchemas = [
 ---
 
 <BaseLayout
-  title="美食推荐 - ChinaConnect"
-  description="发现中国35城的米其林餐厅、黑珍珠榜单与本地人真心推荐"
+  title={translations.en.foodPage?.title || "China Food Map - ChinaConnect"}
+  description={translations.en.foodPage?.subtitle || "Discover China’s most loved dishes, curated cities, and curated restaurants"}
   meta={{
     keywords: ['中国美食', '米其林餐厅', '黑珍珠', '本地美食', '城市美食攻略'],
   }}
@@ -79,30 +80,30 @@ const foodSchemas = [
     <section class="text-center mb-12">
       <h1 class="text-4xl font-bold text-gray-900 mb-4">🍜 中国美食地图</h1>
       <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        探索35个城市的美食宝藏，从米其林星级餐厅到本地人私藏的苍蝇馆子
+        <span data-i18n="foodPage.subtitle">Discover China’s most loved dishes, curated cities, and curated restaurants</span>
       </p>
 
       <!-- Stats -->
       <div class="flex flex-wrap justify-center gap-6 mt-8">
         <div class="bg-amber-50 border border-amber-200 rounded-xl px-6 py-3">
           <div class="text-2xl font-bold text-amber-600">{totalMichelin}</div>
-          <div class="text-sm text-amber-700">米其林餐厅</div>
+          <div class="text-sm text-amber-700" data-i18n="foodPage.filterMichelin">Michelin</div>
         </div>
         <div class="bg-slate-50 border border-slate-200 rounded-xl px-6 py-3">
           <div class="text-2xl font-bold text-slate-700">{totalBlackpearl}</div>
-          <div class="text-sm text-slate-600">黑珍珠餐厅</div>
+          <div class="text-sm text-slate-600" data-i18n="foodPage.filterBlackPearl">Black Pearl</div>
         </div>
         <div class="bg-red-50 border border-red-200 rounded-xl px-6 py-3">
           <div class="text-2xl font-bold text-red-600">{totalByCategory["local"] || 0}</div>
-          <div class="text-sm text-red-700">本地人推荐</div>
+          <div class="text-sm text-red-700" data-i18n="foodPage.filterLocal">Local Picks</div>
         </div>
         <div class="bg-blue-50 border border-blue-200 rounded-xl px-6 py-3">
           <div class="text-2xl font-bold text-blue-600">{totalByCategory["affordable"] || 0}</div>
-          <div class="text-sm text-blue-700">平价美食</div>
+          <div class="text-sm text-blue-700" data-i18n="foodPage.filterBudget">Budget</div>
         </div>
         <div class="bg-orange-50 border border-orange-200 rounded-xl px-6 py-3">
           <div class="text-2xl font-bold text-orange-600">{totalByCategory["street_food"] || 0}</div>
-          <div class="text-sm text-orange-700">苍蝇馆子</div>
+          <div class="text-sm text-orange-700" data-i18n="foodPage.filterCasual">Casual</div>
         </div>
       </div>
     </section>
@@ -259,8 +260,8 @@ const foodSchemas = [
       <!-- Empty state for filtered results -->
       <div id="empty-state" class="text-center py-16 hidden">
         <div class="text-6xl mb-4">🍽️</div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">暂无城市</h3>
-        <p class="text-gray-500 mb-6">该分类下暂无城市，请选择其他分类</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="foodPage.cityEmpty">No cities yet</h3>
+        <p class="text-gray-500 mb-6" data-i18n="foodPage.cityEmptyDesc">There are no cities in this category — please pick another category.</p>
       </div>
     </section>
 
@@ -274,7 +275,7 @@ const foodSchemas = [
         href="/city/shanghai"
         class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors"
       >
-        <span>从上海开始</span>
+        <span data-i18n="foodPage.emptyCta">Start from Shanghai</span>
         <span>→</span>
       </a>
     </section>

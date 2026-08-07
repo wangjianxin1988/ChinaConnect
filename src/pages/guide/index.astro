@@ -1,6 +1,10 @@
 ---
 
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+
+const pageTitle = translations.en.guidePage?.indexTitle || "Complete Travel Guide to China - ChinaConnect";
+const pageDescription = translations.en.guidePage?.indexDescription || "Complete 12-stage travel guide for China plus business travel essentials.";
 const guides = [
   {
     title: "Visa Guide",
@@ -136,25 +140,25 @@ const colorClasses = {
 ---
 
 <BaseLayout
-  title="Complete Travel Guide to China - ChinaConnect"
-  description="中国完整旅游指南 - Complete 12-stage travel guide for China plus business travel essentials. From visa application to departure, covering every aspect of your journey."
+  title={pageTitle}
+  description={pageDescription}
   meta={{
     keywords: ['China travel guide', 'China guide', 'travel China', 'China tips', 'China preparation', 'China business guide', '商务快车道', '中国商务指南'],
   }}
 >
   <main class="container mx-auto px-4 py-8">
     <div class="mb-12 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4" data-i18n="guidePage.indexHeroTitle">
         🇨🇳 中国完整旅游指南
       </h1>
-      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto" data-i18n="guidePage.indexHeroSubtitle">
         Complete Travel Guide to China — 从出发准备到离境，涵盖旅行的方方面面，同时包含商务差旅实用工具
       </p>
     </div>
 
     <!-- Journey Overview -->
     <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 mb-12 text-white">
-      <h2 class="text-2xl font-bold mb-6">Your 12-Stage Journey</h2>
+      <h2 class="text-2xl font-bold mb-6" data-i18n="guidePage.indexStagesTitle">Your 12-Stage Journey</h2>
       <div class="grid md:grid-cols-4 gap-4">
         <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
           <div class="text-3xl mb-2">📋</div>
@@ -185,7 +189,7 @@ const colorClasses = {
 
     <!-- Travel Guide Cards -->
     <div class="mb-4">
-      <h2 class="text-2xl font-bold text-foreground mb-6">🗺️ 旅行指南 Travel Guides</h2>
+      <h2 class="text-2xl font-bold text-foreground mb-6" data-i18n="guidePage.indexGuidesHeading">🗺️ 旅行指南 Travel Guides</h2>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {guides.map((guide, index) => (
@@ -220,8 +224,8 @@ const colorClasses = {
 
     <!-- Business Travel Section -->
     <div id="business-tools" class="mt-16 mb-4">
-      <h2 class="text-2xl font-bold text-foreground mb-2">🚀 商务差旅工具 Business Travel Tools</h2>
-      <p class="text-muted-foreground mb-6">从邀请函到商务礼仪，为外国商务人士提供的五大实用工具 — 完整旅游指南的一部分</p>
+      <h2 class="text-2xl font-bold text-foreground mb-2" data-i18n="guidePage.indexBusinessHeading">🚀 商务差旅工具 Business Travel Tools</h2>
+      <p class="text-muted-foreground mb-6" data-i18n="guidePage.indexBusinessSubtitle">从邀请函到商务礼仪，为外国商务人士提供的五大实用工具 — 完整旅游指南的一部分</p>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {businessGuides.map((guide) => (
@@ -256,9 +260,9 @@ const colorClasses = {
         class="group bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white flex flex-col justify-center items-center hover:shadow-lg transition-all hover:-translate-y-1"
       >
         <span class="text-5xl mb-4">📋</span>
-        <h3 class="text-xl font-bold mb-2">View All Business Tools</h3>
-        <p class="text-white/80 text-sm text-center mb-4">查看完整商务工具页面，包含详细统计和快速入门指南</p>
-        <span class="text-sm font-medium group-hover:translate-x-1 transition-transform">
+        <h3 class="text-xl font-bold mb-2" data-i18n="guidePage.viewAllBusinessTools">View All Business Tools</h3>
+        <p class="text-white/80 text-sm text-center mb-4" data-i18n="guidePage.viewAllBusinessToolsDesc">查看完整商务工具页面，包含详细统计和快速入门指南</p>
+        <span class="text-sm font-medium group-hover:translate-x-1 transition-transform" data-i18n="guidePage.viewAllBusinessToolsCta">
           Go to Business Express →
         </span>
       </a>
@@ -271,21 +275,21 @@ const colorClasses = {
           <span class="text-3xl">🏯</span>
           <h3 class="font-semibold text-lg group-hover:text-primary transition-colors">Beijing</h3>
         </div>
-        <p class="text-sm text-muted-foreground">Explore China's capital with our comprehensive city guide</p>
+        <p class="text-sm text-muted-foreground" data-i18n="guidePage.quickBeijingDesc">Explore China's capital with our comprehensive city guide</p>
       </a>
       <a href="/food" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
         <div class="flex items-center gap-3 mb-3">
           <span class="text-3xl">🍜</span>
           <h3 class="font-semibold text-lg group-hover:text-primary transition-colors">Food Guide</h3>
         </div>
-        <p class="text-sm text-muted-foreground">Michelin stars, Black Pearl restaurants, and local favorites</p>
+        <p class="text-sm text-muted-foreground" data-i18n="guidePage.quickFoodDesc">Michelin stars, Black Pearl restaurants, and local favorites</p>
       </a>
       <a href="/guide/scam-prevention" class="bg-card rounded-xl border p-6 hover:shadow-md transition-shadow group">
         <div class="flex items-center gap-3 mb-3">
           <span class="text-3xl">🛡️</span>
           <h3 class="font-semibold text-lg group-hover:text-primary transition-colors">Scam Prevention</h3>
         </div>
-        <p class="text-sm text-muted-foreground">Protect yourself from common scams and tourist traps</p>
+        <p class="text-sm text-muted-foreground" data-i18n="guidePage.quickScamDesc">Protect yourself from common scams and tourist traps</p>
       </a>
     </div>
 
@@ -294,28 +298,29 @@ const colorClasses = {
       <div class="flex items-start gap-4">
         <span class="text-4xl">🚨</span>
         <div>
-          <h3 class="font-semibold text-lg text-red-800">Emergency Contacts - Save These Numbers</h3>
+          <h3 class="font-semibold text-lg text-red-800" data-i18n="guidePage.emergencyHeading">Emergency Contacts - Save These Numbers</h3>
           <div class="grid md:grid-cols-4 gap-4 mt-4">
             <div class="bg-white rounded-lg p-4 text-center">
               <div class="text-2xl font-bold text-red-600">110</div>
-              <div class="text-sm text-muted-foreground">Police</div>
+            <div class="text-sm text-muted-foreground" data-i18n="guidePage.emergencyPolice">Police</div>
             </div>
             <div class="bg-white rounded-lg p-4 text-center">
               <div class="text-2xl font-bold text-red-600">120</div>
-              <div class="text-sm text-muted-foreground">Ambulance</div>
+            <div class="text-sm text-muted-foreground" data-i18n="guidePage.emergencyAmbulance">Ambulance</div>
             </div>
             <div class="bg-white rounded-lg p-4 text-center">
               <div class="text-2xl font-bold text-red-600">119</div>
-              <div class="text-sm text-muted-foreground">Fire</div>
+            <div class="text-sm text-muted-foreground" data-i18n="guidePage.emergencyFire">Fire</div>
             </div>
             <div class="bg-white rounded-lg p-4 text-center">
               <div class="text-2xl font-bold text-red-600">12301</div>
-              <div class="text-sm text-muted-foreground">Tourism Hot</div>
+            <div class="text-sm text-muted-foreground" data-i18n="guidePage.emergencyTourism">Tourism Hot</div>
             </div>
           </div>
           <a
             href="/guide/emergency-procedures"
             class="inline-block mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
+          data-i18n="guidePage.viewFullEmergency"
           >
             View Full Emergency Guide →
           </a>
