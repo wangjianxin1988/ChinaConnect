@@ -190,6 +190,32 @@ export interface Translations {
     aiAssistant: string;
     aiAssistantDesc: string;
   };
+  // Auth - register page
+  register?: {
+    subtitle: string;
+    username: string;
+    usernamePlaceholder: string;
+    email: string;
+    emailPlaceholder: string;
+    password: string;
+    passwordPlaceholder: string;
+    confirmPassword: string;
+    confirmPasswordPlaceholder: string;
+    submit: string;
+    orContinueWith: string;
+    signUpWithGoogle: string;
+    haveAccount: string;
+    signIn: string;
+    errorPasswordMismatch: string;
+    errorPasswordLength: string;
+    creating: string;
+    errorTimeout: string;
+    successEmailSent: string;
+    accountCreated: string;
+    errorGoogle: string;
+    errorDefault: string;
+  };
+
   // Pricing page
   pricing?: {
     cancelledNotice: string;
@@ -444,6 +470,31 @@ export const translations: Record<Language, Translations> = {
       culturalTipsDesc: "Local customs, etiquette, and cultural insights for each city",
       aiAssistant: "AI Assistant",
       aiAssistantDesc: "Ask questions in English, get instant answers about China travel",
+    },
+    register: {
+      subtitle: "Create your account",
+      username: "Username",
+      usernamePlaceholder: "Your display name",
+      email: "Email",
+      emailPlaceholder: "you@example.com",
+      password: "Password",
+      passwordPlaceholder: "At least 6 characters",
+      confirmPassword: "Confirm Password",
+      confirmPasswordPlaceholder: "Repeat your password",
+      submit: "Create Account",
+      orContinueWith: "or continue with",
+      signUpWithGoogle: "Sign up with Google",
+      haveAccount: "Already have an account?",
+      signIn: "Sign in",
+      errorPasswordMismatch: "Passwords do not match",
+      errorPasswordLength: "Password must be at least 6 characters",
+      creating: "Creating account...",
+      errorTimeout: "Registration timed out. Please try again.",
+      successEmailSent:
+        "Account created! Please check your email to confirm your account, then sign in.",
+      accountCreated: "Account Created",
+      errorGoogle: "Google sign-up failed",
+      errorDefault: "Registration failed",
     },
     language: {
       switchTo: "Switch to",
