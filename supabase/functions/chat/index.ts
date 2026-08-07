@@ -307,7 +307,7 @@ Deno.serve(async (req: Request) => {
   if (!conversationId) {
     const { data: conv, error: convErr } = await supabase
       .from("ai_conversations")
-      .insert({ user_id: userId, message_count: 0 })
+      .insert({ user_id: userId, message_count: 0, language: body.language ?? null })
       .select("id")
       .single();
     if (convErr || !conv) {
@@ -444,12 +444,23 @@ Deno.serve(async (req: Request) => {
     .select("*", { count: "exact", head: true })
     .eq("conversation_id", conversationId);
 
+  // Build / refresh a short per-conversation summary used by the left sidebar.
+  // Derived deterministically from the first user message and the final
+  // assistant reply so each user gets their own per-conversation summary
+  // persisted next to their conversation row.
+  const summarySource = [lastUserMsg?.content ?? "", lastAssistantContent ?? ""].join("\n");
+  const summaryTrimmed = summarySource.trim();
+  const summary =
+    summaryTrimmed.length > 120 ? summaryTrimmed.slice(0, 117).trimEnd() + "..." : summaryTrimmed;
+  const languageTag = (body.language ?? "").toString().trim();
   await supabase
     .from("ai_conversations")
     .update({
       last_message_at: new Date().toISOString(),
       message_count: msgCount ?? 1,
       updated_at: new Date().toISOString(),
+      summary,
+      ...(languageTag ? { language: languageTag } : {}),
     })
     .eq("id", conversationId);
 

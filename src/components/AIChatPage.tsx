@@ -430,44 +430,37 @@ export default function AIChatPage() {
           </section>
         )}
 
-        {/* Main chat area — full width within its column */}
+        {/* Chat area stretches edge-to-edge inside the right column. */}
         <section className="bg-white">
-          <div className="w-full px-4 md:px-6 lg:px-8 py-6 max-w-none">
-            <div className="mb-4">
+          <div className="w-full px-3 sm:px-4 md:px-6 lg:px-8 py-4 md:py-6">
+            {/* Core panel: usage banner + chat. Always first so the AI surface
+                remains the widest block across breakpoints. */}
+            <div className="mb-3">
               <MembershipStatusBar />
             </div>
 
             {showExhaustedBanner && (
-              <div className="mb-4">
+              <div className="mb-3">
                 <UsageExhaustedBanner onDismiss={() => setShowExhaustedBanner(false)} />
               </div>
             )}
 
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <div className="w-full bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
               <AIChat
                 externalPrompt={externalPrompt}
                 onExternalPromptConsumed={() => setExternalPrompt(null)}
               />
             </div>
-          </div>
-        </section>
 
-        {/* Pricing teaser below */}
-        {!chatStarted && (
-          <section className="bg-white py-12 border-t border-gray-100">
-            <div className="container-custom">
-              <div className="max-w-5xl mx-auto">
-                <h2 className="text-2xl font-bold text-gray-900 text-center mb-2">
-                  Choose Your Plan
-                </h2>
-                <p className="text-gray-500 text-center mb-8">
-                  Unlock more AI requests, save itineraries, and access premium features.
-                </p>
+            {/* Secondary widgets ordered by importance: pricing first so
+                unauthenticated visitors see the upgrade path after the chat. */}
+            {!chatStarted && (
+              <div className="mt-6">
                 <SubscriptionCard />
               </div>
-            </div>
-          </section>
-        )}
+            )}
+          </div>
+        </section>
       </div>
     </div>
   );

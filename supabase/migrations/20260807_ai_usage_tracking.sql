@@ -110,6 +110,14 @@ BEGIN
     SELECT * INTO v_count, v_period, v_reset_at, v_tier, v_max
       FROM public.get_user_ai_usage(p_user_id);
 
+    -- Lock this user's ai_usage row (or absence of one) for the current period
+    -- so the read/modify/write of the counter is race-free across concurrent requests.
+    PERFORM 1
+      FROM public.ai_usage
+     WHERE user_id = p_user_id
+       AND period_yyyymm = v_period
+     FOR UPDATE;
+
     -- Business/enterprise = unlimited
     IF v_max = -1 THEN
         v_allowed := TRUE;
