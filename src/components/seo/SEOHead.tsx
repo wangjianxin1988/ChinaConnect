@@ -13,7 +13,7 @@ interface SEOHeadProps {
   schemas?: Record<string, unknown>[];
 }
 
-const SITE_URL = "https://chinaconnect.io";
+const SITE_URL = "https://chinaengage.org";
 const SITE_NAME = "ChinaConnect";
 
 // Supported languages for hreflang

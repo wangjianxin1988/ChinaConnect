@@ -25,7 +25,7 @@ export interface BreadcrumbProps {
 }
 
 const DEFAULT_SEPARATOR = "/";
-const SITE_URL = "https://chinaconnect.io";
+const SITE_URL = "https://chinaengage.org";
 const SCHEMA_ID = "breadcrumb-schema";
 
 /**

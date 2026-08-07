@@ -20,7 +20,7 @@ export interface LanguageSwitcherProps {
   includeXDefault?: boolean;
 }
 
-const SITE_URL = "https://chinaconnect.io";
+const SITE_URL = "https://chinaengage.org";
 
 /**
  * Generate the URL for a specific language

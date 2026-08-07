@@ -3,7 +3,7 @@
 
 import type { CityInfo, EventSEOData, FAQItem, RestaurantSEOData } from "@/types/seo";
 
-const SITE_URL = "https://chinaconnect.io";
+const SITE_URL = "https://chinaengage.org";
 const SITE_NAME = "ChinaConnect";
 const SITE_DESCRIPTION =
   "Connect with China's finest culinary experiences - Michelin stars, Black Pearl restaurants, and local favorites.";
@@ -211,7 +211,7 @@ export function generateOrganizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      email: "support@chinaconnect.io",
+      email: "support@chinaengage.org",
       availableLanguage: ["English", "Chinese"],
     },
   };

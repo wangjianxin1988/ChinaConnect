@@ -24,7 +24,7 @@ describe("generateRobotsTxt", () => {
 
   it("includes sitemap declaration", () => {
     const content = generateRobotsTxt();
-    expect(content).toContain("Sitemap: https://chinaconnect.com/sitemap.xml");
+    expect(content).toContain("Sitemap: https://chinaengage.org/sitemap.xml");
   });
 
   it("uses custom sitemap URL when provided", () => {
@@ -32,7 +32,7 @@ describe("generateRobotsTxt", () => {
     const content = generateRobotsTxt(customSitemap);
 
     expect(content).toContain(`Sitemap: ${customSitemap}`);
-    expect(content).not.toContain("Sitemap: https://chinaconnect.com/sitemap.xml");
+    expect(content).not.toContain("Sitemap: https://chinaengage.org/sitemap.xml");
   });
 
   it("allows all user agents by default", () => {

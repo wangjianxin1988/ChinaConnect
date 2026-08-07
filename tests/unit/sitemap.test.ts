@@ -13,9 +13,9 @@ import { describe, expect, it } from "vitest";
 
 describe("SITE_URL constant", () => {
   it("uses correct site URL", () => {
-    // The sitemap should use https://chinaconnect.com
+    // The sitemap should use https://chinaengage.org
     const sitemap = generateFullSitemap();
-    expect(sitemap).toContain("https://chinaconnect.com");
+    expect(sitemap).toContain("https://chinaengage.org");
   });
 });
 
@@ -82,7 +82,7 @@ describe("generateSitemapXml", () => {
     const sections = [
       {
         name: "test",
-        entries: [{ url: "https://chinaconnect.com/food/1?param=test&value=1", priority: 0.8 }],
+        entries: [{ url: "https://chinaengage.org/food/1?param=test&value=1", priority: 0.8 }],
       },
     ];
     const xml = generateSitemapXml(sections);
@@ -107,7 +107,7 @@ describe("createRestaurantSitemapEntry", () => {
   it("generates correct sitemap entry", () => {
     const entry = createRestaurantSitemapEntry("rest-123", "beijing");
 
-    expect(entry.url).toBe("https://chinaconnect.com/food/rest-123");
+    expect(entry.url).toBe("https://chinaengage.org/food/rest-123");
     expect(entry.changeFrequency).toBe("weekly");
     expect(entry.priority).toBe(0.8);
   });
@@ -152,7 +152,7 @@ describe("generateFullSitemap", () => {
     const sitemap = generateFullSitemap();
 
     // Should contain entries from all sections
-    expect(sitemap).toContain("chinaconnect.com");
+    expect(sitemap).toContain("chinaengage.org");
     expect(sitemap).toContain("<url>");
     expect(sitemap).toContain("</url>");
   });

@@ -1,9 +1,19 @@
-import { readdirSync, readFileSync, writeFileSync, statSync } from 'node:fs';
-import { join } from 'node:path';
+﻿import { readdirSync, readFileSync, writeFileSync, statSync } from "node:fs";
+import { join } from "node:path";
 
-const roots = ['src', 'public', 'scripts', 'astro.config.mjs', 'wrangler.toml'];
+const roots = ["src", "public", "scripts", "astro.config.mjs", "wrangler.toml"];
 const targets = [];
-const skipDirs = new Set(['node_modules', '.git', 'dist', '.astro', '.wrangler', '.claude', '.agents', '.supabase-cache', '.supabase-schema']);
+const skipDirs = new Set([
+  "node_modules",
+  ".git",
+  "dist",
+  ".astro",
+  ".wrangler",
+  ".claude",
+  ".agents",
+  ".supabase-cache",
+  ".supabase-schema",
+]);
 
 function walk(dir) {
   for (const e of readdirSync(dir)) {
@@ -23,18 +33,21 @@ for (const r of roots) {
   } catch {}
 }
 
+const FROM = "chinaengage.org";
+const TO = "chinaengage.org";
 let totalChanges = 0;
 const changedFiles = [];
 for (const f of targets) {
-  const orig = readFileSync(f, 'utf8');
-  const next = orig.replace(/chinaconnect\.com/g, 'chinaconnect.io');
+  const orig = readFileSync(f, "utf8");
+  const next = orig.split(FROM).join(TO);
   if (next !== orig) {
     writeFileSync(f, next);
-    const count = (orig.match(/chinaconnect\.com/g) || []).length;
+    const count = (orig.match(new RegExp(FROM.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || [])
+      .length;
     totalChanges += count;
-    changedFiles.push(f + ' (' + count + ')');
+    changedFiles.push(f + " (" + count + ")");
   }
 }
-console.log('Changed files:');
-changedFiles.forEach(f => console.log('  ' + f));
-console.log('Total replacements:', totalChanges);
+console.log("Changed files:");
+changedFiles.forEach((f) => console.log("  " + f));
+console.log("Total replacements:", totalChanges);

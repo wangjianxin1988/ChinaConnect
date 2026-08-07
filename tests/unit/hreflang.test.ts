@@ -47,17 +47,17 @@ describe("generateHreflangUrls", () => {
 
     const enUrl = urls.find((u) => u.hreflang === "en");
     // Default locale (en) has no ?lang= query param
-    expect(enUrl?.href).toBe("https://chinaconnect.com/beijing");
+    expect(enUrl?.href).toBe("https://chinaengage.org/beijing");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/beijing?lang=zh-CN");
+    expect(zhUrl?.href).toBe("https://chinaengage.org/beijing?lang=zh-CN");
   });
 
   it("handles paths with leading/trailing slashes", () => {
     const urls = generateHreflangUrls("///beijing///");
 
     const enUrl = urls.find((u) => u.hreflang === "en");
-    expect(enUrl?.href).toBe("https://chinaconnect.com/beijing");
+    expect(enUrl?.href).toBe("https://chinaengage.org/beijing");
   });
 });
 
@@ -67,7 +67,7 @@ describe("generateHreflangUrlsWithDefault", () => {
     const xDefault = urls.find((u) => u.hreflang === "x-default");
 
     expect(xDefault).toBeDefined();
-    expect(xDefault?.href).toBe("https://chinaconnect.com/beijing");
+    expect(xDefault?.href).toBe("https://chinaengage.org/beijing");
   });
 });
 
@@ -77,10 +77,10 @@ describe("generateCityHreflangUrls", () => {
 
     const enUrl = urls.find((u) => u.hreflang === "en");
     // English (default locale) has no ?lang= query param
-    expect(enUrl?.href).toBe("https://chinaconnect.com/city/beijing");
+    expect(enUrl?.href).toBe("https://chinaengage.org/city/beijing");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/city/beijing?lang=zh-CN");
+    expect(zhUrl?.href).toBe("https://chinaengage.org/city/beijing?lang=zh-CN");
   });
 });
 
@@ -90,34 +90,34 @@ describe("generateRestaurantHreflangUrls", () => {
 
     const enUrl = urls.find((u) => u.hreflang === "en");
     // English (default locale) has no ?lang= query param
-    expect(enUrl?.href).toBe("https://chinaconnect.com/food/rest-123");
+    expect(enUrl?.href).toBe("https://chinaengage.org/food/rest-123");
 
     const zhUrl = urls.find((u) => u.hreflang === "zh-CN");
-    expect(zhUrl?.href).toBe("https://chinaconnect.com/food/rest-123?lang=zh-CN");
+    expect(zhUrl?.href).toBe("https://chinaengage.org/food/rest-123?lang=zh-CN");
   });
 });
 
 describe("getCanonicalUrl", () => {
   it("returns URL without query param for default locale", () => {
     const canonical = getCanonicalUrl("/beijing", "en");
-    expect(canonical).toBe("https://chinaconnect.com/beijing");
+    expect(canonical).toBe("https://chinaengage.org/beijing");
   });
 
   it("returns URL without query param (canonical is always locale-free)", () => {
     const canonical = getCanonicalUrl("/beijing", "zh-CN");
-    expect(canonical).toBe("https://chinaconnect.com/beijing");
+    expect(canonical).toBe("https://chinaengage.org/beijing");
   });
 });
 
 describe("isCanonicalUrl", () => {
   it("identifies canonical URLs", () => {
-    expect(isCanonicalUrl("https://chinaconnect.com/beijing")).toBe(true);
-    expect(isCanonicalUrl("https://chinaconnect.com/")).toBe(true);
+    expect(isCanonicalUrl("https://chinaengage.org/beijing")).toBe(true);
+    expect(isCanonicalUrl("https://chinaengage.org/")).toBe(true);
   });
 
   it("identifies non-canonical URLs (those with ?lang=)", () => {
-    expect(isCanonicalUrl("https://chinaconnect.com/beijing?lang=en")).toBe(false);
-    expect(isCanonicalUrl("https://chinaconnect.com/beijing?lang=zh-CN")).toBe(false);
+    expect(isCanonicalUrl("https://chinaengage.org/beijing?lang=en")).toBe(false);
+    expect(isCanonicalUrl("https://chinaengage.org/beijing?lang=zh-CN")).toBe(false);
   });
 });
 
@@ -147,7 +147,7 @@ describe("generateHreflangSitemapXml", () => {
   it("generates valid XML with xhtml links", () => {
     const entries = [
       {
-        url: "https://chinaconnect.com/beijing",
+        url: "https://chinaengage.org/beijing",
         hreflangs: generateHreflangUrls("/beijing"),
       },
     ];

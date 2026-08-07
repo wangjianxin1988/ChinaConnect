@@ -195,9 +195,9 @@ describe("generateEventSchema", () => {
 describe("generateBreadcrumbSchema", () => {
   it("generates valid BreadcrumbList schema", () => {
     const items = [
-      { name: "Home", url: "https://chinaconnect.com/" },
-      { name: "Beijing", url: "https://chinaconnect.com/beijing" },
-      { name: "Test Restaurant", url: "https://chinaconnect.com/food/test-123" },
+      { name: "Home", url: "https://chinaengage.org/" },
+      { name: "Beijing", url: "https://chinaengage.org/beijing" },
+      { name: "Test Restaurant", url: "https://chinaengage.org/food/test-123" },
     ];
 
     const schema = generateBreadcrumbSchema(items);

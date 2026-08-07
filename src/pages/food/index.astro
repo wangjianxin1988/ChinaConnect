@@ -53,12 +53,12 @@ const foodSchemas = [
   generateCollectionPageSchema({
     name: "Chinese Restaurants on ChinaConnect",
     description: `Discover ${totalMichelin}+ Michelin-starred restaurants, ${totalBlackpearl}+ Black Pearl establishments, and local favorites across Chinese cities. Find the best Chinese cuisine with detailed reviews, locations, and travel tips.`,
-    url: "https://chinaconnect.io/food",
+    url: "https://chinaengage.org/food",
     numberOfItems: cities.reduce((sum, c) => sum + (c.restaurants?.length || 0), 0),
   }),
   generateBreadcrumbSchema([
-    { name: "Home", url: "https://chinaconnect.io/" },
-    { name: "Food Guide", url: "https://chinaconnect.io/food" },
+    { name: "Home", url: "https://chinaengage.org/" },
+    { name: "Food Guide", url: "https://chinaengage.org/food" },
   ]),
 ];
 ---

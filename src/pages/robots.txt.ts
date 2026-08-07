@@ -4,7 +4,7 @@
 
 import type { APIRoute } from "astro";
 
-const SITE_URL = "https://chinaconnect.io";
+const SITE_URL = "https://chinaengage.org";
 
 // ============================================================================
 // AI Crawler User Agents

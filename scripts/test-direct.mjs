@@ -1,0 +1,13 @@
+const r = await fetch("https://chinaengage.org/", { redirect: "follow" });
+console.log("Status:", r.status);
+console.log("Final URL:", r.url);
+const t = await r.text();
+console.log("Body len:", t.length);
+console.log("Has chinaengage.org:", t.includes("chinaengage.org"));
+console.log("Has chinaconnect.io:", t.includes("chinaconnect.io"));
+const c = t.match(/canonical[^>]*?(https?:[^>"'\'']+)/i);
+console.log("Canonical:", c ? c[1] : "not found");
+const o = t.match(/og:url[^>]*?(https?:[^>"'\'']+)/i);
+console.log("OG url:", o ? o[1] : "not found");
+const h = (t.match(/hreflang="[a-z-]+"/g) || []).length;
+console.log("Hreflang count:", h);
