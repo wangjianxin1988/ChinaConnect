@@ -18,7 +18,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
     {cancelled && (
       <div class="bg-amber-50 border-b border-amber-200 py-3 px-4 text-center">
         <p class="text-sm text-amber-800 font-medium">
-          ⚠️ Payment was cancelled. You can try again below.
+          ⚠️ <span data-i18n="pricing.cancelledNotice">Payment was cancelled. You can try again below.</span>
         </p>
       </div>
     )}
@@ -33,10 +33,10 @@ const cancelled = Astro.url.searchParams.get('cancelled');
       <div class="container-custom relative z-10 text-center">
         <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
           <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-          <span class="text-sm text-white/90 font-medium">Trusted by 10,000+ travelers</span>
+          <span class="text-sm text-white/90 font-medium"><span data-i18n="pricing.trustedBy">Trusted by 10,000+ travelers</span></span>
         </div>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Simple, Transparent Pricing
+          <span data-i18n="pricing.heroTitle">Simple, Transparent Pricing</span>
         </h1>
         <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
           Unlock the full potential of AI-powered travel planning for China.<br class="hidden md:block" />
@@ -54,14 +54,14 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             class="billing-toggle px-6 py-2.5 rounded-lg text-sm font-semibold bg-white text-gray-900 shadow-md transition-all duration-200"
             data-billing="monthly"
           >
-            Monthly
+            <span data-i18n="pricing.billingMonthly">Monthly</span>
           </button>
           <button
             id="billing-annual"
             class="billing-toggle px-6 py-2.5 rounded-lg text-sm font-semibold text-gray-500 hover:text-gray-700 transition-all duration-200 relative"
             data-billing="annual"
           >
-            Annual
+            <span data-i18n="pricing.billingAnnual">Annual</span>
             <span class="ml-1.5 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-green-100 text-green-700">-20%</span>
           </button>
         </div>
@@ -83,7 +83,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
                 <span class="text-3xl">🆓</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900">Free</h3>
-              <p class="text-sm text-gray-500 mt-1">Get started with basic planning</p>
+              <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.free.description">Get started with basic planning</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
               <div class="flex items-baseline justify-center gap-1">
@@ -115,21 +115,21 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               </li>
             </ul>
             <button class="w-full py-3 px-4 rounded-xl border-2 border-gray-200 text-gray-500 font-semibold cursor-default text-sm" data-tier="free" disabled>
-              Current Plan
+              <span data-i18n="pricing.currentPlan">Current Plan</span>
             </button>
           </div>
 
           {/* Explorer - POPULAR */}
           <div class="pricing-card group bg-white rounded-2xl border-2 border-blue-500 p-7 shadow-lg shadow-blue-500/10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative lg:-mt-4">
             <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
-              <span class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md uppercase tracking-wider">Most Popular</span>
+              <span class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md uppercase tracking-wider"><span data-i18n="pricing.popularBadge">Most Popular</span></span>
             </div>
             <div class="text-center mb-6">
               <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <span class="text-3xl">🧭</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900">Explorer</h3>
-              <p class="text-sm text-gray-500 mt-1">Best for casual travelers</p>
+              <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.explorer.description">Best for casual travelers</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
               <div class="flex items-baseline justify-center gap-1">
@@ -174,7 +174,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
                 <span class="text-3xl">✈️</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900">Traveler</h3>
-              <p class="text-sm text-gray-500 mt-1">For frequent China visitors</p>
+              <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.traveler.description">For frequent China visitors</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
               <div class="flex items-baseline justify-center gap-1">
@@ -219,7 +219,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
                 <span class="text-3xl">💼</span>
               </div>
               <h3 class="text-xl font-bold text-gray-900">Business</h3>
-              <p class="text-sm text-gray-500 mt-1">For travel professionals</p>
+              <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.business.description">For travel professionals</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
               <div class="flex items-baseline justify-center gap-1">
@@ -233,7 +233,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             <ul class="space-y-3 mb-8 text-left">
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700 font-bold">Unlimited AI requests</span>
+                <span class="text-gray-700 font-bold"><span data-i18n="pricing.unlimited">Unlimited</span> AI requests</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
@@ -280,7 +280,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
     <section class="py-20 bg-gray-50">
       <div class="container-custom">
         <div class="text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Compare All Features</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"><span data-i18n="pricing.compareTitle">Compare All Features</span></h2>
           <p class="text-gray-600 max-w-xl mx-auto">See exactly what's included in each plan. All plans include access to our AI-powered travel assistant.</p>
         </div>
         <div class="overflow-x-auto max-w-5xl mx-auto">
@@ -300,7 +300,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
                 <td class="py-4 px-5 text-center text-sm text-gray-600">5</td>
                 <td class="py-4 px-5 text-center text-sm font-semibold text-blue-600 bg-blue-50/30">20</td>
                 <td class="py-4 px-5 text-center text-sm font-semibold text-purple-600">40</td>
-                <td class="py-4 px-5 text-center text-sm font-bold text-green-600">Unlimited �?/td>
+                <td class="py-4 px-5 text-center text-sm font-bold text-green-600"><span data-i18n="pricing.unlimited">Unlimited</span> �?/td>
               </tr>
               <tr class="border-b border-gray-50 bg-gray-50/30 hover:bg-gray-50/50 transition-colors">
                 <td class="py-4 px-8 text-sm font-medium text-gray-700">Save Itineraries</td>
@@ -368,7 +368,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
     <section class="py-20 bg-white">
       <div class="container-custom">
         <div class="text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Loved by Travelers Worldwide</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"><span data-i18n="pricing.testimonialsTitle">Loved by Travelers Worldwide</span></h2>
           <p class="text-gray-600 max-w-xl mx-auto">Hear what our users say about their ChinaConnect experience</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -422,7 +422,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
     <section class="py-20 bg-gray-50">
       <div class="container-custom">
         <div class="text-center mb-14">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"><span data-i18n="pricing.faqTitle">Frequently Asked Questions</span></h2>
           <p class="text-gray-600 max-w-xl mx-auto">Everything you need to know about our plans and billing</p>
         </div>
         <div class="max-w-3xl mx-auto space-y-3" id="faq-container">
@@ -458,7 +458,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
             </button>
             <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
               <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">
-                We offer a 7-day money-back guarantee for new subscribers. If you're not satisfied within the first 7 days, contact our support team for a full refund. After 7 days, refunds are handled on a case-by-case basis. Annual plans can be refunded prorated within the first 30 days.
+                We offer a 7-day money-back guarantee for new subscribers. If you're not satisfied within the first 7 days, contact our support team for a full refund. After 7 days, refunds are handled on a case-by-case basis. <span data-i18n="pricing.billingAnnual">Annual</span> plans can be refunded prorated within the first 30 days.
               </div>
             </div>
           </div>
@@ -508,15 +508,15 @@ const cancelled = Astro.url.searchParams.get('cancelled');
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white rounded-full blur-3xl"></div>
       </div>
       <div class="container-custom text-center relative z-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">Ready to Start Your China Adventure?</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-5"><span data-i18n="pricing.ctaTitle">Ready to Start Your China Adventure?</span></h2>
         <p class="text-blue-100 mb-10 max-w-xl mx-auto text-lg">Join thousands of travelers using AI to plan their perfect China trip. Start free today.</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="/ai" class="inline-flex items-center gap-2 py-3.5 px-8 rounded-xl bg-white text-indigo-700 font-bold hover:bg-blue-50 transition-colors shadow-lg text-base">
-            Start Free Today
+            <span data-i18n="pricing.ctaPrimary">Start Free Today</span>
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
           </a>
           <a href="/guide" class="inline-flex items-center gap-2 py-3.5 px-8 rounded-xl border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-colors text-base">
-            Explore Features
+            <span data-i18n="pricing.ctaSecondary">Explore Features</span>
           </a>
         </div>
       </div>
