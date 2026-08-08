@@ -1,4 +1,4 @@
-﻿// Supabase Edge Function: AI Chat
+// Supabase Edge Function: AI Chat
 // Server-side proxy for MiniMax API with server-side usage tracking, conversation memory,
 // and tool calling loop. Replaces the missing /api/chat endpoint.
 
@@ -79,7 +79,7 @@ async function toolWebSearch(args: Record<string, string>): Promise<string> {
   if (!apiKey) return JSON.stringify({ error: "search_disabled", results: [] });
 
   try {
-    const res = await fetch("https://api.anysearch.hk/v1/search", {
+    const res = await fetch("https://api.anysearch.com/v1/search", {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({ query, max_results: 5 }),
