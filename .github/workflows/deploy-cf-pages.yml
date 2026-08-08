@@ -46,33 +46,43 @@ jobs:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
         run: |
-          curl -sS -X PATCH "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/chinaconnect" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" --data "{\"deployment_configs\":{\"production\":{\"env_vars\":{\"MINIMAX_API_KEY\":{\"type\":\"plain_text\",\"value\":\"$MINIMAX_API_KEY\"},\"ANYSEARCH_API_KEY\":{\"type\":\"plain_text\",\"value\":\"$ANYSEARCH_API_KEY\"}}}}}" -o /tmp/patch.json
-          python3 -c "import sys,json; j=json.load(open('/tmp/patch.json')); print('patch:', j.get('success'))"
+          cat > /tmp/patch.py << EOF
+          import json, urllib.request, os
+          url = "https://api.cloudflare.com/client/v4/accounts/" + os.environ["CLOUDFLARE_ACCOUNT_ID"] + "/pages/projects/chinaconnect"
+          body = json.dumps({"deployment_configs": {"production": {"env_vars": {"MINIMAX_API_KEY": {"type": "plain_text", "value": os.environ["MINIMAX_API_KEY"]}, "ANYSEARCH_API_KEY": {"type": "plain_text", "value": os.environ["ANYSEARCH_API_KEY"]}}}}}).encode()
+          req = urllib.request.Request(url, data=body, method="PATCH", headers={"Authorization": "Bearer " + os.environ["CLOUDFLARE_API_TOKEN"], "Content-Type": "application/json"})
+          resp = urllib.request.urlopen(req)
+          print("patch success:", json.loads(resp.read()).get("success"))
+          EOF
+          python3 /tmp/patch.py
       - name: Deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: wrangler pages deploy dist --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
-      - name: Post-deploy verify values
+      - name: Post-deploy verify
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          curl -sS "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/chinaconnect" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -o /tmp/proj.json
-          python3 -c "
-import json
-j = json.load(open('/tmp/proj.json'))
-for env in ['preview','production']:
-    cfg = j.get('result',{}).get('deployment_configs',{}).get(env,{})
-    print(f'--- {env} ---')
-    for k,v in (cfg.get('env_vars') or {}).items():
-        val = v.get('value','')
-        masked = (val[:8] + '...' + val[-4:]) if val else '(empty)'
-        print(f'  {k}: type={v.get("type")}, len={len(val)}, value={masked}')
-"
+          cat > /tmp/verify.py << EOF
+          import json, urllib.request, os
+          url = "https://api.cloudflare.com/client/v4/accounts/" + os.environ["CLOUDFLARE_ACCOUNT_ID"] + "/pages/projects/chinaconnect"
+          req = urllib.request.Request(url, headers={"Authorization": "Bearer " + os.environ["CLOUDFLARE_API_TOKEN"]})
+          resp = urllib.request.urlopen(req)
+          j = json.loads(resp.read())
+          for env_name in ["preview","production"]:
+              cfg = j.get("result",{}).get("deployment_configs",{}).get(env_name,{})
+              print(f"--- {env_name} ---")
+              for k, v in (cfg.get("env_vars") or {}).items():
+                  val = v.get("value","")
+                  masked = (val[:8] + "..." + val[-4:]) if val else "(empty)"
+                  print(f"  {k}: type={v.get('type')}, len={len(val)}, value={masked}")
+          EOF
+          python3 /tmp/verify.py
           echo "--- live chat ---"
-          curl -sS "https://chinaengage.org/api/chat" -X POST -H "Content-Type: application/json" --data "{\"model\":\"MiniMax-Text-01\",\"messages\":[{\"role\":\"user\",\"content\":\"hi\"}]}"
+          curl -sS "https://chinaengage.org/api/chat" -X POST -H "Content-Type: application/json" --data '{"model":"MiniMax-Text-01","messages":[{"role":"user","content":"hi"}]}' | head -c 500
           echo ""
           echo "--- live search ---"
-          curl -sS "https://chinaengage.org/api/search" -X POST -H "Content-Type: application/json" --data "{\"query\":\"上海\",\"max_results\":1}"
+          curl -sS "https://chinaengage.org/api/search" -X POST -H "Content-Type: application/json" --data '{"query":"上海","max_results":1}' | head -c 500
           echo ""
