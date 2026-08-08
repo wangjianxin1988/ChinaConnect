@@ -1,4 +1,4 @@
-# ChinaConnect Cloudflare Pages Redirects
+﻿# ChinaConnect Cloudflare Pages Redirects
 # Redirect non-trailing slash URLs to trailing slash versions
 
 /emergency /emergency/ 301
@@ -21,3 +21,6 @@
 
 # User pages
 /user/:id /user/:id/ 301
+
+# GSC verification file: keep exact path (override Astro trailing-slash)
+/google*.html /google*:splat 200
