@@ -24,19 +24,37 @@ import { MembershipStatusBar } from "./subscription/MembershipStatusBar";
 import { UsageExhaustedBanner } from "./subscription/UsageExhaustedBanner";
 import { signInWithEmail, signInWithOAuth, signUpWithEmail } from "@/services/auth";
 import { supabase } from "@/supabase/config";
+import { useTranslation } from "@/i18n/useTranslation";
+import { translations as allTranslations } from "@/i18n/translations";
 import { useAIConversation } from "@/hooks/useAIConversation";
+
+// ============================================
+// i18n helpers
+// ============================================
+type AiT = (key: string, fallback?: string) => string;
+function buildAiT(tLang: ReturnType<typeof useTranslation>["t"]): AiT {
+  const en = (allTranslations.en.aiPage || {}) as Record<string, unknown>;
+  const cur = (tLang.aiPage || {}) as Record<string, unknown>;
+  return (key: string, fallback?: string) => {
+    const v = cur[key];
+    if (typeof v === "string") return v;
+    const e = en[key];
+    if (typeof e === "string") return e;
+    return fallback ?? "";
+  };
+}
 
 // ============================================
 // Constants
 // ============================================
 
-const STATIC_PROMPTS = [
-  { icon: "??", text: "Plan a 5-day Beijing trip with imperial history and modern culture" },
-  { icon: "??", text: "Best local street food in Chengdu that tourists usually miss" },
-  { icon: "??", text: "How to travel from Shanghai to Xi'an by high-speed rail?" },
-  { icon: "??", text: "Can I use Apple Pay in China? What payment apps do I need?" },
-  { icon: "??", text: "Recommend boutique hotels in Hangzhou near West Lake" },
-  { icon: "??", text: "Business etiquette tips for meeting Chinese partners" },
+const FALLBACK_PROMPTS = [
+  { icon: "🏯", text: "Plan a 5-day Beijing trip with imperial history and modern culture" },
+  { icon: "🍜", text: "Best local street food in Chengdu that tourists usually miss" },
+  { icon: "🚄", text: "How to travel from Shanghai to Xi'an by high-speed rail?" },
+  { icon: "💳", text: "Can I use Apple Pay in China? What payment apps do I need?" },
+  { icon: "🏨", text: "Recommend boutique hotels in Hangzhou near West Lake" },
+  { icon: "🤝", text: "Business etiquette tips for meeting Chinese partners" },
 ];
 
 // ============================================
@@ -44,6 +62,8 @@ const STATIC_PROMPTS = [
 // ============================================
 
 function AuthGate() {
+  const { t } = useTranslation();
+  const aiT = buildAiT(t);
   const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -60,9 +80,9 @@ function AuthGate() {
           ? await signInWithEmail(email, password)
           : await signUpWithEmail({ email, password, displayName: email.split("@")[0] });
       if (res.error) {
-        setError(res.error.message || "Authentication failed");
+        setError(res.error.message || aiT("authFailed", "Authentication failed"));
       } else if (mode === "signup" && !res.session) {
-        setError("Check your email to confirm your account.");
+        setError(aiT("checkEmailConfirm", "Check your email to confirm your account."));
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
@@ -86,12 +106,9 @@ function AuthGate() {
     <div className="max-w-md mx-auto my-12 px-4">
       <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">
-          {mode === "signin" ? "Sign in to chat" : "Create your account"}
+          {mode === "signin" ? aiT("authGateTitle") : aiT("authGateSignupTitle")}
         </h2>
-        <p className="text-sm text-gray-600 mb-6">
-          AI Chat requires a free account so we can track your monthly usage and save your
-          conversations.
-        </p>
+        <p className="text-sm text-gray-600 mb-6">{aiT("authGateDescription")}</p>
 
         <div className="grid grid-cols-2 gap-3 mb-4">
           <button
@@ -100,7 +117,7 @@ function AuthGate() {
             disabled={busy}
             className="px-4 py-2.5 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 disabled:opacity-50"
           >
-            Google
+            {aiT("googleButton")}
           </button>
           <button
             type="button"
@@ -108,13 +125,13 @@ function AuthGate() {
             disabled={busy}
             className="px-4 py-2.5 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 disabled:opacity-50"
           >
-            GitHub
+            {aiT("githubButton")}
           </button>
         </div>
 
         <div className="flex items-center gap-3 my-4">
           <div className="flex-1 h-px bg-gray-200" />
-          <span className="text-xs text-gray-400 uppercase">or</span>
+          <span className="text-xs text-gray-400 uppercase">{aiT("orContinueWith")}</span>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
 
@@ -124,7 +141,7 @@ function AuthGate() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@example.com"
+            placeholder={aiT("emailPlaceholder")}
             className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
           <input
@@ -133,7 +150,7 @@ function AuthGate() {
             minLength={6}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password (min 6 chars)"
+            placeholder={aiT("passwordPlaceholder")}
             className="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
           {error && <p className="text-sm text-red-600">{error}</p>}
@@ -142,18 +159,22 @@ function AuthGate() {
             disabled={busy}
             className="w-full px-4 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg font-semibold hover:from-purple-700 hover:to-indigo-700 disabled:opacity-50"
           >
-            {busy ? "..." : mode === "signin" ? "Sign in" : "Create account"}
+            {busy
+              ? aiT("signInButton")
+              : mode === "signin"
+                ? aiT("signInButton")
+                : aiT("signUpButton")}
           </button>
         </form>
 
         <p className="mt-4 text-xs text-gray-500 text-center">
-          {mode === "signin" ? "No account yet? " : "Already have one? "}
+          {mode === "signin" ? aiT("noAccountPrompt") : aiT("haveAccountPrompt")}
           <button
             type="button"
             onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
             className="text-purple-600 hover:underline font-medium"
           >
-            {mode === "signin" ? "Create one" : "Sign in"}
+            {mode === "signin" ? aiT("switchToSignUp") : aiT("switchToSignIn")}
           </button>
         </p>
       </div>
@@ -175,7 +196,8 @@ interface ConversationSidebarProps {
   onToggle: () => void;
 }
 
-function ConversationSidebar({
+function ConversationSidebarInner({
+  aiT,
   conversations,
   activeId,
   onSelect,
@@ -183,13 +205,13 @@ function ConversationSidebar({
   onDelete,
   collapsed,
   onToggle,
-}: ConversationSidebarProps) {
+}: ConversationSidebarProps & { aiT: AiT }) {
   if (collapsed) {
     return (
       <button
         onClick={onToggle}
         className="fixed left-4 top-20 z-30 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50"
-        title="Show conversations"
+        title={aiT("showSidebarTitle")}
         type="button"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -207,11 +229,11 @@ function ConversationSidebar({
   return (
     <aside className="hidden lg:flex flex-col w-72 shrink-0 bg-white border-r border-gray-200 h-[calc(100vh-64px)] sticky top-16">
       <div className="p-4 border-b border-gray-100 flex items-center justify-between">
-        <h2 className="text-sm font-semibold text-gray-900">Conversations</h2>
+        <h2 className="text-sm font-semibold text-gray-900">{aiT("conversationsTitle")}</h2>
         <button
           onClick={onToggle}
           className="text-gray-400 hover:text-gray-600"
-          title="Hide sidebar"
+          title={aiT("hideSidebarTitle")}
           type="button"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -230,12 +252,12 @@ function ConversationSidebar({
           className="w-full px-4 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-sm font-semibold rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all"
           type="button"
         >
-          + New chat
+          {aiT("newChatButton")}
         </button>
       </div>
       <div className="flex-1 overflow-y-auto px-2 pb-4">
         {conversations.length === 0 ? (
-          <p className="text-xs text-gray-400 text-center py-8">No conversations yet</p>
+          <p className="text-xs text-gray-400 text-center py-8">{aiT("noConversationsYet")}</p>
         ) : (
           <ul className="space-y-1">
             {conversations.map((c) => (
@@ -252,16 +274,18 @@ function ConversationSidebar({
                   >
                     <p className="font-medium text-gray-900 truncate">{c.name}</p>
                     <p className="text-xs text-gray-500">
-                      {c.messageCount} message{c.messageCount === 1 ? "" : "s"} ·{" "}
+                      {c.messageCount}{" "}
+                      {c.messageCount === 1 ? aiT("messageLabel") : aiT("messagesLabel")} ·{" "}
                       {new Date(c.createdAt).toLocaleDateString()}
                     </p>
                   </button>
                   <button
                     onClick={() => {
-                      if (confirm("Delete this conversation?")) onDelete(c.id);
+                      if (confirm(aiT("deleteConfirm", "Delete this conversation?")))
+                        onDelete(c.id);
                     }}
                     className="opacity-0 group-hover:opacity-100 p-2 text-gray-400 hover:text-red-600 transition-opacity"
-                    title="Delete"
+                    title={aiT("deleteTitle")}
                     type="button"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -288,6 +312,8 @@ function ConversationSidebar({
 // ============================================
 
 export default function AIChatPage() {
+  const { t } = useTranslation();
+  const aiT = buildAiT(t);
   const [externalPrompt, setExternalPrompt] = useState<string | null>(null);
   const [_savedItinerary, _setSavedItinerary] = useState<SavedItinerary | null>(null);
   const [chatStarted, setChatStarted] = useState(false);
@@ -352,7 +378,8 @@ export default function AIChatPage() {
 
   return (
     <div className="min-h-[calc(100vh-64px)] bg-white flex">
-      <ConversationSidebar
+      <ConversationSidebarInner
+        aiT={aiT}
         conversations={conversationHistory}
         activeId={activeConversationId}
         onSelect={handleSelectConversation}
@@ -376,15 +403,17 @@ export default function AIChatPage() {
                 <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full mb-8">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
                   <span className="text-white/70 text-sm font-medium tracking-wide">
-                    Powered by Advanced AI
+                    {aiT("heroBadge", "Powered by Advanced AI")}
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-                  ChinaGuide AI
+                  {aiT("heroTitle", "ChinaGuide AI")}
                 </h1>
                 <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto">
-                  Your personal China travel intelligence — itineraries, local insights, and
-                  real-time guidance.
+                  {aiT(
+                    "heroSubtitle",
+                    "Your personal China travel intelligence â itineraries, local insights, and real-time guidance.",
+                  )}
                 </p>
                 <button
                   onClick={() => {
@@ -394,7 +423,7 @@ export default function AIChatPage() {
                   className="px-8 py-3.5 bg-white rounded-2xl font-bold text-gray-900 shadow-2xl hover:-translate-y-0.5 transition-all"
                   type="button"
                 >
-                  Start Planning →
+                  {aiT("startPlanningCTA", "Start Planning")} →
                 </button>
               </div>
             </div>
@@ -408,10 +437,13 @@ export default function AIChatPage() {
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold text-gray-900 text-center mb-2">Try asking…</h2>
                 <p className="text-gray-500 text-center mb-8">
-                  Pick a prompt or type your own below
+                  {aiT("promptsSubtitle", "Pick a prompt or type your own below")}
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {STATIC_PROMPTS.map((p, i) => (
+                  {(t.aiPage?.prompts && t.aiPage.prompts.length > 0
+                    ? t.aiPage.prompts
+                    : FALLBACK_PROMPTS
+                  ).map((p: { icon: string; text: string }, i: number) => (
                     <button
                       key={i}
                       onClick={() => handleExamplePrompt(p.text)}

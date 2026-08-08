@@ -254,6 +254,41 @@ export interface Translations {
   aiPage?: {
     title: string;
     description: string;
+    // Hero
+    heroBadge?: string;
+    heroTitle?: string;
+    heroSubtitle?: string;
+    startPlanningCTA?: string;
+    // Prompts
+    promptsTitle?: string;
+    promptsSubtitle?: string;
+    prompts?: { icon: string; text: string }[];
+    // AuthGate
+    authGateTitle?: string;
+    authGateSignupTitle?: string;
+    authGateDescription?: string;
+    emailPlaceholder?: string;
+    passwordPlaceholder?: string;
+    signInButton?: string;
+    signUpButton?: string;
+    orContinueWith?: string;
+    noAccountPrompt?: string;
+    haveAccountPrompt?: string;
+    switchToSignUp?: string;
+    switchToSignIn?: string;
+    googleButton?: string;
+    githubButton?: string;
+    authFailed?: string;
+    // ConversationSidebar
+    conversationsTitle?: string;
+    showSidebarTitle?: string;
+    hideSidebarTitle?: string;
+    newChatButton?: string;
+    noConversationsYet?: string;
+    messageLabel?: string;
+    messagesLabel?: string;
+    deleteConfirm?: string;
+    deleteTitle?: string;
   };
   // Account page loading states
   accountPage?: {
@@ -784,6 +819,46 @@ export const translations: Record<Language, Translations> = {
       title: "ChinaGuide AI - Your Intelligent China Travel Expert",
       description:
         "Your personal China travel intelligence - expert itinerary planning, real-time recommendations, local insights, and cultural guidance, all powered by advanced AI.",
+      heroBadge: "Powered by Advanced AI",
+      heroTitle: "ChinaGuide AI",
+      heroSubtitle:
+        "Your personal China travel intelligence - itineraries, local insights, and real-time guidance.",
+      startPlanningCTA: "Start Planning",
+      promptsTitle: "Try asking",
+      promptsSubtitle: "Pick a prompt or type your own below",
+      prompts: [
+        { icon: "🏯", text: "Plan a 5-day Beijing trip with imperial history and modern culture" },
+        { icon: "🍜", text: "Best local street food in Chengdu that tourists usually miss" },
+        { icon: "🚄", text: "How to travel from Shanghai to Xi'an by high-speed rail?" },
+        { icon: "💳", text: "Can I use Apple Pay in China? What payment apps do I need?" },
+        { icon: "🏨", text: "Recommend boutique hotels in Hangzhou near West Lake" },
+        { icon: "🤝", text: "Business etiquette tips for meeting Chinese partners" },
+      ],
+      authGateTitle: "Sign in to chat",
+      authGateSignupTitle: "Create your account",
+      authGateDescription:
+        "AI Chat requires a free account so we can track your monthly usage and save your conversations.",
+      emailPlaceholder: "you@example.com",
+      passwordPlaceholder: "Password (min 6 chars)",
+      signInButton: "Sign in",
+      signUpButton: "Create account",
+      orContinueWith: "or",
+      noAccountPrompt: "No account yet?",
+      haveAccountPrompt: "Already have one?",
+      switchToSignUp: "Create one",
+      switchToSignIn: "Sign in",
+      googleButton: "Google",
+      githubButton: "GitHub",
+      authFailed: "Authentication failed",
+      conversationsTitle: "Conversations",
+      showSidebarTitle: "Show conversations",
+      hideSidebarTitle: "Hide sidebar",
+      newChatButton: "+ New chat",
+      noConversationsYet: "No conversations yet",
+      messageLabel: "message",
+      messagesLabel: "messages",
+      deleteConfirm: "Delete this conversation?",
+      deleteTitle: "Delete",
     },
     accountPage: {
       loading: "Loading your account...",
