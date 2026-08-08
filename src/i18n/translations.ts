@@ -1262,6 +1262,43 @@ export const translations: Record<Language, Translations> = {
       english: "英語",
       chinese: "中国語",
     },
+
+    aiPage: {
+      title: "ChinaGuide AI - 中国旅行のスマートアシスタント",
+      description:
+        "あなたの専属中国旅行インテリジェンス — AIによる旅程プラン、リアルタイムおすすめ、ローカル文化洞察。",
+    },
+    accountPage: {
+      loading: "アカウントを読み込み中...",
+      signInRequired: "サインインが必要です",
+      signInRequiredDesc: "アカウントを表示するにはサインインしてください。",
+      signIn: "サインイン",
+    },
+    profilePage: {
+      title: "マイプロフィール - ChinaConnect",
+    },
+    userPage: {
+      title: "ユーザープロフィール - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "サインイン中...",
+      authTitle: "ログイン / 登録 - ChinaConnect",
+      loginTitle: "サインイン - ChinaConnect",
+      signingYouIn: "サインイン処理中...",
+    },
+    checkoutPage: {
+      title: "支払い成功 - ChinaConnect",
+      description: "サブスクリプションが正常に有効化されました",
+      successTitle: "支払い成功！",
+      successDesc: "サブスクリプションが有効化されました。",
+      successAccess: "新しいプランの全機能にアクセスできます。",
+      processingDesc: "サブスクリプションを確認中です。",
+      startPlanning: "プランを始める",
+      viewAccount: "アカウントを表示",
+      backToPricing: "← 料金に戻る",
+      errorTitle: "問題が発生しました",
+      errorDesc: "お支払いを処理できませんでした。再試行するかサポートにお問い合わせください。",
+    },
   },
 
   ko: {
@@ -1402,6 +1439,42 @@ export const translations: Record<Language, Translations> = {
       current: "현재",
       english: "영어",
       chinese: "중국어",
+    },
+
+    aiPage: {
+      title: "ChinaGuide AI - 중국 여행 인텔리전트 어시스턴트",
+      description: "당신의 중국 여행 인텔리전스 — AI 기반 여행 일정, 실시간 추천, 현지 문화 통찰.",
+    },
+    accountPage: {
+      loading: "계정 로드 중...",
+      signInRequired: "로그인 필요",
+      signInRequiredDesc: "계정을 보려면 로그인하세요.",
+      signIn: "로그인",
+    },
+    profilePage: {
+      title: "내 프로필 - ChinaConnect",
+    },
+    userPage: {
+      title: "사용자 프로필 - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "로그인 중...",
+      authTitle: "로그인 / 가입 - ChinaConnect",
+      loginTitle: "로그인 - ChinaConnect",
+      signingYouIn: "로그인 처리 중...",
+    },
+    checkoutPage: {
+      title: "결제 성공 - ChinaConnect",
+      description: "구독이 성공적으로 활성화되었습니다",
+      successTitle: "결제 성공！",
+      successDesc: "구독이 활성화되었습니다.",
+      successAccess: "새 플랜의 모든 기능에 접근할 수 있습니다.",
+      processingDesc: "구독을 확인하는 중입니다.",
+      startPlanning: "계획 시작",
+      viewAccount: "계정 보기",
+      backToPricing: "← 요금제로 돌아가기",
+      errorTitle: "문제가 발생했습니다",
+      errorDesc: "결제를 처리할 수 없습니다. 다시 시도하거나 지원팀에 문의하세요.",
     },
   },
 
@@ -1544,6 +1617,43 @@ export const translations: Record<Language, Translations> = {
       english: "อังกฤษ",
       chinese: "จีน",
     },
+
+    aiPage: {
+      title: "ChinaGuide AI - ผู้ช่วยอัจฉริยะสำหรับการท่องเที่ยวจีน",
+      description:
+        "ข้อมูลอัจฉริยะด้านการท่องเที่ยวจีน — วางแผนเส้นทาง คำแนะนำแบบเรียลไทม์ และข้อมูลเชิงวัฒนธรรมท้องถิ่นด้วย AI",
+    },
+    accountPage: {
+      loading: "กำลังโหลดบัญชี...",
+      signInRequired: "ต้องเข้าสู่ระบบ",
+      signInRequiredDesc: "โปรดเข้าสู่ระบบเพื่อดูบัญชีของคุณ",
+      signIn: "เข้าสู่ระบบ",
+    },
+    profilePage: {
+      title: "โปรไฟล์ของฉัน - ChinaConnect",
+    },
+    userPage: {
+      title: "โปรไฟล์ผู้ใช้ - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "กำลังเข้าสู่ระบบ...",
+      authTitle: "เข้าสู่ระบบ / สมัคร - ChinaConnect",
+      loginTitle: "เข้าสู่ระบบ - ChinaConnect",
+      signingYouIn: "กำลังดำเนินการเข้าสู่ระบบ...",
+    },
+    checkoutPage: {
+      title: "ชำระเงินสำเร็จ - ChinaConnect",
+      description: "เปิดใช้งานการสมัครสมาชิกเรียบร้อยแล้ว",
+      successTitle: "ชำระเงินสำเร็จ！",
+      successDesc: "เปิดใช้งานการสมัครสมาชิกของคุณแล้ว",
+      successAccess: "คุณสามารถเข้าถึงคุณสมบัติทั้งหมดของแผนใหม่ได้แล้ว",
+      processingDesc: "กรุณารอขณะที่เรายืนยันการสมัครสมาชิกของคุณ",
+      startPlanning: "เริ่มวางแผน",
+      viewAccount: "ดูบัญชี",
+      backToPricing: "← กลับไปที่ราคา",
+      errorTitle: "เกิดข้อผิดพลาด",
+      errorDesc: "เราไม่สามารถประมวลผลการชำระเงินของคุณได้ กรุณาลองอีกครั้งหรือติดต่อฝ่ายสนับสนุน",
+    },
   },
 
   vi: {
@@ -1685,6 +1795,44 @@ export const translations: Record<Language, Translations> = {
       current: "Hiện tại",
       english: "Tiếng Anh",
       chinese: "Tiếng Trung",
+    },
+
+    aiPage: {
+      title: "ChinaGuide AI - Trợ lý du lịch Trung Quốc thông minh",
+      description:
+        "Trợ lý du lịch Trung Quốc cá nhân — lập kế hoạch, gợi ý thời gian thực, hiểu biết văn hóa địa phương bằng AI.",
+    },
+    accountPage: {
+      loading: "Đang tải tài khoản...",
+      signInRequired: "Yêu cầu đăng nhập",
+      signInRequiredDesc: "Vui lòng đăng nhập để xem tài khoản của bạn.",
+      signIn: "Đăng nhập",
+    },
+    profilePage: {
+      title: "Hồ sơ của tôi - ChinaConnect",
+    },
+    userPage: {
+      title: "Hồ sơ người dùng - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "Đang đăng nhập...",
+      authTitle: "Đăng nhập / Đăng ký - ChinaConnect",
+      loginTitle: "Đăng nhập - ChinaConnect",
+      signingYouIn: "Đang đăng nhập bạn vào...",
+    },
+    checkoutPage: {
+      title: "Thanh toán thành công - ChinaConnect",
+      description: "Đăng ký của bạn đã được kích hoạt thành công",
+      successTitle: "Thanh toán thành công！",
+      successDesc: "Đăng ký của bạn đã được kích hoạt.",
+      successAccess: "Bạn có quyền truy cập tất cả các tính năng của gói mới.",
+      processingDesc: "Vui lòng đợi trong khi chúng tôi xác nhận đăng ký của bạn.",
+      startPlanning: "Bắt đầu lập kế hoạch",
+      viewAccount: "Xem tài khoản",
+      backToPricing: "← Quay lại bảng giá",
+      errorTitle: "Đã xảy ra lỗi",
+      errorDesc:
+        "Chúng tôi không thể xử lý thanh toán của bạn. Vui lòng thử lại hoặc liên hệ bộ phận hỗ trợ.",
     },
   },
 
@@ -1829,6 +1977,44 @@ export const translations: Record<Language, Translations> = {
       current: "Текущий",
       english: "Английский",
       chinese: "Китайский",
+    },
+
+    aiPage: {
+      title: "ChinaGuide AI - Ваш интеллектуальный помощник по Китаю",
+      description:
+        "Ваш персональный ИИ для путешествий по Китаю — маршруты, рекомендации в реальном времени, знание местной культуры.",
+    },
+    accountPage: {
+      loading: "Загрузка аккаунта...",
+      signInRequired: "Требуется вход",
+      signInRequiredDesc: "Войдите, чтобы просмотреть аккаунт.",
+      signIn: "Войти",
+    },
+    profilePage: {
+      title: "Мой профиль - ChinaConnect",
+    },
+    userPage: {
+      title: "Профиль пользователя - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "Вход...",
+      authTitle: "Вход / Регистрация - ChinaConnect",
+      loginTitle: "Вход - ChinaConnect",
+      signingYouIn: "Выполняется вход...",
+    },
+    checkoutPage: {
+      title: "Оплата успешна - ChinaConnect",
+      description: "Подписка успешно активирована",
+      successTitle: "Оплата успешна！",
+      successDesc: "Ваша подписка активирована.",
+      successAccess: "Теперь вам доступны все возможности нового плана.",
+      processingDesc: "Пожалуйста, подождите, пока мы подтвердим вашу подписку.",
+      startPlanning: "Начать планирование",
+      viewAccount: "Посмотреть аккаунт",
+      backToPricing: "← Назад к тарифам",
+      errorTitle: "Что-то пошло не так",
+      errorDesc:
+        "Не удалось обработать ваш платёж. Пожалуйста, попробуйте снова или свяжитесь с поддержкой.",
     },
   },
 
@@ -1977,6 +2163,44 @@ export const translations: Record<Language, Translations> = {
       english: "Anglais",
       chinese: "Chinois",
     },
+
+    aiPage: {
+      title: "ChinaGuide AI - Assistant intelligent de voyage en Chine",
+      description:
+        "Votre assistant personnel de voyage en Chine — itinéraires IA, recommandations en temps réel, culture locale.",
+    },
+    accountPage: {
+      loading: "Chargement du compte...",
+      signInRequired: "Connexion requise",
+      signInRequiredDesc: "Veuillez vous connecter pour voir votre compte.",
+      signIn: "Se connecter",
+    },
+    profilePage: {
+      title: "Mon profil - ChinaConnect",
+    },
+    userPage: {
+      title: "Profil utilisateur - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "Connexion en cours...",
+      authTitle: "Connexion / Inscription - ChinaConnect",
+      loginTitle: "Connexion - ChinaConnect",
+      signingYouIn: "Connexion en cours...",
+    },
+    checkoutPage: {
+      title: "Paiement réussi - ChinaConnect",
+      description: "Votre abonnement a été activé avec succès",
+      successTitle: "Paiement réussi !",
+      successDesc: "Votre abonnement est activé.",
+      successAccess: "Vous avez maintenant accès à toutes les fonctionnalités du nouveau plan.",
+      processingDesc: "Veuillez patienter pendant que nous confirmons votre abonnement.",
+      startPlanning: "Commencer à planifier",
+      viewAccount: "Voir le compte",
+      backToPricing: "← Retour aux tarifs",
+      errorTitle: "Une erreur est survenue",
+      errorDesc:
+        "Nous n'avons pas pu traiter votre paiement. Veuillez réessayer ou contacter le support.",
+    },
   },
 
   de: {
@@ -2122,6 +2346,44 @@ export const translations: Record<Language, Translations> = {
       english: "Englisch",
       chinese: "Chinesisch",
     },
+
+    aiPage: {
+      title: "ChinaGuide AI - Intelligenter China-Reiseassistent",
+      description:
+        "Ihr persönlicher China-Reise-KI — Routenplanung, Echtzeit-Empfehlungen, lokale Kultur-Insights.",
+    },
+    accountPage: {
+      loading: "Konto wird geladen...",
+      signInRequired: "Anmeldung erforderlich",
+      signInRequiredDesc: "Bitte melden Sie sich an, um Ihr Konto zu sehen.",
+      signIn: "Anmelden",
+    },
+    profilePage: {
+      title: "Mein Profil - ChinaConnect",
+    },
+    userPage: {
+      title: "Benutzerprofil - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "Anmeldung läuft...",
+      authTitle: "Anmelden / Registrieren - ChinaConnect",
+      loginTitle: "Anmelden - ChinaConnect",
+      signingYouIn: "Sie werden angemeldet...",
+    },
+    checkoutPage: {
+      title: "Zahlung erfolgreich - ChinaConnect",
+      description: "Ihr Abonnement wurde erfolgreich aktiviert",
+      successTitle: "Zahlung erfolgreich！",
+      successDesc: "Ihr Abonnement ist aktiviert.",
+      successAccess: "Sie haben jetzt Zugriff auf alle Funktionen des neuen Plans.",
+      processingDesc: "Bitte warten Sie, während wir Ihr Abonnement bestätigen.",
+      startPlanning: "Planung starten",
+      viewAccount: "Konto anzeigen",
+      backToPricing: "← Zurück zu den Preisen",
+      errorTitle: "Etwas ist schiefgelaufen",
+      errorDesc:
+        "Wir konnten Ihre Zahlung nicht verarbeiten. Bitte versuchen Sie es erneut oder kontaktieren Sie den Support.",
+    },
   },
 
   ar: {
@@ -2262,6 +2524,43 @@ export const translations: Record<Language, Translations> = {
       current: "الحالي",
       english: "الإنجليزية",
       chinese: "الصينية",
+    },
+
+    aiPage: {
+      title: "ChinaGuide AI - مساعد ذكي للسفر إلى الصين",
+      description:
+        "مساعدك الشخصي للسفر إلى الصين — خطط رحلات بتقنية الذكاء الاصطناعي، توصيات فورية، رؤى ثقافية محلية.",
+    },
+    accountPage: {
+      loading: "جارٍ تحميل الحساب...",
+      signInRequired: "يلزم تسجيل الدخول",
+      signInRequiredDesc: "يرجى تسجيل الدخول لعرض حسابك.",
+      signIn: "تسجيل الدخول",
+    },
+    profilePage: {
+      title: "ملفي الشخصي - ChinaConnect",
+    },
+    userPage: {
+      title: "ملف المستخدم - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "جارٍ تسجيل الدخول...",
+      authTitle: "تسجيل الدخول / التسجيل - ChinaConnect",
+      loginTitle: "تسجيل الدخول - ChinaConnect",
+      signingYouIn: "جارٍ تسجيل دخولك...",
+    },
+    checkoutPage: {
+      title: "تم الدفع بنجاح - ChinaConnect",
+      description: "تم تفعيل اشتراكك بنجاح",
+      successTitle: "تم الدفع بنجاح！",
+      successDesc: "تم تفعيل اشتراكك.",
+      successAccess: "يمكنك الآن الوصول إلى جميع ميزات الخطة الجديدة.",
+      processingDesc: "يرجى الانتظار حتى نؤكد اشتراكك.",
+      startPlanning: "ابدأ التخطيط",
+      viewAccount: "عرض الحساب",
+      backToPricing: "← العودة إلى الأسعار",
+      errorTitle: "حدث خطأ ما",
+      errorDesc: "لم نتمكن من معالجة الدفع. يرجى المحاولة مرة أخرى أو الاتصال بالدعم.",
     },
   },
 
@@ -2404,6 +2703,44 @@ export const translations: Record<Language, Translations> = {
       current: "فعلی",
       english: "انگلیسی",
       chinese: "چینی",
+    },
+
+    aiPage: {
+      title: "ChinaGuide AI - دستیار هوشمند سفر به چین",
+      description:
+        "دستیار هوشمند سفر شما به چین — برنامه‌ریزی سفر، پیشنهادات لحظه‌ای، شناخت فرهنگ محلی.",
+    },
+    accountPage: {
+      loading: "در حال بارگذاری حساب...",
+      signInRequired: "نیاز به ورود",
+      signInRequiredDesc: "برای مشاهده حساب خود وارد شوید.",
+      signIn: "ورود",
+    },
+    profilePage: {
+      title: "پروفایل من - ChinaConnect",
+    },
+    userPage: {
+      title: "پروفایل کاربر - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "در حال ورود...",
+      authTitle: "ورود / ثبت‌نام - ChinaConnect",
+      loginTitle: "ورود - ChinaConnect",
+      signingYouIn: "در حال ورود شما...",
+    },
+    checkoutPage: {
+      title: "پرداخت موفق - ChinaConnect",
+      description: "اشتراک شما با موفقیت فعال شد",
+      successTitle: "پرداخت موفق！",
+      successDesc: "اشتراک شما فعال شد.",
+      successAccess: "اکنون به همه ویژگی‌های طرح جدید دسترسی دارید.",
+      processingDesc: "لطفاً صبر کنید تا اشتراک شما را تأیید کنیم.",
+      startPlanning: "شروع برنامه‌ریزی",
+      viewAccount: "مشاهده حساب",
+      backToPricing: "← بازگشت به قیمت‌ها",
+      errorTitle: "خطایی رخ داد",
+      errorDesc:
+        "ما نتوانستیم پرداخت شما را پردازش کنیم. لطفاً دوباره تلاش کنید یا با پشتیبانی تماس بگیرید.",
     },
   },
   "zh-CN": {
