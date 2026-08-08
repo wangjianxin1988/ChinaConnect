@@ -5,6 +5,7 @@ import https from "node:https";
 import { execFileSync } from "node:child_process";
 
 const DOMAINS = ["chinaengage.org", "www.chinaengage.org", "chinaconnect.pages.dev"];
+const LOCALES = ["ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"];
 const CRITICAL_PATHS = [
   "/",
   "/cities",
@@ -19,6 +20,8 @@ const CRITICAL_PATHS = [
   "/account",
   "/auth/login",
 ];
+// Locale-prefixed paths added for the 12-language SSR launch.
+const LOCALE_PATHS = LOCALES.flatMap((l) => [`/${l}/`, `/${l}/ai/`, `/${l}/city/beijing/`]);
 const KEYWORDS_HOME = [
   ["ChinaGuide AI", "AI rename (item 15)"],
   ["hreflang", "Multilingual SEO (item 3)"],
@@ -114,6 +117,13 @@ for (const d of DOMAINS) {
 console.log("\n[3/6] Critical Pages (chinaconnect.pages.dev)");
 for (const path of CRITICAL_PATHS) {
   const r = await get("https://chinaconnect.pages.dev" + path);
+  if (r.status === 200) ok(path + " \u2192 200");
+  else bad(path + " \u2192 " + r.status);
+}
+
+console.log("\n[3b/6] Locale-Prefixed Paths (chinaengage.org, 11 langs x 3 paths)");
+for (const path of LOCALE_PATHS) {
+  const r = await get("https://chinaengage.org" + path);
   if (r.status === 200) ok(path + " \u2192 200");
   else bad(path + " \u2192 " + r.status);
 }
