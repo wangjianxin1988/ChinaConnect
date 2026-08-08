@@ -1,11 +1,12 @@
-/**
- * Cloudflare Pages Function — i18n Route Handler
+﻿/**
+ * Cloudflare Pages Function — i18n Route Handler + Pages Subdomain Redirect
  *
  * Handles locale-prefixed URLs (/ja/city/beijing/, /ko/city/beijing/, etc.)
  * by rewriting the request to the default locale page and setting the locale context.
  *
- * This enables SEO-friendly URLs while serving the same content.
- * The client-side JavaScript handles the actual translation.
+ * Also redirects chinaconnect.pages.dev → chinaengage.org so all traffic flows
+ * through the canonical custom domain (Cloudflare Pages project subdomains cannot
+ * be deleted — they can only be redirected).
  */
 
 import type { PagesFunction } from "@cloudflare/workers-types";
@@ -25,9 +26,19 @@ const SUPPORTED_LOCALES = [
   "fa",
 ];
 const DEFAULT_LOCALE = "en";
+const PAGES_SUBDOMAIN = "chinaconnect.pages.dev";
+const CANONICAL_HOST = "chinaengage.org";
 
 export const onRequest: PagesFunction = async (context) => {
   const url = new URL(context.request.url);
+  const host = url.hostname.toLowerCase();
+
+  // Redirect Pages subdomain traffic to canonical custom domain
+  if (host === PAGES_SUBDOMAIN || host.endsWith("." + PAGES_SUBDOMAIN)) {
+    const target = new URL(url.pathname + url.search, `https://${CANONICAL_HOST}`);
+    return Response.redirect(target.toString(), 301);
+  }
+
   const path = url.pathname;
 
   // Check if the path starts with a locale prefix
