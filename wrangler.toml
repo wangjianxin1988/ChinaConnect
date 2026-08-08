@@ -4,7 +4,14 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
 # Supabase Configuration (migrated to new project on 2026-05-27)
-# SUPABASE_URL 在此配置
-# SUPABASE_ANON_KEY 在 Cloudflare Dashboard → Settings → Environment Variables 中配置
+# SUPABASE_URL configured here
+# SUPABASE_ANON_KEY configured in Cloudflare Dashboard Settings Environment Variables
+# MINIMAX_API_KEY + ANYSEARCH_API_KEY are placeholder names so the wrangler
+# deploy preserves deployment_configs.production.env_vars (PATCHed via the
+# CI workflow). Without this listing, wrangler pages deploy erases any
+# env_var not present here. Empty string is intentional; runtime reads
+# from the PATCHed plain_text value.
 [vars]
 SUPABASE_URL = "https://xyvuqbpwrhkukjgzveyc.supabase.co"
+MINIMAX_API_KEY = ""
+ANYSEARCH_API_KEY = ""
