@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "$MINIMAX_API_KEY" | wrangler pages secret put MINIMAX_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
           echo "$ANYSEARCH_API_KEY" | wrangler pages secret put ANYSEARCH_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
-      - name: PATCH deployment_configs (plain_text)
+      - name: PATCH deployment_configs plain_text
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -47,22 +47,32 @@ jobs:
           ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
         run: |
           curl -sS -X PATCH "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/chinaconnect" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" --data "{\"deployment_configs\":{\"production\":{\"env_vars\":{\"MINIMAX_API_KEY\":{\"type\":\"plain_text\",\"value\":\"$MINIMAX_API_KEY\"},\"ANYSEARCH_API_KEY\":{\"type\":\"plain_text\",\"value\":\"$ANYSEARCH_API_KEY\"}}}}}" -o /tmp/patch.json
-          python3 -c "import sys,json; j=json.load(open('/tmp/patch.json')); print('patch success:', j.get('success'), 'errors:', j.get('errors'))"
-      - name: Deploy to Cloudflare Pages
+          python3 -c "import sys,json; j=json.load(open('/tmp/patch.json')); print('patch:', j.get('success'))"
+      - name: Deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: wrangler pages deploy dist --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
-      - name: Post-deploy verify
+      - name: Post-deploy verify values
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           curl -sS "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/chinaconnect" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -o /tmp/proj.json
-          python3 -c "import json; j=json.load(open('/tmp/proj.json')); print('get success:', j.get('success')); [print(env, sorted((j.get('result',{}).get('deployment_configs',{}).get(env,{}).get('env_vars') or {}).keys())) for env in ['preview','production']]"
-          echo "--- live chat probe ---"
-          curl -sS "https://chinaengage.org/api/chat" -X POST -H "Content-Type: application/json" --data "{\"model\":\"MiniMax-Text-01\",\"messages\":[{\"role\":\"user\",\"content\":\"hi\"}]}" | head -c 500
+          python3 -c "
+import json
+j = json.load(open('/tmp/proj.json'))
+for env in ['preview','production']:
+    cfg = j.get('result',{}).get('deployment_configs',{}).get(env,{})
+    print(f'--- {env} ---')
+    for k,v in (cfg.get('env_vars') or {}).items():
+        val = v.get('value','')
+        masked = (val[:8] + '...' + val[-4:]) if val else '(empty)'
+        print(f'  {k}: type={v.get("type")}, len={len(val)}, value={masked}')
+"
+          echo "--- live chat ---"
+          curl -sS "https://chinaengage.org/api/chat" -X POST -H "Content-Type: application/json" --data "{\"model\":\"MiniMax-Text-01\",\"messages\":[{\"role\":\"user\",\"content\":\"hi\"}]}"
           echo ""
-          echo "--- live search probe ---"
-          curl -sS "https://chinaengage.org/api/search" -X POST -H "Content-Type: application/json" --data "{\"query\":\"上海\",\"max_results\":1}" | head -c 500
+          echo "--- live search ---"
+          curl -sS "https://chinaengage.org/api/search" -X POST -H "Content-Type: application/json" --data "{\"query\":\"上海\",\"max_results\":1}"
           echo ""
