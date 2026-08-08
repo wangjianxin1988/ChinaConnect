@@ -1,12 +1,11 @@
-name = "chinaconnect"
+﻿name = "chinaconnect"
 compatibility_date = "2024-12-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
-# Only SUPABASE_URL is exposed as a build-time var.
-# MINIMAX_API_KEY + ANYSEARCH_API_KEY are stored as Pages secrets
-# (set via wrangler pages secret put in deploy-cf-pages.yml).
-# Wrangler.toml [vars] with empty strings would be merged in by
-# wrangler pages deploy and override the secrets at runtime.
+# Public env vars (the anon key is designed to be embedded in clients).
+# Secrets like service-role keys go via `wrangler pages secret put`.
 [vars]
 SUPABASE_URL = "https://xyvuqbpwrhkukjgzveyc.supabase.co"
+PUBLIC_SUPABASE_URL = "https://xyvuqbpwrhkukjgzveyc.supabase.co"
+PUBLIC_SUPABASE_ANON_KEY = "REDACTED_JWT"

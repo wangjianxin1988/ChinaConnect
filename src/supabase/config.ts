@@ -1,28 +1,22 @@
+﻿/**
+ * Supabase config: shared client + auth helpers.
+ * The redirect URL for email confirmations is set to /auth/callback so the
+ * verification link the user receives in their email points to our callback
+ * page, which exchanges the code for a session.
+ */
+
 import { type SupabaseClient, createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || "";
 const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "";
 
-// During SSR in Node.js < 22, the Supabase realtime client throws because there's no native WebSocket.
-// We provide a dummy WebSocket class to prevent the error.
-// This is only used during SSR - in the browser, the real WebSocket is available.
 if (typeof window === "undefined" && typeof globalThis !== "undefined") {
-  // Check if WebSocket is not already available
   if (typeof (globalThis as unknown as { WebSocket?: unknown }).WebSocket === "undefined") {
-    // Create a dummy WebSocket class that won't throw
     class DummyWebSocket {
-      close(): void {
-        // Do nothing
-      }
-      send(_data: string | ArrayBuffer | Blob): void {
-        // Do nothing
-      }
-      addEventListener(): void {
-        // Do nothing
-      }
-      removeEventListener(): void {
-        // Do nothing
-      }
+      close(): void {}
+      send(_data: string | ArrayBuffer | Blob): void {}
+      addEventListener(): void {}
+      removeEventListener(): void {}
       onopen: null | (() => void) = null;
       onclose: null | (() => void) = null;
       onerror: null | ((event: unknown) => void) = null;
@@ -33,13 +27,23 @@ if (typeof window === "undefined" && typeof globalThis !== "undefined") {
       CLOSING = 2;
       CLOSED = 3;
     }
-    // Make the dummy WebSocket available globally so WebSocketFactory.detectEnvironment() finds it
     (globalThis as unknown as { WebSocket: typeof DummyWebSocket }).WebSocket = DummyWebSocket;
   }
 }
 
-// Create the Supabase client - now should not throw during SSR
-export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey);
+export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    flowType: "pkce",
+    autoRefreshToken: true,
+    persistSession: true,
+    detectSessionInUrl: false,
+  },
+});
+
+function callbackUrl(): string {
+  if (typeof window !== "undefined") return `${window.location.origin}/auth/callback`;
+  return "/auth/callback";
+}
 
 export async function signOut() {
   return supabase.auth.signOut();
@@ -55,12 +59,16 @@ export async function signUpWithEmail(email: string, password: string, displayNa
     password,
     options: {
       data: { display_name: displayName || email.split("@")[0] },
+      emailRedirectTo: callbackUrl(),
     },
   });
 }
 
 export async function signInWithOAuth(provider: "google" | "github") {
-  return supabase.auth.signInWithOAuth({ provider });
+  return supabase.auth.signInWithOAuth({
+    provider,
+    options: { redirectTo: callbackUrl() },
+  });
 }
 
 export async function signInWithPhone(phone: string) {
@@ -69,4 +77,22 @@ export async function signInWithPhone(phone: string) {
 
 export async function verifyPhoneOTP(phone: string, token: string) {
   return supabase.auth.verifyOtp({ phone, token, type: "sms" });
+}
+
+/**
+ * Exchange the PKCE `?code=` query param from the email confirmation link
+ * for a Supabase session. Called by /auth/callback.astro.
+ */
+export async function exchangeCodeForSession(code: string) {
+  return supabase.auth.exchangeCodeForSession(code);
+}
+
+/**
+ * Verify OTP token from `?token_hash=&type=` (used by some email templates).
+ */
+export async function verifyOtpToken(tokenHash: string, type: string) {
+  return supabase.auth.verifyOtp({
+    token_hash: tokenHash,
+    type: type as "signup" | "recovery" | "magiclink" | "email_change" | "sms",
+  });
 }

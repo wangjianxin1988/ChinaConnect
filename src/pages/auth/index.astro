@@ -1,15 +1,5 @@
+﻿---
+// /auth - unified entry: redirect to /auth/login (the canonical login page).
+// Single sign-in surface prevents confusion between two separate flows.
+return Astro.redirect("/auth/login");
 ---
-
-import { AuthPage } from '@/components/auth/AuthPage';
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import { translations } from "@/i18n/translations";
-import type { Language } from "@/i18n/translations";
----
-
-<BaseLayout title={(translations[(Astro.locals.lang as Language) || "en"]?.authPage?.authTitle) || translations.en.authPage?.authTitle || "Login / Register - ChinaConnect"}>
-  <main class="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
-    <div class="container mx-auto px-4">
-      <AuthPage client:load />
-    </div>
-  </main>
-</BaseLayout>

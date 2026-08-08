@@ -1,0 +1,231 @@
+﻿---
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
+import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
+import { cities } from "@/data/cities/index";
+import { getLangFromUrl } from "@/i18n/utils";
+import { translations } from "@/i18n/translations";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import {
+  generateBreadcrumbSchema,
+  generateCollectionPageSchema,
+  generateJsonLdScript,
+} from "@/lib/seo/schema-org";
+
+const lang = getLangFromUrl(Astro.url);
+const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
+
+type AttractionLike = {
+  id?: string;
+  name?: string;
+  nameEn?: string;
+  category?: string;
+  description?: string;
+  image?: string;
+  address?: string;
+  ticketPrice?: string;
+  openingHours?: string;
+  recommendedVisitTime?: string;
+};
+
+type CityLike = {
+  slug: string;
+  name: string;
+  nameEn: string;
+  coverImage?: string;
+  attractions?: AttractionLike[];
+};
+
+// Collect all attractions across all cities with their city reference
+const allAttractions: Array<
+  AttractionLike & {
+    citySlug: string;
+    cityNameEn: string;
+    cityName: string;
+    cityCover: string | undefined;
+  }
+> = [];
+
+let totalAttractions = 0;
+const citiesWithAttractions: Array<{
+  slug: string;
+  nameEn: string;
+  name: string;
+  count: number;
+  coverImage: string | undefined;
+}> = [];
+
+for (const city of cities as CityLike[]) {
+  const list = city.attractions || [];
+  if (list.length === 0) continue;
+  totalAttractions += list.length;
+  citiesWithAttractions.push({
+    slug: city.slug,
+    nameEn: city.nameEn,
+    name: city.name,
+    count: list.length,
+    coverImage: city.coverImage,
+  });
+  for (const a of list) {
+    allAttractions.push({
+      ...a,
+      citySlug: city.slug,
+      cityNameEn: city.nameEn,
+      cityName: city.name,
+      cityCover: city.coverImage,
+    });
+  }
+}
+
+// Stats: by category
+const categoryCounts: Record<string, number> = {};
+for (const a of allAttractions) {
+  const cat = (a.category || "other").toString();
+  categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+}
+
+// Sort by most-attractions first
+citiesWithAttractions.sort((a, b) => b.count - a.count);
+
+// Schema.org JSON-LD for Attractions listing
+const attractionSchemas = [
+  generateCollectionPageSchema({
+    name: "Must-Visit Attractions in China on ChinaConnect",
+    description: `Discover ${totalAttractions}+ tourist attractions across Chinese cities &mdash; historical landmarks, natural wonders, cultural sites, and modern icons. Find opening hours, ticket prices, and travel tips for each attraction.`,
+    url: "https://chinaengage.org/attractions",
+    numberOfItems: totalAttractions,
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaengage.org/" },
+    { name: "Attractions", url: "https://chinaengage.org/attractions" },
+  ]),
+];
+
+const pageTitle = "China Attractions - Must-Visit Tourist Spots | ChinaConnect";
+const pageDescription = `Discover ${totalAttractions}+ must-visit attractions across ${citiesWithAttractions.length} Chinese cities &mdash; from the Great Wall and Forbidden City to Zhangjiajie's Avatar mountains. Opening hours, ticket prices, and travel tips for each.`;
+const keywords = [
+  "China attractions",
+  "China tourist spots",
+  "Beijing attractions",
+  "Shanghai attractions",
+  "Xi'an attractions",
+  "Zhangjiajie",
+  "Great Wall",
+  "Forbidden City",
+  "must-visit China",
+  "China travel",
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{ keywords }}
+  lang={lang}
+>
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(attractionSchemas)} />
+
+  <main class="container mx-auto px-4 py-8">
+    <!-- Hero -->
+    <div class="mb-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2" data-i18n="attractions.title">China Attractions</h1>
+      <p class="text-gray-600 text-lg" data-i18n="attractions.subtitle">Must-visit tourist spots across China &mdash; from ancient landmarks to natural wonders</p>
+      <div class="flex flex-wrap gap-4 mt-4 text-sm text-gray-700">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 rounded-full">
+          <span>&#127963;</span>
+          <strong>{totalAttractions}</strong> attractions
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-50 text-purple-700 rounded-full">
+          <span>&#127961;</span>
+          <strong>{citiesWithAttractions.length}</strong> cities
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-green-50 text-green-700 rounded-full">
+          <span>&#128509;</span>
+          Historical, cultural, natural, modern
+        </span>
+      </div>
+    </div>
+
+    <!-- Category filter chips (informational; quick visual overview) -->
+    {Object.keys(categoryCounts).length > 0 && (
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-3 text-gray-900" data-i18n="attractions.browseCategory">Browse by Category</h2>
+        <div class="flex flex-wrap gap-2">
+          {Object.entries(categoryCounts).map(([cat, count]) => (
+            <a
+              href={`#cat-${cat}`}
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-50 hover:bg-gray-100 text-sm text-gray-700 border border-gray-200"
+            >
+              <span class="font-medium capitalize">{cat}</span>
+              <span class="text-xs text-gray-500">{count}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Featured cities (most attractions) -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="attractions.featuredCities">Featured Cities</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        {citiesWithAttractions.slice(0, 12).map((city) => (
+          <a
+            href={`/city/${city.slug}#attractions`}
+            class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all"
+          >
+            <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
+              {city.coverImage ? (
+                <img
+                  src={city.coverImage}
+                  alt={`${city.nameEn} attractions`}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="w-full h-full flex items-center justify-center text-gray-400 text-2xl">&#127961;</div>
+              )}
+            </div>
+            <div class="p-3">
+              <p class="font-semibold text-gray-900 truncate">{city.nameEn}</p>
+              <p class="text-xs text-gray-500 mt-0.5">{city.count} attractions</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- All cities with attraction counts -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="attractions.allCities">All Cities with Attractions</h2>
+      <div class="bg-white rounded-xl border border-gray-200 divide-y divide-gray-100">
+        {citiesWithAttractions.map((city) => (
+          <a
+            href={`/city/${city.slug}#attractions`}
+            class="flex items-center justify-between gap-3 px-4 py-3 hover:bg-gray-50 transition-colors"
+          >
+            <div class="flex items-center gap-3 min-w-0">
+              <span class="text-2xl">&#127961;</span>
+              <div class="min-w-0">
+                <p class="font-medium text-gray-900 truncate">{city.nameEn}</p>
+                <p class="text-xs text-gray-500 truncate">{city.name}</p>
+              </div>
+            </div>
+            <span class="shrink-0 inline-flex items-center gap-1.5 text-sm text-gray-700">
+              <span class="font-semibold">{city.count}</span> attractions
+              <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- App recommendations for trip planning -->
+    <EmbeddedAppRecommendation
+      client:visible
+      categories={["travel", "maps", "transport", "language"]}
+      title="Plan Your Trip"
+      subtitle="Useful apps for getting around and finding attractions"
+    />
+  </main>
+</BaseLayout>

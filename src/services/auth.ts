@@ -226,6 +226,7 @@ export async function signUpWithEmail(data: SignUpData): Promise<AuthResponse> {
         nationality: data.nationality,
         native_language: data.nativeLanguage,
       },
+      emailRedirectTo: `${window.location.origin}/auth/callback`,
     },
   });
 

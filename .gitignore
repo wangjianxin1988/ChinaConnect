@@ -62,3 +62,9 @@ scripts/gsc-service-account.json
 
 .i18n-*.mjs
 .check-*.mjs
+
+# Local debug/test scripts
+verify-*.mjs
+verify-*.bak
+
+verify-*.b64
