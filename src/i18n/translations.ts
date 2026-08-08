@@ -1958,7 +1958,7 @@ export const translations: Record<Language, Translations> = {
     },
     accountPage: {
       loading: "계정 로드 중...",
-      signInRequired: "로그인 필요",
+      signInRequired: "로그인이 필요합니다",
       signInRequiredDesc: "계정을 보려면 로그인하세요.",
       signIn: "로그인",
     },
@@ -2282,8 +2282,8 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "ลบ",
     },
     accountPage: {
-      loading: "กำลังโหลดบัญชี...",
-      signInRequired: "ต้องเข้าสู่ระบบ",
+      loading: "กำลังโหลดบัญชีของคุณ...",
+      signInRequired: "จำเป็นต้องเข้าสู่ระบบ",
       signInRequiredDesc: "โปรดเข้าสู่ระบบเพื่อดูบัญชีของคุณ",
       signIn: "เข้าสู่ระบบ",
     },
@@ -2613,7 +2613,7 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "Xóa",
     },
     accountPage: {
-      loading: "Đang tải tài khoản...",
+      loading: "Đang tải tài khoản của bạn...",
       signInRequired: "Yêu cầu đăng nhập",
       signInRequiredDesc: "Vui lòng đăng nhập để xem tài khoản của bạn.",
       signIn: "Đăng nhập",
@@ -2948,9 +2948,9 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "Удалить",
     },
     accountPage: {
-      loading: "Загрузка аккаунта...",
+      loading: "Загрузка вашего аккаунта...",
       signInRequired: "Требуется вход",
-      signInRequiredDesc: "Войдите, чтобы просмотреть аккаунт.",
+      signInRequiredDesc: "Войдите, чтобы просмотреть свой аккаунт.",
       signIn: "Войти",
     },
     profilePage: {
@@ -3291,7 +3291,7 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "Supprimer",
     },
     accountPage: {
-      loading: "Chargement du compte...",
+      loading: "Chargement de votre compte...",
       signInRequired: "Connexion requise",
       signInRequiredDesc: "Veuillez vous connecter pour voir votre compte.",
       signIn: "Se connecter",
@@ -3627,9 +3627,9 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "Löschen",
     },
     accountPage: {
-      loading: "Konto wird geladen...",
+      loading: "Ihr Konto wird geladen...",
       signInRequired: "Anmeldung erforderlich",
-      signInRequiredDesc: "Bitte melden Sie sich an, um Ihr Konto zu sehen.",
+      signInRequiredDesc: "Bitte melden Sie sich an, um Ihr Konto anzuzeigen.",
       signIn: "Anmelden",
     },
     profilePage: {
@@ -3956,8 +3956,8 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "حذف",
     },
     accountPage: {
-      loading: "جارٍ تحميل الحساب...",
-      signInRequired: "يلزم تسجيل الدخول",
+      loading: "جارٍ تحميل حسابك...",
+      signInRequired: "تسجيل الدخول مطلوب",
       signInRequiredDesc: "يرجى تسجيل الدخول لعرض حسابك.",
       signIn: "تسجيل الدخول",
     },
@@ -4286,9 +4286,9 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "حذف",
     },
     accountPage: {
-      loading: "در حال بارگذاری حساب...",
-      signInRequired: "نیاز به ورود",
-      signInRequiredDesc: "برای مشاهده حساب خود وارد شوید.",
+      loading: "در حال بارگذاری حساب شما...",
+      signInRequired: "ورود به سیستم الزامی است",
+      signInRequiredDesc: "لطفاً برای مشاهده حساب خود وارد شوید.",
       signIn: "ورود",
     },
     profilePage: {
@@ -4608,9 +4608,9 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "删除",
     },
     accountPage: {
-      loading: "正在加载你的账户...",
+      loading: "正在加载您的账户...",
       signInRequired: "需要登录",
-      signInRequiredDesc: "请登录后查看你的账户。",
+      signInRequiredDesc: "请登录以查看您的账户。",
       signIn: "登录",
     },
     profilePage: {
@@ -4929,9 +4929,9 @@ export const translations: Record<Language, Translations> = {
       deleteTitle: "刪除",
     },
     accountPage: {
-      loading: "正在載入你的帳戶...",
+      loading: "正在載入您的帳號...",
       signInRequired: "需要登入",
-      signInRequiredDesc: "請登入後查看你的帳戶。",
+      signInRequiredDesc: "請登入以查看您的帳號。",
       signIn: "登入",
     },
     profilePage: {
