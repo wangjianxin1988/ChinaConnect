@@ -39,23 +39,28 @@ Deno.serve(async (req: Request) => {
     });
   }
 
-  // Verify webhook signature if configured
-  if (webhookSecret) {
-    const signature = req.headers.get("creem-signature") || req.headers.get("x-creem-signature");
-    if (!signature) {
-      return new Response(JSON.stringify({ error: "Missing signature" }), {
-        status: 401,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
-    // Creem uses HMAC-SHA256; the signature is in the form "sha256=<hex>"
-    const expected = await hmacHex(webhookSecret, body);
-    if (signature !== `sha256=${expected}` && signature !== expected) {
-      return new Response(JSON.stringify({ error: "Invalid signature" }), {
-        status: 401,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
+  // Verify webhook signature. CREEM_WEBHOOK_SECRET MUST be configured in production;
+  // if not set, reject all calls (prevents accepting unsigned activation events).
+  if (!webhookSecret) {
+    return new Response(
+      JSON.stringify({ error: "Webhook not configured. Set CREEM_WEBHOOK_SECRET in Supabase secrets." }),
+      { status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+    );
+  }
+  const signature = req.headers.get("creem-signature") || req.headers.get("x-creem-signature");
+  if (!signature) {
+    return new Response(JSON.stringify({ error: "Missing signature" }), {
+      status: 401,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+  // Creem uses HMAC-SHA256; the signature is in the form "sha256=<hex>"
+  const expected = await hmacHex(webhookSecret, body);
+  if (signature !== `sha256=${expected}` && signature !== expected) {
+    return new Response(JSON.stringify({ error: "Invalid signature" }), {
+      status: 401,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
   }
 
   const eventType = payload.event_type || payload.type || payload.event;
