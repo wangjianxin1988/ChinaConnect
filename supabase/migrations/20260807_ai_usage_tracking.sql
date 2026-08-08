@@ -1,8 +1,5 @@
-DROP FUNCTION IF EXISTS public.get_user_ai_usage(UUID) CASCADE;
+DROP TABLE IF EXISTS public.ai_usage CASCADE;
 
-DROP FUNCTION IF EXISTS public.increment_ai_usage(UUID) CASCADE;
-
-DROP FUNCTION IF EXISTS public.update_ai_usage_tier(UUID, TEXT) CASCADE;
 
 -- ============================================================
 -- AI Usage Tracking Migration
@@ -14,16 +11,6 @@ DROP FUNCTION IF EXISTS public.update_ai_usage_tier(UUID, TEXT) CASCADE;
 -- ============================================================
 -- AI USAGE TABLE (per-user, per-period)
 -- ============================================================
-DROP POLICY IF EXISTS "Users can view their own usage" ON public.ai_usage;
-
-DROP FUNCTION IF EXISTS public.get_user_ai_usage(UUID) CASCADE;
-
-DROP FUNCTION IF EXISTS public.increment_ai_usage(UUID) CASCADE;
-
-DROP FUNCTION IF EXISTS public.update_ai_usage_tier(UUID, TEXT) CASCADE;
-
-DROP TABLE IF EXISTS public.ai_usage CASCADE;
-
 CREATE TABLE IF NOT EXISTS public.ai_usage (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
