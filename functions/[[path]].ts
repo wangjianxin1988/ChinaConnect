@@ -73,7 +73,20 @@ export const onRequest: PagesFunction = async (context) => {
     if (response.ok) {
       const html = await response.text();
 
-      const modifiedHtml = html.replace(/lang="en"/g, `lang="${locale}"`);
+      let modifiedHtml = html.replace(/lang="en"/g, `lang="${locale}"`);
+
+      // Replace <title> with the localized title when available (works around prerendered static mode)
+      const localizedTitle = (() => {
+        if (locale === "zh-CN") return "ChinaGuide AI - 你的智能中国旅行助手";
+        if (locale === "zh-TW") return "ChinaGuide AI - 你的智能中國旅行助手";
+        return null;
+      })();
+      if (localizedTitle) {
+        modifiedHtml = modifiedHtml.replace(
+          /<title>[^<]*<\/title>/g,
+          `<title>${localizedTitle}</title>`,
+        );
+      }
 
       const localeScript = `<script>
         (function() {
