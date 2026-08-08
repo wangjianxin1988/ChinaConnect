@@ -1,10 +1,20 @@
-﻿/**
+/**
  * Cloudflare Pages Function: GET /api/auth/providers
  * Reports which OAuth providers are enabled. Used by the login page to
  * grey out buttons that would otherwise error with "provider is not enabled".
+ *
+ * The Supabase auth providers endpoint requires the service-role key
+ * (admin API), which we cannot use from a public Pages Function. Instead,
+ * we use a build/runtime configurable allowlist via the
+ * `OAUTH_PROVIDERS_ENABLED` env var (comma-separated, e.g. "google,github").
+ *
+ * If unset, we default to "none enabled" (safe default — better UX than
+ * showing the raw Supabase 400 "provider is not enabled" error).
  */
 
-interface Env {}
+interface Env {
+  OAUTH_PROVIDERS_ENABLED?: string;
+}
 
 function json(data: unknown, status = 200): Response {
   return new Response(JSON.stringify(data), {
@@ -16,13 +26,20 @@ function json(data: unknown, status = 200): Response {
   });
 }
 
-export const onRequestGet: PagesFunction<Env> = async () => {
-  // Without admin API access we cannot introspect enabled providers server-side
-  // in the Pages Function runtime. We default to `unknown` and let the client
-  // detect "not enabled" errors and show a friendly fallback message.
+export const onRequestGet: PagesFunction<Env> = async (context) => {
+  const allowlist = (context.env.OAUTH_PROVIDERS_ENABLED || "")
+    .split(",")
+    .map((p) => p.trim().toLowerCase())
+    .filter(Boolean);
+  const enabled = (p: string) => allowlist.includes(p);
+
   return json({
-    providers: { google: "unknown", github: "unknown", email: true },
-    unknown: true,
+    providers: {
+      google: enabled("google"),
+      github: enabled("github"),
+      email: true,
+    },
+    configured: allowlist.length > 0,
   });
 };
 
