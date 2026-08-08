@@ -64,10 +64,7 @@ async function uploadDir(token, dirPath, prefix = "") {
       count += await uploadDir(token, full, remote + "/");
     } else if (entry.isFile()) {
       const content = fs.readFileSync(full);
-      const hash = require("node:crypto")
-        .createHash("sha256")
-        .update(content)
-        .digest("hex");
+      const hash = require("node:crypto").createHash("sha256").update(content).digest("hex");
       // Use the assets upload endpoint
       const url = `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/pages/assets/upload`;
       const form = new FormData();

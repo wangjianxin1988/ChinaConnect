@@ -24,8 +24,7 @@ import crypto from "node:crypto";
 
 const SITE_URL = "sc-domain:chinaengage.org";
 const DEFAULT_FEEDPATH = "https://chinaengage.org/sitemap.xml";
-const SA_PATH =
-  process.env.GSC_SA_KEY || "scripts/gsc-service-account.json";
+const SA_PATH = process.env.GSC_SA_KEY || "scripts/gsc-service-account.json";
 
 function base64url(buf) {
   return Buffer.from(buf)
@@ -94,13 +93,10 @@ async function listSitemaps(accessToken) {
 async function main() {
   const args = process.argv.slice(2);
   const checkOnly = args.includes("--check");
-  const feedpath =
-    args.find((a) => !a.startsWith("--")) || DEFAULT_FEEDPATH;
+  const feedpath = args.find((a) => !a.startsWith("--")) || DEFAULT_FEEDPATH;
 
   if (!fs.existsSync(SA_PATH)) {
-    console.error(
-      `[ERROR] Service account JSON not found at: ${SA_PATH}`,
-    );
+    console.error(`[ERROR] Service account JSON not found at: ${SA_PATH}`);
     console.error("Set GSC_SA_KEY env or place the JSON file there.");
     console.error("See header comment in scripts/seo-gsc.mjs for setup.");
     process.exit(1);
