@@ -43,7 +43,9 @@ Deno.serve(async (req: Request) => {
   // if not set, reject all calls (prevents accepting unsigned activation events).
   if (!webhookSecret) {
     return new Response(
-      JSON.stringify({ error: "Webhook not configured. Set CREEM_WEBHOOK_SECRET in Supabase secrets." }),
+      JSON.stringify({
+        error: "Webhook not configured. Set CREEM_WEBHOOK_SECRET in Supabase secrets.",
+      }),
       { status: 503, headers: { ...corsHeaders, "Content-Type": "application/json" } },
     );
   }
