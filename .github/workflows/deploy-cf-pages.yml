@@ -40,6 +40,26 @@ jobs:
         run: |
           echo "$MINIMAX_API_KEY" | wrangler pages secret put MINIMAX_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
           echo "$ANYSEARCH_API_KEY" | wrangler pages secret put ANYSEARCH_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
+      - name: Patch deployment_configs env_vars (plain_text) for runtime hydration
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+        run: |
+          curl -sS -X PATCH "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/${{ env.CLOUDFLARE_PROJECT_NAME }}" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data "{
+              \"deployment_configs\": {
+                \"production\": {
+                  \"env_vars\": {
+                    \"MINIMAX_API_KEY\": { \"type\": \"plain_text\", \"value\": \"$MINIMAX_API_KEY\" },
+                    \"ANYSEARCH_API_KEY\": { \"type\": \"plain_text\", \"value\": \"$ANYSEARCH_API_KEY\" }
+                  }
+                }
+              }
+            }"
       - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
