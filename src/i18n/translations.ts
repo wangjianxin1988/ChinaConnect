@@ -726,6 +726,15 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "Start planning your trip with AI-powered recommendations.",
       recentlyViewed: "Recently Viewed",
       recommendedForYou: "Recommended for You",
+      heroDesc:
+        "Discover restaurants (Michelin & Black Pearl), attractions, transport tips, and emergency info - all powered by AI and curated by locals.",
+      citiesTitle: "Explore Our Cities",
+      citiesSubtitle:
+        "From ancient capitals to modern metropolises, discover the best of China with our comprehensive city guides.",
+      featuresSubtitle: "Everything you need for a great trip",
+      viewAllCities: "View All Cities",
+      chatWithAI: "Chat with AI",
+      exploreBeijing: "Explore Beijing",
     },
     cities: {
       title: "Explore Our Cities",
@@ -1365,6 +1374,14 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "AIを活用したおすすめで旅程を計画しましょう。",
       recentlyViewed: "最近見た",
       recommendedForYou: "あなたへのおすすめ",
+      heroDesc:
+        "ミシュラン・黒珍珠のレストラン、観光地、交通情報、緊急連絡先まで — AIと地元在住者によって厳選された情報をお届けします。",
+      citiesTitle: "都市を探す",
+      citiesSubtitle: "古都から現代都市まで、包括的なシティガイドで中国の魅力を発見しましょう。",
+      featuresSubtitle: "素晴らしい旅に必要なすべて",
+      viewAllCities: "すべての都市を見る",
+      chatWithAI: "AIとチャット",
+      exploreBeijing: "北京を探索",
     },
     cities: {
       title: "都市を探す",
@@ -1687,6 +1704,14 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "AI 기반 추천으로 여행을 계획하세요.",
       recentlyViewed: "최근 본 것",
       recommendedForYou: "추천 항목",
+      heroDesc:
+        "미슐랭·흑진주 레스토랑, 관광지, 교통 팁, 응급 연락처까지 — AI와 현지인들이 선별한 정보를 제공합니다.",
+      citiesTitle: "도시 탐험",
+      citiesSubtitle: "고대 수도부터 현대 도시까지, 종합 도시 가이드로 중국의 매력을 발견하세요.",
+      featuresSubtitle: "훌륭한 여행을 위한 모든 것",
+      viewAllCities: "모든 도시 보기",
+      chatWithAI: "AI와 채팅",
+      exploreBeijing: "베이징 탐험",
     },
     cities: {
       title: "도시 탐험",
@@ -2006,6 +2031,14 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "เริ่มวางแผนการเดินทางของคุณด้วยคำแนะนำที่ขับเคลื่อนด้วย AI",
       recentlyViewed: "เพิ่งดูล่าสุด",
       recommendedForYou: "แนะนำสำหรับคุณ",
+      heroDesc:
+        "ร้านอาหารมิชลินและแบล็กเพิร์ล, สถานที่ท่องเที่ยว, เคล็ดลับการเดินทาง และข้อมูลฉุกเฉิน — ขับเคลื่อนด้วย AI และคัดสรรโดยคนท้องถิ่น",
+      citiesTitle: "สำรวจเมืองของเรา",
+      citiesSubtitle: "จากเมืองหลวงโบราณสู่เมืองสมัยใหม่ ค้นพบสิ่งที่ดีที่สุดของจีนด้วยคู่มือเมืองที่ครอบคลุม",
+      featuresSubtitle: "ทุกสิ่งที่คุณต้องการสำหรับการเดินทางที่ยอดเยี่ยม",
+      viewAllCities: "ดูเมืองทั้งหมด",
+      chatWithAI: "แชทกับ AI",
+      exploreBeijing: "สำรวจปักกิ่ง",
     },
     cities: {
       title: "สำรวจเมืองของเรา",
@@ -2323,6 +2356,15 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "Bắt đầu lập kế hoạch chuyến đi với đề xuất từ AI.",
       recentlyViewed: "Đã xem gần đây",
       recommendedForYou: "Đề xuất cho bạn",
+      heroDesc:
+        "Nhà hàng Michelin & Black Pearl, điểm tham quan, mẹo giao thông và thông tin khẩn cấp — tất cả được hỗ trợ bởi AI và tuyển chọn bởi người bản địa.",
+      citiesTitle: "Khám phá các thành phố",
+      citiesSubtitle:
+        "Từ thủ đô cổ đại đến đô thị hiện đại, khám phá những điều tuyệt vời nhất của Trung Quốc với hướng dẫn thành phố toàn diện.",
+      featuresSubtitle: "Mọi thứ bạn cần cho một chuyến đi tuyệt vời",
+      viewAllCities: "Xem tất cả thành phố",
+      chatWithAI: "Trò chuyện với AI",
+      exploreBeijing: "Khám phá Bắc Kinh",
     },
     cities: {
       title: "Khám phá Thành phố của chúng tôi",
@@ -2646,6 +2688,15 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "Начните планировать поездку с рекомендациями на основе AI.",
       recentlyViewed: "Недавно просмотренные",
       recommendedForYou: "Рекомендуем для вас",
+      heroDesc:
+        "Рестораны Michelin и Black Pearl, достопримечательности, советы по транспорту и экстренная информация — на основе ИИ и отобрано местными жителями.",
+      citiesTitle: "Исследуйте наши города",
+      citiesSubtitle:
+        "От древних столиц до современных мегаполисов — откройте для себя лучшее в Китае с нашими подробными гидами.",
+      featuresSubtitle: "Всё, что нужно для отличной поездки",
+      viewAllCities: "Все города",
+      chatWithAI: "Чат с ИИ",
+      exploreBeijing: "Исследовать Пекин",
     },
     cities: {
       title: "Исследуйте наши города",
@@ -2973,6 +3024,15 @@ export const translations: Record<Language, Translations> = {
         "Commencez à planifier votre voyage avec des recommandations alimentées par l'IA.",
       recentlyViewed: "Récemment consultés",
       recommendedForYou: "Recommandé pour vous",
+      heroDesc:
+        "Restaurants Michelin & Black Pearl, attractions, conseils de transport et infos d'urgence — propulsé par l'IA et sélectionné par des locaux.",
+      citiesTitle: "Explorez nos villes",
+      citiesSubtitle:
+        "Des capitales anciennes aux métropoles modernes, découvrez le meilleur de la Chine avec nos guides complets.",
+      featuresSubtitle: "Tout ce dont vous avez besoin pour un excellent voyage",
+      viewAllCities: "Toutes les villes",
+      chatWithAI: "Discuter avec l'IA",
+      exploreBeijing: "Explorer Pékin",
     },
     cities: {
       title: "Explorez nos villes",
@@ -3306,6 +3366,15 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "Beginnen Sie mit KI-gestützten Empfehlungen Ihre Reise zu planen.",
       recentlyViewed: "Zuletzt angesehen",
       recommendedForYou: "Empfohlen für Sie",
+      heroDesc:
+        "Michelin- & Black Pearl-Restaurants, Sehenswürdigkeiten, Transport-Tipps und Notfallinfos — unterstützt von KI und kuratiert von Einheimischen.",
+      citiesTitle: "Entdecken Sie unsere Städte",
+      citiesSubtitle:
+        "Von alten Hauptstädten bis zu modernen Metropolen — entdecken Sie das Beste Chinas mit unseren umfassenden Städteführern.",
+      featuresSubtitle: "Alles, was Sie für eine großartige Reise brauchen",
+      viewAllCities: "Alle Städte ansehen",
+      chatWithAI: "Mit KI chatten",
+      exploreBeijing: "Peking erkunden",
     },
     cities: {
       title: "Unsere Städte erkunden",
@@ -3633,6 +3702,15 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "ابدأ التخطيط لرحلتك مع توصيات مدعومة بالذكاء الاصطناعي.",
       recentlyViewed: "شوهدت مؤخرًا",
       recommendedForYou: "موصى به لك",
+      heroDesc:
+        "مطاعم ميشلان وبلاك بيرل، المعالم السياحية، نصائح النقل، ومعلومات الطوارئ — مدعوم بالذكاء الاصطناعي ومنتقى من السكان المحليين.",
+      citiesTitle: "استكشف مدننا",
+      citiesSubtitle:
+        "من العواصم القديمة إلى المدن الحديثة، اكتشف أفضل ما في الصين مع أدلة مدننا الشاملة.",
+      featuresSubtitle: "كل ما تحتاجه لرحلة رائعة",
+      viewAllCities: "عرض جميع المدن",
+      chatWithAI: "الدردشة مع الذكاء الاصطناعي",
+      exploreBeijing: "استكشاف بكين",
     },
     cities: {
       title: "استكشف مدننا",
@@ -3952,6 +4030,15 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "سفر خود را با توصیه‌های مبتنی بر AI برنامه‌ریزی کنید.",
       recentlyViewed: "اخیراً مشاهده‌شده",
       recommendedForYou: "پیشنهاد برای شما",
+      heroDesc:
+        "رستوران‌های میشلن و بلک پرل، جاذبه‌ها، نکات حمل و نقل و اطلاعات اضطراری — با قدرت هوش مصنوعی و گردآوری شده توسط محلی‌ها.",
+      citiesTitle: "شهرهای ما را کاوش کنید",
+      citiesSubtitle:
+        "از پایتخت‌های باستانی تا شهرهای مدرن، بهترین‌های چین را با راهنماهای جامع شهر ما کشف کنید.",
+      featuresSubtitle: "هر آنچه برای یک سفر عالی نیاز دارید",
+      viewAllCities: "مشاهده همه شهرها",
+      chatWithAI: "گفتگو با هوش مصنوعی",
+      exploreBeijing: "کاوش پکن",
     },
     cities: {
       title: "شهرهای ما را کاوش کنید",
@@ -4273,6 +4360,14 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "使用 AI 推荐快速制定行程。",
       recentlyViewed: "最近浏览",
       recommendedForYou: "为你推荐",
+      heroDesc:
+        "米其林·黑珍珠餐厅、景点、交通贴士、紧急联系信息 — 由 AI 和本地人精心整理,为您提供所需的一切。",
+      citiesTitle: "探索我们的城市",
+      citiesSubtitle: "从古都到现代都市,通过全面的城市指南发现中国之美。",
+      featuresSubtitle: "精彩旅程所需的一切",
+      viewAllCities: "查看所有城市",
+      chatWithAI: "与 AI 对话",
+      exploreBeijing: "探索北京",
     },
     cities: {
       title: "探索我们的城市",
@@ -4586,6 +4681,14 @@ export const translations: Record<Language, Translations> = {
       ctaSubtitle: "使用 AI 推薦快速製定行程。",
       recentlyViewed: "最近瀋訞",
       recommendedForYou: "為你推薦",
+      heroDesc:
+        "米其林·黑珍珠餐廳、景點、交通貼士、緊急聯絡資訊 — 由 AI 和本地人精心整理,為您提供所需的一切。",
+      citiesTitle: "探索我們的城市",
+      citiesSubtitle: "從古都到現代都市,透過全面的城市指南發現中國之美。",
+      featuresSubtitle: "精彩旅程所需的一切",
+      viewAllCities: "查看所有城市",
+      chatWithAI: "與 AI 對話",
+      exploreBeijing: "探索北京",
     },
     cities: {
       title: "探索我們的城市",
