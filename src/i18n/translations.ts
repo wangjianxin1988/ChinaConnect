@@ -262,6 +262,209 @@ export interface Translations {
     signInRequiredDesc: string;
     signIn: string;
   };
+
+  // Business Guide sub-pages (/guide/business/*)
+  businessGuidePage?: {
+    backToGuide: string;
+    indexTitle: string;
+    indexDescription: string;
+    indexSubtitle: string;
+    registrationShort: string;
+    registrationTitle: string;
+    registrationDescription: string;
+    registrationSubtitle: string;
+    etiquetteShort: string;
+    etiquetteTitle: string;
+    etiquetteDescription: string;
+    etiquetteSubtitle: string;
+    expoShort: string;
+    expoTitle: string;
+    expoDescription: string;
+    expoSubtitle: string;
+    invitationShort: string;
+    invitationTitle: string;
+    invitationDescription: string;
+    invitationSubtitle: string;
+    translationShort: string;
+    translationTitle: string;
+    translationDescription: string;
+    translationSubtitle: string;
+  };
+  // Travel Guide (/guide/*)
+  guidePage?: {
+    home: string;
+    travelGuide: string;
+    visaSubtitle: string;
+    visaTitleShort: string;
+    visaStageTitle: string;
+    visaStageDescription: string;
+    paymentSubtitle: string;
+    paymentTitleShort: string;
+    paymentStageTitle: string;
+    paymentStageDescription: string;
+    communicationSubtitle: string;
+    communicationTitleShort: string;
+    communicationStageTitle: string;
+    communicationStageDescription: string;
+    transportSubtitle: string;
+    transportTitleShort: string;
+    transportStageTitle: string;
+    transportStageDescription: string;
+    accommodationSubtitle: string;
+    accommodationTitleShort: string;
+    accommodationStageTitle: string;
+    accommodationStageDescription: string;
+    emergencySubtitle: string;
+    emergencyTitleShort: string;
+    emergencyStageTitle: string;
+    emergencyStageDescription: string;
+    departureSubtitle: string;
+    departureTitleShort: string;
+    departureStageTitle: string;
+    departureStageDescription: string;
+    diningSubtitle: string;
+    diningTitleShort: string;
+    diningStageTitle: string;
+    diningStageDescription: string;
+    culturalWarningsSubtitle: string;
+    culturalWarningsTitleShort: string;
+    scamPreventionSubtitle: string;
+    scamPreventionTitleShort: string;
+    transparencySubtitle: string;
+    transparencyTitleShort: string;
+    emergencyHeading: string;
+    emergencyPolice: string;
+    emergencyAmbulance: string;
+    emergencyFire: string;
+    emergencyTourism: string;
+    viewAttractions: string;
+    viewFullEmergency: string;
+    popularByCity: string;
+    quickBeijingDesc: string;
+    quickFoodDesc: string;
+    quickScamDesc: string;
+    cityBeijing: string;
+    cityShanghai: string;
+    cityXian: string;
+    cityChengdu: string;
+    indexHeroTitle: string;
+    indexHeroSubtitle: string;
+    indexStagesTitle: string;
+    indexGuidesHeading: string;
+    indexBusinessHeading: string;
+    indexBusinessSubtitle: string;
+    viewAllBusinessTools: string;
+    viewAllBusinessToolsCta: string;
+    viewAllBusinessToolsDesc: string;
+  };
+  // City sub-pages (/city/[slug]/*)
+  cityPage?: {
+    home: string;
+    gettingTo: string;
+    attractionsHeading: string;
+    attractionsSubtitle: string;
+    attractionsExploreCount: string;
+    phoneIcon: string;
+    bestTimeHeading: string;
+    quickFactsHeading: string;
+    topHighlightsHeading: string;
+    foodHeading: string;
+    foodSubtitle: string;
+    hotelsHeading: string;
+    transportSubtitle: string;
+    noResults: string;
+    noResultsDesc: string;
+    noHotels: string;
+    noHotelsDesc: string;
+    dataSourcesHeading: string;
+    dataSourcesDesc: string;
+    foodHighlightsHeading: string;
+    foodHighlightsSubtitle: string;
+    hotelsCountUnit: string;
+    viewAllHotels: string;
+  };
+  // Food sub-page (/city/[slug]/food)
+  foodPage?: {
+    subtitle: string;
+    indexTitle: string;
+    exploreFood: string;
+    noCityTitle: string;
+    showingCount: string;
+    citiesUnit: string;
+    back: string;
+    heroCityFood: string;
+    restaurantsUnit: string;
+    filteringLabel: string;
+    backToCity: string;
+    callPhone: string;
+    amapNav: string;
+    navigate: string;
+    perPerson: string;
+    emptyTitle: string;
+    emptyDesc: string;
+    dataSourcesHeading: string;
+    dataSourcesDesc: string;
+    filterMichelin: string;
+    filterBlackPearl: string;
+    filterLocal: string;
+    filterCasual: string;
+    filterBudget: string;
+    otherRestaurants: string;
+    cityEmpty: string;
+    cityEmptyDesc: string;
+    cityEmptySubtitle: string;
+    emptyCta: string;
+    metaFooter: string;
+  };
+  // Offline page
+  offlinePage?: {
+    title: string;
+    bannerTitle: string;
+    tryAgain: string;
+    tipsHeading: string;
+    tipsList1: string;
+    tipsList2: string;
+    tipsList3: string;
+    tipsList4: string;
+    tipsList5: string;
+    tipsList6: string;
+    phrase1En: string;
+    phrase2En: string;
+    phrase3En: string;
+    phrase4En: string;
+    phrase5En: string;
+    phrase6En: string;
+    phrase7En: string;
+  };
+  // Profile page (/profile)
+  profilePage?: {
+    title: string;
+  };
+  // User profile page (/user/[id])
+  userPage?: {
+    title: string;
+  };
+  // Auth pages
+  authPage?: {
+    callbackTitle: string;
+    authTitle: string;
+    loginTitle: string;
+    signingYouIn: string;
+  };
+  // Checkout pages
+  checkoutPage?: {
+    title: string;
+    description: string;
+    successTitle: string;
+    successDesc: string;
+    successAccess: string;
+    processingDesc: string;
+    startPlanning: string;
+    viewAccount: string;
+    backToPricing: string;
+    errorTitle: string;
+    errorDesc: string;
+  };
   // Pricing page
   pricing?: {
     cancelledNotice: string;
@@ -715,6 +918,207 @@ export const translations: Record<Language, Translations> = {
         "Join thousands of travelers using AI to plan their perfect China trip. Start free today.",
       ctaPrimary: "Start Free Today",
       ctaSecondary: "Explore Features",
+    },
+    businessGuidePage: {
+      backToGuide: "← Back to Travel Guide",
+      indexTitle: "Business Express - ChinaConnect",
+      indexDescription: "Practical tools for foreign business travelers in China.",
+      indexSubtitle: "Business Express",
+      registrationShort: "Company Registration Guide",
+      registrationTitle: "China Company Registration Guide - ChinaConnect",
+      registrationDescription:
+        "Step-by-step guide to registering a WFOE, Representative Office, or other entity in China as a foreign investor. Complete timeline and document checklist.",
+      registrationSubtitle: "工商注册指南",
+      etiquetteShort: "Business Etiquette Essentials",
+      etiquetteTitle: "China Business Etiquette - ChinaConnect",
+      etiquetteDescription:
+        "Master Chinese business etiquette: greetings, gift-giving, dining, and meeting protocols for foreign professionals.",
+      etiquetteSubtitle: "商务礼仪速成",
+      expoShort: "Expo & Event Calendar",
+      expoTitle: "China Expo & Trade Show Calendar - ChinaConnect",
+      expoDescription:
+        "Plan trips around China's top trade shows and industry events. Canton Fair, CIIE, design weeks, and hundreds of regional expos with dates and venues.",
+      expoSubtitle: "展会与活动日厈",
+      invitationShort: "Business Invitation Letters",
+      invitationTitle: "China Business Invitation Letter Templates - ChinaConnect",
+      invitationDescription:
+        "Download ready-to-use bilingual invitation letters for visa applications. Editable formats covering trade delegations, conference attendance, and partner visits.",
+      invitationSubtitle: "商务邀请函模板",
+      translationShort: "Translation & Interpreting",
+      translationTitle: "Translation & Interpreting Services - ChinaConnect",
+      translationDescription:
+        "Book vetted interpreters and translators for meetings, conferences, and negotiations in China.",
+      translationSubtitle: "翻译服务预约",
+    },
+    guidePage: {
+      home: "← Back to Home",
+      travelGuide: "Travel Guide",
+      visaSubtitle: "Visa - Complete guide for entering China",
+      visaTitleShort: "Visa Guide",
+      visaStageTitle: "1. Visa & Entry",
+      visaStageDescription: "Everything you need before boarding the plane.",
+      paymentSubtitle: "Payment - Alipay, WeChat Pay & cash tips",
+      paymentTitleShort: "Payment Guide",
+      paymentStageTitle: "2. Payment Setup",
+      paymentStageDescription: "Get Alipay and WeChat Pay working before you arrive.",
+      communicationSubtitle: "Communication - SIM cards, VPN, and apps",
+      communicationTitleShort: "Communication Guide",
+      communicationStageTitle: "3. Communication",
+      communicationStageDescription: "Stay connected with eSIMs, VPN and essential apps.",
+      transportSubtitle: "Transport - Getting around China with confidence",
+      transportTitleShort: "Transport Guide",
+      transportStageTitle: "4. Transport",
+      transportStageDescription: "Navigate metros, high-speed trains and ride-hailing apps.",
+      accommodationSubtitle: "Accommodation - Hotels, hostels and booking tips",
+      accommodationTitleShort: "Accommodation Guide",
+      accommodationStageTitle: "5. Accommodation",
+      accommodationStageDescription: "Find and book the right place to stay for every budget.",
+      emergencySubtitle: "Emergency - Police, ambulance, embassy contacts",
+      emergencyTitleShort: "Emergency Guide",
+      emergencyStageTitle: "6. Emergency",
+      emergencyStageDescription: "Critical contacts and phrasebook for emergencies.",
+      departureSubtitle: "Departure - Tax refunds and leaving China",
+      departureTitleShort: "Departure Guide",
+      departureStageTitle: "7. Departure",
+      departureStageDescription: "Tax refunds, customs, and final tips before you fly home.",
+      diningSubtitle: "Dining - Restaurants, etiquette and tipping",
+      diningTitleShort: "Dining Guide",
+      diningStageTitle: "8. Dining",
+      diningStageDescription: "Order with confidence and discover local favorites.",
+      culturalWarningsSubtitle: "Cultural differences and faux pas to avoid",
+      culturalWarningsTitleShort: "Cultural Warnings",
+      scamPreventionSubtitle: "Protect yourself from common scams in China",
+      scamPreventionTitleShort: "Scam Prevention",
+      transparencySubtitle: "Know the fair prices, avoid being overcharged",
+      transparencyTitleShort: "Price Transparency",
+      emergencyHeading: "Emergency Contacts",
+      emergencyPolice: "Police 110",
+      emergencyAmbulance: "Ambulance 120",
+      emergencyFire: "Fire 119",
+      emergencyTourism: "Tourist Hotline 12301",
+      viewAttractions: "View top attractions",
+      viewFullEmergency: "View full emergency guide",
+      popularByCity: "Popular by city",
+      quickBeijingDesc: "Capital highlights & must-eats",
+      quickFoodDesc: "Michelin, Black Pearl & local favorites",
+      quickScamDesc: "Common scams and how to avoid them",
+      cityBeijing: "Beijing",
+      cityShanghai: "Shanghai",
+      cityXian: "Xi'an",
+      cityChengdu: "Chengdu",
+      indexHeroTitle: "🇨🇳 China Complete Travel Guide",
+      indexHeroSubtitle:
+        "Complete Travel Guide to China — from preparation to departure, covering every aspect of travel, including business travel tools.",
+      indexStagesTitle: "8 Stages for a Smooth China Trip",
+      indexGuidesHeading: "🗺️ Travel Guides",
+      indexBusinessHeading: "🚀 Business Travel Tools",
+      indexBusinessSubtitle:
+        "From invitation letters to business etiquette — five practical tools for foreign business travelers.",
+      viewAllBusinessTools: "View all business tools",
+      viewAllBusinessToolsCta: "Open Business Express",
+      viewAllBusinessToolsDesc:
+        "See all business tools with detailed stats and quick-start guides.",
+    },
+    cityPage: {
+      home: "← Back to city home",
+      gettingTo: "Getting to {city}",
+      attractionsHeading: "Top Attractions",
+      attractionsSubtitle: "Must-visit places picked by locals and travelers",
+      attractionsExploreCount: "{city} — {count} places to explore",
+      phoneIcon: "📞",
+      bestTimeHeading: "Best Time to Visit",
+      quickFactsHeading: "Quick Facts",
+      topHighlightsHeading: "Top Highlights",
+      foodHeading: "Where to Eat",
+      foodSubtitle: "Michelin stars, Black Pearl picks, and local favorites",
+      hotelsHeading: "Where to Stay",
+      transportSubtitle: "Getting around {city}",
+      noResults: "No attractions found",
+      noResultsDesc: "Try adjusting your filters or search keywords.",
+      noHotels: "No hotels found",
+      noHotelsDesc: "Try a different price range or category.",
+      dataSourcesHeading: "Data Sources",
+      dataSourcesDesc: "Where this data comes from",
+      foodHighlightsHeading: "Food Highlights",
+      foodHighlightsSubtitle: "Locally recommended",
+      hotelsCountUnit: "hotels",
+      viewAllHotels: "View all {totalHotelCount} hotels",
+    },
+    foodPage: {
+      subtitle: "Michelin, Black Pearl & local favorites",
+      indexTitle: "🍜 China Food Map",
+      exploreFood: "Explore Food",
+      noCityTitle: "Can't find the city you want?",
+      showingCount: "Showing",
+      citiesUnit: "cities",
+      back: "← Back to {city}",
+      heroCityFood: "{city} Food",
+      restaurantsUnit: "restaurants",
+      filteringLabel: "Filtering:",
+      backToCity: "Back to {city}",
+      callPhone: "Call",
+      amapNav: "Amap",
+      navigate: "Navigate",
+      perPerson: "/person",
+      emptyTitle: "No restaurants yet",
+      emptyDesc: "No restaurants in this category. Try another filter.",
+      dataSourcesHeading: "Reference Sources",
+      dataSourcesDesc: "These sources can help you learn more about {city}'s food culture:",
+      filterMichelin: "Michelin",
+      filterBlackPearl: "Black Pearl",
+      filterLocal: "Local Favorite",
+      filterCasual: "Casual",
+      filterBudget: "Budget",
+      otherRestaurants: "Other restaurants in {city}",
+      cityEmpty: "No restaurants yet",
+      cityEmptyDesc: "We're still curating restaurants for {city}.",
+      cityEmptySubtitle: "Add some restaurants to start exploring",
+      emptyCta: "View all restaurants",
+      metaFooter: "Restaurant data sourced from public reviews and guides",
+    },
+    offlinePage: {
+      title: "You are offline",
+      bannerTitle: "Offline mode",
+      tryAgain: "Try again",
+      tipsHeading: "Travel tips while offline",
+      tipsList1: "Save key phrases and addresses before going offline.",
+      tipsList2: "Download offline maps in your maps app.",
+      tipsList3: "Keep a screenshot of your hotel booking.",
+      tipsList4: "Use hotel Wi-Fi for video calls back home.",
+      tipsList5: "Most cafes and malls have free Wi-Fi.",
+      tipsList6: "Carry a small notepad for writing addresses.",
+      phrase1En: "Help!",
+      phrase2En: "Call the police!",
+      phrase3En: "I need an ambulance",
+      phrase4En: "Fire!",
+      phrase5En: "I am lost",
+      phrase6En: "I need help",
+      phrase7En: "Where is the hospital?",
+    },
+    profilePage: {
+      title: "My Profile - ChinaConnect",
+    },
+    userPage: {
+      title: "User Profile - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "Signing in...",
+      authTitle: "Login / Register - ChinaConnect",
+      loginTitle: "Sign In - ChinaConnect",
+      signingYouIn: "Signing you in...",
+    },
+    checkoutPage: {
+      title: "Payment Successful - ChinaConnect",
+      description: "Your subscription has been activated successfully",
+      successTitle: "Payment Successful!",
+      successDesc: "Your subscription has been activated.",
+      successAccess: "You now have access to all the features of your new plan.",
+      processingDesc: "Please wait while we confirm your subscription.",
+      startPlanning: "Start Planning",
+      viewAccount: "View account",
+      backToPricing: "← Back to pricing",
+      errorTitle: "Something went wrong",
+      errorDesc: "We couldn't process your payment. Please try again or contact support.",
     },
   },
 

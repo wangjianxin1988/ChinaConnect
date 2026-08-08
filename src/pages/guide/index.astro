@@ -2,6 +2,10 @@
 
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
 const pageTitle = translations.en.guidePage?.indexTitle || "Complete Travel Guide to China - ChinaConnect";
 const pageDescription = translations.en.guidePage?.indexDescription || "Complete 12-stage travel guide for China plus business travel essentials.";
@@ -143,16 +147,16 @@ const colorClasses = {
   title={pageTitle}
   description={pageDescription}
   meta={{
-    keywords: ['China travel guide', 'China guide', 'travel China', 'China tips', 'China preparation', 'China business guide', '商务快车道', '中国商务指南'],
+    keywords: ['China travel guide', 'China guide', 'travel China', 'China tips', 'China preparation', 'China business guide', 'Business Express', 'China business guide'],
   }}
 >
   <main class="container mx-auto px-4 py-8">
     <div class="mb-12 text-center">
       <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4" data-i18n="guidePage.indexHeroTitle">
-        🇨🇳 中国完整旅游指南
+        🇨🇳 China Complete Travel Guide
       </h1>
       <p class="text-xl text-muted-foreground max-w-3xl mx-auto" data-i18n="guidePage.indexHeroSubtitle">
-        Complete Travel Guide to China — 从出发准备到离境，涵盖旅行的方方面面，同时包含商务差旅实用工具
+        Complete Travel Guide to China — from preparation to departure, covering every aspect of travel, including business travel tools.
       </p>
     </div>
 
@@ -189,7 +193,7 @@ const colorClasses = {
 
     <!-- Travel Guide Cards -->
     <div class="mb-4">
-      <h2 class="text-2xl font-bold text-foreground mb-6" data-i18n="guidePage.indexGuidesHeading">🗺️ 旅行指南 Travel Guides</h2>
+      <h2 class="text-2xl font-bold text-foreground mb-6" data-i18n="guidePage.indexGuidesHeading">�️ Travel Guides</h2>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {guides.map((guide, index) => (
@@ -204,7 +208,9 @@ const colorClasses = {
             <span class="text-4xl">{guide.icon}</span>
             <div>
               <h3 class="text-xl font-bold">{guide.title}</h3>
+              {showTitleCn && (
               <p class="text-white/80">{guide.titleCn}</p>
+            )}
             </div>
           </div>
           <p class="text-white/90 text-sm mb-4">{guide.description}</p>
@@ -224,8 +230,8 @@ const colorClasses = {
 
     <!-- Business Travel Section -->
     <div id="business-tools" class="mt-16 mb-4">
-      <h2 class="text-2xl font-bold text-foreground mb-2" data-i18n="guidePage.indexBusinessHeading">🚀 商务差旅工具 Business Travel Tools</h2>
-      <p class="text-muted-foreground mb-6" data-i18n="guidePage.indexBusinessSubtitle">从邀请函到商务礼仪，为外国商务人士提供的五大实用工具 — 完整旅游指南的一部分</p>
+      <h2 class="text-2xl font-bold text-foreground mb-2" data-i18n="guidePage.indexBusinessHeading">🚀 Business Travel Tools</h2>
+      <p class="text-muted-foreground mb-6" data-i18n="guidePage.indexBusinessSubtitle">From invitation letters to business etiquette — five practical tools for foreign business travelers.</p>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {businessGuides.map((guide) => (
@@ -240,7 +246,9 @@ const colorClasses = {
             <h3 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
               {guide.title}
             </h3>
-            <p class="text-muted-foreground text-sm mb-3">{guide.titleCn}</p>
+            {showTitleCn && (
+              <p class="text-muted-foreground text-sm mb-3">{guide.titleCn}</p>
+            )}
             <p class="text-sm text-muted-foreground">
               {guide.description}
             </p>
@@ -261,7 +269,7 @@ const colorClasses = {
       >
         <span class="text-5xl mb-4">📋</span>
         <h3 class="text-xl font-bold mb-2" data-i18n="guidePage.viewAllBusinessTools">View All Business Tools</h3>
-        <p class="text-white/80 text-sm text-center mb-4" data-i18n="guidePage.viewAllBusinessToolsDesc">查看完整商务工具页面，包含详细统计和快速入门指南</p>
+        <p class="text-white/80 text-sm text-center mb-4" data-i18n="guidePage.viewAllBusinessToolsDesc">See all business tools with detailed stats and quick-start guides.</p>
         <span class="text-sm font-medium group-hover:translate-x-1 transition-transform" data-i18n="guidePage.viewAllBusinessToolsCta">
           Go to Business Express →
         </span>

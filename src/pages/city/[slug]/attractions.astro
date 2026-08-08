@@ -49,7 +49,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
         🏛️Attractions in {city.nameEn}
       </h1>
-      <p class="text-xl text-purple-200">{city.name} 路 {city.attractions.length} places to explore</p>
+      <p class="text-xl text-purple-200" data-i18n="cityPage.attractionsExploreCount">{city.name} — {count} places to explore</p>
     </div>
   </section>
 
@@ -151,7 +151,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
 
             <div class="space-y-2 mb-4">
               <div class="flex items-center gap-2 text-sm text-gray-600">
-                <span class="text-gray-400">鈴?/span>
+                <span class="text-gray-400" data-i18n="cityPage.phoneIcon">📞</span>
                 <span>{attraction.openingHours}</span>
               </div>
               {attraction.address && (
@@ -175,7 +175,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-1 text-sm text-purple-600 hover:text-purple-700 font-medium hover:underline"
               >
-                Get Directions 鈫?
+                Get Directions →
               </a>
               )}
             </div>
@@ -260,11 +260,11 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
         <p data-i18n="cityPage.dataSourcesDesc">Attraction data compiled from authoritative sources. Verify details before visiting:</p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">马蜂窝?(Mafengwo)</a> 鈥?China's largest travel community</li>
-          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">鎼虹▼ (Ctrip/Trip.com)</a> 鈥?Attraction reviews & booking</li>
-          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a> 鈥?International attraction reviews</li>
-          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">新华网?(China News)</a> 鈥?Official tourism information</li>
-          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">鏂囧寲鍜屾梾娓搁儴 (Ministry of Culture & Tourism)</a> 鈥?Government tourism data</li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a>  — China's largest travel community</li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — Attraction reviews & booking</li>
+          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — International attraction reviews</li>
+          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News (新华网)</a>  — Official tourism information</li>
+          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourismm)</a>  — Government tourism data</li>
         </ul>
         <p class="text-xs text-gray-400 mt-3">Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</p>
       </div>

@@ -7,6 +7,10 @@
 
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
 const tools = [
   {
@@ -58,7 +62,7 @@ const tools = [
   meta={{
     keywords: [
       "China business guide",
-      "商务快车道",
+      "Business Express",
       "China invitation letter",
       "China WFOE",
       "China business etiquette",
@@ -87,7 +91,7 @@ const tools = [
           <h1 class="text-3xl md:text-4xl font-bold text-foreground" data-i18n="businessGuidePage.backToGuide">
             Business Express
           </h1>
-          <p class="text-muted-foreground text-lg">商务快车道</p>
+          <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.indexSubtitle">Business Express</p>
         </div>
       </div>
       <p class="text-muted-foreground max-w-2xl">
@@ -112,7 +116,9 @@ const tools = [
             <h2 class="text-lg font-bold text-foreground mb-1 group-hover:text-primary">
               {t.title}
             </h2>
-            <p class="text-xs text-muted-foreground mb-3">{t.titleCn}</p>
+            {showTitleCn && (
+              <p class="text-xs text-muted-foreground mb-3">{t.titleCn}</p>
+            )}
             <p class="text-sm text-muted-foreground leading-relaxed">
               {t.description}
             </p>

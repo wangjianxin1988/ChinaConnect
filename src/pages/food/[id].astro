@@ -4,6 +4,7 @@ import RestaurantDetail from "@/components/food/RestaurantDetail";
 import { cities } from "@/data/food/cities";
 import { getRestaurantById, restaurants } from "@/data/food/restaurants";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getLangFromUrl } from "@/i18n/utils";
 
 export function getStaticPaths() {
   return restaurants.map((r) => ({
@@ -24,19 +25,23 @@ const sameCityRestaurants = restaurants
   .slice(0, 4);
 
 const TYPE_CONFIG = {
-  michelin: { label: "米其林", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
+  michelin: { label: "米其林", labelEn: "Michelin", icon: "⭐", stars: restaurant.star, color: "text-[#1E3A5F]" },
   blackpearl: {
     label: "黑珍珠",
+    labelEn: "Black Pearl",
     icon: "💎",
     diamonds: restaurant.diamond,
     color: "text-[#2D1B4E]",
   },
-  local: { label: "本地推荐", icon: "🔥", color: "text-[#B8383D]" },
+  local: { label: "本地推荐", labelEn: "Local", icon: "🔥", color: "text-[#B8383D]" },
 };
 
 const config = TYPE_CONFIG[restaurant.type];
 
 // Convert to RestaurantDetail-compatible format
+const lang = getLangFromUrl(Astro.url);
+const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
+
 const restaurantDetail = {
   id: restaurant.id,
   name: restaurant.name,
@@ -62,7 +67,7 @@ const restaurantDetail = {
 };
 ---
 
-<BaseLayout title={`${restaurant.name} - 美食推荐`}>
+<BaseLayout title={showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.name} - Food Recommendation`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -73,9 +78,9 @@ const restaurantDetail = {
             <span data-i18n="foodPage.back">Back</span>
           </a>
           <span class={`text-sm font-medium ${config.color}`}>
-            {config.icon} {config.label}
-            {restaurant.type === 'michelin' && restaurant.star && `${restaurant.star}星`}
-            {restaurant.type === 'blackpearl' && restaurant.diamond && `${restaurant.diamond}钻`}
+            {config.icon} {showTitleCn ? config.label : config.labelEn}
+            {restaurant.type === 'michelin' && restaurant.star && (showTitleCn ? `${restaurant.star}星` : `${restaurant.star}-star`)}
+            {restaurant.type === 'blackpearl' && restaurant.diamond && (showTitleCn ? `${restaurant.diamond}钻` : `${restaurant.diamond}-diamond`)}
           </span>
         </div>
       </div>

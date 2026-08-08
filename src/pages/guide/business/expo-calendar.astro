@@ -8,7 +8,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   title="China Expo Calendar - ChinaConnect"
   description="Complete calendar of major trade fairs and exhibitions in China including Canton Fair, auto shows, and industry events. Plan your business trip around key events."
   meta={{
-    keywords: ['China expo calendar', 'Canton Fair dates', '广交会', 'China trade shows 2026', '中国展会日历'],
+    keywords: ['China expo calendar', 'Canton Fair dates', 'Canton Fair', 'China trade shows 2026', 'China expo calendar'],
   }}
 >
   <main class="container mx-auto px-4 py-8">
@@ -17,13 +17,13 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
-        Business Express / 商务快车道
+        <span data-i18n="businessGuidePage.backToGuide">← Back to Travel Guide</span>
       </a>
       <div class="flex items-center gap-3 mb-3">
         <span class="text-4xl">📅</span>
         <div>
-          <h1 class="text-3xl md:text-4xl font-bold text-foreground">Expo & Event Calendar</h1>
-          <p class="text-muted-foreground text-lg">展会与活动日历</p>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground" data-i18n="businessGuidePage.expoShort">Expo & Event Calendar</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.expoSubtitle">Expo &amp; Event Calendar</p>
         </div>
       </div>
       <p class="text-muted-foreground max-w-2xl">
