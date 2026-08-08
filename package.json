@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "pnpm check:i18n && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "typecheck": "tsc --noEmit",
@@ -44,7 +44,10 @@
     "hotels:refresh": "node scripts/fetch-dynamic-hotels.mjs",
     "hotels:refresh:write": "node scripts/fetch-dynamic-hotels.mjs --write",
     "business:verify": "node scripts/verify-business-data.mjs",
-    "business:verify:strict": "node scripts/verify-business-data.mjs --strict"
+    "business:verify:strict": "node scripts/verify-business-data.mjs --strict",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "i18n:merge": "node merge-i18n.mjs",
+    "i18n:translate": "node gen-missing.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.13",
