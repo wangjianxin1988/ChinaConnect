@@ -80,7 +80,7 @@ export const onRequest: PagesFunction = async (context) => {
       // which caused /ja/pricing/ to show an AI page title in the browser tab and SERP.
       const localizedTitle = (() => {
         // Strip trailing slash so `/pricing/` and `/pricing` match the same entry.
-        const pagePath = path.replace(/^/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)/, "").replace(//+$/, "") || "/";
+        const pagePath = path.replace(/^/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)/, "").replace(/\/+$/, "") || "/";
         const PAGE_TITLES = {
           "/": {
             en: "ChinaConnect - Your AI Guide to Exploring China",
