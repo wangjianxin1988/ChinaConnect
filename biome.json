@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "https://biomejs.org/schemas/1.9.4/schema.json",
   "files": {
-    "ignore": [".astro/**", ".supabase-cache/**", ".wrangler/**", "dist/**", "node_modules/**", ".cache/**", ".e2e-*.mjs", ".i18n-patch.mjs", ".patch-*.mjs", ".seo-*.log", ".e2e-*.log", ".typecheck*.log", ".lint*.log", ".build.log"]
+    "ignore": [".astro/**",".supabase-cache/**",".wrangler/**","dist/**","node_modules/**",".cache/**",".e2e-*.mjs",".i18n-patch.mjs",".patch-*.mjs",".seo-*.log",".e2e-*.log",".typecheck*.log",".lint*.log",".build.log",".i18n-*.mjs",".add-*.mjs",".wire-*.mjs",".fix-*.mjs",".build-*.mjs",".inject-*.mjs",".replacements.json",".emergency-*.json"]
   },
   "organizeImports": { "enabled": false },
   "linter": {
