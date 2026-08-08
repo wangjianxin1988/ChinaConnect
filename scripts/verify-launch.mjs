@@ -162,6 +162,25 @@ if (home.body) {
   else bad("hreflang count: " + langs.size + " (expected >=10)");
 }
 
+// AI service smoke test (5+1 quota, refresh persistence, RLS)
+console.log("\n[7/6] AI Service E2E (chat quota + RLS)");
+try {
+  const { execFileSync } = await import("node:child_process");
+  const aiOut = execFileSync("node", ["scripts/verify-ai-service.mjs"], { encoding: "utf8" });
+  const aiLines = aiOut.split("\n");
+  let aiPass = 0;
+  let aiFail = 0;
+  for (const line of aiLines) {
+    if (line.includes("PASS")) aiPass++;
+    if (line.includes("FAIL")) aiFail++;
+    if (line.startsWith("  ")) process.stdout.write("  " + line.trim() + "\n");
+  }
+  if (aiFail === 0) ok("AI service E2E (" + aiPass + "/" + (aiPass + aiFail) + ")");
+  else bad("AI service E2E (" + aiFail + " failures)");
+} catch (e) {
+  bad("AI service E2E did not run: " + e.message);
+}
+
 console.log("\n== RESULT: " + pass + " pass, " + fail + " fail ==");
 if (fail === 0) console.log("\ud83d\udfe2 LAUNCH READY");
 else console.log("\ud83d\udd34 LAUNCH BLOCKED");
