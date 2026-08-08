@@ -86,6 +86,15 @@ export const onRequest: PagesFunction = async (context) => {
           /<title>[^<]*<\/title>/g,
           `<title>${localizedTitle}</title>`,
         );
+        // Also patch og:title and twitter:title for social-share SEO
+        modifiedHtml = modifiedHtml.replace(
+          /<meta property="og:title" content="[^"]*"/g,
+          `<meta property="og:title" content="${localizedTitle}"`,
+        );
+        modifiedHtml = modifiedHtml.replace(
+          /<meta name="twitter:title" content="[^"]*"/g,
+          `<meta name="twitter:title" content="${localizedTitle}"`,
+        );
       }
 
       const localeScript = `<script>
