@@ -2544,6 +2544,41 @@ export const translations: Record<Language, Translations> = {
       english: "英语",
       chinese: "中文",
     },
+    aiPage: {
+      title: "ChinaGuide AI - 你的智能中国旅行助手",
+      description: "你的私人中国旅行智能 — 行程规划、实时推荐、本地文化洞察，全部由 AI 驱动。",
+    },
+    accountPage: {
+      loading: "正在加载你的账户...",
+      signInRequired: "需要登录",
+      signInRequiredDesc: "请登录后查看你的账户。",
+      signIn: "登录",
+    },
+    profilePage: {
+      title: "我的资料 - ChinaConnect",
+    },
+    userPage: {
+      title: "用户资料 - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "正在登录...",
+      authTitle: "登录 / 注册 - ChinaConnect",
+      loginTitle: "登录 - ChinaConnect",
+      signingYouIn: "正在为你登录...",
+    },
+    checkoutPage: {
+      title: "支付成功 - ChinaConnect",
+      description: "你的订阅已成功激活",
+      successTitle: "支付成功！",
+      successDesc: "你的订阅已激活。",
+      successAccess: "你现在可以访问新方案的全部功能。",
+      processingDesc: "请稍候，我们正在确认你的订阅。",
+      startPlanning: "开始规划",
+      viewAccount: "查看账户",
+      backToPricing: "← 返回定价",
+      errorTitle: "出错了",
+      errorDesc: "无法处理你的支付，请重试或联系客服。",
+    },
   },
   "zh-TW": {
     nav: {
@@ -2682,6 +2717,41 @@ export const translations: Record<Language, Translations> = {
       current: "當前",
       english: "英語",
       chinese: "中文",
+    },
+    aiPage: {
+      title: "ChinaGuide AI - 你的智能中國旅行助手",
+      description: "你的私人中國旅行智能 — 行程規劃、即時推薦、本地文化洞察，全部由 AI 驅動。",
+    },
+    accountPage: {
+      loading: "正在載入你的帳戶...",
+      signInRequired: "需要登入",
+      signInRequiredDesc: "請登入後查看你的帳戶。",
+      signIn: "登入",
+    },
+    profilePage: {
+      title: "我的資料 - ChinaConnect",
+    },
+    userPage: {
+      title: "使用者資料 - ChinaConnect",
+    },
+    authPage: {
+      callbackTitle: "正在登入...",
+      authTitle: "登入 / 註冊 - ChinaConnect",
+      loginTitle: "登入 - ChinaConnect",
+      signingYouIn: "正在為你登入...",
+    },
+    checkoutPage: {
+      title: "付款成功 - ChinaConnect",
+      description: "你的訂閱已成功啟用",
+      successTitle: "付款成功！",
+      successDesc: "你的訂閱已啟用。",
+      successAccess: "你現在可以存取新方案的全部功能。",
+      processingDesc: "請稍候，我們正在確認你的訂閱。",
+      startPlanning: "開始規劃",
+      viewAccount: "查看帳戶",
+      backToPricing: "← 返回定價",
+      errorTitle: "發生錯誤",
+      errorDesc: "無法處理你的付款，請重試或聯絡客服。",
     },
   },
 };

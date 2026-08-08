@@ -54,3 +54,8 @@ supabase/migrations/20260808_test_quota.sql
 
 # GSC service account JSON key (secret - never commit)
 scripts/gsc-service-account.json
+
+# Temporary E2E and i18n patch scripts
+.e2e-*.mjs
+.i18n-patch.mjs
+.tmp-path.ts

@@ -2,11 +2,13 @@
 import AIChatPage from '@/components/AIChatPage';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
 
-const pageTitle = translations.aiPage?.title || "ChinaGuide AI - Your Intelligent China Travel Expert";
+const lang = (Astro.locals.lang as Language) || "en";
+const pageTitle = translations[lang]?.aiPage?.title || translations.en.aiPage?.title || "ChinaGuide AI - Your Intelligent China Travel Expert";
 const pageDescription =
-  translations.aiPage?.description || "Your personal China travel intelligence.";
+  translations[lang]?.aiPage?.description || translations.en.aiPage?.description || "Your personal China travel intelligence.";
 
 // Schema.org JSON-LD for AI page
 const aiSchemas = [

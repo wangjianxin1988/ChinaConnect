@@ -3,9 +3,10 @@
 import { LoginPage } from '@/components/user/LoginPage';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { translations } from "@/i18n/translations";
+import type { Language } from "@/i18n/translations";
 ---
 
-<BaseLayout title={translations.en.authPage?.loginTitle || "Sign In - ChinaConnect"}>
+<BaseLayout title={(translations[(Astro.locals.lang as Language) || "en"]?.authPage?.loginTitle) || translations.en.authPage?.loginTitle || "Sign In - ChinaConnect"}>
   <main class="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto px-4">
       <LoginPage client:load />
