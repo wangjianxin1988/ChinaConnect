@@ -32,6 +32,14 @@ jobs:
       # Copy Cloudflare Functions into dist so wrangler deploys them
       - run: cp -r functions dist/functions
       - run: npm install -g wrangler@latest
+      - name: Set Pages secrets (hydrates runtime env for /api/chat and /api/search)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+        run: |
+          echo "$MINIMAX_API_KEY" | wrangler pages secret put MINIMAX_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
+          echo "$ANYSEARCH_API_KEY" | wrangler pages secret put ANYSEARCH_API_KEY --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
       - name: Deploy to Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
