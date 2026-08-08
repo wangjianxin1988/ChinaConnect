@@ -88,6 +88,7 @@ export const onRequest: PagesFunction = async (context) => {
         headers: {
           "Content-Type": "text/html;charset=UTF-8",
           "Cache-Control": "public, max-age=3600",
+          "Set-Cookie": `chinaconnect_language=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`,
         },
       });
     }

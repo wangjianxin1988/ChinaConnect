@@ -74,6 +74,18 @@ export const onRequest = defineMiddleware(async (context, next) => {
 
   let detectedLang: Language = "en";
 
+  // 0. URL path prefix /zh-CN/... (highest priority; set by [[path]].ts locale rewrite)
+  const pathLangMatch = pathname.match(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)(?:\/|$)/);
+  if (pathLangMatch && (SUPPORTED as readonly string[]).includes(pathLangMatch[1])) {
+    detectedLang = pathLangMatch[1] as Language;
+    // Persist to cookie so direct visits to /foo use the right lang
+    cookies.set("chinaconnect_language", detectedLang, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 365,
+      sameSite: "lax",
+    });
+  }
+
   // 1. Query parameter (highest priority, also used for hreflang)
   const queryLang = params.get("lang");
   if (queryLang && (SUPPORTED as readonly string[]).includes(queryLang)) {
