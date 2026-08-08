@@ -623,29 +623,31 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
 
     <footer class="bg-gray-900 text-white mt-16">
       <div class="container-custom py-12">
-        <div class="grid md:grid-cols-3 gap-8 mb-8">
-          <div class="md:col-span-1">
+        <div class="grid md:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div>
             <div class="flex items-center gap-3 mb-4">
               <img src="/logo.svg" alt="ChinaConnect" class="w-10 h-10 rounded-lg" />
               <span class="font-semibold text-lg">ChinaConnect</span>
             </div>
-            <p class="text-gray-400 max-w-md" data-i18n="footer.description">
+            <p class="text-gray-400 max-w-md text-sm" data-i18n="footer.description">
               Your trusted guide to exploring China. AI-powered restaurant recommendations, city guides, and travel tips.
             </p>
           </div>
           <div>
-            <h4 class="font-semibold mb-4" data-i18n="footer.cities">Cities</h4>
+            <h4 class="font-semibold mb-4" data-i18n="footer.citiesListLabel">Popular Cities</h4>
             <ul class="space-y-2 text-sm text-gray-400">
-              <li><a href="/city/beijing" class="hover:text-white transition-colors">Beijing</a></li>
-              <li><a href="/city/shanghai" class="hover:text-white transition-colors">Shanghai</a></li>
-              <li><a href="/city/guangzhou" class="hover:text-white transition-colors">Guangzhou</a></li>
-              <li><a href="/city/xian" class="hover:text-white transition-colors">Xi'an</a></li>
-              <li><a href="/city/chengdu" class="hover:text-white transition-colors">Chengdu</a></li>
+              <li><a href="/city/beijing" class="hover:text-white transition-colors" data-i18n="footer.cityBeijing">Beijing</a></li>
+              <li><a href="/city/shanghai" class="hover:text-white transition-colors" data-i18n="footer.cityShanghai">Shanghai</a></li>
+              <li><a href="/city/guangzhou" class="hover:text-white transition-colors" data-i18n="footer.cityGuangzhou">Guangzhou</a></li>
+              <li><a href="/city/xian" class="hover:text-white transition-colors" data-i18n="footer.cityXian">Xi'an</a></li>
+              <li><a href="/city/chengdu" class="hover:text-white transition-colors" data-i18n="footer.cityChengdu">Chengdu</a></li>
+              <li><a href="/city/hangzhou" class="hover:text-white transition-colors" data-i18n="footer.cityHangzhou">Hangzhou</a></li>
+              <li><a href="/city/suzhou" class="hover:text-white transition-colors" data-i18n="footer.citySuzhou">Suzhou</a></li>
               <li><a href="/cities" class="hover:text-white transition-colors" data-i18n="footer.viewAllCities">View All Cities</a></li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-4" data-i18n="footer.resources">Resources</h4>
+            <h4 class="font-semibold mb-4" data-i18n="footer.resourcesLabel">Resources</h4>
             <ul class="space-y-2 text-sm text-gray-400">
               <li><a href="/attractions" class="hover:text-white transition-colors" data-i18n="footer.attractions">Attractions</a></li>
               <li><a href="/food" class="hover:text-white transition-colors" data-i18n="footer.restaurants">Restaurants</a></li>
@@ -656,10 +658,10 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-4" data-i18n="footer.guides">Travel Guides</h4>
+            <h4 class="font-semibold mb-4" data-i18n="footer.guidesLabel">Travel Guides</h4>
             <ul class="space-y-2 text-sm text-gray-400">
-              <li><a href="/guide/visa" class="hover:text-white transition-colors">Visa Guide</a></li>
-              <li><a href="/guide/dining" class="hover:text-white transition-colors">Dining Guide</a></li>
+              <li><a href="/guide/visa" class="hover:text-white transition-colors" data-i18n="footer.visaGuide">Visa Guide</a></li>
+              <li><a href="/guide/dining" class="hover:text-white transition-colors" data-i18n="footer.diningGuide">Dining Guide</a></li>
               <li><a href="/guide/cultural-warnings" class="hover:text-white transition-colors" data-i18n="footer.culturalTips">Cultural Tips</a></li>
               <li><a href="/ai" class="hover:text-white transition-colors" data-i18n="footer.aiAssistant">AI Assistant</a></li>
             </ul>
@@ -667,12 +669,12 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
         </div>
         <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p class="text-sm text-gray-500">
-            &copy; 2026 ChinaConnect. All rights reserved.
+            &copy; 2026 ChinaConnect. <span data-i18n="footer.allRightsReserved">All rights reserved.</span>
           </p>
           <div class="flex items-center gap-4 text-sm text-gray-500">
-            <a href="/privacy" class="hover:text-white transition-colors">Privacy</a>
-            <a href="/terms" class="hover:text-white transition-colors">Terms</a>
-            <a href="/contact" class="hover:text-white transition-colors">Contact</a>
+            <a href="/privacy" class="hover:text-white transition-colors" data-i18n="footer.privacy">Privacy</a>
+            <a href="/terms" class="hover:text-white transition-colors" data-i18n="footer.terms">Terms</a>
+            <a href="/contact" class="hover:text-white transition-colors" data-i18n="footer.contact">Contact</a>
           </div>
         </div>
       </div>

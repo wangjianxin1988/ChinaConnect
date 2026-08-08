@@ -1,5 +1,9 @@
-// Generate translations for missing languages via MiniMax chat
-// Reads .flat.json (en values) + JSON translation files for extra keys
+// Generate translations for missing languages via MiniMax-Text-01 chat API.
+// Usage:
+//   node gen-missing.mjs                  # fill gaps in th, vi, ru, fr, de, ar, fa
+//   node gen-missing.mjs th               # only one language
+//   node gen-missing.mjs all              # all 11 non-en languages
+//   node gen-missing.mjs en ja zh-CN      # explicit list
 import fs from "fs";
 
 const KEY = "REDACTED_MINIMAX_KEY";
@@ -7,17 +11,13 @@ const HOST = "https://api.minimax.io";
 const MODEL = "MiniMax-Text-01";
 const BATCH = 60;
 
-const flat = JSON.parse(fs.readFileSync(".flat.json", "utf8"));
-const en = flat.en;
-
-// Load JSON files and merge to get full key set (615)
+const EN_FILE = "en-translations.json";
 const EXTRA_FILES = ["zh-CN-translations.json", "zh-TW-translations.json", "ja-translations.json", "ko-translations.json"];
+
+const en = JSON.parse(fs.readFileSync(EN_FILE, "utf8"));
 const extras = {};
 for (const f of EXTRA_FILES) {
-  try {
-    const d = JSON.parse(fs.readFileSync(f, "utf8"));
-    Object.assign(extras, d);
-  } catch (e) {}
+  try { const d = JSON.parse(fs.readFileSync(f, "utf8")); Object.assign(extras, d); } catch (e) {}
 }
 const sourceMap = { ...en };
 for (const k of Object.keys(extras)) if (!(k in sourceMap)) sourceMap[k] = extras[k];
@@ -25,6 +25,11 @@ const allKeys = Object.keys(sourceMap).sort();
 console.log("total source keys:", allKeys.length);
 
 const TARGETS = {
+  en: "English (baseline, never re-translate).",
+  ja: "Japanese. Polite tourism style. Keep URL/AI/Wi-Fi as-is.",
+  ko: "Korean. Polite tourism style. Keep URL/AI/Wi-Fi as-is.",
+  "zh-CN": "Simplified Chinese. Concise, marketing-friendly. Keep URL/AI/Wi-Fi as-is.",
+  "zh-TW": "Traditional Chinese (Taiwan). Polite tourism style. Keep URL/AI/Wi-Fi as-is.",
   th: "Thai (Thailand visitors). Polite Thai for tourism. Keep URL/AI/Wi-Fi as-is.",
   vi: "Vietnamese (Vietnam visitors). Friendly, clear Vietnamese. Keep URL/AI/Wi-Fi as-is.",
   ru: "Russian (Russian-speaking visitors). Modern Russian for tourism. Keep URL/AI/Wi-Fi as-is.",
@@ -103,7 +108,6 @@ async function translateLang(lang) {
         if (got === 0) throw new Error("empty object");
         success = true;
         process.stdout.write("[" + lang + " " + (bi+1) + "/" + batches.length + "] +" + got + "/" + batch.length + " (" + (Date.now()-t0) + "ms)\n");
-        // incremental save
         fs.writeFileSync(outFile, JSON.stringify(out, null, 2));
       } catch (e) {
         process.stdout.write("[" + lang + " " + (bi+1) + "/" + batches.length + " attempt " + attempt + " fail: " + e.message.slice(0, 80) + "\n");
@@ -121,7 +125,12 @@ async function translateLang(lang) {
   return out;
 }
 
-const only = process.argv[2];
-if (only) await translateLang(only);
-else for (const l of ["vi", "ru", "fr", "de", "ar", "fa"]) await translateLang(l);
+const ALL_NON_EN = ["ja", "ko", "th", "vi", "ru", "fr", "de", "ar", "fa", "zh-CN", "zh-TW"];
+const args = process.argv.slice(2);
+let targets;
+if (args.length === 0) targets = ["th", "vi", "ru", "fr", "de", "ar", "fa"];
+else if (args[0] === "all") targets = ALL_NON_EN;
+else targets = args;
+
+for (const t of targets) await translateLang(t);
 console.log("ALL DONE");

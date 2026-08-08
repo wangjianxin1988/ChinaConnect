@@ -199,7 +199,7 @@
         opacity: 0.7;
       }
 
-      /* Quick Actions */
+      /* <span data-i18n="offlinePage.quickActions">Quick actions</span> */
       .quick-actions {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -480,8 +480,8 @@
         <span class="offline-banner-icon" aria-hidden="true">📡</span>
         <div class="offline-banner-text">
           <h1 data-i18n="offlinePage.bannerTitle">You're Offline</h1>
-          <p>Emergency contacts and essential info are still available</p>
-          <small>Last synced: <span id="lastSync">--</span></small>
+          <p><span data-i18n="offlinePage.bannerDesc">Emergency contacts and essential info are still available</span></p>
+          <small><span data-i18n="offlinePage.lastSynced">Last synced:</span> <span id="lastSync">--</span></small>
         </div>
       </div>
 
@@ -489,7 +489,7 @@
       <div class="cache-status" id="cacheStatus" aria-live="polite">
         <h4>
           <span>✅</span>
-          Available Offline
+          <span data-i18n="offlinePage.availableOffline">Available offline</span>
         </h4>
         <div class="cache-status-items" id="cacheItems"></div>
       </div>
@@ -499,9 +499,9 @@
         <div class="card-header">
           <h2>
             <span aria-hidden="true">🚨</span>
-            Emergency Numbers (China)
+            <span data-i18n="offlinePage.emergencyNumbers">Emergency numbers (China)</span>
           </h2>
-          <p>Tap any number to call immediately</p>
+          <p><span data-i18n="offlinePage.tapToCall">Tap any number to call immediately</span></p>
         </div>
         <div class="card-content">
           <div class="emergency-numbers">
@@ -510,7 +510,7 @@
               <div class="emergency-content">
                 <div class="emergency-number">110</div>
                 <div class="emergency-name">警察 - Police</div>
-                <div class="emergency-desc">Crime, emergencies, public safety</div>
+                <div class="emergency-desc"><span data-i18n="offlinePage.policeDesc">Crime, emergencies, public safety</span></div>
               </div>
               <div class="emergency-arrow" aria-hidden="true">📞</div>
             </a>
@@ -519,7 +519,7 @@
               <div class="emergency-content">
                 <div class="emergency-number">120</div>
                 <div class="emergency-name">救护车 - Ambulance</div>
-                <div class="emergency-desc">Medical emergencies, injuries</div>
+                <div class="emergency-desc"><span data-i18n="offlinePage.ambulanceDesc">Medical emergencies, injuries</span></div>
               </div>
               <div class="emergency-arrow" aria-hidden="true">📞</div>
             </a>
@@ -528,7 +528,7 @@
               <div class="emergency-content">
                 <div class="emergency-number">119</div>
                 <div class="emergency-name">消防 - Fire</div>
-                <div class="emergency-desc">Fires, rescues, hazardous materials</div>
+                <div class="emergency-desc"><span data-i18n="offlinePage.fireDesc">Fires, rescues, hazardous materials</span></div>
               </div>
               <div class="emergency-arrow" aria-hidden="true">📞</div>
             </a>
@@ -537,7 +537,7 @@
               <div class="emergency-content">
                 <div class="emergency-number">122</div>
                 <div class="emergency-name">交通事故 - Traffic</div>
-                <div class="emergency-desc">Traffic accidents only</div>
+                <div class="emergency-desc"><span data-i18n="offlinePage.trafficDesc">Traffic accidents only</span></div>
               </div>
               <div class="emergency-arrow" aria-hidden="true">📞</div>
             </a>
@@ -556,23 +556,23 @@
         <div class="quick-actions">
           <a href="/" class="quick-action">
             <span class="quick-action-icon">🏠</span>
-            <span class="quick-action-label">Home</span>
+            <span class="quick-action-label" data-i18n="nav.home">Home</span>
           </a>
           <a href="/cities" class="quick-action">
             <span class="quick-action-icon">🏙️</span>
-            <span class="quick-action-label">Cities</span>
+            <span class="quick-action-label" data-i18n="cities.title">Cities</span>
           </a>
           <a href="/food" class="quick-action">
             <span class="quick-action-icon">🍜</span>
-            <span class="quick-action-label">Food</span>
+            <span class="quick-action-label" data-i18n="nav.restaurants">Food</span>
           </a>
           <a href="/ai" class="quick-action">
             <span class="quick-action-icon">💬</span>
-            <span class="quick-action-label">AI Chat</span>
+            <span class="quick-action-label" data-i18n="nav.aiChat">AI Chat</span>
           </a>
           <a href="/guide" class="quick-action">
             <span class="quick-action-icon">📖</span>
-            <span class="quick-action-label">Guide</span>
+            <span class="quick-action-label" data-i18n="nav.guide">Guide</span>
           </a>
         </div>
       </div>
@@ -584,7 +584,7 @@
             <span aria-hidden="true">💬</span>
             Emergency Phrases
           </h3>
-          <p>Show these phrases if you need help</p>
+          <p><span data-i18n="offlinePage.phrasesTip">Show these phrases if you need help</span></p>
         </div>
         <div class="card-content">
           <div class="phrase-list">
@@ -654,7 +654,7 @@
 
       <!-- Footer -->
       <div class="footer-note">
-        <p>ChinaConnect Emergency SOS - Works Offline</p>
+        <p><span data-i18n="offlinePage.title2">ChinaConnect Emergency SOS - Works Offline</span></p>
         <p style="margin-top: 8px;">
           <a href="/emergency">View Full Emergency Info</a> |
           <a href="/cities">Browse Cities</a>

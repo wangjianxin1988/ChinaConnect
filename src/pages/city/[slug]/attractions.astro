@@ -2,6 +2,7 @@
 
 import { getCityBySlug, citySlugs } from "@/data/cities/index";
 import { getLangFromUrl } from "@/i18n/utils";
+import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export function getStaticPaths() {
@@ -16,8 +17,9 @@ if (!city) {
   return Astro.redirect("/404");
 }
 
-const pageTitle = `${city.nameEn} Attractions - ChinaConnect`;
-const pageDescription = `Explore all ${city.attractions.length} attractions in ${city.nameEn} (${city.name}). Find historical sites, cultural landmarks, modern marvels, and more.`;
+const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
+const pageTitle = (translations[lang] || translations.en).cityAttractions?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? `${localCityName} Attractions - ChinaConnect`;
+const pageDescription = (translations[lang] || translations.en).cityAttractions?.subtitle?.replace("{city}", localCityName) ?? `Explore all ${city.attractions.length} attractions in ${localCityName} (${city.name}).`;
 
 // Get unique categories
 const categories = [...new Set(city.attractions.map((a: any) => a.category))].sort();
@@ -266,7 +268,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
           <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News (新华网)</a>  — Official tourism information</li>
           <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourismm)</a>  — Government tourism data</li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3">Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</p>
+        <p class="text-xs text-gray-400 mt-3">data-i18n="cityAttractions.disclaimer"Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</p>
       </div>
     </div>
   </section>

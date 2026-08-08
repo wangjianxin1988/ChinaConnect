@@ -37,19 +37,20 @@ const unifiedHotels = getHotelsByCity(slug as string);
 const hotelCategoryCounts = getHotelCategoryCounts(slug as string);
 const totalHotelCount = getHotelCount(slug as string);
 
-const pageTitle = `${city.nameEn} Travel Guide - ChinaConnect`;
-const pageDescription = translations.en.cityPage?.citySubtitle?.replace('{city}', city.nameEn) || `Complete travel guide for ${city.nameEn}, ${city.name}.`;
+const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
+const pageTitle = (translations[lang] || translations.en).cityPage?.pageTitle?.replace("{city}", localCityName) ?? `${localCityName} ${(translations.en.cityPage?.pageTitleSuffix ?? "Travel Guide - ChinaConnect")}`;
+const pageDescription = (translations[lang] || translations.en).cityPage?.citySubtitle?.replace("{city}", localCityName) ?? `Complete travel guide for ${localCityName}, ${city.name}.`;
 
 // SEO keywords
 const keywords = [
   city.nameEn,
   city.name,
-  `${city.nameEn} travel guide`,
-  `${city.nameEn} attractions`,
-  `${city.nameEn} restaurants`,
-  `${city.nameEn} hotels`,
-  `${city.nameEn} food`,
-  `travel to ${city.nameEn}`,
+  `${localCityName} travel guide`,
+  `${localCityName} attractions`,
+  `${localCityName} restaurants`,
+  `${localCityName} hotels`,
+  `${localCityName} food`,
+  `travel to ${localCityName}`,
   `China travel`,
   `${city.attractions[0]?.nameEn || ""}`,
   `${city.restaurants[0]?.nameEn || ""}`,
@@ -87,7 +88,7 @@ const citySchema = {
       : undefined,
   mainEntity: {
     "@type": "TravelAction",
-    name: `Visit ${city.nameEn}`,
+    name: `Visit ${localCityName}`,
     location: {
       "@type": "City",
       name: city.nameEn,
@@ -202,16 +203,16 @@ const enCityUrl = `${SITE_URL}/city/${city.slug}`;
 const zhCityUrl = `${SITE_URL}/zh/city/${city.slug}`;
 
 const modules = [
-  { id: "overview", label: "Overview", icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
-  { id: "food-highlights", label: "Food", icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
-  { id: "attractions", label: "Attractions", icon: "🏛️", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
-  { id: "transport", label: "Transport", icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
-  { id: "accommodation", label: "Stay", icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
-  { id: "payment", label: "Payment", icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
-  { id: "connectivity", label: "SIM/eSIM", icon: "📶", colorClass: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100" },
-  { id: "apps", label: "Apps", icon: "📱", colorClass: "bg-gray-50 text-gray-700 hover:bg-gray-100" },
-  { id: "culture", label: "Culture", icon: "🎎", colorClass: "bg-pink-50 text-pink-700 hover:bg-pink-100" },
-  { id: "emergency", label: "Emergency", icon: "🚨", colorClass: "bg-red-50 text-red-700 hover:bg-red-100" },
+  { id: "overview", label: "Overview", i18nLabel: 'cityPage.tabOverview', icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
+  { id: "food-highlights", label: "Food", i18nLabel: 'cityPage.tabFood', icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
+  { id: "attractions", label: "Attractions", i18nLabel: 'cityPage.tabAttractions', icon: "🏛️", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
+  { id: "transport", label: "Transport", i18nLabel: 'cityPage.tabTransport', icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
+  { id: "accommodation", label: "Stay", i18nLabel: 'cityPage.tabHotels', icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
+  { id: "payment", label: "Payment", i18nLabel: 'cityPage.tabPayment', icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
+  { id: "connectivity", label: "SIM/eSIM", i18nLabel: 'cityPage.tabConnectivity', icon: "📶", colorClass: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100" },
+  { id: "apps", label: "Apps", i18nLabel: 'cityPage.tabApps', icon: "📱", colorClass: "bg-gray-50 text-gray-700 hover:bg-gray-100" },
+  { id: "culture", label: "Culture", i18nLabel: 'cityPage.tabCulture', icon: "🎎", colorClass: "bg-pink-50 text-pink-700 hover:bg-pink-100" },
+  { id: "emergency", label: "Emergency", i18nLabel: 'cityPage.tabEmergency', icon: "🚨", colorClass: "bg-red-50 text-red-700 hover:bg-red-100" },
 ];
 
 function getBadgeClass(type: string) {
@@ -355,7 +356,7 @@ const mapMarkers = [
           <div class="rounded-2xl overflow-hidden mb-6 relative group">
             <img
               src={city.coverImage}
-              alt={`${city.nameEn} cityscape`}
+              alt={`${localCityName} cityscape`}
               class="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-105"
               loading="eager"
             />
@@ -482,7 +483,7 @@ const mapMarkers = [
               href={`/food?city=${city.slug}`}
               class="shrink-0 px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold text-sm hover:from-orange-600 hover:to-red-600 transition-all shadow-md hover:shadow-lg flex items-center gap-2"
             >
-              <span>Open Full Map</span>
+              <span><span data-i18n="cityPage.openFullMap">Open Full Map</span></span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -549,9 +550,9 @@ const mapMarkers = [
             </div>
           </div>
 
-          <!-- Getting Around -->
+          <!-- <span data-i18n="cityPage.gettingAround">Getting Around</span> -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">Getting Around</h3>
+            <h3 class="text-lg font-semibold mb-4"><span data-i18n="cityPage.gettingAround">Getting Around</span></h3>
             <div class="grid md:grid-cols-2 gap-4">
               <div class="bg-white border rounded-xl p-6">
                 <h4 class="font-medium mb-4 flex items-center gap-2">
@@ -728,7 +729,7 @@ const mapMarkers = [
                 apps={getAppsForSection(["payment"])}
               />
               <p class="text-xs text-gray-500 mt-2">
-                💡 Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.
+                <span data-i18n="cityPage.switchToEnglishMode">Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.</span>
               </p>
             </div>
           </div>
@@ -739,16 +740,14 @@ const mapMarkers = [
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">📶</span> SIM Cards & eSIM
           </h2>
-          <p class="section-subtitle">Stay connected in China with the best data options</p>
+          <p class="section-subtitle" data-i18n="cityPage.connectivitySubtitle">Stay connected in China with the best data options</p>
 
           <div class="space-y-4">
             <div class="bg-white border rounded-xl p-6">
               <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
                 <span>📱</span> eSIM (Recommended)
               </h3>
-              <p class="text-gray-600 mb-4">
-                eSIM is the easiest way to get data in China. No physical SIM needed - activate instantly on arrival.
-              </p>
+              <p class="text-gray-600 mb-4" data-i18n="cityPage.esimDescription">eSIM is the easiest way to get data in China. No physical SIM needed - activate instantly on arrival.</p>
               <InlineAppPillsGroup
                 client:visible
                 apps={getAppsForSection(["connectivity"])}
@@ -760,9 +759,9 @@ const mapMarkers = [
                 <span>💡</span> Pro Tips
               </h4>
               <ul class="text-sm text-blue-700 space-y-1">
-                <li>• eSIM works best if your phone supports it (iPhone XS+ and most Android flagships)</li>
-                <li>• Download eSIM apps before arriving in China</li>
-                <li>• Airalo and Holafly offer China-specific plans with unlimited data options</li>
+                <li data-i18n="cityPage.proTipEsim1">• eSIM works best if your phone supports it (iPhone XS+ and most Android flagships).</li>
+                <li data-i18n="cityPage.proTipEsim2">• Download eSIM apps before arriving in China.</li>
+                <li data-i18n="cityPage.proTipEsim3">• Airalo and Holafly offer China-specific plans with unlimited data options.</li>
               </ul>
             </div>
           </div>
@@ -773,13 +772,13 @@ const mapMarkers = [
           <h2 class="section-title flex items-center gap-3">
             <span class="text-2xl">📱</span> Essential Apps
           </h2>
-          <p class="section-subtitle">Download these apps before arriving in China</p>
+          <p class="section-subtitle" data-i18n="cityPage.appsSubtitle">Download these apps before arriving in China</p>
 
           <EmbeddedAppRecommendation
             client:visible
             categories={["payment", "transport", "food", "social", "language", "maps", "connectivity"]}
-            title={`Essential Apps for ${city.nameEn}`}
-            subtitle="Download these apps before arriving in China"
+            title={(translations[lang] || translations.en).cityPage?.essentialAppsFor?.replace("{city}", city.nameEn) ?? `Essential Apps for ${localCityName}`}
+            subtitle={(translations[lang] || translations.en).cityPage?.downloadBefore ?? "Download these apps before arriving in China"}
           />
         </section>
 

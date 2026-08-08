@@ -12,6 +12,9 @@ import {
 } from "@/lib/seo/schema-org";
 
 const lang = getLangFromUrl(Astro.url);
+const t = translations[lang] || translations.en;
+const pageTitle = t.attractions?.pageTitle ?? translations.en.attractions.pageTitle;
+const pageDescription = t.attractions?.pageDescription ?? translations.en.attractions.pageDescription;
 const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
 type AttractionLike = {
@@ -100,8 +103,6 @@ const attractionSchemas = [
   ]),
 ];
 
-const pageTitle = "China Attractions - Must-Visit Tourist Spots | ChinaConnect";
-const pageDescription = `Discover ${totalAttractions}+ must-visit attractions across ${citiesWithAttractions.length} Chinese cities &mdash; from the Great Wall and Forbidden City to Zhangjiajie's Avatar mountains. Opening hours, ticket prices, and travel tips for each.`;
 const keywords = [
   "China attractions",
   "China tourist spots",
@@ -118,9 +119,10 @@ const keywords = [
 <BaseLayout
   title={pageTitle}
   description={pageDescription}
-  meta={{ keywords }}
-  lang={lang}
->
+  meta={{
+    keywords: ['China attractions', 'Beijing attractions', 'Shanghai attractions', 'Great Wall', 'Forbidden City', 'tourist spots'],
+  }}
+  lang={lang}>
   <!-- Schema.org JSON-LD for SEO/GEO -->
   <script type="application/ld+json" set:html={generateJsonLdScript(attractionSchemas)} />
 
@@ -165,7 +167,7 @@ const keywords = [
 
     <!-- Featured cities (most attractions) -->
     <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="attractions.featuredCities">Featured Cities</h2>
+      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="attractions.featured">Featured Cities</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {citiesWithAttractions.slice(0, 12).map((city) => (
           <a
@@ -195,7 +197,7 @@ const keywords = [
 
     <!-- All cities with attraction counts -->
     <section class="mb-10">
-      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="attractions.allCities">All Cities with Attractions</h2>
+      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="attractions.featured">All Cities with Attractions</h2>
       <div class="bg-white rounded-xl border border-gray-200 divide-y divide-gray-100">
         {citiesWithAttractions.map((city) => (
           <a
@@ -224,8 +226,8 @@ const keywords = [
     <EmbeddedAppRecommendation
       client:visible
       categories={["travel", "maps", "transport", "language"]}
-      title="Plan Your Trip"
-      subtitle="Useful apps for getting around and finding attractions"
+      title={t.attractions?.appTitle ?? "Plan Your Trip"}
+      subtitle={t.attractions?.appSubtitle ?? "Useful apps for getting around and finding attractions"}
     />
   </main>
 </BaseLayout>

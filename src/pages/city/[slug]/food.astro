@@ -4,6 +4,7 @@ import "@/styles/global.css";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
 import type { Restaurant } from "@/data/cities/types";
 import { getLangFromUrl } from "@/i18n/utils";
+import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export function getStaticPaths() {
@@ -19,6 +20,7 @@ if (!city) {
 }
 
 const { prev, next } = getAdjacentCities(slug as string);
+const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
 
 // Three-level filter from URL param
 const filterParam = Astro.url.searchParams.get("filter") || "all";
@@ -31,7 +33,7 @@ const allRestaurants = city.restaurants;
 const filterGroups: FilterGroup[] = buildFilterGroups(allRestaurants);
 const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
 
-const pageTitle = `${city.nameEn} Food - ChinaConnect`;
+const pageTitle = (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? "Restaurants in " + localCityName + " - ChinaConnect";
 const pageDescription = `${city.nameEn} (${city.name}) Food Guide: complete Michelin, Black Pearl, and local picks`;
 
 function getBadgeClass(type: Restaurant["type"]) {
@@ -275,7 +277,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
                     class="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium hover:bg-emerald-100 transition-colors shrink-0"
                   >
                     <span>🌍</span>
-                    <span>Google Maps</span>
+                    <span><span data-i18n="cityFood.googleMaps">Google Maps</span></span>
                   </a>
                 </>
               ) : restaurant.address ? (
@@ -492,7 +494,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
           <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com (Я��)</a> — Travel & dining reviews</li>
           <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a> — Travel community reviews</li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3">Phone numbers and addresses may change. We recommend verifying via the restaurant's official channels or calling ahead.</p>
+        <p class="text-xs text-gray-400 mt-3">data-i18n="cityFood.disclaimer"Phone numbers and addresses may change. We recommend verifying via the restaurant's official channels or calling ahead.</p>
       </div>
     </div>
   </section>

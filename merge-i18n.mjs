@@ -4,7 +4,7 @@ import fs from 'fs';
 const TS_FILE = "src/i18n/translations.ts";
 const LANGS = ["en", "ja", "ko", "th", "vi", "ru", "fr", "de", "ar", "fa", "zh-CN", "zh-TW"];
 const JSON_FILES = {
-  "en": null,
+  "en": "en-translations.json",
   "ja": "ja-translations.json", "ko": "ko-translations.json",
   "th": "th-translations.json", "vi": "vi-translations.json",
   "ru": "ru-translations.json", "fr": "fr-translations.json",
@@ -13,7 +13,7 @@ const JSON_FILES = {
   "zh-CN": "zh-CN-translations.json", "zh-TW": "zh-TW-translations.json",
 };
 
-const src = fs.readFileSync(TS_FILE, "utf8");
+const src = fs.readFileSync(TS_FILE, "utf8").replace(/\r\n/g, "\n").replace(/\r/g, "\n");
 const lines = src.split("\n");
 
 const translations = { en: null };
@@ -192,5 +192,5 @@ for (const lang of LANGS) {
 }
 
 const newContent = head.join('\n') + '\n' + newBlocks.join(',\n') + ',\n' + tail.join('\n');
-fs.writeFileSync(TS_FILE, newContent);
+fs.writeFileSync(TS_FILE, newContent.replace(/\r\n/g, "\n"), { encoding: "utf8" });
 console.log('Wrote ' + TS_FILE + ': ' + newContent.length + ' bytes, ' + newContent.split('\n').length + ' lines');

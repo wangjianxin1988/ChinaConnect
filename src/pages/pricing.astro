@@ -5,6 +5,7 @@
  * Displays subscription tiers, feature comparison, FAQ, and testimonials
  * Integrates with Creem Checkout for real payments
  */
+import { translations } from "@/i18n/translations";
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const lang = (Astro.locals.lang as Language) || "en";
@@ -82,7 +83,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               <div class="w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <span class="text-3xl">🆓</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-900">Free</h3>
+              <h3 class="text-xl font-bold text-gray-900" data-i18n="pricing.planFree">Free</h3>
               <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.free.description">Get started with basic planning</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
@@ -90,28 +91,28 @@ const cancelled = Astro.url.searchParams.get('cancelled');
                 <span class="text-5xl font-extrabold text-gray-900 price-amount" data-monthly="0" data-annual="0">$0</span>
                 <span class="text-gray-400 text-sm price-period">/mo</span>
               </div>
-              <p class="text-xs text-gray-400 mt-2 price-annual-note hidden">Free forever</p>
+              <p class="text-xs text-gray-400 mt-2 price-annual-note hidden" data-i18n="pricing.freeForever">Free forever</p>
             </div>
             <ul class="space-y-3 mb-8 text-left">
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">5 AI requests per month</span>
+                <span class="text-gray-700" data-i18n="pricing.featureAiRequestsFree">5 AI requests per month</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Basic travel planning</span>
+                <span class="text-gray-700" data-i18n="pricing.featureBasicPlanning">Basic travel planning</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">View itineraries</span>
+                <span class="text-gray-700" data-i18n="pricing.featureViewItineraries">View itineraries</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-gray-300 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                <span class="text-gray-400 line-through">Save itineraries</span>
+                <span class="text-gray-700" data-i18n="pricing.featureSaveItineraries">Save itineraries</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-gray-300 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                <span class="text-gray-400 line-through">PDF export</span>
+                <span class="text-gray-700" data-i18n="pricing.featurePdfExport">PDF export</span>
               </li>
             </ul>
             <button class="w-full py-3 px-4 rounded-xl border-2 border-gray-200 text-gray-500 font-semibold cursor-default text-sm" data-tier="free" disabled>
@@ -128,7 +129,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <span class="text-3xl">🧭</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-900">Explorer</h3>
+              <h3 class="text-xl font-bold text-gray-900" data-i18n="pricing.planExplorer">Explorer</h3>
               <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.explorer.description">Best for casual travelers</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
@@ -147,19 +148,19 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Save itineraries</span>
+                <span class="text-gray-700" data-i18n="pricing.featureSaveItineraries">Save itineraries</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Conversation history</span>
+                <span class="text-gray-700" data-i18n="pricing.featureConversationHistory">Conversation history</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Priority support</span>
+                <span class="text-gray-700" data-i18n="pricing.featurePrioritySupport">Priority support</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-gray-300 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                <span class="text-gray-400 line-through">PDF export</span>
+                <span class="text-gray-700" data-i18n="pricing.featurePdfExport">PDF export</span>
               </li>
             </ul>
             <button class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-md shadow-blue-500/25 subscribe-btn text-sm" data-tier="explorer">
@@ -173,7 +174,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               <div class="w-14 h-14 rounded-2xl bg-purple-50 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <span class="text-3xl">✈️</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-900">Traveler</h3>
+              <h3 class="text-xl font-bold text-gray-900" data-i18n="pricing.planTraveler">Traveler</h3>
               <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.traveler.description">For frequent China visitors</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
@@ -196,15 +197,15 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">PDF export</span>
+                <span class="text-gray-700" data-i18n="pricing.featurePdfExport">PDF export</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Premium customization</span>
+                <span class="text-gray-700" data-i18n="pricing.featurePremiumCustomization">Premium customization</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Advanced travel tools</span>
+                <span class="text-gray-700" data-i18n="pricing.featureAdvancedTools">Advanced travel tools</span>
               </li>
             </ul>
             <button class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-purple-600 to-violet-600 text-white font-semibold hover:from-purple-700 hover:to-violet-700 transition-all duration-200 shadow-md shadow-purple-500/25 subscribe-btn text-sm" data-tier="traveler">
@@ -218,7 +219,7 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               <div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <span class="text-3xl">💼</span>
               </div>
-              <h3 class="text-xl font-bold text-gray-900">Business</h3>
+              <h3 class="text-xl font-bold text-gray-900" data-i18n="pricing.planBusiness">Business</h3>
               <p class="text-sm text-gray-500 mt-1"><span data-i18n="pricing.business.description">For travel professionals</span></p>
             </div>
             <div class="text-center mb-6 pb-6 border-b border-gray-100">
@@ -237,15 +238,15 @@ const cancelled = Astro.url.searchParams.get('cancelled');
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">All Traveler features</span>
+                <span class="text-gray-700" data-i18n="pricing.featureAllTravelerFeatures">All Traveler features</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Business templates</span>
+                <span class="text-gray-700" data-i18n="pricing.featureBusinessTemplates">Business templates</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
-                <span class="text-gray-700">Team collaboration</span>
+                <span class="text-gray-700" data-i18n="pricing.featureTeamCollab">Team collaboration</span>
               </li>
               <li class="flex items-start gap-3 text-sm">
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
@@ -262,15 +263,15 @@ const cancelled = Astro.url.searchParams.get('cancelled');
         <div class="flex flex-wrap items-center justify-center gap-6 mt-12 text-sm text-gray-500">
           <div class="flex items-center gap-2">
             <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-            <span>Secure payments</span>
+            <span data-i18n="pricing.trustSecurePayments">Secure payments</span>
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-            <span>Cancel anytime</span>
+            <span data-i18n="pricing.trustCancelAnytime">Cancel anytime</span>
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-5 h-5 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-            <span>Instant access</span>
+            <span data-i18n="pricing.trustInstantAccess">Instant access</span>
           </div>
         </div>
       </div>

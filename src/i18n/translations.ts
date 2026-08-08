@@ -46,742 +46,14 @@ export function isCJK(lang: Language): boolean {
   return CJK_LANGUAGES.includes(lang);
 }
 
-export interface Translations {
-  // Navigation
-  nav: {
-    home: string;
-    cities: string;
-    restaurants: string;
-    aiChat: string;
-    guide: string;
-    business: string;
-    tagline: string;
-    [key: string]: any;
-  };
-  // Common
-  common: {
-    loading: string;
-    error: string;
-    retry: string;
-    cancel: string;
-    confirm: string;
-    search: string;
-    filter: string;
-    sort: string;
-    all: string;
-    seeMore: string;
-    viewAll: string;
-    back: string;
-    next: string;
-    previous: string;
-    close: string;
-    open: string;
-    [key: string]: any;
-  };
-  // Home
-  home: {
-    heroTitle: string;
-    heroSubtitle: string;
-    heroCTA: string;
-    exploreCities: string;
-    statsCities: string;
-    statsRestaurants: string;
-    statsAttractions: string;
-    statsAI: string;
-    featuresTitle: string;
-    ctaTitle: string;
-    ctaSubtitle: string;
-    [key: string]: any;
-  };
-  // Cities
-  cities: {
-    title: string;
-    subtitle: string;
-    exploreGuide: string;
-    attractions: string;
-    restaurants: string;
-    transport: string;
-    hotels: string;
-    payment: string;
-    culturalTips: string;
-    emergency: string;
-    recommendedTime: string;
-    ticketPrice: string;
-    openingHours: string;
-    [key: string]: any;
-  };
-  // Restaurants
-  restaurants: {
-    title: string;
-    subtitle: string;
-    michelin: string;
-    blackPearl: string;
-    local: string;
-    avgPrice: string;
-    rating: string;
-    cuisine: string;
-    address: string;
-    hours: string;
-    dishes: string;
-    tags: string;
-    [key: string]: any;
-  };
-  // Empty states
-  empty: {
-    noResults: string;
-    noRestaurants: string;
-    noAttractions: string;
-    noSearchResults: string;
-    tryAdjusting: string;
-    noFavorites: string;
-    addSome: string;
-    [key: string]: any;
-  };
-  // Errors
-  errors: {
-    loadFailed: string;
-    networkError: string;
-    somethingWrong: string;
-    goBack: string;
-    goHome: string;
-    [key: string]: any;
-  };
-  // Onboarding
-  onboarding: {
-    welcome: string;
-    step1Title: string;
-    step1Desc: string;
-    step2Title: string;
-    step2Desc: string;
-    step3Title: string;
-    step3Desc: string;
-    getStarted: string;
-    skip: string;
-    next: string;
-    done: string;
-    [key: string]: any;
-  };
-  // Tooltips
-  tooltips: {
-    searchTip: string;
-    filterTip: string;
-    mapTip: string;
-    favoritesTip: string;
-    shareTip: string;
-    [key: string]: any;
-  };
-  // Recently viewed / Recommendations
-  recents: {
-    recentlyViewed: string;
-    recommended: string;
-    clearHistory: string;
-    forYou: string;
-    [key: string]: any;
-  };
-  // Features section
-  features: {
-    restaurantGuide: string;
-    restaurantGuideDesc: string;
-    attractions: string;
-    attractionsDesc: string;
-    transport: string;
-    transportDesc: string;
-    emergency: string;
-    emergencyDesc: string;
-    payment: string;
-    paymentDesc: string;
-    accommodation: string;
-    accommodationDesc: string;
-    culturalTips: string;
-    culturalTipsDesc: string;
-    aiAssistant: string;
-    aiAssistantDesc: string;
-    [key: string]: any;
-  };
-  // Auth - register page
-  register?: {
-    subtitle: string;
-    username: string;
-    usernamePlaceholder: string;
-    email: string;
-    emailPlaceholder: string;
-    password: string;
-    passwordPlaceholder: string;
-    confirmPassword: string;
-    confirmPasswordPlaceholder: string;
-    submit: string;
-    orContinueWith: string;
-    signUpWithGoogle: string;
-    haveAccount: string;
-    signIn: string;
-    errorPasswordMismatch: string;
-    errorPasswordLength: string;
-    creating: string;
-    errorTimeout: string;
-    successEmailSent?: string;
-    accountCreated: string;
-    errorGoogle: string;
-    errorDefault: string;
-    [key: string]: any;
-  };
+export type Translations = Record<string, any>;
 
-  // 404 page
-  notFound?: {
-    title: string;
-    description?: string;
-    heading: string;
-    primary: string;
-    descriptionText: string;
-    goHome: string;
-    exploreCities: string;
-    askAi: string;
-    [key: string]: any;
-  };
-  // Emergency page
-  emergencyPage?: {
-    title: string;
-    subtitle: string;
-    police: string;
-    ambulance: string;
-    fire: string;
-    traffic: string;
-    oneTapCalls: string;
-    oneTapDesc: string;
-    phrases: string;
-    phrasesDesc: string;
-    gps: string;
-    gpsDesc: string;
-    contacts: string;
-    contactsDesc: string;
-    howToSave: string;
-    howToSave1: string;
-    howToSave2: string;
-    howToSave3: string;
-    nearbyHelp: string;
-    nearbyDesc: string;
-    pageTitle?: string;
-    pageDescription?: string;
-    heroHeading?: string;
-    hospitalsTitle?: string;
-    hospitalSearch?: string;
-    hospitalInternational?: string;
-    hospitalCommon?: string;
-    pharmaciesTitle?: string;
-    pharmacyGreenCross?: string;
-    pharmacyChains?: string;
-    pharmacyNoRx?: string;
-    policeTitle?: string;
-    policeSearch?: string;
-    policeEnglish?: string;
-    policeForeignAffairs?: string;
-    embassyTitle?: string;
-    embassyDesc?: string;
-    sosButtonTitle?: string;
-    sosButtonDesc?: string;
-    howToUseSOSTitle?: string;
-    sosItem1?: string;
-    sosItem2?: string;
-    sosItem3?: string;
-    sosItem4?: string;
-    offlineHeading?: string;
-    offlineDesc?: string;
-    // Offline Available section
-    offlineAvailableTitle?: string;
-    offlineItem1?: string;
-    offlineItem2?: string;
-    offlineItem3?: string;
-    offlineItem4?: string;
-    // Safety Tips section
-    safetyTipsTitle?: string;
-    keepDocsTitle?: string;
-    keepDocs1?: string;
-    keepDocs2?: string;
-    keepDocs3?: string;
-    keepDocs4?: string;
-    preparednessTitle?: string;
-    preparedness1?: string;
-    preparedness2?: string;
-    preparedness3?: string;
-    preparedness4?: string;
-    communicationTitle?: string;
-    communication1?: string;
-    communication2?: string;
-    communication3?: string;
-    communication4?: string;
-    // Lost Passport section
-    lostPassportTitle?: string;
-    inChinaTitle?: string;
-    lpStep1Title?: string;
-    lpStep1Desc?: string;
-    lpStep2Title?: string;
-    lpStep2Desc?: string;
-    lpStep3Title?: string;
-    lpStep3Desc?: string;
-    importantTipsTitle?: string;
-    lpTip1?: string;
-    lpTip2?: string;
-    lpTip3?: string;
-    lpTip4?: string;
-    [key: string]: any;
-  };
-  // AI page
-  aiPage?: {
-    title: string;
-    description?: string;
-    // Hero
-    heroBadge?: string;
-    heroTitle?: string;
-    heroSubtitle?: string;
-    startPlanningCTA?: string;
-    // Prompts
-    promptsTitle?: string;
-    promptsSubtitle?: string;
-    prompts?: { icon: string; text: string }[];
-    // AuthGate
-    authGateTitle?: string;
-    authGateSignupTitle?: string;
-    authGateDescription?: string;
-    emailPlaceholder?: string;
-    passwordPlaceholder?: string;
-    signInButton?: string;
-    signUpButton?: string;
-    orContinueWith?: string;
-    noAccountPrompt?: string;
-    haveAccountPrompt?: string;
-    switchToSignUp?: string;
-    switchToSignIn?: string;
-    googleButton?: string;
-    githubButton?: string;
-    authFailed?: string;
-    // ConversationSidebar
-    conversationsTitle?: string;
-    showSidebarTitle?: string;
-    hideSidebarTitle?: string;
-    newChatButton?: string;
-    noConversationsYet?: string;
-    messageLabel?: string;
-    messagesLabel?: string;
-    deleteConfirm?: string;
-    deleteTitle?: string;
-    [key: string]: any;
-  };
-  // Account page loading states
-  accountPage?: {
-    loading: string;
-    signInRequired: string;
-    signInRequiredDesc: string;
-    signIn: string;
-    pageTitle: string;
-    editProfile: string;
-    signOut: string;
-    tabOverview: string;
-    tabUsage: string;
-    tabBilling: string;
-    tabPlans: string;
-    membership: string;
-    walletBalance: string;
-    aiRequestsThisMonth: string;
-    statSavedRoutes: string;
-    upgrade: string;
-    currentPlan: string;
-    renewsOn: string;
-    active: string;
-    manageSubscription: string;
-    usageDailyAi: string;
-    usageSavedRoutes: string;
-    usageFavorites: string;
-    sectionSavedRoutes: string;
-    sectionFavorites: string;
-    sectionRecentOrders: string;
-    emptySavedRoutes: string;
-    emptyFavorites: string;
-    emptyOrders: string;
-    emptySavedRoutesHint: string;
-    emptyFavoritesHint: string;
-    pointsUnit: string;
-    alertSignOutError: string;
-    untitledRoute: string;
-    savedLocally: string;
-    syncedToCloud: string;
-    deleteAction: string;
-    deleteRouteConfirm: string;
-    orderHeaderOrderNum: string;
-    orderHeaderType: string;
-    orderHeaderAmount: string;
-    orderHeaderStatus: string;
-    orderHeaderDate: string;
-    [key: string]: any;
-  };
-
-  // Business Guide sub-pages (/guide/business/*)
-  businessGuidePage?: {
-    backToGuide: string;
-    indexTitle?: string;
-    indexDescription: string;
-    indexSubtitle: string;
-    registrationShort: string;
-    registrationTitle?: string;
-    registrationDescription?: string;
-    registrationSubtitle: string;
-    etiquetteShort: string;
-    etiquetteTitle?: string;
-    etiquetteDescription?: string;
-    etiquetteSubtitle: string;
-    expoShort: string;
-    expoTitle?: string;
-    expoDescription?: string;
-    expoSubtitle: string;
-    invitationShort: string;
-    invitationTitle?: string;
-    invitationDescription?: string;
-    invitationSubtitle: string;
-    translationShort: string;
-    translationTitle?: string;
-    translationDescription?: string;
-    translationSubtitle: string;
-    [key: string]: any;
-  };
-  // Travel Guide (/guide/*)
-  guidePage?: {
-    home: string;
-    travelGuide: string;
-    visaSubtitle: string;
-    visaTitleShort: string;
-    visaStageTitle: string;
-    visaStageDescription: string;
-    paymentSubtitle: string;
-    paymentTitleShort: string;
-    paymentStageTitle: string;
-    paymentStageDescription: string;
-    communicationSubtitle: string;
-    communicationTitleShort: string;
-    communicationStageTitle: string;
-    communicationStageDescription: string;
-    transportSubtitle: string;
-    transportTitleShort: string;
-    transportStageTitle: string;
-    transportStageDescription: string;
-    accommodationSubtitle: string;
-    accommodationTitleShort: string;
-    accommodationStageTitle: string;
-    accommodationStageDescription: string;
-    emergencySubtitle: string;
-    emergencyTitleShort: string;
-    emergencyStageTitle: string;
-    emergencyStageDescription: string;
-    departureSubtitle: string;
-    departureTitleShort: string;
-    departureStageTitle: string;
-    departureStageDescription: string;
-    diningSubtitle: string;
-    diningTitleShort: string;
-    diningStageTitle: string;
-    diningStageDescription: string;
-    culturalWarningsSubtitle: string;
-    culturalWarningsTitleShort: string;
-    scamPreventionSubtitle: string;
-    scamPreventionTitleShort: string;
-    transparencySubtitle: string;
-    transparencyTitleShort: string;
-    emergencyHeading: string;
-    emergencyPolice: string;
-    emergencyAmbulance: string;
-    emergencyFire: string;
-    emergencyTourism: string;
-    viewAttractions: string;
-    viewFullEmergency: string;
-    popularByCity: string;
-    quickBeijingDesc: string;
-    quickFoodDesc: string;
-    quickScamDesc: string;
-    cityBeijing: string;
-    cityShanghai: string;
-    cityXian: string;
-    cityChengdu: string;
-    indexHeroTitle: string;
-    indexHeroSubtitle: string;
-    indexStagesTitle: string;
-    indexGuidesHeading: string;
-    indexBusinessHeading: string;
-    indexBusinessSubtitle: string;
-    viewAllBusinessTools: string;
-    viewAllBusinessToolsCta: string;
-    viewAllBusinessToolsDesc: string;
-    [key: string]: any;
-  };
-  // City sub-pages (/city/[slug]/*)
-  cityPage?: {
-    home: string;
-    gettingTo: string;
-    attractionsHeading: string;
-    attractionsSubtitle: string;
-    attractionsExploreCount: string;
-    phoneIcon: string;
-    bestTimeHeading: string;
-    quickFactsHeading: string;
-    topHighlightsHeading: string;
-    foodHeading: string;
-    foodSubtitle: string;
-    hotelsHeading: string;
-    transportSubtitle: string;
-    noResults: string;
-    noResultsDesc: string;
-    noHotels: string;
-    noHotelsDesc: string;
-    dataSourcesHeading: string;
-    dataSourcesDesc: string;
-    foodHighlightsHeading: string;
-    foodHighlightsSubtitle: string;
-    hotelsCountUnit: string;
-    viewAllHotels: string;
-    [key: string]: any;
-  };
-  // Food sub-page (/city/[slug]/food)
-  foodPage?: {
-    subtitle: string;
-    indexTitle?: string;
-    exploreFood: string;
-    noCityTitle: string;
-    showingCount: string;
-    citiesUnit: string;
-    back: string;
-    heroCityFood: string;
-    restaurantsUnit: string;
-    filteringLabel: string;
-    backToCity: string;
-    callPhone: string;
-    amapNav: string;
-    navigate: string;
-    perPerson: string;
-    emptyTitle: string;
-    emptyDesc: string;
-    dataSourcesHeading: string;
-    dataSourcesDesc: string;
-    filterMichelin: string;
-    filterBlackPearl: string;
-    filterLocal: string;
-    filterCasual: string;
-    filterBudget: string;
-    otherRestaurants: string;
-    cityEmpty: string;
-    cityEmptyDesc: string;
-    cityEmptySubtitle: string;
-    emptyCta: string;
-    metaFooter: string;
-    [key: string]: any;
-  };
-  // Offline page
-  offlinePage?: {
-    title: string;
-    bannerTitle: string;
-    tryAgain: string;
-    tipsHeading: string;
-    tipsList1: string;
-    tipsList2: string;
-    tipsList3: string;
-    tipsList4: string;
-    tipsList5: string;
-    tipsList6: string;
-    phrase1En: string;
-    phrase2En: string;
-    phrase3En: string;
-    phrase4En: string;
-    phrase5En: string;
-    phrase6En: string;
-    phrase7En: string;
-    [key: string]: any;
-  };
-  // Profile page (/profile)
-  profilePage?: {
-    title: string;
-    [key: string]: any;
-  };
-  // User profile page (/user/[id])
-  userPage?: {
-    title: string;
-    [key: string]: any;
-  };
-  // Auth pages
-  authPage?: {
-    callbackTitle: string;
-    authTitle: string;
-    loginTitle: string;
-    signingYouIn: string;
-    [key: string]: any;
-  };
-  // Checkout pages
-  checkoutPage?: {
-    title: string;
-    description?: string;
-    successTitle: string;
-    successDesc: string;
-    successAccess: string;
-    processingDesc: string;
-    startPlanning: string;
-    viewAccount: string;
-    backToPricing: string;
-    errorTitle: string;
-    errorDesc: string;
-    [key: string]: any;
-  };
-  // Pricing page
-  pricing?: {
-    cancelledNotice: string;
-    trustedBy: string;
-    heroTitle: string;
-    heroSubtitle: string;
-    saveBadge: string;
-    billingMonthly: string;
-    billingAnnual: string;
-    billingPeriodMonth: string;
-    billingPeriodYear: string;
-    priceFree: string;
-    freeForever: string;
-    currentPlan: string;
-    subscribeNow: string;
-    popularBadge: string;
-    free: {
-      name: string;
-      description: string;
-      feature1: string;
-      feature2: string;
-      feature3: string;
-      featureDisabled1: string;
-      featureDisabled2: string;
-    };
-    explorer: {
-      name: string;
-      description: string;
-      price: string;
-      annualNote: string;
-      feature1: string;
-      feature2: string;
-      feature3: string;
-      feature4: string;
-      feature5: string;
-      featureDisabled: string;
-    };
-    traveler: {
-      name: string;
-      description: string;
-      price: string;
-      annualNote: string;
-      feature1: string;
-      feature2: string;
-      feature3: string;
-      feature4: string;
-      feature5: string;
-    };
-    business: {
-      name: string;
-      description: string;
-      price: string;
-      annualNote: string;
-      feature1: string;
-      feature2: string;
-      feature3: string;
-      feature4: string;
-      feature5: string;
-    };
-    trustBadges: {
-      moneyBack: string;
-      securePayment: string;
-      cancelAnytime: string;
-    };
-    compareTitle: string;
-    compareSubtitle: string;
-    compareFeatures: {
-      aiRequests: string;
-      saveItineraries: string;
-      conversationHistory: string;
-      pdfExport: string;
-      premiumCustomization: string;
-      advancedTools: string;
-      prioritySupport: string;
-      api: string;
-      dedicatedSupport: string;
-    };
-    unlimited: string;
-    testimonialsTitle: string;
-    testimonialsSubtitle: string;
-    testimonial1Quote?: string;
-    testimonial1Author: string;
-    testimonial1Role: string;
-    testimonial1Country: string;
-    testimonial2Quote?: string;
-    testimonial2Author: string;
-    testimonial2Role: string;
-    testimonial2Country: string;
-    testimonial3Quote?: string;
-    testimonial3Author: string;
-    testimonial3Role: string;
-    testimonial3Country: string;
-    faqTitle: string;
-    faqSubtitle: string;
-    faq1Q?: string;
-    faq1A?: string;
-    faq2Q?: string;
-    faq2A?: string;
-    faq3Q?: string;
-    faq3A?: string;
-    faq4Q?: string;
-    faq4A?: string;
-    faq5Q?: string;
-    faq5A?: string;
-    faq6Q?: string;
-    faq6A?: string;
-    ctaTitle: string;
-    ctaSubtitle: string;
-    ctaPrimary: string;
-    ctaSecondary: string;
-    [key: string]: any;
-  };
-  // Language
-  language: {
-    switchTo: string;
-    current: string;
-    english: string;
-    chinese: string;
-    [key: string]: any;
-  };
-  attractions?: {
-    title?: string;
-    subtitle?: string;
-    allCities?: string;
-    browseCategory?: string;
-    featuredCities?: string;
-    [key: string]: any;
-  };
-  auth?: {
-    signIn?: string;
-    signOut?: string;
-    myAccount?: string;
-    profileCenter?: string;
-    [key: string]: any;
-  };
-  footer?: {
-    description?: string;
-    cities?: string;
-    viewAllCities?: string;
-    resources?: string;
-    attractions?: string;
-    restaurants?: string;
-    transport?: string;
-    accommodation?: string;
-    payment?: string;
-    emergency?: string;
-    guides?: string;
-    culturalTips?: string;
-    aiAssistant?: string;
-    [key: string]: any;
-  };
-
-}
 
 export const translations: Record<Language, Translations> = {
   en: {
     accountPage: {
       active: "Active",
+      activeLabel: "Active",
       aiRequestsThisMonth: "AI Requests This Month",
       alertSignOutError: "Could not open subscription management. Please contact support.",
       currentPlan: "Current Plan",
@@ -793,6 +65,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "No orders yet.",
       emptySavedRoutes: "No saved routes yet.",
       emptySavedRoutesHint: "No saved routes yet. Start a conversation with AI to create routes!",
+      explorerBadge: "Explorer",
       loading: "Loading your account...",
       manageSubscription: "Manage Subscription",
       membership: "Membership",
@@ -802,6 +75,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "Status",
       orderHeaderType: "Type",
       pageTitle: "My Account - ChinaConnect",
+      pageTitleSuffix: "My Account - ChinaConnect",
       pointsUnit: "points",
       renewsOn: "Renews on",
       savedLocally: "Saved locally only",
@@ -812,27 +86,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "Sign in required",
       signInRequiredDesc: "Please sign in to view your account.",
       signOut: "Sign Out",
+      statAiUsage: "AI usage today",
+      statFavorites: "Favorites",
       statSavedRoutes: "Saved Routes",
+      subtitle: "Manage your subscription, favorites and saved routes.",
       syncedToCloud: "Synced to cloud",
       tabBilling: "Billing",
+      tabFavorites: "Favorites",
+      tabOrders: "Orders",
       tabOverview: "Overview",
       tabPlans: "Plans",
+      tabRoutes: "Routes",
       tabUsage: "Usage",
+      title: "My Account",
       untitledRoute: "Untitled Route",
       upgrade: "Upgrade",
       usageDailyAi: "Daily AI Requests",
       usageFavorites: "Favorites",
       usageSavedRoutes: "Saved Routes",
+      userBadge: "User",
       walletBalance: "Wallet Balance"
+    },
+    ai: {
+      send: "Send",
+      thinking: "Thinking..."
     },
     aiPage: {
       authFailed: "Authentication failed",
       authGateSignupTitle: "Create your account",
       authGateTitle: "Sign in to chat",
+      chatInputPlaceholder: "Ask about restaurants, transport, attractions...",
+      conversationHistory: "Conversation history",
       conversationsTitle: "Conversations",
       deleteConfirm: "Delete this conversation?",
       deleteTitle: "Delete",
       emailPlaceholder: "you@example.com",
+      exportPdf: "Export PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "Already have one?",
@@ -841,13 +130,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "Hide sidebar",
       messageLabel: "message",
       messagesLabel: "messages",
+      newChat: "New chat",
       newChatButton: "+ New chat",
       noAccountPrompt: "No account yet?",
       noConversationsYet: "No conversations yet",
       orContinueWith: "or",
+      pageDescription: "Ask anything about traveling in China.",
+      pageTitle: "AI Travel Concierge - ChinaConnect",
       passwordPlaceholder: "Password (min 6 chars)",
       promptsSubtitle: "Pick a prompt or type your own below",
       promptsTitle: "Try asking",
+      saveRoute: "Save route",
+      sendButton: "Send",
       showSidebarTitle: "Show conversations",
       signInButton: "Sign in",
       signUpButton: "Create account",
@@ -855,27 +149,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "aiPage.subtitle",
       switchToSignIn: "Sign in",
       switchToSignUp: "Create one",
-      title: "ChinaGuide AI - Your Intelligent China Travel Expert"
+      thinking: "Thinking...",
+      title: "ChinaGuide AI - Your Intelligent China Travel Expert",
+      upgradePrompt: "Sign up to unlock more AI requests.",
+      usageToday: "Usage today"
     },
     attractions: {
       allCities: "attractions.allCities",
+      appSubtitle: "Useful apps for getting around and finding attractions",
+      appTitle: "Plan Your Trip",
+      attractionCount: "{count} attractions",
       browseCategory: "attractions.browseCategory",
+      citiesCount: "{count} cities",
+      diversityTypes: "Historical, cultural, natural, modern",
+      featured: "Featured cities",
       featuredCities: "attractions.featuredCities",
+      heroEyebrow: "Browse by destination",
+      openCity: "Open city",
+      pageDescription: "Must-visit tourist spots across China - from ancient landmarks to natural wonders",
+      pageTitle: "China Attractions - ChinaConnect",
       subtitle: "attractions.subtitle",
-      title: "attractions.title"
+      title: "attractions.title",
+      viewAll: "View all attractions"
     },
     auth: {
+      continueWithGithub: "Continue with GitHub",
+      continueWithGoogle: "Continue with Google",
+      email: "Email",
       myAccount: "auth.myAccount",
+      needHelp: "Need help signing in?",
+      orContinueWithEmail: "Or continue with email",
+      password: "Password",
+      profile: "Profile",
       profileCenter: "auth.profileCenter",
       signIn: "auth.signIn",
-      signOut: "auth.signOut"
+      signInButton: "Sign in",
+      signOut: "auth.signOut",
+      signOutConfirm: "Sign out of ChinaConnect?",
+      subtitle: "Save favorites, plan trips, and chat with AI.",
+      title: "Sign in to ChinaConnect"
     },
     authPage: {
       authTitle: "Login / Register - ChinaConnect",
       callbackTitle: "Signing in...",
+      continueWithEmail: "Or continue with email",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "Something went wrong. Please try again.",
       errorTitle: "authPage.errorTitle",
+      forgotPassword: "Forgot password?",
       loginTitle: "Sign In - ChinaConnect",
-      signingYouIn: "Signing you in..."
+      needAccount: "Don't have an account?",
+      passwordPlaceholder: "Your password",
+      signInButton: "Sign in",
+      signInError: "Sign in failed. Please try again.",
+      signUpButton: "Sign up",
+      signUpError: "Sign up failed. Please try again.",
+      signingYouIn: "Signing you in...",
+      successDesc: "Redirecting you now...",
+      successTitle: "Welcome back!"
     },
     businessGuidePage: {
       backToGuide: "← Back to Travel Guide",
@@ -900,77 +231,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← Back to pricing",
+      continueButton: "Continue to your account",
       description: "Your subscription has been activated successfully",
       errorDesc: "We couldn't process your payment. Please try again or contact support.",
       errorTitle: "Something went wrong",
+      processing: "Processing your payment...",
       processingDesc: "Please wait while we confirm your subscription.",
       startPlanning: "Start Planning",
       successAccess: "You now have access to all the features of your new plan.",
       successDesc: "Your subscription has been activated.",
       successTitle: "Payment Successful!",
+      thankYou: "Thank you for choosing ChinaConnect.",
       title: "Payment Successful - ChinaConnect",
       viewAccount: "View account"
     },
     cities: {
       attractions: "Attractions",
+      citiesCount: "Cities",
+      citiesInChina: "Cities in China",
       culturalTips: "Cultural Tips",
       emergency: "Emergency",
+      exploreAll: "Explore all",
       exploreGuide: "Explore Guide",
+      filterATier: "A-Tier",
+      filterAll: "All",
+      filterDTier: "D-Tier",
+      filterSTier: "S-Tier",
+      headerSubtitle: "From ancient capitals to modern megacities - choose your destination.",
+      headerTitle: "Explore Chinese Cities",
       hotels: "Hotels",
+      noResults: "No cities match your filters.",
       openingHours: "Hours",
+      pageDescription: "Explore all Chinese cities covered by ChinaConnect - from ancient capitals to modern metropolises. S-tier premium cities, A-tier semi-premium, and D-tier on-demand cities.",
+      pageTitle: "Explore All Cities - ChinaConnect",
       payment: "Payment",
+      population: "Population",
       recommendedTime: "Recommended Visit",
+      region: "Region",
       restaurants: "Restaurants",
+      searchPlaceholder: "Search cities...",
       subtitle: "From ancient capitals to modern metropolises",
       ticketPrice: "Ticket",
       title: "Explore Our Cities",
-      transport: "Transport"
+      transport: "Transport",
+      viewCity: "View city"
+    },
+    city: {
+      beijing: {
+        name: "Beijing"
+      },
+      chengdu: {
+        name: "Chengdu"
+      },
+      chongqing: {
+        name: "Chongqing"
+      },
+      guangzhou: {
+        name: "Guangzhou"
+      },
+      guilin: {
+        name: "Guilin"
+      },
+      hangzhou: {
+        name: "Hangzhou"
+      },
+      lijiang: {
+        name: "Lijiang"
+      },
+      qingdao: {
+        name: "Qingdao"
+      },
+      shanghai: {
+        name: "Shanghai"
+      },
+      shenzhen: {
+        name: "Shenzhen"
+      },
+      suzhou: {
+        name: "Suzhou"
+      },
+      xian: {
+        name: "Xi'an"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "All",
+      categoryLabel: "Category",
+      disclaimer: "Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.",
+      openOnMap: "Open on map",
+      openingHours: "Opening hours",
+      subtitle: "Must-see landmarks, museums and natural wonders.",
+      ticketPrice: "Ticket price",
+      tipsHeader: "Tips",
+      title: "Attractions in {city}",
+      viewAll: "View all attractions in {city}",
+      viewDetails: "View details",
+      viewMore: "View more attractions"
+    },
+    cityFood: {
+      avgPrice: "Avg. price",
+      cuisine: "Cuisine",
+      disclaimer: "Phone numbers and addresses may change. We recommend verifying via the restaurant's official channels or calling ahead.",
+      filterAll: "All",
+      filterBlackPearl: "Black Pearl",
+      filterBudget: "Budget",
+      filterLocal: "Local",
+      filterLocalFavorites: "Local favorites",
+      filterMichelin: "Michelin",
+      filteringLabel: "Filtering:",
+      googleMaps: "Google Maps",
+      signatureDishes: "Signature dishes",
+      subtitle: "Michelin stars, Black Pearl favorites and local gems.",
+      title: "Restaurants in {city}",
+      viewAll: "View all restaurants in {city}",
+      viewDetails: "View details"
+    },
+    cityHotels: {
+      bookCta: "View hotel details",
+      bookNow: "View hotel",
+      filterAll: "All categories",
+      pricePerNight: "per night",
+      stars: "stars",
+      subtitle: "Boutique stays to international chains - find the right place for your trip.",
+      title: "Hotels in {city}"
     },
     cityPage: {
+      appCount: "{count} essential apps",
+      appsSubtitle: "Download these before you arrive.",
+      area: "Area",
+      attractionCount: "{count} attractions",
       attractionsExploreCount: "{city} — {count} places to explore",
       attractionsHeading: "Top Attractions",
       attractionsSubtitle: "Must-visit places picked by locals and travelers",
+      bestTime: "Best time to visit",
       bestTimeHeading: "Best Time to Visit",
+      bookHotelCta: "Find hotels in {city}",
+      bookTourCta: "Book a tour in {city}",
+      citySubtitle: "Complete travel guide for {city}, China. Find the best restaurants, attractions, hotels and travel tips.",
+      connectivitySubtitle: "Stay connected with data.",
+      contactCount: "{count} contacts",
+      cultureSubtitle: "Local customs and etiquette.",
+      cultureSubtitleDynamic: "Essential cultural knowledge for {city}",
+      currency: "Currency",
       dataSourcesDesc: "Where this data comes from",
       dataSourcesHeading: "Data Sources",
+      downloadBefore: "Download these apps before arriving in China.",
+      elevation: "Elevation",
+      emergencySubtitle: "Important numbers and embassies.",
+      emergencySubtitleDynamic: "Important phone numbers in {city}",
+      esimDescription: "eSIM is the easiest way to get data in China. No physical SIM needed - activate instantly on arrival.",
+      esimRecommended: "eSIM (Recommended)",
+      essentialAppsFor: "Essential Apps for {city}",
+      essentialCultural: "Essential cultural knowledge for {city}",
+      exploreOnMap: "Explore on map",
       foodHeading: "Where to Eat",
       foodHighlightsHeading: "Food Highlights",
       foodHighlightsSubtitle: "Locally recommended",
       foodSubtitle: "Michelin stars, Black Pearl picks, and local favorites",
+      gettingAround: "Getting around",
       gettingTo: "Getting to {city}",
+      heroEyebrow: "Travel Guide",
       home: "← Back to city home",
+      hotelCount: "{count} hotels",
       hotelsCountUnit: "hotels",
       hotelsHeading: "Where to Stay",
+      hotelsSubtitle: "From boutique hotels to international chains.",
+      importantNumbers: "Important phone numbers in {city}",
+      intro: "Welcome to {city}, one of China's most fascinating destinations.",
+      language: "Language",
+      moreCities: "More cities",
+      nextCity: "Next city",
       noHotels: "No hotels found",
       noHotelsDesc: "Try a different price range or category.",
       noResults: "No attractions found",
       noResultsDesc: "Try adjusting your filters or search keywords.",
+      openFullMap: "Open full map",
+      overviewSubtitle: "Everything you need to know before you go.",
+      pageTitleSuffix: "Travel Guide - ChinaConnect",
+      paymentSubtitle: "Cash, cards, mobile wallets and ATM access.",
       phoneIcon: "📞",
+      population: "Population",
+      previousCity: "Previous city",
+      proTipBooking: "Pro tip: book hotels 2-3 weeks in advance for the best rates.",
+      proTipEsim1: "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships).",
+      proTipEsim2: "Download eSIM apps before arriving in China.",
+      proTipEsim3: "Airalo and Holafly offer China-specific plans with unlimited data options.",
+      proTips: "Pro Tips",
+      quickFacts: "Quick Facts",
       quickFactsHeading: "Quick Facts",
+      region: "Region",
+      restaurantCount: "{count} restaurants",
+      sectionApps: "Essential Apps",
+      sectionAttractions: "Top Attractions",
+      sectionConnectivity: "SIM & eSIM",
+      sectionCulture: "Cultural Tips",
+      sectionEmergency: "Emergency Contacts",
+      sectionFood: "Where to Eat",
+      sectionHotels: "Where to Stay",
+      sectionOverview: "Overview",
+      sectionPayment: "Payment & Money",
+      sectionTransport: "Getting Around",
+      sectionVisa: "Visa & Entry",
+      sosTip: "Save these numbers before you arrive - cellular service may be limited in remote areas.",
+      switchToEnglishMode: "Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.",
+      tabApps: "Apps",
+      tabAttractions: "Attractions",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "Culture",
+      tabEmergency: "Emergency",
+      tabFood: "Food",
+      tabHotels: "Hotels",
+      tabOverview: "Overview",
+      tabPayment: "Payment",
+      tabTransport: "Transport",
+      timezone: "Timezone",
+      tipCount: "{count} tips",
       topHighlightsHeading: "Top Highlights",
       transportSubtitle: "Getting around {city}",
-      viewAllHotels: "View all {totalHotelCount} hotels"
+      travelTo: "Travel to {city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "View all {totalHotelCount} hotels",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "All",
       back: "Back",
+      bookNow: "Book now",
       cancel: "Cancel",
       close: "Close",
       confirm: "Confirm",
+      continue: "Continue",
+      discover: "Discover",
+      done: "Done",
       error: "Error",
+      explore: "Explore",
       filter: "Filter",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "Loading...",
       next: "Next",
       open: "Open",
       previous: "Previous",
+      readMore: "Read more",
+      required: "Required",
       retry: "Retry",
+      save: "Save",
       search: "Search...",
       seeMore: "See More",
+      signUpFree: "Sign up free",
       sort: "Sort",
-      viewAll: "View All"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "View All",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "Ambulance",
+      callButton: "Call",
       communication1: "Learn basic Mandarin phrases",
       communication2: "Use translation apps when needed",
       communication3: "Download emergency phrase cards",
@@ -980,9 +526,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "emergencyPage.contactsDesc",
       embassyDesc: "emergencyPage.embassyDesc",
       embassyTitle: "Embassy & Consulate Information",
+      findEmbassy: "Find your embassy",
       fire: "Fire",
       gps: "GPS Location Share",
       gpsDesc: "emergencyPage.gpsDesc",
+      gpsLocator: "GPS location",
       heroHeading: "Emergency Contacts & Help",
       hospitalCommon: "Common: Peking Union Medical College Hospital, Beijing United Family",
       hospitalInternational: "International hospitals recommended for foreigners",
@@ -1022,6 +570,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "Download offline maps for better preparedness",
       oneTapCalls: "One-Tap Emergency Calls",
       oneTapDesc: "Tap any number to call immediately. Works with any phone - no app needed.",
+      pageDescription: "Important phone numbers for travelers in China",
       pageTitle: "Emergency Contacts & Phrases - ChinaConnect",
       pharmaciesTitle: "Pharmacies",
       pharmacyChains: "Large chains: Guoji Yiyao, Lianhua, Yixinke",
@@ -1039,6 +588,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "Keep power bank charged",
       preparedness4: "Save hotel address in Chinese",
       preparednessTitle: "Emergency Preparedness",
+      quickDial: "Quick dial",
       safetyTipsTitle: "Safety Tips for Travelers",
       sosButtonDesc: "emergencyPage.sosButtonDesc",
       sosButtonTitle: "SOS Button - Available on Every Page",
@@ -1048,7 +598,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "Long-press or right-click for quick menu access",
       subtitle: "Essential phone numbers, phrases, and tools for your safety in China",
       title: "Emergency Contacts & Help",
-      traffic: "Traffic"
+      touristHotline: "Tourist hotline",
+      traffic: "Traffic",
+      universalSection: "Universal numbers",
+      viewAllContacts: "View all contacts"
     },
     empty: {
       addSome: "Start exploring and save your favorites!",
@@ -1067,7 +620,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "Failed to load content",
       network: "errors.network",
       networkError: "Network error. Please check your connection.",
+      notFound: "Resource not found.",
       somethingWrong: "Something went wrong",
+      timeout: "Request timed out.",
       unauthorized: "errors.unauthorized"
     },
     features: {
@@ -1092,22 +647,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← Back to {city}",
       backToCity: "Back to {city}",
+      bottomCtaDesc: "Browse our city list and explore more destinations in China.",
       callPhone: "Call",
+      citiesCount: "Cities",
       citiesUnit: "cities",
       cityEmpty: "No restaurants yet",
       cityEmptyDesc: "We're still curating restaurants for {city}.",
       cityEmptySubtitle: "Add some restaurants to start exploring",
       dataSourcesDesc: "These sources can help you learn more about {city}'s food culture:",
       dataSourcesHeading: "Reference Sources",
+      empty: "No cities match this filter.",
       emptyCta: "View all restaurants",
       emptyDesc: "No restaurants in this category. Try another filter.",
       emptyTitle: "No restaurants yet",
+      essentialFoodApps: "Essential food apps",
+      essentialFoodAppsDesc: "Download these apps to order food delivery and discover local restaurants with English menus.",
       exploreFood: "Explore Food",
+      filterAll: "All",
       filterBlackPearl: "Black Pearl",
       filterBudget: "Budget",
       filterCasual: "Casual",
       filterLocal: "Local Favorite",
       filterMichelin: "Michelin",
+      filterStreetFood: "Street Food",
       filteringLabel: "Filtering:",
       heroCityFood: "{city} Food",
       indexTitle: "🍜 China Food Map",
@@ -1115,25 +677,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "Navigate",
       noCityTitle: "Can't find the city you want?",
       otherRestaurants: "Other restaurants in {city}",
+      pageDescription: "Discover China most loved dishes, curated cities, and curated restaurants",
+      pageTitle: "China Food Map - ChinaConnect",
       perPerson: "/person",
+      proTipsFoodApps: "Pro tips for food apps",
       restaurantsUnit: "restaurants",
       showingCount: "Showing",
-      subtitle: "Michelin, Black Pearl & local favorites"
+      subtitle: "Michelin, Black Pearl & local favorites",
+      tipDianping: "Dianping is great for finding local favorites with English reviews.",
+      tipEleme: "Ele.me offers the widest delivery coverage but may default to Chinese.",
+      tipLinkCard: "Link your foreign card to Alipay/WeChat Pay before ordering.",
+      tipMeituan: "Meituan has English menu translation for many restaurants.",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "footer.accommodation",
       aiAssistant: "footer.aiAssistant",
+      allRightsReserved: "All rights reserved.",
       attractions: "footer.attractions",
       cities: "footer.cities",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "footer.culturalTips",
       description: "footer.description",
+      diningGuide: "Dining guide",
       emergency: "footer.emergency",
       guides: "footer.guides",
+      guidesLabel: "Travel Guides",
       payment: "footer.payment",
+      privacy: "Privacy",
       resources: "footer.resources",
+      resourcesLabel: "Resources",
       restaurants: "footer.restaurants",
+      terms: "Terms",
       transport: "footer.transport",
-      viewAllCities: "footer.viewAllCities"
+      viewAllCities: "footer.viewAllCities",
+      visaGuide: "Visa guide"
+    },
+    guide: {
+      attractionsPageTitle: "Top Attractions in China",
+      attractionsTitle: "Top attractions in China",
+      beijingGuide: "Beijing",
+      foodGuide: "Food guide",
+      scamPrevention: "Scam prevention"
     },
     guidePage: {
       accommodationStageDescription: "Find and book the right place to stay for every budget.",
@@ -1141,7 +746,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "Accommodation - Hotels, hostels and booking tips",
       accommodationTitleShort: "Accommodation Guide",
       attractionsSubtitle: "guidePage.attractionsSubtitle",
+      attractionsTitle: "Top attractions",
       backHome: "guidePage.backHome",
+      beginnerDesc: "Plan your first trip with confidence.",
+      beginnerTraveler: "First-time visitor",
+      businessDesc: "Tools for meetings, payments and etiquette.",
+      businessTitle: "Business travel",
+      businessTraveler: "Business traveler",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "Beijing",
       cityChengdu: "Chengdu",
       cityShanghai: "Shanghai",
@@ -1152,6 +764,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "Communication Guide",
       culturalWarningsSubtitle: "Cultural differences and faux pas to avoid",
       culturalWarningsTitleShort: "Cultural Warnings",
+      cultureTitle: "Cultural tips",
       departureStageDescription: "Tax refunds, customs, and final tips before you fly home.",
       departureStageTitle: "7. Departure",
       departureSubtitle: "Departure - Tax refunds and leaving China",
@@ -1169,6 +782,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "Emergency - Police, ambulance, embassy contacts",
       emergencyTitleShort: "Emergency Guide",
       emergencyTourism: "Tourist Hotline 12301",
+      foodTitle: "Food guide",
       home: "← Back to Home",
       indexBusinessHeading: "🚀 Business Travel Tools",
       indexBusinessSubtitle: "guidePage.indexBusinessSubtitle",
@@ -1176,23 +790,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "guidePage.indexHeroSubtitle",
       indexHeroTitle: "🇨🇳 China Complete Travel Guide",
       indexStagesTitle: "8 Stages for a Smooth China Trip",
+      longStay: "Long stay",
+      longStayDesc: "Settle in with visa, banking and accommodation guides.",
+      pageDescription: "Everything you need to plan, book and enjoy your China trip",
+      pageTitle: "China Travel Guide - ChinaConnect",
       paymentStageDescription: "Get Alipay and WeChat Pay working before you arrive.",
       paymentStageTitle: "2. Payment Setup",
       paymentSubtitle: "Payment - Alipay, WeChat Pay & cash tips",
+      paymentTitle: "Payment & money",
       paymentTitleShort: "Payment Guide",
       popularByCity: "Popular by city",
       quickBeijingDesc: "Capital highlights & must-eats",
       quickFoodDesc: "Michelin, Black Pearl & local favorites",
       quickScamDesc: "Common scams and how to avoid them",
+      safetyTitle: "Safety",
       scamPreventionSubtitle: "Protect yourself from common scams in China",
       scamPreventionTitleShort: "Scam Prevention",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "Know the fair prices, avoid being overcharged",
       transparencyTitleShort: "Price Transparency",
       transportStageDescription: "Navigate metros, high-speed trains and ride-hailing apps.",
       transportStageTitle: "4. Transport",
       transportSubtitle: "Transport - Getting around China with confidence",
+      transportTitle: "Getting around",
       transportTitleShort: "Transport Guide",
       travelGuide: "Travel Guide",
+      travelerType: "Traveler type",
+      viewAll: "View all guides",
       viewAllBusinessTools: "View all business tools",
       viewAllBusinessToolsCta: "Open Business Express",
       viewAllBusinessToolsDesc: "guidePage.viewAllBusinessToolsDesc",
@@ -1201,23 +826,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "Everything you need before boarding the plane.",
       visaStageTitle: "1. Visa & Entry",
       visaSubtitle: "Visa - Complete guide for entering China",
+      visaTitle: "Visa & entry",
       visaTitleShort: "Visa Guide"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "Chat with AI",
       citiesSubtitle: "home.citiesSubtitle",
       citiesTitle: "Explore Our Cities",
+      clearHistory: "Clear history",
       ctaSubtitle: "Start planning your trip with AI-powered recommendations.",
       ctaTitle: "Ready to Explore China?",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "Explore Beijing",
       exploreCities: "Explore Cities",
+      exploreCityButton: "Explore City",
       exploreGuide: "home.exploreGuide",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "Everything you need for a great trip",
       featuresTitle: "Everything You Need for Your China Trip",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "Ask AI for Trip Advice",
       heroDesc: "home.heroDesc",
       heroSubtitle: "Your trusted guide to China's best cities",
       heroTitle: "Your AI-Powered China Guide",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "Find Michelin-starred and Black Pearl restaurants in 12 Chinese cities.",
       onboarding1Title: "Discover Great Food",
       onboarding2Title: "AI-Powered Tips",
@@ -1225,14 +866,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "Finish",
       onboardingNext: "Next",
       onboardingSkip: "Skip",
+      pageDescription: "Discover China with AI-powered city guides. Find the best restaurants (Michelin & Black Pearl), attractions, transport info, and emergency contacts in 12 major Chinese cities including Beijing, Shanghai, Guangzhou, Xi'an, Chengdu, and more.",
       pageTitle: "ChinaConnect - Your AI Guide to Exploring China",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "Recently Viewed",
       recommendedForYou: "Recommended for You",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "AI Assistance",
       statsAttractions: "Top Attractions",
       statsCities: "Cities Covered",
       statsRestaurants: "Michelin Restaurants",
-      viewAllCities: "View All Cities"
+      viewAllCities: "View All Cities",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "Based on popular destinations"
     },
     language: {
       chinese: "Chinese",
@@ -1244,6 +895,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "language.nativeName",
       switchTo: "Switch to"
     },
+    loginPage: {
+      pageDescription: "Sign in to ChinaConnect",
+      pageTitle: "Sign in - ChinaConnect"
+    },
     nav: {
       aiChat: "ChinaGuide AI",
       attractions: "nav.attractions",
@@ -1253,6 +908,7 @@ export const translations: Record<Language, Translations> = {
       home: "Home",
       restaurants: "Restaurants",
       selectLanguage: "nav.selectLanguage",
+      signIn: "Sign in",
       tagline: "Explore China with AI"
     },
     notFound: {
@@ -1262,12 +918,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "Explore Cities",
       goHome: "Go Home",
       heading: "404",
+      homeButton: "Back to home",
       letsContinue: "notFound.letsContinue",
       primary: "Page Not Found",
-      title: "Page Not Found - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "Page Not Found - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "Medical emergencies, injuries",
+      availableOffline: "Available offline",
+      bannerDesc: "Emergency contacts and essential info are still available",
       bannerTitle: "Offline mode",
+      emergencyNumbers: "Emergency numbers (China)",
+      emergencyPhrases: "Quick emergency phrases",
+      fireDesc: "Fires, rescues, hazardous materials",
+      lastSynced: "Last synced:",
       phrase1En: "Help!",
       phrase2En: "Call the police!",
       phrase3En: "I need an ambulance",
@@ -1275,6 +949,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "I am lost",
       phrase6En: "I need help",
       phrase7En: "Where is the hospital?",
+      phrasesHelp: "Show common emergency phrases",
+      phrasesTip: "Show these phrases if you need help",
+      policeDesc: "Crime, emergencies, public safety",
+      quickActions: "Quick actions",
+      tapToCall: "Tap any number to call immediately",
       tipsHeading: "Travel tips while offline",
       tipsList1: "Save key phrases and addresses before going offline.",
       tipsList2: "Download offline maps in your maps app.",
@@ -1283,11 +962,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "Most cafes and malls have free Wi-Fi.",
       tipsList6: "Carry a small notepad for writing addresses.",
       title: "You are offline",
+      title2: "ChinaConnect Emergency SOS - Works Offline",
+      trafficDesc: "Traffic accidents only",
       tryAgain: "Try again"
     },
     onboarding: {
       done: "Done",
       getStarted: "Get Started",
+      neverShow: "Don't show this again",
       next: "Next",
       skip: "Skip",
       step1Desc: "Find Michelin-starred and Black Pearl restaurants in 12 Chinese cities.",
@@ -1299,6 +981,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "Welcome to ChinaConnect!"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "pricing.autoRenewNote",
       billingAnnual: "Annual",
       billingMonthly: "Monthly",
@@ -1316,6 +999,7 @@ export const translations: Record<Language, Translations> = {
         name: "Business",
         price: "$29.99"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "Payment was cancelled. You can try again below.",
       compareFeatures: {
         advancedTools: "Advanced Travel Tools",
@@ -1330,6 +1014,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "pricing.compareSubtitle",
       compareTitle: "Compare All Features",
+      ctaButton: "Get started",
       ctaPrimary: "Start Free Today",
       ctaSecondary: "Explore Features",
       ctaSubtitle: "pricing.ctaSubtitle",
@@ -1347,14 +1032,44 @@ export const translations: Record<Language, Translations> = {
         name: "Explorer",
         price: "$4.99"
       },
+      faq: "FAQ",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "How do I upgrade or downgrade my plan?",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "How do I cancel my subscription?",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "What is your refund policy?",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "When does my monthly quota reset?",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "What happens when I reach my AI request limit?",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "What payment methods do you accept?",
       faqSubtitle: "Everything you need to know about our plans and billing",
       faqTitle: "Frequently Asked Questions",
+      featureAdvancedTools: "Advanced travel tools",
+      featureAiRequestsBusiness: "Unlimited AI conversations",
+      featureAiRequestsExplorer: "20 AI requests per month",
+      featureAiRequestsFree: "5 AI requests per month",
+      featureAiRequestsPro: "100 AI requests per month",
+      featureAllTravelerFeatures: "All Traveler features",
+      featureApi: "API access",
+      featureBasicPlanning: "Basic travel planning",
+      featureBusinessTemplates: "Business templates",
+      featureCancelAnytime: "Cancel anytime",
+      featureConversationHistory: "Conversation history",
+      featureCustomIntegrations: "Custom integrations",
+      featureDedicated: "Dedicated support",
+      featureExportPdf: "Export PDF",
+      featureMultiCity: "Multi-city itineraries",
+      featurePdfExport: "PDF export",
+      featurePremiumCustomization: "Premium customization",
+      featurePrioritySupport: "Priority support",
+      featureSaveItineraries: "Save itineraries",
+      featureSecurePayments: "Secure payments",
+      featureTeamCollab: "Team collaboration",
+      featureTeamManagement: "Team management",
+      featureViewItineraries: "View itineraries",
       free: {
         description: "Get started with basic planning",
         feature1: "5 AI requests per month",
@@ -1365,24 +1080,40 @@ export const translations: Record<Language, Translations> = {
         name: "Free"
       },
       freeForever: "Free forever",
+      heroBadge: "Pricing",
       heroSubtitle: "pricing.heroSubtitle",
       heroTitle: "Simple, Transparent Pricing",
+      moneyBack: "30-day refund",
+      planBusiness: "Business",
+      planExplorer: "Explorer",
+      planFree: "Free",
+      planPro: "Pro",
+      planTraveler: "Traveler",
       popularBadge: "Most Popular",
       priceFree: "$0",
+      pro: {
+        description: "For active travelers"
+      },
       saveBadge: "Save 20%",
       savingsHint: "pricing.savingsHint",
+      securePayment: "Secure payment",
       subscribeNow: "Subscribe Now",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "USA",
       testimonial1Role: "Explorer Plan",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "Li Wei T.",
       testimonial2Country: "UK",
       testimonial2Role: "Business Plan",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "Germany",
       testimonial3Role: "Traveler Plan",
+      testimonials: "What travelers say",
       testimonialsSubtitle: "Hear what our users say about their ChinaConnect experience",
       testimonialsTitle: "Loved by Travelers Worldwide",
+      title: "Pricing",
       traveler: {
         annualNote: "Billed $95.99/year (save $24)",
         description: "For frequent China visitors",
@@ -1399,11 +1130,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "30-day money-back",
         securePayment: "Secure payment"
       },
+      trustCancelAnytime: "Cancel anytime",
+      trustInstantAccess: "Instant access",
+      trustSecurePayments: "Secure payments",
       trustedBy: "Trusted by 10,000+ travelers",
       unlimited: "Unlimited"
     },
     profilePage: {
-      title: "My Profile - ChinaConnect"
+      displayName: "Display name",
+      heading: "Profile",
+      pageTitle2: "My Profile",
+      save: "Save changes",
+      saved: "Saved!",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "My Profile - ChinaConnect",
+      uploadAvatar: "Upload avatar"
     },
     recents: {
       clearAll: "recents.clearAll",
@@ -1440,6 +1181,22 @@ export const translations: Record<Language, Translations> = {
       username: "Username",
       usernamePlaceholder: "Your display name"
     },
+    registerPage: {
+      pageDescription: "Create your ChinaConnect account",
+      pageTitle: "Sign up - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "Address",
       avgPrice: "Avg Price",
@@ -1465,12 +1222,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Share with friends"
     },
     userPage: {
+      heading: "Profile",
+      pageTitle2: "User profile",
       title: "User Profile - ChinaConnect"
     }
   },
   ja: {
     accountPage: {
       active: "アクティブ",
+      activeLabel: "アクティブ",
       aiRequestsThisMonth: "今月のAIリクエスト",
       alertSignOutError: "サブスクリプション管理を開けません。サポートにお問い合わせください。",
       currentPlan: "現在のプラン",
@@ -1482,6 +1242,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "最近の注文なし",
       emptySavedRoutes: "保存済みルートなし",
       emptySavedRoutesHint: "保存済みルートはありません。AIとチャットしてルートを作成しよう！",
+      explorerBadge: "探検家",
       loading: "アカウントを読み込み中…",
       manageSubscription: "サブスクリプション管理",
       membership: "メンバーシップ",
@@ -1491,6 +1252,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "ステータス",
       orderHeaderType: "タイプ",
       pageTitle: "マイアカウント - ChinaConnect",
+      pageTitleSuffix: "マイアカウント - ChinaConnect",
       pointsUnit: "ポイント",
       renewsOn: "更新日",
       savedLocally: "ローカル保存のみ",
@@ -1501,27 +1263,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "ログインが必要",
       signInRequiredDesc: "アカウントを表示するにはログインしてください。",
       signOut: "ログアウト",
+      statAiUsage: "今日のAI使用量",
+      statFavorites: "お気に入り",
       statSavedRoutes: "保存済みルート",
+      subtitle: "サブスクリプション、お気に入り、保存されたルートを管理します。",
       syncedToCloud: "クラウドに同期",
       tabBilling: "請求",
+      tabFavorites: "お気に入り",
+      tabOrders: "注文",
       tabOverview: "概要",
       tabPlans: "プラン",
+      tabRoutes: "ルート",
       tabUsage: "使用状況",
+      title: "マイアカウント",
       untitledRoute: "無題のルート",
       upgrade: "アップグレード",
       usageDailyAi: "日次AI使用",
       usageFavorites: "お気に入り使用",
       usageSavedRoutes: "保存ルート使用",
+      userBadge: "ユーザー",
       walletBalance: "ウォレット残高"
+    },
+    ai: {
+      send: "送信",
+      thinking: "考え中..."
     },
     aiPage: {
       authFailed: "認証失敗",
       authGateSignupTitle: "アカウントを作成",
       authGateTitle: "チャットするにはサインイン",
+      chatInputPlaceholder: "レストラン、交通機関、観光スポットなどについて質問してください。",
+      conversationHistory: "会話履歴",
       conversationsTitle: "会話",
       deleteConfirm: "この会話を削除しますか?",
       deleteTitle: "削除",
       emailPlaceholder: "you@example.com",
+      exportPdf: "PDFとしてエクスポート",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "すでにアカウントをお持ちですか?",
@@ -1530,13 +1307,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "サイドバーを隠す",
       messageLabel: "メッセージ",
       messagesLabel: "メッセージ",
+      newChat: "新しいチャット",
       newChatButton: "+ 新しいチャット",
       noAccountPrompt: "アカウントがありませんか?",
       noConversationsYet: "まだ会話がありません",
       orContinueWith: "または",
+      pageDescription: "中国旅行に関するあらゆる質問にお答えします。",
+      pageTitle: "AIトラベルコンシェルジュ - ChinaConnect",
       passwordPlaceholder: "パスワード(6文字以上)",
       promptsSubtitle: "プロンプトを選ぶか、下に自分で入力",
       promptsTitle: "質問してみる",
+      saveRoute: "ルートを保存",
+      sendButton: "送信",
       showSidebarTitle: "会話を表示",
       signInButton: "サインイン",
       signUpButton: "アカウント作成",
@@ -1544,27 +1326,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "AIが中国旅行の計画をお手伝い",
       switchToSignIn: "サインイン",
       switchToSignUp: "作成する",
-      title: "AIアシスタント"
+      thinking: "考え中...",
+      title: "AIアシスタント",
+      upgradePrompt: "サインアップしてAIリクエストを増やしましょう。",
+      usageToday: "今日の使用量"
     },
     attractions: {
       allCities: "観光地があるすべての都市",
+      appSubtitle: "移動や観光スポット探しに役立つアプリ",
+      appTitle: "旅行を計画する",
+      attractionCount: "{count}の観光スポット",
       browseCategory: "カテゴリーで閲覧",
+      citiesCount: "{count}都市",
+      diversityTypes: "歴史的、文化的、自然的、現代的",
+      featured: "特集都市",
       featuredCities: "注目の都市",
+      heroEyebrow: "目的地で探す",
+      openCity: "都市を開く",
+      pageDescription: "中国の見逃せない観光地 - 古代の史跡から自然の驚異まで",
+      pageTitle: "中国の観光スポット - ChinaConnect",
       subtitle: "必ず訪れたい観光地 — 古代の名所から自然の驚異まで",
-      title: "中国の観光地"
+      title: "中国の観光地",
+      viewAll: "すべての観光スポットを表示"
     },
     auth: {
+      continueWithGithub: "GitHubで続ける",
+      continueWithGoogle: "Googleで続ける",
+      email: "メールアドレス",
       myAccount: "マイアカウント",
+      needHelp: "ログインでお困りですか？",
+      orContinueWithEmail: "またはメールアドレスで続ける",
+      password: "パスワード",
+      profile: "プロフィール",
       profileCenter: "プロフィール",
       signIn: "ログイン",
-      signOut: "ログアウト"
+      signInButton: "サインイン",
+      signOut: "ログアウト",
+      signOutConfirm: "ChinaConnectからサインアウトしますか？",
+      subtitle: "お気に入り、保存された旅行、AIチャットを利用できます。",
+      title: "ChinaConnectにサインイン"
     },
     authPage: {
       authTitle: "ログイン/登録 - ChinaConnect",
       callbackTitle: "サインイン中…",
+      continueWithEmail: "またはメールアドレスで続ける",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "問題が発生しました。もう一度お試しください。",
       errorTitle: "検証失敗",
+      forgotPassword: "パスワードをお忘れですか？",
       loginTitle: "サインイン - ChinaConnect",
-      signingYouIn: "サインイン中…"
+      needAccount: "アカウントをお持ちでないですか？",
+      passwordPlaceholder: "パスワード",
+      signInButton: "サインイン",
+      signInError: "サインインに失敗しました。もう一度お試しください。",
+      signUpButton: "サインアップ",
+      signUpError: "サインアップに失敗しました。もう一度お試しください。",
+      signingYouIn: "サインイン中…",
+      successDesc: "ただいまリダイレクトしています...",
+      successTitle: "おかえりなさい！"
     },
     businessGuidePage: {
       backToGuide: "ガイドに戻る",
@@ -1589,77 +1408,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← 料金に戻る",
+      continueButton: "アカウントに進む",
       description: "サブスクリプションが正常に有効化されました",
       errorDesc: "お支払いを処理できませんでした。再試行するか、サポートにお問い合わせください。",
       errorTitle: "問題が発生しました",
+      processing: "お支払い処理中...",
       processingDesc: "サブスクリプションを確認するまでお待ちください。",
       startPlanning: "計画を始める",
       successAccess: "新しいプランのすべての機能にアクセスできます。",
       successDesc: "サブスクリプションが有効化されました。",
       successTitle: "支払い成功!",
+      thankYou: "ChinaConnectをお選びいただき、ありがとうございます。",
       title: "支払い成功 - ChinaConnect",
       viewAccount: "アカウントを見る"
     },
     cities: {
       attractions: "観光地",
+      citiesCount: "都市",
+      citiesInChina: "中国の都市",
       culturalTips: "文化のヒント",
       emergency: "緊急連絡先",
+      exploreAll: "すべて探索",
       exploreGuide: "ガイドを探索",
+      filterATier: "Aランク",
+      filterAll: "すべて",
+      filterDTier: "Dランク",
+      filterSTier: "Sランク",
+      headerSubtitle: "古代の首都から現代のメガシティまで - 目的地をお選びください。",
+      headerTitle: "中国の都市を探検",
       hotels: "ホテル",
+      noResults: "フィルタに一致する都市はありません。",
       openingHours: "営業時間",
+      pageDescription: "ChinaConnectでカバーされているすべての中国の都市を発見 - 古代の首都から現代の大都市まで。Sクラスのプレミアム都市、Aクラスの準プレミアム都市、Dクラスのオンデマンド都市。",
+      pageTitle: "すべての都市を探索 - ChinaConnect",
       payment: "支払い",
+      population: "人口",
       recommendedTime: "推奨訪問時間",
+      region: "地域",
       restaurants: "レストラン",
+      searchPlaceholder: "都市を検索...",
       subtitle: "中国12主要都市の徹底ガイド",
       ticketPrice: "チケット",
       title: "中国の都市",
-      transport: "交通"
+      transport: "交通",
+      viewCity: "都市を表示"
+    },
+    city: {
+      beijing: {
+        name: "北京"
+      },
+      chengdu: {
+        name: "成都"
+      },
+      chongqing: {
+        name: "重慶"
+      },
+      guangzhou: {
+        name: "広州"
+      },
+      guilin: {
+        name: "桂林"
+      },
+      hangzhou: {
+        name: "杭州"
+      },
+      lijiang: {
+        name: "麗江"
+      },
+      qingdao: {
+        name: "青島"
+      },
+      shanghai: {
+        name: "上海"
+      },
+      shenzhen: {
+        name: "深圳"
+      },
+      suzhou: {
+        name: "蘇州"
+      },
+      xian: {
+        name: "西安"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "すべて",
+      categoryLabel: "カテゴリー",
+      disclaimer: "営業時間、チケット料金、電話番号は変更される場合があります。公式ウェブサイトで確認するか、事前に電話で確認することをお勧めします。",
+      openOnMap: "地図上で開く",
+      openingHours: "営業時間",
+      subtitle: "必見のランドマーク、博物館、自然の驚異。",
+      ticketPrice: "チケット料金",
+      tipsHeader: "ヒント",
+      title: "{city}の観光スポット",
+      viewAll: "{city}のすべての観光スポットを表示",
+      viewDetails: "詳細を表示",
+      viewMore: "観光スポットをもっと見る"
+    },
+    cityFood: {
+      avgPrice: "平均価格",
+      cuisine: "料理",
+      disclaimer: "電話番号と住所は変更される場合があります。公式チャンネルで確認するか、事前に電話で確認することをお勧めします。",
+      filterAll: "すべて",
+      filterBlackPearl: "ブラックパール",
+      filterBudget: "予算",
+      filterLocal: "ローカル",
+      filterLocalFavorites: "地元のおすすめ",
+      filterMichelin: "ミシュラン",
+      filteringLabel: "フィルタリング:",
+      googleMaps: "Googleマップ",
+      signatureDishes: "名物料理",
+      subtitle: "ミシュラン星、ブラックパールの人気店、ローカルの隠れた名店。",
+      title: "{city}のレストラン",
+      viewAll: "{city}のすべてのレストランを表示",
+      viewDetails: "詳細を表示"
+    },
+    cityHotels: {
+      bookCta: "ホテルの詳細を見る",
+      bookNow: "ホテルを予約",
+      filterAll: "すべてのカテゴリー",
+      pricePerNight: "一泊あたり",
+      stars: "星",
+      subtitle: "ブティックホテルから国際チェーンまで - あなたの旅にぴったりの場所を見つけてください。",
+      title: "{city}のホテル"
     },
     cityPage: {
+      appCount: "{count}個の必須アプリ",
+      appsSubtitle: "到着前にダウンロードしてください。",
+      area: "地域",
+      attractionCount: "{count}個の観光スポット",
       attractionsExploreCount: "{city} — {count}の探索スポット",
       attractionsHeading: "人気観光地",
       attractionsSubtitle: "この都市で最も訪れる価値のある場所",
+      bestTime: "訪問するのに最適な時期",
       bestTimeHeading: "最適訪問時期",
+      bookHotelCta: "{city}のホテルを探す",
+      bookTourCta: "{city}でツアーを予約する",
+      citySubtitle: "{city}、中国の完全な旅行ガイド。最高のレストラン、観光スポット、ホテル、旅行のヒントを見つけましょう。",
+      connectivitySubtitle: "データでつながる",
+      contactCount: "{count}件の連絡先",
+      cultureSubtitle: "現地での習慣とエチケット",
+      cultureSubtitleDynamic: "【{city}】の基本的な文化知識",
+      currency: "通貨",
       dataSourcesDesc: "レストランデータは公開レビューと地元のおすすめから取得。",
       dataSourcesHeading: "データソース",
+      downloadBefore: "中国に到着する前にこれらのアプリをダウンロードしてください。",
+      elevation: "標高",
+      emergencySubtitle: "重要な電話番号と大使館",
+      emergencySubtitleDynamic: "【{city}】の重要な電話番号",
+      esimDescription: "eSIMは中国でデータを利用する最も簡単な方法です。物理的なSIMは必要ありません - 到着後すぐにアクティベートできます。",
+      esimRecommended: "eSIM（推奨）",
+      essentialAppsFor: "{city}の必須アプリ",
+      essentialCultural: "{city}の基本的な文化的知識",
+      exploreOnMap: "地図上で探索する",
       foodHeading: "美食ハイライト",
       foodHighlightsHeading: "美食ハイライト",
       foodHighlightsSubtitle: "必ず試すべき名物料理とレストラン",
       foodSubtitle: "ミシュラン、黒珍珠、ローカルお気に入り",
+      gettingAround: "移動手段",
       gettingTo: "アクセス方法",
+      heroEyebrow: "旅行ガイド",
       home: "ホームに戻る",
+      hotelCount: "{count}軒のホテル",
       hotelsCountUnit: "件のホテル",
       hotelsHeading: "宿泊おすすめ",
+      hotelsSubtitle: "ブティックホテルから国際チェーンまで。",
+      importantNumbers: "{city}の重要な電話番号",
+      intro: "中国の最も魅力的な目的地の一つである{city}へようこそ。",
+      language: "言語",
+      moreCities: "その他の都市",
+      nextCity: "次の都市",
       noHotels: "ホテルデータなし",
       noHotelsDesc: "この都市には厳選ホテルがありません。他のカテゴリをお試しください。",
       noResults: "結果が見つかりません",
       noResultsDesc: "他の検索条件をお試しください。",
+      openFullMap: "地図をフル表示",
+      overviewSubtitle: "出発前に知っておくべきことすべて。",
+      pageTitleSuffix: "旅行ガイド - ChinaConnect",
+      paymentSubtitle: "現金、カード、モバイルウォレットとATMアクセス。",
       phoneIcon: "電話",
+      population: "人口",
+      previousCity: "前の都市",
+      proTipBooking: "プロアドバイス：最高の料金を得るために2〜3週間前にホテルを予約しましょう。",
+      proTipEsim1: "eSIMは、お使いの携帯電話が対応している場合（iPhone XS以降およびほとんどのAndroidフラッグシップモデル）に最適です。",
+      proTipEsim2: "中国に到着する前にeSIMアプリをダウンロードしてください。",
+      proTipEsim3: "AiraloとHolaflyは、中国専用のプランで無制限のデータオプションを提供しています。",
+      proTips: "プロアドバイス",
+      quickFacts: "クイックファクト",
       quickFactsHeading: "都市クイックデータ",
+      region: "地域",
+      restaurantCount: "{count}軒のレストラン",
+      sectionApps: "必須アプリ",
+      sectionAttractions: "観光スポットトップ",
+      sectionConnectivity: "SIM & eSIM",
+      sectionCulture: "文化のヒント",
+      sectionEmergency: "緊急連絡先",
+      sectionFood: "食事場所",
+      sectionHotels: "宿泊場所",
+      sectionOverview: "概要",
+      sectionPayment: "支払いとお金",
+      sectionTransport: "移動手段",
+      sectionVisa: "ビザと入国",
+      sosTip: "これらの番号を到着前に保存してください - 遠隔地では携帯電話サービスが制限される場合があります。",
+      switchToEnglishMode: "アプリの設定で英語モードに切り替えてください。中国語インターフェースが表示された場合。AlipayとWeChat Payはどちらも外国のクレジットカードに対応しています。",
+      tabApps: "アプリ",
+      tabAttractions: "観光スポット",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "文化",
+      tabEmergency: "緊急連絡先",
+      tabFood: "食事",
+      tabHotels: "ホテル",
+      tabOverview: "概要",
+      tabPayment: "支払い",
+      tabTransport: "交通",
+      timezone: "タイムゾーン",
+      tipCount: "{count}個のヒント",
       topHighlightsHeading: "都市ハイライト",
       transportSubtitle: "到着と市内交通",
-      viewAllHotels: "すべてのホテルを見る"
+      travelTo: "{city}への旅行",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "すべてのホテルを見る",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "すべて",
       back: "戻る",
+      bookNow: "Book now",
       cancel: "キャンセル",
       close: "閉じる",
       confirm: "確認",
+      continue: "続ける",
+      discover: "Discover",
+      done: "完了",
       error: "エラー",
+      explore: "Explore",
       filter: "フィルター",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "読み込み中…",
       next: "次へ",
       open: "開く",
       previous: "前へ",
+      readMore: "Read more",
+      required: "必須",
       retry: "再試行",
+      save: "保存",
       search: "検索…",
       seeMore: "もっと見る",
+      signUpFree: "Sign up free",
       sort: "並び替え",
-      viewAll: "すべて見る"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "すべて見る",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "救急",
+      callButton: "電話する",
       communication1: "基本中国語フレーズをいくつか覚える",
       communication2: "翻訳アプリをダウンロード",
       communication3: "大使館の電話を保存",
@@ -1669,9 +1703,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "中国全土で通用するコア緊急番号。",
       embassyDesc: "主要国の在中国大使館の連絡先情報。",
       embassyTitle: "大使館",
+      findEmbassy: "大使館を探す",
       fire: "消防",
       gps: "GPS座標",
       gpsDesc: "緊急連絡用にリアルタイム位置を保存。",
+      gpsLocator: "GPS位置情報",
       heroHeading: "緊急連絡先とヘルプ",
       hospitalCommon: "総合病院",
       hospitalInternational: "国際クリニック",
@@ -1711,6 +1747,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "緊急フレーズ",
       oneTapCalls: "ワンタップ通話",
       oneTapDesc: "タップで緊急番号にダイヤル。",
+      pageDescription: "中国旅行者向けの重要な電話番号",
       pageTitle: "緊急連絡先とフレーズ - ChinaConnect",
       pharmaciesTitle: "薬局",
       pharmacyChains: "チェーン薬局",
@@ -1728,6 +1765,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "旅行保険に加入",
       preparedness4: "家族に旅程を共有",
       preparednessTitle: "事前準備",
+      quickDial: "クイックダイヤル",
       safetyTipsTitle: "安全のヒント",
       sosButtonDesc: "3秒長押しで自動的に緊急連絡先に位置を送信。",
       sosButtonTitle: "SOSボタン",
@@ -1737,7 +1775,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "病院ナビ",
       subtitle: "中国の緊急番号、病院、大使館 — 必要時に備えて保存。",
       title: "緊急連絡先",
-      traffic: "交通事故"
+      touristHotline: "観光ホットライン",
+      traffic: "交通事故",
+      universalSection: "共通番号",
+      viewAllContacts: "すべての連絡先を表示"
     },
     empty: {
       addSome: "探索して、お気に入りを保存しましょう!",
@@ -1756,7 +1797,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "コンテンツの読み込みに失敗しました",
       network: "errors.network",
       networkError: "ネットワークエラー。接続を確認してください。",
+      notFound: "Resource not found.",
       somethingWrong: "問題が発生しました",
+      timeout: "Request timed out.",
       unauthorized: "errors.unauthorized"
     },
     features: {
@@ -1781,22 +1824,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "高徳地図ナビ",
       back: "戻る",
       backToCity: "{city}に戻る",
+      bottomCtaDesc: "中国の都市リストを閲覧し、さらに多くの目的地を探検しましょう。",
       callPhone: "電話をかける",
+      citiesCount: "Cities",
       citiesUnit: "都市",
       cityEmpty: "この都市のグルメはまだありません",
       cityEmptyDesc: "もうすぐレストランが追加されます。",
       cityEmptySubtitle: "この都市にはレストランがまだ追加されていません",
       dataSourcesDesc: "レストランデータは公開レビューと地元のおすすめから取得。",
       dataSourcesHeading: "データソース",
+      empty: "No cities match this filter.",
       emptyCta: "フィルターをクリア",
       emptyDesc: "このフィルター条件に一致するレストランが見つかりません。",
       emptyTitle: "レストランがありません",
+      essentialFoodApps: "必須の食事アプリ",
+      essentialFoodAppsDesc: "これらのアプリをダウンロードしてフードデリバリーを注文し、英語メニューがある地元のレストランを発見しましょう。",
       exploreFood: "グルメを探索",
+      filterAll: "All",
       filterBlackPearl: "黒珍珠",
       filterBudget: "お手頃",
       filterCasual: "カジュアル",
       filterLocal: "ローカル厳選",
       filterMichelin: "ミシュラン",
+      filterStreetFood: "Street Food",
       filteringLabel: "フィルター",
       heroCityFood: "{city}のグルメ",
       indexTitle: "🍜 中国グルメマップ",
@@ -1804,25 +1854,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "ナビ",
       noCityTitle: "この都市のグルメはまだありません",
       otherRestaurants: "他のレストラン",
+      pageDescription: "中国で人気の料理、おすすめの都市、おすすめのレストランを発見",
+      pageTitle: "中国フードマップ - ChinaConnect",
       perPerson: "/人",
+      proTipsFoodApps: "食事アプリのプロアドバイス",
       restaurantsUnit: "レストラン",
       showingCount: "表示中",
-      subtitle: "地元の人々が都市別に厳選した中国で最も愛されている料理を発見。"
+      subtitle: "地元の人々が都市別に厳選した中国で最も愛されている料理を発見。",
+      tipDianping: "Dianpingは、英語の口コミで地元の人気店を見つけるのに最適です。",
+      tipEleme: "Ele.meは最も広い配達範囲を提供しますが、デフォルトで中国語になる場合があります。",
+      tipLinkCard: "注文する前に外国のカードをAlipay/WeChat Payにリンクしてください。",
+      tipMeituan: "Meituanは多くのレストランで英語のメニュー翻訳を提供しています。",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "宿泊",
       aiAssistant: "AIアシスタント",
+      allRightsReserved: "All rights reserved.",
       attractions: "観光地",
       cities: "都市",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "文化のヒント",
       description: "中国探索の信頼できるガイド。AI駆動のレストラン推薦、都市ガイド、旅行のヒント。",
+      diningGuide: "飲食ガイド",
       emergency: "緊急連絡先",
       guides: "旅行ガイド",
+      guidesLabel: "Travel Guides",
       payment: "支払い",
+      privacy: "Privacy",
       resources: "リソース",
+      resourcesLabel: "Resources",
       restaurants: "レストラン",
+      terms: "Terms",
       transport: "交通",
-      viewAllCities: "すべての都市"
+      viewAllCities: "すべての都市",
+      visaGuide: "ビザガイド"
+    },
+    guide: {
+      attractionsPageTitle: "中国の主な観光スポット",
+      attractionsTitle: "中国の主な観光スポット",
+      beijingGuide: "北京",
+      foodGuide: "食事ガイド",
+      scamPrevention: "詐欺防止"
     },
     guidePage: {
       accommodationStageDescription: "高級ホテルから予算ホテルまで、あなたに合った宿泊を選ぼう。",
@@ -1830,7 +1923,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "ホテル、民宿、短期賃貸",
       accommodationTitleShort: "宿泊",
       attractionsSubtitle: "必見スポットと隠れた名所",
+      attractionsTitle: "主な観光スポット",
       backHome: "ホームに戻る",
+      beginnerDesc: "初めての旅行を自信を持って計画しましょう。",
+      beginnerTraveler: "初めて訪れる旅行者",
+      businessDesc: "会議、支払い、マナーに関するツール。",
+      businessTitle: "ビジネス旅行",
+      businessTraveler: "ビジネス旅行者",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "北京",
       cityChengdu: "成都",
       cityShanghai: "上海",
@@ -1841,6 +1941,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "通信",
       culturalWarningsSubtitle: "文化的タブーと重要ヒント",
       culturalWarningsTitleShort: "文化的タブー",
+      cultureTitle: "文化のヒント",
       departureStageDescription: "税還付、空港プロセス、お別れのヒント。",
       departureStageTitle: "出発",
       departureSubtitle: "税還付、空港、最終ヒント",
@@ -1858,6 +1959,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "緊急番号と病院",
       emergencyTitleShort: "緊急",
       emergencyTourism: "観光ホットライン",
+      foodTitle: "食事ガイド",
       home: "ホームに戻る",
       indexBusinessHeading: "🚀 ビジネス旅行ツール",
       indexBusinessSubtitle: "招待状からビジネスマナーまで — 中国でのビジネスに必要なすべて。",
@@ -1865,23 +1967,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "中国完全旅行ガイド — 出発準備から出境まで。",
       indexHeroTitle: "🇨🇳 中国完全旅行ガイド",
       indexStagesTitle: "12段階の旅",
+      longStay: "長期滞在",
+      longStayDesc: "ビザ、銀行口座、宿泊のガイドで快適に滞在しましょう。",
+      pageDescription: "中国旅行を計画、予約、楽しむために必要なすべて",
+      pageTitle: "中国旅行ガイド - ChinaConnect",
       paymentStageDescription: "支付宝、微信ペイ、銀聯カード、現金 — 中国での支払いのすべて。",
       paymentStageTitle: "支払い",
       paymentSubtitle: "モバイル決済、カード、現金",
+      paymentTitle: "支払いとお金",
       paymentTitleShort: "支払い",
       popularByCity: "都市別",
       quickBeijingDesc: "包括的な北京都市ガイドで中国の首都を探索。",
       quickFoodDesc: "ミシュラン星、黒珍珠レストラン、ローカルお気に入りを都市別に厳選。",
       quickScamDesc: "中国でよくある詐欺や観光トラブルから身を守る。",
+      safetyTitle: "安全",
       scamPreventionSubtitle: "一般的な詐欺から身を守る",
       scamPreventionTitleShort: "詐欺防止",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "価格透明性と値切りヒント",
       transparencyTitleShort: "透明性",
       transportStageDescription: "地下鉄、高速鉄道、タクシー、シェアサイクル — 中国を自由に移動。",
       transportStageTitle: "交通",
       transportSubtitle: "市内と都市間交通",
+      transportTitle: "移動手段",
       transportTitleShort: "交通",
       travelGuide: "中国旅行ガイド",
+      travelerType: "旅行者タイプ",
+      viewAll: "View all guides",
       viewAllBusinessTools: "すべてのビジネスツールを見る",
       viewAllBusinessToolsCta: "ビジネスエクスプレスへ →",
       viewAllBusinessToolsDesc: "詳細な統計とクイックガイド付きですべてのビジネスツールを見る。",
@@ -1890,23 +2003,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "ビザタイプ、申請プロセス、最新要件。",
       visaStageTitle: "ビザ",
       visaSubtitle: "ビザタイプ、申請プロセス、最新要件",
+      visaTitle: "ビザと入国",
       visaTitleShort: "ビザ"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "AIとチャット",
       citiesSubtitle: "古代の都から現代の大都市まで、包括的なガイドで中国最高の都市を発見。",
       citiesTitle: "都市を探す",
+      clearHistory: "Clear history",
       ctaSubtitle: "AIのおすすめで旅の計画を始めましょう。",
       ctaTitle: "中国探索の準備はできましたか?",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "北京を探索",
       exploreCities: "都市を探す",
+      exploreCityButton: "Explore City",
       exploreGuide: "完全ガイドを見る",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "素晴らしい旅に必要なすべて",
       featuresTitle: "中国旅行に必要なすべて",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "AIに旅程を相談",
       heroDesc: "ミシュラン・黒珍珠のレストラン、観光地、交通情報、緊急連絡先まで — AIと地元の人々によって厳選された情報をお届けします。",
       heroSubtitle: "中国の都市を巡る信頼できるガイド",
       heroTitle: "AIで中国を巡る",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "12の中国都市でミシュラン星付き・黒珍珠レストランを発見。",
       onboarding1Title: "美味しい食を発見",
       onboarding2Title: "AI搭載のヒント",
@@ -1914,14 +2043,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "完了",
       onboardingNext: "次へ",
       onboardingSkip: "スキップ",
+      pageDescription: "AIを活用した都市ガイドで中国を発見しましょう。北京、上海、広州、西安、成都などの12の主要都市で、ミシュランやブラックパール掲載のレストラン、観光スポット、交通情報、緊急連絡先などをご紹介します。",
       pageTitle: "ChinaConnect - 中国探索のためのAIガイド",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "最近見た",
       recommendedForYou: "あなたへのおすすめ",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "AIサポート",
       statsAttractions: "人気観光地",
       statsCities: "対応都市",
       statsRestaurants: "ミシュランレストラン",
-      viewAllCities: "すべての都市を見る"
+      viewAllCities: "すべての都市を見る",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "人気の目的地に基づく"
     },
     language: {
       chinese: "中国語",
@@ -1933,6 +2072,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "language.nativeName",
       switchTo: "切り替え"
     },
+    loginPage: {
+      pageDescription: "ChinaConnectにサインイン",
+      pageTitle: "サインイン - ChinaConnect"
+    },
     nav: {
       aiChat: "AIコンシェルジュ",
       attractions: "観光地",
@@ -1942,6 +2085,7 @@ export const translations: Record<Language, Translations> = {
       home: "ホーム",
       restaurants: "レストラン",
       selectLanguage: "言語を選択",
+      signIn: "Sign in",
       tagline: "AIと一緒に中国を探索"
     },
     notFound: {
@@ -1951,12 +2095,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "都市を探索",
       goHome: "ホームに戻る",
       heading: "ページが見つかりません",
+      homeButton: "Back to home",
       letsContinue: "中国探索を続けましょう",
       primary: "ホームに戻る",
-      title: "ページが見つかりません - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "ページが見つかりません - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "医療緊急事態、怪我",
+      availableOffline: "オフラインで利用可能",
+      bannerDesc: "緊急連絡先と重要な情報は引き続きご利用いただけます",
       bannerTitle: "現在オフライン",
+      emergencyNumbers: "緊急連絡先（中国）",
+      emergencyPhrases: "緊急時の簡単フレーズ",
+      fireDesc: "火災、救助、危険物",
+      lastSynced: "最終同期:",
       phrase1En: "こんにちは",
       phrase2En: "ありがとう",
       phrase3En: "すみません",
@@ -1964,6 +2126,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "助けて",
       phrase6En: "助けてください",
       phrase7En: "病院はどこですか?",
+      phrasesHelp: "一般的な緊急フレーズを表示",
+      phrasesTip: "助けが必要な場合、これらのフレーズを表示します",
+      policeDesc: "犯罪、緊急事態、公共の安全",
+      quickActions: "クイックアクション",
+      tapToCall: "番号をタップしてすぐに電話する",
       tipsHeading: "オフラインのヒント",
       tipsList1: "保存済みページは引き続きアクセス可能",
       tipsList2: "ネットワーク復旧後、コンテンツは自動更新",
@@ -1972,11 +2139,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "AIアシスタントはネット接続が必要",
       tipsList6: "レストラン詳細はオフラインで利用可能",
       title: "現在オフライン",
+      title2: "ChinaConnect緊急SOS - オフラインでも利用可能",
+      trafficDesc: "交通事故のみ",
       tryAgain: "再試行"
     },
     onboarding: {
       done: "Done",
       getStarted: "始める",
+      neverShow: "Don't show this again",
       next: "Next",
       skip: "Skip",
       step1Desc: "12の中国都市でミシュラン星付き・黒珍珠レストランを発見。",
@@ -1988,6 +2158,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "ChinaConnectへようこそ!"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "自動更新、いつでもキャンセル可能",
       billingAnnual: "年額",
       billingMonthly: "月額",
@@ -2005,6 +2176,7 @@ export const translations: Record<Language, Translations> = {
         name: "ビジネス",
         price: "¥3,000"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "購読がキャンセルされました",
       compareFeatures: {
         advancedTools: "高度な旅行ツール",
@@ -2019,6 +2191,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "各プランに含まれるものを明確に。",
       compareTitle: "機能比較",
+      ctaButton: "Get started",
       ctaPrimary: "無料で始める",
       ctaSecondary: "プランを見る",
       ctaSubtitle: "AIで中国旅行を計画中の何千人もの旅行者に参加。",
@@ -2036,14 +2209,44 @@ export const translations: Record<Language, Translations> = {
         name: "エクスプローラー",
         price: "¥500"
       },
+      faq: "FAQ",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "いつでも購読をキャンセルできますか?",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "プランを切り替えることはできますか?",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "無料版にはどのような制限がありますか?",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "どの支払い方法がサポートされていますか?",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "データは安全ですか?",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "学生割引はありますか?",
       faqSubtitle: "まだ疑問がありますか?FAQをご覧ください。",
       faqTitle: "よくある質問",
+      featureAdvancedTools: "高度な旅行ツール",
+      featureAiRequestsBusiness: "無制限のAI会話",
+      featureAiRequestsExplorer: "AIリクエスト20回/月",
+      featureAiRequestsFree: "AIリクエスト5回/月",
+      featureAiRequestsPro: "AIリクエスト100回/月",
+      featureAllTravelerFeatures: "すべてのTraveler機能",
+      featureApi: "APIアクセス",
+      featureBasicPlanning: "基本的な旅行計画",
+      featureBusinessTemplates: "ビジネステンプレート",
+      featureCancelAnytime: "いつでもキャンセル",
+      featureConversationHistory: "会話履歴",
+      featureCustomIntegrations: "カスタム統合",
+      featureDedicated: "専用サポート",
+      featureExportPdf: "PDFエクスポート",
+      featureMultiCity: "複数都市の旅程",
+      featurePdfExport: "PDFエクスポート",
+      featurePremiumCustomization: "プレミアムカスタマイズ",
+      featurePrioritySupport: "優先サポート",
+      featureSaveItineraries: "旅程を保存",
+      featureSecurePayments: "安全な支払い",
+      featureTeamCollab: "チームコラボレーション",
+      featureTeamManagement: "チーム管理",
+      featureViewItineraries: "旅程を表示",
       free: {
         description: "中国のすべての都市と基本AI機能を無料で探索。",
         feature1: "月5回のAIリクエスト",
@@ -2054,24 +2257,40 @@ export const translations: Record<Language, Translations> = {
         name: "無料"
       },
       freeForever: "ずっと無料",
+      heroBadge: "Pricing",
       heroSubtitle: "無料閲覧からプロプランニングまで、旅のペースに合ったプラン。",
       heroTitle: "あなたの中国探索プランを選択",
+      moneyBack: "30-day refund",
+      planBusiness: "ビジネス",
+      planExplorer: "エクスプローラー",
+      planFree: "無料",
+      planPro: "プロ",
+      planTraveler: "トラベラー",
       popularBadge: "一番人気",
       priceFree: "¥0",
+      pro: {
+        description: "アクティブな旅行者向け"
+      },
       saveBadge: "20%節約",
       savingsHint: "年払いで20%節約",
+      securePayment: "Secure payment",
       subscribeNow: "今すぐ購読",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "アメリカ",
       testimonial1Role: "エクスプローラープラン",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "Li Wei T.",
       testimonial2Country: "イギリス",
       testimonial2Role: "ビジネスプラン",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "ドイツ",
       testimonial3Role: "トラベラープラン",
+      testimonials: "旅行者の声",
       testimonialsSubtitle: "数千人の旅行者がChinaConnectの価値を発見。",
       testimonialsTitle: "旅行者の声",
+      title: "料金",
       traveler: {
         annualNote: "年額¥9,600(¥2,400節約)",
         description: "アクティブな旅行者に最適:無制限AI、ルートプランニング、PDFエクスポート。",
@@ -2088,11 +2307,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "30日間返金保証",
         securePayment: "安全な支払い"
       },
+      trustCancelAnytime: "いつでもキャンセル",
+      trustInstantAccess: "即時アクセス",
+      trustSecurePayments: "安全な支払い",
       trustedBy: "世界中の旅行者から信頼",
       unlimited: "無制限"
     },
     profilePage: {
-      title: "マイプロフィール - ChinaConnect"
+      displayName: "表示名",
+      heading: "Profile",
+      pageTitle2: "マイプロファイル",
+      save: "変更を保存",
+      saved: "保存済み！",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "マイプロフィール - ChinaConnect",
+      uploadAvatar: "アバターをアップロード"
     },
     recents: {
       clearAll: "recents.clearAll",
@@ -2129,6 +2358,22 @@ export const translations: Record<Language, Translations> = {
       username: "ユーザー名",
       usernamePlaceholder: "表示名"
     },
+    registerPage: {
+      pageDescription: "ChinaConnectアカウントを作成",
+      pageTitle: "新規登録 - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "住所",
       avgPrice: "平均価格",
@@ -2154,12 +2399,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "友達と共有"
     },
     userPage: {
+      heading: "プロフィール",
+      pageTitle2: "ユーザー情報",
       title: "ユーザープロフィール - ChinaConnect"
     }
   },
   ko: {
     accountPage: {
       active: "활성",
+      activeLabel: "활성",
       aiRequestsThisMonth: "이번 달 AI 요청",
       alertSignOutError: "구독 관리를 열 수 없습니다. 지원팀에 문의하세요.",
       currentPlan: "현재 플랜",
@@ -2171,6 +2419,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "최근 주문 없음",
       emptySavedRoutes: "저장된 경로 없음",
       emptySavedRoutesHint: "저장된 경로가 없습니다. AI와 대화하여 경로를 만들어 보세요!",
+      explorerBadge: "탐험가",
       loading: "계정 로딩 중…",
       manageSubscription: "구독 관리",
       membership: "멤버십",
@@ -2180,6 +2429,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "상태",
       orderHeaderType: "유형",
       pageTitle: "내 계정 - ChinaConnect",
+      pageTitleSuffix: "내 계정 - ChinaConnect",
       pointsUnit: "포인트",
       renewsOn: "갱신일",
       savedLocally: "로컬에만 저장됨",
@@ -2190,27 +2440,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "로그인 필요",
       signInRequiredDesc: "계정을 보려면 로그인하세요.",
       signOut: "로그아웃",
+      statAiUsage: "오늘의 AI 사용량",
+      statFavorites: "즐겨찾기",
       statSavedRoutes: "저장된 경로",
+      subtitle: "구독, 즐겨찾기 및 저장된 경로를 관리하세요.",
       syncedToCloud: "클라우드에 동기화됨",
       tabBilling: "청구",
+      tabFavorites: "즐겨찾기",
+      tabOrders: "주문",
       tabOverview: "개요",
       tabPlans: "플랜",
+      tabRoutes: "경로",
       tabUsage: "사용량",
+      title: "내 계정",
       untitledRoute: "제목 없는 경로",
       upgrade: "업그레이드",
       usageDailyAi: "일일 AI 사용",
       usageFavorites: "즐겨찾기 사용",
       usageSavedRoutes: "저장된 경로 사용",
+      userBadge: "사용자",
       walletBalance: "지갑 잔액"
+    },
+    ai: {
+      send: "보내기",
+      thinking: "생각 중..."
     },
     aiPage: {
       authFailed: "인증 실패",
       authGateSignupTitle: "계정 만들기",
       authGateTitle: "채팅하려면 로그인",
+      chatInputPlaceholder: "레스토랑, 교통편, 명소에 대해 문의하세요...",
+      conversationHistory: "대화 기록",
       conversationsTitle: "대화",
       deleteConfirm: "이 대화를 삭제하시겠습니까?",
       deleteTitle: "삭제",
       emailPlaceholder: "you@example.com",
+      exportPdf: "PDF 내보내기",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "이미 계정이 있으신가요?",
@@ -2219,13 +2484,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "사이드바 숨기기",
       messageLabel: "메시지",
       messagesLabel: "메시지",
+      newChat: "새 채팅",
       newChatButton: "+ 새 채팅",
       noAccountPrompt: "계정이 없으신가요?",
       noConversationsYet: "아직 대화가 없습니다",
       orContinueWith: "또는",
+      pageDescription: "중국 여행에 대해 무엇이든 물어보세요.",
+      pageTitle: "AI 여행 컨시어지 - ChinaConnect",
       passwordPlaceholder: "비밀번호 (최소 6자)",
       promptsSubtitle: "프롬프트를 선택하거나 아래에 직접 입력하세요",
       promptsTitle: "이렇게 물어보세요",
+      saveRoute: "경로 저장",
+      sendButton: "보내기",
       showSidebarTitle: "대화 표시",
       signInButton: "로그인",
       signUpButton: "계정 만들기",
@@ -2233,27 +2503,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "AI가 중국 여행 계획을 도와줍니다",
       switchToSignIn: "로그인",
       switchToSignUp: "만들기",
-      title: "AI 어시스턴트"
+      thinking: "생각 중...",
+      title: "AI 어시스턴트",
+      upgradePrompt: "더 많은 AI 요청을 위해 가입하세요.",
+      usageToday: "오늘 사용량"
     },
     attractions: {
       allCities: "명소가 있는 모든 도시",
+      appSubtitle: "이동 및 명소 찾기에 유용한 앱",
+      appTitle: "여행 계획하기",
+      attractionCount: "{count}개의 명소",
       browseCategory: "카테고리로 찾아보기",
+      citiesCount: "{count}개의 도시",
+      diversityTypes: "역사적, 문화적, 자연적, 현대적",
+      featured: "추천 도시",
       featuredCities: "주요 도시",
+      heroEyebrow: "목적지로 찾아보기",
+      openCity: "도시 열기",
+      pageDescription: "중국의 필수 관광지 - 고대 랜드마크부터 자연의 경이로움까지",
+      pageTitle: "중국 명소 - ChinaConnect",
       subtitle: "꼭 방문해야 할 명소 — 고대 랜드마크부터 자연의 경이로움까지",
-      title: "중국 명소"
+      title: "중국 명소",
+      viewAll: "모든 명소 보기"
     },
     auth: {
+      continueWithGithub: "GitHub로 계속하기",
+      continueWithGoogle: "Google로 계속하기",
+      email: "이메일",
       myAccount: "내 계정",
+      needHelp: "로그인에 도움이 필요하신가요?",
+      orContinueWithEmail: "이메일로 계속하기",
+      password: "비밀번호",
+      profile: "프로필",
       profileCenter: "프로필 센터",
       signIn: "로그인",
-      signOut: "로그아웃"
+      signInButton: "로그인",
+      signOut: "로그아웃",
+      signOutConfirm: "ChinaConnect에서 로그아웃하시겠습니까?",
+      subtitle: "즐겨찾기 저장, 여행 계획 및 AI와 채팅.",
+      title: "ChinaConnect에 로그인"
     },
     authPage: {
       authTitle: "로그인/등록 - ChinaConnect",
       callbackTitle: "로그인 중…",
+      continueWithEmail: "이메일로 계속하기",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "문제가 발생했습니다. 다시 시도해 주세요.",
       errorTitle: "인증 실패",
+      forgotPassword: "비밀번호를 잊으셨나요?",
       loginTitle: "로그인 - ChinaConnect",
-      signingYouIn: "로그인 중…"
+      needAccount: "계정이 없으신가요?",
+      passwordPlaceholder: "비밀번호",
+      signInButton: "로그인",
+      signInError: "로그인에 실패했습니다. 다시 시도해주세요.",
+      signUpButton: "가입하기",
+      signUpError: "가입에 실패했습니다. 다시 시도해주세요.",
+      signingYouIn: "로그인 중…",
+      successDesc: "이제 리디렉션합니다...",
+      successTitle: "다시 오신 것을 환영합니다!"
     },
     businessGuidePage: {
       backToGuide: "가이드로 돌아가기",
@@ -2278,77 +2585,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← 가격으로 돌아가기",
+      continueButton: "계정으로 계속하기",
       description: "구독이 성공적으로 활성화되었습니다",
       errorDesc: "결제를 처리할 수 없습니다. 다시 시도하거나 지원팀에 문의하세요.",
       errorTitle: "문제가 발생했습니다",
+      processing: "결제 처리 중...",
       processingDesc: "구독을 확인 중입니다. 잠시 기다려 주세요.",
       startPlanning: "계획 시작",
       successAccess: "이제 새 플랜의 모든 기능에 액세스할 수 있습니다.",
       successDesc: "구독이 활성화되었습니다.",
       successTitle: "결제 성공!",
+      thankYou: "ChinaConnect를 선택해 주셔서 감사합니다.",
       title: "결제 성공 - ChinaConnect",
       viewAccount: "계정 보기"
     },
     cities: {
       attractions: "명소",
+      citiesCount: "도시",
+      citiesInChina: "중국의 도시",
       culturalTips: "문화 팁",
       emergency: "긴급",
+      exploreAll: "모든 도시 탐색",
       exploreGuide: "가이드 탐험",
+      filterATier: "A급",
+      filterAll: "전체",
+      filterDTier: "D급",
+      filterSTier: "S급",
+      headerSubtitle: "고대 수도부터 현대의 메가시티까지 - 당신의 목적지를 선택하세요.",
+      headerTitle: "중국의 도시 탐험",
       hotels: "호텔",
+      noResults: "필터에 맞는 도시가 없습니다.",
       openingHours: "운영시간",
+      pageDescription: "ChinaConnect에서 제공하는 모든 중국 도시 탐색 - 고대 수도부터 현대적인 대도시까지. S급 프리미엄 도시, A급 세미 프리미엄, D급 주문형 도시.",
+      pageTitle: "모든 도시 탐색 - ChinaConnect",
       payment: "결제",
+      population: "인구",
       recommendedTime: "권장 방문 시간",
+      region: "지역",
       restaurants: "레스토랑",
+      searchPlaceholder: "도시 검색...",
       subtitle: "중국 12개 주요 도시의 심층 가이드",
       ticketPrice: "티켓",
       title: "중국 도시",
-      transport: "교통"
+      transport: "교통",
+      viewCity: "도시 보기"
+    },
+    city: {
+      beijing: {
+        name: "베이징"
+      },
+      chengdu: {
+        name: "청두"
+      },
+      chongqing: {
+        name: "충칭"
+      },
+      guangzhou: {
+        name: "광저우"
+      },
+      guilin: {
+        name: "구이린"
+      },
+      hangzhou: {
+        name: "항저우"
+      },
+      lijiang: {
+        name: "리장"
+      },
+      qingdao: {
+        name: "칭다오"
+      },
+      shanghai: {
+        name: "상하이"
+      },
+      shenzhen: {
+        name: "선전"
+      },
+      suzhou: {
+        name: "쑤저우"
+      },
+      xian: {
+        name: "시안"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "전체",
+      categoryLabel: "카테고리",
+      disclaimer: "개장 시간, 입장료 및 전화번호는 변경될 수 있습니다. 명소의 공식 웹사이트를 통해 확인하거나 미리 전화하시기 바랍니다.",
+      openOnMap: "지도에서 열기",
+      openingHours: "개장 시간",
+      subtitle: "놓치지 말아야 할 랜드마크, 박물관 및 자연의 경이.",
+      ticketPrice: "입장료",
+      tipsHeader: "팁",
+      title: "{city}의 명소",
+      viewAll: "{city}의 모든 명소 보기",
+      viewDetails: "자세히 보기",
+      viewMore: "더 많은 명소 보기"
+    },
+    cityFood: {
+      avgPrice: "평균 가격",
+      cuisine: "요리",
+      disclaimer: "전화번호와 주소는 변경될 수 있습니다. 레스토랑의 공식 채널을 통해 확인하거나 미리 전화하시기 바랍니다.",
+      filterAll: "전체",
+      filterBlackPearl: "블랙 펄",
+      filterBudget: "예산",
+      filterLocal: "현지",
+      filterLocalFavorites: "지역별 인기",
+      filterMichelin: "미쉐린",
+      filteringLabel: "필터링:",
+      googleMaps: "구글 지도",
+      signatureDishes: "시그니처 요리",
+      subtitle: "미쉐린 스타, 블랙 펄의 추천 및 현지 보석 같은 곳.",
+      title: "{city}의 레스토랑",
+      viewAll: "{city}의 모든 레스토랑 보기",
+      viewDetails: "자세히 보기"
+    },
+    cityHotels: {
+      bookCta: "호텔 세부 정보 보기",
+      bookNow: "호텔 보기",
+      filterAll: "모든 카테고리",
+      pricePerNight: "1박당",
+      stars: "성급",
+      subtitle: "부티크 호텔부터 국제 체인까지 - 여행에 적합한 장소를 찾아보세요.",
+      title: "{city}의 호텔"
     },
     cityPage: {
+      appCount: "{count}개의 필수 앱",
+      appsSubtitle: "도착 전에 다운로드하세요.",
+      area: "지역",
+      attractionCount: "{count}개의 명소",
       attractionsExploreCount: "{city} — 탐험할 {count}곳",
       attractionsHeading: "인기 명소",
       attractionsSubtitle: "이 도시에서 가장 볼 가치가 있는 곳",
+      bestTime: "방문하기 가장 좋은 시기",
       bestTimeHeading: "최적 방문 시기",
+      bookHotelCta: "{city}에서 호텔 찾기",
+      bookTourCta: "{city}에서 투어 예약하기",
+      citySubtitle: "{city}, 중국을 위한 완벽한 여행 가이드. 최고의 레스토랑, 명소, 호텔 및 여행 팁을 찾으세요.",
+      connectivitySubtitle: "데이터로 연결 상태 유지하기",
+      contactCount: "{count}개의 연락처",
+      cultureSubtitle: "지역 관습 및 예절",
+      cultureSubtitleDynamic: "{city}의 필수 문화 정보",
+      currency: "통화",
       dataSourcesDesc: "레스토랑 데이터는 공개 리뷰와 현지 추천에서 가져옵니다.",
       dataSourcesHeading: "데이터 소스",
+      downloadBefore: "중국 도착 전에 이 앱들을 다운로드하세요.",
+      elevation: "고도",
+      emergencySubtitle: "중요한 전화번호 및 대사관",
+      emergencySubtitleDynamic: "{city}의 중요한 전화번호",
+      esimDescription: "eSIM은 중국에서 데이터를 얻는 가장 쉬운 방법입니다. 물리적 SIM 카드가 필요하지 않으며 도착 즉시 활성화할 수 있습니다.",
+      esimRecommended: "eSIM (추천)",
+      essentialAppsFor: "{city}를 위한 필수 앱",
+      essentialCultural: "{city}를 위한 필수 문화 지식",
+      exploreOnMap: "지도에서 탐색하기",
       foodHeading: "음식 하이라이트",
       foodHighlightsHeading: "음식 하이라이트",
       foodHighlightsSubtitle: "꼭 먹어야 할 시그니처 요리와 레스토랑",
       foodSubtitle: "미�랭, 흑진주, 로컬 인기",
+      gettingAround: "이동 방법",
       gettingTo: "가는 방법",
+      heroEyebrow: "여행 가이드",
       home: "홈으로",
+      hotelCount: "{count}개의 호텔",
       hotelsCountUnit: "개 호텔",
       hotelsHeading: "숙박 추천",
+      hotelsSubtitle: "부티크 호텔부터 국제 체인까지",
+      importantNumbers: "{city}의 중요한 전화번호",
+      intro: "환영합니다, {city}는 중국에서 가장 매력적인 목적지 중 하나입니다.",
+      language: "언어",
+      moreCities: "다른 도시들",
+      nextCity: "다음 도시",
       noHotels: "호텔 데이터 없음",
       noHotelsDesc: "이 도시에는 추천 호텔이 없습니다. 다른 카테고리를 시도해 보세요.",
       noResults: "결과 없음",
       noResultsDesc: "다른 검색 조건을 시도해 보세요.",
+      openFullMap: "전체 지도 열기",
+      overviewSubtitle: "떠나기 전에 알아야 할 모든 것",
+      pageTitleSuffix: "여행 가이드 - ChinaConnect",
+      paymentSubtitle: "현금, 카드, 모바일 지갑 및 ATM 접근",
       phoneIcon: "전화",
+      population: "인구",
+      previousCity: "이전 도시",
+      proTipBooking: "프로 팁: 최고의 요금을 위해 호텔을 2-3주 전에 예약하세요.",
+      proTipEsim1: "eSIM은 휴대전화가 이를 지원하는 경우 (iPhone XS 이상 및 대부분의 안드로이드 플래그십)에 가장 잘 작동합니다.",
+      proTipEsim2: "중국 도착 전에 eSIM 앱을 다운로드하세요.",
+      proTipEsim3: "Airalo 및 Holafly는 중국 전용 요금제로 무제한 데이터 옵션을 제공합니다.",
+      proTips: "프로 팁",
+      quickFacts: "주요 사실",
       quickFactsHeading: "도시 빠른 사실",
+      region: "지역",
+      restaurantCount: "{count}개의 레스토랑",
+      sectionApps: "필수 앱",
+      sectionAttractions: "주요 명소",
+      sectionConnectivity: "SIM & eSIM",
+      sectionCulture: "문화 팁",
+      sectionEmergency: "긴급 연락처",
+      sectionFood: "먹을 곳",
+      sectionHotels: "머무를 곳",
+      sectionOverview: "개요",
+      sectionPayment: "결제 및 돈",
+      sectionTransport: "이동 방법",
+      sectionVisa: "비자 및 입국",
+      sosTip: "도착 전에 이 번호들을 저장하세요 - 외딴 지역에서는 휴대전화 서비스가 제한될 수 있습니다.",
+      switchToEnglishMode: "중국어 인터페이스가 보이면 앱 설정에서 영어 모드로 전환하세요. Alipay와 WeChat Pay 모두 외국 신용 카드를 지원합니다.",
+      tabApps: "앱",
+      tabAttractions: "명소",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "문화",
+      tabEmergency: "긴급 상황",
+      tabFood: "음식",
+      tabHotels: "호텔",
+      tabOverview: "개요",
+      tabPayment: "결제",
+      tabTransport: "교통",
+      timezone: "시간대",
+      tipCount: "{count}개의 팁",
       topHighlightsHeading: "도시 하이라이트",
       transportSubtitle: "도착 및 시내 교통",
-      viewAllHotels: "모든 호텔 보기"
+      travelTo: "{city}로 여행하기",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "모든 호텔 보기",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "전체",
       back: "뒤로",
+      bookNow: "Book now",
       cancel: "취소",
       close: "닫기",
       confirm: "확인",
+      continue: "계속하기",
+      discover: "Discover",
+      done: "완료",
       error: "오류",
+      explore: "Explore",
       filter: "필터",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "로딩 중…",
       next: "다음",
       open: "열기",
       previous: "이전",
+      readMore: "Read more",
+      required: "필수",
       retry: "재시도",
+      save: "저장",
       search: "검색…",
       seeMore: "더 보기",
+      signUpFree: "Sign up free",
       sort: "정렬",
-      viewAll: "모두 보기"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "모두 보기",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "구급차",
+      callButton: "전화 걸기",
       communication1: "기본 중국어 표현 몇 개 배우기",
       communication2: "번역 앱 다운로드",
       communication3: "대사관 전화 저장",
@@ -2358,9 +2880,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "중국 전역에서 사용되는 핵심 긴급 번호.",
       embassyDesc: "주요 국가의 주중 대사관 연락처 정보.",
       embassyTitle: "대사관",
+      findEmbassy: "자신의 대사관 찾기",
       fire: "소방",
       gps: "GPS 좌표",
       gpsDesc: "긴급 연락을 위해 실시간 위치 저장.",
+      gpsLocator: "GPS 위치",
       heroHeading: "긴급 연락처 및 도움",
       hospitalCommon: "종합 병원",
       hospitalInternational: "국제 클리닉",
@@ -2400,6 +2924,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "긴급 표현",
       oneTapCalls: "원터치 통화",
       oneTapDesc: "탭 한 번으로 긴급 번호에 전화.",
+      pageDescription: "중국 여행자를 위한 중요한 전화번호",
       pageTitle: "긴급 연락처 및 표현 - ChinaConnect",
       pharmaciesTitle: "약국",
       pharmacyChains: "체인 약국",
@@ -2417,6 +2942,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "여행 보험 가입",
       preparedness4: "가족에게 일정 공유",
       preparednessTitle: "사전 준비",
+      quickDial: "빠른 다이얼",
       safetyTipsTitle: "안전 팁",
       sosButtonDesc: "3초간 길게 눌러 자동으로 긴급 연락처에 위치 전송.",
       sosButtonTitle: "SOS 버튼",
@@ -2426,7 +2952,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "병원 길찾기",
       subtitle: "중국 긴급 번호, 병원, 대사관 — 필요할 때를 대비해 저장하세요.",
       title: "긴급 연락처",
-      traffic: "교통 사고"
+      touristHotline: "관광객 핫라인",
+      traffic: "교통 사고",
+      universalSection: "일반 번호",
+      viewAllContacts: "모든 연락처 보기"
     },
     empty: {
       addSome: "탐색하고 즐겨찾기를 저장하세요!",
@@ -2445,7 +2974,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "콘텐츠 로드 실패",
       network: "errors.network",
       networkError: "네트워크 오류. 연결을 확인하세요.",
+      notFound: "Resource not found.",
       somethingWrong: "문제가 발생했습니다",
+      timeout: "Request timed out.",
       unauthorized: "errors.unauthorized"
     },
     features: {
@@ -2470,22 +3001,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "아마맵 길찾기",
       back: "뒤로",
       backToCity: "{city}로 돌아가기",
+      bottomCtaDesc: "중국 도시 목록을 둘러보고 더 많은 목적지를 탐험하세요.",
       callPhone: "전화 걸기",
+      citiesCount: "Cities",
       citiesUnit: "도시",
       cityEmpty: "이 도시의 음식이 아직 없습니다",
       cityEmptyDesc: "곧 더 많은 레스토랑이 추가됩니다.",
       cityEmptySubtitle: "이 도시에는 레스토랑이 아직 추가되지 않았습니다",
       dataSourcesDesc: "레스토랑 데이터는 공개 리뷰와 현지 추천에서 가져옵니다.",
       dataSourcesHeading: "데이터 소스",
+      empty: "No cities match this filter.",
       emptyCta: "필터 지우기",
       emptyDesc: "이 필터 조건에 맞는 레스토랑이 없습니다.",
       emptyTitle: "레스토랑 없음",
+      essentialFoodApps: "필수 음식 앱",
+      essentialFoodAppsDesc: "음식 배달을 주문하고 영어 메뉴가 있는 현지 레스토랑을 발견하려면 이러한 앱을 다운로드하세요.",
       exploreFood: "음식 탐험",
+      filterAll: "All",
       filterBlackPearl: "흑진주",
       filterBudget: "가성비",
       filterCasual: "캐주얼",
       filterLocal: "로컬 추천",
       filterMichelin: "미슐랭",
+      filterStreetFood: "Street Food",
       filteringLabel: "필터",
       heroCityFood: "{city}의 음식",
       indexTitle: "🍜 중국 음식 지도",
@@ -2493,25 +3031,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "길찾기",
       noCityTitle: "이 도시의 음식이 아직 없습니다",
       otherRestaurants: "다른 레스토랑",
+      pageDescription: "중국인이 가장 사랑하는 요리, 큐레이팅된 도시 및 큐레이팅된 레스토랑을 발견하세요.",
+      pageTitle: "중국 음식 지도 - ChinaConnect",
       perPerson: "/인",
+      proTipsFoodApps: "음식 앱을 위한 전문가 팁",
       restaurantsUnit: "레스토랑",
       showingCount: "표시",
-      subtitle: "현지인이 도시별로 엄선한 중국에서 가장 사랑받는 음식을 발견하세요."
+      subtitle: "현지인이 도시별로 엄선한 중국에서 가장 사랑받는 음식을 발견하세요.",
+      tipDianping: "Dianping은 영어 리뷰로 현지인들이 좋아하는 곳을 찾는 데 좋습니다.",
+      tipEleme: "Ele.me는 가장 넓은 배달 범위를 제공하지만 중국어로 기본 설정될 수 있습니다.",
+      tipLinkCard: "주문을 하기 전에 Alipay/WeChat Pay에 외국 카드를 연결하세요.",
+      tipMeituan: "Meituan은 많은 레스토랑에 대해 영어 메뉴 번역을 제공합니다.",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "숙박",
       aiAssistant: "AI 어시스턴트",
+      allRightsReserved: "All rights reserved.",
       attractions: "명소",
       cities: "도시",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "문화 팁",
       description: "중국 탐험의 신뢰할 수 있는 가이드. AI 기반 레스토랑 추천, 도시 가이드, 여행 팁.",
+      diningGuide: "미식 가이드",
       emergency: "긴급 연락처",
       guides: "여행 가이드",
+      guidesLabel: "Travel Guides",
       payment: "결제",
+      privacy: "Privacy",
       resources: "자료",
+      resourcesLabel: "Resources",
       restaurants: "레스토랑",
+      terms: "Terms",
       transport: "교통",
-      viewAllCities: "모든 도시 보기"
+      viewAllCities: "모든 도시 보기",
+      visaGuide: "비자 가이드"
+    },
+    guide: {
+      attractionsPageTitle: "중국 최고의 명소",
+      attractionsTitle: "중국 최고의 명소",
+      beijingGuide: "베이징",
+      foodGuide: "음식 가이드",
+      scamPrevention: "사기 방지"
     },
     guidePage: {
       accommodationStageDescription: "럭셔리 호텔부터 예산 호텔까지, 당신에게 맞는 숙소를 선택하세요.",
@@ -2519,7 +3100,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "호텔, 게스트하우스, 단기 임대",
       accommodationTitleShort: "숙박",
       attractionsSubtitle: "필수 방문 장소와 숨겨진 보석",
+      attractionsTitle: "최고의 명소",
       backHome: "홈으로",
+      beginnerDesc: "첫 여행을 자신 있게 계획하세요.",
+      beginnerTraveler: "처음 방문하는 여행자",
+      businessDesc: "회의, 결제 및 예절을 위한 도구.",
+      businessTitle: "비즈니스 여행",
+      businessTraveler: "비즈니스 여행자",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "베이징",
       cityChengdu: "청두",
       cityShanghai: "상하이",
@@ -2530,6 +3118,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "통신",
       culturalWarningsSubtitle: "문화 금기와 중요한 팁",
       culturalWarningsTitleShort: "문화 금기",
+      cultureTitle: "문화 팁",
       departureStageDescription: "세금 환급, 공항 절차, 작별 팁.",
       departureStageTitle: "출국",
       departureSubtitle: "세금 환급, 공항, 최종 팁",
@@ -2547,6 +3136,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "긴급 번호 및 병원",
       emergencyTitleShort: "긴급",
       emergencyTourism: "관광 핫라인",
+      foodTitle: "음식 가이드",
       home: "홈으로",
       indexBusinessHeading: "🚀 비즈니스 여행 도구",
       indexBusinessSubtitle: "초청장에서 비즈니스 매너까지 — 중국에서 사업을 하는 데 필요한 모든 것.",
@@ -2554,23 +3144,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "중국 완전 여행 가이드 — 출발 준비부터 출국까지.",
       indexHeroTitle: "🇨🇳 중국 완전 여행 가이드",
       indexStagesTitle: "12단계 여정",
+      longStay: "장기 체류",
+      longStayDesc: "비자, 은행 업무 및 숙박 가이드를 통해 정착하세요.",
+      pageDescription: "중국 여행을 계획, 예약 및 즐기는 데 필요한 모든 것",
+      pageTitle: "중국 여행 가이드 - ChinaConnect",
       paymentStageDescription: "알ipay, 위챗페이, UnionPay 카드, 현금 — 중국 결제의 모든 것.",
       paymentStageTitle: "결제",
       paymentSubtitle: "모바일 결제, 카드, 현금",
+      paymentTitle: "결제 및 돈",
       paymentTitleShort: "결제",
       popularByCity: "도시별",
       quickBeijingDesc: "종합 베이징 도시 가이드로 중국의 수도를 탐험하세요.",
       quickFoodDesc: "미슐랭 별, 흑진주 레스토랑, 로컬 인기 — 도시별로 엄선.",
       quickScamDesc: "중국에서 흔한 사기와 관광 함정으로부터 자신을 보호하세요.",
+      safetyTitle: "안전",
       scamPreventionSubtitle: "흔한 사기로부터 자신을 보호",
       scamPreventionTitleShort: "사기 방지",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "가격 투명성 및 흥정 팁",
       transparencyTitleShort: "투명성",
       transportStageDescription: "지하철, 고속철도, 택시, 공유 자전거 — 중국을 자유롭게 이동하세요.",
       transportStageTitle: "교통",
       transportSubtitle: "시내 및 시외 교통",
+      transportTitle: "이동 방법",
       transportTitleShort: "교통",
       travelGuide: "중국 여행 가이드",
+      travelerType: "여행자 유형",
+      viewAll: "View all guides",
       viewAllBusinessTools: "모든 비즈니스 도구 보기",
       viewAllBusinessToolsCta: "비즈니스 익스프레스로 →",
       viewAllBusinessToolsDesc: "상세 통계와 빠른 가이드로 모든 비즈니스 도구를 확인하세요.",
@@ -2579,23 +3180,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "비자 유형, 신청 절차, 최신 요건.",
       visaStageTitle: "비자",
       visaSubtitle: "비자 유형, 신청 절차, 최신 요건",
+      visaTitle: "비자 및 입국",
       visaTitleShort: "비자"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "AI와 채팅",
       citiesSubtitle: "고대 수도부터 현대 대도시까지, 종합 가이드로 중국의 최고 도시를 발견하세요.",
       citiesTitle: "도시 탐험",
+      clearHistory: "Clear history",
       ctaSubtitle: "AI 추천으로 여행 계획을 시작하세요.",
       ctaTitle: "중국을 탐험할 준비가 되셨나요?",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "베이징 탐험",
       exploreCities: "도시 탐험",
+      exploreCityButton: "Explore City",
       exploreGuide: "완전 가이드 보기",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "훌륭한 여행에 필요한 모든 것",
       featuresTitle: "중국 여행에 필요한 모든 것",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "AI에게 여행 조언 묻기",
       heroDesc: "미슐랭·흑진주 레스토랑, 명소, 교통 팁, 긴급 연락처까지 — AI와 현지인이 큐레이션.",
       heroSubtitle: "중국 최고의 도시를 안내하는 신뢰할 수 있는 가이드",
       heroTitle: "AI로 중국을 안내합니다",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "12개 중국 도시에서 미슐랭 별·흑진주 레스토랑을 찾으세요.",
       onboarding1Title: "훌륭한 음식 발견",
       onboarding2Title: "AI 기반 팁",
@@ -2603,14 +3220,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "완료",
       onboardingNext: "다음",
       onboardingSkip: "건너뛰기",
+      pageDescription: "AI 기반 도시 가이드와 함께 중국을 발견하세요. 북경, 상해, 광저우, 서안, 성도 등 12개 주요 중국 도시에서 최고의 레스토랑(미쉐린 & 블랙펄), 명소, 교통 정보 및 비상 연락처를 찾아보세요.",
       pageTitle: "ChinaConnect - 중국 탐험을 위한 AI 가이드",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "최근 본 항목",
       recommendedForYou: "맞� 추천",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "AI 지원",
       statsAttractions: "인기 명소",
       statsCities: "커버 도시",
       statsRestaurants: "미�랭 레스토랑",
-      viewAllCities: "모든 도시 보기"
+      viewAllCities: "모든 도시 보기",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "인기 있는 목적지에 기반"
     },
     language: {
       chinese: "중국어",
@@ -2622,6 +3249,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "language.nativeName",
       switchTo: "전환"
     },
+    loginPage: {
+      pageDescription: "ChinaConnect에 로그인하세요",
+      pageTitle: "로그인 - ChinaConnect"
+    },
     nav: {
       aiChat: "AI 어시스턴트",
       attractions: "명소",
@@ -2631,6 +3262,7 @@ export const translations: Record<Language, Translations> = {
       home: "홈",
       restaurants: "음식",
       selectLanguage: "언어 선택",
+      signIn: "Sign in",
       tagline: "AI와 함께 중국을 탐험"
     },
     notFound: {
@@ -2640,12 +3272,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "도시 탐험",
       goHome: "홈으로 돌아가기",
       heading: "페이지를 찾을 수 없음",
+      homeButton: "Back to home",
       letsContinue: "중국 탐험을 계속해 �시다",
       primary: "홈으로 돌아가기",
-      title: "페이지를 찾을 수 없음 - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "페이지를 찾을 수 없음 - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "응급 의료 상황, 부상",
+      availableOffline: "오프라인 사용 가능",
+      bannerDesc: "비상 연락처 및 필수 정보는 여전히 사용 가능합니다",
       bannerTitle: "현재 오프라인",
+      emergencyNumbers: "긴급 전화번호 (중국)",
+      emergencyPhrases: "긴급 상황 빠른 문구",
+      fireDesc: "화재, 구조, 유해 물질",
+      lastSynced: "마지막 동기화:",
       phrase1En: "안녕하세요",
       phrase2En: "감사합니다",
       phrase3En: "죄송합니다",
@@ -2653,6 +3303,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "도와주세요",
       phrase6En: "도움이 필요해요",
       phrase7En: "병원이 어디예요?",
+      phrasesHelp: "일반적인 긴급 문구 표시",
+      phrasesTip: "도움이 필요할 때 이 문구들을 사용하세요",
+      policeDesc: "범죄, 응급 상황, 공공 안전",
+      quickActions: "빠른 조치",
+      tapToCall: "번호를 눌러 즉시 전화 걸기",
       tipsHeading: "오프라인 팁",
       tipsList1: "저장된 페이지는 계속 액세스 가능",
       tipsList2: "네트워크 복구 후 콘텐츠 자동 업데이트",
@@ -2661,11 +3316,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "AI 어시스턴트는 네트워크 필요",
       tipsList6: "레스토랑 세부정보 오프라인 사용 가능",
       title: "현재 오프라인",
+      title2: "ChinaConnect 긴급 SOS - 오프라인 작동",
+      trafficDesc: "교통 사고 전용",
       tryAgain: "재시도"
     },
     onboarding: {
       done: "Done",
       getStarted: "시작하기",
+      neverShow: "Don't show this again",
       next: "Next",
       skip: "Skip",
       step1Desc: "12개 중국 도시에서 미슐랭 별·흑진주 레스토랑을 찾으세요.",
@@ -2677,6 +3335,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "ChinaConnect에 오신 것을 환영합니다!"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "자동 갱신, 언제든 취소 가능",
       billingAnnual: "연간 결제",
       billingMonthly: "월간 결제",
@@ -2694,6 +3353,7 @@ export const translations: Record<Language, Translations> = {
         name: "비즈니스",
         price: "₩41,900"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "구독이 취소되었습니다",
       compareFeatures: {
         advancedTools: "고급 여행 도구",
@@ -2708,6 +3368,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "각 플랜에 포함된 내용을 명확히 확인하세요.",
       compareTitle: "기능 비교",
+      ctaButton: "Get started",
       ctaPrimary: "무료로 시작",
       ctaSecondary: "플랜 보기",
       ctaSubtitle: "AI로 중국 여행을 계획 중인 수천 명의 여행자와 함께하세요.",
@@ -2725,14 +3386,44 @@ export const translations: Record<Language, Translations> = {
         name: "탐험가",
         price: "₩6,900"
       },
+      faq: "자주 묻는 질문",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "언제든 구독을 취소할 수 있나요?",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "플랜을 변경할 수 있나요?",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "무료 버전에는 어떤 제한이 있나요?",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "어떤 결제 방법이 지원되나요?",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "데이터는 안전한가요?",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "학생 할인이 있나요?",
       faqSubtitle: "궁금한 점이 있나요? FAQ를 확인하세요.",
       faqTitle: "자주 묻는 질문",
+      featureAdvancedTools: "고급 여행 도구",
+      featureAiRequestsBusiness: "무제한 AI 대화",
+      featureAiRequestsExplorer: "월 20회 AI 요청",
+      featureAiRequestsFree: "월 5회 AI 요청",
+      featureAiRequestsPro: "월 100회 AI 요청",
+      featureAllTravelerFeatures: "모든 Traveler 기능",
+      featureApi: "API 접근",
+      featureBasicPlanning: "기본 여행 계획",
+      featureBusinessTemplates: "비즈니스 템플릿",
+      featureCancelAnytime: "언제든지 취소 가능",
+      featureConversationHistory: "대화 기록",
+      featureCustomIntegrations: "맞춤 통합",
+      featureDedicated: "전담 지원",
+      featureExportPdf: "PDF 내보내기",
+      featureMultiCity: "다중 도시 일정",
+      featurePdfExport: "PDF 내보내기",
+      featurePremiumCustomization: "프리미엄 맞춤화",
+      featurePrioritySupport: "우선 지원",
+      featureSaveItineraries: "일정 저장",
+      featureSecurePayments: "안전한 결제",
+      featureTeamCollab: "팀 협업",
+      featureTeamManagement: "팀 관리",
+      featureViewItineraries: "일정 보기",
       free: {
         description: "중국의 모든 도시와 기본 AI 기능을 무료로 탐험하세요.",
         feature1: "월 5회 AI 요청",
@@ -2743,24 +3434,40 @@ export const translations: Record<Language, Translations> = {
         name: "무료"
       },
       freeForever: "영원히 무료",
+      heroBadge: "Pricing",
       heroSubtitle: "무료浏览부터 전문 계획까지, 여행 페이스에 맞는 플랜.",
       heroTitle: "중국 탐험 플랜을 선택하세요",
+      moneyBack: "30-day refund",
+      planBusiness: "비즈니스",
+      planExplorer: "Explorer",
+      planFree: "무료",
+      planPro: "Pro",
+      planTraveler: "Traveler",
       popularBadge: "가장 인기",
       priceFree: "₩0",
+      pro: {
+        description: "활동적인 여행자를 위한"
+      },
       saveBadge: "20% 절약",
       savingsHint: "연간 결제로 20% 절약",
+      securePayment: "Secure payment",
       subscribeNow: "지금 구독",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "미국",
       testimonial1Role: "탐험가 플랜",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "Li Wei T.",
       testimonial2Country: "영국",
       testimonial2Role: "비즈니스 플랜",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "독일",
       testimonial3Role: "여행자 플랜",
+      testimonials: "여행객들이 하는 말",
       testimonialsSubtitle: "수천 명의 여행자가 ChinaConnect의 가치를 발견했습니다.",
       testimonialsTitle: "여행자의 말",
+      title: "가격",
       traveler: {
         annualNote: "연간 ₩133,000 청구 (₩33,600 절약)",
         description: "활발한 여행자에게 적합: 무제한 AI, 경로 계획, PDF 내보내기.",
@@ -2777,11 +3484,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "30일 환불 보장",
         securePayment: "안전한 결제"
       },
+      trustCancelAnytime: "언제든지 취소 가능",
+      trustInstantAccess: "즉각 접근",
+      trustSecurePayments: "안전한 결제",
       trustedBy: "전 세계 여행자의 신뢰",
       unlimited: "무제한"
     },
     profilePage: {
-      title: "내 프로필 - ChinaConnect"
+      displayName: "표시 이름",
+      heading: "Profile",
+      pageTitle2: "내 프로필",
+      save: "변경 사항 저장",
+      saved: "저장됨!",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "내 프로필 - ChinaConnect",
+      uploadAvatar: "아바타 업로드"
     },
     recents: {
       clearAll: "recents.clearAll",
@@ -2818,6 +3535,22 @@ export const translations: Record<Language, Translations> = {
       username: "사용자명",
       usernamePlaceholder: "표시 이름"
     },
+    registerPage: {
+      pageDescription: "ChinaConnect 계정 만들기",
+      pageTitle: "회원가입 - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "주소",
       avgPrice: "평균 가격",
@@ -2843,12 +3576,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "친구와 공유"
     },
     userPage: {
+      heading: "프로필",
+      pageTitle2: "사용자 프로필",
       title: "사용자 프로필 - ChinaConnect"
     }
   },
   th: {
     accountPage: {
       active: "ใช้งานอยู่",
+      activeLabel: "ใช้งานอยู่",
       aiRequestsThisMonth: "คำขอ AI ในเดือนนี้",
       alertSignOutError: "ไม่สามารถเปิดการจัดการการสมัครได้ กรุณาติดต่อฝ่ายสนับสนุน",
       currentPlan: "แผนปัจจุบัน",
@@ -2860,6 +3596,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "ยังไม่มีรายการสั่งซื้อ",
       emptySavedRoutes: "ยังไม่มีเส้นทางที่บันทึก",
       emptySavedRoutesHint: "ยังไม่มีเส้นทางที่บันทึก เริ่มสนทนากับ AI เพื่อสร้างเส้นทาง!",
+      explorerBadge: "นักสำรวจ",
       loading: "กำลังโหลดบัญชีของคุณ...",
       manageSubscription: "จัดการการสมัคร",
       membership: "สมาชิก",
@@ -2869,6 +3606,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "สถานะ",
       orderHeaderType: "ประเภท",
       pageTitle: "บัญชีของฉัน - ChinaConnect",
+      pageTitleSuffix: "บัญชีของฉัน - ChinaConnect",
       pointsUnit: "แต้ม",
       renewsOn: "ต่ออายุใน",
       savedLocally: "บันทึกในเครื่องเท่านั้น",
@@ -2879,27 +3617,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "ต้องเข้าสู่ระบบ",
       signInRequiredDesc: "กรุณาเข้าสู่ระบบเพื่อดูบัญชีของคุณ",
       signOut: "ออกจากระบบ",
+      statAiUsage: "การใช้ AI วันนี้",
+      statFavorites: "รายการโปรด",
       statSavedRoutes: "เส้นทางที่บันทึก",
+      subtitle: "จัดการการสมัครสมาชิก รายการโปรด และเส้นทางที่บันทึกไว้ของคุณ",
       syncedToCloud: "ซิงค์กับคลาวด์",
       tabBilling: "การเรียกเก็บเงิน",
+      tabFavorites: "รายการโปรด",
+      tabOrders: "คำสั่งซื้อ",
       tabOverview: "ภาพรวม",
       tabPlans: "แผน",
+      tabRoutes: "เส้นทาง",
       tabUsage: "การใช้งาน",
+      title: "บัญชีของฉัน",
       untitledRoute: "เส้นทางไม่มีชื่อ",
       upgrade: "อัปเกรด",
       usageDailyAi: "คำขอ AI ประจำวัน",
       usageFavorites: "รายการโปรด",
       usageSavedRoutes: "เส้นทางที่บันทึก",
+      userBadge: "ผู้ใช้",
       walletBalance: "ยอดคงเหลือในกระเป๋าเงิน"
+    },
+    ai: {
+      send: "ส่ง",
+      thinking: "กำลังคิด..."
     },
     aiPage: {
       authFailed: "การรับรองล้มเหลว",
       authGateSignupTitle: "สร้างบัญชีของคุณ",
       authGateTitle: "เข้าสู่ระบบเพื่อแชท",
+      chatInputPlaceholder: "สอบถามเกี่ยวกับร้านอาหาร การเดินทาง สถานที่ท่องเที่ยว...",
+      conversationHistory: "ประวัติการสนทนา",
       conversationsTitle: "สนทนา",
       deleteConfirm: "ลบสนทนานี้?",
       deleteTitle: "ลบ",
       emailPlaceholder: "you@example.com",
+      exportPdf: "ส่งออกเป็น PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "มีบัญชีอยู่แล้วหรือ?",
@@ -2908,41 +3661,83 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "ซ่อนแถบด้านข้าง",
       messageLabel: "ข้อความ",
       messagesLabel: "ข้อความ",
+      newChat: "สนทนาใหม่",
       newChatButton: "+ แชทใหม่",
       noAccountPrompt: "ยังไม่มีบัญชี?",
       noConversationsYet: "ยังไม่มีการสนทนา",
       orContinueWith: "หรือ",
+      pageDescription: "สอบถามทุกอย่างเกี่ยวกับการเดินทางในประเทศจีน",
+      pageTitle: "บริการ AI พาทัวร์ - ChinaConnect",
       passwordPlaceholder: "รหัสผ่าน (อย่างน้อย 6 ตัวอักษร)",
       promptsSubtitle: "เลือกคำถามตัวอย่าง หรือพิมพ์คำถามของคุณด้านล่าง",
       promptsTitle: "ลองถาม",
+      saveRoute: "บันทึกเส้นทาง",
+      sendButton: "ส่ง",
       showSidebarTitle: "แสดงการสนทนา",
       signInButton: "เข้าสู่ระบบ",
       signUpButton: "สร้างบัญชี",
       startPlanningCTA: "เริ่มวางแผน",
-      subtitle: "aiPage.subtitle",
+      subtitle: "สนทนากับ AI Assistant ของเราเพื่อคำแนะนำที่เป็นกันเอง",
       switchToSignIn: "เข้าสู่ระบบ",
       switchToSignUp: "สร้างบัญชี",
-      title: "ChinaGuide AI - ผู้เชี่ยวชาญด้านการท่องเที่ยวปัญญาประดิษฐ์ของคุณสำหรับประเทศจีน"
+      thinking: "กำลังคิด...",
+      title: "ChinaGuide AI - ผู้เชี่ยวชาญด้านการท่องเที่ยวปัญญาประดิษฐ์ของคุณสำหรับประเทศจีน",
+      upgradePrompt: "ลงทะเบียนเพื่อปลดล็อกคำขอ AI เพิ่มเติม",
+      usageToday: "การใช้งานวันนี้"
     },
     attractions: {
-      allCities: "attractions.allCities",
-      browseCategory: "attractions.browseCategory",
-      featuredCities: "attractions.featuredCities",
-      subtitle: "attractions.subtitle",
-      title: "attractions.title"
+      allCities: "เมืองทั้งหมด",
+      appSubtitle: "แอปที่เป็นประโยชน์สำหรับการเดินทางและค้นหาสถานที่ท่องเที่ยว",
+      appTitle: "วางแผนการเดินทางของคุณ",
+      attractionCount: "{count} สถานที่ท่องเที่ยว",
+      browseCategory: "เรียกดูตามหมวดหมู่",
+      citiesCount: "{count} เมือง",
+      diversityTypes: "ประวัติศาสตร์ วัฒนธรรม ธรรมชาติ โมเดิร์น",
+      featured: "เมืองแนะนำ",
+      featuredCities: "เมืองที่แนะนำ",
+      heroEyebrow: "สำรวจตามจุดหมายปลายทาง",
+      openCity: "เปิดเมือง",
+      pageDescription: "สถานที่ท่องเที่ยวที่ต้องไปในประเทศจีน - จากเหมืองโบราณไปจนถึงธรรมชาติที่น่าทึ่ง",
+      pageTitle: "สถานที่ท่องเที่ยวในประเทศจีน - ChinaConnect",
+      subtitle: "สำรวจสถานที่ท่องเที่ยวยอดนิยมและสถานที่ที่น่าสนใจ",
+      title: "สถานที่ท่องเที่ยว",
+      viewAll: "ดูทั้งหมด"
     },
     auth: {
-      myAccount: "auth.myAccount",
-      profileCenter: "auth.profileCenter",
-      signIn: "auth.signIn",
-      signOut: "auth.signOut"
+      continueWithGithub: "ดำเนินต่อด้วย GitHub",
+      continueWithGoogle: "ดำเนินต่อด้วย Google",
+      email: "อีเมล",
+      myAccount: "บัญชีของฉัน",
+      needHelp: "ต้องการความช่วยเหลือในการเข้าสู่ระบบหรือไม่",
+      orContinueWithEmail: "หรือดำเนินต่อด้วยอีเมล",
+      password: "รหัสผ่าน",
+      profile: "โปรไฟล์",
+      profileCenter: "ศูนย์ข้อมูลส่วนตัว",
+      signIn: "เข้าสู่ระบบ",
+      signInButton: "เข้าสู่ระบบ",
+      signOut: "ออกจากระบบ",
+      signOutConfirm: "ออกจากระบบ ChinaConnect?",
+      subtitle: "บันทึกรายการโปรด วางแผนการเดินทาง และพูดคุยกับ AI",
+      title: "เข้าสู่ระบบ ChinaConnect"
     },
     authPage: {
       authTitle: "เข้าสู่ระบบ / ลงทะเบียน - ChinaConnect",
       callbackTitle: "กำลังเข้าสู่ระบบ...",
-      errorTitle: "authPage.errorTitle",
+      continueWithEmail: "หรือเข้าสู่ระบบด้วยอีเมล",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "มีบางอย่างผิดพลาด กรุณาลองใหม่อีกครั้ง",
+      errorTitle: "เกิดข้อผิดพลาดในการเข้าสู่ระบบ",
+      forgotPassword: "ลืมรหัสผ่าน?",
       loginTitle: "เข้าสู่ระบบ - ChinaConnect",
-      signingYouIn: "กำลังเข้าสู่ระบบ..."
+      needAccount: "ยังไม่มีบัญชี?",
+      passwordPlaceholder: "รหัสผ่านของคุณ",
+      signInButton: "เข้าสู่ระบบ",
+      signInError: "เข้าสู่ระบบล้มเหลว กรุณาลองอีกครั้ง",
+      signUpButton: "สมัครสมาชิก",
+      signUpError: "การสมัครสมาชิกล้มเหลว กรุณาลองอีกครั้ง",
+      signingYouIn: "กำลังเข้าสู่ระบบ...",
+      successDesc: "กำลังนำทางคุณไป...",
+      successTitle: "ยินดีต้อนรับกลับ!"
     },
     businessGuidePage: {
       backToGuide: "← กลับสู่คู่มือการท่องเที่ยว",
@@ -2967,89 +3762,306 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← กลับสู่การกำหนดราคา",
+      continueButton: "ดำเนินต่อไปยังบัญชีของคุณ",
       description: "การสมัครของคุณได้รับการเปิดใช้งานอย่างสำเร็จ",
       errorDesc: "เราไม่สามารถประมวลผลการชำระเงินของคุณได้ กรุณาลองใหม่อีกครั้งหรือติดต่อฝ่ายสนับสนุน",
       errorTitle: "มีบางอย่างผิดพลาด",
+      processing: "กำลังประมวลผลการชำระเงิน...",
       processingDesc: "กรุณารอให้เรายืนยันการสมัครของคุณ",
       startPlanning: "เริ่มวางแผน",
       successAccess: "คุณได้รับสิทธิ์เข้าถึงฟีเจอร์ใหม่ของแผนของคุณ",
       successDesc: "การสมัครของคุณได้รับการเปิดใช้งาน",
       successTitle: "การชำระเงินสำเร็จ!",
+      thankYou: "ขอบคุณที่เลือก ChinaConnect",
       title: "การชำระเงินสำเร็จ - ChinaConnect",
       viewAccount: "ดูบัญชี"
     },
     cities: {
       attractions: "สถานที่ท่องเที่ยว",
+      citiesCount: "เมือง",
+      citiesInChina: "เมืองในประเทศจีน",
       culturalTips: "เคล็ดลับทางวัฒนธรรม",
       emergency: "ฉุกเฉิน",
+      exploreAll: "สำรวจทั้งหมด",
       exploreGuide: "สำรวจคู่มือ",
+      filterATier: "A-Tier",
+      filterAll: "ทั้งหมด",
+      filterDTier: "D-Tier",
+      filterSTier: "S-Tier",
+      headerSubtitle: "จากเมืองหลวงโบราณถึงมหานครสมัยใหม่ - เลือกจุดหมายปลายทางของคุณ",
+      headerTitle: "สำรวจเมืองในประเทศจีน",
       hotels: "โรงแรม",
+      noResults: "ไม่มีเมืองที่ตรงกับตัวกรองของคุณ",
       openingHours: "เวลาเปิด-ปิด",
+      pageDescription: "สำรวจเมืองทั้งหมดในประเทศจีนที่ ChinaConnect ครอบคลุม - จากเมืองหลวงโบราณไปจนถึงเมืองใหญ่สมัยใหม่ เมืองระดับ S ระดับพรีเมียม A ระดับระดับกึ่งพรีเมียม และเมืองระดับ D ตามความต้องการ",
+      pageTitle: "สำรวจเมืองทั้งหมด - ChinaConnect",
       payment: "การชำระเงิน",
+      population: "จำนวนประชากร",
       recommendedTime: "เวลาที่แนะนำในการเยี่ยมชม",
+      region: "ภูมิภาค",
       restaurants: "ร้านอาหาร",
+      searchPlaceholder: "ค้นหาเมือง...",
       subtitle: "จากเมืองหลวงโบราณไปสู่เมืองใหญ่ในปัจจุบัน",
       ticketPrice: "ตั๋ว",
       title: "สำรวจเมืองของเรา",
-      transport: "การขนส่ง"
+      transport: "การขนส่ง",
+      viewCity: "ดูเมือง"
+    },
+    city: {
+      beijing: {
+        name: "ปักกิ่ง"
+      },
+      chengdu: {
+        name: "เฉิงตู"
+      },
+      chongqing: {
+        name: "ฉงชิง"
+      },
+      guangzhou: {
+        name: "กวางโจว"
+      },
+      guilin: {
+        name: "กุ้ยหลิน"
+      },
+      hangzhou: {
+        name: "หางโจว"
+      },
+      lijiang: {
+        name: "ลี่เจียง"
+      },
+      qingdao: {
+        name: "ชิงเตาว์"
+      },
+      shanghai: {
+        name: "เซี่ยงไฮ้"
+      },
+      shenzhen: {
+        name: "เซินเจิน"
+      },
+      suzhou: {
+        name: "สูโจว"
+      },
+      xian: {
+        name: "ซีอัน"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "ทั้งหมด",
+      categoryLabel: "หมวดหมู่",
+      disclaimer: "เวลาเปิด-ปิด ราคาตั๋ว และหมายเลขโทรศัพท์อาจมีการเปลี่ยนแปลง เราแนะนำให้ตรวจสอบผ่านเว็บไซต์ทางการของสถานที่ท่องเที่ยวหรือโทรหาก่อน",
+      openOnMap: "เปิดบนแผนที่",
+      openingHours: "เวลาเปิด",
+      subtitle: "จุดสำคัญ พิพิธภัณฑ์ และธรรมชาติ",
+      ticketPrice: "ราคาเข้าชม",
+      tipsHeader: "คำแนะนำ",
+      title: "สถานที่ท่องเที่ยวใน {city}",
+      viewAll: "ดูทั้งหมดใน {city}",
+      viewDetails: "ดูรายละเอียด",
+      viewMore: "ดูสถานที่ท่องเที่ยวเพิ่มเติม"
+    },
+    cityFood: {
+      avgPrice: "ราคาเฉลี่ย",
+      cuisine: "อาหาร",
+      disclaimer: "หมายเลขโทรศัพท์และที่อยู่อาจมีการเปลี่ยนแปลง เราแนะนำให้ตรวจสอบผ่านช่องทางทางการของร้านอาหารหรือโทรหาก่อน",
+      filterAll: "ทั้งหมด",
+      filterBlackPearl: "Black Pearl",
+      filterBudget: "งบประมาณ",
+      filterLocal: "ท้องถิ่น",
+      filterLocalFavorites: "ที่ชื่นชอบของท้องถิ่น",
+      filterMichelin: "Michelin",
+      filteringLabel: "การกรอง:",
+      googleMaps: "แผนที่ Google",
+      signatureDishes: "อาหารเด่น",
+      subtitle: "ดาว Michelin และที่เป็นที่ชื่นชอบ Black Pearl และสมบัติท้องถิ่น",
+      title: "ร้านอาหารใน {city}",
+      viewAll: "ดูร้านอาหารทั้งหมดใน{city}",
+      viewDetails: "ดูรายละเอียด"
+    },
+    cityHotels: {
+      bookCta: "ดูรายละเอียดโรงแรม",
+      bookNow: "ดูโรงแรม",
+      filterAll: "หมวดหมู่ทั้งหมด",
+      pricePerNight: "ต่อคืน",
+      stars: "ดาว",
+      subtitle: "จากที่พักริมน้ำแบบบูติกไปจนถึงเชนระหว่างประเทศ - หาที่พักที่เหมาะสมสำหรับการเดินทางของคุณ",
+      title: "โรงแรมใน{city}"
     },
     cityPage: {
+      appCount: "{count} แอปพลิเคชันที่จำเป็น",
+      appsSubtitle: "ดาวน์โหลดก่อนที่คุณจะมาถึง",
+      area: "พื้นที่",
+      attractionCount: "{count} สถานที่ท่องเที่ยว",
       attractionsExploreCount: "{city} — {count} สถานที่ท่องเที่ยว",
       attractionsHeading: "ที่เที่ยวยอดนิยม",
       attractionsSubtitle: "สถานที่ที่ต้องไป ที่คัดเลือกโดยชาวบ้านและนักท่องเที่ยว",
+      bestTime: "เวลาที่ดีที่สุดในการเยี่ยมชม",
       bestTimeHeading: "เวลาที่เหมาะสมที่สุดในการเดินทาง",
+      bookHotelCta: "หาโรงแรมใน{city}",
+      bookTourCta: "จองทัวร์ใน{city}",
+      citySubtitle: "คู่มือท่องเที่ยวที่สมบูรณ์สำหรับ {city}, จีน ค้นหาร้านอาหาร แหล่งท่องเที่ยว โรงแรม และคำแนะนำการเดินทางที่ดีที่สุด",
+      connectivitySubtitle: "อยู่เชื่อมต่อกับข้อมูล",
+      contactCount: "{count} ที่ติดต่อ",
+      cultureSubtitle: "ประเพณีและมารยาทท้องถิ่น",
+      cultureSubtitleDynamic: "ข้อมูลวัฒนธรรมที่สำคัญสำหรับ {city}",
+      currency: "สกุลเงิน",
       dataSourcesDesc: "แหล่งที่มาของข้อมูลนี้",
       dataSourcesHeading: "แหล่งข้อมูล",
+      downloadBefore: "ดาวน์โหลดแอปพลิเคชันเหล่านี้ก่อนที่คุณจะมาถึงประเทศจีน",
+      elevation: "ความสูง",
+      emergencySubtitle: "หมายเลขสำคัญและสถานทูต",
+      emergencySubtitleDynamic: "หมายเลขโทรศัพท์สำคัญใน {city}",
+      esimDescription: "eSIM เป็นวิธีที่ง่ายที่สุดในการรับข้อมูลในประเทศจีน ไม่จำเป็นต้องใช้SIMการ์ดทางกายภาพ - เปิดใช้งานทันทีเมื่อมาถึง",
+      esimRecommended: "eSIM (แนะนำ)",
+      essentialAppsFor: "แอปพลิเคชันที่จำเป็นสำหรับ{city}",
+      essentialCultural: "ความรู้ทางวัฒนธรรมที่จำเป็นสำหรับ{city}",
+      exploreOnMap: "สำรวจบนแผนที่",
       foodHeading: "ที่รับประทานอาหาร",
       foodHighlightsHeading: "จุดเด่นด้านอาหาร",
       foodHighlightsSubtitle: "แนะนำโดยชาวพื้นเมือง",
       foodSubtitle: "ดาว Michelin, คัดเลือกจาก Black Pearl และร้านโปรดของท้องถิ่น",
+      gettingAround: "การเดินทาง",
       gettingTo: "การเดินทางไปยัง{city}",
+      heroEyebrow: "คู่มือท่องเที่ยว",
       home: "← กลับสู่หน้าหลักของเมือง",
+      hotelCount: "{count} โรงแรม",
       hotelsCountUnit: "โรงแรม",
       hotelsHeading: "ที่พัก",
+      hotelsSubtitle: "จากโรงแรมริมน้ำแบบบูติกไปจนถึงเชนระหว่างประเทศ",
+      importantNumbers: "หมายเลขโทรศัพท์สำคัญใน{city}",
+      intro: "ยินดีต้อนรับสู่{city} เป็นหนึ่งในจุดหมายปลายทางที่น่าสนใจที่สุดของจีน",
+      language: "ภาษา",
+      moreCities: "เมืองเพิ่มเติม",
+      nextCity: "เมืองถัดไป",
       noHotels: "ไม่พบโรงแรม",
       noHotelsDesc: "ลองเปลี่ยนช่วงราคาหรือประเภท",
       noResults: "ไม่พบสถานที่ท่องเที่ยว",
       noResultsDesc: "ลองปรับตัวกรองหรือคำค้นหา",
+      openFullMap: "เปิดแผนที่เต็ม",
+      overviewSubtitle: "ทุกอย่างที่คุณต้องรู้ก่อนไป",
+      pageTitleSuffix: "คู่มือท่องเที่ยว - ChinaConnect",
+      paymentSubtitle: "เงินสด, บัตร, กระเป๋าตังค์มือถือและการเข้าถึง ATM",
       phoneIcon: "📞",
+      population: "ประชากร",
+      previousCity: "เมืองก่อนหน้า",
+      proTipBooking: "คำแนะนำ: จองโรงแรม 2-3 สัปดาห์ล่วงหน้าสำหรับอัตราที่ดีที่สุด",
+      proTipEsim1: "eSIM ทำงานได้ดีที่สุดหากโทรศัพท์ของคุณรองรับ (iPhone XS+ และส่วนใหญ่ของแอนดรอยด์แฟล็กชิป)",
+      proTipEsim2: "ดาวน์โหลดแอปพลิเคชัน eSIM ก่อนที่คุณจะมาถึงประเทศจีน",
+      proTipEsim3: "Airalo และ Holafly ให้แผนที่เฉพาะประเทศจีนพร้อมตัวเลือกข้อมูลไม่จำกัด",
+      proTips: "คำแนะนำ",
+      quickFacts: "ข้อเท็จจริง",
       quickFactsHeading: "ข้อมูลสำคัญ",
+      region: "ภูมิภาค",
+      restaurantCount: "{count} ร้านอาหาร",
+      sectionApps: "แอปพลิเคชันที่จำเป็น",
+      sectionAttractions: "สถานที่ท่องเที่ยวยอดนิยม",
+      sectionConnectivity: "SIM และ eSIM",
+      sectionCulture: "เคล็ดลับทางวัฒนธรรม",
+      sectionEmergency: "ผู้ติดต่อฉุกเฉิน",
+      sectionFood: "ที่รับประทานอาหาร",
+      sectionHotels: "ที่พัก",
+      sectionOverview: "ภาพรวม",
+      sectionPayment: "การชำระเงินและเงิน",
+      sectionTransport: "การเดินทาง",
+      sectionVisa: "วีซ่าและการเข้า",
+      sosTip: "บันทึกหมายเลขเหล่านี้ก่อนที่คุณจะมาถึง - บริการเครือข่ายมือถืออาจจำกัดในพื้นที่ห่างไกล",
+      switchToEnglishMode: "เปลี่ยนเป็นโหมดภาษาอังกฤษในการตั้งค่าแอปถ้าคุณเห็นหน้าจอภาษาจีน แอลิปายและเว่ย์ซิงเพย์สนับสนุนบัตรเครดิตต่างประเทศ",
+      tabApps: "แอปพลิเคชัน",
+      tabAttractions: "สถานที่ท่องเที่ยว",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "วัฒนธรรม",
+      tabEmergency: "ฉุกเฉิน",
+      tabFood: "อาหาร",
+      tabHotels: "โรงแรม",
+      tabOverview: "ภาพรวม",
+      tabPayment: "การชำระเงิน",
+      tabTransport: "การเดินทาง",
+      timezone: "เขตเวลา",
+      tipCount: "{count} เคล็ดลับ",
       topHighlightsHeading: "จุดเด่นยอดนิยม",
       transportSubtitle: "การเดินทางไปรอบ{city}",
-      viewAllHotels: "ดูทั้งหมด {totalHotelCount} โรงแรม"
+      travelTo: "เดินทางไป{city}",
+      viewAllAttractions: "ดูทั้งหมดแหล่งท่องเที่ยว",
+      viewAllHotels: "ดูทั้งหมด {totalHotelCount} โรงแรม",
+      viewAllRestaurants: "ดูทั้งหมดร้านอาหาร",
+      visaSubtitle: "นโยบายการเดินทางไม่ต้องรับวีซ่าและข้อกำหนดการเข้าเมือง",
+      visit: "เยี่ยมชม",
+      weatherForecast: "พยากรณ์อากาศ",
+      weatherNotAvailable: "ข้อมูลอากาศไม่พร้อมใช้งาน",
+      weatherNow: "ขณะนี้",
+      youMayAlsoLike: "คุณอาจสนใจ"
     },
     common: {
       all: "ทั้งหมด",
       back: "กลับ",
+      bookNow: "จองตอนนี้",
       cancel: "ยกเลิก",
       close: "ปิด",
       confirm: "ยืนยัน",
+      continue: "ดำเนินต่อ",
+      discover: "ค้นพบ",
+      done: "เสร็จสิ้น",
       error: "ข้อผิดพลาด",
+      explore: "สำรวจ",
       filter: "กรอง",
+      getStartedFree: "เริ่มต้นฟรี",
+      learnMore: "เรียนรู้เพิ่มเติม",
       loading: "กำลังโหลด...",
       next: "ต่อไป",
       open: "เปิด",
       previous: "ก่อนหน้า",
+      readMore: "อ่านเพิ่มเติม",
+      required: "ต้องการ",
       retry: "ลองใหม่",
+      save: "บันทึก",
       search: "ค้นหา...",
       seeMore: "ดูเพิ่มเติม",
+      signUpFree: "ลงทะเบียนฟรี",
       sort: "เรียงลำดับ",
-      viewAll: "ดูทั้งหมด"
+      startPlanning: "เริ่มวางแผน",
+      subscribe: "สมัครรับข่าวสาร",
+      viewAll: "ดูทั้งหมด",
+      viewDetails: "ดูรายละเอียด",
+      viewMore: "ดูเพิ่มเติม"
+    },
+    emergency: {
+      address: "ที่อยู่",
+      call: "โทร",
+      country: "ประเทศ",
+      embassyLocator: "ค้นหาสถานทูต",
+      embassyLocatorDesc: "ค้นหาสถานทูตหรือสถานกงสุลของประเทศของคุณในประเทศจีน",
+      gpsLocator: "ตำแหน่ง GPS",
+      gpsLocatorDesc: "แบ่งปันตำแหน่งสดของคุณกับผู้ติดต่อฉุกเฉิน",
+      number: "หมายเลข",
+      phone: "โทรศัพท์",
+      quickDial: "โทรด่วน",
+      share: "แบ่งปันตำแหน่ง",
+      subtitle: "หมายเลขโทรสำคัญสำหรับนักท่องเที่ยวในประเทศจีน",
+      title: "ผู้ติดต่อฉุกเฉิน",
+      touristHotline: "Hotline ท่องเที่ยว",
+      universal: "หมายเลขทั่วไป",
+      universalAmbulance: "รถพยาบาล",
+      universalFire: "ไฟไหม้",
+      universalPolice: "ตำรวจ",
+      universalTraffic: "อุบัติเหตุทางจราจร",
+      viewAllContacts: "ดูผู้ติดต่อทั้งหมด"
     },
     emergencyPage: {
       ambulance: "รถพยาบาล",
+      callButton: "โทร",
       communication1: "เรียนรู้วลีพื้นฐานภาษาจีน",
       communication2: "ใช้แอปแปลภาษาเมื่อจำเป็น",
       communication3: "ดาวน์โหลดบัตรวลีฉุกเฉิน",
       communication4: "บันทึกสัญชาติของคุณในหมายเหตุโทรศัพท์",
       communicationTitle: "เคล็ดลับการสื่อสาร",
       contacts: "เบอร์โทรฉุกเฉิน",
-      contactsDesc: "emergencyPage.contactsDesc",
-      embassyDesc: "emergencyPage.embassyDesc",
+      contactsDesc: "ข้อมูลการติดต่อฉุกเฉิน",
+      embassyDesc: "ข้อมูลสถานทูต",
       embassyTitle: "ข้อมูลสถานทูตและกงสุล",
+      findEmbassy: "ค้นหาสถานทูตของคุณ",
       fire: "ไฟไหม้",
       gps: "แชร์ตำแหน่ง GPS",
-      gpsDesc: "emergencyPage.gpsDesc",
+      gpsDesc: "ตำแหน่ง GPS ปัจจุบัน",
+      gpsLocator: "ตำแหน่ง GPS",
       heroHeading: "เบอร์โทรฉุกเฉินและความช่วยเหลือ",
       hospitalCommon: "ทั่วไป: ซินหย่าน ยูเนียน เมดิคัล โคลิจ, บีจิ้ง ยูไนเต็ด แฟมิลี่",
       hospitalInternational: "โรงพยาบาลนานาชาติที่แนะนำสำหรับชาวต่างชาติ",
@@ -3089,6 +4101,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "ดาวน์โหลดแผนที่แบบออฟไลน์เพื่อเตรียมพร้อมในการใช้งานที่ดีขึ้น",
       oneTapCalls: "การโทรฉุกเฉินแบบกดเดียว",
       oneTapDesc: "กดที่หมายเลขใดก็ได้เพื่อโทรทันที ทำงานกับโทรศัพท์ใดก็ได้ - ไม่ต้องมีแอปพลิเคชัน",
+      pageDescription: "หมายเลขโทรศัพท์สำคัญสำหรับนักท่องเที่ยวในประเทศจีน",
       pageTitle: "เบอร์ติดต่อฉุกเฉินและประโยคภาษาจีน - ChinaConnect",
       pharmaciesTitle: "ร้านขายยา",
       pharmacyChains: "เครือข่ายใหญ่: Guoji Yiyao, Lianhua, Yixinke",
@@ -3106,8 +4119,9 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "เก็บปัจจัยพลังที่เตรียมพร้อม",
       preparedness4: "บันทึกที่อยู่โรงแรมในภาษาจีน",
       preparednessTitle: "การเตรียมพร้อมในการฉุกเฉิน",
+      quickDial: "การโทรด่วน",
       safetyTipsTitle: "คำแนะนำด้านความปลอดภัยสำหรับนักท่องเที่ยว",
-      sosButtonDesc: "emergencyPage.sosButtonDesc",
+      sosButtonDesc: "กดปุ่ม SOS เพื่อรับความช่วยเหลือ",
       sosButtonTitle: "ปุ่ม SOS - พร้อมใช้งานทุกหน้า",
       sosItem1: "กดปุ่ม SOS สีแดงเพื่อโทรติดต่อตำรวจ (110) โดยทันที",
       sosItem2: "กดค้างไว้ 3 วินาทีเพื่อโทรติดต่อสถานทูตของคุณโดยอัตโนมัติ",
@@ -3115,7 +4129,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "กดค้างหรือคลิกขวาสำหรับการเข้าถึงเมนูด่วน",
       subtitle: "หมายเลขโทรศัพท์ ประโยคภาษาจีน และเครื่องมือสำหรับความปลอดภัยของคุณในประเทศจีน",
       title: "เบอร์ติดต่อฉุกเฉินและความช่วยเหลือ",
-      traffic: "จราจร"
+      touristHotline: "Hotline สำหรับนักท่องเที่ยว",
+      traffic: "จราจร",
+      universalSection: "หมายเลขทั่วไป",
+      viewAllContacts: "ดูทั้งหมด"
     },
     empty: {
       addSome: "เริ่มสำรวจและบันทึกรายการโปรดของคุณ!",
@@ -3125,17 +4142,19 @@ export const translations: Record<Language, Translations> = {
       noResults: "ไม่พบผลลัพธ์",
       noSearchResults: "ไม่พบผลลัพธ์สำหรับการค้นหาของคุณ",
       tryAdjusting: "ลองปรับตัวกรองหรือคำค้นหา",
-      tryDifferent: "empty.tryDifferent"
+      tryDifferent: "ลองใช้วิธีอื่น"
     },
     errors: {
-      generic: "errors.generic",
+      generic: "เกิดข้อผิดพลาดทั่วไป",
       goBack: "ย้อนกลับ",
       goHome: "ไปที่หน้าแรก",
       loadFailed: "ไม่สามารถโหลดเนื้อหาได้",
-      network: "errors.network",
+      network: "ข้อผิดพลาดในการเชื่อมต่อเครือข่าย",
       networkError: "เกิดข้อผิดพลาดในการเชื่อมต่อเครือข่าย กรุณาตรวจสอบการเชื่อมต่อของคุณ",
+      notFound: "ไม่พบทรัพยากร",
       somethingWrong: "เกิดข้อผิดพลาดบางอย่าง",
-      unauthorized: "errors.unauthorized"
+      timeout: "การร้องขอหมดเวลา",
+      unauthorized: "ไม่ได้รับอนุญาต"
     },
     features: {
       accommodation: "ที่พัก",
@@ -3151,7 +4170,7 @@ export const translations: Record<Language, Translations> = {
       payment: "คู่มือการชำระเงิน",
       paymentDesc: "ข้อมูลเกี่ยวกับ Alipay, WeChat Pay, เงินสด และการรับบัตรเครดิต",
       restaurantGuide: "คู่มือร้านอาหาร",
-      restaurantGuideDesc: "features.restaurantGuideDesc",
+      restaurantGuideDesc: "คู่มือร้านอาหาร",
       transport: "การเดินทาง",
       transportDesc: "วิธีการเดินทางและเคล็ดลับในการเดินทาง - เครื่องบิน รถไฟ รถไฟใต้ดิน และเคล็ดลับจากท้องถิ่น"
     },
@@ -3159,22 +4178,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← กลับสู่ {city}",
       backToCity: "กลับสู่ {city}",
+      bottomCtaDesc: "เลือกเมืองของเราและสำรวจจุดหมายปลายทางในประเทศจีนมากขึ้น",
       callPhone: "โทร",
+      citiesCount: "จำนวนเมือง",
       citiesUnit: "เมือง",
       cityEmpty: "ยังไม่มีร้านอาหาร",
       cityEmptyDesc: "เรากำลังคัดเลือกร้านอาหารสำหรับ {city}.",
       cityEmptySubtitle: "เพิ่มร้านอาหารบางร้านเพื่อเริ่มสำรวจ",
       dataSourcesDesc: "แหล่งข้อมูลเหล่านี้สามารถช่วยให้คุณเรียนรู้เพิ่มเติมเกี่ยวกับวัฒนธรรมอาหารของ {city}:",
       dataSourcesHeading: "แหล่งอ้างอิง",
+      empty: "ไม่มีเมืองที่ตรงกับตัวกรองนี้",
       emptyCta: "ดูร้านอาหารทั้งหมด",
       emptyDesc: "ยังไม่มีร้านอาหารในหมวดนี้ ลองใช้ตัวกรองอื่น",
       emptyTitle: "ยังไม่มีร้านอาหาร",
+      essentialFoodApps: "แอปพลิเคชันอาหารที่สำคัญ",
+      essentialFoodAppsDesc: "ดาวน์โหลดแอปเหล่านี้เพื่อสั่งอาหารการขนส่งและค้นพบร้านอาหารท้องถิ่นที่มีเมนูภาษาอังกฤษ",
       exploreFood: "สำรวจอาหาร",
+      filterAll: "ทั้งหมด",
       filterBlackPearl: "Black Pearl",
       filterBudget: "งบประมาณ",
       filterCasual: "สบายๆ",
       filterLocal: "ที่รักของท้องถิ่น",
       filterMichelin: "Michelin",
+      filterStreetFood: "อาหารข้างทาง",
       filteringLabel: "กำลังกรอง:",
       heroCityFood: "{city} อาหาร",
       indexTitle: "🍜 แผนที่อาหารประเทศจีน",
@@ -3182,33 +4208,83 @@ export const translations: Record<Language, Translations> = {
       navigate: "นำทาง",
       noCityTitle: "ไม่พบเมืองที่คุณต้องการ?",
       otherRestaurants: "ร้านอาหารอื่นใน {city}",
+      pageDescription: "ค้นพบอาหารที่ชื่นชอบที่สุดในประเทศจีน รายชื่อเมืองที่รวบรวมและร้านอาหารที่รวบรวม",
+      pageTitle: "China Food Map - ChinaConnect",
       perPerson: "/คน",
+      proTipsFoodApps: "เคล็ดลับสำหรับแอปพลิเคชันอาหาร",
       restaurantsUnit: "ร้านอาหาร",
       showingCount: "กำลังแสดง",
-      subtitle: "Michelin, Black Pearl และที่รักของท้องถิ่น"
+      subtitle: "Michelin, Black Pearl และที่รักของท้องถิ่น",
+      tipDianping: "Dianping เหมาะสำหรับการค้นหาที่รักที่สุดของท้องถิ่นที่มีรีวิวภาษาอังกฤษ",
+      tipEleme: "Ele.me ให้ความครอบคลุมการขนส่งที่กว้างที่สุด แต่อาจตั้งค่าเริ่มต้นเป็นภาษาจีน",
+      tipLinkCard: "เชื่อมต่อบัตรต่างชาติกับ Alipay/WeChat Pay ก่อนสั่ง",
+      tipMeituan: "Meituan มีการแปลเมนูภาษาอังกฤษสำหรับหลายร้านอาหาร",
+      title: "แผนที่อาหารจีน",
+      viewAllCities: "ดูเมืองทั้งหมด"
     },
     footer: {
-      accommodation: "footer.accommodation",
-      aiAssistant: "footer.aiAssistant",
-      attractions: "footer.attractions",
-      cities: "footer.cities",
-      culturalTips: "footer.culturalTips",
-      description: "footer.description",
-      emergency: "footer.emergency",
-      guides: "footer.guides",
-      payment: "footer.payment",
-      resources: "footer.resources",
-      restaurants: "footer.restaurants",
-      transport: "footer.transport",
-      viewAllCities: "footer.viewAllCities"
+      accommodation: "ที่พัก",
+      aiAssistant: "AI Assistant",
+      allRightsReserved: "สงวนลิขสิทธิ์ทั้งหมด",
+      attractions: "สถานที่ท่องเที่ยว",
+      cities: "เมือง",
+      citiesListLabel: "เมืองยอดนิยม",
+      cityBeijing: "ปักกิ่ง",
+      cityChengdu: "เฉิงตู",
+      cityChongqing: "ฉงชิ่ง",
+      cityDalian: "ตาเหลียน",
+      cityGuangzhou: "กวางโจว",
+      cityGuilin: "กุ้ยหลิน",
+      cityHangzhou: "ฮั่งโจว",
+      cityHarbin: "ฮาร์บิน",
+      cityKunming: "กุนหมิง",
+      cityLijiang: "ลี่เจียง",
+      cityQingdao: "ชิงเตาว",
+      cityShanghai: "เซี่ยงไฮ้",
+      cityShenzhen: "เซินเจิ้น",
+      citySuzhou: "โซโจว",
+      cityTianjin: "เทียนจิน",
+      cityXian: "ซีอัน",
+      companyLabel: "บริษัท",
+      contact: "ติดต่อ",
+      copyright: "ลิขสิทธิ์",
+      culturalTips: "เคล็ดลับด้านวัฒนธรรม",
+      description: "เชื่อมต่อกับประเทศจีนด้วย ChinaConnect",
+      diningGuide: "คู่มือร้านอาหาร",
+      emergency: "ข้อมูลฉุกเฉิน",
+      guides: "คู่มือ",
+      guidesLabel: "คู่มือท่องเที่ยว",
+      payment: "การชำระเงิน",
+      privacy: "ความเป็นส่วนตัว",
+      resources: "ทรัพยากร",
+      resourcesLabel: "ทรัพยากร",
+      restaurants: "ร้านอาหาร",
+      terms: "ข้อกำหนดและเงื่อนไข",
+      transport: "การเดินทาง",
+      viewAllCities: "ดูเมืองทั้งหมด",
+      visaGuide: "คู่มือวีซ่า"
+    },
+    guide: {
+      attractionsPageTitle: "สถานที่ท่องเที่ยวยอดนิยมในประเทศจีน",
+      attractionsTitle: "สถานที่ท่องเที่ยวยอดนิยมในประเทศจีน",
+      beijingGuide: "ปักกิ่ง",
+      foodGuide: "คู่มืออาหาร",
+      scamPrevention: "การป้องกันการโกง"
     },
     guidePage: {
       accommodationStageDescription: "ค้นหาและจองที่พักที่เหมาะสมสำหรับงบประมาณทุกระดับ",
       accommodationStageTitle: "5. ที่พัก",
       accommodationSubtitle: "ที่พัก - โรงแรม โฮสเทล และเคล็ดลับการจอง",
       accommodationTitleShort: "คู่มือที่พัก",
-      attractionsSubtitle: "guidePage.attractionsSubtitle",
-      backHome: "guidePage.backHome",
+      attractionsSubtitle: "สถานที่ท่องเที่ยวยอดนิยม",
+      attractionsTitle: "สถานที่ท่องเที่ยวยอดนิยม",
+      backHome: "กลับสู่หน้าหลัก",
+      beginnerDesc: "วางแผนการเดินทางครั้งแรกของคุณอย่างมั่นใจ",
+      beginnerTraveler: "นักท่องเที่ยวมือใหม่",
+      businessDesc: "เครื่องมือสำหรับการประชุม การชำระเงินและมารยาท",
+      businessTitle: "การเดินทางทางธุรกิจ",
+      businessTraveler: "นักเดินทางทางธุรกิจ",
+      cardReadTime: "{minutes} นาทีการอ่าน",
       cityBeijing: "ปักกิ่ง",
       cityChengdu: "เฉินตู้",
       cityShanghai: "เซี่ยงไฮ้",
@@ -3219,6 +4295,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "คู่มือการสื่อสาร",
       culturalWarningsSubtitle: "ความแตกต่างทางวัฒนธรรมและข้อผิดพลาดที่ควรหลีกเลี่ยง",
       culturalWarningsTitleShort: "คำเตือนทางวัฒนธรรม",
+      cultureTitle: "เคล็ดลับทางวัฒนธรรม",
       departureStageDescription: "การขอคืนภาษี, ศุลกากร และเคล็ดลับสุดท้ายก่อนที่คุณจะบินกลับบ้าน",
       departureStageTitle: "7. การออกเดินทาง",
       departureSubtitle: "การออกเดินทาง - การขอคืนภาษีและการออกจากประเทศจีน",
@@ -3236,55 +4313,83 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "ฉุกเฉิน - ตำรวจ, รถพยาบาล, ติดต่อสถานทูต",
       emergencyTitleShort: "คู่มือฉุกเฉิน",
       emergencyTourism: "โทรศัพท์สายด่วนท่องเที่ยว 12301",
+      foodTitle: "คู่มืออาหาร",
       home: "← กลับสู่หน้าหลัก",
       indexBusinessHeading: "🚀 เครื่องมือสำหรับการเดินทางทางธุรกิจ",
-      indexBusinessSubtitle: "guidePage.indexBusinessSubtitle",
+      indexBusinessSubtitle: "เครื่องมือทางธุรกิจ",
       indexGuidesHeading: "🗺️ คู่มือท่องเที่ยว",
-      indexHeroSubtitle: "guidePage.indexHeroSubtitle",
+      indexHeroSubtitle: "ค้นหาความรู้และคำแนะนำ",
       indexHeroTitle: "🇨🇳 คู่มือท่องเที่ยวสมบูรณ์ของจีน",
       indexStagesTitle: "8 ขั้นตอนสำหรับการเดินทางที่ราบรื่นในจีน",
+      longStay: "การพักอยู่ยาว",
+      longStayDesc: "ตั้งรกรากด้วยคู่มือวีซ่า ธนาคารและที่พัก",
+      pageDescription: "ทุกอย่างที่คุณต้องการในการวางแผน จองและสนุกสนานกับการเดินทางประเทศจีน",
+      pageTitle: "China Travel Guide - ChinaConnect",
       paymentStageDescription: "ตั้งค่า Alipay และ WeChat Pay ก่อนที่คุณจะมาถึง",
       paymentStageTitle: "2. การตั้งค่าการชำระเงิน",
       paymentSubtitle: "การชำระเงิน - Alipay, WeChat Pay และเคล็ดลับเกี่ยวกับเงินสด",
+      paymentTitle: "การชำระเงินและเงิน",
       paymentTitleShort: "คู่มือการชำระเงิน",
       popularByCity: "ยอดนิยมตามเมือง",
       quickBeijingDesc: "จุดสำคัญของเมืองหลวงและอาหารต้องลอง",
       quickFoodDesc: "มิเชลิน, Black Pearl และรสชาติท้องถิ่น",
       quickScamDesc: "การหลอกลวงทั่วไปและวิธีการหลีกเลี่ยง",
+      safetyTitle: "ความปลอดภัย",
       scamPreventionSubtitle: "ปกป้องตัวเองจากการหลอกลวงทั่วไปในจีน",
       scamPreventionTitleShort: "การป้องกันการหลอกลวง",
+      subtitle: "ทุกอย่างที่คุณต้องการในการวางแผน จอง และสนุกกับการเดินทางประเทศจีนของคุณ",
+      title: "คู่มือการท่องเที่ยวประเทศจีน",
       transparencySubtitle: "รู้ราคาที่ยุติธรรม, หลีกเลี่ยงการถูกคิดเกิน",
       transparencyTitleShort: "ความโปร่งใสของราคา",
       transportStageDescription: "เดินทางด้วยรถไฟใต้ดิน, รถไฟความเร็วสูงและแอปพลิเคชันรถขับร้อน",
       transportStageTitle: "4. การขนส่ง",
       transportSubtitle: "การขนส่ง - เดินทางทั่วจีนอย่างมั่นใจ",
+      transportTitle: "การเดินทาง",
       transportTitleShort: "คู่มือการขนส่ง",
       travelGuide: "คู่มือท่องเที่ยว",
+      travelerType: "ประเภทนักท่องเที่ยว",
+      viewAll: "ดูคู่มือทั้งหมด",
       viewAllBusinessTools: "ดูทั้งหมดเครื่องมือทางธุรกิจ",
       viewAllBusinessToolsCta: "เปิด Business Express",
-      viewAllBusinessToolsDesc: "guidePage.viewAllBusinessToolsDesc",
+      viewAllBusinessToolsDesc: "ดูเครื่องมือทางธุรกิจทั้งหมด",
       viewAttractions: "ดูที่เที่ยวยอดนิยม",
       viewFullEmergency: "ดูคู่มือฉุกเฉินแบบเต็ม",
       visaStageDescription: "ทุกอย่างที่คุณต้องมีก่อนที่จะขึ้นเครื่อง",
       visaStageTitle: "1. วีซ่าและการเข้า",
       visaSubtitle: "วีซ่า - คู่มือสมบูรณ์สำหรับการเข้าจีน",
+      visaTitle: "วีซ่าและการเข้า",
       visaTitleShort: "คู่มือวีซ่า"
+    },
+    guideTopic: {
+      backToGuide: "กลับสู่คู่มือ",
+      contactCta: "ติดต่อฝ่ายสนับสนุน",
+      lastUpdated: "อัปเดตล่าสุด",
+      needHelp: "ต้องการความช่วยเหลือ?",
+      relatedArticles: "บทความที่เกี่ยวข้อง"
     },
     home: {
       chatWithAI: "สนทนากับ AI",
-      citiesSubtitle: "home.citiesSubtitle",
+      citiesSubtitle: "สำรวจเมืองในประเทศจีน",
       citiesTitle: "สำรวจเมืองของเรา",
+      clearHistory: "ล้างประวัติ",
       ctaSubtitle: "เริ่มวางแผนการเดินทางของคุณด้วยคำแนะนำที่ใช้ AI",
       ctaTitle: "พร้อมที่จะสำรวจจีนหรือยัง?",
+      discoverSubtitle: "ค้นพบสิ่งที่ดีที่สุดของประเทศจีนด้วยคู่มือเมืองที่ใช้ AI และร้านอาหารที่คัดสรร",
+      exploreAiChat: "สำรวจ AIChat ของ ChinaGuide",
       exploreBeijing: "สำรวจปักกิ่ง",
       exploreCities: "สำรวจเมือง",
-      exploreGuide: "home.exploreGuide",
+      exploreCityButton: "สำรวจเมือง",
+      exploreGuide: "สำรวจคู่มือ",
+      featuredCitiesLabel: "แสดงเป็นที่นิยม",
+      featuredSection: "จุดหมายปลายทางยอดนิยม",
       featuresSubtitle: "ทุกอย่างที่คุณต้องใช้สำหรับการเดินทางที่ยอดเยี่ยม",
       featuresTitle: "ทุกอย่างที่คุณต้องใช้สำหรับการเดินทางจีนของคุณ",
+      heroBadge: "คู่มือการเดินทาง AI สำหรับประเทศจีน",
       heroCTA: "ขอคำแนะนำจาก AI สำหรับการเดินทาง",
-      heroDesc: "home.heroDesc",
+      heroDesc: "ค้นหาความรู้และคำแนะนำ AI สำหรับการเดินทางในประเทศจีน",
       heroSubtitle: "ที่ปรึกษาที่เชื่อถือได้สำหรับเมืองยอดเยี่ยมของประเทศจีน",
       heroTitle: "ที่ปรึกษาประเทศจีนที่มี AI ควบคุม",
+      noRecentViews: "ยังไม่มีการดูล่าสุด",
       onboarding1Desc: "ค้นหาร้านอาหารที่ได้รับการยกย่องด้วยดาว Michelin และดาวดำไพล์ใน 12 เมืองของประเทศจีน",
       onboarding1Title: "ค้นพบอาหารอร่อย",
       onboarding2Title: "คำแนะนำที่มี AI ควบคุม",
@@ -3292,14 +4397,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "เสร็จสิ้น",
       onboardingNext: "ต่อไป",
       onboardingSkip: "ข้าม",
+      pageDescription: "สำรวจประเทศจีนด้วยคู่มือเมืองที่มี AI ช่วยเหลือ ค้นหาร้านอาหาร (Michelin และ Black Pearl), สถานที่ท่องเที่ยว, ข้อมูลการเดินทาง, และช่องทางติดต่อฉุกเฉินใน 12 เมืองใหญ่ของจีน ได้แก่ ปักกิ่ง, เซี่ยงไฮ้, กวางโจว, สีอัน, เฉินตู้ และอื่นๆ",
       pageTitle: "ChinaConnect - ที่ปรึกษาประเทศจีนที่มี AI ควบคุม",
+      popularCities: "เมืองยอดนิยม",
+      popularCitiesSubtitle: "สำรวจจุดหมายปลายทางที่ได้รับความนิยมมากที่สุดในประเทศจีน",
+      popularRestaurants: "ร้านอาหารยอดนิยม",
+      popularRestaurantsSubtitle: "ร้านอาหารที่ได้รับรางวัล Michelin และ Black Pearl ทั่วประเทศจีน",
       recentlyViewed: "ได้ดูล่าสุด",
       recommendedForYou: "แนะนำให้คุณ",
+      startPlanningToday: "เริ่มวางแผนการเดินทางของคุณวันนี้",
       statsAI: "ความช่วยเหลือจาก AI",
       statsAttractions: "สถานที่ท่องเที่ยวยอดนิยม",
       statsCities: "เมืองที่ครอบคลุม",
       statsRestaurants: "ร้านอาหารดาว Michelin",
-      viewAllCities: "ดูเมืองทั้งหมด"
+      viewAllCities: "ดูเมืองทั้งหมด",
+      viewAllCitiesButton: "ดูเมืองทั้งหมด"
+    },
+    index: {
+      featuredDestinations: "ตามจุดหมายปลายทางยอดนิยม"
     },
     language: {
       chinese: "ภาษาจีน",
@@ -3311,30 +4426,53 @@ export const translations: Record<Language, Translations> = {
       nativeName: "language.nativeName",
       switchTo: "เปลี่ยนเป็น"
     },
+    loginPage: {
+      pageDescription: "เข้าสู่ระบบ ChinaConnect",
+      pageTitle: "เข้าสู่ระบบ - ChinaConnect"
+    },
     nav: {
       aiChat: "AI ท่องประเทศจีน",
-      attractions: "nav.attractions",
+      attractions: "สถานที่ท่องเที่ยว",
       business: "Express สำหรับธุรกิจ",
       cities: "เมือง",
       guide: "คู่มือท่องเที่ยว",
       home: "หน้าหลัก",
       restaurants: "ร้านอาหาร",
-      selectLanguage: "nav.selectLanguage",
+      selectLanguage: "เลือกภาษา",
+      signIn: "เข้าสู่ระบบ",
       tagline: "สำรวจประเทศจีนด้วย AI"
     },
     notFound: {
       askAi: "ถาม AI ท่องประเทศจีน",
       description: "หน้าที่คุณกำลังมองหาไม่มีอยู่",
-      descriptionText: "notFound.descriptionText",
+      descriptionText: "ไม่พบหน้าที่คุณต้องการ",
       exploreCities: "สำรวจเมือง",
       goHome: "กลับสู่หน้าหลัก",
       heading: "404",
-      letsContinue: "notFound.letsContinue",
+      homeButton: "กลับสู่หน้าแรก",
+      letsContinue: "ลองเลือกต่อไป",
       primary: "ไม่พบหน้า",
-      title: "ไม่พบหน้า - ChinaConnect"
+      subtitle: "หน้าที่คุณกำลังมองหาไม่มีอยู่หรือได้ย้ายไปแล้ว",
+      title: "ไม่พบหน้า - ChinaConnect",
+      titleShort: "404",
+      viewCities: "ดูเมือง"
+    },
+    offline: {
+      cachedPages: "หน้าที่เก็บแคชยังพร้อมใช้งาน",
+      retryButton: "ลองอีกครั้ง",
+      subtitle: "ดูเหมือนว่าคุณจะเสียการเชื่อมต่ออินเทอร์เน็ต",
+      title: "คุณออฟไลน์",
+      viewHome: "ดูหน้าแรก"
     },
     offlinePage: {
+      ambulanceDesc: "ฉุกเฉินทางการแพทย์ และการบาดเจ็บ",
+      availableOffline: "พร้อมใช้งานแบบออฟไลน์",
+      bannerDesc: "ข้อมูลการติดต่อฉุกเฉินและข้อมูลที่จำเป็นยังพร้อมใช้งาน",
       bannerTitle: "โหมดออฟไลน์",
+      emergencyNumbers: "เบอร์โทรฉุกเฉิน (ประเทศจีน)",
+      emergencyPhrases: "วลีภาษาฉุกเฉิน",
+      fireDesc: "ไฟไหม้ การช่วยเหลือ และสารอันตราย",
+      lastSynced: "อัปเดตล่าสุด:",
       phrase1En: "ช่วยด้วย!",
       phrase2En: "โทรเรียกตำรวจ!",
       phrase3En: "ฉันต้องการรถพยาบาล",
@@ -3342,6 +4480,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "ฉันหลงทาง",
       phrase6En: "ฉันต้องการความช่วยเหลือ",
       phrase7En: "ที่อยู่ของโรงพยาบาลอยู่ที่ไหน?",
+      phrasesHelp: "แสดงวลีภาษาฉุกเฉินทั่วไป",
+      phrasesTip: "แสดงวลีเหล่านี้หากคุณต้องการความช่วยเหลือ",
+      policeDesc: "อาชญากรรม ฉุกเฉิน และความปลอดภัยของประชาชน",
+      quickActions: "การดำเนินการด่วน",
+      tapToCall: "แตะที่หมายเลขใดก็ได้เพื่อโทรทันที",
       tipsHeading: "คำแนะนำในการเดินทางขณะออฟไลน์",
       tipsList1: "บันทึกวลีและที่อยู่สำคัญก่อนออฟไลน์",
       tipsList2: "ดาวน์โหลดแผนที่ออฟไลน์ในแอปแผนที่ของคุณ",
@@ -3350,22 +4493,26 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "ส่วนใหญ่ร้านกาแฟและห้างสรรพสินค้ามี Wi-Fi ฟรี",
       tipsList6: "พกสมุดใส่กระดาษเล็กๆ เพื่อเขียนที่อยู่",
       title: "คุณอยู่ในโหมดออฟไลน์",
+      title2: "ChinaConnect ฉุกเฉิน SOS - ทำงานแบบออฟไลน์",
+      trafficDesc: "อุบัติเหตุทางรถยนต์เท่านั้น",
       tryAgain: "ลองอีกครั้ง"
     },
     onboarding: {
       done: "เสร็จสิ้น",
       getStarted: "เริ่มต้น",
+      neverShow: "อย่าแสดงอีก",
       next: "ต่อไป",
       skip: "ข้าม",
       step1Desc: "ค้นหาร้านอาหารที่ได้รับการยกย่องด้วยดาว Michelin และดาวดำไพล์ใน 12 เมืองของประเทศจีน",
       step1Title: "ค้นพบอาหารอร่อย",
-      step2Desc: "Get personalized recommendations and insider knowledge from our AI assistant.",
-      step2Title: "AI-Powered Tips",
+      step2Desc: "รับคำแนะนำที่เป็นกันเองและความรู้จาก AI Assistant ของเรา",
+      step2Title: "คำแนะนำ AI",
       step3Desc: "เข้าถึงข้อมูลติดต่อฉุกเฉิน ข้อมูลการเดินทาง และเคล็ดลับทางวัฒนธรรมได้ที่เดียว",
       step3Title: "เดินทางอย่างมั่นใจ",
       welcome: "ยินดีต้อนรับสู่ ChinaConnect!"
     },
     pricing: {
+      annualNote: "จ่ายปีละ ¥659 (وفر ¥169)",
       autoRenewNote: "pricing.autoRenewNote",
       billingAnnual: "รายปี",
       billingMonthly: "รายเดือน",
@@ -3383,6 +4530,7 @@ export const translations: Record<Language, Translations> = {
         name: "Business",
         price: "$29.99"
       },
+      cancelAnytime: "ยกเลิกตลอดเวลา",
       cancelledNotice: "การชำระเงินถูกยกเลิก คุณสามารถลองอีกครั้งด้านล่างได้",
       compareFeatures: {
         advancedTools: "เครื่องมือการเดินทางขั้นสูง",
@@ -3397,6 +4545,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "pricing.compareSubtitle",
       compareTitle: "เปรียบเทียบคุณลักษณะทั้งหมด",
+      ctaButton: "เริ่มต้น",
       ctaPrimary: "เริ่มต้นใช้งานฟรีวันนี้",
       ctaSecondary: "สำรวจคุณลักษณะ",
       ctaSubtitle: "pricing.ctaSubtitle",
@@ -3414,14 +4563,44 @@ export const translations: Record<Language, Translations> = {
         name: "Explorer",
         price: "$4.99"
       },
+      faq: "คำถามที่พบบ่อย",
+      faq1A: "ใช่ คุณสามารถยกเลิกจากบัญชีของคุณได้ตลอดเวลา แผนรายปีสามารถขอคืนเงินได้ภายใน 30 วัน",
       faq1Q: "ฉันจะอัปเกรดหรือดาวน์เกรดแผนการใช้งานของฉันได้อย่างไร?",
+      faq2A: "แน่นอน - คุณสามารถอัปเกรดหรืออัปเกรดในเวลาใดก็ได้ การเครดิตตามส่วนแบ่งจะถูกนำไปใช้โดยอัตโนมัติ",
       faq2Q: "ฉันจะยกเลิกการสมัครใช้งานได้อย่างไร?",
+      faq3A: "แผนฟรีครอบคลุมทุกเมือง 5 คำขอ AI เดือนละ 1 ครั้ง การวางแผนการเดินทางพื้นฐานและเส้นทางที่บันทึกไว้",
       faq3Q: "นโยบายการคืนเงินของคุณคืออะไร?",
+      faq4A: "เรา aceept Visa, Mastercard, Alipay, WeChat Pay และบัตรหลักในพื้นที่",
       faq4Q: "แผนการใช้งานรายเดือนของฉันจะรีเซ็ตเมื่อไหร่?",
+      faq5A: "ใช่ - เราใช้การเข้ารหัสระดับธนาคารและไม่มีการขายข้อมูลส่วนตัวของคุณ",
       faq5Q: "เมื่อฉันเกินขีดจำกัดคำขอ AI ฉันจะทำอย่างไร?",
+      faq6A: "ใช่ นักศึกษาที่มีอีเมล .edu ที่ถูกต้องจะได้รับ 50% ส่วนลดกับแผน Traveler",
       faq6Q: "คุณรับวิธีการชำระเงินใดบ้าง?",
       faqSubtitle: "ทุกอย่างที่คุณต้องรู้เกี่ยวกับแผนและการเรียกเก็บเงินของเรา",
       faqTitle: "คำถามที่พบบ่อย",
+      featureAdvancedTools: "เครื่องมือการเดินทางขั้นสูง",
+      featureAiRequestsBusiness: "การสนทนาด้วย AI ไม่จำกัด",
+      featureAiRequestsExplorer: "20 คำขอ AI ในแต่ละเดือน",
+      featureAiRequestsFree: "5 คำขอ AI ในแต่ละเดือน",
+      featureAiRequestsPro: "100 คำขอ AI ในแต่ละเดือน",
+      featureAllTravelerFeatures: "คุณลักษณะทั้งหมดของ Traveler",
+      featureApi: "การเข้าถึง API",
+      featureBasicPlanning: "การวางแผนการเดินทางพื้นฐาน",
+      featureBusinessTemplates: "เทมเพลตทางธุรกิจ",
+      featureCancelAnytime: "ยกเลิกตลอดเวลา",
+      featureConversationHistory: "ประวัติการสนทนา",
+      featureCustomIntegrations: "การรวมแบบกำหนดเอง",
+      featureDedicated: "การสนับสนุนเฉพาะตัว",
+      featureExportPdf: "ส่งออก PDF",
+      featureMultiCity: "แผนการเดินทางหลายเมือง",
+      featurePdfExport: "ส่งออก PDF",
+      featurePremiumCustomization: "การกำหนดค่าชั้นสูง",
+      featurePrioritySupport: "การสนับสนุนแบบด่วน",
+      featureSaveItineraries: "บันทึกแผนการเดินทาง",
+      featureSecurePayments: "การชำระเงินที่ปลอดภัย",
+      featureTeamCollab: "การทำงานร่วมกันของทีม",
+      featureTeamManagement: "การจัดการทีม",
+      featureViewItineraries: "ดูแผนการเดินทาง",
       free: {
         description: "เริ่มต้นการวางแผนพื้นฐาน",
         feature1: "5 คำขอ AI เดือนละ",
@@ -3432,24 +4611,40 @@ export const translations: Record<Language, Translations> = {
         name: "Free"
       },
       freeForever: "ฟรีตลอดไป",
+      heroBadge: "การกำหนดราคา",
       heroSubtitle: "pricing.heroSubtitle",
       heroTitle: "การกำหนดราคาที่เรียบง่ายและโปร่งใส",
+      moneyBack: "การคืนเงิน 30 วัน",
+      planBusiness: "ธุรกิจ",
+      planExplorer: "นักสำรวจ",
+      planFree: "ฟรี",
+      planPro: "Pro",
+      planTraveler: "นักเดินทาง",
       popularBadge: "พบว่ายอดนิยมที่สุด",
       priceFree: "$0",
+      pro: {
+        description: "สำหรับนักท่องเที่ยวที่มีการเดินทางอย่างแข็งขัน"
+      },
       saveBadge: "وفر 20٪",
       savingsHint: "pricing.savingsHint",
+      securePayment: "การชำระเงินที่ปลอดภัย",
       subscribeNow: "اشترك الآن",
+      testimonial1: "ChinaConnect ช่วยให้ฉันประหยัดเวลาการวิจัยหลายชั่วโมง เส้นทาง AI นั้นถูกต้อง",
       testimonial1Author: "سارة ك.",
       testimonial1Country: "الولايات المتحدة الأمريكية",
       testimonial1Role: "خطة المستكشف",
+      testimonial2: "ในฐานะนักเดินทางทางธุรกิจ ตัวแปลและเครื่องมือการประชุมมีค่ามาก",
       testimonial2Author: "لي وي تي.",
       testimonial2Country: "المملكة المتحدة",
       testimonial2Role: "خطة الأعمال",
+      testimonial3: "เพื่อนที่เดินทางที่ดีที่สุดที่ฉันใช้ในประเทศจีน",
       testimonial3Author: "ماريا آر.",
       testimonial3Country: "ألمانيا",
       testimonial3Role: "خطة المسافر",
+      testimonials: "ความคิดเห็นของนักเดินทาง",
       testimonialsSubtitle: "استمع إلى ما يقوله مستخدمونا عن تجربتهم مع ChinaConnect",
       testimonialsTitle: "محبوبة من قبل المسافرين في جميع أنحاء العالم",
+      title: "การกำหนดราคา",
       traveler: {
         annualNote: "مفوتر بـ 95.99 دولارًا أمريكيًا في السنة (وفر 24 دولارًا)",
         description: "للمسافرين المتكررين إلى الصين",
@@ -3466,20 +4661,30 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "استرداد الأموال خلال 30 يومًا",
         securePayment: "دفع آمن"
       },
+      trustCancelAnytime: "ยกเลิกตลอดเวลา",
+      trustInstantAccess: "การเข้าถึงทันที",
+      trustSecurePayments: "การชำระเงินที่ปลอดภัย",
       trustedBy: "موثوق بها من قبل 10000+ مسافر",
       unlimited: "غير محدود"
     },
     profilePage: {
-      title: "ملفي الشخصي - ChinaConnect"
+      displayName: "ชื่อที่แสดง",
+      heading: "โปรไฟล์",
+      pageTitle2: "โปรไฟล์ของฉัน",
+      save: "บันทึกการเปลี่ยนแปลง",
+      saved: "บันทึกแล้ว!",
+      subtitle: "อัปเดตชื่อแสดงผล, รูปประจำตัว และการตั้งค่า",
+      title: "ملفي الشخصي - ChinaConnect",
+      uploadAvatar: "อัปโหลดรูปประจำตัว"
     },
     recents: {
-      clearAll: "recents.clearAll",
+      clearAll: "ล้างทั้งหมด",
       clearHistory: "مسح المحفوظات",
-      empty: "recents.empty",
+      empty: "ไม่มีรายการที่แสดง",
       forYou: "لأنك قمت بزيارة {city}",
       recentlyViewed: "تم عرضه مؤخرًا",
       recommended: "موصى به لك",
-      title: "recents.title"
+      title: "รายการที่แสดงล่าสุด"
     },
     register: {
       accountCreated: "تم إنشاء الحساب",
@@ -3487,7 +4692,7 @@ export const translations: Record<Language, Translations> = {
       confirmPasswordPlaceholder: "كرر كلمة المرور الخاصة بك",
       creating: "إنشاء حساب...",
       email: "البريد الإلكتروني",
-      emailLabel: "register.emailLabel",
+      emailLabel: "อีเมล",
       emailPlaceholder: "you@example.com",
       errorDefault: "فشل التسجيل",
       errorGoogle: "فشل تسجيل الدخول باستخدام Google",
@@ -3497,15 +4702,31 @@ export const translations: Record<Language, Translations> = {
       haveAccount: "هل لديك حساب بالفعل؟",
       orContinueWith: "أو استمر باستخدام",
       password: "كلمة المرور",
-      passwordLabel: "register.passwordLabel",
+      passwordLabel: "รหัสผ่าน",
       passwordPlaceholder: "6 أحرف على الأقل",
       signIn: "تسجيل الدخول",
       signUpWithGoogle: "تسجيل الدخول باستخدام Google",
       submit: "إنشاء حساب",
       subtitle: "أنشئ حسابك",
-      title: "register.title",
+      title: "สมัครสมาชิก",
       username: "اسم المستخدم",
       usernamePlaceholder: "اسم العرض الخاص بك"
+    },
+    registerPage: {
+      pageDescription: "สร้างบัญชี ChinaConnect ของคุณ",
+      pageTitle: "ลงทะเบียน - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "ที่อยู่",
+      avgPrice: "ราคาเฉลี่ย",
+      back: "ย้อนกลับ",
+      cuisine: "อาหาร",
+      hours: "เวลาเปิด-ปิด",
+      metaFooter: "คำแนะนำอาหารจาก ChinaConnect",
+      otherNearby: "ร้านอาหารใกล้เคียงอื่นๆ",
+      rating: "การจัดอันดับ",
+      signatureDishes: "อาหารเด่น",
+      viewOnMap: "ดูบนแผนที่"
     },
     restaurants: {
       address: "العنوان",
@@ -3522,22 +4743,25 @@ export const translations: Record<Language, Translations> = {
       title: "คู่มือร้านอาหาร"
     },
     tooltips: {
-      close: "tooltips.close",
+      close: "ปิด",
       favoritesTip: "เพิ่มเป็นรายการโปรด",
       filterTip: "กรองตามอาหาร, การจัดอันดับ หรือราคา",
       mapTip: "ดูบนแผนที่",
-      more: "tooltips.more",
-      open: "tooltips.open",
+      more: "อ่านเพิ่มเติม",
+      open: "เปิด",
       searchTip: "ค้นหาเมือง, ร้านอาหาร หรือหัวข้อ",
       shareTip: "แชร์กับเพื่อน"
     },
     userPage: {
+      heading: "ข้อมูลส่วนตัว",
+      pageTitle2: "ข้อมูลส่วนตัวของผู้ใช้",
       title: "ข้อมูลผู้ใช้ - ChinaConnect"
     }
   },
   vi: {
     accountPage: {
       active: "Đang hoạt động",
+      activeLabel: "Đang hoạt động",
       aiRequestsThisMonth: "Yêu cầu AI trong tháng này",
       alertSignOutError: "Không thể mở quản lý đăng ký. Vui lòng liên hệ với bộ phận hỗ trợ.",
       currentPlan: "Gói hiện tại",
@@ -3549,6 +4773,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "Chưa có đơn hàng nào.",
       emptySavedRoutes: "Chưa có tuyến đường nào được lưu.",
       emptySavedRoutesHint: "Chưa có tuyến đường nào được lưu. Bắt đầu cuộc trò chuyện với AI để tạo tuyến đường!",
+      explorerBadge: "Khám phá",
       loading: "Đang tải tài khoản của bạn...",
       manageSubscription: "Quản lý đăng ký",
       membership: "Thành viên",
@@ -3558,6 +4783,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "Trạng thái",
       orderHeaderType: "Loại",
       pageTitle: "Tài khoản của tôi - ChinaConnect",
+      pageTitleSuffix: "Tài khoản của tôi - ChinaConnect",
       pointsUnit: "điểm",
       renewsOn: "Gia hạn vào",
       savedLocally: "Chỉ lưu trữ cục bộ",
@@ -3568,27 +4794,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "Yêu cầu đăng nhập",
       signInRequiredDesc: "Vui lòng đăng nhập để xem tài khoản của bạn.",
       signOut: "Đăng xuất",
+      statAiUsage: "Lượt sử dụng AI hôm nay",
+      statFavorites: "Yêu thích",
       statSavedRoutes: "Tuyến đường đã lưu",
+      subtitle: "Quản lý đăng ký, yêu thích và các tuyến đường đã lưu của bạn.",
       syncedToCloud: "Đồng bộ với đám mây",
       tabBilling: "Lập hóa đơn",
+      tabFavorites: "Yêu thích",
+      tabOrders: "Đơn hàng",
       tabOverview: "Tổng quan",
       tabPlans: "Các gói",
+      tabRoutes: "Tuyến đường",
       tabUsage: "Sử dụng",
+      title: "Tài khoản của tôi",
       untitledRoute: "Tuyến đường không có tiêu đề",
       upgrade: "Nâng cấp",
       usageDailyAi: "Yêu cầu AI hàng ngày",
       usageFavorites: "Mục yêu thích",
       usageSavedRoutes: "Tuyến đường đã lưu",
+      userBadge: "Người dùng",
       walletBalance: "Số dư ví"
+    },
+    ai: {
+      send: "Gửi",
+      thinking: "Đang suy nghĩ..."
     },
     aiPage: {
       authFailed: "Xác thực thất bại",
       authGateSignupTitle: "Tạo tài khoản của bạn",
       authGateTitle: "Đăng nhập để trò chuyện",
+      chatInputPlaceholder: "Hỏi về nhà hàng, giao thông, điểm tham quan...",
+      conversationHistory: "Lịch sử cuộc trò chuyện",
       conversationsTitle: "Cuộc trò chuyện",
       deleteConfirm: "Xóa cuộc trò chuyện này?",
       deleteTitle: "Xóa",
       emailPlaceholder: "you@example.com",
+      exportPdf: "Xuất PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "Đã có tài khoản?",
@@ -3597,13 +4838,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "Ẩn thanh bên",
       messageLabel: "tin nhắn",
       messagesLabel: "tin nhắn",
+      newChat: "Cuộc trò chuyện mới",
       newChatButton: "+ Cuộc trò chuyện mới",
       noAccountPrompt: "Chưa có tài khoản?",
       noConversationsYet: "Chưa có cuộc trò chuyện nào",
       orContinueWith: "hoặc",
+      pageDescription: "Hỏi bất cứ điều gì về du lịch tại Trung Quốc.",
+      pageTitle: "Hướng dẫn AI du lịch - ChinaConnect",
       passwordPlaceholder: "Mật khẩu (ít nhất 6 ký tự)",
       promptsSubtitle: "Chọn một gợi ý hoặc nhập câu hỏi của bạn bên dưới",
       promptsTitle: "Hãy thử hỏi",
+      saveRoute: "Lưu tuyến đường",
+      sendButton: "Gửi",
       showSidebarTitle: "Hiển thị cuộc trò chuyện",
       signInButton: "Đăng nhập",
       signUpButton: "Tạo tài khoản",
@@ -3611,27 +4857,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "AI giúp bạn lập kế hoạch cho chuyến đi Trung Quốc",
       switchToSignIn: "Đăng nhập",
       switchToSignUp: "Tạo một tài khoản",
-      title: "ChinaGuide AI - Chuyên gia hướng dẫn du lịch Trung Quốc thông minh của bạn"
+      thinking: "Đang suy nghĩ...",
+      title: "ChinaGuide AI - Chuyên gia hướng dẫn du lịch Trung Quốc thông minh của bạn",
+      upgradePrompt: "Đăng ký để mở khóa nhiều yêu cầu AI hơn.",
+      usageToday: "Lượt sử dụng hôm nay"
     },
     attractions: {
       allCities: "Tất cả các thành phố có danh lam thắng cảnh",
+      appSubtitle: "Các ứng dụng hữu ích để di chuyển và tìm kiếm điểm tham quan",
+      appTitle: "Lên kế hoạch cho chuyến đi của bạn",
+      attractionCount: "{count} điểm tham quan",
       browseCategory: "Xem theo danh mục",
+      citiesCount: "{count} thành phố",
+      diversityTypes: "Lịch sử, văn hóa, thiên nhiên, hiện đại",
+      featured: "Các thành phố nổi bật",
       featuredCities: "Các thành phố nổi bật",
+      heroEyebrow: "Duyệt theo điểm đến",
+      openCity: "Mở thành phố",
+      pageDescription: "Các điểm du lịch bắt buộc ghé thăm ở Trung Quốc - từ các di tích cổ đến những kỳ quan thiên nhiên",
+      pageTitle: "Các điểm tham quan Trung Quốc - ChinaConnect",
       subtitle: "Các điểm đến bắt buộc tham quan — từ các biểu tượng cổ đại đến những kỳ quan thiên nhiên",
-      title: "Các điểm đến ở Trung Quốc"
+      title: "Các điểm đến ở Trung Quốc",
+      viewAll: "Xem tất cả các điểm tham quan"
     },
     auth: {
+      continueWithGithub: "Tiếp tục với GitHub",
+      continueWithGoogle: "Tiếp tục với Google",
+      email: "Email",
       myAccount: "Tài khoản của tôi",
+      needHelp: "Cần trợ giúp đăng nhập?",
+      orContinueWithEmail: "Hoặc tiếp tục với email",
+      password: "Mật khẩu",
+      profile: "Hồ sơ",
       profileCenter: "Trung tâm hồ sơ",
       signIn: "Đăng nhập",
-      signOut: "Đăng xuất"
+      signInButton: "Đăng nhập",
+      signOut: "Đăng xuất",
+      signOutConfirm: "Đăng xuất khỏi ChinaConnect?",
+      subtitle: "Lưu yêu thích, lên kế hoạch cho chuyến đi và trò chuyện với AI.",
+      title: "Đăng nhập vào ChinaConnect"
     },
     authPage: {
       authTitle: "Đăng nhập / Đăng ký - ChinaConnect",
       callbackTitle: "Đang đăng nhập...",
+      continueWithEmail: "Hoặc tiếp tục với email",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "Có điều gì đó đã sai. Vui lòng thử lại.",
       errorTitle: "Đăng nhập thất bại",
+      forgotPassword: "Quên mật khẩu?",
       loginTitle: "Đăng nhập - ChinaConnect",
-      signingYouIn: "Đang đăng nhập cho bạn..."
+      needAccount: "Chưa có tài khoản?",
+      passwordPlaceholder: "Mật khẩu của bạn",
+      signInButton: "Đăng nhập",
+      signInError: "Đăng nhập thất bại. Vui lòng thử lại.",
+      signUpButton: "Đăng ký",
+      signUpError: "Đăng ký thất bại. Vui lòng thử lại.",
+      signingYouIn: "Đang đăng nhập cho bạn...",
+      successDesc: "Đang chuyển hướng bạn...",
+      successTitle: "Chào mừng trở lại!"
     },
     businessGuidePage: {
       backToGuide: "← Quay lại Hướng dẫn du lịch",
@@ -3656,77 +4939,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← Quay lại bảng giá",
+      continueButton: "Tiếp tục đến tài khoản của bạn",
       description: "Đăng ký của bạn đã được kích hoạt thành công",
       errorDesc: "Chúng tôi không thể xử lý thanh toán của bạn. Vui lòng thử lại hoặc liên hệ với bộ phận hỗ trợ.",
       errorTitle: "Có lỗi đã xảy ra",
+      processing: "Đang xử lý thanh toán của bạn...",
       processingDesc: "Vui lòng đợi trong khi chúng tôi xác nhận đăng ký của bạn.",
       startPlanning: "Bắt đầu lập kế hoạch",
       successAccess: "Bạn đã có quyền truy cập đầy đủ vào tất cả các tính năng của gói mới.",
       successDesc: "Đăng ký của bạn đã được kích hoạt.",
       successTitle: "Thanh toán thành công!",
+      thankYou: "Cảm ơn bạn đã lựa chọn ChinaConnect.",
       title: "Thanh toán thành công - ChinaConnect",
       viewAccount: "Xem tài khoản"
     },
     cities: {
       attractions: "Các điểm tham quan",
+      citiesCount: "Thành phố",
+      citiesInChina: "Các thành phố ở Trung Quốc",
       culturalTips: "Mẹo văn hóa",
       emergency: "Khẩn cấp",
+      exploreAll: "Khám phá tất cả",
       exploreGuide: "Khám phá Hướng dẫn",
+      filterATier: "Hạng A",
+      filterAll: "Tất cả",
+      filterDTier: "Hạng D",
+      filterSTier: "Hạng S",
+      headerSubtitle: "Từ kinh đô cổ đến đô thị hiện đại - hãy chọn điểm đến của bạn.",
+      headerTitle: "Khám phá các thành phố Trung Quốc",
       hotels: "Khách sạn",
+      noResults: "Không có thành phố nào phù hợp với bộ lọc của bạn.",
       openingHours: "Giờ mở cửa",
+      pageDescription: "Khám phá tất cả các thành phố Trung Quốc mà ChinaConnect đã đề cập - từ các thủ đô cổ đến các siêu đô thị hiện đại. Các thành phố hạng S cao cấp, hạng A bán cao cấp và hạng D theo yêu cầu.",
+      pageTitle: "Khám phá tất cả các thành phố - ChinaConnect",
       payment: "Thanh toán",
+      population: "Dân số",
       recommendedTime: "Thời gian đề xuất",
+      region: "Vùng",
       restaurants: "Nhà hàng",
+      searchPlaceholder: "Tìm kiếm thành phố...",
       subtitle: "Từ các kinh đô cổ đến các thành phố hiện đại",
       ticketPrice: "Vé",
       title: "Khám phá Các Thành Phố Của Chúng Tôi",
-      transport: "Giao thông"
+      transport: "Giao thông",
+      viewCity: "Xem thành phố"
+    },
+    city: {
+      beijing: {
+        name: "Bắc Kinh"
+      },
+      chengdu: {
+        name: "Thành Đô"
+      },
+      chongqing: {
+        name: "Thành Phố Trùng Khánh"
+      },
+      guangzhou: {
+        name: "Quảng Châu"
+      },
+      guilin: {
+        name: "Quế Lâm"
+      },
+      hangzhou: {
+        name: "Hàng Châu"
+      },
+      lijiang: {
+        name: "Lệ Giang"
+      },
+      qingdao: {
+        name: "Thành Phố Thanh Đảo"
+      },
+      shanghai: {
+        name: "Thượng Hải"
+      },
+      shenzhen: {
+        name: "Thâm Quyến"
+      },
+      suzhou: {
+        name: "Tô Châu"
+      },
+      xian: {
+        name: "Tây An"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "Tất cả",
+      categoryLabel: "Danh mục",
+      disclaimer: "Giờ mở cửa, giá vé và số điện thoại có thể thay đổi. Chúng tôi khuyên bạn nên xác minh thông qua trang web chính thức của điểm tham quan hoặc gọi điện trước.",
+      openOnMap: "Mở trên bản đồ",
+      openingHours: "Giờ mở cửa",
+      subtitle: "Các điểm đến, bảo tàng và kỳ quan thiên nhiên không thể bỏ qua.",
+      ticketPrice: "Giá vé",
+      tipsHeader: "Mẹo",
+      title: "Các điểm tham quan ở {city}",
+      viewAll: "Xem tất cả các điểm tham quan ở {city}",
+      viewDetails: "Xem chi tiết",
+      viewMore: "Xem thêm các điểm tham quan"
+    },
+    cityFood: {
+      avgPrice: "Giá trung bình",
+      cuisine: "Ẩm thực",
+      disclaimer: "Số điện thoại và địa chỉ có thể thay đổi. Chúng tôi khuyên bạn nên xác minh thông qua các kênh chính thức của nhà hàng hoặc gọi điện trước.",
+      filterAll: "Tất cả",
+      filterBlackPearl: "Hạt đen",
+      filterBudget: "Ngân sách",
+      filterLocal: "Địa phương",
+      filterLocalFavorites: "Ưa thích địa phương",
+      filterMichelin: "Michelin",
+      filteringLabel: "Lọc:",
+      googleMaps: "Google Maps",
+      signatureDishes: "Món ăn đặc trưng",
+      subtitle: "Hạt đen, yêu thích Michelin và những viên ngọc địa phương.",
+      title: "Nhà hàng ở {city}",
+      viewAll: "Xem tất cả các nhà hàng tại {city}",
+      viewDetails: "Xem chi tiết"
+    },
+    cityHotels: {
+      bookCta: "Xem chi tiết khách sạn",
+      bookNow: "Xem khách sạn",
+      filterAll: "Tất cả các danh mục",
+      pricePerNight: "mỗi đêm",
+      stars: "sao",
+      subtitle: "Từ homestay sang chuỗi khách sạn quốc tế - tìm nơi lưu trú phù hợp cho chuyến đi của bạn.",
+      title: "Khách sạn tại {city}"
     },
     cityPage: {
+      appCount: "{count} ứng dụng cần thiết",
+      appsSubtitle: "Tải xuống trước khi bạn đến.",
+      area: "Khu vực",
+      attractionCount: "{count} điểm tham quan",
       attractionsExploreCount: "{city} — {count} địa điểm để khám phá",
       attractionsHeading: "Điểm Đến Hàng Đầu",
       attractionsSubtitle: "Các địa điểm bắt buộc ghé thăm do người dân và du khách lựa chọn",
+      bestTime: "Thời điểm tốt nhất để đến thăm",
       bestTimeHeading: "Thời Điểm Tốt Nhất Để Đến Thăm",
+      bookHotelCta: "Tìm khách sạn tại {city}",
+      bookTourCta: "Đặt tour tại {city}",
+      citySubtitle: "Hướng dẫn du lịch đầy đủ cho {city}, Trung Quốc. Tìm nhà hàng, điểm tham quan, khách sạn và mẹo du lịch tốt nhất.",
+      connectivitySubtitle: "Giữ kết nối với dữ liệu.",
+      contactCount: "{count} liên hệ",
+      cultureSubtitle: "Phong tục và nghi lễ địa phương.",
+      cultureSubtitleDynamic: "Kiến thức văn hóa thiết yếu cho {city}",
+      currency: "Tiền tệ",
       dataSourcesDesc: "Nguồn gốc của dữ liệu này",
       dataSourcesHeading: "Nguồn Dữ Liệu",
+      downloadBefore: "Tải xuống các ứng dụng này trước khi bạn đến Trung Quốc.",
+      elevation: "Độ cao",
+      emergencySubtitle: "Số điện thoại quan trọng và đại sứ quán.",
+      emergencySubtitleDynamic: "Các số điện thoại quan trọng ở {city}",
+      esimDescription: "eSIM là cách dễ nhất để có dữ liệu tại Trung Quốc. Không cần SIM vật lý - kích hoạt ngay khi bạn đến.",
+      esimRecommended: "eSIM (Đề xuất)",
+      essentialAppsFor: "Ứng dụng cần thiết cho {city}",
+      essentialCultural: "Kiến thức văn hóa cần thiết cho {city}",
+      exploreOnMap: "Khám phá trên bản đồ",
       foodHeading: "Nơi Ăn Uống",
       foodHighlightsHeading: "Điểm Nổi Bật Về Thực Phẩm",
       foodHighlightsSubtitle: "Được đề xuất bởi địa phương",
       foodSubtitle: "Huy chương Michelin, lựa chọn Black Pearl và địa điểm ưa thích của người dân",
+      gettingAround: "Di chuyển",
       gettingTo: "Cách đến {city}",
+      heroEyebrow: "Cẩm nang du lịch",
       home: "← Quay lại trang chủ thành phố",
+      hotelCount: "{count} khách sạn",
       hotelsCountUnit: "khách sạn",
       hotelsHeading: "Nơi Ở",
+      hotelsSubtitle: "Từ khách sạn nhỏ đến chuỗi khách sạn quốc tế.",
+      importantNumbers: "Số điện thoại quan trọng tại {city}",
+      intro: "Chào mừng đến {city}, một trong những điểm đến hấp dẫn nhất của Trung Quốc.",
+      language: "Ngôn ngữ",
+      moreCities: "Thêm các thành phố",
+      nextCity: "Thành phố tiếp theo",
       noHotels: "Không tìm thấy khách sạn",
       noHotelsDesc: "Hãy thử một khoảng giá hoặc danh mục khác.",
       noResults: "Không tìm thấy địa điểm",
       noResultsDesc: "Hãy thử điều chỉnh bộ lọc hoặc từ khóa tìm kiếm của bạn.",
+      openFullMap: "Mở bản đồ đầy đủ",
+      overviewSubtitle: "Tất cả những gì bạn cần biết trước khi đi.",
+      pageTitleSuffix: "Cẩm nang du lịch - ChinaConnect",
+      paymentSubtitle: "Tiền mặt, thẻ, ví di động và quyền truy cập ATM.",
       phoneIcon: "📞",
+      population: "Dân số",
+      previousCity: "Thành phố trước đó",
+      proTipBooking: "Mẹo chuyên nghiệp: hãy đặt phòng khách sạn trước 2-3 tuần để có mức giá tốt nhất.",
+      proTipEsim1: "eSIM hoạt động tốt nhất nếu điện thoại của bạn hỗ trợ nó (iPhone XS+ và hầu hết các máy Android hàng đầu).",
+      proTipEsim2: "Tải xuống các ứng dụng eSIM trước khi bạn đến Trung Quốc.",
+      proTipEsim3: "Airalo và Holafly cung cấp các gói dành riêng cho Trung Quốc với các lựa chọn dữ liệu không giới hạn.",
+      proTips: "Mẹo chuyên nghiệp",
+      quickFacts: "Những thông tin cơ bản nhanh chóng",
       quickFactsHeading: "Thông Tin Nhanh",
+      region: "Vùng",
+      restaurantCount: "{count} nhà hàng",
+      sectionApps: "Ứng dụng cần thiết",
+      sectionAttractions: "Điểm tham quan hàng đầu",
+      sectionConnectivity: "SIM & eSIM",
+      sectionCulture: "Mẹo văn hóa",
+      sectionEmergency: "Liên hệ khẩn cấp",
+      sectionFood: "Nơi để ăn",
+      sectionHotels: "Nơi để ở",
+      sectionOverview: "Tổng quan",
+      sectionPayment: "Thanh toán & Tiền",
+      sectionTransport: "Di chuyển",
+      sectionVisa: "Thị thực & Nhập cảnh",
+      sosTip: "Lưu lại những số này trước khi bạn đến - dịch vụ di động có thể bị giới hạn ở các khu vực xa xôi.",
+      switchToEnglishMode: "Chuyển sang chế độ tiếng Anh trong cài đặt ứng dụng nếu bạn thấy giao diện tiếng Trung. Cả Alipay và WeChat Pay đều hỗ trợ thẻ tín dụng nước ngoài.",
+      tabApps: "Ứng dụng",
+      tabAttractions: "Điểm tham quan",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "Văn hóa",
+      tabEmergency: "Khẩn cấp",
+      tabFood: "Ẩm thực",
+      tabHotels: "Khách sạn",
+      tabOverview: "Tổng quan",
+      tabPayment: "Thanh toán",
+      tabTransport: "Giao thông",
+      timezone: "Múi giờ",
+      tipCount: "{count} mẹo",
       topHighlightsHeading: "Điểm Nổi Bật Hàng Đầu",
       transportSubtitle: "Di chuyển xung quanh {city}",
-      viewAllHotels: "Xem tất cả {totalHotelCount} khách sạn"
+      travelTo: "Đi đến {city}",
+      viewAllAttractions: "Xem tất cả các điểm tham quan",
+      viewAllHotels: "Xem tất cả {totalHotelCount} khách sạn",
+      viewAllRestaurants: "Xem tất cả các nhà hàng",
+      visaSubtitle: "Chính sách miễn thị thực và yêu cầu nhập cảnh.",
+      visit: "Tham quan",
+      weatherForecast: "Dự báo thời tiết",
+      weatherNotAvailable: "Thời tiết không khả dụng",
+      weatherNow: "Hiện tại",
+      youMayAlsoLike: "Bạn có thể thích"
     },
     common: {
       all: "Tất cả",
       back: "Quay lại",
+      bookNow: "Đặt ngay",
       cancel: "Hủy",
       close: "Đóng",
       confirm: "Xác nhận",
+      continue: "Tiếp tục",
+      discover: "Khám phá",
+      done: "Hoàn thành",
       error: "Lỗi",
+      explore: "Khám phá",
       filter: "Lọc",
+      getStartedFree: "Bắt đầu miễn phí",
+      learnMore: "Tìm hiểu thêm",
       loading: "Đang tải...",
       next: "Tiếp theo",
       open: "Mở",
       previous: "Trước",
+      readMore: "Đọc thêm",
+      required: "Bắt buộc",
       retry: "Thử lại",
+      save: "Lưu",
       search: "Tìm kiếm...",
       seeMore: "Xem thêm",
+      signUpFree: "Đăng ký miễn phí",
       sort: "Sắp xếp",
-      viewAll: "Xem tất cả"
+      startPlanning: "Bắt đầu lập kế hoạch",
+      subscribe: "Đăng ký nhận tin",
+      viewAll: "Xem tất cả",
+      viewDetails: "Xem chi tiết",
+      viewMore: "Xem thêm"
+    },
+    emergency: {
+      address: "Địa chỉ",
+      call: "Gọi",
+      country: "Quốc gia",
+      embassyLocator: "Tìm đại sứ quán của bạn",
+      embassyLocatorDesc: "Tìm đại sứ quán hoặc lãnh sự quán của quốc gia bạn tại Trung Quốc.",
+      gpsLocator: "Vị trí GPS",
+      gpsLocatorDesc: "Chia sẻ vị trí trực tiếp của bạn với những người liên hệ khẩn cấp.",
+      number: "Số điện thoại",
+      phone: "Điện thoại",
+      quickDial: "Quay số nhanh",
+      share: "Chia sẻ vị trí",
+      subtitle: "Các số điện thoại quan trọng cho du khách tại Trung Quốc.",
+      title: "Liên hệ khẩn cấp",
+      touristHotline: "Đường dây nóng du lịch",
+      universal: "Số điện thoại phổ biến",
+      universalAmbulance: "Cấp cứu",
+      universalFire: "Cứu hỏa",
+      universalPolice: "Công an",
+      universalTraffic: "Tai nạn giao thông",
+      viewAllContacts: "Xem tất cả các liên hệ"
     },
     emergencyPage: {
       ambulance: "Xe cứu thương",
+      callButton: "Gọi",
       communication1: "Học các cụm từ cơ bản tiếng Trung",
       communication2: "Sử dụng các ứng dụng dịch khi cần",
       communication3: "Tải xuống thẻ cụm từ khẩn cấp",
@@ -3736,9 +5234,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "Các số điện thoại khẩn cấp cơ bản được sử dụng trên toàn Trung Quốc.",
       embassyDesc: "Thông tin liên hệ của các đại sứ quán và lãnh sự quán các nước chính tại Trung Quốc.",
       embassyTitle: "Thông Tin Đại Sứ Quán & Lãnh Sự Quán",
+      findEmbassy: "Tìm đại sứ quán của bạn",
       fire: "Lửa",
       gps: "Chia sẻ Vị trí GPS",
       gpsDesc: "Lưu trữ vị trí thời gian thực để liên hệ khẩn cấp.",
+      gpsLocator: "Vị trí GPS",
       heroHeading: "Liên Hệ Khẩn Cấp & Trợ Giúp",
       hospitalCommon: "Thông thường: Bệnh viện Hợp tác Y học Bắc Kinh, Gia đình Liên kết Bắc Kinh",
       hospitalInternational: "Bệnh viện quốc tế được đề xuất cho người nước ngoài",
@@ -3778,6 +5278,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "Tải xuống bản đồ ngoại tuyến để chuẩn bị tốt hơn",
       oneTapCalls: "Cuộc Gọi Khẩn Cấp Bấm Một Lần",
       oneTapDesc: "Bấm vào bất kỳ số nào để gọi ngay lập tức. Hoạt động với bất kỳ điện thoại nào - không cần cài đặt ứng dụng.",
+      pageDescription: "Các số điện thoại quan trọng cho du khách tại Trung Quốc",
       pageTitle: "Liên Hệ Khẩn Cấp & Các Câu Hội Thoại - ChinaConnect",
       pharmaciesTitle: "Nhà Thuốc",
       pharmacyChains: "Các chuỗi lớn: Quốc tế Dược, Liên Hoa, Y Tân Khang",
@@ -3795,6 +5296,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "Giữ pin dự phòng được nạp đầy",
       preparedness4: "Lưu địa chỉ khách sạn bằng tiếng Trung",
       preparednessTitle: "Chuẩn Bị Khẩn Cấp",
+      quickDial: "Quay số nhanh",
       safetyTipsTitle: "Mẹo An Toàn Cho Du Khách",
       sosButtonDesc: "Bấm giữ 3 giây để tự động gửi vị trí đến liên hệ khẩn cấp.",
       sosButtonTitle: "Nút SOS - Có sẵn trên mọi trang",
@@ -3804,7 +5306,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "Giữ nhấn hoặc nhấp chuột phải để truy cập menu nhanh",
       subtitle: "Các số điện thoại, cụm từ và công cụ thiết yếu cho an toàn của bạn tại Trung Quốc",
       title: "Liên hệ Khẩn cấp & Trợ giúp",
-      traffic: "Giao thông"
+      touristHotline: "Dịch vụ khách du lịch",
+      traffic: "Giao thông",
+      universalSection: "Số điện thoại phổ biến",
+      viewAllContacts: "Xem tất cả liên hệ"
     },
     empty: {
       addSome: "Bắt đầu khám phá và lưu các mục yêu thích của bạn!",
@@ -3823,7 +5328,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "Không thể tải nội dung",
       network: "Lỗi mạng",
       networkError: "Lỗi mạng. Vui lòng kiểm tra kết nối của bạn.",
+      notFound: "Tài nguyên không tìm thấy.",
       somethingWrong: "Có điều gì đó sai",
+      timeout: "Yêu cầu đã hết thời gian.",
       unauthorized: "Không được phép"
     },
     features: {
@@ -3848,22 +5355,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← Quay lại {city}",
       backToCity: "Quay lại {city}",
+      bottomCtaDesc: "Khám phá danh sách thành phố của chúng tôi và khám phá nhiều điểm đến hơn tại Trung Quốc.",
       callPhone: "Gọi",
+      citiesCount: "Thành phố",
       citiesUnit: "thành phố",
       cityEmpty: "Chưa có nhà hàng nào",
       cityEmptyDesc: "Chúng tôi đang lựa chọn nhà hàng cho {city}.",
       cityEmptySubtitle: "Thêm một số nhà hàng để bắt đầu khám phá",
       dataSourcesDesc: "Những nguồn này có thể giúp bạn tìm hiểu thêm về văn hóa ẩm thực của {city}:",
       dataSourcesHeading: "Nguồn tham khảo",
+      empty: "Không có thành phố nào khớp với bộ lọc này.",
       emptyCta: "Xem tất cả các nhà hàng",
       emptyDesc: "Không có nhà hàng nào trong danh mục này. Hãy thử một bộ lọc khác.",
       emptyTitle: "Chưa có nhà hàng nào",
+      essentialFoodApps: "Ứng dụng ẩm thực cần thiết",
+      essentialFoodAppsDesc: "Tải xuống các ứng dụng này để đặt giao hàng thức ăn và khám phá các nhà hàng địa phương với thực đơn bằng tiếng Anh.",
       exploreFood: "Khám phá Ẩm thực",
+      filterAll: "Tất cả",
       filterBlackPearl: "Hạt Đen",
       filterBudget: "Ngân sách",
       filterCasual: "Thông thường",
       filterLocal: "Ưa thích địa phương",
       filterMichelin: "Michelin",
+      filterStreetFood: "Đồ ăn đường phố",
       filteringLabel: "Đang lọc:",
       heroCityFood: "{city} Food",
       indexTitle: "🍜 China Food Map",
@@ -3871,25 +5385,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "Điều hướng",
       noCityTitle: "Không tìm thấy thành phố bạn muốn?",
       otherRestaurants: "Những nhà hàng khác ở {city}",
+      pageDescription: "Khám phá những món ăn được yêu thích nhất của Trung Quốc, các thành phố được lựa chọn và các nhà hàng được chọn lọc",
+      pageTitle: "Bản đồ ẩm thực Trung Quốc - ChinaConnect",
       perPerson: "/người",
+      proTipsFoodApps: "Mẹo chuyên nghiệp cho các ứng dụng ẩm thực",
       restaurantsUnit: "nhà hàng",
       showingCount: "Đang hiển thị",
-      subtitle: "Michelin, Black Pearl và địa điểm yêu thích của địa phương"
+      subtitle: "Michelin, Black Pearl và địa điểm yêu thích của địa phương",
+      tipDianping: "Dianping rất tốt để tìm những món ăn địa phương được yêu thích với đánh giá bằng tiếng Anh.",
+      tipEleme: "Ele.me cung cấp phạm vi giao hàng rộng nhất nhưng có thể mặc định là tiếng Trung.",
+      tipLinkCard: "Liên kết thẻ nước ngoài của bạn với Alipay/WeChat Pay trước khi đặt hàng.",
+      tipMeituan: "Meituan có bản dịch thực đơn bằng tiếng Anh cho nhiều nhà hàng.",
+      title: "Bản đồ ẩm thực Trung Quốc",
+      viewAllCities: "Xem tất cả các thành phố"
     },
     footer: {
       accommodation: "Lưu trú",
       aiAssistant: "Trợ lý AI",
+      allRightsReserved: "Tất cả các quyền đều được bảo lưu.",
       attractions: "Điểm tham quan",
       cities: "Thành phố",
+      citiesListLabel: "Các thành phố phổ biến",
+      cityBeijing: "Bắc Kinh",
+      cityChengdu: "Thành Đô",
+      cityChongqing: "Thành phố Trùng Khánh",
+      cityDalian: "Đại Liên",
+      cityGuangzhou: "Quảng Châu",
+      cityGuilin: "Quế Lâm",
+      cityHangzhou: "Hàng Châu",
+      cityHarbin: "Cáp Nhĩ Tân",
+      cityKunming: "Côn Minh",
+      cityLijiang: "Lệ Giang",
+      cityQingdao: "Thành phố Thanh Đảo",
+      cityShanghai: "Thượng Hải",
+      cityShenzhen: "Thâm Quyến",
+      citySuzhou: "Tô Châu",
+      cityTianjin: "Thiên Tân",
+      cityXian: "Tây An",
+      companyLabel: "Công ty",
+      contact: "Liên hệ",
+      copyright: "Bản quyền",
       culturalTips: "Mẹo về văn hóa",
       description: "Hướng dẫn đáng tin cậy cho việc khám phá Trung Quốc. Gợi ý nhà hàng dựa trên AI, hướng dẫn thành phố, mẹo du lịch.",
+      diningGuide: "Hướng dẫn ăn uống",
       emergency: "Liên hệ khẩn cấp",
       guides: "Hướng dẫn du lịch",
+      guidesLabel: "Cẩm nang du lịch",
       payment: "Thanh toán",
+      privacy: "Quyền riêng tư",
       resources: "Tài nguyên",
+      resourcesLabel: "Tài nguyên",
       restaurants: "Nhà hàng",
+      terms: "Điều khoản",
       transport: "Giao thông",
-      viewAllCities: "Xem tất cả các thành phố"
+      viewAllCities: "Xem tất cả các thành phố",
+      visaGuide: "Hướng dẫn visa"
+    },
+    guide: {
+      attractionsPageTitle: "Các điểm nổi bật hàng đầu tại Trung Quốc",
+      attractionsTitle: "Các điểm nổi bật hàng đầu tại Trung Quốc",
+      beijingGuide: "Bắc Kinh",
+      foodGuide: "Hướng dẫn ẩm thực",
+      scamPrevention: "Phòng chống lừa đảo"
     },
     guidePage: {
       accommodationStageDescription: "Tìm và đặt chỗ lưu trú phù hợp với mọi ngân sách.",
@@ -3897,7 +5454,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "Lưu trú - Khách sạn, nhà trọ và mẹo đặt chỗ",
       accommodationTitleShort: "Hướng dẫn Lưu trú",
       attractionsSubtitle: "Địa điểm bắt buộc và những viên ngọc kín đáo",
+      attractionsTitle: "Các điểm nổi bật hàng đầu",
       backHome: "Về trang chủ",
+      beginnerDesc: "Lập kế hoạch cho chuyến đi đầu tiên của bạn với đầy đủ sự tự tin.",
+      beginnerTraveler: "Khách mới đến",
+      businessDesc: "Công cụ cho các cuộc họp, thanh toán và nghi lễ.",
+      businessTitle: "Du lịch công tác",
+      businessTraveler: "Khách du lịch công tác",
+      cardReadTime: "{minutes} phút đọc",
       cityBeijing: "Bắc Kinh",
       cityChengdu: "Thành Đô",
       cityShanghai: "Thượng Hải",
@@ -3908,6 +5472,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "Hướng dẫn Giao tiếp",
       culturalWarningsSubtitle: "Những điểm khác biệt văn hóa và lỗi lầm cần tránh",
       culturalWarningsTitleShort: "Cảnh báo Văn hóa",
+      cultureTitle: "Mẹo văn hóa",
       departureStageDescription: "Hoàn thuế, hải quan và lời khuyên cuối cùng trước khi bạn bay về nhà.",
       departureStageTitle: "7. Khởi hành",
       departureSubtitle: "Khởi hành - Hoàn thuế và rời Trung Quốc",
@@ -3923,8 +5488,9 @@ export const translations: Record<Language, Translations> = {
       emergencyStageDescription: "Liên hệ cấp cứu và từ điển cấp bách cho các tình huống khẩn cấp.",
       emergencyStageTitle: "6. Khẩn cấp",
       emergencySubtitle: "Khẩn cấp - Công an, cấp cứu, liên hệ đại sứ quán",
-      emergencyTitleShort: "Emergency Guide",
+      emergencyTitleShort: "Hướng dẫn khẩn cấp",
       emergencyTourism: "Dịch vụ Hội tổng đài Du lịch 12301",
+      foodTitle: "Hướng dẫn ẩm thực",
       home: "← Quay về Trang chủ",
       indexBusinessHeading: "🚀 Công cụ Du lịch Thương mại",
       indexBusinessSubtitle: "Từ lời mời đến cách ứng xử thương mại — tất cả những gì bạn cần cho việc làm ăn ở Trung Quốc.",
@@ -3932,23 +5498,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "Hướng dẫn du lịch Trung Quốc hoàn chỉnh — Từ chuẩn bị khởi hành đến lúc rời đất nước.",
       indexHeroTitle: "🇨🇳 Hướng dẫn du lịch Trung Quốc hoàn chỉnh",
       indexStagesTitle: "8 Giai đoạn để có một chuyến đi Trung Quốc suôn sẻ",
+      longStay: "Lưu trú dài hạn",
+      longStayDesc: "Hòa nhập với hướng dẫn thị thực, ngân hàng và nơi ở.",
+      pageDescription: "Tất cả những gì bạn cần để lên kế hoạch, đặt chỗ và tận hưởng chuyến đi của bạn đến Trung Quốc",
+      pageTitle: "Cẩm nang du lịch Trung Quốc - ChinaConnect",
       paymentStageDescription: "Thiết lập Alipay và WeChat Pay trước khi bạn đến nước ngoài.",
       paymentStageTitle: "2. Thiết lập thanh toán",
       paymentSubtitle: "Thanh toán - Alipay, WeChat Pay và mẹo vặt về tiền mặt",
+      paymentTitle: "Thanh toán & tiền mặt",
       paymentTitleShort: "Hướng dẫn thanh toán",
       popularByCity: "Phổ biến theo thành phố",
       quickBeijingDesc: "Điểm nổi bật của thủ đô và những món ăn nên thử",
       quickFoodDesc: "Nhà hàng Michelin, Black Pearl và những món ăn địa phương yêu thích",
       quickScamDesc: "Những lừa đảo phổ biến và cách tránh chúng",
+      safetyTitle: "An toàn",
       scamPreventionSubtitle: "Bảo vệ bản thân khỏi những lừa đảo phổ biến ở Trung Quốc",
       scamPreventionTitleShort: "Phòng chống lừa đảo",
+      subtitle: "Tất cả những gì bạn cần để lên kế hoạch, đặt chỗ và tận hưởng chuyến đi của bạn đến Trung Quốc.",
+      title: "Cẩm nang du lịch Trung Quốc",
       transparencySubtitle: "Biết giá cả hợp lý, tránh bị chèn phụ",
       transparencyTitleShort: "Minh bạch về giá cả",
       transportStageDescription: "Làm quen với các phương tiện giao thông đường bộ, tàu cao tốc và các ứng dụng đặt xe.",
       transportStageTitle: "4. Giao thông",
       transportSubtitle: "Giao thông - Đi lại khắp Trung Quốc với tự tin",
+      transportTitle: "Di chuyển",
       transportTitleShort: "Hướng dẫn giao thông",
       travelGuide: "Hướng dẫn du lịch",
+      travelerType: "Loại hình du lịch",
+      viewAll: "Xem tất cả các cẩm nang",
       viewAllBusinessTools: "Xem tất cả các công cụ kinh doanh",
       viewAllBusinessToolsCta: "Mở Business Express",
       viewAllBusinessToolsDesc: "Kiểm tra tất cả các công cụ kinh doanh với các thống kê chi tiết và hướng dẫn nhanh.",
@@ -3957,23 +5534,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "Tất cả những gì bạn cần trước khi lên máy bay.",
       visaStageTitle: "1. Thị thực & Nhập cảnh",
       visaSubtitle: "Thị thực - Hướng dẫn hoàn chỉnh để nhập cảnh Trung Quốc",
+      visaTitle: "Thị thực & nhập cảnh",
       visaTitleShort: "Hướng dẫn thị thực"
+    },
+    guideTopic: {
+      backToGuide: "Quay lại cẩm nang",
+      contactCta: "Liên hệ hỗ trợ",
+      lastUpdated: "Cập nhật lần cuối",
+      needHelp: "Cần giúp đỡ?",
+      relatedArticles: "Bài viết liên quan"
     },
     home: {
       chatWithAI: "Trò chuyện với AI",
       citiesSubtitle: "Từ kinh đô cổ đến đô thị hiện đại, khám phá những thành phố đỉnh nhất của Trung Quốc với hướng dẫn toàn diện.",
       citiesTitle: "Khám phá Các Thành Phố",
+      clearHistory: "Xóa lịch sử",
       ctaSubtitle: "Bắt đầu lập kế hoạch chuyến đi với các đề xuất hỗ trợ bởi AI.",
       ctaTitle: "Sẵn sàng khám phá Trung Quốc chưa?",
+      discoverSubtitle: "Khám phá những điểm đến tuyệt vời nhất của Trung Quốc với các hướng dẫn thành phố hỗ trợ AI và các nhà hàng được tuyển chọn.",
+      exploreAiChat: "Khám phá AI Hướng dẫn Trung Quốc",
       exploreBeijing: "Khám phá Bắc Kinh",
       exploreCities: "Khám phá Các Thành Phố",
+      exploreCityButton: "Khám phá thành phố",
       exploreGuide: "Xem hướng dẫn hoàn chỉnh",
+      featuredCitiesLabel: "Nổi bật",
+      featuredSection: "Điểm đến nổi bật",
       featuresSubtitle: "Tất cả những gì bạn cần cho một chuyến đi tuyệt vời",
       featuresTitle: "Tất cả những gì bạn cần cho chuyến đi Trung Quốc của bạn",
+      heroBadge: "Hướng dẫn du lịch Trung Quốc hỗ trợ AI",
       heroCTA: "Hỏi AI về lời khuyên cho chuyến đi",
       heroDesc: "Nhà hàng Michelin và Black Pearl, điểm tham quan, mẹo giao thông, thông tin liên lạc khẩn cấp — được AI và người dân địa phương lựa chọn.",
       heroSubtitle: "Hướng dẫn đáng tin cậy đến các thành phố đỉnh nhất của Trung Quốc",
       heroTitle: "Hướng dẫn Trung Quốc hỗ trợ bởi AI",
+      noRecentViews: "Chưa có xem gần đây.",
       onboarding1Desc: "Tìm kiếm nhà hàng Michelin và Black Pearl ở 12 thành phố Trung Quốc.",
       onboarding1Title: "Khám phá Món Ngon",
       onboarding2Title: "Mẹo hỗ trợ bởi AI",
@@ -3981,14 +5574,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "Hoàn thành",
       onboardingNext: "Tiếp Theo",
       onboardingSkip: "Bỏ Qua",
+      pageDescription: "Khám phá Trung Quốc cùng các hướng dẫn thành phố hỗ trợ bởi AI. Tìm nhà hàng ngon (Michelin & Black Pearl), điểm tham quan, thông tin giao thông và liên lạc khẩn cấp tại 12 thành phố lớn của Trung Quốc bao gồm Bắc Kinh, Thượng Hải, Quảng Châu, Tây An, Thàm Châu và nhiều nơi khác.",
       pageTitle: "ChinaConnect - Hướng dẫn Trung Quốc với AI",
+      popularCities: "Các thành phố phổ biến",
+      popularCitiesSubtitle: "Khám phá những điểm đến được yêu thích nhất ở Trung Quốc",
+      popularRestaurants: "Nhà hàng phổ biến",
+      popularRestaurantsSubtitle: "Những món ăn yêu thích của Michelin và Black Pearl trên khắp Trung Quốc",
       recentlyViewed: "Đã Xem Gần Đây",
       recommendedForYou: "Đề xuất cho bạn",
+      startPlanningToday: "Bắt đầu lên kế hoạch cho chuyến đi của bạn ngay hôm nay.",
       statsAI: "Hỗ trợ bởi AI",
       statsAttractions: "Điểm tham quan hàng đầu",
       statsCities: "Thành phố được bao phủ",
       statsRestaurants: "Nhà hàng Michelin",
-      viewAllCities: "Xem Tất Cả Các Thành Phố"
+      viewAllCities: "Xem Tất Cả Các Thành Phố",
+      viewAllCitiesButton: "Xem tất cả các thành phố"
+    },
+    index: {
+      featuredDestinations: "Dựa trên các điểm đến phổ biến"
     },
     language: {
       chinese: "Tiếng Trung",
@@ -4000,6 +5603,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "Chuyển sang"
     },
+    loginPage: {
+      pageDescription: "Đăng nhập vào ChinaConnect",
+      pageTitle: "Đăng nhập - ChinaConnect"
+    },
     nav: {
       aiChat: "Hướng dẫn AI Trung Quốc",
       attractions: "Điểm tham quan",
@@ -4009,6 +5616,7 @@ export const translations: Record<Language, Translations> = {
       home: "Trang chủ",
       restaurants: "Nhà hàng",
       selectLanguage: "Chọn ngôn ngữ",
+      signIn: "Đăng nhập",
       tagline: "Khám phá Trung Quốc cùng AI"
     },
     notFound: {
@@ -4018,12 +5626,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "Khám phá các thành phố",
       goHome: "Về trang chủ",
       heading: "404",
+      homeButton: "Quay về trang chủ",
       letsContinue: "Hãy tiếp tục khám phá Trung Quốc",
       primary: "Không tìm thấy trang",
-      title: "Không tìm thấy trang - ChinaConnect"
+      subtitle: "Trang bạn đang tìm kiếm không tồn tại hoặc đã di chuyển.",
+      title: "Không tìm thấy trang - ChinaConnect",
+      titleShort: "404",
+      viewCities: "Xem các thành phố"
+    },
+    offline: {
+      cachedPages: "Các trang đã lưu trong bộ nhớ đệm vẫn khả dụng.",
+      retryButton: "Thử lại",
+      subtitle: "Có vẻ như bạn đã mất kết nối internet.",
+      title: "Bạn đang ngoại tuyến",
+      viewHome: "Xem trang chủ"
     },
     offlinePage: {
+      ambulanceDesc: "Cấp cứu y tế, thương tích",
+      availableOffline: "Có sẵn ngoại tuyến",
+      bannerDesc: "Các liên hệ khẩn cấp và thông tin thiết yếu vẫn khả dụng",
       bannerTitle: "Chế độ ngoại tuyến",
+      emergencyNumbers: "Số điện thoại khẩn cấp (Trung Quốc)",
+      emergencyPhrases: "Câu nói khẩn cấp nhanh",
+      fireDesc: "Chữa cháy, cứu hộ, chất nguy hiểm",
+      lastSynced: "Đồng bộ lần cuối:",
       phrase1En: "Cứu với!",
       phrase2En: "Gọi cảnh sát!",
       phrase3En: "Tôi cần một xe cứu thương",
@@ -4031,6 +5657,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "Tôi bị lạc",
       phrase6En: "Tôi cần giúp đỡ",
       phrase7En: "Bệnh viện ở đâu?",
+      phrasesHelp: "Hiển thị các câu nói khẩn cấp thông thường",
+      phrasesTip: "Hiển thị các câu nói này nếu bạn cần giúp đỡ",
+      policeDesc: "Tội phạm, khẩn cấp, an ninh công cộng",
+      quickActions: "Hành động nhanh",
+      tapToCall: "Nhấn vào bất kỳ số nào để gọi ngay",
       tipsHeading: "Mẹo du lịch khi ngoại tuyến",
       tipsList1: "Lưu các cụm từ và địa chỉ quan trọng trước khi ra ngoài.",
       tipsList2: "Tải xuống bản đồ ngoại tuyến trong ứng dụng bản đồ của bạn.",
@@ -4039,11 +5670,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "Hầu hết các quán cafe và trung tâm thương mại đều có Wi-Fi miễn phí.",
       tipsList6: "Luôn mang theo một quyển sổ nhỏ để ghi địa chỉ.",
       title: "Bạn đang ngoại tuyến",
+      title2: "ChinaConnect Khẩn cấp SOS - Hoạt động Ngoại tuyến",
+      trafficDesc: "Chỉ tai nạn giao thông",
       tryAgain: "Thử lại"
     },
     onboarding: {
       done: "Hoàn thành",
       getStarted: "Bắt đầu",
+      neverShow: "Không hiển thị lại",
       next: "Tiếp theo",
       skip: "Bỏ qua",
       step1Desc: "Tìm các nhà hàng Michelin và Black Pearl ở 12 thành phố Trung Quốc.",
@@ -4055,6 +5689,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "Chào mừng đến với ChinaConnect!"
     },
     pricing: {
+      annualNote: "Hóa đơn hàng năm với giá ¥659 (tiết kiệm ¥169)",
       autoRenewNote: "Tự động gia hạn, có thể hủy bất cứ lúc nào",
       billingAnnual: "Hàng năm",
       billingMonthly: "Hàng tháng",
@@ -4072,6 +5707,7 @@ export const translations: Record<Language, Translations> = {
         name: "Doanh nghiệp",
         price: "$29.99"
       },
+      cancelAnytime: "Hủy bất cứ lúc nào",
       cancelledNotice: "Thanh toán đã bị hủy. Bạn có thể thử lại bên dưới.",
       compareFeatures: {
         advancedTools: "Công cụ du lịch nâng cao",
@@ -4086,6 +5722,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "Xác nhận rõ ràng nội dung được bao gồm trong từng gói.",
       compareTitle: "So sánh tất cả các tính năng",
+      ctaButton: "Bắt đầu",
       ctaPrimary: "Bắt đầu miễn phí ngay hôm nay",
       ctaSecondary: "Khám phá các tính năng",
       ctaSubtitle: "Tham gia hàng ngàn du khách đang lập kế hoạch cho chuyến du lịch Trung Quốc với AI.",
@@ -4103,14 +5740,44 @@ export const translations: Record<Language, Translations> = {
         name: "Khám phá",
         price: "$4.99"
       },
+      faq: "Câu hỏi thường gặp",
+      faq1A: "Có, bạn có thể hủy bỏ từ tài khoản của bạn bất cứ lúc nào. Các kế hoạch hàng năm có thể hoàn lại trong vòng 30 ngày.",
       faq1Q: "Làm thế nào để tôi nâng cấp hoặc hạ cấp gói của mình?",
+      faq2A: "Hoàn toàn có thể - nâng cấp hoặc hạ cấp bất cứ lúc nào. Phần tín dụng tỷ lệ thuận được áp dụng tự động.",
       faq2Q: "Làm thế nào để tôi hủy đăng ký của mình?",
+      faq3A: "Kế hoạch miễn phí bao gồm tất cả các thành phố, 5 yêu cầu AI mỗi tháng, kế hoạch lộ trình cơ bản và các tuyến đường đã lưu.",
       faq3Q: "Chính sách hoàn tiền của bạn như thế nào?",
+      faq4A: "Chúng tôi chấp nhận Visa, Mastercard, Alipay, WeChat Pay và các thẻ địa phương chính.",
       faq4Q: "Khi nào mức định kỳ hàng tháng của tôi được làm mới?",
+      faq5A: "Có - chúng tôi sử dụng mã hóa cấp ngân hàng và không bán dữ liệu cá nhân của bạn.",
       faq5Q: "Điều gì sẽ xảy ra khi tôi đạt giới hạn yêu cầu AI?",
+      faq6A: "Có, sinh viên có email .edu hợp lệ được giảm 50% giá trên kế hoạch Traveler.",
       faq6Q: "Bạn chấp nhận phương thức thanh toán nào?",
       faqSubtitle: "Tất cả những gì bạn cần biết về các gói và hóa đơn của chúng tôi",
       faqTitle: "Câu hỏi thường gặp",
+      featureAdvancedTools: "Công cụ du lịch nâng cao",
+      featureAiRequestsBusiness: "Hội thoại AI không giới hạn",
+      featureAiRequestsExplorer: "20 yêu cầu AI mỗi tháng",
+      featureAiRequestsFree: "5 yêu cầu AI mỗi tháng",
+      featureAiRequestsPro: "100 yêu cầu AI mỗi tháng",
+      featureAllTravelerFeatures: "Tất cả các tính năng Traveler",
+      featureApi: "Truy cập API",
+      featureBasicPlanning: "Lập kế hoạch du lịch cơ bản",
+      featureBusinessTemplates: "Mẫu kinh doanh",
+      featureCancelAnytime: "Hủy bất cứ lúc nào",
+      featureConversationHistory: "Lịch sử hội thoại",
+      featureCustomIntegrations: "Tích hợp tùy chỉnh",
+      featureDedicated: "Hỗ trợ dành riêng",
+      featureExportPdf: "Xuất PDF",
+      featureMultiCity: "Lịch trình nhiều thành phố",
+      featurePdfExport: "Xuất PDF",
+      featurePremiumCustomization: "Tùy chỉnh cao cấp",
+      featurePrioritySupport: "Hỗ trợ ưu tiên",
+      featureSaveItineraries: "Lưu lịch trình",
+      featureSecurePayments: "Thanh toán an toàn",
+      featureTeamCollab: "Cộng tác nhóm",
+      featureTeamManagement: "Quản lý nhóm",
+      featureViewItineraries: "Xem lịch trình",
       free: {
         description: "Bắt đầu lập kế hoạch cơ bản",
         feature1: "5 yêu cầu AI mỗi tháng",
@@ -4121,24 +5788,40 @@ export const translations: Record<Language, Translations> = {
         name: "Miễn phí"
       },
       freeForever: "Miễn phí mãi mãi",
+      heroBadge: "Bảng giá",
       heroSubtitle: "Từ du lịch miễn phí đến kế hoạch chuyên nghiệp, chọn gói phù hợp với phong cách của bạn.",
       heroTitle: "Giá cả đơn giản, minh bạch",
+      moneyBack: "Hoàn lại tiền trong 30 ngày",
+      planBusiness: "Doanh nghiệp",
+      planExplorer: "Khám phá",
+      planFree: "Miễn phí",
+      planPro: "Chuyên nghiệp",
+      planTraveler: "Du khách",
       popularBadge: "Phổ biến nhất",
       priceFree: "$0",
+      pro: {
+        description: "Dành cho du khách năng động"
+      },
       saveBadge: "Tiết kiệm 20%",
       savingsHint: "Đăng ký hàng năm để tiết kiệm 20%",
+      securePayment: "Thanh toán an toàn",
       subscribeNow: "Đăng ký ngay",
+      testimonial1: "ChinaConnect đã tiết kiệm cho tôi hàng giờ nghiên cứu. Các tuyến đường hỗ trợ AI là rất chính xác.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "Hoa Kỳ",
       testimonial1Role: "Gói Khám phá",
+      testimonial2: "Là một nhân viên du lịch kinh doanh, công cụ dịch giả và các công cụ họp là vô giá.",
       testimonial2Author: "Li Wei T.",
       testimonial2Country: "Vương Quốc Anh",
       testimonial2Role: "Gói Dành cho Doanh Nghiệp",
+      testimonial3: "Người bạn đồng hành du lịch tuyệt vời nhất mà tôi đã sử dụng ở Trung Quốc.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "Đức",
       testimonial3Role: "Gói Dành cho Du Lịch",
+      testimonials: "Những gì du khách nói",
       testimonialsSubtitle: "Hãy nghe những gì người dùng nói về trải nghiệm của họ với ChinaConnect",
       testimonialsTitle: "Được yêu thích trên toàn thế giới",
+      title: "Bảng giá",
       traveler: {
         annualNote: "Được tính phí $95.99/năm (tiết kiệm $24)",
         description: "Dành cho những người thường xuyên đến thăm Trung Quốc",
@@ -4155,11 +5838,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "Hoàn tiền trong 30 ngày",
         securePayment: "Thanh toán an toàn"
       },
+      trustCancelAnytime: "Hủy bất cứ lúc nào",
+      trustInstantAccess: "Truy cập ngay lập tức",
+      trustSecurePayments: "Thanh toán an toàn",
       trustedBy: "Được tin tưởng bởi hơn 10,000 du khách",
       unlimited: "Không giới hạn"
     },
     profilePage: {
-      title: "Hồ sơ của tôi - ChinaConnect"
+      displayName: "Tên hiển thị",
+      heading: "Hồ sơ",
+      pageTitle2: "Hồ sơ của tôi",
+      save: "Lưu thay đổi",
+      saved: "Đã lưu!",
+      subtitle: "Cập nhật tên hiển thị, ảnh đại diện và cài đặt của bạn.",
+      title: "Hồ sơ của tôi - ChinaConnect",
+      uploadAvatar: "Tải lên avatar"
     },
     recents: {
       clearAll: "Xóa hết",
@@ -4196,6 +5889,22 @@ export const translations: Record<Language, Translations> = {
       username: "Tên người dùng",
       usernamePlaceholder: "Tên hiển thị của bạn"
     },
+    registerPage: {
+      pageDescription: "Tạo tài khoản ChinaConnect của bạn",
+      pageTitle: "Đăng ký - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Địa chỉ",
+      avgPrice: "Giá trung bình",
+      back: "Quay lại",
+      cuisine: "Ẩm thực",
+      hours: "Giờ mở cửa",
+      metaFooter: "Gợi ý ẩm thực từ ChinaConnect",
+      otherNearby: "Những nhà hàng khác gần đây",
+      rating: "Đánh giá",
+      signatureDishes: "Những món ăn đặc trưng",
+      viewOnMap: "Xem trên bản đồ"
+    },
     restaurants: {
       address: "Địa chỉ",
       avgPrice: "Giá trung bình",
@@ -4221,12 +5930,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Chia sẻ với bạn bè"
     },
     userPage: {
+      heading: "Hồ sơ",
+      pageTitle2: "Hồ sơ người dùng",
       title: "Hồ sơ người dùng - ChinaConnect"
     }
   },
   ru: {
     accountPage: {
       active: "Активный",
+      activeLabel: "Активный",
       aiRequestsThisMonth: "Запросы к ИИ в этом месяце",
       alertSignOutError: "Не удалось открыть управление подпиской. Пожалуйста, свяжитесь со службой поддержки.",
       currentPlan: "Текущий план",
@@ -4238,6 +5950,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "Пока нет заказов.",
       emptySavedRoutes: "Пока нет сохраненных маршрутов.",
       emptySavedRoutesHint: "Пока нет сохраненных маршрутов. Начните разговор с ИИ, чтобы создать маршруты!",
+      explorerBadge: "Исследователь",
       loading: "Загрузка вашей учетной записи...",
       manageSubscription: "Управление подпиской",
       membership: "Членство",
@@ -4247,6 +5960,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "Статус",
       orderHeaderType: "Тип",
       pageTitle: "Мой аккаунт - ChinaConnect",
+      pageTitleSuffix: "Мой аккаунт - ChinaConnect",
       pointsUnit: "баллов",
       renewsOn: "Обновляется",
       savedLocally: "Сохранено только локально",
@@ -4257,27 +5971,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "Требуется вход",
       signInRequiredDesc: "Пожалуйста, войдите, чтобы просмотреть свою учетную запись.",
       signOut: "Выйти",
+      statAiUsage: "Использование ИИ сегодня",
+      statFavorites: "Избранное",
       statSavedRoutes: "Сохраненные маршруты",
+      subtitle: "Управляйте своей подпиской, избранным и сохраненными маршрутами.",
       syncedToCloud: "Синхронизировано с облаком",
       tabBilling: "Счета",
+      tabFavorites: "Избранное",
+      tabOrders: "Заказы",
       tabOverview: "Обзор",
       tabPlans: "Планы",
+      tabRoutes: "Маршруты",
       tabUsage: "Использование",
+      title: "Мой аккаунт",
       untitledRoute: "Без названия",
       upgrade: "Обновить",
       usageDailyAi: "Ежедневные запросы к ИИ",
       usageFavorites: "Избранное",
       usageSavedRoutes: "Сохраненные маршруты",
+      userBadge: "Пользователь",
       walletBalance: "Баланс кошелька"
+    },
+    ai: {
+      send: "Отправить",
+      thinking: "Думаю..."
     },
     aiPage: {
       authFailed: "Ошибка аутентификации",
       authGateSignupTitle: "Создайте свою учетную запись",
       authGateTitle: "Войдите в чат",
+      chatInputPlaceholder: "Спросите о ресторанах, транспорте, достопримечательностях...",
+      conversationHistory: "История беседы",
       conversationsTitle: "Беседы",
       deleteConfirm: "Удалить эту беседу?",
       deleteTitle: "Удалить",
       emailPlaceholder: "you@example.com",
+      exportPdf: "Экспорт в PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "Уже есть учетная запись?",
@@ -4286,13 +6015,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "Скрыть боковую панель",
       messageLabel: "сообщение",
       messagesLabel: "сообщения",
+      newChat: "Новый чат",
       newChatButton: "+ Новый чат",
       noAccountPrompt: "Еще нет учетной записи?",
       noConversationsYet: "Пока нет бесед",
       orContinueWith: "или",
+      pageDescription: "Задайте любой вопрос о путешествиях по Китаю.",
+      pageTitle: "Виртуальный консьерж для путешествий - ChinaConnect",
       passwordPlaceholder: "Пароль (минимум 6 символов)",
       promptsSubtitle: "Выберите подсказку или введите свою ниже",
       promptsTitle: "Попробуйте спросить",
+      saveRoute: "Сохранить маршрут",
+      sendButton: "Отправить",
       showSidebarTitle: "Показать беседы",
       signInButton: "Войти",
       signUpButton: "Создать аккаунт",
@@ -4300,27 +6034,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "AI поможет спланировать поездку в Китай",
       switchToSignIn: "Войти",
       switchToSignUp: "Создать один",
-      title: "ChinaGuide AI - Ваш умный помощник по путешествиям в Китай"
+      thinking: "Думаю...",
+      title: "ChinaGuide AI - Ваш умный помощник по путешествиям в Китай",
+      upgradePrompt: "Зарегистрируйтесь, чтобы разблокировать больше запросов к ИИ.",
+      usageToday: "Использование сегодня"
     },
     attractions: {
       allCities: "Все города с достопримечательностями",
+      appSubtitle: "Полезные приложения для передвижения и поиска достопримечательностей",
+      appTitle: "Планируйте свое путешествие",
+      attractionCount: "{count} достопримечательности",
       browseCategory: "Поиск по категориям",
+      citiesCount: "{count} городов",
+      diversityTypes: "Исторические, культурные, природные, современные",
+      featured: "Города-избранные",
       featuredCities: "Основные города",
+      heroEyebrow: "Исследуйте по направлениям",
+      openCity: "Открыть город",
+      pageDescription: "Достопримечательности Китая, которые обязательно нужно посетить — от древних памятников до природных чудес.",
+      pageTitle: "Достопримечательности Китая - ChinaConnect",
       subtitle: "Достопримечательности, которые необходимо посетить — от древних памятников до чудес природы",
-      title: "Достопримечательности Китая"
+      title: "Достопримечательности Китая",
+      viewAll: "Просмотреть все достопримечательности"
     },
     auth: {
+      continueWithGithub: "Продолжить с GitHub",
+      continueWithGoogle: "Продолжить с Google",
+      email: "Электронная почта",
       myAccount: "Мой аккаунт",
+      needHelp: "Нужна помощь при входе?",
+      orContinueWithEmail: "Или продолжить с электронной почтой",
+      password: "Пароль",
+      profile: "Профиль",
       profileCenter: "Центр профиля",
       signIn: "Войти",
-      signOut: "Выйти"
+      signInButton: "Войти",
+      signOut: "Выйти",
+      signOutConfirm: "Выйти из ChinaConnect?",
+      subtitle: "Сохраняйте избранное, планируйте поездки и общайтесь с ИИ.",
+      title: "Войти в ChinaConnect"
     },
     authPage: {
       authTitle: "Вход / Регистрация - ChinaConnect",
       callbackTitle: "Вход...",
+      continueWithEmail: "Или продолжить с электронной почтой",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "Что-то пошло не так. Пожалуйста, попробуйте еще раз.",
       errorTitle: "Ошибка аутентификации",
+      forgotPassword: "Забыли пароль?",
       loginTitle: "Вход - ChinaConnect",
-      signingYouIn: "Вход..."
+      needAccount: "Нет аккаунта?",
+      passwordPlaceholder: "Ваш пароль",
+      signInButton: "Войти",
+      signInError: "Вход не удался. Пожалуйста, попробуйте снова.",
+      signUpButton: "Зарегистрироваться",
+      signUpError: "Регистрация не удалась. Пожалуйста, попробуйте снова.",
+      signingYouIn: "Вход...",
+      successDesc: "Сейчас вы будете перенаправлены...",
+      successTitle: "С возвращаем!"
     },
     businessGuidePage: {
       backToGuide: "← Назад к Путеводителю",
@@ -4345,77 +6116,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← Назад к ценообразованию",
+      continueButton: "Перейти к вашему аккаунту",
       description: "Ваша подписка успешно активирована",
       errorDesc: "Мы не смогли обработать ваш платеж. Пожалуйста, повторите попытку или свяжитесь со службой поддержки.",
       errorTitle: "Что-то пошло не так",
+      processing: "Обработка вашего платежа...",
       processingDesc: "Пожалуйста, подождите, пока мы подтвердим вашу подписку.",
       startPlanning: "Начать планирование",
       successAccess: "Теперь у вас есть доступ ко всем функциям вашего нового плана.",
       successDesc: "Ваша подписка активирована.",
       successTitle: "Оплата успешна!",
+      thankYou: "Спасибо, что выбрали ChinaConnect.",
       title: "Оплата успешна - ChinaConnect",
       viewAccount: "Просмотреть аккаунт"
     },
     cities: {
       attractions: "Достопримечательности",
+      citiesCount: "Города",
+      citiesInChina: "Города в Китае",
       culturalTips: "Культурные советы",
       emergency: "Чрезвычайные ситуации",
+      exploreAll: "Исследовать все",
       exploreGuide: "Исследуйте Гид",
+      filterATier: "A-уровень",
+      filterAll: "Все",
+      filterDTier: "D-уровень",
+      filterSTier: "S-уровень",
+      headerSubtitle: "От древних столиц до современных мегаполисов — выберите свое направление.",
+      headerTitle: "Исследуйте китайские города",
       hotels: "Отели",
+      noResults: "Города не соответствуют вашим фильтрам.",
       openingHours: "Часы работы",
+      pageDescription: "Исследуйте все китайские города, охваченные ChinaConnect — от древних столиц до современных мегаполисов. Города премиум-класса S-уровня, полупремиум A-уровня и по запросу D-уровня.",
+      pageTitle: "Исследуйте все города - ChinaConnect",
       payment: "Оплата",
+      population: "Население",
       recommendedTime: "Рекомендуемое время посещения",
+      region: "Регион",
       restaurants: "Рестораны",
+      searchPlaceholder: "Поиск городов...",
       subtitle: "От древних столиц до современных мегаполисов",
       ticketPrice: "Билет",
       title: "Исследуйте наши города",
-      transport: "Транспорт"
+      transport: "Транспорт",
+      viewCity: "Просмотреть город"
+    },
+    city: {
+      beijing: {
+        name: "Пекин"
+      },
+      chengdu: {
+        name: "Чэнду"
+      },
+      chongqing: {
+        name: "Чунцин"
+      },
+      guangzhou: {
+        name: "Гуанчжоу"
+      },
+      guilin: {
+        name: "Гуйлинь"
+      },
+      hangzhou: {
+        name: "Ханчжоу"
+      },
+      lijiang: {
+        name: "Лицзян"
+      },
+      qingdao: {
+        name: "Циндао"
+      },
+      shanghai: {
+        name: "Шанхай"
+      },
+      shenzhen: {
+        name: "Шэньчжэнь"
+      },
+      suzhou: {
+        name: "Сучжоу"
+      },
+      xian: {
+        name: "Сиань"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "Все",
+      categoryLabel: "Категория",
+      disclaimer: "Часы работы, цены на билеты и номера телефонов могут измениться. Мы рекомендуем проверять информацию на официальном сайте достопримечательности или уточнять по телефону.",
+      openOnMap: "Открыть на карте",
+      openingHours: "Часы работы",
+      subtitle: "Обязательные к посещению достопримечательности, музеи и чудеса природы.",
+      ticketPrice: "Цена билета",
+      tipsHeader: "Советы",
+      title: "Достопримечательности в {city}",
+      viewAll: "Просмотреть все достопримечательности в {city}",
+      viewDetails: "Подробнее",
+      viewMore: "Просмотреть больше достопримечательностей"
+    },
+    cityFood: {
+      avgPrice: "Средняя цена",
+      cuisine: "Кухня",
+      disclaimer: "Номера телефонов и адреса могут измениться. Мы рекомендуем проверять информацию через официальные каналы ресторана или уточнять по телефону.",
+      filterAll: "Все",
+      filterBlackPearl: "Черная жемчужина",
+      filterBudget: "Бюджет",
+      filterLocal: "Местные",
+      filterLocalFavorites: "Локальные фавориты",
+      filterMichelin: "Мишлен",
+      filteringLabel: "Фильтрация:",
+      googleMaps: "Google Карты",
+      signatureDishes: "Фирменные блюда",
+      subtitle: "Звезды Мишлен, любимые Черной жемчужины и местные жемчужины.",
+      title: "Рестораны в {city}",
+      viewAll: "View all restaurants in {city}",
+      viewDetails: "Подробнее"
+    },
+    cityHotels: {
+      bookCta: "View hotel details",
+      bookNow: "Забронировать отель",
+      filterAll: "All categories",
+      pricePerNight: "за ночь",
+      stars: "звезды",
+      subtitle: "Boutique stays to international chains - find the right place for your trip.",
+      title: "Hotels in {city}"
     },
     cityPage: {
+      appCount: "{count} essential apps",
+      appsSubtitle: "Download these before you arrive.",
+      area: "Area",
+      attractionCount: "{count} attractions",
       attractionsExploreCount: "{city} — {count} мест для изучения",
       attractionsHeading: "Основные достопримечательности",
       attractionsSubtitle: "Места, которые обязательно стоит посетить, по мнению местных жителей и путешественников",
+      bestTime: "Best time to visit",
       bestTimeHeading: "Лучшее время для посещения",
+      bookHotelCta: "Find hotels in {city}",
+      bookTourCta: "Book a tour in {city}",
+      citySubtitle: "Полное руководство по путешествию в {city}, Китай. Найдите лучшие рестораны, достопримечательности, отели и советы для путешествий.",
+      connectivitySubtitle: "Stay connected with data.",
+      contactCount: "{count} contacts",
+      cultureSubtitle: "Local customs and etiquette.",
+      cultureSubtitleDynamic: "Основные культурные знания для {city}",
+      currency: "Currency",
       dataSourcesDesc: "Откуда поступают эти данные",
       dataSourcesHeading: "Источники данных",
+      downloadBefore: "Download these apps before arriving in China.",
+      elevation: "Elevation",
+      emergencySubtitle: "Important numbers and embassies.",
+      emergencySubtitleDynamic: "Важные номера телефонов в {city}",
+      esimDescription: "eSIM is the easiest way to get data in China. No physical SIM needed - activate instantly on arrival.",
+      esimRecommended: "eSIM (Recommended)",
+      essentialAppsFor: "Essential Apps for {city}",
+      essentialCultural: "Essential cultural knowledge for {city}",
+      exploreOnMap: "Explore on map",
       foodHeading: "Где поесть",
       foodHighlightsHeading: "Изюминки кухни",
       foodHighlightsSubtitle: "Рекомендовано местными жителями",
       foodSubtitle: "Звезды Мишлен, выбор Черного Жемчуга и местные фавориты",
+      gettingAround: "Как передвигаться",
       gettingTo: "Как добраться до {city}",
+      heroEyebrow: "Travel Guide",
       home: "← Вернуться на главную страницу города",
+      hotelCount: "{count} hotels",
       hotelsCountUnit: "отелей",
       hotelsHeading: "Где остановиться",
+      hotelsSubtitle: "From boutique hotels to international chains.",
+      importantNumbers: "Important phone numbers in {city}",
+      intro: "Welcome to {city}, one of China's most fascinating destinations.",
+      language: "Language",
+      moreCities: "More cities",
+      nextCity: "Next city",
       noHotels: "Отели не найдены",
       noHotelsDesc: "Попробуйте изменить ценовой диапазон или категорию.",
       noResults: "Достопримечательности не найдены",
       noResultsDesc: "Попробуйте изменить фильтры или ключевые слова поиска.",
+      openFullMap: "Открыть полную карту",
+      overviewSubtitle: "Everything you need to know before you go.",
+      pageTitleSuffix: "Путеводитель - ChinaConnect",
+      paymentSubtitle: "Cash, cards, mobile wallets and ATM access.",
       phoneIcon: "📞",
+      population: "Population",
+      previousCity: "Previous city",
+      proTipBooking: "Pro tip: book hotels 2-3 weeks in advance for the best rates.",
+      proTipEsim1: "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships).",
+      proTipEsim2: "Download eSIM apps before arriving in China.",
+      proTipEsim3: "Airalo and Holafly offer China-specific plans with unlimited data options.",
+      proTips: "Pro Tips",
+      quickFacts: "Quick Facts",
       quickFactsHeading: "Краткие факты",
+      region: "Region",
+      restaurantCount: "{count} restaurants",
+      sectionApps: "Essential Apps",
+      sectionAttractions: "Top Attractions",
+      sectionConnectivity: "SIM & eSIM",
+      sectionCulture: "Cultural Tips",
+      sectionEmergency: "Emergency Contacts",
+      sectionFood: "Where to Eat",
+      sectionHotels: "Where to Stay",
+      sectionOverview: "Overview",
+      sectionPayment: "Payment & Money",
+      sectionTransport: "Getting Around",
+      sectionVisa: "Visa & Entry",
+      sosTip: "Save these numbers before you arrive - cellular service may be limited in remote areas.",
+      switchToEnglishMode: "Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.",
+      tabApps: "Приложения",
+      tabAttractions: "Достопримечательности",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "Культура",
+      tabEmergency: "Экстренные службы",
+      tabFood: "Еда",
+      tabHotels: "Отели",
+      tabOverview: "Обзор",
+      tabPayment: "Оплата",
+      tabTransport: "Транспорт",
+      timezone: "Timezone",
+      tipCount: "{count} tips",
       topHighlightsHeading: "Основные достопримечательности",
       transportSubtitle: "Как передвигаться по {city}",
-      viewAllHotels: "Посмотреть все {totalHotelCount} отелей"
+      travelTo: "Travel to {city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "Посмотреть все {totalHotelCount} отелей",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "Все",
       back: "Назад",
+      bookNow: "Book now",
       cancel: "Отмена",
       close: "Закрыть",
       confirm: "Подтвердить",
+      continue: "Продолжить",
+      discover: "Discover",
+      done: "Готово",
       error: "Ошибка",
+      explore: "Explore",
       filter: "Фильтр",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "Загрузка...",
       next: "Далее",
       open: "Открыть",
       previous: "Назад",
+      readMore: "Read more",
+      required: "Обязательно",
       retry: "Повторить",
+      save: "Сохранить",
       search: "Поиск...",
       seeMore: "Подробнее",
+      signUpFree: "Sign up free",
       sort: "Сортировка",
-      viewAll: "Просмотреть все"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "Просмотреть все",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "Скорая помощь",
+      callButton: "Позвонить",
       communication1: "Изучите основные фразы на китайском языке",
       communication2: "Используйте приложения для перевода при необходимости",
       communication3: "Скачайте карточки с экстренными фразами",
@@ -4425,9 +6411,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "Основные экстренные номера, используемые по всей Китайской Народной Республике.",
       embassyDesc: "Контактная информация посольств и консульств основных стран в Китае.",
       embassyTitle: "Информация об посольствах и консульствах",
+      findEmbassy: "Найти ваше посольство",
       fire: "Пожарная служба",
       gps: "Совместный доступ к GPS-местоположению",
       gpsDesc: "Сохранение местоположения в реальном времени для экстренных контактов.",
+      gpsLocator: "GPS-локатор",
       heroHeading: "Экстренные контакты и помощь",
       hospitalCommon: "Общие: Пекинская объединенная медицинская коллегия, Пекинская объединенная семейная клиника",
       hospitalInternational: "Рекомендуемые международные больницы для иностранцев",
@@ -4467,6 +6455,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "Скачайте офлайн-карты для лучшей подготовки",
       oneTapCalls: "Экстренные звонки в один клик",
       oneTapDesc: "Нажмите на любой номер, чтобы позвонить немедленно. Работает с любым телефоном - не требуется приложение.",
+      pageDescription: "Важные номера телефонов для путешественников в Китае",
       pageTitle: "Экстренные контакты и фразы - ChinaConnect",
       pharmaciesTitle: "Аптеки",
       pharmacyChains: "Крупные сети: Guoji Yiyao, Lianhua, Yixinke",
@@ -4484,6 +6473,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "Держите заряженный внешний аккумулятор",
       preparedness4: "Сохраняйте адрес отеля на китайском языке",
       preparednessTitle: "Подготовка к экстренным ситуациям",
+      quickDial: "Быстрый набор",
       safetyTipsTitle: "Советы по безопасности для путешественников",
       sosButtonDesc: "Нажмите и удерживайте 3 секунды, чтобы автоматически отправить местоположение в экстренные контакты.",
       sosButtonTitle: "Кнопка SOS - Доступна на каждой странице",
@@ -4493,7 +6483,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "Удерживайте нажатой или щелкните правой кнопкой мыши для быстрого доступа к меню",
       subtitle: "Необходимые номера телефонов, фразы и инструменты для вашей безопасности в Китае",
       title: "Экстренные контакты и помощь",
-      traffic: "Транспорт"
+      touristHotline: "Горячая линия для туристов",
+      traffic: "Транспорт",
+      universalSection: "Универсальные номера",
+      viewAllContacts: "Просмотреть все контакты"
     },
     empty: {
       addSome: "Начните исследовать и сохраняйте понравившиеся места!",
@@ -4512,7 +6505,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "Не удалось загрузить контент",
       network: "Сетевая ошибка",
       networkError: "Ошибка сети. Пожалуйста, проверьте ваше соединение.",
+      notFound: "Resource not found.",
       somethingWrong: "Что-то пошло не так",
+      timeout: "Request timed out.",
       unauthorized: "Не авторизовано"
     },
     features: {
@@ -4537,22 +6532,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← Назад в {city}",
       backToCity: "Назад в {city}",
+      bottomCtaDesc: "Просмотрите наш список городов и изучите больше направлений в Китае.",
       callPhone: "Позвонить",
+      citiesCount: "Cities",
       citiesUnit: "города",
       cityEmpty: "Пока нет ресторанов",
       cityEmptyDesc: "Мы все еще подбираем рестораны для {city}.",
       cityEmptySubtitle: "Добавьте несколько ресторанов, чтобы начать исследовать",
       dataSourcesDesc: "Эти источники помогут вам узнать больше о гастрономической культуре {city}:",
       dataSourcesHeading: "Справочные источники",
+      empty: "No cities match this filter.",
       emptyCta: "Посмотреть все рестораны",
       emptyDesc: "Нет ресторанов в этой категории. Попробуйте другой фильтр.",
       emptyTitle: "Пока нет ресторанов",
+      essentialFoodApps: "Необходимые приложения для еды",
+      essentialFoodAppsDesc: "Скачайте эти приложения, чтобы заказать доставку еды и найти местные рестораны с английскими меню.",
       exploreFood: "Исследовать Еду",
+      filterAll: "All",
       filterBlackPearl: "Черная жемчужина",
       filterBudget: "Бюджет",
       filterCasual: "Непринужденный",
       filterLocal: "Любимый местными",
       filterMichelin: "Мишлен",
+      filterStreetFood: "Street Food",
       filteringLabel: "Фильтрация:",
       heroCityFood: "{city} Еда",
       indexTitle: "🍜 Китайская карта еды",
@@ -4560,25 +6562,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "Перемещаться",
       noCityTitle: "Не можете найти нужный город?",
       otherRestaurants: "Другие рестораны в {city}",
+      pageDescription: "Откройте для себя самые популярные блюда Китая, отобранные города и рестораны.",
+      pageTitle: "Карта китайской кухни - ChinaConnect",
       perPerson: "на человека",
+      proTipsFoodApps: "Советы по использованию приложений для еды",
       restaurantsUnit: "рестораны",
       showingCount: "Показано",
-      subtitle: "Мишлен, Черный жемчуг и местные фавориты"
+      subtitle: "Мишлен, Черный жемчуг и местные фавориты",
+      tipDianping: "Dianping отлично подходит для поиска местных любимых мест с отзывами на английском.",
+      tipEleme: "Ele.me предлагает самую широкую зону доставки, но может по умолчанию быть на китайском.",
+      tipLinkCard: "Свяжите свою иностранную карту с Alipay/WeChat Pay перед заказом.",
+      tipMeituan: "Meituan имеет перевод меню на английский для многих ресторанов.",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "Жилье",
       aiAssistant: "AI-помощник",
+      allRightsReserved: "All rights reserved.",
       attractions: "Достопримечательности",
       cities: "Города",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "Культурные советы",
       description: "Надежный гид по исследованию Китая. AI-рекомендации ресторанов, путеводители по городам, советы для путешествий.",
+      diningGuide: "Гид по ресторанам",
       emergency: "Экстренные контакты",
       guides: "Путеводители",
+      guidesLabel: "Travel Guides",
       payment: "Оплата",
+      privacy: "Privacy",
       resources: "Ресурсы",
+      resourcesLabel: "Resources",
       restaurants: "Рестораны",
+      terms: "Terms",
       transport: "Транспорт",
-      viewAllCities: "Просмотреть все города"
+      viewAllCities: "Просмотреть все города",
+      visaGuide: "Гид по визам"
+    },
+    guide: {
+      attractionsPageTitle: "Топ-достопримечательности в Китае",
+      attractionsTitle: "Топ-достопримечательности в Китае",
+      beijingGuide: "Пекин",
+      foodGuide: "Гид по еде",
+      scamPrevention: "Предотвращение мошенничества"
     },
     guidePage: {
       accommodationStageDescription: "Найдите и забронируйте подходящее жилье для любого бюджета.",
@@ -4586,7 +6631,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "Жилье - отели, хостелы и советы по бронированию",
       accommodationTitleShort: "Гид по размещению",
       attractionsSubtitle: "Обязательные места и скрытые жемчужины",
+      attractionsTitle: "Топ-достопримечательности",
       backHome: "На главную",
+      beginnerDesc: "Спланируйте свой первый поход с уверенностью.",
+      beginnerTraveler: "Первый раз посетитель",
+      businessDesc: "Инструменты для встреч, оплаты и этикета.",
+      businessTitle: "Деловой туризм",
+      businessTraveler: "Деловой путешественник",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "Пекин",
       cityChengdu: "Чэнду",
       cityShanghai: "Шанхай",
@@ -4597,6 +6649,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "Гид по связи",
       culturalWarningsSubtitle: "Культурные различия и ложные шаги, которых следует избегать",
       culturalWarningsTitleShort: "Культурные предупреждения",
+      cultureTitle: "Культурные советы",
       departureStageDescription: "Налоговые вычеты, таможня и окончательные советы перед возвращением домой.",
       departureStageTitle: "7. Отъезд",
       departureSubtitle: "Отъезд - налоговые вычеты и выезд из Китая",
@@ -4614,6 +6667,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "Чрезвычайные ситуации - полиция, скорая помощь, контакты посольства",
       emergencyTitleShort: "Гид по чрезвычайным ситуациям",
       emergencyTourism: "Горячая линия для туристов 12301",
+      foodTitle: "Гид по еде",
       home: "← Вернуться домой",
       indexBusinessHeading: "🚀 Инструменты для деловых поездок",
       indexBusinessSubtitle: "От приглашения до делового этикета — все, что нужно для бизнеса в Китае.",
@@ -4621,23 +6675,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "Полное руководство по путешествию в Китай — от подготовки до вылета.",
       indexHeroTitle: "🇨🇳 Полное руководство по Китаю",
       indexStagesTitle: "8 этапов для комфортного путешествия в Китай",
+      longStay: "Длительное пребывание",
+      longStayDesc: "Устройтесь с помощью гидов по визам, банковскому делу и размещению.",
+      pageDescription: "Всё, что нужно для планирования, бронирования и наслаждения поездкой в Китай.",
+      pageTitle: "Путеводитель по Китаю - ChinaConnect",
       paymentStageDescription: "Настройте Alipay и WeChat Pay до вашего приезда.",
       paymentStageTitle: "2. Настройка оплаты",
       paymentSubtitle: "Оплата - Alipay, WeChat Pay и советы по наличным",
+      paymentTitle: "Оплата и деньги",
       paymentTitleShort: "Руководство по оплате",
       popularByCity: "Популярное по городам",
       quickBeijingDesc: "Основные достопримечательности и обязательные блюда",
       quickFoodDesc: "Мишлен, Черный Жемчуг и местные фавориты",
       quickScamDesc: "Распространенные мошенничества и как их избежать",
+      safetyTitle: "Безопасность",
       scamPreventionSubtitle: "Защитите себя от распространенных мошенничеств в Китае",
       scamPreventionTitleShort: "Защита от мошенничества",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "Знайте честные цены, избегайте переплат",
       transparencyTitleShort: "Прозрачность цен",
       transportStageDescription: "Ориентируйтесь в метро, высокоскоростных поездах и приложениях для вызова такси.",
       transportStageTitle: "4. Транспорт",
       transportSubtitle: "Транспорт - Как уверенно передвигаться по Китаю",
+      transportTitle: "Как передвигаться",
       transportTitleShort: "Руководство по транспорту",
       travelGuide: "Путеводитель",
+      travelerType: "Тип путешественника",
+      viewAll: "View all guides",
       viewAllBusinessTools: "Просмотреть все бизнес-инструменты",
       viewAllBusinessToolsCta: "Открыть Business Express",
       viewAllBusinessToolsDesc: "Просмотрите все бизнес-инструменты с подробной статистикой и быстрыми руководствами.",
@@ -4646,23 +6711,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "Все, что вам нужно перед посадкой на самолет.",
       visaStageTitle: "1. Виза и въезд",
       visaSubtitle: "Виза - Полное руководство по въезду в Китай",
+      visaTitle: "Виза и въезд",
       visaTitleShort: "Руководство по визам"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "Чат с ИИ",
       citiesSubtitle: "От древней столицы до современных мегаполисов — открывайте лучшие города Китая с помощью комплексного путеводителя.",
       citiesTitle: "Исследуйте наши города",
+      clearHistory: "Clear history",
       ctaSubtitle: "Начните планировать свое путешествие с рекомендациями на основе ИИ.",
       ctaTitle: "Готовы исследовать Китай?",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "Исследовать Пекин",
       exploreCities: "Исследовать города",
+      exploreCityButton: "Explore City",
       exploreGuide: "Просмотреть полное руководство",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "Все, что вам нужно для отличного путешествия",
       featuresTitle: "Все, что вам нужно для путешествия по Китаю",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "Попросить ИИ о совете по путешествию",
       heroDesc: "Рестораны с Мишленовскими звездами и Черным Жемчугом, достопримечательности, советы по транспорту, экстренные контакты — все это отобранно ИИ и местными жителями.",
       heroSubtitle: "Ваш надежный путеводитель по лучшим городам Китая",
       heroTitle: "Ваш гид по Китаю с ИИ",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "Найдите рестораны с Мишленовскими звездами и Черным Жемчугом в 12 китайских городах.",
       onboarding1Title: "Откройте для себя отличную еду",
       onboarding2Title: "Советы с ИИ",
@@ -4670,14 +6751,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "Завершить",
       onboardingNext: "Далее",
       onboardingSkip: "Пропустить",
+      pageDescription: "Откройте для себя Китай с помощью гидов по городам с ИИ. Найдите лучшие рестораны (Michelin и Black Pearl), достопримечательности, информацию о транспорте и экстренные контакты в 12 крупных китайских городах, включая Пекин, Шанхай, Гуанчжоу, Сиань, Чэнду и другие.",
       pageTitle: "ChinaConnect - Ваш гид с ИИ по изучению Китая",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "Недавно просмотренные",
       recommendedForYou: "Рекомендовано для вас",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "Помощь ИИ",
       statsAttractions: "Лучшие достопримечательности",
       statsCities: "Охваченные города",
       statsRestaurants: "Рестораны Мишлен",
-      viewAllCities: "Просмотреть все города"
+      viewAllCities: "Просмотреть все города",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "На основе популярных направлений"
     },
     language: {
       chinese: "Китайский",
@@ -4689,6 +6780,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "Переключиться на"
     },
+    loginPage: {
+      pageDescription: "Войдите в ChinaConnect",
+      pageTitle: "Вход - ChinaConnect"
+    },
     nav: {
       aiChat: "ChinaGuide AI",
       attractions: "Достопримечательности",
@@ -4698,6 +6793,7 @@ export const translations: Record<Language, Translations> = {
       home: "Главная",
       restaurants: "Рестораны",
       selectLanguage: "Выбор языка",
+      signIn: "Sign in",
       tagline: "Исследуйте Китай с помощью AI"
     },
     notFound: {
@@ -4707,12 +6803,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "Исследуйте города",
       goHome: "Вернуться на главную",
       heading: "404",
+      homeButton: "Back to home",
       letsContinue: "Давайте продолжим исследовать Китай",
       primary: "Страница не найдена",
-      title: "Страница не найдена - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "Страница не найдена - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "Медицинские чрезвычайные ситуации, травмы",
+      availableOffline: "Доступно офлайн",
+      bannerDesc: "Контакты экстренных служб и важная информация все еще доступны",
       bannerTitle: "Офлайн-режим",
+      emergencyNumbers: "Экстренные номера (Китай)",
+      emergencyPhrases: "Быстрые фразы для экстренных ситуаций",
+      fireDesc: "Пожары, спасательные операции, опасные материалы",
+      lastSynced: "Последняя синхронизация:",
       phrase1En: "Помогите!",
       phrase2En: "Вызвать полицию!",
       phrase3En: "Мне нужна скорая помощь",
@@ -4720,6 +6834,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "Я потерялся",
       phrase6En: "Мне нужна помощь",
       phrase7En: "Где находится больница?",
+      phrasesHelp: "Показать распространенные фразы для экстренных ситуаций",
+      phrasesTip: "Показывайте эти фразы, если вам нужна помощь",
+      policeDesc: "Преступления, чрезвычайные ситуации, общественная безопасность",
+      quickActions: "Быстрые действия",
+      tapToCall: "Нажмите на любой номер, чтобы позвонить немедленно",
       tipsHeading: "Советы для путешествий в офлайн-режиме",
       tipsList1: "Сохраните ключевые фразы и адреса перед тем, как перейти в офлайн.",
       tipsList2: "Скачайте офлайн-карты в вашем картографическом приложении.",
@@ -4728,11 +6847,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "Большинство кафе и торговых центров предлагают бесплатный Wi-Fi.",
       tipsList6: "Возьмите с собой небольшой блокнот для записи адресов.",
       title: "Вы находитесь в офлайн-режиме",
+      title2: "ChinaConnect Экстренная помощь SOS - Работает офлайн",
+      trafficDesc: "Только дорожно-транспортные происшествия",
       tryAgain: "Попробовать снова"
     },
     onboarding: {
       done: "Готово",
       getStarted: "Начать",
+      neverShow: "Don't show this again",
       next: "Далее",
       skip: "Пропустить",
       step1Desc: "Найдите рестораны с Мишленовскими звездами и рестораны Black Pearl в 12 китайских городах.",
@@ -4744,6 +6866,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "Добро пожаловать в ChinaConnect!"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "Автообновление, можно отменить в любое время",
       billingAnnual: "Годовой",
       billingMonthly: "Ежемесячный",
@@ -4761,6 +6884,7 @@ export const translations: Record<Language, Translations> = {
         name: "Бизнес",
         price: "$29.99"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "Платеж был отменен. Вы можете повторить попытку ниже.",
       compareFeatures: {
         advancedTools: "Продвинутые инструменты для путешествий",
@@ -4775,6 +6899,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "Чтобы планы были понятны, ознакомьтесь с содержанием каждого.",
       compareTitle: "Сравнение всех функций",
+      ctaButton: "Get started",
       ctaPrimary: "Начните бесплатно сегодня",
       ctaSecondary: "Изучите функции",
       ctaSubtitle: "Присоединяйтесь к тысячам путешественников, планирующих поездку в Китай с помощью ИИ.",
@@ -4792,14 +6917,44 @@ export const translations: Record<Language, Translations> = {
         name: "Исследователь",
         price: "$4.99"
       },
+      faq: "FAQ",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "Как мне обновить или понизить мой план?",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "Как отменить подписку?",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "Какова ваша политика возврата средств?",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "Когда сбрасывается моя месячная квота?",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "Что произойдет, когда я достигну лимита запросов к ИИ?",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "Какие способы оплаты вы принимаете?",
       faqSubtitle: "Все, что вам нужно знать о наших планах и выставлении счетов",
       faqTitle: "Часто задаваемые вопросы",
+      featureAdvancedTools: "Продвинутые инструменты для путешествий",
+      featureAiRequestsBusiness: "Неограниченные AI-беседы",
+      featureAiRequestsExplorer: "20 AI-запросов в месяц",
+      featureAiRequestsFree: "5 AI-запросов в месяц",
+      featureAiRequestsPro: "100 AI-запросов в месяц",
+      featureAllTravelerFeatures: "Все функции Traveler",
+      featureApi: "Доступ к API",
+      featureBasicPlanning: "Базовая организация путешествий",
+      featureBusinessTemplates: "Бизнес-шаблоны",
+      featureCancelAnytime: "Отменить в любое время",
+      featureConversationHistory: "История бесед",
+      featureCustomIntegrations: "Пользовательские интеграции",
+      featureDedicated: "Персональная поддержка",
+      featureExportPdf: "Экспорт в PDF",
+      featureMultiCity: "Маршруты для нескольких городов",
+      featurePdfExport: "Экспорт в PDF",
+      featurePremiumCustomization: "Премиум-кастомизация",
+      featurePrioritySupport: "Приоритетная поддержка",
+      featureSaveItineraries: "Сохранять маршруты",
+      featureSecurePayments: "Безопасные платежи",
+      featureTeamCollab: "Коллективная работа",
+      featureTeamManagement: "Управление командой",
+      featureViewItineraries: "Просмотр маршрутов",
       free: {
         description: "Начните с базового планирования",
         feature1: "5 запросов к ИИ в месяц",
@@ -4810,24 +6965,40 @@ export const translations: Record<Language, Translations> = {
         name: "Бесплатный"
       },
       freeForever: "Бесплатно навсегда",
+      heroBadge: "Pricing",
       heroSubtitle: "От бесплатного просмотра до профессионального планирования - выберите план, соответствующий вашему темпу путешествий.",
       heroTitle: "Простая и прозрачная цена",
+      moneyBack: "30-day refund",
+      planBusiness: "Бизнес",
+      planExplorer: "Исследователь",
+      planFree: "Бесплатно",
+      planPro: "Про",
+      planTraveler: "Путешественник",
       popularBadge: "Самый популярный",
       priceFree: "$0",
+      pro: {
+        description: "Для активных путешественников"
+      },
       saveBadge: "Экономьте 20%",
       savingsHint: "Сэкономьте 20%, выбрав годовой платеж",
+      securePayment: "Secure payment",
       subscribeNow: "Подписаться сейчас",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Сара К.",
       testimonial1Country: "США",
       testimonial1Role: "План Исследователя",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "Ли Вэй Т.",
       testimonial2Country: "Великобритания",
       testimonial2Role: "Бизнес-план",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "Мария Р.",
       testimonial3Country: "Германия",
       testimonial3Role: "План для путешественников",
+      testimonials: "Отзывы путешественников",
       testimonialsSubtitle: "Послушайте, что говорят наши пользователи о своем опыте работы с ChinaConnect",
       testimonialsTitle: "Любимый туристами всего мира",
+      title: "Цены",
       traveler: {
         annualNote: "Оплата $95.99 в год (экономия $24)",
         description: "Для частых посетителей Китая",
@@ -4844,11 +7015,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "Возврат денег в течение 30 дней",
         securePayment: "Безопасная оплата"
       },
+      trustCancelAnytime: "Отменить в любое время",
+      trustInstantAccess: "Моментальный доступ",
+      trustSecurePayments: "Безопасные платежи",
       trustedBy: "Надежный для более чем 10,000 путешественников",
       unlimited: "Неограниченный"
     },
     profilePage: {
-      title: "Мой профиль - ChinaConnect"
+      displayName: "Отображаемое имя",
+      heading: "Profile",
+      pageTitle2: "Мой профиль",
+      save: "Сохранить изменения",
+      saved: "Сохранено!",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "Мой профиль - ChinaConnect",
+      uploadAvatar: "Загрузить аватар"
     },
     recents: {
       clearAll: "Очистить все",
@@ -4885,6 +7066,22 @@ export const translations: Record<Language, Translations> = {
       username: "Имя пользователя",
       usernamePlaceholder: "Ваше отображаемое имя"
     },
+    registerPage: {
+      pageDescription: "Создайте аккаунт в ChinaConnect",
+      pageTitle: "Регистрация - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "Адрес",
       avgPrice: "Средняя цена",
@@ -4910,12 +7107,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Поделиться с друзьями"
     },
     userPage: {
+      heading: "Профиль",
+      pageTitle2: "Профиль пользователя",
       title: "Профиль пользователя - ChinaConnect"
     }
   },
   fr: {
     accountPage: {
       active: "Actif",
+      activeLabel: "Actif",
       aiRequestsThisMonth: "Demandes d'IA Ce Mois",
       alertSignOutError: "Impossible d'ouvrir la gestion des abonnements. Veuillez contacter le support.",
       currentPlan: "Plan Actuel",
@@ -4927,6 +7127,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "Aucune commande pour le moment.",
       emptySavedRoutes: "Aucun itinéraire enregistré pour le moment.",
       emptySavedRoutesHint: "Aucun itinéraire enregistré pour le moment. Commencez une conversation avec l'IA pour créer des itinéraires !",
+      explorerBadge: "Explorateur",
       loading: "Chargement de votre compte...",
       manageSubscription: "Gérer l'Abonnement",
       membership: "Adhésion",
@@ -4936,6 +7137,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "Statut",
       orderHeaderType: "Type",
       pageTitle: "Mon Compte - ChinaConnect",
+      pageTitleSuffix: "Mon compte - ChinaConnect",
       pointsUnit: "points",
       renewsOn: "Renouvelé le",
       savedLocally: "Enregistré localement uniquement",
@@ -4946,27 +7148,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "Connexion requise",
       signInRequiredDesc: "Veuillez vous connecter pour voir votre compte.",
       signOut: "Se Déconnecter",
+      statAiUsage: "Utilisation de l'IA aujourd'hui",
+      statFavorites: "Favoris",
       statSavedRoutes: "Itinéraires Enregistrés",
+      subtitle: "Gérez votre abonnement, vos favoris et vos itinéraires enregistrés.",
       syncedToCloud: "Synchronisé avec le cloud",
       tabBilling: "Facturation",
+      tabFavorites: "Favoris",
+      tabOrders: "Commandes",
       tabOverview: "Aperçu",
       tabPlans: "Plans",
+      tabRoutes: "Itinéraires",
       tabUsage: "Utilisation",
+      title: "Mon compte",
       untitledRoute: "Itinéraire Sans Titre",
       upgrade: "Mettre à Niveau",
       usageDailyAi: "Demandes d'IA Quotidiennes",
       usageFavorites: "Favoris",
       usageSavedRoutes: "Itinéraires Enregistrés",
+      userBadge: "Utilisateur",
       walletBalance: "Solde du Portefeuille"
+    },
+    ai: {
+      send: "Envoyer",
+      thinking: "En cours..."
     },
     aiPage: {
       authFailed: "Échec de l'authentification",
       authGateSignupTitle: "Créez votre compte",
       authGateTitle: "Connectez-vous pour discuter",
+      chatInputPlaceholder: "Demandez des informations sur les restaurants, les transports, les attractions...",
+      conversationHistory: "Historique des conversations",
       conversationsTitle: "Conversations",
       deleteConfirm: "Supprimer cette conversation ?",
       deleteTitle: "Supprimer",
       emailPlaceholder: "vous@example.com",
+      exportPdf: "Exporter en PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "Vous en avez déjà un ?",
@@ -4975,13 +7192,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "Cacher la barre latérale",
       messageLabel: "message",
       messagesLabel: "messages",
+      newChat: "Nouvelle conversation",
       newChatButton: "+ Nouvelle discussion",
       noAccountPrompt: "Pas encore de compte ?",
       noConversationsYet: "Aucune conversation pour le moment",
       orContinueWith: "ou",
+      pageDescription: "Posez toutes vos questions sur les voyages en Chine.",
+      pageTitle: "Concierge de voyage AI - ChinaConnect",
       passwordPlaceholder: "Mot de passe (min 6 caractères)",
       promptsSubtitle: "Choisissez un message ou saisissez le vôtre ci-dessous",
       promptsTitle: "Essayez de demander",
+      saveRoute: "Enregistrer l'itinéraire",
+      sendButton: "Envoyer",
       showSidebarTitle: "Afficher les conversations",
       signInButton: "Se connecter",
       signUpButton: "Créer un compte",
@@ -4989,27 +7211,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "L'IA vous aide à planifier votre voyage en Chine",
       switchToSignIn: "Se connecter",
       switchToSignUp: "Créer un compte",
-      title: "ChinaGuide AI - Votre expert intelligent en voyage en Chine"
+      thinking: "En cours...",
+      title: "ChinaGuide AI - Votre expert intelligent en voyage en Chine",
+      upgradePrompt: "Inscrivez-vous pour débloquer plus de requêtes AI.",
+      usageToday: "Utilisation aujourd'hui"
     },
     attractions: {
       allCities: "Toutes les villes avec des attractions",
+      appSubtitle: "Applications utiles pour se déplacer et découvrir des attractions",
+      appTitle: "Planifiez votre voyage",
+      attractionCount: "{count} attractions",
       browseCategory: "Parcourir par catégorie",
+      citiesCount: "{count} villes",
+      diversityTypes: "Historique, culturel, naturel, moderne",
+      featured: "Villes en vedette",
       featuredCities: "Villes principales",
+      heroEyebrow: "Parcourir par destination",
+      openCity: "Ouvrir la ville",
+      pageDescription: "Les incontournables touristiques en Chine - des sites historiques anciens aux merveilles naturelles",
+      pageTitle: "Attractions en Chine - ChinaConnect",
       subtitle: "Sites incontournables — des monuments anciens aux merveilles naturelles",
-      title: "Attractions en Chine"
+      title: "Attractions en Chine",
+      viewAll: "Voir toutes les attractions"
     },
     auth: {
+      continueWithGithub: "Continuer avec GitHub",
+      continueWithGoogle: "Continuer avec Google",
+      email: "Email",
       myAccount: "Mon compte",
+      needHelp: "Vous avez besoin d'aide pour vous connecter ?",
+      orContinueWithEmail: "Ou continuer avec l'email",
+      password: "Mot de passe",
+      profile: "Profil",
       profileCenter: "Centre de profil",
       signIn: "Se connecter",
-      signOut: "Se déconnecter"
+      signInButton: "Se connecter",
+      signOut: "Se déconnecter",
+      signOutConfirm: "Se déconnecter de ChinaConnect ?",
+      subtitle: "Enregistrez vos favoris, planifiez vos voyages et discutez avec l'IA.",
+      title: "Se connecter à ChinaConnect"
     },
     authPage: {
       authTitle: "Connexion / Inscription - ChinaConnect",
       callbackTitle: "Connexion en cours...",
+      continueWithEmail: "Ou continuez avec l'e-mail",
+      emailPlaceholder: "vous@example.com",
+      errorDefault: "Quelque chose s'est mal passé. Veuillez réessayer.",
       errorTitle: "Échec de l'authentification",
+      forgotPassword: "Mot de passe oublié ?",
       loginTitle: "Connexion - ChinaConnect",
-      signingYouIn: "Connexion en cours..."
+      needAccount: "Vous n'avez pas de compte ?",
+      passwordPlaceholder: "Votre mot de passe",
+      signInButton: "Se connecter",
+      signInError: "Échec de la connexion. Veuillez réessayer.",
+      signUpButton: "S'inscrire",
+      signUpError: "Échec de l'inscription. Veuillez réessayer.",
+      signingYouIn: "Connexion en cours...",
+      successDesc: "Vous êtes redirigé maintenant...",
+      successTitle: "Bienvenue !"
     },
     businessGuidePage: {
       backToGuide: "← Retour au guide de voyage",
@@ -5034,77 +7293,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← Retour aux tarifs",
+      continueButton: "Continuer vers votre compte",
       description: "Votre abonnement a été activé avec succès",
       errorDesc: "Nous n'avons pas pu traiter votre paiement. Veuillez réessayer ou contacter le support.",
       errorTitle: "Quelque chose s'est mal passé",
+      processing: "Traitement de votre paiement...",
       processingDesc: "Veuillez patienter pendant que nous confirmons votre abonnement.",
       startPlanning: "Commencer la planification",
       successAccess: "Vous avez maintenant accès à toutes les fonctionnalités de votre nouveau plan.",
       successDesc: "Votre abonnement a été activé.",
       successTitle: "Paiement réussi !",
+      thankYou: "Merci d'avoir choisi ChinaConnect.",
       title: "Paiement réussi - ChinaConnect",
       viewAccount: "Voir le compte"
     },
     cities: {
       attractions: "Attractions",
+      citiesCount: "Villes",
+      citiesInChina: "Villes en Chine",
       culturalTips: "Conseils culturels",
       emergency: "Urgence",
+      exploreAll: "Explorer tout",
       exploreGuide: "Explorer le Guide",
+      filterATier: "Catégorie A",
+      filterAll: "Toutes",
+      filterDTier: "Catégorie D",
+      filterSTier: "Catégorie S",
+      headerSubtitle: "Des anciennes capitales aux mégapoles modernes - choisissez votre destination.",
+      headerTitle: "Explorez les villes chinoises",
       hotels: "Hôtels",
+      noResults: "Aucune ville ne correspond à vos filtres.",
       openingHours: "Heures d'ouverture",
+      pageDescription: "Explorez toutes les villes chinoises couvertes par ChinaConnect - des anciennes capitales aux métropoles modernes. Villes premium de catégorie S, villes semi-premium de catégorie A et villes sur demande de catégorie D.",
+      pageTitle: "Explorez toutes les villes - ChinaConnect",
       payment: "Paiement",
+      population: "Population",
       recommendedTime: "Meilleur moment pour visiter",
+      region: "Région",
       restaurants: "Restaurants",
+      searchPlaceholder: "Rechercher des villes...",
       subtitle: "Des anciennes capitales aux métropoles modernes",
       ticketPrice: "Billet",
       title: "Explorez Nos Villes",
-      transport: "Transports"
+      transport: "Transports",
+      viewCity: "Voir la ville"
+    },
+    city: {
+      beijing: {
+        name: "Pékin"
+      },
+      chengdu: {
+        name: "Chengdu"
+      },
+      chongqing: {
+        name: "Chongqing"
+      },
+      guangzhou: {
+        name: "Canton"
+      },
+      guilin: {
+        name: "Guilin"
+      },
+      hangzhou: {
+        name: "Hangzhou"
+      },
+      lijiang: {
+        name: "Lijiang"
+      },
+      qingdao: {
+        name: "Qingdao"
+      },
+      shanghai: {
+        name: "Shanghai"
+      },
+      shenzhen: {
+        name: "Shenzhen"
+      },
+      suzhou: {
+        name: "Suzhou"
+      },
+      xian: {
+        name: "Xi'an"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "Toutes",
+      categoryLabel: "Catégorie",
+      disclaimer: "Les horaires d'ouverture, les prix des billets et les numéros de téléphone peuvent changer. Nous vous recommandons de vérifier via le site officiel de l'attraction ou d'appeler à l'avance.",
+      openOnMap: "Ouvrir sur la carte",
+      openingHours: "Heures d'ouverture",
+      subtitle: "Monuments incontournables, musées et merveilles naturelles.",
+      ticketPrice: "Prix du billet",
+      tipsHeader: "Conseils",
+      title: "Attractions à {city}",
+      viewAll: "Voir toutes les attractions à {city}",
+      viewDetails: "Voir les détails",
+      viewMore: "Voir plus d'attractions"
+    },
+    cityFood: {
+      avgPrice: "Prix moyen",
+      cuisine: "Cuisine",
+      disclaimer: "Les numéros de téléphone et les adresses peuvent changer. Nous vous recommandons de vérifier via les canaux officiels du restaurant ou d'appeler à l'avance.",
+      filterAll: "Tous",
+      filterBlackPearl: "Perle Noire",
+      filterBudget: "Budget",
+      filterLocal: "Local",
+      filterLocalFavorites: "Coups de cœur locaux",
+      filterMichelin: "Michelin",
+      filteringLabel: "Filtrage :",
+      googleMaps: "Google Maps",
+      signatureDishes: "Plats signatures",
+      subtitle: "Étoiles Michelin, favoris Perle Noire et trésors locaux.",
+      title: "Restaurants à {city}",
+      viewAll: "View all restaurants in {city}",
+      viewDetails: "Voir les détails"
+    },
+    cityHotels: {
+      bookCta: "View hotel details",
+      bookNow: "Voir l'hôtel",
+      filterAll: "All categories",
+      pricePerNight: "par nuit",
+      stars: "étoiles",
+      subtitle: "Boutique stays to international chains - find the right place for your trip.",
+      title: "Hotels in {city}"
     },
     cityPage: {
+      appCount: "{count} essential apps",
+      appsSubtitle: "Download these before you arrive.",
+      area: "Area",
+      attractionCount: "{count} attractions",
       attractionsExploreCount: "{city} — {count} lieux à explorer",
       attractionsHeading: "Principales Attractions",
       attractionsSubtitle: "Lieux incontournables choisis par les locaux et les voyageurs",
+      bestTime: "Best time to visit",
       bestTimeHeading: "Meilleur Moment pour Visiter",
+      bookHotelCta: "Find hotels in {city}",
+      bookTourCta: "Book a tour in {city}",
+      citySubtitle: "Guide de voyage complet pour {city}, Chine. Trouvez les meilleurs restaurants, attractions, hôtels et conseils de voyage.",
+      connectivitySubtitle: "Stay connected with data.",
+      contactCount: "{count} contacts",
+      cultureSubtitle: "Local customs and etiquette.",
+      cultureSubtitleDynamic: "Connaissances culturelles essentielles pour {city}",
+      currency: "Currency",
       dataSourcesDesc: "D'où proviennent ces données",
       dataSourcesHeading: "Sources de Données",
+      downloadBefore: "Download these apps before arriving in China.",
+      elevation: "Elevation",
+      emergencySubtitle: "Important numbers and embassies.",
+      emergencySubtitleDynamic: "Numéros de téléphone importants à {city}",
+      esimDescription: "eSIM is the easiest way to get data in China. No physical SIM needed - activate instantly on arrival.",
+      esimRecommended: "eSIM (Recommended)",
+      essentialAppsFor: "Essential Apps for {city}",
+      essentialCultural: "Essential cultural knowledge for {city}",
+      exploreOnMap: "Explore on map",
       foodHeading: "Où Manger",
       foodHighlightsHeading: "Points Culinaires",
       foodHighlightsSubtitle: "Recommandé localement",
       foodSubtitle: "Étoiles Michelin, choix Black Pearl et favoris locaux",
+      gettingAround: "Se déplacer",
       gettingTo: "Comment se rendre à {city}",
+      heroEyebrow: "Travel Guide",
       home: "← Retour à la page d'accueil de la ville",
+      hotelCount: "{count} hotels",
       hotelsCountUnit: "hôtels",
       hotelsHeading: "Où Se Loger",
+      hotelsSubtitle: "From boutique hotels to international chains.",
+      importantNumbers: "Important phone numbers in {city}",
+      intro: "Welcome to {city}, one of China's most fascinating destinations.",
+      language: "Language",
+      moreCities: "More cities",
+      nextCity: "Next city",
       noHotels: "Aucun hôtel trouvé",
       noHotelsDesc: "Essayez une autre gamme de prix ou catégorie.",
       noResults: "Aucune attraction trouvée",
       noResultsDesc: "Essayez d'ajuster vos filtres ou mots-clés de recherche.",
+      openFullMap: "Ouvrir la carte complète",
+      overviewSubtitle: "Everything you need to know before you go.",
+      pageTitleSuffix: "Guide de voyage - ChinaConnect",
+      paymentSubtitle: "Cash, cards, mobile wallets and ATM access.",
       phoneIcon: "📞",
+      population: "Population",
+      previousCity: "Previous city",
+      proTipBooking: "Pro tip: book hotels 2-3 weeks in advance for the best rates.",
+      proTipEsim1: "eSIM works best if your phone supports it (iPhone XS+ and most Android flagships).",
+      proTipEsim2: "Download eSIM apps before arriving in China.",
+      proTipEsim3: "Airalo and Holafly offer China-specific plans with unlimited data options.",
+      proTips: "Pro Tips",
+      quickFacts: "Quick Facts",
       quickFactsHeading: "Faits Rapides",
+      region: "Region",
+      restaurantCount: "{count} restaurants",
+      sectionApps: "Essential Apps",
+      sectionAttractions: "Top Attractions",
+      sectionConnectivity: "SIM & eSIM",
+      sectionCulture: "Cultural Tips",
+      sectionEmergency: "Emergency Contacts",
+      sectionFood: "Where to Eat",
+      sectionHotels: "Where to Stay",
+      sectionOverview: "Overview",
+      sectionPayment: "Payment & Money",
+      sectionTransport: "Getting Around",
+      sectionVisa: "Visa & Entry",
+      sosTip: "Save these numbers before you arrive - cellular service may be limited in remote areas.",
+      switchToEnglishMode: "Switch to English mode in app settings if you see Chinese interface. Both Alipay and WeChat Pay support foreign credit cards.",
+      tabApps: "Applications",
+      tabAttractions: "Attractions",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "Culture",
+      tabEmergency: "Urgences",
+      tabFood: "Nourriture",
+      tabHotels: "Hôtels",
+      tabOverview: "Aperçu",
+      tabPayment: "Paiement",
+      tabTransport: "Transports",
+      timezone: "Timezone",
+      tipCount: "{count} tips",
       topHighlightsHeading: "Principaux Points Forts",
       transportSubtitle: "Se déplacer dans {city}",
-      viewAllHotels: "Voir tous les {totalHotelCount} hôtels"
+      travelTo: "Travel to {city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "Voir tous les {totalHotelCount} hôtels",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "Tout",
       back: "Retour",
+      bookNow: "Book now",
       cancel: "Annuler",
       close: "Fermer",
       confirm: "Confirmer",
+      continue: "Continuer",
+      discover: "Discover",
+      done: "Terminé",
       error: "Erreur",
+      explore: "Explore",
       filter: "Filtrer",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "Chargement...",
       next: "Suivant",
       open: "Ouvrir",
       previous: "Précédent",
+      readMore: "Read more",
+      required: "Requis",
       retry: "Réessayer",
+      save: "Enregistrer",
       search: "Rechercher...",
       seeMore: "Voir Plus",
+      signUpFree: "Sign up free",
       sort: "Trier",
-      viewAll: "Voir Tout"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "Voir Tout",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "Ambulance",
+      callButton: "Appeler",
       communication1: "Apprendre des phrases de base en mandarin",
       communication2: "Utiliser des applications de traduction si nécessaire",
       communication3: "Télécharger des cartes de phrases d'urgence",
@@ -5114,9 +7588,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "Numéros d'urgence clés utilisés dans toute la Chine.",
       embassyDesc: "Informations de contact des ambassades et consulats des principaux pays en Chine.",
       embassyTitle: "Informations sur les Ambassades et Consulats",
+      findEmbassy: "Trouver votre ambassade",
       fire: "Pompiers",
       gps: "Partage de position GPS",
       gpsDesc: "Partagez votre position en temps réel pour les urgences.",
+      gpsLocator: "Localisation GPS",
       heroHeading: "Contacts d'urgence et aide",
       hospitalCommon: "Général : Peking Union Medical College Hospital, Beijing United Family",
       hospitalInternational: "Hôpitaux internationaux recommandés pour les étrangers",
@@ -5156,6 +7632,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "Téléchargez des cartes hors ligne pour une meilleure préparation",
       oneTapCalls: "Appels d'urgence en un clic",
       oneTapDesc: "Appuyez sur n'importe quel numéro pour appeler immédiatement. Fonctionne avec n'importe quel téléphone - aucune application nécessaire.",
+      pageDescription: "Numéros de téléphone importants pour les voyageurs en Chine",
       pageTitle: "Contacts et phrases d'urgence - ChinaConnect",
       pharmaciesTitle: "Pharmacies",
       pharmacyChains: "Grandes chaînes : Guoji Yiyao, Lianhua, Yixinke",
@@ -5173,6 +7650,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "Gardez la batterie de secours chargée",
       preparedness4: "Enregistrez l'adresse de l'hôtel en chinois",
       preparednessTitle: "Préparation aux urgences",
+      quickDial: "Numéros abrégés",
       safetyTipsTitle: "Conseils de sécurité pour les voyageurs",
       sosButtonDesc: "Appuyez longuement pendant 3 secondes pour envoyer automatiquement votre position aux contacts d'urgence.",
       sosButtonTitle: "Bouton SOS - Disponible sur Chaque Page",
@@ -5182,7 +7660,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "Maintenez appuyé ou faites un clic droit pour accéder au menu rapide",
       subtitle: "Numéros de téléphone, phrases et outils essentiels pour votre sécurité en Chine",
       title: "Contacts d'Urgence & Aide",
-      traffic: "Trafic"
+      touristHotline: "Ligne d'urgence touristique",
+      traffic: "Trafic",
+      universalSection: "Numéros universels",
+      viewAllContacts: "Voir tous les contacts"
     },
     empty: {
       addSome: "Commencez à explorer et enregistrez vos favoris !",
@@ -5201,7 +7682,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "Échec du chargement du contenu",
       network: "Erreur réseau",
       networkError: "Erreur réseau. Veuillez vérifier votre connexion.",
+      notFound: "Resource not found.",
       somethingWrong: "Quelque chose s'est mal passé",
+      timeout: "Request timed out.",
       unauthorized: "Non autorisé"
     },
     features: {
@@ -5226,22 +7709,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← Retour à {city}",
       backToCity: "Retour à {city}",
+      bottomCtaDesc: "Parcourez notre liste de villes et explorez plus de destinations en Chine.",
       callPhone: "Appeler",
+      citiesCount: "Cities",
       citiesUnit: "villes",
       cityEmpty: "Aucun restaurant pour le moment",
       cityEmptyDesc: "Nous sommes toujours en train de sélectionner des restaurants pour {city}.",
       cityEmptySubtitle: "Ajoutez des restaurants pour commencer à explorer",
       dataSourcesDesc: "Ces sources peuvent vous aider à en savoir plus sur la culture culinaire de {city} :",
       dataSourcesHeading: "Sources de Référence",
+      empty: "No cities match this filter.",
       emptyCta: "Voir tous les restaurants",
       emptyDesc: "Aucun restaurant dans cette catégorie. Essayez un autre filtre.",
       emptyTitle: "Aucun restaurant pour le moment",
+      essentialFoodApps: "Applications alimentaires essentielles",
+      essentialFoodAppsDesc: "Téléchargez ces applications pour commander des livraisons de nourriture et découvrir des restaurants locaux avec des menus en anglais.",
       exploreFood: "Explorer la Cuisine",
+      filterAll: "All",
       filterBlackPearl: "Perle Noire",
       filterBudget: "Budget",
       filterCasual: "Décontracté",
       filterLocal: "Coup de Cœur des Locaux",
       filterMichelin: "Michelin",
+      filterStreetFood: "Street Food",
       filteringLabel: "Filtrage :",
       heroCityFood: "{city} Food",
       indexTitle: "🍜 China Food Map",
@@ -5249,25 +7739,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "Naviguer",
       noCityTitle: "Vous ne trouvez pas la ville que vous cherchez ?",
       otherRestaurants: "Autres restaurants à {city}",
+      pageDescription: "Découvrez les plats les plus appréciés de Chine, les villes sélectionnées et les restaurants recommandés",
+      pageTitle: "Carte culinaire de la Chine - ChinaConnect",
       perPerson: "/personne",
+      proTipsFoodApps: "Conseils de pro pour les applications alimentaires",
       restaurantsUnit: "restaurants",
       showingCount: "Affichage",
-      subtitle: "Michelin, Perle Noire et favoris locaux"
+      subtitle: "Michelin, Perle Noire et favoris locaux",
+      tipDianping: "Dianping est idéal pour trouver des favoris locaux avec des avis en anglais.",
+      tipEleme: "Ele.me offre la plus large couverture de livraison, mais peut être par défaut en chinois.",
+      tipLinkCard: "Liez votre carte étrangère à Alipay/WeChat Pay avant de commander.",
+      tipMeituan: "Meituan propose des traductions de menus en anglais pour de nombreux restaurants.",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "Hébergement",
       aiAssistant: "Assistant IA",
+      allRightsReserved: "All rights reserved.",
       attractions: "Attractions",
       cities: "Villes",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Entreprise",
+      contact: "Contact",
+      copyright: "Droits d'auteur",
       culturalTips: "Conseils culturels",
       description: "Guide de confiance pour explorer la Chine. Recommandations de restaurants basées sur l'IA, guides de villes et conseils de voyage.",
+      diningGuide: "Guide des restaurants",
       emergency: "Contacts d'urgence",
       guides: "Guides de voyage",
+      guidesLabel: "Guides de voyage",
       payment: "Paiement",
+      privacy: "Confidentialité",
       resources: "Ressources",
+      resourcesLabel: "Ressources",
       restaurants: "Restaurants",
+      terms: "Conditions d'utilisation",
       transport: "Transports",
-      viewAllCities: "Voir toutes les villes"
+      viewAllCities: "Voir toutes les villes",
+      visaGuide: "Guide des visas"
+    },
+    guide: {
+      attractionsPageTitle: "Principales attractions en Chine",
+      attractionsTitle: "Principales attractions en Chine",
+      beijingGuide: "Pékin",
+      foodGuide: "Guide culinaire",
+      scamPrevention: "Prévention des arnaques"
     },
     guidePage: {
       accommodationStageDescription: "Trouvez et réservez le logement idéal pour chaque budget.",
@@ -5275,7 +7808,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "Hébergement - Hôtels, auberges et conseils de réservation",
       accommodationTitleShort: "Guide de l'hébergement",
       attractionsSubtitle: "Lieux incontournables et trésors cachés",
+      attractionsTitle: "Principales attractions",
       backHome: "Retour à l'accueil",
+      beginnerDesc: "Planifiez votre premier voyage en toute confiance.",
+      beginnerTraveler: "Premier visiteur",
+      businessDesc: "Outils pour réunions, paiements et étiquette.",
+      businessTitle: "Voyage d'affaires",
+      businessTraveler: "Voyageur d'affaires",
+      cardReadTime: "{minutes} min de lecture",
       cityBeijing: "Pékin",
       cityChengdu: "Chengdu",
       cityShanghai: "Shanghai",
@@ -5286,6 +7826,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "Guide de communication",
       culturalWarningsSubtitle: "Différences culturelles et faux pas à éviter",
       culturalWarningsTitleShort: "Avertissements culturels",
+      cultureTitle: "Conseils culturels",
       departureStageDescription: "Conseils pour les remboursements fiscaux, les douanes et les derniers conseils avant de rentrer chez vous.",
       departureStageTitle: "7. Départ",
       departureSubtitle: "Départ - Remboursements fiscaux et départ de Chine",
@@ -5303,6 +7844,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "Urgence - Police, ambulance, contacts d'ambassade",
       emergencyTitleShort: "Guide d'urgence",
       emergencyTourism: "Ligne d'assistance touristique 12301",
+      foodTitle: "Guide culinaire",
       home: "← Retour à l'accueil",
       indexBusinessHeading: "🚀 Outils de voyage d'affaires",
       indexBusinessSubtitle: "De l'invitation aux bonnes manières commerciales — tout ce dont vous avez besoin pour faire des affaires en Chine.",
@@ -5310,23 +7852,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "Guide complet pour voyager en Chine — De la préparation du départ jusqu'à l'arrivée.",
       indexHeroTitle: "🇨🇳 Guide Complet de Voyage en Chine",
       indexStagesTitle: "8 Étapes pour un Voyage en Chine sans Soucis",
+      longStay: "Séjour prolongé",
+      longStayDesc: "Installez-vous avec des guides sur les visas, la banque et l'hébergement.",
+      pageDescription: "Tout ce dont vous avez besoin pour planifier, réserver et profiter de votre voyage en Chine",
+      pageTitle: "Guide de voyage en Chine - ChinaConnect",
       paymentStageDescription: "Configurez Alipay et WeChat Pay avant votre arrivée.",
       paymentStageTitle: "2. Configuration des Paiements",
       paymentSubtitle: "Paiements - Alipay, WeChat Pay et conseils en espèces",
+      paymentTitle: "Paiement et argent",
       paymentTitleShort: "Guide des Paiements",
       popularByCity: "Populaires par ville",
       quickBeijingDesc: "Les incontournables de la capitale et les plats à ne pas manquer",
       quickFoodDesc: "Michelin, Perle Noire et les favoris locaux",
       quickScamDesc: "Arnaques courantes et comment les éviter",
+      safetyTitle: "Sécurité",
       scamPreventionSubtitle: "Protégez-vous des arnaques courantes en Chine",
       scamPreventionTitleShort: "Prévention des Arnaques",
+      subtitle: "Tout ce dont vous avez besoin pour planifier, réserver et profiter de votre voyage en Chine.",
+      title: "Guide de voyage en Chine",
       transparencySubtitle: "Connaissez les prix équitables, évitez les surcharges",
       transparencyTitleShort: "Transparence des Prix",
       transportStageDescription: "Naviguez dans les métros, les trains à grande vitesse et les applications de covoiturage.",
       transportStageTitle: "4. Transport",
       transportSubtitle: "Transport - Se déplacer en Chine en toute confiance",
+      transportTitle: "Se déplacer",
       transportTitleShort: "Guide du Transport",
       travelGuide: "Guide de Voyage",
+      travelerType: "Type de voyageur",
+      viewAll: "Voir tous les guides",
       viewAllBusinessTools: "Voir tous les outils professionnels",
       viewAllBusinessToolsCta: "Ouvrir Business Express",
       viewAllBusinessToolsDesc: "Consultez tous les outils professionnels avec des statistiques détaillées et des guides rapides.",
@@ -5335,23 +7888,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "Tout ce dont vous avez besoin avant de monter dans l'avion.",
       visaStageTitle: "1. Visa et Entrée",
       visaSubtitle: "Visa - Guide complet pour entrer en Chine",
+      visaTitle: "Visa et entrée",
       visaTitleShort: "Guide des Visas"
+    },
+    guideTopic: {
+      backToGuide: "Retour au guide",
+      contactCta: "Contacter le support",
+      lastUpdated: "Dernière mise à jour",
+      needHelp: "Vous avez besoin d'aide ?",
+      relatedArticles: "Articles connexes"
     },
     home: {
       chatWithAI: "Discuter avec l'IA",
       citiesSubtitle: "Des capitales anciennes aux métropoles modernes, découvrez les meilleures villes de Chine grâce à notre guide complet.",
       citiesTitle: "Explorer Nos Villes",
+      clearHistory: "Effacer l'historique",
       ctaSubtitle: "Commencez à planifier votre voyage avec des recommandations alimentées par l'IA.",
       ctaTitle: "Prêt à Explorer la Chine ?",
+      discoverSubtitle: "Découvrez le meilleur de la Chine avec des guides de ville alimentés par l'IA et des restaurants sélectionnés.",
+      exploreAiChat: "Explorez ChinaGuide AI",
       exploreBeijing: "Explorer Pékin",
       exploreCities: "Explorer les Villes",
+      exploreCityButton: "Explorer la ville",
       exploreGuide: "Voir le guide complet",
+      featuredCitiesLabel: "En vedette",
+      featuredSection: "Destinations en vedette",
       featuresSubtitle: "Tout ce dont vous avez besoin pour un voyage inoubliable",
       featuresTitle: "Tout ce dont vous avez besoin pour votre voyage en Chine",
+      heroBadge: "Guide de voyage alimenté par l'IA pour la Chine",
       heroCTA: "Demander des conseils de voyage à l'IA",
       heroDesc: "Restaurants étoilés Michelin et Perle Noire, attractions, conseils de transport, contacts d'urgence — le tout sélectionné par l'IA et les locaux.",
       heroSubtitle: "Votre guide de confiance pour les meilleures villes de Chine",
       heroTitle: "Votre Guide de Chine Alimenté par l'IA",
+      noRecentViews: "Aucune vue récente pour le moment.",
       onboarding1Desc: "Découvrez des restaurants étoilés Michelin et Perle Noire dans 12 villes chinoises.",
       onboarding1Title: "Découvrir la Bonne Cuisine",
       onboarding2Title: "Conseils Alimentés par l'IA",
@@ -5359,14 +7928,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "Terminer",
       onboardingNext: "Suivant",
       onboardingSkip: "Passer",
+      pageDescription: "Découvrez la Chine avec des guides de ville alimentés par l'IA. Trouvez les meilleurs restaurants (Michelin & Perle Noire), attractions, informations sur les transports et contacts d'urgence dans 12 grandes villes chinoises, y compris Pékin, Shanghai, Guangzhou, Xi'an, Chengdu et plus encore.",
       pageTitle: "ChinaConnect - Votre Guide Alimenté par l'IA pour Explorer la Chine",
+      popularCities: "Villes populaires",
+      popularCitiesSubtitle: "Explorez les destinations les plus appréciées en Chine",
+      popularRestaurants: "Restaurants populaires",
+      popularRestaurantsSubtitle: "Favoris Michelin et Black Pearl à travers la Chine",
       recentlyViewed: "Récemment Consulté",
       recommendedForYou: "Recommandé pour Vous",
+      startPlanningToday: "Commencez à planifier votre voyage dès aujourd'hui.",
       statsAI: "Assistance par l'IA",
       statsAttractions: "Principales Attractions",
       statsCities: "Villes Couvartes",
       statsRestaurants: "Restaurants Michelin",
-      viewAllCities: "Voir Toutes les Villes"
+      viewAllCities: "Voir Toutes les Villes",
+      viewAllCitiesButton: "Voir toutes les villes"
+    },
+    index: {
+      featuredDestinations: "Basé sur les destinations populaires"
     },
     language: {
       chinese: "Chinois",
@@ -5378,6 +7957,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "Passer à"
     },
+    loginPage: {
+      pageDescription: "Connectez-vous à ChinaConnect",
+      pageTitle: "Connexion - ChinaConnect"
+    },
     nav: {
       aiChat: "ChinaGuide AI",
       attractions: "Attractions",
@@ -5387,6 +7970,7 @@ export const translations: Record<Language, Translations> = {
       home: "Accueil",
       restaurants: "Restaurants",
       selectLanguage: "Sélectionner la langue",
+      signIn: "Se connecter",
       tagline: "Explorez la Chine avec l'IA"
     },
     notFound: {
@@ -5396,12 +7980,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "Explorer les villes",
       goHome: "Retour à l'accueil",
       heading: "404",
+      homeButton: "Retour à l'accueil",
       letsContinue: "Continuons à explorer la Chine",
       primary: "Page non trouvée",
-      title: "Page non trouvée - ChinaConnect"
+      subtitle: "La page que vous recherchez n'existe pas ou a été déplacée.",
+      title: "Page non trouvée - ChinaConnect",
+      titleShort: "404",
+      viewCities: "Voir les villes"
+    },
+    offline: {
+      cachedPages: "Les pages mises en cache sont toujours disponibles.",
+      retryButton: "Réessayer",
+      subtitle: "Il semble que vous ayez perdu votre connexion Internet.",
+      title: "Vous êtes hors ligne",
+      viewHome: "Voir l'accueil"
     },
     offlinePage: {
+      ambulanceDesc: "Urgences médicales, blessures",
+      availableOffline: "Disponible hors ligne",
+      bannerDesc: "Les contacts d'urgence et les informations essentielles sont toujours disponibles",
       bannerTitle: "Mode hors ligne",
+      emergencyNumbers: "Numéros d'urgence (Chine)",
+      emergencyPhrases: "Phrases d'urgence rapides",
+      fireDesc: "Incendies, secours, matières dangereuses",
+      lastSynced: "Dernière synchronisation :",
       phrase1En: "Au secours !",
       phrase2En: "Appelez la police !",
       phrase3En: "J'ai besoin d'une ambulance",
@@ -5409,6 +8011,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "Je suis perdu",
       phrase6En: "J'ai besoin d'aide",
       phrase7En: "Où se trouve l'hôpital ?",
+      phrasesHelp: "Afficher les phrases d'urgence courantes",
+      phrasesTip: "Montrez ces phrases si vous avez besoin d'aide",
+      policeDesc: "Criminalité, urgences, sécurité publique",
+      quickActions: "Actions rapides",
+      tapToCall: "Appuyez sur n'importe quel numéro pour appeler immédiatement",
       tipsHeading: "Conseils de voyage hors ligne",
       tipsList1: "Enregistrez les phrases clés et les adresses avant de vous déconnecter.",
       tipsList2: "Téléchargez les cartes hors ligne dans votre application de cartes.",
@@ -5417,11 +8024,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "La plupart des cafés et centres commerciaux ont le Wi-Fi gratuit.",
       tipsList6: "Emportez un petit carnet pour écrire les adresses.",
       title: "Vous êtes hors ligne",
+      title2: "ChinaConnect Urgence SOS - Fonctionne Hors Ligne",
+      trafficDesc: "Accidents de la circulation uniquement",
       tryAgain: "Réessayer"
     },
     onboarding: {
       done: "Terminé",
       getStarted: "Commencer",
+      neverShow: "Ne plus afficher ce message",
       next: "Suivant",
       skip: "Passer",
       step1Desc: "Découvrez les restaurants étoilés Michelin et Black Pearl dans 12 villes chinoises.",
@@ -5433,6 +8043,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "Bienvenue sur ChinaConnect !"
     },
     pricing: {
+      annualNote: "Facturé annuellement à ¥659 (économisez ¥169)",
       autoRenewNote: "Renouvellement automatique, annulation possible à tout moment",
       billingAnnual: "Annuel",
       billingMonthly: "Mensuel",
@@ -5450,6 +8061,7 @@ export const translations: Record<Language, Translations> = {
         name: "Professionnel",
         price: "29,99 $"
       },
+      cancelAnytime: "Annulez à tout moment",
       cancelledNotice: "Le paiement a été annulé. Vous pouvez réessayer ci-dessous.",
       compareFeatures: {
         advancedTools: "Outils de voyage avancés",
@@ -5464,6 +8076,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "Vérifiez clairement ce qui est inclus dans chaque plan.",
       compareTitle: "Comparer toutes les fonctionnalités",
+      ctaButton: "Commencer",
       ctaPrimary: "Commencez gratuitement dès aujourd'hui",
       ctaSecondary: "Explorer les fonctionnalités",
       ctaSubtitle: "Rejoignez des milliers de voyageurs qui planifient leur voyage en Chine avec l'IA.",
@@ -5481,14 +8094,44 @@ export const translations: Record<Language, Translations> = {
         name: "Explorateur",
         price: "4,99 $"
       },
+      faq: "FAQ",
+      faq1A: "Oui, vous pouvez annuler depuis votre compte à tout moment. Les forfaits annuels sont remboursables sous 30 jours.",
       faq1Q: "Comment passer à un plan supérieur ou inférieur ?",
+      faq2A: "Absolument - vous pouvez passer à une version supérieure ou inférieure à tout moment. Un crédit au prorata est appliqué automatiquement.",
       faq2Q: "Comment annuler mon abonnement ?",
+      faq3A: "Le forfait gratuit couvre toutes les villes, 5 demandes d'IA par mois, la planification d'itinéraire de base et les itinéraires enregistrés.",
       faq3Q: "Quelle est votre politique de remboursement ?",
+      faq4A: "Nous acceptons Visa, Mastercard, Alipay, WeChat Pay et les principales cartes locales.",
       faq4Q: "Quand mon quota mensuel est-il réinitialisé ?",
+      faq5A: "Oui - nous utilisons un cryptage de niveau bancaire et ne vendons jamais vos données personnelles.",
       faq5Q: "Que se passe-t-il lorsque je dépasse ma limite de requêtes AI ?",
+      faq6A: "Oui, les étudiants avec une adresse e-mail .edu valide bénéficient de 50% de réduction sur le forfait Voyageur.",
       faq6Q: "Quels modes de paiement acceptez-vous ?",
       faqSubtitle: "Tout ce que vous devez savoir sur nos plans et notre facturation",
       faqTitle: "Questions fréquemment posées",
+      featureAdvancedTools: "Outils de voyage avancés",
+      featureAiRequestsBusiness: "Conversations AI illimitées",
+      featureAiRequestsExplorer: "20 demandes AI par mois",
+      featureAiRequestsFree: "5 demandes AI par mois",
+      featureAiRequestsPro: "100 requêtes AI par mois",
+      featureAllTravelerFeatures: "Toutes les fonctionnalités de Traveler",
+      featureApi: "Accès à l'API",
+      featureBasicPlanning: "Planification de voyage de base",
+      featureBusinessTemplates: "Modèles pour entreprises",
+      featureCancelAnytime: "Annulez à tout moment",
+      featureConversationHistory: "Historique des conversations",
+      featureCustomIntegrations: "Intégrations personnalisées",
+      featureDedicated: "Support dédié",
+      featureExportPdf: "Exporter en PDF",
+      featureMultiCity: "Itinéraires multi-villes",
+      featurePdfExport: "Exportation PDF",
+      featurePremiumCustomization: "Personnalisation premium",
+      featurePrioritySupport: "Support prioritaire",
+      featureSaveItineraries: "Enregistrer les itinéraires",
+      featureSecurePayments: "Paiements sécurisés",
+      featureTeamCollab: "Collaboration d'équipe",
+      featureTeamManagement: "Gestion d'équipe",
+      featureViewItineraries: "Voir les itinéraires",
       free: {
         description: "Commencez avec une planification de base",
         feature1: "5 requêtes AI par mois",
@@ -5499,24 +8142,40 @@ export const translations: Record<Language, Translations> = {
         name: "Gratuit"
       },
       freeForever: "Gratuit pour toujours",
+      heroBadge: "Prix",
       heroSubtitle: "Du gratuit au plan professionnel, choisissez le plan qui convient à votre rythme de voyage.",
       heroTitle: "Prix simples et transparents",
+      moneyBack: "Remboursement sous 30 jours",
+      planBusiness: "Business",
+      planExplorer: "Explorer",
+      planFree: "Gratuit",
+      planPro: "Pro",
+      planTraveler: "Voyageur",
       popularBadge: "Le plus populaire",
       priceFree: "0 $",
+      pro: {
+        description: "Pour les voyageurs actifs"
+      },
       saveBadge: "Économisez 20 %",
       savingsHint: "Économisez 20 % en optant pour un paiement annuel",
+      securePayment: "Paiement sécurisé",
       subscribeNow: "Abonnez-vous maintenant",
+      testimonial1: "ChinaConnect m'a fait gagner des heures de recherche. Les itinéraires de l'IA sont parfaits.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "États-Unis",
       testimonial1Role: "Plan Explorateur",
+      testimonial2: "En tant que voyageur d'affaires, le traducteur et les outils de réunion sont inestimables.",
       testimonial2Author: "Li Wei T.",
       testimonial2Country: "Royaume-Uni",
       testimonial2Role: "Forfait Business",
+      testimonial3: "Meilleur compagnon de voyage que j'ai utilisé en Chine.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "Allemagne",
       testimonial3Role: "Forfait Voyageur",
+      testimonials: "Ce que disent les voyageurs",
       testimonialsSubtitle: "Découvrez ce que nos utilisateurs disent de leur expérience avec ChinaConnect",
       testimonialsTitle: "Apprécié par les voyageurs du monde entier",
+      title: "Prix",
       traveler: {
         annualNote: "Facturé 95,99 $US/an (économisez 24 $US)",
         description: "Pour les visiteurs fréquents de la Chine",
@@ -5533,11 +8192,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "Garantie de remboursement de 30 jours",
         securePayment: "Paiement sécurisé"
       },
+      trustCancelAnytime: "Annulez à tout moment",
+      trustInstantAccess: "Accès instantané",
+      trustSecurePayments: "Paiements sécurisés",
       trustedBy: "Apprécié par plus de 10 000 voyageurs",
       unlimited: "Illimité"
     },
     profilePage: {
-      title: "Mon Profil - ChinaConnect"
+      displayName: "Nom d'affichage",
+      heading: "Profile",
+      pageTitle2: "Mon profil",
+      save: "Enregistrer les modifications",
+      saved: "Enregistré !",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "Mon Profil - ChinaConnect",
+      uploadAvatar: "Téléverser un avatar"
     },
     recents: {
       clearAll: "Tout effacer",
@@ -5574,6 +8243,22 @@ export const translations: Record<Language, Translations> = {
       username: "Nom d'utilisateur",
       usernamePlaceholder: "Votre nom d'affichage"
     },
+    registerPage: {
+      pageDescription: "Créez votre compte ChinaConnect",
+      pageTitle: "Inscription - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "Adresse",
       avgPrice: "Prix moyen",
@@ -5599,12 +8284,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Partager avec des amis"
     },
     userPage: {
+      heading: "Profil",
+      pageTitle2: "Profil utilisateur",
       title: "Profil Utilisateur - ChinaConnect"
     }
   },
   de: {
     accountPage: {
       active: "Aktiv",
+      activeLabel: "Aktiv",
       aiRequestsThisMonth: "KI-Anfragen in diesem Monat",
       alertSignOutError: "Abonnementverwaltung konnte nicht geöffnet werden. Bitte wenden Sie sich an den Support.",
       currentPlan: "Aktueller Plan",
@@ -5616,6 +8304,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "Noch keine Bestellungen.",
       emptySavedRoutes: "Noch keine gespeicherten Routen.",
       emptySavedRoutesHint: "Noch keine gespeicherten Routen. Starten Sie eine Konversation mit KI, um Routen zu erstellen!",
+      explorerBadge: "Entdecker",
       loading: "Lade dein Konto...",
       manageSubscription: "Abonnement verwalten",
       membership: "Mitgliedschaft",
@@ -5625,6 +8314,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "Status",
       orderHeaderType: "Typ",
       pageTitle: "Mein Konto - ChinaConnect",
+      pageTitleSuffix: "Mein Konto - ChinaConnect",
       pointsUnit: "Punkte",
       renewsOn: "Läuft ab am",
       savedLocally: "Nur lokal gespeichert",
@@ -5635,27 +8325,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "Anmeldung erforderlich",
       signInRequiredDesc: "Bitte melden Sie sich an, um Ihr Konto anzuzeigen.",
       signOut: "Abmelden",
+      statAiUsage: "Heutige KI-Nutzung",
+      statFavorites: "Favoriten",
       statSavedRoutes: "Gespeicherte Routen",
+      subtitle: "Verwalten Sie Ihr Abonnement, Favoriten und gespeicherte Routen.",
       syncedToCloud: "Mit der Cloud synchronisiert",
       tabBilling: "Abrechnung",
+      tabFavorites: "Favoriten",
+      tabOrders: "Bestellungen",
       tabOverview: "Übersicht",
       tabPlans: "Pläne",
+      tabRoutes: "Routen",
       tabUsage: "Nutzung",
+      title: "Mein Konto",
       untitledRoute: "Unbenannter Routenverlauf",
       upgrade: "Upgrade",
       usageDailyAi: "Tägliche KI-Anfragen",
       usageFavorites: "Favoriten",
       usageSavedRoutes: "Gespeicherte Routen",
+      userBadge: "Benutzer",
       walletBalance: "Wallet-Guthaben"
+    },
+    ai: {
+      send: "Senden",
+      thinking: "Wird bearbeitet..."
     },
     aiPage: {
       authFailed: "Authentifizierung fehlgeschlagen",
       authGateSignupTitle: "Erstelle dein Konto",
       authGateTitle: "Anmelden, um zu chatten",
+      chatInputPlaceholder: "Fragen Sie nach Restaurants, Verkehrsmitteln, Sehenswürdigkeiten...",
+      conversationHistory: "Konversationsverlauf",
       conversationsTitle: "Konversationen",
       deleteConfirm: "Diese Konversation löschen?",
       deleteTitle: "Löschen",
       emailPlaceholder: "du@example.com",
+      exportPdf: "PDF exportieren",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "Schon eins?",
@@ -5664,13 +8369,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "Seitenleiste ausblenden",
       messageLabel: "Nachricht",
       messagesLabel: "Nachrichten",
+      newChat: "Neue Unterhaltung",
       newChatButton: "+ Neuer Chat",
       noAccountPrompt: "Noch kein Konto?",
       noConversationsYet: "Noch keine Konversationen",
       orContinueWith: "oder",
+      pageDescription: "Fragen Sie alles über das Reisen in China.",
+      pageTitle: "KI-Reisebegleiter - ChinaConnect",
       passwordPlaceholder: "Passwort (mind. 6 Zeichen)",
       promptsSubtitle: "Wählen Sie eine Eingabeaufforderung oder geben Sie Ihre eigene unten ein",
       promptsTitle: "Fragen Sie doch mal",
+      saveRoute: "Route speichern",
+      sendButton: "Senden",
       showSidebarTitle: "Konversationen anzeigen",
       signInButton: "Anmelden",
       signUpButton: "Konto erstellen",
@@ -5678,27 +8388,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "KI hilft Ihnen bei der Planung Ihrer Chinareise",
       switchToSignIn: "Anmelden",
       switchToSignUp: "Konto erstellen",
-      title: "ChinaGuide KI - Ihr intelligenter Chinareise-Experte"
+      thinking: "Wird bearbeitet...",
+      title: "ChinaGuide KI - Ihr intelligenter Chinareise-Experte",
+      upgradePrompt: "Registrieren Sie sich, um mehr KI-Anfragen freizuschalten.",
+      usageToday: "Heutige Nutzung"
     },
     attractions: {
       allCities: "Alle Städte mit Sehenswürdigkeiten",
+      appSubtitle: "Nützliche Apps für die Fortbewegung und die Entdeckung von Sehenswürdigkeiten",
+      appTitle: "Reise planen",
+      attractionCount: "{count} Sehenswürdigkeiten",
       browseCategory: "Nach Kategorie durchsuchen",
+      citiesCount: "{count} Städte",
+      diversityTypes: "Historisch, kulturell, natürlich, modern",
+      featured: "Empfohlene Städte",
       featuredCities: "Hauptstädte",
+      heroEyebrow: "Nach Zielort suchen",
+      openCity: "Stadt öffnen",
+      pageDescription: "Must-see-Sehenswürdigkeiten in ganz China – von antiken Wahrzeichen bis hin zu Naturwundern",
+      pageTitle: "Sehenswürdigkeiten in China - ChinaConnect",
       subtitle: "Unbedingt zu besuchende Sehenswürdigkeiten – von antiken Wahrzeichen bis zu Naturwundern",
-      title: "Sehenswürdigkeiten in China"
+      title: "Sehenswürdigkeiten in China",
+      viewAll: "Alle Sehenswürdigkeiten ansehen"
     },
     auth: {
+      continueWithGithub: "Mit GitHub fortfahren",
+      continueWithGoogle: "Mit Google fortfahren",
+      email: "E-Mail",
       myAccount: "Mein Konto",
+      needHelp: "Brauchen Sie Hilfe bei der Anmeldung?",
+      orContinueWithEmail: "Oder mit E-Mail fortfahren",
+      password: "Passwort",
+      profile: "Profil",
       profileCenter: "Profilzentrum",
       signIn: "Anmelden",
-      signOut: "Abmelden"
+      signInButton: "Anmelden",
+      signOut: "Abmelden",
+      signOutConfirm: "Von ChinaConnect abmelden?",
+      subtitle: "Favoriten speichern, Reisen planen und mit KI chatten.",
+      title: "Anmeldung bei ChinaConnect"
     },
     authPage: {
       authTitle: "Anmeldung/Registrierung - ChinaConnect",
       callbackTitle: "Anmeldung...",
+      continueWithEmail: "Oder mit E-Mail fortfahren",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
       errorTitle: "Anmeldung fehlgeschlagen",
+      forgotPassword: "Passwort vergessen?",
       loginTitle: "Anmeldung - ChinaConnect",
-      signingYouIn: "Sie werden angemeldet..."
+      needAccount: "Kein Konto?",
+      passwordPlaceholder: "Ihr Passwort",
+      signInButton: "Anmelden",
+      signInError: "Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      signUpButton: "Registrieren",
+      signUpError: "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      signingYouIn: "Sie werden angemeldet...",
+      successDesc: "Sie werden nun weitergeleitet...",
+      successTitle: "Willkommen zurück!"
     },
     businessGuidePage: {
       backToGuide: "← Zurück zur Reiseanleitung",
@@ -5723,77 +8470,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← Zurück zur Preisübersicht",
+      continueButton: "Zu Ihrem Konto fortfahren",
       description: "Ihr Abonnement wurde erfolgreich aktiviert",
       errorDesc: "Wir konnten Ihre Zahlung nicht verarbeiten. Bitte versuchen Sie es erneut oder kontaktieren Sie den Support.",
       errorTitle: "Etwas ist schief gelaufen",
+      processing: "Verarbeitung Ihrer Zahlung...",
       processingDesc: "Bitte warten Sie, während wir Ihr Abonnement bestätigen.",
       startPlanning: "Reise planen",
       successAccess: "Sie haben jetzt Zugriff auf alle Funktionen Ihres neuen Tarifs.",
       successDesc: "Ihr Abonnement wurde aktiviert.",
       successTitle: "Zahlung erfolgreich!",
+      thankYou: "Vielen Dank, dass Sie sich für ChinaConnect entschieden haben.",
       title: "Zahlung erfolgreich - ChinaConnect",
       viewAccount: "Konto ansehen"
     },
     cities: {
       attractions: "Sehenswürdigkeiten",
+      citiesCount: "Städte",
+      citiesInChina: "Städte in China",
       culturalTips: "Kulturelle Tipps",
       emergency: "Notfälle",
+      exploreAll: "Alle erkunden",
       exploreGuide: "Erkunden Sie den Reiseführer",
+      filterATier: "A-Kategorie",
+      filterAll: "Alle",
+      filterDTier: "D-Kategorie",
+      filterSTier: "S-Kategorie",
+      headerSubtitle: "Von antiken Hauptstädten bis hin zu modernen Metropolen – wählen Sie Ihr Ziel.",
+      headerTitle: "Chinesische Städte erkunden",
       hotels: "Hotels",
+      noResults: "Keine Städte entsprechen Ihren Filtern.",
       openingHours: "Öffnungszeiten",
+      pageDescription: "Entdecken Sie alle von ChinaConnect abgedeckten chinesischen Städte – von alten Hauptstädten bis hin zu modernen Metropolen. S-Kategorie Premium-Städte, A-Kategorie Semi-Premium und D-Kategorie On-Demand-Städte.",
+      pageTitle: "Alle Städte erkunden - ChinaConnect",
       payment: "Zahlung",
+      population: "Einwohnerzahl",
       recommendedTime: "Empfohlener Besuch",
+      region: "Region",
       restaurants: "Restaurants",
+      searchPlaceholder: "Städte durchsuchen...",
       subtitle: "Von antiken Hauptstädten zu modernen Metropolen",
       ticketPrice: "Eintrittskarte",
       title: "Entdecken Sie unsere Städte",
-      transport: "Transport"
+      transport: "Transport",
+      viewCity: "Stadt ansehen"
+    },
+    city: {
+      beijing: {
+        name: "Peking"
+      },
+      chengdu: {
+        name: "Chengdu"
+      },
+      chongqing: {
+        name: "Chongqing"
+      },
+      guangzhou: {
+        name: "Guangzhou"
+      },
+      guilin: {
+        name: "Guilin"
+      },
+      hangzhou: {
+        name: "Hangzhou"
+      },
+      lijiang: {
+        name: "Lijiang"
+      },
+      qingdao: {
+        name: "Qingdao"
+      },
+      shanghai: {
+        name: "Shanghai"
+      },
+      shenzhen: {
+        name: "Shenzhen"
+      },
+      suzhou: {
+        name: "Suzhou"
+      },
+      xian: {
+        name: "Xi'an"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "Alle",
+      categoryLabel: "Kategorie",
+      disclaimer: "Öffnungszeiten, Ticketpreise und Telefonnummern können sich ändern. Wir empfehlen, die Informationen über die offizielle Website der Sehenswürdigkeit oder telefonisch zu überprüfen.",
+      openOnMap: "Auf Karte öffnen",
+      openingHours: "Öffnungszeiten",
+      subtitle: "Muss man gesehen haben: Wahrzeichen, Museen und Naturwunder.",
+      ticketPrice: "Eintrittspreis",
+      tipsHeader: "Tipps",
+      title: "Sehenswürdigkeiten in {city}",
+      viewAll: "Alle Sehenswürdigkeiten in {city} ansehen",
+      viewDetails: "Details anzeigen",
+      viewMore: "Mehr Sehenswürdigkeiten ansehen"
+    },
+    cityFood: {
+      avgPrice: "Durchschnittspreis",
+      cuisine: "Küche",
+      disclaimer: "Telefonnummern und Adressen können sich ändern. Wir empfehlen, die Informationen über die offiziellen Kanäle des Restaurants oder telefonisch zu überprüfen.",
+      filterAll: "Alle",
+      filterBlackPearl: "Schwarze Perle",
+      filterBudget: "Budget",
+      filterLocal: "Lokal",
+      filterLocalFavorites: "Lokale Favoriten",
+      filterMichelin: "Michelin",
+      filteringLabel: "Filtern nach:",
+      googleMaps: "Google Maps",
+      signatureDishes: "Empfehlungen",
+      subtitle: "Michelin-Sterne, Favoriten der Schwarzen Perle und lokale Schätze.",
+      title: "Restaurants in {city}",
+      viewAll: "Alle Restaurants in {city} ansehen",
+      viewDetails: "Details anzeigen"
+    },
+    cityHotels: {
+      bookCta: "Hoteldetails ansehen",
+      bookNow: "Zum Hotel",
+      filterAll: "Alle Kategorien",
+      pricePerNight: "pro Nacht",
+      stars: "Sterne",
+      subtitle: "Von Boutique-Unterkünften bis hin zu internationalen Ketten – finden Sie den richtigen Ort für Ihre Reise.",
+      title: "Hotels in {city}"
     },
     cityPage: {
+      appCount: "{count} unverzichtbare Apps",
+      appsSubtitle: "Laden Sie diese Apps herunter, bevor Sie ankommen.",
+      area: "Gebiet",
+      attractionCount: "{count} Sehenswürdigkeiten",
       attractionsExploreCount: "{city} – {count} Orte zum Entdecken",
       attractionsHeading: "Top-Sehenswürdigkeiten",
       attractionsSubtitle: "Von Einheimischen und Reisenden ausgewählte Muss-Besuche",
+      bestTime: "Beste Reisezeit",
       bestTimeHeading: "Beste Reisezeit",
+      bookHotelCta: "Hotels in {city} finden",
+      bookTourCta: "Eine Tour in {city} buchen",
+      citySubtitle: "Der vollständige Reiseführer für {city}, China. Entdecken Sie die besten Restaurants, Sehenswürdigkeiten, Hotels und Reisetipps.",
+      connectivitySubtitle: "Bleiben Sie mit Daten verbunden.",
+      contactCount: "{count} Kontakte",
+      cultureSubtitle: "Lokale Bräuche und Etikette.",
+      cultureSubtitleDynamic: "Unverzichtbares Kulturspezifisches Wissen für {city}",
+      currency: "Währung",
       dataSourcesDesc: "Woher diese Daten stammen",
       dataSourcesHeading: "Datenquellen",
+      downloadBefore: "Laden Sie diese Apps herunter, bevor Sie nach China einreisen.",
+      elevation: "Höhe",
+      emergencySubtitle: "Wichtige Telefonnummern und Botschaften.",
+      emergencySubtitleDynamic: "Wichtige Telefonnummern in {city}",
+      esimDescription: "eSIM ist die einfachste Möglichkeit, in China Daten zu erhalten. Keine physische SIM-Karte erforderlich – sofort nach der Ankunft aktivieren.",
+      esimRecommended: "eSIM (Empfohlen)",
+      essentialAppsFor: "Unverzichtbare Apps für {city}",
+      essentialCultural: "Unverzichtbares kulturelles Wissen für {city}",
+      exploreOnMap: "Auf der Karte erkunden",
       foodHeading: "Wo man essen kann",
       foodHighlightsHeading: "Highlights der Gastronomie",
       foodHighlightsSubtitle: "Lokal empfohlen",
       foodSubtitle: "Michelin-Sterne, Black Pearl-Auswahl und lokale Favoriten",
+      gettingAround: "Unterwegs",
       gettingTo: "Anreise nach {city}",
+      heroEyebrow: "Reiseführer",
       home: "← Zurück zur Stadtübersicht",
+      hotelCount: "{count} Hotels",
       hotelsCountUnit: "Hotels",
       hotelsHeading: "Wo man übernachten kann",
+      hotelsSubtitle: "Von Boutique-Hotels bis hin zu internationalen Ketten.",
+      importantNumbers: "Wichtige Telefonnummern in {city}",
+      intro: "Willkommen in {city}, einem der faszinierendsten Reiseziele Chinas.",
+      language: "Sprache",
+      moreCities: "Weitere Städte",
+      nextCity: "Nächste Stadt",
       noHotels: "Keine Hotels gefunden",
       noHotelsDesc: "Versuchen Sie einen anderen Preisbereich oder eine andere Kategorie.",
       noResults: "Keine Sehenswürdigkeiten gefunden",
       noResultsDesc: "Versuchen Sie, Ihre Filter oder Suchbegriffe anzupassen.",
+      openFullMap: "Vollständige Karte öffnen",
+      overviewSubtitle: "Alles, was Sie wissen müssen, bevor Sie abreisen.",
+      pageTitleSuffix: "Reiseführer - ChinaConnect",
+      paymentSubtitle: "Bargeld, Karten, mobile Geldbörsen und Geldautomaten-Zugriff.",
       phoneIcon: "📞",
+      population: "Einwohnerzahl",
+      previousCity: "Vorherige Stadt",
+      proTipBooking: "Tipp: Buchen Sie Hotels 2-3 Wochen im Voraus für die besten Tarife.",
+      proTipEsim1: "eSIM funktioniert am besten, wenn Ihr Telefon dies unterstützt (iPhone XS+ und die meisten Android-Flaggschiffe).",
+      proTipEsim2: "Laden Sie eSIM-Apps herunter, bevor Sie nach China einreisen.",
+      proTipEsim3: "Airalo und Holafly bieten spezifische China-Tarife mit unbegrenzten Datenoptionen.",
+      proTips: "Praktische Tipps",
+      quickFacts: "Schnelle Fakten",
       quickFactsHeading: "Schnelle Fakten",
+      region: "Region",
+      restaurantCount: "{count} Restaurants",
+      sectionApps: "Unverzichtbare Apps",
+      sectionAttractions: "Top-Sehenswürdigkeiten",
+      sectionConnectivity: "SIM & eSIM",
+      sectionCulture: "Kulturelle Tipps",
+      sectionEmergency: "Notfallkontakte",
+      sectionFood: "Essensmöglichkeiten",
+      sectionHotels: "Übernachtungsmöglichkeiten",
+      sectionOverview: "Überblick",
+      sectionPayment: "Zahlung & Geld",
+      sectionTransport: "Unterwegs",
+      sectionVisa: "Visum & Einreise",
+      sosTip: "Speichern Sie diese Nummern, bevor Sie ankommen – der Mobilfunkempfang kann in abgelegenen Gebieten eingeschränkt sein.",
+      switchToEnglishMode: "Schalten Sie in den Englisch-Modus in den App-Einstellungen, wenn Sie die chinesische Benutzeroberfläche sehen. Sowohl Alipay als auch WeChat Pay unterstützen ausländische Kreditkarten.",
+      tabApps: "Apps",
+      tabAttractions: "Sehenswürdigkeiten",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "Kultur",
+      tabEmergency: "Notfälle",
+      tabFood: "Essen",
+      tabHotels: "Hotels",
+      tabOverview: "Überblick",
+      tabPayment: "Zahlung",
+      tabTransport: "Transport",
+      timezone: "Zeitzone",
+      tipCount: "{count} Tipps",
       topHighlightsHeading: "Highlights",
       transportSubtitle: "Unterwegs in {city}",
-      viewAllHotels: "Alle {totalHotelCount} Hotels ansehen"
+      travelTo: "Reise nach {city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "Alle {totalHotelCount} Hotels ansehen",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "Alle",
       back: "Zurück",
+      bookNow: "Book now",
       cancel: "Abbrechen",
       close: "Schließen",
       confirm: "Bestätigen",
+      continue: "Weiter",
+      discover: "Discover",
+      done: "Fertig",
       error: "Fehler",
+      explore: "Explore",
       filter: "Filter",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "Laden...",
       next: "Weiter",
       open: "Öffnen",
       previous: "Zurück",
+      readMore: "Read more",
+      required: "Erforderlich",
       retry: "Wiederholen",
+      save: "Speichern",
       search: "Suche...",
       seeMore: "Mehr ansehen",
+      signUpFree: "Sign up free",
       sort: "Sortieren",
-      viewAll: "Alle ansehen"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "Alle ansehen",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "Krankenwagen",
+      callButton: "Anrufen",
       communication1: "Lernen Sie grundlegende Mandarin-Phrasen",
       communication2: "Nutzen Sie bei Bedarf Übersetzungs-Apps",
       communication3: "Laden Sie Notfall-Phrasenkarten herunter",
@@ -5803,9 +8765,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "Wichtige Notfallnummern, die in ganz China verwendet werden.",
       embassyDesc: "Kontaktinformationen der Botschaften und Konsulate wichtiger Länder in China.",
       embassyTitle: "Botschafts- und Konsulatsinformationen",
+      findEmbassy: "Finden Sie Ihre Botschaft",
       fire: "Feuerwehr",
       gps: "GPS-Standortfreigabe",
       gpsDesc: "Teilen Sie Ihren Standort in Echtzeit für Notrufe.",
+      gpsLocator: "GPS-Standort",
       heroHeading: "Notfallkontakte & Hilfe",
       hospitalCommon: "Gängige: Peking Union Medical College Hospital, Beijing United Family",
       hospitalInternational: "Internationale Krankenhäuser, die für Ausländer empfohlen werden",
@@ -5845,6 +8809,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "Laden Sie Offline-Karten für eine bessere Vorbereitung herunter",
       oneTapCalls: "Notrufe mit einem Fingertipp",
       oneTapDesc: "Tippen Sie auf eine beliebige Nummer, um sofort anzurufen. Funktioniert mit jedem Telefon - keine App erforderlich.",
+      pageDescription: "Wichtige Telefonnummern für Reisende in China",
       pageTitle: "Notfallkontakte & Phrasen - ChinaConnect",
       pharmaciesTitle: "Apotheken",
       pharmacyChains: "Große Ketten: Guoji Yiyao, Lianhua, Yixinke",
@@ -5862,6 +8827,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "Powerbank geladen halten",
       preparedness4: "Hoteladresse auf Chinesisch speichern",
       preparednessTitle: "Notfallvorbereitung",
+      quickDial: "Schnellwahl",
       safetyTipsTitle: "Sicherheitstipps für Reisende",
       sosButtonDesc: "3 Sekunden lang gedrückt halten, um automatisch den Standort an Notfallkontakte zu senden.",
       sosButtonTitle: "SOS-Schaltfläche - Verfügbar auf jeder Seite",
@@ -5871,7 +8837,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "Halten Sie gedrückt oder klicken Sie mit der rechten Maustaste für den Schnellzugriff auf das Menü",
       subtitle: "Wichtige Telefonnummern, Sätze und Tools für Ihre Sicherheit in China",
       title: "Notfallkontakte & Hilfe",
-      traffic: "Verkehr"
+      touristHotline: "Touristen-Hotline",
+      traffic: "Verkehr",
+      universalSection: "Universelle Nummern",
+      viewAllContacts: "Alle Kontakte anzeigen"
     },
     empty: {
       addSome: "Entdecken Sie und speichern Sie Ihre Favoriten!",
@@ -5890,7 +8859,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "Inhalt konnte nicht geladen werden",
       network: "Netzwerkfehler",
       networkError: "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+      notFound: "Resource not found.",
       somethingWrong: "Etwas ist schiefgelaufen",
+      timeout: "Request timed out.",
       unauthorized: "Nicht autorisiert"
     },
     features: {
@@ -5915,22 +8886,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← Zurück nach {city}",
       backToCity: "Zurück nach {city}",
+      bottomCtaDesc: "Durchsuchen Sie unsere Städteliste und erkunden Sie weitere Ziele in China.",
       callPhone: "Anrufen",
+      citiesCount: "Cities",
       citiesUnit: "Städte",
       cityEmpty: "Noch keine Restaurants",
       cityEmptyDesc: "Wir kuratieren noch Restaurants für {city}.",
       cityEmptySubtitle: "Fügen Sie einige Restaurants hinzu, um mit dem Erkunden zu beginnen",
       dataSourcesDesc: "Diese Quellen können Ihnen helfen, mehr über die Esskultur von {city} zu erfahren:",
       dataSourcesHeading: "Referenzquellen",
+      empty: "No cities match this filter.",
       emptyCta: "Alle Restaurants ansehen",
       emptyDesc: "Keine Restaurants in dieser Kategorie. Versuchen Sie einen anderen Filter.",
       emptyTitle: "Noch keine Restaurants",
+      essentialFoodApps: "Unverzichtbare Essens-Apps",
+      essentialFoodAppsDesc: "Laden Sie diese Apps herunter, um Lebensmittel-Lieferungen zu bestellen und lokale Restaurants mit englischen Menüs zu entdecken.",
       exploreFood: "Erkunden Sie das Essen",
+      filterAll: "All",
       filterBlackPearl: "Schwarze Perle",
       filterBudget: "Budget",
       filterCasual: "Lässig",
       filterLocal: "Lokaler Favorit",
       filterMichelin: "Michelin",
+      filterStreetFood: "Street Food",
       filteringLabel: "Filtern:",
       heroCityFood: "{city} Food",
       indexTitle: "🍜 China Food Map",
@@ -5938,25 +8916,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "Navigieren",
       noCityTitle: "Kann die gewünschte Stadt nicht finden?",
       otherRestaurants: "Andere Restaurants in {city}",
+      pageDescription: "Entdecken Sie die beliebtesten Gerichte Chinas, kuratierte Städte und kuratierte Restaurants",
+      pageTitle: "China-Essenskarte - ChinaConnect",
       perPerson: "/Person",
+      proTipsFoodApps: "Profi-Tipps für Essens-Apps",
       restaurantsUnit: "Restaurants",
       showingCount: "Anzeigen",
-      subtitle: "Michelin, Black Pearl & lokale Favoriten"
+      subtitle: "Michelin, Black Pearl & lokale Favoriten",
+      tipDianping: "Dianping eignet sich hervorragend, um lokale Favoriten mit englischen Bewertungen zu finden.",
+      tipEleme: "Ele.me bietet die breiteste Lieferabdeckung, kann jedoch standardmäßig auf Chinesisch sein.",
+      tipLinkCard: "Verknüpfen Sie Ihre ausländische Karte mit Alipay/WeChat Pay, bevor Sie bestellen.",
+      tipMeituan: "Meituan bietet englische Menüübersetzungen für viele Restaurants.",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "Unterkunft",
       aiAssistant: "KI-Assistent",
+      allRightsReserved: "All rights reserved.",
       attractions: "Sehenswürdigkeiten",
       cities: "Städte",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "Kulturelle Tipps",
       description: "Der zuverlässige Reiseführer für die Erkundung Chinas. KI-gestützte Restaurantempfehlungen, Stadtführer und Reise-Tipps.",
+      diningGuide: "Restaurantführer",
       emergency: "Notfallkontakte",
       guides: "Reiseführer",
+      guidesLabel: "Travel Guides",
       payment: "Zahlung",
+      privacy: "Privacy",
       resources: "Ressourcen",
+      resourcesLabel: "Resources",
       restaurants: "Restaurants",
+      terms: "Terms",
       transport: "Verkehr",
-      viewAllCities: "Alle Städte ansehen"
+      viewAllCities: "Alle Städte ansehen",
+      visaGuide: "Visa-Führer"
+    },
+    guide: {
+      attractionsPageTitle: "Top-Sehenswürdigkeiten in China",
+      attractionsTitle: "Top-Sehenswürdigkeiten in China",
+      beijingGuide: "Peking",
+      foodGuide: "Essensführer",
+      scamPrevention: "Betrugsprävention"
     },
     guidePage: {
       accommodationStageDescription: "Finden und buchen Sie die richtige Unterkunft für jedes Budget.",
@@ -5964,7 +8985,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "Unterkunft - Hotels, Hostels und Buchungstipps",
       accommodationTitleShort: "Unterkunftsguide",
       attractionsSubtitle: "Pflichtbesuche und versteckte Schätze",
+      attractionsTitle: "Top-Sehenswürdigkeiten",
       backHome: "← Zurück zur Startseite",
+      beginnerDesc: "Planen Sie Ihre erste Reise mit Zuversicht.",
+      beginnerTraveler: "Erstmaliger Besucher",
+      businessDesc: "Werkzeuge für Meetings, Zahlungen und Etikette.",
+      businessTitle: "Geschäftsreise",
+      businessTraveler: "Geschäftsreisender",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "Beijing",
       cityChengdu: "Chengdu",
       cityShanghai: "Shanghai",
@@ -5975,6 +9003,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "Kommunikationsguide",
       culturalWarningsSubtitle: "Kulturelle Unterschiede und Fettnäpfchen, die es zu vermeiden gilt",
       culturalWarningsTitleShort: "Kulturelle Warnungen",
+      cultureTitle: "Kulturelle Tipps",
       departureStageDescription: "Steuererstattungen, Zoll und letzte Tipps, bevor Sie nach Hause fliegen.",
       departureStageTitle: "7. Abreise",
       departureSubtitle: "Abreise - Steuererstattungen und Verlassen Chinas",
@@ -5992,6 +9021,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "Notfälle - Polizei, Krankenwagen, Botschaftskontakte",
       emergencyTitleShort: "Notfallguide",
       emergencyTourism: "Touristen-Hotline 12301",
+      foodTitle: "Essensführer",
       home: "← Zurück zur Startseite",
       indexBusinessHeading: "🚀 Business-Reise-Tools",
       indexBusinessSubtitle: "Von der Einladung bis zum Geschäftsgebaren — alles, was Sie für Geschäfte in China benötigen.",
@@ -5999,23 +9029,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "Der ultimative Reiseführer für China – von den Reisevorbereitungen bis zur Ausreise.",
       indexHeroTitle: "🇨🇳 Der ultimative China-Reiseführer",
       indexStagesTitle: "8 Etappen für eine reibungslose Chinareise",
+      longStay: "Langzeitaufenthalt",
+      longStayDesc: "Lassen Sie sich mit Visa-, Bank- und Unterkunftsleitfäden nieder.",
+      pageDescription: "Alles, was Sie zum Planen, Buchen und Genießen Ihrer Chinareise benötigen",
+      pageTitle: "China-Reiseführer - ChinaConnect",
       paymentStageDescription: "Richten Sie Alipay und WeChat Pay ein, bevor Sie anreisen.",
       paymentStageTitle: "2. Zahlungsabwicklung",
       paymentSubtitle: "Zahlung - Alipay, WeChat Pay und Bargeldtipps",
+      paymentTitle: "Zahlung & Geld",
       paymentTitleShort: "Zahlungsleitfaden",
       popularByCity: "Beliebt nach Städten",
       quickBeijingDesc: "Highlights der Hauptstadt & Muss-Essen",
       quickFoodDesc: "Michelin, Black Pearl und lokale Favoriten",
       quickScamDesc: "Häufige Betrügereien und wie man sie vermeidet",
+      safetyTitle: "Sicherheit",
       scamPreventionSubtitle: "Schützen Sie sich vor häufigen Betrügereien in China",
       scamPreventionTitleShort: "Betrügereien vermeiden",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "Kennen Sie die fairen Preise, vermeiden Sie Überteuerung",
       transparencyTitleShort: "Preistransparenz",
       transportStageDescription: "Navigieren Sie durch U-Bahnen, Hochgeschwindigkeitszüge und Ride-Hailing-Apps.",
       transportStageTitle: "4. Transport",
       transportSubtitle: "Transport - Sich in China sicher fortbewegen",
+      transportTitle: "Unterwegs",
       transportTitleShort: "Transportleitfaden",
       travelGuide: "Reiseführer",
+      travelerType: "Reisender-Typ",
+      viewAll: "View all guides",
       viewAllBusinessTools: "Alle Geschäftstools ansehen",
       viewAllBusinessToolsCta: "Business Express öffnen",
       viewAllBusinessToolsDesc: "Detaillierte Statistiken und schnelle Leitfäden, um alle Geschäftstools zu überprüfen.",
@@ -6024,23 +9065,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "Alles, was Sie vor dem Abflug benötigen.",
       visaStageTitle: "1. Visum & Einreise",
       visaSubtitle: "Visum - Kompletter Leitfaden für die Einreise nach China",
+      visaTitle: "Visum & Einreise",
       visaTitleShort: "Visumleitfaden"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "Mit KI chatten",
       citiesSubtitle: "Von antiken Hauptstädten bis hin zu modernen Metropolen – Entdecken Sie die besten Städte Chinas mit unserem umfassenden Leitfaden.",
       citiesTitle: "Entdecken Sie unsere Städte",
+      clearHistory: "Clear history",
       ctaSubtitle: "Beginnen Sie mit KI-gestützten Empfehlungen Ihre Reiseplanung.",
       ctaTitle: "Bereit, China zu erkunden?",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "Peking erkunden",
       exploreCities: "Städte erkunden",
+      exploreCityButton: "Explore City",
       exploreGuide: "Vollständigen Leitfaden ansehen",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "Alles, was Sie für eine großartige Reise benötigen",
       featuresTitle: "Alles, was Sie für Ihre Chinareise benötigen",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "KI nach Reiseberatung fragen",
       heroDesc: "Michelin- und Black Pearl-Restaurants, Sehenswürdigkeiten, Verkehrstipps, Notfallkontakte – alles von KI und Einheimischen kuratiert.",
       heroSubtitle: "Ihr vertrauenswürdiger Führer zu Chinas besten Städten",
       heroTitle: "Ihr KI-gestützter China-Führer",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "Entdecken Sie Michelin- und Black Pearl-Restaurants in 12 chinesischen Städten.",
       onboarding1Title: "Großartiges Essen entdecken",
       onboarding2Title: "KI-gestützte Tipps",
@@ -6048,14 +9105,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "Fertig",
       onboardingNext: "Weiter",
       onboardingSkip: "Überspringen",
+      pageDescription: "Entdecken Sie China mit KI-gestützten Stadtführern. Finden Sie die besten Restaurants (Michelin & Black Pearl), Sehenswürdigkeiten, Verkehrsinformationen und Notfallkontakte in 12 großen chinesischen Städten, darunter Peking, Shanghai, Guangzhou, Xi'an, Chengdu und mehr.",
       pageTitle: "ChinaConnect - Ihr KI-Führer für die Erkundung Chinas",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "Zuletzt angesehen",
       recommendedForYou: "Empfohlen für Sie",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "KI-Unterstützung",
       statsAttractions: "Top-Sehenswürdigkeiten",
       statsCities: "Abgedeckte Städte",
       statsRestaurants: "Michelin-Restaurants",
-      viewAllCities: "Alle Städte ansehen"
+      viewAllCities: "Alle Städte ansehen",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "Basierend auf beliebten Reisezielen"
     },
     language: {
       chinese: "Chinesisch",
@@ -6067,6 +9134,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "Wechsel zu"
     },
+    loginPage: {
+      pageDescription: "Melden Sie sich bei ChinaConnect an",
+      pageTitle: "Anmelden - ChinaConnect"
+    },
     nav: {
       aiChat: "ChinaGuide KI",
       attractions: "Sehenswürdigkeiten",
@@ -6076,6 +9147,7 @@ export const translations: Record<Language, Translations> = {
       home: "Startseite",
       restaurants: "Restaurants",
       selectLanguage: "Sprache wählen",
+      signIn: "Sign in",
       tagline: "Erkunde China mit KI"
     },
     notFound: {
@@ -6085,12 +9157,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "Städte erkunden",
       goHome: "Zur Startseite",
       heading: "404",
+      homeButton: "Back to home",
       letsContinue: "Erkundung Chinas fortsetzen",
       primary: "Seite nicht gefunden",
-      title: "Seite nicht gefunden - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "Seite nicht gefunden - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "Medizinische Notfälle, Verletzungen",
+      availableOffline: "Verfügbar offline",
+      bannerDesc: "Notfallkontakte und wichtige Informationen sind weiterhin verfügbar",
       bannerTitle: "Offline-Modus",
+      emergencyNumbers: "Notrufnummern (China)",
+      emergencyPhrases: "Schnelle Notfallphrasen",
+      fireDesc: "Brände, Rettungseinsätze, Gefahrenstoffe",
+      lastSynced: "Zuletzt synchronisiert:",
       phrase1En: "Hilfe!",
       phrase2En: "Rufen Sie die Polizei!",
       phrase3En: "Ich brauche einen Krankenwagen",
@@ -6098,6 +9188,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "Ich habe mich verirrt",
       phrase6En: "Ich brauche Hilfe",
       phrase7En: "Wo ist das Krankenhaus?",
+      phrasesHelp: "Gängige Notfallphrasen anzeigen",
+      phrasesTip: "Zeigen Sie diese Phrasen an, wenn Sie Hilfe benötigen",
+      policeDesc: "Kriminalität, Notfälle, öffentliche Sicherheit",
+      quickActions: "Schnellaktionen",
+      tapToCall: "Tippen Sie auf eine beliebige Nummer, um sofort anzurufen",
       tipsHeading: "Reisetipps bei Offline-Modus",
       tipsList1: "Wichtige Phrasen und Adressen vor dem Offline-Modus speichern.",
       tipsList2: "Offline-Karten in Ihrer Karten-App herunterladen.",
@@ -6106,11 +9201,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "Die meisten Cafés und Einkaufszentren bieten kostenloses WLAN.",
       tipsList6: "Ein kleines Notizbuch für das Aufschreiben von Adressen mitführen.",
       title: "Sie sind offline",
+      title2: "ChinaConnect Emergency SOS - Funktioniert Offline",
+      trafficDesc: "Nur Verkehrsunfälle",
       tryAgain: "Erneut versuchen"
     },
     onboarding: {
       done: "Fertig",
       getStarted: "Loslegen",
+      neverShow: "Don't show this again",
       next: "Weiter",
       skip: "Überspringen",
       step1Desc: "Entdecken Sie Michelin-Sterne- und Black Pearl-Restaurants in 12 chinesischen Städten.",
@@ -6122,6 +9220,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "Willkommen bei ChinaConnect!"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "Automatische Verlängerung, jederzeit kündbar",
       billingAnnual: "Jährlich",
       billingMonthly: "Monatlich",
@@ -6139,6 +9238,7 @@ export const translations: Record<Language, Translations> = {
         name: "Business",
         price: "$29,99"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "Die Zahlung wurde storniert. Sie können unten erneut versuchen.",
       compareFeatures: {
         advancedTools: "Erweiterte Reisetools",
@@ -6153,6 +9253,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "Vergleichen Sie genau, was in jedem Plan enthalten ist.",
       compareTitle: "Alle Funktionen vergleichen",
+      ctaButton: "Get started",
       ctaPrimary: "Heute kostenlos starten",
       ctaSecondary: "Funktionen entdecken",
       ctaSubtitle: "Tausende von Reisenden planen ihre China-Reise mit KI – machen Sie mit!",
@@ -6170,14 +9271,44 @@ export const translations: Record<Language, Translations> = {
         name: "Explorer",
         price: "$4,99"
       },
+      faq: "FAQ",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "Wie kann ich meinen Plan upgraden oder downgraden?",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "Wie kann ich mein Abonnement kündigen?",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "Wie ist Ihre Rückerstattungsrichtlinie?",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "Wann wird mein monatliches Kontingent zurückgesetzt?",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "Was passiert, wenn ich mein KI-Anfrage-Limit erreiche?",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "Welche Zahlungsmethoden akzeptieren Sie?",
       faqSubtitle: "Alles, was Sie über unsere Pläne und Abrechnung wissen müssen",
       faqTitle: "Häufig gestellte Fragen",
+      featureAdvancedTools: "Erweiterte Reisetools",
+      featureAiRequestsBusiness: "Unbegrenzte KI-Gespräche",
+      featureAiRequestsExplorer: "20 KI-Anfragen pro Monat",
+      featureAiRequestsFree: "5 KI-Anfragen pro Monat",
+      featureAiRequestsPro: "100 KI-Anfragen pro Monat",
+      featureAllTravelerFeatures: "Alle Traveler-Funktionen",
+      featureApi: "API-Zugriff",
+      featureBasicPlanning: "Grundlegende Reiseplanung",
+      featureBusinessTemplates: "Business-Vorlagen",
+      featureCancelAnytime: "Jederzeit kündbar",
+      featureConversationHistory: "Konversationsverlauf",
+      featureCustomIntegrations: "Individuelle Integrationen",
+      featureDedicated: "Dedizierter Support",
+      featureExportPdf: "Export als PDF",
+      featureMultiCity: "Mehrstädtereisen",
+      featurePdfExport: "PDF-Export",
+      featurePremiumCustomization: "Premium-Anpassung",
+      featurePrioritySupport: "Prioritärer Support",
+      featureSaveItineraries: "Reisepläne speichern",
+      featureSecurePayments: "Sichere Zahlungen",
+      featureTeamCollab: "Teamarbeit",
+      featureTeamManagement: "Teileverwaltung",
+      featureViewItineraries: "Reisepläne ansehen",
       free: {
         description: "Beginnen Sie mit der grundlegenden Planung",
         feature1: "5 KI-Anfragen pro Monat",
@@ -6188,24 +9319,40 @@ export const translations: Record<Language, Translations> = {
         name: "Kostenlos"
       },
       freeForever: "Für immer kostenlos",
+      heroBadge: "Pricing",
       heroSubtitle: "Von der kostenlosen Ansicht bis zur professionellen Planung – der passende Plan für Ihren Reise-Rhythmus.",
       heroTitle: "Einfache und transparente Preisgestaltung",
+      moneyBack: "30-day refund",
+      planBusiness: "Business",
+      planExplorer: "Explorer",
+      planFree: "Kostenlos",
+      planPro: "Pro",
+      planTraveler: "Traveler",
       popularBadge: "Beliebt",
       priceFree: "$0",
+      pro: {
+        description: "Für aktive Reisende"
+      },
       saveBadge: "20 % sparen",
       savingsHint: "Mit jährlicher Zahlung 20 % sparen",
+      securePayment: "Secure payment",
       subscribeNow: "Jetzt abonnieren",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "USA",
       testimonial1Role: "Explorer-Plan",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "Li Wei T.",
       testimonial2Country: "UK",
       testimonial2Role: "Business Plan",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "Germany",
       testimonial3Role: "Traveler Plan",
+      testimonials: "Was Reisende sagen",
       testimonialsSubtitle: "Hören Sie, was unsere Nutzer über ihre ChinaConnect-Erfahrung sagen",
       testimonialsTitle: "Von Reisenden weltweit geliebt",
+      title: "Preise",
       traveler: {
         annualNote: "Bezahlt als $95.99/Jahr (sparen Sie $24)",
         description: "Für häufige China-Besucher",
@@ -6222,11 +9369,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "30-Tage-Geld-zurück-Garantie",
         securePayment: "Sichere Zahlung"
       },
+      trustCancelAnytime: "Jederzeit kündbar",
+      trustInstantAccess: "Sofortiger Zugriff",
+      trustSecurePayments: "Sichere Zahlungen",
       trustedBy: "Vertrauenswürdig für über 10.000 Reisende",
       unlimited: "Unbegrenzt"
     },
     profilePage: {
-      title: "Mein Profil - ChinaConnect"
+      displayName: "Anzeigename",
+      heading: "Profile",
+      pageTitle2: "Mein Profil",
+      save: "Änderungen speichern",
+      saved: "Gespeichert!",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "Mein Profil - ChinaConnect",
+      uploadAvatar: "Avatar hochladen"
     },
     recents: {
       clearAll: "Alle löschen",
@@ -6263,6 +9420,22 @@ export const translations: Record<Language, Translations> = {
       username: "Benutzername",
       usernamePlaceholder: "Ihr Anzeigename"
     },
+    registerPage: {
+      pageDescription: "Erstellen Sie Ihr ChinaConnect-Konto",
+      pageTitle: "Registrieren - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "Adresse",
       avgPrice: "Durchschnittspreis",
@@ -6288,12 +9461,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "Mit Freunden teilen"
     },
     userPage: {
+      heading: "Profil",
+      pageTitle2: "Benutzerprofil",
       title: "Benutzerprofil - ChinaConnect"
     }
   },
   ar: {
     accountPage: {
       active: "نشط",
+      activeLabel: "نشط",
       aiRequestsThisMonth: "طلبات الذكاء الاصطناعي لهذا الشهر",
       alertSignOutError: "تعذر فتح إدارة الاشتراك. يرجى الاتصال بالدعم.",
       currentPlan: "الخطة الحالية",
@@ -6305,6 +9481,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "لا توجد طلبات حتى الآن.",
       emptySavedRoutes: "لا توجد مسارات محفوظة حتى الآن.",
       emptySavedRoutesHint: "لا توجد مسارات محفوظة حتى الآن. ابدأ محادثة مع الذكاء الاصطناعي لإنشاء مسارات!",
+      explorerBadge: "مستكشف",
       loading: "جاري تحميل حسابك...",
       manageSubscription: "إدارة الاشتراك",
       membership: "العضوية",
@@ -6314,6 +9491,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "الحالة",
       orderHeaderType: "النوع",
       pageTitle: "حسابي - ChinaConnect",
+      pageTitleSuffix: "حسابي - ChinaConnect",
       pointsUnit: "نقاط",
       renewsOn: "يجدد في",
       savedLocally: "محفوظ محليًا فقط",
@@ -6324,27 +9502,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "تسجيل الدخول مطلوب",
       signInRequiredDesc: "يرجى تسجيل الدخول لعرض حسابك.",
       signOut: "تسجيل الخروج",
+      statAiUsage: "استخدام الذكاء الاصطناعي اليوم",
+      statFavorites: "المفضلة",
       statSavedRoutes: "المسارات المحفوظة",
+      subtitle: "إدارة اشتراكك والمفضلة والطرق المحفوظة.",
       syncedToCloud: "مزامنة مع السحابة",
       tabBilling: "الفوترة",
+      tabFavorites: "المفضلة",
+      tabOrders: "الطلبات",
       tabOverview: "نظرة عامة",
       tabPlans: "الخطط",
+      tabRoutes: "الطرق",
       tabUsage: "الاستخدام",
+      title: "حسابي",
       untitledRoute: "مسار بدون عنوان",
       upgrade: "ترقية",
       usageDailyAi: "طلبات الذكاء الاصطناعي اليومية",
       usageFavorites: "المفضلات",
       usageSavedRoutes: "المسارات المحفوظة",
+      userBadge: "مستخدم",
       walletBalance: "رصيد المحفظة"
+    },
+    ai: {
+      send: "إرسال",
+      thinking: "يفكر..."
     },
     aiPage: {
       authFailed: "فشل المصادقة",
       authGateSignupTitle: "إنشاء حسابك",
       authGateTitle: "تسجيل الدخول للدردشة",
+      chatInputPlaceholder: "اسأل عن المطاعم، النقل، المعالم...",
+      conversationHistory: "سجل المحادثات",
       conversationsTitle: "المحادثات",
       deleteConfirm: "حذف هذه المحادثة؟",
       deleteTitle: "حذف",
       emailPlaceholder: "you@example.com",
+      exportPdf: "تصدير PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "هل لديك حساب بالفعل؟",
@@ -6353,13 +9546,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "إخفاء الشريط الجانبي",
       messageLabel: "رسالة",
       messagesLabel: "الرسائل",
+      newChat: "دردشة جديدة",
       newChatButton: "+ محادثة جديدة",
       noAccountPrompt: "ليس لديك حساب حتى الآن؟",
       noConversationsYet: "لا توجد محادثات حتى الآن",
       orContinueWith: "أو",
+      pageDescription: "اسأل أي شيء عن السفر في الصين.",
+      pageTitle: "موظف سفريات الذكاء الاصطناعي - ChinaConnect",
       passwordPlaceholder: "كلمة المرور (الحد الأدنى 6 أحرف)",
       promptsSubtitle: "اختر موجهًا أو اكتب سؤالك الخاص أدناه",
       promptsTitle: "حاول أن تسأل",
+      saveRoute: "حفظ المسار",
+      sendButton: "إرسال",
       showSidebarTitle: "عرض المحادثات",
       signInButton: "تسجيل الدخول",
       signUpButton: "إنشاء حساب",
@@ -6367,27 +9565,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "يساعدك الذكاء الاصطناعي في تخطيط رحلتك إلى الصين",
       switchToSignIn: "تسجيل الدخول",
       switchToSignUp: "إنشاء حساب",
-      title: "ChinaGuide AI - خبيرك الذكي في السفر إلى الصين"
+      thinking: "يفكر...",
+      title: "ChinaGuide AI - خبيرك الذكي في السفر إلى الصين",
+      upgradePrompt: "سجل لتفتح المزيد من طلبات الذكاء الاصطناعي.",
+      usageToday: "الاستخدام اليوم"
     },
     attractions: {
       allCities: "جميع المدن ذات المعالم السياحية",
+      appSubtitle: "تطبيقات مفيدة للتنقل والبحث عن المعالم",
+      appTitle: "خطط لرحلتك",
+      attractionCount: "{count} معلم",
       browseCategory: "استعرض حسب الفئة",
+      citiesCount: "{count} مدينة",
+      diversityTypes: "تاريخية، ثقافية، طبيعية، حديثة",
+      featured: "المدن المميزة",
       featuredCities: "المدن الرئيسية",
+      heroEyebrow: "استعرض حسب الوجهة",
+      openCity: "افتح المدينة",
+      pageDescription: "الأماكن السياحية التي يجب زيارتها في جميع أنحاء الصين - من المعالم التاريخية إلى العجائب الطبيعية",
+      pageTitle: "المعالم السياحية في الصين - ChinaConnect",
       subtitle: "المعالم التي يجب زيارتها - من المعالم التاريخية القديمة إلى عجائب الطبيعة",
-      title: "المعالم السياحية في الصين"
+      title: "المعالم السياحية في الصين",
+      viewAll: "عرض جميع المعالم"
     },
     auth: {
+      continueWithGithub: "متابعة باستخدام GitHub",
+      continueWithGoogle: "متابعة باستخدام Google",
+      email: "البريد الإلكتروني",
       myAccount: "حسابي",
+      needHelp: "هل تحتاج إلى مساعدة في تسجيل الدخول؟",
+      orContinueWithEmail: "أو متابعة باستخدام البريد الإلكتروني",
+      password: "كلمة المرور",
+      profile: "الملف الشخصي",
       profileCenter: "مركز الملف الشخصي",
       signIn: "تسجيل الدخول",
-      signOut: "تسجيل الخروج"
+      signInButton: "تسجيل الدخول",
+      signOut: "تسجيل الخروج",
+      signOutConfirm: "تسجيل الخروج من ChinaConnect؟",
+      subtitle: "حفظ المفضلة، تخطيط الرحلات، والتحدث مع الذكاء الاصطناعي.",
+      title: "تسجيل الدخول إلى ChinaConnect"
     },
     authPage: {
       authTitle: "تسجيل الدخول / التسجيل - ChinaConnect",
       callbackTitle: "تسجيل الدخول...",
+      continueWithEmail: "أو استمر باستخدام البريد الإلكتروني",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
       errorTitle: "فشل في المصادقة",
+      forgotPassword: "هل نسيت كلمة المرور؟",
       loginTitle: "تسجيل الدخول - ChinaConnect",
-      signingYouIn: "تسجيل دخولك..."
+      needAccount: "ليس لديك حساب؟",
+      passwordPlaceholder: "كلمة مرورك",
+      signInButton: "تسجيل الدخول",
+      signInError: "فشل تسجيل الدخول. يرجى المحاولة مرة أخرى.",
+      signUpButton: "تسجيل",
+      signUpError: "فشل التسجيل. يرجى المحاولة مرة أخرى.",
+      signingYouIn: "تسجيل دخولك...",
+      successDesc: "تجدث عملية إعادة التوجيه الآن...",
+      successTitle: "مرحبًا بعودتك!"
     },
     businessGuidePage: {
       backToGuide: "← العودة إلى دليل السفر",
@@ -6412,77 +9647,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← العودة إلى التسعير",
+      continueButton: "متابعة إلى حسابك",
       description: "تم تفعيل اشتراكك بنجاح",
       errorDesc: "لم نتمكن من معالجة الدفع. يرجى المحاولة مرة أخرى أو الاتصال بالدعم.",
       errorTitle: "حدث خطأ ما",
+      processing: "جاري معالجة الدفع...",
       processingDesc: "يرجى الانتظار بينما نؤكد اشتراكك.",
       startPlanning: "ابدأ التخطيط",
       successAccess: "الآن يمكنك الوصول إلى جميع ميزات خطتك الجديدة.",
       successDesc: "تم تفعيل اشتراكك.",
       successTitle: "الدفع ناجح!",
+      thankYou: "شكرًا لاختيارك ChinaConnect.",
       title: "الدفع ناجح - ChinaConnect",
       viewAccount: "عرض الحساب"
     },
     cities: {
       attractions: "المعالم السياحية",
+      citiesCount: "المدن",
+      citiesInChina: "المدن في الصين",
       culturalTips: "نصائح ثقافية",
       emergency: "الطوارئ",
+      exploreAll: "استكشف الكل",
       exploreGuide: "استكشف الدليل",
+      filterATier: "الفئة A",
+      filterAll: "الكل",
+      filterDTier: "الفئة D",
+      filterSTier: "الفئة S",
+      headerSubtitle: "من العواصم القديمة إلى المدن العملاقة الحديثة - اختر وجهتك.",
+      headerTitle: "استكشف المدن الصينية",
       hotels: "الفنادق",
+      noResults: "لا توجد مدن تطابق عوامل التصفية الخاصة بك.",
       openingHours: "ساعات العمل",
+      pageDescription: "استكشف جميع المدن الصينية التي يغطيها ChinaConnect - من العواصم القديمة إلى المدن الحديثة. مدن من الدرجة الممتازة S، مدن شبه ممتازة من الدرجة A، ومدن عند الطلب من الدرجة D.",
+      pageTitle: "استكشف جميع المدن - ChinaConnect",
       payment: "الدفع",
+      population: "السكان",
       recommendedTime: "الوقت الموصى بزيارته",
+      region: "المنطقة",
       restaurants: "المطاعم",
+      searchPlaceholder: "ابحث عن مدن...",
       subtitle: "من العواصم القديمة إلى المدن الحديثة",
       ticketPrice: "التذكرة",
       title: "استكشف مدننا",
-      transport: "النقل"
+      transport: "النقل",
+      viewCity: "عرض المدينة"
+    },
+    city: {
+      beijing: {
+        name: "بكين"
+      },
+      chengdu: {
+        name: "تشنغدو"
+      },
+      chongqing: {
+        name: "تشونغتشينغ"
+      },
+      guangzhou: {
+        name: "قوانغتشو"
+      },
+      guilin: {
+        name: "قويلين"
+      },
+      hangzhou: {
+        name: "هانغتشو"
+      },
+      lijiang: {
+        name: "ليجيانغ"
+      },
+      qingdao: {
+        name: "تشينغداو"
+      },
+      shanghai: {
+        name: "شنغهاي"
+      },
+      shenzhen: {
+        name: "شينزين"
+      },
+      suzhou: {
+        name: "سوتشو"
+      },
+      xian: {
+        name: "شيآن"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "الكل",
+      categoryLabel: "الفئة",
+      disclaimer: "قد تتغير ساعات العمل، أسعار التذاكر، وأرقام الهواتف. نوصي بالتحقق عبر الموقع الرسمي للمعلم أو بالاتصال مسبقًا.",
+      openOnMap: "افتح على الخريطة",
+      openingHours: "ساعات العمل",
+      subtitle: "معالم لا بد من زيارتها، متاحف، ومعالم طبيعية.",
+      ticketPrice: "سعر التذكرة",
+      tipsHeader: "نصائح",
+      title: "المعالم في {city}",
+      viewAll: "عرض جميع المعالم في {city}",
+      viewDetails: "عرض التفاصيل",
+      viewMore: "عرض المزيد من المعالم"
+    },
+    cityFood: {
+      avgPrice: "السعر المتوسط",
+      cuisine: "المطبخ",
+      disclaimer: "قد تتغير أرقام الهواتف والعناوين. نوصي بالتحقق عبر القنوات الرسمية للمطعم أو بالاتصال مسبقًا.",
+      filterAll: "الكل",
+      filterBlackPearl: "اللؤلؤة السوداء",
+      filterBudget: "الميزانية",
+      filterLocal: "المحلية",
+      filterLocalFavorites: "المفضلات المحلية",
+      filterMichelin: "ميشلان",
+      filteringLabel: "التصفية:",
+      googleMaps: "خرائط جوجل",
+      signatureDishes: "الأطباق المميزة",
+      subtitle: "نجوم ميشلان، مفضلات اللؤلؤة السوداء، والجواهر المحلية.",
+      title: "المطاعم في {city}",
+      viewAll: "عرض جميع المطاعم في {city}",
+      viewDetails: "عرض التفاصيل"
+    },
+    cityHotels: {
+      bookCta: "عرض تفاصيل الفندق",
+      bookNow: "عرض الفندق",
+      filterAll: "جميع الفئات",
+      pricePerNight: "لكل ليلة",
+      stars: "نجوم",
+      subtitle: "من الإقامات الفاخرة إلى السلاسل الدولية - ابحث عن المكان المناسب لرحلتك.",
+      title: "فنادق في {city}"
     },
     cityPage: {
+      appCount: "{count} تطبيقات أساسية",
+      appsSubtitle: "قم بتحميلها قبل وصولك.",
+      area: "المساحة",
+      attractionCount: "{count} معالم",
       attractionsExploreCount: "{city} — {count} أماكن للاكتشاف",
       attractionsHeading: "الوجهات الرئيسية",
       attractionsSubtitle: "أماكن لا بد من زيارتها تم اختيارها من قبل السكان المحليين والمسافرين",
+      bestTime: "أفضل وقت للزيارة",
       bestTimeHeading: "أفضل وقت للزيارة",
+      bookHotelCta: "ابحث عن الفنادق في {city}",
+      bookTourCta: "احجز جولة في {city}",
+      citySubtitle: "الدليل الشامل للسفر إلى {city}، الصين. ابحث عن أفضل المطاعم، المعالم السياحية، الفنادق ونصائح السفر.",
+      connectivitySubtitle: "ابقَ متصلاً بالبيانات.",
+      contactCount: "{count} جهات اتصال",
+      cultureSubtitle: "العادات والتقاليد المحلية.",
+      cultureSubtitleDynamic: "المعرفة الثقافية الأساسية لـ {city}",
+      currency: "العملة",
       dataSourcesDesc: "من أين تأتي هذه البيانات",
       dataSourcesHeading: "مصادر البيانات",
+      downloadBefore: "قم بتحميل هذه التطبيقات قبل الوصول إلى الصين.",
+      elevation: "الارتفاع",
+      emergencySubtitle: "الأرقام المهمة والسفارات.",
+      emergencySubtitleDynamic: "أرقام الهواتف المهمة في {city}",
+      esimDescription: "eSIM هي أسهل طريقة للحصول على البيانات في الصين. لا حاجة لبطاقة SIM مادية - قم بتنشيطها فورًا عند الوصول.",
+      esimRecommended: "eSIM (موصى بها)",
+      essentialAppsFor: "التطبيقات الأساسية لـ {city}",
+      essentialCultural: "المعرفة الثقافية الأساسية لـ {city}",
+      exploreOnMap: "استكشف على الخريطة",
       foodHeading: "أين تأكل",
       foodHighlightsHeading: "أبرز المأكولات",
       foodHighlightsSubtitle: "موصى به محليًا",
       foodSubtitle: "نجوم ميشلان، اختيارات اللؤلؤ الأسود، والأطباق المحلية المفضلة",
+      gettingAround: "الانتقال",
       gettingTo: "الوصول إلى {city}",
+      heroEyebrow: "دليل السفر",
       home: "← العودة إلى الصفحة الرئيسية للمدينة",
+      hotelCount: "{count} فنادق",
       hotelsCountUnit: "فنادق",
       hotelsHeading: "أين تقيم",
+      hotelsSubtitle: "من الفنادق الفاخرة إلى السلاسل الدولية.",
+      importantNumbers: "الأرقام المهمة في {city}",
+      intro: "مرحبًا بكم في {city}، واحدة من أكثر الوجهات جاذبية في الصين.",
+      language: "اللغة",
+      moreCities: "المزيد من المدن",
+      nextCity: "المدينة التالية",
       noHotels: "لم يتم العثور على فنادق",
       noHotelsDesc: "حاول تغيير النطاق السعري أو الفئة.",
       noResults: "لم يتم العثور على معالم",
       noResultsDesc: "حاول تعديل عوامل التصفية أو كلمات البحث.",
+      openFullMap: "فتح الخريطة الكاملة",
+      overviewSubtitle: "كل ما تحتاج لمعرفته قبل الذهاب.",
+      pageTitleSuffix: "دليل السفر - ChinaConnect",
+      paymentSubtitle: "النقد، البطاقات، المحافظ الإلكترونية والوصول إلى أجهزة الصراف الآلي.",
       phoneIcon: "📞",
+      population: "السكان",
+      previousCity: "المدينة السابقة",
+      proTipBooking: "نصيحة احترافية: احجز الفنادق قبل 2-3 أسابيع للحصول على أفضل الأسعار.",
+      proTipEsim1: "تعمل eSIM بشكل أفضل إذا كان هاتفك يدعمها (iPhone XS+ ومعظم الهواتف الرائدة من أندرويد).",
+      proTipEsim2: "قم بتحميل تطبيقات eSIM قبل الوصول إلى الصين.",
+      proTipEsim3: "تقدم كل من Airalo و Holafly خططًا خاصة بالصين مع خيارات بيانات غير محدودة.",
+      proTips: "نصائح احترافية",
+      quickFacts: "حقائق سريعة",
       quickFactsHeading: "حقائق سريعة",
+      region: "المنطقة",
+      restaurantCount: "{count} مطاعم",
+      sectionApps: "التطبيقات الأساسية",
+      sectionAttractions: "أهم المعالم",
+      sectionConnectivity: "SIM و eSIM",
+      sectionCulture: "نصائح ثقافية",
+      sectionEmergency: "جهات الاتصال الطارئة",
+      sectionFood: "أين تأكل",
+      sectionHotels: "أين تقيم",
+      sectionOverview: "نظرة عامة",
+      sectionPayment: "الدفع والمال",
+      sectionTransport: "الانتقال",
+      sectionVisa: "الفيزا والدخول",
+      sosTip: "احفظ هذه الأرقام قبل وصولك - قد تكون خدمة الهاتف الخلوي محدودة في المناطق النائية.",
+      switchToEnglishMode: "قم بالتبديل إلى الوضع الإنجليزي في إعدادات التطبيق إذا رأيت واجهة صينية. تدعم كل من Alipay و WeChat Pay البطاقات الائتمانية الأجنبية.",
+      tabApps: "التطبيقات",
+      tabAttractions: "المعالم السياحية",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "الثقافة",
+      tabEmergency: "الطوارئ",
+      tabFood: "الطعام",
+      tabHotels: "الفنادق",
+      tabOverview: "نظرة عامة",
+      tabPayment: "الدفع",
+      tabTransport: "النقل",
+      timezone: "المنطقة الزمنية",
+      tipCount: "{count} نصائح",
       topHighlightsHeading: "أبرز المعالم",
       transportSubtitle: "الانتقال في {city}",
-      viewAllHotels: "عرض جميع الفنادق {totalHotelCount}"
+      travelTo: "السفر إلى {city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "عرض جميع الفنادق {totalHotelCount}",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "الكل",
       back: "رجوع",
+      bookNow: "Book now",
       cancel: "إلغاء",
       close: "إغلاق",
       confirm: "تأكيد",
+      continue: "متابعة",
+      discover: "Discover",
+      done: "تم",
       error: "خطأ",
+      explore: "Explore",
       filter: "تصفية",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "جاري التحميل...",
       next: "التالي",
       open: "فتح",
       previous: "السابق",
+      readMore: "Read more",
+      required: "مطلوب",
       retry: "أعد المحاولة",
+      save: "حفظ",
       search: "بحث...",
       seeMore: "عرض المزيد",
+      signUpFree: "Sign up free",
       sort: "ترتيب",
-      viewAll: "عرض الكل"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "عرض الكل",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "الإسعاف",
+      callButton: "الاتصال",
       communication1: "تعلم العبارات الأساسية باللغة الصينية",
       communication2: "استخدم تطبيقات الترجمة عند الحاجة",
       communication3: "قم بتنزيل بطاقات العبارات الطارئة",
@@ -6492,9 +9942,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "أرقام الطوارئ الأساسية المستخدمة في جميع أنحاء الصين.",
       embassyDesc: "معلومات الاتصال لسفارات وقنصليات الدول الرئيسية في الصين.",
       embassyTitle: "معلومات السفارة والقنصلية",
+      findEmbassy: "ابحث عن سفارتك",
       fire: "الحريق",
       gps: "مشاركة الموقع عبر GPS",
       gpsDesc: "شارك موقعك المباشر لإجراء اتصالات الطوارئ.",
+      gpsLocator: "موقع GPS",
       heroHeading: "جهات اتصال الطوارئ وطلب المساعدة",
       hospitalCommon: "المستشفيات الشائعة: مستشفى بكين التعاوني الطبي، بكين يونايتد فاميلي",
       hospitalInternational: "المستشفيات الدولية الموصى بها للأجانب",
@@ -6534,6 +9986,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "حمّل الخرائط بدون اتصال للاستعداد الأفضل",
       oneTapCalls: "مكالمات الطوارئ بنقرة واحدة",
       oneTapDesc: "اضغط على أي رقم للمكالمة الفورية. يعمل مع أي هاتف - لا حاجة لتطبيق.",
+      pageDescription: "أرقام الهواتف المهمة للمسافرين في الصين",
       pageTitle: "جهات اتصال الطوارئ وعبارات الطوارئ - ChinaConnect",
       pharmaciesTitle: "الصيدليات",
       pharmacyChains: "السلسلات الكبيرة: Guoji Yiyao، Lianhua، Yixinke",
@@ -6551,6 +10004,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "احتفظ ببنك الطاقة مشحونًا",
       preparedness4: "احفظ عنوان الفندق باللغة الصينية",
       preparednessTitle: "الاستعداد للطوارئ",
+      quickDial: "الاتصال السريع",
       safetyTipsTitle: "نصائح الأمان للمسافرين",
       sosButtonDesc: "اضغط مطولًا لمدة 3 ثوانٍ لإرسال الموقع تلقائيًا إلى جهات اتصال الطوارئ.",
       sosButtonTitle: "زر SOS - متاح في كل صفحة",
@@ -6560,7 +10014,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "اضغط مطولًا أو انقر بزر الفأرة الأيمن للوصول إلى القائمة السريعة",
       subtitle: "أرقام هواتف، عبارات، وأدوات أساسية لسلامتك في الصين",
       title: "جهات اتصال الطوارئ و المساعدة",
-      traffic: "حركة المرور"
+      touristHotline: "خط ساخن للسياح",
+      traffic: "حركة المرور",
+      universalSection: "أرقام عالمية",
+      viewAllContacts: "عرض جميع جهات الاتصال"
     },
     empty: {
       addSome: "ابدأ باستكشاف واحفظ مفضلاتك!",
@@ -6579,7 +10036,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "فشل تحميل المحتوى",
       network: "خطأ في الشبكة",
       networkError: "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+      notFound: "Resource not found.",
       somethingWrong: "حدث خطأ ما",
+      timeout: "Request timed out.",
       unauthorized: "غير مصرح"
     },
     features: {
@@ -6604,22 +10063,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← العودة إلى {city}",
       backToCity: "العودة إلى {city}",
+      bottomCtaDesc: "استعرض قائمة مدينتنا واستكشف المزيد من الوجهات في الصين.",
       callPhone: "اتصال",
+      citiesCount: "Cities",
       citiesUnit: "مدن",
       cityEmpty: "لا توجد مطاعم حتى الآن",
       cityEmptyDesc: "ما زلنا نقوم بإعداد مطاعم لـ {city}.",
       cityEmptySubtitle: "أضف بعض المطاعم لبدء الاستكشاف",
       dataSourcesDesc: "يمكن لهذه المصادر مساعدتك في معرفة المزيد عن ثقافة الطعام في {city}:",
       dataSourcesHeading: "مصادر مرجعية",
+      empty: "No cities match this filter.",
       emptyCta: "عرض جميع المطاعم",
       emptyDesc: "لا توجد مطاعم في هذه الفئة. جرب فلترًا آخر.",
       emptyTitle: "لا توجد مطاعم حتى الآن",
+      essentialFoodApps: "التطبيقات الغذائية الأساسية",
+      essentialFoodAppsDesc: "حمّل هذه التطبيقات لطلب توصيل الطعام واكتشاف المطاعم المحلية مع قوائم الطعام باللغة الإنجليزية.",
       exploreFood: "استكشف الطعام",
+      filterAll: "All",
       filterBlackPearl: "لؤلؤة سوداء",
       filterBudget: "ميزانية",
       filterCasual: "غير رسمي",
       filterLocal: "المفضل المحلي",
       filterMichelin: "ميشلان",
+      filterStreetFood: "Street Food",
       filteringLabel: "التصفية:",
       heroCityFood: "{city} الطعام",
       indexTitle: "🍜 خريطة الطعام الصينية",
@@ -6627,25 +10093,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "التنقل",
       noCityTitle: "هل تواجه صعوبة في العثور على المدينة التي تريدها؟",
       otherRestaurants: "مطاعم أخرى في {city}",
+      pageDescription: "اكتشف الأطباق الصينية الأكثر تفضيلاً، المدن المختارة، والمطاعم المختارة",
+      pageTitle: "خريطة الطعام الصينية - ChinaConnect",
       perPerson: "/شخص",
+      proTipsFoodApps: "نصائح احترافية لتطبيقات الطعام",
       restaurantsUnit: "مطاعم",
       showingCount: "عرض",
-      subtitle: "ميشلان، اللؤلؤة السوداء والمفضلات المحلية"
+      subtitle: "ميشلان، اللؤلؤة السوداء والمفضلات المحلية",
+      tipDianping: "Dianping رائع للعثور على المفضلات المحلية مع مراجعات باللغة الإنجليزية.",
+      tipEleme: "Ele.me يقدم أوسع تغطية للتوصيل ولكن قد يفضل اللغة الصينية.",
+      tipLinkCard: "اربط بطاقتك الأجنبية بـ Alipay/WeChat Pay قبل الطلب.",
+      tipMeituan: "Meituan لديه ترجمة لقوائم الطعام باللغة الإنجليزية للعديد من المطاعم.",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "السكن",
       aiAssistant: "مساعد الذكاء الاصطناعي",
+      allRightsReserved: "All rights reserved.",
       attractions: "الوجهات",
       cities: "المدن",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "نصائح ثقافية",
       description: "دليل موثوق لاكتشاف الصين. توصيات المطاعم القائمة على الذكاء الاصطناعي، ودليل المدن، ونصائح السفر.",
+      diningGuide: "دليل المطاعم",
       emergency: "جهات الاتصال في حالات الطوارئ",
       guides: "دلائل السفر",
+      guidesLabel: "Travel Guides",
       payment: "الدفع",
+      privacy: "Privacy",
       resources: "الموارد",
+      resourcesLabel: "Resources",
       restaurants: "المطاعم",
+      terms: "Terms",
       transport: "النقل",
-      viewAllCities: "عرض جميع المدن"
+      viewAllCities: "عرض جميع المدن",
+      visaGuide: "دليل التأشيرات"
+    },
+    guide: {
+      attractionsPageTitle: "أهم المعالم في الصين",
+      attractionsTitle: "أهم المعالم في الصين",
+      beijingGuide: "بكين",
+      foodGuide: "دليل الطعام",
+      scamPrevention: "الوقاية من الاحتيال"
     },
     guidePage: {
       accommodationStageDescription: "ابحث واحجز المكان المناسب للإقامة لكل ميزانية.",
@@ -6653,7 +10162,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "الإقامة - الفنادق، والنزل، ونصائح الحجز",
       accommodationTitleShort: "دليل الإقامة",
       attractionsSubtitle: "أماكن الزيارة الأساسية والجواهر الخفية",
+      attractionsTitle: "أهم المعالم",
       backHome: "العودة إلى الصفحة الرئيسية",
+      beginnerDesc: "خطط لرحلتك الأولى بثقة.",
+      beginnerTraveler: "زائر لأول مرة",
+      businessDesc: "أدوات للاجتماعات والمدفوعات والآداب.",
+      businessTitle: "السفر للأعمال",
+      businessTraveler: "مسافر أعمال",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "بكين",
       cityChengdu: "تشنغدو",
       cityShanghai: "شنغهاي",
@@ -6664,6 +10180,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "دليل الاتصالات",
       culturalWarningsSubtitle: "الاختلافات الثقافية والأخطاء الفادحة التي يجب تجنبها",
       culturalWarningsTitleShort: "تحذيرات ثقافية",
+      cultureTitle: "نصائح ثقافية",
       departureStageDescription: "استرداد الضرائب، الجمارك، والنصائح النهائية قبل العودة إلى الوطن.",
       departureStageTitle: "7. المغادرة",
       departureSubtitle: "المغادرة - استرداد الضرائب ومغادرة الصين",
@@ -6681,6 +10198,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "الطوارئ - الشرطة، الإسعاف، جهات اتصال السفارة",
       emergencyTitleShort: "دليل الطوارئ",
       emergencyTourism: "خط المساعدة السياحي 12301",
+      foodTitle: "دليل الطعام",
       home: "← العودة إلى الصفحة الرئيسية",
       indexBusinessHeading: "🚀 أدوات سفر الأعمال",
       indexBusinessSubtitle: "من دعوة العمل إلى آداب السلوك في الأعمال — كل ما تحتاجه للعمل في الصين.",
@@ -6688,23 +10206,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "دليل الصين الشامل للسفر — من التحضير للمغادرة حتى مغادرة البلاد.",
       indexHeroTitle: "🇨🇳 دليل الصين الكامل للسفر",
       indexStagesTitle: "8 مراحل لرحلة سلسة في الصين",
+      longStay: "الإقامة الطويلة",
+      longStayDesc: "استقر في الصين مع أدلة التأشيرات والبنوك والإقامة.",
+      pageDescription: "كل ما تحتاجه للتخطيط، الحجز والاستمتاع برحلتك إلى الصين",
+      pageTitle: "دليل السفر إلى الصين - ChinaConnect",
       paymentStageDescription: "قم بإعداد Alipay و WeChat Pay قبل وصولك.",
       paymentStageTitle: "2. إعداد الدفع",
       paymentSubtitle: "الدفع - نصائح حول Alipay و WeChat Pay والنقد",
+      paymentTitle: "الدفع والمال",
       paymentTitleShort: "دليل الدفع",
       popularByCity: "شائع حسب المدينة",
       quickBeijingDesc: "النقاط البارزة في العاصمة والأكلات التي يجب تجربتها",
       quickFoodDesc: "ميشلان، جائزتي اللؤلؤة السوداء والأطباق المحلية المفضلة",
       quickScamDesc: "عمليات الاحتيال الشائعة وكيفية تجنبها",
+      safetyTitle: "السلامة",
       scamPreventionSubtitle: "احمِ نفسك من عمليات الاحتيال الشائعة في الصين",
       scamPreventionTitleShort: "الوقاية من الاحتيال",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "اعرف الأسعار العادلة وتجنب فرض رسوم زائدة",
       transparencyTitleShort: "شفافية الأسعار",
       transportStageDescription: "تنقل عبر مترو الأنفاق والقطارات فائقة السرعة وتطبيقات طلب السيارات.",
       transportStageTitle: "4. النقل",
       transportSubtitle: "النقل - التنقل في الصين بثقة",
+      transportTitle: "الانتقال",
       transportTitleShort: "دليل النقل",
       travelGuide: "دليل السفر",
+      travelerType: "نوع المسافر",
+      viewAll: "View all guides",
       viewAllBusinessTools: "عرض جميع أدوات الأعمال",
       viewAllBusinessToolsCta: "افتح Business Express",
       viewAllBusinessToolsDesc: "تحقق من جميع أدوات الأعمال مع الإحصائيات التفصيلية والدليل السريع.",
@@ -6713,23 +10242,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "كل ما تحتاجه قبل الصعود إلى الطائرة.",
       visaStageTitle: "1. التأشيرة والدخول",
       visaSubtitle: "التأشيرة - الدليل الكامل لدخول الصين",
+      visaTitle: "التأشيرة والدخول",
       visaTitleShort: "دليل التأشيرة"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "دردشة مع الذكاء الاصطناعي",
       citiesSubtitle: "من العاصمة القديمة إلى المدن الحديثة، اكتشف أفضل المدن الصينية مع دليل شامل.",
       citiesTitle: "استكشف مدننا",
+      clearHistory: "Clear history",
       ctaSubtitle: "ابدأ في تخطيط رحلتك مع توصيات مدعومة بالذكاء الاصطناعي.",
       ctaTitle: "هل أنت مستعد لاستكشاف الصين؟",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "استكشف بكين",
       exploreCities: "استكشف المدن",
+      exploreCityButton: "Explore City",
       exploreGuide: "عرض الدليل الكامل",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "كل ما تحتاجه لرحلة رائعة",
       featuresTitle: "كل ما تحتاجه لرحلتك إلى الصين",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "اسأل الذكاء الاصطناعي عن نصائح السفر",
       heroDesc: "ميشلان، مطاعم اللؤلؤة السوداء، المعالم، نصائح النقل، جهات الاتصال في حالات الطوارئ — كل ذلك من اختيار الذكاء الاصطناعي والسكان المحليين.",
       heroSubtitle: "دليلك الموثوق لأفضل المدن الصينية",
       heroTitle: "دليلك للصين المدعوم بالذكاء الاصطناعي",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "اكتشف مطاعم ميشلان وجوائز اللؤلؤة السوداء في 12 مدينة صينية.",
       onboarding1Title: "اكتشف الطعام الرائع",
       onboarding2Title: "نصائح مدعومة بالذكاء الاصطناعي",
@@ -6737,14 +10282,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "إنهاء",
       onboardingNext: "التالي",
       onboardingSkip: "تخطي",
+      pageDescription: "اكتشف الصين مع أدلة المدن المدعومة بالذكاء الاصطناعي. ابحث عن أفضل المطاعم (ميشلان وبلاك بيرل)، المعالم، معلومات النقل، وأرقام الطوارئ في 12 مدينة صينية رئيسية بما في ذلك بكين وشنغهاي وقوانغتشو وشيان وتشنغدو وغيرها.",
       pageTitle: "ChinaConnect - دليلك للذكاء الاصطناعي لاستكشاف الصين",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "تم عرضه مؤخرًا",
       recommendedForYou: "مُوصى به لك",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "مساعدة الذكاء الاصطناعي",
       statsAttractions: "أهم المعالم",
       statsCities: "المدن المشمولة",
       statsRestaurants: "مطاعم ميشلان",
-      viewAllCities: "عرض جميع المدن"
+      viewAllCities: "عرض جميع المدن",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "بناءً على الوجهات الشعبية"
     },
     language: {
       chinese: "الصينية",
@@ -6756,6 +10311,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "الانتقال إلى"
     },
+    loginPage: {
+      pageDescription: "تسجيل الدخول إلى ChinaConnect",
+      pageTitle: "تسجيل الدخول - ChinaConnect"
+    },
     nav: {
       aiChat: "ChinaGuide AI",
       attractions: "المعالم",
@@ -6765,6 +10324,7 @@ export const translations: Record<Language, Translations> = {
       home: "الصفحة الرئيسية",
       restaurants: "المطاعم",
       selectLanguage: "اختيار اللغة",
+      signIn: "Sign in",
       tagline: "اكتشف الصين مع الذكاء الاصطناعي"
     },
     notFound: {
@@ -6774,12 +10334,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "استكشف المدن",
       goHome: "العودة إلى الصفحة الرئيسية",
       heading: "404",
+      homeButton: "Back to home",
       letsContinue: "لنواصل استكشاف الصين",
       primary: "الصفحة غير موجودة",
-      title: "الصفحة غير موجودة - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "الصفحة غير موجودة - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "الطوارئ الطبية، الإصابات",
+      availableOffline: "متوفر بدون اتصال",
+      bannerDesc: "لا تزال جهات الاتصال في حالات الطوارئ والمعلومات الأساسية متوفرة",
       bannerTitle: "وضع عدم الاتصال",
+      emergencyNumbers: "أرقام الطوارئ (الصين)",
+      emergencyPhrases: "عبارات الطوارئ السريعة",
+      fireDesc: "حرائق، إنقاذ، مواد خطرة",
+      lastSynced: "آخر مرة مزامنة:",
       phrase1En: "النجدة!",
       phrase2En: "اتصل بالشرطة!",
       phrase3En: "أحتاج إلى سيارة إسعاف",
@@ -6787,6 +10365,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "أنا ضائع",
       phrase6En: "أحتاج إلى مساعدة",
       phrase7En: "أين المستشفى؟",
+      phrasesHelp: "عرض العبارات الشائعة للطوارئ",
+      phrasesTip: "اعرض هذه العبارات إذا كنت بحاجة إلى مساعدة",
+      policeDesc: "جرائم، طوارئ، سلامة عامة",
+      quickActions: "إجراءات سريعة",
+      tapToCall: "انقر على أي رقم للاتصال فورًا",
       tipsHeading: "نصائح للسفر أثناء عدم الاتصال",
       tipsList1: "احفظ العبارات والعناوين الرئيسية قبل أن تصبح غير متصل.",
       tipsList2: "حمّل الخرائط غير المتصلة في تطبيق الخرائط الخاص بك.",
@@ -6795,11 +10378,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "معظم المقاهي والمراكز التجارية توفر واي فاي مجاني.",
       tipsList6: "احمل دفتر ملاحظات صغير لكتابة العناوين.",
       title: "أنت غير متصل",
+      title2: "ChinaConnect SOS الطارئة - يعمل بدون اتصال",
+      trafficDesc: "حوادث مرورية فقط",
       tryAgain: "حاول مرة أخرى"
     },
     onboarding: {
       done: "تم",
       getStarted: "البدء",
+      neverShow: "Don't show this again",
       next: "التالي",
       skip: "تخطي",
       step1Desc: "ابحث عن مطاعم حائزة على نجوم ميشلان وجوائز اللؤلؤ الأسود في 12 مدينة صينية.",
@@ -6811,6 +10397,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "مرحبًا بكم في ChinaConnect!"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "التجديد التلقائي، قابل للإلغاء في أي وقت",
       billingAnnual: "سنوي",
       billingMonthly: "شهري",
@@ -6828,6 +10415,7 @@ export const translations: Record<Language, Translations> = {
         name: "Business",
         price: "$29.99"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "تم إلغاء الدفع. يمكنك المحاولة مرة أخرى أدناه.",
       compareFeatures: {
         advancedTools: "أدوات السفر المتقدمة",
@@ -6842,6 +10430,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "تأكد من فهمك للمحتوى المضمن في جميع الخطط.",
       compareTitle: "مقارنة جميع الميزات",
+      ctaButton: "Get started",
       ctaPrimary: "ابدأ مجانًا اليوم",
       ctaSecondary: "استكشف الميزات",
       ctaSubtitle: "انضم إلى آلاف المسافرين الذين يخططون لسفرهم إلى الصين باستخدام الذكاء الاصطناعي.",
@@ -6859,14 +10448,44 @@ export const translations: Record<Language, Translations> = {
         name: "Explorer",
         price: "$4.99"
       },
+      faq: "الأسئلة الشائعة",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "كيف أقوم بترقية أو ترقية خطتي؟",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "كيف أقوم بإلغاء اشتراكي؟",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "ما هي سياسة الاسترداد الخاصة بك؟",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "متى يتم إعادة تعيين حصتي الشهرية؟",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "ماذا يحدث عندما أصل إلى حد طلبات الذكاء الاصطناعي الخاصة بي؟",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "ما هي طرق الدفع التي تقبلونها؟",
       faqSubtitle: "كل ما تحتاج لمعرفته حول خططنا وفواتيرنا",
       faqTitle: "الأسئلة الشائعة",
+      featureAdvancedTools: "أدوات سفر متقدمة",
+      featureAiRequestsBusiness: "محادثات AI غير محدودة",
+      featureAiRequestsExplorer: "20 طلب AI شهريًا",
+      featureAiRequestsFree: "5 طلبات AI شهريًا",
+      featureAiRequestsPro: "100 طلب AI شهريًا",
+      featureAllTravelerFeatures: "جميع ميزات المسافر",
+      featureApi: "الوصول إلى API",
+      featureBasicPlanning: "تخطيط السفر الأساسي",
+      featureBusinessTemplates: "قوالب الأعمال",
+      featureCancelAnytime: "إلغاء في أي وقت",
+      featureConversationHistory: "تاريخ المحادثة",
+      featureCustomIntegrations: "عمليات تكامل مخصصة",
+      featureDedicated: "دعم مخصص",
+      featureExportPdf: "تصدير PDF",
+      featureMultiCity: "جداول الرحلات متعددة المدن",
+      featurePdfExport: "تصدير PDF",
+      featurePremiumCustomization: "تخصيص مميز",
+      featurePrioritySupport: "الدعم المتميز",
+      featureSaveItineraries: "حفظ خطط السفر",
+      featureSecurePayments: "مدفوعات آمنة",
+      featureTeamCollab: "التعاون الجماعي",
+      featureTeamManagement: "إدارة الفريق",
+      featureViewItineraries: "عرض خطط السفر",
       free: {
         description: "ابدأ بالتخطيط الأساسي",
         feature1: "5 طلبات ذكاء اصطناعي شهريًا",
@@ -6877,24 +10496,40 @@ export const translations: Record<Language, Translations> = {
         name: "Free"
       },
       freeForever: "مجاني إلى الأبد",
+      heroBadge: "Pricing",
       heroSubtitle: "من التصفح المجاني إلى التخطيط الاحترافي، خطط تناسب وتيرة سفرك.",
       heroTitle: "تسعير بسيط وشفاف",
+      moneyBack: "30-day refund",
+      planBusiness: "العمل",
+      planExplorer: "مستكشف",
+      planFree: "مجاني",
+      planPro: "احترافي",
+      planTraveler: "مسافر",
       popularBadge: "الأكثر شيوعًا",
       priceFree: "$0",
+      pro: {
+        description: "للسائحين النشطين"
+      },
       saveBadge: "وفر 20%",
       savingsHint: "وفر 20% عند الدفع سنويًا",
+      securePayment: "Secure payment",
       subscribeNow: "اشترك الآن",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "الولايات المتحدة الأمريكية",
       testimonial1Role: "خطة Explorer",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "لي وي تي.",
       testimonial2Country: "المملكة المتحدة",
       testimonial2Role: "خطة العمل",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "ماريا آر.",
       testimonial3Country: "ألمانيا",
       testimonial3Role: "خطة المسافر",
+      testimonials: "ما يقوله المسافرون",
       testimonialsSubtitle: "استمع إلى ما يقوله مستخدمونا عن تجربتهم مع ChinaConnect",
       testimonialsTitle: "محبوبة من قبل المسافرين في جميع أنحاء العالم",
+      title: "التسعير",
       traveler: {
         annualNote: "فاتورة سنوية $95.99 (وفر $24)",
         description: "للمسافرين المتكررين إلى الصين",
@@ -6911,11 +10546,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "استرداد الأموال خلال 30 يومًا",
         securePayment: "دفع آمن"
       },
+      trustCancelAnytime: "إلغاء في أي وقت",
+      trustInstantAccess: "الوصول الفوري",
+      trustSecurePayments: "مدفوعات آمنة",
       trustedBy: "موثوق بها من قبل 10,000+ مسافر",
       unlimited: "غير محدود"
     },
     profilePage: {
-      title: "ملفي الشخصي - ChinaConnect"
+      displayName: "اسم العرض",
+      heading: "Profile",
+      pageTitle2: "ملفي الشخصي",
+      save: "حفظ التغييرات",
+      saved: "تم الحفظ!",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "ملفي الشخصي - ChinaConnect",
+      uploadAvatar: "تحميل الصورة الرمزية"
     },
     recents: {
       clearAll: "إفراغ",
@@ -6952,6 +10597,22 @@ export const translations: Record<Language, Translations> = {
       username: "اسم المستخدم",
       usernamePlaceholder: "اسم العرض الخاص بك"
     },
+    registerPage: {
+      pageDescription: "أنشئ حسابك في ChinaConnect",
+      pageTitle: "التسجيل - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "العنوان",
       avgPrice: "متوسط السعر",
@@ -6977,12 +10638,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "مشاركة مع الأصدقاء"
     },
     userPage: {
+      heading: "الملف الشخصي",
+      pageTitle2: "ملف المستخدم",
       title: "ملف المستخدم - ChinaConnect"
     }
   },
   fa: {
     accountPage: {
       active: "فعال",
+      activeLabel: "فعال",
       aiRequestsThisMonth: "درخواست‌های هوش مصنوعی این ماه",
       alertSignOutError: "امکان دسترسی به مدیریت اشتراک وجود ندارد. لطفاً با پشتیبانی تماس بگیرید.",
       currentPlan: "طرح فعلی",
@@ -6994,6 +10658,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "هنوز سفارشی ثبت نشده است.",
       emptySavedRoutes: "هنوز مسیر ذخیره‌شده‌ای وجود ندارد.",
       emptySavedRoutesHint: "هنوز مسیر ذخیره‌شده‌ای وجود ندارد. با هوش مصنوعی گفتگو کنید تا مسیرهایی ایجاد کنید!",
+      explorerBadge: "اکسپلورر",
       loading: "در حال بارگذاری حساب شما...",
       manageSubscription: "مدیریت اشتراک",
       membership: "عضویت",
@@ -7003,6 +10668,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "وضعیت",
       orderHeaderType: "نوع",
       pageTitle: "حساب من - ChinaConnect",
+      pageTitleSuffix: "حساب من - ChinaConnect",
       pointsUnit: "امتیاز",
       renewsOn: "تمدید می‌شود در",
       savedLocally: "فقط به صورت محلی ذخیره شده",
@@ -7013,27 +10679,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "ورود مورد نیاز است",
       signInRequiredDesc: "لطفاً برای مشاهده حساب خود وارد شوید.",
       signOut: "خروج",
+      statAiUsage: "مصرف امروز هوش مصنوعی",
+      statFavorites: "علاقه‌مندی‌ها",
       statSavedRoutes: "مسیرهای ذخیره‌شده",
+      subtitle: "مدیریت اشتراک، علاقه‌مندی‌ها و مسیرهای ذخیره‌شده‌ی شما.",
       syncedToCloud: "با ابر همگام‌سازی شده",
       tabBilling: "صورتحساب",
+      tabFavorites: "علاقه‌مندی‌ها",
+      tabOrders: "سفارش‌ها",
       tabOverview: "نمای کلی",
       tabPlans: "طرح‌ها",
+      tabRoutes: "مسیرها",
       tabUsage: "استفاده",
+      title: "حساب کاربری من",
       untitledRoute: "مسیر بدون عنوان",
       upgrade: "ارتقاء",
       usageDailyAi: "درخواست‌های روزانه هوش مصنوعی",
       usageFavorites: "مورد علاقه‌ها",
       usageSavedRoutes: "مسیرهای ذخیره‌شده",
+      userBadge: "کاربر",
       walletBalance: "موجودی کیف پول"
+    },
+    ai: {
+      send: "ارسال",
+      thinking: "در حال پردازش..."
     },
     aiPage: {
       authFailed: "احراز هویت ناموفق",
       authGateSignupTitle: "ایجاد حساب",
       authGateTitle: "ورود به گفتگو",
+      chatInputPlaceholder: "در مورد رستوران‌ها، حمل‌ونقل، جاذبه‌های گردشگری و... بپرسید",
+      conversationHistory: "تاریخچه مکالمه",
       conversationsTitle: "گفتگوها",
       deleteConfirm: "آیا می‌خواهید این گفتگو را حذف کنید؟",
       deleteTitle: "حذف",
       emailPlaceholder: "you@example.com",
+      exportPdf: "خروجی PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "آیا قبلاً حسابی دارید؟",
@@ -7042,13 +10723,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "پنهان کردن نوار کناری",
       messageLabel: "پیام",
       messagesLabel: "پیام‌ها",
+      newChat: "چت جدید",
       newChatButton: "+ گفتگوی جدید",
       noAccountPrompt: "حسابی ندارید؟",
       noConversationsYet: "تاکنون هیچ مکالمه‌ای ایجاد نشده است",
       orContinueWith: "یا",
+      pageDescription: "هرچیزی درباره سفر در چین بپرسید.",
+      pageTitle: "کنسرژ سفر هوشمند - ChinaConnect",
       passwordPlaceholder: "رمز عبور (حداقل ۶ کاراکتر)",
       promptsSubtitle: "یک پیشنهاد را انتخاب کنید یا مورد خود را در زیر وارد کنید",
       promptsTitle: "بپرسید",
+      saveRoute: "مسیر را ذخیره کنید",
+      sendButton: "ارسال",
       showSidebarTitle: "نمایش مکالمات",
       signInButton: "ورود",
       signUpButton: "ایجاد حساب",
@@ -7056,27 +10742,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "هوش مصنوعی به برنامه‌ریزی سفر شما به چین کمک می‌کند",
       switchToSignIn: "ورود",
       switchToSignUp: "ایجاد یک حساب",
-      title: "ChinaGuide AI - مشاور هوشمند سفر شما به چین"
+      thinking: "در حال فکر کردن...",
+      title: "ChinaGuide AI - مشاور هوشمند سفر شما به چین",
+      upgradePrompt: "ثبت‌نام کنید تا درخواست‌های بیشتری از هوش مصنوعی را باز کنید.",
+      usageToday: "استفاده امروز"
     },
     attractions: {
       allCities: "همه شهرهای دارای جاذبه‌های دیدنی",
+      appSubtitle: "برنامه‌های مفید برای سفر و پیدا کردن جاذبه‌ها",
+      appTitle: "برنامه‌ریزی سفر شما",
+      attractionCount: "{count} جاذبه",
       browseCategory: "جستجو بر اساس دسته‌بندی",
+      citiesCount: "{count} شهر",
+      diversityTypes: "تاریخی، فرهنگی، طبیعی، مدرن",
+      featured: "شهرهای برگزیده",
       featuredCities: "شهرهای برجسته",
+      heroEyebrow: "جستجو بر اساس مقصد",
+      openCity: "باز کردن شهر",
+      pageDescription: "باید‌دیدنی‌ترین مکان‌های گردشگری در چین - از آثار باستانی تا عجایب طبیعی",
+      pageTitle: "جاذبه‌های چین - ChinaConnect",
       subtitle: "باید‌بازدیدها — از آثار باستانی تا شگفتی‌های طبیعت",
-      title: "جاذبه‌های دیدنی چین"
+      title: "جاذبه‌های دیدنی چین",
+      viewAll: "نمایش همه جاذبه‌ها"
     },
     auth: {
+      continueWithGithub: "ادامه با گیت‌هاب",
+      continueWithGoogle: "ادامه با گوگل",
+      email: "ایمیل",
       myAccount: "حساب من",
+      needHelp: "آیا به کمک برای ورود نیاز دارید؟",
+      orContinueWithEmail: "یا ادامه با ایمیل",
+      password: "رمز عبور",
+      profile: "پروفایل",
       profileCenter: "مرکز پروفایل",
       signIn: "ورود",
-      signOut: "خروج"
+      signInButton: "ورود",
+      signOut: "خروج",
+      signOutConfirm: "خروج از چایناکانکت؟",
+      subtitle: "ذخیره علاقه‌مندی‌ها، برنامه‌ریزی سفرها و گفتگو با هوش مصنوعی.",
+      title: "ورود به چایناکانکت"
     },
     authPage: {
       authTitle: "ورود / ثبت‌نام - ChinaConnect",
       callbackTitle: "در حال ورود...",
+      continueWithEmail: "یا با ایمیل ادامه دهید",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "مشکلی پیش آمده است. لطفاً دوباره تلاش کنید.",
       errorTitle: "عدم موفقیت در احراز هویت",
+      forgotPassword: "رمز عبور را فراموش کرده‌اید؟",
       loginTitle: "ورود - ChinaConnect",
-      signingYouIn: "در حال ورود شما..."
+      needAccount: "حساب کاربری ندارید؟",
+      passwordPlaceholder: "رمز عبور شما",
+      signInButton: "ورود",
+      signInError: "ورود ناموفق بود. لطفاً دوباره تلاش کنید.",
+      signUpButton: "ثبت‌نام",
+      signUpError: "ثبت‌نام ناموفق بود. لطفاً دوباره تلاش کنید.",
+      signingYouIn: "در حال ورود شما...",
+      successDesc: "در حال انتقال شما...",
+      successTitle: "خوش‌آمدید!"
     },
     businessGuidePage: {
       backToGuide: "← بازگشت به راهنمای سفر",
@@ -7101,77 +10824,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← بازگشت به قیمت‌گذاری",
+      continueButton: "ادامه به حساب کاربری شما",
       description: "اشتراک شما با موفقیت فعال شده است",
       errorDesc: "ما نتوانستیم پرداخت شما را پردازش کنیم. لطفاً دوباره تلاش کنید یا با پشتیبانی تماس بگیرید.",
       errorTitle: "مشکلی پیش آمده است",
+      processing: "در حال پردازش پرداخت شما...",
       processingDesc: "لطفاً صبر کنید تا اشتراک شما تأیید شود.",
       startPlanning: "شروع برنامه‌ریزی",
       successAccess: "شما اکنون به تمام ویژگی‌های طرح جدید خود دسترسی دارید.",
       successDesc: "اشتراک شما فعال شده است.",
       successTitle: "پرداخت موفقیت‌آمیز!",
+      thankYou: "از انتخاب شما برای ChinaConnect متشکریم.",
       title: "پرداخت موفقیت‌آمیز - ChinaConnect",
       viewAccount: "مشاهده حساب"
     },
     cities: {
       attractions: "جاذبه‌های دیدنی",
+      citiesCount: "شهرها",
+      citiesInChina: "شهرهای چین",
       culturalTips: "نکات فرهنگی",
       emergency: "اورژانس",
+      exploreAll: "کاوش همه",
       exploreGuide: "راهنمای کاوش",
+      filterATier: "رده A",
+      filterAll: "همه",
+      filterDTier: "رده D",
+      filterSTier: "رده S",
+      headerSubtitle: "از پایتخت‌های باستانی تا مگاپایتخت‌های مدرن - مقصد خود را انتخاب کنید.",
+      headerTitle: "کاوش شهرهای چین",
       hotels: "هتل‌ها",
+      noResults: "هیچ شهری با فیلترهای شما مطابقت ندارد.",
       openingHours: "ساعات کار",
+      pageDescription: "همه شهرهای چین تحت پوشش ChinaConnect را کاوش کنید - از پایتخت‌های باستانی تا متروپولیس‌های مدرن. شهرهای پیش‌نهادی S-tier، نیمه‌پیش‌نهادی A-tier و شهرهای درخواستی D-tier.",
+      pageTitle: "همه شهرها را کاوش کنید - ChinaConnect",
       payment: "پرداخت",
+      population: "جمعیت",
       recommendedTime: "زمان پیشنهادی بازدید",
+      region: "منطقه",
       restaurants: "رستوران‌ها",
+      searchPlaceholder: "جستجوی شهرها...",
       subtitle: "از پایتخت‌های باستانی تا متروپولیس‌های مدرن",
       ticketPrice: "بلیط",
       title: "کاوش شهرهای ما",
-      transport: "حمل و نقل"
+      transport: "حمل و نقل",
+      viewCity: "نمایش شهر"
+    },
+    city: {
+      beijing: {
+        name: "پکن"
+      },
+      chengdu: {
+        name: "چنگدو"
+      },
+      chongqing: {
+        name: "چونگکینگ"
+      },
+      guangzhou: {
+        name: "گوانگژو"
+      },
+      guilin: {
+        name: "گویلین"
+      },
+      hangzhou: {
+        name: "هانگژو"
+      },
+      lijiang: {
+        name: "لیجیانگ"
+      },
+      qingdao: {
+        name: "چینگداو"
+      },
+      shanghai: {
+        name: "شانگهای"
+      },
+      shenzhen: {
+        name: "شنژن"
+      },
+      suzhou: {
+        name: "سوژو"
+      },
+      xian: {
+        name: "شیان"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "همه",
+      categoryLabel: "دسته‌بندی",
+      disclaimer: "ساعات کار، قیمت بلیط و شماره تلفن ممکن است تغییر کند. توصیه می‌شود از طریق وب‌سایت رسمی جاذبه یا تماس تلفنی اطلاعات را بررسی کنید.",
+      openOnMap: "باز کردن روی نقشه",
+      openingHours: "ساعات باز بودن",
+      subtitle: "جاذبه‌های دیدنی، موزه‌ها و شگفتی‌های طبیعی.",
+      ticketPrice: "قیمت بلیط",
+      tipsHeader: "نکات",
+      title: "جاذبه‌های {city}",
+      viewAll: "نمایش همه جاذبه‌ها در {city}",
+      viewDetails: "مشاهده جزئیات",
+      viewMore: "نمایش جاذبه‌های بیشتر"
+    },
+    cityFood: {
+      avgPrice: "میانگین قیمت",
+      cuisine: "آشپزی",
+      disclaimer: "شماره تلفن و آدرس ممکن است تغییر کند. توصیه می‌شود از طریق کانال‌های رسمی رستوران یا تماس تلفنی اطلاعات را بررسی کنید.",
+      filterAll: "همه",
+      filterBlackPearl: "مروارید سیاه",
+      filterBudget: "بودجه",
+      filterLocal: "محلی",
+      filterLocalFavorites: "علاقه‌مندی‌های محلی",
+      filterMichelin: "میشلین",
+      filteringLabel: "فیلترینگ:",
+      googleMaps: "نقشه گوگل",
+      signatureDishes: "غذاهای مشخصه",
+      subtitle: "ستاره‌های میشلین، مروارید سیاه و گنج‌های محلی.",
+      title: "رستوران‌های {city}",
+      viewAll: "همه رستوران‌های {city} را مشاهده کنید",
+      viewDetails: "مشاهده جزئیات"
+    },
+    cityHotels: {
+      bookCta: "جزئیات هتل را مشاهده کنید",
+      bookNow: "مشاهده هتل",
+      filterAll: "همه دسته‌ها",
+      pricePerNight: "در هر شب",
+      stars: "ستاره",
+      subtitle: "از اقامت‌گاه‌های بوتیک تا زنجیره‌های بین‌المللی - مکان مناسبی برای سفر خود پیدا کنید.",
+      title: "هتل‌های {city}"
     },
     cityPage: {
+      appCount: "{count} اپلیکیشن‌های ضروری",
+      appsSubtitle: "قبل از رسیدن آن‌ها را دانلود کنید.",
+      area: "منطقه",
+      attractionCount: "{count} جاذبه",
       attractionsExploreCount: "{city} — {count} مکان برای کاوش",
       attractionsHeading: "جاذبه‌های برتر",
       attractionsSubtitle: "مکان‌هایی که باید از دیدگاه بومیان و مسافران دیده شوند",
+      bestTime: "بهترین زمان برای بازدید",
       bestTimeHeading: "بهترین زمان برای بازدید",
+      bookHotelCta: "هتل‌های {city} را پیدا کنید",
+      bookTourCta: "تورهای {city} را رزرو کنید",
+      citySubtitle: "راهنمای کامل سفر برای {city}، چین. بهترین رستوران‌ها، جاذبه‌های گردشگری، هتل‌ها و نکات سفر را پیدا کنید.",
+      connectivitySubtitle: "با داده‌ها به‌صورت آنلاین باشید.",
+      contactCount: "{count} مخاطب",
+      cultureSubtitle: "رسوم و آداب محلی.",
+      cultureSubtitleDynamic: "دانش فرهنگی ضروری برای {city}",
+      currency: "ارز",
       dataSourcesDesc: "منبع این داده‌ها",
       dataSourcesHeading: "منابع داده",
+      downloadBefore: "این اپلیکیشن‌ها را قبل از ورود به چین دانلود کنید.",
+      elevation: "ارتفاع",
+      emergencySubtitle: "شماره‌های مهم و سفارتخانه‌ها.",
+      emergencySubtitleDynamic: "شماره‌های تلفن مهم در {city}",
+      esimDescription: "eSIM آسان‌ترین راه برای دسترسی به داده در چین است. نیازی به سیم‌کارت فیزیکی نیست - بلافاصله پس از ورود فعال می‌شود.",
+      esimRecommended: "eSIM (توصیه می‌شود)",
+      essentialAppsFor: "اپلیکیشن‌های ضروری برای {city}",
+      essentialCultural: "دانش فرهنگی ضروری برای {city}",
+      exploreOnMap: "در نقشه کاوش کنید",
       foodHeading: "جایی برای خوردن",
       foodHighlightsHeading: "برجستگی‌های غذایی",
       foodHighlightsSubtitle: "توصیه‌شده محلی",
       foodSubtitle: "ستاره‌های میشلین، انتخاب‌های مروارید سیاه و موردعلاقه‌های محلی",
+      gettingAround: "نحوه جابجایی",
       gettingTo: "رفتن به {city}",
+      heroEyebrow: "راهنمای سفر",
       home: "← بازگشت به صفحه اصلی شهر",
+      hotelCount: "{count} هتل",
       hotelsCountUnit: "هتل",
       hotelsHeading: "جایی برای اقامت",
+      hotelsSubtitle: "از هتل‌های بوتیک تا زنجیره‌های بین‌المللی.",
+      importantNumbers: "شماره‌های تلفن مهم در {city}",
+      intro: "به {city}، یکی از جذاب‌ترین مقاصد چین خوش آمدید.",
+      language: "زبان",
+      moreCities: "شهرهای بیشتر",
+      nextCity: "شهر بعدی",
       noHotels: "هیچ هتلی پیدا نشد",
       noHotelsDesc: "سعی کنید محدوده قیمت یا دسته‌بندی دیگری را امتحان کنید.",
       noResults: "هیچ جاذبه‌ای پیدا نشد",
       noResultsDesc: "سعی کنید فیلترها یا کلمات کلیدی جستجوی خود را تغییر دهید.",
+      openFullMap: "نقشه کامل را باز کنید",
+      overviewSubtitle: "همه چیزی که قبل از رفتن باید بدانید.",
+      pageTitleSuffix: "راهنمای سفر - ChinaConnect",
+      paymentSubtitle: "پول نقد، کارتها، کیف‌پول‌های موبایل و دسترسی به دستگاه‌های خودپرداز.",
       phoneIcon: "📞",
+      population: "جمعیت",
+      previousCity: "شهر قبلی",
+      proTipBooking: "نکته حرفه‌ای: هتل‌ها را ۲-۳ هفته قبل رزرو کنید تا بهترین نرخ‌ها را دریافت کنید.",
+      proTipEsim1: "eSIM در صورتی بهترین عملکرد را دارد که تلفن شما از آن پشتیبانی کند (iPhone XS+ و اکثر پرچمداران اندروید).",
+      proTipEsim2: "اپلیکیشن‌های eSIM را قبل از ورود به چین دانلود کنید.",
+      proTipEsim3: "Airalo و Holafly پلن‌هایی با داده‌های نامحدود ویژه چین ارائه می‌دهند.",
+      proTips: "نکات حرفه‌ای",
+      quickFacts: "حقایق سریع",
       quickFactsHeading: "حقایق سریع",
+      region: "منطقه",
+      restaurantCount: "{count} رستوران",
+      sectionApps: "اپلیکیشن‌های ضروری",
+      sectionAttractions: "جاذبه‌های برتر",
+      sectionConnectivity: "SIM و eSIM",
+      sectionCulture: "نکات فرهنگی",
+      sectionEmergency: "اطلاعات اورژانسی",
+      sectionFood: "جایی برای خوردن",
+      sectionHotels: "جایی برای ماندن",
+      sectionOverview: "نمای کلی",
+      sectionPayment: "پرداخت و پول",
+      sectionTransport: "پیمایش",
+      sectionVisa: "ویزا و ورود",
+      sosTip: "این شماره‌ها را قبل از ورود ذخیره کنید - خدمات تلفن همراه ممکن است در مناطق دورافتاده محدود باشد.",
+      switchToEnglishMode: "اگر رابط کاربری چینی می‌بینید، در تنظیمات اپلیکیشن به حالت انگلیسی تغییر دهید. هم Alipay و هم WeChat Pay از کارتهای اعتباری خارجی پشتیبانی می‌کنند.",
+      tabApps: "برنامه‌ها",
+      tabAttractions: "جاذبه‌ها",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "فرهنگ",
+      tabEmergency: "اضطراری",
+      tabFood: "غذا",
+      tabHotels: "هتل‌ها",
+      tabOverview: "نمای کلی",
+      tabPayment: "پرداخت",
+      tabTransport: "حمل‌ونقل",
+      timezone: "منطقه زمانی",
+      tipCount: "{count} نکته",
       topHighlightsHeading: "برجسته‌ترین‌ها",
       transportSubtitle: "حرکت در {city}",
-      viewAllHotels: "مشاهده همه {totalHotelCount} هتل"
+      travelTo: "سفر به {city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "مشاهده همه {totalHotelCount} هتل",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "همه",
       back: "بازگشت",
+      bookNow: "Book now",
       cancel: "لغو",
       close: "بستن",
       confirm: "تایید",
+      continue: "ادامه",
+      discover: "Discover",
+      done: "اتمام",
       error: "خطا",
+      explore: "Explore",
       filter: "فیلتر",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "در حال بارگذاری...",
       next: "بعدی",
       open: "باز کردن",
       previous: "قبلی",
+      readMore: "Read more",
+      required: "الزامی",
       retry: "تلاش مجدد",
+      save: "ذخیره",
       search: "جستجو...",
       seeMore: "بیشتر ببینید",
+      signUpFree: "Sign up free",
       sort: "مرتب‌سازی",
-      viewAll: "همه را مشاهده کنید"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "همه را مشاهده کنید",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "آمبولانس",
+      callButton: "تماس",
       communication1: "یاد بگیرید عبارات پایه ماندارین را",
       communication2: "در صورت نیاز از برنامه‌های ترجمه استفاده کنید",
       communication3: "بارگیری کارت‌های عبارت‌های اورژانسی",
@@ -7181,9 +11119,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "شماره‌های اورژانسی کلیدی مورد استفاده در سراسر چین.",
       embassyDesc: "اطلاعات تماس سفارتخانه‌های کشورهای مهم در چین.",
       embassyTitle: "اطلاعات سفارت و کنسولگری",
+      findEmbassy: "پیدا کردن سفارت خود",
       fire: "آتش‌نشانی",
       gps: "اشتراک‌گذاری موقعیت مکانی GPS",
       gpsDesc: "برای تماس‌های اورژانسی، موقعیت مکانی را به‌صورت زنده ذخیره کنید.",
+      gpsLocator: "مکان‌یابی GPS",
       heroHeading: "اطلاعات تماس و کمک‌های اورژانسی",
       hospitalCommon: "معمولی: بیمارستان پکن یونیون مدیکال کالج، بیمارستان خانواده‌ی متحد پکن",
       hospitalInternational: "بیمارستان‌های بین‌المللی توصیه‌شده برای خارجی‌ها",
@@ -7223,6 +11163,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "برای آمادگی بهتر، نقشه‌های آفلاین دانلود کنید",
       oneTapCalls: "تماس‌های اورژانسی یک‌لمسی",
       oneTapDesc: "هر شماره را لمس کنید تا فوراً تماس برقرار شود. با هر تلفنی کار می‌کند - نیازی به اپلیکیشن نیست.",
+      pageDescription: "شماره‌های تلفن مهم برای مسافران در چین",
       pageTitle: "تماس‌ها و عبارات اورژانسی - ChinaConnect",
       pharmaciesTitle: "داروخانه‌ها",
       pharmacyChains: "شبکه‌های بزرگ: Guoji Yiyao, Lianhua, Yixinke",
@@ -7240,6 +11181,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "شارژ پاوربانک را حفظ کنید",
       preparedness4: "آدرس هتل به زبان چینی را ذخیره کنید",
       preparednessTitle: "آمادگی اورژانسی",
+      quickDial: "تماس سریع",
       safetyTipsTitle: "نکات ایمنی برای مسافران",
       sosButtonDesc: "سه ثانیه فشار دهید تا به طور خودکار موقعیت مکانی به مخاطبین اورژانسی ارسال شود.",
       sosButtonTitle: "دکمه‌ی SOS - در هر صفحه در دسترس است",
@@ -7249,7 +11191,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "برای دسترسی سریع به منو، بلند نگه دارید یا راست کلیک کنید",
       subtitle: "شماره‌های ضروری تلفن، عبارات و ابزارهای مورد نیاز برای ایمنی شما در چین",
       title: "شماره‌های تماس اضطراری و کمک",
-      traffic: "ترافیک"
+      touristHotline: "خط ویژه گردشگران",
+      traffic: "ترافیک",
+      universalSection: "شماره های جهانی",
+      viewAllContacts: "مشاهده همه مخاطبین"
     },
     empty: {
       addSome: "اکنون کاوش کنید و مورد علاقه‌های خود را ذخیره کنید!",
@@ -7268,7 +11213,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "بارگذاری محتوا با شکست مواجه شد",
       network: "خطای شبکه",
       networkError: "خطای شبکه. لطفاً اتصال خود را بررسی کنید.",
+      notFound: "Resource not found.",
       somethingWrong: "چیزی اشتباه شده است",
+      timeout: "Request timed out.",
       unauthorized: "عدم دسترسی"
     },
     features: {
@@ -7293,22 +11240,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "Amap",
       back: "← بازگشت به {city}",
       backToCity: "بازگشت به {city}",
+      bottomCtaDesc: "لیست شهرهای ما را مرور کرده و مقاصد بیشتری در چین کشف کنید.",
       callPhone: "تماس",
+      citiesCount: "Cities",
       citiesUnit: "شهرها",
       cityEmpty: "هنوز رستورانی وجود ندارد",
       cityEmptyDesc: "ما هنوز در حال انتخاب رستوران‌ها برای {city} هستیم.",
       cityEmptySubtitle: "برای شروع کاوش، برخی رستوران‌ها را اضافه کنید",
       dataSourcesDesc: "این منابع می‌توانند به شما کمک کنند تا بیشتر درباره‌ی فرهنگ غذایی {city} بدانید:",
       dataSourcesHeading: "منابع مرجع",
+      empty: "No cities match this filter.",
       emptyCta: "نمایش همه رستوران‌ها",
       emptyDesc: "هیچ رستورانی در این دسته وجود ندارد. سعی کنید فیلتر دیگری را امتحان کنید.",
       emptyTitle: "هنوز رستورانی وجود ندارد",
+      essentialFoodApps: "برنامه های ضروری غذایی",
+      essentialFoodAppsDesc: "این برنامه ها را دانلود کنید تا سفارش غذای تحویلی بدهید و رستوران های محلی با منوی انگلیسی را کشف کنید.",
       exploreFood: "کاوش غذا",
+      filterAll: "All",
       filterBlackPearl: "سیاه چین",
       filterBudget: "بودجه",
       filterCasual: "راحت",
       filterLocal: "محلی محبوب",
       filterMichelin: "میشلین",
+      filterStreetFood: "Street Food",
       filteringLabel: "فیلتر کردن:",
       heroCityFood: "{city} غذا",
       indexTitle: "🍜 نقشه غذایی چین",
@@ -7316,25 +11270,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "ناوبری",
       noCityTitle: "شهر مورد نظر خود را پیدا نمی‌کنید؟",
       otherRestaurants: "رستوران‌های دیگر در {city}",
+      pageDescription: "کشف محبوب ترین غذاها، شهرهای منتخب و رستوران های منتخب چین",
+      pageTitle: "نقشه غذایی چین - ChinaConnect",
       perPerson: "/نفر",
+      proTipsFoodApps: "نکات حرفه ای برای برنامه های غذایی",
       restaurantsUnit: "رستوران‌ها",
       showingCount: "نمایش",
-      subtitle: "میشلین، مروارید سیاه و محبوب‌های محلی"
+      subtitle: "میشلین، مروارید سیاه و محبوب‌های محلی",
+      tipDianping: "Dianping برای یافتن محبوب ترین های محلی با نظرات انگلیسی عالی است.",
+      tipEleme: "Ele.me بیشترین پوشش تحویل را ارائه می دهد اما ممکن است به زبان چینی پیش فرض شود.",
+      tipLinkCard: "کارت خارجی خود را قبل از سفارش به Alipay/WeChat Pay متصل کنید.",
+      tipMeituan: "Meituan برای بسیاری از رستوران ها ترجمه منوی انگلیسی دارد.",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "اقامت",
       aiAssistant: "دستیار هوش مصنوعی",
+      allRightsReserved: "All rights reserved.",
       attractions: "جاذبه‌ها",
       cities: "شهرها",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "نکات فرهنگی",
       description: "راهنمای قابل اعتماد کاوش چین. توصیه‌های رستوران مبتنی بر هوش مصنوعی، راهنمای شهرها و نکات سفر.",
+      diningGuide: "راهنمای غذایی",
       emergency: "اطلاعات تماس اضطراری",
       guides: "راهنماهای سفر",
+      guidesLabel: "Travel Guides",
       payment: "پرداخت",
+      privacy: "Privacy",
       resources: "منابع",
+      resourcesLabel: "Resources",
       restaurants: "رستوران‌ها",
+      terms: "Terms",
       transport: "حمل‌ونقل",
-      viewAllCities: "مشاهده همه شهرها"
+      viewAllCities: "مشاهده همه شهرها",
+      visaGuide: "راهنمای ویزا"
+    },
+    guide: {
+      attractionsPageTitle: "جاذبه‌های برتر چین",
+      attractionsTitle: "جاذبه‌های برتر چین",
+      beijingGuide: "راهنمای پکن",
+      foodGuide: "راهنمای غذایی",
+      scamPrevention: "پیشگیری از کلاه‌برداری"
     },
     guidePage: {
       accommodationStageDescription: "محل‌های مناسب برای اقامت با هر بودجه‌ای را پیدا و رزرو کنید.",
@@ -7342,7 +11339,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "اقامت - هتل‌ها، مهمان‌خانه‌ها و نکات رزرو",
       accommodationTitleShort: "راهنمای اقامت",
       attractionsSubtitle: "مکان‌های ضروری بازدید و گوهرهای پنهان",
+      attractionsTitle: "جاذبه های برتر",
       backHome: "بازگشت به خانه",
+      beginnerDesc: "با اطمینان اولین سفر خود را برنامه ریزی کنید.",
+      beginnerTraveler: "بازدیدکننده اولین بار",
+      businessDesc: "ابزارهایی برای جلسات، پرداخت ها و آداب معاشرت.",
+      businessTitle: "سفر کاری",
+      businessTraveler: "مسافر کاری",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "پکن",
       cityChengdu: "چنگدو",
       cityShanghai: "شانگهای",
@@ -7353,6 +11357,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "راهنمای ارتباطات",
       culturalWarningsSubtitle: "تفاوت‌های فرهنگی و اشتباهاتی که باید از آن‌ها اجتناب کرد",
       culturalWarningsTitleShort: "هشدارهای فرهنگی",
+      cultureTitle: "نکات فرهنگی",
       departureStageDescription: "بازپرداخت مالیات، گمرک و نکات نهایی قبل از بازگشت به خانه.",
       departureStageTitle: "۷. خروج",
       departureSubtitle: "خروج - بازپرداخت مالیات و ترک چین",
@@ -7370,6 +11375,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "اضطراری - پلیس، آمبولانس، تماس‌های سفارت",
       emergencyTitleShort: "راهنمای اضطراری",
       emergencyTourism: "خط تماس گردشگری ۱۲۳۰۱",
+      foodTitle: "راهنمای غذا",
       home: "← بازگشت به خانه",
       indexBusinessHeading: "🚀 ابزارهای سفر کسب و کار",
       indexBusinessSubtitle: "از دعوت‌نامه تا آداب کسب و کار — همه چیزی که برای انجام کسب و کار در چین نیاز دارید.",
@@ -7377,23 +11383,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "راهنمای کامل سفر به چین — از آماده‌سازی تا خروج از کشور.",
       indexHeroTitle: "🇨🇳 راهنمای کامل سفر به چین",
       indexStagesTitle: "8 مرحله برای یک سفر راحت به چین",
+      longStay: "اقامت طولانی",
+      longStayDesc: "با راهنماهای ویزا، بانکداری و اسکان سکونت خود را آغاز کنید.",
+      pageDescription: "همه چیزهایی که برای برنامه ریزی، رزرو و لذت بردن از سفر خود به چین نیاز دارید",
+      pageTitle: "راهنمای سفر به چین - ChinaConnect",
       paymentStageDescription: "قبل از رسیدن، آلی‌پی و پی‌پی ویچت را راه‌اندازی کنید.",
       paymentStageTitle: "2. راه‌اندازی پرداخت",
       paymentSubtitle: "پرداخت - راهنمای آلی‌پی، پی‌پی ویچت و نکات پول نقد",
+      paymentTitle: "پرداخت و پول",
       paymentTitleShort: "راهنمای پرداخت",
       popularByCity: "محبوب در شهر",
       quickBeijingDesc: "برجستگی‌های پایتخت و غذاهایی که باید بخورید",
       quickFoodDesc: "میشلین، سیاه‌مروارید و مورد علاقه‌های محلی",
       quickScamDesc: "کلاه‌برداری‌های رایج و نحوه جلوگیری از آن‌ها",
+      safetyTitle: "ایمنی",
       scamPreventionSubtitle: "خود را در برابر کلاه‌برداری‌های رایج در چین محافظت کنید",
       scamPreventionTitleShort: "پیشگیری از کلاه‌برداری",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "قیمت‌های منصفانه را بشناسید، از افزایش بی‌رویه قیمت‌ها اجتناب کنید",
       transparencyTitleShort: "شفافیت قیمت",
       transportStageDescription: "از مترو، قطارهای پرسرعت و اپلیکیشن‌های تاکسی استفاده کنید.",
       transportStageTitle: "4. حمل و نقل",
       transportSubtitle: "حمل و نقل - جابه‌جایی در چین با اطمینان",
+      transportTitle: "رفت و آمد",
       transportTitleShort: "راهنمای حمل و نقل",
       travelGuide: "راهنمای سفر",
+      travelerType: "نوع مسافر",
+      viewAll: "View all guides",
       viewAllBusinessTools: "مشاهده همه ابزارهای کسب و کار",
       viewAllBusinessToolsCta: "باز کردن Business Express",
       viewAllBusinessToolsDesc: "با استفاده از آمار دقیق و راهنماهای سریع، همه ابزارهای کسب و کار را بررسی کنید.",
@@ -7402,23 +11419,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "همه چیزی که قبل از سوار شدن به هواپیما نیاز دارید.",
       visaStageTitle: "1. ویزا و ورود",
       visaSubtitle: "ویزا - راهنمای کامل ورود به چین",
+      visaTitle: "ویزا و ورود",
       visaTitleShort: "راهنمای ویزا"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "با هوش مصنوعی صحبت کنید",
       citiesSubtitle: "از پایتخت باستانی تا شهرهای مدرن، با راهنمای جامع، بهترین شهرهای چین را کشف کنید.",
       citiesTitle: "شهرهای ما را کشف کنید",
+      clearHistory: "Clear history",
       ctaSubtitle: "با توصیه‌های هوش‌مند، برنامه سفر خود را شروع کنید.",
       ctaTitle: "آماده کشف چین هستید؟",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "بیژینگ را کشف کنید",
       exploreCities: "شهرها را کشف کنید",
+      exploreCityButton: "Explore City",
       exploreGuide: "مشاهده راهنمای کامل",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "همه چیزی که برای یک سفر عالی نیاز دارید",
       featuresTitle: "همه چیزی که برای سفر به چین نیاز دارید",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "از هوش مصنوعی برای مشاوره سفر بخواهید",
       heroDesc: "رستوران‌های میشلین و سیاه‌مروارید، جاذبه‌ها، نکات حمل و نقل، اطلاعات تماس اورژانس — هوش مصنوعی و بومیان چین آن‌ها را انتخاب کرده‌اند.",
       heroSubtitle: "راهنمای معتبر شما به بهترین شهرهای چین",
       heroTitle: "راهنمای چین مبتنی بر هوش مصنوعی شما",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "رستوران‌های میشلین و سیاه‌مروارید را در 12 شهر چین کشف کنید.",
       onboarding1Title: "غذای عالی را کشف کنید",
       onboarding2Title: "نکات مبتنی بر هوش مصنوعی",
@@ -7426,14 +11459,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "پایان",
       onboardingNext: "بعدی",
       onboardingSkip: "رد کردن",
+      pageDescription: "با راهنماهای شهری مبتنی بر هوش مصنوعی چین را کشف کنید. بهترین رستوران‌ها (میشلین و مروارید سیاه)، جاذبه‌ها، اطلاعات حمل و نقل و مخاطبین اورژانسی را در 12 شهر بزرگ چین از جمله پکن، شانگهای، گوانگژو، شیان، چنگدو و موارد دیگر بیابید.",
       pageTitle: "ChinaConnect - راهنمای هوش مصنوعی شما برای کشف چین",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "به تازگی مشاهده شده",
       recommendedForYou: "برای شما توصیه شده",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "کمک هوش مصنوعی",
       statsAttractions: "جاذبه‌های برتر",
       statsCities: "شهرهای تحت پوشش",
       statsRestaurants: "رستوران‌های میشلین",
-      viewAllCities: "مشاهده همه شهرها"
+      viewAllCities: "مشاهده همه شهرها",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "بر اساس مقاصد محبوب"
     },
     language: {
       chinese: "چینی",
@@ -7445,6 +11488,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "تغییر به"
     },
+    loginPage: {
+      pageDescription: "وارد حساب ChinaConnect خود شوید",
+      pageTitle: "ورود - ChinaConnect"
+    },
     nav: {
       aiChat: "چین‌گاید ای‌آی",
       attractions: "جاذبه‌ها",
@@ -7454,6 +11501,7 @@ export const translations: Record<Language, Translations> = {
       home: "خانه",
       restaurants: "رستوران‌ها",
       selectLanguage: "انتخاب زبان",
+      signIn: "Sign in",
       tagline: "با ای‌آی به چین سفر کنید"
     },
     notFound: {
@@ -7463,12 +11511,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "شهرها را کشف کنید",
       goHome: "به خانه بروید",
       heading: "۴۰۴",
+      homeButton: "Back to home",
       letsContinue: "به کشف چین ادامه دهیم",
       primary: "صفحه پیدا نشد",
-      title: "صفحه پیدا نشد - چایناکانکت"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "صفحه پیدا نشد - چایناکانکت",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "اورژانس‌های پزشکی، آسیب‌ها",
+      availableOffline: "در دسترس آفلاین",
+      bannerDesc: "اطلاعات تماس اورژانسی و اطلاعات ضروری همچنان در دسترس است",
       bannerTitle: "حالت آفلاین",
+      emergencyNumbers: "شماره‌های اورژانس (چین)",
+      emergencyPhrases: "عبارات اورژانسی سریع",
+      fireDesc: "آتش‌سوزی‌ها، عملیات نجات، مواد خطرناک",
+      lastSynced: "آخرین همگام‌سازی:",
       phrase1En: "کمک!",
       phrase2En: "پلیس را خبر کن!",
       phrase3En: "من به آمبولانس نیاز دارم",
@@ -7476,6 +11542,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "گم شده‌ام",
       phrase6En: "من به کمک نیاز دارم",
       phrase7En: "بیمارستان کجاست؟",
+      phrasesHelp: "عبارات اورژانسی معمول را نشان دهید",
+      phrasesTip: "اگر به کمک نیاز دارید این عبارات را نشان دهید",
+      policeDesc: "جرایم، اورژانس‌ها، ایمنی عمومی",
+      quickActions: "اقدامات سریع",
+      tapToCall: "هر شماره را لمس کنید تا فوراً تماس بگیرید",
       tipsHeading: "نکات سفر در حالت آفلاین",
       tipsList1: "قبل از رفتن به حالت آفلاین، عبارات و آدرس‌های کلیدی را ذخیره کنید.",
       tipsList2: "در اپلیکیشن نقشه‌تان، نقشه‌های آفلاین دانلود کنید.",
@@ -7484,11 +11555,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "اکثر کافه‌ها و مراکز خرید دارای وای‌فای رایگان هستند.",
       tipsList6: "یک دفترچه یادداشت کوچک برای نوشتن آدرس‌ها همراه داشته باشید.",
       title: "شما آفلاین هستید",
+      title2: "ChinaConnect اورژانس SOS - در حالت آفلاین کار می‌کند",
+      trafficDesc: "فقط تصادفات ترافیکی",
       tryAgain: "دوباره امتحان کنید"
     },
     onboarding: {
       done: "اتمام",
       getStarted: "شروع کنید",
+      neverShow: "Don't show this again",
       next: "بعدی",
       skip: "رد کردن",
       step1Desc: "رستوران‌های دارای ستاره میشلین و مروارید سیاه را در ۱۲ شهر چین کشف کنید.",
@@ -7500,6 +11574,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "به چایناکانکت خوش آمدید!"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "تمدید خودکار، هر زمان قابل لغو",
       billingAnnual: "سالانه",
       billingMonthly: "ماهانه",
@@ -7517,6 +11592,7 @@ export const translations: Record<Language, Translations> = {
         name: "Business",
         price: "$29.99"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "پرداخت لغو شد. می‌توانید دوباره زیر تلاش کنید.",
       compareFeatures: {
         advancedTools: "ابزارهای پیشرفته سفر",
@@ -7531,6 +11607,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "ویژگی‌های موجود در هر طرح را به وضوح بررسی کنید.",
       compareTitle: "مقایسه تمام ویژگی‌ها",
+      ctaButton: "Get started",
       ctaPrimary: "امروز رایگان شروع کنید",
       ctaSecondary: "ویژگی‌ها را کشف کنید",
       ctaSubtitle: "با هزاران مسافری که با هوش مصنوعی برای سفر به چین برنامه‌ریزی می‌کنند، همراه شوید.",
@@ -7548,14 +11625,44 @@ export const translations: Record<Language, Translations> = {
         name: "Explorer",
         price: "$4.99"
       },
+      faq: "پرسش و پاسخ متداول",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "چگونه می‌توانم طرح خود را ارتقا یا تنزل دهم؟",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "چگونه می‌توانم اشتراک خود را لغو کنم؟",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "سیاست بازپرداخت شما چیست؟",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "محدودیت ماهانه من چه زمانی بازنشانی می‌شود؟",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "زمانی که به محدودیت درخواست هوش مصنوعی خود می‌رسم چه اتفاقی می‌افتد؟",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "شما چه روش‌های پرداختی را قبول می‌کنید؟",
       faqSubtitle: "همه چیز که باید در مورد طرح‌ها و صورت حساب‌های ما بدانید",
       faqTitle: "سوالات متداول",
+      featureAdvancedTools: "ابزارهای پیشرفته سفر",
+      featureAiRequestsBusiness: "مکالمات نامحدود هوش مصنوعی",
+      featureAiRequestsExplorer: "20 درخواست هوش مصنوعی در ماه",
+      featureAiRequestsFree: "5 درخواست هوش مصنوعی در ماه",
+      featureAiRequestsPro: "100 درخواست هوش مصنوعی در ماه",
+      featureAllTravelerFeatures: "همه ویژگی‌های Traveler",
+      featureApi: "دسترسی API",
+      featureBasicPlanning: "برنامه‌ریزی اولیه سفر",
+      featureBusinessTemplates: "قالب‌های تجاری",
+      featureCancelAnytime: "هر زمان که بخواهید لغو کنید",
+      featureConversationHistory: "تاریخچه مکالمه",
+      featureCustomIntegrations: "ادغام‌های سفارشی",
+      featureDedicated: "پشتیبانی اختصاصی",
+      featureExportPdf: "صادرات PDF",
+      featureMultiCity: "برنامه‌ریزی چند شهر",
+      featurePdfExport: "صادرات PDF",
+      featurePremiumCustomization: "سفارشی‌سازی ویژه",
+      featurePrioritySupport: "پشتیبانی اولویت‌دار",
+      featureSaveItineraries: "ذخیره‌سازی برنامه‌های سفر",
+      featureSecurePayments: "پرداخت‌های امن",
+      featureTeamCollab: "همکاری تیمی",
+      featureTeamManagement: "مدیریت تیم",
+      featureViewItineraries: "مشاهده برنامه‌های سفر",
       free: {
         description: "با برنامه‌ریزی پایه شروع کنید",
         feature1: "۵ درخواست هوش مصنوعی در ماه",
@@ -7566,24 +11673,40 @@ export const translations: Record<Language, Translations> = {
         name: "Free"
       },
       freeForever: "رایگان برای همیشه",
+      heroBadge: "Pricing",
       heroSubtitle: "از مرور رایگان تا برنامه‌ریزی حرفه‌ای، طرحی که با سرعت سفر شما هم‌خوانی دارد.",
       heroTitle: "قیمت‌گذاری ساده و شفاف",
+      moneyBack: "30-day refund",
+      planBusiness: "تجاری",
+      planExplorer: "اکتشافگر",
+      planFree: "رایگان",
+      planPro: "حرفه‌ای",
+      planTraveler: "مسافر",
       popularBadge: "محبوب‌ترین",
       priceFree: "$0",
+      pro: {
+        description: "برای مسافران فعال"
+      },
       saveBadge: "20٪ صرفه‌جویی",
       savingsHint: "با پرداخت سالانه 20٪ صرفه‌جویی کنید",
+      securePayment: "Secure payment",
       subscribeNow: "همین حالا اشتراک بگیرید",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "USA",
       testimonial1Role: "طرح Explorer",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "لی وی تی.",
       testimonial2Country: "انگلستان",
       testimonial2Role: "طرح تجاری",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "ماریا آر.",
       testimonial3Country: "آلمان",
       testimonial3Role: "طرح مسافری",
+      testimonials: "آنچه مسافران می گویند",
       testimonialsSubtitle: "شنیدن نظرات کاربران درباره تجربه‌شان با ChinaConnect",
       testimonialsTitle: "دوستدار مسافران سراسر جهان",
+      title: "قیمت گذاری",
       traveler: {
         annualNote: "هزینه سالانه 95.99 دلار (24 دلار صرفه‌جویی)",
         description: "برای مسافران مکرر به چین",
@@ -7600,11 +11723,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "بازپرداخت 30 روزه",
         securePayment: "پرداخت امن"
       },
+      trustCancelAnytime: "لغو در هر زمان",
+      trustInstantAccess: "دسترسی آنی",
+      trustSecurePayments: "پرداخت‌های امن",
       trustedBy: "اعتماد بیش از 10,000 مسافر",
       unlimited: "نامحدود"
     },
     profilePage: {
-      title: "پروفایل من - ChinaConnect"
+      displayName: "نام نمایشی",
+      heading: "Profile",
+      pageTitle2: "پروفایل من",
+      save: "ذخیره تغییرات",
+      saved: "ذخیره شد!",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "پروفایل من - ChinaConnect",
+      uploadAvatar: "آپلود آواتار"
     },
     recents: {
       clearAll: "پاک کردن همه",
@@ -7641,6 +11774,22 @@ export const translations: Record<Language, Translations> = {
       username: "نام کاربری",
       usernamePlaceholder: "نام نمایشی شما"
     },
+    registerPage: {
+      pageDescription: "اکانت ChinaConnect خود را ایجاد کنید",
+      pageTitle: "ثبت نام - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "آدرس",
       avgPrice: "میانگین قیمت",
@@ -7666,12 +11815,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "با دوستان به اشتراک بگذارید"
     },
     userPage: {
+      heading: "پروفایل",
+      pageTitle2: "پروفایل کاربر",
       title: "پروفایل کاربر - ChinaConnect"
     }
   },
   "zh-CN": {
     accountPage: {
       active: "已激活",
+      activeLabel: "活跃",
       aiRequestsThisMonth: "本月 AI 请求",
       alertSignOutError: "无法打开订阅管理，请联系客服。",
       currentPlan: "当前套餐",
@@ -7683,6 +11835,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "暂无最近订单",
       emptySavedRoutes: "暂无已保存的路线",
       emptySavedRoutesHint: "暂无已保存的路线。开始与 AI 对话来创建路线！",
+      explorerBadge: "探索者",
       loading: "正在加载账户…",
       manageSubscription: "管理订阅",
       membership: "会员",
@@ -7692,6 +11845,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "状态",
       orderHeaderType: "类型",
       pageTitle: "我的账户 - ChinaConnect",
+      pageTitleSuffix: "我的账户 - ChinaConnect",
       pointsUnit: "积分",
       renewsOn: "续费日期",
       savedLocally: "仅本地保存",
@@ -7702,27 +11856,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "需要登录",
       signInRequiredDesc: "请登录后查看你的账户。",
       signOut: "退出登录",
+      statAiUsage: "今日AI使用量",
+      statFavorites: "收藏",
       statSavedRoutes: "已保存路线",
+      subtitle: "管理您的订阅、收藏和保存的路线。",
       syncedToCloud: "已同步到云端",
       tabBilling: "账单",
+      tabFavorites: "收藏",
+      tabOrders: "订单",
       tabOverview: "概览",
       tabPlans: "套餐",
+      tabRoutes: "路线",
       tabUsage: "用量",
+      title: "我的账户",
       untitledRoute: "未命名路线",
       upgrade: "升级",
       usageDailyAi: "每日 AI 用量",
       usageFavorites: "收藏用量",
       usageSavedRoutes: "已保存路线用量",
+      userBadge: "用户",
       walletBalance: "钱包余额"
+    },
+    ai: {
+      send: "发送",
+      thinking: "思考中..."
     },
     aiPage: {
       authFailed: "认证失败",
       authGateSignupTitle: "创建你的账户",
       authGateTitle: "登录后开始对话",
+      chatInputPlaceholder: "询问餐厅、交通、景点等...",
+      conversationHistory: "对话历史",
       conversationsTitle: "对话",
       deleteConfirm: "删除此对话？",
       deleteTitle: "删除",
       emailPlaceholder: "you@example.com",
+      exportPdf: "导出PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "已经有账户？",
@@ -7731,13 +11900,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "隐藏侧边栏",
       messageLabel: "条消息",
       messagesLabel: "条消息",
+      newChat: "新建对话",
       newChatButton: "+ 新对话",
       noAccountPrompt: "还没有账户？",
       noConversationsYet: "暂无对话",
       orContinueWith: "或",
+      pageDescription: "询问任何关于中国旅行的问题。",
+      pageTitle: "AI旅行助手 - ChinaConnect",
       passwordPlaceholder: "密码（至少 6 个字符）",
       promptsSubtitle: "选一个提示或在下方输入你自己的",
       promptsTitle: "试试这样问",
+      saveRoute: "保存路线",
+      sendButton: "发送",
       showSidebarTitle: "显示对话",
       signInButton: "登录",
       signUpButton: "创建账户",
@@ -7745,27 +11919,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "AI 助你规划中国之旅",
       switchToSignIn: "登录",
       switchToSignUp: "创建一个",
-      title: "AI 助手"
+      thinking: "思考中...",
+      title: "AI 助手",
+      upgradePrompt: "注册以解锁更多AI请求。",
+      usageToday: "今日使用量"
     },
     attractions: {
       allCities: "所有有景区的城市",
+      appSubtitle: "实用的出行和景点查找应用",
+      appTitle: "规划您的旅行",
+      attractionCount: "{count}个景点",
       browseCategory: "按类别浏览",
+      citiesCount: "{count}个城市",
+      diversityTypes: "历史、文化、自然、现代",
+      featured: "精选城市",
       featuredCities: "热门城市",
+      heroEyebrow: "按目的地浏览",
+      openCity: "打开城市",
+      pageDescription: "中国必游景点 - 从古代地标到自然奇观",
+      pageTitle: "中国景点 - ChinaConnect",
       subtitle: "必访的景区瑰宝 — 从古老地标到自然奇观",
-      title: "中国景区"
+      title: "中国景区",
+      viewAll: "查看所有景点"
     },
     auth: {
+      continueWithGithub: "使用GitHub继续",
+      continueWithGoogle: "使用Google继续",
+      email: "电子邮件",
       myAccount: "我的账户",
+      needHelp: "需要帮助登录？",
+      orContinueWithEmail: "或使用电子邮件继续",
+      password: "密码",
+      profile: "个人资料",
       profileCenter: "个人中心",
       signIn: "登录",
-      signOut: "退出登录"
+      signInButton: "登录",
+      signOut: "退出登录",
+      signOutConfirm: "确定退出ChinaConnect？",
+      subtitle: "保存收藏、规划旅行、与AI聊天。",
+      title: "登录ChinaConnect"
     },
     authPage: {
       authTitle: "登录/注册 - ChinaConnect",
       callbackTitle: "正在登录…",
+      continueWithEmail: "或继续使用邮箱",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "出错了，请重试。",
       errorTitle: "验证失败",
+      forgotPassword: "忘记密码？",
       loginTitle: "登录 - ChinaConnect",
-      signingYouIn: "正在登录…"
+      needAccount: "没有账户？",
+      passwordPlaceholder: "您的密码",
+      signInButton: "登录",
+      signInError: "登录失败。请再试一次。",
+      signUpButton: "注册",
+      signUpError: "注册失败。请再试一次。",
+      signingYouIn: "正在登录…",
+      successDesc: "正在为您跳转...",
+      successTitle: "欢迎回来！"
     },
     businessGuidePage: {
       backToGuide: "返回指南",
@@ -7790,77 +12001,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← 返回套餐",
+      continueButton: "继续前往您的账户",
       description: "你的订阅已成功激活",
       errorDesc: "无法处理你的支付。请重试或联系客服。",
       errorTitle: "出错了",
+      processing: "正在处理您的付款...",
       processingDesc: "请稍候，我们正在确认你的订阅。",
       startPlanning: "开始规划",
       successAccess: "你现在可以使用新套餐的所有功能。",
       successDesc: "你的订阅已激活。",
       successTitle: "支付成功！",
+      thankYou: "感谢您选择ChinaConnect。",
       title: "支付成功 - ChinaConnect",
       viewAccount: "查看账户"
     },
     cities: {
       attractions: "景区",
+      citiesCount: "城市",
+      citiesInChina: "中国城市",
       culturalTips: "文化贴士",
       emergency: "紧急联系",
+      exploreAll: "探索全部",
       exploreGuide: "探索指南",
+      filterATier: "A档",
+      filterAll: "全部",
+      filterDTier: "D档",
+      filterSTier: "S档",
+      headerSubtitle: "从古都到现代大都市 - 选择您的目的地。",
+      headerTitle: "探索中国城市",
       hotels: "酒店",
+      noResults: "没有城市符合您的筛选条件。",
       openingHours: "开放时间",
+      pageDescription: "探索ChinaConnect涵盖的所有中国城市 - 从古都到现代大都市。S级优质城市，A级半优质城市和D级按需城市。",
+      pageTitle: "探索所有城市 - ChinaConnect",
       payment: "支付",
+      population: "人口",
       recommendedTime: "推荐访问时间",
+      region: "地区",
       restaurants: "餐厅",
+      searchPlaceholder: "搜索城市...",
       subtitle: "12 座中国主要城市的深度指南",
       ticketPrice: "门票",
       title: "中国城市",
-      transport: "交通"
+      transport: "交通",
+      viewCity: "查看城市"
+    },
+    city: {
+      beijing: {
+        name: "北京"
+      },
+      chengdu: {
+        name: "成都"
+      },
+      chongqing: {
+        name: "重庆"
+      },
+      guangzhou: {
+        name: "广州"
+      },
+      guilin: {
+        name: "桂林"
+      },
+      hangzhou: {
+        name: "杭州"
+      },
+      lijiang: {
+        name: "丽江"
+      },
+      qingdao: {
+        name: "青岛"
+      },
+      shanghai: {
+        name: "上海"
+      },
+      shenzhen: {
+        name: "深圳"
+      },
+      suzhou: {
+        name: "苏州"
+      },
+      xian: {
+        name: "西安"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "全部",
+      categoryLabel: "类别",
+      disclaimer: "开放时间、门票价格和电话号码可能会更改。我们建议通过景点的官方网站或提前致电进行确认。",
+      openOnMap: "在地图上打开",
+      openingHours: "开放时间",
+      subtitle: "必看的地标、博物馆和自然奇观。",
+      ticketPrice: "门票价格",
+      tipsHeader: "提示",
+      title: "{city}的景点",
+      viewAll: "查看{city}的所有景点",
+      viewDetails: "查看详情",
+      viewMore: "查看更多景点"
+    },
+    cityFood: {
+      avgPrice: "平均价格",
+      cuisine: "美食",
+      disclaimer: "电话号码和地址可能会更改。我们建议通过餐厅的官方渠道或提前致电进行确认。",
+      filterAll: "全部",
+      filterBlackPearl: "黑珍珠",
+      filterBudget: "预算",
+      filterLocal: "本地",
+      filterLocalFavorites: "本地特色",
+      filterMichelin: "米其林",
+      filteringLabel: "筛选：",
+      googleMaps: "谷歌地图",
+      signatureDishes: "招牌菜",
+      subtitle: "米其林星级、黑珍珠推荐和本地宝藏。",
+      title: "{city}的餐厅",
+      viewAll: "查看{city}的所有餐厅",
+      viewDetails: "查看详情"
+    },
+    cityHotels: {
+      bookCta: "查看酒店详情",
+      bookNow: "预订酒店",
+      filterAll: "所有类别",
+      pricePerNight: "每晚",
+      stars: "星级",
+      subtitle: "从精品住宿到国际连锁酒店 - 为您的旅行找到合适的下榻之地。",
+      title: "{city}的酒店"
     },
     cityPage: {
+      appCount: "{count}个必备应用",
+      appsSubtitle: "抵达前下载这些应用。",
+      area: "区域",
+      attractionCount: "{count}个景点",
       attractionsExploreCount: "{city} — {count} 个值得探索的地方",
       attractionsHeading: "热门景区",
       attractionsSubtitle: "这座城市最值得一看的地方",
+      bestTime: "最佳旅行时间",
       bestTimeHeading: "最佳到访时间",
+      bookHotelCta: "在{city}查找酒店",
+      bookTourCta: "在{city}预订旅游",
+      citySubtitle: "{city}，中国的完整旅行指南。找到最好的餐厅、景点、酒店和旅行提示。",
+      connectivitySubtitle: "保持数据连接。",
+      contactCount: "{count}个联系方式",
+      cultureSubtitle: "当地风俗和礼仪。",
+      cultureSubtitleDynamic: "{city}的基本文化知识",
+      currency: "货币",
       dataSourcesDesc: "餐厅数据来源于公开评论与本地推荐。",
       dataSourcesHeading: "数据来源",
+      downloadBefore: "抵达中国前下载这些应用。",
+      elevation: "海拔",
+      emergencySubtitle: "{city}的重要电话号码和大使馆信息。",
+      emergencySubtitleDynamic: "{city}的重要电话号码",
+      esimDescription: "eSIM是在中国获取数据的最简单方式 - 无需实体SIM卡，到达后即可立即激活。",
+      esimRecommended: "eSIM（推荐）",
+      essentialAppsFor: "{city}的必备应用",
+      essentialCultural: "{city}必备的文化知识",
+      exploreOnMap: "在地图上探索",
       foodHeading: "美食精选",
       foodHighlightsHeading: "美食亮点",
       foodHighlightsSubtitle: "必尝的招牌菜与餐厅",
       foodSubtitle: "米其林、黑珍珠与本地最爱",
+      gettingAround: "交通出行",
       gettingTo: "如何到达",
+      heroEyebrow: "旅行指南",
       home: "返回主页",
+      hotelCount: "{count}家酒店",
       hotelsCountUnit: "家酒店",
       hotelsHeading: "住宿推荐",
+      hotelsSubtitle: "从精品酒店到国际连锁酒店。",
+      importantNumbers: "{city}的重要电话号码",
+      intro: "欢迎来到{city}，中国最迷人的目的地之一。",
+      language: "语言",
+      moreCities: "更多城市",
+      nextCity: "下一个城市",
       noHotels: "暂无酒店数据",
       noHotelsDesc: "该城市暂无精选酒店，试试其他分类。",
       noResults: "未找到结果",
       noResultsDesc: "请尝试其他搜索条件。",
+      openFullMap: "打开完整地图",
+      overviewSubtitle: "出发前需要了解的一切。",
+      pageTitleSuffix: "旅行指南 - ChinaConnect",
+      paymentSubtitle: "现金、信用卡、移动钱包和ATM取款。",
       phoneIcon: "电话",
+      population: "人口",
+      previousCity: "上一个城市",
+      proTipBooking: "专业提示：提前2-3周预订酒店以获得最佳价格。",
+      proTipEsim1: "如果您的手机支持eSIM（iPhone XS及更新机型和大多数安卓旗舰机型），eSIM效果最佳。",
+      proTipEsim2: "抵达中国前下载eSIM应用。",
+      proTipEsim3: "Airalo和Holafly提供中国专用套餐，包含无限数据选项。",
+      proTips: "专业提示",
+      quickFacts: "快速事实",
       quickFactsHeading: "城市速览",
+      region: "地区",
+      restaurantCount: "{count}家餐厅",
+      sectionApps: "必备应用",
+      sectionAttractions: "热门景点",
+      sectionConnectivity: "SIM卡和eSIM",
+      sectionCulture: "文化提示",
+      sectionEmergency: "紧急联系方式",
+      sectionFood: "美食推荐",
+      sectionHotels: "住宿推荐",
+      sectionOverview: "概述",
+      sectionPayment: "支付与金钱",
+      sectionTransport: "交通出行",
+      sectionVisa: "签证与入境",
+      sosTip: "抵达前保存这些号码 - 偏远地区的手机服务可能受限。",
+      switchToEnglishMode: "如果在应用中看到中文界面，请在设置中切换到英文模式。支付宝和微信支付都支持外币信用卡。",
+      tabApps: "应用程序",
+      tabAttractions: "景点",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "文化",
+      tabEmergency: "紧急情况",
+      tabFood: "美食",
+      tabHotels: "酒店",
+      tabOverview: "概述",
+      tabPayment: "支付",
+      tabTransport: "交通",
+      timezone: "时区",
+      tipCount: "{count}条提示",
       topHighlightsHeading: "城市亮点",
       transportSubtitle: "抵达与城市内交通",
-      viewAllHotels: "查看全部酒店"
+      travelTo: "前往{city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "查看全部酒店",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "全部",
       back: "返回",
+      bookNow: "Book now",
       cancel: "取消",
       close: "关闭",
       confirm: "确认",
+      continue: "继续",
+      discover: "Discover",
+      done: "完成",
       error: "错误",
+      explore: "Explore",
       filter: "筛选",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "加载中…",
       next: "下一步",
       open: "打开",
       previous: "上一步",
+      readMore: "Read more",
+      required: "必填",
       retry: "重试",
+      save: "保存",
       search: "搜索…",
       seeMore: "查看更多",
+      signUpFree: "Sign up free",
       sort: "排序",
-      viewAll: "查看全部"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "查看全部",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "急救",
+      callButton: "拨打",
       communication1: "学几句基本中文短语",
       communication2: "下载翻译 App",
       communication3: "保存大使馆电话",
@@ -7870,9 +12296,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "全中国通用的核心紧急号码。",
       embassyDesc: "主要国家驻华大使馆联系信息。",
       embassyTitle: "大使馆",
+      findEmbassy: "查找您的使馆",
       fire: "火警",
       gps: "GPS 坐标",
       gpsDesc: "保存你的实时位置以便紧急联络。",
+      gpsLocator: "GPS定位",
       heroHeading: "紧急联系与帮助",
       hospitalCommon: "综合医院",
       hospitalInternational: "国际诊所",
@@ -7912,6 +12340,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "急救短语",
       oneTapCalls: "一键拨打",
       oneTapDesc: "点击即可拨打紧急号码。",
+      pageDescription: "中国旅行者的重要电话号码",
       pageTitle: "紧急联系与短语 - ChinaConnect",
       pharmaciesTitle: "药店",
       pharmacyChains: "连锁药店",
@@ -7929,6 +12358,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "购买旅行保险",
       preparedness4: "告知家人行程",
       preparednessTitle: "事前准备",
+      quickDial: "快速拨号",
       safetyTipsTitle: "安全贴士",
       sosButtonDesc: "按住 3 秒自动发送位置给紧急联系人。",
       sosButtonTitle: "一键 SOS",
@@ -7938,7 +12368,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "医院导航",
       subtitle: "中国紧急号码、医院与大使馆 — 保存以备不时之需。",
       title: "紧急联系",
-      traffic: "交通事故"
+      touristHotline: "旅游热线",
+      traffic: "交通事故",
+      universalSection: "常用号码",
+      viewAllContacts: "查看所有联系人"
     },
     empty: {
       addSome: "开始探索并收藏你喜欢的吧！",
@@ -7957,7 +12390,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "加载内容失败",
       network: "网络错误",
       networkError: "网络错误，请检查连接",
+      notFound: "Resource not found.",
       somethingWrong: "出错了",
+      timeout: "Request timed out.",
       unauthorized: "未授权"
     },
     features: {
@@ -7982,22 +12417,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "高德导航",
       back: "返回",
       backToCity: "返回 {city}",
+      bottomCtaDesc: "浏览我们的城市列表，探索更多中国目的地。",
       callPhone: "拨打电话",
+      citiesCount: "Cities",
       citiesUnit: "座城市",
       cityEmpty: "暂无该城市美食",
       cityEmptyDesc: "即将上线更多餐厅。",
       cityEmptySubtitle: "尚未添加该城市餐厅",
       dataSourcesDesc: "餐厅数据来源于公开评论与本地推荐。",
       dataSourcesHeading: "数据来源",
+      empty: "No cities match this filter.",
       emptyCta: "清除筛选条件",
       emptyDesc: "该筛选条件下未找到餐厅。",
       emptyTitle: "暂无餐厅",
+      essentialFoodApps: "必备美食应用",
+      essentialFoodAppsDesc: "下载这些应用以订购外卖并发现提供英文菜单的当地餐厅。",
       exploreFood: "探索美食",
+      filterAll: "All",
       filterBlackPearl: "黑珍珠",
       filterBudget: "平价",
       filterCasual: "日常",
       filterLocal: "本地精选",
       filterMichelin: "米其林",
+      filterStreetFood: "Street Food",
       filteringLabel: "筛选",
       heroCityFood: "{city} 的美食",
       indexTitle: "🍜 中国美食地图",
@@ -8005,25 +12447,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "导航",
       noCityTitle: "暂无该城市美食",
       otherRestaurants: "其他餐厅",
+      pageDescription: "发现中国人最爱的美食、精选城市和精选餐厅",
+      pageTitle: "中国美食地图 - ChinaConnect",
       perPerson: "/人",
+      proTipsFoodApps: "美食应用专业提示",
       restaurantsUnit: "家餐厅",
       showingCount: "显示",
-      subtitle: "发现中国最受喜爱的美食，由本地人按城市精选。"
+      subtitle: "发现中国最受喜爱的美食，由本地人按城市精选。",
+      tipDianping: "大众点评非常适合寻找有英文点评的当地美食。",
+      tipEleme: "饿了么提供最广泛的配送范围，但可能会默认使用中文。",
+      tipLinkCard: "在订购前将您的外国卡绑定到支付宝/微信支付。",
+      tipMeituan: "美团为许多餐厅提供英文菜单翻译。",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "住宿",
       aiAssistant: "AI 助手",
+      allRightsReserved: "All rights reserved.",
       attractions: "景区",
       cities: "城市",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "文化贴士",
       description: "您探索中国的可靠向导。AI 驱动的餐厅推荐、城市指南与旅行贴士。",
+      diningGuide: "餐饮指南",
       emergency: "紧急联系",
       guides: "旅行指南",
+      guidesLabel: "Travel Guides",
       payment: "支付",
+      privacy: "Privacy",
       resources: "资源",
+      resourcesLabel: "Resources",
       restaurants: "餐厅",
+      terms: "Terms",
       transport: "交通",
-      viewAllCities: "查看全部城市"
+      viewAllCities: "查看全部城市",
+      visaGuide: "签证指南"
+    },
+    guide: {
+      attractionsPageTitle: "中国热门景点",
+      attractionsTitle: "中国热门景点",
+      beijingGuide: "北京",
+      foodGuide: "美食指南",
+      scamPrevention: "防骗指南"
     },
     guidePage: {
       accommodationStageDescription: "从豪华酒店到经济旅馆，选择适合你的住宿。",
@@ -8031,7 +12516,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "酒店、民宿与短期租赁",
       accommodationTitleShort: "住宿",
       attractionsSubtitle: "必访景点与隐藏瑰宝",
+      attractionsTitle: "热门景点",
       backHome: "返回主页",
+      beginnerDesc: "自信地规划您的首次旅行。",
+      beginnerTraveler: "首次访客",
+      businessDesc: "会议、支付和礼仪的工具。",
+      businessTitle: "商务旅行",
+      businessTraveler: "商务旅行者",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "北京",
       cityChengdu: "成都",
       cityShanghai: "上海",
@@ -8042,6 +12534,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "通讯",
       culturalWarningsSubtitle: "文化禁忌与重要贴士",
       culturalWarningsTitleShort: "文化禁忌",
+      cultureTitle: "文化提示",
       departureStageDescription: "退税、机场流程与告别贴士。",
       departureStageTitle: "离境",
       departureSubtitle: "退税、机场与最后贴士",
@@ -8059,6 +12552,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "紧急号码与医院",
       emergencyTitleShort: "紧急",
       emergencyTourism: "旅游热线",
+      foodTitle: "美食指南",
       home: "返回主页",
       indexBusinessHeading: "🚀 商务旅行工具",
       indexBusinessSubtitle: "从邀请函到商务礼仪 — 找到你在中国做生意所需的一切。",
@@ -8066,23 +12560,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "中国完整旅行指南 — 从行前准备到离境。",
       indexHeroTitle: "🇨🇳 中国完整旅行指南",
       indexStagesTitle: "12 步旅程",
+      longStay: "长期停留",
+      longStayDesc: "通过签证、银行和住宿指南安顿下来。",
+      pageDescription: "规划、预订和享受您的中国之旅所需的一切",
+      pageTitle: "中国旅行指南 - ChinaConnect",
       paymentStageDescription: "支付宝、微信支付、银联卡与现金 — 中国支付全解。",
       paymentStageTitle: "支付",
       paymentSubtitle: "移动支付、银行卡与现金",
+      paymentTitle: "支付与金钱",
       paymentTitleShort: "支付",
       popularByCity: "按城市浏览",
       quickBeijingDesc: "用我们详尽的北京城市指南探索中国首都。",
       quickFoodDesc: "米其林星级、黑珍珠餐厅与本地最爱，按城市精心整理。",
       quickScamDesc: "保护自己免受中国常见的骗局与游客陷阱。",
+      safetyTitle: "安全",
       scamPreventionSubtitle: "保护自己免受常见骗局",
       scamPreventionTitleShort: "防骗",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "价格透明与议价贴士",
       transparencyTitleShort: "透明",
       transportStageDescription: "地铁、高铁、出租车与共享单车 — 让你在中国畅行无阻。",
       transportStageTitle: "交通",
       transportSubtitle: "城市内与城际交通",
+      transportTitle: "出行方式",
       transportTitleShort: "交通",
       travelGuide: "中国旅行指南",
+      travelerType: "旅行者类型",
+      viewAll: "View all guides",
       viewAllBusinessTools: "查看全部商务工具",
       viewAllBusinessToolsCta: "前往商务专区 →",
       viewAllBusinessToolsDesc: "查看全部商务工具的详细统计与快速指南。",
@@ -8091,23 +12596,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "签证类型、申请流程与最新要求。",
       visaStageTitle: "签证",
       visaSubtitle: "签证类型、申请流程与最新要求",
+      visaTitle: "签证与入境",
       visaTitleShort: "签证"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "与 AI 对话",
       citiesSubtitle: "从古都到现代都市，通过我们详尽的指南发现中国最美的城市。",
       citiesTitle: "探索我们的城市",
+      clearHistory: "Clear history",
       ctaSubtitle: "用 AI 推荐开始规划你的旅程。",
       ctaTitle: "准备好探索中国了吗?",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "北京探索",
       exploreCities: "探索城市",
+      exploreCityButton: "Explore City",
       exploreGuide: "查看完整指南",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "让你拥有精彩旅程的全部所需",
       featuresTitle: "中国之旅，你需要的一切",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "向 AI 询问行程建议",
       heroDesc: "米其林·黑珍珠餐厅、景区、交通贴士、紧急联系信息 — 全部由 AI 与本地人精心整理。",
       heroSubtitle: "可信赖的中国最佳城市向导",
       heroTitle: "你的 AI 驱动中国指南",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "在 12 座中国城市找到米其林星级与黑珍珠餐厅。",
       onboarding1Title: "发现精彩美食",
       onboarding2Title: "AI 智能贴士",
@@ -8115,14 +12636,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "完成",
       onboardingNext: "下一步",
       onboardingSkip: "跳过",
+      pageDescription: "通过AI驱动的城市指南探索中国。查找包括北京、上海、广州、西安、成都等12个主要城市的最佳餐厅（米其林&黑珍珠）、景点、交通信息和紧急联系方式。",
       pageTitle: "ChinaConnect - 你的 AI 中国探索指南",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "最近浏览",
       recommendedForYou: "为你推荐",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "AI 协助",
       statsAttractions: "热门景区",
       statsCities: "覆盖城市",
       statsRestaurants: "米其林餐厅",
-      viewAllCities: "查看全部城市"
+      viewAllCities: "查看全部城市",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "基于热门目的地"
     },
     language: {
       chinese: "中文",
@@ -8134,6 +12665,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "切换到"
     },
+    loginPage: {
+      pageDescription: "登录到 ChinaConnect",
+      pageTitle: "登录 - ChinaConnect"
+    },
     nav: {
       aiChat: "AI 助手",
       attractions: "景区",
@@ -8143,6 +12678,7 @@ export const translations: Record<Language, Translations> = {
       home: "首页",
       restaurants: "美食",
       selectLanguage: "选择语言",
+      signIn: "Sign in",
       tagline: "AI 助你探索中国"
     },
     notFound: {
@@ -8152,12 +12688,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "探索城市",
       goHome: "返回主页",
       heading: "页面未找到",
+      homeButton: "Back to home",
       letsContinue: "让我们继续探索中国",
       primary: "返回首页",
-      title: "页面未找到 - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "页面未找到 - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "医疗紧急情况，受伤",
+      availableOffline: "离线可用",
+      bannerDesc: "紧急联系方式和基本信息仍然可用",
       bannerTitle: "你当前离线",
+      emergencyNumbers: "紧急电话号码（中国）",
+      emergencyPhrases: "快速紧急用语",
+      fireDesc: "火灾，救援，危险物质",
+      lastSynced: "上次同步：",
       phrase1En: "你好",
       phrase2En: "谢谢",
       phrase3En: "对不起",
@@ -8165,6 +12719,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "救命",
       phrase6En: "我需要帮助",
       phrase7En: "医院在哪里？",
+      phrasesHelp: "显示常用紧急用语",
+      phrasesTip: "如果您需要帮助，请显示这些用语",
+      policeDesc: "犯罪，紧急情况，公共安全",
+      quickActions: "快速操作",
+      tapToCall: "点击任意号码立即拨打",
       tipsHeading: "离线提示",
       tipsList1: "已保存的页面仍可访问",
       tipsList2: "网络恢复后内容会自动更新",
@@ -8173,11 +12732,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "AI 助手需要联网",
       tipsList6: "餐厅详情已离线可用",
       title: "当前离线",
+      title2: "ChinaConnect 紧急SOS - 离线可用",
+      trafficDesc: "仅限交通事故",
       tryAgain: "重试"
     },
     onboarding: {
       done: "完成",
       getStarted: "开始使用",
+      neverShow: "Don't show this again",
       next: "下一步",
       skip: "跳过",
       step1Desc: "在 12 座中国城市找到米其林星级与黑珍珠餐厅。",
@@ -8189,6 +12751,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "欢迎使用 ChinaConnect！"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "自动续费，可随时取消",
       billingAnnual: "年付",
       billingMonthly: "月付",
@@ -8206,6 +12769,7 @@ export const translations: Record<Language, Translations> = {
         name: "商务版",
         price: "¥199"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "你的订阅已取消",
       compareFeatures: {
         advancedTools: "高级旅行工具",
@@ -8220,6 +12784,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "清楚了解每个套餐包含的内容。",
       compareTitle: "功能对比",
+      ctaButton: "Get started",
       ctaPrimary: "免费开始",
       ctaSecondary: "查看套餐",
       ctaSubtitle: "加入数千名正在用 AI 规划中国之旅的旅行者。",
@@ -8237,14 +12802,44 @@ export const translations: Record<Language, Translations> = {
         name: "探索版",
         price: "¥29"
       },
+      faq: "常见问题",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "可以随时取消订阅吗？",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "可以更换套餐吗？",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "免费版有什么限制？",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "支持哪些支付方式？",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "数据安全吗？",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "有学生优惠吗？",
       faqSubtitle: "还有疑问？查看我们的常见问题。",
       faqTitle: "常见问题",
+      featureAdvancedTools: "高级旅行工具",
+      featureAiRequestsBusiness: "无限次AI对话",
+      featureAiRequestsExplorer: "每月20次AI请求",
+      featureAiRequestsFree: "每月5次AI请求",
+      featureAiRequestsPro: "每月100次AI请求",
+      featureAllTravelerFeatures: "所有旅行者功能",
+      featureApi: "API访问",
+      featureBasicPlanning: "基础旅行规划",
+      featureBusinessTemplates: "商业模板",
+      featureCancelAnytime: "随时取消",
+      featureConversationHistory: "对话历史",
+      featureCustomIntegrations: "自定义集成",
+      featureDedicated: "专属支持",
+      featureExportPdf: "导出PDF",
+      featureMultiCity: "多城市行程",
+      featurePdfExport: "PDF导出",
+      featurePremiumCustomization: "高级定制",
+      featurePrioritySupport: "优先支持",
+      featureSaveItineraries: "保存行程",
+      featureSecurePayments: "安全支付",
+      featureTeamCollab: "团队协作",
+      featureTeamManagement: "团队管理",
+      featureViewItineraries: "查看行程",
       free: {
         description: "免费探索中国所有城市与基础 AI 功能。",
         feature1: "每月 5 次 AI 请求",
@@ -8255,24 +12850,40 @@ export const translations: Record<Language, Translations> = {
         name: "免费版"
       },
       freeForever: "永久免费",
+      heroBadge: "Pricing",
       heroSubtitle: "从免费浏览到专业规划，选择适合你旅行节奏的方案。",
       heroTitle: "选择你的中国探索方案",
+      moneyBack: "30-day refund",
+      planBusiness: "商务版",
+      planExplorer: "探索版",
+      planFree: "免费版",
+      planPro: "专业版",
+      planTraveler: "旅行者版",
       popularBadge: "最受欢迎",
       priceFree: "¥0",
+      pro: {
+        description: "为活跃旅行者打造"
+      },
       saveBadge: "省 20%",
       savingsHint: "年付可节省 20%",
+      securePayment: "Secure payment",
       subscribeNow: "立即订阅",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "美国",
       testimonial1Role: "探索版",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "李伟 T.",
       testimonial2Country: "英国",
       testimonial2Role: "商务版",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "德国",
       testimonial3Role: "旅行者版",
+      testimonials: "旅行者怎么说",
       testimonialsSubtitle: "数千名旅行者已发现 ChinaConnect 的价值。",
       testimonialsTitle: "旅行者怎么说",
+      title: "定价",
       traveler: {
         annualNote: "按年付费 ¥659（节省 ¥169）",
         description: "适合活跃旅行者：无限 AI、路线规划与 PDF 导出。",
@@ -8289,11 +12900,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "30 天退款",
         securePayment: "安全支付"
       },
+      trustCancelAnytime: "随时取消",
+      trustInstantAccess: "即时访问",
+      trustSecurePayments: "安全支付",
       trustedBy: "全球旅行者信赖",
       unlimited: "无限"
     },
     profilePage: {
-      title: "我的资料 - ChinaConnect"
+      displayName: "显示名称",
+      heading: "Profile",
+      pageTitle2: "我的个人资料",
+      save: "保存更改",
+      saved: "已保存！",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "我的资料 - ChinaConnect",
+      uploadAvatar: "上传头像"
     },
     recents: {
       clearAll: "清空",
@@ -8330,6 +12951,22 @@ export const translations: Record<Language, Translations> = {
       username: "用户名",
       usernamePlaceholder: "你的显示名"
     },
+    registerPage: {
+      pageDescription: "创建您的 ChinaConnect 账户",
+      pageTitle: "注册 - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "地址",
       avgPrice: "人均价格",
@@ -8355,12 +12992,15 @@ export const translations: Record<Language, Translations> = {
       shareTip: "分享给朋友"
     },
     userPage: {
+      heading: "个人资料",
+      pageTitle2: "用户个人资料",
       title: "用户资料 - ChinaConnect"
     }
   },
   "zh-TW": {
     accountPage: {
       active: "已啟用",
+      activeLabel: "活躍中",
       aiRequestsThisMonth: "本月 AI 請求",
       alertSignOutError: "無法開啟訂閱管理，請聯絡客服。",
       currentPlan: "目前方案",
@@ -8372,6 +13012,7 @@ export const translations: Record<Language, Translations> = {
       emptyOrders: "暫無最近訂單",
       emptySavedRoutes: "暫無已儲存的線路",
       emptySavedRoutesHint: "暫無已儲存的線路。開始與 AI 對話來建立路線！",
+      explorerBadge: "探索者",
       loading: "正在載入帳戶…",
       manageSubscription: "管理訂閱",
       membership: "會員",
@@ -8381,6 +13022,7 @@ export const translations: Record<Language, Translations> = {
       orderHeaderStatus: "狀態",
       orderHeaderType: "類型",
       pageTitle: "我的帳戶 - ChinaConnect",
+      pageTitleSuffix: "我的帳戶 - ChinaConnect",
       pointsUnit: "積分",
       renewsOn: "續費日期",
       savedLocally: "僅本地儲存",
@@ -8391,27 +13033,42 @@ export const translations: Record<Language, Translations> = {
       signInRequired: "需要登入",
       signInRequiredDesc: "請登入後查看你的帳戶。",
       signOut: "登出",
+      statAiUsage: "今日 AI 使用量",
+      statFavorites: "我的收藏",
       statSavedRoutes: "已儲存路線",
+      subtitle: "管理您的訂閱、收藏和保存的路線。",
       syncedToCloud: "已同步到雲端",
       tabBilling: "帳單",
+      tabFavorites: "收藏",
+      tabOrders: "訂單",
       tabOverview: "總覽",
       tabPlans: "方案",
+      tabRoutes: "路線",
       tabUsage: "用量",
+      title: "我的帳戶",
       untitledRoute: "未命名路線",
       upgrade: "升級",
       usageDailyAi: "每日 AI 用量",
       usageFavorites: "收藏用量",
       usageSavedRoutes: "已儲存路線用量",
+      userBadge: "用戶",
       walletBalance: "錢包餘額"
+    },
+    ai: {
+      send: "發送",
+      thinking: "思考中..."
     },
     aiPage: {
       authFailed: "認證失敗",
       authGateSignupTitle: "建立你的帳戶",
       authGateTitle: "登入後開始對話",
+      chatInputPlaceholder: "查詢餐廳、交通、景點等資訊...",
+      conversationHistory: "對話記錄",
       conversationsTitle: "對話",
       deleteConfirm: "刪除此對話？",
       deleteTitle: "刪除",
       emailPlaceholder: "you@example.com",
+      exportPdf: "匯出 PDF",
       githubButton: "GitHub",
       googleButton: "Google",
       haveAccountPrompt: "已經有帳戶？",
@@ -8420,13 +13077,18 @@ export const translations: Record<Language, Translations> = {
       hideSidebarTitle: "隱藏側邊欄",
       messageLabel: "則訊息",
       messagesLabel: "則訊息",
+      newChat: "新對話",
       newChatButton: "+ 新對話",
       noAccountPrompt: "還沒有帳戶？",
       noConversationsYet: "暫無對話",
       orContinueWith: "或",
+      pageDescription: "詢問任何有關中國旅遊的問題。",
+      pageTitle: "AI 旅遊管家 - ChinaConnect",
       passwordPlaceholder: "密碼（至少 6 個字元）",
       promptsSubtitle: "選一個提示或在下方輸入你自己的",
       promptsTitle: "試試這樣問",
+      saveRoute: "儲存路線",
+      sendButton: "發送",
       showSidebarTitle: "顯示對話",
       signInButton: "登入",
       signUpButton: "建立帳戶",
@@ -8434,27 +13096,64 @@ export const translations: Record<Language, Translations> = {
       subtitle: "AI 助你規劃中國之旅",
       switchToSignIn: "登入",
       switchToSignUp: "建立一個",
-      title: "AI 助手"
+      thinking: "思考中...",
+      title: "AI 助手",
+      upgradePrompt: "註冊以解鎖更多 AI 請求。",
+      usageToday: "今日使用量"
     },
     attractions: {
       allCities: "所有有景區的城市",
+      appSubtitle: "實用的應用程式，幫助您出行並探索景點",
+      appTitle: "規劃您的旅行",
+      attractionCount: "{count} 個景點",
       browseCategory: "按類別瀏覽",
+      citiesCount: "{count} 座城市",
+      diversityTypes: "歷史的、文化的、自然的、現代化的",
+      featured: "精選城市",
       featuredCities: "熱門城市",
+      heroEyebrow: "按目的地瀏覽",
+      openCity: "開啟城市",
+      pageDescription: "從古代地標到自然奇觀，探索中國必遊的旅遊景點",
+      pageTitle: "中國景點 - ChinaConnect",
       subtitle: "必訪的景區瑰寶 — 從古老地標到自然奇觀",
-      title: "中國景區"
+      title: "中國景區",
+      viewAll: "查看所有景點"
     },
     auth: {
+      continueWithGithub: "使用 GitHub 繼續",
+      continueWithGoogle: "使用 Google 繼續",
+      email: "電子郵件",
       myAccount: "我的帳戶",
+      needHelp: "需要協助登入嗎？",
+      orContinueWithEmail: "或使用電子郵件繼續",
+      password: "密碼",
+      profile: "個人資料",
       profileCenter: "個人中心",
       signIn: "登入",
-      signOut: "登出"
+      signInButton: "登入",
+      signOut: "登出",
+      signOutConfirm: "確定要登出 ChinaConnect 嗎？",
+      subtitle: "保存收藏、規劃旅行並與 AI 聊天。",
+      title: "登入 ChinaConnect"
     },
     authPage: {
       authTitle: "登入/註冊 - ChinaConnect",
       callbackTitle: "正在登入…",
+      continueWithEmail: "或使用電子郵件繼續",
+      emailPlaceholder: "you@example.com",
+      errorDefault: "發生錯誤。請再試一次。",
       errorTitle: "驗證失敗",
+      forgotPassword: "忘記密碼？",
       loginTitle: "登入 - ChinaConnect",
-      signingYouIn: "正在登入…"
+      needAccount: "沒有帳戶嗎？",
+      passwordPlaceholder: "您的密碼",
+      signInButton: "登入",
+      signInError: "登入失敗。請再試一次。",
+      signUpButton: "註冊",
+      signUpError: "註冊失敗。請再試一次。",
+      signingYouIn: "正在登入…",
+      successDesc: "正在將您重新導向...",
+      successTitle: "歡迎回來！"
     },
     businessGuidePage: {
       backToGuide: "返回指南",
@@ -8479,77 +13178,292 @@ export const translations: Record<Language, Translations> = {
     },
     checkoutPage: {
       backToPricing: "← 返回方案",
+      continueButton: "繼續前往您的帳戶",
       description: "你的訂閱已成功啟用",
       errorDesc: "無法處理你的付款。請重試或聯絡客服。",
       errorTitle: "出錯了",
+      processing: "處理您的付款...",
       processingDesc: "請稍候，我們正在確認你的訂閱。",
       startPlanning: "開始規劃",
       successAccess: "你現在可以使用新方案的所有功能。",
       successDesc: "你的訂閱已啟用。",
       successTitle: "付款成功！",
+      thankYou: "感謝您選擇 ChinaConnect。",
       title: "付款成功 - ChinaConnect",
       viewAccount: "查看帳戶"
     },
     cities: {
       attractions: "景區",
+      citiesCount: "城市",
+      citiesInChina: "中國城市",
       culturalTips: "文化貼士",
       emergency: "緊急聯絡",
+      exploreAll: "探索所有城市",
       exploreGuide: "探索指南",
+      filterATier: "A 級",
+      filterAll: "全部",
+      filterDTier: "D 級",
+      filterSTier: "S 級",
+      headerSubtitle: "從古都到現代大都市 - 選擇您的目的地。",
+      headerTitle: "探索中國城市",
       hotels: "飯店",
+      noResults: "沒有符合您篩選條件的城市。",
       openingHours: "开放时间",
+      pageDescription: "探索 ChinaConnect 涵蓋的所有中國城市，從古都到現代大都市。S 級優質城市、A 級半優質城市和 D 級隨選城市。",
+      pageTitle: "探索所有城市 - ChinaConnect",
       payment: "支付",
+      population: "人口",
       recommendedTime: "推荐存取时间",
+      region: "地區",
       restaurants: "餐廳",
+      searchPlaceholder: "搜尋城市...",
       subtitle: "12 座中国主要城市的深度指南",
       ticketPrice: "门票",
       title: "中國城市",
-      transport: "交通"
+      transport: "交通",
+      viewCity: "查看城市"
+    },
+    city: {
+      beijing: {
+        name: "北京"
+      },
+      chengdu: {
+        name: "成都"
+      },
+      chongqing: {
+        name: "重慶"
+      },
+      guangzhou: {
+        name: "廣州"
+      },
+      guilin: {
+        name: "桂林"
+      },
+      hangzhou: {
+        name: "杭州"
+      },
+      lijiang: {
+        name: "麗江"
+      },
+      qingdao: {
+        name: "青島"
+      },
+      shanghai: {
+        name: "上海"
+      },
+      shenzhen: {
+        name: "深圳"
+      },
+      suzhou: {
+        name: "蘇州"
+      },
+      xian: {
+        name: "西安"
+      }
+    },
+    cityAttractions: {
+      categoryAll: "全部",
+      categoryLabel: "類別",
+      disclaimer: "開放時間、門票價格和電話號碼可能會變動。我們建議透過景點的官方網站或提前致電確認。",
+      openOnMap: "在地圖上開啟",
+      openingHours: "開放時間",
+      subtitle: "必看的地標、博物館和自然奇觀。",
+      ticketPrice: "門票價格",
+      tipsHeader: "小貼士",
+      title: "{city} 的景點",
+      viewAll: "查看 {city} 內的所有景點",
+      viewDetails: "查看詳情",
+      viewMore: "查看更多景點"
+    },
+    cityFood: {
+      avgPrice: "平均價格",
+      cuisine: "菜系",
+      disclaimer: "電話號碼和地址可能會變動。我們建議透過餐廳的官方管道或提前致電確認。",
+      filterAll: "全部",
+      filterBlackPearl: "黑珍珠",
+      filterBudget: "預算",
+      filterLocal: "本地",
+      filterLocalFavorites: "當地人最愛",
+      filterMichelin: "米其林",
+      filteringLabel: "篩選：",
+      googleMaps: "Google 地圖",
+      signatureDishes: "招牌菜",
+      subtitle: "米其林星級、黑珍珠推薦和本地寶藏餐廳。",
+      title: "{city} 的餐廳",
+      viewAll: "瀏覽{city}的所有餐廳",
+      viewDetails: "查看詳情"
+    },
+    cityHotels: {
+      bookCta: "查看酒店詳情",
+      bookNow: "查看酒店",
+      filterAll: "所有類別",
+      pricePerNight: "每晚",
+      stars: "星級",
+      subtitle: "從精品住宿到國際連鎖酒店 - 為您的旅程找到合適的地方。",
+      title: "{city}的酒店"
     },
     cityPage: {
+      appCount: "{count}個必備應用程式",
+      appsSubtitle: "抵達前先下載這些應用程式。",
+      area: "地區",
+      attractionCount: "{count}個景點",
       attractionsExploreCount: "{city} — {count} 个值得探索的地方",
       attractionsHeading: "熱門景區",
       attractionsSubtitle: "這座城市最值得一看的地方",
+      bestTime: "最佳旅遊時間",
       bestTimeHeading: "最佳到訪時間",
+      bookHotelCta: "在{city}尋找酒店",
+      bookTourCta: "預訂{city}的旅遊行程",
+      citySubtitle: "{city}，中國的完整旅遊指南。尋找最佳餐廳、景點、酒店和旅遊提示。",
+      connectivitySubtitle: "使用數據保持連接。",
+      contactCount: "{count}個聯絡資訊",
+      cultureSubtitle: "當地習俗和禮儀。",
+      cultureSubtitleDynamic: "{city} 的基本文化知識",
+      currency: "貨幣",
       dataSourcesDesc: "餐廳資料來自公開評論與本地推薦。",
       dataSourcesHeading: "資料來源",
+      downloadBefore: "抵達中國前先下載這些應用程式。",
+      elevation: "海拔",
+      emergencySubtitle: "重要電話號碼和大使館資訊。",
+      emergencySubtitleDynamic: "{city} 的重要電話號碼",
+      esimDescription: "eSIM是在中國獲取數據最簡單的方式。不需要實體SIM卡 - 抵達後立即啟動。",
+      esimRecommended: "eSIM（推薦）",
+      essentialAppsFor: "{city}的必備應用程式",
+      essentialCultural: "{city}的必備文化知識",
+      exploreOnMap: "在地圖上探索",
       foodHeading: "美食精選",
       foodHighlightsHeading: "美食亮點",
       foodHighlightsSubtitle: "必嚐的招牌菜與餐廳",
       foodSubtitle: "米其林、黑珍珠与本地最愛",
+      gettingAround: "交通指南",
       gettingTo: "如何到達",
+      heroEyebrow: "旅遊指南",
       home: "返回首頁",
+      hotelCount: "{count}家酒店",
       hotelsCountUnit: "家飯店",
       hotelsHeading: "住宿推薦",
+      hotelsSubtitle: "從精品酒店到國際連鎖酒店。",
+      importantNumbers: "{city}的重要電話號碼",
+      intro: "歡迎來到{city}，中國最具魅力的目的地之一。",
+      language: "語言",
+      moreCities: "更多城市",
+      nextCity: "下一個城市",
       noHotels: "暫無飯店資料",
       noHotelsDesc: "該城市暫無精選飯店，試試其他分類。",
       noResults: "未找到結果",
       noResultsDesc: "請嘗試其他搜尋條件。",
+      openFullMap: "打開完整地圖",
+      overviewSubtitle: "出發前需要了解的一切。",
+      pageTitleSuffix: "旅遊指南 - ChinaConnect",
+      paymentSubtitle: "現金、信用卡、移動錢包和ATM存取。",
       phoneIcon: "電話",
+      population: "人口",
+      previousCity: "上一個城市",
+      proTipBooking: "專業提示：提前2-3週預訂酒店以獲得最佳價格。",
+      proTipEsim1: "如果您的電話支援eSIM（iPhone XS及以上和大多數Android旗艦機），eSIM效果最佳。",
+      proTipEsim2: "抵達中國前先下載eSIM應用程式。",
+      proTipEsim3: "Airalo和Holafly提供中國專屬方案，包含無限數據選項。",
+      proTips: "專業提示",
+      quickFacts: "快速事實",
       quickFactsHeading: "城市速覽",
+      region: "地區",
+      restaurantCount: "{count}家餐廳",
+      sectionApps: "必備應用程式",
+      sectionAttractions: "熱門景點",
+      sectionConnectivity: "SIM卡和eSIM",
+      sectionCulture: "文化提示",
+      sectionEmergency: "緊急聯絡人",
+      sectionFood: "美食地點",
+      sectionHotels: "住宿地點",
+      sectionOverview: "概覽",
+      sectionPayment: "支付和金錢",
+      sectionTransport: "交通方式",
+      sectionVisa: "簽證和入境",
+      sosTip: "抵達前先保存這些號碼 - 偏遠地區的行動服務可能有限。",
+      switchToEnglishMode: "如果在應用程式設定中看到中文介面，請切換到英文模式。支付寶和微信支付都支援外國信用卡。",
+      tabApps: "應用程式",
+      tabAttractions: "景點",
+      tabConnectivity: "SIM/eSIM",
+      tabCulture: "文化",
+      tabEmergency: "緊急",
+      tabFood: "美食",
+      tabHotels: "酒店",
+      tabOverview: "概覽",
+      tabPayment: "支付",
+      tabTransport: "交通",
+      timezone: "時區",
+      tipCount: "{count}個提示",
       topHighlightsHeading: "城市亮點",
       transportSubtitle: "抵達與城市內交通",
-      viewAllHotels: "查看全部飯店"
+      travelTo: "前往{city}",
+      viewAllAttractions: "View all attractions",
+      viewAllHotels: "查看全部飯店",
+      viewAllRestaurants: "View all restaurants",
+      visaSubtitle: "Visa-free policies and entry requirements.",
+      visit: "Visit",
+      weatherForecast: "Weather forecast",
+      weatherNotAvailable: "Weather not available",
+      weatherNow: "Now",
+      youMayAlsoLike: "You may also like"
     },
     common: {
       all: "全部",
       back: "返回",
+      bookNow: "Book now",
       cancel: "取消",
       close: "關閉",
       confirm: "確認",
+      continue: "繼續",
+      discover: "Discover",
+      done: "完成",
       error: "錯誤",
+      explore: "Explore",
       filter: "篩選",
+      getStartedFree: "Get started free",
+      learnMore: "Learn more",
       loading: "載入中…",
       next: "下一步",
       open: "開啟",
       previous: "上一步",
+      readMore: "Read more",
+      required: "必填",
       retry: "重試",
+      save: "儲存",
       search: "搜尋…",
       seeMore: "查看更多",
+      signUpFree: "Sign up free",
       sort: "排序",
-      viewAll: "查看全部"
+      startPlanning: "Start planning",
+      subscribe: "Subscribe",
+      viewAll: "查看全部",
+      viewDetails: "View details",
+      viewMore: "View more"
+    },
+    emergency: {
+      address: "Address",
+      call: "Call",
+      country: "Country",
+      embassyLocator: "Find your embassy",
+      embassyLocatorDesc: "Locate your country's embassy or consulate in China.",
+      gpsLocator: "GPS location",
+      gpsLocatorDesc: "Share your live location with emergency contacts.",
+      number: "Number",
+      phone: "Phone",
+      quickDial: "Quick dial",
+      share: "Share location",
+      subtitle: "Important phone numbers for travelers in China.",
+      title: "Emergency Contacts",
+      touristHotline: "Tourist hotline",
+      universal: "Universal numbers",
+      universalAmbulance: "Ambulance",
+      universalFire: "Fire",
+      universalPolice: "Police",
+      universalTraffic: "Traffic accident",
+      viewAllContacts: "View all contacts"
     },
     emergencyPage: {
       ambulance: "急救",
+      callButton: "撥打",
       communication1: "學幾句基本中文短語",
       communication2: "下載翻譯 App",
       communication3: "保存大使館電話",
@@ -8559,9 +13473,11 @@ export const translations: Record<Language, Translations> = {
       contactsDesc: "全中國通用的核心緊急號碼。",
       embassyDesc: "主要國家駐華大使館聯絡資訊。",
       embassyTitle: "大使館",
+      findEmbassy: "尋找您的大使館",
       fire: "火警",
       gps: "GPS 座標",
       gpsDesc: "保存你的即時位置以便緊急聯絡。",
+      gpsLocator: "GPS 定位",
       heroHeading: "緊急聯絡與幫助",
       hospitalCommon: "綜合醫院",
       hospitalInternational: "國際診所",
@@ -8601,6 +13517,7 @@ export const translations: Record<Language, Translations> = {
       offlineItem4: "急救短語",
       oneTapCalls: "一鍵撥打",
       oneTapDesc: "點擊即可撥打緊急號碼。",
+      pageDescription: "中國旅客的重要電話號碼",
       pageTitle: "緊急聯絡與短語 - ChinaConnect",
       pharmaciesTitle: "藥店",
       pharmacyChains: "連鎖藥店",
@@ -8618,6 +13535,7 @@ export const translations: Record<Language, Translations> = {
       preparedness3: "購買旅行保險",
       preparedness4: "告知家人行程",
       preparednessTitle: "事前準備",
+      quickDial: "快速撥號",
       safetyTipsTitle: "安全貼士",
       sosButtonDesc: "按住 3 秒自動發送位置給緊急聯絡人。",
       sosButtonTitle: "一鍵 SOS",
@@ -8627,7 +13545,10 @@ export const translations: Record<Language, Translations> = {
       sosItem4: "醫院導航",
       subtitle: "中國緊急號碼、醫院與大使館 — 保存以備不時之需。",
       title: "緊急聯絡",
-      traffic: "交通事故"
+      touristHotline: "旅遊熱線",
+      traffic: "交通事故",
+      universalSection: "通用號碼",
+      viewAllContacts: "查看所有聯絡人"
     },
     empty: {
       addSome: "开始探索并收藏你喜欢的吧！",
@@ -8646,7 +13567,9 @@ export const translations: Record<Language, Translations> = {
       loadFailed: "加载内容失敗",
       network: "网络錯誤",
       networkError: "网络錯誤，请检查连接",
+      notFound: "Resource not found.",
       somethingWrong: "出錯了",
+      timeout: "Request timed out.",
       unauthorized: "未授权"
     },
     features: {
@@ -8671,22 +13594,29 @@ export const translations: Record<Language, Translations> = {
       amapNav: "高德導航",
       back: "返回",
       backToCity: "返回 {city}",
+      bottomCtaDesc: "瀏覽我們的城市列表，探索中國更多目的地。",
       callPhone: "撥打電話",
+      citiesCount: "Cities",
       citiesUnit: "座城市",
       cityEmpty: "暫無該城市美食",
       cityEmptyDesc: "即將上線更多餐廳。",
       cityEmptySubtitle: "尚未新增該城市餐廳",
       dataSourcesDesc: "餐廳資料來自公開評論與本地推薦。",
       dataSourcesHeading: "資料來源",
+      empty: "No cities match this filter.",
       emptyCta: "清除篩選條件",
       emptyDesc: "該篩選條件下未找到餐廳。",
       emptyTitle: "暫無餐廳",
+      essentialFoodApps: "必備美食應用程式",
+      essentialFoodAppsDesc: "下載這些應用程式以訂購外送美食，並使用英文菜單探索當地餐廳。",
       exploreFood: "探索美食",
+      filterAll: "All",
       filterBlackPearl: "黑珍珠",
       filterBudget: "平價",
       filterCasual: "日常",
       filterLocal: "本地精選",
       filterMichelin: "米其林",
+      filterStreetFood: "Street Food",
       filteringLabel: "篩選",
       heroCityFood: "{city} 的美食",
       indexTitle: "🍜 中國美食地圖",
@@ -8694,25 +13624,68 @@ export const translations: Record<Language, Translations> = {
       navigate: "導航",
       noCityTitle: "暫無該城市美食",
       otherRestaurants: "其他餐廳",
+      pageDescription: "探索中國最受歡迎的美食、精選城市和精選餐廳",
+      pageTitle: "中國美食地圖 - ChinaConnect",
       perPerson: "/人",
+      proTipsFoodApps: "美食應用程式專業提示",
       restaurantsUnit: "家餐廳",
       showingCount: "顯示",
-      subtitle: "發現中國最受喜愛的美食，由本地人按城市精選。"
+      subtitle: "發現中國最受喜愛的美食，由本地人按城市精選。",
+      tipDianping: "大眾點評非常適合尋找帶有英文評論的當地美食。",
+      tipEleme: "餓了麼提供最廣泛的送餐範圍，但可能預設為中文。",
+      tipLinkCard: "在訂購前將您的外國卡連結到支付寶/微信支付。",
+      tipMeituan: "美團為許多餐廳提供英文菜單翻譯。",
+      title: "China Food Map",
+      viewAllCities: "View all cities"
     },
     footer: {
       accommodation: "住宿",
       aiAssistant: "AI 助手",
+      allRightsReserved: "All rights reserved.",
       attractions: "景區",
       cities: "城市",
+      citiesListLabel: "Popular Cities",
+      cityBeijing: "Beijing",
+      cityChengdu: "Chengdu",
+      cityChongqing: "Chongqing",
+      cityDalian: "Dalian",
+      cityGuangzhou: "Guangzhou",
+      cityGuilin: "Guilin",
+      cityHangzhou: "Hangzhou",
+      cityHarbin: "Harbin",
+      cityKunming: "Kunming",
+      cityLijiang: "Lijiang",
+      cityQingdao: "Qingdao",
+      cityShanghai: "Shanghai",
+      cityShenzhen: "Shenzhen",
+      citySuzhou: "Suzhou",
+      cityTianjin: "Tianjin",
+      cityXian: "Xi'an",
+      companyLabel: "Company",
+      contact: "Contact",
+      copyright: "Copyright",
       culturalTips: "文化貼士",
       description: "您探索中國的可靠嚮導。AI 驅動的餐廳推薦、城市指南與旅行貼士。",
+      diningGuide: "餐飲指南",
       emergency: "緊急聯絡",
       guides: "旅行指南",
+      guidesLabel: "Travel Guides",
       payment: "支付",
+      privacy: "Privacy",
       resources: "資源",
+      resourcesLabel: "Resources",
       restaurants: "餐廳",
+      terms: "Terms",
       transport: "交通",
-      viewAllCities: "查看全部城市"
+      viewAllCities: "查看全部城市",
+      visaGuide: "簽證指南"
+    },
+    guide: {
+      attractionsPageTitle: "中國熱門景點",
+      attractionsTitle: "中國熱門景點",
+      beijingGuide: "北京",
+      foodGuide: "美食指南",
+      scamPrevention: "防詐騙指南"
     },
     guidePage: {
       accommodationStageDescription: "從豪華飯店到經濟旅館，選擇適合你的住宿。",
@@ -8720,7 +13693,14 @@ export const translations: Record<Language, Translations> = {
       accommodationSubtitle: "飯店、民宿與短期租賃",
       accommodationTitleShort: "住宿",
       attractionsSubtitle: "必訪景點與隱藏瑰寶",
+      attractionsTitle: "熱門景點",
       backHome: "返回首頁",
+      beginnerDesc: "自信地規劃您的首次旅行。",
+      beginnerTraveler: "首次訪客",
+      businessDesc: "會議、支付和禮儀的工具。",
+      businessTitle: "商務旅行",
+      businessTraveler: "商務旅行者",
+      cardReadTime: "{minutes} min read",
       cityBeijing: "北京",
       cityChengdu: "成都",
       cityShanghai: "上海",
@@ -8731,6 +13711,7 @@ export const translations: Record<Language, Translations> = {
       communicationTitleShort: "通訊",
       culturalWarningsSubtitle: "文化禁忌與重要貼士",
       culturalWarningsTitleShort: "文化禁忌",
+      cultureTitle: "文化提示",
       departureStageDescription: "退稅、機場流程與告別貼士。",
       departureStageTitle: "離境",
       departureSubtitle: "退稅、機場與最後貼士",
@@ -8748,6 +13729,7 @@ export const translations: Record<Language, Translations> = {
       emergencySubtitle: "緊急號碼與醫院",
       emergencyTitleShort: "緊急",
       emergencyTourism: "旅遊熱線",
+      foodTitle: "美食指南",
       home: "返回首頁",
       indexBusinessHeading: "🚀 商務旅行工具",
       indexBusinessSubtitle: "從邀請函到商務禮儀 — 找到你在中國做生意所需的一切。",
@@ -8755,23 +13737,34 @@ export const translations: Record<Language, Translations> = {
       indexHeroSubtitle: "中國完整旅行指南 — 從行前準備到離境。",
       indexHeroTitle: "🇨🇳 中國完整旅行指南",
       indexStagesTitle: "12 步旅程",
+      longStay: "長期停留",
+      longStayDesc: "使用簽證、銀行和住宿指南安頓下來。",
+      pageDescription: "計劃、預訂和享受您的中國之旅所需的一切",
+      pageTitle: "中國旅遊指南 - ChinaConnect",
       paymentStageDescription: "支付寶、微信支付、銀聯卡與現金 — 中國支付全解。",
       paymentStageTitle: "支付",
       paymentSubtitle: "行動支付、銀行卡與現金",
+      paymentTitle: "支付與金錢",
       paymentTitleShort: "支付",
       popularByCity: "按城市瀏覽",
       quickBeijingDesc: "用我們詳盡的北京城市指南探索中國首都。",
       quickFoodDesc: "米其林星級、黑珍珠餐廳與本地最愛，按城市精心整理。",
       quickScamDesc: "保護自己免受中國常見的騙局與遊客陷阱。",
+      safetyTitle: "安全",
       scamPreventionSubtitle: "保護自己免受常見騙局",
       scamPreventionTitleShort: "防騙",
+      subtitle: "Everything you need to plan, book and enjoy your China trip.",
+      title: "China Travel Guide",
       transparencySubtitle: "價格透明與議價貼士",
       transparencyTitleShort: "透明",
       transportStageDescription: "地鐵、高鐵、計程車與共享單車 — 讓你在中國暢行無阻。",
       transportStageTitle: "交通",
       transportSubtitle: "城市內與城際交通",
+      transportTitle: "交通方式",
       transportTitleShort: "交通",
       travelGuide: "中國旅行指南",
+      travelerType: "旅行者類型",
+      viewAll: "View all guides",
       viewAllBusinessTools: "查看全部商務工具",
       viewAllBusinessToolsCta: "前往商務專區 →",
       viewAllBusinessToolsDesc: "查看全部商務工具的詳細統計與快速指南。",
@@ -8780,23 +13773,39 @@ export const translations: Record<Language, Translations> = {
       visaStageDescription: "簽證類型、申請流程與最新要求。",
       visaStageTitle: "簽證",
       visaSubtitle: "簽證類型、申請流程與最新要求",
+      visaTitle: "簽證與入境",
       visaTitleShort: "簽證"
+    },
+    guideTopic: {
+      backToGuide: "Back to guide",
+      contactCta: "Contact support",
+      lastUpdated: "Last updated",
+      needHelp: "Need help?",
+      relatedArticles: "Related articles"
     },
     home: {
       chatWithAI: "与 AI 對話",
       citiesSubtitle: "從古都到現代都市，通过我们詳盡的指南發現中國最美的城市。",
       citiesTitle: "探索我們的城市",
+      clearHistory: "Clear history",
       ctaSubtitle: "用 AI 推薦開始規劃你的旅程。",
       ctaTitle: "準備好探索中國了嗎?",
+      discoverSubtitle: "Discover the best of China with AI-powered city guides and curated restaurants.",
+      exploreAiChat: "Explore ChinaGuide AI",
       exploreBeijing: "北京探索",
       exploreCities: "探索城市",
+      exploreCityButton: "Explore City",
       exploreGuide: "查看完整指南",
+      featuredCitiesLabel: "Featured",
+      featuredSection: "Featured Destinations",
       featuresSubtitle: "讓你擁有精彩旅程的全部所需",
       featuresTitle: "中國之旅，你所需的一切",
+      heroBadge: "AI-powered travel guide for China",
       heroCTA: "向 AI 詢問行程建議",
       heroDesc: "米其林·黑珍珠餐廳、景區、交通貼士、緊急聯絡資訊 — 全部由 AI 与本地人精心整理。",
       heroSubtitle: "可信賴的中國最佳城市嚮導",
       heroTitle: "你的 AI 驅動中國指南",
+      noRecentViews: "No recent views yet.",
       onboarding1Desc: "在 12 座中國城市找到米其林星級与黑珍珠餐廳。",
       onboarding1Title: "發現精彩美食",
       onboarding2Title: "AI 智能贴士",
@@ -8804,14 +13813,24 @@ export const translations: Record<Language, Translations> = {
       onboardingFinish: "完成",
       onboardingNext: "下一步",
       onboardingSkip: "跳過",
+      pageDescription: "透過AI驅動的城市指南探索中國。探索包括北京、上海、廣州、西安、成都等12個主要城市中的最佳餐廳（米其林及黑珍珠）、景點、交通資訊和緊急聯絡方式。",
       pageTitle: "ChinaConnect - 你的 AI 中国探索指南",
+      popularCities: "Popular Cities",
+      popularCitiesSubtitle: "Explore the most-loved destinations in China",
+      popularRestaurants: "Popular Restaurants",
+      popularRestaurantsSubtitle: "Michelin and Black Pearl favorites across China",
       recentlyViewed: "最近瀏覽",
       recommendedForYou: "為你推薦",
+      startPlanningToday: "Start planning your trip today.",
       statsAI: "AI 协助",
       statsAttractions: "熱門景區",
       statsCities: "覆盖城市",
       statsRestaurants: "米其林餐廳",
-      viewAllCities: "查看全部城市"
+      viewAllCities: "查看全部城市",
+      viewAllCitiesButton: "View All Cities"
+    },
+    index: {
+      featuredDestinations: "根據熱門目的地推薦"
     },
     language: {
       chinese: "中文",
@@ -8823,6 +13842,10 @@ export const translations: Record<Language, Translations> = {
       nativeName: "简体中文",
       switchTo: "切換到"
     },
+    loginPage: {
+      pageDescription: "登錄到 ChinaConnect",
+      pageTitle: "登錄 - ChinaConnect"
+    },
     nav: {
       aiChat: "AI 助手",
       attractions: "景區",
@@ -8832,6 +13855,7 @@ export const translations: Record<Language, Translations> = {
       home: "首頁",
       restaurants: "美食",
       selectLanguage: "選擇語言",
+      signIn: "Sign in",
       tagline: "AI 助你探索中國"
     },
     notFound: {
@@ -8841,12 +13865,30 @@ export const translations: Record<Language, Translations> = {
       exploreCities: "探索城市",
       goHome: "返回首頁",
       heading: "頁面未找到",
+      homeButton: "Back to home",
       letsContinue: "讓我們繼續探索中國",
       primary: "返回首頁",
-      title: "頁面未找到 - ChinaConnect"
+      subtitle: "The page you're looking for doesn't exist or has moved.",
+      title: "頁面未找到 - ChinaConnect",
+      titleShort: "404",
+      viewCities: "View cities"
+    },
+    offline: {
+      cachedPages: "Cached pages are still available.",
+      retryButton: "Try again",
+      subtitle: "It looks like you've lost your internet connection.",
+      title: "You're offline",
+      viewHome: "View home"
     },
     offlinePage: {
+      ambulanceDesc: "醫療緊急情況、受傷",
+      availableOffline: "離線可用",
+      bannerDesc: "緊急聯絡方式和重要資訊仍然可用",
       bannerTitle: "你目前離線",
+      emergencyNumbers: "緊急電話號碼（中國）",
+      emergencyPhrases: "快速緊急用語",
+      fireDesc: "火災、救援、危險物品",
+      lastSynced: "上次同步：",
       phrase1En: "你好",
       phrase2En: "謝謝",
       phrase3En: "對不起",
@@ -8854,6 +13896,11 @@ export const translations: Record<Language, Translations> = {
       phrase5En: "救命",
       phrase6En: "我需要幫助",
       phrase7En: "醫院在哪裡？",
+      phrasesHelp: "顯示常見緊急用語",
+      phrasesTip: "如需幫助，請顯示這些用語",
+      policeDesc: "犯罪、緊急情況、公共安全",
+      quickActions: "快速操作",
+      tapToCall: "點擊任何號碼立即撥打",
       tipsHeading: "離線提示",
       tipsList1: "已儲存的頁面仍可存取",
       tipsList2: "網路恢復後內容會自動更新",
@@ -8862,11 +13909,14 @@ export const translations: Record<Language, Translations> = {
       tipsList5: "AI 助手需要連線",
       tipsList6: "餐廳詳情已離線可用",
       title: "目前離線",
+      title2: "ChinaConnect 緊急SOS - 離線可用",
+      trafficDesc: "交通事故專用",
       tryAgain: "重試"
     },
     onboarding: {
       done: "完成",
       getStarted: "开始使用",
+      neverShow: "Don't show this again",
       next: "下一步",
       skip: "跳過",
       step1Desc: "在 12 座中國城市找到米其林星級与黑珍珠餐廳。",
@@ -8878,6 +13928,7 @@ export const translations: Record<Language, Translations> = {
       welcome: "欢迎使用 ChinaConnect！"
     },
     pricing: {
+      annualNote: "Billed annually at ¥659 (save ¥169)",
       autoRenewNote: "自動續費，可隨時取消",
       billingAnnual: "年付",
       billingMonthly: "月付",
@@ -8895,6 +13946,7 @@ export const translations: Record<Language, Translations> = {
         name: "商務版",
         price: "¥199"
       },
+      cancelAnytime: "Cancel anytime",
       cancelledNotice: "你的訂閱已取消",
       compareFeatures: {
         advancedTools: "進階旅行工具",
@@ -8909,6 +13961,7 @@ export const translations: Record<Language, Translations> = {
       },
       compareSubtitle: "清楚了解每個方案包含的內容。",
       compareTitle: "功能對比",
+      ctaButton: "Get started",
       ctaPrimary: "免費開始",
       ctaSecondary: "查看方案",
       ctaSubtitle: "加入數千名正在用 AI 規劃中國之旅的旅客。",
@@ -8926,14 +13979,44 @@ export const translations: Record<Language, Translations> = {
         name: "探索版",
         price: "¥29"
       },
+      faq: "常見問題",
+      faq1A: "Yes, cancel from your account at any time. Annual plans are refundable within 30 days.",
       faq1Q: "可以隨時取消訂閱嗎？",
+      faq2A: "Absolutely - upgrade or downgrade any time. Pro-rated credit is applied automatically.",
       faq2Q: "可以更換方案嗎？",
+      faq3A: "The free plan covers all cities, 5 AI requests per month, basic itinerary planning and saved routes.",
       faq3Q: "免費版有什麼限制？",
+      faq4A: "We accept Visa, Mastercard, Alipay, WeChat Pay and major local cards.",
       faq4Q: "支援哪些付款方式？",
+      faq5A: "Yes - we use bank-level encryption and never sell your personal data.",
       faq5Q: "資料安全嗎？",
+      faq6A: "Yes, students with a valid .edu email get 50% off the Traveler plan.",
       faq6Q: "有學生優惠嗎？",
       faqSubtitle: "還有疑問？查看我們的常見問題。",
       faqTitle: "常見問題",
+      featureAdvancedTools: "進階旅行工具",
+      featureAiRequestsBusiness: "無限次 AI 對話",
+      featureAiRequestsExplorer: "每月 20 次 AI 請求",
+      featureAiRequestsFree: "每月 5 次 AI 請求",
+      featureAiRequestsPro: "每月 100 次 AI 請求",
+      featureAllTravelerFeatures: "所有旅行者功能",
+      featureApi: "API 訪問",
+      featureBasicPlanning: "基本旅行規劃",
+      featureBusinessTemplates: "商業模板",
+      featureCancelAnytime: "隨時取消",
+      featureConversationHistory: "對話歷史",
+      featureCustomIntegrations: "自定義集成",
+      featureDedicated: "專屬支持",
+      featureExportPdf: "導出 PDF",
+      featureMultiCity: "多城市行程",
+      featurePdfExport: "PDF 導出",
+      featurePremiumCustomization: "高級自定義",
+      featurePrioritySupport: "優先支持",
+      featureSaveItineraries: "保存行程",
+      featureSecurePayments: "安全支付",
+      featureTeamCollab: "團隊協作",
+      featureTeamManagement: "團隊管理",
+      featureViewItineraries: "查看行程",
       free: {
         description: "免費探索中國所有城市與基礎 AI 功能。",
         feature1: "每月 5 次 AI 請求",
@@ -8944,24 +14027,40 @@ export const translations: Record<Language, Translations> = {
         name: "免費版"
       },
       freeForever: "永久免費",
+      heroBadge: "Pricing",
       heroSubtitle: "從免費瀏覽到專業規劃，選擇適合你旅行節奏的方案。",
       heroTitle: "選擇你的中國探索方案",
+      moneyBack: "30-day refund",
+      planBusiness: "商業",
+      planExplorer: "探索者",
+      planFree: "免費",
+      planPro: "專業",
+      planTraveler: "旅行者",
       popularBadge: "最受歡迎",
       priceFree: "¥0",
+      pro: {
+        description: "給活躍旅人的方案"
+      },
       saveBadge: "省 20%",
       savingsHint: "年付可節省 20%",
+      securePayment: "Secure payment",
       subscribeNow: "立即訂閱",
+      testimonial1: "ChinaConnect saved me hours of research. The AI routes are spot-on.",
       testimonial1Author: "Sarah K.",
       testimonial1Country: "美國",
       testimonial1Role: "探索版",
+      testimonial2: "As a business traveler, the translator and meeting tools are invaluable.",
       testimonial2Author: "李伟 T.",
       testimonial2Country: "英國",
       testimonial2Role: "商務版",
+      testimonial3: "Best travel companion I've used in China.",
       testimonial3Author: "Maria R.",
       testimonial3Country: "德國",
       testimonial3Role: "旅客版",
+      testimonials: "旅行者說什麼",
       testimonialsSubtitle: "數千名旅客已發現 ChinaConnect 的價值。",
       testimonialsTitle: "旅客怎麼說",
+      title: "價格方案",
       traveler: {
         annualNote: "按年付費 ¥659（節省 ¥169）",
         description: "適合活躍旅客：無限 AI、路線規劃與 PDF 匯出。",
@@ -8978,11 +14077,21 @@ export const translations: Record<Language, Translations> = {
         moneyBack: "30 天退款",
         securePayment: "安全付款"
       },
+      trustCancelAnytime: "隨時取消",
+      trustInstantAccess: "即時訪問",
+      trustSecurePayments: "安全支付",
       trustedBy: "全球旅客信�",
       unlimited: "無限"
     },
     profilePage: {
-      title: "我的资料 - ChinaConnect"
+      displayName: "顯示名稱",
+      heading: "Profile",
+      pageTitle2: "我的個人檔案",
+      save: "儲存變更",
+      saved: "已儲存！",
+      subtitle: "Update your display name, avatar and preferences.",
+      title: "我的资料 - ChinaConnect",
+      uploadAvatar: "上傳頭像"
     },
     recents: {
       clearAll: "清空",
@@ -9019,6 +14128,22 @@ export const translations: Record<Language, Translations> = {
       username: "使用者名稱",
       usernamePlaceholder: "你的顯示名稱"
     },
+    registerPage: {
+      pageDescription: "建立您的 ChinaConnect 帳戶",
+      pageTitle: "註冊 - ChinaConnect"
+    },
+    restaurantPage: {
+      address: "Address",
+      avgPrice: "Avg. price",
+      back: "Back",
+      cuisine: "Cuisine",
+      hours: "Hours",
+      metaFooter: "ChinaConnect food recommendations",
+      otherNearby: "Other restaurants nearby",
+      rating: "Rating",
+      signatureDishes: "Signature dishes",
+      viewOnMap: "View on map"
+    },
     restaurants: {
       address: "地址",
       avgPrice: "人均价格",
@@ -9044,6 +14169,8 @@ export const translations: Record<Language, Translations> = {
       shareTip: "分享给朋友"
     },
     userPage: {
+      heading: "個人檔案",
+      pageTitle2: "使用者個人檔案",
       title: "用户资料 - ChinaConnect"
     }
   },
