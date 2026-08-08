@@ -1,4 +1,10 @@
-﻿-- ============================================================
+DROP FUNCTION IF EXISTS public.get_user_ai_usage(UUID) CASCADE;
+
+DROP FUNCTION IF EXISTS public.increment_ai_usage(UUID) CASCADE;
+
+DROP FUNCTION IF EXISTS public.update_ai_usage_tier(UUID, TEXT) CASCADE;
+
+-- ============================================================
 -- AI Usage Tracking Migration
 -- Server-side monthly AI request counters (eliminates localStorage refresh bug)
 -- Version: 3.0.0
@@ -8,6 +14,16 @@
 -- ============================================================
 -- AI USAGE TABLE (per-user, per-period)
 -- ============================================================
+DROP POLICY IF EXISTS "Users can view their own usage" ON public.ai_usage;
+
+DROP FUNCTION IF EXISTS public.get_user_ai_usage(UUID) CASCADE;
+
+DROP FUNCTION IF EXISTS public.increment_ai_usage(UUID) CASCADE;
+
+DROP FUNCTION IF EXISTS public.update_ai_usage_tier(UUID, TEXT) CASCADE;
+
+DROP TABLE IF EXISTS public.ai_usage CASCADE;
+
 CREATE TABLE IF NOT EXISTS public.ai_usage (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid()::uuid,
     user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
@@ -42,7 +58,7 @@ RETURNS TABLE (
     period_reset_at TIMESTAMPTZ,
     tier_slug TEXT,
     max_requests INTEGER
-) AS 
+) AS $$
 DECLARE
     v_period TEXT;
     v_reset_at TIMESTAMPTZ;
@@ -68,7 +84,7 @@ BEGIN
         v_tier := 'free';
         INSERT INTO public.ai_usage (user_id, period_yyyymm, request_count, period_reset_at, tier_slug)
         VALUES (p_user_id, v_period, 0, v_reset_at, v_tier)
-        ON CONFLICT (user_id, period_yyyymm) DO NOTHING;
+        ON CONFLICT ON CONSTRAINT ai_usage_user_id_period_yyyymm_key DO NOTHING;
     END IF;
 
     -- Resolve max for tier
@@ -82,9 +98,9 @@ BEGIN
         ELSE 5
     END;
 
-    RETURN QUERY SELECT v_count, v_period, v_reset_at, v_tier, v_max;
+    RETURN QUERY SELECT v_count AS request_count, v_period AS period_yyyymm, v_reset_at AS period_reset_at, v_tier AS tier_slug, v_max AS max_requests;
 END;
- LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
 
 -- ============================================================
 -- RPC: increment_ai_usage
@@ -97,7 +113,7 @@ RETURNS TABLE (
     request_count INTEGER,
     max_requests INTEGER,
     tier_slug TEXT
-) AS 
+) AS $$
 DECLARE
     v_period TEXT;
     v_reset_at TIMESTAMPTZ;
@@ -124,7 +140,7 @@ BEGIN
         -- Still bump counter for analytics
         INSERT INTO public.ai_usage (user_id, period_yyyymm, request_count, period_reset_at, tier_slug)
         VALUES (p_user_id, v_period, 1, v_reset_at, v_tier)
-        ON CONFLICT (user_id, period_yyyymm) DO UPDATE
+        ON CONFLICT ON CONSTRAINT ai_usage_user_id_period_yyyymm_key DO UPDATE
             SET request_count = public.ai_usage.request_count + 1,
                 updated_at = NOW();
         v_count := 1;
@@ -132,7 +148,7 @@ BEGIN
         v_allowed := TRUE;
         INSERT INTO public.ai_usage (user_id, period_yyyymm, request_count, period_reset_at, tier_slug)
         VALUES (p_user_id, v_period, 1, v_reset_at, v_tier)
-        ON CONFLICT (user_id, period_yyyymm) DO UPDATE
+        ON CONFLICT ON CONSTRAINT ai_usage_user_id_period_yyyymm_key DO UPDATE
             SET request_count = public.ai_usage.request_count + 1,
                 updated_at = NOW();
         v_count := v_count + 1;
@@ -142,14 +158,14 @@ BEGIN
 
     RETURN QUERY SELECT v_allowed, v_count, v_max, v_tier;
 END;
- LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
 
 -- ============================================================
 -- RPC: update_ai_usage_tier
 -- Called when user upgrades/downgrades subscription
 -- ============================================================
 CREATE OR REPLACE FUNCTION public.update_ai_usage_tier(p_user_id UUID, p_tier_slug TEXT)
-RETURNS VOID AS 
+RETURNS VOID AS $$
 DECLARE
     v_period TEXT;
     v_reset_at TIMESTAMPTZ;
@@ -159,11 +175,11 @@ BEGIN
 
     INSERT INTO public.ai_usage (user_id, period_yyyymm, request_count, period_reset_at, tier_slug)
     VALUES (p_user_id, v_period, 0, v_reset_at, p_tier_slug)
-    ON CONFLICT (user_id, period_yyyymm) DO UPDATE
+    ON CONFLICT ON CONSTRAINT ai_usage_user_id_period_yyyymm_key DO UPDATE
         SET tier_slug = EXCLUDED.tier_slug,
             updated_at = NOW();
 END;
- LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
 
 -- ============================================================
 -- ai_conversations: add summary column for sidebar display
