@@ -77,9 +77,21 @@ export const onRequest: PagesFunction = async (context) => {
 
       // Replace <title> with the localized title when available (works around prerendered static mode)
       const localizedTitle = (() => {
-        if (locale === "zh-CN") return "ChinaGuide AI - 你的智能中国旅行助手";
-        if (locale === "zh-TW") return "ChinaGuide AI - 你的智能中國旅行助手";
-        return null;
+        const TITLES = {
+          en: "ChinaGuide AI - Your Intelligent China Travel Expert",
+          ja: "ChinaGuide AI - 中国旅行のスマートアシスタント",
+          ko: "ChinaGuide AI - 중국 여행 인텔리전트 어시스턴트",
+          "zh-CN": "ChinaGuide AI - 你的智能中国旅行助手",
+          "zh-TW": "ChinaGuide AI - 你的智能中國旅行助手",
+          th: "ChinaGuide AI - ผู้ช่วยอัจฉริยะสำหรับการท่องเที่ยวจีน",
+          vi: "ChinaGuide AI - Trợ lý du lịch Trung Quốc thông minh",
+          ru: "ChinaGuide AI - Ваш интеллектуальный помощник по Китаю",
+          fr: "ChinaGuide AI - Votre assistant intelligent pour la Chine",
+          de: "ChinaGuide AI - Ihr intelligenter China-Reiseassistent",
+          ar: "ChinaGuide AI - مساعدك الذكي للسفر إلى الصين",
+          fa: "ChinaGuide AI - دستیار هوشمند سفر به چین",
+        };
+        return TITLES[locale] || null;
       })();
       if (localizedTitle) {
         modifiedHtml = modifiedHtml.replace(
