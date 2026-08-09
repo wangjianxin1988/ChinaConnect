@@ -1,0 +1,104 @@
+---
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+import VisaGuideClient from "@/components/Guide/VisaGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from "@/i18n/utils";
+import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+const lang = (Astro.params.lang as string) || "en";
+
+// Visa Guide page SEO
+const pageTitle = translations.en.guidePage?.visaTitle || "Visa Guide - ChinaConnect";
+const pageDescription = translations.en.guidePage?.visaDescription || "Complete visa application guide for China travel. Requirements by country, application process, required documents, and tips for tourists.";
+
+// Schema.org JSON-LD for Visa Guide
+const visaSchemas = [
+  generateHowToSchema({
+    name: "How to Apply for a China Tourist Visa",
+    description: "Step-by-step guide for international visitors on applying for a China L tourist visa including document preparation, application process, and interview tips.",
+    steps: [
+      { name: "Determine Your Visa Type", text: "Most tourists need an L (tourist) visa. Business visitors may need M or F visas." },
+      { name: "Gather Required Documents", text: "Valid passport, visa application form, photo, itinerary, hotel bookings, and proof of finances." },
+      { name: "Complete the Application Form", text: "Fill out the China visa application form (Form V.2013) online or at the consulate." },
+      { name: "Submit Application", text: "Submit to Chinese embassy/consulate/visa center with applicable fees." },
+      { name: "Collect Your Passport", text: "Standard processing takes 4 business days, express service available." },
+    ],
+    totalTime: "PT2H",
+  }),
+  generateFAQSchema([
+    {
+      question: "How long does it take to get a China tourist visa?",
+      answer: "Standard processing takes 4 business days. Express service (2-3 days) or super express (1 day) available for additional fees."
+    },
+    {
+      question: "Can I get a China visa on arrival?",
+      answer: "China does not offer visas on arrival for most nationalities. You must apply before traveling at a Chinese embassy, consulate, or authorized visa center."
+    },
+    {
+      question: "How much does a China visa cost?",
+      answer: "Visa fees vary by nationality and processing speed. US citizens pay approximately $140 for standard processing. Check with your local Chinese embassy for exact fees."
+    },
+    {
+      question: "Do I need an invitation letter for a China visa?",
+      answer: "For tourist visas, an invitation letter is not always required but strengthens your application. Business visas typically require an invitation from a Chinese company."
+    },
+  ]),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaengage.org/" },
+    { name: "Travel Guide", url: "https://chinaengage.org/guide" },
+    { name: "Visa Guide", url: "https://chinaengage.org/guide/visa" },
+  ]),
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: ['China visa guide', 'visa application', 'China tourist visa', 'L visa', 'visa requirements'],
+  }}
+>
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(visaSchemas)} />
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors" data-i18n="guidePage.home">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors" data-i18n="guidePage.travelGuide">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium" data-i18n="guidePage.visaTitleShort">Visa Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">📋</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground" data-i18n="guidePage.visaTitleShort">Visa Guide</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="guidePage.visaSubtitle">签证指南 - Complete guide for China visa application</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">✈️</span>
+        <div>
+          <h2 class="font-semibold" data-i18n="guidePage.visaStageTitle">Stage 1: Pre-departure Preparation</h2>
+          <p class="text-sm text-muted-foreground" data-i18n="guidePage.visaStageDescription">Apply for visa, gather documents, and prepare for your trip</p>
+        </div>
+      </div>
+    </div>
+
+    <VisaGuideClient client:load lang={lang} />
+  </main>
+</BaseLayout>

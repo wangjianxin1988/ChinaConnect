@@ -1,0 +1,47 @@
+---
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as string) || "en";
+
+
+import TranslationServiceClient from "@/components/Guide/TranslationServiceClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from '@/i18n/utils';
+---
+
+<BaseLayout
+  title={translations.en.businessGuidePage?.translationTitle || "Translation & Interpreting Services - ChinaConnect"}
+  description={translations.en.businessGuidePage?.translationDescription || "Book vetted interpreters and translators for meetings, conferences, and negotiations in China."}
+  meta={{
+    keywords: ['interpreter China', 'Chinese translation services', 'Chinese translator booking', 'consecutive interpreting China', 'simultaneous interpreting'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a href="/guide" class="text-primary hover:underline mb-4 inline-block flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span data-i18n="businessGuidePage.backToGuide">← Back to Travel Guide</span>
+      </a>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-4xl">🌍</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground" data-i18n="businessGuidePage.translationShort">Translation & Interpreting</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.translationSubtitle">Translation & Interpreting</p>
+        </div>
+      </div>
+      <p class="text-muted-foreground max-w-2xl">
+        Book professional interpreters and translators for your business visits in China.
+        From consecutive interpreting at meetings to certified document translation for visa applications.
+      </p>
+    </div>
+
+    <TranslationServiceClient client:load lang={lang} />
+  </main>
+</BaseLayout>

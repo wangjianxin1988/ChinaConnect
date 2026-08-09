@@ -1,0 +1,46 @@
+---
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as string) || "en";
+
+
+import EtiquetteClient from "@/components/Guide/EtiquetteClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getLangFromUrl } from '@/i18n/utils';
+---
+
+<BaseLayout
+  title="Chinese Business Etiquette Guide - ChinaConnect"
+  description="Master Chinese business etiquette including business card exchange, dining, meetings, and gift giving. Practical do's and don'ts for foreign business professionals."
+  meta={{
+    keywords: ['Chinese business etiquette', 'China business etiquette', 'business card exchange China', 'Chinese dining etiquette', 'Business Etiquette Essentials'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a href="/guide" class="text-primary hover:underline mb-4 inline-block flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span data-i18n="businessGuidePage.backToGuide">← Back to Travel Guide</span>
+      </a>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-4xl">🎯</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground" data-i18n="businessGuidePage.etiquetteShort">Business Etiquette Essentials</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.etiquetteSubtitle">Business Etiquette Essentials</p>
+        </div>
+      </div>
+      <p class="text-muted-foreground max-w-2xl">
+        Master the unwritten rules of Chinese business culture. From business card exchange to dining etiquette —
+        practical guidance to help you earn respect and build lasting relationships.
+      </p>
+    </div>
+
+    <EtiquetteClient client:load lang={lang} />
+  </main>
+</BaseLayout>

@@ -1,0 +1,53 @@
+---
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+import { CitiesListClient } from "@/components/city/CitiesListClient";
+import { cities, citiesMeta } from "@/data/cities/index";
+import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from "@/i18n/utils";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+const lang = (Astro.params.lang as string) || "en";
+const t = translations[lang] || translations.en;
+const pageTitle = t.cities?.pageTitle ?? translations.en.cities.pageTitle;
+const pageDescription = t.cities?.pageDescription ?? translations.en.cities.pageDescription;
+
+const citiesSchemas = [
+  generateCollectionPageSchema({
+    name: t.cities?.pageTitle ?? translations.en.cities.pageTitle,
+    description: pageDescription,
+    url: "https://chinaengage.org/cities",
+    numberOfItems: citiesMeta.length,
+  }),
+  generateBreadcrumbSchema([
+    { name: t.nav?.home ?? "Home", url: "https://chinaengage.org/" },
+    { name: t.cities?.title ?? "Cities", url: "https://chinaengage.org/cities" },
+  ]),
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: ['China cities', 'Beijing', 'Shanghai', 'Guangzhou', "Xi'an", 'Chengdu', 'travel guide', 'S-tier cities', 'A-tier cities'],
+  }}
+  lang={lang}
+>
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(citiesSchemas)} />
+
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="cities.title">Explore All Cities</h1>
+      <p class="text-gray-600" data-i18n="cities.subtitle">Discover the best of China with our comprehensive city guides</p>
+    </div>
+
+    <CitiesListClient citiesMeta={citiesMeta} citiesData={cities} client:load />
+  </main>
+</BaseLayout>

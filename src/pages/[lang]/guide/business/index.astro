@@ -1,0 +1,149 @@
+---
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+/**
+ * Business Express Index
+ * Landing page for /guide/business — lists all business tools.
+ * The /guide page already has a Business Express section linking here.
+ */
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = (Astro.params.lang as string) || "en";
+const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
+
+const tools = [
+  {
+    title: "Invitation Letter Templates",
+    titleCn: "商务邀请函模板",
+    icon: "✉️",
+    description:
+      "Download ready-to-use bilingual invitation letters for visa applications. Editable formats covering trade delegations, conference attendance, and partner visits.",
+    href: "/guide/business/invitation-letter",
+  },
+  {
+    title: "Expo & Event Calendar",
+    titleCn: "展会与活动日历",
+    icon: "📅",
+    description:
+      "Plan your trips around China's top trade shows and industry events. Canton Fair, CIIE, design weeks, and hundreds of regional expos with dates and venues.",
+    href: "/guide/business/expo-calendar",
+  },
+  {
+    title: "Company Registration Guide",
+    titleCn: "工商注册指南",
+    icon: "🏢",
+    description:
+      "Step-by-step guide to setting up a WFOE, JV, or representative office in China. Documents, timelines, costs, and the latest 2026 regulatory updates.",
+    href: "/guide/business/company-registration",
+  },
+  {
+    title: "Business Etiquette Essentials",
+    titleCn: "商务礼仪要点",
+    icon: "🤝",
+    description:
+      "Master Chinese business culture, dining etiquette, gift-giving customs, and meeting protocols. Avoid common mistakes and build lasting guanxi.",
+    href: "/guide/business/etiquette",
+  },
+  {
+    title: "Translation & Interpreting",
+    titleCn: "翻译服务预约",
+    icon: "🌍",
+    description:
+      "Book professional interpreters and translators for your business visits in China. Consecutive and simultaneous interpreting, certified document translation.",
+    href: "/guide/business/translation",
+  },
+];
+---
+
+<BaseLayout
+  title={translations.en.businessGuidePage?.indexTitle || "Business Express - ChinaConnect"}
+  description={translations.en.businessGuidePage?.indexDescription || "Practical tools for foreign business travelers in China."}
+  meta={{
+    keywords: [
+      "China business guide",
+      "Business Express",
+      "China invitation letter",
+      "China WFOE",
+      "China business etiquette",
+      "China interpreter booking",
+    ],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <a
+        href="/guide"
+        class="text-primary hover:underline mb-4 inline-block flex items-center gap-2"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span data-i18n="businessGuidePage.backToGuide">← Back to Travel Guide</span>
+      </a>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-4xl">💼</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-foreground" data-i18n="businessGuidePage.backToGuide">
+            Business Express
+          </h1>
+          <p class="text-muted-foreground text-lg" data-i18n="businessGuidePage.indexSubtitle">Business Express</p>
+        </div>
+      </div>
+      <p class="text-muted-foreground max-w-2xl">
+        Bilingual business tools that pair with the rest of the China Travel
+        Guide. Every link here is also reachable from
+        <a
+          href="/guide#business-tools"
+          class="text-primary hover:underline font-medium"
+          >/guide → Business Tools</a
+        >.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {
+        tools.map((t) => (
+          <a
+            href={t.href}
+            class="group block rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+          >
+            <div class="text-3xl mb-3">{t.icon}</div>
+            <h2 class="text-lg font-bold text-foreground mb-1 group-hover:text-primary">
+              {t.title}
+            </h2>
+            {showTitleCn && (
+              <p class="text-xs text-muted-foreground mb-3">{t.titleCn}</p>
+            )}
+            <p class="text-sm text-muted-foreground leading-relaxed">
+              {t.description}
+            </p>
+            <span class="mt-4 inline-flex items-center gap-1 text-sm text-primary font-medium">
+              Open
+              <svg
+                class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
+              </svg>
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </main>
+</BaseLayout>

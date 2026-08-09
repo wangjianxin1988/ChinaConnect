@@ -1,0 +1,435 @@
+---
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+import "@/styles/global.css";
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
+import { APP_RECOMMENDATIONS } from "@/data/apps/app-recommendations";
+import { cities, citiesMeta } from "@/data/cities/index";
+import type { Restaurant } from "@/data/cities/types";
+import { getLangFromUrl } from "@/i18n/utils";
+import { translations } from "@/i18n/translations";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { generateBreadcrumbSchema, generateCollectionPageSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+const lang = (Astro.params.lang as string) || "en";
+const showTitleCn = lang === 'zh-CN' || lang === 'zh-TW';
+
+// Unified category system shared with city/[slug]/food.astro
+import { getHighlightCategory, CATEGORY_CONFIG, CATEGORY_ORDER } from "@/data/food/categories";
+
+// Calculate food statistics per city from city JSON data
+const citiesWithFoodStats = cities.map((city) => {
+  const restaurants = city.restaurants || [];
+  const categoryCounts: Record<string, number> = {};
+  for (const r of restaurants) {
+    const cat = getHighlightCategory(r);
+    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+  }
+  const meta = citiesMeta.find((m) => m.slug === city.slug);
+
+  return {
+    slug: city.slug,
+    name: city.name,
+    nameEn: city.nameEn,
+    nameZh: meta?.nameZh || city.name,
+    coverImage: city.coverImage,
+    totalRestaurants: restaurants.length,
+    categoryCounts,
+  };
+});
+
+// Sort by total restaurant count
+citiesWithFoodStats.sort((a, b) => b.totalRestaurants - a.totalRestaurants);
+
+// Aggregate category counts across all cities
+const totalByCategory: Record<string, number> = {};
+for (const c of citiesWithFoodStats) {
+  for (const [cat, count] of Object.entries(c.categoryCounts)) {
+    totalByCategory[cat] = (totalByCategory[cat] || 0) + count;
+  }
+}
+const totalMichelin = totalByCategory["michelin"] || 0;
+const totalBlackpearl = totalByCategory["blackpearl"] || 0;
+
+// Schema.org JSON-LD for Food listing
+const foodSchemas = [
+  generateCollectionPageSchema({
+    name: (translations[lang] || translations.en).foodPage?.pageTitle ?? "Chinese Restaurants",
+    description: `Discover ${totalMichelin}+ Michelin-starred restaurants, ${totalBlackpearl}+ Black Pearl establishments, and local favorites across Chinese cities. Find the best Chinese cuisine with detailed reviews, locations, and travel tips.`,
+    url: "https://chinaengage.org/food",
+    numberOfItems: cities.reduce((sum, c) => sum + (c.restaurants?.length || 0), 0),
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaengage.org/" },
+    { name: (translations[lang] || translations.en).foodPage?.title ?? "Food Guide", url: "https://chinaengage.org/food" },
+  ]),
+];
+---
+
+<BaseLayout
+  title={(translations[lang] || translations.en).foodPage?.pageTitle ?? translations.en.foodPage.pageTitle}
+  description={(translations[lang] || translations.en).foodPage?.pageDescription ?? translations.en.foodPage.pageDescription}
+  meta={{
+    keywords: ['China food', 'Michelin restaurants', 'Black Pearl', 'local food', 'city food guide'],
+  }}
+  lang={lang}
+>
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(foodSchemas)} />
+
+  <main class="container mx-auto px-4 py-8">
+    <!-- Hero Section -->
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4" data-i18n="foodPage.title">China Food Map</h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        <span data-i18n="foodPage.subtitle">Discover China’s most loved dishes, curated cities, and curated restaurants</span>
+      </p>
+
+      <!-- Stats -->
+      <div class="flex flex-wrap justify-center gap-6 mt-8">
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-amber-600">{totalMichelin}</div>
+          <div class="text-sm text-amber-700" data-i18n="foodPage.filterMichelin">Michelin</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-slate-700">{totalBlackpearl}</div>
+          <div class="text-sm text-slate-600" data-i18n="foodPage.filterBlackPearl">Black Pearl</div>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-red-600">{totalByCategory["local"] || 0}</div>
+          <div class="text-sm text-red-700" data-i18n="foodPage.filterLocal">Local Picks</div>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-blue-600">{totalByCategory["affordable"] || 0}</div>
+          <div class="text-sm text-blue-700" data-i18n="foodPage.filterBudget">Budget</div>
+        </div>
+        <div class="bg-orange-50 border border-orange-200 rounded-xl px-6 py-3">
+          <div class="text-2xl font-bold text-orange-600">{totalByCategory["street_food"] || 0}</div>
+          <div class="text-sm text-orange-700" data-i18n="foodPage.filterCasual">Casual</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Filter Tabs -->
+    <section class="mb-8">
+      <div class="flex flex-wrap gap-2 justify-center" id="category-filter-buttons">
+        <button
+          data-category="all"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn ring-2 ring-offset-1 ring-orange-300 bg-gray-50 border-gray-200 text-gray-700"
+        >
+          <span>🍽️</span>
+          <span><span data-i18n="foodPage.filterAll">All</span></span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-white/40">
+            {citiesWithFoodStats.reduce((sum, c) => sum + c.totalRestaurants, 0)}
+          </span>
+        </button>
+        <button
+          data-category="local_recommend"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>❤️</span>
+          <span><span data-i18n="foodPage.filterLocal">Local</span></span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalByCategory["local"] || 0}
+          </span>
+        </button>
+        <button
+          data-category="michelin"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>⭐</span>
+          <span><span data-i18n="foodPage.filterMichelin">Michelin</span></span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalMichelin}
+          </span>
+        </button>
+        <button
+          data-category="blackpearl"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>💎</span>
+          <span><span data-i18n="foodPage.filterBlackPearl">Black Pearl</span></span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalBlackpearl}
+          </span>
+        </button>
+        <button
+          data-category="affordable"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>💙</span>
+          <span><span data-i18n="foodPage.filterBudget">Affordable</span></span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalByCategory["affordable"] || 0}
+          </span>
+        </button>
+        <button
+          data-category="street_food"
+          class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all category-btn bg-white border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700"
+        >
+          <span>🔥</span>
+          <span><span data-i18n="foodPage.filterStreetFood">Street Food</span></span>
+          <span class="text-xs rounded-full px-2 py-0.5 bg-gray-100">
+            {totalByCategory["street_food"] || 0}
+          </span>
+        </button>
+      </div>
+
+      <!-- Filter info -->
+      <div class="mt-4 text-center">
+        <p class="text-gray-600 text-sm">
+          <span data-i18n="foodPage.showingCount">Showing</span> <span class="font-semibold text-gray-900" id="city-count">{citiesWithFoodStats.length}</span> <span data-i18n="foodPage.citiesUnit">cities</span>
+          <span id="filter-info"></span>
+        </p>
+      </div>
+    </section>
+
+    <!-- City Grid -->
+    <section>
+      <div id="city-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {citiesWithFoodStats.map((city) => (
+          <a
+            href={`/city/${city.slug}/food`}
+            data-categories={JSON.stringify(city.categoryCounts)}
+            data-total={city.totalRestaurants}
+            class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 city-card"
+          >
+            <!-- Cover Image -->
+            <div class="aspect-video bg-gray-200 overflow-hidden relative">
+              {city.coverImage ? (
+                <img
+                  src={city.coverImage}
+                  alt={city.nameZh}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              ) : (
+                <div class="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                  <span class="text-4xl">🏙️</span>
+                </div>
+              )}
+              <!-- Gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <!-- City name on image -->
+              <div class="absolute bottom-3 left-4 text-white">
+                <h3 class="text-xl font-bold">{city.nameZh}</h3>
+                <p class="text-sm opacity-90">{city.nameEn}</p>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="p-4">
+              <div class="flex items-center justify-between text-sm mb-2">
+                <span class="text-gray-500">{city.totalRestaurants} <span data-i18n="foodPage.restaurantsUnit">restaurants</span></span>
+              </div>
+              <!-- Category badges -->
+              <div class="flex flex-wrap items-center gap-2 text-xs">
+                {city.michelinCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200" title="Michelin" data-i18n-title="foodPage.filterMichelin">
+                    ⭐ {city.michelinCount}
+                  </span>
+                )}
+                {city.blackpearlCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200" title="Black Pearl" data-i18n-title="foodPage.filterBlackPearl">
+                    💎 {city.blackpearlCount}
+                  </span>
+                )}
+                {city.localRecommendCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-50 text-red-700 border border-red-200" title="Local Favorites" data-i18n-title="foodPage.filterLocal">
+                    ❤️ {city.localRecommendCount}
+                  </span>
+                )}
+                {city.affordableCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200" title="Affordable" data-i18n-title="foodPage.filterBudget">
+                    💙 {city.affordableCount}
+                  </span>
+                )}
+                {city.streetFoodCount > 0 && (
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-orange-50 text-orange-700 border border-orange-200" title="Street Food" data-i18n-title="foodPage.filterStreetFood">
+                    🔥 {city.streetFoodCount}
+                  </span>
+                )}
+              </div>
+
+              <!-- CTA -->
+              <div class="mt-3 flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-700">
+                <span data-i18n="foodPage.exploreFood">Explore Food</span>
+                <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <!-- Empty state for filtered results -->
+      <div id="empty-state" class="text-center py-16 hidden">
+        <div class="text-6xl mb-4">🍽️</div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="foodPage.cityEmpty">No cities yet</h3>
+        <p class="text-gray-500 mb-6" data-i18n="foodPage.cityEmptyDesc">There are no cities in this category — please pick another category.</p>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="mt-16 text-center bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4" data-i18n="foodPage.noCityTitle">Can't find the city you want?</h2>
+      <p class="text-gray-600 mb-6" data-i18n="foodPage.bottomCtaDesc">Browse our city list and explore more destinations in China.</p>
+      <a
+        href="/city/shanghai"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition-colors"
+      >
+        <span data-i18n="foodPage.emptyCta">Start from Shanghai</span>
+        <span>→</span>
+      </a>
+    </section>
+
+    <!-- Food Apps Section -->
+    <section class="mt-16 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+        <span>🍜</span> Essential Food Apps
+      </h2>
+      <p class="text-gray-600 mb-6" data-i18n="foodPage.essentialFoodAppsDesc">Download these apps to order food delivery and discover local restaurants with English menus.</p>
+
+      <EmbeddedAppRecommendation
+        client:visible
+        categories={["food"]}
+        essentialOnly={true}
+      />
+
+      <div class="mt-6 bg-white rounded-xl p-4 border border-orange-100">
+        <h3 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+          <span>💡</span> Pro Tips for Food Apps
+        </h3>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>• <strong>Meituan</strong> has English menu translation for many restaurants</li>
+          <li>• <strong>Dianping</strong> is great for finding local favorites with English reviews</li>
+          <li>• <strong>Ele.me</strong> offers the widest delivery coverage but may default to Chinese</li>
+          <li>• Link your foreign card to Alipay/WeChat Pay before ordering</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Client-side category filtering for food listing page
+    (function() {
+      const filterButtons = document.querySelectorAll('.category-btn');
+      const cityGrid = document.getElementById('city-grid');
+      const cityCount = document.getElementById('city-count');
+      const filterInfo = document.getElementById('filter-info');
+      const emptyState = document.getElementById('empty-state');
+
+      const categoryMeta: Record<string, { icon: string; labelKey: string; colorClass: string }> = {
+        'all': { icon: '🍽️', labelKey: 'foodPage.filter全部', colorClass: 'bg-gray-50 border-gray-200 text-gray-700' },
+        'local_recommend': { icon: '❤️', labelKey: 'foodPage.filter本地人推荐', colorClass: 'bg-red-50 border-red-200 text-red-700' },
+        'michelin': { icon: '⭐', labelKey: 'foodPage.filter米其林', colorClass: 'bg-amber-50 border-amber-200 text-amber-700' },
+        'blackpearl': { icon: '💎', labelKey: 'foodPage.filter黑珍珠', colorClass: 'bg-slate-800 border-slate-600 text-slate-200' },
+        'affordable': { icon: '💙', labelKey: 'foodPage.filter平价美食', colorClass: 'bg-blue-50 border-blue-200 text-blue-700' },
+        'street_food': { icon: '🔥', labelKey: 'foodPage.filter苍蝇馆子', colorClass: 'bg-orange-50 border-orange-200 text-orange-700' },
+      };
+
+      // Map category id to data-attribute name
+      const categoryAttrMap: Record<string, string> = {
+        'all': 'total',
+        'michelin': 'michelin',
+        'blackpearl': 'blackpearl',
+        'local_recommend': 'localRecommend',
+        'affordable': 'affordable',
+        'street_food': 'streetFood',
+      };
+
+      function applyFilter(category: string) {
+        if (!cityGrid) return;
+
+        const cards = cityGrid.querySelectorAll('.city-card');
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const cardEl = card as HTMLElement;
+          let count = 0;
+          
+          if (category === 'all') {
+            count = parseInt(cardEl.getAttribute('data-total') || '0', 10);
+          } else {
+            try {
+              const cats = JSON.parse(cardEl.getAttribute('data-categories') || '{}');
+              count = cats[category] || 0;
+            } catch { count = 0; }
+          }
+
+          if (category === 'all' || count > 0) {
+            cardEl.style.display = '';
+            visibleCount++;
+          } else {
+            cardEl.style.display = 'none';
+          }
+        });
+
+        // Update city count
+        if (cityCount) {
+          cityCount.textContent = visibleCount.toString();
+        }
+
+        // Update filter info
+        if (filterInfo) {
+          if (category === 'all') {
+            filterInfo.innerHTML = '';
+          } else {
+            const meta = categoryMeta[category];
+            if (meta) {
+              filterInfo.innerHTML = ` <span data-i18n="foodPage.filteringLabel">Filtering:</span> <span class="font-medium text-orange-600">${meta.icon} ${meta.labelKey}</span>`;
+            }
+          }
+        }
+
+        // Show/hide empty state
+        if (emptyState) {
+          emptyState.classList.toggle('hidden', visibleCount > 0);
+        }
+        if (cityGrid) {
+          (cityGrid as HTMLElement).style.display = visibleCount === 0 ? 'none' : '';
+        }
+
+        // Update active button state
+        filterButtons.forEach((btn) => {
+          const btnEl = btn as HTMLElement;
+          const btnCategory = btnEl.dataset.category;
+          const isActive = btnCategory === category;
+          const meta = btnCategory ? categoryMeta[btnCategory] : null;
+
+          // Reset classes
+          btnEl.classList.remove('ring-2', 'ring-offset-1', 'ring-orange-300', 'ring-slate-400', 'bg-gray-50', 'bg-white', 'bg-amber-50', 'bg-red-50', 'bg-blue-50', 'bg-orange-50', 'border-gray-200', 'border-amber-200', 'border-red-200', 'border-blue-200', 'border-orange-200', 'border-slate-600', 'bg-slate-800', 'text-gray-700', 'text-amber-700', 'text-red-700', 'text-blue-700', 'text-orange-700', 'text-slate-200', 'text-gray-500');
+
+          if (isActive) {
+            btnEl.classList.add('ring-2', 'ring-offset-1', 'ring-orange-300');
+            // Apply the category's color
+            if (meta?.colorClass) {
+              meta.colorClass.split(' ').forEach(cls => btnEl.classList.add(cls));
+            }
+            const badge = btnEl.querySelector('.text-xs');
+            if (badge) {
+              badge.classList.remove('bg-gray-100');
+              badge.classList.add('bg-white/40');
+            }
+          } else {
+            btnEl.classList.add('bg-white', 'border-gray-200', 'text-gray-500');
+            const badge = btnEl.querySelector('.text-xs');
+            if (badge) {
+              badge.classList.remove('bg-white/40');
+              badge.classList.add('bg-gray-100');
+            }
+          }
+        });
+      }
+
+      // Add click handlers
+      filterButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const category = (btn as HTMLElement).dataset.category || 'all';
+          applyFilter(category);
+        });
+      });
+    })();
+  </script>
+</BaseLayout>

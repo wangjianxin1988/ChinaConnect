@@ -1,0 +1,62 @@
+---
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as string) || "en";
+
+
+import DiningGuideClient from "@/components/Guide/DiningGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from '@/i18n/utils';
+
+const pageTitle = translations.en.guidePage?.diningTitle || "Dining Guide - ChinaConnect";
+const pageDescription = translations.en.guidePage?.diningDescription || "Complete dining guide for China. Local cuisines, ordering tips, food safety, and essential phrases for eating in China.";
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: ['China dining guide', 'Chinese food guide', 'China cuisine', 'Sichuan food', 'Cantonese food', 'Chinese dining etiquette'],
+  }}
+>
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors" data-i18n="guidePage.home">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors" data-i18n="guidePage.travelGuide">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium" data-i18n="guidePage.diningTitleShort">Dining Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">🍜</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground" data-i18n="guidePage.diningTitleShort">Dining Guide</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="guidePage.diningSubtitle">餐饮指南 - Complete guide for eating in China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🍽️</span>
+        <div>
+          <h2 class="font-semibold" data-i18n="guidePage.diningStageTitle">Stage 8: Dining & Food Guide</h2>
+          <p class="text-sm text-muted-foreground" data-i18n="guidePage.diningStageDescription">Local cuisines, ordering tips, and food safety in China</p>
+        </div>
+      </div>
+    </div>
+
+    <DiningGuideClient client:load lang={lang} />
+  </main>
+</BaseLayout>

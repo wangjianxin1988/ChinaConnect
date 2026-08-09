@@ -1,0 +1,88 @@
+---
+
+export function getStaticPaths() {
+  const langs = ["ja","ko","zh-CN","zh-TW","th","vi","ru","fr","de","ar","fa"];
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = (Astro.params.lang as string) || "en";
+
+
+import AccommodationGuideClient from "@/components/Guide/AccommodationGuideClient";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { translations } from "@/i18n/translations";
+import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+import { getLangFromUrl } from '@/i18n/utils';
+
+// Accommodation Guide page SEO
+const pageTitle = translations.en.guidePage?.accommodationTitle || "Accommodation Guide - ChinaConnect";
+const pageDescription = translations.en.guidePage?.accommodationDescription || "Complete accommodation guide for China travel. Hotel types, booking tips, check-in process, and useful phrases for your stay.";
+
+// Schema.org JSON-LD for Accommodation Guide
+const accommodationSchemas = [
+  generateHowToSchema({
+    name: "How to Book and Check into Hotels in China",
+    description: "Step-by-step guide for booking hotels and completing check-in procedures in China as a foreign visitor.",
+    steps: [
+      { name: "Book Online or App", text: "Use Booking.com, Ctrip, or Fliggy to book hotels. International sites often have better English support." },
+      { name: "Prepare Documents", text: "Have your passport ready. Hotels require passport registration for all foreign guests." },
+      { name: "Complete Registration", text: "Fill out the temporary residence form at check-in. Some hotels use digital registration." },
+      { name: "Payment", text: "Pay via Alipay, WeChat Pay, or credit card depending on hotel policy." },
+      { name: "Keep Registration Slip", text: "Keep your hotel registration slip - you may need it for police checks or other hotel bookings." },
+    ],
+    totalTime: "PT30M",
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaengage.org/" },
+    { name: "Travel Guide", url: "https://chinaengage.org/guide" },
+    { name: "Accommodation Guide", url: "https://chinaengage.org/guide/accommodation" },
+  ]),
+];
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: ['China hotel guide', 'China accommodation', 'China booking', 'Chinese hotel tips', 'China hostel'],
+  }}
+>
+  <!-- Schema.org JSON-LD for SEO/GEO -->
+  <script type="application/ld+json" set:html={generateJsonLdScript(accommodationSchemas)} />
+
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 text-sm">
+      <ol class="flex items-center gap-2 text-muted-foreground">
+        <li><a href="/" class="hover:text-foreground transition-colors" data-i18n="guidePage.home">Home</a></li>
+        <li><span>/</span></li>
+        <li><a href="/guide" class="hover:text-foreground transition-colors" data-i18n="guidePage.travelGuide">Travel Guide</a></li>
+        <li><span>/</span></li>
+        <li class="text-foreground font-medium" data-i18n="guidePage.accommodationTitleShort">Accommodation Guide</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl">🏨</span>
+        <div>
+          <h1 class="text-4xl font-bold text-foreground" data-i18n="guidePage.accommodationTitleShort">Accommodation Guide</h1>
+          <p class="text-muted-foreground text-lg" data-i18n="guidePage.accommodationSubtitle">住宿指南 - Complete guide for staying in China</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stage indicator -->
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🛏️</span>
+        <div>
+          <h2 class="font-semibold" data-i18n="guidePage.accommodationStageTitle">Stage 9: Accommodation Guide</h2>
+          <p class="text-sm text-muted-foreground" data-i18n="guidePage.accommodationStageDescription">Hotels, hostels, and vacation rentals in China</p>
+        </div>
+      </div>
+    </div>
+
+    <AccommodationGuideClient client:load lang={lang} />
+  </main>
+</BaseLayout>
