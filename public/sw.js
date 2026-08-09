@@ -1,7 +1,7 @@
 // ChinaConnect Service Worker with Workbox-style caching strategies
 // Version: 1.1.0 - Enhanced offline support
 
-const CACHE_VERSION = "v1.1.0";
+const CACHE_VERSION = "v1.2.0-mslna5nh";
 const CACHE_NAME = `chinaconnect-${CACHE_VERSION}`;
 
 // Workbox-style cache names for different strategies
@@ -79,6 +79,12 @@ self.addEventListener("activate", (event) => {
 
   // Take control of all clients immediately
   self.clients.claim();
+    self.clients.matchAll({ includeUncontrolled: true }).then(function(list){
+      for (var i=0;i<list.length;i++){
+        var c=list[i];
+        if (c && typeof c.navigate === "function"){ try{ c.navigate(c.url); }catch(e){} }
+      }
+    });
 });
 
 // Fetch event - implement caching strategies
@@ -102,6 +108,15 @@ self.addEventListener("fetch", (event) => {
   }
 
   // Determine caching strategy based on request type
+  // HTML navigation must use network-first so newly deployed pages become
+  // visible immediately. The old cache-first strategy kept stale (or
+  // missing) pages from a previous build in offline cache.
+  if (isHTMLNavigation(request)) {
+    event.respondWith(networkFirstWithCacheFallback(request, DYNAMIC_CACHE));
+    return;
+  }
+
+
   if (isStaticAsset(url)) {
     // Cache-first strategy for static assets
     event.respondWith(cacheFirstStrategy(request, STATIC_CACHE));
@@ -124,6 +139,12 @@ self.addEventListener("fetch", (event) => {
 
 function isStaticAsset(url) {
   return url.pathname.match(/\.(js|css|woff2?|ttf|eot|ico|svg|png|jpg|jpeg|gif|webp)$/);
+}
+
+function isHTMLNavigation(request) {
+  if (request.mode === "navigate") return true;
+  const accept = request.headers.get("accept") || "";
+  return accept.includes("text/html");
 }
 
 function isCityPage(url) {
