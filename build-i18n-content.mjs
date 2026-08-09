@@ -1,9 +1,8 @@
-import { readdirSync, readFileSync, statSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+﻿import { readdirSync, readFileSync, statSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const LANGS = ['ja', 'ko', 'th', 'vi', 'ru', 'fr', 'de', 'ar', 'fa', 'zh-CN', 'zh-TW'];
 
-// Load canonical (en) city data
 function walk(dir) {
   const out = [];
   for (const e of readdirSync(dir)) {
@@ -31,7 +30,7 @@ for (const lang of LANGS) {
   for (const f of files) {
     const d = JSON.parse(readFileSync(f, 'utf8'));
     const slug = d.slug;
-    const merged = JSON.parse(JSON.stringify(d)); // deep clone
+    const merged = JSON.parse(JSON.stringify(d));
 
     // City-level
     if (merged.description) {
@@ -39,24 +38,41 @@ for (const lang of LANGS) {
       if (v) merged.description = v;
     }
     if (merged.culturalTips) {
-      merged.culturalTips = merged.culturalTips.map((t, i) => tr[`city.${slug}.culturalTip.${i}`] || t);
+      merged.culturalTips = merged.culturalTips.map((t, i) => {
+        const translatedContent = tr[`city.${slug}.culturalTip.${i}`];
+        if (translatedContent && typeof t === 'object') {
+          return { ...t, content: translatedContent };
+        }
+        return t;
+      });
     }
     if (merged.highlights) {
       merged.highlights = merged.highlights.map((t, i) => tr[`city.${slug}.highlight.${i}`] || t);
     }
-    if (merged.quickFacts && Array.isArray(merged.quickFacts)) {
-      merged.quickFacts = merged.quickFacts.map(f2 => {
-        if (!f2 || !f2.label) return f2;
-        const key = `city.${slug}.fact.${f2.label.toLowerCase().replace(/[^a-z0-9]+/g, '_')}`;
-        return { ...f2, label: tr[key] || f2.label };
-      });
+    if (merged.climate) {
+      if (merged.climate.tips) {
+        const v = tr[`city.${slug}.climate.tips`];
+        if (v) merged.climate.tips = v;
+      }
+      if (merged.climate.type) {
+        const v = tr[`city.${slug}.climate.type`];
+        if (v) merged.climate.type = v;
+      }
+    }
+    if (merged.quickFacts) {
+      for (const k of Object.keys(merged.quickFacts)) {
+        if (typeof merged.quickFacts[k] === 'string') {
+          const v = tr[`city.${slug}.fact.${k}`];
+          if (v) merged.quickFacts[k] = v;
+        }
+      }
     }
 
     // Attractions
     if (merged.attractions) {
       merged.attractions = merged.attractions.map(a => {
         const m = { ...a };
-        for (const k of ['nameEn', 'description', 'address', 'openingHours', 'ticketPrice', 'tips', 'recommendedVisitTime']) {
+        for (const k of ['nameEn', 'description', 'address', 'openingHours', 'ticketPrice', 'tips', 'recommendedVisitTime', 'name', 'category']) {
           if (m[k]) {
             const v = tr[`attr.${a.id}.${k}`];
             if (v) m[k] = v;
@@ -73,7 +89,7 @@ for (const lang of LANGS) {
     if (merged.restaurants) {
       merged.restaurants = merged.restaurants.map(r => {
         const m = { ...r };
-        for (const k of ['nameEn', 'cuisine', 'address', 'hours', 'description']) {
+        for (const k of ['nameEn', 'name', 'cuisine', 'address', 'hours', 'description', 'type']) {
           if (m[k]) {
             const v = tr[`rest.${r.id}.${k}`];
             if (v) m[k] = v;
@@ -94,7 +110,7 @@ for (const lang of LANGS) {
       merged.emergencyContacts = merged.emergencyContacts.map(e => {
         const m = { ...e };
         const eid = e.name ? e.name.toLowerCase().replace(/[^a-z0-9]+/g, '_') : e.phone;
-        for (const k of ['nameEn', 'address', 'notes']) {
+        for (const k of ['nameEn', 'address', 'notes', 'name']) {
           if (m[k]) {
             const v = tr[`emergency.${eid}.${k}`];
             if (v) m[k] = v;
@@ -104,23 +120,9 @@ for (const lang of LANGS) {
       });
     }
 
-    // Hotels
-    if (merged.hotels) {
-      merged.hotels = merged.hotels.map(h => {
-        const m = { ...h };
-        const hid = h.id || h.nameEn;
-        for (const k of ['nameEn', 'description', 'address']) {
-          if (m[k]) {
-            const v = tr[`hotel.${hid}.${k}`];
-            if (v) m[k] = v;
-          }
-        }
-        return m;
-      });
-    }
-
-    writeFileSync(join(langDir, slug + '.json'), JSON.stringify(merged, null, 2), 'utf8');
+    const outFile = join(langDir, slug + '.json');
+    writeFileSync(outFile, JSON.stringify(merged, null, 2), 'utf8');
   }
-  console.log(lang, 'done');
+  console.log(lang + ' done');
 }
-console.log('all langs written to', outDir);
+console.log('all langs written to ' + outDir);

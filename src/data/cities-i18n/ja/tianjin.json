@@ -9,14 +9,14 @@
     "lng": 117.3616
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "天津は北京の近くの沿岸大都市で、独特のヨーロッパの植民地時代の建築と現代的なスカイラインが融合しています。「五大道」の過去の外国租界、独特な小吃文化、古い町並みとモダンな開発が融合しています。",
+  "description": "Tianjin, a bustling port city near Beijing, blends European colonial architecture with traditional Chinese culture. Famous for the Ancient Culture Street, food culture featuring Mahua and Goubuli baozi, and the impressive Tianjin Eye Ferris wheel.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
-    "天津之眼 - 巨大な観覧車",
-    "古文化街 - 伝統的な建築",
-    "五大道 - ヨーロッパの建築",
-    "天津古文化街",
-    "海河 waterfront"
+    "Tianjin Eye - Giant Ferris wheel",
+    "Ancient Culture Street - Traditional architecture",
+    "Five Great Avenues - European architecture",
+    "Tianjin Ancient Cultural Street",
+    "Haihe River waterfront"
   ],
   "climate": {
     "type": "Humid continental climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
-    "tips": "春と秋が最適。 夏は蒸し暑い。 冬は寒く乾燥。 春はゴビ砂漠から砂嵐。"
+    "tips": "Best in spring and autumn. Summers hot and humid. Winters cold and dry. Spring brings sandstorms from Gobi Desert."
   },
   "attractions": [
     {
@@ -60,22 +60,22 @@
       "name": "古文化街",
       "nameEn": "Ancient Culture Street",
       "category": "cultural",
-      "description": "伝統的な建築、寺院、地元の工芸品が立ち並ぶ歴史的な通りです。",
-      "address": "和平区 Ancient Culture Street",
+      "description": "Historic street with traditional architecture, temples, and local crafts.",
+      "address": "Ancient Culture Street, Heping District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "openingHours": "24時間営業（店舗は09:00-21:00）",
-      "ticketPrice": "無料",
-      "recommendedVisitTime": "2-3時間",
+      "openingHours": "Open 24 hours (shops 09:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "天后宮",
-        "伝統的なお店",
-        "広東オペラ",
-        "地元の軽食"
+        "Tianhou Temple",
+        "Traditional shops",
+        "Cantonese opera",
+        "Local snacks"
       ],
-      "tips": "雰囲気を楽しむなら朝がおすすめです。麻花や茶を試してみてください。海河でのボートライドもお勧めです。",
+      "tips": "Best in morning for atmosphere. Try mahua and tea. Take boat ride on Haihe.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 022  9903 5780"
     },
@@ -771,46 +771,46 @@
     {
       "id": "dabeiyuan",
       "name": "大悲禅院",
-      "nameEn": "Dabei Temple",
+      "nameEn": "大悲院",
       "category": "temple",
-      "description": "天津最大的佛教寺院，始建于清初，寺内有释迦牟尼佛真身舍利。",
-      "address": "天津市河北区天纬路40号",
+      "description": "天津最大の仏教寺院で、清の初期に創建され、境内には釈迦牟尼佛の真身舎利が安置されています。",
+      "address": "天津市河北区天緯路40号",
       "coordinates": {
         "lat": 39.15,
         "lng": 117.1833
       },
       "openingHours": "09:00-16:30",
       "ticketPrice": "10元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "佛教文化",
-        "舍利",
-        "古建筑"
+        "仏教文化",
+        "舎利",
+        "古建築"
       ],
-      "tips": "农历初一十五有法会。",
+      "tips": "旧暦の1日と15日には法要が行われます。",
       "image": "/img/ext/18221e03b368.webp",
       "phone": "+86 022  3501 2823"
     },
     {
       "id": "binjiang-road",
       "name": "滨江道",
-      "nameEn": "Binjiang Road",
+      "nameEn": "濱江道",
       "category": "street",
-      "description": "天津最繁华的商业街，全长2094米，汇集各大商场和品牌。",
-      "address": "天津市和平区滨江道",
+      "description": "天津で最も賑やかな商業通りで、全長2094メートル，大小様々な商场やブランドが集結しています。",
+      "address": "天津市和平区濱江道",
       "coordinates": {
         "lat": 39.1167,
         "lng": 117.2
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "openingHours": "終日",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "商业街",
-        "购物",
-        "美食"
+        "商店街",
+        "ショッピング",
+        "グルメ"
       ],
-      "tips": "与和平路步行街相连。",
+      "tips": "和平路歩行者天国につながる。",
       "image": "/img/ext/b5d669b537f9.webp",
       "phone": "+86 022  5956 4726"
     },
@@ -819,21 +819,21 @@
       "name": "天津动物园",
       "nameEn": "Tianjin Zoo",
       "category": "nature",
-      "description": "华北地区最大的动物园之一，有300多种动物，大熊猫馆最受欢迎。",
-      "address": "天津市南开区水上公园东路",
+      "description": "中国北華地域で最大の動物園の一つで、300種以上の動物がおり、パンダ館が最も人気がある。",
+      "address": "天津市南開区水上公園東路",
       "coordinates": {
         "lat": 39.0833,
         "lng": 117.15
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "20元",
-      "recommendedVisitTime": "半天",
+      "recommendedVisitTime": "半日",
       "highlights": [
-        "大熊猫",
-        "海洋馆",
-        "儿童乐园"
+        "ジャイアントパンダ",
+        "水族館",
+        "子供遊園地"
       ],
-      "tips": "与水上公园相邻。",
+      "tips": "水上公園に隣接している。",
       "image": "/img/ext/c09fcbe63c84.webp",
       "phone": "+86 022  6240 0267"
     },
@@ -1238,19 +1238,19 @@
       "name": "耳朵眼炸糕",
       "nameEn": "Erduoyan Fried Cake",
       "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "cuisine": "天津小吃",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "2 Nanshi Gate, Hebei District",
+      "address": "天津市河北区南市大街2号",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "08:00-20:00",
-      "description": "Famous for crispy red bean fried cakes, a Tianjin specialty since 1905.",
+      "description": "1905年以来有名な天津名物のサクサクした小豆揚げケーキが自慢の店です。",
       "dishHighlights": [
-        "Red bean fried cake",
-        "Sweet rice cake",
+        "小豆揚げケーキ（天津風揚げパン）",
+        "お餅（甘い餅）",
         "Osmanthus cake"
       ],
       "tags": [
@@ -2210,9 +2210,9 @@
         "狗不理包子"
       ],
       "tags": [
-        "家常菜",
-        "老字号",
-        "本地人爱去"
+        "家庭料理",
+        "百年老店",
+        "地元の人々に愛される"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/43efc67235a7.webp"
@@ -2220,28 +2220,28 @@
     {
       "id": "tianjin-46",
       "name": "传统狗不理包子",
-      "nameEn": "传统狗不理包子 (狗不理包子)",
+      "nameEn": "伝統的な狗不理包子（狗不理包子）",
       "type": "local",
       "cuisine": "狗不理包子",
       "avgPrice": 114,
       "rating": 4.6,
-      "address": "天津市新城区美食街23号",
+      "address": "天津市新城 区美食街23号",
       "coordinates": {
         "lat": 39.0935,
         "lng": 117.2084
       },
       "phone": "+86 022 88361771",
-      "hours": "11:00-14:00, 17:00-21:30",
-      "description": "天津本地人推荐的狗不理包子店，味道正宗，价格实惠",
+      "hours": "11:00-14:00、17:00-21:30",
+      "description": "天津の地元の人々が推薦する狗不理包子店。味は本場で、価格も手頃",
       "dishHighlights": [
-        "锅巴菜",
-        "煎饼果子",
+        "鍋巴菜",
+        "煎餅果子",
         "狗不理包子"
       ],
       "tags": [
-        "家常菜",
-        "本地人爱去",
-        "老字号"
+        "家庭料理",
+        "地元の人々に愛される",
+        "老舖"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fee83336f69b.webp"
@@ -2249,9 +2249,9 @@
     {
       "id": "tianjin-48",
       "name": "老街锅巴菜",
-      "nameEn": "老街锅巴菜 (锅巴菜)",
+      "nameEn": "老街鍋巴菜（鍋巴菜）",
       "type": "local",
-      "cuisine": "锅巴菜",
+      "cuisine": "鍋巴菜",
       "avgPrice": 55,
       "rating": 4,
       "address": "天津市老城区美食街65号",
@@ -2261,16 +2261,16 @@
       },
       "phone": "+86 022 51593187",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "天津本地人推荐的锅巴菜店，味道正宗，价格实惠",
+      "description": "天津出身の人がおすすめする鍋巴菜の専門店で、味は本格的で価格も手頃です",
       "dishHighlights": [
         "麻花",
         "狗不理包子",
-        "煎饼果子"
+        "煎餅果子"
       ],
       "tags": [
-        "性价比高",
-        "本地人爱去",
-        "家常菜"
+        "コストパフォーマンスが高い",
+        "地元の人々に愛される",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/546ce9afbe94.webp"
@@ -2278,7 +2278,7 @@
     {
       "id": "tianjin-50",
       "name": "街边狗不理包子",
-      "nameEn": "街边狗不理包子 (狗不理包子)",
+      "nameEn": "路地裏の狗不理包子（狗不理包子）",
       "type": "local",
       "cuisine": "狗不理包子",
       "avgPrice": 139,
@@ -2289,17 +2289,17 @@
         "lng": 117.1713
       },
       "phone": "+86 022 58403011",
-      "hours": "11:00-14:00, 17:00-21:30",
-      "description": "天津本地人推荐的狗不理包子店，味道正宗，价格实惠",
+      "hours": "11:00-14:00、17:00-21:30",
+      "description": "天津の名物包子店として地元の人々に 추천받，味道正宗，价格实惠。天津の地元 사람들이 추천するゴブリ包子店。本格的な味わいで、価格も手頃",
       "dishHighlights": [
-        "狗不理包子",
-        "煎饼果子",
-        "锅巴菜"
+        "ゴブリ包子",
+        "ジエンビンゲzco（煎餅果子）",
+        "グオバーツァイ（鍋巴菜）"
       ],
       "tags": [
-        "排队王",
-        "老字号",
-        "家常菜"
+        "行列の名店",
+        "昔ながらの店",
+        "家庭料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/837a4b25a5ec.png"
@@ -2307,9 +2307,9 @@
     {
       "id": "tianjin-52",
       "name": "老天津煎饼果子",
-      "nameEn": "老天津煎饼果子 (煎饼果子)",
+      "nameEn": "老天津ジエンビンゲzco（煎餅果子）",
       "type": "local",
-      "cuisine": "煎饼果子",
+      "cuisine": "ジエンビンゲzco（煎餅果子）",
       "avgPrice": 96,
       "rating": 4.1,
       "address": "天津市新城区美食街173号",
@@ -2319,10 +2319,10 @@
       },
       "phone": "+86 022 88311991",
       "hours": "10:00-22:00",
-      "description": "天津本地人推荐的煎饼果子店，味道正宗，价格实惠",
+      "description": "天津の地元 사람들이 추천するジエンビンゲzco店。本格的な味わいで、価格も手頃",
       "dishHighlights": [
-        "麻花",
-        "煎饼果子",
+        "マホワ（麻花）",
+        "ジエンビンゲzco（煎餅果子）",
         "狗不理包子"
       ],
       "tags": [
@@ -3131,90 +3131,90 @@
     {
       "type": "ambulance",
       "name": "天津急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "天津市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "天津医科大学总医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Medical University General Hospital",
       "phone": "+86 22 6036 2222",
-      "address": "Guangzhou",
+      "address": "154 Anshan Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "天津市第一中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin First Central Hospital",
       "phone": "+86 22 2362 6600",
-      "address": "Guangzhou",
+      "address": "24 Fukang Road, Nankai District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with English staff"
     },
     {
       "type": "tourist-police",
       "name": "天津旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Tourist Police",
       "phone": "+86 22 2303 1710",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "天津消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "美国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Tianjin",
       "phone": "+86 22 2318 8888",
-      "address": "Guangzhou",
+      "address": "No. 46 Nanjing Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "notes": "For Singapore citizens"
+      "notes": "Located in Tianjin's main tourist area"
     },
     {
       "type": "embassy",
       "name": "英国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Tianjin",
       "phone": "+86 22 2318 9000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Silver Tower, 56 Nanjing Road",
+      "notes": "For UK citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "法国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Tianjin",
       "phone": "+86 22 2312 3000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "5th Floor, Friendship Pavilion",
+      "notes": "For French citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "日本驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Tianjin",
       "phone": "+86 22 2313 0015",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Jiangmen Road, Heping District",
+      "notes": "For Japanese citizens in Tianjin region"
     }
   ],
   "quickFacts": {

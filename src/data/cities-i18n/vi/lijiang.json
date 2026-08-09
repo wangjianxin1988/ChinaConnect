@@ -9,14 +9,14 @@
     "lng": 100.2295
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Lệ Giang là một thành phố tuyệt đẹp ở phía tây bắc Vân Nam, nổi tiếng với Phố cổ Lệ Giang được UNESCO công nhận với kiến trúc Naxi và hệ thống kênh đào. Nằm giữa dãy Himalaya và cao nguyên Vân Nam-Quý Châu, nơi đây mang đến phong cảnh thiên nhiên stunning bao gồm Núi Tuyết Ngọc Long và vẻ đẹp thanh bình của hồ Lugu. Là quê hương của các dân tộc thiểu số Naxi, Bạch, Di và các dân tộc khác với truyền thống văn hóa phong phú.",
+  "description": "Lijiang is a picturesque city in northwestern Yunnan province, famous for the UNESCO World Heritage-listed Lijiang Old Town with its Naxi architecture and canal system. Nestled between the Himalayas and Yunnan-Guizhou Plateau, it offers stunning natural scenery including Jade Dragon Snow Mountain and the peaceful beauty of Lugu Lake. Home to the Naxi, Bai, Yi, and other ethnic minorities with rich cultural traditions.",
   "coverImage": "/img/ext/aa2ff2381270.webp",
   "highlights": [
-    "Phố cổ Lệ Giang - Di sản thế giới UNESCO",
-    "Núi tuyết Ngọc Long - Đỉnh núi tuyệt đẹp",
-    "Hồ Lục Cừ - Hồ núi cao nguyên thuần khiết",
-    "Hẻm núi Hổ Nhảy - Hẻm núi hùng vĩ",
-    "Thị trấn cổ Sa Khê - Văn hóa Naxi đích thực"
+    "Lijiang Old Town - UNESCO World Heritage",
+    "Jade Dragon Snow Mountain - Stunning peaks",
+    "Lugu Lake - Pristine alpine lake",
+    "Tiger Leaping Gorge - Dramatic canyon",
+    "Shaxi Ancient Town - Authentic Naxi culture"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "15-25C (59-77F)",
     "avgWinterTemp": "4-15C (39-59F)",
-    "tips": "Mùa xuân và mùa thu là tốt nhất, ôn hòa và quang đãng. Mùa hè mưa nhiều nhưng xanh tươi. Mùa đông khô và quang đãng nhưng lạnh về đêm. Độ cao lớn nên tia UV cao. Núi tuyết lạnh ngay cả mùa hè, mang áo khoác."
+    "tips": "Spring and autumn are best with mild weather and clear skies. Summer is rainy but lush green. Winter is dry and sunny but cold at night. UV is very strong year-round due to altitude. Jade Dragon Snow Mountain is cold even in summer - bring layers."
   },
   "restaurants": [
     {
@@ -704,11 +704,11 @@
       "dishHighlights": [
         "Yak meat dishes",
         "Tsampa (青稞粉)",
-        "Tibetan hospitality"
+        "Lòng hiếu khách Tây Tạng"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "địa phương"
       ],
       "rating": 4,
       "star": 0,
@@ -723,8 +723,8 @@
       "nameEn": "Lijiang Cured Pork Ribs King",
       "cuisine": "Naxi",
       "priceRange": "¥60-100¥",
-      "description": "The most famous restaurant for Lijiang's signature cured pork ribs hotpot, known for authentic recipe and quality ingredients.",
-      "address": "Old Town, Lijiang",
+      "description": "Nhà hàng nổi tiếng nhất về lẩu sườn heo hun khói đặc sản Lijiang, nổi tiếng với công thức chính hãng và nguyên liệu chất lượng.",
+      "address": "Phố cổ, Lijiang",
       "coordinates": {
         "lat": 26.8747,
         "lng": 100.2344
@@ -738,13 +738,13 @@
       ],
       "tips": "Best known for cured pork ribs hotpot. The broth is salty - dilute with water. Share pot between 2-3 people. Arrive early to avoid queues.",
       "dishHighlights": [
-        "Cured pork ribs hotpot",
-        "Local mushrooms",
-        "Tofu skin"
+        "Lẩu sườn heo hun khói",
+        "Nấm địa phương",
+        "Miến đậu"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "địa phương"
       ],
       "rating": 4.5,
       "star": 0,
@@ -757,15 +757,15 @@
       "id": "lijiang-mushroom-garden",
       "name": "丽江菌菇苑",
       "nameEn": "Lijiang Mushroom Garden",
-      "cuisine": "Wild Mushroom",
+      "cuisine": "Nấm rừng",
       "priceRange": "¥100-200¥",
-      "description": "Premium wild mushroom hotpot restaurant with seasonal varieties from Yunnan highlands, safety-certified and quality guaranteed.",
-      "address": "New City, Lijiang",
+      "description": "Nhà hàng lẩu nấm rừng cao cấp với các loại nấm theo mùa từ cao nguyên Vân Nam, được chứng nhận an toàn và đảm bảo chất lượng.",
+      "address": "Thành phố mới, Lijiang",
       "coordinates": {
         "lat": 26.8847,
         "lng": 100.2417
       },
-      "hours": "11:00-22:00 (seasonal: Jun-Nov)",
+      "hours": "11:00-22:00 (theo mùa: tháng 6-11)",
       "highlights": [
         "Seasonal wild mushrooms",
         "Safety certified",
@@ -774,13 +774,13 @@
       ],
       "tips": "Only open during mushroom season. Book in advance. Ask about today's mushroom selection. Price varies by mushroom type.",
       "dishHighlights": [
-        "Matsutake hotpot",
-        "Porcini mushroom",
-        "Seasonal variety"
+        "Lẩu nấm Matsutake",
+        "Nấm Porcini",
+        "Các loại nấm theo mùa"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "địa phương"
       ],
       "rating": 4.5,
       "star": 0,
@@ -793,10 +793,10 @@
       "id": "lijiang-rooftop-cafe",
       "name": "丽江天台咖啡馆",
       "nameEn": "Lijiang Rooftop Cafe",
-      "cuisine": "Western/Cafe",
+      "cuisine": "Phương Tây/Cafe",
       "priceRange": "¥30-60¥",
-      "description": "Popular cafe with rooftop views of Lijiang Old Town and Jade Dragon Mountain, serving coffee, Western food, and cocktails.",
-      "address": "Old Town rooftops, Lijiang",
+      "description": "Quán cafe nổi tiếng với tầm nhìn từ mái nhà ra cổ trấn Lijiang và núi Rồng Ngọc, phục vụ cà phê, đồ ăn phương Tây và cocktails.",
+      "address": "Mái nhà cổ trấn Lijiang",
       "coordinates": {
         "lat": 26.8761,
         "lng": 100.2333
@@ -811,12 +811,12 @@
       "tips": "Best for sunset views. Arrive early to claim rooftop seats. Good WiFi for digital nomads. Popular with expats and tourists.",
       "dishHighlights": [
         "Cappuccino",
-        "Apple crumble",
-        "Western breakfast set"
+        "Bánh táo crumble",
+        "Bữa sáng phương Tây"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "địa phương"
       ],
       "rating": 4,
       "star": 0,
@@ -829,10 +829,10 @@
       "id": "lijiang-yak-butter-tea",
       "name": "酥油茶馆",
       "nameEn": "Yak Butter Tea House",
-      "cuisine": "Tibetan",
+      "cuisine": "Tây Tạng",
       "priceRange": "¥20-50¥",
-      "description": "Authentic Tibetan teahouse serving yak butter tea, tsampa, and traditional Tibetan snacks in traditional setting.",
-      "address": "Near Black Dragon Pool, Lijiang",
+      "description": "Quán trà Tây Tạng chính hãng phục vụ trà bơ yak, tsampa và các món ăn nhẹ truyền thống Tây Tạng trong không gian truyền thống.",
+      "address": "Gần Hồ Rồng Đen, Lijiang",
       "coordinates": {
         "lat": 26.8783,
         "lng": 100.2289
@@ -846,13 +846,13 @@
       ],
       "tips": "Good introduction to Tibetan culture. The butter tea is salty - acquired taste. Try tsampa with honey. Very authentic experience.",
       "dishHighlights": [
-        "Yak butter tea",
+        "Trà bơ yak",
         "Tsampa",
-        "Tibetan barley cakes"
+        "Bánh mạch Tây Tạng"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "địa phương"
       ],
       "rating": 4,
       "star": 0,
@@ -864,11 +864,11 @@
     {
       "id": "old-town-breakfast",
       "name": "古城早餐店",
-      "nameEn": "Old Town Breakfast Shop",
-      "cuisine": "Local Breakfast",
+      "nameEn": "Cửa hàng Điểm tâm Phố cổ",
+      "cuisine": "Điểm tâm địa phương",
       "priceRange": "¥10-30¥",
-      "description": "Local breakfast spot serving authentic Naxi morning dishes including soybean milk, fried dough sticks, and steamed buns.",
-      "address": "Old Town, Lijiang",
+      "description": "Quán điểm tâm địa phương phục vụ các món ăn sáng Naxi chính hãng bao gồm sữa đậu nành, quẩy rán và bánh bao hấp.",
+      "address": "Phố cổ, Lijiang",
       "coordinates": {
         "lat": 26.8758,
         "lng": 100.2356
@@ -882,8 +882,8 @@
       ],
       "tips": "Best breakfast in old town. Opens very early. Very local - English menu unlikely. Great for authentic local experience.",
       "dishHighlights": [
-        "Soybean milk with fried dough",
-        "Steamed buns with lotus paste",
+        "Sữa đậu nành với quẩy",
+        "Bánh bao hấp nhân bánh sen",
         "Naxi pastries"
       ],
       "type": "local",
@@ -2272,194 +2272,194 @@
     {
       "type": "fire",
       "name": "丽江消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "丽江急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Lijiang city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Lijiang City Center"
     },
     {
       "id": "fire",
       "name": "丽江市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "ambulance",
       "name": "丽江市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-hotline",
       "name": "丽江市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Complaint Hotline",
       "phone": "0888-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-bureau",
       "name": "丽江市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Enforcement",
       "phone": "0888-5122927",
       "type": "tourism",
       "description": "Report illegal tourism activities, price disputes",
-      "address": "Guangzhou"
+      "address": "Lijiang Old Town"
     },
     {
       "id": "gucheng-police",
       "name": "古城区公安分局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Gucheng District Police Station",
       "phone": "0888-5158110",
       "type": "police",
       "description": "Old Town area police station",
-      "address": "Guangzhou"
+      "address": "Gucheng District, Lijiang"
     },
     {
       "id": "medical-advice",
       "name": "丽江市人民医院急诊",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang People's Hospital Emergency",
       "phone": "0888-5160120",
       "type": "medical",
       "description": "Main hospital emergency department",
-      "address": "Guangzhou"
+      "address": "Xin Dayan Road, Lijiang"
     },
     {
       "id": "high-altitude-rescue",
       "name": "丽江高山救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang High Altitude Rescue",
       "phone": "0888-5168110",
       "type": "rescue",
       "description": "Mountain rescue for Jade Dragon Snow Mountain and hiking areas",
-      "address": "Guangzhou"
+      "address": "Jade Dragon Snow Mountain area"
     },
     {
       "id": "weather",
       "name": "丽江市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and mountain weather specifically",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "forestry-fire",
       "name": "丽江森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Forest Fire Prevention",
       "phone": "0888-12119",
       "type": "emergency",
       "description": "Forest fire reporting for Lijiang area",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming (provincial)"
     },
     {
       "id": "lugu-lake-police",
       "name": "泸沽湖派出所",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lugu Lake Police Station",
       "phone": "0888-5881110",
       "type": "police",
       "description": "Police coverage for Lugu Lake area",
-      "address": "Guangzhou"
+      "address": "Lugu Lake area"
     },
     {
       "id": "tiger-leaping-gorge-rescue",
       "name": "虎跳峡救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tiger Leaping Gorge Rescue",
       "phone": "0888-5166110",
       "type": "rescue",
       "description": "Rescue services for Tiger Leaping Gorge hiking area",
-      "address": "Guangzhou"
+      "address": "Tiger Leaping Gorge area"
     },
     {
       "id": "road-emergency",
       "name": "丽江道路救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Road Emergency",
       "phone": "0888-12122",
       "type": "road",
       "description": "Roadside assistance and traffic emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang area roads"
     },
     {
       "id": "lijiang-railway",
       "name": "丽江火车站服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Railway Station",
       "phone": "0888-5129352",
       "type": "transport",
       "description": "Railway ticket inquiries and station services",
-      "address": "Guangzhou"
+      "address": "Lijiang Railway Station"
     },
     {
       "id": "national-tourism-lijiang",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     },
     {
       "id": "lijiang-consumer-complaint",
       "name": "丽江市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Consumer Association",
       "phone": "0888-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-water-emergency",
       "name": "丽江市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Water Supply Company",
       "phone": "0888-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-electricity-emergency",
       "name": "丽江供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     }
   ],
   "culturalTips": [
@@ -3059,22 +3059,22 @@
       "name": "束河古镇",
       "nameEn": "Shaxi Ancient Town",
       "category": "cultural",
-      "description": "太仓市保存完好的古镇，有1300多年历史。镇上老街保存完好，临水建筑、古桥、寺庙构成典型的江南水乡风貌，游客稀少非常安静。",
-      "address": "苏州市太仓市沙溪镇",
+      "description": "Less touristy Naxi town compared to Lijiang Old Town, preserving authentic Naxi architecture and traditional way of life. Also called 'Three Lanes' town.",
+      "address": "Shaxi Town, 8km north of Lijiang",
       "coordinates": {
         "lat": 26.9083,
         "lng": 100.1928
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
       "highlights": [
-        "临水老街",
-        "古桥群",
-        "传统手工艺",
-        "安静氛围"
+        "青龙桥 (Black Dragon Bridge)",
+        "Naxi architecture",
+        "Tea House Square",
+        "Horse caravan history"
       ],
-      "tips": "游客非常少，可以悠闲地逛古镇。从太仓市区可乘公交到达。",
+      "tips": "Visit in early morning or evening to avoid day-trippers. The tea house culture is authentic. Good for buying Naxi handicrafts without tourist markups. Combine with nearby Jade Dragon Snow Mountain.",
       "imageUrl": "/img/ext/557132bee5c8.webp",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 088 8 2751 4951"
@@ -3084,22 +3084,22 @@
       "name": "黑龙潭",
       "nameEn": "Black Dragon Pool",
       "category": "cultural",
-      "description": "Vườn Naxi lịch sử với hình ảnh nổi bật của dãy núi Ngọc Long Băng phản chiếu trong hồ. Có kiến trúc Naxi truyền thống và biểu diễn văn hóa.",
-      "address": "Công viên Black Dragon Pool, Lijiang",
+      "description": "Historic Naxi garden with the iconic view of Jade Dragon Snow Mountain reflected in the pond. Features traditional Naxi architecture and cultural performances.",
+      "address": "Black Dragon Pool Park, Lijiang",
       "coordinates": {
         "lat": 26.8783,
         "lng": 100.2283
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "Miễn phí (cần có CMND/CCCD)",
-      "recommendedVisitTime": "1-2 giờ",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Phản chiếu dãy núi Ngọc Long Băng",
-        "Cầu Năm Phượng Hoàng",
-        "Biểu diễn âm nhạc Naxi",
-        "Đại điện Deyi cổ"
+        "Reflection of Jade Dragon Mountain",
+        "Five Phoenix Bridge",
+        "Naxi music performances",
+        "Ancient Deyi Hall"
       ],
-      "tips": "Điểm chụp ảnh tuyệt đẹp nhất ở Lijiang vào lúc bình minh khi mà bóng núi phản chiếu rõ ràng. Buổi biểu diễn âm nhạc cổ truyền Naxi vào lúc 13:30-14:30 và 15:30-16:30 (nếu thời tiết cho phép). Mang theo CMND/CCCD để vào cửa miễn phí.",
+      "tips": "Best photo spot in Lijiang at sunrise when mountain reflection is clear. Naxi ancient music show at 13:30-14:30 and 15:30-16:30 (weather permitting). Bring ID for free entry.",
       "imageUrl": "/img/ext/7045caf96b31.webp",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 088 8 3749 1716"
@@ -3184,22 +3184,22 @@
       "name": "蓝月谷",
       "nameEn": "Blue Moon Valley",
       "category": "natural",
-      "description": "Một thung lũng tuyệt đẹp băng hà với nước xanh ngọc bích bắt nguồn từ những đỉnh băng tan của núi tuyết Ngọc Long.",
-      "address": "Thung lũng Mặt trăng xanh, Khu phong cảnh núi tuyết Ngọc Long",
+      "description": "A beautiful glacial valley with bright turquoise waters originating from Jade Dragon Snow Mountain's melting glaciers.",
+      "address": "Blue Moon Valley, Jade Dragon Snow Mountain Scenic Area",
       "coordinates": {
         "lat": 27.0856,
         "lng": 100.1628
       },
       "openingHours": "06:30-18:00",
-      "ticketPrice": "Đã bao gồm trong vé núi tuyết (100¥)",
-      "recommendedVisitTime": "2-3 giờ",
+      "ticketPrice": "Included with Snow Mountain ticket (100¥)",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Nước xanh trong suốt",
-        "Quan cảnh thác nước",
-        "Đi bộ rừng",
-        "Phản chiếu như gương"
+        "Crystal clear blue water",
+        "Waterfall views",
+        "Forest hiking",
+        "Mirror-like reflections"
       ],
-      "tips": "Xe điện từ Công viên Băng hà đến Thung lũng Mặt trăng xanh đã được bao gồm. Nước rất lạnh - đừng lội vào. Các bức ảnh đẹp nhất được chụp từ cây cầu. Kết hợp với núi tuyết vào cùng một ngày.",
+      "tips": "Electric car from Glacier Park to Blue Moon Valley included. The water is freezing cold - don't wade in. Best photos from the bridge. Combine with Snow Mountain in same day.",
       "imageUrl": "/img/ext/aae6b4c797b6.webp",
       "image": "/img/ext/2707c54b1ac7.webp",
       "phone": "+86 088 8 7882 4917"
@@ -3609,22 +3609,22 @@
       "name": "巴巴藏族古道",
       "nameEn": "Baba Tibetan Trail",
       "category": "natural",
-      "description": "Con đường leo núi cổ xưa nối các làng Tây Tạng với những phong cảnh núi đẹp, những lá cờ cầu nguyện và văn hóa truyền thống đích thực.",
-      "address": "Khu vực làng Baba, cách Lijiang 40km",
+      "description": "Ancient hiking trail connecting Tibetan villages with stunning mountain views, prayer flags, and authentic culture.",
+      "address": "Baba Village area, 40km from Lijiang",
       "coordinates": {
         "lat": 27.0656,
         "lng": 100.2989
       },
-      "openingHours": "Mở cửa 24/24",
-      "ticketPrice": "Miễn phí",
-      "recommendedVisitTime": "Cả ngày",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Full day",
       "highlights": [
-        "Phong cảnh núi",
-        "Những lá cờ cầu nguyện",
-        "Các làng Tây Tạng",
-        "Văn hóa truyền thống"
+        "Mountain views",
+        "Prayer flags",
+        "Tibetan villages",
+        "Traditional culture"
       ],
-      "tips": "Cần có kinh nghiệm leo núi. Nên thuê hướng dẫn viên địa phương. Mang theo nước và đồ ăn nhẹ. Tốt nhất vào mùa thu. Con đường này rất cổ xưa.",
+      "tips": "Hiking experience required. Local guide recommended. Bring water and snacks. Best in autumn. The trail is ancient.",
       "imageUrl": "/img/ext/02d0711e6d7e.webp",
       "image": "/img/ext/505d95e27bcc.webp",
       "phone": "+86 088 8 9456 8307"
@@ -3683,22 +3683,22 @@
       "name": "白沙古镇",
       "nameEn": "Baisha Village",
       "category": "landmark",
-      "description": "Làng cổ Bạch Sa là nơi phát tích của dòng họ Mộc của người Naxi và là làng cổ lâu đời nhất ở Lệ Giang. Trong làng còn nhiều kiến trúc truyền thống của người Naxi và những bức tường bích họa Bạch Sa, là cửa sổ quan trọng để hiểu văn hóa lịch sử của người Naxi.",
-      "address": "Lệ Giang, huyện Ngọc Long, thành phố Lệ Giang",
+      "description": "白沙古镇是纳西族木氏家族的发祥地，也是丽江最古老的古镇，镇内保留了大量纳西族传统建筑和白沙壁画，是了解纳西族历史文化的重要窗口。",
+      "address": "丽江市玉龙县白沙镇",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
-      "openingHours": "Mở cửa 24/24",
-      "ticketPrice": "Miễn phí (Bức tường bích họa Bạch Sa 30¥)",
-      "recommendedVisitTime": "2-3 giờ",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（白沙壁画30元）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Bức tường bích họa Bạch Sa",
-        "Kiến trúc cổ Bạch Sa",
-        "Văn hóa Naxi",
-        "Phong cảnh núi tuyết"
+        "白沙壁画",
+        "白沙古建筑",
+        "纳西文化",
+        "雪山风光"
       ],
-      "tips": "Bức tường bích họa Bạch Sa là kiệt tác nghệ thuật bích họa thời Minh, đáng để chiêm ngưỡng kỹ lưỡng. Trên đường phố làng có thủ công nghệ thêu tay của người Naxi.",
+      "tips": "白沙壁画是明代壁画艺术的珍品，值得仔细观赏。古镇上有纳西族手工刺绣。",
       "image": "/img/ext/730452fb47f5.webp",
       "phone": "+86 088 8 6387 9562"
     },
@@ -3707,22 +3707,22 @@
       "name": "白沙壁画",
       "nameEn": "Baisha Murals",
       "category": "museum",
-      "description": "Bách Sa Tường Họa là những bức tường họa tôn giáo do chúa tể Mộc thị của dân tộc Naxi trong thời Minh mời họa sĩ Hán, Tạng, Naxi vẽ, kết hợp nhiều nền văn hóa tôn giáo, là một trong những di sản văn hóa quan trọng nhất của Lệ Giang.",
-      "address": "Bách Sa Tường Họa, Thị trấn Bách Sa, Huyện Ngọc Long, Thành phố Lệ Giang",
+      "description": "白沙壁画是明代纳西族土司木氏请汉、藏、纳西等族画师绘制的宗教壁画，融合了多种宗教文化，是丽江最重要的文化遗产之一。",
+      "address": "丽江市玉龙县白沙镇白沙壁画",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "30 Nhân dân tệ",
-      "recommendedVisitTime": "1 giờ",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Tường họa thời Minh",
-        "Sự kết hợp nhiều tôn giáo",
-        "Chủ đề Phật giáo và Đạo giáo",
-        "Văn hóa Naxi"
+        "明代壁画",
+        "多宗教融合",
+        "佛教道教题材",
+        "纳西文化"
       ],
-      "tips": "Không được chụp ảnh tường họa, khuyên bạn nên mời hướng dẫn viên giải thích câu chuyện và bản sắc văn hóa của tường họa.",
+      "tips": "壁画不允许拍照，建议请导游讲解壁画的故事和文化内涵。",
       "image": "/img/ext/c63ef2486ca2.webp",
       "phone": "+86 088 8 5880 3848"
     },

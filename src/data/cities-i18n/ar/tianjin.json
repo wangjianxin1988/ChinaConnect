@@ -9,14 +9,14 @@
     "lng": 117.3616
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "تيانجين مدينة حكومية مباشرة بجوار بكين. تعرف بعمارتها الاستعمارية الفريدة وحي وو دا والمنطقة الإيطالية. مأكولات محلية مثل باوزي باوزي وبوزية أرغو. مناظر جميلة على ضفاف نهر هاي هي.",
+  "description": "Tianjin, a bustling port city near Beijing, blends European colonial architecture with traditional Chinese culture. Famous for the Ancient Culture Street, food culture featuring Mahua and Goubuli baozi, and the impressive Tianjin Eye Ferris wheel.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
-    "عين تيانجين - عجلة فيريس عملاقة",
-    "شارع الثقافة القديمة - معمار تقليدي",
-    "الأزقة الخمس الكبرى - معمار أوروبي",
-    "شارع تيانجين الثقافي القديم",
-    "واجهة نهر هاي هي"
+    "Tianjin Eye - Giant Ferris wheel",
+    "Ancient Culture Street - Traditional architecture",
+    "Five Great Avenues - European architecture",
+    "Tianjin Ancient Cultural Street",
+    "Haihe River waterfront"
   ],
   "climate": {
     "type": "Humid continental climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
-    "tips": "الربيع والخريف هما الأفضل. الصيف حار رطب. الشتاء بارد وجاف. الربيع يجلب عواصف رملية من صحراء جوبي."
+    "tips": "Best in spring and autumn. Summers hot and humid. Winters cold and dry. Spring brings sandstorms from Gobi Desert."
   },
   "attractions": [
     {
@@ -58,24 +58,24 @@
     {
       "id": "ancient-culture-street",
       "name": "古文化街",
-      "nameEn": "شارع الثقافة القديمة",
+      "nameEn": "Ancient Culture Street",
       "category": "cultural",
-      "description": "شارع تاريخي مع العمارة التقليدية والمعابد والحرف اليدوية المحلية.",
-      "address": "شارع الثقافة القديمة، حي هيبينغ",
+      "description": "Historic street with traditional architecture, temples, and local crafts.",
+      "address": "Ancient Culture Street, Heping District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "openingHours": "مفتوح 24 ساعة (المحلات من 09:00 إلى 21:00)",
-      "ticketPrice": "مجاني",
-      "recommendedVisitTime": "2-3 ساعات",
+      "openingHours": "Open 24 hours (shops 09:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "معبد تيانهو",
-        "المحلات التقليدية",
-        "الأوبرا الكانتونية",
-        "المأكولات المحلية"
+        "Tianhou Temple",
+        "Traditional shops",
+        "Cantonese opera",
+        "Local snacks"
       ],
-      "tips": "الأفضل في الصباح للحصول على الأجواء. جرب الماهوا والشاي. خذ جولة بالقارب على نهر هايهي.",
+      "tips": "Best in morning for atmosphere. Try mahua and tea. Take boat ride on Haihe.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 022  9903 5780"
     },
@@ -274,24 +274,24 @@
     {
       "id": "panlong-shuiwu",
       "name": "盘龙水利风景区",
-      "nameEn": "منطقة بانلونغ ليك السياحية",
+      "nameEn": "Panlong Lake Scenic Area",
       "category": "natural",
-      "description": "بحيرة مع حدائق صينية تقليدية ونشاطات مائية.",
-      "address": "منطقة شيتشينغ",
+      "description": "Lake with traditional Chinese gardens and water activities.",
+      "address": "Xiqing District",
       "coordinates": {
         "lat": 39.0622,
         "lng": 117.2522
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "من ساعتين إلى ثلاث ساعات",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "مناظر البحيرة",
-        "المباني التقليدية",
-        "التجديف بالقوارب",
-        "التقاط الصور"
+        "Lake views",
+        "Traditional pavilions",
+        "Boating",
+        "Photography"
       ],
-      "tips": "تكون جميلة عند غروب الشمس. أقل ازدحامًا من حديقة المياه. مناسبة لالتقاط الصور الصينية التقليدية.",
+      "tips": "Beautiful at sunset. Less crowded than Water Park. Great for traditional Chinese photos.",
       "image": "/img/ext/d379551d93fd.webp",
       "phone": "+86 022  2404 0336"
     },
@@ -955,21 +955,21 @@
     {
       "id": "panpan-temple",
       "name": "盘山风景区",
-      "nameEn": "منطقة بانشان السياحية",
+      "nameEn": "Panshan Scenic Area",
       "category": "nature",
-      "description": "حديقة تيانجين الخلفية، تُعرف بجبل دونغجينغ الأول، وتجمع بين المناظر الطبيعية والثقافة البوذية.",
-      "address": "منطقة غوانزهوانغ، مقاطعة جيجو، تيانجين",
+      "description": "天津后花园，有京东第一山之称，集自然风光和佛教文化于一体。",
+      "address": "天津市蓟州区官庄镇",
       "coordinates": {
         "lat": 40.0167,
         "lng": 117.35
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "78元",
-      "recommendedVisitTime": "طوال اليوم",
+      "recommendedVisitTime": "全天",
       "highlights": [
-        "أمطار المساء على الأطباق الثلاثة",
-        "معبد تيانتشنغ",
-        "معبد وانسونغ"
+        "三盘暮雨",
+        "天成寺",
+        "万松寺"
       ],
       "tips": "秋季红叶最美。",
       "image": "/img/ext/20ba084c3257.webp",
@@ -1033,112 +1033,112 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "recommendedVisitTime": "٣٠ دقيقة",
       "highlights": [
         "哥特式建筑",
         "历史事件"
       ],
-      "tips": "天津教案发生地。",
+      "tips": "موقع حادثة ليانغ قوان.",
       "image": "/img/ext/22d290fccb27.webp",
       "phone": "+86 022  1849 6474"
     },
     {
       "id": "tianjin-planetarium",
       "name": "天津科技馆",
-      "nameEn": "Tianjin Science and Technology Museum",
+      "nameEn": "متحف تيانجين للعلوم والتكنولوجيا",
       "category": "museum",
-      "description": "华北地区最大的科技馆，有400多件互动展品。",
-      "address": "天津市河西区隆昌路94号",
+      "description": "أكبر متحف للعلوم في شمال الصين، يضم أكثر من ٤٠٠ exhibits تفاعلية.",
+      "address": "٩٤ شارع لونغ تشانغ، منطقة هي سي، تيانجين",
       "coordinates": {
         "lat": 39.0833,
         "lng": 117.2
       },
-      "openingHours": "09:00-16:30",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "openingHours": "٠٩:٠٠-١٦:٣٠",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "ساعتان",
       "highlights": [
         "互动展品",
         "天文馆",
         "儿童科普"
       ],
-      "tips": "带孩子的好去处。",
+      "tips": "مكان رائع للأطفال.",
       "image": "/img/ext/32a798cad97e.webp",
       "phone": "+86 022  5397 8194"
     },
     {
       "id": "nankai-university",
       "name": "南开大学",
-      "nameEn": "Nankai University",
+      "nameEn": "جامعة نانkai",
       "category": "landmark",
-      "description": "中国著名高等学府，周恩来总理母校，校园环境优美。",
-      "address": "天津市南开区卫津路94号",
+      "description": "جامعة صينية بارزة،母校总理母校، تتميز بجو جامعي جميل",
+      "address": "طريق ويجين رقم 94، منطقة نانكاي، مدينة تيانجين",
       "coordinates": {
         "lat": 39.1,
         "lng": 117.15
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "مفتوح على مدار الساعة",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "ساعة واحدة",
       "highlights": [
-        "百年名校",
-        "周恩来纪念馆",
-        "校园风光"
+        "جامعة عمرها قرن من الزمان",
+        "متحف تشو إن لاي",
+        "مناظر حرم جامعي جميلة"
       ],
-      "tips": "可参观主楼和总理纪念馆。",
+      "tips": "يمكن زيارة المبنى الرئيسي ومتحف رئيس الوزراء.",
       "image": "/img/ext/1b8c36e62bb1.webp",
       "phone": "+86 022  5449 0979"
     },
     {
       "id": "tianjin-university",
       "name": "天津大学",
-      "nameEn": "Tianjin University",
+      "nameEn": "جامعة تيانجين",
       "category": "landmark",
-      "description": "中国第一所现代大学，始建于1895年，前身为北洋大学。",
-      "address": "天津市南开区卫津路92号",
+      "description": "أول جامعة حديثة في الصين، تأسست عام 1895، كانت تعرف سابقاً بجامعة بيايانغ.",
+      "address": "طريق ويجين رقم 92، منطقة نانكاي، مدينة تيانجين",
       "coordinates": {
         "lat": 39.1,
         "lng": 117.15
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "مفتوح على مدار الساعة",
+      "ticketPrice": "مجاني",
+      "recommendedVisitTime": "ساعة واحدة",
       "highlights": [
-        "北洋大学堂",
-        "校园建筑",
-        "历史底蕴"
+        "كلية بيايانغ",
+        "مبانيات الحرم الجامعي",
+        "الإرث التاريخي"
       ],
-      "tips": "与南开大学相邻。",
+      "tips": "تقع بالقرب من جامعة نانكاي.",
       "image": "/img/ext/5486b3929c5b.webp",
       "phone": "+86 022  3449 6949"
     },
     {
       "id": "dagukou",
       "name": "大沽口炮台",
-      "nameEn": "Dagu Fort",
+      "nameEn": "قلعة داغو",
       "category": "landmark",
-      "description": "中国近代史上重要的海防要塞，见证了鸦片战争和八国联军侵华。",
-      "address": "天津市滨海新区大沽口",
+      "description": "من أهم التحصينات الساحلية في التاريخ الصيني الحديث، شهدت حروب الأفيون وغزو القوى الثمانية.",
+      "address": "منطقة بينغاي الجديدة، تيانجين، داجوكو",
       "coordinates": {
         "lat": 38.9667,
         "lng": 117.7167
       },
       "openingHours": "09:00-16:30",
-      "ticketPrice": "20元",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "20 يوان",
+      "recommendedVisitTime": "ساعة واحدة",
       "highlights": [
-        "海防要塞",
-        "历史遗迹"
+        "تحصينات ساحلية",
+        "معلم تاريخي"
       ],
-      "tips": "爱国主义教育基地。",
+      "tips": "قاعدة تعليمية وطنية.",
       "image": "/img/ext/bb8e1a98e04e.webp",
       "phone": "+86 022  4138 1068"
     },
     {
       "id": "binhai-library",
       "name": "滨海图书馆",
-      "nameEn": "Binhai Library",
+      "nameEn": "مكتبة بينغاي",
       "category": "landmark",
-      "description": "由MVRDV设计，内部有34层白色阶梯式书架，被称为最美图书馆。",
+      "description": "صممها MVRDV، وتتميز بـ 34 طابقاً من الرفوف البيضاء على شكل درجات، وتُعتبر أجمل مكتبة.",
       "address": "天津市滨海新区中心图书馆",
       "coordinates": {
         "lat": 39.0167,
@@ -3131,90 +3131,90 @@
     {
       "type": "ambulance",
       "name": "天津急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "天津市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "天津医科大学总医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Medical University General Hospital",
       "phone": "+86 22 6036 2222",
-      "address": "Guangzhou",
+      "address": "154 Anshan Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "天津市第一中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin First Central Hospital",
       "phone": "+86 22 2362 6600",
-      "address": "Guangzhou",
+      "address": "24 Fukang Road, Nankai District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with English staff"
     },
     {
       "type": "tourist-police",
       "name": "天津旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Tourist Police",
       "phone": "+86 22 2303 1710",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "天津消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "美国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Tianjin",
       "phone": "+86 22 2318 8888",
-      "address": "Guangzhou",
+      "address": "No. 46 Nanjing Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "notes": "For Singapore citizens"
+      "notes": "Located in Tianjin's main tourist area"
     },
     {
       "type": "embassy",
       "name": "英国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Tianjin",
       "phone": "+86 22 2318 9000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Silver Tower, 56 Nanjing Road",
+      "notes": "For UK citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "法国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Tianjin",
       "phone": "+86 22 2312 3000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "5th Floor, Friendship Pavilion",
+      "notes": "For French citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "日本驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Tianjin",
       "phone": "+86 22 2313 0015",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Jiangmen Road, Heping District",
+      "notes": "For Japanese citizens in Tianjin region"
     }
   ],
   "quickFacts": {

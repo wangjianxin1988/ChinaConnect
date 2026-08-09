@@ -9,14 +9,14 @@
     "lng": 120.1551
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "杭州是浙江省的省会，以自然美景与历史文化著称。西湖被列入联合国教科文组织世界遗产，京杭大运河孕育了独特的水乡风情。",
+  "description": "Hangzhou, the capital of Zhejiang Province, is famous for its natural beauty and historical culture. Home to West Lake, a UNESCO World Heritage site, and the ancient water town ambiance of the Grand Canal. Known as 'Paradise on Earth' for its mild climate, lush greenery, and elegant gardens. A leading tech hub as headquarters of Alibaba.",
   "coverImage": "/img/ext/c71341b19c1d.webp",
   "highlights": [
-    "西湖 - 联合国教科文组织遗产",
-    "湘湖 - 新景区",
-    "河坊街 - 历史购物街",
-    "灵隐寺 - 古老佛教寺",
-    "西溪湿地 - 城市湿地"
+    "West Lake - UNESCO World Heritage",
+    "Xianghu Lake - New scenic area",
+    "Hefang Street - Historic shopping street",
+    "Lingyin Temple - Ancient Buddhist temple",
+    "Xixi Wetland - Largest urban wetland"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "春赏花秋观叶。夏季热湿多雨。6月梅雨季。环湖步行建议舒适鞋。"
+    "tips": "Best visited in spring for flowers or autumn for golden foliage. Summer is hot and humid with frequent rain. Spring rainy season (Meiyu) in June. Wear comfortable shoes for walking around West Lake."
   },
   "attractions": [
     {
@@ -87,22 +87,22 @@
       "nameEn": "Lingyin Temple",
       "image": "/img/ext/928aa4512683.webp",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on a scenic hill with beautiful gardens.",
-      "address": "Lingyin Temple, Suzhou",
+      "description": "One of the oldest and most famous Buddhist temples in China, dating back to 326 AD, with stunning architecture and rock carvings.",
+      "address": "1 Lingyin Road, Xihu District",
       "coordinates": {
         "lat": 30.2372,
         "lng": 120.1022
       },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "45¥",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "06:30-17:30 (Summer), 07:00-17:30 (Winter)",
+      "ticketPrice": "45¥ (temple), additional 55¥ for Feilai Feng peak",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Temple",
-        "Gardens",
-        "Pagodas",
+        "Feilai Feng peak",
+        "Hall of the Heavenly Kings",
+        "Mahavira Hall",
         "Cave of the 500 Arhats"
       ],
-      "tips": "Climb the hill for views.",
+      "tips": "Arrive early to avoid tour groups. The temple is at the foot of Feilai Feng. Wear modest clothing covering shoulders and knees.",
       "phone": "+86 571 8717 1156"
     },
     {
@@ -469,22 +469,22 @@
       "nameEn": "Canal Square",
       "image": "/img/ext/6aff39cf893f.webp",
       "category": "cultural",
-      "description": "位于杭州大运河南端的河畔广场，拥有历史展览和购物区。",
-      "address": "杭州市拱墅区运河广场",
+      "description": "A riverside plaza at the southern end of the Grand Canal in Hangzhou, with historical displays and shopping areas.",
+      "address": "Canal Square, Gongshu District",
       "coordinates": {
         "lat": 30.2852,
         "lng": 120.1422
       },
-      "openingHours": "24小时开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "水钟塔",
-        "运河博物馆",
-        "夜市",
-        "河畔公园"
+        "Water clock tower",
+        "Canal Museum",
+        "Night market",
+        "Riverside park"
       ],
-      "tips": "晚上最佳，喷泉表演和灯光秀开启时非常美。运河博物馆很棒且免费。可以结合运河游船游览。",
+      "tips": "Evening is best when fountain show and lighting are on. The Canal Museum is excellent and free. Connect with boat tour of canal.",
       "phone": "+86 057 1 1394 2316"
     },
     {
@@ -565,22 +565,22 @@
       "nameEn": "Chaoshan Mountain",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "category": "natural",
-      "description": "一座风景优美的山，以冬春季的梅花闻名，还有古老的寺庙和独特的岩石地貌。",
-      "address": "临平区，潮山",
+      "description": "A scenic mountain famous for plum blossoms in winter and spring, with ancient temples and unique rock formations.",
+      "address": "Chaoshan,临平区",
       "coordinates": {
         "lat": 30.4522,
         "lng": 120.1522
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "梅花海",
-        "唐代古梅树",
-        "潮山寺",
-        "花海"
+        "Plum blossom sea",
+        "Ancient Tang dynasty plum trees",
+        "Chaoshan Temple",
+        "Sea of flowers"
       ],
-      "tips": "梅花盛开季节为2月至3月。寺庙附近的古梅树最为壮观。非常适合摄影。",
+      "tips": "Peak plum blossom season is February-March. The ancient plum trees near the temple are most impressive. Great for photography.",
       "phone": "+86 057 1 0521 3461"
     },
     {
@@ -756,7 +756,7 @@
       "name": "断桥",
       "nameEn": "Broken Bridge",
       "category": "landmark",
-      "description": "西湖十景之一断桥残雪，白娘子与许仙相遇之地。",
+      "description": "西湖十景之断桥残雪，白娘子与许仙相遇地。",
       "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
@@ -1145,7 +1145,7 @@
       "name": "宝石山",
       "nameEn": "Baoshi Mountain",
       "category": "nature",
-      "description": "西湖边的一座小山，山上有保俶塔。",
+      "description": "西湖边的小山，有保俶塔。",
       "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
@@ -1430,29 +1430,29 @@
     {
       "id": "hangzhou-9",
       "name": "龙井茶餐厅",
-      "nameEn": "Longjing Tea Restaurant",
+      "nameEn": "龙井茶餐厅",
       "type": "local",
-      "cuisine": "Tea Cuisine",
+      "cuisine": "茶宴",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Longjing Village, Xihu District",
+      "address": "龙井村，西湖区",
       "coordinates": {
         "lat": 30.2012,
         "lng": 120.0912
       },
       "phone": "+86 571 8797 8888",
       "hours": "09:00-21:00",
-      "description": "Scenic restaurant surrounded by tea gardens serving authentic Longjing tea cuisine and local Hangzhou dishes.",
+      "description": "茶园环绕的风景餐厅，提供正宗的龙井茶宴和当地杭州菜。",
       "dishHighlights": [
-        "Longjing tea chicken",
-        "Tea leaves scrambled eggs",
-        "Steamed fish with tea"
+        "龙井茶鸡",
+        "茶叶炒蛋",
+        "茶蒸鱼"
       ],
       "tags": [
-        "local",
-        "tea-cuisine",
-        "scenic",
-        "garden-view"
+        "本地",
+        "茶宴",
+        "风景",
+        "园景"
       ],
       "star": 0,
       "diamond": 0,
@@ -1461,28 +1461,28 @@
     {
       "id": "hangzhou-10",
       "name": "杭帮菜馆",
-      "nameEn": "Hangbang Cuisine Restaurant",
+      "nameEn": "杭帮菜馆",
       "type": "local",
-      "cuisine": "Hangzhou",
+      "cuisine": "杭州",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "156 Shuguang Road, Xihu District",
+      "address": "曙光路156号，西湖区",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1422
       },
       "phone": "+86 571 8797 6543",
       "hours": "10:30-21:00",
-      "description": "Traditional restaurant specializing in authentic Hangzhou cuisine with focus on classic recipes passed down generations.",
+      "description": "传统餐厅，主打正宗杭帮菜，传承经典菜谱",
       "dishHighlights": [
-        "Hangzhou roast duck",
-        "West Lake vinegar fish",
-        "Dongpo pork"
+        "杭州烤鸭",
+        "西湖醋鱼",
+        "东坡肉"
       ],
       "tags": [
-        "local",
-        "hangzhou-cuisine",
-        "traditional"
+        "本地",
+        "杭帮菜",
+        "传统"
       ],
       "star": 0,
       "diamond": 0,
@@ -1493,27 +1493,27 @@
       "name": "御街宴",
       "nameEn": "Yujie Yan",
       "type": "local",
-      "cuisine": "Zhejiang",
+      "cuisine": "浙江",
       "avgPrice": 180,
       "rating": 4.6,
-      "address": "88 Zhongshan Middle Road, Shangcheng District",
+      "address": "杭州市上城区中山中路88号",
       "coordinates": {
         "lat": 30.2492,
         "lng": 120.1682
       },
       "phone": "+86 571 8770 1234",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale restaurant near Southern Song Imperial Street serving refined Zhejiang dishes in elegant traditional setting.",
+      "description": "位于南宋御街附近的高端餐厅，在优雅的传统环境中供应精致的浙江菜",
       "dishHighlights": [
-        "Braised pork belly with tea leaf",
-        "Steamed bass with scallion",
-        "Hangzhou wontons"
+        "茶香东坡肉",
+        "葱油蒸鲈鱼",
+        "杭州馄饨"
       ],
       "tags": [
-        "local",
-        "upscale",
-        "traditional",
-        "historic-area"
+        "本地菜",
+        "高端",
+        "传统",
+        "历史街区"
       ],
       "star": 0,
       "diamond": 0,
@@ -1522,29 +1522,29 @@
     {
       "id": "hangzhou-12",
       "name": "湖畔大学堂",
-      "nameEn": "Lakeview Dining Hall",
+      "nameEn": "湖景餐厅",
       "type": "local",
-      "cuisine": "Zhejiang",
+      "cuisine": "浙江菜",
       "avgPrice": 250,
       "rating": 4.7,
-      "address": "28 Gushe Road, Xihu District",
+      "address": "古舍路28号西湖区",
       "coordinates": {
         "lat": 30.2432,
         "lng": 120.1502
       },
       "phone": "+86 571 8796 2345",
       "hours": "10:30-22:00",
-      "description": "Elegant lakeside restaurant with beautiful West Lake views, known for traditional Hangzhou dishes and imperial style cooking.",
+      "description": "优雅的湖边餐厅，可欣赏美丽的西湖景色，以传统杭州菜和御膳烹饪闻名",
       "dishHighlights": [
-        "Imperial style shrimp",
-        "Lotus leaf rice",
-        "Crystal pork ribs"
+        "御制虾",
+        "荷叶饭",
+        "水晶排骨"
       ],
       "tags": [
-        "local",
-        "lake-view",
-        "upscale",
-        "hangzhou-cuisine"
+        "本地菜",
+        "湖景",
+        "高端",
+        "杭州菜"
       ],
       "star": 0,
       "diamond": 0,
@@ -1553,29 +1553,29 @@
     {
       "id": "hangzhou-13",
       "name": "香格里拉中餐厅",
-      "nameEn": "Shangri-La Chinese Restaurant",
+      "nameEn": "香格里拉中餐厅",
       "type": "luxury",
-      "cuisine": "Cantonese and Zhejiang",
+      "cuisine": "粤菜和浙江菜",
       "avgPrice": 400,
       "rating": 4.6,
-      "address": "Shangri-La Hotel, 78 Beishan Road",
+      "address": "香格里拉酒店，北山路78号",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1482
       },
       "phone": "+86 571 8797 7890",
-      "hours": "11:30-14:30, 17:30-22:00",
-      "description": "High-end restaurant in Shangri-La hotel serving premium Cantonese and Zhejiang cuisine with professional service.",
+      "hours": "11:30-14:30，17:30-22:00",
+      "description": "香格里拉酒店内的高端餐厅，提供精选粤菜和浙江菜，专业服务。",
       "dishHighlights": [
-        "Bird's nest soup",
-        "Abalone with seasonal vegetables",
-        "Premium dim sum"
+        "燕窝汤",
+        "鲍鱼时蔬",
+        "精致点心"
       ],
       "tags": [
-        "luxury",
-        "hotel",
-        "cantonese",
-        "zhejiang-cuisine"
+        "豪华",
+        "酒店",
+        "粤菜",
+        "浙江菜"
       ],
       "star": 0,
       "diamond": 0,
@@ -1584,29 +1584,29 @@
     {
       "id": "hangzhou-14",
       "name": "老头儿油爆虾",
-      "nameEn": "Lao Tou Er Oil Explosion Shrimp",
+      "nameEn": "老头儿油爆虾",
       "type": "local",
-      "cuisine": "Hangzhou",
+      "cuisine": "杭州菜",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "多家分店",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1582
       },
       "phone": "+86 571 8500 5678",
       "hours": "10:30-21:30",
-      "description": "Popular local chain famous for oil explosion shrimp and authentic Hangzhou home-style dishes at reasonable prices.",
+      "description": "当地知名连锁餐厅，以油爆虾和正宗杭州家常菜闻名，价格实惠。",
       "dishHighlights": [
-        "Oil explosion shrimp",
-        "Braised pork with brown sauce",
-        "Scrambled eggs with tomato"
+        "油爆虾",
+        "红烧肉",
+        "番茄炒蛋"
       ],
       "tags": [
-        "local",
-        "casual",
-        "family-friendly",
-        "value"
+        "本地",
+        "休闲",
+        "适合家庭",
+        "性价比高"
       ],
       "star": 0,
       "diamond": 0,
@@ -1615,29 +1615,29 @@
     {
       "id": "hangzhou-15",
       "name": "粤浙会",
-      "nameEn": "Yue Zhe Hui",
+      "nameEn": "粤浙汇",
       "type": "local",
-      "cuisine": "Cantonese and Zhejiang Fusion",
+      "cuisine": "粤浙融合菜",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "199 Jiaogong Road, Xihu District",
+      "address": "杭州市西湖区教工路199号",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1422
       },
       "phone": "+86 571 8798 4321",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale restaurant blending Cantonese and Zhejiang cuisines, known for fresh seafood and refined cooking techniques.",
+      "description": "高档餐厅，融合粤菜与浙江菜，以新鲜海鲜和精致烹饪技巧著称",
       "dishHighlights": [
-        "Steamed crab with aged wine",
-        "Braised abalone",
-        "Cantonese roast duck"
+        "酒蒸螃蟹",
+        "红烧鲍鱼",
+        "广式烤鸭"
       ],
       "tags": [
-        "local",
-        "upscale",
-        "fusion",
-        "seafood"
+        "本地",
+        "高档",
+        "融合",
+        "海鲜"
       ],
       "star": 0,
       "diamond": 0,
@@ -1646,22 +1646,22 @@
     {
       "id": "hangzhou-16",
       "name": "太子楼",
-      "nameEn": "Tai Zi Lou",
+      "nameEn": "太子楼",
       "type": "local",
-      "cuisine": "Hangzhou",
+      "cuisine": "杭州菜",
       "avgPrice": 150,
       "rating": 4.5,
-      "address": "18 Lingyin Road, Xihu District",
+      "address": "西湖区灵隐路18号",
       "coordinates": {
         "lat": 30.2382,
         "lng": 120.1032
       },
       "phone": "+86 571 8796 8765",
       "hours": "10:00-22:00",
-      "description": "Historic restaurant near Lingyin Temple serving Buddhist vegetarian cuisine and traditional Hangzhou dishes.",
+      "description": "灵隐寺附近的历史餐厅，提供佛教素食和传统杭州菜肴",
       "dishHighlights": [
-        "Buddhist vegetarian hotpot",
-        "Lotus seed soup",
+        "佛教素食火锅",
+        "莲子汤",
         "Seasonal vegetables"
       ],
       "tags": [
@@ -3141,110 +3141,110 @@
     {
       "type": "ambulance",
       "name": "杭州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "English interpretation available at major hospitals"
     },
     {
       "type": "police",
       "name": "杭州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at West Lake area"
     },
     {
       "type": "hospital",
       "name": "浙江大学医学院附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Zhejiang University",
       "phone": "+86 571 8723 6000",
-      "address": "Guangzhou",
+      "address": "79 Qingchun Road",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff, accepts international insurance"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai (nearest US consular services for Hangzhou)",
+      "notes": "For US citizens in Hangzhou region"
     },
     {
       "type": "fire",
       "name": "杭州市消防救援支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "For fire emergencies and rescue operations"
     },
     {
       "type": "tourist-info",
       "name": "杭州旅游咨询服务中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Information Center",
       "phone": "0571-96123",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Scenic Area",
+      "notes": "Tourist complaints and information service"
     },
     {
       "type": "police-special",
       "name": "杭州旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Police",
       "phone": "+86 571 8502 6110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Police Station, Xihu District",
+      "notes": "24-hour tourist police service"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Shanghai",
       "phone": "+86 21 6179 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Shanghai",
       "phone": "+86 21 5292 8000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Australian citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For German citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Shanghai",
       "phone": "+86 21 6218 0021",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Hangzhou region"
     },
     {
       "type": "hospital",
       "name": "邵逸夫医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Sir Run Run Shaw Hospital",
       "phone": "+86 571 8609 0088",
-      "address": "Guangzhou",
+      "address": "3 East Qingchun Road",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Quality international medical services"
     },
     {
       "type": "hotel-booking",
       "name": "杭州旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourism Complaint Hotline",
       "phone": "0571-12345",
-      "notes": "For Singapore citizens"
+      "notes": "For complaints about tourism services"
     }
   ],
   "quickFacts": {

@@ -9,14 +9,14 @@
     "lng": 100.2295
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Лицзян - живописный город на северо-западе провинции Юньнань, знаменитый Старым городом Лицзян, включенным в список Всемирного наследия ЮНЕСКО, с архитектурой народа наси и системой каналов. Расположенный между Гималаями и Юньнань-Гуйчжоуским плато, он предлагает потрясающие природные пейзажи, включая гору Нефритового Дракона и мирную красоту озера Лугу. Дом народов наси, бай, и и других этнических меньшинств с богатыми культурными традициями.",
+  "description": "Lijiang is a picturesque city in northwestern Yunnan province, famous for the UNESCO World Heritage-listed Lijiang Old Town with its Naxi architecture and canal system. Nestled between the Himalayas and Yunnan-Guizhou Plateau, it offers stunning natural scenery including Jade Dragon Snow Mountain and the peaceful beauty of Lugu Lake. Home to the Naxi, Bai, Yi, and other ethnic minorities with rich cultural traditions.",
   "coverImage": "/img/ext/aa2ff2381270.webp",
   "highlights": [
-    "Старый город Лицзяна - Объект ЮНЕСКО",
-    "Снежная гора Нефритового дракона - Величественные вершины",
-    "Озеро Лугу - Первозданное альпийское озеро",
-    "Ущелье Прыгающего тигра - Грандиозный каньон",
-    "Древний город Шаси - Подлинная культура наси"
+    "Lijiang Old Town - UNESCO World Heritage",
+    "Jade Dragon Snow Mountain - Stunning peaks",
+    "Lugu Lake - Pristine alpine lake",
+    "Tiger Leaping Gorge - Dramatic canyon",
+    "Shaxi Ancient Town - Authentic Naxi culture"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "15-25C (59-77F)",
     "avgWinterTemp": "4-15C (39-59F)",
-    "tips": "Лучше всего весна и осень, мягко и ясно. Лето дождливое, но зелёное. Зима сухая и ясная, но холодная ночью. Высокая высота = сильное УФ. Снежная гора холодная даже летом, берите куртку."
+    "tips": "Spring and autumn are best with mild weather and clear skies. Summer is rainy but lush green. Winter is dry and sunny but cold at night. UV is very strong year-round due to altitude. Jade Dragon Snow Mountain is cold even in summer - bring layers."
   },
   "restaurants": [
     {
@@ -469,10 +469,10 @@
       "id": "silk-road-restaurant",
       "name": "丝绸之路餐厅",
       "nameEn": "Silk Road Restaurant",
-      "cuisine": "мусульманская/северо-западная китайская",
+      "cuisine": "Muslim/Northwest Chinese",
       "priceRange": "¥50-90¥",
-      "description": "Ресторан, предлагающий блюда мусульманской кухни из северо-западного Китая, включая лапшу ручной вытяжки и блюда из баранины.",
-      "address": "Новый город, Лицзян",
+      "description": "Restaurant serving Muslim-influenced cuisine from China's northwest, including hand-pulled noodles and lamb dishes.",
+      "address": "New City, Lijiang",
       "coordinates": {
         "lat": 26.8844,
         "lng": 100.2378
@@ -486,13 +486,13 @@
       ],
       "tips": "Good alternative to Yunnan food. The hand-pulled noodles are freshly made. No pork - Muslim restaurant. Large portions.",
       "dishHighlights": [
-        "Лапша ручной вытяжки",
-        "Баранина на шампурах",
-        "Сушеная говядина"
+        "Hand-pulled noodles",
+        "Lamb kebabs",
+        "Dried beef"
       ],
       "type": "local",
       "tags": [
-        "местная"
+        "local"
       ],
       "rating": 4,
       "star": 0,
@@ -937,10 +937,10 @@
       "id": "snow-mountain-view-restaurant",
       "name": "雪山观景餐厅",
       "nameEn": "Snow Mountain View Restaurant",
-      "cuisine": "Юньнань",
+      "cuisine": "Yunnan",
       "priceRange": "¥80-150¥",
-      "description": "Ресторан у подножия горы Юйлун Снежная гора с потрясающими видами на горы из больших окон, предлагающий блюда местной кухни.",
-      "address": "Деревня Юйху, рядом с горой Юйлун",
+      "description": "Restaurant at foot of Jade Dragon Snow Mountain with stunning mountain views from large windows, serving local cuisine.",
+      "address": "Yuhu Village, near Jade Dragon",
       "coordinates": {
         "lat": 26.9944,
         "lng": 100.2044
@@ -954,13 +954,13 @@
       ],
       "tips": "Best combined with snow mountain visit. Book window table for views. The view while eating is unforgettable. Prices are touristy.",
       "dishHighlights": [
-        "Форель из местной реки",
-        "Курица на свободном выгуле",
-        "Блюда из дикорастущих трав"
+        "Trout from local stream",
+        "Free-range chicken",
+        "Wild vegetable dishes"
       ],
       "type": "local",
       "tags": [
-        "местная"
+        "local"
       ],
       "rating": 4,
       "star": 0,
@@ -2272,194 +2272,194 @@
     {
       "type": "fire",
       "name": "丽江消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "丽江急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Lijiang city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Lijiang City Center"
     },
     {
       "id": "fire",
       "name": "丽江市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "ambulance",
       "name": "丽江市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-hotline",
       "name": "丽江市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Complaint Hotline",
       "phone": "0888-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-bureau",
       "name": "丽江市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Enforcement",
       "phone": "0888-5122927",
       "type": "tourism",
       "description": "Report illegal tourism activities, price disputes",
-      "address": "Guangzhou"
+      "address": "Lijiang Old Town"
     },
     {
       "id": "gucheng-police",
       "name": "古城区公安分局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Gucheng District Police Station",
       "phone": "0888-5158110",
       "type": "police",
       "description": "Old Town area police station",
-      "address": "Guangzhou"
+      "address": "Gucheng District, Lijiang"
     },
     {
       "id": "medical-advice",
       "name": "丽江市人民医院急诊",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang People's Hospital Emergency",
       "phone": "0888-5160120",
       "type": "medical",
       "description": "Main hospital emergency department",
-      "address": "Guangzhou"
+      "address": "Xin Dayan Road, Lijiang"
     },
     {
       "id": "high-altitude-rescue",
       "name": "丽江高山救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang High Altitude Rescue",
       "phone": "0888-5168110",
       "type": "rescue",
       "description": "Mountain rescue for Jade Dragon Snow Mountain and hiking areas",
-      "address": "Guangzhou"
+      "address": "Jade Dragon Snow Mountain area"
     },
     {
       "id": "weather",
       "name": "丽江市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and mountain weather specifically",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "forestry-fire",
       "name": "丽江森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Forest Fire Prevention",
       "phone": "0888-12119",
       "type": "emergency",
       "description": "Forest fire reporting for Lijiang area",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming (provincial)"
     },
     {
       "id": "lugu-lake-police",
       "name": "泸沽湖派出所",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lugu Lake Police Station",
       "phone": "0888-5881110",
       "type": "police",
       "description": "Police coverage for Lugu Lake area",
-      "address": "Guangzhou"
+      "address": "Lugu Lake area"
     },
     {
       "id": "tiger-leaping-gorge-rescue",
       "name": "虎跳峡救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tiger Leaping Gorge Rescue",
       "phone": "0888-5166110",
       "type": "rescue",
       "description": "Rescue services for Tiger Leaping Gorge hiking area",
-      "address": "Guangzhou"
+      "address": "Tiger Leaping Gorge area"
     },
     {
       "id": "road-emergency",
       "name": "丽江道路救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Road Emergency",
       "phone": "0888-12122",
       "type": "road",
       "description": "Roadside assistance and traffic emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang area roads"
     },
     {
       "id": "lijiang-railway",
       "name": "丽江火车站服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Railway Station",
       "phone": "0888-5129352",
       "type": "transport",
       "description": "Railway ticket inquiries and station services",
-      "address": "Guangzhou"
+      "address": "Lijiang Railway Station"
     },
     {
       "id": "national-tourism-lijiang",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     },
     {
       "id": "lijiang-consumer-complaint",
       "name": "丽江市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Consumer Association",
       "phone": "0888-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-water-emergency",
       "name": "丽江市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Water Supply Company",
       "phone": "0888-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-electricity-emergency",
       "name": "丽江供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     }
   ],
   "culturalTips": [
@@ -3059,22 +3059,22 @@
       "name": "束河古镇",
       "nameEn": "Shaxi Ancient Town",
       "category": "cultural",
-      "description": "太仓市保存完好的古镇，有1300多年历史。镇上老街保存完好，临水建筑、古桥、寺庙构成典型的江南水乡风貌，游客稀少非常安静。",
-      "address": "苏州市太仓市沙溪镇",
+      "description": "Less touristy Naxi town compared to Lijiang Old Town, preserving authentic Naxi architecture and traditional way of life. Also called 'Three Lanes' town.",
+      "address": "Shaxi Town, 8km north of Lijiang",
       "coordinates": {
         "lat": 26.9083,
         "lng": 100.1928
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
       "highlights": [
-        "临水老街",
-        "古桥群",
-        "传统手工艺",
-        "安静氛围"
+        "青龙桥 (Black Dragon Bridge)",
+        "Naxi architecture",
+        "Tea House Square",
+        "Horse caravan history"
       ],
-      "tips": "游客非常少，可以悠闲地逛古镇。从太仓市区可乘公交到达。",
+      "tips": "Visit in early morning or evening to avoid day-trippers. The tea house culture is authentic. Good for buying Naxi handicrafts without tourist markups. Combine with nearby Jade Dragon Snow Mountain.",
       "imageUrl": "/img/ext/557132bee5c8.webp",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 088 8 2751 4951"
@@ -3084,22 +3084,22 @@
       "name": "黑龙潭",
       "nameEn": "Black Dragon Pool",
       "category": "cultural",
-      "description": "Исторический сад народа наси с культовым видом на гору Нефритового Дракона, отражающуюся в пруду. Здесь представлена традиционная архитектура наси и культурные представления.",
-      "address": "Парк Черного Дракона, Лицзян",
+      "description": "Historic Naxi garden with the iconic view of Jade Dragon Snow Mountain reflected in the pond. Features traditional Naxi architecture and cultural performances.",
+      "address": "Black Dragon Pool Park, Lijiang",
       "coordinates": {
         "lat": 26.8783,
         "lng": 100.2283
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "Бесплатно (требуется ID)",
-      "recommendedVisitTime": "1-2 часа",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Отражение горы Нефритового Дракона",
-        "Мост Пяти Фениксов",
-        "Музыкальные представления наси",
-        "Древний зал Дэи"
+        "Reflection of Jade Dragon Mountain",
+        "Five Phoenix Bridge",
+        "Naxi music performances",
+        "Ancient Deyi Hall"
       ],
-      "tips": "Лучшее место для фото в Лицзяне на рассвете, когда отражение горы четкое. Шоу древней музыки наси в 13:30-14:30 и 15:30-16:30 (при условии хорошей погоды). Возьмите с собой ID для бесплатного входа.",
+      "tips": "Best photo spot in Lijiang at sunrise when mountain reflection is clear. Naxi ancient music show at 13:30-14:30 and 15:30-16:30 (weather permitting). Bring ID for free entry.",
       "imageUrl": "/img/ext/7045caf96b31.webp",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 088 8 3749 1716"
@@ -3184,22 +3184,22 @@
       "name": "蓝月谷",
       "nameEn": "Blue Moon Valley",
       "category": "natural",
-      "description": "Прекрасная ледниковая долина с ярко-бирюзовыми водами, образующимися из тающих ледников горы Юйлун Сюэшань.",
-      "address": "Голубая Лунная Долина, живописная зона горы Юйлун Сюэшань",
+      "description": "A beautiful glacial valley with bright turquoise waters originating from Jade Dragon Snow Mountain's melting glaciers.",
+      "address": "Blue Moon Valley, Jade Dragon Snow Mountain Scenic Area",
       "coordinates": {
         "lat": 27.0856,
         "lng": 100.1628
       },
       "openingHours": "06:30-18:00",
-      "ticketPrice": "Включено в билет на гору (100¥)",
-      "recommendedVisitTime": "2-3 часа",
+      "ticketPrice": "Included with Snow Mountain ticket (100¥)",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Кристально чистая голубая вода",
-        "Виды на водопады",
-        "Прогулка по лесу",
-        "Зеркальные отражения"
+        "Crystal clear blue water",
+        "Waterfall views",
+        "Forest hiking",
+        "Mirror-like reflections"
       ],
-      "tips": "Электрический автомобиль от Ледникового парка до Голубой Лунной Долины включен. Вода ледяная - не заходите в нее. Лучшие фотографии с моста. Совместите с посещением горы в один день.",
+      "tips": "Electric car from Glacier Park to Blue Moon Valley included. The water is freezing cold - don't wade in. Best photos from the bridge. Combine with Snow Mountain in same day.",
       "imageUrl": "/img/ext/aae6b4c797b6.webp",
       "image": "/img/ext/2707c54b1ac7.webp",
       "phone": "+86 088 8 7882 4917"
@@ -3469,10 +3469,10 @@
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Traditional Naxi shops",
-        "Local snack vendors",
-        "Nightlife scene",
-        "Street performances"
+        "Традиционные магазины наси",
+        "Местные торговцы закусками",
+        "Ночная жизнь",
+        "Уличные представления"
       ],
       "tips": "Great for evening strolls. Try local snacks like rose cake and yak meat. The bars have live music. Compare prices before buying. Negotiate at smaller shops.",
       "imageUrl": "/img/ext/473eede2417d.webp",
@@ -3482,24 +3482,24 @@
     {
       "id": "lijiang-impression-show",
       "name": "印象丽江",
-      "nameEn": "Impression Lijiang Show",
+      "nameEn": "Шоу Impression Lijiang",
       "category": "cultural",
-      "description": "Epic outdoor performance directed by Zhang Yimou at the foot of Jade Dragon Snow Mountain, featuring 500 local actors and ethnic culture.",
-      "address": "Ganzi Village, near Jade Dragon Snow Mountain",
+      "description": "Грандиозное открытое представление, поставленное Чжан Имоу у подножия горы Нефритового Дракона, с участием 500 местных актеров и этнической культуры.",
+      "address": "Деревня Ганьцзы, у подножия горы Нефритового Дракона",
       "coordinates": {
         "lat": 27.0722,
         "lng": 100.1628
       },
-      "openingHours": "Shows at 14:00 and 16:30 (weather permitting)",
-      "ticketPrice": "280-350¥ (includes transport)",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "Представления в 14:00 и 16:30 (при благоприятной погоде)",
+      "ticketPrice": "280-350¥ (включая транспорт)",
+      "recommendedVisitTime": "2 часа",
       "highlights": [
-        "Zhang Yimou directed",
-        "Mountain backdrop",
-        "500 performers",
-        "Ethnic music and dance"
+        "Постановка Чжан Имоу",
+        "Горный фон",
+        "500 исполнителей",
+        "Этническая музыка и танцы"
       ],
-      "tips": "Book through hotel or tour desk. Weather dependent - may cancel in rain. Bring jacket even in summer. Arrive 30 min early.",
+      "tips": "Бронируйте через отель или туристический стол. Зависит от погоды - может быть отменено в дождь. Возьмите куртку даже летом. Приходите за 30 минут до начала.",
       "imageUrl": "/img/ext/02b52202fc4d.webp",
       "image": "/img/ext/42332d65de31.webp",
       "phone": "+86 088 8 6105 7911"
@@ -3507,24 +3507,24 @@
     {
       "id": "fangguang-ancient-town",
       "name": "方广古镇",
-      "nameEn": "Fanguang Ancient Town",
+      "nameEn": "Фангуан (Древний город)",
       "category": "cultural",
-      "description": "Well-preserved ancient town from the Tang Dynasty featuring Buddhist temples, old bridges, and traditional architecture.",
-      "address": "Fanguang Town, 50km from Lijiang",
+      "description": "Хорошо сохранившийся древний город эпохи Тан с буддийскими храмами, старыми мостами и традиционной архитектурой.",
+      "address": "Фангуан, в 50 км от Лицзяна",
       "coordinates": {
         "lat": 26.7533,
         "lng": 100.4128
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "Круглосуточно",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "Tang Dynasty architecture",
-        "Buddhist temples",
-        "Ancient bridges",
-        "Local markets"
+        "Архитектура эпохи Тан",
+        "Буддийские храмы",
+        "Древние мосты",
+        "Местные рынки"
       ],
-      "tips": "Off the beaten path. The temple is active with monks. Combine with nearby hot spring. Authentic ancient China feel.",
+      "tips": "В стороне от проторенных путей. Действующий храм с монахами. Рекомендуется совместить с посещением горячих источников поблизости. Подлинное ощущение древнего Китая.",
       "imageUrl": "/img/ext/ed67c8ce37e1.webp",
       "image": "/img/ext/667ed0e874f8.webp",
       "phone": "+86 088 8 7775 2828"
@@ -3532,24 +3532,24 @@
     {
       "id": "shahe-wine-town",
       "name": "沙河酒庄",
-      "nameEn": "Shahe Wine Village",
+      "nameEn": "Шахе (Винная деревня)",
       "category": "cultural",
-      "description": "Mountain village famous for producing Yunnan highland wine, with vineyards, traditional wine cellars, and tasting experiences.",
-      "address": "Shahe Village, 30km from Lijiang",
+      "description": "Горная деревеня, известная производством юньнаньского высокогорного вина, с виноградниками, традиционными винными погребами и дегустациями.",
+      "address": "Деревня Шахе, в 30 км от Лицзяна",
       "coordinates": {
         "lat": 26.9256,
         "lng": 100.1856
       },
-      "openingHours": "09:00-18:00 (tasting by appointment)",
-      "ticketPrice": "Free (wine tasting extra)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-18:00 (дегустация по предварительной записи)",
+      "ticketPrice": "Бесплатно (дегустация вин за дополнительную плату)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Yunnan highland wine",
-        "Traditional cellars",
-        "Vineyard views",
-        "Wine tasting"
+        "Виноградники Юньнаньского нагорья",
+        "Традиционные погреба",
+        "Виды на виноградники",
+        "Дегустация вин"
       ],
-      "tips": "Best for wine enthusiasts. Book tasting in advance. The wine is unique - fruity and smooth. Buy some to take home.",
+      "tips": "Лучше всего для любителей вин. Забронируйте дегустацию заранее. Вино уникальное - фруктовое и мягкое. Купите немного, чтобы забрать домой.",
       "imageUrl": "/img/ext/aa0aeea5fdeb.webp",
       "image": "/img/ext/998eb40307b9.webp",
       "phone": "+86 088 8 4899 8170"
@@ -3557,24 +3557,24 @@
     {
       "id": "heilong-temple",
       "name": "黑龙古寺",
-      "nameEn": "Heilong Ancient Temple",
+      "nameEn": "Древний храм Хэйлун",
       "category": "cultural",
-      "description": "Ancient Naxi Buddhist temple perched on a hill with panoramic views of Lijiang Old Town and Jade Dragon Mountain.",
-      "address": "Heilong Temple Hill, Lijiang",
+      "description": "Древний буддийский храм нарси, расположенный на холме с панорамным видом на Старый город Лицзян и гору Нефритового Дракона.",
+      "address": "Холм храма Хэйлун, Лицзян",
       "coordinates": {
         "lat": 26.8822,
         "lng": 100.2417
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "15¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Old town views",
+        "Виды на старый город",
         "Naxi Buddhist art",
         "Peaceful location",
         "Ancient cypress trees"
       ],
-      "tips": "Best at sunrise when mountain is visible. The climb takes 15 minutes. Ancient trees are impressive. Very quiet mornings.",
+      "tips": "Лучше всего на рассвете, когда гора видна. Подъем занимает 15 минут. Древние деревья производят впечатление. Очень тихие утра.",
       "imageUrl": "/img/ext/9711badd781a.webp",
       "image": "/img/ext/0df1b413372e.webp",
       "phone": "+86 088 8 6902 4960"
@@ -3607,24 +3607,24 @@
     {
       "id": "baba-hiking-trail",
       "name": "巴巴藏族古道",
-      "nameEn": "Tibetan Trail of Baba",
+      "nameEn": "Baba Tibetan Trail",
       "category": "natural",
-      "description": "Древняя пешеходная тропа, соединяющая тибетские деревни, с потрясающими видами на горы, молитвенными флагами и аутентичной культурой.",
-      "address": "Район деревни Баба, в 40 км от Лицзяна",
+      "description": "Ancient hiking trail connecting Tibetan villages with stunning mountain views, prayer flags, and authentic culture.",
+      "address": "Baba Village area, 40km from Lijiang",
       "coordinates": {
         "lat": 27.0656,
         "lng": 100.2989
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "Полный день",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Full day",
       "highlights": [
-        "Виды на горы",
-        "Молитвенные флаги",
-        "Тибетские деревни",
-        "Традиционная культура"
+        "Mountain views",
+        "Prayer flags",
+        "Tibetan villages",
+        "Traditional culture"
       ],
-      "tips": "Необходим опыт пеших походов. Рекомендуется местный гид. Возьмите с собой воду и закуски. Лучшее время для посещения — осень. Тропа является древней.",
+      "tips": "Hiking experience required. Local guide recommended. Bring water and snacks. Best in autumn. The trail is ancient.",
       "imageUrl": "/img/ext/02d0711e6d7e.webp",
       "image": "/img/ext/505d95e27bcc.webp",
       "phone": "+86 088 8 9456 8307"
@@ -3683,22 +3683,22 @@
       "name": "白沙古镇",
       "nameEn": "Baisha Village",
       "category": "landmark",
-      "description": "Древний город Байша — это место, где зародился клан Му, принадлежащий народности наси, и самый старый город в районе Лицзян. Здесь сохранилось множество традиционных зданий народа наси и фресок Байша, что делает его важным окном для понимания истории и культуры наси.",
-      "address": "Городской уезд Юйлун, город Лицзян, деревня Байша",
+      "description": "白沙古镇是纳西族木氏家族的发祥地，也是丽江最古老的古镇，镇内保留了大量纳西族传统建筑和白沙壁画，是了解纳西族历史文化的重要窗口。",
+      "address": "丽江市玉龙县白沙镇",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно (30 юаней за вход на фрески Байша)",
-      "recommendedVisitTime": "2-3 часа",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（白沙壁画30元）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "Фрески Байша",
-        "Старинная архитектура Байша",
-        "Культура наси",
-        "Виды на заснеженные горы"
+        "白沙壁画",
+        "白沙古建筑",
+        "纳西文化",
+        "雪山风光"
       ],
-      "tips": "Фрески Байша — это драгоценные произведения искусства эпохи Мин, которые стоит внимательно рассмотреть. В старом городе можно найти ручную вышивку народа наси.",
+      "tips": "白沙壁画是明代壁画艺术的珍品，值得仔细观赏。古镇上有纳西族手工刺绣。",
       "image": "/img/ext/730452fb47f5.webp",
       "phone": "+86 088 8 6387 9562"
     },
@@ -3707,22 +3707,22 @@
       "name": "白沙壁画",
       "nameEn": "Baisha Murals",
       "category": "museum",
-      "description": "Байшаские фрески — это религиозные фрески, написанные художниками хань, тибетцев и наси по заказу насийского вождя Му в эпоху Мин. Они объединяют в себе множество религиозных культур и являются одним из важнейших культурных наследий Лицзяна.",
-      "address": "Байша, район Юйлун, город Лицзян",
+      "description": "白沙壁画是明代纳西族土司木氏请汉、藏、纳西等族画师绘制的宗教壁画，融合了多种宗教文化，是丽江最重要的文化遗产之一。",
+      "address": "丽江市玉龙县白沙镇白沙壁画",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "30 юаней",
-      "recommendedVisitTime": "1 час",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Фрески эпохи Мин",
-        "Синтез нескольких религий",
-        "Буддийские и даосские сюжеты",
-        "Культура наси"
+        "明代壁画",
+        "多宗教融合",
+        "佛教道教题材",
+        "纳西文化"
       ],
-      "tips": "Фотографировать фрески запрещено, рекомендуется пригласить гида для объяснения историй и культурного содержания фресок.",
+      "tips": "壁画不允许拍照，建议请导游讲解壁画的故事和文化内涵。",
       "image": "/img/ext/c63ef2486ca2.webp",
       "phone": "+86 088 8 5880 3848"
     },

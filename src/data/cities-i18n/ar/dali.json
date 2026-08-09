@@ -9,14 +9,14 @@
     "lng": 100.2676
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "دالي بلدة جميلة في مقاطعة يوننان. تقع على خلفية جبال تسانغشان وبجانب بحيرة أرهاي. موطن العرق الباي بـ 1000 عام من التاريخ. تشتهر بشوارع الأحجار والعمارة التقليدية وثقافة محلية نابضة. أجو مريحة لركوب الدراجات والمشي.",
+  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "بحيرة إيرهاي - مناظر ركوب الدراجة",
-    "ثلاثة أبراج دالي - معابد بوذية",
-    "مدينة دالي القديمة - معمار باي تقليدي",
-    "سوق شيتشو - ثقافة باي المحلية",
-    "شوانغلانغ - تصوير البحيرة"
+    "Erhai Lake - Scenic cycling and views",
+    "Three Pagodas of Dali - Buddhist temples",
+    "Dali Old Town - Traditional Bai architecture",
+    "Xizhou Market - Local Bai culture",
+    "Shuanglang - Lakeside photography"
   ],
   "climate": {
     "type": "Subtropical highland",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "الربيع والخريف هما الأفضل. الصيف بارد لكنه ممطر. الشتاء جاف ودافئ. الأشعة فوق البنفسجية قوية، استخدم واقي الشمس."
+    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
   },
   "restaurants": [
     {
@@ -720,13 +720,13 @@
         "Roast whole lamb",
         "Mutton soup",
         "Grilled lamb chops",
-        "Countryside scenery"
+        "مناظر الريف"
       ],
       "tags": [
-        "local",
-        "bbq",
-        "group",
-        "specialty"
+        "محلي",
+        "شواء",
+        "جماعي",
+        "متخصص"
       ],
       "star": 0,
       "diamond": 0,
@@ -736,29 +736,29 @@
     {
       "id": "dali-23",
       "name": "银桥米线馆",
-      "nameEn": "Yinqiao Rice Noodle Shop",
+      "nameEn": "متجر أرز يينتشياو",
       "type": "local",
-      "cuisine": "Yunnan Rice Noodles",
+      "cuisine": "أرز يونان",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Yinqiao Town, Dali",
+      "address": "بلدة يينتشياو، دالي",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
       },
       "hours": "07:00-15:00",
-      "description": "Local spot famous for rice noodles in rich broth, popular with locals and in-the-know travelers.",
+      "description": "مطعم محلي مشهور بأرز noodles في مرق غني، يحبذه السكان المحليون والمسافرون المتمرسون.",
       "dishHighlights": [
-        "Beef rice noodles",
-        "Pork rice noodles",
-        "Pickled vegetables",
-        "Chili oil"
+        "أرز noodles باللحم",
+        "أرز noodles بالخنزير",
+        "مخللات",
+        "زيت الفلفل"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "budget",
-        "breakfast"
+        "محلي",
+        "معكرونة",
+        "اقتصادي",
+        "فطور"
       ],
       "star": 0,
       "diamond": 0,
@@ -768,28 +768,28 @@
     {
       "id": "dali-24",
       "name": "双廊咖啡馆",
-      "nameEn": "Shuanglang Lakeside Cafe",
+      "nameEn": "مقهى شوانغلانج البحيري",
       "type": "cafe",
-      "cuisine": "Western/Yunnan Fusion",
+      "cuisine": "مزيج غربي ويوناني",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Shuanglang Waterfront",
+      "address": "واجهة شوانغلانج المائية",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "hours": "08:00-22:00",
-      "description": "Cozy lakeside cafe with Erhai views, serving Yunnan coffee, Western breakfasts, and homemade pastries.",
+      "description": "مقهى مريح على ضفة البحيرة مع إطلالة على بحيرة إيرهاي، يقدم قهوة يونان وفطورًا غربيًا ومخبوزات منزلية",
       "dishHighlights": [
-        "Yunnan coffee",
-        "Pancakes with fruit",
-        "Fresh smoothies",
-        "Cheesecake"
+        "قهوة يونان",
+        "فطائر مع فواكه",
+        "عصائر طازجة",
+        "تشيز كيك"
       ],
       "tags": [
-        "cafe",
-        "scenic",
-        "western",
+        "مقهى",
+        "خلاب",
+        "غربي",
         "cozy"
       ],
       "star": 0,
@@ -800,30 +800,30 @@
     {
       "id": "dali-25",
       "name": "大理壹号院",
-      "nameEn": "Dali No.1 Courtyard",
+      "nameEn": "فناء دالي رقم 1",
       "type": "local",
-      "cuisine": "Bai Fine Dining",
+      "cuisine": "مطبخ بايعي راقٍ",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Dali Old Town, West Gate",
+      "address": "بلدة دالي القديمة، البوابة الغربية",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1472
       },
       "phone": "+86 872 267 8888",
       "hours": "11:00-22:00",
-      "description": "Upscale Bai cuisine restaurant in a traditional courtyard, offering refined local specialties with elegant presentation.",
+      "description": "مطعم مطبخ بايعي راقٍ في فناء تقليدي، يقدم الأطباق المحلية المتقنة بعرض أنيق.",
       "dishHighlights": [
-        "Bai style fish",
-        "Mushroom hotpot",
-        "Bender cold chicken",
-        "Seasonal vegetables"
+        "سمك على الطريقة البايعية",
+        "قدر الفطر",
+        "دجاج بدر البارد",
+        "خضروات موسمية"
       ],
       "tags": [
         "fine-dining",
-        "bai-cuisine",
-        "courtyard",
-        "special-occasion"
+        "مطبخ-بايعي",
+        "فناء",
+        "مناسبة-خاصة"
       ],
       "star": 0,
       "diamond": 0,
@@ -832,29 +832,29 @@
     {
       "id": "dali-26",
       "name": "小邑庄白族菜",
-      "nameEn": "Xiaoyi Zhuang Bai Cuisine",
+      "nameEn": "مطبخ شياو يي تشوانغ البايعي",
       "type": "local",
-      "cuisine": "Bai Home Style",
+      "cuisine": "أسلوب مطبخ باي التقليدي",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Xiaoyi Village, near Dali Old Town",
+      "address": "قرية شياوي، بالقرب من البلدة القديمة في دالي",
       "coordinates": {
         "lat": 25.7022,
         "lng": 100.1772
       },
       "hours": "10:00-21:00",
-      "description": "Local family-run restaurant serving authentic Bai home-style dishes in a traditional courtyard.",
+      "description": "مطعم عائلي محلي يقدم أطباق باي التقليدية الأصيلة في فناء تقليدي",
       "dishHighlights": [
-        "Braised pork",
-        "Steam egg",
-        "Pickled vegetables",
-        "Rice cakes"
+        "لحم خنزير مطهو ببطء",
+        "بيض على البخار",
+        "مخللات الخضروات",
+        "كعكات الأرز"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "family-run",
-        "value"
+        "محلي",
+        "على الطريقة المنزلية",
+        "عائلي",
+        "قيمة"
       ],
       "star": 0,
       "diamond": 0,
@@ -866,27 +866,27 @@
       "name": "巍山老街面馆",
       "nameEn": "Weishan Old Street Noodles",
       "type": "local",
-      "cuisine": "Yunnan Noodles",
+      "cuisine": "معكرونة يونان",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "البلدة القديمة في ويشان",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
       "hours": "07:00-14:00",
-      "description": "Legendary single-noodle shop famous for one long strand noodle in rich broth, a must-try in Weishan.",
+      "description": "متجر أسطوري للمعكرونة الخيوطة الواحدة مشهور بالخيط الطويل الواحد في المرقة الغنية، يجب تجربته في ويشان.",
       "dishHighlights": [
-        "Single strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
-        "Hand-pulled noodles"
+        "معكرونة خيط واحد",
+        "مرقة حارة وحامضة",
+        "توبينغ لحم الخنزير المطهو",
+        "معكرونة سحب يدوية"
       ],
       "tags": [
-        "local",
-        "famous",
-        "noodles",
-        "must-try"
+        "محلي",
+        "مشهور",
+        "معكرونة",
+        "يجب تجربته"
       ],
       "star": 0,
       "diamond": 0,
@@ -901,24 +901,24 @@
       "cuisine": "Yunnan/Seafood",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Caicun Village, Erhai Lake",
+      "address": "قرية كايكون، بحيرة إرهاي",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.1672
       },
       "hours": "10:00-21:00",
-      "description": "Lakeside restaurant with Erhai views, serving fresh fish from the lake and Yunnan specialties.",
+      "description": "مطعم على ضفة البحيرة مع إطلالات على بحيرة إيرهاي، يقدم الأسماك الطازجة من البحيرة والمأكولات الخاصة من يونان.",
       "dishHighlights": [
-        "Erhai lake fish",
-        "Sour cabbage fish",
-        "Lake shrimp",
-        "Bai style pork"
+        "سمك بحيرة إيرهاي",
+        "سمك الملفوف الحامض",
+        "روبيان البحيرة",
+        "لحم الخنزير بأسلوب باي"
       ],
       "tags": [
-        "local",
-        "scenic",
-        "seafood",
-        "lake-view"
+        "محلي",
+        "خلاب",
+        "مأكولات بحرية",
+        "إطلالة على البحيرة"
       ],
       "star": 0,
       "diamond": 0,
@@ -928,21 +928,21 @@
     {
       "id": "dali-29",
       "name": "桃溪牧场",
-      "nameEn": "Taoxi Pasture",
+      "nameEn": "مرعى تاوشي",
       "type": "local",
-      "cuisine": "Yunnan BBQ/Grill",
+      "cuisine": "شواء يونان/مشوي",
       "avgPrice": 100,
       "rating": 4.7,
-      "address": "Dali Countryside,桃溪",
+      "address": "الريف في دالي، تاوشي",
       "coordinates": {
         "lat": 25.6522,
         "lng": 100.1072
       },
       "hours": "11:00-22:00",
-      "description": "Countryside restaurant specializing in grilled meats and fresh vegetables in scenic mountain setting.",
+      "description": "مطعم ريفي يتخصص في اللحوم المشوية والخضروات الطازجة في بيئة جبلية ساحرة.",
       "dishHighlights": [
-        "Grilled lamb",
-        "Wild mushroom BBQ",
+        "ضأن مشوي",
+        "شواء الفطر البري",
         "Fresh vegetables",
         "Mountain stream fish"
       ],
@@ -2195,118 +2195,118 @@
     {
       "type": "ambulance",
       "name": "大理急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Dali People's Hospital has English interpreters"
     },
     {
       "type": "police",
       "name": "大理市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police in Dali Old Town"
     },
     {
       "type": "hospital",
       "name": "大理市第一人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali First People's Hospital",
       "phone": "+86 872 212 5465",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Main hospital in Dali"
     },
     {
       "type": "embassy",
       "name": "美国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Kunming",
       "phone": "+86 871 6364 1057",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming (nearest US consular services)",
+      "notes": "For US citizens in Dali region"
     },
     {
       "type": "hospital",
       "name": "大理州人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Prefecture People's Hospital",
       "phone": "+86 872 212 5075",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with emergency services"
     },
     {
       "type": "tourist-police",
       "name": "大理旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Tourist Police",
       "phone": "+86 872 267 4110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police station in Dali Old Town"
     },
     {
       "type": "fire",
       "name": "大理消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate Kunming",
       "phone": "+86 871 6564 6689",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For UK citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate Kunming",
       "phone": "+86 871 6856 2100",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Australian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "日本驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Kunming",
       "phone": "+86 871 6314 8288",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Japanese citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "法国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate Kunming",
       "phone": "+86 871 6331 5889",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For French citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "德国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate Kunming",
       "phone": "+86 871 6312 5555",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For German citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canada Consulate Guangzhou",
       "phone": "+86 20 3888 0400",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Canadian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "韩国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate Kunming",
       "phone": "+86 871 6566 2115",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Korean citizens in Dali region"
     }
   ],
   "quickFacts": {
@@ -2321,24 +2321,24 @@
     {
       "id": "erhai-lake",
       "name": "洱海",
-      "nameEn": "Hulun Lake",
+      "nameEn": "Erhai Lake",
       "category": "natural",
-      "description": "中国第五大淡水湖，面积2339平方公里，蒙古语意为海一样的湖。",
-      "address": "呼伦贝尔市新巴尔虎右旗",
+      "description": "A beautiful highland lake often called 'Sea of Clouds' offering scenic cycling paths, traditional fishing villages, and stunning mountain backdrops.",
+      "address": "Erhai Lake, Dali Bai Autonomous Prefecture",
       "coordinates": {
         "lat": 25.7522,
         "lng": 100.1872
       },
-      "openingHours": "全天",
-      "ticketPrice": "30元",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some scenic spots may charge)",
+      "recommendedVisitTime": "Half to full day",
       "highlights": [
-        "湖光山色",
-        "候鸟",
-        "日落",
+        "Cycling path around lake",
+        "Fisherman's village",
+        "Shuanglang village",
         "Wutai Lake view"
       ],
-      "tips": "夏季最佳，可品尝全鱼宴。",
+      "tips": "Rent a bicycle (40-80¥/day) to circle the lake. Start early to avoid tour buses. Best light for photos in early morning.",
       "image": "/img/ext/6faaa02aad08.webp",
       "phone": "+86 087 2 8699 3091"
     },

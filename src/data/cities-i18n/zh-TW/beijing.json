@@ -9,14 +9,14 @@
     "lng": 116.4074
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "北京是中華人民共和國的首都，是一座古老歷史與現代活力交融的城市。",
+  "description": "北京是中國的首都，是一座古老歷史與現代活力交會的城市。擁有紫禁城、長城和無數皇室寶藏，提供前所未有的中國三千年文明之旅。今日的北京融合傳統胡同社區與閃亮的摩天大樓、世界級美食和蓬勃發展的藝術場景。",
   "coverImage": "/img/ext/7f1ed08feaf9.webp",
   "highlights": [
-    "故宫博物院 - 皇家宫殿群",
-    "長城 - 世界七大奇迹",
-    "天坛 - 联合國教科文组织遗产",
-    "颐和園 - 皇家園林",
-    "798 艺术區 - 当代艺术"
+    "故宮 - 皇家宮殿建築群",
+    "長城 - 世界七大奇蹟之一",
+    "天壇 - 聯合國教科文組織世界遺產",
+    "頤和園 - 皇家園林避暑勝地",
+    "798藝術區 - 當代藝術中心"
   ],
   "climate": {
     "type": "Temperate continental",
@@ -28,102 +28,102 @@
     ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "-2C (28F)",
-    "tips": "春秋两季气候宜人，是最佳旅遊季。夏季炎热潮湿，冬季寒冷干燥。春季偶有沙尘。昼夜温差大，請备多层衣物。"
+    "tips": "Best visited in spring (April-May) or autumn (September-October) for pleasant weather. Summers are hot and humid, winters cold and dry. Spring often sees sandstorms. Pack layers for variable temperatures."
   },
   "attractions": [
     {
       "id": "forbidden-city",
       "name": "故宫博物院",
-      "nameEn": "Forbidden City",
+      "nameEn": "故宮",
       "category": "historical",
       "image": "/img/ext/98befe7e3a32.webp",
-      "description": "The former imperial palace complex, home to 24 emperors over 500 years. Contains 980 buildings and over 1 million cultural artifacts.",
-      "address": "4 Jingshan Front St, Dongcheng District",
+      "description": "前皇宮建築群，500年間共有24位皇帝居住。擁有有980座建築物和超過100萬件文化遺產。",
+      "address": "東城區景山前街4號",
       "coordinates": {
         "lat": 39.9163,
         "lng": 116.3972
       },
-      "openingHours": "08:30-17:00 (Closed Monday)",
-      "ticketPrice": "60¥ (peak), 40¥ (off-peak)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "08:30-17:00（週一閉館）",
+      "ticketPrice": "60¥（旺季），40¥（淡季）",
+      "recommendedVisitTime": "3-4小時",
       "highlights": [
-        "Palace of Heavenly Purity",
-        "Imperial Garden",
-        "Treasures Gallery",
-        "Clock and Watch Gallery"
+        "天穹寶殿",
+        "御花園",
+        "珍寶館",
+        "鐘錶館"
       ],
-      "tips": "Book tickets online in advance. Arrive early to avoid crowds. Audio guides available in multiple languages. Wear comfortable shoes.",
+      "tips": "提前在網上訂票。儘早到達以避開人群。多語言音頻導覽可供使用。穿舒適的鞋子。",
       "phone": "+86 400 950 1925"
     },
     {
       "id": "great-wall-badaling",
       "name": "八达岭长城",
-      "nameEn": "Great Wall (Badaling)",
+      "nameEn": "長城（八達嶺）",
       "category": "historical",
       "image": "/img/ext/1a666c7b3877.webp",
-      "description": "The most visited section of the Great Wall, offering spectacular views and well-preserved fortifications.",
-      "address": "Yanqing District, 60km north of Beijing",
+      "description": "最受歡迎的長城段落，提供壯麗的景色和保存良好的防禦工事。",
+      "address": "北京市區以北60公里的延慶區",
       "coordinates": {
         "lat": 40.3651,
         "lng": 116.0066
       },
-      "openingHours": "07:00-18:00 (Summer), 08:00-17:00 (Winter)",
-      "ticketPrice": "40¥ (off-season), 45¥ (peak season)",
-      "recommendedVisitTime": "Half day",
+      "openingHours": "07:00-18:00（夏季），08:00-17:00（冬季）",
+      "ticketPrice": "40¥（淡季），45¥（旺季）",
+      "recommendedVisitTime": "半天",
       "highlights": [
-        "Cable car ride",
-        "Badgeong platform",
-        "360 observation deck"
+        "纜車遊覽",
+        "烽火台觀景台",
+        "360度觀景台"
       ],
-      "tips": "Avoid weekends if possible. Take a guided tour for better historical context. Bring water and snacks. The wall is steep - wear good walking shoes.",
+      "tips": "盡量避開週末。參加導覽遊以獲得更好的歷史背景。帶上水和零食。長城很陡，請穿著舒適的步行鞋。",
       "phone": "+86 10 6912 1830"
     },
     {
       "id": "temple-of-heaven",
       "name": "天坛",
-      "nameEn": "Temple of Heaven",
+      "nameEn": "天壇",
       "category": "cultural",
       "image": "/img/ext/611ce4f349b9.webp",
-      "description": "A Ming dynasty religious complex where emperors prayed for good harvests. UNESCO World Heritage site with stunning circular architecture.",
-      "address": "1 Tiantan Rd, Dongcheng District",
+      "description": "一座明朝的宗教建築群，皇帝曾在此祈求豐收。聯合國教科文組織世界遺產，以其令人驚嘆的圓形建築而聞名。",
+      "address": "東城區天壇路1號",
       "coordinates": {
         "lat": 39.8829,
         "lng": 116.4067
       },
       "openingHours": "06:00-22:00",
       "ticketPrice": "34¥",
-      "recommendedVisitTime": "2 hours",
+      "recommendedVisitTime": "2小時",
       "highlights": [
-        "Hall of Prayer for Harvests",
-        "Circular Altar",
-        "Imperial Vault of Heaven",
-        "Echo Wall"
+        "祈年殿",
+        "圓丘壇",
+        "皇穹宇",
+        "回音壁"
       ],
-      "tips": "Best visited in early morning when locals practice tai chi. The echo wall is fascinating - try whispering at different points.",
+      "tips": "最好在清晨參觀，當地人會在此練習太極。回音壁非常有趣 - 試著在不同點低聲細語。",
       "phone": "+86 10 6702 8866"
     },
     {
       "id": "summer-palace",
       "name": "颐和园",
-      "nameEn": "Summer Palace",
+      "nameEn": "頤和園",
       "category": "cultural",
       "image": "/img/ext/de2d3d38d6cf.webp",
-      "description": "The largest royal garden in the world, featuring the stunning Kunming Lake and Long Corridor with painted scenes.",
-      "address": "19 Junshan Gonglu Rd, Haidian District",
+      "description": "世界上最大的皇家園林，以壯麗的昆明湖和繪有畫作的長廊為特色。",
+      "address": "海淀區軍山公路19號",
       "coordinates": {
         "lat": 39.9996,
         "lng": 116.4669
       },
-      "openingHours": "06:30-20:00 (Apr-Oct), 07:00-19:00 (Nov-Mar)",
-      "ticketPrice": "30¥ (park), 60¥ (full ticket with attractions)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "06:30-20:00 (4月-10月), 07:00-19:00 (11月-3月)",
+      "ticketPrice": "30¥ (公園), 60¥ (包含景點的套票)",
+      "recommendedVisitTime": "3-4小時",
       "highlights": [
-        "Kunming Lake",
-        "Long Corridor",
-        "Marble Boat",
-        "Suzhou Street"
+        "昆明湖",
+        "長廊",
+        "石舫",
+        "蘇州街"
       ],
-      "tips": "Rent a boat on the lake for a different perspective. The Long Corridor has over 14,000 paintings. Visit the tea house for authentic Chinese tea experience.",
+      "tips": "在湖上租船，以不同的角度欣賞。長廊有超過14,000幅畫作。參觀茶館體驗正統的中國茶。",
       "phone": "+86 10 6288 1144"
     },
     {
@@ -132,22 +132,22 @@
       "nameEn": "Tiananmen Square",
       "category": "historical",
       "image": "/img/ext/034f108f7672.webp",
-      "description": "The world's largest public square, surrounded by important government buildings and cultural monuments.",
-      "address": "Xicheng District",
+      "description": "世界上最大的公共廣場，周圍環繞著重要的政府建築和文化紀念碑。",
+      "address": "西城區",
       "coordinates": {
         "lat": 39.9056,
         "lng": 116.3972
       },
-      "openingHours": "Open 24 hours (security check required)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "全天開放（需要安檢）",
+      "ticketPrice": "免費",
+      "recommendedVisitTime": "1小時",
       "highlights": [
-        "Mao Zedong Memorial Hall",
-        "National Museum of China",
-        "Great Hall of the People",
-        "Monument to the People's Heroes"
+        "毛澤東紀念堂",
+        "中國國家博物館",
+        "人民大會堂",
+        "人民英雄紀念碑"
       ],
-      "tips": "Bring passport for security check. Visit early morning for flag-raising ceremony at sunrise.",
+      "tips": "攜帶護照以通過安檢。清晨參觀升旗儀式。",
       "phone": "+86 10 8640 9123"
     },
     {
@@ -156,94 +156,94 @@
       "nameEn": "798藝術區",
       "category": "cultural",
       "image": "/img/ext/1eb2bd2615de.webp",
-      "description": "由前軍工廠改建而成的北京當代藝術中心，設有畫廊、工作室、咖啡館和街頭藝術。",
-      "address": "北京市朝陽區酒仙橋路2號",
+      "description": "這裡曾是軍工廠，現已成為北京首屈一指的當代藝術勝地，設有畫廊、工作室、咖啡廳和街頭藝術。",
+      "address": "朝陽區酒仙橋路2號",
       "coordinates": {
         "lat": 39.9833,
         "lng": 116.4958
       },
-      "openingHours": "全天開放（畫廊10:00-18:00）",
+      "openingHours": "全天開放（畫廊開放時間：10:00-18:00）",
       "ticketPrice": "免費（部分畫廊可能收費）",
       "recommendedVisitTime": "2-3小時",
       "highlights": [
-        "尤倫斯當代藝術中心（UCCA Center）",
-        "798攝影畫廊",
+        "尤倫斯當代藝術中心",
+        "798攝影館",
         "德國包浩斯建築",
         "街頭藝術壁畫"
       ],
-      "tips": "週末時畫廊開放較多，是最佳參觀時間。可與附近的751 D-Park結合參觀，體驗工業遺產。非常適合拍照留念。",
+      "tips": "建議週末前往，此時較多畫廊開放。可結合參觀附近的751動力廣場，體驗工業遺產風情。適合拍攝紀念照。",
       "phone": "+86 10 5978 9114"
     },
     {
       "id": "lammatemple",
       "name": "雍和宫",
-      "nameEn": "Lama Temple (Yonghe Temple)",
+      "nameEn": "雍和宮（喇嘛寺）",
       "category": "cultural",
       "image": "/img/ext/5e9616329a4c.webp",
-      "description": "The largest and most well-preserved Tibetan Buddhist temple in Beijing, with stunning architecture and 18-meter Buddha statue.",
-      "address": "12 Yonghegong St, Dongcheng District",
+      "description": "北京最大且保存最完好的藏傳佛教寺廟，擁有壯觀的建築和18米高的佛像。",
+      "address": "東城區雍和宮大街12號",
       "coordinates": {
         "lat": 39.9479,
         "lng": 116.4186
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1.5 hours",
+      "recommendedVisitTime": "1.5小時",
       "highlights": [
-        "Five-Harmony Pavilion",
-        "18-meter Buddha statue",
-        "Buddhist scripture library",
-        "360-degree sandalwood Buddha"
+        "五和亭",
+        "18米高的佛像",
+        "佛經圖書館",
+        "360度檀香佛像"
       ],
-      "tips": "One of Beijing's most active temples. Arrive early to experience monk chanting. Best visited in morning for fewer crowds.",
+      "tips": "北京最熱鬧的寺廟之一。建議早點到達以體驗僧人誦經。建議上午參觀以避開人潮。",
       "phone": "+86 10 6404 4499"
     },
     {
       "id": "beihai-park",
       "name": "北海公园",
-      "nameEn": "Beihai Park",
+      "nameEn": "北海公園",
       "category": "cultural",
       "image": "/img/ext/cc1c0491ef7a.webp",
-      "description": "A historic imperial garden featuring the iconic White Dagoba, beautiful lakes, and traditional pavilions.",
-      "address": "1 Wenjin St, Xicheng District",
+      "description": "歷史悠久的皇家園林，擁有標誌性的白塔、美麗的湖泊和傳統亭台。",
+      "address": "西城區文津街1號",
       "coordinates": {
         "lat": 39.9276,
         "lng": 116.3914
       },
       "openingHours": "06:00-21:00",
-      "ticketPrice": "10¥（公園），20¥（瓊華島）",
+      "ticketPrice": "10¥ (公園), 20¥ (瓊華島)",
       "recommendedVisitTime": "2小時",
       "highlights": [
-        "White Pagoda",
-        "Five-Dragon Pavilions",
-        "Nine-Dragon Wall",
-        "圓城"
+        "白塔",
+        "五龍亭",
+        "九龍壁",
+        "團城"
       ],
-      "tips": "環湖漫步並登上白塔，欣賞北京經典景色。可與附近的後海酒吧區結合遊覽。",
+      "tips": "環湖漫步並登上白塔欣賞經典北京風光。可結合附近的後海酒吧區。",
       "phone": "+86 10 6403 1102"
     },
     {
       "id": "mutianyu-great-wall",
       "name": "慕田峪长城",
-      "nameEn": "Great Wall (Mutianyu)",
+      "nameEn": "慕田峪長城",
       "category": "historical",
       "image": "/img/ext/1efd8a63f0ee.webp",
-      "description": "A fully restored section with 22 watchtowers, offering a less crowded alternative to Badaling with cable car access.",
-      "address": "Mutianyu Village, Huairou District, 70km north",
+      "description": "全線修復的段落，設有22座敵樓，比八達嶺人少，並設有纜車。",
+      "address": "懷柔區慕田峪村，北部70公里",
       "coordinates": {
         "lat": 40.4316,
         "lng": 116.5669
       },
-      "openingHours": "07:30-18:30 (Summer), 08:30-17:00 (Winter)",
-      "ticketPrice": "40¥ (wall), 100¥ (cable car round trip)",
-      "recommendedVisitTime": "Half day",
+      "openingHours": "07:30-18:30 (夏季), 08:30-17:00 (冬季)",
+      "ticketPrice": "40¥ (城牆), 100¥ (往返纜車)",
+      "recommendedVisitTime": "半天",
       "highlights": [
-        "Restored watchtowers",
+        "修復的敵樓",
         "Tooth-shaped battlements",
         "Cable car views",
         "Toboggan ride down"
       ],
-      "tips": "Less crowded than Badaling. Book a tour or take Bus 916 from Dongzhimen. Bring layers as it is windy at the top.",
+      "tips": "比八達嶺人少。建議預訂一日遊或乘坐東直門916公務。山上風大，建議攜帶外套。",
       "phone": "+86 10 6162 6505"
     },
     {
@@ -324,22 +324,22 @@
       "nameEn": "Zhongshan Park",
       "category": "cultural",
       "image": "/img/ext/4af69f4aa830.webp",
-      "description": "A large urban park in the center of Hankou, featuring lakes, gardens, amusement rides, and the historic Zhongshan Tower. A favorite local recreation area.",
-      "address": "解放大道696号, 江汉区",
+      "description": "A historic imperial garden turned public park, featuring ancient cypress trees, traditional pavilions, and seasonal flower displays.",
+      "address": "West of Tiananmen Square, Dongcheng District",
       "coordinates": {
         "lat": 39.9076,
         "lng": 116.3962
       },
-      "openingHours": "06:00-22:00",
-      "ticketPrice": "Free (rides require separate tickets)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "06:00-21:00",
+      "ticketPrice": "3¥",
+      "recommendedVisitTime": "1 hour",
       "highlights": [
-        "Central lake",
-        "Historic pagoda",
-        "Amusement area",
-        "Morning tai chi groups"
+        "Ancient Cypress Garden",
+        "Zhongshan Pavilion",
+        "Cherry Blossom Avenue",
+        "Rose Garden"
       ],
-      "tips": "Join the morning tai chi groups for a local experience. The park transforms at night with illuminations. Good for families with children. Near the Wuhan International Convention Center.",
+      "tips": "Best visited in spring for cherry blossoms and roses. Great for morning tai chi practice.",
       "phone": "+86 10 6605 5431"
     },
     {
@@ -445,22 +445,22 @@
       "nameEn": "Bell and Drum Towers",
       "category": "historical",
       "image": "/img/ext/6e87447b1ab1.webp",
-      "description": "中世紀的報時塔，曾經以鐘聲和鼓聲標誌著北京的日常生活。",
-      "address": "北京市西城區鼓樓大街73號",
+      "description": "Medieval timekeeping towers that once governed daily life in Beijing with bell strikes and drum beats marking the hours.",
+      "address": "73 Guloudajie St, Xicheng District",
       "coordinates": {
         "lat": 39.9342,
         "lng": 116.4032
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "20¥（兩座塔聯票）",
-      "recommendedVisitTime": "1小時",
+      "ticketPrice": "20¥ (both towers)",
+      "recommendedVisitTime": "1 hour",
       "highlights": [
-        "明代青銅鐘",
-        "傳統鼓樂表演",
-        "全景視野",
-        "鼓樓廣場"
+        "Bronze Bell from Ming Dynasty",
+        "Traditional Drum Performance",
+        "Panoramic Views",
+        "Drum Tower Square"
       ],
-      "tips": "每個整點觀賞鼓樓表演。之後可結合胡同漫步行程。",
+      "tips": "Watch the drum performance at the top of each hour. Combine with a hutong walk afterward.",
       "phone": "+86 10 8403 6706"
     },
     {
@@ -494,23 +494,23 @@
       "nameEn": "Beijing Happy Valley",
       "category": "entertainment",
       "image": "/img/ext/171128eac7b7.webp",
-      "description": "一個大型遊樂園，設有過山車、水上遊樂設施和家庭友好型景點。",
-      "address": "北京市朝陽區小武基",
+      "description": "A large amusement park with roller coasters, water rides, and family-friendly attractions.",
+      "address": "Xiaowuji, Chaoyang District",
       "coordinates": {
         "lat": 39.8652,
         "lng": 116.5072
       },
-      "openingHours": "09:00-22:00（季節性變動）",
-      "ticketPrice": "260¥（全天），200¥（夜場）",
-      "recommendedVisitTime": "半天至一天",
+      "openingHours": "09:00-22:00 (hours vary by season)",
+      "ticketPrice": "260¥ (full day), 200¥ (evening)",
+      "recommendedVisitTime": "Half day to full day",
       "highlights": [
-        "奧德賽過山車",
-        "家庭區",
-        "水上樂園",
-        "夜光遊行",
-        "現場表演"
+        "Odyssey Roller Coaster",
+        "Family Zone",
+        "Water Park",
+        "Night Parades",
+        "Live Shows"
       ],
-      "tips": "平日遊客較少。穿著舒適的鞋子。夏季攜帶防曬霜。提供租賃儲物櫃服務。",
+      "tips": "Weekdays are less crowded. Wear comfortable shoes. Bring sunscreen in summer. Lockers available for rent.",
       "phone": "+86 010  6292 3935"
     },
     {
@@ -569,23 +569,23 @@
       "nameEn": "Beijing Natural History Museum",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
-      "description": "受歡迎的自然科學博物館，展出恐龍化石、野生動物展品以及互動科學展示。",
-      "address": "北京市東城區天安門街126號",
+      "description": "Popular natural science museum with dinosaur fossils, wildlife exhibits, and interactive science displays.",
+      "address": "126 Tiananmen St, Dongcheng District",
       "coordinates": {
         "lat": 39.9026,
         "lng": 116.4072
       },
-      "openingHours": "09:00-17:00（週一休館）",
-      "ticketPrice": "免費（需提前預約）",
-      "recommendedVisitTime": "2小時",
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (book in advance)",
+      "recommendedVisitTime": "2 hours",
       "highlights": [
-        "恐龍廳",
-        "古代哺乳動物展覽",
-        "鳥類多樣性",
-        "人類演化",
-        "蝴蝶收藏"
+        "Dinosaur Hall",
+        "Ancient Mammal Exhibits",
+        "Bird Diversity",
+        "Human Evolution",
+        "Butterfly Collection"
       ],
-      "tips": "非常適合家庭遊客。請提前在網上訂票。最適合對恐龍和自然感興趣的兒童。",
+      "tips": "Very popular with families. Book tickets online. Best for children interested in dinosaurs and nature.",
       "phone": "+86 010  4301 2382"
     },
     {
@@ -666,22 +666,22 @@
       "nameEn": "Peking University",
       "category": "cultural",
       "image": "/img/ext/79e16f540fe6.webp",
-      "description": "中國第一所現代化國立大學，以其擁有傳統中國建築和湖泊的美麗校園而聞名。",
-      "address": "北京市海淀區頤和園路5號",
+      "description": "China's first modern national university, known for its beautiful campus with traditional Chinese architecture and lakes.",
+      "address": "5 Yiheyuan Rd, Haidian District",
       "coordinates": {
         "lat": 39.9882,
         "lng": 116.4712
       },
-      "openingHours": "通常對遊客開放（需出示證件）",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "2-3小時",
+      "openingHours": "Usually open to visitors (ID required)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "未名湖",
-        "清華-北大歷史遺址",
-        "傳統亭台樓閣",
-        "櫻花大道"
+        "Weiming Lake",
+        "Tsinghua-Peking historical sites",
+        "Traditional pavilions",
+        "Cherry blossom avenue"
       ],
-      "tips": "盡早到達。建議週末參觀。結合參觀附近的清華大學。",
+      "tips": "Arrive early. Weekend visits recommended. Combine with a visit to Tsinghua University nearby.",
       "phone": "+86 010  7672 5681"
     },
     {
@@ -855,25 +855,25 @@
     {
       "id": "confucius-temple",
       "name": "孔庙和国子监",
-      "nameEn": "Confucius Temple",
+      "nameEn": "Confucius Temple & Imperial Academy",
       "category": "cultural",
       "image": "/img/ext/fa0bb86fc2e6.webp",
-      "description": "南京最著名的文化街區，有秦淮河和各種小吃。",
-      "address": "南京市秦淮區",
+      "description": "The second largest Confucius Temple in China and the former imperial academy where scholars studied for civil service exams.",
+      "address": "13 Guozijian St, Dongcheng District",
       "coordinates": {
         "lat": 39.9472,
         "lng": 116.4118
       },
-      "openingHours": "全天",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "2-3小時",
+      "openingHours": "08:30-18:00 (May-Sep), 08:30-17:00 (Oct-Apr)",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "1.5 hours",
       "highlights": [
-        "秦淮河",
-        "小吃",
-        "夜景",
-        "科舉石刻"
+        "198 stone steles with inscriptions",
+        "Ancient scholar trees",
+        "Dacheng Hall",
+        "Imperial ranking stones"
       ],
-      "tips": "品嚐南京小吃。",
+      "tips": "Combine with a walk through Guozijian Street and nearby Lama Temple. Audio guides available.",
       "phone": "+86 010  6585 6231"
     },
     {
@@ -882,22 +882,22 @@
       "nameEn": "Chinese Garden Museum",
       "category": "cultural",
       "image": "/img/ext/aea46746bdcf.webp",
-      "description": "中國首座國家級園林博物館，展示中國園林藝術，內設室內外展區以及著名園林的複製品。",
-      "address": "豐台區",
+      "description": "The first national-level garden museum showcasing Chinese garden art, featuring indoor and outdoor exhibits with replicas of famous gardens.",
+      "address": "Fengtai District",
       "coordinates": {
         "lat": 39.8563,
         "lng": 116.2159
       },
-      "openingHours": "09:00-17:00（週一休館）",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "2-3小時",
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "古典園林複製品",
-        "盆栽收藏",
-        "水景園林",
-        "景觀建築展覽"
+        "Replica classical gardens",
+        "Bonsai collection",
+        "Water garden",
+        "Landscape architecture exhibits"
       ],
-      "tips": "值得園藝愛好者參觀。建議至少花2小時探索戶外花園。",
+      "tips": "Worth visiting for garden enthusiasts. Allow at least 2 hours to explore the outdoor gardens.",
       "phone": "+86 010  0676 4213"
     },
     {
@@ -1026,22 +1026,22 @@
       "nameEn": "Capital Museum",
       "category": "cultural",
       "image": "/img/ext/cc68a9263e39.webp",
-      "description": "一座現代化的博物館，展示北京從史前時期到現代的歷史和文化，擁有著令人印象深刻的青銅器和瓷器收藏。",
-      "address": "北京市西城區阜外大街16號",
+      "description": "A modern museum showcasing Beijing's history and culture from prehistoric times to the present, with an impressive bronze and porcelain collection.",
+      "address": "16 Fuximen Outer St, Xicheng District",
       "coordinates": {
         "lat": 39.9072,
         "lng": 116.3351
       },
-      "openingHours": "09:00-17:00（週一閉館）",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "2-3小時",
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "北京歷史展覽",
-        "青銅時代藏品",
-        "古代瓷器",
-        "傳統建築廳"
+        "Beijing history exhibits",
+        "Bronze age collection",
+        "Ancient porcelain",
+        "Traditional architecture halls"
       ],
-      "tips": "需提前預約免費入場。提供語音導覽。現代建築，展覽內容精彩。",
+      "tips": "Free entry with reservation. Audio guides available. Modern building with excellent exhibits.",
       "phone": "+86 010  6227 8768"
     },
     {
@@ -1050,22 +1050,22 @@
       "nameEn": "Cuandixia Village",
       "category": "cultural",
       "image": "/img/ext/981a28ab731e.webp",
-      "description": "一個保存完好的明代山區村落，有石頭房屋和傳統四合院建築，位於北京以西約90公里處。",
-      "address": "北京市門頭溝區齋堂鎮",
+      "description": "A well-preserved Ming dynasty mountain village with stone houses and traditional courtyard architecture, about 90km west of Beijing.",
+      "address": "Zhaitang Town, Mentougou District",
       "coordinates": {
         "lat": 39.9708,
         "lng": 115.6289
       },
-      "openingHours": "全天開放",
+      "openingHours": "Open 24 hours",
       "ticketPrice": "35¥",
-      "recommendedVisitTime": "半天至一天",
+      "recommendedVisitTime": "Half day to full day",
       "highlights": [
-        "傳統石頭房屋",
-        "山區景色",
-        "明代建築",
-        "當地農家菜"
+        "Traditional stone houses",
+        "Mountain scenery",
+        "Ming dynasty architecture",
+        "Local farmhouse food"
       ],
-      "tips": "最適合搭配週末旅行。建議過夜以獲得完整體驗。道路可能較為蜿蜒。",
+      "tips": "Best combined with a weekend trip. Stay overnight for the full experience. Roads can be winding.",
       "phone": "+86 010  4275 3645"
     },
     {
@@ -1146,22 +1146,22 @@
       "nameEn": "Badaling Safari Park",
       "category": "natural",
       "image": "/img/ext/b2ca80eca619.webp",
-      "description": "位於長城腳下的自駕遊野生動物園，設有獅子、老虎、熊以及其他野生動物在半自然棲息地的展示區。",
-      "address": "延慶區，靠近八達嶺長城",
+      "description": "A drive-through safari park at the foot of the Great Wall, featuring lions, tigers, bears, and other wildlife in semi-natural habitats.",
+      "address": "Yanqing District, near Badaling Great Wall",
       "coordinates": {
         "lat": 40.3581,
         "lng": 116.0108
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "90¥（成人），兒童優惠",
-      "recommendedVisitTime": "2-3 小時",
+      "ticketPrice": "90¥ (adult), children discounts",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "自駕遊野生動物區",
-        "白虎展區",
-        "熊區",
-        "步行動物區"
+        "Drive-through safari zone",
+        "White tiger exhibit",
+        "Bear area",
+        "Walking animal zone"
       ],
-      "tips": "在猛獸區請保持車窗關閉。可與參觀八達嶺長城結合。",
+      "tips": "Keep car windows closed in the predator zone. Combine with a Badaling Great Wall visit.",
       "phone": "+86 010  1629 7999"
     },
     {
@@ -1218,22 +1218,22 @@
       "nameEn": "Beijing Museum of Natural History",
       "category": "cultural",
       "image": "/img/ext/4adbde7850e1.webp",
-      "description": "中國最古老自然歷史博物館之一，展出恐龍化石、野生動物生態景觀以及互動科學展品。",
-      "address": "北京市東城區天橋南大街126號",
+      "description": "One of China's oldest natural history museums, featuring dinosaur fossils, wildlife dioramas, and interactive science exhibits.",
+      "address": "126 Tianqiao South St, Dongcheng District",
       "coordinates": {
         "lat": 39.8851,
         "lng": 116.3932
       },
-      "openingHours": "09:00-17:00（週一休館）",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "2-3小時",
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "恐龍展廳",
-        "古生物學展覽",
-        "野生動物生態景觀",
-        "科學互動區"
+        "Dinosaur hall",
+        "Paleontology exhibits",
+        "Wildlife dioramas",
+        "Science interactive zone"
       ],
-      "tips": "非常適合兒童。憑預約免費入場。請提前在網上訂票。",
+      "tips": "Great for children. Free admission with reservation. Book online in advance.",
       "phone": "+86 010  4369 6397"
     },
     {
@@ -1266,22 +1266,22 @@
       "nameEn": "751 D-Park",
       "category": "cultural",
       "image": "/img/ext/4af69f4aa830.webp",
-      "description": "一個位於798藝術區旁邊的工業遺產區，設有改造過的煤氣罐和工廠，現用於時裝秀、展覽和活動。",
-      "address": "北京市朝陽區酒仙橋路4號",
+      "description": "An industrial heritage zone next to 798 Art District, featuring converted gas tanks and factories now used for fashion shows, exhibitions, and events.",
+      "address": "4 Jiuxianqiao Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9843,
         "lng": 116.4978
       },
-      "openingHours": "10:00-18:00（活動時間不定）",
-      "ticketPrice": "免費（部分活動可能收費）",
-      "recommendedVisitTime": "1-2小時",
+      "openingHours": "10:00-18:00 (events vary)",
+      "ticketPrice": "Free (some events may charge)",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "工業建築",
-        "時裝週場地",
-        "設計展覽",
-        "煤氣罐藝術空間"
+        "Industrial architecture",
+        "Fashion week venue",
+        "Design exhibitions",
+        "Gas tank art space"
       ],
-      "tips": "可與798藝術區一同參觀。請查閱活動日曆以獲取特別展覽資訊。",
+      "tips": "Combine with a 798 Art District visit. Check the event calendar for special exhibitions.",
       "phone": "+86 010  0741 4897"
     },
     {
@@ -1290,22 +1290,22 @@
       "nameEn": "Beijing Aquarium",
       "category": "natural",
       "image": "/img/ext/7f80dfb8bda3.webp",
-      "description": "世界最大的內陸水族館之一，設有鯊魚館、海豚表演和熱帶雨林展區。",
-      "address": "北京市海淀區白石橋路18號（北京動物園內）",
+      "description": "One of the largest inland aquariums in the world, featuring shark tanks, dolphin shows, and a tropical rainforest exhibit.",
+      "address": "18 Baishiqiao Rd, Haidian District (inside Beijing Zoo)",
       "coordinates": {
         "lat": 39.9395,
         "lng": 116.3348
       },
       "openingHours": "09:00-17:30",
-      "ticketPrice": "165¥（動物園+水族館套票）",
-      "recommendedVisitTime": "2-3小時",
+      "ticketPrice": "165¥ (zoo + aquarium combo)",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "鯊魚隧道",
-        "海豚表演",
-        "熱帶雨林區",
-        "觸摸池"
+        "Shark tank tunnel",
+        "Dolphin performances",
+        "Tropical rainforest zone",
+        "Touch pool"
       ],
-      "tips": "到達時查看海豚表演時間。位於北京動物園內。建議購買套票。",
+      "tips": "Check dolphin show times when you arrive. Located inside Beijing Zoo. Buy combo tickets.",
       "phone": "+86 010  9886 3851"
     },
     {
@@ -2386,23 +2386,23 @@
       "cuisine": "Shandong Fast Food",
       "avgPrice": 14,
       "rating": 4,
-      "address": "Multiple locations in Beijing",
+      "address": "北京市多個地點",
       "coordinates": {
         "lat": 39.91,
         "lng": 116.38
       },
       "hours": "06:00-21:00",
-      "description": "Shandong-style budget restaurant chain. Self-serve model with a variety of home-cooked dishes. Full meal with meat for under 20 yuan. Popular with workers.",
+      "description": "山東風格經濟實惠餐廳連鎖店。自助服務模式，提供各種家常菜。全餐含肉類不到20元人民幣，深受工人歡迎。",
       "dishHighlights": [
-        "Braised Chicken",
-        "Stir-Fried Vegetables",
-        "Steamed Buns",
-        "Free Porridge"
+        "紅燒雞肉",
+        "炒時蔬",
+        "蒸饅頭",
+        "免費粥品"
       ],
       "tags": [
-        "street",
-        "budget",
-        "fast-food"
+        "街頭",
+        "經濟實惠",
+        "快餐"
       ],
       "imageUrl": "/img/ext/417ec389b1ed.webp",
       "phone": "+86 010  3623 4397",
@@ -2411,28 +2411,28 @@
     {
       "id": "beijing-cheap-8",
       "name": "白魁老号饭庄",
-      "nameEn": "Baikui Old Restaurant",
+      "nameEn": "白魁老號餐廳",
       "type": "local",
-      "cuisine": "Beijing Halal",
+      "cuisine": "北京清真菜",
       "avgPrice": 20,
       "rating": 4.4,
-      "address": "Dongcheng District, Jiaodaokou",
+      "address": "東城區交道口",
       "coordinates": {
         "lat": 39.94,
         "lng": 116.409
       },
       "hours": "06:00-20:00",
-      "description": "Historic halal restaurant since 1780. Famous for their kaobao (baked cake) and stewed lamb. One of the oldest surviving restaurants in Beijing.",
+      "description": "自1780年以來的歷史性清真餐廳，以烤饃和燉羊肉聞名。是北京現存最古老的餐廳之一。",
       "dishHighlights": [
-        "Kaobao (Baked Cake)",
-        "Stewed Lamb",
-        "Tanghuoshao",
-        "Douzhi"
+        "烤包子",
+        "燉羊肉",
+        "糖火燒",
+        "豆汁"
       ],
       "tags": [
-        "street",
-        "halal",
-        "traditional"
+        "街頭小吃",
+        "清真",
+        "傳統"
       ],
       "imageUrl": "/img/ext/b604fd085dd0.webp",
       "phone": "+86 010  8138 1873",
@@ -2441,28 +2441,28 @@
     {
       "id": "beijing-36",
       "name": "巷子炸酱面",
-      "nameEn": "巷子炸酱面 (炸酱面)",
+      "nameEn": "巷子炸醬麵 (炸醬麵)",
       "type": "cafe",
-      "cuisine": "炸酱面",
+      "cuisine": "炸醬麵",
       "avgPrice": 42,
       "rating": 4.2,
-      "address": "北京市朝阳区美食街46号",
+      "address": "北京市朝陽區美食街46號",
       "coordinates": {
         "lat": 39.8883,
         "lng": 116.4426
       },
       "phone": "+86 010 82424170",
       "hours": "06:00-14:00",
-      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炸醬麵店，味道正宗，價格實惠",
       "dishHighlights": [
         "炒肝",
-        "炸酱面",
-        "烤鸭"
+        "炸醬麵",
+        "烤鴨"
       ],
       "tags": [
         "下午茶",
-        "安静",
-        "文艺"
+        "安靜",
+        "文藝"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d37d82561b1.webp",
@@ -2476,22 +2476,22 @@
       "cuisine": "豆汁",
       "avgPrice": 36,
       "rating": 4.4,
-      "address": "北京市东城区美食街133号",
+      "address": "北京市東城區美食街133號",
       "coordinates": {
         "lat": 39.8995,
         "lng": 116.4276
       },
       "phone": "+86 010 97838743",
       "hours": "17:00-02:00",
-      "description": "北京本地人推荐的豆汁店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的豆汁店，味道正宗，價格實惠",
       "dishHighlights": [
         "涮羊肉",
         "豆汁",
         "炒肝"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
+        "老字號",
+        "本地人愛去",
         "家常菜"
       ],
       "diamond": 0,
@@ -2702,7 +2702,7 @@
       "tags": [
         "下午茶",
         "安静",
-        "文艺"
+        "文藝"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4fcc219f3aae.webp",
@@ -2711,28 +2711,28 @@
     {
       "id": "beijing-54",
       "name": "街边炸酱面",
-      "nameEn": "街边炸酱面 (炸酱面)",
+      "nameEn": "街邊炸醬麵 (炸醬麵)",
       "type": "street",
-      "cuisine": "炸酱面",
+      "cuisine": "炸醬麵",
       "avgPrice": 56,
       "rating": 4.1,
-      "address": "北京市海淀区美食街85号",
+      "address": "北京市海澱區美食街85號",
       "coordinates": {
         "lat": 39.9056,
         "lng": 116.3752
       },
       "phone": "+86 010 33886659",
       "hours": "10:00-22:00",
-      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炸醬麵店，味道正宗，價格實惠",
       "dishHighlights": [
-        "卤煮",
-        "烤鸭",
+        "滷煮",
+        "烤鴨",
         "涮羊肉"
       ],
       "tags": [
         "小吃",
         "深夜美食",
-        "网红打卡"
+        "網紅打卡"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/a64be3138bf4.webp",
@@ -2741,28 +2741,28 @@
     {
       "id": "beijing-56",
       "name": "老字号豆汁",
-      "nameEn": "老字号豆汁 (豆汁)",
+      "nameEn": "老字號豆汁 (豆汁)",
       "type": "local",
       "cuisine": "豆汁",
       "avgPrice": 109,
       "rating": 4.8,
-      "address": "北京市西城区美食街112号",
+      "address": "北京市西城區美食街112號",
       "coordinates": {
         "lat": 39.8841,
         "lng": 116.3761
       },
       "phone": "+86 010 86562390",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "北京本地人推荐的豆汁店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的豆汁店，味道正宗，價格實惠",
       "dishHighlights": [
-        "炸酱面",
+        "炸醬麵",
         "涮羊肉",
-        "烤鸭"
+        "烤鴨"
       ],
       "tags": [
-        "排队王",
-        "隐藏美食",
-        "社区老店"
+        "排隊王",
+        "隱藏美食",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/db77b0b2b9de.webp",
@@ -2776,23 +2776,23 @@
       "cuisine": "涮羊肉",
       "avgPrice": 45,
       "rating": 4.2,
-      "address": "北京市丰台区美食街131号",
+      "address": "北京市豐台區美食街131號",
       "coordinates": {
         "lat": 39.9196,
         "lng": 116.4388
       },
       "phone": "+86 010 21874599",
       "hours": "17:00-02:00",
-      "description": "北京本地人推荐的涮羊肉店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的涮羊肉店，味道正宗，價格實惠",
       "dishHighlights": [
-        "卤煮",
-        "烤鸭",
-        "炸酱面"
+        "滷煮",
+        "烤鴨",
+        "炸醬麵"
       ],
       "tags": [
         "家常菜",
-        "排队王",
-        "社区老店"
+        "排隊王",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/28b062f42bb1.webp",
@@ -2801,28 +2801,28 @@
     {
       "id": "beijing-60",
       "name": "老字号豆汁",
-      "nameEn": "老字号豆汁 (豆汁)",
+      "nameEn": "老字號豆汁 (豆汁)",
       "type": "local",
       "cuisine": "豆汁",
       "avgPrice": 62,
       "rating": 4.7,
-      "address": "北京市朝阳区美食街83号",
+      "address": "北京市朝陽區美食街83號",
       "coordinates": {
         "lat": 39.8926,
         "lng": 116.4141
       },
       "phone": "+86 010 30144588",
       "hours": "10:00-22:00",
-      "description": "北京本地人推荐的豆汁店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的豆汁店，味道正宗，價格實惠",
       "dishHighlights": [
         "爆肚",
-        "卤煮",
-        "烤鸭"
+        "滷煮",
+        "烤鴨"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "老字号"
+        "性價比高",
+        "排隊王",
+        "老字號"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e01ef0223e8c.webp",
@@ -2831,27 +2831,27 @@
     {
       "id": "beijing-62",
       "name": "阿婆炸酱面",
-      "nameEn": "阿婆炸酱面 (炸酱面)",
+      "nameEn": "阿婆炸醬麵 (炸醬麵)",
       "type": "cafe",
-      "cuisine": "炸酱面",
+      "cuisine": "炸醬麵",
       "avgPrice": 58,
       "rating": 4.2,
-      "address": "北京市丰台区美食街135号",
+      "address": "北京市豐台區美食街135號",
       "coordinates": {
         "lat": 39.8637,
         "lng": 116.4041
       },
       "phone": "+86 010 70044752",
       "hours": "09:00-21:00",
-      "description": "北京本地人推荐的炸酱面店，味道正宗，价格实惠",
+      "description": "北京本地人推薦的炸醬麵店，味道正宗的，價格實惠",
       "dishHighlights": [
-        "炸酱面",
+        "炸醬麵",
         "豆汁",
         "爆肚"
       ],
       "tags": [
         "咖啡",
-        "文艺",
+        "文藝",
         "下午茶"
       ],
       "diamond": 0,
@@ -2866,7 +2866,7 @@
       "cuisine": "炒肝",
       "avgPrice": 45,
       "rating": 4.8,
-      "address": "北京市西城区美食街5号",
+      "address": "北京市西城區美食街5號",
       "coordinates": {
         "lat": 39.8972,
         "lng": 116.3862
@@ -3408,193 +3408,193 @@
     {
       "category": "greeting",
       "title": "Greetings & Titles",
-      "content": "Use 'ni hao' (hello) and 'xie xie' (thank you). Address people by surname + title (e.g., Wang Xiansheng for Mr. Wang). Handshakes are common in business settings.",
+      "content": "使用「你好」和「謝謝」。稱呼他人時使用姓氏加頭銜（例如：王先生）。商務場合握手是常見的。",
       "importance": "high"
     },
     {
       "category": "dining",
       "title": "Dining Etiquette",
-      "content": "Wait to be seated. Don't stick chopsticks vertically in rice - it resembles funeral rituals. Leave some food on your plate to show you've had enough. Tipping is not expected.",
+      "content": "等待入座。不要將筷子直插在米飯中——這像葬禮儀式。留一些食物在盤子裡表示你已經吃夠了。不需要給小費。",
       "importance": "high"
     },
     {
       "category": "social",
       "title": "Business Card Exchange",
-      "content": "Present and receive business cards with both hands. Take a moment to read the card before putting it away respectfully.",
+      "content": "雙手遞接名片。接過名片後花點時間閱讀，再恭謹地收好。",
       "importance": "medium"
     },
     {
       "category": "photography",
       "title": "Photography Rules",
-      "content": "Ask permission before photographing people, especially in rural areas. Some attractions prohibit photography inside. Military areas are always off-limits.",
+      "content": "拍攝人物前請先徵求許可，特別是在偏遠地區。有些景點內禁止拍照。軍事區域一律禁止進入。",
       "importance": "medium"
     },
     {
       "category": "shopping",
       "title": "Bargaining",
-      "content": "Bargaining is expected at markets and small shops. Start at 30-50% of the asking price. Be friendly - it's a social activity. Walk away if you can't agree.",
+      "content": "在市場和小店裡議價是預期的。從開價的30-50%開始殺價。保持友善——這是一種社交活動。如果無法達成共識就轉身離開。",
       "importance": "medium"
     },
     {
       "category": "taboo",
       "title": "Number Taboos",
-      "content": "The number 4 is considered extremely unlucky (sounds like 'death'). Avoid giving gifts in sets of 4. The number 8 is very lucky (sounds like 'prosperity'). 6 signifies smoothness. 9 signifies forever.",
+      "content": "數字4被認為非常不吉利（發音像「死」）。避免送4件一套的禮物。數字8非常吉利（發音像「發」）。6代表順利。9代表永遠。",
       "importance": "high"
     },
     {
       "category": "taboo",
       "title": "Color Symbolism",
-      "content": "White and black represent mourning/death - avoid wearing to celebrations. Red represents luck and joy - appropriate for festive occasions. Yellow was imperial color - wear respectfully.",
+      "content": "白色和黑色代表喪事/死亡——避免在慶祝場合穿著。紅色代表幸運和喜悅——適合節日場合。黃色是皇室顏色——穿著時應表示尊重。",
       "importance": "high"
     },
     {
       "category": "taboo",
       "title": "Gift Giving Taboos",
-      "content": "Avoid giving clocks (sounds like 'death'), scissors (cutting ties), or pears (sounds like 'separation'). Umbrellas sound like 'scattering'. Wrap gifts in red - avoid white or black wrapping for celebrations.",
+      "content": "避免送鐘（發音像「送終」）、剪刀（切斷關係）或梨（發音像「分離」）。傘的發音像「散」。用紅色包裝禮物——慶祝時避免白色或黑色包裝。",
       "importance": "medium"
     },
     {
       "category": "dining",
       "title": "Chopstick Etiquette",
-      "content": "Never stick chopsticks vertically in rice (funeral ritual). Don't point with chopsticks or wave them around. Don't pass food directly chopstick-to-chopstick (used in funeral rites).",
+      "content": "千萬不要將筷子直插在米飯中（葬禮儀式）。不要用筷子指人或揮舞。不要直接用筷子遞接食物（這是用於葬禮的儀式）。",
       "importance": "high"
     },
     {
       "category": "dining",
       "title": "Seating Arrangements",
-      "content": "The host faces the door; most honored guest sits to the left of host. Wait for 'please eat' before starting. The guest of honor will be offered the first serve. Leave some food to show you're satisfied.",
+      "content": "主人面向門口；最受尊貴的客人坐在主人的左側。等待「請用」後再開始用餐。貴賓將被優先上菜。留一些食物表示你已滿足。",
       "importance": "medium"
     },
     {
       "category": "dining",
       "title": "Toasting Etiquette",
-      "content": "Toast with both hands and lower your glass than elders/seniors. When clinking glasses, aim to be lower than those of higher rank. Finish your drink when toasting with seniors.",
+      "content": "雙手敬酒並將酒杯低於長輩/前輩。碰杯時，試圖比位階更高的人低。與前輩敬酒時要喝完杯中酒。",
       "importance": "medium"
     },
     {
       "category": "social",
       "title": "Personal Space",
-      "content": "Chinese people may stand closer than Western norms. Physical contact between same genders is common and not awkward. Avoid prolonged eye contact with strangers.",
+      "content": "中國人站得比西方標準更近。同性之間的身體接觸很常見，不會感到尷尬。避免與陌生人進行長時間的眼神接觸。",
       "importance": "low"
     },
     {
       "category": "social",
       "title": "Addressing People",
-      "content": "Use full name + title for formal situations. First name alone is for close friends. 'Lao' (old) before surname shows respect for older people. 'Xiao' (little) before surname for younger people.",
+      "content": "正式場合使用全名加頭銜。只有名字只用於好朋友。姓氏前加「老」表示對年長者的尊敬。姓氏前加「小」用於年輕人。",
       "importance": "medium"
     },
     {
       "category": "business",
       "title": "Business Meeting Etiquette",
-      "content": "Arrive on time or slightly early. Exchange business cards with both hands, receive with both hands and study before putting away. Allow senior members to speak first. Avoid direct 'no' - say 'we will consider' instead.",
+      "content": "準時或稍微提前到達。雙手遞接名片，雙手接過後閱讀再收好。讓前輩先發言。避免直接說「不」——改說「我們會考慮」。",
       "importance": "high"
     },
     {
       "category": "business",
       "title": "Guanxi (Relationships)",
-      "content": "Business in China is relationship-driven. Building trust takes time through dining, tea, and social activities. Maintaining guanxi is essential for long-term success.",
+      "content": "在中國，商業活動建立在人際關係上。透過聚餐、茶敘和社交活動建立信任需要時間。維持關係對於長期成功至關重要。",
       "importance": "high"
     },
     {
       "category": "travel",
       "title": "Queue Culture",
-      "content": "Lines may seem chaotic but people generally respect turns. Push ahead politely but firmly. In crowded places, state your destination clearly: 'Mai dan' (I'm paying) at restaurants, or 'Pao zhou' (noodles) at food stalls.",
+      "content": "隊伍可能看起來混亂，但人們普遍尊重順序。請禮貌而堅定地往前擠。在擁擠的地方清楚說明您的目的地：在餐廳說「買單」，或在小吃攤說「泡麵」。",
       "importance": "low"
     },
     {
       "category": "travel",
       "title": "Public Transport Etiquette",
-      "content": "Give seats to elderly, pregnant women, and people with children. Don't eat or drink on metro. Keep phone calls brief or on silent. Stand on right side of escalator, walk on left.",
+      "content": "讓座給老年人、孕婦和帶小孩的人。請不要在地鐵上吃東西或喝水。請保持電話簡短或設為靜音。請站在電扶梯右側，左側通行。",
       "importance": "medium"
     },
     {
       "category": "travel",
       "title": "Temple Etiquette",
-      "content": "Walk clockwise around Buddhist temples. Don't touch Buddha statues or point at them. Light incense with both hands and bow three times. Don't take photos where prohibited. Remove hats and sunglasses in temple halls.",
+      "content": "請順時針方向參觀佛教寺廟。請勿觸摸佛像或用手指佛像。雙手握香並三鞠躬。請勿在禁止拍照的地方拍照。在寺廟殿堂內請脫帽和太陽眼鏡。",
       "importance": "medium"
     },
     {
       "category": "shopping",
       "title": "Market Shopping Tips",
-      "content": "Bring your own shopping bag (eco-friendly). Test electronics carefully. Check electronics carefully - ask to try before buying. Negotiate confidently but pleasantly. Many markets have wholesale minimums.",
+      "content": "請自備購物袋（環保）。請仔細測試電子產品。購買前請先試用。請自信但愉快地議價。許多市場都有批發最低消費量。",
       "importance": "medium"
     },
     {
       "category": "communication",
       "title": "Language Tips",
-      "content": "Learning a few Mandarin phrases is appreciated. 'Bu hao yi si' (不好意思) is useful for apologies. 'Dui bu qi' (对不起) is more formal. 'Ke yi' (可以) means 'may I?' - polite way to get attention. Use 'Zai jian' (再见) when leaving.",
+      "content": "學習一些普通話會受到讚賞。「不好意思」用於道歉很實用。「對不起」更正式。「可以」意為「我可以嗎？」—這是請求注意的禮貌方式。離開時使用「再見」。",
       "importance": "medium"
     },
     {
       "category": "greeting",
       "title": "Beijing Dialect",
-      "content": "The Beijing dialect (北京话) has distinct pronunciation and many colloquial expressions. 'Ye' (也) and 'zai' (再) are pronounced with a trailing 'r' sound. Learning basic phrases is appreciated.",
+      "content": "北京話有独特的发音和许多口语表达。「也」和「再」的发音带有卷舌「r」音。学基本短语会受到赞赏。",
       "importance": "medium"
     },
     {
       "category": "weather",
       "title": "Sandstorm Season",
-      "content": "Beijing experiences sandstorms in spring (March-April). Check air quality indices (AQI) before going outside. Wear masks outdoors and keep windows closed during heavy sandstorms.",
+      "content": "北京春季（三月至四月）有沙尘暴。外出前请查看空气质量指数（AQI）。在户外请戴口罩，沙尘暴严重时请关闭窗户。",
       "importance": "high"
     },
     {
       "category": "communication",
       "title": "English Accessibility",
-      "content": "English signage is common at major tourist attractions and hotels. However, at local markets, small restaurants, and public transport, English may be limited. Translation apps are helpful.",
+      "content": "主要旅游景点和酒店常见英文标示。然而，在当地市场、小餐厅和公共交通工具上，英语可能有限。翻译应用程序很有帮助。",
       "importance": "medium"
     },
     {
       "category": "greeting",
       "title": "Beijing Dialect",
-      "content": "The Beijing dialect (北京话) has distinct pronunciation and many colloquial expressions. 'Ye' (也) and 'zai' (再) are pronounced with a trailing 'r' sound. Learning basic phrases is appreciated.",
+      "content": "北京话有独特的发音和许多口语表达。「也」和「再」的发音带有卷舌「r」音。学基本短语会受到赞赏。",
       "importance": "medium"
     },
     {
       "category": "weather",
       "title": "Sandstorm Season",
-      "content": "Beijing experiences sandstorms in spring (March-April). Check air quality indices (AQI) before going outside. Wear masks outdoors and keep windows closed during heavy sandstorms.",
+      "content": "北京春季（三月至四月）有沙尘暴。外出前请查看空气质量指数（AQI）。在户外请戴口罩，沙尘暴严重时请关闭窗户。",
       "importance": "high"
     },
     {
       "category": "communication",
       "title": "English Accessibility",
-      "content": "English signage is common at major tourist attractions and hotels. However, at local markets, small restaurants, and public transport, English may be limited. Translation apps are helpful.",
+      "content": "主要旅游景点和酒店常见英文标示。然而，在当地市场、小餐厅和公共交通工具上，英语可能有限。翻译应用程序很有帮助。",
       "importance": "medium"
     },
     {
       "category": "dining",
       "title": "Beijing Roast Duck Culture",
-      "content": "Peking duck is Beijing's most famous dish. Popular restaurants include Quanjude (est. 1864), Bianyifang (est. 1855), and Da Dong. Each has its own preparation style.",
+      "content": "北京烤鸭是北京最著名的菜肴。知名餐厅包括全聚德（创立于1864年）、便宜坊（创立于1855年）和大东。每家都有独特的制作方式。",
       "importance": "high"
     },
     {
       "category": "architecture",
       "title": "Hutong Heritage",
-      "content": "Hutongs (胡同) are traditional alleyways forming historic Beijing neighborhoods. Walking or cycling through hutongs offers insight into traditional Beijing life.",
+      "content": "胡同是形成北京历史街区的传统小巷。步行或骑自行车穿越胡同可以深入了解传统北京生活。",
       "importance": "high"
     },
     {
       "category": "taboo",
       "title": "Censorship Awareness",
-      "content": "Internet access in Beijing is restricted. VPNs are commonly used but may be unreliable. Plan accordingly for accessing international services.",
+      "content": "北京的互联网访问受限。VPN常用但可能不可靠。规划使用国际服务时请做好准备。",
       "importance": "high"
     },
     {
       "category": "shopping",
       "title": "Silk Market Culture",
-      "content": "The Silk Market (Xizhushui) and other markets offer bargaining opportunities. Start at 30-50% of asking price. Quality varies - check carefully before purchasing.",
+      "content": "西直水市場和其他市場提供議價機會。從標價的30-50%開始出價。品質參差不齊，購買前請仔細檢查。",
       "importance": "medium"
     },
     {
       "category": "transportation",
       "title": "Peak Hours",
-      "content": "Beijing traffic peaks 7-9am and 5-8pm. Public transport is recommended. Metro Line 1, 2, and 10 are most useful for tourists.",
+      "content": "北京交通高峰時間為早上7-9點和下午5-8點。建議使用公共交通。地鐵1號線、2號線和10號線對遊客最為實用。",
       "importance": "medium"
     },
     {
       "category": "greeting",
       "title": "Beijing Nicknames",
-      "content": "Locals may use Beijing-specific terms like 'dageda' (大哥大) for older men or 'jie jie' (姐姐) for women. 'Er' suffix is common: 'Beijing'er'.",
+      "content": "當地人可能會使用北京特有的用語，例如用「大爺」（dageda）來稱呼年長男性，或用「姐姐」（jie jie）來稱呼女性。「兒」字後綴很常見，例如「北京兒」（Beijing'er）。",
       "importance": "low"
     }
   ],
@@ -3602,198 +3602,198 @@
     {
       "type": "ambulance",
       "name": "北京急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing Emergency Center",
       "phone": "120",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various locations citywide",
+      "notes": "English operators available at some locations"
     },
     {
       "type": "police",
       "name": "北京市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing Public Security Bureau",
       "phone": "110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qianmen area",
+      "notes": "Tourist police stations at major attractions"
     },
     {
       "type": "fire",
       "name": "北京消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing Fire Brigade",
       "phone": "119",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various stations",
+      "notes": "Also handles rescue operations"
     },
     {
       "type": "hospital",
       "name": "和睦家医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing United Family Hospital",
       "phone": "+86 10 5927 7120",
-      "address": "Guangzhou",
+      "address": "2 Xiangjiang Mid Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9492,
         "lng": 116.4745
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff, accepts international insurance"
     },
     {
       "type": "hospital",
       "name": "北京协和医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Peking Union Medical College Hospital",
       "phone": "+86 10 6915 1188",
-      "address": "Guangzhou",
+      "address": "1 Shuaifuyuan, Dongcheng District",
       "coordinates": {
         "lat": 39.9142,
         "lng": 116.4235
       },
-      "notes": "For Singapore citizens"
+      "notes": "Best public hospital for complex cases"
     },
     {
       "type": "embassy",
       "name": "美国驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Embassy Beijing",
       "phone": "+86 10 8531 3000",
-      "address": "Guangzhou",
+      "address": "55 Anjialou Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9542,
         "lng": 116.4445
       },
-      "notes": "For Singapore citizens"
+      "notes": "For US citizens: 24h line +86 10 8531 3000"
     },
     {
       "type": "embassy",
       "name": "英国驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Embassy Beijing",
       "phone": "+86 10 8529 6600",
-      "address": "Guangzhou",
+      "address": "11 Guanghua Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9482,
         "lng": 116.4532
       },
-      "notes": "For Singapore citizens"
+      "notes": "For UK citizens: 24h consular emergency line"
     },
     {
       "type": "embassy",
       "name": "日本驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Embassy Beijing",
       "phone": "+86 10 8561 3000",
-      "address": "Guangzhou",
+      "address": "1 Liangmaqiao Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9512,
         "lng": 116.4622
       },
-      "notes": "For Singapore citizens"
+      "notes": "Japanese citizens can also use +86 10 8561 3119 for emergencies"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Embassy Beijing",
       "phone": "+86 10 8529 6800",
-      "address": "Guangzhou",
+      "address": "21 Dongzhimenwai St, Chaoyang District",
       "coordinates": {
         "lat": 39.9492,
         "lng": 116.4452
       },
-      "notes": "For Singapore citizens"
+      "notes": "24h emergency line for Australian citizens"
     },
     {
       "type": "hospital",
       "name": "北京友谊医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing Friendship Hospital",
       "phone": "+86 10 6301 4441",
-      "address": "Guangzhou",
+      "address": "95 Yong'an Rd, Xicheng District",
       "coordinates": {
         "lat": 39.9252,
         "lng": 116.3792
       },
-      "notes": "For Singapore citizens"
+      "notes": "Well-known for tropical medicine and liver diseases"
     },
     {
       "type": "hospital",
       "name": "北京天坛医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing Tiantan Hospital",
       "phone": "+86 10 6709 6656",
-      "address": "Guangzhou",
+      "address": "119 West Rd, Fengtai District",
       "coordinates": {
         "lat": 39.8792,
         "lng": 116.4032
       },
-      "notes": "For Singapore citizens"
+      "notes": "Famous for neurosurgery and neurology"
     },
     {
       "type": "police",
       "name": "北京旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing Tourist Police",
       "phone": "010-65150118",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various locations at major attractions",
+      "notes": "English-speaking officers at key tourist areas including Tiananmen, Qianmen, and Badaling Great Wall"
     },
     {
       "type": "embassy",
       "name": "德国驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Embassy Beijing",
       "phone": "+86 10 8532 9000",
-      "address": "Guangzhou",
+      "address": "9 Sanlitun Dongzhimenwai Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9532,
         "lng": 116.4492
       },
-      "notes": "For Singapore citizens"
+      "notes": "For German citizens: 24h emergency line available"
     },
     {
       "type": "embassy",
       "name": "法国驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "French Embassy Beijing",
       "phone": "+86 10 8532 8000",
-      "address": "Guangzhou",
+      "address": "60 Tianzelu Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9542,
         "lng": 116.4552
       },
-      "notes": "For Singapore citizens"
+      "notes": "For French citizens: consular services and emergency assistance"
     },
     {
       "type": "embassy",
       "name": "加拿大驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canadian Embassy Beijing",
       "phone": "+86 10 5139 4000",
-      "address": "Guangzhou",
+      "address": "10 Chaoyangmenwai Dajie, Chaoyang District",
       "coordinates": {
         "lat": 39.9512,
         "lng": 116.4412
       },
-      "notes": "For Singapore citizens"
+      "notes": "24h emergency line for Canadian citizens"
     },
     {
       "type": "tourist-helpline",
       "name": "北京旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Beijing Tourist Complaint Hotline",
       "phone": "12345",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "For tourist complaints, refunds, and emergency assistance"
     },
     {
       "type": "embassy",
       "name": "俄罗斯驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Russian Embassy Beijing",
       "phone": "+86 10 6532 2000",
-      "address": "Guangzhou",
+      "address": "4 Dongzhimen Beizhan, Dongcheng District",
       "coordinates": {
         "lat": 39.9532,
         "lng": 116.4292
       },
-      "notes": "For Singapore citizens"
+      "notes": "For Russian citizens: consular services available"
     },
     {
       "type": "embassy",
       "name": "意大利驻华大使馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Italian Embassy Beijing",
       "phone": "+86 10 8532 7600",
-      "address": "Guangzhou",
+      "address": "1 Sanlitun Dongzhimenwai Rd, Chaoyang District",
       "coordinates": {
         "lat": 39.9522,
         "lng": 116.4492
       },
-      "notes": "For Singapore citizens"
+      "notes": "For Italian citizens: emergency assistance available"
     }
   ],
   "quickFacts": {

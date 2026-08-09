@@ -9,14 +9,14 @@
     "lng": 100.2295
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "ليجيانغ مدينة خلابة في شمال غرب مقاطعة يوننان. تشتهر بمدينتها القديمة المسجلة في تراث اليونسكو العالمي بفن العمارة الناكسي ونظام القنوات. تقع بين جبال الهيمالايا وهضبة يوننان، وتوفر مناظر طبيعية مذهلة.",
+  "description": "Lijiang is a picturesque city in northwestern Yunnan province, famous for the UNESCO World Heritage-listed Lijiang Old Town with its Naxi architecture and canal system. Nestled between the Himalayas and Yunnan-Guizhou Plateau, it offers stunning natural scenery including Jade Dragon Snow Mountain and the peaceful beauty of Lugu Lake. Home to the Naxi, Bai, Yi, and other ethnic minorities with rich cultural traditions.",
   "coverImage": "/img/ext/aa2ff2381270.webp",
   "highlights": [
-    "مدينة ليجيانغ القديمة - تراث اليونسكو",
-    "جبل التنين اليشم المثلج - قمم رائعة",
-    "بحيرة لوغو - بحيرة جبلية بكر",
-    "وادي نمر القافز - مضيق مذهل",
-    "مدينة شاكسي القديمة - ثقافة ناكسي الأصيلة"
+    "Lijiang Old Town - UNESCO World Heritage",
+    "Jade Dragon Snow Mountain - Stunning peaks",
+    "Lugu Lake - Pristine alpine lake",
+    "Tiger Leaping Gorge - Dramatic canyon",
+    "Shaxi Ancient Town - Authentic Naxi culture"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "15-25C (59-77F)",
     "avgWinterTemp": "4-15C (39-59F)",
-    "tips": "الربيع والخريف هما الأفضل، معتدل وصاف. الصيف ممطر لكن أخضر. الشتاء جاف وصاف لكنه بارد ليلاً. ارتفاع عالٍ يعني الأشعة فوق البنفسجية قوية. جبل الثلج بارد حتى في الصيف، أحضر سترة."
+    "tips": "Spring and autumn are best with mild weather and clear skies. Summer is rainy but lush green. Winter is dry and sunny but cold at night. UV is very strong year-round due to altitude. Jade Dragon Snow Mountain is cold even in summer - bring layers."
   },
   "restaurants": [
     {
@@ -1481,26 +1481,26 @@
       "name": "街边腊排骨",
       "nameEn": "街边腊排骨 (腊排骨)",
       "type": "local",
-      "cuisine": "腊排骨",
+      "cuisine": "لاباي قواي (ضلع الخنزير المُملّح)",
       "avgPrice": 102,
       "rating": 4,
-      "address": "丽江市市中心区美食街19号",
+      "address": "شارع الميزان، المنطقة المركزية، مدينة ليجيانغ، رقم 19",
       "coordinates": {
         "lat": 26.8478,
         "lng": 100.2247
       },
       "phone": "+86 010 78274571",
-      "hours": "10:30-14:00, 16:30-22:00",
-      "description": "丽江本地人推荐的腊排骨店，味道正宗，价格实惠",
+      "hours": "10:30-14:00، 16:30-22:00",
+      "description": "مطعم يوصي به السكان المحليون في ليجيانغ، طعام أصلي وسعر معقول",
       "dishHighlights": [
-        "三文鱼",
-        "纳西烤鱼",
-        "丽江粑粑"
+        "سمك السلمون",
+        "سمك الناكسي المشوي",
+        "كعكة ليجيانغ"
       ],
       "tags": [
-        "社区老店",
-        "排队王",
-        "家常菜"
+        "مطعم社区قديم في الحي",
+        "وجبة排队الأكثر شعبية",
+        "طعام منزلي"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -1508,28 +1508,28 @@
     {
       "id": "lijiang-61",
       "name": "老字号鸡豆凉粉",
-      "nameEn": "老字号鸡豆凉粉 (鸡豆凉粉)",
+      "nameEn": "مطعم 老字号鸡豆凉粉 (جيكو ليانغفين)",
       "type": "local",
-      "cuisine": "鸡豆凉粉",
+      "cuisine": "جيكو ليانغفين (جيلاتين فول الطيور)",
       "avgPrice": 148,
       "rating": 4.2,
-      "address": "丽江市市中心区美食街140号",
+      "address": "شارع الميزان، المنطقة المركزية، مدينة ليجيانغ، رقم 140",
       "coordinates": {
         "lat": 26.8423,
         "lng": 100.2084
       },
       "phone": "+86 010 48947651",
       "hours": "09:00-21:00",
-      "description": "丽江本地人推荐的鸡豆凉粉店，味道正宗，价格实惠",
+      "description": "مطعم يوصي به السكان المحليون في ليجيانغ، طعام أصلي وسعر معقول",
       "dishHighlights": [
-        "腊排骨",
-        "鸡豆凉粉",
+        "ضلع الخنزير المُملح",
+        "جيلوبي bean الدجاج",
         "三文鱼"
       ],
       "tags": [
-        "排队王",
-        "老字号",
-        "性价比高"
+        "ملك الطوابير",
+        "متجر تاريخي",
+        "قيمة ممتازة مقابل السعر"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/9317132da5bb.webp"
@@ -1537,28 +1537,28 @@
     {
       "id": "lijiang-63",
       "name": "传统丽江粑粑",
-      "nameEn": "传统丽江粑粑 (丽江粑粑)",
+      "nameEn": "الخبز التقليدي ليجيانغ (خبز ليجيانغ)",
       "type": "local",
-      "cuisine": "丽江粑粑",
+      "cuisine": "خبز ليجيانغ",
       "avgPrice": 72,
       "rating": 4.7,
-      "address": "丽江市老城区美食街137号",
+      "address": "شارع الطعام القديم، المنطقة القديمة، مدينة ليجيانغ رقم 137",
       "coordinates": {
         "lat": 26.888,
         "lng": 100.2228
       },
       "phone": "+86 010 74359756",
-      "hours": "10:30-14:00, 16:30-22:00",
-      "description": "丽江本地人推荐的丽江粑粑店，味道正宗，价格实惠",
+      "hours": "10:30-14:00، 16:30-22:00",
+      "description": "مطعم خبز ليجيانغ موصى به من قبل السكان المحليين، بطعم أصلي وأسعار معقولة",
       "dishHighlights": [
-        "腊排骨",
-        "丽江粑粑",
-        "鸡豆凉粉"
+        "ضلع الخنزير المُملح",
+        "خبز ليجيانغ",
+        "جيلوبي bean الدجاج"
       ],
       "tags": [
-        "老字号",
-        "家常菜",
-        "本地人爱去"
+        "متجر تاريخي",
+        "طعام منزلي",
+        "محبوب لدى السكان المحليين"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/abe41a7612d1.webp"
@@ -1566,28 +1566,28 @@
     {
       "id": "lijiang-65",
       "name": "老字号三文鱼",
-      "nameEn": "老字号三文鱼 (三文鱼)",
+      "nameEn": "متجر السلمون التراثي (سلمون)",
       "type": "local",
-      "cuisine": "三文鱼",
+      "cuisine": "سلمون",
       "avgPrice": 70,
       "rating": 4.3,
-      "address": "丽江市老城区美食街164号",
+      "address": "شارع الطعام، المنطقة القديمة، رقم 164، مدينة ليجيانغ",
       "coordinates": {
         "lat": 26.8966,
         "lng": 100.1818
       },
       "phone": "+86 010 76143242",
       "hours": "09:00-21:00",
-      "description": "丽江本地人推荐的三文鱼店，味道正宗，价格实惠",
+      "description": "متجر سلمون موصى به من قبل السكان المحليين في ليجيانغ، بطعم أصلي وسعر معقول",
       "dishHighlights": [
-        "纳西烤鱼",
-        "鸡豆凉粉",
-        "腊排骨"
+        "سمك مشوي ناسي",
+        "جيلاتي فول الدجاج",
+        "ضلوع لحم الخنزير المجففة"
       ],
       "tags": [
-        "家常菜",
-        "社区老店",
-        "老字号"
+        "طعام منزلي",
+        "متجر قديم في الحي",
+        "متجر تراثي"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -1595,9 +1595,9 @@
     {
       "id": "lijiang-67",
       "name": "巷子三文鱼",
-      "nameEn": "巷子三文鱼 (三文鱼)",
+      "nameEn": "متجر السلمون في الزقاق (سلمون)",
       "type": "local",
-      "cuisine": "三文鱼",
+      "cuisine": "سلمون",
       "avgPrice": 78,
       "rating": 4.2,
       "address": "丽江市市中心区美食街123号",
@@ -2272,194 +2272,194 @@
     {
       "type": "fire",
       "name": "丽江消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "丽江急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Lijiang city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Lijiang City Center"
     },
     {
       "id": "fire",
       "name": "丽江市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "ambulance",
       "name": "丽江市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-hotline",
       "name": "丽江市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Complaint Hotline",
       "phone": "0888-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-bureau",
       "name": "丽江市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Enforcement",
       "phone": "0888-5122927",
       "type": "tourism",
       "description": "Report illegal tourism activities, price disputes",
-      "address": "Guangzhou"
+      "address": "Lijiang Old Town"
     },
     {
       "id": "gucheng-police",
       "name": "古城区公安分局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Gucheng District Police Station",
       "phone": "0888-5158110",
       "type": "police",
       "description": "Old Town area police station",
-      "address": "Guangzhou"
+      "address": "Gucheng District, Lijiang"
     },
     {
       "id": "medical-advice",
       "name": "丽江市人民医院急诊",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang People's Hospital Emergency",
       "phone": "0888-5160120",
       "type": "medical",
       "description": "Main hospital emergency department",
-      "address": "Guangzhou"
+      "address": "Xin Dayan Road, Lijiang"
     },
     {
       "id": "high-altitude-rescue",
       "name": "丽江高山救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang High Altitude Rescue",
       "phone": "0888-5168110",
       "type": "rescue",
       "description": "Mountain rescue for Jade Dragon Snow Mountain and hiking areas",
-      "address": "Guangzhou"
+      "address": "Jade Dragon Snow Mountain area"
     },
     {
       "id": "weather",
       "name": "丽江市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and mountain weather specifically",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "forestry-fire",
       "name": "丽江森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Forest Fire Prevention",
       "phone": "0888-12119",
       "type": "emergency",
       "description": "Forest fire reporting for Lijiang area",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming (provincial)"
     },
     {
       "id": "lugu-lake-police",
       "name": "泸沽湖派出所",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lugu Lake Police Station",
       "phone": "0888-5881110",
       "type": "police",
       "description": "Police coverage for Lugu Lake area",
-      "address": "Guangzhou"
+      "address": "Lugu Lake area"
     },
     {
       "id": "tiger-leaping-gorge-rescue",
       "name": "虎跳峡救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tiger Leaping Gorge Rescue",
       "phone": "0888-5166110",
       "type": "rescue",
       "description": "Rescue services for Tiger Leaping Gorge hiking area",
-      "address": "Guangzhou"
+      "address": "Tiger Leaping Gorge area"
     },
     {
       "id": "road-emergency",
       "name": "丽江道路救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Road Emergency",
       "phone": "0888-12122",
       "type": "road",
       "description": "Roadside assistance and traffic emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang area roads"
     },
     {
       "id": "lijiang-railway",
       "name": "丽江火车站服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Railway Station",
       "phone": "0888-5129352",
       "type": "transport",
       "description": "Railway ticket inquiries and station services",
-      "address": "Guangzhou"
+      "address": "Lijiang Railway Station"
     },
     {
       "id": "national-tourism-lijiang",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     },
     {
       "id": "lijiang-consumer-complaint",
       "name": "丽江市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Consumer Association",
       "phone": "0888-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-water-emergency",
       "name": "丽江市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Water Supply Company",
       "phone": "0888-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-electricity-emergency",
       "name": "丽江供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     }
   ],
   "culturalTips": [
@@ -3059,22 +3059,22 @@
       "name": "束河古镇",
       "nameEn": "Shaxi Ancient Town",
       "category": "cultural",
-      "description": "太仓市保存完好的古镇，有1300多年历史。镇上老街保存完好，临水建筑、古桥、寺庙构成典型的江南水乡风貌，游客稀少非常安静。",
-      "address": "苏州市太仓市沙溪镇",
+      "description": "Less touristy Naxi town compared to Lijiang Old Town, preserving authentic Naxi architecture and traditional way of life. Also called 'Three Lanes' town.",
+      "address": "Shaxi Town, 8km north of Lijiang",
       "coordinates": {
         "lat": 26.9083,
         "lng": 100.1928
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
       "highlights": [
-        "临水老街",
-        "古桥群",
-        "传统手工艺",
-        "安静氛围"
+        "青龙桥 (Black Dragon Bridge)",
+        "Naxi architecture",
+        "Tea House Square",
+        "Horse caravan history"
       ],
-      "tips": "游客非常少，可以悠闲地逛古镇。从太仓市区可乘公交到达。",
+      "tips": "Visit in early morning or evening to avoid day-trippers. The tea house culture is authentic. Good for buying Naxi handicrafts without tourist markups. Combine with nearby Jade Dragon Snow Mountain.",
       "imageUrl": "/img/ext/557132bee5c8.webp",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 088 8 2751 4951"
@@ -3609,22 +3609,22 @@
       "name": "巴巴藏族古道",
       "nameEn": "Baba Tibetan Trail",
       "category": "natural",
-      "description": "مسار قديم للمشي يربط القرى التبتية ويوفر مناظر جبلية خلابة، وأعلام الصلاة، وثقافة أصيلة.",
-      "address": "منطقة قرية بابا، على بعد 40 كم من لي جيانغ",
+      "description": "Ancient hiking trail connecting Tibetan villages with stunning mountain views, prayer flags, and authentic culture.",
+      "address": "Baba Village area, 40km from Lijiang",
       "coordinates": {
         "lat": 27.0656,
         "lng": 100.2989
       },
-      "openingHours": "مفتوح 24 ساعة",
-      "ticketPrice": "مجاني",
-      "recommendedVisitTime": "اليوم بأكمله",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Full day",
       "highlights": [
-        "مناظر جبلية",
-        "أعلام الصلاة",
-        "القرى التبتية",
-        "الثقافة التقليدية"
+        "Mountain views",
+        "Prayer flags",
+        "Tibetan villages",
+        "Traditional culture"
       ],
-      "tips": "مطلوب خبرة في المشي لمسافات طويلة. يوصى بمرشد محلي. احضر الماء والوجبات الخفيفة. أفضل وقت للزيارة هو في الخريف. المسار قديم.",
+      "tips": "Hiking experience required. Local guide recommended. Bring water and snacks. Best in autumn. The trail is ancient.",
       "imageUrl": "/img/ext/02d0711e6d7e.webp",
       "image": "/img/ext/505d95e27bcc.webp",
       "phone": "+86 088 8 9456 8307"
@@ -3683,46 +3683,46 @@
       "name": "白沙古镇",
       "nameEn": "Baisha Village",
       "category": "landmark",
-      "description": "قرية بايشا هي مسقط رأس عائلة مو العرقية الناكسية، وأقدم قرية في مدينة لي جيانغ. تحتوي القرية على العديد من المباني التقليدية الناكسية وجدرانيات بايشا، مما يجعلها نافذة هامة للتعرف على التاريخ والثقافة الناكسية.",
-      "address": "Lijiang Shi, Yulong Xian, Baisha Zhen",
+      "description": "白沙古镇是纳西族木氏家族的发祥地，也是丽江最古老的古镇，镇内保留了大量纳西族传统建筑和白沙壁画，是了解纳西族历史文化的重要窗口。",
+      "address": "丽江市玉龙县白沙镇",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
-      "openingHours": "مفتوح على مدار الساعة",
-      "ticketPrice": "مجاني (رسوم دخول جدرانيات بايشا 30¥)",
-      "recommendedVisitTime": "2-3 ساعات",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（白沙壁画30元）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "جدرانيات بايشا",
-        "المباني القديمة في بايشا",
-        "الثقافة الناكسية",
-        "مناظر الجبال الثلجية"
+        "白沙壁画",
+        "白沙古建筑",
+        "纳西文化",
+        "雪山风光"
       ],
-      "tips": "جدرانيات بايشا هي تحفة من الفن الجداري لعصر أسرة مينغ، تستحق المشاهدة بعناية. في القرية، يمكنك العثور على أعمال تطريز يدوية تقليدية للناس الناكسي.",
+      "tips": "白沙壁画是明代壁画艺术的珍品，值得仔细观赏。古镇上有纳西族手工刺绣。",
       "image": "/img/ext/730452fb47f5.webp",
       "phone": "+86 088 8 6387 9562"
     },
     {
       "id": "baisha-murals",
       "name": "白沙壁画",
-      "nameEn": "جداريات بايشا (Baisha Murals)",
+      "nameEn": "Baisha Murals",
       "category": "museum",
-      "description": "جداريات بايشا هي لوحات دينية رسمها فنانون من قومية ناخسي، بالإضافة إلى فنانيين من قوميات هان، وتيبت، وناخسي، في عهد أسرة مينغ، بطلب من زعماء ناخسي المحليين. تجمع هذه الجداريات بين ثقافات دينية متعددة، وهي واحدة من أهم الكنوز الثقافية في لي جيانغ.",
-      "address": "بلدة بايشا، محافظة يولونغ، مدينة لي جيانغ",
+      "description": "白沙壁画是明代纳西族土司木氏请汉、藏、纳西等族画师绘制的宗教壁画，融合了多种宗教文化，是丽江最重要的文化遗产之一。",
+      "address": "丽江市玉龙县白沙镇白沙壁画",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
       "openingHours": "08:00-17:30",
-      "ticketPrice": "30 يوان",
-      "recommendedVisitTime": "ساعة واحدة",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "جداريات أسرة مينغ",
-        "تكامل ديني متعدد",
-        "موضوعات بوذية وطاوية",
-        "ثقافة ناخسي"
+        "明代壁画",
+        "多宗教融合",
+        "佛教道教题材",
+        "纳西文化"
       ],
-      "tips": "لا يُسمح بالتقاط صور للجداريات، ويُنصح بتوظيف مرشد لشرح قصص الجداريات والمحتوى الثقافي.",
+      "tips": "壁画不允许拍照，建议请导游讲解壁画的故事和文化内涵。",
       "image": "/img/ext/c63ef2486ca2.webp",
       "phone": "+86 088 8 5880 3848"
     },

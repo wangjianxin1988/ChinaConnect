@@ -9,14 +9,14 @@
     "lng": 118.6758
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "泉州は福建省の歴史的な港町で、海上シルクロードの起点として知られています。仏教、イスラム教、キリスト教、ヒンドゥー教など多様な宗教施設があります。マルコポーロによって「ザイトーン」と呼ばれていました。素晴らしい文化的多様性を持つユネスコ世界遺産の都市です。",
+  "description": "Quanzhou is a historic port city in Fujian, known as the starting point of the Maritime Silk Road. Home to diverse religious sites including Buddhism, Islam, Christianity, and Hinduism. Called 'Zayton' by Marco Polo. A UNESCO World Heritage city with incredible cultural diversity.",
   "coverImage": "/img/ext/66109f403d87.webp",
   "highlights": [
-    "開元寺 - 福建最大の古寺",
-    "東西塔 - 宋代の双塔",
-    "清浄寺 - 中国最古のモスク",
-    "洛陽橋 - 宋代の海上橋",
-    "西街 - 古い通りの軽食"
+    "Kaiyuan Temple - Largest Song Dynasty temple in Fujian",
+    "Qingjing Mosque - Oldest mosque in China",
+    "Sri Lankan Buddhist Temple - Unique foreign architecture",
+    "Maritime Silk Road Museum - Ancient trade history",
+    "Shandong Hill - Scenic Buddhist temple"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "12C (54F)",
-    "tips": "春と秋が最適。 夏は蒸し暑い。 冬は穏やかで雨が多い。 海風が強い。"
+    "tips": "Best in spring and autumn. Summers hot and humid. Winter mild. Year-round destination due to cultural sites."
   },
   "attractions": [
     {
@@ -619,12 +619,12 @@
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "White porcelain",
-        "Porcelain history",
-        "Artisan demonstrations",
-        "Shopping"
+        "白磁",
+        "磁器歴史",
+        "職人によるデモンストレーション",
+        "ショッピング"
       ],
       "tips": "Buy authentic Dehua porcelain as souvenirs.",
       "image": "/img/ext/c3274355fd82.webp",
@@ -633,44 +633,44 @@
     {
       "id": "qz-kaiyuan",
       "name": "开元寺",
-      "nameEn": "Kaiyuan Temple",
+      "nameEn": "開元寺",
       "category": "temple",
-      "description": "泉州最古老的佛教寺院，有东西双塔。",
-      "address": "泉州市鲤城区",
+      "description": "泉州で最も古い佛教寺院で、東塔と西塔がある。",
+      "address": "泉州市鯉城区",
       "coordinates": {
         "lat": 24.92,
         "lng": 118.58
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "东西双塔",
+        "東塔と西塔",
         "佛教文化"
       ],
-      "tips": "了解佛教文化。",
+      "tips": "佛教文化を知る。",
       "image": "/img/ext/1de6d52e332a.webp",
       "phone": "+86 595 2238 3285"
     },
     {
       "id": "qz-xijie",
       "name": "西街",
-      "nameEn": "West Street",
+      "nameEn": "西通り",
       "category": "street",
-      "description": "泉州最古老的商业街。",
+      "description": "泉州で最も古い商業通りです。",
       "address": "泉州市鲤城区",
       "coordinates": {
         "lat": 24.92,
         "lng": 118.58
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "openingHours": "終日",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "老街",
-        "小吃"
+        "古い街並みを",
+        "屋台料理"
       ],
-      "tips": "体验泉州文化。",
+      "tips": "泉州の文化を体験できます。",
       "image": "/img/ext/28625d140835.webp",
       "phone": "+86 059 5 0186 2141"
     },
@@ -679,51 +679,51 @@
       "name": "泉州海外交通史博物馆",
       "nameEn": "Quanzhou Maritime Museum",
       "category": "museum",
-      "description": "展示泉州海上丝绸之路历史的博物馆。",
-      "address": "泉州市丰泽区",
+      "description": "泉州の海上シルクロードの歴史を展示している博物館です。",
+      "address": "泉州市豊沢区",
       "coordinates": {
         "lat": 24.92,
         "lng": 118.62
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2時間",
       "highlights": [
-        "海上丝路",
-        "历史"
+        "海上絲路",
+        "歴史"
       ],
-      "tips": "了解泉州历史。",
+      "tips": "泉州の歴史を学ぶことができます。",
       "image": "/img/ext/80b03dbfe9f9.webp",
       "phone": "+86 059 5 0270 6623"
     },
     {
       "id": "qz-qingjing",
       "name": "清净寺",
-      "nameEn": "Qingjing Mosque",
+      "nameEn": "泉州清真寺",
       "category": "temple",
-      "description": "中国现存最古老的阿拉伯式清真寺。",
-      "address": "泉州市鲤城区",
+      "description": "中国で最も古いアラビアスタイルモスク",
+      "address": "泉州市鯉城区",
       "coordinates": {
         "lat": 24.92,
         "lng": 118.58
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "3元",
-      "recommendedVisitTime": "1小时",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "伊斯兰建筑"
+        "イスラム建築"
       ],
-      "tips": "了解伊斯兰文化。",
+      "tips": "イスラム文化を学ぶ",
       "image": "/img/ext/1bf5e0231050.webp",
       "phone": "+86 595 2219 3553"
     },
     {
       "id": "qz-qingyuan",
       "name": "清源山",
-      "nameEn": "Qingyuan Mountain",
+      "nameEn": "泉州清源山",
       "category": "nature",
-      "description": "泉州最著名的山，有老君岩。",
-      "address": "泉州市丰泽区",
+      "description": "泉州で最も有名な山、老君岩がある",
+      "address": "泉州市豊沢区",
       "coordinates": {
         "lat": 24.92,
         "lng": 118.62
@@ -2032,9 +2032,9 @@
         "面线糊"
       ],
       "tags": [
-        "老字号",
-        "隐藏美食",
-        "社区老店"
+        "老舗",
+        "隠れた美食",
+        "地域の老舗店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fe21bfd3eb96.webp"
@@ -2042,9 +2042,9 @@
     {
       "id": "quanzhou-34",
       "name": "街边醋肉",
-      "nameEn": "街边醋肉 (醋肉)",
+      "nameEn": "街边酢肉（酢肉）",
       "type": "street",
-      "cuisine": "醋肉",
+      "cuisine": "酢豚（豚肉の黒酢煮込み）",
       "avgPrice": 39,
       "rating": 4.4,
       "address": "泉州市老城区美食街176号",
@@ -2054,16 +2054,16 @@
       },
       "phone": "+86 010 87896629",
       "hours": "17:00-02:00",
-      "description": "泉州本地人推荐的醋肉店，味道正宗，价格实惠",
+      "description": "泉州当地の人々に推薦される酢豚の専門店。本場の味を手頃な価格で楽しめます。",
       "dishHighlights": [
-        "土笋冻",
-        "牛肉羹",
-        "醋肉"
+        "土笋凍（トゥースントゥン：海産物を固めたヘルシーな前菜）",
+        "牛肉羹（牛肉のスープ：柔らかい牛肉が入った優しい味わいのスープ）",
+        "酢肉（スーロウ：甘酸っぱいタレに漬け込んだ豚肉の揚げ物）"
       ],
       "tags": [
-        "深夜美食",
-        "小吃",
-        "路边摊"
+        "深夜のグルメ",
+        "軽食",
+        "屋台料理"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ab66cb2df0c8.webp"
@@ -3164,87 +3164,87 @@
     {
       "type": "ambulance",
       "name": "泉州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Quanzhou Emergency Center",
       "phone": "120"
     },
     {
       "type": "police",
       "name": "泉州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Quanzhou Public Security Bureau",
       "phone": "110"
     },
     {
       "type": "hospital",
       "name": "福建医科大学附属第二医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Second Affiliated Hospital of Fujian Medical University",
       "phone": "+86 595 2275 0141",
-      "address": "Guangzhou"
+      "address": "Licheng District"
     },
     {
       "type": "fire",
       "name": "泉州消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Quanzhou Fire Department",
       "phone": "119"
     },
     {
       "type": "tourism",
       "name": "泉州旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Quanzhou Tourism Complaint Hotline",
       "phone": "0595-22132188"
     },
     {
       "type": "hospital",
       "name": "泉州市第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Quanzhou First Hospital",
       "phone": "+86 595 2227 7001",
-      "address": "Guangzhou"
+      "address": "Licheng District"
     },
     {
       "type": "police",
       "name": "晋江公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Jinjiang Public Security Bureau",
       "phone": "0595-85681100",
-      "address": "Guangzhou"
+      "address": "Jinjiang District"
     },
     {
       "type": "police",
       "name": "石狮公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shishi Public Security Bureau",
       "phone": "0595-88719110",
-      "address": "Guangzhou"
+      "address": "Shishi City"
     },
     {
       "type": "medical",
       "name": "泉州市中医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Quanzhou Traditional Chinese Medicine Hospital",
       "phone": "+86 595 2278 5041",
-      "address": "Guangzhou"
+      "address": "Licheng District"
     },
     {
       "type": "traffic",
       "name": "泉州交通事故报警",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Quanzhou Traffic Accident",
       "phone": "122"
     },
     {
       "type": "consumer",
       "name": "消费者投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Consumer Rights Hotline",
       "phone": "12315"
     },
     {
       "type": "foreign",
       "name": "福建省外事办公室",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fujian Foreign Affairs Office",
       "phone": "+86 591 87841370",
-      "address": "Guangzhou"
+      "address": "Fuzhou (nearby)"
     },
     {
       "type": "embassy",
       "name": "中国外交部全球领事保护",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "China Ministry of Foreign Affairs Consular Protection",
       "phone": "+86 10 12308",
-      "address": "Guangzhou"
+      "address": "Beijing"
     }
   ],
   "quickFacts": {

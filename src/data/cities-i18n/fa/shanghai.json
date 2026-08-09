@@ -9,14 +9,14 @@
     "lng": 121.4737
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "شانگهای نیروی اقتصادی چین است، شهری خیره‌کننده که معماری آرت دکو با آسمان‌خراش‌های آینده‌نگر تلاقی می‌کند. به‌عنوان \"مروارید شرق\" شناخته می‌شود، تجربه غذای جهانی، خرید در خیابان نانجینگ، اسکله تاریخی بندر و زندگی شبانه پرشور را ارائه می‌دهد. این شهر به‌طور یکپارچه تأثیرات شرقی و غربی را در هم می‌آمیزد.",
+  "description": "Shanghai, China's economic powerhouse, is a dazzling metropolis where Art Deco architecture meets futuristic skyscrapers. Known as the 'Pearl of the Orient', it offers world-class dining, shopping on Nanjing Road, the historic Bund waterfront, and a vibrant nightlife scene. The city seamlessly blends Eastern and Western influences, creating a unique cosmopolitan atmosphere.",
   "coverImage": "/img/ext/2284bd75905e.webp",
   "highlights": [
-    "باند - اسکله تاریخی",
-    "برج مروارید شرق - آسمان‌خراش نمادین",
-    "باغ یو - باغ کلاسیک چینی",
-    "خیابان نانجینگ - خیابان خرید درجه یک",
-    "شین‌تیاندی - منطقه تاریخی شیکومن"
+    "The Bund - Historic waterfront boulevard",
+    "Oriental Pearl Tower - Iconic skyline landmark",
+    "Yu Garden - Classical Chinese garden",
+    "Nanjing Road - Premier shopping street",
+    "Xintiandi - Historic shikumen houses"
   ],
   "climate": {
     "type": "Humid subtropical",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "بهار و پاییز دلپذیر هستند. تابستان گرم، مرطوب و بارانی. زمستان سرد و مرطوب. فصل طوفان تیر تا شهریور. چتر و لباس سبک ببرید."
+    "tips": "Spring and autumn offer the most comfortable weather. Summers are hot and humid with frequent rain. Winters are cold but rarely snowy. Typhoon season is July-September. Pack layers and an umbrella."
   },
   "attractions": [
     {
@@ -395,25 +395,25 @@
     {
       "id": "happy-valley",
       "name": "上海欢乐谷",
-      "nameEn": "Happy Valley Shenzhen",
+      "nameEn": "Happy Valley Shanghai",
       "category": "modern",
-      "description": "Large amusement park with roller coasters, water rides, and performances for all ages.",
+      "description": "A large amusement park with roller coasters, water rides, and family attractions for all ages.",
       "image": "/img/ext/827fb49a486e.webp",
-      "address": "Overseas Chinese Town, Nanshan District",
+      "address": "888 Linhu Rd, Songjiang District",
       "coordinates": {
         "lat": 31.0585,
         "lng": 121.2155
       },
-      "openingHours": "09:30-22:00 (varies by season)",
-      "ticketPrice": "260¥ (full day)",
-      "recommendedVisitTime": "4-5 hours",
+      "openingHours": "09:00-17:30 (longer on weekends)",
+      "ticketPrice": "200¥",
+      "recommendedVisitTime": "Full day",
       "highlights": [
-        "Mountain Flying coaster",
-        "Swing carousel",
-        "Water slides",
-        "Evening shows"
+        "Golden Samba coaster",
+        "Forest leap water ride",
+        "Family entertainment",
+        "Evening performances"
       ],
-      "tips": "Weekday visits avoid crowds. Height restrictions on rides. Re-entry allowed with hand stamp.",
+      "tips": "Arrive early. Wear comfortable shoes. Single-day passport available. Take metro line 9 to Songjiang direction.",
       "phone": "+86 021  1586 6706"
     },
     {
@@ -493,23 +493,23 @@
       "name": "1933老场坊",
       "nameEn": "1933 Old Mill Fun",
       "category": "cultural",
-      "description": "یک کشتارگاه تاریخی که به فضای خلاقانه‌ای با پلکان‌های مارپیچی، پل‌ها و معماری اروپایی تبدیل شده است.",
+      "description": "A historic slaughterhouse turned creative space with unique spiral staircases, bridges, and European architecture.",
       "image": "/img/ext/dab0c1147239.webp",
-      "address": "خیابان شاجینگ، منطقه هونگکو، شماره ۱۰",
+      "address": "10 Shajing Rd, Hongkou District",
       "coordinates": {
         "lat": 31.258,
         "lng": 121.4865
       },
-      "openingHours": "۱۰:۰۰-۲۲:۰۰",
-      "ticketPrice": "رایگان",
-      "recommendedVisitTime": "۱ تا ۲ ساعت",
+      "openingHours": "10:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "پلکان‌های مارپیچی",
-        "طراحی صنعتی اروپایی",
-        "تاریخچه محل فیلم‌برداری",
-        "خرده‌فروشی خلاقانه"
+        "Spiral staircases",
+        "European industrial design",
+        "Film location history",
+        "Creative retail"
       ],
-      "tips": "معماری، نکته اصلی جذب است. برای عکاسی عالی است. خیابان دوالونگ در نزدیکی برای بازدید از گالری‌های هنری بیشتر.",
+      "tips": "The architecture is the main draw. Great for photography. Nearby Duolun Road for more art galleries.",
       "phone": "+86 021  7412 0078"
     },
     {
@@ -1179,7 +1179,7 @@
         "Local snack street",
         "Cricket museum",
         "Canal views",
-        "Traditional handicrafts"
+        "صنایع دستی سنتی"
       ],
       "tips": "Easily accessible by metro. Great for a half-day trip. The snack street is the main attraction.",
       "phone": "+86 021  1936 7237"
@@ -1187,97 +1187,97 @@
     {
       "id": "nanxiang-old-town",
       "name": "南翔古镇",
-      "nameEn": "Nanxiang Old Town",
+      "nameEn": "شهر قدیمی نانشیانگ",
       "category": "cultural",
       "image": "/img/ext/94641c0f7da6.webp",
-      "description": "The birthplace of xiaolongbao (soup dumplings), featuring ancient temples, gardens, and the famous Nanxiang Steamed Bun Restaurant.",
-      "address": "Nanxiang Town, Jiading District",
+      "description": "زادگاه شیالونگبائو (دمپختگی سوپ)، با معابد باستانی، باغ‌ها و رستوران معروف نان بخارپز نانشیانگ.",
+      "address": "شهر نانشیانگ، منطقه جیادینگ",
       "coordinates": {
         "lat": 31.2921,
         "lng": 121.3149
       },
-      "openingHours": "Open 24 hours (restaurants vary)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "باز 24 ساعته (رستوران‌ها متفاوت است)",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
-        "Original xiaolongbao",
-        "Guyi Garden",
-        "Temples",
-        "Traditional architecture"
+        "شیالونگبائوی اصلی",
+        "باغ گویی",
+        "معابد",
+        "معماری سنتی"
       ],
-      "tips": "Must-try: original Nanxiang xiaolongbao at the old restaurant. Guyi Garden is worth visiting.",
+      "tips": "حتماً امتحان کنید: شیالونگبائوی اصلی نانشیانگ در رستوران قدیمی. باغ گویی ارزش بازدید دارد.",
       "phone": "+86 021  1536 4365"
     },
     {
       "id": "shanghai-chongming-island",
       "name": "崇明岛",
-      "nameEn": "Chongming Island",
+      "nameEn": "جزیره چونگمینگ",
       "category": "natural",
       "image": "/img/ext/5b265ce8c74a.webp",
-      "description": "The third largest island in China at the mouth of the Yangtze River, known for wetlands, bird watching, and eco-tourism.",
-      "address": "Chongming District, northeast of Shanghai",
+      "description": "سومین جزیره بزرگ چین در دهانه رود یانگتسه، شناخته شده برای تالاب‌ها، پرنده‌نگری و اکوتوریسم.",
+      "address": "منطقه چونگمینگ، شمال شرقی شانگهای",
       "coordinates": {
         "lat": 31.6285,
         "lng": 121.3975
       },
-      "openingHours": "Open 24 hours (parks vary)",
-      "ticketPrice": "Free (parks may charge)",
-      "recommendedVisitTime": "Full day or overnight",
+      "openingHours": "۲۴ ساعته باز (پارک‌ها متفاوت است)",
+      "ticketPrice": "رایگان (پارک‌ها ممکن است هزینه دریافت کنند)",
+      "recommendedVisitTime": "یک روز کامل یا یک شب",
       "highlights": [
-        "Dongtan wetland reserve",
-        "Bird watching",
-        "Organic farms",
-        "Cycling routes"
+        "ذخیره‌گاه تالاب دانگتان",
+        "مشاهده پرندگان",
+        "کشاورزی ارگانیک",
+        "مسیرهای دوچرخه‌سواری"
       ],
-      "tips": "Take a bus or drive from the city. Best for nature lovers. Stay overnight to explore fully.",
+      "tips": "با اتوبوس یا ماشین از شهر بروید. بهترین برای علاقه‌مندان به طبیعت. برای کاوش کامل یک شب بمانید.",
       "phone": "+86 021  7376 1618"
     },
     {
       "id": "shanghai-pest-control-memorial",
       "name": "上海四行仓库抗战纪念馆",
-      "nameEn": "Sihang Warehouse Battle Memorial",
+      "nameEn": "یادبود نبرد انبار سی‌هانگ",
       "category": "cultural",
       "image": "/img/ext/f200ed5748e2.webp",
-      "description": "A WWII memorial at the site of the famous 1937 defense battle, featuring exhibits about the 425 Chinese soldiers who held the warehouse against Japanese forces.",
-      "address": "1 Sihang Warehouse, Jing'an District",
+      "description": "یادبود جنگ جهانی دوم در محل نبرد دفاعی معروف سال ۱۹۳۷، با نمایشگاه‌هایی درباره ۴۲۵ سرباز چینی که انبار را در برابر نیروهای ژاپنی نگه داشتند.",
+      "address": "۱ انبار سی‌هانگ، منطقه جینگ‌آن",
       "coordinates": {
         "lat": 31.2437,
         "lng": 121.4737
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "۰۹:۰۰-۱۶:۳۰ (دوشنبه‌ها بسته)",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "۱-۲ ساعت",
       "highlights": [
-        "Battle-scarred walls",
-        "War artifacts",
-        "Documentary screenings",
-        "Memorial hall"
+        "دیوارهای جنگ‌زده",
+        "اشیاء جنگی",
+        "نمایش فیلم‌های مستند",
+        "تالار یادبود"
       ],
-      "tips": "Moving and educational. Free admission. The bullet holes in the wall are still visible.",
+      "tips": "احساسی و آموزشی. ورود رایگان. سوراخ‌های گلوله در دیوار هنوز قابل مشاهده است.",
       "phone": "+86 021  9495 2330"
     },
     {
       "id": "shanghai-dmuseum",
       "name": "上海当代艺术博物馆",
-      "nameEn": "Power Station of Art (PSA)",
+      "nameEn": "ایستگاه برق هنر (PSA)",
       "category": "cultural",
       "image": "/img/ext/546c23e9922d.webp",
-      "description": "China's first state-run contemporary art museum, housed in a converted power station with rotating international exhibitions.",
-      "address": "678 Miaojiang Rd, Huangpu District",
+      "description": "اولین موزه هنر معاصر دولتی چین، که در یک نیروگاه برق تبدیل شده با نمایشگاه‌های بین‌المللی در حال چرخش میزبانی می‌کند.",
+      "address": "خیابان میائوجیانگ 678، منطقه هوانگپو",
       "coordinates": {
         "lat": 31.2025,
         "lng": 121.4912
       },
-      "openingHours": "11:00-19:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "11:00-19:00 (دوشنبه‌ها تعطیل)",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
-        "Contemporary art exhibitions",
-        "Industrial architecture",
-        "Shanghai Biennale venue",
-        "Rooftop views"
+        "نمایشگاه‌های هنر معاصر",
+        "معماری صنعتی",
+        "محل برگزاری دوسالانه شانگهای",
+        "منظره از بام"
       ],
-      "tips": "Free admission. Check the current exhibition schedule. The building itself is impressive.",
+      "tips": "ورود رایگان. برنامه نمایشگاه فعلی را بررسی کنید. ساختمان خود چشمگیر است.",
       "phone": "+86 021  5998 6683"
     }
   ],
@@ -3423,150 +3423,150 @@
     {
       "type": "ambulance",
       "name": "上海急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shanghai Emergency Center",
       "phone": "120",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "English support improving"
     },
     {
       "type": "police",
       "name": "上海市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shanghai Public Security Bureau",
       "phone": "110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various locations",
+      "notes": "Tourist Police: 63268823"
     },
     {
       "type": "hospital",
       "name": "上海和睦家医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shanghai United Family Hospital",
       "phone": "+86 21 2216 3999",
-      "address": "Guangzhou",
+      "address": "Shanghai Centre, 1376 Nanjing West Rd, Jing'an",
       "coordinates": {
         "lat": 31.225,
         "lng": 121.4495
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking, accepts international insurance"
     },
     {
       "type": "hospital",
       "name": "上海瑞金医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ruijin Hospital",
       "phone": "+86 21 6437 0045",
-      "address": "Guangzhou",
+      "address": "197 Ruijin Er Rd, Huangpu District",
       "coordinates": {
         "lat": 31.214,
         "lng": 121.4675
       },
-      "notes": "For Singapore citizens"
+      "notes": "Top public hospital, ER available"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
+      "address": "Westgate Mall, 8 Century Ave, Pudong",
       "coordinates": {
         "lat": 31.2385,
         "lng": 121.5005
       },
-      "notes": "For Singapore citizens"
+      "notes": "ACS: +86 21 8011 2400"
     },
     {
       "type": "fire",
       "name": "上海消防救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shanghai Fire Department",
       "phone": "119",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "Fire and rescue emergencies"
     },
     {
       "type": "tourist-helpline",
       "name": "上海旅游咨询中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shanghai Tourist Hotline",
       "phone": "962020",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "English service available. Tourist complaints, inquiries, emergency assistance."
     },
     {
       "type": "consumer-protection",
       "name": "上海市消费者权益保护",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shanghai Consumer Rights Protection",
       "phone": "12315",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "Consumer complaints, fraud reports, refund disputes"
     },
     {
       "type": "information",
       "name": "上海市民服务热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shanghai City Service Hotline",
       "phone": "12345",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "Government services, non-emergency municipal issues, complaints"
     },
     {
       "type": "traffic-accident",
       "name": "交通事故报警",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Traffic Accident Emergency",
       "phone": "122",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "Traffic accidents, road emergencies"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Shanghai",
       "phone": "+86 21 6279 7650",
-      "address": "Guangzhou",
+      "address": "20/F, Westgate Mall, 8 Century Ave, Pudong",
       "coordinates": {
         "lat": 31.2385,
         "lng": 121.5005
       },
-      "notes": "For Singapore citizens"
+      "notes": "For UK citizens: 24h consular emergency line"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Shanghai",
       "phone": "+86 21 6278 0980",
-      "address": "Guangzhou",
+      "address": "8 Wanzheng Rd, Hongkou District",
       "coordinates": {
         "lat": 31.252,
         "lng": 121.4725
       },
-      "notes": "For Singapore citizens"
+      "notes": "Japanese citizens: emergency line +86 21 6278 8830"
     },
     {
       "type": "embassy",
       "name": "韩国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Korea Consulate General Shanghai",
       "phone": "+86 21 6212 2080",
-      "address": "Guangzhou",
+      "address": "458 West Nanjing Rd, Jing'an",
       "coordinates": {
         "lat": 31.237,
         "lng": 121.4585
       },
-      "notes": "For Singapore citizens"
+      "notes": "For Korean citizens: consular services and emergency assistance"
     },
     {
       "type": "hospital",
       "name": "上海华山医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Huashan Hospital",
       "phone": "+86 21 5288 9999",
-      "address": "Guangzhou",
+      "address": "12 Middle Wulumuqi Rd, Jing'an District",
       "coordinates": {
         "lat": 31.228,
         "lng": 121.4455
       },
-      "notes": "For Singapore citizens"
+      "notes": "Top neurology and neurosurgery hospital in China"
     },
     {
       "type": "tourist-helpline",
       "name": "旅游紧急求助",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tourist Emergency Assistance",
       "phone": "12308",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide coverage",
+      "notes": "24h tourist emergency hotline for foreign visitors"
     }
   ],
   "quickFacts": {

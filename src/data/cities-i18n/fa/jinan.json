@@ -9,14 +9,14 @@
     "lng": 117.1205
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "جینان مرکز استان شاندونگ است. به‌خاطر چشمه‌های طبیعی فراوان به \"شهر چشمه‌ها\" معروف است. شامل چشمه باوتو، دریاچه دامینگ و کوه هزار بودا. مرکز فرهنگی با 4000 سال تاریخ و زادگاه بسیاری از شخصیت‌های مشهور چینی.",
+  "description": "Jinan, capital of Shandong Province, is known as the 'City of Springs' due to its numerous natural springs. Home to iconic attractions like Baotu Spring,大明湖 (Daming Lake), and Thousand Buddha Mountain. A cultural hub with 4000 years of history and birthplace of many Chinese celebrities.",
   "coverImage": "/img/ext/364406446214.webp",
   "highlights": [
-    "چشمه بائوتو - معروف‌ترین چشمه چین",
-    "دریاچه دامینگ - بزرگ‌ترین دریاچه شهری چین",
-    "کوه هزار بودا - میراث بودایی",
-    "خیابان چوانچنگ - منطقه تجاری تاریخی",
-    "موزه شاندونگ - میراث فرهنگی استان"
+    "Baotu Spring - Most famous spring in China",
+    "Daming Lake - Largest urban lake in China",
+    "Thousand Buddha Mountain - Buddhist heritage",
+    "Quancheng Road - Historic commercial district",
+    "Shandong Museum - Provincial cultural heritage"
   ],
   "climate": {
     "type": "Temperate continental monsoon",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "27C (81F)",
     "avgWinterTemp": "1C (34F)",
-    "tips": "بهار برای چشمه‌ها، پاییز برای برگ‌ها. تابستان گرم و مرطوب. زمستان سرد اما آفتابی. جشنواره‌های بهاری حدود آوریل."
+    "tips": "Best in spring for springs and autumn for foliage. Summer can be hot and humid. Winter cold but sunny. Spring festivals around April."
   },
   "attractions": [
     {
@@ -249,25 +249,25 @@
     {
       "id": "Liberation Pavilion",
       "name": "解放阁",
-      "nameEn": "پاویون آزادی",
+      "nameEn": "Liberation Pavilion",
       "category": "historical",
       "image": "/img/ext/715f62b712ce.webp",
-      "description": "کاخ یادبودی که در محل آزادسازی جینان در جریان جنگ داخلی چین ساخته شده است.",
-      "address": "شرق چشمه بائوتو، منطقه لیشیا",
+      "description": "Memorial pavilion built on the site of Jinan's liberation during the Chinese Civil War.",
+      "address": "East of Baotu Spring, Lixia District",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
-      "openingHours": "۰۹:۰۰-۱۷:۰۰",
-      "ticketPrice": "رایگان",
-      "recommendedVisitTime": "۳۰ دقیقه",
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "30 min",
       "highlights": [
-        "مناظر شهر",
-        "تاریخ انقلاب",
-        "معماری",
-        "روشنایی شبانه"
+        "City views",
+        "Revolutionary history",
+        "Architecture",
+        "Night lighting"
       ],
-      "tips": "با بازدید از چشمه بائوتو ترکیب کنید. بهترین زمان برای بازدید در شب زمانی است که روشن شده باشد.",
+      "tips": "Combine with Baotu Spring visit. Best at night when illuminated.",
       "phone": "+86 053 1 7048 6462"
     },
     {
@@ -1675,8 +1675,8 @@
         "lng": 117.0294
       },
       "phone": "+86 531 8694 9999",
-      "hours": "24 hours",
-      "description": "Famous chain hotpot with exceptional service, free snacks, and manicotti.",
+      "hours": "۲۴ ساعته",
+      "description": "چاین هات‌پات مشهور با خدمات استثنایی، تنقلات رایگان و مانیکوتی.",
       "dishHighlights": [
         "Spicy and mild broth",
         "Fresh beef",
@@ -1697,27 +1697,27 @@
       "name": "鼎泰丰",
       "nameEn": "Din Tai Fung",
       "type": "chain",
-      "cuisine": "Taiwanese",
+      "cuisine": "تایوانی",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "MixC Mall, Lixia District",
+      "address": "مرکز خرید میکس، منطقه لیشیا",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0294
       },
-      "hours": "10:00-21:30",
-      "description": "World-famous Taiwanese dumpling chain with excellent xiaolongbao.",
+      "hours": "۱۰:۰۰-۲۱:۳۰",
+      "description": "زنجیره‌ای غذایی تایوانی معروف جهانی با بهترین شیاولونگبائو",
       "dishHighlights": [
-        "Xiaolongbao",
-        "Fried rice",
-        "Noodles",
-        "Desserts"
+        "شیاولونگبائو",
+        "برنج سرخ‌شده",
+        "نودل",
+        "دسر"
       ],
       "tags": [
-        "chain",
-        "taiwanese",
-        "dumplings",
-        "quality"
+        "زنجیره‌ای",
+        "تایوانی",
+        "کوفته",
+        "کیفیت"
       ],
       "imageUrl": "/img/ext/f38720936e10.webp",
       "phone": "+86 053 1 8306 7864"
@@ -1725,29 +1725,29 @@
     {
       "id": "jinan-19",
       "name": "南京大牌档",
-      "nameEn": "Nanjing Restaurant",
+      "nameEn": "رستوران نانجینگ",
       "type": "chain",
-      "cuisine": "Jiangsu",
+      "cuisine": "آشپزی جیانگ‌سو",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Daming Lake area",
+      "address": "منطقه دریاچه دامینگ",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0194
       },
       "hours": "11:00-22:00",
-      "description": "Popular chain serving Jiangsu cuisine in traditional atmosphere.",
+      "description": "زنجیره‌ای محبوب که در فضای سنتی غذای جیانگ‌سو سرو می‌کند",
       "dishHighlights": [
-        "Duck blood soup",
-        "Salt duck",
-        "Steamed dumplings",
-        "Jiangsu dishes"
+        "سوپ خون اردک",
+        "اردک نمک‌سود",
+        "کوفته‌های بخارپز",
+        "غذاهای استان جیانگ‌سو"
       ],
       "tags": [
-        "chain",
-        "jiangsu-cuisine",
-        "traditional",
-        "atmospheric"
+        "زنجیره‌ای",
+        "غذای جیانگ‌سو",
+        "سنتی",
+        "با فضای دلپذیر"
       ],
       "imageUrl": "/img/ext/2b02a2d279a0.webp",
       "phone": "+86 053 1 9709 0047"
@@ -1755,60 +1755,60 @@
     {
       "id": "jinan-20",
       "name": "威尼斯西餐厅",
-      "nameEn": "Venice Western Restaurant",
+      "nameEn": "رستوران ونیز غربی",
       "type": "fine",
-      "cuisine": "Italian",
+      "cuisine": "ایتالیایی",
       "avgPrice": 200,
       "rating": 4.4,
-      "address": "Shangri-La Hotel, Lixia District",
+      "address": "هتل شانگری‌لا، منطقه لی‌شیا",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0394
       },
       "phone": "+86 531 8695 6789",
-      "hours": "11:30-14:30, 18:00-22:00",
-      "description": "Italian restaurant in Shangri-La with elegant setting and authentic cuisine.",
+      "hours": "۱۱:۳۰-۱۴:۳۰، ۱۸:۰۰-۲۲:۰۰",
+      "description": "رستوران ایتالیایی در هتل شانگری‌لا با محیط ظریف و غذای اصیل.",
       "dishHighlights": [
-        "Pasta",
-        "Pizza",
-        "Risotto",
-        "Italian wine"
+        "پاستا",
+        "پیتزا",
+        "ریزوتو",
+        "شراب ایتالیایی"
       ],
       "tags": [
-        "fine-dining",
-        "italian",
-        "luxury",
-        "romantic"
+        "غذای لوکس",
+        "ایتالیایی",
+        "تجملاتی",
+        "رمانتیک"
       ],
       "imageUrl": "/img/ext/0461404e221d.webp"
     },
     {
       "id": "jinan-21",
       "name": "犹太牛肉面",
-      "nameEn": "Jewish Beef Noodles",
+      "nameEn": "نودل گوشت یهودی",
       "type": "local",
-      "cuisine": "Halal",
+      "cuisine": "حلال",
       "avgPrice": 45,
       "rating": 4.7,
-      "address": "Near Quancheng Road",
+      "address": "نزدیک جاده چوانچنگ",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
       "hours": "07:00-20:00",
-      "description": "Popular halal noodle shop with authentic Muslim Chinese cuisine.",
+      "description": "فروشگاه محبوب نودل حلال با غذای اصیل چینی مسلمان.",
       "dishHighlights": [
-        "Beef noodles",
-        "Lamb skewers",
-        "Hand-pulled noodles",
-        "Fried rice"
+        "نودل گوشت",
+        "کباب بره",
+        "نودل دستی",
+        "برنج سرخ شده"
       ],
       "tags": [
-        "local",
-        "halal",
-        "noodles",
-        "budget",
-        "muslim"
+        "محلی",
+        "حلال",
+        "نودل",
+        "اقتصادی",
+        "مسلمان"
       ],
       "imageUrl": "/img/ext/53ee86847678.webp",
       "phone": "+86 053 1 9147 2305"
@@ -1816,60 +1816,60 @@
     {
       "id": "jinan-22",
       "name": "东来顺",
-      "nameEn": "Dong Lai Shun",
+      "nameEn": "دونگ لای شون",
       "type": "chain",
-      "cuisine": "Mongolian Hotpot",
+      "cuisine": "هات پات مغولی",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Lixia District",
+      "address": "منطقه لیشیا",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0294
       },
       "phone": "+86 531 8696 1234",
-      "hours": "10:30-22:00",
-      "description": "Famous Mongolian hotpot chain with premium lamb and traditional broth.",
+      "hours": "۱۰:۳۰-۲۲:۰۰",
+      "description": "زنجیره معروف هات پات مغولی با بره مرغوب و آبگوشت سنتی.",
       "dishHighlights": [
-        "Mongolian lamb",
-        "Hotpot",
-        "Traditional broth",
-        "Variety of toppings"
+        "بره مغولی",
+        "هات پات",
+        "آبگوشت سنتی",
+        "انواع مواد"
       ],
       "tags": [
-        "chain",
-        "hotpot",
-        "mongolian",
-        "premium"
+        "زنجیره",
+        "هات پات",
+        "مغولی",
+        "ممتاز"
       ],
       "imageUrl": "/img/ext/6158dc9ee5c6.webp"
     },
     {
       "id": "jinan-23",
       "name": "三义和",
-      "nameEn": "San Yi He",
+      "nameEn": "سان یی هه",
       "type": "local",
-      "cuisine": "Shandong",
+      "cuisine": "شاندونگ",
       "avgPrice": 120,
       "rating": 4.5,
-      "address": "Shizhong District",
+      "address": "منطقه شیژونگ",
       "coordinates": {
         "lat": 36.6212,
         "lng": 117.0194
       },
       "phone": "+86 531 8697 4567",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Established restaurant with classic Shandong dishes and historic atmosphere.",
+      "description": "رستوران قدیمی با غذاهای کلاسیک شاندونگ و فضای تاریخی",
       "dishHighlights": [
-        "Shandong classic dishes",
-        "Braised prawns",
-        "Sweet and sour carp",
-        "Seasonal dishes"
+        "غذاهای کلاسیک شاندونگ",
+        "میگوی پخته شده",
+        "کارپ شیرین و ترش",
+        "غذاهای فصلی"
       ],
       "tags": [
-        "local",
-        "shandong-cuisine",
-        "historic",
-        "classic"
+        "محلی",
+        "آشپزی-شاندونگ",
+        "تاریخی",
+        "کلاسیک"
       ],
       "imageUrl": "/img/ext/2958ae69d93c.webp"
     },
@@ -3131,126 +3131,126 @@
     {
       "type": "ambulance",
       "name": "济南急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Jinan Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "济南市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Jinan Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "山东省立医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Shandong Provincial Hospital",
       "phone": "+86 531 8793 8911",
-      "address": "Guangzhou",
+      "address": "324 Jingwu Road, Lixia District",
       "coordinates": {
         "lat": 36.6412,
         "lng": 117.0394
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "山东大学齐鲁医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Qilu Hospital of Shandong University",
       "phone": "+86 531 8216 9266",
-      "address": "Guangzhou",
+      "address": "107 West Wenhua Road, Lixia District",
       "coordinates": {
         "lat": 36.6512,
         "lng": 117.0194
       },
-      "notes": "For Singapore citizens"
+      "notes": "Major teaching hospital with English"
     },
     {
       "type": "tourist-police",
       "name": "济南旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Jinan Tourist Police",
       "phone": "+86 531 8791 2345",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "济南消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Jinan Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "美国驻沈阳总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shenyang",
       "phone": "+86 24 2322 1947",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shenyang (serves Jinan region)",
+      "notes": "For US citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "英国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Guangzhou",
       "phone": "+86 20 8314 3000",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For UK citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "日本驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Qingdao",
       "phone": "+86 532 8090 0001",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For Japanese citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "德国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate General Guangzhou",
       "phone": "+86 20 8313 0000",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For German citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "法国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Guangzhou",
       "phone": "+86 20 2829 2000",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For French citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Australian citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canada Consulate General Guangzhou",
       "phone": "+86 20 8611 6100",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Canadian citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "韩国驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Qingdao",
       "phone": "+86 532 8090 0188",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For Korean citizens in Jinan region"
     },
     {
       "type": "embassy",
       "name": "新加坡驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Singapore Consulate General Shanghai",
       "phone": "+86 21 6295 3800",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Singapore citizens in Jinan region"
     }
   ],
   "quickFacts": {

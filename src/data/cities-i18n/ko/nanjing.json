@@ -9,14 +9,14 @@
     "lng": 118.7969
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "난징은 장쑤성의 성도이며, 고대 역사와 현대의 활력을 가진 중요한 도시입니다. 명나라의 수도로 알려졌으며, 쯔진산, 푸즈묘, 중산릉, 난징 대학살 기념관이 있습니다. 주요 교육 및 연구 중심지입니다.",
+  "description": "Nanjing, ancient capital of six dynasties and capital of the Republic of China, is a city of profound historical significance. Home to the Sun Yat-sen Mausoleum, Ming Xiaoling Tomb (UNESCO), and theMemorial Hall of the Victims in Nanjing Massacre. A cultural crossroads between north and south China.",
   "coverImage": "/img/ext/17c2c1bef18d.webp",
   "highlights": [
-    "중산 릉 - 국부 묘",
-    "명효 릉 - 명대 왕릉",
-    "푸자 묘 - 역사적 공자 사당",
-    "친화이 허 - 야경의 강",
-    "쉬안우 호수 - 도시 공원"
+    "Sun Yat-sen Mausoleum - Purple Mountain",
+    "Ming Xiaoling Tomb - UNESCO World Heritage",
+    "Nanjing Massacre Memorial Hall",
+    "Presidential Palace - ROC history",
+    "Fuzi Temple - Ancient commerce district"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "봄과 가을 최고. 여름 덥고 습, 비 잦음. 겨울 습한 추위. 가을 단풍 (qixia 산)."
+    "tips": "Best in spring for flowers or autumn for foliage. Summers hot and humid. Winters cold with occasional snow. Spring plum blossoms and fall gingko are spectacular."
   },
   "attractions": [
     {
@@ -396,24 +396,24 @@
     {
       "id": "chaotiangong",
       "name": "朝天宫",
-      "nameEn": "차오티앙궁 궁전",
+      "nameEn": "Chaotiangong Palace",
       "category": "historical",
-      "description": "명나라 시대 조상 제사를 위한 황궁으로, 현재는 고대 건축을 전시하는 박물관입니다.",
-      "address": "171 바이샤 로드, 친화이구",
+      "description": "Ming Dynasty imperial palace for worshiping ancestors, now a museum showcasing ancient architecture.",
+      "address": "171 Bai Xia Road,秦淮区",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.8072
       },
       "openingHours": "09:00-17:00",
       "ticketPrice": "25¥",
-      "recommendedVisitTime": "1시간",
+      "recommendedVisitTime": "1 hour",
       "highlights": [
-        "명나라 건축",
-        "전시회",
-        "안뜰",
-        "문화 유물"
+        "Ming architecture",
+        "Exhibitions",
+        "Courtyards",
+        "Cultural artifacts"
       ],
-      "tips": "명나라 제사 문화를 이해하는 데 좋습니다. 건축물이 인상적입니다. 근처의 푸쯔 사원과 함께 방문하세요.",
+      "tips": "Good for understanding Ming ritual culture. The architecture is impressive. Combine with nearby Fuzi Temple.",
       "image": "/img/ext/0075f0e909c2.webp",
       "phone": "+86 025  6239 0484"
     },
@@ -684,21 +684,21 @@
       "name": "夫子庙",
       "nameEn": "Confucius Temple",
       "category": "street",
-      "description": "난징에서 가장 유명한 문화 거리로, 진회강과 다양한 먹거리가 있습니다.",
+      "description": "南京最著名的文化街区，有秦淮河和各种小吃。",
       "address": "南京市秦淮区",
       "coordinates": {
         "lat": 32.02,
         "lng": 118.78
       },
-      "openingHours": "24시간",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "2-3시간",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "진회강",
-        "먹거리",
-        "야경"
+        "秦淮河",
+        "小吃",
+        "夜景"
       ],
-      "tips": "난징의 먹거리를 맛보세요.",
+      "tips": "品尝南京小吃。",
       "image": "/img/ext/e1e1c86881fa.webp",
       "phone": "+86 25 5221 1264"
     },
@@ -1534,23 +1534,23 @@
       "cuisine": "Nanjing Noodles",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Near Fuzi Temple",
+      "address": "부자사 근처",
       "coordinates": {
         "lat": 32.0122,
         "lng": 118.7872
       },
       "hours": "10:00-22:00",
-      "description": "Popular noodle shop serving traditional Nanjing-style noodles with various toppings.",
+      "description": "다양한 토핑과 함께 전통적인 남경 스타일의 면류를 제공하는 인기 있는 면가게.",
       "dishHighlights": [
-        "Duck liver noodles",
-        "Beef noodles",
-        "Vegetable noodles"
+        "오리간 면",
+        "소고기 면",
+        "채소 면"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "quick",
-        "value"
+        "로컬",
+        "면",
+        "빠른",
+        "가치"
       ],
       "star": 0,
       "diamond": 0,
@@ -1560,28 +1560,28 @@
     {
       "id": "nanjing-13",
       "name": "鸡鸣寺素面",
-      "nameEn": "Jiming Temple Vegetarian Noodles",
+      "nameEn": "지명사 채소면",
       "type": "local",
-      "cuisine": "Buddhist Vegetarian",
+      "cuisine": "불교 채식",
       "avgPrice": 45,
       "rating": 4.6,
-      "address": "Near Jiming Temple",
+      "address": "지명사 근처",
       "coordinates": {
         "lat": 32.0622,
         "lng": 118.7872
       },
       "hours": "10:00-19:00",
-      "description": "Vegetarian noodles near Jiming Temple, known for Buddhist cuisine and peaceful atmosphere.",
+      "description": "불교 요리와 평화로운 분위기로 유명한 지명사 근처의 채소 면가게.",
       "dishHighlights": [
-        "Vegetarian noodles",
-        "Buddhist vegetables",
-        "Tofu skin rolls"
+        "채소면",
+        "불교 채소",
+        "두부피 말림"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
-        "peaceful"
+        "현지",
+        "채식",
+        "불교",
+        "평화로운"
       ],
       "star": 0,
       "diamond": 0,
@@ -1591,30 +1591,30 @@
     {
       "id": "nanjing-14",
       "name": "南京精菜馆",
-      "nameEn": "Nanjing Fine Cuisine",
+      "nameEn": "난징 푸드",
       "type": "blackpearl",
       "diamond": 1,
-      "cuisine": "Jiangsu",
+      "cuisine": "장수",
       "avgPrice": 200,
       "rating": 4.7,
-      "address": "188 Guangzhou Road, Gulou District",
+      "address": "구로구 광저우로드 188번지",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7772
       },
       "phone": "+86 25 8332 0888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One-diamond Black Pearl restaurant offering refined Jiangsu cuisine with elegant presentation.",
+      "description": "우아한 제시의 정교한 장수 요리를 제공하는 흑진주 원다이아몬드 레스토랑.",
       "dishHighlights": [
-        "Steamed Jiangsu fish",
-        "Braised pork belly",
-        "Seasonal vegetables"
+        "찜 장수 생선",
+        "소고기 수육",
+        "계절 채소"
       ],
       "tags": [
-        "fine-dining",
-        "jiangsu-cuisine",
-        "elegant",
-        "special-occasion"
+        "고급 식당",
+        "장수 요리",
+        "우아한",
+        "특별한 날"
       ],
       "star": 0,
       "imageUrl": "/img/ext/a4d996ef9d67.webp"
@@ -1622,28 +1622,28 @@
     {
       "id": "nanjing-15",
       "name": "金陵饭店梅苑",
-      "nameEn": "Plum Garden - Jinling Hotel",
+      "nameEn": "플럼 가든 - 진링 호텔",
       "type": "fine",
-      "cuisine": "Jiangsu",
+      "cuisine": "장수",
       "avgPrice": 300,
       "rating": 4.8,
-      "address": "2 Hanzhong Road, Xuanwu District (Jinling Hotel)",
+      "address": "한중로 2, 선우구 (진링 호텔)",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
       "phone": "+86 25 8471 1888",
       "hours": "11:30-14:00, 17:30-21:30",
-      "description": "High-end restaurant in Jinling Hotel serving premium Jiangsu cuisine with imperial heritage.",
+      "description": "황제 유산이 담긴 프리미엄 장수 요리를 제공하는 진링 호텔의 고급 레스토랑",
       "dishHighlights": [
-        "Imperial Jinling cuisine",
-        "Abalone",
-        "Bird's nest soup",
-        "Premium seafood"
+        "황제 진링 요리",
+        "전복",
+        "제비둥지 스프",
+        "프리미엄 해산물"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
+        "고급 식당",
+        "호화",
         "imperial",
         "special-occasion"
       ],
@@ -3176,126 +3176,126 @@
     {
       "type": "ambulance",
       "name": "南京急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Nanjing Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "南京市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Nanjing Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "南京鼓楼医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Nanjing Drum Tower Hospital",
       "phone": "+86 25 8310 6666",
-      "address": "Guangzhou",
+      "address": "321 Zhongshan Road",
       "coordinates": {
         "lat": 32.0222,
         "lng": 118.7872
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai (nearest US consular services)",
+      "notes": "For US citizens in Nanjing region"
     },
     {
       "type": "hospital",
       "name": "南京军区总医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Nanjing Military General Hospital",
       "phone": "+86 25 8086 1155",
-      "address": "Guangzhou",
+      "address": "32 Changjiang Road, Xuanwu District",
       "coordinates": {
         "lat": 32.0422,
         "lng": 118.7972
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with English staff"
     },
     {
       "type": "tourist-police",
       "name": "南京旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Nanjing Tourist Police",
       "phone": "+86 25 8442 9901",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police at major attractions"
     },
     {
       "type": "fire",
       "name": "南京消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Nanjing Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Shanghai",
       "phone": "+86 21 6179 8300",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Nanjing region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Shanghai",
       "phone": "+86 21 5257 4788",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Nanjing region"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For German citizens in Nanjing region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate General Shanghai",
       "phone": "+86 21 5292 9000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Australian citizens in Nanjing region"
     },
     {
       "type": "embassy",
       "name": "法国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Shanghai",
       "phone": "+86 21 6103 2200",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For French citizens in Nanjing region"
     },
     {
       "type": "embassy",
       "name": "加拿大驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canada Consulate General Shanghai",
       "phone": "+86 21 3279 2800",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Canadian citizens in Nanjing region"
     },
     {
       "type": "embassy",
       "name": "韩国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Shanghai",
       "phone": "+86 21 5108 0700",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Korean citizens in Nanjing region"
     },
     {
       "type": "embassy",
       "name": "新加坡驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Singapore Consulate General Shanghai",
       "phone": "+86 21 6295 3800",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Singapore citizens in Nanjing region"
     }
   ],
   "quickFacts": {

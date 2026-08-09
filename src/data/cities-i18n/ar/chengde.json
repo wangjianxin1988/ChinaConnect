@@ -9,14 +9,14 @@
     "lng": 117.963
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "تشينغدي مدينة جبلية تاريخية في مقاطعة هيبي. تشتهر بقصر الإصبت الصيفي الإمبراطوري والمعابد البوذية التبتية القريبة. موقع تراث عالمي. كانت منتجعاً صيفياً لأصحاب السلالة تسونغ.",
+  "description": "شانغدو، مدينة جبلية تاريخية في مقاطعة خبي، تشتهر بمنتجعها الصيفي الإمبراطوري ومعابدها البوذية القريبة. موقع تراث عالمي لليونسكو، كانت في يوم من الأيام منتجعًا صيفيًا لإمبراطوريات أسرة تشينغ. المناظر الجبلية والمعابد البوذية على الطراز التبتي تجعلها فريدة من نوعها.",
   "coverImage": "/img/ext/fec12dec27c6.webp",
   "highlights": [
-    "المنتجع الجبلي - تراث اليونسكو",
+    "منتجع الجبل - قصر صيفي لعهد أسرة تشينغ",
     "معبد بونينغ - أكبر معبد بوذي في الصين",
-    "معبد بوتوزونغتشينغ - على الطراز التبتي",
-    "قصر بوتالا الصغير - نسخة مصغرة من بوتالا",
-    "المنتجع الصيفي الإمبراطوري"
+    "معبد بوتو زونغتشنغ - معبد على الطراز التبتي",
+    "القصر الصغير بوتالا - نسخة مصغرة من بوتالا في لاسا",
+    "ملاذ صيفي إمبراطوري"
   ],
   "climate": {
     "type": "Temperate continental climate",
@@ -28,55 +28,55 @@
     ],
     "avgSummerTemp": "24°C (75°F)",
     "avgWinterTemp": "-8°C (18°F)",
-    "tips": "الصيف الأفضل للهروب من الحرارة. الربيع والخريف مريحان. الشتاء بارد. المنتجع الصيفي لسلالة تشينغ."
+    "tips": "Best in summer for resort and temples. Spring and autumn pleasant. Winters cold. Summer is peak season but pleasant escape from Beijing heat."
   },
   "attractions": [
     {
       "id": "chengde-1",
       "name": "避暑山庄",
-      "nameEn": "Mountain Resort (Imperial Summer Resort)",
+      "nameEn": "منتجع الجبل (الملاذ الصيفي الإمبراطوري)",
       "category": "historical",
-      "description": "UNESCO World Heritage - vast imperial summer retreat covering 5.6 sq km with palaces, lakes and grasslands.",
+      "description": "تراث عالمي لليونسكو - ملاذ صيفي إمبراطوري شاسع يمتد على مساحة 5.6 كيلومتر مربع مع قصور وبحيرات وسهول.",
       "image": "/img/ext/ad1a204b54c6.webp",
-      "address": "Mountain Resort, Shuangqiao District",
+      "address": "منتجع الجبل، منطقة شوانغتشياو",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
       "openingHours": "07:00-18:00",
-      "ticketPrice": "130¥ (high season), 90¥ (low season)",
-      "recommendedVisitTime": "4-5 hours",
+      "ticketPrice": "130¥ (موسم الذروة)، 90¥ (موسم خارج الذروة)",
+      "recommendedVisitTime": "4-5 ساعات",
       "highlights": [
-        "Imperial palaces",
-        "Lake area",
-        "Grassland",
-        "Buddhist temples"
+        "القصور الإمبراطورية",
+        "منطقة البحيرة",
+        "السهوب",
+        "المعابد البوذية"
       ],
-      "tips": "Arrive early. Rent electric cart inside. Wear comfortable shoes. Full day attraction.",
+      "tips": "توجه باكرًا. استأجر عربة كهربائية داخل المكان. ارتدِ أحذية مريحة. جولة تستغرق يومًا كاملاً.",
       "phone": "+86 314 202 5918"
     },
     {
       "id": "chengde-2",
       "name": "普宁寺",
-      "nameEn": "Puning Temple",
+      "nameEn": "معبد بونينغ",
       "category": "cultural",
-      "description": "Largest Buddhist temple in China, housing a 22-meter wooden Buddha statue carved from one tree.",
+      "description": "أكبر معبد بوذي في الصين، ويحتوي على تمثال خشبي لبوذا بارتفاع 22 مترًا منحوت من شجرة واحدة.",
       "image": "/img/ext/b30666dea2bf.webp",
-      "address": "Puning Temple, Shuangqiao District",
+      "address": "معبد بونينغ، منطقة شوانغتشياو",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 ساعات",
       "highlights": [
-        "Giant wooden Buddha",
+        "تمثال خشبي ضخم لبوذا",
         "Tibetan-style architecture",
         "Prayer wheels",
         "Monks"
       ],
-      "tips": "Watch monk debates if available. The Buddha statue is awe-inspiring. Light incense with care.",
+      "tips": "شاهد مناظرات الرهبان إذا كانت متاحة. التمثال مثير للإعجاب. أشعل البخور بحذر.",
       "phone": "+86 314 205 8871"
     },
     {
@@ -723,19 +723,19 @@
       "name": "安远庙",
       "nameEn": "Anyuan Temple",
       "category": "temple",
-      "description": "واحدة من المعابد الخارجية الثمانية، تم بناؤها على طراز معبد غورزا في إيلي، شينجيانغ.",
-      "address": "منطقة شوانغتشياو، مدينة تشنغده",
+      "description": "外八庙之一，仿新疆伊犁固尔扎庙而建。",
+      "address": "承德市双桥区",
       "coordinates": {
         "lat": 40.98,
         "lng": 117.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "20 يوان",
-      "recommendedVisitTime": "ساعة واحدة",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "العمارة المنغولية"
+        "蒙古式建筑"
       ],
-      "tips": "تعرف على ثقافة المغول.",
+      "tips": "了解蒙古族文化。",
       "image": "/img/ext/fdef0d5b616e.webp",
       "phone": "+86 031 4 3792 8843"
     },
@@ -808,20 +808,20 @@
       "name": "板城古镇",
       "nameEn": "Bancheng Ancient Town",
       "category": "street",
-      "description": "البلدة القديمة في شمال تشنغده، تحافظ على الطراز المعماري لعصر أسرة تشينغ.",
-      "address": "مدينة تشنغده، مقاطعة تشنغده",
+      "description": "承德北部的古镇，保留了清代建筑风格。",
+      "address": "承德市承德县",
       "coordinates": {
         "lat": 41.1,
         "lng": 117.93
       },
-      "openingHours": "طوال اليوم",
-      "ticketPrice": "مجاني",
-      "recommendedVisitTime": "ساعتان",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "البلدة القديمة",
-        "العمارة في عهد أسرة تشينغ"
+        "古镇",
+        "清代建筑"
       ],
-      "tips": "قليل السكان وهادئ.",
+      "tips": "人少安静。",
       "image": "/img/ext/cbb07599c5bd.webp",
       "phone": "+86 031 4 6171 1794"
     },
@@ -965,21 +965,21 @@
     {
       "id": "longhua-temple",
       "name": "隆化董存瑞烈士陵园",
-      "nameEn": "Longhua Temple",
+      "nameEn": "Longhua Dong Cunrui Memorial",
       "category": "landmark",
-      "description": "The largest and oldest Buddhist temple in Shanghai, dating back to 242 AD, featuring a seven-story pagoda and beautiful gardens.",
-      "address": "2853 Longhua Rd, Xuhui District",
+      "description": "纪念战斗英雄董存瑞的陵园。",
+      "address": "隆化县",
       "coordinates": {
         "lat": 41.32,
         "lng": 117.73
       },
-      "openingHours": "07:00-16:30",
-      "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Seven-story pagoda"
+        "爱国主义教育"
       ],
-      "tips": "Visit during Chinese New Year for the famous bell-ringing ceremony. The pagoda is the highlight.",
+      "tips": "了解英雄事迹。",
       "image": "/img/ext/505f08f40c68.webp",
       "phone": "+86 031 4 9258 6340"
     },
@@ -1287,18 +1287,18 @@
         "lng": 117.9622
       },
       "hours": "10:00-22:00",
-      "description": "مطعم منغولي يتميز بالديكور التقليدي وأطباق لحم الضأن.",
+      "description": "Mongolian restaurant with traditional decor and lamb dishes.",
       "dishHighlights": [
-        "حساء لحم الضأن المنغولي",
-        "لحم الضأن المشوي",
-        "شاي الحليب",
-        "المعجنات المنغولية"
+        "Mongolian lamb hotpot",
+        "Grilled lamb",
+        "Milk tea",
+        "Mongolian dumplings"
       ],
       "tags": [
-        "محلي",
-        "منغولي",
-        "تقليدي",
-        "ضأن"
+        "local",
+        "mongolian",
+        "traditional",
+        "lamb"
       ],
       "imageUrl": "/img/ext/b8964719ff05.webp",
       "phone": "+86 031 4 7694 2693"
@@ -1308,23 +1308,23 @@
       "name": "山庄面馆",
       "nameEn": "Resort Noodles",
       "type": "local",
-      "cuisine": "نودلز",
+      "cuisine": "Noodles",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "بالقرب من منتجع الجبل",
+      "address": "Near Mountain Resort",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
       "hours": "07:00-20:00",
-      "description": "محل نودلز محلي بالقرب من المنتجع.",
+      "description": "Local noodle shop near the resort.",
       "dishHighlights": [
-        "نودلز مطبوخة باليد",
-        "نودلز باللحم البقري",
-        "نودلز بالخضار"
+        "Hand-pulled noodles",
+        "Beef noodles",
+        "Vegetable noodles"
       ],
       "tags": [
-        "محلي",
+        "local",
         "noodles",
         "quick",
         "budget"
@@ -1779,28 +1779,28 @@
     {
       "id": "chengde-21",
       "name": "老街鲜花玫瑰饼",
-      "nameEn": "老街鲜花玫瑰饼 (鲜花玫瑰饼)",
+      "nameEn": "Lao Jie Xian Hua Mei Gui Bing (فطيرة الورد الطازجة)",
       "type": "local",
-      "cuisine": "鲜花玫瑰饼",
+      "cuisine": "فطائر الورد الطازجة",
       "avgPrice": 140,
       "rating": 4.2,
-      "address": "承德市市中心区美食街98号",
+      "address": "شارع المأكولات الشهية 98، منطقة وسط المدينة، مدينة تشينغده",
       "coordinates": {
         "lat": 40.9439,
         "lng": 117.9583
       },
       "phone": "+86 010 48001420",
       "hours": "09:00-21:00",
-      "description": "承德本地人推荐的鲜花玫瑰饼店，味道正宗，价格实惠",
+      "description": "محل فطائر الورد الطازجة الموصى به من قبل السكان المحليين في تشينغده، يتميز بمذاقه الأصلي وأسعاره المعقولة",
       "dishHighlights": [
-        "鲜花玫瑰饼",
-        "南沙饼",
-        "烤羊腿"
+        "فطائر الورد الطازجة (فطائر محشوة بمربى الورد الطازج)",
+        "فطائر نانشا (فطائر محشوة بحشوة حلوة)",
+        "ساق خروف مشوي"
       ],
       "tags": [
-        "家常菜",
-        "性价比高",
-        "隐藏美食"
+        "أطباق منزلية",
+        "قيمة ممتازة مقابل المال",
+        "الطعام المخفي"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/1befd8b778d9.webp"
@@ -1808,26 +1808,26 @@
     {
       "id": "chengde-23",
       "name": "正宗鲜花玫瑰饼",
-      "nameEn": "正宗鲜花玫瑰饼 (鲜花玫瑰饼)",
+      "nameEn": "فطيرة الورد الطازجة الأصلية (فطيرة الورد الطازجة)",
       "type": "street",
-      "cuisine": "鲜花玫瑰饼",
+      "cuisine": "فطائر الورد الطازجة",
       "avgPrice": 33,
       "rating": 4.8,
-      "address": "承德市新城区美食街160号",
+      "address": "شارع المأكولات في منطقة شينتشنغ، مدينة تشنغده، رقم 160",
       "coordinates": {
         "lat": 40.9016,
         "lng": 117.9431
       },
       "phone": "+86 010 37587007",
       "hours": "10:00-22:00",
-      "description": "承德本地人推荐的鲜花玫瑰饼店，味道正宗，价格实惠",
+      "description": "متجر فطائر الورد الطازجة الموصى به من قبل السكان المحليين في تشنغده، يتميز بمذاقه الأصيل وأسعاره المعقولة",
       "dishHighlights": [
-        "南沙饼",
-        "鲜花玫瑰饼",
-        "烤羊腿"
+        "فطائر نانشا (نوع من الفطائر التقليدية)",
+        "فطيرة الورد الطازجة",
+        "فخذ الخروف المشوي"
       ],
       "tags": [
-        "路边摊",
+        "كشك على جانب الطريق",
         "夜市",
         "网红打卡"
       ],
@@ -2069,28 +2069,28 @@
     {
       "id": "chengde-41",
       "name": "老字号烤羊腿",
-      "nameEn": "Laozihao Kaoyangtui (ساق الخروف المشوي)",
+      "nameEn": "老字号烤羊腿 (烤羊腿)",
       "type": "street",
-      "cuisine": "ساق الخروف المشوي",
+      "cuisine": "烤羊腿",
       "avgPrice": 46,
       "rating": 4,
-      "address": "شارع المأكولات في الحي القديم في مدينة تشنغده، الرقم 109",
+      "address": "承德市老城区美食街109号",
       "coordinates": {
         "lat": 40.9541,
         "lng": 117.9669
       },
       "phone": "+86 010 40303202",
       "hours": "10:00-22:00",
-      "description": "مطعم ساق الخروف المشوي الموصى به من قبل السكان المحليين في تشنغده، يتميز بالمذاق الأصيل والأسعار المعقولة.",
+      "description": "承德本地人推荐的烤羊腿店，味道正宗，价格实惠",
       "dishHighlights": [
-        "فطائر نانشا",
-        "فطائر الورد الطازجة",
-        "دجاج ورق اللوتس الملكي"
+        "南沙饼",
+        "鲜花玫瑰饼",
+        "御土荷叶鸡"
       ],
       "tags": [
-        "وجبات خفيفة",
-        "وجبات ليلية",
-        "زيارة للمشاهير"
+        "小吃",
+        "深夜美食",
+        "网红打卡"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/df6cebde09c8.webp"
@@ -2100,17 +2100,17 @@
       "name": "地道南沙饼",
       "nameEn": "地道南沙饼 (南沙饼)",
       "type": "local",
-      "cuisine": "فطائر نانشا",
+      "cuisine": "南沙饼",
       "avgPrice": 114,
       "rating": 4.5,
-      "address": "شارع المأكولات في الحي القديم في مدينة تشنغده، الرقم 131",
+      "address": "承德市老城区美食街131号",
       "coordinates": {
         "lat": 40.991,
         "lng": 117.9489
       },
       "phone": "+86 010 99299720",
       "hours": "10:00-22:00",
-      "description": "مطعم فطائر نانشا الموصى به من قبل السكان المحليين في تشنغده، يتميز بالمذاق الأصيل والأسعار المعقولة.",
+      "description": "承德本地人推荐的南沙饼店，味道正宗，价格实惠",
       "dishHighlights": [
         "鲜花玫瑰饼",
         "烤羊腿",
@@ -2156,7 +2156,7 @@
     {
       "id": "chengde-47",
       "name": "老字号御土荷叶鸡",
-      "nameEn": "Lao Zihao Yu Tu He Ye Ji (Yu Tu He Ye Ji)",
+      "nameEn": "老字号御土荷叶鸡 (御土荷叶鸡)",
       "type": "cafe",
       "cuisine": "御土荷叶鸡",
       "avgPrice": 49,
@@ -2167,7 +2167,7 @@
         "lng": 118.0011
       },
       "phone": "+86 010 90627305",
-      "hours": "11:00-14:00، 17:00-21:30",
+      "hours": "11:00-14:00, 17:00-21:30",
       "description": "承德本地人推荐的御土荷叶鸡店，味道正宗，价格实惠",
       "dishHighlights": [
         "鲜花玫瑰饼",
@@ -2175,9 +2175,9 @@
         "南沙饼"
       ],
       "tags": [
-        "هادئ",
-        "قهوة",
-        "ثقافي"
+        "安静",
+        "咖啡",
+        "文艺"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c486294d4c94.webp"
@@ -2185,28 +2185,28 @@
     {
       "id": "chengde-49",
       "name": "老字号御土荷叶鸡",
-      "nameEn": "Lao Zihao Yu Tu He Ye Ji (Yu Tu He Ye Ji)",
+      "nameEn": "老字号御土荷叶鸡 (御土荷叶鸡)",
       "type": "cafe",
-      "cuisine": "Yu Tu He Ye Ji",
+      "cuisine": "御土荷叶鸡",
       "avgPrice": 80,
       "rating": 4.2,
-      "address": "شارع المأكولات في المدينة القديمة، تشنغده، رقم 98",
+      "address": "承德市老城区美食街98号",
       "coordinates": {
         "lat": 40.9352,
         "lng": 117.9273
       },
       "phone": "+86 010 48642600",
       "hours": "06:00-14:00",
-      "description": "مطعم Yu Tu He Ye Ji الذي يوصي به السكان المحليون في تشنغده، يتميز بمذاقه الأصلي وأسعاره المعقولة.",
+      "description": "مطعم يوتو هيهي جى الموصى به من قبل السكان المحليين في تشنغده، يتميز بمذاقه الأصيل وأسعاره المعقولة",
       "dishHighlights": [
-        "قدم خروف مشوي",
-        "نان شا بينغ (فطائر نان شا)",
-        "فطائر وردية طازجة"
+        "فخذ الخروف المشوي",
+        "كعك نانشا",
+        "كعك الورد الطازج"
       ],
       "tags": [
         "هادئ",
         "قهوة",
-        "شاي بعد الظهر"
+        "شاي العصر"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/80b250fa7744.webp"
@@ -2214,28 +2214,28 @@
     {
       "id": "chengde-51",
       "name": "正宗御土荷叶鸡",
-      "nameEn": "正宗御土荷叶鸡 (御土荷叶鸡)",
+      "nameEn": "يوتو هيهي جى الأصلي (يوتو هيهي جى)",
       "type": "local",
-      "cuisine": "御土荷叶鸡",
+      "cuisine": "يوتو هيهي جى",
       "avgPrice": 140,
       "rating": 4.5,
-      "address": "承德市老城区美食街64号",
+      "address": "شارع المأكولات في المدينة القديمة في تشنغده، الرقم 64",
       "coordinates": {
         "lat": 40.9973,
         "lng": 117.9495
       },
       "phone": "+86 010 19654004",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "承德本地人推荐的御土荷叶鸡店，味道正宗，价格实惠",
+      "description": "مطعم يوتو هيهي جى الموصى به من قبل السكان المحليين في تشنغده، يتميز بمذاقه الأصيل وأسعاره المعقولة",
       "dishHighlights": [
-        "鲜花玫瑰饼",
-        "南沙饼",
-        "烤羊腿"
+        "كعك الورد الطازج",
+        "كعك نانشا",
+        "فخذ الخروف المشوي"
       ],
       "tags": [
-        "家常菜",
-        "老字号",
-        "本地人爱去"
+        "أطباق منزلية",
+        "ماركة عريقة",
+        "يفضلها السكان المحليون"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bf38a3e204c5.webp"
@@ -2243,28 +2243,28 @@
     {
       "id": "chengde-53",
       "name": "街边烤羊腿",
-      "nameEn": "街边烤羊腿 (烤羊腿)",
+      "nameEn": "سيقان حمل مشوية في الشارع (سيقان حمل مشوية)",
       "type": "local",
-      "cuisine": "烤羊腿",
+      "cuisine": "سيقان حمل مشوية",
       "avgPrice": 67,
       "rating": 4.1,
-      "address": "承德市新城区美食街159号",
+      "address": "159 شارع مأكولات شارع المدينة الجديدة، مدينة تشنغده",
       "coordinates": {
         "lat": 40.9322,
         "lng": 117.9556
       },
       "phone": "+86 010 48296251",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "承德本地人推荐的烤羊腿店，味道正宗，价格实惠",
+      "description": "مطعم سيقان حمل مشوية موصى به من قبل السكان المحليين في تشنغده، يتميز بمذاق أصيل وأسعار معقولة",
       "dishHighlights": [
-        "南沙饼",
-        "烤羊腿",
-        "御土荷叶鸡"
+        "فطائر نانشا",
+        "سيقان حمل مشوية",
+        "دجاج ورق اللوتس الملكي"
       ],
       "tags": [
-        "隐藏美食",
-        "老字号",
-        "排队王"
+        "أطباق خفية",
+        "ماركة عريقة",
+        "الأكثر ازدحامًا بالانتظار"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/efd7ed49dc12.webp"
@@ -2272,28 +2272,28 @@
     {
       "id": "chengde-55",
       "name": "巷子御土荷叶鸡",
-      "nameEn": "巷子御土荷叶鸡 (御土荷叶鸡)",
+      "nameEn": "دجاج ورق اللوتس الملكي في الزقاق (دجاج ورق اللوتس الملكي)",
       "type": "local",
-      "cuisine": "御土荷叶鸡",
+      "cuisine": "دجاج ورق اللوتس الملكي",
       "avgPrice": 96,
       "rating": 4.9,
-      "address": "承德市市中心区美食街71号",
+      "address": "شارع المأكولات في منطقة وسط مدينة تشنغده، الرقم 71",
       "coordinates": {
         "lat": 40.9165,
         "lng": 118.0011
       },
       "phone": "+86 010 52847458",
       "hours": "17:00-02:00",
-      "description": "承德本地人推荐的御土荷叶鸡店，味道正宗，价格实惠",
+      "description": "مطعم دجاج ورق اللوتس الملكي الموصى به من قبل السكان المحليين في تشنغده، يتميز بمذاقه الأصيل وأسعاره المعقولة",
       "dishHighlights": [
-        "南沙饼",
-        "御土荷叶鸡",
-        "鲜花玫瑰饼"
+        "كعك نانشا",
+        "دجاج ورق اللوتس الملكي",
+        "كعك الورد الطازج"
       ],
       "tags": [
-        "性价比高",
-        "家常菜",
-        "社区老店"
+        "نسبة جودة إلى سعر عالية",
+        "أطباق منزلية",
+        "محل قديم في المجتمع"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/cd6dec49b271.webp"
@@ -2301,19 +2301,19 @@
     {
       "id": "chengde-57",
       "name": "巷子御土荷叶鸡",
-      "nameEn": "巷子御土荷叶鸡 (御土荷叶鸡)",
+      "nameEn": "زقاق دجاج ورق اللوتس الملكي (دجاج ورق اللوتس الملكي)",
       "type": "local",
-      "cuisine": "御土荷叶鸡",
+      "cuisine": "دجاج ورق اللوتس الملكي",
       "avgPrice": 77,
       "rating": 4.7,
-      "address": "承德市新城区美食街138号",
+      "address": "شارع المأكولات في منطقة تشنغده الجديدة، الرقم 138",
       "coordinates": {
         "lat": 40.9974,
         "lng": 117.9212
       },
       "phone": "+86 010 94146697",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "承德本地人推荐的御土荷叶鸡店，味道正宗，价格实惠",
+      "description": "مطعم دجاج ورق اللوتس الملكي الموصى به من قبل السكان المحليين في تشنغده، يتميز بمذاقه الأصيل وأسعاره المعقولة",
       "dishHighlights": [
         "御土荷叶鸡",
         "南沙饼",
@@ -2610,9 +2610,9 @@
         "烤羊腿"
       ],
       "tags": [
-        "小吃",
-        "深夜美食",
-        "路边摊"
+        "وجبات خفيفة",
+        "طعام متأخر في الليل",
+        "بائع متجول"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/d5ef6a841791.webp"
@@ -2620,28 +2620,28 @@
     {
       "id": "chengde-79",
       "name": "老街鲜花玫瑰饼",
-      "nameEn": "老街鲜花玫瑰饼 (鲜花玫瑰饼)",
+      "nameEn": "مخبز وردة الزهور في شارع لاو جيه (وردة الزهور)",
       "type": "street",
-      "cuisine": "鲜花玫瑰饼",
+      "cuisine": "وردة الزهور",
       "avgPrice": 12,
       "rating": 4.4,
-      "address": "承德市新城区美食街139号",
+      "address": "رقم 139 شارع الطعام الجديد منطقة تشينغده",
       "coordinates": {
         "lat": 40.9813,
         "lng": 117.9156
       },
       "phone": "+86 010 58035116",
-      "hours": "11:00-14:00, 17:00-21:30",
-      "description": "承德本地人推荐的鲜花玫瑰饼店，味道正宗，价格实惠",
+      "hours": "11:00-14:00، 17:00-21:30",
+      "description": "مخبز وردة الزهور الموصى به من قبل السكان المحليين في تشينغده، طعم أصلي، سعر معقول",
       "dishHighlights": [
-        "南沙饼",
-        "御土荷叶鸡",
-        "鲜花玫瑰饼"
+        "كعكة نانشا",
+        "دجاج أوروبا ذو أوراق اللوتس",
+        "وردة الزهور"
       ],
       "tags": [
-        "夜市",
-        "网红打卡",
-        "路边摊"
+        "سوق ليلي",
+        "وجهة سياحية شهيرة على الإنترنت",
+        "بائع متجول"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/913ee27a433a.webp"
@@ -3020,91 +3020,91 @@
     {
       "category": "history",
       "title": "Qing Dynasty Summer Retreat",
-      "content": "Chengde was the summer retreat for Qing Dynasty emperors. The Mountain Resort served as a second capital, where emperors conducted government affairs away from Beijing's summer heat.",
+      "content": "كانت شانغدو منتجعًا صيفيًا لإمبراطوريات أسرة تشينغ. служил kao vtoroj stolice, gde imperatory osushchestvlyali gosudarstvennye dela vдали от летней жары Пекина.",
       "importance": "high"
     },
     {
       "category": "religion",
       "title": "Tibetan Buddhism",
-      "content": "The temples around Chengde reflect the importance of Tibetan Buddhism to the Qing court. The Potala-style temples were built to honor Tibetan Buddhist leaders.",
+      "content": "تعكس المعابد المحيطة بشانغدو أهمية البوذية التبتية البلاط تشينغ. تم بناء معابد على طراز بوترام لإكرام قادة البوذية التبتية.",
       "importance": "high"
     },
     {
       "category": "manchu",
       "title": "Manchu Culture",
-      "content": "Chengde is a center of Manchu culture. Try traditional Manchu dishes and experience the cultural heritage of the Qing ruling class.",
+      "content": "شانغدو هي مركز ثقافة المانشو. جرب الأطباق التقليدية المانشو واستمتع بالتراث الثقافي من فئة حكام تشينغ.",
       "importance": "medium"
     },
     {
       "category": "nature",
       "title": "Mountain Resort Design",
-      "content": "The Mountain Resort incorporates natural mountain scenery into its design. The resort area includes lakes, grasslands and forests creating a microcosm of China.",
+      "content": "يجمع منتجع الجبال في شانغدو بين المناظر الطبيعية الجبلية في تصميمه. تشمل منطقة المنتجع البحيرات والغابات مما يخلق صورة مصغرة للصين.",
       "importance": "medium"
     },
     {
       "category": "food",
       "title": "Local Cuisine",
-      "content": "Chengde cuisine reflects its northern location. Try wild mushrooms from nearby forests, venison, and traditional Manchu dishes like hotpot.",
+      "content": "تعكس مطبخ شانغدو موقعه الشمالي. جرب الفطر البري من الغابات القريبة واللحوم الغزلانية والأطباق التقليدية المانشو مثل_hotpot.",
       "importance": "medium"
     },
     {
       "category": "proximity",
       "title": "Gateway to Beijing",
-      "content": "Chengde is a popular escape from Beijing's summer heat, just 3-4 hours by bus. Many Beijing residents visit for weekend retreats.",
+      "content": "شانغدو هي وجهة شعبية للهروب من حرارة الصيف في بكين، على بعد 3-4 ساعات بالحافلة. يقوم العديد من سكان بكين بزيارات لعطلات نهاية الأسبوع.",
       "importance": "high"
     },
     {
       "category": "great-wall",
       "title": "Nearby Great Wall",
-      "content": "Jinshanling Great Wall is accessible from Chengde. This well-preserved section is less crowded than Badaling and great for hiking.",
+      "content": "يمكن الوصول إلى سور الصين العظيم جينسانلينغ من شانغدو. هذا القسم المحافظ جيدًا أقل ازدحامًا من بادالين ومثالي للمشي.",
       "importance": "medium"
     },
     {
       "category": "grassland",
       "title": "Mulan Weichang",
-      "content": "The Mulan Weichang hunting ground near Chengde was used by Qing emperors for annual hunts. Today it offers grassland scenery and Mongolian cultural experiences.",
+      "content": "استخدم إمبراطورية تشينغ miejsce polowania mula Weichang near Chengde dla corocznych polowań. Dziś oferuje widoki na sawanny i doświadczenia kultury mongolskiej.",
       "importance": "medium"
     },
     {
       "category": "architecture",
       "title": "Imperial Architecture",
-      "content": "Chengde's Mountain Resort showcases unique imperial architecture combining Han and Mongolian styles. The temples feature golden roofs and Tibetan Buddhist design elements.",
+      "content": "يعرض منتجع جبال شانغدو العمالة الإمبراطورية الفريدة التي تجمع بين الأنماط الهان والمنغولية. تتميز المعابد بأسطح ذهبية وعناصر التصميم البوذي التبتي.",
       "importance": "high"
     },
     {
       "category": "nature",
       "title": "Northern Grasslands",
-      "content": "The grasslands near Chengde offer a stark contrast to Beijing. The Mulan Weichang hunting ground spans vast grasslands where you can experience horse riding and Mongolian culture.",
+      "content": "السهول القريبة من تشنغده تقدم تباينًا صارخًا مع بكين. تمتد أرض الصيد مو لان وي تشانغ على سهول شاسعة حيث يمكنك تجربة ركوب الخيل والثقافة المنغولية.",
       "importance": "medium"
     },
     {
       "category": "food",
       "title": "Wild Forest Mushrooms",
-      "content": "Chengde's surrounding forests produce prized wild mushrooms. These are featured in local dishes and are considered a delicacy. Try mushroom hotpot at local restaurants.",
+      "content": "تنتج الغابات المحيطة بتشنغده فطرًا بريًا ثمينًا. يتميز هذا الفطر في الأطباق المحلية ويعتبر من الأطعمة الشهية. جرب حساء الفطر في المطاعم المحلية.",
       "importance": "medium"
     },
     {
       "category": "hot-spring",
       "title": "Imperial Hot Springs",
-      "content": "The hot springs near the Mountain Resort were used by Qing emperors. Today you can experience these same hot springs at local resorts.",
+      "content": "تم استخدام الينابيع الساخنة القريبة من منتجع الجبل من قبل أباطرة أسرة تشينغ. يمكنك اليوم تجربة نفس الينابيع الساخنة في المنتجعات المحلية.",
       "importance": "medium"
     },
     {
       "category": "performance",
       "title": "Traditional Performances",
-      "content": "Traditional Manchu and Mongolian performances are held at the Mountain Resort. These include folk dances, horse shows, and imperial ceremony reenactments.",
+      "content": "تقام عروض تقليدية مانشو ومنغولية في منتجع الجبل. تشمل هذه العروض رقصات شعبية وعروض الخيل وإعادة تمثيل مراسم إمبراطورية.",
       "importance": "low"
     },
     {
       "category": "shopping",
       "title": "Local Products",
-      "content": "Chengde is known for wild mushrooms, pine nuts, and Chinese medicinal herbs. The night markets sell local specialties and traditional crafts.",
+      "content": "تشتهر تشنغده بالفطر البري، وبذور الصنوبر، والأعشاب الطبية الصينية. تبيع الأسواق الليلية المنتجات المحلية والحرف التقليدية.",
       "importance": "low"
     },
     {
       "category": "etiquette",
       "title": "Temple Etiquette",
-      "content": "When visiting Buddhist temples, dress modestly and remove hats. Some temples may have restrictions on photography. Light incense with respect.",
+      "content": "عند زيارة المعابد البوذية، يرجى ارتداء ملابس محتشمة وإزالة القبعات. قد يكون لبعض المعابد قيود على التصوير. أشعل البخور باحترام.",
       "importance": "medium"
     }
   ],
@@ -3112,83 +3112,83 @@
     {
       "type": "ambulance",
       "name": "承德急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Main hospitals have basic English"
     },
     {
       "type": "police",
       "name": "承德市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "type": "hospital",
       "name": "承德医学院附属医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Affiliated Hospital of Chengde Medical College",
       "phone": "+86 314 229 6600",
-      "address": "Guangzhou",
+      "address": "18 Nanyingzi Street",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
-      "notes": "For Singapore citizens"
+      "notes": "Main hospital in Chengde"
     },
     {
       "type": "fire",
       "name": "承德消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue"
     },
     {
       "type": "tourist-police",
       "name": "承德旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Tourist Police",
       "phone": "+86 314 203 3110",
-      "notes": "For Singapore citizens"
+      "notes": "At major attractions"
     },
     {
       "type": "hospital",
       "name": "承德市中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Central Hospital",
       "phone": "+86 314 202 5555",
-      "address": "Guangzhou",
+      "address": "28 Wulie Road",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital in city center"
     },
     {
       "type": "pharmacy",
       "name": "承德大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Pharmacy",
       "phone": "+86 314 203 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Main street area",
+      "notes": "24-hour pharmacy available"
     },
     {
       "type": "embassy",
       "name": "中国驻外事办公室",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Foreign Affairs Office",
       "phone": "+86 314 202 1234",
-      "notes": "For Singapore citizens"
+      "notes": "For foreign tourist assistance"
     },
     {
       "type": "traffic",
       "name": "承德交通服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Traffic Police",
       "phone": "122",
-      "notes": "For Singapore citizens"
+      "notes": "Traffic accidents and road assistance"
     },
     {
       "type": "consumer-rights",
       "name": "承德消费者投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Consumer Rights Hotline",
       "phone": "12315",
-      "notes": "For Singapore citizens"
+      "notes": "Consumer protection and complaints"
     }
   ],
   "quickFacts": {

@@ -9,14 +9,14 @@
     "lng": 119.2965
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Фучжоу, столица провинции Фуцзянь, - исторический город с 2200-летней историей. Известен традиционными баньяновыми деревьями, архитектурой в стиле Фучжоу и как ворота на Тайвань. Содержит культурные достопримечательности, такие как Три переулка и семь аллей и священную буддийскую гору Путо.",
+  "description": "Fuzhou, capital of Fujian Province, is a historic city with 2200 years of history. Known for its traditional榕树 (banyan) trees, Fuzhou-style architecture, and as gateway to Taiwan. Features cultural sites like 三坊七巷 (Three Lanes and Seven Alleys) and Buddhist圣地 (sacred) Mount Putuo.",
   "coverImage": "/img/ext/eb9c77e8f6de.webp",
   "highlights": [
-    "Три переулка и семь аллей - Исторический район",
-    "Гора Барабан - Живописная зона с храмами",
-    "Национальный лесной парк Фучжоу",
-    "Культура горячих источников - Местная традиция",
-    "Три горы Две пагоды - Символ города"
+    "Three Lanes and Seven Alleys - Historic districts",
+    "Mount Putuo - Buddhist sacred mountain",
+    "Fuzhou National Forest Park - Urban nature",
+    "Drum Mountain - Scenic area with temples",
+    "Hot spring culture - Local tradition"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "12C (54F)",
-    "tips": "Лучше всего весна и осень. Лето жаркое и влажное, тайфуны. Зима мягкая, но дождливая. Горячие источники популярны круглый год."
+    "tips": "Best in spring and autumn. Summers hot and humid with typhoons. Winter mild but rainy. Hot springs popular year-round."
   },
   "attractions": [
     {
@@ -877,19 +877,19 @@
       "name": "茶亭公园",
       "nameEn": "Chating Park",
       "category": "park",
-      "description": "Парк в центре города Фучжоу с экспозицией, посвященной чайной культуре.",
-      "address": "Район Тайцзян, Фучжоу",
+      "description": "福州市中心的公园，有茶文化展示。",
+      "address": "福州市台江区",
       "coordinates": {
         "lat": 26.05,
         "lng": 119.3
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1 час",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Чайная культура"
+        "茶文化"
       ],
-      "tips": "Узнайте больше о чайной культуре Фучжоу.",
+      "tips": "了解福州茶文化。",
       "image": "/img/ext/f16110dc58ab.webp",
       "phone": "+86 059 1 7464 9616"
     },
@@ -1407,18 +1407,18 @@
         "lng": 119.2865
       },
       "hours": "07:00-20:00",
-      "description": "Popular noodle dish with satay sauce, a Fuzhou breakfast staple.",
+      "description": "Популярное блюдо из лапши с соусом сатай, традиционный завтрак Фучжоу.",
       "dishHighlights": [
-        "Satay noodles",
-        "Tofu skin",
-        "Pork belly",
-        "Vegetables"
+        "Лапша сатай",
+        "Тофу (соевый сыр)",
+        "Свиная грудинка",
+        "Овощи"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "breakfast",
-        "budget"
+        "местная",
+        "лапша",
+        "завтрак",
+        "бюджетный"
       ],
       "imageUrl": "/img/ext/47aacbf2c083.webp",
       "phone": "+86 059 1 4826 8954"
@@ -1426,29 +1426,29 @@
     {
       "id": "fuzhou-9",
       "name": "蚵仔煎",
-      "nameEn": "Oyster Omelette",
+      "nameEn": "Омлет с устрицами",
       "type": "local",
-      "cuisine": "Fujian",
+      "cuisine": "Фуцзянская кухня",
       "avgPrice": 35,
       "rating": 4.7,
-      "address": "Night markets",
+      "address": "Ночные рынки",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "17:00-02:00",
-      "description": "Famous Fujian street food - crispy omelette with fresh oysters.",
+      "description": "Знаменитая уличная еда Фуцзяна - хрустящий омлет со свежими устрицами.",
       "dishHighlights": [
-        "Oyster omelette",
-        "Sweet sauce",
-        "Crispy edge",
-        "Fresh oysters"
+        "Омлет с устрицами",
+        "Сладкий соус",
+        "Хрустящий край",
+        "Свежие устрицы"
       ],
       "tags": [
-        "local",
-        "famous",
-        "street-food",
-        "must-try"
+        "местная",
+        "известная",
+        "уличная еда",
+        "обязательно попробуйте"
       ],
       "imageUrl": "/img/ext/db4d76d3e916.webp",
       "phone": "+86 059 1 3933 1595"
@@ -1458,20 +1458,20 @@
       "name": "鼎泰丰",
       "nameEn": "Din Tai Fung",
       "type": "chain",
-      "cuisine": "Taiwanese",
+      "cuisine": "тайваньская",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Emax Mall, Jin'an",
+      "address": "Emax Mall, Цзинань",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2965
       },
       "hours": "10:00-21:30",
-      "description": "World-famous dumpling chain with excellent xiaolongbao.",
+      "description": "Всемирно известная сеть пельменей с отличными сяолунбао.",
       "dishHighlights": [
-        "Xiaolongbao",
-        "Fried rice",
-        "Noodles",
+        "Сяолунбао",
+        "Жареный рис",
+        "Лапша",
         "Desserts"
       ],
       "tags": [
@@ -3127,75 +3127,75 @@
     {
       "type": "ambulance",
       "name": "福州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English"
     },
     {
       "type": "police",
       "name": "福州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "type": "hospital",
       "name": "福建医科大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fujian Medical University Union Hospital",
       "phone": "+86 591 8798 3911",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "88 Jiebin Road, Jin'an District",
+      "notes": "English-speaking staff"
     },
     {
       "type": "hospital",
       "name": "福建省立医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fujian Provincial Hospital",
       "phone": "+86 591 8755 1632",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "68 Dongda Road, Jin'an District",
+      "notes": "Another major hospital"
     },
     {
       "type": "fire",
       "name": "福州消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Fire Department",
       "phone": "119"
     },
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "Serves Fuzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "For Japanese citizens"
     },
     {
       "type": "embassy",
       "name": "韩国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "For Korean citizens"
     },
     {
       "type": "hospital",
       "name": "福州市第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou First Hospital",
       "phone": "+86 591 8321 3920",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "79 Dagpu Road, Gulou District",
+      "notes": "24-hour emergency"
     },
     {
       "type": "pharmacy",
       "name": "福州大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Pharmacy Chain",
       "phone": "+86 591 8333 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Multiple locations",
+      "notes": "24-hour pharmacy available"
     }
   ],
   "quickFacts": {

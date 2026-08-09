@@ -9,14 +9,14 @@
     "lng": 117.963
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "چنگده شهری کوهستانی تاریخی در استان هبی است. به‌خاطر اقامتگاه تابستانی امپراتوری و معابد بودایی تبتی نزدیک مشهور است. میراث جهانی، زمانی اقامتگاه تابستانی امپراتورهای سلسله چینگ بود. مناظر کوهستانی و معابد بودایی تبتی آن را منحصر به فرد می‌کند.",
+  "description": "Chengde, a historic mountain city in Hebei province, is famous for its imperial summer resort and nearby Buddhist temples. A UNESCO World Heritage Site, it was once the summer retreat for Qing Dynasty emperors. The mountain scenery and Tibetan-style Buddhist temples make it unique.",
   "coverImage": "/img/ext/fec12dec27c6.webp",
   "highlights": [
-    "کوهپیمایش تپه - میراث جهانی یونسکو",
-    "معبد پونینگ - بزرگ‌ترین معبد بودایی چین",
-    "معبد پوتو زونگچنگ - معبد به سبک تبتی",
-    "کاخ پوتالا کوچک - مینیاتور پوتالا لهاسا",
-    "ییلاق تابستانی امپراتوری"
+    "Mountain Resort - Qing Dynasty summer palace",
+    "Puning Temple - Largest Buddhist temple in China",
+    "Putuo Zongcheng Temple - Tibetan-style temple",
+    "Small Potala Palace - Miniature of Lhasa's Potala",
+    "Imperial summer retreat"
   ],
   "climate": {
     "type": "Temperate continental climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "24°C (75°F)",
     "avgWinterTemp": "-8°C (18°F)",
-    "tips": "تابستان برای فرار از گرما بهترین است. بهار و پاییز دلپذیر هستند. زمستان سرد. ییلاق تابستانی سلسله چینگ."
+    "tips": "Best in summer for resort and temples. Spring and autumn pleasant. Winters cold. Summer is peak season but pleasant escape from Beijing heat."
   },
   "attractions": [
     {
@@ -723,19 +723,19 @@
       "name": "安远庙",
       "nameEn": "Anyuan Temple",
       "category": "temple",
-      "description": "یکی از معابد خارجی هشتگانه، که بر اساس معبد گورزه در ایلی، سینکیانگ، ساخته شده است.",
-      "address": "شهر چنگده، منطقه شوآنگچیائو",
+      "description": "外八庙之一，仿新疆伊犁固尔扎庙而建。",
+      "address": "承德市双桥区",
       "coordinates": {
         "lat": 40.98,
         "lng": 117.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "20 یوان",
-      "recommendedVisitTime": "1 ساعت",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "معماری مغولی"
+        "蒙古式建筑"
       ],
-      "tips": "با فرهنگ مغولی آشنا شوید.",
+      "tips": "了解蒙古族文化。",
       "image": "/img/ext/fdef0d5b616e.webp",
       "phone": "+86 031 4 3792 8843"
     },
@@ -965,21 +965,21 @@
     {
       "id": "longhua-temple",
       "name": "隆化董存瑞烈士陵园",
-      "nameEn": "Longhua Temple",
+      "nameEn": "Longhua Dong Cunrui Memorial",
       "category": "landmark",
-      "description": "The largest and oldest Buddhist temple in Shanghai, dating back to 242 AD, featuring a seven-story pagoda and beautiful gardens.",
-      "address": "2853 Longhua Rd, Xuhui District",
+      "description": "纪念战斗英雄董存瑞的陵园。",
+      "address": "隆化县",
       "coordinates": {
         "lat": 41.32,
         "lng": 117.73
       },
-      "openingHours": "07:00-16:30",
-      "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Seven-story pagoda"
+        "爱国主义教育"
       ],
-      "tips": "Visit during Chinese New Year for the famous bell-ringing ceremony. The pagoda is the highlight.",
+      "tips": "了解英雄事迹。",
       "image": "/img/ext/505f08f40c68.webp",
       "phone": "+86 031 4 9258 6340"
     },
@@ -1427,26 +1427,26 @@
       "name": "驴肉火烧",
       "nameEn": "Donkey Meat Sandwich",
       "type": "local",
-      "cuisine": "Local Snacks",
+      "cuisine": "اسنک‌های محلی",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Street vendors",
+      "address": "دستفروشان خیابانی",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
-      "hours": "全天",
-      "description": "Donkey meat in crispy bread - famous local snack.",
+      "hours": "تمام روز",
+      "description": "گوشت الاغ در نان ترد - اسنک محلی معروف",
       "dishHighlights": [
-        "Donkey meat sandwich",
-        "Crispy bread",
-        "Spicy sauce"
+        "ساندویچ گوشت الاغ",
+        "نان ترد",
+        "سس تند"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "famous",
-        "street-food"
+        "محلی",
+        "اسنک",
+        "معروف",
+        "غذای خیابانی"
       ],
       "imageUrl": "/img/ext/724e0b07cd7f.webp",
       "phone": "+86 031 4 9716 0137"
@@ -1454,29 +1454,29 @@
     {
       "id": "chengde-10",
       "name": "荞面碗砣",
-      "nameEn": "Buckwheat Jelly",
+      "nameEn": "ژله گندم سیاه",
       "type": "local",
-      "cuisine": "Local Snacks",
+      "cuisine": "اسنک‌های محلی",
       "avgPrice": 15,
       "rating": 4.4,
-      "address": "Street vendors",
+      "address": "دستفروشان خیابانی",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
-      "hours": "全天",
-      "description": "Buckwheat jelly with sauce - traditional local snack.",
+      "hours": "تمام روز",
+      "description": "ژله جو دوسر با سس - اسنک سنتی محلی",
       "dishHighlights": [
-        "Buckwheat jelly",
-        "Soy sauce",
-        "Vinegar",
-        "Garlic"
+        "ژله جو دوسر",
+        "سس سویا",
+        "سرکه",
+        "سیر"
       ],
       "tags": [
-        "local",
-        "snacks",
-        "traditional",
-        "vegetarian"
+        "محلی",
+        "اسنک",
+        "سنتی",
+        "گیاهی"
       ],
       "imageUrl": "/img/ext/b3bb970e9ac7.webp",
       "phone": "+86 031 4 7980 6055"
@@ -1484,28 +1484,28 @@
     {
       "id": "chengde-11",
       "name": "莜面",
-      "nameEn": "Highland Barley Noodles",
+      "nameEn": "نودل جو کوهی",
       "type": "local",
-      "cuisine": "Local",
+      "cuisine": "محلی",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Near Mountain Resort",
+      "address": "نزدیک اقامتگاه کوهستانی",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
       "hours": "10:00-22:00",
-      "description": "Traditional noodles made from highland barley.",
+      "description": "نودل سنتی جو کوهی",
       "dishHighlights": [
-        "Highland barley noodles",
-        "Various toppings",
-        "Hot or cold"
+        "نودل جو کوهی",
+        "انواع مواد رویه",
+        "داغ یا سرد"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "traditional",
-        "healthy"
+        "محلی",
+        "نودل",
+        "سنتی",
+        "سالم"
       ],
       "imageUrl": "/img/ext/2b43769b2f4f.webp",
       "phone": "+86 031 4 9978 3945"
@@ -1513,24 +1513,24 @@
     {
       "id": "chengde-12",
       "name": "蘑菇宴",
-      "nameEn": "Mushroom Feast",
+      "nameEn": "ضیافت قارچ",
       "type": "local",
-      "cuisine": "Local",
+      "cuisine": "محلی",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "Near Mountain Resort",
+      "address": "نزدیک به ریزورت کوهستانی",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
       "phone": "+86 314 209 1234",
       "hours": "10:00-22:00",
-      "description": "Various mushroom dishes from local forests.",
+      "description": "انواع غذاهای قارچ از جنگل‌های محلی",
       "dishHighlights": [
-        "Wild mushrooms",
-        "Stir-fried mushrooms",
-        "Mushroom soup",
-        "Grilled mushrooms"
+        "قارچ‌های وحشی",
+        "قارچ تفت داده شده",
+        "سوپ قارچ",
+        "قارچ کبابی"
       ],
       "tags": [
         "local",
@@ -3112,83 +3112,83 @@
     {
       "type": "ambulance",
       "name": "承德急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Main hospitals have basic English"
     },
     {
       "type": "police",
       "name": "承德市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "type": "hospital",
       "name": "承德医学院附属医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Affiliated Hospital of Chengde Medical College",
       "phone": "+86 314 229 6600",
-      "address": "Guangzhou",
+      "address": "18 Nanyingzi Street",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
-      "notes": "For Singapore citizens"
+      "notes": "Main hospital in Chengde"
     },
     {
       "type": "fire",
       "name": "承德消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue"
     },
     {
       "type": "tourist-police",
       "name": "承德旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Tourist Police",
       "phone": "+86 314 203 3110",
-      "notes": "For Singapore citizens"
+      "notes": "At major attractions"
     },
     {
       "type": "hospital",
       "name": "承德市中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Central Hospital",
       "phone": "+86 314 202 5555",
-      "address": "Guangzhou",
+      "address": "28 Wulie Road",
       "coordinates": {
         "lat": 40.9722,
         "lng": 117.9622
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital in city center"
     },
     {
       "type": "pharmacy",
       "name": "承德大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Pharmacy",
       "phone": "+86 314 203 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Main street area",
+      "notes": "24-hour pharmacy available"
     },
     {
       "type": "embassy",
       "name": "中国驻外事办公室",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Foreign Affairs Office",
       "phone": "+86 314 202 1234",
-      "notes": "For Singapore citizens"
+      "notes": "For foreign tourist assistance"
     },
     {
       "type": "traffic",
       "name": "承德交通服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Traffic Police",
       "phone": "122",
-      "notes": "For Singapore citizens"
+      "notes": "Traffic accidents and road assistance"
     },
     {
       "type": "consumer-rights",
       "name": "承德消费者投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengde Consumer Rights Hotline",
       "phone": "12315",
-      "notes": "For Singapore citizens"
+      "notes": "Consumer protection and complaints"
     }
   ],
   "quickFacts": {

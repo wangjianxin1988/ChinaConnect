@@ -9,14 +9,14 @@
     "lng": 122.1216
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "เหวยไห่ เมืองชายฝั่งที่สวยงามในมณฑลซานตง เป็นที่รู้จักจากชายหาดที่สะอาด อาหารทะเลสด ๆ และสถานที่ทางประวัติศาสตร์ มีชื่อเสียงในฐานะจุดเริ่มต้นของการโจมตีของญี่ปุ่นครั้งแรกในจีนในปี 1894 (สงครามจีน-ญี่ปุ่น) ปัจจุบันเป็นจุดหมายปลายทางยอดนิยมในฤดูร้อนพร้อมเส้นทางชายฝั่งที่สวยงามและเกาะต่าง ๆ",
+  "description": "Weihai is a beautiful coastal city in Shandong Province, known for clean beaches, fresh seafood, and historical sites. Famous as the departure point for the first Japanese attack on China in 1894 (Sino-Japanese War). Now a popular summer destination with scenic coastal drives and islands.",
   "coverImage": "/img/ext/15c9f0aa9d15.webp",
   "highlights": [
-    "เกาะหลิวกง - สถานที่สงครามจีน-ญี่ปุ่นครั้งแรก",
-    "ชายหาดทอง - ชายหาดดิบ 10 กม.",
-    "สวนสนุกภูเขาและทะเล - สวนสนุกและชายหาด",
-    "เกาะเฉิงซาน - หลบหนีเกาะที่สวยงาม",
-    "สวนสาธารณะเหวยไห่ - สวนชายฝั่งเมือง"
+    "Liugong Island - First Sino-Japanese War site",
+    "Golden Beach - Pristine 10km beach",
+    "Mountain/Sea Paradise - Theme park and beach",
+    "Chengshan Island - Scenic island getaway",
+    "Weihai Park - Coastal urban park"
   ],
   "climate": {
     "type": "Temperate monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "24C (75F)",
     "avgWinterTemp": "0C (32F)",
-    "tips": "ฤดูร้อนดีที่สุดสำหรับว่ายน้ำ ก.ค.-ส.ค. ฤดูว่ายน้ำสูงสุด ก.ย. สบาย ฤดูหนาวหนาวแต่สวย หลีกเลี่ยงสัปดาห์ทองตุลาคม"
+    "tips": "Best in summer for beaches. July-August peak swimming season. Pleasant in September. Winter cold but scenic. Avoid Golden Week October."
   },
   "attractions": [
     {
@@ -404,16 +404,16 @@
         "lat": 37.4091,
         "lng": 122.5916
       },
-      "openingHours": "Ferry schedule",
-      "ticketPrice": "88¥ (ferry included)",
-      "recommendedVisitTime": "3-4 hours",
+      "openingHours": "ตารางเวลาเดินเรือข้ามฟาก",
+      "ticketPrice": "88¥ (รวมค่าเดินเรือ)",
+      "recommendedVisitTime": "3-4 ชั่วโมง",
       "highlights": [
         "Island village",
         "Cliffs",
         "Beach",
         "Authentic life"
       ],
-      "tips": "Book ferry in advance. The fishing village is charming.",
+      "tips": "จองตั๋วเรือล่วงหน้า หมู่บ้านประมงมีเสน่ห์",
       "phone": "+86 063 1 4243 7047"
     },
     {
@@ -422,8 +422,8 @@
       "nameEn": "Weihai Ocean Park",
       "category": "cultural",
       "image": "/img/ext/7701e3928271.webp",
-      "description": "Aquarium with marine life, dolphin shows, and underwater tunnel.",
-      "address": "Coastal Development Zone",
+      "description": "พิพิธภัณฑ์สัตว์น้ำที่มีชีวิตมีดอลฟินโชว์และอุโมงค์ใต้น้ำ",
+      "address": "เขตพัฒนาชายฝั่ง",
       "coordinates": {
         "lat": 37.4791,
         "lng": 122.1016
@@ -432,10 +432,10 @@
       "ticketPrice": "150¥",
       "recommendedVisitTime": "3-4 hours",
       "highlights": [
-        "Marine animals",
-        "Dolphin shows",
-        "Underwater tunnel",
-        "Family friendly"
+        "สัตว์น้ำ",
+        "โชว์ดอลฟิน",
+        "อุโมงค์ใต้น้ำ",
+        "เหมาะสำหรับครอบครัว"
       ],
       "tips": "Great for families. Book shows in advance. Combine with beach.",
       "phone": "+86 063 1 0339 5446"
@@ -446,8 +446,8 @@
       "nameEn": "Korean Cultural Block",
       "category": "cultural",
       "image": "/img/ext/22ff5fef6333.webp",
-      "description": "Korean-themed commercial district with authentic Korean food and culture.",
-      "address": "Weihai Economic Zone",
+      "description": "เขตพาณิชยกรรมที่มีเรื่องราวเกี่ยวกับเกาหลี พร้อมอาหารเกาหลีและวัฒนธรรมเกาหลีที่แท้จริง",
+      "address": "เขตเศรษฐกิจไวไฮ",
       "coordinates": {
         "lat": 37.5291,
         "lng": 122.1416
@@ -456,9 +456,9 @@
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Korean food",
-        "Shopping",
-        "Culture",
+        "อาหารเกาหลี",
+        "การช้อปปิ้ง",
+        "วัฒนธรรม",
         "Nightlife"
       ],
       "tips": "Best evening. Authentic Korean food. Popular with locals.",
@@ -775,8 +775,8 @@
       "ticketPrice": "免费",
       "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "公园",
-        "海滨"
+        "สวนสาธารณะ",
+        "ชายหาด"
       ],
       "tips": "休闲好去处。",
       "image": "/img/ext/1e7610994243.webp",
@@ -785,43 +785,43 @@
     {
       "id": "wh-night",
       "name": "威海夜景",
-      "nameEn": "Weihai Night View",
+      "nameEn": "ทัศนียภาพยามค่ำคืนเวยไห่",
       "category": "landmark",
-      "description": "威海湾的夜景。",
-      "address": "威海市环翠区",
+      "description": "ทัศนียภาพยามค่ำคืนของอ่าวเวยไห่",
+      "address": "เขตฮวนซุย เมืองเวยไห่",
       "coordinates": {
         "lat": 37.5,
         "lng": 122.12
       },
-      "openingHours": "夜间",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "ยามค่ำคืน",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "夜景"
+        "ทัศนียภาพยามค่ำคืน"
       ],
-      "tips": "夏季夜间最美。",
+      "tips": "สวยงามที่สุดในช่วงฤดูร้อนตอนกลางคืน",
       "image": "/img/ext/1869dc714dd1.webp",
       "phone": "+86 063 1 2508 9496"
     },
     {
       "id": "wh-happiness",
       "name": "威海幸福门",
-      "nameEn": "Weihai Happiness Gate",
+      "nameEn": "ประตูแห่งความสุขเวยไห่",
       "category": "landmark",
-      "description": "威海的标志性建筑。",
-      "address": "威海市环翠区",
+      "description": "สถานที่สำคัญที่เป็นสัญลักษณ์ของเมืองเวยไห่",
+      "address": "เขตฮวนซุย เมืองเวยไห่",
       "coordinates": {
         "lat": 37.5,
         "lng": 122.12
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "30分钟",
+      "openingHours": "ตลอดวัน",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "30 นาที",
       "highlights": [
-        "幸福门",
-        "海景"
+        "ประตูแห่งความสุข",
+        "ทิวทัศน์ทะเล"
       ],
-      "tips": "威海标志。",
+      "tips": "สัญลักษณ์ของเมืองไว่ไห่",
       "image": "/img/ext/74d5ab2e3515.webp",
       "phone": "+86 063 1 3532 6159"
     },
@@ -830,20 +830,20 @@
       "name": "金沙滩",
       "nameEn": "Golden Sand Beach",
       "category": "beach",
-      "description": "威海最美的海滩之一。",
-      "address": "威海市环翠区",
+      "description": "หนึ่งในชายหาดที่สวยที่สุดในเมืองไว่ไห่",
+      "address": "เขตหยวนซุย เมืองไว่ไห่",
       "coordinates": {
         "lat": 37.5,
         "lng": 122.12
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "半天",
+      "openingHours": "ตลอดวัน",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "ครึ่งวัน",
       "highlights": [
-        "沙滩",
-        "海水"
+        "ชายหาด",
+        "น้ำทะเล"
       ],
-      "tips": "夏季最佳。",
+      "tips": "ดีที่สุดในฤดูร้อน",
       "image": "/img/ext/c42f9fdbfe82.webp",
       "phone": "+86 063 1 7583 5422"
     },
@@ -852,20 +852,20 @@
       "name": "昆嵛山",
       "nameEn": "Kunyu Mountain",
       "category": "nature",
-      "description": "威海最高的山峰。",
+      "description": "ยอดเขาที่สูงที่สุดในเมืองไว่ไห่",
       "address": "威海市文登区",
       "coordinates": {
         "lat": 37.2,
         "lng": 121.95
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "半天",
+      "openingHours": "เปิดให้บริการตลอดวัน",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "ครึ่งวัน",
       "highlights": [
-        "山峰",
-        "森林"
+        "ยอดเขา",
+        "ป่าไม้"
       ],
-      "tips": "登高望远。",
+      "tips": "ปีนขึ้นไปชมวิวทิวทัศน์",
       "image": "/img/ext/35ab9e790c10.webp",
       "phone": "+86 063 1 3518 1501"
     },
@@ -874,20 +874,20 @@
       "name": "鸡鸣岛",
       "nameEn": "Jiming Island",
       "category": "nature",
-      "description": "威海附近的小岛，有灯塔和海鸥。",
+      "description": "เกาะใกล้กับเมืองเว่ยหาย มีประภาคารและนกนางนวล",
       "address": "威海市荣成市",
       "coordinates": {
         "lat": 37.2,
         "lng": 122.52
       },
-      "openingHours": "全天",
+      "openingHours": "เปิดให้บริการตลอดวัน",
       "ticketPrice": "30元",
-      "recommendedVisitTime": "半天",
+      "recommendedVisitTime": "ครึ่งวัน",
       "highlights": [
-        "灯塔",
+        "ประภาคาร",
         "海鸥"
       ],
-      "tips": "看海鸥。",
+      "tips": "ชมนกนางนวล",
       "image": "/img/ext/31617e07359d.webp",
       "phone": "+86 063 1 0768 1118"
     },
@@ -3117,110 +3117,110 @@
     {
       "type": "ambulance",
       "name": "威海急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Weihai Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "威海市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Weihai Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "威海市立医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Weihai Municipal Hospital",
       "phone": "+86 631 528 9120",
-      "address": "Guangzhou",
+      "address": "88 Qingdao Road, Weihai",
       "coordinates": {
         "lat": 37.5091,
         "lng": 122.1216
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "威海市中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Weihai Central Hospital",
       "phone": "+86 631 528 7000",
-      "address": "Guangzhou",
+      "address": "168 Cultural Road, Weihai",
       "coordinates": {
         "lat": 37.5091,
         "lng": 122.1216
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with English staff"
     },
     {
       "type": "tourist-police",
       "name": "威海旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Weihai Tourist Police",
       "phone": "+86 631 520 9110",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "威海消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Weihai Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "美国驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Qingdao",
       "phone": "+86 532 8090 0001",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For US citizens in Weihai region"
     },
     {
       "type": "embassy",
       "name": "英国驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Qingdao",
       "phone": "+86 532 8090 0801",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For UK citizens in Weihai region"
     },
     {
       "type": "embassy",
       "name": "日本驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Qingdao",
       "phone": "+86 532 8090 0001",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For Japanese citizens in Weihai region"
     },
     {
       "type": "embassy",
       "name": "韩国驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Qingdao",
       "phone": "+86 532 8090 0188",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For Korean citizens in Weihai region"
     },
     {
       "type": "embassy",
       "name": "法国驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Qingdao",
       "phone": "+86 532 8090 0900",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For French citizens in Weihai region"
     },
     {
       "type": "embassy",
       "name": "德国驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate General Qingdao",
       "phone": "+86 532 8090 0700",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For German citizens in Weihai region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻青岛总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate General Qingdao",
       "phone": "+86 532 8090 0500",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Qingdao",
+      "notes": "For Australian citizens in Weihai region"
     }
   ],
   "quickFacts": {

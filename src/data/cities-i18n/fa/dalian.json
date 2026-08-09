@@ -9,14 +9,14 @@
     "lng": 121.6147
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "دالیان شهری ساحلی در استان لیائونینگ است. به‌خاطر معماری اروپایی، مناظر ساحلی زیبا و سواحل تمیز مشهور است. لقب \"مروارید شمال\" گرفته و بزرگ‌ترین میدان شهری آسیا را دارا است، از آب و هوای خنک تابستانی برخوردار است.",
+  "description": "Dalian, a coastal city in Liaoning province, is known for its European architecture, beautiful coastal scenery, and vibrant Russian and Japanese influence. The city features clean beaches, modern urban planning, and the famous Xinghai Square.",
   "coverImage": "/img/ext/ee0766a9cf32.webp",
   "highlights": [
-    "میدان شینگهای - بزرگ‌ترین میدان شهری آسیا",
-    "ساحل فریزر - ساحل شنی طلایی",
-    "ساحل ببر - منطقه ساحلی زیبا",
-    "معماری ژاپنی و روسی",
-    "پارک ساحل جینشی"
+    "Xinghai Square - Largest city square in Asia",
+    "Fraser Beach - Golden sand beach",
+    "Tiger Beach - Scenic coastal area",
+    "Japanese and Russian architecture",
+    "Jinshi Beach Park"
   ],
   "climate": {
     "type": "Temperate oceanic climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "22°C (72°F)",
     "avgWinterTemp": "-3°C (27°F)",
-    "tips": "تابستان خنک و دلپذیر، بهترین پناهگاه از گرما. زمستان سرد اما آفتابی. بادهای دریایی قوی، لباس ضدباد آماده کنید. ساحل در تابستان شلوغ است."
+    "tips": "Best in summer for beaches. Spring and autumn are pleasant. Winters are cold but not extreme. Summer is peak tourist season."
   },
   "attractions": [
     {
@@ -82,7 +82,7 @@
     {
       "id": "dalian-3",
       "name": "老虎滩海洋公园",
-      "nameEn": "Laohutan Ocean Park",
+      "nameEn": "پارک اقیانوس لاوهوتان",
       "category": "entertainment",
       "description": "Large ocean park with marine shows, aquariums and amusement rides.",
       "image": "/img/ext/331422cf63e6.webp",
@@ -91,40 +91,40 @@
         "lat": 38.8722,
         "lng": 121.6522
       },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "220¥ (includes all)",
-      "recommendedVisitTime": "4-5 hours",
+      "openingHours": "۰۸:۰۰-۱۷:۰۰",
+      "ticketPrice": "۲۲۰¥ (شامل همه موارد)",
+      "recommendedVisitTime": "۴ تا ۵ ساعت",
       "highlights": [
         "Dolphin shows",
         "Polar bear",
-        "Bird shows",
-        "4D theater"
+        "نمایش پرندگان",
+        "تئاتر چهاربعدی"
       ],
-      "tips": "Arrive early for shows. Buy tickets online. Full day attraction.",
+      "tips": "زودتر برای نمایش‌ها بیایید. بلیط‌ها را آنلاین بخرید. جاذبه‌ای که تمام روز را به خود اختصاص می‌دهد.",
       "phone": "+86 041 1 0465 5833"
     },
     {
       "id": "dalian-4",
       "name": "俄罗斯风情街",
-      "nameEn": "Russian Style Street",
+      "nameEn": "خیابان سبک روسیه (Russian Style Street)",
       "category": "cultural",
-      "description": "Historic street with Russian colonial architecture from early 1900s.",
+      "description": "خیابان تاریخی با معماری استعماری روسی از اوایل دهه ۱۹۰۰.",
       "image": "/img/ext/f5e115604d3c.webp",
-      "address": "Russian Style Street, Zhongshan District",
+      "address": "خیابان با معماری روسی، منطقه ژونگشان",
       "coordinates": {
         "lat": 38.9322,
         "lng": 121.6222
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "باز ۲۴ ساعته",
+      "ticketPrice": "رایگان",
+      "recommendedVisitTime": "۱ تا ۲ ساعت",
       "highlights": [
-        "Russian architecture",
-        "Wooden houses",
-        "Souvenir shops",
-        "Photo opportunities"
+        "معماری روسی",
+        "خانه‌های چوبی",
+        "فروشگاه‌های صنایع دستی به عنوان یادگاری",
+        "فرصت‌های عکسبرداری"
       ],
-      "tips": "Best in morning for photos. Buy Russian products. Combine with nearby Japanese Street.",
+      "tips": "برای عکاسی بهترین زمان صبح است. محصولات روسی بخرید. با خیابان ژاپنی مجاور ترکیب کنید.",
       "phone": "+86 041 1 1062 8045"
     },
     {
@@ -132,9 +132,9 @@
       "name": "日本风情街",
       "nameEn": "Japanese Style Street",
       "category": "cultural",
-      "description": "Historic street with Japanese colonial architecture and traditional buildings.",
+      "description": "خیابان تاریخی با معماری استعماری ژاپنی و ساختمان‌های سنتی.",
       "image": "/img/ext/695b810fea8c.webp",
-      "address": "Huanghe Road, Zhongshan District",
+      "address": "خیابان هوانگهه، منطقه ژونگشان",
       "coordinates": {
         "lat": 38.9322,
         "lng": 121.6222
@@ -1425,28 +1425,28 @@
     {
       "id": "dalian-9",
       "name": "大连烤鱼",
-      "nameEn": "Dalian Grilled Fish",
+      "nameEn": "ماهی کبابی دالیان",
       "type": "local",
-      "cuisine": "Grilled",
+      "cuisine": "کبابی",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "چندین شعبه",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
-      "hours": "10:00-23:00",
-      "description": "Famous for grilled whole fish with special seasonings.",
+      "hours": "۱۰:۰۰-۲۳:۰۰",
+      "description": "معروف به ماهی کامل کبابی با ادویه‌های ویژه",
       "dishHighlights": [
-        "Grilled sea bass",
-        "Grilled squid",
-        "Grilled shrimp"
+        "ماهی کبابی دریایی",
+        "ماهی مرکب کبابی",
+        "میگو کبابی"
       ],
       "tags": [
-        "local",
-        "grilled",
-        "seafood",
-        "popular"
+        "محلی",
+        "کبابی",
+        "غذای دریایی",
+        "محبوب"
       ],
       "imageUrl": "/img/ext/340b7df53ef4.webp",
       "phone": "+86 041 1 8973 8779"
@@ -1454,58 +1454,58 @@
     {
       "id": "dalian-10",
       "name": "鹿鸣春",
-      "nameEn": "Lu Ming Spring",
+      "nameEn": "چشمه لو مینگ",
       "type": "fine",
-      "cuisine": "Dalian",
+      "cuisine": "دالیانی",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "88 Jiefang Road, Xigang District",
+      "address": "خیابان ۸۸ جیفانگ، منطقه شیگانگ",
       "coordinates": {
         "lat": 38.9122,
         "lng": 121.6022
       },
       "phone": "+86 411 8363 8888",
-      "hours": "11:00-14:00, 17:00-21:30",
-      "description": "High-end restaurant serving refined Dalian cuisine.",
+      "hours": "۱۱:۰۰-۱۴:۰۰، ۱۷:۰۰-۲۱:۳۰",
+      "description": "رستوران لوکس با سرو غذاهای ظریف دالیان",
       "dishHighlights": [
-        "Premium seafood",
-        "Local specialties",
-        "Seasonal dishes"
+        "غذاهای دریایی ممتاز",
+        "غذاهای محلی خاص",
+        "غذاهای فصلی"
       ],
       "tags": [
-        "fine-dining",
-        "dalian-cuisine",
-        "luxury",
-        "special-occasion"
+        "غذای خوب",
+        "آشپزی دالیان",
+        "لوکس",
+        "مناسب مناسبت خاص"
       ],
       "imageUrl": "/img/ext/569d5d815e07.webp"
     },
     {
       "id": "dalian-11",
       "name": "群英楼",
-      "nameEn": "Qun Ying Lou",
+      "nameEn": "کوآن یینگ لو",
       "type": "local",
-      "cuisine": "Dalian",
+      "cuisine": "دالیان",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "45 Shandong Road, Zhongshan District",
+      "address": "خیابان شاندانگ ۴۵، محله ژونگشان",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
-      "hours": "10:00-22:00",
-      "description": "Historic restaurant known for traditional Dalian dishes.",
+      "hours": "۱۰:۰۰-۲۲:۰۰",
+      "description": "رستوران تاریخی با سرو غذاهای سنتی دالیان",
       "dishHighlights": [
-        "Sea cucumber",
-        "Abalone",
-        "Fresh seafood",
-        "Local specialties"
+        "خیار دریایی",
+        "آبولون",
+        "غذاهای دریایی تازه",
+        "غذاهای محلی"
       ],
       "tags": [
-        "local",
-        "historic",
-        "dalian-cuisine",
-        "traditional"
+        "محلی",
+        "تاریخی",
+        "آشپزی دالیان",
+        "سنتی"
       ],
       "imageUrl": "/img/ext/bcac1f66059c.webp",
       "phone": "+86 041 1 5467 7986"
@@ -1513,56 +1513,56 @@
     {
       "id": "dalian-12",
       "name": "春和楼",
-      "nameEn": "Chun He Lou",
+      "nameEn": "چون هه لو",
       "type": "local",
-      "cuisine": "Dalian",
+      "cuisine": "دالیان",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "68 Nanjing Road, Zhongshan District",
+      "address": "خیابان نانجینگ ۶۸، محله چونگشان",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "phone": "+86 411 8282 8888",
-      "hours": "10:30-21:30",
-      "description": "Popular for refined local dishes in traditional setting.",
+      "hours": "۱۰:۳۰-۲۱:۳۰",
+      "description": "مشهور برای غذاهای محلی ظریف در محیط سنتی",
       "dishHighlights": [
-        "Steamed fish",
-        "Braised seafood",
-        "Local vegetables"
+        "ماهی بخارپز",
+        "غذای دریایی کباب شده",
+        "سبزیجات محلی"
       ],
       "tags": [
-        "local",
-        "dalian-cuisine",
-        "traditional",
-        "popular"
+        "محلی",
+        "غذای دالیان",
+        "سنتی",
+        "محبوب"
       ],
       "imageUrl": "/img/ext/d4809842ee96.webp"
     },
     {
       "id": "dalian-13",
       "name": "必胜客",
-      "nameEn": "Pizza Hut",
+      "nameEn": "پیتزا هات",
       "type": "chain",
-      "cuisine": "Western",
+      "cuisine": "غربی",
       "avgPrice": 80,
       "rating": 4.2,
-      "address": "Multiple locations",
+      "address": "چندین شعبه",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
-      "hours": "10:00-22:00",
-      "description": "International chain with familiar menu.",
+      "hours": "۱۰:۰۰-۲۲:۰۰",
+      "description": "زنجیره بین‌المللی با منوی آشنا.",
       "dishHighlights": [
-        "Pizza",
-        "Pasta",
-        "Italian food"
+        "پیتزا",
+        "پاستا",
+        "غذای ایتالیایی"
       ],
       "tags": [
-        "chain",
-        "western",
-        "familiar",
+        "زنجیره",
+        "غربی",
+        "آشنا",
         "quick"
       ],
       "imageUrl": "/img/ext/7371aa31c0de.webp",
@@ -3122,90 +3122,90 @@
     {
       "type": "ambulance",
       "name": "大连急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "大连市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "大连医科大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "The First Affiliated Hospital of Dalian Medical University",
       "phone": "+86 411 8363 5963",
-      "address": "Guangzhou",
+      "address": "222 Zhongshan Road, Xigang District",
       "coordinates": {
         "lat": 38.9122,
         "lng": 121.6022
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "大连市中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Central Hospital",
       "phone": "+86 411 8440 8999",
-      "address": "Guangzhou",
+      "address": "42 Xuefu Road, Shahekou District",
       "coordinates": {
         "lat": 38.8922,
         "lng": 121.5922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital"
     },
     {
       "type": "tourist-police",
       "name": "大连旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Tourist Police",
       "phone": "+86 411 8805 8239",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "大连消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "俄罗斯驻大连总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Russia Consulate General Dalian",
       "phone": "+86 411 8280 3828",
-      "address": "Guangzhou",
+      "address": "6 Huayuan Street, Zhongshan District",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
-      "notes": "For Singapore citizens"
+      "notes": "For Russian citizens in Dalian"
     },
     {
       "type": "embassy",
       "name": "日本驻沈阳总领事馆大连办事处",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Dalian Office",
       "phone": "+86 411 8280 3922",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "28 Shanghai Road, Zhongshan District",
+      "notes": "For Japanese citizens in Dalian"
     },
     {
       "type": "embassy",
       "name": "美国驻沈阳总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shenyang",
       "phone": "+86 24 2322 2714",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shenyang",
+      "notes": "For US citizens in Dalian region"
     },
     {
       "type": "embassy",
       "name": "韩国驻沈阳总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Shenyang",
       "phone": "+86 24 2385 3366",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shenyang",
+      "notes": "For Korean citizens in Dalian region"
     }
   ],
   "quickFacts": {

@@ -9,14 +9,14 @@
     "lng": 120.1551
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "杭州是浙江省的省會，以自然美景與歷史文化著稱。西湖被列入聯合國教科文組織世界遺產。",
+  "description": "杭州是浙江省省會，以其自然美景和歷史文化聞名。西湖是聯合國教科文組織世界遺產，大運河古鎮風情令人著迷。杭州因其溫和的氣候、茂密的綠地和優雅的園林而被譽為「人間天堂」。同時，杭州也是阿里巴巴總部所在地，是領先的科技樞紐。",
   "coverImage": "/img/ext/c71341b19c1d.webp",
   "highlights": [
-    "西湖 - 联合國教科文组织遗产",
-    "湘湖 - 新景區",
-    "河坊街 - 歷史购物街",
-    "灵隐寺 - 古老佛教寺",
-    "西溪湿地 - 城市湿地"
+    "West Lake - UNESCO World Heritage",
+    "Xianghu Lake - New scenic area",
+    "Hefang Street - Historic shopping street",
+    "Lingyin Temple - Ancient Buddhist temple",
+    "Xixi Wetland - Largest urban wetland"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "春赏花秋觀叶。夏季热湿多雨。6月梅雨季。环湖步行建议舒适鞋。"
+    "tips": "Best visited in spring for flowers or autumn for golden foliage. Summer is hot and humid with frequent rain. Spring rainy season (Meiyu) in June. Wear comfortable shoes for walking around West Lake."
   },
   "attractions": [
     {
@@ -87,22 +87,22 @@
       "nameEn": "Lingyin Temple",
       "image": "/img/ext/928aa4512683.webp",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on a scenic hill with beautiful gardens.",
-      "address": "Lingyin Temple, Suzhou",
+      "description": "One of the oldest and most famous Buddhist temples in China, dating back to 326 AD, with stunning architecture and rock carvings.",
+      "address": "1 Lingyin Road, Xihu District",
       "coordinates": {
         "lat": 30.2372,
         "lng": 120.1022
       },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "45¥",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "06:30-17:30 (Summer), 07:00-17:30 (Winter)",
+      "ticketPrice": "45¥ (temple), additional 55¥ for Feilai Feng peak",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Temple",
-        "Gardens",
-        "Pagodas",
+        "Feilai Feng peak",
+        "Hall of the Heavenly Kings",
+        "Mahavira Hall",
         "Cave of the 500 Arhats"
       ],
-      "tips": "Climb the hill for views.",
+      "tips": "Arrive early to avoid tour groups. The temple is at the foot of Feilai Feng. Wear modest clothing covering shoulders and knees.",
       "phone": "+86 571 8717 1156"
     },
     {
@@ -469,22 +469,22 @@
       "nameEn": "Canal Square",
       "image": "/img/ext/6aff39cf893f.webp",
       "category": "cultural",
-      "description": "杭州運河南端的一個河濱廣場，設有歷史展覽和購物區。",
-      "address": "運河廣場，拱墅區",
+      "description": "A riverside plaza at the southern end of the Grand Canal in Hangzhou, with historical displays and shopping areas.",
+      "address": "Canal Square, Gongshu District",
       "coordinates": {
         "lat": 30.2852,
         "lng": 120.1422
       },
-      "openingHours": "24小時開放",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "1-2小時",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "水鐘塔",
-        "運河博物館",
-        "夜市",
-        "河濱公園"
+        "Water clock tower",
+        "Canal Museum",
+        "Night market",
+        "Riverside park"
       ],
-      "tips": "傍晚時分最佳，當噴泉表演和燈光秀開始時。運河博物館非常值得一遊且免費。可結合運河遊船行程。",
+      "tips": "Evening is best when fountain show and lighting are on. The Canal Museum is excellent and free. Connect with boat tour of canal.",
       "phone": "+86 057 1 1394 2316"
     },
     {
@@ -565,22 +565,22 @@
       "nameEn": "Chaoshan Mountain",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "category": "natural",
-      "description": "一座風景秀麗的山，以冬季和春季的梅花而聞名，並擁有古老的寺廟和獨特的岩石地貌。",
-      "address": "臨平區，潮山",
+      "description": "A scenic mountain famous for plum blossoms in winter and spring, with ancient temples and unique rock formations.",
+      "address": "Chaoshan,临平区",
       "coordinates": {
         "lat": 30.4522,
         "lng": 120.1522
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2-3小時",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "梅花海",
-        "唐代古梅樹",
-        "潮汕寺",
-        "花海"
+        "Plum blossom sea",
+        "Ancient Tang dynasty plum trees",
+        "Chaoshan Temple",
+        "Sea of flowers"
       ],
-      "tips": "梅花盛開的旺季是二月到三月。寺廟附近的古梅樹最為壯觀，非常適合攝影。",
+      "tips": "Peak plum blossom season is February-March. The ancient plum trees near the temple are most impressive. Great for photography.",
       "phone": "+86 057 1 0521 3461"
     },
     {
@@ -756,18 +756,18 @@
       "name": "断桥",
       "nameEn": "Broken Bridge",
       "category": "landmark",
-      "description": "西湖十景之一的斷橋殘雪，白娘子與許仙相遇之地。",
-      "address": "杭州市西湖區",
+      "description": "西湖十景之断桥残雪，白娘子与许仙相遇地。",
+      "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
         "lng": 120.15
       },
       "openingHours": "全天",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "30分鐘",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
       "highlights": [
-        "斷橋殘雪",
-        "白娘子傳說"
+        "断桥残雪",
+        "白娘子传说"
       ],
       "tips": "冬季雪景最美。",
       "image": "/img/ext/c935cf5be5e4.webp",
@@ -1145,20 +1145,20 @@
       "name": "宝石山",
       "nameEn": "Baoshi Mountain",
       "category": "nature",
-      "description": "西湖邊的小山，山上有保俶塔。",
-      "address": "杭州市西湖區",
+      "description": "西湖边的小山，有保俶塔。",
+      "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
         "lng": 120.15
       },
-      "openingHours": "全天開放",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "1.5小時",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
         "保俶塔",
         "西湖全景"
       ],
-      "tips": "登高遠眺，欣賞西湖美景。",
+      "tips": "登高望远。",
       "image": "/img/ext/6f29cff1af46.webp",
       "phone": "+86 057 1 3076 5429"
     },
@@ -2352,28 +2352,28 @@
     {
       "id": "hangzhou-59",
       "name": "阿婆东坡肉",
-      "nameEn": "阿婆东坡肉 (东坡肉)",
+      "nameEn": "阿婆東坡肉 (東坡肉)",
       "type": "local",
-      "cuisine": "东坡肉",
+      "cuisine": "東坡肉",
       "avgPrice": 34,
       "rating": 4.7,
-      "address": "杭州市市中心区美食街192号",
+      "address": "杭州市市中心區美食街192號",
       "coordinates": {
         "lat": 30.3041,
         "lng": 120.1712
       },
       "phone": "+86 0571 55822948",
       "hours": "06:00-14:00",
-      "description": "杭州本地人推荐的东坡肉店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的東坡肉店，味道正宗的，價格實惠",
       "dishHighlights": [
-        "龙井虾仁",
-        "西湖醋鱼",
-        "片儿川"
+        "龍井蝦仁",
+        "西湖醋魚",
+        "片兒川"
       ],
       "tags": [
         "家常菜",
-        "性价比高",
-        "排队王"
+        "性價比高",
+        "排隊王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
@@ -2381,28 +2381,28 @@
     {
       "id": "hangzhou-61",
       "name": "老字号龙井虾仁",
-      "nameEn": "老字号龙井虾仁 (龙井虾仁)",
+      "nameEn": "老字號龍井蝦仁 (龍井蝦仁)",
       "type": "local",
-      "cuisine": "龙井虾仁",
+      "cuisine": "龍井蝦仁",
       "avgPrice": 128,
       "rating": 4.4,
-      "address": "杭州市老城区美食街157号",
+      "address": "杭州市老城區美食街157號",
       "coordinates": {
         "lat": 30.229,
         "lng": 120.2024
       },
       "phone": "+86 0571 67182555",
       "hours": "09:00-21:00",
-      "description": "杭州本地人推荐的龙井虾仁店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的龍井蝦仁店，味道正宗，價格實惠",
       "dishHighlights": [
-        "龙井虾仁",
-        "知味小笼",
-        "片儿川"
+        "龍井蝦仁",
+        "知味小籠",
+        "片兒川"
       ],
       "tags": [
-        "隐藏美食",
-        "排队王",
-        "本地人爱去"
+        "隱藏美食",
+        "排隊王",
+        "本地人愛去"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/0cff8ae9aa03.webp"
@@ -2410,28 +2410,28 @@
     {
       "id": "hangzhou-63",
       "name": "老街龙井虾仁",
-      "nameEn": "老街龙井虾仁 (龙井虾仁)",
+      "nameEn": "老街龍井蝦仁 (龍井蝦仁)",
       "type": "local",
-      "cuisine": "龙井虾仁",
+      "cuisine": "龍井蝦仁",
       "avgPrice": 114,
       "rating": 4.3,
-      "address": "杭州市市中心区美食街69号",
+      "address": "杭州市市中心區美食街69號",
       "coordinates": {
         "lat": 30.2809,
         "lng": 120.1413
       },
       "phone": "+86 0571 40347365",
       "hours": "06:00-14:00",
-      "description": "杭州本地人推荐的龙井虾仁店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的龍井蝦仁店，味道正宗，價格實惠",
       "dishHighlights": [
-        "知味小笼",
-        "东坡肉",
-        "片儿川"
+        "知味小籠",
+        "東坡肉",
+        "片兒川"
       ],
       "tags": [
         "家常菜",
-        "本地人爱去",
-        "社区老店"
+        "本地人愛去",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/bb8230fbc1f5.webp"
@@ -2439,28 +2439,28 @@
     {
       "id": "hangzhou-65",
       "name": "街边东坡肉",
-      "nameEn": "街边东坡肉 (东坡肉)",
+      "nameEn": "街邊東坡肉 (東坡肉)",
       "type": "local",
-      "cuisine": "东坡肉",
+      "cuisine": "東坡肉",
       "avgPrice": 122,
       "rating": 4.8,
-      "address": "杭州市老城区美食街49号",
+      "address": "杭州市老城區美食街49號",
       "coordinates": {
         "lat": 30.2318,
         "lng": 120.1626
       },
       "phone": "+86 0571 50265888",
       "hours": "17:00-02:00",
-      "description": "杭州本地人推荐的东坡肉店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的東坡肉店，風味正宗，價格實惠",
       "dishHighlights": [
-        "东坡肉",
-        "龙井虾仁",
-        "片儿川"
+        "東坡肉",
+        "龍井蝦仁",
+        "片兒川"
       ],
       "tags": [
-        "排队王",
-        "老字号",
-        "本地人爱去"
+        "排隊王",
+        "老字號",
+        "本地人愛去"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/abe41a7612d1.webp"
@@ -2468,26 +2468,26 @@
     {
       "id": "hangzhou-67",
       "name": "老街东坡肉",
-      "nameEn": "老街东坡肉 (东坡肉)",
+      "nameEn": "老街東坡肉 (東坡肉)",
       "type": "cafe",
-      "cuisine": "东坡肉",
+      "cuisine": "東坡肉",
       "avgPrice": 77,
       "rating": 4.1,
-      "address": "杭州市老城区美食街188号",
+      "address": "杭州市老城區美食街188號",
       "coordinates": {
         "lat": 30.2723,
         "lng": 120.1721
       },
       "phone": "+86 0571 82321154",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "杭州本地人推荐的东坡肉店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的東坡肉店，味道正宗的，價格實惠",
       "dishHighlights": [
-        "西湖醋鱼",
-        "片儿川",
-        "知味小笼"
+        "西湖醋魚",
+        "片兒川",
+        "知味小籠"
       ],
       "tags": [
-        "安静",
+        "安靜",
         "下午茶",
         "咖啡"
       ],
@@ -2497,28 +2497,28 @@
     {
       "id": "hangzhou-69",
       "name": "老字号东坡肉",
-      "nameEn": "老字号东坡肉 (东坡肉)",
+      "nameEn": "老字號東坡肉 (東坡肉)",
       "type": "local",
-      "cuisine": "东坡肉",
+      "cuisine": "東坡肉",
       "avgPrice": 79,
       "rating": 4.5,
-      "address": "杭州市新城区美食街122号",
+      "address": "杭州市新城區美食街122號",
       "coordinates": {
         "lat": 30.3162,
         "lng": 120.1233
       },
       "phone": "+86 0571 28728659",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "杭州本地人推荐的东坡肉店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的東坡肉店，味道正宗的，價格實惠",
       "dishHighlights": [
-        "西湖醋鱼",
-        "东坡肉",
-        "知味小笼"
+        "西湖醋魚",
+        "東坡肉",
+        "知味小籠"
       ],
       "tags": [
-        "老字号",
-        "本地人爱去",
-        "排队王"
+        "老字號",
+        "本地人愛去",
+        "排隊王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e2987486c5c3.webp"
@@ -2526,28 +2526,28 @@
     {
       "id": "hangzhou-71",
       "name": "传统知味小笼",
-      "nameEn": "传统知味小笼 (知味小笼)",
+      "nameEn": "傳統知味小籠 (知味小籠)",
       "type": "local",
-      "cuisine": "知味小笼",
+      "cuisine": "知味小籠",
       "avgPrice": 128,
       "rating": 4.4,
-      "address": "杭州市市中心区美食街81号",
+      "address": "杭州市市中心區美食街81號",
       "coordinates": {
         "lat": 30.3026,
         "lng": 120.1887
       },
       "phone": "+86 0571 85235970",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "杭州本地人推荐的知味小笼店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的知味小籠店，味道正宗，價格實惠",
       "dishHighlights": [
-        "知味小笼",
-        "东坡肉",
-        "龙井虾仁"
+        "知味小籠",
+        "東坡肉",
+        "龍井蝦仁"
       ],
       "tags": [
-        "性价比高",
+        "性價比高",
         "家常菜",
-        "社区老店"
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
@@ -2555,28 +2555,28 @@
     {
       "id": "hangzhou-73",
       "name": "正宗西湖醋鱼",
-      "nameEn": "正宗西湖醋鱼 (西湖醋鱼)",
+      "nameEn": "正宗西湖醋魚 (西湖醋魚)",
       "type": "street",
-      "cuisine": "西湖醋鱼",
+      "cuisine": "西湖醋魚",
       "avgPrice": 44,
       "rating": 4.3,
-      "address": "杭州市老城区美食街98号",
+      "address": "杭州市老城區美食街98號",
       "coordinates": {
         "lat": 30.259,
         "lng": 120.1227
       },
       "phone": "+86 0571 83519668",
       "hours": "09:00-21:00",
-      "description": "杭州本地人推荐的西湖醋鱼店，味道正宗，价格实惠",
+      "description": "杭州本地人推薦的西湖醋魚店，價格實惠",
       "dishHighlights": [
-        "知味小笼",
-        "西湖醋鱼",
-        "龙井虾仁"
+        "知味小籠",
+        "西湖醋魚",
+        "龍井蝦仁"
       ],
       "tags": [
-        "网红打卡",
+        "網紅打卡",
         "夜市",
-        "路边摊"
+        "路邊攤"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7ec3fc78f978.webp"
@@ -2584,9 +2584,9 @@
     {
       "id": "hangzhou-75",
       "name": "老杭州片儿川",
-      "nameEn": "老杭州片儿川 (片儿川)",
+      "nameEn": "老杭州片兒川 (片兒川)",
       "type": "local",
-      "cuisine": "片儿川",
+      "cuisine": "片兒川",
       "avgPrice": 60,
       "rating": 4.9,
       "address": "杭州市市中心区美食街134号",
@@ -3049,43 +3049,43 @@
     {
       "category": "tea",
       "title": "Tea Culture",
-      "content": "Hangzhou is famous for Longjing (Dragon Well) tea. Visit a tea house for authentic tea ceremony. Spring tea picking (April) is a special experience.",
+      "content": "杭州以龍井茶聞名。請造訪茶館體驗正統茶道。春季採茶（四月）是特別的體驗。",
       "importance": "high"
     },
     {
       "category": "dining",
       "title": "Dining Etiquette",
-      "content": "West Lake vinegar fish and Dongpo pork are local specialties. Tipping is not expected. Restaurant service may be casual.",
+      "content": "西湖醋魚和東坡肉是當地特色菜。不需要給小費。餐廳服務可能較為隨意。",
       "importance": "high"
     },
     {
       "category": "dressing",
       "title": "Clothing",
-      "content": "Comfortable walking shoes essential for West Lake. Dress modestly for temple visits. Light layers for variable weather.",
+      "content": "遊覽西湖建議穿舒適的步行鞋。參觀寺廟時穿著端莊。建議攜帶輕薄衣物以應對多變的天氣。",
       "importance": "medium"
     },
     {
       "category": "timing",
       "title": "Best Times",
-      "content": "Visit West Lake early morning or late evening to avoid crowds. Weekdays are less crowded than weekends. Spring (April-May) for flowers, autumn for foliage.",
+      "content": "建議清晨或傍晚遊覽西湖以避開人潮。平日比週末人少。春季（四月至五月）賞花，秋季賞葉。",
       "importance": "medium"
     },
     {
       "category": "silk-culture",
       "title": "Silk Heritage",
-      "content": "Hangzhou has been China's silk capital for over 2,000 years. Visit the China Silk Museum or silk factories for authentic products. '杭州丝绸' is a premium brand recognized worldwide.",
+      "content": "杭州兩千多年來一直是中國的絲綢之都。參觀中國絲綢博物館或絲綢工廠購買正品。「杭州絲綢」是享譽全球的優質品牌。",
       "importance": "medium"
     },
     {
       "category": "lotus-culture",
       "title": "Lotus and Water Lily Culture",
-      "content": "Lotus flowers are symbolic in Hangzhou's culture, representing purity and elegance. West Lake's lotus gardens bloom in summer (June-August). The '曲院风荷' view is one of the Ten Views of West Lake.",
+      "content": "荷花在杭州文化中象徵純潔與優雅。西湖的荷花園在夏季（六月至八月）綻放。「曲院風荷」是西湖十景之一。",
       "importance": "medium"
     },
     {
       "category": "imperial-history",
       "title": "Imperial Heritage",
-      "content": "Hangzhou served as capital during Southern Song Dynasty (1127-1279). The city's layout, gardens, and cuisine reflect this imperial period. Emperor Gaozong chose Hangzhou for its 'paradise' scenery.",
+      "content": "杭州在南宋時期（1127-1279）曾為首都。城市的布局、園林和料理都反映了這段皇室時期。宋高宗因其「天堂」般的風景而選擇杭州定都。",
       "importance": "medium"
     },
     {
@@ -3141,110 +3141,110 @@
     {
       "type": "ambulance",
       "name": "杭州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "English interpretation available at major hospitals"
     },
     {
       "type": "police",
       "name": "杭州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at West Lake area"
     },
     {
       "type": "hospital",
       "name": "浙江大学医学院附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Zhejiang University",
       "phone": "+86 571 8723 6000",
-      "address": "Guangzhou",
+      "address": "79 Qingchun Road",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff, accepts international insurance"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai (nearest US consular services for Hangzhou)",
+      "notes": "For US citizens in Hangzhou region"
     },
     {
       "type": "fire",
       "name": "杭州市消防救援支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "For fire emergencies and rescue operations"
     },
     {
       "type": "tourist-info",
       "name": "杭州旅游咨询服务中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Information Center",
       "phone": "0571-96123",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Scenic Area",
+      "notes": "Tourist complaints and information service"
     },
     {
       "type": "police-special",
       "name": "杭州旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Police",
       "phone": "+86 571 8502 6110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Police Station, Xihu District",
+      "notes": "24-hour tourist police service"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Shanghai",
       "phone": "+86 21 6179 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Shanghai",
       "phone": "+86 21 5292 8000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Australian citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For German citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Shanghai",
       "phone": "+86 21 6218 0021",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Hangzhou region"
     },
     {
       "type": "hospital",
       "name": "邵逸夫医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Sir Run Run Shaw Hospital",
       "phone": "+86 571 8609 0088",
-      "address": "Guangzhou",
+      "address": "3 East Qingchun Road",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Quality international medical services"
     },
     {
       "type": "hotel-booking",
       "name": "杭州旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourism Complaint Hotline",
       "phone": "0571-12345",
-      "notes": "For Singapore citizens"
+      "notes": "For complaints about tourism services"
     }
   ],
   "quickFacts": {

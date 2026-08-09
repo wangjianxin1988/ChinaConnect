@@ -9,14 +9,14 @@
     "lng": 119.2965
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "福州是福建省的省会，是一座拥有2200年历史的历史文化名城。",
+  "description": "福州是福建省的省会城市，拥有2200年的历史。这座城市以其传统的榕树、福州风格的建筑以及作为通往台湾的门户而闻名。这里有文化景点如三坊七巷和佛教圣地普陀山。",
   "coverImage": "/img/ext/eb9c77e8f6de.webp",
   "highlights": [
-    "三坊七巷 - 历史街区",
-    "鼓山 - 风景寺庙区",
-    "福州国家森林公园",
-    "温泉文化 - 当地传统",
-    "三山两塔 - 城市标志"
+    "Three Lanes and Seven Alleys - Historic districts",
+    "Mount Putuo - Buddhist sacred mountain",
+    "Fuzhou National Forest Park - Urban nature",
+    "Drum Mountain - Scenic area with temples",
+    "Hot spring culture - Local tradition"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "12C (54F)",
-    "tips": "春秋最佳。夏季热湿有台风。冬季温和多雨。温泉全年盛行。"
+    "tips": "Best in spring and autumn. Summers hot and humid with typhoons. Winter mild but rainy. Hot springs popular year-round."
   },
   "attractions": [
     {
@@ -877,7 +877,7 @@
       "name": "茶亭公园",
       "nameEn": "Chating Park",
       "category": "park",
-      "description": "福州市中心的公园，展示茶文化。",
+      "description": "福州市中心的公园，有茶文化展示。",
       "address": "福州市台江区",
       "coordinates": {
         "lat": 26.05,
@@ -1696,30 +1696,30 @@
     {
       "id": "fuzhou-18",
       "name": "锅边糊",
-      "nameEn": "Guobian Hu",
+      "nameEn": "锅边糊",
       "type": "local",
-      "cuisine": "Fuzhou Snacks",
+      "cuisine": "福州小吃",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Night markets",
+      "address": "夜市",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "17:00-02:00",
-      "description": "Famous Fuzhou night snack - rice batter around pot edge.",
+      "description": "著名的福州夜宵——锅边米糊",
       "dishHighlights": [
-        "Rice batter",
-        "Seafood topping",
-        "Night market",
-        "Must-try"
+        "米浆",
+        "海鲜配料",
+        "夜市",
+        "必尝"
       ],
       "tags": [
-        "local",
-        "famous",
-        "street-food",
-        "night",
-        "must-try"
+        "本地",
+        "著名",
+        "街头美食",
+        "夜宵",
+        "必尝"
       ],
       "imageUrl": "/img/ext/42709ea23cc6.webp",
       "phone": "+86 059 1 0694 1958"
@@ -1727,29 +1727,29 @@
     {
       "id": "fuzhou-19",
       "name": "春伦茉莉花茶",
-      "nameEn": "Chunlun Jasmine Tea House",
+      "nameEn": "春伦茉莉花茶馆",
       "type": "cafe",
-      "cuisine": "Tea House",
+      "cuisine": "茶馆",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Three Lanes area",
+      "address": "三坊七巷区域",
       "coordinates": {
         "lat": 26.0753,
         "lng": 119.2965
       },
       "hours": "09:00-22:00",
-      "description": "Famous tea house serving authentic Fuzhou jasmine tea.",
+      "description": "著名茶馆，提供正宗的福州茉莉花茶",
       "dishHighlights": [
-        "Jasmine tea",
-        "Tea tasting",
-        "Traditional atmosphere",
-        "Teapot ceremony"
+        "茉莉花茶",
+        "品茶",
+        "传统氛围",
+        "茶壶仪式"
       ],
       "tags": [
-        "cafe",
-        "tea",
-        "traditional",
-        "cultural"
+        "咖啡厅",
+        "茶",
+        "传统",
+        "文化"
       ],
       "imageUrl": "/img/ext/92861b2f3e96.webp",
       "phone": "+86 059 1 1021 3883"
@@ -1757,29 +1757,29 @@
     {
       "id": "fuzhou-20",
       "name": "广东酒家",
-      "nameEn": "Guangdong Restaurant",
+      "nameEn": "粤菜馆",
       "type": "local",
-      "cuisine": "Cantonese",
+      "cuisine": "粤菜",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "Jin'an District",
+      "address": "晋安区",
       "coordinates": {
         "lat": 26.0953,
         "lng": 119.2965
       },
       "hours": "10:30-21:30",
-      "description": "Cantonese restaurant with dim sum and seafood.",
+      "description": "粤式餐厅，提供点心和海鲜",
       "dishHighlights": [
-        "Dim sum",
-        "Steamed fish",
-        "Roast duck",
-        "Fresh seafood"
+        "点心",
+        "清蒸鱼",
+        "烤鸭",
+        "新鲜海鲜"
       ],
       "tags": [
-        "local",
-        "cantonese",
-        "dim-sum",
-        "seafood"
+        "本地",
+        "粤菜",
+        "点心",
+        "海鲜"
       ],
       "imageUrl": "/img/ext/2d142cbbae4e.webp",
       "phone": "+86 059 1 2546 2921"
@@ -3035,13 +3035,13 @@
     {
       "category": "food",
       "title": "Fujian Cuisine",
-      "content": "Fujian cuisine is one of China's Eight Great Cuisines, known for seafood, soups, and delicate flavors. Signature dishes include Buddha Jumps Over Wall, oyster omelette, and fish balls.",
+      "content": "福建菜是中国八大菜系之一，以海鲜、汤品和精致的口味著称。招牌菜包括佛跳墙、蚵仔煎和鱼丸。",
       "importance": "high"
     },
     {
       "category": "tea",
       "title": "Jasmine Tea Culture",
-      "content": "Fuzhou is famous for jasmine tea, made by scenting green tea with fresh jasmine flowers. Tea houses are central to local culture, and visiting one is a must-do experience.",
+      "content": "福州以茉莉花茶闻名，这种茶是通过用新鲜的茉莉花为绿茶增添香气制成的。茶馆是当地文化的核心，参观茶馆是必不可少的体验。",
       "importance": "high"
     },
     {
@@ -3127,75 +3127,75 @@
     {
       "type": "ambulance",
       "name": "福州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English"
     },
     {
       "type": "police",
       "name": "福州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "type": "hospital",
       "name": "福建医科大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fujian Medical University Union Hospital",
       "phone": "+86 591 8798 3911",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "88 Jiebin Road, Jin'an District",
+      "notes": "English-speaking staff"
     },
     {
       "type": "hospital",
       "name": "福建省立医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fujian Provincial Hospital",
       "phone": "+86 591 8755 1632",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "68 Dongda Road, Jin'an District",
+      "notes": "Another major hospital"
     },
     {
       "type": "fire",
       "name": "福州消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Fire Department",
       "phone": "119"
     },
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "Serves Fuzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "For Japanese citizens"
     },
     {
       "type": "embassy",
       "name": "韩国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "For Korean citizens"
     },
     {
       "type": "hospital",
       "name": "福州市第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou First Hospital",
       "phone": "+86 591 8321 3920",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "79 Dagpu Road, Gulou District",
+      "notes": "24-hour emergency"
     },
     {
       "type": "pharmacy",
       "name": "福州大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Pharmacy Chain",
       "phone": "+86 591 8333 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Multiple locations",
+      "notes": "24-hour pharmacy available"
     }
   ],
   "quickFacts": {

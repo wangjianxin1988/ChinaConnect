@@ -9,14 +9,14 @@
     "lng": 119.2965
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "福州は福建省の省都で、2200年の歴史を持つ歴史的な都市です。伝統的なガジュマルの木、福州風の建築、台湾への玄関口として知られています。三坊七巷や仏教の聖地普陀山などの文化的な場所があります。",
+  "description": "Fuzhou, capital of Fujian Province, is a historic city with 2200 years of history. Known for its traditional榕树 (banyan) trees, Fuzhou-style architecture, and as gateway to Taiwan. Features cultural sites like 三坊七巷 (Three Lanes and Seven Alleys) and Buddhist圣地 (sacred) Mount Putuo.",
   "coverImage": "/img/ext/eb9c77e8f6de.webp",
   "highlights": [
-    "三坊七巷 - 歴史的地区",
-    "鼓山 - 寺院のある景勝地",
-    "福州国家森林公園",
-    "温泉文化 - 地元の伝統",
-    "三山両塔 - 市のシンボル"
+    "Three Lanes and Seven Alleys - Historic districts",
+    "Mount Putuo - Buddhist sacred mountain",
+    "Fuzhou National Forest Park - Urban nature",
+    "Drum Mountain - Scenic area with temples",
+    "Hot spring culture - Local tradition"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "12C (54F)",
-    "tips": "春と秋が最適。 夏は蒸し暑く台風。 冬は穏やかで雨が多い。 温泉は一年中人気。"
+    "tips": "Best in spring and autumn. Summers hot and humid with typhoons. Winter mild but rainy. Hot springs popular year-round."
   },
   "attractions": [
     {
@@ -647,9 +647,9 @@
       "ticketPrice": "免费",
       "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "古建筑",
-        "名人故居",
-        "小吃"
+        "古建築",
+        "名人家屋",
+        "軽食"
       ],
       "tips": "了解福州历史。",
       "image": "/img/ext/309f30e43563.webp",
@@ -660,20 +660,20 @@
       "name": "于山",
       "nameEn": "Yushan",
       "category": "nature",
-      "description": "福州三山之一，有白塔和戚公祠。",
+      "description": "福州三山の一つで、白塔と戚公祠があります。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "openingHours": "終日",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
         "白塔",
         "戚公祠"
       ],
-      "tips": "了解福州历史。",
+      "tips": "福州の歴史を学びましょう。",
       "image": "/img/ext/c981cfc25201.webp",
       "phone": "+86 059 1 4698 3576"
     },
@@ -682,20 +682,20 @@
       "name": "乌山",
       "nameEn": "Wushan",
       "category": "nature",
-      "description": "福州三山之一，有乌塔和摩崖石刻。",
+      "description": "福州三山の一つで、烏塔と摩崖石刻があります。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.08,
         "lng": 119.3
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1.5小时",
+      "openingHours": "終日",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "乌塔",
+        "烏塔",
         "摩崖石刻"
       ],
-      "tips": "了解福州文化。",
+      "tips": "福州の文化を理解する。",
       "image": "/img/ext/964003d607ed.webp",
       "phone": "+86 059 1 2515 7393"
     },
@@ -704,26 +704,26 @@
       "name": "屏山",
       "nameEn": "Pingshan",
       "category": "nature",
-      "description": "福州三山之一，有镇海楼。",
+      "description": "福州三山の一つで、鎮海楼がある。",
       "address": "福州市鼓楼区",
       "coordinates": {
         "lat": 26.1,
         "lng": 119.3
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "openingHours": "終日",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "镇海楼"
+        "鎮海楼"
       ],
-      "tips": "登高望远。",
+      "tips": "高いところから景色を眺める。",
       "image": "/img/ext/6f510d67b9cb.webp",
       "phone": "+86 059 1 7511 8181"
     },
     {
       "id": "fujian-museum",
       "name": "福建博物院",
-      "nameEn": "Fujian Provincial Museum",
+      "nameEn": "福建省博物館",
       "category": "museum",
       "description": "展示福建历史文化的博物馆。",
       "address": "福州市鼓楼区",
@@ -3127,75 +3127,75 @@
     {
       "type": "ambulance",
       "name": "福州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English"
     },
     {
       "type": "police",
       "name": "福州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "type": "hospital",
       "name": "福建医科大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fujian Medical University Union Hospital",
       "phone": "+86 591 8798 3911",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "88 Jiebin Road, Jin'an District",
+      "notes": "English-speaking staff"
     },
     {
       "type": "hospital",
       "name": "福建省立医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fujian Provincial Hospital",
       "phone": "+86 591 8755 1632",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "68 Dongda Road, Jin'an District",
+      "notes": "Another major hospital"
     },
     {
       "type": "fire",
       "name": "福州消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Fire Department",
       "phone": "119"
     },
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "Serves Fuzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "For Japanese citizens"
     },
     {
       "type": "embassy",
       "name": "韩国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Guangzhou",
       "phone": "+86 20 3814 0100",
-      "notes": "For Singapore citizens"
+      "notes": "For Korean citizens"
     },
     {
       "type": "hospital",
       "name": "福州市第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou First Hospital",
       "phone": "+86 591 8321 3920",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "79 Dagpu Road, Gulou District",
+      "notes": "24-hour emergency"
     },
     {
       "type": "pharmacy",
       "name": "福州大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fuzhou Pharmacy Chain",
       "phone": "+86 591 8333 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Multiple locations",
+      "notes": "24-hour pharmacy available"
     }
   ],
   "quickFacts": {

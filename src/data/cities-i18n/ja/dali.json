@@ -9,14 +9,14 @@
     "lng": 100.2676
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "大理は雲南省の絵のように美しい町で、壮大な蒼山の背景とクリスタルクリアな洱海が横にあります。白族の本拠地で1,000年の歴史があります。石畳の通り、伝統的な白族の建築、活気ある地域文化で知られています。自転車、ハイキング、文化的な没入にぴったりの落ち着いた雰囲気です。",
+  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "洱海 - 風光明媚なサイクリングと見どころ",
-    "大理三塔 - 仏教寺院",
-    "大理古城 - 白族の伝統建築",
-    "喜洲 - 地元白族文化",
-    "双廊 - 湖畔の写真撮影"
+    "Erhai Lake - Scenic cycling and views",
+    "Three Pagodas of Dali - Buddhist temples",
+    "Dali Old Town - Traditional Bai architecture",
+    "Xizhou Market - Local Bai culture",
+    "Shuanglang - Lakeside photography"
   ],
   "climate": {
     "type": "Subtropical highland",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "春と秋が最適。 夏は涼しいですが雨が多い。 冬は乾燥して暖かい。 紫外線が強いので日焼け止めを。"
+    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
   },
   "restaurants": [
     {
@@ -994,27 +994,27 @@
       "name": "喜洲甜品店",
       "nameEn": "Xizhou Sweet Shop",
       "type": "local",
-      "cuisine": "Bai Desserts",
+      "cuisine": "バイ族デザート",
       "avgPrice": 20,
       "rating": 4.6,
-      "address": "Xizhou Ancient Town",
+      "address": "喜洲古鎮",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "09:00-18:00",
-      "description": "Local sweet shop famous for rice-based desserts, sweet rice balls, and traditional Bai snacks.",
+      "description": "米ベースのデザート、湯円、バイ族の伝統的な軽市場で有名な地元のお菓子屋",
       "dishHighlights": [
-        "Sweet rice balls",
-        "Rose glutinous rice",
-        "Bai Style donuts",
-        "Sweet soup"
+        "甘い湯円",
+        "バラ蒸し糯米",
+        "バイ族風ドーナツ",
+        "甘い汁"
       ],
       "tags": [
-        "local",
-        "dessert",
-        "sweet",
-        "traditional"
+        "地元",
+        "デザート",
+        "甘い",
+        "伝統的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1024,29 +1024,29 @@
     {
       "id": "dali-32",
       "name": "下关沱茶馆",
-      "nameEn": "Xiaguan Tuo Tea House",
+      "nameEn": "下関プー茶館",
       "type": "local",
-      "cuisine": "Tea House",
+      "cuisine": "茶館",
       "avgPrice": 60,
       "rating": 4.7,
-      "address": "Dali Old Town,复兴路",
+      "address": "大理古城復興路",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "09:00-21:00",
-      "description": "Traditional tea house specializing in Yunnan Pu'er tea with tea tasting and purchase options.",
+      "description": "雲南プーアル茶に特化した伝統的な茶屋で、茶の試飲と購入ができます。",
       "dishHighlights": [
-        "Aged Pu'er",
-        "Raw Pu'er",
-        "Ripe Pu'er",
-        "Tea ceremony"
+        "老化プーアル",
+        "生プーアル",
+        "熟プーアル",
+        "茶道"
       ],
       "tags": [
-        "local",
-        "tea",
-        "cultural",
-        "traditional"
+        "ローカル",
+        "茶",
+        "文化",
+        "伝統的"
       ],
       "star": 0,
       "diamond": 0,
@@ -1058,7 +1058,7 @@
       "name": "街边饵丝",
       "nameEn": "街边饵丝 (饵丝)",
       "type": "local",
-      "cuisine": "饵丝",
+      "cuisine": "餌絲",
       "avgPrice": 150,
       "rating": 4.6,
       "address": "大理市新城区美食街86号",
@@ -1070,14 +1070,14 @@
       "hours": "10:00-22:00",
       "description": "大理本地人推荐的饵丝店，味道正宗，价格实惠",
       "dishHighlights": [
-        "饵丝",
-        "乳扇",
+        "餌糸",
+        "乳酸扇",
         "白族三道茶"
       ],
       "tags": [
-        "排队王",
-        "家常菜",
-        "社区老店"
+        "並びの王様",
+        "家庭料理",
+        "町の古参店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/219c69c1495d.webp"
@@ -1085,9 +1085,9 @@
     {
       "id": "dali-35",
       "name": "大理味砂锅鱼",
-      "nameEn": "大理味砂锅鱼 (砂锅鱼)",
+      "nameEn": "大理味しゃり鍋魚（しゃり鍋魚）",
       "type": "street",
-      "cuisine": "砂锅鱼",
+      "cuisine": "しゃり鍋魚",
       "avgPrice": 25,
       "rating": 4.9,
       "address": "大理市市中心区美食街58号",
@@ -1097,11 +1097,11 @@
       },
       "phone": "+86 010 21807513",
       "hours": "17:00-02:00",
-      "description": "大理本地人推荐的砂锅鱼店，味道正宗，价格实惠",
+      "description": "大理の地元人がおすすめするしゃり鍋魚店。味は本格的で価格は手頃",
       "dishHighlights": [
-        "砂锅鱼",
-        "乳扇",
-        "酸辣鱼"
+        "しゃり鍋魚",
+        "乳酸扇",
+        "酸辣魚"
       ],
       "tags": [
         "夜市",
@@ -2195,118 +2195,118 @@
     {
       "type": "ambulance",
       "name": "大理急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Dali People's Hospital has English interpreters"
     },
     {
       "type": "police",
       "name": "大理市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police in Dali Old Town"
     },
     {
       "type": "hospital",
       "name": "大理市第一人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali First People's Hospital",
       "phone": "+86 872 212 5465",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Main hospital in Dali"
     },
     {
       "type": "embassy",
       "name": "美国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Kunming",
       "phone": "+86 871 6364 1057",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming (nearest US consular services)",
+      "notes": "For US citizens in Dali region"
     },
     {
       "type": "hospital",
       "name": "大理州人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Prefecture People's Hospital",
       "phone": "+86 872 212 5075",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with emergency services"
     },
     {
       "type": "tourist-police",
       "name": "大理旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Tourist Police",
       "phone": "+86 872 267 4110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police station in Dali Old Town"
     },
     {
       "type": "fire",
       "name": "大理消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate Kunming",
       "phone": "+86 871 6564 6689",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For UK citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate Kunming",
       "phone": "+86 871 6856 2100",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Australian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "日本驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Kunming",
       "phone": "+86 871 6314 8288",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Japanese citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "法国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate Kunming",
       "phone": "+86 871 6331 5889",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For French citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "德国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate Kunming",
       "phone": "+86 871 6312 5555",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For German citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canada Consulate Guangzhou",
       "phone": "+86 20 3888 0400",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Canadian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "韩国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate Kunming",
       "phone": "+86 871 6566 2115",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Korean citizens in Dali region"
     }
   ],
   "quickFacts": {
@@ -2321,24 +2321,24 @@
     {
       "id": "erhai-lake",
       "name": "洱海",
-      "nameEn": "Hulun Lake",
+      "nameEn": "Erhai Lake",
       "category": "natural",
-      "description": "中国第五大淡水湖，面积2339平方公里，蒙古语意为海一样的湖。",
-      "address": "呼伦贝尔市新巴尔虎右旗",
+      "description": "A beautiful highland lake often called 'Sea of Clouds' offering scenic cycling paths, traditional fishing villages, and stunning mountain backdrops.",
+      "address": "Erhai Lake, Dali Bai Autonomous Prefecture",
       "coordinates": {
         "lat": 25.7522,
         "lng": 100.1872
       },
-      "openingHours": "全天",
-      "ticketPrice": "30元",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some scenic spots may charge)",
+      "recommendedVisitTime": "Half to full day",
       "highlights": [
-        "湖光山色",
-        "候鸟",
-        "日落",
+        "Cycling path around lake",
+        "Fisherman's village",
+        "Shuanglang village",
         "Wutai Lake view"
       ],
-      "tips": "夏季最佳，可品尝全鱼宴。",
+      "tips": "Rent a bicycle (40-80¥/day) to circle the lake. Start early to avoid tour buses. Best light for photos in early morning.",
       "image": "/img/ext/6faaa02aad08.webp",
       "phone": "+86 087 2 8699 3091"
     },
@@ -2790,8 +2790,8 @@
       "highlights": [
         "Sunset views",
         "Local atmosphere",
-        "Lake scenery",
-        "Student cafes"
+        "湖の景色",
+        "学生カフェ"
       ],
       "tips": "Best at sunset. Nearby small restaurants and cafes. Popular with local students.",
       "image": "/img/ext/a2786969763d.webp",
@@ -2802,22 +2802,22 @@
       "name": "鹿卧山",
       "nameEn": "Luwo Mountain",
       "category": "natural",
-      "description": "Hillside viewpoint between Dali Old Town and Erhai Lake, offering scenic views of both.",
-      "address": "Between Dali Old Town and Erhai",
+      "description": "大理古城と洱海の間にある丘の展望地で、両方の美しい景色を楽しむことができます。",
+      "address": "大理古城と洱海の間に位置",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1772
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1 hour",
+      "openingHours": "24時間営業",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Dual views",
-        "Photography",
-        "Popular spot",
-        "Sunset views"
+        "二重の景色",
+        "写真撮影",
+        "人気のスポット",
+        "夕日の景色"
       ],
-      "tips": "Best at sunset for photos with both town and lake. Can be crowded on weekends.",
+      "tips": "町と湖の両方と一緒に写真を撮るには夕暮れ時が最適です。週末は混み合うことがあります。",
       "image": "/img/ext/c118e6957af4.webp",
       "phone": "+86 087 2 2823 0848"
     },
@@ -2826,7 +2826,7 @@
       "name": "乌龙坝草甸",
       "nameEn": "Wulongba Grassland",
       "category": "natural",
-      "description": "Highland grassland area with windmills, offering scenic views and photography opportunities.",
+      "description": "風車のある高原の草原地域で、素晴らしい景色と写真撮影の機会を提供します。",
       "address": "North of Dali",
       "coordinates": {
         "lat": 25.9022,
@@ -2858,11 +2858,11 @@
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "75元（含三塔）",
-      "recommendedVisitTime": "2-3小时",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "观音殿",
+        "観音殿",
         "大雄宝殿",
-        "雨铜观音",
+        "雨銅観音",
         "三塔倒影"
       ],
       "tips": "建议和三塔一起游览，寺内有素斋供应。下午去可以看三塔倒影。",
@@ -2872,24 +2872,24 @@
     {
       "id": "dali-foreigner-street",
       "name": "洋人街",
-      "nameEn": "Foreigner Street",
+      "nameEn": "外国人通り",
       "category": "street",
-      "description": "洋人街是大理古城内最著名的步行街，因早年大量外国游客聚集而得名，街道两旁商铺林立，咖啡馆、酒吧、工艺品店比比皆是，是大理休闲生活的缩影。",
-      "address": "大理市古城护国路",
+      "description": "外国人通りは大理古城内で最も有名な歩行者天国で、かつて多くの外国人観光客が集まったことからその名が付けられました。道の両側にはカフェ、バー、工芸品店などが立ち並び、大理のリラックスタイムを象徴しています。",
+      "address": "大理市古城護国路",
       "coordinates": {
         "lat": 25.6944,
         "lng": 100.1556
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "終日開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "特色咖啡馆",
-        "手工艺品",
-        "街头艺人",
+        "特色あるカフェ",
+        "手作りの工芸品",
+        "ストリートパフォーマー",
         "美食小吃"
       ],
-      "tips": "晚上最热闹，有很多现场音乐表演。可以品尝大理特色小吃如烤乳扇。",
+      "tips": "夜が最も賑やかで、多くのライブ音楽パフォーマンスが行われます。大理の名物料理、例えば乳扇のグリルを味わうことができます。",
       "image": "/img/ext/c26dfdad61d2.webp",
       "phone": "+86 087 2 2294 6761"
     },

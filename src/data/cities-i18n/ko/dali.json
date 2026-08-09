@@ -9,14 +9,14 @@
     "lng": 100.2676
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "달리는 윈난성의 그림 같은 마을로, 장엄한 창산 산의 배경과 수정처럼 맑은 어하이 호수가 있습니다. 바이족의 본거지이며 1,000년의 역사를 자랑합니다. 자갈길, 전통 바이 건축, 활기찬 지역 문화로 유명합니다. 자전거, 하이킹, 문화적 몰입에 완벽한 여유로운 분위기입니다.",
+  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "얼하이 호수 - 경관 자전거와 전망",
-    "다리 3탑 - 불교 사원",
-    "다리 고성 - 백족 전통 건축",
-    "시저우 - 현지 백족 문화",
-    "솽랑 - 호수 사진"
+    "Erhai Lake - Scenic cycling and views",
+    "Three Pagodas of Dali - Buddhist temples",
+    "Dali Old Town - Traditional Bai architecture",
+    "Xizhou Market - Local Bai culture",
+    "Shuanglang - Lakeside photography"
   ],
   "climate": {
     "type": "Subtropical highland",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "봄과 가을 최적. 여름 시원하나 비 많음. 겨울 건조하고 따뜻. 자외선 강해 자외선 차단제."
+    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
   },
   "restaurants": [
     {
@@ -1037,16 +1037,16 @@
       "hours": "09:00-21:00",
       "description": "Traditional tea house specializing in Yunnan Pu'er tea with tea tasting and purchase options.",
       "dishHighlights": [
-        "Aged Pu'er",
-        "Raw Pu'er",
-        "Ripe Pu'er",
-        "Tea ceremony"
+        "숙성된 보이차",
+        "생 보이차",
+        "익힌 보이차",
+        "차 의식"
       ],
       "tags": [
-        "local",
-        "tea",
-        "cultural",
-        "traditional"
+        "지역",
+        "차",
+        "문화",
+        "전통"
       ],
       "star": 0,
       "diamond": 0,
@@ -1056,28 +1056,28 @@
     {
       "id": "dali-33",
       "name": "街边饵丝",
-      "nameEn": "街边饵丝 (饵丝)",
+      "nameEn": "지변얼쓰 (얼쓰)",
       "type": "local",
-      "cuisine": "饵丝",
+      "cuisine": "얼쓰",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "大理市新城区美食街86号",
+      "address": "다리시 신성구 미식거리 86호",
       "coordinates": {
         "lat": 25.6066,
         "lng": 100.2183
       },
       "phone": "+86 010 71237084",
       "hours": "10:00-22:00",
-      "description": "大理本地人推荐的饵丝店，味道正宗，价格实惠",
+      "description": "다리 현지인들이 추천하는 얼쓰 전문점으로, 맛이 전통적이고 가격이 저렴합니다.",
       "dishHighlights": [
-        "饵丝",
-        "乳扇",
-        "白族三道茶"
+        "얼쓰",
+        "유선",
+        "바이족 삼도차"
       ],
       "tags": [
-        "排队王",
-        "家常菜",
-        "社区老店"
+        "웨이팅 대장",
+        "집밥",
+        "동네 오래된 가게"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/219c69c1495d.webp"
@@ -1085,28 +1085,28 @@
     {
       "id": "dali-35",
       "name": "大理味砂锅鱼",
-      "nameEn": "大理味砂锅鱼 (砂锅鱼)",
+      "nameEn": "대리미 사골탕 생선 (사골탕 생선)",
       "type": "street",
-      "cuisine": "砂锅鱼",
+      "cuisine": "사골탕 생선",
       "avgPrice": 25,
       "rating": 4.9,
-      "address": "大理市市中心区美食街58号",
+      "address": "대리시 시내 중심가 맛집거리 58호",
       "coordinates": {
         "lat": 25.5799,
         "lng": 100.3106
       },
       "phone": "+86 010 21807513",
       "hours": "17:00-02:00",
-      "description": "大理本地人推荐的砂锅鱼店，味道正宗，价格实惠",
+      "description": "대리 현지인이 추천하는 사골탕 생선집으로, 맛이 전통적이고 가격이 저렴합니다.",
       "dishHighlights": [
-        "砂锅鱼",
-        "乳扇",
-        "酸辣鱼"
+        "사골탕 생선",
+        "유선",
+        "매콤새콤 생선"
       ],
       "tags": [
-        "夜市",
-        "小吃",
-        "深夜美食"
+        "야시장",
+        "분식",
+        "심야 맛집"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e4738a2d9a3c.webp"
@@ -2195,118 +2195,118 @@
     {
       "type": "ambulance",
       "name": "大理急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Dali People's Hospital has English interpreters"
     },
     {
       "type": "police",
       "name": "大理市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police in Dali Old Town"
     },
     {
       "type": "hospital",
       "name": "大理市第一人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali First People's Hospital",
       "phone": "+86 872 212 5465",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Main hospital in Dali"
     },
     {
       "type": "embassy",
       "name": "美国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Kunming",
       "phone": "+86 871 6364 1057",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming (nearest US consular services)",
+      "notes": "For US citizens in Dali region"
     },
     {
       "type": "hospital",
       "name": "大理州人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Prefecture People's Hospital",
       "phone": "+86 872 212 5075",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with emergency services"
     },
     {
       "type": "tourist-police",
       "name": "大理旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Tourist Police",
       "phone": "+86 872 267 4110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police station in Dali Old Town"
     },
     {
       "type": "fire",
       "name": "大理消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate Kunming",
       "phone": "+86 871 6564 6689",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For UK citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate Kunming",
       "phone": "+86 871 6856 2100",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Australian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "日本驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Kunming",
       "phone": "+86 871 6314 8288",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Japanese citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "法国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate Kunming",
       "phone": "+86 871 6331 5889",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For French citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "德国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate Kunming",
       "phone": "+86 871 6312 5555",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For German citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canada Consulate Guangzhou",
       "phone": "+86 20 3888 0400",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Canadian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "韩国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate Kunming",
       "phone": "+86 871 6566 2115",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Korean citizens in Dali region"
     }
   ],
   "quickFacts": {
@@ -2321,24 +2321,24 @@
     {
       "id": "erhai-lake",
       "name": "洱海",
-      "nameEn": "Hulun Lake",
+      "nameEn": "Erhai Lake",
       "category": "natural",
-      "description": "中国第五大淡水湖，面积2339平方公里，蒙古语意为海一样的湖。",
-      "address": "呼伦贝尔市新巴尔虎右旗",
+      "description": "A beautiful highland lake often called 'Sea of Clouds' offering scenic cycling paths, traditional fishing villages, and stunning mountain backdrops.",
+      "address": "Erhai Lake, Dali Bai Autonomous Prefecture",
       "coordinates": {
         "lat": 25.7522,
         "lng": 100.1872
       },
-      "openingHours": "全天",
-      "ticketPrice": "30元",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some scenic spots may charge)",
+      "recommendedVisitTime": "Half to full day",
       "highlights": [
-        "湖光山色",
-        "候鸟",
-        "日落",
+        "Cycling path around lake",
+        "Fisherman's village",
+        "Shuanglang village",
         "Wutai Lake view"
       ],
-      "tips": "夏季最佳，可品尝全鱼宴。",
+      "tips": "Rent a bicycle (40-80¥/day) to circle the lake. Start early to avoid tour buses. Best light for photos in early morning.",
       "image": "/img/ext/6faaa02aad08.webp",
       "phone": "+86 087 2 8699 3091"
     },
@@ -2370,22 +2370,22 @@
       "name": "大理古城",
       "nameEn": "Dali Old Town",
       "category": "cultural",
-      "description": "전통적인 바이족 건축물, 자갈길, 활기찬 현지 문화가 잘 보존된 아름다운 고대 마을입니다.",
-      "address": "다리 고성, 다리시",
+      "description": "A beautifully preserved ancient town with traditional Bai architecture, cobblestone streets, and lively local culture.",
+      "address": "Dali Old Town, Dali City",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
-      "openingHours": "24시간 개방",
-      "ticketPrice": "무료 (일부 명소는 입장권 필요)",
-      "recommendedVisitTime": "2-3시간",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (某些景点需要门票)",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "외국인 거리",
-        "오봉탑",
-        "다리대학교 지역",
-        "바이족 쪽염색 공방"
+        "Foreigners Street",
+        "Five Phoenix Pagoda",
+        "Dali University area",
+        "Bai tie-dye workshops"
       ],
-      "tips": "야경을 체험하려면 하룻밤 머무르는 것이 좋습니다. 상점들이 문을 열기 전 이른 아침에 사진을 찍으세요. 진정한 바이족의 삶을 경험하려면 골목길들을 탐방하세요.",
+      "tips": "Stay overnight to experience night atmosphere. Early morning before shops open for photos. Explore side alleys for authentic Bai life.",
       "image": "/img/ext/a6e176e9ca1c.webp",
       "phone": "+86 872 267 1545"
     },
@@ -2428,10 +2428,10 @@
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-4 hours",
       "highlights": [
-        "Nantian photographer point",
-        "Small fishing villages",
-        "Lakeside cafes",
-        "Yoga retreats"
+        "남천 사진작가 스팟",
+        "소규모 어촌",
+        "호숫가 카페",
+        "요가 휴식지"
       ],
       "tips": "Stay overnight at boutique lakeside hotels. Best sunset views from Nantian. Rent electric bike to explore coastline.",
       "image": "/img/ext/39e307f398db.webp",
@@ -2440,24 +2440,24 @@
     {
       "id": "cangshan-mountain",
       "name": "苍山",
-      "nameEn": "Cangshan Mountain",
+      "nameEn": "창산",
       "category": "natural",
-      "description": "대리 뒤에 위치한 극적인 산악 지대로, 등산로, 고대 사찰, 얼하이호의 파노라마 전망을 제공합니다.",
-      "address": "대리 서쪽 창산산",
+      "description": "다리 후레랜드에 등산로, 고대 사찰, 얼하이 호반의 파노라마 전경을 갖춘 인상적인 산맥입니다.",
+      "address": "다리 서쪽의 창산",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40위안 (케이블카 별도)",
-      "recommendedVisitTime": "반나절에서 하루 종일",
+      "ticketPrice": "40¥ (케이블카 별도)",
+      "recommendedVisitTime": "반일에서 하루 종일",
       "highlights": [
-        "거인의 머리 (18봉우리)",
-        "옥대길",
-        "기량사",
+        "18개의 봉우리 Giants Head",
+        "유벨트 로드",
+        "칠량 사찰",
         "고산 초원"
       ],
-      "tips": "산행이 쉬워지도록 케이블카를 이용하세요. 날씨가 빠르게 변하므로 겹쳐 입을 옷과 우비를 준비하세요. 등산로가 잘 표시되어 있지만 경사가 급합니다.",
+      "tips": "등산을 쉽게 하려면 케이블카를 타세요. 날씨가 빠르게 변하므로 겉옷과 우비를 준비하세요. 등산로는 잘 표시되어 있지만 가파릅니다.",
       "image": "/img/ext/38f44f1e4171.webp",
       "phone": "+86 087 2 5125 6111"
     },
@@ -2466,7 +2466,7 @@
       "name": "巍宝山",
       "nameEn": "Weibao Mountain",
       "category": "cultural",
-      "description": "A sacred Taoist mountain with ancient temples, hiking trails, and panoramic views of the Dali valley.",
+      "description": "고대 사찰과 등산로가 있는 신성한 도교 산으로 다리 계곡의 파노라마 전망을 자랑합니다.",
       "address": "Weibao Mountain, Weishan County",
       "coordinates": {
         "lat": 25.2322,
@@ -2474,14 +2474,14 @@
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "40¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4시간",
       "highlights": [
-        "Ancient Taoist temples",
-        "Mountain scenery",
-        "Less crowded",
-        "Authentic experience"
+        "고대 도교 사찰",
+        "산경치",
+        "적은 인파",
+        "진정한 경험"
       ],
-      "tips": "Less visited than Cangshan. Good for hikers seeking solitude. Bring water and snacks. Start in morning.",
+      "tips": "창산보다 방문객이 적습니다. 고독을 추구하는 등산객에게 적합합니다. 물과 간식을 захайте. 아침에 시작하세요.",
       "image": "/img/ext/54c1ad3edb17.webp",
       "phone": "+86 087 2 1045 2098"
     },
@@ -2490,22 +2490,22 @@
       "name": "蝴蝶泉",
       "nameEn": "Butterfly Spring",
       "category": "natural",
-      "description": "전설적인 샘으로, 고대 나무들에 둘러싸여 있으며 전통적으로 봄철 나비 짝짓기 시즌과 관련이 있습니다.",
-      "address": "Butterfly Spring Park, 대리에서 북쪽으로 20km 지점",
+      "description": "고대 나무로 둘러싸인 전설적인 봄의 온천으로, 전통적으로 봄철 나비 번식 시즌과 관련됩니다.",
+      "address": "Butterfly Spring Park, 20km north of Dali",
       "coordinates": {
         "lat": 25.8522,
         "lng": 100.1272
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2시간",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "전설적인 샘",
-        "나비 전시회",
-        "바이족 공연",
-        "고대 나무들"
+        "전설의 봄",
+        "나비 전시",
+        "백족 공연",
+        "고목"
       ],
-      "tips": "실제 나비가 나타나는 4월에서 5월이 가장 좋습니다. 시저우와 얼하이 호수 자전거 투어와 결합하세요. 공연 시간: 9:30, 11:00, 14:00, 15:30.",
+      "tips": "4-5월에 실제 나비가 나타날 때가 가장 좋습니다. 시저와 얼하이 호수 사이클링과 함께하세요. 공연 시간: 9:30, 11:00, 14:00, 15:30.",
       "image": "/img/ext/fd780ef70830.webp",
       "phone": "+86 087 2 5910 4245"
     },
@@ -2514,22 +2514,22 @@
       "name": "周城扎染",
       "nameEn": "Zhoucheng Tie-dye Village",
       "category": "cultural",
-      "description": "The largest Bai ethnic village famous for traditional tie-dye crafts. Over 90% of residents are involved in tie-dye production.",
-      "address": "Zhoucheng Village, Dali County",
+      "description": "전통 염색 공예로 유명한 가장 큰 백족 마을입니다. 주민의 90% 이상이 염색 생산에 참여합니다.",
+      "address": "대리현 주청 village",
       "coordinates": {
         "lat": 25.8022,
         "lng": 100.0872
       },
       "openingHours": "08:00-19:00",
-      "ticketPrice": "Free (workshops extra)",
+      "ticketPrice": "무료 (워크숍 별도)",
       "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Tie-dye workshops",
+        "염색 워크숍",
         "Bai folk performances",
         "Ancient architecture",
         "Miao-Hua marriage market"
       ],
-      "tips": "Visit morning market on weekends. Try DIY tie-dye experience. Best light for photos in early morning.",
+      "tips": "주말 아침 시장에 방문하세요. DIY 염색体験をお試しください. 사진 촬영은 이른 아침이 가장 좋은 빛입니다.",
       "image": "/img/ext/b2c1f8758015.webp",
       "phone": "+86 087 2 3245 9401"
     },
@@ -2706,22 +2706,22 @@
       "name": "大理州博物馆",
       "nameEn": "Dali Prefecture Museum",
       "category": "cultural",
-      "description": "남조국 시대부터 현재까지의 대리 역사를 보여주는 현대적인 박물관으로, 유물과 인터랙티브 전시물이 있습니다.",
-      "address": "Dali City, Erhai Lake 근처",
+      "description": "A modern museum showcasing Dali's history from Nanzhao Kingdom to present, with artifacts and interactive exhibits.",
+      "address": "Dali City, near Erhai Lake",
       "coordinates": {
         "lat": 25.6622,
         "lng": 100.1772
       },
-      "openingHours": "09:00-17:00 (월요일 휴무)",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "1-2시간",
+      "openingHours": "09:00-17:00 (closed Monday)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "남조국 유물",
-        "바이족 문화",
-        "불교 예술",
-        "인터랙티브 전시물"
+        "Nanzhao Kingdom artifacts",
+        "Bai ethnic culture",
+        "Buddhist art",
+        "Interactive exhibits"
       ],
-      "tips": "비 오는 날에 좋습니다. 영어 설명이 제공됩니다. 근처의 얼하이 호수 산책과 함께 방문하세요.",
+      "tips": "Good for rainy days. English descriptions available. Combine with nearby Erhai Lake walk.",
       "image": "/img/ext/a6b2943394e9.webp",
       "phone": "+86 087 2 8842 9002"
     },
@@ -2850,22 +2850,22 @@
       "name": "崇圣寺",
       "nameEn": "Chongsheng Temple",
       "category": "temple",
-      "description": "숭성사는 대리국 시대의 황실 사원으로, 삼탑과 함께 대리에서 가장 웅장한 불교 건축군입니다. 사원 내의 전각은 화려하고 불상은 장엄하여, 남조 대리국 시대의 불교 문화를 잘 보여줍니다.",
-      "address": "다리시 고성 북쪽 1.5km",
+      "description": "崇圣寺是大理国时期的皇家寺院，与三塔为一体，是大理最宏伟的佛教建筑群，寺内殿宇辉煌，佛像庄严，展现了南诏大理国时期的佛教文化。",
+      "address": "大理市古城北1.5公里",
       "coordinates": {
         "lat": 25.7167,
         "lng": 100.15
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "75위안 (삼탑 포함)",
-      "recommendedVisitTime": "2-3시간",
+      "ticketPrice": "75元（含三塔）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "관음전",
-        "대웅보전",
-        "우동관음",
-        "삼탑의 반영"
+        "观音殿",
+        "大雄宝殿",
+        "雨铜观音",
+        "三塔倒影"
       ],
-      "tips": "삼탑과 함께 관광하는 것이 좋습니다. 사원 내에서 채식 요리를 제공합니다. 오후에 방문하면 삼탑의 반영을 볼 수 있습니다.",
+      "tips": "建议和三塔一起游览，寺内有素斋供应。下午去可以看三塔倒影。",
       "image": "/img/ext/278489282e41.webp",
       "phone": "+86 872 266 6256"
     },
@@ -2874,22 +2874,22 @@
       "name": "洋人街",
       "nameEn": "Foreigner Street",
       "category": "street",
-      "description": "양인거리는 대리고성 내에서 가장 유명한 보행자 거리로, 예전에 많은 외국인 관광객들이 모여들어 이름이 붙여졌습니다. 거리 양쪽에 상점들이 즐비하며, 카페, 바, 공예품 가게 등이 많아 대리의 여유로운 생활을 엿볼 수 있는 곳입니다.",
+      "description": "洋人街是大理古城内最著名的步行街，因早年大量外国游客聚集而得名，街道两旁商铺林立，咖啡馆、酒吧、工艺品店比比皆是，是大理休闲生活的缩影。",
       "address": "大理市古城护国路",
       "coordinates": {
         "lat": 25.6944,
         "lng": 100.1556
       },
-      "openingHours": "하루 종일 개방",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "1-2시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "특색 있는 카페",
-        "수공예품",
-        "거리 공연자",
-        "맛있는 길거리 음식"
+        "特色咖啡馆",
+        "手工艺品",
+        "街头艺人",
+        "美食小吃"
       ],
-      "tips": "저녁에 가장 활기차며, 많은 라이브 음악 공연이 있습니다. 대리 특색의 길거리 음식, 예를 들어 구운 유방(烤乳扇)을 맛볼 수 있습니다.",
+      "tips": "晚上最热闹，有很多现场音乐表演。可以品尝大理特色小吃如烤乳扇。",
       "image": "/img/ext/c26dfdad61d2.webp",
       "phone": "+86 087 2 2294 6761"
     },
@@ -2898,70 +2898,70 @@
       "name": "五华楼",
       "nameEn": "Wuhua Building",
       "category": "landmark",
-      "description": "오화루는 대리 고성의 상징적인 건축물로, 남조(南诏) 시기에 처음 건립되었으며, 남조국의 국빈관으로 사용되었습니다. 현재의 건축물은 재건된 것으로, 이곳에 오르면 대리 고성의 전경을 내려다보고 창산과 얼하이를 멀리 바라볼 수 있습니다.",
+      "description": "五华楼是大理古城的标志性建筑，始建于南诏时期，是南诏国的国宾馆，现在的建筑是重建的，登楼可俯瞰大理古城全景，远眺苍山洱海。",
       "address": "大理市古城内",
       "coordinates": {
         "lat": 25.6944,
         "lng": 100.1556
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "30분-1시간",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟-1小时",
       "highlights": [
-        "고성 전경",
-        "창산 원경",
-        "야경 조명",
-        "역사적 건축물"
+        "古城全景",
+        "苍山远眺",
+        "夜景灯光",
+        "历史建筑"
       ],
-      "tips": "해질녘에 오르면 아름다운 석양과 고성의 야경을 감상할 수 있습니다. 내부에는 전시회가 있어 관람할 수 있습니다.",
+      "tips": "傍晚登楼最美，可以看夕阳和古城夜景。楼内有展览可以参观。",
       "image": "/img/ext/d1e79d410463.webp",
       "phone": "+86 087 2 6045 1438"
     },
     {
       "id": "dali-city-wall",
       "name": "大理古城墙",
-      "nameEn": "Dali 고성 성벽",
+      "nameEn": "Dali Ancient City Wall",
       "category": "landmark",
-      "description": "대리 고성벽은 명대에 처음 건립되었으며, 대리 고성의 중요한 방어 시설입니다. 성벽은 비교적 잘 보존되어 있으며, 남북 성문이 설치되어 있고, 성벽 위의 누각은 고성의 경치를 감상하기에 좋은 장소입니다.",
-      "address": "다리시 고성",
+      "description": "大理古城墙始建于明代，是大理古城的重要防御设施，城墙保存较为完好，设有南北城门，城墙上的城楼是观赏古城风光的好地方。",
+      "address": "大理市古城",
       "coordinates": {
         "lat": 25.6944,
         "lng": 100.1556
       },
-      "openingHours": "하루 종일 개방",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "1시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "남문",
-        "북문",
-        "성벽 산책",
-        "고성 경치"
+        "南城门",
+        "北城门",
+        "城墙漫步",
+        "古城风光"
       ],
-      "tips": "남문에서 북문까지 걸으며 고성의 경치를 감상할 수 있습니다. 성벽 위는 사진 촬영에 적합합니다.",
+      "tips": "可以从南门走到北门，沿途欣赏古城风光。城墙上适合拍照。",
       "image": "/img/ext/8db70aae509d.webp",
       "phone": "+86 872 267 1545"
     },
     {
       "id": "dali-nanzhao-island-detail",
       "name": "南诏风情岛",
-      "nameEn": "난조 스타일 섬",
+      "nameEn": "Nanzhao Style Island",
       "category": "landmark",
-      "description": "남조풍정도는 얼하이 호수에서 가장 큰 섬으로, 남조행궁과 본주문화광장 등이 있어 남조국의 역사와 바이족 문화를 보여주며, 대리 역사를 이해하는 중요한 명소입니다.",
+      "description": "南诏风情岛是洱海中最大的岛屿，岛上建有南诏行宫、本主文化广场等，展示了南诏国的历史和白族文化，是了解大理历史的重要景点。",
       "address": "大理市双廊镇洱海中",
       "coordinates": {
         "lat": 25.9667,
         "lng": 100.1833
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "50위안(유람선 포함)",
-      "recommendedVisitTime": "2-3시간",
+      "ticketPrice": "50元（含船票）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "남조행궁",
-        "본주문화",
-        "얼하이 경치",
-        "바이족 건축물"
+        "南诏行宫",
+        "本主文化",
+        "洱海风光",
+        "白族建筑"
       ],
-      "tips": "섬에 가려면 배를 타야 하며, 날씨를 미리 확인하는 것이 좋습니다. 섬의 경치가 아름다워 사진 촬영에 적합합니다.",
+      "tips": "需要乘船上岛，建议提前查看天气。岛上风景优美，适合拍照。",
       "image": "/img/ext/5ea30ac5d1db.webp",
       "phone": "+86 087 2 6255 2130"
     },
@@ -2970,22 +2970,22 @@
       "name": "白族扎染博物馆",
       "nameEn": "Bai Tie-dye Museum",
       "category": "museum",
-      "description": "바이족 자염 박물관은 다리 바이족의 전통 자염 공예를 전시하며, 이 국가급 무형문화재는 수천 년의 역사를 가지고 있습니다. 방문객은 자염 제작 과정을 배우고 직접 체험할 수 있습니다.",
-      "address": "다리시 시저우진 저청촌",
+      "description": "白族扎染博物馆展示了大理白族传统的扎染工艺，这项国家级非物质文化遗产已有上千年历史，游客可以了解扎染的制作过程并亲手体验。",
+      "address": "大理市喜洲镇周城村",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.1167
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "1-2시간",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "자염 공예 전시",
-        "직접 체험",
-        "바이족 전통 가옥",
-        "자염 제품 구매"
+        "扎染工艺展示",
+        "亲手体验",
+        "白族民居",
+        "购买扎染制品"
       ],
-      "tips": "직접 자수염색을 체험하고, 자신의 작품을 만들어 집으로 가져갈 수 있습니다. 주청촌은 자수염색 전문 마을입니다.",
+      "tips": "可以亲手体验扎染，制作自己的作品带回家。周城村是扎染专业村。",
       "image": "/img/ext/328f27e8dc57.webp",
       "phone": "+86 087 2 9133 7437"
     },
@@ -2994,22 +2994,22 @@
       "name": "喜洲古镇",
       "nameEn": "Xizhou Ancient Town",
       "category": "landmark",
-      "description": "시저우 고진은 다리 바이족 문화를 대표하며, 많은 바이족 전통 민가 건축물을 보존하고 있습니다. 그 중에서도 옌가 대원은 가장 유명한 바이족 건축군으로, 고진은 또한 시저우 바바로도 잘 알려져 있습니다.",
-      "address": "다리시 시저우진",
+      "description": "喜洲古镇是大理白族文化的代表，保留了大量白族传统民居建筑，其中严家大院是最著名的白族建筑群，古镇还以喜洲粑粑闻名遐迩。",
+      "address": "大理市喜洲镇",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.1167
       },
-      "openingHours": "24시간 개방",
-      "ticketPrice": "무료 (옌가 대원 25위안)",
-      "recommendedVisitTime": "2-3시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（严家大院25元）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "옌가 대원",
-        "시저우 바바",
-        "바이족 삼방일조벽",
-        "사방거리"
+        "严家大院",
+        "喜洲粑粑",
+        "白族三坊一照壁",
+        "四方街"
       ],
-      "tips": "직접 구운 시저우 바바를 꼭 맛보세요. 단맛과 짭짤한 맛 두 가지가 있습니다. 오전에 가면 현지인들의 생활상을 볼 수 있습니다.",
+      "tips": "一定要尝尝现烤的喜洲粑粑，有甜咸两种口味。上午去可以看到当地人的生活场景。",
       "image": "/img/ext/16c963546a25.webp",
       "phone": "+86 087 2 7279 7972"
     },
@@ -3018,22 +3018,22 @@
       "name": "苍山索道",
       "nameEn": "Cangshan Cableway",
       "category": "nature",
-      "description": "창산 케이블카는 창산을 관광하는 가장 편리한 방법으로, 케이블카를 타고 창산 중턱까지 바로 이동할 수 있으며, 도중에 창산의 웅장한 경치를 감상할 수 있고, 정상에 도착하면 얼하이 전경과 다리 고성을 내려다볼 수 있습니다.",
-      "address": "다리시 창산 관광지",
+      "description": "苍山索道是游览苍山最便捷的方式，乘坐索道可以直达苍山半山腰，沿途可以欣赏苍山的壮丽景色，到达山顶后可以俯瞰整个洱海和大理古城。",
+      "address": "大理市苍山景区",
       "coordinates": {
         "lat": 25.6833,
         "lng": 100.1333
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "150위안 (케이블카 및 입장권 포함)",
-      "recommendedVisitTime": "3-4시간",
+      "ticketPrice": "150元（含索道和门票）",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "창산의 경치",
-        "얼하이 전경",
-        "세마탄",
-        "칠룡녀지"
+        "苍山风光",
+        "洱海全景",
+        "洗马潭",
+        "七龙女池"
       ],
-      "tips": "산 정상의 기온이 낮으므로 겉옷을 준비하는 것이 좋습니다. 날씨가 좋지 않을 때는 케이블카가 운행을 중단할 수 있으니 미리 날씨를 확인하세요.",
+      "tips": "山顶气温较低，建议带外套。天气不好时索道可能停运，提前查看天气。",
       "image": "/img/ext/df1b43d3d97c.webp",
       "phone": "+86 087 2 9621 0449"
     },
@@ -3042,22 +3042,22 @@
       "name": "苍山瀑布",
       "nameEn": "Cangshan Waterfall",
       "category": "nature",
-      "description": "창산 폭포군은 창산의 중요한 경관으로, 그중 가장 유명한 것은 칭비시와 칠룡녀지입니다. 폭포가 창산 높은 곳에서 쏟아져 내리며 물보라가 날리고, 창산의 푸른 식생과 어우러져 아름다운 그림을 만들어냅니다.",
-      "address": "다리시 창산 관광지 내",
+      "description": "苍山瀑布群是苍山的重要景观，其中最著名的是清碧溪和七龙女池，瀑布从苍山高处飞流直下，水花四溅，与苍山的绿色植被形成美丽的画卷。",
+      "address": "大理市苍山景区内",
       "coordinates": {
         "lat": 25.6667,
         "lng": 100.1333
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "창산 입장권에 포함",
-      "recommendedVisitTime": "2-3시간",
+      "ticketPrice": "含在苍山门票内",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "칭비시",
-        "칠룡녀지",
-        "고산 폭포",
-        "원시림"
+        "清碧溪",
+        "七龙女池",
+        "高山瀑布",
+        "原始森林"
       ],
-      "tips": "우기(6-9월)에 폭포가 가장 웅장합니다. 미끄럼 방지 신발을 착용하는 것이 좋으며, 산길이 가파릅니다.",
+      "tips": "雨季（6-9月）瀑布最壮观。建议穿防滑鞋，山路较陡。",
       "image": "/img/ext/5be933e1e45b.webp",
       "phone": "+86 087 2 3557 3641"
     },
@@ -3066,22 +3066,22 @@
       "name": "大理玫瑰花田",
       "nameEn": "Dali Rose Meadow",
       "category": "nature",
-      "description": "다리의 장미 꽃밭은 최근에 떠오르는 관광 명소로, 창산 기슭에서 넓게 펼쳐진 장미 꽃들이 아름다운 경관을 이루며, 멀리 보이는 창산과 얼하이 호수가 어우러져 사진 찍기에 인기가 많습니다.",
-      "address": "다리시 은교진 등지",
+      "description": "大理的玫瑰花田是近年来新兴的旅游景点，大片的玫瑰花在苍山脚下绽放，与远处的苍山洱海形成绝美的画面，是拍照打卡的热门地点。",
+      "address": "大理市银桥镇等地",
       "coordinates": {
         "lat": 25.6833,
         "lng": 100.1333
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "30-50위안",
-      "recommendedVisitTime": "1-2시간",
+      "ticketPrice": "30-50元",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "장미 꽃바다",
-        "창산 배경",
-        "사진 촬영 명소",
-        "장미 제품"
+        "玫瑰花海",
+        "苍山背景",
+        "拍照打卡",
+        "玫瑰产品"
       ],
-      "tips": "4-6월은 장미가 만개하는 계절로, 오후에 방문하면 빛이 가장 좋습니다. 장미잼 등 특산품을 구매할 수 있습니다.",
+      "tips": "4-6月是玫瑰花盛开的季节，建议下午去光线最好。可以购买玫瑰酱等特产。",
       "image": "/img/ext/39e3474608c6.webp",
       "phone": "+86 087 2 6326 9944"
     },
@@ -3090,22 +3090,22 @@
       "name": "严家大院",
       "nameEn": "Yan Family House",
       "category": "landmark",
-      "description": "옌가 대원은 시저우 고진에서 가장 유명한 바이족 민가 건축군으로, 청나라 말기와 민국 초기에 지어졌으며, 여러 개의 '삼방일조벽'과 '사합오천정'으로 구성되어 있으며, 바이족 건축 예술의 뛰어난 대표작입니다.",
-      "address": "다리시 시저우진 사방거리",
+      "description": "严家大院是喜洲古镇最著名的白族民居建筑群，建于清末民初，由多个'三坊一照壁'和'四合五天井'组成，是白族建筑艺术的杰出代表。",
+      "address": "大理市喜洲镇四方街",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.1167
       },
       "openingHours": "08:30-17:30",
-      "ticketPrice": "25위안",
-      "recommendedVisitTime": "1-2시간",
+      "ticketPrice": "25元",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "삼방일조벽",
-        "사합오천정",
-        "바이족 건축",
-        "시저우 바바 (시저우 빵)"
+        "三坊一照壁",
+        "四合五天井",
+        "白族建筑",
+        "喜洲粑粑"
       ],
-      "tips": "바이족 건축의 특징과 문화적 의미를 설명하는 가이드를 고용하는 것이 좋습니다. 바이족의 삼도차 공연이 있습니다.",
+      "tips": "建议请导游讲解白族建筑的特点和文化内涵。院内有白族三道茶表演。",
       "image": "/img/ext/b31cc42be7a9.webp",
       "phone": "+86 087 2 2869 0487"
     },
@@ -3114,22 +3114,22 @@
       "name": "石宝山",
       "nameEn": "Shibao Mountain",
       "category": "nature",
-      "description": "석보산은 젠촨현에 위치해 있으며, 석굴과 단하 지형으로 유명합니다. 산에는 남조와 대리국 시기의 석굴 조각상이 많으며, '남방의 돈황'으로 불리며 남조 역사를 연구하는 데 귀중한 자료로 여겨집니다.",
-      "address": "대리주젠촨현석보산",
+      "description": "石宝山位于剑川县，以石窟和丹霞地貌闻名，山上有大量南诏大理国时期的石窟造像，被誉为'南方的敦煌'，是研究南诏历史的珍贵资料。",
+      "address": "大理州剑川县石宝山",
       "coordinates": {
         "lat": 26.5333,
         "lng": 99.9
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "50위안",
-      "recommendedVisitTime": "3-4시간",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "석종산 석굴",
-        "단하 지형",
-        "남조 조각상",
-        "보상사"
+        "石钟山石窟",
+        "丹霞地貌",
+        "南诏造像",
+        "宝相寺"
       ],
-      "tips": "대리 시내에서 멀리 떨어져 있으므로 자가용이나 차량 대여를 권장합니다. 산길이 가파르므로 편안한 신발을 착용하세요.",
+      "tips": "距离大理市区较远，建议自驾或包车前往。山路较陡，穿舒适的鞋子。",
       "image": "/img/ext/c01857a28b69.webp",
       "phone": "+86 087 2 2386 2994"
     },
@@ -3138,46 +3138,46 @@
       "name": "凤羽古镇",
       "nameEn": "Fengyu Ancient Town",
       "category": "landmark",
-      "description": "凤羽古镇은 대리주 얼위안현에 위치한 바이족 고향으로, '바이족 건축 박물관'으로 불리며, 고향은 명청시대의 바이족 민가를 많이 보존하고 있으며, 환경이 조용하고 도시의 소란에서 벗어납니다.",
+      "description": "凤羽古镇是大理州洱源县的一个白族古镇，被誉为'白族建筑博物馆'，古镇保存了大量明清时期的白族民居，环境清幽，远离城市喧嚣。",
       "address": "大理州洱源县凤羽镇",
       "coordinates": {
         "lat": 26.1,
         "lng": 99.95
       },
-      "openingHours": "하루 종일 개방",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "2-3시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "바이족 민가",
-        "고전 무대",
-        "전원 풍경",
-        "바이족 문화"
+        "白族民居",
+        "古戏台",
+        "田园风光",
+        "白族文化"
       ],
-      "tips": "관광객이 적어 원래의 백족 생활을 체험할 수 있습니다. 자가용으로 방문하는 것이 좋습니다.",
+      "tips": "游客较少，可以体验原汁原味的白族生活。建议自驾前往。",
       "image": "/img/ext/63c14eb8f8df.webp",
       "phone": "+86 087 2 8265 9291"
     },
     {
       "id": "dali-nuodeng-village",
       "name": "诺邓古村",
-      "nameEn": "노등 고대 마을",
+      "nameEn": "Nuodeng Ancient Village",
       "category": "landmark",
-      "description": "노등 고촌은 윈난 서북 지역에서 가장 오래된 마을로, 소금 생산으로 유명합니다. 마을에는 명청 시대의 건축물이 많이 보존되어 있으며, 소금 우물, 사찰, 민가 등이 있어 윈난 서부 고촌 문화를 체험하기에 좋은 장소입니다.",
-      "address": "윈룽현 노등진, 다리지",
+      "description": "诺邓古村是滇西北地区年代最久远的村落，以产盐闻名，村内保留了大量明清时期的建筑，包括盐井、庙宇和民居，是体验滇西古村文化的好去处。",
+      "address": "大理州云龙县诺邓镇",
       "coordinates": {
         "lat": 25.9,
         "lng": 99.3667
       },
-      "openingHours": "하루 종일 개방",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "2-3시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "천년 소금 우물",
-        "명청 건축물",
-        "노등 햄",
-        "고대 소금 문화"
+        "千年盐井",
+        "明清建筑",
+        "诺邓火腿",
+        "古盐文化"
       ],
-      "tips": "노등 햄이 매우 유명하니 꼭 맛보세요. 마을이 언덕에 위치해 있어 걸을 일이 많으니 편안한 신발을 신으세요.",
+      "tips": "诺邓火腿非常有名，一定要品尝。村子建在山坡上，步行较多，穿舒适的鞋子。",
       "image": "/img/ext/e7b07db4941f.webp",
       "phone": "+86 087 2 0280 2653"
     },
@@ -3186,22 +3186,22 @@
       "name": "海东艺术村",
       "nameEn": "Haidong Art Village",
       "category": "landmark",
-      "description": "하이둥 예술 마을은 얼하이 호수 동쪽 해안에 위치해 있으며, 대리에서 새롭게 떠오르는 예술인들의 집결지로 많은 예술가들과 문예청년들이 정착하여 창작 활동을 하고 있습니다. 마을 내에는 다양한 예술 스튜디오, 카페, 민박 등이 있습니다.",
+      "description": "海东艺术村位于洱海东岸，是大理新兴的艺术聚集地，吸引了很多艺术家和文艺青年在此定居创作，村内有各种艺术工作室、咖啡馆和民宿。",
       "address": "大理市海东镇",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.2167
       },
-      "openingHours": "하루 종일 개방",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "2-3시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "예술 스튜디오",
-        "바다 전망 카페",
-        "얼하이 호수의 일몰",
-        "문예적 분위기"
+        "艺术工作室",
+        "海景咖啡馆",
+        "洱海日落",
+        "文艺氛围"
       ],
-      "tips": "해질녘에 얼하이 호수에서 일몰을 볼 수 있으며 매우 아름답습니다. 문예청년들에게 추천합니다.",
+      "tips": "傍晚可以在洱海边看日落，非常美。适合文艺青年打卡。",
       "image": "/img/ext/417f5981b4ff.webp",
       "phone": "+86 087 2 4608 9687"
     },
@@ -3210,22 +3210,22 @@
       "name": "才村码头",
       "nameEn": "Caicun Wharf",
       "category": "landmark",
-      "description": "차이촌 부두는 다리 고성에서 가장 가까운 얼하이 유람선 부두로, 이곳에서 얼하이를 유람할 수 있습니다. 부두 주변에는 많은 해변풍의 민박과 카페가 있어 얼하이의 경치를 감상하기 좋은 장소입니다.",
-      "address": "다리시 차이촌",
+      "description": "才村码头是大理古城最近的洱海游船码头，从这里可以乘船游览洱海，码头周边有很多海景民宿和咖啡馆，是欣赏洱海风光的好地方。",
+      "address": "大理市才村",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.1667
       },
-      "openingHours": "하루종일 개방",
-      "ticketPrice": "무료 (유람선은 별도 비용)",
-      "recommendedVisitTime": "1-2시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（游船另收费）",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "얼하이 유람선",
-        "해변풍의 민박",
-        "석양의 경치",
-        "바이족 마을"
+        "洱海游船",
+        "海景民宿",
+        "日落美景",
+        "白族村落"
       ],
-      "tips": "저녁의 차이촌 부두가 가장 아름답고, 얼하이의 석양을 볼 수 있습니다. 유람선을 타고 얼하이를 유람할 수 있습니다.",
+      "tips": "傍晚的才村码头最美，可以看到洱海日落。可以乘坐游船游览洱海。",
       "image": "/img/ext/49e511e61303.webp",
       "phone": "+86 087 2 9808 5774"
     },
@@ -3234,22 +3234,22 @@
       "name": "洱海观景台",
       "nameEn": "Erhai Viewing Terrace",
       "category": "nature",
-      "description": "얼하이 전망대는 얼하이 호수의 동쪽 높은 곳에 위치해 있으며, 얼하이의 전경을 내려다볼 수 있는 최적의 장소입니다. 이곳에서는 얼하이의 전경을 볼 수 있으며, 멀리 창산의 19개 봉우리가 호수에 비치는 장면이 장관입니다.",
-      "address": "다리시 환해동로",
+      "description": "洱海观景台位于洱海东岸的高处，是俯瞰洱海全景的最佳地点，站在这里可以看到洱海的全貌，苍山十九峰倒映在湖面上，景色壮观。",
+      "address": "大理市环海东路",
       "coordinates": {
         "lat": 25.7333,
         "lng": 100.2167
       },
-      "openingHours": "24시간 개방",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "30분-1시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟-1小时",
       "highlights": [
-        "얼하이 전경",
-        "창산 반영",
-        "일출과 일몰",
-        "사진 촬영 성지"
+        "洱海全景",
+        "苍山倒影",
+        "日出日落",
+        "拍照圣地"
       ],
-      "tips": "일출과 일몰 시간이 가장 아름답습니다. 자가용으로 방문하는 것을 권장하며, 환해동로를 따라 자전거를 탈 수도 있습니다.",
+      "tips": "日出和日落时分最美。建议自驾前往，可以沿环海东路骑行。",
       "image": "/img/ext/cbe0c24536db.webp",
       "phone": "+86 087 2 9025 4139"
     },
@@ -3258,22 +3258,22 @@
       "name": "喜洲粑粑",
       "nameEn": "Xizhou Baba",
       "category": "market",
-      "description": "시저우 바바는 다리에서 가장 유명한 특산 요리로, 참숯불에 구워 겉은 바삭하고 속은 부드러우며 단맛과 짭짤한 맛 두 가지가 있습니다. 시저우 고진에는 바바를 만드는 여러 상점이 있으며, 관광객들은 제작 과정을 현장에서 볼 수 있습니다.",
-      "address": "다리시 시저우진 사방거리",
+      "description": "喜洲粑粑是大理最著名的特色小吃，用炭火烤制，外酥里嫩，有甜咸两种口味，喜洲古镇上有多家制作喜洲粑粑的店铺，游客可以现场观看制作过程。",
+      "address": "大理市喜洲镇四方街",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.1167
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "10-15위안/개",
-      "recommendedVisitTime": "30분",
+      "ticketPrice": "10-15元/个",
+      "recommendedVisitTime": "30分钟",
       "highlights": [
-        "직접 구운 바바",
-        "단맛과 짭짤한 맛",
-        "제작 과정",
-        "바이족 음식"
+        "现烤粑粑",
+        "甜咸口味",
+        "制作过程",
+        "白族美食"
       ],
-      "tips": "따뜻할 때 먹어야 맛있습니다. 갓 구운 것이 가장 맛있습니다. 사방거리 위의 전통 상점을 추천합니다.",
+      "tips": "一定要趁热吃，刚出炉的最好吃。推荐四方街上的老字号店铺。",
       "image": "/img/ext/1fc3772483a4.webp",
       "phone": "+86 087 2 5998 5182"
     },
@@ -3282,22 +3282,22 @@
       "name": "周城扎染村",
       "nameEn": "Zhoucheng Batik Village",
       "category": "landmark",
-      "description": "주청촌은 다리 바이족 자수염색의 발상지로, '바이족 자수염색의 고향'으로 불리며, 마을 내 거의 모든 가정에서 자수염색 제작을 하고 있습니다. 방문객들은 자수염색 작업장을 견학하고 직접 자수염색 공예를 체험할 수 있습니다.",
-      "address": "다리시 시저우진 주청촌",
+      "description": "周城村是大理白族扎染的发源地，被誉为'白族扎染之乡'，村内几乎家家户户都从事扎染制作，游客可以参观扎染工坊并亲手体验扎染工艺。",
+      "address": "大理市喜洲镇周城村",
       "coordinates": {
         "lat": 25.8667,
         "lng": 100.1167
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "무료 (체험은 별도 비용)",
-      "recommendedVisitTime": "1-2시간",
+      "ticketPrice": "免费（体验另收费）",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "자수염색 작업장",
-        "직접 체험",
-        "자수염색 구매",
-        "바이족 문화"
+        "扎染工坊",
+        "亲手体验",
+        "购买扎染",
+        "白族文化"
       ],
-      "tips": "직접 자수염색 작품을 만들 수 있으며, 가격은 약 50-100위안입니다. 오전에 방문하는 것이 좋으며, 제작 과정을 모두 볼 수 있습니다.",
+      "tips": "可以亲手制作扎染作品，价格约50-100元。建议上午去，可以看到完整的制作过程。",
       "image": "/img/ext/4d581b89b175.webp",
       "phone": "+86 087 2 2767 4241"
     },
@@ -3306,22 +3306,22 @@
       "name": "双廊艺术区",
       "nameEn": "Shuanglang Art District",
       "category": "landmark",
-      "description": "쌍랑은 얼하이 호숫가에 위치한 예술 마을로, 많은 예술가와 문학 청년들이 모여 있으며, 마을에는 다양한 예술 스튜디오, 갤러리, 특색 있는 작은 가게들이 있어 대리에서 가장 예술적인 분위기가 물씬 풍기는 곳입니다.",
-      "address": "대리시 쌍랑진",
+      "description": "双廊是洱海边的一个艺术小镇，聚集了大量的艺术家和文艺青年，镇上有各种艺术工作室、画廊和特色小店，是大理文艺气息最浓的地方。",
+      "address": "大理市双廊镇",
       "coordinates": {
         "lat": 25.9667,
         "lng": 100.1833
       },
-      "openingHours": "24시간 개방",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "2-3시간",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "예술 스튜디오",
-        "얼하이 경치",
-        "특색 있는 작은 가게",
-        "호숫가 카페"
+        "艺术工作室",
+        "洱海风光",
+        "特色小店",
+        "海景咖啡"
       ],
-      "tips": "1박을 추천하며, 얼하이(日海)의 일출을 볼 수 있습니다. 마을에는 특색 있는 민박과 카페가 많이 있습니다.",
+      "tips": "建议住一晚，可以看洱海日出。镇上有很多特色民宿和咖啡馆。",
       "image": "/img/ext/7c6a8ea6e7ee.webp",
       "phone": "+86 087 2 8620 8972"
     },
@@ -3330,22 +3330,22 @@
       "name": "洱海骑行",
       "nameEn": "Erhai Lake Cycling",
       "category": "nature",
-      "description": "环洱海骑行은 대리에서 가장 인기 있는 관광 활동 중 하나로, 총 길이는 약 130km이며, 에르하이의 호수와 산의 경치, 바이족 마을, 전원 풍경을 감상할 수 있는 대리를 깊이 있게 체험할 수 있는 최고의 방법입니다.",
+      "description": "环洱海骑行是大理最受欢迎的旅游活动之一，全程约130公里，沿途可以欣赏洱海的湖光山色、白族村落和田园风光，是深度体验大理的最佳方式。",
       "address": "大理市环洱海公路",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.1833
       },
-      "openingHours": "하루 종일 개방",
-      "ticketPrice": "자전거 대여 약 50-100위안/일",
-      "recommendedVisitTime": "1-2일",
+      "openingHours": "全天开放",
+      "ticketPrice": "租车约50-100元/天",
+      "recommendedVisitTime": "1-2天",
       "highlights": [
-        "호수 주변 자전거 여행",
-        "바이족 마을",
-        "호수와 산의 경치",
-        "전원 풍경"
+        "环湖骑行",
+        "白族村落",
+        "湖光山色",
+        "田园风光"
       ],
-      "tips": "시계 방향으로 자전거 여행을 하는 것이 좋으며, 총 소요 시간은 약 2일입니다. 도중에 여러 개의 보급점이 있습니다. 자외선 차단과 수분 보충에 주의하세요.",
+      "tips": "建议顺时针骑行，全程约需2天。沿途有多个补给点。注意防晒和补水。",
       "image": "/img/ext/90268c028f48.webp",
       "phone": "+86 087 2 6110 3015"
     },
@@ -3354,22 +3354,22 @@
       "name": "三塔倒影",
       "nameEn": "Three Pagodas Reflection",
       "category": "landmark",
-      "description": "삼탑반영(三塔倒影)은 대리에서 가장 유명한 경관 중 하나로, 삼탑 앞 연못에 비친 삼탑의 모습이 실제 삼탑과 어우러져 매우 매력적입니다. 특히 아침과 저녁에는 경치가 더욱 매혹적입니다.",
+      "description": "三塔倒影是大理最著名的景观之一，在三塔前的水池中，三塔的倒影清晰可见，与真实的三塔相映成趣，尤其是在清晨和傍晚时分，景色格外迷人。",
       "address": "大理市崇圣寺三塔景区内",
       "coordinates": {
         "lat": 25.7167,
         "lng": 100.15
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "75위안",
-      "recommendedVisitTime": "30분-1시간",
+      "ticketPrice": "75元",
+      "recommendedVisitTime": "30分钟-1小时",
       "highlights": [
-        "삼탑반영",
-        "연못의 거울면",
-        "아침 안개",
-        "저녁 노을"
+        "三塔倒影",
+        "水池镜面",
+        "清晨雾气",
+        "傍晚霞光"
       ],
-      "tips": "아침에 안개가 있을 때 가장 아름답고, 수면이 잔잔할 때 반사가 가장 선명합니다. 아침에 방문하는 것이 좋습니다.",
+      "tips": "清晨有雾气时最美，水面平静时倒影最清晰。建议早上去。",
       "image": "/img/ext/aa5f655f6577.webp",
       "phone": "+86 087 2 6350 1142"
     },
@@ -3378,22 +3378,22 @@
       "name": "南诏风情岛",
       "nameEn": "Nanzhao Dreamland",
       "category": "landmark",
-      "description": "남조풍정도는 얼하이 호수 위의 중요한 관광 명소로, 남조행궁과 바이족 본주문화광장 등이 있어 남조국의 역사와 문화를 보여주며, 대리 역사를 이해하는 중요한 창구입니다.",
+      "description": "南诏风情岛是洱海上的一个重要旅游景点，岛上有南诏行宫、白族本主文化广场等，展示了南诏国的历史和文化，是了解大理历史的重要窗口。",
       "address": "大理市双廊镇洱海中",
       "coordinates": {
         "lat": 25.9667,
         "lng": 100.1833
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "50위안",
-      "recommendedVisitTime": "2-3시간",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "남조행궁",
-        "본주문화",
-        "얼하이 호수 경치",
-        "바이족 가무"
+        "南诏行宫",
+        "本主文化",
+        "洱海风光",
+        "白族歌舞"
       ],
-      "tips": "배를 타고 섬에 들어가야 하므로 날씨를 미리 확인하는 것이 좋습니다. 섬에서 바이족 가무 공연이 열립니다.",
+      "tips": "需要乘船上岛，建议提前查看天气。岛上有白族歌舞表演。",
       "image": "/img/ext/d633a45193ca.webp",
       "phone": "+86 087 2 2254 3782"
     },
@@ -3402,22 +3402,22 @@
       "name": "挖色集市",
       "nameEn": "Wase Market",
       "category": "market",
-      "description": "와색시장은 얼하이 동쪽 해안에 위치한 전통 백족 시장으로, 장이 서는 날이면 주변 마을 사람들이 농산물과 수공예품을 거래하기 위해 모입니다. 백족의 시골 생활을 경험하기 좋은 곳입니다.",
+      "description": "挖色集市是洱海东岸的一个传统白族集市，每逢赶集日，周边村民会聚集在此交易农产品和手工艺品，是体验白族乡村生活的好去处。",
       "address": "大理市挖色镇",
       "coordinates": {
         "lat": 25.85,
         "lng": 100.2
       },
-      "openingHours": "장날 (5일, 10일에 열림)",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "1-2시간",
+      "openingHours": "赶集日（逢5、10日）",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "백족 시장",
-        "지역 특산품",
-        "시골 생활",
-        "전통 거래"
+        "白族集市",
+        "当地特产",
+        "乡村生活",
+        "传统交易"
       ],
-      "tips": "장날에 가장 붐비며, 다양한 지역 특산품과 수공예품을 볼 수 있습니다. 아침에 방문하는 것이 좋습니다.",
+      "tips": "赶集日最热闹，可以看到各种当地特产和手工艺品。建议早上去。",
       "image": "/img/ext/42a3c8afb44d.webp",
       "phone": "+86 087 2 2025 4860"
     },
@@ -3426,22 +3426,22 @@
       "name": "石门关",
       "nameEn": "Shimen Pass",
       "category": "nature",
-      "description": "석문관은 창산 서쪽 비탈에 위치한 자연적인 협곡으로, 양쪽 벽이 문처럼 가파르고 협곡 바닥에는 시냇물이 흐르며 대리에서 보기 드문 협곡 경관을 제공합니다. 또한 트레킹 애호가들에게 천국과 같은 곳입니다.",
-      "address": "대리시 창산서쪽 비탈",
+      "description": "石门关是苍山西坡的一个天然峡谷，两壁陡峭如门，谷底溪流潺潺，是大理少有的峡谷景观，也是徒步爱好者的天堂。",
+      "address": "大理市苍山西坡",
       "coordinates": {
         "lat": 25.6667,
         "lng": 100.0667
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "30위안",
-      "recommendedVisitTime": "2-3시간",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "협곡 경치",
-        "시냇물과 폭포",
-        "트레킹 코스",
-        "원시림"
+        "峡谷风光",
+        "溪流瀑布",
+        "徒步路线",
+        "原始森林"
       ],
-      "tips": "미끄럼 방지 신발을 착용하는 것이 좋으며, 협곡 내부는 서늘합니다. 우기에는 안전에 주의하세요.",
+      "tips": "建议穿防滑鞋，峡谷内较凉爽。雨季注意安全。",
       "image": "/img/ext/2337bb6a1765.webp",
       "phone": "+86 087 2 4614 9265"
     },
@@ -3450,22 +3450,22 @@
       "name": "无为寺",
       "nameEn": "Wuwei Temple",
       "category": "temple",
-      "description": "무위사는 창산 란봉 동쪽 기슭에 위치해 있으며, 당나라 때 처음 건립된 대리에서 유명한 불교 사찰입니다. 사찰 내부는 고요하고, 고목들이 하늘을 찌를 듯하며, 수천 년 된 고차화(古茶花) 나무들이 있어 대리 사람들이 몸과 마음을 수련하기에 좋은 장소입니다.",
+      "description": "无为寺位于苍山兰峰东麓，始建于唐代，是大理著名的佛教寺院，寺内环境清幽，古木参天，有多株千年古茶花树，是大理人修身养性的好去处。",
       "address": "大理市苍山兰峰东麓",
       "coordinates": {
         "lat": 25.7,
         "lng": 100.1167
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "1-2시간",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1-2小时",
       "highlights": [
-        "천 년 된 고차화",
-        "불교 문화",
-        "창산의 경치",
-        "고요한 환경"
+        "千年古茶花",
+        "佛教文化",
+        "苍山风光",
+        "清幽环境"
       ],
-      "tips": "봄철(1-3월)에 동백꽃이 만개할 때 가장 아름답습니다. 사내에서 채식 식사가 제공됩니다.",
+      "tips": "春季（1-3月）茶花盛开时最美。寺内有素斋供应。",
       "image": "/img/ext/72fae33bcfbf.webp",
       "phone": "+86 087 2 2076 3640"
     },
@@ -3494,22 +3494,22 @@
     {
       "id": "dali-night",
       "name": "大理古城夜景",
-      "nameEn": "다리 고성 야경",
+      "nameEn": "Dali Ancient City Night View",
       "category": "street",
-      "description": "다리 고성의 야경으로, 인민로와 양인거리가 불야성을 이룹니다.",
-      "address": "다리시 고성구",
+      "description": "大理古城的夜景，人民路和洋人街灯火通明。",
+      "address": "大理市古城区",
       "coordinates": {
         "lat": 25.69,
         "lng": 100.16
       },
-      "openingHours": "야간",
-      "ticketPrice": "무료",
-      "recommendedVisitTime": "1시간",
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "야경",
-        "바 거리"
+        "夜景",
+        "酒吧街"
       ],
-      "tips": "다리의 밤문화를 체험해보세요.",
+      "tips": "体验大理夜生活。",
       "image": "/img/ext/23f765d89a0f.webp",
       "phone": "+86 872 267 1545"
     }

@@ -9,14 +9,14 @@
     "lng": 110.479
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "ژانگجیاجی، \"خانه آواتار\"، به‌خاطر پارک ملی ثبت‌شده در میراث جهانی یونسکو با ستون‌های ماسه‌سنگی سر به فلک کشیده، تشکیلات کارستی نمایشی و جنگل‌های سرسبز مشهور است. ستون‌های کوارتز ماسه‌سنگی منحصربه‌فرد شهر الهام‌بخش کوه‌های شناور فیلم آواتار بودند. فراتر از آن، گذرگاه شیشه‌ای کوه تیانمن، طولانی‌ترین پل شیشه‌ای جهان و روستاهای باستانی توجیا را شامل می‌شود.",
+  "description": "Zhangjiajie, 'The Home of Avatar', is famous for its UNESCO-listed national forest park featuring towering sandstone pillars, dramatic karst formations, and lush forests. The city's unique pillar-like quartz sandstone pillars inspired the floating mountains in the movie Avatar. Beyond the park, visitors explore Tianmen Mountain's glass skywalk, the world's longest glass bridge, ancient Tujia villages, and mystical caves.",
   "coverImage": "/img/ext/a02714487598.webp",
   "highlights": [
-    "پارک ملی جنگلی ژانگجیاجی - میراث یونسکو",
-    "الهام از کوه‌های آواتار",
-    "کوه تیانمن - پیاده‌رو شیشه‌ای و غار آسمانی",
-    "پل شیشه‌ای گرند کنیون",
-    "غار اژدهای زرد - اعجاب زیرزمینی"
+    "Zhangjiajie National Forest Park - UNESCO World Heritage",
+    "Avatar Hallelujah Mountains inspiration",
+    "Tianmen Mountain - Glass skywalk and sky cave",
+    "Zhangjiajie Grand Canyon Glass Bridge",
+    "Yellow Dragon Cave - Underground wonder"
   ],
   "climate": {
     "type": "Subtropical humid mountain",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "24C (75F)",
     "avgWinterTemp": "5C (41F)",
-    "tips": "آب و هوای کوهستانی غیرقابل پیش‌بینی است، لباس چند لایه ببرید. موسمی تابستان باران شدید دارد. زمستان در قله‌ها برف. مه صبحگاهی فضای جادویی ایجاد می‌کند. برای دسترسی اولیه اقامت در پارک رزرو کنید."
+    "tips": "Mountain weather is unpredictable - bring layers. Summer monsoon season brings heavy rain. Winter can see snow on peaks. Morning mists create magical scenery. Book accommodation in park area for early access to attractions."
   },
   "attractions": [
     {
@@ -515,25 +515,25 @@
     {
       "id": "bailong-elevator",
       "name": "百龙电梯",
-      "nameEn": "آسانسور بایلونگ",
+      "nameEn": "Bailong Elevator",
       "category": "adventure",
       "image": "/img/ext/a23362069697.webp",
-      "description": "بالاترین آسانسور در فضای باز جهان با ارتفاع ۳۲۶ متر، که بازدیدکنندگان را در تنها ۶۶ ثانیه از سطح زمین به یوانجیاجیه منتقل می‌کند.",
-      "address": "در پارک جنگلی ژانجیاجیه",
+      "description": "The world's highest outdoor elevator at 326m, transporting visitors from ground level to Yuanjiajie in just 66 seconds.",
+      "address": "Within Zhangjiajie Forest Park",
       "coordinates": {
         "lat": 29.3535,
         "lng": 110.4425
       },
-      "openingHours": "۰۷:۰۰-۱۸:۰۰",
-      "ticketPrice": "۷۲¥ (یک‌طرفه)، در برخی بسته‌های توریستی شامل می‌شود",
-      "recommendedVisitTime": "۱۰ دقیقه",
+      "openingHours": "07:00-18:00",
+      "ticketPrice": "72¥ (one-way), included in some packages",
+      "recommendedVisitTime": "10 minutes",
       "highlights": [
-        "بالاترین آسانسور در فضای باز جهان",
-        "ارتفاع عمودی ۳۲۶ متری",
-        "سفر ۶۶ ثانیه‌ای",
-        "نماهای شگفت‌انگیز از ستون‌ها"
+        "World's highest outdoor elevator",
+        "326m vertical height",
+        "66-second journey",
+        "Stunning pillar views"
       ],
-      "tips": "در فصل پیک صف‌های طولانی وجود دارد. اگر وقت دارید، پیاده‌روی به بالا را در نظر بگیرید. بلیط ترکیبی با پارک ارزان‌تر است.",
+      "tips": "Long queues in peak season. Consider walking up if you have time. Combined ticket with park is cheaper.",
       "phone": "+86 074 4 4455 5234"
     },
     {
@@ -627,7 +627,7 @@
         "Natural stone arch",
         "Dramatic gorge",
         "Iconic photo spot",
-        "Fairy legend"
+        "افسانه پری"
       ],
       "tips": "Best photographed in morning light. Can be slippery when wet. Combine with other Yangjiajie attractions.",
       "phone": "+86 074 4 6187 6280"
@@ -635,97 +635,97 @@
     {
       "id": "tujia-xiuxian",
       "name": "土家秀",
-      "nameEn": "Tujia Cultural Show",
+      "nameEn": "نمایش فرهنگی توخیا",
       "category": "cultural",
       "image": "/img/ext/6b54a294df53.webp",
-      "description": "Evening performance showcasing Tujia folk songs, dances, and the famous 'Xiji Girl' love story.",
-      "address": "Wulingyuan District",
+      "description": "اجرای شبانه با نمایش آهنگ‌های محلی، رقص‌های سنتی و داستان عشق معروف 'دختر شی‌جی' قوم توخیا.",
+      "address": "ناحیه وولینگیوان",
       "coordinates": {
         "lat": 29.3335,
         "lng": 110.5465
       },
-      "openingHours": "20:00-22:00 (shows nightly)",
-      "ticketPrice": "180-260¥",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "۲۰:۰۰-۲۲:۰۰ (اجرا هر شب)",
+      "ticketPrice": "۱۸۰-۲۶۰ یوآن",
+      "recommendedVisitTime": "۲ ساعت",
       "highlights": [
         "Traditional Tujia dances",
         "Folk songs performance",
         "Love story drama",
         "Fireworks finale"
       ],
-      "tips": "Book through hotel concierge for discounts. Bring jacket as outdoor venue. Shows run rain or shine.",
+      "tips": "برای تخفیف از طریق میز پذیرش هتل رزرو کنید. لباس گرم همراه داشته باشید چون محل اجرای روباز است. نمایش در هر شرایط آب و هوایی برگزار می‌شود.",
       "phone": "+86 074 4 9571 5017"
     },
     {
       "id": "xinhuang-bridge",
       "name": "新黄龙洞",
-      "nameEn": "New Yellow Dragon Cave",
+      "nameEn": "غار دراکون زرد جدید",
       "category": "natural",
       "image": "/img/ext/f5e115604d3c.webp",
-      "description": "Expanded cave system with improved lighting and walkways, offering extended exploration routes.",
-      "address": "Wulingyuan District",
+      "description": "سیستم غار گسترش یافته با روشنایی و مسیرهای پیاده‌روی بهبود یافته، که امکان کاوش طولانی‌تر را فراهم می‌کند.",
+      "address": "ناحیه وولینگیوان",
       "coordinates": {
         "lat": 29.2335,
         "lng": 110.5335
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "121¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 ساعت",
       "highlights": [
-        "Extended cave routes",
-        "Modern lighting",
-        "Underground river",
-        "Larger exploration area"
+        "مسیرهای غار طولانی",
+        "روشنایی مدرن",
+        "رودخانه زیرزمینی",
+        "منطقه اکتشافی بزرگ‌تر"
       ],
-      "tips": "Arrive early to avoid crowds. Audio guide recommended. Wear comfortable walking shoes. Temperature inside is cool.",
+      "tips": "برای جلوگیری از شلوغی زودتر بروز کنید. راهنمای صوتی توصیه می‌شود. کفش راحت بپوشید. دمای داخلی خنک است.",
       "phone": "+86 744 561 8489"
     },
     {
       "id": "wulong-hole",
       "name": "武隆",
-      "nameEn": "Wulong Karst",
+      "nameEn": "کارست وولونگ",
       "category": "natural",
       "image": "/img/ext/32f064f91ccc.webp",
-      "description": "UNESCO World Heritage site featuring massive sinkholes, bridges, and caves. Famous filming location for movie Transformers.",
-      "address": "100km from Zhangjiajie",
+      "description": "میراث جهانی یونسکو با sinkholes، پل‌ها و غارهای عظیم. مکان معروف فیلم‌برداری برای فیلم ترانسفورمرز.",
+      "address": "100 کیلومتر از Zhangjiajie",
       "coordinates": {
         "lat": 29.4535,
         "lng": 107.9035
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "320¥ (includes all attractions)",
-      "recommendedVisitTime": "Full day trip",
+      "ticketPrice": "320¥ (شامل تمام جاذبه‌ها)",
+      "recommendedVisitTime": "سفر یک روزه کامل",
       "highlights": [
-        "Three Natural Bridges",
-        "Houpeng Doline",
-        "Hanging Caves",
-        "Transformers filming location"
+        "سه پل طبیعی",
+        "دهانه هوپنگ",
+        "غارهای آویزان",
+        "لوکیشن فیلمبرداری ترانسفورمرز"
       ],
-      "tips": "Requires day trip from Zhangjiajie. Best combined with Fengdu or Wulong. Book tour for convenience. Photo ops are stunning.",
+      "tips": "نیاز به سفر یک روزه از Zhangjiajie دارد. بهترین ترکیب با Fengdu یا Wulong. تور را برای راحتی رزرو کنید. عکس‌های بسیار زیبا.",
       "phone": "+86 074 4 8090 6549"
     },
     {
       "id": "wulong-hole-cave",
       "name": "武隆芙蓉洞",
-      "nameEn": "Furong Cave",
+      "nameEn": "غار فورونگ",
       "category": "natural",
       "image": "/img/ext/309f30e43563.webp",
-      "description": "One of the largest developed caverns in China with spectacular stalactite and stalagmite formations.",
-      "address": "Wulong County",
+      "description": "یکی از بزرگترین غارهای توسعه‌یافته چین با formations بسیار زیبای استالاکتیت و استالاگمیت.",
+      "address": "شهرستان وولونگ",
       "coordinates": {
         "lat": 29.4235,
         "lng": 107.9235
       },
       "openingHours": "09:00-16:00",
-      "ticketPrice": "150¥ (cave only)",
-      "recommendedVisitTime": "2 hours",
+      "ticketPrice": "150¥ (فقط غار)",
+      "recommendedVisitTime": "2 ساعت",
       "highlights": [
-        "Massive cave chambers",
-        "Ancient formations",
-        "Underground river",
-        "Light show"
+        "اتاق‌های غار عظیم",
+        "formationهای باستانی",
+        "رودخانه زیرزمینی",
+        "نمایش نوری"
       ],
-      "tips": "Part of Wulong day trip. Combine with Three Natural Bridges. Bring warm clothes for cave temperature.",
+      "tips": "بخشی از سفر یکروزه وولونگ. ترکیب با سه پل طبیعی. لباس گرم ببرید چون دمای غار پایین است.",
       "phone": "+86 074 4 7447 5201"
     },
     {
@@ -3658,159 +3658,159 @@
     {
       "type": "ambulance",
       "name": "张家界急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Zhangjiajie Emergency Center",
       "phone": "120",
-      "address": "Guangzhou"
+      "address": "Citywide coverage"
     },
     {
       "type": "police",
       "name": "张家界市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Zhangjiajie Public Security Bureau",
       "phone": "110",
-      "address": "Guangzhou"
+      "address": "Various locations"
     },
     {
       "type": "fire",
       "name": "消防紧急电话",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fire Emergency",
       "phone": "119",
-      "address": "Guangzhou"
+      "address": "Citywide coverage"
     },
     {
       "type": "hospital",
       "name": "张家界市人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Zhangjiajie People's Hospital",
       "phone": "+86 744 822 2412",
-      "address": "Guangzhou",
+      "address": "People's Road, Zhangjiajie City",
       "coordinates": {
         "lat": 29.1175,
         "lng": 110.4745
       },
-      "notes": "For Singapore citizens"
+      "notes": "Best public hospital in city"
     },
     {
       "type": "hospital",
       "name": "张家界市中医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Zhangjiajie TCM Hospital",
       "phone": "+86 744 822 3456",
-      "address": "Guangzhou",
+      "address": "Zhonghua Road, Zhangjiajie",
       "coordinates": {
         "lat": 29.1235,
         "lng": 110.4715
       },
-      "notes": "For Singapore citizens"
+      "notes": "Traditional Chinese medicine available"
     },
     {
       "type": "hospital",
       "name": "武陵源区人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Wulingyuan District Hospital",
       "phone": "+86 744 561 2456",
-      "address": "Guangzhou",
+      "address": "Wulingyuan District",
       "coordinates": {
         "lat": 29.3335,
         "lng": 110.5365
       },
-      "notes": "For Singapore citizens"
+      "notes": "For emergencies in scenic area"
     },
     {
       "type": "tourist",
       "name": "张家界旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Zhangjiajie Tourism Complaint Hotline",
       "phone": "12345",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide",
+      "notes": "For tourism complaints and assistance"
     },
     {
       "type": "tourist",
       "name": "景区急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Forest Park Emergency Center",
       "phone": "+86 744 571 8110",
-      "address": "Guangzhou",
+      "address": "Within Forest Park",
       "coordinates": {
         "lat": 29.3475,
         "lng": 110.4465
       },
-      "notes": "For Singapore citizens"
+      "notes": "24-hour emergency within park"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Guangzhou",
       "phone": "+86 20 3814 0128",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Guangzhou (nearest consular services)",
+      "notes": "Nearest consular services for Zhangjiajie"
     },
     {
       "type": "embassy",
       "name": "美国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "U.S. Consulate General Guangzhou",
       "phone": "+86 20 3814 5775",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For U.S. citizens"
     },
     {
       "type": "tourist",
       "name": "湖南省旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hunan Province Tourism Complaint Hotline",
       "phone": "12301",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Provincewide",
+      "notes": "24-hour tourism complaints and emergency assistance"
     },
     {
       "type": "info",
       "name": "张家界旅游信息服务中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Zhangjiajie Tourist Information Center",
       "phone": "+86 744 851 2222",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "City Center, Zhangjiajie",
+      "notes": "Tourist information, maps, and travel advice"
     },
     {
       "type": "embassy",
       "name": "英国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Guangzhou",
       "phone": "+86 20 8314 3000",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For British citizens"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canadian Consulate General Guangzhou",
       "phone": "+86 20 8611 6100",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Canadian citizens"
     },
     {
       "type": "embassy",
       "name": "德国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Consulate General Guangzhou",
       "phone": "+86 20 8313 0000",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For German citizens"
     },
     {
       "type": "embassy",
       "name": "法国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "French Consulate General Guangzhou",
       "phone": "+86 20 2829 2000",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For French citizens"
     },
     {
       "type": "embassy",
       "name": "日本驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Guangzhou",
       "phone": "+86 20 8334 3009",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Japanese citizens"
     },
     {
       "type": "embassy",
       "name": "韩国驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korean Consulate General Guangzhou",
       "phone": "+86 20 3885 0993",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For South Korean citizens"
     },
     {
       "type": "embassy",

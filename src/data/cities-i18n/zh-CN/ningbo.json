@@ -9,14 +9,14 @@
     "lng": 121.544
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "宁波是浙江的古老港口城市，是中国最古老的城市之一。",
+  "description": "宁波是浙江省古老的港口城市，是中国最古老的城市和主要港口之一。以其千年历史、佛教寺庙、传统建筑和新鲜海鲜闻名。拥有著名的天一阁，中国最古老的私人图书馆。",
   "coverImage": "/img/ext/9dc5ac0e3a9c.webp",
   "highlights": [
-    "天一阁 - 中国最古老私人藏书楼",
-    "老外滩 - 历史滨水区",
-    "溪口镇 - 蒋介石故里",
-    "普陀山 - 佛教圣山",
-    "宁波博物馆 - 王澍建筑"
+    "天一阁 - 中国最早的私家藏书楼",
+    "天王殿",
+    "老外滩 - 欧洲殖民建筑",
+    "东钱湖 - 风景区",
+    "著名海鲜美食"
   ],
   "climate": {
     "type": "Subtropical monsoon climate",
@@ -29,17 +29,17 @@
     ],
     "avgSummerTemp": "28°C (82°F)",
     "avgWinterTemp": "6°C (43°F)",
-    "tips": "春秋舒适。夏季热湿。冬季湿冷。海风大需防风。鱼鲜丰富。"
+    "tips": "Best in spring and autumn. Summers hot and humid with typhoons possible. Pleasant winters. Spring for flowers, autumn for foliage."
   },
   "attractions": [
     {
       "id": "ningbo-1",
       "name": "天一阁",
-      "nameEn": "Tianyi Pavilion",
+      "nameEn": "天一阁",
       "category": "cultural",
       "image": "/img/ext/1c98ecf14d60.webp",
-      "description": "China's oldest private library, built in 1561, with beautiful gardens.",
-      "address": "10 Tianyi Lane, Haishu District",
+      "description": "中国最早的私家藏书楼，建于1561年，园林景色优美。",
+      "address": "海曙区天一街10号",
       "coordinates": {
         "lat": 29.8822,
         "lng": 121.5522
@@ -53,7 +53,7 @@
         "Book culture",
         "Ming architecture"
       ],
-      "tips": "Arrive early to avoid crowds. The gardens are beautiful. Audio guide recommended.",
+      "tips": "建议早到以避开人群。园林景色优美。建议使用语音导览。",
       "phone": "+86 057 4 0606 3670"
     },
     {
@@ -677,17 +677,17 @@
     {
       "id": "nb-museum",
       "name": "宁波博物馆",
-      "nameEn": "Ningbo Museum",
+      "nameEn": "宁波博物馆",
       "category": "museum",
-      "description": "展示宁波历史的博物馆。",
-      "address": "宁波市鄞州区",
+      "description": "展示宁波历史文化的博物馆。",
+      "address": "浙江省宁波市鄞州区",
       "coordinates": {
         "lat": 29.85,
         "lng": 121.55
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2小时",
+      "ticketPrice": "门票：免费",
+      "recommendedVisitTime": "建议游览时间：2小时",
       "highlights": [
         "宁波历史"
       ],
@@ -1069,7 +1069,7 @@
     {
       "id": "nb-fashion",
       "name": "宁波服装博物馆",
-      "nameEn": "Ningbo Fashion Museum",
+      "nameEn": "宁波时尚博物馆",
       "category": "museum",
       "description": "展示中国服装文化的博物馆。",
       "address": "宁波市海曙区",
@@ -1078,12 +1078,12 @@
         "lng": 121.55
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1小时",
+      "ticketPrice": "门票：免费",
+      "recommendedVisitTime": "建议游览时间：1小时",
       "highlights": [
         "服装文化"
       ],
-      "tips": "了解中国服装。",
+      "tips": "了解中国服装文化的小贴士。",
       "image": "/img/ext/114a5c92c35d.webp",
       "phone": "+86 057 4 5720 6385"
     },
@@ -2015,13 +2015,13 @@
       "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
       "dishHighlights": [
         "臭冬瓜",
-        "海鲜",
-        "年糕"
+        "Seafood",
+        "Rice Cake"
       ],
       "tags": [
-        "老字号",
-        "隐藏美食",
-        "排队王"
+        "Time-honored Brand",
+        "Hidden Gem",
+        "Popular Spot"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/f4b8b93e2c93.webp"
@@ -2029,27 +2029,27 @@
     {
       "id": "ningbo-34",
       "name": "正宗年糕",
-      "nameEn": "正宗年糕 (年糕)",
+      "nameEn": "Authentic Rice Cake (Rice Cake)",
       "type": "local",
-      "cuisine": "年糕",
+      "cuisine": "Rice Cake",
       "avgPrice": 98,
       "rating": 4.3,
-      "address": "宁波市新城区美食街80号",
+      "address": "No. 80 Food Street, Ningbo New District",
       "coordinates": {
         "lat": 29.84,
         "lng": 121.5157
       },
       "phone": "+86 010 90456322",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "宁波本地人推荐的年糕店，味道正宗，价格实惠",
+      "description": "A rice cake shop recommended by locals in Ningbo, with authentic taste and affordable prices",
       "dishHighlights": [
-        "臭冬瓜",
-        "海鲜",
-        "汤圆"
+        "Stinky Winter Melon",
+        "Seafood",
+        "Glutinous Rice Balls"
       ],
       "tags": [
-        "本地人爱去",
-        "隐藏美食",
+        "Local Favorite",
+        "Hidden Gem",
         "社区老店"
       ],
       "diamond": 0,
@@ -2166,7 +2166,7 @@
       "tags": [
         "排队王",
         "社区老店",
-        "本地人爱去"
+        "本地人最爱"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -2186,10 +2186,10 @@
       },
       "phone": "+86 010 27004935",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "description": "宁波本地人推荐的臭冬瓜特色餐馆，味道正宗，价格实惠",
       "dishHighlights": [
         "臭冬瓜",
-        "雪菜大黄鱼",
+        "雪菜大黄鱼（雪菜炖大黄鱼）",
         "年糕"
       ],
       "tags": [
@@ -3016,97 +3016,97 @@
     {
       "category": "history",
       "title": "Ancient Port City",
-      "content": "Ningbo is one of China's oldest port cities, dating back over 1,000 years. It was a major stop on the Maritime Silk Road and remains an important port today.",
+      "content": "宁波是中国最古老的港口城市之一，历史可追溯至1000多年前。它是海上丝绸之路的重要站点，如今仍是重要港口。",
       "importance": "high"
     },
     {
       "category": "library",
       "title": "Tianyi Pavilion",
-      "content": "The Tianyi Pavilion is China's oldest private library, built in 1561. The name means 'First under Heaven' and it houses rare books and classical gardens.",
+      "content": "天一阁是中国最古老的私人图书馆，建于1561年。意为\"天下第一\"，收藏珍稀书籍和古典园林。",
       "importance": "high"
     },
     {
       "category": "food",
       "title": "Ningbo Cuisine",
-      "content": "Ningbo cuisine is known for its sweet and savory flavors. Must-try: soup dumplings (汤团), rice cakes (年糕), and the famous stinky vegetable (臭菜).",
+      "content": "宁波菜以甜咸口味著称。必尝：汤团、年糕和著名的臭菜。",
       "importance": "high"
     },
     {
       "category": "buddhism",
       "title": "Buddhist Heritage",
-      "content": "Ningbo is an important Buddhist center with ancient temples like Tiantong Temple and Ayuwang Temple that date back over 1,700 years.",
+      "content": "宁波是重要的佛教中心，有天童寺、阿育王寺等古寺，历史可追溯至1700多年前。",
       "importance": "medium"
     },
     {
       "category": "water",
       "title": "Water Towns",
-      "content": "The area around Ningbo has several ancient water towns like Qiantong that offer a glimpse of traditional Chinese life along canals.",
+      "content": "宁波周边有前童等多个古镇水乡，展示中国传统运河生活的风貌。",
       "importance": "medium"
     },
     {
       "category": "seafood",
       "title": "Fresh Seafood",
-      "content": "Being a coastal city, Ningbo is famous for fresh seafood. The Dongqian Lake area has famous 'boat cuisine' with fish caught from the lake.",
+      "content": "作为沿海城市，宁波以新鲜海鲜著称。东钱湖地区有著名的\"船菜\"，用湖中捕获的鱼烹饪。",
       "importance": "high"
     },
     {
       "category": "architecture",
       "title": "Colonial Architecture",
-      "content": "The Old Bund shows European colonial influence from the 1800s when Ningbo was a treaty port. The architecture blends Chinese and Western styles.",
+      "content": "老外滩展示了1800年代宁波作为通商口岸时的欧洲殖民影响。建筑融合中西方风格。",
       "importance": "medium"
     },
     {
       "category": "tea",
       "title": "Tea Culture",
-      "content": "Ningbo has famous green tea plantations on Fuquan Mountain overlooking Dongqian Lake. Tea picking and tasting can be combined with hiking.",
+      "content": "宁波在福泉山有著名的绿茶茶园，可俯瞰东钱湖。采茶和品茶可与徒步结合。",
       "importance": "medium"
     },
     {
       "category": "legend",
       "title": "Butterfly Lovers",
-      "content": "The famous Chinese legend 'Butterfly Lovers' (梁祝) is set in the Ningbo area. The Liangshanbo Park tells this romantic story.",
+      "content": "著名的中国民间传说《梁祝》发生在宁波地区。梁山伯公园讲述这个浪漫故事。",
       "importance": "low"
     },
     {
       "category": "dialect",
       "title": "Ningbo Dialect",
-      "content": "Ningbo dialect is a distinct Wu Chinese dialect, different from Mandarin. It preserves ancient Chinese pronunciation features valued by linguists.",
+      "content": "宁波话是独特的吴语方言，与普通话不同。它保留了古汉语发音特征，受到语言学家重视。",
       "importance": "low"
     },
     {
       "category": "business",
       "title": "Business Hub",
-      "content": "Ningbo is a major commercial hub with busy ports. The city has thriving trade and manufacturing industries.",
+      "content": "宁波是主要商业中心，港口繁忙。城市拥有繁荣的贸易和制造业。",
       "importance": "medium"
     },
     {
       "category": "nature",
       "title": "Dongqian Lake",
-      "content": "Dongqian Lake is one of Zhejiang's most beautiful lakes with scenic bike paths, gardens, and temples to explore. Rent a bike to tour the lake.",
+      "content": "东钱湖是浙江最美的湖泊之一，有风景如画的自行车道、花园和寺庙可供游览。租一辆自行车环湖游览。",
       "importance": "high"
     },
     {
       "category": "art",
       "title": "Calligraphy Heritage",
-      "content": "Ningbo has produced many famous calligraphers. The Shamenghai Academy honors the famous calligrapher and offers cultural exhibits.",
+      "content": "宁波孕育了众多书法名家。沙孟海书院纪念这位著名书法家，并举办文化展览。",
       "importance": "low"
     },
     {
       "category": "temple",
       "title": "Buddhist Mountains",
-      "content": "Xuedou Mountain is a sacred Buddhist mountain with the world's largest Maitreya Buddha statue. Combined with hiking and temple visits.",
+      "content": "雪窦山是佛教圣山，拥有世界最大的弥勒佛雕像。结合徒步和寺庙参访。",
       "importance": "medium"
     },
     {
       "category": "snacks",
       "title": "Famous Snacks",
-      "content": "Ningbo has many famous snacks: oil-fried dough twists (油赞子), rice cakes (年糕), and sweet rice dumplings (汤团) are must-tries.",
+      "content": "宁波有许多著名小吃：油赞子、年糕、汤团都是必尝的。",
       "importance": "medium"
     },
     {
       "category": "handicrafts",
       "title": "Traditional Crafts",
-      "content": "Look for traditional Ningbo crafts like Zhoushan wood carving and local embroidery as souvenirs from the area.",
+      "content": "寻找传统的宁波工艺品，如舟山木雕和当地刺绣作为纪念品。",
       "importance": "low"
     }
   ],
@@ -3114,94 +3114,94 @@
     {
       "type": "ambulance",
       "name": "宁波急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "宁波市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "宁波第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo First Hospital",
       "phone": "+86 574 8730 5569",
-      "address": "Guangzhou",
+      "address": "59 Liuting Street, Haishu District",
       "coordinates": {
         "lat": 29.8722,
         "lng": 121.5522
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "宁波大学医学院附属医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Affiliated Hospital of Ningbo University School of Medicine",
       "phone": "+86 574 8703 5514",
-      "address": "Guangzhou",
+      "address": "247 Renmin Road, Jiangxia District",
       "coordinates": {
         "lat": 29.8722,
         "lng": 121.5622
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital"
     },
     {
       "type": "tourist-police",
       "name": "宁波旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Tourist Police",
       "phone": "+86 574 8719 2810",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "宁波消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Shanghai",
       "phone": "+86 21 6179 8300",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Ningbo region"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For US citizens in Ningbo region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Shanghai",
       "phone": "+86 21 5257 4788",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Ningbo region"
     },
     {
       "type": "embassy",
       "name": "韩国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Shanghai",
       "phone": "+86 21 5108 0700",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Korean citizens in Ningbo region"
     },
     {
       "type": "pharmacy",
       "name": "宁波大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Pharmacy",
       "phone": "+86 574 8733 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Multiple locations",
+      "notes": "24-hour pharmacy available"
     }
   ],
   "quickFacts": {

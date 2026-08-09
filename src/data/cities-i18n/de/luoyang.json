@@ -9,14 +9,14 @@
     "lng": 112.454
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Luoyang, eine der alten Hauptstädte Chinas, ist berühmt für die Longmen-Grotten (UNESCO), das Shaolin-Kloster und Pfingstrosenblumen. Eine Wiege der chinesischen Zivilisation mit über 5.000 Jahren Geschichte, die als Hauptstadt für dreizehn Dynastien diente.",
+  "description": "Luoyang, one of China's ancient capitals, is famous for the Longmen Grottoes (UNESCO), the Shaolin Temple, and peony flowers. A cradle of Chinese civilization with over 5,000 years of history, it served as capital for thirteen dynasties.",
   "coverImage": "/img/ext/1633beb663fe.webp",
   "highlights": [
-    "Longmen-Grotten - UNESCO-Weltkulturerbe",
-    "Shaolin-Kloster - Geburtsort des Kung-Fu",
-    "Bai-ma-Tempel - Erster buddhistischer Tempel Chinas",
-    "Pfingstrosenfest - Frühlingsfest",
-    "Laojun-Berg - Taoistischer Berg"
+    "Longmen Grottoes - UNESCO World Heritage",
+    "Shaolin Temple - Birthplace of Kung Fu",
+    "White Horse Temple - First Buddhist temple in China",
+    "Luoyang Museum - Ancient capital artifacts",
+    "Peony flowers"
   ],
   "climate": {
     "type": "Continental monsoon climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "27°C (81°F)",
     "avgWinterTemp": "2°C (36°F)",
-    "tips": "Frühling für Pfingstrosen, Herbst zum Wandern. Sommer heiß. Winter trocken und kalt. Sandstürme im Frühling möglich."
+    "tips": "Best in spring for peonies. Autumn for pleasant weather. Summers hot. Spring festival (April) is peak tourist season."
   },
   "attractions": [
     {
@@ -824,8 +824,8 @@
       "ticketPrice": "50元",
       "recommendedVisitTime": "半天",
       "highlights": [
-        "牡丹",
-        "花园"
+        "Pfingstrosen",
+        "Gärten"
       ],
       "tips": "4月中旬最佳。",
       "image": "/img/ext/804b0d965ca9.webp",
@@ -834,33 +834,33 @@
     {
       "id": "shaolin-temple",
       "name": "少林寺",
-      "nameEn": "Shaolin Temple",
+      "nameEn": "Shaolin-Tempel",
       "category": "temple",
-      "description": "中国佛教禅宗祖庭，少林武术发源地。",
-      "address": "郑州市登封市",
+      "description": "Die Wiege des chinesischen Chan-Buddhismus und Geburtsort der Shaolin-Kampfkunst.",
+      "address": "Dengfeng, Zhengzhou",
       "coordinates": {
         "lat": 34.5,
         "lng": 112.93
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "80元",
-      "recommendedVisitTime": "半天",
+      "ticketPrice": "80 Yuan",
+      "recommendedVisitTime": "Halber Tag",
       "highlights": [
-        "武术表演",
-        "塔林",
-        "达摩洞"
+        "Kampfkunstvorführungen",
+        "Pagodenwald",
+        "Höhle des Bodhidharma"
       ],
-      "tips": "观看少林武术表演。",
+      "tips": "Shaolin-Kampfkunstvorführungen besuchen.",
       "image": "/img/ext/2d07e44904af.webp",
       "phone": "+86 037 9 2950 6083"
     },
     {
       "id": "songshan-mountain",
       "name": "嵩山",
-      "nameEn": "Mount Song",
+      "nameEn": "Songshan (Mount Song)",
       "category": "nature",
-      "description": "五岳之中岳，有少林寺和嵩阳书院。",
-      "address": "郑州市登封市",
+      "description": "Der mittlere der fünf heiligen Berge Chinas, beherbergt den Shaolin-Tempel und die Songyang-Akademie.",
+      "address": "Dengfeng, Zhengzhou",
       "coordinates": {
         "lat": 34.5,
         "lng": 112.93
@@ -903,32 +903,32 @@
     {
       "id": "baiyun-mountain",
       "name": "白云山",
-      "nameEn": "Baiyun Mountain",
+      "nameEn": "Baiyun-Berg",
       "category": "nature",
-      "description": "Ein nationaler Waldpark mit dem Yuhuangding-Gipfel und dem Baiyun-See.",
-      "address": "Songxian, Luoyang",
+      "description": "Nationaler Waldpark mit dem Yuhuangding und dem Baiyun-See.",
+      "address": "洛阳市嵩县",
       "coordinates": {
         "lat": 33.78,
         "lng": 111.93
       },
-      "openingHours": "08:00-18:00",
-      "ticketPrice": "75 Yuan",
+      "openingHours": "08:00-18:00 Uhr",
+      "ticketPrice": "75元",
       "recommendedVisitTime": "Ganztägig",
       "highlights": [
-        "Yuhuangding-Gipfel",
+        "Yuhuangding",
         "Wolkenmeer",
         "Wald"
       ],
-      "tips": "Im Sommer ideal zum Kühlen.",
+      "tips": "Im Sommer kühl.",
       "image": "/img/ext/cd53396fa31a.webp",
       "phone": "+86 037 9 3655 4848"
     },
     {
       "id": "jigong-mountain",
       "name": "鸡公山",
-      "nameEn": "Jigong Mountain",
+      "nameEn": "Jigong-Berg",
       "category": "nature",
-      "description": "中国四大避暑胜地之一，有万国建筑博览之称。",
+      "description": "Einer der vier beliebtesten Sommerfrischenorte Chinas, bekannt als \"Architektur-Weltausstellung\".",
       "address": "信阳市浉河区",
       "coordinates": {
         "lat": 31.82,
@@ -936,12 +936,12 @@
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "65元",
-      "recommendedVisitTime": "全天",
+      "recommendedVisitTime": "Ganztägig",
       "highlights": [
-        "避暑",
-        "万国建筑"
+        "Kühler Rückzugsort",
+        "Architektur aus aller Welt"
       ],
-      "tips": "夏季最佳。",
+      "tips": "Am besten im Sommer.",
       "image": "/img/ext/5e88fa3d2aea.webp",
       "phone": "+86 037 9 1191 9660"
     },
@@ -950,7 +950,7 @@
       "name": "龙潭大峡谷",
       "nameEn": "Longtan Grand Canyon",
       "category": "nature",
-      "description": "世界地质公园，有罕见的水蚀地貌。",
+      "description": "Weltgeopark mit seltenen Wassererosionslandschaften.",
       "address": "洛阳市新安县",
       "coordinates": {
         "lat": 34.83,
@@ -958,12 +958,12 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "80元",
-      "recommendedVisitTime": "半天",
+      "recommendedVisitTime": "Halber Tag",
       "highlights": [
-        "峡谷",
-        "水蚀地貌"
+        "Schlucht",
+        "Wassererosionslandschaften"
       ],
-      "tips": "夏季最佳。",
+      "tips": "Am besten im Sommer.",
       "image": "/img/ext/cffe3864bd50.webp",
       "phone": "+86 037 9 6184 6488"
     },
@@ -994,20 +994,20 @@
       "name": "白云山国家森林公园",
       "nameEn": "Baiyunshan National Forest Park",
       "category": "nature",
-      "description": "Ein natürliches Erholungsgebiet im Süden von Luoyang.",
-      "address": "Songxian, Luoyang",
+      "description": "洛阳南部的天然氧吧。",
+      "address": "洛阳市嵩县",
       "coordinates": {
         "lat": 33.78,
         "lng": 111.93
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "75 Yuan",
+      "ticketPrice": "75元",
       "recommendedVisitTime": "Ganztägig",
       "highlights": [
         "Wald",
-        "Wasserfälle"
+        "Wasserfall"
       ],
-      "tips": "Im Sommer ideal zum Kühlen.",
+      "tips": "夏季避暑。",
       "image": "/img/ext/e5cee3dec59e.webp",
       "phone": "+86 037 9 2479 3412"
     },
@@ -1016,20 +1016,20 @@
       "name": "邙山",
       "nameEn": "Mang Mountain",
       "category": "nature",
-      "description": "洛阳北部的山脉，有大量古墓群。",
-      "address": "洛阳市孟津区",
+      "description": "Gebirge im Norden von Luoyang mit einer großen Anzahl von Gräbergruppen aus der Antike.",
+      "address": "Luoyang, Bezirk Mengjin",
       "coordinates": {
         "lat": 34.75,
         "lng": 112.42
       },
-      "openingHours": "全天",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "半天",
+      "openingHours": "Ganztägig",
+      "ticketPrice": "Kostenlos",
+      "recommendedVisitTime": "Halber Tag",
       "highlights": [
-        "古墓群",
-        "黄河风光"
+        "Gräbergruppen aus der Antike",
+        "Landschaft am Gelben Fluss"
       ],
-      "tips": "了解洛阳历史。",
+      "tips": "Erfahren Sie mehr über die Geschichte von Luoyang.",
       "image": "/img/ext/bf2eced6b53f.webp",
       "phone": "+86 037 9 5666 6611"
     },
@@ -1038,8 +1038,8 @@
       "name": "洛阳夜景",
       "nameEn": "Luoyang Night View",
       "category": "landmark",
-      "description": "丽景门和洛邑古城的夜景灯光秀。",
-      "address": "洛阳市老城区",
+      "description": "Nachtlichtshow am Lijing-Tor und in der antiken Stadt Luoyi.",
+      "address": "Luoyang, Altstadt",
       "coordinates": {
         "lat": 34.68,
         "lng": 112.47
@@ -1362,8 +1362,8 @@
       "tags": [
         "local",
         "noodles",
-        "traditional",
-        "popular"
+        "traditionell",
+        "beliebt"
       ],
       "imageUrl": "/img/ext/ff1d05539a86.webp",
       "phone": "+86 037 9 5397 2759"
@@ -1373,26 +1373,26 @@
       "name": "牡丹燕菜",
       "nameEn": "Peony Yan Cai",
       "type": "local",
-      "cuisine": "Luoyang",
+      "cuisine": "Luoyang-Küche",
       "avgPrice": 60,
       "rating": 4.5,
-      "address": "Various restaurants",
+      "address": "Verschiedene Restaurants",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "10:00-22:00",
-      "description": "Famous Luoyang dish made from taro and local ingredients.",
+      "description": "Berühmtes Luoyang-Gericht aus Taro und lokalen Zutaten.",
       "dishHighlights": [
         "Peony yan cai",
-        "Taro dish",
-        "Traditional recipe"
+        "Taro-Gericht",
+        "Traditionelles Rezept"
       ],
       "tags": [
-        "local",
-        "famous",
-        "traditional",
-        "luoyang-specialty"
+        "lokal",
+        "berühmt",
+        "traditionell",
+        "Luoyang-Spezialität"
       ],
       "imageUrl": "/img/ext/42709ea23cc6.webp",
       "phone": "+86 037 9 6915 7644"
@@ -1400,29 +1400,29 @@
     {
       "id": "luoyang-8",
       "name": "牛肉汤",
-      "nameEn": "Beef Soup",
+      "nameEn": "Rindersuppe",
       "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "cuisine": "Luoyang-Snacks",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Street vendors",
+      "address": "Straßenhändler",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "06:00-14:00",
-      "description": "Rich beef soup - popular breakfast in Luoyang.",
+      "description": "Reichhaltige Rindersuppe - beliebtes Frühstück in Luoyang.",
       "dishHighlights": [
-        "Beef soup",
-        "Beef brisket",
-        "Flatbread",
-        "Cilantro"
+        "Rindersuppe",
+        "Rinderbrust",
+        "Fladenbrot",
+        "Koriander"
       ],
       "tags": [
-        "local",
-        "breakfast",
-        "soup",
-        "popular"
+        "lokal",
+        "Frühstück",
+        "Suppe",
+        "beliebt"
       ],
       "imageUrl": "/img/ext/e9c9230f54bb.webp",
       "phone": "+86 037 9 1553 8323"
@@ -1432,26 +1432,26 @@
       "name": "烫面角",
       "nameEn": "Tang Mian Jiao",
       "type": "local",
-      "cuisine": "Luoyang Snacks",
+      "cuisine": "Luoyang-Snacks",
       "avgPrice": 25,
       "rating": 4.5,
-      "address": "Old City",
+      "address": "Altstadt",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "hours": "07:00-19:00",
-      "description": "Steamed dumplings with hot filling - Luoyang specialty.",
+      "description": "Gedämpfte Teigtaschen mit heißen Füllung - Luoyang Spezialität.",
       "dishHighlights": [
-        "Hot filling dumplings",
-        "Pork filling",
-        "Vegetable filling"
+        "Teigtaschen mit heißen Füllung",
+        "Schweinefleischfüllung",
+        "Gemüsefüllung"
       ],
       "tags": [
-        "local",
+        "lokal",
         "snacks",
-        "famous",
-        "dumplings"
+        "berühmt",
+        "Teigtaschen"
       ],
       "imageUrl": "/img/ext/9f805a172bcb.webp",
       "phone": "+86 037 9 0215 5434"
@@ -1464,47 +1464,47 @@
       "cuisine": "Luoyang",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "City center",
+      "address": "Stadtzentrum",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
       "phone": "+86 379 6330 8888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "High-end restaurant serving refined Luoyang cuisine.",
+      "description": "Hochwertiges Restaurant, das raffinierte Luoyang-Küche serviert.",
       "dishHighlights": [
-        "Refined water banquet",
-        "Peony dishes",
-        "Traditional recipes",
+        "Verfeinertes Wasserbankett",
+        "Pfingstrosengerichte",
+        "Traditionelle Rezepte",
         "Elegant"
       ],
       "tags": [
-        "fine-dining",
-        "luoyang-cuisine",
+        "Gehobene Küche",
+        "Luoyang-Küche",
         "elegant",
-        "special-occasion"
+        "Besonderer Anlass"
       ],
       "imageUrl": "/img/ext/3876a641f74a.png"
     },
     {
       "id": "luoyang-11",
       "name": "少林素饼",
-      "nameEn": "Shaolin Vegetarian pastries",
+      "nameEn": "Shaolin vegetarische Gebäcke",
       "type": "local",
       "cuisine": "Snacks",
       "avgPrice": 20,
       "rating": 4.4,
-      "address": "Near Shaolin Temple",
+      "address": "In der Nähe des Shaolin-Tempels",
       "coordinates": {
         "lat": 34.5022,
         "lng": 112.9322
       },
       "hours": "08:00-18:00",
-      "description": "Famous vegetarian pastries from Shaolin area.",
+      "description": "Berühmte vegetarische Gebäcke aus der Shaolin-Region.",
       "dishHighlights": [
-        "Vegetarian pastries",
-        "Various flavors",
-        "Temple area"
+        "Vegetarische Gebäcke",
+        "Verschiedene Geschmacksrichtungen",
+        "Tempelgebiet"
       ],
       "tags": [
         "local",
@@ -3126,84 +3126,84 @@
     {
       "type": "ambulance",
       "name": "洛阳急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "洛阳市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "河南科技大学第一附属医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Henan University of Science and Technology",
       "phone": "+86 379 6483 0666",
-      "address": "Guangzhou",
+      "address": "24 Jinglu Road",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "洛阳正骨医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Orthopedic Hospital",
       "phone": "+86 379 6355 2123",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "99 Xinhua Road",
+      "notes": "Famous for traditional bone-setting"
     },
     {
       "type": "fire",
       "name": "洛阳消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "tourist-police",
       "name": "洛阳旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Tourist Police",
       "phone": "+86 379 6330 8110",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "hospital",
       "name": "洛阳市中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Central Hospital",
       "phone": "+86 379 6389 2123",
-      "address": "Guangzhou",
+      "address": "288 Zhongzhou Road",
       "coordinates": {
         "lat": 34.6622,
         "lng": 112.4522
       },
-      "notes": "For Singapore citizens"
+      "notes": "24-hour emergency services"
     },
     {
       "type": "pharmacy",
       "name": "洛阳大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Pharmacy",
       "phone": "+86 379 6333 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Main street area",
+      "notes": "24-hour pharmacy"
     },
     {
       "type": "traffic",
       "name": "洛阳交通服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Traffic Police",
       "phone": "122",
-      "notes": "For Singapore citizens"
+      "notes": "Traffic accidents and road assistance"
     },
     {
       "type": "consumer-rights",
       "name": "洛阳消费者投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Luoyang Consumer Rights Hotline",
       "phone": "12315",
-      "notes": "For Singapore citizens"
+      "notes": "Consumer protection and complaints"
     }
   ],
   "quickFacts": {

@@ -9,14 +9,14 @@
     "lng": 117.3616
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "天津是直辖市之一，紧邻北京。",
+  "description": "Tianjin, a bustling port city near Beijing, blends European colonial architecture with traditional Chinese culture. Famous for the Ancient Culture Street, food culture featuring Mahua and Goubuli baozi, and the impressive Tianjin Eye Ferris wheel.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
-    "天津之眼 - 巨型摩天轮",
-    "古文化街 - 传统建筑",
-    "五大道 - 欧洲建筑",
-    "天津古文化街",
-    "海河滨河"
+    "Tianjin Eye - Giant Ferris wheel",
+    "Ancient Culture Street - Traditional architecture",
+    "Five Great Avenues - European architecture",
+    "Tianjin Ancient Cultural Street",
+    "Haihe River waterfront"
   ],
   "climate": {
     "type": "Humid continental climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
-    "tips": "春秋最佳。夏季热湿。冬季干冷。春季沙尘。"
+    "tips": "Best in spring and autumn. Summers hot and humid. Winters cold and dry. Spring brings sandstorms from Gobi Desert."
   },
   "attractions": [
     {
@@ -58,24 +58,24 @@
     {
       "id": "ancient-culture-street",
       "name": "古文化街",
-      "nameEn": "古文化街",
+      "nameEn": "Ancient Culture Street",
       "category": "cultural",
-      "description": "拥有传统建筑、寺庙和当地手工艺品的文化历史街区。",
-      "address": "和平区古文化街",
+      "description": "Historic street with traditional architecture, temples, and local crafts.",
+      "address": "Ancient Culture Street, Heping District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "openingHours": "全天开放（商店营业时间09:00-21:00）",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours (shops 09:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "天后宫",
-        "传统商店",
-        "粤剧表演",
-        "地方小吃"
+        "Tianhou Temple",
+        "Traditional shops",
+        "Cantonese opera",
+        "Local snacks"
       ],
-      "tips": "早晨氛围最佳。尝试麻花和茶。乘坐海河游船。",
+      "tips": "Best in morning for atmosphere. Try mahua and tea. Take boat ride on Haihe.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 022  9903 5780"
     },
@@ -322,24 +322,24 @@
     {
       "id": "beidadehua",
       "name": "蓟县大碱厂",
-      "nameEn": "大碱山工厂",
+      "nameEn": "Dajianshan Factory",
       "category": "cultural",
-      "description": "展示工业遗产的历史盐场。",
-      "address": "蓟县",
+      "description": "Historic salt refinery showcasing industrial heritage.",
+      "address": "Jixian County",
       "coordinates": {
         "lat": 40.0522,
         "lng": 117.4022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2小时",
+      "recommendedVisitTime": "2 hours",
       "highlights": [
-        "工业遗产",
-        "制盐",
-        "传统方法",
-        "博物馆展览"
+        "Industrial heritage",
+        "Salt making",
+        "Traditional methods",
+        "Museum exhibits"
       ],
-      "tips": "了解天津盐业历史。可以结合附近的山地游览。",
+      "tips": "Learn about Tianjin's salt industry history. Combine with nearby mountain trips.",
       "image": "/img/ext/7b494038a7eb.webp",
       "phone": "+86 022  8202 2377"
     },
@@ -396,22 +396,22 @@
       "name": "滨海新区",
       "nameEn": "Binhai New Area",
       "category": "modern",
-      "description": "现代化开发区，拥有当代建筑和娱乐设施。",
-      "address": "滨海新区",
+      "description": "Modern development zone with contemporary architecture and entertainment.",
+      "address": "Binhai New Area",
       "coordinates": {
         "lat": 38.9922,
         "lng": 117.7022
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "3-4小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-4 hours",
       "highlights": [
-        "现代化天际线",
-        "港口风光",
-        "文化中心",
-        "购物中心"
+        "Modern skyline",
+        "Harbor views",
+        "Cultural center",
+        "Shopping malls"
       ],
-      "tips": "探索天津的现代化一面。这里有中国航海博物馆。",
+      "tips": "Explore the modern side of Tianjin. The National Museum of China Seafaring is here.",
       "image": "/img/ext/9b5f1087da38.webp",
       "phone": "+86 022  1581 7961"
     },
@@ -771,7 +771,7 @@
     {
       "id": "dabeiyuan",
       "name": "大悲禅院",
-      "nameEn": "大悲禅院",
+      "nameEn": "Dabei Temple",
       "category": "temple",
       "description": "天津最大的佛教寺院，始建于清初，寺内有释迦牟尼佛真身舍利。",
       "address": "天津市河北区天纬路40号",
@@ -787,7 +787,7 @@
         "舍利",
         "古建筑"
       ],
-      "tips": "农历初一和十五有法会。",
+      "tips": "农历初一十五有法会。",
       "image": "/img/ext/18221e03b368.webp",
       "phone": "+86 022  3501 2823"
     },
@@ -978,9 +978,9 @@
     {
       "id": "bicycle-museum",
       "name": "天津自行车博物馆",
-      "nameEn": "天津自行车博物馆",
+      "nameEn": "Tianjin Bicycle Museum",
       "category": "museum",
-      "description": "中国唯一的自行车专题博物馆，展示了自行车200年的发展历史。",
+      "description": "中国唯一的自行车专题博物馆，展示了自行车200年发展历史。",
       "address": "天津市武清区",
       "coordinates": {
         "lat": 39.3667,
@@ -994,7 +994,7 @@
         "自行车历史",
         "互动体验"
       ],
-      "tips": "飞鸽自行车是天津的骄傲。",
+      "tips": "飞鸽自行车是天津骄傲。",
       "image": "/img/ext/ddd502af66fb.webp",
       "phone": "+86 022  0677 8459"
     },
@@ -1138,7 +1138,7 @@
       "name": "滨海图书馆",
       "nameEn": "Binhai Library",
       "category": "landmark",
-      "description": "由MVRDV设计，内部有34层白色阶梯式书架，被誉为最美图书馆。",
+      "description": "由MVRDV设计，内部有34层白色阶梯式书架，被称为最美图书馆。",
       "address": "天津市滨海新区中心图书馆",
       "coordinates": {
         "lat": 39.0167,
@@ -1152,7 +1152,7 @@
         "球形报告厅",
         "建筑设计"
       ],
-      "tips": "拍照非常出片。",
+      "tips": "拍照很出片。",
       "image": "/img/ext/48a33f7d6a57.webp",
       "phone": "+86 022  1461 5442"
     },
@@ -1567,14 +1567,14 @@
       "description": "Various street food stalls along the tourist street.",
       "dishHighlights": [
         "Grilled skewers",
-        "Fried dough sticks",
-        "Steamed buns"
+        "油条",
+        "馒头"
       ],
       "tags": [
-        "local",
-        "street-food",
-        "snacks",
-        "night-market"
+        "当地",
+        "街头美食",
+        "小吃",
+        "夜市"
       ],
       "imageUrl": "/img/ext/6636e42ed315.webp",
       "phone": "+86 022  2709 8976"
@@ -1582,57 +1582,57 @@
     {
       "id": "tianjin-14",
       "name": "天津海鲜坊",
-      "nameEn": "Tianjin Seafood Restaurant",
+      "nameEn": "天津海鲜餐厅",
       "type": "local",
-      "cuisine": "Seafood",
+      "cuisine": "海鲜",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Binhai New Area",
+      "address": "滨海新区",
       "coordinates": {
         "lat": 38.9922,
         "lng": 117.7022
       },
       "phone": "+86 22 6520 8888",
       "hours": "10:30-14:00, 17:00-21:30",
-      "description": "Fresh seafood restaurant near the port area.",
+      "description": "港口附近的鲜活海鲜餐厅",
       "dishHighlights": [
-        "Steamed crab",
-        "Salt shrimp",
-        "Fried fish"
+        "蒸蟹",
+        "盐虾",
+        "炸鱼"
       ],
       "tags": [
-        "local",
-        "seafood",
-        "fresh",
-        "local-catch"
+        "当地",
+        "海鲜",
+        "新鲜",
+        "本地捕获"
       ],
       "imageUrl": "/img/ext/b6df8acd446d.webp"
     },
     {
       "id": "tianjin-15",
       "name": "百饺圆",
-      "nameEn": "Bai jiao Yuan",
+      "nameEn": "百家缘",
       "type": "local",
-      "cuisine": "Dumplings",
+      "cuisine": "饺子",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "Multiple locations",
+      "address": "多个地点",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "hours": "10:00-22:00",
-      "description": "Popular for variety of delicious dumplings with unique fillings.",
+      "description": "以种类繁多、馅料独特的美味饺子而闻名",
       "dishHighlights": [
-        "Shrimp dumplings",
-        "Pork dumplings",
-        "Vegetable dumplings"
+        "虾仁饺子",
+        "猪肉饺子",
+        "素菜饺子"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "variety",
-        "popular"
+        "本地",
+        "饺子",
+        "多样",
+        "受欢迎"
       ],
       "imageUrl": "/img/ext/3a727a953eca.webp",
       "phone": "+86 022  5158 2967"
@@ -1640,28 +1640,28 @@
     {
       "id": "tianjin-16",
       "name": "砂锅李",
-      "nameEn": "Sandpot Li",
+      "nameEn": "砂锅李",
       "type": "local",
-      "cuisine": "Tianjin",
+      "cuisine": "天津菜",
       "avgPrice": 80,
       "rating": 4.5,
-      "address": "Nanshi Gate area",
+      "address": "南市门地区",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "11:00-21:00",
-      "description": "Famous for sandpot cooking and rich broth dishes.",
+      "description": "以砂锅烹饪和浓郁的汤菜闻名。",
       "dishHighlights": [
-        "Sandpot chicken",
-        "Braised meatballs",
-        "Hot and sour soup"
+        "砂锅鸡",
+        "红烧肉丸",
+        "酸辣汤"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "traditional",
-        "soup"
+        "本地",
+        "天津菜",
+        "传统",
+        "汤"
       ],
       "imageUrl": "/img/ext/ac60f6389624.webp",
       "phone": "+86 022  3037 4685"
@@ -1669,28 +1669,28 @@
     {
       "id": "tianjin-17",
       "name": "桂园餐厅",
-      "nameEn": "Guiyuan Restaurant",
+      "nameEn": "桂园餐厅",
       "type": "local",
-      "cuisine": "Tianjin",
+      "cuisine": "天津菜",
       "avgPrice": 90,
       "rating": 4.5,
-      "address": "42 Guangchuan Road, Heping District",
+      "address": "和平区广川路42号",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
       "hours": "10:30-21:30",
-      "description": "Local favorite known for home-style Tianjin dishes.",
+      "description": "本地人喜爱的家常天津菜馆",
       "dishHighlights": [
-        "Braised pork belly",
-        "Fried fish",
-        " Stir-fried vegetables"
+        "红烧肉",
+        "炸鱼",
+        "炒蔬菜"
       ],
       "tags": [
-        "local",
-        "home-style",
-        "tianjin-cuisine",
-        "value"
+        "本地",
+        "家常",
+        "天津菜",
+        "性价比高"
       ],
       "imageUrl": "/img/ext/51b76c1605be.webp",
       "phone": "+86 022  2138 4201"
@@ -1698,28 +1698,28 @@
     {
       "id": "tianjin-18",
       "name": "南市食品街",
-      "nameEn": "Nanshi Food Street",
+      "nameEn": "南市食品街",
       "type": "local",
-      "cuisine": "Various",
+      "cuisine": "多种风味",
       "avgPrice": 50,
       "rating": 4.3,
-      "address": "Nanshi Gate, Hebei District",
+      "address": "河北区南市门",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-22:00",
-      "description": "Historic food street with multiple restaurants and snack shops.",
+      "description": "历史悠久的美食街，拥有多家餐厅和小吃店",
       "dishHighlights": [
-        "Various dumplings",
-        "Tianjin snacks",
-        "Local dishes"
+        "多种饺子",
+        "天津小吃",
+        "本地菜"
       ],
       "tags": [
-        "local",
-        "food-street",
-        "snacks",
-        "variety"
+        "本地",
+        "美食街",
+        "小吃",
+        "多样"
       ],
       "imageUrl": "/img/ext/d48e7dcd448f.webp",
       "phone": "+86 022  1842 6039"
@@ -1727,58 +1727,58 @@
     {
       "id": "tianjin-19",
       "name": "老天津卫",
-      "nameEn": "Old Tianjin Wei",
+      "nameEn": "老天津味",
       "type": "local",
-      "cuisine": "Tianjin",
+      "cuisine": "天津菜",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "Near Ancient Culture Street",
+      "address": "古文化街附近",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
       "phone": "+86 22 2736 8888",
       "hours": "11:00-22:00",
-      "description": "Restaurant serving traditional Tianjin cuisine with vintage decor.",
+      "description": "提供传统天津美食的餐厅，装修复古",
       "dishHighlights": [
-        "Goubuli baozi",
-        "Fried dough twists",
-        "Tianjin classics"
+        "狗不理包子",
+        "麻花",
+        "天津经典菜"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "traditional",
-        "historic"
+        "本地",
+        "天津菜",
+        "传统",
+        "历史悠久"
       ],
       "imageUrl": "/img/ext/cdfceae14ebf.webp"
     },
     {
       "id": "tianjin-20",
       "name": "利顺德大饭店",
-      "nameEn": "Astor Hotel",
+      "nameEn": "阿斯特酒店",
       "type": "fine",
-      "cuisine": "Western/Tianjin Fusion",
+      "cuisine": "西式/天津融合",
       "avgPrice": 300,
       "rating": 4.7,
-      "address": "33 Tangji Road, Heping District",
+      "address": "33号唐吉路，和平区",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
       "phone": "+86 22 2333 1888",
       "hours": "06:30-22:00",
-      "description": "Historic luxury hotel restaurant with colonial atmosphere and quality food.",
+      "description": "历史悠久的豪华酒店餐厅，拥有殖民时期的氛围和优质美食。",
       "dishHighlights": [
-        "Western breakfast",
-        "Tianjin afternoon tea",
-        "International cuisine"
+        "西式早餐",
+        "天津下午茶",
+        "国际美食"
       ],
       "tags": [
-        "fine-dining",
-        "luxury",
-        "historic",
-        "western"
+        "精致餐饮",
+        "豪华",
+        "历史悠久",
+        "西式"
       ],
       "imageUrl": "/img/ext/552745aa80da.png"
     },
@@ -3131,90 +3131,90 @@
     {
       "type": "ambulance",
       "name": "天津急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "天津市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "天津医科大学总医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Medical University General Hospital",
       "phone": "+86 22 6036 2222",
-      "address": "Guangzhou",
+      "address": "154 Anshan Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "天津市第一中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin First Central Hospital",
       "phone": "+86 22 2362 6600",
-      "address": "Guangzhou",
+      "address": "24 Fukang Road, Nankai District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with English staff"
     },
     {
       "type": "tourist-police",
       "name": "天津旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Tourist Police",
       "phone": "+86 22 2303 1710",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "天津消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "美国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Tianjin",
       "phone": "+86 22 2318 8888",
-      "address": "Guangzhou",
+      "address": "No. 46 Nanjing Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "notes": "For Singapore citizens"
+      "notes": "Located in Tianjin's main tourist area"
     },
     {
       "type": "embassy",
       "name": "英国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Tianjin",
       "phone": "+86 22 2318 9000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Silver Tower, 56 Nanjing Road",
+      "notes": "For UK citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "法国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Tianjin",
       "phone": "+86 22 2312 3000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "5th Floor, Friendship Pavilion",
+      "notes": "For French citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "日本驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Tianjin",
       "phone": "+86 22 2313 0015",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Jiangmen Road, Heping District",
+      "notes": "For Japanese citizens in Tianjin region"
     }
   ],
   "quickFacts": {

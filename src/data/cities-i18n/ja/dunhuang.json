@@ -9,14 +9,14 @@
     "lng": 94.6618
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "敦煌はタクラマカン砂漠の端にあるオアシス都市で、古代のシルクロードの玄関口でした。壮観な莫高窟(ユネスコ)、鳴沙山の歌う砂丘、古代の玉門関があります。仏教美術、砂漠の冒険、星がいっぱいの夜空の神秘的なブレンドです。",
+  "description": "Dunhuang, a oasis city at the edge of the Taklamakan Desert, was the ancient gateway to the Silk Road. Home to the spectacular Mogao Caves (UNESCO), singing sand dunes of Mingsha Mountain, and the ancient Yumenguan Pass. A mystical blend of Buddhist art, desert adventures, and star-filled night skies.",
   "coverImage": "/img/ext/4267a852dcbd.webp",
   "highlights": [
-    "莫高窟 - 1000年の仏教美術の宝庫",
-    "鳴沙山 - 歌う砂丘",
-    "玉門関 - 古代シルクロードの要塞",
-    "月牙泉 - 砂漠のオアシス",
-    "ヤーダン地貌 - 壮大な砂漠の地質"
+    "Mogao Caves - 1,000-year Buddhist art treasury",
+    "Mingsha Mountain - Singing sand dunes",
+    "Yumenguan Pass - Ancient Silk Road fortress",
+    "Crescent Spring - Desert oasis",
+    "Yadan Landforms - Spectacular desert geology"
   ],
   "climate": {
     "type": "Temperate desert",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "25°C (77°F)",
     "avgWinterTemp": "-10°C (14°F)",
-    "tips": "5月から10月が快適。 夏は暑いですが乾燥。 冬は寒いですが洞窟は暖かい。 春の砂嵐を避ける。 莫高窟のチケットは早めに予約。"
+    "tips": "Best visited May-Oct for comfortable weather. Summers can be hot but dry. Winters cold but caves are warmer. Avoid sandstorms in spring. Book Mogao Caves tickets early."
   },
   "restaurants": [
     {
@@ -1449,9 +1449,9 @@
     {
       "id": "dunhuang-70",
       "name": "巷子驴肉黄面",
-      "nameEn": "巷子驴肉黄面 (驴肉黄面)",
+      "nameEn": "路地裏ロバ肉黄面（ロバ肉黄面）",
       "type": "local",
-      "cuisine": "驴肉黄面",
+      "cuisine": "ロバ肉黄面",
       "avgPrice": 138,
       "rating": 4.5,
       "address": "敦煌市市中心区美食街189号",
@@ -1461,16 +1461,16 @@
       },
       "phone": "+86 010 91197804",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "敦煌本地人推荐的驴肉黄面店，味道正宗，价格实惠",
+      "description": "敦煌の地元の人々がおすすめするロバ肉黄面の店。本格的な味わいで，价格手頃",
       "dishHighlights": [
-        "羊肉粉汤",
+        "羊肉粉汁",
         "杏皮水",
-        "驴肉黄面"
+        "ロバ肉黄面"
       ],
       "tags": [
-        "家常菜",
-        "性价比高",
-        "排队王"
+        "家庭料理",
+        "コストパフォーマンスが高い",
+        "行列必至の人気店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/6dac2c70ff7f.webp"
@@ -1478,9 +1478,9 @@
     {
       "id": "dunhuang-72",
       "name": "老字号胡羊焖饼",
-      "nameEn": "老字号胡羊焖饼 (胡羊焖饼)",
+      "nameEn": "老字号胡羊焖餅（胡羊焖餅）",
       "type": "local",
-      "cuisine": "胡羊焖饼",
+      "cuisine": "胡羊焖餅",
       "avgPrice": 62,
       "rating": 4.4,
       "address": "敦煌市新城区美食街143号",
@@ -1490,16 +1490,16 @@
       },
       "phone": "+86 010 86063085",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "敦煌本地人推荐的胡羊焖饼店，味道正宗，价格实惠",
+      "description": "敦煌本地の方がおすすめする羊肉の煮込みパン店は本格的な味で価格帯も手頃です",
       "dishHighlights": [
         "杏皮水",
-        "驴肉黄面",
-        "羊肉粉汤"
+        "ロバ肉と黄麺",
+        "羊肉汁"
       ],
       "tags": [
-        "家常菜",
-        "老字号",
-        "本地人爱去"
+        "家庭料理",
+        "歴史ある店舗",
+        "地元の人々に愛される店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8197f6d8f660.webp"
@@ -1519,16 +1519,16 @@
       },
       "phone": "+86 010 35427451",
       "hours": "09:00-21:00",
-      "description": "敦煌本地人推荐的杏皮水店，味道正宗，价格实惠",
+      "description": "敦煌本地の方がおすすめする杏皮水の店は本格的な味で価格帯も手頃です",
       "dishHighlights": [
         "杏皮水",
-        "羊肉粉汤",
+        "羊肉汁",
         "胡羊焖饼"
       ],
       "tags": [
-        "排队王",
-        "老字号",
-        "性价比高"
+        "行列必至",
+        "伝統のンダード",
+        "コストパフォーマンス最高"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d24e8ee76fe.webp"
@@ -1999,78 +1999,78 @@
     {
       "type": "ambulance",
       "name": "敦煌急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dunhuang Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Hospital has basic English"
     },
     {
       "type": "police",
       "name": "敦煌市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dunhuang Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major sites"
     },
     {
       "type": "hospital",
       "name": "敦煌市医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dunhuang Hospital",
       "phone": "+86 937 882 2567",
-      "address": "Guangzhou",
+      "address": "Dunhuang City",
       "coordinates": {
         "lat": 40.1421,
         "lng": 94.6618
       },
-      "notes": "For Singapore citizens"
+      "notes": "Basic medical care available"
     },
     {
       "type": "fire",
       "name": "消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Desert fire risk - be careful"
     },
     {
       "type": "tourist-police",
       "name": "敦煌旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dunhuang Tourist Police",
       "phone": "+86 937 882 9900",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "embassy",
       "name": "巴基斯坦驻乌鲁木齐总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Pakistan Consulate General Urumqi",
       "phone": "+86 991 881 4083",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Urumqi",
+      "notes": "For Pakistani citizens"
     },
     {
       "type": "desert",
       "name": "沙漠救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Desert Rescue",
       "phone": "139 9371 2110",
-      "notes": "For Singapore citizens"
+      "notes": "For desert emergencies"
     },
     {
       "type": "weather",
       "name": "敦煌气象服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dunhuang Weather Service",
       "phone": "12121",
-      "notes": "For Singapore citizens"
+      "notes": "Check before desert trips"
     },
     {
       "type": "forest",
       "name": "甘肃森林防火",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Gansu Forest Fire",
       "phone": "12119",
-      "notes": "For Singapore citizens"
+      "notes": "Desert fire prevention"
     },
     {
       "type": "road",
       "name": "甘肃路政",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Gansu Road Administration",
       "phone": "12328",
-      "notes": "For Singapore citizens"
+      "notes": "For road conditions"
     }
   ],
   "quickFacts": {
@@ -2699,8 +2699,8 @@
       "highlights": [
         "沙漠日落",
         "金色沙丘",
-        "光影变幻",
-        "摄影圣地"
+        "光影の変幻",
+        "撮影の聖地"
       ],
       "tips": "建议在日落前1-2小时到达山顶，选择好拍摄位置。带好相机和三脚架。",
       "image": "/img/ext/31a10fbcde24.webp",
@@ -2709,31 +2709,31 @@
     {
       "id": "dunhuang-mogao-art",
       "name": "莫高窟艺术馆",
-      "nameEn": "Mogao Caves Art Center",
+      "nameEn": "モガオ洞窟アートセンター",
       "category": "museum",
-      "description": "莫高窟艺术馆是莫高窟的数字展示中心，通过高清球幕电影和数字化展览，让游客在参观实体洞窟前先了解莫高窟的历史和艺术价值，是莫高窟参观的重要组成部分。",
-      "address": "敦煌市莫高窟数字展示中心",
+      "description": "莫高窟芸術館は莫高窟のデジタル展示センターで、高精細ドーム映画とデジタル展覧会を通じて、観光客が実際の洞窟を見学する前に莫高窟の歴史と芸術的価値を理解できるようにする、莫高窟見学の重要な部分です。",
+      "address": "敦煌市莫高窟デジタル展示センター",
       "coordinates": {
         "lat": 40.0389,
         "lng": 94.8056
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "含在莫高窟门票内",
-      "recommendedVisitTime": "1-2小时",
+      "ticketPrice": "莫高窟のチケットに含まれています",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
-        "球幕电影",
-        "数字化展览",
-        "莫高窟历史",
-        "壁画高清展示"
+        "ドーム映画",
+        "デジタル展覧会",
+        "莫高窟の歴史",
+        "壁画の高精細展示"
       ],
-      "tips": "必须先在数字中心观看电影，再乘坐摆渡车前往实体洞窟。建议提前预约。",
+      "tips": "必ずデジタルセンターで映画を鑑賞してから、シャトルバスで実際の洞窟に向かいます。事前に予約することをお勧めします。",
       "image": "/img/ext/74dd935d86e8.webp",
       "phone": "+86 937 886 9999"
     },
     {
       "id": "dunhuang-silk-road-museum",
       "name": "丝绸之路博物馆",
-      "nameEn": "Silk Road Museum",
+      "nameEn": "シルクロード博物館",
       "category": "museum",
       "description": "丝绸之路博物馆展示了丝绸之路的历史和文化，馆内收藏了大量丝路沿线出土的文物，包括丝绸、陶瓷、金银器等，是了解丝绸之路的重要窗口。",
       "address": "敦煌市",

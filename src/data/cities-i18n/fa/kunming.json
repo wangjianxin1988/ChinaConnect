@@ -9,14 +9,14 @@
     "lng": 102.7183
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "کونمینگ مرکز استان یوننان است. به‌عنوان \"شهر بهار\" شناخته می‌شود. در ارتفاع 1890 متر، مرکز سیاسی، اقتصادی و فرهنگی استان است. دروازه‌ای به جنگل سنگی در فهرست میراث جهانی و خانه 26 اقلیت قومی که سنت‌های غنی خود را حفظ کرده‌اند.",
+  "description": "Kunming, the capital of Yunnan province, is known as the 'Spring City' for its pleasant climate year-round. Located at an elevation of 1,890 meters, it serves as the political, economic, and cultural center of Yunnan. The city is a gateway to stunning natural landscapes including the UNESCO World Heritage Site of Stone Forest, and is home to 26 ethnic minorities preserving rich traditions.",
   "coverImage": "/img/ext/1f021c6b2874.webp",
   "highlights": [
-    "جنگل سنگی - میراث جهانی یونسکو",
-    "دریاچه دیانچی - بزرگ‌ترین دریاچه یوننان",
-    "روستای اقوام یوننان - 26 اقلیت قومی",
-    "پارک تسوئیهو - واحه شهری",
-    "دروازه جینما بیجی - طاق نمادین"
+    "Stone Forest - UNESCO World Heritage",
+    "Dianchi Lake - Largest lake in Yunnan",
+    "Yunnan Ethnic Village - 26 ethnic minorities",
+    "Cuihu Park - Urban oasis",
+    "Golden Horse and Phoenix Gate - Iconic archway"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "18-26C (64-79F)",
     "avgWinterTemp": "8-18C (46-64F)",
-    "tips": "کونمینگ به 'شهر بهار' معروف است با آب و هوای معتدل در تمام سال. تابستان فصل بارندگی (ژوئن-آگوست) است اما گرم نیست. زمستان خشک و آفتابی. به دلیل نوسانات دمایی، ژاکت در تمام سال ببرید. اشعه UV قوی به دلیل ارتفاع."
+    "tips": "Kunming is called 'Spring City' with mild weather year-round. Summer is rainy season (June-August) but not hot. Winter is dry and sunny. Bring layers year-round as temperatures vary daily. UV is strong due to high altitude."
   },
   "restaurants": [
     {
@@ -564,7 +564,7 @@
       ],
       "type": "local",
       "tags": [
-        "local"
+        "محلی"
       ],
       "rating": 4,
       "star": 0,
@@ -576,11 +576,11 @@
     {
       "id": "chuan-xiang-douhua",
       "name": "川香豆花庄",
-      "nameEn": "Chuanxiang Douhua Village",
-      "cuisine": "Sichuan-Yunnan",
+      "nameEn": "روستای چوانشیانگ دوهوا",
+      "cuisine": "سیچوان-یونان",
       "priceRange": "¥30-60¥",
-      "description": "Casual restaurant famous for tofu pudding (豆花) dishes both savory and sweet, plus Sichuan-Yunnan noodle dishes.",
-      "address": "Kunming Old Street",
+      "description": "رستوران ساده مشهور با غذاهای پودینگ توفو (豆ی) شور و شیرین، به علاوه غذاهای نودل سیچوان-یونان.",
+      "address": "خیابان قدیم کونمینگ",
       "coordinates": {
         "lat": 25.0394,
         "lng": 102.7133
@@ -594,13 +594,13 @@
       ],
       "tips": "Great breakfast spot. The tofu pudding desserts are unique. Open early - good before sightseeing. Very cheap.",
       "dishHighlights": [
-        "Savory tofu pudding",
-        "Sweet osmanthus tofu",
-        "Sichuan-style noodles"
+        "پودینگ توفو شور",
+        "توفو یاسمن شیرین",
+        "نودل به سبک سیچوان"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "محلی"
       ],
       "rating": 4,
       "star": 0,
@@ -612,16 +612,16 @@
     {
       "id": "baiya-bbq",
       "name": "白亚烤肉",
-      "nameEn": "Baiya BBQ",
-      "cuisine": "Korean BBQ",
+      "nameEn": "بیایا بی‌بی‌کیو",
+      "cuisine": "بی‌بی‌کیو کره‌ای",
       "priceRange": "¥70-120¥",
-      "description": "Popular Korean BBQ restaurant with quality beef and pork, great banchan (side dishes), and all-you-can-eat options.",
-      "address": "South Ring Area, Kunming",
+      "description": "رستوران محبوب بی‌بی‌کیو کره‌ای با گوشت گاو و خوک با کیفیت، بانچان (غذاهای جانبی) عالی، و گزینه‌های سرو نامحدود.",
+      "address": "منطقه حلقه جنوبی، کونمینگ",
       "coordinates": {
         "lat": 25.0228,
         "lng": 102.7289
       },
-      "hours": "11:00-14:30, 17:00-22:00",
+      "hours": "11:00-14:30، 17:00-22:00",
       "highlights": [
         "Premium beef bulgogi",
         "Pork belly BBQ",
@@ -630,13 +630,13 @@
       ],
       "tips": "Good air conditioning - escape summer heat. All-you-can-eat is good value. Dinner reservation needed on weekends.",
       "dishHighlights": [
-        "Premium beef bulgogi",
-        "Pork belly BBQ",
-        "All-you-can-eat menu"
+        "گوشت گوساله پرمیوم بولگوگی",
+        "باربیکیوی شکم خوک",
+        "منوی بدون محدودیت"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "محلی"
       ],
       "rating": 4,
       "star": 0,
@@ -648,11 +648,11 @@
     {
       "id": "xinying-cuisine",
       "name": "新营家乡菜",
-      "nameEn": "Xinying Home Cuisine",
-      "cuisine": "Yunnan Home Style",
+      "nameEn": "زینینگ هوم کویزین",
+      "cuisine": "سبک خانه یوننان",
       "priceRange": "¥40-80¥",
-      "description": "Home-style Yunnan cooking with emphasis on fresh seasonal ingredients and traditional recipes from Kunming area.",
-      "address": "Guanghua Street, Kunming",
+      "description": "آشپزی خانگی یوننان با تأکید بر مواد اولیه تازه فصلی و دستورالعمل‌های سنتی از منطقه کونمینگ",
+      "address": "خیابان گوانگهوا، کونمینگ",
       "coordinates": {
         "lat": 25.0411,
         "lng": 102.7122
@@ -666,13 +666,13 @@
       ],
       "tips": "No-frills local restaurant. Point at ingredients in kitchen. Rice is unlimited. Very popular with office workers at lunch.",
       "dishHighlights": [
-        "Fried eggs with tomato",
-        "Home-style braised pork",
-        "Stir-fried greens"
+        "تخم‌مرغ سرخ‌شده با گوجه‌فرنگی",
+        "خورشت خوک خانگی",
+        "سبزیجات تفت‌داده شده"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "محلی"
       ],
       "rating": 4,
       "star": 0,
@@ -684,16 +684,16 @@
     {
       "id": "yunnanhua-ristorante",
       "name": "云南花意式餐厅",
-      "nameEn": "Yunnan Hua Italian Restaurant",
-      "cuisine": "Italian",
+      "nameEn": "رستوران ایتالیایی یوننان هوا",
+      "cuisine": "ایتالیایی",
       "priceRange": "¥80-150¥",
-      "description": "Italian restaurant in Kunming using Yunnan local ingredients like wild mushrooms and herbs in traditional Italian recipes.",
-      "address": "Park 1903, Kunming",
+      "description": "رستوران ایتالیایی در کونمینگ با استفاده از مواد محلی یوننان مانند قارچ‌های وحشی و گیاهان در دستورالعمل‌های سنتی ایتالیایی.",
+      "address": "پارک ۱۹۰۳، کونمینگ",
       "coordinates": {
         "lat": 25.0178,
         "lng": 102.6844
       },
-      "hours": "11:00-22:00",
+      "hours": "۱۱:۰۰-۲۲:۰۰",
       "highlights": [
         "Mushroom risotto",
         "Yunnan truffle pasta",
@@ -702,13 +702,13 @@
       ],
       "tips": "Great for Western food cravings. Fusion menu is interesting. Romantic atmosphere. Pricey by Yunnan standards.",
       "dishHighlights": [
-        "Mushroom risotto",
-        "Yunnan truffle pasta",
-        "Local ingredient pizza"
+        "ریزوتوی قارچ",
+        "پاستای ترفل یوننان",
+        "پیتزای مواد محلی"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "محلی"
       ],
       "rating": 4,
       "star": 0,
@@ -720,16 +720,16 @@
     {
       "id": "minshan-food-court",
       "name": "民升美食广场",
-      "nameEn": "Minshan Food Court",
-      "cuisine": "Multiple",
+      "nameEn": "شعبه غذایی مینشان",
+      "cuisine": "چندگانه",
       "priceRange": "¥20-50¥",
-      "description": "Multi-vendor food court in department store with various Yunnan and Chinese fast food options at reasonable prices.",
-      "address": "Minshan Department Store, Kunming",
+      "description": "شعبه غذایی چند فروشنده در فروشگاه بزرگ با گزینه‌های مختلف فست فود یوننان و چینی با قیمت‌های مناسب.",
+      "address": "فروشگاه بزرگ مینشان، کونمینگ",
       "coordinates": {
         "lat": 25.0356,
         "lng": 102.7256
       },
-      "hours": "10:00-21:00",
+      "hours": "۱۰:۰۰-۲۱:۰۰",
       "highlights": [
         "Rice noodle stations",
         "Braised dishes",
@@ -738,9 +738,9 @@
       ],
       "tips": "Good for quick, cheap meals. Each vendor has own opening hours. AC available. Easy to find in city center.",
       "dishHighlights": [
-        "Rice noodle stations",
-        "Braised dishes",
-        "Hot and sour noodles"
+        "ایستگاه‌های رشته برنجی",
+        "غذاهای سوخاری",
+        "نودل ترش و تند"
       ],
       "type": "local",
       "tags": [
@@ -2224,167 +2224,167 @@
     {
       "type": "fire",
       "name": "昆明消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "昆明急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Kunming city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Kunming City Center"
     },
     {
       "id": "fire",
       "name": "昆明市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "ambulance",
       "name": "昆明市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "tourism-hotline",
       "name": "昆明市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Complaint Hotline",
       "phone": "0871-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "entry-exit",
       "name": "昆明市公安局出入境管理处",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Exit-Entry Administration",
       "phone": "0871-6715555",
       "type": "government",
       "description": "Passport, visa, and exit-entry services",
-      "address": "Guangzhou"
+      "address": "Guanhua Road, Kunming"
     },
     {
       "id": "supervision",
       "name": "昆明市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Enforcement Brigade",
       "phone": "0871-6535233",
       "type": "tourism",
       "description": "Report illegal tourism activities",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "weather",
       "name": "昆明市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and severe weather warnings",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "consumer-complaints",
       "name": "昆明市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Consumers Association",
       "phone": "0871-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "forestry",
       "name": "昆明市森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Forest Fire Prevention",
       "phone": "0871-12119",
       "type": "emergency",
       "description": "Forest fire reporting and prevention",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency Management",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "china-post",
       "name": "中国邮政速递",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "China Post Express",
       "phone": "11183",
       "type": "delivery",
       "description": "Mail and package delivery services",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "water-emergency",
       "name": "昆明市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Water Supply Company",
       "phone": "0871-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "electricity-emergency",
       "name": "昆明供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "gas-emergency",
       "name": "昆明市燃气公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Gas Company",
       "phone": "0871-96107",
       "type": "utility",
       "description": "Gas leak and gas emergency reporting",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "railway-complaints",
       "name": "昆明铁路投诉",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Railway Station Complaints",
       "phone": "0871-12306",
       "type": "transport",
       "description": "Railway ticket inquiries and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming Railway Station"
     },
     {
       "id": "national-tourism-complaint",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     }
   ],
   "culturalTips": [
@@ -2923,22 +2923,22 @@
       "name": "黑龙潭",
       "nameEn": "Black Dragon Pool",
       "category": "cultural",
-      "description": "Historic Naxi garden with the iconic view of Jade Dragon Snow Mountain reflected in the pond. Features traditional Naxi architecture and cultural performances.",
-      "address": "Black Dragon Pool Park, Lijiang",
+      "description": "A historic Taoist temple complex with ancient plum trees, lotus ponds, and the famous 'Three Immortals' cypress trees over 500 years old.",
+      "address": "Black Dragon Pool Park, Kunming",
       "coordinates": {
         "lat": 25.1367,
         "lng": 102.7217
       },
-      "openingHours": "07:00-19:00",
-      "ticketPrice": "Free (ID required)",
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "15¥",
       "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Reflection of Jade Dragon Mountain",
-        "Five Phoenix Bridge",
-        "Naxi music performances",
-        "Ancient Deyi Hall"
+        "Ancient plum garden (500+ trees)",
+        "Taoist temple",
+        "Lotus pond",
+        "Three Immortals cypress"
       ],
-      "tips": "Best photo spot in Lijiang at sunrise when mountain reflection is clear. Naxi ancient music show at 13:30-14:30 and 15:30-16:30 (weather permitting). Bring ID for free entry.",
+      "tips": "Best visited during plum blossom season (January-February). Beautiful lotus in summer. Less crowded than major attractions. Famous for plum flower painting.",
       "imageUrl": "/img/ext/5154598fab62.webp",
       "image": "/img/ext/994bfae9b723.webp",
       "phone": "+86 087 1 2691 4370"
@@ -3071,24 +3071,24 @@
     {
       "id": "shuangta-scenic-area",
       "name": "双塔景区",
-      "nameEn": "Shuangta (Twin Towers) Scenic Area",
+      "nameEn": "منطقه دیدنی شوانگتا (برج‌های دوقلو)",
       "category": "cultural",
-      "description": "Two ancient Buddhist pagodas dating to the Tang Dynasty (9th century), standing 43 meters tall as the oldest surviving architecture in Kunming.",
-      "address": "Shuangta Scenic Area, Kunming",
+      "description": "دو برج بودایی قدیمی متعلق به دوره تانگ (قرن نهم)، که به ارتفاع ۴۳ متر به عنوان قدیمی‌ترین ساختمان باقی‌مانده در کونمینگ ایستاده‌اند.",
+      "address": "منطقه گردشگری شوانگتا، کونمینگ",
       "coordinates": {
         "lat": 25.0583,
         "lng": 102.7256
       },
-      "openingHours": "08:30-17:30",
-      "ticketPrice": "20¥",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "۰۸:۳۰-۱۷:۳۰",
+      "ticketPrice": "۲۰¥",
+      "recommendedVisitTime": "۱ تا ۲ ساعت",
       "highlights": [
-        "Tang Dynasty pagodas",
-        "Buddhist artifacts",
-        "City view from top",
-        "Peaceful temple grounds"
+        "برج‌های دوره تانگ",
+        "اثار بودایی",
+        "منظره شهر از بالا",
+        "محیط آرام معبد"
       ],
-      "tips": "Less crowded than other attractions. Climb to top for panoramic views. Evening lighting makes for dramatic photos. Buddhist festivals bring special events.",
+      "tips": "از دیگر جاذبه‌ها کمتر شلوغ است. برای دیدن مناظر ۳۶۰ درجه‌ای به بالای برج بروید. نورپردازی عصرانه باعث ایجاد عکس‌هایی دل‌نشین می‌شود. جشن‌های بودایی رویدادهای ویژه‌ای را به همراه دارند.",
       "imageUrl": "/img/ext/2f9ab66b1c44.webp",
       "image": "/img/ext/6b2d02d1e270.webp",
       "phone": "+86 087 1 7449 2051"
@@ -3498,22 +3498,22 @@
       "name": "安宁温泉",
       "nameEn": "Anning Hot Springs",
       "category": "natural",
-      "description": "منطقه معروف به چشمه‌های آب گرم در فاصله ۴۰ کیلومتری کونمینگ، که به دلیل آب‌های سرشار از مواد معدنی و فرهنگ تاریخی مراقبت از بدن شناخته شده است.",
-      "address": "شهرستان آنینگ، کونمینگ",
+      "description": "Famous hot spring resort area 40km from Kunming, known for its mineral-rich waters and historic spa culture.",
+      "address": "Anning County, Kunming",
       "coordinates": {
         "lat": 24.9533,
         "lng": 102.4856
       },
-      "openingHours": "چندین رزورت در ساعت ۰۸:۰۰ تا ۲۲:۰۰ باز هستند",
-      "ticketPrice": "50-200¥ (بسته به مجموعه)",
-      "recommendedVisitTime": "نیم روز تا یک روز کامل",
+      "openingHours": "Various resorts open 08:00-22:00",
+      "ticketPrice": "50-200¥ (resort dependent)",
+      "recommendedVisitTime": "Half day to full day",
       "highlights": [
-        "چشمه‌های آب گرم معدنی",
-        "حمام‌های تاریخی",
-        "مناظر کوهستانی",
-        "تجربه تندرستی"
+        "Mineral hot springs",
+        "Historic spas",
+        "Mountain scenery",
+        "Wellness experience"
       ],
-      "tips": "مناسب برای استراحت. چندین مجموعه برای انتخاب وجود دارد. لباس شنا و حوله همراه داشته باشید. با سفر یک روزه ترکیب کنید. بازدید در روزهای هفته آرام‌تر است.",
+      "tips": "Best for relaxation. Several resorts to choose from. Bring swimwear and towel. Combine with day trip. Weekday visits are quieter.",
       "imageUrl": "/img/ext/70935779a4e0.webp",
       "image": "/img/ext/b5d669b537f9.webp",
       "phone": "+86 087 1 2814 7511"

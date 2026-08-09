@@ -9,14 +9,14 @@
     "lng": 102.7183
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "昆明是云南省的省会，被誉为春城，四季气候宜人。",
+  "description": "Kunming, the capital of Yunnan province, is known as the 'Spring City' for its pleasant climate year-round. Located at an elevation of 1,890 meters, it serves as the political, economic, and cultural center of Yunnan. The city is a gateway to stunning natural landscapes including the UNESCO World Heritage Site of Stone Forest, and is home to 26 ethnic minorities preserving rich traditions.",
   "coverImage": "/img/ext/1f021c6b2874.webp",
   "highlights": [
-    "石林 - 联合国教科文组织遗产",
-    "滇池 - 云南最大湖",
-    "云南民族村 - 26个少数民族",
-    "翠湖公园 - 城市绿洲",
-    "金马碧鸡坊 - 标志牌坊"
+    "石林——联合国教科文组织世界遗产",
+    "滇池——云南省最大湖泊",
+    "云南民族村——26个少数民族",
+    "翠湖公园——城市绿洲",
+    "金马碧鸡坊——标志性牌坊"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "18-26C (64-79F)",
     "avgWinterTemp": "8-18C (46-64F)",
-    "tips": "「春城」全年气候温和。夏季雨季（6-8月）但不热。冬季干晴。昼夜温差大备外套。高海拔紫外线强。"
+    "tips": "Kunming is called 'Spring City' with mild weather year-round. Summer is rainy season (June-August) but not hot. Winter is dry and sunny. Bring layers year-round as temperatures vary daily. UV is strong due to high altitude."
   },
   "restaurants": [
     {
@@ -397,10 +397,10 @@
       "id": "shuxiang-ethnic",
       "name": "蜀香民族菜",
       "nameEn": "Shuxiang Ethnic Cuisine",
-      "cuisine": "Yi Ethnic",
+      "cuisine": "彝族风味",
       "priceRange": "¥50-80¥",
-      "description": "Authentic Yi ethnic cuisine with famous spicy dishes and traditional cooking methods from the Yi people.",
-      "address": "North Ring Road, Kunming",
+      "description": "正宗的彝族美食，以彝族特色的辣味菜肴和传统烹饪方法而闻名。",
+      "address": "昆明市北环大道",
       "coordinates": {
         "lat": 25.0656,
         "lng": 102.7128
@@ -414,13 +414,13 @@
       ],
       "tips": "Very local - English menu unlikely. Point and choose from kitchen. The spicy chicken is addictive. Good for adventurous eaters.",
       "dishHighlights": [
-        "Yi spicy chicken",
-        "Candied pork ribs",
-        "Buckwheat cakes"
+        "彝族辣子鸡",
+        "蜜汁排骨",
+        "荞麦饼"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "本地特色"
       ],
       "rating": 4,
       "star": 0,
@@ -938,7 +938,7 @@
       "name": "昆明味饵块",
       "nameEn": "昆明味饵块 (饵块)",
       "type": "local",
-      "cuisine": "饵块",
+      "cuisine": "饵块（云南特色米制品）",
       "avgPrice": 122,
       "rating": 4.9,
       "address": "昆明市市中心区美食街149号",
@@ -950,9 +950,9 @@
       "hours": "06:00-14:00",
       "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
       "dishHighlights": [
-        "菌子火锅",
+        "野生菌火锅",
         "过桥米线",
-        "鲜花饼"
+        "鲜花饼（玫瑰馅饼）"
       ],
       "tags": [
         "性价比高",
@@ -2224,167 +2224,167 @@
     {
       "type": "fire",
       "name": "昆明消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "昆明急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Kunming city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Kunming City Center"
     },
     {
       "id": "fire",
       "name": "昆明市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "ambulance",
       "name": "昆明市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "tourism-hotline",
       "name": "昆明市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Complaint Hotline",
       "phone": "0871-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "entry-exit",
       "name": "昆明市公安局出入境管理处",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Exit-Entry Administration",
       "phone": "0871-6715555",
       "type": "government",
       "description": "Passport, visa, and exit-entry services",
-      "address": "Guangzhou"
+      "address": "Guanhua Road, Kunming"
     },
     {
       "id": "supervision",
       "name": "昆明市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Enforcement Brigade",
       "phone": "0871-6535233",
       "type": "tourism",
       "description": "Report illegal tourism activities",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "weather",
       "name": "昆明市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and severe weather warnings",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "consumer-complaints",
       "name": "昆明市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Consumers Association",
       "phone": "0871-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "forestry",
       "name": "昆明市森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Forest Fire Prevention",
       "phone": "0871-12119",
       "type": "emergency",
       "description": "Forest fire reporting and prevention",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency Management",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "china-post",
       "name": "中国邮政速递",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "China Post Express",
       "phone": "11183",
       "type": "delivery",
       "description": "Mail and package delivery services",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "water-emergency",
       "name": "昆明市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Water Supply Company",
       "phone": "0871-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "electricity-emergency",
       "name": "昆明供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "gas-emergency",
       "name": "昆明市燃气公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Gas Company",
       "phone": "0871-96107",
       "type": "utility",
       "description": "Gas leak and gas emergency reporting",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "railway-complaints",
       "name": "昆明铁路投诉",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Railway Station Complaints",
       "phone": "0871-12306",
       "type": "transport",
       "description": "Railway ticket inquiries and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming Railway Station"
     },
     {
       "id": "national-tourism-complaint",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     }
   ],
   "culturalTips": [
@@ -2771,9 +2771,9 @@
     {
       "id": "stone-forest",
       "name": "石林",
-      "nameEn": "Stone Forest",
+      "nameEn": "石林",
       "category": "natural",
-      "description": "UNESCO World Heritage Site featuring thousands of limestone pillars formed over 270 million years, creating a dramatic forest-like landscape of stone formations.",
+      "description": "联合国教科文组织世界遗产，展示了数千年石灰岩柱，这些岩柱形成于2.7亿多年前，形成了壮观的石林景观。",
       "address": "Stone Forest Scenic Area, Shilin County, Yunnan",
       "coordinates": {
         "lat": 24.8155,
@@ -2798,22 +2798,22 @@
       "name": "滇池",
       "nameEn": "Dianchi Lake",
       "category": "natural",
-      "description": "云南省最大的湖泊，也是中国第六大淡水湖，可欣赏城市天际线和昆明'西湖'般的美景。",
-      "address": "昆明滇池",
+      "description": "The largest lake in Yunnan and sixth largest freshwater lake in China, offering scenic views of the city skyline and Kunming's 'West Lake' experience.",
+      "address": "Dianchi Lake, Kunming",
       "coordinates": {
         "lat": 24.8607,
         "lng": 102.6525
       },
-      "openingHours": "24小时开放",
-      "ticketPrice": "免费（海埂公园20¥）",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (Haigeng Park 20¥)",
       "recommendedVisitTime": "2-3小时",
       "highlights": [
         "海埂公园景观",
         "湖上日出/日落",
-        "昆明绣球花公园",
+        "昆明绣球花园",
         "云南民族博物馆区域"
       ],
-      "tips": "最佳观赏时间为日出或日落时分，可拍摄壮丽照片。海埂公园拥有美丽的花园。湖水受到污染，请勿游泳或饮用。冬季有候鸟栖息。",
+      "tips": "Best visited at sunrise or sunset for dramatic photos. Haigeng Park has beautiful gardens. The lake is polluted - don't swim or drink. Winter brings migratory birds.",
       "imageUrl": "/img/ext/__missing.svg",
       "image": "/img/ext/c88b9139e838.webp",
       "phone": "+86 871 6824 0909"
@@ -2821,24 +2821,24 @@
     {
       "id": "yunnan-ethnic-village",
       "name": "云南民族村",
-      "nameEn": "Yunnan Ethnic Village",
+      "nameEn": "云南民族村",
       "category": "cultural",
-      "description": "A theme park showcasing the customs, architecture, and traditions of Yunnan's 26 ethnic minorities in their authentic village settings.",
-      "address": "99 Yunnan Ethnic Village Road, Kunming",
+      "description": "一个主题公园，展示云南26个少数民族在真实村落环境中的习俗、建筑和传统。",
+      "address": "昆明市云南民族村路99号",
       "coordinates": {
         "lat": 24.9944,
         "lng": 102.7139
       },
       "openingHours": "08:30-17:00",
-      "ticketPrice": "90¥",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "90元",
+      "recommendedVisitTime": "3-4小时",
       "highlights": [
-        "Bai Village (Dali style)",
-        "Yi Village traditional houses",
-        "Miao village bridge",
+        "白族村（大理风格）",
+        "彝族传统民居",
+        "苗族吊桥",
         "Ethnic performance shows"
       ],
-      "tips": "Arrive when gates open for best experience. Daily performance schedule available at entrance. Allow 3+ hours minimum. Combine with nearby Western Hills.",
+      "tips": "建议开门时到达以获得最佳体验。演出时间表可在入口处查看。建议至少预留3小时。可与附近的西山景区一起游览。",
       "imageUrl": "/img/ext/__missing.svg",
       "image": "/img/ext/d16468fc58ec.webp",
       "phone": "+86 871 6431 1255"
@@ -2846,24 +2846,24 @@
     {
       "id": "cuihu-park",
       "name": "翠湖",
-      "nameEn": "翠湖公园",
+      "nameEn": "Cuihu Park",
       "category": "natural",
-      "description": "位于昆明市中心的城市绿洲，以风景如画的湖泊、荷花池和历史悠久的亭台楼阁而闻名，是当地人晨练太极和散步的热门场所。",
-      "address": "昆明翠湖公园",
+      "description": "An urban oasis in central Kunming featuring a scenic lake, lotus ponds, and historic pavilions, popular with locals for morning tai chi and散步.",
+      "address": "Cuihu Park, Kunming",
       "coordinates": {
         "lat": 25.0442,
         "lng": 102.7039
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "观赏荷花池",
-        "附近的云南大学",
-        "佛教寺庙",
-        "当地太极聚会"
+        "Lotus pond viewing",
+        "Yunnan University nearby",
+        "Buddhist temple",
+        "Local tai chi gatherings"
       ],
-      "tips": "清晨最适合打太极和欣赏传统音乐。夏季有美丽的荷花。周边街道有不错的咖啡店。与云南大学区域相连。",
+      "tips": "Best in early morning for tai chi and traditional music. Summer has beautiful lotus flowers. Surrounding streets have good coffee shops. Connected to Yunnan University area.",
       "imageUrl": "/img/ext/ce9c08e43337.webp",
       "image": "/img/ext/0157338d5fd9.webp",
       "phone": "+86 087 1 0762 5400"
@@ -2923,22 +2923,22 @@
       "name": "黑龙潭",
       "nameEn": "Black Dragon Pool",
       "category": "cultural",
-      "description": "历史悠久的纳西族园林，以池塘中倒映的玉龙雪山美景而闻名。园内拥有传统的纳西族建筑和文化表演。",
-      "address": "丽江市黑龙潭公园",
+      "description": "A historic Taoist temple complex with ancient plum trees, lotus ponds, and the famous 'Three Immortals' cypress trees over 500 years old.",
+      "address": "Black Dragon Pool Park, Kunming",
       "coordinates": {
         "lat": 25.1367,
         "lng": 102.7217
       },
-      "openingHours": "07:00-19:00",
-      "ticketPrice": "免费（需出示身份证件）",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "15¥",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "玉龙雪山倒影",
-        "五凤桥",
-        "纳西族音乐表演",
-        "德怡古堂"
+        "Ancient plum garden (500+ trees)",
+        "Taoist temple",
+        "Lotus pond",
+        "Three Immortals cypress"
       ],
-      "tips": "丽江最佳日出摄影点，山峰倒影清晰可见。纳西古乐表演时间为13:30-14:30和15:30-16:30（视天气情况而定）。请携带身份证件以免费进入。",
+      "tips": "Best visited during plum blossom season (January-February). Beautiful lotus in summer. Less crowded than major attractions. Famous for plum flower painting.",
       "imageUrl": "/img/ext/5154598fab62.webp",
       "image": "/img/ext/994bfae9b723.webp",
       "phone": "+86 087 1 2691 4370"
@@ -2948,22 +2948,22 @@
       "name": "大观公园",
       "nameEn": "Daguan Park",
       "category": "natural",
-      "description": "以历史悠久的大观楼内展示的《云南第一景》水墨画而闻名，此外还有湖畔花园和长达1800米的长廊。",
-      "address": "昆明，大观公园",
+      "description": "Famous for the 'First Scenery of Yunnan' ink painting displayed in the historic Daguan Lou pavilion, plus lakeside gardens and the 1800m long corridor.",
+      "address": "Daguan Park, Kunming",
       "coordinates": {
         "lat": 24.9744,
         "lng": 102.6533
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "2小时",
+      "recommendedVisitTime": "2 hours",
       "highlights": [
-        "大观楼",
-        "著名书法长卷",
-        "湖景",
-        "花卉展览"
+        "Daguan Lou pavilion",
+        "Famous calligraphy scroll",
+        "Lake views",
+        "Flower exhibitions"
       ],
-      "tips": "参观亭子，欣赏著名的《云南第一景》画作（复制品）。春天花卉展览期间最佳，适合在滇池湖畔拍摄日落。",
+      "tips": "Visit the pavilion for the famous 'First Scenery of Yunnan' painting (replica). Best in spring for flower shows. Good for sunset photos over Dianchi Lake.",
       "imageUrl": "/img/ext/b28feee247a1.webp",
       "image": "/img/ext/7419ff91732e.webp",
       "phone": "+86 087 1 9391 5210"
@@ -3323,22 +3323,22 @@
       "name": "滇池长廊",
       "nameEn": "Dianchi Lake Promenade",
       "category": "natural",
-      "description": "风景优美的湖滨长廊，拥有花园、健身区域，可欣赏滇池和西山的美景。",
-      "address": "昆明滇池",
+      "description": "Scenic lakefront promenade with gardens, exercise areas, and views of Dianchi Lake and Western Hills.",
+      "address": "Dianchi Lake, Kunming",
       "coordinates": {
         "lat": 24.8767,
         "lng": 102.6656
       },
-      "openingHours": "24小时开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "1-2小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "湖景",
-        "晨间太极拳",
-        "自行车道",
-        "花卉园"
+        "Lake views",
+        "Morning tai chi",
+        "Cycling path",
+        "Flower gardens"
       ],
-      "tips": "日出时分最适合拍照。当地人喜欢在这里锻炼。租一辆自行车游览。带上防晒霜。",
+      "tips": "Best at sunrise for photos. Popular with locals doing exercise. Rent a bike for exploring. Bring sunscreen.",
       "imageUrl": "/img/ext/1d4455eab5a5.webp",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 087 1 0205 0719"
@@ -3498,22 +3498,22 @@
       "name": "安宁温泉",
       "nameEn": "Anning Hot Springs",
       "category": "natural",
-      "description": "昆明市40公里外的著名温泉度假区，以富含矿物质的泉水和悠久的水疗文化而闻名。",
-      "address": "昆明市安宁县",
+      "description": "Famous hot spring resort area 40km from Kunming, known for its mineral-rich waters and historic spa culture.",
+      "address": "Anning County, Kunming",
       "coordinates": {
         "lat": 24.9533,
         "lng": 102.4856
       },
-      "openingHours": "各度假村开放时间为08:00-22:00",
-      "ticketPrice": "50-200¥（具体价格视度假村而定）",
-      "recommendedVisitTime": "半天至全天",
+      "openingHours": "Various resorts open 08:00-22:00",
+      "ticketPrice": "50-200¥ (resort dependent)",
+      "recommendedVisitTime": "Half day to full day",
       "highlights": [
-        "矿物质温泉",
-        "历史悠久的水疗中心",
-        "山景",
-        "养生体验"
+        "Mineral hot springs",
+        "Historic spas",
+        "Mountain scenery",
+        "Wellness experience"
       ],
-      "tips": "非常适合放松身心。有多家度假村可供选择，记得带上泳衣和毛巾。可以结合一日游安排，工作日人较少。",
+      "tips": "Best for relaxation. Several resorts to choose from. Bring swimwear and towel. Combine with day trip. Weekday visits are quieter.",
       "imageUrl": "/img/ext/70935779a4e0.webp",
       "image": "/img/ext/b5d669b537f9.webp",
       "phone": "+86 087 1 2814 7511"
@@ -3523,7 +3523,7 @@
       "name": "东川红土地",
       "nameEn": "Dongchuan Red Land",
       "category": "nature",
-      "description": "被誉为上帝的调色板，东川红土地以其壮观的红色土壤和多彩的农作物闻名，是摄影爱好者的天堂，色彩斑斓的田野在不同季节呈现出不同的美景。",
+      "description": "被誉为上帝的调色板，东川红土地以其壮观的红色土壤和多彩的农作物闻名于世，是摄影爱好者的天堂，色彩斑斓的田野在不同季节呈现出不同的美景。",
       "address": "昆明市东川区新田乡花石头村",
       "coordinates": {
         "lat": 26.0833,

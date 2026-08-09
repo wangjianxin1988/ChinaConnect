@@ -9,14 +9,14 @@
     "lng": 120.1551
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "هانگژو مرکز استان چجیانگ است. به‌خاطر زیبایی طبیعی و فرهنگ تاریخی مشهور است. دریاچه غربی، میراث جهانی یونسکو و فضای آب‌شهر باستانی کانال بزرگ را در خود جای داده است. به‌عنوان \"بهشت روی زمین\" به‌خاطر آب و هوای ملایم، سبزینگی سرسبز و باغ‌های ظریف شناخته می‌شود. مقر علی‌بابا و مرکز پیشرو فناوری است.",
+  "description": "Hangzhou, the capital of Zhejiang Province, is famous for its natural beauty and historical culture. Home to West Lake, a UNESCO World Heritage site, and the ancient water town ambiance of the Grand Canal. Known as 'Paradise on Earth' for its mild climate, lush greenery, and elegant gardens. A leading tech hub as headquarters of Alibaba.",
   "coverImage": "/img/ext/c71341b19c1d.webp",
   "highlights": [
-    "دریاچه غربی - میراث جهانی یونسکو",
-    "دریاچه شیانگهو - منطقه دیدنی جدید",
-    "خیابان هفانگ - خیابان خرید تاریخی",
-    "معبد لینگین - معبد بودایی قدیمی",
-    "تالاب شیشی - بزرگ‌ترین تالاب شهری"
+    "West Lake - UNESCO World Heritage",
+    "Xianghu Lake - New scenic area",
+    "Hefang Street - Historic shopping street",
+    "Lingyin Temple - Ancient Buddhist temple",
+    "Xixi Wetland - Largest urban wetland"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "بهار برای گل، پاییز برای برگ‌های رنگارنگ. تابستان گرم، مرطوب و بارانی. فصل باران‌های ژوئن. کفش راحت برای پیاده‌روی اطراف دریاچه غربی."
+    "tips": "Best visited in spring for flowers or autumn for golden foliage. Summer is hot and humid with frequent rain. Spring rainy season (Meiyu) in June. Wear comfortable shoes for walking around West Lake."
   },
   "attractions": [
     {
@@ -87,22 +87,22 @@
       "nameEn": "Lingyin Temple",
       "image": "/img/ext/928aa4512683.webp",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on a scenic hill with beautiful gardens.",
-      "address": "Lingyin Temple, Suzhou",
+      "description": "One of the oldest and most famous Buddhist temples in China, dating back to 326 AD, with stunning architecture and rock carvings.",
+      "address": "1 Lingyin Road, Xihu District",
       "coordinates": {
         "lat": 30.2372,
         "lng": 120.1022
       },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "45¥",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "06:30-17:30 (Summer), 07:00-17:30 (Winter)",
+      "ticketPrice": "45¥ (temple), additional 55¥ for Feilai Feng peak",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Temple",
-        "Gardens",
-        "Pagodas",
+        "Feilai Feng peak",
+        "Hall of the Heavenly Kings",
+        "Mahavira Hall",
         "Cave of the 500 Arhats"
       ],
-      "tips": "Climb the hill for views.",
+      "tips": "Arrive early to avoid tour groups. The temple is at the foot of Feilai Feng. Wear modest clothing covering shoulders and knees.",
       "phone": "+86 571 8717 1156"
     },
     {
@@ -1237,10 +1237,10 @@
         "Braised pork belly"
       ],
       "tags": [
-        "local",
-        "casual",
-        "family-friendly",
-        "value"
+        "محلی",
+        "غیررسمی",
+        "مناسب خانواده",
+        "ارزش"
       ],
       "star": 0,
       "diamond": 0,
@@ -1249,29 +1249,29 @@
     {
       "id": "hangzhou-3",
       "name": "知味观",
-      "nameEn": "Zhi Wei Guan",
+      "nameEn": "زی وی گوان",
       "type": "blackpearl",
       "diamond": 1,
-      "cuisine": "Hangzhou",
+      "cuisine": "هانگژو",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "2 Gaoyin Road, Shangcheng District",
+      "address": "۲ خیابان گایین، ناحیه شانگچنگ",
       "coordinates": {
         "lat": 30.2482,
         "lng": 120.1722
       },
       "phone": "+86 571 8706 5523",
-      "hours": "07:00-21:00",
-      "description": "Historic restaurant established in 1913, famous for Hangzhou cuisine and traditional dim sum.",
+      "hours": "۰۷:۰۰-۲۱:۰۰",
+      "description": "رستوران تاریخی تأسیس شده در سال ۱۹۱۳، مشهور به غذاهای هانگژو و دیم‌سام سنتی.",
       "dishHighlights": [
-        "Lion head meatballs",
-        "Hangzhou-style noodles",
-        "Sweet vinegar pork ribs"
+        "کوفته‌های سر شیر",
+        "رشته‌فرنگی هانگژویی",
+        "دنده‌های خوک با سرکه شیرین"
       ],
       "tags": [
-        "historic",
-        "hangzhou-cuisine",
-        "dim-sum"
+        "تاریخی",
+        "غذای هانگژو",
+        "دیم‌سام"
       ],
       "star": 0,
       "imageUrl": "/img/ext/ca498219a204.webp"
@@ -1279,27 +1279,27 @@
     {
       "id": "hangzhou-4",
       "name": "绿茶餐厅",
-      "nameEn": "Green Tea Restaurant",
+      "nameEn": "رستوران چای سبز",
       "type": "local",
-      "cuisine": "Zhejiang",
+      "cuisine": "ژجیانگ",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Multiple locations",
+      "address": "چندین شعبه",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1552
       },
-      "hours": "10:30-22:00",
-      "description": "Trendy restaurant chain known for fresh ingredients and creative Zhejiang dishes in modern atmosphere.",
+      "hours": "۱۰:۳۰ تا ۲۲:۰۰",
+      "description": "زنجیره رستوران‌های شیک که به دلیل مواد تازه و غذاهای خلاقانه ژجیانگ در فضای مدرن شناخته شده است.",
       "dishHighlights": [
-        "Green tea flour ball",
-        "Braised chicken",
-        "Fresh vegetables"
+        "کوفته آرد چای سبز",
+        "مرغ سوخاری",
+        "سبزیجات تازه"
       ],
       "tags": [
-        "local",
-        "modern",
-        "casual"
+        "محلی",
+        "مدرن",
+        "非正式"
       ],
       "star": 0,
       "diamond": 0,
@@ -1309,29 +1309,29 @@
     {
       "id": "hangzhou-5",
       "name": "奎元馆",
-      "nameEn": "Kui Yuan Guan",
+      "nameEn": "کوی یوان گوان",
       "type": "local",
-      "cuisine": "Hangzhou Noodles",
+      "cuisine": "نودل هانگژو",
       "avgPrice": 50,
       "rating": 4.7,
-      "address": "86 Gaoyin Road, Shangcheng District",
+      "address": "خیابان گایین، محله شانگچنگ",
       "coordinates": {
         "lat": 30.2482,
         "lng": 120.1732
       },
       "phone": "+86 571 8780 0788",
-      "hours": "06:30-20:00",
-      "description": "Legendary noodle house established in 1867, serving authentic Hangzhou style noodles with rich broth.",
+      "hours": "۰۶:۳۰ تا ۲۰:۰۰",
+      "description": "خانه نودل افسانه‌ای که در سال ۱۸۶۷ تأسیس شده است، ارائه‌دهنده نودل‌های اصیل هانگژو با آبگوشت غنی.",
       "dishHighlights": [
-        "Shrimp noodles",
-        "Vegetable and mushroom noodles",
-        "Red-braised pork noodles"
+        "نودل میگو",
+        "نودل سبزیجات و قارچ",
+        "نودل گوشت خوکی سرخ‌شده با سس"
       ],
       "tags": [
-        "historic",
-        "noodles",
-        "local",
-        "breakfast"
+        "تاریخی",
+        "نودل",
+        "محلی",
+        "صبحانه"
       ],
       "star": 0,
       "diamond": 0,
@@ -1340,23 +1340,23 @@
     {
       "id": "hangzhou-6",
       "name": "楼外楼",
-      "nameEn": "Lou Wai Lou",
+      "nameEn": "لو وای لو",
       "type": "blackpearl",
       "diamond": 2,
-      "cuisine": "Hangzhou",
+      "cuisine": "هانگژو",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "No. 30, Gushan Road, Xihu District",
+      "address": "شماره ۳۰، جاده گوشان، منطقه شیهو",
       "coordinates": {
         "lat": 30.2422,
         "lng": 120.1488
       },
       "phone": "+86 571 8796 9082",
-      "hours": "10:30-21:00",
-      "description": "Historic restaurant on the shore of West Lake, established 1848. Famous for view dining and traditional dishes.",
+      "hours": "۱۰:۳۰-۲۱:۰۰",
+      "description": "رستوران تاریخی در ساحل دریاچه غربی، تأسیس شده در سال ۱۸۴۸. مشهور برای غذا خوردن با منظره و غذاهای سنتی.",
       "dishHighlights": [
-        "West Lake fish in vinegar sauce",
-        "Beggar's chicken",
+        "ماهی دریاچه غربی در سس سرکه",
+        "مرغ گدا",
         "Lion head meatballs"
       ],
       "tags": [
@@ -3141,110 +3141,110 @@
     {
       "type": "ambulance",
       "name": "杭州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "English interpretation available at major hospitals"
     },
     {
       "type": "police",
       "name": "杭州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at West Lake area"
     },
     {
       "type": "hospital",
       "name": "浙江大学医学院附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Zhejiang University",
       "phone": "+86 571 8723 6000",
-      "address": "Guangzhou",
+      "address": "79 Qingchun Road",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff, accepts international insurance"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai (nearest US consular services for Hangzhou)",
+      "notes": "For US citizens in Hangzhou region"
     },
     {
       "type": "fire",
       "name": "杭州市消防救援支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "For fire emergencies and rescue operations"
     },
     {
       "type": "tourist-info",
       "name": "杭州旅游咨询服务中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Information Center",
       "phone": "0571-96123",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Scenic Area",
+      "notes": "Tourist complaints and information service"
     },
     {
       "type": "police-special",
       "name": "杭州旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Police",
       "phone": "+86 571 8502 6110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Police Station, Xihu District",
+      "notes": "24-hour tourist police service"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Shanghai",
       "phone": "+86 21 6179 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Shanghai",
       "phone": "+86 21 5292 8000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Australian citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For German citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Shanghai",
       "phone": "+86 21 6218 0021",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Hangzhou region"
     },
     {
       "type": "hospital",
       "name": "邵逸夫医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Sir Run Run Shaw Hospital",
       "phone": "+86 571 8609 0088",
-      "address": "Guangzhou",
+      "address": "3 East Qingchun Road",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Quality international medical services"
     },
     {
       "type": "hotel-booking",
       "name": "杭州旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourism Complaint Hotline",
       "phone": "0571-12345",
-      "notes": "For Singapore citizens"
+      "notes": "For complaints about tourism services"
     }
   ],
   "quickFacts": {

@@ -9,14 +9,14 @@
     "lng": 102.7183
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "昆明是雲南省的省會，被譽為春城，四季氣候宜人。",
+  "description": "Kunming, the capital of Yunnan province, is known as the 'Spring City' for its pleasant climate year-round. Located at an elevation of 1,890 meters, it serves as the political, economic, and cultural center of Yunnan. The city is a gateway to stunning natural landscapes including the UNESCO World Heritage Site of Stone Forest, and is home to 26 ethnic minorities preserving rich traditions.",
   "coverImage": "/img/ext/1f021c6b2874.webp",
   "highlights": [
-    "石林 - 联合國教科文组织遗产",
-    "滇池 - 雲南最大湖",
-    "雲南民族村 - 26个少数民族",
-    "翠湖公園 - 城市绿洲",
-    "金馬碧雞坊 - 标志牌坊"
+    "Stone Forest - UNESCO World Heritage",
+    "Dianchi Lake - Largest lake in Yunnan",
+    "Yunnan Ethnic Village - 26 ethnic minorities",
+    "Cuihu Park - Urban oasis",
+    "Golden Horse and Phoenix Gate - Iconic archway"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,13 +30,13 @@
     ],
     "avgSummerTemp": "18-26C (64-79F)",
     "avgWinterTemp": "8-18C (46-64F)",
-    "tips": "「春城」全年气候温和。夏季雨季（6-8月）但不热。冬季干晴。昼夜温差大备外套。高海拔紫外线强。"
+    "tips": "Kunming is called 'Spring City' with mild weather year-round. Summer is rainy season (June-August) but not hot. Winter is dry and sunny. Bring layers year-round as temperatures vary daily. UV is strong due to high altitude."
   },
   "restaurants": [
     {
       "id": "guangxi-crossing-bridge",
       "name": "过桥园（光华街店）",
-      "nameEn": "Guangxi Crossing Bridge Rice Noodles",
+      "nameEn": "廣西過橋米線",
       "cuisine": "Yunnan",
       "priceRange": "¥40-80¥",
       "description": "Famous for authentic Crossing Bridge Rice Noodles (过桥米线) with rich broth and fresh ingredients served in traditional style.",
@@ -60,7 +60,7 @@
       ],
       "type": "local",
       "tags": [
-        "local"
+        "地方特色"
       ],
       "rating": 4,
       "star": 0,
@@ -780,7 +780,7 @@
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -792,11 +792,11 @@
     {
       "id": "xishuangbanna-food",
       "name": "傣味轩",
-      "nameEn": "Dai Flavor Restaurant",
-      "cuisine": "Dai Ethnic",
+      "nameEn": "傣味餐廳",
+      "cuisine": "傣族料理",
       "priceRange": "¥50-100¥",
-      "description": "Restaurant serving Dai ethnic cuisine from Xishuangbanna with sour and spicy flavors, grilled meats, and tropical ingredients.",
-      "address": "Wuhua District, Kunming",
+      "description": "餐廳供應西雙版納傣族料理，採用酸辣口味、烤肉和熱帶食材。",
+      "address": "昆明市五華區",
       "coordinates": {
         "lat": 25.0522,
         "lng": 102.7289
@@ -810,13 +810,13 @@
       ],
       "tips": "The sour soup is excellent. Bring friends to try variety of dishes. Very flavorful. Good for spicy food lovers.",
       "dishHighlights": [
-        "Dai sour soup",
-        "Grilled chicken",
-        "Bamboo rice"
+        "傣族酸湯",
+        "烤雞",
+        "竹筒飯"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -828,11 +828,11 @@
     {
       "id": "nanping-street-food",
       "name": "南屏街小吃",
-      "nameEn": "Nanping Street Snacks",
-      "cuisine": "Street Food",
+      "nameEn": "南屏街小吃",
+      "cuisine": "街頭小吃",
       "priceRange": "¥15-40¥",
-      "description": "Historic commercial street with local snack vendors, Yunnan specialties, and bustling night market atmosphere.",
-      "address": "Nanping Street, Kunming",
+      "description": "歷史悠久的商業街，有當地小吃攤、雲南特產和熱鬧的夜市氛圍。",
+      "address": "昆明南屏街",
       "coordinates": {
         "lat": 25.0367,
         "lng": 102.7156
@@ -846,13 +846,13 @@
       ],
       "tips": "Best in evening. Try small portions from multiple vendors. Very local atmosphere. Great for casual eating.",
       "dishHighlights": [
-        "Yunnan rice cakes",
-        "Barbecue skewers",
-        "Cold rice noodles"
+        "雲南米糕",
+        "燒烤串",
+        "涼米線"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -864,11 +864,11 @@
     {
       "id": "chunshan-mei-restaurant",
       "name": "春山美餐厅",
-      "nameEn": "Chunshan Mei Restaurant",
-      "cuisine": "Yunnan Fusion",
+      "nameEn": "春山美餐廳",
+      "cuisine": "雲南融合料理",
       "priceRange": "¥80-150¥",
-      "description": "Modern Yunnan fusion restaurant with creative dishes using local ingredients, elegant presentation, and contemporary setting.",
-      "address": "Park 1903, Kunming",
+      "description": "現代雲南融合餐廳，使用當地食材創意料理，精緻擺盤，時尚裝潢",
+      "address": "昆明1903公園",
       "coordinates": {
         "lat": 25.0178,
         "lng": 102.6856
@@ -882,13 +882,13 @@
       ],
       "tips": "Best for special occasions. The dishes are Instagram-worthy. Reservation required for dinner. Pricey but worth it.",
       "dishHighlights": [
-        "Fusion crossing bridge noodles",
-        "Artistic presentation",
-        "Seasonal specialties"
+        "融合過橋米線",
+        "藝術擺盤",
+        "季節限定"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -900,11 +900,11 @@
     {
       "id": "guangtong-traditional",
       "name": "广通传统菜馆",
-      "nameEn": "Guangtong Traditional Cuisine",
-      "cuisine": "Yunnan Traditional",
+      "nameEn": "廣通傳統菜",
+      "cuisine": "雲南傳統料理",
       "priceRange": "¥40-80¥",
-      "description": "Local favorite serving traditional Yunnan dishes with recipes passed down for generations, known for honest portions.",
-      "address": "Guanghua Street, Kunming",
+      "description": "當地人喜愛的傳統雲南菜餐廳，配方傳承數代，分量實在",
+      "address": "昆明市光華街",
       "coordinates": {
         "lat": 25.0389,
         "lng": 102.7144
@@ -918,13 +918,13 @@
       ],
       "tips": "Very popular with locals. Point at kitchen display for ordering. The portions are large. Good for authentic food.",
       "dishHighlights": [
-        "Braised pork with soy sauce",
-        "Stir-fried greens",
-        "Steam egg with minced pork"
+        "紅燒肉",
+        "炒時蔬",
+        "蒸蛋羹"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地特色"
       ],
       "rating": 4,
       "star": 0,
@@ -936,28 +936,28 @@
     {
       "id": "kunming-26",
       "name": "昆明味饵块",
-      "nameEn": "昆明味饵块 (饵块)",
+      "nameEn": "昆明味餌塊 (餌塊)",
       "type": "local",
-      "cuisine": "饵块",
+      "cuisine": "餌塊",
       "avgPrice": 122,
       "rating": 4.9,
-      "address": "昆明市市中心区美食街149号",
+      "address": "昆明市市中心區美食街149號",
       "coordinates": {
         "lat": 25.0225,
         "lng": 102.6829
       },
       "phone": "+86 0871 11439999",
       "hours": "06:00-14:00",
-      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "description": "昆明本地人推薦的餌塊店，味道正統，價格實惠",
       "dishHighlights": [
-        "菌子火锅",
-        "过桥米线",
-        "鲜花饼"
+        "菌子火鍋",
+        "過橋米線",
+        "鮮花餅"
       ],
       "tags": [
-        "性价比高",
-        "排队王",
-        "隐藏美食"
+        "性價比高",
+        "排隊王",
+        "隱藏美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/8197f6d8f660.webp"
@@ -965,27 +965,27 @@
     {
       "id": "kunming-28",
       "name": "巷子菌子火锅",
-      "nameEn": "巷子菌子火锅 (菌子火锅)",
+      "nameEn": "巷子菌子火鍋 (菌子火鍋)",
       "type": "cafe",
-      "cuisine": "菌子火锅",
+      "cuisine": "菌子火鍋",
       "avgPrice": 69,
       "rating": 4.2,
-      "address": "昆明市老城区美食街18号",
+      "address": "昆明市老城區美食街18號",
       "coordinates": {
         "lat": 25.0846,
         "lng": 102.6995
       },
       "phone": "+86 0871 76623291",
       "hours": "17:00-02:00",
-      "description": "昆明本地人推荐的菌子火锅店，味道正宗，价格实惠",
+      "description": "昆明本地人推薦的菌子火鍋店，價格實惠",
       "dishHighlights": [
-        "菌子火锅",
-        "鲜花饼",
-        "饵块"
+        "菌子火鍋",
+        "鮮花餅",
+        "餌塊"
       ],
       "tags": [
         "下午茶",
-        "文艺",
+        "文藝",
         "咖啡"
       ],
       "diamond": 0,
@@ -994,28 +994,28 @@
     {
       "id": "kunming-30",
       "name": "巷子饵块",
-      "nameEn": "巷子饵块 (饵块)",
+      "nameEn": "巷子餌塊 (餌塊)",
       "type": "local",
-      "cuisine": "饵块",
+      "cuisine": "餌塊",
       "avgPrice": 73,
       "rating": 4.3,
-      "address": "昆明市新城区美食街12号",
+      "address": "昆明市新城區美食街12號",
       "coordinates": {
         "lat": 25.0645,
         "lng": 102.6818
       },
       "phone": "+86 0871 68418999",
       "hours": "10:00-22:00",
-      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "description": "昆明本地人推薦的餌塊店，味道正宗，價格實惠",
       "dishHighlights": [
-        "过桥米线",
-        "汽锅鸡",
-        "饵块"
+        "過橋米線",
+        "汽鍋雞",
+        "餌塊"
       ],
       "tags": [
-        "本地人爱去",
-        "老字号",
-        "社区老店"
+        "本地人愛去",
+        "老字號",
+        "社區老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/617ba3b2dc5a.webp"
@@ -1023,28 +1023,28 @@
     {
       "id": "kunming-32",
       "name": "昆明味汽锅鸡",
-      "nameEn": "昆明味汽锅鸡 (汽锅鸡)",
+      "nameEn": "昆明味汽鍋雞 (汽鍋雞)",
       "type": "local",
-      "cuisine": "汽锅鸡",
+      "cuisine": "汽鍋雞",
       "avgPrice": 45,
       "rating": 4,
-      "address": "昆明市老城区美食街118号",
+      "address": "昆明市老城區美食街118號",
       "coordinates": {
         "lat": 25.0732,
         "lng": 102.7128
       },
       "phone": "+86 0871 65664964",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "昆明本地人推荐的汽锅鸡店，味道正宗，价格实惠",
+      "description": "昆明本地人推薦的汽鍋雞店，味道正宗，價格實惠",
       "dishHighlights": [
-        "菌子火锅",
-        "汽锅鸡",
-        "鲜花饼"
+        "菌子火鍋",
+        "汽鍋雞",
+        "鮮花餅"
       ],
       "tags": [
-        "本地人爱去",
-        "性价比高",
-        "隐藏美食"
+        "本地人愛去",
+        "性價比高",
+        "隱藏美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2b8b871b136e.webp"
@@ -1052,26 +1052,26 @@
     {
       "id": "kunming-34",
       "name": "巷子饵块",
-      "nameEn": "巷子饵块 (饵块)",
+      "nameEn": "巷子餌塊 (餌塊)",
       "type": "local",
-      "cuisine": "饵块",
+      "cuisine": "餌塊",
       "avgPrice": 61,
       "rating": 4.8,
-      "address": "昆明市市中心区美食街149号",
+      "address": "昆明市市中心區美食街149號",
       "coordinates": {
         "lat": 25.0284,
         "lng": 102.7264
       },
       "phone": "+86 0871 71019105",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "昆明本地人推荐的饵块店，味道正宗，价格实惠",
+      "description": "昆明本地人推薦的餌塊店，味道正宗，價格實惠",
       "dishHighlights": [
-        "鲜花饼",
-        "菌子火锅",
-        "饵块"
+        "鮮花餅",
+        "菌子火鍋",
+        "餌塊"
       ],
       "tags": [
-        "隐藏美食",
+        "隱藏美食",
         "老字号",
         "社区老店"
       ],
@@ -2224,167 +2224,167 @@
     {
       "type": "fire",
       "name": "昆明消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "昆明急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Kunming city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Kunming City Center"
     },
     {
       "id": "fire",
       "name": "昆明市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "ambulance",
       "name": "昆明市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "tourism-hotline",
       "name": "昆明市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Complaint Hotline",
       "phone": "0871-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "entry-exit",
       "name": "昆明市公安局出入境管理处",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Exit-Entry Administration",
       "phone": "0871-6715555",
       "type": "government",
       "description": "Passport, visa, and exit-entry services",
-      "address": "Guangzhou"
+      "address": "Guanhua Road, Kunming"
     },
     {
       "id": "supervision",
       "name": "昆明市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Enforcement Brigade",
       "phone": "0871-6535233",
       "type": "tourism",
       "description": "Report illegal tourism activities",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "weather",
       "name": "昆明市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and severe weather warnings",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "consumer-complaints",
       "name": "昆明市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Consumers Association",
       "phone": "0871-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "forestry",
       "name": "昆明市森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Forest Fire Prevention",
       "phone": "0871-12119",
       "type": "emergency",
       "description": "Forest fire reporting and prevention",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency Management",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "china-post",
       "name": "中国邮政速递",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "China Post Express",
       "phone": "11183",
       "type": "delivery",
       "description": "Mail and package delivery services",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "water-emergency",
       "name": "昆明市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Water Supply Company",
       "phone": "0871-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "electricity-emergency",
       "name": "昆明供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "gas-emergency",
       "name": "昆明市燃气公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Gas Company",
       "phone": "0871-96107",
       "type": "utility",
       "description": "Gas leak and gas emergency reporting",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "railway-complaints",
       "name": "昆明铁路投诉",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Railway Station Complaints",
       "phone": "0871-12306",
       "type": "transport",
       "description": "Railway ticket inquiries and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming Railway Station"
     },
     {
       "id": "national-tourism-complaint",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     }
   ],
   "culturalTips": [
@@ -2848,22 +2848,22 @@
       "name": "翠湖",
       "nameEn": "Cuihu Park",
       "category": "natural",
-      "description": "位於昆明市中心的一處城市綠洲，以風景如畫的湖泊、荷花池和歷史悠久的亭台樓閣為特色，深受當地人喜愛，是早晨打太極和散步的好去處。",
-      "address": "昆明翠湖公園",
+      "description": "An urban oasis in central Kunming featuring a scenic lake, lotus ponds, and historic pavilions, popular with locals for morning tai chi and散步.",
+      "address": "Cuihu Park, Kunming",
       "coordinates": {
         "lat": 25.0442,
         "lng": 102.7039
       },
-      "openingHours": "24小時開放",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "1-2小時",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "觀賞荷花池",
-        "附近的雲南大學",
-        "佛教寺廟",
-        "當地太極團體活動"
+        "Lotus pond viewing",
+        "Yunnan University nearby",
+        "Buddhist temple",
+        "Local tai chi gatherings"
       ],
-      "tips": "清晨最適合打太極拳和欣賞傳統音樂。夏季有美麗的荷花。周邊街道有許多不錯的咖啡店。與雲南大學區域相連。",
+      "tips": "Best in early morning for tai chi and traditional music. Summer has beautiful lotus flowers. Surrounding streets have good coffee shops. Connected to Yunnan University area.",
       "imageUrl": "/img/ext/ce9c08e43337.webp",
       "image": "/img/ext/0157338d5fd9.webp",
       "phone": "+86 087 1 0762 5400"
@@ -2923,22 +2923,22 @@
       "name": "黑龙潭",
       "nameEn": "Black Dragon Pool",
       "category": "cultural",
-      "description": "歷史悠久的納西花園，池塘中倒映著玉龍雪山的壯麗景色。園內有傳統的納西建築和文化表演。",
-      "address": "麗江黑龍潭公園",
+      "description": "A historic Taoist temple complex with ancient plum trees, lotus ponds, and the famous 'Three Immortals' cypress trees over 500 years old.",
+      "address": "Black Dragon Pool Park, Kunming",
       "coordinates": {
         "lat": 25.1367,
         "lng": 102.7217
       },
-      "openingHours": "07:00-19:00",
-      "ticketPrice": "免費（需出示身份證件）",
-      "recommendedVisitTime": "1-2小時",
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "15¥",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "玉龍雪山倒影",
-        "五鳳橋",
-        "納西音樂表演",
-        "古德義堂"
+        "Ancient plum garden (500+ trees)",
+        "Taoist temple",
+        "Lotus pond",
+        "Three Immortals cypress"
       ],
-      "tips": "麗江最佳日出攝影地點，當山脈倒影清晰可見時尤為壯觀。納西古樂表演時間為13:30-14:30及15:30-16:30（視天氣情況而定）。請攜帶身份證件以免費入場。",
+      "tips": "Best visited during plum blossom season (January-February). Beautiful lotus in summer. Less crowded than major attractions. Famous for plum flower painting.",
       "imageUrl": "/img/ext/5154598fab62.webp",
       "image": "/img/ext/994bfae9b723.webp",
       "phone": "+86 087 1 2691 4370"
@@ -2948,22 +2948,22 @@
       "name": "大观公园",
       "nameEn": "Daguan Park",
       "category": "natural",
-      "description": "以歷史悠久的大觀樓內展示的《雲南第一勝景》水墨畫聞名，此外還有湖畔花園和長達1800米的長廊。",
-      "address": "昆明大觀公園",
+      "description": "Famous for the 'First Scenery of Yunnan' ink painting displayed in the historic Daguan Lou pavilion, plus lakeside gardens and the 1800m long corridor.",
+      "address": "Daguan Park, Kunming",
       "coordinates": {
         "lat": 24.9744,
         "lng": 102.6533
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "2小時",
+      "recommendedVisitTime": "2 hours",
       "highlights": [
-        "大觀樓",
-        "著名書法長卷",
-        "湖景",
-        "花卉展覽"
+        "Daguan Lou pavilion",
+        "Famous calligraphy scroll",
+        "Lake views",
+        "Flower exhibitions"
       ],
-      "tips": "參觀亭閣，欣賞著名的《雲南第一勝景》畫作（複製品）。春季最適合觀賞花卉展覽。傍晚時分可拍攝滇池日落美景。",
+      "tips": "Visit the pavilion for the famous 'First Scenery of Yunnan' painting (replica). Best in spring for flower shows. Good for sunset photos over Dianchi Lake.",
       "imageUrl": "/img/ext/b28feee247a1.webp",
       "image": "/img/ext/7419ff91732e.webp",
       "phone": "+86 087 1 9391 5210"
@@ -3498,22 +3498,22 @@
       "name": "安宁温泉",
       "nameEn": "Anning Hot Springs",
       "category": "natural",
-      "description": "距離昆明40公里的著名溫泉度假區，以富含礦物質的水質和歷史悠久的溫泉文化而聞名。",
-      "address": "昆明市安寧縣",
+      "description": "Famous hot spring resort area 40km from Kunming, known for its mineral-rich waters and historic spa culture.",
+      "address": "Anning County, Kunming",
       "coordinates": {
         "lat": 24.9533,
         "lng": 102.4856
       },
-      "openingHours": "各度假村開放時間為08:00-22:00",
-      "ticketPrice": "50-200¥（依度假村而定）",
-      "recommendedVisitTime": "半天至一天",
+      "openingHours": "Various resorts open 08:00-22:00",
+      "ticketPrice": "50-200¥ (resort dependent)",
+      "recommendedVisitTime": "Half day to full day",
       "highlights": [
-        "礦物質溫泉",
-        "歷史悠久的溫泉",
-        "山景",
-        "養生體驗"
+        "Mineral hot springs",
+        "Historic spas",
+        "Mountain scenery",
+        "Wellness experience"
       ],
-      "tips": "最適合放鬆身心。有多個度假村可供選擇。請攜帶泳衣和毛巾。可與一日遊結合。平日遊客較少。",
+      "tips": "Best for relaxation. Several resorts to choose from. Bring swimwear and towel. Combine with day trip. Weekday visits are quieter.",
       "imageUrl": "/img/ext/70935779a4e0.webp",
       "image": "/img/ext/b5d669b537f9.webp",
       "phone": "+86 087 1 2814 7511"

@@ -9,14 +9,14 @@
     "lng": 117.3616
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "เทียนจิน เมืองใหญ่ริมชายฝั่งใกล้ปักกิ่ง ด้วยการผสมผสานสถาปัตยกรรมอาณานิคมยุโรปและเส้นขอบฟ้าสมัยใหม่อันเป็นเอกลักษณ์ เขตสัมปทานต่างชาติในอดีต 'หวูต๋าเต่า' วัฒนธรรมอาหารเรียกน้ำย่อยที่เป็นเอกลักษณ์ และการหลอมรวมของเมืองเก่าและการพัฒนาสมัยใหม่",
+  "description": "Tianjin, a bustling port city near Beijing, blends European colonial architecture with traditional Chinese culture. Famous for the Ancient Culture Street, food culture featuring Mahua and Goubuli baozi, and the impressive Tianjin Eye Ferris wheel.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
-    "ตาเทียนจิน - ชิงช้าสวรรค์ยักษ์",
-    "ถนนวัฒนธรรมโบราณ - สถาปัตยกรรมดั้งเดิม",
-    "5 ถนนใหญ่ - สถาปัตยกรรมยุโรป",
-    "ถนนวัฒนธรรมโบราณเทียนจิน",
-    "ริมแม่น้ำไห่เหอ"
+    "Tianjin Eye - Giant Ferris wheel",
+    "Ancient Culture Street - Traditional architecture",
+    "Five Great Avenues - European architecture",
+    "Tianjin Ancient Cultural Street",
+    "Haihe River waterfront"
   ],
   "climate": {
     "type": "Humid continental climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
-    "tips": "ฤดูใบไม้ผลิและฤดูใบไม้ร่วงดีที่สุด ฤดูร้อนร้อนชื้น ฤดูหนาวหนาวและแห้ง ฤดูใบไม้ผลิมีพายุทรายจากทะเลทรายโกบี"
+    "tips": "Best in spring and autumn. Summers hot and humid. Winters cold and dry. Spring brings sandstorms from Gobi Desert."
   },
   "attractions": [
     {
@@ -58,24 +58,24 @@
     {
       "id": "ancient-culture-street",
       "name": "古文化街",
-      "nameEn": "ถนนวัฒนธรรมโบราณ (Ancient Culture Street)",
+      "nameEn": "Ancient Culture Street",
       "category": "cultural",
-      "description": "ถนนทางประวัติศาสตร์ที่มีสถาปัตยกรรมดั้งเดิม วัด และหัตถกรรมท้องถิ่น",
-      "address": "ถนนวัฒนธรรมโบราณ, เขตเฮ่ปิ่ง",
+      "description": "Historic street with traditional architecture, temples, and local crafts.",
+      "address": "Ancient Culture Street, Heping District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "openingHours": "เปิด 24 ชั่วโมง (ร้านค้า 09:00-21:00)",
-      "ticketPrice": "ฟรี",
-      "recommendedVisitTime": "2-3 ชั่วโมง",
+      "openingHours": "Open 24 hours (shops 09:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "วัดเทียนโหว (Tianhou Temple)",
-        "ร้านค้าดั้งเดิม",
-        "ละครกวางตุ้ง",
-        "อาหารว่างท้องถิ่น"
+        "Tianhou Temple",
+        "Traditional shops",
+        "Cantonese opera",
+        "Local snacks"
       ],
-      "tips": "เช้ามืดเป็นเวลาที่ดีที่สุดสำหรับบรรยากาศ ลองชิมมาฮวา (mahua) และชา พายเที่ยวเรือในแม่น้ำไห่เหอ (Haihe)",
+      "tips": "Best in morning for atmosphere. Try mahua and tea. Take boat ride on Haihe.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 022  9903 5780"
     },
@@ -322,24 +322,24 @@
     {
       "id": "beidadehua",
       "name": "蓟县大碱厂",
-      "nameEn": "โรงงานตาจีานซาน",
+      "nameEn": "Dajianshan Factory",
       "category": "cultural",
-      "description": "โรงงานผลิตเกลือโบราณแสดงมรดกอุตสาหกรรม",
-      "address": "อำเภอจีเซียน",
+      "description": "Historic salt refinery showcasing industrial heritage.",
+      "address": "Jixian County",
       "coordinates": {
         "lat": 40.0522,
         "lng": 117.4022
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "2 ชั่วโมง",
+      "recommendedVisitTime": "2 hours",
       "highlights": [
-        "มรดกอุตสาหกรรม",
-        "การผลิตเกลือ",
-        "วิธีดั้งเดิม",
-        "พิพิธภัณฑ์"
+        "Industrial heritage",
+        "Salt making",
+        "Traditional methods",
+        "Museum exhibits"
       ],
-      "tips": "เรียนรู้เกี่ยวกับประวัติอุตสาหกรรมเกลือของเทียนจิน รวมกับการเดินทางไปยังภูเขาที่อยู่ใกล้",
+      "tips": "Learn about Tianjin's salt industry history. Combine with nearby mountain trips.",
       "image": "/img/ext/7b494038a7eb.webp",
       "phone": "+86 022  8202 2377"
     },
@@ -396,22 +396,22 @@
       "name": "滨海新区",
       "nameEn": "Binhai New Area",
       "category": "modern",
-      "description": "เขตพัฒนาที่ทันสมัย มีสถาปัตยกรรมและการบันเทิงในยุคปัจจุบัน",
-      "address": "เขตใหม่บินไห่",
+      "description": "Modern development zone with contemporary architecture and entertainment.",
+      "address": "Binhai New Area",
       "coordinates": {
         "lat": 38.9922,
         "lng": 117.7022
       },
-      "openingHours": "เปิด 24 ชั่วโมง",
-      "ticketPrice": "ฟรี",
-      "recommendedVisitTime": "3-4 ชั่วโมง",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "3-4 hours",
       "highlights": [
-        "ทิวทัศน์ท้องฟ้าที่ทันสมัย",
-        "ทิวทัศน์ท่าเรือ",
-        "ศูนย์วัฒนธรรม",
-        "ห้างสรรพสินค้า"
+        "Modern skyline",
+        "Harbor views",
+        "Cultural center",
+        "Shopping malls"
       ],
-      "tips": "สำรวจด้านทันสมัยของเมืองทยินจิ้น ที่นี่มีพิพิธภัณฑ์ทางทะเลแห่งชาติของจีน",
+      "tips": "Explore the modern side of Tianjin. The National Museum of China Seafaring is here.",
       "image": "/img/ext/9b5f1087da38.webp",
       "phone": "+86 022  1581 7961"
     },
@@ -475,15 +475,15 @@
         "lng": 117.2022
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "เข้าชมฟรี",
+      "recommendedVisitTime": "2-3 ชั่วโมง",
       "highlights": [
-        "Art Deco building",
-        "Shopping",
-        "Historic architecture",
-        "Local brands"
+        "อาคารสไตล์อาร์ตเดโค",
+        "การช้อปปิ้ง",
+        "สถาปัตยกรรมประวัติศาสตร์",
+        "แบรนด์ท้องถิ่น"
       ],
-      "tips": "Shop like a local. The building is beautiful. Explore nearby streets.",
+      "tips": "ช้อปปิ้งเหมือนคนท้องถิ่น อาคารสวยงาม สำรวจถนนใกล้เคียง",
       "image": "/img/ext/8e20ca0b1fca.webp",
       "phone": "+86 022  0730 9404"
     },
@@ -492,7 +492,7 @@
       "name": "欢乐谷",
       "nameEn": "Tianjin World Joy",
       "category": "entertainment",
-      "description": "Large theme park with roller coasters and family rides.",
+      "description": "สวนสนุกขนาดใหญ่มีรถไฟเหาะและเครื่องเล่นสำหรับครอบครัว",
       "address": "Beichen District",
       "coordinates": {
         "lat": 39.2222,
@@ -500,62 +500,62 @@
       },
       "openingHours": "09:00-18:00",
       "ticketPrice": "200¥",
-      "recommendedVisitTime": "Full day",
+      "recommendedVisitTime": "เต็มวัน",
       "highlights": [
-        "Roller coasters",
-        "Water rides",
-        "Live shows",
-        "Family attractions"
+        "รถไฟเหาะ",
+        "การเล่นน้ำ",
+        "การแสดงสด",
+        "สถานที่ท่องเที่ยวสำหรับครอบครัว"
       ],
-      "tips": "Arrive early. Wear comfortable shoes. Bring sunscreen and water.",
+      "tips": "มาถึงเร็ว สวมรองเท้าที่สบาย นำครีมกันแดดและน้ำ",
       "image": "/img/ext/2e1ba66bbe1b.webp",
       "phone": "+86 022  4822 7489"
     },
     {
       "id": "tianjin-art-museum",
       "name": "天津美术馆",
-      "nameEn": "Tianjin Art Museum",
+      "nameEn": "พิพิธภัณฑ์ศิลปะเทียนจิน",
       "category": "cultural",
-      "description": "Modern art museum with Chinese and international exhibitions.",
-      "address": "Hexi District",
+      "description": "พิพิธภัณฑ์ศิลปะร่วมสมัยที่มีการจัดนิทรรศการจีนและนานาชาติ",
+      "address": "เขตเหอซี",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
-      "openingHours": "09:00-16:30 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "09:00-16:30 (ปิดวันจันทร์)",
+      "ticketPrice": "ฟรี",
+      "recommendedVisitTime": "2 ชั่วโมง",
       "highlights": [
-        "Contemporary art",
-        "Chinese paintings",
-        "Rotating exhibitions",
-        "Art lectures"
+        "ศิลปะร่วมสมัย",
+        "จิตรกรรมจีน",
+        "นิทรรศการหมุนเวียน",
+        "บรรยายศิลปะ"
       ],
-      "tips": "Check schedule for special exhibitions. Great for art enthusiasts.",
+      "tips": "ตรวจสอบตารางการจัดนิทรรศการพิเศษ เหมาะสำหรับผู้ที่หลงใหลศิลปะ",
       "image": "/img/ext/bb1e59b31c2f.webp",
       "phone": "+86 022  0345 6451"
     },
     {
       "id": "tianjin-zhengyuan",
       "name": "天津之眼摩天轮",
-      "nameEn": "Tianjin Eye at Night",
+      "nameEn": "เทียนจินอายในเวลากลางคืน",
       "category": "landmark",
-      "description": "Spectacular night views of the illuminated Ferris wheel and river.",
-      "address": "Hebei District",
+      "description": "วิวกลางคืนที่งดงามของชุดเหล็กหมุนที่ส่องสว่างและแม่น้ำ",
+      "address": "เขตเหอเป๋ย",
       "coordinates": {
         "lat": 39.3622,
         "lng": 117.1822
       },
       "openingHours": "09:30-22:00",
       "ticketPrice": "70¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 ชั่วโมง",
       "highlights": [
-        "Night photography",
-        "Illuminated bridge",
-        "River views",
-        "Romantic atmosphere"
+        "การถ่ายภาพกลางคืน",
+        "สะพานที่ส่องสว่าง",
+        "วิวแม่น้ำ",
+        "บรรยากาศโรแมนติก"
       ],
-      "tips": "Best after dark. Bring tripod for photos. Combine with evening river cruise.",
+      "tips": "ดีที่สุดหลังพระอาทิตย์ตก นำขาตั้งกล้องมาด้วย รวมกับการล่องเรือชมแม่น้ำตอนเย็น",
       "image": "/img/ext/b29f136b0869.webp",
       "phone": "+86 022  4967 8480"
     },
@@ -564,8 +564,8 @@
       "name": "杨柳青年画馆",
       "nameEn": "Yangliuqing New Year Painting Hall",
       "category": "cultural",
-      "description": "Exhibition hall for traditional Chinese New Year paintings.",
-      "address": "Xiqing District",
+      "description": "ห้องแสดงภาพวาดปีใหม่แบบดั้งเดิมของจีน",
+      "address": "เขตซิชิง",
       "coordinates": {
         "lat": 39.0522,
         "lng": 117.3022
@@ -796,21 +796,21 @@
       "name": "滨江道",
       "nameEn": "Binjiang Road",
       "category": "street",
-      "description": "ถนนการค้าที่คึกคักที่สุดในทยินจิ้น ยาว 2,094 เมตร รวบรวมห้างสรรพสินค้าและแบรนด์ต่างๆ",
-      "address": "ถนนบินเจียง, เขตเฮ่อปิ่ง, เมืองทยินจิ้น",
+      "description": "天津最繁华的商业街，全长2094米，汇集各大商场和品牌。",
+      "address": "天津市和平区滨江道",
       "coordinates": {
         "lat": 39.1167,
         "lng": 117.2
       },
-      "openingHours": "24 ชั่วโมง",
-      "ticketPrice": "ฟรี",
-      "recommendedVisitTime": "2 ชั่วโมง",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "ถนนการค้า",
-        "การซื้อสินค้า",
-        "อาหาร"
+        "商业街",
+        "购物",
+        "美食"
       ],
-      "tips": "เชื่อมต่อกับถนนเดินช่วงเฮ่อปิ่ง",
+      "tips": "与和平路步行街相连。",
       "image": "/img/ext/b5d669b537f9.webp",
       "phone": "+86 022  5956 4726"
     },
@@ -978,23 +978,23 @@
     {
       "id": "bicycle-museum",
       "name": "天津自行车博物馆",
-      "nameEn": "พิพิธภัณฑ์จักรยานเทียนจิน",
+      "nameEn": "Tianjin Bicycle Museum",
       "category": "museum",
-      "description": "พิพิธภัณฑ์ที่เป็นที่เดียวในประเทศจีนที่เฉพาะเรื่องจักรยาน แสดงประวัติความเป็นมาของจักรยาน 200 ปี",
-      "address": "เขตอู่ชิง มณฑลเทียนจิน",
+      "description": "中国唯一的自行车专题博物馆，展示了自行车200年发展历史。",
+      "address": "天津市武清区",
       "coordinates": {
         "lat": 39.3667,
         "lng": 117.05
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "ฟรี",
-      "recommendedVisitTime": "1 ชั่วโมง",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "จักรยานโบราณ",
-        "ประวัติจักรยาน",
-        "ประสบการณ์แบบโต้ตอบ"
+        "古董自行车",
+        "自行车历史",
+        "互动体验"
       ],
-      "tips": "จักรยานไฟเปิงเป็นที่ภาคภูมิใจของเทียนจิน",
+      "tips": "飞鸽自行车是天津骄傲。",
       "image": "/img/ext/ddd502af66fb.webp",
       "phone": "+86 022  0677 8459"
     },
@@ -1138,21 +1138,21 @@
       "name": "滨海图书馆",
       "nameEn": "Binhai Library",
       "category": "landmark",
-      "description": "ออกแบบโดย MVRDV มีชั้นหนังสือขาวระดับต่าง ๆ 34 ชั้น ซึ่งได้รับการยกย่องว่าเป็นห้องสมุดที่สวยที่สุด",
-      "address": "ห้องสมุดใจกลางเขตซินเจียนบินไห่, เทียนจิน",
+      "description": "由MVRDV设计，内部有34层白色阶梯式书架，被称为最美图书馆。",
+      "address": "天津市滨海新区中心图书馆",
       "coordinates": {
         "lat": 39.0167,
         "lng": 117.7
       },
       "openingHours": "10:00-21:00",
-      "ticketPrice": "ฟรี",
-      "recommendedVisitTime": "1 ชั่วโมง",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "ห้องสมุดที่มีชื่อเสียงในโลกออนไลน์",
-        "ห้องรายงานรูปทรงกลม",
-        "การออกแบบสถาปัตยกรรม"
+        "网红图书馆",
+        "球形报告厅",
+        "建筑设计"
       ],
-      "tips": "ถ่ายรูปออกมาสวยมาก",
+      "tips": "拍照很出片。",
       "image": "/img/ext/48a33f7d6a57.webp",
       "phone": "+86 022  1461 5442"
     },
@@ -3131,90 +3131,90 @@
     {
       "type": "ambulance",
       "name": "天津急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "天津市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "天津医科大学总医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Medical University General Hospital",
       "phone": "+86 22 6036 2222",
-      "address": "Guangzhou",
+      "address": "154 Anshan Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "天津市第一中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin First Central Hospital",
       "phone": "+86 22 2362 6600",
-      "address": "Guangzhou",
+      "address": "24 Fukang Road, Nankai District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with English staff"
     },
     {
       "type": "tourist-police",
       "name": "天津旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Tourist Police",
       "phone": "+86 22 2303 1710",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "天津消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "美国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Tianjin",
       "phone": "+86 22 2318 8888",
-      "address": "Guangzhou",
+      "address": "No. 46 Nanjing Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "notes": "For Singapore citizens"
+      "notes": "Located in Tianjin's main tourist area"
     },
     {
       "type": "embassy",
       "name": "英国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Tianjin",
       "phone": "+86 22 2318 9000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Silver Tower, 56 Nanjing Road",
+      "notes": "For UK citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "法国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Tianjin",
       "phone": "+86 22 2312 3000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "5th Floor, Friendship Pavilion",
+      "notes": "For French citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "日本驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Tianjin",
       "phone": "+86 22 2313 0015",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Jiangmen Road, Heping District",
+      "notes": "For Japanese citizens in Tianjin region"
     }
   ],
   "quickFacts": {

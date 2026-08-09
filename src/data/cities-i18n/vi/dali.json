@@ -9,14 +9,14 @@
     "lng": 100.2676
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Đại Lý là một thị trấn tuyệt đẹp ở tỉnh Vân Nam, tựa lưng vào khung cảnh hùng vĩ của Núi Thương Sơn và bên cạnh Hồ Nhĩ Hải trong vắt. Là quê hương của dân tộc Bạch với 1.000 năm lịch sử. Nổi tiếng với những con đường lát đá cuội, kiến trúc Bạch truyền thống và văn hóa địa phương sôi động. Bầu không khí thư thái hoàn hảo cho đạp xe, đi bộ đường dài và đắm mình trong văn hóa.",
+  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "Hồ Nhĩ Hải - Đạp xe và cảnh quan",
-    "Ba Tháp Đại Lý - Chùa Phật giáo",
-    "Thành cổ Đại Lý - Kiến trúc Bạch tộc truyền thống",
-    "Chợ Tây Châu - Văn hóa Bạch địa phương",
-    "Song Lương - Nhiếp ảnh hồ"
+    "Erhai Lake - Scenic cycling and views",
+    "Three Pagodas of Dali - Buddhist temples",
+    "Dali Old Town - Traditional Bai architecture",
+    "Xizhou Market - Local Bai culture",
+    "Shuanglang - Lakeside photography"
   ],
   "climate": {
     "type": "Subtropical highland",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "Mùa xuân và mùa thu tốt nhất. Mùa hè mát nhưng mưa nhiều. Mùa đông khô và ấm. Tia UV mạnh, dùng kem chống nắng."
+    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
   },
   "restaurants": [
     {
@@ -534,7 +534,7 @@
         "local",
         "seafood",
         "scenic",
-        "fresh"
+        "tươi"
       ],
       "star": 0,
       "diamond": 0,
@@ -544,29 +544,29 @@
     {
       "id": "dali-17",
       "name": "白族三道茶茶馆",
-      "nameEn": "Bai Three Tea House",
+      "nameEn": "Quán Trà Ba Bai",
       "type": "local",
-      "cuisine": "Tea House",
+      "cuisine": "Quán Trà",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Xizhou Ancient Town",
+      "address": "Làng Cổ Xizhou",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "09:00-18:00",
-      "description": "Traditional tea house offering authentic Bai Three Tea Ceremony - bitter tea, sweet tea, and aftertaste tea.",
+      "description": "Quán trà truyền thống cung cấp lễ trà Ba Bai chính gốc - trà đắng, trà ngọt và trà hậu nghiệm.",
       "dishHighlights": [
-        "Bitter tea",
-        "Sweet tea",
-        "Aftertaste tea",
-        "Bai tea ceremony"
+        "Trà đắng",
+        "Trà ngọt",
+        "Trà hậu nghiệm",
+        "Lễ trà Bai"
       ],
       "tags": [
-        "local",
-        "tea",
-        "cultural",
-        "bai-culture"
+        "địa phương",
+        "trà",
+        "văn hóa",
+        "văn hóa Bai"
       ],
       "star": 0,
       "diamond": 0,
@@ -576,29 +576,29 @@
     {
       "id": "dali-18",
       "name": "青梅酒铺",
-      "nameEn": "Plum Wine Shop",
+      "nameEn": "Cửa hàng Rượu Mận",
       "type": "local",
       "cuisine": "Bai Bar",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Foreigners Street, Dali Old Town",
+      "address": "Khu phố Nước ngoài, Phố cổ Đại Lý",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "14:00-24:00",
-      "description": "Cozy bar specializing in local plum wine and fruit wines made from Yunnan's fresh fruits.",
+      "description": "Quán bar ấm cúng chuyên về rượu mận địa phương và rượu hoa quả làm từ những loại trái cây tươi ngon của Vân Nam.",
       "dishHighlights": [
-        "Plum wine",
-        "Raspberry wine",
-        "Rose wine",
-        "Local craft beer"
+        "Rượu mận",
+        "Rượu mâm xôi",
+        "Rượu hồng",
+        "Bia thủ công địa phương"
       ],
       "tags": [
-        "local",
-        "bar",
-        "wine",
-        "cozy"
+        "địa phương",
+        "quán bar",
+        "rượu",
+        "ấm cúng"
       ],
       "star": 0,
       "diamond": 0,
@@ -608,29 +608,29 @@
     {
       "id": "dali-19",
       "name": "当地烧烤一条街",
-      "nameEn": "Local BBQ Street",
+      "nameEn": "Phố BBQ Địa phương",
       "type": "street",
       "cuisine": "BBQ",
       "avgPrice": 40,
       "rating": 4.4,
-      "address": "Dali Old Town, south gate area",
+      "address": "Khu phố cổ Đại Lý, khu vực cổng nam",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "18:00-02:00",
-      "description": "Famous BBQ street with multiple stalls serving Yunnan-style grilled meat, mushrooms, and vegetables.",
+      "description": "Đường nổi tiếng với nhiều quầy hàng phục vụ thịt nướng, nấm và rau theo phong cách Vân Nam.",
       "dishHighlights": [
-        "Grilled lamb skewers",
-        "Mushroom BBQ",
-        "Eggplant with garlic",
-        "Yunnan sausage"
+        "Xe kem cừu nướng",
+        "Nấm nướng",
+        "Cà tím tỏi",
+        "Xúc xích Vân Nam"
       ],
       "tags": [
-        "street-food",
-        "bbq",
-        "nightlife",
-        "local"
+        "đồ-ăn-đường-phố",
+        "nướng-ngoài-trời",
+        "đêm",
+        "địa-phương"
       ],
       "star": 0,
       "diamond": 0,
@@ -642,27 +642,27 @@
       "name": "巍山一根面",
       "nameEn": "Weishan Single Noodle",
       "type": "local",
-      "cuisine": "Yunnan Noodles",
+      "cuisine": "Mì Vân Nam",
       "avgPrice": 25,
       "rating": 4.8,
-      "address": "Weishan Ancient Town",
+      "address": "Khu phố cổ Weishan",
       "coordinates": {
         "lat": 25.2322,
         "lng": 100.3072
       },
       "hours": "07:00-14:00",
-      "description": "Legendary noodle shop famous for One Strand Noodles - a single kilometer-long noodle served in one bowl.",
+      "description": "Cửa hàng mì nổi tiếng với món Mì Một Sợi - một sợi mì dài một kilômét được phục vụ trong một bát.",
       "dishHighlights": [
-        "One strand noodle",
-        "Hot and sour broth",
-        "Braised pork topping",
-        "Hand-pulled noodles"
+        "Mì một sợi",
+        "Nước dùng chua cay",
+        "Thịt heo kho topping",
+        "Mì kéo tay"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "famous",
-        "must-try"
+        "địa phương",
+        "mì",
+        "nổi tiếng",
+        "phải thử"
       ],
       "star": 0,
       "diamond": 0,
@@ -674,27 +674,27 @@
       "name": "白族特色凉拌菜",
       "nameEn": "Bai Cold Salad",
       "type": "local",
-      "cuisine": "Bai Specialty",
+      "cuisine": "Đặc sản dân tộc Bai",
       "avgPrice": 35,
       "rating": 4.5,
-      "address": "Xizhou Market",
+      "address": "Chợ Xizhou",
       "coordinates": {
         "lat": 25.7622,
         "lng": 100.1272
       },
       "hours": "08:00-18:00",
-      "description": "Local specialty shop at Xizhou market serving various Bai-style cold salads with fresh vegetables and herbs.",
+      "description": "Cửa hàng đặc sản địa phương tại chợ Xizhou phục vụ các món salad lạnh kiểu Bai với rau củ và thảo mộc tươi.",
       "dishHighlights": [
-        "Cold radish salad",
-        "Bai style potato salad",
-        "Pickled cucumber",
-        "Herb salad"
+        "Salad củ cải lạnh",
+        "Salad khoai tây kiểu Bai",
+        "Dưa muối",
+        "Salad thảo mộc"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "market",
-        "healthy"
+        "địa phương",
+        "chay",
+        "chợ",
+        "lành mạnh"
       ],
       "star": 0,
       "diamond": 0,
@@ -704,29 +704,29 @@
     {
       "id": "dali-22",
       "name": "烤全羊",
-      "nameEn": "Roast Whole Lamb",
+      "nameEn": "Cừu Nướng Toàn Thân",
       "type": "local",
-      "cuisine": "Yunnan BBQ",
+      "cuisine": "Nướng Vân Nam",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Dali Countryside, near Cangshan",
+      "address": "Vùng nông thôn Dali, gần Cangshan",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1172
       },
       "hours": "11:00-22:00",
-      "description": "Traditional whole lamb roasting experience in scenic countryside setting, perfect for groups.",
+      "description": "Trải nghiệm nướng nguyên con cừu truyền thống trong khung cảnh nông thôn tuyệt đẹp, hoàn hảo cho nhóm đông người.",
       "dishHighlights": [
-        "Roast whole lamb",
-        "Mutton soup",
-        "Grilled lamb chops",
-        "Countryside scenery"
+        "Cừu nướng nguyên con",
+        "Súp thịt cừu",
+        "Sườn cừu nướng",
+        "Cảnh quan nông thôn"
       ],
       "tags": [
-        "local",
-        "bbq",
-        "group",
-        "specialty"
+        "địa phương",
+        "nướng",
+        "nhóm",
+        "đặc sản"
       ],
       "star": 0,
       "diamond": 0,
@@ -736,29 +736,29 @@
     {
       "id": "dali-23",
       "name": "银桥米线馆",
-      "nameEn": "Yinqiao Rice Noodle Shop",
+      "nameEn": "Cửa hàng bún Yinqiao",
       "type": "local",
-      "cuisine": "Yunnan Rice Noodles",
+      "cuisine": "Mì gạo Vân Nam",
       "avgPrice": 20,
       "rating": 4.5,
-      "address": "Yinqiao Town, Dali",
+      "address": "Thị trấn Yinqiao, Đại Lý",
       "coordinates": {
         "lat": 25.7222,
         "lng": 100.0872
       },
       "hours": "07:00-15:00",
-      "description": "Local spot famous for rice noodles in rich broth, popular with locals and in-the-know travelers.",
+      "description": "Quán ăn nổi tiếng với mì gạo nấu trong nước dùng giàu đặc trưng, được đông đảo người dân địa phương và du khách có chỗ biết đến ưa chuộng.",
       "dishHighlights": [
-        "Beef rice noodles",
-        "Pork rice noodles",
-        "Pickled vegetables",
-        "Chili oil"
+        "Mì gạo bò",
+        "Mì gạo heo",
+        "Rau muống chua",
+        "Dầu ớt"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "budget",
-        "breakfast"
+        "địa phương",
+        "mì",
+        "tiết kiệm",
+        "bữa sáng"
       ],
       "star": 0,
       "diamond": 0,
@@ -770,18 +770,18 @@
       "name": "双廊咖啡馆",
       "nameEn": "Shuanglang Lakeside Cafe",
       "type": "cafe",
-      "cuisine": "Western/Yunnan Fusion",
+      "cuisine": "Phong cách Tây/Vân Nam Fusion",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Shuanglang Waterfront",
+      "address": "Khu vực bờ nước Shuanglang",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "hours": "08:00-22:00",
-      "description": "Cozy lakeside cafe with Erhai views, serving Yunnan coffee, Western breakfasts, and homemade pastries.",
+      "description": "Quán cà phê bên hồ thoáng đãng với tầm nhìn ra hồ Erhai, phục vụ cà phê Vân Nam, bữa sáng kiểu Tây, và các loại bánh nướng tự làm.",
       "dishHighlights": [
-        "Yunnan coffee",
+        "Cà phê Vân Nam",
         "Pancakes with fruit",
         "Fresh smoothies",
         "Cheesecake"
@@ -2195,118 +2195,118 @@
     {
       "type": "ambulance",
       "name": "大理急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Dali People's Hospital has English interpreters"
     },
     {
       "type": "police",
       "name": "大理市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police in Dali Old Town"
     },
     {
       "type": "hospital",
       "name": "大理市第一人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali First People's Hospital",
       "phone": "+86 872 212 5465",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Main hospital in Dali"
     },
     {
       "type": "embassy",
       "name": "美国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Kunming",
       "phone": "+86 871 6364 1057",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming (nearest US consular services)",
+      "notes": "For US citizens in Dali region"
     },
     {
       "type": "hospital",
       "name": "大理州人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Prefecture People's Hospital",
       "phone": "+86 872 212 5075",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with emergency services"
     },
     {
       "type": "tourist-police",
       "name": "大理旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Tourist Police",
       "phone": "+86 872 267 4110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police station in Dali Old Town"
     },
     {
       "type": "fire",
       "name": "大理消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate Kunming",
       "phone": "+86 871 6564 6689",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For UK citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate Kunming",
       "phone": "+86 871 6856 2100",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Australian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "日本驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Kunming",
       "phone": "+86 871 6314 8288",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Japanese citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "法国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate Kunming",
       "phone": "+86 871 6331 5889",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For French citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "德国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate Kunming",
       "phone": "+86 871 6312 5555",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For German citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canada Consulate Guangzhou",
       "phone": "+86 20 3888 0400",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Canadian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "韩国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate Kunming",
       "phone": "+86 871 6566 2115",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Korean citizens in Dali region"
     }
   ],
   "quickFacts": {
@@ -2321,24 +2321,24 @@
     {
       "id": "erhai-lake",
       "name": "洱海",
-      "nameEn": "Hulun Lake",
+      "nameEn": "Erhai Lake",
       "category": "natural",
-      "description": "中国第五大淡水湖，面积2339平方公里，蒙古语意为海一样的湖。",
-      "address": "呼伦贝尔市新巴尔虎右旗",
+      "description": "A beautiful highland lake often called 'Sea of Clouds' offering scenic cycling paths, traditional fishing villages, and stunning mountain backdrops.",
+      "address": "Erhai Lake, Dali Bai Autonomous Prefecture",
       "coordinates": {
         "lat": 25.7522,
         "lng": 100.1872
       },
-      "openingHours": "全天",
-      "ticketPrice": "30元",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some scenic spots may charge)",
+      "recommendedVisitTime": "Half to full day",
       "highlights": [
-        "湖光山色",
-        "候鸟",
-        "日落",
+        "Cycling path around lake",
+        "Fisherman's village",
+        "Shuanglang village",
         "Wutai Lake view"
       ],
-      "tips": "夏季最佳，可品尝全鱼宴。",
+      "tips": "Rent a bicycle (40-80¥/day) to circle the lake. Start early to avoid tour buses. Best light for photos in early morning.",
       "image": "/img/ext/6faaa02aad08.webp",
       "phone": "+86 087 2 8699 3091"
     },
@@ -2442,22 +2442,22 @@
       "name": "苍山",
       "nameEn": "Cangshan Mountain",
       "category": "natural",
-      "description": "Một dãy núi đầy biến đổi phía sau thành phố Dali với các lộ trình cắm trại, các ngôi chùa cổ và toàn cảnh hồ Erhai.",
-      "address": "Dãy núi Cangshan, phía tây thành phố Dali",
+      "description": "A dramatic mountain range behind Dali with hiking trails, ancient temples, and panoramic views of Erhai Lake.",
+      "address": "Cangshan Mountain, west of Dali",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40 Nhân dân tệ (cáp treo phụ thu)",
-      "recommendedVisitTime": "Nửa ngày đến cả ngày",
+      "ticketPrice": "40¥ (cable car extra)",
+      "recommendedVisitTime": "Half to full day",
       "highlights": [
-        "Đầu Người Khổng Lồ với 18 đỉnh",
-        "Con đường Dải Ngọc",
-        "Chùa Qiliang",
-        "Đồng cỏ núi cao"
+        "Giant's Head with 18 peaks",
+        "Jade Belt Road",
+        "Qiliang Temple",
+        "Alpine meadows"
       ],
-      "tips": "Sử dụng cáp treo lên để dễ dàng hơn cho việc cắm trại. Thời tiết thay đổi nhanh - mang theo lớp áo và đồ bảo hộ mưa. Lộ trình cắm trại được đánh dấu rõ ràng nhưng dốc.",
+      "tips": "Take the cable car up for easier hiking. Weather changes quickly - bring layers and rain gear. Hiking trail is well marked but steep.",
       "image": "/img/ext/38f44f1e4171.webp",
       "phone": "+86 087 2 5125 6111"
     },
@@ -2490,22 +2490,22 @@
       "name": "蝴蝶泉",
       "nameEn": "Butterfly Spring",
       "category": "natural",
-      "description": "Một suối huyền thoại được bao quanh bởi những cây cổ thụ, truyền thống được liên kết với mùa giao phối của bướm vào mùa xuân.",
-      "address": "Công viên Suối Bướm, 20km về phía bắc của Đại Lý",
+      "description": "A legendary spring surrounded by ancient trees, traditionally associated with butterfly mating season in spring.",
+      "address": "Butterfly Spring Park, 20km north of Dali",
       "coordinates": {
         "lat": 25.8522,
         "lng": 100.1272
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 giờ",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Suối huyền thoại",
-        "Triển lãm bướm",
-        "Biểu diễn dân tộc Bạch",
-        "Cây cổ thụ"
+        "Legendary spring",
+        "Butterfly exhibition",
+        "Bai performance",
+        "Ancient trees"
       ],
-      "tips": "Tốt nhất vào tháng 4-5 khi bướm thực sự xuất hiện. Kết hợp với chuyến đạp xe Xizhou và hồ Erhai. Thời gian biểu biểu diễn: 9:30, 11:00, 14:00, 15:30.",
+      "tips": "Best in April-May when actual butterflies appear. Combine with Xizhou and Erhai Lake cycling. Performance times: 9:30, 11:00, 14:00, 15:30.",
       "image": "/img/ext/fd780ef70830.webp",
       "phone": "+86 087 2 5910 4245"
     },
@@ -2826,8 +2826,8 @@
       "name": "乌龙坝草甸",
       "nameEn": "Wulongba Grassland",
       "category": "natural",
-      "description": "Highland grassland area with windmills, offering scenic views and photography opportunities.",
-      "address": "North of Dali",
+      "description": "Khu đồng cỏ cao nguyên với những cánh quạt gió, cung cấp các khung cảnh tuyệt đẹp và cơ hội chụp ảnh.",
+      "address": "Phía Bắc của Đà Lý",
       "coordinates": {
         "lat": 25.9022,
         "lng": 100.0672
@@ -2836,8 +2836,8 @@
       "ticketPrice": "Free",
       "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Grassland views",
-        "Windmills",
+        "Khám phá đồng cỏ",
+        "Những cánh quạt gió",
         "Photography",
         "Off-the-beaten-path"
       ],

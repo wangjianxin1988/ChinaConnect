@@ -9,14 +9,14 @@
     "lng": 121.544
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Ningbo, ancienne ville portuaire de la province du Zhejiang, est l'une des plus anciennes villes et des principaux ports de Chine. Connue pour son histoire millénaire, ses temples bouddhistes, son architecture traditionnelle et ses fruits de mer frais. Elle abrite la célèbre Pavillon Tianyi, la plus ancienne bibliothèque privée de Chine.",
+  "description": "Ningbo, an ancient port city in Zhejiang province, is one of China's oldest cities and major ports. Known for its thousand-year history, Buddhist temples, traditional architecture, and fresh seafood. Home to the famous Tianyi Pavilion, China's oldest private library.",
   "coverImage": "/img/ext/9dc5ac0e3a9c.webp",
   "highlights": [
-    "Pavillon Tianyi - Plus ancienne bibliothèque privée de Chine",
-    "Vieux Bund - Front de mer historique",
-    "Ville de Xikou - Foyer de Chiang Kai-shek",
-    "Mont Putuo - Montagne sacrée bouddhiste",
-    "Musée de Ningbo - Architecture de Wang Shu"
+    "Tianyi Pavilion - China's oldest private library",
+    "Temple of the Heavenly King",
+    "Old Bund - European colonial architecture",
+    "Dong钱湖 - Scenic lake area",
+    "Famous seafood cuisine"
   ],
   "climate": {
     "type": "Subtropical monsoon climate",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28°C (82°F)",
     "avgWinterTemp": "6°C (43°F)",
-    "tips": "Le printemps et l'automne sont agréables. L'été est chaud et humide. L'hiver est humide et froid. Vents marins forts. Fruits de mer abondants."
+    "tips": "Best in spring and autumn. Summers hot and humid with typhoons possible. Pleasant winters. Spring for flowers, autumn for foliage."
   },
   "attractions": [
     {
@@ -350,20 +350,20 @@
       "nameEn": "Qing'an Guild Hall",
       "category": "cultural",
       "image": "/img/ext/31931b3db36a.webp",
-      "description": "Historic guild hall for sailors and merchants with elaborate carvings.",
-      "address": "Qing'an Guild Hall, Jiangxia District",
+      "description": "Ancienne guilde pour marins et marchands avec des sculptures élaborées.",
+      "address": "Qing'an Guild Hall, District de Jiangxia",
       "coordinates": {
         "lat": 29.8722,
         "lng": 121.5622
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1 heure",
       "highlights": [
-        "Elaborate carvings",
-        "Maritime history",
-        "Traditional architecture",
-        "Cultural exhibits"
+        "Sculptures élaborées",
+        "Histoire maritime",
+        "Architecture traditionnelle",
+        "Expositions culturelles"
       ],
       "tips": "The carvings are impressive. Learn about maritime trade history.",
       "phone": "+86 057 4 2198 6952"
@@ -371,7 +371,7 @@
     {
       "id": "ningbo-15",
       "name": "它山堰",
-      "nameEn": " Tashan Dam",
+      "nameEn": "Barrage de Tashan",
       "category": "historical",
       "image": "/img/ext/f413f780ce59.webp",
       "description": "Ancient water conservation project from Tang Dynasty, still in use.",
@@ -380,14 +380,14 @@
         "lat": 29.7822,
         "lng": 121.4722
       },
-      "openingHours": "Open 24 hours",
+      "openingHours": "Ouvert 24 heures sur 24",
       "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1 à 2 heures",
       "highlights": [
         "Ancient engineering",
         "Water flows",
-        "Peaceful setting",
-        "Historical significance"
+        "Cadre paisible",
+        "Signification historique"
       ],
       "tips": "For engineering enthusiasts. Combine with nearby hiking. Very peaceful.",
       "phone": "+86 057 4 3391 2200"
@@ -2277,12 +2277,12 @@
       "dishHighlights": [
         "雪菜大黄鱼",
         "臭冬瓜",
-        "海鲜"
+        "Fruits de mer"
       ],
       "tags": [
-        "本地人爱去",
-        "社区老店",
-        "性价比高"
+        "Prisé par les habitants",
+        "Établissement historique du quartier",
+        "Excellent rapport qualité-prix"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ce1b2179a52c.webp"
@@ -2290,28 +2290,28 @@
     {
       "id": "ningbo-52",
       "name": "老街臭冬瓜",
-      "nameEn": "老街臭冬瓜 (臭冬瓜)",
+      "nameEn": "Rue Lao Jie - Stinky Winter Melon (Chou Dong Gua)",
       "type": "cafe",
-      "cuisine": "臭冬瓜",
+      "cuisine": "Chou Dong Gua",
       "avgPrice": 52,
       "rating": 4.6,
-      "address": "宁波市新城区美食街21号",
+      "address": "21 Rue de la Gastronomie, Nouveau Quartier de Ningbo",
       "coordinates": {
         "lat": 29.8873,
         "lng": 121.5275
       },
       "phone": "+86 010 75698437",
       "hours": "10:00-22:00",
-      "description": "宁波本地人推荐的臭冬瓜店，味道正宗，价格实惠",
+      "description": "restaurant de chou Dong Gua recommandé par les habitants de Ningbo, goût authentique et prix abordables",
       "dishHighlights": [
-        "臭冬瓜",
-        "雪菜大黄鱼",
-        "海鲜"
+        "Chou Dong Gua (citrouille fermentée)",
+        "Grand jaune pané aux légumes",
+        "Fruits de mer"
       ],
       "tags": [
-        "下午茶",
-        "文艺",
-        "咖啡"
+        "Goûter",
+        "Artistique",
+        "Café"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3876a641f74a.png"
@@ -2331,16 +2331,16 @@
       },
       "phone": "+86 010 82591578",
       "hours": "10:00-22:00",
-      "description": "宁波本地人推荐的雪菜大黄鱼店，味道正宗，价格实惠",
+      "description": "Ce restaurant de poisson jaune au chou fermenté est recommandé par les habitants de Ningbo. Saveur authentique et prix abordables.",
       "dishHighlights": [
-        "雪菜大黄鱼",
-        "汤圆",
-        "臭冬瓜"
+        "Poisson jaune au chou fermenté",
+        "Boules de riz glutineux",
+        "Courge fermentée"
       ],
       "tags": [
-        "性价比高",
-        "隐藏美食",
-        "家常菜"
+        "Excellent rapport qualité-prix",
+        "Perle cachée",
+        "Cuisine familiale"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3a5f928decfd.webp"
@@ -2360,16 +2360,16 @@
       },
       "phone": "+86 010 96766835",
       "hours": "09:00-21:00",
-      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "description": "Restaurant de fruits de mer recommandé par les habitants de Ningbo, saveur authentique, prix avantageux",
       "dishHighlights": [
-        "汤圆",
-        "年糕",
-        "臭冬瓜"
+        "Boules de riz glutineux",
+        "Gâteau de riz",
+        "Courge fermentée"
       ],
       "tags": [
-        "安静",
-        "文艺",
-        "咖啡"
+        "Calme",
+        "Artistique",
+        "Café"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/097a8deb04c8.webp"
@@ -2377,23 +2377,23 @@
     {
       "id": "ningbo-58",
       "name": "老宁波海鲜",
-      "nameEn": "老宁波海鲜 (海鲜)",
+      "nameEn": "La Cuisine de la Vieille Ningbo (Fruits de mer)",
       "type": "street",
-      "cuisine": "海鲜",
+      "cuisine": "Fruits de mer",
       "avgPrice": 56,
       "rating": 4.7,
-      "address": "宁波市新城区美食街34号",
+      "address": "34 Rue Gastronomique, Nouvelle Zone, Ningbo",
       "coordinates": {
         "lat": 29.8899,
         "lng": 121.5486
       },
       "phone": "+86 010 22869641",
       "hours": "17:00-02:00",
-      "description": "宁波本地人推荐的海鲜店，味道正宗，价格实惠",
+      "description": "Restaurant de fruits de mer recommandé par les habitants de Ningbo, saveur authentique, prix avantageux",
       "dishHighlights": [
-        "汤圆",
-        "雪菜大黄鱼",
-        "臭冬瓜"
+        "Boules de riz glutineux",
+        "Grand poisson jaune auxalted",
+        "Courge fermentée"
       ],
       "tags": [
         "夜市",
@@ -3114,94 +3114,94 @@
     {
       "type": "ambulance",
       "name": "宁波急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "宁波市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "宁波第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo First Hospital",
       "phone": "+86 574 8730 5569",
-      "address": "Guangzhou",
+      "address": "59 Liuting Street, Haishu District",
       "coordinates": {
         "lat": 29.8722,
         "lng": 121.5522
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "宁波大学医学院附属医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Affiliated Hospital of Ningbo University School of Medicine",
       "phone": "+86 574 8703 5514",
-      "address": "Guangzhou",
+      "address": "247 Renmin Road, Jiangxia District",
       "coordinates": {
         "lat": 29.8722,
         "lng": 121.5622
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital"
     },
     {
       "type": "tourist-police",
       "name": "宁波旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Tourist Police",
       "phone": "+86 574 8719 2810",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "宁波消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Shanghai",
       "phone": "+86 21 6179 8300",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Ningbo region"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For US citizens in Ningbo region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Shanghai",
       "phone": "+86 21 5257 4788",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Ningbo region"
     },
     {
       "type": "embassy",
       "name": "韩国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Shanghai",
       "phone": "+86 21 5108 0700",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Korean citizens in Ningbo region"
     },
     {
       "type": "pharmacy",
       "name": "宁波大药房",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Ningbo Pharmacy",
       "phone": "+86 574 8733 8888",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Multiple locations",
+      "notes": "24-hour pharmacy available"
     }
   ],
   "quickFacts": {

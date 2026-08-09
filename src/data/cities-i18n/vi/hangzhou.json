@@ -9,14 +9,14 @@
     "lng": 120.1551
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Hàng Châu, thủ phủ tỉnh Chiết Giang, nổi tiếng với vẻ đẹp thiên nhiên và văn hóa lịch sử. Là nơi có Tây Hồ, di sản thế giới UNESCO, và không khí thị trấn nước cổ của Đại Vận Hà. Được biết đến như 'Thiên đường trên mặt đất' bởi khí hậu ôn hòa, cây xanh tươi tốt và những khu vườn thanh lịch. Trung tâm công nghệ hàng đầu với trụ sở chính của Alibaba.",
+  "description": "Hangzhou, the capital of Zhejiang Province, is famous for its natural beauty and historical culture. Home to West Lake, a UNESCO World Heritage site, and the ancient water town ambiance of the Grand Canal. Known as 'Paradise on Earth' for its mild climate, lush greenery, and elegant gardens. A leading tech hub as headquarters of Alibaba.",
   "coverImage": "/img/ext/c71341b19c1d.webp",
   "highlights": [
-    "Tây Hồ - Di sản thế giới UNESCO",
-    "Tương Hồ - Khu thắng cảnh mới",
-    "Phố Hà Phống - Phố mua sắm lịch sử",
-    "Chùa Linh Ẩn - Chùa Phật cổ",
-    "Đầm lầy Tây Khê - Đầm lầy đô thị lớn nhất"
+    "West Lake - UNESCO World Heritage",
+    "Xianghu Lake - New scenic area",
+    "Hefang Street - Historic shopping street",
+    "Lingyin Temple - Ancient Buddhist temple",
+    "Xixi Wetland - Largest urban wetland"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Mùa xuân ngắm hoa, mùa thu ngắm lá vàng. Mùa hè nóng ẩm và mưa nhiều. Tháng 6 mùa mưa. Giày thoải mái để đi bộ quanh Tây Hồ."
+    "tips": "Best visited in spring for flowers or autumn for golden foliage. Summer is hot and humid with frequent rain. Spring rainy season (Meiyu) in June. Wear comfortable shoes for walking around West Lake."
   },
   "attractions": [
     {
@@ -87,22 +87,22 @@
       "nameEn": "Lingyin Temple",
       "image": "/img/ext/928aa4512683.webp",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on a scenic hill with beautiful gardens.",
-      "address": "Lingyin Temple, Suzhou",
+      "description": "One of the oldest and most famous Buddhist temples in China, dating back to 326 AD, with stunning architecture and rock carvings.",
+      "address": "1 Lingyin Road, Xihu District",
       "coordinates": {
         "lat": 30.2372,
         "lng": 120.1022
       },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "45¥",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "06:30-17:30 (Summer), 07:00-17:30 (Winter)",
+      "ticketPrice": "45¥ (temple), additional 55¥ for Feilai Feng peak",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Temple",
-        "Gardens",
-        "Pagodas",
+        "Feilai Feng peak",
+        "Hall of the Heavenly Kings",
+        "Mahavira Hall",
         "Cave of the 500 Arhats"
       ],
-      "tips": "Climb the hill for views.",
+      "tips": "Arrive early to avoid tour groups. The temple is at the foot of Feilai Feng. Wear modest clothing covering shoulders and knees.",
       "phone": "+86 571 8717 1156"
     },
     {
@@ -469,22 +469,22 @@
       "nameEn": "Canal Square",
       "image": "/img/ext/6aff39cf893f.webp",
       "category": "cultural",
-      "description": "Một quảng trường ven sông ở phía nam đầu kênh lớn ở Hàng Châu, với các triển lãm lịch sử và khu mua sắm.",
-      "address": "Quảng trường Kênh, Quận Gông Shū",
+      "description": "A riverside plaza at the southern end of the Grand Canal in Hangzhou, with historical displays and shopping areas.",
+      "address": "Canal Square, Gongshu District",
       "coordinates": {
         "lat": 30.2852,
         "lng": 120.1422
       },
-      "openingHours": "Mở cửa 24/24",
-      "ticketPrice": "Miễn phí",
-      "recommendedVisitTime": "1-2 giờ",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Tháp đồng hồ nước",
-        "Bảo tàng Kênh",
-        "Chợ đêm",
-        "Công viên ven sông"
+        "Water clock tower",
+        "Canal Museum",
+        "Night market",
+        "Riverside park"
       ],
-      "tips": "Tốt nhất vào buổi tối khi có trình chiếu phun nước và ánh sáng. Bảo tàng Kênh đào rất tuyệt và miễn phí. Kết nối với tuyến du ngoạn thuyền trên kênh.",
+      "tips": "Evening is best when fountain show and lighting are on. The Canal Museum is excellent and free. Connect with boat tour of canal.",
       "phone": "+86 057 1 1394 2316"
     },
     {
@@ -562,25 +562,25 @@
     {
       "id": "chaoshan-mountain",
       "name": "超山",
-      "nameEn": "Núi Chaoshan",
+      "nameEn": "Chaoshan Mountain",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "category": "natural",
-      "description": "Một ngọn núi đẹp nổi tiếng với hoa mận vào mùa đông và xuân, với các ngôi chùa cổ và địa hình đá độc đáo.",
-      "address": "Chaoshan, Quận Lâm Bình",
+      "description": "A scenic mountain famous for plum blossoms in winter and spring, with ancient temples and unique rock formations.",
+      "address": "Chaoshan,临平区",
       "coordinates": {
         "lat": 30.4522,
         "lng": 120.1522
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2-3 giờ",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Biển hoa mận",
-        "Cây mận cổ thời nhà Đường",
-        "Đền Chaoshan",
-        "Biển hoa"
+        "Plum blossom sea",
+        "Ancient Tang dynasty plum trees",
+        "Chaoshan Temple",
+        "Sea of flowers"
       ],
-      "tips": "Mùa hoa mận đỉnh điểm là từ tháng 2 đến tháng 3. Cây mận cổ gần đền thật ấn tượng. Rất phù hợp cho việc chụp ảnh.",
+      "tips": "Peak plum blossom season is February-March. The ancient plum trees near the temple are most impressive. Great for photography.",
       "phone": "+86 057 1 0521 3461"
     },
     {
@@ -756,20 +756,20 @@
       "name": "断桥",
       "nameEn": "Broken Bridge",
       "category": "landmark",
-      "description": "Một trong mười cảnh đẹp của Tây Hồ, nơi gặp gỡ của Bạch Niơ Tử và Khương Tiên.",
-      "address": "Quận Tây Hồ, Thành phố Hồ Chí Minh",
+      "description": "西湖十景之断桥残雪，白娘子与许仙相遇地。",
+      "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
         "lng": 120.15
       },
-      "openingHours": "Toàn thời gian",
-      "ticketPrice": "Miễn phí",
-      "recommendedVisitTime": "30 phút",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
       "highlights": [
-        "Cầu gãy tuyết tàn",
-        "Truyền thuyết Bạch Niơ Tử"
+        "断桥残雪",
+        "白娘子传说"
       ],
-      "tips": "Phong cảnh tuyết mùa đông đẹp nhất.",
+      "tips": "冬季雪景最美。",
       "image": "/img/ext/c935cf5be5e4.webp",
       "phone": "+86 057 1 3320 3277"
     },
@@ -1145,20 +1145,20 @@
       "name": "宝石山",
       "nameEn": "Baoshi Mountain",
       "category": "nature",
-      "description": "Một ngọn đồi nhỏ bên hồ Tây, có tháp Bảo Thúc.",
-      "address": "西湖区, 杭州市",
+      "description": "西湖边的小山，有保俶塔。",
+      "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
         "lng": 120.15
       },
-      "openingHours": "Toàn thời gian",
-      "ticketPrice": "Miễn phí",
-      "recommendedVisitTime": "1.5 giờ",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "Tháp Bảo Thúc",
-        "Toàn cảnh hồ Tây"
+        "保俶塔",
+        "西湖全景"
       ],
-      "tips": "Lên cao để nhìn xa.",
+      "tips": "登高望远。",
       "image": "/img/ext/6f29cff1af46.webp",
       "phone": "+86 057 1 3076 5429"
     },
@@ -1252,25 +1252,25 @@
       "nameEn": "Zhi Wei Guan",
       "type": "blackpearl",
       "diamond": 1,
-      "cuisine": "Hàng Châu",
+      "cuisine": "Hangzhou",
       "avgPrice": 120,
       "rating": 4.6,
-      "address": "2 Đường Gaoyin, Quận Shangcheng",
+      "address": "2 Gaoyin Road, Shangcheng District",
       "coordinates": {
         "lat": 30.2482,
         "lng": 120.1722
       },
       "phone": "+86 571 8706 5523",
       "hours": "07:00-21:00",
-      "description": "Nhà hàng lịch sử được thành lập năm 1913, nổi tiếng với ẩm thực Hàng Châu và bánh dim sum truyền thống.",
+      "description": "Historic restaurant established in 1913, famous for Hangzhou cuisine and traditional dim sum.",
       "dishHighlights": [
-        "Thịt viên sư tử đầu (món thịt viên lớn)",
-        "Mì Hàng Châu",
-        "Xốt giấm ngọt sườn heo"
+        "Lion head meatballs",
+        "Hangzhou-style noodles",
+        "Sweet vinegar pork ribs"
       ],
       "tags": [
-        "lịch sử",
-        "ẩm thực Hàng Châu",
+        "historic",
+        "hangzhou-cuisine",
         "dim-sum"
       ],
       "star": 0,
@@ -1279,27 +1279,27 @@
     {
       "id": "hangzhou-4",
       "name": "绿茶餐厅",
-      "nameEn": "Nhà hàng Trà Xanh",
+      "nameEn": "Green Tea Restaurant",
       "type": "local",
-      "cuisine": "Món ăn chiết giang",
+      "cuisine": "Zhejiang",
       "avgPrice": 100,
       "rating": 4.4,
-      "address": "Nhiều địa điểm",
+      "address": "Multiple locations",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1552
       },
       "hours": "10:30-22:00",
-      "description": "Chuỗi nhà hàng thời thượng nổi tiếng với nguyên liệu tươi ngon và các món ăn sáng tạo chiết giang trong không gian hiện đại.",
+      "description": "Trendy restaurant chain known for fresh ingredients and creative Zhejiang dishes in modern atmosphere.",
       "dishHighlights": [
-        "Bánh bột trà xanh",
-        "Gà nấu sữa",
-        "Rau tươi"
+        "Green tea flour ball",
+        "Braised chicken",
+        "Fresh vegetables"
       ],
       "tags": [
-        "địa phương",
-        "hiện đại",
-        "thoải mái"
+        "local",
+        "modern",
+        "casual"
       ],
       "star": 0,
       "diamond": 0,
@@ -1386,12 +1386,12 @@
       "dishHighlights": [
         "Longjing shrimp",
         "Tea-smoked duck",
-        "Dragon well tea fried rice"
+        "Cơm chiên trà Longjing"
       ],
       "tags": [
-        "local",
-        "tea-cuisine",
-        "scenic"
+        "địa phương",
+        "ẩm thực trà",
+        "phong cảnh"
       ],
       "star": 0,
       "diamond": 0,
@@ -1402,25 +1402,25 @@
       "name": "弄堂里",
       "nameEn": "Long Tang Li",
       "type": "local",
-      "cuisine": "Zhejiang Home-style",
+      "cuisine": "Phong cách Chiết Giang",
       "avgPrice": 70,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "Nhiều địa điểm",
       "coordinates": {
         "lat": 30.2622,
         "lng": 120.1722
       },
       "hours": "10:00-22:00",
-      "description": "Popular local chain known for authentic Zhejiang home cooking and comfortable dining environment.",
+      "description": "Chuỗi nhà hàng địa phương nổi tiếng với ẩm thực gia đình Chiết Giang chính hãng và môi trường ăn uống thoải mái",
       "dishHighlights": [
-        "Fried sweet rice cake",
-        "Braised pork with taro",
-        "Hangzhou style cold noodles"
+        "Bánh gạo ngọt chiên",
+        "Thịt heo kho khoai lang",
+        "Mì lạnh phong cách Hàng Châu"
       ],
       "tags": [
-        "local",
-        "casual",
-        "family-friendly"
+        "địa phương",
+        "bình dân",
+        "thân thiện gia đình"
       ],
       "star": 0,
       "diamond": 0,
@@ -1432,7 +1432,7 @@
       "name": "龙井茶餐厅",
       "nameEn": "Longjing Tea Restaurant",
       "type": "local",
-      "cuisine": "Tea Cuisine",
+      "cuisine": "Ẩm thực trà",
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Longjing Village, Xihu District",
@@ -1442,17 +1442,17 @@
       },
       "phone": "+86 571 8797 8888",
       "hours": "09:00-21:00",
-      "description": "Scenic restaurant surrounded by tea gardens serving authentic Longjing tea cuisine and local Hangzhou dishes.",
+      "description": "Nhà hàng cảnh quan được bao quanh bởi vườn trà, phục vụ ẩm thực trà Longjing chính hiệu và các món địa phương Hàng Châu.",
       "dishHighlights": [
-        "Longjing tea chicken",
-        "Tea leaves scrambled eggs",
-        "Steamed fish with tea"
+        "Gà trà Longjing",
+        "Trứng xào lá trà",
+        "Cá hấp trà"
       ],
       "tags": [
-        "local",
-        "tea-cuisine",
-        "scenic",
-        "garden-view"
+        "địa phương",
+        "ẩm thực trà",
+        "cảnh quan",
+        "view vườn"
       ],
       "star": 0,
       "diamond": 0,
@@ -1463,7 +1463,7 @@
       "name": "杭帮菜馆",
       "nameEn": "Hangbang Cuisine Restaurant",
       "type": "local",
-      "cuisine": "Hangzhou",
+      "cuisine": "Hàng Châu",
       "avgPrice": 100,
       "rating": 4.4,
       "address": "156 Shuguang Road, Xihu District",
@@ -1473,16 +1473,16 @@
       },
       "phone": "+86 571 8797 6543",
       "hours": "10:30-21:00",
-      "description": "Traditional restaurant specializing in authentic Hangzhou cuisine with focus on classic recipes passed down generations.",
+      "description": "Nhà hàng truyền thống chuyên về ẩm thực Hàng Châu chính hãng với sự tập trung vào các công thức cổ điển được truyền qua nhiều thế hệ.",
       "dishHighlights": [
-        "Hangzhou roast duck",
-        "West Lake vinegar fish",
-        "Dongpo pork"
+        "Vịt quay Hàng Châu",
+        "Cá giấm Tây Hồ",
+        "Thịt heo Đông Pha"
       ],
       "tags": [
-        "local",
-        "hangzhou-cuisine",
-        "traditional"
+        "địa phương",
+        "ẩm-thực-hàng-châu",
+        "truyền thống"
       ],
       "star": 0,
       "diamond": 0,
@@ -1493,20 +1493,20 @@
       "name": "御街宴",
       "nameEn": "Yujie Yan",
       "type": "local",
-      "cuisine": "Zhejiang",
+      "cuisine": "Chiết Giang",
       "avgPrice": 180,
       "rating": 4.6,
-      "address": "88 Zhongshan Middle Road, Shangcheng District",
+      "address": "88 Đường Trung Sơn, Quận Thượng Thành",
       "coordinates": {
         "lat": 30.2492,
         "lng": 120.1682
       },
       "phone": "+86 571 8770 1234",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Upscale restaurant near Southern Song Imperial Street serving refined Zhejiang dishes in elegant traditional setting.",
+      "description": "Nhà hàng cao cấp gần Đường Hoàng gia Nam Tống phục vụ các món ăn Chiết Giang tinh tế trong không gian truyền thống thanh lịch.",
       "dishHighlights": [
-        "Braised pork belly with tea leaf",
-        "Steamed bass with scallion",
+        "Thịt ba chỉ hầm với lá trà",
+        "Cá vẹt hấp với hành lá",
         "Hangzhou wontons"
       ],
       "tags": [
@@ -1888,7 +1888,7 @@
     {
       "id": "hangzhou-27",
       "name": "老杭州龙井虾仁",
-      "nameEn": "Lão Hàng Châu Long Tỉnh Tôm (Tôm thịt trứng trà Long Tỉnh)",
+      "nameEn": "老杭州龙井虾仁 (龙井虾仁)",
       "type": "local",
       "cuisine": "龙井虾仁",
       "avgPrice": 49,
@@ -1900,16 +1900,16 @@
       },
       "phone": "+86 0571 71119448",
       "hours": "09:00-21:00",
-      "description": "Được đề xuất bởi người địa phương ở Hàng Châu, quán chuyên về món Tôm thịt trứng trà Long Tỉnh với hương vị chuẩn vị và giá cả phải chăng.",
+      "description": "杭州本地人推荐的龙井虾仁店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Tôm thịt trứng trà Long Tỉnh",
-        "Xiǎolóng bāo (bánh bao nhỏ) chứa nước dùng",
-        "Cá chép Tây Hồ"
+        "龙井虾仁",
+        "知味小笼",
+        "西湖醋鱼"
       ],
       "tags": [
-        "Món ăn gia đình",
-        "Giá trị đáng giá",
-        "Quán lâu đời trong khu vực"
+        "家常菜",
+        "性价比高",
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/dab98410b665.webp"
@@ -1917,28 +1917,28 @@
     {
       "id": "hangzhou-29",
       "name": "老街龙井虾仁",
-      "nameEn": "Lão Phố Long Tỉnh Tôm (Tôm thịt trứng trà Long Tỉnh)",
+      "nameEn": "老街龙井虾仁 (龙井虾仁)",
       "type": "local",
-      "cuisine": "Tôm thịt trứng trà Long Tỉnh",
+      "cuisine": "龙井虾仁",
       "avgPrice": 114,
       "rating": 4.7,
-      "address": "38 Đường Ẩm Thực, Khu Thương Mại Mới, Thành phố Hàng Châu",
+      "address": "杭州市新城区美食街38号",
       "coordinates": {
         "lat": 30.3143,
         "lng": 120.1416
       },
       "phone": "+86 0571 58681061",
       "hours": "09:00-21:00",
-      "description": "Được đề xuất bởi người địa phương ở Hàng Châu, quán chuyên về món Tôm thịt trứng trà Long Tỉnh với hương vị chuẩn vị và giá cả phải chăng.",
+      "description": "杭州本地人推荐的龙井虾仁店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Piàn'ér chuān (mì xào với thịt lợn và rau)",
-        "Cá chép Tây Hồ",
-        "Tôm thịt trứng trà Long Tỉnh"
+        "片儿川",
+        "西湖醋鱼",
+        "龙井虾仁"
       ],
       "tags": [
-        "Người địa phương thích đến",
-        "Giá trị đáng giá",
-        "Chỗ phải xếp hàng"
+        "本地人爱去",
+        "性价比高",
+        "排队王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3a2d93db69d7.webp"
@@ -1946,28 +1946,28 @@
     {
       "id": "hangzhou-31",
       "name": "街边西湖醋鱼",
-      "nameEn": "Cá chép xốt Tây Hồ (Cá chép xốt Tây Hồ)",
+      "nameEn": "街边西湖醋鱼 (西湖醋鱼)",
       "type": "cafe",
-      "cuisine": "Cá chép xốt Tây Hồ",
+      "cuisine": "西湖醋鱼",
       "avgPrice": 51,
       "rating": 4.2,
-      "address": "Số 1, Phố Ẩm Thực, Khu Trung Tâm Thành Phố Hàng Châu",
+      "address": "杭州市市中心区美食街1号",
       "coordinates": {
         "lat": 30.2875,
         "lng": 120.1173
       },
       "phone": "+86 0571 30286721",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Quán Cá chép xốt Tây Hồ được người địa phương Hàng Châu giới thiệu, có hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的西湖醋鱼店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Xiǎolóng bāo Zhi Wei (bánh bao nhỏ Zhi Wei)",
-        "Thịt Đông Pha",
-        "Cá chép xốt Tây Hồ"
+        "知味小笼",
+        "东坡肉",
+        "西湖醋鱼"
       ],
       "tags": [
-        "văn nghệ",
-        "yên tĩnh",
-        "trà chiều"
+        "文艺",
+        "安静",
+        "下午茶"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ceb9489d9153.webp"
@@ -1975,28 +1975,28 @@
     {
       "id": "hangzhou-33",
       "name": "地道片儿川",
-      "nameEn": "Phần Nhiều Xuyên đích thực (Phần Nhiều Xuyên)",
+      "nameEn": "地道片儿川 (片儿川)",
       "type": "local",
-      "cuisine": "Phần Nhiều Xuyên",
+      "cuisine": "片儿川",
       "avgPrice": 134,
       "rating": 4.8,
-      "address": "Số 98, Phố Ẩm Thực, Khu Phố Cổ Thành Phố Hàng Châu",
+      "address": "杭州市老城区美食街98号",
       "coordinates": {
         "lat": 30.2398,
         "lng": 120.1508
       },
       "phone": "+86 0571 91788571",
       "hours": "10:00-22:00",
-      "description": "Quán Phần Nhiều Xuyên được người địa phương Hàng Châu giới thiệu, có hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的片儿川店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Phần Nhiều Xuyên",
-        "Thịt Đông Pha",
-        "Xiǎolóng bāo Zhi Wei (bánh bao nhỏ Zhi Wei)"
+        "片儿川",
+        "东坡肉",
+        "知味小笼"
       ],
       "tags": [
-        "Giá trị đầu tư tốt",
-        "Món ăn gia đình",
-        "Nổi tiếng về hàng đợi"
+        "性价比高",
+        "家常菜",
+        "排队王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/d587f5fbc17c.png"
@@ -2004,28 +2004,28 @@
     {
       "id": "hangzhou-35",
       "name": "街边东坡肉",
-      "nameEn": "Đông Phố Nhục (Đông Phố Nhục)",
+      "nameEn": "街边东坡肉 (东坡肉)",
       "type": "local",
-      "cuisine": "Đông Phố Nhục (thịt heo)",
+      "cuisine": "东坡肉",
       "avgPrice": 110,
       "rating": 4.5,
-      "address": "152 Đường Ẩm Thực, Khu Phố Cũ, Thành Phố Hàng Châu",
+      "address": "杭州市老城区美食街152号",
       "coordinates": {
         "lat": 30.2708,
         "lng": 120.2006
       },
       "phone": "+86 0571 31901847",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Quán ăn Đông Phố Nhục được người địa phương Hàng Châu giới thiệu, có hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的东坡肉店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Đông Phố Nhục (thịt heo)",
-        "Cá Chép Tương Tây Hồ",
-        "Phiến Xả Chuẩn"
+        "东坡肉",
+        "西湖醋鱼",
+        "片儿川"
       ],
       "tags": [
-        "Giá trị đầu tư tốt",
-        "Ẩm thực bí mật",
-        "Cửa hàng lâu năm trong khu phố"
+        "性价比高",
+        "隐藏美食",
+        "社区老店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/fea314adbd69.webp"
@@ -2033,28 +2033,28 @@
     {
       "id": "hangzhou-37",
       "name": "老字号东坡肉",
-      "nameEn": "Đông Phố Nhục lâu đời (Đông Phố Nhục)",
+      "nameEn": "老字号东坡肉 (东坡肉)",
       "type": "local",
-      "cuisine": "Đông Phố Nhục (thịt heo)",
+      "cuisine": "东坡肉",
       "avgPrice": 72,
       "rating": 4.6,
-      "address": "26 Đường Ẩm Thực, Khu Phố Mới, Thành Phố Hàng Châu",
+      "address": "杭州市新城区美食街26号",
       "coordinates": {
         "lat": 30.3205,
         "lng": 120.174
       },
       "phone": "+86 0571 45748604",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "Quán ăn Đông Phố Nhục được người địa phương Hàng Châu giới thiệu, có hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的东坡肉店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Cá Chép Tương Tây Hồ",
-        "Phiến Xả Chuẩn",
-        "Tôm Nhân Long Tỉnh"
+        "西湖醋鱼",
+        "片儿川",
+        "龙井虾仁"
       ],
       "tags": [
-        "Ẩm thực bí mật",
-        "Giá trị đầu tư tốt",
-        "Món ăn gia đình"
+        "隐藏美食",
+        "性价比高",
+        "家常菜"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -2062,28 +2062,28 @@
     {
       "id": "hangzhou-39",
       "name": "老字号龙井虾仁",
-      "nameEn": "Lão Hán Tử Long Tỉnh Tôm Tươi (Tôm tươi hạt chè Long Tỉnh)",
+      "nameEn": "老字号龙井虾仁 (龙井虾仁)",
       "type": "local",
-      "cuisine": "Tôm tươi hạt chè Long Tỉnh",
+      "cuisine": "龙井虾仁",
       "avgPrice": 61,
       "rating": 4.5,
-      "address": "147 Ngõ Ẩm Thực, Khu Trung Tâm Thành Phố Hàng Châu",
+      "address": "杭州市市中心区美食街147号",
       "coordinates": {
         "lat": 30.3178,
         "lng": 120.1596
       },
       "phone": "+86 0571 47473738",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "Quán tôm tươi hạt chè Long Tỉnh được người địa phương Hàng Châu giới thiệu, có hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的龙井虾仁店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Xiǎo lóng bāo (bánh bao nhỏ hấp)",
-        "Piàn ér chuān (mì xào thịt heo và rau)",
-        "Tôm tươi hạt chè Long Tỉnh"
+        "知味小笼",
+        "片儿川",
+        "龙井虾仁"
       ],
       "tags": [
-        "Ẩm thực bí mật",
-        "Người địa phương thích đến",
-        "Đông khách chờ đợi"
+        "隐藏美食",
+        "本地人爱去",
+        "排队王"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/652363307c30.webp"
@@ -2091,28 +2091,28 @@
     {
       "id": "hangzhou-41",
       "name": "老杭州知味小笼",
-      "nameEn": "Lão Hàng Châu Chí Vị Tiểu Lũng (Chí Vị Tiểu Lũng)",
+      "nameEn": "老杭州知味小笼 (知味小笼)",
       "type": "local",
-      "cuisine": "Xiǎo lóng bāo (bánh bao nhỏ hấp)",
+      "cuisine": "知味小笼",
       "avgPrice": 123,
       "rating": 4.4,
-      "address": "74 Ngõ Ẩm Thực, Khu Thành Phố Mới, Hàng Châu",
+      "address": "杭州市新城区美食街74号",
       "coordinates": {
         "lat": 30.2526,
         "lng": 120.161
       },
       "phone": "+86 0571 81661167",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "Quán xiǎo lóng bāo được người địa phương Hàng Châu giới thiệu, có hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的知味小笼店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Chí Vị Tiểu Lũng",
-        "Đông Pha Thịt",
-        "Cá Chua Táo Tây Hồ"
+        "知味小笼",
+        "东坡肉",
+        "西湖醋鱼"
       ],
       "tags": [
-        "Giá trị đáng giá",
-        "Cửa hàng lâu đời trong khu phố",
-        "Ẩm thực giấu mặt"
+        "性价比高",
+        "社区老店",
+        "隐藏美食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/c06b170e3a1d.webp"
@@ -2120,28 +2120,28 @@
     {
       "id": "hangzhou-43",
       "name": "地道片儿川",
-      "nameEn": "Địa Đạo Phần Nhiều Xuyên (Phần Nhiều Xuyên)",
+      "nameEn": "地道片儿川 (片儿川)",
       "type": "cafe",
-      "cuisine": "Phần Nhiều Xuyên",
+      "cuisine": "片儿川",
       "avgPrice": 77,
       "rating": 4.6,
-      "address": "44 Đường Ăn Uống Phố Cổ, Thành phố Hàng Châu",
+      "address": "杭州市老城区美食街44号",
       "coordinates": {
         "lat": 30.3181,
         "lng": 120.146
       },
       "phone": "+86 0571 13737655",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "Cửa hàng Phần Nhiều Xuyên được người địa phương Hàng Châu giới thiệu, hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的片儿川店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Tôm Nhân Long Tỉnh",
-        "Cá Chua Táo Tây Hồ",
-        "Phần Nhiều Xuyên"
+        "龙井虾仁",
+        "西湖醋鱼",
+        "片儿川"
       ],
       "tags": [
-        "Yên tĩnh",
-        "Trà chiều",
-        "Văn nghệ"
+        "安静",
+        "下午茶",
+        "文艺"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/56dcbffc56d7.webp"
@@ -2151,21 +2151,21 @@
       "name": "正宗东坡肉",
       "nameEn": "正宗东坡肉 (东坡肉)",
       "type": "local",
-      "cuisine": "Đông Pha Thịt",
+      "cuisine": "东坡肉",
       "avgPrice": 143,
       "rating": 4.6,
-      "address": "189 Đường Ăn Uống Phố Cổ, Thành phố Hàng Châu",
+      "address": "杭州市老城区美食街189号",
       "coordinates": {
         "lat": 30.244,
         "lng": 120.1953
       },
       "phone": "+86 0571 69165925",
       "hours": "06:00-14:00",
-      "description": "Cửa hàng Đông Pha Thịt được người địa phương Hàng Châu giới thiệu, hương vị chuẩn, giá cả phải chăng",
+      "description": "杭州本地人推荐的东坡肉店，味道正宗，价格实惠",
       "dishHighlights": [
-        "Phần Nhiều Xuyên",
-        "Tôm Nhân Long Tỉnh",
-        "Chí Vị Tiểu Lũng"
+        "片儿川",
+        "龙井虾仁",
+        "知味小笼"
       ],
       "tags": [
         "本地人爱去",
@@ -3141,110 +3141,110 @@
     {
       "type": "ambulance",
       "name": "杭州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "English interpretation available at major hospitals"
     },
     {
       "type": "police",
       "name": "杭州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at West Lake area"
     },
     {
       "type": "hospital",
       "name": "浙江大学医学院附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Zhejiang University",
       "phone": "+86 571 8723 6000",
-      "address": "Guangzhou",
+      "address": "79 Qingchun Road",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff, accepts international insurance"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai (nearest US consular services for Hangzhou)",
+      "notes": "For US citizens in Hangzhou region"
     },
     {
       "type": "fire",
       "name": "杭州市消防救援支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "For fire emergencies and rescue operations"
     },
     {
       "type": "tourist-info",
       "name": "杭州旅游咨询服务中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Information Center",
       "phone": "0571-96123",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Scenic Area",
+      "notes": "Tourist complaints and information service"
     },
     {
       "type": "police-special",
       "name": "杭州旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Police",
       "phone": "+86 571 8502 6110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Police Station, Xihu District",
+      "notes": "24-hour tourist police service"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Shanghai",
       "phone": "+86 21 6179 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Shanghai",
       "phone": "+86 21 5292 8000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Australian citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For German citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Shanghai",
       "phone": "+86 21 6218 0021",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Hangzhou region"
     },
     {
       "type": "hospital",
       "name": "邵逸夫医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Sir Run Run Shaw Hospital",
       "phone": "+86 571 8609 0088",
-      "address": "Guangzhou",
+      "address": "3 East Qingchun Road",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Quality international medical services"
     },
     {
       "type": "hotel-booking",
       "name": "杭州旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourism Complaint Hotline",
       "phone": "0571-12345",
-      "notes": "For Singapore citizens"
+      "notes": "For complaints about tourism services"
     }
   ],
   "quickFacts": {

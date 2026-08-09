@@ -9,14 +9,14 @@
     "lng": 102.7183
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Куньмин, столица провинции Юньнань, известен как 'Город весны' благодаря приятному климату круглый год. Расположенный на высоте 1890 метров, он служит политическим, экономическим и культурным центром Юньнани. Город является воротами к потрясающим природным ландшафтам, включая объект Всемирного наследия ЮНЕСКО Каменный лес, и является домом для 26 этнических меньшинств, сохраняющих богатые традиции.",
+  "description": "Kunming, the capital of Yunnan province, is known as the 'Spring City' for its pleasant climate year-round. Located at an elevation of 1,890 meters, it serves as the political, economic, and cultural center of Yunnan. The city is a gateway to stunning natural landscapes including the UNESCO World Heritage Site of Stone Forest, and is home to 26 ethnic minorities preserving rich traditions.",
   "coverImage": "/img/ext/1f021c6b2874.webp",
   "highlights": [
-    "Каменный лес - Объект ЮНЕСКО",
-    "Озеро Дяньчи - Крупнейшее озеро Юньнани",
-    "Этническая деревня Юньнани - 26 этнических меньшинств",
-    "Парк Цуйху - Городской оазис",
-    "Ворота Цзиньма Бицзи - Знаковая арка"
+    "Stone Forest - UNESCO World Heritage",
+    "Dianchi Lake - Largest lake in Yunnan",
+    "Yunnan Ethnic Village - 26 ethnic minorities",
+    "Cuihu Park - Urban oasis",
+    "Golden Horse and Phoenix Gate - Iconic archway"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,7 +30,7 @@
     ],
     "avgSummerTemp": "18-26C (64-79F)",
     "avgWinterTemp": "8-18C (46-64F)",
-    "tips": "Кунмин называют 'Городом весны' с мягкой погодой круглый год. Лето - сезон дождей (июнь-авг), но не жарко. Зима сухая и солнечная. Берите куртку круглый год из-за больших перепадов температуры. Сильное УФ из-за высоты."
+    "tips": "Kunming is called 'Spring City' with mild weather year-round. Summer is rainy season (June-August) but not hot. Winter is dry and sunny. Bring layers year-round as temperatures vary daily. UV is strong due to high altitude."
   },
   "restaurants": [
     {
@@ -380,11 +380,11 @@
       "dishHighlights": [
         "Original steam pot chicken",
         "Herb-enhanced versions",
-        "Steam pot fish"
+        "Рыба на пару (блюдо, приготовленное в пароварке)"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "местная кухня"
       ],
       "rating": 4,
       "star": 0,
@@ -397,10 +397,10 @@
       "id": "shuxiang-ethnic",
       "name": "蜀香民族菜",
       "nameEn": "Shuxiang Ethnic Cuisine",
-      "cuisine": "кухня народа И",
+      "cuisine": "Yi Ethnic",
       "priceRange": "¥50-80¥",
-      "description": "Подлинная кухня народа И с известными острыми блюдами и традиционными методами приготовления.",
-      "address": "Северное кольцо, Куньмин",
+      "description": "Authentic Yi ethnic cuisine with famous spicy dishes and traditional cooking methods from the Yi people.",
+      "address": "North Ring Road, Kunming",
       "coordinates": {
         "lat": 25.0656,
         "lng": 102.7128
@@ -414,13 +414,13 @@
       ],
       "tips": "Very local - English menu unlikely. Point and choose from kitchen. The spicy chicken is addictive. Good for adventurous eaters.",
       "dishHighlights": [
-        "острый цыпленок по-И",
-        "свиные ребрышки в карамели",
-        "блинчики из гречихи"
+        "Yi spicy chicken",
+        "Candied pork ribs",
+        "Buckwheat cakes"
       ],
       "type": "local",
       "tags": [
-        "местный"
+        "local"
       ],
       "rating": 4,
       "star": 0,
@@ -433,10 +433,10 @@
       "id": "spring-city-restaurant",
       "name": "春城味道",
       "nameEn": "Spring City Taste",
-      "cuisine": "Юньнаньская фьюжн",
+      "cuisine": "Yunnan Fusion",
       "priceRange": "¥70-130¥",
-      "description": "Современный ресторан юньнаньской фьюжн-кухни, сочетающий традиционные рецепты с современным оформлением в элегантной обстановке.",
-      "address": "Парк 1903, Куньмин",
+      "description": "Modern Yunnan fusion restaurant combining traditional recipes with contemporary presentation in elegant setting.",
+      "address": "Park 1903, Kunming",
       "coordinates": {
         "lat": 25.0189,
         "lng": 102.6856
@@ -450,13 +450,13 @@
       ],
       "tips": "Best for visitors wanting refined Yunnan cuisine. Instagram-worthy presentation. Good for special occasions. Reservation recommended.",
       "dishHighlights": [
-        "Фьюжн-лапша переход через мост",
-        "Юньнаньские тапас",
-        "Сочетание с крафтовым пивом"
+        "Fusion crossing bridge noodles",
+        "Yunnan tapas style",
+        "Craft beer pairing"
       ],
       "type": "local",
       "tags": [
-        "местная"
+        "local"
       ],
       "rating": 4,
       "star": 0,
@@ -685,10 +685,10 @@
       "id": "yunnanhua-ristorante",
       "name": "云南花意式餐厅",
       "nameEn": "Yunnan Hua Italian Restaurant",
-      "cuisine": "Italian",
+      "cuisine": "Итальянская кухня",
       "priceRange": "¥80-150¥",
-      "description": "Italian restaurant in Kunming using Yunnan local ingredients like wild mushrooms and herbs in traditional Italian recipes.",
-      "address": "Park 1903, Kunming",
+      "description": "Итальянский ресторан в Куньмине, использующий местные ингредиенты Юньнани, такие как дикие грибы и травы, в традиционных итальянских рецептах.",
+      "address": "Парк 1903, Куньмин",
       "coordinates": {
         "lat": 25.0178,
         "lng": 102.6844
@@ -702,9 +702,9 @@
       ],
       "tips": "Great for Western food cravings. Fusion menu is interesting. Romantic atmosphere. Pricey by Yunnan standards.",
       "dishHighlights": [
-        "Mushroom risotto",
-        "Yunnan truffle pasta",
-        "Local ingredient pizza"
+        "Ризотто с грибами",
+        "Паста с трюфелями Юньнани",
+        "Пицца с местными ингредиентами"
       ],
       "type": "local",
       "tags": [
@@ -759,7 +759,7 @@
       "nameEn": "Yunnan Mountain Kitchen",
       "cuisine": "Yunnan Mountain",
       "priceRange": "¥60-120¥",
-      "description": "Restaurant specializing in mountain cuisine from Yunnan's highlands including wild vegetables, river fish, and highland herbs.",
+      "description": "Ресторан, специализирующийся на горной кухне из высокогорья Юньнани, включая дикорастущие овощи, речную рыбу и высокогорные травы.",
       "address": "Panlong District, Kunming",
       "coordinates": {
         "lat": 25.0589,
@@ -774,9 +774,9 @@
       ],
       "tips": "Great for trying mountain cuisine. The river fish is excellent. Ask for chef's recommendations. Good for groups.",
       "dishHighlights": [
-        "Stir-fried wild vegetables",
-        "Grilled river fish",
-        "Herb soup"
+        "Обжаренные дикорастущие овощи",
+        "Гриль из речной рыбы",
+        "Травяной суп"
       ],
       "type": "local",
       "tags": [
@@ -2224,167 +2224,167 @@
     {
       "type": "fire",
       "name": "昆明消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "昆明急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "昆明市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Kunming city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Kunming City Center"
     },
     {
       "id": "fire",
       "name": "昆明市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "ambulance",
       "name": "昆明市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "tourism-hotline",
       "name": "昆明市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Complaint Hotline",
       "phone": "0871-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "entry-exit",
       "name": "昆明市公安局出入境管理处",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Exit-Entry Administration",
       "phone": "0871-6715555",
       "type": "government",
       "description": "Passport, visa, and exit-entry services",
-      "address": "Guangzhou"
+      "address": "Guanhua Road, Kunming"
     },
     {
       "id": "supervision",
       "name": "昆明市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Tourism Enforcement Brigade",
       "phone": "0871-6535233",
       "type": "tourism",
       "description": "Report illegal tourism activities",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "weather",
       "name": "昆明市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and severe weather warnings",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "consumer-complaints",
       "name": "昆明市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Consumers Association",
       "phone": "0871-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "forestry",
       "name": "昆明市森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Forest Fire Prevention",
       "phone": "0871-12119",
       "type": "emergency",
       "description": "Forest fire reporting and prevention",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency Management",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "china-post",
       "name": "中国邮政速递",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "China Post Express",
       "phone": "11183",
       "type": "delivery",
       "description": "Mail and package delivery services",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "water-emergency",
       "name": "昆明市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Water Supply Company",
       "phone": "0871-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "electricity-emergency",
       "name": "昆明供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "gas-emergency",
       "name": "昆明市燃气公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Gas Company",
       "phone": "0871-96107",
       "type": "utility",
       "description": "Gas leak and gas emergency reporting",
-      "address": "Guangzhou"
+      "address": "Kunming City"
     },
     {
       "id": "railway-complaints",
       "name": "昆明铁路投诉",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Kunming Railway Station Complaints",
       "phone": "0871-12306",
       "type": "transport",
       "description": "Railway ticket inquiries and complaints",
-      "address": "Guangzhou"
+      "address": "Kunming Railway Station"
     },
     {
       "id": "national-tourism-complaint",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     }
   ],
   "culturalTips": [
@@ -2848,22 +2848,22 @@
       "name": "翠湖",
       "nameEn": "Cuihu Park",
       "category": "natural",
-      "description": "Городской оазис в центре Куньмина с живописным озером, лотосовыми прудами и историческими павильонами, популярный среди местных жителей для утренних занятий тайцзи и прогулок.",
-      "address": "Парк Куйху, Куньмин",
+      "description": "An urban oasis in central Kunming featuring a scenic lake, lotus ponds, and historic pavilions, popular with locals for morning tai chi and散步.",
+      "address": "Cuihu Park, Kunming",
       "coordinates": {
         "lat": 25.0442,
         "lng": 102.7039
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1-2 часа",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Наблюдение за лотосовыми прудами",
-        "Рядом с Юньнаньским университетом",
-        "Буддийский храм",
-        "Местные занятия тайцзи"
+        "Lotus pond viewing",
+        "Yunnan University nearby",
+        "Buddhist temple",
+        "Local tai chi gatherings"
       ],
-      "tips": "Лучше всего посещать ранним утром для занятий тайцзи и традиционной музыкой. Летом здесь можно увидеть прекрасные цветы лотоса. В окрестных улицах есть хорошие кофейни. Парк соединен с районом Юньнаньского университета.",
+      "tips": "Best in early morning for tai chi and traditional music. Summer has beautiful lotus flowers. Surrounding streets have good coffee shops. Connected to Yunnan University area.",
       "imageUrl": "/img/ext/ce9c08e43337.webp",
       "image": "/img/ext/0157338d5fd9.webp",
       "phone": "+86 087 1 0762 5400"
@@ -2923,22 +2923,22 @@
       "name": "黑龙潭",
       "nameEn": "Black Dragon Pool",
       "category": "cultural",
-      "description": "Исторический сад народа наси с культовым видом на гору Нефритового Дракона, отражающуюся в пруду. Здесь представлена традиционная архитектура наси и культурные представления.",
-      "address": "Парк Черного Дракона, Лицзян",
+      "description": "A historic Taoist temple complex with ancient plum trees, lotus ponds, and the famous 'Three Immortals' cypress trees over 500 years old.",
+      "address": "Black Dragon Pool Park, Kunming",
       "coordinates": {
         "lat": 25.1367,
         "lng": 102.7217
       },
-      "openingHours": "07:00-19:00",
-      "ticketPrice": "Бесплатно (требуется ID)",
-      "recommendedVisitTime": "1-2 часа",
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "15¥",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Отражение горы Нефритового Дракона",
-        "Мост Пяти Фениксов",
-        "Музыкальные представления наси",
-        "Древний зал Дэи"
+        "Ancient plum garden (500+ trees)",
+        "Taoist temple",
+        "Lotus pond",
+        "Three Immortals cypress"
       ],
-      "tips": "Лучшее место для фото в Лицзяне на рассвете, когда отражение горы четкое. Шоу древней музыки наси в 13:30-14:30 и 15:30-16:30 (при условии хорошей погоды). Возьмите с собой ID для бесплатного входа.",
+      "tips": "Best visited during plum blossom season (January-February). Beautiful lotus in summer. Less crowded than major attractions. Famous for plum flower painting.",
       "imageUrl": "/img/ext/5154598fab62.webp",
       "image": "/img/ext/994bfae9b723.webp",
       "phone": "+86 087 1 2691 4370"
@@ -2948,22 +2948,22 @@
       "name": "大观公园",
       "nameEn": "Daguan Park",
       "category": "natural",
-      "description": "Известен благодаря историческому павильону Дагуань Лоу, где выставлена знаменитая китайская каллиграфия 'Первая достопримечательность Юньнаня', а также сады у озера и 1800-метровая галерея.",
-      "address": "Парк Дагуань, Куньмин",
+      "description": "Famous for the 'First Scenery of Yunnan' ink painting displayed in the historic Daguan Lou pavilion, plus lakeside gardens and the 1800m long corridor.",
+      "address": "Daguan Park, Kunming",
       "coordinates": {
         "lat": 24.9744,
         "lng": 102.6533
       },
       "openingHours": "07:00-19:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "2 часа",
+      "recommendedVisitTime": "2 hours",
       "highlights": [
-        "Павильон Дагуань Лоу",
-        "Знаменитый свиток каллиграфии",
-        "Виды на озеро",
-        "Выставки цветов"
+        "Daguan Lou pavilion",
+        "Famous calligraphy scroll",
+        "Lake views",
+        "Flower exhibitions"
       ],
-      "tips": "Посетите павильон, чтобы увидеть знаменитую картину 'Первое зрелище Юньнани' (реплика). Лучше всего посещать весной на цветочные выставки. Хорошее место для фото заката над озером Дяньчи.",
+      "tips": "Visit the pavilion for the famous 'First Scenery of Yunnan' painting (replica). Best in spring for flower shows. Good for sunset photos over Dianchi Lake.",
       "imageUrl": "/img/ext/b28feee247a1.webp",
       "image": "/img/ext/7419ff91732e.webp",
       "phone": "+86 087 1 9391 5210"
@@ -3386,7 +3386,7 @@
         "Colonial architecture",
         "Boutique cafes",
         "Art galleries",
-        "Historic buildings"
+        "Исторические здания"
       ],
       "tips": "Great for afternoon coffee. The architecture is unique in Kunming. Good for photos. Evening lighting is romantic.",
       "imageUrl": "/img/ext/afc45297e75f.webp",
@@ -3396,24 +3396,24 @@
     {
       "id": "yingkou-temple",
       "name": "赢财寺",
-      "nameEn": "Yingkou Temple",
+      "nameEn": "Храм Инкоу",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on a hillside with thousand-year-old trees, stone carvings, and panoramic views of Kunming.",
-      "address": "Yingkou Temple, Kunming",
+      "description": "Древний буддийский храм на холме с тысячелетними деревьями, каменными резьбами и панорамным видом на Куньмин.",
+      "address": "Храм Инкоу, Куньмин",
       "coordinates": {
         "lat": 25.0656,
         "lng": 102.6933
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "1-2 hours",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Ancient trees",
-        "Stone carvings",
-        "City views",
-        "Quiet atmosphere"
+        "Древние деревья",
+        "Каменные резьбы",
+        "Виды на город",
+        "Спокойная атмосфера"
       ],
-      "tips": "Off the beaten path. Hiking path to temple is pleasant. The old banyan trees are impressive. Best visited in morning.",
+      "tips": "Вне проторенных дорог. Пешеходная тропа к храму приятная. Старые баньяновые деревья впечатляют. Лучше всего посещать утром.",
       "imageUrl": "/img/ext/8497c46c1ed5.webp",
       "image": "/img/ext/16712377f854.webp",
       "phone": "+86 087 1 8846 2914"
@@ -3421,24 +3421,24 @@
     {
       "id": "huanhua-road-night",
       "name": "华华路夜市",
-      "nameEn": "Huanhua Road Night Market",
+      "nameEn": "Ночной рынок Хуаньхуа-роуд",
       "category": "cultural",
-      "description": "Popular night market with local street food, souvenirs, and shopping in a vibrant atmosphere near Cuihu Park.",
-      "address": "Huanhua Road, Kunming",
+      "description": "Популярный ночной рынок с местной уличной едой, сувенирами и шопингом в яркой атмосфере около парка Цуйху.",
+      "address": "Хуаньхуа-роуд, Куньмин",
       "coordinates": {
         "lat": 25.0389,
         "lng": 102.7017
       },
       "openingHours": "18:00-23:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Local street food",
-        "Clothing vendors",
-        "Night atmosphere",
-        "Yunnan snacks"
+        "Местная уличная еда",
+        "Продавцы одежды",
+        "Вечерняя атмосфера",
+        "Закуски Юньнани"
       ],
-      "tips": "Best after 7pm. Great for trying Yunnan street food. Bargaining expected. Try the grilled cheese and local beer.",
+      "tips": "Лучше после 19:00. Отлично подходит для пробы юньнаньской уличной еды. Ожидается торг. Попробуйте сырный тост и местное пиво.",
       "imageUrl": "/img/ext/806a2efb58d3.webp",
       "image": "/img/ext/428e7e0eb9b1.webp",
       "phone": "+86 087 1 0474 1539"
@@ -3448,22 +3448,22 @@
       "name": "双桥生态园",
       "nameEn": "Shuangqiao Ecological Park",
       "category": "natural",
-      "description": "Urban ecological park with wetlands, bird watching areas, and walking trails along the Panlong River.",
-      "address": "Shuangqiao, Kunming",
+      "description": "Городской экологический парк с водно-болотными угодьями, зонами для наблюдения за птицами и пешеходными маршрутами вдоль реки Панлун.",
+      "address": "Шуанцяо, Куньмин",
       "coordinates": {
         "lat": 25.0722,
         "lng": 102.7356
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Открыто круглосуточно",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "Wetland scenery",
-        "Bird watching",
-        "Walking trails",
-        "Photography spots"
+        "Пейзажи водно-болотных угодий",
+        "Наблюдение за птицами",
+        "Пешеходные маршруты",
+        "Фотозоны"
       ],
-      "tips": "Best for nature lovers. Bring binoculars for bird watching. Morning is best for birds. Good for escaping city crowds.",
+      "tips": "Лучше всего для любителей природы. Возьмите бинокль для наблюдения за птицами. Утро лучше всего для птиц. Хорошее место для побега от городской толпы.",
       "imageUrl": "/img/ext/d6c9784db6f6.webp",
       "image": "/img/ext/042243334b21.webp",
       "phone": "+86 087 1 4841 3800"
@@ -3471,24 +3471,24 @@
     {
       "id": "yunnan-military-academy",
       "name": "云南陆军讲武堂",
-      "nameEn": "Yunnan Military Academy",
+      "nameEn": "Юньнаньская военная академия",
       "category": "cultural",
-      "description": "Historic military academy where Zhu De,叶剑英and other Chinese leaders studied, now a museum with excellent exhibits.",
-      "address": "Guanghua Street, Kunming",
+      "description": "Историческая военная академия, где учились Чжу Дэ, Е Цзяньин и другие китайские лидеры, теперь музей с отличными экспозициями.",
+      "address": "Улица Гуанхуа, Куньмин",
       "coordinates": {
         "lat": 25.0394,
         "lng": 102.7089
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "09:00-17:00 (Закрыто в понедельник)",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "1-2 часа",
       "highlights": [
-        "Zhu De studied here",
-        "Historic buildings",
-        "Military exhibits",
-        "Revolutionary history"
+        "Здесь учился Чжу Дэ",
+        "Исторические здания",
+        "Военные экспонаты",
+        "Революционная история"
       ],
-      "tips": "Free admission. Allow 1-2 hours. The architecture is beautiful. Good introduction to Chinese revolutionary history.",
+      "tips": "Бесплатный вход. Рекомендуется 1-2 часа. Красивая архитектура. Хорошее введение в китайскую революционную историю.",
       "imageUrl": "/img/ext/c9d3b11a0889.webp",
       "image": "/img/ext/998eb40307b9.webp",
       "phone": "+86 087 1 6306 2678"
@@ -3498,22 +3498,22 @@
       "name": "安宁温泉",
       "nameEn": "Anning Hot Springs",
       "category": "natural",
-      "description": "Известный курорт с горячими источниками в 40 км от Куньмина, известный своими богатыми минералами водами и исторической культурой спа.",
+      "description": "Известный курорт с горячими источниками в 40 км от Куньмина, знаменитый минеральными водами и исторической культурой спа.",
       "address": "Уезд Аньнин, Куньмин",
       "coordinates": {
         "lat": 24.9533,
         "lng": 102.4856
       },
       "openingHours": "Различные курорты открыты с 08:00 до 22:00",
-      "ticketPrice": "50-200¥ (зависит от курорта)",
-      "recommendedVisitTime": "От половины дня до целого дня",
+      "ticketPrice": "50-200¥ (в зависимости от курорта)",
+      "recommendedVisitTime": "Полдня или целый день",
       "highlights": [
         "Минеральные горячие источники",
         "Исторические спа",
-        "Горные пейзажи",
-        "Опыт оздоровления"
+        "Горный пейзаж",
+        "Оздоровительный опыт"
       ],
-      "tips": "Идеально для расслабления. Есть несколько курортов на выбор. Возьмите с собой купальник и полотенце. Сочетайте с однодневной поездкой. Будние дни менее многолюдны.",
+      "tips": "Лучшее место для отдыха. Несколько курортов на выбор. Возьмите купальники и полотенце. Совместите с однодневной поездкой. В будние дни менее людно.",
       "imageUrl": "/img/ext/70935779a4e0.webp",
       "image": "/img/ext/b5d669b537f9.webp",
       "phone": "+86 087 1 2814 7511"
@@ -3523,22 +3523,22 @@
       "name": "东川红土地",
       "nameEn": "Dongchuan Red Land",
       "category": "nature",
-      "description": "被誉为上帝的调色板，东川红土地以其壮观的红色土壤和多彩的农作物闻名于世，是摄影爱好者的天堂，色彩斑斓的田野在不同季节呈现出不同的美景。",
-      "address": "昆明市东川区新田乡花石头村",
+      "description": "Известная как палитра Бога, красная земля Дунчуаня славится своими впечатляющими красными почвами и разноцветными сельскохозяйственными культурами. Это рай для фотографов, где красочные поля меняются в зависимости от сезона.",
+      "address": "Деревня Хуашитоу, уезд Дунчуань, Куньмин",
       "coordinates": {
         "lat": 26.0833,
         "lng": 103.0167
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "3-4小时",
+      "openingHours": "Открыто круглосуточно",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "落霞沟日落",
-        "七彩坡",
-        "乐谱凹",
-        "瓦梁房子"
+        "Закат в Лосясягоу",
+        "Семицветный склон",
+        "Лоitanва (Долина нот)",
+        "Дом Валин"
       ],
-      "tips": "最佳拍摄时间为日出和日落时分，秋季（9-12月）色彩最丰富，建议自驾前往。",
+      "tips": "Лучшее время для съемки — восход и закат, наиболее яркие краски осенью (сентябрь-декабрь), рекомендуется добираться на автомобиле.",
       "image": "/img/ext/a1437454d0aa.webp",
       "phone": "+86 087 1 1498 6084"
     },
@@ -3547,22 +3547,22 @@
       "name": "官渡古镇",
       "nameEn": "Guandu Ancient Town",
       "category": "landmark",
-      "description": "官渡古镇是昆明著名的历史文化古镇，始建于唐代，拥有众多古建筑和寺庙，包括妙湛寺金刚塔、土主庙等，是了解昆明历史文化的重要窗口。",
-      "address": "昆明市官渡区官渡古镇",
+      "description": "Древний город Гуанду — известный историко-культурный город Куньмина, основанный в период династии Тан. Здесь расположены многочисленные древние постройки и храмы, включая Алмазную пагоду храма Мяочжань и Храм тудичжу. Это важное окно для понимания истории и культуры Куньмина.",
+      "address": "Район Гуанду, город Куньмин",
       "coordinates": {
         "lat": 24.9978,
         "lng": 102.7539
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费（部分景点收费）",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Открыто круглосуточно",
+      "ticketPrice": "Бесплатно (некоторые достопримечательности платные)",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "妙湛寺金刚塔",
+        "Алмазная пагода храма Мяочжань",
         "官渡粑粑",
         "古戏台",
         "土主庙"
       ],
-      "tips": "官渡粑粑是当地特色小吃，一定要尝尝。周末人较多，建议工作日前往。",
+      "tips": "Гуанду-баба — местный специалитет, обязательно попробуйте. В выходные много людей, рекомендуем посетить в будний день.",
       "image": "/img/ext/eb161dd9dbb4.webp",
       "phone": "+86 087 1 1140 0883"
     },
@@ -3571,22 +3571,22 @@
       "name": "海埂公园",
       "nameEn": "Haigeng Park",
       "category": "park",
-      "description": "海埂公园位于滇池北岸，是昆明市民休闲娱乐的好去处，公园内绿树成荫，湖光山色，冬季有大量红嘴鸥从西伯利亚飞来越冬，成为昆明一大景观。",
-      "address": "昆明市西山区滇池路1318号",
+      "description": "Парк Хайгэн расположен на северном берегу озера Дяньчи и является излюбленным местом отдыха жителей Куньмина. Парк утопает в зелени, здесь можно насладиться живописными видами на озеро и горы. Зимой большое количество красноклювых чаек прилетает из Сибири на зимовку, что стало одним из главных достопримечательностей Куньмина.",
+      "address": "улица Дяньчи, 1318, район Сишань, Куньмин",
       "coordinates": {
         "lat": 24.9389,
         "lng": 102.6528
       },
       "openingHours": "08:00-18:00",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "ticketPrice": "Бесплатно",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
-        "红嘴鸥观赏",
-        "滇池湖景",
-        "民族村对面",
-        "海埂大坝"
+        "Наблюдение за красноклювыми чайками",
+        "Вид на озеро Дяньчи",
+        "Напротив деревни народностей",
+        "Плотина Хайгэн"
       ],
-      "tips": "冬季（11月-3月）是观赏红嘴鸥的最佳时期，可以买面包喂海鸥。",
+      "tips": "Зима (ноябрь-март) — лучшее время для наблюдения за красноклювыми чайками, можно купить хлеб для кормления птиц.",
       "image": "/img/ext/66c6b877240d.webp",
       "phone": "+86 087 1 9594 6331"
     },

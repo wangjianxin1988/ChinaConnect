@@ -9,14 +9,14 @@
     "lng": 121.6147
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Далянь, прибрежный город в провинции Ляонин, известен своей европейской архитектурой, красивыми прибрежными пейзажами и ярким русским и японским влиянием. Город может похвастаться чистыми пляжами, современным городским планированием и знаменитой площадью Виктория, за что получил прозвище 'Москва Востока'. Здесь проходит один из крупнейших в мире фестивалей льда и снега.",
+  "description": "Dalian, a coastal city in Liaoning province, is known for its European architecture, beautiful coastal scenery, and vibrant Russian and Japanese influence. The city features clean beaches, modern urban planning, and the famous Xinghai Square.",
   "coverImage": "/img/ext/ee0766a9cf32.webp",
   "highlights": [
-    "Площадь Синхай - Крупнейшая городская площадь Азии",
-    "Пляж Фрейзер - Золотой песок",
-    "Тигровый пляж - Прибрежная живописная зона",
-    "Японская и русская архитектура",
-    "Парк Золотого камня"
+    "Xinghai Square - Largest city square in Asia",
+    "Fraser Beach - Golden sand beach",
+    "Tiger Beach - Scenic coastal area",
+    "Japanese and Russian architecture",
+    "Jinshi Beach Park"
   ],
   "climate": {
     "type": "Temperate oceanic climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "22°C (72°F)",
     "avgWinterTemp": "-3°C (27°F)",
-    "tips": "Лето прохладное и приятное, лучшее место для укрытия от жары. Зима холодная, но солнечная. Сильные морские ветры, нужна ветрозащита. Пляж летом переполнен."
+    "tips": "Best in summer for beaches. Spring and autumn are pleasant. Winters are cold but not extreme. Summer is peak tourist season."
   },
   "attractions": [
     {
@@ -130,7 +130,7 @@
     {
       "id": "dalian-5",
       "name": "日本风情街",
-      "nameEn": "Japanese Style Street",
+      "nameEn": "Улица в Японском Стиле",
       "category": "cultural",
       "description": "Historic street with Japanese colonial architecture and traditional buildings.",
       "image": "/img/ext/695b810fea8c.webp",
@@ -143,10 +143,10 @@
       "ticketPrice": "Free",
       "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Japanese architecture",
-        "Cherry blossoms",
-        "Traditional shops",
-        "Tea houses"
+        "Японская архитектура",
+        "Сакура",
+        "Традиционные магазины",
+        "Чайные домики"
       ],
       "tips": "Beautiful in spring. Take photos with Japanese-style buildings. Find Japanese restaurants.",
       "phone": "+86 041 1 5904 3229"
@@ -154,7 +154,7 @@
     {
       "id": "dalian-6",
       "name": "棒棰岛",
-      "nameEn": "Bangchui Island",
+      "nameEn": "Остров Банчуй",
       "category": "natural",
       "description": "Scenic island with beautiful beach and golf course, once a state guesthouse.",
       "image": "/img/ext/a3c570f07eb5.webp",
@@ -165,14 +165,14 @@
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "20¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3 часа",
       "highlights": [
         "Clean beach",
         "Island views",
         "Golf course",
         "State guesthouse"
       ],
-      "tips": "Take tourist bus or taxi. Beach is beautiful but crowded in summer.",
+      "tips": "Поезжайте на туристическом автобусе или на такси. Пляж красивый, но летом многолюдно.",
       "phone": "+86 041 1 2971 8753"
     },
     {
@@ -681,21 +681,21 @@
       "name": "棒棰岛",
       "nameEn": "Bangchui Island",
       "category": "beach",
-      "description": "Один из самых красивых пляжей в Даляне, ранее использовавшийся как место отдыха для государственных лидеров.",
-      "address": "Далянь, район Чжуншань",
+      "description": "大连最美的海滩之一，曾是国家领导人疗养地。",
+      "address": "大连市中山区",
       "coordinates": {
         "lat": 38.87,
         "lng": 121.65
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "20 юаней",
-      "recommendedVisitTime": "Полдня",
+      "openingHours": "全天",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "半天",
       "highlights": [
-        "Пляж",
-        "Виллы",
-        "Лес"
+        "海滩",
+        "别墅",
+        "森林"
       ],
-      "tips": "Мало людей, спокойная обстановка.",
+      "tips": "人少安静。",
       "image": "/img/ext/38f44f1e4171.webp",
       "phone": "+86 411 8240 1166"
     },
@@ -814,20 +814,20 @@
       "name": "白玉山",
       "nameEn": "Baiyu Mountain",
       "category": "nature",
-      "description": "Знаковая гора в Люйшунькоу, с которой открывается вид на военный порт Люйшунь.",
-      "address": "Люйшунькоуский район, город Далянь",
+      "description": "旅顺口的标志性山峰，可俯瞰旅顺军港。",
+      "address": "大连市旅顺口区",
       "coordinates": {
         "lat": 38.8,
         "lng": 121.25
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40 юаней",
-      "recommendedVisitTime": "1,5 часа",
+      "ticketPrice": "40元",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "Панорама военного порта",
-        "Остатки Русско-японской войны"
+        "军港全景",
+        "日俄战争遗迹"
       ],
-      "tips": "Изучите военную историю.",
+      "tips": "了解军事历史。",
       "image": "/img/ext/48a33f7d6a57.webp",
       "phone": "+86 041 1 5397 2585"
     },
@@ -858,20 +858,20 @@
       "name": "棒棰岛海滩",
       "nameEn": "Bangchui Beach",
       "category": "beach",
-      "description": "Самый чистый пляж в Даляне с кристально чистой водой.",
-      "address": "Далянь, район Чжуншань",
+      "description": "大连最干净的海滩，水质清澈。",
+      "address": "大连市中山区",
       "coordinates": {
         "lat": 38.87,
         "lng": 121.65
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Включено в стоимость билета",
-      "recommendedVisitTime": "Полдня",
+      "openingHours": "全天",
+      "ticketPrice": "含门票",
+      "recommendedVisitTime": "半天",
       "highlights": [
-        "Пляж",
-        "Плавание"
+        "海滩",
+        "游泳"
       ],
-      "tips": "Лучшее время для посещения — лето.",
+      "tips": "夏季最佳。",
       "image": "/img/ext/51ab193376aa.webp",
       "phone": "+86 041 1 1689 6443"
     },
@@ -1368,26 +1368,26 @@
       "name": "锅贴王",
       "nameEn": "Pan-Fried Dumpling King",
       "type": "local",
-      "cuisine": "Dumplings",
+      "cuisine": "Пельмени",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Multiple locations",
+      "address": "Несколько локаций",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
       "hours": "10:00-22:00",
-      "description": "Popular for pan-fried dumplings with various fillings.",
+      "description": "Популярны жареные пельмени с различными начинками.",
       "dishHighlights": [
-        "Pork pan-fried dumplings",
-        "Seafood pan-fried",
-        "Vegetable"
+        "Жареные пельмени с начинкой из свинины",
+        "Жареные пельмени с морепродуктами",
+        "Овощные пельмени"
       ],
       "tags": [
-        "local",
-        "dumplings",
-        "pan-fried",
-        "popular"
+        "местные",
+        "пельмени",
+        "жареные",
+        "популярные"
       ],
       "imageUrl": "/img/ext/1853af49fc4f.webp",
       "phone": "+86 041 1 4407 7881"
@@ -1395,12 +1395,12 @@
     {
       "id": "dalian-8",
       "name": "歹街小吃",
-      "nameEn": "Dai Street Snacks",
+      "nameEn": "Уличные закуски Дая",
       "type": "local",
-      "cuisine": "Various",
+      "cuisine": "Различные",
       "avgPrice": 30,
       "rating": 4.3,
-      "address": "Dai Street, Zhongshan District",
+      "address": "Улица Дая, район Чжуншань",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
@@ -1984,23 +1984,23 @@
       "cuisine": "海鲜",
       "avgPrice": 66,
       "rating": 4.4,
-      "address": "大连市新城区美食街198号",
+      "address": "г. Далянь, новый район, гастрономическая улица, д. 198",
       "coordinates": {
         "lat": 38.896,
         "lng": 121.6642
       },
       "phone": "+86 0411 27296612",
       "hours": "17:00-02:00",
-      "description": "大连本地人推荐的海鲜店，味道正宗，价格实惠",
+      "description": "Ресторан морепродуктов, рекомендуемый местными жителями Даляня, с аутентичным вкусом и доступными ценами",
       "dishHighlights": [
-        "咸鱼饼子",
-        "海鲜",
-        "焖子"
+        "Рыбные лепёшки с солью",
+        "Морепродукты",
+        "Мэньцзы"
       ],
       "tags": [
-        "隐藏美食",
-        "社区老店",
-        "性价比高"
+        "Скрытый гастрономический жемчуг",
+        "Старинный магазинчик в районе",
+        "Отличное соотношение цены и качества"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/097a8deb04c8.webp"
@@ -2008,28 +2008,28 @@
     {
       "id": "dalian-32",
       "name": "正宗焖子",
-      "nameEn": "正宗焖子 (焖子)",
+      "nameEn": "Аутентичный Мэньцзы (Мэньцзы)",
       "type": "local",
-      "cuisine": "焖子",
+      "cuisine": "Мэньцзы",
       "avgPrice": 73,
       "rating": 4.3,
-      "address": "大连市老城区美食街83号",
+      "address": "г. Далянь, старый район, гастрономическая улица, д. 83",
       "coordinates": {
         "lat": 38.9241,
         "lng": 121.6602
       },
       "phone": "+86 0411 70998148",
       "hours": "10:00-22:00",
-      "description": "大连本地人推荐的焖子店，味道正宗，价格实惠",
+      "description": "Ресторан Мэньцзы, рекомендуемый местными жителями Даляня, с аутентичным вкусом и доступными ценами",
       "dishHighlights": [
-        "烤鱿鱼",
-        "海鲜",
-        "焖子"
+        "Жареный кальмар",
+        "морепродукты",
+        "муньцзы"
       ],
       "tags": [
-        "老字号",
-        "性价比高",
-        "本地人爱去"
+        "старинный ресторан",
+        "отличное соотношение цены и качества",
+        "местный любимец"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e6344a7abf72.webp"
@@ -2037,28 +2037,28 @@
     {
       "id": "dalian-34",
       "name": "巷子海鲜",
-      "nameEn": "巷子海鲜 (海鲜)",
+      "nameEn": "Сяньцзы Хайгань (Морепродукты)",
       "type": "local",
-      "cuisine": "海鲜",
+      "cuisine": "морепродукты",
       "avgPrice": 121,
       "rating": 4.5,
-      "address": "大连市新城区美食街123号",
+      "address": "Улица Мэйши, 123, новый район Даляня",
       "coordinates": {
         "lat": 38.9224,
         "lng": 121.6441
       },
       "phone": "+86 0411 73324202",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "大连本地人推荐的海鲜店，味道正宗，价格实惠",
+      "description": "Рекомендованное местными жителями Даляня кафе с морепродуктами, аутентичный вкус и доступные цены",
       "dishHighlights": [
-        "烤鱿鱼",
-        "咸鱼饼子",
-        "焖子"
+        "жареные кальмары",
+        "солёная рыба с лепёшкой",
+        "муньцзы"
       ],
       "tags": [
-        "老字号",
-        "隐藏美食",
-        "家常菜"
+        "старинный ресторан",
+        "скрытый гастрономический секрет",
+        "Домашняя кухня"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/064aea032add.webp"
@@ -2066,28 +2066,28 @@
     {
       "id": "dalian-36",
       "name": "大连味海凉粉",
-      "nameEn": "大连味海凉粉 (海凉粉)",
+      "nameEn": "Далянь Вэй Хайлянфэнь (Хайлянфэнь)",
       "type": "street",
-      "cuisine": "海凉粉",
+      "cuisine": "Хайлянфэнь",
       "avgPrice": 31,
       "rating": 4.6,
-      "address": "大连市新城区美食街130号",
+      "address": "Улица Дэши, 130, Новый район, Далянь",
       "coordinates": {
         "lat": 38.9355,
         "lng": 121.602
       },
       "phone": "+86 0411 49644719",
       "hours": "10:00-22:00",
-      "description": "大连本地人推荐的海凉粉店，味道正宗，价格实惠",
+      "description": "Рекомендуется местными жителями Даляня, аутентичный вкус, доступные цены",
       "dishHighlights": [
-        "焖子",
-        "咸鱼饼子",
-        "海凉粉"
+        "Мэньцзы",
+        "Солёная рыба с лепёшкой",
+        "Хайлянфэнь"
       ],
       "tags": [
-        "路边摊",
-        "夜市",
-        "小吃"
+        "Уличный прилавок",
+        "Ночной рынок",
+        "Закуски"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/975fa1bd4c13.webp"
@@ -2095,12 +2095,12 @@
     {
       "id": "dalian-38",
       "name": "老街烤鱿鱼",
-      "nameEn": "老街烤鱿鱼 (烤鱿鱼)",
+      "nameEn": "Старая улица Жареный кальмар (Кальмар на гриле)",
       "type": "street",
-      "cuisine": "烤鱿鱼",
+      "cuisine": "Кальмар на гриле",
       "avgPrice": 36,
       "rating": 4.9,
-      "address": "大连市老城区美食街162号",
+      "address": "Улица Дэши, 162, Старый район, Далянь",
       "coordinates": {
         "lat": 38.9233,
         "lng": 121.5728
@@ -3122,90 +3122,90 @@
     {
       "type": "ambulance",
       "name": "大连急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "大连市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "大连医科大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "The First Affiliated Hospital of Dalian Medical University",
       "phone": "+86 411 8363 5963",
-      "address": "Guangzhou",
+      "address": "222 Zhongshan Road, Xigang District",
       "coordinates": {
         "lat": 38.9122,
         "lng": 121.6022
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "大连市中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Central Hospital",
       "phone": "+86 411 8440 8999",
-      "address": "Guangzhou",
+      "address": "42 Xuefu Road, Shahekou District",
       "coordinates": {
         "lat": 38.8922,
         "lng": 121.5922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital"
     },
     {
       "type": "tourist-police",
       "name": "大连旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Tourist Police",
       "phone": "+86 411 8805 8239",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "大连消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dalian Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "俄罗斯驻大连总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Russia Consulate General Dalian",
       "phone": "+86 411 8280 3828",
-      "address": "Guangzhou",
+      "address": "6 Huayuan Street, Zhongshan District",
       "coordinates": {
         "lat": 38.9222,
         "lng": 121.6222
       },
-      "notes": "For Singapore citizens"
+      "notes": "For Russian citizens in Dalian"
     },
     {
       "type": "embassy",
       "name": "日本驻沈阳总领事馆大连办事处",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Dalian Office",
       "phone": "+86 411 8280 3922",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "28 Shanghai Road, Zhongshan District",
+      "notes": "For Japanese citizens in Dalian"
     },
     {
       "type": "embassy",
       "name": "美国驻沈阳总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shenyang",
       "phone": "+86 24 2322 2714",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shenyang",
+      "notes": "For US citizens in Dalian region"
     },
     {
       "type": "embassy",
       "name": "韩国驻沈阳总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate General Shenyang",
       "phone": "+86 24 2385 3366",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shenyang",
+      "notes": "For Korean citizens in Dalian region"
     }
   ],
   "quickFacts": {

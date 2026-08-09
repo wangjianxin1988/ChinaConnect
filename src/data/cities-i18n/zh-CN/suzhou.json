@@ -9,14 +9,14 @@
     "lng": 120.5853
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "苏州是优雅园林、丝绸工艺与古典中华文化的乐园。",
+  "description": "Suzhou is a paradise of elegant gardens, silk production, and classical Chinese culture. Known as 'Venice of the East' for its canals and water towns. Home to UNESCO World Heritage classical gardens, intricate silk embroidery, and 2,500 years of history. A cultural gem between Shanghai and Nanjing.",
   "coverImage": "/img/ext/bb437a1b3f23.webp",
   "highlights": [
-    "拙政园 - 联合国教科文组织遗产",
-    "留园 - 明代杰作",
-    "虎丘 - 古塔山丘",
-    "山塘街 - 经典运河街",
-    "周庄 - 水乡威尼斯"
+    "Humble Administrator's Garden - UNESCO",
+    "Lingering Garden - Ming dynasty masterpiece",
+    "Tiger Hill - Ancient pagoda and hill",
+    "Shantang Street - Classic canal street",
+    "Zhouzhuang - Water town Venice"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "5C (41F)",
-    "tips": "春（4-5月）赏花，秋（9-11月）气爽。夏季热湿。冬季雪中园林美。冬季梅花盛开。"
+    "tips": "Best in spring (April-May) for garden flowers or autumn (Sept-Nov) for pleasant weather. Summer is hot and humid. Winter is cold but gardens are beautiful in snow. Plum blossoms in winter."
   },
   "attractions": [
     {
@@ -591,7 +591,7 @@
       "name": "耦园",
       "nameEn": "Couple's Retreat Garden",
       "category": "park",
-      "description": "世界文化遗产园林，因住宅居中、东西各有一座花园而得名。其布局对称独特，寓意夫妻恩爱，是苏州园林中爱情主题的代表。",
+      "description": "世界文化遗产园林，因住宅居中、东西各有一花园而得名。布局对称独特，寓意夫妻恩爱，是苏州园林中爱情主题的代表。",
       "address": "苏州市姑苏区小新桥巷6号",
       "coordinates": {
         "lat": 31.3229,
@@ -711,7 +711,7 @@
       "name": "白马涧龙池",
       "nameEn": "Baima Jian Dragon Pool",
       "category": "nature",
-      "description": "苏州西部的自然生态景区，拥有龙池、凤潭等天然水潭，四周群山环绕，植被茂密。是苏州市民周末登山亲水的理想去处。",
+      "description": "苏州西部的自然生态景区，有龙池、凤潭等天然水潭，四周群山环抱、植被茂密。是苏州市民周末登山亲水的好去处。",
       "address": "苏州市虎丘区枫桥街道",
       "coordinates": {
         "lat": 31.3089,
@@ -726,7 +726,7 @@
         "森林氧吧",
         "瀑布溪流"
       ],
-      "tips": "夏季可以玩水。建议穿运动鞋，并携带充足的饮用水。",
+      "tips": "夏天可以玩水。建议穿运动鞋，带足饮用水。",
       "image": "/img/ext/303daf834305.webp",
       "phone": "+86 051 2 0713 5830"
     },
@@ -1561,11 +1561,11 @@
       "description": "Modern take on traditional Jiangnan cuisine.",
       "dishHighlights": [
         "Crispy duck",
-        "Lotus leaf rice"
+        "荷叶饭"
       ],
       "tags": [
-        "modern",
-        "jiangnan"
+        "现代",
+        "江南"
       ],
       "star": 0,
       "diamond": 0,
@@ -1574,26 +1574,26 @@
     {
       "id": "suzhou-13",
       "name": "太湖三白",
-      "nameEn": "Taihu Delights",
+      "nameEn": "太湖佳肴",
       "type": "local",
-      "cuisine": "Taihu",
+      "cuisine": "太湖",
       "avgPrice": 180,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "太湖区域",
       "coordinates": {
         "lat": 31.2422,
         "lng": 120.4772
       },
       "phone": "+86 512 6728 5678",
       "hours": "10:00-21:00",
-      "description": "Fresh seafood from Tai Lake including white shrimp.",
+      "description": "太湖新鲜海鲜，包括白虾",
       "dishHighlights": [
-        "Taihu white shrimp",
-        "Crab"
+        "太湖白虾",
+        "螃蟹"
       ],
       "tags": [
-        "seafood",
-        "lake"
+        "海鲜",
+        "湖泊"
       ],
       "star": 0,
       "diamond": 0,
@@ -1602,26 +1602,26 @@
     {
       "id": "suzhou-14",
       "name": "苏帮菜馆",
-      "nameEn": "Su Cuisine",
+      "nameEn": "苏帮菜",
       "type": "local",
-      "cuisine": "Suzhou",
+      "cuisine": "苏州",
       "avgPrice": 90,
       "rating": 4.3,
-      "address": "Xuanmiao Temple area",
+      "address": "玄妙观区域",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6472
       },
       "phone": "+86 512 6727 6789",
       "hours": "11:00-14:00, 17:00-20:30",
-      "description": "Traditional Su cuisine in classic courtyard.",
+      "description": "传统苏帮菜，经典庭院风味",
       "dishHighlights": [
-        "Steamed dumplings",
-        "Soy sauce pork"
+        "小笼包",
+        "红烧肉"
       ],
       "tags": [
-        "local",
-        "traditional"
+        "本地",
+        "传统"
       ],
       "star": 0,
       "diamond": 0,
@@ -1632,24 +1632,24 @@
       "name": "观前素菜馆",
       "nameEn": "Guanqian Vegetarian",
       "type": "local",
-      "cuisine": "Vegetarian",
+      "cuisine": "素菜",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Guanqian Street",
+      "address": "观前街",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6728 7890",
       "hours": "10:30-20:30",
-      "description": "Buddhist vegetarian cuisine near temple.",
+      "description": "寺庙附近的佛教素菜馆",
       "dishHighlights": [
-        "Vegetable roasts",
-        "Mock meat"
+        "素烤菜",
+        "素肉"
       ],
       "tags": [
-        "vegetarian",
-        "temple"
+        "素食",
+        "寺庙"
       ],
       "star": 0,
       "diamond": 0,
@@ -1658,26 +1658,26 @@
     {
       "id": "suzhou-16",
       "name": "糖粥铺子",
-      "nameEn": "Sweet Porridge Shop",
+      "nameEn": "甜粥店",
       "type": "local",
-      "cuisine": "Desserts",
+      "cuisine": "甜品",
       "avgPrice": 30,
       "rating": 4.8,
-      "address": "Pingjiang Road",
+      "address": "平江路",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6272
       },
       "hours": "08:00-18:00",
-      "description": "Famous for Suzhou-style sweet porridge and desserts.",
+      "description": "以蘇式甜粥和甜品聞名",
       "dishHighlights": [
-        "Sweet red bean porridge",
-        "Osmanthus cake"
+        "紅豆糯米粥",
+        "桂花糕"
       ],
       "tags": [
-        "dessert",
-        "local",
-        "famous"
+        "甜品",
+        "當地",
+        "著名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1687,26 +1687,26 @@
     {
       "id": "suzhou-17",
       "name": "老北京涮肉",
-      "nameEn": "Beijing Hotpot",
+      "nameEn": "北京火鍋",
       "type": "local",
-      "cuisine": "Hotpot",
+      "cuisine": "火鍋",
       "avgPrice": 100,
       "rating": 4.2,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "phone": "+86 512 6727 8901",
       "hours": "11:00-22:00",
-      "description": "Northern style lamb hotpot popular with locals.",
+      "description": "深受當地人喜愛的北方羊肉火鍋",
       "dishHighlights": [
-        "Lamb slices",
-        "Vegetable plate"
+        "羊肉片",
+        "蔬菜拼盘"
       ],
       "tags": [
-        "hotpot",
-        "local"
+        "火锅",
+        "本地"
       ],
       "star": 0,
       "diamond": 0,
@@ -1715,26 +1715,26 @@
     {
       "id": "suzhou-18",
       "name": "状元楼",
-      "nameEn": "Zhuangyuan Lou",
+      "nameEn": "状元楼",
       "type": "local",
-      "cuisine": "Suzhou",
+      "cuisine": "苏州菜",
       "avgPrice": 150,
       "rating": 4.6,
-      "address": "Guanqian Street",
+      "address": "观前街",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6728 9012",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Historical restaurant with scholar theme.",
+      "description": "具有文人学士主题的历史餐厅",
       "dishHighlights": [
-        "Braised pork",
-        "Steamed fish"
+        "红烧肉",
+        "清蒸鱼"
       ],
       "tags": [
-        "historic",
-        "suzhou"
+        "历史悠久",
+        "苏州"
       ],
       "star": 0,
       "diamond": 0,
@@ -1743,28 +1743,28 @@
     {
       "id": "suzhou-19",
       "name": "太湖船菜",
-      "nameEn": "Taihu Boat Restaurant",
+      "nameEn": "太湖船菜",
       "type": "local",
-      "cuisine": "Taihu",
+      "cuisine": "太湖菜",
       "avgPrice": 200,
       "rating": 4.5,
-      "address": "Lake Tai area",
+      "address": "太湖区域",
       "coordinates": {
         "lat": 31.2522,
         "lng": 120.4772
       },
       "phone": "+86 512 6728 1111",
       "hours": "10:00-21:00",
-      "description": "Dining on a boat on Tai Lake with fresh seafood.",
+      "description": "在太湖的船上品尝新鲜海鲜",
       "dishHighlights": [
-        "Fresh lake fish",
-        "Shrimp",
-        "Crab"
+        "鲜活的湖鱼",
+        "虾",
+        "螃蟹"
       ],
       "tags": [
-        "seafood",
-        "boat",
-        "scenic"
+        "海鲜",
+        "船",
+        "风景"
       ],
       "star": 0,
       "diamond": 0,
@@ -1773,26 +1773,26 @@
     {
       "id": "suzhou-20",
       "name": "拙政园茶室",
-      "nameEn": "Humble Garden Teahouse",
+      "nameEn": "拙政园茶馆",
       "type": "local",
-      "cuisine": "Tea House",
+      "cuisine": "茶馆",
       "avgPrice": 80,
       "rating": 4.6,
-      "address": "Near Humble Administrators Garden",
+      "address": "拙政园附近",
       "coordinates": {
         "lat": 31.3222,
         "lng": 120.6372
       },
       "phone": "+86 512 6728 2222",
       "hours": "08:00-17:00",
-      "description": "Traditional teahouse with garden views.",
+      "description": "传统茶馆，可欣赏园林景观",
       "dishHighlights": [
-        "Dragon Well tea",
-        "Suzhou snacks"
+        "龙井茶",
+        "苏州小吃"
       ],
       "tags": [
-        "teahouse",
-        "traditional"
+        "茶馆",
+        "传统"
       ],
       "star": 0,
       "diamond": 0,
@@ -1801,26 +1801,26 @@
     {
       "id": "suzhou-21",
       "name": "山塘街小笼",
-      "nameEn": "Shantang Street Xiaolong",
+      "nameEn": "山塘街小笼",
       "type": "local",
-      "cuisine": "Dim Sum",
+      "cuisine": "点心",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Shantang Street",
+      "address": "山塘街",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
       "hours": "07:00-14:00",
-      "description": "Local spot for authentic Suzhou xiaolongbao.",
+      "description": "品尝正宗苏州小笼包的本地热门地点",
       "dishHighlights": [
-        "Soup dumplings",
-        "Pork buns"
+        "汤包",
+        "肉包"
       ],
       "tags": [
-        "dim-sum",
-        "local",
-        "famous"
+        "点心",
+        "本地",
+        "著名"
       ],
       "star": 0,
       "diamond": 0,
@@ -1830,9 +1830,9 @@
     {
       "id": "suzhou-22",
       "name": "桃花源记",
-      "nameEn": "Peach Blossom Spring",
+      "nameEn": "桃花源",
       "type": "local",
-      "cuisine": "Jiangnan",
+      "cuisine": "江南",
       "avgPrice": 120,
       "rating": 4.5,
       "address": "Pingjiang Road",
@@ -3146,112 +3146,112 @@
     {
       "type": "ambulance",
       "name": "苏州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Suzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Suzhou Hospital has English interpretation"
     },
     {
       "type": "police",
       "name": "苏州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Suzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "苏州大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Soochow University",
       "phone": "+86 512 6522 3637",
-      "address": "Guangzhou",
+      "address": "188 Shantang Street",
       "coordinates": {
         "lat": 31.3122,
         "lng": 120.6072
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai (nearest US consular services)",
+      "notes": "For US citizens in Suzhou region"
     },
     {
       "type": "tourist",
       "name": "苏州旅游投诉",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Suzhou Tourism Complaint",
       "phone": "12345",
-      "notes": "For Singapore citizens"
+      "notes": "Tourism complaints and information"
     },
     {
       "type": "fire",
       "name": "苏州消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Suzhou Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire emergencies"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate Shanghai",
       "phone": "+86 21 6010 9200",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Suzhou"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate Shanghai",
       "phone": "+86 21 6010 8800",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For German citizens in Suzhou"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Shanghai",
       "phone": "+86 21 6010 8500",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Suzhou"
     },
     {
       "type": "embassy",
       "name": "法国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate Shanghai",
       "phone": "+86 21 6010 8900",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For French citizens in Suzhou"
     },
     {
       "type": "hospital",
       "name": "苏州九龙医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Suzhou Kowloon Hospital",
       "phone": "+86 512 6262 6262",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Suzhou Industrial Park",
+      "notes": "Private hospital with English staff"
     },
     {
       "type": "hospital",
       "name": "苏州市立医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Suzhou Municipal Hospital",
       "phone": "+86 512 6236 2222",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Suzhou",
+      "notes": "Public hospital, general services"
     },
     {
       "type": "other",
       "name": "苏州市民服务热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Suzhou Citizen Hotline",
       "phone": "12345",
-      "notes": "For Singapore citizens"
+      "notes": "General inquiries and assistance"
     },
     {
       "type": "other",
       "name": "时间标准服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Time Standard Service",
       "phone": "12117",
-      "notes": "For Singapore citizens"
+      "notes": "Time synchronization and standard frequency"
     }
   ],
   "quickFacts": {

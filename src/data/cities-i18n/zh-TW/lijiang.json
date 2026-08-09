@@ -9,14 +9,14 @@
     "lng": 100.2295
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "麗江位於雲南省西北部，是一座如詩如畫的城市，以聯合國教科文組織世界遺產麗江古城而聞名。",
+  "description": "Lijiang is a picturesque city in northwestern Yunnan province, famous for the UNESCO World Heritage-listed Lijiang Old Town with its Naxi architecture and canal system. Nestled between the Himalayas and Yunnan-Guizhou Plateau, it offers stunning natural scenery including Jade Dragon Snow Mountain and the peaceful beauty of Lugu Lake. Home to the Naxi, Bai, Yi, and other ethnic minorities with rich cultural traditions.",
   "coverImage": "/img/ext/aa2ff2381270.webp",
   "highlights": [
-    "丽江古城 - 联合國教科文组织遗产",
-    "玉龍雪山 - 壮美山峰",
-    "泸沽湖 - 原始高山湖",
-    "虎跳峡 - 雄伟峡谷",
-    "沙溪古镇 - 地道纳西文化"
+    "Lijiang Old Town - UNESCO World Heritage",
+    "Jade Dragon Snow Mountain - Stunning peaks",
+    "Lugu Lake - Pristine alpine lake",
+    "Tiger Leaping Gorge - Dramatic canyon",
+    "Shaxi Ancient Town - Authentic Naxi culture"
   ],
   "climate": {
     "type": "Subtropical plateau monsoon",
@@ -30,17 +30,17 @@
     ],
     "avgSummerTemp": "15-25C (59-77F)",
     "avgWinterTemp": "4-15C (39-59F)",
-    "tips": "春秋气爽晴朗。夏季多雨但绿意盎然。冬季干燥寒冷。海拔高紫外线强。雪山夏季也冷。"
+    "tips": "Spring and autumn are best with mild weather and clear skies. Summer is rainy but lush green. Winter is dry and sunny but cold at night. UV is very strong year-round due to altitude. Jade Dragon Snow Mountain is cold even in summer - bring layers."
   },
   "restaurants": [
     {
       "id": "naxi-family-dinner",
       "name": "纳西妈妈家",
-      "nameEn": "Naxi Family Kitchen",
-      "cuisine": "Naxi",
+      "nameEn": "納西家族廚房",
+      "cuisine": "納西",
       "priceRange": "¥50-100¥",
-      "description": "Traditional Naxi family-run restaurant with authentic home-cooked dishes and warm atmosphere in old town alley.",
-      "address": "M Street, Lijiang Old Town",
+      "description": "傳統納西家庭式餐廳，提供正宗的家常菜餚，古城巷弄中溫馨的用餐氛圍。",
+      "address": "M街，麗江古城",
       "coordinates": {
         "lat": 26.8756,
         "lng": 100.2342
@@ -54,13 +54,13 @@
       ],
       "tips": "Best for authentic Naxi food experience. The family is very welcoming. Try the 'Naxi combo' set meal. Arrive before 7pm for dinner.",
       "dishHighlights": [
-        "Naxi family recipes",
-        "Home atmosphere",
-        "Rose cake"
+        "納西家族食譜",
+        "家庭氛圍",
+        "玫瑰糕"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -72,11 +72,11 @@
     {
       "id": "yak-meat-restaurant",
       "name": "牦牛肉火锅城",
-      "nameEn": "Yak Meat Hotpot City",
-      "cuisine": "Yak",
+      "nameEn": "牦牛肉火鍋城",
+      "cuisine": "牦牛",
       "priceRange": "¥80-150¥",
-      "description": "Famous restaurant specializing in yak meat hotpot and grilled yak meat dishes, using local highland yaks.",
-      "address": "New City Area, Lijiang",
+      "description": "著名餐廳，專營犛牛火鍋和烤犛牛肉菜餚，使用當地高原犛牛。",
+      "address": "麗江新城區",
       "coordinates": {
         "lat": 26.8833,
         "lng": 100.2389
@@ -90,13 +90,13 @@
       ],
       "tips": "Yak meat is lean and healthy. The hotpot broth is delicious. Share a hotpot between two people. Reservation recommended for dinner.",
       "dishHighlights": [
-        "Fresh yak meat hotpot",
-        "Grilled yak meat",
-        "Yak sausage"
+        "新鮮犛牛火鍋",
+        "烤犛牛肉",
+        "犛牛肉腸"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -108,11 +108,11 @@
     {
       "id": "old-town-snacks",
       "name": "古城小吃街",
-      "nameEn": "Old Town Snacks",
-      "cuisine": "Street Food",
+      "nameEn": "古城小吃",
+      "cuisine": "街頭小吃",
       "priceRange": "¥20-50¥",
-      "description": "Night market in old town with various Yunnan and Lijiang local snacks including grilled meats, noodles, and sweets.",
-      "address": "Near Sifang Street, Lijiang Old Town",
+      "description": "古城夜市，雲南及麗江當地各種小吃，包括烤肉、麵條和甜點。",
+      "address": "麗江古城四方街附近",
       "coordinates": {
         "lat": 26.8744,
         "lng": 100.2339
@@ -126,13 +126,13 @@
       ],
       "tips": "Great for trying variety of snacks. Sample a bit of everything. Bring tissue - no napkins often. Watch hygiene - pick stalls with locals. Cash preferred.",
       "dishHighlights": [
-        "Rose cake (鲜花饼)",
-        "Yak meat skewers",
-        "Rice cakes"
+        "鮮花餅",
+        "犛肉串",
+        "米糕"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -144,11 +144,11 @@
     {
       "id": "lijiang-chicken",
       "name": "腊排骨火锅",
-      "nameEn": "Lijiang Cured Pork Ribs Hotpot",
-      "cuisine": "Naxi",
+      "nameEn": "麗江臘排骨火鍋",
+      "cuisine": "納西",
       "priceRange": "¥60-100¥",
-      "description": "Iconic Lijiang dish featuring fermented pork ribs (腊排骨) slow-cooked in broth with local vegetables.",
-      "address": "Old Town and New Town locations",
+      "description": "麗江招牌菜，使用臘排骨慢火熬湯，配以當地蔬菜。",
+      "address": "古城與新城分店",
       "coordinates": {
         "lat": 26.8783,
         "lng": 100.2356
@@ -162,13 +162,13 @@
       ],
       "tips": "The signature Lijiang dish - must try. Many restaurants serve it - ask locals for recommendations. The broth is salty - dilute with water. Feeds 2-3 people per pot.",
       "dishHighlights": [
-        "Cured pork ribs",
-        "Slow-cooked broth",
-        "Local mushrooms"
+        "臘排骨",
+        "慢火熬湯",
+        "當地香菇"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "在地"
       ],
       "rating": 4,
       "star": 0,
@@ -181,10 +181,10 @@
       "id": "highland-barley",
       "name": "高原青稞屋",
       "nameEn": "Highland Barley House",
-      "cuisine": "Tibetan",
+      "cuisine": "藏族",
       "priceRange": "¥50-90¥",
-      "description": "Tibetan restaurant serving highland barley noodles, yak butter tea, and traditional Tibetan dishes in cozy atmosphere.",
-      "address": "Near Black Dragon Pool, Lijiang",
+      "description": "藏族餐廳，供應青稞麵、酥油茶及傳統藏族菜餚，氛圍溫馨舒適。",
+      "address": "麗江黑龍潭附近",
       "coordinates": {
         "lat": 26.8778,
         "lng": 100.2294
@@ -198,13 +198,13 @@
       ],
       "tips": "Good introduction to Tibetan cuisine. The butter tea is an acquired taste - try it. The hotpot is milder than Sichuan style. Good for cold nights.",
       "dishHighlights": [
-        "Barley noodles",
-        "Yak butter tea",
+        "青稞麵",
+        "酥油茶",
         "Tsampa (青稞糌粑)"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -216,16 +216,16 @@
     {
       "id": "naxi-ancient-music-dinner",
       "name": "纳西古乐宴",
-      "nameEn": "Naxi Ancient Music Dinner Show",
-      "cuisine": "Naxi + Performance",
+      "nameEn": "納西古樂晚宴表演",
+      "cuisine": "納西族料理+表演",
       "priceRange": "¥150-250¥",
-      "description": "Dinner with traditional Naxi ancient music performance, combining authentic local cuisine with cultural experience.",
-      "address": "Old Town venues",
+      "description": "傳統納西古樂表演晚宴，結合道地當地美食與文化體驗",
+      "address": "古鎮場地",
       "coordinates": {
         "lat": 26.8758,
         "lng": 100.2344
       },
-      "hours": "Dinner show at 18:30",
+      "hours": "晚宴表演於18:30開始",
       "highlights": [
         "Traditional music",
         "Naxi cuisine set meal",
@@ -234,13 +234,13 @@
       ],
       "tips": "Book through hotel or tourist info. More expensive than regular dining but includes show. Arrive on time for performance. Good for first-time visitors.",
       "dishHighlights": [
-        "Traditional music",
-        "Naxi cuisine set meal",
-        "Cultural performance"
+        "傳統音樂",
+        "納西料理套餐",
+        "文化表演"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -252,11 +252,11 @@
     {
       "id": "flower-bird-market",
       "name": "花鸟市场小吃",
-      "nameEn": "Flower and Bird Market Snacks",
-      "cuisine": "Local",
+      "nameEn": "花鳥市場小吃",
+      "cuisine": "當地",
       "priceRange": "¥10-30¥",
-      "description": "Local market serving authentic Lijiang breakfast foods and snacks, popular with locals since dawn.",
-      "address": "Flower and Bird Market, New City",
+      "description": "當地市場提供正宗的麗江早餐和小吃，從清晨開始就深受當地人喜愛。",
+      "address": "花鳥市場，新城",
       "coordinates": {
         "lat": 26.8822,
         "lng": 100.2417
@@ -270,13 +270,13 @@
       ],
       "tips": "Best for breakfast. Arrive before 9am for freshest items. Very local - English menu unlikely. Great photo opportunities of market life.",
       "dishHighlights": [
-        "Soy milk and油条",
-        "Naxi pastries",
-        "Fresh flowers"
+        "豆漿和油條",
+        "納西糕點",
+        "鮮花"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -288,11 +288,11 @@
     {
       "id": "cafe-lijiang",
       "name": "丽江咖啡馆",
-      "nameEn": "Cafe Lijiang",
-      "cuisine": "Western/Cafe",
+      "nameEn": "麗江咖啡廳",
+      "cuisine": "西式/咖啡廳",
       "priceRange": "¥30-60¥",
-      "description": "Western-style cafe near old town serving coffee, pastries, and light meals. Popular with expats and tourists.",
-      "address": "Wuyi Street, Lijiang",
+      "description": "古城附近的西式咖啡廳，供應咖啡、糕點和輕食。深受外籍人士和遊客喜愛。",
+      "address": "麗江五一路",
       "coordinates": {
         "lat": 26.8761,
         "lng": 100.2339
@@ -306,13 +306,13 @@
       ],
       "tips": "Good for breakfast when tired of Chinese food. The apple pie is excellent. WiFi and charging available. Popular with digital nomads.",
       "dishHighlights": [
-        "Fresh coffee",
-        "Apple pie",
-        "Western breakfast"
+        "新鮮咖啡",
+        "蘋果派",
+        "西式早餐"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "當地"
       ],
       "rating": 4,
       "star": 0,
@@ -324,11 +324,11 @@
     {
       "id": "mushroom-hotpot-lijiang",
       "name": "野生菌火锅",
-      "nameEn": "Wild Mushroom Hotpot",
-      "cuisine": "Yunnan Mushroom",
+      "nameEn": "野生菌火鍋",
+      "cuisine": "雲南野生菌",
       "priceRange": "¥100-200¥",
-      "description": "Premium wild mushroom hotpot using seasonal varieties from Yunnan highlands, served with safety certification.",
-      "address": "New City, Lijiang",
+      "description": "採用雲南高原時令野生菌類的頂級火鍋，配備安全認證。",
+      "address": "麗江新城",
       "coordinates": {
         "lat": 26.8856,
         "lng": 100.2422
@@ -342,13 +342,13 @@
       ],
       "tips": "Only during mushroom season (June-Nov). Price varies by mushroom type. The restaurant verifies mushroom safety. Reservation required.",
       "dishHighlights": [
-        "Seasonal wild mushrooms",
-        "Safety certified",
-        "Hotpot set meals"
+        "時令野生菌",
+        "安全認證",
+        "火鍋套餐"
       ],
       "type": "local",
       "tags": [
-        "local"
+        "在地美食"
       ],
       "rating": 4,
       "star": 0,
@@ -360,11 +360,11 @@
     {
       "id": "naxi-pavilion",
       "name": "纳西阁",
-      "nameEn": "Naxi Pavilion",
-      "cuisine": "Naxi Fine Dining",
+      "nameEn": "納西亭",
+      "cuisine": "納西精緻料理",
       "priceRange": "¥80-150¥",
-      "description": "Upscale Naxi restaurant in traditional courtyard setting serving refined local cuisine with elegant presentation.",
-      "address": "Old Town, Lijiang",
+      "description": "傳統庭院環境中的高端納西餐廳，提供精緻的當地美食與優雅呈現。",
+      "address": "麗江古城",
       "coordinates": {
         "lat": 26.8767,
         "lng": 100.2356
@@ -378,8 +378,8 @@
       ],
       "tips": "Best for special occasions. The courtyard setting is beautiful. Book window seats for atmosphere. Good wine selection.",
       "dishHighlights": [
-        "Courtyard dining",
-        "Refined Naxi dishes",
+        "庭院用餐",
+        "精緻納西料理",
         "Traditional atmosphere"
       ],
       "type": "local",
@@ -2272,194 +2272,194 @@
     {
       "type": "fire",
       "name": "丽江消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "ambulance",
       "name": "丽江急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police available"
     },
     {
       "id": "police",
       "name": "丽江市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Police Bureau",
       "phone": "110",
       "type": "police",
       "description": "Lijiang city police emergency hotline",
-      "address": "Guangzhou"
+      "address": "Lijiang City Center"
     },
     {
       "id": "fire",
       "name": "丽江市消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Fire Department",
       "phone": "119",
       "type": "fire",
       "description": "Fire and rescue emergency",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "ambulance",
       "name": "丽江市急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Emergency Medical Center",
       "phone": "120",
       "type": "medical",
       "description": "Medical emergency and ambulance service",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-hotline",
       "name": "丽江市旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Complaint Hotline",
       "phone": "0888-12345",
       "type": "tourism",
       "description": "Tourism complaints and tourist assistance",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "tourism-bureau",
       "name": "丽江市旅游执法支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Tourism Enforcement",
       "phone": "0888-5122927",
       "type": "tourism",
       "description": "Report illegal tourism activities, price disputes",
-      "address": "Guangzhou"
+      "address": "Lijiang Old Town"
     },
     {
       "id": "gucheng-police",
       "name": "古城区公安分局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Gucheng District Police Station",
       "phone": "0888-5158110",
       "type": "police",
       "description": "Old Town area police station",
-      "address": "Guangzhou"
+      "address": "Gucheng District, Lijiang"
     },
     {
       "id": "medical-advice",
       "name": "丽江市人民医院急诊",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang People's Hospital Emergency",
       "phone": "0888-5160120",
       "type": "medical",
       "description": "Main hospital emergency department",
-      "address": "Guangzhou"
+      "address": "Xin Dayan Road, Lijiang"
     },
     {
       "id": "high-altitude-rescue",
       "name": "丽江高山救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang High Altitude Rescue",
       "phone": "0888-5168110",
       "type": "rescue",
       "description": "Mountain rescue for Jade Dragon Snow Mountain and hiking areas",
-      "address": "Guangzhou"
+      "address": "Jade Dragon Snow Mountain area"
     },
     {
       "id": "weather",
       "name": "丽江市气象局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Meteorological Bureau",
       "phone": "12121",
       "type": "weather",
       "description": "Weather forecasts and mountain weather specifically",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "forestry-fire",
       "name": "丽江森林防火指挥部",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Forest Fire Prevention",
       "phone": "0888-12119",
       "type": "emergency",
       "description": "Forest fire reporting for Lijiang area",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "province-emergency",
       "name": "云南省应急管理厅",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yunnan Provincial Emergency",
       "phone": "0871-12350",
       "type": "emergency",
       "description": "Provincial emergency coordination",
-      "address": "Guangzhou"
+      "address": "Kunming (provincial)"
     },
     {
       "id": "lugu-lake-police",
       "name": "泸沽湖派出所",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lugu Lake Police Station",
       "phone": "0888-5881110",
       "type": "police",
       "description": "Police coverage for Lugu Lake area",
-      "address": "Guangzhou"
+      "address": "Lugu Lake area"
     },
     {
       "id": "tiger-leaping-gorge-rescue",
       "name": "虎跳峡救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tiger Leaping Gorge Rescue",
       "phone": "0888-5166110",
       "type": "rescue",
       "description": "Rescue services for Tiger Leaping Gorge hiking area",
-      "address": "Guangzhou"
+      "address": "Tiger Leaping Gorge area"
     },
     {
       "id": "road-emergency",
       "name": "丽江道路救援",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Road Emergency",
       "phone": "0888-12122",
       "type": "road",
       "description": "Roadside assistance and traffic emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang area roads"
     },
     {
       "id": "lijiang-railway",
       "name": "丽江火车站服务",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Railway Station",
       "phone": "0888-5129352",
       "type": "transport",
       "description": "Railway ticket inquiries and station services",
-      "address": "Guangzhou"
+      "address": "Lijiang Railway Station"
     },
     {
       "id": "national-tourism-lijiang",
       "name": "全国旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "National Tourism Complaint Hotline",
       "phone": "12301",
       "type": "tourism",
       "description": "National tourism complaints hotline",
-      "address": "Guangzhou"
+      "address": "Nationwide"
     },
     {
       "id": "lijiang-consumer-complaint",
       "name": "丽江市消费者协会",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Consumer Association",
       "phone": "0888-12315",
       "type": "consumer",
       "description": "Consumer rights protection and complaints",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-water-emergency",
       "name": "丽江市自来水公司",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Water Supply Company",
       "phone": "0888-96106",
       "type": "utility",
       "description": "Water supply emergencies and leaks",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     },
     {
       "id": "lijiang-electricity-emergency",
       "name": "丽江供电局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Lijiang Power Supply Bureau",
       "phone": "95598",
       "type": "utility",
       "description": "Power outage and electrical emergencies",
-      "address": "Guangzhou"
+      "address": "Lijiang City"
     }
   ],
   "culturalTips": [
@@ -3059,22 +3059,22 @@
       "name": "束河古镇",
       "nameEn": "Shaxi Ancient Town",
       "category": "cultural",
-      "description": "太仓市保存完好的古镇，有1300多年历史。镇上老街保存完好，临水建筑、古桥、寺庙构成典型的江南水乡风貌，游客稀少非常安静。",
-      "address": "苏州市太仓市沙溪镇",
+      "description": "Less touristy Naxi town compared to Lijiang Old Town, preserving authentic Naxi architecture and traditional way of life. Also called 'Three Lanes' town.",
+      "address": "Shaxi Town, 8km north of Lijiang",
       "coordinates": {
         "lat": 26.9083,
         "lng": 100.1928
       },
-      "openingHours": "全天开放",
-      "ticketPrice": "免费",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
       "highlights": [
-        "临水老街",
-        "古桥群",
-        "传统手工艺",
-        "安静氛围"
+        "青龙桥 (Black Dragon Bridge)",
+        "Naxi architecture",
+        "Tea House Square",
+        "Horse caravan history"
       ],
-      "tips": "游客非常少，可以悠闲地逛古镇。从太仓市区可乘公交到达。",
+      "tips": "Visit in early morning or evening to avoid day-trippers. The tea house culture is authentic. Good for buying Naxi handicrafts without tourist markups. Combine with nearby Jade Dragon Snow Mountain.",
       "imageUrl": "/img/ext/557132bee5c8.webp",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "phone": "+86 088 8 2751 4951"
@@ -3084,22 +3084,22 @@
       "name": "黑龙潭",
       "nameEn": "Black Dragon Pool",
       "category": "cultural",
-      "description": "歷史悠久的納西花園，池塘中倒映著玉龍雪山的壯麗景色。園內有傳統的納西建築和文化表演。",
-      "address": "麗江黑龍潭公園",
+      "description": "Historic Naxi garden with the iconic view of Jade Dragon Snow Mountain reflected in the pond. Features traditional Naxi architecture and cultural performances.",
+      "address": "Black Dragon Pool Park, Lijiang",
       "coordinates": {
         "lat": 26.8783,
         "lng": 100.2283
       },
       "openingHours": "07:00-19:00",
-      "ticketPrice": "免費（需出示身份證件）",
-      "recommendedVisitTime": "1-2小時",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "玉龍雪山倒影",
-        "五鳳橋",
-        "納西音樂表演",
-        "古德義堂"
+        "Reflection of Jade Dragon Mountain",
+        "Five Phoenix Bridge",
+        "Naxi music performances",
+        "Ancient Deyi Hall"
       ],
-      "tips": "麗江最佳日出攝影地點，當山脈倒影清晰可見時尤為壯觀。納西古樂表演時間為13:30-14:30及15:30-16:30（視天氣情況而定）。請攜帶身份證件以免費入場。",
+      "tips": "Best photo spot in Lijiang at sunrise when mountain reflection is clear. Naxi ancient music show at 13:30-14:30 and 15:30-16:30 (weather permitting). Bring ID for free entry.",
       "imageUrl": "/img/ext/7045caf96b31.webp",
       "image": "/img/ext/f40cca09aac0.webp",
       "phone": "+86 088 8 3749 1716"
@@ -3184,22 +3184,22 @@
       "name": "蓝月谷",
       "nameEn": "Blue Moon Valley",
       "category": "natural",
-      "description": "一個美麗的冰川峽谷，水色碧綠清澈，源自玉龍雪山的冰川融水。",
-      "address": "玉龍雪山風景區藍月谷",
+      "description": "A beautiful glacial valley with bright turquoise waters originating from Jade Dragon Snow Mountain's melting glaciers.",
+      "address": "Blue Moon Valley, Jade Dragon Snow Mountain Scenic Area",
       "coordinates": {
         "lat": 27.0856,
         "lng": 100.1628
       },
       "openingHours": "06:30-18:00",
-      "ticketPrice": "包含在雪山門票內（100¥）",
-      "recommendedVisitTime": "2-3小時",
+      "ticketPrice": "Included with Snow Mountain ticket (100¥)",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "清澈的藍色湖水",
-        "瀑布景觀",
-        "森林徒步",
-        "如鏡般的倒影"
+        "Crystal clear blue water",
+        "Waterfall views",
+        "Forest hiking",
+        "Mirror-like reflections"
       ],
-      "tips": "從冰川公園到藍月谷的電動車費用已包含。湖水極冷，請勿涉水。最佳攝影地點為橋上。建議與雪山同一天遊覽。",
+      "tips": "Electric car from Glacier Park to Blue Moon Valley included. The water is freezing cold - don't wade in. Best photos from the bridge. Combine with Snow Mountain in same day.",
       "imageUrl": "/img/ext/aae6b4c797b6.webp",
       "image": "/img/ext/2707c54b1ac7.webp",
       "phone": "+86 088 8 7882 4917"
@@ -3609,22 +3609,22 @@
       "name": "巴巴藏族古道",
       "nameEn": "Baba Tibetan Trail",
       "category": "natural",
-      "description": "一條連接藏族村落的古老徒步路線，沿途可欣賞壯麗的山景、經幡以及感受正宗的藏族文化。",
-      "address": "麗江以北40公里處的巴巴村區域",
+      "description": "Ancient hiking trail connecting Tibetan villages with stunning mountain views, prayer flags, and authentic culture.",
+      "address": "Baba Village area, 40km from Lijiang",
       "coordinates": {
         "lat": 27.0656,
         "lng": 100.2989
       },
-      "openingHours": "全天開放",
-      "ticketPrice": "免費",
-      "recommendedVisitTime": "全天",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "Full day",
       "highlights": [
-        "山景",
-        "經幡",
-        "藏族村落",
-        "傳統文化"
+        "Mountain views",
+        "Prayer flags",
+        "Tibetan villages",
+        "Traditional culture"
       ],
-      "tips": "需要有徒步經驗。建議聘請當地導遊。請攜帶水和零食。最佳遊覽時間為秋季。此步道歷史悠久。",
+      "tips": "Hiking experience required. Local guide recommended. Bring water and snacks. Best in autumn. The trail is ancient.",
       "imageUrl": "/img/ext/02d0711e6d7e.webp",
       "image": "/img/ext/505d95e27bcc.webp",
       "phone": "+86 088 8 9456 8307"
@@ -3683,22 +3683,22 @@
       "name": "白沙古镇",
       "nameEn": "Baisha Village",
       "category": "landmark",
-      "description": "白沙古鎮是納西族木氏家族的發祥地，也是麗江最古老的古鎮。鎮內保留了大量的納西族傳統建築和白沙壁畫，是了解納西族歷史文化的重要窗口。",
-      "address": "麗江市玉龍縣白沙鎮",
+      "description": "白沙古镇是纳西族木氏家族的发祥地，也是丽江最古老的古镇，镇内保留了大量纳西族传统建筑和白沙壁画，是了解纳西族历史文化的重要窗口。",
+      "address": "丽江市玉龙县白沙镇",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
-      "openingHours": "全天開放",
-      "ticketPrice": "免費（白沙壁畫30元）",
-      "recommendedVisitTime": "2-3小時",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费（白沙壁画30元）",
+      "recommendedVisitTime": "2-3小时",
       "highlights": [
-        "白沙壁畫",
-        "白沙古建築",
-        "納西文化",
-        "雪山風光"
+        "白沙壁画",
+        "白沙古建筑",
+        "纳西文化",
+        "雪山风光"
       ],
-      "tips": "白沙壁畫是明代壁畫藝術的珍品，值得仔細觀賞。古鎮上有納西族手工刺繡。",
+      "tips": "白沙壁画是明代壁画艺术的珍品，值得仔细观赏。古镇上有纳西族手工刺绣。",
       "image": "/img/ext/730452fb47f5.webp",
       "phone": "+86 088 8 6387 9562"
     },
@@ -3707,22 +3707,22 @@
       "name": "白沙壁画",
       "nameEn": "Baisha Murals",
       "category": "museum",
-      "description": "白沙壁畫是明代納西族土司木氏邀請漢、藏、納西等族畫師繪製的宗教壁畫，融合了多種宗教文化，是麗江最重要的文化遺產之一。",
-      "address": "麗江市玉龍縣白沙鎮白沙壁畫",
+      "description": "白沙壁画是明代纳西族土司木氏请汉、藏、纳西等族画师绘制的宗教壁画，融合了多种宗教文化，是丽江最重要的文化遗产之一。",
+      "address": "丽江市玉龙县白沙镇白沙壁画",
       "coordinates": {
         "lat": 26.9333,
         "lng": 100.2
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "30元",
-      "recommendedVisitTime": "1小時",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "明代壁畫",
+        "明代壁画",
         "多宗教融合",
-        "佛教道教題材",
-        "納西文化"
+        "佛教道教题材",
+        "纳西文化"
       ],
-      "tips": "壁畫不允許拍照，建議請導遊講解壁畫的故事和文化內涵。",
+      "tips": "壁画不允许拍照，建议请导游讲解壁画的故事和文化内涵。",
       "image": "/img/ext/c63ef2486ca2.webp",
       "phone": "+86 088 8 5880 3848"
     },
@@ -4171,8 +4171,8 @@
       "ticketPrice": "含船票",
       "recommendedVisitTime": "1小时",
       "highlights": [
-        "小岛",
-        "寺庙"
+        "小島",
+        "寺廟"
       ],
       "tips": "乘船前往。",
       "image": "/img/ext/14a7b44a0191.webp",

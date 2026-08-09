@@ -9,14 +9,14 @@
     "lng": 118.0894
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "廈門は福建省の沿岸都市で、「海上の花園」として知られています。植民地時代の建築、伝統的な閩南文化、現代的な開発の融合があり、東と西のユニークなミックスを提供します。美しいビーチ、ユネスコ世界遺産の鼓浪嶼、仏教寺院、世界クラスの料理があります。",
+  "description": "Xiamen, a coastal city in Fujian Province, is known as the '海上花园' (Garden on the Sea). With its blend of colonial architecture, traditional Minnan culture, and modern development, it offers a unique mix of East and West. The city features beautiful beaches, the UNESCO-listed Gulangyu Island, Buddhist temples, and world-class cuisine.",
   "coverImage": "/img/ext/d78a5158579e.webp",
   "highlights": [
-    "鼓浪嶼 - ユネスコ世界遺産の植民地時代の島",
-    "南普陀寺 - 神聖な仏教の山寺",
-    "厦門大学 - 中国で最も美しいキャンパス",
-    "環島路 - 海岸沿いの風光明媚な道路",
-    "中山路 - 歴史的なショッピング街"
+    "Gulangyu Island - UNESCO World Heritage colonial island",
+    "Nanputuo Temple - Sacred Buddhist mountain temple",
+    "Xiamen University - China's most beautiful campus",
+    "Huandao Road - Scenic coastal boulevard",
+    "中山路 - 歴史的なショッピングストリート"
   ],
   "climate": {
     "type": "Subtropical Maritime",
@@ -29,103 +29,103 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "13C (55F)",
-    "tips": "春（3-5月）または秋（10-11月）が快適。 夏は蒸し暑く台風が頻繁。 冬は穏やかですが雨の可能性。 一年中雨具を持参、夏は日焼け止め。"
+    "tips": "Best visited in spring (March-May) or autumn (October-November) for pleasant weather. Summers are hot and humid with frequent typhoons. Winters are mild but can be rainy. Bring rain gear year-round and sunscreen in summer."
   },
   "attractions": [
     {
       "id": "gulangyu-island",
       "name": "鼓浪屿",
-      "nameEn": "Gulangyu Island",
+      "nameEn": "鼓浪嶼",
       "category": "cultural",
       "image": "/img/ext/24c78d4bdbb8.webp",
-      "description": "A UNESCO World Heritage island known for its colonial architecture, piano museum, and car-free streets. Features over 1,000 historical buildings and stunning ocean views.",
-      "address": "Gulangyu Island, Siming District",
+      "description": "植民地時代の建築、ピアノ博物館、車禁止の通りで知られるユネスコ世界遺産の島です。1000以上の歴史的建造物と素晴らしい海の景色があります。",
+      "address": "鼓浪嶼島、思明区",
       "coordinates": {
         "lat": 24.4455,
         "lng": 118.0719
       },
-      "openingHours": "Open 24 hours (ferry 7:10-17:30)",
-      "ticketPrice": "Free (ferry 35-50¥ round trip, attractions separate)",
-      "recommendedVisitTime": "4-5 hours",
+      "openingHours": "24時間開放（フェリー 7:10-17:30）",
+      "ticketPrice": "無料（フェリー 35-50元往返、観光別途）",
+      "recommendedVisitTime": "4-5時間",
       "highlights": [
-        "Piano Museum",
-        "Shuzhuang Garden",
-        "Sunlight Rock",
-        "Colonial architecture"
+        "ピアノ博物館",
+        "蒼庄園",
+        "日光岩",
+        "植民地時代の建築"
       ],
-      "tips": "Book ferry tickets in advance during holidays. Rent an audio guide at the pier. Best explored on foot - no cars allowed. Visit in early morning for fewer crowds.",
+      "tips": "休暇中はフェリーチケットを事前に予約してください。桟橋でオーディオガイドを借りられます。車は入れないので歩きで探索するのが最佳です。朝の早い时间去くと人が少なくなります。",
       "phone": "+86 592 206 7284"
     },
     {
       "id": "nanputuo-temple",
       "name": "南普陀寺",
-      "nameEn": "Nanputuo Temple",
+      "nameEn": "南普陀寺",
       "category": "cultural",
       "image": "/img/ext/9711badd781a.webp",
-      "description": "One of the most important Buddhist temples in Fujian, set against the backdrop of Five Old Men Peak. Known for vegetarian restaurant and beautiful architecture.",
-      "address": "515 Siming Road, Siming District",
+      "description": "福建で最も重要な仏教寺院の一つで、五老峰を背景にしています。ベジタリアンレストランと美しい建築で知られています。",
+      "address": "思明区思明路515号",
       "coordinates": {
         "lat": 24.4377,
         "lng": 118.0937
       },
-      "openingHours": "03:00-18:00 ( temple), 08:30-17:00 (mountain)",
-      "ticketPrice": "Free (mountain 10¥)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "03:00-18:00（寺）、08:30-17:00（山）",
+      "ticketPrice": "無料（山10¥）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Mahavira Hall",
-        "Five Old Men Peak",
-        "Buddhist College",
-        "Vegetarian restaurant"
+        "大雄宝殿",
+        "五老人峰",
+        "佛教学院",
+        "精進料理レストラン"
       ],
-      "tips": "Climb the mountain for panoramic city views. Don't miss the vegetarian noodles at the temple restaurant. Respect Buddhist customs - dress modestly.",
+      "tips": "山に登って街の全景を楽しむ。寺の精進料理を忘れずに。佛教の慣習を尊重し、地味な服装で。",
       "phone": "+86 592 208 7235"
     },
     {
       "id": "xiamen-university",
       "name": "厦门大学",
-      "nameEn": "Xiamen University",
+      "nameEn": "厦門大学",
       "category": "cultural",
       "image": "/img/ext/c4a62854362b.webp",
-      "description": "Known as China's most beautiful university campus, featuring unique闽南建筑 (Minnan architecture), lakes, and palm-lined streets. Founded by Tan Kah Kee in 1921.",
-      "address": "422 Siming South Road, Siming District",
+      "description": "中国で最も美しい大学キャンパスとして知られ、独特の閩南建築、湖、ヤシ並木があります。1921年に陳嘉庚によって設立されました。",
+      "address": "厦門市思明区思明南路422号",
       "coordinates": {
         "lat": 24.4346,
         "lng": 118.1025
       },
-      "openingHours": "Campus: Open 24 hours (ID required), Main Buildings: 08:00-17:00",
-      "ticketPrice": "Free (advance booking required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "キャンパス：24時間開放（身分証明書が必要）、主要建物：08:00-17:00",
+      "ticketPrice": "無料（事前予約が必要）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Furong Lake",
-        "Tan Kah Kee Memorial Hall",
-        "Minnan architecture",
-        "Buddhist seminary"
+        "芙蓉湖",
+        "陳嘉庚記念堂",
+        "閩南建築",
+        "佛教学園"
       ],
-      "tips": "Book through XMU service app. Visit Furong Lake and the tunnel with student murals. The campus is stunning at sunset. Nearby Zengcuo'an for snacks.",
+      "tips": "XMUサービスアプリを通じて予約。芙蓉湖と学生的壁画があるトンネルを訪問。日没時のキャンパスは素晴らしい。近隣の曾厝垵で軽食を。",
       "phone": "+86 059 2 5249 3341"
     },
     {
       "id": "huandao-road",
       "name": "环岛路",
-      "nameEn": "Huandao Road (Island Ring Road)",
+      "nameEn": "環島路（アイランドリングロード）",
       "category": "natural",
       "image": "/img/ext/0a94399d0cbd.webp",
-      "description": "A scenic 31km coastal road offering beautiful sea views, beaches, and parks. Perfect for cycling, jogging, or leisurely drives with stops at various beach areas.",
-      "address": "Coastal road from Huli District to Xiang'an District",
+      "description": "海美景、砂浜、公園を提供する景色最美的31kmの海岸道路。自転車の走行、ジョギング、または様々な浜辺エリアで停車しながらのドライブに最適です。",
+      "address": "湖里区から翔安区への海岸道路",
       "coordinates": {
         "lat": 24.4612,
         "lng": 118.1056
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "24時間開放",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2〜4時間",
       "highlights": [
-        "Huli Mountain Park",
-        "Jimei School Village",
-        "Gulangyu view",
-        "Suning Bay"
+        "湖里山公園",
+        "集美学区",
+        "鼓浪嶼の眺望",
+        "蘇寧湾"
       ],
-      "tips": "Rent a bicycle at many rental points. Best visited at sunset. Combine with nearby attractions. Morning runs are popular with locals.",
+      "tips": "多くのレンタル拠点で自転車をレンタルしてください。夕暮れ時に訪問するのがベストです。近隣の観光地と組み合わせてください。朝のランニングは地元で人気があります。",
       "phone": "+86 059 2 5356 3702"
     },
     {
@@ -165,69 +165,69 @@
         "lng": 118.0578
       },
       "openingHours": "Open 24 hours (buildings 08:00-17:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "3-4 hours",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "3-4時間",
       "highlights": [
-        "Jimei Middle School",
-        "Ao Yuan Garden",
-        "Chengyi Park",
-        "Austro-Hungarian buildings"
+        "集美中学校",
+        "鰲園",
+        "誠毅公園",
+        "オーストリア＝ハンガリー建築"
       ],
-      "tips": "Combine with Huandao Road cycling. Visit the turtle-shaped Jimei Middle School. The illuminated buildings at night are magical.",
+      "tips": "環島路サイクリングと組み合わせると良いでしょう。亀の形をした集美中学校を訪れてください。夜にライトアップされた建物は魔法のようです。",
       "phone": "+86 059 2 5814 8169"
     },
     {
       "id": "shapowei",
       "name": "沙坡尾",
-      "nameEn": "Shapowei (Sand Wave)",
+      "nameEn": "沙坡尾",
       "category": "cultural",
       "image": "/img/ext/8be41735cef1.webp",
-      "description": "The oldest fishing harbor in Xiamen, now transformed into a trendy art and dining district while retaining its traditional fishing village character.",
-      "address": "Shapowei, Siming District",
+      "description": "厦门最古の漁港で、現在は伝統的な漁村の性格を維持しながら、トレンディなアートとダイニング地区に変身しました。",
+      "address": "思明区沙坡尾",
       "coordinates": {
         "lat": 24.4412,
         "lng": 118.0832
       },
-      "openingHours": "Open 24 hours (shops/restaurants 10:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "24時間営業（ショップ・レストランは10:00-22:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Fishing boats",
-        "Art districts",
-        "Waterfront bars",
-        "Traditional vs modern contrast"
+        "漁船",
+        "アート地区",
+        "ウォーターフロントバー",
+        "伝統と現代нов контраст"
       ],
-      "tips": "Best during blue hour for photos. Explore the art spaces and galleries. Fresh seafood available from local vendors. Evening atmosphere is fantastic.",
+      "tips": "写真撮影にはブルーアワーがベストです。アートスペースやギャラリー探索をお楽しみください。地元業者から新鮮な海産物が購入できます。夜の雰囲気は素晴らしいです。",
       "phone": "+86 059 2 2862 7390"
     },
     {
       "id": "zengcuoan",
       "name": "曾厝垵",
-      "nameEn": "Zengcuo'an",
+      "nameEn": "曽厝垵",
       "category": "cultural",
       "image": "/img/ext/de29f9e7f602.webp",
-      "description": "A former fishing village turned bustling tourist town famous for its maze-like alleys, local snacks, handcraft shops, and vibrant nightlife.",
-      "address": "Zengcuo'an, Siming District",
+      "description": "昔日の漁村が活気ある観光町に変貌。迷路のような路地屋、ローカルスナック、手芸品店、活気あるナイトライフで有名。",
+      "address": "曽厝垵、思明区",
       "coordinates": {
         "lat": 24.4402,
         "lng": 118.1092
       },
-      "openingHours": "Open 24 hours (shops 09:00-23:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-4 hours",
+      "openingHours": "24時間営業（店舗09:00-23:00）",
+      "ticketPrice": "無料",
+      "recommendedVisitTime": "2-4時間",
       "highlights": [
-        "Wenyu Ferry",
-        "Local snacks",
-        "Handcraft shops",
-        "Temple of Tianzhu"
+        "文滸フェリー",
+        "ローカルスナック",
+        "手芸品店",
+        "天主寺"
       ],
-      "tips": "Get lost in the alleys intentionally. Try local snacks like土笋冻 and沙茶面. Night market atmosphere after sunset. Can be very crowded during holidays.",
+      "tips": "路地屋で迷うことを楽しむ。土笋凍や沙茶面などのローカルスナックを試す。日没後のナイトマーケット雰囲気。Holidayは混雑注意。",
       "phone": "+86 059 2 8652 0315"
     },
     {
       "id": "xiamen-underwater-world",
       "name": "厦门海底世界",
-      "nameEn": "Xiamen Underwater World",
+      "nameEn": "厦門海底ワールド",
       "category": "modern",
       "image": "/img/ext/d9e1e34b36a1.webp",
       "description": "One of the largest underwater exhibitions in Asia, featuring a 15-meter underwater tunnel and diverse marine life including sharks, sea turtles, and colorful fish.",
@@ -2351,9 +2351,9 @@
         "姜母鸭"
       ],
       "tags": [
-        "老字号",
-        "排队王",
-        "社区老店"
+        "中華そば",
+        "行列必至",
+        "地域に根ざした古参の店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4a3a08b8c137.webp"
@@ -2361,28 +2361,28 @@
     {
       "id": "xiamen-54",
       "name": "老街海蛎煎",
-      "nameEn": "老街海蛎煎 (海蛎煎)",
+      "nameEn": "老街牡蠣煎餅 (牡蠣煎餅)",
       "type": "street",
-      "cuisine": "海蛎煎",
+      "cuisine": "牡蠣煎餅",
       "avgPrice": 28,
       "rating": 4,
-      "address": "厦门市市中心区美食街57号",
+      "address": "厦門市市中心部美食街57号",
       "coordinates": {
         "lat": 24.5006,
         "lng": 118.0448
       },
       "phone": "+86 0592 79909030",
       "hours": "17:00-02:00",
-      "description": "厦门本地人推荐的海蛎煎店，味道正宗，价格实惠",
+      "description": "厦門地元の人々が推薦する牡蠣煎餅の専門店。本格的な味で価格帯も手が届く",
       "dishHighlights": [
-        "海蛎煎",
-        "花生汤",
-        "姜母鸭"
+        "牡蠣煎餅",
+        "落花生羹",
+        "老鴨湯"
       ],
       "tags": [
-        "路边摊",
-        "夜市",
-        "小吃"
+        "屋台",
+        "ナイトマーケット",
+        "軽食"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/4d03ae8efacc.webp"
@@ -2390,28 +2390,28 @@
     {
       "id": "xiamen-56",
       "name": "阿婆土笋冻",
-      "nameEn": "阿婆土笋冻 (土笋冻)",
+      "nameEn": "阿婆車海老のゼリーの女王 (車海老のゼリー)",
       "type": "local",
-      "cuisine": "土笋冻",
+      "cuisine": "土筍ゼリー",
       "avgPrice": 146,
       "rating": 4.6,
-      "address": "厦门市市中心区美食街51号",
+      "address": "厦門市市中心区美食街51号",
       "coordinates": {
         "lat": 24.4429,
         "lng": 118.0553
       },
       "phone": "+86 0592 40761394",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "厦门本地人推荐的土笋冻店，味道正宗，价格实惠",
+      "description": "厦門の地元民おすすめの土筍ゼリー店。味は本格的で価格は手が届きやすい",
       "dishHighlights": [
-        "花生汤",
-        "海蛎煎",
-        "土笋冻"
+        "花生湯",
+        "カキ焼きお好み焼き",
+        "土筍ゼリー"
       ],
       "tags": [
-        "本地人爱去",
-        "家常菜",
-        "排队王"
+        "地元民お気に入り",
+        "家庭料理",
+        "行列の達人"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/e76f24e15ffa.webp"
@@ -2419,28 +2419,28 @@
     {
       "id": "xiamen-58",
       "name": "地道花生汤",
-      "nameEn": "地道花生汤 (花生汤)",
+      "nameEn": "本格花生湯 (花生湯)",
       "type": "local",
-      "cuisine": "花生汤",
+      "cuisine": "花生湯",
       "avgPrice": 138,
       "rating": 4.1,
-      "address": "厦门市新城区美食街33号",
+      "address": "厦門市新城区美食街33号",
       "coordinates": {
         "lat": 24.5248,
         "lng": 118.0977
       },
       "phone": "+86 0592 69781591",
       "hours": "17:00-02:00",
-      "description": "厦门本地人推荐的花生汤店，味道正宗，价格实惠",
+      "description": "厦門の地元民おすすめの花生湯店。味は本格的で価格は手が届きやすい",
       "dishHighlights": [
-        "土笋冻",
-        "姜母鸭",
-        "沙茶面"
+        "土笋凍",
+        "姜母鴨",
+        "沙茶麺"
       ],
       "tags": [
-        "排队王",
-        "隐藏美食",
-        "性价比高"
+        "行列必至",
+        "隠れた美食",
+        "コストパフォーマンスが高い"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ed3e34e3ccc6.webp"
@@ -2448,26 +2448,26 @@
     {
       "id": "xiamen-60",
       "name": "正宗花生汤",
-      "nameEn": "正宗花生汤 (花生汤)",
+      "nameEn": "花生湯（正統）",
       "type": "local",
-      "cuisine": "花生汤",
+      "cuisine": "花生湯",
       "avgPrice": 122,
       "rating": 4.9,
-      "address": "厦门市老城区美食街68号",
+      "address": "廈門市老城区美食街68号",
       "coordinates": {
         "lat": 24.435,
         "lng": 118.081
       },
       "phone": "+86 0592 79071430",
-      "hours": "11:00-14:00, 17:00-21:30",
-      "description": "厦门本地人推荐的花生汤店，味道正宗，价格实惠",
+      "hours": "11:00-14:00、17:00-21:30",
+      "description": "廈門地元の人がおすすめする花生湯の専門店。味が正統で、価格も手頃",
       "dishHighlights": [
-        "沙茶面",
-        "海蛎煎",
-        "花生汤"
+        "沙茶麺",
+        "海蠣煎",
+        "花生湯"
       ],
       "tags": [
-        "老字号",
+        "歴史ある店舗",
         "性价比高",
         "社区老店"
       ],
@@ -3293,162 +3293,162 @@
     {
       "type": "ambulance",
       "name": "厦门急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Emergency Center",
       "phone": "120",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various locations citywide",
+      "notes": "English operators may be limited. Ask for 'ying yu' (English) operator."
     },
     {
       "type": "police",
       "name": "厦门市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Public Security Bureau",
       "phone": "110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Xiamen City Center",
+      "notes": "Tourist police stations at major attractions and Gulangyu Ferry Terminal"
     },
     {
       "type": "fire",
       "name": "厦门消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Fire Brigade",
       "phone": "119",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various stations citywide",
+      "notes": "Also handles rescue operations and accidents"
     },
     {
       "type": "hospital",
       "name": "厦门大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "The First Affiliated Hospital of Xiamen University",
       "phone": "+86 592 213 2222",
-      "address": "Guangzhou",
+      "address": "55 Zhenhai Road, Siming District",
       "coordinates": {
         "lat": 24.4592,
         "lng": 118.0885
       },
-      "notes": "For Singapore citizens"
+      "notes": "Large public hospital, 24-hour emergency. English interpretation available."
     },
     {
       "type": "hospital",
       "name": "厦门市中医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Traditional Chinese Medicine Hospital",
       "phone": "+86 592 202 5209",
-      "address": "Guangzhou",
+      "address": "16 Jiahe Road, Siming District",
       "coordinates": {
         "lat": 24.4615,
         "lng": 118.0915
       },
-      "notes": "For Singapore citizens"
+      "notes": "Good for traditional Chinese medicine treatments. Emergency services available."
     },
     {
       "type": "hospital",
       "name": "厦门长庚医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Chang Gung Hospital",
       "phone": "+86 592 620 3456",
-      "address": "Guangzhou",
+      "address": "123 Changle Road, Haicang District",
       "coordinates": {
         "lat": 24.4525,
         "lng": 118.0385
       },
-      "notes": "For Singapore citizens"
+      "notes": "Taiwanese-run hospital, English-speaking staff, accepts international insurance"
     },
     {
       "type": "embassy",
       "name": "新加坡驻厦门总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Consulate-General of Singapore in Xiamen",
       "phone": "+86 592 268 8691",
-      "address": "Guangzhou",
+      "address": "Xiamen Center, 95 Lujiang Road",
       "coordinates": {
         "lat": 24.4555,
         "lng": 118.0795
       },
-      "notes": "For Singapore citizens"
+      "notes": "For Singapore citizens only. Check hours before visiting."
     },
     {
       "type": "embassy",
       "name": "马来西亚驻厦门总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Consulate-General of Malaysia in Xiamen",
       "phone": "+86 592 202 7984",
-      "address": "Guangzhou",
+      "address": "Xiamen International Bank Building, 50 Lujiang Road",
       "coordinates": {
         "lat": 24.4558,
         "lng": 118.0785
       },
-      "notes": "For Singapore citizens"
+      "notes": "For Malaysian citizens. Monday-Friday 09:00-12:00, 14:00-17:00."
     },
     {
       "type": "police",
       "name": "厦门出入境管理局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Exit-Entry Administration",
       "phone": "+86 592 202 2020",
-      "address": "Guangzhou",
+      "address": "28-32 Hubin North Road, Siming District",
       "coordinates": {
         "lat": 24.4552,
         "lng": 118.0985
       },
-      "notes": "For Singapore citizens"
+      "notes": "For visa extensions, passport issues, and residency permits"
     },
     {
       "type": "hospital",
       "name": "厦门大学医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen University Hospital",
       "phone": "+86 592 218 0120",
-      "address": "Guangzhou",
+      "address": "422 Siming South Road, Siming District",
       "coordinates": {
         "lat": 24.4345,
         "lng": 118.1025
       },
-      "notes": "For Singapore citizens"
+      "notes": "On XMU campus, good for minor ailments and health checks"
     },
     {
       "type": "hospital",
       "name": "厦门眼科中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Eye Center",
       "phone": "+86 592 210 9898",
-      "address": "Guangzhou",
+      "address": "336 Xiahe Road, Siming District",
       "coordinates": {
         "lat": 24.4522,
         "lng": 118.0912
       },
-      "notes": "For Singapore citizens"
+      "notes": "Specialized eye hospital, 24-hour emergency for eye injuries"
     },
     {
       "type": "tourist-complaint",
       "name": "厦门旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Tourism Complaint Hotline",
       "phone": "12345",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide",
+      "notes": "Report travel scams, price disputes, or service issues"
     },
     {
       "type": "coast-guard",
       "name": "厦门海上搜救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Maritime Rescue Center",
       "phone": "12395",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Xiamen Port",
+      "notes": "For maritime emergencies, drowning, or boat accidents"
     },
     {
       "type": "tourist-police",
       "name": "厦门旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Tourist Police",
       "phone": "+86 592 202 2020",
-      "address": "Guangzhou",
+      "address": "Near major attractions",
       "coordinates": {
         "lat": 24.4455,
         "lng": 118.0719
       },
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police station at Gulangyu Ferry Terminal"
     },
     {
       "type": "foreign-affairs",
       "name": "厦门市人民政府外事办公室",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Xiamen Foreign Affairs Office",
       "phone": "+86 592 285 8888",
-      "address": "Guangzhou",
+      "address": "11 Xiamen Government Building",
       "coordinates": {
         "lat": 24.4582,
         "lng": 118.0865
       },
-      "notes": "For Singapore citizens"
+      "notes": "Assistance for foreign nationals in Xiamen"
     }
   ],
   "quickFacts": {

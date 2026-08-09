@@ -9,14 +9,14 @@
     "lng": 117.3616
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "تیانجین شهری تحت کنترل مستقیم در همسایگی پکن است. به‌خاطر معماری استعماری منحصر به فرد، خیابان پنج بزرگ و منطقه ایتالیایی‌سبک شناخته می‌شود. غذاهای محلی مانند باوبا و کیک سرخ‌شده. مناظر زیبا در کرانه‌های رود های‌هه.",
+  "description": "Tianjin, a bustling port city near Beijing, blends European colonial architecture with traditional Chinese culture. Famous for the Ancient Culture Street, food culture featuring Mahua and Goubuli baozi, and the impressive Tianjin Eye Ferris wheel.",
   "coverImage": "/img/ext/3c81c7331bd2.webp",
   "highlights": [
-    "چشم تیانجین - چرخ و فلک غول‌پیکر",
-    "خیابان فرهنگ باستانی - معماری سنتی",
-    "پنج خیابان بزرگ - معماری اروپایی",
-    "خیابان فرهنگ باستانی تیانجین",
-    "نمای رودخانه هایهه"
+    "Tianjin Eye - Giant Ferris wheel",
+    "Ancient Culture Street - Traditional architecture",
+    "Five Great Avenues - European architecture",
+    "Tianjin Ancient Cultural Street",
+    "Haihe River waterfront"
   ],
   "climate": {
     "type": "Humid continental climate",
@@ -28,7 +28,7 @@
     ],
     "avgSummerTemp": "26°C (79°F)",
     "avgWinterTemp": "-2°C (28°F)",
-    "tips": "بهار و پاییز بهترین هستند. تابستان گرم و مرطوب. زمستان سرد و خشک. بهار طوفان‌های شن از صحرای گبی می‌آورد."
+    "tips": "Best in spring and autumn. Summers hot and humid. Winters cold and dry. Spring brings sandstorms from Gobi Desert."
   },
   "attractions": [
     {
@@ -58,24 +58,24 @@
     {
       "id": "ancient-culture-street",
       "name": "古文化街",
-      "nameEn": "خیابان فرهنگ باستانی",
+      "nameEn": "Ancient Culture Street",
       "category": "cultural",
-      "description": "خیابان تاریخی با معماری سنتی، معابد و صنایع دستی محلی.",
-      "address": "خیابان فرهنگ باستانی، منطقه هپینگ",
+      "description": "Historic street with traditional architecture, temples, and local crafts.",
+      "address": "Ancient Culture Street, Heping District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "openingHours": "باز به صورت 24 ساعته (فروشگاه‌ها 09:00-21:00)",
-      "ticketPrice": "رایگان",
-      "recommendedVisitTime": "2 تا 3 ساعت",
+      "openingHours": "Open 24 hours (shops 09:00-21:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "معبد تیانهو",
-        "فروشگاه‌های سنتی",
-        "اپرا کانتونی",
-        "سوغاتی‌های محلی"
+        "Tianhou Temple",
+        "Traditional shops",
+        "Cantonese opera",
+        "Local snacks"
       ],
-      "tips": "بهترین زمان برای حضور در اوایل صبح است تا از فضای خاص آن لذت ببرید. سعی کنید ماهوا (نوعی شیرینی چینی) و چای را امتحان کنید. سوار قایق در رودخانه هایه شوید.",
+      "tips": "Best in morning for atmosphere. Try mahua and tea. Take boat ride on Haihe.",
       "image": "/img/ext/f5e115604d3c.webp",
       "phone": "+86 022  9903 5780"
     },
@@ -1256,8 +1256,8 @@
       "tags": [
         "local",
         "famous",
-        "snacks",
-        "dessert"
+        "تنقلات",
+        "دسر"
       ],
       "imageUrl": "/img/ext/b0db14180b5e.webp",
       "phone": "+86 022  7819 7799"
@@ -1265,114 +1265,114 @@
     {
       "id": "tianjin-3",
       "name": "十八街麻花",
-      "nameEn": "Shibajie Mahua",
+      "nameEn": "شیباچی ماهوا",
       "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "cuisine": "تنقلات تیانجین",
       "avgPrice": 40,
       "rating": 4.7,
-      "address": "Multiple locations",
+      "address": "چندین مکان",
       "coordinates": {
         "lat": 39.1422,
         "lng": 117.2022
       },
       "phone": "+86 22 2730 1618",
       "hours": "08:00-21:00",
-      "description": "Iconic Tianjin braid-like fried dough snack, crispy and not greasy.",
+      "description": "تنقلات نمادین تیانجین به شکل بافته از خمیر سرخ شده، ترد و بدون چربی.",
       "dishHighlights": [
-        "Mahua (fried dough)",
-        "Mixed nuts",
-        "Preserved fruits"
+        "ماهوا (خمیر سرخ شده)",
+        "آجیل مخلوط",
+        "میوه‌های خشک شده"
       ],
       "tags": [
-        "local",
-        "famous",
-        "snacks",
-        "souvenir"
+        "محلی",
+        "معروف",
+        "تنقلات",
+        "سوغات"
       ],
       "imageUrl": "/img/ext/7e7d7df47e0c.webp"
     },
     {
       "id": "tianjin-4",
       "name": "津菜典藏",
-      "nameEn": "Jin Cuisine Classic",
+      "nameEn": "جین کویزین کلاسیک",
       "type": "fine",
-      "cuisine": "Tianjin",
+      "cuisine": "تیانجین",
       "avgPrice": 200,
       "rating": 4.6,
-      "address": "68 Nanjing Road, Heping District",
+      "address": "خیابان نانجینگ 68، منطقه هپینگ",
       "coordinates": {
         "lat": 39.1222,
         "lng": 117.2122
       },
       "phone": "+86 22 2339 8888",
-      "hours": "11:00-14:00, 17:00-21:30",
-      "description": "High-end restaurant serving refined Tianjin cuisine with elegant atmosphere.",
+      "hours": "11:00-14:00، 17:00-21:30",
+      "description": "رستوران لوکس با سرو غذاهای ظریف تیانجین و فضایی شیک.",
       "dishHighlights": [
-        "Braised prawns",
-        "Whole steamed fish",
-        "Tianjin-style squid"
+        "میگوی آبپز",
+        "ماهی بخارپز کامل",
+        "ماهی مرکب به سبک تیانجین"
       ],
       "tags": [
-        "fine-dining",
-        "tianjin-cuisine",
-        "special-occasion"
+        "غذای لوکس",
+        "غذای تیانجین",
+        "مناسبت خاص"
       ],
       "imageUrl": "/img/ext/2ad92b97c0ec.webp"
     },
     {
       "id": "tianjin-5",
       "name": "红旗饭庄",
-      "nameEn": "Hongqi Restaurant",
+      "nameEn": "رستوران هنگچی",
       "type": "local",
-      "cuisine": "Tianjin",
+      "cuisine": "تیانجین",
       "avgPrice": 100,
       "rating": 4.5,
-      "address": "158 Weining Road, Hexi District",
+      "address": "خیابان وینینگ 158، منطقه هکسی",
       "coordinates": {
         "lat": 39.1022,
         "lng": 117.2222
       },
       "phone": "+86 22 2835 8888",
       "hours": "10:30-21:30",
-      "description": "Historic Tianjin restaurant known for traditional local dishes.",
+      "description": "رستوران تاریخی تیانجین که به غذاهای محلی سنتی معروف است.",
       "dishHighlights": [
-        "Eight-delight chicken",
-        "Braised pork belly",
-        "Fried dough twists"
+        "مرغ هشت لذت",
+        "خوک شکمی آب‌پز",
+        "چای‌دوگ"
       ],
       "tags": [
-        "local",
-        "tianjin-cuisine",
-        "historic",
-        "traditional"
+        "محلی",
+        "غذای تیانجین",
+        "تاریخی",
+        "سنتی"
       ],
       "imageUrl": "/img/ext/8bc02f8b0151.webp"
     },
     {
       "id": "tianjin-6",
       "name": "盛锡福",
-      "nameEn": "Sheng Xifu Hat Shop",
+      "nameEn": "فروشگاه کلاه شنگ شیفو",
       "type": "local",
-      "cuisine": "Tianjin",
+      "cuisine": "تیانجین",
       "avgPrice": 60,
       "rating": 4.4,
-      "address": "Nanshi Gate, Hebei District",
+      "address": "دروازه نانشی، ناحیه هبئی",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-18:00",
-      "description": "Traditional restaurant with famous hat-shaped pastries.",
+      "description": "رستوران سنتی با شیرینی‌های کلاه‌شکل معروف",
       "dishHighlights": [
-        "Hat-shaped pastries",
-        "Traditional Tianjin snacks",
-        "Congee"
+        "شیرینی‌های کلاه‌شکل",
+        "تنقلات سنتی تیانجین",
+        "فرنی"
       ],
       "tags": [
-        "local",
-        "historic",
-        "snacks",
-        "famous"
+        "محلی",
+        "تاریخی",
+        "تنقلات",
+        "معروف"
       ],
       "imageUrl": "/img/ext/51976567dbfc.webp",
       "phone": "+86 022  4322 6576"
@@ -1380,27 +1380,27 @@
     {
       "id": "tianjin-7",
       "name": "石头门坎",
-      "nameEn": "Shitou Menkan",
+      "nameEn": "شیتو منکان",
       "type": "local",
-      "cuisine": "Tianjin Vegetarian",
+      "cuisine": "غذای وگان تیانجین",
       "avgPrice": 50,
       "rating": 4.5,
-      "address": "Near Tianhou Temple, Ancient Culture Street",
+      "address": "نزدیک معبد تیانهو، خیابان فرهنگ باستانی",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.2022
       },
-      "hours": "10:00-20:00",
-      "description": "Famous vegetarian restaurant near the temple, known for meat-substitute dishes.",
+      "hours": "۱۰:۰۰-۲۰:۰۰",
+      "description": "رستوران معروف وگان نزدیک معبد، معروف برای غذاهای جایگزین گوشت.",
       "dishHighlights": [
-        "Vegetarian meat",
-        "Buddhist cuisine",
-        "Vegetable rolls"
+        "گوشت وگان",
+        "غذای بودایی",
+        "رول سبزیجات"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "buddhist",
+        "محلی",
+        "وگان",
+        "بودایی",
         "temple-area"
       ],
       "imageUrl": "/img/ext/4594fef09610.webp",
@@ -1449,37 +1449,37 @@
       },
       "phone": "+86 22 2333 1888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "Historic restaurant with Russian influence, serving fusion cuisine.",
+      "description": "رستورانی تاریخی با تأثیر فرهنگی روسی که غذاهای فیوژن سرو می‌کند.",
       "dishHighlights": [
-        "Russian-style dishes",
-        "Western pastries",
-        "Tianjin classics"
+        "غذاهای به سبک روسی",
+        "شیرینی‌های غربی",
+        "غذاهای کلاسیک تیانجین"
       ],
       "tags": [
-        "fine-dining",
-        "russian",
-        "fusion",
-        "historic"
+        "رستوران لوکس",
+        "روسی",
+        "فیوژن",
+        "تاریخی"
       ],
       "imageUrl": "/img/ext/1f4e8a98b685.webp"
     },
     {
       "id": "tianjin-10",
       "name": "崩豆张",
-      "nameEn": "Bengdou Zhang",
+      "nameEn": "بنگدو ژانگ",
       "type": "local",
-      "cuisine": "Tianjin Snacks",
+      "cuisine": "تنقلات تیانجین",
       "avgPrice": 30,
       "rating": 4.4,
-      "address": "Nanshi Gate area",
+      "address": "منطقه دروازه نانشی",
       "coordinates": {
         "lat": 39.1522,
         "lng": 117.1922
       },
       "hours": "09:00-19:00",
-      "description": "Famous for crispy soybeans and nuts, a traditional Tianjin snack.",
+      "description": "مشهور به سویای ترد و آجیل، یک تنقلات سنتی تیانجین",
       "dishHighlights": [
-        "Crispy soybeans",
+        "سویای ترد",
         "Fried beans",
         "Mixed nuts"
       ],
@@ -3131,90 +3131,90 @@
     {
       "type": "ambulance",
       "name": "天津急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals have English interpretation"
     },
     {
       "type": "police",
       "name": "天津市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "天津医科大学总医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Medical University General Hospital",
       "phone": "+86 22 6036 2222",
-      "address": "Guangzhou",
+      "address": "154 Anshan Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2022
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "hospital",
       "name": "天津市第一中心医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin First Central Hospital",
       "phone": "+86 22 2362 6600",
-      "address": "Guangzhou",
+      "address": "24 Fukang Road, Nankai District",
       "coordinates": {
         "lat": 39.1322,
         "lng": 117.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with English staff"
     },
     {
       "type": "tourist-police",
       "name": "天津旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Tourist Police",
       "phone": "+86 22 2303 1710",
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking tourist police"
     },
     {
       "type": "fire",
       "name": "天津消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Tianjin Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "美国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Tianjin",
       "phone": "+86 22 2318 8888",
-      "address": "Guangzhou",
+      "address": "No. 46 Nanjing Road, Heping District",
       "coordinates": {
         "lat": 39.1122,
         "lng": 117.2122
       },
-      "notes": "For Singapore citizens"
+      "notes": "Located in Tianjin's main tourist area"
     },
     {
       "type": "embassy",
       "name": "英国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate General Tianjin",
       "phone": "+86 22 2318 9000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Silver Tower, 56 Nanjing Road",
+      "notes": "For UK citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "法国驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate General Tianjin",
       "phone": "+86 22 2312 3000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "5th Floor, Friendship Pavilion",
+      "notes": "For French citizens in Tianjin region"
     },
     {
       "type": "embassy",
       "name": "日本驻天津总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate General Tianjin",
       "phone": "+86 22 2313 0015",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Jiangmen Road, Heping District",
+      "notes": "For Japanese citizens in Tianjin region"
     }
   ],
   "quickFacts": {

@@ -9,14 +9,14 @@
     "lng": 100.2676
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "ตาลี่ เมืองที่สวยงามในมณฑลยูนนาน ตั้งอยู่ท่ามกลางฉากหลังอันยิ่งใหญ่ของภูเขาชังซานและข้างทะเลสาบเออร์ไห่ที่ใสดุจคริสตัล เป็นบ้านของชนกลุ่มน้อยไป๋ที่มีประวัติศาสตร์ 1,000 ปี เป็นที่รู้จักจากถนนหินก้อนกรวด สถาปัตยกรรมไป๋แบบดั้งเดิม และวัฒนธรรมท้องถิ่นที่มีชีวิตชีวา บรรยากาศที่ผ่อนคลายเหมาะสำหรับการปั่นจักรยาน เดินป่า และดื่มด่ำวัฒนธรรม",
+  "description": "Dali is a picturesque town in Yunnan province, set against the dramatic backdrop of Cangshan Mountains and beside the crystal-clear Erhai Lake. Home to the Bai ethnic minority with 1,000 years of history. Known for cobblestone streets, traditional Bai architecture, and vibrant local culture. A laid-back atmosphere perfect for cycling, hiking, and cultural immersion.",
   "coverImage": "/img/ext/4e2e5e513a4d.webp",
   "highlights": [
-    "ทะเลสาบเอ๋อไห่ - ปั่นจักรยานและทิวทัศน์",
-    "เจดีย์สามต้นแห่งต้าหลี่ - วัดพุทธ",
-    "เมืองเก่าต้าหลี่ - สถาปัตยกรรมไป๋ดั้งเดิม",
-    "ตลาดซีโจว - วัฒนธรรมไป๋ท้องถิ่น",
-    "ซวงหลาง - ถ่ายภาพริมทะเลสาบ"
+    "Erhai Lake - Scenic cycling and views",
+    "Three Pagodas of Dali - Buddhist temples",
+    "Dali Old Town - Traditional Bai architecture",
+    "Xizhou Market - Local Bai culture",
+    "Shuanglang - Lakeside photography"
   ],
   "climate": {
     "type": "Subtropical highland",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "18-25C (64-77F)",
     "avgWinterTemp": "8-15C (46-59F)",
-    "tips": "ฤดูใบไม้ผลิและฤดูใบไม้ร่วงดีที่สุด ฤดูร้อนเย็นแต่ฝนตก ฤดูหนาวแห้งและอบอุ่น รังสียูวีแรง ใช้ครีมกันแดด"
+    "tips": "Spring (March-May) is flower season with mild weather. Autumn (Sept-Oct) has clear skies and comfortable temps. Summer is rainy but green. Winter is dry and sunny but cold. Bring layers - temperature swings daily."
   },
   "restaurants": [
     {
@@ -576,29 +576,29 @@
     {
       "id": "dali-18",
       "name": "青梅酒铺",
-      "nameEn": "Plum Wine Shop",
+      "nameEn": "ร้านไวน์พลัม",
       "type": "local",
-      "cuisine": "Bai Bar",
+      "cuisine": "บาร์ไป",
       "avgPrice": 40,
       "rating": 4.5,
-      "address": "Foreigners Street, Dali Old Town",
+      "address": "ถนนชาวต่างชาติ เมืองเก่าตาลี",
       "coordinates": {
         "lat": 25.6922,
         "lng": 100.1572
       },
       "hours": "14:00-24:00",
-      "description": "Cozy bar specializing in local plum wine and fruit wines made from Yunnan's fresh fruits.",
+      "description": "บาร์อบอุ่นที่เชี่ยวชาญในไวน์พลัมท้องถิ่นและไวน์ผลไม้ที่ทำจากผลไม้สดของยูนนาน",
       "dishHighlights": [
-        "Plum wine",
-        "Raspberry wine",
-        "Rose wine",
-        "Local craft beer"
+        "ไวน์พลัม",
+        "ไวน์ราสเบอร์รี่",
+        "ไวน์กุหลาบ",
+        "เบียร์หมักพื้นบ้าน"
       ],
       "tags": [
-        "local",
-        "bar",
-        "wine",
-        "cozy"
+        "ท้องถิ่น",
+        "บาร์",
+        "ไวน์",
+        "อบอุ่น"
       ],
       "star": 0,
       "diamond": 0,
@@ -608,9 +608,9 @@
     {
       "id": "dali-19",
       "name": "当地烧烤一条街",
-      "nameEn": "Local BBQ Street",
+      "nameEn": "ถนนบีบีคิวท้องถิ่น",
       "type": "street",
-      "cuisine": "BBQ",
+      "cuisine": "บีบีคิว",
       "avgPrice": 40,
       "rating": 4.4,
       "address": "Dali Old Town, south gate area",
@@ -686,15 +686,15 @@
       "description": "Local specialty shop at Xizhou market serving various Bai-style cold salads with fresh vegetables and herbs.",
       "dishHighlights": [
         "Cold radish salad",
-        "Bai style potato salad",
-        "Pickled cucumber",
-        "Herb salad"
+        "สลัดมันฝรั่งสไตล์ไป๋",
+        "แตงกวาดอง",
+        "สลัดสมุนไพร"
       ],
       "tags": [
-        "local",
-        "vegetarian",
-        "market",
-        "healthy"
+        "ท้องถิ่น",
+        "มังสวิรัติ",
+        "ตลาด",
+        "สุขภาพดี"
       ],
       "star": 0,
       "diamond": 0,
@@ -704,29 +704,29 @@
     {
       "id": "dali-22",
       "name": "烤全羊",
-      "nameEn": "Roast Whole Lamb",
+      "nameEn": "ลูกแกะย่างทั้งตัว",
       "type": "local",
-      "cuisine": "Yunnan BBQ",
+      "cuisine": "อาหารยูนนานปิ้งย่าง",
       "avgPrice": 150,
       "rating": 4.7,
-      "address": "Dali Countryside, near Cangshan",
+      "address": "ชนบทต้าหลี่ ใกล้เขาเฉงซาน",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1172
       },
       "hours": "11:00-22:00",
-      "description": "Traditional whole lamb roasting experience in scenic countryside setting, perfect for groups.",
+      "description": "ประสบการณ์ลูกแกะย่างทั้งตัวแบบดั้งเดิมในบรรยากาศชนบทที่สวยงาม เหมาะสำหรับกลุ่ม",
       "dishHighlights": [
-        "Roast whole lamb",
-        "Mutton soup",
-        "Grilled lamb chops",
-        "Countryside scenery"
+        "ลูกแกะย่างทั้งตัว",
+        "ซุปแกะ",
+        "ซีกแกะย่าง",
+        "ทิวทัศน์ชนบท"
       ],
       "tags": [
-        "local",
-        "bbq",
-        "group",
-        "specialty"
+        "ท้องถิ่น",
+        "บาร์บีคิว",
+        "กลุ่ม",
+        "พิเศษ"
       ],
       "star": 0,
       "diamond": 0,
@@ -736,9 +736,9 @@
     {
       "id": "dali-23",
       "name": "银桥米线馆",
-      "nameEn": "Yinqiao Rice Noodle Shop",
+      "nameEn": "ร้านบะหมี่ยินเชียว",
       "type": "local",
-      "cuisine": "Yunnan Rice Noodles",
+      "cuisine": "บะหมี่ยูนนาน",
       "avgPrice": 20,
       "rating": 4.5,
       "address": "Yinqiao Town, Dali",
@@ -747,18 +747,18 @@
         "lng": 100.0872
       },
       "hours": "07:00-15:00",
-      "description": "Local spot famous for rice noodles in rich broth, popular with locals and in-the-know travelers.",
+      "description": "ร้านท้องถิ่นที่มีชื่อเสียงเรื่องบะหมี่ในซุปเข้มข้น ได้รับความนิยมจากคนท้องถิ่นและนักท่องเที่ยวที่รู้จัก",
       "dishHighlights": [
-        "Beef rice noodles",
-        "Pork rice noodles",
-        "Pickled vegetables",
-        "Chili oil"
+        "บะหมี่เนื้อวัว",
+        "บะหมี่เนื้อหมู",
+        "ผักดอง",
+        "น้ำมันพริก"
       ],
       "tags": [
-        "local",
-        "noodles",
-        "budget",
-        "breakfast"
+        "ท้องถิ่น",
+        "ก๋วยเตี๋ยว",
+        "ประหยัด",
+        "อาหารเช้า"
       ],
       "star": 0,
       "diamond": 0,
@@ -770,26 +770,26 @@
       "name": "双廊咖啡馆",
       "nameEn": "Shuanglang Lakeside Cafe",
       "type": "cafe",
-      "cuisine": "Western/Yunnan Fusion",
+      "cuisine": "ฟิวชันตะวันตก/ยูนนาน",
       "avgPrice": 50,
       "rating": 4.6,
-      "address": "Shuanglang Waterfront",
+      "address": "ริมน้ำซวงหลาง",
       "coordinates": {
         "lat": 25.8822,
         "lng": 100.1572
       },
       "hours": "08:00-22:00",
-      "description": "Cozy lakeside cafe with Erhai views, serving Yunnan coffee, Western breakfasts, and homemade pastries.",
+      "description": "คาเฟ่ริมทะเลสาบเออไห่ บริการกาแฟยูนนาน อาหารเช้าแบบตะวันตก และขนมอบเอง",
       "dishHighlights": [
-        "Yunnan coffee",
-        "Pancakes with fruit",
-        "Fresh smoothies",
-        "Cheesecake"
+        "กาแฟยูนนาน",
+        "แพนเค้กผลไม้",
+        "สมูทตี้สดใหม่",
+        "ชีสเค้ก"
       ],
       "tags": [
-        "cafe",
-        "scenic",
-        "western",
+        "คาเฟ่",
+        "วิวสวย",
+        "แบบตะวันตก",
         "cozy"
       ],
       "star": 0,
@@ -2028,14 +2028,54 @@
     }
   ],
   "culturalTips": [
-    "เมืองดาลีเป็นจุดน่าสนใจทางวัฒนธรรมที่มีอดีตอันยาวนานและมีสถาปัตยกรรมที่สวยงาม",
-    "สถานที่ท่องเที่ยวยอดนิยมในดาลีรวมถึงวัดสามต้นสนและทะเลสาบเอออร์ไฮ",
-    "ดาลีมีสถานที่ท่องเที่ยวทางประวัติศาสตร์ที่สำคัญ เช่น ปราสาทดาลี",
-    "ดาลีมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงาม เช่น ทะเลสาบเอออร์ไฮ",
-    "ดาลีมีสถานที่ท่องเที่ยวทางประวัติศาสตร์ที่สำคัญ เช่น วัดสามต้นสน",
-    "ดาลีมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงาม เช่น ภูเขาจิงซื่อ",
-    "ดาลีมีสถานที่ท่องเที่ยวทางประวัติศาสตร์ที่สำคัญ เช่น ปราสาทดาลี",
-    "ดาลีมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงาม เช่น ภูเขาหยวนยาง",
+    {
+      "category": "bai",
+      "title": "Bai Culture",
+      "content": "Dali is home to the Bai ethnic minority. Respect local customs. The Bai have unique traditions including the 'Three-Angel' dress and tie-dye crafts. March Fair and绕三灵 festival are major events.",
+      "importance": "high"
+    },
+    {
+      "category": "cycling",
+      "title": "Erhai Cycling",
+      "content": "Cycling Erhai Lake is the signature experience. 120km around the lake. Start early, bring water and sunscreen. Rent bikes in Dali or Caicun. The eastern shore is less crowded.",
+      "importance": "high"
+    },
+    {
+      "category": "weather",
+      "title": "Mountain Weather",
+      "content": "Dali's weather changes quickly. Mountains cause localized weather systems. Even in summer, bring a jacket. Rain can appear suddenly. Spring flowers and autumn colors are spectacular.",
+      "importance": "medium"
+    },
+    {
+      "category": "etiquette",
+      "title": "Temple Etiquette",
+      "content": "When visiting Three Pagodas and temples, dress modestly covering shoulders and knees. Remove hats in temples. Don't point feet at Buddha images. Walk clockwise around pagodas.",
+      "importance": "medium"
+    },
+    {
+      "category": "tiedye",
+      "title": "Bai Tie-dye Culture",
+      "content": "The Bai are famous for traditional tie-dye (扎染), using natural plant dyes on cotton fabric. Each pattern has symbolic meaning. Zhoucheng village is the center of this craft. Look for butterfly, fish, and flower patterns.",
+      "importance": "high"
+    },
+    {
+      "category": "tea",
+      "title": "Yunnan Tea Culture",
+      "content": "Yunnan is famous for Pu'er tea. Dali has tea houses where you can experience tea ceremony. The Bai Three Tea Ceremony (三道茶) represents life flavors: bitter, sweet, and aftertaste. Tea is an important part of local social life.",
+      "importance": "medium"
+    },
+    {
+      "category": "festivals",
+      "title": "Bai Festivals",
+      "content": "Major Bai festivals include: March Fair (三月街) - horse trading and trading fair in Dali; Rao San Ling (绕三灵) - pilgrimage to Three Sacred Places; Torch Festival (火把节) - lighting torches to ward off pests. Summer and early autumn are festival seasons.",
+      "importance": "high"
+    },
+    {
+      "category": "architecture",
+      "title": "Bai Architecture",
+      "content": "Bai houses feature white walls, grey tiles, and horse-head roofs. Three-in-one courtyards (三坊一照壁) are typical. Look for the精美的门楼 (ornate gate towers) and paintings on walls inside courtyards.",
+      "importance": "medium"
+    },
     {
       "category": "clothing",
       "title": "Bai Traditional Clothing",
@@ -2048,140 +2088,225 @@
       "content": "The Bai follow a mix of Buddhism, Taoism, and Benzhu (本主) worship - worship of local deities. Every village has a Benzhu temple. The Three Pagodas are important Buddhist sites. Be respectful when observing rituals.",
       "importance": "low"
     },
-    "ในดาลีมีการแสดงศิลปะและดนตรีพื้นบ้านที่น่าสนใจมากมาย",
-    "เช่นเดียวกับการเดินทางไปยังดาลี คุณสามารถเช่ารถจักรยานเพื่อสำรวจเมืองได้",
-    "ดาลีมีสภาพอากาศที่เย็นสบายตลอดปี ทำให้เหมาะสำหรับการท่องเที่ยวตลอดทั้งปี",
-    "ชาวบ้านในดาลีมีวัฒนธรรมที่เปิดเผยและเป็นมิตรกับนักท่องเที่ยว",
-    "ในดาลีมีตลาดท้องถิ่นที่น่าสนใจมากมาย ที่คุณสามารถซื้อของที่ระลึกและอาหารพื้นบ้านได้",
-    "ดาลีมีอาหารพื้นบ้านที่อร่อยและเป็นเอกลักษณ์ เช่น น้ำพริกดาลีและปูเส้น",
-    "ในดาลีมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงาม เช่น ภูเขาจิงซื่อและภูเขาหยวนยาง",
-    "ดาลีมีวัฒนธรรมที่หลากหลาย โดยเฉพาะอย่างยิ่งการแต่งกายและเครื่องประดับพื้นบ้าน",
-    "ในดาลีมีการจัดงานเทศกาลท้องถิ่นที่น่าสนใจ เช่น งานเทศกาลไฟ",
-    "ดาลีมีสถานที่พักที่หลากหลาย เช่น โรงแรมริมทะเลสาบและเกสต์เฮาส์พื้นบ้าน",
-    "ในดาลีมีการประกอบพิธีกรรมทางศาสนาที่น่าสนใจ เช่น พิธีบูชาภูเขา",
-    "ดาลีมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงาม เช่น ทะเลสาบเอออร์ไฮ",
-    "ในดาลีมีการทำศิลปะและหัตถกรรมที่น่าสนใจ เช่น การทอผ้าและการสาน",
-    "ดาลีมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงาม เช่ย่อย เช่น ภูเขาจิงซื่อ",
-    "ในดาลีมีการแสดงศิลปะพื้นบ้านที่น่าสนใจ เช่น การแสดงโขน",
-    "ดาลีมีสถานที่ท่องเที่ยวทางประวัติศาสตร์ที่สำคัญ เช่น วัดสามต้นสน",
-    "ดาลีมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงาม เช่น ภูเขาหยวนยาง"
+    {
+      "category": "music",
+      "title": "Bai Music",
+      "content": "Bai opera (白剧) combines singing, dancing, and acting. Traditional instruments include the Sanxian (三弦) and Horse-head fiddle. You can catch performances at Dali Ancient Town or during festivals.",
+      "importance": "low"
+    },
+    {
+      "category": "food",
+      "title": "Bai Food Culture",
+      "content": "Bai cuisine features fresh vegetables, mushrooms, and fish. Rushan (乳扇) is stretched milk cheese. Bender (凉鸡) is cold chicken. Try local specialties at markets: Baba (粑粑) flatbread, Ersi (饵丝) rice noodles, and Mi Liangxia (米凉虾) shrimp-shaped jelly dessert.",
+      "importance": "high"
+    },
+    {
+      "category": "crafts",
+      "title": "Bai Silver Crafts",
+      "content": "Bai silver smithing is famous for intricate jewelry and decorative items. Silver is believed to have health benefits. Popular items include silver bracelets, hair ornaments, and tea accessories. Authentic silver has high purity.",
+      "importance": "low"
+    },
+    {
+      "category": "wedding",
+      "title": "Bai Wedding Customs",
+      "content": "Bai weddings feature unique customs including the 'Jiao Zhai' (咬嫁) ritual where the bride bites the groom's ear. Wedding feasts are elaborate multi-course affairs. The bride changes into multiple costumes during the ceremony.",
+      "importance": "low"
+    },
+    {
+      "category": "fishing",
+      "title": "Erhai Fishing Culture",
+      "content": "Fishing has been central to Erhai life for centuries. Traditional fishing methods include using cormorants (鸬鹚). Some fishing villages still practice these methods. Fish dishes are staples of local cuisine.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialect",
+      "title": "Bai Language",
+      "content": "The Bai language (白语) is tonal and completely different from Mandarin. Many locals speak both Bai and Mandarin. Learning a few Bai phrases like 'Ni hao' (hello) and ' Xie xie' (thank you) in Bai will be appreciated.",
+      "importance": "low"
+    },
+    {
+      "category": "photography",
+      "title": "Photography Tips",
+      "content": "Dali offers excellent photography opportunities: sunrise at Erhai Lake, the pink wall in Xizhou, Cangshan Mountain reflections, and Bai people in traditional clothing. The best light is early morning and late afternoon. Bring a tripod for night shots of the Three Pagodas.",
+      "importance": "medium"
+    },
+    {
+      "category": "shopping",
+      "title": "Dali Shopping",
+      "content": "Dali is famous for tie-dye products, silver jewelry, tea (especially Pu'er), and marble. The best shopping is at the morning market in Xizhou and Zhoucheng for tie-dye, and the Foreigners Street in Dali Old Town for silver and souvenirs. Bargaining is expected in markets.",
+      "importance": "medium"
+    },
+    {
+      "category": "health",
+      "title": "Altitude and Health",
+      "content": "Dali sits at about 1972m elevation. Some visitors may experience mild altitude sickness. Stay hydrated, avoid strenuous activity on arrival, and eat lightly. The medical facilities in Dali are adequate for basic health issues.",
+      "importance": "medium"
+    },
+    {
+      "category": "language",
+      "title": "English in Dali",
+      "content": "English is limited in Dali outside tourist areas. Learning a few Mandarin phrases helps. Many young people in Dali Old Town and Shuanglang speak basic English. Translation apps are helpful for communicating with older locals.",
+      "importance": "medium"
+    },
+    {
+      "category": "sustainability",
+      "title": "Environmental Awareness",
+      "content": "Erhai Lake's ecosystem is fragile. Avoid single-use plastics, don't swim in restricted areas, and use eco-friendly transportation. Several initiatives promote lake protection. Be a responsible tourist.",
+      "importance": "high"
+    },
+    {
+      "category": "nanzhao",
+      "title": "Nanzhao Kingdom Heritage",
+      "content": "Dali was the capital of the Nanzhao Kingdom (738-902 AD), one of the longest-ruling dynasties in Chinese history. The Three Pagodas, Nanzhao Island, and Weishan Ancient Town reflect this heritage. Understanding this history enriches the visit.",
+      "importance": "medium"
+    },
+    {
+      "category": "coffee",
+      "title": "Yunnan Coffee Culture",
+      "content": "Yunnan produces some of China's best coffee. Dali has several specialty coffee shops using locally grown beans. Try the Yunnan pour-over at cafes on Foreigners Street. Coffee plantations are nearby and offer tours.",
+      "importance": "low"
+    },
+    {
+      "category": "gay-friendly",
+      "title": "LGBTQ+ Friendly Destination",
+      "content": "Dali has a reputation as one of China's more LGBTQ+ friendly destinations, with a relatively open atmosphere and welcoming vibe. Several bars and cafes cater to the community. The laid-back atmosphere is generally accepting.",
+      "importance": "medium"
+    },
+    {
+      "category": "digital-nomad",
+      "title": "Digital Nomad Hub",
+      "content": "Dali has become a popular base for digital nomads and remote workers. Many cafes offer fast WiFi and quiet workspaces. Monthly apartment rentals are affordable. Coworking spaces are available in Dali Old Town.",
+      "importance": "medium"
+    },
+    {
+      "category": "nightlife",
+      "title": "Dali Nightlife",
+      "content": "Dali has a vibrant nightlife scene around Foreigners Street with bars, live music, and clubs. Shuanglang has a more relaxed evening atmosphere with lake-view bars. Most nightlife closes by midnight on weekdays.",
+      "importance": "low"
+    },
+    {
+      "category": "weather",
+      "title": "Best Time to Visit",
+      "content": "The best times to visit Dali are March-May (spring flower season) and September-November (clear skies, autumn colors). Summer (June-August) is rainy but green. Winter is dry and sunny but cold. Avoid Chinese holidays when tourist sites are crowded.",
+      "importance": "high"
+    }
   ],
   "emergencyContacts": [
     {
       "type": "ambulance",
       "name": "大理急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Dali People's Hospital has English interpreters"
     },
     {
       "type": "police",
       "name": "大理市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police in Dali Old Town"
     },
     {
       "type": "hospital",
       "name": "大理市第一人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali First People's Hospital",
       "phone": "+86 872 212 5465",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Main hospital in Dali"
     },
     {
       "type": "embassy",
       "name": "美国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Kunming",
       "phone": "+86 871 6364 1057",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming (nearest US consular services)",
+      "notes": "For US citizens in Dali region"
     },
     {
       "type": "hospital",
       "name": "大理州人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Prefecture People's Hospital",
       "phone": "+86 872 212 5075",
-      "address": "Guangzhou",
+      "address": "Yeyou Road, Dali City",
       "coordinates": {
         "lat": 25.6822,
         "lng": 100.1572
       },
-      "notes": "For Singapore citizens"
+      "notes": "Another major hospital with emergency services"
     },
     {
       "type": "tourist-police",
       "name": "大理旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Tourist Police",
       "phone": "+86 872 267 4110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police station in Dali Old Town"
     },
     {
       "type": "fire",
       "name": "大理消防",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Dali Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "Fire and rescue services"
     },
     {
       "type": "embassy",
       "name": "英国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "UK Consulate Kunming",
       "phone": "+86 871 6564 6689",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For UK citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australia Consulate Kunming",
       "phone": "+86 871 6856 2100",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Australian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "日本驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japan Consulate Kunming",
       "phone": "+86 871 6314 8288",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Japanese citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "法国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "France Consulate Kunming",
       "phone": "+86 871 6331 5889",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For French citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "德国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Germany Consulate Kunming",
       "phone": "+86 871 6312 5555",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For German citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canada Consulate Guangzhou",
       "phone": "+86 20 3888 0400",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "For Canadian citizens in Dali region"
     },
     {
       "type": "embassy",
       "name": "韩国驻昆明总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "South Korea Consulate Kunming",
       "phone": "+86 871 6566 2115",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Kunming",
+      "notes": "For Korean citizens in Dali region"
     }
   ],
   "quickFacts": {
@@ -2196,24 +2321,24 @@
     {
       "id": "erhai-lake",
       "name": "洱海",
-      "nameEn": "Hulun Lake",
+      "nameEn": "Erhai Lake",
       "category": "natural",
-      "description": "中国第五大淡水湖，面积2339平方公里，蒙古语意为海一样的湖。",
-      "address": "呼伦贝尔市新巴尔虎右旗",
+      "description": "A beautiful highland lake often called 'Sea of Clouds' offering scenic cycling paths, traditional fishing villages, and stunning mountain backdrops.",
+      "address": "Erhai Lake, Dali Bai Autonomous Prefecture",
       "coordinates": {
         "lat": 25.7522,
         "lng": 100.1872
       },
-      "openingHours": "全天",
-      "ticketPrice": "30元",
-      "recommendedVisitTime": "2-3小时",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (some scenic spots may charge)",
+      "recommendedVisitTime": "Half to full day",
       "highlights": [
-        "湖光山色",
-        "候鸟",
-        "日落",
+        "Cycling path around lake",
+        "Fisherman's village",
+        "Shuanglang village",
         "Wutai Lake view"
       ],
-      "tips": "夏季最佳，可品尝全鱼宴。",
+      "tips": "Rent a bicycle (40-80¥/day) to circle the lake. Start early to avoid tour buses. Best light for photos in early morning.",
       "image": "/img/ext/6faaa02aad08.webp",
       "phone": "+86 087 2 8699 3091"
     },
@@ -2317,22 +2442,22 @@
       "name": "苍山",
       "nameEn": "Cangshan Mountain",
       "category": "natural",
-      "description": "แถบภูเขาที่น่าตื่นตาตื่นใจทางด้านหลังเมือง Dali มีเส้นทางเดินป่า วัดโบราณ และมุมมองพาโนรามาของทะเลสาบ Erhai",
-      "address": "ภูเขา Cangshan ทางตะวันตกของ Dali",
+      "description": "A dramatic mountain range behind Dali with hiking trails, ancient temples, and panoramic views of Erhai Lake.",
+      "address": "Cangshan Mountain, west of Dali",
       "coordinates": {
         "lat": 25.6722,
         "lng": 100.1072
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "40 หยวน (รถพาหนะเข็นเพิ่มเติม)",
-      "recommendedVisitTime": "ครึ่งวันถึงวันเต็ม",
+      "ticketPrice": "40¥ (cable car extra)",
+      "recommendedVisitTime": "Half to full day",
       "highlights": [
-        "หัวยักษ์ 18 ยอด",
-        "ถนนเข็มขัดหยก",
-        "วัด Qiliang",
-        "ทุ่งหญ้าสูง"
+        "Giant's Head with 18 peaks",
+        "Jade Belt Road",
+        "Qiliang Temple",
+        "Alpine meadows"
       ],
-      "tips": "ขึ้นรถพาหนะเข็นเพื่อเดินป่าที่ง่ายขึ้น สภาพอากาศเปลี่ยนแปลงเร็ว - นำเสื้อผ้าชั้นในและเสื้อฝนไปด้วย เส้นทางเดินป่ามีเครื่องหมายอย่างดีแต่ช่วงสูง",
+      "tips": "Take the cable car up for easier hiking. Weather changes quickly - bring layers and rain gear. Hiking trail is well marked but steep.",
       "image": "/img/ext/38f44f1e4171.webp",
       "phone": "+86 087 2 5125 6111"
     },
@@ -2365,22 +2490,22 @@
       "name": "蝴蝶泉",
       "nameEn": "Butterfly Spring",
       "category": "natural",
-      "description": "บ่อน้ำอัศจรรย์ที่โอบล้อมด้วยต้นไม้โบราณ ที่มีความเกี่ยวข้องโดยเชิงดั้งเดิมกับฤดูผสมพันธุ์ของผีเสื้อในฤดูใบไม้ผลิ",
-      "address": "Butterfly Spring Park, ทางเหนือของเมือง Dali 20 กิโลเมตร",
+      "description": "A legendary spring surrounded by ancient trees, traditionally associated with butterfly mating season in spring.",
+      "address": "Butterfly Spring Park, 20km north of Dali",
       "coordinates": {
         "lat": 25.8522,
         "lng": 100.1272
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "1-2 ชั่วโมง",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "บ่อน้ำอัศจรรย์",
-        "นิทรรศการผีเสื้อ",
-        "การแสดงของชาว Bai",
-        "ต้นไม้โบราณ"
+        "Legendary spring",
+        "Butterfly exhibition",
+        "Bai performance",
+        "Ancient trees"
       ],
-      "tips": "เหมาะที่สุดในเดือนเมษายน-พฤษภาคมเมื่อผีเสื้อปรากฏจริง รวมกับการปั่นจักรยานรอบ Xizhou และทะเลสาบ Erhai ช่วงเวลาแสดง: 9:30, 11:00, 14:00, 15:30",
+      "tips": "Best in April-May when actual butterflies appear. Combine with Xizhou and Erhai Lake cycling. Performance times: 9:30, 11:00, 14:00, 15:30.",
       "image": "/img/ext/fd780ef70830.webp",
       "phone": "+86 087 2 5910 4245"
     },

@@ -9,14 +9,14 @@
     "lng": 106.9123
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "重慶は中国南西部にある山間の大都市で、長江上流にあります。山の景色、辛い四川料理、立体的な都市構造で知られています。重要な経済の中心地であり、歴史的な戦時首都でもありました。",
+  "description": "Chongqing, China's largest city by area, is a mountainous metropolis built on cliffs along the Yangtze and Jialing Rivers. Known as the 'Mountain City' and 'Fog City' for its dramatic terrain and misty climate. Birthplace of Sichuan cuisine and hot pot. A strategic inland port and commercial hub with a unique food culture.",
   "coverImage": "/img/ext/848a39eac953.webp",
   "highlights": [
-    "解放碑 - ビジネス地区",
-    "洪崖洞 - 崖に沿った吊り楼",
-    "三峡 - 長江クルーズ",
-    "磁器口 - 古代の陶器の町",
-    "大足石刻 - ユネスコ世界遺産"
+    "Jiefangbei - Business district",
+    "Hongya Dong - Cliff-side stilted houses",
+    "Three Gorges - Yangtze cruise",
+    "Ciqikou - Ancient pottery town",
+    "Dazu Rock Carvings - UNESCO World Heritage"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28-35C (82-95F)",
     "avgWinterTemp": "6-10C (43-50F)",
-    "tips": "春と秋が最適。 夏は蒸し暑い。 冬は湿冷で曇りがち。 霧が多い。 雨具を持参。"
+    "tips": "Summers are extremely hot and humid (40C possible). Winters are damp and cold. Best in spring and autumn. Always carry water in summer. Fog is common year-round."
   },
   "attractions": [
     {
@@ -418,25 +418,25 @@
     {
       "id": "happy-valley",
       "name": "重庆欢乐谷",
-      "nameEn": "Happy Valley Shenzhen",
+      "nameEn": "Chongqing Happy Valley",
       "category": "family",
       "image": "/img/ext/41e5039d2be0.webp",
-      "description": "Large amusement park with roller coasters, water rides, and performances for all ages.",
-      "address": "Overseas Chinese Town, Nanshan District",
+      "description": "Large amusement park with thrilling rides, water park, and entertainment shows for all ages.",
+      "address": "Yuzhong District",
       "coordinates": {
         "lat": 29.5822,
         "lng": 106.5182
       },
-      "openingHours": "09:30-22:00 (varies by season)",
-      "ticketPrice": "260¥ (full day)",
-      "recommendedVisitTime": "4-5 hours",
+      "openingHours": "10:00-18:00 (extended in summer)",
+      "ticketPrice": "180¥ (full day), 260¥ (includes water park)",
+      "recommendedVisitTime": "Full day",
       "highlights": [
-        "Mountain Flying coaster",
-        "Swing carousel",
-        "Water slides",
-        "Evening shows"
+        "Drop tower",
+        "Roller coasters",
+        "Water park",
+        "Live shows"
       ],
-      "tips": "Weekday visits avoid crowds. Height restrictions on rides. Re-entry allowed with hand stamp.",
+      "tips": "Weekdays less crowded. Summer for water park. Express passes available. Lockers for bags.",
       "phone": "+86 023  9447 1585"
     },
     {
@@ -453,12 +453,12 @@
       },
       "openingHours": "10:00-22:00 (summer only)",
       "ticketPrice": "180¥",
-      "recommendedVisitTime": "4-5 hours",
+      "recommendedVisitTime": "4-5時間",
       "highlights": [
-        "Wave pool",
-        "Latex slides",
-        "Lazy river",
-        "Beach area"
+        "波のプール",
+        "ラテックススライダー",
+        "のんびり川下り",
+        "ビーチエリア"
       ],
       "tips": "Go early to avoid lines. Bring sunscreen. Lockers required. Food inside expensive.",
       "phone": "+86 023  6687 6948"
@@ -466,73 +466,73 @@
     {
       "id": "science-museum",
       "name": "重庆科技馆",
-      "nameEn": "Chongqing Science Museum",
+      "nameEn": "重慶科学博物館",
       "category": "family",
       "image": "/img/ext/0f7bef061ca4.webp",
-      "description": "Modern science museum with interactive exhibits on physics, technology, and natural history.",
-      "address": "Jiangbei District",
+      "description": "物理学、テクノロジー、自然史に関するインタラクティブな展示がある近代的な科学博物館です。",
+      "address": "江北地区",
       "coordinates": {
         "lat": 29.5822,
         "lng": 106.5782
       },
-      "openingHours": "09:30-17:00 (Closed Monday)",
-      "ticketPrice": "Free (some exhibitions extra)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:30-17:00（月曜定休）",
+      "ticketPrice": "無料（一部の展示は有料）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "IMAX theater",
-        "4D simulator",
-        "Children's zone",
-        "Space exhibit"
+        "IMAXシアター",
+        "4Dシミュレーター",
+        "子供ゾーン",
+        "宇宙展示"
       ],
-      "tips": "Best for families with children. Book IMAX tickets online. Allow half day.",
+      "tips": "子供連れの家族に最適です。IMAXのチケットはオンラインで予約してください。半日程度を見込んでください。",
       "phone": "+86 023  1102 4686"
     },
     {
       "id": "three-gorges-museum",
       "name": "三峡博物馆",
-      "nameEn": "Three Gorges Museum",
+      "nameEn": "三峡博物館",
       "category": "cultural",
       "image": "/img/ext/de0ae28326d5.webp",
-      "description": "National museum showcasing the history and culture of the Three Gorges region and ancient Ba-Yu civilization.",
-      "address": "People's Square, Yuzhong District",
+      "description": "国立博物館で、三峡地域と古代巴渝文明の歴史と文化を紹介しています。",
+      "address": "渝中区人民広場",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5682
       },
-      "openingHours": "09:00-17:00 (Closed Monday)",
-      "ticketPrice": "Free (ID required)",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "09:00-17:00（月曜休館）",
+      "ticketPrice": "無料（身分証明書必要）",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Three Gorges history",
-        "Ancient artifacts",
-        "Dinosaur fossils",
-        "Interactive exhibits"
+        "三峡の歴史",
+        "古代の遺物",
+        "恐竜の化石",
+        "インタラクティブな展示"
       ],
-      "tips": "Combine with People's Park and People's Hall nearby. Audio guides available. Photography restricted.",
+      "tips": "近くの人民公園と人民大会堂と組み合わせて訪問してください。音声ガイド利用可能。写真撮影は制限されています。",
       "phone": "+86 23 6367 9011"
     },
     {
       "id": "wulong-furong-caves",
       "name": "武隆芙蓉洞",
-      "nameEn": "Wulong Furong Cave",
+      "nameEn": "武隆芙蓉洞",
       "category": "natural",
       "image": "/img/ext/8f53568883c2.webp",
-      "description": "One of the largest and most beautiful karst caves in China, featuring spectacular stalactites, stalagmites, and underground rivers.",
-      "address": "Wulong County, 200km from Chongqing",
+      "description": "中国で最も大きく、最も美しいカルスト洞窟の一つで、壮大な鍾乳石、石筍、地下川が特徴です。",
+      "address": "武隆県、重慶から200km",
       "coordinates": {
         "lat": 29.3322,
         "lng": 107.9282
       },
       "openingHours": "08:30-17:00",
       "ticketPrice": "120¥",
-      "recommendedVisitTime": "2-3 hours",
+      "recommendedVisitTime": "2-3時間",
       "highlights": [
-        "Massive cave chambers",
-        "Colorful formations",
-        "Underground river",
-        "Crystal formations"
+        "巨大な洞窟空間",
+        "カラフルな地形",
+        "地下川",
+        "水晶地形"
       ],
-      "tips": "Bring a light jacket - cave temperature is cool. Photography allowed but no flash. Combine with Three Natural Bridges visit.",
+      "tips": "軽いジャケットを持参してください - 洞窟内の温度は涼しいです。写真撮影は可能ですが、フラッシュは禁止です。三つの天然橋の見学と組み合わせてください。",
       "phone": "+86 023  2048 1648"
     },
     {
@@ -541,22 +541,22 @@
       "nameEn": "Fusheng Teahouse",
       "category": "cultural",
       "image": "/img/ext/2959b51a6983.webp",
-      "description": "Traditional Chongqing teahouse dating back to Qing Dynasty, offering authentic tea service and mahjong in historic setting.",
-      "address": "Near People's Park, Yuzhong District",
+      "description": "清王朝時代までさかのぼる伝統的な重慶の茶館で、歴史的な雰囲気の中で本格的な茶のサービスと麻雀を楽しむことができます。",
+      "address": "人民公園近く、渝中区",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5682
       },
       "openingHours": "08:00-22:00",
-      "ticketPrice": "30¥ (includes tea)",
-      "recommendedVisitTime": "1-2 hours",
+      "ticketPrice": "30¥（お茶込み）",
+      "recommendedVisitTime": "1-2時間",
       "highlights": [
         "Traditional atmosphere",
         "Mahjong tables",
         "Various teas",
         "Old Chongqing style"
       ],
-      "tips": "Best experienced in the morning. Try local Sichuan tea. Join locals for mahjong if you know the game. Budget for tipping.",
+      "tips": "午前中に訪れるのが最適です。地元の四川茶を試してみてください。麻雀ができる場合は地元の人々と一緒に遊んでみてください。チップの予算を立ててください。",
       "phone": "+86 023  7664 4434"
     },
     {
@@ -2158,8 +2158,8 @@
       ],
       "tags": [
         "文艺",
-        "安静",
-        "咖啡"
+        "静か",
+        "コーヒー"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/23162d045f91.webp"
@@ -2172,23 +2172,23 @@
       "cuisine": "毛血旺",
       "avgPrice": 54,
       "rating": 4.4,
-      "address": "重庆市新城区美食街12号",
+      "address": "重慶市新城區美食街12号",
       "coordinates": {
         "lat": 29.5781,
         "lng": 106.5287
       },
       "phone": "+86 023 89354432",
       "hours": "09:00-21:00",
-      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "description": "重慶の地元に愛される毛血旺の店で、味は本格的で価格帯も手頃",
       "dishHighlights": [
-        "辣子鸡",
+        "辣子鶏",
         "小面",
         "酸辣粉"
       ],
       "tags": [
-        "本地人爱去",
-        "家常菜",
-        "隐藏美食"
+        "地元の人のおすすめ",
+        "家庭料理",
+        "隠れたグルメ"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/f450e2dc10fd.webp"
@@ -2196,7 +2196,7 @@
     {
       "id": "chongqing-47",
       "name": "传统毛血旺",
-      "nameEn": "传统毛血旺 (毛血旺)",
+      "nameEn": "伝統毛血旺 (毛血旺)",
       "type": "street",
       "cuisine": "毛血旺",
       "avgPrice": 38,
@@ -2208,14 +2208,14 @@
       },
       "phone": "+86 023 24301296",
       "hours": "09:00-21:00",
-      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "description": "重慶の地元に人気の毛血旺店。本格的な味で、価格も手頃です",
       "dishHighlights": [
         "酸辣粉",
-        "辣子鸡",
-        "火锅"
+        "辣子鶏",
+        "火鍋"
       ],
       "tags": [
-        "路边摊",
+        "屋台",
         "夜市",
         "小吃"
       ],
@@ -2225,7 +2225,7 @@
     {
       "id": "chongqing-49",
       "name": "传统毛血旺",
-      "nameEn": "传统毛血旺 (毛血旺)",
+      "nameEn": "伝統毛血旺 (毛血旺)",
       "type": "local",
       "cuisine": "毛血旺",
       "avgPrice": 59,
@@ -2237,16 +2237,16 @@
       },
       "phone": "+86 023 23522061",
       "hours": "11:00-14:00, 17:00-21:30",
-      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "description": "重慶の地元に人気の毛血旺店。本格的な味で、価格も手頃です",
       "dishHighlights": [
         "毛血旺",
         "辣子鸡",
         "泉水鸡"
       ],
       "tags": [
-        "性价比高",
-        "老字号",
-        "社区老店"
+        "コストパフォーマンスが高い",
+        "伝統の老舗",
+        "町の歴史ある店"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/2945ccca4f9c.webp"
@@ -2254,27 +2254,27 @@
     {
       "id": "chongqing-51",
       "name": "老重庆酸辣粉",
-      "nameEn": "老重庆酸辣粉 (酸辣粉)",
+      "nameEn": "老重慶酸辣粉（酸辣粉）",
       "type": "local",
       "cuisine": "酸辣粉",
       "avgPrice": 42,
       "rating": 4.3,
-      "address": "重庆市老城区美食街149号",
+      "address": "重慶市旧市街美食街149号",
       "coordinates": {
         "lat": 29.5298,
         "lng": 106.516
       },
       "phone": "+86 023 54771368",
       "hours": "09:00-21:00",
-      "description": "重庆本地人推荐的酸辣粉店，味道正宗，价格实惠",
+      "description": "重慶の方がおすすめの酸辣粉店。本場の味で、価格も手頃",
       "dishHighlights": [
         "毛血旺",
         "泉水鸡",
         "辣子鸡"
       ],
       "tags": [
-        "社区老店",
-        "隐藏美食",
+        "町の歴史ある店",
+        "隠れたグルメ",
         "性价比高"
       ],
       "diamond": 0,
@@ -3222,109 +3222,109 @@
     {
       "type": "ambulance",
       "name": "重庆急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chongqing Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "Major hospitals can arrange English interpretation"
     },
     {
       "type": "police",
       "name": "重庆市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chongqing Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at major attractions"
     },
     {
       "type": "hospital",
       "name": "重庆医科大学附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Chongqing Medical University",
       "phone": "+86 23 6881 1360",
-      "address": "Guangzhou",
+      "address": "1 Youyi Road, Yuzhong District",
       "coordinates": {
         "lat": 29.5422,
         "lng": 106.5582
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff available"
     },
     {
       "type": "embassy",
       "name": "美国驻成都总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Chengdu",
       "phone": "+86 28 8558 3992",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Chengdu (nearest US consular services)",
+      "notes": "For US citizens in Chongqing region"
     },
     {
       "type": "fire",
       "name": "重庆市消防救援支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chongqing Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "For fire emergencies and rescue operations"
     },
     {
       "type": "tourist-info",
       "name": "重庆旅游咨询服务中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chongqing Tourist Information Center",
       "phone": "12345",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist complaints and information service"
     },
     {
       "type": "police-special",
       "name": "重庆旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chongqing Tourist Police",
       "phone": "+86 23 6375 1110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Jiefangbei Police Station, Yuzhong District",
+      "notes": "24-hour tourist police service"
     },
     {
       "type": "embassy",
       "name": "英国驻重庆总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Chongqing",
       "phone": "+86 23 6389 3625",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Chongqing (only UK consular office in city)",
+      "notes": "For UK citizens in Chongqing region"
     },
     {
       "type": "embassy",
       "name": "日本国驻重庆总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Chongqing",
       "phone": "+86 23 6311 6111",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Chongqing (only Japanese consular office in city)",
+      "notes": "For Japanese citizens in Chongqing region"
     },
     {
       "type": "embassy",
       "name": "韩国驻重庆总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Korean Consulate General Chongqing",
       "phone": "+86 23 6380 0921",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Chongqing",
+      "notes": "For Korean citizens in Chongqing region"
     },
     {
       "type": "embassy",
       "name": "法国驻成都总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "French Consulate General Chengdu",
       "phone": "+86 28 6636 8001",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Chengdu",
+      "notes": "For French citizens in Chongqing region"
     },
     {
       "type": "hospital",
       "name": "重庆医科大学附属第二医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Second Affiliated Hospital of Chongqing Medical University",
       "phone": "+86 23 6289 3109",
-      "address": "Guangzhou",
+      "address": "74 Linjiang Road, Yuzhong District",
       "coordinates": {
         "lat": 29.5522,
         "lng": 106.5882
       },
-      "notes": "For Singapore citizens"
+      "notes": "Quality international medical services"
     },
     {
       "type": "hotel-booking",
       "name": "重庆旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chongqing Tourism Complaint Hotline",
       "phone": "12345",
-      "notes": "For Singapore citizens"
+      "notes": "For complaints about tourism services"
     }
   ],
   "quickFacts": {

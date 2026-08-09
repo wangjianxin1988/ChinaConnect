@@ -9,14 +9,14 @@
     "lng": 120.1551
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Hangzhou, capitale de la province du Zhejiang, est célèbre pour sa beauté naturelle et sa culture historique. Abritant le lac de l'Ouest, site du patrimoine mondial de l'UNESCO, et l'ambiance de vieille ville aquatique du Grand Canal. Connue comme le « Paradis sur Terre » pour son climat doux, sa végétation luxuriante et ses jardins élégants. Un important centre technologique abritant le siège d'Alibaba.",
+  "description": "Hangzhou, the capital of Zhejiang Province, is famous for its natural beauty and historical culture. Home to West Lake, a UNESCO World Heritage site, and the ancient water town ambiance of the Grand Canal. Known as 'Paradise on Earth' for its mild climate, lush greenery, and elegant gardens. A leading tech hub as headquarters of Alibaba.",
   "coverImage": "/img/ext/c71341b19c1d.webp",
   "highlights": [
-    "Lac de l'Ouest - Patrimoine mondial UNESCO",
-    "Lac Xianghu - Nouvelle zone pittoresque",
-    "Rue Hefang - Rue commerçante historique",
-    "Temple Lingyin - Temple bouddhiste ancien",
-    "Zone humide Xixi - Plus grande zone humide urbaine"
+    "West Lake - UNESCO World Heritage",
+    "Xianghu Lake - New scenic area",
+    "Hefang Street - Historic shopping street",
+    "Lingyin Temple - Ancient Buddhist temple",
+    "Xixi Wetland - Largest urban wetland"
   ],
   "climate": {
     "type": "Subtropical monsoon",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "4C (39F)",
-    "tips": "Printemps pour les fleurs, automne pour le feuillage. Été chaud, humide et pluvieux. Saison des pluies en juin. Chaussures confortables pour marcher autour du Lac de l'Ouest."
+    "tips": "Best visited in spring for flowers or autumn for golden foliage. Summer is hot and humid with frequent rain. Spring rainy season (Meiyu) in June. Wear comfortable shoes for walking around West Lake."
   },
   "attractions": [
     {
@@ -71,12 +71,12 @@
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 heures",
       "highlights": [
-        "Gaoxin Bridge",
-        "Xixi Village",
-        "Magua Lake",
-        "Luo Yang Thatched Cottage"
+        "Pont Gaoxin",
+        "Village de Xixi",
+        "Lac Magua",
+        "Chaumière de Luo Yang"
       ],
       "tips": "Take the boat tour for best experience. Visit in early morning for fewer crowds. Combine with nearby West Lake.",
       "phone": "+86 057 1 0249 0241"
@@ -84,49 +84,49 @@
     {
       "id": "lingyin-temple",
       "name": "灵隐寺",
-      "nameEn": "Lingyin Temple",
+      "nameEn": "Temple Lingyin",
       "image": "/img/ext/928aa4512683.webp",
       "category": "cultural",
-      "description": "Ancient Buddhist temple on a scenic hill with beautiful gardens.",
-      "address": "Lingyin Temple, Suzhou",
+      "description": "Ancien temple bouddhiste sur une colline pittoresque avec de beaux jardins.",
+      "address": "Temple Lingyin, Suzhou",
       "coordinates": {
         "lat": 30.2372,
         "lng": 120.1022
       },
-      "openingHours": "08:00-17:00",
-      "ticketPrice": "45¥",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "06:30-17:30 (Summer), 07:00-17:30 (Winter)",
+      "ticketPrice": "45¥ (temple), additional 55¥ for Feilai Feng peak",
+      "recommendedVisitTime": "2 heures",
       "highlights": [
-        "Temple",
-        "Gardens",
-        "Pagodas",
-        "Cave of the 500 Arhats"
+        "Feilai Feng peak",
+        "Jardins",
+        "Pagodes",
+        "Grotte des 500 Arhats"
       ],
-      "tips": "Climb the hill for views.",
+      "tips": "Montez la colline pour admirer la vue.",
       "phone": "+86 571 8717 1156"
     },
     {
       "id": "hefang-street",
       "name": "河坊街",
-      "nameEn": "Hefang Street",
+      "nameEn": "Rue Hefang",
       "image": "/img/ext/74d5ab2e3515.webp",
       "category": "cultural",
-      "description": "A historic pedestrian street in Hangzhou with traditional Chinese architecture, local snacks, tea houses, and souvenir shops.",
-      "address": "Hefang Street, Shangcheng District",
+      "description": "Une rue piétonne historique à Hangzhou avec une architecture chinoise traditionnelle, des snacks locaux, des maisons de thé et des boutiques de souvenirs.",
+      "address": "Rue Hefang, district de Shangcheng",
       "coordinates": {
         "lat": 30.2482,
         "lng": 120.1652
       },
-      "openingHours": "Open 24 hours (shops 09:00-22:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24h (boutiques 09h00-22h00)",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Traditional medicine shops",
-        "Local snacks",
-        "Craft stores",
-        "Hu Xueyan Residence"
+        " Pharmacies de médecine traditionnelle",
+        "Snacks locaux",
+        "Boutiques d'artisanat",
+        "Résidence de Hu Xueyan"
       ],
-      "tips": "Best visited in the evening when illuminated. Try Hangzhou local snacks like lotus root powder and steamed dumplings. Compare prices before buying souvenirs.",
+      "tips": "最好在傍晚灯光亮起时参观。尝试当地杭州小吃，如藕粉和蒸饺子。购买纪念品前比较价格。",
       "phone": "+86 057 1 6742 3574"
     },
     {
@@ -135,22 +135,22 @@
       "nameEn": "Grand Canal",
       "image": "/img/ext/f90432ef02d5.webp",
       "category": "historical",
-      "description": "The longest ancient canal in the world, stretching 1794km from Beijing to Hangzhou. Hangzhou's section offers boat tours through historic water towns.",
-      "address": "Canal Scenic Area, Gongshu District",
+      "description": "Le plus long canal antique au monde, s'étendant sur 1794 km de Beijing à Hangzhou. La section de Hangzhou propose des promenades en bateau à travers des villages historiques au bord de l'eau.",
+      "address": "Zone pittoresque du canal, district de Gongshu",
       "coordinates": {
         "lat": 30.3152,
         "lng": 120.1322
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "60¥ (boat tour additional)",
-      "recommendedVisitTime": "2-3 hours",
+      "ticketPrice": "60¥ (promenade en bateau en supplement)",
+      "recommendedVisitTime": "2-3 heures",
       "highlights": [
-        "Xiangji Temple",
-        "Huangchang River",
-        "Gongchen Bridge",
-        "Ancient water towns"
+        "Temple de Xiangji",
+        "Riviere Huangchang",
+        "Pont Gongchen",
+        "Anciens villages aquatiques"
       ],
-      "tips": "Take an evening boat tour for romantic scenery. The bridge views are particularly beautiful at night.",
+      "tips": "Faites une promenade en bateau le soir pour un decor romantique. Les vues sur les ponts sont particulierement belles la nuit.",
       "phone": "+86 057 1 3866 1930"
     },
     {
@@ -159,117 +159,117 @@
       "nameEn": "Songcheng",
       "image": "/img/ext/bf345450bd78.webp",
       "category": "cultural",
-      "description": "A theme park recreating Song Dynasty culture with performances, traditional architecture, and interactive experiences.",
-      "address": "5 Songqiao Road,西湖区",
+      "description": "Un parc a theme recreant la culture de la dynastie Song avec des representations, une architecture traditionnelle et des experiences interactives.",
+      "address": "5 Route Songqiao, quartier de Xihu",
       "coordinates": {
         "lat": 30.1322,
         "lng": 120.0252
       },
-      "openingHours": "09:30-21:00 (show times vary)",
-      "ticketPrice": "300¥ (includes show)",
-      "recommendedVisitTime": "4-5 hours",
+      "openingHours": "09h30-21h00 (les horaires des spectacles varient)",
+      "ticketPrice": "300¥ (spectacle inclus)",
+      "recommendedVisitTime": "4-5 heures",
       "highlights": [
-        "Wanghou Battle Show",
-        "Legend of the Flying Nymphs",
-        "Baohe's Wedding",
-        "Medieval幻境"
+        "Spectacle de Bataille de Wanghou",
+        "Légende des Nymphes Volantes",
+        "Mariage de Baohe",
+        "Monde Fantastique Médiéval"
       ],
-      "tips": "Book tickets online in advance. The 'Legend of the Flying Nymphs' is spectacular. Arrive 30 minutes early for good seats.",
+      "tips": "Reservez vos billets en ligne a l'avance. La 'Legende des nymphes volantes' est spectaculaire. Arrivez 30 minutes a l'avance pour avoir de bonnes places.",
       "phone": "+86 057 1 2288 2767"
     },
     {
       "id": "longjing",
       "name": "龙井村",
-      "nameEn": "Longjing Tea Village",
+      "nameEn": "Village du Thé Longjing",
       "image": "/img/ext/5840105b20de.webp",
       "category": "cultural",
-      "description": "Famous for Longjing (Dragon Well) tea, one of China's most prized green teas. Scenic tea plantations and traditional tea houses.",
-      "address": "Longjing Village, Xihu District",
+      "description": "Célèbre pour le thé Longjing (Puit du Dragon), l'un des thés verts les plus précieux de Chine. Plantations de thé pittoresques et maisons de thé traditionnelles.",
+      "address": "Village de Longjing, District de Xihu",
       "coordinates": {
         "lat": 30.2022,
         "lng": 120.0922
       },
-      "openingHours": "Open 24 hours (shops 08:00-18:00)",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2-3 hours",
+      "openingHours": "Ouvert 24h (magasins 08:00-18:00)",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "2-3 heures",
       "highlights": [
-        "Tea plantations",
-        "Tea picking experience",
-        "Traditional tea houses",
-        "Mei Jia Wu Village"
+        "Plantations de thé",
+        "Expérience de cueillette du thé",
+        "Maisons de thé traditionnelles",
+        "Village de Mei Jia Wu"
       ],
-      "tips": "Visit in early April for tea picking season. Buy tea directly from farmers for authenticity. The village is very peaceful in early morning.",
+      "tips": "Visitez début avril pour la saison de cueillette du thé. Achetez le thé directement auprès des agriculteurs pour l'authenticité. Le village est très paisible tôt le matin.",
       "phone": "+86 057 1 3657 1246"
     },
     {
       "id": "qiantang-river",
       "name": "钱塘江",
-      "nameEn": "Qiantang River",
+      "nameEn": "Fleuve Qiantang",
       "image": "/img/ext/ecd694ae9210.webp",
       "category": "natural",
-      "description": "Famous for the world's largest tidal bore, with monthly tidal waves reaching up to 9 meters during the Mid-Autumn Festival.",
-      "address": "Qiantang River, Shangcheng District",
+      "description": "Célèbre pour la plus grande mascaret au monde, avec des vagues de mascaret atteignant jusqu'à 9 mètres pendant la Fête de la Mi-Automne.",
+      "address": "Fleuve Qiantang, district de Shangcheng",
       "coordinates": {
         "lat": 30.2452,
         "lng": 120.2122
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free (observation decks may charge)",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24 heures",
+      "ticketPrice": "Gratuit (les plateformes d'observation peuvent être payantes)",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Bingjiang Avenue",
-        "Six Harmonies Pagoda",
-        "Qiantang Bridge",
-        "Moon observation platform"
+        "Avenue Bingjiang",
+        "Pagode des Six Harmonies",
+        "Pont Qiantang",
+        "Plateforme d'observation de la lune"
       ],
-      "tips": "Best viewed during Mid-Autumn Festival (September-October) for the famous tidal bore. The bridge lighting at night is spectacular.",
+      "tips": "Meilleur vu pendant la Fête de la Mi-Automne (septembre-octobre) pour le célèbre mascaret. L'éclairage du pont la nuit est spectaculaire.",
       "phone": "+86 057 1 5100 9525"
     },
     {
       "id": "duanqiao-canxue",
       "name": "断桥残雪",
-      "nameEn": "Broken Bridge and Melting Snow",
+      "nameEn": "Pont Brisé et Neige Fondue",
       "image": "/img/ext/20ba084c3257.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake. The bridge appears broken from one angle but whole from another. Snow-covered scenery is especially beautiful.",
-      "address": "North of Baidi Bridge, Xihu District",
+      "description": "L'un des Dix Points de vue du Lac de l'Ouest. Le pont semble brisé d'un angle mais intact d'un autre. Le paysage enneigé est particulièrement magnifique.",
+      "address": "Au nord du Pont Baidi, district de Xihu",
       "coordinates": {
         "lat": 30.2542,
         "lng": 120.1522
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
+      "openingHours": "Ouvert 24 heures",
+      "ticketPrice": "Gratuit",
       "recommendedVisitTime": "30 minutes",
       "highlights": [
-        "Baidi Bridge",
-        "Winter snow scenery",
-        "Lotus flowers in summer"
+        "Pont Baidi",
+        "Paysage neigeux hivernal",
+        "Fleurs de lotus en été"
       ],
-      "tips": "Best visited in winter after snowfall. The name comes from the optical illusion of a broken arch. Evening lighting creates romantic atmosphere.",
+      "tips": "Meilleur endroit à visiter en hiver après les chutes de neige. Le nom provient de l'illusion d'optique d'un arche brisée. L'éclairage du soir crée une atmosphère romantique.",
       "phone": "+86 057 1 2985 1736"
     },
     {
       "id": "sudi-chunxiao",
       "name": "苏堤春晓",
-      "nameEn": "Su Causeway in Spring Dawn",
+      "nameEn": "Digue Su à l'aube du printemps",
       "image": "/img/ext/6ff5a1e7187d.webp",
       "category": "natural",
-      "description": "One of the Ten Views of West Lake. A 2.7km causeway built by poet Su Dongpo in the 11th century, lined with peach and willow trees.",
-      "address": "Su Causeway, Xihu District",
+      "description": "L'une des Dix Vues du Lac de l'Ouest. Une digue de 2,7 km construite par le poète Su Dongpo au XIe siècle, bordée de pêchers et de saules.",
+      "address": "Digue Su, district de Xihu",
       "coordinates": {
         "lat": 30.2422,
         "lng": 120.1322
       },
-      "openingHours": "Open 24 hours",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "Ouvert 24h/24",
+      "ticketPrice": "Gratuit",
+      "recommendedVisitTime": "1-2 heures",
       "highlights": [
-        "Six Bridges",
-        "Willow trees",
+        "Six ponts",
+        "Saules",
         "Spring plum blossoms",
         "Bird watching"
       ],
-      "tips": "Walk or bike the causeway in spring. Each bridge has unique name and view. Start at Hua Gang and end at Nan Peak. Best in early morning.",
+      "tips": "Promenez-vous ou faites du vélo sur la digue au printemps. Chaque pont a un nom et une vue uniques. Commencez à Hua Gang et terminez au pic Nan. Idéal en début de matinée.",
       "phone": "+86 057 1 7541 5353"
     },
     {
@@ -469,22 +469,22 @@
       "nameEn": "Canal Square",
       "image": "/img/ext/6aff39cf893f.webp",
       "category": "cultural",
-      "description": "Une place riveraine située à l'extrémité sud du Grand Canal à Hangzhou, avec des expositions historiques et des zones commerçantes.",
-      "address": "Canal Square, District de Gongshu",
+      "description": "A riverside plaza at the southern end of the Grand Canal in Hangzhou, with historical displays and shopping areas.",
+      "address": "Canal Square, Gongshu District",
       "coordinates": {
         "lat": 30.2852,
         "lng": 120.1422
       },
-      "openingHours": "Ouvert 24h/24",
-      "ticketPrice": "Gratuit",
-      "recommendedVisitTime": "1 à 2 heures",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Tour de l'horloge à eau",
-        "Musée du Canal",
-        "Marché de nuit",
-        "Parc riverain"
+        "Water clock tower",
+        "Canal Museum",
+        "Night market",
+        "Riverside park"
       ],
-      "tips": "Le soir est le meilleur moment lorsque le spectacle des fontaines et les éclairages sont en marche. Le Musée du Canal est excellent et gratuit. Combinez avec une visite en bateau du canal.",
+      "tips": "Evening is best when fountain show and lighting are on. The Canal Museum is excellent and free. Connect with boat tour of canal.",
       "phone": "+86 057 1 1394 2316"
     },
     {
@@ -562,25 +562,25 @@
     {
       "id": "chaoshan-mountain",
       "name": "超山",
-      "nameEn": "Mont Chaoshan",
+      "nameEn": "Chaoshan Mountain",
       "image": "/img/ext/1b3a09b8ec59.webp",
       "category": "natural",
-      "description": "Une montagne pittoresque célèbre pour ses fleurs de prunier en hiver et au printemps, avec des temples anciens et des formations rocheuses uniques.",
-      "address": "Chaoshan, District de Linping",
+      "description": "A scenic mountain famous for plum blossoms in winter and spring, with ancient temples and unique rock formations.",
+      "address": "Chaoshan,临平区",
       "coordinates": {
         "lat": 30.4522,
         "lng": 120.1522
       },
       "openingHours": "08:00-17:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "2 à 3 heures",
+      "recommendedVisitTime": "2-3 hours",
       "highlights": [
-        "Mer de fleurs de prunier",
-        "Vieux pruniers de la dynastie Tang",
-        "Temple de Chaoshan",
-        "Mer de fleurs"
+        "Plum blossom sea",
+        "Ancient Tang dynasty plum trees",
+        "Chaoshan Temple",
+        "Sea of flowers"
       ],
-      "tips": "La saison de pointe des fleurs de prunier est de février à mars. Les vieux pruniers près du temple sont les plus impressionnants. Idéal pour la photographie.",
+      "tips": "Peak plum blossom season is February-March. The ancient plum trees near the temple are most impressive. Great for photography.",
       "phone": "+86 057 1 0521 3461"
     },
     {
@@ -756,20 +756,20 @@
       "name": "断桥",
       "nameEn": "Broken Bridge",
       "category": "landmark",
-      "description": "L'un des dix paysages célèbres du lac de l'Ouest, lieu de rencontre de Bai Niangzi et Xu Xian.",
-      "address": "District de Xihu, Hangzhou",
+      "description": "西湖十景之断桥残雪，白娘子与许仙相遇地。",
+      "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
         "lng": 120.15
       },
-      "openingHours": "Ouvert 24h/24",
-      "ticketPrice": "Gratuit",
-      "recommendedVisitTime": "30 minutes",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
       "highlights": [
-        "Pont brisé sous la neige",
-        "Légende de Bai Niangzi"
+        "断桥残雪",
+        "白娘子传说"
       ],
-      "tips": "Le paysage enneigé est le plus beau en hiver.",
+      "tips": "冬季雪景最美。",
       "image": "/img/ext/c935cf5be5e4.webp",
       "phone": "+86 057 1 3320 3277"
     },
@@ -1145,20 +1145,20 @@
       "name": "宝石山",
       "nameEn": "Baoshi Mountain",
       "category": "nature",
-      "description": "Petite colline au bord du lac de l'Ouest, avec la Pagode de Baochu.",
-      "address": "District de Xihu, Hangzhou",
+      "description": "西湖边的小山，有保俶塔。",
+      "address": "杭州市西湖区",
       "coordinates": {
         "lat": 30.25,
         "lng": 120.15
       },
-      "openingHours": "Toute la journée",
-      "ticketPrice": "Gratuit",
-      "recommendedVisitTime": "1,5 heure",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "Pagode de Baochu",
-        "Vue panoramique sur le lac de l'Ouest"
+        "保俶塔",
+        "西湖全景"
       ],
-      "tips": "Montez pour une vue dégagée.",
+      "tips": "登高望远。",
       "image": "/img/ext/6f29cff1af46.webp",
       "phone": "+86 057 1 3076 5429"
     },
@@ -2547,7 +2547,7 @@
       "tags": [
         "性价比高",
         "家常菜",
-        "社区老店"
+        "commerce historique du quartier"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
@@ -2555,28 +2555,28 @@
     {
       "id": "hangzhou-73",
       "name": "正宗西湖醋鱼",
-      "nameEn": "正宗西湖醋鱼 (西湖醋鱼)",
+      "nameEn": "Poisson au vinaigre du Lac de l'Ouest authentique (Xi Hu Cu Yu)",
       "type": "street",
-      "cuisine": "西湖醋鱼",
+      "cuisine": "Poisson au vinaigre du Lac de l'Ouest",
       "avgPrice": 44,
       "rating": 4.3,
-      "address": "杭州市老城区美食街98号",
+      "address": "98 Rue de la Gastronomie, Vieille ville de Hangzhou",
       "coordinates": {
         "lat": 30.259,
         "lng": 120.1227
       },
       "phone": "+86 0571 83519668",
       "hours": "09:00-21:00",
-      "description": "杭州本地人推荐的西湖醋鱼店，味道正宗，价格实惠",
+      "description": "Restaurant de poisson au vinaigre du Lac de l'Ouest recommandé par les habitants de Hangzhou, goût authentique et prix abordable",
       "dishHighlights": [
-        "知味小笼",
-        "西湖醋鱼",
-        "龙井虾仁"
+        "Xiaolongbao Zhi Wei",
+        "Poisson au vinaigre du Lac de l'Ouest",
+        "Crevettes au thé Longjing"
       ],
       "tags": [
-        "网红打卡",
-        "夜市",
-        "路边摊"
+        "Lieu tendance pour Instagram",
+        "Marché de nuit",
+        "Stand de rue"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/7ec3fc78f978.webp"
@@ -2584,28 +2584,28 @@
     {
       "id": "hangzhou-75",
       "name": "老杭州片儿川",
-      "nameEn": "老杭州片儿川 (片儿川)",
+      "nameEn": "Pie er chuan de Hangzhou historique (Pie er chuan)",
       "type": "local",
-      "cuisine": "片儿川",
+      "cuisine": "Pie er chuan",
       "avgPrice": 60,
       "rating": 4.9,
-      "address": "杭州市市中心区美食街134号",
+      "address": "134 Rue de la Gastronomie, Centre-ville de Hangzhou",
       "coordinates": {
         "lat": 30.225,
         "lng": 120.1209
       },
       "phone": "+86 0571 49959733",
       "hours": "10:30-14:00, 16:30-22:00",
-      "description": "杭州本地人推荐的片儿川店，味道正宗，价格实惠",
+      "description": "Un restaurant de pian'er chuan recommandé par les habitants de Hangzhou, saveurs authentiques et prix abordables",
       "dishHighlights": [
-        "片儿川",
-        "西湖醋鱼",
-        "龙井虾仁"
+        "Pian'er chuan",
+        "Poisson du Lac de l'Ouest au vinaigre",
+        "Crevettes au thé Longjing"
       ],
       "tags": [
-        "家常菜",
-        "排队王",
-        "老字号"
+        "Cuisine familiale",
+        "Roi de la file d'attente",
+        "Établissement historique"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/ff1d05539a86.webp"
@@ -2613,28 +2613,28 @@
     {
       "id": "hangzhou-77",
       "name": "正宗片儿川",
-      "nameEn": "正宗片儿川 (片儿川)",
+      "nameEn": "Pian'er chuan authentique (pian'er chuan)",
       "type": "local",
-      "cuisine": "片儿川",
+      "cuisine": "Pian'er chuan",
       "avgPrice": 65,
       "rating": 4.8,
-      "address": "杭州市市中心区美食街35号",
+      "address": "35, rue gastronomique du centre-ville de Hangzhou",
       "coordinates": {
         "lat": 30.282,
         "lng": 120.1373
       },
       "phone": "+86 0571 18166803",
       "hours": "09:00-21:00",
-      "description": "杭州本地人推荐的片儿川店，味道正宗，价格实惠",
+      "description": "Un restaurant de pian'er chuan recommandé par les habitants de Hangzhou, saveurs authentiques et prix abordables",
       "dishHighlights": [
-        "东坡肉",
-        "片儿川",
-        "知味小笼"
+        "Porc Dongpo",
+        "Pian'er chuan",
+        "Zhiwei Xiaolong"
       ],
       "tags": [
-        "本地人爱去",
-        "老字号",
-        "家常菜"
+        "Apprécié des habitants",
+        "Établissement historique",
+        "Cuisine familiale"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/42709ea23cc6.webp"
@@ -2644,26 +2644,26 @@
       "name": "街边知味小笼",
       "nameEn": "街边知味小笼 (知味小笼)",
       "type": "local",
-      "cuisine": "知味小笼",
+      "cuisine": "Zhiwei Xiaolong",
       "avgPrice": 49,
       "rating": 4.7,
-      "address": "杭州市市中心区美食街8号",
+      "address": "8 Rue de la Rue Gastronomique, Centre-ville de Hangzhou",
       "coordinates": {
         "lat": 30.2794,
         "lng": 120.1825
       },
       "phone": "+86 0571 87689795",
       "hours": "10:00-22:00",
-      "description": "杭州本地人推荐的知味小笼店，味道正宗，价格实惠",
+      "description": "Restaurant de Xiaolong recommandé par les habitants de Hangzhou, goût authentique, prix abordables",
       "dishHighlights": [
-        "片儿川",
-        "西湖醋鱼",
-        "东坡肉"
+        "Pian'er Chuan",
+        "Poisson au vinaigre du Lac Ouest",
+        "Poitrine de porc de Dongpo"
       ],
       "tags": [
-        "隐藏美食",
-        "本地人爱去",
-        "性价比高"
+        "Perle cachée",
+        "Apprécié des habitants",
+        "Excellent rapport qualité-prix"
       ],
       "diamond": 0,
       "imageUrl": "/img/ext/3876a641f74a.png"
@@ -3141,110 +3141,110 @@
     {
       "type": "ambulance",
       "name": "杭州急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Emergency Center",
       "phone": "120",
-      "notes": "For Singapore citizens"
+      "notes": "English interpretation available at major hospitals"
     },
     {
       "type": "police",
       "name": "杭州市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Public Security Bureau",
       "phone": "110",
-      "notes": "For Singapore citizens"
+      "notes": "Tourist police at West Lake area"
     },
     {
       "type": "hospital",
       "name": "浙江大学医学院附属第一医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "First Affiliated Hospital of Zhejiang University",
       "phone": "+86 571 8723 6000",
-      "address": "Guangzhou",
+      "address": "79 Qingchun Road",
       "coordinates": {
         "lat": 30.2522,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking staff, accepts international insurance"
     },
     {
       "type": "embassy",
       "name": "美国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Shanghai",
       "phone": "+86 21 8011 2400",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai (nearest US consular services for Hangzhou)",
+      "notes": "For US citizens in Hangzhou region"
     },
     {
       "type": "fire",
       "name": "杭州市消防救援支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Fire Department",
       "phone": "119",
-      "notes": "For Singapore citizens"
+      "notes": "For fire emergencies and rescue operations"
     },
     {
       "type": "tourist-info",
       "name": "杭州旅游咨询服务中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Information Center",
       "phone": "0571-96123",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Scenic Area",
+      "notes": "Tourist complaints and information service"
     },
     {
       "type": "police-special",
       "name": "杭州旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourist Police",
       "phone": "+86 571 8502 6110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "West Lake Police Station, Xihu District",
+      "notes": "24-hour tourist police service"
     },
     {
       "type": "embassy",
       "name": "英国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Shanghai",
       "phone": "+86 21 6179 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For UK citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Shanghai",
       "phone": "+86 21 5292 8000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Australian citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "德国驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Consulate General Shanghai",
       "phone": "+86 21 6101 2000",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For German citizens in Hangzhou region"
     },
     {
       "type": "embassy",
       "name": "日本驻上海总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Shanghai",
       "phone": "+86 21 6218 0021",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Shanghai",
+      "notes": "For Japanese citizens in Hangzhou region"
     },
     {
       "type": "hospital",
       "name": "邵逸夫医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Sir Run Run Shaw Hospital",
       "phone": "+86 571 8609 0088",
-      "address": "Guangzhou",
+      "address": "3 East Qingchun Road",
       "coordinates": {
         "lat": 30.2722,
         "lng": 120.1922
       },
-      "notes": "For Singapore citizens"
+      "notes": "Quality international medical services"
     },
     {
       "type": "hotel-booking",
       "name": "杭州旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Hangzhou Tourism Complaint Hotline",
       "phone": "0571-12345",
-      "notes": "For Singapore citizens"
+      "notes": "For complaints about tourism services"
     }
   ],
   "quickFacts": {

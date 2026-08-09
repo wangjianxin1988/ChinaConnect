@@ -9,14 +9,14 @@
     "lng": 110.29
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "桂林は「金木犀の森」として知られ、漓江に昇る石灰岩の峰の素晴らしいカルスト景観で有名です。何世紀にもわたって中国の画家や詩人にインスピレーションを与えてきました。自然の美しさ以外にも、洞窟探検、川沿いのサイクリング、竹の筏下り、活気ある日月双塔があります。",
+  "description": "Guilin, 'Forest of Osmanthus', is famous for its stunning karst landscape of limestone peaks rising from the Li River. The city has been inspiring Chinese painters and poets for centuries with its ethereal scenery. Besides natural beauty, it offers cave explorations, cycling along the river, bamboo raft trips, and the vibrant Sun and Moon Pagodas.",
   "coverImage": "/img/ext/2f793b073fa4.webp",
   "highlights": [
-    "漓江クルーズ - 水上カルスト地形",
-    "象鼻山 - 市のランドマーク",
-    "芦笛岩 - 虹色の洞窟",
-    "龍脊棚田 - 龍の背骨のような棚田",
-    "陽朔 - サイクリングと竹いかだ"
+    "Li River Cruise - Karst landscape from water",
+    "Elephant Trunk Hill - City landmark",
+    "Reed Flute Cave - Rainbow-lit underground wonder",
+    "Longji Rice Terraces - Dragons backbone terraces",
+    "Yangshuo - Cycling and bamboo rafting"
   ],
   "climate": {
     "type": "Subtropical humid",
@@ -29,7 +29,7 @@
     ],
     "avgSummerTemp": "28C (82F)",
     "avgWinterTemp": "9C (48F)",
-    "tips": "春と秋が最適。 夏は蒸し暑く洪水の可能性。 冬は穏やかですが霧が多い。 「桂林の雨」 - 午後のにわか雨が頻繁に霧の景色を作ります。 雨具を持参。"
+    "tips": "Best visited in spring and autumn. Summer is hot and humid with occasional flooding. Winter mild but can be foggy. 'Guilin rain' - frequent afternoon showers create misty scenery. Pack rain gear."
   },
   "attractions": [
     {
@@ -110,22 +110,22 @@
       "nameEn": "Ten Mile Gallery",
       "category": "natural",
       "image": "/img/ext/b4d430904b48.webp",
-      "description": "A scenic train ride through towering pillars resembling famous paintings and sculptures.",
-      "address": "Within Forest Park",
+      "description": "A scenic cycling route in Yangshuo passing through rolling hills, rice paddies, and traditional villages with stunning karst views.",
+      "address": "Yangshuo to Baisha, 20km route",
       "coordinates": {
         "lat": 24.7695,
         "lng": 110.4835
       },
-      "openingHours": "07:00-17:30",
-      "ticketPrice": "76¥ (train only)",
-      "recommendedVisitTime": "1.5 hours",
+      "openingHours": "Always open",
+      "ticketPrice": "Free (e-bike rental 50¥/day)",
+      "recommendedVisitTime": "Half day",
       "highlights": [
-        "Landmark Pillars",
-        "Artistic rock formations",
-        "Mini train experience",
-        "Photography stops"
+        "Moon Hill",
+        "Big Face Buddha",
+        "Rice paddy views",
+        "Village encounters"
       ],
-      "tips": "Train saves walking but misses some scenery. Get off at viewpoint for photos.",
+      "tips": "Rent e-bikes in Yangshuo. Start early morning for best light and fewer tourists. Stop at cafes along the route.",
       "phone": "+86 077 3 4447 9355"
     },
     {
@@ -227,11 +227,11 @@
     {
       "id": "Elephant-trunk-water",
       "name": "象山传奇",
-      "nameEn": "Elephant Trunk Hill Water Tour",
+      "nameEn": "エレファント・トランク・ヒル・ウォーター・ツアー",
       "category": "natural",
       "image": "/img/ext/90c2f10df87a.webp",
-      "description": "象の鼻山の周囲で行われる夜のライトショーとボートツアーで、3Dプロジェクションマッピングや文化パフォーマンスが特徴です。",
-      "address": "桂林市杉仙路",
+      "description": "桂林の象の鼻山の周囲で行われる夜のライトアップとボートツアーで、3Dプロジェクションマッピングや文化公演が楽しめます。",
+      "address": "Shanxian Rd, Guilin",
       "coordinates": {
         "lat": 25.2635,
         "lng": 110.2975
@@ -241,11 +241,11 @@
       "recommendedVisitTime": "1時間30分",
       "highlights": [
         "3Dプロジェクションマッピング",
-        "文化パフォーマンス",
+        "文化公演",
         "山の夜景",
         "水上のライトショー"
       ],
-      "tips": "ホテルまたはオンラインで予約してください。雨合羽が提供されます。天候が良いことが最高の体験のために不可欠です。",
+      "tips": "ホテルまたはオンラインで予約してください。雨天時にはポンチョが提供されます。最高の体験のためには良い天候が不可欠です。",
       "phone": "+86 077 3 9810 2948"
     },
     {
@@ -310,102 +310,102 @@
       },
       "openingHours": "09:00-21:00",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "1.5 hours",
+      "recommendedVisitTime": "1.5時間",
       "highlights": [
-        "Folk song performances",
-        "Zhuang dance shows",
-        "Traditional costumes",
-        "Audience participation"
+        "民俗歌の公演",
+        "僑族舞踊の公演",
+        "伝統的な衣装",
+        "観客参加型"
       ],
-      "tips": "Evening shows more lively. Interactive experience with performers.",
+      "tips": "夕方の公演はより活気があります。出演者とのインタラクティブな体験。",
       "phone": "+86 077 3 3585 1761"
     },
     {
       "id": "fubo-hill",
       "name": "伏波山",
-      "nameEn": "Fubo (Boat-Stopping) Hill",
+      "nameEn": "伏波（船止め）山",
       "category": "natural",
       "image": "/img/ext/1b3a09b8ec59.webp",
-      "description": "A hill with a distinctive peak that juts out over the river, featuring ancient caves and excellent views of the city.",
-      "address": "Fubo Rd, Guilin",
+      "description": "川の上に突き出た独特の峰を持ち、古代の鍾乳洞と街の素晴らしい眺めを特徴とする山。",
+      "address": "桂林市伏波路",
       "coordinates": {
         "lat": 25.2795,
         "lng": 110.2885
       },
       "openingHours": "07:00-18:00",
       "ticketPrice": "30¥",
-      "recommendedVisitTime": "1-1.5 hours",
+      "recommendedVisitTime": "1〜1.5時間",
       "highlights": [
-        "Panlong Cave",
-        "Ming dynasty inscriptions",
-        "City views from top",
-        "Elephant Trunk Hill views"
+        "盤龍洞",
+        "明代の碑文",
+        "頂上からの街の眺望",
+        "象の鼻山の眺め"
       ],
-      "tips": "Combine with Diecai Mountain for morning tour. Wear comfortable shoes for climbing.",
+      "tips": "朝の観光は桂林山と一緒に回るのがおすすめ。登山には動きやすい靴を履いてください。",
       "phone": "+86 077 3 6152 6106"
     },
     {
       "id": "cormorant-fishing",
       "name": "漓江渔火",
-      "nameEn": "Cormorant Fishing Show",
+      "nameEn": "鸕鷀漁パフォーマンス",
       "category": "cultural",
       "image": "/img/ext/733c64821aa7.webp",
-      "description": "Traditional cormorant fishing demonstration on the Li River with lanterns and folk music.",
-      "address": "Yangdi Village, 35km from Guilin",
+      "description": "ランタンと民族音楽とともに漓江で行われる伝統的な鸕鷀漁の実演",
+      "address": "桂林から35kmの陽提村",
       "coordinates": {
         "lat": 25.1235,
         "lng": 110.3865
       },
-      "openingHours": "Evening shows at 20:00",
+      "openingHours": "20:00からの夜のパフォーマンス",
       "ticketPrice": "80-150¥",
-      "recommendedVisitTime": "1 hour",
+      "recommendedVisitTime": "1時間",
       "highlights": [
-        "Cormorant fishing spectacle",
-        "Lantern-lit boats",
-        "Folk music performance",
-        "Night river views"
+        "鸕鷀漁のスペクタクル",
+        "ランタンで照らされた舟",
+        "民族音楽のパフォーマンス",
+        "夜の川展望"
       ],
-      "tips": "Book evening tour including dinner. Best in summer. Bring warm jacket for evening.",
+      "tips": "ディナーを含む夜ーツアーを予約してください。夏が最佳です。夜は防寒着をお持ちください",
       "phone": "+86 773 899 6303"
     },
     {
       "id": "silver-cave",
       "name": "银子岩",
-      "nameEn": "Silver Cave",
+      "nameEn": "銀洞",
       "category": "natural",
       "image": "/img/ext/33b4f3d28d8e.webp",
-      "description": "A vast karst cave system known for its sparkling stalactites that resemble silver formations.",
-      "address": "Maling Village, Yangshuo County, 80km from Guilin",
+      "description": "銀のような形をした輝く鐘乳石で知られる広大なカルスト洞窟系統",
+      "address": "桂林から80km、陽朔県馬鈴村",
       "coordinates": {
         "lat": 24.6135,
         "lng": 110.5065
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "80¥",
-      "recommendedVisitTime": "1.5-2 hours",
+      "recommendedVisitTime": "1.5-2時間",
       "highlights": [
-        "Silver stalactites",
-        "Underground lake",
-        "Natural formations",
-        "Light show inside"
+        "銀色の鍾乳石",
+        "地下湖",
+        "天然の地形",
+        "内部のライトショー"
       ],
-      "tips": "Combine with Yangshuo cycling. Follow guide for best photo spots. The cave is 2km long.",
+      "tips": "陽朔サイクリングと組み合わせてください。最佳な写真はガイドに従ってください。鍾乳洞は2kmです。",
       "phone": "+86 077 3 8834 6914"
     },
     {
       "id": "longji-ping'an",
       "name": "龙脊平安寨",
-      "nameEn": "Longji Ping'an Zhuang Village",
+      "nameEn": "龍脊平安チャン族集落",
       "category": "cultural",
       "image": "/img/ext/7857059d3408.webp",
-      "description": "The most famous Zhuang village in the Longji Rice Terraces area with stunning views and authentic culture.",
-      "address": "Ping'an Village, Longsheng County, 100km from Guilin",
+      "description": "龍脊棚田で最も有名なチャン族の村で、素晴らしい景色と本格的な文化があります。",
+      "address": "桂林から100km、龙勝県平安村",
       "coordinates": {
         "lat": 25.7535,
         "lng": 110.0935
       },
-      "openingHours": "Always open",
-      "ticketPrice": "80¥ (terraces access)",
+      "openingHours": "常時開放",
+      "ticketPrice": "80¥（棚田入場料）",
       "recommendedVisitTime": "Full day",
       "highlights": [
         "Seven Stars Follow Moon",
@@ -413,7 +413,7 @@
         "Zhuang architecture",
         "Terrace sunrise"
       ],
-      "tips": "Stay overnight for sunrise. Wear hiking shoes. Hire local guide. Try bamboo rice at village restaurants.",
+      "tips": "日の出を見るために泊まりてください。登山靴を履いて、地元のガイドを雇ってください。村のレストランで竹ご飯を試してください。",
       "phone": "+86 077 3 1943 1095"
     },
     {
@@ -491,25 +491,25 @@
     {
       "id": "xiangshan-park",
       "name": "象山公园",
-      "nameEn": "Xiangshan Park",
+      "nameEn": "Elephant Trunk Hill Park",
       "category": "natural",
       "image": "/img/ext/c09fcbe63c84.webp",
-      "description": "Beautiful hillside park known for its ancient plum trees, camellia gardens, and panoramic views of West Lake area.",
-      "address": "Xihu District, near Lingyin",
+      "description": "The iconic landmark of Guilin where an elephant drinks from the river with its trunk forming a natural arch.",
+      "address": "Shanxian Rd, Guilin",
       "coordinates": {
         "lat": 25.2625,
         "lng": 110.2985
       },
-      "openingHours": "06:00-18:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "2 hours",
+      "openingHours": "06:30-18:30",
+      "ticketPrice": "55¥",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Ancient plum trees",
-        "Camellia gardens",
-        "Mountain paths",
-        "Tea plantations"
+        "Elephant trunk arch",
+        "Water mirror reflection",
+        "Ancient poems carved",
+        "Sunset views"
       ],
-      "tips": "Best in late winter for plum blossoms (January-February). Cooler temperature due to elevation. Good hiking trails.",
+      "tips": "Best at sunset for reflection shots. The water view from Shanxian Rd is free. Buy ticket for inside access.",
       "phone": "+86 077 3 9977 6566"
     },
     {
@@ -1213,22 +1213,22 @@
       "name": "石头城",
       "nameEn": "Aishan Stone Village",
       "category": "street",
-      "description": "陽朔県葡萄鎮にある古い石造りの村落で、村全体が石で造られています。石の家、石の壁、石畳の道がそのまま残っており、フォトグラファーや文芸好きな若者に人気のスポットです。",
-      "address": "桂林市陽朔県葡萄鎮",
+      "description": "阳朔县葡萄镇的古老石头村落，整座村庄由石头砌成，石屋、石墙、石板路保存完好。是摄影爱好者和文艺青年的打卡圣地。",
+      "address": "桂林市阳朔县葡萄镇",
       "coordinates": {
         "lat": 24.8335,
         "lng": 110.3935
       },
-      "openingHours": "終日開放",
-      "ticketPrice": "無料",
-      "recommendedVisitTime": "2時間",
+      "openingHours": "全天开放",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "石造りの建築",
-        "田園風景",
-        "写真撮影スポット",
-        "素朴な村落"
+        "石头建筑",
+        "田园风光",
+        "摄影打卡",
+        "古朴村落"
       ],
-      "tips": "観光客が少なく、静かな場所を好む旅行者におすすめです。自家用車または自転車での訪問をお勧めします。",
+      "tips": "游客较少，适合喜欢安静的旅行者。自驾或骑行前往。",
       "image": "/img/ext/0d4c20e09d4f.webp",
       "phone": "+86 077 3 9731 5656"
     }
@@ -3302,107 +3302,107 @@
     {
       "type": "ambulance",
       "name": "桂林急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Guilin Emergency Center",
       "phone": "120",
-      "address": "Guangzhou"
+      "address": "Citywide coverage"
     },
     {
       "type": "police",
       "name": "桂林市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Guilin Public Security Bureau",
       "phone": "110",
-      "address": "Guangzhou"
+      "address": "Various locations"
     },
     {
       "type": "hospital",
       "name": "桂林市人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Guilin People's Hospital",
       "phone": "+86 773 282 2410",
-      "address": "Guangzhou",
+      "address": "12 Wenming Rd, Diecai District",
       "coordinates": {
         "lat": 25.2905,
         "lng": 110.2845
       },
-      "notes": "For Singapore citizens"
+      "notes": "Best public hospital in Guilin"
     },
     {
       "type": "hospital",
       "name": "阳朔县人民医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yangshuo County People's Hospital",
       "phone": "+86 773 882 2450",
-      "address": "Guangzhou",
+      "address": "Chengzhong Rd, Yangshuo County",
       "coordinates": {
         "lat": 24.7785,
         "lng": 110.4945
       },
-      "notes": "For Singapore citizens"
+      "notes": "For emergencies in Yangshuo"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Guangzhou",
       "phone": "+86 20 3814 0128",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Guangzhou (nearest consular services for Guilin)",
+      "notes": "Nearest consular services - some countries may not have representation in Guilin"
     },
     {
       "type": "police",
       "name": "阳朔县公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Yangshuo County Public Security Bureau",
       "phone": "+86 773 882 1110",
-      "address": "Guangzhou",
+      "address": "Chengzhong Rd, Yangshuo County",
       "coordinates": {
         "lat": 24.7795,
         "lng": 110.4935
       },
-      "notes": "For Singapore citizens"
+      "notes": "For emergencies in Yangshuo area"
     },
     {
       "type": "fire",
       "name": "桂林消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Guilin Fire Brigade",
       "phone": "119",
-      "address": "Guangzhou"
+      "address": "Citywide coverage"
     },
     {
       "type": "tourist-police",
       "name": "桂林旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Guilin Tourist Police",
       "phone": "+86 773 280 5110",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various tourist areas",
+      "notes": "English speaking tourist police in scenic areas"
     },
     {
       "type": "tourist-complaint",
       "name": "桂林旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Guilin Tourism Complaint Hotline",
       "phone": "12301",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide",
+      "notes": "For tourism complaints and emergencies"
     },
     {
       "type": "water-emergency",
       "name": "漓江搜救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Li River Rescue Center",
       "phone": "+86 773 384 9119",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Zhujiang Port area",
+      "notes": "For water emergencies and river rescue"
     },
     {
       "type": "embassy",
       "name": "澳大利亚驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Australian Consulate General Guangzhou",
       "phone": "+86 20 3814 0128",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "Nearest consular services for Australians"
     },
     {
       "type": "embassy",
       "name": "加拿大驻广州总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Canadian Consulate General Guangzhou",
       "phone": "+86 20 3228 6911",
       "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "notes": "Nearest consular services for Canadians"
     }
   ],
   "quickFacts": {

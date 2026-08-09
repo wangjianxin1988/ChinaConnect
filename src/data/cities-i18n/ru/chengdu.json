@@ -9,14 +9,14 @@
     "lng": 104.0658
   },
   "timezone": "UTC+8 (China Standard Time)",
-  "description": "Чэнду, столица провинции Сычуань, известен как 'Город веселья' благодаря расслабленному образу жизни, острой кухне и гигантским пандам. Являясь родиной древней культуры Шу, он предлагает расслабляющие чайные дома, острый хого, историческую улицу Цзиньли и близость к Цзючжайгоу и Большому Будде Лэшань.",
+  "description": "Chengdu, the capital of Sichuan province, is known as the 'City of Revelry' for its laid-back lifestyle, spicy cuisine, and the giant pandas. Home to ancient Shu culture, it offers relaxing tea houses, spicy hot pot, the historic Jinli Street, and proximity to the scenic Jiuzhaigou and Leshan Giant Buddha.",
   "coverImage": "/img/ext/ee9d4784d80e.webp",
   "highlights": [
-    "База больших панд - Дом очаровательных панд",
-    "Улица Цзиньли - Культура Шу и закуски",
-    "Народный парк - Чайные и панды",
-    "Гора Эмэй - Буддийская гора",
-    "Сычуаньская опера - Традиционная смена лица"
+    "Центр разведения панд — дом для очаровательных панд",
+    "Улица Цзиньли — древняя культура Шу и закуски",
+    "Народный парк — чайные дома и панды",
+    "Гора Эмэй — буддийский горный курорт",
+    "Сычуаньская опера - традиционное шоу смены масок"
   ],
   "climate": {
     "type": "Subtropical humid",
@@ -30,41 +30,41 @@
     ],
     "avgSummerTemp": "26C (79F)",
     "avgWinterTemp": "6C (43F)",
-    "tips": "Субтропический влажный климат, четыре сезона. Лето жаркое, зима мягкая. Облачно и туманно. Можно посещать круглый год, лучше осенью. Держите зонт."
+    "tips": "Best visited in spring and autumn. Summers hot and humid but indoor AC everywhere. Winters mild but foggy. Rain common year-round. Bring umbrella."
   },
   "attractions": [
     {
       "id": "panda-base",
       "name": "成都大熊猫繁育研究基地",
-      "nameEn": "Chengdu Research Base of Giant Panda Breeding",
+      "nameEn": "Чэндунская исследовательская база разведения гигантских панд",
       "category": "cultural",
-      "description": "The world's largest giant panda breeding center with over 80 pandas in natural habitat settings.",
+      "description": "Крупнейший в мире центр разведения гигантских панд с более чем 80 пандами в условиях естественной среды обитания.",
       "image": "/img/ext/287ca77bedf7.webp",
       "address": "26 Panda Road, Chenghua District",
       "coordinates": {
         "lat": 30.7385,
         "lng": 104.1445
       },
-      "openingHours": "07:30-18:00 (Summer), 08:00-17:30 (Winter)",
+      "openingHours": "07:30-18:00 (Лето), 08:00-17:30 (Зима)",
       "ticketPrice": "55¥",
-      "recommendedVisitTime": "3-4 hours",
+      "recommendedVisitTime": "3-4 часа",
       "highlights": [
-        "Baby panda nursery",
-        "Red panda area",
-        "Panda theater",
-        "Release training center"
+        "Питомник для детенышей панд",
+        "Район красных панд",
+        "Театр панд",
+        "Центр подготовки к выпуску"
       ],
-      "tips": "Arrive at opening to catch pandas most active in morning. Visit in summer for cubs. Allow 3+ hours for full visit. Shuttle bus from Tianfu Square.",
+      "tips": "Приходите к открытию, чтобы застать панд наиболее активными утром. Посетите летом для детенышей. Выделите 3+ часа для полного посещения. Шаттл от площади Тяньфу.",
       "phone": "+86 028  1293 9913"
     },
     {
       "id": "jinli-street",
       "name": "锦里古街",
-      "nameEn": "Jinli Ancient Street",
+      "nameEn": "Древняя улица Цзиньли",
       "category": "cultural",
-      "description": "A reconstructed ancient street showcasing Shu culture with traditional architecture, street food, tea houses, and shops.",
+      "description": "Воссозданная древняя улица, демонстрирующая культуру Шу с традиционной архитектурой, уличной едой, чайными домами и магазинами.",
       "image": "/img/ext/95dfd9d7b442.png",
-      "address": "Near Wuhou Temple, Wuhou District",
+      "address": "Вблизи храма Ухоу, район Ухоу",
       "coordinates": {
         "lat": 30.6515,
         "lng": 104.0555
@@ -349,23 +349,23 @@
       "name": "成都339电视塔",
       "nameEn": "Chengdu 339 Tower",
       "category": "modern",
-      "description": "Иконическая телебашня Чэнду с вращающейся смотровой площадкой и небесным баром, предлагающими панорамные виды на город.",
+      "description": "Chengdu's iconic TV tower with a rotating observation deck and sky bar offering panoramic city views.",
       "image": "/img/ext/a0f0ef5bc7ae.webp",
-      "address": "339 Сяотун Сян, район Чэнхуа",
+      "address": "339 Xiaotong Alley, Chenghua District",
       "coordinates": {
         "lat": 30.6615,
         "lng": 104.1025
       },
       "openingHours": "10:00-22:00",
-      "ticketPrice": "50¥ (смотровая площадка)",
-      "recommendedVisitTime": "1-2 часа",
+      "ticketPrice": "50¥ (observation deck)",
+      "recommendedVisitTime": "1-2 hours",
       "highlights": [
-        "Небесный бар на высоте 208 м",
-        "Вращающийся ресторан",
-        "Платформа для банджи-джампинга",
-        "Ночные виды"
+        "Sky bar at 208m",
+        "Rotating restaurant",
+        "Bungee jump platform",
+        "Night views"
       ],
-      "tips": "Приходите на закате для лучших видов. Банджи-джампинг популярен среди любителей острых ощущений. Комбинируется с расположенной рядом зоной для плавания Мэнчжуйвань.",
+      "tips": "Go at sunset for best views. The bungee jump is popular for thrill-seekers. Combined with nearby猛追湾 swimming area.",
       "phone": "+86 028  8447 0744"
     },
     {
@@ -445,23 +445,23 @@
       "name": "大慈寺",
       "nameEn": "Da Ci Temple",
       "category": "cultural",
-      "description": "Древний буддийский храм, основанный в эпоху династии Тан, известный своими большими статуями Будды и спокойной атмосферой в центре города.",
+      "description": "An ancient Buddhist temple founded in the Tang dynasty, known for its large Buddha statues and peaceful atmosphere in the city center.",
       "image": "/img/ext/60f61a603031.webp",
-      "address": "23 улица Дацысы, район Цзиньцзян",
+      "address": "23 Dacisi Rd, Jinjiang District",
       "coordinates": {
         "lat": 30.6555,
         "lng": 104.0725
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1 час",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
       "highlights": [
-        "Гигантская статуя Будды",
-        "Древний буддийский зал",
-        "Чайный домик внутри храма",
-        "Спокойное уединение"
+        "Giant Buddha statue",
+        "Ancient Buddhist hall",
+        "Tea house within temple",
+        "Peaceful retreat"
       ],
-      "tips": "Расположен рядом с Taikoo Li. Чайный домик внутри пользуется популярностью. Один из немногих храмов, где еще проживают монахи.",
+      "tips": "Located near Taikoo Li. The tea house inside is popular. One of the few temples with monks still in residence.",
       "phone": "+86 028  5551 2316"
     },
     {
@@ -469,23 +469,23 @@
       "name": "春熙路",
       "nameEn": "Chunxi Road",
       "category": "modern",
-      "description": "Престижный торговый район Чэнду с роскошными торговыми центрами, международными брендами и разнообразными ресторанами.",
+      "description": "Chengdu's premier shopping district with luxury malls, international brands, and diverse dining options.",
       "image": "/img/ext/25a26f7e674a.webp",
-      "address": "Улица Чуньси, район Цзиньцзян",
+      "address": "Chunxi Road, Jinjiang District",
       "coordinates": {
         "lat": 30.6575,
         "lng": 104.0745
       },
-      "openingHours": "Круглосуточно (магазины 10:00-22:00)",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "2-4 часа",
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-4 hours",
       "highlights": [
-        "Торговый центр IFS",
+        "IFS shopping center",
         "Taikoo Li",
-        "Памятник Sunjoy",
-        "Уличная мода"
+        "Sunjoy monument",
+        "Street fashion"
       ],
-      "tips": "Гигантская статуя панды на крыше IFS является иконой. Отличное место для шопинга и еды. Поезжайте на метро линии 2.",
+      "tips": "The giant panda sculpture on IFS roof is iconic. Great for shopping and food. Take metro line 2.",
       "phone": "+86 028  2998 2775"
     },
     {
@@ -539,25 +539,25 @@
     {
       "id": "baiyun-temple",
       "name": "白云观",
-      "nameEn": "Baiyun Guan (Храм Белого Облака)",
+      "nameEn": "Baiyun Guan (White Cloud Temple)",
       "category": "cultural",
-      "description": "Даосский храм на живописной горе Ухуан, известный даосской культурой и красивой природной красотой.",
+      "description": "A Taoist temple on scenic Wuhuang Mountain, known for Taoist culture and beautiful natural scenery.",
       "image": "/img/ext/85389545bfc3.webp",
-      "address": "Гора Ухуан, район Синьцзинь, 40 км от Чэнду",
+      "address": "Wuhuang Mountain, Xinjin District, 40km from Chengdu",
       "coordinates": {
         "lat": 30.2215,
         "lng": 103.8985
       },
       "openingHours": "08:00-17:30",
       "ticketPrice": "10¥",
-      "recommendedVisitTime": "Полдня",
+      "recommendedVisitTime": "Half day",
       "highlights": [
-        "Комплекс даосского храма",
-        "Горные тропы",
-        "Древние баньяновые деревья",
-        "Живописные виды"
+        "Taoist temple complex",
+        "Mountain trails",
+        "Ancient banyan trees",
+        "Scenic overlooks"
       ],
-      "tips": "Совместите с посещением древнего города Хуанлунси поблизости. Носите удобную обувь для пеших прогулок. Опыт даосской культуры.",
+      "tips": "Combine with nearby Huanglongxi ancient town. Wear comfortable shoes for hiking. Taoist culture experience.",
       "phone": "+86 028  3247 4082"
     },
     {
@@ -613,23 +613,23 @@
       "name": "安仁古镇",
       "nameEn": "Anren Ancient Town",
       "category": "cultural",
-      "description": "Исторический город, известный своими коллекциями архитектуры 1940-х годов и уникальными музейными кластерами, включая Музей поместья Лю.",
+      "description": "A historic town famous for its collections of 1940s architecture and unique museum clusters including the Liu Manor Museum.",
       "image": "/img/ext/251ea33a3e15.webp",
-      "address": "Город Анжэнь, уезд Даин, в 40 км от Чэнду",
+      "address": "Anren Town, Daying County, 40km from Chengdu",
       "coordinates": {
         "lat": 30.4585,
         "lng": 103.6085
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно (билеты в отдельные музеи)",
-      "recommendedVisitTime": "4-5 часов",
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free (individual museums ticket)",
+      "recommendedVisitTime": "4-5 hours",
       "highlights": [
-        "Музей поместья Лю",
-        "Улица 1940-х годов",
-        "Музей следов",
-        "Китайский оперный музей"
+        "Liu Manor Museum",
+        "1940s street",
+        "Footprint Museum",
+        "Chinese Opera Museum"
       ],
-      "tips": "Купите комплексный билет на все музеи. Посетите место съемок телешоу 'Счастливая ферма'. Забронируйте проживание для ночной экскурсии.",
+      "tips": "Buy combined ticket for all museums. Watch 'Happy Farm' TV show filming location. Book accommodation for night tour.",
       "phone": "+86 028  1997 7710"
     },
     {
@@ -685,23 +685,23 @@
       "name": "川西竹海景区",
       "nameEn": "Chuanxi Bamboo Sea",
       "category": "natural",
-      "description": "Обширный бамбуковый лес на горе Пинлин с пешеходными тропами, стеклянным мостом и природными пейзажами.",
+      "description": "A vast bamboo forest on Mount Pingling with hiking trails, glass bridge, and natural scenery.",
       "image": "/img/ext/f559500ee99e.webp",
-      "address": "Гора Пинлин, район Синьцзинь, в 40 км от Чэнду",
+      "address": "Pingling Mountain, Xinjin District, 40km from Chengdu",
       "coordinates": {
         "lat": 30.3785,
         "lng": 103.8285
       },
       "openingHours": "08:00-18:00",
       "ticketPrice": "60¥",
-      "recommendedVisitTime": "3-4 часа",
+      "recommendedVisitTime": "3-4 hours",
       "highlights": [
-        "Бамбуковый лес",
-        "Стеклянный мост",
-        "Водопад",
-        "Небесная тропа"
+        "Bamboo forest",
+        "Glass bridge",
+        "Waterfall",
+        "Sky trail"
       ],
-      "tips": "Носите удобную обувь. Стеклянная дорожка вызывает сильные эмоции. Летом возьмите с собой репеллент от комаров.",
+      "tips": "Wear comfortable shoes. The glass skywalk is thrilling. Bring mosquito repellent in summer.",
       "phone": "+86 028  6688 7637"
     },
     {
@@ -802,20 +802,20 @@
       "name": "人民公园",
       "nameEn": "People's Park",
       "category": "park",
-      "description": "Urban park in the heart of the city with tea houses, gardens, and historical monuments, popular with locals.",
-      "address": "Yuzhong District",
+      "description": "成都最古老的公园，有鹤鸣茶社。",
+      "address": "成都市青羊区",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "06:00-22:00",
-      "ticketPrice": "Free",
-      "recommendedVisitTime": "1-2 hours",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "Morning tai chi",
-        "Tea houses"
+        "茶馆",
+        "市民生活"
       ],
-      "tips": "Best in early morning to see locals practicing tai chi. Traditional tea service available.",
+      "tips": "喝盖碗茶。",
       "image": "/img/ext/690be6b1d9ea.webp",
       "phone": "+86 028  4276 3445"
     },
@@ -890,21 +890,21 @@
       "name": "成都美食",
       "nameEn": "Chengdu Food",
       "category": "street",
-      "description": "Город, признанный ЮНЕСКО как гастрономическая столица.",
-      "address": "город Чэнду",
+      "description": "联合国教科文组织评定的美食之都。",
+      "address": "成都市",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "50 юаней на человека",
-      "recommendedVisitTime": "В любое время суток",
+      "openingHours": "全天",
+      "ticketPrice": "人均50元",
+      "recommendedVisitTime": "全天",
       "highlights": [
-        "Хого (китайский горячий горшок)",
-        "Чуаньчуань (шашлычки)",
-        "Даньданьмянь (острая лапша)"
+        "火锅",
+        "串串",
+        "担担面"
       ],
-      "tips": "Попробуйте местные деликатесы Чэнду.",
+      "tips": "品尝成都美食。",
       "image": "/img/ext/95dfd9d7b442.png",
       "phone": "+86 028  5070 1223"
     },
@@ -935,20 +935,20 @@
       "name": "都江堰熊猫谷",
       "nameEn": "Dujiangyan Panda Valley",
       "category": "nature",
-      "description": "База по реабилитации и адаптации больших панд, где можно наблюдать их вблизи.",
-      "address": "Город Дуцзянъянь, Чэнду",
+      "description": "大熊猫野化训练基地，可近距离观看。",
+      "address": "成都市都江堰市",
       "coordinates": {
         "lat": 30.98,
         "lng": 103.62
       },
       "openingHours": "08:00-17:00",
-      "ticketPrice": "50 юаней",
-      "recommendedVisitTime": "Полдня",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "半天",
       "highlights": [
-        "Большие панды",
-        "Реабилитация в дикой природе"
+        "大熊猫",
+        "野化训练"
       ],
-      "tips": "Меньше людей, чем на других базах.",
+      "tips": "比基地人少。",
       "image": "/img/ext/5eff665988e1.webp",
       "phone": "+86 028  0499 7146"
     },
@@ -980,20 +980,20 @@
       "name": "成都夜景",
       "nameEn": "Chengdu Night View",
       "category": "landmark",
-      "description": "Шоу световых инсталляций в ночное время в районах Цзиньли и Каньчжайсянцзы.",
-      "address": "Город Чэнду",
+      "description": "锦里和宽窄巷子的夜景灯光秀。",
+      "address": "成都市",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "Вечернее время",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1 час",
+      "openingHours": "夜间",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Световое шоу",
-        "Ночной вид"
+        "灯光秀",
+        "夜景"
       ],
-      "tips": "Лучше всего посещать летними ночами.",
+      "tips": "夏季夜间最美。",
       "image": "/img/ext/a0f0ef5bc7ae.webp",
       "phone": "+86 028  6622 9606"
     },
@@ -1024,19 +1024,19 @@
       "name": "成都啤酒",
       "nameEn": "Chengdu Beer",
       "category": "street",
-      "description": "Культура местного пивоварения в Чэнду.",
-      "address": "город Чэнду",
+      "description": "成都本地啤酒文化。",
+      "address": "成都市",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1 час",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Культура пива"
+        "啤酒文化"
       ],
-      "tips": "Попробуйте пиво Чэнду.",
+      "tips": "品尝成都啤酒。",
       "image": "/img/ext/73043c950f22.webp",
       "phone": "+86 028  4060 2374"
     },
@@ -1045,20 +1045,20 @@
       "name": "天府广场",
       "nameEn": "Tianfu Square",
       "category": "landmark",
-      "description": "Городская центральная площадь Чэнду с памятником Мао Цзэдуну.",
-      "address": "район Цинъян, город Чэнду",
+      "description": "成都的城市中心广场，有毛泽东雕像。",
+      "address": "成都市青羊区",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "30 минут",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
       "highlights": [
-        "Городской центр",
-        "Памятник Мао Цзэдуну"
+        "城市中心",
+        "毛泽东雕像"
       ],
-      "tips": "Достопримечательность Чэнду.",
+      "tips": "成都地标。",
       "image": "/img/ext/04dcca25a669.webp",
       "phone": "+86 028  6342 9616"
     },
@@ -1089,20 +1089,20 @@
       "name": "成都339",
       "nameEn": "Chengdu 339",
       "category": "landmark",
-      "description": "Телевизионная башня Чэнду, высотой 339 метров, с видом на город.",
-      "address": "Район Чэнхуа, Чэнду",
+      "description": "成都电视塔，高339米，可俯瞰城市。",
+      "address": "成都市成华区",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.12
       },
       "openingHours": "09:00-21:00",
-      "ticketPrice": "50 юаней",
-      "recommendedVisitTime": "1 час",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "1小时",
       "highlights": [
-        "Панорама города",
-        "Вращающийся ресторан"
+        "城市全景",
+        "旋转餐厅"
       ],
-      "tips": "Лучший вид в ясную погоду.",
+      "tips": "天气好时视野最佳。",
       "image": "/img/ext/d9f06cb8389a.webp",
       "phone": "+86 028  2291 7596"
     },
@@ -1154,20 +1154,20 @@
       "name": "白鹭湾湿地公园",
       "nameEn": "Bailuwan Wetland Park",
       "category": "nature",
-      "description": "Парк-болото на востоке Чэнду с богатой орнитофауной.",
-      "address": "Чэнду, район Цзиньцзянь",
+      "description": "成都东部的湿地公园，有丰富的鸟类。",
+      "address": "成都市锦江区",
       "coordinates": {
         "lat": 30.6,
         "lng": 104.12
       },
-      "openingHours": "Круглосуточно",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "2 часа",
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
       "highlights": [
-        "болото",
-        "птицы"
+        "湿地",
+        "鸟类"
       ],
-      "tips": "Отличное место для наблюдения за птицами.",
+      "tips": "观鸟好去处。",
       "image": "/img/ext/dd6e1ddbb2ad.webp",
       "phone": "+86 028  8602 4114"
     },
@@ -1177,18 +1177,18 @@
       "nameEn": "Chengdu Art Museum",
       "category": "museum",
       "description": "展示中外美术作品。",
-      "address": "Циньян, город Чэнду",
+      "address": "成都市青羊区",
       "coordinates": {
         "lat": 30.67,
         "lng": 104.05
       },
       "openingHours": "09:00-17:00",
-      "ticketPrice": "Бесплатно",
-      "recommendedVisitTime": "1,5 часа",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "1.5小时",
       "highlights": [
-        "Художественная выставка"
+        "美术展览"
       ],
-      "tips": "Узнайте больше об искусстве и культуре.",
+      "tips": "了解艺术文化。",
       "image": "/img/ext/8652e6198486.webp",
       "phone": "+86 028  9648 1345"
     }
@@ -1362,17 +1362,17 @@
         "lat": 30.6435,
         "lng": 104.0585
       },
-      "description": "The legendary inventor of chuan chuan (skewer hot pot), still the most famous branch.",
+      "description": "Легендарный изобретатель чуань-чуань (шашлычки в горячем котле), все еще самый известный филиал.",
       "dishHighlights": [
-        "Various skewers in broth",
-        "Spicy and mild options",
-        "Affordable"
+        "Различные шашлычки в бульоне",
+        "Острые и неострые варианты",
+        "Доступный"
       ],
       "tags": [
-        "local",
-        "chuan-chuan",
-        "casual",
-        "invented-here"
+        "местный",
+        "чуань-чуань",
+        "непринужденный",
+        "изобретено-здесь"
       ],
       "star": 0,
       "diamond": 0,
@@ -1386,26 +1386,26 @@
       "name": "夫妻肺片",
       "nameEn": "Fu Qi Fei Pian",
       "type": "local",
-      "cuisine": "Sichuan cold dishes",
+      "cuisine": "Сычуаньские холодные блюда",
       "avgPrice": 60,
       "rating": 4.6,
-      "address": "2 Xihuashi St, Qingyang District",
+      "address": "2 улица Сихуаши, район Цинъян",
       "coordinates": {
         "lat": 30.6535,
         "lng": 104.0545
       },
       "hours": "08:30-20:00",
-      "description": "Legendary restaurant famous for its namesake dish - husband and wife lung slices (cold beef offal in chili oil).",
+      "description": "Легендарный ресторан, известный своим фирменным блюдом - ломтиками легких мужа и жены (холодные потроха говядины в масле чили).",
       "dishHighlights": [
-        "Fu Qi Fei Pian (cold beef offal)",
-        "Spicy cucumber",
-        "Sichuan cold noodles"
+        "Fu Qi Fei Pian (холодные потроха говядины)",
+        "Острый огурец",
+        "Сычуаньские холодные лапша"
       ],
       "tags": [
-        "local",
-        "historic",
-        "cold-dishes",
-        "must-try"
+        "местная",
+        "историческая",
+        "холодные блюда",
+        "обязательно попробовать"
       ],
       "star": 0,
       "diamond": 0,
@@ -1416,27 +1416,27 @@
     {
       "id": "chengdu-8",
       "name": "鹤鸣茶社",
-      "nameEn": "He Ming Tea House",
+      "nameEn": "Чайный дом Хэ Мин",
       "type": "local",
-      "cuisine": "Sichuan tea",
+      "cuisine": "Сычуаньский чай",
       "avgPrice": 30,
       "rating": 4.5,
-      "address": "People's Park, Qingyang District",
+      "address": "Народный парк, район Цинъян",
       "coordinates": {
         "lat": 30.6575,
         "lng": 104.0665
       },
-      "description": "Chengdu's most famous traditional tea house in People's Park, operating since 1923.",
+      "description": "Самый известный традиционный чайный дом в Народном парке Чэнду, работающий с 1923 года.",
       "dishHighlights": [
-        "Traditional tea ceremony",
-        "Ear cleaning service",
-        "Mahjong available"
+        "Традиционная чайная церемония",
+        "Услуга по чистке ушей",
+        "Доступен маджонг"
       ],
       "tags": [
-        "local",
-        "tea-house",
-        "traditional",
-        "culture"
+        "местный",
+        "чайный дом",
+        "традиционный",
+        "культура"
       ],
       "star": 0,
       "diamond": 0,
@@ -1448,30 +1448,30 @@
     {
       "id": "chengdu-9",
       "name": "马旺子川小馆",
-      "nameEn": "Ma Wang Zi",
+      "nameEn": "Ма Ван Цзы",
       "type": "blackpearl",
       "diamond": 1,
-      "cuisine": "Sichuan",
+      "cuisine": "сычуаньская",
       "avgPrice": 120,
       "rating": 4.7,
-      "address": "No. 2 Gaopeng Rd, Chengdu",
+      "address": "ул. Гаопэн, 2, Чэнду",
       "coordinates": {
         "lat": 30.6525,
         "lng": 104.0705
       },
       "phone": "+86 28 8535 1888",
       "hours": "11:00-14:00, 17:00-21:00",
-      "description": "One diamond Black Pearl restaurant serving refined Sichuan home-style dishes in a beautiful courtyard setting.",
+      "description": "Ресторан с черной жемчужиной, предлагающий изысканные блюда сычуаньской домашней кухни в красивой дворовой обстановке.",
       "dishHighlights": [
-        "Braised pork in soy sauce",
-        "Spicy sliced beef",
-        "Sichuan classics"
+        "Тушеная свинина в соевом соусе",
+        "Острая говядина нарезанная ломтиками",
+        "Классика сычуаньской кухни"
       ],
       "tags": [
-        "black-pearl",
-        "sichuan",
-        "courtyard",
-        "quality"
+        "черный-жемчуг",
+        "сычуань",
+        "двор",
+        "качество"
       ],
       "star": 0,
       "imageUrl": "/img/ext/072f317a8797.webp",
@@ -1480,7 +1480,7 @@
     {
       "id": "chengdu-10",
       "name": "听香餐馆",
-      "nameEn": "Ting Xiang",
+      "nameEn": "Тин Сян",
       "type": "local",
       "cuisine": "Sichuan",
       "avgPrice": 80,
@@ -1676,22 +1676,22 @@
       "cuisine": "Mao cai (冒菜)",
       "avgPrice": 50,
       "rating": 4.8,
-      "address": "39 Kuixing Street, Wuhou District",
+      "address": "39 Улица Кунсин, Район Ухоу",
       "coordinates": {
         "lat": 30.6475,
         "lng": 104.0535
       },
-      "description": "The most famous mao cai restaurant in Chengdu with intense spicy flavor and tender ingredients.",
+      "description": "Самый известный ресторан мао-цай в Чэнду с насыщенным острым вкусом и нежными ингредиентами.",
       "dishHighlights": [
-        "Mao dai (instant noodles in broth)",
-        "Beef offal",
-        "Lotus root"
+        "Мао дай (лапша быстрого приготовления в бульоне)",
+        "Субпродукты говядины",
+        "Корень лотоса"
       ],
       "tags": [
         "mao-cai",
-        "spicy",
-        "local",
-        "popular"
+        "острый",
+        "местный",
+        "популярный"
       ],
       "star": 0,
       "diamond": 0,
@@ -1705,25 +1705,25 @@
       "name": "冒菜老店",
       "nameEn": "Mao Cai Lao Dian",
       "type": "local",
-      "cuisine": "Mao cai (冒菜)",
+      "cuisine": "Мао-цай (блюдо китайской кухни)",
       "avgPrice": 40,
       "rating": 4.6,
-      "address": "Near People's Park, Qingyang District",
+      "address": "Рядом с Народным парком, Район Цинъян",
       "coordinates": {
         "lat": 30.6595,
         "lng": 104.0645
       },
-      "description": "Local favorite mao cai spot with rich broth and affordable prices.",
+      "description": "Место мао-цай у местных жителей с насыщенным бульоном и доступными ценами.",
       "dishHighlights": [
-        "Tofu skin",
-        "Potatoes",
-        "Spicy broth"
+        "соевая кожа",
+        "картофель",
+        "острый бульон"
       ],
       "tags": [
-        "mao-cai",
-        "affordable",
-        "local",
-        "casual"
+        "мао-цай",
+        "недорогой",
+        "местный",
+        "неформальный"
       ],
       "star": 0,
       "diamond": 0,
@@ -1735,27 +1735,27 @@
     {
       "id": "chengdu-18",
       "name": "巴蜀大宅门",
-      "nameEn": "Ba Shu Da Zhai Men",
+      "nameEn": "Ба Шу Да Чжай Мэнь",
       "type": "local",
-      "cuisine": "Sichuan",
+      "cuisine": "Сычуань",
       "avgPrice": 90,
       "rating": 4.7,
-      "address": "88 West Yiguan Rd, Qingyang District",
+      "address": "88 Западная дорога Игуань, район Циньян",
       "coordinates": {
         "lat": 30.6715,
         "lng": 104.0395
       },
-      "description": "Upscale Sichuan restaurant in a traditional courtyard with classic dishes and modern presentation.",
+      "description": "Элитный ресторан сычуаньской кухни в традиционном дворе с классическими блюдами и современной подачей",
       "dishHighlights": [
-        "Twice-cooked pork",
-        "Kung Pao chicken",
-        "Fish fragrant eggplant"
+        "Свинина дважды приготовленная",
+        "Курица по-гунбао",
+        "Баклажан с рыбным ароматом"
       ],
       "tags": [
-        "sichuan",
-        "courtyard",
-        "upscale",
-        "classic"
+        "сычуаньская",
+        "дворовая",
+        "премиальная",
+        "классическая"
       ],
       "star": 0,
       "diamond": 0,
@@ -1767,26 +1767,26 @@
     {
       "id": "chengdu-19",
       "name": "红杏酒家",
-      "nameEn": "Hong Xing Jiu Jia",
+      "nameEn": "Хун Син Цзю Цзя",
       "type": "local",
-      "cuisine": "Sichuan",
+      "cuisine": "сычуаньская кухня",
       "avgPrice": 100,
       "rating": 4.6,
-      "address": "6 Linjiang Rd, Wuhou District",
+      "address": "6 Линьцзян Роуд, район Ухоу",
       "coordinates": {
         "lat": 30.6345,
         "lng": 104.0485
       },
-      "description": "Popular chain restaurant with consistent quality and elegant dining rooms.",
+      "description": "Популярный сетевой ресторан с неизменно высоким качеством и элегантными обеденными залами.",
       "dishHighlights": [
-        "Cold knife sliced beef",
-        "Braised pork belly",
-        "Sichuan spicy chicken"
+        "Говядина, нарезанная холодным ножом",
+        "Тушеная свиная грудинка",
+        "Острая курица по-сычуаньски"
       ],
       "tags": [
-        "sichuan",
-        "chain",
-        "reliable",
+        "сычуаньская",
+        "сетевой",
+        "надежный",
         "family"
       ],
       "star": 0,
@@ -2995,7 +2995,7 @@
       "nameEn": "Jinjiang Hotel",
       "budget": "mid",
       "priceRange": "¥500-900/night",
-      "address": "59 Changle Rd, Xuhui",
+      "address": "80 Section 1, South Ring Rd, Wuhou District",
       "coordinates": {
         "lat": 30.6425,
         "lng": 104.0565
@@ -3106,9 +3106,24 @@
     }
   ],
   "culturalTips": [
-    "Чэнду славится своей медленной и расслабленной атмосферой, известной как 'Чэнду мань мань'.",
-    "Не забудьте посетить исследовательский центр больших панд в Чэнду, чтобы увидеть этих милых животных.",
-    "Чэнду - столица провинции Сычуань, известная своей богатой историей и культурой.",
+    {
+      "category": "lifestyle",
+      "title": "Chengdu Lifestyle",
+      "content": "Chengdu people are known for laid-back lifestyle (mafan). Teahouse culture is important - people spend hours drinking tea and playing mahjong. Spicy food and chill vibe define the city.",
+      "importance": "high"
+    },
+    {
+      "category": "food",
+      "title": "Sichuan Cuisine",
+      "content": "Sichuan cuisine (川菜) known for numbing spice (ma la). Key dishes: hot pot, mapo tofu, dan dan noodles. Tea with food is common for digestion of spice.",
+      "importance": "high"
+    },
+    {
+      "category": "pandas",
+      "title": "Panda Conservation",
+      "content": "Giant pandas are endangered species and national treasure. Chengdu's Panda Base is leading conservation efforts. Respect the animals' welfare guidelines.",
+      "importance": "medium"
+    },
     {
       "category": "tea",
       "title": "Tea Culture",
@@ -3130,57 +3145,157 @@
     {
       "category": "spicy-food",
       "title": "Mala (Numbing Spicy) Culture",
-      "content": "Sichuan cuisine is famous for 'ma la' (麻辣) - the unique combination of numbing peppercorn and spicy chili. This creates a tingling, almost electric sensation. Visitors should start with mild dishes and work up to the authentic experience.",
+      "content": "Сычуаньская кухня знаменита «ма ла» (麻辣) — уникальным сочетанием онемевшего перца и острого чили. Это создает покалывающее, почти электрическое ощущение. Посетителям следует начинать с мягких блюд и постепенно переходить к аутентичному опыту.",
       "importance": "high"
     },
     {
       "category": "hotpot",
       "title": "Hotpot Social Dining",
-      "content": "Hotpot (火锅) is a communal dining experience where a boiling broth is shared at the table. You cook ingredients yourself in the pot. It's social, interactive, and considered a bonding activity. Eating hotpot together is how friendships and business relationships are strengthened.",
+      "content": "Хот-пот (火锅) — это общий трапезный опыт, при котором кипящий бульон подается за столом. Вы готовите ингредиенты сами в кастрюле. Это социально, интерактивно и считается мероприятием для укрепления связей. Совместное поедание хот-пота — способ укрепления дружеских и деловых отношений.",
       "importance": "high"
     },
     {
       "category": "slow-paced",
       "title": "Slow-Paced Living",
-      "content": "Chengdu is called 'the city where time slows down' (慢生活之都). Locals believe in enjoying life rather than rushing. You might see people playing chess in parks at noon on a Tuesday. This philosophy extends to business - meetings may start late and relationships matter more than schedules.",
+      "content": "Чэнду называют «городом, где время замедляется» (慢生活之都). Местные верят в наслаждение жизнью, а не в спешку. Вы можете увидеть людей, играющих в шахматы в парках в полдень во вторник. Эта философия распространяется на бизнес — встречи могут начинаться поздно, а отношения важнее расписания.",
       "importance": "medium"
     },
     {
       "category": "sichuan-opera",
       "title": "Sichuan Opera Face-Changing",
-      "content": "Sichuan Opera (川剧) is famous worldwide for 'bianlian' (变脸) - the lightning-fast mask changes. Actors change multiple masks in seconds, each representing a different emotion. Other skills include 'huo wei' (fire breathing) and 'chuilong' (ear pull). Shows are best experienced at Shufeng Yayun.",
+      "content": "Сычуаньская опера (川剧) знаменита во всем мире «бяньлянь» (变脸) — молниеносной сменой масок. Актеры меняют несколько масок за секунду, каждая из которых представляет разные эмоции. Другие навыки включают «хоу вэй» (огненное дыхание) и «чуйлун» (вытягивание ушей). Лучше всего спектакли смотреть в Шуфэн Яюнь.",
       "importance": "medium"
     },
-    "Чайные дома в Чэнду - отличное место для отдыха и знакомства с местной культурой.",
-    "Попробуйте местное блюдо 'мапо доуфу', острое тушеное тофу, которое является фирменным блюдом Сычуани.",
-    "Чэнду известен своими традиционными уличными представлениями, такими как изменение лиц и магия.",
-    "Посетите храм Ухоу, чтобы увидеть прекрасную архитектуру и почувствовать духовную атмосферу.",
-    "Рынок Цзинли - идеальное место для покупки сувениров и знакомства с местными ремеслами.",
-    "Не пропустите возможность попробовать чай Лунцзин, который славится своим уникальным вкусом и ароматом.",
-    "Чэнду - отличная отправная точка для поездок в горы Эмэйшань и Лэшань.",
-    "Улица Гуаньсян - популярное место для ночной жизни с множеством баров и ресторанов.",
-    "Посетите музей Саньсиндуй, чтобы узнать о древней цивилизации Шу.",
-    "Чэнду известен своими горячими источниками, где можно расслабиться после насыщенного дня.",
-    "Попробуйте 'хуацзюй', местный ликер, который часто подают в ресторанах.",
-    "Чэнду - город с богатой гастрономической культурой, где можно попробовать множество вкусных блюд.",
-    "Посетите парк Народов, чтобы увидеть, как местные жители занимаются тайцзи и играют в китайские шахматы.",
-    "Чэнду - отличное место для любителей еды, с множеством уличных закусок и ресторанов.",
-    "Не забудьте посетить башню Цюнлу, чтобы насладиться прекрасным видом на город.",
-    "Чэнду - город, где традиции и современность гармонично сочетаются.",
-    "Посетите музей Дуцзянъянь, чтобы узнать о древней ирригационной системе.",
-    "Чэнду - город с дружелюбными жителями, которые всегда рады гостям.",
-    "Чэнду - отличное место для изучения китайского языка и культуры.",
-    "Чэнду - город, где можно найти баланс между современным комфортом и традиционным образом жизни.",
+    {
+      "category": "three-kingdoms",
+      "title": "Three Kingdoms Heritage",
+      "content": "Чэнду — сердце культуры Трех царств (三国). Чжугэ Лян (Спящий дракон) был премьер-министром Шу здесь. Храм Ухоу посвящен ему. Город очень гордится этой эпохой — вы увидите темы Трех царств повсюду: от названий улиц до ресторанов.",
+      "importance": "medium"
+    },
+    {
+      "category": "bamboo",
+      "title": "Bamboo Culture",
+      "content": "Большие панды едят бамбук, но отношения Чэнду с бамбуком глубже. Бамбуковая мебель, бамбуковые палочки для чайной церемонии, побеги бамбука в кухне. База панд Бифэнся названа в честь бамбукового каньона. Бамбук символизирует стойкость и гибкость в местной культуре.",
+      "importance": "low"
+    },
+    {
+      "category": "foot-massage",
+      "title": "Foot Massage Culture",
+      "content": "В Чэнду бесчисленное количество магазинов массажа ног (足疗). После острой еды и маджонга местные расслабляются с массажем ног. Это не просто роскошь — это социальная активность, где собираются друзья. В качественных местах есть частные комнаты для групп.",
+      "importance": "low"
+    },
+    {
+      "category": "spicy-snacks",
+      "title": "Street Snacks Culture",
+      "content": "Уличные закуски Чэнду (小吃) легендарны. Попробуйте тофу с сильным запахом (臭豆腐), сахарные картины (糖画), конфеты Диндин (丁丁糖) и жареные рисовые лепешки (糍ба). Ночные рынки в Цзиньли и Кужжай предлагают лучшее разнообразие. Каждая закуска имеет многовековую историю.",
+      "importance": "medium"
+    },
+    {
+      "category": "sichuanese-dialect",
+      "title": "Sichuan Dialect",
+      "content": "Сычуаньский диалект (四川话) отличается от мандаринского. Он использует уникальные слова и особый тон, который заставляет китайцев из других регионов улыбаться. Местные часто добавляют «са» (撒) в конце предложения и используют «хао дуо» (好多) вместо «дуо шао». Изучение нескольких фраз порадует местных.",
+      "importance": "low"
+    },
+    {
+      "category": "nightlife",
+      "title": "Chengdu Nightlife",
+      "content": "Чэнду оживает ночью. Телебашня 339 имеет смотровые бары, Таику Ли имеет ночные кафе, а барная улица (酒吧一条街) около Цзиньли открыта до 3 часов ночи. В городе яркая клубная сцена как с китайскими, так и с западными заведениями.",
+      "importance": "medium"
+    },
+    {
+      "category": "giant-panda",
+      "title": "Panda as National Treasure",
+      "content": "Большие панды (大熊猫) — национальное сокровище Китая и главная достопримечательность Чэнду. Они находятся под угрозой исчезновения — в дикой природе осталось около 1800 особей. В Чэнду несколько баз панд — оригинальная Исследовательская база и новая Бифэнся, где иногда можно увидеть детенышей.",
+      "importance": "high"
+    },
+    {
+      "category": "ancient-shu",
+      "title": "Ancient Shu Civilization",
+      "content": "Чэнду был столицей древнего царства Шу (古蜀国) более 3000 лет назад. Археологические памятники Саньсиндуй и Цзиньша раскрывают загадочную цивилизацию с уникальными бронзовыми масками и золотыми артефаками. Это наследие — источник местной гордости.",
+      "importance": "medium"
+    },
+    {
+      "category": "flower-and-bird",
+      "title": "Flower and Bird Markets",
+      "content": "В Чэнду есть традиционные рынки цветов и птиц (花鸟市场), где местные покупают домашних животных, растения и ремесла. Самый известный — Рынок цветов и птиц около Народного парка. Это сенсорный опыт с продавцами, поющими птицами и цветущими цветами.",
+      "importance": "low"
+    },
+    {
+      "category": "dialect-hospitality",
+      "title": "Sichuan Hospitality",
+      "content": "Сычуаньцы известны теплотой и гостеприимством (热情好客). Если вы проявите интерес к местной культуре, местные могут пригласить вас на чай или еду. Сказать «баши» (巴适 — означает комфортно/отлично) порадует местных. Отказ от гостеприимства несколько раз считается невежливым.",
+      "importance": "medium"
+    },
+    {
+      "category": "sichuanese-dialect",
+      "title": "Sichuan Teahouse Social Code",
+      "content": "В чайных домах Чэнду действуют неписаные правила: войти в чайный дом означает, что вы открыты к разговору с незнакомцами. Местные часто делят стол с одинокими посетителями. Чайный мастер (茶博士) уважаем за навыки наливания — смотрите, как струя воды никогда не прерывается.",
+      "importance": "medium"
+    },
+    {
+      "category": "spicy-tolerance",
+      "title": "Building Spice Tolerance",
+      "content": "Начните с «微辣» (чуть острое) или «中辣» (средней остроты). Попросите «清汤» (бульон) при необходимости. Сычуаньский перец создаёт ощущение «ма» (онемение) — это аутентичный опыт, а не просто жар. Пейте чай или рисовую воду для охлаждения.",
+      "importance": "high"
+    },
+    {
+      "category": "foot-massage-culture",
+      "title": "Chengdu Foot Massage Etiquette",
+      "content": "Массажные салоны для ног (足疗) повсюду и общественно приемлемы. Чаевые 10-20% ожидаются. Для новичков «中式按摩» (китайский массаж) менее интенсивен. Популярные сети включают «良子» и «金色印象». Ходить с друзьями — обычное дело.",
+      "importance": "medium"
+    },
+    {
+      "category": "sichuan-opera-ticket",
+      "title": "Sichuan Opera Show Guide",
+      "content": "Shufeng Yayun (蜀风雅韵) — самая аутентичная площадка. Бронируйте через консьержа отеля или туристическое приложение. Шоу включают смену лица, вытягивание ушей и разливание чая. Фотосъёмка запрещена во время выступлений. Дресс-код не строгий, но рекомендуется умеренно деловой стиль.",
+      "importance": "medium"
+    },
+    {
+      "category": "panda-volunteer",
+      "title": "Panda Volunteer Program",
+      "content": "Центр разведения панд Chengdu Panda Base и Bifengxia предлагают волонтёрские программы, где можно чистить вольеры, готовить еду и узнать о сохранении панд. Бронируйте за 2+ месяца. Минимальный возраст 12 лет. Стоимость около 1000¥/день. Возьмите удобную одежду.",
+      "importance": "medium"
+    },
+    {
+      "category": "hotpot-dining-etiquette",
+      "title": "Hotpot Dining Etiquette",
+      "content": "Используйте общие палочки (公筷) для сырого мяса. Не мешайте постоянно — ингредиенты готовятся быстро. Макайте в масляный соус (油碟) для охлаждения. «七上八ое» — быстрые макания для говядины. Не пейте суп из кастрюли — он слишком жирный. Разделите счёт с «AA制» (AA).",
+      "importance": "high"
+    },
+    {
+      "category": "chuan-chuan-slang",
+      "title": "Chuan Chuan Slang Guide",
+      "content": "Чуаньчуаньсян имеет свой словарь: «签签» (цяньцянь) — для шампуров, «数签签» (шу цяньцянь) — считать шампуры в конце, «鸳鸯锅» (юаньянгго) — наполовину острое/наполовину мягкое. Не торопитесь — есть 2-3 часа нормально. Возьмите второй раунд, если всё ещё голодны.",
+      "importance": "low"
+    },
+    {
+      "category": "ancient-shu-language",
+      "title": "Ancient Shu Writing",
+      "content": "Народ Шу разработал свою собственную систему письма до объединения Китая. Некоторые иероглифы всё ещё видны на артефактах в музеях Саньсиндуй и Цзиньша. Мотивы «太阳鸟» (Солнечная птица) и «太阳神» (Солнечный бог) появляются повсюду в современном дизайне Чэнду.",
+      "importance": "low"
+    },
+    {
+      "category": "weekend-escape",
+      "title": "Weekend Escape Culture",
+      "content": "Жители Чэнду любят поездки на выходные (周末游) в близлежащие районы: Дуцзянъянь — для прохлады летом, Лэшань — для Будды, Цзючжайгоу — для пейзажа. «农家乐» (сельский отдых) популярен для семей. Пробки в пятницу вечером означают, что все уезжают из города.",
+      "importance": "medium"
+    },
+    {
+      "category": "sichuan-tea-varieties",
+      "title": "Sichuan Tea Varieties",
+      "content": "Чайная культура Чэнду сосредоточена на «三花茶» (San Hua Cha — чай третьего сорта), «碧潭飘雪» (Bitan Piao Xue — жасминовый зелёный чай) и «竹叶青» (Zhuye Qing — чай из бамбукового листа). Чай заваривается в стиле Гунфу с маленькими чашками и «ча хай» (гундаобэй).",
+      "importance": "medium"
+    },
     {
       "category": "panda-protection",
       "title": "Panda Conservation Awareness",
-      "content": "Giant pandas are '伞物种' (umbrella species) - protecting them protects their entire habitat. The 67 nature reserves for pandas also protect 8000+ other species. Don't use flash photography with pandas. Follow '安静参观' (quiet参观) rules.",
+      "content": "Большие панды — «伞物种» (зонтичный вид) — их защита защищает всю их среду обитания. 67 природных заповедников для панд также защищают более 8000 других видов. Не используйте вспышку при фотографировании панд. Соблюдайте правила «安静参观» (тихий осмотр).",
       "importance": "medium"
     },
     {
       "category": "chess-park-culture",
       "title": "Park Chess Culture",
-      "content": "Chess players in People's Park are serious - some have played for decades. '象棋' (Chinese chess) more popular than international chess. Standing behind a player and offering advice is acceptable - called '支招'. It's also a form of gambling for some.",
+      "content": "Шахматисты в Народном парке серьёзны — некоторые играют десятилетиями. «象棋» (китайские шахматы) популярнее международных шахмат. Стоять позади игрока и давать советы приемлемо — это называется «支招». Это также форма азартных игр для некоторых.",
       "importance": "low"
     }
   ],
@@ -3188,119 +3303,119 @@
     {
       "type": "ambulance",
       "name": "成都急救中心",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengdu Emergency Center",
       "phone": "120",
-      "address": "Guangzhou"
+      "address": "Citywide coverage"
     },
     {
       "type": "police",
       "name": "成都市公安局",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengdu Public Security Bureau",
       "phone": "110",
-      "address": "Guangzhou"
+      "address": "Various locations"
     },
     {
       "type": "hospital",
       "name": "成都新世纪妇女儿童医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengdu New Century Women & Children's Hospital",
       "phone": "+86 28 6533 1666",
-      "address": "Guangzhou",
+      "address": "99 Xiandong Rd, Chengdu",
       "coordinates": {
         "lat": 30.6455,
         "lng": 104.0565
       },
-      "notes": "For Singapore citizens"
+      "notes": "English-speaking, accepts international insurance"
     },
     {
       "type": "hospital",
       "name": "四川大学华西医院",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "West China Hospital, Sichuan University",
       "phone": "+86 28 8542 2114",
-      "address": "Guangzhou",
+      "address": "37 Guo Xue Xiang, Wuhou District",
       "coordinates": {
         "lat": 30.6385,
         "lng": 104.0745
       },
-      "notes": "For Singapore citizens"
+      "notes": "Best public hospital in western China, excellent for complex cases"
     },
     {
       "type": "embassy",
       "name": "美国驻成都总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "US Consulate General Chengdu",
       "phone": "+86 28 8558 3992",
-      "address": "Guangzhou",
+      "address": "IFS Tower 2, 1 Middle Section of Hong Kong Rd, Jinjiang",
       "coordinates": {
         "lat": 30.6545,
         "lng": 104.0705
       },
-      "notes": "For Singapore citizens"
+      "notes": "Emergency: +86 28 8558 3992"
     },
     {
       "type": "embassy",
       "name": "英国驻重庆总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "British Consulate General Chongqing",
       "phone": "+86 23 6369 1488",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Chongqing (nearest for Chengdu)",
+      "notes": "Nearest consular services for British citizens"
     },
     {
       "type": "embassy",
       "name": "德国驻成都总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "German Consulate General Chengdu",
       "phone": "+86 28 8458 8031",
-      "address": "Guangzhou",
+      "address": "28th Floor, Tower 1, Central Plaza, 19 Hong Kong Rd, Jinjiang District",
       "coordinates": {
         "lat": 30.6545,
         "lng": 104.0725
       },
-      "notes": "For Singapore citizens"
+      "notes": "German consular services for southwest China"
     },
     {
       "type": "embassy",
       "name": "日本驻成都总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Japanese Consulate General Chengdu",
       "phone": "+86 28 8558 6391",
-      "address": "Guangzhou",
+      "address": "IFS Tower 1, 1 Middle Section of Hong Kong Rd, Jinjiang District",
       "coordinates": {
         "lat": 30.6545,
         "lng": 104.0715
       },
-      "notes": "For Singapore citizens"
+      "notes": "Japanese consular services"
     },
     {
       "type": "fire",
       "name": "成都消防支队",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengdu Fire Brigade",
       "phone": "119",
-      "address": "Guangzhou"
+      "address": "Citywide coverage"
     },
     {
       "type": "tourist-police",
       "name": "成都旅游警察",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengdu Tourist Police",
       "phone": "+86 28 8640 7711",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Various tourist areas",
+      "notes": "English speaking tourist police in popular areas"
     },
     {
       "type": "tourist-complaint",
       "name": "成都旅游投诉热线",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "Chengdu Tourism Complaint Hotline",
       "phone": "12301",
-      "address": "Guangzhou",
-      "notes": "For Singapore citizens"
+      "address": "Citywide",
+      "notes": "For tourism complaints and emergencies"
     },
     {
       "type": "embassy",
       "name": "法国驻成都总领事馆",
-      "nameEn": "Singapore Consulate General Guangzhou",
+      "nameEn": "French Consulate General Chengdu",
       "phone": "+86 28 8447 7031",
-      "address": "Guangzhou",
+      "address": "19th Floor, Qingyang Century Center, 88 Qingjiang Rd, Wuhou District",
       "coordinates": {
         "lat": 30.6485,
         "lng": 104.0495
       },
-      "notes": "For Singapore citizens"
+      "notes": "French consular services"
     }
   ],
   "quickFacts": {
