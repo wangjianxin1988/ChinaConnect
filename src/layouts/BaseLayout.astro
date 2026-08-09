@@ -4,7 +4,6 @@ import "@/styles/tailwind.css";
 import EmergencyWrapper from "@/components/Emergency/EmergencyWrapper";
 import InstallPrompt from "@/components/pwa/InstallPrompt";
 import OfflineIndicator from "@/components/pwa/OfflineIndicator";
-import { ViewTransitions } from "astro:transitions";
 import { SUPPORTED_LANGUAGES, translations } from "@/i18n/translations";
 import type { Language } from "@/i18n/translations";
 import { generateHreflangUrlsWithDefault } from "@/lib/hreflang";
@@ -128,7 +127,6 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
     <meta name="theme-color" content="#3b82f6" />
 
     <title>{title}</title>
-    <ViewTransitions />
 
     <!--
       Boot: expose i18n + Supabase creds globally. Safe parse: a failure here does not break UI.
@@ -390,11 +388,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           if (!newLang) return;
           if (newLang === getLangInfo().lang) { closeLangMenu(); return; }
           safeSet(LANG_STORAGE_KEY, newLang);
-          applyLangAttributes(newLang);
-          applyTranslationsTo(document);
-          buildLangMenu();
           closeLangMenu();
-          window.dispatchEvent(new CustomEvent("languagechange", { detail: newLang }));
 
           // Navigate to /<lang>/<path> instead of just adding ?lang=<lang>.
           // Strip the existing language prefix (if any), then prepend the new one.
