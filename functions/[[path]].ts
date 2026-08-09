@@ -238,7 +238,6 @@ export const onRequest: PagesFunction = async (context) => {
             ar: "غير متصل - ChinaConnect",
             fa: "آفلاین - ChinaConnect",
           },
-        };
           "/guide": {
             en: "Travel Guide - ChinaConnect",
             ja: "旅行ガイド - ChinaConnect",
