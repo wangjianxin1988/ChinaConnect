@@ -308,19 +308,19 @@ const mapMarkers = [
       <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.population}</div>
-          <div class="text-sm text-gray-500">Population</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.population">Population</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.climate.type}</div>
-          <div class="text-sm text-gray-500">Climate</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.climate">Climate</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.attractions.length}</div>
-          <div class="text-sm text-gray-500">Attractions</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.attractionsLabel">Attractions</div>
         </div>
         <div class="text-center">
           <div class="text-2xl font-bold text-gray-900">{city.restaurants.length}</div>
-          <div class="text-sm text-gray-500">Restaurants</div>
+          <div class="text-sm text-gray-500" data-i18n="cityPage.restaurantsLabel">Restaurants</div>
         </div>
         <div class="text-center col-span-2 md:col-span-1">
           <WeatherWidget
@@ -400,11 +400,11 @@ const mapMarkers = [
             </div>
             <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
               <div>
-                <span class="font-medium text-gray-700">Summer:</span>
+                <span class="font-medium text-gray-700" data-i18n="cityPage.summer">Summer:</span>
                 <span class="text-gray-600 ml-2">{city.climate.avgSummerTemp}</span>
               </div>
               <div>
-                <span class="font-medium text-gray-700">Winter:</span>
+                <span class="font-medium text-gray-700" data-i18n="cityPage.winter">Winter:</span>
                 <span class="text-gray-600 ml-2">{city.climate.avgWinterTemp}</span>
               </div>
             </div>
@@ -430,28 +430,28 @@ const mapMarkers = [
               <div class="flex items-center gap-3">
                 <span class="text-2xl">🗣️</span>
                 <div>
-                  <div class="text-sm text-gray-500">Language</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.language">Language</div>
                   <div class="font-medium">{city.quickFacts.language}</div>
                 </div>
               </div>
               <div class="flex items-center gap-3">
                 <span class="text-2xl">💰</span>
                 <div>
-                  <div class="text-sm text-gray-500">Currency</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.currency">Currency</div>
                   <div class="font-medium">{city.quickFacts.currency}</div>
                 </div>
               </div>
               <div class="flex items-center gap-3">
                 <span class="text-2xl">🛂</span>
                 <div>
-                  <div class="text-sm text-gray-500">Visa</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.visa">Visa</div>
                   <div class="font-medium">{city.quickFacts.visa}</div>
                 </div>
               </div>
               <div class="flex items-center gap-3">
                 <span class="text-2xl">⚡</span>
                 <div>
-                  <div class="text-sm text-gray-500">Electricity</div>
+                  <div class="text-sm text-gray-500" data-i18n="cityPage.electricity">Electricity</div>
                   <div class="font-medium">{city.quickFacts.electricity}</div>
                 </div>
               </div>
@@ -581,7 +581,7 @@ const mapMarkers = [
                 <InlineAppPillsGroup
                   client:visible
                   apps={getAppsForSection(["transport"])}
-                  title="Recommended Transport Apps"
+                                  data-i18n-title="cityPage.recommendedTransportApps" title="Recommended Transport Apps"
                 />
               </div>
 
