@@ -31,11 +31,12 @@ export type HotelCategory =
 
 export const HOTEL_CATEGORY_CONFIG: Record<
   HotelCategory,
-  { label: string; labelEn: string; color: string; bg: string; icon: string }
+  { label: string; labelEn: string; labels: Record<string, string>; color: string; bg: string; icon: string }
 > = {
   luxury: {
     label: "豪华",
     labelEn: "Luxury",
+    labels: { ja: "ラクジャリー", ko: "루첌리", "zh-CN": "豪华", "zh-TW": "豪華", th: "หรูหรา", vi: "Sang trong", ru: "Роскошный", fr: "Luxe", de: "Luxus", ar: "فاخر", fa: "لوکس" },
     color: "text-purple-700",
     bg: "bg-purple-100",
     icon: "👑",
@@ -43,6 +44,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   mid_range: {
     label: "中端",
     labelEn: "Mid-Range",
+    labels: { ja: "ミッドレンジ", ko: "중앙", "zh-CN": "中端", "zh-TW": "中端", th: "ระดับกลาง", vi: "Trung cap", ru: "Средний", fr: "Moyen", de: "Mittelklasse", ar: "متوسط", fa: "متوسط" },
     color: "text-blue-700",
     bg: "bg-blue-100",
     icon: "🏨",
@@ -50,6 +52,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   budget: {
     label: "经济",
     labelEn: "Budget",
+    labels: { ja: "バジェット", ko: "경제", "zh-CN": "经济", "zh-TW": "經濟", th: "ประหยัด", vi: "Tiet kiem", ru: "Бюджетный", fr: "Economique", de: "Guenstig", ar: "اقتصادي", fa: "اقتصادی" },
     color: "text-green-700",
     bg: "bg-green-100",
     icon: "💰",
@@ -57,6 +60,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   hostel: {
     label: "青年旅舍",
     labelEn: "Hostel",
+    labels: { ja: "ホステル", ko: "호스텔", "zh-CN": "青年旅舍", "zh-TW": "青年旅社", th: "โธมเทล", vi: "Nha tro", ru: "Хостел", fr: "Auberge", de: "Hostel", ar: "نزل", fa: "هاستل" },
     color: "text-cyan-700",
     bg: "bg-cyan-100",
     icon: "🛏️",
@@ -64,6 +68,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   love_hotel: {
     label: "情趣",
     labelEn: "Love Hotel",
+    labels: { ja: "ラブホテル", ko: "럭호텔", "zh-CN": "情趣", "zh-TW": "情趣", th: "โรงแรม", vi: "Khach san tinh yeu", ru: "Отель любви", fr: "Hotel d amours", de: "Stundenhotel", ar: "فندق حب", fa: "هتل عشق" },
     color: "text-pink-700",
     bg: "bg-pink-100",
     icon: "💕",
@@ -71,6 +76,7 @@ export const HOTEL_CATEGORY_CONFIG: Record<
   esports_hotel: {
     label: "电竞",
     labelEn: "Esports",
+    labels: { ja: "エスポーツ", ko: "이스포츠", "zh-CN": "电竞", "zh-TW": "電競", th: "อีสปอร์ต", vi: "The thao dien tu", ru: "Киберспорт", fr: "Esports", de: "E-Sport", ar: "الألعاب الإلكترونية", fa: "اسپورت" },
     color: "text-orange-700",
     bg: "bg-orange-100",
     icon: "🎮",
@@ -142,9 +148,10 @@ function buildPriceDisplay(hotel: HotelData): string | null {
 
 // ─── Component ───────────────────────────────────────────────────
 
-export function HotelCard({ hotel, onClick, compact = false }: HotelCardProps) {
+export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: HotelCardProps) {
   const config = HOTEL_CATEGORY_CONFIG[hotel.category];
   const priceDisplay = buildPriceDisplay(hotel);
+  const catLabel = config.labels?.[lang] || config.labelEn || config.label;
 
   return (
     <div
@@ -176,7 +183,7 @@ export function HotelCard({ hotel, onClick, compact = false }: HotelCardProps) {
             <span
               className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold ${config.color} ${config.bg} shadow-sm`}
             >
-              {config.icon} {config.label}
+              {config.icon} {catLabel}
             </span>
           </div>
           {/* Price badge overlay */}
@@ -207,7 +214,7 @@ export function HotelCard({ hotel, onClick, compact = false }: HotelCardProps) {
             <span
               className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold ${config.color} ${config.bg}`}
             >
-              {config.icon} {config.label}
+              {config.icon} {catLabel}
             </span>
             {hotel.rating != null && (
               <span className="text-yellow-500 text-sm font-medium">

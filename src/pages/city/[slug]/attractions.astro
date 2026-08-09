@@ -84,11 +84,11 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
           {categories.map((cat: string) => {
             const count = city.attractions.filter((a: any) => a.category === cat).length;
             const catLabels = {
-              historical: "🏛️Historical",
-              cultural: "🎎 Cultural",
-              modern: "🏙️ Modern",
-              natural: "🌿 Natural",
-              entertainment: "🎢 Entertainment",
+              historical: { en: 'Historical', ja: '歴史', ko: '역사', 'zh-CN': '历史', 'zh-TW': '歷史', th: 'ประวัติศาสตร์', vi: 'Lịch sử', ru: 'Исторический', fr: 'Historique', de: 'Historisch', ar: 'تاريخي', fa: 'تاریخی' },
+              cultural: { en: 'Cultural', ja: '文化', ko: '문화', 'zh-CN': '文化', 'zh-TW': '文化', th: 'วัฒนธรรม', vi: 'Văn hóa', ru: 'Культурный', fr: 'Culturel', de: 'Kulturell', ar: 'ثقافي', fa: 'فرهنگی' },
+              modern: { en: 'Modern', ja: 'モダン', ko: '현대', 'zh-CN': '现代', 'zh-TW': '現代', th: 'ทันสมḱย', vi: 'Hiện đại', ru: 'Современный', fr: 'Moderne', de: 'Modern', ar: 'حديث', fa: 'مدرن' },
+              natural: { en: 'Natural', ja: '自然', ko: '자연', 'zh-CN': '自然', 'zh-TW': '自然', th: 'ธรรมชาติ', vi: 'Thiên nhiên', ru: 'Природа', fr: 'Naturel', de: 'Natur', ar: 'طبيعي', fa: 'طبیعی' },
+              entertainment: { en: 'Entertainment', ja: 'エンターテイメント', ko: '연예', 'zh-CN': '娱乐', 'zh-TW': '娛樂', th: 'การบันเสริม', vi: 'Giải trí', ru: 'Развлечения', fr: 'Divertissement', de: 'Unterhaltung', ar: 'ترفيه', fa: 'سرگرمی' }
             };
             return (
               <button

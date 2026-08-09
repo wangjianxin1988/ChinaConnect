@@ -120,7 +120,7 @@ const pageDescription = initialCategory
     <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {initialHotels.map((hotel) => (
         <div class="hotel-item" data-category={hotel.category}>
-          <HotelCard hotel={{ ...hotel, imageUrl: hotel.image }} client:visible />
+          <HotelCard hotel={{ ...hotel, imageUrl: hotel.image }} lang={lang} client:visible />
         </div>
       ))}
     </div>
