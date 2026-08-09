@@ -67,8 +67,15 @@ export const onRequest: PagesFunction = async (context) => {
     const locale = localeMatch[1];
     const remainingPath = localeMatch[2] || "/";
 
-    const rewriteUrl = new URL(remainingPath, url.origin);
-    const response = await context.env.ASSETS.fetch(rewriteUrl.toString());
+    // Prefer the locale-prefixed static asset first (Astro SSG now emits
+    // dist/<lang>/city/<slug>/index.html etc.). Only fall back to the
+    // stripped-prefix URL when the locale-specific page does not exist
+    // (e.g. dynamic routes like /api/* or routes not yet migrated).
+    const localizedUrl = new URL(path, url.origin);
+    const localizedRes = await context.env.ASSETS.fetch(localizedUrl.toString());
+    const response = localizedRes.ok
+      ? localizedRes
+      : await context.env.ASSETS.fetch(new URL(remainingPath, url.origin).toString());
 
     if (response.ok) {
       const html = await response.text();
