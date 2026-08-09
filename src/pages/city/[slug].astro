@@ -203,17 +203,24 @@ const SITE_URL = "https://chinaengage.org";
 const enCityUrl = `${SITE_URL}/city/${city.slug}`;
 const zhCityUrl = `${SITE_URL}/zh/city/${city.slug}`;
 
+const _t = translations[lang] || translations.en;
+const _lookup = (key) => {
+  const parts = key.split('.');
+  let cur = _t;
+  for (const p of parts) { if (cur && typeof cur === 'object' && p in cur) cur = cur[p]; else return key; }
+  return typeof cur === 'string' ? cur : key;
+};
 const modules = [
-  { id: "overview", label: "Overview", i18nLabel: 'cityPage.tabOverview', icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
-  { id: "food-highlights", label: "Food", i18nLabel: 'cityPage.tabFood', icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
-  { id: "attractions", label: "Attractions", i18nLabel: 'cityPage.tabAttractions', icon: "🏛️", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
-  { id: "transport", label: "Transport", i18nLabel: 'cityPage.tabTransport', icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
-  { id: "accommodation", label: "Stay", i18nLabel: 'cityPage.tabHotels', icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
-  { id: "payment", label: "Payment", i18nLabel: 'cityPage.tabPayment', icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
-  { id: "connectivity", label: "SIM/eSIM", i18nLabel: 'cityPage.tabConnectivity', icon: "📶", colorClass: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100" },
-  { id: "apps", label: "Apps", i18nLabel: 'cityPage.tabApps', icon: "📱", colorClass: "bg-gray-50 text-gray-700 hover:bg-gray-100" },
-  { id: "culture", label: "Culture", i18nLabel: 'cityPage.tabCulture', icon: "🎎", colorClass: "bg-pink-50 text-pink-700 hover:bg-pink-100" },
-  { id: "emergency", label: "Emergency", i18nLabel: 'cityPage.tabEmergency', icon: "🚨", colorClass: "bg-red-50 text-red-700 hover:bg-red-100" },
+  { id: "overview", label: () => _lookup('cityPage.tabOverview'), icon: "📍", colorClass: "bg-blue-50 text-blue-700 hover:bg-blue-100" },
+  { id: "food-highlights", label: () => _lookup('cityPage.tabFood'), icon: "🍜", colorClass: "bg-orange-50 text-orange-700 hover:bg-orange-100" },
+  { id: "attractions", label: () => _lookup('cityPage.tabAttractions'), icon: "🏛️", colorClass: "bg-purple-50 text-purple-700 hover:bg-purple-100" },
+  { id: "transport", label: () => _lookup('cityPage.tabTransport'), icon: "🚇", colorClass: "bg-green-50 text-green-700 hover:bg-green-100" },
+  { id: "accommodation", label: () => _lookup('cityPage.tabHotels'), icon: "🏨", colorClass: "bg-teal-50 text-teal-700 hover:bg-teal-100" },
+  { id: "payment", label: () => _lookup('cityPage.tabPayment'), icon: "💳", colorClass: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100" },
+  { id: "connectivity", label: () => _lookup('cityPage.tabConnectivity'), icon: "📶", colorClass: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100" },
+  { id: "apps", label: () => _lookup('cityPage.tabApps'), icon: "📱", colorClass: "bg-gray-50 text-gray-700 hover:bg-gray-100" },
+  { id: "culture", label: () => _lookup('cityPage.tabCulture'), icon: "🎎", colorClass: "bg-pink-50 text-pink-700 hover:bg-pink-100" },
+  { id: "emergency", label: () => _lookup('cityPage.tabEmergency'), icon: "🚨", colorClass: "bg-red-50 text-red-700 hover:bg-red-100" },
 ];
 
 function getBadgeClass(type: string) {
@@ -337,7 +344,7 @@ const mapMarkers = [
             class={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${mod.colorClass}`}
           >
             <span>{mod.icon}</span>
-            <span>{mod.label}</span>
+            <span>{mod.label()}</span>
           </a>
         ))}
       </div>
