@@ -1,0 +1,206 @@
+---
+
+/**
+ * Dedicated Hotels Page
+ * /city/[slug]/hotels
+ * 
+ * Features:
+ * - Category filtering (luxury/mid/budget/hostel/love/esports)
+ * - Hotel cards with images, map links, phone calls
+ * - Responsive grid layout
+ */
+import { translations } from "@/i18n/translations";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { HotelCard } from "@/components/hotel/HotelCard";
+import { HotelCategoryFilter } from "@/components/hotel/HotelCategoryFilter";
+import { citySlugs, getCityBySlug } from "@/data/cities/index";
+import { getCityData } from "@/data/cities-i18n";
+import { getHotelsByCity, getHotelCategoryCounts, getHotelCount } from "@/data/hotels";
+import { HOTEL_CATEGORY_CONFIG, type HotelCategory } from "@/components/hotel/HotelCard";
+
+export function getStaticPaths() {
+  const langs = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
+  return langs.flatMap((lang) => citySlugs.map((slug) => ({ params: { lang, slug } })));
+}
+
+const { slug, lang: paramLang } = Astro.params;
+const lang = (paramLang as string) || "en";
+const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
+
+if (!city) {
+  return Astro.redirect("/404");
+}
+
+const hotels = getHotelsByCity(slug as string);
+const categoryCounts = getHotelCategoryCounts(slug as string);
+const totalCount = getHotelCount(slug as string);
+
+// Read ?category= from URL so users landing from a category card on the city
+// home page land on the matching filtered view.
+const VALID_CATEGORIES: HotelCategory[] = [
+  "luxury", "mid_range", "budget", "hostel", "love_hotel", "esports_hotel",
+];
+const requestedCategory = Astro.url.searchParams.get("category");
+const initialCategory: HotelCategory | null =
+  requestedCategory && VALID_CATEGORIES.includes(requestedCategory as HotelCategory)
+    ? (requestedCategory as HotelCategory)
+    : null;
+const initialHotels = initialCategory
+  ? hotels.filter((h) => h.category === initialCategory)
+  : hotels;
+
+const pageTitle = initialCategory
+  ? `${city.nameEn} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelZh} Hotels | ChinaConnect`
+  : `${city.nameEn} Hotels - All Categories | ChinaConnect`;
+const totalFiltered = initialHotels.length;
+const pageDescription = initialCategory
+  ? `Browse ${totalFiltered} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelEn} hotels in ${city.nameEn}. Open in map app, tap to call.`
+  : `Find the perfect hotel in ${city.nameEn}. Browse luxury, mid-range, budget, hostels, love hotels, and esports hotels. ${hotels.length} options available.`;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords: [city.nameEn, city.name, `${city.nameEn} hotels`, `${city.nameEn} accommodation`, "luxury hotels", "budget hotels", "hostels", "esports hotels"],
+  }}
+  lang={lang}
+>
+  <!-- Hero Section -->
+  <section class="relative h-64 bg-gradient-to-br from-teal-600 to-blue-600">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black/60 to-transparent"></div>
+    </div>
+    <div class="container-custom relative h-full flex flex-col justify-end pb-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-4">
+        <a href="/" class="text-teal-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
+        <span class="text-teal-300 mx-2">/</span>
+        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{city.nameEn}</a>
+        <span class="text-teal-300 mx-2">/</span>
+        <span class="text-white" data-i18n="cityPage.hotelsHeading">Hotels</span>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
+        <span>🏨</span> {city.nameEn} Hotels
+      </h1>
+      <p class="text-teal-100">{totalCount} hotels across {Object.keys(categoryCounts).length} categories</p>
+    </div>
+  </section>
+
+  <!-- Category Stats Bar -->
+  <section class="bg-white border-b">
+    <div class="container-custom py-4">
+      <div class="flex overflow-x-auto gap-4 pb-2">
+        {Object.entries(HOTEL_CATEGORY_CONFIG).map(([key, config]) => (
+          <div class="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-lg shrink-0">
+            <span class="text-lg">{config.icon}</span>
+            <div>
+              <div class="text-xs text-gray-500">{config.labelZh}</div>
+              <div class="font-bold text-gray-900">{categoryCounts[key as HotelCategory] || 0}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container-custom py-8">
+    <!-- Category Filter -->
+    <div class="mb-8">
+      <HotelCategoryFilter
+        activeCategory={initialCategory}
+        categoryCounts={categoryCounts}
+        client:visible
+      />
+    </div>
+
+    <!-- Hotel Grid (pre-filtered on the server when ?category= is set) -->
+    <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {initialHotels.map((hotel) => (
+        <div class="hotel-item" data-category={hotel.category}>
+          <HotelCard hotel={{ ...hotel, imageUrl: hotel.image }} lang={lang} client:visible />
+        </div>
+      ))}
+    </div>
+    <!-- Empty State -->
+    <div id="empty-state" class="hidden text-center py-16">
+      <span class="text-6xl mb-4 block">🏨</span>
+      <h3 class="text-xl font-semibold text-gray-700 mb-2" data-i18n="cityPage.noHotels">No hotels in this category</h3>
+      <p class="text-gray-500" data-i18n="cityPage.noHotelsDesc">Try selecting a different category</p>
+    </div>
+
+    <!-- Back to City -->
+    <div class="mt-12 text-center">
+      <a
+        href={`/city/${city.slug}`}
+        class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-semibold text-sm hover:bg-gray-200 transition-all"
+      >
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 17l-5-5m0 0l5-5m-5 5H6m7 5H6" />
+        </svg>
+        <span>Back to {city.nameEn}</span>
+      </a>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  // Category filtering for the React-rendered HotelCategoryFilter.
+  // The filter component renders buttons with aria-pressed; we listen to clicks
+  // on them and toggle visibility of the pre-rendered hotel cards.
+  // Works under both regular page load and Astro view transitions.
+  function initHotelFilter() {
+    const filterBar = document.querySelector('[data-hotel-filter-bar]');
+    const hotelItems = document.querySelectorAll('.hotel-item');
+    const emptyState = document.getElementById('empty-state');
+    const hotelGrid = document.getElementById('hotel-grid');
+    if (!filterBar || !hotelItems.length) return;
+
+    const buttons = filterBar.querySelectorAll('button[aria-pressed]');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category || 'all';
+        // Sync aria-pressed visual state across siblings
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        // Toggle card visibility
+        let visible = 0;
+        hotelItems.forEach((item) => {
+          const itemCat = item.getAttribute('data-category');
+          if (cat === 'all' || itemCat === cat) {
+            (item as HTMLElement).style.display = '';
+            visible++;
+          } else {
+            (item as HTMLElement).style.display = 'none';
+          }
+        });
+        if (visible === 0) {
+          emptyState?.classList.remove('hidden');
+          hotelGrid?.classList.add('hidden');
+        } else {
+          emptyState?.classList.add('hidden');
+          hotelGrid?.classList.remove('hidden');
+        }
+        // Update URL ?category= so the state is shareable / back-button works
+        try {
+          const url = new URL(window.location.href);
+          if (cat === 'all') {
+            url.searchParams.delete('category');
+          } else {
+            url.searchParams.set('category', cat);
+          }
+          window.history.replaceState({}, '', url);
+        } catch {}
+      });
+    });
+  }
+
+  // Run on regular load and on Astro view transitions
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHotelFilter);
+  } else {
+    initHotelFilter();
+  }
+  document.addEventListener('astro:page-load', initHotelFilter);
+</script>
