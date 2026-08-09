@@ -8,19 +8,26 @@ import {
   TRANSPORT_HELPERS,
 } from "@/data/guide/transport";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function TransportGuideClient() {
+interface TransportGuideClientProps {
+  lang?: Language;
+}
+
+export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps = {}) {
+  const t = translations[lang] || translations.en;
+  const tg = (t.transportGuide || translations.en.transportGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("arrival");
   const [selectedMode, setSelectedMode] = useState<string | null>(null);
 
   const tabs = [
-    { id: "arrival", label: "Arrival", icon: "✈️" },
-    { id: "local", label: "City Transport", icon: "🚇" },
-    { id: "taxi", label: "Taxi/Didi", icon: "🚕" },
-    { id: "intercity", label: "Inter-city", icon: "🚄" },
-    { id: "trains", label: "Train Booking", icon: "🚂" },
-    { id: "distances", label: "Distances", icon: "📏" },
-    { id: "phrases", label: "Phrases", icon: "💬" },
+    { id: "arrival", label: tg.tabArrival || "Arrival", icon: "✈️" },
+    { id: "local", label: tg.tabLocal || "City Transport", icon: "🚇" },
+    { id: "taxi", label: tg.tabTaxi || "Taxi/Didi", icon: "🚕" },
+    { id: "intercity", label: tg.tabIntercity || "Inter-city", icon: "🚄" },
+    { id: "trains", label: tg.tabTrains || "Train Booking", icon: "🚂" },
+    { id: "distances", label: tg.tabDistances || "Distances", icon: "📏" },
+    { id: "phrases", label: tg.tabPhrases || "Phrases", icon: "💬" }
   ];
 
   const currentMode =
@@ -104,15 +111,15 @@ export function TransportGuideClient() {
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>Keep arrival card safe - you'll need it for emigration</span>
+                <span>{tg.keepArrivalCardSafe || "Keep arrival card safe - you'll need it for emigration"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>Use Didi app for airport pickup - cheaper than taxi queue</span>
+                <span>{tg.useDidiTip || "Use Didi app for airport pickup - cheaper than taxi queue"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>Airport WiFi usually available - connect before buying SIM</span>
+                <span>{tg.airportWifiTip || "Airport WiFi usually available - connect before buying SIM"}</span>
               </li>
             </ul>
           </div>
@@ -125,7 +132,7 @@ export function TransportGuideClient() {
           {/* Transport Options */}
           <div className="grid lg:grid-cols-3 gap-4">
             <div className="lg:col-span-1 space-y-3">
-              <h3 className="font-semibold">Select Transport Mode</h3>
+              <h3 className="font-semibold">{tg.selectModeHeading || "Select Transport Mode"}</h3>
               {LOCAL_TRANSPORT_MODES.map((mode) => (
                 <button
                   key={mode.mode}
@@ -211,7 +218,7 @@ export function TransportGuideClient() {
               ) : (
                 <div className="bg-card rounded-xl border p-12 text-center">
                   <span className="text-6xl mb-4 block">🚇</span>
-                  <h3 className="text-xl font-semibold mb-2">Select a Transport Mode</h3>
+                  <h3 className="text-xl font-semibold mb-2">{tg.selectModePrompt || "Select a Transport Mode"}</h3>
                   <p className="text-muted-foreground">
                     Click on a transport option to see detailed guide
                   </p>
@@ -240,7 +247,7 @@ export function TransportGuideClient() {
                   <p className="text-sm text-muted-foreground">{mode.descriptionCn}</p>
 
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">How to Use:</h4>
+                    <h4 className="font-medium text-sm mb-2">{tg.howToUseLabel || "How to Use:"}</h4>
                     <ul className="space-y-1">
                       {mode.howToUse.map((step, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
@@ -252,7 +259,7 @@ export function TransportGuideClient() {
                   </div>
 
                   <div className="bg-green-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">Pro Tips:</h4>
+                    <h4 className="font-medium text-sm mb-2">{tg.proTipsLabel || "Pro Tips:"}</h4>
                     <ul className="space-y-1">
                       {mode.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
@@ -270,7 +277,7 @@ export function TransportGuideClient() {
           {/* Booking Platforms */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Booking Platforms</h3>
+              <h3 className="font-semibold text-lg">{tg.bookingPlatformsHeading || "Booking Platforms"}</h3>
             </div>
             <div className="divide-y">
               <div className="p-4">
@@ -280,7 +287,7 @@ export function TransportGuideClient() {
                 </p>
               </div>
               <div className="p-4">
-                <h4 className="font-medium">Trip.com / Ctrip</h4>
+                <h4 className="font-medium">{tg.tripcomLabel || "Trip.com / Ctrip"}</h4>
                 <p className="text-sm text-muted-foreground">
                   All transport types with English interface
                 </p>
@@ -301,7 +308,7 @@ export function TransportGuideClient() {
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Useful Transport Phrases</h2>
+              <h2 className="font-semibold text-xl">{tg.usefulPhrasesHeading || "Useful Transport Phrases"}</h2>
             </div>
             <div className="divide-y">
               {TRANSPORT_HELPERS.usefulPhrases.map((phrase, idx) => (
@@ -373,7 +380,7 @@ export function TransportGuideClient() {
           </div>
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Taxi Useful Phrases</h2>
+              <h2 className="font-semibold text-xl">{tg.taxiPhrasesHeading || "Taxi Useful Phrases"}</h2>
             </div>
             <div className="divide-y">
               {TAXI_GUIDE.usefulPhrases.map((phrase, idx) => (
@@ -425,7 +432,7 @@ export function TransportGuideClient() {
           {/* Seat Classes */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-purple-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Seat Classes</h2>
+              <h2 className="font-semibold text-xl">{tg.seatClassesHeading || "Seat Classes"}</h2>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -452,7 +459,7 @@ export function TransportGuideClient() {
           {/* Tips */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-green-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Train Booking Tips</h2>
+              <h2 className="font-semibold text-xl">{tg.trainBookingTipsHeading || "Train Booking Tips"}</h2>
             </div>
             <div className="divide-y">
               {TRAIN_BOOKING_GUIDE.tips.map((tip, idx) => (
@@ -471,7 +478,7 @@ export function TransportGuideClient() {
         <div className="space-y-6">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">City Distance & Travel Time</h2>
+              <h2 className="font-semibold text-xl">{tg.cityDistanceHeading || "City Distance & Travel Time"}</h2>
               <p className="text-sm text-muted-foreground">
                 Compare train vs plane for popular routes
               </p>
@@ -482,8 +489,8 @@ export function TransportGuideClient() {
                   <tr>
                     <th className="text-left p-3">From</th>
                     <th className="text-left p-3">To</th>
-                    <th className="text-left p-3">By Train</th>
-                    <th className="text-left p-3">By Plane</th>
+                    <th className="text-left p-3">{tg.byTrainLabel || "By Train"}</th>
+                    <th className="text-left p-3">{tg.byPlaneLabel || "By Plane"}</th>
                     <th className="text-left p-3">Recommendation</th>
                   </tr>
                 </thead>

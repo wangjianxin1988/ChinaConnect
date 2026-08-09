@@ -6,17 +6,18 @@ import {
   EMERGENCY_TYPES,
 } from "@/data/guide/emergency";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function EmergencyGuideClient() {
+export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.emergencyGuide || translations.en.emergencyGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("overview");
   const [selectedEmergency, setSelectedEmergency] = useState<string | null>(null);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const tabs = [
-    { id: "overview", label: "Emergency Types", icon: "🚨" },
-    { id: "contacts", label: "Emergency Contacts", icon: "📞" },
-    { id: "embassy", label: "Embassy Info", icon: "🏛️" },
-    { id: "phrases", label: "Useful Phrases", icon: "💬" },
+    { id: "overview", label: tg.tabOverview || "Emergency Types", icon: "🚨" },
+    { id: "contacts", label: tg.tabContacts || "Emergency Contacts", icon: "📞" },
+    { id: "embassy", label: tg.tabEmbassy || "Embassy Info", icon: "🏛️" },
+    { id: "phrases", label: tg.tabPhrases || "Useful Phrases", icon: "💬" },
   ];
 
   const currentEmergency = EMERGENCY_TYPES.find((e) => e.type === selectedEmergency);
@@ -28,24 +29,24 @@ export function EmergencyGuideClient() {
         <div className="flex items-center gap-3">
           <span className="text-3xl">🚨</span>
           <div>
-            <h3 className="font-bold text-lg">Emergency Numbers in China</h3>
+            <h3 className="font-bold text-lg">{tg.bannerTitle || "Emergency Numbers in China"}</h3>
             <p className="text-red-100 text-sm">
-              Save these numbers - Police: 110, Ambulance: 120, Fire: 119
+              {tg.bannerSubtitle || "Save these numbers - Police: 110, Ambulance: 120, Fire: 119"}
             </p>
           </div>
         </div>
         <div className="hidden md:flex items-center gap-4">
           <div className="text-center">
             <div className="text-2xl font-bold">110</div>
-            <div className="text-xs">Police</div>
+            <div className="text-xs">{tg.labelPolice || "Police"}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold">120</div>
-            <div className="text-xs">Ambulance</div>
+            <div className="text-xs">{tg.labelAmbulance || "Ambulance"}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold">119</div>
-            <div className="text-xs">Fire</div>
+            <div className="text-xs">{tg.labelFire || "Fire"}</div>
           </div>
         </div>
       </div>

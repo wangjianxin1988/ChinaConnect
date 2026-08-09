@@ -1,12 +1,13 @@
 import { PRICE_DATA, TIPS } from "@/data/price-transparency";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function PriceTransparencyClient() {
+export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.priceTransparency || translations.en.priceTransparency || {}) as Record<string, string>;
   const [activeCategory, setActiveCategory] = useState("all");
   const [showBothPrices, setShowBothPrices] = useState(true);
 
   const categories = [
-    { id: "all", label: "All", icon: "📊" },
+    { id: "all", label: tg.all || "All", icon: "📊" },
     ...PRICE_DATA.map((c) => ({ id: c.category, label: c.categoryCn, icon: c.icon })),
   ];
 

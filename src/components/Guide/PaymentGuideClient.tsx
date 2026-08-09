@@ -1,15 +1,24 @@
 import { ATM_LOCATIONS, PAYMENT_FAQS, PAYMENT_METHODS, SHOPPING_TIPS } from "@/data/guide/payment";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function PaymentGuideClient() {
+interface PaymentGuideClientProps {
+  lang?: Language;
+}
+
+export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}) {
+  const t = translations[lang] || translations.en;
+  const tg = (t.paymentGuide || translations.en.paymentGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("methods");
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const tabs = [
-    { id: "methods", label: "Payment Methods", icon: "💳" },
-    { id: "shopping", label: "Shopping Tips", icon: "🛍️" },
-    { id: "atms", label: "ATM Locations", icon: "🏦" },
-    { id: "faqs", label: "FAQs", icon: "❓" },
+    { id: "alipay", label: tg.tabAlipay || "Alipay", icon: "??" },
+    { id: "wechat", label: tg.tabWechat || "WeChat Pay", icon: "??" },
+    { id: "cash", label: tg.tabCash || "Cash & Cards", icon: "??" },
+    { id: "tax", label: tg.tabTax || "Tax Refund", icon: "??" },
+    { id: "atm", label: tg.tabAtm || "ATMs", icon: "??" },
+    { id: "faq", label: tg.tabFaq || "FAQ", icon: "?" }
   ];
 
   return (
@@ -144,7 +153,7 @@ export function PaymentGuideClient() {
             <div className="flex items-start gap-3">
               <span className="text-2xl">⚠️</span>
               <div>
-                <h3 className="font-semibold">Security Warning</h3>
+                <h3 className="font-semibold">{tg.securityWarning || "Security Warning"}</h3>
                 <p className="text-sm text-muted-foreground mt-1">
                   Never share your payment passwords, verification codes, or personal information
                   with strangers. Bank staff and merchants will never ask for your passwords. Report
@@ -188,19 +197,19 @@ export function PaymentGuideClient() {
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-blue-500">•</span>
-                <span>Minimum purchase: 500 CNY at participating stores</span>
+                <span>{tg.taxMinPurchase || "Minimum purchase: 500 CNY at participating stores"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-500">•</span>
-                <span>Refund rate: 3-11% depending on item category</span>
+                <span>{tg.taxRefundRate || "Refund rate: 3-11% depending on item category"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-500">•</span>
-                <span>Process at airport departure hall before security</span>
+                <span>{tg.taxProcessTip || "Process at airport departure hall before security"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-500">•</span>
-                <span>Keep invoice with tax refund mark</span>
+                <span>{tg.taxInvoiceTip || "Keep invoice with tax refund mark"}</span>
               </li>
             </ul>
           </div>
@@ -212,7 +221,7 @@ export function PaymentGuideClient() {
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Best ATMs for International Cards</h2>
+              <h2 className="font-semibold text-xl">{tg.bestATMsHeading || "Best ATMs for International Cards"}</h2>
               <p className="text-sm text-muted-foreground">
                 Look for these bank ATMs for best service
               </p>
@@ -238,19 +247,19 @@ export function PaymentGuideClient() {
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>ATMs at airports and banks have best exchange rates</span>
+                <span>{tg.atmRate1 || "ATMs at airports and banks have best exchange rates"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>Check with your bank about international withdrawal fees</span>
+                <span>{tg.atmRate2 || "Check with your bank about international withdrawal fees"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>Some ATMs limit foreign card withdrawals (max 2000 CNY)</span>
+                <span>{tg.atmRate3 || "Some ATMs limit foreign card withdrawals (max 2000 CNY)"}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-amber-600">•</span>
-                <span>Use card machines inside banks for better security</span>
+                <span>{tg.atmRate4 || "Use card machines inside banks for better security"}</span>
               </li>
             </ul>
           </div>
@@ -262,7 +271,7 @@ export function PaymentGuideClient() {
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Frequently Asked Questions</h2>
+              <h2 className="font-semibold text-xl">{tg.faqHeading || "Frequently Asked Questions"}</h2>
             </div>
             <div className="divide-y">
               {PAYMENT_FAQS.map((faq, idx) => (

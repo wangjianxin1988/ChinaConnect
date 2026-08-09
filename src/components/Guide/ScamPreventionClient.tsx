@@ -1,7 +1,8 @@
 import { SCAM_TYPES, SEVERITY_COLORS, SEVERITY_LABELS } from "@/data/scam-prevention";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function ScamPreventionClient() {
+export function ScamPreventionClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.scamPrevention || translations.en.scamPrevention || {}) as Record<string, string>;
   const [selectedScam, setSelectedScam] = useState<string | null>(null);
   const [filterSeverity, setFilterSeverity] = useState<string>("all");
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({

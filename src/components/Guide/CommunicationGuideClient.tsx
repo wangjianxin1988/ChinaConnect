@@ -7,16 +7,17 @@ import {
   VPN_OPTIONS,
 } from "@/data/guide/communication";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function CommunicationGuideClient() {
+export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.communicationGuide || translations.en.communicationGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("sim");
   const [selectedSIM, setSelectedSIM] = useState<string | null>(null);
 
   const tabs = [
-    { id: "sim", label: "SIM/eSIM Options", icon: "📱" },
-    { id: "vpn", label: "VPN Setup", icon: "🔐" },
-    { id: "apps", label: "Essential Apps", icon: "📲" },
-    { id: "setup", label: "Setup Guide", icon: "⚙️" },
+    { id: "sim", label: tg.tabSim || "SIM/eSIM Options", icon: "📱" },
+    { id: "vpn", label: tg.tabVpn || "VPN Setup", icon: "🔐" },
+    { id: "apps", label: tg.tabApps || "Essential Apps", icon: "📲" },
+    { id: "setup", label: tg.tabSetup || "Setup Guide", icon: "⚙️" },
   ];
 
   const currentSIM = SIM_OPTIONS.find((s) => s.type === selectedSIM);

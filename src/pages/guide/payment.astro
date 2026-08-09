@@ -1,10 +1,13 @@
 ---
+const lang = getLangFromUrl(Astro.url);
+
 
 import PaymentGuideClient from "@/components/Guide/PaymentGuideClient";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+import { getLangFromUrl } from '@/i18n/utils';
 
 // Payment Guide page SEO
 const pageTitle = translations.en.guidePage?.paymentTitle || "Payment Guide - ChinaConnect";
@@ -97,7 +100,7 @@ const paymentSchemas = [
       </div>
     </div>
 
-    <PaymentGuideClient client:load />
+    <PaymentGuideClient client:load lang={lang} />
 
     <!-- Payment App Recommendations -->
     <section class="mt-12">

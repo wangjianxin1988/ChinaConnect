@@ -1,9 +1,12 @@
 ---
+const lang = getLangFromUrl(Astro.url);
+
 
 import CommunicationGuideClient from "@/components/Guide/CommunicationGuideClient";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from '@/i18n/utils';
 
 const pageTitle = translations.en.guidePage?.communicationTitle || "Communication Guide - ChinaConnect";
 const pageDescription = translations.en.guidePage?.communicationDescription || "Complete communication guide for China travel. SIM/eSIM options, VPN setup, essential apps, and APN configuration for staying connected.";
@@ -49,7 +52,7 @@ const pageDescription = translations.en.guidePage?.communicationDescription || "
       </div>
     </div>
 
-    <CommunicationGuideClient client:load />
+    <CommunicationGuideClient client:load lang={lang} />
 
     <!-- Communication App Recommendations -->
     <section class="mt-12">

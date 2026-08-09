@@ -9,18 +9,25 @@ import {
   POPULAR_FOOD_CATEGORIES,
 } from "@/data/guide/dining";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function DiningGuideClient() {
+interface DiningGuideClientProps {
+  lang?: Language;
+}
+
+export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) {
+  const t = translations[lang] || translations.en;
+  const tg = (t.diningGuide || translations.en.diningGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("cuisines");
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const tabs = [
-    { id: "cuisines", label: "Cuisines", icon: "🍜" },
-    { id: "tips", label: "Dining Tips", icon: "💡" },
-    { id: "dietary", label: "Dietary", icon: "🥗" },
-    { id: "allergens", label: "Allergens", icon: "⚠️" },
-    { id: "ordering", label: "Ordering", icon: "📋" },
-    { id: "safety", label: "Safety", icon: "🛡️" },
+    { id: "dishes", label: tg.tabDishes || "Popular Dishes", icon: "??" },
+    { id: "budget", label: tg.tabBudget || "Budget Guide", icon: "??" },
+    { id: "etiquette", label: tg.tabEtiquette || "Etiquette", icon: "??" },
+    { id: "phrases", label: tg.tabPhrases || "Phrases", icon: "??" },
+    { id: "allergies", label: tg.tabAllergies || "Allergies", icon: "??" },
+    { id: "categories", label: tg.tabCategories || "Categories", icon: "???" }
   ];
 
   return (
@@ -62,7 +69,7 @@ export function DiningGuideClient() {
 
                   {/* Popular Dishes */}
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">Popular Dishes:</h4>
+                    <h4 className="font-medium text-sm mb-2">{tg.popularDishesHeading || "Popular Dishes:"}</h4>
                     <div className="flex flex-wrap gap-2">
                       {cuisine.popularDishes.map((dish, i) => (
                         <span key={i} className="text-xs bg-white px-2 py-1 rounded border">
@@ -81,7 +88,7 @@ export function DiningGuideClient() {
 
                   {/* Tips */}
                   <div className="bg-green-50 rounded-lg p-3">
-                    <h4 className="font-medium text-sm mb-2">Pro Tips:</h4>
+                    <h4 className="font-medium text-sm mb-2">{tg.proTipsLabel || "Pro Tips:"}</h4>
                     <ul className="space-y-1">
                       {cuisine.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
@@ -106,16 +113,16 @@ export function DiningGuideClient() {
           {/* Price Ranges */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Budget Guide (Per Person)</h3>
+              <h3 className="font-semibold text-lg">{tg.budgetGuideHeading || "Budget Guide (Per Person)"}</h3>
             </div>
             <div className="grid md:grid-cols-4 gap-4 p-6">
               <div className="text-center">
                 <div className="text-lg font-bold text-green-600">20-50 CNY</div>
-                <div className="text-sm text-muted-foreground">Street Food</div>
+                <div className="text-sm text-muted-foreground">{tg.streetFoodLabel || "Street Food"}</div>
               </div>
               <div className="text-center">
                 <div className="text-lg font-bold text-blue-600">50-150 CNY</div>
-                <div className="text-sm text-muted-foreground">Casual Restaurant</div>
+                <div className="text-sm text-muted-foreground">{tg.casualRestaurantLabel || "Casual Restaurant"}</div>
               </div>
               <div className="text-center">
                 <div className="text-lg font-bold text-purple-600">100-300 CNY</div>
@@ -157,7 +164,7 @@ export function DiningGuideClient() {
           {/* Etiquette */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-purple-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Dining Etiquette</h3>
+              <h3 className="font-semibold text-lg">{tg.diningEtiquetteHeading || "Dining Etiquette"}</h3>
             </div>
             <div className="divide-y">
               <div className="p-4">
@@ -209,7 +216,7 @@ export function DiningGuideClient() {
         <div className="space-y-4">
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Ordering Phrases</h3>
+              <h3 className="font-semibold text-lg">{tg.orderingPhrasesHeading || "Ordering Phrases"}</h3>
             </div>
             <div className="divide-y">
               {ORDERING_HELPERS.map((phrase, idx) => (
@@ -232,11 +239,11 @@ export function DiningGuideClient() {
           {/* Dietary Restrictions */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-green-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Dietary Restrictions</h3>
+              <h3 className="font-semibold text-lg">{tg.dietaryRestrictionsHeading || "Dietary Restrictions"}</h3>
             </div>
             <div className="p-4 grid md:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-medium mb-2">Chinese Phrases:</h4>
+                <h4 className="font-medium mb-2">{tg.chinesePhrasesLabel || "Chinese Phrases:"}</h4>
                 <ul className="space-y-2 text-sm">
                   <li>
                     <span className="font-medium">不要辣</span> = No spicy
@@ -259,7 +266,7 @@ export function DiningGuideClient() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Common Allergies:</h4>
+                <h4 className="font-medium mb-2">{tg.commonAllergiesLabel || "Common Allergies:"}</h4>
                 <ul className="space-y-2 text-sm">
                   <li>
                     <span className="font-medium">过敏海鲜</span> = Seafood allergy
@@ -300,7 +307,7 @@ export function DiningGuideClient() {
           {/* FAQs */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h3 className="font-semibold text-lg">Frequently Asked Questions</h3>
+              <h3 className="font-semibold text-lg">{tg.faqHeading || "Frequently Asked Questions"}</h3>
             </div>
             <div className="divide-y">
               {DINING_FAQS.map((faq, idx) => (
@@ -348,7 +355,7 @@ export function DiningGuideClient() {
                   <p className="text-sm text-muted-foreground">{diet.explanationCn}</p>
                   {diet.exampleDishes && (
                     <div className="bg-green-50 rounded-lg p-3">
-                      <h4 className="font-medium text-sm mb-2">Safe Options:</h4>
+                      <h4 className="font-medium text-sm mb-2">{tg.safeOptionsLabel || "Safe Options:"}</h4>
                       <div className="space-y-1">
                         {diet.exampleDishes.map((d, i) => (
                           <p key={i} className="text-sm">
@@ -367,7 +374,7 @@ export function DiningGuideClient() {
           </div>
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Popular Food Categories</h2>
+              <h2 className="font-semibold text-xl">{tg.popularCategoriesHeading || "Popular Food Categories"}</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
               {POPULAR_FOOD_CATEGORIES.map((cat, idx) => (
@@ -391,7 +398,7 @@ export function DiningGuideClient() {
             <div className="flex items-start gap-3">
               <span className="text-2xl">⚠️</span>
               <div>
-                <h3 className="font-semibold text-red-800">Important Allergy Information</h3>
+                <h3 className="font-semibold text-red-800">{tg.allergyInfoHeading || "Important Allergy Information"}</h3>
                 <p className="text-sm text-red-700 mt-1">
                   Allergen labeling is not mandatory in China. Always communicate your allergies
                   clearly using the Chinese phrases below.
@@ -428,7 +435,7 @@ export function DiningGuideClient() {
           </div>
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Allergen Translation Card</h2>
+              <h2 className="font-semibold text-xl">{tg.allergenCardHeading || "Allergen Translation Card"}</h2>
             </div>
             <div className="p-6 bg-white">
               <div className="border-2 border-red-300 rounded-xl p-6 max-w-md mx-auto bg-red-50">

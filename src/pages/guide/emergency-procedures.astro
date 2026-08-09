@@ -1,8 +1,11 @@
 ---
+const lang = getLangFromUrl(Astro.url);
+
 
 import EmergencyGuideClient from "@/components/Guide/EmergencyGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from '@/i18n/utils';
 
 const pageTitle = translations.en.guidePage?.emergencyTitle || "Emergency Procedures - ChinaConnect";
 const pageDescription = translations.en.guidePage?.emergencyDescription || "Complete emergency guide for China travel. Lost passport, medical emergency, theft, scams, embassy contacts, and important phone numbers.";
@@ -48,6 +51,6 @@ const pageDescription = translations.en.guidePage?.emergencyDescription || "Comp
       </div>
     </div>
 
-    <EmergencyGuideClient client:load />
+    <EmergencyGuideClient client:load lang={lang} />
   </main>
 </BaseLayout>

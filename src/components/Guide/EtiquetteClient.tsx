@@ -1,8 +1,9 @@
 import { ETIQUETTE_DATA } from "@/data/guide/business/etiquette";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function EtiquetteClient() {
+export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.etiquette || translations.en.etiquette || {}) as Record<string, string>;
   const [selectedCategory, setSelectedCategory] = useState<string>(ETIQUETTE_DATA[0].id);
   const [expandedRules, setExpandedRules] = useState<Record<string, boolean>>({});
 

@@ -8,6 +8,7 @@ import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React, { useState, useRef, useEffect } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
 interface FormValues {
   [key: string]: string;
@@ -58,7 +59,7 @@ function buildLetterHTML(template: (typeof INVITATION_TEMPLATES)[0], values: For
   return html;
 }
 
-export function InvitationLetterClient() {
+export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.invitationLetter || translations.en.invitationLetter || {}) as Record<string, string>;
   const [selectedTemplate, setSelectedTemplate] = useState<string>(INVITATION_TEMPLATES[0].id);
   const [formValues, setFormValues] = useState<FormValues>({});
   const [previewMode, setPreviewMode] = useState(false);

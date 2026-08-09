@@ -6,16 +6,17 @@ import {
   HOTEL_TYPES,
 } from "@/data/guide/accommodation";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function AccommodationGuideClient() {
+export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.accommodationGuide || translations.en.accommodationGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("types");
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const tabs = [
-    { id: "types", label: "Hotel Types", icon: "🏨" },
-    { id: "booking", label: "Booking Tips", icon: "📝" },
-    { id: "checkin", label: "Check-in Process", icon: "🔑" },
-    { id: "faqs", label: "FAQs", icon: "❓" },
+    { id: "types", label: tg.tabTypes || "Hotel Types", icon: "🏨" },
+    { id: "booking", label: tg.tabBooking || "Booking Tips", icon: "📝" },
+    { id: "checkin", label: tg.tabCheckin || "Check-in Process", icon: "🔑" },
+    { id: "faqs", label: tg.tabFaqs || "FAQs", icon: "❓" },
   ];
 
   return (

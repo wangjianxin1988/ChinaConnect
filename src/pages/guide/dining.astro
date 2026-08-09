@@ -1,8 +1,11 @@
 ---
+const lang = getLangFromUrl(Astro.url);
+
 
 import DiningGuideClient from "@/components/Guide/DiningGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from '@/i18n/utils';
 
 const pageTitle = translations.en.guidePage?.diningTitle || "Dining Guide - ChinaConnect";
 const pageDescription = translations.en.guidePage?.diningDescription || "Complete dining guide for China. Local cuisines, ordering tips, food safety, and essential phrases for eating in China.";
@@ -48,6 +51,6 @@ const pageDescription = translations.en.guidePage?.diningDescription || "Complet
       </div>
     </div>
 
-    <DiningGuideClient client:load />
+    <DiningGuideClient client:load lang={lang} />
   </main>
 </BaseLayout>

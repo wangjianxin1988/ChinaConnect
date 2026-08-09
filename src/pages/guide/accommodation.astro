@@ -1,9 +1,12 @@
 ---
+const lang = getLangFromUrl(Astro.url);
+
 
 import AccommodationGuideClient from "@/components/Guide/AccommodationGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+import { getLangFromUrl } from '@/i18n/utils';
 
 // Accommodation Guide page SEO
 const pageTitle = translations.en.guidePage?.accommodationTitle || "Accommodation Guide - ChinaConnect";
@@ -74,6 +77,6 @@ const accommodationSchemas = [
       </div>
     </div>
 
-    <AccommodationGuideClient client:load />
+    <AccommodationGuideClient client:load lang={lang} />
   </main>
 </BaseLayout>

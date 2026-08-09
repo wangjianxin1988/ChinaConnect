@@ -1,10 +1,13 @@
 ---
+const lang = getLangFromUrl(Astro.url);
+
 
 import TransportGuideClient from "@/components/Guide/TransportGuideClient";
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
 import { generateBreadcrumbSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+import { getLangFromUrl } from '@/i18n/utils';
 
 // Transport Guide page SEO
 const pageTitle = translations.en.guidePage?.transportTitle || "Transport Guide - ChinaConnect";
@@ -75,7 +78,7 @@ const transportSchemas = [
       </div>
     </div>
 
-    <TransportGuideClient client:load />
+    <TransportGuideClient client:load lang={lang} />
 
     <!-- Transport App Recommendations -->
     <section class="mt-12">

@@ -8,16 +8,17 @@ import {
   TAX_REFUND_INFO,
 } from "@/data/guide/departure";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function DepartureGuideClient() {
+export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.departureGuide || translations.en.departureGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("steps");
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const tabs = [
-    { id: "steps", label: "Departure Steps", icon: "✈️" },
-    { id: "tax", label: "Tax Refund", icon: "💰" },
-    { id: "airport", label: "Airport Info", icon: "🏢" },
-    { id: "checklist", label: "Checklist", icon: "📋" },
+    { id: "steps", label: tg.tabSteps || "Departure Steps", icon: "✈️" },
+    { id: "tax", label: tg.tabTax || "Tax Refund", icon: "💰" },
+    { id: "airport", label: tg.tabAirport || "Airport Info", icon: "🏢" },
+    { id: "checklist", label: tg.tabChecklist || "Checklist", icon: "📋" },
   ];
 
   return (

@@ -1,8 +1,9 @@
 // @ts-nocheck
 import { CULTURAL_WARNINGS, IMPORTANCE_STYLES } from "@/data/cultural-warnings";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function CulturalWarningsClient() {
+export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.culturalWarnings || translations.en.culturalWarnings || {}) as Record<string, string>;
   const [activeCategory, setActiveCategory] = useState("all");
   const [activeImportance, setActiveImportance] = useState("all");
 
