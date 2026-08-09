@@ -80,11 +80,13 @@ function getBadgeLabel(type: Restaurant["type"]) {
 
       <!-- Quick stats (dynamic from filterGroups) -->
       <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-orange-100">
-        {filterGroups.filter(g => g.id !== 'all').slice(0, 5).map(group => (
+        {filterGroups.filter(g => g.id !== 'all').slice(0, 5).map(group => {
+          const statLabel = group.labels?.[lang] || group.label;
+          return (
           <span class="flex items-center gap-1">
-            <span>{group.icon}</span> <span>{group.restaurants.length}</span> {group.label}
+            <span>{group.icon}</span> <span>{group.restaurants.length}</span> {statLabel}
           </span>
-        ))}
+          )})}
       </div>
     </div>
   </section>
@@ -95,6 +97,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
       <div class="flex flex-wrap gap-2" id="filter-buttons">
         {filterGroups.map((group) => {
           const isActive = group.id === currentFilter.id;
+          const filterLabel = group.labels?.[lang] || group.label;
           return (
             <button
               data-filter={group.id}
@@ -110,7 +113,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
               `}
             >
               <span>{group.icon}</span>
-              <span>{group.label}</span>
+              <span>{filterLabel}</span>
               <span class={`text-xs rounded-full px-2 py-0.5 ${isActive ? "bg-white/40" : "bg-gray-100"}`}>
                 {group.restaurants.length}
               </span>
@@ -126,7 +129,7 @@ function getBadgeLabel(type: Restaurant["type"]) {
           <span id="filter-info" class="ml-2">
             {currentFilter.id !== "all" && (
               <span>
-                <span data-i18n="foodPage.filteringLabel">Filtering:</span> <span class="font-medium text-orange-600">{currentFilter.icon} {currentFilter.label}</span>
+                <span data-i18n="foodPage.filteringLabel">Filtering:</span> <span class="font-medium text-orange-600">{currentFilter.icon} {currentFilter.labels?.[lang] || currentFilter.label}</span>
               </span>
             )}
           </span>
