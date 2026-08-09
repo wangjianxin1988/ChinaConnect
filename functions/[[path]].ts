@@ -196,8 +196,7 @@ export const onRequest: PagesFunction = async (context) => {
             ar: "دليل المطاعم - ChinaConnect",
             fa: "راهنمای رستوران - ChinaConnect",
           },
-
-/scenic-spots": {
+          "/scenic-spots": {
             en: "Scenic Spots - ChinaConnect",
             ja: "景勝地 - ChinaConnect",
             ko: "경승지 - ChinaConnect",
