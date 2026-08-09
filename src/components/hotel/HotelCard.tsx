@@ -132,6 +132,7 @@ interface HotelCardProps {
   hotel: HotelData;
   onClick?: () => void;
   compact?: boolean;
+  lang?: string;
 }
 
 // ─── Helper: Build price display string ──────────────────────────

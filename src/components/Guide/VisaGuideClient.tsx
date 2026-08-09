@@ -11,20 +11,28 @@ import {
   VPN_RECOMMENDATIONS,
 } from "@/data/guide/visa";
 import React, { useState } from "react";
+import { type Language, translations } from "@/i18n/translations";
 
-export function VisaGuideClient() {
+interface VisaGuideClientProps {
+    lang?: Language;
+  }
+
+export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
   const [activeTab, setActiveTab] = useState("overview");
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
   const [checkedItems, setCheckedItems] = useState<Set<string>>(new Set());
 
+  const t = translations[lang] || translations.en;
+  const tv = (t.visaPage || translations.en.visaPage || {}) as Record<string, string>;
+
   const tabs = [
-    { id: "overview", label: "Overview", icon: "📋" },
-    { id: "checklist", label: "Pre-departure", icon: "✅" },
-    { id: "apps", label: "Apps & VPN", icon: "📱" },
-    { id: "insurance", label: "Insurance", icon: "🛡️" },
-    { id: "process", label: "Process", icon: "📝" },
-    { id: "documents", label: "Documents", icon: "📄" },
-    { id: "tips", label: "Tips & FAQs", icon: "💡" },
+    { id: "overview", label: tv.tabOverview || "Overview", icon: "📋" },
+    { id: "checklist", label: tv.tabChecklist || "Pre-departure", icon: "✅" },
+    { id: "apps", label: tv.tabApps || "Apps & VPN", icon: "📱" },
+    { id: "insurance", label: tv.tabInsurance || "Insurance", icon: "🛡️" },
+    { id: "process", label: tv.tabProcess || "Process", icon: "📝" },
+    { id: "documents", label: tv.tabDocuments || "Documents", icon: "📄" },
+    { id: "tips", label: tv.tabTips || "Tips & FAQs", icon: "💡" },
   ];
 
   const toggleCheckItem = (id: string) => {
@@ -62,9 +70,9 @@ export function VisaGuideClient() {
           {/* Visa Requirements by Country */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Visa Requirements by Country</h2>
+              <h2 className="font-semibold text-xl">{tv.reqHeading || "Visa Requirements by Country"}</h2>
               <p className="text-sm text-muted-foreground">
-                Select your country to see specific requirements
+                {tv.reqSubtitle || "Select your country to see specific requirements"}
               </p>
             </div>
             <div className="divide-y">
@@ -78,20 +86,20 @@ export function VisaGuideClient() {
                   </div>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div>
-                      <span className="text-muted-foreground">Duration:</span>
+                      <span className="text-muted-foreground">{tv.duration || "Duration:"}</span>
                       <p className="font-medium">{req.duration}</p>
                     </div>
                     <div>
-                      <span className="text-muted-foreground">Processing:</span>
+                      <span className="text-muted-foreground">{tv.processing || "Processing:"}</span>
                       <p className="font-medium">{req.processingTime}</p>
                     </div>
                     <div>
-                      <span className="text-muted-foreground">Fee:</span>
+                      <span className="text-muted-foreground">{tv.fee || "Fee:"}</span>
                       <p className="font-medium">{req.fee}</p>
                     </div>
                   </div>
                   <div className="mt-3">
-                    <span className="text-sm text-muted-foreground">Requirements:</span>
+                    <span className="text-sm text-muted-foreground">{tv.requirements || "Requirements:"}</span>
                     <ul className="mt-1 grid md:grid-cols-2 gap-1">
                       {req.notes.map((note, i) => (
                         <li key={i} className="text-sm flex items-center gap-1">
@@ -213,10 +221,9 @@ export function VisaGuideClient() {
             <div className="flex items-start gap-3">
               <span className="text-2xl">⚠️</span>
               <div>
-                <h3 className="font-semibold">Important Reminder</h3>
+                <h3 className="font-semibold">{tv.importantReminder || "Important Reminder"}</h3>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Keep digital copies in cloud storage (Google Drive, iCloud) and share with family.
-                  Physical copies should be kept separate from originals.
+                  {tv.digitalCopiesDesc || "Keep digital copies in cloud storage (Google Drive, iCloud) and share with family. Physical copies should be kept separate from originals."}
                 </p>
               </div>
             </div>
@@ -244,7 +251,7 @@ export function VisaGuideClient() {
           {/* FAQs */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Frequently Asked Questions</h2>
+              <h2 className="font-semibold text-xl">{tv.faqHeading || "Frequently Asked Questions"}</h2>
             </div>
             <div className="divide-y">
               {VISA_FAQS.map((faq, idx) => (
@@ -271,7 +278,7 @@ export function VisaGuideClient() {
             <div className="flex items-start gap-3">
               <span className="text-2xl">🚨</span>
               <div>
-                <h3 className="font-semibold">Visa Overstay Warning</h3>
+                <h3 className="font-semibold">{tv.overstayWarning || "Visa Overstay Warning"}</h3>
                 <p className="text-sm text-muted-foreground mt-1">
                   Overstaying your visa can result in fines, detention, and future travel bans. If
                   you need more time, apply for extension at the Public Security Bureau (PSB) before
@@ -290,10 +297,10 @@ export function VisaGuideClient() {
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
               <h2 className="font-semibold text-xl flex items-center gap-2">
-                <span>📅</span> Weeks Before Travel (4-6 weeks)
+                <span>📅</span> {tv.weeksBefore || "Weeks Before Travel (4-6 weeks)"}
               </h2>
               <p className="text-sm text-muted-foreground">
-                Complete these 4-6 weeks before departure
+                {tv.weeksBeforeDesc || "Complete these 4-6 weeks before departure"}
               </p>
             </div>
             <div className="divide-y">
@@ -324,7 +331,7 @@ export function VisaGuideClient() {
               <h2 className="font-semibold text-xl flex items-center gap-2">
                 <span>⏰</span> Days Before Travel (2-3 days)
               </h2>
-              <p className="text-sm text-muted-foreground">Final preparations</p>
+              <p className="text-sm text-muted-foreground">{tv.finalPreparations || "Final preparations"}</p>
             </div>
             <div className="divide-y">
               {PRE_DEPARTURE_CHECKLIST.daysBefore.map((item, idx) => {
@@ -423,7 +430,7 @@ export function VisaGuideClient() {
           {/* Flight Booking Tips */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Flight Booking Tips</h2>
+              <h2 className="font-semibold text-xl">{tv.flightHeading || "Flight Booking Tips"}</h2>
             </div>
             <div className="divide-y">
               {FLIGHT_BOOKING_TIPS.map((tip, idx) => (
@@ -505,10 +512,10 @@ export function VisaGuideClient() {
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-blue-50 px-6 py-4 border-b">
               <h2 className="font-semibold text-xl flex items-center gap-2">
-                <span>📱</span> Essential Apps
+                <span>📱</span> {tv.appsHeading || "Essential Apps"}
               </h2>
               <p className="text-sm text-muted-foreground">
-                Download before arrival - Google Play is blocked in China
+                {tv.appsSubtitle || "Download before arrival - Google Play is blocked in China"}
               </p>
             </div>
             <div className="divide-y">
@@ -536,10 +543,9 @@ export function VisaGuideClient() {
             <div className="flex items-start gap-3">
               <span className="text-2xl">⚠️</span>
               <div>
-                <h3 className="font-semibold text-red-800">Travel Insurance is Essential</h3>
+                <h3 className="font-semibold text-red-800">{tv.insuranceHeading || "Travel Insurance is Essential"}</h3>
                 <p className="text-sm text-red-700 mt-1">
-                  Medical treatment in China can be expensive, especially for foreigners. A good
-                  travel insurance policy with medical coverage is non-negotiable for safe travel.
+                  {tv.insuranceDesc || "Medical treatment in China can be expensive, especially for foreigners. A good travel insurance policy with medical coverage is non-negotiable for safe travel."}
                 </p>
               </div>
             </div>
@@ -578,11 +584,11 @@ export function VisaGuideClient() {
           {/* Insurance Tips */}
           <div className="bg-card rounded-xl border overflow-hidden">
             <div className="bg-slate-50 px-6 py-4 border-b">
-              <h2 className="font-semibold text-xl">Insurance Tips</h2>
+              <h2 className="font-semibold text-xl">{tv.insuranceTipsHeading || "Insurance Tips"}</h2>
             </div>
             <div className="divide-y">
               <div className="p-4">
-                <h4 className="font-medium">Before Buying</h4>
+                <h4 className="font-medium">{tv.beforeBuying || "Before Buying"}</h4>
                 <ul className="mt-2 space-y-1 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-blue-500">1.</span> Check if your home country has
@@ -603,7 +609,7 @@ export function VisaGuideClient() {
                 </ul>
               </div>
               <div className="p-4">
-                <h4 className="font-medium">Recommended Providers</h4>
+                <h4 className="font-medium">{tv.recommendedProviders || "Recommended Providers"}</h4>
                 <ul className="mt-2 space-y-1 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500">✓</span> World Nomads - good coverage for

@@ -3,7 +3,10 @@
 import VisaGuideClient from "@/components/Guide/VisaGuideClient";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { translations } from "@/i18n/translations";
+import { getLangFromUrl } from "@/i18n/utils";
 import { generateBreadcrumbSchema, generateFAQSchema, generateHowToSchema, generateJsonLdScript } from "@/lib/seo/schema-org";
+
+const lang = getLangFromUrl(Astro.url);
 
 // Visa Guide page SEO
 const pageTitle = translations.en.guidePage?.visaTitle || "Visa Guide - ChinaConnect";
@@ -91,6 +94,6 @@ const visaSchemas = [
       </div>
     </div>
 
-    <VisaGuideClient client:load />
+    <VisaGuideClient client:load lang={lang} />
   </main>
 </BaseLayout>

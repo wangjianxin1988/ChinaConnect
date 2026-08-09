@@ -263,13 +263,13 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
         <p data-i18n="cityPage.dataSourcesDesc">Attraction data compiled from authoritative sources. Verify details before visiting:</p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a>  — China's largest travel community</li>
-          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — Attraction reviews & booking</li>
-          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — International attraction reviews</li>
-          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News (新华网)</a>  — Official tourism information</li>
-          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourismm)</a>  — Government tourism data</li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Mafengwo (马蜂窝)</a>  — <span data-i18n="cityAttractions.mafengwoDesc">China's largest travel community</span></li>
+          <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc">Attraction reviews & booking</span></li>
+          <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc">International attraction reviews</span></li>
+          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">China News (新华网)</a>  — <span data-i18n="cityAttractions.chinanewsDesc">Official tourism information</span></li>
+          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline"Ministry of Culture & Tourismm)</a>  — <span data-i18n="cityAttractions.mctDesc">Government tourism data</span></li>
         </ul>
-        <p class="text-xs text-gray-400 mt-3">data-i18n="cityAttractions.disclaimer"Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</p>
+        <p class="text-xs text-gray-400 mt-3">data-i18n="cityAttractions.disclaimer"<span data-i18n="cityAttractions.disclaimer">Opening hours, ticket prices, and phone numbers may change. We recommend verifying via the attraction's official website or calling ahead.</span></p>
       </div>
     </div>
   </section>
