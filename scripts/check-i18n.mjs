@@ -6,9 +6,9 @@ const BLOG_FILE = "src/i18n/blog.ts";
 const SUPPORTED = ["en", "ja", "ko", "th", "vi", "ru", "fr", "de", "ar", "fa", "zh-CN", "zh-TW"];
 
 function extractBlock(src, lang) {
-  const lines = src.split("\n");
+  const lines = src.split("\n").map((l) => l.replace(/\r$/, ""));
   let startLine = -1;
-  const re = new RegExp("^  (\"?" + lang.replace("-", "\\-") + "\"?):\\s*\\{?$");
+  const re = new RegExp("^  (\"?" + lang.replace("-", "\\-") + "\"?):\\s*\\{?\\r?$");
   for (let i = 0; i < lines.length; i++) {
     if (re.test(lines[i])) { startLine = i; break; }
   }

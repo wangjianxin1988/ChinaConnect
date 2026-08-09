@@ -1,6 +1,7 @@
 ﻿---
 
 import { getCityBySlug, citySlugs } from "@/data/cities/index";
+import { getCityData } from "@/data/cities-i18n";
 import { getLangFromUrl } from "@/i18n/utils";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -10,8 +11,8 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const city = getCityBySlug(slug as string);
 const lang = getLangFromUrl(Astro.url);
+const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
 
 if (!city) {
   return Astro.redirect("/404");
@@ -94,7 +95,7 @@ const categories = [...new Set(city.attractions.map((a: any) => a.category))].so
                 class="category-filter px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-gray-100 text-gray-700 hover:bg-gray-200"
                 data-category={cat}
               >
-                {catLabels[cat] || cat} ({count})
+                {(catLabels[cat] && catLabels[cat][lang]) || (catLabels[cat] && catLabels[cat].en) || cat} ({count})
               </button>
             );
           })}

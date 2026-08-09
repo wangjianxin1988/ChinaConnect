@@ -1,0 +1,184 @@
+---
+import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
+import { cities } from "@/data/cities/index";
+import { getLangFromUrl } from "@/i18n/utils";
+import { translations } from "@/i18n/translations";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import {
+  generateBreadcrumbSchema,
+  generateCollectionPageSchema,
+  generateJsonLdScript,
+} from "@/lib/seo/schema-org";
+
+const lang = getLangFromUrl(Astro.url);
+const t = translations[lang] || translations.en;
+const pageTitle = (t.scenicSpots && t.scenicSpots.pageTitle) || (translations.en.scenicSpots && translations.en.scenicSpots.pageTitle) || "Scenic Spots - ChinaConnect";
+const pageDescription = (t.scenicSpots && t.scenicSpots.pageDescription) || (translations.en.scenicSpots && translations.en.scenicSpots.pageDescription) || "Explore China's most beautiful natural scenery and scenic spots - mountains, lakes, rivers, forests, and geological wonders across all provinces.";
+
+type AttractionLike = {
+  id?: string;
+  name?: string;
+  nameEn?: string;
+  category?: string;
+  description?: string;
+  image?: string;
+  address?: string;
+  ticketPrice?: string;
+  openingHours?: string;
+  recommendedVisitTime?: string;
+};
+
+type CityLike = {
+  slug: string;
+  name: string;
+  nameEn: string;
+  coverImage?: string;
+  attractions?: AttractionLike[];
+};
+
+// Collect nature-category attractions across all cities
+const allScenic: Array<AttractionLike & { citySlug: string; cityNameEn: string; cityName: string; cityCover: string | undefined; }> = [];
+const citiesWithScenic: Array<{ slug: string; nameEn: string; name: string; count: number; coverImage: string | undefined; }> = [];
+
+for (const city of cities as CityLike[]) {
+  const list = (city.attractions || []).filter((a) => (a.category || "").toLowerCase() === "nature");
+  if (list.length === 0) continue;
+  citiesWithScenic.push({
+    slug: city.slug,
+    nameEn: city.nameEn,
+    name: city.name,
+    count: list.length,
+    coverImage: city.coverImage,
+  });
+  for (const a of list) {
+    allScenic.push({
+      ...a,
+      citySlug: city.slug,
+      cityNameEn: city.nameEn,
+      cityName: city.name,
+      cityCover: city.coverImage,
+    });
+  }
+}
+
+citiesWithScenic.sort((a, b) => b.count - a.count);
+
+const scenicSchemas = [
+  generateCollectionPageSchema({
+    name: "Scenic Spots in China - ChinaConnect",
+    description: pageDescription,
+    url: "https://chinaengage.org/scenic-spots",
+    numberOfItems: allScenic.length,
+  }),
+  generateBreadcrumbSchema([
+    { name: "Home", url: "https://chinaengage.org/" },
+    { name: "Scenic Spots", url: "https://chinaengage.org/scenic-spots" },
+  ]),
+];
+
+const keywords = [
+  "China scenic spots",
+  "China nature",
+  "China mountains",
+  "China lakes",
+  "Zhangjiajie",
+  "Guilin",
+  "Huangshan",
+  "Jiuzhaigou",
+  "China travel",
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  meta={{
+    keywords,
+  }}
+  lang={lang}
+>
+  <script type="application/ld+json" set:html={generateJsonLdScript(scenicSchemas)} />
+
+  <main class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2" data-i18n="scenicSpots.title">Scenic Spots</h1>
+      <p class="text-gray-600 text-lg" data-i18n="scenicSpots.subtitle">Majestic mountains, serene lakes, deep gorges and natural wonders across China</p>
+      <div class="flex flex-wrap gap-4 mt-4 text-sm text-gray-700">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-green-50 text-green-700 rounded-full">
+          <span>&#127796;</span>
+          <strong>{allScenic.length}</strong> scenic spots
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 rounded-full">
+          <span>&#127961;</span>
+          <strong>{citiesWithScenic.length}</strong> cities
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-50 text-purple-700 rounded-full">
+          <span>&#127956;</span>
+          Mountains, lakes, rivers, forests
+        </span>
+      </div>
+    </div>
+
+    <!-- Featured scenic cities -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="scenicSpots.featuredCities">Featured Scenic Cities</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        {citiesWithScenic.slice(0, 12).map((city) => (
+          <a
+            href={`/city/${city.slug}#attractions`}
+            class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-green-300 hover:shadow-md transition-all"
+          >
+            <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
+              {city.coverImage ? (
+                <img
+                  src={city.coverImage}
+                  alt={`${city.nameEn} scenic spots`}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="w-full h-full flex items-center justify-center text-gray-400 text-2xl">&#127796;</div>
+              )}
+            </div>
+            <div class="p-3">
+              <p class="font-semibold text-gray-900 truncate">{city.nameEn}</p>
+              <p class="text-xs text-gray-500 mt-0.5">{city.count} scenic spots</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- All scenic spots -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold mb-4 text-gray-900" data-i18n="scenicSpots.allSpots">All Scenic Spots</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {allScenic.map((a) => (
+          <a
+            href={`/city/${a.citySlug}#attractions`}
+            class="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-green-300 hover:shadow-md transition-all"
+          >
+            <div class="aspect-[16/9] bg-gray-100 overflow-hidden">
+              {a.image ? (
+                <img
+                  src={a.image}
+                  alt={a.nameEn || a.name}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl">&#127796;</div>
+              )}
+            </div>
+            <div class="p-4">
+              <p class="text-xs text-green-600 font-medium mb-1">{a.cityNameEn}</p>
+              <h3 class="font-semibold text-gray-900 mb-1 truncate">{a.nameEn || a.name}</h3>
+              <p class="text-sm text-gray-600 line-clamp-2">{a.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <EmbeddedAppRecommendation client:idle categories={["travel", "maps", "transport"]} title={t.scenicSpots?.appTitle ?? "Plan Your Scenic Spot Visit"} subtitle={t.scenicSpots?.appSubtitle ?? "Apps for finding and navigating scenic spots in China"} />
+  </main>
+</BaseLayout>

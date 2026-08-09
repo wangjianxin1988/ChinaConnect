@@ -64,7 +64,7 @@ export function LoginPage() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     let cancelled = false;
-    fetch("/api/auth/providers", { credentials: "same-origin", cache: "no-store" })
+    fetch(window.location.origin + "/api/auth/providers", { credentials: "same-origin", cache: "no-store" })
       .then(function (r) { return r && r.ok ? r.json() : null; })
       .then(function (data) {
         if (cancelled || !data || !data.providers) return;
@@ -326,7 +326,7 @@ export function LoginPage() {
         )}
 
         {/* Divider + OAuth Buttons */}
-        {!magicLinkSent && !resetPasswordSent && (mode === "login" || mode === "register") && !allProvidersDisabled && (
+        {!magicLinkSent && !resetPasswordSent && (mode === "login" || mode === "register") && (disabledProviders.size < 2) && (
           <>
             <div className="relative my-6">
               <div className="absolute inset-0 flex items-center">
@@ -338,10 +338,10 @@ export function LoginPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-3">
+              {!disabledProviders.has("google") && (
               <button
                 onClick={() => handleOAuth("google")}
-                disabled={isLoading || oauthPending === "google" || disabledProviders.has("google")}
-                title={disabledProviders.has("google") ? "Google sign-in not available" : undefined}
+                disabled={isLoading || oauthPending === "google"}
                 className="flex items-center justify-center gap-2 py-2.5 px-4 border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24">
@@ -352,10 +352,11 @@ export function LoginPage() {
                 </svg>
                 Google
               </button>
+              )}
+              {!disabledProviders.has("github") && (
               <button
                 onClick={() => handleOAuth("github")}
-                disabled={isLoading || oauthPending === "github" || disabledProviders.has("github")}
-                title={disabledProviders.has("github") ? "GitHub sign-in not available" : undefined}
+                disabled={isLoading || oauthPending === "github"}
                 className="flex items-center justify-center gap-2 py-2.5 px-4 border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -363,6 +364,7 @@ export function LoginPage() {
                 </svg>
                 GitHub
               </button>
+              )}
             </div>
           </>
         )}

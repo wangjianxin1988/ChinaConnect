@@ -170,6 +170,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
             <a href="/" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.home">Home</a>
             <a href="/cities" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.cities">Cities</a>
             <a href="/attractions" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.attractions">Attractions</a>
+            <a href="/scenic-spots" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.scenicSpots">Scenic Spots</a>
             <a href="/food" class="text-gray-600 hover:text-gray-900 font-medium transition-colors" data-i18n="nav.restaurants">Restaurants</a>
             <a href="/ai" class="text-purple-600 hover:text-purple-700 font-semibold transition-colors flex items-center gap-1.5 px-3 py-1.5 bg-purple-50 rounded-lg">
               <span>&#10022;</span>
@@ -179,7 +180,12 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           </div>
 
           <div class="flex items-center gap-3">
-            <div id="auth-nav-container" class="flex items-center"></div>
+            <div id="auth-nav-container" class="flex items-center">
+            <a href="/auth/login" class="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium transition-colors" aria-label="Sign In" data-i18n-aria="auth.signIn">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+              <span data-i18n="auth.signIn">Sign In</span>
+            </a>
+          </div>
 
             <div class="relative" id="lang-switcher-container">
               <button
@@ -382,6 +388,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
 
         function switchLanguage(newLang) {
           if (!newLang) return;
+          if (newLang === getLangInfo().lang) { closeLangMenu(); return; }
           safeSet(LANG_STORAGE_KEY, newLang);
           applyLangAttributes(newLang);
           applyTranslationsTo(document);
@@ -389,12 +396,15 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           closeLangMenu();
           window.dispatchEvent(new CustomEvent("languagechange", { detail: newLang }));
 
+          // Navigate to /<lang>/<path> instead of just adding ?lang=<lang>.
+          // Strip the existing language prefix (if any), then prepend the new one.
           try {
-            var url = new URL(window.location.href);
-            if (newLang === "en") url.searchParams.delete("lang");
-            else url.searchParams.set("lang", newLang);
-            if (url.toString() !== window.location.href) window.location.href = url.toString();
-          } catch (e) {}
+            var currentPath = window.location.pathname;
+            var pathNoLang = currentPath.replace(/^\/(en|ja|ko|zh-CN|zh-TW|th|vi|ru|fr|de|ar|fa)\//, "/");
+            var newPath = (newLang === "en" ? "" : "/" + newLang) + pathNoLang;
+            var full = newPath + window.location.search + window.location.hash;
+            window.location.href = full;
+          } catch (e) { console.warn("[i18n] switch failed", e); }
         }
 
         function initLanguageUI() {
@@ -513,7 +523,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
           if (so) {
             so.addEventListener("click", function (e) {
               e.preventDefault();
-              fetch("/api/auth/signout", { method: "POST", credentials: "same-origin" })
+              fetch(window.location.origin + "/api/auth/signout", { method: "POST", credentials: "same-origin" })
                 .catch(function () {})
                 .finally(function () {
                   window.dispatchEvent(new CustomEvent("cc-auth-changed", { detail: { authenticated: false } }));
@@ -542,10 +552,7 @@ const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_
         function refreshAuthNav() {
           var c = document.getElementById("auth-nav-container");
           if (!c) return;
-          if (!c.innerHTML.trim()) {
-            c.innerHTML = '<div class="w-9 h-9 rounded-full bg-gray-200 animate-pulse" aria-hidden="true"></div>';
-          }
-          fetch("/api/auth/state", { credentials: "same-origin", cache: "no-store" })
+          fetch(window.location.origin + "/api/auth/state", { credentials: "same-origin", cache: "no-store" })
             .then(function (r) { return r && r.ok ? r.json() : { authenticated: false }; })
             .then(function (data) {
               if (data && data.authenticated && data.user) renderLoggedIn(data.user);

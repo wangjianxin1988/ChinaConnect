@@ -68,3 +68,13 @@ verify-*.mjs
 verify-*.bak
 
 verify-*.b64
+
+# Translation source/output files
+content-*.json
+# Throwaway scripts
+_*.txt
+_*.log
+test-*.mjs
+_*.cjs
+_*.mjs
+

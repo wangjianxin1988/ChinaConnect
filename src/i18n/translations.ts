@@ -901,13 +901,14 @@ export const translations: Record<Language, Translations> = {
     },
     nav: {
       aiChat: "ChinaGuide AI",
-      attractions: "nav.attractions",
+      attractions: "Attractions",
       business: "Business Express",
       cities: "Cities",
       guide: "Travel Guide",
       home: "Home",
       restaurants: "Restaurants",
-      selectLanguage: "nav.selectLanguage",
+      scenicSpots: "Scenic Spots",
+      selectLanguage: "Select Language",
       signIn: "Sign in",
       tagline: "Explore China with AI"
     },
@@ -1220,6 +1221,16 @@ export const translations: Record<Language, Translations> = {
       open: "tooltips.open",
       searchTip: "Search cities, restaurants, or topics",
       shareTip: "Share with friends"
+    },
+    scenicSpots: {
+      pageTitle: "Scenic Spots - ChinaConnect",
+      pageDescription: "Explore China's most beautiful natural scenery and scenic spots - mountains, lakes, rivers, forests, and geological wonders across all provinces.",
+      title: "Scenic Spots",
+      subtitle: "Majestic mountains, serene lakes, deep gorges and natural wonders across China",
+      featuredCities: "Featured Scenic Cities",
+      allSpots: "All Scenic Spots",
+      citiesCount: "{count} scenic cities",
+      spotsCount: "{count} scenic spots"
     },
     userPage: {
       heading: "Profile",
@@ -2084,8 +2095,9 @@ export const translations: Record<Language, Translations> = {
       guide: "旅行ガイド",
       home: "ホーム",
       restaurants: "レストラン",
+      scenicSpots: "景勝地",
       selectLanguage: "言語を選択",
-      signIn: "Sign in",
+      signIn: "ログイン",
       tagline: "AIと一緒に中国を探索"
     },
     notFound: {
@@ -2397,6 +2409,16 @@ export const translations: Record<Language, Translations> = {
       open: "tooltips.open",
       searchTip: "都市、レストラン、トピックを検索",
       shareTip: "友達と共有"
+    },
+    scenicSpots: {
+      pageTitle: "景勝地 - ChinaConnect",
+      pageDescription: "中国各地の最も美しい自然景観と景勝地 - 山、湖、川、森、地質学的驚異を巡る旅。",
+      title: "景勝地",
+      subtitle: "中国全土の雄大な山、穏やかな湖、深い渓谷、自然の驚異",
+      featuredCities: "おすすめの景勝地都市",
+      allSpots: "すべての景勝地",
+      citiesCount: "{count}都市",
+      spotsCount: "{count}景勝地"
     },
     userPage: {
       heading: "プロフィール",
@@ -3261,8 +3283,9 @@ export const translations: Record<Language, Translations> = {
       guide: "여행 가이드",
       home: "홈",
       restaurants: "음식",
+      scenicSpots: "풍경지",
       selectLanguage: "언어 선택",
-      signIn: "Sign in",
+      signIn: "로그인",
       tagline: "AI와 함께 중국을 탐험"
     },
     notFound: {
@@ -3574,6 +3597,16 @@ export const translations: Record<Language, Translations> = {
       open: "tooltips.open",
       searchTip: "도시, 레스토랑, 주제 검색",
       shareTip: "친구와 공유"
+    },
+    scenicSpots: {
+      pageTitle: "풍경지 - ChinaConnect",
+      pageDescription: "중국의 가장 아름다운 자연 경관과 풍경지를 탐험하세요 - 산, 호수, 강, 숲, 지질학적 경이로움.",
+      title: "풍경지",
+      subtitle: "중국 전역의 장엄한 산, 고요한 호수, 깊은 계곡, 자연의 경이로움",
+      featuredCities: "추천 풍경 도시",
+      allSpots: "모든 풍경지",
+      citiesCount: "{count}개 도시",
+      spotsCount: "{count}개 풍경지"
     },
     userPage: {
       heading: "프로필",
@@ -4431,16 +4464,17 @@ export const translations: Record<Language, Translations> = {
       pageTitle: "เข้าสู่ระบบ - ChinaConnect"
     },
     nav: {
-      aiChat: "AI ท่องประเทศจีน",
+      aiChat: "ChinaGuide AI",
       attractions: "สถานที่ท่องเที่ยว",
-      business: "Express สำหรับธุรกิจ",
+      business: "ธุรกิจ",
       cities: "เมือง",
       guide: "คู่มือท่องเที่ยว",
       home: "หน้าหลัก",
       restaurants: "ร้านอาหาร",
+      scenicSpots: "แหล่งท่องเที่ยว",
       selectLanguage: "เลือกภาษา",
       signIn: "เข้าสู่ระบบ",
-      tagline: "สำรวจประเทศจีนด้วย AI"
+      tagline: "สำรวจจีนด้วย AI"
     },
     notFound: {
       askAi: "ถาม AI ท่องประเทศจีน",
@@ -4751,6 +4785,16 @@ export const translations: Record<Language, Translations> = {
       open: "เปิด",
       searchTip: "ค้นหาเมือง, ร้านอาหาร หรือหัวข้อ",
       shareTip: "แชร์กับเพื่อน"
+    },
+    scenicSpots: {
+      pageTitle: "แหล่งท่องเที่ยวทางธรรมชาติ - ChinaConnect",
+      pageDescription: "สำรวจแหล่งท่องเที่ยวทางธรรมชาติที่สวยที่สุดของจีน - ภูเขา ทะเลสาบ แม่น้ำ ป่าไม้ และสิ่งมหัศจรรย์ทางธรณีวิทยา",
+      title: "แหล่งท่องเที่ยวทางธรรมชาติ",
+      subtitle: "ภูเขาที่ยิ่งใหญ่ ทะเลสาบอันเงียบสงบ หุบเขาลึก และสิ่งมหัศจรรย์ทางธรรมชาติทั่วจีน",
+      featuredCities: "เมืองท่องเที่ยวทางธรรมชาติยอดนิยม",
+      allSpots: "แหล่งท่องเที่ยวทั้งหมด",
+      citiesCount: "{count} เมือง",
+      spotsCount: "{count} สถานที่"
     },
     userPage: {
       heading: "ข้อมูลส่วนตัว",
@@ -5608,16 +5652,17 @@ export const translations: Record<Language, Translations> = {
       pageTitle: "Đăng nhập - ChinaConnect"
     },
     nav: {
-      aiChat: "Hướng dẫn AI Trung Quốc",
+      aiChat: "ChinaGuide AI",
       attractions: "Điểm tham quan",
-      business: "Business Express",
+      business: "Doanh nghiệp",
       cities: "Thành phố",
       guide: "Cẩm nang du lịch",
       home: "Trang chủ",
       restaurants: "Nhà hàng",
+      scenicSpots: "Danh thắng",
       selectLanguage: "Chọn ngôn ngữ",
       signIn: "Đăng nhập",
-      tagline: "Khám phá Trung Quốc cùng AI"
+      tagline: "Khám phá Trung Quốc với AI"
     },
     notFound: {
       askAi: "Hỏi Hướng dẫn AI Trung Quốc",
@@ -5928,6 +5973,16 @@ export const translations: Record<Language, Translations> = {
       open: "Mở",
       searchTip: "Tìm kiếm thành phố, nhà hàng hoặc chủ đề",
       shareTip: "Chia sẻ với bạn bè"
+    },
+    scenicSpots: {
+      pageTitle: "Danh thắng - ChinaConnect",
+      pageDescription: "Khám phá phong cảnh thiên nhiên và danh thắng đẹp nhất Trung Quốc - núi, hồ, sông, rừng và kỳ quan địa chất.",
+      title: "Danh thắng",
+      subtitle: "Núi hùng vĩ, hồ tĩnh lặng, thung lũng sâu và kỳ quan thiên nhiên khắp Trung Quốc",
+      featuredCities: "Thành phố có danh thắng nổi bật",
+      allSpots: "Tất cả danh thắng",
+      citiesCount: "{count} thành phố",
+      spotsCount: "{count} danh thắng"
     },
     userPage: {
       heading: "Hồ sơ",
@@ -6787,14 +6842,15 @@ export const translations: Record<Language, Translations> = {
     nav: {
       aiChat: "ChinaGuide AI",
       attractions: "Достопримечательности",
-      business: "Бизнес-экспресс",
+      business: "Бизнес",
       cities: "Города",
       guide: "Путеводитель",
       home: "Главная",
       restaurants: "Рестораны",
+      scenicSpots: "Живописные места",
       selectLanguage: "Выбор языка",
-      signIn: "Sign in",
-      tagline: "Исследуйте Китай с помощью AI"
+      signIn: "Войти",
+      tagline: "Изучайте Китай с ИИ"
     },
     notFound: {
       askAi: "Спросите ChinaGuide AI",
@@ -7105,6 +7161,16 @@ export const translations: Record<Language, Translations> = {
       open: "Открыть",
       searchTip: "Поиск по городам, ресторанам или темам",
       shareTip: "Поделиться с друзьями"
+    },
+    scenicSpots: {
+      pageTitle: "Живописные места - ChinaConnect",
+      pageDescription: "Откройте для себя самые красивые природные пейзажи и живописные места Китая - горы, озёра, реки, леса и геологические чудеса.",
+      title: "Живописные места",
+      subtitle: "Величественные горы, спокойные озёра, глубокие ущелья и природные чудеса по всему Китаю",
+      featuredCities: "Популярные города с живописными местами",
+      allSpots: "Все живописные места",
+      citiesCount: "{count} городов",
+      spotsCount: "{count} живописных мест"
     },
     userPage: {
       heading: "Профиль",
@@ -7964,14 +8030,15 @@ export const translations: Record<Language, Translations> = {
     nav: {
       aiChat: "ChinaGuide AI",
       attractions: "Attractions",
-      business: "Business Express",
+      business: "Affaires",
       cities: "Villes",
       guide: "Guide de voyage",
       home: "Accueil",
       restaurants: "Restaurants",
+      scenicSpots: "Sites pittoresques",
       selectLanguage: "Sélectionner la langue",
-      signIn: "Se connecter",
-      tagline: "Explorez la Chine avec l'IA"
+      signIn: "Connexion",
+      tagline: "Explorez la Chine avec lIA"
     },
     notFound: {
       askAi: "Demandez à ChinaGuide AI",
@@ -8282,6 +8349,16 @@ export const translations: Record<Language, Translations> = {
       open: "Ouvrir",
       searchTip: "Rechercher des villes, des restaurants ou des sujets",
       shareTip: "Partager avec des amis"
+    },
+    scenicSpots: {
+      pageTitle: "Sites pittoresques - ChinaConnect",
+      pageDescription: "Explorez les plus beaux paysages naturels et sites pittoresques de Chine - montagnes, lacs, rivières, forêts et merveilles géologiques.",
+      title: "Sites pittoresques",
+      subtitle: "Montagnes majestueuses, lacs sereins, gorges profondes et merveilles naturelles à travers la Chine",
+      featuredCities: "Villes pittoresques en vedette",
+      allSpots: "Tous les sites pittoresques",
+      citiesCount: "{count} villes",
+      spotsCount: "{count} sites"
     },
     userPage: {
       heading: "Profil",
@@ -9139,16 +9216,17 @@ export const translations: Record<Language, Translations> = {
       pageTitle: "Anmelden - ChinaConnect"
     },
     nav: {
-      aiChat: "ChinaGuide KI",
+      aiChat: "ChinaGuide AI",
       attractions: "Sehenswürdigkeiten",
-      business: "Business Express",
+      business: "Geschäftlich",
       cities: "Städte",
       guide: "Reiseführer",
       home: "Startseite",
       restaurants: "Restaurants",
-      selectLanguage: "Sprache wählen",
-      signIn: "Sign in",
-      tagline: "Erkunde China mit KI"
+      scenicSpots: "Landschaftsgebiete",
+      selectLanguage: "Sprache auswählen",
+      signIn: "Anmelden",
+      tagline: "China mit KI erkunden"
     },
     notFound: {
       askAi: "Fragen Sie ChinaGuide KI",
@@ -9459,6 +9537,16 @@ export const translations: Record<Language, Translations> = {
       open: "Öffnen",
       searchTip: "Städte, Restaurants oder Themen suchen",
       shareTip: "Mit Freunden teilen"
+    },
+    scenicSpots: {
+      pageTitle: "Landschaftsgebiete - ChinaConnect",
+      pageDescription: "Entdecken Sie Chinas schönste Naturlandschaften und Landschaftsgebiete - Berge, Seen, Flüsse, Wälder und geologische Wunder.",
+      title: "Landschaftsgebiete",
+      subtitle: "Majestätische Berge, ruhige Seen, tiefe Schluchten und Naturwunder in ganz China",
+      featuredCities: "Empfohlene Landschaftsstädte",
+      allSpots: "Alle Landschaftsgebiete",
+      citiesCount: "{count} Städte",
+      spotsCount: "{count} Landschaftsgebiete"
     },
     userPage: {
       heading: "Profil",
@@ -10318,14 +10406,15 @@ export const translations: Record<Language, Translations> = {
     nav: {
       aiChat: "ChinaGuide AI",
       attractions: "المعالم",
-      business: "Business Express",
+      business: "الأعمال",
       cities: "المدن",
       guide: "دليل السفر",
       home: "الصفحة الرئيسية",
       restaurants: "المطاعم",
+      scenicSpots: "المناطق الطبيعية",
       selectLanguage: "اختيار اللغة",
-      signIn: "Sign in",
-      tagline: "اكتشف الصين مع الذكاء الاصطناعي"
+      signIn: "تسجيل الدخول",
+      tagline: "استكشف الصين بالذكاء الاصطناعي"
     },
     notFound: {
       askAi: "اسأل ChinaGuide AI",
@@ -10636,6 +10725,16 @@ export const translations: Record<Language, Translations> = {
       open: "فتح",
       searchTip: "البحث عن المدن، المطاعم، أو المواضيع",
       shareTip: "مشاركة مع الأصدقاء"
+    },
+    scenicSpots: {
+      pageTitle: "المناطق الطبيعية - ChinaConnect",
+      pageDescription: "استكشف أجمل المناظر الطبيعية والمواقع الخلابة في الصين - الجبال والبحيرات والأنهار والغابات والعجائب الجيولوجية.",
+      title: "المناطق الطبيعية",
+      subtitle: "جبال مهيبـة وبحيرات هادئة وأودية عميقة وعجائب طبيعية في جميع أنحاء الصين",
+      featuredCities: "مدن المناظر الطبيعية المميزة",
+      allSpots: "جميع المناطق الطبيعية",
+      citiesCount: "{count} مدن",
+      spotsCount: "{count} موقع"
     },
     userPage: {
       heading: "الملف الشخصي",
@@ -11493,16 +11592,17 @@ export const translations: Record<Language, Translations> = {
       pageTitle: "ورود - ChinaConnect"
     },
     nav: {
-      aiChat: "چین‌گاید ای‌آی",
+      aiChat: "ChinaGuide AI",
       attractions: "جاذبه‌ها",
-      business: "اکسپرس کسب‌وکار",
+      business: "کسب‌وکار",
       cities: "شهرها",
       guide: "راهنمای سفر",
       home: "خانه",
       restaurants: "رستوران‌ها",
+      scenicSpots: "مناظر دیدنی",
       selectLanguage: "انتخاب زبان",
-      signIn: "Sign in",
-      tagline: "با ای‌آی به چین سفر کنید"
+      signIn: "ورود",
+      tagline: "چین را با هوش مصنوعی کاوش کنید"
     },
     notFound: {
       askAi: "از چین‌گاید ای‌آی بپرسید",
@@ -11813,6 +11913,16 @@ export const translations: Record<Language, Translations> = {
       open: "باز کردن",
       searchTip: "جستجوی شهرها، رستوران‌ها یا موضوعات",
       shareTip: "با دوستان به اشتراک بگذارید"
+    },
+    scenicSpots: {
+      pageTitle: "مناظر دیدنی - ChinaConnect",
+      pageDescription: "زیباترین مناظر طبیعی و مناظر دیدنی چین را کاوش کنید - کوه‌ها، دریاچه‌ها، رودخانه‌ها، جنگل‌ها و شگفتی‌های زمین‌شناسی.",
+      title: "مناظر دیدنی",
+      subtitle: "کوه‌های باشکوه، دریاچه‌های آرام، دره‌های عمیق و شگفتی‌های طبیعی در سراسر چین",
+      featuredCities: "شهرهای مناظر دیدنی برتر",
+      allSpots: "همه مناظر دیدنی",
+      citiesCount: "{count} شهر",
+      spotsCount: "{count} منظره"
     },
     userPage: {
       heading: "پروفایل",
@@ -12670,16 +12780,17 @@ export const translations: Record<Language, Translations> = {
       pageTitle: "登录 - ChinaConnect"
     },
     nav: {
-      aiChat: "AI 助手",
-      attractions: "景区",
+      aiChat: "ChinaGuide AI",
+      attractions: "景点",
       business: "商务",
       cities: "城市",
-      guide: "旅行指南",
+      guide: "旅游指南",
       home: "首页",
       restaurants: "美食",
+      scenicSpots: "景区",
       selectLanguage: "选择语言",
-      signIn: "Sign in",
-      tagline: "AI 助你探索中国"
+      signIn: "登录",
+      tagline: "用 AI 探索中国"
     },
     notFound: {
       askAi: "向 AI 询问",
@@ -12990,6 +13101,16 @@ export const translations: Record<Language, Translations> = {
       open: "打开",
       searchTip: "搜索城市、餐厅或主题",
       shareTip: "分享给朋友"
+    },
+    scenicSpots: {
+      pageTitle: "景区 - ChinaConnect",
+      pageDescription: "探索中国最美的自然风光和景区 - 山脉、湖泊、河流、森林、地质奇观。",
+      title: "景区",
+      subtitle: "壮丽的山脉、宁静的湖泊、幽深的峡谷、自然奇观遍布中国",
+      featuredCities: "热门景区城市",
+      allSpots: "所有景区",
+      citiesCount: "{count}个景区城市",
+      spotsCount: "{count}个景区"
     },
     userPage: {
       heading: "个人资料",
@@ -13847,16 +13968,17 @@ export const translations: Record<Language, Translations> = {
       pageTitle: "登錄 - ChinaConnect"
     },
     nav: {
-      aiChat: "AI 助手",
-      attractions: "景區",
+      aiChat: "ChinaGuide AI",
+      attractions: "景點",
       business: "商務",
       cities: "城市",
-      guide: "旅行指南",
+      guide: "旅遊指南",
       home: "首頁",
       restaurants: "美食",
+      scenicSpots: "景區",
       selectLanguage: "選擇語言",
-      signIn: "Sign in",
-      tagline: "AI 助你探索中國"
+      signIn: "登入",
+      tagline: "用 AI 探索中國"
     },
     notFound: {
       askAi: "向 AI 詢問",
@@ -14167,6 +14289,16 @@ export const translations: Record<Language, Translations> = {
       open: "開啟",
       searchTip: "搜尋城市、餐廳或主题",
       shareTip: "分享给朋友"
+    },
+    scenicSpots: {
+      pageTitle: "景區 - ChinaConnect",
+      pageDescription: "探索中國最美的自然風光和景區 - 山脈、湖泊、河流、森林、地質奇觀。",
+      title: "景區",
+      subtitle: "壯麗的山脈、寧靜的湖泊、幽深的峽谷、自然奇觀遍布中國",
+      featuredCities: "熱門景區城市",
+      allSpots: "所有景區",
+      citiesCount: "{count}個景區城市",
+      spotsCount: "{count}個景區"
     },
     userPage: {
       heading: "個人檔案",

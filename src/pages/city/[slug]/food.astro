@@ -2,6 +2,7 @@
 
 import "@/styles/global.css";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
+import { getCityData } from "@/data/cities-i18n";
 import type { Restaurant } from "@/data/cities/types";
 import { getLangFromUrl } from "@/i18n/utils";
 import { translations } from "@/i18n/translations";
@@ -12,8 +13,8 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const city = getCityBySlug(slug as string);
 const lang = getLangFromUrl(Astro.url);
+const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
 
 if (!city) {
   return Astro.redirect("/404");

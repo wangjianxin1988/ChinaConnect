@@ -1,0 +1,3338 @@
+{
+  "slug": "chongqing",
+  "name": "重庆",
+  "nameEn": "Chongqing",
+  "country": "China",
+  "population": "32 million",
+  "coordinates": {
+    "lat": 29.4316,
+    "lng": 106.9123
+  },
+  "timezone": "UTC+8 (China Standard Time)",
+  "description": "Chongqing, China's largest city by area, is a mountainous metropolis built on cliffs along the Yangtze and Jialing Rivers. Known as the 'Mountain City' and 'Fog City' for its dramatic terrain and misty climate. Birthplace of Sichuan cuisine and hot pot. A strategic inland port and commercial hub with a unique food culture.",
+  "coverImage": "/img/ext/848a39eac953.webp",
+  "highlights": [
+    "Jiefangbei - Business district",
+    "Hongya Dong - Cliff-side stilted houses",
+    "Three Gorges - Yangtze cruise",
+    "Ciqikou - Ancient pottery town",
+    "Dazu Rock Carvings - UNESCO World Heritage"
+  ],
+  "climate": {
+    "type": "Subtropical monsoon",
+    "bestMonths": [
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
+    "avgSummerTemp": "28-35C (82-95F)",
+    "avgWinterTemp": "6-10C (43-50F)",
+    "tips": "Summers are extremely hot and humid (40C possible). Winters are damp and cold. Best in spring and autumn. Always carry water in summer. Fog is common year-round."
+  },
+  "attractions": [
+    {
+      "id": "jiefangbei",
+      "name": "解放碑",
+      "nameEn": "Jiefangbei",
+      "category": "cultural",
+      "image": "/img/ext/89aa617e97bc.webp",
+      "description": "Chongqing's commercial center and iconic landmark, a bustling pedestrian area with shopping, dining, and entertainment.",
+      "address": "Jiefangbei, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "People's Liberation Monument",
+        "Shopping centers",
+        "Street food",
+        "Night views"
+      ],
+      "tips": "Best at night when illuminated. Sample street food from vendors. Walk to nearby Monggan Street.",
+      "phone": "+86 023  2792 1076"
+    },
+    {
+      "id": "hongyadong",
+      "name": "洪崖洞",
+      "nameEn": "Hongyadong",
+      "category": "cultural",
+      "image": "/img/ext/8fa14d695eac.webp",
+      "description": "Stunning cliff-side stilted house complex with traditional architecture, famous for appearing like a 'castle in the sky' at night.",
+      "address": "Cangtu Avenue, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5882
+      },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free (viewing deck may charge)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "11-story stilted buildings",
+        "Night lighting",
+        "Hot pot restaurants",
+        "Jialing River views"
+      ],
+      "tips": "Visit at dusk for photos of both day and night views. Crowds peak 19:00-21:00. Best photos from大桥 or river boat.",
+      "phone": "+86 23 6303 9999"
+    },
+    {
+      "id": "ciqikou",
+      "name": "磁器口古镇",
+      "nameEn": "Ciqikou Ancient Town",
+      "category": "historical",
+      "image": "/img/ext/d16468fc58ec.webp",
+      "description": "명나라 시대부터 존재한 역사적인 마을로, 전통 공예품, 특히 도자기 및 자수 천으로 유명합니다.",
+      "address": "Ciqikou, Shapingba District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.4582
+      },
+      "openingHours": "24시간 개방 (상점 09:00-20:00)",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2-3시간",
+      "highlights": [
+        "고대 거리",
+        "마씨 작업장",
+        "지역 간식",
+        "대나무 공예"
+      ],
+      "tips": "평일 오전에 방문하면 인파가 적습니다. 충칭 누들을 맛보고 마씨 요구르트를 시도해보세요. 성수기 연휴는 피하세요.",
+      "phone": "+86 23 6501 0003"
+    },
+    {
+      "id": "nanshan",
+      "name": "南山一棵树观景台",
+      "nameEn": "Nanshan Tree Shadow Viewing Platform",
+      "category": "modern",
+      "image": "/img/ext/0e320a1c1a88.webp",
+      "description": "Premier night viewing spot overlooking the city's spectacular skyline, particularly beautiful where Yangtze and Jialing Rivers meet.",
+      "address": "Nanshan, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.6182
+      },
+      "openingHours": "09:00-22:30",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "360-degree city views",
+        "River confluence",
+        "Night photography",
+        "Tea houses"
+      ],
+      "tips": "Go at sunset for day and night views. Bring tripod for photos. Taxi from downtown about 30¥.",
+      "phone": "+86 023  1362 3256"
+    },
+    {
+      "id": "dazu-rock",
+      "name": "大足石刻",
+      "nameEn": "Dazu Rock Carvings",
+      "category": "historical",
+      "image": "/img/ext/384b9b0188a3.webp",
+      "description": "UNESCO World Heritage site with extraordinary Buddhist and Taoist rock carvings dating from 9th to 13th century.",
+      "address": "Dazu County, 90km from Chongqing",
+      "coordinates": {
+        "lat": 29.7522,
+        "lng": 105.7282
+      },
+      "openingHours": "08:30-18:00",
+      "ticketPrice": "120¥ ( Bao'en Palace), 140¥ (All)",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Thousand-hand Guanyin",
+        "Buddhist carvings",
+        "Nine Dragon Relief",
+        "Thatched Cottage"
+      ],
+      "tips": "Arrange day trip or stay nearby. Start early to avoid tour groups. Wear comfortable walking shoes.",
+      "phone": "+86 023  4089 5974"
+    },
+    {
+      "id": "wulong-karst",
+      "name": "武隆喀斯特",
+      "nameEn": "Wulong Karst",
+      "category": "natural",
+      "image": "/img/ext/2566268a0ff2.webp",
+      "description": "UNESCO World Heritage site featuring dramatic karst formations, massive caves, and natural bridges in stunning natural setting.",
+      "address": "Wulong County, 200km from Chongqing",
+      "coordinates": {
+        "lat": 29.3322,
+        "lng": 107.9282
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "70-300¥ depending on attractions",
+      "recommendedVisitTime": "Full day",
+      "highlights": [
+        "Three Natural Bridges",
+        "Furong Cave",
+        "Longgong Redwood Forest"
+      ],
+      "tips": "Day trip from Chongqing possible but early start needed. Bring jacket - caves are cold. Film location for 'Curse of the Golden Flower'.",
+      "phone": "+86 023  6288 8130"
+    },
+    {
+      "id": "shibati",
+      "name": "十八梯",
+      "nameEn": "Shibati",
+      "category": "cultural",
+      "image": "/img/ext/a279adea3e35.webp",
+      "description": "Restored historic neighborhood connecting upper and lower Chongqing with traditional architecture and local atmosphere.",
+      "address": "Shibati, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5882
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Historic steps",
+        "Traditional shops",
+        "Local tea houses",
+        "City views"
+      ],
+      "tips": "Best early morning. Combine with Jiefangbei walk. Great for photos of old Chongqing.",
+      "phone": "+86 023  3238 2788"
+    },
+    {
+      "id": "white-kingdom",
+      "name": "白帝城",
+      "nameEn": "White King City",
+      "category": "historical",
+      "image": "/img/ext/b65b4fb82b81.webp",
+      "description": "Ancient city on the Yangtze featuring the famous 'Three Gorges' scenery and associated with legendary King of Spring and Autumn.",
+      "address": "Fengjie County, Three Gorges area",
+      "coordinates": {
+        "lat": 31.0222,
+        "lng": 109.5282
+      },
+      "openingHours": "06:30-18:00",
+      "ticketPrice": "120¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Sunset temple",
+        "Poetry corridor",
+        "Yangtze views",
+        "Ancient gate"
+      ],
+      "tips": "Combine with Three Gorges cruise. Named after Liu Bei's 'White Emperor' legend.",
+      "phone": "+86 023  2755 8721"
+    },
+    {
+      "id": "yangtze-cableway",
+      "name": "长江索道",
+      "nameEn": "Yangtze River Cableway",
+      "category": "cultural",
+      "image": "/img/ext/738cb51a2024.webp",
+      "description": "Iconic cable car system crossing the Yangtze River, offering spectacular views of the city skyline and river confluence.",
+      "address": "Xiaoaoshi, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5982
+      },
+      "openingHours": "07:30-22:00",
+      "ticketPrice": "20¥ (single), 30¥ (round trip)",
+      "recommendedVisitTime": "30-45 minutes",
+      "highlights": [
+        "Aerial city views",
+        "Yangtze crossing",
+        "Unique transportation",
+        "Night scenery"
+      ],
+      "tips": "Go early morning or late evening to avoid crowds. Best during sunset for day/night views.",
+      "phone": "+86 23 6881 6888"
+    },
+    {
+      "id": "liziba-metro",
+      "name": "李子坝轻轨穿楼",
+      "nameEn": "Liziba Metro Through Building",
+      "category": "cultural",
+      "image": "/img/ext/c14b36a571c5.webp",
+      "description": "World-famous metro station built through a residential building, a unique example of Chongqing's innovative urban design.",
+      "address": "Liziba, Liangjiang New Area",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5282
+      },
+      "openingHours": "Metro: 06:30-23:00",
+      "ticketPrice": "Free (metro fare separate)",
+      "recommendedVisitTime": "30 minutes",
+      "highlights": [
+        "Metro through building",
+        "Viewing platform",
+        "Photo opportunities",
+        "Liangshan Chicken nearby"
+      ],
+      "tips": "Best viewed from the dedicated viewing platform across the street. Ride the metro through the building for the full experience.",
+      "phone": "+86 023  3119 8270"
+    },
+    {
+      "id": "eling-park",
+      "name": "鹅岭公园",
+      "nameEn": "Eling Park",
+      "category": "cultural",
+      "image": "/img/ext/0bf87e8359a6.webp",
+      "description": "One of Chongqing's oldest and most beautiful parks, featuring traditional Chinese gardens, tea houses, and panoramic city views.",
+      "address": "Eling, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5682
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Garden landscapes",
+        "Plaza tea house",
+        "City overlook",
+        "Historic pavilions"
+      ],
+      "tips": "Visit at sunrise for peaceful atmosphere. The park connects to Jiaotong University campus.",
+      "phone": "+86 023  9076 2990"
+    },
+    {
+      "id": "zhazidong",
+      "name": "渣子洞",
+      "nameEn": "Zhazidong",
+      "category": "historical",
+      "image": "/img/ext/699028984ec4.webp",
+      "description": "Former prison where revolutionary prisoners were held during the 1940s, now a museum honoring those who fought for freedom.",
+      "address": "Saojiaoshan, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5982
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Prison cells",
+        "Revolutionary history",
+        "Memorial hall",
+        "Cave structures"
+      ],
+      "tips": "Combine with White Manor nearby. Allow 2 hours for both sites. Book in advance during peak season.",
+      "phone": "+86 023  7597 2417"
+    },
+    {
+      "id": "white-manor",
+      "name": "白公馆",
+      "nameEn": "White Manor",
+      "category": "historical",
+      "image": "/img/ext/38a95f40b9b1.webp",
+      "description": "Historic villa turned prison during the 1940s, site of significant events in Chinese revolutionary history.",
+      "address": "Saojiaoshan, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5982
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Historic villa",
+        "Revolutionary exhibits",
+        "Garden grounds",
+        "Memorial statues"
+      ],
+      "tips": "Part of the Red Cliff scenic area with Zhazidong. Morning recommended to avoid afternoon crowds.",
+      "phone": "+86 023  7339 8789"
+    },
+    {
+      "id": "chongqing-zoo",
+      "name": "重庆动物园",
+      "nameEn": "충칭 동물원",
+      "category": "family",
+      "image": "/img/ext/ec13e7d7c979.webp",
+      "description": "자연 서식지에서 자이언트 판다, 금색 원숭이 및 300종 이상의 동물을 볼 수 있는 대규모 동물원입니다.",
+      "address": "양자핑, 쥐룽포구",
+      "coordinates": {
+        "lat": 29.5022,
+        "lng": 106.5182
+      },
+      "openingHours": "08:00-18:00",
+      "ticketPrice": "25¥",
+      "recommendedVisitTime": "3-4시간",
+      "highlights": [
+        "자이언트 판다",
+        "금색코원숭이",
+        "코끼리 쇼",
+        "수족관"
+      ],
+      "tips": "팬더가 가장 활발한 시간인 08:00에 도착하세요. 자이언트 팬더 전시 관람료는 별도입니다.",
+      "phone": "+86 023  7618 3358"
+    },
+    {
+      "id": "people-park",
+      "name": "人民公园",
+      "nameEn": "People's Park",
+      "category": "cultural",
+      "image": "/img/ext/a785aeeb5ca4.webp",
+      "description": "Urban park in the heart of the city with tea houses, gardens, and historical monuments, popular with locals.",
+      "address": "Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "openingHours": "06:00-22:00",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Morning tai chi",
+        "Tea houses",
+        "Flower displays",
+        "Fountain square"
+      ],
+      "tips": "Best in early morning to see locals practicing tai chi. Traditional tea service available.",
+      "phone": "+86 023  5303 0201"
+    },
+    {
+      "id": "expo-garden",
+      "name": "重庆园博园",
+      "nameEn": "Chongqing Expo Garden",
+      "category": "cultural",
+      "image": "/img/ext/7718547f7d0a.webp",
+      "description": "Massive botanical garden featuring regional gardens from across China and international themes with beautiful landscapes.",
+      "address": "Yubei District",
+      "coordinates": {
+        "lat": 29.6222,
+        "lng": 106.5382
+      },
+      "openingHours": "09:00-18:00",
+      "ticketPrice": "45¥",
+      "recommendedVisitTime": "3-4 hours",
+      "highlights": [
+        "Regional gardens",
+        "International pavilions",
+        "Lake scenery",
+        "Bridge collection"
+      ],
+      "tips": "Rent a golf cart for easier navigation. Spring for flower exhibitions. Take metro Line 3.",
+      "phone": "+86 023  5989 6782"
+    },
+    {
+      "id": "happy-valley",
+      "name": "重庆欢乐谷",
+      "nameEn": "Happy Valley Shenzhen",
+      "category": "family",
+      "image": "/img/ext/41e5039d2be0.webp",
+      "description": "Large amusement park with roller coasters, water rides, and performances for all ages.",
+      "address": "Overseas Chinese Town, Nanshan District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.5182
+      },
+      "openingHours": "09:30-22:00 (varies by season)",
+      "ticketPrice": "260¥ (full day)",
+      "recommendedVisitTime": "4-5 hours",
+      "highlights": [
+        "Mountain Flying coaster",
+        "Swing carousel",
+        "Water slides",
+        "Evening shows"
+      ],
+      "tips": "Weekday visits avoid crowds. Height restrictions on rides. Re-entry allowed with hand stamp.",
+      "phone": "+86 023  9447 1585"
+    },
+    {
+      "id": "caribbean-water",
+      "name": "海昌加勒比水世界",
+      "nameEn": "Caribbean Water World",
+      "category": "family",
+      "image": "/img/ext/a2fca1de8f2c.webp",
+      "description": "카리브해 테마의 놀이기구, 파도풀, 슬라이드가 있는 대형 워터파크로, 여름철에 즐거운 시간을 보낼 수 있습니다.",
+      "address": "남안구 난산",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.6282
+      },
+      "openingHours": "10:00-22:00 (여름에만 운영)",
+      "ticketPrice": "180¥",
+      "recommendedVisitTime": "4-5시간",
+      "highlights": [
+        "파도풀",
+        "라텍스 슬라이드",
+        "게으른 강",
+        "해변 구역"
+      ],
+      "tips": "줄을 피하려면 일찍 가세요. 자외선 차단제를 가져오세요. 사물함이 필요합니다. 내부 음식은 비쌉니다.",
+      "phone": "+86 023  6687 6948"
+    },
+    {
+      "id": "science-museum",
+      "name": "重庆科技馆",
+      "nameEn": "Chongqing Science Museum",
+      "category": "family",
+      "image": "/img/ext/0f7bef061ca4.webp",
+      "description": "Modern science museum with interactive exhibits on physics, technology, and natural history.",
+      "address": "Jiangbei District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.5782
+      },
+      "openingHours": "09:30-17:00 (Closed Monday)",
+      "ticketPrice": "Free (some exhibitions extra)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "IMAX theater",
+        "4D simulator",
+        "Children's zone",
+        "Space exhibit"
+      ],
+      "tips": "Best for families with children. Book IMAX tickets online. Allow half day.",
+      "phone": "+86 023  1102 4686"
+    },
+    {
+      "id": "three-gorges-museum",
+      "name": "三峡博物馆",
+      "nameEn": "Three Gorges Museum",
+      "category": "cultural",
+      "image": "/img/ext/de0ae28326d5.webp",
+      "description": "National museum showcasing the history and culture of the Three Gorges region and ancient Ba-Yu civilization.",
+      "address": "People's Square, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "openingHours": "09:00-17:00 (Closed Monday)",
+      "ticketPrice": "Free (ID required)",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Three Gorges history",
+        "Ancient artifacts",
+        "Dinosaur fossils",
+        "Interactive exhibits"
+      ],
+      "tips": "Combine with People's Park and People's Hall nearby. Audio guides available. Photography restricted.",
+      "phone": "+86 23 6367 9011"
+    },
+    {
+      "id": "wulong-furong-caves",
+      "name": "武隆芙蓉洞",
+      "nameEn": "Wulong Furong Cave",
+      "category": "natural",
+      "image": "/img/ext/8f53568883c2.webp",
+      "description": "One of the largest and most beautiful karst caves in China, featuring spectacular stalactites, stalagmites, and underground rivers.",
+      "address": "Wulong County, 200km from Chongqing",
+      "coordinates": {
+        "lat": 29.3322,
+        "lng": 107.9282
+      },
+      "openingHours": "08:30-17:00",
+      "ticketPrice": "120¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Massive cave chambers",
+        "Colorful formations",
+        "Underground river",
+        "Crystal formations"
+      ],
+      "tips": "Bring a light jacket - cave temperature is cool. Photography allowed but no flash. Combine with Three Natural Bridges visit.",
+      "phone": "+86 023  2048 1648"
+    },
+    {
+      "id": "fusheng-teahouse",
+      "name": "福盛茶馆",
+      "nameEn": "Fusheng Teahouse",
+      "category": "cultural",
+      "image": "/img/ext/2959b51a6983.webp",
+      "description": "Traditional Chongqing teahouse dating back to Qing Dynasty, offering authentic tea service and mahjong in historic setting.",
+      "address": "Near People's Park, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "openingHours": "08:00-22:00",
+      "ticketPrice": "30¥ (includes tea)",
+      "recommendedVisitTime": "1-2 hours",
+      "highlights": [
+        "Traditional atmosphere",
+        "Mahjong tables",
+        "Various teas",
+        "Old Chongqing style"
+      ],
+      "tips": "Best experienced in the morning. Try local Sichuan tea. Join locals for mahjong if you know the game. Budget for tipping.",
+      "phone": "+86 023  7664 4434"
+    },
+    {
+      "id": "changshou-lake",
+      "name": "长寿湖",
+      "nameEn": "창수호",
+      "category": "natural",
+      "image": "/img/ext/aa952a558f61.webp",
+      "description": "아름다운 일몰 경치, 섬 투어, 신선한 생선 요리로 유명한 대형 담수호입니다. 충칭에서 약 2시간 거리입니다.",
+      "address": "창수구, 충칭에서 80km",
+      "coordinates": {
+        "lat": 29.8522,
+        "lng": 107.1282
+      },
+      "openingHours": "24시간 개방",
+      "ticketPrice": "무료 (유람선 투어는 별도)",
+      "recommendedVisitTime": "4-5시간",
+      "highlights": [
+        "일몰 경치",
+        "섬 투어",
+        "신선한 생선",
+        "수상 활동"
+      ],
+      "tips": "주말 여행으로 방문하기 가장 좋습니다. 섬 주변을 유람선으로 둘러보세요. 유명한 창수호 생선 전골을 맛보세요. 호숫가 호텔에서 하룻밤 묵으세요.",
+      "phone": "+86 023  0553 5647"
+    },
+    {
+      "id": "heishijiao",
+      "name": "黑石板",
+      "nameEn": "Heishijiao Black Stone Board",
+      "category": "cultural",
+      "image": "/img/ext/ea1310cf1193.webp",
+      "description": "Historic black stone board street with traditional Chongqing architecture, local snacks, and cultural heritage.",
+      "address": "Yuzhong District, near Jiefangbei",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "1 hour",
+      "highlights": [
+        "Black stone road",
+        "Old buildings",
+        "Local snacks",
+        "Photo location"
+      ],
+      "tips": "Best in early morning. Combine with Jiefangbei walk. Try local breakfast. Great for photography.",
+      "phone": "+86 023  7289 4469"
+    },
+    {
+      "id": "guanyinqiao-pedestrian",
+      "name": "观音桥步行街",
+      "nameEn": "Guanyinqiao Pedestrian Street",
+      "category": "modern",
+      "image": "/img/ext/e5941a713491.webp",
+      "description": "Modern commercial district in Jiangbei with shopping centers, restaurants, and entertainment. Chongqing's second major business district.",
+      "address": "Guanyinqiao, Jiangbei District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5582
+      },
+      "openingHours": "Open 24 hours (shops 10:00-22:00)",
+      "ticketPrice": "Free",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Shopping centers",
+        "Night views",
+        "Food streets",
+        "Entertainment"
+      ],
+      "tips": "Great for evening strolls. Try the night food street. Metro Line 3 directly connects. Modern alternative to Jiefangbei.",
+      "phone": "+86 023  7144 5692"
+    },
+    {
+      "id": "tongluxia",
+      "name": "铜锣峡",
+      "nameEn": "Tongluxia Gorge",
+      "category": "natural",
+      "image": "/img/ext/4bb65495f18a.webp",
+      "description": "Scenic gorge on the Yangtze River featuring dramatic cliffs, ancient temples, and natural beauty. Historic military defense point.",
+      "address": "Fushun County, east of Chongqing",
+      "coordinates": {
+        "lat": 29.6322,
+        "lng": 107.3282
+      },
+      "openingHours": "Open 24 hours",
+      "ticketPrice": "30¥",
+      "recommendedVisitTime": "2-3 hours",
+      "highlights": [
+        "Dramatic gorge",
+        "Ancient temple",
+        "River views",
+        "Hiking trails"
+      ],
+      "tips": "Best combined with cruise on Yangtze. Ancient military fortifications visible. Bring hiking shoes. Cooler temperature by river.",
+      "phone": "+86 023  9994 6271"
+    },
+    {
+      "id": "yangtze-cable",
+      "name": "长江索道",
+      "nameEn": "Yangtze River Cableway",
+      "category": "landmark",
+      "description": "横跨长江的索道，可俯瞰长江和两岸风光。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "07:30-22:30",
+      "ticketPrice": "20元",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "长江",
+        "索道",
+        "城市风光"
+      ],
+      "tips": "体验重庆特色交通。",
+      "image": "/img/ext/309f30e43563.webp",
+      "phone": "+86 23 6881 6888"
+    },
+    {
+      "id": "chaotianmen",
+      "name": "朝天门",
+      "nameEn": "차오티안먼",
+      "category": "landmark",
+      "description": "장강과 자링강의 합류지점에 위치한 충칭에서 가장 오래된 성문입니다.",
+      "address": "충칭시 위중구",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.58
+      },
+      "openingHours": "하루종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "두 강의 합류",
+        "부두"
+      ],
+      "tips": "두 강의 합류 지점을 보세요.",
+      "image": "/img/ext/6436b7dfa30d.webp",
+      "phone": "+86 023  8644 2523"
+    },
+    {
+      "id": "chongqing-hotpot",
+      "name": "重庆火锅",
+      "nameEn": "Chongqing Hotpot",
+      "category": "street",
+      "description": "충칭에서 가장 유명한 요리로 얼얼하고 매운맛이 일품입니다.",
+      "address": "충칭시",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "하루종일",
+      "ticketPrice": "1인당 80위안",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "훠궈",
+        "얼얼하고 매운맛"
+      ],
+      "tips": "반드시 먹어야 할 충칭 훠궈.",
+      "image": "/img/ext/4733ff48dc8a.webp",
+      "phone": "+86 023  7188 9846"
+    },
+    {
+      "id": "liziba",
+      "name": "李子坝轻轨站",
+      "nameEn": "Liziba Station",
+      "category": "landmark",
+      "description": "轻轨穿楼而过的奇特景观。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.55,
+        "lng": 106.53
+      },
+      "openingHours": "全天",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "轻轨穿楼"
+      ],
+      "tips": "拍照打卡。",
+      "image": "/img/ext/877fddacc3cd.webp",
+      "phone": "+86 023  3130 0731"
+    },
+    {
+      "id": "three-gorges",
+      "name": "三峡博物馆",
+      "nameEn": "Three Gorges Museum",
+      "category": "museum",
+      "description": "展示三峡地区历史文化的博物馆。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "三峡文化",
+        "历史"
+      ],
+      "tips": "了解重庆历史。",
+      "image": "/img/ext/45522a21042c.webp",
+      "phone": "+86 023  5527 7055"
+    },
+    {
+      "id": "chongqing-night",
+      "name": "重庆夜景",
+      "nameEn": "Chongqing Night View",
+      "category": "landmark",
+      "description": "남산일수목 전망대에서 충칭의 야경을 한눈에 내려다볼 수 있습니다.",
+      "address": "충칭시 난안구",
+      "coordinates": {
+        "lat": 29.53,
+        "lng": 106.58
+      },
+      "openingHours": "24시간",
+      "ticketPrice": "30위안",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "도시 야경",
+        "조명"
+      ],
+      "tips": "충칭의 아름다운 야경을 감상하세요.",
+      "image": "/img/ext/96178ef30979.webp",
+      "phone": "+86 023  2969 4283"
+    },
+    {
+      "id": "nanshan-tree",
+      "name": "南山一棵树",
+      "nameEn": "Nanshan One Tree",
+      "category": "landmark",
+      "description": "重庆最佳观景台，可俯瞰整个渝中半岛。",
+      "address": "重庆市南岸区",
+      "coordinates": {
+        "lat": 29.53,
+        "lng": 106.58
+      },
+      "openingHours": "全天",
+      "ticketPrice": "30元",
+      "recommendedVisitTime": "1小时",
+      "highlights": [
+        "城市全景"
+      ],
+      "tips": "看重庆夜景。",
+      "image": "/img/ext/f826b86931ee.webp",
+      "phone": "+86 023  6505 3759"
+    },
+    {
+      "id": "ciqikou-temple",
+      "name": "宝轮寺",
+      "nameEn": "Baolun Temple",
+      "category": "temple",
+      "description": "자기로 유명한 역사적인 마을인 치치코우에 위치한 천년 고찰.",
+      "address": "충칭시 사핑바구",
+      "coordinates": {
+        "lat": 29.5,
+        "lng": 106.45
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "고찰",
+        "불교 문화"
+      ],
+      "tips": "종교 문화를 이해해보세요.",
+      "image": "/img/ext/83c0dc3ac633.webp",
+      "phone": "+86 023  1442 0129"
+    },
+    {
+      "id": "chongqing-museum",
+      "name": "重庆中国三峡博物馆",
+      "nameEn": "Chongqing Three Gorges Museum",
+      "category": "museum",
+      "description": "삼협의 역사와 바이위 문화를 전시하는 박물관입니다.",
+      "address": "충칭시 위중구",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "삼협 문화",
+        "바이위 문화"
+      ],
+      "tips": "충칭 문화를 알아보세요.",
+      "image": "/img/ext/afd6c6d16cc7.webp",
+      "phone": "+86 023  1811 9573"
+    },
+    {
+      "id": "jinfo-mountain",
+      "name": "金佛山",
+      "nameEn": "Jinfo Mountain",
+      "category": "nature",
+      "description": "世界自然遗产，有喀斯特地貌和原始森林。",
+      "address": "重庆市南川区",
+      "coordinates": {
+        "lat": 29.15,
+        "lng": 107.18
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "90元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "喀斯特",
+        "森林",
+        "杜鹃花"
+      ],
+      "tips": "春季杜鹃花最美。",
+      "image": "/img/ext/267d167e8902.webp",
+      "phone": "+86 023  1631 9176"
+    },
+    {
+      "id": "tiansheng-three",
+      "name": "天生三桥",
+      "nameEn": "Three Natural Bridges",
+      "category": "nature",
+      "description": "世界最大的天生桥群，三座天然石拱桥。",
+      "address": "重庆市武隆区",
+      "coordinates": {
+        "lat": 29.32,
+        "lng": 107.77
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "含武隆门票",
+      "recommendedVisitTime": "2小时",
+      "highlights": [
+        "天生桥",
+        "天坑"
+      ],
+      "tips": "电影取景地。",
+      "image": "/img/ext/72217f99d586.webp",
+      "phone": "+86 023  8336 2980"
+    },
+    {
+      "id": "chongqing-cable",
+      "name": "嘉陵江索道",
+      "nameEn": "Jialing River Cableway",
+      "category": "landmark",
+      "description": "자링강을 가로지르는 케이블카입니다.",
+      "address": "충칭시 윈중구",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.57
+      },
+      "openingHours": "07:30-22:30",
+      "ticketPrice": "20위안",
+      "recommendedVisitTime": "30분",
+      "highlights": [
+        "케이블카",
+        "강변 경치"
+      ],
+      "tips": "충칭의 교통을 체험해보세요.",
+      "image": "/img/ext/0b16a5022280.webp",
+      "phone": "+86 023  5269 2002"
+    },
+    {
+      "id": "chongqing-university",
+      "name": "重庆大学",
+      "nameEn": "Chongqing University",
+      "category": "landmark",
+      "description": "충칭에서 가장 유명한 고등 교육 기관입니다.",
+      "address": "충칭시 사핑바구",
+      "coordinates": {
+        "lat": 29.52,
+        "lng": 106.45
+      },
+      "openingHours": "하루종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "캠퍼스 경치"
+      ],
+      "tips": "충칭의 교육을 이해하세요.",
+      "image": "/img/ext/9b00b22a139e.webp",
+      "phone": "+86 023  5081 8971"
+    },
+    {
+      "id": "fairy-mountain",
+      "name": "仙女山",
+      "nameEn": "Fairy Mountain",
+      "category": "nature",
+      "description": "重庆南部的高山草原，有南方的呼伦贝尔之称。",
+      "address": "重庆市武隆区",
+      "coordinates": {
+        "lat": 29.42,
+        "lng": 107.77
+      },
+      "openingHours": "全天",
+      "ticketPrice": "50元",
+      "recommendedVisitTime": "全天",
+      "highlights": [
+        "草原",
+        "森林",
+        "骑马"
+      ],
+      "tips": "夏季避暑冬季滑雪。",
+      "image": "/img/ext/624d0575bcbe.webp",
+      "phone": "+86 023  4613 7175"
+    },
+    {
+      "id": "chongqing-people",
+      "name": "人民大礼堂",
+      "nameEn": "Great Hall of the People",
+      "category": "landmark",
+      "description": "충칭의 상징적인 건축물로, 톈탄 기년전의 스타일을 모방하여 지어졌습니다.",
+      "address": "충칭시 위중구",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.55
+      },
+      "openingHours": "09:00-17:00",
+      "ticketPrice": "10위안",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "건축 예술"
+      ],
+      "tips": "충칭의 건축에 대해 알아보세요.",
+      "image": "/img/ext/5bf1a8cf9314.webp",
+      "phone": "+86 023  3334 8466"
+    },
+    {
+      "id": "chongqing-art",
+      "name": "四川美术学院",
+      "nameEn": "Sichuan Fine Arts Institute",
+      "category": "landmark",
+      "description": "중국의 유명한 미술 대학으로, 그래피티 거리로 유명합니다.",
+      "address": "충칭시 구룡포구",
+      "coordinates": {
+        "lat": 29.5,
+        "lng": 106.5
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간 30분",
+      "highlights": [
+        "그래피티 거리",
+        "예술"
+      ],
+      "tips": "충칭의 예술을 느껴보세요.",
+      "image": "/img/ext/7d41f680a431.webp",
+      "phone": "+86 023  7151 8910"
+    },
+    {
+      "id": "tiefosi",
+      "name": "铁佛寺",
+      "nameEn": "Tiefo Temple",
+      "category": "temple",
+      "description": "重庆古老的佛教寺庙。",
+      "address": "重庆市渝中区",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "免费",
+      "recommendedVisitTime": "30分钟",
+      "highlights": [
+        "古寺"
+      ],
+      "tips": "了解宗教文化。",
+      "image": "/img/ext/15630de9f39c.webp",
+      "phone": "+86 023  4755 8372"
+    },
+    {
+      "id": "chongqing-street",
+      "name": "解放碑步行街",
+      "nameEn": "Jiefangbei Pedestrian Street",
+      "category": "street",
+      "description": "충칭에서 가장 번화한 상업 보행자 거리입니다.",
+      "address": "충칭시 위중구",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "하루종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "쇼핑",
+        "미식"
+      ],
+      "tips": "쇼핑하기 좋은 장소입니다.",
+      "image": "/img/ext/8b1b34f08555.webp",
+      "phone": "+86 023  8856 4943"
+    },
+    {
+      "id": "chongqing-night-market",
+      "name": "南滨路夜市",
+      "nameEn": "Nanbin Road Night Market",
+      "category": "street",
+      "description": "충칭에서 가장 활기찬 야시장 중 하나입니다.",
+      "address": "충칭시 난안구",
+      "coordinates": {
+        "lat": 29.53,
+        "lng": 106.58
+      },
+      "openingHours": "18:00-24:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "2시간",
+      "highlights": [
+        "야시장",
+        "미식"
+      ],
+      "tips": "충칭의 다양한 길거리 음식을 맛보세요.",
+      "image": "/img/ext/30ce27ce29dc.webp",
+      "phone": "+86 023  1289 8722"
+    },
+    {
+      "id": "chongqing-mountain",
+      "name": "歌乐山",
+      "nameEn": "Geleshan",
+      "category": "nature",
+      "description": "충칭 서북부의 산맥으로, 찌아좡동과 바이궁관이 있습니다.",
+      "address": "충칭시 사핑바구",
+      "coordinates": {
+        "lat": 29.52,
+        "lng": 106.43
+      },
+      "openingHours": "하루종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "반나절",
+      "highlights": [
+        "찌아좡동",
+        "바이궁관",
+        "숲"
+      ],
+      "tips": "항전 역사를 알아보세요.",
+      "image": "/img/ext/0929fbc5e467.webp",
+      "phone": "+86 023  6055 9857"
+    },
+    {
+      "id": "ciqikou-food",
+      "name": "磁器口小吃",
+      "nameEn": "자기커우 음식",
+      "category": "street",
+      "description": "자기커우古镇의 다양한 길거리 음식으로, 진마화, 마오쉐왕 등이 있습니다.",
+      "address": "충칭시 사핑바구",
+      "coordinates": {
+        "lat": 29.5,
+        "lng": 106.45
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "진마화",
+        "마오쉐왕"
+      ],
+      "tips": "충칭의 길거리 음식을 맛보세요.",
+      "image": "/img/ext/0adcb3954501.webp",
+      "phone": "+86 23 6501 0003"
+    },
+    {
+      "id": "chongqing-river",
+      "name": "嘉陵江",
+      "nameEn": "Jialing River",
+      "category": "nature",
+      "description": "창장 강의 지류로, 도시를 관통합니다.",
+      "address": "충칭시",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.57
+      },
+      "openingHours": "24시간",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "30분",
+      "highlights": [
+        "강변 경치"
+      ],
+      "tips": "양강의 경치를 감상하세요.",
+      "image": "/img/ext/0836cf946861.webp",
+      "phone": "+86 023  2663 3936"
+    },
+    {
+      "id": "chongqing-bridge",
+      "name": "千厮门大桥",
+      "nameEn": "Qiansimen Bridge",
+      "category": "landmark",
+      "description": "자링강을 가로지르는 다리로, 야경이 아름답습니다.",
+      "address": "충칭시 윈중구",
+      "coordinates": {
+        "lat": 29.57,
+        "lng": 106.57
+      },
+      "openingHours": "하루 종일",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "30분",
+      "highlights": [
+        "대교",
+        "야경"
+      ],
+      "tips": "사진 촬영하기 좋은 장소입니다.",
+      "image": "/img/ext/27e06b27a71e.webp",
+      "phone": "+86 023  8058 3346"
+    },
+    {
+      "id": "chongqing-temple",
+      "name": "罗汉寺",
+      "nameEn": "Luohan Temple",
+      "category": "temple",
+      "description": "충칭에서 가장 오래된 불교 사원으로 500罗汉상이 있습니다.",
+      "address": "충칭시 위중구",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 106.57
+      },
+      "openingHours": "08:00-17:00",
+      "ticketPrice": "무료",
+      "recommendedVisitTime": "1시간",
+      "highlights": [
+        "500罗汉",
+        "고찰"
+      ],
+      "tips": "불교 문화를 이해하세요.",
+      "image": "/img/ext/e1e1c86881fa.webp",
+      "phone": "+86 023  2227 3781"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "chongqing-1",
+      "name": "珮姐老火锅",
+      "nameEn": "Pei Jie Lao Hotpot",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 120,
+      "rating": 4.9,
+      "address": "Jiangbei District (multiple locations)",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5682
+      },
+      "phone": "+86 23 6777 8888",
+      "hours": "11:00-02:00",
+      "description": "Legendary hot pot chain with original family recipe. Known for authentic Chongqing numbing-spicy broth.",
+      "dishHighlights": [
+        "Mala hot pot",
+        "Fresh beef",
+        "Lotus root",
+        "Tofu skin"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "spicy",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/3301cb8f0eb1.webp"
+    },
+    {
+      "id": "chongqing-2",
+      "name": "周师兄大刀腰片",
+      "nameEn": "Zhou Shixiong Giant Knife Kidney Slices",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 150,
+      "rating": 4.7,
+      "address": "Yanghesi, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "phone": "+86 23 6382 8888",
+      "hours": "11:00-23:00",
+      "description": "Famous for signature kidney slices cut paper-thin and hot pot with traditional broth.",
+      "dishHighlights": [
+        "Giant knife kidney slices",
+        "Traditional broth",
+        "Beef tripe"
+      ],
+      "tags": [
+        "hot-pot",
+        "specialty",
+        "local",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/ea19be4f7702.webp"
+    },
+    {
+      "id": "chongqing-3",
+      "name": "小天鹅火锅",
+      "nameEn": "Little Swan Hot Pot",
+      "type": "blackpearl",
+      "diamond": 1,
+      "cuisine": "Hot Pot",
+      "avgPrice": 180,
+      "rating": 4.6,
+      "address": "Jiefangbei, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "phone": "+86 23 6379 8888",
+      "hours": "11:00-22:00",
+      "description": "One-diamond Black Pearl hot pot restaurant, pioneer of modern Chongqing hot pot chain.",
+      "dishHighlights": [
+        "Butterfly shrimp",
+        "Hand-cut beef",
+        "Vegetable platter"
+      ],
+      "tags": [
+        "hot-pot",
+        "black-pearl",
+        "chain"
+      ],
+      "star": 0,
+      "imageUrl": "/img/ext/c0bdf08b340f.webp"
+    },
+    {
+      "id": "chongqing-4",
+      "name": "重庆小面",
+      "nameEn": "Chongqing Xiao Mian",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 30,
+      "rating": 4.8,
+      "address": "Various locations (Xiao Mian Guan chain)",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5822
+      },
+      "hours": "06:00-14:00",
+      "description": "Essential Chongqing breakfast - spicy noodles with peanut powder, pickles, and Sichuan pepper.",
+      "dishHighlights": [
+        "Spicy noodles",
+        "Peanut powder",
+        "Mustard greens",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  6390 0531",
+      "imageUrl": "/img/ext/ea08c58b36d0.webp"
+    },
+    {
+      "id": "chongqing-5",
+      "name": "降龙爪爪",
+      "nameEn": "Xiang Long Zhao Zhao",
+      "type": "local",
+      "cuisine": "Chongqing Snacks",
+      "avgPrice": 50,
+      "rating": 4.7,
+      "address": "Multiple locations including near Jiefangbei",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "12:00-02:00",
+      "description": "Popular late-night snack spot famous for tender braised chicken claws in various flavors.",
+      "dishHighlights": [
+        "Braised chicken claws",
+        "Spicy version",
+        "Tomato version"
+      ],
+      "tags": [
+        "local",
+        "snacks",
+        "late-night"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  8227 6627",
+      "imageUrl": "/img/ext/9ea869215e0e.webp"
+    },
+    {
+      "id": "chongqing-6",
+      "name": "李子坝梁山鸡",
+      "nameEn": "Liziba Liangshan Chicken",
+      "type": "local",
+      "cuisine": "Chongqing Specialty",
+      "avgPrice": 120,
+      "rating": 4.6,
+      "address": "Liziba, Liangjiang New Area",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5282
+      },
+      "phone": "+86 23 6888 8888",
+      "hours": "11:00-21:00",
+      "description": "Famous for cilantro-heavy chicken hot pot, a unique Chongqing specialty near the metro station.",
+      "dishHighlights": [
+        "Cilantro chicken",
+        "Potatoes",
+        "Lotus root"
+      ],
+      "tags": [
+        "local",
+        "specialty",
+        "famous",
+        "chicken"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/ea19be4f7702.webp"
+    },
+    {
+      "id": "chongqing-7",
+      "name": "好又来酸辣粉",
+      "nameEn": "Hao You Lai Sour Spicy Noodles",
+      "type": "local",
+      "cuisine": "Sour Spicy Noodles",
+      "avgPrice": 25,
+      "rating": 4.5,
+      "address": "Jiefangbei步行街, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "10:00-22:00",
+      "description": "Iconic sour and spicy potato noodles, a beloved Chongqing street food.",
+      "dishHighlights": [
+        "Sour spicy noodles",
+        "Pickled vegetables",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "street-food",
+        "budget",
+        "noodles"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  0275 8642",
+      "imageUrl": "/img/ext/e59a591aa7ea.webp"
+    },
+    {
+      "id": "chongqing-8",
+      "name": "老码头火锅",
+      "nameEn": "Lao Ma Tou Hot Pot",
+      "type": "local",
+      "cuisine": "Old-style Hot Pot",
+      "avgPrice": 100,
+      "rating": 4.8,
+      "address": "Yangtze River area, Jiangbei",
+      "coordinates": {
+        "lat": 29.5722,
+        "lng": 106.5882
+      },
+      "hours": "11:00-02:00",
+      "description": "Traditional Chongqing hot pot in river view setting. Authentic local favorite.",
+      "dishHighlights": [
+        "Mala broth",
+        "Beef tripe",
+        "Vegetable plate",
+        "River views"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "scenic",
+        "late-night"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  0702 1751",
+      "imageUrl": "/img/ext/7b933a80ceea.webp"
+    },
+    {
+      "id": "chongqing-9",
+      "name": "石灰寺火锅",
+      "nameEn": "Shihui Si Hot Pot",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 110,
+      "rating": 4.7,
+      "address": "Shihui Si, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "phone": "+86 23 6789 8888",
+      "hours": "11:00-02:00",
+      "description": "Popular local hot pot restaurant near 18梯, known for authentic broth and fresh ingredients.",
+      "dishHighlights": [
+        "Mala broth",
+        "Fresh beef",
+        "Lotus root",
+        "Potatoes"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "spicy",
+        "night-life"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/b36594bcf565.webp"
+    },
+    {
+      "id": "chongqing-10",
+      "name": "枇杷园火锅",
+      "nameEn": "Pipa Yuan Hot Pot",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 130,
+      "rating": 4.8,
+      "address": "Nanshan, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.6182
+      },
+      "phone": "+86 23 6288 8888",
+      "hours": "11:00-22:00",
+      "description": "Famous hillside hot pot restaurant with stunning views of the city lights at night.",
+      "dishHighlights": [
+        "Spicy broth",
+        "Beef tripe",
+        "Mushrooms",
+        "Night view"
+      ],
+      "tags": [
+        "hot-pot",
+        "scenic",
+        "local",
+        "famous"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/290a12f3051b.webp"
+    },
+    {
+      "id": "chongqing-11",
+      "name": "秦妈火锅",
+      "nameEn": "Qin Ma Hot Pot",
+      "type": "chain",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 90,
+      "rating": 4.5,
+      "address": "Multiple locations",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "phone": "+86 400 888 8888",
+      "hours": "11:00-23:00",
+      "description": "Well-known hot pot chain with consistent quality and many branch locations.",
+      "dishHighlights": [
+        "Mala broth",
+        "Shrimp paste",
+        "Bean products",
+        "Vegetables"
+      ],
+      "tags": [
+        "hot-pot",
+        "chain",
+        "reliable",
+        "spicy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/072f317a8797.webp"
+    },
+    {
+      "id": "chongqing-12",
+      "name": "大龙火锅",
+      "nameEn": "Da Long Hot Pot",
+      "type": "local",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 100,
+      "rating": 4.6,
+      "address": "Shapingba District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.4582
+      },
+      "hours": "11:00-02:00",
+      "description": "Legendary late-night hot pot spot popular with students and night owls.",
+      "dishHighlights": [
+        "Spicy broth",
+        "Beef tripe",
+        "Duck blood",
+        "Late night"
+      ],
+      "tags": [
+        "hot-pot",
+        "local",
+        "late-night",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  1350 2791",
+      "imageUrl": "/img/ext/589e339c6833.webp"
+    },
+    {
+      "id": "chongqing-13",
+      "name": "刘一手火锅",
+      "nameEn": "Liu Yi Shou Hot Pot",
+      "type": "chain",
+      "cuisine": "Chongqing Hot Pot",
+      "avgPrice": 85,
+      "rating": 4.4,
+      "address": "Multiple locations citywide",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "phone": "+86 23 6888 8888",
+      "hours": "11:00-23:00",
+      "description": "Popular hot pot chain offering reliable Chongqing-style hot pot with various broth options.",
+      "dishHighlights": [
+        "Half-half pot",
+        "Fresh beef",
+        "Shrimp",
+        "Tofu skin"
+      ],
+      "tags": [
+        "hot-pot",
+        "chain",
+        "family",
+        "spicy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "imageUrl": "/img/ext/22073bed1918.webp"
+    },
+    {
+      "id": "chongqing-14",
+      "name": "遇见老小面",
+      "nameEn": "Yujian Lao Xiao Mian",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 25,
+      "rating": 4.7,
+      "address": "Jiefangbei area, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "06:00-15:00",
+      "description": "Popular breakfast spot famous for authentic Chongqing xiao mian with perfect spice balance.",
+      "dishHighlights": [
+        "Spicy noodles",
+        "Peanuts",
+        "Pickled vegetables",
+        "Chili oil"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  3585 7828",
+      "imageUrl": "/img/ext/1a980922ab80.webp"
+    },
+    {
+      "id": "chongqing-15",
+      "name": "张记面庄",
+      "nameEn": "Zhang Ji Mian Zhuang",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 28,
+      "rating": 4.6,
+      "address": "Various locations",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5682
+      },
+      "hours": "06:30-14:00",
+      "description": "Local favorite for Chongqing xiao mian with rich, numbing-spicy flavor profile.",
+      "dishHighlights": [
+        "Mala noodles",
+        "Ground pork",
+        "Coriander",
+        "Scallions"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "breakfast",
+        "spicy"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  5858 3281",
+      "imageUrl": "/img/ext/a64be3138bf4.webp"
+    },
+    {
+      "id": "chongqing-16",
+      "name": "梯坎面",
+      "nameEn": "Ti Kan Mian",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 22,
+      "rating": 4.5,
+      "address": "Near Shibati, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5882
+      },
+      "hours": "07:00-14:00",
+      "description": "Famous for noodles served on the steps, a unique Chongqing dining experience.",
+      "dishHighlights": [
+        "Spicy noodles",
+        "Peanuts",
+        "Mustard greens",
+        "Steps seating"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "unique",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  5180 2556",
+      "imageUrl": "/img/ext/2412dc29a652.webp"
+    },
+    {
+      "id": "chongqing-17",
+      "name": "花市豌杂面",
+      "nameEn": "Hua Shi Wan Za Mian",
+      "type": "local",
+      "cuisine": "Chongqing Noodles",
+      "avgPrice": 30,
+      "rating": 4.8,
+      "address": "Hua Shi Street, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "hours": "06:30-15:00",
+      "description": "Legendary noodle shop with creamy pea sauce noodles, a Chongqing specialty not to miss.",
+      "dishHighlights": [
+        "Pea sauce",
+        "Spicy oil",
+        "Ground pork",
+        "Peanuts"
+      ],
+      "tags": [
+        "local",
+        "noodles",
+        "famous",
+        "breakfast"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  4206 2784",
+      "imageUrl": "/img/ext/fe21bfd3eb96.webp"
+    },
+    {
+      "id": "chongqing-18",
+      "name": "九园包子",
+      "nameEn": "Jiu Yuan Bao Zi",
+      "type": "local",
+      "cuisine": "Chongqing Dim Sum",
+      "avgPrice": 35,
+      "rating": 4.6,
+      "address": "Shapingba District",
+      "coordinates": {
+        "lat": 29.5822,
+        "lng": 106.4582
+      },
+      "hours": "06:00-12:00",
+      "description": "Historic Chongqing breakfast spot famous for steamed buns with various fillings.",
+      "dishHighlights": [
+        "Pork buns",
+        "Vegetable buns",
+        "Soy milk",
+        "Fried dough sticks"
+      ],
+      "tags": [
+        "local",
+        "breakfast",
+        "buns",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  4528 0497",
+      "imageUrl": "/img/ext/b604b9bb77ef.webp"
+    },
+    {
+      "id": "chongqing-19",
+      "name": "吴抄手",
+      "nameEn": "Wu Chao Shou",
+      "type": "local",
+      "cuisine": "Chongqing Dumplings",
+      "avgPrice": 40,
+      "rating": 4.5,
+      "address": "Jiefangbei, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "10:00-21:00",
+      "description": "Famous for hand-made dumplings with Chongqing-style spicy dipping sauce.",
+      "dishHighlights": [
+        "Dumplings",
+        "Spicy sauce",
+        "Wontons",
+        "Szechuan pepper"
+      ],
+      "tags": [
+        "local",
+        "dumplings",
+        "spicy",
+        "lunch"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  8307 0547",
+      "imageUrl": "/img/ext/b604b9bb77ef.webp"
+    },
+    {
+      "id": "chongqing-20",
+      "name": "过道豆花",
+      "nameEn": "Guo Dao Dou Hua",
+      "type": "local",
+      "cuisine": "Chongqing Tofu",
+      "avgPrice": 35,
+      "rating": 4.7,
+      "address": "Near Jiefangbei, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "hours": "11:00-21:00",
+      "description": "Popular tofu pudding restaurant with savory and sweet options, a local comfort food favorite.",
+      "dishHighlights": [
+        "Tofu pudding",
+        "Savory sauce",
+        "Peking duck",
+        "Rice dishes"
+      ],
+      "tags": [
+        "local",
+        "tofu",
+        "comfort-food",
+        "budget"
+      ],
+      "star": 0,
+      "diamond": 0,
+      "phone": "+86 023  8339 6507",
+      "imageUrl": "/img/ext/c179827129ff.webp"
+    },
+    {
+      "id": "chongqing-21",
+      "name": "街边火锅",
+      "nameEn": "街边火锅 (火锅)",
+      "type": "local",
+      "cuisine": "火锅",
+      "avgPrice": 102,
+      "rating": 4.8,
+      "address": "重庆市新城区美食街70号",
+      "coordinates": {
+        "lat": 29.5217,
+        "lng": 106.592
+      },
+      "phone": "+86 023 86856079",
+      "hours": "17:00-02:00",
+      "description": "重庆本地人推荐的火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "毛血旺",
+        "酸辣粉",
+        "火锅"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/2ddfc6669744.webp"
+    },
+    {
+      "id": "chongqing-23",
+      "name": "巷子泉水鸡",
+      "nameEn": "巷子泉水鸡 (泉水鸡)",
+      "type": "local",
+      "cuisine": "泉水鸡",
+      "avgPrice": 124,
+      "rating": 4.4,
+      "address": "重庆市市中心区美食街198号",
+      "coordinates": {
+        "lat": 29.5664,
+        "lng": 106.5382
+      },
+      "phone": "+86 023 99077796",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "重庆本地人推荐的泉水鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "火锅",
+        "泉水鸡",
+        "小面"
+      ],
+      "tags": [
+        "隐藏美食",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/3e8607ae7dc8.webp"
+    },
+    {
+      "id": "chongqing-25",
+      "name": "老街辣子鸡",
+      "nameEn": "老街辣子鸡 (辣子鸡)",
+      "type": "local",
+      "cuisine": "辣子鸡",
+      "avgPrice": 77,
+      "rating": 4.8,
+      "address": "重庆市老城区美食街33号",
+      "coordinates": {
+        "lat": 29.5737,
+        "lng": 106.5048
+      },
+      "phone": "+86 023 22302332",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "火锅",
+        "辣子鸡",
+        "泉水鸡"
+      ],
+      "tags": [
+        "社区老店",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/8af69e049052.webp"
+    },
+    {
+      "id": "chongqing-27",
+      "name": "街边辣子鸡",
+      "nameEn": "街边辣子鸡 (辣子鸡)",
+      "type": "local",
+      "cuisine": "辣子鸡",
+      "avgPrice": 104,
+      "rating": 4.3,
+      "address": "重庆市新城区美食街139号",
+      "coordinates": {
+        "lat": 29.5245,
+        "lng": 106.5962
+      },
+      "phone": "+86 023 45184691",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "火锅",
+        "毛血旺",
+        "辣子鸡"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/70ffe9fe58ab.webp"
+    },
+    {
+      "id": "chongqing-29",
+      "name": "街边酸辣粉",
+      "nameEn": "街边酸辣粉 (酸辣粉)",
+      "type": "local",
+      "cuisine": "酸辣粉",
+      "avgPrice": 95,
+      "rating": 4.2,
+      "address": "重庆市市中心区美食街131号",
+      "coordinates": {
+        "lat": 29.5837,
+        "lng": 106.5501
+      },
+      "phone": "+86 023 96479356",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的酸辣粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "火锅",
+        "辣子鸡",
+        "小面"
+      ],
+      "tags": [
+        "本地人爱去",
+        "性价比高",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/18564e135f1b.webp"
+    },
+    {
+      "id": "chongqing-31",
+      "name": "重庆味小面",
+      "nameEn": "重庆味小面 (小面)",
+      "type": "local",
+      "cuisine": "小面",
+      "avgPrice": 125,
+      "rating": 4.8,
+      "address": "重庆市新城区美食街190号",
+      "coordinates": {
+        "lat": 29.5405,
+        "lng": 106.5884
+      },
+      "phone": "+86 023 42751487",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "毛血旺",
+        "小面",
+        "火锅"
+      ],
+      "tags": [
+        "社区老店",
+        "性价比高",
+        "家常菜"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/9317132da5bb.webp"
+    },
+    {
+      "id": "chongqing-33",
+      "name": "正宗辣子鸡",
+      "nameEn": "正宗辣子鸡 (辣子鸡)",
+      "type": "local",
+      "cuisine": "辣子鸡",
+      "avgPrice": 135,
+      "rating": 4.4,
+      "address": "重庆市老城区美食街50号",
+      "coordinates": {
+        "lat": 29.5621,
+        "lng": 106.5204
+      },
+      "phone": "+86 023 64862083",
+      "hours": "10:00-22:00",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "泉水鸡",
+        "毛血旺",
+        "酸辣粉"
+      ],
+      "tags": [
+        "性价比高",
+        "家常菜",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/b09ccf00bf53.webp"
+    },
+    {
+      "id": "chongqing-35",
+      "name": "老街酸辣粉",
+      "nameEn": "老街酸辣粉 (酸辣粉)",
+      "type": "street",
+      "cuisine": "酸辣粉",
+      "avgPrice": 35,
+      "rating": 4.2,
+      "address": "重庆市老城区美食街117号",
+      "coordinates": {
+        "lat": 29.5747,
+        "lng": 106.5491
+      },
+      "phone": "+86 023 97196911",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "重庆本地人推荐的酸辣粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸辣粉",
+        "毛血旺",
+        "小面"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "网红打卡"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/e7d406e63e83.webp"
+    },
+    {
+      "id": "chongqing-37",
+      "name": "传统辣子鸡",
+      "nameEn": "传统辣子鸡 (辣子鸡)",
+      "type": "local",
+      "cuisine": "辣子鸡",
+      "avgPrice": 115,
+      "rating": 4.8,
+      "address": "重庆市市中心区美食街86号",
+      "coordinates": {
+        "lat": 29.5452,
+        "lng": 106.5065
+      },
+      "phone": "+86 023 69809414",
+      "hours": "17:00-02:00",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "泉水鸡",
+        "酸辣粉",
+        "毛血旺"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/cd6dec49b271.webp"
+    },
+    {
+      "id": "chongqing-39",
+      "name": "重庆味毛血旺",
+      "nameEn": "重庆味毛血旺 (毛血旺)",
+      "type": "local",
+      "cuisine": "毛血旺",
+      "avgPrice": 107,
+      "rating": 4.5,
+      "address": "重庆市老城区美食街182号",
+      "coordinates": {
+        "lat": 29.6092,
+        "lng": 106.5744
+      },
+      "phone": "+86 023 65269021",
+      "hours": "10:00-22:00",
+      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "火锅",
+        "辣子鸡",
+        "泉水鸡"
+      ],
+      "tags": [
+        "家常菜",
+        "本地人爱去",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/7802edafde3c.webp"
+    },
+    {
+      "id": "chongqing-41",
+      "name": "老重庆泉水鸡",
+      "nameEn": "老重庆泉水鸡 (泉水鸡)",
+      "type": "local",
+      "cuisine": "泉水鸡",
+      "avgPrice": 66,
+      "rating": 4.1,
+      "address": "重庆市市中心区美食街129号",
+      "coordinates": {
+        "lat": 29.5665,
+        "lng": 106.531
+      },
+      "phone": "+86 023 29625382",
+      "hours": "10:00-22:00",
+      "description": "重庆本地人推荐的泉水鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸辣粉",
+        "火锅",
+        "泉水鸡"
+      ],
+      "tags": [
+        "排队王",
+        "本地人爱去",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/5b61e470794e.webp"
+    },
+    {
+      "id": "chongqing-43",
+      "name": "老字号泉水鸡",
+      "nameEn": "老字号泉水鸡 (泉水鸡)",
+      "type": "cafe",
+      "cuisine": "泉水鸡",
+      "avgPrice": 29,
+      "rating": 4.3,
+      "address": "重庆市市中心区美食街111号",
+      "coordinates": {
+        "lat": 29.6086,
+        "lng": 106.5196
+      },
+      "phone": "+86 023 31062050",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "重庆本地人推荐的泉水鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "火锅",
+        "毛血旺",
+        "辣子鸡"
+      ],
+      "tags": [
+        "文艺",
+        "安静",
+        "咖啡"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/23162d045f91.webp"
+    },
+    {
+      "id": "chongqing-45",
+      "name": "阿婆毛血旺",
+      "nameEn": "阿婆毛血旺 (毛血旺)",
+      "type": "local",
+      "cuisine": "毛血旺",
+      "avgPrice": 54,
+      "rating": 4.4,
+      "address": "重庆市新城区美食街12号",
+      "coordinates": {
+        "lat": 29.5781,
+        "lng": 106.5287
+      },
+      "phone": "+86 023 89354432",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "辣子鸡",
+        "小面",
+        "酸辣粉"
+      ],
+      "tags": [
+        "本地人爱去",
+        "家常菜",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/f450e2dc10fd.webp"
+    },
+    {
+      "id": "chongqing-47",
+      "name": "传统毛血旺",
+      "nameEn": "传统毛血旺 (毛血旺)",
+      "type": "street",
+      "cuisine": "毛血旺",
+      "avgPrice": 38,
+      "rating": 4.6,
+      "address": "重庆市市中心区美食街47号",
+      "coordinates": {
+        "lat": 29.5592,
+        "lng": 106.5143
+      },
+      "phone": "+86 023 24301296",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸辣粉",
+        "辣子鸡",
+        "火锅"
+      ],
+      "tags": [
+        "路边摊",
+        "夜市",
+        "小吃"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/5c384964dadd.webp"
+    },
+    {
+      "id": "chongqing-49",
+      "name": "传统毛血旺",
+      "nameEn": "传统毛血旺 (毛血旺)",
+      "type": "local",
+      "cuisine": "毛血旺",
+      "avgPrice": 59,
+      "rating": 4.8,
+      "address": "重庆市老城区美食街130号",
+      "coordinates": {
+        "lat": 29.5471,
+        "lng": 106.5115
+      },
+      "phone": "+86 023 23522061",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "毛血旺",
+        "辣子鸡",
+        "泉水鸡"
+      ],
+      "tags": [
+        "性价比高",
+        "老字号",
+        "社区老店"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/2945ccca4f9c.webp"
+    },
+    {
+      "id": "chongqing-51",
+      "name": "老重庆酸辣粉",
+      "nameEn": "老重庆酸辣粉 (酸辣粉)",
+      "type": "local",
+      "cuisine": "酸辣粉",
+      "avgPrice": 42,
+      "rating": 4.3,
+      "address": "重庆市老城区美食街149号",
+      "coordinates": {
+        "lat": 29.5298,
+        "lng": 106.516
+      },
+      "phone": "+86 023 54771368",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的酸辣粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "毛血旺",
+        "泉水鸡",
+        "辣子鸡"
+      ],
+      "tags": [
+        "社区老店",
+        "隐藏美食",
+        "性价比高"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/2b6c655bdd7a.webp"
+    },
+    {
+      "id": "chongqing-53",
+      "name": "传统火锅",
+      "nameEn": "传统火锅 (火锅)",
+      "type": "local",
+      "cuisine": "火锅",
+      "avgPrice": 40,
+      "rating": 4.1,
+      "address": "重庆市新城区美食街96号",
+      "coordinates": {
+        "lat": 29.5576,
+        "lng": 106.5725
+      },
+      "phone": "+86 023 35594954",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "毛血旺",
+        "小面",
+        "酸辣粉"
+      ],
+      "tags": [
+        "隐藏美食",
+        "社区老店",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/7d47f59d6e07.webp"
+    },
+    {
+      "id": "chongqing-55",
+      "name": "老街毛血旺",
+      "nameEn": "老街毛血旺 (毛血旺)",
+      "type": "street",
+      "cuisine": "毛血旺",
+      "avgPrice": 58,
+      "rating": 4.8,
+      "address": "重庆市新城区美食街93号",
+      "coordinates": {
+        "lat": 29.5265,
+        "lng": 106.5561
+      },
+      "phone": "+86 023 82158782",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "重庆本地人推荐的毛血旺店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "泉水鸡",
+        "酸辣粉",
+        "辣子鸡"
+      ],
+      "tags": [
+        "小吃",
+        "网红打卡",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/bb80500613a3.webp"
+    },
+    {
+      "id": "chongqing-57",
+      "name": "阿婆酸辣粉",
+      "nameEn": "阿婆酸辣粉 (酸辣粉)",
+      "type": "local",
+      "cuisine": "酸辣粉",
+      "avgPrice": 77,
+      "rating": 4.5,
+      "address": "重庆市新城区美食街37号",
+      "coordinates": {
+        "lat": 29.5969,
+        "lng": 106.5158
+      },
+      "phone": "+86 023 26268560",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "重庆本地人推荐的酸辣粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小面",
+        "泉水鸡",
+        "酸辣粉"
+      ],
+      "tags": [
+        "排队王",
+        "本地人爱去",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/9317132da5bb.webp"
+    },
+    {
+      "id": "chongqing-59",
+      "name": "阿婆酸辣粉",
+      "nameEn": "阿婆酸辣粉 (酸辣粉)",
+      "type": "street",
+      "cuisine": "酸辣粉",
+      "avgPrice": 14,
+      "rating": 4,
+      "address": "重庆市老城区美食街2号",
+      "coordinates": {
+        "lat": 29.5476,
+        "lng": 106.5088
+      },
+      "phone": "+86 023 24147809",
+      "hours": "10:00-22:00",
+      "description": "重庆本地人推荐的酸辣粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小面",
+        "酸辣粉",
+        "火锅"
+      ],
+      "tags": [
+        "深夜美食",
+        "小吃",
+        "路边摊"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/669390ee71d8.webp"
+    },
+    {
+      "id": "chongqing-61",
+      "name": "老重庆火锅",
+      "nameEn": "老重庆火锅 (火锅)",
+      "type": "street",
+      "cuisine": "火锅",
+      "avgPrice": 49,
+      "rating": 4.6,
+      "address": "重庆市新城区美食街107号",
+      "coordinates": {
+        "lat": 29.5396,
+        "lng": 106.5075
+      },
+      "phone": "+86 023 77994845",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小面",
+        "泉水鸡",
+        "火锅"
+      ],
+      "tags": [
+        "小吃",
+        "夜市",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/880539f44ba2.webp"
+    },
+    {
+      "id": "chongqing-63",
+      "name": "传统辣子鸡",
+      "nameEn": "传统辣子鸡 (辣子鸡)",
+      "type": "local",
+      "cuisine": "辣子鸡",
+      "avgPrice": 110,
+      "rating": 4.6,
+      "address": "重庆市老城区美食街65号",
+      "coordinates": {
+        "lat": 29.5632,
+        "lng": 106.5451
+      },
+      "phone": "+86 023 63258465",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小面",
+        "泉水鸡",
+        "辣子鸡"
+      ],
+      "tags": [
+        "本地人爱去",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/e4738a2d9a3c.webp"
+    },
+    {
+      "id": "chongqing-65",
+      "name": "地道小面",
+      "nameEn": "地道小面 (小面)",
+      "type": "street",
+      "cuisine": "小面",
+      "avgPrice": 39,
+      "rating": 4.1,
+      "address": "重庆市市中心区美食街137号",
+      "coordinates": {
+        "lat": 29.542,
+        "lng": 106.5523
+      },
+      "phone": "+86 023 38401914",
+      "hours": "06:00-14:00",
+      "description": "重庆本地人推荐的小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "毛血旺",
+        "辣子鸡",
+        "小面"
+      ],
+      "tags": [
+        "网红打卡",
+        "小吃",
+        "夜市"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/d867baa3fd97.webp"
+    },
+    {
+      "id": "chongqing-67",
+      "name": "老重庆火锅",
+      "nameEn": "老重庆火锅 (火锅)",
+      "type": "local",
+      "cuisine": "火锅",
+      "avgPrice": 87,
+      "rating": 4.8,
+      "address": "重庆市新城区美食街160号",
+      "coordinates": {
+        "lat": 29.6085,
+        "lng": 106.5592
+      },
+      "phone": "+86 023 27663008",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "重庆本地人推荐的火锅店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸辣粉",
+        "小面",
+        "火锅"
+      ],
+      "tags": [
+        "隐藏美食",
+        "排队王",
+        "老字号"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/22073bed1918.webp"
+    },
+    {
+      "id": "chongqing-69",
+      "name": "老字号辣子鸡",
+      "nameEn": "老字号辣子鸡 (辣子鸡)",
+      "type": "cafe",
+      "cuisine": "辣子鸡",
+      "avgPrice": 73,
+      "rating": 4.4,
+      "address": "重庆市市中心区美食街9号",
+      "coordinates": {
+        "lat": 29.6111,
+        "lng": 106.5267
+      },
+      "phone": "+86 023 88209933",
+      "hours": "10:30-14:00, 16:30-22:00",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "酸辣粉",
+        "小面",
+        "辣子鸡"
+      ],
+      "tags": [
+        "下午茶",
+        "咖啡",
+        "文艺"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/abe6acbdfa39.webp"
+    },
+    {
+      "id": "chongqing-71",
+      "name": "巷子小面",
+      "nameEn": "巷子小面 (小面)",
+      "type": "local",
+      "cuisine": "小面",
+      "avgPrice": 42,
+      "rating": 4.3,
+      "address": "重庆市新城区美食街81号",
+      "coordinates": {
+        "lat": 29.5963,
+        "lng": 106.5133
+      },
+      "phone": "+86 023 71764128",
+      "hours": "10:00-22:00",
+      "description": "重庆本地人推荐的小面店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "火锅",
+        "辣子鸡",
+        "毛血旺"
+      ],
+      "tags": [
+        "社区老店",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/365cea5a1bf3.webp"
+    },
+    {
+      "id": "chongqing-73",
+      "name": "街边泉水鸡",
+      "nameEn": "街边泉水鸡 (泉水鸡)",
+      "type": "street",
+      "cuisine": "泉水鸡",
+      "avgPrice": 32,
+      "rating": 4.7,
+      "address": "重庆市老城区美食街42号",
+      "coordinates": {
+        "lat": 29.5146,
+        "lng": 106.5754
+      },
+      "phone": "+86 023 62889954",
+      "hours": "11:00-14:00, 17:00-21:30",
+      "description": "重庆本地人推荐的泉水鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "毛血旺",
+        "小面",
+        "酸辣粉"
+      ],
+      "tags": [
+        "网红打卡",
+        "路边摊",
+        "深夜美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/702564e544e6.webp"
+    },
+    {
+      "id": "chongqing-75",
+      "name": "阿婆辣子鸡",
+      "nameEn": "阿婆辣子鸡 (辣子鸡)",
+      "type": "local",
+      "cuisine": "辣子鸡",
+      "avgPrice": 132,
+      "rating": 4.3,
+      "address": "重庆市新城区美食街103号",
+      "coordinates": {
+        "lat": 29.6008,
+        "lng": 106.5868
+      },
+      "phone": "+86 023 43157003",
+      "hours": "09:00-21:00",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "辣子鸡",
+        "泉水鸡",
+        "小面"
+      ],
+      "tags": [
+        "社区老店",
+        "老字号",
+        "隐藏美食"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/8d1c130670fd.webp"
+    },
+    {
+      "id": "chongqing-77",
+      "name": "传统辣子鸡",
+      "nameEn": "传统辣子鸡 (辣子鸡)",
+      "type": "local",
+      "cuisine": "辣子鸡",
+      "avgPrice": 52,
+      "rating": 4.5,
+      "address": "重庆市市中心区美食街125号",
+      "coordinates": {
+        "lat": 29.5152,
+        "lng": 106.5038
+      },
+      "phone": "+86 023 35534471",
+      "hours": "17:00-02:00",
+      "description": "重庆本地人推荐的辣子鸡店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小面",
+        "毛血旺",
+        "酸辣粉"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "本地人爱去"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/686ed293ad38.webp"
+    },
+    {
+      "id": "chongqing-79",
+      "name": "重庆味酸辣粉",
+      "nameEn": "重庆味酸辣粉 (酸辣粉)",
+      "type": "local",
+      "cuisine": "酸辣粉",
+      "avgPrice": 90,
+      "rating": 4.3,
+      "address": "重庆市老城区美食街178号",
+      "coordinates": {
+        "lat": 29.5685,
+        "lng": 106.5762
+      },
+      "phone": "+86 023 86674183",
+      "hours": "06:00-14:00",
+      "description": "重庆本地人推荐的酸辣粉店，味道正宗，价格实惠",
+      "dishHighlights": [
+        "小面",
+        "毛血旺",
+        "泉水鸡"
+      ],
+      "tags": [
+        "老字号",
+        "性价比高",
+        "排队王"
+      ],
+      "diamond": 0,
+      "imageUrl": "/img/ext/18f20c32fc89.webp"
+    }
+  ],
+  "transport": {
+    "arrival": [
+      {
+        "type": "air",
+        "from": "Major cities worldwide",
+        "to": "Chongqing Jiangbei International Airport (CKG)",
+        "duration": "Varies (2h from Shanghai, 15h from Europe)",
+        "price": "800-4000¥",
+        "frequency": "Daily international flights",
+        "tips": "Airport 25km from city center. Metro Line 3 to downtown. Airport bus to Jiefangbei."
+      },
+      {
+        "type": "train",
+        "from": "Chengdu (1.5h), Beijing (10h), Shanghai (12h)",
+        "to": "Chongqing North Station / Chongqing Station",
+        "duration": "1.5-12 hours depending on origin",
+        "price": "200-1000¥",
+        "frequency": "Multiple high-speed trains daily",
+        "tips": "High-speed rail from Chengdu very convenient. Chongqing North is near business district."
+      }
+    ],
+    "local": {
+      "metro": [
+        "10 lines operational",
+        "Single ride: 2-7¥",
+        "Line 1, 3 for tourist areas",
+        "Note: Many stations have exits on different levels"
+      ],
+      "bus": [
+        "Extensive network",
+        "Single ride: 2¥",
+        "Many routes serve tourist areas",
+        "Easiest to hail Didi for direct routes"
+      ],
+      "taxi": [
+        "Starting fare: 10¥ (first 3km)",
+        "Waiting: 0.5¥ per minute",
+        "Night surcharge: 20% extra",
+        "Strongly recommend Didi over hailing"
+      ],
+      " Yangtze Cruise": [
+        "Three Gorges cruises depart from Chongqing docks",
+        "4-5 day trips to Yichang",
+        "2-day short trips available",
+        "Book through travel agency or online"
+      ],
+      "bike": [
+        "Mobike and Ofo available",
+        "City bike stations near tourist areas",
+        "Didi bike for longer distances"
+      ]
+    }
+  },
+  "hotels": [
+    {
+      "name": "重庆来福士洲际酒店",
+      "nameEn": "InterContinental Chongqing Raffles City",
+      "budget": "luxury",
+      "priceRange": "¥1500-3500/night",
+      "address": "Yangtze River, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5882
+      },
+      "rating": 4.8,
+      "highlights": [
+        "New landmark towers",
+        "River views",
+        "Infinity pool",
+        "Central location"
+      ],
+      "bookingTips": "Book river view rooms. The building itself is architectural marvel."
+    },
+    {
+      "name": "重庆解放碑威斯汀酒店",
+      "nameEn": "The Westin Chongqing Liberation Square",
+      "budget": "luxury",
+      "priceRange": "¥1200-2500/night",
+      "address": "Jiefangbei, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Jiefangbei location",
+        "Sky lobby",
+        "Modern rooms",
+        "Multiple dining"
+      ],
+      "bookingTips": "Best location for shopping and food. Weekend rates lower."
+    },
+    {
+      "name": "重庆希尔顿酒店",
+      "nameEn": "Hilton Chongqing",
+      "budget": "mid",
+      "priceRange": "¥800-1500/night",
+      "address": "139 Zhongshan San Road, Yuzhong",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5682
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Jiefangbei",
+        "Yangtze views",
+        "Good service"
+      ],
+      "bookingTips": "Book river view. Good for first-time visitors."
+    },
+    {
+      "name": "重庆南方君临酒店",
+      "nameEn": "South Grand Hotel",
+      "budget": "mid",
+      "priceRange": "¥500-1000/night",
+      "address": "88 Jin有一段, Jiangbei District",
+      "coordinates": {
+        "lat": 29.5722,
+        "lng": 106.5782
+      },
+      "rating": 4.3,
+      "highlights": [
+        "River views",
+        "Good value",
+        "Near Jialing River"
+      ],
+      "bookingTips": "Better rates on weekdays. Ask for river view room."
+    },
+    {
+      "name": "重庆长江黄金游轮",
+      "nameEn": "Yangtze Gold Cruise",
+      "budget": "luxury",
+      "priceRange": "¥2000-8000/night",
+      "address": "Chongqing Dock, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5982
+      },
+      "rating": 4.7,
+      "highlights": [
+        "5-star river cruise",
+        "Three Gorges itinerary",
+        "All-inclusive",
+        "Unique experience"
+      ],
+      "bookingTips": "Book 3+ months ahead for peak season. Window cabins worth premium."
+    },
+    {
+      "name": "重庆JW万豪酒店",
+      "nameEn": "JW Marriott Hotel Chongqing",
+      "budget": "luxury",
+      "priceRange": "¥1200-2500/night",
+      "address": "168 Jiefangbei Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Central business district",
+        "Premium service",
+        "Multiple restaurants",
+        "River views"
+      ],
+      "bookingTips": "Best location for tourists. Book club rooms for better service."
+    },
+    {
+      "name": "重庆喜来登酒店",
+      "nameEn": "Sheraton Chongqing Hotel",
+      "budget": "mid",
+      "priceRange": "¥800-1500/night",
+      "address": "16 Nan'an Binjiang Road, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5882
+      },
+      "rating": 4.5,
+      "highlights": [
+        "River view",
+        "Near Hongyadong",
+        "Modern facilities",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best river view rooms. Walking distance to attractions."
+    },
+    {
+      "name": "重庆解放碑美居酒店",
+      "nameEn": "Mercure Chongqing Jiefangbei",
+      "budget": "mid",
+      "priceRange": "¥400-800/night",
+      "address": "68 Jiutional Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Central location",
+        "Clean rooms",
+        "Good value",
+        "Close to metro"
+      ],
+      "bookingTips": "Best budget option near Jiefangbei. Book direct."
+    },
+    {
+      "name": "重庆万豪酒店",
+      "nameEn": "Marriott Hotel Chongqing",
+      "budget": "luxury",
+      "priceRange": "¥1000-2000/night",
+      "address": "55 Jiangbei Main Street, Jiangbei District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5682
+      },
+      "rating": 4.5,
+      "highlights": [
+        "City center location",
+        "Premium facilities",
+        "Multiple dining",
+        "Business center"
+      ],
+      "bookingTips": "Good for both business and leisure. Weekend rates available."
+    },
+    {
+      "name": "重庆雅诗特酒店",
+      "nameEn": "Yaste Hotel Chongqing",
+      "budget": "mid",
+      "priceRange": "¥500-1000/night",
+      "address": "88 Stomatic Street, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5882
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near Hongyadong",
+        "River views",
+        "Modern decoration",
+        "Good location"
+      ],
+      "bookingTips": "Book river view rooms. Great for night photography."
+    },
+    {
+      "name": "重庆国贸格兰维酒店",
+      "nameEn": "Glenview Premier Hotel",
+      "budget": "mid",
+      "priceRange": "¥600-1100/night",
+      "address": "36 Jiuthor Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Near People's Square",
+        "Good service",
+        "Clean rooms",
+        "Metro access"
+      ],
+      "bookingTips": "Combine with Three Gorges Museum visit. Good breakfast."
+    },
+    {
+      "name": "重庆丽笙世嘉酒店",
+      "nameEn": "Radisson Blu Hotel Chongqing",
+      "budget": "mid",
+      "priceRange": "¥700-1200/night",
+      "address": "22 Nan'an Binjiang Road, Nan'an District",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5922
+      },
+      "rating": 4.5,
+      "highlights": [
+        "River view rooms",
+        "Near Hongyadong",
+        "Modern facilities",
+        "Good breakfast"
+      ],
+      "bookingTips": "Best for night views. Book high floor rooms."
+    },
+    {
+      "name": "重庆万达文华酒店",
+      "nameEn": "Wanda Vista Hotel Chongqing",
+      "budget": "luxury",
+      "priceRange": "¥1200-2200/night",
+      "address": "88 Jiatong Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5622,
+        "lng": 106.5782
+      },
+      "rating": 4.6,
+      "highlights": [
+        "Luxury facilities",
+        "Central location",
+        "Good service",
+        "Multiple restaurants"
+      ],
+      "bookingTips": "Book club rooms. Weekend rates available."
+    },
+    {
+      "name": "重庆典雅戴斯酒店",
+      "nameEn": "Days Hotel & Suites Chongqing",
+      "budget": "budget",
+      "priceRange": "¥300-600/night",
+      "address": "168 Jiefangbei Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5782
+      },
+      "rating": 4.3,
+      "highlights": [
+        "Budget option",
+        "Central location",
+        "Clean rooms",
+        "Good value"
+      ],
+      "bookingTips": "Best budget near Jiefangbei. Book early for discounts."
+    },
+    {
+      "name": "重庆雾都宾馆",
+      "nameEn": "Chongqing Mist City Hotel",
+      "budget": "mid",
+      "priceRange": "¥400-800/night",
+      "address": "68 Chengjung Road, Yuzhong District",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5682
+      },
+      "rating": 4.4,
+      "highlights": [
+        "Traditional style",
+        "Near Jiefangbei",
+        "Local atmosphere",
+        "Good service"
+      ],
+      "bookingTips": "Experience local culture. Good for first-time visitors."
+    }
+  ],
+  "payment": [
+    {
+      "method": "Alipay",
+      "icon": "alipay",
+      "description": "Universal in Chongqing",
+      "howToUse": [
+        "Download before arrival",
+        "Link card or Chinese account"
+      ],
+      "tips": [
+        "Works at all hot pot restaurants",
+        "English available"
+      ]
+    },
+    {
+      "method": "WeChat Pay",
+      "icon": "wechat",
+      "description": "Accepted everywhere",
+      "howToUse": [
+        "WeChat required",
+        "International cards accepted"
+      ],
+      "tips": [
+        "Set to English mode",
+        "Required for street food"
+      ]
+    },
+    {
+      "method": "Cash",
+      "icon": "cash",
+      "description": "Still common at traditional markets",
+      "howToUse": [
+        "ATM at every corner",
+        "Banks for exchange"
+      ],
+      "tips": [
+        "Small vendors prefer cash",
+        "Keep 100¥ for emergencies"
+      ]
+    }
+  ],
+  "culturalTips": [
+    {
+      "category": "spice",
+      "title": "Spice Tolerance",
+      "content": "Chongqing cuisine is extremely spicy. Start with '微辣' (mild) if unsure. Sichuan pepper creates 'numbing' sensation - it's pleasant, not unpleasant.",
+      "importance": "high"
+    },
+    {
+      "category": "terrain",
+      "title": "Mountain Terrain",
+      "content": "Chongqing is built on steep hills. Prepare for lots of stairs and walking uphill. Metro stations have multiple levels. Wear comfortable shoes.",
+      "importance": "high"
+    },
+    {
+      "category": "fog",
+      "title": "Fog City",
+      "content": "Chongqing is called 'Fog City' with frequent mist. Views can be limited. Best visibility in late morning. Nanshan platform best on clearer days.",
+      "importance": "medium"
+    },
+    {
+      "category": "hot-pot",
+      "title": "Hot Pot Culture",
+      "content": "Hot pot is Chongqing's signature. 'Gongbao' and 'MaLa' are the main styles. Dip ingredients in egg yolk for tenderness. Try the dipping sauce combinations locals use.",
+      "importance": "high"
+    },
+    {
+      "category": "pier-culture",
+      "title": "Pier Culture",
+      "content": "Chongqing's location at the confluence of Yangtze and Jialing Rivers gave rise to a rich pier culture. '码头工人' (pier workers) shaped the city's work ethic. Many local dishes originated from food served at piers. The 'Lao Ma Tou' (Old Pier) areas preserve this heritage.",
+      "importance": "medium"
+    },
+    {
+      "category": "pepper-culture",
+      "title": "Chili and Sichuan Pepper Culture",
+      "content": "Chongqing cuisine features two distinctive sensations: '辣' (spicy/hot from chili) and '麻' (numbing from Sichuan pepper). The combination '麻辣' defines the flavor profile. Locals believe it helps combat the humid climate and stimulates appetite in summer.",
+      "importance": "high"
+    },
+    {
+      "category": "fog-climate",
+      "title": "Fog and Damp Climate",
+      "content": "Chongqing is called 'Fog City' (雾都) due to its humid climate. The fog is most prevalent in spring and winter. Locals adapted by eating spicy food to ward off dampness and by building homes on hills for better ventilation.",
+      "importance": "medium"
+    },
+    {
+      "category": "terrain-life",
+      "title": "Life on Steep Terrain",
+      "content": "The mountain terrain means locals use more stairs than anywhere else in China. Buildings have multiple levels connected by escalators. The phrase '爬坡上坎' (climbing slopes and crossing steps) describes daily life. Wear comfortable shoes.",
+      "importance": "high"
+    },
+    {
+      "category": "night-life",
+      "title": "Night Food Culture",
+      "content": "Chongqing has vibrant night food culture. Hot pot restaurants stay open until 2-3 AM. Street vendors and night markets peak after 9 PM. '深夜食堂' (late-night canteens) are an essential part of social life.",
+      "importance": "medium"
+    },
+    {
+      "category": "tea-culture",
+      "title": "Traditional Tea House Culture",
+      "content": "Traditional tea houses (茶馆) are social hubs where locals drink tea, play mahjong, and socialize. '喝茶' (drinking tea) is a daily ritual. Popular types include '碧螺春' and '普洱'. Tea houses in People's Park and Eling Park are authentic experiences.",
+      "importance": "medium"
+    },
+    {
+      "category": "dialects",
+      "title": "Sichuan Dialect",
+      "content": "The Chongqing dialect (重庆话) is part of the Sichuanese Mandarin family. It's known for being more direct and forceful than Beijing Mandarin. '要得' (yes), '哈子' (foolish), and '雄起' (go for it) are common expressions.",
+      "importance": "low"
+    },
+    {
+      "category": "river-commerce",
+      "title": "River Commerce Heritage",
+      "content": "Historically, Chongqing was a major river port for the Three Gorges trade. The city's wealth and architecture reflect its commercial past. '棒棒军' (porter groups) still exist, carrying goods up the steep streets.",
+      "importance": "medium"
+    },
+    {
+      "category": "summer-heat",
+      "title": "Extreme Summer Heat",
+      "content": "Chongqing is one of China's ' furnaces' (火炉城市). Summer temperatures regularly exceed 40C with high humidity. Locals escape to air-conditioned malls and night markets. Drink plenty of water and take afternoon breaks.",
+      "importance": "high"
+    },
+    {
+      "category": " WWII-history",
+      "title": "Wartime Capital Heritage",
+      "content": "During WWII, Chongqing served as China's wartime capital (陪都). Many buildings, museums, and historical sites preserve this period. The city was heavily bombed but rebuilt. '抗战遗址' (war heritage sites) are important cultural landmarks.",
+      "importance": "medium"
+    },
+    {
+      "category": "mahjong-culture",
+      "title": "Mahjong Social Culture",
+      "content": "Mahjong (麻将) is the quintessential Chongqing social activity. Locals play in tea houses, homes, and dedicated parlors. Games often last hours with betting. '血战到底' (Fight to the End) is the popular local rule variant.",
+      "importance": "low"
+    },
+    {
+      "category": "bamboo-carriers",
+      "title": "Bamboo Carrier Tradition",
+      "content": "The '棒棒军' (bamboo carrier army) emerged from Chongqing's hilly terrain. Carriers use bamboo poles to carry goods up and down steep streets. While less common today, they remain a symbol of Chongqing's working-class spirit.",
+      "importance": "low"
+    },
+    {
+      "category": "crosstalk",
+      "title": "Chongqing Crosstalk",
+      "content": "Chongqing has a vibrant traditional comedy scene with '相声' (crosstalk) performances. Local dialect comedians perform in teahouses and theaters. It's an excellent way to experience local humor and language.",
+      "importance": "low"
+    },
+    {
+      "category": "ba-yu-culture",
+      "title": "Ancient Ba-Yu Culture",
+      "content": "Chongqing is the heart of ancient Ba-Yu culture (巴渝文化), one of China's oldest regional cultures dating back 3,000 years. The Ba people were known for their boat-making, stone carving, and distinctive folk songs. Many traditions survive in local customs.",
+      "importance": "medium"
+    },
+    {
+      "category": "stilted-houses",
+      "title": "Stilted House Architecture",
+      "content": "Chongqing's iconic stilted houses (吊脚楼) were built on cliffs and riverbanks to maximize space on hilly terrain. Hongyadong recreates this traditional architecture. The houses feature wooden structures with multiple levels.",
+      "importance": "high"
+    },
+    {
+      "category": "boat-culture",
+      "title": "River Boat Culture",
+      "content": "Boats have been central to Chongqing life for centuries. '川江号子' (Sichuan river songs) were work songs chanted by boatmen. Yangtze cruises and river ferries continue this tradition. Evening boat tours offer beautiful city views.",
+      "importance": "medium"
+    },
+    {
+      "category": "bridges",
+      "title": "Bridge Engineering Marvel",
+      "content": "Chongqing has more bridges than any other Chinese city due to its river and mountain terrain. The Egongyan Bridge and Caiyuanba Bridge are engineering wonders. The cable car and light rail through buildings showcase innovative urban design.",
+      "importance": "medium"
+    },
+    {
+      "category": "giant-panda",
+      "title": "Giant Panda Connection",
+      "content": "Chongqing Zoo is one of the best places in China to see giant pandas. The city is close to Sichuan's panda reserves. Pandas are native to the mountain bamboo forests of the region. Conservation efforts are strong locally.",
+      "importance": "medium"
+    },
+    {
+      "category": "red-culture",
+      "title": "Revolutionary Red Tourism",
+      "content": "Chongqing's Red Cliff (红岩) area preserves revolutionary history. Zhazidong and Bai Gongguan museums commemorate revolutionary prisoners. The city was a key location during the Chinese Revolution and WWII.",
+      "importance": "medium"
+    },
+    {
+      "category": "river-noodles",
+      "title": "Yangtze River Noodle Culture",
+      "content": "Chongqing's '码头文化' (pier culture) influenced its cuisine. '重庆小面' (spicy noodles) was originally food for boatmen and laborers. The quick-cooking, heavily seasoned noodles remain the city's most popular breakfast.",
+      "importance": "high"
+    },
+    {
+      "category": "yi-niang-culture",
+      "title": "Yi Niang Culture",
+      "content": "'Yi Niang' (幺令) is a distinctive Chongqing expression meaning 'one' and used as a general exclamation. The local dialect uses '儿化' (r-dropping) extensively. '老汉儿' (father) and '婆娘' (wife) are typical local terms.",
+      "importance": "low"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "type": "ambulance",
+      "name": "重庆急救中心",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "120",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "police",
+      "name": "重庆市公安局",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "110",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "hospital",
+      "name": "重庆医科大学附属第一医院",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 23 6881 1360",
+      "address": "Guangzhou",
+      "coordinates": {
+        "lat": 29.5422,
+        "lng": 106.5582
+      },
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "美国驻成都总领事馆",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 28 8558 3992",
+      "address": "Guangzhou",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "fire",
+      "name": "重庆市消防救援支队",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "119",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "tourist-info",
+      "name": "重庆旅游咨询服务中心",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "12345",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "police-special",
+      "name": "重庆旅游警察",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 23 6375 1110",
+      "address": "Guangzhou",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "英国驻重庆总领事馆",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 23 6389 3625",
+      "address": "Guangzhou",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "日本国驻重庆总领事馆",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 23 6311 6111",
+      "address": "Guangzhou",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "韩国驻重庆总领事馆",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 23 6380 0921",
+      "address": "Guangzhou",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "embassy",
+      "name": "法国驻成都总领事馆",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 28 6636 8001",
+      "address": "Guangzhou",
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "hospital",
+      "name": "重庆医科大学附属第二医院",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "+86 23 6289 3109",
+      "address": "Guangzhou",
+      "coordinates": {
+        "lat": 29.5522,
+        "lng": 106.5882
+      },
+      "notes": "For Singapore citizens"
+    },
+    {
+      "type": "hotel-booking",
+      "name": "重庆旅游投诉热线",
+      "nameEn": "Singapore Consulate General Guangzhou",
+      "phone": "12345",
+      "notes": "For Singapore citizens"
+    }
+  ],
+  "quickFacts": {
+    "language": "Mandarin Chinese (Sichuan dialect common)",
+    "currency": "Chinese Yuan (CNY/RMB)",
+    "visa": "Most nationalities require visa",
+    "timeZone": "UTC+8 (China Standard Time)",
+    "electricity": "220V/50Hz, Type A/I plugs",
+    "water": "Tap water not recommended; use bottled water"
+  }
+}

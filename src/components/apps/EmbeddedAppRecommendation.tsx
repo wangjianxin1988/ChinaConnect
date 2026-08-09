@@ -158,7 +158,8 @@ export default function EmbeddedAppRecommendation({
   }, []);
 
   // Filter apps by categories
-  let apps = APP_RECOMMENDATIONS.filter((app) => categories.includes(app.category));
+  const _cats = categories || ["travel"];
+  let apps = APP_RECOMMENDATIONS.filter((app) => _cats.includes(app.category));
 
   // Filter essential only
   if (essentialOnly) {
