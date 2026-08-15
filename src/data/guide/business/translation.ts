@@ -127,7 +127,7 @@ export const TRANSLATION_SERVICES: TranslationService[] = [
     priceRangeCn: "人民币 500–2,000/份文件",
     features: [
       "Official stamp from an accredited translation agency",
-      "Notarization available (公证) at additional cost",
+      "Notarization available at an additional cost",
       "Apostille service for international use",
       "Accepted by Chinese embassies and government offices",
     ],

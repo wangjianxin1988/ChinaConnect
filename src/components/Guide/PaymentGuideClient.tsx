@@ -1,7 +1,7 @@
 import { ATM_LOCATIONS, PAYMENT_FAQS, PAYMENT_METHODS, SHOPPING_TIPS } from "@/data/guide/payment";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 
 interface PaymentGuideClientProps {
   lang?: Language;
@@ -50,7 +50,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
               <div className="bg-gradient-to-r from-blue-50 to-transparent p-4 border-b flex items-center gap-4">
                 <span className="text-4xl">{method.icon}</span>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(method.method, lang) : method.method}</h3>
+                  <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(method.method, lang) : guideText(method.method, lang)}</h3>
                   <p className="text-sm text-muted-foreground">{jaText(method.descriptionCn, lang)}</p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                     {lang !== "ja" && method.howToSetup.map((step, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-blue-500 font-bold">{i + 1}.</span>
-                        <span className="text-sm">{jaText(step, lang)}</span>
+                        <span className="text-sm">{guideText(step, lang)}</span>
                       </li>
                     ))}
                   </ol>
@@ -86,7 +86,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                     {lang !== "ja" && method.usage.map((step, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
                         <span className="text-green-500">✓</span>
-                        <span>{jaText(step, lang)}</span>
+                        <span>{guideText(step, lang)}</span>
                       </li>
                     ))}
                   </ul>
@@ -109,7 +109,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                       {method.pros.map((pro, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-green-500">+</span>
-                          <span>{jaText(pro, lang)}</span>
+                          <span>{guideText(pro, lang)}</span>
                         </li>
                       ))}
                     </ul>
@@ -122,7 +122,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
                       {method.cons.map((con, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-red-500">-</span>
-                          <span>{jaText(con, lang)}</span>
+                          <span>{guideText(con, lang)}</span>
                         </li>
                       ))}
                     </ul>

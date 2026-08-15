@@ -28,7 +28,7 @@ export const ETIQUETTE_DATA: EtiquetteCategory[] = [
     title: "Business Card Exchange",
     titleCn: "名片交换礼仪",
     summary:
-      "Exchanging business cards (ming片) is a formal ritual in Chinese business culture. Treat cards with respect.",
+      "Exchanging business cards is a formal ritual in Chinese business culture. Treat cards with respect.",
     summaryCn: "交换名片是中国商务文化中的正式礼节。对待名片要像对待对方本人一样尊重。",
     rules: [
       {
@@ -118,7 +118,7 @@ export const ETIQUETTE_DATA: EtiquetteCategory[] = [
         title: "Wait Before Eating",
         titleCn: "等主人先动筷",
         correct:
-          'Wait for the host to say "请 (qǐng)" or make the first toast before picking up chopsticks.',
+          'Wait for the host to say "qǐng" or make the first toast before picking up chopsticks.',
         correctCn: '等主人说"请"或先举杯敬酒后，再动筷子。',
         incorrect: "Starting to eat immediately when food is served, before any formal signal.",
         incorrectCn: "菜一上桌就立即开吃。",
@@ -257,7 +257,7 @@ export const ETIQUETTE_DATA: EtiquetteCategory[] = [
           "Giving clocks, scissors, umbrellas, or anything in sets of four (unlucky numbers).",
         incorrectCn: '送钟、剪刀、伞，或任何以"四"为单位的东西（不吉利数字）。',
         reason:
-          'Clocks (送钟) sounds like "attending a funeral" in Chinese. Four sounds like "death." Avoid these completely.',
+          'Clocks sound like "attending a funeral" in Chinese. Four sounds like "death." Avoid these completely.',
         reasonCn: '"钟"与"终"同音，送钟有"送终"之意。四与"死"谐音。完全避免。',
       },
       {
@@ -281,7 +281,7 @@ export const ETIQUETTE_DATA: EtiquetteCategory[] = [
         title: "Gift Presentation",
         titleCn: "礼品递交",
         correct:
-          'Present with both hands. Say "这是我的一点心意" (This is a small token of my appreciation).',
+          'Present with both hands. Say "zhè shì wǒ de yīdiǎn xīnyì" (This is a small token of my appreciation).',
         correctCn: '双手递出，说"这是我的一点心意"。',
         incorrect: "Pressuring the recipient to accept, or presenting in a casual manner.",
         incorrectCn: "强迫对方收下，或随意递出。",

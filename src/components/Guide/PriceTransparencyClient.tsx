@@ -1,7 +1,7 @@
 import { PRICE_DATA, TIPS } from "@/data/price-transparency";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 
 export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.priceTransparency || translations.en.priceTransparency || {}) as Record<string, string>;
   const [activeCategory, setActiveCategory] = useState("all");
@@ -9,7 +9,7 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
 
   const categories = [
     { id: "all", label: tg.all || "All", icon: "📊" },
-    ...PRICE_DATA.map((c) => ({ id: c.category, label: c.categoryCn, icon: c.icon })),
+    ...PRICE_DATA.map((c) => ({ id: c.category, label: lang === "ja" ? c.categoryCn : c.category, icon: c.icon })),
   ];
 
   const filteredData =
@@ -60,7 +60,7 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
             }`}
           >
             <span>{cat.icon}</span>
-            <span>{lang === "ja" ? jaText(cat.label, lang) : cat.label}</span>
+            <span>{guideText(cat.label, lang)}</span>
           </button>
         ))}
       </div>
@@ -72,7 +72,7 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
             <div className="bg-slate-50 px-6 py-4 border-b flex items-center gap-3">
               <span className="text-2xl">{category.icon}</span>
               <div>
-                <h2 className="font-semibold text-lg">{lang === "ja" ? jaText(category.categoryCn, lang) : category.category}</h2>
+                <h2 className="font-semibold text-lg">{lang === "ja" ? jaText(category.categoryCn, lang) : guideText(category.category, lang)}</h2>
                 {lang !== "ja" && <p className="text-sm text-muted-foreground">{jaText(category.categoryCn, lang)}</p>}
               </div>
             </div>
@@ -98,7 +98,7 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
                   {category.items.map((item, idx) => (
                     <tr key={idx} className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4">
-                        <div className="font-medium">{lang === "ja" ? jaText(item.nameCn, lang) : item.name}</div>
+                        <div className="font-medium">{lang === "ja" ? jaText(item.nameCn, lang) : guideText(item.name, lang)}</div>
                         {lang !== "ja" && <div className="text-sm text-muted-foreground">{jaText(item.nameCn, lang)}</div>}
                       </td>
                       {showBothPrices && (

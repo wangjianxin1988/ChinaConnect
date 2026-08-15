@@ -12,7 +12,7 @@ import {
 } from "@/data/guide/visa";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText } from "./guide-i18n";
+import { jaText, guideText } from "./guide-i18n";
 
 interface VisaGuideClientProps {
     lang?: Language;
@@ -80,23 +80,23 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
               {VISA_REQUIREMENTS.map((req, idx) => (
                 <div key={idx} className="p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-semibold">{jaText(req.country, lang)}</h3>
+                    <h3 className="font-semibold">{guideText(req.country, lang)}</h3>
                     <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                      {jaText(req.visaType, lang)}
+                      {guideText(req.visaType, lang)}
                     </span>
                   </div>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">
                     <div>
                       <span className="text-muted-foreground">{tv.duration || "Duration:"}</span>
-                      <p className="font-medium">{jaText(req.duration, lang)}</p>
+                      <p className="font-medium">{guideText(req.duration, lang)}</p>
                     </div>
                     <div>
                       <span className="text-muted-foreground">{tv.processing || "Processing:"}</span>
-                      <p className="font-medium">{jaText(req.processingTime, lang)}</p>
+                      <p className="font-medium">{guideText(req.processingTime, lang)}</p>
                     </div>
                     <div>
                       <span className="text-muted-foreground">{tv.fee || "Fee:"}</span>
-                      <p className="font-medium">{jaText(req.fee, lang)}</p>
+                      <p className="font-medium">{guideText(req.fee, lang)}</p>
                     </div>
                   </div>
                   <div className="mt-3">
@@ -105,7 +105,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                       {req.notes.map((note, i) => (
                         <li key={i} className="text-sm flex items-center gap-1">
                           <span className="text-green-500">✓</span>
-                          {jaText(note, lang)}
+                          {guideText(note, lang)}
                         </li>
                       ))}
                     </ul>
@@ -156,7 +156,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                     {lang !== "ja" && step.tips.map((tip, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
                         <span className="text-blue-500 mt-0.5">{i + 1}.</span>
-                        <span>{jaText(tip, lang)}</span>
+                        <span>{guideText(tip, lang)}</span>
                       </li>
                     ))}
                   </ul>
@@ -315,8 +315,8 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                     />
                     <span className="text-2xl">{item.icon}</span>
                     <div className="flex-1">
-                      <h3 className="font-medium">{jaText(item.item, lang)}</h3>
-                      <p className="text-sm text-muted-foreground">{jaText(item.note, lang)}</p>
+                      <h3 className="font-medium">{guideText(item.item, lang)}</h3>
+                      <p className="text-sm text-muted-foreground">{guideText(item.note, lang)}</p>
                     </div>
                   </div>
                 );
@@ -345,8 +345,8 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                     />
                     <span className="text-2xl">{item.icon}</span>
                     <div className="flex-1">
-                      <h3 className="font-medium">{jaText(item.item, lang)}</h3>
-                      <p className="text-sm text-muted-foreground">{jaText(item.note, lang)}</p>
+                      <h3 className="font-medium">{guideText(item.item, lang)}</h3>
+                      <p className="text-sm text-muted-foreground">{guideText(item.note, lang)}</p>
                     </div>
                   </div>
                 );
@@ -373,7 +373,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                       className="w-5 h-5 rounded text-primary"
                     />
                     <span className="text-2xl">{item.icon}</span>
-                    <h3 className="font-medium">{jaText(item.item, lang)}</h3>
+                    <h3 className="font-medium">{guideText(item.item, lang)}</h3>
                   </div>
                 );
               })}
@@ -399,7 +399,7 @@ export function VisaGuideClient({ lang = "en" }: VisaGuideClientProps = {}) {
                       className="w-5 h-5 rounded text-primary"
                     />
                     <span className="text-2xl">{item.icon}</span>
-                    <h3 className="font-medium">{jaText(item.item, lang)}</h3>
+                    <h3 className="font-medium">{guideText(item.item, lang)}</h3>
                   </div>
                 );
               })}

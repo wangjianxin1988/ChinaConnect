@@ -11,6 +11,28 @@ export function jaText(zh: string | undefined, lang?: string): string {
   return zh;
 }
 
+// Remove CJK characters from an English/bilingual display string (EN pages).
+const CJK_RE = /[\u3400-\u9fff]/;
+export function stripZh(s: string): string {
+  return s
+    .replace(/\s*[（(][^)）]*[\u3400-\u9fff][^)）]*[)）]\s*/g, " ") // "Name (中文)" -> "Name"
+    .replace(/\s*\/\s*[\u3400-\u9fff]+/g, "") // "KFC/麦当劳" -> "KFC"
+    .replace(/[\u3400-\u9fff]+/g, "") // any remaining CJK chars
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+// Render an EN/bilingual field for the current language.
+// - ja: Japanese override (kept identical to jaText)
+// - en: English only (CJK stripped)
+// - other langs: as-is (Phase 2 will supply per-lang data)
+export function guideText(s: string | undefined, lang?: string): string {
+  if (!s) return "";
+  if (lang === "ja") return JA_GUIDE_OVERRIDES[s] || s;
+  if (lang === "en") return stripZh(s);
+  return s;
+}
+
 export function Bi({ en, zh, lang }: { en: string; zh: string; lang?: string }) {
   if (lang === "ja") {
     return <>{JA_GUIDE_OVERRIDES[zh] || zh}</>;

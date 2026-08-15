@@ -46,7 +46,7 @@ export const SIM_OPTIONS: SIMOption[] = [
     icon: "📱",
     description: "Physical SIM card from Chinese carriers. Best value for data.",
     descriptionCn: "来自中国运营商的实体SIM卡。数据性价比最高。",
-    providers: ["China Mobile (中国移动)", "China Unicom (中国联通)", "China Telecom (中国电信)"],
+    providers: ["China Mobile", "China Unicom", "China Telecom"],
     providersCn: ["中国移动", "中国联通", "中国电信"],
     cost: "30-100 CNY for 10-30GB valid 30 days",
     costCn: "30-100元，10-30GB，有效期30天",
@@ -269,7 +269,7 @@ export const ESSENTIAL_APPS: AppRecommendation[] = [
     icon: "🚇",
     category: "Transport",
     categoryCn: "交通",
-    purpose: "Subway routes and payment (e.g., Metro大都会 for Shanghai)",
+    purpose: "Subway routes and payment (e.g., Metro Metropolitan for Shanghai)",
     purposeCn: "地铁路线和支付（如上海用Metro大都会）",
     download: "App Store / Android",
     downloadCn: "App Store / 安卓",
@@ -320,7 +320,7 @@ export const ESSENTIAL_APPS: AppRecommendation[] = [
     essential: false,
   },
   {
-    app: "大众点评",
+    app: "Dianping",
     icon: "🍽️",
     category: "Dining",
     categoryCn: "餐饮",
@@ -465,7 +465,7 @@ export const COMMUNICATION_SETUP_STEPS = [
 // APN Settings for Major Carriers
 export const APN_SETTINGS = [
   {
-    carrier: "China Mobile (中国移动)",
+    carrier: "China Mobile",
     apn: "cmnet",
     mmsc: "http://mmsc.monternet.com",
     proxy: "10.0.0.172",
@@ -473,7 +473,7 @@ export const APN_SETTINGS = [
     notes: "Most widely available, good coverage",
   },
   {
-    carrier: "China Unicom (中国联通)",
+    carrier: "China Unicom",
     apn: "3gnet",
     mmsc: "http://mmsc.myuni.com.cn",
     proxy: "",
@@ -481,7 +481,7 @@ export const APN_SETTINGS = [
     notes: "Good for data-heavy users, 4G LTE",
   },
   {
-    carrier: "China Telecom (中国电信)",
+    carrier: "China Telecom",
     apn: "ctnet",
     mmsc: "http://mms.ctnet189.com",
     proxy: "10.0.0.200",

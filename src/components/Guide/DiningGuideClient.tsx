@@ -10,7 +10,7 @@ import {
 } from "@/data/guide/dining";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 
 interface DiningGuideClientProps {
   lang?: Language;
@@ -60,7 +60,7 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                 <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 border-b flex items-center gap-4">
                   <span className="text-4xl">{cuisine.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(cuisine.cuisine, lang) : cuisine.cuisine}</h3>
+                    <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(cuisine.cuisine, lang) : guideText(cuisine.cuisine, lang)}</h3>
                     <p className="text-sm text-muted-foreground">{jaText(cuisine.priceRangeCn, lang)}</p>
                   </div>
                 </div>
@@ -74,14 +74,14 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                     <div className="flex flex-wrap gap-2">
                       {lang !== "ja" && cuisine.popularDishes.map((dish, i) => (
                         <span key={i} className="text-xs bg-white px-2 py-1 rounded border">
-                          {jaText(dish, lang)}
+                          {guideText(dish, lang)}
                         </span>
                       ))}
                     </div>
                     <div className="flex flex-wrap gap-2 mt-1">
                       {cuisine.popularDishesCn.map((dish, i) => (
                         <span key={i} className="text-xs text-muted-foreground">
-                          {jaText(dish, lang)}
+                          {guideText(dish, lang)}
                         </span>
                       ))}
                     </div>
@@ -94,14 +94,14 @@ export function DiningGuideClient({ lang = "en" }: DiningGuideClientProps = {}) 
                       {lang !== "ja" && cuisine.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-green-500">✓</span>
-                          <span>{jaText(tip, lang)}</span>
+                          <span>{guideText(tip, lang)}</span>
                         </li>
                       ))}
                     </ul>
                     <div className="mt-2 pt-2 border-t space-y-1">
                       {cuisine.tipsCn.map((tip, i) => (
                         <p key={i} className="text-xs text-muted-foreground">
-                          {jaText(tip, lang)}
+                          {guideText(tip, lang)}
                         </p>
                       ))}
                     </div>

@@ -152,7 +152,7 @@ export const PRICE_DATA: PriceData[] = [
         warningCn: "旅游区可能加价",
       },
       {
-        name: "KFC/麦当劳",
+        name: "KFC",
         nameCn: "KFC/McDonalds",
         localPrice: 25,
         foreignPrice: 25,

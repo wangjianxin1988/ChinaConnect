@@ -333,7 +333,7 @@ export const CITY_WEATHER: CityWeather[] = [
     ],
     tips: [
       "Typhoon season is July-September - monitor weather alerts",
-      "Plum rain (梅雨) season in June-July brings constant drizzle",
+      "The plum rain season in June-July brings constant drizzle",
       "Air pollution can be severe - check AQI daily",
       "Indoor AC is often freezing cold in summer",
     ],
@@ -1259,10 +1259,10 @@ export const CITY_WEATHER: CityWeather[] = [
       },
     ],
     tips: [
-      "重庆是'火炉城市'，7-8月酷热，多喝水",
-      "重庆多雾（'雾都'），地形复杂，导航困难",
-      "洪崖洞夜景最佳，但节假日非常拥挤",
-      "夏天地铁和商场空调极冷，与室外温差大",
+      "Chongqing is known as a 'furnace city' — July and August are scorching, so drink plenty of water.",
+      "Chongqing is foggy (nicknamed the 'fog city'), with complex terrain that makes navigation difficult.",
+      "Hongya Cave is best seen at night, but it gets very crowded on public holidays.",
+      "In summer the air conditioning in subways and malls is freezing, a stark contrast with the heat outside.",
     ],
     tipsCn: [
       "重庆是'火炉城市'，7-8月酷热，多喝水",
@@ -1492,7 +1492,7 @@ export const CITY_WEATHER: CityWeather[] = [
         precipitation: "90 mm",
         humidity: "70%",
         crowdLevel: "high",
-        recommendation: "Warm and comfortable. Ming Xiaoling plum香园 blooms.",
+        recommendation: "Warm and comfortable. The plum garden at Ming Xiaoling is in bloom.",
         recommendationCn: "温暖舒适，明孝陵梅花山花开",
       },
       {
@@ -1502,7 +1502,7 @@ export const CITY_WEATHER: CityWeather[] = [
         precipitation: "140 mm",
         humidity: "76%",
         crowdLevel: "medium",
-        recommendation: "Rainy season. Humid. Plum rain (梅雨) begins.",
+        recommendation: "Rainy season. Humid. The plum rain season begins.",
         recommendationCn: "雨季，潮湿，梅雨开始",
       },
       {
@@ -1569,7 +1569,7 @@ export const CITY_WEATHER: CityWeather[] = [
     tips: [
       "Xuanwu Lake is huge - rent a bike to explore",
       "Ming Xiaoling Mausoleum area has excellent hiking trails",
-      "Nanjing's 'plum rain' (梅雨) in June-July is relentless",
+      "Nanjing's 'plum rain' season in June-July is relentless",
       "Confucius Temple area is beautiful at night",
     ],
     tipsCn: [

@@ -9,7 +9,7 @@ import {
 } from "@/data/guide/departure";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 
 export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.departureGuide || translations.en.departureGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("steps");
@@ -133,7 +133,7 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                       {refund.process.map((step, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm">
                           <span className="text-green-500 font-bold">{i + 1}.</span>
-                          <span>{jaText(step, lang)}</span>
+                          <span>{guideText(step, lang)}</span>
                         </li>
                       ))}
                     </ol>
@@ -154,7 +154,7 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                       {refund.tips.map((tip, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm">
                           <span className="text-green-500">✓</span>
-                          <span>{jaText(tip, lang)}</span>
+                          <span>{guideText(tip, lang)}</span>
                         </li>
                       ))}
                     </ul>
@@ -342,8 +342,8 @@ export function DepartureGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                 <div key={idx} className="p-4 flex items-center gap-4">
                   <span className="text-2xl">{item.icon}</span>
                   <div className="flex-1">
-                    <h4 className="font-medium">{jaText(item.item, lang)}</h4>
-                    <p className="text-sm text-muted-foreground">{jaText(item.note, lang)}</p>
+                    <h4 className="font-medium">{guideText(item.item, lang)}</h4>
+                    <p className="text-sm text-muted-foreground">{guideText(item.note, lang)}</p>
                   </div>
                   <input type="checkbox" className="w-5 h-5 rounded" />
                 </div>

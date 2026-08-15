@@ -9,7 +9,7 @@ import {
 } from "@/data/guide/transport";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText } from "./guide-i18n";
+import { jaText, guideText } from "./guide-i18n";
 
 interface TransportGuideClientProps {
   lang?: Language;
@@ -83,7 +83,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                       {step.details.map((detail, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm">
                           <span className="text-blue-500">{i + 1}.</span>
-                          <span>{jaText(detail, lang)}</span>
+                          <span>{guideText(detail, lang)}</span>
                         </li>
                       ))}
                     </ul>
@@ -182,7 +182,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                         {currentMode.howToUse.map((step, i) => (
                           <li key={i} className="flex items-start gap-2">
                             <span className="text-blue-500 font-bold">{i + 1}.</span>
-                            <span>{jaText(step, lang)}</span>
+                            <span>{guideText(step, lang)}</span>
                           </li>
                         ))}
                       </ol>
@@ -204,7 +204,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                         {currentMode.tips.map((tip, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
                             <span className="text-green-500">✓</span>
-                            <span>{jaText(tip, lang)}</span>
+                            <span>{guideText(tip, lang)}</span>
                           </li>
                         ))}
                       </ul>
@@ -255,7 +255,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                       {mode.howToUse.map((step, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-purple-500">{i + 1}.</span>
-                          <span>{jaText(step, lang)}</span>
+                          <span>{guideText(step, lang)}</span>
                         </li>
                       ))}
                     </ul>
@@ -267,7 +267,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                       {mode.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-green-500">✓</span>
-                          <span>{jaText(tip, lang)}</span>
+                          <span>{guideText(tip, lang)}</span>
                         </li>
                       ))}
                     </ul>
@@ -372,7 +372,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                       {type.tips.map((tip, i) => (
                         <li key={i} className="text-sm flex items-start gap-2">
                           <span className="text-blue-500">•</span>
-                          <span>{jaText(tip, lang)}</span>
+                          <span>{guideText(tip, lang)}</span>
                         </li>
                       ))}
                     </ul>

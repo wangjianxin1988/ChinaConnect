@@ -9,15 +9,15 @@ import {
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
 import { ct } from "@/i18n/components-strings";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 const RELIABILITY_JA: Record<string, string> = { high: "高信頼性", medium: "中程度", low: "低" };
 const SPEED_JA: Record<string, string> = { fast: "高速", medium: "中程度", slow: "低速" };
 const DIFFICULTY_JA: Record<string, string> = { easy: "簡単", medium: "中程度", hard: "難しい" };
 
 const CARRIER_JA: Record<string, string> = {
-  "China Mobile (中国移动)": "中国移動",
-  "China Unicom (中国联通)": "中国聯通",
-  "China Telecom (中国电信)": "中国電信",
+  "China Mobile": "中国移動",
+  "China Unicom": "中国聯通",
+  "China Telecom": "中国電信",
 };
 
 const SIM_TYPE_JA: Record<string, string> = {
@@ -113,14 +113,14 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                             key={i}
                             className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
                           >
-                            {jaText(p, lang)}
+                            {guideText(p, lang)}
                           </span>
                         ))}
                       </div>
                       <div className="flex flex-wrap gap-2 mt-2">
                         {currentSIM.providersCn.map((p, i) => (
                           <span key={i} className="text-sm text-muted-foreground">
-                            {jaText(p, lang)}
+                            {guideText(p, lang)}
                           </span>
                         ))}
                       </div>
@@ -133,7 +133,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                         {lang !== "ja" && currentSIM.setupSteps.map((step, i) => (
                           <li key={i} className="flex items-start gap-2 text-sm">
                             <span className="text-green-500 font-bold">{i + 1}.</span>
-                            <span>{jaText(step, lang)}</span>
+                            <span>{guideText(step, lang)}</span>
                           </li>
                         ))}
                       </ol>
@@ -153,7 +153,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                         {currentSIM.whereToBuy.map((loc, i) => (
                           <li key={i} className="text-sm flex items-start gap-2">
                             <span className="text-amber-500">📍</span>
-                            <span>{jaText(loc, lang)}</span>
+                            <span>{guideText(loc, lang)}</span>
                           </li>
                         ))}
                       </ul>
@@ -166,7 +166,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                         <ul className="space-y-1">
                           {currentSIM.pros.map((pro, i) => (
                             <li key={i} className="text-sm">
-                              {jaText(pro, lang)}
+                              {guideText(pro, lang)}
                             </li>
                           ))}
                         </ul>
@@ -176,7 +176,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                         <ul className="space-y-1">
                           {currentSIM.cons.map((con, i) => (
                             <li key={i} className="text-sm">
-                              {jaText(con, lang)}
+                              {guideText(con, lang)}
                             </li>
                           ))}
                         </ul>
@@ -204,7 +204,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
             <div className="divide-y">
               {APN_SETTINGS.map((apn, idx) => (
                 <div key={idx} className="p-4">
-                  <h4 className="font-medium">{lang === "ja" ? CARRIER_JA[apn.carrier] || apn.carrier : apn.carrier}</h4>
+                  <h4 className="font-medium">{lang === "ja" ? CARRIER_JA[apn.carrier] || apn.carrier : guideText(apn.carrier, lang)}</h4>
                   <div className="grid md:grid-cols-4 gap-4 mt-2 text-sm">
                     <div>
                       <span className="text-muted-foreground">APN:</span>
@@ -249,7 +249,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                   <span className="text-3xl">{vpn.icon}</span>
                   <div>
                     <h3 className="font-semibold">{vpn.name}</h3>
-                    <p className="text-sm text-muted-foreground">{jaText(vpn.cost, lang)}</p>
+                    <p className="text-sm text-muted-foreground">{guideText(vpn.cost, lang)}</p>
                   </div>
                   <div className="ml-auto flex flex-col items-end gap-1">
                     <span
@@ -272,7 +272,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                     <div className="flex flex-wrap gap-1 mt-1">
                       {vpn.features.map((f, i) => (
                         <span key={i} className="text-xs bg-slate-100 px-2 py-1 rounded">
-                          {jaText(f, lang)}
+                          {guideText(f, lang)}
                         </span>
                       ))}
                     </div>
@@ -319,9 +319,9 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                 <div className="text-xs text-muted-foreground mb-1">
                   {lang === "ja" ? jaText(app.categoryCn, lang) : <>{app.category} / {jaText(app.categoryCn, lang)}</>}
                 </div>
-                <p className="text-sm">{jaText(app.purpose, lang)}</p>
+                <p className="text-sm">{guideText(app.purpose, lang)}</p>
                 <p className="text-xs text-muted-foreground mt-1">{jaText(app.purposeCn, lang)}</p>
-                <div className="text-xs text-muted-foreground mt-2">{lang === "ja" ? "ダウンロード：" : "Download: "}{jaText(app.download, lang)}</div>
+                <div className="text-xs text-muted-foreground mt-2">{lang === "ja" ? "ダウンロード：" : "Download: "}{guideText(app.download, lang)}</div>
               </div>
             ))}
           </div>
@@ -352,7 +352,7 @@ export function CommunicationGuideClient({ lang = "en" }: { lang?: Language } = 
                     {step.actionItems.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
                         <span className="text-blue-500">✓</span>
-                        <span>{jaText(item, lang)}</span>
+                        <span>{guideText(item, lang)}</span>
                       </li>
                     ))}
                   </ul>

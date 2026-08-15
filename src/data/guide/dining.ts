@@ -31,16 +31,16 @@ export interface OrderingHelper {
 // Cuisine Types - Stage 8
 export const CUISINE_TYPES: CuisineType[] = [
   {
-    cuisine: "Sichuan (川菜)",
+    cuisine: "Sichuan",
     icon: "🌶️",
     description:
       "Famous for bold flavors and famous mala (numbing-spicy) taste. Rich, hot, and bursting with flavor.",
     descriptionCn: "以大胆的风味和著名的麻辣（麻-辣）味道著称。浓郁、辛辣、充满风味。",
     popularDishes: [
-      "Mapo Tofu (麻婆豆腐)",
-      "Kung Pao Chicken (宫保鸡丁)",
-      "Twice Cooked Pork (回锅肉)",
-      "Spicy Hot Pot (麻辣火锅)",
+      "Mapo Tofu",
+      "Kung Pao Chicken",
+      "Twice Cooked Pork",
+      "Spicy Hot Pot",
     ],
     popularDishesCn: ["麻婆豆腐", "宫保鸡丁", "回锅肉", "麻辣火锅"],
     tips: [
@@ -53,16 +53,16 @@ export const CUISINE_TYPES: CuisineType[] = [
     priceRangeCn: "每人50-200元",
   },
   {
-    cuisine: "Cantonese (粤菜)",
+    cuisine: "Cantonese",
     icon: "Dim Sum",
     description:
       "Light, fresh flavors with emphasis on natural taste. Famous for dim sum, seafood, and delicate preparation.",
     descriptionCn: "清淡、新鲜的风味，强调天然味道。以点心、海鲜和精致的制作著称。",
     popularDishes: [
-      "Dim Sum (点心)",
-      "Steamed Fish (清蒸鱼)",
-      "Char Siu (叉烧)",
-      "Shrimp Dumplings (虾饺)",
+      "Dim Sum",
+      "Steamed Fish",
+      "Char Siu",
+      "Shrimp Dumplings",
     ],
     popularDishesCn: ["点心", "清蒸鱼", "叉烧", "虾饺"],
     tips: [
@@ -75,16 +75,16 @@ export const CUISINE_TYPES: CuisineType[] = [
     priceRangeCn: "每人80-300元",
   },
   {
-    cuisine: "Beijing (京菜)",
+    cuisine: "Beijing",
     icon: "🥬",
     description:
       "Rich imperial cuisine with famous Peking Duck. Bold flavors and substantial portions.",
     descriptionCn: "以著名的北京烤鸭为代表的丰富宫廷菜。风味浓郁，分量足。",
     popularDishes: [
-      "Peking Duck (北京烤鸭)",
-      "Fried Scallion Pancake (葱油饼)",
-      "Lamb Hotpot (涮羊肉)",
-      "Jianbing (煎饼)",
+      "Peking Duck",
+      "Fried Scallion Pancake",
+      "Lamb Hotpot",
+      "Jianbing",
     ],
     popularDishesCn: ["北京烤鸭", "葱油饼", "涮羊肉", "煎饼"],
     tips: [
@@ -97,7 +97,7 @@ export const CUISINE_TYPES: CuisineType[] = [
     priceRangeCn: "每人60-400元",
   },
   {
-    cuisine: "Hotpot (火锅)",
+    cuisine: "Hotpot",
     icon: "🍲",
     description:
       "Interactive dining where you cook ingredients in a bubbling broth. Social and customizable.",
@@ -120,10 +120,10 @@ export const CUISINE_TYPES: CuisineType[] = [
     description: "Affordable, tasty, and everywhere. Great for quick bites and local experiences.",
     descriptionCn: "便宜、美味、到处都有。非常适合快速小吃和当地体验。",
     popularDishes: [
-      "Jianbing (煎饼)",
-      "Baozi (包子)",
-      "Stinky Tofu (臭豆腐)",
-      "Lamb Skewers (羊肉串)",
+      "Jianbing",
+      "Baozi",
+      "Stinky Tofu",
+      "Lamb Skewers",
     ],
     popularDishesCn: ["煎饼", "包子", "臭豆腐", "羊肉串"],
     tips: [
@@ -188,7 +188,7 @@ export const DINING_TIPS: DiningTip[] = [
   {
     category: "Dietary",
     icon: "🥜",
-    tip: 'Use Chinese translations: "不要辣" (no spice), "不要味精" (no MSG), "素食" (vegetarian).',
+    tip: 'Use Chinese translations: "bù yào là" (no spice), "bù yào wèijīng" (no MSG), "sùshí" (vegetarian).',
     tipCn: '使用中文翻译："不要辣"、"不要味精"、"素食"。',
   },
 ];
@@ -242,9 +242,9 @@ export const DIETARY_RESTRICTIONS: DietaryRestriction[] = [
     chinesePhrase: "我吃清真食品",
     pronunciation: "wǒ chī qīngzhēn shípǐn",
     explanation:
-      'Halal food is available in Muslim areas. Look for "清真" signs. Pork is prohibited.',
+      'Halal food is available in Muslim areas. Look for "halal" signs. Pork is prohibited.',
     explanationCn: '清真食品在穆斯林聚居区有售。寻找"清真"标识。猪肉禁止食用。',
-    exampleDishes: ["Lamb skewers (羊肉串)", "Laghman (Pulled noodles)", "Hand-grilled mutton"],
+    exampleDishes: ["Lamb skewers", "Laghman (Pulled noodles)", "Hand-grilled mutton"],
     exampleDishesCn: ["羊肉串", "拉面", "手抓羊肉"],
   },
   {
@@ -455,7 +455,7 @@ export const DINING_FAQS = [
   {
     question: "How do I find good local restaurants?",
     answer:
-      "Use Dianping (大众点评) app for reviews and rankings. Look for places with long queues of locals. Michelin and Black Pearl symbols indicate quality.",
+      "Use the Dianping app for reviews and rankings. Look for places with long queues of locals. Michelin and Black Pearl symbols indicate quality.",
   },
   {
     question: "Is it safe to eat street food?",
@@ -470,7 +470,7 @@ export const DINING_FAQS = [
   {
     question: "What if I cannot eat spicy food?",
     answer:
-      'Say "不要辣" (bù yào là) when ordering. Most restaurants can accommodate mild or no spice. Sichuan cuisine may still have some peppercorn flavor even without chili.',
+      'Say "bù yào là" (no spice) when ordering. Most restaurants can accommodate mild or no spice. Sichuan cuisine may still have some peppercorn flavor even without chili.',
   },
   {
     question: "How much should I budget for food?",

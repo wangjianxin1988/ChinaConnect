@@ -7,7 +7,7 @@ import {
 } from "@/data/guide/accommodation";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText } from "./guide-i18n";
+import { jaText, guideText } from "./guide-i18n";
 
 export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.accommodationGuide || translations.en.accommodationGuide || {}) as Record<string, string>;
   const [activeTab, setActiveTab] = useState("types");
@@ -50,7 +50,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                   <span className="text-4xl">{hotel.icon}</span>
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg">{lang === "ja" ? jaText(hotel.type, lang) : hotel.type}</h3>
-                    <p className="text-primary font-medium">{jaText(hotel.priceRange, lang)}</p>
+                    <p className="text-primary font-medium">{guideText(hotel.priceRange, lang)}</p>
                     <p className="text-xs text-muted-foreground">{jaText(hotel.priceRangeCn, lang)}</p>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                     <div className="flex flex-wrap gap-1">
                       {hotel.features.map((f, i) => (
                         <span key={i} className="text-xs bg-white px-2 py-1 rounded border">
-                          {jaText(f, lang)}
+                          {guideText(f, lang)}
                         </span>
                       ))}
                     </div>
@@ -86,7 +86,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                           key={i}
                           className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded"
                         >
-                          {jaText(r, lang)}
+                          {guideText(r, lang)}
                         </span>
                       ))}
                     </div>
@@ -195,7 +195,7 @@ export function AccommodationGuideClient({ lang = "en" }: { lang?: Language } = 
                     {step.details.map((detail, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm">
                         <span className="text-blue-500">{i + 1}.</span>
-                        <span>{jaText(detail, lang)}</span>
+                        <span>{guideText(detail, lang)}</span>
                       </li>
                     ))}
                   </ul>

@@ -7,7 +7,7 @@ import {
 } from "@/data/guide/emergency";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 
 const SEVERITY_JA: Record<string, string> = { critical: "重大", high: "高", medium: "中", low: "低" };
 
@@ -196,7 +196,7 @@ export function EmergencyGuideClient({ lang = "en" }: { lang?: Language } = {}) 
                         {currentEmergency.usefulPhrases.map((phrase, i) => (
                           <div key={i} className="flex items-center gap-2 text-sm">
                             <span className="text-blue-500">•</span>
-                            {lang !== "ja" && <span>{jaText(phrase, lang)}</span>}
+                            {lang !== "ja" && <span>{guideText(phrase, lang)}</span>}
                           </div>
                         ))}
                       </div>

@@ -9,7 +9,7 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React, { useState, useRef, useEffect } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, stripZh } from "./guide-i18n";
 
 interface FormValues {
   [key: string]: string;
@@ -341,7 +341,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                 </label>
                 <input
                   type="text"
-                  placeholder={field.placeholder}
+                  placeholder={lang === "zh-CN" || lang === "zh-TW" ? field.placeholder : stripZh(field.placeholder)}
                   value={formValues[field.key] || ""}
                   onChange={(e) => handleInputChange(field.key, e.target.value)}
                   className="w-full px-3 py-2 rounded-lg border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"

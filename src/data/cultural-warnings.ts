@@ -22,7 +22,7 @@ export const CULTURAL_WARNINGS: CulturalWarning[] = [
     title: "Number 4 is Unlucky",
     titleCn: "数字4是不吉利的",
     description:
-      'The number 4 sounds like "death" (si/死) in Chinese. Avoid giving gifts in sets of 4. Building floors and room numbers often skip 4.',
+      'The number 4 sounds like "death" (sì) in Chinese. Avoid giving gifts in sets of 4. Building floors and room numbers often skip 4.',
     descriptionCn: '数字4的发音与"死"相似。避免送4样一套的礼物。建筑楼层和房间号经常跳过4。',
     importance: "critical",
   },
@@ -34,7 +34,7 @@ export const CULTURAL_WARNINGS: CulturalWarning[] = [
     title: "Number 8 is Lucky",
     titleCn: "数字8是幸运的",
     description:
-      '8 sounds like "prosperity" (fa/发). It is extremely lucky and often associated with wealth.',
+      '8 sounds like "prosperity" (fā). It is extremely lucky and often associated with wealth.',
     descriptionCn: '8的发音像"发"。这是非常吉利的数字，常与财富相关。',
     importance: "note",
   },
@@ -45,7 +45,7 @@ export const CULTURAL_WARNINGS: CulturalWarning[] = [
     icon: "6️⃣",
     title: "Number 6 is Good",
     titleCn: "数字6是好的",
-    description: '6 sounds like "smooth" (liu/顺). It represents smoothness and good luck.',
+    description: '6 sounds like "smooth" (shùn). It represents smoothness and good luck.',
     descriptionCn: '6的发音像"顺"。代表顺利和好运。',
     importance: "note",
   },

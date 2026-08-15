@@ -2,7 +2,7 @@
 import { CULTURAL_WARNINGS, IMPORTANCE_STYLES } from "@/data/cultural-warnings";
 import React, { useState } from "react";
 import { type Language, translations } from "@/i18n/translations";
-import { jaText } from "./guide-i18n";
+import { jaText, guideText } from "./guide-i18n";
 
 export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}) { const t = translations[lang] || translations.en; const tg = (t.culturalWarnings || translations.en.culturalWarnings || {}) as Record<string, string>;
   const [activeCategory, setActiveCategory] = useState("all");
@@ -117,7 +117,7 @@ export function CulturalWarningsClient({ lang = "en" }: { lang?: Language } = {}
                           </span>
                         </div>
                         {lang !== "ja" && <p className="text-sm text-muted-foreground mb-2">{jaText(warning.titleCn, lang)}</p>}
-                        <p className="text-foreground">{lang === "ja" ? jaText(warning.descriptionCn, lang) : warning.description}</p>
+                        <p className="text-foreground">{lang === "ja" ? jaText(warning.descriptionCn, lang) : guideText(warning.description, lang)}</p>
                         {lang !== "ja" && <p className="text-muted-foreground mt-1">{jaText(warning.descriptionCn, lang)}</p>}
                         {warning.region && (
                           <div className="mt-2 text-sm">

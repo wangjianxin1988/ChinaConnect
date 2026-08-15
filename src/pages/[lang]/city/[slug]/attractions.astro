@@ -6,6 +6,7 @@ import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { entityDisplayName, entitySecondaryName, pruneCityEntityNames } from "@/lib/city-name";
+import { citySourceLabel } from "@/lib/city-sources";
 
 export function getStaticPaths() {
   const langs = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
@@ -291,11 +292,11 @@ const CAT_LABELS: Record<string, Record<string, string>> = {
       <div class="bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-2">
         <p data-i18n="cityPage.dataSourcesDesc">観光地データは権威ある情報源から編集されています。訪問前に詳細を確認することをお勧めします:</p>
         <ul class="list-disc list-inside space-y-1 ml-2">
-          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{lang === "ja" ? "Mafengwo（馬蜂窩）" : "Mafengwo (马蜂窝)"}</a>  — <span data-i18n="cityAttractions.mafengwoDesc">中国最大の旅行コミュニティ</span></li>
+          <li><a href="https://www.mafengwo.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "mafengwo")}</a>  — <span data-i18n="cityAttractions.mafengwoDesc">中国最大の旅行コミュニティ</span></li>
           <li><a href="https://www.ctrip.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ctrip / Trip.com</a>  — <span data-i18n="cityAttractions.ctripDesc">観光地のレビュー＆予約</span></li>
           <li><a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">TripAdvisor</a>  — <span data-i18n="cityAttractions.tripadvisorDesc">国際的な観光地レビュー</span></li>
-          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{lang === "ja" ? "China News（新華網）" : "China News (新华网)"}</a>  — <span data-i18n="cityAttractions.chinanewsDesc">公式の観光情報</span></li>
-          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">文化・観光部 (Ministry of Culture &amp; Tourism)</a>  — <span data-i18n="cityAttractions.mctDesc">政府の観光データ</span></li>
+          <li><a href="https://www.chinanews.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "chinanews")}</a>  — <span data-i18n="cityAttractions.chinanewsDesc">公式の観光情報</span></li>
+          <li><a href="https://www.mct.gov.cn" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{citySourceLabel(lang, "mct")}</a>  — <span data-i18n="cityAttractions.mctDesc">政府の観光データ</span></li>
         </ul>
         <p class="text-xs text-gray-400 mt-3"><span data-i18n="cityAttractions.disclaimer">営業時間、チケット料金、電話番号は変更される場合があります。公式ウェブサイトで確認するか、事前に電話で確認することをお勧めします。</span></p>
       </div>

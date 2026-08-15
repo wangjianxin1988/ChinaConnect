@@ -6,7 +6,7 @@ import type { ATMInfo, CityPaymentCoverage, PaymentMethod } from "@/types/paymen
 export const PAYMENT_METHODS_DETAILED: PaymentMethod[] = [
   {
     id: "alipay",
-    method: "Alipay (支付宝)",
+    method: "Alipay",
     icon: "💙",
     colorClass: "bg-blue-50 text-blue-700 border-blue-200",
     description:
@@ -80,7 +80,7 @@ export const PAYMENT_METHODS_DETAILED: PaymentMethod[] = [
   },
   {
     id: "wechat-pay",
-    method: "WeChat Pay (微信支付)",
+    method: "WeChat Pay",
     icon: "💚",
     colorClass: "bg-green-50 text-green-700 border-green-200",
     description:
@@ -150,7 +150,7 @@ export const PAYMENT_METHODS_DETAILED: PaymentMethod[] = [
   },
   {
     id: "unionpay",
-    method: "UnionPay (银联)",
+    method: "UnionPay",
     icon: "💳",
     colorClass: "bg-red-50 text-red-700 border-red-200",
     description:
@@ -218,7 +218,7 @@ export const PAYMENT_METHODS_DETAILED: PaymentMethod[] = [
   },
   {
     id: "cash",
-    method: "Cash (现金)",
+    method: "Cash",
     icon: "💵",
     colorClass: "bg-amber-50 text-amber-700 border-amber-200",
     description:
@@ -282,7 +282,7 @@ export const PAYMENT_METHODS_DETAILED: PaymentMethod[] = [
   },
   {
     id: "tourist-card",
-    method: "Tourist Card (旅客卡)",
+    method: "Tourist Card",
     icon: "🎴",
     colorClass: "bg-purple-50 text-purple-700 border-purple-200",
     description:

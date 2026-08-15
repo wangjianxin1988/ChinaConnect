@@ -4,7 +4,7 @@ import {
 } from "@/data/guide/business/company-registration";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 
 export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
   const [selectedType, setSelectedType] = useState<string>(COMPANY_REGISTRATION[0].type);
@@ -220,7 +220,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
           service provider or lawyer before starting the registration process.
         </p>}
         <p className="text-xs text-amber-600 mt-2">
-          {lang === "ja" ? "本ガイドは参考情報です。登録要件は頻繁に変更され、都市・業種・国籍によって異なります。登録手続きを開始する前に、必ず中国の有資格企業サービスプロバイダーまたは弁護士にご相談ください。" : jaText("本指南仅供参考。注册要求时常变化，因城市、行业和国籍而异。在开始注册流程前，请务必咨询持有执照的中国企业服务商或律师。", lang)}
+          {lang === "ja" ? "本ガイドは参考情報です。登録要件は頻繁に変更され、都市・業種・国籍によって異なります。登録手続きを開始する前に、必ず中国の有資格企業サービスプロバイダーまたは弁護士にご相談ください。" : lang === "en" ? "This guide is for informational purposes only. Registration requirements change frequently and vary by city, industry, and nationality. Always consult a licensed Chinese corporate service provider or lawyer before starting the registration process." : jaText("本指南仅供参考。注册要求时常变化，因城市、行业和国籍而异。在开始注册流程前，请务必咨询持有执照的中国企业服务商或律师。", lang)}
         </p>
       </div>
     </div>

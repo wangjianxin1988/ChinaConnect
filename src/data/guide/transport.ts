@@ -107,7 +107,7 @@ export const LOCAL_TRANSPORT_MODES: TransportMode[] = [
     description: "Fast, cheap, and reliable urban transport in major cities.",
     descriptionCn: "主要城市快速、便宜、可靠的公共交通。",
     howToUse: [
-      "Download subway app (Metro大都会 for Shanghai)",
+      "Download the subway app (Metro Metropolitan for Shanghai)",
       "Purchase single journey token at machines",
       "Use mobile payment (Alipay/WeChat) at gates",
       "Tap card at entry and exit gates",
@@ -258,7 +258,7 @@ export const LOCAL_TRANSPORT_MODES: TransportMode[] = [
 // Stage 7: Inter-city Transport
 export const INTERCITY_TRANSPORT: TransportMode[] = [
   {
-    mode: "High-Speed Rail (高铁)",
+    mode: "High-Speed Rail",
     icon: "🚄",
     description: "Faster than planes for distances under 1000km, frequent departures.",
     descriptionCn: "1000公里以下比飞机更快，班次频繁。",
@@ -393,7 +393,7 @@ export const TRAIN_BOOKING_GUIDE = {
       cons: "May have small service fee",
     },
     {
-      name: "携程 (Ctrip)",
+      name: "Ctrip",
       icon: "📱",
       url: "www.ctrip.com",
       description: "Popular Chinese app",
@@ -403,31 +403,31 @@ export const TRAIN_BOOKING_GUIDE = {
   ],
   seatClasses: [
     {
-      class: "Business Class (商务座)",
+      class: "Business Class",
       price: "2x first class",
       features: ["Lie-flat seats", "Premium meals", "Priority boarding", "Lounge access"],
       suitable: "Long distance comfort",
     },
     {
-      class: "First Class (一等座)",
+      class: "First Class",
       price: "1.5x second class",
       features: ["Wider seats", "More legroom", "Power outlets", "Better service"],
       suitable: "Comfortable travel",
     },
     {
-      class: "Second Class (二等座)",
+      class: "Second Class",
       price: "Standard",
       features: ["Good legroom", "Power outlets", "AC", "Clean"],
       suitable: "Best value for most",
     },
     {
-      class: "Hard Sleeper (硬卧)",
+      class: "Hard Sleeper",
       price: "Cheap",
       features: ["6 bunks per compartment", "Shared space", "No door"],
       suitable: "Budget overnight",
     },
     {
-      class: "Soft Sleeper (软卧)",
+      class: "Soft Sleeper",
       price: "Premium",
       features: ["4 bunks per compartment", "Door for privacy", "Cleaner"],
       suitable: "Comfortable overnight",
@@ -521,7 +521,7 @@ export const CITY_DISTANCE_TABLE = [
 export const TAXI_GUIDE = {
   types: [
     {
-      type: "Street Taxi (路边打车)",
+      type: "Street Taxi",
       icon: "🚕",
       description: "Traditional taxis with meters",
       tips: ['Look for "TAXI" sign', "Use meter always", "Get receipt"],

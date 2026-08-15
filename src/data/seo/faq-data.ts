@@ -69,9 +69,9 @@ export const GENERAL_CHINA_FAQS: FAQItem[] = [
     question: "How do I get around in Chinese cities?",
     questionEn: "How do I get around in Chinese cities?",
     answer:
-      "Major Chinese cities have efficient metro systems. Taxis and ride-sharing (Didi) are affordable. High-speed trains connect cities. For short distances, bikes and e-bikes are popular. Apps like Amap (高德地图) provide navigation in Chinese.",
+      "Major Chinese cities have efficient metro systems. Taxis and ride-sharing (Didi) are affordable. High-speed trains connect cities. For short distances, bikes and e-bikes are popular. Apps like Amap provide navigation in Chinese.",
     answerEn:
-      "Major Chinese cities have efficient metro systems. Taxis and ride-sharing (Didi) are affordable. High-speed trains connect cities. For short distances, bikes and e-bikes are popular. Apps like Amap (高德地图) provide navigation in Chinese.",
+      "Major Chinese cities have efficient metro systems. Taxis and ride-sharing (Didi) are affordable. High-speed trains connect cities. For short distances, bikes and e-bikes are popular. Apps like Amap provide navigation in Chinese.",
   },
 ];
 

@@ -236,7 +236,7 @@ export const TAX_REFUND_INFO: TaxRefundInfo[] = [
     process: [
       "Show passport before payment",
       "Request tax refund invoice",
-      "Fill out tax refund form (边境购物退税申请单)",
+      "Fill out the tax refund form",
       "Get verification code from store",
       "Keep invoice and form for airport processing",
     ],
@@ -262,7 +262,7 @@ export const TAX_REFUND_INFO: TaxRefundInfo[] = [
     requirements: [],
     requirementsCn: [],
     process: [
-      "Go to tax refund counter at departure hall (离境退税点)",
+      "Go to the tax refund counter in the departure hall",
       "Present passport, invoice, and items",
       "Show boarding pass (or show booking)",
       "Receive refund in cash or to card",
@@ -312,7 +312,7 @@ export const AIRPORT_INFO: AirportInfo[] = [
     tips: [
       "Terminal 3 is huge - allow extra time",
       "Terminal 2 for domestic flights",
-      "Use地铁for connections",
+      "Use the metro for connections",
     ],
     tipsCn: ["3号航站楼很大——留出额外时间", "2号航站楼为国内航班", "转机用地铁"],
   },
@@ -474,7 +474,7 @@ export const DEPARTURE_FAQS = [
 
 // Memory Collection Status
 export const MEMORY_COLLECTION = {
-  title: "收集旅行回忆",
+  title: "Collect travel memories",
   titleCn: "Collect Travel Memories",
   description: "Before leaving, make sure to collect and backup your travel memories.",
   descriptionCn: "在离开前，确保收集并备份您的旅行回忆。",

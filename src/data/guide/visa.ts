@@ -248,7 +248,7 @@ export const VISA_TIPS = [
     icon: "🗣️",
     title: "Learn Basic Phrases",
     titleCn: "学习基本短语",
-    tip: 'Learning "你好" (hello) and "谢谢" (thank you) goes a long way. Even basic attempts are appreciated.',
+    tip: 'Learning "nǐ hǎo" (hello) and "xiè xiè" (thank you) goes a long way. Even basic attempts are appreciated.',
     tipCn: '学会"你好"和"谢谢"大有帮助。即使是基本的尝试也会受到赞赏。',
   },
 ];
@@ -369,7 +369,7 @@ export const ESSENTIAL_APPS_LIST = [
   { app: "Google Translate", purpose: "Offline translation + camera", essential: true },
   { app: "Maps.me", purpose: "Offline maps (works without VPN)", essential: true },
   { app: "Trip.com", purpose: "Flights, trains, hotels - English", essential: false },
-  { app: "大众点评", purpose: "Restaurant reviews, takeout", essential: false },
+  { app: "Dianping", purpose: "Restaurant reviews, takeout", essential: false },
   { app: "Metro (city app)", purpose: "Subway routes and payment", essential: false },
 ];
 

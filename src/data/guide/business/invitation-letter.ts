@@ -129,7 +129,7 @@ export const INVITATION_TEMPLATES: InvitationTemplate[] = [
         key: "contact_name",
         label: "Contact Person",
         labelCn: "联系人",
-        placeholder: "Li Wei / 李伟",
+        placeholder: "Li Wei",
         placeholderCn: "李伟",
         required: true,
       },

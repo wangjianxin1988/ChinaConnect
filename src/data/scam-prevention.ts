@@ -270,7 +270,7 @@ export const SCAM_TYPES: ScamType[] = [
     icon: "🏯",
     severity: "medium",
     description:
-      'Some temples pressure visitors into buying expensive incense, making large donations, or purchasing所谓的"开光" items.',
+      'Some temples pressure visitors into buying expensive incense, making large donations, or purchasing supposedly "blessed" items.',
     descriptionCn: '一些寺庙强迫游客购买高价香火、大量捐款，或购买所谓的"开光"物品。',
     signs: [
       "Forced incense purchase at entrance",
@@ -301,7 +301,7 @@ export const SCAM_TYPES: ScamType[] = [
       "在正常营业时间参观",
     ],
     whatToDo: [
-      'Say "不需要" (bù xūyào - do not need)',
+      'Say "bù xūyào" (I don\'t need it)',
       "Walk away firmly",
       "Do not feel obligated",
       "Report to religious affairs bureau",

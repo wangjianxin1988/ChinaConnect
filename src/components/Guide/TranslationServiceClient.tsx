@@ -1,7 +1,7 @@
 import { TRANSLATION_FAQS, TRANSLATION_SERVICES } from "@/data/guide/business/translation";
 import { LastVerifiedStamp } from "./LastVerifiedStamp";
 import React, { useState } from "react";
-import { jaText, Bi } from "./guide-i18n";
+import { jaText, Bi, guideText } from "./guide-i18n";
 
 export function TranslationServiceClient({ lang = "en" }: { lang?: string }) {
   const [selectedService, setSelectedService] = useState<string>(TRANSLATION_SERVICES[0].id);
@@ -56,7 +56,7 @@ export function TranslationServiceClient({ lang = "en" }: { lang?: string }) {
               <h3 className="text-xl font-bold">{lang === "ja" ? jaText(currentService.nameCn, lang) : currentService.name}</h3>
               {lang !== "ja" && <p className="text-primary font-medium">{jaText(currentService.nameCn, lang)}</p>}
               <div className="text-2xl font-bold text-violet-700 mt-1">
-                {jaText(currentService.priceRange, lang)}
+                {guideText(currentService.priceRange, lang)}
               </div>
               <p className="text-sm text-muted-foreground">{jaText(currentService.priceRangeCn, lang)}</p>
             </div>
@@ -99,7 +99,7 @@ export function TranslationServiceClient({ lang = "en" }: { lang?: string }) {
             {currentService.features.map((feat, idx) => (
               <div key={idx} className="flex items-start gap-2">
                 <span className="text-green-500 mt-0.5">✓</span>
-                <span className="text-sm text-foreground">{jaText(feat, lang)}</span>
+                <span className="text-sm text-foreground">{guideText(feat, lang)}</span>
               </div>
             ))}
           </div>
@@ -138,8 +138,8 @@ export function TranslationServiceClient({ lang = "en" }: { lang?: string }) {
                     <div className="font-medium">{lang === "ja" ? jaText(svc.nameCn, lang) : svc.name}</div>
                     {lang !== "ja" && <div className="text-xs text-muted-foreground">{jaText(svc.nameCn, lang)}</div>}
                   </td>
-                  <td className="p-3 border font-medium text-violet-700">{jaText(svc.priceRange, lang)}</td>
-                  <td className="p-3 border text-muted-foreground">{jaText(svc.delivery, lang)}</td>
+                  <td className="p-3 border font-medium text-violet-700">{guideText(svc.priceRange, lang)}</td>
+                  <td className="p-3 border text-muted-foreground">{guideText(svc.delivery, lang)}</td>
                   <td className="p-3 border text-muted-foreground">
                     {lang === "ja" ? (jaText(svc.descriptionCn, lang).split("。")[0] + "。") : (svc.description.split(".")[0] + ".")}
                   </td>

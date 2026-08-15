@@ -26,7 +26,7 @@ export interface ShoppingTip {
 // Stage 2: Payment Setup
 export const PAYMENT_METHODS: PaymentMethod[] = [
   {
-    method: "Alipay (支付宝)",
+    method: "Alipay",
     icon: "💙",
     description: "China's dominant mobile payment platform, accepted everywhere.",
     descriptionCn: "中国主要的移动支付平台，到处都可以使用。",
@@ -87,7 +87,7 @@ export const PAYMENT_METHODS: PaymentMethod[] = [
     ],
   },
   {
-    method: "WeChat Pay (微信支付)",
+    method: "WeChat Pay",
     icon: "💚",
     description: "Integrated with messaging app, second most popular payment.",
     descriptionCn: "集成在通讯应用中，第二大支付方式。",
@@ -201,7 +201,7 @@ export const PAYMENT_METHODS: PaymentMethod[] = [
     cons: ["ATM withdrawal fees", "May not work at some small vendors", "Limited refund options"],
   },
   {
-    method: "Cash (现金)",
+    method: "Cash",
     icon: "💵",
     description: "Still useful for small vendors, markets, and emergencies.",
     descriptionCn: "对小商贩、市场和紧急情况仍然有用。",
