@@ -89,7 +89,9 @@ function HighlightCard({ restaurant, highlightTag, lang = "en" }: HighlightCardP
   const displayName = (isCJK && restaurant.name && restaurant.name !== restaurant.nameEn)
     ? restaurant.name
     : (restaurant.nameEn || restaurant.name);
-  const secondaryName = (displayName === restaurant.nameEn) ? restaurant.name : restaurant.nameEn;
+  const secondaryName = (lang === "zh-CN" || lang === "zh-TW" || lang === "ja")
+    ? ((displayName === restaurant.nameEn) ? restaurant.name : restaurant.nameEn)
+    : "";
   const config = HIGHLIGHT_CONFIG[highlightTag];
 
   return (
@@ -201,7 +203,7 @@ export function FoodHighlightsSection({
           href={`/city/${citySlug}/food`}
           className="shrink-0 text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline flex items-center gap-1"
         >
-          查看全部
+          {ct(lang, "hl_view_all", "View all")}
           <span>→</span>
         </a>
       </div>
@@ -228,7 +230,7 @@ export function FoodHighlightsSection({
                 href={`/city/${citySlug}/food?filter=local_recommend`}
                 className="block text-center text-sm text-red-600 hover:text-red-700 font-medium py-2 border border-dashed border-red-200 rounded-lg hover:bg-red-50 transition-colors"
               >
-                {ct(lang, "hl_view_all_count", "查看全部 {count} 家").replace("{count}", String(categorized.local_recommend.length))}
+                {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.local_recommend.length))}
               </a>
             )}
           </div>
@@ -254,7 +256,7 @@ export function FoodHighlightsSection({
                 href={`/city/${citySlug}/food?filter=affordable`}
                 className="block text-center text-sm text-blue-600 hover:text-blue-700 font-medium py-2 border border-dashed border-blue-200 rounded-lg hover:bg-blue-50 transition-colors"
               >
-                {ct(lang, "hl_view_all_count", "查看全部 {count} 家").replace("{count}", String(categorized.affordable.length))}
+                {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.affordable.length))}
               </a>
             )}
           </div>
@@ -280,7 +282,7 @@ export function FoodHighlightsSection({
                 href={`/city/${citySlug}/food?filter=street_food`}
                 className="block text-center text-sm text-orange-600 hover:text-orange-700 font-medium py-2 border border-dashed border-orange-200 rounded-lg hover:bg-orange-50 transition-colors"
               >
-                {ct(lang, "hl_view_all_count", "查看全部 {count} 家").replace("{count}", String(categorized.street_food.length))}
+                {ct(lang, "hl_view_all_count", "View all {count}").replace("{count}", String(categorized.street_food.length))}
               </a>
             )}
           </div>

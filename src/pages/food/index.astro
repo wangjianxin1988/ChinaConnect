@@ -198,7 +198,7 @@ const foodSchemas = [
               {city.coverImage ? (
                 <img
                   src={city.coverImage}
-                  alt={city.nameZh}
+                  alt={city.nameEn}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               ) : (
@@ -210,7 +210,7 @@ const foodSchemas = [
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <!-- City name on image -->
               <div class="absolute bottom-3 left-4 text-white">
-                <h3 class="text-xl font-bold">{city.nameZh}</h3>
+                <h3 class="text-xl font-bold">{city.nameEn}</h3>
                 <p class="text-sm opacity-90">{city.nameEn}</p>
               </div>
             </div>

@@ -5,6 +5,8 @@ import type { CityTier } from "@/data/cities/types";
 import type { City } from "@/data/cities/types";
 import { type CityScoreDisplay, fetchCityScores } from "@/lib/city-sources/city-scores-api";
 import React, { useState, useMemo, useEffect } from "react";
+import { cityDisplayName, citySecondaryName } from "@/lib/city-name";
+import { REGION_NAMES } from "@/data/cities/tier-data";
 import { CityTierBadge } from "./CityTierBadge";
 import { CityTierFilter, CityTierSortDropdown, type TierSortOption } from "./CityTierFilter";
 
@@ -25,7 +27,10 @@ interface CitiesListClientProps {
 
 export function CitiesListClient({ citiesMeta, citiesData, lang = "en", i18n = {} }: CitiesListClientProps) {
   const JA_REGIONS: Record<string, string> = { 华北: "華北", 长三角: "長江デルタ", 珠三角: "珠江デルタ", 西北: "西北", 西南: "西南", 华南: "華南", 云南: "雲南", 福建: "福建", 山东: "山東", 湖南: "湖南", 海南: "海南", 华中: "華中", 东北: "東北", 中原: "中原", 内蒙古: "内モンゴル", 青海: "青海", 华东: "華東" };
-  const regionName = (r: string) => (lang === "ja" ? JA_REGIONS[r] || r : r);
+  const regionName = (r: string) =>
+    lang === "ja" ? JA_REGIONS[r] || r
+    : (lang === "zh-CN" || lang === "zh-TW") ? r
+    : REGION_NAMES[r] || r;
   // i18n lookup helper - resolved string with fallback
   const t = (key: string, fallback: string): string => {
     if (lang === "en" || !i18n) return fallback;
@@ -354,7 +359,7 @@ export function CitiesListClient({ citiesMeta, citiesData, lang = "en", i18n = {
                     : "h-48"
                 } flex items-center justify-center relative`}
               >
-                <span className="text-white/20 text-8xl font-bold absolute">{city.name[0]}</span>
+                <span className="text-white/20 text-8xl font-bold absolute">{cityDisplayName(city, lang)[0]}</span>
               </div>
             )}
 
@@ -383,10 +388,10 @@ export function CitiesListClient({ citiesMeta, citiesData, lang = "en", i18n = {
             {/* Content Overlay */}
             <div className="absolute inset-0 flex flex-col justify-end p-6">
               <div className="mb-2">
-                <span className="text-blue-300 text-sm font-medium">{city.nameZh}</span>
+                <span className="text-blue-300 text-sm font-medium">{citySecondaryName(city, lang)}</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
-                {city.name}
+                {cityDisplayName(city, lang)}
               </h3>
               <p className="text-gray-300 text-sm mb-4 line-clamp-2">{city.description}</p>
 

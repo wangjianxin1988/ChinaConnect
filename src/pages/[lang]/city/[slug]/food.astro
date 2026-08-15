@@ -7,6 +7,7 @@ import type { Restaurant } from "@/data/cities/types";
 import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { entityDisplayName, entitySecondaryName } from "@/lib/city-name";
 
 export function getStaticPaths() {
   const langs = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
@@ -165,7 +166,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
               <div class="h-40 overflow-hidden">
                 <img
                   src={restaurant.imageUrl}
-                  alt={restaurant.name}
+                  alt={entityDisplayName(restaurant, lang)}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
@@ -177,9 +178,9 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
               <div class="flex items-start justify-between gap-2">
                 <div class="flex-1 min-w-0">
                   <h3 class="text-lg font-semibold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">
-                    {lang === "ja" ? restaurant.name : restaurant.nameEn}
+                    {entityDisplayName(restaurant, lang)}
                   </h3>
-                  <p class="text-gray-500 text-sm truncate">{lang === "ja" ? restaurant.nameEn : restaurant.name}</p>
+                  <p class="text-gray-500 text-sm truncate">{entitySecondaryName(restaurant, lang)}</p>
                 </div>
                 {/* Highlight badges */}
                 <div class="shrink-0 flex flex-col gap-1 items-end">
