@@ -884,3 +884,13 @@ for lang in LANGS:
 - **发现**：ja-overrides.ts 其实含 2365 个英文键 + 1551 个中文键（共 3916），不是纯中文键；Phase 3 方案 = 每语言 4891 键全量字典。
 - **验证命令**：`node .audit/verify_data_i18n.mjs --lang=xx`；翻译脚本复跑输出全 `.` 即 0 待译；zh-TW 再跑 `uv run --no-project --with zhconv python scripts/fix-zh-tw-traditional.py` 确认 changed=0。
 - **下个会话**：继续按 ko→th→vi→ru→fr→de→ar→fa 顺序推进 Phase 2；随后 Phase 3（guide 10 语言 override + guide-i18n.tsx 接线）、Phase 4（apps/emergency override + offline.astro data-i18n + locales fa.json/zh-TW 映射）、Phase 5（每语言 432 URL 残留扫描，以 ja 页 CJK 片段为基线对比）、Phase 6（typecheck/check-i18n/build + 本日志更新）。
+### 2026-08-16 会话 #12（Phase 2 中段：自动链 + ko 完成）
+
+- **起**：用户确认全量翻译计划（guide/apps/紧急联系人 10 语言全做 + 遗漏页面检查 + 开始前 git 提交 + EN 零中文硬性标准），授权目标模式持续执行。
+- **已提交**：
+  - `911058d` Phase 3-5 工具脚本（build-guide-strings / translate-guide-strings / translate-apps-emergency / scan-lang-pages）
+  - `b33b048` **ko 全量完成**：35/35 城、verify 0 残留（含 3 个顽固字段手工修复：harbin 2 地址 + yantai 1 highlights）
+- **新增**：`scripts/auto-translate-chain.py`（v2）自动链控制器——监控在飞语言 → 退出后 verify → git 提交 → 启动下一语言，严格 3 并发（inflight 集合计数，修复了 launch 后 WMI 检测延迟导致的超并发 bug）。日志 `.audit/auto-chain.log`。
+- **运行中（勿中断）**：th、vi、ru 三路 DeepSeek 翻译。完成后自动接力 fr/de/ar/fa。
+- **已知顽固字段模式**：`consulate` 等 SENSITIVE_TERMS 词被 mask 后模型原样返回 → isTranslated 拒绝 → 反复重试不写；中文地址翻译成韩语时模型直接给中文。已手工修 ko 3 处，后续语言若遇同类残留需按此模式处理（verify 残留 → 手工翻译写入）。
+- **下个会话**：Phase 2 收尾（th→fr、vi→de、ar/fa）→ Phase 3（guide 10 语言 override + guide-i18n.tsx 接线）→ Phase 4（apps/emergency override + offline.astro + locales）→ Phase 5（每语言 432 URL 扫描）→ Phase 6（typecheck/check-i18n/build + 本日志更新）。
