@@ -7,9 +7,9 @@ const LANGUAGE_PATTERNS = Object.freeze({
   fa: /[\u0600-\u06ff]/,
   "zh-CN": /[\u4e00-\u9fff]/,
   "zh-TW": /[\u4e00-\u9fff]/,
-  fr: /[^\x00-\x7f]/i,
-  de: /[^\x00-\x7f]/i,
-  vi: /[^\x00-\x7f]/i,
+  fr: /[\u00c0-\u00ff\u0152\u0153]/i,
+  de: /[\u00c4\u00d6\u00dc\u00e4\u00f6\u00fc\u00df\u1e9e]/,
+  vi: /[\u00c0-\u1ef9]/i,
 });
 
 const STRICT_LANGUAGES = new Set([
@@ -38,12 +38,17 @@ export function hasLanguageScript(value, lang) {
   return typeof value === "string" && (LANGUAGE_PATTERNS[lang]?.test(value) ?? false);
 }
 
+// Scripts that indicate a value is NOT a Latin-script translation (fr/de/vi etc.).
+const FOREIGN_SCRIPTS =
+  /[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af\u0400-\u04ff\u0600-\u06ff\u0e00-\u0e7f]/;
+
 export function isTranslated(value, lang, sourceValue, sourceWasMasked = false) {
   if (typeof value !== "string" || value.length === 0) return false;
   if (sourceWasMasked && value === sourceValue) return false;
   if (hasLanguageScript(value, lang)) return true;
   if (typeof sourceValue === "string" && value === sourceValue && sourceValue.length <= 24) return true;
   if (STRICT_LANGUAGES.has(lang)) return false;
+  if (FOREIGN_SCRIPTS.test(value)) return false;
   if (typeof sourceValue === "string" && value !== sourceValue) return true;
   return false;
 }
