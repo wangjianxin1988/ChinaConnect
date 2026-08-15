@@ -869,4 +869,18 @@ for lang in LANGS:
   - ja 抽查（dining/payment/communication/transport/etiquette）：可见区全日语（四川料理/支付宝（アリペイ）/中国移動 等），英文仅在 meta/JSON-LD。
   - `pnpm typecheck` ✅ 0 错误；`node scripts/check-i18n.mjs` ✅ 12/12、0 缺失。
 - **说明**：EN legacy 无前缀路由（`/city/suzhou/sim/` 等 section 页）404 为既有设计——EN 城市页只链锚点 `#transport` 等，无用户断链；Phase 5 验收时若按 432 URL 标准需专门处理。
-- **下个会话**：Phase 2 开始——先修 `verify_data_i18n.mjs` 的 fr/de/vi isTranslated 误判 bug，再按 ko→zh-CN→zh-TW→th→vi→ru→fr→de→ar→fa 顺序补 10 语言城市数据层（~3.4 万字段，DeepSeek ≤3 并发 + 缓存）。
+- **下个会话**：Phase 2 开始——先修 `verify_data_i18n.mjs` 的 fr/de/vi isTranslated 误判 bug，再按 ko→zh-CN→zh-TW→th→vi→ru→fr→de→ar→fa 顺序补 10 语言城市数据层（~3.4 万字段，DeepSeek ≤3 并发 + 缓存）。---
+
+### 2026-08-16 会话 #11（Phase 2 开工：DeepSeek 通道 + CJK 语言完成）
+
+- **起**：用户拍板按 PLAN-2026-08-16.md 执行并开目标模式；要求合适节点写交接文档、不要大错误。MiniMax Token Plan 用量已达上限（429），DeepSeek/DashScope 双通道可用。
+- **关键改动（已提交）**：
+  - `471de3e` 修复 fr/de/vi isTranslated 误判（精确重音集 + 外来文字否决）
+  - `7e57a1a` provider 抽象：`scripts/lib/translate-provider.mjs`（TRANSLATE_PROVIDER=deepseek|dashscope|...，自动检测 DEEPSEEK→DASHSCOPE→MiniMax），`translate-data-fast.mjs` 改走新 provider + 指数退避
+  - `6aecb21` zh-CN 全量完成：35/35 城、3505 字段、verify 0 残留、复跑 0 待译
+  - `0b1b7a3` zh-TW 全量完成：35/35 城、6066 字段 + zhconv 繁化（`scripts/fix-zh-tw-traditional.py`，`uv run --no-project --with zhconv`，17155 处转繁）、verify 0 残留
+  - 新增 `scripts/run-language-chain.mjs`（多语言串行链）、`scripts/build-guide-strings.mjs`（guide 全量字符串抽取，4891 唯一可译）、`scripts/translate-guide-strings.mjs`（guide override 生成）、`scripts/translate-apps-emergency.mjs`（Phase 4）
+- **运行中（未提交，勿动这些文件）**：ko（~18/35）、th（~10/35）、vi（~7/35）三路并行 DeepSeek 翻译，每语言完成→verify→git 提交→启动下一语言。
+- **发现**：ja-overrides.ts 其实含 2365 个英文键 + 1551 个中文键（共 3916），不是纯中文键；Phase 3 方案 = 每语言 4891 键全量字典。
+- **验证命令**：`node .audit/verify_data_i18n.mjs --lang=xx`；翻译脚本复跑输出全 `.` 即 0 待译；zh-TW 再跑 `uv run --no-project --with zhconv python scripts/fix-zh-tw-traditional.py` 确认 changed=0。
+- **下个会话**：继续按 ko→th→vi→ru→fr→de→ar→fa 顺序推进 Phase 2；随后 Phase 3（guide 10 语言 override + guide-i18n.tsx 接线）、Phase 4（apps/emergency override + offline.astro data-i18n + locales fa.json/zh-TW 映射）、Phase 5（每语言 432 URL 残留扫描，以 ja 页 CJK 片段为基线对比）、Phase 6（typecheck/check-i18n/build + 本日志更新）。
