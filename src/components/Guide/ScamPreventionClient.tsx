@@ -117,7 +117,6 @@ export function ScamPreventionClient({ lang = "en" }: { lang?: Language } = {}) 
                   <div className="flex items-center gap-2">
                     <span className="text-xl">🚩</span>
                     <span className="font-semibold">{lang === "ja" ? "警告サイン" : "Warning Signs"}</span>
-                    {lang !== "ja" && <span className="text-muted-foreground">/ 警示特征</span>}
                   </div>
                   <span className="text-muted-foreground">
                     {expandedSections.signs ? "▲" : "▼"}
@@ -153,7 +152,6 @@ export function ScamPreventionClient({ lang = "en" }: { lang?: Language } = {}) 
                   <div className="flex items-center gap-2">
                     <span className="text-xl">🛡️</span>
                     <span className="font-semibold">{lang === "ja" ? "予防方法" : "Prevention"}</span>
-                    {lang !== "ja" && <span className="text-muted-foreground">/ 预防方法</span>}
                   </div>
                   <span className="text-muted-foreground">
                     {expandedSections.prevention ? "▲" : "▼"}
@@ -189,7 +187,6 @@ export function ScamPreventionClient({ lang = "en" }: { lang?: Language } = {}) 
                   <div className="flex items-center gap-2">
                     <span className="text-xl">📋</span>
                     <span className="font-semibold">{lang === "ja" ? "対処方法" : "What To Do"}</span>
-                    {lang !== "ja" && <span className="text-muted-foreground">/ 应对方法</span>}
                   </div>
                   <span className="text-muted-foreground">
                     {expandedSections.whatToDo ? "▲" : "▼"}

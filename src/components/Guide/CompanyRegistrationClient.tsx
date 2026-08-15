@@ -146,7 +146,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
                         {/* Documents */}
                         <div>
                           <h5 className="font-semibold mb-2 text-sm">
-                            📄 {lang === "ja" ? "必要書類" : "Required Documents / 所需材料"}
+                            📄 {lang === "ja" ? "必要書類" : "Required Documents"}
                           </h5>
                           <div className="grid md:grid-cols-2 gap-2">
                             {step.documents.map((doc, idx) => (
@@ -160,7 +160,7 @@ export function CompanyRegistrationClient({ lang = "en" }: { lang?: string }) {
 
                         {/* Tips */}
                         <div>
-                          <h5 className="font-semibold mb-2 text-sm">💡 {lang === "ja" ? "プロのヒント" : "Pro Tips / 专业提示"}</h5>
+                          <h5 className="font-semibold mb-2 text-sm">💡 {lang === "ja" ? "プロのヒント" : "Pro Tips"}</h5>
                           <ul className="space-y-1">
                             {lang !== "ja" && step.tips.map((tip, idx) => (
                               <li

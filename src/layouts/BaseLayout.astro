@@ -69,7 +69,7 @@ function localeFor(code: string): string {
 }
 const currentOgLocale = localeFor(lang);
 
-const translationsJson = JSON.stringify(translations);
+const translationsJson = JSON.stringify({ [lang]: (translations as any)[lang] || translations.en });
 const supportedLanguagesJson = JSON.stringify(SUPPORTED_LANGUAGES);
 const supabaseUrlJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_URL || "");
 const supabaseAnonKeyJson = JSON.stringify(import.meta.env.PUBLIC_SUPABASE_ANON_KEY || "");

@@ -72,7 +72,8 @@ export function RestaurantCard({ restaurant, compact = false, lang = "en" }: Res
   const displayName = isCJK && restaurant.name
     ? restaurant.name
     : (localised || restaurant.nameEn || restaurant.name);
-  const secondaryName = (displayName === restaurant.nameEn) ? restaurant.name : restaurant.nameEn;
+  const showSecondary = lang === "zh-CN" || lang === "zh-TW" || lang === "ja";
+  const secondaryName = showSecondary ? ((displayName === restaurant.nameEn) ? restaurant.name : restaurant.nameEn) : "";
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 flex flex-col">
       {/* Hero Image / Placeholder */}

@@ -50,7 +50,7 @@ const initialHotels = initialCategory
   : hotels;
 
 const pageTitle = initialCategory
-  ? `${city.nameEn} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelZh} Hotels | ChinaConnect`
+  ? `${city.nameEn} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelEn} Hotels | ChinaConnect`
   : `${city.nameEn} Hotels - All Categories | ChinaConnect`;
 const totalFiltered = initialHotels.length;
 const pageDescription = initialCategory
@@ -62,7 +62,7 @@ const pageDescription = initialCategory
   title={pageTitle}
   description={pageDescription}
   meta={{
-    keywords: [city.nameEn, city.name, `${city.nameEn} hotels`, `${city.nameEn} accommodation`, "luxury hotels", "budget hotels", "hostels", "esports hotels"],
+    keywords: [city.nameEn, `${city.nameEn} hotels`, `${city.nameEn} accommodation`, "luxury hotels", "budget hotels", "hostels", "esports hotels"],
   }}
   lang={lang}
 >
@@ -120,7 +120,7 @@ const pageDescription = initialCategory
     <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {initialHotels.map((hotel) => (
         <div class="hotel-item" data-category={hotel.category}>
-          <HotelCard hotel={{ ...hotel, imageUrl: hotel.image }} lang={lang} client:visible />
+          <HotelCard hotel={{ ...hotel, name: hotel.nameEn || hotel.name, nameEn: undefined, cityZh: undefined, imageUrl: hotel.image }} lang={lang} client:visible />
         </div>
       ))}
     </div>

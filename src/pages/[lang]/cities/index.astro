@@ -6,7 +6,7 @@ export function getStaticPaths() {
 }
 
 import { CitiesListClient } from "@/components/city/CitiesListClient";
-import { cities, citiesMeta } from "@/data/cities/index";
+import { citiesMeta } from "@/data/cities/index";
 import { getCityData } from "@/data/cities-i18n";
 import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -82,6 +82,6 @@ const _lookup = (key) => {
       <p class="text-gray-600" data-i18n="cities.subtitle">{_lookup("cities.subtitle")}</p>
     </div>
 
-    <CitiesListClient citiesMeta={i18nCitiesMeta} citiesData={cities} lang={lang} i18n={t} client:load />
+    <CitiesListClient citiesMeta={i18nCitiesMeta.map((m) => ({ ...m, nameZh: (lang === "zh-CN" || lang === "zh-TW" || lang === "ja") ? m.nameZh : m.name }))} lang={lang} i18n={t} client:load />
   </main>
 </BaseLayout>

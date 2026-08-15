@@ -32,22 +32,22 @@ export const NATIONAL_EMERGENCY_NUMBERS: EmergencyNumber[] = [
   {
     phone: "+86-10-12308",
     shortCode: "12308",
-    name: "領事保護ホットライン",
+    name: "Consular Protection Hotline",
     nameJa: "領事保護ホットライン",
     nameZh: "外交部领事保护热线",
     description:
-      "中国にいる外国人向けの24時間ホットライン。パスポート紛失、逮捕、事故、その他領事関係のサポートが必要な時にご利用ください。",
+      "24-hour consular protection hotline for foreigners in China. Call for lost passports, arrest, accidents, or other consular support.",
     descriptionJa: "中国にいる外国人向けの24時間ホットライン。パスポート紛失、逮捕、事故、その他領事関係のサポートが必要な時にご利用ください。",
     icon: "🛂",
     international: true,
   },
   {
     phone: "+86-10-65680000",
-    name: "中国外交部 24時間サービス",
+    name: "Ministry of Foreign Affairs 24-hour Service",
     nameJa: "中国外交部 24時間サービス",
     nameZh: "外交部 24 小时服务",
     description:
-      "Chinese Ministry of Foreign Affairs 24時間サービス回線。",
+      "24-hour service line of the Chinese Ministry of Foreign Affairs.",
     descriptionJa: "中国外交部の24時間サービス回線。",
     icon: "🏛️",
     international: true,

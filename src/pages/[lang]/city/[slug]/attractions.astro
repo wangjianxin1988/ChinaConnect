@@ -5,7 +5,7 @@ import { getCityData } from "@/data/cities-i18n";
 import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { entityDisplayName, entitySecondaryName } from "@/lib/city-name";
+import { entityDisplayName, entitySecondaryName, pruneCityEntityNames } from "@/lib/city-name";
 
 export function getStaticPaths() {
   const langs = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
@@ -14,7 +14,10 @@ export function getStaticPaths() {
 
 const { slug, lang: paramLang } = Astro.params;
 const lang = (paramLang as string) || "en";
-const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
+const city = pruneCityEntityNames(
+  getCityData(slug as string, lang) || getCityBySlug(slug as string),
+  lang,
+);
 
 if (!city) {
   return Astro.redirect("/404");
@@ -136,7 +139,7 @@ const CAT_LABELS: Record<string, Record<string, string>> = {
         <div
           class="attraction-card bg-white border border-gray-100 rounded-xl overflow-hidden card-hover"
           data-category={attraction.category}
-          data-name={`${attraction.nameEn} ${attraction.name}`.toLowerCase()}
+          data-name={`${attraction.nameEn}${attraction.name !== attraction.nameEn ? ` ${attraction.name}` : ""}`.toLowerCase()}
         >
           {/* Image */}
           {attraction.image && (

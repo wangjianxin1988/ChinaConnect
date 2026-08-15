@@ -123,8 +123,8 @@ function HighlightCard({ restaurant, highlightTag, lang = "en" }: HighlightCardP
           className={`px-2 py-0.5 rounded-full text-xs font-medium border ${getBadgeClass(restaurant.type)}`}
         >
           {getBadgeLabel(restaurant.type, lang)}
-          {restaurant.type === "michelin" && restaurant.star ? `${restaurant.star}星` : ""}
-          {restaurant.type === "blackpearl" && restaurant.diamond ? `${restaurant.diamond}${lang === "ja" ? "ダイヤ" : "钻"}` : ""}
+          {restaurant.type === "michelin" && restaurant.star ? `${restaurant.star}${lang === "zh-CN" || lang === "zh-TW" || lang === "ja" || lang === "ko" ? "星" : "★"}` : ""}
+          {restaurant.type === "blackpearl" && restaurant.diamond ? `${restaurant.diamond}${lang === "ja" ? "ダイヤ" : lang === "zh-CN" || lang === "zh-TW" ? "钻" : "◆"}` : ""}
         </span>
         <span className="text-gray-400 text-xs">{restaurant.cuisine}</span>
       </div>
@@ -134,7 +134,7 @@ function HighlightCard({ restaurant, highlightTag, lang = "en" }: HighlightCardP
         <div>
           <span className="text-gray-500">¥</span>
           <span className="font-semibold text-gray-900">{restaurant.avgPrice}</span>
-          <span className="text-gray-400">/人</span>
+          <span className="text-gray-400">{ct(lang, "avg_per_person_suffix", "/person")}</span>
         </div>
         {restaurant.rating && (
           <div className="text-yellow-500 font-medium">★ {restaurant.rating}</div>

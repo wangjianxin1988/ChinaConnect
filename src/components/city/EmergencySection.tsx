@@ -30,6 +30,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "Government Service",
     trafficPoliceService: "Traffic Police Service",
     notePrefix: "Note:",
+    shortCodeInside: "(Inside China: {code})",
+    callAriaSuffix: " - call ",
   },
   ja: {
     emergencyTitle: "緊急番号",
@@ -46,6 +48,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "政府サービス",
     trafficPoliceService: "交警サービス",
     notePrefix: "注意：",
+    shortCodeInside: "（中国国内: {code}）",
+    callAriaSuffix: "）に電話",
   },
   ko: {
     emergencyTitle: "비상 번호",
@@ -62,6 +66,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "정부 서비스",
     trafficPoliceService: "교통 경찰 서비스",
     notePrefix: "참고:",
+    shortCodeInside: "(중국 내: {code})",
+    callAriaSuffix: "에 전화",
   },
   "zh-CN": {
     emergencyTitle: "紧急号码",
@@ -78,6 +84,9 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "政府服务",
     trafficPoliceService: "交警服务",
     notePrefix: "注意：",
+    shortCodeInside: "(中国境内: {code})",
+    callAriaSuffix: " 电话",
+
   },
   "zh-TW": {
     emergencyTitle: "緊急號碼",
@@ -94,6 +103,9 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "政府服務",
     trafficPoliceService: "交警服務",
     notePrefix: "注意：",
+    shortCodeInside: "(中國境內: {code})",
+    callAriaSuffix: " 電話",
+
   },
   th: {
     emergencyTitle: "หมายเลขฉุกเฉิน",
@@ -110,6 +122,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "บริการภาครัฐ",
     trafficPoliceService: "บริการตำรวจจราจร",
     notePrefix: "หมายเหตุ:",
+    shortCodeInside: "(ภายในจีน: {code})",
+    callAriaSuffix: " โทร ",
   },
   vi: {
     emergencyTitle: "Số khẩn cấp",
@@ -126,6 +140,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "Dịch vụ chính phủ",
     trafficPoliceService: "Dịch vụ cảnh sát giao thông",
     notePrefix: "Lưu ý:",
+    shortCodeInside: "(Tại Trung Quốc: {code})",
+    callAriaSuffix: " gọi ",
   },
   ru: {
     emergencyTitle: "Экстренные номера",
@@ -142,6 +158,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "Государственная служба",
     trafficPoliceService: "Дорожная полиция",
     notePrefix: "Примечание:",
+    shortCodeInside: "(в Китае: {code})",
+    callAriaSuffix: " позвонить ",
   },
   fr: {
     emergencyTitle: "Numéros d\u2019urgence",
@@ -158,6 +176,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "Service gouvernemental",
     trafficPoliceService: "Service de police de la route",
     notePrefix: "Note :",
+    shortCodeInside: "(en Chine : {code})",
+    callAriaSuffix: " appeler ",
   },
   de: {
     emergencyTitle: "Notrufnummern",
@@ -174,6 +194,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "Regierungsdienst",
     trafficPoliceService: "Verkehrspolizei",
     notePrefix: "Hinweis:",
+    shortCodeInside: "(in China: {code})",
+    callAriaSuffix: " anrufen ",
   },
   ar: {
     emergencyTitle: "أرقام الطوارئ",
@@ -190,6 +212,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "الخدمة الحكومية",
     trafficPoliceService: "خدمة شرطة المرور",
     notePrefix: "ملاحظة:",
+    shortCodeInside: "(داخل الصين: {code})",
+    callAriaSuffix: " اتصل ",
   },
   fa: {
     emergencyTitle: "شماره‌های اضطراری",
@@ -206,6 +230,8 @@ const STRINGS: Record<string, Record<string, string>> = {
     governmentService: "خدمات دولتی",
     trafficPoliceService: "خدمات پلیس راهنمایی و رانندگی",
     notePrefix: "توجه:",
+    shortCodeInside: "(داخل چین: {code})",
+    callAriaSuffix: " تماس ",
   },
 };
 
@@ -224,7 +250,7 @@ function NationalEmergencyCard({ item, lang = "en" }: { item: EmergencyNumber; l
     <a
       href={telHref}
       className="flex items-start gap-3 p-4 bg-white border border-blue-100 rounded-xl hover:border-blue-300 hover:shadow-sm transition-all"
-      aria-label={`${lang === "ja" ? item.nameJa || item.name : item.name}（${item.phone}）に電話`}
+      aria-label={`${lang === "ja" ? item.nameJa || item.name : item.name}${tt(lang, "callAriaSuffix", " - call ")}${item.phone}`}
     >
       <span className="text-2xl shrink-0" aria-hidden>
         {item.icon}
@@ -240,7 +266,7 @@ function NationalEmergencyCard({ item, lang = "en" }: { item: EmergencyNumber; l
         <div className="flex items-center gap-2 mt-2">
           <span className="text-lg font-bold text-blue-700">{item.phone}</span>
           {item.shortCode && (
-            <span className="text-xs text-gray-500">（中国国内: {item.shortCode}）</span>
+            <span className="text-xs text-gray-500">{tt(lang, "shortCodeInside", "(Inside China: {code})").replace("{code}", item.shortCode)}</span>
           )}
         </div>
       </div>

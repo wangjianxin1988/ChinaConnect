@@ -66,7 +66,8 @@ export function EmergencyCard({ contact, compact = false, lang = "en" }: Emergen
   const displayName = isCJK && contact.name
     ? contact.name
     : (localised || contact.nameEn || contact.name);
-  const secondaryName = (displayName === contact.nameEn) ? contact.name : contact.nameEn;
+  const showSecondary = lang === "zh-CN" || lang === "zh-TW" || lang === "ja";
+  const secondaryName = showSecondary ? ((displayName === contact.nameEn) ? contact.name : contact.nameEn) : "";
 
   return (
     <div className="bg-white border border-gray-100 rounded-xl p-4 hover:shadow-md transition-shadow">

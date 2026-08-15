@@ -20,12 +20,11 @@ interface CityMeta {
 
 interface CitiesListClientProps {
   citiesMeta: CityMeta[];
-  citiesData: City[];
   lang?: string;
   i18n?: Record<string, any>;
 }
 
-export function CitiesListClient({ citiesMeta, citiesData, lang = "en", i18n = {} }: CitiesListClientProps) {
+export function CitiesListClient({ citiesMeta, lang = "en", i18n = {} }: CitiesListClientProps) {
   const JA_REGIONS: Record<string, string> = { 华北: "華北", 长三角: "長江デルタ", 珠三角: "珠江デルタ", 西北: "西北", 西南: "西南", 华南: "華南", 云南: "雲南", 福建: "福建", 山东: "山東", 湖南: "湖南", 海南: "海南", 华中: "華中", 东北: "東北", 中原: "中原", 内蒙古: "内モンゴル", 青海: "青海", 华东: "華東" };
   const regionName = (r: string) =>
     lang === "ja" ? JA_REGIONS[r] || r
@@ -75,7 +74,6 @@ export function CitiesListClient({ citiesMeta, citiesData, lang = "en", i18n = {
   const citiesWithTier = useMemo(() => {
     return citiesMeta.map((meta) => {
       const tierMeta = S_TIER_CITIES[meta.slug];
-      const cityData = citiesData.find((c) => c.slug === meta.slug);
       const dbScore = cityScores[meta.slug];
 
       return {
@@ -84,7 +82,7 @@ export function CitiesListClient({ citiesMeta, citiesData, lang = "en", i18n = {
         priority: tierMeta?.priority || 999,
         region: tierMeta?.region || "Other",
         tags: tierMeta?.tags || [],
-        coverImage: cityData?.coverImage,
+        coverImage: meta.coverImage,
         compositeScore: dbScore?.compositeScore ?? tierMeta?.compositeScore,
         overallRank: dbScore?.rank ?? tierMeta?.overallRank,
         economyScore: dbScore?.economyScore,
@@ -93,7 +91,7 @@ export function CitiesListClient({ citiesMeta, citiesData, lang = "en", i18n = {
         livabilityScore: dbScore?.livabilityScore,
       };
     });
-  }, [citiesMeta, citiesData, cityScores]);
+  }, [citiesMeta, cityScores]);
 
   // Reset visible count when filters/search change
   useEffect(() => {

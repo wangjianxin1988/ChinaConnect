@@ -304,10 +304,10 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                   }`}
                 >
                   {tpl.language === "bilingual"
-                    ? "Bilingual / 双语"
+                    ? (lang === "zh-CN" || lang === "zh-TW" ? "双语" : lang === "ja" ? "バイリンガル" : "Bilingual")
                     : tpl.language === "en"
                       ? "English"
-                      : "中文"}
+                      : (lang === "zh-CN" || lang === "zh-TW" ? "中文" : lang === "ja" ? "中国語" : "Chinese")}
                 </span>
               </div>
             </button>
@@ -364,7 +364,7 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                 }`}
               >
-                {previewMode ? "Edit / 编辑" : "Preview / 预览"}
+                {previewMode ? (lang === "zh-CN" || lang === "zh-TW" ? "编辑" : lang === "ja" ? "編集" : "Edit") : (lang === "zh-CN" || lang === "zh-TW" ? "预览" : lang === "ja" ? "プレビュー" : "Preview")}
               </button>
             </div>
           </div>
@@ -433,15 +433,15 @@ export function InvitationLetterClient({ lang = "en" }: { lang?: Language } = {}
           <span>💡</span><Bi en="Important Tips for Visa Applications" zh="签证申请重要提示" lang={lang} /></h4>
         <ul className="space-y-2 text-sm text-amber-800">
           <li>
-            • Include the company registration number (统一社会信用代码) — required by most
+            • Include the company registration number (unified social credit code) — required by most
             embassies
           </li>
-          <li>• Have the letter signed by an authorized person with company seal (公章)</li>
+          <li>• Have the letter signed by an authorized person with company seal</li>
           <li>• Both English and Chinese versions are recommended for the Chinese embassy</li>
           <li>• Keep a scanned PDF copy and original for your visa interview</li>
         </ul>
         <p className="text-xs text-amber-600 mt-3">
-          提示：大多数使领馆要求包含统一社会信用代码。邀请函须由授权签字人签字并加盖公司公章。
+          {lang === "ja" ? "ヒント：多くの大使館・領事館は統一社会信用コードの記載を求めます。招待状は権限のある署名者が署名し、会社印を押印する必要があります。" : "Tip: Most embassies require the unified social credit code. The letter must be signed by an authorized signatory and stamped with the company seal."}
         </p>
       </div>
     </div>

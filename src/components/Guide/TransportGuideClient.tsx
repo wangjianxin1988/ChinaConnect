@@ -91,7 +91,7 @@ export function TransportGuideClient({ lang = "en" }: TransportGuideClientProps 
                   )}
                   <div className="bg-slate-50 rounded-lg p-4">
                     <h4 className="font-medium mb-2 flex items-center gap-2">
-                      <span>📋</span> {lang === "ja" ? "手順" : "步骤"}
+                      <span>📋</span> {lang === "ja" ? "手順" : "Steps"}
                     </h4>
                     <ul className="space-y-2">
                       {step.detailsCn.map((detail, i) => (

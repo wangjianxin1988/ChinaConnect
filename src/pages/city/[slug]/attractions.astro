@@ -1,6 +1,7 @@
 ﻿---
 
 import { getCityBySlug, citySlugs } from "@/data/cities/index";
+import { pruneCityEntityNames } from "@/lib/city-name";
 import { getCityData } from "@/data/cities-i18n";
 import { getLangFromUrl } from "@/i18n/utils";
 import { translations } from "@/i18n/translations";
@@ -12,7 +13,10 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const lang = getLangFromUrl(Astro.url);
-const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
+const city = pruneCityEntityNames(
+  getCityData(slug as string, lang) || getCityBySlug(slug as string),
+  lang,
+);
 
 if (!city) {
   return Astro.redirect("/404");
@@ -121,7 +125,7 @@ const _lookup = (key) => {
         <div
           class="attraction-card bg-white border border-gray-100 rounded-xl overflow-hidden card-hover"
           data-category={attraction.category}
-          data-name={`${attraction.nameEn} ${attraction.name}`.toLowerCase()}
+          data-name={`${attraction.nameEn}${attraction.name !== attraction.nameEn ? ` ${attraction.name}` : ""}`.toLowerCase()}
         >
           {/* Image */}
           {attraction.image && (

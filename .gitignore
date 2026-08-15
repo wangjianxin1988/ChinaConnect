@@ -104,3 +104,8 @@ build-output.txt
 .audit/*.html
 .audit/*.json
 *.bak*
+
+# Throwaway python debug scripts
+_*.py
+.audit/guide-cjk-lines.txt
+

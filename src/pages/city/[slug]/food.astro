@@ -7,6 +7,7 @@ import type { Restaurant } from "@/data/cities/types";
 import { getLangFromUrl } from "@/i18n/utils";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { pruneCityEntityNames } from "@/lib/city-name";
 
 export function getStaticPaths() {
   return citySlugs.map((slug) => ({ params: { slug } }));
@@ -14,7 +15,10 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const lang = getLangFromUrl(Astro.url);
-const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
+const city = pruneCityEntityNames(
+  getCityData(slug as string, lang) || getCityBySlug(slug as string),
+  lang,
+);
 
 if (!city) {
   return Astro.redirect("/404");
@@ -35,7 +39,7 @@ const filterGroups: FilterGroup[] = buildFilterGroups(allRestaurants);
 const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGroups[0];
 
 const pageTitle = (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? "Restaurants in " + localCityName + " - ChinaConnect";
-const pageDescription = `${city.nameEn} (${city.name}) Food Guide: complete Michelin, Black Pearl, and local picks`;
+const pageDescription = `${localCityName} Food Guide: complete Michelin, Black Pearl, and local picks`;
 
 function getBadgeClass(type: Restaurant["type"]) {
   if (type === "michelin") return "badge-michelin";
@@ -64,7 +68,7 @@ const _lookup = (key) => {
   title={pageTitle}
   description={pageDescription}
   meta={{
-    keywords: [city.nameEn, city.name, `${city.nameEn} food`, `${city.nameEn} restaurants`, "Michelin", "Black Pearl", "local food"],
+    keywords: [city.nameEn, ...(lang === "zh-CN" || lang === "zh-TW" || lang === "ja" ? [city.name] : []), `${city.nameEn} food`, `${city.nameEn} restaurants`, "Michelin", "Black Pearl", "local food"],
   }}
   lang={lang}
 >
@@ -112,7 +116,7 @@ const _lookup = (key) => {
             <button
               data-filter={group.id}
               data-filter-icon={group.icon}
-              data-filter-label={group.labelZh}
+              data-filter-label={filterLabel}
               data-city-slug={city.slug}
               class={`
                 flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all filter-btn

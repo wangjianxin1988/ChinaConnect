@@ -143,7 +143,6 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
           <span className="text-2xl">🚕</span>
           <div>
             <h2 className="font-semibold text-lg">{lang === "ja" ? "タクシーメーターの解説" : "Taxi Meter Tutorial"}</h2>
-            {lang !== "ja" && <p className="text-sm text-muted-foreground">出租车计价器教程</p>}
           </div>
         </div>
         <div className="p-6">
@@ -154,28 +153,28 @@ export function PriceTransparencyClient({ lang = "en" }: { lang?: Language } = {
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">1.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "初乗り料金" : "Base Fare (起步价)"}</p>
+                    <p className="font-medium">{lang === "ja" ? "初乗り料金" : "Base Fare"}</p>
                     <p className="text-muted-foreground">{lang === "ja" ? "最初の3kmで通常¥10〜14" : "Usually ¥10-14 for first 3km"}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">2.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "距離料金" : "Distance Rate (里程费)"}</p>
+                    <p className="font-medium">{lang === "ja" ? "距離料金" : "Distance Rate"}</p>
                     <p className="text-muted-foreground">{lang === "ja" ? "基本料金超過後、1kmあたり¥2〜3" : "¥2-3 per km after base"}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">3.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "待機料金" : "Waiting Rate (等候费)"}</p>
+                    <p className="font-medium">{lang === "ja" ? "待機料金" : "Waiting Rate"}</p>
                     <p className="text-muted-foreground">{lang === "ja" ? "待機5分ごとに¥2〜3" : "¥2-3 per 5 minutes of waiting"}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-primary font-bold">4.</span>
                   <div>
-                    <p className="font-medium">{lang === "ja" ? "深夜料金" : "Night Rate (夜间费)"}</p>
+                    <p className="font-medium">{lang === "ja" ? "深夜料金" : "Night Rate"}</p>
                     <p className="text-muted-foreground">{lang === "ja" ? "23時〜6時：10〜20%割増" : "11PM-6AM: 10-20% higher"}</p>
                   </div>
                 </div>

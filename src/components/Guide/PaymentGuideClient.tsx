@@ -189,7 +189,7 @@ export function PaymentGuideClient({ lang = "en" }: PaymentGuideClientProps = {}
           {/* Tax Refund Info */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
             <h3 className="font-semibold flex items-center gap-2">
-              <span>💰</span> {lang === "ja" ? "VAT税還付（付加価値税還付）" : "VAT Tax Refund (增值税退税)"}
+              <span>💰</span> {lang === "ja" ? "VAT税還付（付加価値税還付）" : "VAT Tax Refund"}
             </h3>
             <ul className="mt-2 space-y-2 text-sm">
               <li className="flex items-start gap-2">

@@ -34,13 +34,12 @@ const pageDescription = translations.en.guidePage?.attractionsDescription || "Di
               city.slug === 'xian' ? 'from-orange-500 to-red-600' :
               'from-green-500 to-teal-600'
             } flex items-center justify-center text-white font-bold`}>
-              {city.nameZh[0]}
+              {city.name[0]?.toUpperCase()}
             </div>
             <div>
               <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                 {city.name}
               </h3>
-              <p class="text-sm text-gray-500">{city.nameZh}</p>
             </div>
           </div>
           <p class="text-gray-600 text-sm">{city.description}</p>

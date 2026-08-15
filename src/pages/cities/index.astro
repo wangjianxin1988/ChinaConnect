@@ -1,7 +1,7 @@
 ---
 
 import { CitiesListClient } from "@/components/city/CitiesListClient";
-import { cities, citiesMeta } from "@/data/cities/index";
+import { citiesMeta } from "@/data/cities/index";
 import { translations } from "@/i18n/translations";
 import { getLangFromUrl } from "@/i18n/utils";
 import BaseLayout from "@/layouts/BaseLayout.astro";
@@ -43,6 +43,6 @@ const citiesSchemas = [
       <p class="text-gray-600" data-i18n="cities.subtitle">Discover the best of China with our comprehensive city guides</p>
     </div>
 
-    <CitiesListClient citiesMeta={citiesMeta} citiesData={cities} client:load />
+    <CitiesListClient citiesMeta={citiesMeta.map((m) => ({ ...m, nameZh: (lang === "zh-CN" || lang === "zh-TW" || lang === "ja") ? m.nameZh : m.name }))} client:load />
   </main>
 </BaseLayout>

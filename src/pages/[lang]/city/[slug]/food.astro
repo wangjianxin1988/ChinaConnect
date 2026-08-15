@@ -7,7 +7,7 @@ import type { Restaurant } from "@/data/cities/types";
 import { ct } from "@/i18n/components-strings";
 import { translations } from "@/i18n/translations";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { entityDisplayName, entitySecondaryName } from "@/lib/city-name";
+import { entityDisplayName, entitySecondaryName, pruneCityEntityNames } from "@/lib/city-name";
 
 export function getStaticPaths() {
   const langs = ["en", "ja", "ko", "zh-CN", "zh-TW", "th", "vi", "ru", "fr", "de", "ar", "fa"] as const;
@@ -16,7 +16,10 @@ export function getStaticPaths() {
 
 const { slug, lang: paramLang } = Astro.params;
 const lang = (paramLang as string) || "en";
-const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
+const city = pruneCityEntityNames(
+  getCityData(slug as string, lang) || getCityBySlug(slug as string),
+  lang,
+);
 
 if (!city) {
   return Astro.redirect("/404");
@@ -40,7 +43,7 @@ const currentFilter = filterGroups.find(g => g.id === filterParam) || filterGrou
 const pageTitle = (translations[lang] || translations.en).cityFood?.title?.replace("{city}", localCityName) + " - ChinaConnect" ?? "Restaurants in " + localCityName + " - ChinaConnect";
 const pageDescription = lang === "ja"
   ? `${localCityName}のグルメガイド：ミシュラン、ブラックパール、地元の人気店を網羅`
-  : `${city.nameEn} (${city.name}) Food Guide: complete Michelin, Black Pearl, and local picks`;
+  : `${localCityName} Food Guide: complete Michelin, Black Pearl, and local picks`;
 
 function getBadgeClass(type: Restaurant["type"]) {
   if (type === "michelin") return "badge-michelin";
@@ -64,7 +67,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
   title={pageTitle}
   description={pageDescription}
   meta={{
-    keywords: [city.nameEn, city.name, `${city.nameEn} food`, `${city.nameEn} restaurants`, "Michelin", "Black Pearl", "local food"],
+    keywords: [city.nameEn, ...(lang === "zh-CN" || lang === "zh-TW" || lang === "ja" ? [city.name] : []), `${city.nameEn} food`, `${city.nameEn} restaurants`, "Michelin", "Black Pearl", "local food"],
   }}
   lang={lang}
 >
@@ -112,7 +115,7 @@ function getBadgeLabel(type: Restaurant["type"], lang: string) {
             <button
               data-filter={group.id}
               data-filter-icon={group.icon}
-              data-filter-label={group.labelZh}
+              data-filter-label={filterLabel}
               data-city-slug={city.slug}
               class={`
                 flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all filter-btn

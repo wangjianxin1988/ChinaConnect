@@ -7,12 +7,16 @@ import { JA_GUIDE_OVERRIDES } from "@/data/guide/ja-overrides";
 export function jaText(zh: string | undefined, lang?: string): string {
   if (!zh) return "";
   if (lang === "ja") return JA_GUIDE_OVERRIDES[zh] || zh;
+  if (lang === "en") return ""; // English pages must not show Chinese
   return zh;
 }
 
 export function Bi({ en, zh, lang }: { en: string; zh: string; lang?: string }) {
   if (lang === "ja") {
     return <>{JA_GUIDE_OVERRIDES[zh] || zh}</>;
+  }
+  if (lang === "en") {
+    return <>{en}</>;
   }
   return <>{en} / {zh}</>;
 }

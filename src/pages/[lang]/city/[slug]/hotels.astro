@@ -35,6 +35,16 @@ const hotels = getHotelsByCity(slug as string, lang);
 const categoryCounts = getHotelCategoryCounts(slug as string, lang);
 const totalCount = getHotelCount(slug as string, lang);
 const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.name;
+// Per-language hotel card props: non-CJK pages get English names, no cityZh.
+const CJK_HOTEL_LANGS = ["zh-CN", "zh-TW", "ja"];
+const hotelCardProps = (h: any) => {
+  const cjk = CJK_HOTEL_LANGS.includes(lang);
+  const primary = cjk ? h.name : h.nameEn || h.name;
+  const secondary = cjk && h.nameEn && h.nameEn !== h.name ? h.nameEn : "";
+  return { ...h, name: primary, nameEn: secondary || undefined, cityZh: undefined, imageUrl: h.image || h.imageUrl };
+};
+const hotelKeywords = [city.nameEn, `${city.nameEn} hotels`, `${city.nameEn} accommodation`, "luxury hotels", "budget hotels", "hostels", "esports hotels"].concat(CJK_HOTEL_LANGS.includes(lang) ? [city.name] : []);
+
 
 
 // Read ?category= from URL so users landing from a category card on the city
@@ -59,13 +69,14 @@ const pageDescription = initialCategory
   ? (lang === "ja" ? `${localCityName}の${HOTEL_CATEGORY_CONFIG[initialCategory].labels && HOTEL_CATEGORY_CONFIG[initialCategory].labels.ja || HOTEL_CATEGORY_CONFIG[initialCategory].labelEn}ホテル${totalFiltered}軒を閲覧。地図APPで開く、tapで電話予約。` : `Browse ${totalFiltered} ${HOTEL_CATEGORY_CONFIG[initialCategory].labelEn} hotels in ${city.nameEn}. Open in map app, tap to call.`)
   : (lang === "ja" ? `${localCityName}で理想的なホテルを見つけよう。ラグジュアリー、ミッドレンジ、バジェット、ホステル、ラブホテル、eスポーツホテルなど全カテゴリー。${hotels.length}件のオプション.` : `Find the perfect hotel in ${city.nameEn}. Browse luxury, mid-range, budget, hostels, and esports hotels. ${hotels.length} options available.`);
 import { ct } from "@/i18n/components-strings";
+import { cityDisplayName } from "@/lib/city-name";
 ---
 
 <BaseLayout
   title={pageTitle}
   description={pageDescription}
   meta={{
-    keywords: [city.nameEn, city.name, `${city.nameEn} hotels`, `${city.nameEn} accommodation`, "luxury hotels", "budget hotels", "hostels", "esports hotels"],
+    keywords: hotelKeywords,
   }}
   lang={lang}
 >
@@ -79,13 +90,13 @@ import { ct } from "@/i18n/components-strings";
       <nav class="mb-4">
         <a href="/" class="text-teal-200 hover:text-white transition-colors" data-i18n="cityPage.home">Home</a>
         <span class="text-teal-300 mx-2">/</span>
-        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{localCityName}</a>
+        <a href={`/city/${city.slug}`} class="text-teal-200 hover:text-white transition-colors">{cityDisplayName(city, lang)}</a>
         <span class="text-teal-300 mx-2">/</span>
         <span class="text-white" data-i18n="cityPage.hotelsHeading">Hotels</span>
       </nav>
 
       <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 flex items-center gap-3">
-        <span>🏨</span> {localCityName} {ct(lang, "hotelsHeading", "Hotels")}
+        <span>🏨</span> {cityDisplayName(city, lang)} {ct(lang, "hotelsHeading", "Hotels")}
       </h1>
       <p class="text-teal-100">{totalCount} {ct(lang,"hotels_count_unit","hotels")} {ct(lang,"hotels_across_label","across")} {Object.keys(categoryCounts).length} {ct(lang,"hotels_categories_label","categories")}</p>
     </div>
@@ -124,7 +135,7 @@ import { ct } from "@/i18n/components-strings";
     <div id="hotel-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {initialHotels.map((hotel) => (
         <div class="hotel-item" data-category={hotel.category}>
-          <HotelCard hotel={{ ...hotel, imageUrl: hotel.image }} lang={lang} client:visible />
+          <HotelCard hotel={hotelCardProps(hotel)} lang={lang} client:visible />
         </div>
       ))}
     </div>

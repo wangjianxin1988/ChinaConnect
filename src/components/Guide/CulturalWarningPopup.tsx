@@ -92,7 +92,7 @@ export function CulturalWarningPopup({
         {/* Actions */}
         <div className="px-4 py-3 bg-black/5 flex items-center justify-between">
           <button onClick={nextWarning} className="text-sm font-medium hover:underline">
-            Next / 下一个 →
+            (lang === "zh-CN" || lang === "zh-TW" ? "下一个 →" : lang === "ja" ? "次へ →" : "Next →")
           </button>
           <button
             onClick={dismiss}

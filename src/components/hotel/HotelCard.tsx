@@ -154,6 +154,9 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
   const config = HOTEL_CATEGORY_CONFIG[hotel.category];
   const priceDisplay = buildPriceDisplay(hotel);
   const catLabel = config.labels?.[lang] || config.labelEn || config.label;
+  const isCJKName = ["zh-CN", "zh-TW", "ja"].includes(lang);
+  const displayName = isCJKName ? hotel.name : hotel.nameEn || hotel.name;
+  const secondaryName = isCJKName && hotel.nameEn && hotel.nameEn !== hotel.name ? hotel.nameEn : "";
 
   return (
     <div
@@ -176,7 +179,7 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
         <div className="relative h-48 overflow-hidden">
           <img
             src={hotel.imageUrl}
-            alt={hotel.name}
+            alt={displayName}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
           />
@@ -193,7 +196,7 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
             <div className="absolute top-3 right-3">
               <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-black/60 text-white backdrop-blur-sm">
                 {priceDisplay}
-                <span className="ml-0.5 text-white/70">/晚</span>
+                <span className="ml-0.5 text-white/70">{ct(lang, "hotel_per_night", "/night")}</span>
               </span>
             </div>
           )}
@@ -230,9 +233,9 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
         <h3
           className={`font-bold text-gray-900 leading-tight ${compact ? "text-base" : "text-lg"}`}
         >
-          {hotel.name}
+          {displayName}
         </h3>
-        {hotel.nameEn && <p className="text-sm text-gray-500 mt-0.5">{hotel.nameEn}</p>}
+        {secondaryName && <p className="text-sm text-gray-500 mt-0.5">{secondaryName}</p>}
 
         {/* Price row (compact / no-image mode) */}
         {(compact || !hotel.imageUrl) && priceDisplay && (
@@ -291,10 +294,10 @@ export function HotelCard({ hotel, onClick, compact = false, lang = "en" }: Hote
             <MapDirectionsLink
               lat={hotel.lat}
               lng={hotel.lng}
-              name={hotel.name}
+              name={displayName}
               address={hotel.address}
               className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-100 transition-colors touch-manipulation"
-             lang="lang"/>
+             lang={lang}/>
           )}
 
           {/* Phone */}

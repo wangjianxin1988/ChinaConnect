@@ -9,6 +9,7 @@ import RestaurantDetail from "@/components/food/RestaurantDetail";
 import { cities } from "@/data/food/cities";
 import { getRestaurantById, restaurants } from "@/data/food/restaurants";
 import { JA_FOOD_OVERRIDES } from "@/data/food/ja-food-overrides";
+import { EN_FOOD_OVERRIDES } from "@/data/food/en-food-overrides";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 
@@ -44,33 +45,36 @@ const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
 
 const jaFood = (t: string | undefined): string =>
   lang === "ja" && t ? JA_FOOD_OVERRIDES[t] || t : (t || "");
+const enFood = (t: string | undefined): string =>
+  lang === "en" && t ? EN_FOOD_OVERRIDES[t] || t : (t || "");
+const displayFood = (t: string | undefined): string => (lang === "en" ? enFood(t) : jaFood(t));
 
 const restaurantDetail = {
   id: restaurant.id,
-  name: jaFood(restaurant.name),
-  name_en: restaurant.nameEn,
-  cuisine: jaFood(restaurant.cuisine),
+  name: lang === "en" ? restaurant.nameEn || restaurant.name : jaFood(restaurant.name),
+  name_en: lang === "en" ? "" : restaurant.nameEn,
+  cuisine: displayFood(restaurant.cuisine),
   rating: restaurant.rating,
   review_count: 0,
   avg_cost: restaurant.avgPrice,
-  address: jaFood(restaurant.address),
-  address_zh: restaurant.addressEn,
+  address: displayFood(restaurant.address),
+  address_zh: lang === "en" ? "" : restaurant.addressEn,
   images: restaurant.imageUrl ? [restaurant.imageUrl] : [],
-  tags: (restaurant.tags || []).map((t) => jaFood(t)),
+  tags: (restaurant.tags || []).map((t) => displayFood(t)),
   michelin_stars: restaurant.star,
   heizhenzhu_rank: restaurant.diamond,
   blogger_recommended: !!restaurant.bloggerName,
-  blogger_name: jaFood(restaurant.bloggerName),
-  opening_hours: restaurant.hours ? { regular: restaurant.hours } : undefined,
+  blogger_name: displayFood(restaurant.bloggerName),
+  opening_hours: restaurant.hours ? { regular: displayFood(restaurant.hours) } : undefined,
   avg_meal_duration: 60,
   booking_required: false,
   phone: restaurant.phone,
-  description: jaFood(restaurant.description),
-  description_zh: restaurant.descriptionEn,
+  description: displayFood(restaurant.description),
+  description_zh: lang === "en" ? "" : restaurant.descriptionEn,
 };
 ---
 
-<BaseLayout title={lang === "ja" ? `${jaFood(restaurant.name)} - おすすめグルメ` : showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.name} - Food Recommendation`}>
+<BaseLayout title={lang === "ja" ? `${jaFood(restaurant.name)} - おすすめグルメ` : showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.nameEn || restaurant.name} - Food Recommendation`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">

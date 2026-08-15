@@ -57,7 +57,8 @@ export function AttractionCard({ attraction, index, onSelectMapMarker, lang = "e
   const displayName = isCJK && attraction.name
     ? attraction.name
     : (localised || attraction.nameEn || attraction.name);
-  const secondaryName = (displayName === attraction.nameEn) ? attraction.name : attraction.nameEn;
+  const showSecondary = lang === "zh-CN" || lang === "zh-TW" || lang === "ja";
+  const secondaryName = showSecondary ? ((displayName === attraction.nameEn) ? attraction.name : attraction.nameEn) : "";
   return (
     <div className="bg-white border border-gray-100 rounded-xl overflow-hidden card-hover">
       {/* Image */}

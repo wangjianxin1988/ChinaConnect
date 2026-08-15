@@ -1,6 +1,7 @@
 ﻿---
 import EmbeddedAppRecommendation from "@/components/apps/EmbeddedAppRecommendation";
 import { InlineAppPillsGroup, getAppsForSection } from "@/components/apps/InlineAppPills";
+import { pruneAppsForLang } from "@/data/apps/app-recommendations";
 import { AttractionCard } from "@/components/city/AttractionCard";
 import { AttractionsSection } from "@/components/city/AttractionsSection";
 import { CityMap } from "@/components/city/CityMap";
@@ -12,6 +13,7 @@ import { EmergencySection } from "@/components/city/EmergencySection";
 import { FoodHighlightsSection } from "@/components/city/FoodHighlightsSection";
 import { WeatherWidget } from "@/components/city/WeatherWidget";
 import { citySlugs, getAdjacentCities, getCityBySlug } from "@/data/cities/index";
+import { pruneCityEntityNames } from "@/lib/city-name";
 import { getCityData } from "@/data/cities-i18n";
 import { S_TIER_CITIES } from "@/data/cities/tier-data";
 import { getHotelsByCity, getHotelCategoryCounts, getHotelCount } from "@/data/hotels";
@@ -25,7 +27,10 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const lang = getLangFromUrl(Astro.url);
-const city = getCityData(slug as string, lang) || getCityBySlug(slug as string);
+const city = pruneCityEntityNames(
+  getCityData(slug as string, lang) || getCityBySlug(slug as string),
+  lang,
+);
 
 if (!city) {
   return Astro.redirect("/404");
@@ -40,12 +45,15 @@ const totalHotelCount = getHotelCount(slug as string);
 
 const localCityName = translations[lang]?.["city." + city.slug + ".name"] ?? translations.en?.["city." + city.slug + ".name"] ?? city.nameEn;
 const pageTitle = (translations[lang] || translations.en).cityPage?.pageTitle?.replace("{city}", localCityName) ?? `${localCityName} ${(translations.en.cityPage?.pageTitleSuffix ?? "Travel Guide - ChinaConnect")}`;
-const pageDescription = (translations[lang] || translations.en).cityPage?.citySubtitle?.replace("{city}", localCityName) ?? `Complete travel guide for ${localCityName}, ${city.name}.`;
+const pageDescription = (translations[lang] || translations.en).cityPage?.citySubtitle?.replace("{city}", localCityName) ?? `Complete travel guide for ${localCityName}, ${city.nameEn}.`;
+
+// Schema.org uses the CJK name only on zh/ja pages; elsewhere English
+const schemaCityName = lang === "zh-CN" || lang === "zh-TW" || lang === "ja" ? city.name : city.nameEn;
 
 // SEO keywords
 const keywords = [
   city.nameEn,
-  city.name,
+  ...(lang === "zh-CN" || lang === "zh-TW" || lang === "ja" ? [city.name] : []),
   `${localCityName} travel guide`,
   `${localCityName} attractions`,
   `${localCityName} restaurants`,
@@ -62,7 +70,7 @@ const citySchema = {
   "@context": "https://schema.org",
   "@type": "City",
   name: city.nameEn,
-  alternateName: city.name,
+  alternateName: schemaCityName,
   description: city.description,
   geo: {
     "@type": "GeoCoordinates",
@@ -72,7 +80,7 @@ const citySchema = {
   address: {
     "@type": "PostalAddress",
     addressCountry: "CN",
-    addressRegion: city.name,
+    addressRegion: schemaCityName,
   },
   population: city.population,
   url: `https://chinaengage.org/city/${city.slug}`,
@@ -580,7 +588,7 @@ const mapMarkers = [
               <div class="mt-4 pt-4 border-t border-gray-100">
                 <InlineAppPillsGroup
                   client:visible
-                  apps={getAppsForSection(["transport"])}
+                  apps={pruneAppsForLang(getAppsForSection(["transport"]), lang)}
                                   data-i18n-title="cityPage.recommendedTransportApps" title="Recommended Transport Apps"
                 />
               </div>
@@ -734,7 +742,7 @@ const mapMarkers = [
               </h4>
               <InlineAppPillsGroup
                 client:visible
-                apps={getAppsForSection(["payment"])}
+                apps={pruneAppsForLang(getAppsForSection(["payment"]), lang)}
               />
               <p class="text-xs text-gray-500 mt-2">
                 <span data-i18n="cityPage.switchToEnglishMode" data-i18n-vars='{"city": city.nameEn}'>{_lookup("cityPage.switchToEnglishMode")}</span>
@@ -758,7 +766,7 @@ const mapMarkers = [
               <p class="text-gray-600 mb-4" data-i18n="cityPage.esimDescription">{_lookup("cityPage.esimDescription")}</p>
               <InlineAppPillsGroup
                 client:visible
-                apps={getAppsForSection(["connectivity"])}
+                apps={pruneAppsForLang(getAppsForSection(["connectivity"]), lang)}
               />
             </div>
 

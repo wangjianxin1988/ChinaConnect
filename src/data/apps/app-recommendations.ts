@@ -514,3 +514,23 @@ export function getDownloadLink(
   }
   return app.appStoreUrl ?? app.androidUrl ?? null;
 }
+
+/**
+ * Return a copy of an app with Chinese/Japanese-only fields removed for
+ * non-CJK languages, so serialized island props stay Chinese-free on
+ * English/Latin/Arabic pages. zh-CN/zh-TW/ja keep their native fields.
+ */
+export function pruneAppForLang(app: AppRecommendation, lang?: string): AppRecommendation {
+  const l = lang || "en";
+  if (l === "zh-CN" || l === "zh-TW" || l === "ja") return app;
+  return {
+    ...app,
+    nameZh: app.nameEn || app.name,
+    descriptionJa: undefined,
+    description: app.descriptionEn || app.description,
+  };
+}
+
+export function pruneAppsForLang(apps: AppRecommendation[], lang?: string): AppRecommendation[] {
+  return apps.map((a) => pruneAppForLang(a, lang));
+}

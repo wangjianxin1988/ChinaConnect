@@ -91,7 +91,6 @@ export function ExpoCalendarClient({ lang = "en" }: { lang?: string }) {
           <div className="text-center py-12 bg-card rounded-xl border">
             <span className="text-5xl mb-4 block">🔍</span>
             <p className="text-muted-foreground">{lang === "ja" ? "選択したフィルターに一致するイベントがありません。" : "No events found for the selected filters."}</p>
-            {lang !== "ja" && <p className="text-muted-foreground text-sm">请尝试其他筛选条件</p>}
           </div>
         ) : (
           filteredExpos.map((expo) => (

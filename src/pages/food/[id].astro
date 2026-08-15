@@ -5,6 +5,7 @@ import { cities } from "@/data/food/cities";
 import { getRestaurantById, restaurants } from "@/data/food/restaurants";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getLangFromUrl } from "@/i18n/utils";
+import { EN_FOOD_OVERRIDES } from "@/data/food/en-food-overrides";
 
 export function getStaticPaths() {
   return restaurants.map((r) => ({
@@ -41,33 +42,34 @@ const config = TYPE_CONFIG[restaurant.type];
 // Convert to RestaurantDetail-compatible format
 const lang = getLangFromUrl(Astro.url);
 const showTitleCn = lang === "zh-CN" || lang === "zh-TW";
+const enFood = (t: string | undefined): string => (lang === "en" && t && EN_FOOD_OVERRIDES[t]) || t || "";
 
 const restaurantDetail = {
   id: restaurant.id,
-  name: restaurant.name,
-  name_en: restaurant.nameEn,
-  cuisine: restaurant.cuisine,
+  name: restaurant.nameEn || restaurant.name,
+  name_en: "",
+  cuisine: enFood(restaurant.cuisine),
   rating: restaurant.rating,
   review_count: 0,
   avg_cost: restaurant.avgPrice,
-  address: restaurant.address,
-  address_zh: restaurant.addressEn,
+  address: enFood(restaurant.address),
+  address_zh: "",
   images: restaurant.imageUrl ? [restaurant.imageUrl] : [],
-  tags: restaurant.tags || [],
+  tags: (restaurant.tags || []).map((t) => enFood(t)),
   michelin_stars: restaurant.star,
   heizhenzhu_rank: restaurant.diamond,
   blogger_recommended: !!restaurant.bloggerName,
-  blogger_name: restaurant.bloggerName,
-  opening_hours: restaurant.hours ? { regular: restaurant.hours } : undefined,
+  blogger_name: enFood(restaurant.bloggerName),
+  opening_hours: restaurant.hours ? { regular: enFood(restaurant.hours) } : undefined,
   avg_meal_duration: 60,
   booking_required: false,
   phone: restaurant.phone,
-  description: restaurant.description,
-  description_zh: restaurant.descriptionEn,
+  description: restaurant.descriptionEn || enFood(restaurant.description),
+  description_zh: "",
 };
 ---
 
-<BaseLayout title={showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.name} - Food Recommendation`}>
+<BaseLayout title={showTitleCn ? `${restaurant.name} - 美食推荐` : `${restaurant.nameEn || restaurant.name} - Food Recommendation`}>
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -99,11 +101,11 @@ const restaurantDetail = {
               <a href={`/food/${r.id}`} class="block group">
                 {r.imageUrl && (
                   <div class="h-24 rounded-lg overflow-hidden mb-2">
-                    <img src={r.imageUrl} alt={r.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                    <img src={r.imageUrl} alt={r.nameEn || r.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                   </div>
                 )}
-                <p class="font-medium text-gray-900 text-sm line-clamp-1">{r.name}</p>
-                <p class="text-xs text-gray-500">{r.cuisine}</p>
+                <p class="font-medium text-gray-900 text-sm line-clamp-1">{r.nameEn || r.name}</p>
+                <p class="text-xs text-gray-500">{enFood(r.cuisine)}</p>
               </a>
             ))}
           </div>

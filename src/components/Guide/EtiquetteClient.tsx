@@ -127,22 +127,18 @@ export function EtiquetteClient({ lang = "en" }: { lang?: Language } = {}) { con
           <div className="bg-white/10 rounded-lg p-3">
             <div className="font-semibold mb-1">{lang === "ja" ? "🎴 名刺" : "🎴 Business Cards"}</div>
             <p className="text-slate-300">{lang === "ja" ? "両手で渡し、受け取ります。カードはよく読みます。決して書き込まないでください。" : "Use both hands. Study the card. Never write on it."}</p>
-            {lang !== "ja" && <p className="text-slate-400 text-xs mt-1">双手递接。仔细阅读。切勿写字。</p>}
           </div>
           <div className="bg-white/10 rounded-lg p-3">
             <div className="font-semibold mb-1">{lang === "ja" ? "🥂 乾杯" : "🥂 Toasting"}</div>
             <p className="text-slate-300">{lang === "ja" ? "目上の人よりグラスを低く持ち、相手の目を見て乾杯します。" : "Hold glass lower than seniors. Make eye contact."}</p>
-            {lang !== "ja" && <p className="text-slate-400 text-xs mt-1">酒杯低于长者。敬酒时注视对方。</p>}
           </div>
           <div className="bg-white/10 rounded-lg p-3">
             <div className="font-semibold mb-1">{lang === "ja" ? "⏰ 時間厳守" : "⏰ Punctuality"}</div>
             <p className="text-slate-300">{lang === "ja" ? "5〜10分早めに到着します。遅刻は信用を損なうため、避けてください。" : "Arrive 5-10 min early. Being late damages reputation."}</p>
-            {lang !== "ja" && <p className="text-slate-400 text-xs mt-1">提前5-10分钟到达。迟到损害声誉。</p>}
           </div>
           <div className="bg-white/10 rounded-lg p-3">
             <div className="font-semibold mb-1">{lang === "ja" ? "🎁 贈り物" : "🎁 Gifts"}</div>
             <p className="text-slate-300">{lang === "ja" ? "両手で渡します。時計や「四」に関わる贈り物は避けましょう。" : "Present with both hands. Avoid clocks and fours."}</p>
-            {lang !== "ja" && <p className="text-slate-400 text-xs mt-1">双手递送。避免钟表和"四"相关的礼品。</p>}
           </div>
         </div>
       </div>
